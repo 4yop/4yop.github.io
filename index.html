@@ -9,8 +9,20 @@
         "target": "https://tool.4yop.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
-    }</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN"></script><script>window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    }</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN"></script><script>// 检查当前环境是否为 'production'（生产环境）
+          // Vue CLI/Webpack 默认在开发模式下 NODE_ENV='development'
+          // 只有在生产环境下才执行配置和发送数据
+          if (process.env.NODE_ENV === 'production') {
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-      gtag('config', 'G-MTDVMYZDBN');</script><script defer="defer" src="/js/chunk-vendors.25addc97.js"></script><script defer="defer" src="/js/app.c8f21840.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/app.839cb852.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but web-tool-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+              gtag('config', 'G-MTDVMYZDBN');
+
+              console.log("Google Analytics: Tracking IS ENABLED (Production Mode).");
+          } else {
+              // 在开发或测试环境中，代码被跳过
+              console.log("Google Analytics: Tracking IS DISABLED (Testing Mode).");
+              // 确保 gtag 函数仍然存在，但为空操作，防止其他代码报错
+              window.gtag = window.gtag || function() {};
+          }</script><script defer="defer" src="/js/chunk-vendors.25addc97.js"></script><script defer="defer" src="/js/app.066bc4a5.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/app.839cb852.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but web-tool-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
