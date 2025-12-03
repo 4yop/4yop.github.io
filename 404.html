@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - 页面未找到</title>
+
+    <meta http-equiv="refresh" content="5;url=/">
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: #333;
+        }
+        h1 { font-size: 3em; color: #cc0000; }
+        p { font-size: 1.2em; }
+        /* 用于显示倒计时 */
+        #countdown { font-weight: bold; color: #2ecc71; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+<h1>哎呀！404</h1>
+<p>您访问的页面不存在，它可能已被删除或链接错误。</p>
+
+<p>页面将在 <span id="countdown">5</span> 秒后自动跳转到 <a href="/">网站首页</a>。</p>
+
+<p>如果不想等待，请<a href="/">立即返回首页</a>。</p>
+
+<script>
+    let seconds = 5;
+    const countdownElement = document.getElementById('countdown');
+
+    function updateCountdown() {
+        seconds--;
+        if (countdownElement) {
+            countdownElement.textContent = seconds;
+        }
+
+        if (seconds <= 0) {
+            // 如果 meta 标签失败，这里是备用跳转
+            window.location.href = "/";
+        } else {
+            setTimeout(updateCountdown, 1000);
+        }
+    }
+
+    // 确保页面加载后开始计时
+    if (countdownElement) {
+        setTimeout(updateCountdown, 1000);
+    }
+</script>
+</body>
+</html>
