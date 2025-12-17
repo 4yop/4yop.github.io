@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO 基础 -->
+    <title>秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）</title>
+    <meta name="description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。" />
+    <meta name="keywords" content="秒级倒计时, 抢购倒计时, 活动倒计时, iOS倒计时, 秒杀工具" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ✅ 结构化数据（你要的这个） -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "秒级倒计时工具",
+            "description": "支持用户设置目标时间的秒级倒计时网页工具，适合活动抢购、秒杀等场景使用。",
+            "url": "https://tool.4yop.com/second-countdown.html",
+            "applicationCategory": "UtilityApplication",
+            "operatingSystem": "iOS, Android, Web",
+            "keywords": "秒级倒计时, 抢购倒计时, 活动倒计时",
+            "author": {
+                "@type": "Person",
+                "name": "倒计时工具作者"
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            //background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Mono", monospace;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: normal;
+            opacity: 0.8;
+        }
+
+        .form {
+            margin: 16px 0;
+        }
+
+        input, button {
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button {
+            margin-left: 6px;
+            cursor: pointer;
+        }
+
+        video {
+            width: 280px;
+            height: 200px;
+            margin-top: 16px;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .desc {
+            font-size: 12px;
+            opacity: 0.5;
+            margin-top: 12px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<!-- SEO 可见内容 -->
+<h1>秒级倒计时显示工具</h1>
+
+<div class="form">
+    <label style="color: #000">目标日期:</label>
+    <input id="timeInput" type="datetime-local" />
+    <button onclick="start()">开始</button>
+</div>
+
+<!-- canvas 不直接展示 -->
+<canvas id="canvas" width="300" height="120" style="display:none;"></canvas>
+
+<!-- 真正展示的：video -->
+<video id="video"
+       muted autoplay playsinline
+       controls
+       webkit-playsinline
+></video>
+
+<div class="desc">
+    输入目标时间后，即可显示精确到秒的倒计时。<br>
+    适合活动抢购、秒杀、开售等场景，支持 iOS 浏览器浮窗。
+</div>
+
+<script>
+
+    const STORAGE_KEY = 'countdown_target_time';
+
+    function pad(n) {
+        return String(n).padStart(2, '0');
+    }
+
+    // Date → datetime-local 可用格式
+    function toInputValue(date) {
+        return (
+            date.getFullYear() + '-' +
+            pad(date.getMonth() + 1) + '-' +
+            pad(date.getDate()) + 'T' +
+            pad(date.getHours()) + ':' +
+            pad(date.getMinutes())
+        );
+    }
+
+    function initDefaultTime() {
+        const now = Date.now();
+        let target = null;
+
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            const savedTime = Number(saved);
+            if (!isNaN(savedTime) && savedTime > now) {
+                target = savedTime;
+            }
+        }
+
+        // 没有可用的，就用当前时间 + 10 分钟
+        if (!target) {
+            target = now + 10 * 60 * 1000;
+        }
+
+        // 写入 input
+        document.getElementById('timeInput').value =
+            toInputValue(new Date(target));
+
+        return target;
+    }
+
+    let targetTime = null;
+    // DOM Ready
+    window.addEventListener('DOMContentLoaded', () => {
+        targetTime = initDefaultTime();
+        start();
+    });
+
+
+
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const video = document.getElementById('video');
+
+
+    let timer = null;
+
+    // 关键：canvas → video（保证 iOS 不暂停）
+    video.srcObject = canvas.captureStream(30);
+    video.play();
+
+    function formatTarget(ts) {
+        const d = new Date(ts);
+        const pad = n => String(n).padStart(2, '0');
+        return (
+            d.getFullYear() + '-' +
+            pad(d.getMonth() + 1) + '-' +
+            pad(d.getDate()) + ' ' +
+            pad(d.getHours()) + ':' +
+            pad(d.getMinutes()) + ':' +
+            pad(d.getSeconds())
+        );
+    }
+
+
+    function draw() {
+        if (!targetTime) return;
+
+        const left = Math.floor((targetTime - Date.now()) / 1000);
+
+        // 背景
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        // 上：目标时间
+        ctx.fillStyle = '#aaa';
+        ctx.font = '18px monospace';
+        ctx.fillText(
+            formatTarget(targetTime),
+            canvas.width / 2,
+            canvas.height / 2 - 28
+        );
+
+        // 下：剩余秒数
+        ctx.fillStyle = '#fff';
+        ctx.font = '56px monospace';
+        ctx.fillText(
+            left+ ' s',
+            canvas.width / 2,
+            canvas.height / 2 + 20
+        );
+    }
+
+
+    function start() {
+        const val = document.getElementById('timeInput').value;
+        if (!val) {
+            alert('请先选择目标时间');
+            return;
+        }
+
+        targetTime = new Date(val).getTime();
+
+        if (timer) clearInterval(timer);
+
+        draw();
+        timer = setInterval(draw, 200); // 200ms 更新
+    }
+</script>
+
+</body>
+</html>
