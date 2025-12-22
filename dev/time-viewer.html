@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>世界时间查看器 - 多时区时间显示</title><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><meta name="title" content="世界时间查看器 - 多时区时间显示"><meta name="description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta name="keywords" content="世界时间,时区查看,UTC时间,本地时间,国际时间,时区对比"><link rel="canonical" href="https://tool.4yop.com/dev/time-viewer.html"><meta property="og:type" content="website"><meta property="og:title" content="世界时间查看器 - 多时区时间显示"><meta property="og:description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta property="og:url" content="https://tool.4yop.com/dev/time-viewer.html"><meta property="og:site_name" content="工具箱"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="世界时间查看器 - 多时区时间显示"><meta name="twitter:description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta name="twitter:image" content=""><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"世界时间查看器 - 多时区时间显示","url":"https://tool.4yop.com/dev/time-viewer.html","applicationCategory":"devApplication","operatingSystem":"Web","description":"实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发","softwareVersion":"1.0.0","author":{"@type":"Person","name":"4yop"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN"></script><script>// 1. 定义您的生产环境域名列表
+        const PRODUCTION_DOMAINS = ['tool.4yop.com']; // 替换为您的实际生产/预发域名或IP
+
+        // 2. 检查当前页面的 hostname
+        const currentHostname = window.location.hostname;
+
+        // 3. 判断是否为生产环境
+        // 检查当前域名是否在生产列表中
+        const isProduction = PRODUCTION_DOMAINS.includes(currentHostname);
+
+        if (isProduction) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MTDVMYZDBN');
+
+            console.log("Google Analytics: Tracking IS ENABLED (Production Mode).");
+        } else {
+            // 在开发或测试环境中跳过
+            console.log("Google Analytics: Tracking IS DISABLED (Testing Mode). Hostname: " + currentHostname);
+            // 确保 gtag 函数仍然存在，但为空操作
+            window.gtag = window.gtag || function() {};
+        }
+
+        if (isProduction && window.__PRERENDER_INJECTED__ !== true)
+        {
+            if (typeof window.gtag === 'function' ) {
+                window.gtag('event', 'page_view', {
+                    page_path: to.fullPath,
+                    page_title: to.meta.title || document.title,
+                    send_to: 'G-MTDVMYZDBN' // 您的衡量 ID
+                });
+                // console.log(`[GA] 发送页面浏览事件: ${to.fullPath}`); // 调试用
+            }
+        }</script><script>document.querySelector('#pereload-app').remove()</script><meta name="title" content="世界时间查看器 - 多时区时间显示"><meta name="description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta name="keywords" content="世界时间,时区查看,UTC时间,本地时间,国际时间,时区对比"><meta name="canonical" content="https://tool.4yop.com/dev/time-viewer.html"><meta property="og:type" content="website"><meta property="og:title" content="世界时间查看器 - 多时区时间显示"><meta property="og:description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta property="og:url" content="https://tool.4yop.com/dev/time-viewer.html"><meta property="og:site_name" content="工具箱"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="世界时间查看器 - 多时区时间显示"><meta name="twitter:description" content="实时显示世界各地时间，支持多时区对比，提供UTC时间和本地时间，适合国际化开发"><meta name="twitter:image" content=""><script defer="defer" src="/js/chunk-vendors.1500cbba.js"></script><script defer="defer" src="/js/chunk-common.f8363b7c.js"></script><script defer="defer" src="/js//dev/time-viewer.fb0e225f.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css//dev/time-viewer.4ce72681.css" rel="stylesheet"></head><body><div id="pereload-app"></div><div id="app"></div></body></html><script></script>

@@ -21,4 +21,16 @@
             console.log("Google Analytics: Tracking IS DISABLED (Testing Mode). Hostname: " + currentHostname);
             // 确保 gtag 函数仍然存在，但为空操作
             window.gtag = window.gtag || function() {};
-        }</script><meta name="title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta name="description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta name="keywords" content=""><meta name="canonical" content="https://tool.4yop.com/tools/second-countdown.html"><meta property="og:type" content="website"><meta property="og:title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta property="og:description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta property="og:url" content="https://tool.4yop.com/tools/second-countdown.html"><meta property="og:site_name" content="工具箱"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta name="twitter:description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta name="twitter:image" content=""><script defer="defer" src="/js/chunk-vendors.d30937e3.js"></script><script defer="defer" src="/js/tools/second-countdown.baf697d9.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/tools/second-countdown.e621ca2b.css" rel="stylesheet"></head><body><div id="app"></div></body></html><script></script>
+        }
+
+        if (isProduction && window.__PRERENDER_INJECTED__ !== true)
+        {
+            if (typeof window.gtag === 'function' ) {
+                window.gtag('event', 'page_view', {
+                    page_path: to.fullPath,
+                    page_title: to.meta.title || document.title,
+                    send_to: 'G-MTDVMYZDBN' // 您的衡量 ID
+                });
+                // console.log(`[GA] 发送页面浏览事件: ${to.fullPath}`); // 调试用
+            }
+        }</script><script>document.querySelector('#pereload-app').remove()</script><meta name="title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta name="description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta name="keywords" content=""><meta name="canonical" content="https://tool.4yop.com/tools/second-countdown.html"><meta property="og:type" content="website"><meta property="og:title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta property="og:description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta property="og:url" content="https://tool.4yop.com/tools/second-countdown.html"><meta property="og:site_name" content="工具箱"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="秒级倒计时工具｜活动抢购时间显示（iOS浮窗可用）"><meta name="twitter:description" content="一个简单准确的秒级倒计时工具，支持用户自定义目标时间，适合活动抢购、秒杀、开售倒计时场景，iOS 浏览器浮窗可用。"><meta name="twitter:image" content=""><script defer="defer" src="/js/chunk-vendors.1500cbba.js"></script><script defer="defer" src="/js//tools/second-countdown.a48b196e.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css//tools/second-countdown.e621ca2b.css" rel="stylesheet"></head><body><div id="pereload-app"></div><div id="app"></div></body></html><script></script>
