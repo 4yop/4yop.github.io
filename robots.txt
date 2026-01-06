@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://master.tool-2sk.pages.dev/sitemap.xml
