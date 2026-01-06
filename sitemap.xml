@@ -3,6 +3,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/client-info.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/color-picker.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
@@ -15,7 +27,43 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/crud-generator.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/css-generator.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/format-converter.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/hacker-terminal.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -64,18 +112,6 @@
   <url>
 
     <loc>https://tool.4yop.com/dev/snowflake-id.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/dev/time-viewer.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -171,6 +207,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/image-airecognition.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/image-merger.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
@@ -255,6 +303,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/text-image-generator.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/upscale.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
@@ -279,7 +339,79 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/math/base-converter.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/blackjack.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/calculator.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/guess-number.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/loan-calculator.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/math/profit.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/unit-converter.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -340,6 +472,42 @@
   <url>
 
     <loc>https://tool.4yop.com/other/about.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/random/decision-maker.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/random/random-picker.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/random/rock-paper-scissors.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -447,115 +615,79 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/time/beijing-time-countdown.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/time/day-counter.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/time/second-countdown.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/time/stopwatch.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/time/time-viewer.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/time/timer.html</loc>
+
+    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/tools/audio-recorder.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/base-converter.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/beijing-time-countdown.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/blackjack.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/calculator.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/camera-recorder.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/client-info.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/crud-generator.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/day-counter.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/decision-maker.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -579,79 +711,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/format-converter.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/guess-number.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/hacker-terminal.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/image-airecognition.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/tools/iosurl-scheme-generator.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/loan-calculator.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/m3u8-downloader.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -711,7 +771,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/random-picker.html</loc>
+    <loc>https://tool.4yop.com/video/camera-recorder.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -723,7 +783,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/rock-paper-scissors.html</loc>
+    <loc>https://tool.4yop.com/video/m3u8-downloader.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -735,7 +795,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/second-countdown.html</loc>
+    <loc>https://tool.4yop.com/video/video-clipper.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
@@ -747,67 +807,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/stopwatch.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/text-image-generator.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/timer.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/unit-converter.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/video-clipper.html</loc>
-
-    <lastmod>2026-01-06T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/video-to-gif.html</loc>
+    <loc>https://tool.4yop.com/video/video-to-gif.html</loc>
 
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
 
