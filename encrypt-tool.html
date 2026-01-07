@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>加密 / 解密 工具 - 在线工具箱 - 免费实用的在线工具集合</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273"
+            crossorigin="anonymous"></script>
+    <!-- =====================  SEO 优化（请放入 <head> 内） ===================== -->
+
+    <!-- 基础 SEO -->
+    <meta name="description" content="轻量级浏览器端 AES-GCM + PBKDF2 加密/解密工具，支持密文 JSON 生成与密码解密查看。无需服务器，适合开发者与读者使用。">
+    <meta name="keywords" content="加密, 解密, AES-GCM, PBKDF2, 密文工具, 前端加密, JavaScript 加密, 单文件工具, 安全工具">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tool.4yop.com/encrypt-tool.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="加密 / 解密 工具（AES-GCM + PBKDF2）">
+    <meta property="og:description" content="浏览器端单文件加密工具：PBKDF2 + AES-GCM，可生成可复制的密文 JSON。支持读者在页面解密。">
+    <meta property="og:url" content="https://tool.4yop.com/encrypt-tool.html">
+    <meta property="og:site_name" content=" 工具箱">
+
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="加密 / 解密 工具（AES-GCM + PBKDF2）">
+    <meta name="twitter:description" content="轻量级安全加密工具：PBKDF2 + AES-GCM，生成 salt/iv/ct JSON。">
+    <meta name="twitter:image" content="https://tool.4yop.com/static/encrypt-preview.png">
+
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "加密 / 解密 工具（AES-GCM + PBKDF2） ",
+            "url": "https://tool.4yop.com/encrypt-tool.html",
+            "applicationCategory": "SecurityApplication",
+            "operatingSystem": "Web",
+            "description": "浏览器端加密/解密工具，使用 PBKDF2 派生 AES-GCM 密钥，生成包含 salt/iv/ct 的密文 JSON。",
+            "softwareVersion": "1.0.0",
+            "author": {
+                "@type": "Organization",
+                "name": "4yop"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "CNY"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN"></script>
+    <script>
+        // 1. 定义您的生产环境域名列表
+        const PRODUCTION_DOMAINS = ['tool.4yop.com']; // 替换为您的实际生产/预发域名或IP
+
+        // 2. 检查当前页面的 hostname
+        const currentHostname = window.location.hostname;
+
+        // 3. 判断是否为生产环境
+        // 检查当前域名是否在生产列表中
+        const isProduction = PRODUCTION_DOMAINS.includes(currentHostname);
+
+        if (isProduction) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MTDVMYZDBN');
+
+            console.log("Google Analytics: Tracking IS ENABLED (Production Mode).");
+        } else {
+            // 在开发或测试环境中跳过
+            console.log("Google Analytics: Tracking IS DISABLED (Testing Mode). Hostname: " + currentHostname);
+            // 确保 gtag 函数仍然存在，但为空操作
+            window.gtag = window.gtag || function() {};
+        }
+    </script>
+    <style>
+        body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial; padding:16px; background:#f7f8fb; color:#222}
+        h1{font-size:18px}
+        textarea{width:100%;min-height:140px;padding:8px;border-radius:6px;border:1px solid #ddd;background:#fff;resize:vertical}
+        input[type="password"], input[type="text"]{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd}
+        .row{display:grid;gap:8px;margin-bottom:12px}
+        .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+        button{padding:8px 12px;border-radius:6px;border:0;background:#2b8aec;color:#fff;cursor:pointer}
+        .muted{color:#666;font-size:13px}
+        pre{background:#111;color:#dcdcdc;padding:10px;border-radius:6px;overflow:auto}
+        .ok{color:green}
+        .err{color:#c53737}
+        .panel{background:#fff;padding:12px;border-radius:8px;border:1px solid #e6e9ef}
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>加密 / 解密 工具（AES-GCM + PBKDF2）</h1>
+        <p class="muted">说明：此页面既可用于把加密为密文 JSON（作者用），也可以把密文粘贴进来并用密码解密查看（读者用）。</p>
+
+        <div class="panel">
+            <h2>1) 加密（把明文变成密文 JSON）</h2>
+            <div class="row">
+                <label class="muted">明文（粘贴或直接编辑）：</label>
+                <textarea id="plain" placeholder="在这里粘贴你的..."></textarea>
+            </div>
+            <div class="two" style="margin-bottom:8px">
+                <div>
+                    <label class="muted">加密密码：</label>
+                    <input id="enc-pass" type="text" placeholder="输入一个密码（）"/>
+                </div>
+                <div>
+                    <label class="muted">PBKDF2 迭代次数（默认 150000，越高越慢越安全）：</label>
+                    <input id="iter" type="text" value="150000"/>
+                </div>
+            </div>
+            <div class="row">
+                <button id="btn-encrypt">生成密文（加密）</button>
+                <div class="muted">生成的密文是可复制的 JSON 字符串，包含 salt/iv/ciphertext（Base64 编码）。把它发并告诉他们密码即可。</div>
+                <label class="muted">密文（JSON，复制并保存）：</label>
+                <textarea id="cipher-output" readonly placeholder="密文将在这里显示"></textarea>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="panel" style="margin-top:12px">
+            <h2>2) 解密（读者用：粘入密文并输入密码）</h2>
+            <div class="row">
+                <label class="muted">粘贴密文 JSON：</label>
+                <textarea id="cipher-input" placeholder='例如：{"salt":"...","iv":"...","ct":"...","iter":150000}'></textarea>
+                <label class="muted">输入密码以解密：</label>
+                <input id="dec-pass" type="text" placeholder="输入你收到的密码"/>
+                <button id="btn-decrypt">解密并显示</button>
+                <div id="dec-result" style="margin-top:8px"></div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div style="margin-top:12px" class="muted">
+            技术说明：使用 PBKDF2（salt + 150k 迭代）派生 AES-GCM 256 位密钥；生成随机 salt(16B) 和 iv(12B)。密文以 Base64 存储在 JSON 中，可直接保存/传输。
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script>
+    /* ----- helper base64 ----- */
+    function bufToBase64(buf) {
+        return btoa(String.fromCharCode(...new Uint8Array(buf)));
+    }
+    function base64ToBuf(b64) {
+        const bin = atob(b64);
+        const arr = new Uint8Array(bin.length);
+        for (let i=0;i<bin.length;i++) arr[i]=bin.charCodeAt(i);
+        return arr.buffer;
+    }
+
+    /* ----- key derivation: PBKDF2 ----- */
+    async function deriveKey(password, saltBuf, iterations=150000) {
+        const enc = new TextEncoder();
+        const passKey = await crypto.subtle.importKey("raw", enc.encode(password), "PBKDF2", false, ["deriveKey"]);
+        return crypto.subtle.deriveKey(
+            { name: "PBKDF2", salt: saltBuf, iterations: iterations, hash: "SHA-256" },
+            passKey,
+            { name: "AES-GCM", length: 256 },
+            false,
+            ["encrypt","decrypt"]
+        );
+    }
+
+    /* ----- encrypt ----- */
+    async function encryptArticle(plaintext, password, iterations=150000) {
+        const enc = new TextEncoder();
+        const salt = crypto.getRandomValues(new Uint8Array(16)); // 16 bytes
+        const iv = crypto.getRandomValues(new Uint8Array(12));  // 12 bytes for GCM
+        const key = await deriveKey(password, salt.buffer, iterations);
+        const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, enc.encode(plaintext));
+        return {
+            salt: bufToBase64(salt.buffer),
+            iv: bufToBase64(iv.buffer),
+            ct: bufToBase64(ct),
+            iter: iterations,
+            alg: "AES-GCM-PBKDF2-SHA256"
+        };
+    }
+
+    /* ----- decrypt ----- */
+    async function decryptArticle(payloadJson, password) {
+        if (!payloadJson || !payloadJson.ct || !payloadJson.salt || !payloadJson.iv) throw new Error("密文格式错误");
+        const iter = payloadJson.iter || 150000;
+        const saltBuf = base64ToBuf(payloadJson.salt);
+        const ivBuf = base64ToBuf(payloadJson.iv);
+        const ctBuf = base64ToBuf(payloadJson.ct);
+        const key = await deriveKey(password, saltBuf, iter);
+        const plainBuf = await crypto.subtle.decrypt({ name: "AES-GCM", iv: ivBuf }, key, ctBuf);
+        const dec = new TextDecoder();
+        return dec.decode(plainBuf);
+    }
+
+    /* ----- UI hook ----- */
+    document.getElementById("btn-encrypt").addEventListener("click", async ()=>{
+        const plain = document.getElementById("plain").value;
+        const pass = document.getElementById("enc-pass").value;
+        const iter = parseInt(document.getElementById("iter").value) || 150000;
+        if (!plain) { alert("明文不能为空"); return; }
+        if (!pass) { alert("请设置一个密码"); return; }
+        try {
+            document.getElementById("btn-encrypt").disabled = true;
+            document.getElementById("btn-encrypt").textContent = "加密中...";
+            const payload = await encryptArticle(plain, pass, iter);
+            // 输出 JSON
+            document.getElementById("cipher-output").value = JSON.stringify(payload);
+            document.getElementById("btn-encrypt").textContent = "生成密文（加密）";
+            document.getElementById("btn-encrypt").disabled = false;
+            alert("已生成密文 JSON");
+        } catch (e) {
+            console.error(e);
+            alert("加密失败：" + e.message);
+            document.getElementById("btn-encrypt").disabled = false;
+            document.getElementById("btn-encrypt").textContent = "生成密文（加密）";
+        }
+    });
+
+    document.getElementById("btn-decrypt").addEventListener("click", async ()=>{
+        const cipherText = document.getElementById("cipher-input").value.trim();
+        const pass = document.getElementById("dec-pass").value;
+        const resultDiv = document.getElementById("dec-result");
+        resultDiv.innerHTML = "";
+        if (!cipherText) { alert("请粘贴密文 JSON"); return; }
+        if (!pass) { alert("请输入密码"); return; }
+        let payload;
+        try {
+            payload = JSON.parse(cipherText);
+        } catch (e) {
+            alert("密文不是合法 JSON");
+            return;
+        }
+        try {
+            document.getElementById("btn-decrypt").disabled = true;
+            document.getElementById("btn-decrypt").textContent = "解密中...";
+            const plain = await decryptArticle(payload, pass);
+            // 成功显示
+            resultDiv.innerHTML = "<h3 class='ok'>解密成功 — 如下：</h3><div style='margin-top:8px'><pre>" + escapeHtml(plain) + "</pre></div>";
+        } catch (e) {
+            console.error(e);
+            resultDiv.innerHTML = "<div class='err'>解密失败：密码错误或密文已损坏</div>";
+        } finally {
+            document.getElementById("btn-decrypt").disabled = false;
+            document.getElementById("btn-decrypt").textContent = "解密并显示";
+        }
+    });
+
+    /* simple escape for displaying plaintext inside <pre> safely */
+    function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+</script>
