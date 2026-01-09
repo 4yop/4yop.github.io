@@ -291,6 +291,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/id-card-birthday.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/game-id-deduplicator.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -375,6 +387,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/office/word-to-pdf.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/office/markdown.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -399,6 +423,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/office/excel-csv-convert.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/office/csv-processor.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -412,6 +448,18 @@
   <url>
 
     <loc>https://tool.4yop.com/office/convert.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/wechat-red-packet.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
@@ -735,6 +783,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/ws-test.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/uuid-generator.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -748,6 +808,18 @@
   <url>
 
     <loc>https://tool.4yop.com/dev/timestamp.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/svg-convert.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
@@ -795,7 +867,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/postman.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/password-generator.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/mysql-create-table.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
@@ -868,6 +964,18 @@
   <url>
 
     <loc>https://tool.4yop.com/dev/crud-generator.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/cron-gen.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
