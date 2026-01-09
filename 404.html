@@ -19,25 +19,27 @@
               gaScript.async = true;
               gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN";
 
-              // --- 核心：脚本加载成功后执行 ---
-              gaScript.onload = function() {
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  window.gtag = gtag; // 挂载到全局
+              setTimeout(()=>{
+                  // --- 核心：脚本加载成功后执行 ---
+                  gaScript.onload = function() {
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      window.gtag = gtag; // 挂载到全局
 
-                  gtag('js', new Date());
-                  gtag('config', 'G-MTDVMYZDBN');
+                      gtag('js', new Date());
+                      gtag('config', 'G-MTDVMYZDBN');
 
-                  console.log("Google Analytics: Script Loaded & Tracking ENABLED.");
-              };
+                      console.log("Google Analytics: Script Loaded & Tracking ENABLED.");
+                  };
 
-              // 如果加载失败的处理
-              gaScript.onerror = function() {
-                  console.error("Google Analytics: Script failed to load.");
-                  window.gtag = function() {}; // 容错处理
-              };
+                  // 如果加载失败的处理
+                  gaScript.onerror = function() {
+                      console.error("Google Analytics: Script failed to load.");
+                      window.gtag = function() {}; // 容错处理
+                  };
 
-              document.head.appendChild(gaScript);
+                  document.head.appendChild(gaScript);
+              },0)
           } else {
               console.log("Google Analytics: DISABLED (Testing Mode). Hostname: " + currentHostname);
               window.gtag = function() {};
