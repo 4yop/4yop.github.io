@@ -27,7 +27,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/video/m3u8-player.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/video/m3u8-downloader.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/video/hash.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
@@ -543,6 +567,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/mosaic.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/matting.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -603,6 +639,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/gif-get.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/exif.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -628,6 +676,18 @@
   <url>
 
     <loc>https://tool.4yop.com/img/color-analyze.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/img/clear-exif.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
@@ -735,6 +795,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/jwt.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/hacker-terminal.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
@@ -772,6 +844,18 @@
   <url>
 
     <loc>https://tool.4yop.com/dev/crud-generator.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/compress.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
 
