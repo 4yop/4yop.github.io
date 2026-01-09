@@ -1083,6 +1083,30 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/article/privacy.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/article/contact.html</loc>
+
+    <lastmod>2026-01-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/article/about.html</loc>
 
     <lastmod>2026-01-09T00:00:00.000Z</lastmod>
