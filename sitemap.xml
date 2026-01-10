@@ -423,7 +423,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/random/call_name.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/office/word-to-pdf.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/office/word-convert.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
 
@@ -531,6 +555,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/math/relationship.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/math/profit.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
@@ -568,6 +604,18 @@
   <url>
 
     <loc>https://tool.4yop.com/math/calculator.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/math/bmi.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
 
@@ -628,6 +676,30 @@
   <url>
 
     <loc>https://tool.4yop.com/img/text-image-generator.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/img/signature.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/img/seal-gen.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
 
@@ -819,6 +891,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/barcode.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/art-style.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
@@ -843,7 +927,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/weak-password.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/uuid-generator.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/useragent.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
 
@@ -1011,7 +1119,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/file-hash.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/css-generator.html</loc>
+
+    <lastmod>2026-01-10T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/csr-gen.html</loc>
 
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
 
