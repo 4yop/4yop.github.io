@@ -303,6 +303,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/shit-article.html</loc>
+
+    <lastmod>2026-01-11T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/regex-tester.html</loc>
 
     <lastmod>2026-01-11T00:00:00.000Z</lastmod>
@@ -316,6 +328,18 @@
   <url>
 
     <loc>https://tool.4yop.com/text/json-formatter.html</loc>
+
+    <lastmod>2026-01-11T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/text/internet-jargon.html</loc>
 
     <lastmod>2026-01-11T00:00:00.000Z</lastmod>
 
@@ -376,6 +400,18 @@
   <url>
 
     <loc>https://tool.4yop.com/text/convert.html</loc>
+
+    <lastmod>2026-01-11T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/text/ai-good-comment.html</loc>
 
     <lastmod>2026-01-11T00:00:00.000Z</lastmod>
 
