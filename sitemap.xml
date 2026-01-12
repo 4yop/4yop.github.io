@@ -75,6 +75,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/tools/snake-game.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/tools/reaction-test.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
@@ -135,6 +147,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/tools/music-player.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/tools/iosurl-scheme-generator.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
@@ -159,6 +183,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/tools/cyber-fish.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/tools/check-screen.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
@@ -171,7 +207,31 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/tools/birthday-card.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/tools/audio-recorder.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/tools/3d-earth.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
 
@@ -351,6 +411,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/internet-jargon-test.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/internet-jargon.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
@@ -412,18 +484,6 @@
   <url>
 
     <loc>https://tool.4yop.com/text/convert.html</loc>
-
-    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/text/ai-good-comment.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
 
@@ -856,18 +916,6 @@
   <url>
 
     <loc>https://tool.4yop.com/img/image-merger.html</loc>
-
-    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/img/image-airecognition.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
 
@@ -1312,6 +1360,30 @@
   <url>
 
     <loc>https://tool.4yop.com/article/about.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/ai/video-subtitle.html</loc>
+
+    <lastmod>2026-01-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/ai/ai-translate.html</loc>
 
     <lastmod>2026-01-12T00:00:00.000Z</lastmod>
 
