@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><title>tools/file-compressor</title><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN"></script><script>window.CURRENT_HOST = "tool.4yop.com";
+
+        // 2. 检查当前页面的 hostname
+        const currentHostname = window.location.hostname;
+
+        // 3. 判断是否为生产环境
+        // 检查当前域名是否在生产列表中
+        const isProduction = currentHostname === window.CURRENT_HOST;
+
+        if (currentHostname === window.CURRENT_HOST) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MTDVMYZDBN');
+
+            console.log("Google Analytics: Tracking IS ENABLED (Production Mode).");
+        } else {
+            // 在开发或测试环境中跳过
+            console.log("Google Analytics: Tracking IS DISABLED (Testing Mode). Hostname: " + currentHostname);
+            // 确保 gtag 函数仍然存在，但为空操作
+            window.gtag = window.gtag || function() {};
+        }</script><script defer="defer" src="/tools/file-compressor.bbe313be.js"></script><link href="/css/tools/file-compressor.fbe498a9.css" rel="stylesheet"></head><body><div id="app"></div></body></html><script></script>
