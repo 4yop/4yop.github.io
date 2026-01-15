@@ -1335,6 +1335,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/demo/video-subtitle.html</loc>
+
+    <lastmod>2026-01-15T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/demo/img-up.html</loc>
 
     <lastmod>2026-01-15T00:00:00.000Z</lastmod>
@@ -1348,18 +1360,6 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/img-split.html</loc>
-
-    <lastmod>2026-01-15T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/demo/img-deep-description.html</loc>
 
     <lastmod>2026-01-15T00:00:00.000Z</lastmod>
 
@@ -1456,18 +1456,6 @@
   <url>
 
     <loc>https://tool.4yop.com/article/about.html</loc>
-
-    <lastmod>2026-01-15T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/ai/video-subtitle.html</loc>
 
     <lastmod>2026-01-15T00:00:00.000Z</lastmod>
 
