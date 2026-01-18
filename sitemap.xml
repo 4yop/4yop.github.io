@@ -87,7 +87,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/snake-game.html</loc>
+    <loc>https://tool.4yop.com/video/audio-recorder.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -100,30 +100,6 @@
   <url>
 
     <loc>https://tool.4yop.com/tools/reaction-test.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/qr-generator.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/profit.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -171,79 +147,7 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/tools/iosurl-scheme-generator.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/file-compressor.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/encrypt-tool.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/cyber-fish.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/check-screen.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/tools/birthday-card.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/tools/audio-recorder.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -951,6 +855,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/img/qr-generator.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/img/ocr.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -1108,6 +1024,54 @@
   <url>
 
     <loc>https://tool.4yop.com/img/art-style.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/game/snake-game.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/game/cyber-fish.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/game/check-screen.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/file/file-compressor.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -1299,6 +1263,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/iosurl-scheme-generator.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/hacker-terminal.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -1324,6 +1300,18 @@
   <url>
 
     <loc>https://tool.4yop.com/dev/file-hash.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/dev/encrypt-tool.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
