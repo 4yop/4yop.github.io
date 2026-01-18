@@ -40,3 +40,26 @@
 
     document.head.appendChild(script);
 })();
+
+
+
+(function () {
+    const { pathname, search, hash } = window.location;
+
+    if (!pathname.endsWith('.html')) return;
+
+    // /xxx/xxx.html → /xxx/xxx/
+    // /xxx/xxx/index.html → /xxx/xxx/
+    let newPath = pathname
+        .replace(/index\.html$/, '')
+        .replace(/\.html$/, '/');
+
+    // 防止 // 情况
+    newPath = newPath.replace(/\/{2,}/g, '/');
+
+    const newUrl = newPath + search + hash;
+
+    console.log('Redirect:', pathname, '→', newPath);
+
+    window.location.replace(newUrl);
+})();
