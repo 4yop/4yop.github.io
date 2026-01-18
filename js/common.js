@@ -1,45 +1,43 @@
 (function () {
-    const currentHostname = window.location.hostname;
-    const isProduction = currentHostname === window.CURRENT_HOST;
+    function initGA() {
+        const currentHostname = window.location.hostname;
+        const isProduction = currentHostname === window.CURRENT_HOST;
 
-    if (!isProduction) {
-        console.log(
-            'Google Analytics: Tracking IS DISABLED (Non-production). Hostname:',
-            currentHostname
-        );
-        // 保底，避免代码里有人直接调用 gtag 报错
-        window.gtag = window.gtag || function () {};
-        return;
+        if (!isProduction) {
+            window.gtag = window.gtag || function () {};
+            return;
+        }
+
+        // 防止重复加载
+        if (window.__GA_LOADED__) return;
+        window.__GA_LOADED__ = true;
+
+        // 初始化 dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            window.dataLayer.push(arguments);
+        };
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN';
+
+        script.onload = function () {
+            gtag('js', new Date());
+            gtag('config', 'G-MTDVMYZDBN');
+        };
+
+        document.head.appendChild(script);
     }
 
-    console.log('Google Analytics: Loading GA (Production Mode)');
-
-    // 1. 初始化 dataLayer
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
+    // 👇 关键：推迟到首屏之后
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(initGA, { timeout: 3000 });
+    } else {
+        setTimeout(initGA, 0);
     }
-    window.gtag = gtag;
-
-    // 2. 动态加载 GA 脚本
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MTDVMYZDBN';
-
-    // 3. 脚本加载成功后再执行配置
-    script.onload = function () {
-        gtag('js', new Date());
-        gtag('config', 'G-MTDVMYZDBN');
-
-        console.log('Google Analytics: Tracking ENABLED');
-    };
-
-    script.onerror = function () {
-        console.warn('Google Analytics: Script failed to load');
-    };
-
-    document.head.appendChild(script);
 })();
+
 
 
 
