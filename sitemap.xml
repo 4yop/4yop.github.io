@@ -531,6 +531,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/office/pdf-range/</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/office/pdf-merge/</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -604,6 +616,18 @@
   <url>
 
     <loc>https://tool.4yop.com/office/excel-csv-convert/</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/office/document-to-text/</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -1455,18 +1479,6 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/demo/pdf-range/</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/demo/pdf-lock/</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -1516,18 +1528,6 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/greeting-card/</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/demo/document-to-text/</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
