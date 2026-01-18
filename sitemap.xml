@@ -519,6 +519,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/card-analyze.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/random/wheel.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -592,6 +604,18 @@
   <url>
 
     <loc>https://tool.4yop.com/office/word-convert.html</loc>
+
+    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/office/pdf-watermark.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
@@ -1431,18 +1455,6 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/demo/pdf-watermark.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/demo/pdf-unlock.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
@@ -1552,18 +1564,6 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/client-ai.html</loc>
-
-    <lastmod>2026-01-18T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/demo/card-analyze.html</loc>
 
     <lastmod>2026-01-18T00:00:00.000Z</lastmod>
 
