@@ -1539,18 +1539,6 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/demo/img-category/</loc>
-
-    <lastmod>2026-01-20T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/demo/greeting-card/</loc>
 
     <lastmod>2026-01-20T00:00:00.000Z</lastmod>
@@ -1684,6 +1672,18 @@
   <url>
 
     <loc>https://tool.4yop.com/ai/ai-music-gen/</loc>
+
+    <lastmod>2026-01-20T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/ai/ai-img-category/</loc>
 
     <lastmod>2026-01-20T00:00:00.000Z</lastmod>
 
