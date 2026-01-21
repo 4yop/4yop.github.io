@@ -1479,6 +1479,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/demo/yu-gi-oh-card-gen/</loc>
+
+    <lastmod>2026-01-21T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/demo/video-subtitle/</loc>
 
     <lastmod>2026-01-21T00:00:00.000Z</lastmod>
@@ -1660,6 +1672,18 @@
   <url>
 
     <loc>https://tool.4yop.com/ai/img-description/</loc>
+
+    <lastmod>2026-01-21T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/ai/ai-yolo-img/</loc>
 
     <lastmod>2026-01-21T00:00:00.000Z</lastmod>
 
