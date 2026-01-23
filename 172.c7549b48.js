@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkweb_tool_vue"]=self["webpackChunkweb_tool_vue"]||[]).push([[172],{20172:function(t,e,n){n.d(e,{ArrayUtil:function(){return o}});class o{static random(t){return t[Math.floor(Math.random()*t.length)]}}}}]);
