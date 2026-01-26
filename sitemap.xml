@@ -435,6 +435,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/data-masking/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/convert/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
@@ -508,6 +520,18 @@
   <url>
 
     <loc>https://tool.4yop.com/random/rock-paper-scissors/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/random/random-team/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
 
@@ -724,6 +748,18 @@
   <url>
 
     <loc>https://tool.4yop.com/office/convert/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/office/chart-radar-generator/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
 
@@ -1239,6 +1275,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/dev/url-escape/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/dev/timestamp/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
@@ -1563,6 +1611,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/demo/random-pair/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/demo/ppt-to-pdf/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
@@ -1588,6 +1648,30 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/pdf-lock/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/name-gen/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/ip-search/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
 
@@ -1636,6 +1720,42 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/client-ai/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/chart-mix-compare/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/chart-line-generator/</loc>
+
+    <lastmod>2026-01-26T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/chart-bar-generator/</loc>
 
     <lastmod>2026-01-26T00:00:00.000Z</lastmod>
 
