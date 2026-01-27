@@ -351,6 +351,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/life-days-left/</loc>
+
+    <lastmod>2026-01-27T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/json-formatter/</loc>
 
     <lastmod>2026-01-27T00:00:00.000Z</lastmod>
