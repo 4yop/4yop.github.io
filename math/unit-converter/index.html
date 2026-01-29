@@ -1,0 +1,2099 @@
+<!DOCTYPE html><html lang="zh-CN"><head><style>/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-blue-50: oklch(97% 0.014 254.604);
+    --color-blue-100: oklch(93.2% 0.032 255.585);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .z-1001 {
+    z-index: 1001;
+  }
+  .z-2000 {
+    z-index: 2000;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-amber-200 {
+    border-color: var(--color-amber-200);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-gray-50 {
+    --tw-gradient-from: var(--color-gray-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white {
+    --tw-gradient-to: var(--color-white);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-12 {
+    padding-left: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-blue-700 {
+    color: var(--color-blue-700);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .last\:border-b-0 {
+    &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+  .hover\:border-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-blue-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:pl-8 {
+    &:hover {
+      @media (hover: hover) {
+        padding-left: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-md {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .focus\:border-blue-500 {
+    &:focus {
+      border-color: var(--color-blue-500);
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-100 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-100);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:text-4xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+
+/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-blue-50: oklch(97% 0.014 254.604);
+    --color-blue-100: oklch(93.2% 0.032 255.585);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .z-1001 {
+    z-index: 1001;
+  }
+  .z-2000 {
+    z-index: 2000;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-amber-200 {
+    border-color: var(--color-amber-200);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-gray-50 {
+    --tw-gradient-from: var(--color-gray-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white {
+    --tw-gradient-to: var(--color-white);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-12 {
+    padding-left: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-blue-700 {
+    color: var(--color-blue-700);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .last\:border-b-0 {
+    &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+  .hover\:border-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-blue-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:pl-8 {
+    &:hover {
+      @media (hover: hover) {
+        padding-left: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-md {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .focus\:border-blue-500 {
+    &:focus {
+      border-color: var(--color-blue-500);
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-100 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-100);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:text-4xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+</style><meta name="title" content="在线免费单位转换器 | 长度、重量、温度、面积、体积、功率、存储一键换算"><meta name="description" content="这是一个简单好用的免费在线单位换算工具。轻松转换长度、重量、温度、面积、体积、功率、存储等多种常用单位，如米与英尺、千克与磅、摄氏度与华氏度等。输入数值即可实时获得所有单位的换算结果，并提供快捷复制和常用转换示例。"><meta name="keywords" content="单位转换器，单位换算，长度转换，重量转换，温度转换，面积换算，体积转换，功率换算，存储单位换算，在线计算工具"><meta name="canonical" content="https://tool.4yop.com/math/unit-converter/"><meta property="og:type" content="website"><meta property="og:title" content="在线免费单位转换器 | 一键搞定所有常用单位换算"><meta property="og:description" content="免费好用的在线单位转换工具，支持长度、重量、温度、面积、体积、功率、存储等7大类单位一键换算。操作简单，结果精确，适合日常使用。"><meta property="og:url" content="https://tool.4yop.com/math/unit-converter/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="免费在线单位转换器，支持7大类单位换算"><meta name="twitter:description" content="一个方便的单位换算工具，可以快速转换米/英尺、千克/磅、摄氏度/华氏度、升/加仑、平方米/平方英尺、瓦特/马力、字节/兆字节等常用单位。"><meta name="twitter:image" content=""><script defer="defer" src="/math/unit-converter.415882a9.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>在线免费单位转换器 - 支持长度、重量、温度、面积、体积、功率、存储单位换算</title><meta name="title" content="在线免费单位转换器 | 长度、重量、温度、面积、体积、功率、存储一键换算"><meta name="description" content="这是一个简单好用的免费在线单位换算工具。轻松转换长度、重量、温度、面积、体积、功率、存储等多种常用单位，如米与英尺、千克与磅、摄氏度与华氏度等。输入数值即可实时获得所有单位的换算结果，并提供快捷复制和常用转换示例。"><meta name="keywords" content="单位转换器，单位换算，长度转换，重量转换，温度转换，面积换算，体积转换，功率换算，存储单位换算，在线计算工具"><link rel="canonical" href="https://tool.4yop.com/math/unit-converter/"><meta property="og:type" content="website"><meta property="og:title" content="在线免费单位转换器 | 一键搞定所有常用单位换算"><meta property="og:description" content="免费好用的在线单位转换工具，支持长度、重量、温度、面积、体积、功率、存储等7大类单位一键换算。操作简单，结果精确，适合日常使用。"><meta property="og:url" content="https://tool.4yop.com/math/unit-converter/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="免费在线单位转换器，支持7大类单位换算"><meta name="twitter:description" content="一个方便的单位换算工具，可以快速转换米/英尺、千克/磅、摄氏度/华氏度、升/加仑、平方米/平方英尺、瓦特/马力、字节/兆字节等常用单位。"><meta name="twitter:image" content=""><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"单位转换器","url":"https://tool.4yop.com/math/unit-converter/","applicationCategory":"数学计算","operatingSystem":"Web","description":"一款免费的在线单位换算工具，支持长度、重量、温度、面积、体积、功率、数据存储等七大类别的单位转换，操作简单，结果实时显示。","softwareVersion":"1.0.0","author":{"@type":"Person","name":"4yop"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"image":"https://tool.4yop.com/upload/icon/math/unit-converter.webp"}</script><link rel="icon" type="image/webp" href="https://tool.4yop.com/upload/icon/math/unit-converter.webp"><script>window.CURRENT_HOST = "tool.4yop.com";</script><script async="" src="/js/common.js"></script></head><body><div id="app"><div data-v-1c6a9444="" class="top-search-bar bg-white bg-opacity-92 backdrop-blur-md border-b border-gray-100 shadow-sm fixed top-0 left-0 right-0 z-1000 py-4 px-6 hidden"><div data-v-1c6a9444="" class="search-container max-w-2xl mx-auto relative"><div data-v-1c6a9444="" class="relative search-input"><input data-v-1c6a9444="" type="text" placeholder="搜索工具..." class="w-full pl-12 pr-12 py-3 rounded-xl bg-gray-50 border-2 border-gray-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-gray-800"><div data-v-1c6a9444="" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"> 搜索 </div><!----></div><!----></div></div><button data-v-1c6a9444="" class="mobile-menu-btn w-9 h-9 rounded-lg bg-white border border-gray-200 shadow-sm hover:bg-gray-50 hover:shadow-md transition-all duration-200 fixed top-0 left-0 z-1001 flex items-center justify-center"><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><!----><div data-v-1c6a9444="" class="fixed top-0 left-0 h-full bg-white shadow-xl z-2000 transition-transform duration-300 ease-in-out flex flex-col -translate-x-full" style="width: 450px;"><div data-v-1c6a9444="" class="drawer-header flex flex-col p-6 bg-gradient-to-r from-gray-50 to-white border-b border-gray-100 sticky top-0 z-10"><div data-v-1c6a9444="" class="flex items-center justify-between mb-4"><h2 data-v-1c6a9444="" class="text-xl font-bold text-gray-900" style="cursor: pointer;">工具箱</h2><button data-v-1c6a9444="" class="close-btn w-10 h-10 rounded-lg flex items-center justify-center text-gray-600 hover:bg-gray-100 transition-all duration-200"><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><div data-v-1c6a9444="" class="relative w-full"><input data-v-1c6a9444="" type="text" placeholder="搜索工具..." class="w-full pl-10 pr-10 py-2 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-gray-800 text-sm"><div data-v-1c6a9444="" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></div><!----><!----></div></div><nav data-v-1c6a9444="" class="drawer-menu-list bg-white overflow-y-auto flex-1"><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">图片处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/compress/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片压缩</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/exif/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">EXIF查看</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/card-photo/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">证件照制作</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/matting/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">智能抠图</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/upscale/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片高清化</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/color-analyze/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">颜色分析工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/art-style/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">艺术风格转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/watermark/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">批量水印</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/signature/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">电子签名</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/random-image/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/qr-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">二维码生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/ocr/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">OCR识别</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/image-slicer/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片切割</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/image-merger/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片拼接器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/gif-get/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">GIF帧提取器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/clear-exif/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">EXIF清除</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/barcode/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">条形码生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/text-image-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文图生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/seal-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">印章生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/scramble/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片切拼</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/mosaic/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片马赛克</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/img/image-resizer/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片尺寸调整</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">文档处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/pdf-range/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF拆分</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/excel-to-vcf/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Excel转VCF</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/img-to-pdf/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片转PDF</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/excel-to-word/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Excel转Word</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/excel-csv-convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Excel CSV转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/word-to-pdf/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Word转PDF</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/word-convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Word转换工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/excel-merge/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Excel合并</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/document-get-image/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文档提图</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF转图片</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/pdf-watermark/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF水印工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/pdf-merge/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF合并</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/markdown/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">Markdown转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/document-to-text/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文档文字提取</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/csv-processor/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">CSV处理器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/chart-radar-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">雷达图生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/office/chart-pie-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">饼图生成器</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">文本处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/game-id-deduplicator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">ID去重</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/card-analyze/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">身份证解析</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/shit-article/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">狗屁不通文章生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/regex-tester/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">正则测试</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/internet-jargon/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">互联网黑话</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/encrypt/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文本加密工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">火星文</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/text-diff/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文本比照</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/json-formatter/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">JSON格式化</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/internet-jargon-test/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">黑话测试</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/id-card-birthday/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">身份证生日提取</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/good-comment/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">好评生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/text-analyzer/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文本分析器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/life-days-left/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">人生时间计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/text/data-masking/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">数据脱敏</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">数学计算</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/sequence-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">序号生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/wechat-red-packet/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">拼手气红包</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/profit/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">利润计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/unit-converter/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0 bg-blue-100 text-blue-700 font-medium border-r-4 border-blue-500"><span data-v-1c6a9444="" class="menu-item-text">单位换算</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/relationship/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">亲戚关系计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/loan-calculator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">贷款计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/guess-number/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">猜数字</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/blackjack/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">21计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/base-converter/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">进制转换器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/math/calculator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">科学计算器</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">时间工具</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/clock/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">世界时钟</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/zodiac-star-sign/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">生肖星座查询</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/timer/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">计时器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/time-viewer/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">时间查看器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/second-countdown/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">秒级倒计时</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/lunar-solar-convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">农历公历转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/stopwatch/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">精确秒表</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/day-counter/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">天数计算器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/beijing-time-countdown/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">北京倒计时</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/time/retire-day-calculate/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">退休计算</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">随机工具</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/random-picker/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">随机选择器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/call_name/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">随机点名</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/wheel/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">转盘抽签</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/rock-paper-scissors/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">猜拳模拟器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/decision-maker/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">随机决定器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/random/random-team/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">团队分组</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">音视频处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/video-to-gif/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">视频转GIF</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/video-clipper/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">视频截取</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/m3u8-downloader/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">M3U8下载器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/audio-recorder/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">音频录音器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/camera-recorder/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">摄像头录制</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/browser-screen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">屏幕录制</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/m3u8-player/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">M3U8播放器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/video/hash/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">视频哈希修改</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">健康</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/health/kids-height/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">身高预测</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/health/bmi/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">BMI监测</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/health/bfr-record/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">体脂率计算</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">本地记录</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/record/note/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">便签工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/record/yu-gi-oh-lp/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">游戏王生命值</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">文件处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/file/file-compressor/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">压缩解压工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/file/thunder-downloader/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">迅雷下载工具</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">实用工具</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/number-segment-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">号码段生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/reaction-test/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">反应速度测试</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/area-search/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">区划查询</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/password-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">密码生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/music-player/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">音乐播放器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/birthday-card/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">生日贺卡</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/tools/3d-earth/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">3D地球</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">趣味测试</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/game/snake-game/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">贪吃蛇</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/game/check-screen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">屏幕检测</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/game/cyber-fish/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">赛博木鱼</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">AI本地处理</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-speech-to-text/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">语音转文字</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-img-category/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI图片分类</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-good-comment/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">好评生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/img-description/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图片描述生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-translate/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI智能翻译</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-music-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI音乐生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-chat/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI聊天助手</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/ai/ai-yolo-img/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI识图</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">开发者工具</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/encrypt-tool/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">加解密工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/useragent/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">UA解析</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/snowflake-id/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">雪花ID生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/postman/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">API调试</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/password-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">密码生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/mysql-create-table/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">MySQL建表工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/jwt/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">JWT解析</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/ip-convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">IP转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/css-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">CSS生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/crud-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">代码生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/client-info/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">客户端信息</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/ws-test/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">WebSocket测试</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/weak-password/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">弱口令生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/uuid-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">UUID生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/timestamp/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">时间戳转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/resource-extractor/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">资源提取器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/qr-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">二维码生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/json-to-query/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">JSON转查询</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/iosurl-scheme-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">iOS链接生成</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/hacker-terminal/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">黑客终端</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/format-converter/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">格式转换器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/file-hash/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文件哈希工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/compress/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">前端压缩</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/color-picker/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">颜色选择器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/url-escape/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">URL编解码</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/svg-convert/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">SVG图片转换</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/csr-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">CSR生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/dev/cron-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">定时任务生成器</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">文章资讯</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/article/contact/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">联系我们</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/article/privacy/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">隐私政策</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/article/index/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">首页</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/article/about/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">关于我们</span></a></div></div></div><div data-v-1c6a9444="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-1c6a9444="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-1c6a9444="" class="font-medium text-gray-800">敬请期待</span><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-1c6a9444="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/text-to-img/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">文生图工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/ai-text-to-img/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI文生图</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/yu-gi-oh-lp/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">游戏王LP计算</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/yu-gi-oh-card-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">卡牌生成器</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/video-subtitle/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">视频转字幕</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/pdf-unlock/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF解锁</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/img-split/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图像分割</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/greeting-card/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">贺卡制作</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/client-ai/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">AI展示工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/bg-remove/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">背景移除</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/woman-safe/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">月经预测</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/random-wheel/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">抽奖轮盘</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/random-pair/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">智能配对</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/ppt-to-pdf/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PPT转PDF</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/pdf-lock/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">PDF加密</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/name-gen/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">智能取名</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/ip-search/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">IP查询</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/img-up/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">图像高清化</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/chart-mix-compare/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">数据对比工具</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/chart-line-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">监测图表</span></a></div><div data-v-1c6a9444="" class="menu-item"><a data-v-1c6a9444="" href="/demo/chart-bar-generator/" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-1c6a9444="" class="menu-item-text">柱状图生成</span></a></div></div></div></nav></div><div data-v-1c6a9444="" class="main-content"><div data-v-f53f3c2c="" class="unit-converter-container" data-v-1c6a9444=""><div data-v-f53f3c2c="" class="page-header"><h1 data-v-f53f3c2c="">📏 单位转换器</h1><p data-v-f53f3c2c="" class="page-description">支持长度、重量、温度、面积、体积、功率、存储等多种单位转换</p></div><div data-v-f53f3c2c="" class="converter-section"><div data-v-f53f3c2c="" class="category-selector"><div data-v-f53f3c2c="" class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform: translateX(0px);"><div class="el-tabs__active-bar is-top" style="width: 692px; transform: translateX(0px);"></div><div id="tab-length" aria-controls="pane-length" role="tab" aria-selected="true" tabindex="0" class="el-tabs__item is-top is-active">📐 长度</div><div id="tab-weight" aria-controls="pane-weight" role="tab" tabindex="-1" class="el-tabs__item is-top">⚖️ 重量</div><div id="tab-temperature" aria-controls="pane-temperature" role="tab" tabindex="-1" class="el-tabs__item is-top">🌡️ 温度</div><div id="tab-volume" aria-controls="pane-volume" role="tab" tabindex="-1" class="el-tabs__item is-top">📦 体积</div><div id="tab-area" aria-controls="pane-area" role="tab" tabindex="-1" class="el-tabs__item is-top">📏 面积</div><div id="tab-power" aria-controls="pane-power" role="tab" tabindex="-1" class="el-tabs__item is-top">⚡ 功率</div><div id="tab-storage" aria-controls="pane-storage" role="tab" tabindex="-1" class="el-tabs__item is-top">💾 存储</div></div></div></div></div><div class="el-tabs__content"><div data-v-f53f3c2c="" role="tabpanel" id="pane-length" aria-labelledby="tab-length" class="el-tab-pane"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-weight" aria-labelledby="tab-weight" class="el-tab-pane" style="display: none;"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-temperature" aria-labelledby="tab-temperature" class="el-tab-pane" style="display: none;"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-volume" aria-labelledby="tab-volume" class="el-tab-pane" style="display: none;"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-area" aria-labelledby="tab-area" class="el-tab-pane" style="display: none;"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-power" aria-labelledby="tab-power" class="el-tab-pane" style="display: none;"></div><div data-v-f53f3c2c="" role="tabpanel" aria-hidden="true" id="pane-storage" aria-labelledby="tab-storage" class="el-tab-pane" style="display: none;"></div></div></div></div><div data-v-f53f3c2c="" class="conversion-panel"><div data-v-f53f3c2c="" class="input-section"><h3 data-v-f53f3c2c="">输入值</h3><div data-v-f53f3c2c="" class="input-group"><div data-v-f53f3c2c="" class="el-input-number el-input-number--large" style="width: 200px;"><span role="button" class="el-input-number__decrease"><i class="el-icon-minus"></i></span><span role="button" class="el-input-number__increase"><i class="el-icon-plus"></i></span><div class="el-input el-input--large"><!----><input type="text" autocomplete="off" max="Infinity" min="-Infinity" class="el-input__inner" role="spinbutton" aria-valuemax="Infinity" aria-valuemin="-Infinity" aria-valuenow="1" aria-disabled="false"><!----><!----><!----><!----></div></div><div data-v-f53f3c2c="" class="el-select el-select--large"><!----><div class="el-input el-input--large el-input--suffix"><!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!----></span><!----></span><!----><!----></div><div class="el-select-dropdown el-popper" style="display: none; min-width: 200px;"><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-select-dropdown__list"><!----><li data-v-f53f3c2c="" class="el-select-dropdown__item selected"><span>米</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>千米</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>厘米</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>毫米</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>英寸</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>英尺</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>码</span></li><li data-v-f53f3c2c="" class="el-select-dropdown__item"><span>英里</span></li></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!----></div></div></div></div><div data-v-f53f3c2c="" class="conversion-arrow"><i data-v-f53f3c2c="" class="el-icon-right"></i></div><div data-v-f53f3c2c="" class="output-section"><h3 data-v-f53f3c2c="">转换结果</h3><div data-v-f53f3c2c="" class="results-list"><div data-v-f53f3c2c="" class="result-item active"><div data-v-f53f3c2c="" class="result-label">米</div><div data-v-f53f3c2c="" class="result-value"> 1 </div><div data-v-f53f3c2c="" class="result-symbol">m</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">千米</div><div data-v-f53f3c2c="" class="result-value"> 0.001 </div><div data-v-f53f3c2c="" class="result-symbol">km</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">厘米</div><div data-v-f53f3c2c="" class="result-value"> 100 </div><div data-v-f53f3c2c="" class="result-symbol">cm</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">毫米</div><div data-v-f53f3c2c="" class="result-value"> 1,000 </div><div data-v-f53f3c2c="" class="result-symbol">mm</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">英寸</div><div data-v-f53f3c2c="" class="result-value"> 39.370079 </div><div data-v-f53f3c2c="" class="result-symbol">in</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">英尺</div><div data-v-f53f3c2c="" class="result-value"> 3.28084 </div><div data-v-f53f3c2c="" class="result-symbol">ft</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">码</div><div data-v-f53f3c2c="" class="result-value"> 1.093613 </div><div data-v-f53f3c2c="" class="result-symbol">yd</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div><div data-v-f53f3c2c="" class="result-item"><div data-v-f53f3c2c="" class="result-label">英里</div><div data-v-f53f3c2c="" class="result-value"> 0.00062137 </div><div data-v-f53f3c2c="" class="result-symbol">mi</div><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 复制 </span></button></div></div></div></div><div data-v-f53f3c2c="" class="quick-conversions"><h3 data-v-f53f3c2c="">🔥 常用转换</h3><div data-v-f53f3c2c="" class="quick-buttons"><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--small"><!----><!----><span> 1米 = ? 英尺 </span></button><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--small"><!----><!----><span> 1英寸 = ? 厘米 </span></button><button data-v-f53f3c2c="" type="button" class="el-button el-button--default el-button--small"><!----><!----><span> 1千米 = ? 英里 </span></button></div></div></div></div></div><article data-v-1c6a9444="" id="main-article">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <article class="prose prose-lg mx-auto">
+    <!-- 标题 -->
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">别再为换算头疼了！这个工具能帮你搞定生活中所有单位换算</h1>
+
+    <!-- 引言 -->
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+      你有没有遇到过这样的烦恼？看到国外菜谱写着“一杯面粉”，却不知道是多少克；听说隔壁城市距离“50英里”，心里完全没概念；手机显示存储空间“64GB”，不知道能存多少张照片……今天，就带你认识一个能解决所有换算难题的好帮手。
+    </p>
+
+    <!-- 核心功能介绍 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
+      <p class="text-gray-800">
+        这个多功能换算工具就像一个“万能翻译器”，专门把不同的计量单位“说”的同一种语言。无论是厨房里的柴米油盐，还是旅行中的里程路标，甚至是电脑手机的存储空间，它都能轻松转换，让你一看就懂。
+      </p>
+    </div>
+
+    <!-- 第一部分：能换算哪些东西？ -->
+    <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">它能帮你换算哪些东西？</h2>
+    <p class="text-gray-700 mb-6">
+      它覆盖了我们日常生活中几乎所有的常见单位，主要分成了七大类，每一类都藏着我们常会碰到的小麻烦。
+    </p>
+    <ul class="space-y-3 mb-8 text-gray-700">
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">长度距离：</strong> 米、公里、厘米，还有国外常用的英寸、英尺、英里。出国旅行或者海淘家具尺寸时特别有用。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">重量质量：</strong> 千克、克、吨，以及磅、盎司。烘焙时对照西式菜谱，或者查看国际快递的限重，就靠它了。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">温度：</strong> 摄氏度、华氏度、开尔文。看国外天气预报时，再也不怕看不懂华氏度了。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">体积容量：</strong> 升、毫升，和国外的加仑、夸脱、品脱。给爱车加油，或者调配清洁剂比例时会用到。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">面积：</strong> 平方米、平方公里，还有公顷、英亩。了解房产面积或者土地大小时，可以进行国际对比。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">功率：</strong> 瓦特、千瓦、马力。选购空调、汽车时，比较不同国家的产品参数。</li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><strong class="text-gray-900">数据存储：</strong> 字节(B)、千字节(KB)、兆字节(MB)、吉字节(GB)、太字节(TB)。这是最常用的了，买手机、硬盘、办宽带时，搞清楚容量和网速全靠它。</li>
+    </ul>
+
+    <!-- 第二部分：在什么场景下用？ -->
+    <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">哪些时候你会需要它？</h2>
+    <p class="text-gray-700 mb-6">
+      下面这些场景，可能你正在经历，或者很快就会遇到。
+    </p>
+
+    <div class="grid sm:grid-cols-2 gap-6 mb-10">
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg text-gray-900 mb-2">🏠 居家生活</h3>
+        <p class="text-gray-700">跟着外国美食博主学做蛋糕，把“1杯糖”换成你熟悉的“克数”。调配消毒水时，把“1加仑水”换算成多少升。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg text-gray-900 mb-2">✈️ 旅行与购物</h3>
+        <p class="text-gray-700">自驾游看到路牌写着“Next Exit 2 Miles”，立刻知道是“3.2公里后下高速”。海淘时，把商品描述的“磅(lb)”换成“公斤”，看看运费怎么算。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg text-gray-900 mb-2">💻 学习与工作</h3>
+        <p class="text-gray-700">孩子做科学小实验，需要把华氏度换算成摄氏度。查阅英文资料时，把“5000平方英尺的办公室”想象成多大面积。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg text-gray-900 mb-2">📱 数码与网络</h3>
+        <p class="text-gray-700">比较手机“128GB”和“256GB”到底能多存多少照片视频。办理“300兆(Mbps)”宽带，想知道下载一部电影大概要多久。</p>
+      </div>
+    </div>
+
+    <!-- 第三部分：为什么需要精确换算？ -->
+    <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">为什么不能大概估一下？</h2>
+    <p class="text-gray-700 mb-4">
+      很多人觉得“差不多就行了”，但在很多情况下，差一点可能会带来大麻烦。
+    </p>
+    <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-8">
+      <p class="text-gray-800"><strong>举个例子：</strong> 装修时，如果错把“英寸”当“厘米”来理解家具尺寸，买回来的柜子可能根本放不进预留的位置。烘焙时，面粉的“一杯”如果估错了，蛋糕可能就发不起来。更不用说在科学、工程等领域，单位的混淆可能导致严重的错误。</p>
+      <p class="text-gray-800 mt-3">一个好的换算工具，能帮你避免这些尴尬和损失，让你在面对任何计量单位时都心里有底。</p>
+    </div>
+
+    <!-- 第四部分：总结与鼓励 -->
+    <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">让生活变得更简单</h2>
+    <p class="text-gray-700 mb-6">
+      世界因为交流而丰富，但也因为度量标准不同而偶尔带来小障碍。无论是出于好奇想了解“一英里到底有多远”，还是出于实际需要计算“一磅牛肉多少钱”，掌握一个靠谱的换算方法，都能让你更从容地应对全球化生活中的各种细节。
+    </p>
+    <p class="text-gray-700">
+      下次再遇到看不懂的单位时，别再自己猜或者上网四处问了。找到一个像这样集多种转换于一身的工具，输入数字，选择单位，一秒就能得到清晰准确的结果。科技的意义，不正是把复杂的事情变简单，把时间留给我们去享受生活本身吗？
+    </p>
+
+    <!-- 结尾 -->
+    <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-600">
+      <p>希望这篇文章，能帮你彻底告别单位换算的困惑。</p>
+    </div>
+  </article>
+</div>
+</article><button data-v-1c6a9444="" title="返回顶部" class="back-to-top-btn w-8 h-8 rounded-full bg-white border border-gray-200 shadow-md text-gray-700 hover:bg-blue-500 hover:border-blue-500 hover:text-white hover:shadow-lg transition-all duration-200 fixed bottom-0 right-0 z-40 flex items-center justify-center p-0"><svg data-v-1c6a9444="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4 m-0"><path data-v-1c6a9444="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></button><!----><!----><!----><!----></div></body></html>
