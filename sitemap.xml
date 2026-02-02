@@ -507,6 +507,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/random/ssq-random/</loc>
+
+    <lastmod>2026-02-02T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/random/rock-paper-scissors/</loc>
 
     <lastmod>2026-02-02T00:00:00.000Z</lastmod>
@@ -1684,6 +1696,18 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/text-to-img/</loc>
+
+    <lastmod>2026-02-02T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/spend-100million/</loc>
 
     <lastmod>2026-02-02T00:00:00.000Z</lastmod>
 
