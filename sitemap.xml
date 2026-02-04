@@ -327,6 +327,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/special-char/</loc>
+
+    <lastmod>2026-02-04T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/shit-article/</loc>
 
     <lastmod>2026-02-04T00:00:00.000Z</lastmod>
@@ -568,6 +580,18 @@
   <url>
 
     <loc>https://tool.4yop.com/random/call_name/</loc>
+
+    <lastmod>2026-02-04T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/quick-find/express-query/</loc>
 
     <lastmod>2026-02-04T00:00:00.000Z</lastmod>
 
