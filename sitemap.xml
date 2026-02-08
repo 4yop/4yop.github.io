@@ -411,6 +411,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/text/pua-create/</loc>
+
+    <lastmod>2026-02-08T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/text/life-days-left/</loc>
 
     <lastmod>2026-02-08T00:00:00.000Z</lastmod>
@@ -2068,6 +2080,18 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/avatar-decoration/</loc>
+
+    <lastmod>2026-02-08T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/demo/ai-yolo-img/</loc>
 
     <lastmod>2026-02-08T00:00:00.000Z</lastmod>
 
