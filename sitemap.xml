@@ -675,6 +675,18 @@
 
   <url>
 
+    <loc>https://tool.4yop.com/quick-find/ip-search/</loc>
+
+    <lastmod>2026-02-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tool.4yop.com/quick-find/express-query/</loc>
 
     <lastmod>2026-02-09T00:00:00.000Z</lastmod>
@@ -952,6 +964,18 @@
   <url>
 
     <loc>https://tool.4yop.com/office/chart-pie-generator/</loc>
+
+    <lastmod>2026-02-09T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tool.4yop.com/office/chart-bar-generator/</loc>
 
     <lastmod>2026-02-09T00:00:00.000Z</lastmod>
 
@@ -1947,18 +1971,6 @@
 
   <url>
 
-    <loc>https://tool.4yop.com/demo/ip-search/</loc>
-
-    <lastmod>2026-02-09T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
     <loc>https://tool.4yop.com/demo/img-up/</loc>
 
     <lastmod>2026-02-09T00:00:00.000Z</lastmod>
@@ -2044,18 +2056,6 @@
   <url>
 
     <loc>https://tool.4yop.com/demo/chart-line-generator/</loc>
-
-    <lastmod>2026-02-09T00:00:00.000Z</lastmod>
-
-    <changefreq>daily</changefreq>
-
-    <priority>0.8</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://tool.4yop.com/demo/chart-bar-generator/</loc>
 
     <lastmod>2026-02-09T00:00:00.000Z</lastmod>
 
