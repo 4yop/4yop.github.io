@@ -1395,6 +1395,18 @@
 
   <url>
 
+    <loc>https://tools321.com/img/dog-img/</loc>
+
+    <lastmod>2026-03-02T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tools321.com/img/compress/</loc>
 
     <lastmod>2026-03-02T00:00:00.000Z</lastmod>
@@ -2283,6 +2295,18 @@
 
   <url>
 
+    <loc>https://tools321.com/demo/cat-img/</loc>
+
+    <lastmod>2026-03-02T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tools321.com/demo/calligraphy-name-generator/</loc>
 
     <lastmod>2026-03-02T00:00:00.000Z</lastmod>
@@ -2392,6 +2416,18 @@
   <url>
 
     <loc>https://tools321.com/demo/21-point-calculator/</loc>
+
+    <lastmod>2026-03-02T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tools321.com/demo/21-point-calculator/cat-img/</loc>
 
     <lastmod>2026-03-02T00:00:00.000Z</lastmod>
 
