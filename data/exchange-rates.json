@@ -1,113 +1,113 @@
 [
   {
     "currency": "美元",
-    "spotBuyingRate": "689.44",
-    "cashBuyingRate": "689.44",
-    "spotSellingRate": "692.34",
-    "cashSellingRate": "692.34",
+    "spotBuyingRate": "689.53",
+    "cashBuyingRate": "689.53",
+    "spotSellingRate": "692.43",
+    "cashSellingRate": "692.43",
     "midRate": "690.25",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "港币",
-    "spotBuyingRate": "88.14",
-    "cashBuyingRate": "88.14",
-    "spotSellingRate": "88.5",
-    "cashSellingRate": "88.5",
+    "spotBuyingRate": "88.15",
+    "cashBuyingRate": "88.15",
+    "spotSellingRate": "88.51",
+    "cashSellingRate": "88.51",
     "midRate": "88.25",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "澳大利亚元",
-    "spotBuyingRate": "482.54",
-    "cashBuyingRate": "482.54",
-    "spotSellingRate": "486.37",
-    "cashSellingRate": "486.37",
+    "spotBuyingRate": "482.4",
+    "cashBuyingRate": "482.4",
+    "spotSellingRate": "486.23",
+    "cashSellingRate": "486.23",
     "midRate": "484.15",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "欧元",
-    "spotBuyingRate": "795.9",
-    "cashBuyingRate": "795.9",
-    "spotSellingRate": "801.74",
-    "cashSellingRate": "801.74",
+    "spotBuyingRate": "795.93",
+    "cashBuyingRate": "795.93",
+    "spotSellingRate": "801.77",
+    "cashSellingRate": "801.77",
     "midRate": "801.32",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "日元",
-    "spotBuyingRate": "4.3566",
-    "cashBuyingRate": "4.3566",
-    "spotSellingRate": "4.3903",
-    "cashSellingRate": "4.3903",
+    "spotBuyingRate": "4.3572",
+    "cashBuyingRate": "4.3572",
+    "spotSellingRate": "4.3909",
+    "cashSellingRate": "4.3909",
     "midRate": "4.3814",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "英镑",
-    "spotBuyingRate": "918.5",
-    "cashBuyingRate": "918.5",
-    "spotSellingRate": "925.32",
-    "cashSellingRate": "925.32",
+    "spotBuyingRate": "918.69",
+    "cashBuyingRate": "918.69",
+    "spotSellingRate": "925.52",
+    "cashSellingRate": "925.52",
     "midRate": "921.98",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "加拿大元",
-    "spotBuyingRate": "504.22",
-    "cashBuyingRate": "504.22",
-    "spotSellingRate": "508.18",
-    "cashSellingRate": "508.18",
+    "spotBuyingRate": "504.29",
+    "cashBuyingRate": "504.29",
+    "spotSellingRate": "508.25",
+    "cashSellingRate": "508.25",
     "midRate": "504.94",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "新加坡元",
-    "spotBuyingRate": "537.29",
-    "cashBuyingRate": "537.29",
-    "spotSellingRate": "541.34",
-    "cashSellingRate": "541.34",
+    "spotBuyingRate": "537.23",
+    "cashBuyingRate": "537.23",
+    "spotSellingRate": "541.28",
+    "cashSellingRate": "541.28",
     "midRate": "539.07",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "新西兰元",
-    "spotBuyingRate": "404.35",
-    "cashBuyingRate": "404.35",
-    "spotSellingRate": "407.39",
-    "cashSellingRate": "407.39",
+    "spotBuyingRate": "404.34",
+    "cashBuyingRate": "404.34",
+    "spotSellingRate": "407.38",
+    "cashSellingRate": "407.38",
     "midRate": "407.21",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "泰国铢",
-    "spotBuyingRate": "21.54",
-    "cashBuyingRate": "21.54",
-    "spotSellingRate": "21.72",
-    "cashSellingRate": "21.72",
+    "spotBuyingRate": "21.55",
+    "cashBuyingRate": "21.55",
+    "spotSellingRate": "21.73",
+    "cashSellingRate": "21.73",
     "midRate": "21.75",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "韩国元",
-    "spotBuyingRate": "0.4611",
-    "cashBuyingRate": "0.4611",
-    "spotSellingRate": "0.4708",
-    "cashSellingRate": "0.4708",
+    "spotBuyingRate": "0.4613",
+    "cashBuyingRate": "0.4613",
+    "spotSellingRate": "0.471",
+    "cashSellingRate": "0.471",
     "midRate": "0.4662",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "澳门元",
@@ -116,28 +116,28 @@
     "spotSellingRate": "85.97",
     "cashSellingRate": "85.97",
     "midRate": "85.64",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "瑞士法郎",
-    "spotBuyingRate": "879.34",
-    "cashBuyingRate": "879.34",
-    "spotSellingRate": "886.14",
-    "cashSellingRate": "886.14",
+    "spotBuyingRate": "879.45",
+    "cashBuyingRate": "879.45",
+    "spotSellingRate": "886.25",
+    "cashSellingRate": "886.25",
     "midRate": "884.14",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "瑞典克朗",
-    "spotBuyingRate": "74.41",
-    "cashBuyingRate": "74.41",
-    "spotSellingRate": "75.01",
-    "cashSellingRate": "75.01",
+    "spotBuyingRate": "74.4",
+    "cashBuyingRate": "74.4",
+    "spotSellingRate": "75",
+    "cashSellingRate": "75",
     "midRate": "74.83",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "卢布",
@@ -146,18 +146,18 @@
     "spotSellingRate": "8.85",
     "cashSellingRate": "8.85",
     "midRate": "8.78",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "丹麦克朗",
-    "spotBuyingRate": "106.49",
-    "cashBuyingRate": "106.49",
-    "spotSellingRate": "107.35",
-    "cashSellingRate": "107.35",
+    "spotBuyingRate": "106.5",
+    "cashBuyingRate": "106.5",
+    "spotSellingRate": "107.36",
+    "cashSellingRate": "107.36",
     "midRate": "107.25",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "印尼卢比",
@@ -166,28 +166,28 @@
     "spotSellingRate": "0.0414",
     "cashSellingRate": "0.0414",
     "midRate": "0.041",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "挪威克朗",
-    "spotBuyingRate": "71.21",
-    "cashBuyingRate": "71.21",
-    "spotSellingRate": "71.79",
-    "cashSellingRate": "71.79",
+    "spotBuyingRate": "71.22",
+    "cashBuyingRate": "71.22",
+    "spotSellingRate": "71.8",
+    "cashSellingRate": "71.8",
     "midRate": "71.34",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "阿联酋迪拉姆",
-    "spotBuyingRate": "186.69",
-    "cashBuyingRate": "186.69",
-    "spotSellingRate": "189.33",
-    "cashSellingRate": "189.33",
+    "spotBuyingRate": "186.72",
+    "cashBuyingRate": "186.72",
+    "spotSellingRate": "189.36",
+    "cashSellingRate": "189.36",
     "midRate": "187.95",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "新台币",
@@ -196,8 +196,8 @@
     "spotSellingRate": "",
     "cashSellingRate": "22.78",
     "midRate": "21.75",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "菲律宾比索",
@@ -206,8 +206,8 @@
     "spotSellingRate": "11.77",
     "cashSellingRate": "11.77",
     "midRate": "11.75",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "南非兰特",
@@ -216,28 +216,28 @@
     "spotSellingRate": "41.62",
     "cashSellingRate": "41.62",
     "midRate": "41.44",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "沙特里亚尔",
-    "spotBuyingRate": "182.71",
-    "cashBuyingRate": "182.71",
-    "spotSellingRate": "185.29",
-    "cashSellingRate": "185.29",
+    "spotBuyingRate": "182.73",
+    "cashBuyingRate": "182.73",
+    "spotSellingRate": "185.31",
+    "cashSellingRate": "185.31",
     "midRate": "183.92",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "巴西雷亚尔",
     "spotBuyingRate": "",
-    "cashBuyingRate": "124.52",
+    "cashBuyingRate": "124.5",
     "spotSellingRate": "",
-    "cashSellingRate": "138.8",
+    "cashSellingRate": "138.76",
     "midRate": "131.32",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "土耳其里拉",
@@ -246,18 +246,18 @@
     "spotSellingRate": "16.77",
     "cashSellingRate": "16.77",
     "midRate": "15.67",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "印度卢比",
     "spotBuyingRate": "",
-    "cashBuyingRate": "7.1293",
+    "cashBuyingRate": "7.1304",
     "spotSellingRate": "",
-    "cashSellingRate": "7.9491",
+    "cashSellingRate": "7.9502",
     "midRate": "7.5422",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "越南盾",
@@ -266,8 +266,8 @@
     "spotSellingRate": "",
     "cashSellingRate": "0.0276",
     "midRate": "0.0264",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "蒙古图格里克",
@@ -276,28 +276,28 @@
     "spotSellingRate": "0.2072",
     "cashSellingRate": "0.2072",
     "midRate": "0.1938",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "林吉特",
-    "spotBuyingRate": "174.4",
+    "spotBuyingRate": "174.42",
     "cashBuyingRate": "",
-    "spotSellingRate": "175.97",
+    "spotSellingRate": "175.99",
     "cashSellingRate": "",
     "midRate": "174.99",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "尼泊尔卢比",
     "spotBuyingRate": "",
-    "cashBuyingRate": "3.8492",
+    "cashBuyingRate": "3.8497",
     "spotSellingRate": "",
-    "cashSellingRate": "5.4718",
+    "cashSellingRate": "5.4726",
     "midRate": "4.729",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "捷克克朗",
@@ -306,28 +306,28 @@
     "spotSellingRate": "",
     "cashSellingRate": "36.32",
     "midRate": "32.94",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "卡塔尔里亚尔",
     "spotBuyingRate": "",
-    "cashBuyingRate": "168.5",
+    "cashBuyingRate": "168.53",
     "spotSellingRate": "",
-    "cashSellingRate": "210.16",
+    "cashSellingRate": "210.19",
     "midRate": "189.54",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "以色列谢克尔",
     "spotBuyingRate": "",
-    "cashBuyingRate": "200.91",
+    "cashBuyingRate": "200.93",
     "spotSellingRate": "",
-    "cashSellingRate": "245.55",
+    "cashSellingRate": "245.59",
     "midRate": "223.8",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "墨西哥比索",
@@ -336,38 +336,38 @@
     "spotSellingRate": "39.24",
     "cashSellingRate": "39.24",
     "midRate": "38.99",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "匈牙利福林",
-    "spotBuyingRate": "2.0127",
-    "cashBuyingRate": "2.0127",
-    "spotSellingRate": "2.0533",
-    "cashSellingRate": "2.0533",
+    "spotBuyingRate": "2.0133",
+    "cashBuyingRate": "2.0133",
+    "spotSellingRate": "2.0539",
+    "cashSellingRate": "2.0539",
     "midRate": "2.0672",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "科威特第纳尔",
     "spotBuyingRate": "",
-    "cashBuyingRate": "2007.27",
+    "cashBuyingRate": "2007.53",
     "spotSellingRate": "",
-    "cashSellingRate": "2503.45",
+    "cashSellingRate": "2503.77",
     "midRate": "2257.77",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "巴基斯坦卢比",
     "spotBuyingRate": "",
-    "cashBuyingRate": "2.0273",
+    "cashBuyingRate": "2.0275",
     "spotSellingRate": "",
-    "cashSellingRate": "2.9173",
+    "cashSellingRate": "2.9177",
     "midRate": "2.4748",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "柬埔寨瑞尔",
@@ -376,27 +376,27 @@
     "spotSellingRate": "",
     "cashSellingRate": "0.191",
     "midRate": "0.1725",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "文莱元",
     "spotBuyingRate": "",
-    "cashBuyingRate": "496.09",
+    "cashBuyingRate": "496.04",
     "spotSellingRate": "",
-    "cashSellingRate": "582.37",
+    "cashSellingRate": "582.3",
     "midRate": "540.52",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   },
   {
     "currency": "塞尔维亚第纳尔",
-    "spotBuyingRate": "6.7332",
+    "spotBuyingRate": "6.7334",
     "cashBuyingRate": "",
-    "spotSellingRate": "6.8692",
+    "spotSellingRate": "6.8694",
     "cashSellingRate": "",
     "midRate": "6.8374",
-    "date": "2026/03/06 21:13:36",
-    "time": "21:13:36"
+    "date": "2026/03/06 21:15:20",
+    "time": "21:15:20"
   }
 ]
