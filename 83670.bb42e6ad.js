@@ -1,1 +1,0 @@
-"use strict";(self["webpackChunkweb_tool_vue"]=self["webpackChunkweb_tool_vue"]||[]).push([[83670],{83670:function(e,u){u.__esModule=!0,u["default"]=function(e){return{methods:{focus:function(){this.$refs[e].focus()}}}}}}]);
