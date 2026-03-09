@@ -60,6 +60,8 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-bounce: bounce 1s infinite;
+    --blur-sm: 8px;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -228,6 +230,9 @@
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -263,6 +268,9 @@
   }
   .z-2000 {
     z-index: 2000;
+  }
+  .z-\[10000\] {
+    z-index: 10000;
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
@@ -311,6 +319,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .inline-flex {
     display: inline-flex;
@@ -400,6 +411,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-bounce {
+    animation: var(--animate-bounce);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -543,6 +557,12 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/60 {
+    background-color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -683,6 +703,9 @@
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
   }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
   .text-blue-700 {
     color: var(--color-blue-700);
   }
@@ -748,6 +771,11 @@
   }
   .backdrop-blur-md {
     --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -1150,6 +1178,16 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -1267,6 +1305,8 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-bounce: bounce 1s infinite;
+    --blur-sm: 8px;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1435,6 +1475,9 @@
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -1470,6 +1513,9 @@
   }
   .z-2000 {
     z-index: 2000;
+  }
+  .z-\[10000\] {
+    z-index: 10000;
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
@@ -1518,6 +1564,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .inline-flex {
     display: inline-flex;
@@ -1607,6 +1656,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-bounce {
+    animation: var(--animate-bounce);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1750,6 +1802,12 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/60 {
+    background-color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -1890,6 +1948,9 @@
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
   }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
   .text-blue-700 {
     color: var(--color-blue-700);
   }
@@ -1955,6 +2016,11 @@
   }
   .backdrop-blur-md {
     --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -2358,6 +2424,16 @@
   syntax: "*";
   inherits: false;
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2411,7 +2487,7 @@
     }
   }
 }
-</style><meta name="title" content="免费IP地址查询工具 - 精准检测网络信息与地理位置"><meta name="description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta name="keywords" content="IP查询,地理位置查询,网络诊断,IP地址检测,公网IP,网络延迟,网络信息查询"><meta name="canonical" content="https://tools321.com/quick-find/ip-search/"><meta property="og:type" content="website"><meta property="og:title" content="免费IP地址查询工具 - 网络信息与地理位置检测"><meta property="og:description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta property="og:url" content="https://tools321.com/quick-find/ip-search/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="免费IP地址查询工具 - 网络信息与地理位置检测"><meta name="twitter:description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.49e19eb4.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.ff131f4c.js"></script><script defer="defer" src="/quick-find/ip-search.cfb648e6.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/quick-find/ip-search.3ac7fdd6.css" rel="stylesheet"><meta charset="utf-8"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
+</style><meta name="title" content="免费IP地址查询工具 - 精准检测网络信息与地理位置"><meta name="description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta name="keywords" content="IP查询,地理位置查询,网络诊断,IP地址检测,公网IP,网络延迟,网络信息查询"><meta name="canonical" content="https://tools321.com/quick-find/ip-search/"><meta property="og:type" content="website"><meta property="og:title" content="免费IP地址查询工具 - 网络信息与地理位置检测"><meta property="og:description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta property="og:url" content="https://tools321.com/quick-find/ip-search/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="免费IP地址查询工具 - 网络信息与地理位置检测"><meta name="twitter:description" content="提供全面的IP地址查询服务，包括公网IP检测、地理位置溯源、国家信息、网络延迟诊断等，帮助用户快速了解IP详情和网络状态。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.4566aaf8.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.6b4c7e79.js"></script><script defer="defer" src="/quick-find/ip-search.cfb648e6.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/quick-find/ip-search.3ac7fdd6.css" rel="stylesheet"><meta charset="utf-8"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?627e804881a821cb9497d73101fec725";
