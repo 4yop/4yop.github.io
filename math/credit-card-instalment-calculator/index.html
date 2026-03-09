@@ -1,7 +1,2471 @@
-<!doctype html><html lang="zh-CN"><head><meta name="title" content="信用卡分期计算器 - 在线计算每期还款额及手续费"><meta name="description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。"><meta name="keywords" content="信用卡分期,分期计算器,手续费计算,每期还款,分期付款计算器"><meta name="canonical" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:type" content="website"><meta property="og:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta property="og:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta property="og:url" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta name="twitter:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.49e19eb4.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.ff131f4c.js"></script><script defer="defer" src="/math/credit-card-instalment-calculator.dda6a15c.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/math/credit-card-instalment-calculator.e7c99ba1.css" rel="stylesheet"></head><head><meta charset="utf-8"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
+<!DOCTYPE html><html lang="zh-CN"><head><style>/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-yellow-50: oklch(98.7% 0.026 102.212);
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-green-100: oklch(96.2% 0.044 156.743);
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-blue-50: oklch(97% 0.014 254.604);
+    --color-blue-100: oklch(93.2% 0.032 255.585);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-blue-800: oklch(42.4% 0.199 265.638);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --container-6xl: 72rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --tracking-tight: -0.025em;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .z-1001 {
+    z-index: 1001;
+  }
+  .z-2000 {
+    z-index: 2000;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .line-clamp-none {
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: unset;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-6xl {
+    max-width: var(--container-6xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-blue-200 {
+    border-color: var(--color-blue-200);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
+  .border-yellow-200 {
+    border-color: var(--color-yellow-200);
+  }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-yellow-50 {
+    background-color: var(--color-yellow-50);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-blue-500 {
+    --tw-gradient-from: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-gray-50 {
+    --tw-gradient-from: var(--color-gray-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-blue-600 {
+    --tw-gradient-to: var(--color-blue-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white {
+    --tw-gradient-to: var(--color-white);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-12 {
+    padding-left: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-blue-100 {
+    color: var(--color-blue-100);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+  .text-blue-700 {
+    color: var(--color-blue-700);
+  }
+  .text-blue-800 {
+    color: var(--color-blue-800);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
+  .text-green-800 {
+    color: var(--color-green-800);
+  }
+  .text-orange-600 {
+    color: var(--color-orange-600);
+  }
+  .text-purple-700 {
+    color: var(--color-purple-700);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-shadow {
+    transition-property: box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .last\:border-b-0 {
+    &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+  .hover\:border-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-blue-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-blue-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-100);
+      }
+    }
+  }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:pl-8 {
+    &:hover {
+      @media (hover: hover) {
+        padding-left: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .hover\:text-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-600);
+      }
+    }
+  }
+  .hover\:text-gray-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-700);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-md {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .focus\:border-blue-500 {
+    &:focus {
+      border-color: var(--color-blue-500);
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-100 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-100);
+    }
+  }
+  .focus\:ring-blue-500 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-500);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:border-r {
+    @media (width >= 48rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .md\:border-b-0 {
+    @media (width >= 48rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+
+/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-yellow-50: oklch(98.7% 0.026 102.212);
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-green-100: oklch(96.2% 0.044 156.743);
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-blue-50: oklch(97% 0.014 254.604);
+    --color-blue-100: oklch(93.2% 0.032 255.585);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-blue-800: oklch(42.4% 0.199 265.638);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --container-6xl: 72rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --tracking-tight: -0.025em;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .z-1001 {
+    z-index: 1001;
+  }
+  .z-2000 {
+    z-index: 2000;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .line-clamp-none {
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: unset;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-6xl {
+    max-width: var(--container-6xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-blue-200 {
+    border-color: var(--color-blue-200);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
+  .border-yellow-200 {
+    border-color: var(--color-yellow-200);
+  }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-yellow-50 {
+    background-color: var(--color-yellow-50);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-blue-500 {
+    --tw-gradient-from: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-gray-50 {
+    --tw-gradient-from: var(--color-gray-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-blue-600 {
+    --tw-gradient-to: var(--color-blue-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white {
+    --tw-gradient-to: var(--color-white);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-12 {
+    padding-left: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-blue-100 {
+    color: var(--color-blue-100);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+  .text-blue-700 {
+    color: var(--color-blue-700);
+  }
+  .text-blue-800 {
+    color: var(--color-blue-800);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
+  .text-green-800 {
+    color: var(--color-green-800);
+  }
+  .text-orange-600 {
+    color: var(--color-orange-600);
+  }
+  .text-purple-700 {
+    color: var(--color-purple-700);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-shadow {
+    transition-property: box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .last\:border-b-0 {
+    &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+  .hover\:border-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-blue-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-blue-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-100);
+      }
+    }
+  }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:pl-8 {
+    &:hover {
+      @media (hover: hover) {
+        padding-left: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .hover\:text-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-600);
+      }
+    }
+  }
+  .hover\:text-gray-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-700);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-md {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .focus\:border-blue-500 {
+    &:focus {
+      border-color: var(--color-blue-500);
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-100 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-100);
+    }
+  }
+  .focus\:ring-blue-500 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-500);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:border-r {
+    @media (width >= 48rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .md\:border-b-0 {
+    @media (width >= 48rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+</style><meta name="title" content="信用卡分期计算器 - 在线计算每期还款额及手续费"><meta name="description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。"><meta name="keywords" content="信用卡分期,分期计算器,手续费计算,每期还款,分期付款计算器"><meta name="canonical" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:type" content="website"><meta property="og:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta property="og:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta property="og:url" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta name="twitter:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.49e19eb4.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.ff131f4c.js"></script><script defer="defer" src="/math/credit-card-instalment-calculator.dda6a15c.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/math/credit-card-instalment-calculator.e7c99ba1.css" rel="stylesheet"><meta charset="utf-8"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8982726393306273" crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?627e804881a821cb9497d73101fec725";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
-        })();</script><meta name="viewport" content="width=device-width,initial-scale=1"/><title>信用卡分期计算器 - 在线计算每期还款额及手续费 | 4yop</title><meta name="title" content="信用卡分期计算器 - 在线计算每期还款额及手续费"><meta name="description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。"><meta name="keywords" content="信用卡分期,分期计算器,手续费计算,每期还款,分期付款计算器"><link rel="canonical" href="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:type" content="website"><meta property="og:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta property="og:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta property="og:url" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta name="twitter:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta name="twitter:image" content=""><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"信用卡分期计算器","url":"https://tools321.com/math/credit-card-instalment-calculator/","applicationCategory":"数学计算","operatingSystem":"Web","description":"使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。","softwareVersion":"1.0.0","author":{"@type":"Person","name":"4yop"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"image":"https://tools321.com/upload/icon/math/credit-card-instalment-calculator.webp"}</script><link rel="icon" type="image/webp" href="https://tools321.com/upload/icon/math/credit-card-instalment-calculator.webp"><script>window.CURRENT_HOST = "tools321.com";</script><script async src="/js/common.js"></script><body><div id="app"></div></body></head></html><script src="/js/tw-css-browser@4.js" async></script>
+        })();</script><meta name="viewport" content="width=device-width,initial-scale=1"><title>信用卡分期计算器 - 在线计算每期还款额及手续费 | 4yop</title><meta name="title" content="信用卡分期计算器 - 在线计算每期还款额及手续费"><meta name="description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。"><meta name="keywords" content="信用卡分期,分期计算器,手续费计算,每期还款,分期付款计算器"><link rel="canonical" href="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:type" content="website"><meta property="og:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta property="og:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta property="og:url" content="https://tools321.com/math/credit-card-instalment-calculator/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="信用卡分期计算器 - 快速计算每期还款手续费"><meta name="twitter:description" content="使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果。"><meta name="twitter:image" content=""><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"信用卡分期计算器","url":"https://tools321.com/math/credit-card-instalment-calculator/","applicationCategory":"数学计算","operatingSystem":"Web","description":"使用信用卡分期计算器，快速计算每期应还本金、手续费和总还款额。输入金额、期数和费率，立即获得明细结果，帮助您规划分期付款。","softwareVersion":"1.0.0","author":{"@type":"Person","name":"4yop"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"image":"https://tools321.com/upload/icon/math/credit-card-instalment-calculator.webp"}</script><link rel="icon" type="image/webp" href="https://tools321.com/upload/icon/math/credit-card-instalment-calculator.webp"><script>window.CURRENT_HOST = "tools321.com";</script><script async="" src="/js/common.js"></script></head><body><div id="app"><div data-v-21fface4="" class="top-search-bar bg-white bg-opacity-92 backdrop-blur-md border-b border-gray-100 shadow-sm fixed top-0 left-0 right-0 z-1000 py-4 px-6 hidden"><div data-v-21fface4="" class="search-container max-w-2xl mx-auto relative"><div data-v-21fface4="" class="relative search-input"><input data-v-21fface4="" type="text" placeholder="搜索工具..." class="w-full pl-12 pr-12 py-3 rounded-xl bg-gray-50 border-2 border-gray-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-gray-800"><div data-v-21fface4="" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"> 搜索 </div><!----></div><!----></div></div><button data-v-21fface4="" class="mobile-menu-btn w-9 h-9 rounded-lg bg-white border border-gray-200 shadow-sm hover:bg-gray-50 hover:shadow-md transition-all duration-200 fixed top-0 left-0 z-1001 flex items-center justify-center"><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><!----><div data-v-21fface4="" class="fixed top-0 left-0 h-full bg-white shadow-xl z-2000 transition-transform duration-300 ease-in-out flex flex-col -translate-x-full" style="width: 450px;"><div data-v-21fface4="" class="drawer-header flex flex-col p-6 bg-gradient-to-r from-gray-50 to-white border-b border-gray-100 sticky top-0 z-10"><div data-v-21fface4="" class="flex items-center justify-between mb-4"><h2 data-v-21fface4="" class="text-xl font-bold text-gray-900" style="cursor: pointer;">工具箱</h2><button data-v-21fface4="" class="close-btn w-10 h-10 rounded-lg flex items-center justify-center text-gray-600 hover:bg-gray-100 transition-all duration-200"><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><div data-v-21fface4="" class="relative w-full"><input data-v-21fface4="" type="text" placeholder="搜索工具..." class="w-full pl-10 pr-10 py-2 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-gray-800 text-sm"><div data-v-21fface4="" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></div><!----><!----></div></div><nav data-v-21fface4="" class="drawer-menu-list bg-white overflow-y-auto flex-1"><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">图片处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/compress/" title="图片压缩" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片压缩</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/card-photo/" title="证件照制作" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">证件照制作</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/exif/" title="EXIF查看器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">EXIF查看器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/matting/" title="智能抠图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">智能抠图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/mosaic/" title="图片打码" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片打码</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/gif-get/" title="GIF拆帧" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">GIF拆帧</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/upscale/" title="图片高清化" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片高清化</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/image-merger/" title="图片拼接器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片拼接器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/art-style/" title="艺术滤镜" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">艺术滤镜</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/watermark/" title="批量加水印" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">批量加水印</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/signature/" title="电子签名" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">电子签名</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/seal-gen/" title="印章生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">印章生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/scramble/" title="打乱拼图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">打乱拼图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/qr-generator/" title="二维码生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">二维码生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/image-slicer/" title="图片切割" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片切割</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/color-analyze/" title="颜色分析" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">颜色分析</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/barcode/" title="条形码生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">条形码生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/text-image-generator/" title="文字变图片" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文字变图片</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/random-image/" title="随机图片生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">随机图片生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/ocr/" title="图片转文字" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片转文字</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/clear-exif/" title="EXIF清除" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">EXIF清除</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/beauty-img/" title="小姐姐美图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">小姐姐美图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/image-resizer/" title="图片尺寸调" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片尺寸调</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/dog-img/" title="汪星人" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">汪星人</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/img/cat-img/" title="喵星人图片" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">喵星人图片</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">文档处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/excel-to-vcf/" title="Excel转VCF" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Excel转VCF</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/excel-to-word/" title="Excel转Word" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Excel转Word</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/pdf-range/" title="PDF拆分" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">PDF拆分</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/word-convert/" title="Word转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Word转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/img-to-pdf/" title="图片转PDF" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片转PDF</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/excel-csv-convert/" title="Excel CSV转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Excel CSV转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/convert/" title="PDF转图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">PDF转图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/word-to-pdf/" title="DOCX转PDF" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">DOCX转PDF</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/pdf-watermark/" title="PDF水印工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">PDF水印工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/pdf-merge/" title="PDF合并" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">PDF合并</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/markdown/" title="Markdown转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Markdown转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/excel-merge/" title="Excel合并" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Excel合并</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/document-to-text/" title="文档转文字" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文档转文字</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/document-get-image/" title="文档提图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文档提图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/csv-processor/" title="CSV处理器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">CSV处理器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/chart-radar-generator/" title="能力评估" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">能力评估</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/chart-pie-generator/" title="饼图生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">饼图生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/office/chart-bar-generator/" title="条形图生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">条形图生成</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">文本处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/game-id-deduplicator/" title="ID去重工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">ID去重工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/special-char/" title="字符花样转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">字符花样转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/life-days-left/" title="人生计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">人生计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/text-get-contact/" title="联系提取器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">联系提取器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/regex-tester/" title="规则查找器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">规则查找器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/text-analyzer/" title="文本分析器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文本分析器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/shit-article/" title="文章生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文章生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/internet-jargon/" title="黑话生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">黑话生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/id-card-birthday/" title="身份证生日解析" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">身份证生日解析</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/encrypt/" title="加密解密工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">加密解密工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/convert/" title="文字转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文字转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/uppercase-lowercase/" title="大小写转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">大小写转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/text-diff/" title="文本对比" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文本对比</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/json-formatter/" title="JSON格式化" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">JSON格式化</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/internet-jargon-test/" title="黑话测试" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">黑话测试</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/good-comment/" title="好评生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">好评生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/camel-to-underscore/" title="驼峰转换工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">驼峰转换工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/pua-create/" title="PUA生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">PUA生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/parse-address/" title="地址解析" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">地址解析</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/data-masking/" title="数据脱敏" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">数据脱敏</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/text/zalgo-text-generator/" title="Zalgo生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">Zalgo生成器</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">数学计算</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/wechat-red-packet/" title="红包模拟" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">红包模拟</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/blackjack/" title="21计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">21计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/sequence-generator/" title="序号生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">序号生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/relationship/" title="亲戚计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">亲戚计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/guess-number/" title="猜数字游戏" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">猜数字游戏</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/unit-converter/" title="单位转换器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">单位转换器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/profit/" title="利润计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">利润计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/credit-card-instalment-calculator/" title="信用卡分期" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0 bg-blue-100 text-blue-700 font-medium border-r-4 border-blue-500"><span data-v-21fface4="" class="menu-item-text">信用卡分期</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/calculator/" title="科学计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">科学计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/loan-calculator/" title="贷款计算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">贷款计算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/compound-interest-calculator/" title="复利计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">复利计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/base-converter/" title="进制转换器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">进制转换器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/tax/" title="税金计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">税金计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/roman-numeral-converter/" title="罗马数字转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">罗马数字转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/num-to-chinese/" title="数字转中文" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">数字转中文</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/math/math-lens/" title="数学步骤" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">数学步骤</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">时间工具</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/beijing-time-countdown/" title="时间倒计时" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">时间倒计时</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/lunar-solar-convert/" title="农历转换器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">农历转换器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/timer/" title="在线计时器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">在线计时器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/time-viewer/" title="时间查看器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">时间查看器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/zodiac-star-sign/" title="生肖星座" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">生肖星座</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/stopwatch/" title="秒表" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">秒表</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/retire-day-calculate/" title="退休计算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">退休计算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/second-countdown/" title="浮窗倒计时" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">浮窗倒计时</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/clock/" title="世界时钟" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">世界时钟</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/day-counter/" title="天数计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">天数计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/holiday/" title="节假日查询" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">节假日查询</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/time/ba-zi-converter/" title="八字转换器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">八字转换器</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">地理位置</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/geography/area-search/" title="行政区划" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">行政区划</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/geography/sunrise-sunset/" title="日出日落" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">日出日落</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/geography/sum-angle-calculator/" title="太阳方位" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">太阳方位</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/geography/3d-earth/" title="3D地球" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">3D地球</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">随机工具</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/ssq-random/" title="双色球随机" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">双色球随机</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/wheel/" title="抽签转盘" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">抽签转盘</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/rock-paper-scissors/" title="猜拳模拟器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">猜拳模拟器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/call_name/" title="随机点名" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">随机点名</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/random-picker/" title="随机选择器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">随机选择器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/random-team/" title="团队分组" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">团队分组</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/decision-maker/" title="随机决定器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">随机决定器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/random/random-pair/" title="智能配对" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">智能配对</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">音视频处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/hash/" title="视频哈希修改" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">视频哈希修改</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/m3u8-downloader/" title="M3U8下载" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">M3U8下载</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/video-to-gif/" title="视频转GIF" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">视频转GIF</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/video-clipper/" title="视频截取" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">视频截取</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/m3u8-player/" title="HLS播放器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">HLS播放器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/camera-recorder/" title="摄像头录制器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">摄像头录制器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/browser-screen/" title="屏幕录制" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">屏幕录制</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/audio-recorder/" title="音频录音器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">音频录音器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/scroll-text-create/" title="滚动文字" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">滚动文字</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/video/text-to-speech/" title="文字转语音" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文字转语音</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">健康</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/kids-height/" title="身高预测" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">身高预测</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/bmi/" title="BMI计算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">BMI计算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/woman-safe/" title="经期推算工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">经期推算工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/bmr-calculator/" title="BMR计算器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">BMR计算器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/bfr-record/" title="体质率计算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">体质率计算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/test-intp/" title="MBTI测试" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">MBTI测试</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/child-blood-type/" title="血型预测" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">血型预测</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/water-intake-calculator/" title="喝水计算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">喝水计算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/health/life-grid/" title="人生小格" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">人生小格</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">速查</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/exchange-rates/" title="汇率换算" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">汇率换算</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/check-mobile-balance-usage/" title="话费流量查询" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">话费流量查询</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/all-hot-news/" title="热搜榜" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">热搜榜</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/card-analyze/" title="身份证解析" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">身份证解析</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/ip-search/" title="IP查询" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">IP查询</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/express-query/" title="快递查询" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">快递查询</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/car-number-belong/" title="车牌查询" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">车牌查询</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/quick-find/help-search/" title="多引擎搜索" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">多引擎搜索</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">本地记录</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/record/yu-gi-oh-lp/" title="游戏王生命值记录" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">游戏王生命值记录</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/record/note/" title="便签工具" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">便签工具</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/record/score-board/" title="比赛记分板" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">比赛记分板</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">文件处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/file/thunder-downloader/" title="迅雷下载助手" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">迅雷下载助手</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/file/file-compressor/" title="压缩解压" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">压缩解压</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/file/filename-translate/" title="文件名翻译" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文件名翻译</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">实用工具</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/tools/number-segment-generator/" title="号码段生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">号码段生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/tools/reaction-test/" title="反应测试" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">反应测试</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/tools/password-generator/" title="密码生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">密码生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/tools/birthday-card/" title="生日祝福卡" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">生日祝福卡</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">趣味测试</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/game/check-screen/" title="屏幕检测" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">屏幕检测</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/game/cyber-fish/" title="赛博木鱼" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">赛博木鱼</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/game/snake-game/" title="贪吃蛇" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">贪吃蛇</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/game/shulte-square-attention-test/" title="舒尔特方格" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">舒尔特方格</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">AI本地处理</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-good-comment/" title="AI好评生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">AI好评生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/img-description/" title="图片描述" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片描述</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-translate/" title="AI翻译" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">AI翻译</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-speech-to-text/" title="AI速记" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">AI速记</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-img-category/" title="图片AI分类" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">图片AI分类</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-yolo-img/" title="物品识图" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">物品识图</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-music-gen/" title="AI音乐生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">AI音乐生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/ai/ai-chat/" title="本地AI聊天" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">本地AI聊天</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">开发者工具</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/ip-convert/" title="IP转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">IP转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/mysql-create-table/" title="MySQL表设计器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">MySQL表设计器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/weak-password/" title="弱口令生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">弱口令生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/snowflake-id/" title="雪花ID生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">雪花ID生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/encrypt-tool/" title="加密解密" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">加密解密</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/css-generator/" title="CSS生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">CSS生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/timestamp/" title="时间戳转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">时间戳转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/postman/" title="API调试" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">API调试</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/hacker-terminal/" title="黑客体验台" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">黑客体验台</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/color-picker/" title="颜色选择器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">颜色选择器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/uuid-generator/" title="UUID生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">UUID生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/useragent/" title="UA解析" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">UA解析</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/resource-extractor/" title="资源提取" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">资源提取</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/qr-generator/" title="二维码生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">二维码生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/password-generator/" title="密码生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">密码生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/jwt/" title="JWT解析查看" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">JWT解析查看</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/json-to-query/" title="JSON转参" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">JSON转参</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/iosurl-scheme-generator/" title="快捷链接生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">快捷链接生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/crud-generator/" title="CRUD生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">CRUD生成器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/compress/" title="代码压缩" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">代码压缩</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/client-info/" title="客户端信息" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">客户端信息</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/ws-test/" title="WS连接测试" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">WS连接测试</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/url-escape/" title="URL编解码" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">URL编解码</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/svg-convert/" title="SVG图片转换" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">SVG图片转换</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/format-converter/" title="格式转换器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">格式转换器</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/file-hash/" title="文件哈希" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">文件哈希</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/csr-gen/" title="CSR生成" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">CSR生成</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/dev/cron-gen/" title="定时任务生成器" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">定时任务生成器</span></a></div></div></div><div data-v-21fface4="" class="menu-group m-4 rounded-xl bg-gray-50 overflow-hidden transition-all duration-300 hover:bg-gray-100"><div data-v-21fface4="" class="group-title flex items-center justify-between p-5 cursor-pointer h-14"><span data-v-21fface4="" class="font-medium text-gray-800">文章资讯</span><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500 transition-transform duration-300"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div data-v-21fface4="" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0"><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/article/contact/" title="邮件反馈" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">邮件反馈</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/article/index/" title="工具箱" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">工具箱</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/article/about/" title="关于我们" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">关于我们</span></a></div><div data-v-21fface4="" class="menu-item"><a data-v-21fface4="" href="/article/privacy/" title="隐私政策" target="_blank" class="flex items-center h-11 px-6 py-2 text-gray-700 hover:bg-blue-50 hover:pl-8 transition-all duration-200 border-b border-gray-100 last:border-b-0"><span data-v-21fface4="" class="menu-item-text">隐私政策</span></a></div></div></div></nav></div><div data-v-21fface4="" class="main-content"><div data-v-21fface4="" class="breadcrumb-container px-4 py-3 bg-white border-b border-gray-100 mb-4"><nav data-v-21fface4="" aria-label="Breadcrumb" vocab="https://schema.org" typeof="BreadcrumbList" class="breadcrumb"><ol data-v-21fface4="" class="flex flex-wrap items-center gap-2"><li data-v-21fface4="" property="itemListElement" typeof="ListItem" class="breadcrumb-item"><a data-v-21fface4="" href="/" property="item" typeof="WebPage" class="text-gray-600 hover:text-blue-600 transition-colors"><span data-v-21fface4="" property="name">首页</span></a><meta data-v-21fface4="" property="position" content="1"></li><li data-v-21fface4="" class="breadcrumb-separator"><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4 text-gray-400"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li><li data-v-21fface4="" property="itemListElement" typeof="ListItem" class="breadcrumb-item"><a data-v-21fface4="" href="/math" title="数学计算" property="item" typeof="WebPage" class="text-gray-600 hover:text-blue-600 transition-colors"><span data-v-21fface4="" property="name">数学计算</span></a><meta data-v-21fface4="" property="position" content="2"></li><li data-v-21fface4="" class="breadcrumb-separator"><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4 text-gray-400"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li><li data-v-21fface4="" property="itemListElement" typeof="ListItem" class="breadcrumb-item"><span data-v-21fface4="" property="name" class="text-gray-900 font-medium">信用卡分期</span><meta data-v-21fface4="" property="position" content="3"></li></ol></nav></div><div data-v-1a3a9e56="" class="bg-gray-50 flex items-center justify-center p-4" data-v-21fface4=""><div data-v-1a3a9e56="" class="max-w-6xl w-full bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200"><div data-v-1a3a9e56="" class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white"><h1 data-v-1a3a9e56="" class="text-2xl font-bold tracking-tight text-center">信用卡分期计算器</h1><p data-v-1a3a9e56="" class="text-blue-100 mt-1 text-sm text-center">快速计算每期还款及手续费</p></div><div data-v-1a3a9e56="" class="flex flex-col md:flex-row"><div data-v-1a3a9e56="" class="md:w-1/2 p-6 border-b md:border-b-0 md:border-r border-gray-200"><h2 data-v-1a3a9e56="" class="text-lg font-semibold text-gray-700 mb-4 flex items-center"><span data-v-1a3a9e56="" class="bg-blue-100 text-blue-800 w-6 h-6 rounded-full flex items-center justify-center text-sm mr-2">1</span> 输入信息 </h2><div data-v-1a3a9e56="" class="space-y-5"><div data-v-1a3a9e56=""><label data-v-1a3a9e56="" class="block text-sm font-medium text-gray-600 mb-1">分期本金（元）</label><input data-v-1a3a9e56="" type="number" step="any" min="0" placeholder="例如 10000" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow"></div><div data-v-1a3a9e56=""><label data-v-1a3a9e56="" class="block text-sm font-medium text-gray-600 mb-1">分期期数（期）</label><div data-v-1a3a9e56="" class="flex flex-wrap gap-2 mb-3"><button data-v-1a3a9e56="" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors border border-blue-200"> 3期 </button><button data-v-1a3a9e56="" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors border border-blue-200"> 6期 </button><button data-v-1a3a9e56="" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors border border-blue-200"> 12期 </button><button data-v-1a3a9e56="" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors border border-blue-200"> 24期 </button></div><input data-v-1a3a9e56="" type="number" min="1" step="1" list="term-suggestions" placeholder="或输入期数" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"><datalist data-v-1a3a9e56="" id="term-suggestions"><option data-v-1a3a9e56="" value="3">3期</option><option data-v-1a3a9e56="" value="6">6期</option><option data-v-1a3a9e56="" value="12">12期</option><option data-v-1a3a9e56="" value="24">24期</option><option data-v-1a3a9e56="" value="9">9期</option><option data-v-1a3a9e56="" value="18">18期</option><option data-v-1a3a9e56="" value="36">36期</option></datalist></div><div data-v-1a3a9e56=""><label data-v-1a3a9e56="" class="block text-sm font-medium text-gray-600 mb-1">每期手续费率（%）</label><input data-v-1a3a9e56="" type="number" step="any" min="0" placeholder="例如 0.6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"><p data-v-1a3a9e56="" class="text-xs text-gray-400 mt-1">按百分比输入，如 0.6 表示 0.6%</p></div><button data-v-1a3a9e56="" class="w-full mt-4 bg-gray-100 text-gray-700 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors border border-gray-300 flex items-center justify-center"><svg data-v-1a3a9e56="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2"><path data-v-1a3a9e56="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> 重置所有输入 </button></div></div><div data-v-1a3a9e56="" class="md:w-1/2 p-6 bg-gray-50"><h2 data-v-1a3a9e56="" class="text-lg font-semibold text-gray-700 mb-4 flex items-center"><span data-v-1a3a9e56="" class="bg-green-100 text-green-800 w-6 h-6 rounded-full flex items-center justify-center text-sm mr-2">2</span> 计算结果 </h2><div data-v-1a3a9e56="" class="space-y-6"><div data-v-1a3a9e56="" class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm"><h3 data-v-1a3a9e56="" class="text-sm font-medium text-gray-500 mb-3">每期还款明细</h3><div data-v-1a3a9e56="" class="grid grid-cols-2 gap-4"><div data-v-1a3a9e56=""><p data-v-1a3a9e56="" class="text-xs text-gray-400">每期手续费</p><p data-v-1a3a9e56="" class="text-xl font-bold text-blue-600">0.00 元</p></div><div data-v-1a3a9e56=""><p data-v-1a3a9e56="" class="text-xs text-gray-400">每期应还本金</p><p data-v-1a3a9e56="" class="text-xl font-bold text-gray-800">0.00 元</p></div><div data-v-1a3a9e56="" class="col-span-2 pt-2 border-t border-gray-100"><p data-v-1a3a9e56="" class="text-xs text-gray-400">每期还款总额</p><p data-v-1a3a9e56="" class="text-2xl font-bold text-green-600">0.00 元</p></div></div></div><div data-v-1a3a9e56="" class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm"><h3 data-v-1a3a9e56="" class="text-sm font-medium text-gray-500 mb-3">分期汇总</h3><div data-v-1a3a9e56="" class="flex justify-between items-center py-2"><span data-v-1a3a9e56="" class="text-gray-600">总手续费</span><span data-v-1a3a9e56="" class="text-xl font-semibold text-orange-600">0.00 元</span></div><div data-v-1a3a9e56="" class="flex justify-between items-center py-2 border-t border-gray-100"><span data-v-1a3a9e56="" class="text-gray-600">总还款额</span><span data-v-1a3a9e56="" class="text-2xl font-bold text-purple-700">0.00 元</span></div></div><p data-v-1a3a9e56="" class="text-xs text-gray-400 text-center">* 计算结果保留两位小数，仅供参考</p></div></div></div></div></div></div><div data-v-21fface4="" class="article-container relative"><article data-v-21fface4="" id="main-article" class="transition-all duration-300 line-clamp-none">
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">信用卡分期怎么算？看完这篇自己就能算清楚</h1>
+
+  <p class="text-lg mb-4">
+    信用卡账单来了，金额有点大，想分期还？但每次看到“手续费率0.6%”这种数字，心里总犯嘀咕：这到底要多还多少钱？每期还多少？别急，今天咱们就用人人都能懂的大白话，把信用卡分期这件事掰扯明白。你甚至可以拿着手机自己算，再也不怕被绕晕。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <p class="text-sm text-blue-800">
+      小提醒：文末有分期计算小工具，不用记公式，填数字就能出结果，建议先收藏。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">1. 信用卡分期，到底在分什么？</h2>
+  <p class="mb-4">
+    简单说，信用卡分期就是你把一笔消费金额，分成几个月还给银行。比如这个月花了12000元，手头紧，就可以申请分12期，接下来12个月每个月还一部分。银行不是免费帮你分期的，它会收一笔钱，叫“手续费”。这笔手续费是按你分期的总额乘以一个百分比算出来的。
+  </p>
+  <p class="mb-4">
+    手续费率通常用“每期费率”来表示，比如0.6%/期，意思就是每一期要额外付本金的0.6%作为手续费。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">2. 分期手续费和每期还款，其实就这三个数</h2>
+  <p class="mb-2">搞懂信用卡分期计算，你只需要关注三个数字：</p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><span class="font-medium">分期本金</span>：你打算分期的总金额（比如10000元）。</li>
+    <li><span class="font-medium">分期期数</span>：分多少个月还（比如3期、6期、12期）。</li>
+    <li><span class="font-medium">每期手续费率</span>：银行收的手续费比例（比如0.6%）。</li>
+  </ul>
+  <p class="mb-4">
+    有了这三个数，下面这些结果自己都能算：
+  </p>
+  <ul class="list-disc pl-6 mb-6 space-y-1">
+    <li><span class="font-medium">每期手续费</span> = 分期本金 × 每期手续费率 ÷ 100（如果费率是0.6，直接乘0.006）</li>
+    <li><span class="font-medium">每期应还本金</span> = 分期本金 ÷ 分期期数</li>
+    <li><span class="font-medium">每期还款总额</span> = 每期手续费 + 每期应还本金</li>
+    <li><span class="font-medium">总手续费</span> = 每期手续费 × 分期期数</li>
+    <li><span class="font-medium">总还款额</span> = 分期本金 + 总手续费</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. 举个真实的例子，一看就懂</h2>
+  <p class="mb-2">假设你上个月消费了10000元，申请分12期还，银行给的每期手续费率是0.6%。我们来一步步算：</p>
+  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+    <p class="mb-1">• 每期手续费 = 10000 × 0.6% = 60元</p>
+    <p class="mb-1">• 每期应还本金 = 10000 ÷ 12 ≈ 833.33元</p>
+    <p class="mb-1">• 每期还款总额 = 60 + 833.33 = 893.33元</p>
+    <p class="mb-1">• 总手续费 = 60 × 12 = 720元</p>
+    <p class="mb-1">• 总还款额 = 10000 + 720 = 10720元</p>
+  </div>
+  <p class="mb-4">
+    也就是说，你分12期总共要多还720元，每个月还893.33元。是不是很清楚？
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. 分期期数怎么选更划算？</h2>
+  <p class="mb-4">
+    银行通常提供3期、6期、12期、24期等选项。期数越短，总手续费越少，但每月还款压力大；期数越长，总手续费越多，但每月还款轻松。比如上面例子，如果分6期，假设费率也是0.6%，总手续费就是10000×0.6%×6=360元，比12期省了一半，但每月要还(10000÷6+60)≈1726.67元。
+  </p>
+  <p class="mb-4">
+    所以选期数要看自己当下的现金流：如果未来几个月收入稳定，选短期的更省钱；如果确实手头紧，选长期分摊压力。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">5. 注意两个容易忽略的“坑”</h2>
+  <p class="mb-2 font-medium">① 手续费率 ≠ 真实年利率</p>
+  <p class="mb-3">
+    银行给你看的0.6%是每期费率，如果简单乘以12得到7.2%，听起来不高。但实际上因为本金每月在减少，你占用的资金越来越少，真实年化利率大概是这个数字的两倍左右（用内部收益率IRR算会更准确）。所以分期消费前，可以问问自己：这笔钱如果用来投资，能赚回这个利率吗？
+  </p>
+  <p class="mb-2 font-medium">② 提前还款手续费怎么算？</p>
+  <p class="mb-4">
+    很多银行即使你提前还清，剩余期数的手续费也要照收，或者收一笔违约金。办理分期前最好问清楚条款，免得后来想提前还却发现不划算。
+  </p>
+
+  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-5 mt-6 mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">用分期计算器，省心不费脑</h3>
+    <p class="mb-3">
+      如果不想手动算，或者想试试不同金额、期数和费率的结果，可以用我们准备的这个小工具。输入本金、期数、手续费率，马上就能看到每期还多少、总手续费多少，清清楚楚，帮你做决策。
+    </p>
+    <p class="text-sm text-gray-600">
+      （本文介绍的信用卡分期计算器就是页面下方那个，所有结果都是实时计算，保留两位小数，供你参考。）
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">关于信用卡分期，你可能还想问</h2>
+  <div class="space-y-4">
+    <div>
+      <p class="font-medium">问：所有消费都能分期吗？</p>
+      <p>大部分普通消费都可以，但有些银行对特定交易（比如取现、临时额度）有限制，具体以账单为准。</p>
+    </div>
+    <div>
+      <p class="font-medium">问：分期会影响信用记录吗？</p>
+      <p>按时还款不仅不会影响，反而有助于积累良好信用。但如果逾期，后果也很严重。</p>
+    </div>
+    <div>
+      <p class="font-medium">问：手续费率有优惠吗？</p>
+      <p>银行经常有分期优惠活动，比如特定商户、新用户免息等，可以多留意App或客服通知。</p>
+    </div>
+  </div>
+
+  <p class="text-center text-gray-500 text-sm mt-10 pt-4 border-t border-gray-200">
+    希望这篇文章让你对信用卡分期心里有底。下次再看到分期选项，不妨先算一算，再做决定。
+  </p>
+</div>
+</article><button data-v-21fface4="" class="article-toggle-btn text-xs text-gray-500 hover:text-gray-700 mt-2 inline-flex items-center gap-1 px-2 py-1 rounded bg-gray-100 hover:bg-gray-200 transition-colors"> 收起 <svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-3 h-3 transition-transform duration-300 rotate-180"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></div><button data-v-21fface4="" title="返回顶部" class="back-to-top-btn w-8 h-8 rounded-full bg-white border border-gray-200 shadow-md text-gray-700 hover:bg-blue-500 hover:border-blue-500 hover:text-white hover:shadow-lg transition-all duration-200 fixed bottom-0 right-0 z-40 flex items-center justify-center p-0"><svg data-v-21fface4="" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4 m-0"><path data-v-21fface4="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></button><!----><!----><!----><!----></div></body></html>
