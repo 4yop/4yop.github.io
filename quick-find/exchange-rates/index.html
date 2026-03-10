@@ -1182,6 +1182,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-spin: spin 1s linear infinite;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1467,6 +1468,9 @@
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -1497,6 +1501,9 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
   .w-full {
     width: 100%;
   }
@@ -1519,6 +1526,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-spin {
+    animation: var(--animate-spin);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1604,6 +1614,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
   .border-blue-500 {
     border-color: var(--color-blue-500);
   }
@@ -1615,6 +1629,9 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-gray-900 {
+    border-color: var(--color-gray-900);
   }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
@@ -1684,6 +1701,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -2182,6 +2202,11 @@
   syntax: "*";
   inherits: false;
 }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2234,7 +2259,7 @@
     }
   }
 }
-</style><meta name="title" content="汇率换算工具：轻松计算人民币与外币兑换"><meta name="description" content="使用免费汇率换算工具，实时计算人民币与美元、日元、欧元等外币的兑换金额。出国旅游、海淘购物必备，数据源自中国银行。"><meta name="keywords" content="汇率换算,外币兑换,人民币换算,美元汇率,日元汇率,欧元汇率,出国旅游,海淘购物"><meta name="canonical" content="https://tools321.com/quick-find/exchange-rates/"><meta property="og:type" content="website"><meta property="og:title" content="汇率换算工具：实时外币兑换计算"><meta property="og:description" content="免费在线汇率换算工具，帮助您快速计算人民币与各种外币的兑换金额，适用于旅行、购物、留学等场景。"><meta property="og:url" content="https://tools321.com/quick-find/exchange-rates/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="汇率换算工具：轻松计算外币兑换"><meta name="twitter:description" content="使用我们的汇率换算工具，实时计算货币兑换，数据准确，操作简单。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.dba6b538.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.6b4c7e79.js"></script><script defer="defer" src="/quick-find/exchange-rates.cd8f2f6b.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/quick-find/exchange-rates.6b1007ef.css" rel="stylesheet"><meta charset="utf-8"><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
+</style><meta name="title" content="汇率换算工具：轻松计算人民币与外币兑换"><meta name="description" content="使用免费汇率换算工具，实时计算人民币与美元、日元、欧元等外币的兑换金额。出国旅游、海淘购物必备，数据源自中国银行。"><meta name="keywords" content="汇率换算,外币兑换,人民币换算,美元汇率,日元汇率,欧元汇率,出国旅游,海淘购物"><meta name="canonical" content="https://tools321.com/quick-find/exchange-rates/"><meta property="og:type" content="website"><meta property="og:title" content="汇率换算工具：实时外币兑换计算"><meta property="og:description" content="免费在线汇率换算工具，帮助您快速计算人民币与各种外币的兑换金额，适用于旅行、购物、留学等场景。"><meta property="og:url" content="https://tools321.com/quick-find/exchange-rates/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="汇率换算工具：轻松计算外币兑换"><meta name="twitter:description" content="使用我们的汇率换算工具，实时计算货币兑换，数据准确，操作简单。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.951e204a.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/chunk-common.4b9d834d.js"></script><script defer="defer" src="/quick-find/exchange-rates.cd8f2f6b.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><link href="/css/quick-find/exchange-rates.6b1007ef.css" rel="stylesheet"><meta charset="utf-8"><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?627e804881a821cb9497d73101fec725";
