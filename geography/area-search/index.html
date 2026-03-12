@@ -1146,11 +1146,9 @@
     'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-100: oklch(93.2% 0.032 255.585);
-    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
@@ -1164,7 +1162,6 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-2xl: 42rem;
@@ -1189,7 +1186,6 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --animate-spin: spin 1s linear infinite;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1358,9 +1354,6 @@
   .sticky {
     position: sticky;
   }
-  .inset-0 {
-    inset: calc(var(--spacing) * 0);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -1397,9 +1390,6 @@
   .z-2000 {
     z-index: 2000;
   }
-  .z-\[9999\] {
-    z-index: 9999;
-  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -1411,9 +1401,6 @@
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -1478,9 +1465,6 @@
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -1520,9 +1504,6 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
   .w-full {
     width: 100%;
   }
@@ -1551,9 +1532,6 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .animate-spin {
-    animation: var(--animate-spin);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1625,10 +1603,6 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
   .border-r-4 {
     border-right-style: var(--tw-border-style);
     border-right-width: 4px;
@@ -1636,9 +1610,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-blue-200 {
-    border-color: var(--color-blue-200);
   }
   .border-blue-500 {
     border-color: var(--color-blue-500);
@@ -1648,12 +1619,6 @@
   }
   .border-gray-200 {
     border-color: var(--color-gray-200);
-  }
-  .border-t-blue-600 {
-    border-top-color: var(--color-blue-600);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
@@ -1669,9 +1634,6 @@
   }
   .bg-green-500 {
     background-color: var(--color-green-500);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -2218,11 +2180,6 @@
   syntax: "*";
   inherits: false;
 }
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2275,7 +2232,7 @@
     }
   }
 }
-</style><meta name="title" content="行政区划级联查询 - 中国省市区县乡镇社区查询工具"><meta name="description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。数据离线加载，快速查询。"><meta name="keywords" content="行政区划,行政区划代码,级联查询,省市区查询,乡镇查询,社区查询,中国行政区划,地区代码"><meta name="canonical" content="https://tools321.com/geography/area-search/"><meta property="og:type" content="website"><meta property="og:title" content="行政区划级联查询工具"><meta property="og:description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。"><meta property="og:url" content="https://tools321.com/geography/area-search/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="行政区划级联查询工具"><meta name="twitter:description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.e368f83b.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/geography/area-search.3a5f47f0.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><meta charset="utf-8"><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
+</style><meta name="title" content="行政区划级联查询 - 中国省市区县乡镇社区查询工具"><meta name="description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。数据离线加载，快速查询。"><meta name="keywords" content="行政区划,行政区划代码,级联查询,省市区查询,乡镇查询,社区查询,中国行政区划,地区代码"><meta name="canonical" content="https://tools321.com/geography/area-search/"><meta property="og:type" content="website"><meta property="og:title" content="行政区划级联查询工具"><meta property="og:description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。"><meta property="og:url" content="https://tools321.com/geography/area-search/"><meta property="og:site_name" content="4yop"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="行政区划级联查询工具"><meta name="twitter:description" content="在线查询中国行政区划，支持省、市、区县、乡镇四级级联选择，显示结构化路径和行政区划代码，可复制代码。"><meta name="twitter:image" content=""><script defer="defer" src="/runtime.d68027ab.js"></script><script defer="defer" src="/chunk-vendors.4270052f.js"></script><script defer="defer" src="/geography/area-search.3a5f47f0.js"></script><link href="/css/chunk-vendors.10dd4e95.css" rel="stylesheet"><meta charset="utf-8"><meta name="google-adsense-account" content="ca-pub-8982726393306273"><script>var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?627e804881a821cb9497d73101fec725";
