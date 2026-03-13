@@ -159,6 +159,18 @@
 
   <url>
 
+    <loc>https://tools321.com/tools/fireworks/</loc>
+
+    <lastmod>2026-03-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://tools321.com/tools/birthday-card/</loc>
 
     <lastmod>2026-03-12T00:00:00.000Z</lastmod>
@@ -1540,6 +1552,18 @@
   <url>
 
     <loc>https://tools321.com/health/test-intp/</loc>
+
+    <lastmod>2026-03-12T00:00:00.000Z</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://tools321.com/health/sleep-time/</loc>
 
     <lastmod>2026-03-12T00:00:00.000Z</lastmod>
 
