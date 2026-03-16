@@ -1,0 +1,137 @@
+{
+  "updatedAt": "2026-03-17 09:05",
+  "platforms": [
+    {
+      "name": "Google AI Studio (Gemini)",
+      "quota": "Gemini 2.5 Flash: 15 RPM / 100万 TPM；Gemini 2.5 Pro: 5 RPM / 25万 TPM",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://ai.google.dev"
+    },
+    {
+      "name": "DeepSeek",
+      "quota": "新用户赠送 2000万 token（DeepSeek-V3、DeepSeek-R2等）",
+      "cycle": "一次性注册额度（注册后有效）",
+      "url": "https://platform.deepseek.com"
+    },
+    {
+      "name": "百度千帆",
+      "quota": "每个模型独立 100万 token（ERNIE 4.5、DeepSeek、Qwen3 等）",
+      "cycle": "3个月有效",
+      "url": "https://console.bce.baidu.com/qianfan/"
+    },
+    {
+      "name": "阿里云百炼（通义千问）",
+      "quota": "每个模型独立 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等）",
+      "cycle": "3个月有效（注册即送）",
+      "url": "https://bailian.console.aliyun.com/"
+    },
+    {
+      "name": "讯飞星火",
+      "quota": "Lite版永久免费；Max版赠送1亿 token；Pro版免费试用1个月；每个模型另送20万 token",
+      "cycle": "Lite永久；Max一次性；Pro限时1个月；模型赠送额度短期有效",
+      "url": "https://xinghuo.xfyun.cn"
+    },
+    {
+      "name": "智谱AI",
+      "quota": "新用户赠送 2000万 token（GLM-4系列）；GLM-4-Flash 永久免费",
+      "cycle": "新用户一次性；GLM-4-Flash永久",
+      "url": "https://bigmodel.cn"
+    },
+    {
+      "name": "腾讯混元",
+      "quota": "100万 token（通用包，HunYuan-TurboS等）+ 100万 Embedding token；HunYuan-Lite版永久免费",
+      "cycle": "通用包12个月有效；Lite版永久",
+      "url": "https://cloud.tencent.com/product/hunyuan"
+    },
+    {
+      "name": "火山引擎（豆包）",
+      "quota": "200万 token/天（协作奖励计划，支持豆包系列、DeepSeek、Kimi等）",
+      "cycle": "每日重置（永久）",
+      "url": "https://www.volcengine.com/product/doubao"
+    },
+    {
+      "name": "Groq",
+      "quota": "Llama 3.3 70B: 1000 RPD（30-60 RPM）；Llama 4 Scout 等多模型免费",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://console.groq.com"
+    },
+    {
+      "name": "Mistral AI",
+      "quota": "约 10亿 token/月（免费层，含 Mistral Large / Small / Codestral）",
+      "cycle": "每月重置（永久免费层）",
+      "url": "https://console.mistral.ai"
+    },
+    {
+      "name": "Cohere",
+      "quota": "1000 次请求（Command R+、Embed 4 等）",
+      "cycle": "每月重置（试用 Key）",
+      "url": "https://dashboard.cohere.com"
+    },
+    {
+      "name": "硅基流动（SiliconFlow）",
+      "quota": "新用户赠送 2000万 token（14元代金券等值，支持DeepSeek、Llama、Qwen等主流开源模型）",
+      "cycle": "永久有效",
+      "url": "https://siliconflow.cn"
+    },
+    {
+      "name": "Kimi（月之暗面）",
+      "quota": "新用户赠送15元代金券（可用于 Kimi-k2.5、K2 等模型）",
+      "cycle": "永久有效（代金券）",
+      "url": "https://platform.moonshot.cn"
+    },
+    {
+      "name": "OpenRouter",
+      "quota": "50 次请求/天（DeepSeek R1、Llama 4、Qwen3 等多模型）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://openrouter.ai"
+    },
+    {
+      "name": "Cerebras",
+      "quota": "100万 token/天（Llama 3.3 70B、Qwen3 32B，超高速推理）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://cloud.cerebras.ai"
+    },
+    {
+      "name": "NVIDIA NIM API",
+      "quota": "无限次调用；速率限制 40 RPM；支持 Kimi K2.5、MiniMax、GLM、DeepSeek R1 等",
+      "cycle": "永久免费层（限速）",
+      "url": "https://build.nvidia.com"
+    },
+    {
+      "name": "GitHub Models",
+      "quota": "50~150 次请求/天（GPT-4o、GPT-4.1、Grok-3 等）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://github.com/marketplace/models"
+    },
+    {
+      "name": "xAI (Grok)",
+      "quota": "新用户赠送 $25 API 积分（Grok-4、Grok-4.1 Fast）",
+      "cycle": "一次性注册积分",
+      "url": "https://console.x.ai"
+    },
+    {
+      "name": "Cloudflare Workers AI",
+      "quota": "10,000 神经元单位/天（Llama 3.2、Mistral 7B 等轻量模型）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://developers.cloudflare.com/workers-ai/"
+    },
+    {
+      "name": "七牛云 AI 推理",
+      "quota": "新用户注册首次体验赠送 300万 token；邀请活动可额外获得 1000万 token；支持 DeepSeek、Kimi、Claude 等 50+ 模型",
+      "cycle": "赠送额度2年有效",
+      "url": "https://developer.qiniu.com/aitokenapi"
+    },
+    {
+      "name": "魔搭社区（ModelScope）",
+      "quota": "每天 2000 次免费调用（支持 DeepSeek-R1、Qwen2.5-VL、Flux.1 等开源模型）",
+      "cycle": "每日重置（永久免费层，需绑定阿里云账号）",
+      "url": "https://www.modelscope.cn"
+    },
+    {
+      "name": "MiniMax 开放平台",
+      "quota": "新用户注册赠送免费 token（具体额度以注册时平台活动为准，支持 MiniMax M2.5、语音合成等多模态）",
+      "cycle": "一次性注册赠送（约30天有效）",
+      "url": "https://platform.minimaxi.com"
+    }
+  ]
+}
