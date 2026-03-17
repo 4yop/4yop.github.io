@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-17 21:00",
+  "updatedAt": "2026-03-18 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -586,6 +586,39 @@
         "document_url": "https://modal.com/docs",
         "base_url": "https://api.modal.com/v1",
         "models": []
+      }
+    },
+    {
+      "name": "零一万物 (01.AI)",
+      "quota": "新用户注册赠送 100元 API 额度（可用于 Yi-Lightning、Yi-1.5 等全系 Yi 模型）",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://platform.lingyiwanwu.com",
+      "develop": {
+        "document_url": "https://platform.lingyiwanwu.com/docs",
+        "base_url": "https://api.lingyiwanwu.com/v1",
+        "models": [
+          "yi-lightning",
+          "yi-1.5-34b-chat",
+          "yi-1.5-9b-chat",
+          "yi-1.5-6b-chat",
+          "yi-medium",
+          "yi-spark"
+        ]
+      }
+    },
+    {
+      "name": "百川智能 (Baichuan)",
+      "quota": "海纳百川计划：免费使用 Baichuan-M3Plus API（需申请体验）",
+      "cycle": "申请通过后有效（具体额度以平台审批为准）",
+      "url": "https://platform.baichuan-ai.com",
+      "develop": {
+        "document_url": "https://platform.baichuan-ai.com/docs/api",
+        "base_url": "https://api.baichuan-ai.com/v1",
+        "models": [
+          "Baichuan-M3Plus",
+          "Baichuan2-Turbo",
+          "Baichuan2-53B"
+        ]
       }
     }
   ]
