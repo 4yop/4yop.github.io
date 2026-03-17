@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-17 09:00 (auto)",
+  "updatedAt": "2026-03-17 18:56",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -186,6 +186,37 @@
       "quota": "新用户赠送 100万 token（支持 Qwen3-235B、Gemma 3-27B、Devstral、Voxtral 等多语言模型，欧盟合规托管）",
       "cycle": "一次性注册额度（用完为止）",
       "url": "https://www.scaleway.com/en/generative-apis/"
+    },
+    {
+      "name": "Ollama Cloud",
+      "quota": "免费层提供轻度云端推理使用量（不限 token 数，按 GPU 时间计量）；支持 4万+ 社区模型；最多同时运行 1 个云模型；本地运行完全无限制免费",
+      "cycle": "永久免费层（每5小时/每7天使用量重置；本地运行无限制）",
+      "url": "https://ollama.com"
+    },
+    {
+      "name": "国家超算互联网（OpenClaw）",
+      "quota": "全体注册用户免费发放 1000万 Tokens（DeepSeek-R1、Qwen3、Llama 等开源大模型推理；续购价格 0.1元/百万 Tokens，约为市场均价的 1/100）",
+      "cycle": "限时 2 周（活动于 2026年3月11日 发布，有效期自领取之日起 14 天）",
+      "url": "https://www.scnet.cn"
+    },
+    {
+      "name": "Vercel AI Gateway",
+      "quota": "每月赠送 $5 AI Gateway Credits（可路由至 OpenAI、Anthropic、Google 等多家主流 AI 供应商；支持自定义 API Provider；手续费 3%）",
+      "cycle": "每月重置（永久免费层，购买额外积分后免费额度失效）",
+      "url": "https://vercel.com/docs/ai-gateway"
+    },
+    {
+      "name": "Nebius Token Factory",
+      "quota": "新用户赠送 $1 免费积分（支持 DeepSeek、Qwen3、Llama、Mistral 等开源模型；提供高速/基础两档端点；批量推理享5折）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://nebius.com/token-factory"
+    },
+    {
+      "name": "Modal",
+      "quota": "Starter 计划每月赠送 $30 免费计算积分（支持 GPU 推理、Serverless 函数、定时任务；初创公司可申请至 $25,000 积分）",
+      "cycle": "每月重置（永久免费层，Starter 计划 $0/月）",
+      "url": "https://modal.com"
     }
   ]
+
 }
