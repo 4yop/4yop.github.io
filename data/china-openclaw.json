@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "WorkBuddy",
+    "developer": "腾讯",
+    "releaseTime": "2026.03.09",
+    "deployment": "桌面端下载即用",
+    "features": "完全兼容 OpenClaw 技能包，多 Agent 并行，强调 AI 安全，旗舰版完整功能",
+    "website": "https://www.codebuddy.cn/work"
+  },
+  {
+    "id": "1-1",
+    "name": "QClaw",
+    "developer": "腾讯",
+    "releaseTime": "2026.03.09",
+    "deployment": "桌面端一键启动",
+    "features": "完全兼容 OpenClaw 技能包，轻量化一键启动，免配置快速上手",
+    "website": "https://www.codebuddy.cn/work"
+  },
+  {
+    "id": 2,
+    "name": "ArkClaw",
+    "developer": "字节跳动（火山引擎）",
+    "releaseTime": "2026.03.09",
+    "deployment": "网页云端，零配置",
+    "features": "飞书深度集成，支持 Doubao-Seed-2.0/Kimi2.5/MiniMax2.5 等多模型，开箱即用 7×24 小时在线",
+    "website": "https://www.volcengine.com/"
+  },
+  {
+    "id": 3,
+    "name": "Kimi Claw",
+    "developer": "月之暗面",
+    "releaseTime": "2026.02",
+    "deployment": "云端，点两下部署",
+    "features": "绑定 Kimi K2.5 模型，原生多模态，预装 5000+ Skills，小白上手最简",
+    "website": "https://www.kimi.com/bot/"
+  },
+  {
+    "id": 4,
+    "name": "AutoClaw（澳龙）",
+    "developer": "智谱 AI",
+    "releaseTime": "2026.03.10",
+    "deployment": "桌面端一键安装",
+    "features": "本地运行，预装 50+ Skills，积分计费（非 Token 计费），支持飞书接入",
+    "website": "https://autoglm.zhipuai.cn/autoclaw"
+  },
+  {
+    "id": 5,
+    "name": "MiniMax Agent (MaxClaw 模式)",
+    "developer": "MiniMax",
+    "releaseTime": "2026.02.25",
+    "deployment": "网页端一键部署",
+    "features": "无需服务器配置，M2.5 模型加持，有免费额度，性价比突出",
+    "website": "https://agent.minimaxi.com/"
+  },
+  {
+    "id": 6,
+    "name": "Linclaw",
+    "developer": "七牛云",
+    "releaseTime": "2026 Q1",
+    "deployment": "DMG/EXE/pip",
+    "features": "渠道覆盖最全（微信/钉钉/飞书/QQ 等 9 大渠道），双端安装包，无需命令行",
+    "website": "https://www.qiniu.com/"
+  },
+  {
+    "id": 7,
+    "name": "DuClaw",
+    "developer": "百度智能云",
+    "releaseTime": "2026 Q1",
+    "deployment": "云端托管/私有化",
+    "features": "深度集成文心 ERNIE，企业级私有云部署，合规要求高的场景首选",
+    "website": "https://cloud.baidu.com/product/duclaw.html"
+  },
+  {
+    "id": 8,
+    "name": "miclaw",
+    "developer": "小米",
+    "releaseTime": "2026.03.06",
+    "deployment": "手机端（厂商预装）",
+    "features": "首个移动端 OpenClaw，基于 MiMo 大模型，可控制米家 IoT 设备，目前封测中",
+    "website": "https://www.mi.com/"
+  },
+  {
+    "id": 9,
+    "name": "Molili（茉莉龙）",
+    "developer": "杭州当贝",
+    "releaseTime": "2026.01",
+    "deployment": "一键部署，3分钟安装（Windows/macOS）",
+    "features": "国内首个中文版 OpenClaw，原生打通微信/钉钉/飞书/Siri，8000+技能自由搭建，DeepSeek/MiniMax 国产大模型适配，三重安全防护",
+    "website": "https://www.molili.com.cn/"
+  },
+  {
+    "id": 10,
+    "name": "EasyClaw",
+    "developer": "猎豹移动",
+    "releaseTime": "2026.03",
+    "deployment": "全流程零配置部署，开箱即用",
+    "features": "本地沙箱运行，毫秒级响应，官方预制技能包，支持飞书/钉钉/企业微信远程指挥，C端/B端双模式",
+    "website": "https://easyclaw.cn/"
+  },
+  {
+    "id": 11,
+    "name": "LobsterAI（有道龙虾）",
+    "developer": "网易有道",
+    "releaseTime": "2026.03.10",
+    "deployment": "全图形界面，零代码开源",
+    "features": "国内大厂首个开源龙虾，本地+沙箱安全架构，适配钉钉/飞书/WPS/微信，支持任务自主拆解与跨软件自动化，完全开源可定制",
+    "website": "https://github.com/youdao/LobsterAI"
+  }
+]
