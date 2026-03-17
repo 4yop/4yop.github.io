@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-17 09:05",
+  "updatedAt": "2026-03-17 09:00 (auto)",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -132,6 +132,60 @@
       "quota": "新用户注册赠送免费 token（具体额度以注册时平台活动为准，支持 MiniMax M2.5、语音合成等多模态）",
       "cycle": "一次性注册赠送（约30天有效）",
       "url": "https://platform.minimaxi.com"
+    },
+    {
+      "name": "Anthropic Claude API",
+      "quota": "新用户赠送 $5 API 积分（可用于全系列 Claude Opus、Sonnet、Haiku 模型）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://console.anthropic.com"
+    },
+    {
+      "name": "Together AI",
+      "quota": "新用户赠送 $5 积分（支持 Llama、Qwen、Gemma 等开源模型推理/微调/Embedding）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://api.together.ai"
+    },
+    {
+      "name": "Ling Studio（蚂蚁百灵）",
+      "quota": "每日 50万 token（支持 Ling-1T、Ring-1T 推理模型及 Ming 多模态模型）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://ling.tbox.cn"
+    },
+    {
+      "name": "Hugging Face Inference API",
+      "quota": "免费 Serverless 推理（数百次请求/小时，支持 15万+ 开源模型）",
+      "cycle": "每月重置（永久免费层，速率有限制）",
+      "url": "https://huggingface.co/docs/api-inference"
+    },
+    {
+      "name": "SambaNova Cloud",
+      "quota": "新用户赠送 $5 积分（约等于 3000万 token，支持 Llama 3.1、Qwen 3、DeepSeek-R2 等开源模型，超高速推理）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://cloud.sambanova.ai"
+    },
+    {
+      "name": "Fireworks AI",
+      "quota": "新用户赠送 $1 免费积分（支持 50+ 开源模型，含 Llama 4、Qwen3、Gemma 3、Mixtral 等，快速推理）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://fireworks.ai"
+    },
+    {
+      "name": "AI21 Labs",
+      "quota": "新用户赠送 $10 免费积分（无需信用卡，支持 Jamba Mini、Jamba Large 等长上下文模型）",
+      "cycle": "一次性注册积分（3个月有效）",
+      "url": "https://studio.ai21.com"
+    },
+    {
+      "name": "Novita AI",
+      "quota": "新用户赠送 $5 免费积分（支持 DeepSeek、Qwen、Llama 等 100+ 开源模型推理及图像/视频生成）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://novita.ai"
+    },
+    {
+      "name": "Scaleway Generative APIs",
+      "quota": "新用户赠送 100万 token（支持 Qwen3-235B、Gemma 3-27B、Devstral、Voxtral 等多语言模型，欧盟合规托管）",
+      "cycle": "一次性注册额度（用完为止）",
+      "url": "https://www.scaleway.com/en/generative-apis/"
     }
   ]
 }
