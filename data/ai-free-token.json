@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-18 10:00",
+  "updatedAt": "2026-03-18 10:30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -586,6 +586,24 @@
           "Baichuan-M3Plus",
           "Baichuan2-Turbo",
           "Baichuan2-53B"
+        ]
+      }
+    },
+    {
+      "name": "Stability AI",
+      "quota": "新用户赠送 25 积分（约$0.25，可生成约10张图像；SD3.5系列模型）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://platform.stability.ai",
+      "develop": {
+        "document_url": "https://platform.stability.ai/docs",
+        "base_url": "https://api.stability.ai/v1",
+        "models": [
+          "stable-diffusion-3.5-large",
+          "stable-diffusion-3.5-medium",
+          "stable-diffusion-3.5-flash",
+          "stable-image-ultra",
+          "stable-image-core",
+          "stable-diffusion-xl-1.0"
         ]
       }
     }
