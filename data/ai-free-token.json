@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-18 09:00",
+  "updatedAt": "2026-03-18 09:30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -20,8 +20,8 @@
     },
     {
       "name": "DeepSeek",
-      "quota": "新用户赠送 2000万 token（DeepSeek-V3、DeepSeek-R2等）",
-      "cycle": "一次性注册额度（注册后有效）",
+      "quota": "无免费额度；API按量付费（DeepSeek-V3、DeepSeek-R1等；V3约$0.27/百万token，R1约$0.55/百万token；价格约为GPT-4的1/5）",
+      "cycle": "按量付费（无免费层，无赠送）",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/",
@@ -386,15 +386,17 @@
     },
     {
       "name": "Together AI",
-      "quota": "新用户赠送 $5 积分（支持 Llama、Qwen、Gemma 等开源模型推理/微调/Embedding）",
-      "cycle": "一次性注册积分（30天有效）",
+      "quota": "无免费试用层；最低充值 $5 即可使用（支持 200+ 开源模型推理/微调/Embedding，含 Llama 4、DeepSeek R1、Qwen3 等；初创加速计划可申请 $15,000–$50,000 高额积分）",
+      "cycle": "按量付费，充值后永久有效（无免费层，无试用期）",
       "url": "https://api.together.ai",
       "develop": {
         "document_url": "https://docs.together.ai/docs",
         "base_url": "https://api.together.xyz/v1",
         "models": [
           "meta-llama/Llama-3.3-70B-Instruct",
+          "meta-llama/Llama-4-Scout-17B-16E",
           "Qwen/Qwen2.5-72B-Instruct",
+          "deepseek-ai/DeepSeek-R1",
           "google/gemma-2-27b-it",
           "mistralai/Mixtral-8x7B-Instruct-v0.1"
         ]
@@ -432,8 +434,8 @@
     },
     {
       "name": "SambaNova Cloud",
-      "quota": "新用户赠送 $5 积分（约等于 3000万 token，支持 Llama 3.1、Qwen 3、DeepSeek-R2 等开源模型，超高速推理）",
-      "cycle": "一次性注册积分（30天有效）",
+      "quota": "新用户赠送 $5 积分（Llama 3.3 8B模型约等于 3000万+ token，支持 Llama 3.3 70B/8B、Qwen3、DeepSeek-R1 等开源模型，基于自研RDU芯片超高速推理；社区活跃可申请额外积分）",
+      "cycle": "一次性注册积分（30天有效，无永久免费层）",
       "url": "https://cloud.sambanova.ai",
       "develop": {
         "document_url": "https://cloud.sambanova.ai/docs",
