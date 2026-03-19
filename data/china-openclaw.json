@@ -160,5 +160,23 @@
     "deployment": "预编译二进制直接运行，支持树莓派/RISC-V/ARM/x86等多架构，Docker Compose一键启动",
     "features": "Go语言实现超轻量级框架（内存<10MB，启动<1秒），专为低成本硬件（10美元设备）设计，支持MCP协议、多模态视觉输入、智能路由节省Token，兼容钉钉/飞书/企微/QQ/Telegram等，国产硬件公司出品",
     "website": "https://picoclaw.io"
+  },
+  {
+    "id": 18,
+    "name": "讯飞星辰Agent（astron-agent）",
+    "developer": "科大讯飞（iFlytek）",
+    "releaseTime": "2025.10",
+    "deployment": "Docker容器化部署，支持高可用集群，Web界面可视化配置",
+    "features": "企业级智能体平台，Apache 2.0协议可免费商用，支持高可用集群部署、模型统一管理、权限控制与运行监控，低代码工作流编排，原生集成RPA工具生态，支持多模型接入（讯飞星火/DeepSeek等），可连接知识库和数据库",
+    "website": "https://github.com/iflytek/astron-agent"
+  },
+  {
+    "id": 19,
+    "name": "OpenCray",
+    "developer": "CrayBotAGI 开源社区",
+    "releaseTime": "2026.01",
+    "deployment": "npm install -g openclaw@latest，Node.js ≥22，支持macOS/Linux/Windows(WSL2)",
+    "features": "OpenClaw中文版，专门为中国用户优化，适配国内平台生态（微信/钉钉/QQ/飞书等），多频道收件箱，本地优先网关，多代理路由，语音唤醒+对话模式，实时画布，支持国产大模型",
+    "website": "https://github.com/CrayBotAGI/OpenCray"
   }
 ]

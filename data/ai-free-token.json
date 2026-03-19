@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19 09:00",
+  "updatedAt": "2026-03-19 10:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -495,9 +495,112 @@
       }
     },
     {
+      "name": "Together AI",
+      "quota": "新用户赠送 $25 免费积分（可体验 200+ 开源模型，包括 Llama 4、DeepSeek-V3、Qwen3 等；支持 Serverless 推理和微调）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://www.together.ai",
+      "develop": {
+        "document_url": "https://docs.together.ai",
+        "base_url": "https://api.together.xyz/v1",
+        "models": [
+          "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+          "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "deepseek-ai/DeepSeek-V3",
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen3-235B-A22B",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1"
+        ]
+      }
+    },
+    {
+      "name": "Baseten",
+      "quota": "新用户赠送 $30 免费积分（可部署任意 HuggingFace 模型，支持 GPU 推理、Serverless 函数）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://www.baseten.co",
+      "develop": {
+        "document_url": "https://docs.baseten.co",
+        "base_url": "https://api.baseten.co/v1",
+        "models": []
+      }
+    },
+    {
+      "name": "Upstage",
+      "quota": "新用户赠送 $10 免费积分（支持 Solar Pro、Solar Mini 等长上下文模型；Solar Pro 3 输入 $0.15/百万token，输出 $0.6/百万token）",
+      "cycle": "一次性注册积分（3个月有效）",
+      "url": "https://www.upstage.ai",
+      "develop": {
+        "document_url": "https://docs.upstage.ai",
+        "base_url": "https://api.upstage.ai/v1",
+        "models": [
+          "solar-pro-3",
+          "solar-pro-2",
+          "solar-mini",
+          "upstage-embed"
+        ]
+      }
+    },
+    {
+      "name": "fal.ai",
+      "quota": "新用户赠送 $5 免费积分（支持 1000+ 生产就绪的图像、视频、音频、3D 生成模型）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://fal.ai",
+      "develop": {
+        "document_url": "https://docs.fal.ai",
+        "base_url": "https://api.fal.ai/v1",
+        "models": [
+          "fal-ai/flux/dev",
+          "fal-ai/flux/schnell",
+          "fal-ai/kling-video/v1"
+        ]
+      }
+    },
+    {
+      "name": "NLP Cloud",
+      "quota": "新用户赠送 $15 免费积分（支持多种 NLP 模型，需手机验证）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://nlpcloud.com",
+      "develop": {
+        "document_url": "https://docs.nlpcloud.com",
+        "base_url": "https://api.nlpcloud.io/v1",
+        "models": [
+          "finetuned-llama-3-1-70b",
+          "finetuned-llama-3-1-8b"
+        ]
+      }
+    },
+    {
+      "name": "Hyperbolic",
+      "quota": "新用户赠送 $1 免费积分（支持 DeepSeek V3、Llama 3.1 405B、Qwen 2.5 72B 等开源模型）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://www.hyperbolic.ai",
+      "develop": {
+        "document_url": "https://docs.hyperbolic.ai",
+        "base_url": "https://api.hyperbolic.ai/v1",
+        "models": [
+          "meta-llama/Llama-3.1-405B-Base",
+          "deepseek-ai/DeepSeek-V3",
+          "Qwen/Qwen2.5-72B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "Inference.net",
+      "quota": "新用户赠送 $1 免费积分（回应调查可额外获得 $25；支持多种开源模型推理）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://inference.net",
+      "develop": {
+        "document_url": "https://docs.inference.net",
+        "base_url": "https://api.inference.net/v1",
+        "models": [
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "deepseek-ai/DeepSeek-R1"
+        ]
+      }
+    },
+    {
       "name": "国家超算互联网（OpenClaw）",
-      "quota": "全体注册用户免费发放 1000万 Tokens（DeepSeek-R1、Qwen3、Llama 等开源大模型推理；续购价格 0.1元/百万 Tokens，约为市场均价的 1/100）",
-      "cycle": "限时 2 周（活动于 2026年3月11日 发布，有效期自领取之日起 14 天）",
+      "quota": "【活动已过期】全体注册用户免费发放 1000万 Tokens（DeepSeek-R1、Qwen3、Llama 等开源大模型推理；续购价格 0.1元/百万 Tokens，约为市场均价的 1/100）",
+      "cycle": "【已结束】限时 2 周（活动于 2026年3月11日 发布，有效期自领取之日起 14 天，已于 2026年3月25日 结束）",
       "url": "https://www.scnet.cn",
       "develop": {
         "document_url": "https://www.scnet.cn/ac/openapi/doc/2.0/api/tutorials.html",
