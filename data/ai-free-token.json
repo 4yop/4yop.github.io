@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19 09:30",
+  "updatedAt": "2026-03-19 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -279,15 +279,17 @@
     },
     {
       "name": "xAI (Grok)",
-      "quota": "新用户赠送 $25 API 积分（Grok-4、Grok-4.1 Fast）",
-      "cycle": "一次性注册积分",
+      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）",
+      "cycle": "注册$25一次性；数据共享$150每月重置（永久，需满足$5消费门槛后激活）",
       "url": "https://console.x.ai",
       "develop": {
-        "document_url": "https://docs.x.ai/overview",
+        "document_url": "https://docs.x.ai/docs/data-sharing",
         "base_url": "https://api.x.ai/v1",
         "models": [
           "grok-4",
           "grok-4-mini",
+          "grok-3",
+          "grok-3-mini",
           "grok-2",
           "grok-2-vision-1212"
         ]
