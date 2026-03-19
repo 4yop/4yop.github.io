@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19 10:00",
+  "updatedAt": "2026-03-19 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -594,6 +594,25 @@
         "models": [
           "meta-llama/Llama-3.3-70B-Instruct",
           "deepseek-ai/DeepSeek-R1"
+        ]
+      }
+    },
+    {
+      "name": "OpenAI",
+      "quota": "新用户注册赠送 $5 API 积分（可用于 GPT-4o、GPT-4.1、GPT-5、o3 等全系列模型；通过合作伙伴计划可申请 $500-$50,000+ 额外免费额度）",
+      "cycle": "一次性注册积分（90天有效，基础$5额度；合作伙伴计划额度有效期6个月至2年不等）",
+      "url": "https://platform.openai.com",
+      "develop": {
+        "document_url": "https://platform.openai.com/docs",
+        "base_url": "https://api.openai.com/v1",
+        "models": [
+          "gpt-4o",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-5",
+          "o3-mini",
+          "o3"
         ]
       }
     },
