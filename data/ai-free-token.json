@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19 09:00",
+  "updatedAt": "2026-03-19 09:30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -60,16 +60,17 @@
     },
     {
       "name": "讯飞星火",
-      "quota": "Lite版永久免费；Max版赠送1亿 token；Pro版免费试用1个月；每个模型另送20万 token",
-      "cycle": "Lite永久；Max一次性；Pro限时1个月；模型赠送额度短期有效",
+      "quota": "Lite版约5万 token/月（永久免费层）；Ultra版（原Max升级版）赠送体验额度；Pro版免费体验包；新用户注册各模型赠送20万 token（注：Spark Max已于2026年3月10日下线，迁移至Ultra版）",
+      "cycle": "Lite永久（每月重置）；Ultra/Pro体验额度一次性；模型赠送额度短期有效",
       "url": "https://xinghuo.xfyun.cn",
       "develop": {
         "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
         "base_url": "https://spark-api.xf-yun.com",
         "models": [
           "spark-lite",
-          "spark-max",
+          "spark-ultra",
           "spark-pro",
+          "spark-pro-128k",
           "spark-x1"
         ]
       }
