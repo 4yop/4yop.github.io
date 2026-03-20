@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19 09:00",
+  "updatedAt": "2026-03-20 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -200,8 +200,8 @@
     },
     {
       "name": "Kimi（月之暗面）",
-      "quota": "新用户赠送15元代金券（可用于 Kimi-k2.5、K2 等模型）",
-      "cycle": "永久有效（代金券）",
+      "quota": "新用户注册赠送约 800万 token（Tier0：1并发、3 RPM、500k TPM，可用于 kimi-k2.5、K2 等模型；另有充值返券活动）",
+      "cycle": "一次性注册额度（永久有效，用完需充值）",
       "url": "https://platform.moonshot.cn",
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
@@ -761,8 +761,8 @@
     },
     {
       "name": "AtomGit AI（开放原子）",
-      "quota": "限时免费不限量调用（GLM-5、Qwen3.5-397B-A17B、Qwen3.5-122B-A10B 等超大参数量开源模型；OpenAI API 格式兼容；高峰期可能限流）",
-      "cycle": "限时活动（开放原子开源基金会主办，活动结束日期待定，建议尽早注册领取 API Key）",
+      "quota": "新用户注册赠送 1000万 Tokens（永久有效，QPS=2，每日最高1000次调用）；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型",
+      "cycle": "Token额度永久有效；算力额度每月重置",
       "url": "https://ai.atomgit.com",
       "develop": {
         "document_url": "https://ai.atomgit.com/dashboard/api-key",
