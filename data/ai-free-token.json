@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-20 09:00",
+  "updatedAt": "2026-03-21 22:45",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -494,24 +494,7 @@
         ]
       }
     },
-    {
-      "name": "Together AI",
-      "quota": "新用户赠送 $25 免费积分（可体验 200+ 开源模型，包括 Llama 4、DeepSeek-V3、Qwen3 等；支持 Serverless 推理和微调）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://www.together.ai",
-      "develop": {
-        "document_url": "https://docs.together.ai",
-        "base_url": "https://api.together.xyz/v1",
-        "models": [
-          "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-          "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-          "deepseek-ai/DeepSeek-V3",
-          "deepseek-ai/DeepSeek-R1",
-          "Qwen/Qwen3-235B-A22B",
-          "mistralai/Mixtral-8x7B-Instruct-v0.1"
-        ]
-      }
-    },
+
     {
       "name": "Baseten",
       "quota": "新用户赠送 $30 免费积分（可部署任意 HuggingFace 模型，支持 GPU 推理、Serverless 函数）",
@@ -598,28 +581,9 @@
       }
     },
     {
-      "name": "OpenAI",
-      "quota": "新用户注册赠送 $5 API 积分（可用于 GPT-4o、GPT-4.1、GPT-5、o3 等全系列模型；通过合作伙伴计划可申请 $500-$50,000+ 额外免费额度）",
-      "cycle": "一次性注册积分（90天有效，基础$5额度；合作伙伴计划额度有效期6个月至2年不等）",
-      "url": "https://platform.openai.com",
-      "develop": {
-        "document_url": "https://platform.openai.com/docs",
-        "base_url": "https://api.openai.com/v1",
-        "models": [
-          "gpt-4o",
-          "gpt-4.1",
-          "gpt-4.1-mini",
-          "gpt-4.1-nano",
-          "gpt-5",
-          "o3-mini",
-          "o3"
-        ]
-      }
-    },
-    {
       "name": "国家超算互联网（OpenClaw）",
-      "quota": "【活动已过期】全体注册用户免费发放 1000万 Tokens（DeepSeek-R1、Qwen3、Llama 等开源大模型推理；续购价格 0.1元/百万 Tokens，约为市场均价的 1/100）",
-      "cycle": "【已结束】限时 2 周（活动于 2026年3月11日 发布，有效期自领取之日起 14 天，已于 2026年3月25日 结束）",
+      "quota": "【活动进行中】全体注册用户免费发放 1000万 Tokens（2周有效）；活动结束后续购价格 0.1元/百万 Tokens（约为市场均价的 1/100），支持 DeepSeek-R1、Qwen3、Llama 等开源大模型",
+      "cycle": "限时2周活动（从2026年3月11日开始，将于2026年3月25日结束）；活动结束后为按量付费模式",
       "url": "https://www.scnet.cn",
       "develop": {
         "document_url": "https://www.scnet.cn/ac/openapi/doc/2.0/api/tutorials.html",
@@ -771,6 +735,21 @@
           "zai-org/GLM-5",
           "Qwen/Qwen3.5-397B-A17B",
           "Qwen/Qwen3.5-122B-A10B"
+        ]
+      }
+    },
+    {
+      "name": "Jina AI",
+      "quota": "新用户注册赠送 1000万 token（支持 Reader API、Embedding、Reranker 等搜索基础服务；Reader API 无密钥可免费使用 20 RPM，有密钥后提升至 500 RPM）",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://jina.ai",
+      "develop": {
+        "document_url": "https://jina.ai/reader/",
+        "base_url": "https://api.jina.ai/v1",
+        "models": [
+          "jina-embeddings-v3",
+          "jina-reranker-v2",
+          "jina-reader"
         ]
       }
     }

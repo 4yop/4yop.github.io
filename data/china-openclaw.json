@@ -178,5 +178,59 @@
     "deployment": "npm install -g openclaw@latest，Node.js ≥22，支持macOS/Linux/Windows(WSL2)",
     "features": "OpenClaw中文版，专门为中国用户优化，适配国内平台生态（微信/钉钉/QQ/飞书等），多频道收件箱，本地优先网关，多代理路由，语音唤醒+对话模式，实时画布，支持国产大模型",
     "website": "https://github.com/CrayBotAGI/OpenCray"
+  },
+  {
+    "id": 20,
+    "name": "HiClaw",
+    "developer": "阿里巴巴（Alibaba / Higress社区）",
+    "releaseTime": "2026.03.04",
+    "deployment": "一键安装脚本（macOS/Linux bash 或 Windows PowerShell），依赖 Docker，最低 2核CPU+4GB RAM，浏览器访问 http://127.0.0.1:18088",
+    "features": "开源多Agent协作操作系统，Manager-Workers分布式架构（一个管家AI调度多个专业Worker），基于Matrix协议实现全透明人机协同，MinIO分布式共享文件系统减少Token消耗，Higress AI网关统一凭证管理，兼容OpenClaw/CoPaw/NanoClaw等多种Agent类型，支持80000+技能库，RBAC细粒度团队级权限控制，2.7k stars，Apache 2.0协议",
+    "website": "https://github.com/alibaba/hiclaw"
+  },
+  {
+    "id": 21,
+    "name": "StepClaw",
+    "developer": "阶跃星辰（StepFun）",
+    "releaseTime": "2026.03.12",
+    "deployment": "阶跃AI App（iOS/Android）内一键配置，1-3分钟云端部署；2026.03.13起同步支持网页版入口，全程无需本地服务器",
+    "features": "阶跃星辰基于OpenClaw框架打造的云端AI智能体，由Step 3.5 Flash大模型驱动（曾登顶OpenClaw调用量月榜），7×24小时云端持续在线（设备关机不中断），任务完成后主动推送通知，40G云端长期记忆存储，内置常用技能库，集成阶跃自研实时联网搜索，支持飞书/钉钉等多平台集成，个性化性格与界面自定义",
+    "website": "https://stepclaw.org/zh/"
+  },
+  {
+    "id": 22,
+    "name": "小艺Claw",
+    "developer": "华为（Huawei）",
+    "releaseTime": "2026.03.11",
+    "deployment": "鸿蒙系统（HarmonyOS 6.0）内置，通过小艺App连接使用；开发者可在华为小艺开放平台选择OpenClaw模式接入；当前处于Beta内测阶段",
+    "features": "基于OpenClaw框架融合小艺鸿蒙Skills打造的养成系个人AI助理，支持多模式人格切换（信息猎手/知心朋友/办公搭子/创作天才等），可处理文档编辑、PPT制作、自动回复邮件等办公任务，鸿蒙多端协同管控日程与备忘录，持续学习与深度记忆，端云协同鸿蒙系统级安全防护，支持华为Skills市场扩展，专为鸿蒙生态深度优化",
+    "website": "https://consumer.huawei.com/cn/support/content/zh-cn16087757/"
+  },
+  {
+    "id": 23,
+    "name": "JVS Claw",
+    "developer": "阿里云无影团队",
+    "releaseTime": "2026.03.13",
+    "deployment": "手机端（iOS/Android）+ 网页端双端互通，一键注册三步启动，无需代码基础和API密钥配置",
+    "features": "阿里版OpenClaw，云端隔离环境中的AI工作者，支持创建专属Clawbot和独立ClawSpace云端环境，自然语言任务执行，实时查看操作链路，文件上传下载，多Agent协同群聊能力，内置成长型Skill体系，开箱即用云端算力与安全隔离",
+    "website": "https://jvs.wuying.aliyun.com/"
+  },
+  {
+    "id": 24,
+    "name": "悟空（Wukong Agent）",
+    "developer": "阿里巴巴钉钉团队",
+    "releaseTime": "2026.03.17",
+    "deployment": "独立应用（iOS/Android/网页端）+ 钉钉AI 2.0内置，支持组织内权限管理与企业协同",
+    "features": "全球首个企业级AI原生工作平台，CLI化重构钉钉功能，让每个团队都拥有24h工作的龙虾军团，企业级权限控制与安全访问，支持连接企业钉钉账号、业务系统和应用数据，行业模板与Skill生态，面向企业办公与协同场景深度优化",
+    "website": "https://www.dingtalk.com/wukong"
+  },
+  {
+    "id": 25,
+    "name": "360安全龙虾",
+    "developer": "360集团（三六零数字安全集团）",
+    "releaseTime": "2026.03.14",
+    "deployment": "桌面客户端一键安装（10分钟装好），支持360安全龙虾Box硬件终端物理隔离部署",
+    "features": "国内首个以安全模式为核心设计的OpenClaw智能体，内置百款大模型，360龙虾卫士安全防护（双重引擎、四级信任、九大防护能力），实时监控与AI安全模型，最小权限原则和人在回路防护策略，物理级隔离可选，面向数据安全和隐私要求更高的政企机构",
+    "website": "https://claw.360.cn/"
   }
 ]
