@@ -232,5 +232,95 @@
     "deployment": "桌面客户端一键安装（10分钟装好），支持360安全龙虾Box硬件终端物理隔离部署",
     "features": "国内首个以安全模式为核心设计的OpenClaw智能体，内置百款大模型，360龙虾卫士安全防护（双重引擎、四级信任、九大防护能力），实时监控与AI安全模型，最小权限原则和人在回路防护策略，物理级隔离可选，面向数据安全和隐私要求更高的政企机构",
     "website": "https://claw.360.cn/"
+  },
+  {
+    "id": 26,
+    "name": "QoderWork",
+    "developer": "阿里巴巴（Qoder团队）",
+    "releaseTime": "2026.01.30",
+    "deployment": "桌面端一键安装（Mac/Windows），官网下载即用，无需额外部署，零配置上手",
+    "features": "阿里首款面向非技术用户的桌面AI Agent，本地优先安全架构，内置沙盒隔离环境，多模型智能分级选择（标准档/旗舰档），技能广场预置多场景Skills（文档协作/数据分析/前端设计等），自然语言任务处理可自动拆解执行文件整理/数据处理/文档生成等复杂流程，2026.03.03全面开放支持所有用户下载",
+    "website": "https://qoder.com/qoderwork"
+  },
+  {
+    "id": 27,
+    "name": "RedClaw（红手指Operator）",
+    "developer": "百度（百度智能云）",
+    "releaseTime": "2026.03.17",
+    "deployment": "手机端App（安卓首批，iOS预计2026年3月底上线），云端虚拟手机托管，下载App即可使用零门槛，新用户免费体验10天",
+    "features": "全球首款手机端AI智能体，AI运行于百度云端虚拟手机，用户真实手机与AI环境物理级安全隔离（物理隔离+环境隔离+数据隔离三层防护），可自动跨App完成打车/外卖/购物等复杂任务，支持定时计划任务，模拟真人点击/滑动/输入等原生交互，兼容OpenClaw Skills生态，原名红手指Operator于百度AI Day正式更名发布",
+    "website": "https://operator.gc.com.cn"
+  },
+  {
+    "id": 28,
+    "name": "Loomy",
+    "developer": "科大讯飞（iFlytek）",
+    "releaseTime": "2026.03.17",
+    "deployment": "桌面端一键下载安装（Windows/macOS），访问官网下载后授权工作目录并绑定IM工具，最快1分钟开始使用",
+    "features": "基于科大讯飞AstronClaw技术打造的桌面AI工作搭子，目录级隔离安全机制仅访问授权目录，深度适配QQ/飞书/钉钉可通过手机远程操控电脑7x24小时待命，开放SkillHub生态兼容OpenClaw技能体系支持自定义技能，支持DeepSeek/MiniMax等多种AI模型切换，覆盖文件管理/远程推进/数据分析/消息协同/电商运营/内容创作六大场景，新用户赠10000积分",
+    "website": "https://loomy.xunfei.cn"
+  },
+  {
+    "id": 29,
+    "name": "九章龙虾（NineClaw）",
+    "developer": "好未来（TAL Education）",
+    "releaseTime": "2026.03.16",
+    "deployment": "AI原生桌面端，全本地运行（无需云端），独立沙箱环境，开箱即用零配置，符合校园安全管理规范",
+    "features": "行业首款教师专属AI原生桌面超级智能体，昵称九龙，深度融合好未来教研能力，内置智能教案/课后作业/教学计划/学情分析/课件制作/作业批改等教育专用技能，技能广场一键安装，MCP广场接入教研云题库支持出题组卷，无缝打通飞书/QQ/企业微信/钉钉，定时任务自动化处理规律性事务，智能记忆结合学生学情数据提供个性化服务，归属好未来进校服务品牌九章爱学",
+    "website": "https://www.100tal.com"
+  },
+  {
+    "id": 30,
+    "name": "腾讯云 ClawPro（OpenClaw 企业版）",
+    "developer": "腾讯云",
+    "releaseTime": "2026.03.15",
+    "deployment": "基于腾讯云基础设施的云端SaaS服务，开箱即用无需自行部署，控制台开通管理",
+    "features": "一站式企业AI智能体管控平台，支持零代码分钟级为全员规模化部署专属数字助手，集中管控成员权限与AI模型配置，一键接入企微/钉钉/飞书/QQ等主流IM，多用户网络隔离与服务端口隐身，四层AI安全纵深防护体系（能看见/可审计/强管控/全扫描），实时资源与成本监控，2026.03.22史诗级更新支持微信ClawBot扫码直连",
+    "website": "https://console.cloud.tencent.com/cvm/clawpro"
+  },
+  {
+    "id": 31,
+    "name": "HappyClaw",
+    "developer": "riba2534（中国独立开发者）",
+    "releaseTime": "2026.02.16",
+    "deployment": "自托管部署（Docker容器隔离），Node.js 22 + TypeScript，支持本地与云端",
+    "features": "基于Claude Agent SDK构建的自托管多用户AI Agent系统，原生Claude Code驱动可复用Claude Code订阅配额，多用户隔离（RBAC权限体系+独立工作区），多渠道接入（飞书/Telegram/QQ/Web），移动端PWA深度优化，Agent思考过程实时流式推送，预装40+工具，428 stars，MIT开源协议",
+    "website": "https://github.com/riba2534/happyclaw"
+  },
+  {
+    "id": 32,
+    "name": "OneClaw",
+    "developer": "OneClaw 项目组（中国团队）",
+    "releaseTime": "2026.03",
+    "deployment": "桌面端一键安装（macOS Apple Silicon/Intel + Windows x64/ARM64），内置Node.js 22运行时，无需命令行和环境变量配置",
+    "features": "OpenClaw一键安装桌面客户端，零配置零依赖一分钟上手，针对中国网络环境优化（预置npm镜像源无需翻墙），支持Anthropic/Kimi/OpenAI/Google等多模型切换，API密钥仅本地存储，内置CDN自动更新，支持飞书机器人频道集成和Kimi Search联网搜索，会话跨会话记忆，424 stars，AGPL-3.0开源协议",
+    "website": "https://oneclaw.cn"
+  },
+  {
+    "id": 33,
+    "name": "ClawYi",
+    "developer": "北京碳基智脑",
+    "releaseTime": "2026.03（3月中旬上线）",
+    "deployment": "桌面端双击安装30秒即用（macOS/Windows），无需准备API Key；支持云端增强版（按量充值，7x24在线值守）",
+    "features": "OpenClaw增强桌面版，内置多种国产大模型（通义千问/DeepSeek/智谱GLM-4/Kimi/豆包/MiniMax等国内直连），支持图片生成（通义万相/DALL-E/SD）和视频创作（可灵/Sora/Runway）及语音识别（通义听悟/Whisper），200+中文技能市场国内直连可用，可集成飞书/微信/钉钉/企微/Telegram/Slack/Discord等，桌面版限时免费，即将推出多Agent协作龙虾窝功能",
+    "website": "https://www.clawyi.com"
+  },
+  {
+    "id": 34,
+    "name": "Fabarta龙虾（枫清龙虾）",
+    "developer": "枫清科技（Fabarta）",
+    "releaseTime": "2026.02.03",
+    "deployment": "桌面端本地部署（macOS/麒麟），企业版支持Mac Studio知识中台+Mac mini协同方案，或麒麟KART AI底座端侧闭环",
+    "features": "国内首个深度适配信创/银河麒麟系统的本地化龙虾，数据全程本地处理零上传，白名单权限管理+全流程可审计+人工确认机制，内置本地记忆库持续学习用户习惯，企业级RAG知识检索，操作全程可回放（截图+时间线+轨迹），面向政企机构安全合规场景，提供个人版/企业知识中台/本地模型一体机三档方案",
+    "website": "https://fabarta.com/my-agent"
+  },
+  {
+    "id": 35,
+    "name": "MimiClaw（咪咪虾）",
+    "developer": "王子伯炎（奇绩创坛F25届，AIoT方向独立开发者）",
+    "releaseTime": "2026.03（3月上旬，5天获2.7K Star）",
+    "deployment": "纯C固件烧录至ESP32等嵌入式芯片，连接Wi-Fi后即可通过Telegram等平台调用，无操作系统依赖，5美元硬件即可运行",
+    "features": "全球最轻量级OpenClaw平替，去除操作系统依赖（仅一个for循环+HTTP网络模块），纯C语言编写可烧录芯片，5美元ESP32单片机即可运行，去浏览器化直接获取网页结构化数据（Markdown/Web MCP），支持扩展温湿度/心率等传感器模块实现物理环境交互，面向AIoT边缘智能体终局场景，2.7K Star 330 Fork",
+    "website": "https://github.com/memovai/mimiclaw"
   }
 ]
