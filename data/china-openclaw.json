@@ -322,5 +322,23 @@
     "deployment": "纯C固件烧录至ESP32等嵌入式芯片，连接Wi-Fi后即可通过Telegram等平台调用，无操作系统依赖，5美元硬件即可运行",
     "features": "全球最轻量级OpenClaw平替，去除操作系统依赖（仅一个for循环+HTTP网络模块），纯C语言编写可烧录芯片，5美元ESP32单片机即可运行，去浏览器化直接获取网页结构化数据（Markdown/Web MCP），支持扩展温湿度/心率等传感器模块实现物理环境交互，面向AIoT边缘智能体终局场景，2.7K Star 330 Fork",
     "website": "https://github.com/memovai/mimiclaw"
+  },
+  {
+    "id": 36,
+    "name": "GoClaw（狗爪）",
+    "developer": "smallnest（鸟窝，中国知名Go语言开发者，rpcx框架作者）",
+    "releaseTime": "2026.03（v0.4.0于2026年3月20日发布）",
+    "deployment": "go install 一行命令安装，单二进制无依赖，支持macOS/Linux/Windows，约25MB，冷启动<1秒",
+    "features": "Go语言实现的OpenClaw同类AI Agent框架，兼容OpenClaw和AgentSkills技能规范，原生goroutine并发支持数千个并发Agent，内置完整工具集（FileSystem/Shell/Web/Browser），支持多LLM（OpenAI/Anthropic/OpenRouter及故障转移），多渠道支持（Telegram/WhatsApp/飞书/QQ/企微/钉钉/百度如流/Slack/Discord等），基于JSONL的会话存储与完整工具调用链记录恢复，WebSocket网关，定时任务调度，Docker沙箱权限控制，国产开发者出品，425 stars，MIT开源协议",
+    "website": "https://github.com/smallnest/goclaw"
+  },
+  {
+    "id": 37,
+    "name": "TinyClaw（Java版）",
+    "developer": "Leavesfly（中国独立开发者）",
+    "releaseTime": "2026.02（2月中旬首发）",
+    "deployment": "Java 17+环境，Maven/Gradle构建，支持Docker容器化部署，提供Web控制台和TUI终端仪表盘",
+    "features": "Java语言实现的轻量级AI Agent框架，支持多模型（OpenAI/Anthropic/智谱GLM/通义千问/Gemini/Groq/Ollama等10+），多渠道接入（Telegram/Discord/飞书/钉钉/QQ），7种多Agent协同模式（辩论/团队/工作流等），Prompt自动优化与记忆进化自我进化能力，15+内置工具集（文件操作/网络搜索/定时任务），MCP协议支持可扩展工具，基于Markdown定义和安装的技能插件系统，安全沙箱（工作空间限制+命令黑名单），深度适配国内AI服务，中文文档优先，MIT开源协议",
+    "website": "https://github.com/Leavesfly/TinyClaw"
   }
 ]

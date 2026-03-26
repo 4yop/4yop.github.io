@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-24 12:51",
+  "updatedAt": "2026-03-26 06:25",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -114,8 +114,8 @@
     },
     {
       "name": "火山引擎（豆包）",
-      "quota": "200万 token/天（协作奖励计划，支持豆包系列、DeepSeek、Kimi等）",
-      "cycle": "每日重置（永久）",
+      "quota": "每日 200万 token（支持豆包系列、DeepSeek-V3.2、Kimi-K2 等主流模型，永久免费）；另每个新开通模型赠送 50万 token 新人包+冷启动包",
+      "cycle": "每日重置（永久免费）；新人赠送额度一次性",
       "url": "https://www.volcengine.com/product/doubao",
       "develop": {
         "document_url": "https://www.volcengine.com/docs/82379/1298459",
@@ -126,13 +126,15 @@
           "doubao-pro-32k",
           "doubao-pro-128k",
           "deepseek-r1",
+          "deepseek-v3-241226",
+          "kimi-k2",
           "kimi-k2.5"
         ]
       }
     },
     {
       "name": "Groq",
-      "quota": "Llama 3.3 70B: 1000 RPD（30-60 RPM）；Llama 4 Scout 等多模型免费",
+      "quota": "Llama 3.3 70B: 1000 RPD（30 RPM，12K TPM）；Kimi K2 Instruct: 1000 RPD（60 RPM）；Qwen3 32B: 1000 RPD；GPT-OSS 120B: 1000 RPD；Llama 3.1 8B: 14400 RPD；多模型全部永久免费层",
       "cycle": "每日重置（永久免费层）",
       "url": "https://console.groq.com",
       "develop": {
@@ -143,6 +145,9 @@
           "llama-3.1-70b-versatile",
           "llama-3.1-8b-instant",
           "llama-4-scout-17b-16e",
+          "kimi-k2-instruct",
+          "qwen3-32b",
+          "gpt-oss-120b",
           "mixtral-8x7b-32768",
           "gemma2-9b-it"
         ]
@@ -773,6 +778,24 @@
           "o3-mini",
           "dall-e-3",
           "whisper"
+        ]
+      }
+    },
+    {
+      "name": "心流（iFlow）",
+      "quota": "目前处于不限量免费测试期（支持 Kimi K2、Qwen3 Coder、GLM-4.5、DeepSeek-V3 等主流国产大模型；OpenAI 兼容 API；限制1个并发请求）",
+      "cycle": "免费测试期（不限量，并发限1；后续政策以官方公告为准）",
+      "url": "https://platform.iflow.cn",
+      "develop": {
+        "document_url": "https://platform.iflow.cn",
+        "base_url": "https://apis.iflow.cn/v1",
+        "models": [
+          "kimi-k2",
+          "kimi-k2-instruct",
+          "qwen3-coder",
+          "Qwen/Qwen3-235B-A22B",
+          "glm-4.5",
+          "deepseek-v3"
         ]
       }
     },
