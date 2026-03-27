@@ -1,4 +1,2 @@
-User-agent: *
+User-Agent: *
 Disallow:
-
-Sitemap: https://tools321.com/sitemap.xml

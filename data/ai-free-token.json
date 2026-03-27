@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21 22:45",
+  "updatedAt": "2026-03-26 06:25",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -21,16 +21,17 @@
     },
     {
       "name": "百度千帆",
-      "quota": "每个模型独立 100万 token（ERNIE 4.5、DeepSeek、Qwen3 等）",
-      "cycle": "3个月有效",
+      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5、DeepSeek、Qwen3 等主流模型每模型 100万 token",
+      "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效",
       "url": "https://console.bce.baidu.com/qianfan/",
       "develop": {
         "document_url": "https://cloud.baidu.com/doc/qianfan-api/s/3m9b5lqft",
-        "base_url": "https://qianfan.clarence.cloudapi.com",
+        "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions",
         "models": [
           "ernie-4.5-8k",
           "ernie-3.5-8k",
           "ernie-speed-8k",
+          "ernie-lite-8k",
           "ernie-longtext-8k",
           "deepseek-r1",
           "qwen2.5-72b-instruct"
@@ -39,8 +40,8 @@
     },
     {
       "name": "阿里云百炼（通义千问）",
-      "quota": "每个模型独立 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等）",
-      "cycle": "3个月有效（新用户注册赠送，3个月内用完清零）",
+      "quota": "每个模型独立 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等）；新用户限时活动可领超7000万Tokens+4500张图片生成",
+      "cycle": "3个月有效（新用户注册赠送，3个月内用完清零）；限时活动额度以活动规则为准",
       "url": "https://bailian.console.aliyun.com/",
       "develop": {
         "document_url": "https://help.aliyun.com/zh/model-studio/first-api-call-to-qwen",
@@ -77,27 +78,28 @@
     },
     {
       "name": "智谱AI",
-      "quota": "新用户赠送 2000万 token（GLM-4系列）；GLM-4-Flash 永久免费",
-      "cycle": "新用户一次性；GLM-4-Flash永久",
+      "quota": "新用户赠送 2000万 token；GLM-4-Flash、GLM-4.7-Flash（30B参数，2026年1月发布）、GLM-4.5-Flash 永久免费调用（cost=0）",
+      "cycle": "新用户2000万一次性；Flash系列模型永久免费",
       "url": "https://bigmodel.cn",
       "develop": {
         "document_url": "https://www.bigmodel.cn/dev",
         "base_url": "https://open.bigmodel.cn/api/paas/v4",
         "models": [
           "glm-4-flash",
+          "glm-4-7-flash",
+          "glm-4.5-flash",
           "glm-4-plus",
           "glm-4",
           "glm-4-long",
           "glm-4-flash-thinking",
-          "glm-4.5-flash",
           "glm-4.5-plus"
         ]
       }
     },
     {
       "name": "腾讯混元",
-      "quota": "100万 token（通用包，HunYuan-TurboS等）+ 100万 Embedding token；HunYuan-Lite版永久免费",
-      "cycle": "通用包12个月有效；Lite版永久",
+      "quota": "100万 token（通用包，HunYuan-TurboS等）+ 100万 Embedding token；HunYuan-Lite版永久免费；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效）",
+      "cycle": "通用包12个月有效；Lite版永久；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
         "document_url": "https://cloud.tencent.com/document/product/1729/101848",
@@ -112,8 +114,8 @@
     },
     {
       "name": "火山引擎（豆包）",
-      "quota": "200万 token/天（协作奖励计划，支持豆包系列、DeepSeek、Kimi等）",
-      "cycle": "每日重置（永久）",
+      "quota": "每日 200万 token（支持豆包系列、DeepSeek-V3.2、Kimi-K2 等主流模型，永久免费）；另每个新开通模型赠送 50万 token 新人包+冷启动包",
+      "cycle": "每日重置（永久免费）；新人赠送额度一次性",
       "url": "https://www.volcengine.com/product/doubao",
       "develop": {
         "document_url": "https://www.volcengine.com/docs/82379/1298459",
@@ -124,13 +126,15 @@
           "doubao-pro-32k",
           "doubao-pro-128k",
           "deepseek-r1",
+          "deepseek-v3-241226",
+          "kimi-k2",
           "kimi-k2.5"
         ]
       }
     },
     {
       "name": "Groq",
-      "quota": "Llama 3.3 70B: 1000 RPD（30-60 RPM）；Llama 4 Scout 等多模型免费",
+      "quota": "Llama 3.3 70B: 1000 RPD（30 RPM，12K TPM）；Kimi K2 Instruct: 1000 RPD（60 RPM）；Qwen3 32B: 1000 RPD；GPT-OSS 120B: 1000 RPD；Llama 3.1 8B: 14400 RPD；多模型全部永久免费层",
       "cycle": "每日重置（永久免费层）",
       "url": "https://console.groq.com",
       "develop": {
@@ -141,6 +145,9 @@
           "llama-3.1-70b-versatile",
           "llama-3.1-8b-instant",
           "llama-4-scout-17b-16e",
+          "kimi-k2-instruct",
+          "qwen3-32b",
+          "gpt-oss-120b",
           "mixtral-8x7b-32768",
           "gemma2-9b-it"
         ]
@@ -247,8 +254,8 @@
     },
     {
       "name": "NVIDIA NIM API",
-      "quota": "无限次调用；速率限制 40 RPM；支持 Kimi K2.5、MiniMax、GLM、DeepSeek R1 等",
-      "cycle": "永久免费层（限速）",
+      "quota": "新用户注册赠送 1000 API 积分（普通邮箱1000次，企业邮箱5000次免费推理；支持200+模型含 Kimi K2.5、GLM-5、DeepSeek R1、Llama 4等；额外申请可获4000积分）；速率限制 40 RPM",
+      "cycle": "一次性注册积分（12个月有效）",
       "url": "https://build.nvidia.com",
       "develop": {
         "document_url": "https://docs.nvidia.com/nim",
@@ -256,7 +263,9 @@
         "models": [
           "nvidia/llama-3.3-nemotron-70b-instruct",
           "nvidia/llama-3.1-nemotron-70b-instruct",
-          "nvidia/mistral-nemo-12b-instruct"
+          "nvidia/mistral-nemo-12b-instruct",
+          "deepseek-ai/deepseek-r1",
+          "meta/llama-4-maverick-17b-128e-instruct"
         ]
       }
     },
@@ -582,8 +591,8 @@
     },
     {
       "name": "国家超算互联网（OpenClaw）",
-      "quota": "【活动进行中】全体注册用户免费发放 1000万 Tokens（2周有效）；活动结束后续购价格 0.1元/百万 Tokens（约为市场均价的 1/100），支持 DeepSeek-R1、Qwen3、Llama 等开源大模型",
-      "cycle": "限时2周活动（从2026年3月11日开始，将于2026年3月25日结束）；活动结束后为按量付费模式",
+      "quota": "【活动已过期】原活动：全体注册用户免费发放 1000万 Tokens（2周有效）；续购价格 0.1元/百万 Tokens（约为市场均价的 1/100），支持 DeepSeek-R1、Qwen3、Llama 等开源大模型",
+      "cycle": "限时2周活动（已于2026年3月25日结束）；当前为按量付费模式",
       "url": "https://www.scnet.cn",
       "develop": {
         "document_url": "https://www.scnet.cn/ac/openapi/doc/2.0/api/tutorials.html",
@@ -750,6 +759,60 @@
           "jina-embeddings-v3",
           "jina-reranker-v2",
           "jina-reader"
+        ]
+      }
+    },
+    {
+      "name": "Azure OpenAI",
+      "quota": "新用户注册赠送 $200 免费信用额度（可用于 GPT-4o、GPT-4、o1、DALL-E、Whisper 等全系列服务）",
+      "cycle": "一次性注册额度（30天有效）；部分选定服务可享受12个月免费层",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+      "develop": {
+        "document_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
+        "base_url": "https://{your-resource-name}.openai.azure.com",
+        "models": [
+          "gpt-4o",
+          "gpt-4",
+          "o1",
+          "o1-mini",
+          "o3-mini",
+          "dall-e-3",
+          "whisper"
+        ]
+      }
+    },
+    {
+      "name": "心流（iFlow）",
+      "quota": "目前处于不限量免费测试期（支持 Kimi K2、Qwen3 Coder、GLM-4.5、DeepSeek-V3 等主流国产大模型；OpenAI 兼容 API；限制1个并发请求）",
+      "cycle": "免费测试期（不限量，并发限1；后续政策以官方公告为准）",
+      "url": "https://platform.iflow.cn",
+      "develop": {
+        "document_url": "https://platform.iflow.cn",
+        "base_url": "https://apis.iflow.cn/v1",
+        "models": [
+          "kimi-k2",
+          "kimi-k2-instruct",
+          "qwen3-coder",
+          "Qwen/Qwen3-235B-A22B",
+          "glm-4.5",
+          "deepseek-v3"
+        ]
+      }
+    },
+    {
+      "name": "OVHcloud AI Endpoints",
+      "quota": "新用户注册首个公有云项目赠送 $200 免费信用额度（可用于 AI Endpoints API；支持 Llama 4、Qwen3、DeepSeek-R1、Mistral 等 40+ 模型；匿名用户可直接通过 Playground 免费测试所有模型；需绑定支付方式）",
+      "cycle": "一次性注册额度（激活后30天有效；每账号仅限一次）",
+      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
+      "develop": {
+        "document_url": "https://help.ovhcloud.com/csm/en-documentation-public-cloud-ai-and-machine-learning-ai-endpoints-guides",
+        "base_url": "https://llm.api.cloud.ovh.net/v1",
+        "models": [
+          "Meta-Llama-3.3-70B-Instruct",
+          "Qwen/Qwen3-32B",
+          "deepseek-ai/DeepSeek-R1",
+          "mistralai/Mistral-7B-Instruct-v0.3",
+          "mistralai/Codestral-22B-v0.1"
         ]
       }
     }
