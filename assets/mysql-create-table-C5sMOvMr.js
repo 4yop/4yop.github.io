@@ -1,0 +1,95 @@
+const s=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto p-4 md:p-6 lg:p-8">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为整理数据表格发愁？这个免费工具，让你像画图一样简单设计</h1>
+
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed">
+    你有没有遇到过这种情况：老板让你整理一份会员名单，或者自己想给网店商品做个分类，但一想到要在电脑上建个规规矩矩的表格就头疼？一堆看不懂的选项，深怕点错一个地方，之前的工作全白费。
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 mb-8 rounded-r">
+    <p class="font-medium text-gray-800 mb-1">别担心，今天介绍一个超好用的在线工具，让你告别复杂，用最直观的方式，设计出专业又清晰的数据表格。</p>
+    <p class="text-gray-700">它把原本需要专业知识的活，变得像玩拼积木一样简单有趣。</p>
+  </div>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">这个东西到底是什么？我用盖房子来告诉你</h2>
+    <p class="mb-4 leading-relaxed">想象一下，你要盖一栋楼（你的数据集合，比如“所有客户信息”）。</p>
+    <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-700">
+      <li><span class="font-medium">楼的名字</span>：就像给这栋楼起名，比如叫“VIP客户楼”。</li>
+      <li><span class="font-medium">房间（最重要的部分）</span>：楼里要有不同的房间来放不同的东西。比如“姓名”房间、“电话”房间、“加入日期”房间。</li>
+      <li><span class="font-medium">房间的规格</span>：每个房间有多大？电话房间放11位数字就够了，但备注房间可能要能放下很多文字。</li>
+      <li><span class="font-medium">楼的基础规则</span>：整栋楼用什么砖瓦（编码），怎么排序（排序规则）。</li>
+    </ul>
+    <p class="leading-relaxed">这个工具，就是一个<span class="font-medium text-blue-600">可视化、拖拖拉拉就能完成的“楼房设计软件”</span>。你不用知道砖瓦怎么烧制，只需告诉它你想要几个房间，每个房间干嘛用，它就能自动生成最标准、最安全的建造图纸。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么你应该试试它？给你5个无法拒绝的理由</h2>
+    <div class="grid md:grid-cols-1 gap-6">
+      <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">1. 零门槛，不用懂任何代码</h3>
+        <p class="text-gray-700">所有操作都在清晰的界面上完成。给表格起名、添加栏目（比如“商品价格”、“库存数量”）、选择栏目类型（数字、文字、日期），就像填写一个简单的在线问卷。复杂的部分，工具都帮你默默处理好了。</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">2. 操作直观，像在玩拼图</h3>
+        <p class="text-gray-700">觉得“电话号码”这个栏目应该放在“会员姓名”后面？直接用鼠标拖着它移动位置就行。做错了？一键“撤销”回到上一步。你可以随意尝试、调整，直到布局让你满意为止。</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">3. 一键获得“最终成果”</h3>
+        <p class="text-gray-700">设计完成后，你不需要自己去抄写复杂的规则。工具可以<span class="font-medium">一键生成标准的“建造指令”</span>，并让你直接复制或保存成文件。这份指令清晰、准确，可以直接交给懂技术的同事或用于支持的系统，绝不会出错。</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">4. 自带常用“模板房间”</h3>
+        <p class="text-gray-700">不知道“创建时间”、“唯一编号”这种常用栏目该怎么设置？工具已经为你准备好了模板。点一下“创建时间”，一个格式正确、能自动记录时间的栏目就加好了，省去你反复研究的麻烦。</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">5. 支持导入导出，不怕丢失</h3>
+        <p class="text-gray-700">你的设计可以随时保存为一个单独的JSON文件（你可以把它理解成一份标准的设计图纸存档）。下次需要修改，或者换一台电脑，只要把这个文件导进去，之前所有的设计就原封不动地回来了。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">它能在哪里帮到你？看这两个真实场景</h2>
+    <div class="space-y-6">
+      <div class="p-5 bg-gray-50 rounded-lg">
+        <h3 class="font-bold text-xl mb-3 text-gray-800">场景一：经营小型网店的你</h3>
+        <p class="mb-3 text-gray-700">你想系统化管理商品，需要一张表格记录：<span class="bg-yellow-100 px-1">商品名称、分类、价格、库存、上架时间、商品图片链接</span>。</p>
+        <p class="text-gray-700">用这个工具，你可以：</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+          <li>创建一个叫“我的商品库”的表格。</li>
+          <li>轻松添加上述栏目，并为“价格”和“库存”栏目设置为“数字”类型。</li>
+          <li>为“上架时间”栏目点选“创建时间”模板，让它能自动记录。</li>
+          <li>设计完成后，导出标准指令，未来可用于搭建你的网店后台。</li>
+        </ul>
+      </div>
+      <div class="p-5 bg-gray-50 rounded-lg">
+        <h3 class="font-bold text-xl mb-3 text-gray-800">场景二：负责团队资料整理的你</h3>
+        <p class="mb-3 text-gray-700">团队需要一个任务看板，记录：<span class="bg-yellow-100 px-1">任务内容、负责人、优先级、截止日期、完成状态</span>。</p>
+        <p class="text-gray-700">用这个工具，你可以：</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+          <li>设计“团队任务”表格，并添加这些栏目。</li>
+          <li>将“优先级”栏目类型设为“枚举”（简单的下拉选择），选项就是“高、中、低”，避免大家填写得不统一。</li>
+          <li>将“完成状态”设置为“是否”类型（就是一个勾选框）。</li>
+          <li>最终生成清晰的数据结构，让团队协作更规范。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-gray-200 pt-8">
+    <h2 class="text-2xl font-semibold mb-4">别再对着空白文档发呆了</h2>
+    <p class="text-lg mb-6 leading-relaxed">无论是管理个人收藏、规划项目，还是为小生意打基础，清晰的数据结构都是第一步。现在，这一步可以变得如此简单、无痛。</p>
+    <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+      <p class="font-bold text-gray-800 mb-3 text-xl">如果你也面临以下问题：</p>
+      <ul class="inline-flex flex-col md:flex-row md:flex-wrap justify-center gap-3 mb-4 text-left">
+        <li class="bg-white px-4 py-2 rounded-full border border-green-300 shadow-sm">✔️ 想整理数据却不知如何下手</li>
+        <li class="bg-white px-4 py-2 rounded-full border border-green-300 shadow-sm">✔️ 害怕复杂的专业软件</li>
+        <li class="bg-white px-4 py-2 rounded-full border border-green-300 shadow-sm">✔️ 希望设计出来的表格既规整又专业</li>
+        <li class="bg-white px-4 py-2 rounded-full border border-green-300 shadow-sm">✔️ 需要一份可以随时修改和保存的“数字蓝图”</li>
+      </ul>
+      <p class="text-gray-700">那么，这个<span class="font-bold text-green-600">免费的在线MySQL表结构设计器</span>，就是你一直在找的解决方案。它就像一个贴心的数字表格助理，帮你把想法，规规矩矩地“画”出来。</p>
+    </div>
+  </section>
+</article>
+`;export{s as default};

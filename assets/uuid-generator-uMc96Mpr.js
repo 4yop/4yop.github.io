@@ -1,0 +1,143 @@
+const U=`
+<h2>UUID生成器 — 在线免费生成UUID/GUID工具</h2>
+
+<p>在现代软件开发中，<strong>UUID（通用唯一识别码）</strong>和 <strong>GUID（全局唯一标识符）</strong> 是不可或缺的基础工具。无论是数据库主键设计、分布式系统节点标识，还是API密钥生成，UUID都扮演着关键角色。本文将深入介绍UUID的原理、版本区别、使用场景以及常见问题，帮助开发者更好地理解和使用UUID生成器。</p>
+
+<h2>什么是UUID？</h2>
+
+<p>UUID全称为 <strong>Universally Unique Identifier（通用唯一识别码）</strong>，又称 GUID（Globally Unique Identifier，全局唯一标识符）。它是一个128位的数字，通常以 <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> 的格式表示，共32个十六进制字符加4个连字符，例如：</p>
+
+<pre><code>550e8400-e29b-41d4-a716-446655440000</code></pre>
+
+<p>UUID的设计目标是在不依赖中央注册机构的情况下，在分布式系统中生成全局唯一的标识符。理论上，UUID的总数量高达 <strong>2¹²⁸（约3.4×10³⁸）</strong> 个，发生碰撞的概率极低，可以忽略不计。</p>
+
+<h2>UUID的版本说明</h2>
+
+<p>UUID标准目前定义了多个版本，每个版本的生成算法不同，适用场景也有所差异：</p>
+
+<h3>UUID v1 — 基于时间戳和MAC地址</h3>
+<p>UUID v1 结合了当前的时间戳和设备的MAC地址来生成唯一标识。优点是具有时间顺序性，便于排序；缺点是会暴露生成时间和设备MAC地址，存在一定的隐私风险。适用于需要追踪生成时间的场景。</p>
+
+<h3>UUID v3 — 基于MD5哈希</h3>
+<p>UUID v3 通过对命名空间和名称进行 MD5 哈希运算生成。相同的输入总是产生相同的UUID，具有确定性。适用于需要根据固定输入生成一致UUID的场景，如URL映射。</p>
+
+<h3>UUID v4 — 随机生成（最常用）</h3>
+<p>UUID v4 完全基于随机数生成，是<strong>目前最广泛使用的版本</strong>。它不依赖任何系统信息，安全性高，生成速度快，碰撞概率极低。绝大多数在线UUID生成器默认生成的都是v4版本。</p>
+
+<h3>UUID v5 — 基于SHA-1哈希</h3>
+<p>UUID v5 与v3类似，但使用更安全的 SHA-1 哈希算法。适用于需要确定性生成UUID且要求更高安全性的场景。</p>
+
+<h3>UUID v7 — 基于Unix时间戳（新标准）</h3>
+<p>UUID v7 是较新的标准，基于Unix毫秒时间戳生成，兼具时间排序性和随机性，非常适合作为数据库主键使用，正在逐渐被主流数据库和框架所支持。</p>
+
+<h2>UUID的主要使用场景</h2>
+
+<h3>1. 数据库主键</h3>
+<p>传统自增整数主键在分布式数据库中容易产生冲突。使用UUID作为主键，可以在多个数据库节点独立生成唯一ID，无需全局协调，极大地简化了分布式架构设计。尤其是UUID v7，因其有序性，在数据库索引性能上优于纯随机的v4。</p>
+
+<h3>2. API密钥与访问令牌</h3>
+<p>生成API密钥、OAuth Token、会话ID（Session ID）等安全凭证时，使用UUID v4可以确保每次生成的结果唯一且不可预测，有效防止暴力枚举攻击。</p>
+
+<h3>3. 文件与资源命名</h3>
+<p>在云存储、CDN或文件系统中，使用UUID对上传的文件重命名，可以避免文件名冲突，同时隐藏原始文件信息，提高安全性。</p>
+
+<h3>4. 分布式系统消息追踪</h3>
+<p>在微服务架构中，为每个请求或事件分配一个UUID作为追踪ID（Trace ID），可以方便地跨服务追踪调用链路，便于日志分析和问题排查。</p>
+
+<h3>5. 前端组件Key</h3>
+<p>在React、Vue等前端框架中，动态生成列表时需要为每个元素提供唯一的key，UUID是一个方便可靠的选择。</p>
+
+<h2>UUID的优缺点分析</h2>
+
+<h3>优点</h3>
+<ul>
+  <li><strong>全局唯一性</strong>：碰撞概率极低，适合分布式场景</li>
+  <li><strong>无需中央协调</strong>：各节点独立生成，无需与中心服务通信</li>
+  <li><strong>标准化格式</strong>：被各主流编程语言和数据库原生支持</li>
+  <li><strong>隐藏业务信息</strong>：不像自增ID会暴露数据规模</li>
+</ul>
+
+<h3>缺点</h3>
+<ul>
+  <li><strong>存储空间较大</strong>：128位（16字节）比整数主键（4-8字节）占用更多空间</li>
+  <li><strong>可读性差</strong>：不如自增整数直观，调试时较为繁琐</li>
+  <li><strong>随机UUID索引性能</strong>：UUID v4的随机性可能导致数据库B树索引碎片化，影响写入性能（可用UUID v7改善）</li>
+  <li><strong>URL不友好</strong>：字符串较长，不适合直接用于URL路径（可考虑Base64编码压缩）</li>
+</ul>
+
+<h2>如何使用UUID生成器</h2>
+
+<p>使用本工具生成UUID非常简单：</p>
+<ol>
+  <li>选择所需的UUID版本（推荐v4用于通用场景）</li>
+  <li>输入需要批量生成的数量（支持一次生成多个）</li>
+  <li>点击"生成"按钮，结果即刻显示</li>
+  <li>点击"复制"按钮将UUID复制到剪贴板</li>
+</ol>
+
+<p>生成的UUID可直接用于代码、数据库或任何需要唯一标识符的场合。</p>
+
+<h2>常见编程语言中生成UUID的方法</h2>
+
+<p>除了使用在线工具，开发者也可以在代码中直接生成UUID：</p>
+
+<h3>JavaScript / Node.js</h3>
+<pre><code>// 使用 crypto 模块（Node.js 14.17+）
+const { randomUUID } = require('crypto');
+const uuid = randomUUID(); // 生成 UUID v4
+
+// 或使用 uuid 库
+const { v4: uuidv4 } = require('uuid');
+const uuid = uuidv4();</code></pre>
+
+<h3>Python</h3>
+<pre><code>import uuid
+uuid_v4 = str(uuid.uuid4())  # 生成 UUID v4
+uuid_v1 = str(uuid.uuid1())  # 生成 UUID v1</code></pre>
+
+<h3>Java</h3>
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString(); // 生成 UUID v4</code></pre>
+
+<h3>Go</h3>
+<pre><code>import "github.com/google/uuid"
+id := uuid.New().String() // 生成 UUID v4</code></pre>
+
+<h3>PHP</h3>
+<pre><code>// PHP 没有内置UUID函数，推荐使用 ramsey/uuid 库
+use RamseyUuidUuid;
+$uuid = Uuid::uuid4()->toString();</code></pre>
+
+<h2>UUID常见问题（FAQ）</h2>
+
+<div class="faq-item">
+  <h3>Q1：UUID和GUID有什么区别？</h3>
+  <p>实际上，UUID和GUID是同一个概念的不同叫法。UUID是RFC 4122标准中的术语，而GUID（Global Unique Identifier）是微软在Windows/COM体系中对这一概念的称呼。两者格式完全相同，可以互换使用。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q2：UUID真的不会重复吗？</h3>
+  <p>UUID v4的随机版本共有122位随机数，可产生约5.3×10³⁶种不同的值。如果每秒生成10亿个UUID，大约需要1000亿年才可能出现碰撞。在实际应用中，碰撞概率可以忽略不计，但理论上并非绝对不会重复。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q3：UUID v4和v7哪个更适合作为数据库主键？</h3>
+  <p>如果使用MySQL、PostgreSQL等关系型数据库，推荐使用<strong>UUID v7</strong>。v7基于时间戳生成，具有单调递增的特性，能够保持B树索引的顺序性，避免v4随机UUID导致的页面碎片化问题，写入性能更好。如果对顺序性无要求，v4也完全够用。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q4：UUID是否安全，可以用作密码或密钥吗？</h3>
+  <p>UUID v4使用密码学安全的随机数生成器（CSPRNG）时具有较好的安全性，可用于生成API密钥、会话Token等。但UUID的格式是公开的，攻击者知道它是UUID格式。对于高安全性需求的场景，建议使用更长的随机字节（如32字节），并进行Base64或Hex编码。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q5：如何在MySQL中存储UUID？</h3>
+  <p>MySQL中存储UUID有两种常见方式：①以 <code>VARCHAR(36)</code> 存储带连字符的字符串格式；②使用 <code>BINARY(16)</code> 存储16字节的二进制格式（通过 <code>UUID_TO_BIN()</code> 和 <code>BIN_TO_UUID()</code> 函数转换），后者存储效率更高，索引性能更好。MySQL 8.0+原生支持UUID相关函数。</p>
+</div>
+
+<h2>总结</h2>
+
+<p>UUID/GUID 是现代软件开发中的核心工具，从数据库主键到分布式追踪，应用场景广泛。理解不同版本的区别——特别是 <strong>v1（时间+MAC）</strong>、<strong>v4（纯随机）</strong>、<strong>v7（时间有序）</strong> 的特性——有助于在正确的场景选用合适的版本。使用本在线UUID生成器，您可以快速生成符合RFC 4122标准的UUID，满足开发和测试的各类需求。</p>
+
+<p>如果您需要批量生成UUID或需要特定格式（大写、无连字符等），本工具均已支持，欢迎免费使用。</p>
+`;export{U as default};
