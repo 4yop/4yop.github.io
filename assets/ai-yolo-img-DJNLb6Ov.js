@@ -1,0 +1,93 @@
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <header class="text-center mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">告别手动整理！给照片做“智能体检”，一键导出物品清单</h1>
+    <p class="text-gray-600 text-lg">还在为从一堆照片里找东西而烦恼吗？试试让AI当你的智能管家。</p>
+  </header>
+
+  <section class="mb-10 bg-blue-50 p-6 rounded-xl border border-blue-100">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">你有没有过这样的烦恼？</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
+        <span>整理手机相册里的旅游照片，想快速知道都拍了哪些风景和物品，却要一张张回忆、记录。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
+        <span>网店老板要上新货，对着产品照片手动编写商品清单，既枯燥又容易出错漏。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
+        <span>家里的储物间或办公室堆满了东西，想整理一份物品清单，用笔和纸记录实在太费时间。</span>
+      </li>
+    </ul>
+    <p class="mt-6 text-gray-700 font-medium">如果你对上面任何一点有同感，那么接下来介绍的方法，可能会让你感觉像发现了一个“宝藏助手”。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">这到底是什么？一个给照片的“智能体检中心”</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">想象一下，你拍了一张客厅的照片。传统的做法是，你自己用眼睛看，然后心里默念：“有沙发、茶几、电视、盆栽……”再手动记下来。</p>
+    <p class="mb-4 text-gray-700 leading-relaxed">而所谓的“图像智能识别”，就像给这张照片送去一个高度专注的“体检中心”。这个中心的“AI医生”能在几秒钟内，把照片里所有重要的东西都找出来，并且：</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+      <li><span class="font-medium">准确地叫出名字</span>：不仅告诉你有个“沙发”，还能识别出那是“三人沙发”还是“单人沙发”。</li>
+      <li><span class="font-medium">标出精确位置</span>：用一个个小方框，在照片上清清楚楚地圈出每个物品在哪里。</li>
+      <li><span class="font-medium">生成体检报告</span>：把找到的所有物品，整理成一份清晰的表格清单，你还可以直接保存到电脑里。</li>
+    </ul>
+    <div class="bg-gray-100 p-4 rounded-lg italic text-gray-600 border-l-4 border-blue-500">
+      <p>简单来说，它就是把你的<strong>图片内容</strong>，瞬间转换成一份<strong>文字和数据的清单</strong>，完全自动化，无需你费力辨认和输入。</p>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">它能给你带来的4个实实在在的好处</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-blue-800">1. 效率提升好几倍</h3>
+        <p class="text-gray-700">原本需要你花十几分钟甚至半小时去清点记录的工作，现在只需要上传一张照片，点击一下按钮，几秒钟就完成了。省下来的时间，喝杯咖啡不好吗？</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-green-800">2. 告别遗漏和错误</h3>
+        <p class="text-gray-700">人眼会疲劳，可能会看漏角落里的小物件。但“AI体检官”不会，它会以极高的专注度扫描图片的每一个角落，大大减少你手动记录时可能出现的错漏。</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-amber-800">3. 数据管理超方便</h3>
+        <p class="text-gray-700">识别出来的结果，可以一键导出为Excel表格。这意味着你可以轻松地对物品清单进行排序、筛选、统计，或者直接导入到其他管理软件中，让数据真正为你所用。</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-red-800">4. 操作简单到极致</h3>
+        <p class="text-gray-700">整个过程就像发微信照片一样简单：选择图片，点击“开始识别”，等待几秒，查看并导出结果。不需要学习任何复杂知识，任何人都能立刻上手。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">在生活中，你可以在这些地方用到它</h2>
+    <div class="space-y-6">
+      <div class="flex flex-col md:flex-row gap-4 items-start">
+        <div class="md:w-1/3">
+          <div class="bg-purple-100 text-purple-800 font-bold py-2 px-4 rounded-lg inline-block">应用场景一：家庭整理与保险</div>
+        </div>
+        <div class="md:w-2/3 bg-gray-50 p-5 rounded-lg">
+          <p class="mb-2">为家庭贵重物品、收藏品或者整个房间拍照，快速生成一份家庭财产电子清单。这份清单对于购买财产保险、搬家整理或者日常资产管理都非常有用，一目了然。</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-4 items-start">
+        <div class="md:w-1/3">
+          <div class="bg-green-100 text-green-800 font-bold py-2 px-4 rounded-lg inline-block">应用场景二：电商与零售小店</div>
+        </div>
+        <div class="md:w-2/3 bg-gray-50 p-5 rounded-lg">
+          <p class="mb-2">店主给新到的货品拍一张俯拍照，就能立刻得到所有商品的名称清单，并导出表格用于更新库存系统或制作商品目录。对于实体店盘点库存，拍下货架照片也能辅助快速核对。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center py-8 border-t border-gray-200 mt-10">
+    <h2 class="text-2xl font-semibold mb-4">让智能工具帮你解放双眼和双手</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">在智能时代，很多重复、繁琐的工作其实可以交给工具去完成。给照片做一次“智能体检”，或许就是你提升生活和工作效率的一个新开始。</p>
+    <div class="bg-gray-100 p-6 rounded-xl inline-block">
+      <p class="font-medium text-gray-800">你不妨找一张包含多种物品的照片试试看，亲自体验一下从“肉眼识别”到“AI秒读”的畅快感。</p>
+    </div>
+  </section>
+</div>
+`;export{s as default};
