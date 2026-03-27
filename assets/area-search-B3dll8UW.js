@@ -1,0 +1,17 @@
+const l=`
+<div class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans">
+  <h1 class="text-3xl font-bold mb-4 text-gray-900">地区搜索工具</h1>
+  <p class="text-gray-700 mb-6">
+    地区搜索工具可以帮助你快速查找特定地区的信息，包括地理位置、行政区划、人口数据等。通过输入关键词或坐标，你可以获取详细的地区信息。
+  </p>
+  <div class="bg-gray-50 p-4 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-gray-900">使用说明</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>在搜索框中输入地区名称或关键词</li>
+      <li>点击搜索按钮，系统会显示相关地区的信息</li>
+      <li>可以使用地图界面查看地区的地理位置</li>
+      <li>可以筛选结果，获取更精确的信息</li>
+    </ul>
+  </div>
+</div>
+`;export{l as default};

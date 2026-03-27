@@ -1,0 +1,102 @@
+const t=`
+<div class="font-sans text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+  <!-- 标题 -->
+  <h1 class="text-2xl sm:text-3xl font-bold mt-8 mb-6 text-gray-900">如何安全地分享秘密信息？一个简单又可靠的方法</h1>
+
+  <!-- 引言/痛点场景 -->
+  <p class="text-lg text-gray-700 mb-6">
+    有没有遇到过这样的情况：你想通过微信或邮件发送一段私密信息，比如财务细节、私人日记，或者一个重要的商业计划初稿，但心里总有点不踏实？
+  </p>
+  <p class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r">
+    你担心聊天记录可能被第三方看到，害怕邮件发错人，或者单纯地希望这份信息“只有你和指定的人能看”。这种担心非常正常。今天，就给你介绍一个像“数字保险柜”一样的方法。
+  </p>
+
+  <!-- 简单解释（比喻） -->
+  <h2 class="text-xl sm:text-2xl font-semibold mt-10 mb-4 text-gray-900">它到底是什么？</h2>
+  <p class="mb-4">
+    你可以把它想象成一个功能强大的“信息保险柜”或“数字隐形墨水”。它的工作方式非常简单：
+  </p>
+  <ol class="list-decimal pl-5 mb-8 space-y-3">
+    <li><strong>上锁（加密）</strong>：把你的文字信息放进去，设置一个只有你知道的密码，点击一下，它就会变成一串完全看不懂的“乱码”。</li>
+    <li><strong>传递</strong>：你可以放心地把这串“乱码”复制下来，通过任何方式（微信、QQ、邮件，甚至贴在公告栏上）发给对方。</li>
+    <li><strong>开锁（解密）</strong>：对方拿到“乱码”后，只需要把它粘贴回来，输入你告诉他的那个密码，就能立刻还原出原始的文字信息。</li>
+  </ol>
+  <p class="italic text-gray-600 mb-8">
+    整个过程，你的原始信息从未以“明文”形式在网络上裸奔，看到的永远只是一堆无法破解的乱码。密码，就是唯一的那把钥匙。
+  </p>
+
+  <!-- 好处列举 -->
+  <h2 class="text-xl sm:text-2xl font-semibold mt-10 mb-4 text-gray-900">为什么说它很适合你？</h2>
+  <ul class="space-y-6 mb-10">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">1</div>
+      <div>
+        <h3 class="font-medium text-gray-900">像“隐形墨水”一样私密</h3>
+        <p class="text-gray-700">只有掌握正确“显影药水”（密码）的人才能读到内容。对于不知道密码的任何人来说，那只是一串无意义的字符，完全不用担心被窥视。</p>
+      </div>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">2</div>
+      <div>
+        <h3 class="font-medium text-gray-900">双重防护，安全可靠</h3>
+        <p class="text-gray-700">它采用银行和军方也会使用的保护原理（但我们不深究技术名词）。简单理解就是：即使有人拿到了你的“乱码”文件，没有密码也几乎不可能破解开，为你提供了双重保障。</p>
+      </div>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">3</div>
+      <div>
+        <h3 class="font-medium text-gray-900">操作简单，无需安装</h3>
+        <p class="text-gray-700">整个过程就像复制和粘贴一样简单。你不需要下载复杂的软件，记住繁琐的步骤，一切都在网页上轻松完成。</p>
+      </div>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">4</div>
+      <div>
+        <h3 class="font-medium text-gray-900">信息自主，全程可控</h3>
+        <p class="text-gray-700">所有操作都在你自己的电脑或手机上完成，信息不会上传到别人的服务器。你是信息的唯一主人，从加密到解密，全程由你自己控制。</p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- 应用场景 -->
+  <h2 class="text-xl sm:text-2xl font-semibold mt-10 mb-4 text-gray-900">哪些时候特别需要它？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">场景一：作者与编辑的秘密沟通</h3>
+      <p class="text-gray-700">网络小说作者“清风”想将尚未公开的最新章节草稿发给信任的编辑审阅。他担心直接发文档可能会被平台误判或意外泄露。于是，他用这个方法将章节内容加密，生成一段“乱码”，通过微信发给编辑。同时，他通过电话口头告知编辑一个简单的密码。编辑将“乱码”粘贴到工具中，输入密码，就安全地看到了原文，双方都非常安心。</p>
+    </div>
+    <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">场景二：家庭的敏感信息共享</h3>
+      <p class="text-gray-700">张先生家里有一份记录着重要账号和备用钥匙存放处的家庭应急文档。他想分享给在外地工作的儿子以备不时之需，但觉得发普通文件不安全。他把文档内容加密，把生成的“乱码”文本保存到家庭群的记事本里。然后，他告诉了儿子一个只有家人才知道的纪念日作为密码。这样，即使群聊信息泄露，外人看到的也只是乱码，无法获得真实信息。</p>
+    </div>
+  </div>
+
+  <!-- 问答形式（SEO和用户疑问） -->
+  <h2 class="text-xl sm:text-2xl font-semibold mt-10 mb-4 text-gray-900">你可能还想知道</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="font-medium text-gray-900 mb-2">问：密码忘了怎么办？</h3>
+      <p class="text-gray-700 pl-4">答：这是一个关键的“保险”特性。如果密码丢失，就像丢了唯一的钥匙，<strong>任何人都无法再打开这个“保险柜”</strong>。所以，请务必牢记你设置的密码，或者将它安全地记录在只有你能找到的地方。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900 mb-2">问：“乱码”看起来很长，容易出错吗？</h3>
+      <p class="text-gray-700 pl-4">答：生成的“乱码”是一个完整的文本块，你只需要<strong>一次性全选并复制</strong>，然后完整地粘贴给对方即可。工具设计就是让你整体操作的，避免了手动输入可能带来的错误。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900 mb-2">问：这和微信的“加密聊天”有什么区别？</h3>
+      <p class="text-gray-700 pl-4">答：最大的区别在于“自主控制权”。这个方法不依赖任何特定软件或平台。你可以用任何你喜欢的方式（邮件、网盘、甚至打印出来）传递那份“乱码”，只要对方能拿到这段文字并知道密码，就能解密。信息的安全完全掌握在你自己手里。</p>
+    </div>
+  </div>
+
+  <!-- 行动号召 -->
+  <div class="mt-12 p-6 bg-gray-50 border border-gray-200 rounded-xl text-center">
+    <h2 class="text-xl font-bold mb-4 text-gray-900">给你的私密信息加把锁</h2>
+    <p class="text-gray-700 mb-6">
+      无论是保护个人隐私，还是安全地传递工作机密，一个简单可靠的工具能让你彻底安心。这个方法将专业的保护原理，封装成了人人可用的“复制”和“粘贴”。
+    </p>
+    <p class="font-medium text-gray-900">
+      现在，你可以去寻找这样一个“数字保险柜”工具，亲身体验一下，给你的重要信息穿上“隐形衣”的感觉。
+    </p>
+  </div>
+</div>
+`;export{t as default};

@@ -1,0 +1,68 @@
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <article>
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">再也不用猜了：一个帮你读懂身体“月度报告”的简单方法</h1>
+    <p class="text-gray-600 text-lg mb-8">每个月那几天，你是不是也常常感到措手不及？别担心，你并不孤单。</p>
+
+    <section class="mb-10 bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+      <h2 class="text-2xl font-bold mb-4">你是不是也遇到过这些情况？</h2>
+      <ul class="space-y-3">
+        <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span> 计划好的海边旅行或重要会议，突然遇到“老朋友”来访，好心情和计划全被打乱。</li>
+        <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span> 感觉身体和情绪有些微妙变化，却不确定是不是“那几天”快来了，心里总是没底。</li>
+        <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span> 正在备孕，想抓住最佳时机，但算来算去总觉得不准，反而增加了不少压力。</li>
+        <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span> 因为周期不太规律，每个月都像在开盲盒，总在担心突如其来的尴尬。</li>
+      </ul>
+      <p class="mt-4 font-medium">如果你对上面任何一条点头，那么，你只是缺少一个懂你的“身体日历”。</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">这到底是什么？一个为你定制的“健康天气预报”</h2>
+      <p class="mb-4">想象一下，如果月经周期像天气一样可以提前预报，生活会变得多么从容。其实，我们的身体本身就有一套精密的“生物钟”，而你需要做的，只是学会查看它的“日程表”。</p>
+      <p class="mb-4">这不像复杂的医学计算，它更像是在帮你记录和解读身体发出的规律信号。你只需要知道几个简单的数字：最近一次月经是哪天开始的、通常来几天、两次月经之间隔多久。</p>
+      <p>基于这些，就能在一张清晰的日历上，看到未来几个月身体状态的“预测图”：哪几天需要特别照顾自己（月经期），哪几天是备孕的黄金窗口（排卵期），都一目了然。</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-6 border-b pb-2">对你实实在在的四个好处</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3 text-red-600">1. 告别“突发”尴尬</h3>
+          <p>提前知道“那几天”的预计时间，你可以从容地在包里备好必需品，安排工作和生活，再也不必心惊胆战。</p>
+        </div>
+        <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3 text-blue-600">2. 掌握备孕主动权</h3>
+          <p>清晰了解易孕期的范围，帮助你更科学地规划，减少盲目猜测带来的焦虑，让迎接新生命的过程更安心。</p>
+        </div>
+        <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3 text-green-600">3. 更懂自己的身体规律</h3>
+          <p>长期观察和记录，你会慢慢发现自己周期的特点和模式，这是关爱自己、了解自己最重要的一步。</p>
+        </div>
+        <div class="bg-white p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3 text-purple-600">4. 缓解不必要的焦虑</h3>
+          <p>很多担忧源于“未知”。当未来几个月的状况变得可视、可预期，你心中的不确定性就会大大减少。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+      <h2 class="text-2xl font-bold mb-4">在生活中，它是这样帮到你的</h2>
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-bold text-lg mb-2">场景一：计划一场完美的旅行</h4>
+          <p class="text-gray-700">小美想和闺蜜去热带岛屿度假，她提前用“身体日历”查看了预测。发现原定日期正好撞上月经期，于是她果断将行程推迟了一周，确保了整个假期都能尽情享受阳光海水，不用担心不便。</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-2">场景二：为重要日子做足准备</h4>
+          <p class="text-gray-700">琳琳有一场至关重要的线下演讲。她提前查看日历，发现演讲日可能处于经期第一天。于是她提前准备好了所有缓解物品和舒适的着装，并调整了演讲前的作息。当天，她虽然身体略有不适，但因准备充分，依然自信圆满地完成了任务。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 pt-8 border-t text-center">
+      <h2 class="text-2xl font-bold mb-4">开始倾听你身体的节奏</h2>
+      <p class="mb-6">我们的身体远比想象中更有规律。花一点点时间了解它，不是为了控制，而是为了更和谐地与它相处。</p>
+      <p class="text-gray-600 text-sm">（提示：任何预测工具都是基于普遍规律的参考。我们的身体会受情绪、压力、作息等多种因素影响，请将它作为贴心提醒，而非绝对标准。如有特殊健康状况，请务必咨询专业医生。）</p>
+    </section>
+  </article>
+</div>
+`;export{s as default};
