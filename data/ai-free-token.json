@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-26 06:25",
+  "updatedAt": "2026-03-28 00:30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -20,26 +20,7 @@
       }
     },
     {
-      "name": "百度千帆",
-      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5、DeepSeek、Qwen3 等主流模型每模型 100万 token",
-      "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效",
-      "url": "https://console.bce.baidu.com/qianfan/",
-      "develop": {
-        "document_url": "https://cloud.baidu.com/doc/qianfan-api/s/3m9b5lqft",
-        "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions",
-        "models": [
-          "ernie-4.5-8k",
-          "ernie-3.5-8k",
-          "ernie-speed-8k",
-          "ernie-lite-8k",
-          "ernie-longtext-8k",
-          "deepseek-r1",
-          "qwen2.5-72b-instruct"
-        ]
-      }
-    },
-    {
-      "name": "阿里云百炼（通义千问）",
+      "name": "阿里云百炼",
       "quota": "每个模型独立 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等）；新用户限时活动可领超7000万Tokens+4500张图片生成",
       "cycle": "3个月有效（新用户注册赠送，3个月内用完清零）；限时活动额度以活动规则为准",
       "url": "https://bailian.console.aliyun.com/",
@@ -60,39 +41,21 @@
       }
     },
     {
-      "name": "讯飞星火",
-      "quota": "Lite版约5万 token/月（永久免费层）；Ultra版（原Max升级版）赠送体验额度；Pro版免费体验包；新用户注册各模型赠送20万 token（注：Spark Max已于2026年3月10日下线，迁移至Ultra版）",
-      "cycle": "Lite永久（每月重置）；Ultra/Pro体验额度一次性；模型赠送额度短期有效",
-      "url": "https://xinghuo.xfyun.cn",
+      "name": "百度千帆",
+      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5、DeepSeek、Qwen3 等主流模型每模型 100万 token",
+      "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效",
+      "url": "https://console.bce.baidu.com/qianfan/",
       "develop": {
-        "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
-        "base_url": "https://spark-api.xf-yun.com",
+        "document_url": "https://cloud.baidu.com/doc/qianfan-api/s/3m9b5lqft",
+        "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions",
         "models": [
-          "spark-lite",
-          "spark-ultra",
-          "spark-pro",
-          "spark-pro-128k",
-          "spark-x1"
-        ]
-      }
-    },
-    {
-      "name": "智谱AI",
-      "quota": "新用户赠送 2000万 token；GLM-4-Flash、GLM-4.7-Flash（30B参数，2026年1月发布）、GLM-4.5-Flash 永久免费调用（cost=0）",
-      "cycle": "新用户2000万一次性；Flash系列模型永久免费",
-      "url": "https://bigmodel.cn",
-      "develop": {
-        "document_url": "https://www.bigmodel.cn/dev",
-        "base_url": "https://open.bigmodel.cn/api/paas/v4",
-        "models": [
-          "glm-4-flash",
-          "glm-4-7-flash",
-          "glm-4.5-flash",
-          "glm-4-plus",
-          "glm-4",
-          "glm-4-long",
-          "glm-4-flash-thinking",
-          "glm-4.5-plus"
+          "ernie-4.5-8k",
+          "ernie-3.5-8k",
+          "ernie-speed-8k",
+          "ernie-lite-8k",
+          "ernie-longtext-8k",
+          "deepseek-r1",
+          "qwen2.5-72b-instruct"
         ]
       }
     },
@@ -129,6 +92,45 @@
           "deepseek-v3-241226",
           "kimi-k2",
           "kimi-k2.5"
+        ]
+      }
+    },
+    {
+      "name": "硅基流动（SiliconFlow）",
+      "quota": "新用户赠送 2000万 token（14元代金券等值，支持DeepSeek、Llama、Qwen等主流开源模型）",
+      "cycle": "永久有效",
+      "url": "https://siliconflow.cn",
+      "develop": {
+        "document_url": "https://docs.siliconflow.cn/",
+        "base_url": "https://api.siliconflow.cn/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-V3",
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "Qwen/Qwen2.5-32B-Instruct",
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "THUDM/glm-4-flash",
+          "Qwen/Qwen2-VL-72B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "智谱AI",
+      "quota": "新用户赠送 2000万 token；GLM-4-Flash、GLM-4.7-Flash（30B参数，2026年1月发布）、GLM-4.5-Flash 永久免费调用（cost=0）",
+      "cycle": "新用户2000万一次性；Flash系列模型永久免费",
+      "url": "https://bigmodel.cn",
+      "develop": {
+        "document_url": "https://www.bigmodel.cn/dev",
+        "base_url": "https://open.bigmodel.cn/api/paas/v4",
+        "models": [
+          "glm-4-flash",
+          "glm-4-7-flash",
+          "glm-4.5-flash",
+          "glm-4-plus",
+          "glm-4",
+          "glm-4-long",
+          "glm-4-flash-thinking",
+          "glm-4.5-plus"
         ]
       }
     },
@@ -187,41 +189,6 @@
       }
     },
     {
-      "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户赠送 2000万 token（14元代金券等值，支持DeepSeek、Llama、Qwen等主流开源模型）",
-      "cycle": "永久有效",
-      "url": "https://siliconflow.cn",
-      "develop": {
-        "document_url": "https://docs.siliconflow.cn/",
-        "base_url": "https://api.siliconflow.cn/v1",
-        "models": [
-          "deepseek-ai/DeepSeek-V3",
-          "deepseek-ai/DeepSeek-R1",
-          "Qwen/Qwen2.5-72B-Instruct",
-          "Qwen/Qwen2.5-32B-Instruct",
-          "meta-llama/Llama-3.3-70B-Instruct",
-          "THUDM/glm-4-flash",
-          "Qwen/Qwen2-VL-72B-Instruct"
-        ]
-      }
-    },
-    {
-      "name": "Kimi（月之暗面）",
-      "quota": "新用户注册赠送约 800万 token（Tier0：1并发、3 RPM、500k TPM，可用于 kimi-k2.5、K2 等模型；另有充值返券活动）",
-      "cycle": "一次性注册额度（永久有效，用完需充值）",
-      "url": "https://platform.moonshot.cn",
-      "develop": {
-        "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
-        "base_url": "https://api.moonshot.cn/v1",
-        "models": [
-          "kimi-k2.5",
-          "kimi-k2.5-flash",
-          "kimi-k2",
-          "kimi-k2-fc"
-        ]
-      }
-    },
-    {
       "name": "OpenRouter",
       "quota": "50 次请求/天（DeepSeek R1、Llama 4、Qwen3 等多模型）",
       "cycle": "每日重置（永久免费层）",
@@ -253,19 +220,261 @@
       }
     },
     {
-      "name": "NVIDIA NIM API",
-      "quota": "新用户注册赠送 1000 API 积分（普通邮箱1000次，企业邮箱5000次免费推理；支持200+模型含 Kimi K2.5、GLM-5、DeepSeek R1、Llama 4等；额外申请可获4000积分）；速率限制 40 RPM",
-      "cycle": "一次性注册积分（12个月有效）",
-      "url": "https://build.nvidia.com",
+      "name": "DeepSeek 开放平台",
+      "quota": "新用户注册赠送 100万 token（可用于 deepseek-chat / DeepSeek-V3.2 及 deepseek-reasoner / DeepSeek-V3.2-Thinking 模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
+      "cycle": "一次性注册赠送（30天有效，用完需充值）",
+      "url": "https://platform.deepseek.com",
       "develop": {
-        "document_url": "https://docs.nvidia.com/nim",
-        "base_url": "https://integrate.api.nvidia.com/v1",
+        "document_url": "https://api-docs.deepseek.com/zh-cn/",
+        "base_url": "https://api.deepseek.com/v1",
         "models": [
-          "nvidia/llama-3.3-nemotron-70b-instruct",
-          "nvidia/llama-3.1-nemotron-70b-instruct",
-          "nvidia/mistral-nemo-12b-instruct",
-          "deepseek-ai/deepseek-r1",
-          "meta/llama-4-maverick-17b-128e-instruct"
+          "deepseek-chat",
+          "deepseek-reasoner"
+        ]
+      }
+    },
+    {
+      "name": "Anthropic Claude API",
+      "quota": "新用户赠送 $5 API 积分（可用于全系列 Claude Opus、Sonnet、Haiku 模型）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://console.anthropic.com",
+      "develop": {
+        "document_url": "https://docs.anthropic.com/en/api/getting-started",
+        "base_url": "https://api.anthropic.com/v1",
+        "models": [
+          "claude-opus-4-5-20250129",
+          "claude-sonnet-4-20250514",
+          "claude-haiku-3-5-20250520"
+        ]
+      }
+    },
+    {
+      "name": "百川智能 (Baichuan)",
+      "quota": "海纳百川计划：免费使用 Baichuan-M3Plus API（需申请体验）",
+      "cycle": "申请通过后有效（具体额度以平台审批为准）",
+      "url": "https://platform.baichuan-ai.com",
+      "develop": {
+        "document_url": "https://platform.baichuan-ai.com/docs/api",
+        "base_url": "https://api.baichuan-ai.com/v1",
+        "models": [
+          "Baichuan-M3Plus",
+          "Baichuan2-Turbo",
+          "Baichuan2-53B"
+        ]
+      }
+    },
+    {
+      "name": "零一万物 (01.AI)",
+      "quota": "新用户注册赠送 100元 API 额度（可用于 Yi-Lightning、Yi-1.5 等全系 Yi 模型）",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://platform.lingyiwanwu.com",
+      "develop": {
+        "document_url": "https://platform.lingyiwanwu.com/docs",
+        "base_url": "https://api.lingyiwanwu.com/v1",
+        "models": [
+          "yi-lightning",
+          "yi-1.5-34b-chat",
+          "yi-1.5-9b-chat",
+          "yi-1.5-6b-chat",
+          "yi-medium",
+          "yi-spark"
+        ]
+      }
+    },
+    {
+      "name": "魔搭社区（ModelScope）",
+      "quota": "每天 2000 次免费调用（支持 DeepSeek-R1、Qwen2.5-VL、Flux.1 等开源模型）",
+      "cycle": "每日重置（永久免费层，需绑定阿里云账号）",
+      "url": "https://www.modelscope.cn",
+      "develop": {
+        "document_url": "https://www.modelscope.cn/docs",
+        "base_url": "https://api.modelscope.cn/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-R1",
+          "qwen/Qwen2.5-72B-Instruct",
+          "qwen/Qwen2.5-VL-72B-Instruct",
+          "black-forest-labs/FLUX.1-dev"
+        ]
+      }
+    },
+    {
+      "name": "七牛云 AI 推理",
+      "quota": "新用户注册首次体验赠送 300万 token；邀请活动可额外获得 1000万 token；支持 DeepSeek、Kimi、Claude 等 50+ 模型",
+      "cycle": "赠送额度2年有效",
+      "url": "https://developer.qiniu.com/aitokenapi",
+      "develop": {
+        "document_url": "https://developer.qiniu.com/aitokenapi",
+        "base_url": "https://ai.qiniuapi.com/v1",
+        "models": [
+          "deepseek-r1",
+          "qwen-plus",
+          "kimi-k2.5"
+        ]
+      }
+    },
+    {
+      "name": "心流（iFlow）",
+      "quota": "目前处于不限量免费测试期（支持 Kimi K2、Qwen3 Coder、GLM-4.5、DeepSeek-V3 等主流国产大模型；OpenAI 兼容 API；限制1个并发请求）",
+      "cycle": "免费测试期（不限量，并发限1；后续政策以官方公告为准）",
+      "url": "https://platform.iflow.cn",
+      "develop": {
+        "document_url": "https://platform.iflow.cn",
+        "base_url": "https://apis.iflow.cn/v1",
+        "models": [
+          "kimi-k2",
+          "kimi-k2-instruct",
+          "qwen3-coder",
+          "Qwen/Qwen3-235B-A22B",
+          "glm-4.5",
+          "deepseek-v3"
+        ]
+      }
+    },
+    {
+      "name": "讯飞星火",
+      "quota": "Lite版约5万 token/月（永久免费层）；Ultra版（原Max升级版）赠送体验额度；Pro版免费体验包；新用户注册各模型赠送20万 token（注：Spark Max已于2026年3月10日下线，迁移至Ultra版）",
+      "cycle": "Lite永久（每月重置）；Ultra/Pro体验额度一次性；模型赠送额度短期有效",
+      "url": "https://xinghuo.xfyun.cn",
+      "develop": {
+        "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
+        "base_url": "https://spark-api.xf-yun.com",
+        "models": [
+          "spark-lite",
+          "spark-ultra",
+          "spark-pro",
+          "spark-pro-128k",
+          "spark-x1"
+        ]
+      }
+    },
+    {
+      "name": "AI21 Labs",
+      "quota": "新用户赠送 $10 免费积分（无需信用卡，支持 Jamba Mini、Jamba Large 等长上下文模型）",
+      "cycle": "一次性注册积分（3个月有效）",
+      "url": "https://studio.ai21.com",
+      "develop": {
+        "document_url": "https://docs.ai21.com",
+        "base_url": "https://api.ai21.com/v1",
+        "models": [
+          "jamba-mini",
+          "jamba-large",
+          "jamba-1.5-large"
+        ]
+      }
+    },
+    {
+      "name": "AtomGit AI（开放原子）",
+      "quota": "新用户注册赠送 1000万 Tokens（永久有效，QPS=2，每日最高1000次调用）；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型",
+      "cycle": "Token额度永久有效；算力额度每月重置",
+      "url": "https://ai.atomgit.com",
+      "develop": {
+        "document_url": "https://ai.atomgit.com/dashboard/api-key",
+        "base_url": "https://api-ai.gitcode.com/v1",
+        "models": [
+          "zai-org/GLM-5",
+          "Qwen/Qwen3.5-397B-A17B",
+          "Qwen/Qwen3.5-122B-A10B"
+        ]
+      }
+    },
+    {
+      "name": "Azure OpenAI",
+      "quota": "新用户注册赠送 $200 免费信用额度（可用于 GPT-4o、GPT-4、o1、DALL-E、Whisper 等全系列服务）",
+      "cycle": "一次性注册额度（30天有效）；部分选定服务可享受12个月免费层",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+      "develop": {
+        "document_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
+        "base_url": "https://{your-resource-name}.openai.azure.com",
+        "models": [
+          "gpt-4o",
+          "gpt-4",
+          "o1",
+          "o1-mini",
+          "o3-mini",
+          "dall-e-3",
+          "whisper"
+        ]
+      }
+    },
+    {
+      "name": "Baseten",
+      "quota": "新用户赠送 $30 免费积分（可部署任意 HuggingFace 模型，支持 GPU 推理、Serverless 函数）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://www.baseten.co",
+      "develop": {
+        "document_url": "https://docs.baseten.co",
+        "base_url": "https://api.baseten.co/v1",
+        "models": []
+      }
+    },
+    {
+      "name": "Cerebrium",
+      "quota": "新用户赠送 $30 免费积分（Serverless GPU 推理平台，支持部署任意 HuggingFace 模型，冷启动低于5秒）",
+      "cycle": "一次性注册积分（需联系销售获取，无信用卡要求）",
+      "url": "https://www.cerebrium.ai",
+      "develop": {
+        "document_url": "https://docs.cerebrium.ai",
+        "base_url": "https://api.cerebrium.ai/v1",
+        "models": []
+      }
+    },
+    {
+      "name": "Chutes.ai",
+      "quota": "200 次 API 调用/天（基于 Bittensor 去中心化网络，支持 GPT 类大模型、代码生成等）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://chutes.ai",
+      "develop": {
+        "document_url": "https://chutes.ai/docs",
+        "base_url": "https://api.chutes.ai/v1",
+        "models": [
+          "gpt-3.5-turbo",
+          "deepseek-r1",
+          "llama-3.3-70b-instruct"
+        ]
+      }
+    },
+    {
+      "name": "Cloudflare Workers AI",
+      "quota": "10,000 神经元单位/天（Llama 3.2、Mistral 7B 等轻量模型）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://developers.cloudflare.com/workers-ai/",
+      "develop": {
+        "document_url": "https://developers.cloudflare.com/workers-ai/",
+        "base_url": "https://api.cloudflare.com/client/v4/workers/ai/run",
+        "models": [
+          "@cf/meta/llama-3.2-1b-instruct",
+          "@cf/meta/llama-3.2-3b-instruct",
+          "@cf/mistral/mistral-7b-instruct-v0.1"
+        ]
+      }
+    },
+    {
+      "name": "fal.ai",
+      "quota": "新用户赠送 $5 免费积分（支持 1000+ 生产就绪的图像、视频、音频、3D 生成模型）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://fal.ai",
+      "develop": {
+        "document_url": "https://docs.fal.ai",
+        "base_url": "https://api.fal.ai/v1",
+        "models": [
+          "fal-ai/flux/dev",
+          "fal-ai/flux/schnell",
+          "fal-ai/kling-video/v1"
+        ]
+      }
+    },
+    {
+      "name": "Fireworks AI",
+      "quota": "新用户赠送 $1 免费积分（支持 50+ 开源模型，含 Llama 4、Qwen3、Gemma 3、Mixtral 等，快速推理）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://fireworks.ai",
+      "develop": {
+        "document_url": "https://docs.fireworks.ai",
+        "base_url": "https://api.fireworks.ai/v1",
+        "models": [
+          "accounts/fireworks/models/llama-4-scout",
+          "accounts/fireworks/models/qwen3-72b-instruct",
+          "accounts/fireworks/models/gemma-3-27b-it"
         ]
       }
     },
@@ -287,116 +496,6 @@
       }
     },
     {
-      "name": "xAI (Grok)",
-      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）",
-      "cycle": "注册$25一次性；数据共享$150每月重置（永久，需满足$5消费门槛后激活）",
-      "url": "https://console.x.ai",
-      "develop": {
-        "document_url": "https://docs.x.ai/docs/data-sharing",
-        "base_url": "https://api.x.ai/v1",
-        "models": [
-          "grok-4",
-          "grok-4-mini",
-          "grok-3",
-          "grok-3-mini",
-          "grok-2",
-          "grok-2-vision-1212"
-        ]
-      }
-    },
-    {
-      "name": "Cloudflare Workers AI",
-      "quota": "10,000 神经元单位/天（Llama 3.2、Mistral 7B 等轻量模型）",
-      "cycle": "每日重置（永久免费层）",
-      "url": "https://developers.cloudflare.com/workers-ai/",
-      "develop": {
-        "document_url": "https://developers.cloudflare.com/workers-ai/",
-        "base_url": "https://api.cloudflare.com/client/v4/workers/ai/run",
-        "models": [
-          "@cf/meta/llama-3.2-1b-instruct",
-          "@cf/meta/llama-3.2-3b-instruct",
-          "@cf/mistral/mistral-7b-instruct-v0.1"
-        ]
-      }
-    },
-    {
-      "name": "七牛云 AI 推理",
-      "quota": "新用户注册首次体验赠送 300万 token；邀请活动可额外获得 1000万 token；支持 DeepSeek、Kimi、Claude 等 50+ 模型",
-      "cycle": "赠送额度2年有效",
-      "url": "https://developer.qiniu.com/aitokenapi",
-      "develop": {
-        "document_url": "https://developer.qiniu.com/aitokenapi",
-        "base_url": "https://ai.qiniuapi.com/v1",
-        "models": [
-          "deepseek-r1",
-          "qwen-plus",
-          "kimi-k2.5"
-        ]
-      }
-    },
-    {
-      "name": "魔搭社区（ModelScope）",
-      "quota": "每天 2000 次免费调用（支持 DeepSeek-R1、Qwen2.5-VL、Flux.1 等开源模型）",
-      "cycle": "每日重置（永久免费层，需绑定阿里云账号）",
-      "url": "https://www.modelscope.cn",
-      "develop": {
-        "document_url": "https://www.modelscope.cn/docs",
-        "base_url": "https://api.modelscope.cn/v1",
-        "models": [
-          "deepseek-ai/DeepSeek-R1",
-          "qwen/Qwen2.5-72B-Instruct",
-          "qwen/Qwen2.5-VL-72B-Instruct",
-          "black-forest-labs/FLUX.1-dev"
-        ]
-      }
-    },
-    {
-      "name": "MiniMax 开放平台",
-      "quota": "新用户注册赠送免费 token（具体额度以注册时平台活动为准，支持 MiniMax M2.5、语音合成等多模态）",
-      "cycle": "一次性注册赠送（约30天有效）",
-      "url": "https://platform.minimaxi.com",
-      "develop": {
-        "document_url": "https://platform.minimaxi.com",
-        "base_url": "https://api.minimax.chat/v1",
-        "models": [
-          "MiniMax-M2.5",
-          "MiniMax-M2",
-          "abab6.5s-chat",
-          "abab6.5g-chat"
-        ]
-      }
-    },
-    {
-      "name": "Anthropic Claude API",
-      "quota": "新用户赠送 $5 API 积分（可用于全系列 Claude Opus、Sonnet、Haiku 模型）",
-      "cycle": "一次性注册积分（30天有效）",
-      "url": "https://console.anthropic.com",
-      "develop": {
-        "document_url": "https://docs.anthropic.com/en/api/getting-started",
-        "base_url": "https://api.anthropic.com/v1",
-        "models": [
-          "claude-opus-4-5-20250129",
-          "claude-sonnet-4-20250514",
-          "claude-haiku-3-5-20250520"
-        ]
-      }
-    },
-    {
-      "name": "Ling Studio（蚂蚁百灵）",
-      "quota": "每日 50万 token（支持 Ling-1T、Ring-1T 推理模型及 Ming 多模态模型）",
-      "cycle": "每日重置（永久免费层）",
-      "url": "https://ling.tbox.cn",
-      "develop": {
-        "document_url": "https://ling.tbox.cn/doc",
-        "base_url": "https://openapi.aliyuncs.com/api/v3",
-        "models": [
-          "ling-1t",
-          "ring-1t",
-          "ming-m2"
-        ]
-      }
-    },
-    {
       "name": "Hugging Face Inference API",
       "quota": "免费 Serverless 推理（数百次请求/小时，支持 15万+ 开源模型）",
       "cycle": "每月重置（永久免费层，速率有限制）",
@@ -408,155 +507,6 @@
           "meta-llama/Llama-3.3-70B-Instruct",
           "Qwen/Qwen2.5-72B-Instruct",
           "google/gemma-2-27b-it"
-        ]
-      }
-    },
-    {
-      "name": "SambaNova Cloud",
-      "quota": "新用户赠送 $5 积分（Llama 3.3 8B模型约等于 3000万+ token，支持 Llama 3.3 70B/8B、Qwen3、DeepSeek-R1 等开源模型，基于自研RDU芯片超高速推理；社区活跃可申请额外积分）",
-      "cycle": "一次性注册积分（30天有效，无永久免费层）",
-      "url": "https://cloud.sambanova.ai",
-      "develop": {
-        "document_url": "https://cloud.sambanova.ai/docs",
-        "base_url": "https://api.sambanova.ai/v1",
-        "models": [
-          "Meta-Llama-3.3-70B-Instruct",
-          "Qwen2.5-72B-Instruct",
-          "DeepSeek-R2"
-        ]
-      }
-    },
-    {
-      "name": "Fireworks AI",
-      "quota": "新用户赠送 $1 免费积分（支持 50+ 开源模型，含 Llama 4、Qwen3、Gemma 3、Mixtral 等，快速推理）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://fireworks.ai",
-      "develop": {
-        "document_url": "https://docs.fireworks.ai",
-        "base_url": "https://api.fireworks.ai/v1",
-        "models": [
-          "accounts/fireworks/models/llama-4-scout",
-          "accounts/fireworks/models/qwen3-72b-instruct",
-          "accounts/fireworks/models/gemma-3-27b-it"
-        ]
-      }
-    },
-    {
-      "name": "AI21 Labs",
-      "quota": "新用户赠送 $10 免费积分（无需信用卡，支持 Jamba Mini、Jamba Large 等长上下文模型）",
-      "cycle": "一次性注册积分（3个月有效）",
-      "url": "https://studio.ai21.com",
-      "develop": {
-        "document_url": "https://docs.ai21.com",
-        "base_url": "https://api.ai21.com/v1",
-        "models": [
-          "jamba-mini",
-          "jamba-large",
-          "jamba-1.5-large"
-        ]
-      }
-    },
-    {
-      "name": "Novita AI",
-      "quota": "新用户赠送 $5 免费积分（支持 DeepSeek、Qwen、Llama 等 100+ 开源模型推理及图像/视频生成）",
-      "cycle": "一次性注册积分（30天有效）",
-      "url": "https://novita.ai",
-      "develop": {
-        "document_url": "https://novita.ai/docs",
-        "base_url": "https://api.novita.ai/v3",
-        "models": [
-          "deepseek-ai/DeepSeek-R1",
-          "Qwen/Qwen2.5-72B-Instruct",
-          "meta-llama/Llama-3.3-70B-Instruct"
-        ]
-      }
-    },
-    {
-      "name": "Scaleway Generative APIs",
-      "quota": "新用户赠送 100万 token（支持 Qwen3-235B、Gemma 3-27B、Devstral、Voxtral 等多语言模型，欧盟合规托管）",
-      "cycle": "一次性注册额度（用完为止）",
-      "url": "https://www.scaleway.com/en/generative-apis/",
-      "develop": {
-        "document_url": "https://www.scaleway.com/en/generative-apis/",
-        "base_url": "https://api.scaleway.com/v1",
-        "models": [
-          "qwen3-235b-a22b",
-          "gemma-3-27b-it",
-          "devstral-small-2506"
-        ]
-      }
-    },
-    {
-      "name": "Ollama Cloud",
-      "quota": "免费层提供轻度云端推理使用量（不限 token 数，按 GPU 时间计量）；支持 4万+ 社区模型；最多同时运行 1 个云模型；本地运行完全无限制免费",
-      "cycle": "永久免费层（每5小时/每7天使用量重置；本地运行无限制）",
-      "url": "https://ollama.com",
-      "develop": {
-        "document_url": "https://github.com/ollama/ollama/blob/main/docs/api.md",
-        "base_url": "https://api.ollama.com",
-        "models": [
-          "llama3.3",
-          "qwen2.5",
-          "deepseek-r1",
-          "mistral",
-          "gemma2"
-        ]
-      }
-    },
-
-    {
-      "name": "Baseten",
-      "quota": "新用户赠送 $30 免费积分（可部署任意 HuggingFace 模型，支持 GPU 推理、Serverless 函数）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://www.baseten.co",
-      "develop": {
-        "document_url": "https://docs.baseten.co",
-        "base_url": "https://api.baseten.co/v1",
-        "models": []
-      }
-    },
-    {
-      "name": "Upstage",
-      "quota": "新用户赠送 $10 免费积分（支持 Solar Pro、Solar Mini 等长上下文模型；Solar Pro 3 输入 $0.15/百万token，输出 $0.6/百万token）",
-      "cycle": "一次性注册积分（3个月有效）",
-      "url": "https://www.upstage.ai",
-      "develop": {
-        "document_url": "https://docs.upstage.ai",
-        "base_url": "https://api.upstage.ai/v1",
-        "models": [
-          "solar-pro-3",
-          "solar-pro-2",
-          "solar-mini",
-          "upstage-embed"
-        ]
-      }
-    },
-    {
-      "name": "fal.ai",
-      "quota": "新用户赠送 $5 免费积分（支持 1000+ 生产就绪的图像、视频、音频、3D 生成模型）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://fal.ai",
-      "develop": {
-        "document_url": "https://docs.fal.ai",
-        "base_url": "https://api.fal.ai/v1",
-        "models": [
-          "fal-ai/flux/dev",
-          "fal-ai/flux/schnell",
-          "fal-ai/kling-video/v1"
-        ]
-      }
-    },
-    {
-      "name": "NLP Cloud",
-      "quota": "新用户赠送 $15 免费积分（支持多种 NLP 模型，需手机验证）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://nlpcloud.com",
-      "develop": {
-        "document_url": "https://docs.nlpcloud.com",
-        "base_url": "https://api.nlpcloud.io/v1",
-        "models": [
-          "finetuned-llama-3-1-70b",
-          "finetuned-llama-3-1-8b"
         ]
       }
     },
@@ -590,43 +540,76 @@
       }
     },
     {
-      "name": "国家超算互联网（OpenClaw）",
-      "quota": "【活动已过期】原活动：全体注册用户免费发放 1000万 Tokens（2周有效）；续购价格 0.1元/百万 Tokens（约为市场均价的 1/100），支持 DeepSeek-R1、Qwen3、Llama 等开源大模型",
-      "cycle": "限时2周活动（已于2026年3月25日结束）；当前为按量付费模式",
-      "url": "https://www.scnet.cn",
+      "name": "Jina AI",
+      "quota": "新用户注册赠送 1000万 token（支持 Reader API、Embedding、Reranker 等搜索基础服务；Reader API 无密钥可免费使用 20 RPM，有密钥后提升至 500 RPM）",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://jina.ai",
       "develop": {
-        "document_url": "https://www.scnet.cn/ac/openapi/doc/2.0/api/tutorials.html",
-        "base_url": "https://api.scnet.cn/api/llm/v1",
+        "document_url": "https://jina.ai/reader/",
+        "base_url": "https://api.jina.ai/v1",
         "models": [
-          "Qwen3-235B-A22B-Thinking-2507",
-          "MiniMax-M2.5",
-          "MiniMax-M2",
-          "DeepSeek-V3.2",
-          "Qwen3-30B-A3B-Instruct-2507",
-          "DeepSeek-R1-0528",
-          "Qwen3-235B-A22B",
-          "Qwen3-30B-A3B",
-          "QwQ-32B",
-          "DeepSeek-R1-Distill-Llama-70B",
-          "DeepSeek-R1-Distill-Qwen-32B",
-          "DeepSeek-R1-Distill-Qwen-7B",
-          "Qwen3-Embedding-8B"
+          "jina-embeddings-v3",
+          "jina-reranker-v2",
+          "jina-reader"
         ]
       }
     },
     {
-      "name": "Vercel AI Gateway",
-      "quota": "每月赠送 $5 AI Gateway Credits（可路由至 OpenAI、Anthropic、Google 等多家主流 AI 供应商；支持自定义 API Provider；手续费 3%）",
-      "cycle": "每月重置（永久免费层，购买额外积分后免费额度失效）",
-      "url": "https://vercel.com/docs/ai-gateway",
+      "name": "Kimi（月之暗面）",
+      "quota": "新用户注册赠送约 800万 token（Tier0：1并发、3 RPM、500k TPM，可用于 kimi-k2.5、K2 等模型；另有充值返券活动）",
+      "cycle": "一次性注册额度（永久有效，用完需充值）",
+      "url": "https://platform.moonshot.cn",
       "develop": {
-        "document_url": "https://vercel.com/docs/ai-gateway",
-        "base_url": "https://gateway.vercel.ai",
+        "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
+        "base_url": "https://api.moonshot.cn/v1",
         "models": [
-          "openai/gpt-4o",
-          "anthropic/claude-3.5-sonnet",
-          "google/gemini-1.5-pro"
+          "kimi-k2.5",
+          "kimi-k2.5-flash",
+          "kimi-k2",
+          "kimi-k2-fc"
         ]
+      }
+    },
+    {
+      "name": "Ling Studio（蚂蚁百灵）",
+      "quota": "每日 50万 token（支持 Ling-1T、Ring-1T 推理模型及 Ming 多模态模型）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://ling.tbox.cn",
+      "develop": {
+        "document_url": "https://ling.tbox.cn/doc",
+        "base_url": "https://openapi.aliyuncs.com/api/v3",
+        "models": [
+          "ling-1t",
+          "ring-1t",
+          "ming-m2"
+        ]
+      }
+    },
+    {
+      "name": "MiniMax 开放平台",
+      "quota": "新用户注册赠送免费 token（具体额度以注册时平台活动为准，支持 MiniMax M2.5、语音合成等多模态）",
+      "cycle": "一次性注册赠送（约30天有效）",
+      "url": "https://platform.minimaxi.com",
+      "develop": {
+        "document_url": "https://platform.minimaxi.com",
+        "base_url": "https://api.minimax.chat/v1",
+        "models": [
+          "MiniMax-M2.5",
+          "MiniMax-M2",
+          "abab6.5s-chat",
+          "abab6.5g-chat"
+        ]
+      }
+    },
+    {
+      "name": "Modal",
+      "quota": "Starter 计划每月赠送 $30 免费计算积分（支持 GPU 推理、Serverless 函数、定时任务；初创公司可申请至 $25,000 积分）",
+      "cycle": "每月重置（永久免费层，Starter 计划 $0/月）",
+      "url": "https://modal.com",
+      "develop": {
+        "document_url": "https://modal.com/docs",
+        "base_url": "https://api.modal.com/v1",
+        "models": []
       }
     },
     {
@@ -645,46 +628,112 @@
       }
     },
     {
-      "name": "Modal",
-      "quota": "Starter 计划每月赠送 $30 免费计算积分（支持 GPU 推理、Serverless 函数、定时任务；初创公司可申请至 $25,000 积分）",
-      "cycle": "每月重置（永久免费层，Starter 计划 $0/月）",
-      "url": "https://modal.com",
+      "name": "NLP Cloud",
+      "quota": "新用户赠送 $15 免费积分（支持多种 NLP 模型，需手机验证）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://nlpcloud.com",
       "develop": {
-        "document_url": "https://modal.com/docs",
-        "base_url": "https://api.modal.com/v1",
-        "models": []
-      }
-    },
-    {
-      "name": "零一万物 (01.AI)",
-      "quota": "新用户注册赠送 100元 API 额度（可用于 Yi-Lightning、Yi-1.5 等全系 Yi 模型）",
-      "cycle": "一次性注册赠送（用完为止）",
-      "url": "https://platform.lingyiwanwu.com",
-      "develop": {
-        "document_url": "https://platform.lingyiwanwu.com/docs",
-        "base_url": "https://api.lingyiwanwu.com/v1",
+        "document_url": "https://docs.nlpcloud.com",
+        "base_url": "https://api.nlpcloud.io/v1",
         "models": [
-          "yi-lightning",
-          "yi-1.5-34b-chat",
-          "yi-1.5-9b-chat",
-          "yi-1.5-6b-chat",
-          "yi-medium",
-          "yi-spark"
+          "finetuned-llama-3-1-70b",
+          "finetuned-llama-3-1-8b"
         ]
       }
     },
     {
-      "name": "百川智能 (Baichuan)",
-      "quota": "海纳百川计划：免费使用 Baichuan-M3Plus API（需申请体验）",
-      "cycle": "申请通过后有效（具体额度以平台审批为准）",
-      "url": "https://platform.baichuan-ai.com",
+      "name": "Novita AI",
+      "quota": "新用户赠送 $5 免费积分（支持 DeepSeek、Qwen、Llama 等 100+ 开源模型推理及图像/视频生成）",
+      "cycle": "一次性注册积分（30天有效）",
+      "url": "https://novita.ai",
       "develop": {
-        "document_url": "https://platform.baichuan-ai.com/docs/api",
-        "base_url": "https://api.baichuan-ai.com/v1",
+        "document_url": "https://novita.ai/docs",
+        "base_url": "https://api.novita.ai/v3",
         "models": [
-          "Baichuan-M3Plus",
-          "Baichuan2-Turbo",
-          "Baichuan2-53B"
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "meta-llama/Llama-3.3-70B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "NVIDIA NIM API",
+      "quota": "新用户注册赠送 1000 API 积分（普通邮箱1000次，企业邮箱5000次免费推理；支持200+模型含 Kimi K2.5、GLM-5、DeepSeek R1、Llama 4等；额外申请可获4000积分）；速率限制 40 RPM",
+      "cycle": "一次性注册积分（12个月有效）",
+      "url": "https://build.nvidia.com",
+      "develop": {
+        "document_url": "https://docs.nvidia.com/nim",
+        "base_url": "https://integrate.api.nvidia.com/v1",
+        "models": [
+          "nvidia/llama-3.3-nemotron-70b-instruct",
+          "nvidia/llama-3.1-nemotron-70b-instruct",
+          "nvidia/mistral-nemo-12b-instruct",
+          "deepseek-ai/deepseek-r1",
+          "meta/llama-4-maverick-17b-128e-instruct"
+        ]
+      }
+    },
+    {
+      "name": "Ollama Cloud",
+      "quota": "免费层提供轻度云端推理使用量（不限 token 数，按 GPU 时间计量）；支持 4万+ 社区模型；最多同时运行 1 个云模型；本地运行完全无限制免费",
+      "cycle": "永久免费层（每5小时/每7天使用量重置；本地运行无限制）",
+      "url": "https://ollama.com",
+      "develop": {
+        "document_url": "https://github.com/ollama/ollama/blob/main/docs/api.md",
+        "base_url": "https://api.ollama.com",
+        "models": [
+          "llama3.3",
+          "qwen2.5",
+          "deepseek-r1",
+          "mistral",
+          "gemma2"
+        ]
+      }
+    },
+    {
+      "name": "OVHcloud AI Endpoints",
+      "quota": "新用户注册首个公有云项目赠送 $200 免费信用额度（可用于 AI Endpoints API；支持 Llama 4、Qwen3、DeepSeek-R1、Mistral 等 40+ 模型；匿名用户可直接通过 Playground 免费测试所有模型；需绑定支付方式）",
+      "cycle": "一次性注册额度（激活后30天有效；每账号仅限一次）",
+      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
+      "develop": {
+        "document_url": "https://help.ovhcloud.com/csm/en-documentation-public-cloud-ai-and-machine-learning-ai-endpoints-guides",
+        "base_url": "https://llm.api.cloud.ovh.net/v1",
+        "models": [
+          "Meta-Llama-3.3-70B-Instruct",
+          "Qwen/Qwen3-32B",
+          "deepseek-ai/DeepSeek-R1",
+          "mistralai/Mistral-7B-Instruct-v0.3",
+          "mistralai/Codestral-22B-v0.1"
+        ]
+      }
+    },
+    {
+      "name": "SambaNova Cloud",
+      "quota": "新用户赠送 $5 积分（Llama 3.3 8B模型约等于 3000万+ token，支持 Llama 3.3 70B/8B、Qwen3、DeepSeek-R1 等开源模型，基于自研RDU芯片超高速推理；社区活跃可申请额外积分）",
+      "cycle": "一次性注册积分（30天有效，无永久免费层）",
+      "url": "https://cloud.sambanova.ai",
+      "develop": {
+        "document_url": "https://cloud.sambanova.ai/docs",
+        "base_url": "https://api.sambanova.ai/v1",
+        "models": [
+          "Meta-Llama-3.3-70B-Instruct",
+          "Qwen2.5-72B-Instruct",
+          "DeepSeek-R2"
+        ]
+      }
+    },
+    {
+      "name": "Scaleway Generative APIs",
+      "quota": "新用户赠送 100万 token（支持 Qwen3-235B、Gemma 3-27B、Devstral、Voxtral 等多语言模型，欧盟合规托管）",
+      "cycle": "一次性注册额度（用完为止）",
+      "url": "https://www.scaleway.com/en/generative-apis/",
+      "develop": {
+        "document_url": "https://www.scaleway.com/en/generative-apis/",
+        "base_url": "https://api.scaleway.com/v1",
+        "models": [
+          "qwen3-235b-a22b",
+          "gemma-3-27b-it",
+          "devstral-small-2506"
         ]
       }
     },
@@ -707,112 +756,139 @@
       }
     },
     {
-      "name": "Chutes.ai",
-      "quota": "200 次 API 调用/天（基于 Bittensor 去中心化网络，支持 GPT 类大模型、代码生成等）",
-      "cycle": "每日重置（永久免费层）",
-      "url": "https://chutes.ai",
+      "name": "Upstage",
+      "quota": "新用户赠送 $10 免费积分（支持 Solar Pro、Solar Mini 等长上下文模型；Solar Pro 3 输入 $0.15/百万token，输出 $0.6/百万token）",
+      "cycle": "一次性注册积分（3个月有效）",
+      "url": "https://www.upstage.ai",
       "develop": {
-        "document_url": "https://chutes.ai/docs",
-        "base_url": "https://api.chutes.ai/v1",
+        "document_url": "https://docs.upstage.ai",
+        "base_url": "https://api.upstage.ai/v1",
         "models": [
-          "gpt-3.5-turbo",
-          "deepseek-r1",
-          "llama-3.3-70b-instruct"
+          "solar-pro-3",
+          "solar-pro-2",
+          "solar-mini",
+          "upstage-embed"
         ]
       }
     },
     {
-      "name": "Cerebrium",
-      "quota": "新用户赠送 $30 免费积分（Serverless GPU 推理平台，支持部署任意 HuggingFace 模型，冷启动低于5秒）",
-      "cycle": "一次性注册积分（需联系销售获取，无信用卡要求）",
-      "url": "https://www.cerebrium.ai",
+      "name": "Vercel AI Gateway",
+      "quota": "每月赠送 $5 AI Gateway Credits（可路由至 OpenAI、Anthropic、Google 等多家主流 AI 供应商；支持自定义 API Provider；手续费 3%）",
+      "cycle": "每月重置（永久免费层，购买额外积分后免费额度失效）",
+      "url": "https://vercel.com/docs/ai-gateway",
       "develop": {
-        "document_url": "https://docs.cerebrium.ai",
-        "base_url": "https://api.cerebrium.ai/v1",
+        "document_url": "https://vercel.com/docs/ai-gateway",
+        "base_url": "https://gateway.vercel.ai",
+        "models": [
+          "openai/gpt-4o",
+          "anthropic/claude-3.5-sonnet",
+          "google/gemini-1.5-pro"
+        ]
+      }
+    },
+    {
+      "name": "xAI (Grok)",
+      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）",
+      "cycle": "注册$25一次性；数据共享$150每月重置（永久，需满足$5消费门槛后激活）",
+      "url": "https://console.x.ai",
+      "develop": {
+        "document_url": "https://docs.x.ai/docs/data-sharing",
+        "base_url": "https://api.x.ai/v1",
+        "models": [
+          "grok-4",
+          "grok-4-mini",
+          "grok-3",
+          "grok-3-mini",
+          "grok-2",
+          "grok-2-vision-1212"
+        ]
+      }
+    },
+    {
+      "name": "Together AI",
+      "quota": "新用户注册赠送最高 $100 免费积分（需充值$5激活）；支持 200+ 开源模型（Llama 4、DeepSeek、Qwen等）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://www.together.ai",
+      "develop": {
+        "document_url": "https://docs.together.ai",
+        "base_url": "https://api.together.xyz/v1",
+        "models": [
+          "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+          "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "deepseek-ai/DeepSeek-V3",
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen2.5-72B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "Friendli AI",
+      "quota": "迁移优惠活动：最高可获得 5万 推理积分；支持 GLM-5、MiniMax M2.5 等主流大模型",
+      "cycle": "限时推广活动（需申请获取）",
+      "url": "https://friendli.ai",
+      "develop": {
+        "document_url": "https://friendli.ai/docs",
+        "base_url": "https://api.friendli.ai/serverless/v1",
+        "models": [
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "meta-llama/Llama-3.1-8B-Instruct",
+          "Qwen/Qwen3-235B-A22B"
+        ]
+      }
+    },
+    {
+      "name": "Predibase",
+      "quota": "提供免费试用额度（具体额度需注册后查看）；支持开源大模型微调和部署",
+      "cycle": "试用额度（具体以平台为准）",
+      "url": "https://predibase.com",
+      "develop": {
+        "document_url": "https://docs.predibase.com",
+        "base_url": "https://api.predibase.com/v1",
+        "models": [
+          "llama-3.1-8b-instruct",
+          "llama-3.3-70b-instruct",
+          "mistral-7b-instruct"
+        ]
+      }
+    },
+    {
+      "name": "Anyscale",
+      "quota": "新用户注册赠送 $100 免费试用额度；基于 Ray 的 AI 计算平台",
+      "cycle": "一次性试用额度（用完为止）",
+      "url": "https://www.anyscale.com",
+      "develop": {
+        "document_url": "https://docs.anyscale.com",
+        "base_url": "https://api.anyscale.com/v1",
         "models": []
       }
     },
     {
-      "name": "AtomGit AI（开放原子）",
-      "quota": "新用户注册赠送 1000万 Tokens（永久有效，QPS=2，每日最高1000次调用）；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型",
-      "cycle": "Token额度永久有效；算力额度每月重置",
-      "url": "https://ai.atomgit.com",
+      "name": "Replicate",
+      "quota": "提供免费起始额度（具体额度以官网最新公告为准）；支持 4万+ 社区模型",
+      "cycle": "免费起始额度（用完为止）",
+      "url": "https://replicate.com",
       "develop": {
-        "document_url": "https://ai.atomgit.com/dashboard/api-key",
-        "base_url": "https://api-ai.gitcode.com/v1",
+        "document_url": "https://replicate.com/docs",
+        "base_url": "https://api.replicate.com/v1",
         "models": [
-          "zai-org/GLM-5",
-          "Qwen/Qwen3.5-397B-A17B",
-          "Qwen/Qwen3.5-122B-A10B"
+          "black-forest-labs/flux-dev",
+          "black-forest-labs/flux-schnell",
+          "meta/meta-llama-3-70b-instruct"
         ]
       }
     },
     {
-      "name": "Jina AI",
-      "quota": "新用户注册赠送 1000万 token（支持 Reader API、Embedding、Reranker 等搜索基础服务；Reader API 无密钥可免费使用 20 RPM，有密钥后提升至 500 RPM）",
+      "name": "SOPHNET",
+      "quota": "新用户注册赠送 1000万 Tokens；支持 DeepSeek R1 满血版、QwQ-32B、DeepSeek V3 等主流模型",
       "cycle": "一次性注册赠送（用完为止）",
-      "url": "https://jina.ai",
+      "url": "https://www.sophnet.com",
       "develop": {
-        "document_url": "https://jina.ai/reader/",
-        "base_url": "https://api.jina.ai/v1",
+        "document_url": "https://www.sophnet.com",
+        "base_url": "https://api.sophnet.com/v1",
         "models": [
-          "jina-embeddings-v3",
-          "jina-reranker-v2",
-          "jina-reader"
-        ]
-      }
-    },
-    {
-      "name": "Azure OpenAI",
-      "quota": "新用户注册赠送 $200 免费信用额度（可用于 GPT-4o、GPT-4、o1、DALL-E、Whisper 等全系列服务）",
-      "cycle": "一次性注册额度（30天有效）；部分选定服务可享受12个月免费层",
-      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
-      "develop": {
-        "document_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
-        "base_url": "https://{your-resource-name}.openai.azure.com",
-        "models": [
-          "gpt-4o",
-          "gpt-4",
-          "o1",
-          "o1-mini",
-          "o3-mini",
-          "dall-e-3",
-          "whisper"
-        ]
-      }
-    },
-    {
-      "name": "心流（iFlow）",
-      "quota": "目前处于不限量免费测试期（支持 Kimi K2、Qwen3 Coder、GLM-4.5、DeepSeek-V3 等主流国产大模型；OpenAI 兼容 API；限制1个并发请求）",
-      "cycle": "免费测试期（不限量，并发限1；后续政策以官方公告为准）",
-      "url": "https://platform.iflow.cn",
-      "develop": {
-        "document_url": "https://platform.iflow.cn",
-        "base_url": "https://apis.iflow.cn/v1",
-        "models": [
-          "kimi-k2",
-          "kimi-k2-instruct",
-          "qwen3-coder",
-          "Qwen/Qwen3-235B-A22B",
-          "glm-4.5",
+          "deepseek-r1",
+          "qwq-32b",
           "deepseek-v3"
-        ]
-      }
-    },
-    {
-      "name": "OVHcloud AI Endpoints",
-      "quota": "新用户注册首个公有云项目赠送 $200 免费信用额度（可用于 AI Endpoints API；支持 Llama 4、Qwen3、DeepSeek-R1、Mistral 等 40+ 模型；匿名用户可直接通过 Playground 免费测试所有模型；需绑定支付方式）",
-      "cycle": "一次性注册额度（激活后30天有效；每账号仅限一次）",
-      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
-      "develop": {
-        "document_url": "https://help.ovhcloud.com/csm/en-documentation-public-cloud-ai-and-machine-learning-ai-endpoints-guides",
-        "base_url": "https://llm.api.cloud.ovh.net/v1",
-        "models": [
-          "Meta-Llama-3.3-70B-Instruct",
-          "Qwen/Qwen3-32B",
-          "deepseek-ai/DeepSeek-R1",
-          "mistralai/Mistral-7B-Instruct-v0.3",
-          "mistralai/Codestral-22B-v0.1"
         ]
       }
     }
