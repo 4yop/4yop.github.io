@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-28 13:16",
+  "updatedAt": "2026-03-28 13:53",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -97,8 +97,8 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户赠送 2000万 token（14元代金券等值，支持DeepSeek、Llama、Qwen等主流开源模型）",
-      "cycle": "永久有效",
+      "quota": "新用户注册即领 2000万 token（永久有效）；2026年3月新手任务可额外领取 1000万 token，累计最高 3000万 token（支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式）",
+      "cycle": "2000万永久有效；新手任务1000万3月活动期间有效",
       "url": "https://siliconflow.cn",
       "develop": {
         "document_url": "https://docs.siliconflow.cn/",
@@ -221,7 +221,7 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送 100万 token（可用于 deepseek-chat / DeepSeek-V3.2 及 deepseek-reasoner / DeepSeek-V3.2-Thinking 模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
+      "quota": "新用户注册赠送 100万~500万 token（不同活动时期额度不同，可用于 deepseek-chat / DeepSeek-V3.2 及 deepseek-reasoner 模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
       "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
@@ -709,16 +709,18 @@
     },
     {
       "name": "SambaNova Cloud",
-      "quota": "新用户赠送 $5 积分（Llama 3.3 8B模型约等于 3000万+ token，支持 Llama 3.3 70B/8B、Qwen3、DeepSeek-R1 等开源模型，基于自研RDU芯片超高速推理；社区活跃可申请额外积分）",
-      "cycle": "一次性注册积分（30天有效，无永久免费层）",
+      "quota": "永久免费层：10-30 RPM（Llama 3.3 70B/8B、Qwen3、DeepSeek-R1等开源模型，基于自研RDU芯片超高速推理）；另新用户赠送 $5 积分（30天有效，约等于 3000万+ token，社区活跃可申请额外积分）",
+      "cycle": "永久免费层（速率限制10-30 RPM）；$5注册积分30天有效",
       "url": "https://cloud.sambanova.ai",
       "develop": {
         "document_url": "https://cloud.sambanova.ai/docs",
         "base_url": "https://api.sambanova.ai/v1",
         "models": [
           "Meta-Llama-3.3-70B-Instruct",
-          "Qwen2.5-72B-Instruct",
-          "DeepSeek-R2"
+          "Meta-Llama-4-Scout-17B-16E-Instruct",
+          "Qwen3-235B-A22B",
+          "DeepSeek-R2",
+          "gpt-oss-120b"
         ]
       }
     },
@@ -837,21 +839,6 @@
       }
     },
     {
-      "name": "Predibase",
-      "quota": "提供免费试用额度（具体额度需注册后查看）；支持开源大模型微调和部署",
-      "cycle": "试用额度（具体以平台为准）",
-      "url": "https://predibase.com",
-      "develop": {
-        "document_url": "https://docs.predibase.com",
-        "base_url": "https://api.predibase.com/v1",
-        "models": [
-          "llama-3.1-8b-instruct",
-          "llama-3.3-70b-instruct",
-          "mistral-7b-instruct"
-        ]
-      }
-    },
-    {
       "name": "Anyscale",
       "quota": "新用户注册赠送 $100 免费试用额度；基于 Ray 的 AI 计算平台",
       "cycle": "一次性试用额度（用完为止）",
@@ -916,6 +903,59 @@
         "models": [
           "MiniMax-M2.7",
           "GLM-5-Turbo"
+        ]
+      }
+    },
+    {
+      "name": "天翼云息壤",
+      "quota": "新老用户免费体验 2500万 Tokens（限时两周，2026年2月15日-12月31日活动期间可领取）；支持中国电信自研星辰大模型、豆包、通义千问、GLM-5、DeepSeek-R1/V3.1/V3.2 等模型",
+      "cycle": "限时两周（2026年活动期间：2026-02-15至2026-12-31，领取后14天内有效）",
+      "url": "https://www.ctyun.cn/products/maas",
+      "develop": {
+        "document_url": "https://www.ctyun.cn/document/10541165/10944702",
+        "base_url": "https://wishub-x1.ctyun.cn/v1",
+        "models": [
+          "deepseek-r1",
+          "deepseek-v3",
+          "Qwen3-235B-A22B",
+          "Qwen3-32B",
+          "GLM-5"
+        ]
+      }
+    },
+    {
+      "name": "移动云一站式模型服务平台",
+      "quota": "新用户免费体验 2500万 Tokens（限时30天，2026年2月15日-12月31日活动期间可领取）；支持政企类和互联网类用户；支持DeepSeek、MiniMax-M2.5等主流模型",
+      "cycle": "限时30天（2026年活动期间：2026-02-15至2026-12-31，领取后30天内有效）",
+      "url": "https://ecloud.10086.cn/portal/act/AI",
+      "develop": {
+        "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+        "base_url": "https://ecloud.10086.cn/api/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1",
+          "MiniMax-M2.5",
+          "GLM-5"
+        ]
+      }
+    },
+    {
+      "name": "ChatAnywhere",
+      "quota": "免费API Key：GPT-4o-mini/GPT-3.5-turbo 200次/天，DeepSeek-R1/V3 30次/天，GPT-5系列5次/天（每个IP+Key组合计算；需GitHub登录申请；仅供个人非商业用途）",
+      "cycle": "每日重置（永久免费层，限非商业用途）",
+      "url": "https://api.chatanywhere.tech",
+      "develop": {
+        "document_url": "https://chatanywhere.apifox.cn/",
+        "base_url": "https://api.chatanywhere.tech/v1",
+        "models": [
+          "gpt-4o-mini",
+          "gpt-4o",
+          "gpt-3.5-turbo",
+          "deepseek-r1",
+          "deepseek-v3",
+          "gpt-5.2",
+          "gpt-5.1",
+          "gpt-5"
         ]
       }
     },
