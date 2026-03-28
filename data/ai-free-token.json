@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-28 00:30",
+  "updatedAt": "2026-03-28 13:16",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -889,6 +889,50 @@
           "deepseek-r1",
           "qwq-32b",
           "deepseek-v3"
+        ]
+      }
+    },
+    {
+      "name": "超算互联网 (SCNET)",
+      "quota": "新用户首次登录赠送 100万 tokens；支持 Qwen3-30B-A3B 等国产大模型",
+      "cycle": "一次性注册赠送（1个月有效）",
+      "url": "https://www.scnet.cn",
+      "develop": {
+        "document_url": "https://www.scnet.cn",
+        "base_url": "https://api.scnet.cn/v1",
+        "models": [
+          "Qwen3-30B-A3B"
+        ]
+      }
+    },
+    {
+      "name": "AI Ping",
+      "quota": "注册即送 1元，完成实名认证再送 5元，共 6元代金券；支持 MiniMax-M2.7、GLM-5-Turbo 等多模型",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://aiping.cn",
+      "develop": {
+        "document_url": "https://aiping.cn",
+        "base_url": "https://api.aiping.cn/v1",
+        "models": [
+          "MiniMax-M2.7",
+          "GLM-5-Turbo"
+        ]
+      }
+    },
+    {
+      "name": "ZenMux",
+      "quota": "Agens 1.5 Pro 免费使用；企业级大模型聚合平台，一站式访问 OpenAI、Anthropic、Google、DeepSeek 等主流模型",
+      "cycle": "永久免费（Agens 1.5 Pro）",
+      "url": "https://zenmux.ai",
+      "develop": {
+        "document_url": "https://zenmux.ai/docs",
+        "base_url": "https://api.zenmux.ai/v1",
+        "models": [
+          "Agens-1.5-Pro",
+          "openai/gpt-4o",
+          "anthropic/claude-3.5-sonnet",
+          "google/gemini-2.5-pro",
+          "deepseek-ai/DeepSeek-V3"
         ]
       }
     }
