@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-03-28 13:53",
+  "updatedAt": "2026-03-29 09:20",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 2.5 Flash: 15 RPM / 100万 TPM；Gemini 2.5 Pro: 5 RPM / 25万 TPM；Gemini 3 Flash 免费层可用",
+      "quota": "Gemini 2.5 Flash: 10 RPM / 25万 TPM / 250 RPD；Gemini 2.5 Flash-Lite: 15 RPM / 25万 TPM / 1000 RPD；Gemini 2.5 Pro: 5 RPM / 25万 TPM / 100 RPD（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
-        "document_url": "https://ai.google.dev/docs",
+        "document_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
         "base_url": "https://generativelanguage.googleapis.com",
         "models": [
-          "gemini-3-flash",
           "gemini-2.5-flash",
+          "gemini-2.5-flash-lite",
           "gemini-2.5-pro",
           "gemini-2.0-flash",
           "gemini-1.5-flash",
@@ -250,16 +250,17 @@
     },
     {
       "name": "百川智能 (Baichuan)",
-      "quota": "海纳百川计划：免费使用 Baichuan-M3Plus API（需申请体验）",
-      "cycle": "申请通过后有效（具体额度以平台审批为准）",
+      "quota": "新用户注册赠送 80元 API 额度（可用于 Baichuan4 系列模型）；另有【海纳百川计划】：申请通过可免费使用 Baichuan-M3Plus API",
+      "cycle": "注册80元一次性（用完为止）；海纳百川计划申请通过后有效",
       "url": "https://platform.baichuan-ai.com",
       "develop": {
         "document_url": "https://platform.baichuan-ai.com/docs/api",
         "base_url": "https://api.baichuan-ai.com/v1",
         "models": [
+          "Baichuan4-Turbo",
+          "Baichuan4",
           "Baichuan-M3Plus",
-          "Baichuan2-Turbo",
-          "Baichuan2-53B"
+          "Baichuan2-Turbo"
         ]
       }
     },
@@ -973,6 +974,42 @@
           "anthropic/claude-3.5-sonnet",
           "google/gemini-2.5-pro",
           "deepseek-ai/DeepSeek-V3"
+        ]
+      }
+    },
+    {
+      "name": "联通云 AI Coding Plan",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（活动至名额结束为止，2026-03-20活动期间有效）",
+      "url": "https://www.cucloud.cn/activity/kickoffseason.html",
+      "develop": {
+        "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
+        "base_url": "https://aigw-gzgy2.cucloud.cn:8443/v1",
+        "models": [
+          "glm-5",
+          "MiniMax-M2.5",
+          "kimi-k2.5",
+          "Qwen3.5-397B-A17B",
+          "Qwen3-235B-A22B",
+          "DeepSeek-V3.1"
+        ]
+      }
+    },
+    {
+      "name": "讯飞星辰MaaS",
+      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景；注意：活动可能随时调整）；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
+      "cycle": "永久免费（Qwen3-Coder-Next，不限量；政策以官方公告为准）",
+      "url": "https://maas.xfyun.cn",
+      "develop": {
+        "document_url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
+        "base_url": "https://maas-coding-api.cn-huabei-1.xf-yun.com/v2",
+        "models": [
+          "Qwen3-Coder-Next",
+          "Qwen3.5-35B-A3B",
+          "GLM-5",
+          "MiniMax-M2.5",
+          "kimi-k2.5",
+          "DeepSeek-V3.2"
         ]
       }
     }

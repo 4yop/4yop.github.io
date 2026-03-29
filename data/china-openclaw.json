@@ -358,5 +358,14 @@
     "deployment": "SaaS云端服务，零部署零安装，通过飞书/钉钉扫码绑定群助手即可使用，1分钟上手",
     "features": "行业首款跨境电商专用AI智能体，基于OpenClaw生态构建，AI选品与市场分析（亚马逊等平台实时数据生成结构化报告），评论挖掘与痛点提炼（自动分析竞品评论识别高频差评关键词），趋势追踪与货源溯源（联动Google Trends/TikTok热榜/1688），AI Listing生成（文案+AI作图），专利核查，自然语言交互无需学习特定指令，面向Amazon/TikTok/Shopify/Temu/Mercado等跨境平台卖家",
     "website": "https://agent.linkfox.com/claw"
+  },
+  {
+    "id": 40,
+    "name": "DinTal Claw（政务龙虾）",
+    "developer": "深圳夸夸菁领科技有限公司 × 复旦大学知识工场实验室（A3实验室）",
+    "releaseTime": "2026.03.06",
+    "deployment": "政务外网本地化私有部署，双击即完成安装（零门槛），普通业务人员可操作，无需专业IT团队介入，支持政务专用安全隔离环境",
+    "features": "国内首个落地政务系统的全自研AI智能体（中国版OpenClaw），底层框架GenericAgent已于2026年1月开源（MIT协议，GitHub: lsdefine/pc-agent-loop），四大核心自研技术：MatrixSafe（3000行极简代码实现物理级透明审计杜绝后门）、EvoLoop（本地化记忆留存支持业务持续优化实现越用越聪明）、OverMind（无需API直接复用登录态实现跨系统无缝流转）、MicroCore（仅9个原子工具大幅降低Token消耗），将民意调研从2周压缩至数分钟，公共场所卫生许可预审从1个工作日缩短至数分钟，已在深圳福田区政务外网全面上岗，省级领导现场点赞，面向政企机构安全合规场景",
+    "website": "https://dintal.ai"
   }
 ]
