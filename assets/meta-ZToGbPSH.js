@@ -1,1 +1,0 @@
-const t="认知训练游戏 - 锻炼大脑能力",e=[{name:"title",content:"认知训练游戏 - 免费在线大脑训练工具"},{name:"description",content:"15个认知训练游戏，包括舒尔特方格、记忆力训练、反应速度测试、色盲检查等，纯前端，无需注册。"}],n={title:t,meta:e};export{n as default,e as meta,t as title};

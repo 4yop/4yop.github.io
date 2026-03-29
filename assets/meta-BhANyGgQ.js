@@ -1,1 +1,0 @@
-const t="心理测评量表 - 专业心理健康评估工具",e=[{name:"title",content:"心理测评量表 - 74个专业心理测评工具免费测"},{name:"description",content:"收录74个权威心理测评量表，包括SCL-90、MBTI、SDS、SAS、BDI等，涵盖人格、抑郁、焦虑、智商、情商等多个维度。纯前端，免费使用，保护隐私。"},{name:"keywords",content:"心理测评,心理健康测试,人格测试,抑郁量表,焦虑量表,MBTI,SCL-90,SDS,SAS,智商测试,情商测试"}],n={title:t,meta:e};export{n as default,e as meta,t as title};

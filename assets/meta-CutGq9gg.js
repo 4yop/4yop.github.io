@@ -1,0 +1,1 @@
+const t="天赋潜能测评",o="评估天赋潜能",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};

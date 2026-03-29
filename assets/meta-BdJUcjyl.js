@@ -1,0 +1,1 @@
+const t="双相情感障碍自评量表(BSQ)",o="评估双相情感障碍",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};
