@@ -367,5 +367,14 @@
     "deployment": "政务外网本地化私有部署，双击即完成安装（零门槛），普通业务人员可操作，无需专业IT团队介入，支持政务专用安全隔离环境",
     "features": "国内首个落地政务系统的全自研AI智能体（中国版OpenClaw），底层框架GenericAgent已于2026年1月开源（MIT协议，GitHub: lsdefine/pc-agent-loop），四大核心自研技术：MatrixSafe（3000行极简代码实现物理级透明审计杜绝后门）、EvoLoop（本地化记忆留存支持业务持续优化实现越用越聪明）、OverMind（无需API直接复用登录态实现跨系统无缝流转）、MicroCore（仅9个原子工具大幅降低Token消耗），将民意调研从2周压缩至数分钟，公共场所卫生许可预审从1个工作日缩短至数分钟，已在深圳福田区政务外网全面上岗，省级领导现场点赞，面向政企机构安全合规场景",
     "website": "https://dintal.ai"
+  },
+  {
+    "id": 41,
+    "name": "Copaw",
+    "developer": "阿里云通义团队",
+    "releaseTime": "2026.02.14",
+    "deployment": "本地+云端双部署",
+    "features": "基于AgentScope生态构建，支持钉钉/飞书/QQ等多平台接入，长期记忆+定时任务+技能扩展，ReMe记忆系统，可端可云架构",
+    "website": "http://copaw.agentscope.io/"
   }
 ]

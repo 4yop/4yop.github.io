@@ -1,6 +1,79 @@
 {
-  "updatedAt": "2026-03-30 09:13",
+  "updatedAt": "2026-03-31 03:45",
   "platforms": [
+    {
+      "name": "星链4SAPI",
+      "quota": "生产级首选，聚合国内外主流AI模型，稳定可靠",
+      "cycle": "永久免费（不同模型有不同免费额度）",
+      "url": "https://api.starlink4s.com",
+      "develop": {
+        "document_url": "https://api.starlink4s.com/docs",
+        "base_url": "https://api.starlink4s.com/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1",
+          "gpt-4o",
+          "claude-3.5-sonnet"
+        ]
+      }
+    },
+    {
+      "name": "147API",
+      "quota": "个人开发首选，支持多模型聚合，友好的API接入体验",
+      "cycle": "永久免费（不同模型有不同免费额度）",
+      "url": "https://147api.com",
+      "develop": {
+        "document_url": "https://147api.com/docs",
+        "base_url": "https://147api.com/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1",
+          "qwen-plus"
+        ]
+      }
+    },
+    {
+      "name": "AIHubMix",
+      "quota": "MVP验证首选，快速验证AI应用原型",
+      "cycle": "永久免费（不同模型有不同免费额度）",
+      "url": "https://aihubmix.com",
+      "develop": {
+        "document_url": "https://aihubmix.com/docs",
+        "base_url": "https://aihubmix.com/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1"
+        ]
+      }
+    },
+    {
+      "name": "灵芽API",
+      "quota": "轻量入门首选，适合新手体验AI开发",
+      "cycle": "永久免费（不同模型有不同免费额度）",
+      "url": "https://lingya-api.com",
+      "develop": {
+        "document_url": "https://lingya-api.com/docs",
+        "base_url": "https://lingya-api.com/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1"
+        ]
+      }
+    },
+    {
+      "name": "幂简集成",
+      "quota": "企业管控首选，支持多模型统一管理和成本控制",
+      "cycle": "永久免费（不同模型有不同免费额度）",
+      "url": "https://mijianapi.com",
+      "develop": {
+        "document_url": "https://mijianapi.com/docs",
+        "base_url": "https://mijianapi.com/v1",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1"
+        ]
+      }
+    },
     {
       "name": "Google AI Studio (Gemini)",
       "quota": "Gemini 2.5 Flash: 10 RPM / 25万 TPM / 250 RPD；Gemini 2.5 Flash-Lite: 15 RPM / 25万 TPM / 1000 RPD；Gemini 2.5 Pro: 5 RPM / 25万 TPM / 100 RPD（免费层不适用于EU/EEA/UK地区）",
@@ -97,9 +170,9 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户注册即领 2000万 token（永久有效，支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式）",
-      "cycle": "2000万永久有效",
-      "url": "https://siliconflow.cn",
+      "quota": "新用户注册即领 2000万 token（永久有效）；2026年3月活动期间，完成新手任务可额外领取1000万Tokens，累计最高3000万！支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k，活动期可提升至QPS=10",
+      "cycle": "2000万永久有效；活动奖励1000万永久有效",
+      "url": "https://cloud.siliconflow.cn/i/mrnv0xyV",
       "develop": {
         "document_url": "https://docs.siliconflow.cn/",
         "base_url": "https://api.siliconflow.cn/v1",
@@ -116,21 +189,26 @@
     },
     {
       "name": "智谱AI",
-      "quota": "新用户赠送 2000万 token；GLM-4-Flash、GLM-4.7-Flash（30B参数，2026年1月发布）、GLM-4.5-Flash 永久免费调用（cost=0）",
-      "cycle": "新用户2000万一次性；Flash系列模型永久免费",
+      "quota": "新用户注册直接赠送 2000万 token 且永久有效；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash、GLM-5-Turbo 永久免费调用（cost=0）；包含600万 Tokens 的 glm-4.6v、1200万 Tokens 的 glm-4.5-air，另有 200万通用 Tokens；基础用户QPS=2，无额外RPM/TPM限制",
+      "cycle": "新用户2000万永久有效；Flash系列模型永久免费",
       "url": "https://bigmodel.cn",
       "develop": {
         "document_url": "https://www.bigmodel.cn/dev",
         "base_url": "https://open.bigmodel.cn/api/paas/v4",
         "models": [
-          "glm-4-flash",
-          "glm-4-7-flash",
+          "glm-5",
+          "glm-5-turbo",
+          "glm-4.7-flash",
+          "glm-4.7-coder",
+          "glm-4.6v",
+          "glm-4.5-air",
           "glm-4.5-flash",
+          "glm-4.5-plus",
+          "glm-4-flash",
+          "glm-4-flash-thinking",
           "glm-4-plus",
           "glm-4",
-          "glm-4-long",
-          "glm-4-flash-thinking",
-          "glm-4.5-plus"
+          "glm-4-long"
         ]
       }
     },
@@ -907,39 +985,7 @@
         ]
       }
     },
-    {
-      "name": "天翼云息壤",
-      "quota": "新老用户免费体验 2500万 Tokens（限时两周，2026年2月15日-12月31日活动期间可领取）；支持中国电信自研星辰大模型、豆包、通义千问、GLM-5、DeepSeek-R1/V3.1/V3.2 等模型",
-      "cycle": "限时两周（2026年活动期间：2026-02-15至2026-12-31，领取后14天内有效）",
-      "url": "https://www.ctyun.cn/products/maas",
-      "develop": {
-        "document_url": "https://www.ctyun.cn/document/10541165/10944702",
-        "base_url": "https://wishub-x1.ctyun.cn/v1",
-        "models": [
-          "deepseek-r1",
-          "deepseek-v3",
-          "Qwen3-235B-A22B",
-          "Qwen3-32B",
-          "GLM-5"
-        ]
-      }
-    },
-    {
-      "name": "移动云一站式模型服务平台",
-      "quota": "新用户免费体验 2500万 Tokens（限时30天，2026年2月15日-12月31日活动期间可领取）；支持政企类和互联网类用户；支持DeepSeek、MiniMax-M2.5等主流模型",
-      "cycle": "限时30天（2026年活动期间：2026-02-15至2026-12-31，领取后30天内有效）",
-      "url": "https://ecloud.10086.cn/portal/act/AI",
-      "develop": {
-        "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
-        "base_url": "https://ecloud.10086.cn/api/v1",
-        "models": [
-          "deepseek-v3",
-          "deepseek-r1",
-          "MiniMax-M2.5",
-          "GLM-5"
-        ]
-      }
-    },
+
     {
       "name": "ChatAnywhere",
       "quota": "免费API Key：GPT-4o-mini/GPT-3.5-turbo 200次/天，DeepSeek-R1/V3 30次/天，GPT-5系列5次/天（每个IP+Key组合计算；需GitHub登录申请；仅供个人非商业用途）",
@@ -979,8 +1025,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
-      "cycle": "限时免费1个月（活动至名额结束为止，2026-03-20活动期间有效）",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得，名额可能已抢完；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（活动至名额结束为止，优惠券已过期，名额有限请咨询官网）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
@@ -992,6 +1038,23 @@
           "Qwen3.5-397B-A17B",
           "Qwen3-235B-A22B",
           "DeepSeek-V3.1"
+        ]
+      }
+    },
+    {
+      "name": "移动云（中国移动）一站式模型托管平台",
+      "quota": "首次使用平台的新用户系统自动提供 2500万 tokens 免费体验额度（活动时间：2026年2月15日-2026年12月31日，30天内有效；每位用户限领取一次）；支持 DeepSeek、GLM-5、MiniMax、Kimi 等多模型",
+      "cycle": "活动有效期至2026年12月31日；领取后30天内有效",
+      "url": "https://ecloud.10086.cn",
+      "develop": {
+        "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+        "base_url": "https://ecloud.10086.cn/api",
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1",
+          "glm-5",
+          "MiniMax-M2.5",
+          "kimi-k2.5"
         ]
       }
     },
@@ -1010,6 +1073,22 @@
           "MiniMax-M2.5",
           "kimi-k2.5",
           "DeepSeek-V3.2"
+        ]
+      }
+    },
+    {
+      "name": "DMXAPI",
+      "quota": "新用户注册赠送 10000 免费 Token；22+ 款免费大模型无限畅用（DeepSeek-V3.2 国内直连、GPT、Claude 等主流模型）；支持合规报销凭证；第三方 API 聚合代理平台",
+      "cycle": "注册赠送一次性（用完为止）",
+      "url": "https://www.dmxapi.com",
+      "develop": {
+        "document_url": "https://www.dmxapi.com",
+        "base_url": "https://api.dmxapi.com/v1",
+        "models": [
+          "deepseek-v3.2",
+          "deepseek-r1",
+          "gpt-4o",
+          "claude-3.5-sonnet"
         ]
       }
     }
