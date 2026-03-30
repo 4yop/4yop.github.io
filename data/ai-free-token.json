@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-29 09:20",
+  "updatedAt": "2026-03-30 09:13",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -97,8 +97,8 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户注册即领 2000万 token（永久有效）；2026年3月新手任务可额外领取 1000万 token，累计最高 3000万 token（支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式）",
-      "cycle": "2000万永久有效；新手任务1000万3月活动期间有效",
+      "quota": "新用户注册即领 2000万 token（永久有效，支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式）",
+      "cycle": "2000万永久有效",
       "url": "https://siliconflow.cn",
       "develop": {
         "document_url": "https://docs.siliconflow.cn/",
