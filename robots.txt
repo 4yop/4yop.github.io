@@ -1,2 +1,24 @@
 User-Agent: *
-Disallow:
+Allow: /
+Disallow: /upload/
+Disallow: /api/
+Disallow: /private/
+
+# 爬虫速率控制
+Crawl-delay: 1
+
+# 站点地图
+Sitemap: https://tools321.com/sitemap.xml
+
+# Google
+User-Agent: Googlebot
+Allow: /
+
+# Bing
+User-Agent: Bingbot
+Allow: /
+
+# 百度
+User-Agent: Baiduspider
+Allow: /
+Crawl-delay: 2
