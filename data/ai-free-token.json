@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31 20:35",
+  "updatedAt": "2026-03-31 21:05",
   "platforms": [
     {
       "name": "星链4SAPI",
@@ -94,12 +94,12 @@
     },
     {
       "name": "阿里云百炼",
-      "quota": "每个模型独立 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等）；新用户限时活动可领超7000万Tokens+4500张图片生成",
-      "cycle": "3个月有效（新用户注册赠送，3个月内用完清零）；限时活动额度以活动规则为准",
+      "quota": "每个模型独立赠送 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等，主账号与RAM子账号共享）；新用户限时活动可领超7000万Tokens+4500张图片生成（以官网当前活动为准）；免费额度仅用于实时推理，不含 Batch/微调",
+      "cycle": "自2025年9月8日起有效期调整为90天（此前开通的用户不受影响）；限时活动额度以活动规则为准",
       "url": "https://bailian.console.aliyun.com/",
       "develop": {
-        "document_url": "https://help.aliyun.com/zh/model-studio/first-api-call-to-qwen",
-        "base_url": "https://dashscope.aliyuncs.com/api/v1",
+        "document_url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
         "models": [
           "qwen-plus",
           "qwen-turbo",
@@ -134,17 +134,19 @@
     },
     {
       "name": "腾讯混元",
-      "quota": "100万 token（通用包，HunYuan-TurboS等）+ 100万 Embedding token；HunYuan-Lite版永久免费；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效）",
-      "cycle": "通用包12个月有效；Lite版永久；小程序成长计划2026年12月31日前有效",
+      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）",
+      "cycle": "通用包1年有效；Lite版永久免费；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
         "document_url": "https://cloud.tencent.com/document/product/1729/101848",
-        "base_url": "https://hunyuan.tencentcloudapi.com",
+        "base_url": "https://api.hunyuan.cloud.tencent.com/v1",
         "models": [
+          "hunyuan-t1",
           "hunyuan-turbo-s",
-          "hunyuan-turbo",
+          "hunyuan-a13b",
           "hunyuan-lite",
-          "hunyuan-vision"
+          "hunyuan-vision",
+          "hunyuan-7b"
         ]
       }
     },
@@ -170,8 +172,8 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户注册即领 2000万 token（永久有效）；2026年3月活动期间，完成新手任务可额外领取1000万Tokens，累计最高3000万！支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k，活动期可提升至QPS=10",
-      "cycle": "2000万永久有效；活动奖励1000万永久有效",
+      "quota": "新用户注册即领 2000万 token（约等于14元代金券，永久有效）；完成实名认证再赠 16元 代金券（真金白银）；支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k",
+      "cycle": "2000万token永久有效；实名认证代金券一次性赠送",
       "url": "https://cloud.siliconflow.cn/i/mrnv0xyV",
       "develop": {
         "document_url": "https://docs.siliconflow.cn/",
@@ -214,7 +216,7 @@
     },
     {
       "name": "Groq",
-      "quota": "Llama 3.3 70B: 1000 RPD（30 RPM，12K TPM）；Kimi K2 Instruct: 1000 RPD（60 RPM）；Qwen3 32B: 1000 RPD；GPT-OSS 120B: 1000 RPD；Llama 3.1 8B: 14400 RPD；多模型全部永久免费层",
+      "quota": "所有模型通用：30 RPM、1000 RPD；Llama 3.1 8B 高达 14,400 RPD；Kimi K2 Instruct: 1000 RPD / 10K TPM / 30万 TPD；Qwen3 32B: 1000 RPD / 6K TPM；gpt-oss-120b/20b: 1000 RPD；基于自研 LPU 芯片超高速推理，多模型全部永久免费层",
       "cycle": "每日重置（永久免费层）",
       "url": "https://console.groq.com",
       "develop": {
@@ -224,10 +226,12 @@
           "llama-3.3-70b-versatile",
           "llama-3.1-70b-versatile",
           "llama-3.1-8b-instant",
-          "llama-4-scout-17b-16e",
-          "kimi-k2-instruct",
-          "qwen3-32b",
-          "gpt-oss-120b",
+          "meta-llama/llama-4-scout-17b-16e-instruct",
+          "moonshotai/kimi-k2-instruct",
+          "moonshotai/kimi-k2-instruct-0905",
+          "qwen/qwen3-32b",
+          "openai/gpt-oss-120b",
+          "openai/gpt-oss-20b",
           "mixtral-8x7b-32768",
           "gemma2-9b-it"
         ]
@@ -235,15 +239,16 @@
     },
     {
       "name": "Mistral AI",
-      "quota": "约 10亿 token/月（免费层，含 Mistral Large / Small / Codestral）",
-      "cycle": "每月重置（永久免费层）",
+      "quota": "Experiment Plan（实验计划）：无需信用卡，仅需手机号验证；速率限制：2 RPM（请求/分钟）、50万 TPM（token/分钟）；每月总额度：10亿 token（约合 $1000+ 等值推理）；可访问全部模型（含 Mistral Large 3、Mistral Medium 3、Mistral Small 3.1、Codestral）",
+      "cycle": "每月重置（永久免费 Experiment Plan）",
       "url": "https://console.mistral.ai",
       "develop": {
         "document_url": "https://docs.mistral.ai/api",
         "base_url": "https://api.mistral.ai/v1",
         "models": [
           "mistral-large-latest",
-          "mistral-small-latest",
+          "mistral-medium-3",
+          "mistral-small-3.1",
           "mistral-nemo",
           "codestral-latest"
         ]
@@ -268,18 +273,18 @@
     },
     {
       "name": "OpenRouter",
-      "quota": "50 次请求/天（DeepSeek R1、Llama 4、Qwen3 等多模型）",
-      "cycle": "每日重置（永久免费层）",
+      "quota": "免费模型（模型ID以 :free 结尾）：每分钟最多 20 次请求；每日限额：未充值账户 50 次/天，充值至少 $10 积分后升至 1000 次/天（DeepSeek R1、Llama 4、Qwen3 等多模型）；账户余额为负时即使免费模型也无法使用",
+      "cycle": "每日重置（永久免费层，免费模型标注 :free；付费可提升限额）",
       "url": "https://openrouter.ai",
       "develop": {
         "document_url": "https://openrouter.ai/docs",
         "base_url": "https://openrouter.ai/api/v1",
         "models": [
-          "deepseek/deepseek-r1",
-          "meta-llama/llama-4-scout",
-          "qwen/qwen3-235b-a22b",
-          "google/gemini-2.5-pro",
-          "anthropic/claude-3.5-sonnet"
+          "deepseek/deepseek-r1:free",
+          "meta-llama/llama-4-scout:free",
+          "qwen/qwen3-235b-a22b:free",
+          "google/gemini-2.5-pro:free",
+          "anthropic/claude-3.5-sonnet:free"
         ]
       }
     },
@@ -299,7 +304,7 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送 100万~500万 token（不同活动时期额度不同，可用于 deepseek-chat / DeepSeek-V3.2 及 deepseek-reasoner 模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
+      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V3.2 / DeepSeek-V4 及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
       "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
@@ -307,7 +312,9 @@
         "base_url": "https://api.deepseek.com/v1",
         "models": [
           "deepseek-chat",
-          "deepseek-reasoner"
+          "deepseek-reasoner",
+          "deepseek-v3",
+          "deepseek-r1"
         ]
       }
     },
@@ -635,8 +642,8 @@
     },
     {
       "name": "Kimi（月之暗面）",
-      "quota": "新用户注册赠送约 800万 token（Tier0：1并发、3 RPM、500k TPM，可用于 kimi-k2.5、K2 等模型；另有充值返券活动）",
-      "cycle": "一次性注册额度（永久有效，用完需充值）",
+      "quota": "新用户注册赠送 15元 API 额度（Free Tier：1并发、3 RPM、32K TPM、150万 TPD；可用于 kimi-k2.5、k2-fc 等模型；充值 50元可升级到 Tier1：50并发、200 RPM；支持工具调用、长上下文 128K；另有充值返券活动）",
+      "cycle": "一次性注册赠送15元（用完需充值）；Free Tier速率限制永久有效",
       "url": "https://platform.moonshot.cn",
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
@@ -887,8 +894,8 @@
     },
     {
       "name": "Together AI",
-      "quota": "新用户注册赠送最高 $100 免费积分（需充值$5激活）；支持 200+ 开源模型（Llama 4、DeepSeek、Qwen等）",
-      "cycle": "一次性注册积分（用完为止）",
+      "quota": "⚠️ 无免费额度（需至少充值 $5 才能使用）；平台允许最高 $100 负债限额（非免费积分，而是先用后付费）；支持 200+ 开源模型（Llama 4、DeepSeek、Qwen等），推理速度快；Build Tier 充值积分永不过期",
+      "cycle": "无免费额度（充值 $5 起）；$100 为月度负债上限（超限后需充值才能继续）",
       "url": "https://www.together.ai",
       "develop": {
         "document_url": "https://docs.together.ai",
