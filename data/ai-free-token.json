@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31 19:05",
+  "updatedAt": "2026-03-31 20:35",
   "platforms": [
     {
       "name": "星链4SAPI",
@@ -1025,8 +1025,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得，名额可能已抢完；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
-      "cycle": "限时免费1个月（活动至名额结束为止，优惠券已过期，名额有限请咨询官网）",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 截至2026-03-31名额可能已全部领完，请咨询官网确认是否仍有余额；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（活动至名额结束为止，⚠️ 名额可能已满，请以官网最新公告为准）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
@@ -1134,6 +1134,46 @@
           "claude-3.5-sonnet",
           "gemini-2.5-pro",
           "deepseek-v3"
+        ]
+      }
+    },
+    {
+      "name": "无问芯穹 (Infini-AI GenStudio)",
+      "quota": "新用户实名注册赠送百亿 Tokens 免费配额（2026-03-31起全量开放注册；支持 DeepSeek-R1 满血版、Qwen3 系列、GLM-4.6、MiniMax-M2 等多模型；兼容 OpenAI 及 Anthropic 协议；基于异构算力底座，推理速度快）",
+      "cycle": "体验期免费（额度以注册时平台公告为准，用完后按量计费）",
+      "url": "https://cloud.infini-ai.com",
+      "develop": {
+        "document_url": "https://docs.infini-ai.com/gen-studio/api/tutorial.html",
+        "base_url": "https://cloud.infini-ai.com/maas/v1",
+        "models": [
+          "deepseek-r1",
+          "deepseek-v3",
+          "qwen3-8b",
+          "qwen3-32b",
+          "glm-4.5",
+          "glm-4.6",
+          "minimax-m2",
+          "megrez-3b-instruct"
+        ]
+      }
+    },
+    {
+      "name": "白山智算",
+      "quota": "新用户注册实名认证送 150元 体验金，体验 API 调用后次日再送 300元，累计最高 450元 体验金（约合 Qwen3 模型 1.125亿 Tokens 调用额度；支持 DeepSeek-R1、Qwen3 系列、Kimi、GLM 等主流模型；兼容 OpenAI API 格式）",
+      "cycle": "一次性注册赠送（额度用完为止；部分永久免费模型：DeepSeek-R1-0528-Qwen3-8B、BAAI/bge-m3 等）",
+      "url": "https://ai.baishan.com",
+      "develop": {
+        "document_url": "https://ai.baishan.com/docs/docs/llm-api.html",
+        "base_url": "https://api.edgefn.net/v1",
+        "models": [
+          "DeepSeek-R1-0528",
+          "DeepSeek-V3",
+          "Qwen3-235B-A22B",
+          "Qwen3-32B-FP8",
+          "Kimi-K2-Instruct",
+          "GLM-4.5",
+          "BAAI/bge-m3",
+          "Qwen3-Coder-480B-A35B-Instruct"
         ]
       }
     }
