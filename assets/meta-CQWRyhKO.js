@@ -1,1 +1,0 @@
-const t="综合心理健康自评量表(SCL-90)",o="评估心理健康状况的综合量表",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};
