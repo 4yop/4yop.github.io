@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31 03:45",
+  "updatedAt": "2026-03-31 19:05",
   "platforms": [
     {
       "name": "星链4SAPI",
@@ -1089,6 +1089,51 @@
           "deepseek-r1",
           "gpt-4o",
           "claude-3.5-sonnet"
+        ]
+      }
+    },
+    {
+      "name": "Arcee AI (Trinity)",
+      "quota": "Trinity Large Preview（400B参数/13B激活）在 OpenRouter 上限时免费；Trinity Mini/Nano 可通过官网 Playground 免费体验；Apache 2.0 开源协议，支持工具调用、长上下文（128K-512K）、结构化输出",
+      "cycle": "OpenRouter免费层永久可用；官网Playground免费体验",
+      "url": "https://www.arcee.ai",
+      "develop": {
+        "document_url": "https://docs.arcee.ai",
+        "base_url": "https://openrouter.ai/api/v1",
+        "models": [
+          "arcee-ai/trinity-large-preview",
+          "arcee-ai/trinity-mini",
+          "arcee-ai/trinity-nano"
+        ]
+      }
+    },
+    {
+      "name": "Free QWQ（分布式算力）",
+      "quota": "完全免费无限制调用 QwQ-32B 模型；基于全国50台家用电脑的 3090/4080/4090 显卡分布式算力；无需注册，直接使用公开 API Key；性能媲美 DeepSeek-R1、o1-mini 等商业模型",
+      "cycle": "永久免费（高峰时段可能排队）",
+      "url": "https://qwq.aigpu.cn",
+      "develop": {
+        "document_url": "https://qwq.aigpu.cn",
+        "base_url": "https://api.suanli.cn/v1",
+        "models": [
+          "free:QwQ-32B",
+          "QwQ-32B"
+        ]
+      }
+    },
+    {
+      "name": "扣子 Coze（字节跳动）",
+      "quota": "每个空间免费额度：QPS=2、QPM=60、QPD=3000；支持创建智能体并远程调用 API；可接入 GPT-5、Claude、Gemini、DeepSeek 等 50+ 大模型；工作流编排、多模态 AI 集成",
+      "cycle": "永久免费层（有速率限制）",
+      "url": "https://www.coze.cn",
+      "develop": {
+        "document_url": "https://www.coze.cn/open/docs/guides",
+        "base_url": "https://api.coze.cn/v1",
+        "models": [
+          "gpt-4o",
+          "claude-3.5-sonnet",
+          "gemini-2.5-pro",
+          "deepseek-v3"
         ]
       }
     }

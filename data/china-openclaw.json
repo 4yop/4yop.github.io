@@ -41,7 +41,7 @@
     "developer": "智谱 AI",
     "releaseTime": "2026.03.10",
     "deployment": "桌面端一键安装",
-    "features": "本地运行，预装 50+ Skills，积分计费（非 Token 计费），支持飞书接入",
+    "features": "本地运行，预装 50+ Skills，积分计费（非 Token 计费），支持飞书/钉钉/企业微信远程指挥",
     "website": "https://autoglm.zhipuai.cn/autoclaw"
   },
   {
@@ -347,7 +347,7 @@
     "developer": "百度智能云（Baidu）",
     "releaseTime": "2026.03.22",
     "deployment": "桌面端一键下载安装（macOS M系列芯片/Windows x86），百度账号登录，本地安全沙箱隔离运行，限时免费每日赠送1000积分",
-    "features": "OpenClaw框架首个企业级满血版桌面AI智能体，核心定位任务执行而非单纯问答，文件智能管理（Word/Excel/PPT/PDF自动分类与格式转换），多源数据分析与可视化一键生成汇报PPT，跨软件跨系统办公自动化（网页填表/信息查询/邮件处理），内置百度搜索Skill支持实时联网搜索，可自定义Skills扩展，本地安全沙箱数据不离本地，敏感操作需二次授权，2026.03.27在中关村论坛年会亮相",
+    "features": "OpenClaw框架首个企业级满血版桌面AI智能体，核心定位任务执行而非单纯问答，文件智能管理（Word/Excel/PDF/PPT自动分类与格式转换），多源数据分析与可视化一键生成汇报PPT，跨软件跨系统办公自动化（网页填表/信息查询/邮件处理），内置百度搜索Skill支持实时联网搜索，可自定义Skills扩展，本地安全沙箱数据不离本地，敏感操作需二次授权，2026.03.27在中关村论坛年会亮相",
     "website": "https://dumate.baidu.com"
   },
   {
