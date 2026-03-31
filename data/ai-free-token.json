@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31 21:15",
+  "updatedAt": "2026-04-01 04:25",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -894,7 +894,7 @@
     },
     {
       "name": "超算互联网 (SCNET)",
-      "quota": "新用户首次登录赠送 100万 tokens；支持 Qwen3-30B-A3B 等国产大模型",
+      "quota": "新用户首次登录赠送 100万 tokens（⚠️ 原限时1000万Token活动已于2026-03-25结束，现为常规100万额度）；支持 Qwen3-30B-A3B 等国产大模型",
       "cycle": "一次性注册赠送（1个月有效）",
       "url": "https://www.scnet.cn",
       "develop": {
@@ -959,8 +959,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 截至2026-03-31名额可能已全部领完，请咨询官网确认是否仍有余额；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
-      "cycle": "限时免费1个月（活动至名额结束为止，⚠️ 名额可能已满，请以官网最新公告为准）",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 截至2026-04-01活动仍在进行，请尽快注册确认名额；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（活动至名额结束为止，⚠️ 名额可能即将领满，请以官网最新公告为准）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
