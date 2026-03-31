@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-31 21:05",
+  "updatedAt": "2026-03-31 21:15",
   "platforms": [
     {
       "name": "星链4SAPI",
@@ -1181,6 +1181,24 @@
           "GLM-4.5",
           "BAAI/bge-m3",
           "Qwen3-Coder-480B-A35B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "Scitely",
+      "quota": "无限制免费API访问（社区版适用于个人和非商业用途，遵循公平使用政策）；支持50+前沿AI模型，包含DeepSeek R1/V3、Qwen、Kimi、Llama 4、GLM等；非功能缩水的演示版，与企业团队使用的相同模型",
+      "cycle": "永久免费（社区版个人和非商业用途）",
+      "url": "https://platform.scitely.com",
+      "develop": {
+        "document_url": "https://platform.scitely.com/docs",
+        "base_url": "https://api.scitely.com/v1",
+        "models": [
+          "deepseek-r1",
+          "deepseek-v3",
+          "qwen3",
+          "kimi",
+          "llama-4",
+          "glm-4"
         ]
       }
     }
