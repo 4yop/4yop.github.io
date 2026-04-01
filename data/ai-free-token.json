@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-01 04:25",
+  "updatedAt": "2026-04-01 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -42,20 +42,27 @@
     },
     {
       "name": "百度千帆",
-      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5、DeepSeek、Qwen3 等主流模型每模型 100万 token",
-      "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效",
+      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5-Turbo、DeepSeek（R1/V3系列）、Qwen3、Kimi K2.5 等主流模型每模型 100万 token（3个月有效）",
+      "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效（自开通起算）",
       "url": "https://console.bce.baidu.com/qianfan/",
       "develop": {
-        "document_url": "https://cloud.baidu.com/doc/qianfan-api/s/3m9b5lqft",
+        "document_url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/3mh3fw81w",
         "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions",
         "models": [
-          "ernie-4.5-8k",
+          "ernie-4.5-turbo-128k",
+          "ernie-4.5-turbo-32k",
+          "ernie-x1-turbo-32k",
           "ernie-3.5-8k",
           "ernie-speed-8k",
           "ernie-lite-8k",
-          "ernie-longtext-8k",
           "deepseek-r1",
-          "qwen2.5-72b-instruct"
+          "deepseek-r1-250528",
+          "deepseek-v3-250324",
+          "deepseek-v3.1-250821",
+          "kimi-k2-instruct",
+          "qwen3-235b-a22b-instruct",
+          "qwen3-30b-a3b-instruct",
+          "qwen3-coder-480b-a35b-instruct"
         ]
       }
     },
@@ -821,13 +828,15 @@
     },
     {
       "name": "Together AI",
-      "quota": "⚠️ 无免费额度（需至少充值 $5 才能使用）；平台允许最高 $100 负债限额（非免费积分，而是先用后付费）；支持 200+ 开源模型（Llama 4、DeepSeek、Qwen等），推理速度快；Build Tier 充值积分永不过期",
-      "cycle": "无免费额度（充值 $5 起）；$100 为月度负债上限（超限后需充值才能继续）",
+      "quota": "新用户注册赠送 $25 免费积分（无需信用卡，用于体验 200+ 开源模型；额度不过期）；另有永久免费模型层（Apriel 1.6 15B Thinker 等研究预览模型，速率限制 60 RPM / 100K TPM）；支持 Llama 4、DeepSeek、Qwen3 等主流开源模型",
+      "cycle": "$25注册积分永不过期；永久免费层无限期（研究预览模型，政策可能调整）",
       "url": "https://www.together.ai",
       "develop": {
         "document_url": "https://docs.together.ai",
         "base_url": "https://api.together.xyz/v1",
         "models": [
+          "servicenow/apriel-1.6-15b-thinker",
+          "servicenow/apriel-1.5-15b-thinker",
           "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
           "meta-llama/Llama-4-Scout-17B-16E-Instruct",
           "deepseek-ai/DeepSeek-V3",
@@ -838,16 +847,18 @@
     },
     {
       "name": "Friendli AI",
-      "quota": "迁移优惠活动：最高可获得 5万 推理积分；支持 GLM-5、MiniMax M2.5 等主流大模型",
-      "cycle": "限时推广活动（需申请获取）",
+      "quota": "Serverless 模式免费开放（无需充值即可使用；支持 GLM-5、MiniMax M2.5、Qwen3、Llama 4 等近 600 款主流模型；OpenAI 兼容 API；推理速度约55 tokens/秒）",
+      "cycle": "免费（Serverless模式；政策以官方公告为准）",
       "url": "https://friendli.ai",
       "develop": {
         "document_url": "https://friendli.ai/docs",
         "base_url": "https://api.friendli.ai/serverless/v1",
         "models": [
           "meta-llama/Llama-3.3-70B-Instruct",
-          "meta-llama/Llama-3.1-8B-Instruct",
-          "Qwen/Qwen3-235B-A22B"
+          "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "Qwen/Qwen3-235B-A22B",
+          "GLM-5",
+          "MiniMax-M2.5"
         ]
       }
     },
@@ -1126,6 +1137,26 @@
           "kimi",
           "llama-4",
           "glm-4"
+        ]
+      }
+    },
+    {
+      "name": "哈基米 API 站（Hajimi/GemAI）",
+      "quota": "新用户注册即送 100元 余额（仅支持QQ邮箱注册；支持 Gemini 满血版系列、Claude Opus/Sonnet、Grok-4、DeepSeek R1/V3、Qwen3-Coder-480B 等主流顶级模型；OpenAI 兼容接口；第三方聚合代理平台）",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://api.gemai.cc/console",
+      "develop": {
+        "document_url": "https://docs.gemai.cc/guide/getting-started",
+        "base_url": "https://api.gemai.cc/v1",
+        "models": [
+          "gemini-2.5-pro",
+          "gemini-2.5-flash",
+          "claude-opus-4-5",
+          "claude-sonnet-4",
+          "grok-4",
+          "deepseek-r1",
+          "deepseek-v3",
+          "qwen3-coder-480b-a35b"
         ]
       }
     }
