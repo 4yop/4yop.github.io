@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 41,
     "name": "Copaw Pro",
     "developer": "阿里云通义实验室",
@@ -7,8 +6,7 @@
     "deployment": "本地+云端双模，支持Docker一键部署",
     "features": "新增多Agent协作模式，支持跨平台任务编排；内置国产大模型适配层，自动切换通义/文心/讯飞等模型；强化企业级安全防护，符合等保2.0标准",
     "website": "https://copaw-pro.agentscope.io/"
-  },
-  {
+  },{
     "id": 42,
     "name": "LobsterAI Studio",
     "developer": "网易有道",
@@ -16,8 +14,7 @@
     "deployment": "全图形界面企业版，支持私有化部署",
     "features": "新增AI工厂模式，批量生成Agent；集成代码审计系统，符合金融级安全标准；支持鸿蒙OS深度集成，实现跨设备任务接力",
     "website": "https://github.com/youdao/LobsterAI-Studio"
-  },
-  {
+  },{
     "id": 43,
     "name": "CountBot",
     "developer": "CountBot开源团队",
@@ -25,5 +22,20 @@
     "deployment": "本地+云端双部署，支持Docker快速启动",
     "features": "轻量级AI Agent框架，适配中文用户习惯；内置角色/团队/工作流管理；支持长期运行与工具链扩展",
     "website": "https://github.com/countbot-ai/CountBot"
-  }
-]
+  },{
+    "id": 44,
+    "name": "Molili",
+    "developer": "北京碳基智脑",
+    "releaseTime": "2026.03.15",
+    "deployment": "桌面端本地运行，支持离线使用",
+    "features": "国产自主可控架构，适配麒麟OS；内置可视化流程设计器；支持插件扩展与模型热替换",
+    "website": "https://molili.ai/"
+  },{
+    "id": 45,
+    "name": "NanoClaw",
+    "developer": "枫清科技",
+    "releaseTime": "2026.03.28",
+    "deployment": "信创系统适配，支持龙芯架构",
+    "features": "超轻量内核，启动时间<1秒；内置国产密码算法模块；通过等保三级认证；支持与Fabarta平台无缝集成",
+    "website": "https://nanoclav.com/"
+  }]
