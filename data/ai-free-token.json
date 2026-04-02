@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-01 09:00",
+  "updatedAt": "2026-04-03 01:05",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -329,24 +329,6 @@
           "deepseek-r1",
           "qwen-plus",
           "kimi-k2.5"
-        ]
-      }
-    },
-    {
-      "name": "心流（iFlow）",
-      "quota": "目前处于不限量免费测试期（支持 Kimi K2、Qwen3 Coder、GLM-4.5、DeepSeek-V3 等主流国产大模型；OpenAI 兼容 API；限制1个并发请求）",
-      "cycle": "免费测试期（不限量，并发限1；后续政策以官方公告为准）",
-      "url": "https://platform.iflow.cn",
-      "develop": {
-        "document_url": "https://platform.iflow.cn",
-        "base_url": "https://apis.iflow.cn/v1",
-        "models": [
-          "kimi-k2",
-          "kimi-k2-instruct",
-          "qwen3-coder",
-          "Qwen/Qwen3-235B-A22B",
-          "glm-4.5",
-          "deepseek-v3"
         ]
       }
     },
@@ -970,8 +952,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 截至2026-04-01活动仍在进行，请尽快注册确认名额；活动：联通云算力加码0元解锁AI应用）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
-      "cycle": "限时免费1个月（活动至名额结束为止，⚠️ 名额可能即将领满，请以官网最新公告为准）",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 活动时间至2026-03-15，已结束；请关注后续新活动）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（⚠️ 已结束，下次活动请关注官网公告）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",

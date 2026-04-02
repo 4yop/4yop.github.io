@@ -1,4 +1,4 @@
-
+[
   {
     "id": 41,
     "name": "Copaw Pro",
@@ -16,5 +16,14 @@
     "deployment": "全图形界面企业版，支持私有化部署",
     "features": "新增AI工厂模式，批量生成Agent；集成代码审计系统，符合金融级安全标准；支持鸿蒙OS深度集成，实现跨设备任务接力",
     "website": "https://github.com/youdao/LobsterAI-Studio"
+  },
+  {
+    "id": 43,
+    "name": "CountBot",
+    "developer": "CountBot开源团队",
+    "releaseTime": "2026.02.21",
+    "deployment": "本地+云端双部署，支持Docker快速启动",
+    "features": "轻量级AI Agent框架，适配中文用户习惯；内置角色/团队/工作流管理；支持长期运行与工具链扩展",
+    "website": "https://github.com/countbot-ai/CountBot"
   }
 ]
