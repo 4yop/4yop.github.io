@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 14:06",
+  "updatedAt": "2026-04-06 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1139,6 +1139,76 @@
           "deepseek-r1",
           "deepseek-v3",
           "qwen3-coder-480b-a35b"
+        ]
+      }
+    },
+    {
+      "name": "书生 Intern AI（上海人工智能实验室）",
+      "quota": "免费提供 Intern-S1 系列模型的 OpenAI 兼容 API；支持文本生成、图像分析、工具调用、思考模式等功能；10 RPM 速率限制，密钥有效期6个月",
+      "cycle": "永久免费（速率限制 10 RPM，密钥6个月有效，到期可续）",
+      "url": "https://internlm.intern-ai.org.cn",
+      "develop": {
+        "document_url": "https://internlm.intern-ai.org.cn/api/document?lang=zh",
+        "base_url": "https://chat.intern-ai.org.cn/api/v1",
+        "models": [
+          "intern-s1",
+          "intern-s1-pro"
+        ]
+      }
+    },
+    {
+      "name": "OpenCode Zen",
+      "quota": "多个模型限时免费使用：MiniMax M2.5 Free、MiMo V2 Pro Free、MiMo V2 Omni Free、Qwen3.6 Plus Free、Nemotron 3 Super Free、Big Pickle、GPT 5 Nano（输入输出缓存均免费，用于收集模型反馈）；付费模型按量计费，支持 GPT-5.4、Claude Opus 4.6、Gemini 3.1 Pro 等全系列模型",
+      "cycle": "免费模型永久可用（处于Beta测试阶段）；付费模型按量计费",
+      "url": "https://opencode.ai/zen",
+      "develop": {
+        "document_url": "https://opencode.ai/docs/zh-cn/zen/",
+        "base_url": "https://opencode.ai/zen/v1",
+        "models": [
+          "minimax-m2.5-free",
+          "mimo-v2-pro-free",
+          "mimo-v2-omni-free",
+          "qwen3.6-plus-free",
+          "nemotron-3-super-free",
+          "big-pickle",
+          "gpt-5-nano"
+        ]
+      }
+    },
+    {
+      "name": "ApiFreeLLM",
+      "quota": "完全免费、无限制的 LLM API 访问；使用 200B+ 参数级别的先进模型；免费 API 密钥通过 Google 登录获取，永久有效；轻微延迟防止滥用；Premium 套餐（$12/月）可享受无速率限制和 OpenAI 兼容 API",
+      "cycle": "永久免费（有轻微速率限制）；Premium $12/月无限制",
+      "url": "https://apifreellm.com",
+      "develop": {
+        "document_url": "https://apifreellm.com",
+        "base_url": "https://apifreellm.com/api/v1",
+        "models": []
+      }
+    },
+    {
+      "name": "APIFree",
+      "quota": "一站式免费 AI API 统一平台；通过一个 API 端点访问多个主流 AI 模型（GPT-4、Claude、Llama 等）；支持多模态模型；按量计费永久有效",
+      "cycle": "免费起步（按量计费，永久有效）",
+      "url": "https://www.apifree.ai",
+      "develop": {
+        "document_url": "https://www.apifree.ai",
+        "base_url": "https://api.apifree.ai/v1",
+        "models": []
+      }
+    },
+    {
+      "name": "API520（熊猫站）",
+      "quota": "新用户注册赠送 100元 余额（仅支持QQ邮箱注册）；支持 Claude Opus 4.6、Gemini 3 Pro、Kimi-K2 等顶级模型；OpenAI 兼容接口；第三方聚合代理平台",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://api520.pro",
+      "develop": {
+        "document_url": "https://api520.pro",
+        "base_url": "https://api520.pro/v1",
+        "models": [
+          "claude-opus-4-6",
+          "gemini-3-pro",
+          "kimi-k2"
         ]
       }
     }
