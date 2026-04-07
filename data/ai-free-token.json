@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-06 12:15",
+  "updatedAt": "2026-04-07 09:10",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 2.5 Flash: 10 RPM / 25万 TPM / 250 RPD；Gemini 2.5 Flash-Lite: 15 RPM / 25万 TPM / 1000 RPD；Gemini 2.5 Pro: 5 RPM / 25万 TPM / 100 RPD（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 2.5 Flash/Pro：输入输出token免费（5 RPM/25万TPM/250 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Google搜索/地图接地：500 RPD免费（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
@@ -13,6 +13,8 @@
           "gemini-2.5-flash",
           "gemini-2.5-flash-lite",
           "gemini-2.5-pro",
+          "gemini-3.1-pro-preview",
+          "gemini-3.1-flash-lite-preview",
           "gemini-2.0-flash",
           "gemini-1.5-flash",
           "gemini-1.5-pro"
@@ -150,7 +152,7 @@
     },
     {
       "name": "Groq",
-      "quota": "所有模型通用：30 RPM、1000 RPD；Llama 3.1 8B 高达 14,400 RPD；Kimi K2 Instruct: 1000 RPD / 10K TPM / 30万 TPD；Qwen3 32B: 1000 RPD / 6K TPM；gpt-oss-120b/20b: 1000 RPD；基于自研 LPU 芯片超高速推理，多模型全部永久免费层",
+      "quota": "Llama 3.1 8B：30 RPM / 6K TPM / 14,400 RPD（最高频次）；Llama 3.3 70B：30 RPM / 12K TPM / 1000 RPD；Llama 4 Scout：30 RPM / 30K TPM / 1000 RPD；Kimi K2 Instruct：60 RPM / 10K TPM / 1000 RPD；Qwen3 32B：60 RPM / 6K TPM / 1000 RPD；Groq Compound：30 RPM / 70K TPM / 250 RPD；Whisper：20 RPM / 2000 RPD；基于自研 LPU 芯片超高速推理（700+ tokens/秒），多模型永久免费层",
       "cycle": "每日重置（永久免费层）",
       "url": "https://console.groq.com",
       "develop": {
@@ -164,10 +166,14 @@
           "moonshotai/kimi-k2-instruct",
           "moonshotai/kimi-k2-instruct-0905",
           "qwen/qwen3-32b",
+          "groq/compound",
+          "groq/compound-mini",
           "openai/gpt-oss-120b",
           "openai/gpt-oss-20b",
           "mixtral-8x7b-32768",
-          "gemma2-9b-it"
+          "gemma2-9b-it",
+          "whisper-large-v3",
+          "whisper-large-v3-turbo"
         ]
       }
     },

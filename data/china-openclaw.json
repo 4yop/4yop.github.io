@@ -1,1 +1,344 @@
-[{"id":41,"name":"Copaw Pro","developer":"阿里云通义实验室","releaseTime":"2026.04.01","deployment":"本地+云端双模，支持Docker一键部署","features":"新增多Agent协作模式，支持跨平台任务编排；内置国产大模型适配层，自动切换通义/文心/讯飞等模型；强化企业级安全防护，符合等保2.0标准","website":"https://copaw-pro.agentscope.io/"},{"id":42,"name":"LobsterAI Studio","developer":"网易有道","releaseTime":"2026.04.01","deployment":"全图形界面企业版，支持私有化部署","features":"新增AI工厂模式，批量生成Agent；集成代码审计系统，符合金融级安全标准；支持鸿蒙OS深度集成，实现跨设备任务接力","website":"https://github.com/youdao/LobsterAI-Studio"},{"id":43,"name":"CountBot","developer":"CountBot开源团队","releaseTime":"2026.02.21","deployment":"本地+云端双部署，支持Docker快速启动","features":"轻量级AI Agent框架，适配中文用户习惯；内置角色/团队/工作流管理；支持长期运行与工具链扩展","website":"https://github.com/countbot-ai/CountBot"},{"id":44,"name":"Molili","developer":"北京碳基智脑","releaseTime":"2026.03.15","deployment":"桌面端本地运行，支持离线使用","features":"国产自主可控架构，适配麒麟OS；内置可视化流程设计器；支持插件扩展与模型热替换","website":"https://molili.ai/"},{"id":45,"name":"NanoClaw","developer":"枫清科技","releaseTime":"2026.03.28","deployment":"信创系统适配，支持龙芯架构","features":"超轻量内核，启动时间<1秒；内置国产密码算法模块；通过等保三级认证；支持与Fabarta平台无缝集成","website":"https://nanoclav.com/"},{"id":46,"name":"AgentFlow","developer":"腾讯云智能","releaseTime":"2026.04.05","deployment":"云端托管，支持私有化部署","features":"基于腾讯混元大模型的企业级Agent框架；支持多模型调度；内置企业微信集成；提供完整的监控和日志系统","website":"https://agentflow.tencent.com/"},{"id":47,"name":"DeepAgent","developer":"深度求索","releaseTime":"2026.04.03","deployment":"本地+云端双模式，支持Kubernetes部署","features":"基于DeepSeek大模型的Agent框架；支持多Agent协作；内置RAG增强；提供可视化编排界面","website":"https://deepagent.ai/"},{"id":48,"name":"KimiClaw","developer":"月之暗面（Moonshot AI）","releaseTime":"2026.03","deployment":"云端托管，支持Web、iOS、Android三端直接使用","features":"长期记忆跨会话保留上下文；全平台覆盖24/7自动化任务；默认接入Kimi系列大模型；适合个人助理、日程管理等轻量场景","website":"https://kimi.com/claw"},{"id":49,"name":"QClaw","developer":"腾讯电脑管家","releaseTime":"2026.03","deployment":"客户端安装（macOS/Windows），需内测申请","features":"微信直联，零配置远程控制电脑；接入ClawHub及GitHub超5000个技能；支持本地文件管理、浏览器控制等","website":"https://qclaw.qq.com"},{"id":50,"name":"EasyClaw","developer":"猎豹移动","releaseTime":"2026.03","deployment":"零配置部署，下载安装-打开授权-语音对话三步完成。采用本地沙箱运行机制","features":"官方预制技能包，开箱即用；清晰的C端与B端商业化模式；由CEO傅盛实测推广","website":"https://easyclaw.cmcm.com"},{"id":51,"name":"MaxClaw","developer":"MiniMax","releaseTime":"2026.03","deployment":"10秒极速云端部署，基础设施由官方托管，零操作门槛","features":"搭载MiniMax M2.5模型，性价比高（基础版39元/月）；支持多平台（Telegram、Discord、Slack）接入；具备长周期记忆能力","website":"https://maxclaw.minimax.io"},{"id":52,"name":"LinClaw","developer":"七牛云","releaseTime":"2026.03","deployment":"macOS DMG / Windows EXE安装包（双击即用），支持私有化部署（MIT开源）","features":"支持9大渠道（钉钉、飞书、微信、QQ、Telegram等）；基于ReAct Agent架构，支持多模型切换（DeepSeek、Kimi等）；内置Shell、文件操作、浏览器、截图四大工具；支持MCP协议扩展技能","website":"https://linclaw.qnlinking.com"},{"id":53,"name":"AIAgentStudio","developer":"华为云","releaseTime":"2026.04.06","deployment":"云端+边缘计算，支持端云协同","features":"基于华为盘古大模型的企业级Agent开发平台；支持多模态交互；内置安全沙箱；提供一站式DevOps流程","website":"https://aistudio.huaweicloud.com/"},{"id":54,"name":"SmartAgent","developer":"百度智能云","releaseTime":"2026.04.04","deployment":"云端SaaS服务，支持私有化部署","features":"基于文心大模型的智能Agent平台；支持知识图谱集成；内置业务流程自动化；提供API接口和SDK","website":"https://smartagent.baidu.com/"},{"id":55,"name":"钉钉悟空","developer":"阿里巴巴钉钉","releaseTime":"2026.03.17","deployment":"云端托管，独立APP，支持全球公测","features":"首个企业级AI原生工作平台；OPT一人团队模式；CLI命令行界面化改造支持AI Agent直接操作钉钉；80000+技能一键安装；与钉钉会议、文档、审批深度融合","website":"https://wukong.dingtalk.com/"},{"id":56,"name":"HiClaw","developer":"阿里云（agentscope-ai）","releaseTime":"2026.03.08","deployment":"分布式容器部署，开源（GitHub），支持Higress AI网关","features":"开源多Agent协作操作系统；Manager-Workers架构支持团队协作；基于Matrix实时通信协议实现透明可监督的分布式任务；支持人工全程介入和RBAC权限控制；适配3-10人开发/运维/数据团队","website":"https://www.hiclaw.io/"},{"id":57,"name":"AutoClaw","developer":"智谱AI","releaseTime":"2026.03.10","deployment":"桌面客户端一键安装（Windows/macOS），本地运行","features":"国内首个真一键安装的本地版OpenClaw；预置50+内置技能；集成AutoGLM浏览器自动化；基于GLM-5架构专为Agent场景微调；支持飞书集成；可接入DeepSeek、GLM等多种模型","website":"https://autoglm.zhipuai.cn/autoclaw/"},{"id":58,"name":"DuClaw","developer":"百度智能云","releaseTime":"2026.03.13","deployment":"云端托管，零部署免配置，SaaS服务","features":"基于文心大模型的云端AI Agent平台；零部署开箱即用；支持多模型调用和自动化任务执行；可绑定多种主流消息平台；首月17.8元低价入门","website":"https://cloud.baidu.com/doc/DuClaw/index.html"},{"id":59,"name":"ArkClaw","developer":"字节跳动火山引擎","releaseTime":"2026.03.09","deployment":"云端一键部署，专属ECS资源，7×24在线","features":"基于开源OpenClaw架构的云端SaaS版；零门槛5分钟快速创建；飞书原生集成；一对一专属ECS资源保障隔离性；支持TOS对象存储绑定；提供Coding Plan","website":"https://www.volcengine.com/docs/82379/2229107"},{"id":60,"name":"StepClaw","developer":"阶跃星辰（StepFun）","releaseTime":"2026.03.12","deployment":"云端一键部署，7×24小时脱机运行","features":"基于OpenClaw框架的云端AI助手；搭载专为Agent场景设计的Step 3.5 Flash模型；一键部署零配置；支持模型Tokens和服务器存储免费测试资源","website":"https://www.stepfun.com/studio"},{"id":61,"name":"实在Agent","developer":"实在智能","releaseTime":"2026.01.15","deployment":"企业级SaaS平台，支持私有化部署","features":"全球首款企业级通用智能体；基于RPA+ISS屏幕语义理解技术；一句话自动完成跨软件任务；支持聊天式交互理解任务需求；与惠普等企业建立合作","website":"https://www.ai-indeed.com/products/agentRpa"},{"id":62,"name":"扣子Coze","developer":"字节跳动","releaseTime":"2025.12","deployment":"云端SaaS平台，支持Web端访问","features":"一站式AI办公助手；AI写作、PPT生成、表格处理、设计、播客、生图与视频；支持财经分析、市场营销等场景任务自动化；可视化工作流编排与多模态AI集成","website":"https://www.coze.cn/"},{"id":63,"name":"阿里云百炼","developer":"阿里云","releaseTime":"2025.10","deployment":"云端SaaS平台，支持API调用和私有化部署","features":"一站式大模型开发平台；支持多种主流大模型接入；提供Agent构建、知识库管理、插件扩展等功能；支持企业级应用部署","website":"https://bailian.console.aliyun.com/"}]
+[
+  {
+    "id": 41,
+    "name": "Copaw Pro",
+    "developer": "阿里云通义实验室",
+    "releaseTime": "2026.04.01",
+    "deployment": "本地+云端双模，支持Docker一键部署",
+    "features": "新增多Agent协作模式，支持跨平台任务编排；内置国产大模型适配层，自动切换通义/文心/讯飞等模型；强化企业级安全防护，符合等保2.0标准",
+    "website": "https://copaw-pro.agentscope.io/"
+  },
+  {
+    "id": 42,
+    "name": "LobsterAI Studio",
+    "developer": "网易有道",
+    "releaseTime": "2026.04.01",
+    "deployment": "全图形界面企业版，支持私有化部署",
+    "features": "新增AI工厂模式，批量生成Agent；集成代码审计系统，符合金融级安全标准；支持鸿蒙OS深度集成，实现跨设备任务接力",
+    "website": "https://github.com/youdao/LobsterAI-Studio"
+  },
+  {
+    "id": 43,
+    "name": "CountBot",
+    "developer": "CountBot开源团队",
+    "releaseTime": "2026.02.21",
+    "deployment": "本地+云端双部署，支持Docker快速启动",
+    "features": "轻量级AI Agent框架，适配中文用户习惯；内置角色/团队/工作流管理；支持长期运行与工具链扩展",
+    "website": "https://github.com/countbot-ai/CountBot"
+  },
+  {
+    "id": 44,
+    "name": "Molili",
+    "developer": "北京碳基智脑",
+    "releaseTime": "2026.03.15",
+    "deployment": "桌面端本地运行，支持离线使用",
+    "features": "国产自主可控架构，适配麒麟OS；内置可视化流程设计器；支持插件扩展与模型热替换",
+    "website": "https://molili.ai/"
+  },
+  {
+    "id": 45,
+    "name": "NanoClaw",
+    "developer": "枫清科技",
+    "releaseTime": "2026.03.28",
+    "deployment": "信创系统适配，支持龙芯架构",
+    "features": "超轻量内核，启动时间<1秒；内置国产密码算法模块；通过等保三级认证；支持与Fabarta平台无缝集成",
+    "website": "https://nanoclav.com/"
+  },
+  {
+    "id": 46,
+    "name": "AgentFlow",
+    "developer": "腾讯云智能",
+    "releaseTime": "2026.04.05",
+    "deployment": "云端托管，支持私有化部署",
+    "features": "基于腾讯混元大模型的企业级Agent框架；支持多模型调度；内置企业微信集成；提供完整的监控和日志系统",
+    "website": "https://agentflow.tencent.com/"
+  },
+  {
+    "id": 47,
+    "name": "DeepAgent",
+    "developer": "深度求索",
+    "releaseTime": "2026.04.03",
+    "deployment": "本地+云端双模式，支持Kubernetes部署",
+    "features": "基于DeepSeek大模型的Agent框架；支持多Agent协作；内置RAG增强；提供可视化编排界面",
+    "website": "https://deepagent.ai/"
+  },
+  {
+    "id": 48,
+    "name": "KimiClaw",
+    "developer": "月之暗面（Moonshot AI）",
+    "releaseTime": "2026.03",
+    "deployment": "云端托管，支持Web、iOS、Android三端直接使用",
+    "features": "长期记忆跨会话保留上下文；全平台覆盖24/7自动化任务；默认接入Kimi系列大模型；适合个人助理、日程管理等轻量场景",
+    "website": "https://kimi.com/claw"
+  },
+  {
+    "id": 49,
+    "name": "QClaw",
+    "developer": "腾讯电脑管家",
+    "releaseTime": "2026.03",
+    "deployment": "客户端安装（macOS/Windows），需内测申请",
+    "features": "微信直联，零配置远程控制电脑；接入ClawHub及GitHub超5000个技能；支持本地文件管理、浏览器控制等",
+    "website": "https://qclaw.qq.com"
+  },
+  {
+    "id": 50,
+    "name": "EasyClaw",
+    "developer": "猎豹移动",
+    "releaseTime": "2026.03",
+    "deployment": "零配置部署，下载安装-打开授权-语音对话三步完成。采用本地沙箱运行机制",
+    "features": "官方预制技能包，开箱即用；清晰的C端与B端商业化模式；由CEO傅盛实测推广",
+    "website": "https://easyclaw.cmcm.com"
+  },
+  {
+    "id": 51,
+    "name": "MaxClaw",
+    "developer": "MiniMax",
+    "releaseTime": "2026.03",
+    "deployment": "10秒极速云端部署，基础设施由官方托管，零操作门槛",
+    "features": "搭载MiniMax M2.5模型，性价比高（基础版39元/月）；支持多平台（Telegram、Discord、Slack）接入；具备长周期记忆能力",
+    "website": "https://maxclaw.minimax.io"
+  },
+  {
+    "id": 52,
+    "name": "LinClaw",
+    "developer": "七牛云",
+    "releaseTime": "2026.03",
+    "deployment": "macOS DMG / Windows EXE安装包（双击即用），支持私有化部署（MIT开源）",
+    "features": "支持9大渠道（钉钉、飞书、微信、QQ、Telegram等）；基于ReAct Agent架构，支持多模型切换（DeepSeek、Kimi等）；内置Shell、文件操作、浏览器、截图四大工具；支持MCP协议扩展技能",
+    "website": "https://linclaw.qnlinking.com"
+  },
+  {
+    "id": 53,
+    "name": "AIAgentStudio",
+    "developer": "华为云",
+    "releaseTime": "2026.04.06",
+    "deployment": "云端+边缘计算，支持端云协同",
+    "features": "基于华为盘古大模型的企业级Agent开发平台；支持多模态交互；内置安全沙箱；提供一站式DevOps流程",
+    "website": "https://aistudio.huaweicloud.com/"
+  },
+  {
+    "id": 54,
+    "name": "SmartAgent",
+    "developer": "百度智能云",
+    "releaseTime": "2026.04.04",
+    "deployment": "云端SaaS服务，支持私有化部署",
+    "features": "基于文心大模型的智能Agent平台；支持知识图谱集成；内置业务流程自动化；提供API接口和SDK",
+    "website": "https://smartagent.baidu.com/"
+  },
+  {
+    "id": 55,
+    "name": "钉钉悟空",
+    "developer": "阿里巴巴钉钉",
+    "releaseTime": "2026.03.17",
+    "deployment": "云端托管，独立APP，支持全球公测",
+    "features": "首个企业级AI原生工作平台；OPT一人团队模式；CLI命令行界面化改造支持AI Agent直接操作钉钉；80000+技能一键安装；与钉钉会议、文档、审批深度融合",
+    "website": "https://wukong.dingtalk.com/"
+  },
+  {
+    "id": 56,
+    "name": "HiClaw",
+    "developer": "阿里云（agentscope-ai）",
+    "releaseTime": "2026.03.08",
+    "deployment": "分布式容器部署，开源（GitHub），支持Higress AI网关",
+    "features": "开源多Agent协作操作系统；Manager-Workers架构支持团队协作；基于Matrix实时通信协议实现透明可监督的分布式任务；支持人工全程介入和RBAC权限控制；适配3-10人开发/运维/数据团队",
+    "website": "https://www.hiclaw.io/"
+  },
+  {
+    "id": 57,
+    "name": "AutoClaw",
+    "developer": "智谱AI",
+    "releaseTime": "2026.03.10",
+    "deployment": "桌面客户端一键安装（Windows/macOS），本地运行",
+    "features": "国内首个真一键安装的本地版OpenClaw；预置50+内置技能；集成AutoGLM浏览器自动化；基于GLM-5架构专为Agent场景微调；支持飞书集成；可接入DeepSeek、GLM等多种模型",
+    "website": "https://autoglm.zhipuai.cn/autoclaw/"
+  },
+  {
+    "id": 58,
+    "name": "DuClaw",
+    "developer": "百度智能云",
+    "releaseTime": "2026.03.13",
+    "deployment": "云端托管，零部署免配置，SaaS服务",
+    "features": "基于文心大模型的云端AI Agent平台；零部署开箱即用；支持多模型调用和自动化任务执行；可绑定多种主流消息平台；首月17.8元低价入门",
+    "website": "https://cloud.baidu.com/doc/DuClaw/index.html"
+  },
+  {
+    "id": 59,
+    "name": "ArkClaw",
+    "developer": "字节跳动火山引擎",
+    "releaseTime": "2026.03.09",
+    "deployment": "云端一键部署，专属ECS资源，7×24在线",
+    "features": "基于开源OpenClaw架构的云端SaaS版；零门槛5分钟快速创建；飞书原生集成；一对一专属ECS资源保障隔离性；支持TOS对象存储绑定；提供Coding Plan",
+    "website": "https://www.volcengine.com/docs/82379/2229107"
+  },
+  {
+    "id": 60,
+    "name": "StepClaw",
+    "developer": "阶跃星辰（StepFun）",
+    "releaseTime": "2026.03.12",
+    "deployment": "云端一键部署，7×24小时脱机运行",
+    "features": "基于OpenClaw框架的云端AI助手；搭载专为Agent场景设计的Step 3.5 Flash模型；一键部署零配置；支持模型Tokens和服务器存储免费测试资源",
+    "website": "https://www.stepfun.com/studio"
+  },
+  {
+    "id": 61,
+    "name": "实在Agent",
+    "developer": "实在智能",
+    "releaseTime": "2026.01.15",
+    "deployment": "企业级SaaS平台，支持私有化部署",
+    "features": "全球首款企业级通用智能体；基于RPA+ISS屏幕语义理解技术；一句话自动完成跨软件任务；支持聊天式交互理解任务需求；与惠普等企业建立合作",
+    "website": "https://www.ai-indeed.com/products/agentRpa"
+  },
+  {
+    "id": 62,
+    "name": "扣子Coze",
+    "developer": "字节跳动",
+    "releaseTime": "2025.12",
+    "deployment": "云端SaaS平台，支持Web端访问",
+    "features": "一站式AI办公助手；AI写作、PPT生成、表格处理、设计、播客、生图与视频；支持财经分析、市场营销等场景任务自动化；可视化工作流编排与多模态AI集成",
+    "website": "https://www.coze.cn/"
+  },
+  {
+    "id": 63,
+    "name": "阿里云百炼",
+    "developer": "阿里云",
+    "releaseTime": "2025.10",
+    "deployment": "云端SaaS平台，支持API调用和私有化部署",
+    "features": "一站式大模型开发平台；支持多种主流大模型接入；提供Agent构建、知识库管理、插件扩展等功能；支持企业级应用部署",
+    "website": "https://bailian.console.aliyun.com/"
+  },
+  {
+    "id": 64,
+    "name": "ChatClaw",
+    "developer": "未明确",
+    "releaseTime": "2026.03.24",
+    "deployment": "极简部署，本地安全运行",
+    "features": "国产OpenClaw平替，一键安装，无复杂环境，数据本地存储，适配国内软件生态，AI自主执行任务",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_47169c2585625752"
+  },
+  {
+    "id": 65,
+    "name": "AiPy",
+    "developer": "未明确",
+    "releaseTime": "2026.04.03",
+    "deployment": "本地部署",
+    "features": "OpenClaw国产平替，适配国内用户习惯，支持网络稳定性和数据安全",
+    "website": "https://blog.csdn.net/2601_95552942/article/details/159651993"
+  },
+  {
+    "id": 66,
+    "name": "myclaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.02.11",
+    "deployment": "开源自托管，二进制文件部署",
+    "features": "用Go编写的开源AI Agent Gateway，约2000行核心代码，多通道消息路由(Telegram + 飞书)，持久化记忆系统和定时任务调度",
+    "website": "https://blog.csdn.net/weixin_41832606/article/details/157971027"
+  },
+  {
+    "id": 67,
+    "name": "QoderWork",
+    "developer": "阿里巴巴Qoder团队",
+    "releaseTime": "2026.03.23",
+    "deployment": "Mac/Windows桌面客户端安装",
+    "features": "桌面级AI智能体助手，三层Agent体系设计，本地沙箱执行，零信任文件访问，增量式任务处理",
+    "website": "https://qoder.com/zh/qoderwork"
+  },
+  {
+    "id": 68,
+    "name": "ClawPanel",
+    "developer": "开源社区",
+    "releaseTime": "2026.03.20",
+    "deployment": "开源可视化面板",
+    "features": "OpenClaw官方最强面板，内置独立AI助手，支持QQ/微信/TG等20+渠道统一管理，一键诊断修复",
+    "website": "https://www.arlulu.com/"
+  },
+  {
+    "id": 69,
+    "name": "OpenClow",
+    "developer": "全球AI Agent开发者社区",
+    "releaseTime": "2026.04.04",
+    "deployment": "开源跨平台，Apache 2.0协议",
+    "features": "开源跨平台AI Agent框架，把自然语言对话转化为电脑实际操作，支持微信、Telegram、Discord等消息平台",
+    "website": "https://blog.csdn.net/weixin_50764857/article/details/159468705"
+  },
+  {
+    "id": 70,
+    "name": "Super Magic",
+    "developer": "超级麦吉团队",
+    "releaseTime": "2026.03.20",
+    "deployment": "开源3.0版本",
+    "features": "全球首个企业级开源AI Agent平台，支持企业级部署和定制化开发",
+    "website": "https://new.qq.com/rain/a20260328A04QOQ00"
+  },
+  {
+    "id": 71,
+    "name": "AutoAgent",
+    "developer": "港大开源",
+    "releaseTime": "2025.03.20",
+    "deployment": "开源框架",
+    "features": "全自动且高度自我进化的框架，GAIA基准测试冠军，自然语言创建Agent和工作流，自管理向量数据库",
+    "website": "https://www.toutiao.com/article/7483711383923409444/"
+  },
+  {
+    "id": 72,
+    "name": "NullClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "开源项目",
+    "features": "OpenClaw生态衍生项目，轻量级实现",
+    "website": "https://blog.csdn.net/qq_44866828/article/details/158705629"
+  },
+  {
+    "id": 73,
+    "name": "OpenFang",
+    "developer": "开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "开源项目",
+    "features": "OpenClaw生态衍生项目，针对特定需求优化",
+    "website": "https://blog.csdn.net/qq_44866828/article/details/158705629"
+  },
+  {
+    "id": 74,
+    "name": "WorkBuddy",
+    "developer": "腾讯",
+    "releaseTime": "2026.03",
+    "deployment": "桌面客户端",
+    "features": "全场景桌面AI智能体，支持多种办公场景",
+    "website": "https://blog.csdn.net/bjweimengshu/article/details/159058359"
+  },
+  {
+    "id": 75,
+    "name": "BetterYeah AI",
+    "developer": "斑头雁杭州智能科技",
+    "releaseTime": "2023",
+    "deployment": "企业级SaaS平台，支持私有化部署",
+    "features": "企业级AI智能体开发平台，NeuroFlow开发框架和VisionRAG多模态知识库，低代码/无代码开发",
+    "website": "https://new.qq.com/rain/a20260311A0607N00"
+  },
+  {
+    "id": 76,
+    "name": "Manus",
+    "developer": "Monica.im",
+    "releaseTime": "2025.03.06",
+    "deployment": "云端服务",
+    "features": "全球首款通用型AI Agent，GAIA基准测试超越OpenAI同类产品，支持多任务并行处理、自主学习和协作",
+    "website": "https://manus.im"
+  },
+  {
+    "id": 77,
+    "name": "NanoBot",
+    "developer": "香港大学数据智能实验室（HKUDS）",
+    "releaseTime": "2026.02.02",
+    "deployment": "开源本地部署，pip install 一键安装，支持离线本地模型（vLLM等）",
+    "features": "OpenClaw超轻量级开源复刻，仅4000行Python代码（减少99%体量）；兼容11+大模型（DeepSeek/通义/Kimi等）和10+聊天平台；内置Agent Loop/长期记忆/MCP技能加载/多平台消息总线四大核心模块；支持定时任务、流式输出、多模态文件处理；32K+ GitHub Star",
+    "website": "https://github.com/HKUDS/nanobot"
+  },
+  {
+    "id": 78,
+    "name": "DeepMiner",
+    "developer": "明略科技",
+    "releaseTime": "2026.01.12",
+    "deployment": "企业级SaaS平台，支持私有化部署",
+    "features": "全链路可信商业决策AI Agent平台；双模型驱动（Mano基础智能体+Cito决策引擎）与多智能体协作框架；GUI自动化操作单步准确率98.9%；复杂业务推理与知识沉淀；适用于金融、医疗、电商、制造业等多行业深度分析场景；推理过程可溯源，大幅降低AI幻觉率",
+    "website": "https://www.mininglamp.com/deepminer/"
+  }
+]
