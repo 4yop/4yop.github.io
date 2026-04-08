@@ -718,8 +718,8 @@
     },
     {
       "name": "SambaNova Cloud",
-      "quota": "永久免费层：10-30 RPM（Llama 3.3 70B/8B、Qwen3、DeepSeek-R1等开源模型，基于自研RDU芯片超高速推理）；另新用户赠送 $5 积分（30天有效，约等于 3000万+ token，社区活跃可申请额外积分）",
-      "cycle": "永久免费层（速率限制10-30 RPM）；$5注册积分30天有效",
+      "quota": "官方套餐页显示 Free 计划可直接开通且无需信用卡；新用户注册赠送 $5 API credits（30天有效），可访问 Production models；超出免费 credits 后需升级到 Developer/Enterprise 套餐继续按量使用",
+      "cycle": "$5 API credits 注册后30天有效；Free 计划长期可开通（无需信用卡，超额需升级付费）",
       "url": "https://cloud.sambanova.ai",
       "develop": {
         "document_url": "https://cloud.sambanova.ai/docs",

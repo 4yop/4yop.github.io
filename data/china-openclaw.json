@@ -340,5 +340,41 @@
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "全链路可信商业决策AI Agent平台；双模型驱动（Mano基础智能体+Cito决策引擎）与多智能体协作框架；GUI自动化操作单步准确率98.9%；复杂业务推理与知识沉淀；适用于金融、医疗、电商、制造业等多行业深度分析场景；推理过程可溯源，大幅降低AI幻觉率",
     "website": "https://www.mininglamp.com/deepminer/"
+  },
+  {
+    "id": 79,
+    "name": "AstronClaw",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.03.12",
+    "deployment": "云端一键部署，沙箱隔离运行",
+    "features": "基于OpenClaw架构的云端AI助手；采用沙箱隔离技术保障数据安全；支持接入企业微信、钉钉、飞书等主流通讯工具；可调用10000+技能插件；支持自由切换星火X2、MiniMax-M2.5、Kimi-K2.5、GLM-5等多款大模型；胜任行业分析、文档处理等办公场景",
+    "website": "https://www.xfyun.cn/doc/spark/Agent-AstronClaw%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html"
+  },
+  {
+    "id": 80,
+    "name": "Loomy",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.03.17",
+    "deployment": "桌面客户端本地运行，支持Windows/macOS/Linux",
+    "features": "基于AstronClaw打造的桌面级AI助理；目录级隔离安全机制，仅允许访问授权工作目录；支持文件整理、内容创作、数据分析、网页操作、邮件处理等多步骤任务；适配QQ、飞书、钉钉等主流IM工具远程操控；1分钟快速部署，零配置开箱即用",
+    "website": "https://loomy.xunfei.cn/"
+  },
+  {
+    "id": 81,
+    "name": "PicoClaw",
+    "developer": "Sipeed",
+    "releaseTime": "2026.02.09",
+    "deployment": "单二进制文件部署，支持RISC-V/ARM64/x86架构",
+    "features": "极致轻量级AI Agent框架，内存常驻<10MB，启动时间<1秒；全球首个支持RISC-V架构的AI Agent；95%代码由AI辅助生成；支持Telegram、Discord、QQ、飞书、微信等多平台；内置Web搜索、MCP协议支持；适合老旧设备和嵌入式场景",
+    "website": "https://github.com/sipeed/picoclaw"
+  },
+  {
+    "id": 82,
+    "name": "ZeroClaw",
+    "developer": "哈佛/MIT/Sundai.Club社区",
+    "releaseTime": "2026.02",
+    "deployment": "Rust单二进制部署，支持IoT和超低端硬件",
+    "features": "Rust实现的AI Agent基础设施，内存占用<5MB；支持单片机级设备运行；三种守护进程模式（Agent CLI/Gateway HTTP/Daemon）；无垃圾回收暂停，编译时内存安全保证；支持OpenRouter/Anthropic/OpenAI/Ollama/DeepSeek/Groq/智谱等多模型",
+    "website": "https://github.com/sundai-club/zeroclaw"
   }
 ]
