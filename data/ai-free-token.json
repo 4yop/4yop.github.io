@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07 09:10",
+  "updatedAt": "2026-04-09 09:00",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -373,8 +373,8 @@
     },
     {
       "name": "AtomGit AI（开放原子）",
-      "quota": "新用户注册赠送 1000万 Tokens（永久有效，QPS=2，每日最高1000次调用）；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型",
-      "cycle": "Token额度永久有效；算力额度每月重置",
+      "quota": "新用户注册赠送 200万 Tokens（永久有效）；另有3个指定模型提供「无限Token」独立API Key（GLM-5量化版、Qwen3.5-397B、Qwen3.5-122B），每24小时可免费续期一次，不占用基础额度；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型（注意：GLM-5原始版可能响应异常，推荐使用GLM-5量化版）",
+      "cycle": "200万Token永久有效；无限Token模型需每24小时手动续期；算力额度每月重置",
       "url": "https://ai.atomgit.com",
       "develop": {
         "document_url": "https://ai.atomgit.com/dashboard/api-key",
@@ -1216,6 +1216,29 @@
           "claude-opus-4-6",
           "gemini-3-pro",
           "kimi-k2"
+        ]
+      }
+    },
+    {
+      "name": "Voyage AI",
+      "quota": "新用户注册赠送 2亿 token 免费额度（大多数嵌入及重排序模型，含 voyage-3.5、voyage-3-large、voyage-4、voyage-4-lite、rerank-2.5 等；专用模型 voyage-finance-2 / law-2 / code-2 免费额度为5000万token；多模态嵌入额度为2亿文本token + 1500亿像素；被 Anthropic 收购，与 Claude 深度集成）",
+      "cycle": "一次性注册赠送（用完为止，无需信用卡）",
+      "url": "https://www.voyageai.com",
+      "develop": {
+        "document_url": "https://docs.voyageai.com/docs/pricing",
+        "base_url": "https://api.voyageai.com/v1",
+        "models": [
+          "voyage-3.5",
+          "voyage-3.5-lite",
+          "voyage-3-large",
+          "voyage-4",
+          "voyage-4-lite",
+          "voyage-4-large",
+          "voyage-code-3",
+          "voyage-context-3",
+          "voyage-multimodal-3.5",
+          "rerank-2.5",
+          "rerank-2.5-lite"
         ]
       }
     }

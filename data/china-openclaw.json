@@ -376,5 +376,86 @@
     "deployment": "Rust单二进制部署，支持IoT和超低端硬件",
     "features": "Rust实现的AI Agent基础设施，内存占用<5MB；支持单片机级设备运行；三种守护进程模式（Agent CLI/Gateway HTTP/Daemon）；无垃圾回收暂停，编译时内存安全保证；支持OpenRouter/Anthropic/OpenAI/Ollama/DeepSeek/Groq/智谱等多模型",
     "website": "https://github.com/sundai-club/zeroclaw"
+  },
+  {
+    "id": 83,
+    "name": "loomoClaw",
+    "developer": "iloomo",
+    "releaseTime": "2026.04.08",
+    "deployment": "Windows桌面客户端，一键安装，可视化GUI",
+    "features": "纯国产OpenClaw平替，深度适配Windows平台；内置开箱即用技能库，覆盖微信自动化、办公操作、文件处理、开发辅助等场景；极低使用门槛，可视化GUI无需复杂配置；支持AI驱动的技能执行引擎，含轻量级和重量级两种模式",
+    "website": "http://www.iloomo.com/"
+  },
+  {
+    "id": 84,
+    "name": "IronClaw",
+    "developer": "NEAR AI团队",
+    "releaseTime": "2026.03",
+    "deployment": "Rust源码编译或Docker一键部署，支持Windows/macOS/Linux",
+    "features": "基于Rust重写的安全型AI助手框架；WASM沙箱隔离所有第三方代码，零信任架构默认不信任；加密保险库（Vault）管理API密钥，LLM全程不可见密钥；能力驱动安全模型，工具需显式声明权限；网络白名单、文件系统虚拟化、资源计量等多重防护；性能提升3-5倍，编译时内存安全保证",
+    "website": "https://github.com/nearai/ironclaw"
+  },
+  {
+    "id": 85,
+    "name": "DeerFlow",
+    "developer": "字节跳动",
+    "releaseTime": "2026.02.28",
+    "deployment": "开源框架（Apache 2.0），支持Docker部署",
+    "features": "全栈AI超级智能体框架，基于LangGraph 1.0重构；支持子代理并行调度、持久化记忆和Markdown技能扩展；Docker沙箱代码执行；作为OpenAI Deep Research的开源替代方案；GitHub 22,200+ Stars；支持从分钟级到小时级复杂任务自动化",
+    "website": "https://github.com/bytedance/deer-flow"
+  },
+  {
+    "id": 86,
+    "name": "元气AI Bot",
+    "developer": "元气AI团队",
+    "releaseTime": "2026.02",
+    "deployment": "桌面客户端一键安装，开箱即用",
+    "features": "国产AI管家桌面应用，完美复刻OpenClaw核心功能并针对中文用户优化；新增系统维护（垃圾清理/启动项优化/问题修复）、AI写作、桌宠陪伴等独有功能；支持飞书、钉钉等国产办公软件；智能邮件处理、日程管理、PPT生成、文件格式转换等办公自动化",
+    "website": "https://yuanqiai.net/"
+  },
+  {
+    "id": 87,
+    "name": "龙虾盒子",
+    "developer": "软通动力+智谱+机械革命",
+    "releaseTime": "2026.04",
+    "deployment": "本地硬件部署，0.87L超小机身，数据本地存储",
+    "features": "全球首款OpenClaw专用AI硬件终端；搭载专为龙虾场景优化的GLM-5-Turbo闭源模型；实现OpenClaw+MacMini级体验；支持文件处理、任务规划、多链路执行等自动化操作；安全可控，适合个人与小微企业；京东预售后一小时破万台，4月15日起发货",
+    "website": "https://news.qq.com/rain/a/20260403A022LX00"
+  },
+  {
+    "id": 88,
+    "name": "算融龙虾一体机",
+    "developer": "软通华方（软通动力旗下）",
+    "releaseTime": "2026.04",
+    "deployment": "企业级本地化部署，预装openEuler/天鹤OS，集成RAG+vLLM/SGLang推理框架",
+    "features": "面向企业级部署的AI工作站；提供超炫1700（入门级）和超炫3700（旗舰级）两款机型；深度融合华为昇腾生态，完成Atlas推理卡与昇思框架认证；支持鲲鹏CPU+昇腾GPU全链路国产化；解决企业算力贵、部署难、安全弱痛点",
+    "website": "https://news.qq.com/rain/a/20260403A022LX00"
+  },
+  {
+    "id": 89,
+    "name": "DTClaw",
+    "developer": "蚂蚁数科",
+    "releaseTime": "2026.04.02",
+    "deployment": "云端托管+本地沙箱隔离，内测阶段",
+    "features": "定位专业级金融AI龙虾，面向金融专家、理财顾问、数据专家等专业人员；基于原生沙箱技术实现任务与主系统物理隔离；支持上百种专业Skills和熟虾模板一键部署；覆盖投资理财、数据分析等高价值垂直场景；兼容主流大模型，企业系统集成与工作流自动化",
+    "website": "https://antdigital.com/products/DTClaw"
+  },
+  {
+    "id": 90,
+    "name": "aclaw",
+    "developer": "支付宝（蚂蚁集团）",
+    "releaseTime": "2026.04.06",
+    "deployment": "内嵌支付宝APP，云端服务，手机端使用",
+    "features": "定位不懂代码也能云养虾；用户可在支付宝一键领养专属龙虾；管理OpenClaw服务处理日常琐事；不涉及资金安全；将前沿AI Agent从极客终端带入十亿用户手机",
+    "website": "https://www.tahou.com/article/202786867331256325"
+  },
+  {
+    "id": 91,
+    "name": "QBotClaw",
+    "developer": "腾讯（QQ浏览器）",
+    "releaseTime": "2026.04.08",
+    "deployment": "免部署，QQ浏览器电脑端内置，微信扫码远程操控",
+    "features": "国内首个浏览器龙虾；完全兼容OpenClaw技能，支持自由配置国内主流大模型API Key；内置QQ浏览器Skill；具备眼（X5use高精度识别）与脑（浏览器上下文感知）能力；三维安全防护（沙箱+Markdown约束+Skillhub认证）；微信扫码即可远程调动电脑完成跨软件操作",
+    "website": "https://browser.qq.com/"
   }
 ]
