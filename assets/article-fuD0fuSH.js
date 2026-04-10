@@ -1,0 +1,40 @@
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合快速生成一份可编辑的 <code>robots.txt</code>，
+        支持 WordPress、Typecho、Discuz 预设，也能手动填写 Disallow、Allow、Crawl-delay 和 sitemap。
+      </p>
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先选 CMS 预设，快速带出常见目录规则。</li>
+        <li>再补充你自己站点的后台、临时目录或公开目录路径。</li>
+        <li>确认 sitemap 地址使用的是正式域名。</li>
+        <li>生成后复制或下载，再去线上 <code>/robots.txt</code> 自查一遍。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>写了 robots.txt 就等于页面保密了吗？</strong> 不是。它只是在告诉爬虫“不建议抓”，不等于权限控制。</p>
+        <p><strong>CSS 和 JS 要不要屏蔽？</strong> 不建议默认全屏蔽，尤其是依赖前端渲染的页面，误封会影响搜索引擎理解内容。</p>
+        <p><strong>Crawl-delay 一定有效吗？</strong> 不同爬虫支持程度不同，所以它更适合作为辅助规则，不要把它当成核心控制手段。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        想先看哪些写法最容易出错，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/robots-txt-checklist/">《robots.txt 常见写法和避坑清单》</a>。
+      </p>
+    </section>
+  </article>
+</div>
+`;export{t as default};

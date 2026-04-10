@@ -1,0 +1,53 @@
+const t=`
+<div class="mx-auto max-w-5xl px-4 pb-12 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">为什么 Word 转 PDF 后会“看起来不一样”</h2>
+      <p class="leading-7">
+        大多数排版偏差，不是文件坏了，而是 Word 文档里用了比较依赖环境的元素。
+        常见的触发点包括特殊字体、复杂表格、浮动图片、分页符和页面边距设置。
+        转换工具能保住主体内容，但越复杂的样式，越需要你在转换前先做一轮整理。
+      </p>
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">最常见的 4 类排版问题</h2>
+      <ul class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-disc">
+        <li><strong>字体变化</strong>：原文档用到非常规字体时，转换端找不到对应字形，就会回退成默认字体。</li>
+        <li><strong>表格挤压或换页</strong>：列宽过窄、单元格内容太多时，转成 PDF 后更容易出现换行和分页。</li>
+        <li><strong>图片位置偏移</strong>：浮动环绕、文字环绕和绝对定位，在不同渲染方式下容易出现偏移。</li>
+        <li><strong>页边距和分页变化</strong>：原始文档如果混用了分节符、分页符，输出结果会更不稳定。</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">转换前先做这 4 步</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>尽量使用常见字体，必要时把标题和正文字体统一一次。</li>
+        <li>检查页边距、纸张方向和分页符，避免一个文件里混用太多版式。</li>
+        <li>如果有图片或图表，优先使用嵌入式排版，少用复杂的文字环绕。</li>
+        <li>表格内容很长时，先在 Word 里检查列宽和自动换行，再进行转换。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">用浏览器工具时，怎么提高成功率</h2>
+      <p class="text-sm leading-7 text-gray-700">
+        如果你的文档主要是正文、简单表格和常规图片，先保留“基础排版”选项通常更稳。
+        文件较大时可以开启 Web Worker，减少页面卡顿。需要注意的是，浏览器本地转换更适合轻量办公文档，
+        对特别复杂的模板、公式和高度定制的样式，仍然建议转换后再人工核一遍。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">快速结论</h2>
+      <p class="text-sm leading-7 text-gray-700">
+        Word 转 PDF 想稳定，关键不在“多高级的按钮”，而在于原文档是否规整。
+        如果你想先在本地快速试一版，可以直接打开
+        <a class="text-blue-600 hover:text-blue-700" href="/office/word-to-pdf/">Tools321 的 Word 转 PDF 工具</a>
+        做预览，再回到 Word 调整字体、表格和分页。
+      </p>
+    </section>
+  </article>
+</div>
+`;export{t as default};
