@@ -457,5 +457,32 @@
     "deployment": "免部署，QQ浏览器电脑端内置，微信扫码远程操控",
     "features": "国内首个浏览器龙虾；完全兼容OpenClaw技能，支持自由配置国内主流大模型API Key；内置QQ浏览器Skill；具备眼（X5use高精度识别）与脑（浏览器上下文感知）能力；三维安全防护（沙箱+Markdown约束+Skillhub认证）；微信扫码即可远程调动电脑完成跨软件操作",
     "website": "https://browser.qq.com/"
+  },
+  {
+    "id": 92,
+    "name": "CoPaw",
+    "developer": "阿里云通义实验室",
+    "releaseTime": "2026.02.28",
+    "deployment": "本地+云端双部署，支持钉钉/飞书/QQ/Discord/iMessage等多渠道",
+    "features": "轻量级Python AI Agent框架，内存占用仅OpenClaw的1/5；内置Web控制台管理频道/技能/定时任务；支持Ollama/llama.cpp/MLX等本地模型；模块化Skills扩展；主动心跳机制执行定时任务；长期记忆功能自动沉淀用户偏好",
+    "website": "https://copaw.agentscope.io/"
+  },
+  {
+    "id": 93,
+    "name": "MateClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.04.05",
+    "deployment": "Java生态部署，支持跨平台运行",
+    "features": "开源Java版本AI Agent框架，补齐Java生态的AI Agent拼图；基于Java语言开发，适合Java开发者使用；支持多平台接入和任务自动化执行",
+    "website": "https://github.com/mateclaw/MateClaw"
+  },
+  {
+    "id": 94,
+    "name": "OpenJarvis",
+    "developer": "斯坦福Hazy Research实验室",
+    "releaseTime": "2026.03.14",
+    "deployment": "本地优先，完全在个人设备上运行",
+    "features": "斯坦福发布的本地优先个人AI Agent框架；核心理念是\"个人AI跑在个人设备上\"；与OpenClaw不同，强调完全本地化的隐私保护；致敬钢铁侠Jarvis的设计理念",
+    "website": "https://github.com/stanford-oval/OpenJarvis"
   }
 ]

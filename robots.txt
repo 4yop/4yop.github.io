@@ -1,24 +1,42 @@
-User-Agent: *
+﻿User-Agent: *
 Allow: /
 Disallow: /upload/
 Disallow: /api/
 Disallow: /private/
-
-# 爬虫速率控制
+Disallow: /video/m3u8-downloader/
+Disallow: /file/thunder-downloader/
+Disallow: /dev/resource-extractor/
+Disallow: /text/pua-create/
+Disallow: /text/rainbow-fart/
+Disallow: /text/shit-article/
 Crawl-delay: 1
 
-# 站点地图
 Sitemap: https://tools321.com/sitemap.xml
 
-# Google
 User-Agent: Googlebot
 Allow: /
+Disallow: /video/m3u8-downloader/
+Disallow: /file/thunder-downloader/
+Disallow: /dev/resource-extractor/
+Disallow: /text/pua-create/
+Disallow: /text/rainbow-fart/
+Disallow: /text/shit-article/
 
-# Bing
 User-Agent: Bingbot
 Allow: /
+Disallow: /video/m3u8-downloader/
+Disallow: /file/thunder-downloader/
+Disallow: /dev/resource-extractor/
+Disallow: /text/pua-create/
+Disallow: /text/rainbow-fart/
+Disallow: /text/shit-article/
 
-# 百度
 User-Agent: Baiduspider
 Allow: /
+Disallow: /video/m3u8-downloader/
+Disallow: /file/thunder-downloader/
+Disallow: /dev/resource-extractor/
+Disallow: /text/pua-create/
+Disallow: /text/rainbow-fart/
+Disallow: /text/shit-article/
 Crawl-delay: 2
