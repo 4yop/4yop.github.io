@@ -451,11 +451,11 @@
   },
   {
     "id": 91,
-    "name": "QBotClaw",
-    "developer": "腾讯（QQ浏览器）",
-    "releaseTime": "2026.04.08",
-    "deployment": "免部署，QQ浏览器电脑端内置，微信扫码远程操控",
-    "features": "国内首个浏览器龙虾；完全兼容OpenClaw技能，支持自由配置国内主流大模型API Key；内置QQ浏览器Skill；具备眼（X5use高精度识别）与脑（浏览器上下文感知）能力；三维安全防护（沙箱+Markdown约束+Skillhub认证）；微信扫码即可远程调动电脑完成跨软件操作",
+    "name": "QBotClaw / QClaw V2",
+    "developer": "腾讯云（QQ浏览器）",
+    "releaseTime": "2026.04.08 / V2版本2026.04.09",
+    "deployment": "免部署，QQ浏览器电脑端内置，微信扫码远程操控；V2支持云端+本地双模式",
+    "features": "国内首个浏览器龙虾；完全兼容OpenClaw技能，支持自由配置国内主流大模型API Key；内置QQ浏览器Skill；具备眼（X5use高精度识别）与脑（浏览器上下文感知）能力；三维安全防护（沙箱+Markdown约束+Skillhub认证）；微信扫码即可远程调动电脑完成跨软件操作；V2新增：最多3个Agent并行工作、自定义角色性格与专业背景、跨应用直连腾讯文档/Notion/邮箱等主流工具（单任务操作步骤减少60%+）、龙虾管家一键安全防护（拦截恶意prompt/skill投毒/文件误删/敏感信息泄露）",
     "website": "https://browser.qq.com/"
   },
   {
@@ -484,5 +484,32 @@
     "deployment": "本地优先，完全在个人设备上运行",
     "features": "斯坦福发布的本地优先个人AI Agent框架；核心理念是\"个人AI跑在个人设备上\"；与OpenClaw不同，强调完全本地化的隐私保护；致敬钢铁侠Jarvis的设计理念",
     "website": "https://github.com/stanford-oval/OpenJarvis"
+  },
+  {
+    "id": 95,
+    "name": "OpenAgentKit (OAK)",
+    "developer": "零一万物 + 开源中国",
+    "releaseTime": "2026.04.11",
+    "deployment": "开源框架，支持Docker部署",
+    "features": "完整的Agent技术栈闭环解决方案；四大核心组件：OAK Framework（基于LangGraph的企业级多Agent框架）、OAK Builder（可视化拖拽式工作流编排）、OAK Runtime（安全沙盒云端运行时）、OAK Studio（企业级PaaS平台）；作为OpenAI AgentKit开源平替，降低LangGraph开发门槛；兼容OpenAI AgentKit与Claude Skills",
+    "website": "https://langcrew.ai/"
+  },
+  {
+    "id": 96,
+    "name": "CowAgent",
+    "developer": "开源社区（happyhust，fork自chatgpt-on-wechat）",
+    "releaseTime": "2026.02.03",
+    "deployment": "开源自托管，支持Docker部署，本地运行",
+    "features": "基于大模型的超级AI助理，比OpenClaw更轻量便捷；自主任务规划，理解复杂任务并持续调用工具直到完成；长期记忆系统，自动持久化对话记忆，支持关键词及向量检索；支持从SkillHub/GitHub一键安装或对话创造Skills；内置文件读写、终端执行、浏览器操作、定时任务等工具；多模态消息支持（文本/图片/语音/文件）；支持OpenAI/Claude/DeepSeek/通义/Kimi/GLM/豆包等国内外主流模型；支持微信、飞书、钉钉、企业微信、QQ、公众号、网页等多渠道接入；GitHub 42k+ Stars",
+    "website": "https://cowagent.ai/"
+  },
+  {
+    "id": 97,
+    "name": "DeskClaw",
+    "developer": "NoDesk AI（杭州没有桌子AI）",
+    "releaseTime": "2026.02.14",
+    "deployment": "桌面端本地运行，数据不上传云端；企业版2026.03.07已开源",
+    "features": "国产龙虾桌面应用，以小螃蟹桌宠形态呈现；能操作浏览器、读写文件、调用本地应用，完成市场调研、信息整理等自动化工作；深度适配飞书、钉钉、企业微信；支持MiniMax/Kimi/GLM/Qwen/DeepSeek等多家国产模型；本地运行隐私保护；获近亿元融资（湖畔山南、初心资本、高途、顺福资本联投）",
+    "website": "https://deskclaw.ai"
   }
 ]
