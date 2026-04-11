@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://tools321.com/office/excel-merge/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-11</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/office/excel-to-vcf/</loc>
@@ -261,8 +261,20 @@
     <lastmod>2026-03-25</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/text/pua-create/</loc>
+    <lastmod>2026-03-25</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/text/rainbow-fart/</loc>
+    <lastmod>2026-04-11</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/text/regex-tester/</loc>
     <lastmod>2026-03-27</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/text/shit-article/</loc>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/text/special-char/</loc>
@@ -286,7 +298,7 @@
   </url>
   <url>
     <loc>https://tools321.com/text/zalgo-text-generator/</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-04-11</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/math/</loc>
@@ -485,6 +497,10 @@
     <lastmod>2026-04-11</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/video/m3u8-downloader/</loc>
+    <lastmod>2026-04-09</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/video/hash/</loc>
     <lastmod>2026-04-08</lastmod>
   </url>
@@ -637,6 +653,10 @@
     <lastmod>2026-03-28</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/file/thunder-downloader/</loc>
+    <lastmod>2026-03-25</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/tools/</loc>
     <lastmod>2026-04-11</lastmod>
   </url>
@@ -714,7 +734,7 @@
   </url>
   <url>
     <loc>https://tools321.com/ai/ai-img-category/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-04-11</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/ai/ai-music-gen/</loc>
@@ -831,6 +851,10 @@
   <url>
     <loc>https://tools321.com/dev/robots-txt-generator/</loc>
     <lastmod>2026-03-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/dev/resource-extractor/</loc>
+    <lastmod>2026-03-31</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/snowflake-id/</loc>
