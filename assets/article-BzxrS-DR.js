@@ -1,0 +1,40 @@
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合把多个 PDF 按顺序合并成一个文件，也可以针对每个文件设置页码范围，只取需要的页面再合并。
+        整个过程在浏览器里完成，适合整理扫描件、报名材料、交付文档和内部资料包。
+      </p>
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样操作</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先按最终阅读顺序整理文件，再上传，会比后面反复上移下移更省事。</li>
+        <li>如果只需要部分内容，优先填写页码范围，避免把整本 PDF 都合并进去。</li>
+        <li>合并完成后先抽查首页、目录页和最后一页，确认顺序和页数没有问题。</li>
+        <li>文件很多时分批处理会更稳，也更容易复查。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>会不会压缩画质？</strong> 这页主要是重新组合 PDF 页面，不是重新截图压缩，所以一般不会主动降低画质。</p>
+        <p><strong>能不能只取某几页？</strong> 可以，每个文件都支持填写页码范围，比如 <code>1-3, 8, 10-12</code>。</p>
+        <p><strong>文件会上传吗？</strong> 当前页面在浏览器本地处理，适合先整理日常办公和内部资料文档。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你还在判断“什么时候该合并、什么时候该拆页、什么时候该加水印”，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/pdf-merge-scenarios/">《PDF 合并拆分页和加水印的常见场景》</a>。
+      </p>
+    </section>
+  </article>
+</div>
+`;export{t as default};

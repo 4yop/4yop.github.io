@@ -1,0 +1,40 @@
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合把截图、扫描件和照片里的文字提取出来，支持继续复制文本或导出结果。
+        对票据整理、表格录入、试卷摘录和扫描文档提取这类场景很方便。
+      </p>
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先选对识别语言，再上传图片；混合内容时优先选更接近主体的语言。</li>
+        <li>图片尽量裁正、提高对比度，识别结果通常会更稳。</li>
+        <li>批量处理时先看前几张结果，再决定是否整批导出。</li>
+        <li>识别错得比较明显的单张图片，单独重跑通常比整批重复更省时间。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>手写字能识别吗？</strong> 可以尝试，但规整印刷体和清晰截图通常更准，潦草手写体更容易出错。</p>
+        <p><strong>为什么同一批图效果差别很大？</strong> 最常见原因是清晰度、倾斜角度、背景干扰和语言选择不一致。</p>
+        <p><strong>结果能继续整理吗？</strong> 可以，页面支持复制文本和导出结果，方便后续清洗和复核。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你还在比较本地 OCR 和在线 OCR 的差别，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/local-ocr-vs-online-ocr/">《本地 OCR 和在线 OCR 怎么选》</a>。
+      </p>
+    </section>
+  </article>
+</div>
+`;export{t as default};
