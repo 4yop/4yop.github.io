@@ -511,5 +511,41 @@
     "deployment": "桌面端本地运行，数据不上传云端；企业版2026.03.07已开源",
     "features": "国产龙虾桌面应用，以小螃蟹桌宠形态呈现；能操作浏览器、读写文件、调用本地应用，完成市场调研、信息整理等自动化工作；深度适配飞书、钉钉、企业微信；支持MiniMax/Kimi/GLM/Qwen/DeepSeek等多家国产模型；本地运行隐私保护；获近亿元融资（湖畔山南、初心资本、高途、顺福资本联投）",
     "website": "https://deskclaw.ai"
+  },
+  {
+    "id": 98,
+    "name": "Hermes Agent",
+    "developer": "Nous Research（美国开源AI研究实验室）",
+    "releaseTime": "2026.02",
+    "deployment": "开源部署，支持5美元VPS/Docker/Serverless等6种方式，一行命令安装",
+    "features": "唯一内置自学习循环的AI Agent框架，从任务中自主生成skill并持续优化；跨会话持久记忆用户偏好；支持200+大模型（OpenRouter/OpenAI/Claude/Ollama等）；600+预置技能；MIT协议完全免费可商用；GitHub 5.5万+ Stars，2026年增长最快开源Agent项目之一",
+    "website": "https://github.com/NousResearch/hermes-agent"
+  },
+  {
+    "id": 99,
+    "name": "小艺Claw",
+    "developer": "华为",
+    "releaseTime": "2026.04",
+    "deployment": "基于HarmonyOS系统级集成，华为手机内置",
+    "features": "基于HarmonyOS打造的专属养成系AI助理；从视频创作到账单理管的全场景覆盖；深度理解用户习惯，持续学习进化；系统级执行能力，可直接调用鸿蒙系统API",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_16969d5fb3026852"
+  },
+  {
+    "id": 100,
+    "name": "Xiaomi miclaw",
+    "developer": "小米",
+    "releaseTime": "2026.03.06",
+    "deployment": "手机端系统级集成，基于MiMo大模型，首批支持小米17系列机型（封测阶段）",
+    "features": "国内首个手机端类OpenClaw AI智能体；基于MiMo万亿参数大模型构建；四层能力架构：系统底层调用、个人上下文理解、人车家全生态互联、自进化学习；可直接操控手机执行复杂任务，管理智能家居设备",
+    "website": "https://www.leikeji.com/article/75272"
+  },
+  {
+    "id": 101,
+    "name": "帝王蟹 ClawHive",
+    "developer": "网易智企",
+    "releaseTime": "2026.04.10",
+    "deployment": "企业级SaaS平台，支持对接钉钉/飞书/企业微信等办公平台",
+    "features": "企业级AI Agent管理平台，定位为指挥龙虾军团协同作战的管理中心；四层纵深安全防御体系；权限管控、算力调度与知识沉淀能力；解决企业AI Agent安全失控、多Agent统一管控、使用经验沉淀三大难题",
+    "website": "https://new.qq.com/rain/a/20260410A07NVK00"
   }
 ]

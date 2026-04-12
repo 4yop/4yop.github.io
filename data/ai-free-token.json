@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 14:38",
+  "updatedAt": "2026-04-12 09:35",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -489,18 +489,27 @@
     },
     {
       "name": "GitHub Models",
-      "quota": "50~150 次请求/天（GPT-4o、GPT-4.1、Grok-3 等）",
-      "cycle": "每日重置（永久免费层）",
+      "quota": "50~150 次请求/天（GPT-4o、GPT-4.1、Grok-3、GPT-5系列、o3/o4系列、Llama 4、DeepSeek-R1-0528 等多模型；限速根据模型类型浮动）",
+      "cycle": "每日重置（永久免费层；不同模型每日请求次数不同，50-150次/天）",
       "url": "https://github.com/marketplace/models",
       "develop": {
         "document_url": "https://docs.github.com/en/github-models",
         "base_url": "https://models.github.com/inference",
         "models": [
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5-nano",
           "gpt-4o",
           "gpt-4o-mini",
           "gpt-4.1",
+          "grok-3",
           "grok-3-mini",
-          "llama-3.3-70b-instruct"
+          "llama-4-scout",
+          "llama-4-maverick",
+          "llama-3.3-70b-instruct",
+          "deepseek-r1-0528",
+          "o3",
+          "o4-mini"
         ]
       }
     },
@@ -919,7 +928,6 @@
         ]
       }
     },
-
     {
       "name": "ChatAnywhere",
       "quota": "免费API Key：GPT-4o-mini/GPT-3.5-turbo 200次/天，DeepSeek-R1/V3 30次/天，GPT-5系列5次/天（每个IP+Key组合计算；需GitHub登录申请；仅供个人非商业用途）",
@@ -1239,6 +1247,26 @@
           "voyage-multimodal-3.5",
           "rerank-2.5",
           "rerank-2.5-lite"
+        ]
+      }
+    },
+    {
+      "name": "云卷 API（高端复刻）",
+      "quota": "新用户注册即送 $0.2 免费体验额度（约 502 次调用）；国内直连，无需翻墙，无需绑海外卡；支持 GPT-4o、Claude 3.7 Sonnet、Gemini 1.5 Pro、Mistral、Llama 等 500+ 模型；OpenAI 兼容接口；第三方 API 聚合代理平台",
+      "cycle": "一次性注册赠送（用完为止）",
+      "url": "https://yunjuan.top",
+      "develop": {
+        "document_url": "https://yunjuan.top",
+        "base_url": "https://yunjuan.top/v1",
+        "models": [
+          "gpt-4o",
+          "gpt-3.5-turbo",
+          "claude-3.7-sonnet",
+          "claude-3.5-haiku",
+          "gemini-1.5-pro",
+          "gemini-1.5-flash",
+          "mistral-large",
+          "llama-3.1"
         ]
       }
     }
