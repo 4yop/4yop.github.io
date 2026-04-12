@@ -1,0 +1,1 @@
+const t="在线扬声器(喇叭)清灰工具",o="利用特定音频对手机扬声器(喇叭)进行清灰处理，支持多种频率模式，有效清理扬声器内的灰尘",s="扬声器清灰,喇叭清灰,手机清灰,扬声器清理,音频清灰",e={title:t,description:o,keywords:s};export{e as default,o as description,s as keywords,t as title};
