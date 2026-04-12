@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 09:35",
+  "updatedAt": "2026-04-12",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1267,6 +1267,64 @@
           "gemini-1.5-flash",
           "mistral-large",
           "llama-3.1"
+        ]
+      }
+    },
+    {
+      "name": "NVIDIA NIM (build.nvidia.com)",
+      "quota": "免费API端点（Free Endpoint），支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V3/R1等主流开源及商业模型；基于NVIDIA GPU加速推理",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://build.nvidia.com",
+      "develop": {
+        "document_url": "https://build.nvidia.com/docs",
+        "base_url": "https://integrate.api.nvidia.com/v1",
+        "models": [
+          "minimaxai/minimax-m2.7",
+          "moonshotai/kimi-k2-instruct",
+          "moonshotai/kimi-k2-thinking",
+          "qwen/qwen3-coder-480b-a35b-instruct",
+          "mistralai/devstral-2-123b-instruct-2512",
+          "deepseek-ai/deepseek-v3",
+          "deepseek-ai/deepseek-r1",
+          "meta/llama-3.3-70b-instruct",
+          "nvidia/nemotron-3-nano-30b-a3b"
+        ]
+      }
+    },
+    {
+      "name": "Scaleway Generative APIs",
+      "quota": "100万 token 免费额度（输入输出合计计算）；60 RPM速率限制；欧洲托管（符合GDPR，适合欧盟项目）；支持 Llama 3.3 70B、Mistral Small 3.x、Qwen3、DeepSeek R1 Distill、Gemma 3、Pixtral 12B等多款开源模型；完全兼容OpenAI API格式",
+      "cycle": "一次性免费额度（用完后按量付费，€0.30-1.80/百万token不等）",
+      "url": "https://www.scaleway.com/en/generative-apis/",
+      "develop": {
+        "document_url": "https://www.scaleway.com/en/docs/generative-apis",
+        "base_url": "https://api.scaleway.com/v1",
+        "models": [
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "meta-llama/Llama-3.1-8B-Instruct",
+          "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+          "qwen/Qwen3-235B-A22B-Instruct",
+          "deepseek-ai/deepseek-r1-distill-llama-70b",
+          "google/gemma-3-27b-it",
+          "black-forest-labs/Pixtral-12B-2409"
+        ]
+      }
+    },
+    {
+      "name": "Novita AI",
+      "quota": "新用户注册赠送 $1 免费积分（支持 Llama 3.3 70B、Qwen2.5 72B、DeepSeek V3、GLM-5、Qwen3 Coder Next 等主流开源模型；同时提供 Stable Diffusion、Flux 等图像生成模型；价格低至 $0.20/百万token）",
+      "cycle": "一次性注册积分（用完为止）",
+      "url": "https://novita.ai",
+      "develop": {
+        "document_url": "https://docs.novita.ai",
+        "base_url": "https://api.novita.ai/v3",
+        "models": [
+          "meta-llama/llama-3.3-70b-instruct",
+          "qwen/qwen2.5-72b-instruct",
+          "deepseek-ai/deepseek-v3",
+          "zai-org/glm-5",
+          "qwen/qwen3-coder-next",
+          "stable-diffusion/stable-diffusion-3.5-large"
         ]
       }
     }

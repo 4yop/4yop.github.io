@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CentOS Updates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #932e23;
+            font-family: 'Red Hat Display', Arial, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            color: #fff;
+            user-select: none;
+            position: fixed;
+            text-align: center;
+            cursor: none;
+        }
+        .center {
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            border: 4px solid #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .progress-container {
+            width: 400px;
+            margin: 30px auto;
+        }
+        .label {
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #ffcc99;
+        }
+        .loader {
+            width: 100%;
+            height: 20px;
+            background: #7a2620;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+            transition: width 0.3s ease;
+        }
+        .percentage {
+            font-size: 32px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .message {
+            color: #ffd4a3;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="logo">C</div>
+        <h1>CentOS Stream 9</h1>
+        <p style="color:#ffc; font-size:18px;">正在安装软件更新</p>
+        
+        <div class="progress-container">
+            <div class="label">正在下载: kernel-core (62%)</div>
+            <div class="loader">
+                <div class="progress" id="progress" style="width: 62%"></div>
+            </div>
+        </div>
+        
+        <div class="percentage" id="timer">62%</div>
+        <div class="message">请勿关闭系统</div>
+    </div>
+
+    <script>
+        var count = 61;
+        var counter = setInterval(timer, 1400);
+
+        function timer() {
+            count = count + 1;
+            if (count > 100) count = 1;
+
+            document.getElementById('timer').innerHTML = count + '%';
+            document.getElementById('progress').style.width = count + '%';
+            
+            document.querySelector('.label').textContent = '正在下载: kernel-core (' + count + '%)';
+        }
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

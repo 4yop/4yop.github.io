@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ubuntu Updates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #300a24;
+            font-family: 'Ubuntu', Arial, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            color: #fff;
+            user-select: none;
+            position: fixed;
+            text-align: center;
+            cursor: none;
+        }
+        .center {
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border: 3px solid #e95420;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #e95420;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        .loader {
+            width: 350px;
+            height: 6px;
+            background: #555;
+            margin: 30px auto;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background: #e95420;
+            transition: width 0.3s ease;
+        }
+        .percentage {
+            font-size: 32px;
+            margin-top: 15px;
+            color: #fff;
+        }
+        .message {
+            color: #ccc;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="logo">U</div>
+        <h1>Ubuntu</h1>
+        <p style="color:#aaa; font-size:18px;">正在安装系统更新</p>
+        <div class="loader">
+            <div class="progress" id="progress" style="width: 38%"></div>
+        </div>
+        <div class="percentage" id="timer">38%</div>
+        <div class="message">请勿关闭计算机</div>
+    </div>
+
+    <script>
+        var count = 37;
+        var counter = setInterval(timer, 1100);
+
+        function timer() {
+            count = count + 1;
+            if (count > 100) count = 1;
+
+            document.getElementById('timer').innerHTML = count + '%';
+            document.getElementById('progress').style.width = count + '%';
+        }
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

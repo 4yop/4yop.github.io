@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arch Linux Updates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0c5286;
+            font-family: 'DejaVu Sans', Arial, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            color: #fff;
+            user-select: none;
+            position: fixed;
+            text-align: center;
+            cursor: none;
+        }
+        .center {
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            background: #1793d1;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .terminal {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 20px auto;
+            width: 400px;
+        }
+        .percentage {
+            font-size: 32px;
+            margin-top: 15px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="logo">A</div>
+        <h1>Arch Linux</h1>
+        <p style="color:#aaa; font-size:16px;">正在更新系统包</p>
+        <div class="terminal" id="terminal">
+            <div>[sudo] password for user: ****</div>
+            <div>:: 正在同步软件包数据库...</div>
+            <div>:: 正在下载核心更新...</div>
+            <div style="color:#ff66000">==> 正在安装: linux (5.15.90-1) 45%</div>
+        </div>
+        <div class="percentage" id="timer">45%</div>
+    </div>
+
+    <script>
+        var count = 44;
+        var counter = setInterval(timer, 1200);
+
+        function timer() {
+            count = count + 1;
+            if (count > 100) count = 1;
+
+            document.getElementById('timer').innerHTML = count + '%';
+            
+            const terminal = document.getElementById('terminal');
+            const messages = [
+                '[sudo] password for user: ****',
+                ':: 正在同步软件包数据库...',
+                ':: 正在下载核心更新...',
+                '==> 正在安装: linux (' + count + '%)'
+            ];
+            terminal.innerHTML = '<div>' + messages.join('</div><div>') + '</div>';
+        }
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

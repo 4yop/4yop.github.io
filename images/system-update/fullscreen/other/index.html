@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>System Updates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1e3c72, #2a5298, #7e22ce, #a855f7);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            color: #fff;
+            user-select: none;
+            position: fixed;
+            text-align: center;
+            cursor: none;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .center {
+            position: absolute;
+            width: 550px;
+            height: 450px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .gear-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+        }
+        .gear {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 6px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 3s linear infinite;
+        }
+        .gear::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 4px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            border-bottom-color: rgba(255,255,255,0.8);
+            animation: spin 2s linear infinite reverse;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 44px;
+            font-weight: 300;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.85);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .progress-wrapper {
+            width: 420px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.3);
+            padding: 25px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 10px;
+        }
+        .loader {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+            background-size: 200% 100%;
+            animation: shimmer 2s ease-in-out infinite;
+            transition: width 0.5s ease;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .percentage {
+            font-size: 48px;
+            font-weight: 200;
+            margin-top: 25px;
+            opacity: 0.95;
+        }
+        .footer-message {
+            color: rgba(255,255,255,0.75);
+            font-size: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="gear-container">
+            <div class="gear"></div>
+        </div>
+        
+        <h1>SYSTEM UPDATE</h1>
+        <p class="subtitle">正在安装重要更新</p>
+        
+        <div class="progress-wrapper">
+            <div class="progress-header">
+                <span>正在下载更新文件...</span>
+                <span id="timer">56%</span>
+            </div>
+            <div class="loader">
+                <div class="progress" id="progress" style="width: 56%"></div>
+            </div>
+        </div>
+        
+        <div class="percentage">56%</div>
+        <div class="footer-message">请勿关闭或重启您的设备</div>
+    </div>
+
+    <script>
+        var count = 55;
+        var counter = setInterval(timer, 1350);
+
+        function timer() {
+            count = count + 1;
+            if (count > 100) count = 1;
+
+            document.getElementById('timer').innerHTML = count + '%';
+            document.querySelectorAll('.percentage')[0].textContent = count + '%';
+            document.getElementById('progress').style.width = count + '%';
+            
+            document.querySelector('.progress-header span').textContent = 
+                count < 30 ? '正在检查更新...' :
+                count < 60 ? '正在下载更新文件...' :
+                count < 85 ? '正在安装更新...' : '正在完成配置...';
+        }
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
