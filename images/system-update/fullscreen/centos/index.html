@@ -1,122 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CentOS Updates</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #932e23;
-            font-family: 'Red Hat Display', Arial, sans-serif;
-            width: 100vw;
-            height: 100vh;
-            color: #fff;
-            user-select: none;
-            position: fixed;
-            text-align: center;
-            cursor: none;
-        }
-        .center {
-            position: absolute;
-            width: 500px;
-            height: 450px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 25px;
-            border: 4px solid #fff;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: bold;
-            animation: bounce 2s ease-in-out infinite;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        h1 {
-            font-size: 42px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .progress-container {
-            width: 400px;
-            margin: 30px auto;
-        }
-        .label {
-            text-align: left;
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #ffcc99;
-        }
-        .loader {
-            width: 100%;
-            height: 20px;
-            background: #7a2620;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background: linear-gradient(90deg, #ff6b35, #f7931e);
-            transition: width 0.3s ease;
-        }
-        .percentage {
-            font-size: 32px;
-            margin-top: 20px;
-            color: #fff;
-        }
-        .message {
-            color: #ffd4a3;
-            font-size: 16px;
-            margin-top: 25px;
-        }
-    </style>
-</head>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CentOS 更新中</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#262626;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DejaVu Sans','Noto Sans SC',sans-serif;color:#e0e0e0;overflow:hidden}
+.cent-logo{width:64px;margin-bottom:28px;border-radius:50%;border:3px solid #932a1c;padding:8px;background:#fff}
+.title{font-size:18px;margin-bottom:20px;font-weight:normal;color:#ccc}
+.bar-wrap{width:320px;height:5px;background:#444;border-radius:3px}
+.bar-inner{height:100%;width:0%;background:#932a1c;border-radius:3px;animation:prog 18s ease-in-out infinite}
+@keyframes prog{0%{width:0%}50%{width:55%}100%{width:94%}}
+.sub{margin-top:14px;font-size:12px;color:#999}
+.terminal{margin-top:12px;width:380px;height:120px;background:#1a1a1a;border-radius:4px;padding:10px;font-family:'DejaVu Sans Mono',monospace;font-size:11px;line-height:1.55;color:#b8860b;text-align:left;overflow:hidden}
+</style></head>
 <body>
-    <div class="center">
-        <div class="logo">C</div>
-        <h1>CentOS Stream 9</h1>
-        <p style="color:#ffc; font-size:18px;">正在安装软件更新</p>
-        
-        <div class="progress-container">
-            <div class="label">正在下载: kernel-core (62%)</div>
-            <div class="loader">
-                <div class="progress" id="progress" style="width: 62%"></div>
-            </div>
-        </div>
-        
-        <div class="percentage" id="timer">62%</div>
-        <div class="message">请勿关闭系统</div>
-    </div>
-
-    <script>
-        var count = 61;
-        var counter = setInterval(timer, 1400);
-
-        function timer() {
-            count = count + 1;
-            if (count > 100) count = 1;
-
-            document.getElementById('timer').innerHTML = count + '%';
-            document.getElementById('progress').style.width = count + '%';
-            
-            document.querySelector('.label').textContent = '正在下载: kernel-core (' + count + '%)';
-        }
-
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
-</body>
-</html>
+<div class="cent-logo">
+<svg viewBox="0 0 96 96"><rect width="96" height="96" rx="16" fill="#fff"/><path d="M48 12L20 28v40l28 16 28-16V28L48 12z" fill="#932a1c"/><text x="48" y="58" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">C</text></svg>
+</div>
+<div class="title">正在更新系统软件包</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<div class="sub">更新进度 (<span id="pct">0</span>%)</div>
+<div class="terminal" id="term"></div>
+<script>var n=0,pkgs=['kernel-core','glibc','openssl','bash','systemd','python3','nginx','vim-minimal'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.5){var d=document.getElementById('term');d.innerHTML+='<div>Updating '+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*90)+10)+'.el7.x86_64 ...';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
+</body></html>

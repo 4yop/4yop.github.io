@@ -1,89 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Windows 8 Updates</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #000;
-            font-family: Segoe UI;
-            width: 100vw;
-            height: 100vh;
-            color: #fff;
-            user-select: none;
-            position: fixed;
-            text-align: center;
-            cursor: none;
-        }
-        .center {
-            position: absolute;
-            width: 500px;
-            height: 450px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1 {
-            font-size: 48px;
-            font-weight: 300;
-            font-family: Segoe UI Light, Segoe UI;
-            margin-bottom: 20px;
-        }
-        .loader {
-            width: 400px;
-            height: 6px;
-            background: #333;
-            margin: 40px auto;
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background: #00b6f0;
-            transition: width 0.3s ease;
-        }
-        .percentage {
-            font-size: 36px;
-            margin-top: 20px;
-            color: #fff;
-        }
-        .message {
-            color: #999;
-            font-size: 18px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Windows 8 更新中</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0078d7;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Segoe UI',sans-serif;color:#fff;overflow:hidden}
+.win-logo{width:70px;margin-bottom:36px}
+.title{font-size:20px;margin-bottom:22px;font-weight:300}
+.bar-wrap{width:340px;height:4px;background:#1a6ab5;border-radius:2px}
+.bar-inner{height:100%;width:0%;background:#fff;border-radius:2px;animation:prog 10s ease-in-out infinite}
+@keyframes prog{0%{width:0%}50%{width:67%}100%{width:93%}}
+.sub{margin-top:14px;font-size:13px;color:#aaddff}
+</style></head>
 <body>
-    <div class="center">
-        <h1>Windows 8</h1>
-        <p style="color:#888; font-size:20px;">正在应用 Windows 更新</p>
-        <div class="loader">
-            <div class="progress" id="progress" style="width: 33%"></div>
-        </div>
-        <div class="percentage" id="timer">33%</div>
-        <div class="message">请勿关闭电脑</div>
-    </div>
-
-    <script>
-        var count = 32;
-        var counter = setInterval(timer, 900);
-
-        function timer() {
-            count = count + 1;
-            if (count > 100) count = 1;
-
-            document.getElementById('timer').innerHTML = count + '%';
-            document.getElementById('progress').style.width = count + '%';
-        }
-
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
-</body>
-</html>
+<svg class="win-logo" viewBox="0 0 88 88" fill="#fff"><path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/></svg>
+<div class="title">正在更新 — 请勿关闭</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<div class="sub">正在应用更改...</div>
+</body></html>

@@ -1,89 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Windows 7 Updates</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #00234d;
-            font-family: Segoe UI;
-            width: 100vw;
-            height: 100vh;
-            color: #fff;
-            user-select: none;
-            position: fixed;
-            text-align: center;
-            cursor: none;
-        }
-        .center {
-            position: absolute;
-            width: 500px;
-            height: 450px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1 {
-            font-size: 48px;
-            font-weight: normal;
-            font-family: Segoe UI Light, Segoe UI;
-            margin-bottom: 20px;
-        }
-        .loader {
-            width: 400px;
-            height: 30px;
-            background: #0078d7;
-            margin: 40px auto;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background: #fff;
-            transition: width 0.3s ease;
-        }
-        .percentage {
-            font-size: 36px;
-            margin-top: 20px;
-            color: #fff;
-        }
-        .message {
-            color: #ccc;
-            font-size: 18px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Windows 7 更新中</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#004080;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Segoe UI','Microsoft YaHei',sans-serif;color:#fff;overflow:hidden}
+.win-logo{width:80px;margin-bottom:40px}
+.title{font-size:20px;margin-bottom:24px;font-weight:400}
+.bar-wrap{width:340px;height:6px;background:#1a5a9a;border-radius:3px}
+.bar-inner{height:100%;width:0%;background:#4a9ae8;border-radius:3px;animation:prog 12s ease-in-out infinite}
+@keyframes prog{0%{width:0%}50%{width:65%}100%{width:94%}}
+.sub{margin-top:14px;font-size:13px;color:#99ccff}
+</style></head>
 <body>
-    <div class="center">
-        <h1>Windows 7</h1>
-        <p style="color:#aaa; font-size:20px;">正在配置 Windows 更新</p>
-        <div class="loader">
-            <div class="progress" id="progress" style="width: 27%"></div>
-        </div>
-        <div class="percentage" id="timer">27%</div>
-        <div class="message">请勿关闭计算机</div>
-    </div>
-
-    <script>
-        var count = 26;
-        var counter = setInterval(timer, 800);
-
-        function timer() {
-            count = count + 1;
-            if (count > 100) count = 1;
-
-            document.getElementById('timer').innerHTML = count + '%';
-            document.getElementById('progress').style.width = count + '%';
-        }
-
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
-</body>
-</html>
+<svg class="win-logo" viewBox="0 0 88 88" fill="#fff"><path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/></svg>
+<div class="title">正在配置 Windows 更新</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<div class="sub">请勿关闭计算机</div>
+</body></html>

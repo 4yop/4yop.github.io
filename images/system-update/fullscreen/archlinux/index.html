@@ -1,110 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arch Linux Updates</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0c5286;
-            font-family: 'DejaVu Sans', Arial, sans-serif;
-            width: 100vw;
-            height: 100vh;
-            color: #fff;
-            user-select: none;
-            position: fixed;
-            text-align: center;
-            cursor: none;
-        }
-        .center {
-            position: absolute;
-            width: 500px;
-            height: 450px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .logo {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 25px;
-            background: #1793d1;
-            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            font-weight: bold;
-            animation: rotate 10s linear infinite;
-        }
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .terminal {
-            background: #000;
-            color: #0f0;
-            font-family: 'Courier New', monospace;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: left;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 20px auto;
-            width: 400px;
-        }
-        .percentage {
-            font-size: 32px;
-            margin-top: 15px;
-            color: #fff;
-        }
-    </style>
-</head>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arch Linux 更新中</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d1117;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DejaVu Sans Mono',monospace;color:#c9d1d9;overflow:hidden}
+.arch-logo{width:64px;margin-bottom:28px}
+.title{font-size:18px;margin-bottom:20px;font-weight:600;color:#58a6ff}
+.bar-wrap{width:340px;height:4px;background:#21262d;border-radius:2px}
+.bar-inner{height:100%;width:0%;background:#58a6ff;border-radius:2px;animation:prog 20s ease-in-out infinite}
+@keyframes prog{0%{width:0%}45%{width:50%}80%{width:82%}100%{width:96%}}
+.sub{margin-top:14px;font-size:12px;color:#8b949e}
+.terminal{margin-top:12px;width:380px;height:130px;background:#161b22;border-radius:6px;padding:10px;font-size:11px;line-height:1.6;overflow:hidden;text-align:left}
+.t-line{color:#7ee787}
+.t-warn{color:#ffa657}
+</style></head>
 <body>
-    <div class="center">
-        <div class="logo">A</div>
-        <h1>Arch Linux</h1>
-        <p style="color:#aaa; font-size:16px;">正在更新系统包</p>
-        <div class="terminal" id="terminal">
-            <div>[sudo] password for user: ****</div>
-            <div>:: 正在同步软件包数据库...</div>
-            <div>:: 正在下载核心更新...</div>
-            <div style="color:#ff66000">==> 正在安装: linux (5.15.90-1) 45%</div>
-        </div>
-        <div class="percentage" id="timer">45%</div>
-    </div>
-
-    <script>
-        var count = 44;
-        var counter = setInterval(timer, 1200);
-
-        function timer() {
-            count = count + 1;
-            if (count > 100) count = 1;
-
-            document.getElementById('timer').innerHTML = count + '%';
-            
-            const terminal = document.getElementById('terminal');
-            const messages = [
-                '[sudo] password for user: ****',
-                ':: 正在同步软件包数据库...',
-                ':: 正在下载核心更新...',
-                '==> 正在安装: linux (' + count + '%)'
-            ];
-            terminal.innerHTML = '<div>' + messages.join('</div><div>') + '</div>';
-        }
-
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
-</body>
-</html>
+<svg class="arch-logo" viewBox="0 0 72 72" fill="#58a6ff"><path d="M36 4L8 20v32l28 16 28-16V20L36 4zm0 6l22 12.5v25L36 60l-22-13v-25L36 10z"/><text x="36" y="44" text-anchor="middle" font-size="20" font-weight="bold">A</text></svg>
+<div class="title">正在同步软件包数据库</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<div class="sub">进度 (<span id="pct">0</span>%)</div>
+<div class="terminal" id="term"></div>
+<script>var n=0,pkgs=['linux','systemd','pacman','bash','gcc','python','firefox','neovim'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('term');var t='<span class=t-line>[::] 正在下载 '+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*900)+100)+'.pkg.tar.zst ('+(Math.floor(Math.random()*800)+200)+' KiB)</span>';d.innerHTML+='<div>'+t+'</div>';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
+</body></html>

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tools321.com/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/img/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/img/art-style/</loc>
@@ -85,6 +85,10 @@
     <lastmod>2026-03-28</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/img/petpet/</loc>
+    <lastmod>2026-04-13</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/img/qr-decoder/</loc>
     <lastmod>2026-03-28</lastmod>
   </url>
@@ -137,8 +141,12 @@
     <lastmod>2026-04-12</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/img/glitch-image/</loc>
+    <lastmod>2026-04-12</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/office/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/office/chart-bar-generator/</loc>
@@ -218,7 +226,7 @@
   </url>
   <url>
     <loc>https://tools321.com/text/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/text/camel-to-underscore/</loc>
@@ -281,6 +289,10 @@
     <lastmod>2026-03-27</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/text/marketing-article/</loc>
+    <lastmod>2026-04-12</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/text/shit-article/</loc>
     <lastmod>2026-03-25</lastmod>
   </url>
@@ -310,7 +322,7 @@
   </url>
   <url>
     <loc>https://tools321.com/math/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/math/base-converter/</loc>
@@ -378,7 +390,7 @@
   </url>
   <url>
     <loc>https://tools321.com/time/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/time/ba-zi-converter/</loc>
@@ -438,7 +450,7 @@
   </url>
   <url>
     <loc>https://tools321.com/geography/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/geography/alien-travel-calculator/</loc>
@@ -466,7 +478,7 @@
   </url>
   <url>
     <loc>https://tools321.com/random/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/call-name/</loc>
@@ -502,7 +514,7 @@
   </url>
   <url>
     <loc>https://tools321.com/video/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/video/m3u8-downloader/</loc>
@@ -550,7 +562,7 @@
   </url>
   <url>
     <loc>https://tools321.com/health/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/health/smoking-cost-calculator/</loc>
@@ -598,7 +610,7 @@
   </url>
   <url>
     <loc>https://tools321.com/quick-find/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/quick-find/all-hot-news/</loc>
@@ -634,7 +646,7 @@
   </url>
   <url>
     <loc>https://tools321.com/record/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/record/note/</loc>
@@ -650,7 +662,7 @@
   </url>
   <url>
     <loc>https://tools321.com/file/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/file/directory-generator/</loc>
@@ -670,7 +682,7 @@
   </url>
   <url>
     <loc>https://tools321.com/tools/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/tools/shortcut-generator/</loc>
@@ -710,7 +722,7 @@
   </url>
   <url>
     <loc>https://tools321.com/game/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/game/check-screen/</loc>
@@ -733,8 +745,12 @@
     <lastmod>2026-04-08</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/game/mini-ac/</loc>
+    <lastmod>2026-04-12</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/ai/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/ai/ai-chat/</loc>
@@ -778,7 +794,7 @@
   </url>
   <url>
     <loc>https://tools321.com/dev/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/client-info/</loc>
@@ -918,7 +934,7 @@
   </url>
   <url>
     <loc>https://tools321.com/article/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/article/jwt-token-expiry/</loc>

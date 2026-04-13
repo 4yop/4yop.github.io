@@ -1,0 +1,1 @@
+const t="摸头杀生成器",e="在线摸头杀表情包生成器，上传图片即可生成可爱的摸头杀GIF动图，支持调整位置、大小、速度等参数，万物皆可摸头",o="摸头杀,GIF生成器,表情包制作,头像动图,摸头动画,petpet",s={title:t,desc:e,keywords:o,"og:title":"摸头杀生成器 - 在线制作可爱摸头表情包","og:description":"免费在线摸头杀GIF生成器，上传图片一键生成摸头杀动画表情包"};export{s as default,e as desc,o as keywords,t as title};

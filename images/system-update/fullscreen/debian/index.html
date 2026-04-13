@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Debian 更新中</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#a80030;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DejaVu Sans','Noto Sans',sans-serif;color:#fff;overflow:hidden}
+.deb-logo{width:60px;margin-bottom:32px}
+.title{font-size:18px;margin-bottom:20px;font-weight:normal}
+.bar-wrap{width:300px;height:6px;background:#700020;border-radius:3px}
+.bar-inner{height:100%;width:0%;background:#ff6b8a;border-radius:3px;animation:prog 18s ease-in-out infinite}
+@keyframes prog{0%{width:0%}50%{width:58%}100%{width:93%}}
+.sub{margin-top:14px;font-size:12px;color:#ffaabb}
+.lines{margin-top:10px;font-family:'DejaVu Sans Mono',monospace;font-size:11px;text-align:left;width:340px;line-height:1.5;height:110px;overflow:hidden;color:#ee8899}
+</style></head>
+<body>
+<svg class="deb-logo" viewBox="0 0 64 76" fill="#fff"><path d="M32 0L0 19v38l32 19 32-19V19L32 0zm0 8l24 14v28L32 64 8 36V22L32 8z"/><circle cx="32" cy="42" r="12"/></svg>
+<div class="title">正在配置软件包 — 请勿关闭</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<div class="sub">正在安装 (<span id="pct">0</span>%)</div>
+<div class="lines" id="lines"></div>
+<script>var n=0,pkgs=['libc6','coreutils','bash','dpkg','apt','perl','python3','gcc'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('lines');d.innerHTML+='<div>Unpacking '+pkgs[li%pkgs.length]+' ...</div>';li++;if(d.children.length>6)d.removeChild(d.firstChild)}},750)</script>
+</body></html>

@@ -547,5 +547,41 @@
     "deployment": "企业级SaaS平台，支持对接钉钉/飞书/企业微信等办公平台",
     "features": "企业级AI Agent管理平台，定位为指挥龙虾军团协同作战的管理中心；四层纵深安全防御体系；权限管控、算力调度与知识沉淀能力；解决企业AI Agent安全失控、多Agent统一管控、使用经验沉淀三大难题",
     "website": "https://new.qq.com/rain/a/20260410A07NVK00"
+  },
+  {
+    "id": 102,
+    "name": "九章龙虾 (NineClaw)",
+    "developer": "好未来",
+    "releaseTime": "2026.03.16",
+    "deployment": "桌面客户端本地运行，开箱即用",
+    "features": "行业首款专为教师群体打造的AI原生桌面超级智能体；深度融合好未来教研能力与题库积累；支持教案生成、学情分析、课件制作、作业批改等教师专用技能；本地运行保障隐私安全；支持飞书、QQ、企业微信、钉钉等主流IM",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_80969b7f1c715052"
+  },
+  {
+    "id": 103,
+    "name": "有医助理",
+    "developer": "百度健康",
+    "releaseTime": "2026.04.02",
+    "deployment": "云端SaaS服务",
+    "features": "国内首个将权威医学检索与任务型AI执行深度融合的全场景医生工作平台；检索模式基于数千万级医学数据支持权威循证溯源；任务模式基于Claw框架，自主完成学术科研、论文创作、患者随访等复杂任务",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_20669cdd6d605252"
+  },
+  {
+    "id": 104,
+    "name": "小布Claw",
+    "developer": "OPPO",
+    "releaseTime": "2026.03（开发中）",
+    "deployment": "手机端系统级集成，基于ColorOS",
+    "features": "OPPO正在推进的龙虾AI产品，将实现与OPPO设备的有机融合；定位手机端AI智能体",
+    "website": "https://www.syiptv.com/article/show/322523"
+  },
+  {
+    "id": 105,
+    "name": "三省六部 (Edict)",
+    "developer": "开源社区 (cft0808)",
+    "releaseTime": "2026.04",
+    "deployment": "开源框架（MIT协议），GitHub 6.9k+ Stars",
+    "features": "基于中国古代官制设计的AI多Agent协作架构；把唐朝三省六部制搬到AI世界；具有分权制衡、专职审核、完全可观测特性；前端React 18 + TypeScript + Vite + Zustand",
+    "website": "https://github.com/cft0808/edict"
   }
 ]

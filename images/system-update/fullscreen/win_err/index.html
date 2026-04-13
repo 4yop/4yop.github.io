@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Windows 错误</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0078d7;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Segoe UI','Microsoft YaHei',sans-serif;color:#fff;overflow:hidden}
+.err-face{font-size:120px;margin-bottom:20px;line-height:1}
+.title{font-size:20px;margin-bottom:16px;font-weight:400}
+.sub{font-size:14px;color:#aaddff;margin-bottom:30px}
+.pct{font-size:13px;color:#99ccff;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.bar-wrap{width:300px;height:3px;background:#1a6ab5;border-radius:2px;margin-top:10px}
+.bar-inner{height:100%;width:35%;background:#ff6b6b;border-radius:2px;animation:errprog 8s ease-in-out infinite}
+@keyframes errprog{0%{width:25%}50%{width:40%}80%{width:38%}100%{width:35%}}
+</style></head>
+<body>
+<div class="err-face">:(</div>
+<div class="title">你的电脑遇到问题，需要重新启动</div>
+<div class="sub">我们正在收集一些错误信息，然后为你重新启动</div>
+<div class="pct"><span id="pct">35</span>% 完成</div>
+<div class="bar-wrap"><div class="bar-inner"></div></div>
+<script>var n=35;setInterval(function(){n=n<95?n+Math.floor(Math.random()*3):95;document.getElementById('pct').textContent=n},800)</script>
+</body></html>
