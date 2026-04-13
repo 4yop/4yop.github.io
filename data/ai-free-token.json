@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12",
+  "updatedAt": "2026-04-13",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1325,6 +1325,22 @@
           "zai-org/glm-5",
           "qwen/qwen3-coder-next",
           "stable-diffusion/stable-diffusion-3.5-large"
+        ]
+      }
+    },
+    {
+      "name": "Pollinations AI",
+      "quota": "完全免费、无需注册、无速率限制（基于社区算力，支持图片生成+大语言模型）；支持 OpenAI 兼容 API，直接替换 base URL 即可使用；支持 DeepSeek R1、Qwen、Llama、Gemini 等 50+ 模型；图片生成支持 Flux 系列模型（flux、turbo 等）",
+      "cycle": "永久免费（无需注册，无速率限制；社区算力驱动）",
+      "url": "https://pollinations.ai",
+      "develop": {
+        "document_url": "https://docs.pollinations.ai",
+        "base_url": "https://api.pollinations.ai/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-R1",
+          "qwen/qwen2.5-72b-instruct",
+          "meta-llama/llama-3.3-70b-instruct",
+          "google/gemini-2.5-pro"
         ]
       }
     }
