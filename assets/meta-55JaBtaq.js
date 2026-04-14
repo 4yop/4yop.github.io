@@ -1,1 +1,0 @@
-const t="椰树风格图生成器 - 在线制作椰树广告风格图片",o="免费在线椰树风格图生成器，快速创建椰树牌椰汁包装风格的广告图片，支持自定义文字内容，一键下载高清图片",s="椰树风格,椰树广告,椰树包装,广告图生成器,表情包制作,椰树椰汁,文字图片",e={title:t,description:o,keywords:s};export{e as default,o as description,s as keywords,t as title};

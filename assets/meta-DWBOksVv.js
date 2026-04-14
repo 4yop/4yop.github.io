@@ -1,1 +1,0 @@
-const t="在线小空调",o="便携式小空调模拟器，支持制冷制热模式切换和温度调节，带来清凉或温暖体验。",s="小空调,空调模拟器,在线空调,便携空调,制冷,制热,温度调节",c="在线小空调 - 便携空调模拟器",e="打开在线小空调，调节温度享受制冷或制热效果，支持多种模式切换。",n={title:t,desc:o,keywords:s,og_title:c,og_desc:e};export{n as default,o as desc,s as keywords,e as og_desc,c as og_title,t as title};
