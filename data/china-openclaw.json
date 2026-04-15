@@ -518,7 +518,7 @@
     "developer": "Nous Research（美国开源AI研究实验室）",
     "releaseTime": "2026.02",
     "deployment": "开源部署，支持5美元VPS/Docker/Serverless等6种方式，一行命令安装",
-    "features": "唯一内置自学习循环的AI Agent框架，从任务中自主生成skill并持续优化；跨会话持久记忆用户偏好；支持200+大模型（OpenRouter/OpenAI/Claude/Ollama等）；600+预置技能；MIT协议完全免费可商用；GitHub 5.5万+ Stars，2026年增长最快开源Agent项目之一",
+    "features": "唯一内置自学习循环的AI Agent框架，从任务中自主生成skill并持续优化；跨会话持久记忆用户偏好；支持200+大模型（OpenRouter/OpenAI/Claude/Ollama等）；600+预置技能；MIT协议完全免费可商用；GitHub 70,000+ Stars，2026年增长最快开源Agent项目之一",
     "website": "https://github.com/NousResearch/hermes-agent"
   },
   {
@@ -527,7 +527,7 @@
     "developer": "华为",
     "releaseTime": "2026.04",
     "deployment": "基于HarmonyOS系统级集成，华为手机内置",
-    "features": "基于HarmonyOS打造的专属养成系AI助理；从视频创作到账单理管的全场景覆盖；深度理解用户习惯，持续学习进化；系统级执行能力，可直接调用鸿蒙系统API",
+    "features": "基于HarmonyOS打造的专属养成系AI助理；从视频创作到账单管理的全场景覆盖；深度理解用户习惯，持续学习进化；系统级执行能力，可直接调用鸿蒙系统API",
     "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_16969d5fb3026852"
   },
   {
@@ -583,5 +583,32 @@
     "deployment": "开源框架（MIT协议），GitHub 6.9k+ Stars",
     "features": "基于中国古代官制设计的AI多Agent协作架构；把唐朝三省六部制搬到AI世界；具有分权制衡、专职审核、完全可观测特性；前端React 18 + TypeScript + Vite + Zustand",
     "website": "https://github.com/cft0808/edict"
+  },
+  {
+    "id": 106,
+    "name": "Genie Studio Agent",
+    "developer": "智元机器人（AGIBOT）",
+    "releaseTime": "2026.04.13",
+    "deployment": "云端SaaS平台，零代码应用部署",
+    "features": "面向具身作业场景的零代码应用平台；覆盖机器人全生命周期（开发/部署/运行/优化）；支持VLA模型、强化学习、视觉感知、运动控制、导航规划等核心能力；拖拽式工作流编排；内置三维场景重建与仿真系统；支持真机强化学习与全链路监控运维",
+    "website": "https://genie.agibot.com/"
+  },
+  {
+    "id": 107,
+    "name": "秒悟 Meoo",
+    "developer": "阿里云",
+    "releaseTime": "2026.04.12",
+    "deployment": "云端SaaS平台，内测阶段",
+    "features": "云端AI应用搭建工具，定位\"会编程、懂设计、自部署的全能AI伙伴\"；三大核心模块：创造（桌面/移动应用/技能创建）、技能（模块化能力封装）、橱窗（智能体应用展示）；聚合Kimi K2.5、Qwen3.6-Plus、GLM-5、MiniMax-M2.5等大模型；提供Agent（深度思考）和Swarms（蜂群并发）两种工作模式；可视化编辑系统与多人协作机制",
+    "website": "https://meoo.aliyun.com/"
+  },
+  {
+    "id": 108,
+    "name": "宝德鲲鹏OpenClaw一体机",
+    "developer": "宝德计算",
+    "releaseTime": "2026.04.09",
+    "deployment": "企业级本地化部署，自强鲲鹏服务器物理底座",
+    "features": "以自强鲲鹏服务器为物理底座，深度融合OpenClaw与沙箱技术；提供从硬件到应用的全栈国产化、高性能AI Agent落地路径；支持企业级安全防护与数据隔离；适合对数据安全和自主可控有高要求的企业场景",
+    "website": "https://www.powerleader.com.cn/"
   }
 ]
