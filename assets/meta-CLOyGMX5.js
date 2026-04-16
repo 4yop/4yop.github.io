@@ -1,1 +1,0 @@
-const t="椰树风格图生成器 - 在线制作椰树广告风格图片",o="营销推广文案在线生成工具，选择产品类型和卖点后自动生成吸引眼球的广告文案。支持小红书种草风、电商详情页、短视频口播稿等多种风格，降低文案撰写门槛。",s="椰树风格,椰树广告,椰树包装,广告图生成器,表情包制作,椰树椰汁,文字图片",e={title:t,description:o,keywords:s};export{e as default,o as description,s as keywords,t as title};

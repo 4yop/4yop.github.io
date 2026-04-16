@@ -9,6 +9,9 @@ Disallow: /dev/resource-extractor/
 Disallow: /text/pua-create/
 Disallow: /text/rainbow-fart/
 Disallow: /text/shit-article/
+Disallow: /img/yeshu-generator/
+Disallow: /img/msg-avatar/
+Disallow: /health/color-blindness-test/
 Crawl-delay: 1
 
 Sitemap: https://tools321.com/sitemap.xml
@@ -21,6 +24,9 @@ Disallow: /dev/resource-extractor/
 Disallow: /text/pua-create/
 Disallow: /text/rainbow-fart/
 Disallow: /text/shit-article/
+Disallow: /img/yeshu-generator/
+Disallow: /img/msg-avatar/
+Disallow: /health/color-blindness-test/
 
 User-Agent: Bingbot
 Allow: /
@@ -30,6 +36,9 @@ Disallow: /dev/resource-extractor/
 Disallow: /text/pua-create/
 Disallow: /text/rainbow-fart/
 Disallow: /text/shit-article/
+Disallow: /img/yeshu-generator/
+Disallow: /img/msg-avatar/
+Disallow: /health/color-blindness-test/
 
 User-Agent: Baiduspider
 Allow: /
@@ -39,4 +48,7 @@ Disallow: /dev/resource-extractor/
 Disallow: /text/pua-create/
 Disallow: /text/rainbow-fart/
 Disallow: /text/shit-article/
+Disallow: /img/yeshu-generator/
+Disallow: /img/msg-avatar/
+Disallow: /health/color-blindness-test/
 Crawl-delay: 2

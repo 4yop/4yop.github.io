@@ -610,5 +610,32 @@
     "deployment": "企业级本地化部署，自强鲲鹏服务器物理底座",
     "features": "以自强鲲鹏服务器为物理底座，深度融合OpenClaw与沙箱技术；提供从硬件到应用的全栈国产化、高性能AI Agent落地路径；支持企业级安全防护与数据隔离；适合对数据安全和自主可控有高要求的企业场景",
     "website": "https://www.powerleader.com.cn/"
+  },
+  {
+    "id": 109,
+    "name": "InstarClaw",
+    "developer": "深圳影达创新科技",
+    "releaseTime": "2026.04.15",
+    "deployment": "移动端（手机/平板），联发科G81/G99芯片适配完成",
+    "features": "移动端类OpenClaw AI智能体，全面支持OpenClaw v2026.4.14协议；已完成手机、平板双端适配；在联发科G81与G99芯片平台上稳定运行，响应迅速，多任务并发和后台唤醒场景下表现优秀；为移动端用户提供随时随地的AI任务执行能力",
+    "website": "http://news.yesky.com/hotnews/106/347106.shtml"
+  },
+  {
+    "id": 110,
+    "name": "YOYO Claw",
+    "developer": "荣耀（HONOR）",
+    "releaseTime": "2026.04.13",
+    "deployment": "系统级集成于MagicBook系列笔记本，开创「养虾本」新品类",
+    "features": "荣耀自研终端侧龙虾AI智能体技术；基于PinchBench测试集验证，综合词元消耗节省50%，显著降低长期使用成本；构建设备级独立安全虾守护，核心数据与隐私100%留存本地；首发搭载于荣耀MagicBook系列轻薄本；开创「养虾本」全新PC品类",
+    "website": "https://www.pingwest.com/w/312871"
+  },
+  {
+    "id": 111,
+    "name": "Co-Claw",
+    "developer": "中兴通讯",
+    "releaseTime": "2026.04.09",
+    "deployment": "企业级本地化AI一体机，开箱即用，支持私有化部署",
+    "features": "深度融合AiCube一体机基座与Co-Claw企业级AI智能体能力；「龙虾版」智会屏实现全流程AI智能体覆盖；会前智能预约、参会人员邀请、日程同步、资料生成；会中语音入会、会议协同、成员呼叫；会后任务闭环管理；开箱即用、安全可控、经济高效",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_92669d8a4f473252"
   }
 ]
