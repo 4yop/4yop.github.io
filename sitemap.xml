@@ -277,10 +277,6 @@
     <lastmod>2026-03-27</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/game/acg-type-test/</loc>
-    <lastmod>2026-04-17</lastmod>
-  </url>
-  <url>
     <loc>https://tools321.com/text/json-formatter/</loc>
     <lastmod>2026-03-28</lastmod>
   </url>
@@ -783,6 +779,10 @@
   <url>
     <loc>https://tools321.com/game/</loc>
     <lastmod>2026-04-15</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/game/acg-type-test/</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/game/check-screen/</loc>
