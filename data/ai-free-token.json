@@ -127,8 +127,8 @@
     },
     {
       "name": "智谱AI",
-      "quota": "新用户注册直接赠送 2000万 token 且永久有效；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash、GLM-5-Turbo 永久免费调用（cost=0）；包含600万 Tokens 的 glm-4.6v、1200万 Tokens 的 glm-4.5-air，另有 200万通用 Tokens；基础用户QPS=2，无额外RPM/TPM限制",
-      "cycle": "新用户2000万永久有效；Flash系列模型永久免费",
+      "quota": "新用户注册直接赠送 2000万 token 且永久有效；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash 永久免费调用（cost=0）；GLM-5-Turbo、GLM-5 等旗舰模型按量付费；包含600万 Tokens 的 glm-4.6v、1200万 Tokens 的 glm-4.5-air，另有 200万通用 Tokens；基础用户QPS=2，无额外RPM/TPM限制；邀请好友双方各获2000万 GLM-4.5-Air Tokens",
+      "cycle": "新用户2000万永久有效；Flash系列模型永久免费；GLM-5系列按量付费",
       "url": "https://bigmodel.cn",
       "develop": {
         "document_url": "https://www.bigmodel.cn/dev",
@@ -231,15 +231,17 @@
     },
     {
       "name": "Cerebras",
-      "quota": "100万 token/天（Llama 3.3 70B、Qwen3 32B，超高速推理）",
-      "cycle": "每日重置（永久免费层）",
+      "quota": "100万 token/天（Llama 3.3 70B、Llama 3.1 8B、Qwen3 32B、gpt-oss-120b 等模型，超高速推理，60K token/分钟）",
+      "cycle": "每日重置（永久免费层，约14,400 RPD）",
       "url": "https://cloud.cerebras.ai",
       "develop": {
         "document_url": "https://cloud.cerebras.ai/docs",
         "base_url": "https://api.cerebras.ai/v1",
         "models": [
           "llama-3.3-70b",
-          "qwen3-32b"
+          "llama-3.1-8b",
+          "qwen3-32b",
+          "gpt-oss-120b"
         ]
       }
     },
@@ -388,18 +390,20 @@
     },
     {
       "name": "Azure OpenAI",
-      "quota": "新用户注册赠送 $200 免费信用额度（可用于 GPT-4o、GPT-4、o1、DALL-E、Whisper 等全系列服务）",
-      "cycle": "一次性注册额度（30天有效）；部分选定服务可享受12个月免费层",
+      "quota": "新用户注册赠送 $5 API 积分（可用于 GPT-4o、GPT-4.1、GPT-5、o3、o4-mini 等全系列模型；有效期3个月）；GitHub Student Developer Pack 可额外获得 $100 Azure 信用额度",
+      "cycle": "一次性注册额度（$5积分3个月有效）；GitHub学生包$100信用额度12个月有效",
       "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
       "develop": {
         "document_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
         "base_url": "https://{your-resource-name}.openai.azure.com",
         "models": [
+          "gpt-5",
+          "gpt-5-mini",
           "gpt-4o",
-          "gpt-4",
-          "o1",
-          "o1-mini",
-          "o3-mini",
+          "gpt-4o-mini",
+          "gpt-4.1",
+          "o3",
+          "o4-mini",
           "dall-e-3",
           "whisper"
         ]
@@ -675,17 +679,6 @@
           "qwen/qwen3-coder-next",
           "stable-diffusion/stable-diffusion-3.5-large"
         ]
-      }
-    },
-    {
-      "name": "NVIDIA NIM API",
-      "quota": "【已合并至 NVIDIA NIM (build.nvidia.com) 条目】",
-      "cycle": "—",
-      "url": "https://build.nvidia.com",
-      "develop": {
-        "document_url": "—",
-        "base_url": "—",
-        "models": []
       }
     },
     {
