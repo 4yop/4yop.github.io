@@ -664,5 +664,77 @@
     "deployment": "企业级SaaS平台",
     "features": "企业级招采助手；基于招采大模型；无缝接入企业现有招采系统；引入「多Agent专家协同评审」机制，模拟真实专家团队评审流程；深度融合AstronClaw、SkillHub与招采知识库，构建懂招采业务的Agent智能决策大脑，全面升级企业招采能力",
     "website": "https://www.xfyun.cn/"
+  },
+  {
+    "id": 115,
+    "name": "MoliliClaw（莫哩哩）",
+    "developer": "当贝",
+    "releaseTime": "2026.03.15",
+    "deployment": "桌面客户端（Windows/macOS），一键安装，安装包仅20多MB",
+    "features": "国内首个满血中文版OpenClaw替代方案；纯中文交互界面；内置DeepSeek、MiniMax等国产大模型；打通微信/钉钉远程操控；8000+技能商店；文件白名单+本地加密沙箱；Token成本砍半；参与编制国内首个Claw可信标准",
+    "website": "https://www.molili.com.cn/"
+  },
+  {
+    "id": 116,
+    "name": "龙虾管家",
+    "developer": "腾讯（腾讯电脑管家团队）",
+    "releaseTime": "2026.04.09",
+    "deployment": "内置QClaw V2，安全沙箱本地运行",
+    "features": "AI安全沙箱防护系统，一键开启安全防护环境；实时监控拦截高风险脚本；拦截恶意prompt、skill投毒、文件误删、敏感信息泄露",
+    "website": "https://new.qq.com/rain/a/20260409A06QSM00"
+  },
+  {
+    "id": 117,
+    "name": "淘宝龙虾（生意管家）",
+    "developer": "淘天集团",
+    "releaseTime": "2026.03.31",
+    "deployment": "云端SaaS平台，淘宝工作台内置",
+    "features": "专为电商场景打造的AI Agent团队；四核心角色：AI数据分析师、AI设计师、AI广告投手、AI导购；7x24小时智能运营；内测商家反馈运营效率提升30%-40%",
+    "website": "https://k.sina.com.cn/article_7857201856_1d45362c0019043wf0.html"
+  },
+  {
+    "id": 118,
+    "name": "畅龙虾",
+    "developer": "畅捷通（用友集团旗下）",
+    "releaseTime": "2026.04.13",
+    "deployment": "云端SaaS平台，与畅捷通财务/进销存等系统深度集成",
+    "features": "业界首个专为小微企业打造的企业级AI Agent；基于MCP技术进入企业核心财务与业务系统；自我进化飞轮机制越用越聪明；定向权限钥匙确保数据安全",
+    "website": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhusenh2951973.shtml"
+  },
+  {
+    "id": 119,
+    "name": "KKClaw",
+    "developer": "开源社区（kk43994）",
+    "releaseTime": "2026.04.14",
+    "deployment": "开源桌面应用，支持Windows/macOS",
+    "features": "中文OpenClaw/Hermes桌面可视化伴侣；流体玻璃球宠物形态；14情绪系统实时反馈AI工作状态；声音克隆(MiniMax TTS)；Hermes兼容模式",
+    "website": "https://github.com/kk43994/kkclaw"
+  },
+  {
+    "id": 120,
+    "name": "京东云OpenClaw一体机",
+    "developer": "京东云",
+    "releaseTime": "2026.03.20",
+    "deployment": "企业级硬件一体机，支持日均处理Tokens 3.5亿至10亿",
+    "features": "开箱即用的OpenClaw硬件部署方案；预置应用镜像三步部署秒级上线；同步推出Coding Plan提供Token套餐与多模型选择",
+    "website": "https://new.qq.com/rain/a/20260321A01C8R00"
+  },
+  {
+    "id": 121,
+    "name": "MaudelClaw",
+    "developer": "摩豆智能",
+    "releaseTime": "2026.04",
+    "deployment": "企业级部署，支持私有化",
+    "features": "全栈技术自主的企业级AI Agent系统；深度国产生态适配；场景化落地能力强；跻身国产OpenClaw排行榜第一梯队",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_05169d4de3950052"
+  },
+  {
+    "id": 122,
+    "name": "LobsterAI（有道龙虾）",
+    "developer": "网易有道",
+    "releaseTime": "2026.02",
+    "deployment": "桌面客户端，100%全代码开源",
+    "features": "国内大厂中首个实现100%代码全开源的AI Agent产品；桌面级全场景个人助理；GitHub Star突破5000；获OpenClaw创始人公开赞誉",
+    "website": "http://www.jjckb.cn/20260415/e6ee6b9112ba439fb566cdbdeb8f6c0d/c.html"
   }
 ]
