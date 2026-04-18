@@ -637,5 +637,32 @@
     "deployment": "企业级本地化AI一体机，开箱即用，支持私有化部署",
     "features": "深度融合AiCube一体机基座与Co-Claw企业级AI智能体能力；「龙虾版」智会屏实现全流程AI智能体覆盖；会前智能预约、参会人员邀请、日程同步、资料生成；会中语音入会、会议协同、成员呼叫；会后任务闭环管理；开箱即用、安全可控、经济高效",
     "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_92669d8a4f473252"
+  },
+  {
+    "id": 112,
+    "name": "GlassClaw",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.04.15",
+    "deployment": "智能眼镜硬件设备，首批搭载AstronClaw能力的AI眼镜",
+    "features": "首批搭载AstronClaw能力的智能眼镜，极致轻量化设计整机仅40克；多语种AI实时翻译；唇动识别与远距收音技术；语音与视觉协同感知；联动云端实现信息实时理解与补全；搭载于讯飞AI眼镜，化身广交会超级商务助理",
+    "website": "https://www.xfyun.cn/"
+  },
+  {
+    "id": 113,
+    "name": "RobotClaw",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.04.15",
+    "deployment": "通用机器人超脑，搭载讯飞Guide01机器人",
+    "features": "通用机器人超脑产品；接收自然语言指令后自主完成任务拆解、路径规划与执行；无需预编程及人工干预；现场演示「送咖啡」功能，精准避开障碍物完成物理任务；标志机器人从「需要人伺候的工具」升级为「能听懂人话、自己干活的物理助手」",
+    "website": "https://aibot.xfyun.cn/"
+  },
+  {
+    "id": 114,
+    "name": "招采Claw",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.04.15",
+    "deployment": "企业级SaaS平台",
+    "features": "企业级招采助手；基于招采大模型；无缝接入企业现有招采系统；引入「多Agent专家协同评审」机制，模拟真实专家团队评审流程；深度融合AstronClaw、SkillHub与招采知识库，构建懂招采业务的Agent智能决策大脑，全面升级企业招采能力",
+    "website": "https://www.xfyun.cn/"
   }
 ]
