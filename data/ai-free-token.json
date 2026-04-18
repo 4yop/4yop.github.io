@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13",
+  "updatedAt": "2026-04-18",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -23,8 +23,8 @@
     },
     {
       "name": "阿里云百炼",
-      "quota": "每个模型独立赠送 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等，主账号与RAM子账号共享）；新用户限时活动可领超7000万Tokens+4500张图片生成（以官网当前活动为准）；免费额度仅用于实时推理，不含 Batch/微调",
-      "cycle": "自2025年9月8日起有效期调整为90天（此前开通的用户不受影响）；限时活动额度以活动规则为准",
+      "quota": "每个模型独立赠送 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等，主账号与RAM子账号共享）；免费额度仅用于实时推理，不含 Batch/微调；DataWorks API免费额度已于2026年4月14日起调整为按量付费（标准版10万次/月、专业版50万次/月），百炼模型Token免费额度暂未调整",
+      "cycle": "自2025年9月8日起有效期调整为90天（此前开通的用户不受影响）；免费额度用完可开启「用完即停」避免扣费",
       "url": "https://bailian.console.aliyun.com/",
       "develop": {
         "document_url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
@@ -245,7 +245,7 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V3.2 / DeepSeek-V4 及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除）",
+      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V3.2 / DeepSeek-V4 及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ DeepSeek V4 预计2026年4月下旬发布）",
       "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
@@ -661,34 +661,31 @@
     },
     {
       "name": "Novita AI",
-      "quota": "新用户赠送 $5 免费积分（支持 DeepSeek、Qwen、Llama 等 100+ 开源模型推理及图像/视频生成）",
-      "cycle": "一次性注册积分（30天有效）",
+      "quota": "新用户注册赠送 $0.5 免费积分（支持 Llama 3.3 70B、Qwen2.5 72B、DeepSeek V3、GLM-5、Qwen3 Coder Next 等主流开源模型；同时提供 Stable Diffusion、Flux 等图像生成模型；推荐积分$10起充，价格低至 $0.20/百万token）",
+      "cycle": "一次性注册积分（1年有效）",
       "url": "https://novita.ai",
       "develop": {
         "document_url": "https://novita.ai/docs",
         "base_url": "https://api.novita.ai/v3",
         "models": [
-          "deepseek-ai/DeepSeek-R1",
-          "Qwen/Qwen2.5-72B-Instruct",
-          "meta-llama/Llama-3.3-70B-Instruct"
+          "meta-llama/llama-3.3-70b-instruct",
+          "qwen/qwen2.5-72b-instruct",
+          "deepseek-ai/deepseek-v3",
+          "zai-org/glm-5",
+          "qwen/qwen3-coder-next",
+          "stable-diffusion/stable-diffusion-3.5-large"
         ]
       }
     },
     {
       "name": "NVIDIA NIM API",
-      "quota": "新用户注册赠送 1000 API 积分（普通邮箱1000次，企业邮箱5000次免费推理；支持200+模型含 Kimi K2.5、GLM-5、DeepSeek R1、Llama 4等；额外申请可获4000积分）；速率限制 40 RPM",
-      "cycle": "一次性注册积分（12个月有效）",
+      "quota": "【已合并至 NVIDIA NIM (build.nvidia.com) 条目】",
+      "cycle": "—",
       "url": "https://build.nvidia.com",
       "develop": {
-        "document_url": "https://docs.nvidia.com/nim",
-        "base_url": "https://integrate.api.nvidia.com/v1",
-        "models": [
-          "nvidia/llama-3.3-nemotron-70b-instruct",
-          "nvidia/llama-3.1-nemotron-70b-instruct",
-          "nvidia/mistral-nemo-12b-instruct",
-          "deepseek-ai/deepseek-r1",
-          "meta/llama-4-maverick-17b-128e-instruct"
-        ]
+        "document_url": "—",
+        "base_url": "—",
+        "models": []
       }
     },
     {
@@ -727,8 +724,8 @@
     },
     {
       "name": "SambaNova Cloud",
-      "quota": "官方套餐页显示 Free 计划可直接开通且无需信用卡；新用户注册赠送 $5 API credits（30天有效），可访问 Production models；超出免费 credits 后需升级到 Developer/Enterprise 套餐继续按量使用",
-      "cycle": "$5 API credits 注册后30天有效；Free 计划长期可开通（无需信用卡，超额需升级付费）",
+      "quota": "官方套餐页显示 Free 计划可直接开通且无需信用卡；新用户注册赠送 $5 API credits（3个月有效），可访问 Production models；超出免费 credits 后需升级到 Developer/Enterprise 套餐继续按量使用",
+      "cycle": "$5 API credits 注册后3个月有效；Free 计划长期可开通（无需信用卡，超额需升级付费）",
       "url": "https://cloud.sambanova.ai",
       "develop": {
         "document_url": "https://cloud.sambanova.ai/docs",
@@ -744,16 +741,20 @@
     },
     {
       "name": "Scaleway Generative APIs",
-      "quota": "新用户赠送 100万 token（支持 Qwen3-235B、Gemma 3-27B、Devstral、Voxtral 等多语言模型，欧盟合规托管）",
-      "cycle": "一次性注册额度（用完为止）",
+      "quota": "100万 token 免费额度（输入输出合计计算）；60 RPM速率限制；欧洲托管（符合GDPR，适合欧盟项目）；支持 Llama 3.3 70B、Mistral Small 3.x、Qwen3、DeepSeek R1 Distill、Gemma 3、Pixtral 12B等多款开源模型；完全兼容OpenAI API格式",
+      "cycle": "一次性免费额度（用完后按量付费，€0.30-1.80/百万token不等）",
       "url": "https://www.scaleway.com/en/generative-apis/",
       "develop": {
-        "document_url": "https://www.scaleway.com/en/generative-apis/",
+        "document_url": "https://www.scaleway.com/en/docs/generative-apis",
         "base_url": "https://api.scaleway.com/v1",
         "models": [
-          "qwen3-235b-a22b",
-          "gemma-3-27b-it",
-          "devstral-small-2506"
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "meta-llama/Llama-3.1-8B-Instruct",
+          "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+          "qwen/Qwen3-235B-A22B-Instruct",
+          "deepseek-ai/deepseek-r1-distill-llama-70b",
+          "google/gemma-3-27b-it",
+          "black-forest-labs/Pixtral-12B-2409"
         ]
       }
     },
@@ -967,8 +968,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 活动时间至2026-03-15，已结束；请关注后续新活动）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
-      "cycle": "限时免费1个月（⚠️ 已结束，下次活动请关注官网公告）",
+      "quota": "限时免费1个月：Lite套餐 1.8万次/月，Pro套餐 9万次/月（共12,000个免费名额，先到先得；⚠️ 活动可能间歇性开放，请关注官网最新公告）；支持GLM-5、MiniMax-M2.5、Qwen3.5-397B-A17B、DeepSeek-V3.1、Qwen3-235B-A22B等主流模型，兼容OpenAI/Anthropic协议",
+      "cycle": "限时免费1个月（以官网当前公告为准，活动可能间歇性开放）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
@@ -1288,43 +1289,6 @@
           "deepseek-ai/deepseek-r1",
           "meta/llama-3.3-70b-instruct",
           "nvidia/nemotron-3-nano-30b-a3b"
-        ]
-      }
-    },
-    {
-      "name": "Scaleway Generative APIs",
-      "quota": "100万 token 免费额度（输入输出合计计算）；60 RPM速率限制；欧洲托管（符合GDPR，适合欧盟项目）；支持 Llama 3.3 70B、Mistral Small 3.x、Qwen3、DeepSeek R1 Distill、Gemma 3、Pixtral 12B等多款开源模型；完全兼容OpenAI API格式",
-      "cycle": "一次性免费额度（用完后按量付费，€0.30-1.80/百万token不等）",
-      "url": "https://www.scaleway.com/en/generative-apis/",
-      "develop": {
-        "document_url": "https://www.scaleway.com/en/docs/generative-apis",
-        "base_url": "https://api.scaleway.com/v1",
-        "models": [
-          "meta-llama/Llama-3.3-70B-Instruct",
-          "meta-llama/Llama-3.1-8B-Instruct",
-          "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-          "qwen/Qwen3-235B-A22B-Instruct",
-          "deepseek-ai/deepseek-r1-distill-llama-70b",
-          "google/gemma-3-27b-it",
-          "black-forest-labs/Pixtral-12B-2409"
-        ]
-      }
-    },
-    {
-      "name": "Novita AI",
-      "quota": "新用户注册赠送 $1 免费积分（支持 Llama 3.3 70B、Qwen2.5 72B、DeepSeek V3、GLM-5、Qwen3 Coder Next 等主流开源模型；同时提供 Stable Diffusion、Flux 等图像生成模型；价格低至 $0.20/百万token）",
-      "cycle": "一次性注册积分（用完为止）",
-      "url": "https://novita.ai",
-      "develop": {
-        "document_url": "https://docs.novita.ai",
-        "base_url": "https://api.novita.ai/v3",
-        "models": [
-          "meta-llama/llama-3.3-70b-instruct",
-          "qwen/qwen2.5-72b-instruct",
-          "deepseek-ai/deepseek-v3",
-          "zai-org/glm-5",
-          "qwen/qwen3-coder-next",
-          "stable-diffusion/stable-diffusion-3.5-large"
         ]
       }
     },
