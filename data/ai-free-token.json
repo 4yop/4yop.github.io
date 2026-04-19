@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18",
+  "updatedAt": "2026-04-19",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -996,14 +996,15 @@
     },
     {
       "name": "讯飞星辰MaaS",
-      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景；注意：活动可能随时调整）；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
-      "cycle": "永久免费（Qwen3-Coder-Next，不限量；政策以官方公告为准）",
+      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
+      "cycle": "Qwen3-Coder-Next/Qwen3-1.7B永久免费（不限量）；新客礼包一次性赠送；政策以官方公告为准",
       "url": "https://maas.xfyun.cn",
       "develop": {
         "document_url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
         "base_url": "https://maas-coding-api.cn-huabei-1.xf-yun.com/v2",
         "models": [
           "Qwen3-Coder-Next",
+          "Qwen3-1.7B",
           "Qwen3.5-35B-A3B",
           "GLM-5",
           "MiniMax-M2.5",
