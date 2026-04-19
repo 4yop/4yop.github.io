@@ -3,21 +3,24 @@
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 2.5 Flash/Pro：输入输出token免费（5 RPM/25万TPM/250 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Google搜索/地图接地：500 RPD免费（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemma 3系列（1B/4B/12B/27B）：14,400 RPD/15K TPM免费；Google搜索/地图接地：500 RPD免费（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
         "document_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
         "base_url": "https://generativelanguage.googleapis.com",
         "models": [
+          "gemini-3-flash",
           "gemini-2.5-flash",
           "gemini-2.5-flash-lite",
           "gemini-2.5-pro",
           "gemini-3.1-pro-preview",
           "gemini-3.1-flash-lite-preview",
-          "gemini-2.0-flash",
-          "gemini-1.5-flash",
-          "gemini-1.5-pro"
+          "gemini-3.1-flash-tts",
+          "gemma-3-27b-it",
+          "gemma-3-12b-it",
+          "gemma-3-4b-it",
+          "gemma-3-1b-it"
         ]
       }
     },
@@ -152,7 +155,7 @@
     },
     {
       "name": "Groq",
-      "quota": "Llama 3.1 8B：30 RPM / 6K TPM / 14,400 RPD（最高频次）；Llama 3.3 70B：30 RPM / 12K TPM / 1000 RPD；Llama 4 Scout：30 RPM / 30K TPM / 1000 RPD；Kimi K2 Instruct：60 RPM / 10K TPM / 1000 RPD；Qwen3 32B：60 RPM / 6K TPM / 1000 RPD；Groq Compound：30 RPM / 70K TPM / 250 RPD；Whisper：20 RPM / 2000 RPD；基于自研 LPU 芯片超高速推理（700+ tokens/秒），多模型永久免费层",
+      "quota": "Llama 3.1 8B：30 RPM / 6K TPM / 14,400 RPD（最高频次）；Llama 3.3 70B：30 RPM / 12K TPM / 1000 RPD；Llama 4 Scout：30 RPM / 30K TPM / 1000 RPD；Kimi K2 Instruct：60 RPM / 10K TPM / 1000 RPD；Qwen3 32B：30 RPM / 6K TPM / 1000 RPD；Allam 2 7B：7,000 RPD / 6K TPM；Groq Compound：30 RPM / 70K TPM / 250 RPD；Whisper：20 RPM / 2000 RPD；基于自研 LPU 芯片超高速推理（700+ tokens/秒），多模型永久免费层",
       "cycle": "每日重置（永久免费层）",
       "url": "https://console.groq.com",
       "develop": {
@@ -166,6 +169,7 @@
           "moonshotai/kimi-k2-instruct",
           "moonshotai/kimi-k2-instruct-0905",
           "qwen/qwen3-32b",
+          "ibm/allam-2-7b-instruct",
           "groq/compound",
           "groq/compound-mini",
           "openai/gpt-oss-120b",
@@ -213,7 +217,7 @@
     },
     {
       "name": "OpenRouter",
-      "quota": "免费模型（模型ID以 :free 结尾）：每分钟最多 20 次请求；每日限额：未充值账户 50 次/天，充值至少 $10 积分后升至 1000 次/天（DeepSeek R1、Llama 4、Qwen3 等多模型）；账户余额为负时即使免费模型也无法使用",
+      "quota": "免费模型（模型ID以 :free 结尾）：每分钟最多 20 次请求；每日限额：未充值账户 50 次/天，充值至少 $10 积分后升至 1000 次/天（28+模型包括DeepSeek R1、Llama 4、Qwen3 Coder 480B、GLM-4.5-Air、MiniMax M2.5、GPT-OSS-120B等）；账户余额为负时即使免费模型也无法使用",
       "cycle": "每日重置（永久免费层，免费模型标注 :free；付费可提升限额）",
       "url": "https://openrouter.ai",
       "develop": {
@@ -223,8 +227,15 @@
           "deepseek/deepseek-r1:free",
           "meta-llama/llama-4-scout:free",
           "qwen/qwen3-235b-a22b:free",
-          "qwen/qwen3.6-plus:free",
-          "google/gemini-2.5-pro:free",
+          "qwen/qwen3-coder-480b-a35b:free",
+          "qwen/qwen3-next-80b-a3b-instruct:free",
+          "z-ai/glm-4.5-air:free",
+          "minimax/minimax-m2.5:free",
+          "openai/gpt-oss-120b:free",
+          "openai/gpt-oss-20b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "google/gemma-4-31b-it:free",
+          "google/gemma-3-27b-it:free",
           "anthropic/claude-3.5-sonnet:free"
         ]
       }
