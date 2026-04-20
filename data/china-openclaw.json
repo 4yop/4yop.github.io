@@ -736,5 +736,14 @@
     "deployment": "桌面客户端，100%全代码开源",
     "features": "国内大厂中首个实现100%代码全开源的AI Agent产品；桌面级全场景个人助理；GitHub Star突破5000；获OpenClaw创始人公开赞誉",
     "website": "http://www.jjckb.cn/20260415/e6ee6b9112ba439fb566cdbdeb8f6c0d/c.html"
+  },
+  {
+    "id": 123,
+    "name": "MaxHermes",
+    "developer": "MiniMax",
+    "releaseTime": "2026.04.16",
+    "deployment": "云端SaaS平台，10秒快速部署，39元/月起",
+    "features": "全球首个基于Hermes Agent构建的云端自我进化AI助手；独特学习闭环机制：从每次复杂任务执行中自动提炼可复用技能，技能库持续扩充；搭载MiniMax M2.7模型；支持多子代理并行处理；跨会话长期记忆；支持自然语言定时任务；覆盖电商日报、竞品追踪、文献摘要等自动化场景；越用越智能",
+    "website": "https://maxhermes.minimax.io"
   }
 ]

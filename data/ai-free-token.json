@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19",
+  "updatedAt": "2026-04-20",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1310,6 +1310,44 @@
           "qwen/qwen2.5-72b-instruct",
           "meta-llama/llama-3.3-70b-instruct",
           "google/gemini-2.5-pro"
+        ]
+      }
+    },
+    {
+      "name": "LongCat（美团）",
+      "quota": "LongCat-Flash-Lite 每日 5000万 token 免费（轻量级高效 MoE 模型）；LongCat-Flash-Chat/Thinking/Omni 等系列每日 50万 token 免费；公测阶段暂不支持付费购买额度；申请可提升至每日 500万 token；支持 OpenAI 兼容 API 及 Anthropic 协议",
+      "cycle": "每日重置（永久免费，公测阶段）",
+      "url": "https://longcat.chat/platform",
+      "develop": {
+        "document_url": "https://longcat.chat/platform/docs/zh/",
+        "base_url": "https://api.longcat.chat/openai",
+        "models": [
+          "LongCat-Flash-Lite",
+          "LongCat-Flash-Chat",
+          "LongCat-Flash-Chat-2602-Exp",
+          "LongCat-Flash-Thinking",
+          "LongCat-Flash-Thinking-2601",
+          "LongCat-Flash-Omni-2603"
+        ]
+      }
+    },
+    {
+      "name": "IBM Watsonx.ai",
+      "quota": "Lite（免费）计划：每月 30万 token 推理额度（2 RPS速率限制）；每月 20 CUH 机器学习算力；支持 IBM Granite 3.3/3.2/3.1 系列、Meta Llama 4 Scout/Maverick、Mistral Small 3.1、Granite Embedding 等；Llama 4 Scout 目前为免费预览版；适合企业级合规场景，支持多语言和RAG",
+      "cycle": "每月重置（永久免费 Lite 计划，无需信用卡）",
+      "url": "https://dataplatform.cloud.ibm.com/registration/stepone?context=wx",
+      "develop": {
+        "document_url": "https://www.ibm.com/docs/en/watsonx/saas?topic=cloud-watsonxai-runtime-plans",
+        "base_url": "https://us-south.ml.cloud.ibm.com/ml/v1",
+        "models": [
+          "ibm/granite-3-3-8b-instruct",
+          "ibm/granite-3-2-8b-instruct",
+          "ibm/granite-3-8b-instruct",
+          "ibm/granite-3-2b-instruct",
+          "meta-llama/llama-4-scout-17b-16e-instruct",
+          "meta-llama/llama-3-3-70b-instruct",
+          "mistralai/mistral-small-3-1-24b-instruct-2503",
+          "ibm/granite-embedding-278m-multilingual"
         ]
       }
     }
