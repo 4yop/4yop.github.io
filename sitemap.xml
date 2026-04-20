@@ -785,10 +785,6 @@
     <lastmod>2026-04-16</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/tools/wechat-wallet/</loc>
-    <lastmod>2026-04-16</lastmod>
-  </url>
-  <url>
     <loc>https://tools321.com/game/</loc>
     <lastmod>2026-04-15</lastmod>
   </url>
@@ -921,6 +917,10 @@
     <lastmod>2026-03-27</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/dev/js-obfuscator/</loc>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/dev/file-hash/</loc>
     <lastmod>2026-03-25</lastmod>
   </url>
@@ -977,12 +977,28 @@
     <lastmod>2026-04-14</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/dev/meta-tag-generator/</loc>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/dev/snowflake-id/</loc>
     <lastmod>2026-04-08</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/dev/url-batch-generator/</loc>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/dev/utm-generator/</loc>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/dev/svg-convert/</loc>
     <lastmod>2026-03-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/dev/svg2css/</loc>
+    <lastmod>2026-04-20</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/timestamp/</loc>
