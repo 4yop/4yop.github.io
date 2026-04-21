@@ -745,5 +745,50 @@
     "deployment": "云端SaaS平台，10秒快速部署，39元/月起",
     "features": "全球首个基于Hermes Agent构建的云端自我进化AI助手；独特学习闭环机制：从每次复杂任务执行中自动提炼可复用技能，技能库持续扩充；搭载MiniMax M2.7模型；支持多子代理并行处理；跨会话长期记忆；支持自然语言定时任务；覆盖电商日报、竞品追踪、文献摘要等自动化场景；越用越智能",
     "website": "https://maxhermes.minimax.io"
+  },
+  {
+    "id": 124,
+    "name": "ToClaw",
+    "developer": "ToDesk（贝锐科技）",
+    "releaseTime": "2026.03.31",
+    "deployment": "云端托管，免安装，打开ToDesk即可使用，新用户赠送5000积分",
+    "features": "将OpenClaw核心能力深度集成到ToDesk远控软件；零门槛上手无需配置API Key；跨设备绑定ToDesk账号而非单台电脑；技能自动触发无需手动选择；支持微信绑定远程操控；所有复杂计算在云端完成，本地电脑只显示结果",
+    "website": "https://docs.todesk.com/"
+  },
+  {
+    "id": 125,
+    "name": "360安全龙虾",
+    "developer": "360集团",
+    "releaseTime": "2026.03",
+    "deployment": "桌面客户端一键安装，10分钟完成部署，支持Windows系统",
+    "features": "360安全卫士官方打造的OpenClaw一键部署工具；一键极速安装，拥有16家顶级模型，21000+技能生态；360龙虾卫士护航；自动进化/自动安装技能；IM一键接入；开箱即用无需复杂配置；将原本数小时的专业配置流程压缩到10分钟内",
+    "website": "https://mydown.yesky.com/c/25502.html"
+  },
+  {
+    "id": 126,
+    "name": "华为混合云Claw解决方案",
+    "developer": "华为云",
+    "releaseTime": "2026.03.28",
+    "deployment": "企业级本地化部署，服务构建器一键部署，支持客户自有数据中心",
+    "features": "覆盖部署、技能、安全、资源与运营的「五维战力」体系；为金融、政务、制造等关键行业构筑落地路径；复杂依赖关系与模型接入流程封装为自动化工具；界面化快速部署实现智能应用上线加速度",
+    "website": "https://www.toutiao.com/article/7623311552754369062/"
+  },
+  {
+    "id": 127,
+    "name": "ApkClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.03.24",
+    "deployment": "安卓手机部署，无需Root，Apache License 2.0开源",
+    "features": "国内首款基于OpenClaw框架的手机端工具；打破OpenClaw仅能电脑端使用的局限；不限制手机品牌所有安卓设备均可安装；安卓系统≥Android 9.0，内存≥4GB；隐私透明插件迭代高效",
+    "website": "https://apkclaw.ai"
+  },
+  {
+    "id": 128,
+    "name": "Claw大龙虾本地部署大师",
+    "developer": "未明确",
+    "releaseTime": "2026.03.27",
+    "deployment": "一站式本地部署工具，图形化界面，零代码操作",
+    "features": "专为OpenClaw打造的一站式本地部署工具；无需编写代码全程可视化操作；自动检测并安装所需组件；双击运行安装包跟随提示完成；让没有编程基础的用户也能轻松搭建AI助手",
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_20769c6368114352"
   }
 ]
