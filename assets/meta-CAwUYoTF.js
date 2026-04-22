@@ -1,0 +1,1 @@
+const t="学生发展趋势评估测验量表(SDTAS)",o="学生发展趋势评估量表(SDTAS)在线测评工具，用于评估学生在学业发展轨迹、能力成长空间和综合素质培养等方面的发展趋势与潜力。包含多维度发展指标的自我检测问卷，帮助学生全面了解自身成长状况的免费在线评估工具，无需注册打开即用，数据本地存储安全。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};

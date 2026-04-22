@@ -1,0 +1,1 @@
+const t="躯体化症状自评量表(SSS)",o="躯体化症状自评量表(SSS)在线测评工具，用于评估个体躯体化症状的表现程度和心理因素对身体不适感的影响作用。涵盖身体多个系统的不适感自我检测项目，帮助用户了解身心健康的整体状况和心理因素的关联性，免费在线使用无需下载安装任何软件，数据本地处理安全。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};

@@ -1,1 +1,0 @@
-const t="心形拼图制作工具 - 在线爱心拼图生成器",o="使用多张图片制作精美的爱心拼图效果，支持拖拽调整和随机填充，一键下载心形拼图图片",c="心形拼图,爱心拼图,图片拼图,拼图制作,照片拼图,在线拼图工具",e="/img/heart-collage/",n={title:t,description:o,keywords:c,canonical:e};export{e as canonical,n as default,o as description,c as keywords,t as title};

@@ -1,1 +1,0 @@
-const t="学生发展趋势评估测验量表(SDTAS)",o="是一款免费的在线工具，无需下载安装打开浏览器即可使用。操作简单便捷，支持多种参数自定义设置，满足日常工作生活中的各类需求。立即体验带来的便利服务吧！",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};

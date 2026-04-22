@@ -1,1 +1,0 @@
-const t="MAC地址查询工具",o="MAC地址（物理地址）查询和管理工具，支持厂商OUI识别、格式标准化和批量生成虚拟MAC地址。网络管理员用于设备识别和网络排障的场景。",s=["MAC地址查询","MAC地址厂商","OUI查询","网络设备识别"],e={title:t,description:o,keywords:s};export{e as default,o as description,s as keywords,t as title};

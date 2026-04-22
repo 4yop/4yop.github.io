@@ -1,0 +1,1 @@
+const t="性成瘾筛查测试(SAST)",o="性成瘾筛查量表(SAST)在线测评工具，用于评估个体是否存在性成瘾行为倾向及其严重程度。包含性行为频率、自我控制能力和负面社会影响等多个维度的自我检测题目，帮助用户了解自身性心理健康状况的免费在线自评测量表，打开浏览器即可使用，数据本地存储保护隐私。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};

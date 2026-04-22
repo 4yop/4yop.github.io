@@ -1,1 +1,0 @@
-const t="摸头杀GIF生成器",o="免费在线摸头杀GIF表情包生成器，上传任意人物照片即可自动生成可爱的摸头杀动画效果。支持自定义摸头的位置、大小、动画速度等参数调节，实时预览动图效果。一键导出高清GIF格式表情包，适合微信QQ聊天斗图使用。",e="摸头杀,GIF生成器,表情包制作,头像动图,摸头动画",s={title:t,desc:o,keywords:e,"og:title":"摸头杀GIF生成器 - 在线制作可爱摸头表情包","og:description":"免费在线摸头杀GIF表情包生成器，上传人物照片自动生成可爱的摸头杀动画效果。支持自定义位置、大小和速度参数，一键导出高清GIF动图。"};export{s as default,o as desc,e as keywords,t as title};

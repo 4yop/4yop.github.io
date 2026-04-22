@@ -790,5 +790,41 @@
     "deployment": "一站式本地部署工具，图形化界面，零代码操作",
     "features": "专为OpenClaw打造的一站式本地部署工具；无需编写代码全程可视化操作；自动检测并安装所需组件；双击运行安装包跟随提示完成；让没有编程基础的用户也能轻松搭建AI助手",
     "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_20769c6368114352"
+  },
+  {
+    "id": 129,
+    "name": "OfficeClaw",
+    "developer": "华为云",
+    "releaseTime": "2026.04.16",
+    "deployment": "Windows本地部署，PC端一键安装，无需复杂环境配置，邀测阶段每天10点限量发放邀请码",
+    "features": "华为云自研龙虾办公智能体，覆盖泛办公场景的企业级Claw应用；独创「思辨专家团」功能，多个Agent接入不同模型互相辩论头脑风暴；一键生成专业级PPT并自动排版美化，全要素可编辑；多智能体协同思辨深度调研产出研究报告；支持微信扫码直连，接入飞书/微信/钉钉/小艺等IM平台；内置工具调用安全护栏，高危操作需确认，敏感数据自动脱敏加密；预置PPT/Word/Excel等多场景技能与技能广场；源于华为云工程师开源项目Cat Café",
+    "website": "https://www.huaweicloud.com/product/officeclaw.html"
+  },
+  {
+    "id": 130,
+    "name": "QClaw海外版 (QClaw Global)",
+    "developer": "腾讯电脑管家",
+    "releaseTime": "2026.04.20",
+    "deployment": "桌面客户端一键安装，零门槛免部署下载即用，已在美国/加拿大/新加坡/韩国上线",
+    "features": "QClaw海外版是腾讯面向海外市场的消费级AI智能体；仅用5天完成开发，99%代码由QClaw自身生成；内置Agent Playground，涵盖健身教练/金融顾问/语言教师等多类专家角色；支持WhatsApp/Telegram等主流海外IM；内置多款国际顶尖大模型；支持中/英/法/西/韩多语言界面；内测期间每日赠送4000万token（最高价值700美元）；首批20000个Founding Claw名额；延续国内版极简基因，3分钟上线运行",
+    "website": "https://qclaw.qq.com/global"
+  },
+  {
+    "id": 131,
+    "name": "龙虾出行 RideClaw.ai",
+    "developer": "嘟嘟智行 + AI原生技术团队",
+    "releaseTime": "2026.04.21",
+    "deployment": "云端SaaS服务，基于OpenClaw框架",
+    "features": "AI出行品牌，一站式AI出行管家；完成近亿元人民币天使轮融资；核心团队来自Meta/Amazon Zoox/Lyft L5/Kimi/腾讯及清华/新南威尔士大学博士；支持自动驾驶接口对接、多模态交互技术与出行大数据模型；计划扩展至全国及OpenClaw覆盖国别；实现智能化个性化出行服务",
+    "website": "https://rideclaw.ai"
+  },
+  {
+    "id": 132,
+    "name": "CodeBuddy",
+    "developer": "腾讯",
+    "releaseTime": "2026.03",
+    "deployment": "桌面客户端安装（Windows/macOS），企业版支持私有化部署",
+    "features": "腾讯Claw三剑客之一，专注AI编程场景的Agent；与WorkBuddy（办公）、QClaw（个人助手）并列；支持代码生成、调试、重构等开发辅助；深度集成开发工具链；可连接微信等IM远程操控编程任务",
+    "website": "https://www.codebuddy.cn/"
   }
 ]
