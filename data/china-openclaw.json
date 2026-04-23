@@ -826,5 +826,32 @@
     "deployment": "桌面客户端安装（Windows/macOS），企业版支持私有化部署",
     "features": "腾讯Claw三剑客之一，专注AI编程场景的Agent；与WorkBuddy（办公）、QClaw（个人助手）并列；支持代码生成、调试、重构等开发辅助；深度集成开发工具链；可连接微信等IM远程操控编程任务",
     "website": "https://www.codebuddy.cn/"
+  },
+  {
+    "id": 133,
+    "name": "JVS Claw",
+    "developer": "阿里云（无影）",
+    "releaseTime": "2026.04.20",
+    "deployment": "云端Web登录即用+本地部署，免配置，支持Web/PC/移动端全端访问，免费体验4核8G云部署",
+    "features": "阿里云推出的云上安全养虾神器，基于OpenClaw框架打造；连一键都不用，Web登录即可使用；支持远程桌面可视化操作；全端覆盖（Web/PC/移动端App）；率先预装支付宝AI付能力；解决OpenClaw配置门槛高、安全风险大、需24小时开机三大痛点；邀测阶段，免费体验云端4核8G实例",
+    "website": "https://jvs.wuying.aliyun.com"
+  },
+  {
+    "id": 134,
+    "name": "云眸Claw",
+    "developer": "海康威视",
+    "releaseTime": "2026.04.24",
+    "deployment": "企业级SaaS平台，零售连锁门店专用",
+    "features": "海康威视云眸Claw家族首只龙虾，专为零售连锁门店设计的智能管理助手；支持远程巡店、数据复盘等核心功能；海康威视将陆续推出更多云眸Claw家族龙虾产品；结合海康威视视觉感知与安防能力，聚焦零售行业垂直场景",
+    "website": "https://www.hikvision.com/"
+  },
+  {
+    "id": 135,
+    "name": "出海匠",
+    "developer": "出海匠团队",
+    "releaseTime": "2026.04.23",
+    "deployment": "云端SaaS平台，AI-Native全链路跨境电商智能营销平台",
+    "features": "定位AI-Native全链路跨境电商智能营销平台；核心主张AI帮你做不是帮你查，强调AI执行属性；覆盖找爆品、做视频、冲销量完整工作流；从机会判断、内容生成、执行推进到结果回流的系统串联；4月23日举行AI Agent新版线上发布会",
+    "website": "https://chuhaijiang.com/"
   }
 ]
