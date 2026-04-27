@@ -1,3 +1,335 @@
-import{H as T,c as S,d as o,f as D,i as b,v as E,J as f,t as s,l as U,e as B,m,D as M,a as N}from"./index.js";import w from"./BaseToast.js";const k={"000000":{vendor:"Xerox Corporation",address:"M/S 105-50C, 800 Phillips Road, Webster, NY 14580, US",country:"US",countryName:"美国"},"00000C":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"000023":{vendor:"VMware, Inc.",address:"3401 Hillview Avenue, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"000029":{vendor:"Realtek Semiconductor Corp.",address:"No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, TW",country:"TW",countryName:"中国台湾"},"00002B":{vendor:"DEC (Digital Equipment Corporation)",address:"146 Main Street, Maynard, MA 01754, US",country:"US",countryName:"美国"},"000039":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"00004C":{vendor:"Dell Inc.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},"00005A":{vendor:"Microsoft Corporation",address:"One Microsoft Way, Redmond, WA 98052, US",country:"US",countryName:"美国"},"00005E":{vendor:"IANA (Internet Assigned Numbers Authority)",address:"12025 Waterfront Drive, Suite 300, Los Angeles, CA 90094, US",country:"US",countryName:"美国"},"000063":{vendor:"Hewlett-Packard Company",address:"1501 Page Mill Road, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"000064":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"000065":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"00006C":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"000078":{vendor:"Ericsson AB",address:"Kistagang 16, SE-164 80 Kista, SE",country:"SE",countryName:"瑞典"},"000081":{vendor:"SynOptics Communications, Inc.",address:"4401 Great America Parkway, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"000082":{vendor:"Atheros Communications, Inc.",address:"5480 Great Oaks Parkway, San Jose, CA 95119, US",country:"US",countryName:"美国"},"000083":{vendor:"Adaptec, Inc.",address:"691 S. Milpitas Boulevard, Milpitas, CA 95035, US",country:"US",countryName:"美国"},"000086":{vendor:"Qualcomm, Inc.",address:"5775 Morehouse Drive, San Diego, CA 92121, US",country:"US",countryName:"美国"},"00008C":{vendor:"3Com Corporation",address:"5400 Bayfront Plaza, Santa Clara, CA 95052, US",country:"US",countryName:"美国"},"000094":{vendor:"Askey Computer Corp.",address:"No. 12, Jing 5th Rd., Shenkeng Dist., New Taipei City 222, TW",country:"TW",countryName:"中国台湾"},"0000A2":{vendor:"Hewlett-Packard Company",address:"1501 Page Mill Road, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"0000A4":{vendor:"Asante Networks",address:"950 Thompson Place, Sunnyvale, CA 94085, US",country:"US",countryName:"美国"},"0000A9":{vendor:"Network Systems Corporation",address:"9900 West 78th Street, Minneapolis, MN 55439, US",country:"US",countryName:"美国"},"0000AA":{vendor:"Xerox Corporation",address:"M/S 105-50C, 800 Phillips Road, Webster, NY 14580, US",country:"US",countryName:"美国"},"0000AF":{vendor:"Ungermann-Bass, Inc.",address:"4201 Lakeside Drive, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"0000B0":{vendor:"Dell Computer Corp.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},"0000B3":{vendor:"Canon, Inc.",address:"30-2, Shimomaruko 3-chome, Ohta-ku, Tokyo 146-8501, JP",country:"JP",countryName:"日本"},"0000B4":{vendor:"NEC Corporation",address:"7-1, Shiba 5-chome, Minato-ku, Tokyo 108-8001, JP",country:"JP",countryName:"日本"},"0000B5":{vendor:"Nortel Networks",address:"195 The West Mall, Toronto, ON M3C 1H3, CA",country:"CA",countryName:"加拿大"},"0000B7":{vendor:"Bookham Technology plc",address:"Casa House, Caswell, Newport NP18 9HQ, GB",country:"GB",countryName:"英国"},"0000BC":{vendor:"Fujitsu Limited",address:"17-25, ShinKamata 1-chome, Ota-ku, Tokyo 144-8588, JP",country:"JP",countryName:"日本"},"0000C0":{vendor:"Western Digital Technologies, Inc.",address:"20511 Lake Forest Drive, Lake Forest, CA 92630, US",country:"US",countryName:"美国"},"0000C1":{vendor:"Enterasys Networks, Inc.",address:"50 Minuteman Road, Andover, MA 01810, US",country:"US",countryName:"美国"},"0000C6":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"0000C8":{vendor:"Altiga Networks, Inc.",address:"2730 Central Expressway, Santa Clara, CA 95051, US",country:"US",countryName:"美国"},"0000C9":{vendor:"3Com Corporation",address:"5400 Bayfront Plaza, Santa Clara, CA 95052, US",country:"US",countryName:"美国"},"0000CB":{vendor:"3Com Corporation",address:"5400 Bayfront Plaza, Santa Clara, CA 95052, US",country:"US",countryName:"美国"},"0000CC":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"0000CD":{vendor:"Arrowpoint Communications, Inc.",address:"400 Nickerson Road, Marlborough, MA 01752, US",country:"US",countryName:"美国"},"0000CE":{vendor:"Oracle Corporation",address:"500 Oracle Parkway, Redwood Shores, CA 94065, US",country:"US",countryName:"美国"},"0000CF":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"0000D0":{vendor:"Juniper Networks, Inc.",address:"1194 North Mathilda Avenue, Sunnyvale, CA 94089, US",country:"US",countryName:"美国"},"0000D1":{vendor:"Bay Networks, Inc.",address:"8 Federal Street, Billerica, MA 01821, US",country:"US",countryName:"美国"},"0000DD":{vendor:"Galaxy Power Holdings Ltd.",address:"Unit 1203, 12/F, Tower 5, Metroplaza, Kwai Fong, NT, HK",country:"HK",countryName:"中国香港"},"0000DE":{vendor:"Alteon Websystems, Inc.",address:"3505 Gorman Avenue, San Jose, CA 95124, US",country:"US",countryName:"美国"},"0000DF":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"0000E0":{vendor:"Realtek Semiconductor Corp.",address:"No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, TW",country:"TW",countryName:"中国台湾"},"0000E2":{vendor:"Aironet Wireless Communications, Inc.",address:"220 East Commerce Drive, Suite B, Sunnyvale, CA 94087, US",country:"US",countryName:"美国"},"000088":{vendor:"Marvell Technology Group Ltd.",address:"5488 Marvell Lane, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"001122":{vendor:"Texas Instruments",address:"12500 TI Boulevard, Dallas, TX 75243, US",country:"US",countryName:"美国"},"001A11":{vendor:"Cisco-Linksys, LLC",address:"12101 Torey Pines Road, San Diego, CA 92128, US",country:"US",countryName:"美国"},"001A2A":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"001A4A":{vendor:"Dell Inc.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},"001A6A":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"001AEA":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"00215A":{vendor:"Dell Inc.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},"00237E":{vendor:"VMware, Inc.",address:"3401 Hillview Avenue, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"00248D":{vendor:"Huawei Technologies Co., Ltd.",address:"Huawei Base, Bantian Longgang District, Shenzhen 518129, CN",country:"CN",countryName:"中国"},"00248B":{vendor:"Hewlett-Packard Company",address:"1501 Page Mill Road, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"00264B":{vendor:"ZTE Corporation",address:"ZTE Plaza, Keji Road West, Hi-Tech Industrial Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},"0050C2":{vendor:"IEEE Registration Authority",address:"445 Hoes Lane, Piscataway, NJ 08854, US",country:"US",countryName:"美国"},"00E04C":{vendor:"Realtek Semiconductor Corp.",address:"No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, TW",country:"TW",countryName:"中国台湾"},"00E018":{vendor:"ZTE Corporation",address:"ZTE Plaza, Keji Road West, Hi-Tech Industrial Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},"00E0FC":{vendor:"Samsung Electronics Co.,Ltd",address:"129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-744, KR",country:"KR",countryName:"韩国"},"00E04F":{vendor:"Realtek Semiconductor Corp.",address:"No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, TW",country:"TW",countryName:"中国台湾"},"00E076":{vendor:"Mikrotikls SIA",address:"Brivibas gatve 214g, Riga LV-1039, LV",country:"LV",countryName:"拉脱维亚"},"00E081":{vendor:"AMD (Advanced Micro Devices)",address:"7171 Southwest Parkway, Building 100, Austin, TX 78735, US",country:"US",countryName:"美国"},"00E091":{vendor:"TP-LINK TECHNOLOGIES CO.,LTD.",address:"No.1 Zhongshan West Road, Nanshan District, Shenzhen 518054, CN",country:"CN",countryName:"中国"},"01005E":{vendor:"IANA (Multicast)",address:"12025 Waterfront Drive, Suite 300, Los Angeles, CA 90094, US",country:"US",countryName:"美国"},"0200BA":{vendor:"Xerox Corporation",address:"M/S 105-50C, 800 Phillips Road, Webster, NY 14580, US",country:"US",countryName:"美国"},"02608C":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"080020":{vendor:"Sun Microsystems, Inc.",address:"4150 Network Circle, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"1005A5":{vendor:"IBM Corporation",address:"New Orchard Road, Armonk, NY 10504, US",country:"US",countryName:"美国"},"1403A4":{vendor:"Huawei Technologies Co., Ltd.",address:"Huawei Base, Bantian Longgang District, Shenzhen 518129, CN",country:"CN",countryName:"中国"},"14CF92":{vendor:"TP-LINK TECHNOLOGIES CO.,LTD.",address:"No.1 Zhongshan West Road, Nanshan District, Shenzhen 518054, CN",country:"CN",countryName:"中国"},"183BE0":{vendor:"Xiaomi Communications Co., Ltd.",address:"Building 12, No. 68, Qinghe Road, Haidian District, Beijing 100085, CN",country:"CN",countryName:"中国"},"1C1B0D":{vendor:"Samsung Electronics Co.,Ltd",address:"129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-744, KR",country:"KR",countryName:"韩国"},"1CF4BA":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"2010EC":{vendor:"Galaxy Communications Ltd.",address:"Unit 1203, 12/F, Tower 5, Metroplaza, Kwai Fong, NT, HK",country:"HK",countryName:"中国香港"},"20894A":{vendor:"Netgear",address:"350 E. Plumeria Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"244BFE":{vendor:"Xiaomi Communications Co., Ltd.",address:"Building 12, No. 68, Qinghe Road, Haidian District, Beijing 100085, CN",country:"CN",countryName:"中国"},"2824FF":{vendor:"Parallels, Inc.",address:"13751 Sunrise Valley Drive, Suite 600, Herndon, VA 20171, US",country:"US",countryName:"美国"},"28C6EC":{vendor:"Nokia Corporation",address:"Karakaari 7, FI-02150 Espoo, FI",country:"FI",countryName:"芬兰"},"3037A6":{vendor:"HP (Hewlett-Packard)",address:"1501 Page Mill Road, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},"34CE00":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"38296D":{vendor:"Amazon Technologies Inc.",address:"410 Terry Avenue North, Seattle, WA 98109, US",country:"US",countryName:"美国"},"3C4A92":{vendor:"Google, Inc.",address:"1600 Amphitheatre Parkway, Mountain View, CA 94043, US",country:"US",countryName:"美国"},"3CD92B":{vendor:"Google, Inc.",address:"1600 Amphitheatre Parkway, Mountain View, CA 94043, US",country:"US",countryName:"美国"},"3C5A8F":{vendor:"Sony Corporation",address:"1-7-1 Konan, Minato-ku, Tokyo 108-0075, JP",country:"JP",countryName:"日本"},"40486D":{vendor:"Motorola Mobility LLC, a Google Company",address:"600 W. Chicago Ave, Chicago, IL 60654, US",country:"US",countryName:"美国"},"4C17BB":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"4C6641":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"50465D":{vendor:"Atheros Communications, Inc.",address:"5480 Great Oaks Parkway, San Jose, CA 95119, US",country:"US",countryName:"美国"},"5076AF":{vendor:"Marvell Technology Group Ltd.",address:"5488 Marvell Lane, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"5226A5":{vendor:"ASUSTek COMPUTER INC.",address:"No. 15, Li-Te Road, Peitou, Taipei 11259, TW",country:"TW",countryName:"中国台湾"},"5483A3":{vendor:"Ruijie Reyee Network Co., Ltd.",address:"Software Park Phase II, Gulou District, Fuzhou 350003, CN",country:"CN",countryName:"中国"},"582CBF":{vendor:"Micro-Star International Co., Ltd.",address:"No. 1, Zhongshan N. 1st Rd., Guishan Township, Taoyuan County 33377, TW",country:"TW",countryName:"中国台湾"},"6045BD":{vendor:"D-Link Corporation",address:"No. 288 Xinhu 3-Rd., Neihu, Taipei 114, TW",country:"TW",countryName:"中国台湾"},"6466B3":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"6C626D":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"704D6B":{vendor:"LG Electronics",address:"128, Yeoui-daero, Yeongdeungpo-gu, Seoul 07332, KR",country:"KR",countryName:"韩国"},"70EE9E":{vendor:"Amazon Technologies Inc.",address:"410 Terry Avenue North, Seattle, WA 98109, US",country:"US",countryName:"美国"},"74DA88":{vendor:"TP-LINK TECHNOLOGIES CO.,LTD.",address:"No.1 Zhongshan West Road, Nanshan District, Shenzhen 518054, CN",country:"CN",countryName:"中国"},"7C61DC":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"7C67A2":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"7C8CCA":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},"7CC537":{vendor:"Tenda Technology Co., Ltd.",address:"Bldg 1, 8th Zone, Nanshan High-Tech Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},"801E35":{vendor:"Samsung Electronics Co.,Ltd",address:"129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-744, KR",country:"KR",countryName:"韩国"},"802EA5":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"8417F9":{vendor:"Ubiquiti Networks Inc.",address:"685 Third Avenue, New York, NY 10017, US",country:"US",countryName:"美国"},"847BEB":{vendor:"ACCTON TECHNOLOGY CORPORATION",address:"No. 45, Hwa-Teh 1st Rd., Hwa-Ya Hsiang, Taoyuan County 326, TW",country:"TW",countryName:"中国台湾"},"8825DD":{vendor:"Meru Networks",address:"815 Stewart Drive, Sunnyvale, CA 94085, US",country:"US",countryName:"美国"},"886E40":{vendor:"Fujitsu Limited",address:"17-25, ShinKamata 1-chome, Ota-ku, Tokyo 144-8588, JP",country:"JP",countryName:"日本"},"8CA997":{vendor:"Shanghai Feixun Communication Co.,Ltd",address:"Room 301, No. 189 Tianlin Road, Xuhui District, Shanghai 200233, CN",country:"CN",countryName:"中国"},"8CAF35":{vendor:"Luxshare Precision Industry Co., Ltd.",address:"No. 9, Lanhe 2nd Road, Tanglang Community, Xili Street, Nanshan District, Shenzhen 518107, CN",country:"CN",countryName:"中国"},"8CC7EF":{vendor:"D-Link Corporation",address:"No. 288 Xinhu 3-Rd., Neihu, Taipei 114, TW",country:"TW",countryName:"中国台湾"},"9009A0":{vendor:"Qualcomm Technologies Inc.",address:"5775 Morehouse Drive, San Diego, CA 92121, US",country:"US",countryName:"美国"},"909E93":{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"90AE1E":{vendor:"Micro-Star International Co., Ltd.",address:"No. 1, Zhongshan N. 1st Rd., Guishan Township, Taoyuan County 33377, TW",country:"TW",countryName:"中国台湾"},"90B11D":{vendor:"Vizio, Inc.",address:"3969 Freedom Circle, Irvine, CA 92606, US",country:"US",countryName:"美国"},"90DE80":{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},"941BD8":{vendor:"Netgear",address:"350 E. Plumeria Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},"94452D":{vendor:"Microsoft Corporation",address:"One Microsoft Way, Redmond, WA 98052, US",country:"US",countryName:"美国"},"9C93E4":{vendor:"Samsung Electronics Co.,Ltd",address:"129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-744, KR",country:"KR",countryName:"韩国"},"9CB65D":{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},A04D31:{vendor:"Google, Inc.",address:"1600 Amphitheatre Parkway, Mountain View, CA 94043, US",country:"US",countryName:"美国"},A42BB0:{vendor:"Dell Inc.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},A4BF01:{vendor:"ASUSTek COMPUTER INC.",address:"No. 15, Li-Te Road, Peitou, Taipei 11259, TW",country:"TW",countryName:"中国台湾"},A4C411:{vendor:"CyberTAN Technology Inc.",address:"No. 10, 11th Road, Science-Based Industrial Park, Hsinchu 30077, TW",country:"TW",countryName:"中国台湾"},A8667F:{vendor:"China Mobile Communications Corporation",address:"No. 29, Fucheng Road, Xicheng District, Beijing 100032, CN",country:"CN",countryName:"中国"},AC853D:{vendor:"Tenda Technology Co., Ltd.",address:"Bldg 1, 8th Zone, Nanshan High-Tech Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},ACC514:{vendor:"Ubiquiti Networks Inc.",address:"685 Third Avenue, New York, NY 10017, US",country:"US",countryName:"美国"},B4E1FB:{vendor:"Hewlett Packard",address:"1501 Page Mill Road, Palo Alto, CA 94304, US",country:"US",countryName:"美国"},B827EB:{vendor:"Raspberry Pi Trading Ltd.",address:"Moorfield House, Moorfield Way, Cambridge CB3 0AA, GB",country:"GB",countryName:"英国"},BCAA97:{vendor:"Dell Inc.",address:"One Dell Way, Round Rock, TX 78682, US",country:"US",countryName:"美国"},BCEE7B:{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},C02AB0:{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},C38584:{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},C46E1F:{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},C80AA9:{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},C82145:{vendor:"The Boeing Company",address:"100 North Riverside, Chicago, IL 60606, US",country:"US",countryName:"美国"},C8D3DC:{vendor:"ASUSTek COMPUTER INC.",address:"No. 15, Li-Te Road, Peitou, Taipei 11259, TW",country:"TW",countryName:"中国台湾"},CCB263:{vendor:"ZTE Corporation",address:"ZTE Plaza, Keji Road West, Hi-Tech Industrial Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},D05099:{vendor:"Samsung Electronics Co.,Ltd",address:"129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-744, KR",country:"KR",countryName:"韩国"},D46A0C:{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},D48564:{vendor:"Ruijie Networks",address:"Software Park Phase II, Gulou District, Fuzhou 350003, CN",country:"CN",countryName:"中国"},D8BB2C:{vendor:"Sagemcom Broadband SAS",address:"250, avenue General Leclerc, 92130 Issy Les Moulineaux, FR",country:"FR",countryName:"法国"},DC4A3E:{vendor:"Intel Corporate",address:"2200 Mission College Blvd, Santa Clara, CA 95054, US",country:"US",countryName:"美国"},DC9FDB:{vendor:"TP-LINK TECHNOLOGIES CO.,LTD.",address:"No.1 Zhongshan West Road, Nanshan District, Shenzhen 518054, CN",country:"CN",countryName:"中国"},E043D7:{vendor:"Nuvoton Technology Corporation",address:"No. 8, Keya 1st Road, Daya District, Taichung 428, TW",country:"TW",countryName:"中国台湾"},E04D6C:{vendor:"Actiontec Electronics, Inc.",address:"780 N. Mary Ave, Sunnyvale, CA 94086, US",country:"US",countryName:"美国"},E0CB4D:{vendor:"ZTE Corporation",address:"ZTE Plaza, Keji Road West, Hi-Tech Industrial Park, Nanshan District, Shenzhen 518057, CN",country:"CN",countryName:"中国"},E0D55B:{vendor:"AVM GmbH",address:"Alt-Moabit 116b, D-10557 Berlin, DE",country:"DE",countryName:"德国"},E8D8D1:{vendor:"ASUSTek COMPUTER INC.",address:"No. 15, Li-Te Road, Peitou, Taipei 11259, TW",country:"TW",countryName:"中国台湾"},EC1725:{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},F03D91:{vendor:"Apple, Inc.",address:"1 Infinite Loop, Cupertino, CA 95014, US",country:"US",countryName:"美国"},F01898:{vendor:"Hon Hai Precision Ind. Co.,Ltd.(Foxconn)",address:"No. 2, Zihyou Road, Tucheng, New Taipei City 236, TW",country:"TW",countryName:"中国台湾"},F4B5E0:{vendor:"Huawei Technologies Co., Ltd.",address:"Huawei Base, Bantian Longgang District, Shenzhen 518129, CN",country:"CN",countryName:"中国"},F4EC38:{vendor:"Realtek Semiconductor Corp.",address:"No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, TW",country:"TW",countryName:"中国台湾"},F81A67:{vendor:"NETGEAR, Inc.",address:"350 E. Plumeria Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"},FA8FCA:{vendor:"NVIDIA Corporation",address:"2701 San Tomas Expressway, Santa Clara, CA 95050, US",country:"US",countryName:"美国"},FCA649:{vendor:"HUAWEI TECHNOLOGIES CO.,LTD",address:"Huawei Base, Bantian Longgang District, Shenzhen 518129, CN",country:"CN",countryName:"中国"},FCD9CE:{vendor:"Google, Inc.",address:"1600 Amphitheatre Parkway, Mountain View, CA 94043, US",country:"US",countryName:"美国"},FF4236:{vendor:"Cisco Systems, Inc",address:"170 West Tasman Drive, San Jose, CA 95134, US",country:"US",countryName:"美国"}},R={class:"min-h-screen bg-gray-50 text-slate-900 font-sans p-4 md:p-8"},L={class:"max-w-4xl mx-auto space-y-6"},P={class:"bg-white border border-slate-200 shadow-sm p-6"},W={class:"flex flex-col sm:flex-row gap-3 mb-4"},x=["disabled"],F={key:0,class:"bg-white border border-slate-200 shadow-sm overflow-hidden"},H={class:"w-full text-left text-sm"},O={class:"px-4 h-10 leading-10 border-b font-mono"},G={class:"px-4 h-10 leading-10 border-b font-mono"},K={class:"px-4 h-10 leading-10 border-b font-mono text-blue-600"},z={class:"px-4 h-10 leading-10 border-b"},J={class:"px-4 h-10 leading-10 border-b"},V={class:"px-4 h-10 leading-10 border-b"},X={class:"px-4 h-10 leading-10 border-b"},Y={key:1,class:"bg-white border border-slate-200 shadow-sm p-6"},_=T({__name:"index",setup(Z){const c=m(""),u=m(!1),n=m(null),t=M({visible:!1,message:"",type:"info",duration:2e3});function d(r,e="info"){t.message=r,t.type=e,t.visible=!0}function C(r){let e=r.toUpperCase().replace(/[^0-9A-F]/g,"");return e.length>12&&(e=e.substring(0,12)),e}function p(r){var a;const e=C(r);return e.length===12&&((a=e.match(/.{2}/g))==null?void 0:a.join(":"))||e}function g(r){return C(r).substring(0,6)}function h(r){const e=r.replace(/[^0-9A-Fa-f]/g,"");return e?e.length<6?{valid:!1,error:"请至少输入6个字符的OUI段"}:e.length>12?{valid:!1,error:"MAC地址不能超过12个字符"}:/^[0-9A-Fa-f]+$/.test(e)?{valid:!0}:{valid:!1,error:"MAC地址只能包含十六进制字符(0-9,A-F)"}:{valid:!1,error:"请输入MAC地址"}}async function v(){var e;const r=h(c.value);if(!r.valid){d(r.error,"error");return}u.value=!0,await new Promise(a=>setTimeout(a,100));try{const a=c.value.trim(),y=C(a),i=g(a),l=k[i]||null;n.value={originalInput:a,formattedMac:p(y),oui:((e=i.match(/.{2}/g))==null?void 0:e.join(":"))||i,vendorInfo:l},l?d("查询成功","success"):d("未找到该OUI对应的厂商信息","info")}catch(a){d("查询出错，请重试","error"),console.error("MAC地址查询错误:",a)}finally{u.value=!1}}function I(){if(!n.value)return;const r=["MAC地址查询结果","-".repeat(40),`原始输入: ${n.value.originalInput}`,`标准化MAC地址: ${n.value.formattedMac}`,`OUI段: ${n.value.oui}`,"",n.value.vendorInfo?[`制造商: ${n.value.vendorInfo.vendor}`,`地址: ${n.value.vendorInfo.address}`,`国家/地区: ${n.value.vendorInfo.countryName}`,`国家代码: ${n.value.vendorInfo.country}`].join(`
-`):"未找到厂商信息"].join(`
-`);navigator.clipboard.writeText(r).then(()=>{d("已复制到剪贴板","success")}).catch(()=>{d("复制失败","error")})}return(r,e)=>{var a,y,i,l;return N(),S("main",R,[e[14]||(e[14]=o("header",{class:"mb-8 border-b border-slate-200 pb-4 text-center"},[o("h1",{class:"text-2xl font-bold tracking-tight text-slate-800 h-10 leading-10"},"MAC地址查询工具"),o("p",{class:"text-sm text-slate-500 h-6 leading-6"},"查询MAC地址对应的设备制造商信息，支持多种格式输入")],-1)),D(w,{visible:t.visible,message:t.message,type:t.type,duration:t.duration,"show-close":!0,onClose:e[0]||(e[0]=A=>t.visible=!1)},null,8,["visible","message","type","duration"]),o("div",L,[o("div",P,[e[2]||(e[2]=o("h2",{class:"text-lg font-semibold mb-4 h-8 leading-8 border-l-4 border-blue-600 pl-3"},"MAC地址查询",-1)),o("div",W,[b(o("input",{"onUpdate:modelValue":e[1]||(e[1]=A=>c.value=A),type:"text",placeholder:"输入MAC地址 (如: 00:0C:39:AB:CD:EF 或 000C39)",class:"flex-1 border border-slate-300 px-4 h-10 leading-10 focus:outline-none focus:border-blue-500 uppercase",onKeyup:f(v,["enter"])},null,544),[[E,c.value]]),o("button",{onClick:v,disabled:u.value||!c.value.trim(),class:"bg-slate-800 text-white px-8 h-10 leading-10 hover:bg-slate-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"},s(u.value?"查询中...":"MAC地址查询"),9,x)]),e[3]||(e[3]=o("div",{class:"text-xs text-slate-500 space-y-1"},[o("p",null,"支持格式：00:0C:39:AB:CD:EF、00-0C-39-AB-CD-EF、000C.39AB.CDEF、000C39ABCDEF"),o("p",null,"可输入完整12位MAC地址或仅前6位OUI段（厂商标识）进行查询")],-1))]),n.value?(N(),S("div",F,[o("div",{class:"px-5 py-4 border-b border-slate-100 flex justify-between items-center bg-slate-50"},[e[4]||(e[4]=o("span",{class:"font-semibold text-slate-700"},"查询结果",-1)),o("button",{onClick:I,class:"px-3 py-1 text-xs text-slate-600 border border-slate-300 rounded hover:bg-slate-100 transition"}," 复制查询结果 ")]),o("table",H,[e[12]||(e[12]=o("thead",{class:"bg-slate-50"},[o("tr",null,[o("th",{class:"px-4 h-10 leading-10 font-medium text-slate-500 border-b"},"项目"),o("th",{class:"px-4 h-10 leading-10 font-medium text-slate-500 border-b"},"详情")])],-1)),o("tbody",null,[o("tr",null,[e[5]||(e[5]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"原始输入",-1)),o("td",O,s(n.value.originalInput),1)]),o("tr",null,[e[6]||(e[6]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"标准化MAC地址",-1)),o("td",G,s(n.value.formattedMac),1)]),o("tr",null,[e[7]||(e[7]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"OUI段（厂商标识）",-1)),o("td",K,s(n.value.oui),1)]),o("tr",null,[e[8]||(e[8]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"制造商名称",-1)),o("td",z,s(((a=n.value.vendorInfo)==null?void 0:a.vendor)||"暂无厂家信息"),1)]),o("tr",null,[e[9]||(e[9]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"厂家地址",-1)),o("td",J,s(((y=n.value.vendorInfo)==null?void 0:y.address)||"暂无地址信息"),1)]),o("tr",null,[e[10]||(e[10]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"国家/地区",-1)),o("td",V,s(((i=n.value.vendorInfo)==null?void 0:i.countryName)||"暂无地区信息"),1)]),o("tr",null,[e[11]||(e[11]=o("td",{class:"px-4 h-10 leading-10 border-b bg-slate-50/30"},"国家代码",-1)),o("td",X,s(((l=n.value.vendorInfo)==null?void 0:l.country)||"暂无"),1)])])])])):U("",!0),!n.value&&!u.value?(N(),S("div",Y,[...e[13]||(e[13]=[B('<h2 class="text-lg font-semibold mb-4 h-8 leading-8 border-l-4 border-slate-400 pl-3">使用说明</h2><div class="space-y-4 text-sm text-slate-600"><div><h3 class="font-medium text-slate-700 mb-2">什么是MAC地址？</h3><p>MAC地址（Media Access Control Address）是网络设备的全球唯一硬件标识符。由48位二进制组成，通常表示为12位十六进制字符。</p></div><div><h3 class="font-medium text-slate-700 mb-2">MAC地址结构</h3><ul class="list-disc list-inside space-y-1 ml-2"><li><strong>OUI（前24位）</strong>：组织唯一标识符，由IEEE分配给设备制造商</li><li><strong>NIC（后24位）</strong>：网络接口控制器标识，由厂商自行分配</li></ul></div><div><h3 class="font-medium text-slate-700 mb-2">如何查看本机MAC地址</h3><ul class="list-disc list-inside space-y-1 ml-2"><li><strong>Windows</strong>：设置 → 网络和Internet → 高级网络设置 → 硬件属性中的物理地址</li><li><strong>macOS</strong>：系统设置 → 网络 → 当前连接 → 详细信息 → 硬件标签页</li><li><strong>Linux</strong>：终端运行 ifconfig 或 ip link show 命令查看 ether 字段</li></ul></div></div>',2)])])):U("",!0)])])}}});export{_ as default};
+import{H as Le,m as i,o as Te,_ as Re,s as Ee,c,d as t,F as R,y as O,i as ee,v as te,l as m,t as r,h as Ve,n as K,f as ae,w as se,T as ne,R as je,S as Ke,p as $,z as $e,a as l,j as Me,b as De}from"./index.js";import{J as Ge}from"./jszip.min.js";import"./jszip.min2.js";import"./_commonjs-dynamic-modules.js";const He={class:"lk-page"},Pe={class:"tab-bar"},Oe=["onClick"],Ne={class:"lk-body"},ze={class:"param-card"},Be={class:"core-params"},Ie={class:"field"},Ue=["value"],Je={class:"field"},Fe=["value"],Ze={class:"expire-row"},Ye={class:"chip-group"},Xe=["onClick"],We={class:"prefix-row"},Qe={class:"field flex-1"},qe=["value"],et={class:"field flex-1"},tt=["value"],at={class:"param-card action-card"},st={class:"batch-row"},nt={class:"field flex-1"},ot=["value"],rt=["disabled"],it={class:"result-section"},lt={key:0,class:"stats-bar"},ct={class:"stat-item"},dt={class:"stat-num"},ut={class:"stat-item"},pt={class:"stat-num"},vt={class:"stat-item"},ft={class:"stat-num"},ht=["disabled"],gt={class:"output-card"},mt={class:"output-header"},yt={key:0,class:"output-actions"},xt={class:"output-area"},bt={class:"line-num"},kt=["onClick"],wt={class:"line-expire"},Ct={key:0,class:"truncation-hint"},_t={key:1,class:"empty-hint"},St={class:"param-card action-card"},At={class:"verify-field"},Lt={class:"verify-action-row",style:{"margin-top":"0.85rem"}},Tt={key:0,class:"result-section"},Rt={class:"output-card"},Et={class:"verify-result-area"},Vt={class:"vr-icon"},jt={class:"vr-body"},Kt={class:"vr-status"},$t={class:"vr-reason"},Mt={key:0,class:"vr-meta"},Dt={key:0},Gt={class:"modal-box"},Ht={class:"modal-head"},v="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",N=500,oe="lk_params_v1",Pt=Le({__name:"index",setup(Ot){const b=i(16),A=i(4),L=i(5),C=i(""),d=i(J()),T=i("30d"),p=i(30),u=i([]),M=i("复制全部"),D=i(!1),z=i(""),B=i("ok"),E=i(!1),_=i(!1),V=i("gen"),re=[{key:"gen",label:"生成激活码",icon:"🔑"},{key:"verify",label:"验证激活码",icon:"✅"}],G=i(""),ie=i(d.value),le=i(!1),h=i(null),ce=[{label:"1 天",value:"1d",days:1},{label:"7 天",value:"7d",days:7},{label:"30 天",value:"30d",days:30},{label:"90 天",value:"90d",days:90},{label:"365 天",value:"365d",days:365},{label:"永不过期",value:"never",days:-1},{label:"自定义",value:"custom",days:30}],I=$(()=>u.value.length>N),U=$(()=>I.value?u.value.slice(0,N):u.value),de=$(()=>`${b.value} 字符`),ue=$(()=>p.value===-1?"永久":p.value>=365&&p.value%365===0?`${p.value/365} 年`:`${p.value} 天`);function J(s=8){const e=new Uint8Array(s);return crypto.getRandomValues(e),Array.from(e,a=>v[a%v.length]).join("")}function f(s,e="ok"){z.value=s,B.value=e,D.value=!0,setTimeout(()=>{D.value=!1},2200)}function pe(){const s=C.value.toUpperCase().replace(/[^A-Z0-9]/g,""),e=b.value,a=Date.now(),n=p.value===-1?-1:a+p.value*864e5,o=new Uint8Array(e);crypto.getRandomValues(o);const S=Array.from(o,x=>v[x%v.length]).join(""),g=ve(S,n,d.value),y=`${g}:${d.value}`;let k=0;for(let x=0;x<y.length;x++)k=(k<<5)-k+y.charCodeAt(x)|0;const w=v[Math.abs(k)%v.length],P=g+w,Ae=s?`${s}${P}`:P;let q="永久有效";if(n!==-1){const x=new Date(n);q=`${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`}return{code:Ae,raw:P,expiresAt:n,expireText:q}}function ve(s,e,a){const n=s.split(""),o=String(e),S=fe(a+o);for(let g=0;g<Math.min(o.length,n.length);g++){const y=(S+g*7)%n.length,k=(o.charCodeAt(g)+g*3)%v.length,w=v.indexOf(s[y]);w!==-1&&(n[y]=v[(w+k)%v.length])}return n.join("")}function fe(s){let e=0;for(let a=0;a<s.length;a++)e=(e<<5)-e+s.charCodeAt(a)|0;return Math.abs(e)}function F(s,e){const a=e||d.value,n=s.toUpperCase().trim();if(n.length<6)return{valid:!1,reason:"激活码长度不足",expired:!1,expiresAt:0};if(!/^[A-Z2-9]+$/.test(n))return{valid:!1,reason:"激活码包含非法字符",expired:!1,expiresAt:0};const o=n.slice(0,-1),S=n.slice(-1),g=o+":"+a;let y=0;for(let w=0;w<g.length;w++)y=(y<<5)-y+g.charCodeAt(w)|0;const k=v[Math.abs(y)%v.length];return S!==k?{valid:!1,reason:"激活码校验失败，可能被篡改",expired:!1,expiresAt:0}:{valid:!0,reason:"激活码格式正确",expired:!1,expiresAt:0}}function Z(){const s={totalLength:b.value,groupSize:A.value,batchCount:L.value,prefix:C.value,salt:d.value,expirePreset:T.value,expireDays:p.value};try{localStorage.setItem(oe,JSON.stringify(s))}catch{}}function he(){try{const s=localStorage.getItem(oe);if(!s)return!1;const e=JSON.parse(s);return e.totalLength!==void 0&&(b.value=e.totalLength),e.groupSize!==void 0&&(A.value=e.groupSize),e.batchCount!==void 0&&(L.value=e.batchCount),e.prefix!==void 0&&(C.value=e.prefix),e.salt?d.value=e.salt:d.value=J(),e.expirePreset!==void 0&&(T.value=e.expirePreset),e.expireDays!==void 0&&(p.value=e.expireDays),!0}catch{return!1}}async function ge(){he(),await $e(),await Y(),Z()}Te(async()=>{try{const{isPrerender:s}=await Re(async()=>{const{isPrerender:e}=await import("./test.js");return{isPrerender:e}},[]);if(s())return}catch{}ge()}),Ee([b,A,L,C,d,T,p],()=>{Z()},{deep:!0});async function Y(){E.value=!0;const s=Math.max(1,Math.min(L.value,5e3));await new Promise(n=>setTimeout(n,10));const e=[],a=new Set;try{for(let n=0;n<s;n++){const o=pe();a.has(o.raw)?n--:(a.add(o.raw),e.push(o)),n>0&&n%500===0&&await new Promise(S=>setTimeout(S,0))}if(u.value=e,e.length>0){const n=F(e[0].code);n.valid||(console.error("[激活码自检失败]",e[0].code,n.reason),f("⚠️ 激活码自检未通过，请检查参数","err"))}f(`成功生成 ${e.length} 条激活码`,"ok")}catch{f("生成失败，请重试","err")}finally{E.value=!1}}async function me(){if(!u.value.length)return;const s=u.value.map(e=>e.code).join(`
+`);try{await navigator.clipboard.writeText(s),M.value="已复制 ✓",f("已复制到剪贴板","ok"),setTimeout(()=>{M.value="复制全部"},2e3)}catch{f("复制失败，请手动选择复制","err")}}async function ye(s){try{await navigator.clipboard.writeText(s),f("已复制: "+s,"ok")}catch{}}function xe(){const s=G.value.trim();if(!s){f("请输入激活码","err");return}const e=ie.value||d.value,a=F(s,e),n=s.toUpperCase().trim();let o=null;/^[A-Z]{2,4}/.test(n)&&n.length>5&&(o=n.slice(0,n.match(/^[A-Z]+/)[0].length)),h.value={valid:a.valid,reason:a.reason,meta:{format:s,length:n.length,prefix:o}},f(a.valid?"激活码有效":"激活码无效",a.valid?"ok":"err")}function be(){const s=u.value.map(e=>`${e.code}	${e.expireText}`).join(`
+`);j(s,`激活码列表_${H()}_${Date.now()}.txt`,"text/plain;charset=utf-8"),f("已导出 TXT 文件","ok")}function ke(){const s=u.value.map(a=>({code:a.code,expiresAt:a.expiresAt,expireText:a.expireText,generatedAt:Date.now(),config:{totalLength:b.value,groupSize:A.value,prefix:C.value,salt:d.value,expireDays:p.value}})),e=JSON.stringify(s,null,2);j(e,`激活码数据_${H()}_${Date.now()}.json`,"application/json;charset=utf-8"),f("已导出 JSON 文件","ok")}function H(){return window.location.hostname.replace(/\./g,"")}function j(s,e,a){const o=new Blob(["\uFEFF"+s],{type:a});X(o,e)}function X(s,e){const a=URL.createObjectURL(s),n=document.createElement("a");n.href=a,n.download=e,document.body.appendChild(n),n.click(),document.body.removeChild(n),URL.revokeObjectURL(a)}function W(){return`/**
+ * 激活码生成器 — 纯前端版本
+ * 使用方式：
+ *   import { LicenseKeyGenerator } from './license-gen.js'
+ *   const gen = new LicenseKeyGenerator({ length: 16, groupSize: 4 })
+ *   console.log(gen.generate())
+ *
+ * 或直接在浏览器中使用全局变量 LicenseKeyGenerator
+ */
+;(function(global) {
+  'use strict'
+
+  const CHARSET = '${v}' // 排除 0/O/1/I/L 等易混淆字符
+
+  /**
+   * 激活码生成器类
+   * @param {Object} options 配置项
+   * @param {number} options.totalLength 激活码总位数（不含前缀），默认 16
+   * @param {number} options.groupSize 每组字符数，默认 4
+   * @param {string} options.prefix 前缀，默认空
+   * @param {string} options.salt 密钥盐值（用于校验），默认随机生成
+   * @param {number} options.expireDays 有效期天数，-1 表示永不过期，默认 30
+   */
+  function LicenseKeyGenerator(options) {
+    options = Object.assign({
+      totalLength: 16,
+      groupSize: 4,
+      prefix: '',
+      salt: '',
+      expireDays: 30
+    }, options)
+
+    if (!options.salt) {
+      options.salt = this._generateSalt(8)
+    }
+
+    this.config = options
+  }
+
+  /**
+   * 生成单个激活码
+   * @returns {{ code: string, raw: string, expiresAt: number, expireText: string }}
+   */
+  LicenseKeyGenerator.prototype.generate = function() {
+    var cfg = this.config
+    var pfx = (cfg.prefix || '').toUpperCase().replace(/[^A-Z0-9]/g, '')
+    var effectiveLen = cfg.totalLength
+    var now = Date.now()
+    var expiresAt = cfg.expireDays === -1 ? -1 : now + cfg.expireDays * 86400000
+
+    // 生成随机主体（优先使用安全随机数）
+    var rawBody = ''
+    if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+      var arr = new Uint8Array(effectiveLen)
+      crypto.getRandomValues(arr)
+      for (var ri = 0; ri < effectiveLen; ri++) {
+        rawBody += CHARSET[arr[ri] % CHARSET.length]
+      }
+    } else {
+      for (var mi = 0; mi < effectiveLen; mi++) {
+        rawBody += CHARSET.charAt(Math.floor(Math.random() * CHARSET.length))
+      }
+    }
+
+    // 先编码过期信息（修改字符）
+    var encoded = this._encodeExpire(rawBody, expiresAt, cfg.salt)
+
+    // 校验位仅基于编码后主体 + 盐值
+    var combined = encoded + ':' + cfg.salt
+    var checksum = 0
+    for (var j = 0; j < combined.length; j++) {
+      checksum = ((checksum << 5) - checksum + combined.charCodeAt(j)) | 0
+    }
+    var checkChar = CHARSET[Math.abs(checksum) % CHARSET.length]
+    var finalRaw = encoded + checkChar
+
+    // 纯字符，无分隔符
+    var code = pfx ? pfx + finalRaw : finalRaw
+
+    var expireText = '永久有效'
+    if (expiresAt !== -1) {
+      var d = new Date(expiresAt)
+      expireText = d.getFullYear() + '-' +
+        String(d.getMonth() + 1).padStart(2, '0') + '-' +
+        String(d.getDate()).padStart(2, '0')
+    }
+
+    return { code: code, raw: finalRaw, expiresAt: expiresAt, expireText: expireText }
+  }
+
+  /**
+   * 批量生成（自动去重）
+   * @param {number} count 数量
+   * @returns {Array} 激活码数组
+   */
+  LicenseKeyGenerator.prototype.batchGenerate = function(count) {
+    count = Math.max(1, Math.min(count || 1, 10000))
+    var results = []
+    var seen = {}
+    var attempts = 0
+    var maxAttempts = count * 10
+
+    while (results.length < count && attempts < maxAttempts) {
+      attempts++
+      var key = this.generate()
+      if (!seen[key.raw]) {
+        seen[key.raw] = true
+        results.push(key)
+      }
+    }
+    return results
+  }
+
+  /** 内部：生成随机盐值 */
+  LicenseKeyGenerator.prototype._generateSalt = function(len) {
+    var s = ''
+    for (var i = 0; i < len; i++) {
+      s += CHARSET.charAt(Math.floor(Math.random() * CHARSET.length))
+    }
+    return s
+  }
+
+  /** 内部：编码过期信息到激活码 */
+  LicenseKeyGenerator.prototype._encodeExpire = function(body, expiresAt, secret) {
+    var arr = body.split('')
+    var expStr = String(expiresAt)
+    var seed = this._hashString(secret + expStr)
+    for (var i = 0; i < Math.min(expStr.length, arr.length); i++) {
+      var pos = (seed + i * 7) % arr.length
+      var offset = (expStr.charCodeAt(i) + i * 3) % CHARSET.length
+      var origIdx = CHARSET.indexOf(body[pos])
+      if (origIdx !== -1) {
+        arr[pos] = CHARSET[(origIdx + offset) % CHARSET.length]
+      }
+    }
+    return arr.join('')
+  }
+
+  /** 内部：字符串哈希 */
+  LicenseKeyGenerator.prototype._hashString = function(str) {
+    var h = 0
+    for (var i = 0; i < str.length; i++) {
+      h = ((h << 5) - h + str.charCodeAt(i)) | 0
+    }
+    return Math.abs(h)
+  }
+
+  // 导出
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = LicenseKeyGenerator
+  } else {
+    global.LicenseKeyGenerator = LicenseKeyGenerator
+  }
+})(typeof window !== 'undefined' ? window : this)
+`}function Q(){return`/**
+ * 激活码验证器 — 纯前端版本
+ * 使用方式：
+ *   import { LicenseKeyVerifier } from './license-verify.js'
+ *   const verifier = new LicenseKeyVerifier({ salt: 'your-salt-here' })
+ *   const result = verifier.verify('ABCDEFGHJKLMNP23')
+ *   console.log(result.valid, result.reason)
+ *
+ * 或在浏览器中使用全局变量 LicenseKeyVerifier
+ *
+ * ⚠️ 注意：
+ * 完整的过期时间验证需要后端配合。此模块提供格式校验和校验位验证，
+ * 可以检测激活码是否被篡改或伪造。
+ */
+;(function(global) {
+  'use strict'
+
+  const CHARSET = '${v}'
+
+  /**
+   * 激活码验证器类
+   * @param {Object} options 配置项
+   * @param {string} options.salt 密钥盐值（必须与生成时一致）
+   */
+  function LicenseKeyVerifier(options) {
+    if (!options || !options.salt) {
+      throw new Error('LicenseKeyVerifier: 必须指定 salt 密钥盐值')
+    }
+    this.config = { salt: options.salt }
+  }
+
+  /**
+   * 验证激活码
+   * @param {string} code 待验证的激活码
+   * @returns {{ valid: boolean, reason: string, expired: boolean, expiresAt: number }}
+   */
+  LicenseKeyVerifier.prototype.verify = function(code) {
+    var s = this.config.salt
+    var clean = (code || '').toString().toUpperCase().trim()
+
+    // 1. 长度检查
+    if (clean.length < 6) {
+      return { valid: false, reason: '激活码长度不足', expired: false, expiresAt: 0 }
+    }
+
+    // 2. 字符集检查（排除易混淆字符后的合法集）
+    if (!/^[A-Z2-9]+$/.test(clean)) {
+      return { valid: false, reason: '激活码包含非法字符（只允许 A-Z 和 2-9）', expired: false, expiresAt: 0 }
+    }
+
+    // 3. 校验位验证
+    var body = clean.slice(0, -1)
+    var checkChar = clean.slice(-1)
+    var combined = body + ':' + s
+    var checksum = 0
+    for (var i = 0; i < combined.length; i++) {
+      checksum = ((checksum << 5) - checksum + combined.charCodeAt(i)) | 0
+    }
+    var expectedCheck = CHARSET[Math.abs(checksum) % CHARSET.length]
+
+    if (checkChar !== expectedCheck) {
+      return { valid: false, reason: '激活码校验失败，可能已被篡改或伪造', expired: false, expiresAt: 0 }
+    }
+
+    // 通过基本验证
+    return { valid: true, reason: '激活码格式正确且未被篡改', expired: false, expiresAt: 0 }
+  }
+
+  /**
+   * 快速验证（仅检查格式和校验位，不输出详细信息）
+   * @param {string} code 激活码
+   * @returns {boolean}
+   */
+  LicenseKeyVerifier.prototype.isValid = function(code) {
+    return this.verify(code).valid
+  }
+
+  /**
+   * 从激活码提取元数据（如果有的话）
+   * @param {string} code 激活码
+   * @returns {{ prefix: string|null, groups: string[], length: number }}
+   */
+  LicenseKeyVerifier.prototype.parseMeta = function(code) {
+    var clean = (code || '').toString().toUpperCase().trim()
+
+    // 前缀判断
+    var prefix = null
+    var m = clean.match(/^[A-Z]{2,4}/)
+    if (m && clean.length > 5) {
+      prefix = m[0]
+    }
+
+    return {
+      prefix: prefix,
+      body: prefix ? clean.slice(prefix.length) : clean,
+      length: clean.length,
+      hasPrefix: !!prefix
+    }
+  }
+
+  // 导出
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = LicenseKeyVerifier
+  } else {
+    global.LicenseKeyVerifier = LicenseKeyVerifier
+  }
+})(typeof window !== 'undefined' ? window : this)
+`}function we(){return`<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>激活码示例页面</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 20px; background: #ffffff; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+    pre { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; overflow-x: auto; font-size: 0.85rem; line-height: 1.6; }
+    .result { margin-top: 16px; padding: 12px; background: #fff; border-radius: 8px; border: 1px solid #ddd; }
+    .ok { color: #15803d; }
+    .err { color: #dc2626; }
+    label { font-weight: 600; }
+    input[type=text] { padding: 8px 12px; border: 1px solid #ccc; border-radius: 6px; width: 300px; font-family: monospace; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h2>激活码使用示例</h2>
+
+  <p><label>输入激活码：</label><br>
+  <input type="text" id="codeInput" value="" placeholder="粘贴激活码..." /></p>
+  <button onclick="testVerify()">验证</button>
+
+  <div id="result" class="result" style="display:none;"></div>
+
+  <h2 style="margin-top:32px;">示例代码</h2>
+  <pre>// 1. 生成激活码
+var gen = new LicenseKeyGenerator({
+  totalLength: 16,     // 总位数
+  groupSize: 4,        // 每组字数
+  prefix: 'PRO',       // 前缀
+  salt: '${d.value}',       // 盐值（必须保存！）
+  expireDays: 30       // 有效期（天）
+});
+
+var key = gen.generate();
+console.log(key.code);         // 如 PROABCDEFGHJKLMNP2
+console.log(key.expiresAt);    // 过期时间戳
+console.log(key.expireText);   // 如 2026-05-12
+
+// 2. 批量生成
+var list = gen.batchGenerate(10);
+list.forEach(function(k) { console.log(k.code); });
+
+// 3. 验证激活码
+var verifier = new LicenseKeyVerifier({ salt: '${d.value}' });
+var result = verifier.verify(key.code);
+console.log(result.valid);   // true/false
+console.log(result.reason);  // 验证原因
+
+// 4. 快速验证
+if (verifier.isValid(someCode)) {
+  // 激活码有效
+}</pre>
+
+  <script src="./license-gen.js"><\/script>
+  <script src="./license-verify.js"><\/script>
+  <script>
+    function testVerify() {
+      var code = document.getElementById('codeInput').value;
+      var v = new LicenseKeyVerifier({ salt: '${d.value}' });
+      var r = v.verify(code);
+      var el = document.getElementById('result');
+      el.style.display = 'block';
+      el.innerHTML = '<strong class="' + (r.valid ? 'ok' : 'err') + '">' +
+        (r.valid ? '✓ 有效' : '✗ 无效') + '</strong><br>' +
+        '<span>' + r.reason + '</span>';
+    }
+  <\/script>
+</body>
+</html>`}function Ce(){j(W(),"license-gen.js","application/javascript;charset=utf-8"),f("已下载 license-gen.js","ok"),_.value=!1}function _e(){j(Q(),"license-verify.js","application/javascript;charset=utf-8"),f("已下载 license-verify.js","ok"),_.value=!1}async function Se(){const s=new Ge,e=`激活码工具_${H()}_${Date.now()}`;s.file("license-gen.js",W()),s.file("license-verify.js",Q());const a=u.value.map(o=>({code:o.code,expireText:o.expireText}));s.file("激活码数据.json",JSON.stringify(a,null,2)),s.file("示例页面.html",we());const n=await s.generateAsync({type:"blob"});X(n,`${e}.zip`),f("已下载 ZIP 打包文件","ok"),_.value=!1}return(s,e)=>(l(),c("main",He,[e[31]||(e[31]=t("header",{class:"lk-header"},[t("div",null,[t("h1",null,"激活码生成器"),t("p",null,"生成含过期时间的激活码，支持批量生成与验证")])],-1)),t("div",Pe,[(l(),c(R,null,O(re,a=>t("button",{key:a.key,class:K(["tab-btn",{active:V.value===a.key}]),onClick:n=>V.value=a.key},r(a.icon)+" "+r(a.label),11,Oe)),64))]),t("main",Ne,[t("section",ze,[e[15]||(e[15]=t("h2",{class:"card-title"},"参数设置",-1)),t("div",Be,[t("div",Ie,[e[10]||(e[10]=t("label",{for:"totalLen"},"有效位数",-1)),t("input",{id:"totalLen",type:"number",value:b.value,onChange:e[0]||(e[0]=a=>b.value=Number(a.target.value)),min:"8",max:"48",step:"4"},null,40,Ue)]),t("div",Je,[e[11]||(e[11]=t("label",{for:"groupSize"},"每组字数",-1)),t("input",{id:"groupSize",type:"number",value:A.value,onChange:e[1]||(e[1]=a=>A.value=Number(a.target.value)),min:"3",max:"8"},null,40,Fe)])]),t("div",Ze,[e[12]||(e[12]=t("span",{class:"mode-label"},"过期时间",-1)),t("div",Ye,[(l(),c(R,null,O(ce,a=>t("button",{key:a.value,class:K(["chip",{active:T.value===a.value}]),onClick:n=>{T.value=a.value,p.value=a.days}},r(a.label),11,Xe)),64)),T.value==="custom"?ee((l(),c("input",{key:0,type:"number","onUpdate:modelValue":e[2]||(e[2]=a=>p.value=a),min:"1",max:"3650",class:"chip-input",placeholder:"天数"},null,512)),[[te,p.value,void 0,{number:!0}]]):m("",!0)])]),t("div",We,[t("div",Qe,[e[13]||(e[13]=t("label",{for:"prefix"},"前缀（可选）",-1)),t("input",{id:"prefix",type:"text",value:C.value,onChange:e[3]||(e[3]=a=>C.value=a.target.value),placeholder:"如 PRO、VIP",maxlength:"10"},null,40,qe)]),t("div",et,[e[14]||(e[14]=t("label",{for:"secret"},"密钥盐值",-1)),t("input",{id:"secret",type:"text",value:d.value,onChange:e[4]||(e[4]=a=>d.value=a.target.value),placeholder:"用于校验防伪，默认随机"},null,40,tt)])])]),V.value==="gen"?(l(),c(R,{key:0},[t("section",at,[t("div",st,[t("div",nt,[e[16]||(e[16]=t("label",{for:"batchCount"},"批量数量",-1)),t("input",{id:"batchCount",type:"number",value:L.value,onChange:e[5]||(e[5]=a=>L.value=Number(a.target.value)),min:"1",max:"5000"},null,40,ot)]),t("button",{class:"gen-btn",disabled:E.value,onClick:Y},r(E.value?"生成中...":"生成"),9,rt)])]),t("section",it,[u.value.length?(l(),c("div",lt,[t("div",ct,[t("span",dt,r(u.value.length.toLocaleString()),1),e[17]||(e[17]=t("span",{class:"stat-label"},"条激活码",-1))]),e[21]||(e[21]=t("div",{class:"stat-divider"},null,-1)),t("div",ut,[t("span",pt,r(de.value),1),e[18]||(e[18]=t("span",{class:"stat-label"},"格式预览",-1))]),e[22]||(e[22]=t("div",{class:"stat-divider"},null,-1)),t("div",vt,[t("span",ft,r(ue.value),1),e[19]||(e[19]=t("span",{class:"stat-label"},"有效期",-1))]),t("button",{class:"copy-action",onClick:me,disabled:!u.value.length},[e[20]||(e[20]=t("svg",{viewBox:"0 0 24 24",width:"15",height:"15",fill:"none",stroke:"currentColor","stroke-width":"2"},[t("rect",{x:"9",y:"9",width:"13",height:"13",rx:"2"}),t("path",{d:"M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"})],-1)),Ve(" "+r(M.value),1)],8,ht)])):m("",!0),t("div",gt,[t("div",mt,[e[23]||(e[23]=t("span",{class:"output-title"},"生成结果",-1)),u.value.length?(l(),c("div",yt,[t("button",{class:"act-btn",onClick:be},"导出 TXT"),t("button",{class:"act-btn",onClick:ke},"导出 JSON"),t("button",{class:"act-btn act-btn-primary",onClick:e[6]||(e[6]=a=>_.value=!0)},"下载逻辑文件")])):m("",!0)]),t("div",xt,[u.value.length?(l(),c(R,{key:0},[(l(!0),c(R,null,O(U.value,(a,n)=>(l(),c("div",{key:n,class:"output-line"},[t("span",bt,r(String(n+1).padStart(String(U.value.length).length,"0")),1),t("code",{onClick:o=>ye(a.code),title:"点击复制"},r(a.code),9,kt),t("span",wt,r(a.expireText),1)]))),128)),I.value?(l(),c("div",Ct," 仅显示前 "+r(N.toLocaleString())+" 条（共 "+r(u.value.length.toLocaleString())+" 条） ",1)):m("",!0)],64)):(l(),c("div",_t," 点击「生成」按钮开始创建激活码 "))])])])],64)):m("",!0),V.value==="verify"?(l(),c(R,{key:1},[t("section",St,[t("div",At,[e[24]||(e[24]=t("label",{for:"verifyCode"},"待验证激活码",-1)),ee(t("textarea",{id:"verifyCode","onUpdate:modelValue":e[7]||(e[7]=a=>G.value=a),rows:"3",placeholder:"粘贴激活码，如 GAUZGGFNWK342S4R3",class:"verify-textarea"},null,512),[[te,G.value,void 0,{trim:!0}]])]),t("div",Lt,[t("button",{class:"gen-btn",style:{background:"var(--ok)",width:"100%"},onClick:xe},r(le.value?"验证中...":"验证激活码"),1)])]),h.value?(l(),c("section",Tt,[t("div",Rt,[e[25]||(e[25]=t("div",{class:"output-header"},[t("span",{class:"output-title"},"验证结果")],-1)),t("div",Et,[t("div",{class:K(["vr-card",h.value.valid?"vr-ok":"vr-err"])},[t("div",Vt,r(h.value.valid?"✓":"✗"),1),t("div",jt,[t("div",Kt,r(h.value.valid?"有效":"无效"),1),t("div",$t,r(h.value.reason),1)])],2),h.value.meta?(l(),c("div",Mt,[t("span",null,"激活码: "+r(h.value.meta.format),1),t("span",null,"长度: "+r(h.value.meta.length)+" 字符",1),h.value.meta.prefix?(l(),c("span",Dt,"前缀: "+r(h.value.meta.prefix),1)):m("",!0)])):m("",!0)])])])):m("",!0)],64)):m("",!0)]),ae(ne,{name:"toast-fade"},{default:se(()=>[D.value?(l(),c("div",{key:0,class:K(["toast",B.value])},r(z.value),3)):m("",!0)]),_:1}),(l(),je(Ke,{to:"body"},[ae(ne,{name:"modal-fade"},{default:se(()=>[_.value?(l(),c("div",{key:0,class:"modal-mask",onClick:e[9]||(e[9]=Me(a=>_.value=!1,["self"]))},[t("div",Gt,[t("div",Ht,[e[26]||(e[26]=t("h3",null,"下载逻辑文件",-1)),t("button",{class:"modal-close",onClick:e[8]||(e[8]=a=>_.value=!1)},"×")]),t("div",{class:"modal-body"},[e[30]||(e[30]=t("p",{class:"modal-desc"},"下载独立的 JS 文件，可直接嵌入你的项目中使用。",-1)),t("div",{class:"dl-grid"},[t("button",{class:"dl-card",onClick:Ce},[...e[27]||(e[27]=[t("div",{class:"dl-icon"},"🔑",-1),t("div",{class:"dl-name"},"license-gen.js",-1),t("div",{class:"dl-desc"},"激活码生成逻辑",-1)])]),t("button",{class:"dl-card",onClick:_e},[...e[28]||(e[28]=[t("div",{class:"dl-icon"},"✅",-1),t("div",{class:"dl-name"},"license-verify.js",-1),t("div",{class:"dl-desc"},"激活码验证逻辑",-1)])]),t("button",{class:"dl-card dl-card-wide",onClick:Se},[...e[29]||(e[29]=[t("div",{class:"dl-icon"},"📦",-1),t("div",{class:"dl-name"},"打包下载全部",-1),t("div",{class:"dl-desc"},"包含生成、验证逻辑 + 示例代码 + 当前结果",-1)])])])])])])):m("",!0)]),_:1})]))]))}}),Ut=De(Pt,[["__scopeId","data-v-98f144ee"]]);export{Ut as default};

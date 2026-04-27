@@ -1,1 +1,1 @@
-.toast-enter-active[data-v-4da5d90c],.toast-leave-active[data-v-4da5d90c]{transition:all .3s ease}.toast-enter-from[data-v-4da5d90c],.toast-leave-to[data-v-4da5d90c]{opacity:0;transform:translate(-50%,-20px)}
+.linear[data-v-031b9904]{animation-timing-function:linear}.toast-enter-active[data-v-031b9904],.toast-leave-active[data-v-031b9904]{transition:all .3s ease}.toast-enter-from[data-v-031b9904]{opacity:0;transform:translate(100%)}.toast-leave-to[data-v-031b9904]{opacity:0;transform:translateY(-20px)}
