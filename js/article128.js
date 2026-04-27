@@ -1,133 +1,56 @@
 const t=`
-<article class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans" itemscope itemtype="https://schema.org/Article">
-  <meta itemprop="datePublished" content="2024-02-10">
-  <meta itemprop="author" content="Tools321">
+<div class="max-w-3xl mx-auto p-4 md:p-6 font-sans text-gray-800 leading-relaxed">
+  <h1 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h1>
+  
+  <p class="mb-4 text-gray-700">在日常生活中，我们经常会遇到需要把数字写成中文的情况——写收据、填报销单、签合同，甚至给孩子辅导作业。但你知道数字转中文其实有几种不同的方式吗？数字大写和小写有什么区别？什么时候该用“数字读法”？今天我们就来聊聊数字转中文的那些事，并介绍一个实用的在线工具，帮你轻松搞定各种转换。</p>
 
-  <header>
-    <h1 class="text-3xl font-bold mb-4 text-gray-900 text-center" itemprop="headline">日出日落时间查询 - 全球今日日出日落时刻在线计算器</h1>
-  </header>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字转中文，原来有这么多讲究</h2>
+  <p class="mb-3">我们平时随手写的“一、二、三”是中文小写，简单好认，适合日常记录。但在财务领域，你一定会看到“壹、贰、叁”这样复杂的大写数字。其实数字转中文可以分成四种常见形式，每种都有自己的用途：</p>
+  
+  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+    <li><span class="font-medium text-gray-900">中文小写</span>（如：一千二百三十四）——就是我们平常书写的方式，用在笔记、普通文书里。</li>
+    <li><span class="font-medium text-gray-900">中文大写</span>（如：壹仟贰佰叁拾肆）——笔画复杂，难以涂改，主要用于发票、合同、支票等正式财务文件。</li>
+    <li><span class="font-medium text-gray-900">数字读法</span>（如：一二三四）——逐个数字朗读，常用于报电话号码、身份证号、验证码，避免听错。</li>
+    <li><span class="font-medium text-gray-900">金额格式</span>（如：壹仟贰佰叁拾肆元伍角陆分）——自动带上元角分，完全符合财务大写规范，写借条、填报销单最方便。</li>
+  </ul>
 
-  <section class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-200" itemprop="description">
-    <h2 class="text-xl font-semibold mb-3 text-blue-800">什么是日出日落时间？</h2>
-    <p class="mb-2">
-      <strong>日出日落时间</strong>是指太阳从地平线升起（<strong>日出</strong>）和完全没入地平线以下（<strong>日落</strong>）的精确时刻。这两个时刻并非固定不变，而是随着<strong>地理位置（经纬度）</strong>、<strong>日期</strong>、<strong>海拔高度</strong>的不同而每天变化。本工具采用 NOAA 太阳位置算法，可精确计算全球任意地点的<strong>今日日出日落时刻</strong>，以及包含天文晨光、航海晨光、民用晨光等在内的 <strong>16 个关键太阳时段</strong>。
-    </p>
-  </section>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">为什么金额要用大写？老祖宗的防篡改智慧</h2>
+  <p class="mb-3">很多人都有疑问：为什么发票、合同上的金额必须写成大写？其实这是从古代延续下来的防篡改方法。小写的“一”加一笔就变成“二”、“十”，很容易被修改。而大写的“壹”笔画复杂，很难通过添减笔画改成其他数字。比如“壹”很难改成“贰”，“叁”也很难改成其他字。这种设计大大增加了涂改难度，保障了资金安全。所以直到今天，所有正规财务票据仍然强制要求使用中文大写金额。</p>
 
-  <p class="text-gray-700 mb-6">
-    无论你是想规划摄影的<strong>黄金时刻</strong>、安排户外徒步的行程、还是了解农作物的日照时长，准确的日出日落时间都是必不可少的信息。本<strong>日出日落时间查询工具</strong>无需下载安装，打开浏览器输入经纬度即可免费使用，数据全部在本地计算处理，保护你的隐私安全。
-  </p>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字读法，让沟通更清晰</h2>
+  <p class="mb-3">你有没有遇到过电话里报银行卡号、快递取件码时听错的情况？数字读法就是专门为解决这个问题而生的。把“1234”读成“一二三四”，每个字发音清晰，不容易混淆。特别是像“1”和“7”这样的数字，用“幺”和“拐”来读（工具里可以自定义），能最大程度避免误听。很多客服、快递员都习惯用这种读法。</p>
 
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="what-is-sunrise">
-    <h2 id="what-is-sunrise" class="text-xl font-semibold mb-3 text-gray-900">什么是日出和日落？影响时间的因素有哪些？</h2>
-    <p class="text-gray-700 mb-3">
-      <strong>日出</strong>指太阳上边缘首次露出地平线的瞬间，<strong>日落</strong>则是太阳完全没入地平线以下的瞬间。具体时刻取决于以下四个核心因素：
-    </p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-0">
-      <li><strong>经纬度坐标</strong>：越靠近两极地区，昼夜变化越极端；赤道附近全年昼长稳定在约 12 小时。不同城市的日出日落时间差异显著。</li>
-      <li><strong>日期（季节）</strong>：夏至前后北半球白昼最长、日出最早日落最晚；冬至则相反（南半球季节相反）。春秋分时全球昼夜大致均等。</li>
-      <li><strong>海拔高度</strong>：海拔越高，地平线越远，日出会提前、日落会延后。一般每升高 1000 米，日出约提前 1~2 分钟。</li>
-      <li><strong>时区</strong>：本工具的计算结果已自动转换为当地时间，无需手动换算。</li>
-    </ul>
-  </section>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">金额格式：自动加元角分，规范又省心</h2>
+  <p class="mb-3">如果你需要写借条、填报销单，或者开具收据，最头疼的可能就是怎么把小数点后面的数字转换成“角”和“分”。金额格式功能直接帮你搞定：比如输入123.45，它会自动生成“壹佰贰拾叁元肆角伍分”，完全符合财务大写规则。如果金额是整数，也会自动补上“元整”（工具中显示为元后无角分）。再也不用担心写错单位。</p>
 
-  <section class="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-6" aria-labelledby="twilight-stages">
-    <h2 id="twilight-stages" class="text-lg font-semibold mb-2 text-blue-900">黎明与黄昏的三个阶段：天文晨光、航海晨光、民用晨光</h2>
-    <p class="text-blue-800 text-sm mb-3">天文学根据太阳在地平线下的角度，将黎明和黄昏各分为三个阶段：</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-orange-600 text-sm">天文晨光 / 天文黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-18度 至 -12度<br/>天空开始微亮，肉眼可见最亮的星体，适合天文观测和深空摄影</p>
-      </div>
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-yellow-600 text-sm">航海晨光 / 航海黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-12度 至 -6度<br/>地平线和主要星体清晰可见，水手可用以导航定位</p>
-      </div>
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-sky-600 text-sm">民用晨光 / 民用黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-6度 至 0度<br/>地面景物清晰可辨，无需人工照明即可进行户外活动</p>
-      </div>
-    </div>
-  </section>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">这个工具能做什么？</h2>
+  <p class="mb-2">上面提到的四种转换，一个在线工具就能全部搞定。你只需要输入任意数字（支持负数和小数），它就会实时显示出对应的中文小写、中文大写、数字读法和金额格式。还有几个贴心的细节：</p>
+  <ul class="list-disc pl-6 space-y-1 mb-6 text-gray-700">
+    <li>小数点读法可以自定义，比如把默认的“点”改成“又”，满足不同习惯；</li>
+    <li>自动过滤非法字符，输入“12a3.45”只会保留有效数字“123.45”；</li>
+    <li>每个结果旁边都有“复制”按钮，一键粘贴到你需要的地方。</li>
+  </ul>
 
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="how-to-use">
-    <h2 id="how-to-use" class="text-xl font-semibold mb-3 text-gray-900">如何使用日出日落时间查询工具？</h2>
-    <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-      <li><strong>选择日期</strong>：点击日期输入框选择你想查询的日期（默认显示今天，即<strong>今日日出日落</strong>时间）。</li>
-      <li><strong>输入经纬度</strong>：手动输入城市名称或经纬度坐标，或点击「获取当前位置」按钮自动 GPS 定位。页面进入时会通过 IP 自动获取大致位置并缓存。</li>
-      <li><strong>设置海拔（可选）</strong>：如果你在高海拔地区（如高原城市），填写海拔高度可获得更精确的结果。</li>
-      <li><strong>查看结果</strong>：页面上方横排显示今日日出时间、正午时间、日落时间和昼长；下方列表展示全部 16 个太阳时段的精确时刻，以及当前月相信息。</li>
-    </ol>
-  </section>
+  <div class="bg-blue-50 border border-blue-100 rounded-md p-4 my-6 text-sm text-blue-800">
+    <p class="mb-1"><span class="font-medium">举个例子：</span>输入“-1234.567”</p>
+    <p>中文小写：负一千二百三十四点五六七</p>
+    <p>中文大写：负壹仟贰佰叁拾肆点伍陆柒</p>
+    <p>数字读法：负一二三四点五六七</p>
+    <p>金额格式：负壹仟贰佰叁拾肆元伍角陆分（小数第三位自动忽略）</p>
+  </div>
 
-  <section class="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-r-lg mb-6" aria-labelledby="use-cases">
-    <h2 id="use-cases" class="text-lg font-semibold mb-2 text-amber-900">日出日落时间查询的实际应用场景</h2>
-    <ul class="list-disc pl-5 space-y-1.5 text-sm text-amber-900/80 mb-0">
-      <li><strong>摄影规划</strong>：「黄金时刻」在日出后和日落前约 1 小时，光线柔和色彩丰富；「蓝色时刻」在民用晨光/民用黄昏期间，天空呈深蓝色调，是拍摄城市夜景和人像的最佳时机。</li>
-      <li><strong>徒步露营</strong>：利用日出日落时间精确规划行程，确保在天黑前到达营地；参考天文晨光时间判断安全的早起出发时间。</li>
-      <li><strong>农业种植</strong>：了解每日日照时长变化，合理安排农事活动。不同作物对昼长有不同需求，日照数据是农业生产的重要参考。</li>
-      <li><strong>太阳能发电</strong>：根据日出日落时间估算当日有效日照时长，从而预测光伏板发电量。</li>
-      <li><strong>生物节律与健康</strong>：日出日落影响人体褪黑素分泌和昼夜节律，了解自然光照规律有助于科学调整作息时间。</li>
-      <li><strong>航空航海</strong>：飞行员和水手需要精确的晨光昏影时间来进行目视飞行规则(VFR)操作和天文导航。</li>
-    </ul>
-  </section>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">生活中的实用场景</h2>
+  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+    <li><span class="font-medium">写借条/收据：</span>借款5000元，写成“伍仟元整”，对方无法涂改，双方都放心。</li>
+    <li><span class="font-medium">填报销单：</span>差旅费1234.56元，直接转换粘贴，避免填写错误。</li>
+    <li><span class="font-medium">报手机号：</span>13912345678，逐字读成“一三九一二三四五六七八”，对方一次记对。</li>
+    <li><span class="font-medium">给孩子辅导：</span>让孩子对照数字练习大写，认识“壹贰叁”，顺便了解传统文化。</li>
+    <li><span class="font-medium">合同条款：</span>涉及金额的地方，同时写小写和大写，双重保险。</li>
+  </ul>
 
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="algorithm">
-    <h2 id="algorithm" class="text-xl font-semibold mb-3 text-gray-900">日出日落时间计算原理是什么？</h2>
-    <p class="text-gray-700 mb-2">
-      本工具采用 <strong>NOAA（美国国家海洋大气管理局）公开发布的太阳位置算法</strong>，这是目前最权威的天文计算方法之一。核心计算步骤如下：
-    </p>
-    <ul class="list-disc pl-6 space-y-1.5 text-sm text-gray-600 mb-2">
-      <li>计算儒略世纪数（以 J2000 历元为基准的时间偏移量）</li>
-      <li>计算太阳平近点角、平黄经、真黄经等轨道参数</li>
-      <li>考虑地球轨道偏心率和黄赤交角修正</li>
-      <li>结合观测者的经纬度和海拔高度，求解太阳时角方程</li>
-      <li>输出 UTC 时间后自动转换为当地标准时间</li>
-    </ul>
-    <p class="text-gray-500 text-xs">
-      注：<strong>日出日落时间计算精度通常在正负 1 分钟以内</strong>。极地地区（出现极昼或极夜现象）可能显示为 --:--。实际时刻可能因局部地形遮挡、天气折射等因素略有偏差。
-    </p>
-  </section>
+  <p class="mt-6 text-gray-700 border-t border-gray-200 pt-4">下次需要大写金额、数字读法或者标准金额格式时，不妨试试这个数字转中文工具。不用翻字典查大写，不用纠结“角分”怎么加，输入数字，一键复制，省时省力，还能避免出错。无论是工作还是生活，它都能成为你的实用小帮手。</p>
 
-  <section class="mb-10" aria-labelledby="faq">
-    <h2 id="faq" class="text-2xl font-semibold mb-6 border-b pb-2">常见问题</h2>
-    <div class="space-y-4">
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors" open>
-        <summary class="font-semibold cursor-pointer text-lg mb-2">如何查询今天的日出日落时间？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">打开本工具后，默认即可看到<strong>今日日出日落时间</strong>。如果需要查询其他城市或地点，只需在输入框中输入地名或经纬度坐标，系统会自动计算并显示该地点当天的日出时刻、日落时刻、昼长、正午时间以及全部16个太阳时段。也可以点击「获取当前位置」按钮自动定位到你所在的位置。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">日出日落时间查询准确吗？误差有多大？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">本工具采用的 NOAA 太阳位置算法是目前公认最精确的民用天文算法之一，<strong>计算精度通常在正负 1 分钟以内</strong>。需要注意的是，这个精度假设观测者在开阔地带且无地形遮挡。实际生活中，山脉、建筑物等地形因素可能导致日出延迟数分钟或日落提前数分钟。此外，大气折射效应也会产生微小影响。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">什么是天文晨光、航海晨光、民用晨光？有什么区别？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">这三个概念描述的是日出前（晨光）和日落后（黄昏）天空亮度的不同阶段，区别在于太阳在地平线下的角度：<br/><br/>
-        <strong>天文晨光/黄昏</strong>（太阳 -18° ~ -12°）：天空最暗的阶段，仅最亮的行星和恒星可见，适合天文观测。<br/><br/>
-        <strong>航海晨光/黄昏</strong>（太阳 -12° ~ -6°）：地平线已经可见，水手可以利用星体进行导航。<br/><br/>
-        <strong>民用晨光/黄昏</strong>（太阳 -6° ~ 0°）：户外活动无需额外照明即可进行，大多数日常活动可以开始或结束。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">为什么不同城市的日出日落时间不一样？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">日出日落时间主要受三个因素影响：<strong>纬度</strong>决定了太阳照射的角度——高纬度地区季节性差异大，低纬度地区全年较稳定；<strong>经度</strong>决定了时区位置——同一时区内东西部城市日出时间可相差数十分钟；<strong>日期</strong>决定了太阳直射点的位置——夏至北半球日出最早，冬至最晚。例如北京和海口在同一天的日出时间可相差 1 小时以上。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">摄影中的黄金时刻和蓝色时刻是什么时候？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t"><strong>黄金时刻（Golden Hour）</strong>指日出后约 1 小时内和日落前约 1 小时内的时段，此时太阳接近地平线，光线温暖柔和、阴影较长，是人像摄影和风光摄影的最佳时机。<strong>蓝色时刻（Blue Hour）</strong>指太阳在地平线下 -4° 到 -6° 之间（即民用晨光期间），天空呈现深邃的蓝色调，适合拍摄城市夜景和剪影照片。本工具会在结果中标注这些特殊时段。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">海拔高度对日出日落时间有什么影响？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">海拔越高，视线所及的地平线就越远，因此<strong>海拔高的地方日出会更早、日落会更晚</strong>。经验公式是：每升高 1000 米，日出约提前 1~2 分钟，日落约延后 1~2 分钟。对于平原地区的用户来说这个差异可以忽略，但对于高原城市（如拉萨，海拔约 3650 米）或登山者来说，海拔修正是获得精确时间的重要参数。本工具支持可选的海拔高度输入。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">日出方向是怎么确定的？能查到吗？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">日出的方向并非永远正东，而是随季节变化。春分和秋分前后太阳大致从正东方升起、正西方落下；夏季北半球日出偏向东北、日落偏向西北；冬季则日出偏向东南、日落偏向西南。偏移角度取决于日期和纬度。本工具主要提供时间维度的精确数据，如需方位角信息可结合太阳位置算法进一步推算。</p>
-      </details>
-    </div>
-  </section>
-
-  <footer class="text-center text-gray-400 text-sm pt-4 border-t border-gray-200">
-    <p>日出日落时间数据仅供参考，实际时刻可能因局部地形遮挡、大气折射、天气条件等因素略有偏差。</p>
-  </footer>
-</article>
+  <!-- 自然提及工具，但不做营销 -->
+  <p class="text-xs text-gray-400 mt-8 text-center">—— 让数字转中文更简单 ——</p>
+</div>
 `;export{t as default};

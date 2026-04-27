@@ -1,192 +1,114 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 text-gray-800 bg-white">
-  <!-- 标题 -->
-  <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left pt-4">文件哈希：给你的文件办张“数字身份证”，简单易懂的工具</h1>
-  
-  <!-- 引言/痛点 -->
-  <div class="mb-8 p-5 bg-blue-50 border-l-4 border-blue-500">
-    <p class="text-lg font-medium mb-2">你是不是也遇到过这些情况？</p>
-    <p class="mb-1">• 同一个文件下载了好几次，电脑里存了好几份，占着空间却不知道能不能删</p>
-    <p class="mb-1">• 从网上下载了重要安装包，担心它中途被修改过，不是原版</p>
-    <p class="mb-1">• 给同事传了个大文件，对方收到的和你的原文件真的是同一个吗？</p>
-    <p class="mt-3">如果你对这些问题点头，那么今天要聊的“文件哈希”工具，就是为你准备的解决方案。</p>
-  </div>
-  
-  <!-- 什么是文件哈希 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">文件哈希是什么？把它想象成文件的“指纹”</h2>
-    <p class="mb-4">你可以这样理解：</p>
-    
-    <div class="flex flex-col md:flex-row items-center mb-6 bg-gray-50 p-5 rounded-lg">
-      <div class="md:w-1/3 mb-4 md:mb-0 text-center">
-        <div class="inline-block p-4 bg-white border border-gray-300 rounded shadow-sm">
-          <div class="text-sm text-gray-500 mb-1">你的文件</div>
-          <div class="text-base font-medium">照片、文档、软件...</div>
-        </div>
-        <div class="mt-2 text-gray-500">↓ 生成唯一标识</div>
-      </div>
-      <div class="md:w-2/3 md:pl-6">
-        <div class="p-4 bg-white border border-gray-300 rounded font-mono text-sm break-all">
-          <span class="text-gray-500">得到：</span>7c4a8d09ca3762af61e59520943dc26494f8941b
-        </div>
-        <p class="mt-3 text-sm text-gray-600">这一长串字符就是文件的“哈希值”，像人的指纹一样，几乎不可能有两个文件得到完全相同的值。</p>
-      </div>
+const l=`
+<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
+  <article>
+    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
+      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
+    </h1>
+
+    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
+      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
     </div>
-    
-    <p class="mb-3">这个“指纹”有几个重要特点：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2">
-      <li><span class="font-medium">唯一性</span>：只要文件内容有一丁点不同（哪怕只改了一个标点），得到的哈希值就会天差地别</li>
-      <li><span class="font-medium">固定长度</span>：无论文件是1KB还是10GB，生成的哈希值长度都是固定的，方便比较</li>
-      <li><span class="font-medium">不可逆</span>：从哈希值无法反推出原始文件内容，所以不用担心泄露隐私</li>
-    </ul>
-  </section>
-  
-  <!-- 为什么需要 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">为什么普通人也需要关心文件哈希？</h2>
-    
-    <div class="grid md:grid-cols-3 gap-6 mb-6">
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <div class="text-lg font-bold text-blue-600 mb-2">1. 验证文件完整性</div>
-        <p class="text-sm">下载大文件时，网络中断、传输错误都可能导致文件损坏。计算哈希值并与官方提供的对比，就能100%确认文件是否完整。</p>
+
+    <div class="mb-8">
+      <p class="mb-4 leading-relaxed">
+        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
+      </p>
+      <p class="leading-relaxed">
+        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
+      </p>
+    </div>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        一、认识你的生理周期：不仅仅是“那几天”
+      </h2>
+      <p class="mb-3 leading-relaxed">
+        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
+        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
+        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
+        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
+      </ul>
+      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
+        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        二、推算的核心：找到身体的“节拍器”
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
+      </p>
+
+      <div class="bg-gray-50 p-5 rounded-lg mb-4">
+        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
+        <p class="mb-3 text-gray-700 leading-relaxed">
+          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
+        </p>
+
+        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
+        <p class="text-gray-700 leading-relaxed">
+          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
+        </p>
       </div>
-      
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <div class="text-lg font-bold text-blue-600 mb-2">2. 查找重复文件</div>
-        <p class="text-sm">电脑里存了太多照片和文档？计算哈希值能快速找出内容完全相同的文件，帮你清理空间，告别重复存储。</p>
+
+      <p class="leading-relaxed">
+        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        三、预测工具能帮你做什么？
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
+        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
+        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
+      </ul>
+      <p class="leading-relaxed">
+        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        四、重要提醒：推算结果是“参考”，不是“医嘱”
+      </h2>
+      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
+        <p class="text-red-700 leading-relaxed mb-2">
+          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
+        </p>
+        <p class="text-red-700 leading-relaxed">
+          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
+        </p>
       </div>
-      
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <div class="text-lg font-bold text-blue-600 mb-2">3. 确认文件真实性</div>
-        <p class="text-sm">从网上下载软件、重要文档时，通过比对哈希值，可以确认你下载的就是原始版本，没有被植入病毒或恶意修改。</p>
-      </div>
-    </div>
-    
-    <div class="bg-green-50 border border-green-200 p-5 rounded-lg">
-      <p class="font-medium mb-2">简单来说，文件哈希工具让你：</p>
-      <p class="mb-1">• <span class="font-medium">放心下载</span>——知道文件对不对</p>
-      <p class="mb-1">• <span class="font-medium">轻松管理</span>——知道文件重复没</p>
-      <p class="mb-1">• <span class="font-medium">安全使用</span>——知道文件可靠不</p>
-    </div>
-  </section>
-  
-  <!-- 常见应用场景 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">这些场景下，文件哈希特别有用</h2>
-    
-    <div class="mb-6">
-      <h3 class="text-lg font-bold mb-3 text-gray-700">场景一：下载大型安装包后验证</h3>
-      <div class="flex flex-col md:flex-row items-start bg-gray-50 p-5 rounded-lg">
-        <div class="md:w-1/4 mb-3 md:mb-0">
-          <div class="h-16 flex items-center justify-center bg-white border border-gray-300 rounded px-4">
-            <span class="font-medium">Windows安装包</span>
-          </div>
-        </div>
-        <div class="md:w-3/4 md:pl-6">
-          <p class="mb-2">很多官方网站在提供软件下载时，会同时公布一个“校验码”（其实就是哈希值）。</p>
-          <p class="text-sm text-gray-600">操作步骤：</p>
-          <ol class="list-decimal pl-5 text-sm text-gray-700 space-y-1 mt-1">
-            <li>下载完文件后，用工具计算哈希值</li>
-            <li>与官网公布的校验码对比</li>
-            <li>完全一致 → 放心安装；不一致 → 重新下载</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-    
-    <div>
-      <h3 class="text-lg font-bold mb-3 text-gray-700">场景二：整理手机相册和电脑照片</h3>
-      <div class="flex flex-col md:flex-row items-start bg-gray-50 p-5 rounded-lg">
-        <div class="md:w-1/4 mb-3 md:mb-0">
-          <div class="h-16 flex items-center justify-center bg-white border border-gray-300 rounded px-4">
-            <span class="font-medium">家庭照片备份</span>
-          </div>
-        </div>
-        <div class="md:w-3/4 md:pl-6">
-          <p class="mb-2">同一张照片可能在手机、电脑、网盘里存了多份，手动找起来费时费力。</p>
-          <p class="text-sm text-gray-600">解决方案：</p>
-          <p class="text-sm mt-1">对文件夹里的所有照片计算哈希值，数值相同的文件就是内容完全一样的副本，你可以保留一份，删除其他重复的，轻松释放存储空间。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 不同类型解释 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">MD5、SHA-1、SHA-256有什么区别？</h2>
-    
-    <div class="overflow-x-auto mb-4">
-      <table class="w-full border-collapse border border-gray-300 text-sm">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="border border-gray-300 p-3 text-left">类型</th>
-            <th class="border border-gray-300 p-3 text-left">简单理解</th>
-            <th class="border border-gray-300 p-3 text-left">普通人怎么选</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-white">
-            <td class="border border-gray-300 p-3 font-medium">MD5</td>
-            <td class="border border-gray-300 p-3">最常用，速度快，适合日常文件对比</td>
-            <td class="border border-gray-300 p-3">找重复文件、一般验证就选它</td>
-          </tr>
-          <tr class="bg-gray-50">
-            <td class="border border-gray-300 p-3 font-medium">SHA-1</td>
-            <td class="border border-gray-300 p-3">比MD5更安全一些，但速度稍慢</td>
-            <td class="border border-gray-300 p-3">需要更高安全性的场景</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border border-gray-300 p-3 font-medium">SHA-256</td>
-            <td class="border border-gray-300 p-3">目前最安全的类型，银行级别</td>
-            <td class="border border-gray-300 p-3">验证重要软件、加密文件时用</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <div class="bg-yellow-50 border border-yellow-200 p-4 rounded">
-      <p class="font-medium mb-1">给普通用户的建议：</p>
-      <p class="text-sm">如果你是日常使用，<span class="font-medium">MD5完全足够</span>。只有当验证特别重要的文件（如银行软件、系统镜像）时，才需要考虑SHA-256。工具通常会提供多种选择，你可以根据需求切换。</p>
-    </div>
-  </section>
-  
-  <!-- 常见问题 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">关于文件哈希，你可能想问</h2>
-    
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-bold mb-2 text-gray-700">Q1: 计算文件哈希会泄露我的文件内容吗？</h3>
-        <p class="pl-4">完全不会。哈希值就像指纹，别人看到你的指纹，并不能知道你的长相。同理，从哈希值无法反推出原始文件内容，所以不用担心隐私问题。</p>
-      </div>
-      
-      <div>
-        <h3 class="text-lg font-bold mb-2 text-gray-700">Q2: 文件重命名后，哈希值会变吗？</h3>
-        <p class="pl-4">不会。哈希值只跟文件的实际内容有关，改文件名、改保存位置都不会改变哈希值。只有文件内容本身被修改了，哈希值才会变化。</p>
-      </div>
-      
-      <div>
-        <h3 class="text-lg font-bold mb-2 text-gray-700">Q3: 多大的文件可以计算哈希？要等很久吗？</h3>
-        <p class="pl-4">理论上多大都可以。现在大多数工具都优化得很好，几个GB的文件通常也只需要几秒到几十秒。计算时会显示进度条，你可以看到实时进度。</p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 行动号召 -->
-  <section class="mt-12 pt-6 border-t border-gray-200 text-center">
-    <div class="mb-5">
-      <p class="text-lg font-medium mb-3">现在你明白文件哈希是什么了吗？</p>
-      <p class="text-gray-600 mb-5">它不是什么复杂的技术，而是一个帮你管理文件、确保安全的小工具。下次遇到文件验证、重复查找的问题时，不妨试试用文件哈希来解决。</p>
-    </div>
-    
-    <div class="inline-block p-5 bg-gray-50 border border-gray-300 rounded-lg max-w-md">
-      <p class="font-bold mb-2">简单总结：</p>
-      <p class="text-sm mb-3">文件哈希 = 文件的数字身份证</p>
-      <p class="text-sm mb-1">• 用途：验证完整性、查找重复、确保安全</p>
-      <p class="text-sm mb-1">• 操作：选择文件 → 选择类型 → 获取哈希值</p>
-      <p class="text-sm mb-3">• 结果：对比官方值或自己保存的值</p>
-      <p class="text-xs text-gray-500">不需要专业知识，任何人都能轻松上手使用。</p>
-    </div>
-  </section>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        五、从了解到掌控，开启更自在的生活
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
+        <li>在经期前准备好护理用品，避免尴尬。</li>
+        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
+        <li>为备孕计划提供一个基础的参考时间框架。</li>
+      </ul>
+      <p class="leading-relaxed text-gray-900 font-medium">
+        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{s as default};
+`;export{l as default};

@@ -1,75 +1,90 @@
-const s=`
-<article class="max-w-4xl mx-auto p-5 font-sans text-gray-800 bg-white">
-  <header class="mb-10">
-    <h1 class="text-3xl font-bold mb-5">描述一下，图片就有了：文字变插画的奇妙工具</h1>
-    <p class="text-lg text-gray-600">你是否也曾为找不到一张完美的配图而烦恼？现在，动动手指，把你的想法“说”出来，就能变成图片。</p>
-  </header>
+const t=`
+<article class="max-w-3xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 leading-relaxed">
+  <!-- 标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">心里有点烦？试试这个在线“赛博木鱼”，点点就能静心</h1>
 
-  <div class="my-8 p-5 bg-gray-50 rounded-lg border-l-4 border-gray-800">
-    <h2 class="text-xl font-semibold mb-3">你是不是也遇到过这些情况？</h2>
-    <ul class="space-y-2 pl-5">
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>写文章想配张图，在网上翻了半小时，就是找不到最贴合心意的那一张。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>脑子里有个绝妙的创意画面，但自己不会画画，也没钱请设计师。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>做个简单的海报或社交分享图，但用那些复杂的制图软件，感觉像在解一道数学题。</span>
-      </li>
-    </ul>
+  <!-- 痛点场景 -->
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-5 mb-8 rounded-r">
+    <p class="mb-2">你是不是也有这样的时刻？</p>
+    <p class="mb-0">工作累了，心里莫名烦躁；想静一静，却又不知道从何做起；刷手机越刷越焦虑，想找个简单又不费神的小事放空自己……</p>
   </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-5 border-b pb-2">它是什么？一个你专属的“想象翻译器”</h2>
-    <p class="mb-4">你可以把它想象成一个极其聪明的“画板”。你不需要拿起画笔，也不用懂任何设计原理。你只需要像和朋友聊天一样，把你想要的东西“描述”给它听。</p>
-    <p class="mb-4">比如说，你输入<span class="bg-gray-100 px-2 py-1 rounded">“一只戴着眼镜、在敲键盘的橘猫”</span>，稍等片刻，一张全新的、符合你描述的图片就诞生了。它就是你的文字在视觉世界的“回声”。</p>
-    <p>更贴心的是，你甚至可以给它一张“参考图”，就像你给裁缝看一件喜欢的衣服款式，然后再加上你的文字描述，它就能结合两者，创造出融合了你想法的新作品。</p>
-  </section>
+  <p class="mb-6">
+    我们都在寻找一种快速、简单的方法，让自己从日常的紧绷中抽离片刻。现在，一种结合了古老智慧和现代趣味的方式正在悄悄流行——许多人发现，通过点击屏幕上的一个虚拟木鱼，竟然能收获意想不到的平静。
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-5 border-b pb-2">为什么你需要它？四个无法拒绝的理由</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
-        <h3 class="text-lg font-semibold mb-2">1. 操作像发消息一样简单</h3>
-        <p class="text-gray-600">没有复杂的界面，没有需要学习的按钮。核心就是：<strong>说你想说的，得你想得的</strong>。整个过程清晰直观，上传、生成、查看，一气呵成。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
-        <h3 class="text-lg font-semibold mb-2">2. 省下你海量搜索的时间</h3>
-        <p class="text-gray-600">与其在成千上万的图库里大海捞针，还要担心版权问题。不如花一分钟描述，直接获得一张<span class="font-medium">为你量身定制</span>、独一无二的图片。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
-        <h3 class="text-lg font-semibold mb-2">3. 把抽象灵感“可视化”</h3>
-        <p class="text-gray-600">很多创意存在于模糊的脑海。现在，你可以立刻把它们变成看得见、摸得着（可以保存下载）的视觉素材，让沟通和分享变得无比轻松。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
-        <h3 class="text-lg font-semibold mb-2">4. 用途广泛，随时救急</h3>
-        <p class="text-gray-600">无论是给公众号文章配图、为社交媒体创造吸引眼球的内容，还是为你的个人项目做个简单的概念图，它都能派上用场。</p>
-      </div>
-    </div>
-  </section>
+  <!-- 简单解释 -->
+  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">这个“赛博木鱼”到底是什么？</h2>
+  <p class="mb-4">
+    想象一下，把庙宇里那种能发出清脆声响、帮助人静心的木鱼，搬到了你的手机或电脑屏幕上。你不用去特定的地方，也不需要准备任何实物。
+  </p>
+  <p class="mb-6">
+    它就是一个简单的在线页面：画面上有一个精致的木鱼图案和一个小锤子。当你用手指或鼠标轻轻点击它时，木鱼会微微震动，同时伴有一声令人心神安宁的敲击音效。每敲一下，屏幕上还会飘出一个鼓励的小提示。
+  </p>
+  <div class="bg-gray-100 p-5 rounded-lg mb-6 italic">
+    <p class="mb-0">它的核心不是宗教仪式，而是一个为现代人设计的<strong>“注意力锚点”</strong>。通过一个简单、重复且有即时反馈的动作，帮你把四处乱飘的思绪暂时拉回来，集中在“点击”和“聆听”这一刻。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-5 border-b pb-2">看看这些能用到它的地方</h2>
-    <div class="space-y-6">
+  <!-- 好处列举 -->
+  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">为什么你会想试试它？</h2>
+  <ul class="list-none space-y-4 mb-8">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">1</div>
       <div>
-        <h3 class="text-xl font-semibold mb-2 text-gray-700">场景一：社交媒体“晒”图不发愁</h3>
-        <p class="text-gray-600">想发一条关于“周末慵懒下午茶”的朋友圈，但拍的照片总差点感觉。你可以试试输入：<span class="bg-gray-100 px-2 py-1 rounded italic">“阳光透过窗户照在木质桌上的咖啡和一本翻开的书上，旁边有一块小蛋糕，风格温馨治愈”</span>。一张充满氛围感的配图立刻就有了。</p>
+        <strong class="block text-gray-900">随时可用的“静心开关”</strong>
+        <p class="mt-1">无论是在办公室午休、通勤路上，还是睡前几分钟，打开网页就能用。它把一种需要氛围和道具的静心方式，变成了一个随时随地可进行的迷你练习。</p>
       </div>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">2</div>
       <div>
-        <h3 class="text-xl font-semibold mb-2 text-gray-700">场景二：快速记录灵感的“视觉便签”</h3>
-        <p class="text-gray-600">做梦梦见一个奇妙的场景：<span class="bg-gray-100 px-2 py-1 rounded italic">“发光的鲸鱼在城市楼宇间缓缓游过”</span>。醒来马上用工具生成一张图，这个瞬间的灵感就被完美地保存了下来，比任何文字记录都更生动。</p>
+        <strong class="block text-gray-900">零门槛，动动手指就行</strong>
+        <p class="mt-1">没有任何复杂的规则需要学习。你的全部操作就是“点击”。这种极致的简单，恰恰能让你迅速进入状态，无需思考，只需感受每次敲击的视听反馈。</p>
       </div>
-    </div>
-  </section>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">3</div>
+      <div>
+        <strong class="block text-gray-900">正向的微小积累感</strong>
+        <p class="mt-1">每敲一下，都像为自己积累了一点“平静值”。这种可视化的、累积的反馈，能带来一种微小的成就感，正向激励你继续这个放松的过程。</p>
+      </div>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">4</div>
+      <div>
+        <strong class="block text-gray-900">趣味化的数字体验</strong>
+        <p class="mt-1">它用动画、音效和文字这些数字时代熟悉的方式，重新包装了古老的静心方式。让寻求内心平静这件事，变得轻松、直观，甚至带有一点游戏的趣味性。</p>
+      </div>
+    </li>
+  </ul>
 
-  <section class="my-12 p-6 bg-gray-50 rounded-xl text-center">
-    <h2 class="text-2xl font-bold mb-4">告别“找图困难症”</h2>
-    <p class="mb-6 text-gray-700">最好的工具，就是那些把复杂留给自己，把简单留给你的工具。这个将文字瞬间变为图片的小帮手，或许就是你一直需要的创意催化剂。</p>
-    <p class="text-gray-800 font-medium">不妨现在就想想，你最想把脑海里的哪个画面变成现实？</p>
-  </section>
+  <!-- 应用场景 -->
+  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">它适合用在哪些时刻？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gradient-to-br from-amber-50 to-white p-5 rounded-xl border border-amber-200">
+      <h3 class="font-bold text-lg mb-3 text-amber-900">场景一：工作学习的间隙</h3>
+      <p>连续处理文档或思考问题后，头脑发胀。离开座位走走或许不错，但有时条件不允许。这时，花一两分钟，专注地敲几下“赛博木鱼”，清脆的声音和简单的动作能有效打断持续的思维紧张，给大脑一个清爽的“重启”。</p>
+    </div>
+    <div class="bg-gradient-to-br from-indigo-50 to-white p-5 rounded-xl border border-indigo-200">
+      <h3 class="font-bold text-lg mb-3 text-indigo-900">场景二：睡前放下手机</h3>
+      <p>打算睡觉，却忍不住刷着社交媒体，信息流让神经更加兴奋。不如把最后几分钟交给这个木鱼。关掉大灯，在昏暗环境中，跟随每次敲击的声音和画面，有意识地放慢呼吸。它能帮你形成一个睡前的小仪式，告诉身体：“现在要准备休息了。”</p>
+    </div>
+  </div>
+
+  <!-- 行动号召 -->
+  <div class="text-center mt-12 p-7 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-300">
+    <h3 class="text-xl font-bold mb-3 text-gray-900">给自己一分钟的宁静</h3>
+    <p class="mb-5 mx-auto max-w-lg">
+      这个小小的“赛博木鱼”就在网络上，等待为你提供一个短暂的避风港。它不解决宏大的问题，却可能在你需要喘口气的当下，送上一份最即时的平静。
+    </p>
+    <p class="text-lg font-medium text-gray-700">
+      下次感到心烦意乱时，不妨搜索尝试一下，体验这种古老智慧与现代生活结合带来的奇妙宁静。
+    </p>
+  </div>
+
+  <!-- 自然结尾，融入SEO长尾词 -->
+  <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">
+    本文介绍了当下流行的一种在线解压小工具——数字木鱼，它适合在心情烦躁、寻求短暂专注或作为睡前仪式时使用，是一种简单易行的手机端静心方法。
+  </p>
 </article>
-`;export{s as default};
+`;export{t as default};

@@ -1,97 +1,138 @@
 const t=`
-<article class="text-gray-800 font-sans bg-white">
-  <header class="py-8 px-4 lg:px-8 text-center border-b border-gray-100">
-    <h1 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Excel表格转Word文档，原来可以这么简单快速</h1>
-    <p class="text-gray-600 text-lg">还在为格式错乱、复制粘贴而烦恼吗？一个工具就能搞定。</p>
-  </header>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <!-- 文章主标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+    还在为写文章发愁？试试这个“狗屁不通文章生成器”
+  </h1>
 
-  <div class="px-4 lg:px-8 py-8 max-w-4xl mx-auto">
-    <section class="mb-10">
-      <p class="mb-6 text-lg leading-relaxed">
-        在工作中，我们常常需要将Excel表格里的数据放到Word文档里。你可能是想制作一份包含数据表格的报告，或者是需要提交一份带统计表的方案。
-      </p>
-      <p class="mb-6 text-lg leading-relaxed">
-        这个过程听起来简单，做起来却常常让人头疼。直接复制粘贴吧，表格的格式经常会乱掉，宽度对不齐，颜色也消失了。如果表格有好几页，或者有好几个不同的工作表，那更是费时费力。
-      </p>
-      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
-        <h2 class="text-xl font-semibold mb-2 text-blue-800">你是不是也遇到过这些情况？</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-          <li>精心调整的表格颜色和字体，一粘贴到Word里就全没了。</li>
-          <li>表格太宽，在Word里总是超出页面，需要手动一列一列调整。</li>
-          <li>一个Excel文件里有好几张表，得一张一张处理，非常麻烦。</li>
-          <li>只想快速把数据变成一份规整的文档，却花了大半天时间在调整格式上。</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">一个省心工具能帮你做什么？</h2>
-      <p class="mb-8 text-lg leading-relaxed">
-        好消息是，现在有专门处理这个问题的工具。它就像一个聪明的“格式搬运工”，能帮你把Excel里的表格，原原本本地“搬”到Word文档里，而且过程非常简单。
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-10">
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-green-600 font-bold">1</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">一步上传，自动识别</h3>
-          <p class="text-gray-700">你只需要把Excel文件拖进去或者点一下上传，它就能立刻看到你表格里所有的数据，非常直观。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-blue-600 font-bold">2</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">保留样式，保持美观</h3>
-          <p class="text-gray-700">你之前在Excel里设置的文字加粗、单元格背景颜色，大部分都能被保留下来，生成和你原表很像的Word表格。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-purple-600 font-bold">3</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">按需调整，一键生成</h3>
-          <p class="text-gray-700">你可以选择生成Word文档的纸张大小（比如常用的A4或Letter），然后点一下按钮，一份完整的Word文档就生成好了，可以直接下载使用。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">具体怎么使用？</h2>
-      <p class="mb-6 text-lg leading-relaxed">
-        整个过程只需要三四步，在电脑和手机上都能操作，对使用者的技术水平没有任何要求。
-      </p>
-      <ol class="list-decimal pl-5 space-y-8 text-lg">
-        <li class="pl-2">
-          <strong class="text-gray-900">准备好你的Excel文件：</strong> 确保你要转换的表格已经保存在你的电脑或手机里。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">打开工具，上传文件：</strong> 找到页面上醒目的“上传Excel”按钮，点击它，然后从你的设备里选择文件。你也可以直接把文件拖到那个按钮上，更加方便。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">预览并简单设置：</strong> 上传后，你马上就能在页面下方看到表格内容的预览，确认无误。如果需要，可以在上方选择一个你想要的文档纸张大小。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">转换并下载：</strong> 点击“转换并下载Word”按钮，稍等片刻，浏览器就会自动开始下载生成好的Word文档。打开它，你就会看到一份排版好的表格文档。
-        </li>
-      </ol>
-      <div class="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
-        <p class="text-amber-900"><strong>小提示：</strong> 这个工具会尽力保留你表格的样式。如果原表格特别复杂，生成后可能需要在Word里做一些微调，但比起从零开始，已经节省了大量时间。</p>
-      </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">它适合哪些场景？</h2>
-      <ul class="list-disc pl-5 text-lg space-y-3 text-gray-700">
-        <li><strong>学生：</strong> 将实验数据从Excel整理到实验报告或论文中。</li>
-        <li><strong>办公族：</strong> 制作周报、月报、项目总结，需要将数据表格嵌入文档。</li>
-        <li><strong>HR或财务：</strong> 将人员名单、费用统计表转换成正式的文档格式进行提交或打印。</li>
-        <li><strong>任何需要数据呈现的人：</strong> 当你需要一份既包含详细数据，又排版规范的正式文件时。</li>
-      </ul>
-    </section>
-
-    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
-      <p class="text-xl mb-4 font-medium">总而言之，将Excel转为Word不再是一个技术活。</p>
-      <p class="text-gray-600 mb-8">
-        借助这类便捷的工具，你可以把时间和精力从繁琐的格式调整中解放出来，更多地专注于内容本身。下次再遇到需要转换表格的时候，不妨试试这种方法，体验一下一键生成的轻松。
-      </p>
-      <div class="inline-block px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200">
-        去试试快速转换工具
-      </div>
-    </footer>
+  <!-- 文章导语/首段 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-gray-700">
+      学生时代写作文，总在结尾处努力“凑字数”？工作后写报告，对着空白文档大脑也一片空白？如果你也遇到过这些情况，那么今天介绍的这个网络小工具，可能会让你会心一笑。它能帮你瞬间“生成”一篇几千字的长文，虽然内容可能没什么实际意义。
+    </p>
   </div>
-</article>
+
+  <!-- 什么是狗屁不通文章生成器 -->
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      这到底是个什么东西？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      简单来说，它是一个非常有趣、甚至有点“恶搞”性质的在线工具。你只需要给它一个文章标题，比如“论人工智能对人类未来的影响”，或者“如何养好一盆绿萝”，它就能在几秒钟内，给你“创作”出一篇长达数千字的文章。
+    </p>
+    <p class="text-gray-700 mb-4">
+      不过，你可别指望这篇文章能真的教你养绿萝或者深刻分析人工智能。它的内容是由大量现成的、似是而非的句子、名人名言和一些“正确的废话”组合拼接而成。读起来格式工整、段落清晰，甚至有点“高大上”的感觉，但仔细一琢磨，却发现它并没有传达任何实质性的信息。所以大家才戏称它为“狗屁不通文章生成器”。
+    </p>
+    <div class="bg-gray-100 p-4 rounded-lg my-6 italic text-gray-600">
+      <p>它就像一个超级擅长“说废话”的机器人，能把任何话题都扩展成一篇看似严肃的长篇大论，完美解决了“无话可写”的尴尬。</p>
+    </div>
+  </section>
+
+  <!-- 这个工具有什么用 -->
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      一个生成“废话”的工具，有什么用？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      你可能会问，生成一堆没用的文字，能有什么价值呢？其实，它的用处可能比你想的要大，尤其是在一些轻松和创意的场景下。
+    </p>
+
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">1. 帮你克服“写作恐惧症”</h3>
+        <p class="text-gray-700">
+          很多人面对空白文档会有压力，不知道如何下笔。这个工具生成的文章，虽然内容空洞，但结构是完整的。你可以把它看作一个“写作脚手架”，用它来打破最初的沉默，然后再用自己的想法去替换那些废话，慢慢填充成真正有内容的文章。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">2. 激发灵感和娱乐</h3>
+        <p class="text-gray-700">
+          给它一个离谱的标题，比如“论猫咪统治世界的可能性”，看看它能生成多么一本正经的“学术论文”，这个过程本身就非常有趣。它可以成为朋友间的笑料，或者帮你跳出固有的思维框架，用荒诞的方式看待一个问题，有时反而能碰撞出真正的创意火花。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">3. 测试排版与设计</h3>
+        <p class="text-gray-700">
+          如果你是做网站设计、公众号排版或者编辑工作的，常常需要大量的填充文本来预览版面效果。与其反复复制“这里是内容”，不如用这个工具生成几段样式各异、长度不一的文字，这样能更真实地模拟出文章排好版后的最终样子。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 怎么使用它 -->
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      怎么玩转这个生成器？
+    </h2>
+    <p class="text-gray-700 mb-6">
+      使用起来非常简单，完全不需要任何技术知识。整个页面通常分为上下两部分：上面是控制区，下面是文章展示区。
+    </p>
+
+    <div class="space-y-6 bg-gray-50 p-6 rounded-xl">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">1</span>
+          第一步：想一个标题
+        </h3>
+        <p class="text-gray-700 pl-8">
+          在“文章标题”的输入框里，写下任何你想写的话题。如果一时没想法，可以点击旁边的“换一个”按钮，工具会随机给你推荐一个标题，比如“浅谈人生的意义”或者“数字化转型的必然趋势”。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">2</span>
+          第二步：调整文章长度
+        </h3>
+        <p class="text-gray-700 pl-8">
+          你可以用滑块来设定文章字数的范围，比如最少2000字，最多5000字。拉一拉滑块，就能控制这篇“巨作”的篇幅。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">3</span>
+          第三步：一键生成与复制
+        </h3>
+        <p class="text-gray-700 pl-8">
+          点击“生成文章”按钮，稍等片刻，一篇“热乎的”、符合你字数要求的长文就出现在下方了。如果你觉得内容“惊为天人”，想保存下来或分享给朋友，直接点击“复制文章”按钮，整篇文章就会复制到你的手机或电脑剪贴板，然后可以粘贴到任何地方。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用小贴士 -->
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      使用前的小提醒
+    </h2>
+    <ul class="space-y-3 text-gray-700">
+      <li class="flex items-start">
+        <span class="text-green-500 mr-2">✓</span>
+        <span><strong>明确它的定位：</strong>它本质上是一个娱乐和辅助工具，生成的内容不适合用于任何正式、学术或商业场合。千万别把它生成的“论文”交上去哦。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-500 mr-2">✓</span>
+        <span><strong>把它当作“思维启动器”：</strong>当你完全没思路时，看看它围绕你的标题生成了哪些方向（哪怕这些方向很扯），或许能意外地帮你打开思路。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-500 mr-2">✓</span>
+        <span><strong>体会“废话文学”的精髓：</strong>仔细阅读生成的文章，你会发现它如何用复杂的句式、重复的语义和空洞的论述来填充篇幅。这反过来也能提醒我们，在真正写作时应该如何避免这些问题，让内容更加扎实有力。</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 结尾总结 -->
+  <section class="mt-12 pt-8 border-t border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      “狗屁不通文章生成器”就像网络世界里的一个幽默小品。它用技术手段放大了我们日常生活中常见的“语言泡沫”，让我们在哈哈大笑之余，也能对“信息密度”和“有效沟通”有一点点反思。
+    </p>
+    <p class="text-gray-700">
+      下次当你被写作卡住，或者单纯想找点乐子的时候，不妨想起这个工具。给它一个标题，让它为你表演一场华丽的“文字魔术”。记住，真正的思考和表达永远无法被机器替代，但我们可以借助这些有趣的小工具，让思考和表达的过程变得轻松一点。
+    </p>
+  </section>
+</div>
 `;export{t as default};

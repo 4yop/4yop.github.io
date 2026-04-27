@@ -1,141 +1,147 @@
-const t=`
-<div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 text-gray-800">
-
-  <!-- 文章标题 -->
-  <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">2025年各大AI平台免费额度汇总（附官方网址）</h1>
-
-  <!-- 导语 -->
-  <p class="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
-    想试试最近很火的ChatGPT、文心一言、通义千问，但又不想一开始就花钱？很多AI平台都为新手准备了免费体验额度，足够你尝鲜和学习。这篇文章帮你整理了一份主流AI平台的免费额度清单，包含国内外知名厂商，一眼看明白谁送得多、周期多长，点击链接就能直达官网。建议收藏，方便随时查看。
-  </p>
-
-  <!-- 更新时间（静态日期，建议每次发布手动更新） -->
-  <div class="text-sm text-gray-500 mb-4">数据最后更新：2025-02-27</div>
-
-  <!-- 表格区域（响应式滚动） -->
-  <div class="overflow-x-auto bg-white rounded-lg shadow border border-gray-200 mb-8">
-    <table class="min-w-full divide-y divide-gray-200">
-      <thead class="bg-blue-50">
-        <tr>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">平台名称</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">免费额度</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">时间周期</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">官方网址</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white divide-y divide-gray-200">
-        <!-- OpenAI -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">OpenAI</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">18美元试用金</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">一次性</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://openai.com" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">openai.com</a>
-          </td>
-        </tr>
-        <!-- Anthropic -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Anthropic</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">100万 token（约75万英文单词）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">终身（内测期）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">anthropic.com</a>
-          </td>
-        </tr>
-        <!-- Google AI (Gemini) -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Google AI (Gemini)</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每分钟60次请求</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每日</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://ai.google.dev" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">ai.google.dev</a>
-          </td>
-        </tr>
-        <!-- 百度千帆 -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">百度千帆</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">100万 token（约70万中文字符）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每月</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://cloud.baidu.com/product/wenxin.html" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">cloud.baidu.com</a>
-          </td>
-        </tr>
-        <!-- 阿里通义千问 -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">阿里通义千问</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">100万 token（约70万中文字符）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每月</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://tongyi.aliyun.com" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">tongyi.aliyun.com</a>
-          </td>
-        </tr>
-        <!-- 讯飞星火 -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">讯飞星火</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">200万 token（约140万中文字符）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每月</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://xinghuo.xfyun.cn" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">xinghuo.xfyun.cn</a>
-          </td>
-        </tr>
-        <!-- 智谱AI -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">智谱AI</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">500万 token（约350万中文字符）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每月</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://www.zhipuai.cn" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">zhipuai.cn</a>
-          </td>
-        </tr>
-        <!-- 腾讯混元 -->
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">腾讯混元</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">100万 token（约70万中文字符）</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">每月</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
-            <a href="https://hunyuan.tencent.com" target="_blank" rel="noopener noreferrer" class="hover:underline break-all">hunyuan.tencent.com</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+const s=`
+<div class="article-content">
+  <h1 class="article-title">IP地址查询工具 - 快速获取本机IP地址和网络信息</h1>
+  
+  <div class="article-meta">
+    <span class="meta-item">发布时间：2026-03-28</span>
+    <span class="meta-item">分类：网络工具</span>
+    <span class="meta-item">阅读时间：5分钟</span>
   </div>
 
-  <!-- 免费额度说明（通俗解释） -->
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8 text-sm text-gray-700 rounded-r">
-    <p class="font-medium text-gray-900 mb-1">💡 关于“token”的小科普</p>
-    <p>表格里提到的“token”可以简单理解为AI处理文字时的计数单位。一般来说，1个英文单词≈1.3个token，1个中文字≈2个token。所以100万token大约能处理70万中文字符，足够写一部长篇小说了。对于日常聊天、写邮件、翻译等完全够用。</p>
+  <div class="article-intro">
+    <p>在当今数字化时代，了解自己的IP地址及其相关信息变得越来越重要。我们的<strong>IP地址查询工具</strong>为您提供一站式的网络信息查询服务，不仅能快速获取本机IP地址，还能显示详细的地理位置、浏览器信息和操作系统版本等数据。本文将详细介绍IP地址的相关知识以及如何利用我们的工具进行高效查询。</p>
   </div>
 
-  <!-- FAQ部分 - 回答普通人可能关心的问题 -->
-  <h2 class="text-xl font-semibold text-gray-900 mt-10 mb-4">你可能想问的问题</h2>
+  <h2 class="section-title">什么是IP地址？</h2>
+  
+  <p>IP地址（Internet Protocol Address）是互联网协议地址的简称，是分配给连接到互联网的每台设备的数字标识。就像现实世界中的家庭地址一样，IP地址确保了数据能够准确地发送到目的地。</p>
+  
+  <h3 class="subsection-title">IPv4与IPv6的区别</h3>
+  
+  <div class="info-box">
+    <p><strong>IPv4（Internet Protocol version 4）</strong>是最广泛使用的IP地址版本，采用32位二进制数表示，通常以点分十进制形式呈现（如：192.168.1.1）。由于IPv4地址数量有限（约42亿个），随着互联网设备的快速增长，IPv4地址资源逐渐枯竭。</p>
+    <p><strong>IPv6（Internet Protocol version 6）</strong>是IPv4的继任者，采用128位地址，可提供几乎无限的地址空间（约3.4×10³⁸个地址）。IPv6地址通常以冒号分隔的十六进制形式表示（如：2001:0db8:85a3:0000:0000:8a2e:0370:7334）。</p>
+  </div>
 
-  <div class="space-y-6">
-    <!-- 问题1 -->
-    <div>
-      <h3 class="text-lg font-medium text-gray-900 mb-1">这些免费额度怎么领取？复杂吗？</h3>
-      <p class="text-gray-700">很简单。点击表格里的官网链接，注册账号，一般会自动赠送免费额度，或者需要在控制台里点一下“开通”之类的按钮。整个过程就像注册一个普通网站，几分钟就能搞定。</p>
-    </div>
-    <!-- 问题2 -->
-    <div>
-      <h3 class="text-lg font-medium text-gray-900 mb-1">哪个平台最适合新手？</h3>
-      <p class="text-gray-700">如果你喜欢中文界面，可以试试国内的“讯飞星火”、“智谱AI”或“通义千问”，它们都有网页版，直接就能聊天。如果想体验最前沿的GPT-4，OpenAI的额度可以用来调用API，但需要一点英文基础。按需选择就好。</p>
-    </div>
-    <!-- 问题3 -->
-    <div>
-      <h3 class="text-lg font-medium text-gray-900 mb-1">免费额度用完了怎么办？</h3>
-      <p class="text-gray-700">大部分平台每月重置免费额度（比如每月100万token），用完后可以等下一周期，或者选择付费套餐。也有平台是一次性赠送（比如OpenAI的18美元），用完后就需要充值。不过对于普通试用，免费额度一般能用很久。</p>
-    </div>
-    <!-- 问题4 -->
-    <div>
-      <h3 class="text-lg font-medium text-gray-900 mb-1">这些平台提供的服务有什么区别？</h3>
-      <p class="text-gray-700">每个平台的大模型特点不同，比如有的擅长写作，有的擅长数学推理，有的中文支持更好。建议你都试试，找到最适合自己需求的。免费额度就是用来“尝遍百草”的。</p>
+  <h3 class="subsection-title">公网IP与内网IP</h3>
+  
+  <p>在使用我们的IP地址查询工具时，您可能会注意到显示的IP地址类型有所不同：</p>
+  
+  <ul class="feature-list">
+    <li><strong>公网IP</strong>：也称为外网IP，是全球互联网中唯一的地址，由互联网服务提供商（ISP）分配。公网IP允许您的设备直接访问互联网，也能被其他网络设备访问。</li>
+    <li><strong>内网IP</strong>：也称为私有IP，用于局域网（LAN）内部的设备通信。常见的内网IP地址段包括192.168.0.0/16、10.0.0.0/8和172.16.0.0/12。内网IP不能直接在互联网上路由，需要通过网络地址转换（NAT）技术通过公网IP访问互联网。</li>
+  </ul>
+
+  <h2 class="section-title">IP地址查询工具能显示什么信息？</h2>
+  
+  <p>我们的IP地址查询工具不仅显示简单的IP地址，还提供丰富的网络和环境信息：</p>
+
+  <ul class="feature-list">
+    <li><strong>IP地址</strong>：显示您的公网IP地址（IPv4和IPv6，如果可用）</li>
+    <li><strong>地理位置</strong>：根据IP地址推断的大概地理位置，包括国家、省份、城市等</li>
+    <li><strong>ISP信息</strong>：显示您的互联网服务提供商信息</li>
+    <li><strong>浏览器信息</strong>：包括浏览器名称、版本、用户代理字符串等</li>
+    <li><strong>操作系统</strong>：显示您使用的操作系统类型和版本</li>
+    <li><strong>屏幕信息</strong>：显示屏幕分辨率和视窗尺寸</li>
+    <li><strong>语言设置</strong>：显示浏览器的首选语言</li>
+    <li><strong>时区信息</strong>：显示您的本地时区</li>
+  </ul>
+
+  <h2 class="section-title">IP地址能透露什么信息？</h2>
+  
+  <p>通过IP地址，可以获取以下类型的信息：</p>
+  
+  <ul class="feature-list">
+    <li><strong>大致地理位置</strong>：IP地址通常能定位到城市级别，有时甚至能精确到街道级别，但这取决于IP地址数据库的精度</li>
+    <li><strong>网络提供商</strong>：可以识别出ISP信息，例如中国移动、中国电信、中国联通等</li>
+    <li><strong>网络类型</strong>：可以判断是家庭宽带、企业网络还是移动网络</li>
+    <li><strong>使用习惯</strong>：网站可以通过分析IP访问模式了解用户的上网习惯</li>
+  </ul>
+
+  <div class="warning-box">
+    <p><strong>注意</strong>：虽然IP地址可以提供地理位置信息，但这种定位是基于IP地址数据库的估计值，并不是实时的精确定位，而且可能存在一定误差。如果您需要精确的位置服务，建议使用GPS等定位技术。</p>
+  </div>
+
+  <h2 class="section-title">IP地址查询的应用场景</h2>
+  
+  <h3 class="subsection-title">网络调试与故障排查</h3>
+  <p>当遇到网络连接问题时，首先查看IP地址是否正常是基本的排查步骤。通过IP地址查询工具，可以快速确认您的公网IP是否正常分配，以及网络连接是否正常。</p>
+
+  <h3 class="subsection-title">网络安全检测</h3>
+  <p>了解自己的IP地址有助于识别异常的网络活动。如果您发现IP地址频繁变更或与预期不符，可能存在网络安全问题。此外，在进行远程访问配置时，也需要知道自己的公网IP地址。</p>
+
+  <h3 class="subsection-title">内容访问限制</h3>
+  <p>某些网站或在线服务会根据IP地址限制内容访问。通过查询IP地址，您可以了解自己当前的网络环境是否符合访问要求。</p>
+
+  <h3 class="subsection-title">游戏服务器连接</h3>
+  <p>在线游戏通常需要连接到特定的服务器。了解自己的IP地址有助于配置网络、排查连接问题，以及选择延迟最低的服务器。</p>
+
+  <h2 class="section-title">如何保护IP地址隐私？</h2>
+  
+  <p>虽然IP地址本身并不会直接暴露个人身份信息，但了解如何保护IP隐私仍然很重要：</p>
+  
+  <ul class="feature-list">
+    <li><strong>使用VPN</strong>：虚拟专用网络（VPN）可以隐藏您的真实IP地址，通过加密隧道连接到互联网，提供更好的隐私保护</li>
+    <li><strong>使用代理服务器</strong>：代理服务器可以作为中间层，隐藏您的原始IP地址</li>
+    <li><strong>避免点击可疑链接</strong>：钓鱼网站和恶意链接可能会记录您的IP地址</li>
+    <li><strong>定期更换密码</strong>：如果您的IP地址被记录并用于不良目的，定期更换密码可以降低风险</li>
+    <li><strong>使用防火墙</strong>：启用网络防火墙可以阻止不必要的入站连接，减少IP暴露的风险</li>
+  </ul>
+
+  <h2 class="section-title">常见问题（FAQ）</h2>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Q1: IP地址会频繁变化吗？</h3>
+    <div class="faq-answer">
+      <p>这取决于您的网络服务类型。如果您使用的是动态IP地址，那么IP地址可能会定期变化（如每次重新连接网络时）。大多数家庭宽带使用的是动态IP。企业用户或需要稳定IP的用户通常会申请静态IP地址，这种IP地址不会自动变化。</p>
     </div>
   </div>
 
-  <!-- 提醒免责 -->
-  <div class="mt-10 text-xs text-gray-400 text-right border-t pt-4">
-    * 免费额度及周期可能随时变更，请以官网最新信息为准。本文仅作信息整理，无任何推广意图。
+  <div class="faq-item">
+    <h3 class="faq-question">Q2: 为什么我的IP地址显示的地理位置不准确？</h3>
+    <div class="faq-answer">
+      <p>IP地址的地理位置定位基于IP地址数据库，这些数据库通过多种方式收集信息，但并非实时更新。此外，如果您的ISP使用的IP地址段注册位置与实际服务区域不同，也会导致定位偏差。IP定位通常只能达到城市级别，无法提供精确到街道的定位。</p>
+    </div>
   </div>
 
+  <div class="faq-item">
+    <h3 class="faq-question">Q3: 如何查看我的内网IP地址？</h3>
+    <div class="faq-answer">
+      <p>查看内网IP地址的方法取决于您的操作系统：</p>
+      <p><strong>Windows</strong>：打开命令提示符（CMD），输入"ipconfig"，找到"IPv4 地址"一栏显示的就是您的内网IP地址。</p>
+      <p><strong>macOS</strong>：打开终端，输入"ifconfig"或"ipconfig getifaddr en0"，查看相应的网卡地址。</p>
+      <p><strong>Linux</strong>：打开终端，输入"ifconfig"或"ip addr show"，找到对应网卡的IP地址。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Q4: IP地址是否可以追踪到个人身份？</h3>
+    <div class="faq-answer">
+      <p>IP地址本身不会直接暴露个人身份信息。但是，结合其他数据（如ISP的访问日志、网站访问记录等），IP地址可能被用于追踪网络活动。通常只有执法机关在获得法律授权的情况下，才能通过ISP获取与IP地址相关的个人信息。因此，如果您重视隐私保护，建议使用VPN等服务来隐藏真实IP地址。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Q5: 什么是IP地址冲突？如何解决？</h3>
+    <div class="faq-answer">
+      <p>IP地址冲突是指局域网中有两台或更多设备使用了相同的IP地址。这会导致网络连接问题，表现为间歇性断网、无法访问网络等。解决方法：</p>
+      <ul>
+        <li>手动为设备分配不同的IP地址</li>
+        <li>确保路由器的DHCP（动态主机配置协议）功能正常工作</li>
+        <li>检查是否有设备被设置了静态IP地址与DHCP分配范围重叠</li>
+        <li>重启路由器和相关设备</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="section-title">总结</h2>
+  
+  <p>IP地址查询工具是一个简单但功能强大的网络工具，可以帮助您快速了解自己的网络状态和环境信息。无论是进行网络调试、故障排查，还是了解自己的上网隐私状况，这个工具都能提供有价值的信息。</p>
+  
+  <p>通过本文的介绍，您应该已经了解了IP地址的基本概念、类型差异以及查询工具的使用方法。记住，保护个人隐私始终很重要，在使用互联网时请时刻关注自己的网络安全。我们的IP地址查询工具随时为您服务，帮助您更好地管理和了解自己的网络连接。</p>
+
+  <div class="call-to-action">
+    <p>立即使用我们的<strong>IP地址查询工具</strong>，获取您的本机IP地址和详细网络信息！</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{s as default};

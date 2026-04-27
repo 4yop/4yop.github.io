@@ -1,225 +1,113 @@
-const t=`
-<article class="article-content">
-  <header class="article-header">
-    <h1 class="article-title">证件照制作工具：在线证件照换背景，3分钟搞定标准证件照</h1>
-    <p class="article-intro">还在为证件照发愁？排队拍照、价格昂贵、效果不满意……现在有了在线证件照制作工具，足不出户就能制作专业级证件照，支持证件照换背景、智能美颜、尺寸调整等功能，省时省力又省钱。</p>
-  </header>
+const l=`
+<div class="text-gray-800 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Excel和CSV文件互转：一个简单工具解决办公小烦恼</h1>
 
-  <section class="article-section">
-    <h2 class="section-title">传统证件照制作的三大痛点</h2>
-    <div class="pain-points">
-      <div class="pain-point-item">
-        <h3>时间成本高</h3>
-        <p>去照相馆拍证件照，往返路程加上排队等待，往往需要花费半天时间。对于工作繁忙的上班族和学生来说，这无疑是一种时间浪费。</p>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你在工作中是否遇到过这样的困扰：精心制作的Excel表格，发给同事或上传到某个系统时，对方却提示无法打开或格式不支持？或者收到一个CSV文件，点开却发现全是乱码，数据都挤在一起？今天，我们就来聊聊这两种常见的电子表格文件，以及如何轻松地在它们之间转换。
+  </p>
+
+  <!-- 第一部分：解释两种格式 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">Excel 和 CSV，到底有什么区别？</h2>
+    <p class="mb-4">
+      我们可以把文件格式想象成不同的“包装盒”。<strong>Excel文件</strong>（比如 .xlsx 或 .xls）就像一个功能齐全的“豪华礼品盒”，它不仅能装下数据（表格里的数字和文字），还能记住颜色、字体、公式、多个工作表等丰富的样式和设置。这是微软Office和WPS等办公软件最常用的格式。
+    </p>
+    <p class="mb-4">
+      而<strong>CSV文件</strong>（.csv）则像一个最朴素的“通用纸箱”。它只关心最核心的东西——数据本身。它用简单的逗号来分隔每一列，用换行来分隔每一行，里面没有任何颜色、公式或者多余的格式。正因为这种简单，几乎所有的软件和系统都能识别并打开它，兼容性极好。
+    </p>
+    <div class="bg-blue-50 p-4 rounded-lg mb-4 border border-blue-100">
+      <p class="text-blue-800 mb-2"><strong>简单来说：</strong></p>
+      <ul class="list-disc pl-5 space-y-1 text-blue-800">
+        <li>Excel文件：功能强，样式丰富，适合编辑和保存。</li>
+        <li>CSV文件：结构简单，兼容性无敌，适合交换和导入数据。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 第二部分：为什么需要转换？ -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么时候需要把文件转来转去？</h2>
+    <p class="mb-4">
+      理解了它们的特性，就知道转换的必要性了。下面这些场景，你可能也碰到过：
+    </p>
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 Excel 转成 CSV</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>将客户数据导入到网站后台或邮件系统。</li>
+          <li>把销售报表上传到只支持CSV的财务软件。</li>
+          <li>和用不同办公软件（如Mac的Numbers）的伙伴共享纯数据。</li>
+          <li>避免因Excel版本不同导致的格式错乱问题。</li>
+        </ul>
       </div>
-      <div class="pain-point-item">
-        <h3>价格不便宜</h3>
-        <p>普通证件照拍摄费用通常在30-80元不等，如果需要精修或加急，价格可能翻倍。而且一旦照片不合格需要重拍，还得重新付费。</p>
-      </div>
-      <div class="pain-point-item">
-        <h3>效果难满意</h3>
-        <p>照相馆的拍摄风格千篇一律，很难根据个人需求调整。拍出来的照片可能表情僵硬、光线不佳，甚至因为背景色不对而无法使用。</p>
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 CSV 转成 Excel</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>从银行或电商平台下载的账单是CSV，想用Excel做进一步计算和图表分析。</li>
+          <li>收到的CSV数据没有排版，想把它整理得美观易读。</li>
+          <li>需要将多个CSV文件的数据合并到一个Excel文件的多个工作表中。</li>
+          <li>单纯觉得用Excel查看和编辑更顺手。</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="article-section">
-    <h2 class="section-title">在线证件照制作工具的优势</h2>
-    <p>相比传统照相馆，使用在线证件照制作工具有着明显的优势：</p>
-    <ul class="benefit-list">
-      <li><strong>随时随地制作</strong>：只要有手机和电脑，在家、在公司、在咖啡厅都能轻松制作证件照</li>
-      <li><strong>操作简单快捷</strong>：上传照片、选择规格、调整背景，3分钟就能完成</li>
-      <li><strong>成本几乎为零</strong>：免费使用基础功能，付费版也远低于照相馆价格</li>
-      <li><strong>效果可控可调</strong>：支持证件照换背景、智能美颜、亮度调整，不满意可以反复修改</li>
-      <li><strong>多种规格可选</strong>：一寸、二寸、护照、签证等常见规格一键切换</li>
-    </ul>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">常见证件照规格对照表</h2>
-    <p>不同用途的证件照有着不同的尺寸和背景要求。以下是常见证件照规格对照表：</p>
-    <table class="spec-table">
-      <thead>
-        <tr>
-          <th>证件类型</th>
-          <th>尺寸规格</th>
-          <th>背景颜色</th>
-          <th>像素要求</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>一寸证件照</td>
-          <td>25mm x 35mm</td>
-          <td>红/蓝/白</td>
-          <td>295x413px</td>
-        </tr>
-        <tr>
-          <td>二寸证件照</td>
-          <td>35mm x 49mm</td>
-          <td>红/蓝/白</td>
-          <td>413x579px</td>
-        </tr>
-        <tr>
-          <td>小一寸</td>
-          <td>22mm x 32mm</td>
-          <td>红/蓝/白</td>
-          <td>260x378px</td>
-        </tr>
-        <tr>
-          <td>中国护照</td>
-          <td>33mm x 48mm</td>
-          <td>白色/淡蓝</td>
-          <td>390x567px</td>
-        </tr>
-        <tr>
-          <td>美国签证</td>
-          <td>51mm x 51mm</td>
-          <td>白色</td>
-          <td>600x600px</td>
-        </tr>
-        <tr>
-          <td>驾驶证</td>
-          <td>22mm x 32mm</td>
-          <td>白色</td>
-          <td>260x378px</td>
-        </tr>
-        <tr>
-          <td>毕业证/学位证</td>
-          <td>33mm x 48mm</td>
-          <td>蓝色</td>
-          <td>390x567px</td>
-        </tr>
-        <tr>
-          <td>结婚证</td>
-          <td>53mm x 35mm</td>
-          <td>红色</td>
-          <td>626x413px</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">不同场景的背景色要求</h2>
-    <p>证件照换背景是制作过程中的关键步骤，不同用途对背景颜色有严格要求：</p>
-    
-    <h3>白色背景</h3>
-    <p>白色背景是最通用的选择，适用于：</p>
-    <ul>
-      <li>护照、身份证、驾驶证等官方证件</li>
-      <li>签证申请（大多数国家要求）</li>
-      <li>简历、求职申请</li>
-      <li>考试报名（公务员考试、研究生考试等）</li>
-    </ul>
-
-    <h3>蓝色背景</h3>
-    <p>蓝色背景常见于教育和职业场景：</p>
-    <ul>
-      <li>毕业证、学位证</li>
-      <li>工作证、胸牌</li>
-      <li>部分职业资格考试</li>
-      <li>企业入职材料</li>
-    </ul>
-
-    <h3>红色背景</h3>
-    <p>红色背景主要用于特定场合：</p>
-    <ul>
-      <li>结婚证</li>
-      <li>部分国家的身份证</li>
-      <li>某些单位的内部证件</li>
-      <li>保险、医保相关证件</li>
-    </ul>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">证件照拍摄与制作技巧</h2>
-    
-    <h3>拍摄前的准备</h3>
-    <ul class="tips-list">
-      <li><strong>服装选择</strong>：穿着深色有领衣服，避免与背景色相近的颜色</li>
-      <li><strong>妆容建议</strong>：保持自然妆容，避免浓妆艳抹；男生保持面部整洁</li>
-      <li><strong>发型整理</strong>：露出眉毛和耳朵，长发建议扎起或别在耳后</li>
-      <li><strong>表情管理</strong>：保持自然微笑或中性表情，双眼平视镜头</li>
-    </ul>
-
-    <h3>拍摄环境要求</h3>
-    <ul class="tips-list">
-      <li><strong>光线充足</strong>：选择自然光或柔和的室内灯光，避免阴影</li>
-      <li><strong>背景简洁</strong>：纯色墙面最佳，避免杂乱背景增加后期难度</li>
-      <li><strong>距离适中</strong>：距离镜头约1-1.5米，确保面部清晰</li>
-      <li><strong>设备稳定</strong>：使用三脚架或固定手机，避免照片模糊</li>
-    </ul>
-
-    <h3>使用在线工具制作步骤</h3>
-    <ol class="steps-list">
-      <li><strong>上传照片</strong>：选择一张清晰的正面照上传至证件照制作工具</li>
-      <li><strong>选择规格</strong>：根据用途选择对应的证件照尺寸</li>
-      <li><strong>证件照换背景</strong>：使用智能抠图功能更换背景颜色（白/蓝/红）</li>
-      <li><strong>调整优化</strong>：微调亮度、对比度，开启美颜功能（可选）</li>
-      <li><strong>预览保存</strong>：确认效果后下载高清电子版，可排版打印</li>
+  <!-- 第三部分：介绍工具（非技术化描述） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何轻松完成转换？</h2>
+    <p class="mb-4">
+      以前，你可能需要打开复杂的办公软件，进行“另存为”操作，或者手动复制粘贴，步骤繁琐还容易出错。现在，整个过程可以变得像“上传文件-点击按钮-下载结果”一样简单。
+    </p>
+    <p class="mb-6">
+      一个设计友好的在线工具就能帮你搞定。你只需要：
+    </p>
+    <ol class="list-decimal pl-5 space-y-3 mb-6">
+      <li><strong>选择转换方向</strong>：告诉工具，你是想把Excel变成CSV，还是反过来。</li>
+      <li><strong>上传你的文件</strong>：从电脑里选择那个需要转换的文件。</li>
+      <li><strong>做点小选择（如果需要）</strong>：比如转换Excel时，可以选择里面的某一个具体工作表；转换CSV时，可以选一种更通用的文字编码来彻底避免乱码。</li>
+      <li><strong>开始转换并下载</strong>：点击按钮，稍等片刻，就能得到一份格式完美兼容的新文件。</li>
     </ol>
-  </section>
+    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+      <p class="text-green-800">
+        <strong>整个过程在浏览器里完成</strong>，无需安装任何软件，也无需担心复杂的设置。无论是用Windows电脑、Mac，还是手机，只要你能打开网页，就能使用。
+      </p>
+    </div>
+  </div>
 
-  <section class="article-section">
-    <h2 class="section-title">为什么选择我们的证件照制作工具？</h2>
-    <p>我们的在线证件照制作工具采用先进的AI技术，为用户提供专业级的证件照制作体验：</p>
-    <div class="feature-grid">
-      <div class="feature-item">
-        <h4>智能抠图</h4>
-        <p>AI自动识别人像边缘，证件照换背景精准自然，发丝级抠图效果</p>
+  <!-- 第四部分：解决常见问题（FAQ形式） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你可能关心的问题</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换后会丢失我的公式和颜色吗？</h3>
+        <p>当从Excel转为CSV时，<strong>会的</strong>。CSV格式只保存最终的数值和文字结果。所以如果你的表格依赖复杂的计算，建议保留原始的Excel文件作为“母版”，只将最终需要交换的数据转为CSV。</p>
       </div>
-      <div class="feature-item">
-        <h4>丰富规格</h4>
-        <p>内置100+种证件照规格，覆盖国内外各类证件需求</p>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">为什么转换后的CSV用记事本打开是乱码？</h3>
+        <p>这通常是“文字编码”不匹配造成的。选择带有“<strong>BOM</strong>”的UTF-8编码选项进行转换，可以最大限度地保证在不同系统上都能正确显示中文等字符，彻底解决乱码烦恼。</p>
       </div>
-      <div class="feature-item">
-        <h4>一键美颜</h4>
-        <p>自然美颜不夸张，祛痘、美白、瘦脸，让证件照更精神</p>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">我的文件很大，转换会卡住吗？</h3>
+        <p>一个好的工具会考虑到大文件的情况，采用流式处理的方式，就像细水长流一样分批处理数据，而不是一次性全部吞下，从而更稳定地完成大型表格的转换。</p>
       </div>
-      <div class="feature-item">
-        <h4>排版打印</h4>
-        <p>自动生成6寸/5寸排版，直接送印或自行打印都方便</p>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换安全吗？我的数据会上传到哪里？</h3>
+        <p>对于靠谱的工具，整个转换过程通常在<strong>你的浏览器本地完成</strong>，文件数据并不会被上传到远方的服务器。这意味着你的敏感业务数据或个人信息，从始至终都只留在你自己的电脑或手机上，安全有保障。</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="article-section faq-section">
-    <h2 class="section-title">常见问题解答（FAQ）</h2>
-    
-    <div class="faq-item">
-      <h3 class="faq-question">Q1: 在线制作的证件照会被官方认可吗？</h3>
-      <p class="faq-answer">只要符合官方要求的尺寸、背景颜色和清晰度，在线制作的证件照完全可以使用。我们的工具严格按照国家标准设计，生成的照片符合各类证件办理要求。</p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q2: 证件照换背景后边缘会有锯齿吗？</h3>
-      <p class="faq-answer">我们的工具采用AI智能抠图技术，能够精准识别人像边缘，即使是头发丝等细节也能处理得自然流畅，不会出现明显的锯齿或白边。</p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q3: 可以用手机自拍的照片制作证件照吗？</h3>
-      <p class="faq-answer">可以，但建议使用后置摄像头拍摄，确保照片清晰。拍摄时注意光线充足、背景简洁、正面平视镜头，这样制作出来的证件照效果更好。</p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q4: 制作好的证件照如何打印？</h3>
-      <p class="faq-answer">我们提供一键排版功能，可以将证件照自动排版到6寸或5寸相纸上。您可以选择在线冲印服务，也可以下载电子版后到附近的照相馆或打印店打印。</p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q5: 证件照制作需要付费吗？</h3>
-      <p class="faq-answer">基础功能完全免费，包括证件照换背景、尺寸调整、简单美颜等。高级功能如高清下载、批量处理等可选择付费升级，价格远低于传统照相馆。</p>
-    </div>
-  </section>
-
-  <section class="article-section conclusion">
-    <h2 class="section-title">结语</h2>
-    <p>证件照制作不再是麻烦事。借助专业的在线证件照制作工具，您可以轻松完成证件照换背景、尺寸调整、美颜优化等操作，在家就能制作出符合标准的专业证件照。</p>
-    <p>无论是办理护照、签证申请，还是求职应聘、考试报名，一张得体的证件照都能给人留下良好的第一印象。现在就来体验我们的证件照制作工具，3分钟制作您的专属证件照！</p>
-    <div class="cta-box">
-      <p class="cta-text">立即使用证件照制作工具，免费制作您的专业证件照！</p>
-    </div>
-  </section>
-</article>
-`;export{t as default};
+  <!-- 结尾总结 -->
+  <div class="bg-gray-50 p-6 rounded-xl border">
+    <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
+    <p class="mb-4 text-center">
+      Excel和CSV，各有各的用武之地。当它们在沟通中“语言不通”时，我们不再需要手足无措。利用简单易用的转换工具，就像给文件找一个“万能翻译”，轻松跨越格式障碍，让数据顺畅地流动起来，为你提高办公效率，减少不必要的麻烦。
+    </p>
+    <p class="text-center text-gray-600">
+      希望这篇文章能帮你理清思路。下次再遇到格式不兼容的提示，不妨试试这个简单的转换方法。
+    </p>
+  </div>
+</div>
+`;export{l as default};

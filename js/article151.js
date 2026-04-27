@@ -1,56 +1,40 @@
-const l=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">想把动图GIF拆成一堆静态图片？这个工具能一键搞定</h1>
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合把多个 PDF 按顺序合并成一个文件，也可以针对每个文件设置页码范围，只取需要的页面再合并。
+        整个过程在浏览器里完成，适合整理扫描件、报名材料、交付文档和内部资料包。
+      </p>
+    </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
-    <p class="text-base">你是不是也遇到过这种情况：看到一个有趣的GIF动图，特别想保存里面的某一瞬间，却怎么也截不到最清晰的那一帧？</p>
-  </div>
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样操作</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先按最终阅读顺序整理文件，再上传，会比后面反复上移下移更省事。</li>
+        <li>如果只需要部分内容，优先填写页码范围，避免把整本 PDF 都合并进去。</li>
+        <li>合并完成后先抽查首页、目录页和最后一页，确认顺序和页数没有问题。</li>
+        <li>文件很多时分批处理会更稳，也更容易复查。</li>
+      </ol>
+    </section>
 
-  <p class="text-lg mb-6 leading-relaxed">GIF动图很生动，但有时我们需要的恰恰是它“不动”的样子。比如，从一段动态表情包里保存最搞笑的那张脸，或者从产品展示动图中提取一张最清晰的静态图来使用。自己一帧帧截图？既麻烦，画质还可能受损。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">GIF拆帧：像“分解动画”一样简单</h2>
-  <p class="mb-6 leading-relaxed">你可以把一个GIF动图想象成一本快速的翻页动画书。这本书由很多页（也就是“帧”）快速翻过，形成了动画效果。所谓“提取帧”，就是把这本书拆开，把每一页都变成一张独立的、清晰的图片摆在你面前。</p>
-  <p class="mb-6 leading-relaxed">这样一来，动图里的每一个瞬间，你都可以轻松获得，再也不用为截不到完美瞬间而烦恼了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么你需要这样一个工具？</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3">
-    <li class="leading-relaxed"><strong>保存心动的瞬间</strong>：从喜欢的电影动图、爱豆表情包里，精准保存你最钟爱的那一帧画面，当作手机壁纸或收藏。</li>
-    <li class="leading-relaxed"><strong>获取设计素材</strong>：做海报、剪视频时，可以直接从GIF里提取出高质量的静态图片作为素材，省去全网搜索的麻烦。</li>
-    <li class="leading-relaxed"><strong>制作表情包合集</strong>：把一个长故事的GIF拆解成多个单张表情，方便你在不同聊天场景下使用。</li>
-    <li class="leading-relaxed"><strong>分析与学习</strong>：如果你对动画制作感兴趣，可以通过拆解GIF的每一帧，来了解一个动画效果的实现过程。</li>
-    <li class="leading-relaxed"><strong>纯粹因为好奇</strong>：就是想看看一个有趣的GIF到底是由多少张图片组成的，满足你的好奇心。</li>
-  </ul>
-
-  <div class="bg-gray-100 p-6 rounded-xl my-8">
-    <h3 class="text-xl font-semibold mb-3">常见问题解答</h3>
-    <div class="space-y-4">
-      <div>
-        <p class="font-medium text-gray-900">问：处理GIF会损坏原图吗？</p>
-        <p class="text-gray-700 mt-1">答：完全不会。这个过程就像复印一本书的每一页，原书（你的GIF文件）不会被做任何改动，是安全的“只读”操作。</p>
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>会不会压缩画质？</strong> 这页主要是重新组合 PDF 页面，不是重新截图压缩，所以一般不会主动降低画质。</p>
+        <p><strong>能不能只取某几页？</strong> 可以，每个文件都支持填写页码范围，比如 <code>1-3, 8, 10-12</code>。</p>
+        <p><strong>文件会上传吗？</strong> 当前页面在浏览器本地处理，适合先整理日常办公和内部资料文档。</p>
       </div>
-      <div>
-        <p class="font-medium text-gray-900">问：提取出来的图片清晰度怎么样？</p>
-        <p class="text-gray-700 mt-1">答：提取出的图片就是GIF里原本的画面，是它能提供的最高清晰度，比你在屏幕上直接截图要清晰和准确得多。</p>
-      </div>
-      <div>
-        <p class="font-medium text-gray-900">问：操作起来复杂吗？需要安装软件吗？</p>
-        <p class="text-gray-700 mt-1">答：非常简单，全程在网页里完成。你只需要“选择文件”和“点击提取”两个动作，不需要下载或安装任何软件到电脑上。</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">两个生活中的真实用处</h2>
-  <div class="grid md:grid-cols-2 gap-6 my-8">
-    <div class="border border-gray-200 p-5 rounded-lg">
-      <h3 class="text-lg font-semibold mb-2">场景一：制作专属表情包九宫格</h3>
-      <p class="text-gray-700">找到一个超级好笑的连贯动作GIF，你可以把它拆成9张图，然后拼成一张九宫格图片发朋友圈，故事感和趣味性直接拉满。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg">
-      <h3 class="text-lg font-semibold mb-2">场景二：从动态教程里提取关键步骤图</h3>
-      <p class="text-gray-700">网上很多手工、烹饪教程是GIF格式的。你可以把它拆开，把“关键一步”的图片单独保存、打印出来，对照着操作，比反复播放视频方便多了。</p>
-    </div>
-  </div>
-
-  <p class="text-lg mt-12 p-5 bg-gray-50 rounded-xl leading-relaxed">下次再遇到想从动图里“定格”某个瞬间的情况，不必再手忙脚乱地截图了。一个简单的工具，就能帮你把动图里的每一幕都完整地保留下来。无论是为了工作、创作，还是简单的娱乐与收藏，这都能让你更自如地处理那些生动的图片。</p>
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你还在判断“什么时候该合并、什么时候该拆页、什么时候该加水印”，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/pdf-merge-scenarios/">《PDF 合并拆分页和加水印的常见场景》</a>。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{l as default};
+`;export{t as default};

@@ -1,1 +1,235 @@
-const s='<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 bg-white"><h1 class="text-3xl font-bold text-gray-900 mb-6">舒尔特方格：每天5分钟，悄悄提升你的注意力和反应速度</h1><p class="text-lg leading-relaxed mb-6">你是不是经常觉得很难集中注意力？工作一会儿就想看手机，看书没几页就走神，甚至和别人说话时也会突然脑子放空？别担心，这很常见。但好消息是，注意力是可以像肌肉一样锻炼的。今天给你介绍一个风靡全球的大脑训练小工具——<strong class="font-semibold text-gray-900">舒尔特方格</strong>，它简单、有趣，每天几分钟，就能有效提升专注力、反应速度和视觉搜索能力。</p><div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8"><p class="text-blue-800 font-medium">什么是舒尔特方格？</p><p class="text-blue-700 mt-1">它就是一个由数字随机排列的方格网，比如常见的3x3、4x5或5x5。你需要做的，就是按照从小到大的顺序，快速准确地依次点击这些数字。听起来简单？试试就知道，它真的很考验专注力。</p></div><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格怎么玩？</h2><p class="mb-4">玩法非常简单：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li>屏幕上会出现一张布满数字的方格，数字从1开始一直到总数（比如9、16、25）。</li><li>你只需要用手指或鼠标，按顺序点击1、2、3……直到最后一个数字。</li><li>点击第一个数字时，计时开始；点完最后一个数字，计时停止，你就得到这一次的完成时间。</li><li>如果不小心点错了，按错的格子会快速闪一下红色，提醒你点错了，但计时不会停止，你需要继续找正确的数字。</li></ul><p class="mb-6">整个过程就像在玩一个“找数字”的游戏，时间越短，说明你的注意力和反应越快。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">不同难度，适合不同水平的你</h2><p class="mb-4">舒尔特方格通常有三种常见的尺寸：</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6"><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">3 x 3</p><p class="text-gray-600">总共9个数字，适合刚开始接触的新手、小朋友，或者想快速热身的你。简单易上手，能帮你建立信心。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">4 x 4</p><p class="text-gray-600">16个数字，最常见的训练难度。大多数人会在这个级别停留较长时间，用来稳步提升注意力。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">5 x 5</p><p class="text-gray-600">25个数字，属于挑战级别。需要眼睛快速扫视全盘，对注意力和反应速度要求很高，适合经常练习的老手。</p></div></div><p class="mb-6">你可以根据自己的状态随时切换难度。比如一开始用3x3找找感觉，再逐步挑战更大的方格。完成时间会记录下你的最佳成绩，看着自己不断进步，会很有成就感。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格究竟有什么好处？</h2><p class="mb-4">它可不仅仅是个小游戏，很多飞行员、运动员都用它来训练专注力。普通人练习，也能收获很多：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">提升注意力：</span>强迫你全神贯注在数字上，长时间练习，你会发现走神的次数变少了。</li><li><span class="font-medium text-gray-900">扩大视野范围：</span>为了快速找到下一个数字，你不得不学会用余光扫视，这能锻炼你的视觉广度，甚至有助于提高阅读速度。</li><li><span class="font-medium text-gray-900">增强反应速度：</span>从看到数字到点击，这个过程反复训练，你的大脑和手会配合得越来越快。</li><li><span class="font-medium text-gray-900">老少皆宜：</span>孩子玩可以改善学习走神，成年人玩能提高工作效率，老年人玩有助于延缓大脑衰老，预防认知功能下降。</li></ul><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">怎样才能玩得更好？几个小技巧</h2><p class="mb-4">刚开始玩，可能十几秒甚至二十几秒才能完成一个方格，别灰心，每个人都是这么过来的。试试这几个方法：</p><ol class="list-decimal pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">不要默念数字：</span>很多人习惯心里念着“1、2、3……”，这会拖慢速度。试着用眼睛直接看，用余光去找下一个数字。</li><li><span class="font-medium text-gray-900">保持身体放松：</span>别绷得太紧，肩膀放松，眼睛离屏幕适当距离，用指尖快速点击。</li><li><span class="font-medium text-gray-900">每天坚持几分钟：</span>注意力训练就像健身，贵在坚持。每天花5分钟玩几轮，比一周猛练一小时效果更好。</li><li><span class="font-medium text-gray-900">从简单难度开始：</span>先练好3x3，再慢慢升级，避免一开始就挑战高难度，产生挫败感。</li></ol><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">你可能关心的问题</h2><div class="space-y-4 mb-6"><div><p class="font-medium text-gray-900">为什么我总是点错？</p><p class="text-gray-700">点错通常是因为注意力被干扰，或者太着急了。试着先稳住心态，看清数字再点。随着练习增多，错误率自然会下降。</p></div><div><p class="font-medium text-gray-900">怎样才算好的成绩？</p><p class="text-gray-700">一般来说，3x3方格在4-6秒内完成算不错，4x4在20秒以内，5x5在40秒以内。但不用太和别人比，和自己的昨天比有进步就是好事。</p></div><div><p class="font-medium text-gray-900">需要每天都练吗？</p><p class="text-gray-700">如果希望有明显提升，建议每天练习。但偶尔中断也没关系，关键是保持兴趣，别把它当成任务。</p></div></div><p class="text-lg border-t border-gray-200 pt-6 mt-8">舒尔特方格就像一个装在手机里的“大脑健身房”，简单直接，却又非常有效。现在就打开它，从3x3开始，测测你的专注力水平吧。每天几分钟，悄悄变专注，你会发现自己工作学习都更得心应手了。</p></div>';export{s as default};
+const s=`
+<article class="text-gray-800 max-w-4xl mx-auto p-4 md:p-6">
+  <!-- 主标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+    还在用手机简单计算？这个在线工具帮你搞定所有复杂运算
+  </h1>
+  
+  <!-- 摘要 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-lg">
+      无论是学生做作业、上班族处理数据，还是生活中遇到需要精确计算的场景，一个功能全面的计算器都能帮上大忙。
+    </p>
+  </div>
+  
+  <!-- 第一部分 -->
+  <section class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">
+      日常生活中你会在哪些地方用到高级计算功能？
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">学生群体</h3>
+        <ul class="space-y-2">
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>三角函数计算（sin、cos、tan）解决几何问题</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>对数函数（ln、log）在化学pH值计算中的应用</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>开方运算（√）用于物理公式计算</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-green-700">工作场景</h3>
+        <ul class="space-y-2">
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>财务计算中的乘方和复杂括号运算</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>工程设计的三角函数应用</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span>数据统计分析中的对数转换</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 第二部分 -->
+  <section class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">
+      为什么你需要一个功能完整的在线计算器？
+    </h2>
+    
+    <div class="prose max-w-none">
+      <p class="text-lg mb-4">
+        很多人可能觉得手机自带的计算器就够用了，但当你需要处理稍微复杂的计算时，就会发现基础计算器的局限性。
+      </p>
+      
+      <div class="my-6 p-5 bg-gray-50 rounded-lg">
+        <h3 class="text-xl font-medium mb-3">常见困扰场景</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center mr-3">1</div>
+            <div>
+              <p class="font-medium mb-1">计算到一半发现错了，只能全部清空重来</p>
+              <p class="text-gray-600 text-sm">功能完整的计算器支持逐步回退修改，不用重新输入全部内容</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center mr-3">2</div>
+            <div>
+              <p class="font-medium mb-1">需要先计算括号内的内容，再手动记录结果</p>
+              <p class="text-gray-600 text-sm">科学计算器自动处理括号优先级，直接得到最终结果</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center mr-3">3</div>
+            <div>
+              <p class="font-medium mb-1">找不到三角函数、对数等高级功能</p>
+              <p class="text-gray-600 text-sm">专业计算工具集成了这些常用数学函数，一键使用</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 第三部分 -->
+  <section class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b">
+      这些专业功能其实比你想象的更常用
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+        <div class="text-blue-600 mb-3">
+          <span class="text-2xl font-bold">三角函数</span>
+        </div>
+        <p class="text-gray-700 mb-3">不仅仅是数学课上的概念，在建筑测量、游戏开发、导航定位等实际场景中都有广泛应用</p>
+        <div class="text-sm text-gray-500">
+          <span class="inline-block mr-3">sin</span>
+          <span class="inline-block mr-3">cos</span>
+          <span class="inline-block">tan</span>
+        </div>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+        <div class="text-green-600 mb-3">
+          <span class="text-2xl font-bold">对数运算</span>
+        </div>
+        <p class="text-gray-700 mb-3">声音分贝计算、地震震级衡量、化学反应速率等都需要用到对数计算</p>
+        <div class="text-sm text-gray-500">
+          <span class="inline-block mr-3">log</span>
+          <span class="inline-block">ln</span>
+        </div>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+        <div class="text-purple-600 mb-3">
+          <span class="text-2xl font-bold">幂与开方</span>
+        </div>
+        <p class="text-gray-700 mb-3">计算面积体积、金融复利、物理中的平方反比定律等都离不开这些运算</p>
+        <div class="text-sm text-gray-500">
+          <span class="inline-block mr-3">x²</span>
+          <span class="inline-block mr-3">xʸ</span>
+          <span class="inline-block">√</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 第四部分 -->
+  <section class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b">
+      使用在线计算器的三大优势
+    </h2>
+    
+    <div class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center">
+        <div class="md:w-1/4 mb-4 md:mb-0">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+            <span class="text-2xl text-blue-700 font-bold">1</span>
+          </div>
+        </div>
+        <div class="md:w-3/4">
+          <h3 class="text-xl font-medium mb-2">随时随地使用</h3>
+          <p class="text-gray-700">无需安装任何软件，打开网页就能用。无论是在电脑前工作，还是用手机临时计算，都能快速访问。</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:items-center">
+        <div class="md:w-1/4 mb-4 md:mb-0">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+            <span class="text-2xl text-green-700 font-bold">2</span>
+          </div>
+        </div>
+        <div class="md:w-3/4">
+          <h3 class="text-xl font-medium mb-2">完全免费</h3>
+          <p class="text-gray-700">不需要购买昂贵的实体科学计算器，也不需要订阅付费应用，所有功能都可以免费使用。</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:items-center">
+        <div class="md:w-1/4 mb-4 md:mb-0">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+            <span class="text-2xl text-purple-700 font-bold">3</span>
+          </div>
+        </div>
+        <div class="md:w-3/4">
+          <h3 class="text-xl font-medium mb-2">操作简单直观</h3>
+          <p class="text-gray-700">界面设计清晰，按键布局合理，即使不熟悉科学计算器的人也能很快上手使用。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 结尾部分 -->
+  <section class="mt-12 pt-8 border-t border-gray-300">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold mb-4">开始你的高效计算体验</h2>
+      <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+        无论你是需要偶尔计算家庭账目，还是经常处理专业数学问题，一个功能全面的在线计算工具都能为你节省时间，提高准确性。
+      </p>
+      <div class="bg-gray-50 p-5 rounded-lg inline-block">
+        <p class="font-medium text-gray-800">
+          下次遇到需要计算 sin(30°) + log(100) × √25 这样的问题时，<br class="hidden md:block">
+          不用再分多次计算，一步就能得出准确结果。
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 常见问题 -->
+  <section class="mt-12">
+    <h2 class="text-2xl font-bold mb-6 pb-2 border-b">常见问题解答</h2>
+    
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-800">在线计算器能处理多复杂的计算？</h3>
+        <p class="text-gray-700">可以处理包含括号、加减乘除、乘方开方、三角函数、对数函数等混合运算，满足绝大多数学习、工作和生活中的计算需求。</p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-800">计算结果是无限小数怎么办？</h3>
+        <p class="text-gray-700">专业计算器会自动处理精度问题，显示足够多位小数，保证日常使用的准确性。</p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-800">需要注册账号吗？</h3>
+        <p class="text-gray-700">完全不需要。打开即用，没有任何注册或登录的要求，保护你的隐私。</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 底部 -->
+  <footer class="mt-12 pt-8 border-t border-gray-300 text-center text-gray-600 text-sm">
+    <p>本文介绍了在线科学计算器的功能和应用场景，希望能帮助你更高效地处理日常计算任务。</p>
+    <p class="mt-2">无论是学生作业、工作报表还是生活琐事的计算，合适的工具都能让事情变得更简单。</p>
+  </footer>
+</article>
+`;export{s as default};

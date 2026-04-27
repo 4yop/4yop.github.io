@@ -1,171 +1,116 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
-    蚂蚁文菊花文生成器：让你的文字"开花"
-  </h1>
-
-  <!-- 引言 -->
-  <p class="text-lg mb-6 text-gray-700 leading-relaxed">
-    你是否在社交媒体上看到过这样的文字——"҉N҉i҉c҉e҉ ҉m҉e҉e҉t҉i҉n҉g҉ ҉y҉o҉u҉"，每个字符周围都带着小点或装饰符号，看起来像是蚂蚁爬过一样？这就是蚂蚁文，也叫菊花文，一种通过在字符前后添加Unicode组合符号来制造视觉装饰效果的文字艺术。无论是游戏昵称、社交签名还是评论装饰，它都能让你的文字瞬间脱颖而出。
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 md:px-0">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-6">手机号码段生成器：轻松批量创建你需要的号码列表</h1>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否遇到过需要一批手机号来测试软件、挑选靓号或者策划活动，却不知道从哪里找？手动一个个编又太麻烦。今天，我们来介绍一个简单好用的小工具，它能帮你轻松解决这个问题。
   </p>
 
-  <!-- 什么是蚂蚁文 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">什么是蚂蚁文/菊花文？</h2>
-  <p class="mb-4 text-gray-700">
-    蚂蚁文（Ant Text）和菊花文（Chrysanthemum Text）是同一种文字装饰效果的两种称呼。它通过在普通字符的前后添加特殊的Unicode组合字符（如声调符号、变音符号、装饰性符号等），让文字看起来带有装饰性点缀。因为那些小符号像蚂蚁一样散布在文字周围，或者像花瓣一样环绕着文字，所以有了这样形象的名字。
-  </p>
-  <p class="mb-4 text-gray-700">
-    这种文字并不是真正的乱码，而是一种视觉艺术形式。每个基础字符都被精心选择的装饰符号包围，形成不同的视觉效果。有的像撒了糖粉，有的像带了光晕，有的则像被施了魔法般闪烁。这些装饰符号都是标准的Unicode字符，所以在绝大多数现代应用和平台都能正常显示。
-  </p>
-
-  <!-- 为什么使用蚂蚁文 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">为什么大家都爱用蚂蚁文？</h2>
-  <p class="mb-4 text-gray-700">
-    在这个个性化时代，谁都希望自己的文字能与众不同。普通的用户名容易淹没在茫茫人海中，而一个带装饰效果的昵称——比如"༺ཌ༻N༺ཌ༻i༺ཌ༻c༺ཌ༻e༺ཌ༻"——会让人忍不住多看两眼。游戏玩家用它打造独特的角色名称，社交博主用它制作个性签名，甚至设计师会把这种效果用在海报和视频标题里，营造神秘感或艺术感。
-  </p>
-  <p class="mb-4 text-gray-700">
-    而且这种文字的生成非常简单，不需要任何设计基础，只要输入文字，选择喜欢的样式，就能得到专属的装饰文字。这也是蚂蚁文生成器受欢迎的原因——简单、快速、效果好。
-  </p>
-
-  <!-- 如何使用 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">三步生成你的蚂蚁文</h2>
-  <p class="mb-2 text-gray-700">这个工具完全傻瓜式操作，你只需要：</p>
-  <ol class="list-decimal list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">输入文字：</span>在输入框中输入你想要转换的内容，支持中文、英文、数字和标点符号。</li>
-    <li><span class="font-medium">选择样式：</span>系统会自动生成60种不同装饰风格的蚂蚁文效果供你选择。</li>
-    <li><span class="font-medium">复制使用：</span>点击任意样式的"点击复制"按钮，就能将结果粘贴到任何地方。</li>
-  </ol>
-  <p class="mb-4 text-gray-700">
-    你也可以点击"复制全部结果"一次性获取所有样式的转换结果，方便对比选择最满意的效果。
-  </p>
-
-  <!-- 样式说明 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">60种装饰样式详解</h2>
-  <p class="mb-4 text-gray-700">
-    我们的生成器提供多达60种不同的装饰样式，每种都使用独特的Unicode组合字符组合：
-  </p>
-  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">基础装饰类（样式1-9）：</span>使用单一类型的组合字符，如点状装饰(҉)、双点装饰(҈)、删除线(̶)、下划线(̲)等，效果简洁清爽。</li>
-    <li><span class="font-medium">双重组合类（样式10-20）：</span>叠加两种不同的组合字符，视觉效果更丰富，如点+上弧、圆圈+短竖线等。</li>
-    <li><span class="font-medium">三重装饰类（样式21-30）：</span>三种符号组合，装饰效果更加华丽繁复。</li>
-    <li><span class="font-medium">特殊符号类（样式31-45）：</span>引入括号、藏文符号等特殊字符，营造异域风情或科技感。</li>
-    <li><span class="font-medium">多重混合类（样式46-60）：</span>四种及以上符号的组合，效果最为夸张炫酷。</li>
-  </ul>
-  <p class="mb-4 text-gray-700">
-    从简约到奢华，从清新到狂野，总有一款适合你的场景需求。
-  </p>
-
-  <!-- 应用场景 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">适用场景推荐</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-    <div class="bg-gray-50 p-4 rounded-none">
-      <h3 class="font-bold text-gray-900 mb-2">社交媒体</h3>
-      <ul class="text-sm text-gray-700 space-y-1">
-        <li>- 微信/QQ昵称美化</li>
-        <li>- 微博/抖音个性签名</li>
-        <li>- 小红书/Instagram bio</li>
-        <li>- 朋友圈文案装饰</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-none">
-      <h3 class="font-bold text-gray-900 mb-2">游戏场景</h3>
-      <ul class="text-sm text-gray-700 space-y-1">
-        <li>- 游戏角色命名</li>
-        <li>- 公会/战队名称</li>
-        <li>- 游戏内聊天装饰</li>
-        <li>- 个人主页展示</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-none">
-      <h3 class="font-bold text-gray-900 mb-2">内容创作</h3>
-      <ul class="text-sm text-gray-700 space-y-1">
-        <li>- 视频标题美化</li>
-        <li>- 文章标题装饰</li>
-        <li>- 评论互动亮点</li>
-        <li>- 直播间标题</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-none">
-      <h3 class="font-bold text-gray-900 mb-2">日常应用</h3>
-      <ul class="text-sm text-gray-700 space-y-1">
-        <li>- 邮件签名设计</li>
-        <li>- 文档标题美化</li>
-        <li>- 贺卡祝福语</li>
-        <li>- 个人名片装饰</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 技术原理 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">技术原理：Unicode组合字符</h2>
-  <p class="mb-4 text-gray-700">
-    蚂蚁文的实现依赖于Unicode标准中的"组合字符"（Combining Characters）。这些字符本身不能独立显示，而是要附加在基础字符的上方、下方或周围。通过在不同位置添加多个组合字符，就能创造出丰富的视觉装饰效果。
-  </p>
-  <p class="mb-4 text-gray-700">
-    常用的组合字符包括：变音符号（U+0300-U+036F）、装饰性符号、数学符号、藏文符号等。我们的生成器精心挑选了数十种视觉效果好且兼容性强的组合字符，确保生成的文字在主流平台上都能完美显示。
-  </p>
-
-  <!-- 使用技巧 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">使用技巧与建议</h2>
-  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">长度控制：</span>由于每个字符都会添加装饰符号，转换后的文字长度会增加数倍。建议原始文本控制在20字以内，以免在某些平台显示时被截断。</li>
-    <li><span class="font-medium">样式选择：</span>正式场合建议使用简单样式（1-15），娱乐场合可以选择复杂样式（40-60）以增强视觉冲击力。</li>
-    <li><span class="font-medium">兼容性测试：</span>虽然大多数现代应用都能显示，但某些老旧系统或特殊平台可能渲染异常。重要场合建议先测试再使用。</li>
-    <li><span class="font-medium">适度使用：</span>装饰文字适合用于短文本（昵称、签名、标题），长段落使用可能影响阅读体验。</li>
-    <li><span class="font-medium">创意组合：</span>可以尝试先转换为某种样式，再手动微调部分字符的装饰，创造独一无二的效果。</li>
-  </ul>
-
-  <!-- 常见问题 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">常见问题解答</h2>
-  <div class="space-y-4">
-    <div>
-      <p class="font-medium text-gray-900">Q：生成的蚂蚁文可以商用吗？</p>
-      <p class="text-gray-700">A：完全可以。这只是标准Unicode字符的组合使用，不涉及版权问题。你可以自由用于个人或商业用途。</p>
-    </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：为什么复制到某些地方显示不正常？</p>
-      <p class="text-gray-700">A：极少数老旧的应用或不支持完整Unicode的系统可能会过滤掉组合字符。这种情况在现代操作系统和应用中非常罕见。如果遇到，换个平台通常就能解决。</p>
-    </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：支持哪些语言的文字？</p>
-      <p class="text-gray-700">A：理论上支持所有Unicode文字，包括中文、英文、日文、韩文、阿拉伯文等。我们的工具对中文、英文、数字进行了特别优化，效果最佳。</p>
-    </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：可以在手机上使用吗？</p>
-      <p class="text-gray-700">A：当然可以！我们的页面完全响应式设计，在手机、平板、电脑上都能完美运行和使用。</p>
-    </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：我的数据安全吗？</p>
-      <p class="text-gray-700">A：绝对安全。所有的文字转换都在你的浏览器本地完成，不会上传到任何服务器。我们看不到你的输入内容，也无法存储任何信息。</p>
-    </div>
-  </div>
-
-  <!-- 创意示例 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">创意示例展示</h2>
-  <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-none mb-4">
-    <p class="text-center text-lg mb-4 font-mono">
-      原文：<span class="font-bold">你好世界</span>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold mb-2">这个工具是什么？</h2>
+    <p class="mb-0">
+      简单来说，它就是一个“号码组合器”。就像用积木搭房子，你可以指定号码固定的“开头”（前缀）和“结尾”（后缀），然后设定中间几位数字的变化范围，工具就能自动组合出所有可能的号码，并生成一个完整的列表给你。整个过程完全自动化，省时省力。
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm font-mono">
-      <div class="bg-white p-3">
-        <p class="text-xs text-gray-500 mb-1">样式1 - 点状</p>
-        <p>҉你҉好҉世҉界҉</p>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4">它到底能做什么？几个常见的使用场景</h2>
+  <p class="mb-6">
+    这个工具的核心是“批量生成”和“灵活定制”。它不是什么神秘的黑科技，而是为了解决一些日常中实实在在的麻烦事。下面这些情况，你可能也遇到过。
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：软件或系统测试</h3>
+      <p class="text-gray-700">
+        开发人员测试注册、登录、短信验证码功能时，常常需要大量不同的手机号来模拟真实用户。用真实的号码既不现实也不安全。使用这个生成器，可以快速创建一批测试专用的虚拟号码，非常方便。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：挑选心仪的“靓号”</h3>
+      <p class="text-gray-700">
+        很多人喜欢带有特定数字组合的手机号，比如尾号是“888”、“666”或者生日日期。你可以把想要的尾号设为“后缀”，然后生成中间所有可能的组合，快速看看在某个号段（比如139）下，有哪些号码符合你的要求。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景三：活动策划与数据模拟</h3>
+      <p class="text-gray-700">
+        做市场活动时，可能需要准备一批模拟的参与用户数据。或者在学习数据分析时，需要一份包含手机号字段的模拟数据表。这个工具可以按规则生成号码，配合其他信息，快速构建出需要的样本数据。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景四：记忆或查询特定号段</h3>
+      <p class="text-gray-700">
+        只记得朋友手机号的前几位和后几位，中间几位想不起来了？你可以把记得的部分设为前缀和后缀，然后生成中间数字所有可能的组合。虽然结果可能很多，但可以帮你缩小回忆或查找的范围。
+      </p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4">怎么使用？三步就能搞定</h2>
+  <p class="mb-6">
+    使用这个工具非常简单，完全不需要任何技术知识。它的界面设计得很直观，你只需要像填空一样操作就行。
+  </p>
+
+  <div class="space-y-8 mb-10">
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">1</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">设定号码的“固定部分”</h3>
+        <p class="text-gray-700 mb-2">
+          在“前缀”框里，输入你希望所有号码都一样的开头数字。比如，你想生成所有以“138”开头的号码，就填“138”。
+        </p>
+        <p class="text-gray-700 mb-2">
+          在“后缀”框里，输入你希望所有号码都一样的结尾数字。比如，你想要所有号码都以“000”结尾，就填“000”。如果开头或结尾不需要固定，空着不填就行。
+        </p>
       </div>
-      <div class="bg-white p-3">
-        <p class="text-xs text-gray-500 mb-1">样式10 - 组合上弧</p>
-        <p>҉͡你҉͡好҉͡世҉͡界҉͡</p>
+    </div>
+
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">2</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">设定中间数字的变化规则</h3>
+        <p class="text-gray-700 mb-2">
+          这是最关键的一步。“中间号码位数”决定了中间部分有几位数字在变化。比如，选“5位”，那么中间部分就是像“12345”、“00001”这样的5位数。
+        </p>
+        <p class="text-gray-700 mb-2">
+          接着，在“号码范围”里，设定这几位数字从多少变到多少。例如，从“0”到“999”，工具就会生成中间部分为000, 001, 002...一直到999的所有组合。
+        </p>
+        <p class="text-gray-700">
+          <strong>小提示：</strong>工具会贴心地根据你选择的位数，自动建议最大的范围，你只需要根据需求缩小它即可，避免一次生成太多数据。
+        </p>
       </div>
-      <div class="bg-white p-3">
-        <p class="text-xs text-gray-500 mb-1">样式39 - 藏文装饰</p>
-        <p>҈༺ཌ༻你҈༺ཌ༻好҈༺ཌ༻世҈༺ཌ༻界҈༺ཌ༻</p>
+    </div>
+
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">3</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">生成与保存结果</h3>
+        <p class="text-gray-700 mb-2">
+          点击“开始生成”按钮，几秒钟后，完整的号码列表就会出现在下方。你可以直接滚动预览。
+        </p>
+        <p class="text-gray-700">
+          如果需要保存，可以点击“下载TXT”或“下载CSV”按钮。TXT文件是简单的文本格式，方便查看；CSV是表格格式，可以直接用Excel打开，方便做进一步处理。
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- 结尾 -->
-  <p class="mt-8 text-gray-700 border-t pt-6 text-center text-sm text-gray-500">
-    蚂蚁文菊花文就像给文字穿上了华丽的礼服，让平凡的文字也能绽放光彩。无论你是想让自己的社交账号更出众，还是为内容增添一抹亮色，这个免费在线工具都能帮你轻松实现。快来试试吧，让你的文字"开花"！
+  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-semibold mb-3 text-gray-800">重要提醒：请合理合法地使用</h3>
+    <p class="mb-3">
+      这个工具生成的号码是<strong>虚拟的、随机的数字组合</strong>。它们绝大部分并未被真实分配使用。
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li><strong>禁止用于非法用途：</strong>严禁将这些号码用于任何骚扰、诈骗、虚假注册等违法活动。</li>
+      <li><strong>主要用途是测试与模拟：</strong>它的设计初衷是服务于软件测试、数据分析学习、内部模拟等合法合规的场景。</li>
+      <li><strong>注意数据量：</strong>一次不要生成太多数据（如上百万条），以免占用过多资源，工具本身也做了数量限制来保护你的设备流畅运行。</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4">总结</h2>
+  <p class="mb-6">
+    手机号码段生成器，本质上是一个帮你自动化完成“数字排列组合”的贴心助手。它把原本枯燥、易错的手工劳动，变成了点几下鼠标就能完成的事。无论你是为了工作测试、学习研究，还是个人需要，它都能成为一个提高效率的小帮手。
+  </p>
+  <p class="text-gray-600 pb-10">
+    希望这篇文章能帮你清楚地了解这个工具的用途和用法。记住，工具的价值在于如何使用它，务必在合法合规的范围内，让它为你的工作和生活带来便利。
   </p>
 </div>
 `;export{t as default};

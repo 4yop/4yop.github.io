@@ -1,109 +1,388 @@
 const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 lg:p-8 font-sans text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 leading-tight">还在为做图发愁？这个藏在浏览器里的“私人画师”，文字秒变精美图片！</h1>
-  
-  <!-- 痛点场景 -->
-  <div class="mb-8 md:mb-10 p-4 md:p-6 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="text-lg md:text-xl font-semibold text-gray-900 mb-3 leading-8" style="height: 2rem; line-height: 2rem;">你是不是也有过这样的时刻？</p>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>想为朋友圈发一张特别的配图，找了半天也没有满意的，自己又不会设计。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>做工作报告需要一张示意图，网上图片要么不匹配，要么清晰度不够，还得担心版权问题。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>孩子的手工作业需要创意图片，自己手绘拿不出手，用复杂的专业软件又一头雾水。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>听说现在AI画画很厉害，但要么要付费，要么步骤复杂，还得注册一堆账号，想想就放弃了。</span>
-      </li>
-    </ul>
-    <p class="mt-4 text-gray-700">别急，今天要给你介绍一位“不求人”的解决方案。</p>
-  </div>
-  
-  <!-- 简单解释 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 leading-8" style="height: 2rem; line-height: 2rem;">它是什么？一个打开网页就能用的“创意画笔”</h2>
-    <div class="flex flex-col md:flex-row items-center gap-6">
-      <div class="md:w-2/3">
-        <p class="mb-4 leading-relaxed">想象一下，你的电脑浏览器里，住着一位随时待命的<span class="font-semibold text-blue-700">智能小画师</span>。你不需要安装任何软件，不用懂任何绘画技巧，甚至<strong>不需要联网把想法传给别人</strong>。</p>
-        <p class="mb-4 leading-relaxed">你只需要用<span class="font-semibold">最直白的语言</span>告诉他你的想法，比如“一只戴着眼镜在晒太阳的橘猫”，或者“充满未来感的城市星空海报”。这位“画师”就会在你的电脑内部，<strong>独自思考、创作</strong>，并很快把成品呈现给你。</p>
-        <p class="leading-relaxed">整个过程，就像使用一个<span class="font-semibold">超级简单的在线记事本</span>，只不过你输入文字，它返还给你一幅画。你的创意，从诞生到实现，全程都只在你自己的设备里，私密又安全。</p>
+<article class="article-content">
+  <header class="article-header">
+    <h1 class="article-title">颜色选择器在线工具 - 专业取色器与颜色代码转换</h1>
+    <p class="article-intro">在数字设计和开发领域，<strong>颜色选择器</strong>（Color Picker）是不可或缺的专业工具。无论您是UI设计师、前端开发者还是内容创作者，掌握高效的<strong>取色器</strong>使用方法都能显著提升工作效率。本文将深入介绍颜色选择器的核心功能、常见<strong>颜色代码</strong>格式以及实际应用场景。</p>
+  </header>
+
+  <section class="article-section" id="color-formats">
+    <h2 class="section-title">一、常见的颜色格式详解</h2>
+    <p class="section-text">了解不同的颜色表示方法是使用颜色选择器的基础。以下是四种最常用的颜色格式：</p>
+    
+    <div class="format-grid">
+      <div class="format-card">
+        <h3 class="format-name">HEX 十六进制</h3>
+        <p class="format-desc">网页开发中最常用的颜色格式，以#开头，后跟6位或3位十六进制数字。</p>
+        <code class="format-example">#FF5733 或 #F53</code>
+        <p class="format-usage">适用于：CSS样式、HTML属性、设计规范文档</p>
       </div>
-      <div class="md:w-1/3">
-        <div class="p-4 border border-gray-300 bg-gray-50 rounded-lg shadow-sm text-center">
-          <p class="text-sm text-gray-600 mb-2">它的工作方式很简单：</p>
-          <div class="space-y-3 text-sm">
-            <div class="flex items-center">
-              <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mr-3">1</div>
-              <div class="text-left">你<span class="font-medium">输入一句话</span>描述</div>
-            </div>
-            <div class="flex items-center">
-              <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mr-3">2</div>
-              <div class="text-left">工具<span class="font-medium">在本地理解和创作</span></div>
-            </div>
-            <div class="flex items-center">
-              <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mr-3">3</div>
-              <div class="text-left"><span class="font-medium">图片直接生成</span>在页面上</div>
-            </div>
-          </div>
-        </div>
+      
+      <div class="format-card">
+        <h3 class="format-name">RGB 红绿蓝</h3>
+        <p class="format-desc">基于光的三原色原理，通过红(Red)、绿(Green)、蓝(Blue)三个通道的数值（0-255）定义颜色。</p>
+        <code class="format-example">rgb(255, 87, 51)</code>
+        <p class="format-usage">适用于：图像处理软件、屏幕显示校准</p>
+      </div>
+      
+      <div class="format-card">
+        <h3 class="format-name">HSL 色相/饱和度/亮度</h3>
+        <p class="format-desc">更符合人类直觉的颜色表示方式，H代表色相(0-360°)，S代表饱和度(0-100%)，L代表亮度(0-100%)。</p>
+        <code class="format-example">hsl(9, 100%, 60%)</code>
+        <p class="format-usage">适用于：配色方案设计、颜色变体生成</p>
+      </div>
+      
+      <div class="format-card">
+        <h3 class="format-name">CMYK 印刷四色</h3>
+        <p class="format-desc">青(Cyan)、品红(Magenta)、黄(Yellow)、黑(Key)四色印刷模式，主要用于专业印刷领域。</p>
+        <code class="format-example">cmyk(0%, 66%, 80%, 0%)</code>
+        <p class="format-usage">适用于：印刷设计、出版物制作</p>
       </div>
     </div>
   </section>
-  
-  <!-- 好处列举 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 leading-8" style="height: 2rem; line-height: 2rem;">为什么你应该试试它？这5点让人无法拒绝</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-lg mb-2 text-blue-800 leading-7" style="height: 1.75rem; line-height: 1.75rem;">1. 真正的零门槛，免费使用</h3>
-        <p class="text-gray-700">你再也不需要注册账号、扫码关注、或者购买积分。打开即用，想试多少次就试多少次，<strong>完全免费</strong>，没有任何隐藏套路。它让你的创意表达，不再被付费墙挡住。</p>
+
+  <section class="article-section" id="use-cases">
+    <h2 class="section-title">二、颜色选择器的使用场景</h2>
+    
+    <div class="use-case-block">
+      <h3 class="use-case-title">🎨 设计师的工作利器</h3>
+      <ul class="use-case-list">
+        <li><strong>品牌色彩管理</strong>：提取并保存企业VI标准色，确保视觉一致性</li>
+        <li><strong>竞品分析</strong>：快速获取竞争对手网站的配色方案</li>
+        <li><strong>灵感收集</strong>：从优秀设计作品中提取配色灵感</li>
+        <li><strong>设计交付</strong>：为开发团队提供精确的颜色代码规范</li>
+      </ul>
+    </div>
+    
+    <div class="use-case-block">
+      <h3 class="use-case-title">💻 开发者的效率工具</h3>
+      <ul class="use-case-list">
+        <li><strong>前端开发</strong>：快速获取CSS所需的颜色值</li>
+        <li><strong>UI组件开发</strong>：统一组件库的颜色变量</li>
+        <li><strong>主题定制</strong>：一键生成深色/浅色模式配色</li>
+        <li><strong>调试优化</strong>：实时预览颜色效果，快速迭代</li>
+      </ul>
+    </div>
+    
+    <div class="use-case-block">
+      <h3 class="use-case-title">📸 屏幕取色的应用场景</h3>
+      <ul class="use-case-list">
+        <li><strong>网页取色</strong>：提取网页中任意元素的颜色值</li>
+        <li><strong>图片取色</strong>：从参考图片中获取精确色彩</li>
+        <li><strong>视频取色</strong>：截取视频帧中的特定颜色</li>
+        <li><strong>跨平台取色</strong>：支持桌面任意位置的屏幕取色</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="article-section" id="design-tips">
+    <h2 class="section-title">三、配色基础与设计技巧</h2>
+    
+    <div class="tips-container">
+      <div class="tip-item">
+        <h4 class="tip-title">60-30-10 配色法则</h4>
+        <p class="tip-content">主色占60%（背景、大面积区域），辅助色占30%（次要元素），强调色占10%（按钮、重点内容）。这是打造和谐配色方案的黄金比例。</p>
       </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-lg mb-2 text-blue-800 leading-7" style="height: 1.75rem; line-height: 1.75rem;">2. 隐私的“保险箱”</h3>
-        <p class="text-gray-700">你的每一个奇思妙想，无论是商业灵感还是私人记录，<strong>都只留在你自己的电脑里</strong>，不会上传到任何人的服务器。这就像关起门来自己画画，彻底告别信息泄露的担忧。</p>
+      
+      <div class="tip-item">
+        <h4 class="tip-title">色彩心理学应用</h4>
+        <p class="tip-content">了解颜色传达的情感：红色代表热情与紧急，蓝色象征信任与专业，绿色关联自然与健康，黄色传递活力与警示。根据产品定位选择合适的色彩语言。</p>
       </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-lg mb-2 text-blue-800 leading-7" style="height: 1.75rem; line-height: 1.75rem;">3. 快如闪电，即想即得</h3>
-        <p class="text-gray-700">从输入文字到看到图片，通常只需要很短的时间。没有漫长的排队等待，没有网络的拖累。<strong>你的想法多快，它的响应就有多快</strong>，让创作过程一气呵成。</p>
+      
+      <div class="tip-item">
+        <h4 class="tip-title">对比度与可读性</h4>
+        <p class="tip-content">确保文字与背景有足够的对比度（建议至少4.5:1）。使用颜色选择器的对比度检测功能，验证设计是否符合WCAG无障碍标准。</p>
       </div>
-      <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-lg mb-2 text-blue-800 leading-7" style="height: 1.75rem; line-height: 1.75rem;">4. 中文友好，说人话就行</h3>
-        <p class="text-gray-700">你完全可以用<span class="font-medium">最自然的中文</span>去描述，比如“雨后挂满水珠的蜘蛛网”或者“宫崎骏动画风格的乡村田野”。它都能很好地理解，让技术真正服务于你的母语思维。</p>
+      
+      <div class="tip-item">
+        <h4 class="tip-title">色盲友好设计</h4>
+        <p class="tip-content">约8%的男性存在色觉障碍。避免仅用颜色传递关键信息，结合图标、文字标签或纹理区分。使用颜色选择器的色盲模拟功能预览效果。</p>
       </div>
     </div>
   </section>
-  
-  <!-- 应用场景 -->
-  <section class="mb-10">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 leading-8" style="height: 2rem; line-height: 2rem;">它能在哪些地方帮你？看看这些场景</h2>
-    <div class="bg-gray-50 p-4 md:p-6 rounded-xl">
-      <div class="mb-6">
-        <h4 class="font-bold text-lg mb-3 text-gray-900">场景一：社交媒体达人必备</h4>
-        <p class="text-gray-700 pl-4 border-l-4 border-blue-500 py-1">小王每次发美食朋友圈，都想配一张有格调的背景图。现在，他只需输入“木质餐桌上的精致咖啡与牛角包，阳光洒下”，一张独一无二、氛围感十足的照片就生成了。朋友纷纷点赞，问他是在哪家咖啡馆拍的。</p>
+
+  <section class="article-section" id="accessibility">
+    <h2 class="section-title">四、颜色无障碍设计指南</h2>
+    <p class="section-text">无障碍设计不仅是道德责任，也是法律要求。以下是使用颜色选择器进行无障碍设计的要点：</p>
+    
+    <div class="accessibility-checklist">
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <span class="check-text">确保文本对比度符合WCAG 2.1 AA标准（普通文本4.5:1，大文本3:1）</span>
       </div>
-      <div>
-        <h4 class="font-bold text-lg mb-3 text-gray-900">场景二：家长与孩子的创意乐园</h4>
-        <p class="text-gray-700 pl-4 border-l-4 border-blue-500 py-1">李姐的孩子要做一个关于“海底世界”的手抄报。孩子口述：“想要有发光的水母、彩虹色的珊瑚和微笑的海豚”。李姐输入这些词，立刻得到了好几张充满童趣的参考图。孩子看着自己想象中的画面变成“现实”，兴奋不已，创作热情也更高了。</p>
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <span class="check-text">不要仅用颜色表示状态（如错误提示应配合图标和文字）</span>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <span class="check-text">提供高对比度模式或主题切换选项</span>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <span class="check-text">测试红绿色盲、蓝黄色盲等不同色觉缺陷下的显示效果</span>
       </div>
     </div>
   </section>
-  
-  <!-- 行动号召 -->
-  <section class="text-center p-6 md:p-8 border border-gray-300 rounded-xl bg-gradient-to-r from-blue-50 to-gray-50">
-    <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">告别搜索、下载和拼接的繁琐</h2>
-    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">这个工具将强大的AI绘画能力，变成了像用水龙头接水一样简单自然的事情。它不要求你是设计师，也不探究你的技术背景，它只关心一件事：<span class="font-semibold">帮你把脑中模糊的念头，变成眼前清晰的画面。</span></p>
-    <div class="text-lg font-medium text-gray-800">
-      如果你也厌倦了在图库里大海捞针，<br class="hidden md:block"> 不妨去寻找一下这位<span class="text-blue-700 font-bold">住在浏览器里的“私人画师”</span>吧。
+
+  <section class="article-section" id="faq">
+    <h2 class="section-title">五、常见问题解答（FAQ）</h2>
+    
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4 class="faq-question">Q1: HEX和RGB颜色代码有什么区别？</h4>
+        <p class="faq-answer">HEX和RGB表示的是相同的颜色信息，只是格式不同。HEX使用十六进制表示（如#FF5733），更紧凑适合代码编写；RGB使用十进制（如rgb(255,87,51)），更直观易读。现代浏览器和工具都支持两种格式，可以互相转换。</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4 class="faq-question">Q2: 屏幕取色器如何确保颜色准确性？</h4>
+        <p class="faq-answer">屏幕取色器通过读取屏幕像素点的RGB值来获取颜色。准确性取决于显示器的色彩校准。对于专业设计工作，建议使用经过色彩校准的显示器，并在sRGB或Adobe RGB色彩空间下工作。</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4 class="faq-question">Q3: 什么是HSL格式，为什么设计师更喜欢用它？</h4>
+        <p class="faq-answer">HSL（色相、饱和度、亮度）是一种更符合人类直觉的颜色表示方式。设计师喜欢HSL是因为调整亮度或饱和度时，色相保持不变，便于创建同色系配色方案。例如，将亮度从50%调到70%就能得到同一颜色的浅色变体。</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4 class="faq-question">Q4: 如何选择适合网页设计的配色方案？</h4>
+        <p class="faq-answer">选择网页配色时，建议：1) 确定品牌主色；2) 使用60-30-10法则分配颜色比例；3) 确保文字与背景对比度达标；4) 限制总颜色数量（通常3-5种）；5) 考虑色盲用户的体验。可以使用颜色选择器的配色生成功能辅助决策。</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4 class="faq-question">Q5: 颜色选择器支持哪些颜色格式的转换？</h4>
+        <p class="faq-answer">专业的颜色选择器通常支持HEX、RGB、RGBA、HSL、HSLA、CMYK、HSV等多种格式之间的相互转换。部分高级工具还支持CSS颜色关键字（如"red"、"transparent"）、LAB、LCH等专业色彩空间，满足不同场景的需求。</p>
+      </div>
     </div>
-    <p class="mt-6 text-sm text-gray-600">（提示：你可以在搜索引擎尝试用类似“<strong>本地AI图片生成</strong>”、“<strong>浏览器直接用的画画AI</strong>”、“<strong>免费文字转图片工具</strong>”这样的关键词来寻找它。）</p>
   </section>
-</div>
+
+  <section class="article-section" id="conclusion">
+    <h2 class="section-title">六、结语</h2>
+    <p class="section-text">颜色选择器是数字创意工作者的必备工具，掌握其使用方法能显著提升设计效率和作品质量。无论您是需要快速获取颜色代码、进行屏幕取色，还是创建和谐的配色方案，一款功能完善的<strong>取色器</strong>都能满足您的需求。</p>
+    <p class="section-text">希望本文对您理解和使用<strong>颜色选择器</strong>有所帮助。立即体验我们的在线取色工具，让配色工作变得更加轻松高效！</p>
+  </section>
+</article>
+
+<style>
+.article-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.article-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.article-intro {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.article-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.section-text {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.format-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.format-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.format-desc {
+  color: #666;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.format-example {
+  display: inline-block;
+  background: #2c3e50;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.format-usage {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.use-case-block {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.use-case-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.use-case-list {
+  list-style: none;
+  padding: 0;
+}
+
+.use-case-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.use-case-list li::before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tips-container {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.tip-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.tip-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tip-content {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.accessibility-checklist {
+  background: #f0f8ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #d0e0f0;
+}
+
+.check-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.check-text {
+  color: #444;
+  line-height: 1.5;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq-item {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1.2rem;
+  border-left: 4px solid #e74c3c;
+}
+
+.faq-question {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+
+.faq-answer {
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .article-content {
+    padding: 1rem;
+  }
+  
+  .article-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .format-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 `;export{s as default};

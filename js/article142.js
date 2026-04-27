@@ -1,42 +1,76 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700 leading-relaxed">
-  <!-- 标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6">美女图片这样看，收藏下载两不误，太方便了！</h1>
+const l=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">懒人必备的文档文字提取工具，告别繁琐复制粘贴</h1>
+  <p class="text-lg text-gray-600 mb-8">每次想把PDF、Word里的文字弄出来，都得打开文件一点点复制，格式还容易乱？试试这个一站式的解决方案。</p>
 
-  <!-- 引言 -->
-  <p class="text-lg mb-6">刷手机时看到漂亮小姐姐的照片，是不是总想保存下来？但有时候图片刚点开就没了，想再找又翻半天；存到手机相册里，又和自拍混在一起，想单独翻出来欣赏特别费劲。今天和大家聊聊怎么用一些小工具，让看美女图片、收藏美照变得更轻松、更有条理。</p>
-
-  <!-- 第一部分：随机浏览 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">随机浏览，每天都有新惊喜</h2>
-  <p class="mb-4">很多在线图片工具都内置了随机切换功能，就像开盲盒一样，每次点击都能看到不同风格的小姐姐。不管是清新校园风、职场御姐范，还是古风汉服，随手一点就能换一张，永远看不腻。这种随机感特别适合平时没事刷一刷，说不定就能遇到让你眼前一亮的“壁纸级”美图。</p>
-
-  <!-- 第二部分：一键收藏 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">一键收藏，打造你的专属图库</h2>
-  <p class="mb-4">遇到特别喜欢的照片，最怕的就是下次找不到了。好一点的小工具会提供“收藏”功能，只要点一下心形或者星星，图片就会自动存进你的私人收藏夹。以后再想看的时候，打开收藏列表就能直接浏览，再也不用满手机翻相册了。而且很多工具会把收藏按时间倒序排列，最新收藏的永远在最前面，想回顾以前的美照也很方便。</p>
-
-  <!-- 第三部分：随时下载 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">随时下载，保存精彩瞬间</h2>
-  <p class="mb-4">光收藏还不够，很多人喜欢把喜欢的图片下载到手机或电脑上当壁纸、做头像。靠谱的工具会在图片旁边放一个下载按钮，点一下就能把原图保存下来。而且下载的图片通常都是高清无水印的，直接就能用。有些工具还能自动帮你把图片命名成“beauty_时间”这种格式，方便以后整理。</p>
-
-  <!-- 第四部分：打包下载 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">打包下载，轻松备份整个收藏</h2>
-  <p class="mb-4">如果你收藏了上百张美图，想一次性全部备份到电脑里，一张张下载显然太慢了。这时候就需要“打包下载”功能——点击一下，所有收藏的图片就会自动压缩成一个ZIP文件，一键保存到本地。文件名还会带上当前日期和你浏览的站点名称，再也不怕弄混。出门在外时，用手机欣赏；回家用电脑整理，特别省心。</p>
-
-  <!-- 第五部分：大图预览 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">大图预览，细节尽收眼底</h2>
-  <p class="mb-4">图片太小看不清楚？点一下图片就能全屏放大，无论是小姐姐的精致妆容，还是照片的背景细节，都能看得一清二楚。想看多久看多久，点击空白区域或者按ESC键就能返回列表。有些工具甚至支持左右滑动切换上一张下一张，体验和本地相册一样流畅。</p>
-
-  <!-- 第六部分：移动端友好 -->
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">手机电脑都适配，随时随地都能用</h2>
-  <p class="mb-4">现在很多看图工具都做了响应式设计，不管你是用大屏电脑，还是小屏手机（比如375px宽度的iPhone SE），页面都能自动调整布局。在手机上，按钮会变大，间距会优化，点起来不容易误触；在电脑上，图片和收藏列表可以左右分栏显示，充分利用屏幕空间。真正做到了随时随地，想看就看。</p>
-
-  <!-- 结尾 -->
-  <div class="bg-gray-50 p-6 rounded-lg mt-12">
-    <p class="text-lg mb-3"><strong>最后提醒两句</strong></p>
-    <p class="mb-2">网上图片千千万，记得尊重版权，如果是别人拍摄的作品，最好只收藏自用，不要随意商用。另外，选择工具时尽量挑那些界面干净、没有乱七八糟广告的，用起来心情也会更好。希望每个人都能找到自己喜欢的看图方式，让美图陪伴每一天。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-gray-700">无论你是学生、上班族还是研究人员，只要需要从各种文件中“拿出”纯文字，这篇文章介绍的方法或许能帮你节省大量时间。</p>
   </div>
 
-  <!-- 自然关键词融入 -->
-  <p class="text-sm text-gray-400 text-center mt-8">#美女图片收藏 #在线看图工具 #壁纸下载 #图片管理</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4">什么是文档文字提取？</h2>
+  <p class="mb-4">简单来说，它就像一个“文字搬运工”。你手里有一堆不同格式的文件——可能是上司发来的PDF报告、网上下载的Word资料、包含数据的Excel表格，甚至是一个网页文章。</p>
+  <p class="mb-6">这个工具能帮你把这些文件里的所有文字内容，“搬”到一个干干净净的文本文件里。你得到的就是纯粹的、可以随意编辑和复制的文字，没有复杂的排版、图片干扰。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">它都能处理哪些文件？</h2>
+  <p class="mb-4">基本上，你日常会遇到的文档格式，它都能应对：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>PDF文件</strong>：最让人头疼的格式之一，无论是扫描版还是文字版，都能提取文字。</li>
+    <li><strong>Word文档</strong>：日常办公最常用的.doc和.docx格式。</li>
+    <li><strong>Excel表格</strong>：把表格里的数据和文字内容提取出来。</li>
+    <li><strong>网页文件(HTML)</strong>：保存下来的网页，可以过滤掉广告、导航栏，只留下正文。</li>
+    <li><strong>Markdown文件</strong>：程序员或写作者常用的轻量级标记文件。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">用它来做什么？几个真实的场景</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">整理学习资料</h3>
+      <p class="text-gray-700">下载了十几篇PDF论文，需要汇总核心观点。不用打开每个PDF费力查找复制，一键提取所有文字，然后在统一的文本文档里搜索、摘录，效率翻倍。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">处理工作报告</h3>
+      <p class="text-gray-700">每周都要从多个Word和Excel报告中汇总数据。先把所有报告的文字提取出来，再整合信息，避免了在不同软件间反复切换的麻烦。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">收集网络素材</h3>
+      <p class="text-gray-700">做自媒体需要搜集素材，把有用的网页“另存为”HTML文件。用这个工具批量处理，直接得到干净的文本，方便引用和整理，还不带乱七八糟的网页元素。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">存档重要信息</h3>
+      <p class="text-gray-700">合同、说明书等重要PDF，将其文字内容提取保存为TXT文件，占用空间小，方便全文检索，以防原文件丢失或损坏。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">为什么说这个方式很省心？</h2>
+  <p class="mb-4">传统的复制粘贴方式，往往会遇到格式混乱、无法复制（如扫描PDF）、过程重复枯燥等问题。一个专门的提取工具解决了这些痛点：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>批量处理</strong>：可以一次性上传多个文件，让工具自动逐个处理，你无需守在电脑前。</li>
+    <li><strong>格式纯净</strong>：提取出的文字会自动清理多余的空行和空格，呈现清爽的文本。</li>
+    <li><strong>结果即拿即用</strong>：每处理完一个文件，你可以立即复制文字，也可以下载为独立的TXT文件。</li>
+    <li><strong>整理方便</strong>：所有文件都处理完后，还能一键“打包下载”，得到一个压缩包，里面是所有文件的文本结果，管理起来非常方便。</li>
+  </ul>
+
+  <div class="bg-gray-100 p-6 rounded-xl my-10">
+    <h3 class="text-xl font-semibold mb-3">操作起来复杂吗？</h3>
+    <p class="mb-4">完全不难，整个过程就像发邮件添加附件一样简单，只需要三步：</p>
+    <ol class="list-decimal pl-6 space-y-2">
+      <li><strong>选择文件</strong>：点击按钮，从电脑里选中你需要提取文字的PDF、Word等文件。</li>
+      <li><strong>自动转换</strong>：上传后，工具会在后台自动工作，你可以在列表中看到每个文件的处理进度。</li>
+      <li><strong>获取文字</strong>：处理完成后，直接复制文字，或者点击下载，文字就到手了。</li>
+    </ol>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">谁特别需要这个功能？</h2>
+  <p class="mb-4">如果你符合下面任何一种情况，那么文档文字提取工具很可能成为你的得力助手：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2">
+    <li>经常需要阅读和汇总大量电子文献的学生或教师。</li>
+    <li>需要整合多份不同格式报告的行政、文秘或数据分析人员。</li>
+    <li>喜欢收藏网页文章、电子书，并希望将其内容本地化保存的阅读爱好者。</li>
+    <li>任何厌倦了在不同软件间反复复制粘贴，追求效率的上班族。</li>
+  </ul>
+
+  <div class="border-t pt-8 mt-10">
+    <p class="text-gray-700">总而言之，文档文字提取的核心价值就是<strong>“化繁为简”</strong>。它把分散在不同格式、不同文件中的文字信息，统一、纯净地汇集到一起，为你接下来的阅读、编辑、分析和存档扫清障碍。在这个信息爆炸的时代，拥有一个高效的“信息整理”小工具，无疑能让你的学习和工作变得更加轻松。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{l as default};

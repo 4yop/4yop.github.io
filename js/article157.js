@@ -1,84 +1,105 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <article>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">快速查看家乡归属！一个工具搞懂“省、市、区、街道”的上下级关系</h1>
 
-    <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
-      <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>
-    </div>
+  <div class="text-gray-600 mb-8 leading-relaxed">
+    <p class="mb-4">在生活中，我们常常需要填写或者确认一个地方的详细地址。比如寄快递、办手续，或者只是单纯想了解一下某个地方的行政归属。</p>
+    <p>你是不是也曾困惑：这个县到底属于哪个市？这个街道又归哪个区管？今天，就给大家介绍一个能帮你一秒理清这些关系的小工具，操作简单，一看就会。</p>
+  </div>
 
-    <div class="relative w-full h-64 sm:h-80 mb-8 bg-gray-100 rounded-lg overflow-hidden">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-center">
-          <div class="text-5xl mb-4 text-gray-300">🖼️</div>
-          <p class="text-gray-500">（这里可以放一张简单的、带马赛克效果的示例图片示意图）</p>
+  <section class="mb-10 bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-sm">
+    <h2 class="text-xl font-bold text-gray-900 mb-3">这是个什么工具？</h2>
+    <p class="text-gray-700 leading-relaxed">
+      简单来说，它就是一个在线的“行政区划查询器”。你可以像剥洋葱一样，从“省份”开始，一层层选择到“乡镇或社区”。每选择一层，它就会自动帮你筛选出下一层所有可选的地方，并最终展示出这个地方完整的“家庭关系”。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">具体能帮我们解决什么问题？</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">确认地址准确性</h3>
+          <p class="text-gray-600">在网上购物或寄送重要文件时，确保填写的市、区、街道信息准确无误，避免快递送错或手续延误。</p>
         </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">了解地域归属</h3>
+          <p class="text-gray-600">听说一个地方的名字，想快速知道它属于哪个更大的行政区划。比如，想知道“义乌市”上面是“金华市”还是“浙江省”直管？用它一查便知。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-yellow-100 text-yellow-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">获取官方编码</h3>
+          <p class="text-gray-600">有些正式表格或系统需要填写行政区划的官方数字代码。这个工具在展示信息的同时，也提供了对应的标准代码，并且可以一键复制，非常方便。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">如何使用？非常简单！</h2>
+    <p class="text-gray-700 mb-6 leading-relaxed">整个过程就像在手机上设置导航一样直观，只需要点选几下。</p>
+    <ol class="space-y-6 border border-gray-200 rounded-lg p-6 bg-white">
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">①</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">第一步：选择省份或直辖市</h4>
+          <p class="text-gray-600">打开页面后，第一个下拉框会列出全国所有的省、自治区、直辖市和特别行政区。从中找到你想查的省份，比如“广东省”。如果列表太长，你还可以直接在框里输入名字搜索。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">②</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">第二步：选择城市或地区</h4>
+          <p class="text-gray-600">选择省份后，第二个下拉框会自动变成可选状态，里面只显示属于该省的所有地级市或地区。这时你就可以选择“广州市”。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">③</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">后续步骤：逐级深入</h4>
+          <p class="text-gray-600">接着，第三个框会列出“广州市”下辖的所有区或县级市（如“天河区”），选择后，第四个框会进一步列出该区下辖的街道或镇。你可以一直选到你想要了解的层级。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">✓</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">立刻得到结果</h4>
+          <p class="text-gray-600">每当你做出一个选择，页面右侧就会立刻更新，清晰显示出从省到当前级别的完整路径。所有信息一目了然。</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="mb-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
+    <h2 class="text-xl font-bold mb-4 text-gray-900">几个贴心的小设计</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">随时可以重来</h3>
+        <p class="text-sm text-gray-600">如果选错了或者想查另一个地方，只需要点击“重置查询”按钮，所有选项就会清空，你可以从头开始新的查询。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">结果清晰直观</h3>
+        <p class="text-sm text-gray-600">右侧结果栏不仅会显示一个完整的文字路径（例如：广东省 / 广州市 / 天河区），还会将每一级的官方数字编码单独列出。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">编码一键复制</h3>
+        <p class="text-sm text-gray-600">如果你需要用到某个行政区划的编码，只需要点击结果中对应编码旁边的区域，它就会自动复制到你的剪贴板，省去了手动输入的麻烦。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">全程无需等待</h3>
+        <p class="text-sm text-gray-600">所有数据都已提前准备好，选择操作和结果展示都是瞬间完成的，你不会有“正在加载”的卡顿感。</p>
       </div>
     </div>
+  </section>
 
-    <div class="prose prose-lg max-w-none">
-      <p class="mb-4">在网上分享照片、上传证件或者发布截图时，我们常常需要把一些敏感信息遮挡起来，比如车牌号、门牌号、个人信息，或者不想露脸的照片。这时候，马赛克就成了我们的好帮手。</p>
-      <p class="mb-6">你可能会想，给图片打马赛克是不是要用到很复杂的软件？其实不用。现在有一些非常方便的小工具，在网页上点几下就能完成。</p>
-
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">为什么我们需要给图片打马赛克？</h2>
-      <p class="mb-4">这主要是在保护我们自己和别人的隐私。想一想下面这些场景：</p>
-      <ul class="list-disc pl-5 mb-6 space-y-2">
-        <li><strong>分享生活照时</strong>：照片背景里无意拍到的家庭地址、快递单号，需要遮一下。</li>
-        <li><strong>处理工作截图时</strong>：发给同事或客户的截图中，可能含有其他人的联系方式或内部编号，需要隐藏。</li>
-        <li><strong>上传证件材料时</strong>：在办理一些线上业务时，可能需要上传身份证、营业执照等，但除了必要信息，其他部分最好能打上马赛克。</li>
-        <li><strong>发布内容到社交媒体时</strong>：拍到了路人清晰的正脸，或者不想让自己的脸太突出，打上马赛克是对彼此的尊重。</li>
-      </ul>
-
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么给图片打马赛克？分四步搞定</h2>
-      <p class="mb-6">使用一个简单的在线编辑器，整个过程就像在手机上圈画一样直观。</p>
-
-      <div class="bg-blue-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-blue-800">第一步：找到你的图片</h3>
-        <p class="mb-2">首先，点击“上传图片”按钮，从你的电脑或手机里选择你想处理的那张照片。支持常见的图片格式，比如 JPG、PNG 都可以。</p>
-      </div>
-
-      <div class="bg-green-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-green-800">第二步：圈出要遮挡的地方</h3>
-        <p class="mb-2">上传后，点击“开始绘制”按钮。然后，就像你用鼠标或手指在屏幕上画框一样，按住并拖动，把需要打码的区域框选出来。</p>
-        <p>你可以<strong>反复框选多个不同的区域</strong>，比如同时把一张图片里的人脸和背景里的文字都遮住。</p>
-      </div>
-
-      <div class="bg-yellow-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-yellow-800">第三步：预览和调整</h3>
-        <p class="mb-2">在框选的时候，你就能立刻看到马赛克效果。如果框的位置不对，或者想重来，可以点击“清除全部”，然后重新框选。</p>
-        <p>全部框选满意后，记得点击“完成绘制”。</p>
-      </div>
-
-      <div class="bg-purple-50 p-5 rounded-xl mb-8">
-        <h3 class="text-xl font-medium mb-4 text-purple-800">第四步：保存你的新图片</h3>
-        <p class="mb-2">最后一步最简单，点击“保存图片”。处理好的图片就会保存到你的设备里了，原来图片上被圈选的地方，都变成了格子状的马赛克。</p>
-        <p>接下来，你就可以放心地使用这张处理过的图片了。</p>
-      </div>
-
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">几个常见问题</h2>
-
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">马赛克打得牢固吗？会被还原吗？</h3>
-        <p class="mb-4">通过这种像素格处理方式打上的马赛克，从常规的图片查看方式来说，信息已经被永久性地模糊处理了，无法直接看清。这是保护隐私的可靠方法。当然，任何技术都没有绝对的“牢不可破”，但对于日常的隐私保护需求来说，这已经足够了。</p>
-      </div>
-
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">会不会影响图片其他部分的质量？</h3>
-        <p class="mb-4">不会。这种工具只会改变你<strong>亲手框选出来的那一小块区域</strong>，图片的其他部分完全保持原样，清晰度不变。</p>
-      </div>
-
-      <div class="mb-10">
-        <h3 class="text-xl font-medium mb-2">在手机上好操作吗？</h3>
-        <p class="mb-4">好的工具会考虑到手机用户。页面布局会自动适应手机屏幕的大小，框选操作也支持手指触摸拖动，和在电脑上用鼠标操作一样方便。</p>
-      </div>
-
-      <div class="bg-gray-100 p-6 rounded-xl mt-12">
-        <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
-        <p class="mb-3 text-center">给图片打马赛克，核心就是三步：<strong>上传 → 圈选 → 保存</strong>。</p>
-        <p class="text-center">这已经不再是需要专业软件才能做的事。花一分钟时间，动动手指，就能有效地为你的图片加上一道隐私“防护栏”，让自己和他人更安心。</p>
-        <p class="mt-4 text-gray-600 text-sm text-center">下次发图前如果需要遮挡信息，不妨试试看。</p>
-      </div>
-    </div>
-  </article>
+  <div class="text-center mt-12 pt-8 border-t border-gray-200">
+    <p class="text-gray-700 italic">希望这个简单的小工具，能在你需要理清地址归属的时候，帮上一点小忙。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{e as default};

@@ -1,94 +1,286 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
-    数据像过山车一样让人眼花？你可能需要一个“时间侦探”
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800 bg-white">
+  <!-- 标题部分 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900 leading-tight">
+    还在为文件打不开烦恼？这个工具让你轻松转换数据格式
   </h1>
-  <p class="text-center text-gray-600 mb-8 text-lg">
-    轻松看懂变化趋势，告别面对一堆数字和曲线的烦恼。
-  </p>
+  
+  <!-- 导读摘要 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-gray-700 mb-2">
+      你是否遇到过这样的情况：别人发来的文件在你的电脑上怎么也打不开，或者你需要把一份资料转换成另一种格式？
+    </p>
+    <p class="text-gray-700">
+      今天要介绍的这个工具，就像是一个“万能翻译器”，专门解决各种文件格式不兼容的问题。不需要任何技术知识，简单几步就能完成转换。
+    </p>
+  </div>
 
   <!-- 痛点场景 -->
-  <div class="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8 rounded-r">
-    <h2 class="text-xl font-bold mb-4 text-gray-900">
-      你有没有过这样的困扰？
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
+      这些场景，你一定不陌生
     </h2>
-    <ul class="space-y-3 pl-5 list-disc">
-      <li>面对后台不断跳动的数字曲线，感觉头晕眼花，完全不知道它在说什么。</li>
-      <li>想知道某个服务或业务指标在一天中什么时候最高、什么时候最低，却要自己在一大堆数据里“人肉”寻找。</li>
-      <li>看到数据忽高忽低、剧烈波动，心里七上八下，却无法快速判断这是正常现象还是问题苗头。</li>
-    </ul>
-    <p class="mt-4 font-medium">
-      如果上面的场景让你感同身受，那么恭喜你，这篇文章就是为你准备的。你遇到的不是数据问题，而是缺少一个懂你的“数据翻译官”。
-    </p>
+    
+    <div class="space-y-4">
+      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold">1</span>
+          </div>
+          <div>
+            <p class="text-gray-700">
+              同事发来一份工作报告，你的电脑提示“格式不支持”，急得团团转却不知道怎么办。
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold">2</span>
+          </div>
+          <div>
+            <p class="text-gray-700">
+              你需要把一个系统的数据导入到另一个系统，但两个系统要求的文件格式完全不同。
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold">3</span>
+          </div>
+          <div>
+            <p class="text-gray-700">
+              整理资料时发现文件格式乱七八糟，想统一成一种格式，又不想一个个手动修改。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- 简单解释 -->
   <div class="mb-10">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 border-b pb-3">
-      它是什么？一个懂你的“数据仪表盘”
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
+      它到底是什么？用生活比喻告诉你
     </h2>
-    <p class="mb-5 leading-relaxed">
-      想象一下，你汽车的仪表盘。你不用知道发动机原理，看一眼就知道速度、油量、水温。我们现在要介绍的，就是一个专为“数据变化”设计的智能仪表盘。
-    </p>
-    <p class="mb-5 leading-relaxed">
-      它专门处理那些<strong>随着时间变化的数据</strong>。比如你网站一天内的访问人数、你的店铺每小时的销售额、甚至是你自己智能手环记录的心跳和步数。它的任务，就是把这些枯燥的、流水账一样的数字，变成一目了然的图表和清晰的结论，直接告诉你发生了什么。
-    </p>
+    
+    <div class="md:flex items-start gap-6">
+      <div class="mb-6 md:mb-0 md:w-1/3">
+        <div class="bg-purple-50 p-5 rounded-lg h-full">
+          <h3 class="text-xl font-bold mb-3 text-purple-800">就像语言翻译器</h3>
+          <p class="text-gray-700">
+            不同软件、不同系统使用不同的“数据语言”。这个工具就像翻译官，能把一种语言翻译成另一种，让它们互相理解。
+          </p>
+        </div>
+      </div>
+      
+      <div class="mb-6 md:mb-0 md:w-1/3">
+        <div class="bg-teal-50 p-5 rounded-lg h-full">
+          <h3 class="text-xl font-bold mb-3 text-teal-800">又像格式转换工厂</h3>
+          <p class="text-gray-700">
+            你把原材料（一种格式的文件）放进去，选择你想要的产品（另一种格式），工厂就会自动加工，输出你需要的结果。
+          </p>
+        </div>
+      </div>
+      
+      <div class="md:w-1/3">
+        <div class="bg-amber-50 p-5 rounded-lg h-full">
+          <h3 class="text-xl font-bold mb-3 text-amber-800">还是你的文件管家</h3>
+          <p class="text-gray-700">
+            帮你整理混乱的文件格式，检查数据是否正确，让你的文件井井有条，随时可用。
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- 核心好处 -->
+  <!-- 好处列举 -->
   <div class="mb-10">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 border-b pb-3">
-      它能为你带来哪些看得见的好处？
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
+      使用这个转换工具，你能得到这些实实在在的好处
     </h2>
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-3 text-blue-700">1. 一眼看懂，不再猜谜</h3>
-        <p>你不再需要面对冰冷的数字表格。所有重要指标（比如负载、延迟）都会自动变成清晰的曲线图。哪条线升高了，哪条线平稳了，像看天气图一样直观。</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
+        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+          <span class="text-2xl text-blue-600">✓</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">省时省力</h3>
+        <p class="text-gray-700">
+          原来需要几个小时手动处理的工作，现在几分钟就能完成。一键转换，无需学习复杂的技术操作。
+        </p>
       </div>
-      <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-3 text-green-700">2. 告别“乱麻”，让曲线听话</h3>
-        <p>讨厌曲线上那些细碎的“毛刺”和剧烈抖动吗？一个简单的“平滑”开关，就像给数据开了“美颜滤镜”，瞬间让你看清真正的大趋势，而不是被杂讯干扰。</p>
+      
+      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+          <span class="text-2xl text-green-600">✓</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">准确无误</h3>
+        <p class="text-gray-700">
+          自动检查数据是否正确，避免手动转换时可能出现的错误。转换结果清晰展示，一目了然。
+        </p>
       </div>
-      <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-3 text-amber-700">3. 关键信息，主动送到眼前</h3>
-        <p>系统会自动帮你算出每个指标在观察期内的“最高值”、“最低值”和“平均值”，并整齐地罗列在旁边。你想知道的核心数据，不用计算，直接看答案。</p>
+      
+      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
+        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+          <span class="text-2xl text-purple-600">✓</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">多格式支持</h3>
+        <p class="text-gray-700">
+          支持多种常见数据格式之间的互相转换，无论你手头是什么格式，几乎都能找到对应的转换方案。
+        </p>
       </div>
-      <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-3 text-purple-700">4. 方便对照，历史为鉴</h3>
-        <p>你可以在旁边放上相关的参考图片（比如过去的正常曲线图、现场照片）。需要对比时，点开就能全屏查看、前后翻页，像翻看相册一样简单，帮助你快速判断现状。</p>
+      
+      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
+        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+          <span class="text-2xl text-amber-600">✓</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">随时随地使用</h3>
+        <p class="text-gray-700">
+          在电脑上可以用，在手机上也能用。界面自动适应你的设备，操作体验始终流畅。
+        </p>
       </div>
     </div>
   </div>
 
   <!-- 应用场景 -->
   <div class="mb-10">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 border-b pb-3">
-      哪些人正在用这样的“时间侦探”？
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
+      真实应用场景：看看别人是怎么用的
     </h2>
-    <div class="space-y-8">
-      <div>
-        <h4 class="text-xl font-bold mb-3 text-gray-800">场景一：网店老板的“生意晴雨表”</h4>
-        <p class="mb-3">小王开了一家线上礼品店。以前，他只知道一天的总销售额，却不知道顾客到底在哪个时间段最活跃。</p>
-        <p>用了这种分析工具后，他把“网站访客数”和“订单数”两条曲线放在一起看。结果清晰发现，<strong>每天晚上8点到10点是黄金时段</strong>，访客和订单都达到峰值。于是，他将客服在线时间和促销活动都集中调整到这个时段，当月销售额提升了20%。他说：“以前是盲人摸象，现在是指挥官看沙盘。”</p>
+    
+    <div class="space-y-6">
+      <div class="md:flex gap-6 items-start">
+        <div class="mb-4 md:mb-0 md:w-2/5">
+          <div class="bg-gray-900 text-white p-4 rounded-lg">
+            <h4 class="font-bold text-lg mb-2">小王的故事：跨系统数据迁移</h4>
+            <p class="text-gray-300 text-sm">
+              公司换了新系统，旧系统的数据导不出来，新系统又不认旧格式。小王用转换工具，轻松把旧数据转换成新系统能识别的格式，一天的工作半小时完成。
+            </p>
+          </div>
+        </div>
+        <div class="md:w-3/5">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-bold text-gray-800 mb-2">你能借鉴的经验：</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
+                系统升级或更换时，数据格式转换是常见需求
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
+                提前准备好格式转换工具，能大幅减少过渡期的工作量
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
+                转换后记得验证数据是否完整，确保万无一失
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4 class="text-xl font-bold mb-3 text-gray-800">场景二：项目管理者的“进度监控仪”</h4>
-        <p class="mb-3">李经理负责一个软件开发项目，需要关注团队的“任务完成量”和“代码错误率”。</p>
-        <p>通过这个工具，他设置每天查看。一旦“错误率”那条曲线出现异常的尖峰，系统旁边的“最大值”统计会立刻飙红提示。他能马上点开对照区，对比之前正常时期的代码提交记录图片，迅速定位到是哪次修改导致了问题，及时介入，避免了项目后期的大返工。</p>
+      
+      <div class="md:flex gap-6 items-start flex-row-reverse">
+        <div class="mb-4 md:mb-0 md:w-2/5">
+          <div class="bg-gray-900 text-white p-4 rounded-lg">
+            <h4 class="font-bold text-lg mb-2">李女士的经验：统一团队文件格式</h4>
+            <p class="text-gray-300 text-sm">
+              团队里每个人用的软件不同，提交的文件格式五花八门。李女士用转换工具把所有文件统一成一种格式，管理起来方便多了，团队效率明显提升。
+            </p>
+          </div>
+        </div>
+        <div class="md:w-3/5">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-bold text-gray-800 mb-2">你可以这样做：</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
+                团队协作前，先约定好统一的数据格式标准
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
+                用转换工具快速统一不同成员提交的各式文件
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
+                提供标准模板，让新成员也能快速上手
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见问题 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
+      你可能关心的问题
+    </h2>
+    
+    <div class="space-y-4">
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
+          我需要懂编程才能用吗？
+        </div>
+        <div class="p-4 text-gray-700">
+          完全不需要！这个工具设计得非常简单，就像使用普通办公软件一样。只需要选择输入格式、输出格式，粘贴或输入你的内容，点击转换按钮就可以了。整个过程不需要任何技术知识。
+        </div>
+      </div>
+      
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
+          转换后的数据安全吗？
+        </div>
+        <div class="p-4 text-gray-700">
+          所有转换操作都在你的设备上完成，数据不会上传到任何服务器。你完全可以放心使用，敏感信息不会泄露。
+        </div>
+      </div>
+      
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
+          支持手机使用吗？
+        </div>
+        <div class="p-4 text-gray-700">
+          当然支持！工具会自动适应手机屏幕大小，在手机上操作同样方便。无论你是在办公室还是在外出差，都能随时处理文件格式问题。
+        </div>
       </div>
     </div>
   </div>
 
   <!-- 行动号召 -->
-  <div class="bg-gray-50 p-8 rounded-xl border border-gray-300 text-center mt-12">
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">别让数据再“沉睡”</h2>
-    <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
-      数据本身没有价值，能被你理解和运用的数据才是财富。无论是管理个人健康、分析业务趋势，还是监控项目状态，学会用直观的方式“倾听”数据随时间讲述的故事，是你做出聪明决策的第一步。
+  <div class="text-center p-8 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl mb-6">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+      告别文件格式烦恼，从今天开始
+    </h2>
+    <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+      无论是工作汇报、数据整理还是系统迁移，格式转换都不应该成为你的障碍。一个好用的工具，能让复杂的事情变简单。
     </p>
-    <p class="font-bold text-gray-900">
-      现在，你是否也想拥有这样一个专属的“时间侦探”，帮你把复杂的数据波动，翻译成简单易懂的洞察呢？
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+        <p class="font-semibold text-gray-800 mb-2">如果你正在为格式问题头疼</p>
+        <p class="text-gray-600 text-sm">不妨试试这个转换工具，也许几分钟就能解决困扰你几天的问题。</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+        <p class="font-semibold text-gray-800 mb-2">如果你经常需要处理不同格式文件</p>
+        <p class="text-gray-600 text-sm">把它加入你的工具库，下次遇到类似情况就能从容应对。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 结语 -->
+  <div class="text-center py-6 border-t border-gray-200">
+    <p class="text-gray-600 mb-2">
+      技术应该让生活更简单，而不是更复杂。
+    </p>
+    <p class="text-gray-600">
+      一个好的工具，就是在你需要的时候，能实实在在帮上忙。
     </p>
   </div>
 </div>
-`;export{t as default};
+`;export{s as default};

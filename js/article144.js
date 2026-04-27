@@ -1,65 +1,96 @@
-const t=`<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
-  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">在线猫咪图片生成器：一键定制属于你的喵星人照片</h1>
-  
-  <p class="mb-4">
-    喜欢猫咪的朋友，一定在网上收藏过各种可爱的猫咪图片。但有时候，我们想要的不是一张普通的猫咪照，而是一张带点特别效果的——比如黑白复古风、模糊意境图，甚至一张会动的猫咪GIF。如果还能自己调整图片大小，那就更好了。现在，有一个简单的小工具就能满足这些需求，而且完全免费，打开网页就能用。
+const t=`
+<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
+
+  <p class="text-lg text-gray-600 mb-8">
+    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
   </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">这个工具能做什么？</h2>
-  <p class="mb-4">
-    它是一个在线的猫咪图片生成器，不需要你注册或安装任何软件。你只需要选择想要的样式，点击一下按钮，就能得到一张独一无二的猫咪图片。无论是做头像、表情包，还是单纯想换个新鲜的壁纸，它都能快速帮你搞定。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">主要功能一览</h2>
-  
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">1. 静态图还是动图？</h3>
-  <p class="mb-3">
-    你可以选择生成普通的静态猫咪照片，也可以生成GIF动画猫咪。动图会让猫咪更生动，比如眨眼、摇尾巴，特别适合用来活跃聊天气氛。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">2. 图片尺寸随便挑</h3>
-  <p class="mb-3">
-    工具提供了几种常用尺寸：小尺寸、中等尺寸、大尺寸、正方形。如果你想做头像，正方形就很合适；想要壁纸，可以选择大尺寸。如果预设尺寸都不满意，你还可以手动输入宽度和高度，定制完全符合你需要的尺寸。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">3. 多种滤镜效果，让猫咪更有味道</h3>
-  <p class="mb-3">
-    滤镜是让照片出彩的利器。这个工具内置了模糊、黑白、反色等效果。黑白滤镜能让猫咪看起来复古文艺；模糊效果可以营造朦胧感；反色则会带来一种怪诞的视觉冲击。如果你喜欢自己调色，还可以使用“自定义滤镜”，分别调整亮度、明度、饱和度、色相，甚至单独调整红绿蓝三个颜色通道，打造完全属于你的色调。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">4. 点击图片放大预览</h3>
-  <p class="mb-3">
-    生成的图片会直接显示在页面上。如果你想看得更清楚，只需点击图片，它就会在黑色半透明背景中放大展示。再点击一下空白处或黑色区域，就能关闭预览，非常方便。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？三步搞定</h2>
-  <p class="mb-2">1. 在左侧面板选择你想要的参数：API类型（静态或动图）、图片尺寸、滤镜效果等。</p>
-  <p class="mb-2">2. 点击“获取喵星人图片”按钮。</p>
-  <p class="mb-4">3. 稍等片刻，一张新鲜出炉的猫咪图片就会出现在右侧。不满意可以继续调整参数再生成。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">常见问题</h2>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：生成图片需要付费吗？</p>
-    <p>答：完全免费，没有任何隐藏收费。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：生成的图片可以下载吗？</p>
-    <p>答：当然可以。在图片上右键选择“图片另存为”就能保存到电脑，手机端长按图片也可以保存。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：为什么我选了GIF，生成的图片还是静态的？</p>
-    <p>答：GIF动画只对部分猫咪素材有效，如果某个猫咪本身就是静态的，那么生成的就是静态图。你可以多试几次，总会遇到动起来的猫咪。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：自定义滤镜里的参数怎么填？</p>
-    <p>答：亮度、明度、饱和度一般填0到100的数字，色相填0到360，RGB三个颜色通道也填0到255的数字。你可以先填一些数值试试效果，慢慢调整到满意为止。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
+    <p class="text-gray-800">
+      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
+    </p>
   </div>
 
-  <p class="mt-8 text-center text-gray-600">
-    如果你是一个爱猫人士，或者正需要一张特别的猫咪图片，不妨试试这个在线生成器。不用下载APP，不用注册账号，打开网页就能玩。希望你能在这里找到你喜欢的喵星人瞬间！
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
+  <p class="mb-6">
+    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
   </p>
-</div>`;export{t as default};
+  <ul class="space-y-4 mb-10 pl-5 list-disc">
+    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
+    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
+    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
+    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
+  </ul>
+  <p class="mb-10">
+    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
+  </p>
+
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
+  <p class="mb-6">
+    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
+      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
+      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
+      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
+      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
+
+  <div class="space-y-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
+      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
+      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
+      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
+      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
+    <p class="text-gray-700 mb-6">
+      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
+    </p>
+    <p class="text-gray-700">
+      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
+    </p>
+  </div>
+</article>
+`;export{t as default};

@@ -1,286 +1,93 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800 bg-white">
-  <!-- 标题部分 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900 leading-tight">
-    还在为文件打不开烦恼？这个工具让你轻松转换数据格式
-  </h1>
-  
-  <!-- 导读摘要 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-    <p class="text-gray-700 mb-2">
-      你是否遇到过这样的情况：别人发来的文件在你的电脑上怎么也打不开，或者你需要把一份资料转换成另一种格式？
-    </p>
-    <p class="text-gray-700">
-      今天要介绍的这个工具，就像是一个“万能翻译器”，专门解决各种文件格式不兼容的问题。不需要任何技术知识，简单几步就能完成转换。
-    </p>
-  </div>
+const e=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-12 font-sans text-gray-800">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">想给照片加点艺术感？这个在线工具让你秒变“艺术家”</h1>
+    <p class="text-lg text-gray-600">告别单调的普通照片，用简单几步为你的回忆披上独特的艺术外衣。</p>
+  </header>
 
-  <!-- 痛点场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
-      这些场景，你一定不陌生
-    </h2>
-    
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">你的烦恼，我懂</h2>
+    <p class="mb-4 leading-relaxed">翻看手机相册，是不是总觉得照片太“写实”了？想发个朋友圈，又嫌照片风格平淡无奇，不够吸引眼球。</p>
+    <p class="mb-4 leading-relaxed">你或许想过把照片变成酷酷的像素风，或者复古的怀旧色调，但一打开那些复杂的专业软件，就被密密麻麻的按钮和看不懂的术语劝退了。</p>
+    <p class="leading-relaxed">没关系，你不是一个人。许多人都希望用一种<strong>简单、快速、零门槛</strong>的方式，让普通照片焕发新生。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它是什么？你的“魔法艺术滤镜箱”</h2>
+    <p class="mb-4 leading-relaxed">你可以把它想象成一个在线的“魔法艺术滤镜箱”。你只需要把照片放进去，然后从十几种各具特色的“滤镜”中挑选一个，轻轻一点，就能立刻得到一张风格大变样的新图片。</p>
+    <p class="leading-relaxed">整个过程就像给照片“穿”上了一件不同风格的衣服，完全不需要你懂任何绘画或设计知识。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它能为你做什么？</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <h3 class="font-medium mb-1">化繁为简，一键拥有艺术感</h3>
+          <p class="text-gray-600 leading-relaxed">你不用再研究复杂的软件。这里没有复杂的操作，上传图片、选择风格、点击生成，三步就能获得一张充满设计感的作品。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <h3 class="font-medium mb-1">风格多样，总有一款适合你</h3>
+          <p class="text-gray-600 leading-relaxed">无论你喜欢像乐高积木一样的<strong>像素风</strong>，还是像铅笔描绘的<strong>素描画</strong>，亦或是泛黄回忆的<strong>老照片效果</strong>，甚至是神秘的<strong>浮雕感</strong>，这里都能轻松实现。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <h3 class="font-medium mb-1">解放手机，在线处理更方便</h3>
+          <p class="text-gray-600 leading-relaxed">无需在手机上下载额外的App，打开网页就能用。处理完的图片直接下载保存到手机或电脑里，不占存储空间。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <h3 class="font-medium mb-1">效果可控，打造专属风格</h3>
+          <p class="text-gray-600 leading-relaxed">部分风格还可以微调强度。比如想让像素块更大一点，或者让素描线条更粗犷一些，都能通过简单的滑块来调整，让你的作品与众不同。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">在生活中，你可以这样用它</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="font-medium text-lg mb-2">场景一：打造独一无二的头像</h3>
+        <p class="text-gray-600 leading-relaxed">觉得自己的微信、微博头像太普通？用一张清晰的自拍照，试试“素描”或“油画”风格，瞬间变成一张充满艺术气息的个人标志，让你在好友列表里脱颖而出。</p>
+      </div>
+      <div>
+        <h3 class="font-medium text-lg mb-2">场景二：为旅行照片增加故事感</h3>
+        <p class="text-gray-600 leading-relaxed">上次旅行的风景照很美，但总觉得少了点味道。给古镇的照片加上“怀旧”滤镜，给现代建筑加上“高对比”效果，就能营造出不同的情绪和氛围，让每张照片都像在讲述一个故事。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
     <div class="space-y-4">
-      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3">
-            <span class="font-bold">1</span>
-          </div>
-          <div>
-            <p class="text-gray-700">
-              同事发来一份工作报告，你的电脑提示“格式不支持”，急得团团转却不知道怎么办。
-            </p>
-          </div>
-        </div>
+      <div>
+        <h3 class="font-medium mb-1">问：我的照片会上传到服务器吗？安全吗？</h3>
+        <p class="text-gray-600 leading-relaxed">答：完全不用担心隐私。整个处理过程通常在您的浏览器内完成，图片数据不会上传到远程服务器，处理完成后即可关闭页面，安全便捷。</p>
       </div>
-      
-      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
-            <span class="font-bold">2</span>
-          </div>
-          <div>
-            <p class="text-gray-700">
-              你需要把一个系统的数据导入到另一个系统，但两个系统要求的文件格式完全不同。
-            </p>
-          </div>
-        </div>
+      <div>
+        <h3 class="font-medium mb-1">问：处理图片需要很长时间吗？</h3>
+        <p class="text-gray-600 leading-relaxed">答：完全不需要。对于普通尺寸的照片，大部分效果都是“秒出”。你甚至感觉不到等待，就能看到焕然一新的作品。</p>
       </div>
-      
-      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-200">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">
-            <span class="font-bold">3</span>
-          </div>
-          <div>
-            <p class="text-gray-700">
-              整理资料时发现文件格式乱七八糟，想统一成一种格式，又不想一个个手动修改。
-            </p>
-          </div>
-        </div>
+      <div>
+        <h3 class="font-medium mb-1">问：支持哪些类型的图片？</h3>
+        <p class="text-gray-600 leading-relaxed">答：你手机里常用的图片格式，比如JPG、PNG等，基本都可以直接使用。</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- 简单解释 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
-      它到底是什么？用生活比喻告诉你
-    </h2>
-    
-    <div class="md:flex items-start gap-6">
-      <div class="mb-6 md:mb-0 md:w-1/3">
-        <div class="bg-purple-50 p-5 rounded-lg h-full">
-          <h3 class="text-xl font-bold mb-3 text-purple-800">就像语言翻译器</h3>
-          <p class="text-gray-700">
-            不同软件、不同系统使用不同的“数据语言”。这个工具就像翻译官，能把一种语言翻译成另一种，让它们互相理解。
-          </p>
-        </div>
-      </div>
-      
-      <div class="mb-6 md:mb-0 md:w-1/3">
-        <div class="bg-teal-50 p-5 rounded-lg h-full">
-          <h3 class="text-xl font-bold mb-3 text-teal-800">又像格式转换工厂</h3>
-          <p class="text-gray-700">
-            你把原材料（一种格式的文件）放进去，选择你想要的产品（另一种格式），工厂就会自动加工，输出你需要的结果。
-          </p>
-        </div>
-      </div>
-      
-      <div class="md:w-1/3">
-        <div class="bg-amber-50 p-5 rounded-lg h-full">
-          <h3 class="text-xl font-bold mb-3 text-amber-800">还是你的文件管家</h3>
-          <p class="text-gray-700">
-            帮你整理混乱的文件格式，检查数据是否正确，让你的文件井井有条，随时可用。
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 好处列举 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
-      使用这个转换工具，你能得到这些实实在在的好处
-    </h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
-        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-2xl text-blue-600">✓</span>
-        </div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800">省时省力</h3>
-        <p class="text-gray-700">
-          原来需要几个小时手动处理的工作，现在几分钟就能完成。一键转换，无需学习复杂的技术操作。
-        </p>
-      </div>
-      
-      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
-        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-2xl text-green-600">✓</span>
-        </div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800">准确无误</h3>
-        <p class="text-gray-700">
-          自动检查数据是否正确，避免手动转换时可能出现的错误。转换结果清晰展示，一目了然。
-        </p>
-      </div>
-      
-      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
-        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-2xl text-purple-600">✓</span>
-        </div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800">多格式支持</h3>
-        <p class="text-gray-700">
-          支持多种常见数据格式之间的互相转换，无论你手头是什么格式，几乎都能找到对应的转换方案。
-        </p>
-      </div>
-      
-      <div class="p-5 border border-gray-200 rounded-xl hover:shadow-md transition duration-200">
-        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-2xl text-amber-600">✓</span>
-        </div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800">随时随地使用</h3>
-        <p class="text-gray-700">
-          在电脑上可以用，在手机上也能用。界面自动适应你的设备，操作体验始终流畅。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
-      真实应用场景：看看别人是怎么用的
-    </h2>
-    
-    <div class="space-y-6">
-      <div class="md:flex gap-6 items-start">
-        <div class="mb-4 md:mb-0 md:w-2/5">
-          <div class="bg-gray-900 text-white p-4 rounded-lg">
-            <h4 class="font-bold text-lg mb-2">小王的故事：跨系统数据迁移</h4>
-            <p class="text-gray-300 text-sm">
-              公司换了新系统，旧系统的数据导不出来，新系统又不认旧格式。小王用转换工具，轻松把旧数据转换成新系统能识别的格式，一天的工作半小时完成。
-            </p>
-          </div>
-        </div>
-        <div class="md:w-3/5">
-          <div class="bg-gray-50 p-4 rounded-lg">
-            <h4 class="font-bold text-gray-800 mb-2">你能借鉴的经验：</h4>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
-                系统升级或更换时，数据格式转换是常见需求
-              </li>
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
-                提前准备好格式转换工具，能大幅减少过渡期的工作量
-              </li>
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
-                转换后记得验证数据是否完整，确保万无一失
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="md:flex gap-6 items-start flex-row-reverse">
-        <div class="mb-4 md:mb-0 md:w-2/5">
-          <div class="bg-gray-900 text-white p-4 rounded-lg">
-            <h4 class="font-bold text-lg mb-2">李女士的经验：统一团队文件格式</h4>
-            <p class="text-gray-300 text-sm">
-              团队里每个人用的软件不同，提交的文件格式五花八门。李女士用转换工具把所有文件统一成一种格式，管理起来方便多了，团队效率明显提升。
-            </p>
-          </div>
-        </div>
-        <div class="md:w-3/5">
-          <div class="bg-gray-50 p-4 rounded-lg">
-            <h4 class="font-bold text-gray-800 mb-2">你可以这样做：</h4>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
-                团队协作前，先约定好统一的数据格式标准
-              </li>
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
-                用转换工具快速统一不同成员提交的各式文件
-              </li>
-              <li class="flex items-start">
-                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-2"></span>
-                提供标准模板，让新成员也能快速上手
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 常见问题 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200 text-gray-800">
-      你可能关心的问题
-    </h2>
-    
-    <div class="space-y-4">
-      <div class="border border-gray-200 rounded-lg overflow-hidden">
-        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
-          我需要懂编程才能用吗？
-        </div>
-        <div class="p-4 text-gray-700">
-          完全不需要！这个工具设计得非常简单，就像使用普通办公软件一样。只需要选择输入格式、输出格式，粘贴或输入你的内容，点击转换按钮就可以了。整个过程不需要任何技术知识。
-        </div>
-      </div>
-      
-      <div class="border border-gray-200 rounded-lg overflow-hidden">
-        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
-          转换后的数据安全吗？
-        </div>
-        <div class="p-4 text-gray-700">
-          所有转换操作都在你的设备上完成，数据不会上传到任何服务器。你完全可以放心使用，敏感信息不会泄露。
-        </div>
-      </div>
-      
-      <div class="border border-gray-200 rounded-lg overflow-hidden">
-        <div class="bg-gray-50 p-4 font-bold text-gray-800 border-b border-gray-200">
-          支持手机使用吗？
-        </div>
-        <div class="p-4 text-gray-700">
-          当然支持！工具会自动适应手机屏幕大小，在手机上操作同样方便。无论你是在办公室还是在外出差，都能随时处理文件格式问题。
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 行动号召 -->
-  <div class="text-center p-8 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl mb-6">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
-      告别文件格式烦恼，从今天开始
-    </h2>
-    <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-      无论是工作汇报、数据整理还是系统迁移，格式转换都不应该成为你的障碍。一个好用的工具，能让复杂的事情变简单。
+  <footer class="pt-8 border-t border-gray-200">
+    <p class="text-center text-gray-600 leading-relaxed">
+      与其羡慕别人的创意照片，不如现在就动手，让你的普通照片也来一场华丽的“艺术变身”吧。这个过程，简单得超乎你的想象。
     </p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-        <p class="font-semibold text-gray-800 mb-2">如果你正在为格式问题头疼</p>
-        <p class="text-gray-600 text-sm">不妨试试这个转换工具，也许几分钟就能解决困扰你几天的问题。</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-        <p class="font-semibold text-gray-800 mb-2">如果你经常需要处理不同格式文件</p>
-        <p class="text-gray-600 text-sm">把它加入你的工具库，下次遇到类似情况就能从容应对。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 结语 -->
-  <div class="text-center py-6 border-t border-gray-200">
-    <p class="text-gray-600 mb-2">
-      技术应该让生活更简单，而不是更复杂。
-    </p>
-    <p class="text-gray-600">
-      一个好的工具，就是在你需要的时候，能实实在在帮上忙。
-    </p>
-  </div>
-</div>
-`;export{s as default};
+  </footer>
+</article>
+`;export{e as default};

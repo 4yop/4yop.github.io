@@ -1,107 +1,42 @@
-const t=`
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
+const s=`<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 font-sans">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl font-bold mb-4 text-center">手机话费流量怎么查？三大运营商官方查询方法一览</h1>
   
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
+  <!-- 引言 -->
+  <p class="text-lg mb-6 leading-relaxed">
+    每个月最关心的事，除了工资到账，恐怕就是手机话费和流量还剩多少了。想查话费余额、剩余流量，却总是找不到入口？别着急，其实每家运营商都提供了简单快捷的查询方式，发条短信或者打个电话就能搞定。今天我们就来整理一下中国移动、中国联通、中国电信最常用的官方查询方法，让你随时掌握消费动态。
+  </p>
+
+  <!-- 中国联通 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-blue-500 pl-3">中国联通：短信指令+客服热线</h2>
+  <p class="mb-2">联通用户最常用的短信查询指令是发送 <span class="bg-gray-100 px-2 py-1 rounded">CXHF</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10010</span> 查询话费余额；发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10010</span> 查询剩余流量。如果不方便发短信，也可以直接拨打客服热线 <span class="bg-gray-100 px-2 py-1 rounded">10010</span>，按语音提示选择话费流量查询，或者拨打快捷查询号码 <span class="bg-gray-100 px-2 py-1 rounded">10010011</span> 一次性获取话费和流量信息。</p>
+  <p class="mb-4">当然，你还可以下载“中国联通”手机营业厅APP，登录后首页就能看到实时话费和流量情况，还能办理各种套餐变更。</p>
+
+  <!-- 中国移动 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-red-500 pl-3">中国移动：短信指令+10086</h2>
+  <p class="mb-2">移动用户查询话费可以发送短信 <span class="bg-gray-100 px-2 py-1 rounded">YE</span> 或 <span class="bg-gray-100 px-2 py-1 rounded">101</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>；查询流量发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>。拨打电话可以直接拨打 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>，根据语音提示操作，或者接通后说“查话费”“查流量”智能语音也能帮忙。</p>
+  <p class="mb-4">中国移动的“移动营业厅”APP同样功能强大，绑定手机号后，首页就能看到剩余话费、流量以及各类账单明细。</p>
+
+  <!-- 中国电信 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-yellow-500 pl-3">中国电信：短信指令+10000</h2>
+  <p class="mb-2">电信用户发送短信 <span class="bg-gray-100 px-2 py-1 rounded">CXTCSY</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 可查询话费；发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 可查询剩余流量。客服热线是 <span class="bg-gray-100 px-2 py-1 rounded">10000</span>，拨打后根据语音提示选择话费流量查询即可。部分省份还支持发送 <span class="bg-gray-100 px-2 py-1 rounded">101</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 快速查话费，你可以先试一下哪个指令有效。</p>
+  <p class="mb-4">此外，“电信营业厅”APP也是查询好帮手，登录后首页就能直观看到话费余额和流量使用情况。</p>
+
+  <!-- 提醒卡片 -->
+  <div class="bg-orange-50 border-l-4 border-orange-400 p-5 my-8">
+    <h3 class="text-lg font-bold text-orange-800 mb-2">温馨提示：高峰期查询可能延迟</h3>
+    <p class="text-orange-700 leading-relaxed">
+      每月月初（1-3日）和月末（28-31日）是话费流量查询的高峰期，短信反馈和APP数据更新可能会稍有延迟。如果遇到回复慢或者数据不准的情况，可以稍等片刻再试，或者错开这些时段查询，体验会更顺畅。
+    </p>
   </div>
-  
-  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
-      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
-      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
-      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
-      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
-    </div>
-  </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
-  
-  <div class="mb-8">
-    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
-    
-    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
-      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
-      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
-      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
-      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
-    </ul>
-  </div>
-  
-  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
-      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
-    </div>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
-      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
-    </div>
-    
-    <div>
-      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
-      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
-    </div>
-  </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
-  
-  <div class="mb-8">
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">1</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
-        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
-      </div>
-    </div>
-    
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">2</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
-        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
-      </div>
-    </div>
-    
-    <div class="flex items-start">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">3</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
-        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
-    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
-    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
-  </div>
-</div>
-`;export{t as default};
+
+  <!-- 补充小贴士 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-green-500 pl-3">小贴士：如何快速使用这些查询方式？</h2>
+  <p class="mb-2">如果你觉得每次都要记短信指令太麻烦，可以把常用指令存为手机联系人，比如把“10010”存为“联通查话费”，需要时直接打开短信发送。或者直接把客服热线设为快捷拨号，一键拨打。</p>
+  <p class="mb-4">现在很多手机系统也自带“运营商查询”功能，在设置里的“蜂窝网络”或“移动数据”中就能看到当前套餐用量，同样很方便。</p>
+
+  <!-- 总结 -->
+  <p class="text-base text-gray-600 mt-8 pt-4 border-t border-gray-200">
+    掌握这些官方查询方法，再也不用担心话费超支、流量不够用了。如果你觉得本文有用，不妨收藏起来，或者分享给身边需要的朋友。如果你有更快捷的查询技巧，也欢迎在评论区留言分享！
+  </p>
+</div>`;export{s as default};

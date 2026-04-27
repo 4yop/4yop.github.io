@@ -1,169 +1,49 @@
-const t=`
-<div class="article-container">
-  <h1 class="article-title">BMI计算器：了解你的身体质量指数，掌握健康体重标准</h1>
-  
-  <div class="article-intro">
-    <p>在健康管理的道路上，了解自己的身体状况是第一步。<strong>BMI身体质量指数</strong>作为国际上通用的体重评估标准，能够帮助我们快速判断体重是否处于健康范围。本文将详细介绍BMI计算器的使用方法、BMI计算公式以及中国成人的BMI健康标准，助你科学管理体重，迈向健康生活。</p>
+const s=`
+<div class="text-gray-800 leading-relaxed">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">亲戚称呼太难记？教你用工具快速理清辈分与称呼</h1>
+
+  <p class="mb-6">春节团圆，家族聚会，或是翻看厚重的家谱时，你有没有遇到过这样的尴尬：面对一位笑容满面的长辈，却突然卡壳，不知道该怎么称呼？妈妈的舅舅，爸爸的姑姑，这些绕来绕去的关系，是不是一想就头疼？</p>
+
+  <p class="mb-8">别担心，这不是你一个人的烦恼。中国传统的亲戚关系网庞大又精密，称呼更是讲究。好在，现在有了一种非常方便的工具——<strong>亲戚关系计算器</strong>，它能像做数学题一样，帮你快速算出准确的称呼。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、亲戚关系为什么容易搞混？</h2>
+  <p class="mb-4">我们觉得亲戚称呼复杂，通常是因为两个原因：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>关系链条长</strong>：“我爸爸的妈妈的妹妹”，光是念出来就要想一想，更别说快速反应出该叫“姨奶奶”了。</li>
+    <li><strong>称呼分男女和辈分</strong>：同样是父母的兄弟，父亲那边的叫“伯伯”、“叔叔”，母亲那边的就叫“舅舅”。同样是兄弟姐妹的子女，你称呼他们为“侄子/侄女”还是“外甥/外甥女”，也取决于你自己的性别。</li>
+  </ul>
+  <p class="mb-6">这些复杂的规则背后，其实是传统亲族文化的一套精密逻辑。不过，对于日常生活的我们来说，能快速找到正确答案就足够了。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个“计算器”是怎么用的？</h2>
+  <p class="mb-4">想象一下，你面前有一个简单的面板，上面有十个最核心的家庭成员按钮：<strong>父、母、夫、妻、兄、弟、姐、妹、子、女</strong>。</p>
+  <p class="mb-4">想知道“爸爸的哥哥”怎么称呼？你只需要依次点击“父”和“兄”这两个按钮。计算器会把你点的词连成“爸爸的哥哥”这样一个关系式，然后瞬间告诉你结果：<strong>伯伯</strong>。</p>
+  <p class="mb-6">它就像在帮你“拼写”一段亲戚关系。无论是“妈妈妹妹的女儿”，还是“爸爸姐姐的丈夫”，你都可以通过组合这些基本按钮来描述。输入完毕后，点一下“计算”，答案立刻就出来了。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、两个贴心功能，让结果更精准</h2>
+  <p class="mb-4">为了让结果完全符合你的实际情况，这个工具还有两个很贴心的选项：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>选择你的性别</strong>：这一点非常重要！因为同样是你“姐姐的儿子”，如果你是男性，你应该叫他“外甥”；如果你是女性，则应该叫他“侄子”。选择性别后，计算器才能给出最准确的称呼。</li>
+    <li><strong>“互称”功能</strong>：这个功能特别有意思。我们不仅需要知道怎么称呼别人，有时也需要知道别人会怎么称呼我们。比如，你知道了你该叫对方“表姑”，那么对方应该叫你什么呢？打开“互称”开关再计算一下，你就能看到答案了。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">四、这个工具靠谱吗？</h2>
+  <p class="mb-4">你可能会好奇，它背后的依据是什么？其实，它的计算规则是基于一套被广泛认可的<strong>中国亲戚关系逻辑库</strong>。这套逻辑严格遵循了传统的“九族五服”亲缘体系和现代常用称呼习惯。</p>
+  <p class="mb-6">无论是直系血亲、旁系血亲还是姻亲，大部分常见的、甚至一些比较疏远的亲戚关系，它都能准确计算。如果遇到极其生僻或关系太远的情况，它也会老实告诉你“关系太远，无法计算”。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">五、除了计算，它还能帮你什么？</h2>
+  <p class="mb-4">对于普通人来说，这个工具不止是一个“称呼查询器”，它还有一些意想不到的用处：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>化解社交尴尬</strong>：在见面前提前“预习”一下复杂关系，做到心中有数，称呼时更得体。</li>
+    <li><strong>辅助理解家庭故事</strong>：看年代剧或家族历史时，用它来理清人物关系，故事会变得更清晰有趣。</li>
+    <li><strong>满足好奇心</strong>：单纯地体验一下传统亲戚网络的庞大和巧妙，也是一种文化知识的了解。</li>
+  </ul>
+
+  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-800">小提示：让家庭沟通更顺畅</h3>
+    <p class="mb-3">一个准确的称呼，是尊重和亲近的开始。尤其是在一些正式的家族场合，正确的辈分称呼显得尤为重要。下次再遇到吃不准的亲戚关系时，不妨先用工具查一查。</p>
+    <p class="mb-0">当然，工具是辅助。最重要的还是那份愿意了解、维系亲情的心意。当你笑着喊出正确的称呼时，长辈脸上的笑容就是最好的回报。</p>
   </div>
 
-  <h2 class="article-section-title">一、什么是BMI身体质量指数？</h2>
-  <div class="article-section">
-    <p><strong>BMI（Body Mass Index，身体质量指数）</strong>是衡量人体胖瘦程度与健康状况的国际标准指标。它通过身高和体重的比例关系，评估一个人的体重是否处于健康范围。</p>
-    <p>BMI的概念由比利时数学家阿道夫·凯特勒在19世纪提出，如今已被世界卫生组织（WHO）和各国卫生机构广泛采用。相比单纯的体重数据，BMI更能反映身体的匀称程度，是判断肥胖和营养不良的重要参考指标。</p>
-    <p>使用<strong>BMI计算器</strong>可以快速得出你的BMI数值，无需复杂的手动计算，即可获得专业的健康评估结果。</p>
-  </div>
-
-  <h2 class="article-section-title">二、BMI计算公式详解</h2>
-  <div class="article-section">
-    <p>BMI的计算方法非常简单，只需两个基础数据：体重和身高。</p>
-    
-    <div class="formula-box">
-      <h3>BMI计算公式：</h3>
-      <p class="formula">BMI = 体重（kg）÷ 身高²（m²）</p>
-    </div>
-    
-    <p><strong>计算示例：</strong></p>
-    <ul class="example-list">
-      <li>假设某人身高1.75米，体重70公斤</li>
-      <li>BMI = 70 ÷ (1.75 × 1.75) = 70 ÷ 3.0625 ≈ 22.9</li>
-    </ul>
-    
-    <p>如果你觉得手动计算麻烦，可以直接使用我们的<strong>在线BMI计算器</strong>，输入身高体重即可秒得结果，还能获取个性化的健康建议。</p>
-  </div>
-
-  <h2 class="article-section-title">三、中国成人BMI健康标准</h2>
-  <div class="article-section">
-    <p>根据中华人民共和国卫生部发布的《中国成人超重和肥胖症预防控制指南》，中国成人的BMI标准如下：</p>
-    
-    <table class="bmi-standard-table">
-      <thead>
-        <tr>
-          <th>BMI范围</th>
-          <th>体重状态</th>
-          <th>健康风险</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="underweight">
-          <td>&lt; 18.5</td>
-          <td>偏瘦</td>
-          <td>营养不良风险</td>
-        </tr>
-        <tr class="normal">
-          <td>18.5 - 23.9</td>
-          <td>正常</td>
-          <td>健康范围</td>
-        </tr>
-        <tr class="overweight">
-          <td>24.0 - 27.9</td>
-          <td>超重</td>
-          <td>患病风险增加</td>
-        </tr>
-        <tr class="obese">
-          <td>≥ 28.0</td>
-          <td>肥胖</td>
-          <td>患病风险较高</td>
-        </tr>
-      </tbody>
-    </table>
-    
-    <p class="note">需要注意的是，中国标准比WHO标准更为严格（WHO正常范围为18.5-24.9），这是因为亚洲人群在较低BMI时就已经面临较高的代谢疾病风险。</p>
-  </div>
-
-  <h2 class="article-section-title">四、BMI的局限性</h2>
-  <div class="article-section">
-    <p>虽然BMI是评估体重健康的重要工具，但它也有一定的局限性：</p>
-    
-    <ul class="limitation-list">
-      <li><strong>不区分脂肪和肌肉：</strong>运动员或健身爱好者肌肉量高，BMI可能显示超重，但体脂率正常</li>
-      <li><strong>不考虑脂肪分布：</strong>腹部脂肪（内脏脂肪）比皮下脂肪危害更大，但BMI无法反映</li>
-      <li><strong>不适用于特殊人群：</strong>孕妇、儿童、老年人需要采用不同的评估标准</li>
-      <li><strong>种族差异：</strong>不同种族的BMI健康范围可能存在差异</li>
-    </ul>
-    
-    <p>因此，建议将BMI与腰围、体脂率等指标结合使用，获得更全面的健康评估。</p>
-  </div>
-
-  <h2 class="article-section-title">五、健康体重管理建议</h2>
-  <div class="article-section">
-    <p>根据你的BMI计算结果，我们提供以下健康建议：</p>
-    
-    <h3>BMI偏瘦（&lt;18.5）</h3>
-    <ul>
-      <li>增加营养摄入，保证蛋白质、碳水化合物和健康脂肪的均衡</li>
-      <li>进行适度的力量训练，增加肌肉量</li>
-      <li>规律作息，保证充足睡眠</li>
-      <li>如有必要，咨询营养师制定增重计划</li>
-    </ul>
-    
-    <h3>BMI正常（18.5-23.9）</h3>
-    <ul>
-      <li>保持当前的健康生活方式</li>
-      <li>每周进行至少150分钟中等强度运动</li>
-      <li>定期监测BMI，预防体重波动</li>
-      <li>关注腰围变化，男性应&lt;85cm，女性应&lt;80cm</li>
-    </ul>
-    
-    <h3>BMI超重（24.0-27.9）</h3>
-    <ul>
-      <li>控制饮食热量，减少高糖高脂食物</li>
-      <li>增加有氧运动，如快走、游泳、骑行</li>
-      <li>设定合理的减重目标（每周0.5-1公斤）</li>
-      <li>记录饮食和运动，提高自我监督</li>
-    </ul>
-    
-    <h3>BMI肥胖（≥28.0）</h3>
-    <ul>
-      <li>建议咨询医生或专业营养师</li>
-      <li>制定科学的减重计划，避免极端节食</li>
-      <li>关注血压、血糖、血脂等指标</li>
-      <li>考虑加入减重支持小组，获得心理支持</li>
-    </ul>
-  </div>
-
-  <h2 class="article-section-title">六、BMI计算器常见问题（FAQ）</h2>
-  <div class="article-section faq-section">
-    
-    <div class="faq-item">
-      <h4>Q1：BMI计算器的结果准确吗？</h4>
-      <p>BMI计算器基于国际标准公式计算，数学上是准确的。但BMI本身是一个筛查工具，不是诊断工具。如需准确的健康评估，建议结合其他指标并咨询专业医生。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4>Q2：儿童和青少年可以使用成人BMI标准吗？</h4>
-      <p>不可以。2-20岁的儿童和青少年需要使用年龄和性别特定的BMI百分位数来评估。成人的BMI标准不适用于生长发育期的未成年人。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4>Q3：为什么我的BMI正常但看起来偏胖？</h4>
-      <p>可能原因包括：体脂率偏高（隐性肥胖）、肌肉量偏低、脂肪主要堆积在腹部。建议测量腰围和体脂率，获得更全面的身体成分分析。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4>Q4：BMI和体脂率有什么区别？</h4>
-      <p>BMI基于身高体重计算，无法区分脂肪和肌肉；体脂率直接测量体内脂肪所占比例。体脂率能更准确地反映肥胖程度，但需要专业设备测量。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4>Q5：多久应该测量一次BMI？</h4>
-      <p>建议每月测量一次BMI并记录。减重期间可以每周测量，但要注意体重日常波动（1-2公斤）属于正常现象，应关注长期趋势而非单日数据。</p>
-    </div>
-    
-  </div>
-
-  <h2 class="article-section-title">七、结语</h2>
-  <div class="article-section conclusion">
-    <p><strong>BMI身体质量指数</strong>是了解自身健康状况的重要工具，通过BMI计算器，你可以快速评估体重是否处于健康范围。记住，健康的体重不仅关乎外表，更是预防慢性疾病、保持活力的基础。</p>
-    <p>无论你的BMI结果如何，重要的是采取积极的健康行动。偏瘦者注重营养均衡，正常者保持良好习惯，超重和肥胖者制定科学的减重计划。健康是一场马拉松，而不是短跑，持之以恒才能收获长久的健康。</p>
-    <p>立即使用我们的<strong>BMI计算器</strong>，开启你的健康管理之旅吧！</p>
-  </div>
-
-  <div class="article-tags">
-    <span class="tag">BMI计算器</span>
-    <span class="tag">身体质量指数</span>
-    <span class="tag">健康体重</span>
-    <span class="tag">体重管理</span>
-    <span class="tag">健康评估</span>
-  </div>
+  <p class="mt-10 text-lg">希望这个小小的工具，能帮你扫清亲戚关系中的迷雾，让你在每一次家庭相聚时，都能更轻松、更亲切。</p>
 </div>
-`;export{t as default};
+`;export{s as default};

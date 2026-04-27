@@ -1,84 +1,64 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 leading-tight">您的密码真的安全吗？一文看懂什么是“弱口令”</h1>
-  <p class="text-center text-gray-600 text-lg mb-10">别再让“123456”成为守护您数字世界的唯一钥匙。</p>
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center leading-tight">给你的照片换个玩法：一键生成专属打乱拼图</h1>
 
-  <!-- 痛点场景 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
-    <h2 class="text-xl font-bold text-gray-800 mb-3">您是不是也这样设置密码？</h2>
-    <p class="text-gray-700 mb-2">用孩子的生日、家里的门牌号，或者一个简单好记的单词加上“123”。</p>
-    <p class="text-gray-700 mb-2">为了省事，所有网站、APP的登录密码都设置成同一个。</p>
-    <p class="text-gray-700">觉得自己的密码“只有自己知道”，应该很安全。</p>
+  <div class="text-lg text-gray-600 mb-8 text-center">
+    <p>想让普通的照片变得更有趣、更具挑战性吗？今天介绍一个简单的小工具，它能轻松把你的照片变成等待还原的拼图。</p>
   </div>
 
-  <!-- 简单解释 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold mb-5">“弱口令”到底是什么？</h2>
-    <p class="text-gray-700 mb-4">想象一下，您家的防盗门用的是一把结构极其简单、市面上很容易找到的钥匙。这就好比您在网络上使用的“弱口令”。</p>
-    <p class="text-gray-700 mb-4">“弱口令”并不是一个技术名词，它指的就是那些<strong>非常容易被猜到或通过简单方法破解的密码</strong>。</p>
-    <div class="bg-gray-100 p-5 rounded-lg my-6">
-      <h3 class="font-bold text-gray-800 mb-2">常见的“弱口令”长什么样？</h3>
-      <ul class="list-disc pl-5 space-y-1 text-gray-700">
-        <li><strong>纯数字序列</strong>：比如“123456”、“888888”、“生日日期”</li>
-        <li><strong>简单单词</strong>：比如“password”、“admin”、“hello”</li>
-        <li><strong>键盘相邻按键</strong>：比如“qwerty”、“asdfgh”</li>
-        <li><strong>重复字符</strong>：比如“aaaaaa”、“111111”</li>
-        <li><strong>单词加简单数字</strong>：比如“admin123”、“password2023”</li>
-      </ul>
-    </div>
-    <p class="text-gray-700">这些密码，就像一把脆弱的锁，无法有效保护您的个人隐私、社交账号，甚至网银安全。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+    <p class="font-medium text-blue-800">简单来说：你上传一张照片，选择切成多少块，工具就会自动把它打乱，生成一张全新的、等待被“破解”的图片。</p>
   </div>
 
-  <!-- 好处列举 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold mb-5">了解“弱口令”，能给您带来什么好处？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg text-gray-800 mb-3">1. 提升安全意识</h3>
-        <p class="text-gray-700">当您清楚地看到哪些密码属于“弱口令”时，您在为自己设置密码时，就会下意识地避开它们。这是保护自己的第一步。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg text-gray-800 mb-3">2. 自检现有密码</h3>
-        <p class="text-gray-700">您可以对照“弱口令”的特征，检查自己正在使用的密码。如果发现高度相似，就应该立即考虑更换一个更强的密码。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg text-gray-800 mb-3">3. 守护家庭网络安全</h3>
-        <p class="text-gray-700">家里的Wi-Fi密码、智能设备的初始密码往往是弱口令的重灾区。了解后可以及时修改，防止被他人蹭网或入侵。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg text-gray-800 mb-3">4. 为企业管理提供思路</h3>
-        <p class="text-gray-700">如果您负责公司部分事务，了解弱口令有助于您在要求同事设置内部系统密码时，明确告知哪些是禁止使用的“坏榜样”。</p>
-      </div>
-    </div>
-  </div>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">这是做什么用的？</h2>
+  <p class="mb-4">想象一下，你有一张非常喜欢的风景照、宠物照或者全家福。直接分享出去，大家看一眼就过去了。但如果把它变成一张被打乱顺序的拼图，再分享给朋友或家人，就多了一份互动和挑战的乐趣。</p>
+  <p class="mb-4">它就像是一个数字版的“拼图制作器”。你不用去购买实体的拼图块，也不用费力地用软件一点点裁剪。整个过程，只需要点几下鼠标。</p>
 
-  <!-- 应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold mb-5">这在生活中有什么用？两个真实场景</h2>
-    <div class="space-y-6">
-      <div class="border border-gray-300 rounded-lg p-5">
-        <h3 class="font-bold text-lg text-gray-800 mb-2">场景一：设置家庭Wi-Fi新密码</h3>
-        <p class="text-gray-700">老密码是“88888888”。现在您知道这是典型的弱口令。新密码可以改为一个您能记住的短语拼音首字母组合，加上特殊符号和数字，例如“WoJiaZai3Lou#”（“我家在3楼#”的拼音组合），强度就高得多。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么使用？非常简单，三步搞定</h2>
+  <ul class="list-decimal pl-5 space-y-4 mb-8">
+    <li>
+      <strong>第一步：选照片</strong>
+      <p class="text-gray-700 mt-1">点击“选择图片”按钮，从你的电脑或手机里挑出一张你想加工的照片。支持常见的图片格式。</p>
+    </li>
+    <li>
+      <strong>第二步：定难度</strong>
+      <p class="text-gray-700 mt-1">选择你想把照片切成多少块。比如9块（3x3）、16块（4x4），块数越多，打乱后的还原难度就越高，适合喜欢挑战的人。</p>
+    </li>
+    <li>
+      <strong>第三步：生成并下载</strong>
+      <p class="text-gray-700 mt-1">点击“切割并打乱”按钮，稍等片刻，你就能在右边看到打乱后的效果。满意的话，直接点击“下载拼图”，这张独一无二的谜题图就保存到你的设备里了。</p>
+    </li>
+  </ul>
+
+  <div class="bg-gray-100 p-5 rounded-lg my-8">
+    <h3 class="font-bold text-xl mb-3">你可能会问的几个问题</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium">我的照片会被上传到服务器吗？</p>
+        <p class="text-gray-700">完全不会。所有处理都在你当前的浏览器页面里完成，照片数据不会离开你的电脑或手机，非常注重隐私安全。</p>
       </div>
-      <div class="border border-gray-300 rounded-lg p-5">
-        <h3 class="font-bold text-lg text-gray-800 mb-2">场景二：为新员工讲解公司规定</h3>
-        <p class="text-gray-700">与其空洞地说“密码要设复杂点”，不如直接展示一批“弱口令”例子，比如“company2024”、“hello123”，并解释它们为什么危险。这样规定更容易被理解和遵守。</p>
+      <div>
+        <p class="font-medium">可以切成任意块数吗？</p>
+        <p class="text-gray-700">为了保证打乱后每个小块形状规整（都是小方格），工具会自动建议一些特定的块数，比如4、9、16、25等，这样最终效果最好。</p>
+      </div>
+      <div>
+        <p class="font-medium">打乱后的图片清晰度会下降吗？</p>
+        <p class="text-gray-700">处理过程会尽量保持原图的清晰度。你可以随时通过预览功能查看原图和效果图，并进行对比。</p>
+      </div>
+      <div>
+        <p class="font-medium">这个工具有什么实际用途？</p>
+        <p class="text-gray-700">除了娱乐，它还可以用于制作简单的互动谜题、活动预热海报、或者作为亲子游戏素材。老师们甚至可以用它来制作别出心裁的课件题目。</p>
       </div>
     </div>
   </div>
 
-  <!-- 行动号召与总结 -->
-  <div class="bg-gray-50 rounded-xl p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">从现在开始，重视您的密码安全</h2>
-    <p class="text-gray-700 mb-6">数字时代的门锁，就是您的密码。了解“弱口令”，就是学会识别那些不合格的门锁。保护自己的第一步，往往就是<strong>避开那些显而易见的风险</strong>。</p>
-    <p class="text-gray-700 mb-2">您可以立刻行动：</p>
-    <ul class="inline-block text-left text-gray-700 mb-6">
-      <li>1. 检查您最重要的几个账号（如邮箱、支付工具）密码。</li>
-      <li>2. 避免使用个人信息和简单规律组合。</li>
-      <li>3. 为不同重要级别的账户设置不同的密码。</li>
-    </ul>
-    <p class="text-gray-600 text-sm">（注：本文旨在进行安全意识科普，帮助公众识别不安全的密码模式，提升整体网络安全防范水平。）</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">给你的创意和生活加点料</h2>
+  <p class="mb-4">一张普通的照片，经过这样简单的处理，就变成了一个等待被解锁的小小谜团。无论是用于社交分享增加互动，还是作为一个小游戏和朋友一起玩，都能带来不一样的体验。</p>
+  <p class="mb-4">工具本身是免费的，操作门槛极低。你不必懂任何复杂的图片编辑技术，也不需要下载安装软件，打开网页就能用。</p>
+  <p class="mb-8">下次当你觉得某张照片值得被更仔细地“观赏”时，不妨试试把它变成一张打乱的拼图。这不仅仅是改变图片的排列方式，更是为你的记忆和分享，增添了一层探索的乐趣。</p>
+
+  <div class="text-center text-gray-500 text-sm mt-12 pt-8 border-t">
+    <p>希望这个简单的小工具，能为你平淡的图片分享带来一点新鲜感。</p>
   </div>
-</div>
+</article>
 `;export{t as default};

@@ -1,151 +1,59 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <article class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
-    <!-- 文章标题 -->
-    <header class="mb-8 border-b pb-6">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">了解真实的自己：一份全面的MBTI性格测试指南</h1>
-      <p class="text-gray-600 text-lg">你是否曾好奇，为什么你和某些人一拍即合，和另一些人却沟通困难？为什么你偏爱安静思考，而朋友却热衷热闹聚会？认识自己，可以从了解性格开始。</p>
-    </header>
+<div class="text-slate-700 max-w-3xl mx-auto p-4 md:p-0">
+  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h1>
 
-    <!-- 引言 -->
-    <section class="mb-10">
-      <p class="text-gray-700 mb-4">在生活中，我们常常会遇到这样的疑问：我到底适合做什么工作？为什么我总感觉和别人想的不一样？如何更好地与他人相处？其实，这些问题都与我们的性格特质密切相关。</p>
-      <p class="text-gray-700 mb-4">有一种被广泛使用的工具，可以帮助我们描绘出自己性格的“地图”，它就是MBTI性格测试。它不是什么神秘的占卜，而是一个基于心理学理论的性格类型指标，帮助我们更清晰地看到自己的偏好和倾向。</p>
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-        <p class="text-gray-800">简单来说，MBTI就像一面镜子，帮助我们观察自己在获取能量、收集信息、做决策和安排生活这四个方面的习惯性偏好。</p>
-      </div>
-    </section>
+  <p class="text-lg mb-8 leading-relaxed">
+    工作中，面对一堆密密麻麻的销售数字，是不是感到头疼？学习中，复杂的统计资料，是不是让你眼花缭乱？我们常常需要把枯燥的数据变成一目了然的图表，但专业的软件太难，手绘又太慢。有没有一种方法，能让我们普通人，像填写表格一样简单，就能得到专业的图表呢？
+  </p>
 
-    <!-- MBTI是什么 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">MBTI是什么？不仅仅是四个字母</h2>
-      <p class="text-gray-700 mb-4">你可能见过诸如“INFP”、“ESTJ”这样的四个字母组合。这不是密码，而是MBTI性格测试的结果代码。每一个字母代表你在某个性格维度上的倾向。</p>
-      <p class="text-gray-700 mb-6">它主要从四个角度来观察我们：</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">1. 能量来源：内向(I) 还是 外向(E)？</h3>
-          <p class="text-gray-700">这里不是指爱不爱说话，而是指你从哪里获得能量。喜欢从内心世界、独处中恢复精力的人是“内向”(I)；而通过与外界互动、与人交往来充电的人则是“外向”(E)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">2. 信息收集：实感(S) 还是 直觉(N)？</h3>
-          <p class="text-gray-700">你更相信眼睛看到的现实细节，还是更关注未来的可能性？注重具体事实和实际经验的是“实感”(S)；喜欢抽象概念、联想和潜在意义的是“直觉”(N)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">3. 决策方式：思考(T) 还是 情感(F)？</h3>
-          <p class="text-gray-700">做决定时，你更依赖逻辑分析，还是更重视人情与和谐？基于客观逻辑和因果分析做判断的是“思考”(T)；优先考虑价值观和他人感受的是“情感”(F)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">4. 生活方式：判断(J) 还是 感知(P)？</h3>
-          <p class="text-gray-700">你喜欢有计划、有条理的生活，还是灵活、随性的方式？喜欢做决定、让事情有明确结果的是“判断”(J)；喜欢保持开放、适应变化的是“感知”(P)。</p>
-        </div>
-      </div>
-      <p class="text-gray-700">将这四个维度的倾向组合起来，就形成了16种不同的性格类型，每一种都有其独特的特点。</p>
-    </section>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">告别混乱数字，让数据自己“说话”</h2>
+  <p class="mb-6 leading-relaxed">
+    无论你是要做一份工作报告，还是整理自己的学习笔记，图表都是最好的帮手。一张好的柱状图，能瞬间让你看清谁多谁少，哪个项目更突出。以前，这可能是设计师或者数据分析师的工作。而现在，借助一些简单好用的在线工具，每个人都能轻松胜任。
+  </p>
 
-    <!-- 测试过程 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">一次专业的MBTI测试是怎样的？</h2>
-      <p class="text-gray-700 mb-4">一个完整的在线MBTI测试，通常会让你回答一系列关于日常行为、想法和感受的选择题。这些题目旨在探索你在上述四个维度上的自然偏好。</p>
-      
-      <div class="bg-gray-50 p-5 rounded-lg mb-6">
-        <h3 class="font-bold text-gray-800 text-lg mb-3">测试时你可能会看到：</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">1</span>
-            <span><strong>清晰的进度提示</strong>：让你知道已经完成了多少，还有多少题目。</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">2</span>
-            <span><strong>贴近生活的场景题</strong>：比如“在社交聚会中，你通常...”，选项没有对错，只需选择最符合你真实感受的一项。</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">3</span>
-            <span><strong>实时的维度反馈</strong>：有些测试会边做边显示你在各个维度上的初步倾向，就像看着自己的性格画像一笔笔画出来。</span>
-          </li>
-        </ul>
-      </div>
-      <p class="text-gray-700">完成所有题目后，系统会根据你的选择进行计分，最终得出一个属于你的四字母性格类型代码。</p>
-    </section>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">只需简单三步，你的专属图表即刻呈现</h2>
+  <p class="mb-4 leading-relaxed">
+    很多人一听到“做图表”就觉得复杂。其实，整个过程可以非常简单，就像用记事本一样。
+  </p>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第一步：输入你的数据</h3>
+    <p class="mb-3">你不需要任何特殊格式。只需像平时记流水账一样，把你的项目名称和对应的数字，用逗号隔开，一行行写下来。</p>
+    <p class="text-sm text-slate-500 mb-3">例如：<br>产品A, 120, 80<br>产品B, 150, 160</p>
+    <p>写好之后，点击一个按钮，系统就会自动识别并准备好你的图表数据。</p>
+  </div>
 
-    <!-- 报告价值 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">测试报告能告诉你什么？</h2>
-      <p class="text-gray-700 mb-6">一份详细的MBTI测试报告，远不止告诉你四个字母。它更像一份个人使用说明书，可以帮助你：</p>
-      
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-green-600 font-bold">优</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">发现自己的天然优势</h3>
-            <p class="text-gray-700">报告会详细分析你这种性格类型的闪光点。比如，你可能天生善于逻辑分析、有强大的创新能力，或者对人际关系有深刻的洞察力。了解优势，能让你在工作和生活中更好地发挥所长。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-yellow-600 font-bold">长</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">看到可能的成长方向</h3>
-            <p class="text-gray-700">每种性格也都有其面临的挑战。报告可能会指出，你可能需要注意避免过度陷入理论而忽视执行，或者需要学习更好地表达情感。认识到这些，是个人成长的第一步。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-indigo-600 font-bold">职</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">获得职业选择的参考</h3>
-            <p class="text-gray-700">性格与职业的匹配度很重要。报告常常会列出一些高度匹配的职业方向。例如，内向直觉思考感知型的人，可能在科研、编程、架构设计等领域如鱼得水。这可以为你的学业或职业规划提供有价值的参考。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-purple-600 font-bold">处</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">改善人际沟通与理解</h3>
-            <p class="text-gray-700">当你明白自己是“思考型”而伴侣是“情感型”时，就能理解为什么Ta有时会觉得你“太讲道理”。MBTI提供了一个中立的框架，帮助我们理解人与人的不同，学会用对方能接受的方式沟通，减少摩擦。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第二步：调整到你喜欢的样子</h3>
+    <p class="mb-3">图表可以“竖着”排列，也可以“横着”排列，哪种看着顺眼就用哪种。</p>
+    <p class="mb-3">颜色也可以随心换。有沉稳的“商务蓝”适合正式报告，有简洁的“工程灰”显得专业，还有清新的“生态绿”让人眼前一亮。</p>
+    <p>所有的调整都是实时生效的，你可以立刻看到变化，直到找到最满意的样式。</p>
+  </div>
 
-    <!-- 正确看待 -->
-    <section class="mb-10 bg-gray-50 p-6 rounded-xl">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">如何正确看待MBTI测试结果？</h2>
-      <p class="text-gray-700 mb-4">在探索自我的旅程中，MBTI是一个好用的工具，但也有一些需要注意的地方：</p>
-      <ul class="space-y-3 text-gray-700 mb-4">
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>它描述偏好，不是能力</strong>：MBTI说明你“喜欢”怎样，而不是你“擅长”什么。一个内向的人也可以练就出色的演讲能力。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>类型没有好坏之分</strong>：16种性格类型各有其独特的价值和贡献。世界需要细致的守护者，也需要大胆的创新者。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>人是动态发展的</strong>：你的偏好可能会随着经历和环境发生细微变化。测试结果是一个当下的快照，而非终身不变的标签。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>目的是理解与发展</strong>：测试的最终目的不是把自己框定在某个类型里，而是借助这种洞察，更好地扬长避短，实现个人成长，同时更包容地看待他人。</span>
-        </li>
-      </ul>
-      <p class="text-gray-700">最好的使用方式，是把报告作为一面镜子，从中看到自己可能忽略的特点，然后带着这份对自己的理解，更自信、更智慧地去生活和工作。</p>
-    </section>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第三步：保存你的成果</h3>
+    <p>图表做好后，可以直接保存为一张高清图片。无论是插入到PPT里，还是分享到工作群，都非常方便。</p>
+    <p class="text-sm text-slate-500 mt-2">还有一个贴心的小功能：在你操作的过程中，系统会自动帮你记住上一次的数据和设置，下次打开，一切都还在，不用重新做。</p>
+  </div>
 
-    <!-- 结语 -->
-    <section class="pt-6 border-t">
-      <p class="text-gray-700 mb-6">认识自己是一生的课题。MBTI性格测试就像在这条路上提供了一张粗略但很有用的地图。它不能决定你的终点，但能帮你了解自己出发时的“默认路径”。</p>
-      <p class="text-gray-700">如果你对“我究竟是怎样的一个人”感到好奇，不妨花上一点时间，诚实地回答一些问题。你可能会对自己有新的发现，也可能对身边人的行为多一分理解。这份自我了解的旅程，本身就是一种收获。</p>
-    </section>
-  </article>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">这个工具能帮你解决哪些具体问题？</h2>
+  <ul class="list-disc pl-5 space-y-2 mb-8">
+    <li><span class="font-medium">月度销售汇报：</span>快速对比各个业务小组或产品的业绩高低。</li>
+    <li><span class="font-medium">项目进度跟踪：</span>清晰展示不同任务阶段的完成情况。</li>
+    <li><span class="font-medium">学习成果统计：</span>将各科成绩或学习时间直观地呈现出来。</li>
+    <li><span class="font-medium">家庭开支分析：</span>一眼看出每月在饮食、购物、教育等方面的花费占比。</li>
+    <li><span class="font-medium">活动投票结果展示：</span>让投票数多少变得一目了然。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">担心操作复杂？其实很简单</h2>
+  <p class="mb-6 leading-relaxed">
+    很多朋友可能会问，我需要先学习什么吗？完全不用。这类工具的设计初衷，就是给非专业人士使用的。它的界面通常很干净，按钮上的字都写得明明白白，比如“解析数据”、“导出图片”。你完全不需要知道背后复杂的原理，就像我们用电饭煲煮饭，不需要懂它的电路一样。你只需要关心你的数据，然后选择你喜欢的样子。
+  </p>
+
+  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10">
+    <h2 class="text-2xl font-semibold text-slate-800 mb-3">总结一下</h2>
+    <p class="leading-relaxed">
+      当数字变得难以理解时，图表是最好的翻译官。一个好的免费图表生成工具，应该像一位耐心的助手：<span class="font-medium">操作上足够简单</span>，让你轻松上手；<span class="font-medium">样式上足够灵活</span>，满足不同场合的需求；<span class="font-medium">结果上足够实用</span>，能直接拿去使用。别再让杂乱的数据困住你，试着把它们变成一张张清晰的图表，你会发现，理解和表达，原来可以如此轻松。
+    </p>
+  </div>
 </div>
 `;export{s as default};

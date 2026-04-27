@@ -1,87 +1,131 @@
 const t=`
 <div class="container mx-auto px-4 py-8 max-w-4xl">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">微信对话生成器：轻松制作逼真的微信聊天截图</h1>
-  
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700 m-0">想要一张以假乱真的微信聊天截图？我们的微信对话生成器帮你实现——自定义一切细节，从头像到气泡，从时间到信号，像素级还原真实微信界面。</p>
-  </div>
-  
-  <p class="text-gray-600 mb-6 leading-relaxed">无论是制作搞笑段子配图、演示产品聊天界面，还是创作社交平台的内容素材，一个逼真的微信对话截图都能让效果翻倍。但用PS一点点抠图太麻烦？别担心，这款在线工具让你几分钟就能搞定。</p>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">功能亮点</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">🎭 自定义角色</h3>
-      <p class="text-gray-600">自由设置对方昵称和头像，选择或上传自己的头像。内置多款预设头像可选，也支持本地上传自定义图片。</p>
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6 leading-tight">还在为选择发愁？一个简单工具帮你轻松做决定</h1>
+    
+    <div class="text-gray-600 mb-8 text-center">
+      <p class="mb-2">每天都要做无数选择，从吃什么到去哪里，有时候真的让人头疼。</p>
+      <p>今天就来介绍一个特别实用的小工具，它能帮你快速做出随机选择，让生活变得更简单。</p>
     </div>
     
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">📱 真实状态栏</h3>
-      <p class="text-gray-600">自定义手机时间、信号强度（1-4格）、网络类型（5G/4G）和电池电量，让截图更加逼真可信。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">💬 多种消息类型</h3>
-      <p class="text-gray-600">支持普通文本消息、红包消息和时间戳显示。使用简单的格式语法即可快速创建各种类型的聊天内容。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">📸 一键导出截图</h3>
-      <p class="text-gray-600">实时预览对话效果，满意后一键生成高清PNG图片下载保存。所有操作在本地完成，保护隐私。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何使用</h2>
-  
-  <div class="mb-8">
-    <div class="flex items-start mb-6">
-      <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4 flex-shrink-0" style="width:40px;height:40px;line-height:24px;">
-        <div class="text-center font-medium">1</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">填写基本信息</h3>
-        <p class="text-gray-600">在左侧面板中设置对方昵称、选择双方头像，调整手机状态栏的时间、信号、网络和电量参数。</p>
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">什么是随机选择器？</h2>
+      <div class="space-y-4 text-gray-700">
+        <p>随机选择器就像一个电子抽签盒，你可以把不同的选项放进去，它就会帮你随机选出一个。</p>
+        <p>想象一下，你和朋友争论晚上吃什么，把“火锅、烧烤、炒菜、面条”这些选项输入进去，点击一下按钮，它就会给出一个随机结果。</p>
+        <p>这样一来，既公平又有趣，再也不用为“到底听谁的”而烦恼了。</p>
       </div>
     </div>
     
-    <div class="flex items-start mb-6">
-      <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4 flex-shrink-0" style="width:40px;height:40px;line-height:24px;">
-        <div class="text-center font-medium">2</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">编辑对话内容</h3>
-        <p class="text-gray-600">在对话框中使用「A说：」「B说：」「时间：」格式输入聊天记录。支持红包消息，格式为「A说：[红包：恭喜发财]」。</p>
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">哪些时候特别需要它？</h2>
+      <ul class="grid md:grid-cols-2 gap-4 text-gray-700">
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">日常吃饭难题</div>
+          <div class="text-sm">每天都要想的“吃什么”，把常吃的几家店列出来，让它帮你决定。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">周末活动安排</div>
+          <div class="text-sm">看电影、逛公园、去爬山……太多选择反而不知道做什么好。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">家庭游戏时间</div>
+          <div class="text-sm">和孩子玩游戏时，用它来决定谁先开始，或者选择游戏项目。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">学习抽检复习</div>
+          <div class="text-sm">把要复习的知识点写下来，随机抽选，检验自己的掌握情况。</div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">使用起来有多简单？</h2>
+      <div class="space-y-6 text-gray-700">
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">输入你的选项</p>
+            <p>把你想选择的项目一个个写下来，比如“红色、蓝色、绿色”，或者每行写一个。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">点击选择按钮</p>
+            <p>轻轻点一下“随机选择”按钮，它会立刻从你的列表中抽出一个结果。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shri0">3</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">得到最终结果</p>
+            <p>屏幕上会清晰显示被选中的项目，你可以直接使用这个结果，或者重新选择。</p>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="flex items-start mb-6">
-      <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4 flex-shrink-0" style="width:40px;height:40px;line-height:24px;">
-        <div class="text-center font-medium">3</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">预览并导出</h3>
-        <p class="text-gray-600">右侧手机预览区会实时展示对话效果，确认无误后点击「生成图片截图」按钮即可下载高清图片。</p>
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">这些场景你可能遇到过</h2>
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景一：和朋友争论不休时</div>
+          <p class="text-gray-700">周末去哪里玩？有人说去公园，有人说去商场，有人说去看展览。与其争论半天，不如把选项都列出来，让随机选择器帮忙决定，大家都服气。</p>
+        </div>
+        
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景二：自己犹豫不决时</div>
+          <p class="text-gray-700">想买件新衣服，看中了三件都挺喜欢，但预算只够买一件。这时候让选择器帮你挑，既解决了选择困难，又有点小惊喜。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-2">场景三：需要公平分配时</div>
+          <p class="text-gray-700">家里大扫除，谁擦窗户、谁拖地、谁整理厨房？把任务写下来随机分配，公平合理，谁也没意见。</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">对话内容格式说明</h2>
-  
-  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
-    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
-      <li><span class="font-medium">A说：</span> 表示对方（绿色气泡，靠右）发送的消息</li>
-      <li><span class="font-medium">B说：</span> 表示自己（白色气泡，靠左）发送的消息</li>
-      <li><span class="font-medium">时间：</span> 插入一条时间分隔线（如「9月3日 19:27」）</li>
-      <li><span class="font-medium">[红包：xxx]</span> 在消息中插入红包样式，如「A说：[红包：恭喜发财，大吉大利]」</li>
-    </ul>
-    <p class="text-sm text-gray-500">每行输入一条消息，系统会自动识别并渲染对应的样式。</p>
-  </div>
-
-  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">隐私安全保障</h3>
-    <p class="text-gray-600 mb-4">所有对话内容的处理和截图生成都在你的浏览器本地完成，不会上传到任何服务器。你的聊天内容、头像信息和隐私数据完全由你自己掌控，使用安全放心。</p>
-    <p class="text-gray-600">生成的微信对话截图适用于内容创作、社交分享、演示说明等多种场景。快来试试吧！</p>
-  </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">常见问题解答</h2>
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <div class="font-medium text-gray-800 mb-1">这个工具收费吗？</div>
+          <p>完全免费，打开网页就能用，不需要下载任何软件，也不会有烦人的广告。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">需要注册账号吗？</div>
+          <p>不需要，就像使用一个简单的计算器一样，随开随用，用完就关，没有任何门槛。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">手机和电脑都能用吗？</div>
+          <p>都可以，无论是在家里的电脑上，还是在外出的手机上，都能正常使用，操作一样简单。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">选项有数量限制吗？</div>
+          <p>几乎没有限制，你可以输入几个选项，也可以输入几十个选项，都能正常工作。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-blue-50 border border-blue-100 rounded-lg p-6 mt-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">小提示：让选择变得更有趣</h2>
+      <div class="text-gray-700 space-y-3">
+        <p>• 不确定今晚吃什么？把附近常去的餐厅都列出来，让随机选择器给你一个惊喜。</p>
+        <p>• 孩子不知道看哪本书？把书架上的书名写下来，随机挑选，增加阅读的趣味性。</p>
+        <p>• 运动前热身做什么？把几个热身动作输入进去，每次都不一样，避免枯燥。</p>
+        <p class="font-medium text-gray-800 mt-4">很多时候，我们不是没有选择，而是选择太多。让随机选择器帮你简化这个流程，你会发现做决定原来可以这么轻松。</p>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10 pt-6 border-t border-gray-200">
+      <p class="text-gray-600">希望这个简单的小工具能帮你减少生活中的选择烦恼，让每一天的决策都变得更轻松愉快。</p>
+    </div>
+  </article>
 </div>
 `;export{t as default};

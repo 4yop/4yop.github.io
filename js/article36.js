@@ -1,157 +1,81 @@
-const s=`
-<div class="text-gray-800 max-w-4xl mx-auto">
+const t=`
+<div class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6">
-    银行卡号核对太头疼？这个免费工具，一次能查上百个！
-  </h1>
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">网站加把锁，文件盖个章：一份在线申请表的故事</h1>
+  <p class="text-gray-600 text-center mb-10 text-lg">你是否为网站的安全警告或软件的“不明来源”提示而烦恼？其实，解决它只需要一份特殊的“申请表”。</p>
 
-  <!-- 引言 -->
-  <div class="mb-8 p-4 bg-blue-50 rounded-lg">
-    <p class="text-lg">
-      财务发工资、商家退款、社团收会费……生活中总免不了要和一堆银行卡号打交道。一个个手动核对，不仅眼花缭乱，还怕输错数字，有没有更省心的方法？
-    </p>
-  </div>
-
-  <!-- 主要问题 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">
-      批量核对银行卡，到底有多麻烦？
-    </h2>
-    <p class="mb-4">
-      想象一下，你手头有几十甚至上百个银行卡号需要确认。可能是会员提交的缴费信息，也可能是公司需要发放补贴的名单。
-    </p>
-    <p class="mb-4">
-      传统的做法是什么？<strong>一个一个输入，一个一个查询。</strong>这不仅仅是“复制”和“粘贴”那么简单：
-    </p>
-    <div class="space-y-3 mb-6">
-      <p class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-red-100 text-red-800 rounded-full text-center leading-6 mr-2 flex-shrink-0">1</span>
-        你得把号码一个不漏地敲进去，或者小心翼翼地对准了复制，生怕多一个空格。
-      </p>
-      <p class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-red-100 text-red-800 rounded-full text-center leading-6 mr-2 flex-shrink-0">2</span>
-        然后你得找个地方去查这个卡号是不是真的存在（格式对不对），是哪家银行的。
-      </p>
-      <p class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-red-100 text-red-800 rounded-full text-center leading-6 mr-2 flex-shrink-0">3</span>
-        最后，你还得把结果一条条记录下来，整理成表格。整个过程费时费力，还容易出错。
-      </p>
-    </div>
-    <p class="text-gray-600">
-      一旦输错一位数字，钱就可能转到别人的账户，后续追回更是麻烦重重。
-    </p>
-  </div>
-
-  <!-- 解决方案 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-green-500 pl-3">
-      一个工具，解决所有核对难题
-    </h2>
-    <p class="mb-4">
-      其实，核对银行卡号完全可以变得很简单。现在有专门的在线工具，可以帮你一次性处理成百上千个卡号，主要能帮你做三件事：
-    </p>
-    <div class="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-6 mb-6">
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <div class="text-xl font-medium text-blue-700 mb-2">批量验证</div>
-        <p>把你要核对的所有银行卡号，一行一个粘贴进去。工具会自动检查每一个号码的格式是否正确，是不是一个“有可能存在”的卡号。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <div class="text-xl font-medium text-blue-700 mb-2">自动识别银行</div>
-        <p>对于格式正确的卡号，工具能通过卡号开头的几位数字，自动识别出它属于哪家银行，比如建设银行、工商银行等。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <div class="text-xl font-medium text-blue-700 mb-2">一键导出结果</div>
-        <p>核对完成之后，所有结果（卡号、是否有效、所属银行）可以一键导出成Excel或表格文件，方便你保存、打印或发给别人。</p>
-      </div>
-    </div>
-    <p>
-      整个过程就像你有一份名单，交给一个既细心又高效的助手，他瞬间就帮你把对错分好类，还把每个人的单位都标注清楚了。
-    </p>
-  </div>
-
-  <!-- 适用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-orange-500 pl-3">
-      谁特别需要这个功能？
-    </h2>
-    <p class="mb-4">这个工具听起来很专业，但其实很多普通人都会用得到：</p>
-    <ul class="list-disc pl-5 space-y-2 mb-4">
-      <li><strong>公司财务或行政人员</strong>：每月核对工资卡号、发放报销款。</li>
-      <li><strong>电商卖家或小店主</strong>：处理客户退款、发放佣金或分红。</li>
-      <li><strong>社团组织者或班干部</strong>：收取活动经费、班费，需要统计大家的收款账户。</li>
-      <li><strong>普通个人</strong>：整理家庭成员的银行卡信息，或者帮父母核对退休金账户。</li>
+  <!-- 痛点场景 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-10 rounded-r">
+    <h2 class="text-xl font-semibold mb-3 text-blue-800">这些烦恼，你遇到过吗？</h2>
+    <ul class="space-y-3 pl-5 list-disc">
+      <li>辛辛苦苦建了个网站，访客打开时，浏览器却显示<strong class="text-red-600">“不安全”</strong>的红色警告，吓跑了好不容易来的客人。</li>
+      <li>自己开发了一个实用小工具分享给别人，朋友打开时却跳出<strong class="text-red-600">“无法验证的开发者”</strong>或“未知发布者”的阻拦，怎么解释对方都不敢用。</li>
+      <li>想为自家小程序或服务器做点安全升级，一听要弄什么“证书”、“密钥”，感觉像在听天书，完全不知道从何下手。</li>
     </ul>
-    <p class="text-gray-600">
-      简单来说，只要你需要同时处理多个银行卡号，希望又快又准地完成，这个工具就能派上用场。
-    </p>
+    <p class="mt-4">如果你有过类似的困扰，别担心，问题比你想象的要简单。你需要的，其实只是一份能让官方机构为你“背书”的在线申请表。</p>
   </div>
 
-  <!-- 操作简述（非技术） -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-purple-500 pl-3">
-      用起来复杂吗？三步搞定！
-    </h2>
-    <p class="mb-6">不用担心操作复杂，整个过程非常直观：</p>
-    <div class="space-y-4 mb-6">
-      <div class="flex items-start">
-        <div class="bg-blue-100 text-blue-800 rounded-lg w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">一</div>
-        <div>
-          <p class="font-medium mb-1">准备好你的卡号清单</p>
-          <p class="text-gray-600">把你的银行卡号整理在一个文档里，或者直接从表格里复制出来，确保每行只有一个卡号。</p>
-        </div>
+  <!-- 简单解释 -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-bold mb-6 border-b pb-2">把复杂技术，变成生活小事</h2>
+    <p class="mb-4">我们打个比方。你想开一家实体店，需要去工商局办个营业执照，证明你的店是合法正规的。怎么申请呢？你需要先准备一份<strong>申请表</strong>，填上你的店名、地址、法人信息，然后提交上去等待审核盖章。</p>
+    <div class="bg-gray-100 p-5 my-6 rounded-lg">
+      <p class="font-medium mb-2">给网站或软件加“安全证书”，过程几乎一模一样：</p>
+      <ol class="space-y-2 pl-5 list-decimal">
+        <li><strong>准备“申请表”（CSR）</strong>：你需要生成一份电子申请表，里面写明你的网站域名、公司名称等信息。</li>
+        <li><strong>准备好“钥匙”（私钥）</strong>：同时，系统会生成一把独一无二的、只属于你自己的“数字钥匙”，必须藏好。</li>
+        <li><strong>提交“申请”</strong>：你把这份申请表（不是钥匙！）提交给类似“工商局”角色的证书颁发机构。</li>
+        <li><strong>获得“执照”（证书）</strong>：机构审核通过后，会发给你一个数字证书。你把证书和你的钥匙配对，你的网站或软件就有了可信的“身份证”和“安全锁”。</li>
+      </ol>
+    </div>
+    <p>你看，整个过程里，最需要你动手的就是<strong>第一步：填写并生成那份“申请表”和“钥匙”</strong>。后面的提交和签发，有专业的机构去完成。</p>
+  </div>
+
+  <!-- 好处列举 -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-bold mb-6 border-b pb-2">为什么说这个“填表”工具很贴心？</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="border border-gray-200 p-6 rounded-xl hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-lg mb-2 text-black">1. 完全免费，操作简单</h3>
+        <p class="text-gray-700">整个过程在你的浏览器里完成，无需下载软件或付费。你只需要像填一个普通表格一样，输入你的信息，点击一下按钮，申请表和钥匙就自动生成了。</p>
       </div>
-      <div class="flex items-start">
-        <div class="bg-blue-100 text-blue-800 rounded-lg w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">二</div>
-        <div>
-          <p class="font-medium mb-1">粘贴并点击“验证”</p>
-          <p class="text-gray-600">把整份清单粘贴到工具的输入框里，然后点一下按钮，工具就会开始自动检查。</p>
-        </div>
+      <div class="border border-gray-200 p-6 rounded-xl hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-lg mb-2 text-black">2. 隐私安全，自己掌控</h3>
+        <p class="text-gray-700">最关键的那把“私钥”（数字钥匙）从生成到保存，全程都在你自己的电脑里，不会上传到任何服务器。这意味着你的核心安全信息，始终牢牢掌握在自己手中。</p>
       </div>
-      <div class="flex items-start">
-        <div class="bg-blue-100 text-blue-800 rounded-lg w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">三</div>
-        <div>
-          <p class="font-medium mb-1">查看并保存结果</p>
-          <p class="text-gray-600">页面上会立刻用清晰的表格展示结果，哪些有效、属于哪家银行一目了然。最后点击“导出”，就能把这份完整的报告保存到电脑里。</p>
-        </div>
+      <div class="border border-gray-200 p-6 rounded-xl hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-lg mb-2 text-black">3. 一种工具，两种用途</h3>
+        <p class="text-gray-700">它可以生成两种最常见的“申请表”：一种是给<strong>网站加HTTPS锁</strong>用的，让浏览器显示安全的小绿锁；另一种是给<strong>软件/代码签名</strong>用的，告诉用户这个程序来源可靠且未被篡改。</p>
+      </div>
+      <div class="border border-gray-200 p-6 rounded-xl hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-lg mb-2 text-black">4. 所见即所得，一键复制</h3>
+        <p class="text-gray-700">生成的申请表和钥匙内容会清晰显示在页面上。旁边就有醒目的“复制”按钮，轻轻一点，所有内容就存到了你的剪贴板，方便你下一步提交给证书机构。</p>
       </div>
     </div>
   </div>
 
-  <!-- 优势总结 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4">为什么推荐大家试试这个方法？</h2>
-    <div class="space-y-4">
-      <p><strong>省时间：</strong>以前花一两个小时手动核对的活儿，现在几分钟就能搞定，把时间留给更重要的事。</p>
-      <p><strong>更准确：</strong>工具使用的是国际通用的验证规则，比肉眼检查更可靠，大大降低转错账的风险。</p>
-      <p><strong>易存档：</strong>导出的表格文件规整清晰，方便以后查找或作为凭证，不用再在一堆手写记录里翻找。</p>
-      <p><strong>零门槛：</strong>完全在线使用，不需要下载安装任何软件，也不要求你有任何会计或计算机知识。</p>
-    </div>
-  </div>
-
-  <!-- 常见问题 -->
-  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold mb-6 text-center">你可能还会想问</h2>
-    <div class="space-y-6">
-      <div>
-        <p class="font-medium mb-2 text-lg">问：我把卡号输进去，会不会泄露我的个人信息？</p>
-        <p class="text-gray-600 pl-4">答：请放心。靠谱的这类工具都是在你的浏览器本地进行计算的，卡号数据不会上传到任何服务器，处理完页面一关，信息就没了。就像你在自己电脑的计算器里按了几个数字一样安全。</p>
+  <!-- 应用场景 -->
+  <div class="mb-12 bg-gradient-to-r from-gray-50 to-white p-8 rounded-2xl border">
+    <h2 class="text-2xl font-bold mb-6 text-center">这些场景下，你可能会用到它</h2>
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="flex-1">
+        <div class="h-12 w-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto md:mx-0">🌐</div>
+        <h3 class="font-bold text-xl mb-3 text-center md:text-left">场景一：个人博客或小站站长</h3>
+        <p class="text-gray-700">你用自己的域名搭建了一个分享技术、生活或爱好的网站。使用了这个工具，生成申请表，再去申请一张免费的SSL证书（比如Let's Encrypt）安装上。从此，你的访客再也不会看到“不安全”的恐吓提示，你和读者的交流环境变得更加可信。</p>
       </div>
-      <div>
-        <p class="font-medium mb-2 text-lg">问：我需要为此付费吗？</p>
-        <p class="text-gray-600 pl-4">答：完全不需要。这种基础的批量验证功能，网上有很多<strong>免费的在线工具</strong>可以使用，满足日常需求绰绰有余。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-2 text-lg">问：在手机上也方便操作吗？</p>
-        <p class="text-gray-600 pl-4">答：方便的。现在的网页工具都会自动适应手机屏幕，在手机上同样可以轻松地粘贴、验证和查看结果，非常适合临时有核对需求的时候用。</p>
+      <div class="flex-1">
+        <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto md:mx-0">💻</div>
+        <h3 class="font-bold text-xl mb-3 text-center md:text-left">场景二：独立开发者或小团队</h3>
+        <p class="text-gray-700">你开发了一款Windows桌面软件、一个Excel插件或是一个安装包。使用工具的“代码签名”模式生成申请表，然后购买代码签名证书。用证书签名后发布的软件，将大幅减少系统安全警告，提升用户信任度，让你的作品看起来更专业、更可靠。</p>
       </div>
     </div>
   </div>
 
-  <!-- 结尾号召 -->
-  <div class="text-center p-8 border-t">
-    <p class="text-xl mb-4">别再为核对银行卡号这种重复、枯燥又容易出错的事烦恼了。</p>
-    <p class="mb-6">无论是工作中成百上千的批量处理，还是生活中偶尔遇到的零星核对，学会利用现成的免费工具，都能让你的效率大大提升，心里也更踏实。</p>
-    <p class="text-gray-500">不妨现在就搜索一下“<strong>银行卡号批量检查工具</strong>”或“<strong>批量验证银行卡号</strong>”，体验一下一分钟搞定全部核对任务的感觉吧！</p>
+  <!-- 行动号召 -->
+  <div class="text-center border-t pt-12">
+    <h2 class="text-2xl font-bold mb-4">迈出建立信任的第一步</h2>
+    <p class="text-gray-700 mb-8 max-w-2xl mx-auto">无论是为了让自己的网站看上去更正规，还是为了让自己的软件能被更多人放心使用，一份有效的“数字证书申请表”都是关键的起点。这个过程并不神秘，也不困难。</p>
+    <p class="text-lg font-medium">如果你正在考虑为你的网站或软件添加一层可信的保护，不妨先从了解如何准备这份核心的“申请表”开始吧。</p>
   </div>
 </div>
-`;export{s as default};
+`;export{t as default};

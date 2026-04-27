@@ -1,114 +1,90 @@
-const l=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
-  <article>
-    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
-      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
-    </h1>
+const t=`
+<div class="text-slate-700 font-sans leading-relaxed">
+  <article class="max-w-4xl mx-auto p-4 md:p-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">如何清晰比较人与事的综合能力？试试这个直观的评估工具</h1>
+    <p class="text-lg text-slate-600 mb-8">
+      无论是比较两个员工的工作表现，还是评估几个不同方案的优缺点，你是不是常常觉得心里有数，但说不清楚？今天，我们来介绍一种简单的方法，帮你把复杂的综合对比，变得一目了然。
+    </p>
 
-    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
-      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
-    </div>
-
-    <div class="mb-8">
-      <p class="mb-4 leading-relaxed">
-        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
-      </p>
-      <p class="leading-relaxed">
-        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+      <p class="text-slate-700">
+        <strong>核心功能：</strong>这个工具让你可以自由设定比较的方面（比如沟通能力、专业技能），然后为每个你要比较的对象打分，最后生成一张像蜘蛛网一样的“雷达图”，让你一眼就能看出各自的优势和短板。
       </p>
     </div>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        一、认识你的生理周期：不仅仅是“那几天”
-      </h2>
-      <p class="mb-3 leading-relaxed">
-        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
-        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
-        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
-        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
-      </ul>
-      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
-        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
-      </p>
-    </section>
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">我们什么时候需要用它？</h2>
+    <p class="mb-4">
+      其实，生活和工作中有很多需要多角度对比的场景，单靠感觉或者文字描述总是不够直观。
+    </p>
+    <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-600">
+      <li><strong>面试后比较候选人：</strong>A技术很强但沟通一般，B沟通出色但经验稍浅。怎么综合权衡？</li>
+      <li><strong>个人年度复盘：</strong>今年自己在“专业技能”、“团队协作”、“创新能力”上各进步了多少？</li>
+      <li><strong>产品功能对比：</strong>几款竞品在价格、性能、易用性、服务上分别表现如何？</li>
+      <li><strong>团队人员评估：</strong>为小组成员做一个能力画像，方便后续的培训和发展规划。</li>
+    </ul>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        二、推算的核心：找到身体的“节拍器”
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
-      </p>
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">工具怎么用？三步搞定</h2>
+    <p class="mb-6">
+      操作非常简单，就像填一张灵活的表格，结果会自动用图形展示出来。
+    </p>
 
-      <div class="bg-gray-50 p-5 rounded-lg mb-4">
-        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
-        <p class="mb-3 text-gray-700 leading-relaxed">
-          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
+    <div class="space-y-8 mb-10">
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第一步：定下比较的方面</h3>
+        <p class="text-slate-600 mb-3">
+          你想从哪些维度来评价？这些方面完全由你决定。工具默认给了“专业技术”、“沟通协作”等几个常见选项，你可以直接修改它们，或者点击“添加评估维度”来增加新的方面，比如“成本控制”、“市场潜力”等等。
         </p>
-
-        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
-        <p class="text-gray-700 leading-relaxed">
-          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
+        <p class="text-slate-500 text-sm">
+          提示：建议方面不要太多，5-8个最能突出重点，也方便查看。
         </p>
-      </div>
+      </section>
 
-      <p class="leading-relaxed">
-        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        三、预测工具能帮你做什么？
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
-        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
-        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
-      </ul>
-      <p class="leading-relaxed">
-        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        四、重要提醒：推算结果是“参考”，不是“医嘱”
-      </h2>
-      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
-        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
-        <p class="text-red-700 leading-relaxed mb-2">
-          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第二步：添加要对比的对象并打分</h3>
+        <p class="text-slate-600 mb-3">
+          接下来，把你要比较的人、产品、方案添加进来。给每个对象起个名字，比如“张三”、“产品A”、“方案一”。然后，在刚才设定的每一个方面下，为这个对象打一个分数（0-100分）。
         </p>
-        <p class="text-red-700 leading-relaxed">
-          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
+        <p class="text-slate-600">
+          你可以随时增加新的对比对象，或者删除已有的对象。所有数据填写后，系统会实时处理。
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        五、从了解到掌控，开启更自在的生活
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第三步：查看雷达图，获得洞察</h3>
+        <p class="text-slate-600 mb-3">
+          右侧会自动生成一张彩色的雷达图。图中每一个“角”代表一个评估方面，而不同颜色的多边形则代表不同的对比对象。面积越大、越靠外的部分，代表在该方面的能力或分数越强。
+        </p>
+        <p class="text-slate-600 mb-3">
+          通过这张图，你可以轻松回答这些问题：
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2 text-slate-600">
+          <li>谁的能力发展最均衡？</li>
+          <li>谁在某个特定方面特别突出？</li>
+          <li>各个对象的短板分别在哪里？</li>
+        </ul>
+        <p class="text-slate-600">
+          如果结论需要分享给同事或用于报告，点击“导出结果图片”按钮，就能将这张清晰的雷达图保存到电脑里。
+        </p>
+      </section>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">为什么图形对比更有效？</h2>
+    <p class="mb-4 text-slate-600">
+      人脑处理图像信息的速度远快于处理文字和数字。面对一堆分数，我们需要反复思考和记忆才能得出结论。而一张雷达图，瞬间就能呈现出“整体轮廓”和“局部差异”。
+    </p>
+    <p class="mb-8 text-slate-600">
+      它把抽象的、多维度的比较，转化成了具体的形状和面积。在进行团队讨论、个人复盘或决策时，这种视觉化的呈现方式能让所有人快速聚焦，达成共识。
+    </p>
+
+    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mt-12">
+      <h3 class="text-xl font-medium text-slate-800 mb-3">开始你的第一次综合评估吧</h3>
+      <p class="text-slate-600 mb-4">
+        无论是为了更科学地做决策，还是为了更清晰地展示你的分析，这个免费的工具都能帮上忙。它不保存你的任何数据，所有操作都在你的浏览器中进行，简单、安全、私密。
       </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
-        <li>在经期前准备好护理用品，避免尴尬。</li>
-        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
-        <li>为备孕计划提供一个基础的参考时间框架。</li>
-      </ul>
-      <p class="leading-relaxed text-gray-900 font-medium">
-        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
+      <p class="text-slate-600">
+        下次当你面临选择困难，或者需要向别人解释一个复杂的对比结论时，不妨试着用它画一张图。你会发现，把事情“看清楚”，是解决问题最好的第一步。
       </p>
-    </section>
+    </div>
   </article>
 </div>
-`;export{l as default};
+`;export{t as default};

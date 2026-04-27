@@ -1,98 +1,88 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 md:px-8 py-8 font-sans text-gray-800">
-  <header class="mb-10">
-    <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4 text-center">
-      告别手写纸条：打造专属在线抽奖转盘，让团队活动充满期待感
-    </h1>
-    <p class="text-lg text-gray-600 text-center">
-      还在为年会、聚会如何公平抽奖发愁吗？一个完全由你定制的转盘，就能让气氛瞬间活跃。
-    </p>
-  </header>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">上网时遇到页面错乱？先别怪网速，查查它的“身份证”</h1>
+  
+  <div class="text-lg text-gray-600 mb-8 text-center">
+    <p>一个帮你快速看懂手机、电脑如何向网站“自我介绍”的小工具。</p>
+  </div>
 
-  <section class="mb-12 bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-    <h2 class="text-xl font-bold mb-3 text-blue-800">你有没有遇到过这些抽奖的尴尬？</h2>
-    <ul class="space-y-3 text-gray-700">
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>公司年会，行政同事手忙脚乱地准备抽奖箱和几百张手写纸条，耗时又费力。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>朋友聚会玩游戏，用手机App抽奖，结果广告太多，奖品还不能改成我们自己的“惩罚”项目。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>店铺做促销活动，抽奖环节总被顾客怀疑有“黑幕”，不够透明，影响活动效果。</span>
-      </li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+    <p class="font-medium">你有没有过这样的经历：</p>
+    <ul class="mt-2 space-y-1 pl-5 list-disc">
+      <li>用手机打开一个网站，排版却乱七八糟，按钮都点不到。</li>
+      <li>别人都能正常使用的功能，到了你的电脑上却怎么也打不开。</li>
+      <li>买了个新手机，总感觉有些网页用起来“不对劲”，又说不出原因。</li>
     </ul>
-  </section>
+    <p class="mt-4">这时候，你可能会怀疑是网速问题、手机坏了，甚至是网站故意针对你。其实，很多时候问题出在一个你从未留意的小细节上。</p>
+  </div>
 
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 pb-2 border-b border-gray-200">这到底是什么？一个“智能”的击鼓传花</h2>
-    <p class="mb-4 text-lg leading-relaxed">
-      你可以把它想象成一个<strong class="text-gray-900">电子版的、完全由你做主的幸运大转盘</strong>。它不像复杂的软件需要下载安装，打开网页就能用。
-    </p>
-    <p class="mb-4 leading-relaxed">
-      它的核心就是解决一个简单问题：<strong class="text-gray-900">如何用一种公平、有趣且一目了然的方式，从一堆选项里随机选出幸运儿。</strong> 它取代了传统的抓阄、抽签，把所有可能的结果像切蛋糕一样平铺在你眼前，转动指针，命运即刻揭晓。
-    </p>
-    <div class="bg-gray-100 p-5 rounded-lg my-6 italic">
-      <p class="text-gray-700">简单来说：<strong>你设定好奖品，它来负责公平地“喊停”</strong>。过程刺激，结果透明，每个人都能亲眼见证。</p>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">网站眼中的你：一份特殊的“自我介绍信”</h2>
+  <p class="mb-4">每当你用浏览器访问一个网站时，你的手机或电脑都会自动向网站发送一封简短的“自我介绍信”。这封信里写着：“你好，我是来自XX品牌的XX型号手机，用的是XX系统，通过XX浏览器来看你。”</p>
+  <p class="mb-6">这封“信”的专业名字叫 <strong>User-Agent</strong>。网站收到这封信后，会根据里面的信息，决定给你展示最适合你设备的网页样子。如果这封信里的信息有点混乱，或者网站没认出来，你看到的页面就可能出问题。</p>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">我们的工具能为你做什么？</h2>
+  <p class="mb-6">这个工具就像一个“翻译官”，能立刻帮你解读那封“自我介绍信”。你不需要懂任何技术，只需要把信的内容（或者直接用我们自动获取的）放进去，它就能告诉你：</p>
+  
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold mb-2 text-blue-600">1. 看清你的“窗口”</h3>
+      <p>你正在使用什么浏览器（比如 Chrome、Safari）以及具体的版本号。有时候问题就出在浏览器版本太旧上。</p>
     </div>
-  </section>
-
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 pb-2 border-b border-gray-200">为什么说它能让你的活动省心又出彩？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 border border-gray-200 shadow-sm rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">一、彻底告别手工准备，省时省力</h3>
-        <p class="text-gray-700">再也不用提前几个小时写纸条、叠纸条、找抽奖箱了。所有奖品名称直接在网页上输入、修改，颜色也能随心搭配。添加或删除一个奖项，只需点一下按钮。</p>
-      </div>
-      <div class="bg-white p-6 border border-gray-200 shadow-sm rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">二、过程公平有趣，提升参与感</h3>
-        <p class="text-gray-700">大转盘旋转的视觉冲击力，比从箱子里摸张纸片要强烈得多。你可以控制转盘旋转的圈数和时间，让悬念慢慢拉满。所有人都盯着同一个屏幕，结果诞生瞬间，欢呼声也达到顶点。</p>
-      </div>
-      <div class="bg-white p-6 border border-gray-200 shadow-sm rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">三、灵活掌控，满足各种小心思</h3>
-        <p class="text-gray-700">如果希望某个特定奖项被抽中（比如内定的“特别贡献奖”），你可以悄悄指定指针停在那个区域。如果追求完全随机，就交给系统决定。这种可控性，让你轻松应对各种活动策划需求。</p>
-      </div>
-      <div class="bg-white p-6 border border-gray-200 shadow-sm rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">四、随时随地，多设备通用</h3>
-        <p class="text-gray-700">无论是在办公室的投影仪上，还是在家里用平板或手机，都能完美显示和使用。聚会开到一半想加个抽奖环节？立刻打开就能用，没有任何限制。</p>
-      </div>
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold mb-2 text-blue-600">2. 识别你的“底座”</h3>
+      <p>你的设备是什么操作系统（比如 Windows 11、iOS 16、安卓 13）。不同系统对网页的支持略有差异。</p>
     </div>
-  </section>
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold mb-2 text-blue-600">3. 了解你的“设备”</h3>
+      <p>你用的是电脑、平板还是手机？是什么品牌和型号？这能帮你判断是不是特定设备才有的问题。</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold mb-2 text-blue-600">4. 找到核心“引擎”</h3>
+      <p>浏览器背后负责解析网页的核心技术是什么。这有助于深入理解兼容性问题的根源。</p>
+    </div>
+  </div>
 
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 pb-2 border-b border-gray-200">它能在哪些场合派上用场？</h2>
-    <div class="flex flex-col md:flex-row gap-6">
-      <div class="flex-1 bg-gradient-to-br from-amber-50 to-white p-6 border border-amber-100 rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-amber-800">场景一：团队团建与公司年会</h3>
-        <p class="text-gray-700 mb-3">将奖品设置为最新款手机、带薪假期、零食大礼包等。通过大屏幕投影，让全体员工共同见证幸运儿的诞生，极大活跃现场气氛，增强员工归属感。</p>
-        <p class="text-sm text-amber-700"><strong>小提示：</strong>可以设置一个“阳光普照奖”区域，确保人人有奖，皆大欢喜。</p>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">在哪些时候特别有用？</h2>
+  
+  <div class="space-y-6 mb-10">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-50 p-5 rounded-lg">
+      <div class="sm:w-1/4 mb-4 sm:mb-0">
+        <div class="inline-block bg-green-100 text-green-800 font-medium px-4 py-2 rounded">场景一</div>
       </div>
-      <div class="flex-1 bg-gradient-to-br from-green-50 to-white p-6 border border-green-100 rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-green-800">场景二：线下店铺促销</h3>
-        <p class="text-gray-700 mb-3">顾客消费满额即可参与转盘抽奖。奖品设为折扣券、小礼品、免单等。公开旋转的过程能有效打消顾客对抽奖公平性的疑虑，提升促销活动的可信度和吸引力。</p>
-        <p class="text-sm text-green-700"><strong>小提示：</strong>用鲜明的颜色区分不同价值的奖品，视觉上更吸引人。</p>
+      <div class="sm:w-3/4">
+        <p><strong>当你向客服或朋友求助时：</strong>与其费力地说“我用苹果手机自带的浏览器打开那个网站不行”，不如直接使用工具，把读出的信息完整准确地告诉对方。信息精准，解决问题的效率会高很多。</p>
       </div>
     </div>
-  </section>
-
-  <section class="text-center py-8 border-t border-b border-gray-200 my-12">
-    <p class="text-2xl font-bold text-gray-900 mb-4">
-      一个好的工具，应该让复杂的事情变简单，让普通的活动变特别。
-    </p>
-    <p class="text-gray-700 text-lg mb-6">
-      在线抽奖转盘就是这样一个小而美的存在。它不改变活动的本质，却用更直观、更互动的方式，放大了其中的快乐与公平。
-    </p>
-    <div class="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">
-      <a href="#" class="inline-block">去尝试创建你的第一个幸运转盘</a>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-50 p-5 rounded-lg">
+      <div class="sm:w-1/4 mb-4 sm:mb-0">
+        <div class="inline-block bg-yellow-100 text-yellow-800 font-medium px-4 py-2 rounded">场景二</div>
+      </div>
+      <div class="sm:w-3/4">
+        <p><strong>当你自己维护一个小店或博客网站时：</strong>你可以把访客的“自我介绍信”拿来看看，了解一下你的读者们大多是用什么设备访问的。这能帮你更有针对性地调整网站，让大家浏览得更舒服。</p>
+      </div>
     </div>
-    <p class="text-gray-500 text-sm mt-4">无需注册，打开即用，完全免费。</p>
-  </section>
+  </div>
 
-  <footer class="pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-    <p>希望这篇文章能帮助你找到提升活动趣味性的好方法。一个简单的转盘，或许就是你下次聚会成功的秘密武器。</p>
-  </footer>
-</article>
-`;export{t as default};
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">常见问题解答</h2>
+  <div class="space-y-4 mb-10">
+    <div>
+      <h3 class="text-xl font-semibold mb-2">问：这个工具会泄露我的隐私吗？</h3>
+      <p class="text-gray-700">答：完全不会。这个工具只在你当前页面上运行，我们不会收集或上传你解析的任何信息。它就像一个在你本地运行的“计算器”，只负责解读你给它的那段文字。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2">问：为什么我需要知道这些信息？</h3>
+      <p class="text-gray-700">答：它帮你把模糊的“不好用”变成具体的问题描述。知道是浏览器版本、系统还是设备类型的问题，是你解决问题的第一步，也能让你在和他人沟通时更有效率。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 sm:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 text-center">
+    <h2 class="text-2xl font-bold mb-4">好奇你的设备是怎么“自我介绍”的吗？</h2>
+    <p class="mb-6">我们已经在上方的工具框中，自动填好了你当前设备发送的“自我介绍信”。不用你做任何操作，信息已经解析出来并展示在下面了。快看看你的浏览器、系统和设备信息是否准确吧！</p>
+    <p class="text-sm text-gray-600">（你也可以试试将家人或朋友设备的UA字符串粘贴进来，看看它们和你的有什么不同。）</p>
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-gray-300 text-center text-gray-500 text-sm">
+    <p>了解一点设备上网的小知识，下次再遇到网页显示问题，你就能更从容地找到方向了。</p>
+  </div>
+</div>
+`;export{s as default};

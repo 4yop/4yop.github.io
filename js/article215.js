@@ -1,97 +1,95 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h1>
+const a=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <!-- 主标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+    秒表：不只是计时，更是你效率与专注的搭档
+  </h1>
 
-  <div class="mb-8 text-lg text-gray-600 leading-relaxed">
-    <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>
-    <p>这种“选择困难”的小烦恼，几乎每个人都遇到过。它浪费我们的时间，消耗我们的精力。今天，我们就来认识一个简单又好玩的小工具——<strong class="text-gray-900">随机决定器</strong>，它能像抛硬币一样，帮你快速做出决定，让生活更轻松。</p>
-  </div>
+  <!-- 引言段 -->
+  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="what-is">随机决定器是什么？</h2>
-  <div class="bg-blue-50 p-5 rounded-lg mb-8">
-    <p class="mb-3">简单来说，<strong>随机决定器就是一个帮你从多个选项中，公平地随机挑选一个的智能小助手</strong>。</p>
-    <p>想象一下，你把“吃面条”“吃米饭”“吃饺子”三个选项交给它，它就像一个公正的裁判，快速地在它们中间“抓阄”，然后告诉你结果。你不用再纠结，也不用担心选择不公平，因为它完全随机，纯粹看“运气”。</p>
-  </div>
+  <!-- 第一小节 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    一个秒表，为什么需要更“聪明”？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
+  </p>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="how-to-use">它是怎么工作的？简单三步，一看就会</h2>
-  <div class="space-y-6 mb-10">
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">1</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">写下你的“待办清单”</h3>
-        <p class="text-gray-700">把你所有纠结的选项，一条一条地写下来。比如今天要完成哪项工作、晚上看哪部电影、周末去哪里玩。每个选项占一行，写得越清楚越好。</p>
-      </div>
+  <!-- 第二小节 - 功能介绍 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    这个“时间伙伴”能为你做什么？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
+  </p>
+  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
+    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
+    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
+    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
+  </ul>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
+  </p>
+
+  <!-- 第三小节 - 问答形式 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    你可能想知道的问题
+  </h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
+      </p>
     </div>
-
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">2</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">让机器“帮你思考”</h3>
-        <p class="text-gray-700">设定好你想让它随机选择的次数（比如10次），然后点击“开始决定”。你会看到选项在屏幕上快速滚动变化，就像一个转盘在转动，充满了小小的期待感。</p>
-      </div>
-    </div>
-
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">3</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">接受惊喜的结果</h3>
-        <p class="text-gray-700">转动停止，最终结果会醒目地显示出来。这就是“命运”为你做出的选择！更棒的是，它还会把所有选择的历史记录下来，并用图表告诉你每个选项被选中的比例，一目了然。</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="when-to-use">哪些时候，你需要一个随机决定器？</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">🏠 生活日常</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>今天午餐/晚餐吃什么？</li>
-        <li>周末是宅家还是出门？</li>
-        <li>下一本该读什么书？</li>
-        <li>家里大扫除先从哪个房间开始？</li>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        它的用途超乎你的想象：
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
+        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
+        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
+        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
+        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
       </ul>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">👫 朋友聚会</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>聚会玩什么游戏？</li>
-        <li>团队活动去哪里？</li>
-        <li>看电影还是唱KTV？</li>
-        <li>谁去买饮料？（是的，它也能选人）</li>
-      </ul>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        当然可以。假设你正在准备一顿周末大餐。
+      </p>
+      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
+        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
+        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
+        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
+      </ol>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">💼 工作学习</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>优先处理哪项任务？</li>
-        <li>学习哪个新技能？</li>
-        <li>报告用什么主题颜色？</li>
-        <li>头脑风暴时，从哪个创意点开始深挖？</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">🎮 休闲娱乐</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>旅行目的地选择</li>
-        <li>今晚追哪部剧？</li>
-        <li>游戏里选择哪条路线？</li>
-        <li>给宠物取什么名字？</li>
-      </ul>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
+      </p>
     </div>
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="benefits">为什么用随机决定器？</h2>
-  <div class="space-y-5 mb-10">
-    <p><strong class="text-gray-900">节省时间，停止内耗：</strong>把宝贵的精力从无休止的纠结中解放出来。决定过程可能只需要几秒钟，省下的时间可以做更多有意义的事。</p>
-    <p><strong class="text-gray-900">增加乐趣与期待感：</strong>看着选项滚动，等待未知的结果，本身就像一个小游戏，能为平淡的决定过程增添一抹趣味和仪式感。</p>
-    <p><strong class="text-gray-900">公平公正，避免争执：</strong>朋友间意见不合时，让“随机”来做裁判，大家都会心服口服，瞬间化解僵局。</p>
-    <p><strong class="text-gray-900">帮你突破思维定式：</strong>有时候，我们心里可能已经有了偏向，但随机结果可能会带你尝试一个被你忽略的选项，发现新的可能。</p>
-  </div>
-
-  <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-12 text-center">
-    <h3 class="text-2xl font-bold text-gray-900 mb-3">告别选择困难，从今天开始</h3>
-    <p class="text-gray-700 mb-4">生活中已经有很多事需要我们仔细权衡，就把那些无伤大雅的小决定，交给“随机”的乐趣吧。无论是用手机还是电脑，都能随时打开这个<span class="font-semibold text-gray-900">随机决定器</span>。</p>
-    <p class="text-gray-700">下次再为“吃什么”、“去哪玩”、“做什么”而纠结时，不妨试一试。也许，让随机帮你做的那个决定，会带来意想不到的惊喜和轻松好心情。</p>
-  </div>
+  <!-- 结尾引导 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
+    让时间变得清晰可见
+  </h2>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
+  </p>
+  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
+    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
+  </p>
 </div>
-`;export{t as default};
+`;export{a as default};

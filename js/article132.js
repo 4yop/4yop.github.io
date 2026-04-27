@@ -1,79 +1,64 @@
-const t=`
-<div class="text-gray-700 max-w-4xl mx-auto px-4 sm:px-6">
-  <article class="space-y-8">
-    <header class="pt-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 leading-tight">父母血型能决定孩子的血型吗？一篇带你读懂血型遗传的奥秘</h1>
-      <p class="mt-4 text-gray-600">你可能在家庭聚会或朋友聊天时听过这样的讨论：“我俩都是A型，孩子肯定是A型吧？”“我是O型，我老公是AB型，那孩子会是什么血型呢？”今天，我们就来聊聊血型遗传那些事儿。</p>
-    </header>
+const s=`
+<div class="text-gray-800 font-sans leading-relaxed">
+  <h1 class="text-3xl font-bold mb-6 text-center md:text-left">还在手动打编号？这个序号生成器，让你三秒搞定批量编号</h1>
 
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型是什么？为什么我们的血型不一样？</h2>
-      <p>简单来说，血型是血液表面的“小标识”。就像人的长相有高矮胖瘦，血液也有不同的“型号”。我们常说的ABO血型，主要有四种：A型、B型、O型和AB型。</p>
-      <p>你的血型，是从你父母那里继承来的。每个人会从爸爸那里获得一个“血型信息”，从妈妈那里获得另一个“血型信息”，这两个信息组合在一起，就决定了你最终是什么血型。</p>
-    </section>
+  <p class="mb-4">无论你是整理资料、制作名单，还是给物品贴标签，是不是常常遇到需要输入一大串序号的情况？从1写到100，不仅枯燥，还特别容易出错。</p>
 
-    <section class="space-y-6 bg-blue-50 p-6 rounded-lg my-8">
-      <h2 class="text-2xl font-bold text-gray-800">一个简单的孩子血型预测方法</h2>
-      <p>想知道你和另一半未来的宝宝可能是什么血型吗？其实这有一套很明确的遗传规则。</p>
-      <p>为了方便大家理解，网上有一些基于这些遗传规则设计的查询方法。你只需要选择父亲和母亲的血型，它就能帮你计算出宝宝可能出现的血型以及对应的概率。</p>
-      <p class="text-sm text-gray-500">（请注意，这只是一个基于经典遗传学的概率预测，主要用于科普和了解，不能替代医学诊断。）</p>
-    </section>
+  <p class="mb-6">今天，就给大家介绍一个简单又聪明的小工具——<strong class="text-blue-600">序号生成器</strong>。它能帮你瞬间生成任意你需要的数字序列，彻底告别手动输入的麻烦。</p>
 
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型遗传的基本规律，一看就懂</h2>
-      <p>我们把复杂的科学原理，用大白话翻译一下：</p>
-      <ul class="list-disc pl-5 space-y-2">
-        <li><strong>A型或B型血的人</strong>，他们传递给孩子的“信息”可能是A（或B），也可能是O。</li>
-        <li><strong>O型血的人</strong>，他们传递给孩子的“信息”一定是O。</li>
-        <li><strong>AB型血的人</strong>，他们传递给孩子的“信息”要么是A，要么是B。</li>
-      </ul>
-      <p>孩子的血型，就是看TA从父母那里得到的两个“信息”是什么。</p>
-      <div class="overflow-x-auto my-4">
-        <table class="min-w-full bg-white border border-gray-300">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="py-3 px-4 border-b text-left font-medium">父母血型组合</th>
-              <th class="py-3 px-4 border-b text-left font-medium">孩子可能有的血型</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td class="py-3 px-4 border-b">父亲O型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子只能是 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲B型</td><td class="py-3 px-4 border-b">孩子可能是 A、B、AB 或 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲AB型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 B 型</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">它到底能做什么？</h2>
+  <p class="mb-4">简单来说，它就是帮你“自动写数字”。你只需要告诉它几个简单的规则，它就能给你一整列整齐的序号。</p>
 
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">关于血型遗传的几个常见疑问</h2>
-      <div class="space-y-4">
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">1. 为什么父母都是A型，孩子却是O型？</h3>
-          <p>这完全有可能。如果父母双方都携带了O“信息”（但他们自己表现为A型），那么他们各自都有50%的概率把O“信息”传给孩子。当孩子恰好同时收到这两个O“信息”时，就会是O型血。</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">2. A型和B型父母能生出O型孩子吗？</h3>
-          <p>可以，但需要满足一个条件：父母双方都必须携带O“信息”（即他们的基因型是AO和BO）。这样组合起来，就有一定的概率生出OO（即O型）的孩子。</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">3. 父母有一方是AB型，孩子可能是O型吗？</h3>
-          <p>不可能。AB型血的人只会传递A或B“信息”，不会传递O“信息”。所以，只要父母一方是AB型，孩子就不可能得到两个O“信息”，也就不可能是O型血。</p>
-        </div>
-      </div>
-    </section>
+  <div class="bg-gray-50 p-5 rounded-lg mb-6">
+    <h3 class="text-xl font-medium mb-3">1. 想从几开始，到几结束？你说了算</h3>
+    <p class="mb-3">比如你需要一份从“15号”到“30号”的名单。你只需要输入起始值15，结束值30。工具就会自动生成中间的每一个数字。</p>
 
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">了解血型遗传有什么用？</h2>
-      <p>首先，它能满足我们的好奇心，解开“我为什么是这个血型”的疑问。在家庭聊天中，这也是一个很有趣的话题。</p>
-      <p>其次，了解基本的血型知识，能在一些情况下帮助我们建立初步的判断。比如在紧急情况下需要输血时，知道家人的血型或许能提供一些线索，但<b>所有医疗行为都必须以正规医院的检验为准</b>。</p>
-      <p>最重要的是，这让我们对生命的传承多了一份了解。我们身上的许多特征，都携带着来自父母双方的、独一无二的“密码”。</p>
-    </section>
+    <h3 class="text-xl font-medium mb-3">2. 数字可以“跳着走”</h3>
+    <p class="mb-3">你需要隔一个数取一个吗？比如只要1、3、5、7……？这个“步长”功能就能实现。设置步长为2，它就会自动帮你跳过数字。</p>
 
-    <footer class="pt-8 mt-8 border-t border-gray-200">
-      <p class="text-gray-600">希望这篇文章能帮你轻松理解血型遗传的规律。下次再和朋友聊起这个话题时，你也可以分享这些有趣的知识了。</p>
-    </footer>
-  </article>
+    <h3 class="text-xl font-medium mb-3">3. 可以从小到大，也能从大到小</h3>
+    <p class="mb-3">大多数时候我们需要数字递增。但有些场景，比如倒计时列表，就需要数字递减。这个工具可以自由切换“自增”或“自减”模式。</p>
+
+    <h3 class="text-xl font-medium mb-3">4. 给编号加上“前后缀”，更规范</h3>
+    <p class="mb-3">生成“1,2,3”太普通了？你可以轻松为它们加上文字。比如加上前缀“第”和后缀“名”，生成的序列就会变成“第1名”、“第2名”……立刻显得专业又清晰。</p>
+
+    <h3 class="text-xl font-medium mb-3">5. 一键复制，直接使用</h3>
+    <p>生成好的序号列表，可以直接一键复制到剪贴板，然后粘贴到你的Word、Excel、记事本或者任何你需要的地方，效率翻倍。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">谁可能会需要它？</h2>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>办公族：</strong>制作员工工号、会议座位号、档案编号、项目任务清单。</li>
+    <li><strong>老师/学生：</strong>给试卷编号、生成学号列表、制作活动签到表。</li>
+    <li><strong>活动组织者：</strong>为参赛者、门票、抽奖券生成连续的号码。</li>
+    <li><strong>个人整理：</strong>给家里的书籍、收藏品、文件贴上整齐的标签序号。</li>
+    <li><strong>任何需要处理列表的人：</strong>只要你觉得手动输入数字太慢、太累、容易错，这个工具就是为你准备的。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">总结一下：它的核心好处</h2>
+  <div class="grid md:grid-cols-2 gap-4 mb-8">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">📈 效率超高</h4>
+      <p class="text-sm">原来需要几分钟甚至更久的手工输入，现在几秒钟就能完成。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">✅ 准确无误</h4>
+      <p class="text-sm">完全避免手动输入时可能发生的漏写、重复或写错数字的问题。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">🛠️ 灵活定制</h4>
+      <p class="text-sm">不是死板地只能从1开始，各种规则都可以按你的想法来设置。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">📋 即用即走</h4>
+      <p class="text-sm">生成结果一键复制，无缝对接到你正在进行的任何工作里。</p>
+    </div>
+  </div>
+
+  <p class="mb-6">希望这个介绍能帮你了解到，处理序号、编号这类重复工作，其实有一个非常简单高效的解决方法。下次再遇到需要批量生成数字的情况，不妨试试这个思路。</p>
+
+  <div class="text-sm text-gray-500 border-t pt-4 mt-8">
+    <p>本文介绍了序号生成器（批量编号工具）的功能和使用场景，帮助普通用户快速完成列表编号、文件排序等工作，提升效率与准确性。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{s as default};

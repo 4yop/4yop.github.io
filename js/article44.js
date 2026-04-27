@@ -1,101 +1,103 @@
-const t=`
-<div class="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-lg shadow-sm text-gray-700">
+const l=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
   <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">在浏览器里装了个“私人AI助手”，数据不出门，安全又神奇</h1>
+  <h1 class="text-3xl font-bold mb-4 text-gray-900">网站被攻击怎么办？IP黑名单帮你拦住捣乱者</h1>
+  <p class="text-gray-600 mb-6 text-sm">发表于 2025-03-12 · 阅读约 8 分钟</p>
 
-  <!-- 引言/痛点 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 mb-8 rounded-r">
-    <p class="font-medium text-gray-800 mb-2">你是不是也遇到过这些情况？</p>
-    <p>想给家里的老照片修复一下，又担心上传到网上会泄露隐私；看到一段外文资料，懒得复制到翻译软件里折腾；或者只是想快速给一段语音加上字幕……为了这点小事，却要面对复杂的软件、注册账号，甚至担心自己的数据去了哪里。</p>
+  <!-- 引言 -->
+  <p class="mb-4 leading-relaxed">
+    你有没有想过，每天有多少人悄悄访问你的网站？大部分是正常访客，但也混着一些“坏人”——他们可能是来抓数据的爬虫、刷流量的脚本，甚至是专门搞破坏的黑客。如果你的网站突然变慢、CPU飙升，很可能就是这些恶意IP在捣乱。今天我们就聊聊一个简单又实用的工具：<strong class="font-semibold">IP黑名单</strong>。它就像店铺门口的黑名单，能直接把捣乱者挡在门外。
+  </p>
+
+  <!-- 小标题1：什么是IP黑名单？ -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">1. 什么是IP黑名单？</h2>
+  <p class="mb-3 leading-relaxed">
+    每个联网的设备都有一个唯一的IP地址，就像你家的门牌号。当你访问网站时，网站能看到你的IP。如果某个IP反复搞事（比如一天内尝试登录几百次），网站管理员就可以把它拉黑，禁止它再次访问。被拉黑的IP列表，就是“IP黑名单”。
+  </p>
+  <p class="mb-3 leading-relaxed">
+    举个例子：你开了一家小商店，总有几个人进来偷东西、闹事。你记住了他们的脸，下次他们一来就直接请出去——这就是黑名单的作用。网站也一样，把恶意IP记下来，以后他们再来就直接拒绝服务。
+  </p>
+
+  <!-- 小标题2：恶意IP从哪里来？ -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">2. 这些恶意IP从哪里来？</h2>
+  <p class="mb-3 leading-relaxed">
+    攻击者的IP来源五花八门。有的是通过扫描工具随机找到你网站，有的是竞争对手雇人刷流量，还有的是被病毒控制的“肉鸡”（别人的电脑被黑客远程控制）。无论哪种，他们都会在你的服务器上留下痕迹——比如访问日志、错误记录。
+  </p>
+  <p class="mb-3 leading-relaxed">
+    有些热心的站长会把自己服务器上收集到的攻击IP公开出来，供其他人参考。这样一来，大家就不用从头开始收集，直接拿来用，省时省力。今天要介绍的这个工具，就是一位站长公开的IP黑名单列表。
+  </p>
+
+  <!-- 小标题3：一个现成的IP黑名单列表 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">3. 一个现成的IP黑名单列表</h2>
+  <p class="mb-3 leading-relaxed">
+    这个工具是一个简单的网页，上面列出了作者在自己的服务器上抓到的恶意IP。你可以看到两种防火墙的数据：
+  </p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>宝塔Nginx免费防火墙</strong>：很多网站用的Nginx软件自带的防火墙，收集到的攻击IP。</li>
+    <li><strong>宝塔系统防火墙</strong>：服务器系统层面的防火墙，记录的攻击IP。</li>
+  </ul>
+  <p class="mb-3 leading-relaxed">
+    页面很简洁，你可以随时切换查看这两种来源的IP。每个IP旁边还标注了归属地（比如哪个国家或地区），帮助你判断来源。一共有多少条记录也清清楚楚，还可以分页浏览，不用一次性看几百条。
+  </p>
+
+  <!-- 插入图片占位（说明界面） -->
+  <div class="bg-gray-100 p-4 rounded-lg text-center text-gray-500 mb-6">
+    [这里放一张网页截图，展示IP列表、切换按钮和分页]
   </div>
 
-  <!-- 简单解释 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">它是什么？一个放在你浏览器里的“智能工具箱”</h2>
-    <p class="mb-4">想象一下，你把一个功能强大的<strong>智能工具箱</strong>直接下载并安装在了你自己的电脑或手机的浏览器里。这个工具箱里有好几种得力的“小工具”。</p>
-    <p class="mb-4">最棒的是，<strong>你所有需要处理的照片、文字、语音，都只在你的设备内部流转</strong>，就像在自家厨房做饭，食材从未拿出过家门。处理完之后，也不会在别处留下任何副本。</p>
-    <p class="text-lg italic bg-gray-50 p-4 rounded border">简单说，它是一个<span class="font-semibold text-blue-700">完全在你本地设备上运行</span>的AI小工具集合，不联网、不上传、不费账号，打开网页就能用。</p>
-  </div>
+  <!-- 小标题4：怎么把这些IP用起来？ -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">4. 怎么把这些IP用起来？</h2>
+  <p class="mb-3 leading-relaxed">
+    光看列表还不够，关键是要把这些IP拉黑到自己的服务器里。这个工具提供了一个非常方便的“导出数据”按钮。你只需点击一下，就能把当前显示的IP列表导出成一个文本文件，每行一个IP。然后你可以把这个文件上传到你的服务器防火墙（比如宝塔面板），一键导入。整个过程不需要写代码，几分钟就能完成。
+  </p>
+  <p class="mb-3 leading-relaxed">
+    如果你的网站用的是宝塔面板，操作路径大概是：进入宝塔后台 → 找到Nginx防火墙或系统防火墙 → 选择“导入黑名单” → 上传刚才下载的txt文件。其他服务器软件也类似，通常都有导入IP列表的功能。
+  </p>
 
-  <!-- 好处列举 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-6 pb-2 border-b">为什么你会喜欢用它？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow transition-shadow duration-300">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-8 h-8 bg-green-100 text-green-800 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-          真正的隐私守护者
-        </h3>
-        <p>你上传的家庭合照、记录的语音备忘录、编辑的私人文档，<strong>全程都只在你的电脑或手机里处理</strong>。就像把门反锁了再做事，没有任何数据会跑到别人的服务器上去，给你满满的安全感。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow transition-shadow duration-300">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-8 h-8 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-          即开即用，快如闪电
-        </h3>
-        <p>不需要安装好几个G的软件，不用等待漫长的更新。只要浏览器能打开这个网页，工具箱就准备好了。处理任务时，它还会聪明地调用你设备的图形处理器来加速，<strong>感觉就像给计算过程装上了涡轮引擎</strong>。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow transition-shadow duration-300">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-8 h-8 bg-purple-100 text-purple-800 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-          离线也能派上用场
-        </h3>
-        <p>一旦页面加载完成，核心的“智能工具”就已经在你的设备里了。这意味着在飞机上、火车上，或者网络信号不好的地方，<strong>你依然可以使用它的大部分功能</strong>，不会因为断网而罢工。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow transition-shadow duration-300">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-8 h-8 bg-yellow-100 text-yellow-800 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-          一个盒子，多种工具
-        </h3>
-        <p>它不是一个单一功能的应用。它把<span class="font-medium">看图识物、文字翻译总结、语音转文字</span>等多种能力，集成在了一个简洁的界面里。你不用在多个网站或应用间来回切换，<strong>在这里就能一站式解决好几类问题</strong>。</p>
-      </div>
+  <!-- 小标题5：需要注意什么？（免责声明解读） -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">5. 用之前，先看看这几个提醒</h2>
+  <p class="mb-3 leading-relaxed">
+    页面上方有一个黄色背景的“免责声明”，作者特意提醒大家：这些IP是他个人收集的，可能包含一些云服务商的IP（比如阿里云、腾讯云的公网出口）。如果你把云服务商的IP也拉黑了，那么使用该云服务的正常用户可能也无法访问你的网站了。所以导入前最好先筛选一下，或者先小范围测试。
+  </p>
+  <p class="mb-3 leading-relaxed">
+    另外，IP黑名单不是一劳永逸的。攻击者会不断换IP，所以你需要定期更新黑名单。可以每隔几天去这个工具下载最新的列表，重新导入防火墙。也可以结合其他安全策略，比如限制访问频率、使用验证码等。
+  </p>
+
+  <!-- 小标题6：自己也能收集恶意IP -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">6. 如果你也想自己收集恶意IP</h2>
+  <p class="mb-3 leading-relaxed">
+    很多服务器软件都会记录访问日志，里面就有每个访客的IP。你可以定期查看日志，找出那些异常频繁的IP（比如一分钟请求上百次），手动加入黑名单。一些防火墙插件也会自动拦截恶意行为，并生成报告。如果你愿意分享，也可以像这位站长一样，把收集到的IP公开，帮助更多人。
+  </p>
+
+  <!-- 总结 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">7. 结语：安全无小事</h2>
+  <p class="mb-3 leading-relaxed">
+    网站就像一间24小时营业的店铺，随时可能遇到不速之客。IP黑名单是最基础、最有效的防护手段之一。利用别人分享的现成黑名单，能让你快速补上安全短板，把大部分低级攻击挡在门外。当然，如果网站很重要，还需要更专业的安全服务。但至少，从今天起，你可以试试这个小工具，看看有哪些IP在骚扰你的网站，然后一键拉黑。
+  </p>
+  <p class="mb-3 leading-relaxed">
+    如果你手头有服务器，不妨收藏这个页面，定期来更新你的黑名单。安全防护，从阻止一个恶意IP开始。
+  </p>
+
+  <!-- 常见问题（SEO问答形式） -->
+  <div class="bg-gray-50 p-5 rounded-lg mt-8 border border-gray-200">
+    <h3 class="text-xl font-semibold mb-4">你可能还想问</h3>
+    <div class="mb-3">
+      <p class="font-medium">Q：我完全不懂技术，能用这个工具吗？</p>
+      <p class="text-gray-700">A：可以。你只需要打开网页，点击“导出数据”，然后把下载的文件交给懂技术的朋友，或者按照宝塔面板的教程导入。操作很简单，不需要懂代码。</p>
+    </div>
+    <div class="mb-3">
+      <p class="font-medium">Q：导入黑名单后会影响我的网站速度吗？</p>
+      <p class="text-gray-700">A：不会。防火墙在检查每个请求时，会快速对比黑名单，这个过程几乎不消耗资源。反而因为挡住了恶意请求，服务器负担减轻，速度可能变快。</p>
+    </div>
+    <div>
+      <p class="font-medium">Q：如果误拦了正常用户怎么办？</p>
+      <p class="text-gray-700">A：这就是为什么需要谨慎导入。可以先从数量少的列表开始，观察几天。一旦发现正常IP被拦，可以在防火墙中将其移出黑名单。作者标注了归属地，你也可以根据国家大致判断，比如只拉黑那些频繁攻击的国家IP。</p>
     </div>
   </div>
 
-  <!-- 应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-6 pb-2 border-b">它能在哪些地方帮到你？</h2>
-    <div class="space-y-8">
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">场景一：处理家庭照片和视频，毫无隐私顾虑</h3>
-        <p class="mb-3">周末整理手机相册，发现一堆拍糊了的照片、横屏拍的竖版视频。你想把它们修复得更清晰、调整一下方向。</p>
-        <p>用这个“工具箱”，你可以直接上传照片，让它帮忙增强画质。因为处理过程完全在本地，<strong>你再也不用担心宝宝的照片、家人的合影被传到你不了解的云端</strong>。处理完的视频，也可以直接生成字幕，方便分享给长辈看。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">场景二：高效阅读与处理文档</h3>
-        <p class="mb-3">工作中收到一份冗长的英文报告，或者学习时遇到一篇复杂的专业文章。</p>
-        <p>你可以将文字内容放进去，让它帮你快速<strong>提炼出核心要点、翻译关键段落</strong>。由于所有内容不离开你的电脑，即使是处理敏感的合同草案或未公开的研究资料，也完全可以放心。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 问答形式 (SEO优化) -->
-  <div class="bg-gray-50 rounded-xl p-6 md:p-8 mb-8">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">几个你可能关心的问题</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">问：需要下载或安装什么吗？</h3>
-        <p>答：<strong>完全不需要</strong>。它本质上是一个高度智能化的网页。你只需要一个现代浏览器（比如Chrome、Edge、Safari的最新版本）并打开对应的链接即可。首次加载可能需要一点时间下载“工具包”，之后使用就非常快了。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">问：我的旧电脑或手机能用吗？</h3>
-        <p>答：大多数近几年生产的设备都可以。页面会<strong>自动检测</strong>你的设备是否支持最强的“图形加速”模式。如果不支持，它会平稳地切换到通用模式来运行，依然可以使用所有功能，只是速度可能稍慢一点。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">问：这和手机上的AI功能有什么区别？</h3>
-        <p>答：手机自带AI往往功能固定且有限。而这个“工具箱”<strong>将多种专业领域的能力（视觉、语言、语音）集合在了一起</strong>，并且更侧重于保护你的数据隐私。你对自己的数据有完全的控制权。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 行动号召 -->
-  <div class="text-center border-t pt-8 mt-8">
-    <p class="text-xl font-semibold text-gray-800 mb-4">技术本该如此简单而令人安心</p>
-    <p class="mb-6 max-w-2xl mx-auto">这个在浏览器里运行的智能工具集合，向我们展示了另一种可能：强大的AI能力不一定伴随着复杂的操作和数据隐私的妥协。它就像一个安静、高效且忠诚的<strong>数字瑞士军刀</strong>，随时准备在你的设备上，安全地帮你处理那些日常的小麻烦。</p>
-    <div class="inline-flex items-center justify-center px-5 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-md">
-      探索本地AI的便捷与安全
-    </div>
-    <p class="text-sm text-gray-500 mt-4">（注：本文介绍一种前沿的Web应用形态，旨在让普通用户理解其价值和原理。）</p>
-  </div>
+  <!-- 结尾小提示 -->
+  <p class="text-sm text-gray-500 mt-6 border-t pt-4">
+    本文介绍的IP黑名单列表由热心站长维护，数据仅供参考。使用时请遵守当地法律法规，不要用于非法用途。
+  </p>
 </div>
-`;export{t as default};
+`;export{l as default};

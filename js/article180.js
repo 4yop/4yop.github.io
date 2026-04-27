@@ -1,129 +1,79 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 py-8 bg-white text-gray-800 font-sans">
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">罗马数字转换器：揭开古老计数法的奥秘</h1>
-  <p class="text-lg mb-6 leading-relaxed">
-    你是否曾在老式钟表、书籍的章节编号、电影片尾的版权年份，甚至一些正式的文档中，看到过像 <span class="font-mono bg-gray-100 px-1">I</span>、<span class="font-mono bg-gray-100 px-1">V</span>、<span class="font-mono bg-gray-100 px-1">X</span> 这样的符号？这些看似神秘的字母，其实就是古罗马人使用的数字——罗马数字。虽然我们日常生活中早已习惯了阿拉伯数字（0,1,2,3...），但罗马数字依然以一种优雅而古典的方式存在于现代社会的各个角落。如果你偶尔遇到它们却不知道怎么读，或者想把阿拉伯数字转换成罗马数字，别担心，看完这篇文章你就能轻松掌握，而且还能用上方便的在线转换工具。
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
+
+  <p class="text-lg text-slate-600 mb-8">
+    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
   </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字从哪来？一段古老的历史</h2>
-  <p class="mb-4 leading-relaxed">
-    罗马数字起源于古罗马帝国，大约在公元前1000年左右开始使用。那时候的人们需要记录数字、进行交易、标记年份，于是发明了这套简单但有效的计数系统。罗马数字的符号主要来源于罗马人的日常生活工具和武器，比如：
-  </p>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><span class="font-mono bg-gray-100 px-1">I</span> 代表一根手指，或者一根木棍。</li>
-    <li><span class="font-mono bg-gray-100 px-1">V</span> 象征一只手的形状，特别是食指和中指分开的样子，代表数字5。</li>
-    <li><span class="font-mono bg-gray-100 px-1">X</span> 则是两个 <span class="font-mono bg-gray-100 px-1">V</span> 交叉在一起，代表数字10。</li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-blue-800">
+      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
+  <p class="mb-4">想一想这些场景：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
+    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
+    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
+  </ul>
+  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
+  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
+    </div>
+  </div>
+
+  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
+  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
+    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
+    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字怎么读？简单规则让你秒懂</h2>
-  <p class="mb-4 leading-relaxed">
-    罗马数字看起来复杂，其实规则很简单。只要记住几个基本符号和组合规则，就能轻松看懂和使用。
-  </p>
-
-  <div class="bg-gray-50 p-4 rounded-lg mb-6">
-    <h3 class="font-semibold mb-2">基本符号</h3>
-    <table class="w-full border-collapse">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 px-3 py-2 text-left">罗马数字</th>
-          <th class="border border-gray-300 px-3 py-2 text-left">对应的阿拉伯数字</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">I</td>
-          <td class="border border-gray-300 px-3 py-2">1</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">V</td>
-          <td class="border border-gray-300 px-3 py-2">5</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">X</td>
-          <td class="border border-gray-300 px-3 py-2">10</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">L</td>
-          <td class="border border-gray-300 px-3 py-2">50</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">C</td>
-          <td class="border border-gray-300 px-3 py-2">100</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">D</td>
-          <td class="border border-gray-300 px-3 py-2">500</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">M</td>
-          <td class="border border-gray-300 px-3 py-2">1000</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="bg-slate-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
+    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
+    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
+      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
+      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
+      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
+    </ul>
   </div>
 
-  <h3 class="text-xl font-medium mt-6 mb-3">组合规则</h3>
-  <ol class="list-decimal pl-6 mb-6 space-y-2">
-    <li><strong>右加左减：</strong>较大的罗马数字右边加上较小的罗马数字，表示两者相加。例如，<span class="font-mono bg-gray-100 px-1">VI</span> 是 5+1=6，<span class="font-mono bg-gray-100 px-1">XI</span> 是 10+1=11。而较大的罗马数字左边加上较小的罗马数字，表示两者相减。例如，<span class="font-mono bg-gray-100 px-1">IV</span> 是 5-1=4，<span class="font-mono bg-gray-100 px-1">IX</span> 是 10-1=9。</li>
-    <li><strong>上标表示：</strong>在罗马数字上方加一条横线，表示乘以1000。例如，<span class="font-mono bg-gray-100 px-1">V̅</span> 表示 5×1000=5000。不过这种用法在现代已经很少见了。</li>
-    <li><strong>重复限制：</strong>同一个罗马数字最多连续重复3次。例如，<span class="font-mono bg-gray-100 px-1">III</span> 是 3，但 4 不能写成 <span class="font-mono bg-gray-100 px-1">IIII</span>，而应该写成 <span class="font-mono bg-gray-100 px-1">IV</span>。</li>
-  </ol>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字的现代应用：古典与现代的完美融合</h2>
-  <p class="mb-4 leading-relaxed">
-    虽然阿拉伯数字已经成为全球通用的计数系统，但罗马数字并没有完全退出历史舞台。相反，它以一种独特的方式，在现代社会中找到了自己的位置：
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
+  <p class="mb-6">
+    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
   </p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>时间表示：</strong>许多老式钟表和手表的表盘上，仍然使用罗马数字来标记小时。</li>
-    <li><strong>章节编号：</strong>在书籍、论文、法律文件等正式文档中，常用罗马数字来编号章节或部分。</li>
-    <li><strong>版权年份：</strong>电影、电视节目和音乐作品的片尾，常常使用罗马数字来标注版权年份，给人一种经典、永恒的感觉。</li>
-    <li><strong>体育赛事：</strong>一些重要的体育赛事，如奥运会、世界杯，也会使用罗马数字来编号，例如 <span class="font-mono bg-gray-100 px-1">XXI</span> 届世界杯。</li>
-    <li><strong>建筑和纪念碑：</strong>许多历史建筑、纪念碑和公共设施上，会用罗马数字来标记建造年份。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">在线罗马数字转换器：告别手动计算的烦恼</h2>
-  <p class="mb-4 leading-relaxed">
-    虽然罗马数字的规则不难掌握，但当你需要转换较大的数字，或者频繁进行转换时，手动计算就会变得繁琐而容易出错。这时，一个好用的在线罗马数字转换器就能派上大用场了。
-  </p>
-  <p class="mb-6 leading-relaxed">
-    我们的在线罗马数字转换器，就是这样一个简单却强大的工具。它不仅能在阿拉伯数字和罗马数字之间快速转换，还能处理较大的数字，让你告别手动计算的烦恼。
+  <p class="mb-8">
+    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
   </p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-    <h3 class="font-semibold text-blue-800 mb-2">如何使用我们的罗马数字转换器？</h3>
-    <ol class="list-decimal pl-6 space-y-2 text-blue-700">
-      <li>在输入框中，输入你想要转换的阿拉伯数字（如 2024）或罗马数字（如 <span class="font-mono">MMXXIV</span>）。</li>
-      <li>点击“转换”按钮。</li>
-      <li>转换器会立即在下方显示转换后的结果。</li>
-      <li>如果输入有误，转换器会给出友好的提示信息。</li>
-    </ol>
+  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
+    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
   </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字转换的常见问题</h2>
-  <div class="space-y-4 mb-6">
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">罗马数字有0吗？</h3>
-      <p>没有。罗马数字的计数系统中，没有专门表示0的符号。这也是它后来被阿拉伯数字取代的原因之一，因为在进行数学运算时，0的存在非常重要。</p>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">罗马数字最大能表示多少？</h3>
-      <p>在标准的罗马数字系统中，最大的数字是 <span class="font-mono bg-gray-100 px-1">MMMCMXCIX</span>，即 3999。如果要表示更大的数字，就需要使用上标（在数字上方加横线），但这种方法在现代已经很少使用了。</p>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">为什么有时候会看到 <span class="font-mono bg-gray-100 px-1">IIII</span> 而不是 <span class="font-mono bg-gray-100 px-1">IV</span>？</h3>
-      <p>在一些老式钟表上，你可能会看到用 <span class="font-mono bg-gray-100 px-1">IIII</span> 来表示4，而不是标准的 <span class="font-mono bg-gray-100 px-1">IV</span>。这是因为在钟表的圆形表盘上，<span class="font-mono bg-gray-100 px-1">IIII</span> 的对称性更好，视觉效果更平衡。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">结语：罗马数字的魅力与价值</h2>
-  <p class="mb-6 leading-relaxed">
-    罗马数字，这种古老的计数方法，不仅是一种实用的工具，更是一种文化遗产。它承载着古罗马文明的智慧，也为现代社会增添了一份古典的美感。无论是在日常生活中遇到罗马数字，还是在学习历史、艺术时需要了解它，掌握罗马数字的基本规则和使用方法，都能让你受益匪浅。
-  </p>
-  <p class="mb-6 leading-relaxed">
-    而我们的在线罗马数字转换器，则为你提供了一种便捷的方式，让你在需要时快速、准确地进行转换。无论你是学生、教师、设计师，还是对历史文化感兴趣的爱好者，这个工具都能为你节省时间，提高效率。
-  </p>
-  <p class="font-medium text-center mt-10 text-gray-600">
-    现在，就去试试我们的罗马数字转换器吧，体验古老与现代的完美结合！
-  </p>
 </div>
 `;export{s as default};

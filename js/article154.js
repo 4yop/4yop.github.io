@@ -1,82 +1,125 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">图片太大传不上去？别急，尺寸调整其实很简单</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
+    还在为文档格式发愁？试试这个本地Word转换工具
+  </h1>
 
-  <div class="text-lg text-gray-600 mb-8 leading-relaxed">
-    <p>你是不是也遇到过这种尴尬：精心拍好的照片，想传到网站做头像，或者发给朋友，结果系统弹出一行冷冰冰的字——“图片过大，无法上传”。又或者，传是传上去了，但在手机上看模糊一片，或者把整个网页的排版都挤乱了。</p>
+  <div class="text-gray-600 text-base sm:text-lg mb-8 text-center">
+    不上传文件、不担心隐私，轻松把Word文档变成网页和笔记需要的格式。
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
-    <p class="text-blue-800"><strong>先别怪你的手机或电脑</strong>，这其实是一个很常见的小问题。简单来说，就是图片的“身材”（尺寸）不太适合它要去的地方。好消息是，给图片“调整身材”这件事，现在人人都能做，而且完全免费、超级简单。</p>
+  <div class="prose prose-lg max-w-none mb-10">
+    <p class="mb-4">
+      你是不是也遇到过这样的情况？好不容易写完一份Word文档，或是收到一份重要的.docx文件，却发现网站后台只支持粘贴特定格式的文本，或者想把它整理成简洁的笔记，却无从下手。手动调整格式？那太费时间了。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">为什么我们需要给图片“变个身”？</h2>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-10 rounded-r-lg">
+    <h2 class="text-xl font-semibold mb-2 text-gray-900">一个更安心的选择：本地转换</h2>
+    <p class="mb-0">
+      现在有一个新思路：<strong>在你自己电脑的浏览器里直接完成转换</strong>。整个过程，你的文档文件不会离开你的电脑，不会上传到任何人的服务器。就像在自家厨房做饭，食材不离开家门，做完直接上桌，安全和隐私都由你自己掌握。
+    </p>
+  </div>
 
-  <p class="mb-4">你可以把不同的网站和App想象成不同尺寸的“相框”。</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-    <li><strong>微信朋友圈</strong>的“相框”有自己的最佳尺寸，图片太大，它就会自动帮你压缩，结果可能就是变模糊。</li>
-    <li><strong>电商平台</strong>上传商品图，要求图片既清晰又不能太大，否则影响页面打开速度，顾客可能就没耐心等了。</li>
-    <li><strong>报名、签证等网站</strong>的系统往往比较“古板”，对图片大小和尺寸有严格的数字要求，差一点都不行。</li>
-    <li>自己做个简单的<strong>PPT或者文档</strong>，插入一张巨大的照片，整个文件立刻变得笨重不堪，发给同事都麻烦。</li>
-  </ul>
-  <p class="mb-6">所以，学会自己调整图片尺寸，就像学会给衣服修改裤脚一样，是个非常实用的生活小技能。</p>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">它能帮你做什么？</h2>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">图片调整，到底在调什么？</h2>
+  <p class="mb-6">
+    简单来说，这个工具就是帮你把熟悉的Word文档（.docx格式），变成两种更通用的文本格式。
+  </p>
 
-  <p class="mb-6">别被“像素”、“分辨率”这些词吓到。你可以把它理解成两种主要操作：</p>
-
-  <div class="grid md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h3 class="font-medium text-gray-900 text-lg mb-2">1. 改大小（缩放）</h3>
-      <p class="text-gray-700">就像把一张大海报按比例缩小成明信片。这是最常用的功能，目的是减少图片占用的空间，让它更容易上传和传输。</p>
+  <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-blue-700 mb-2">1. 转换成 HTML</div>
+      <p class="mb-4">HTML 是网页的“骨架”和“血肉”。转换后，你的文档标题、段落、列表甚至加粗文字，都会变成网页能识别的代码。非常适合需要把内容发布到网站、博客或内部系统的朋友。</p>
+      <div class="text-sm text-gray-500">比如：公司通告、产品介绍、带排版的文章。</div>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h3 class="font-medium text-gray-900 text-lg mb-2">2. 改尺寸（裁切/固定）</h3>
-      <p class="text-gray-700">就像把一张长方形照片，裁剪成正方形，或者硬性规定它必须是800宽、600高。这通常是为了满足一些平台严格的格式要求。</p>
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-green-700 mb-2">2. 转换成 Markdown</div>
+      <p class="mb-4">Markdown 是一种轻量级的标记语言，让你用简单的符号（比如 # 表示标题，* 表示列表）就能排版。它干净、易读，是记笔记、写文档（如Readme）的利器。</p>
+      <div class="text-sm text-gray-500">比如：个人知识库、技术文档、简洁的会议记录。</div>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">一个好用的工具应该让你“怎么想就怎么调”</h2>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">怎么使用？非常简单</h2>
 
-  <p class="mb-4">对于不懂技术的人来说，最好的工具就是能听懂你的“人话”。比如：</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-    <li>你心里想：“<strong>这张图我想缩小一半</strong>。” 那就可以直接选择“按百分比调整”，输入50%。</li>
-    <li>网站要求：“<strong>头像必须是200x200像素</strong>。” 你就可以选择“固定尺寸”，宽和高都输入200。</li>
-    <li>你只关心：“<strong>把宽度调到800，高度随便，别变形就行</strong>。” 那就用“固定宽度”模式，输入800，高度会自动按比例算好。</li>
-    <li>想一次处理<strong>好几张旅游照片</strong>？一个现代的工具肯定支持你一次性全部选中，统一调整，然后一键打包下载，省时省力。</li>
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">1</div>
+        <span class="font-medium">上传你的Word文档</span>
+      </div>
+      <div class="text-sm text-gray-500 bg-white px-3 py-1 rounded-full border">支持 .docx 格式</div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">2</div>
+        <span class="font-medium">选择想要的格式</span>
+      </div>
+      <div class="text-sm text-gray-500">一键点击“转换为 HTML”或“转换为 Markdown”</div>
+    </div>
+    <div class="flex items-center">
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">3</div>
+      <div>
+        <span class="font-medium mr-2">获取并复制结果</span>
+        <span class="text-sm text-gray-500">转换后的内容会直接显示，并可以一键复制使用</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">为什么推荐这种方式？</h2>
+
+  <ul class="space-y-4 mb-10 list-none pl-0">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>保护隐私：</strong>你的文件全程只在浏览器里处理，没有上传到网络，不必担心敏感内容泄露。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>操作简单：</strong>就像给文件换个“包装”，点几下鼠标就能完成，不需要学习复杂软件。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>即开即用：</strong>通常打开网页就能使用，无需下载安装任何程序。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>免费便捷：</strong>省去了寻找、购买或学习专业转换软件的麻烦。</span>
+    </li>
   </ul>
 
-  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-8">
-    <h3 class="font-medium text-yellow-800 text-lg mb-2">一个小提示：关于清晰度</h3>
-    <p class="text-yellow-800">把图片调小，通常不会影响你在手机或电脑上看的清晰度。但如果你把一张很小的图片强行放大，就肯定会变模糊。所以，调整时，<strong>“由大变小”很安全，“由小变大”要谨慎</strong>。</p>
+  <div class="border-t border-gray-200 pt-10 mt-10">
+    <h3 class="text-xl font-semibold mb-4 text-gray-900">常见问题解答</h3>
+    <div class="space-y-6">
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：我的文件安全吗？</h4>
+        <p class="text-gray-600">答：非常安全。这种“本地转换”方式，处理过程完全在你的电脑浏览器内完成，文件数据不会通过网络发送出去，你可以放心处理任何文档。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：支持哪些Word文件？</h4>
+        <p class="text-gray-600">答：主要支持较新版本的Word保存的 <code class="bg-gray-100 px-1 py-0.5 rounded text-sm">.docx</code> 格式文件。这是目前最常用的Word文档格式。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：转换后会保留图片和表格吗？</h4>
+        <p class="text-gray-600">答：对于简单的文档转换，基础的格式（如标题、列表、加粗）通常都能很好保留。如果是非常复杂的排版（如精密表格、特殊样式），转换后可能需要做一些微调。</p>
+      </div>
+    </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">谁最需要这个技能？可能就有你！</h2>
-
-  <div class="mb-6">
-    <p class="font-medium text-gray-900 mb-2">▸ 开网店的朋友：</p>
-    <p class="text-gray-700 pl-4 mb-4">主图、详情页图都有尺寸规范。图片调整得当，店铺页面加载快，看起来专业，顾客体验更好。</p>
-
-    <p class="font-medium text-gray-900 mb-2">▸ 经常需要交电子材料的上班族或学生：</p>
-    <p class="text-gray-700 pl-4 mb-4">无论是求职的简历照，还是各种申请表的附件，再也不用担心“图片格式不符合要求”被退回来。</p>
-
-    <p class="font-medium text-gray-900 mb-2">▸ 喜欢在社交媒体分享生活的你：</p>
-    <p class="text-gray-700 pl-4">把照片调整到合适的大小再发布，画质更可控，也不会因为原图太大消耗好友的流量。</p>
+  <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl mt-12 text-center">
+    <p class="text-lg mb-4 font-medium">
+      下次当你需要把Word文档里的内容搬到网页、博客或笔记软件时，不妨先试试这种本地转换的方法。
+    </p>
+    <p class="text-gray-600 mb-0">
+      它或许能帮你节省大量调整格式的时间，更重要的是，让你对自己的文件多一份安心。
+    </p>
   </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">行动起来，其实就几步</h2>
-
-  <p class="mb-6">整个过程，比你想象得更流畅：</p>
-  <ol class="list-decimal pl-6 mb-8 space-y-3 text-gray-700">
-    <li><strong>找到工具</strong>：找到一个在浏览器里就能用的在线图片尺寸调整器。</li>
-    <li><strong>拖入照片</strong>：直接把电脑里的图片拖进网页，或者点击上传。可以一张，也可以多张。</li>
-    <li><strong>说出你的要求</strong>：是用百分比缩小？还是指定一个精确的宽度？按你的需求选择。</li>
-    <li><strong>点击处理并下载</strong>：稍等片刻，就能预览调整后的效果，满意的话就下载到电脑或手机里。</li>
-  </ol>
-
-  <div class="text-center p-8 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-300 mt-12">
-    <p class="text-xl font-medium text-gray-900 mb-3">别再让“图片尺寸不对”这种小麻烦影响你的好心情和正事了。</p>
-    <p class="text-gray-700">现在有很多简单易用的在线工具，能把这件事变得像拖拽文件一样轻松。花一分钟了解一下，下次遇到问题，你就能从容应对，快速搞定。</p>
-  </div>
-</article>
-`;export{t as default};
+</div>
+`;export{e as default};

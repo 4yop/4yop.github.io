@@ -1,66 +1,102 @@
-const t=`
-<div class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans">
-  <h1 class="text-3xl font-bold mb-4 text-gray-900 text-center">3D地球可视化工具</h1>
-  <p class="text-gray-700 mb-6 leading-relaxed">
-    3D地球可视化工具是一款基于 WebGL 技术的在线交互式地球浏览器。通过高精度的三维渲染引擎，你可以自由旋转、缩放地球，从太空视角俯瞰我们居住的蓝色星球，探索七大洲四大洋的壮丽地貌。
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">信用卡分期怎么算？看完这篇自己就能算清楚</h1>
+
+  <p class="text-lg mb-4">
+    信用卡账单来了，金额有点大，想分期还？但每次看到“手续费率0.6%”这种数字，心里总犯嘀咕：这到底要多还多少钱？每期还多少？别急，今天咱们就用人人都能懂的大白话，把信用卡分期这件事掰扯明白。你甚至可以拿着手机自己算，再也不怕被绕晕。
   </p>
 
-  <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-5 rounded-xl mb-6 border border-blue-100">
-    <h2 class="text-xl font-semibold mb-3 text-blue-900">功能特点</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-      <li><strong>自由旋转</strong> — 鼠标左键拖拽可360度旋转地球，从任意角度观察</li>
-      <li><strong>滚轮缩放</strong> — 滚动鼠标滚轮可拉近或拉远视角，从近地轨道到万米高空</li>
-      <li><strong>真实纹理</strong> — 采用 NASA 公开的地球影像数据，呈现真实的地形与海洋色彩</li>
-      <li><strong>实时光照</strong> — 模拟太阳光照效果，直观感受昼夜分界线</li>
-    </ul>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <p class="text-sm text-blue-800">
+      小提醒：文末有分期计算小工具，不用记公式，填数字就能出结果，建议先收藏。
+    </p>
   </div>
 
-  <div class="bg-gray-50 p-5 rounded-xl mb-6">
-    <h2 class="text-xl font-semibold mb-3 text-gray-900">操作指南</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="flex items-start gap-3">
-        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">1</span>
-        <div>
-          <p class="font-medium text-gray-800">拖动旋转</p>
-          <p class="text-sm text-gray-600">按住鼠标左键并移动即可旋转地球</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">2</span>
-        <div>
-          <p class="font-medium text-gray-800">滚轮缩放</p>
-          <p class="text-sm text-gray-600">滚动鼠标滚轮调整观察距离</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">3</span>
-        <div>
-          <p class="font-medium text-gray-800">平移视角</p>
-          <p class="text-sm text-gray-600">右键拖动可平移画面中心位置</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">4</span>
-        <div>
-          <p class="font-medium text-gray-800">自动旋转</p>
-          <p class="text-sm text-gray-600">松开鼠标后地球会缓慢自转</p>
-        </div>
-      </div>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">1. 信用卡分期，到底在分什么？</h2>
+  <p class="mb-4">
+    简单说，信用卡分期就是你把一笔消费金额，分成几个月还给银行。比如这个月花了12000元，手头紧，就可以申请分12期，接下来12个月每个月还一部分。银行不是免费帮你分期的，它会收一笔钱，叫“手续费”。这笔手续费是按你分期的总额乘以一个百分比算出来的。
+  </p>
+  <p class="mb-4">
+    手续费率通常用“每期费率”来表示，比如0.6%/期，意思就是每一期要额外付本金的0.6%作为手续费。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">2. 分期手续费和每期还款，其实就这三个数</h2>
+  <p class="mb-2">搞懂信用卡分期计算，你只需要关注三个数字：</p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><span class="font-medium">分期本金</span>：你打算分期的总金额（比如10000元）。</li>
+    <li><span class="font-medium">分期期数</span>：分多少个月还（比如3期、6期、12期）。</li>
+    <li><span class="font-medium">每期手续费率</span>：银行收的手续费比例（比如0.6%）。</li>
+  </ul>
+  <p class="mb-4">
+    有了这三个数，下面这些结果自己都能算：
+  </p>
+  <ul class="list-disc pl-6 mb-6 space-y-1">
+    <li><span class="font-medium">每期手续费</span> = 分期本金 × 每期手续费率 ÷ 100（如果费率是0.6，直接乘0.006）</li>
+    <li><span class="font-medium">每期应还本金</span> = 分期本金 ÷ 分期期数</li>
+    <li><span class="font-medium">每期还款总额</span> = 每期手续费 + 每期应还本金</li>
+    <li><span class="font-medium">总手续费</span> = 每期手续费 × 分期期数</li>
+    <li><span class="font-medium">总还款额</span> = 分期本金 + 总手续费</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. 举个真实的例子，一看就懂</h2>
+  <p class="mb-2">假设你上个月消费了10000元，申请分12期还，银行给的每期手续费率是0.6%。我们来一步步算：</p>
+  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+    <p class="mb-1">• 每期手续费 = 10000 × 0.6% = 60元</p>
+    <p class="mb-1">• 每期应还本金 = 10000 ÷ 12 ≈ 833.33元</p>
+    <p class="mb-1">• 每期还款总额 = 60 + 833.33 = 893.33元</p>
+    <p class="mb-1">• 总手续费 = 60 × 12 = 720元</p>
+    <p class="mb-1">• 总还款额 = 10000 + 720 = 10720元</p>
+  </div>
+  <p class="mb-4">
+    也就是说，你分12期总共要多还720元，每个月还893.33元。是不是很清楚？
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. 分期期数怎么选更划算？</h2>
+  <p class="mb-4">
+    银行通常提供3期、6期、12期、24期等选项。期数越短，总手续费越少，但每月还款压力大；期数越长，总手续费越多，但每月还款轻松。比如上面例子，如果分6期，假设费率也是0.6%，总手续费就是10000×0.6%×6=360元，比12期省了一半，但每月要还(10000÷6+60)≈1726.67元。
+  </p>
+  <p class="mb-4">
+    所以选期数要看自己当下的现金流：如果未来几个月收入稳定，选短期的更省钱；如果确实手头紧，选长期分摊压力。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">5. 注意两个容易忽略的“坑”</h2>
+  <p class="mb-2 font-medium">① 手续费率 ≠ 真实年利率</p>
+  <p class="mb-3">
+    银行给你看的0.6%是每期费率，如果简单乘以12得到7.2%，听起来不高。但实际上因为本金每月在减少，你占用的资金越来越少，真实年化利率大概是这个数字的两倍左右（用内部收益率IRR算会更准确）。所以分期消费前，可以问问自己：这笔钱如果用来投资，能赚回这个利率吗？
+  </p>
+  <p class="mb-2 font-medium">② 提前还款手续费怎么算？</p>
+  <p class="mb-4">
+    很多银行即使你提前还清，剩余期数的手续费也要照收，或者收一笔违约金。办理分期前最好问清楚条款，免得后来想提前还却发现不划算。
+  </p>
+
+  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-5 mt-6 mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">用分期计算器，省心不费脑</h3>
+    <p class="mb-3">
+      如果不想手动算，或者想试试不同金额、期数和费率的结果，可以用我们准备的这个小工具。输入本金、期数、手续费率，马上就能看到每期还多少、总手续费多少，清清楚楚，帮你做决策。
+    </p>
+    <p class="text-sm text-gray-600">
+      （本文介绍的信用卡分期计算器就是页面下方那个，所有结果都是实时计算，保留两位小数，供你参考。）
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">关于信用卡分期，你可能还想问</h2>
+  <div class="space-y-4">
+    <div>
+      <p class="font-medium">问：所有消费都能分期吗？</p>
+      <p>大部分普通消费都可以，但有些银行对特定交易（比如取现、临时额度）有限制，具体以账单为准。</p>
+    </div>
+    <div>
+      <p class="font-medium">问：分期会影响信用记录吗？</p>
+      <p>按时还款不仅不会影响，反而有助于积累良好信用。但如果逾期，后果也很严重。</p>
+    </div>
+    <div>
+      <p class="font-medium">问：手续费率有优惠吗？</p>
+      <p>银行经常有分期优惠活动，比如特定商户、新用户免息等，可以多留意App或客服通知。</p>
     </div>
   </div>
 
-  <div class="bg-amber-50 p-5 rounded-xl mb-6 border border-amber-200">
-    <h2 class="text-xl font-semibold mb-3 text-amber-900">应用场景</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-      <li>地理教学与科普演示</li>
-      <li>旅行路线规划与目的地预览</li>
-      <li>时区与国际日期变更线的直观理解</li>
-      <li>了解大洲大洋的相对位置关系</li>
-    </ul>
-  </div>
-
-  <p class="text-gray-500 text-sm text-center pt-4 border-t border-gray-200">
-    基于 WebGL / Three.js 技术构建 · 无需安装任何插件
+  <p class="text-center text-gray-500 text-sm mt-10 pt-4 border-t border-gray-200">
+    希望这篇文章让你对信用卡分期心里有底。下次再看到分期选项，不妨先算一算，再做决定。
   </p>
 </div>
-`;export{t as default};
+`;export{s as default};

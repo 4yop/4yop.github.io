@@ -1,88 +1,82 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 leading-relaxed">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">还在为拼图烦恼？教你一个把多张图片轻松合成一张的简单方法</h1>
+const s=`
+<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6">给PDF文件加水印，原来这么简单</h1>
 
-  <p class="text-lg text-gray-600 mb-8 text-center">
-    旅游照片、产品对比、朋友圈九宫格...不用下载软件，在线就能搞定。
-  </p>
+  <p class="mb-6 text-lg">你是不是也遇到过这样的烦恼？辛苦做好的PDF文件发给别人，总担心被随意转发或盗用。这时，如果能给文件加上一个专属的“印记”，比如“内部资料”或者自己的Logo，心里就踏实多了。这个“印记”，就是我们常说的“水印”。</p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
-    <p class="mb-2"><strong>你是不是也遇到过这些情况？</strong></p>
-    <ul class="list-disc pl-5 space-y-1">
-      <li>旅游回来，想把几张风景照横着拼成一张长图，却不知道用什么工具。</li>
-      <li>做产品对比图，需要把好几个细节图整齐地排在一起，调来调去总对不齐。</li>
-      <li>想在社交媒体发一组照片，但又不想刷屏，希望能把它们合成一张。</li>
-      <li>用手机或电脑自带的软件操作步骤太麻烦，专门下载个软件又觉得不值。</li>
-    </ul>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
+    <p class="font-semibold mb-1">一句话了解水印：</p>
+    <p>水印就像是盖在文件上的一个透明印章，既能表明文件归属和性质，又不会过多遮挡原文内容。</p>
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">拼图，其实比你想象的简单</h2>
-  <p class="mb-4">
-    别再把“图片拼接”想成是什么复杂的技术活了。它就像小朋友玩的拼图游戏，只不过我们是在电脑或手机上，把几张电子图片，按照你想要的方式组合成一张新的图片。
-  </p>
-  <p class="mb-4">
-    比如，你想把三天旅行的标志性照片，从左到右连成一条时间线，这就是<strong>横向拼接</strong>。你想把同一个景点的远景、中景、特写从上到下排列，这就是<strong>纵向拼接</strong>。
-  </p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">PDF水印有什么用？</h2>
+  <p class="mb-4">别小看这个小小的水印，它在很多场合都能派上大用场：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2">
+    <li><span class="font-medium">声明版权：</span>在设计稿、方案书等作品上加上公司名称或Logo，声明所有权。</li>
+    <li><span class="font-medium">区分状态：</span>给合同、标书等文件盖上“草案”、“终版”、“已确认”等字样，避免混淆。</li>
+    <li><span class="font-medium">防泄密提醒：</span>在内部资料上添加“机密”、“严禁外传”等警示语，提醒接收者注意。</li>
+    <li><span class="font-medium">品牌展示：</span>在产品手册、宣传PDF中加入品牌标识，潜移默化地强化品牌印象。</li>
+  </ul>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">一个在线工具就能解决的麻烦</h2>
-  <p class="mb-4">
-    现在，你不需要成为设计师，也不需要记住复杂的软件操作。一个好的在线图片拼接工具，就像一个智能的图片排版助手，你只需要告诉它你的想法，它就能帮你实现。
-  </p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">两种常见的水印，你选哪种？</h2>
+  <p class="mb-6">一般来说，我们可以选择添加文字水印或图片水印，它们各有特点。</p>
 
-  <div class="bg-gray-50 p-6 rounded-xl mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-gray-900">它能为你做什么？</h3>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
-        <div>
-          <strong>操作极其简单</strong>：你只需要把电脑里或手机上的照片拖进去，或者点一下选择。就像把文件放进一个文件夹一样直观。
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">2</div>
-        <div>
-          <strong>拼接方式灵活</strong>：想横着拼、竖着拼，还是排成几行几列的网格（比如经典的九宫格），都可以自由选择。
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">3</div>
-        <div>
-          <strong>细节可以微调</strong>：图片之间要不要留白、留多大空、图片在格子里的对齐方式（靠上、居中、靠下），甚至背景颜色都可以随你心意调整。
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">4</div>
-        <div>
-          <strong>无需等待，快速生成</strong>：调整好以后，点一下按钮，一张崭新的合成图就做好了。你可以直接下载保存到手机或电脑里。
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">这些时候，你特别需要它</h2>
   <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
-      <h4 class="font-bold text-lg mb-2 text-gray-900">制作旅行纪念长图</h4>
-      <p class="text-gray-700">
-        把一次旅行中不同地点的标志性照片，按行程顺序横向拼接起来，形成一张有故事感的“视觉游记”，分享起来更有格调，也方便打印留念。
-      </p>
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="text-xl font-semibold mb-3 text-center">文字水印</h3>
+      <p class="mb-3">就像用半透明的笔在纸上写字。它简单直接，通常用于添加提示性文字。</p>
+      <div class="text-gray-600 bg-gray-100 p-4 rounded text-center italic">
+        <p>示例效果：</p>
+        <p class="text-2xl mt-2 opacity-50 rotate-12">CONFIDENTIAL</p>
+      </div>
+      <p class="mt-4 text-sm">你可以自由输入任何文字，比如公司名称、文件状态、警示语等，并调整它的大小、颜色和倾斜角度。</p>
     </div>
-    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
-      <h4 class="font-bold text-lg mb-2 text-gray-900">社交媒体内容创作</h4>
-      <p class="text-gray-700">
-        想分享多张美食、宠物或穿搭照片？与其连发好几条，不如把它们优雅地拼成一张九宫格或对比图。信息更集中，版面也更美观，更容易获得关注。
-      </p>
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="text-xl font-semibold mb-3 text-center">图片水印</h3>
+      <p class="mb-3">就像在文件上盖一个透明的图案章。它更形象美观，适合放置Logo或特定图标。</p>
+      <div class="text-gray-600 bg-gray-100 p-4 rounded flex justify-center items-center min-h-[120px]">
+        <p class="text-sm">（这里通常会显示一个公司Logo的预览图）</p>
+      </div>
+      <p class="mt-4 text-sm">你可以上传自己的Logo或任何图片，并控制它在页面上的大小，让品牌展示更加直观。</p>
     </div>
   </div>
 
-  <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl border text-center mt-14">
-    <h3 class="text-2xl font-bold mb-3">告别拼图繁琐，试试更聪明的办法</h3>
-    <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
-      一个顺手的小工具，能省去你大量查找软件、学习操作的时间。无论是为了工作展示，还是生活分享，把几张图片完美地合成一张，都可以变得非常简单。
-    </p>
-    <p class="font-medium">
-      如果你正好需要处理图片，不妨去了解一下这种在线拼接图片的便捷方式。
-    </p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">如何调整出一个“恰到好处”的水印？</h2>
+  <p class="mb-6">水印加得太深，会干扰阅读；加得太浅，又起不到作用。掌握几个小技巧，就能做出效果刚刚好的水印。</p>
+
+  <div class="space-y-6 mb-12">
+    <div>
+      <h4 class="text-xl font-medium mb-2">1. 透明度是关键</h4>
+      <p>这是影响观感最重要的设置。数值调低，水印颜色变淡，更像背景；数值调高，水印更清晰醒目。通常设置在中间值附近，既看得见，又不刺眼。</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium mb-2">2. 选个好位置</h4>
+      <p>水印放在哪里好？通常放在页面正中央，或者对角线斜着铺满整个页面，视觉效果和防涂改效果都不错。就像贴邮票，可以贴在信封中间，也可以斜着贴一个角。</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium mb-2">3. 试试旋转一下</h4>
+      <p>让水印倾斜一个角度（比如经典的45度角），是常见的做法。这样看起来更专业，也让它不那么死板，同时减少对正文文字的遮挡。</p>
+    </div>
   </div>
-</article>
-`;export{t as default};
+
+  <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 mt-12 mb-8">
+    <h3 class="text-2xl font-semibold mb-4">给PDF加水印的步骤，其实很简单</h3>
+    <ol class="list-decimal pl-6 space-y-4">
+      <li><span class="font-medium">准备好你的PDF文件：</span>就像打印前需要准备好文档一样。</li>
+      <li><span class="font-medium">选择水印类型：</span>想加文字就选“文字”，想加Logo就选“图片”。</li>
+      <li><span class="font-medium">设计你的水印：</span>输入文字或上传图片，然后调整它的透明度、位置和角度，直到你满意为止。</li>
+      <li><span class="font-medium">预览与完成：</span>在右侧可以实时看到添加水印后的效果，确认无误后，就可以保存新的文件了。</li>
+    </ol>
+    <p class="mt-6 text-gray-600">整个过程，就像是在给你的电子文件“盖个章”，操作直观，所见即所得。</p>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">几个实用的小建议</h2>
+  <ul class="list-disc pl-6 mb-12 space-y-3">
+    <li><span class="font-medium">明确目的：</span>加水印前先想清楚，是为了提醒保密，还是展示版权？目的不同，水印的文字、大小和深浅都可以调整。</li>
+    <li><span class="font-medium">保持清晰：</span>水印是用来“看”的，不是用来“猜”的。确保它在各种设备上都能被清晰辨认。</li>
+    <li><span class="font-medium">风格统一：</span>如果是给一系列文件加水印，尽量使用相同的位置、字体和透明度，看起来更专业。</li>
+  </ul>
+
+  <p class="mt-12 pt-6 border-t border-gray-300">希望这篇文章能帮你了解PDF水印的作用和方法。下次需要保护或标记你的重要PDF文件时，不妨试试给它加上一个合适的水印吧。</p>
+</div>
+`;export{s as default};

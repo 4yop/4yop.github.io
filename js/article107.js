@@ -1,184 +1,169 @@
-const s=`
-<div class="bg-white text-gray-800 font-sans leading-relaxed p-4 md:p-8 max-w-4xl mx-auto">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">假装系统在升级：让工作间隙变得更有趣的摸鱼神器</h1>
+const r=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">智能抠图工具：一键去除背景，让主体脱颖而出</h1>
 
-  <!-- 引言 -->
-  <p class="text-lg mb-6 text-gray-600">
-    在紧张的工作中，每个人都偶尔需要片刻的放松。"假装系统在升级"正是为这样的时刻而生——它能让你的电脑屏幕瞬间变成各种操作系统的"正在更新"界面，为你争取宝贵的休息时间。
-  </p>
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">还在为去除图片背景发愁？</p>
+    <p class="mt-2 mb-0">无论是制作证件照、设计电商产品图，还是创作社交媒体内容，去除图片背景都是常见需求。智能抠图工具利用AI技术，一键自动识别主体并去除背景，无需复杂的PS操作，几秒钟就能完成专业级效果。</p>
+  </div>
 
-  <!-- 工具介绍 -->
-  <div class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
-    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是"假装系统在升级"？</h2>
-    <p class="mb-4">
-      这是一个纯前端实现的 <strong class="text-blue-600">系统更新界面模拟器</strong>。它通过CSS动画和JavaScript技术，高度还原了各大主流操作系统的更新界面视觉效果，包括：
-    </p>
-    <ul class="list-disc list-inside space-y-2 text-gray-700">
-      <li><strong>Windows XP</strong> - 经典的蓝色渐变背景和文字提示</li>
-      <li><strong>Windows 7</strong> - 优雅的圆形进度条和配置更新界面</li>
-      <li><strong>Windows 10</strong> - 现代化的动态光线效果</li>
-      <li><strong>Windows 11</strong> - 简约的圆环进度设计</li>
-      <li><strong>Ubuntu</strong> - 标志性的紫橙配色和Logo</li>
-      <li><strong>macOS</strong> - 苹果风格的简洁优雅设计</li>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">智能抠图的应用场景</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🪪 证件照制作</h3>
+      <p class="text-sm text-gray-600">快速去除原背景，更换为白色、蓝色或红色背景，制作标准证件照。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🛍️ 电商产品图</h3>
+      <p class="text-sm text-gray-600">去除产品背景，制作白底图或透明背景图，符合电商平台要求。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体</h3>
+      <p class="text-sm text-gray-600">制作创意头像、表情包、合成图片，让内容更有趣。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🎨 设计创作</h3>
+      <p class="text-sm text-gray-600">提取素材元素，用于海报、Banner、PPT等设计作品。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图 vs 传统方法</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">对比项</th>
+          <th class="border border-gray-300 p-3 text-left">AI智能抠图</th>
+          <th class="border border-gray-300 p-3 text-left">传统PS抠图</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">操作难度</td>
+          <td class="border border-gray-300 p-3 text-green-600">简单，一键完成</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">复杂，需要专业技能</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">处理时间</td>
+          <td class="border border-gray-300 p-3 text-green-600">几秒钟</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">几分钟到几十分钟</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">边缘处理</td>
+          <td class="border border-gray-300 p-3 text-green-600">自动识别，效果自然</td>
+          <td class="border border-gray-300 p-3 text-green-600">精细控制，专业级</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">成本</td>
+          <td class="border border-gray-300 p-3 text-green-600">免费或低成本</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">软件订阅费用</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">适用场景</td>
+          <td class="border border-gray-300 p-3">日常需求、批量处理</td>
+          <td class="border border-gray-300 p-3">专业设计、精细修图</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图的工作原理</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
+      <h3 class="font-medium text-indigo-800 mb-2">1. 图像识别</h3>
+      <p class="text-indigo-700">AI模型分析图片内容，识别出前景主体（人物、物体）和背景区域。</p>
+    </div>
+    
+    <div class="p-5 bg-blue-50 rounded-lg border border-blue-100">
+      <h3 class="font-medium text-blue-800 mb-2">2. 边缘检测</h3>
+      <p class="text-blue-700">精确识别主体边缘，处理头发丝、毛发等细节，确保抠图自然。</p>
+    </div>
+    
+    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
+      <h3 class="font-medium text-green-800 mb-2">3. 背景移除</h3>
+      <p class="text-green-700">将识别出的背景区域变为透明或纯色，保留主体完整。</p>
+    </div>
+    
+    <div class="p-5 bg-purple-50 rounded-lg border border-purple-100">
+      <h3 class="font-medium text-purple-800 mb-2">4. 优化输出</h3>
+      <p class="text-purple-700">对边缘进行平滑处理，消除锯齿，生成高质量的PNG透明背景图片。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧与注意事项</h2>
+  
+  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
+    <h3 class="font-medium text-yellow-800 mb-3">💡 获得最佳效果的建议：</h3>
+    <ul class="space-y-2 text-yellow-700">
+      <li>• <strong>主体清晰</strong>：确保主体与背景有明显对比，边缘清晰</li>
+      <li>• <strong>光线均匀</strong>：避免主体一半过亮一半过暗，影响识别</li>
+      <li>• <strong>背景简洁</strong>：复杂背景可能影响识别精度，纯色背景效果最佳</li>
+      <li>• <strong>分辨率适中</strong>：图片过大可能导致处理缓慢，过小则影响细节</li>
+      <li>• <strong>检查边缘</strong>：抠图后检查头发、手指等细节区域，必要时手动调整</li>
     </ul>
   </div>
 
-  <!-- 功能特点 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">核心功能特点</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-2 text-green-700">多系统支持</h3>
-        <p class="text-gray-700">覆盖市面上最主流的桌面操作系统，每个系统的更新界面都经过精心设计和还原，细节到位。</p>
-      </div>
-      
-      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-2 text-green-700">真实动画效果</h3>
-        <p class="text-gray-700">不仅仅是静态图片，而是包含真实的进度条动画、加载动画和动态消息切换，更加逼真。</p>
-      </div>
-      
-      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-2 text-green-700">一键全屏显示</h3>
-        <p class="text-gray-700">点击即可进入全屏模式，配合浏览器F11键可实现真正的全屏体验，效果更加震撼。</p>
-      </div>
-      
-      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-2 text-green-700">安全无风险</h3>
-        <p class="text-gray-700">纯前端实现，不会修改任何系统文件或设置，完全无害。按ESC或点击即可随时退出。</p>
-      </div>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">抠图后的创意应用</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">🌅</div>
+      <h3 class="font-medium text-gray-800 mb-2">换背景</h3>
+      <p class="text-sm text-gray-600">将人物放到风景、城市或虚拟场景中</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">✨</div>
+      <h3 class="font-medium text-gray-800 mb-2">加特效</h3>
+      <p class="text-sm text-gray-600">添加阴影、描边、光效等视觉效果</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">🎭</div>
+      <h3 class="font-medium text-gray-800 mb-2">做合成</h3>
+      <p class="text-sm text-gray-600">多元素组合，创作创意图片</p>
     </div>
   </div>
 
-  <!-- 使用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">适用场景</h2>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：AI抠图能处理复杂背景吗？</p>
+      <p class="text-gray-600">答：现代AI抠图工具可以处理大多数复杂背景，但效果取决于主体与背景的对比度。对于头发丝、半透明物体等细节，高端工具表现更好。</p>
+    </div>
     
-    <div class="space-y-4">
-      <div class="flex items-start gap-4 p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg">
-        <span class="text-2xl">&#x1F3E0;</span>
-        <div>
-          <h4 class="font-semibold text-gray-900 mb-1">办公室摸鱼</h4>
-          <p class="text-gray-700 text-sm">当老板突然出现时，快速启动这个工具，看起来你的电脑正在"认真"地更新系统。</p>
-        </div>
-      </div>
-      
-      <div class="flex items-start gap-4 p-4 border-l-4 border-green-500 bg-green-50 rounded-r-lg">
-        <span class="text-2xl">&#x2615;</span>
-        <div>
-          <h4 class="font-semibold text-gray-900 mb-1">休息时间</h4>
-          <p class="text-gray-700 text-sm">午休时间想小憩一下？打开这个工具，安心休息，不用担心被误认为在偷懒。</p>
-        </div>
-      </div>
-      
-      <div class="flex items-start gap-4 p-4 border-l-4 border-yellow-500 bg-yellow-50 rounded-r-lg">
-        <span class="text-2xl">&#x1F4A1;</span>
-        <div>
-          <h4 class="font-semibold text-gray-900 mb-1">灵感创作</h4>
-          <p class="text-gray-700 text-sm">有时候盯着屏幕发呆反而能激发创意。用这个工具作为背景，让大脑自由漫游。</p>
-        </div>
-      </div>
-      
-      <div class="flex items-start gap-4 p-4 border-l-4 border-purple-500 bg-purple-50 rounded-r-lg">
-        <span class="text-2xl">&#x1F680;</span>
-        <div>
-          <h4 class="font-semibold text-gray-900 mb-1">技术展示</h4>
-          <p class="text-gray-700 text-sm">前端开发者可以学习其中的CSS动画技术，了解如何实现逼真的UI效果。</p>
-        </div>
-      </div>
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：抠图后的图片是什么格式？</p>
+      <p class="text-gray-600">答：通常输出为PNG格式，支持透明背景。如果不需要透明背景，也可以选择JPG格式并指定背景颜色。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：在线抠图工具安全吗？</p>
+      <p class="text-gray-600">答：使用本地处理的工具非常安全，图片不会上传到服务器。避免使用需要上传图片到云端的服务处理敏感照片。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：抠图效果不满意怎么办？</p>
+      <p class="text-gray-600">答：可以尝试更换原图（选择主体更清晰的），或使用支持手动调整的工具进行边缘修正。部分工具提供"保留"和"删除"画笔进行精细调整。</p>
     </div>
   </div>
 
-  <!-- 使用方法 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">如何使用？</h2>
-    
-    <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl">
-      <ol class="space-y-4">
-        <li class="flex gap-4">
-          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
-          <div>
-            <h4 class="font-semibold text-gray-900">选择系统</h4>
-            <p class="text-gray-600 text-sm mt-1">从页面上选择你想要模拟的操作系统类型（Windows XP/7/10/11、Ubuntu 或 macOS）。</p>
-          </div>
-        </li>
-        
-        <li class="flex gap-4">
-          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
-          <div>
-            <h4 class="font-semibold text-gray-900">点击启动</h4>
-            <p class="text-gray-600 text-sm mt-1">点击对应系统的卡片，页面会自动进入全屏模式并开始播放更新动画。</p>
-          </div>
-        </li>
-        
-        <li class="flex gap-4">
-          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
-          <div>
-            <h4 class="font-semibold text-gray-900">享受时光</h4>
-            <p class="text-gray-600 text-sm mt-1">现在你可以放心地休息了。屏幕会持续显示更新进度，看起来完全像真的在更新系统。</p>
-          </div>
-        </li>
-        
-        <li class="flex gap-4">
-          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</span>
-          <div>
-            <h4 class="font-semibold text-gray-900">随时退出</h4>
-            <p class="text-gray-600 text-sm mt-1">按 ESC 键、点击屏幕任意位置或移动鼠标，即可立即退出全屏模式恢复正常使用。</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- 技术实现 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">技术亮点</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-5 rounded-lg border border-indigo-200">
-        <h4 class="font-semibold text-indigo-900 mb-2">纯CSS动画</h4>
-        <p class="text-indigo-700 text-sm">所有动画效果均使用CSS3实现，包括旋转、渐变、脉冲等，性能优秀且流畅。</p>
-      </div>
-      
-      <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 rounded-lg border border-emerald-200">
-        <h4 class="font-semibold text-emerald-900 mb-2">响应式设计</h4>
-        <p class="text-emerald-700 text-sm">完美适配PC端和移动端，在不同屏幕尺寸下都能正常显示和使用。</p>
-      </div>
-      
-      <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-5 rounded-lg border border-orange-200">
-        <h4 class="font-semibold text-orange-900 mb-2">Vue3组件化</h4>
-        <p class="text-orange-700 text-sm">采用Vue 3 Composition API编写，代码结构清晰，易于维护和扩展。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 注意事项 -->
-  <div class="p-6 bg-red-50 border border-red-200 rounded-xl">
-    <h3 class="text-xl font-semibold mb-4 text-red-800">温馨提示</h3>
-    <ul class="space-y-2 text-red-900 text-sm md:text-base">
-      <li class="flex items-start gap-2">
-        <span class="text-red-600 mt-1">&#x26A0;</span>
-        <span>本工具仅供娱乐和学习使用，请合理安排工作和休息时间。</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-red-600 mt-1">&#x26A0;</span>
-        <span>适度休息有益健康，但过度摸鱼可能影响工作效率哦。</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-red-600 mt-1">&#x26A0;</span>
-        <span>请勿在工作的重要场合使用此工具，以免造成不必要的误解。</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-red-600 mt-1">&#x26A0;</span>
-        <span>本工具不会对您的电脑进行任何实际操作，请放心使用。</span>
-      </li>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让图片处理更简单</h2>
+  <p>AI技术的发展让原本专业的设计技能变得触手可及。智能抠图工具让每个人都能轻松获得专业级的图片处理效果，无论是工作需求还是个人创作，都能事半功倍。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">✅ 使用建议：</p>
+    <ul class="text-green-800 space-y-1">
+      <li>• 选择本地处理的工具，保护图片隐私</li>
+      <li>• 上传前确保图片质量，主体清晰</li>
+      <li>• 抠图后检查细节，特别是头发和边缘</li>
+      <li>• 保存为PNG格式保留透明背景</li>
+      <li>• 尝试不同的背景替换，发挥创意</li>
     </ul>
   </div>
-
-  <!-- 结尾 -->
-  <div class="mt-10 pt-6 border-t text-center text-gray-500 text-sm">
-    <p>愿每一位打工人都能劳逸结合，工作生活两不误。适当的放松是为了更好地出发！</p>
-  </div>
+  
+  <p class="mt-6 text-center text-gray-600">好的工具能让创意无限延伸。现在就开始体验智能抠图的魔力吧！</p>
 </div>
-`;export{s as default};
+`;export{r as default};

@@ -1,92 +1,143 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为做简历发愁？试试这个免费又好用的在线简历生成器</h1>
+const U=`
+<h2>UUID生成器 — 在线免费生成UUID/GUID工具</h2>
 
-  <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-    找工作第一步，往往是准备一份简历。很多人一听到“做简历”就头疼：格式怎么调？内容怎么写？怎么才能看起来既专业又突出重点？如果你也有这些烦恼，今天介绍的这个工具或许能帮到你。
-  </p>
+<p>在现代软件开发中，<strong>UUID（通用唯一识别码）</strong>和 <strong>GUID（全局唯一标识符）</strong> 是不可或缺的基础工具。无论是数据库主键设计、分布式系统节点标识，还是API密钥生成，UUID都扮演着关键角色。本文将深入介绍UUID的原理、版本区别、使用场景以及常见问题，帮助开发者更好地理解和使用UUID生成器。</p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-gray-700">
-      它就像一个在线表格，你只需要把信息填进去，它就能帮你自动生成一份排版整洁的简历，还能直接存成PDF文件，方便你打印或通过邮件发送。
-    </p>
-  </div>
+<h2>什么是UUID？</h2>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
+<p>UUID全称为 <strong>Universally Unique Identifier（通用唯一识别码）</strong>，又称 GUID（Globally Unique Identifier，全局唯一标识符）。它是一个128位的数字，通常以 <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> 的格式表示，共32个十六进制字符加4个连字符，例如：</p>
 
-  <p class="mb-6 leading-relaxed">
-    简单来说，这个工具把你做简历的过程，从复杂的“排版设计”变成了简单的“填空”。下面我们看看它具体解决了哪些问题。
-  </p>
+<pre><code>550e8400-e29b-41d4-a716-446655440000</code></pre>
 
-  <h3 class="text-xl font-semibold mt-8 mb-3 text-gray-800">1. 告别混乱的格式</h3>
-  <p class="mb-6 leading-relaxed">
-    你有没有过这种经历？在Word里调了半天，对齐总是对不齐，字体大小不统一，一调整整个版面就乱套。这个工具内置了好几种简历模板，比如简洁的、现代的、左右分栏的。你只需要选一个喜欢的，你的内容会自动套用整齐的格式，标题、段落、间距都帮你安排妥当，省去了大量调整格式的时间。
-  </p>
+<p>UUID的设计目标是在不依赖中央注册机构的情况下，在分布式系统中生成全局唯一的标识符。理论上，UUID的总数量高达 <strong>2¹²⁸（约3.4×10³⁸）</strong> 个，发生碰撞的概率极低，可以忽略不计。</p>
 
-  <h3 class="text-xl font-semibold mt-8 mb-3 text-gray-800">2. 引导你填写，不怕漏项</h3>
-  <p class="mb-6 leading-relaxed">
-    很多人不知道简历上该写什么。这个工具把简历内容分成了几个清晰的板块：<strong>个人信息、教育经历、工作经历、专业技能、自我评价</strong>。你就像完成一个任务清单，一个板块一个板块地填，思路清晰，不容易漏掉重要信息。每个板块里要填什么也写得很明白，比如工作经历里会提示你写“公司名称”、“职位”和“工作内容”。
-  </p>
+<h2>UUID的版本说明</h2>
 
-  <h3 class="text-xl font-semibold mt-8 mb-3 text-gray-800">3. 填写过程中随时能看效果</h3>
-  <p class="mb-6 leading-relaxed">
-    最方便的一点是“边填边看”。工具页面通常分左右两部分，左边是你填写信息的表单，右边就是实时生成的简历预览。你每打一个字、每增加一段经历，右边的简历样子就立刻更新。这样你就能随时掌握简历的整体篇幅和视觉效果，方便你即时调整内容。
-  </p>
+<p>UUID标准目前定义了多个版本，每个版本的生成算法不同，适用场景也有所差异：</p>
 
-  <h3 class="text-xl font-semibold mt-8 mb-3 text-gray-800">4. 自动保存，不怕丢失</h3>
-  <p class="mb-6 leading-relaxed">
-    写简历最怕什么？写到一半，浏览器崩溃或者不小心关了页面，辛辛苦苦写的内容全没了。好的在线工具通常有自动保存功能。你每填写或修改一点内容，它都会在后台默默帮你保存下来。下次你再打开这个工具，之前写的东西都还在，可以接着编辑。
-  </p>
+<h3>UUID v1 — 基于时间戳和MAC地址</h3>
+<p>UUID v1 结合了当前的时间戳和设备的MAC地址来生成唯一标识。优点是具有时间顺序性，便于排序；缺点是会暴露生成时间和设备MAC地址，存在一定的隐私风险。适用于需要追踪生成时间的场景。</p>
 
-  <h3 class="text-xl font-semibold mt-8 mb-3 text-gray-800">5. 一键导出，方便使用</h3>
-  <p class="mb-6 leading-relaxed">
-    简历做好之后，怎么用呢？总不能每次投递都让人家点开一个网页链接。这类工具一般都会提供“下载PDF”和“打印”功能。点一下按钮，就能把你做好的简历生成为一个标准的PDF文件。PDF格式通用，在任何电脑或手机上打开样子都不会变，非常适合作为邮件附件发送，或者上传到招聘网站。
-  </p>
+<h3>UUID v3 — 基于MD5哈希</h3>
+<p>UUID v3 通过对命名空间和名称进行 MD5 哈希运算生成。相同的输入总是产生相同的UUID，具有确定性。适用于需要根据固定输入生成一致UUID的场景，如URL映射。</p>
 
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">你可能还会关心这些问题</h2>
+<h3>UUID v4 — 随机生成（最常用）</h3>
+<p>UUID v4 完全基于随机数生成，是<strong>目前最广泛使用的版本</strong>。它不依赖任何系统信息，安全性高，生成速度快，碰撞概率极低。绝大多数在线UUID生成器默认生成的都是v4版本。</p>
 
-  <div class="space-y-6 mt-6">
-    <div>
-      <h4 class="font-semibold text-lg mb-2 text-gray-800">问：用它做出来的简历，看起来专业吗？</h4>
-      <p class="text-gray-700 leading-relaxed">
-        完全没问题。它的设计就是为了产出专业、规范的简历。模板的配色、字体、布局都经过设计，避免了个人手动排版可能产生的不协调。只要你的内容充实清晰，最终效果会比大多数人用普通文档软件做出来的更显专业。
-      </p>
-    </div>
+<h3>UUID v5 — 基于SHA-1哈希</h3>
+<p>UUID v5 与v3类似，但使用更安全的 SHA-1 哈希算法。适用于需要确定性生成UUID且要求更高安全性的场景。</p>
 
-    <div>
-      <h4 class="font-semibold text-lg mb-2 text-gray-800">问：我的个人信息安全吗？</h4>
-      <p class="text-gray-700 leading-relaxed">
-        这是大家很关心的一点。一个值得信赖的在线简历工具，其数据处理方式是透明的。有些工具会将数据仅保存在你当前使用的浏览器里（这叫“本地保存”），不上传到别人的服务器。这意味着你的手机号、工作经历等隐私信息只存在你自己的电脑或手机上，安全性更高。使用前可以留意一下工具有没有相关说明。
-      </p>
-    </div>
+<h3>UUID v7 — 基于Unix时间戳（新标准）</h3>
+<p>UUID v7 是较新的标准，基于Unix毫秒时间戳生成，兼具时间排序性和随机性，非常适合作为数据库主键使用，正在逐渐被主流数据库和框架所支持。</p>
 
-    <div>
-      <h4 class="font-semibold text-lg mb-2 text-gray-800">问：如果我有好几段教育或工作经历，怎么添加？</h4>
-      <p class="text-gray-700 leading-relaxed">
-        非常方便。在教育或工作经历的板块，通常会有一个醒目的“+ 添加经历”按钮。你需要增加一段，就点一下，页面上就会多出一个新的空表单让你填写。填好的经历会按时间顺序清晰地排列在简历上。如果你填错了想删除某一段，旁边也会有小按钮可以操作。
-      </p>
-    </div>
+<h2>UUID的主要使用场景</h2>
 
-    <div>
-      <h4 class="font-semibold text-lg mb-2 text-gray-800">问：免费的吗？有没有什么限制？</h4>
-      <p class="text-gray-700 leading-relaxed">
-        目前市面上很多基础的在线简历生成功能都是免费的，可以让你完整地创建、编辑并导出简历。这对于绝大多数求职者来说已经足够了。你可以先找一个免费的试试看，感受一下它是否满足你的需求。
-      </p>
-    </div>
-  </div>
+<h3>1. 数据库主键</h3>
+<p>传统自增整数主键在分布式数据库中容易产生冲突。使用UUID作为主键，可以在多个数据库节点独立生成唯一ID，无需全局协调，极大地简化了分布式架构设计。尤其是UUID v7，因其有序性，在数据库索引性能上优于纯随机的v4。</p>
 
-  <div class="mt-12 p-6 bg-gray-50 rounded-xl border border-gray-200">
-    <h3 class="text-xl font-semibold mb-4 text-gray-800">给你的一个小建议</h3>
-    <p class="mb-4 leading-relaxed">
-      工具再好，也只是帮你把内容呈现得更好看。简历的核心永远是你的真实经历和能力。在使用工具前，不妨先找个安静的时间，用纸笔或文档简单列出你的教育背景、每份工作的时间、岗位、主要职责和取得的成绩，还有你掌握的技能。先把这些“原材料”准备好，再往工具里填，效率会高很多。
-    </p>
-    <p class="leading-relaxed">
-      找工作的过程不容易，但一份好的简历是重要的敲门砖。与其在格式调整上花费过多精力，不如把这些时间省下来，去打磨简历的内容，或者多投递几份心仪的岗位。希望这个介绍能帮你找到一个得力的“小助手”，让准备简历这件事变得轻松一点。
-    </p>
-  </div>
+<h3>2. API密钥与访问令牌</h3>
+<p>生成API密钥、OAuth Token、会话ID（Session ID）等安全凭证时，使用UUID v4可以确保每次生成的结果唯一且不可预测，有效防止暴力枚举攻击。</p>
 
-  <p class="mt-12 text-center text-gray-500 text-sm leading-relaxed">
-    下次当你需要更新简历或者帮助朋友制作时，不妨在搜索引擎试试“在线简历生成器”、“免费简历模板制作”这样的关键词，亲自体验一下这种便捷的方式。
-  </p>
-</article>
-`;export{t as default};
+<h3>3. 文件与资源命名</h3>
+<p>在云存储、CDN或文件系统中，使用UUID对上传的文件重命名，可以避免文件名冲突，同时隐藏原始文件信息，提高安全性。</p>
+
+<h3>4. 分布式系统消息追踪</h3>
+<p>在微服务架构中，为每个请求或事件分配一个UUID作为追踪ID（Trace ID），可以方便地跨服务追踪调用链路，便于日志分析和问题排查。</p>
+
+<h3>5. 前端组件Key</h3>
+<p>在React、Vue等前端框架中，动态生成列表时需要为每个元素提供唯一的key，UUID是一个方便可靠的选择。</p>
+
+<h2>UUID的优缺点分析</h2>
+
+<h3>优点</h3>
+<ul>
+  <li><strong>全局唯一性</strong>：碰撞概率极低，适合分布式场景</li>
+  <li><strong>无需中央协调</strong>：各节点独立生成，无需与中心服务通信</li>
+  <li><strong>标准化格式</strong>：被各主流编程语言和数据库原生支持</li>
+  <li><strong>隐藏业务信息</strong>：不像自增ID会暴露数据规模</li>
+</ul>
+
+<h3>缺点</h3>
+<ul>
+  <li><strong>存储空间较大</strong>：128位（16字节）比整数主键（4-8字节）占用更多空间</li>
+  <li><strong>可读性差</strong>：不如自增整数直观，调试时较为繁琐</li>
+  <li><strong>随机UUID索引性能</strong>：UUID v4的随机性可能导致数据库B树索引碎片化，影响写入性能（可用UUID v7改善）</li>
+  <li><strong>URL不友好</strong>：字符串较长，不适合直接用于URL路径（可考虑Base64编码压缩）</li>
+</ul>
+
+<h2>如何使用UUID生成器</h2>
+
+<p>使用本工具生成UUID非常简单：</p>
+<ol>
+  <li>选择所需的UUID版本（推荐v4用于通用场景）</li>
+  <li>输入需要批量生成的数量（支持一次生成多个）</li>
+  <li>点击"生成"按钮，结果即刻显示</li>
+  <li>点击"复制"按钮将UUID复制到剪贴板</li>
+</ol>
+
+<p>生成的UUID可直接用于代码、数据库或任何需要唯一标识符的场合。</p>
+
+<h2>常见编程语言中生成UUID的方法</h2>
+
+<p>除了使用在线工具，开发者也可以在代码中直接生成UUID：</p>
+
+<h3>JavaScript / Node.js</h3>
+<pre><code>// 使用 crypto 模块（Node.js 14.17+）
+const { randomUUID } = require('crypto');
+const uuid = randomUUID(); // 生成 UUID v4
+
+// 或使用 uuid 库
+const { v4: uuidv4 } = require('uuid');
+const uuid = uuidv4();</code></pre>
+
+<h3>Python</h3>
+<pre><code>import uuid
+uuid_v4 = str(uuid.uuid4())  # 生成 UUID v4
+uuid_v1 = str(uuid.uuid1())  # 生成 UUID v1</code></pre>
+
+<h3>Java</h3>
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString(); // 生成 UUID v4</code></pre>
+
+<h3>Go</h3>
+<pre><code>import "github.com/google/uuid"
+id := uuid.New().String() // 生成 UUID v4</code></pre>
+
+<h3>PHP</h3>
+<pre><code>// PHP 没有内置UUID函数，推荐使用 ramsey/uuid 库
+use RamseyUuidUuid;
+$uuid = Uuid::uuid4()->toString();</code></pre>
+
+<h2>UUID常见问题（FAQ）</h2>
+
+<div class="faq-item">
+  <h3>Q1：UUID和GUID有什么区别？</h3>
+  <p>实际上，UUID和GUID是同一个概念的不同叫法。UUID是RFC 4122标准中的术语，而GUID（Global Unique Identifier）是微软在Windows/COM体系中对这一概念的称呼。两者格式完全相同，可以互换使用。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q2：UUID真的不会重复吗？</h3>
+  <p>UUID v4的随机版本共有122位随机数，可产生约5.3×10³⁶种不同的值。如果每秒生成10亿个UUID，大约需要1000亿年才可能出现碰撞。在实际应用中，碰撞概率可以忽略不计，但理论上并非绝对不会重复。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q3：UUID v4和v7哪个更适合作为数据库主键？</h3>
+  <p>如果使用MySQL、PostgreSQL等关系型数据库，推荐使用<strong>UUID v7</strong>。v7基于时间戳生成，具有单调递增的特性，能够保持B树索引的顺序性，避免v4随机UUID导致的页面碎片化问题，写入性能更好。如果对顺序性无要求，v4也完全够用。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q4：UUID是否安全，可以用作密码或密钥吗？</h3>
+  <p>UUID v4使用密码学安全的随机数生成器（CSPRNG）时具有较好的安全性，可用于生成API密钥、会话Token等。但UUID的格式是公开的，攻击者知道它是UUID格式。对于高安全性需求的场景，建议使用更长的随机字节（如32字节），并进行Base64或Hex编码。</p>
+</div>
+
+<div class="faq-item">
+  <h3>Q5：如何在MySQL中存储UUID？</h3>
+  <p>MySQL中存储UUID有两种常见方式：①以 <code>VARCHAR(36)</code> 存储带连字符的字符串格式；②使用 <code>BINARY(16)</code> 存储16字节的二进制格式（通过 <code>UUID_TO_BIN()</code> 和 <code>BIN_TO_UUID()</code> 函数转换），后者存储效率更高，索引性能更好。MySQL 8.0+原生支持UUID相关函数。</p>
+</div>
+
+<h2>总结</h2>
+
+<p>UUID/GUID 是现代软件开发中的核心工具，从数据库主键到分布式追踪，应用场景广泛。理解不同版本的区别——特别是 <strong>v1（时间+MAC）</strong>、<strong>v4（纯随机）</strong>、<strong>v7（时间有序）</strong> 的特性——有助于在正确的场景选用合适的版本。使用本在线UUID生成器，您可以快速生成符合RFC 4122标准的UUID，满足开发和测试的各类需求。</p>
+
+<p>如果您需要批量生成UUID或需要特定格式（大写、无连字符等），本工具均已支持，欢迎免费使用。</p>
+`;export{U as default};

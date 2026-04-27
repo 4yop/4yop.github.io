@@ -1,113 +1,71 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl font-bold tracking-tight text-gray-900 mb-4">神奇的复利：让您的财富像滚雪球一样增长</h1>
-  <p class="text-gray-600 mb-8">您是否好奇，为什么有人能通过储蓄或投资让财富稳定增值？秘密可能就藏在“复利”这个听起来有点专业，但其实非常简单的概念里。今天，我们就来聊聊这个普通人也能掌握的财富增长秘诀。</p>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
 
-  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
-    <p class="font-medium text-blue-800 mb-2">一句话理解复利：</p>
-    <p class="text-blue-700">“利滚利”。您投资获得的利息，会加入本金，在下一期继续产生新的利息。雪球就是这么滚大的。</p>
-  </div>
+  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">复利和您熟悉的“单利”有什么不同？</h2>
-  <p class="mb-6">为了更清楚，我们来打个比方：</p>
-  <div class="overflow-x-auto my-6">
-    <table class="min-w-full border border-gray-300 text-sm">
-      <thead class="bg-gray-100">
-        <tr>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">计算方式</th>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">简单理解</th>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">10年后结果 (1万元，年利率5%)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="hover:bg-gray-50">
-          <td class="border border-gray-300 px-4 py-3"><strong>单利</strong></td>
-          <td class="border border-gray-300 px-4 py-3">每年的利息只按最初的本金计算。</td>
-          <td class="border border-gray-300 px-4 py-3 font-mono">约 15，000 元</td>
-        </tr>
-        <tr class="hover:bg-gray-50">
-          <td class="border border-gray-300 px-4 py-3"><strong>复利</strong></td>
-          <td class="border border-gray-300 px-4 py-3">利息加入本金，一起计算下一年的利息。</td>
-          <td class="border border-gray-300 px-4 py-3 font-mono">约 16，289 元</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="mb-8 text-gray-700">看，仅仅10年，复利就多出了近1300元。时间越长，这个差距就会变得越惊人，这就是复利被爱因斯坦称为“世界第八大奇迹”的原因。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
+    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
+    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">影响复利效果的三个关键因素</h2>
-  <p class="mb-6">想让您的财富雪球滚得更快更大，主要看这三点：</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
+    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
+      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
+      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
+      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
+    </ul>
+    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
+  </section>
 
-  <div class="grid md:grid-cols-3 gap-6 my-8">
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">1. 本金：最初的雪球</h3>
-      <p class="text-gray-700">您最初投入的多少钱。本金越大，起点越高，未来增长的绝对数额自然也越大。这不意味着钱少就不能开始，恰恰相反，<strong>尽早开始</strong>同样重要。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">2. 利率：山坡的陡峭度</h3>
-      <p class="text-gray-700">您的钱每年能增长百分之几。利率越高，财富增长的速度就越快。但请记住，高收益往往伴随高风险，需要根据自身情况谨慎选择。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">3. 时间：山坡的长度</h3>
-      <p class="text-gray-700">这是<strong>最关键</strong>的因素。复利需要时间发酵。投资10年和投资30年，最终结果会是天壤之别。所以，理财规划中，“耐心”是最宝贵的品质。</p>
-    </div>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
+    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
+    <ol class="list-decimal pl-6 space-y-3 mb-6">
+      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
+      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
+      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
+    </ol>
+    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">普通人如何利用复利？两种常见思路</h2>
-  <p class="mb-4">理解了原理，我们该怎么用呢？主要有两种方式，对应不同的资金情况：</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
+    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
+      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
+      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
+      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
+    </ul>
+  </section>
 
-  <div class="space-y-8 my-8">
-    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
-      <div class="md:w-1/4">
-        <div class="bg-blue-100 text-blue-800 font-bold text-center py-4 px-2 rounded">
-          <p class="text-xl">方式一</p>
-          <p class="text-lg">一次性投入</p>
-        </div>
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
+        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
       </div>
-      <div class="md:w-3/4">
-        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您有一笔闲置资金</h3>
-        <p class="mb-3">比如年终奖、一笔存款，可以将其作为初始本金进行一次性的投资或储蓄，然后让它在漫长的岁月里通过复利自然生长。</p>
-        <p class="text-gray-600 text-sm"><strong>适合人群：</strong>手头有一笔闲钱，希望进行长期规划的人。</p>
+      <div>
+        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
+        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
+        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
       </div>
     </div>
+  </section>
 
-    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
-      <div class="md:w-1/4">
-        <div class="bg-green-100 text-green-800 font-bold text-center py-4 px-2 rounded">
-          <p class="text-xl">方式二</p>
-          <p class="text-lg">定期定额投入</p>
-        </div>
-      </div>
-      <div class="md:w-3/4">
-        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您每月有稳定结余</h3>
-        <p class="mb-3">也就是常说的“定投”。比如每月固定拿出1000元进行投资。这种方式好处很多：</p>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li><strong>积少成多：</strong>不知不觉中积累可观的本金。</li>
-          <li><strong>平摊成本：</strong>市场波动时，自动实现“买得多时价格低，买得少时价格高”。</li>
-          <li><strong>强迫储蓄：</strong>养成良好的理财习惯。</li>
-        </ul>
-        <p class="mt-3 text-gray-600 text-sm"><strong>适合人群：</strong>大多数有固定收入的工薪阶层，理财新手入门的好方法。</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">动手算一算：您的复利未来会是多少？</h2>
-  <p class="mb-6">光听概念可能还是有点模糊。现在有很多在线的<strong>复利计算器</strong>可以帮我们直观地看到结果。您可以尝试输入不同的数字，比如：</p>
-  <ul class="list-disc pl-5 space-y-3 mb-8 text-gray-700">
-    <li>如果每月定投1000元，年利率5%，30年后会变成多少钱？</li>
-    <li>如果一次性投入5万元，年利率8%，20年后和30年后差距有多大？</li>
-    <li>把复利频率从“一年一次”改成“一月一次”，结果会有什么变化？</li>
-  </ul>
-  <p class="mb-10 p-4 bg-gray-100 border-l-4 border-blue-500 italic">通过这样的模拟计算，您能更深刻地感受到时间、利率和投入方式对最终结果的影响，从而为自己制定更清晰、合理的长期理财目标。</p>
-
-  <div class="my-10 p-6 border border-yellow-300 bg-yellow-50 rounded-lg">
-    <h3 class="font-bold text-lg mb-3 text-gray-900">最后的小建议</h3>
-    <p class="mb-3">复利的魔力在于其长期性和稳定性。它不是一个让你一夜暴富的工具，而是一个关于<strong>耐心、纪律和长期规划</strong>的财富哲学。</p>
-    <p>最重要的步骤永远是：<strong>了解原理，设定目标，然后，尽早开始您的第一步。</strong></p>
-  </div>
-
-  <footer class="mt-12 pt-8 border-t border-gray-300 text-sm text-gray-500">
-    <p>希望这篇文章能帮助您理解复利这个强大的概念。理财路上，从理解一个简单的原理开始。请注意，文中涉及的数字均为示例，不构成任何具体的投资建议，实际投资需谨慎决策。</p>
-  </footer>
+  <section class="text-center py-8 border-t">
+    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
+    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
+    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
+  </section>
 </article>
-`;export{t as default};
+`;export{s as default};

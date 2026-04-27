@@ -1,79 +1,116 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
-
-  <p class="text-lg text-slate-600 mb-8">
-    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-blue-800">
-      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
+<div class="text-gray-800 bg-white">
+  <article class="max-w-4xl mx-auto px-4 py-8 md:px-6">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">屏幕录制其实很简单：一文看懂怎么录屏和常用设置</h1>
+    
+    <p class="mb-6 text-lg leading-relaxed">
+      你有没有遇到过这样的情景？想保存一段重要的线上会议内容，或是给朋友演示软件怎么操作，又或者想记录下自己打游戏的精彩瞬间，却不知道该怎么把电脑屏幕上的画面录下来。
     </p>
-  </div>
+    
+    <p class="mb-8 text-lg leading-relaxed">
+      别担心，屏幕录制这件事，远没有你想的那么复杂。今天我们就来聊聊，如何轻松地录制屏幕视频，以及那些听起来很专业的设置，到底该怎么选。
+    </p>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
-  <p class="mb-4">想一想这些场景：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
-    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
-    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
-  </ul>
-  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
-
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
-  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+      <p class="text-gray-700">
+        本文不涉及任何复杂的技术术语，就像朋友聊天一样，告诉你录屏的常识和技巧。
+      </p>
     </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
-    </div>
-  </div>
 
-  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
-
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
-  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
-    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
-    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
-  </ul>
-
-  <div class="bg-slate-50 p-6 rounded-lg mb-8">
-    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
-    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
-    <ul class="list-disc pl-5 space-y-1 text-slate-600">
-      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
-      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
-      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
-      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录屏能用来做什么？比你想象的更多</h2>
+    <p class="mb-4">
+      很多人觉得录屏是专业人士才用的功能，其实不然。它在我们的日常工作和生活中非常实用：
+    </p>
+    <ul class="list-disc pl-5 mb-8 space-y-2">
+      <li><strong>工作学习：</strong>保存重要的培训会议、制作软件操作教程、记录网课重点内容。</li>
+      <li><strong>生活娱乐：</strong>录制游戏高光时刻、保存线上家人的视频聊天、记录直播中有趣的片段。</li>
+      <li><strong>沟通协助：</strong>当用语言说不清电脑问题时，直接录一段视频发给别人看，一目了然。</li>
     </ul>
-  </div>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
-  <p class="mb-6">
-    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
-  </p>
-  <p class="mb-8">
-    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
-  </p>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录制前，需要了解的几项简单设置</h2>
+    <p class="mb-6">
+      开始录制前，你可能会看到几个选项。别被它们吓到，我们一个一个说清楚。
+    </p>
 
-  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
-    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
-  </div>
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">1. 清晰度（分辨率）：选适合的，不一定要最高的</h3>
+    <p class="mb-4">
+      就像电视有标清、高清一样，录屏也有清晰度选择。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>1080P：</strong>最清晰的选项，适合录制细节丰富的画面，比如设计软件操作、高清游戏。文件会比较大。</li>
+      <li><strong>720P：</strong>高清画质，适合大多数情况，比如录制会议、网页操作。清晰度和文件大小比较平衡，最常用。</li>
+      <li><strong>480P：</strong>普通画质，如果对清晰度要求不高，或者想快速分享一个小文件，可以选择它。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      简单来说，日常使用选720P就很好。如果录给手机看，480P也足够清晰。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">2. 画面比例：视频形状的长和宽</h3>
+    <p class="mb-4">
+      这个决定了你录出来的视频是“长方形”还是“正方形”。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>16:9：</strong>最常见的宽屏比例，和大多数电脑显示器、电视机、手机屏幕形状一样。录制通用视频就选它。</li>
+      <li><strong>4:3：</strong>稍微“方”一点的比例，一些老式显示屏或特定演示文稿会用到。</li>
+      <li><strong>1:1：</strong>正方形，适合录制一些用于社交媒体（如部分平台头像、短内容）的画面。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      不确定怎么选？直接选16:9，基本不会出错。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">3. 流畅度（帧率）：画面卡不卡的关键</h3>
+    <p class="mb-4">
+      帧率可以理解为1秒钟闪过多少张画面。数字越高，视频看起来就越流畅。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>60 FPS：</strong>非常流畅，适合录制快速变化的画面，比如动作类游戏、体育赛事视频。</li>
+      <li><strong>30 FPS：</strong>标准流畅度，适合录制办公软件操作、网页浏览、大部分会议和课程。这是最通用的选择。</li>
+      <li><strong>15 FPS：</strong>基本流畅，如果只是录制一些几乎静止的画面（比如一张PPT停留很久），为了节省文件空间可以考虑。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      录制普通操作选30就够用。如果录游戏，可以试试60，观感会更好。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">4. 视频格式和一个小细节</h3>
+    <p class="mb-4">
+      <strong>视频格式：</strong>简单理解为视频的“包装盒”。常见的有MP4和WebM。MP4兼容性最好，几乎所有电脑和手机都能直接打开播放，建议优先选择。WebM在某些情况下文件更小。
+    </p>
+    <p class="mb-8">
+      <strong>显示光标：</strong>这个选项打勾后，录制时会把你鼠标指针（那个小箭头）也录进去。这在制作教学视频时非常有用，别人可以清楚看到你点了哪里。如果只是录制电影或游戏画面，可以关掉。
+    </p>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">轻松三步，开始你的第一次录屏</h2>
+    <ol class="list-decimal pl-5 mb-8 space-y-4">
+      <li>
+        <strong>第一步：选好设置。</strong>根据上面介绍的，结合你的用途，选好清晰度、比例等。第一次可以用推荐的组合：720P、16:9、30帧、MP4格式、勾选显示光标。
+      </li>
+      <li>
+        <strong>第二步：开始录制。</strong>点击“开始录制”按钮。这时，你的电脑通常会让你选择“要录制整个屏幕，还是只录制某个软件窗口”。根据你的需要选择即可。
+      </li>
+      <li>
+        <strong>第三步：结束与保存。</strong>录制完成后，点击“停止录制”。视频会自动保存到录制记录列表里。你可以播放预览，也可以点击“下载”把视频文件保存到自己的电脑中。
+      </li>
+    </ol>
+
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-10">
+      <h3 class="text-xl font-medium mb-3 text-gray-900">几个实用小贴士</h3>
+      <ul class="space-y-2">
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录制前，关闭不必要的网页和软件通知，避免隐私信息或弹窗被录进去。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>如果需要录音（比如讲解），记得在开始录制时，同意浏览器使用麦克风的请求。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录好的视频如果不需要了，记得在列表里“删除”，可以帮电脑节省空间。</span></li>
+      </ul>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">总结</h2>
+    <p class="mb-4">
+      屏幕录制并不是一项专业技能，它只是一个方便我们保存和分享视觉信息的工具。
+    </p>
+    <p class="mb-4">
+      记住核心要点：<strong>日常使用，720P、30帧、MP4格式就是黄金组合</strong>。其他设置可以根据特殊需求稍作调整。
+    </p>
+    <p class="mb-10 text-lg">
+      希望这篇文章能帮你打消对录屏的陌生感。下次再需要保存屏幕上的精彩内容时，不妨轻松地试一试吧。
+    </p>
+  </article>
 </div>
 `;export{s as default};

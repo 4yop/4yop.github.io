@@ -1,49 +1,101 @@
-const l={title:"SVG转CSS工具使用说明",content:`
-<h2>SVG转CSS工具介绍</h2>
-<p>本工具可以将SVG图片转为CSS中可调用的样式，比如CSS背景图、遮罩图像、列表样式图标等。</p>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-800">
+  <article>
+    <!-- 文章标题 -->
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center sm:text-left">长图太烦人？试试这个免费在线切割工具</h1>
+    <p class="text-gray-600 text-lg mb-8 leading-relaxed">是不是经常遇到长图发送失败、查看不方便的问题？这篇文章教你一个简单方法，轻松把长图切成几小份。</p>
 
-<h3>功能特点</h3>
-<ul>
-<li><strong>多种输入方式</strong>：支持直接粘贴SVG代码或上传SVG文件</li>
-<li><strong>引号设置</strong>：可以设置SVG转换后CSS属性中使用单引号还是双引号</li>
-<li><strong>CSS Code输出</strong>：为SVG图片转换为CSS后的代码，包含background-image、mask-image、list-style-image等多种用法</li>
-<li><strong>Base64 Code输出</strong>：表示SVG转为base64格式的图片编码，可直接用于img标签的src属性等场景</li>
-<li><strong>实时预览</strong>：输入SVG后可预览效果</li>
-</ul>
+    <!-- 引导图片 -->
+    <div class="my-8 bg-gray-50 rounded-xl p-4 border border-gray-200">
+      <p class="text-gray-700 mb-2">一个工具，解决长图带来的所有麻烦。</p>
+    </div>
 
-<h3>使用方法</h3>
-<ol>
-<li><strong>选择输入方式</strong>：点击"粘贴代码"或"上传文件"标签切换输入模式</li>
-<li><strong>输入SVG</strong>：
-<ul>
-<li>粘贴模式：将SVG代码粘贴到文本框中</li>
-<li>上传模式：点击选择区域或拖拽SVG文件到上传区域</li>
-</ul>
-</li>
-<li><strong>设置选项</strong>：
-<ul>
-<li>选择引号类型（单引号/双引号）</li>
-<li>选择输出格式（仅CSS/仅Base64/全部显示）</li>
-</ul>
-</li>
-<li><strong>点击转换</strong>：点击"开始转换"按钮生成结果</li>
-<li><strong>复制使用</strong>：点击"复制代码"按钮复制结果到剪贴板</li>
-</ol>
+    <!-- 问题引入 -->
+    <h2 class="text-2xl font-semibold mt-10 mb-4">为什么需要切割长图？</h2>
+    <p class="mb-4 leading-relaxed">你可能遇到过这些情况：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+      <li>在聊天软件里发送一张很长的产品介绍图，结果被压缩得看不清。</li>
+      <li>做了一张电商商品详情长图，但上传到平台有高度限制。</li>
+      <li>想在朋友圈或微博分享一张长截图，但加载速度很慢。</li>
+      <li>一张超长的全家福或风景图，在手机上浏览需要来回滑动。</li>
+    </ul>
+    <p class="mb-6 leading-relaxed">这些问题，其实只需要把一张长图横向切成几个部分，就能轻松解决。就像把一张很长的纸，按虚线撕成几页小册子一样方便。</p>
 
-<h3>应用场景</h3>
-<ul>
-<li><strong>CSS背景图</strong>：将SVG作为元素的背景图使用，无需额外请求图片资源</li>
-<li><strong>图标字体替代</strong>：用SVG代替图标字体，支持多色图标且更灵活</li>
-<li><strong>列表样式</strong>：自定义列表项的前缀图标</li>
-<li><strong>伪元素装饰</strong>：在::before和::after伪元素中使用SVG图形</li>
-<li><strong>遮罩效果</strong>：使用SVG作为元素的遮罩图像实现特殊形状裁剪</li>
-</ul>
+    <!-- 解决方案 -->
+    <h2 class="text-2xl font-semibold mt-10 mb-4">怎么把长图分成几部分？</h2>
+    <p class="mb-4 leading-relaxed">过去你可能需要专门安装一个软件，或者找人帮忙处理。现在完全不需要那么麻烦了。</p>
+    <p class="mb-6 leading-relaxed">网上有一些免费的工具，打开浏览器就能用。你只需要上传图片，告诉它你想怎么切，它马上就能帮你处理好，而且可以直接下载。</p>
 
-<h3>注意事项</h3>
-<ul>
-<li>本工具不会收集您处理的数据，所有操作在浏览器本地完成</li>
-<li>请在正式使用前对生成的CSS代码进行测试</li>
-<li>复杂的SVG（如包含外部引用、脚本等）可能无法正常转换</li>
-<li>Base64编码会增加数据体积约33%，请根据实际场景选择合适的格式</li>
-</ol>
-`};export{l as default};
+    <!-- 功能介绍（非技术描述） -->
+    <h2 class="text-2xl font-semibold mt-10 mb-4">一个好用的工具能做什么？</h2>
+    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg mb-2 text-gray-800">两种切法，随你选</h3>
+        <p class="text-gray-700">你可以选择“切成平均的几份”，比如一份长图切成4等份。或者选择“按固定高度来切”，比如规定每一部分都是500像素高，工具会自动计算能切出几份。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg mb-2 text-gray-800">先看效果，再保存</h3>
+        <p class="text-gray-700">切割之后，所有的小图会像照片墙一样展示出来，你可以一张一张点开看，确认没问题了再下载。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg mb-2 text-gray-800">格式和大小自己定</h3>
+        <p class="text-gray-700">可以选择保存为常见的JPG、PNG格式，还能调整JPG图片的清晰度，在文件大小和图片质量之间找到平衡。</p>
+      </div>
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+        <h3 class="font-medium text-lg mb-2 text-gray-800">下载方式很灵活</h3>
+        <p class="text-gray-700">你可以把所有切割后的小图打包成一个压缩文件下载，也可以选择单独下载某一张，非常方便。</p>
+      </div>
+    </div>
+
+    <!-- 使用场景 -->
+    <h2 class="text-2xl font-semibold mt-10 mb-4">哪些地方会用到这个功能？</h2>
+    <p class="mb-4 leading-relaxed">这个功能在生活中和工作中都很实用：</p>
+    <div class="space-y-4 mb-8">
+      <div class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
+          <span class="text-blue-600 text-sm font-medium">1</span>
+        </div>
+        <div>
+          <p class="font-medium text-gray-800">电商卖家</p>
+          <p class="text-gray-700">将长长的商品详情页图片切割后，分开发布到商品介绍里，让买家看得更顺畅。</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
+          <span class="text-blue-600 text-sm font-medium">2</span>
+        </div>
+        <div>
+          <p class="font-medium text-gray-800">社交媒体用户</p>
+          <p class="text-gray-700">在朋友圈、微博或小红书发布长图教程、旅行游记时，切成几份发布，加载更快，体验更好。</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
+          <span class="text-blue-600 text-sm font-medium">3</span>
+        </div>
+        <div>
+          <p class="font-medium text-gray-800">普通生活记录</p>
+          <p class="text-gray-700">将一张超长的聊天记录截图、全家福长图或风景照切割，方便分享给家人朋友。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 操作步骤（通俗版） -->
+    <h2 class="text-2xl font-semibold mt-10 mb-4">使用起来有多简单？</h2>
+    <p class="mb-6 leading-relaxed">整个过程只需要几步，在手机或电脑上都能完成：</p>
+    <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
+      <li><span class="font-medium">上传图片</span>：点击上传按钮，从你的手机相册或电脑里选择一张长图。</li>
+      <li><span class="font-medium">选择切法</span>：告诉工具你想“平均切成几份”还是“按固定的高度来切”。</li>
+      <li><span class="font-medium">预览效果</span>：工具会立刻生成切割后的小图预览，你可以检查是否满意。</li>
+      <li><span class="font-medium">保存图片</span>：满意后，点击一个按钮，所有的小图就会打包好让你下载到本地。</li>
+    </ol>
+
+    <!-- 总结 -->
+    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mt-12">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">写在最后</h3>
+      <p class="text-gray-700 mb-3">处理长图不再是一个技术难题。利用这些免费、在线的工具，你可以轻松地把一张难以处理的图片，变成几张方便分享、查看和传播的小图。</p>
+      <p class="text-gray-700">下次再遇到长图的烦恼时，不妨试试这个简单的方法。</p>
+    </div>
+  </article>
+</div>
+`;export{s as default};

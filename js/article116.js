@@ -1,103 +1,167 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+  <article>
     <!-- 标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">批量翻译文件名，轻松整理英文文档！这个工具让你省时省力</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">文字一键变美图：简单好用的在线文字图片生成工具</h1>
 
-<!-- 导语 -->
-<p class="text-lg text-gray-600 mb-8 leading-relaxed">
-    你是否经常从网上下载一堆英文文件，文件名乱七八糟，完全看不懂是什么？想整理却不知道从何下手，一个个重命名又太麻烦？今天就给大家介绍一个超实用的文件名翻译工具，帮你一键批量翻译，文件再多也不怕。
-</p>
+    <!-- 引言 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 sm:mb-8 rounded-r">
+      <p class="text-gray-800">
+        你是否遇到过这样的情况：想在朋友圈发一段有格调的句子，配图却找不到合适的？或者，为工作报告、演示文稿制作一张清晰又美观的标题图，总觉得用软件太麻烦？今天，我们就来聊聊一个能解决这些烦恼的小工具——在线文字图片生成器。
+      </p>
+    </div>
 
-<!-- 痛点描述 -->
-<h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">为什么你需要一个文件名翻译工具？</h2>
-<p class="text-gray-700 mb-4 leading-relaxed">
-    相信很多朋友都有过这样的经历：下载的学习资料、工作文档、设计素材，文件名全是英文缩写或专业术语，只看文件名根本不知道里面是什么。想分类整理，又懒得一个一个查字典重命名。更麻烦的是，如果文件很多，手动改名不仅耗时，还容易出错，比如不小心删掉扩展名导致文件打不开。
-</p>
-<p class="text-gray-700 mb-4 leading-relaxed">
-    这时候，一个智能的文件名翻译工具就能帮你大忙。它能把英文文件名快速翻译成中文，让你一眼就知道文件内容，整理起来事半功倍。
-</p>
-
-<!-- 功能介绍 -->
-<h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">智能翻译，保留原文件格式</h2>
-<p class="text-gray-700 mb-4 leading-relaxed">
-    这款工具的核心功能就是批量翻译文件名。你只需要把文件拖进去，它就会自动识别文件名中的英文部分，并翻译成准确的中文。最贴心的是，它会智能保留文件的扩展名（比如 .pdf、.jpg、.docx），翻译后文件依然能正常打开，完全不影响使用。
-</p>
-<p class="text-gray-700 mb-4 leading-relaxed">
-    不管是图片、文档、压缩包还是视频，所有常见格式都支持。翻译完成后，你还可以手动微调翻译结果，确保文件名完全符合你的要求。
-</p>
-
-<!-- 隐私安全 -->
-<h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">本地翻译，保护隐私安全</h2>
-<p class="text-gray-700 mb-4 leading-relaxed">
-    很多人担心把文件上传到网上的翻译工具会泄露隐私，尤其是涉及合同、报表等敏感文档。这款工具完全不用担心，它的翻译功能是在你的电脑本地运行的，文件根本不需要上传到任何服务器。所有处理都在你自己的设备上完成，隐私安全有保障。
-</p>
-
-<!-- 使用方法 -->
-<h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">三步搞定，简单到不用学</h2>
-<div class="space-y-6">
-    <div class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold mr-4">1</span>
-        <div>
-            <h3 class="text-xl font-medium text-gray-900">上传文件</h3>
-            <p class="text-gray-700">点击上传区域，可以一次性选择多个文件（支持按住 Ctrl 或 Shift 多选）。选中的文件会立刻显示在列表中。</p>
+    <!-- 第一部分：什么是文字图片，有什么用？ -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">一、 为什么需要把文字做成图片？</h2>
+      <p class="text-gray-700 mb-4">纯文字发布，有时显得单调，难以抓住眼球。而一张精心设计的文字图片，却能瞬间提升内容的质感。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">社交媒体分享</h3>
+          <p class="text-gray-600">把喜欢的名言、诗句、心情语录配上好看的字体和背景，生成图片分享到朋友圈、微博、小红书，点赞率更高。</p>
         </div>
-    </div>
-    <div class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold mr-4">2</span>
-        <div>
-            <h3 class="text-xl font-medium text-gray-900">一键翻译</h3>
-            <p class="text-gray-700">点击“开始翻译”按钮，稍等片刻（翻译速度取决于你的电脑性能和文件数量），每个文件的中文名就会自动填好。</p>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">内容创作与展示</h3>
+          <p class="text-gray-600">为公众号文章制作头图、为视频制作封面、为电商商品制作宣传标语，一张好的文字图是吸引用户点击的第一步。</p>
         </div>
-    </div>
-    <div class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold mr-4">3</span>
-        <div>
-            <h3 class="text-xl font-medium text-gray-900">下载结果</h3>
-            <p class="text-gray-700">翻译完成后，你可以直接点击单个文件下载，也可以把所有文件打包成一个压缩包一次性下载。文件名字已经换成中文，扩展名完好无损。</p>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">学习与工作</h3>
+          <p class="text-gray-600">提炼PPT的核心观点、制作学习卡片、整理知识重点，图片形式更直观，也方便保存和传播。</p>
         </div>
-    </div>
-</div>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">个人表达</h3>
+          <p class="text-gray-600">生日祝福、节日问候、活动邀请，用一张自定义的图片来表达，比普通文字消息更有心意和仪式感。</p>
+        </div>
+      </div>
+    </section>
 
-<!-- 适用场景 -->
-<h2 class="text-2xl font-semibold mt-12 mb-4 text-gray-900">这些场景，你一定用得上</h2>
-<ul class="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-    <li><span class="font-medium">留学生整理课程资料：</span>教授发的英文课件、参考文献，翻译后一目了然，复习时找资料超快。</li>
-    <li><span class="font-medium">职场人士处理外文合同：</span>客户发来的英文合同、报价单，翻译文件名后分类存档，再也不会搞混。</li>
-    <li><span class="font-medium">设计师整理国外素材：</span>从 Pinterest 或国外网站下载的设计参考，文件名翻译成中文，方便日后查找。</li>
-    <li><span class="font-medium">普通用户管理下载文件：</span>电影、音乐、电子书，翻译后直接按中文名归档，整个硬盘都清爽了。</li>
-</ul>
+    <!-- 第二部分：这个生成工具的核心特点 -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">二、 一个好用的文字图片工具应该什么样？</h2>
+      <p class="text-gray-700 mb-6">一个对普通人友好的工具，关键在于“简单”和“效果”。下面这几条，我认为很重要：</p>
+      <ul class="space-y-4 sm:space-y-5">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-green-600 font-bold text-sm">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">所见即所得，实时预览</h3>
+            <p class="text-gray-600">调整任何设置，比如字体大小、颜色，旁边的图片预览区立刻就能看到变化。不用猜效果，非常直观。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-blue-600 font-bold text-sm">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">样式丰富，自由搭配</h3>
+            <p class="text-gray-600">不仅有多种中文字体可选，还能设置纯色或漂亮的渐变色彩，给文字加粗、变斜体、加阴影，让文字更有设计感。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-purple-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-purple-600 font-bold text-sm">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">操作简单，不用学习</h3>
+            <p class="text-gray-600">所有功能都用滑块、按钮、颜色选择器来操作，就像玩简单的游戏一样。还有现成的模板可以一键套用，三秒出图。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-yellow-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-yellow-600 font-bold text-sm">4</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">输出方便，格式齐全</h3>
+            <p class="text-gray-600">做好图片后，可以下载成常用的PNG或JPG格式，高清无水印。有些工具还支持直接复制图片到手机相册，分享更快捷。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-<!-- 常见问题 -->
-<h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">你可能想问</h2>
-<div class="space-y-4">
-    <div>
-        <h3 class="text-lg font-medium text-gray-900">翻译准确吗？</h3>
-        <p class="text-gray-700">工具使用的是先进的本地翻译模型，对常见的英文单词、短语翻译准确度很高。如果有个别词翻译不理想，你还可以手动修改。</p>
-    </div>
-    <div>
-        <h3 class="text-lg font-medium text-gray-900">支持哪些语言？</h3>
-        <p class="text-gray-700">目前主要支持英文翻译成中文，后续可能会增加更多语种。</p>
-    </div>
-    <div>
-        <h3 class="text-lg font-medium text-gray-900">文件会泄露吗？</h3>
-        <p class="text-gray-700">完全不会！所有翻译都在你的电脑本地完成，文件不上传，隐私绝对安全。</p>
-    </div>
-    <div>
-        <h3 class="text-lg font-medium text-gray-900">一次能翻译多少个文件？</h3>
-        <p class="text-gray-700">没有数量限制，你可以一次性上传几十甚至上百个文件，工具会批量处理。</p>
-    </div>
-</div>
+    <!-- 第三部分：如何使用（非教程，是功能介绍） -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">三、 它是如何帮你制作图片的？</h2>
+      <p class="text-gray-700 mb-6">整个过程就像在纸上画画写字一样自然，只不过这张“纸”和“笔”都在网页上。你只需要关注你想表达的内容和喜欢的样子。</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">1</span>
+            第一步：写下你的文字
+          </h3>
+          <p class="text-gray-600 pl-11">在最上面的文本框里，输入任何你想展示的文字。可以是一句话，一段诗，或者一个标题。支持换行，让排版更灵活。</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">2</span>
+            第二步：打扮你的文字
+          </h3>
+          <p class="text-gray-600 pl-11 mb-3">这是最有意思的部分。就像给文字“选衣服”：</p>
+          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
+            <li><strong>选字体和大小</strong>：用宋体显得端庄，用黑体显得醒目，用楷体显得文艺。滑动滑块就能轻松改变字号。</li>
+            <li><strong>选颜色</strong>：可以选一个单色，更推荐试试“渐变色”，让文字从一种颜色自然过渡到另一种，效果非常出彩。</li>
+            <li><strong>加特效</strong>：勾选“粗体”让文字更有力量，勾选“阴影”让文字从背景中跳出来。</li>
+            <li><strong>调位置</strong>：选择让文字居中对齐、靠左还是靠右。</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">3</span>
+            第三步：布置你的画布
+          </h3>
+          <p class="text-gray-600 pl-11 mb-3">画布就是文字背后的那张“纸”。你可以：</p>
+          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
+            <li>设置画布的宽和高，适应不同平台（如手机竖屏、电脑横屏）。</li>
+            <li>选择画布的背景颜色，白色简洁，浅灰色柔和，选一个和文字搭配的颜色。</li>
+            <li>调整文字距离画布边缘的“内边距”，让版面看起来更舒服。</li>
+            <li>如果不知道设多大，可以直接点击“16:9”（视频比例）、“1:1”（正方形）等常用比例按钮。</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">4</span>
+            第四步：保存与使用
+          </h3>
+          <p class="text-gray-600 pl-11">图片满意后，点击“下载PNG”或“下载JPG”就能保存到电脑或手机里。有些工具提供“复制图片”功能，可以直接粘贴到聊天软件里发送。</p>
+        </div>
+      </div>
+    </section>
 
-<!-- 结语 -->
-<div class="mt-12 p-6 bg-gray-50 rounded-lg text-center">
-    <p class="text-lg text-gray-800">
-        如果你也经常被一堆英文文件名困扰，不妨试试这个工具。它免费、安全、简单，能让你的文件管理效率翻倍。现在就上传几个文件体验一下吧！
-    </p>
-</div>
+    <!-- 第四部分：技巧和小建议 -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">四、 几个让图片更好看的小技巧</h2>
+      <div class="bg-gradient-to-r from-gray-50 to-white p-5 sm:p-6 rounded-xl border border-gray-200">
+        <ul class="space-y-3 sm:space-y-4">
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>从模板开始</strong>：如果不熟悉配色和搭配，可以先使用“经典黑白”、“渐变蓝紫”等预设模板，在其基础上微调，能快速找到感觉。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>对比产生美</strong>：深色文字配浅色背景，或浅色文字配深色背景，这样阅读起来最清晰。如果文字用了很亮的颜色，背景就用暗一些的来衬托。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>留白很重要</strong>：适当增加“内边距”，不要让文字挤满画布的边缘，留出一些空白会让整体看起来更高级、更舒适。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>内容精炼</strong>：一张图片上的文字不宜过多，突出重点即可。如果需要表达长篇内容，可以制作成系列图片。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<!-- 尾部提示（纯装饰，无功能） -->
-<div class="text-sm text-gray-400 text-center mt-8 border-t pt-6">
-    批量翻译文件名 | 英文文件名翻译中文 | 本地翻译工具
+    <!-- 结尾 -->
+    <section class="pt-6 border-t border-gray-200">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">总结</h2>
+      <p class="text-gray-700 text-lg text-center mb-6">
+        把文字变成好看的图片，已经不再是设计师的专属技能。借助简单易用的<span class="font-medium text-gray-900">在线文字图片生成工具</span>，每个人都能轻松制作出用于分享、工作或学习的精美图文。下次当你有了一段想突出展示的文字时，不妨试试这个方法，给你的表达增添一份视觉的魅力。
+      </p>
+      <div class="text-center text-gray-500 text-sm">
+        <p>希望这篇文章能帮助你了解如何制作文字图片。关键就是：<strong>写下想法，自由设计，轻松保存</strong>。</p>
+      </div>
+    </section>
+  </article>
 </div>
-</div>
-`;export{t as default};
+`;export{s as default};

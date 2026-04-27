@@ -1,135 +1,251 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h1>
+<article class="article-content">
+  <header class="article-header">
+    <h1 class="article-title">正则表达式测试工具 - 在线正则匹配、替换与调试</h1>
+    <p class="article-meta">发布日期：2026-03-28 | 阅读时间：8分钟</p>
+  </header>
 
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      你是否遇到过这样的烦恼？公司发来一个包含上百位客户联系方式的Excel表格，或者社团活动收集了一大堆成员信息。看着密密麻麻的姓名和电话，难道要一个一个手动输入到手机里？别担心，今天教你一个省时省力的好方法。
-    </p>
+  <section class="article-section intro">
+    <p class="lead">在处理文本数据时，你是否经常遇到需要批量查找、替换或验证特定格式内容的场景？手动处理不仅效率低下，还容易出错。<strong>正则表达式测试工具</strong>正是为解决这类问题而生的利器。本文将带你深入了解正则表达式的核心概念、实际应用场景，以及如何利用我们的在线正则测试工具提升工作效率。</p>
+  </section>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-8 rounded-r-lg">
-      <p class="text-gray-700">
-        <strong>核心方法：</strong>借助一个在线工具，将Excel文件（.xlsx或.xls格式）转换成手机能认识的“通讯录文件”（VCF格式），然后一键导入。
-      </p>
+  <section class="article-section">
+    <h2>什么是正则表达式</h2>
+    <p>正则表达式（Regular Expression，简称Regex或Regexp）是一种用于描述字符串匹配模式的强大工具。它由一系列特殊字符和普通字符组成，可以精确地定义搜索、匹配、替换的规则。</p>
+    
+    <div class="highlight-box">
+      <h3>正则表达式的核心优势</h3>
+      <ul>
+        <li><strong>精确匹配</strong>：通过模式定义，精准定位目标文本</li>
+        <li><strong>批量处理</strong>：一次性处理大量数据，无需逐条检查</li>
+        <li><strong>跨语言通用</strong>：几乎所有编程语言都支持正则表达式</li>
+        <li><strong>高效简洁</strong>：用简短的模式表达复杂的匹配逻辑</li>
+      </ul>
     </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">一、为什么需要转换？直接复制不行吗？</h2>
-      <p class="text-gray-700 mb-4">
-        手机通讯录和Excel表格是两种完全不同的“语言”。手机无法直接理解Excel里一行行的数据。而<strong>VCF文件（也叫vCard）</strong>，就像是全球通讯录的“通用翻译官”，iPhone、安卓手机、邮箱（如QQ邮箱、Gmail）都能识别并导入它。
-      </p>
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <h3 class="font-medium text-gray-800 mb-2">你可以用它来做什么：</h3>
-        <ul class="text-gray-600 list-disc pl-5 space-y-1">
-          <li>批量导入工作客户、合作伙伴的联系方式。</li>
-          <li>快速备份或迁移手机通讯录到新手机。</li>
-          <li>整理社团、班级、活动参与者的名单。</li>
-          <li>将线上收集的表单数据（导出为Excel后）变成手机联系人。</li>
-        </ul>
+    <p>正则表达式的历史可以追溯到20世纪50年代，由数学家Stephen Kleene提出。如今，它已成为程序员、数据分析师、运维工程师等技术人员必备的技能之一。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>正则表达式的应用场景</h2>
+    <p>正则表达式在现代软件开发和数据处理中无处不在。以下是几个最常见的应用场景：</p>
+
+    <h3>1. 表单验证</h3>
+    <p>在Web开发中，用户输入的数据需要经过严格验证。正则表达式可以轻松实现：</p>
+    <ul>
+      <li>邮箱格式验证：确保用户输入的是有效的电子邮件地址</li>
+      <li>手机号验证：检查手机号码是否符合规范</li>
+      <li>密码强度检测：验证密码是否包含大小写字母、数字和特殊字符</li>
+      <li>身份证号验证：校验身份证号码的格式和校验位</li>
+    </ul>
+
+    <h3>2. 文本处理与清洗</h3>
+    <p>数据分析师经常需要从非结构化文本中提取有价值的信息：</p>
+    <ul>
+      <li>从网页HTML中提取特定标签内容</li>
+      <li>批量替换文档中的敏感词汇</li>
+      <li>格式化日期、时间、货币等数据</li>
+      <li>删除多余的空格、换行符或特殊字符</li>
+    </ul>
+
+    <h3>3. 日志分析</h3>
+    <p>运维工程师使用正则表达式分析服务器日志：</p>
+    <ul>
+      <li>提取错误日志中的关键信息</li>
+      <li>统计特定IP地址的访问频率</li>
+      <li>分析用户行为模式和访问路径</li>
+      <li>监控异常请求和潜在攻击</li>
+    </ul>
+
+    <h3>4. 代码重构</h3>
+    <p>开发者利用正则表达式进行代码批量修改：</p>
+    <ul>
+      <li>批量重命名变量或函数</li>
+      <li>统一代码格式和命名规范</li>
+      <li>查找未使用的代码片段</li>
+      <li>迁移旧API到新接口</li>
+    </ul>
+  </section>
+
+  <section class="article-section">
+    <h2>常用正则表达式模式大全</h2>
+    <p>掌握常用正则模式可以大幅提升工作效率。以下是我们精心整理的高频使用模式：</p>
+
+    <div class="pattern-table">
+      <table>
+        <thead>
+          <tr>
+            <th>用途</th>
+            <th>正则表达式</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>邮箱验证</td>
+            <td><code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$</code></td>
+            <td>匹配标准邮箱格式</td>
+          </tr>
+          <tr>
+            <td>手机号（中国）</td>
+            <td><code>^1[3-9]\\d{9}$</code></td>
+            <td>匹配11位手机号码</td>
+          </tr>
+          <tr>
+            <td>身份证号</td>
+            <td><code>^\\d{15}|\\d{18}$</code></td>
+            <td>匹配15位或18位身份证号</td>
+          </tr>
+          <tr>
+            <td>URL地址</td>
+            <td><code>^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$</code></td>
+            <td>匹配HTTP/HTTPS网址</td>
+          </tr>
+          <tr>
+            <td>IP地址</td>
+            <td><code>^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$</code></td>
+            <td>匹配IPv4地址</td>
+          </tr>
+          <tr>
+            <td>中文字符</td>
+            <td><code>[\\u4e00-\\u9fa5]+</code></td>
+            <td>匹配一个或多个中文字符</td>
+          </tr>
+          <tr>
+            <td>数字提取</td>
+            <td><code>\\d+</code></td>
+            <td>匹配连续的数字</td>
+          </tr>
+          <tr>
+            <td>日期格式（YYYY-MM-DD）</td>
+            <td><code>^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$</code></td>
+            <td>匹配标准日期格式</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>使用我们的<strong>正则表达式测试工具</strong>，你可以实时验证这些模式，并根据实际需求进行调整。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>正则调试技巧与最佳实践</h2>
+    <p>编写正确的正则表达式往往是一个迭代调试的过程。以下是一些实用的调试技巧：</p>
+
+    <h3>1. 从简单开始，逐步复杂</h3>
+    <p>不要试图一次性写出完美的正则表达式。先匹配最简单的形式，然后逐步添加约束条件。例如，验证邮箱可以先从匹配<code>@</code>符号开始，再逐步完善前后缀的校验规则。</p>
+
+    <h3>2. 善用分组和捕获</h3>
+    <p>使用括号<code>()</code>进行分组，不仅可以应用量词，还能捕获匹配内容供后续使用。非捕获组<code>(?:)</code>在不需要捕获时可以提高性能。</p>
+
+    <h3>3. 注意贪婪与懒惰匹配</h3>
+    <p>默认情况下，量词（如<code>*</code>、<code>+</code>）是贪婪的，会尽可能多地匹配字符。在需要最小匹配时，使用懒惰版本（<code>*?</code>、<code>+?</code>）。</p>
+
+    <h3>4. 使用在线工具辅助调试</h3>
+    <p>我们的正则表达式测试工具提供了实时匹配高亮、分组显示、替换预览等功能，是调试复杂正则的得力助手。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>学习正则表达式的建议路径</h2>
+    <p>正则表达式虽然强大，但学习曲线相对陡峭。以下是我们推荐的学习路径：</p>
+
+    <div class="learning-path">
+      <div class="step">
+        <span class="step-number">1</span>
+        <div class="step-content">
+          <h4>掌握基础元字符</h4>
+          <p>学习<code>.</code>、<code>*</code>、<code>+</code>、<code>?</code>、<code>^</code>、<code>$</code>等基本符号的含义和用法。</p>
+        </div>
       </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">二、从Excel到手机通讯录，只需简单几步</h2>
-      <ol class="space-y-6">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">准备好你的Excel文件</h4>
-            <p class="text-gray-600">确保表格第一行是标题，比如“姓名”、“电话”、“公司”等。这是关键，工具要靠标题来识别哪一列是什么信息。数据从第二行开始填写。</p>
-            <p class="text-sm text-gray-500 mt-1">（如果不知道怎么整理，很多工具都提供“模板”下载，照着填就行。）</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">上传文件并“对号入座”</h4>
-            <p class="text-gray-600">在工具页面上传你的Excel文件。上传后，工具会列出你表格里的所有标题（如姓名、电话）。你需要简单地告诉它：我的“姓名”信息在表格的哪一列，“电话”在哪一列。</p>
-            <p class="text-sm text-gray-500 mt-1">（通常工具会智能猜测，你检查一下是否正确即可。）</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">预览并转换下载</h4>
-            <p class="text-gray-600">确认字段匹配无误后，可以先预览几行数据。点击“转换”按钮，几秒钟后，就会生成一个 <code class="bg-gray-100 px-1 rounded text-sm">.vcf</code> 文件并自动下载到你的电脑或手机上。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">4</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">将VCF文件导入手机</h4>
-            <p class="text-gray-600 mb-2">这是最后一步，也非常简单：</p>
-            <div class="grid md:grid-cols-2 gap-4 mt-3">
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">苹果iPhone用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>找到下载好的 .vcf 文件（通常在“文件”App里）。</li>
-                  <li>点击它，系统会自动提示用“通讯录”应用打开。</li>
-                  <li>点击“添加所有联系人”即可。</li>
-                </ul>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">安卓手机用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>在手机的文件管理器中找到 .vcf 文件。</li>
-                  <li>点击它，选择用“联系人”或“通讯录”应用导入。</li>
-                </ul>
-              </div>
-            </div>
-            <p class="text-sm text-gray-500 mt-3">如果点击没反应，可以尝试将VCF文件通过微信或QQ发送到手机，在聊天记录里打开它，通常也能导入。</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">三、几个实用小技巧和注意事项</h2>
-      <div class="space-y-4">
-        <div class="p-4 border border-yellow-200 bg-yellow-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧一：先下载模板</h4>
-          <p class="text-gray-600 text-sm">如果你是第一次操作，强烈建议先在工具页面下载提供的Excel模板。模板已经设好了标准的列标题，你只需要在下面填充数据，能省去很多匹配字段的麻烦。</p>
-        </div>
-        <div class="p-4 border border-green-200 bg-green-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧二：整理好Excel数据</h4>
-          <p class="text-gray-600 text-sm">
-            <strong>“姓名”和“电话”列是必须的</strong>，不能为空。确保电话号码格式基本正确（11位手机号）。像“公司”、“备注”等信息，有就填上，导入后会在联系人详情里显示，非常方便。
-          </p>
-        </div>
-        <div class="p-4 border border-blue-200 bg-blue-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧三：检查导入结果</h4>
-          <p class="text-gray-600 text-sm">导入完成后，去手机通讯录里检查一下。看看姓名和电话是否正确对应，有没有乱码或重复。如果有少数错误，手动修改一下也比全部重输快得多。</p>
+      <div class="step">
+        <span class="step-number">2</span>
+        <div class="step-content">
+          <h4>理解字符类</h4>
+          <p>掌握<code>[abc]</code>、<code>[^abc]</code>、<code>\\d</code>、<code>\\w</code>、<code>\\s</code>等字符类的使用。</p>
         </div>
       </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">四、常见问题解答</h2>
-      <div class="space-y-6">
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：这个转换过程安全吗？我的联系人信息会不会泄露？</h4>
-          <p class="text-gray-600">答：整个过程通常在你的浏览器本地完成，数据不会上传到服务器。为保险起见，使用前可以留意一下工具页面的说明，选择那些明确标注“本地转换”、“无需上传”的工具。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：转换后，我原来的手机联系人会被覆盖或清空吗？</h4>
-          <p class="text-gray-600">答：<strong>不会。</strong>导入VCF文件是“添加”新联系人，不会删除或覆盖你手机里已有的任何联系人。如果遇到同名同号，手机会提示你选择合并或跳过。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：支持导入头像吗？</h4>
-          <p class="text-gray-600">答：通常这种批量转换工具主要处理文本信息（姓名、电话等），不支持直接从Excel导入头像。头像需要在手机通讯录里为每个联系人单独设置。</p>
+      <div class="step">
+        <span class="step-number">3</span>
+        <div class="step-content">
+          <h4>学习分组和引用</h4>
+          <p>理解捕获组、非捕获组、反向引用的概念和应用场景。</p>
         </div>
       </div>
-    </section>
+      <div class="step">
+        <span class="step-number">4</span>
+        <div class="step-content">
+          <h4>实践常见模式</h4>
+          <p>通过实际项目练习，积累常用正则模式，培养模式识别能力。</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-number">5</span>
+        <div class="step-content">
+          <h4>深入高级特性</h4>
+          <p>学习断言（lookahead/lookbehind）、条件表达式、递归模式等高级特性。</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="bg-gray-50 p-6 rounded-xl border">
-      <h2 class="text-xl font-semibold text-gray-800 mb-4">总结</h2>
-      <p class="text-gray-700">
-        将Excel联系人批量导入手机，其实就是一个“翻译”和“搬运”的过程：<strong>Excel文件 → 通用通讯录文件（VCF）→ 手机通讯录</strong>。借助一个靠谱的在线转换工具，几分钟就能搞定原本需要数小时的手动输入工作。
-      </p>
-      <p class="text-gray-700 mt-3">
-        无论是为了工作高效，还是管理个人社交圈，掌握这个小技巧都能让你事半功倍。下次再收到Excel名单时，就不用头疼了。
-      </p>
-    </section>
-  </article>
-</div>
+  <section class="article-section faq-section">
+    <h2>常见问题解答（FAQ）</h2>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q1: 正则表达式在所有编程语言中都一样吗？</h3>
+      <div class="faq-answer">
+        <p>大部分基础语法是通用的，但不同编程语言或工具可能有一些差异。例如，JavaScript不支持后行断言（lookbehind）直到ES2018，而Python的re模块和regex模块在功能上也有所不同。我们的正则测试工具支持主流的正则语法，可以帮助你验证跨平台的兼容性。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q2: 正则表达式性能如何？会不会很慢？</h3>
+      <div class="faq-answer">
+        <p>大多数情况下，正则表达式的性能是非常优秀的。但需要注意避免"灾难性回溯"——当正则中存在嵌套量词或复杂的分支时，可能导致指数级的时间复杂度。建议：1) 尽量使用具体的字符类代替通配符；2) 使用占有量词或原子组防止不必要的回溯；3) 对于超大文本，考虑分段处理。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q3: 如何调试复杂的正则表达式？</h3>
+      <div class="faq-answer">
+        <p>调试复杂正则的最佳方法是：1) 使用可视化工具查看匹配过程；2) 添加注释（支持注释模式的正则引擎）；3) 分步测试各个子模式；4) 使用我们的在线正则测试工具，它提供实时高亮、分组显示和替换预览功能，让调试过程更加直观高效。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q4: 正则表达式可以处理HTML/XML解析吗？</h3>
+      <div class="faq-answer">
+        <p>虽然可以用正则表达式提取简单的HTML标签内容，但不建议用于复杂的HTML/XML解析。因为HTML不是正则语言，使用正则解析可能导致错误和漏洞。对于复杂的文档解析，建议使用专门的解析库，如BeautifulSoup（Python）、DOM Parser（JavaScript）等。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q5: 有哪些学习正则表达式的优质资源？</h3>
+      <div class="faq-answer">
+        <p>推荐以下学习资源：1) RegexOne - 交互式正则教程；2) 正则表达式30分钟入门教程 - 中文经典教程；3) RegExr - 在线正则学习和测试工具；4) 《精通正则表达式》 - Jeffrey Friedl的经典著作。同时，多使用我们的正则测试工具进行实践，是掌握正则的最佳方式。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-section conclusion">
+    <h2>结语</h2>
+    <p>正则表达式是每个技术人员都值得投入时间学习的技能。它虽然初期学习成本较高，但一旦掌握，将在数据处理、文本分析、表单验证等众多场景中大幅提升你的工作效率。</p>
+    
+    <p>我们的<strong>正则表达式测试工具</strong>为你提供了一个便捷的在线环境，支持实时匹配、替换、分割等功能，帮助你快速验证和调试正则表达式。无论你是正则新手还是经验丰富的开发者，这个工具都能成为你日常工作的得力助手。</p>
+
+    <div class="cta-box">
+      <p><strong>立即开始使用正则表达式测试工具</strong>，让复杂的文本处理变得简单高效！</p>
+    </div>
+  </section>
+
+  <footer class="article-footer">
+    <div class="tags">
+      <span class="tag">正则表达式</span>
+      <span class="tag">正则测试</span>
+      <span class="tag">在线工具</span>
+      <span class="tag">文本处理</span>
+      <span class="tag">表单验证</span>
+    </div>
+  </footer>
+</article>
 `;export{t as default};

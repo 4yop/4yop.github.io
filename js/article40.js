@@ -1,61 +1,192 @@
-const l=`
-<div class="text-slate-700 leading-relaxed">
-  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">还在为做图表发愁？这个“智能厨房”帮你三分钟搞定！</h1>
-
-  <div class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
-    <p class="text-blue-800">你是否也曾盯着电脑，想把一堆数字变成一目了然的图表，却感觉无从下手？</p>
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 text-gray-800 bg-white">
+  <!-- 标题 -->
+  <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left pt-4">文件哈希：给你的文件办张“数字身份证”，简单易懂的工具</h1>
+  
+  <!-- 引言/痛点 -->
+  <div class="mb-8 p-5 bg-blue-50 border-l-4 border-blue-500">
+    <p class="text-lg font-medium mb-2">你是不是也遇到过这些情况？</p>
+    <p class="mb-1">• 同一个文件下载了好几次，电脑里存了好几份，占着空间却不知道能不能删</p>
+    <p class="mb-1">• 从网上下载了重要安装包，担心它中途被修改过，不是原版</p>
+    <p class="mb-1">• 给同事传了个大文件，对方收到的和你的原文件真的是同一个吗？</p>
+    <p class="mt-3">如果你对这些问题点头，那么今天要聊的“文件哈希”工具，就是为你准备的解决方案。</p>
   </div>
-
-  <p class="mb-4">想象一下，你手头有一份销售数据、一份项目进度表，或者只是一份简单的家庭月度开销。你想把它变成一张专业的图表，放进报告或者分享给同事。但接下来你可能会遇到这些麻烦：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li>打开复杂的专业软件，光是找“插入图表”的按钮就花了半天。</li>
-    <li>好不容易找到图表功能，却不知道怎么调整颜色、方向，让图表看起来舒服。</li>
-    <li>图表做好后，想保存成高清图片，却发现导出的图片模糊不清。</li>
-    <li>想在手机上查看或调整，却发现界面错乱，根本无法操作。</li>
-  </ul>
-  <p class="mb-6">这感觉，就像你想炒个简单的菜，却不得不去操作一个布满按钮的工业级灶台。太复杂了！</p>
-
-  <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">其实，做图表可以像“下厨房”一样简单</h2>
-  <p class="mb-4">现在，有一种全新的工具，它把复杂的图表制作，变成了像在“智能厨房”里做菜一样简单的过程。你不需要知道任何烹饪（编程）原理，只需要准备好你的“食材”（数据），剩下的交给它。</p>
-
-  <div class="my-8 p-6 bg-slate-50 rounded-xl border border-slate-200">
-    <h3 class="text-xl font-semibold text-slate-800 mb-3">这个“智能图表厨房”到底怎么帮你？</h3>
-    <ol class="list-decimal pl-5 space-y-4">
-      <li>
-        <strong class="text-slate-800">第一步：放入“食材”</strong>
-        <p class="mt-1">你只需要把整理好的数据（比如“产品A，销售额120万”）粘贴进去就行。就像把洗好的菜放进备菜区，完全不需要复杂的准备。</p>
-      </li>
-      <li>
-        <strong class="text-slate-800">第二步：选择“口味”</strong>
-        <p class="mt-1">你喜欢清爽的“生态绿”，还是稳重的“商务蓝”？轻轻一点就能切换整个图表的主题颜色。想让柱子竖着排列还是横着排列？也只需要按一个按钮。这些调整都是即时可见的，就像调料瓶，随手取用。</p>
-      </li>
-      <li>
-        <strong class="text-slate-800">第三步：“出锅”装盘</strong>
-        <p class="mt-1">图表做好了，一键就能生成一张高清大图，直接保存到你的电脑或手机里。这张图清晰、专业，可以直接插入PPT、报告或分享给朋友。更妙的是，所有你做过的图表都会像拍下的美食照片一样，陈列在下方的小相册里，随时可以点击放大回味。</p>
-      </li>
-    </ol>
-  </div>
-
-  <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">它给你的生活和工作，带来了什么改变？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-8">
-    <div class="p-5 bg-white rounded-lg border border-slate-200 shadow-sm">
-      <h4 class="font-bold text-lg text-slate-800 mb-2">📈 对职场人：</h4>
-      <p>月度汇报再也不用熬夜“画”图表了。用这个工具，把整理好的销售数据、用户增长数据粘贴进去，几分钟内就能生成一组风格统一、可以直接使用的专业图表，让你的报告瞬间提升档次。</p>
+  
+  <!-- 什么是文件哈希 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">文件哈希是什么？把它想象成文件的“指纹”</h2>
+    <p class="mb-4">你可以这样理解：</p>
+    
+    <div class="flex flex-col md:flex-row items-center mb-6 bg-gray-50 p-5 rounded-lg">
+      <div class="md:w-1/3 mb-4 md:mb-0 text-center">
+        <div class="inline-block p-4 bg-white border border-gray-300 rounded shadow-sm">
+          <div class="text-sm text-gray-500 mb-1">你的文件</div>
+          <div class="text-base font-medium">照片、文档、软件...</div>
+        </div>
+        <div class="mt-2 text-gray-500">↓ 生成唯一标识</div>
+      </div>
+      <div class="md:w-2/3 md:pl-6">
+        <div class="p-4 bg-white border border-gray-300 rounded font-mono text-sm break-all">
+          <span class="text-gray-500">得到：</span>7c4a8d09ca3762af61e59520943dc26494f8941b
+        </div>
+        <p class="mt-3 text-sm text-gray-600">这一长串字符就是文件的“哈希值”，像人的指纹一样，几乎不可能有两个文件得到完全相同的值。</p>
+      </div>
     </div>
-    <div class="p-5 bg-white rounded-lg border border-slate-200 shadow-sm">
-      <h4 class="font-bold text-lg text-slate-800 mb-2">📚 对学生和老师：</h4>
-      <p>做实验报告、社会调查数据整理时，轻松将枯燥的数字转化为直观的柱状图或条形图。学习统计学概念时，亲手输入数据，立刻看到可视化结果，理解更深刻。</p>
+    
+    <p class="mb-3">这个“指纹”有几个重要特点：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-2">
+      <li><span class="font-medium">唯一性</span>：只要文件内容有一丁点不同（哪怕只改了一个标点），得到的哈希值就会天差地别</li>
+      <li><span class="font-medium">固定长度</span>：无论文件是1KB还是10GB，生成的哈希值长度都是固定的，方便比较</li>
+      <li><span class="font-medium">不可逆</span>：从哈希值无法反推出原始文件内容，所以不用担心泄露隐私</li>
+    </ul>
+  </section>
+  
+  <!-- 为什么需要 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">为什么普通人也需要关心文件哈希？</h2>
+    
+    <div class="grid md:grid-cols-3 gap-6 mb-6">
+      <div class="border border-gray-200 p-5 rounded-lg">
+        <div class="text-lg font-bold text-blue-600 mb-2">1. 验证文件完整性</div>
+        <p class="text-sm">下载大文件时，网络中断、传输错误都可能导致文件损坏。计算哈希值并与官方提供的对比，就能100%确认文件是否完整。</p>
+      </div>
+      
+      <div class="border border-gray-200 p-5 rounded-lg">
+        <div class="text-lg font-bold text-blue-600 mb-2">2. 查找重复文件</div>
+        <p class="text-sm">电脑里存了太多照片和文档？计算哈希值能快速找出内容完全相同的文件，帮你清理空间，告别重复存储。</p>
+      </div>
+      
+      <div class="border border-gray-200 p-5 rounded-lg">
+        <div class="text-lg font-bold text-blue-600 mb-2">3. 确认文件真实性</div>
+        <p class="text-sm">从网上下载软件、重要文档时，通过比对哈希值，可以确认你下载的就是原始版本，没有被植入病毒或恶意修改。</p>
+      </div>
     </div>
-  </div>
-
-  <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">从“看到数据”到“看懂数据”，只差一个简单的开始</h2>
-  <p class="mb-6">数据的价值在于被理解，而理解的最好方式就是“看见”。一个简单好用的工具，可以帮你扫清技术障碍，让你把精力真正聚焦在数据背后的信息和决策上。</p>
-  <p class="mb-6">无论你是在用电脑办公，还是在通勤路上用手机临时起意想做个图表，这个工具都能完美适配，给你同样流畅顺手的体验。</p>
-
-  <div class="p-6 mt-10 text-center bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl border border-slate-300">
-    <h3 class="text-2xl font-bold text-slate-800 mb-3">告别复杂，让图表“轻松可见”</h3>
-    <p class="mb-4">好的工具，就是让你感觉不到工具的存在。它应该像一个得力的助手，默默帮你处理好所有繁琐的步骤。</p>
-    <p class="text-lg font-medium text-blue-700">是时候，用最简单的方式，让你的数据“开口说话”了。</p>
-  </div>
+    
+    <div class="bg-green-50 border border-green-200 p-5 rounded-lg">
+      <p class="font-medium mb-2">简单来说，文件哈希工具让你：</p>
+      <p class="mb-1">• <span class="font-medium">放心下载</span>——知道文件对不对</p>
+      <p class="mb-1">• <span class="font-medium">轻松管理</span>——知道文件重复没</p>
+      <p class="mb-1">• <span class="font-medium">安全使用</span>——知道文件可靠不</p>
+    </div>
+  </section>
+  
+  <!-- 常见应用场景 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">这些场景下，文件哈希特别有用</h2>
+    
+    <div class="mb-6">
+      <h3 class="text-lg font-bold mb-3 text-gray-700">场景一：下载大型安装包后验证</h3>
+      <div class="flex flex-col md:flex-row items-start bg-gray-50 p-5 rounded-lg">
+        <div class="md:w-1/4 mb-3 md:mb-0">
+          <div class="h-16 flex items-center justify-center bg-white border border-gray-300 rounded px-4">
+            <span class="font-medium">Windows安装包</span>
+          </div>
+        </div>
+        <div class="md:w-3/4 md:pl-6">
+          <p class="mb-2">很多官方网站在提供软件下载时，会同时公布一个“校验码”（其实就是哈希值）。</p>
+          <p class="text-sm text-gray-600">操作步骤：</p>
+          <ol class="list-decimal pl-5 text-sm text-gray-700 space-y-1 mt-1">
+            <li>下载完文件后，用工具计算哈希值</li>
+            <li>与官网公布的校验码对比</li>
+            <li>完全一致 → 放心安装；不一致 → 重新下载</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <h3 class="text-lg font-bold mb-3 text-gray-700">场景二：整理手机相册和电脑照片</h3>
+      <div class="flex flex-col md:flex-row items-start bg-gray-50 p-5 rounded-lg">
+        <div class="md:w-1/4 mb-3 md:mb-0">
+          <div class="h-16 flex items-center justify-center bg-white border border-gray-300 rounded px-4">
+            <span class="font-medium">家庭照片备份</span>
+          </div>
+        </div>
+        <div class="md:w-3/4 md:pl-6">
+          <p class="mb-2">同一张照片可能在手机、电脑、网盘里存了多份，手动找起来费时费力。</p>
+          <p class="text-sm text-gray-600">解决方案：</p>
+          <p class="text-sm mt-1">对文件夹里的所有照片计算哈希值，数值相同的文件就是内容完全一样的副本，你可以保留一份，删除其他重复的，轻松释放存储空间。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 不同类型解释 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">MD5、SHA-1、SHA-256有什么区别？</h2>
+    
+    <div class="overflow-x-auto mb-4">
+      <table class="w-full border-collapse border border-gray-300 text-sm">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="border border-gray-300 p-3 text-left">类型</th>
+            <th class="border border-gray-300 p-3 text-left">简单理解</th>
+            <th class="border border-gray-300 p-3 text-left">普通人怎么选</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="border border-gray-300 p-3 font-medium">MD5</td>
+            <td class="border border-gray-300 p-3">最常用，速度快，适合日常文件对比</td>
+            <td class="border border-gray-300 p-3">找重复文件、一般验证就选它</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border border-gray-300 p-3 font-medium">SHA-1</td>
+            <td class="border border-gray-300 p-3">比MD5更安全一些，但速度稍慢</td>
+            <td class="border border-gray-300 p-3">需要更高安全性的场景</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="border border-gray-300 p-3 font-medium">SHA-256</td>
+            <td class="border border-gray-300 p-3">目前最安全的类型，银行级别</td>
+            <td class="border border-gray-300 p-3">验证重要软件、加密文件时用</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="bg-yellow-50 border border-yellow-200 p-4 rounded">
+      <p class="font-medium mb-1">给普通用户的建议：</p>
+      <p class="text-sm">如果你是日常使用，<span class="font-medium">MD5完全足够</span>。只有当验证特别重要的文件（如银行软件、系统镜像）时，才需要考虑SHA-256。工具通常会提供多种选择，你可以根据需求切换。</p>
+    </div>
+  </section>
+  
+  <!-- 常见问题 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 pb-2 border-b border-gray-200">关于文件哈希，你可能想问</h2>
+    
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-bold mb-2 text-gray-700">Q1: 计算文件哈希会泄露我的文件内容吗？</h3>
+        <p class="pl-4">完全不会。哈希值就像指纹，别人看到你的指纹，并不能知道你的长相。同理，从哈希值无法反推出原始文件内容，所以不用担心隐私问题。</p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-bold mb-2 text-gray-700">Q2: 文件重命名后，哈希值会变吗？</h3>
+        <p class="pl-4">不会。哈希值只跟文件的实际内容有关，改文件名、改保存位置都不会改变哈希值。只有文件内容本身被修改了，哈希值才会变化。</p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-bold mb-2 text-gray-700">Q3: 多大的文件可以计算哈希？要等很久吗？</h3>
+        <p class="pl-4">理论上多大都可以。现在大多数工具都优化得很好，几个GB的文件通常也只需要几秒到几十秒。计算时会显示进度条，你可以看到实时进度。</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 行动号召 -->
+  <section class="mt-12 pt-6 border-t border-gray-200 text-center">
+    <div class="mb-5">
+      <p class="text-lg font-medium mb-3">现在你明白文件哈希是什么了吗？</p>
+      <p class="text-gray-600 mb-5">它不是什么复杂的技术，而是一个帮你管理文件、确保安全的小工具。下次遇到文件验证、重复查找的问题时，不妨试试用文件哈希来解决。</p>
+    </div>
+    
+    <div class="inline-block p-5 bg-gray-50 border border-gray-300 rounded-lg max-w-md">
+      <p class="font-bold mb-2">简单总结：</p>
+      <p class="text-sm mb-3">文件哈希 = 文件的数字身份证</p>
+      <p class="text-sm mb-1">• 用途：验证完整性、查找重复、确保安全</p>
+      <p class="text-sm mb-1">• 操作：选择文件 → 选择类型 → 获取哈希值</p>
+      <p class="text-sm mb-3">• 结果：对比官方值或自己保存的值</p>
+      <p class="text-xs text-gray-500">不需要专业知识，任何人都能轻松上手使用。</p>
+    </div>
+  </section>
 </div>
-`;export{l as default};
+`;export{s as default};

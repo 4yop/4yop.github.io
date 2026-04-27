@@ -1,125 +1,94 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
-    还在为文档格式发愁？试试这个本地Word转换工具
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+  <!-- 标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+    Zalgo故障文本生成器：让你的文字“扭曲”起来
   </h1>
-
-  <div class="text-gray-600 text-base sm:text-lg mb-8 text-center">
-    不上传文件、不担心隐私，轻松把Word文档变成网页和笔记需要的格式。
-  </div>
-
-  <div class="prose prose-lg max-w-none mb-10">
-    <p class="mb-4">
-      你是不是也遇到过这样的情况？好不容易写完一份Word文档，或是收到一份重要的.docx文件，却发现网站后台只支持粘贴特定格式的文本，或者想把它整理成简洁的笔记，却无从下手。手动调整格式？那太费时间了。
-    </p>
-  </div>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-10 rounded-r-lg">
-    <h2 class="text-xl font-semibold mb-2 text-gray-900">一个更安心的选择：本地转换</h2>
-    <p class="mb-0">
-      现在有一个新思路：<strong>在你自己电脑的浏览器里直接完成转换</strong>。整个过程，你的文档文件不会离开你的电脑，不会上传到任何人的服务器。就像在自家厨房做饭，食材不离开家门，做完直接上桌，安全和隐私都由你自己掌握。
-    </p>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">它能帮你做什么？</h2>
-
-  <p class="mb-6">
-    简单来说，这个工具就是帮你把熟悉的Word文档（.docx格式），变成两种更通用的文本格式。
+  <!-- 引言 -->
+  <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+    你有没有在网上见过这样的文字——“H̴̢ę̵l̷̛l̷̢o̴̢”看起来像是出了故障，但又莫名酷炫？这就是Zalgo文本，一种通过叠加特殊符号让普通文字产生扭曲、撕裂效果的文字艺术。不管是游戏昵称、社交签名，还是文案设计，它都能让你的表达瞬间与众不同。今天我们就来聊聊这种有趣的文字玩法，以及怎么轻松生成你自己的故障文本。
   </p>
 
-  <div class="grid md:grid-cols-2 gap-8 mb-12">
-    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
-      <div class="text-2xl font-bold text-blue-700 mb-2">1. 转换成 HTML</div>
-      <p class="mb-4">HTML 是网页的“骨架”和“血肉”。转换后，你的文档标题、段落、列表甚至加粗文字，都会变成网页能识别的代码。非常适合需要把内容发布到网站、博客或内部系统的朋友。</p>
-      <div class="text-sm text-gray-500">比如：公司通告、产品介绍、带排版的文章。</div>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
-      <div class="text-2xl font-bold text-green-700 mb-2">2. 转换成 Markdown</div>
-      <p class="mb-4">Markdown 是一种轻量级的标记语言，让你用简单的符号（比如 # 表示标题，* 表示列表）就能排版。它干净、易读，是记笔记、写文档（如Readme）的利器。</p>
-      <div class="text-sm text-gray-500">比如：个人知识库、技术文档、简洁的会议记录。</div>
-    </div>
-  </div>
+  <!-- 什么是Zalgo文本 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">什么是Zalgo文本？</h2>
+  <p class="mb-4 text-gray-700">
+    Zalgo文本最早起源于国外一个叫“Zalgo”的网络漫画角色，后来网友们开始用Unicode里的组合字符（比如各种声调符号、点、横线）堆叠在普通字母上下，制造出一种文字“发疯”的效果。因为看起来很像电脑显示故障，所以也叫“故障文本”。它并不是真正的乱码，而是一种视觉风格——每个基础字符后面跟着一串看不见的附加符号，叠加多了就会变得张牙舞爪。
+  </p>
+  <p class="mb-4 text-gray-700">
+    简单来说，它就像给文字穿上了“刺猬外套”，原本整齐的句子立刻有了不安分的感觉。强度低的时候只是带点小点缀，强度高了就像文字在屏幕里挣扎，特别适合用来表达疯狂、混乱、神秘或者搞怪的情绪。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">怎么使用？非常简单</h2>
+  <!-- 为什么人们喜欢用故障文本 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">为什么大家都爱用故障文本？</h2>
+  <p class="mb-4 text-gray-700">
+    在网络世界里，大家都想让自己显得特别。普通名字容易淹没在人群里，而一个带点故障效果的名字——比如“M̴y̴ ̴n̴a̴m̴e̴”就会让人忍不住多看两眼。游戏玩家用它来打造酷炫ID，社交博主用它做个性签名，甚至有些设计师会把故障文字用在海报、视频标题里，营造科技感或恐怖氛围。它就像一种视觉上的“滤镜”，让文字不再平淡。
+  </p>
+  <p class="mb-4 text-gray-700">
+    而且生成起来非常简单，不需要你会任何代码，只要往工具里输入文字，拖动一下滑块，就能得到专属的扭曲文字。这也是Zalgo文本生成器受欢迎的原因——简单、好玩、出效果。
+  </p>
 
-  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
-      <div class="flex items-center mb-3 sm:mb-0">
-        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">1</div>
-        <span class="font-medium">上传你的Word文档</span>
-      </div>
-      <div class="text-sm text-gray-500 bg-white px-3 py-1 rounded-full border">支持 .docx 格式</div>
-    </div>
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
-      <div class="flex items-center mb-3 sm:mb-0">
-        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">2</div>
-        <span class="font-medium">选择想要的格式</span>
-      </div>
-      <div class="text-sm text-gray-500">一键点击“转换为 HTML”或“转换为 Markdown”</div>
-    </div>
-    <div class="flex items-center">
-      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">3</div>
-      <div>
-        <span class="font-medium mr-2">获取并复制结果</span>
-        <span class="text-sm text-gray-500">转换后的内容会直接显示，并可以一键复制使用</span>
-      </div>
-    </div>
-  </div>
+  <!-- 如何使用这个生成器 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">三步生成你的故障文本</h2>
+  <p class="mb-2 text-gray-700">这个工具完全傻瓜式操作，你只需要：</p>
+  <ol class="list-decimal list-inside mb-4 space-y-2 text-gray-700">
+    <li><span class="font-medium">输入文字：</span>在左侧输入框里打上你想转换的内容，中文、英文、数字都支持。</li>
+    <li><span class="font-medium">调节强度：</span>拖动滑块从0到20，数字越大，文字上叠加的符号就越多，效果越“疯狂”。</li>
+    <li><span class="font-medium">复制使用：</span>右侧会实时显示效果，满意了直接点“复制故障文本”，就能粘贴到任何地方——微信、游戏、论坛都可以。</li>
+  </ol>
+  <p class="mb-4 text-gray-700">
+    如果你不知道写什么，点一下“随机示例”，工具会给你几个常用句子，你可以直接拿来玩。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">为什么推荐这种方式？</h2>
+  <!-- 滑块强度是什么意思 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">滑块强度有什么用？</h2>
+  <p class="mb-4 text-gray-700">
+    这个滑块控制的是文字“发疯”的程度。强度为0时，文字完全正常，没有任何附加符号。随着强度增加，每个字符后面会随机添加不同数量的组合符号——比如在字母上下加小点、横线、波浪号等。强度到20时，字符后面会叠上几十个符号，看起来就像一团乱码，但仔细看还能认出原本的字形。你可以根据自己的喜好调节：想要低调一点就用低强度（比如3-5），只想稍微加点纹理；想要夸张炸裂就用高强度（15以上），让文字充满视觉冲击。
+  </p>
 
-  <ul class="space-y-4 mb-10 list-none pl-0">
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
-        <div class="w-2 h-2 rounded-full bg-green-600"></div>
-      </div>
-      <span><strong>保护隐私：</strong>你的文件全程只在浏览器里处理，没有上传到网络，不必担心敏感内容泄露。</span>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
-        <div class="w-2 h-2 rounded-full bg-green-600"></div>
-      </div>
-      <span><strong>操作简单：</strong>就像给文件换个“包装”，点几下鼠标就能完成，不需要学习复杂软件。</span>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
-        <div class="w-2 h-2 rounded-full bg-green-600"></div>
-      </div>
-      <span><strong>即开即用：</strong>通常打开网页就能使用，无需下载安装任何程序。</span>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
-        <div class="w-2 h-2 rounded-full bg-green-600"></div>
-      </div>
-      <span><strong>免费便捷：</strong>省去了寻找、购买或学习专业转换软件的麻烦。</span>
-    </li>
+  <!-- 西里尔字符选项是干嘛的 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">“启用西里尔字符”有什么用？</h2>
+  <p class="mb-4 text-gray-700">
+    这个选项是给追求更酷效果的人准备的。西里尔字母就是俄文等语言使用的字母，里面有一些和英文字母长得很像，比如“a”变成“а”（俄文），看起来几乎一样，但其实是不同字符。勾选之后，工具会把部分英文字母替换成相似的西里尔字母，然后再叠加故障符号。这样生成的文字会多一种“异域感”，而且因为字符变了，在一些系统里可能显得更特别。如果你想要文字既有故障效果，又有种陌生语言的错觉，就可以打开它。
+  </p>
+
+  <!-- 复制和注意事项 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">复制粘贴，随时使用</h2>
+  <p class="mb-4 text-gray-700">
+    生成后直接点“复制故障文本”，文字就会存到你的剪贴板。然后你可以去改游戏昵称、发朋友圈、写签名，想贴哪就贴哪。不过要提醒一下：因为故障文本使用了Unicode的特殊组合符号，有些老旧的应用或网站可能显示不正常（比如符号乱掉），但绝大多数现代软件——微信、QQ、微博、抖音、游戏平台——都能完美显示。如果不确定，可以先发给自己测试一下。
+  </p>
+
+  <!-- 故障文本的创意用法 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">还能怎么玩？几个创意点子</h2>
+  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
+    <li><span class="font-medium">恐怖故事标题：</span>用高强度故障写“半夜别开门”，效果瞬间阴森。</li>
+    <li><span class="font-medium">游戏战队名：</span>比如“混沌军团”变成故障版，气势拉满。</li>
+    <li><span class="font-medium">隐藏彩蛋：</span>在文章里插入一小段故障文字，让细心读者发现惊喜。</li>
+    <li><span class="font-medium">表情包配字：</span>配合崩溃的表情，用故障文字配“我疯了”，十分应景。</li>
   </ul>
+  <p class="mb-4 text-gray-700">
+    只要你有创意，故障文本就能帮你把情绪放大。
+  </p>
 
-  <div class="border-t border-gray-200 pt-10 mt-10">
-    <h3 class="text-xl font-semibold mb-4 text-gray-900">常见问题解答</h3>
-    <div class="space-y-6">
-      <div>
-        <h4 class="font-medium mb-2 text-gray-900">问：我的文件安全吗？</h4>
-        <p class="text-gray-600">答：非常安全。这种“本地转换”方式，处理过程完全在你的电脑浏览器内完成，文件数据不会通过网络发送出去，你可以放心处理任何文档。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-900">问：支持哪些Word文件？</h4>
-        <p class="text-gray-600">答：主要支持较新版本的Word保存的 <code class="bg-gray-100 px-1 py-0.5 rounded text-sm">.docx</code> 格式文件。这是目前最常用的Word文档格式。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-900">问：转换后会保留图片和表格吗？</h4>
-        <p class="text-gray-600">答：对于简单的文档转换，基础的格式（如标题、列表、加粗）通常都能很好保留。如果是非常复杂的排版（如精密表格、特殊样式），转换后可能需要做一些微调。</p>
-      </div>
+  <!-- 常见问题 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">你可能想问的</h2>
+  <div class="space-y-4">
+    <div>
+      <p class="font-medium text-gray-900">Q：生成后的文字能商用吗？</p>
+      <p class="text-gray-700">A：可以，它只是字符的组合，不涉及版权。不过如果你要用在商标上，建议先确认字符显示稳定。</p>
+    </div>
+    <div>
+      <p class="font-medium text-gray-900">Q：为什么我复制到某些地方显示不全？</p>
+      <p class="text-gray-700">A：有些老旧的输入框或数据库不支持Unicode组合字符，会过滤掉附加符号。换到新一点的平台就好了。</p>
+    </div>
+    <div>
+      <p class="font-medium text-gray-900">Q：我能控制加在字母上面还是下面吗？</p>
+      <p class="text-gray-700">A：目前这个工具是随机添加上下组合符号，你也可以多生成几次，直到满意为止。因为随机，每次效果都不一样。</p>
     </div>
   </div>
 
-  <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl mt-12 text-center">
-    <p class="text-lg mb-4 font-medium">
-      下次当你需要把Word文档里的内容搬到网页、博客或笔记软件时，不妨先试试这种本地转换的方法。
-    </p>
-    <p class="text-gray-600 mb-0">
-      它或许能帮你节省大量调整格式的时间，更重要的是，让你对自己的文件多一份安心。
-    </p>
-  </div>
+  <!-- 结尾 -->
+  <p class="mt-8 text-gray-700 border-t pt-6 text-center text-sm text-gray-500">
+    故障文本就像文字的化妆术，简单一弄就能让普通句子拥有性格。下次想要在网络上脱颖而出，不妨来试试这个Zalgo故障文本生成器，让你的文字“发疯”起来吧！
+  </p>
 </div>
-`;export{e as default};
+`;export{t as default};

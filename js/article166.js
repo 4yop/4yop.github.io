@@ -1,85 +1,97 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    照片太模糊了怎么办？一个简单方法让你的图片变高清
-  </h1>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h1>
 
-  <div class="text-gray-600 mb-8 text-base sm:text-lg leading-relaxed">
-    <p class="mb-4">你是否遇到过这些情况？翻看老照片时发现画质模糊不清；从网上下载的图片放大后全是马赛克；手机拍的照片传到电脑上就变模糊了。</p>
-    <p>别担心，今天我们就来聊聊，如何轻松让这些模糊的图片重新变得清晰起来。</p>
+  <div class="mb-8 text-lg text-gray-600 leading-relaxed">
+    <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>
+    <p>这种“选择困难”的小烦恼，几乎每个人都遇到过。它浪费我们的时间，消耗我们的精力。今天，我们就来认识一个简单又好玩的小工具——<strong class="text-gray-900">随机决定器</strong>，它能像抛硬币一样，帮你快速做出决定，让生活更轻松。</p>
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">图片高清化是什么？</h2>
-    <p class="text-gray-700">简单来说，它就像给图片做一次“智能修复”。通过分析图片的像素和纹理，智能地补充细节，让原本模糊、有锯齿的图片变得更清晰、更细腻。这和我们用手机软件简单的“锐化”滤镜不同，效果要好得多。</p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="what-is">随机决定器是什么？</h2>
+  <div class="bg-blue-50 p-5 rounded-lg mb-8">
+    <p class="mb-3">简单来说，<strong>随机决定器就是一个帮你从多个选项中，公平地随机挑选一个的智能小助手</strong>。</p>
+    <p>想象一下，你把“吃面条”“吃米饭”“吃饺子”三个选项交给它，它就像一个公正的裁判，快速地在它们中间“抓阄”，然后告诉你结果。你不用再纠结，也不用担心选择不公平，因为它完全随机，纯粹看“运气”。</p>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">为什么我的照片会模糊？</h2>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
-        <span class="text-gray-700"><strong>拍摄问题：</strong>手抖、光线不足、对焦不准，都会让照片拍出来不够清晰。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
-        <span class="text-gray-700"><strong>多次压缩：</strong>图片在微信、QQ等社交软件里反复发送，会被严重压缩，画质越来越差。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
-        <span class="text-gray-700"><strong>放大图片：</strong>把一张小图强行拉大，电脑只能复制原有的像素点，结果就是出现难看的马赛克和锯齿。</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">如何让模糊图片变清晰？</h2>
-    <p class="text-gray-700 mb-6">现在有一些在线工具可以帮你解决这个问题。它们操作起来很简单，不需要你会任何复杂的软件。</p>
-
-    <div class="bg-gray-50 p-6 rounded-lg mb-6">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">一般的使用步骤是这样的：</h3>
-      <ol class="space-y-4 pl-5 list-decimal text-gray-700">
-        <li><strong>打开工具页面：</strong>在你的浏览器里找到相应的在线工具。</li>
-        <li><strong>上传图片：</strong>点击按钮，从你的电脑或手机里选择那张模糊的图片。通常可以一次上传多张。</li>
-        <li><strong>开始处理：</strong>点击“高清化”或类似的按钮，工具就会开始智能修复你的图片。</li>
-        <li><strong>等待并下载：</strong>处理需要一点时间，完成后直接下载清晰的新图片即可。</li>
-      </ol>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="how-to-use">它是怎么工作的？简单三步，一看就会</h2>
+  <div class="space-y-6 mb-10">
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">1</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">写下你的“待办清单”</h3>
+        <p class="text-gray-700">把你所有纠结的选项，一条一条地写下来。比如今天要完成哪项工作、晚上看哪部电影、周末去哪里玩。每个选项占一行，写得越清楚越好。</p>
+      </div>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-6 mt-8">
-      <div class="border border-gray-200 rounded-lg p-5">
-        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理时能看到什么？</h4>
-        <p class="text-gray-700 text-sm">你会看到一个进度条，知道处理到哪一步了。如果图片特别大，工具可能会把它分成很多小块来慢慢处理，这时你会看到当前在处理第几块，总共多少块，大概还要多久，非常直观。</p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">2</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">让机器“帮你思考”</h3>
+        <p class="text-gray-700">设定好你想让它随机选择的次数（比如10次），然后点击“开始决定”。你会看到选项在屏幕上快速滚动变化，就像一个转盘在转动，充满了小小的期待感。</p>
       </div>
-      <div class="border border-gray-200 rounded-lg p-5">
-        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理完可以做什么？</h4>
-        <p class="text-gray-700 text-sm">处理完成后，你可以预览高清版的效果，和原图对比。满意的话，就一键下载到电脑里。如果处理了好几张图，还可以把它们打包成一个压缩文件一起下载，非常方便。</p>
+    </div>
+
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">3</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">接受惊喜的结果</h3>
+        <p class="text-gray-700">转动停止，最终结果会醒目地显示出来。这就是“命运”为你做出的选择！更棒的是，它还会把所有选择的历史记录下来，并用图表告诉你每个选项被选中的比例，一目了然。</p>
       </div>
     </div>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">使用前你需要知道的几点</h2>
-    <div class="space-y-4">
-      <div class="p-4 border border-yellow-200 bg-yellow-50 rounded">
-        <h4 class="font-semibold text-gray-800 mb-1">需要浏览器支持</h4>
-        <p class="text-gray-700 text-sm">这类工具通常需要你电脑或手机里的浏览器支持一个叫“WebGL”的功能，这依赖于你的显卡。绝大多数现代设备和浏览器都没问题，但如果你用的是很老的电脑或浏览器，可能会无法使用。</p>
-      </div>
-      <div class="p-4 border border-blue-200 bg-blue-50 rounded">
-        <h4 class="font-semibold text-gray-800 mb-1">第一次使用要等等</h4>
-        <p class="text-gray-700 text-sm">就像打开一个新软件需要加载一样，这类在线工具第一次使用时，也需要一点点时间来加载背后的“智能修复模型”。加载完成后，以后再用就快了。</p>
-      </div>
-      <div class="p-4 border border-gray-200 bg-gray-50 rounded">
-        <h4 class="font-semibold text-gray-800 mb-1">关于图片格式</h4>
-        <p class="text-gray-700 text-sm">普通的JPG、PNG图片都可以处理。但是动态的GIF图片目前一般不支持，因为它是很多张图组成的，处理起来很不一样。</p>
-      </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="when-to-use">哪些时候，你需要一个随机决定器？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🏠 生活日常</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>今天午餐/晚餐吃什么？</li>
+        <li>周末是宅家还是出门？</li>
+        <li>下一本该读什么书？</li>
+        <li>家里大扫除先从哪个房间开始？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">👫 朋友聚会</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>聚会玩什么游戏？</li>
+        <li>团队活动去哪里？</li>
+        <li>看电影还是唱KTV？</li>
+        <li>谁去买饮料？（是的，它也能选人）</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">💼 工作学习</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>优先处理哪项任务？</li>
+        <li>学习哪个新技能？</li>
+        <li>报告用什么主题颜色？</li>
+        <li>头脑风暴时，从哪个创意点开始深挖？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🎮 休闲娱乐</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>旅行目的地选择</li>
+        <li>今晚追哪部剧？</li>
+        <li>游戏里选择哪条路线？</li>
+        <li>给宠物取什么名字？</li>
+      </ul>
     </div>
   </div>
 
-  <div class="text-center border-t pt-8 mt-8">
-    <h3 class="text-2xl font-bold text-gray-800 mb-4">让记忆重新清晰起来</h3>
-    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">无论是想要修复一张珍贵的家庭老照片，还是需要一张清晰的图片用于工作展示，图片高清化工具都能帮上忙。它把复杂的技术藏在背后，留给我们的是一个简单、直观的解决模糊问题的方法。</p>
-    <p class="text-gray-600 text-sm">下次再遇到模糊的图片，不妨试试看。</p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="benefits">为什么用随机决定器？</h2>
+  <div class="space-y-5 mb-10">
+    <p><strong class="text-gray-900">节省时间，停止内耗：</strong>把宝贵的精力从无休止的纠结中解放出来。决定过程可能只需要几秒钟，省下的时间可以做更多有意义的事。</p>
+    <p><strong class="text-gray-900">增加乐趣与期待感：</strong>看着选项滚动，等待未知的结果，本身就像一个小游戏，能为平淡的决定过程增添一抹趣味和仪式感。</p>
+    <p><strong class="text-gray-900">公平公正，避免争执：</strong>朋友间意见不合时，让“随机”来做裁判，大家都会心服口服，瞬间化解僵局。</p>
+    <p><strong class="text-gray-900">帮你突破思维定式：</strong>有时候，我们心里可能已经有了偏向，但随机结果可能会带你尝试一个被你忽略的选项，发现新的可能。</p>
+  </div>
+
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-12 text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-3">告别选择困难，从今天开始</h3>
+    <p class="text-gray-700 mb-4">生活中已经有很多事需要我们仔细权衡，就把那些无伤大雅的小决定，交给“随机”的乐趣吧。无论是用手机还是电脑，都能随时打开这个<span class="font-semibold text-gray-900">随机决定器</span>。</p>
+    <p class="text-gray-700">下次再为“吃什么”、“去哪玩”、“做什么”而纠结时，不妨试一试。也许，让随机帮你做的那个决定，会带来意想不到的惊喜和轻松好心情。</p>
   </div>
 </div>
 `;export{t as default};

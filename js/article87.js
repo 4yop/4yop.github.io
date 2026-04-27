@@ -1,164 +1,151 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 font-sans">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    做移动端页面还在用px写尺寸？这个工具帮你一键全转rem
-  </h1>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <article class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 border-b pb-6">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">了解真实的自己：一份全面的MBTI性格测试指南</h1>
+      <p class="text-gray-600 text-lg">你是否曾好奇，为什么你和某些人一拍即合，和另一些人却沟通困难？为什么你偏爱安静思考，而朋友却热衷热闹聚会？认识自己，可以从了解性格开始。</p>
+    </header>
 
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8 rounded-r">
-    <p class="text-gray-700">
-      如果你做H5页面或者移动端Web开发，一定遇到过这样的困扰：设计稿给的是750宽度的px值，但实际要适配各种屏幕尺寸。用px写死的话，在大屏手机上元素太小，在小屏手机上又溢出。rem单位能完美解决这个问题——只要改一个基准值，整个页面等比缩放。但手动把每个px值算成rem太痛苦了？别担心，这个在线工具帮你批量搞定。
-    </p>
-  </div>
+    <!-- 引言 -->
+    <section class="mb-10">
+      <p class="text-gray-700 mb-4">在生活中，我们常常会遇到这样的疑问：我到底适合做什么工作？为什么我总感觉和别人想的不一样？如何更好地与他人相处？其实，这些问题都与我们的性格特质密切相关。</p>
+      <p class="text-gray-700 mb-4">有一种被广泛使用的工具，可以帮助我们描绘出自己性格的“地图”，它就是MBTI性格测试。它不是什么神秘的占卜，而是一个基于心理学理论的性格类型指标，帮助我们更清晰地看到自己的偏好和倾向。</p>
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+        <p class="text-gray-800">简单来说，MBTI就像一面镜子，帮助我们观察自己在获取能量、收集信息、做决策和安排生活这四个方面的习惯性偏好。</p>
+      </div>
+    </section>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">什么是rem？为什么要用它替代px？</h2>
-    <p class="text-gray-700 mb-4">
-      简单来说，rem是一个"相对单位"。它相对于html根元素的字体大小来计算。比如你设置html的font-size为20px，那么1rem就等于20px，2rem就是40px，0.5rem就是10px。
-    </p>
-    <p class="text-gray-700 mb-4">
-      这有什么好处呢？<strong>关键在于"一处改动，全局生效"</strong>。当用户用不同尺寸的设备打开你的页面时，只需要通过JavaScript动态修改html的font-size（也就是1rem对应的像素值），页面上所有用rem设置的尺寸就会自动按比例缩放。不用逐个去改每个元素的宽度、高度、字号、间距。
-    </p>
-    <p class="text-gray-700">
-      相比之下，px是绝对单位，写死了就不会变；em虽然也是相对单位，但它是相对于父元素的字体大小，嵌套层级多了容易算晕。rem只认根元素，清晰可控，是目前移动端响应式开发的主流方案。
-    </p>
-  </div>
+    <!-- MBTI是什么 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">MBTI是什么？不仅仅是四个字母</h2>
+      <p class="text-gray-700 mb-4">你可能见过诸如“INFP”、“ESTJ”这样的四个字母组合。这不是密码，而是MBTI性格测试的结果代码。每一个字母代表你在某个性格维度上的倾向。</p>
+      <p class="text-gray-700 mb-6">它主要从四个角度来观察我们：</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">1. 能量来源：内向(I) 还是 外向(E)？</h3>
+          <p class="text-gray-700">这里不是指爱不爱说话，而是指你从哪里获得能量。喜欢从内心世界、独处中恢复精力的人是“内向”(I)；而通过与外界互动、与人交往来充电的人则是“外向”(E)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">2. 信息收集：实感(S) 还是 直觉(N)？</h3>
+          <p class="text-gray-700">你更相信眼睛看到的现实细节，还是更关注未来的可能性？注重具体事实和实际经验的是“实感”(S)；喜欢抽象概念、联想和潜在意义的是“直觉”(N)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">3. 决策方式：思考(T) 还是 情感(F)？</h3>
+          <p class="text-gray-700">做决定时，你更依赖逻辑分析，还是更重视人情与和谐？基于客观逻辑和因果分析做判断的是“思考”(T)；优先考虑价值观和他人感受的是“情感”(F)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">4. 生活方式：判断(J) 还是 感知(P)？</h3>
+          <p class="text-gray-700">你喜欢有计划、有条理的生活，还是灵活、随性的方式？喜欢做决定、让事情有明确结果的是“判断”(J)；喜欢保持开放、适应变化的是“感知”(P)。</p>
+        </div>
+      </div>
+      <p class="text-gray-700">将这四个维度的倾向组合起来，就形成了16种不同的性格类型，每一种都有其独特的特点。</p>
+    </section>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">手动转换有多麻烦？</h2>
-    <p class="text-gray-700 mb-4">
-      假设你的设计稿基于750px宽度，你设定的基准值是1rem=75px（方便计算）。那么：
-    </p>
-    <ul class="space-y-3 ml-6 list-disc text-gray-700 mb-4">
-      <li>width: 375px 要写成 width: 5rem</li>
-      <li>font-size: 28px 要写成 font-size: 0.3733rem</li>
-      <li>padding: 24px 16px 要写成 padding: 0.32rem 0.2133rem</li>
-      <li>margin-top: 40px 要写成 margin-top: 0.5333rem</li>
-      <li>border-radius: 12px 要写成 border-radius: 0.16rem</li>
-    </ul>
-    <p class="text-gray-700">
-      一个普通的移动端页面可能有几十上百个px值，一个个拿计算器除以75，再填回去，不仅耗时还容易算错。更别提有时候还要处理负数、小数精度等问题了。
-    </p>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">这个工具怎么帮你解决？</h2>
-    <p class="text-gray-700 mb-6">
-      使用非常简单，只需三步：
-    </p>
-
-    <div class="space-y-6">
-      <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">第一步：设置Rem基准值</h3>
-        <p class="text-gray-700 mb-3">
-          在左侧配置区输入你的基准像素值。常见的设置有：
-        </p>
-        <ul class="ml-6 list-disc text-gray-600 text-sm space-y-1">
-          <li><strong>移动端常用：</strong>设计稿宽度/10，比如750的设计稿就用75，375的就用37.5</li>
-          <li><strong>方便计算：</strong>设为10或100，这样转换结果一目了然</li>
-          <li><strong>浏览器默认：</strong>设为16（大多数浏览器的默认字号）</li>
+    <!-- 测试过程 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">一次专业的MBTI测试是怎样的？</h2>
+      <p class="text-gray-700 mb-4">一个完整的在线MBTI测试，通常会让你回答一系列关于日常行为、想法和感受的选择题。这些题目旨在探索你在上述四个维度上的自然偏好。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg mb-6">
+        <h3 class="font-bold text-gray-800 text-lg mb-3">测试时你可能会看到：</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">1</span>
+            <span><strong>清晰的进度提示</strong>：让你知道已经完成了多少，还有多少题目。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">2</span>
+            <span><strong>贴近生活的场景题</strong>：比如“在社交聚会中，你通常...”，选项没有对错，只需选择最符合你真实感受的一项。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">3</span>
+            <span><strong>实时的维度反馈</strong>：有些测试会边做边显示你在各个维度上的初步倾向，就像看着自己的性格画像一笔笔画出来。</span>
+          </li>
         </ul>
-        <p class="text-gray-700 mt-3">
-          工具会按照"rem值 = px数值 / 基准像素"的公式进行自动换算。
-        </p>
       </div>
+      <p class="text-gray-700">完成所有题目后，系统会根据你的选择进行计分，最终得出一个属于你的四字母性格类型代码。</p>
+    </section>
 
-      <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">第二步：输入CSS代码</h3>
-        <p class="text-gray-700 mb-3">
-          你可以<strong>直接粘贴CSS代码</strong>到输入框中，也可以<strong>上传.css文件</strong>让工具读取内容。支持普通CSS、Less、Scss/Sass格式的文件。
-        </p>
-        <p class="text-gray-700">
-          不确定格式对不对？点击"演示数据"按钮，工具会填充一段示例CSS代码供你测试效果。
-        </p>
+    <!-- 报告价值 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">测试报告能告诉你什么？</h2>
+      <p class="text-gray-700 mb-6">一份详细的MBTI测试报告，远不止告诉你四个字母。它更像一份个人使用说明书，可以帮助你：</p>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-green-600 font-bold">优</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">发现自己的天然优势</h3>
+            <p class="text-gray-700">报告会详细分析你这种性格类型的闪光点。比如，你可能天生善于逻辑分析、有强大的创新能力，或者对人际关系有深刻的洞察力。了解优势，能让你在工作和生活中更好地发挥所长。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-yellow-600 font-bold">长</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">看到可能的成长方向</h3>
+            <p class="text-gray-700">每种性格也都有其面临的挑战。报告可能会指出，你可能需要注意避免过度陷入理论而忽视执行，或者需要学习更好地表达情感。认识到这些，是个人成长的第一步。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-indigo-600 font-bold">职</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">获得职业选择的参考</h3>
+            <p class="text-gray-700">性格与职业的匹配度很重要。报告常常会列出一些高度匹配的职业方向。例如，内向直觉思考感知型的人，可能在科研、编程、架构设计等领域如鱼得水。这可以为你的学业或职业规划提供有价值的参考。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-purple-600 font-bold">处</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">改善人际沟通与理解</h3>
+            <p class="text-gray-700">当你明白自己是“思考型”而伴侣是“情感型”时，就能理解为什么Ta有时会觉得你“太讲道理”。MBTI提供了一个中立的框架，帮助我们理解人与人的不同，学会用对方能接受的方式沟通，减少摩擦。</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">第三步：点击转换并复制结果</h3>
-        <p class="text-gray-700 mb-3">
-          点击"点击处理"按钮，所有px值会被自动转换为对应的rem值。转换完成后直接点击"复制"按钮就能拿到结果代码。
-        </p>
-        <p class="text-gray-700">
-          如果需要重新调整，修改基准值后再次点击处理即可。点击"清空数据"可以重置一切从头开始。
-        </p>
-      </div>
-    </div>
-  </div>
+    <!-- 正确看待 -->
+    <section class="mb-10 bg-gray-50 p-6 rounded-xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">如何正确看待MBTI测试结果？</h2>
+      <p class="text-gray-700 mb-4">在探索自我的旅程中，MBTI是一个好用的工具，但也有一些需要注意的地方：</p>
+      <ul class="space-y-3 text-gray-700 mb-4">
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>它描述偏好，不是能力</strong>：MBTI说明你“喜欢”怎样，而不是你“擅长”什么。一个内向的人也可以练就出色的演讲能力。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>类型没有好坏之分</strong>：16种性格类型各有其独特的价值和贡献。世界需要细致的守护者，也需要大胆的创新者。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>人是动态发展的</strong>：你的偏好可能会随着经历和环境发生细微变化。测试结果是一个当下的快照，而非终身不变的标签。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>目的是理解与发展</strong>：测试的最终目的不是把自己框定在某个类型里，而是借助这种洞察，更好地扬长避短，实现个人成长，同时更包容地看待他人。</span>
+        </li>
+      </ul>
+      <p class="text-gray-700">最好的使用方式，是把报告作为一面镜子，从中看到自己可能忽略的特点，然后带着这份对自己的理解，更自信、更智慧地去生活和工作。</p>
+    </section>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">进阶技巧：关于Border的处理</h2>
-    <p class="text-gray-700 mb-4">
-      你可能注意到工具有一个"<strong>不处理Border属性值</strong>"的选项。这是为什么呢？
-    </p>
-    <p class="text-gray-700 mb-4">
-      在实际开发中，边框（border）通常不需要随屏幕缩放。比如一个1px的细线边框，如果换成rem后在不同设备上可能变成2px甚至更粗，反而影响视觉效果。所以很多开发者习惯保留border相关属性中的px值不变。
-    </p>
-    <p class="text-gray-700">
-      勾选此选项后，工具会跳过border-width、border、border-top/bottom/left/right-width等属性中的px转换。你可以根据项目需求灵活选择。
-    </p>
-  </div>
-
-  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">实际使用场景</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-4 rounded-lg shadow">
-        <h4 class="font-medium text-gray-800 mb-2">小张 | 前端开发工程师</h4>
-        <p class="text-gray-700 text-sm">
-          "公司项目全面转向移动端适配，几百个页面的样式要从px改成rem。用这个工具批量处理，配合编辑器的全局替换功能，两天就把核心页面全部迁移完了。省了大量手工计算的时间。"
-        </p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow">
-        <h4 class="font-medium text-gray-800 mb-2">李姐 | 自媒体运营</h4>
-        <p class="text-gray-700 text-sm">
-          "做公众号H5活动页面，设计师给的稿子全是px标注。以前要自己一个个算，现在把CSS贴进去，一秒出结果。连演示数据功能都帮我想好了示例格式，很贴心。"
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-bottom">关于rem单位的常见问题</h2>
-    <div class="space-y-5">
-      <div>
-        <h4 class="font-medium text-gray-800 mb-2">Q：rem和vw/vh有什么区别？应该用哪个？</h4>
-        <p class="text-gray-700 text-sm">
-          A：rem是基于根元素字号的比例单位，vw/vh是视口宽高的百分比单位。两者都能实现响应式，但rem更适合做整体等比缩放（如从设计稿还原），而vw适合做与屏幕宽度强相关的布局。很多成熟的方案是rem为主、vw为辅的组合使用。
-        </p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800 mb-2">Q：转换后的rem值有很多小数位怎么办？</h4>
-        <p class="text-gray-700 text-sm">
-          A：工具会自动去除末尾多余的零。一般来说保留2到4位小数足够精确。如果你希望结果更整洁，可以把基准值设为方便整除的数字（如10、25、50、100）。
-        </p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800 mb-2">Q：这个工具支持哪些CSS属性的转换？</h4>
-        <p class="text-gray-700 text-sm">
-          A：工具会扫描CSS中所有出现"数字+px"的地方并进行替换，包括但不限于width、height、font-size、padding、margin、border-radius、top/left/right/bottom、line-height、letter-spacing、gap等属性。注释和字符串中的px不会被误转。
-        </p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800 mb-2">Q：转换后的代码可以直接用在项目中吗？</h4>
-        <p class="text-gray-700 text-sm">
-          A：可以。转换只是做了单位换算，不会改变CSS的选择器结构和其他属性值。建议转换后检查一遍，特别是有特殊计算或CSS函数（如calc()）的地方。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center p-6 border border-dashed border-gray-300 rounded-xl">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">告别手工计算，专注更有价值的事</h3>
-    <p class="text-gray-700 mb-4">
-      把繁琐的单位换算交给工具，把时间留给创意和逻辑。无论你是专业前端开发者还是偶尔写写样式的运营人员，这个免费在线工具都能让你的工作更高效。打开即用，无需注册，转换结果一键复制。
-    </p>
-    <p class="text-gray-700 font-medium">
-      下次收到满是px值的设计稿时，别忘了来这里一键转换。几秒钟的事情，何必浪费脑细胞呢？
-    </p>
-  </div>
-
-  <div class="mt-10 pt-6 border-t border-gray-200">
-    <p class="text-gray-600 text-sm">
-      相关搜索：css px转rem在线工具、px转rem计算器、移动端rem适配方案、前端响应式单位转换、rem基准值怎么设、设计稿px转rem、H5页面rem布局、CSS单位px和rem区别、批量px转rem工具、在线CSS转换器
-    </p>
-  </div>
+    <!-- 结语 -->
+    <section class="pt-6 border-t">
+      <p class="text-gray-700 mb-6">认识自己是一生的课题。MBTI性格测试就像在这条路上提供了一张粗略但很有用的地图。它不能决定你的终点，但能帮你了解自己出发时的“默认路径”。</p>
+      <p class="text-gray-700">如果你对“我究竟是怎样的一个人”感到好奇，不妨花上一点时间，诚实地回答一些问题。你可能会对自己有新的发现，也可能对身边人的行为多一分理解。这份自我了解的旅程，本身就是一种收获。</p>
+    </section>
+  </article>
 </div>
-`;export{t as default};
+`;export{s as default};

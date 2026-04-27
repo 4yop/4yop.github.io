@@ -1,88 +1,152 @@
-const s=`
-<article class="max-w-4xl mx-auto p-6 font-sans text-gray-800">
-  <header class="mb-8 text-center">
-    <h1 class="text-3xl font-bold text-slate-900 mb-4">你的身体变化，有把“聪明”的尺子</h1>
-    <p class="text-gray-600 text-lg">告别健忘与混乱，轻松看懂自己的健康趋势</p>
-  </header>
-
-  <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl mb-8">
-    <p class="mb-4">你是不是也有过这样的经历？站在秤上，看着体重数字，心里冒出无数问号：</p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-      <li>体重没变，怎么感觉肚子又大了？</li>
-      <li>辛苦锻炼一个月，效果到底怎么样？</li>
-      <li>去年夏天的数据和今年的，早就混在一起记不清了。</li>
-      <li>买过体脂秤，但那些数据看一眼就忘了，根本不知道自己是进步了还是退步了。</li>
-    </ul>
-    <p class="mt-4">很多人管理健康，就像在用一把刻度模糊、还不带记忆功能的尺子，量了半天，结果还是糊涂账。</p>
-  </div>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-blue-500 pl-3 mb-4">一把更懂你的“健康尺”：体脂率</h2>
-    <p class="mb-4">我们常说的“胖瘦”，体重只是一个粗略参考。真正关键的是<strong>体脂率</strong>，也就是你身体里脂肪所占的比例。它就像一面更精准的镜子：</p>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">1</span>
-        <span>同样体重，肌肉多的人看起来紧致，脂肪多的人则显得臃肿，区别就在体脂率。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">2</span>
-        <span>减肥成功的标志不一定是体重暴跌，而是体脂率的稳步下降。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">3</span>
-        <span>它比单纯的体重，更能反映你的锻炼成果和身体成分的真实变化。</span>
-      </li>
-    </ul>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-green-500 pl-3 mb-4">如何轻松拥有自己的“健康日记本”？</h2>
-    <p class="mb-6">现在，想象你有一个<strong>专属的健康小助手</strong>，它能帮你解决上面的所有烦恼。你不需要懂复杂的数据，只需要像聊天一样告诉它几个基本信息。</p>
-
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg mb-3 text-blue-700">第一步：简单输入</h3>
-        <p>就像每次体检填表一样，选择性别，输入你的身高、体重和年龄。然后点击“计算”，你的体脂率结果立刻就出来了。这个过程，比你泡一杯茶还快。</p>
+const e=`
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 leading-tight">
+      做生意怎么算利润？一个小工具让你明明白白
+    </h1>
+    
+    <div class="text-gray-600 text-sm mb-6">
+      <span>更新日期：2023年10月</span>
+      <span class="mx-2">|</span>
+      <span>阅读时间：约5分钟</span>
+    </div>
+    
+    <div class="prose prose-gray max-w-none">
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        你有没有遇到过这样的情况：做了一笔生意，订单金额看起来不错，但最后算下来却没赚多少钱？手续费、提现费、成本...各种费用一扣，实际利润和预期相差甚远。今天，我们来聊聊如何准确计算生意的真实利润。
+      </p>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        为什么生意做了很多，钱却没剩下多少？
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        很多刚开始做生意的朋友都会有这样的困惑：明明订单金额不小，为什么到手的钱却不多？其实，这是因为我们常常忽略了几个重要的成本项。
+      </p>
+      
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+        <p class="text-gray-700 m-0 leading-relaxed">
+          举个例子：一笔1000元的订单，平台收取5%的手续费，提现时再扣10元，成本占80%。这样算下来，最后的利润可能只有几十元。
+        </p>
       </div>
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg mb-3 text-green-700">第二步：自动记忆</h3>
-        <p>神奇的是，每次计算后，这个小助手都会默默记下这次的数据和日期。你完全不用担心忘记或丢失。它会自动帮你整理好，形成一个清晰的历史记录表。</p>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        影响实际利润的三大因素
+      </h2>
+      
+      <div class="space-y-6 my-8">
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">1. 平台手续费</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            现在很多生意都在线上进行，电商平台、支付平台都会收取一定比例的手续费。这个费用通常按订单金额的百分比计算，是很多人容易忽略的隐形成本。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">2. 提现手续费</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            钱在平台上，要转到自己的银行卡里，往往还需要支付一笔提现费。这笔费用有时是固定的，有时按比例计算，积少成多也是一笔不小的开支。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">3. 成本控制</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            除了直接的产品成本，还有物流、包装、人工等间接成本。把这些都算进去，才能知道真正的利润空间有多大。
+          </p>
+        </div>
+      </div>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        怎么知道自己什么时候开始赚钱？
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个问题很多人都关心。其实每个生意都有一个“开始盈利点”，也就是要达到多少销售额才能覆盖所有成本，开始真正赚钱。
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个点需要考虑提现手续费、平台手续费和你的成本比例。通过计算，你可以清楚地知道：我的生意要做到多少钱才能不亏本？做到多少钱才能达到目标利润？
+      </p>
+      
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">一个简单的计算方法：</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
+            <span>先算出手续费占总金额的比例</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
+            <span>再加上提现手续费</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
+            <span>考虑成本占比</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">4</span>
+            <span>综合计算得出盈利点</span>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        最终利润比例：衡量生意健康度的重要指标
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        只看赚了多少钱还不够，还要看利润比例。同样赚100元，一个是1000元订单赚的，一个是5000元订单赚的，生意健康度完全不同。
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        最终利润比例 = （最终利润 ÷ 订单总金额）× 100%
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个数字能帮你判断：我的定价合理吗？成本控制得好吗？有没有优化空间？
+      </p>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        常见问题解答
+      </h2>
+      
+      <div class="space-y-6 my-6">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：为什么我算出来的利润和实际到手的不一样？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            可能是因为漏算了一些费用。除了平台手续费和提现费，还要考虑退款率、优惠券成本、包装材料费等。建议把所有可能产生的费用都列出来，逐一计算。
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：手续费多少算合理？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            不同平台手续费不同，一般在0.6%-5%之间。关键不是看绝对值，而是看扣除所有费用后，你的利润是否还能保持健康水平。如果手续费吃掉太多利润，就要考虑换平台或者调整定价策略。
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：如何提高最终利润比例？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            可以从几个方面入手：1. 优化成本，寻找性价比更高的供应商；2. 提高客单价，适当调整定价；3. 减少中间环节，降低手续费；4. 提高运营效率，减少浪费。
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-10">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">小贴士：定期计算利润</h3>
+        <p class="text-gray-700 m-0 leading-relaxed">
+          建议每个月都算一次账，把当月的所有订单、所有费用都统计清楚。这样不仅能了解自己的真实盈利情况，还能及时发现问题，调整经营策略。做生意，心中有数才能走得更远。
+        </p>
+      </div>
+      
+      <div class="border-t border-gray-200 mt-10 pt-8">
+        <p class="text-gray-600 text-sm leading-relaxed">
+          本文旨在帮助普通生意人理解利润计算的原理和方法。实际经营中，建议咨询专业财务人员，确保账目清晰准确。
+        </p>
       </div>
     </div>
-
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <h3 class="font-bold text-lg mb-4 text-purple-700">第三步：看懂趋势</h3>
-      <p class="mb-4">这是最有价值的部分！所有记录下来的数据，会自动生成一张<strong>趋势变化图</strong>。</p>
-      <ul class="space-y-2 text-gray-700">
-        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span> <strong>蓝线代表体脂率</strong>：一眼就能看出它是上升、下降还是持平。</li>
-        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span> <strong>绿线代表体重</strong>：可以和体脂率对照着看。</li>
-      </ul>
-      <p class="mt-4">比如，你可以清晰地看到：“哦，从3月到5月，我的体重没怎么变，但体脂率这条蓝线确实在慢慢往下走，这说明我长的可能是肌肉，减的是脂肪，锻炼有效！”</p>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-amber-500 pl-3 mb-4">给你的数据，加上“双保险”</h2>
-    <p class="mb-4">我们最怕的就是数据丢失。这个小助手还有两个贴心功能：</p>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <div class="flex-1 bg-amber-50 p-5 rounded-xl border border-amber-100">
-        <h4 class="font-bold mb-2">打包带走（导出）</h4>
-        <p>你可以把所有的记录一键导出，保存到电脑或手机里，就像给珍贵的照片备份一样安心。</p>
-      </div>
-      <div class="flex-1 bg-emerald-50 p-5 rounded-xl border border-emerald-100">
-        <h4 class="font-bold mb-2">原样恢复（导入）</h4>
-        <p>万一需要，你可以把之前备份的数据文件再导入回来，所有记录瞬间恢复原样，无需重复输入。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-slate-50 p-6 rounded-2xl">
-    <h2 class="text-2xl font-semibold text-slate-800 mb-4">现在就开始，量一量你的健康轨迹</h2>
-    <p class="mb-4">管理健康，不应该是一件复杂和健忘的事情。它需要的不是多么高深的知识，而只是一个<strong>简单、持续、可视化</strong>的记录方式。</p>
-    <p class="mb-6">无论你是想减肥、增肌，还是仅仅想了解自己身体的变化规律，从今天开始，试着记录下你的体脂率。几个星期或几个月后，回头看看那张趋势图，你可能会对自己有更清晰、更惊喜的发现。</p>
-    <div class="text-center p-4 border border-dashed border-slate-300 rounded-lg">
-      <p class="font-medium">找一找那个能帮你<strong>计算、记住、画出趋势</strong>的小工具吧。它就是你那把聪明的“健康尺”和永不忘事的“健康日记本”。</p>
-    </div>
-  </section>
-</article>
-`;export{s as default};
+  </article>
+</div>
+`;export{e as default};

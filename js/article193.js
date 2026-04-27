@@ -1,96 +1,110 @@
-const t=`
-<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
+  </header>
 
-  <p class="text-lg text-gray-600 mb-8">
-    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
+      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
+    </div>
+    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
+  </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
-    <p class="text-gray-800">
-      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
-    </p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
-  <p class="mb-6">
-    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
-  </p>
-  <ul class="space-y-4 mb-10 pl-5 list-disc">
-    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
-    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
-    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
-    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
-  </ul>
-  <p class="mb-10">
-    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
+    <div class="bg-pink-50 p-5 rounded-lg my-5">
+      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
+        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
+        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
+        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
+      </ol>
+    </div>
+    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
-  <p class="mb-6">
-    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
-  </p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
+          <li>配合表情使用，效果更佳</li>
+          <li>真诚最重要，即使是夸张的话也要发自内心</li>
+        </ul>
       </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
-      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      <div class="bg-red-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
+          <li>在正式场合用，比如工作汇报、商务谈判</li>
+          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
+        </ul>
       </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
-      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
     </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
       </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
-      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
       </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
-      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
-
-  <div class="space-y-6 mb-12">
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
-      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
     </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
-      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
-      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
-      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
-    </div>
-  </div>
-
-  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
-    <p class="text-gray-700 mb-6">
-      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
-    </p>
-    <p class="text-gray-700">
-      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
-    </p>
-  </div>
+  </section>
 </article>
-`;export{t as default};
+`;export{s as default};

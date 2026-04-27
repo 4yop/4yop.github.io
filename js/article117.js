@@ -1,111 +1,85 @@
-const e=`
-<article class="max-w-4xl mx-auto p-4 md:p-6 lg:p-8 font-sans text-gray-800 bg-white">
-  <!-- 文章标题 -->
-  <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
-    还在为下载链接发愁？这个免费工具让你一键调用迅雷
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    照片太模糊了怎么办？一个简单方法让你的图片变高清
   </h1>
 
-  <p class="text-sm text-gray-500 mb-6 md:mb-8">
-    最后更新：2023年10月 | 阅读时长：约3分钟
-  </p>
-
-  <!-- 引言/痛点 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 md:mb-8 rounded-r">
-    <p class="text-gray-700">
-      你有没有遇到过这种情况？网上找到一个好资源，复制了下载链接，却不知道怎么让迅雷开始工作。或者，要下载几十个文件，得一个一个手动添加，实在太麻烦了。
-    </p>
+  <div class="text-gray-600 mb-8 text-base sm:text-lg leading-relaxed">
+    <p class="mb-4">你是否遇到过这些情况？翻看老照片时发现画质模糊不清；从网上下载的图片放大后全是马赛克；手机拍的照片传到电脑上就变模糊了。</p>
+    <p>别担心，今天我们就来聊聊，如何轻松让这些模糊的图片重新变得清晰起来。</p>
   </div>
 
-  <!-- 主体内容 -->
-  <div class="space-y-6 md:space-y-8">
-    <section>
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 leading-snug">
-        下载链接的“翻译官”，让你的迅雷听懂指令
-      </h2>
-      <p class="text-gray-700 mb-3 leading-relaxed">
-        你可以把它想象成一个在线的小助手。平时，你复制了磁力链接、电驴链接或者普通的网页下载地址，迅雷可能“不认识”或者需要你手动打开软件、粘贴进去，步骤很多。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        而这个工具的作用，就是帮你把各种各样的下载链接，“翻译”成迅雷能立刻明白并执行的指令。你只需要把链接交给它，它就能直接唤醒你电脑上的迅雷软件，并把任务添加进去，省去了中间所有繁琐的操作。
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 leading-snug">
-        三种模式，就像三种购物车
-      </h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        这个工具贴心地把下载分成了三种简单的模式，适应你不同的需求：
-      </p>
-      <ul class="space-y-4 pl-5 list-disc text-gray-700">
-        <li class="leading-relaxed">
-          <span class="font-medium">单文件下载：</span>
-          就像在网店只买一件心仪的商品。你有一个明确的电影、软件或者音乐文件链接，放进去，起个好记的名字，确认一下大小，就可以下单（下载）了。
-        </li>
-        <li class="leading-relaxed">
-          <span class="font-medium">批量下载：</span>
-          就像去超市列了一张购物清单。你可能找到了一个图片合集、一系列课程视频，或者某个文件夹里的所有文件。把它们的链接一行一个整理好，一次性全部交给工具，它就会帮你的迅雷“一车拉走”，效率特别高。
-        </li>
-        <li class="leading-relaxed">
-          <span class="font-medium">绿色版软件：</span>
-          这针对一种特殊的“商品”——绿色软件（即解压就能用，不用安装的软件）。这个模式不仅帮你下载软件压缩包，还能在下载完成后，自动在桌面创建好快捷方式。你以后想用这个软件，直接双击桌面的图标就行，和在官网下载安装的效果一样方便。
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 leading-snug">
-        对你来说，这有什么实实在在的好处？
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-        <div class="border border-gray-200 p-4 md:p-5 rounded-lg shadow-sm">
-          <h3 class="font-semibold text-lg text-gray-800 mb-2 leading-relaxed">一键直达，省时省力</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">再也不用先打开迅雷，再找“新建任务”按钮，再粘贴链接了。复制链接，点击下载，两步搞定。</p>
-        </div>
-        <div class="border border-gray-200 p-4 md:p-5 rounded-lg shadow-sm">
-          <h3 class="font-semibold text-lg text-gray-800 mb-2 leading-relaxed">什么链接都能下</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">无论是网页上的普通链接，还是神秘的磁力链、电驴链，工具都能准确识别并交给迅雷处理，你不用操心格式问题。</p>
-        </div>
-        <div class="border border-gray-200 p-4 md:p-5 rounded-lg shadow-sm">
-          <h3 class="font-semibold text-lg text-gray-800 mb-2 leading-relaxed">批量处理太高效</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">下载几十个学习资料或系列漫画？把所有链接整理到一个文本框里，一次操作，迅雷就会乖乖排队下载所有任务。</p>
-        </div>
-        <div class="border border-gray-200 p-4 md:p-5 rounded-lg shadow-sm">
-          <h3 class="font-semibold text-lg text-gray-800 mb-2 leading-relaxed">绿色软件真“绿色”</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">对于绿色软件，从下载到在桌面创建快捷方式一气呵成，真正做到下载即使用，管理起来也井井有条。</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 leading-snug">
-        哪些场景下你特别需要它？
-      </h2>
-      <div class="space-y-4">
-        <div class="p-4 bg-gray-50 rounded-lg">
-          <h3 class="font-medium text-gray-800 mb-2 leading-relaxed">场景一：电影迷的收藏时光</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            小王在网上找到了一个经典电影合集，里面有20部电影的磁力链接。如果一个个手动添加，不仅累，还容易出错。他使用了工具的“批量下载”模式，把所有链接粘贴进去，设置好合集名称（比如“90年代经典电影”）。点击下载后，迅雷自动新建一个叫这个名字的文件夹，并开始下载所有电影，文件都自动存放到一起，非常整洁。
-          </p>
-        </div>
-        <div class="p-4 bg-gray-50 rounded-lg">
-          <h3 class="font-medium text-gray-800 mb-2 leading-relaxed">场景二：软件爱好者的尝鲜体验</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            小李想试用一个网友分享的绿色版图像处理软件。他复制了软件的网盘下载链接，在工具里选择“绿色版软件”模式。除了粘贴下载地址，他还在“主程序路径”里填上解压后启动文件的名称（比如“PhotoTool.exe”），并勾选“创建桌面快捷方式”。下载完成后，他的桌面上直接出现了一个名为“图像处理工具”的快捷方式，双击就能打开软件，和安装版的体验毫无区别。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 结尾与行动号召 -->
-    <section class="border-t border-gray-200 pt-6 md:pt-8 mt-6 md:mt-8">
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        其实，很多我们觉得复杂的操作，只是缺少一个合适的“桥梁”。这个在线工具，就是连接你和迅雷下载能力之间最简单的那座桥。它完全免费，打开网页就能用，不需要你安装任何额外的东西。
-      </p>
-      <p class="text-gray-700 font-medium leading-relaxed">
-        如果你也厌倦了繁琐的下载步骤，下次再遇到想下载的资源时，不妨试试这个思路，或许能为你节省不少时间和精力。
-      </p>
-    </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">图片高清化是什么？</h2>
+    <p class="text-gray-700">简单来说，它就像给图片做一次“智能修复”。通过分析图片的像素和纹理，智能地补充细节，让原本模糊、有锯齿的图片变得更清晰、更细腻。这和我们用手机软件简单的“锐化”滤镜不同，效果要好得多。</p>
   </div>
-</article>
-`;export{e as default};
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">为什么我的照片会模糊？</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
+        <span class="text-gray-700"><strong>拍摄问题：</strong>手抖、光线不足、对焦不准，都会让照片拍出来不够清晰。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
+        <span class="text-gray-700"><strong>多次压缩：</strong>图片在微信、QQ等社交软件里反复发送，会被严重压缩，画质越来越差。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
+        <span class="text-gray-700"><strong>放大图片：</strong>把一张小图强行拉大，电脑只能复制原有的像素点，结果就是出现难看的马赛克和锯齿。</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">如何让模糊图片变清晰？</h2>
+    <p class="text-gray-700 mb-6">现在有一些在线工具可以帮你解决这个问题。它们操作起来很简单，不需要你会任何复杂的软件。</p>
+
+    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">一般的使用步骤是这样的：</h3>
+      <ol class="space-y-4 pl-5 list-decimal text-gray-700">
+        <li><strong>打开工具页面：</strong>在你的浏览器里找到相应的在线工具。</li>
+        <li><strong>上传图片：</strong>点击按钮，从你的电脑或手机里选择那张模糊的图片。通常可以一次上传多张。</li>
+        <li><strong>开始处理：</strong>点击“高清化”或类似的按钮，工具就会开始智能修复你的图片。</li>
+        <li><strong>等待并下载：</strong>处理需要一点时间，完成后直接下载清晰的新图片即可。</li>
+      </ol>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6 mt-8">
+      <div class="border border-gray-200 rounded-lg p-5">
+        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理时能看到什么？</h4>
+        <p class="text-gray-700 text-sm">你会看到一个进度条，知道处理到哪一步了。如果图片特别大，工具可能会把它分成很多小块来慢慢处理，这时你会看到当前在处理第几块，总共多少块，大概还要多久，非常直观。</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-5">
+        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理完可以做什么？</h4>
+        <p class="text-gray-700 text-sm">处理完成后，你可以预览高清版的效果，和原图对比。满意的话，就一键下载到电脑里。如果处理了好几张图，还可以把它们打包成一个压缩文件一起下载，非常方便。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">使用前你需要知道的几点</h2>
+    <div class="space-y-4">
+      <div class="p-4 border border-yellow-200 bg-yellow-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">需要浏览器支持</h4>
+        <p class="text-gray-700 text-sm">这类工具通常需要你电脑或手机里的浏览器支持一个叫“WebGL”的功能，这依赖于你的显卡。绝大多数现代设备和浏览器都没问题，但如果你用的是很老的电脑或浏览器，可能会无法使用。</p>
+      </div>
+      <div class="p-4 border border-blue-200 bg-blue-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">第一次使用要等等</h4>
+        <p class="text-gray-700 text-sm">就像打开一个新软件需要加载一样，这类在线工具第一次使用时，也需要一点点时间来加载背后的“智能修复模型”。加载完成后，以后再用就快了。</p>
+      </div>
+      <div class="p-4 border border-gray-200 bg-gray-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">关于图片格式</h4>
+        <p class="text-gray-700 text-sm">普通的JPG、PNG图片都可以处理。但是动态的GIF图片目前一般不支持，因为它是很多张图组成的，处理起来很不一样。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center border-t pt-8 mt-8">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">让记忆重新清晰起来</h3>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">无论是想要修复一张珍贵的家庭老照片，还是需要一张清晰的图片用于工作展示，图片高清化工具都能帮上忙。它把复杂的技术藏在背后，留给我们的是一个简单、直观的解决模糊问题的方法。</p>
+    <p class="text-gray-600 text-sm">下次再遇到模糊的图片，不妨试试看。</p>
+  </div>
+</div>
+`;export{t as default};

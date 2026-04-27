@@ -1,126 +1,108 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为“如何分组”头疼？试试这个智能配对小工具，1分钟搞定复杂搭配</h1>
+const e=`
+<article class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+    网址总变乱码打不开？一个简单工具帮你轻松“翻译”和修复链接
+  </h1>
 
   <p class="text-lg text-gray-600 mb-8">
-    无论是组织班级活动、安排工作会议搭档，还是策划团队建设游戏，你是不是也常常为“怎么公平地把人分成一对一对”而烦恼？告别抓阄和手动分配的麻烦，一个简单高效的在线工具就能帮你。
+    你是否在微信聊天、邮件或者文档里，点开一个链接，却发现地址栏里全是“%20”、“%E4%B8%AD”这样奇怪的字符？别担心，这不是你的电脑或手机坏了，而是网络地址在使用一种特殊的“语言”。今天，我们就来认识一个能帮你“翻译”这种语言、修复问题链接的实用小工具。
   </p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8 rounded-r">
-    <h2 class="text-xl font-semibold mb-2 text-blue-800">主要功能速览：</h2>
-    <ul class="list-disc pl-5 space-y-1 text-blue-700">
-      <li>支持两组人互相配对（如男女生、AB部门）</li>
-      <li>支持单组人内部随机两两组队</li>
-      <li>可以设置“不想和谁一组”，避免尴尬</li>
-      <li>结果可灵活手动调整，并能一键导出表格</li>
-    </ul>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-blue-800">
+      <strong>简单来说：</strong>这个工具就像是一个专为网络链接准备的“双向翻译器”。它能把正常的文字（比如中文、空格、特殊符号）转换成网络能安全识别的代码，也能把那一长串让人眼花缭乱的百分号代码，重新变回你能看懂的正常文字。
+    </p>
   </div>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">你有没有遇到过这些烦心事？</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p><strong>场景一：公司团建分组</strong></p>
-        <p class="text-gray-600">30个人，领导要求打散部门，让不同部门的同事组队完成任务。你拿着名单，左拼右凑，既想保证随机性，又得小心别把关系不好的同事分到一起，花了半小时还没弄好。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p><strong>场景二：老师安排学习小组</strong></p>
-        <p class="text-gray-600">班上有40个学生，需要两两结成互帮互助的“学习搭档”。你想要随机分配，体现公平，但同时又想尊重学生的意愿，避开那些确实不适合在一起学习的孩子。一个个问？太耗时了。</p>
-      </div>
-      <p class="text-gray-700">这些需要“动脑筋”的配对任务，其实完全可以交给工具自动化处理，把省下的时间花在更重要的事情上。</p>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">它是怎么工作的？用“红娘”和“班干部”来理解</h2>
-    <p class="mb-4">这个工具的工作原理非常简单，就像你身边聪明的助手。</p>
-
-    <div class="md:flex gap-6 mb-6">
-      <div class="md:w-1/2 bg-white p-6 border border-gray-200 rounded-lg mb-4 md:mb-0">
-        <h3 class="text-xl font-semibold mb-3 text-blue-700">模式一：像“相亲活动”的红娘</h3>
-        <p class="text-gray-600 mb-3">当你手里有两份名单时（比如男生组和女生组，A部门和B部门），使用这个模式。</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li>你把两份名单分别给它。</li>
-          <li>它会<strong>自动、随机</strong>地将两边的人一一牵线，搭配起来。</li>
-          <li>你还可以提前告诉它：“张三和李四尽量别安排到一起”，它会记住这个要求。</li>
-        </ul>
-      </div>
-      <div class="md:w-1/2 bg-white p-6 border border-gray-200 rounded-lg">
-        <h3 class="text-xl font-semibold mb-3 text-green-700">模式二：像“排座位”的班干部</h3>
-        <p class="text-gray-600 mb-3">当你只有一份总名单，需要从里面两两配对时，就选这个模式。</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li>你把所有人的名字给它。</li>
-          <li>它会打乱顺序，然后<strong>公平地两两组合</strong>。</li>
-          <li>如果人数是单数，最后一个伙伴会显示“待定”，非常灵活。</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">为什么你需要用这个工具？五大省心之处</h2>
-    <div class="grid md:grid-cols-2 gap-4">
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <h3 class="font-semibold mb-2 text-lg">1. 效率飞升，告别繁琐</h3>
-        <p class="text-gray-600">输入名单，点击一下，结果立等可取。无论是10人还是100人，处理速度一样快，把从前的几十分钟压缩到几秒钟。</p>
-      </div>
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <h3 class="font-semibold mb-2 text-lg">2. 随机公平，减少争议</h3>
-        <p class="text-gray-600">由系统随机打乱分配，过程透明，结果随机，避免了“你偏心”的质疑，让大家心服口服。</p>
-      </div>
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <h3 class="font-semibold mb-2 text-lg">3. 人情味考量，避免尴尬</h3>
-        <p class="text-gray-600">特有的“避免配对”功能很贴心。你可以提前设定好不希望在一起的组合（比如有矛盾的同事），系统会尽力避开，让分组更和谐。</p>
-      </div>
-      <div class="border border-gray-200 p-5 rounded-lg">
-        <h3 class="font-semibold mb-2 text-lg">4. 灵活调整，结果你说了算</h3>
-        <p class="text-gray-600">如果对某个搭配不满意？不需要全部重来。手动点击“调换”按钮，微调一下即可，最终决定权始终在你手里。</p>
-      </div>
-    </div>
-    <div class="mt-4 border border-gray-200 p-5 rounded-lg bg-gray-50">
-      <h3 class="font-semibold mb-2 text-lg">5. 记录与分享，一步到位</h3>
-      <p class="text-gray-600 mb-2">配对结果可以直接一键导出成Excel/CSV表格文件，方便发邮件、打印存档。你甚至可以上传分组依据的图片（如抽签照片），让整个过程更有迹可循。</p>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">它能在哪些地方帮你大忙？</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-semibold mb-2">对于老师/培训师：</h3>
-        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-          <li><strong>课堂分组</strong>：快速创建讨论小组、实验搭档、项目团队。</li>
-          <li><strong>家长会安排</strong>：随机安排家长与各科老师的谈话顺序。</li>
-          <li><strong>兴趣班</strong>：为舞蹈、体育课等需要两人配合的活动快速配对。</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">对于HR/活动组织者：</h3>
-        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-          <li><strong>破冰游戏</strong>：在新员工培训或大型团建中，随机配对让陌生人互相认识。</li>
-          <li><strong>跨部门协作</strong>：刻意打散部门壁垒，促进公司内部的交流与融合。</li>
-          <li><strong>年会抽奖搭档</strong>：为需要双人上台领奖的环节随机配对中奖者。</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">对于社群管理者/个人：</h3>
-        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-          <li><strong>读书会</strong>：随机分配书友进行章节导读或心得交换。</li>
-          <li><strong>运动约伴</strong>：为羽毛球、乒乓球等活动自动分配对手或队友。</li>
-          <li><strong>家庭任务</strong>：甚至可以用来公平地分配家务活，让家庭成员两两搭档完成。</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-gray-50 p-8 rounded-xl text-center border border-gray-200">
-    <h2 class="text-2xl font-bold mb-4">别再为“和谁一组”浪费时间和脑细胞了</h2>
-    <p class="text-gray-600 mb-6 mx-auto max-w-2xl">
-      无论是追求绝对的随机公平，还是希望在随机中融入一点点人情化的考量，这个智能配对工具都能成为你的得力助手。它把复杂的排列组合问题，简化成了“输入名单-点击生成”两步操作。
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">
+      为什么好好的链接，会变成一堆“乱码”？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      想象一下，你要把一个包裹（信息）通过一条有严格规定的传送带（网络协议）送出去。传送带只允许传送特定形状和尺寸的积木块（英文字母、数字和少数符号）。如果你的包裹里有一件形状不规则的精美瓷器（比如一个中文字），或者一个占地方的泡沫填充物（比如一个空格），直接放上去就会卡住。
     </p>
-    <p class="font-medium text-gray-800">
-      工具的本质是为人服务。下次当你面临分组、配对的难题时，不妨让智能工具帮你完成繁琐的计算，而你则可以专注于活动本身，享受轻松组织的乐趣。
+    <p class="mb-4 leading-relaxed">
+      怎么办呢？聪明的办法是，把这个瓷器和泡沫填充物，用一个标准的、传送带允许的包装盒打包好，并在盒子上贴上“%XX”这样的标签。这样，传送带就能顺利运送了。你在地址栏里看到的“%E4%B8%AD”，其实就是“中”字被打包后的标签。
+    </p>
+    <p class="leading-relaxed">
+      这个过程，就是“URL编码”。而当链接到达目的地后，接收方需要根据标签拆开包装，还原出原本的瓷器和填充物，这就是“解码”。
     </p>
   </section>
-</div>
-`;export{s as default};
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">
+      这个“链接翻译器”，能为你解决哪些实际麻烦？
+    </h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">修复打不开的“乱码链接”</h3>
+          <p class="text-gray-600">当你从某些老系统或文档里复制出一个满是百分号的链接，发现浏览器无法直接打开时，只需将其粘贴到工具里“解码”，就能立刻得到干净、可点击的正确网址。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">安全分享包含复杂信息的链接</h3>
+          <p class="text-gray-600">如果你想生成的链接里包含中文、问号“？”、等号“=”等字符，直接分享可能会出错。先用工具“编码”一下，就能得到一个在任何地方都能稳定传递的网络“安全格式”。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-purple-100 text-purple-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">清理复制文本时多出来的“%20”</h3>
+          <p class="text-gray-600">有时从网页或PDF复制一段文字，粘贴后却发现空格都变成了“%20”。用这个工具解码一下，文字立刻恢复清爽。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-yellow-100 text-yellow-800 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">批量处理，省时省力</h3>
+          <p class="text-gray-600">如果你有好几个需要处理的内容，无需一个个操作。只需把它们分行粘贴进去，工具会自动为你批量“翻译”好所有内容，结果也清晰分行展示。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">
+      一个真实的生活应用场景
+    </h2>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <p class="mb-3"><strong>场景：</strong>小王在微信上收到同事发来的一个产品资料链接，点开后浏览器地址栏显示为：</p>
+      <p class="font-mono bg-gray-100 p-3 text-sm rounded mb-4 break-all">https://example.com/share?file=%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C%202024%E7%89%88.pdf</p>
+      <p class="mb-3">他一看就觉得眼花，担心是不是链接有问题。于是，他找到这个“链接翻译器”，将整段地址粘贴进输入框。</p>
+      <p class="mb-3">瞬间，他在“解码结果”区域看到了清晰的结果：</p>
+      <p class="font-mono bg-green-50 p-3 text-sm rounded border border-green-200 mb-4">https://example.com/share?file=产品手册 2024版.pdf</p>
+      <p>原来，这只是一个名为“产品手册 2024版.pdf”的普通文件分享链接，只是其中的中文和空格被“打包”了。小王现在可以放心地确认链接内容，或者将这个清晰的版本记录下来。</p>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">
+      开始使用你的“链接修复助手”
+    </h2>
+    <p class="mb-4">使用这样的工具非常简单，整个过程就像使用一个记事本：</p>
+    <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+      <li><strong>找到输入框：</strong>打开工具页面，你会看到一个醒目的文本框。</li>
+      <li><strong>粘贴你的内容：</strong>无论是看起来像乱码的链接，还是你想保护的正常文字，都可以粘贴进去。</li>
+      <li><strong>查看“翻译”结果：</strong>粘贴后，工具会<strong>自动、实时</strong>地在旁边两个区域分别显示它的“安全代码格式”（编码结果）和“可读文本格式”（解码结果）。</li>
+      <li><strong>复制你需要的那一个：</strong>根据你的需求，从对应的结果框里复制出文本使用即可。</li>
+    </ol>
+    <p class="mt-6 p-4 bg-gray-100 rounded italic text-gray-600">
+      小提示：你还会在工具旁边看到一个“常用特殊字符对照表”。这就像是这个特殊语言的“密码本”，告诉你空格、标点符号对应的“打包标签”是什么，方便你偶尔查阅。
+    </p>
+  </section>
+
+  <div class="mt-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">总结一下</h3>
+    <p class="mb-4">
+      网络链接中的“百分号乱码”并非真正的错误，而是为了确保信息准确传递所做的必要转换。理解这一点后，下次再遇到类似情况，你就不会再感到困惑或烦躁了。
+    </p>
+    <p class="font-medium">
+      一个简单的在线“链接翻译与修复工具”，就能帮你轻松在这两种格式之间切换，无论是修复无法打开的链接，还是准备一个安全的分享地址，都变得轻而易举。不妨把它加入你的浏览器书签，当作一个常备的“网络小助手”吧。
+    </p>
+  </div>
+</article>
+`;export{e as default};

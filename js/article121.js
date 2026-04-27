@@ -1,103 +1,87 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Emoji重力碰撞：点击屏幕释放你的解压小精灵</h1>
+const o=`
+<div class="prose prose-lg max-w-4xl mx-auto px-4 py-8">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #e8f5e9;">21点计算器：一种锻炼大脑的有趣数字游戏</h2>
 
-  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-blue-600">
-    <p class="text-lg mb-2">工作压力太大？心情有点郁闷？</p>
-    <p class="mb-2">有时候你只是想找个简单的东西发泄一下，不需要复杂的操作，不需要动脑子思考策略。</p>
-    <p class="font-medium">这个Emoji重力碰撞小游戏就是为你准备的——点一下，看着可爱的表情符号在屏幕上蹦蹦跳跳，烦恼好像也跟着弹飞了。</p>
+  <p class="text-lg mb-8" style="color: #a5d6a7;">
+    你是否曾在闲暇时，想找一种既简单又能活动脑筋的游戏？或者，你是否还记得小时候玩过的，用扑克牌算24点的乐趣？今天，我们来聊聊一种和它很像，但目标更灵活的脑力游戏——"21点"计算游戏。
+  </p>
+
+  <div style="background: rgba(240,192,64,0.15); border-left: 4px solid #f0c040; padding: 1rem 1.25rem; margin-bottom: 2rem; border-radius: 0 12px 12px 0;">
+    <p style="color: #e8f5e9; margin-bottom: 0.5rem;"><strong>简单来说，它的规则是：</strong></p>
+    <p style="color: #a5d6a7;">给你<strong>四个1到10之间的数字</strong>，你的任务是<strong>只使用加（+）、减（-）、乘（×）、除（÷）这四种运算</strong>，想办法让计算结果等于一个特定的目标数字，比如21或者经典的24。</p>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">这是什么游戏？</h2>
-    <p class="mb-4">这是一个基于物理引擎的趣味互动小游戏。玩法极其简单：</p>
-    <ul class="list-disc pl-5 space-y-2 mb-4">
-      <li>用鼠标（或手指）点击屏幕任意位置</li>
-      <li>该位置会瞬间"炸"出5到15个随机Emoji表情</li>
-      <li>这些Emoji会像真实物体一样受到重力影响往下掉</li>
-      <li>碰到屏幕边缘会反弹，碰到地面会弹起再落下</li>
-      <li>每个Emoji还会边下落边旋转，直到慢慢停下来</li>
-    </ul>
-    <p>整个过程就像往地上撒了一把会跳舞的糖果，既治愈又解压。</p>
-  </div>
+  <h2 class="text-2xl font-semibold mb-4 mt-10" style="color: #e8f5e9;">这不是赌博，而是数学游戏</h2>
+  <p class="mb-6" style="color: #a5d6a7;">
+    请注意，这里说的"21点"和扑克牌玩法中的21点（Blackjack）不同。它完全无关金钱与运气，是一个纯粹的<strong>逻辑与数学思维游戏</strong>。你不需要任何数学背景，只需要小学学过的四则运算知识就可以上手。
+  </p>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">为什么这个游戏这么好玩？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-blue-700">1. 真实物理效果</h3>
-        <p>游戏模拟了真实的重力加速度、弹性碰撞、摩擦力减速等物理效果。Emoji不是简单地下落，而是像有质量的小球一样自然运动，看起来非常舒服。</p>
-      </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-blue-700">2. 30种随机Emoji</h3>
-        <p>每次点击都会从30种不同的Emoji中随机选择，包括笑脸、动物、手势等。你永远不知道下一个蹦出来的是小猫还是鬼脸，充满惊喜感。</p>
-      </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-blue-700">3. 零门槛上手</h3>
-        <p>不需要学习规则，不需要看教程，打开页面就能玩。老人小孩都能轻松上手，是真正的"全民友好型"小游戏。</p>
-      </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-blue-700">4. 完美解压神器</h3>
-        <p>疯狂点击屏幕，看着满屏的Emoji四处乱飞，这种简单的重复动作能有效释放压力。很多人表示光是看着它们落地就很满足。</p>
-      </div>
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">为什么这个游戏值得一玩？</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">1. 锻炼大脑灵活性</h3>
+      <p style="color: #a5d6a7;">面对四个看似普通的数字，你需要不断尝试不同的组合和运算顺序，这能有效锻炼你的<strong>发散思维和逻辑推理能力</strong>。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">2. 老少咸宜，随时随地</h3>
+      <p style="color: #a5d6a7;">无论是在家休息、通勤路上，还是作为家庭亲子活动，它都不需要任何道具（除了纸笔或手机），<strong>几分钟就能来一局</strong>。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">3. 从24点到21点</h3>
+      <p style="color: #a5d6a7;">很多人熟悉算24点，而将目标改为21点，给游戏带来了<strong>新的挑战和变化</strong>。数字21有它独特的数字特性，能带来不同的解题思路。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">4. 无压力解压</h3>
+      <p style="color: #a5d6a7;">专注在数字和符号的组合中，暂时忘记烦恼。当终于找到那个正确的等式时，那种<strong>"灵光一现"的成就感</strong>非常解压。</p>
     </div>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">适合什么场景？</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景一：工作间隙的快速放松</h3>
-        <p>写代码写到头大？做PPT做到眼花？花30秒点点屏幕，让Emoji帮你把烦躁的情绪"弹"走，回来继续干效率更高。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景二：等待时的消遣利器</h3>
-        <p>等电梯、等外卖、等视频加载……这些碎片时间与其发呆，不如来一场Emoji雨。手机电脑都支持，随时随地都能玩。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景三：给小朋友的数字玩具</h3>
-        <p>孩子吵着要玩手机？打开这个页面让他们尽情点击吧。色彩丰富的Emoji、有趣的物理效果，既能吸引注意力又完全无害。</p>
-      </div>
-    </div>
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">如何玩转21点游戏？</h2>
+  <p class="mb-4" style="color: #a5d6a7;">
+    玩这个游戏，你可以遵循一个简单的"三步法"：
+  </p>
+  <ol class="list-decimal pl-5 space-y-3 mb-6" style="color: #a5d6a7;">
+    <li><strong>观察数字</strong>：拿到四个数字后，先快速浏览一下。有没有能轻易凑成21倍数的数？比如7和3？或者有没有特别大的数（如10、9）和特别小的数（如1）？</li>
+    <li><strong>尝试基本组合</strong>：先试试两两组合。比如，先把两个数字相加或相乘，得到一个中间结果，再用这个结果去和剩下的数字运算。</li>
+    <li><strong>善用括号，改变顺序</strong>：这是游戏的精髓！<strong>(3+8)×2</strong> 和 <strong>3+(8×2)</strong> 的结果完全不同。多想想运算的先后顺序。</li>
+  </ol>
+
+  <div style="background: rgba(255,255,255,0.06); padding: 1.25rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem;">
+    <h3 class="font-bold mb-3" style="color: #e8f5e9;">举个例子：</h3>
+    <p class="mb-2" style="color: #a5d6a7;">假设你抽到的四个数字是：<strong>4, 5, 6, 7</strong>，目标是<strong>21</strong>。</p>
+    <p style="color: #a5d6a7;">一种解法是：<strong style="color: #f0c040;">(6 ÷ (5 - 4)) × 7 = 21</strong></p>
+    <p class="mt-2 text-sm" style="color: #5a8a60;">解析：先算括号里的 5-4=1，然后用6除以这个1得到6，最后6乘以7正好等于21。你看，并不难吧？</p>
   </div>
 
-  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">技术实现原理</h2>
-    <ul class="space-y-4 list-disc pl-5">
-      <li><span class="font-medium">Canvas渲染：</span>使用HTML5 Canvas进行高性能图形绘制，确保大量Emoji同时运动时依然流畅不卡顿。</li>
-      <li><span class="font-medium">物理引擎：</span>内置重力系统(GRAVITY=0.2)、摩擦系数(FRICTION=0.95)、反弹衰减(BOUNCE_REDUCTION=0.8)，模拟真实世界的物理行为。</li>
-      <li><span class="font-medium">边界碰撞检测：</span>实时检测Emoji与屏幕四边的碰撞，计算反弹后的速度和位置，防止穿透。</li>
-      <li><span class="font-medium">旋转动画：</span>每个Emoji粒子拥有独立的旋转角度和角速度，在下落过程中持续自转，视觉效果更生动。</li>
-      <li><span class="font-medium">响应式适配：</span>自动监听窗口大小变化，Canvas尺寸实时调整，PC端和移动端都有良好体验。</li>
-    </ul>
-  </div>
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">当你卡住时，可以借助"21点计算器"</h2>
+  <p class="mb-4" style="color: #a5d6a7;">
+    和所有解谜游戏一样，遇到难题卡住很久是很常见的。这时，使用在线的"21点计算器"工具会是个好帮手：
+  </p>
+  <ul class="list-disc pl-5 space-y-2 mb-6" style="color: #a5d6a7;">
+    <li><strong>验证思路</strong>：当你自己想出一个算式后，可以用它快速验证结果是否正确。</li>
+    <li><strong>寻找启发</strong>：如果实在想不出，让它给出一个答案，看看它的解题路径，常常能<strong>给你新的思路启发</strong>，下次遇到类似数字组合就能举一反三。</li>
+    <li><strong>挑战更多可能</strong>：一个题目往往不止一种解法。你可以用它来探索，看看你找到的解法是不是唯一的，或许还有更巧妙的办法。</li>
+  </ul>
+  <p class="mb-6" style="color: #a5d6a7;">
+    记住，工具的目的是<strong>辅助学习和提供灵感</strong>，而不是代替思考。最好的乐趣仍然来自于你自己解开谜题的那一刻。
+  </p>
 
-  <div class="text-center p-8 border-t border-b border-gray-300">
-    <p class="text-2xl font-semibold mb-4">快乐其实很简单</p>
-    <p class="mb-6 text-gray-700">在这个越来越复杂的世界里，我们常常忘记了最纯粹的快乐是什么样子。一个笑脸、一次弹跳、一串随机的惊喜，就足以让人会心一笑。</p>
-    <p class="text-lg font-medium">现在就去试试吧！点击屏幕的任意位置，让你的Emoji小精灵们开始它们的表演。</p>
-  </div>
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">从经典24点开始尝试</h2>
+  <p class="mb-6" style="color: #a5d6a7;">
+    如果你刚接触这类游戏，不妨从更经典的"24点"开始练手。因为24有更多的因数（比如2,3,4,6,8,12），组合方式更丰富，相对容易一些。
+  </p>
+  <p class="mb-6" style="color: #a5d6a7;">
+    这里有一个著名的24点题目：<strong>3, 3, 8, 8</strong>。你能让它们等于24吗？（提示：需要用到分数思想）。等你熟悉了24点的节奏，再挑战21点，会发现别有一番趣味。
+  </p>
 
-  <div class="mt-10 pt-8 border-t border-gray-300">
-    <h3 class="text-xl font-semibold mb-4">常见问题</h3>
-    <div class="space-y-6">
-      <div>
-        <p class="font-medium mb-1">问：这个游戏需要下载安装吗？</p>
-        <p class="text-gray-700">答：完全不需要！这是纯网页版游戏，用浏览器直接打开就能玩，不占用任何存储空间。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-1">问：手机上能玩吗？</p>
-        <p class="text-gray-700">答：当然可以！支持触屏点击，用手指点哪里Emoji就从哪里出来，体验和电脑端一样好。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-1">问：为什么有些Emoji最后会停在底部不动？</p>
-        <p class="text-gray-700">答：这是正常的物理现象。当Emoji的速度降到足够低时，系统会让它停止运动，模拟现实中物体最终静止的效果。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-1">问：一次点击会产生多少个Emoji？</p>
-        <p class="text-gray-700">答：每次点击会随机生成5到15个Emoji，数量也是随机的，所以每次点击的效果都不太一样。</p>
-      </div>
-    </div>
+  <div style="background: rgba(240,192,64,0.1); border: 1px solid rgba(240,192,64,0.25); border-radius: 14px; padding: 1.5rem; margin-top: 2.5rem; text-align: center;">
+    <h3 class="text-xl font-semibold mb-3" style="color: #e8f5e9;">开始你的脑力锻炼吧！</h3>
+    <p class="mb-4" style="color: #a5d6a7;">
+      无论是为了在朋友聚会时小露一手，还是单纯想给日常生活添点思考的乐趣，"21点"或"24点"都是一个绝佳的选择。它像一副随身携带的"数字积木"，随时可以拿出来搭建一番。
+    </p>
+    <p style="color: #a5d6a7;">
+      不妨现在就找来四个数字，试试看能不能搭出"21"这座小塔。享受思考的过程，你会发现，数字的世界也可以很有趣。
+    </p>
   </div>
 </div>
-`;export{s as default};
+`;export{o as default};

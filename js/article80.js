@@ -1,147 +1,88 @@
 const s=`
-<div class="article-content">
-  <h1 class="article-title">IP地址查询工具 - 快速获取本机IP地址和网络信息</h1>
-  
-  <div class="article-meta">
-    <span class="meta-item">发布时间：2026-03-28</span>
-    <span class="meta-item">分类：网络工具</span>
-    <span class="meta-item">阅读时间：5分钟</span>
+<article class="max-w-4xl mx-auto p-6 font-sans text-gray-800">
+  <header class="mb-8 text-center">
+    <h1 class="text-3xl font-bold text-slate-900 mb-4">你的身体变化，有把“聪明”的尺子</h1>
+    <p class="text-gray-600 text-lg">告别健忘与混乱，轻松看懂自己的健康趋势</p>
+  </header>
+
+  <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl mb-8">
+    <p class="mb-4">你是不是也有过这样的经历？站在秤上，看着体重数字，心里冒出无数问号：</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>体重没变，怎么感觉肚子又大了？</li>
+      <li>辛苦锻炼一个月，效果到底怎么样？</li>
+      <li>去年夏天的数据和今年的，早就混在一起记不清了。</li>
+      <li>买过体脂秤，但那些数据看一眼就忘了，根本不知道自己是进步了还是退步了。</li>
+    </ul>
+    <p class="mt-4">很多人管理健康，就像在用一把刻度模糊、还不带记忆功能的尺子，量了半天，结果还是糊涂账。</p>
   </div>
 
-  <div class="article-intro">
-    <p>在当今数字化时代，了解自己的IP地址及其相关信息变得越来越重要。我们的<strong>IP地址查询工具</strong>为您提供一站式的网络信息查询服务，不仅能快速获取本机IP地址，还能显示详细的地理位置、浏览器信息和操作系统版本等数据。本文将详细介绍IP地址的相关知识以及如何利用我们的工具进行高效查询。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-blue-500 pl-3 mb-4">一把更懂你的“健康尺”：体脂率</h2>
+    <p class="mb-4">我们常说的“胖瘦”，体重只是一个粗略参考。真正关键的是<strong>体脂率</strong>，也就是你身体里脂肪所占的比例。它就像一面更精准的镜子：</p>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">1</span>
+        <span>同样体重，肌肉多的人看起来紧致，脂肪多的人则显得臃肿，区别就在体脂率。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">2</span>
+        <span>减肥成功的标志不一定是体重暴跌，而是体脂率的稳步下降。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">3</span>
+        <span>它比单纯的体重，更能反映你的锻炼成果和身体成分的真实变化。</span>
+      </li>
+    </ul>
+  </section>
 
-  <h2 class="section-title">什么是IP地址？</h2>
-  
-  <p>IP地址（Internet Protocol Address）是互联网协议地址的简称，是分配给连接到互联网的每台设备的数字标识。就像现实世界中的家庭地址一样，IP地址确保了数据能够准确地发送到目的地。</p>
-  
-  <h3 class="subsection-title">IPv4与IPv6的区别</h3>
-  
-  <div class="info-box">
-    <p><strong>IPv4（Internet Protocol version 4）</strong>是最广泛使用的IP地址版本，采用32位二进制数表示，通常以点分十进制形式呈现（如：192.168.1.1）。由于IPv4地址数量有限（约42亿个），随着互联网设备的快速增长，IPv4地址资源逐渐枯竭。</p>
-    <p><strong>IPv6（Internet Protocol version 6）</strong>是IPv4的继任者，采用128位地址，可提供几乎无限的地址空间（约3.4×10³⁸个地址）。IPv6地址通常以冒号分隔的十六进制形式表示（如：2001:0db8:85a3:0000:0000:8a2e:0370:7334）。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-green-500 pl-3 mb-4">如何轻松拥有自己的“健康日记本”？</h2>
+    <p class="mb-6">现在，想象你有一个<strong>专属的健康小助手</strong>，它能帮你解决上面的所有烦恼。你不需要懂复杂的数据，只需要像聊天一样告诉它几个基本信息。</p>
 
-  <h3 class="subsection-title">公网IP与内网IP</h3>
-  
-  <p>在使用我们的IP地址查询工具时，您可能会注意到显示的IP地址类型有所不同：</p>
-  
-  <ul class="feature-list">
-    <li><strong>公网IP</strong>：也称为外网IP，是全球互联网中唯一的地址，由互联网服务提供商（ISP）分配。公网IP允许您的设备直接访问互联网，也能被其他网络设备访问。</li>
-    <li><strong>内网IP</strong>：也称为私有IP，用于局域网（LAN）内部的设备通信。常见的内网IP地址段包括192.168.0.0/16、10.0.0.0/8和172.16.0.0/12。内网IP不能直接在互联网上路由，需要通过网络地址转换（NAT）技术通过公网IP访问互联网。</li>
-  </ul>
-
-  <h2 class="section-title">IP地址查询工具能显示什么信息？</h2>
-  
-  <p>我们的IP地址查询工具不仅显示简单的IP地址，还提供丰富的网络和环境信息：</p>
-
-  <ul class="feature-list">
-    <li><strong>IP地址</strong>：显示您的公网IP地址（IPv4和IPv6，如果可用）</li>
-    <li><strong>地理位置</strong>：根据IP地址推断的大概地理位置，包括国家、省份、城市等</li>
-    <li><strong>ISP信息</strong>：显示您的互联网服务提供商信息</li>
-    <li><strong>浏览器信息</strong>：包括浏览器名称、版本、用户代理字符串等</li>
-    <li><strong>操作系统</strong>：显示您使用的操作系统类型和版本</li>
-    <li><strong>屏幕信息</strong>：显示屏幕分辨率和视窗尺寸</li>
-    <li><strong>语言设置</strong>：显示浏览器的首选语言</li>
-    <li><strong>时区信息</strong>：显示您的本地时区</li>
-  </ul>
-
-  <h2 class="section-title">IP地址能透露什么信息？</h2>
-  
-  <p>通过IP地址，可以获取以下类型的信息：</p>
-  
-  <ul class="feature-list">
-    <li><strong>大致地理位置</strong>：IP地址通常能定位到城市级别，有时甚至能精确到街道级别，但这取决于IP地址数据库的精度</li>
-    <li><strong>网络提供商</strong>：可以识别出ISP信息，例如中国移动、中国电信、中国联通等</li>
-    <li><strong>网络类型</strong>：可以判断是家庭宽带、企业网络还是移动网络</li>
-    <li><strong>使用习惯</strong>：网站可以通过分析IP访问模式了解用户的上网习惯</li>
-  </ul>
-
-  <div class="warning-box">
-    <p><strong>注意</strong>：虽然IP地址可以提供地理位置信息，但这种定位是基于IP地址数据库的估计值，并不是实时的精确定位，而且可能存在一定误差。如果您需要精确的位置服务，建议使用GPS等定位技术。</p>
-  </div>
-
-  <h2 class="section-title">IP地址查询的应用场景</h2>
-  
-  <h3 class="subsection-title">网络调试与故障排查</h3>
-  <p>当遇到网络连接问题时，首先查看IP地址是否正常是基本的排查步骤。通过IP地址查询工具，可以快速确认您的公网IP是否正常分配，以及网络连接是否正常。</p>
-
-  <h3 class="subsection-title">网络安全检测</h3>
-  <p>了解自己的IP地址有助于识别异常的网络活动。如果您发现IP地址频繁变更或与预期不符，可能存在网络安全问题。此外，在进行远程访问配置时，也需要知道自己的公网IP地址。</p>
-
-  <h3 class="subsection-title">内容访问限制</h3>
-  <p>某些网站或在线服务会根据IP地址限制内容访问。通过查询IP地址，您可以了解自己当前的网络环境是否符合访问要求。</p>
-
-  <h3 class="subsection-title">游戏服务器连接</h3>
-  <p>在线游戏通常需要连接到特定的服务器。了解自己的IP地址有助于配置网络、排查连接问题，以及选择延迟最低的服务器。</p>
-
-  <h2 class="section-title">如何保护IP地址隐私？</h2>
-  
-  <p>虽然IP地址本身并不会直接暴露个人身份信息，但了解如何保护IP隐私仍然很重要：</p>
-  
-  <ul class="feature-list">
-    <li><strong>使用VPN</strong>：虚拟专用网络（VPN）可以隐藏您的真实IP地址，通过加密隧道连接到互联网，提供更好的隐私保护</li>
-    <li><strong>使用代理服务器</strong>：代理服务器可以作为中间层，隐藏您的原始IP地址</li>
-    <li><strong>避免点击可疑链接</strong>：钓鱼网站和恶意链接可能会记录您的IP地址</li>
-    <li><strong>定期更换密码</strong>：如果您的IP地址被记录并用于不良目的，定期更换密码可以降低风险</li>
-    <li><strong>使用防火墙</strong>：启用网络防火墙可以阻止不必要的入站连接，减少IP暴露的风险</li>
-  </ul>
-
-  <h2 class="section-title">常见问题（FAQ）</h2>
-
-  <div class="faq-item">
-    <h3 class="faq-question">Q1: IP地址会频繁变化吗？</h3>
-    <div class="faq-answer">
-      <p>这取决于您的网络服务类型。如果您使用的是动态IP地址，那么IP地址可能会定期变化（如每次重新连接网络时）。大多数家庭宽带使用的是动态IP。企业用户或需要稳定IP的用户通常会申请静态IP地址，这种IP地址不会自动变化。</p>
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <h3 class="font-bold text-lg mb-3 text-blue-700">第一步：简单输入</h3>
+        <p>就像每次体检填表一样，选择性别，输入你的身高、体重和年龄。然后点击“计算”，你的体脂率结果立刻就出来了。这个过程，比你泡一杯茶还快。</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <h3 class="font-bold text-lg mb-3 text-green-700">第二步：自动记忆</h3>
+        <p>神奇的是，每次计算后，这个小助手都会默默记下这次的数据和日期。你完全不用担心忘记或丢失。它会自动帮你整理好，形成一个清晰的历史记录表。</p>
+      </div>
     </div>
-  </div>
 
-  <div class="faq-item">
-    <h3 class="faq-question">Q2: 为什么我的IP地址显示的地理位置不准确？</h3>
-    <div class="faq-answer">
-      <p>IP地址的地理位置定位基于IP地址数据库，这些数据库通过多种方式收集信息，但并非实时更新。此外，如果您的ISP使用的IP地址段注册位置与实际服务区域不同，也会导致定位偏差。IP定位通常只能达到城市级别，无法提供精确到街道的定位。</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <h3 class="faq-question">Q3: 如何查看我的内网IP地址？</h3>
-    <div class="faq-answer">
-      <p>查看内网IP地址的方法取决于您的操作系统：</p>
-      <p><strong>Windows</strong>：打开命令提示符（CMD），输入"ipconfig"，找到"IPv4 地址"一栏显示的就是您的内网IP地址。</p>
-      <p><strong>macOS</strong>：打开终端，输入"ifconfig"或"ipconfig getifaddr en0"，查看相应的网卡地址。</p>
-      <p><strong>Linux</strong>：打开终端，输入"ifconfig"或"ip addr show"，找到对应网卡的IP地址。</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <h3 class="faq-question">Q4: IP地址是否可以追踪到个人身份？</h3>
-    <div class="faq-answer">
-      <p>IP地址本身不会直接暴露个人身份信息。但是，结合其他数据（如ISP的访问日志、网站访问记录等），IP地址可能被用于追踪网络活动。通常只有执法机关在获得法律授权的情况下，才能通过ISP获取与IP地址相关的个人信息。因此，如果您重视隐私保护，建议使用VPN等服务来隐藏真实IP地址。</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <h3 class="faq-question">Q5: 什么是IP地址冲突？如何解决？</h3>
-    <div class="faq-answer">
-      <p>IP地址冲突是指局域网中有两台或更多设备使用了相同的IP地址。这会导致网络连接问题，表现为间歇性断网、无法访问网络等。解决方法：</p>
-      <ul>
-        <li>手动为设备分配不同的IP地址</li>
-        <li>确保路由器的DHCP（动态主机配置协议）功能正常工作</li>
-        <li>检查是否有设备被设置了静态IP地址与DHCP分配范围重叠</li>
-        <li>重启路由器和相关设备</li>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-lg mb-4 text-purple-700">第三步：看懂趋势</h3>
+      <p class="mb-4">这是最有价值的部分！所有记录下来的数据，会自动生成一张<strong>趋势变化图</strong>。</p>
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span> <strong>蓝线代表体脂率</strong>：一眼就能看出它是上升、下降还是持平。</li>
+        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span> <strong>绿线代表体重</strong>：可以和体脂率对照着看。</li>
       </ul>
+      <p class="mt-4">比如，你可以清晰地看到：“哦，从3月到5月，我的体重没怎么变，但体脂率这条蓝线确实在慢慢往下走，这说明我长的可能是肌肉，减的是脂肪，锻炼有效！”</p>
     </div>
-  </div>
+  </section>
 
-  <h2 class="section-title">总结</h2>
-  
-  <p>IP地址查询工具是一个简单但功能强大的网络工具，可以帮助您快速了解自己的网络状态和环境信息。无论是进行网络调试、故障排查，还是了解自己的上网隐私状况，这个工具都能提供有价值的信息。</p>
-  
-  <p>通过本文的介绍，您应该已经了解了IP地址的基本概念、类型差异以及查询工具的使用方法。记住，保护个人隐私始终很重要，在使用互联网时请时刻关注自己的网络安全。我们的IP地址查询工具随时为您服务，帮助您更好地管理和了解自己的网络连接。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-amber-500 pl-3 mb-4">给你的数据，加上“双保险”</h2>
+    <p class="mb-4">我们最怕的就是数据丢失。这个小助手还有两个贴心功能：</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <div class="flex-1 bg-amber-50 p-5 rounded-xl border border-amber-100">
+        <h4 class="font-bold mb-2">打包带走（导出）</h4>
+        <p>你可以把所有的记录一键导出，保存到电脑或手机里，就像给珍贵的照片备份一样安心。</p>
+      </div>
+      <div class="flex-1 bg-emerald-50 p-5 rounded-xl border border-emerald-100">
+        <h4 class="font-bold mb-2">原样恢复（导入）</h4>
+        <p>万一需要，你可以把之前备份的数据文件再导入回来，所有记录瞬间恢复原样，无需重复输入。</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="call-to-action">
-    <p>立即使用我们的<strong>IP地址查询工具</strong>，获取您的本机IP地址和详细网络信息！</p>
-  </div>
-</div>
+  <section class="bg-slate-50 p-6 rounded-2xl">
+    <h2 class="text-2xl font-semibold text-slate-800 mb-4">现在就开始，量一量你的健康轨迹</h2>
+    <p class="mb-4">管理健康，不应该是一件复杂和健忘的事情。它需要的不是多么高深的知识，而只是一个<strong>简单、持续、可视化</strong>的记录方式。</p>
+    <p class="mb-6">无论你是想减肥、增肌，还是仅仅想了解自己身体的变化规律，从今天开始，试着记录下你的体脂率。几个星期或几个月后，回头看看那张趋势图，你可能会对自己有更清晰、更惊喜的发现。</p>
+    <div class="text-center p-4 border border-dashed border-slate-300 rounded-lg">
+      <p class="font-medium">找一找那个能帮你<strong>计算、记住、画出趋势</strong>的小工具吧。它就是你那把聪明的“健康尺”和永不忘事的“健康日记本”。</p>
+    </div>
+  </section>
+</article>
 `;export{s as default};

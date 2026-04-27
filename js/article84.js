@@ -1,219 +1,56 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
-    还在为重复的增删改查代码发愁？这个工具能帮你省掉80%的样板代码
-  </h1>
-
-  <p class="text-lg text-gray-600 mb-8 text-center leading-relaxed">
-    粘贴一张建表语句，一键生成 6 大主流框架的全栈 CRUD 代码——从后端到前端页面，ZIP 一键打包下载。
-  </p>
-
-  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
-    <h2 class="text-xl font-semibold text-gray-800 mb-3">为什么你需要一个 CRUD 生成器？</h2>
-    <ul class="list-disc pl-5 space-y-2 text-gray-700">
-      <li>每个新项目都在写几乎一样的列表页、新增、编辑、删除接口</li>
-      <li>换一个框架就得重新回忆字段映射、验证规则、分页写法</li>
-      <li>团队里每个人写的 CRUD 风格不统一，Code Review 全在挑格式问题</li>
-      <li>一个中等规模的系统动辄几十张表，每张表都手动写一遍 CRUD 太浪费时间</li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    它能做什么？一句话：粘贴 SQL，出全套代码
-  </h2>
-
-  <p class="mb-4 text-gray-700 leading-relaxed">
-    你只需要提供数据库建表语句（或者用可视化编辑器手动定义字段），这个工具就能自动生成以下内容：
-  </p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-      <h3 class="font-semibold text-base mb-2 text-gray-800">后端代码</h3>
-      <ul class="text-sm text-gray-600 space-y-1 list-disc pl-4">
-        <li>Model / Entity / 结构体（数据模型）</li>
-        <li>Controller / Handler（接口控制器）</li>
-        <li>Service 层（业务逻辑）</li>
-        <li>Repository / Mapper（数据访问）</li>
-        <li>DTO / VO（数据传输对象）</li>
-        <li>Request Validator（表单校验）</li>
-        <li>Migration / 数据库迁移文件</li>
-        <li>路由定义</li>
-        <li>API 文档</li>
-      </ul>
-    </div>
-    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-      <h3 class="font-semibold text-base mb-2 text-gray-800">辅助产出</h3>
-      <ul class="text-sm text-gray-600 space-y-1 list-disc pl-4">
-        <li>Vue 列表页（含表格、搜索、分页）</li>
-        <li>Factory 测试工厂 / 测试用例</li>
-        <li>Admin 后台注册（Django）</li>
-        <li>Swagger 注解（Java/Node.js/Go）</li>
-        <li>cURL 测试命令参考</li>
-        <li>Postman 导入集合</li>
-      </ul>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    支持 6 大主流技术栈
-  </h2>
-
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">🐘</div>
-      <h3 class="font-semibold text-gray-800">Laravel</h3>
-      <p class="text-sm text-gray-600">Model / Controller / Service / Request / Migration / Route / Factory / Resource / Vue 页面 / API 文档</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">⚡</div>
-      <h3 class="font-semibold text-gray-800">ThinkPHP</h3>
-      <p class="text-sm text-gray-600">Model / Controller / Validate / Route / Vue 列表页</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">☕</div>
-      <h3 class="font-semibold text-gray-800">Spring Boot</h3>
-      <p class="text-sm text-gray-600">Entity / DTO / VO / Mapper + XML / Service + Impl / Controller（含 Swagger 注解）</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">🐍</div>
-      <h3 class="font-semibold text-gray-800">Django</h3>
-      <p class="text-sm text-gray-600">Model / Serializer / ViewSet / URL / Admin / Test Case / Factory</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">🟢</div>
-      <h3 class="font-semibold text-gray-800">Express + Sequelize</h3>
-      <p class="text-sm text-gray-600">Sequelize Model / Controller / Router / Service / DTO 校验 / Middleware</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-      <div class="text-2xl mb-1">🔵</div>
-      <h3 class="font-semibold text-gray-800">Go Gin</h3>
-      <p class="text-sm text-gray-600">Model 结构体 / Handler / Router / Service / DTO Request / Response（含 Swagger 注解）</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    三种方式定义表结构
-  </h2>
-
-  <div class="space-y-4 my-6">
-    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-      <span class="text-2xl flex-shrink-0">📋</span>
-      <div>
-        <h3 class="font-semibold text-gray-800">SQL 粘贴</h3>
-        <p class="text-sm text-gray-600">直接粘贴 CREATE TABLE 建表语句，工具自动解析所有字段信息。支持多表检测。</p>
-      </div>
-    </div>
-    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-      <span class="text-2xl flex-shrink-0">📁</span>
-      <div>
-        <h3 class="font-semibold text-gray-800">上传 SQL 文件</h3>
-        <p class="text-sm text-gray-600">点击上传 .sql 文件，自动读取并解析表结构，适合导出的数据库脚本。</p>
-      </div>
-    </div>
-    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-      <span class="text-2xl flex-shrink-0">✏️</span>
-      <div>
-        <h3 class="font-semibold text-gray-800">可视化编辑</h3>
-        <p class="text-sm text-gray-600">手动逐个添加字段，选择类型、设置可空和主键。灵活度最高，适合自定义场景。</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    内置快速模板，开箱即用
-  </h2>
-
-  <p class="mb-4 text-gray-700">不想手写 SQL？内置 4 套常用表结构模板，一键填充：</p>
-
-  <div class="space-y-3 my-6">
-    <div class="p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg">
-      <h3 class="font-semibold text-gray-800">用户管理</h3>
-      <p class="text-sm text-gray-600">用户名、邮箱、手机号、头像、状态等 9 个字段，覆盖最常见的用户表结构。</p>
-    </div>
-    <div class="p-4 border-l-4 border-green-500 bg-green-50 rounded-r-lg">
-      <h3 class="font-semibold text-gray-800">博客文章</h3>
-      <p class="text-sm text-gray-600">标题、摘要、正文、封面图、分类、作者、阅读量、发布状态等 13 个字段。</p>
-    </div>
-    <div class="p-4 border-l-4 border-orange-500 bg-orange-50 rounded-r-lg">
-      <h3 class="font-semibold text-gray-800">商品管理</h3>
-      <p class="text-sm text-gray-600">名称、SKU、价格、原价、库存、分类、主图、上下架状态等 12 个字段。</p>
-    </div>
-    <div class="p-4 border-l-4 border-purple-500 bg-purple-50 rounded-r-lg">
-      <h3 class="font-semibold text-gray-800">订单系统</h3>
-      <p class="text-sm text-gray-600">订单编号、金额、优惠、支付方式、收货人信息、备注等 15 个字段，完整的电商订单结构。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    高级功能一览
-  </h2>
-
-  <div class="overflow-x-auto my-6">
-    <table class="w-full text-sm border-collapse border border-gray-200">
-      <thead class="bg-gray-50">
-        <tr>
-          <th class="px-4 py-2 text-left border-b border-gray-200">功能</th>
-          <th class="px-4 py-2 text-left border-b border-gray-200">说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">智能字段识别</td><td class="px-4 py-2 text-gray-600">自动识别主键、时间戳、软删除、自增字段</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">类型映射</td><td class="px-4 py-2 text-gray-600">MySQL 类型自动映射到目标语言的正确类型（如 varchar→string、decimal→BigDecimal）</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">验证规则生成</td><td class="px-4 py-2 text-gray-600">根据字段类型和长度自动生成验证规则（required、email、max 等）</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">命名转换</td><td class="px-4 py-2 text-gray-600">支持 snake_case / camelCase / PascalCase / kebab-case 自动互转</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">ZIP 打包下载</td><td class="px-4 py-2 text-gray-600">一键打包所有生成的代码为 ZIP 文件，按框架目录组织</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">代码统计面板</td><td class="px-4 py-2 text-gray-600">实时显示生成的文件数、总行数、字段数等统计信息</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">Vue 前端页面</td><td class="px-4 py-2 text-gray-600">生成基于 Element Plus 的完整列表页（表格、搜索、分页、操作按钮）</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">API 文档</td><td class="px-4 py-2 text-gray-600">生成 Markdown 格式的 API 接口文档，包含请求参数和响应示例</td></tr>
-        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">Swagger 注解</td><td class="px-4 py-2 text-gray-600">Java / Node.js / Go 框架可选生成 Swagger/OpenAPI 注解</td></tr>
-        <tr><td class="px-4 py-2 font-medium">测试代码</td><td class="px-4 py-2 text-gray-600">Django 可生成单元测试用例和 FactoryBoy 工厂；Laravel 生成 Factory</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    使用步骤
-  </h2>
-
-  <ol class="list-decimal pl-5 space-y-3 text-gray-700 my-6">
-    <li><strong>选框架</strong> — 从 Laravel / ThinkPHP / Spring Boot / Django / Express / Go Gin 中选择你的目标框架</li>
-    <li><strong>定义表结构</strong> — 粘贴 SQL、上传 .sql 文件、或使用快速模板一键填充，也可以切换到「可视化编辑」手动添加字段</li>
-    <li><strong>配置选项</strong> — 选择要生成的代码类型，开启时间戳、软删除、分页、Swagger 等高级选项</li>
-    <li><strong>一键生成</strong> — 点击生成按钮，右侧面板实时展示所有生成的代码</li>
-    <li><strong>预览与下载</strong> — 通过标签页浏览每个文件，单独复制或 ZIP 整包下载</li>
+const l=`
+<div class="article-content bg-white rounded-2xl shadow-lg p-6 md:p-8">
+  <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">后代身高预测：科学计算孩子的成年身高</h1>
+  
+  <p class="text-gray-700 mb-6">身高是许多家长关心的话题，了解孩子的潜在身高范围有助于家长更好地关注孩子的生长发育。我们的身高预测计算器基于科学的遗传身高预测公式，为您提供参考性的预测结果。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">身高预测的科学依据</h2>
+  <p class="text-gray-700 mb-6">研究表明，遗传因素对身高的影响约占60%-80%。我们使用的预测公式是基于大量人群数据统计得出的，虽然不能100%准确预测最终身高，但可以提供一个合理的参考范围。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">如何使用身高预测计算器</h2>
+  <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+    <li>在左侧输入框中填写父亲的身高（厘米）</li>
+    <li>在右侧输入框中填写母亲的身高（厘米）</li>
+    <li>点击"开始计算"按钮，系统会自动为您预测男孩和女孩的身高范围</li>
   </ol>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
-    适用场景
-  </h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-    <div class="p-5 bg-gray-50 rounded-lg">
-      <h3 class="font-semibold text-gray-800 mb-2">快速原型开发</h3>
-      <p class="text-sm text-gray-600">MVP 阶段需要快速搭建后台管理系统，CRUD 生成器几分钟就能搞定所有基础模块的代码骨架。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">影响身高的其他因素</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-blue-50 p-4 rounded-lg">
+      <h3 class="font-bold text-blue-800 mb-2">营养因素</h3>
+      <p class="text-gray-700">均衡的营养是孩子长高的基础，特别是蛋白质、钙、维生素D等营养素对骨骼发育至关重要。</p>
     </div>
-    <div class="p-5 bg-gray-50 rounded-lg">
-      <h3 class="font-semibold text-gray-800 mb-2">团队规范统一</h3>
-      <p class="text-sm text-gray-600">统一使用生成器输出标准化的 CRUD 代码风格，减少 Code Review 中关于格式和结构的讨论成本。</p>
+    <div class="bg-green-50 p-4 rounded-lg">
+      <h3 class="font-bold text-green-800 mb-2">运动因素</h3>
+      <p class="text-gray-700">适当的运动可以刺激骨骼生长，如篮球、跳绳、游泳等纵向运动对长高特别有益。</p>
     </div>
-    <div class="p-5 bg-gray-50 rounded-lg">
-      <h3 class="font-semibold text-gray-800 mb-2">跨框架学习</h3>
-      <p class="text-sm text-gray-600">同一个表结构，分别生成不同框架的代码，对比学习各框架的最佳实践和惯用写法差异。</p>
+    <div class="bg-purple-50 p-4 rounded-lg">
+      <h3 class="font-bold text-purple-800 mb-2">睡眠因素</h3>
+      <p class="text-gray-700">生长激素在睡眠时分泌最旺盛，保证充足的睡眠时间和良好的睡眠质量对孩子长高非常重要。</p>
     </div>
-    <div class="p-5 bg-gray-50 rounded-lg">
-      <h3 class="font-semibold text-gray-800 mb-2">数据库迁移</h3>
-      <p class="text-sm text-gray-600">旧项目要迁移到新框架时，直接导入原有表结构，快速生成目标框架的基础代码。</p>
+    <div class="bg-yellow-50 p-4 rounded-lg">
+      <h3 class="font-bold text-yellow-800 mb-2">环境因素</h3>
+      <p class="text-gray-700">良好的生活环境、减少压力、避免疾病等都有助于孩子的正常生长发育。</p>
     </div>
   </div>
-
-  <div class="mt-12 p-6 text-center bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl">
-    <h3 class="text-xl font-bold mb-3 text-gray-900">告别重复劳动，把时间花在有创造力的事情上</h3>
-    <p class="text-gray-700 mb-4">
-      每次新建一张表就手动写一套 CRUD 的时代已经过去了。把这个工具加入你的开发工作流，让样板代码自动生成成为常态。
-    </p>
-    <p class="font-medium text-gray-900">
-      支持的框架还在持续增加中，如果你有需要的框架或语言，欢迎反馈建议。
-    </p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">有助于孩子长高的建议</h2>
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li>保证孩子摄入均衡的营养，多吃富含蛋白质、钙和维生素的食物</li>
+    <li>鼓励孩子进行适量的运动，特别是有助于长高的纵向运动</li>
+    <li>确保孩子有充足的睡眠时间，小学生每天应睡10小时左右</li>
+    <li>创造良好的家庭环境，减少孩子的精神压力</li>
+    <li>定期带孩子进行体检，及时发现和处理可能影响生长发育的问题</li>
+  </ul>
+  
+  <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+    <h3 class="font-bold text-gray-800 mb-3">身高预测注意事项</h3>
+    <p class="text-gray-700 mb-4">需要注意的是，我们的身高预测计算器基于遗传因素，仅供参考。实际身高还会受到多种因素的影响，如营养、运动、睡眠等。如果您对孩子的生长发育有疑虑，建议咨询专业医生。</p>
+    <p class="text-gray-700">此外，身高并不是衡量一个人价值的唯一标准，每个孩子都有自己的闪光点和潜力，家长应该关注孩子的全面发展。</p>
   </div>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">结语</h2>
+  <p class="text-gray-700 mb-6">通过我们的身高预测计算器，您可以了解孩子的潜在身高范围，为孩子的生长发育提供参考。同时，结合科学的营养、适当的运动和良好的生活习惯，帮助孩子实现最佳的生长潜能。</p>
+  <p class="text-gray-700">希望我们的身高预测计算器能为您提供有价值的信息，祝您的孩子健康成长！</p>
 </div>
-`;export{t as default};
+`;export{l as default};

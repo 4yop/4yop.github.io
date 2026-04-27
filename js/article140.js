@@ -1,69 +1,90 @@
 const s=`
-<div class="text-gray-800 font-sans leading-relaxed">
-  <article class="max-w-4xl mx-auto p-4 md:p-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">节日头像制作工具使用指南</h1>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <article>
+    <!-- 文章标题 -->
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">还在为表格文件烦恼？试试这个免费的在线表格小帮手</h1>
 
-    <div class="my-6 p-4 bg-red-50 rounded-lg border border-red-100">
-      <p class="text-red-800">
-        节日到了，想给微信、QQ或社交平台的头像换个节日气氛？这个工具帮你一键搞定——上传头像，选个节日边框，几秒钟就能得到一张带节日装饰的新头像。
-      </p>
-    </div>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">支持哪些节日？</h2>
-    <p class="mb-4">
-      工具内置了多个主流节日的边框模板，每个节日都有多款不同风格的设计：
+    <!-- 引语 -->
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+      无论是工作汇报、整理通讯录，还是管理简单的项目清单，我们总会遇到一种叫CSV的表格文件。今天，给大家介绍一个藏在浏览器里的免费工具，无需安装软件，就能轻松查看、修改和管理你的表格数据。
     </p>
-    <ul class="mb-6 pl-5 space-y-2">
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>国庆节：</strong>红金配色为主，包含"中国加油""我❤️祖国""欢度国庆"等爱国主题文字边框</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>圣诞节：</strong>红绿白经典圣诞配色，包含圣诞树、雪花、礼物盒等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>元旦/新年：</strong>喜庆红金配色，包含倒计时、烟花、新年祝福文字</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>春节：</strong>中国红+金色，包含灯笼、春联、福字、"新年快乐"等传统元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>情人节：</strong>粉红爱心主题，包含爱心、玫瑰、"情人节快乐"等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>中秋：</strong>暖黄色调，包含月亮、玉兔、桂花、团圆祝福</span></li>
-    </ul>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">怎么用？三步搞定</h2>
-    <ol class="list-decimal pl-5 space-y-4 mb-6">
-      <li class="pl-2">
-        <strong>第一步：上传头像</strong>
-        <p class="text-gray-600 mt-1">支持三种方式：<br/>• 直接把图片<strong>拖拽</strong>到上传区域<br/>• 从剪贴板<strong>粘贴</strong>截图（Ctrl+V / Command+V）<br/>• 点击"<strong>选择图片</strong>"按钮从电脑选取<br/>推荐使用正方形头像图片，效果最佳。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第二步：选择边框</strong>
-        <p class="text-gray-600 mt-1">顶部切换节日分类，下方展示该节日的所有边框模板。点击任意边框即可实时预览合成效果。可以左右滑动浏览更多模板。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第三步：下载保存</strong>
-        <p class="text-gray-600 mt-1">预览满意后，点击"下载头像"按钮，高清PNG图片会自动保存到本地。直接拿去当微信/QQ头像就行。</p>
-      </li>
-    </ol>
-
-    <div class="my-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-100">
-      <h3 class="text-xl font-bold mb-3 text-red-700">几个实用小技巧</h3>
-      <ul class="space-y-2 text-sm text-gray-700">
-        <li><strong>最佳头像尺寸：</strong>建议上传 300×300 像素以上的正方形图片，合成后效果最清晰。</li>
-        <li><strong>边框位置：</strong>边框通常叠加在头像的底部或角落区域，不会遮挡面部主体部分。</li>
-        <li><strong>隐私安全：</strong>所有图片处理都在你的浏览器里完成，图片不会上传到任何服务器。</li>
-        <li><strong>手机也能用：</strong>完全响应式设计，手机浏览器打开一样流畅操作。</li>
-      </ul>
-    </div>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">适用场景</h2>
-    <div class="flex flex-wrap gap-3 my-6">
-      <span class="px-4 py-2 bg-red-50 rounded-full text-sm text-red-700">微信头像</span>
-      <span class="px-4 py-2 bg-blue-50 rounded-full text-sm text-blue-700">QQ头像</span>
-      <span class="px-4 py-2 bg-pink-50 rounded-full text-sm text-pink-700">微博头像</span>
-      <span class="px-4 py-2 bg-purple-50 rounded-full text-sm text-purple-700">抖音头像</span>
-      <span class="px-4 py-2 bg-green-50 rounded-full text-sm text-green-700">小红书头像</span>
-      <span class="px-4 py-2 bg-orange-50 rounded-full text-sm text-orange-700">游戏头像</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">论坛/社区</span>
-    </div>
-
-    <div class="mt-12 pt-8 border-t text-center">
-      <p class="text-lg font-semibold mb-2">让头像也过节吧 🎉</p>
-      <p class="text-gray-600">
-        每到节日，换一个应景的头像，既表达了心情，又给朋友们带来一点小惊喜。简单几步，让你的头像焕然一新。
+    <!-- 核心功能1 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">它能帮你做什么？</h2>
+      <p class="mb-4 leading-relaxed">
+        你可以把它想象成一个简易版的在线电子表格。它的核心是让你能<strong>直接看到</strong>表格里的内容，并且进行一些基础的<strong>整理和调整</strong>。
       </p>
+      <ul class="list-disc pl-5 space-y-2 mb-4">
+        <li><strong>打开你的表格文件</strong>：只需点击一下，就能上传你电脑里的CSV或TXT格式的表格文件，内容立刻清晰展示。</li>
+        <li><strong>随时修改内容</strong>：发现电话写错了？金额不对？直接点击表格里的格子就能修改，像在笔记本上写字一样简单。</li>
+        <li><strong>整理行列</strong>：需要增加一行新记录，或者添加一个“备注”列？点一下按钮就自动加好了。不需要的内容，也能随时删掉。</li>
+        <li><strong>快速找到目标</strong>：表格数据太多？顶部的搜索框可以帮你快速筛选出包含特定文字的所有行。</li>
+      </ul>
+    </section>
+
+    <!-- 核心功能2 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">格式转换与保存</h2>
+      <p class="mb-4 leading-relaxed">
+        很多人可能遇到过这种情况：一个表格文件用手机打不开，或者需要发给别人但对方要求另一种格式。这个小工具可以帮你解决这个麻烦。
+      </p>
+      <div class="bg-gray-50 p-5 rounded-lg mb-4">
+        <p><strong>一键转换格式</strong>：你编辑好的表格，可以随时保存回CSV文件，方便下次使用。更实用的是，它还能<strong>转换成JSON格式</strong>保存。虽然你不一定知道JSON是什么，但许多网站和应用程序都认识这种格式，转换一下可能就让你的数据能在别处派上用场。</p>
+      </div>
+      <p class="leading-relaxed">
+        所有操作都在你的浏览器里完成，文件不会上传到陌生服务器，修改起来更安心。
+      </p>
+    </section>
+
+    <!-- 核心功能3 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">兼容各种格式的表格</h2>
+      <p class="mb-4 leading-relaxed">
+        为什么有时候从邮箱或不同电脑下载的表格会乱码？通常是文件里用的“分隔符号”不一样。
+      </p>
+      <p class="leading-relaxed">
+        这个工具考虑到了这一点。在右侧的<strong>“表格设置”</strong>区域，你可以自由切换分隔符，比如从逗号改成制表符或分号。也可以设置是否将第一行作为标题。这样一来，无论你拿到哪种格式的表格，基本都能正确打开并阅读。
+      </p>
+    </section>
+
+    <!-- 适用场景 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">谁可能会用到它？</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-blue-50 p-5 rounded-lg">
+          <h3 class="font-medium text-blue-800 mb-2">普通办公族</h3>
+          <p class="text-sm">临时收到一个数据表格需要快速核对或微调，又不想打开笨重的大型软件。</p>
+        </div>
+        <div class="bg-green-50 p-5 rounded-lg">
+          <h3 class="font-medium text-green-800 mb-2">学生或研究者</h3>
+          <p class="text-sm">整理实验数据、调查问卷结果，需要简单的清洗（比如删除空行）和格式统一。</p>
+        </div>
+        <div class="bg-yellow-50 p-5 rounded-lg">
+          <h3 class="font-medium text-yellow-800 mb-2">自由职业者</h3>
+          <p class="text-sm">管理客户名单、项目报价单，需要随时更新并保存为通用格式发给客户。</p>
+        </div>
+        <div class="bg-purple-50 p-5 rounded-lg">
+          <h3 class="font-medium text-purple-800 mb-2">偶尔需要处理数据的人</h3>
+          <p class="text-sm">比如从网上下载了汇率数据、天气记录等CSV文件，想先打开看看，删掉不需要的部分。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 总结 -->
+    <section class="bg-gray-100 p-6 rounded-xl">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">简单总结</h2>
+      <p class="mb-3 leading-relaxed">
+        这个<strong>在线表格处理器</strong>就是一个轻巧、方便的工具。它不追求复杂的功能，而是专注解决几个常见痛点：<strong>打开、查看、简单编辑、转换格式</strong>。
+      </p>
+      <p class="leading-relaxed">
+        下次当你再遇到一个打不开、看不懂或者需要简单整理的表格文件时，或许可以尝试一下这类在线小工具。它可能就在你的浏览器书签栏里，安静地等着帮你省下几分钟的折腾时间。
+      </p>
+    </section>
+
+    <!-- 提示 -->
+    <div class="mt-8 pt-6 border-t border-gray-200 text-sm text-gray-500">
+      <p>提示：本文介绍的是一款通用工具的功能思路，具体操作界面可能因不同实现而略有差异，但其核心目的都是为了方便普通用户处理表格数据。</p>
     </div>
   </article>
 </div>

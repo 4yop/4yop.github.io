@@ -1,92 +1,232 @@
-const t=`<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">还在为搜不到想要的结果烦恼？这个多引擎搜索工具帮你精准定位</h1>
-  <!-- 导语 -->
-  <p class="text-lg text-center text-gray-600 mb-8">想找资料，却总被广告淹没？搜出来的东西牛头不对马嘴？别急，试试这款能同时用百度、谷歌、必应搜索的小工具，还有几十种“搜索暗号”帮你直达答案。</p>
+const r=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">农历阳历转换工具：轻松查询传统与现代日期</h1>
 
-  <!-- 正文部分 -->
-  <div class="space-y-8">
-
-    <!-- 第一部分：搜索痛点 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">为什么你总觉得“搜不到”</h2>
-      <p class="mb-3">你有没有这样的经历：打开百度输入一个词，前几页全是广告和推广，翻半天也找不到真正有用的信息。或者想找一份PDF文档、一个政府网站的文件，结果出来一堆不相关的网页。这不是你搜索的方式不对，而是普通的搜索框太“笨”了，它听不懂你的真实需求。</p>
-      <p class="mb-3">其实，搜索引擎自己都提供了一些“高级指令”，就像给搜索框下的暗号，可以让它只给你想要的东西。但大多数人不知道这些指令，或者觉得记起来太麻烦。今天要说的这个工具，就是把所有搜索引擎的“暗号”都集成在一起，你只需要点一点，就能用上这些专业功能。</p>
-    </section>
-
-    <!-- 第二部分：什么是多引擎智能搜索工具 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">一个工具，三个搜索引擎</h2>
-      <p class="mb-3">这个小工具最直观的地方，就是它把百度、谷歌、必应都放在了一起。你不需要记住三个网址，也不用在不同标签页之间切来切去。想用哪个，点一下按钮就行。</p>
-      <ul class="list-disc pl-6 mb-3 space-y-1">
-        <li><span class="font-medium text-blue-600">百度</span>：适合搜中文内容，尤其是国内网站的信息。</li>
-        <li><span class="font-medium text-blue-600">谷歌</span>：全球最大的搜索引擎，搜外文资料、学术内容特别好用。</li>
-        <li><span class="font-medium text-blue-600">必应</span>：微软家的，界面干净，搜图片和视频质量很高。</li>
-      </ul>
-      <p>你可以根据自己需要，随时切换。比如找国内的政策文件用百度，查国外的论文用谷歌，找高清图片用必应。一个入口全搞定。</p>
-    </section>
-
-    <!-- 第三部分：高级搜索指令，像说话一样精准 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">“搜索暗号”让结果直击要害</h2>
-      <p class="mb-3">这个工具最厉害的地方，是它自带了几十种“搜索暗号”——也就是搜索引擎的高级指令。你不用死记硬背，因为工具里都列出来了，点一下就能用。下面举几个生活中常见的例子：</p>
-
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <!-- 例子1：搜特定网站 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">只想看某个网站里的内容？用“site:”</h3>
-          <p class="text-sm text-gray-600">比如你想在知乎上搜“人工智能”，但不想看其他网站，就在关键词前加上<code class="bg-gray-200 px-1 rounded">site:zhihu.com 人工智能</code>。工具里点一下“site:”按钮，再输入网址和关键词就行。</p>
-        </div>
-        <!-- 例子2：搜特定文件 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想要PDF文档？用“filetype:pdf”</h3>
-          <p class="text-sm text-gray-600">找工作简历模板、学术论文，往往PDF格式更规范。输入<code class="bg-gray-200 px-1 rounded">filetype:pdf 简历模板</code>，结果就全是PDF文件，省去筛选时间。</p>
-        </div>
-        <!-- 例子3：标题中含有关键词 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想找标题里带“通知”的网页？用“intitle:”</h3>
-          <p class="text-sm text-gray-600">如果关键词出现在网页标题里，通常相关性更高。比如搜<code class="bg-gray-200 px-1 rounded">intitle:放假通知</code>，出来的都是标题中明确有“放假通知”的页面。</p>
-        </div>
-        <!-- 例子4：排除不想要的关键词 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想排除广告？用减号“-”</h3>
-          <p class="text-sm text-gray-600">搜“手机”，但不想看电商广告，可以搜<code class="bg-gray-200 px-1 rounded">手机 -京东 -淘宝</code>，结果里就不会出现包含“京东”“淘宝”的页面。</p>
-        </div>
-      </div>
-      <p class="mt-4">还有更多指令，比如搜索特定时间范围、搜索某个网页的缓存、搜索相关网站等等，工具右侧的“高级搜索指令说明”里都列得清清楚楚，点一下就能复制或插入，非常方便。</p>
-    </section>
-
-    <!-- 第四部分：实际操作体验 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">怎么用？三步搞定</h2>
-      <ol class="list-decimal pl-6 mb-3 space-y-2">
-        <li><strong>选引擎</strong>：在百度、谷歌、必应中选一个你需要的。</li>
-        <li><strong>输关键词</strong>：直接在搜索框里打字，如果要用高级指令，可以点下方的快捷按钮（比如“site:”），指令会自动填入，你再接着输入网址或关键词就行。</li>
-        <li><strong>点搜索</strong>：点击右侧的搜索按钮（颜色会随引擎变化），结果就会在新标签页打开。</li>
-      </ol>
-      <p>就这么简单。而且你每次搜索，工具都会帮你记录下来（存在你自己的浏览器里，别人看不到）。以后想重复搜同样内容，点一下历史记录就行，不用重新打字。</p>
-    </section>
-
-    <!-- 第五部分：小细节让搜索更舒心 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">贴心的细节</h2>
-      <ul class="list-disc pl-6 mb-3 space-y-1">
-        <li><strong>输入提示</strong>：当你开始打字，工具会联想你可能想用的高级指令，选一个就直接填好。</li>
-        <li><strong>历史记录</strong>：自动保存最近50次搜索，还能按引擎分类，点一下就能重新搜索。</li>
-        <li><strong>使用统计</strong>：你可以看到自己总共搜了多少次，哪个引擎用得最多，有点小成就感。</li>
-        <li><strong>移动端也能用</strong>：在手机上打开，布局会自动变成上下结构，按钮大小合适，很好点。</li>
-      </ul>
-    </section>
-
-    <!-- 第六部分：总结 -->
-    <section class="bg-blue-50 p-6 rounded-lg">
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900">从现在起，让搜索更聪明</h2>
-      <p class="mb-3">以前你可能觉得“搜不到”是因为自己不会搜，其实只是没遇到好工具。这个多引擎智能搜索工具，把三大搜索引擎和几十种高级指令集合在一起，不用背、不用记，点一点就能用上“专业搜索”功能。</p>
-      <p>下次想查资料、找文档、搜图片，不妨试试它。你会发现，原来答案可以离你那么近。</p>
-    </section>
-
-    <!-- 附加提示（非营销，纯说明） -->
-    <p class="text-sm text-gray-500 text-center pt-4">—— 一个让搜索回归纯粹的小工具，不收集任何个人信息，所有历史记录只保存在你的浏览器中。</p>
-
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">你的农历生日是哪天？</p>
+    <p class="mt-2 mb-0">很多年轻人只记得自己的阳历生日，但长辈们更习惯用农历。农历阳历转换工具帮你轻松在这两种历法之间切换，无论是查询传统节日、安排生日庆祝，还是了解老黄历，都能快速搞定。</p>
   </div>
-</div>`;export{t as default};
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">为什么需要农历阳历转换？</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🎂 生日查询</h3>
+      <p class="text-sm text-gray-600">查询农历生日对应的阳历日期，或反之，不错过重要的生日庆祝。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🧧 传统节日</h3>
+      <p class="text-sm text-gray-600">春节、中秋、端午等传统节日都按农历计算，需要转换才能确定阳历日期。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">📅 择日办事</h3>
+      <p class="text-sm text-gray-600">搬家、结婚、开业等传统习俗需要参考农历黄道吉日。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">👴 长辈沟通</h3>
+      <p class="text-sm text-gray-600">方便与习惯使用农历的长辈交流日期，避免误解。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历与阳历的区别</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">对比项</th>
+          <th class="border border-gray-300 p-3 text-left">阳历（公历）</th>
+          <th class="border border-gray-300 p-3 text-left">农历（阴历）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">起源</td>
+          <td class="border border-gray-300 p-3">西方，基于太阳运行</td>
+          <td class="border border-gray-300 p-3">中国传统，基于月相变化</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">月份天数</td>
+          <td class="border border-gray-300 p-3">固定（28-31天）</td>
+          <td class="border border-gray-300 p-3">不固定（29或30天）</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">年份天数</td>
+          <td class="border border-gray-300 p-3">365或366天</td>
+          <td class="border border-gray-300 p-3">353-355天（平年）或383-385天（闰年）</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">新年日期</td>
+          <td class="border border-gray-300 p-3">固定1月1日</td>
+          <td class="border border-gray-300 p-3">不固定（1月下旬至2月中旬）</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">使用场景</td>
+          <td class="border border-gray-300 p-3">国际通用、官方事务</td>
+          <td class="border border-gray-300 p-3">传统节日、民俗活动</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历的奥秘：闰月与节气</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
+      <h3 class="font-medium text-indigo-800 mb-2">什么是闰月？</h3>
+      <p class="text-indigo-700">农历采用"十九年七闰"的规则来协调太阳年和月亮月的关系。当某个月份没有中气（二十四节气中的偶数位节气）时，就设为闰月。闰月会导致该农历年有13个月，全年约384天。</p>
+    </div>
+    
+    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
+      <h3 class="font-medium text-green-800 mb-2">二十四节气</h3>
+      <p class="text-green-700">农历融合了二十四节气，这是中国古代农耕文明的智慧结晶。节气按照太阳在黄道上的位置划分，指导农事活动。如立春、清明、夏至、冬至等。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">2024-2025年主要传统节日对照</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">节日</th>
+          <th class="border border-gray-300 p-3 text-left">农历日期</th>
+          <th class="border border-gray-300 p-3 text-left">2024年阳历</th>
+          <th class="border border-gray-300 p-3 text-left">2025年阳历</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">春节</td>
+          <td class="border border-gray-300 p-3">正月初一</td>
+          <td class="border border-gray-300 p-3">2月10日</td>
+          <td class="border border-gray-300 p-3">1月29日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">元宵节</td>
+          <td class="border border-gray-300 p-3">正月十五</td>
+          <td class="border border-gray-300 p-3">2月24日</td>
+          <td class="border border-gray-300 p-3">2月12日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">清明节</td>
+          <td class="border border-gray-300 p-3">（节气）</td>
+          <td class="border border-gray-300 p-3">4月4日</td>
+          <td class="border border-gray-300 p-3">4月4日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">端午节</td>
+          <td class="border border-gray-300 p-3">五月初五</td>
+          <td class="border border-gray-300 p-3">6月10日</td>
+          <td class="border border-gray-300 p-3">5月31日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">七夕节</td>
+          <td class="border border-gray-300 p-3">七月初七</td>
+          <td class="border border-gray-300 p-3">8月10日</td>
+          <td class="border border-gray-300 p-3">8月29日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">中秋节</td>
+          <td class="border border-gray-300 p-3">八月十五</td>
+          <td class="border border-gray-300 p-3">9月17日</td>
+          <td class="border border-gray-300 p-3">10月6日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">重阳节</td>
+          <td class="border border-gray-300 p-3">九月初九</td>
+          <td class="border border-gray-300 p-3">10月11日</td>
+          <td class="border border-gray-300 p-3">10月29日</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">生肖与干支纪年</h2>
+  
+  <p>农历使用干支纪年法，每60年一个周期。同时每年对应一个生肖，12年一轮回。</p>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+    <div class="p-3 bg-red-50 rounded text-center">
+      <div class="text-2xl">🐭</div>
+      <div class="text-sm font-medium">鼠年</div>
+      <div class="text-xs text-gray-500">2020, 2032</div>
+    </div>
+    <div class="p-3 bg-yellow-50 rounded text-center">
+      <div class="text-2xl">🐮</div>
+      <div class="text-sm font-medium">牛年</div>
+      <div class="text-xs text-gray-500">2021, 2033</div>
+    </div>
+    <div class="p-3 bg-blue-50 rounded text-center">
+      <div class="text-2xl">🐯</div>
+      <div class="text-sm font-medium">虎年</div>
+      <div class="text-xs text-gray-500">2022, 2034</div>
+    </div>
+    <div class="p-3 bg-green-50 rounded text-center">
+      <div class="text-2xl">🐰</div>
+      <div class="text-sm font-medium">兔年</div>
+      <div class="text-xs text-gray-500">2023, 2035</div>
+    </div>
+    <div class="p-3 bg-red-50 rounded text-center">
+      <div class="text-2xl">🐲</div>
+      <div class="text-sm font-medium">龙年</div>
+      <div class="text-xs text-gray-500">2024, 2036</div>
+    </div>
+    <div class="p-3 bg-yellow-50 rounded text-center">
+      <div class="text-2xl">🐍</div>
+      <div class="text-sm font-medium">蛇年</div>
+      <div class="text-xs text-gray-500">2025, 2037</div>
+    </div>
+    <div class="p-3 bg-blue-50 rounded text-center">
+      <div class="text-2xl">🐴</div>
+      <div class="text-sm font-medium">马年</div>
+      <div class="text-xs text-gray-500">2026, 2038</div>
+    </div>
+    <div class="p-3 bg-green-50 rounded text-center">
+      <div class="text-2xl">🐑</div>
+      <div class="text-sm font-medium">羊年</div>
+      <div class="text-xs text-gray-500">2027, 2039</div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：农历和阴历是一回事吗？</p>
+      <p class="text-gray-600">答：日常生活中常混用，但严格来说有区别。农历是阴阳合历，既考虑月相（阴历成分），又通过闰月协调太阳年（阳历成分）。而纯阴历只考虑月相。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：为什么农历新年每年日期不同？</p>
+      <p class="text-gray-600">答：农历新年（春节）是农历正月初一。由于农历一年约354天，比阳历少11天左右，所以农历日期每年在阳历中会"漂移"约11天。为了协调，农历采用闰月，使春节保持在阳历1月下旬至2月中旬之间。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：农历生日每年阳历日期都不一样吗？</p>
+      <p class="text-gray-600">答：是的。农历生日对应的阳历日期每年都会变化，通常比上一年晚约11天（遇闰月则变化不同）。如果想知道某年农历生日是阳历哪天，需要使用农历阳历转换工具查询。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：转换工具支持哪些年份范围？</p>
+      <p class="text-gray-600">答：大多数工具支持1900年至2100年左右的转换，覆盖日常需求。某些专业工具可能支持更宽的年份范围，甚至上溯到清朝时期。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">连接传统与现代</h2>
+  <p>农历承载着中华民族数千年的文化积淀，是传统节日、民俗活动的时间坐标。在现代社会，农历阳历转换工具成为连接传统与现代的重要桥梁，让我们既能享受现代生活的便利，又不遗忘传统文化的根脉。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">💡 使用建议：</p>
+    <ul class="text-green-800 space-y-1">
+      <li>• 提前查询传统节日的阳历日期，方便安排假期和活动</li>
+      <li>• 记录家人的农历生日，按传统方式庆祝</li>
+      <li>• 了解二十四节气，感受自然节律的变化</li>
+      <li>• 将转换工具加入收藏，随时查询</li>
+      <li>• 向外国朋友介绍中国农历文化时，用转换工具辅助说明</li>
+    </ul>
+  </div>
+  
+  <p class="mt-6 text-center text-gray-600">历法是人类丈量时间的标尺，农历与阳历各有其美。用好转换工具，让两种时间体系和谐共存。</p>
+</div>
+`;export{r as default};

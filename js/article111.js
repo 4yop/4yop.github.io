@@ -1,88 +1,107 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">上网时遇到页面错乱？先别怪网速，查查它的“身份证”</h1>
+const t=`
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
   
-  <div class="text-lg text-gray-600 mb-8 text-center">
-    <p>一个帮你快速看懂手机、电脑如何向网站“自我介绍”的小工具。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
   </div>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
-    <p class="font-medium">你有没有过这样的经历：</p>
-    <ul class="mt-2 space-y-1 pl-5 list-disc">
-      <li>用手机打开一个网站，排版却乱七八糟，按钮都点不到。</li>
-      <li>别人都能正常使用的功能，到了你的电脑上却怎么也打不开。</li>
-      <li>买了个新手机，总感觉有些网页用起来“不对劲”，又说不出原因。</li>
+  
+  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
+      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
+      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
+      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
+      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
+  
+  <div class="mb-8">
+    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
+    
+    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
+      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
+      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
+      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
     </ul>
-    <p class="mt-4">这时候，你可能会怀疑是网速问题、手机坏了，甚至是网站故意针对你。其实，很多时候问题出在一个你从未留意的小细节上。</p>
   </div>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">网站眼中的你：一份特殊的“自我介绍信”</h2>
-  <p class="mb-4">每当你用浏览器访问一个网站时，你的手机或电脑都会自动向网站发送一封简短的“自我介绍信”。这封信里写着：“你好，我是来自XX品牌的XX型号手机，用的是XX系统，通过XX浏览器来看你。”</p>
-  <p class="mb-6">这封“信”的专业名字叫 <strong>User-Agent</strong>。网站收到这封信后，会根据里面的信息，决定给你展示最适合你设备的网页样子。如果这封信里的信息有点混乱，或者网站没认出来，你看到的页面就可能出问题。</p>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">我们的工具能为你做什么？</h2>
-  <p class="mb-6">这个工具就像一个“翻译官”，能立刻帮你解读那封“自我介绍信”。你不需要懂任何技术，只需要把信的内容（或者直接用我们自动获取的）放进去，它就能告诉你：</p>
   
-  <div class="grid sm:grid-cols-2 gap-6 mb-10">
-    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="text-xl font-semibold mb-2 text-blue-600">1. 看清你的“窗口”</h3>
-      <p>你正在使用什么浏览器（比如 Chrome、Safari）以及具体的版本号。有时候问题就出在浏览器版本太旧上。</p>
+  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
+      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
     </div>
-    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="text-xl font-semibold mb-2 text-blue-600">2. 识别你的“底座”</h3>
-      <p>你的设备是什么操作系统（比如 Windows 11、iOS 16、安卓 13）。不同系统对网页的支持略有差异。</p>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
+      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
     </div>
-    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="text-xl font-semibold mb-2 text-blue-600">3. 了解你的“设备”</h3>
-      <p>你用的是电脑、平板还是手机？是什么品牌和型号？这能帮你判断是不是特定设备才有的问题。</p>
-    </div>
-    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="text-xl font-semibold mb-2 text-blue-600">4. 找到核心“引擎”</h3>
-      <p>浏览器背后负责解析网页的核心技术是什么。这有助于深入理解兼容性问题的根源。</p>
+    
+    <div>
+      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
+      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
     </div>
   </div>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">在哪些时候特别有用？</h2>
   
-  <div class="space-y-6 mb-10">
-    <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-50 p-5 rounded-lg">
-      <div class="sm:w-1/4 mb-4 sm:mb-0">
-        <div class="inline-block bg-green-100 text-green-800 font-medium px-4 py-2 rounded">场景一</div>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
+  
+  <div class="mb-8">
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">1</div>
       </div>
-      <div class="sm:w-3/4">
-        <p><strong>当你向客服或朋友求助时：</strong>与其费力地说“我用苹果手机自带的浏览器打开那个网站不行”，不如直接使用工具，把读出的信息完整准确地告诉对方。信息精准，解决问题的效率会高很多。</p>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
+        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-50 p-5 rounded-lg">
-      <div class="sm:w-1/4 mb-4 sm:mb-0">
-        <div class="inline-block bg-yellow-100 text-yellow-800 font-medium px-4 py-2 rounded">场景二</div>
+    
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">2</div>
       </div>
-      <div class="sm:w-3/4">
-        <p><strong>当你自己维护一个小店或博客网站时：</strong>你可以把访客的“自我介绍信”拿来看看，了解一下你的读者们大多是用什么设备访问的。这能帮你更有针对性地调整网站，让大家浏览得更舒服。</p>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
+        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
+      </div>
+    </div>
+    
+    <div class="flex items-start">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">3</div>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
+        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
       </div>
     </div>
   </div>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">常见问题解答</h2>
-  <div class="space-y-4 mb-10">
-    <div>
-      <h3 class="text-xl font-semibold mb-2">问：这个工具会泄露我的隐私吗？</h3>
-      <p class="text-gray-700">答：完全不会。这个工具只在你当前页面上运行，我们不会收集或上传你解析的任何信息。它就像一个在你本地运行的“计算器”，只负责解读你给它的那段文字。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-2">问：为什么我需要知道这些信息？</h3>
-      <p class="text-gray-700">答：它帮你把模糊的“不好用”变成具体的问题描述。知道是浏览器版本、系统还是设备类型的问题，是你解决问题的第一步，也能让你在和他人沟通时更有效率。</p>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 sm:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 text-center">
-    <h2 class="text-2xl font-bold mb-4">好奇你的设备是怎么“自我介绍”的吗？</h2>
-    <p class="mb-6">我们已经在上方的工具框中，自动填好了你当前设备发送的“自我介绍信”。不用你做任何操作，信息已经解析出来并展示在下面了。快看看你的浏览器、系统和设备信息是否准确吧！</p>
-    <p class="text-sm text-gray-600">（你也可以试试将家人或朋友设备的UA字符串粘贴进来，看看它们和你的有什么不同。）</p>
-  </div>
-
-  <div class="mt-10 pt-6 border-t border-gray-300 text-center text-gray-500 text-sm">
-    <p>了解一点设备上网的小知识，下次再遇到网页显示问题，你就能更从容地找到方向了。</p>
+  
+  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
+    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
+    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
   </div>
 </div>
-`;export{s as default};
+`;export{t as default};

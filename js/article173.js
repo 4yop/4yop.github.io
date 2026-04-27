@@ -1,102 +1,157 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
-  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">信用卡分期怎么算？看完这篇自己就能算清楚</h1>
+<article class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    一个好用的在线便签工具，能帮你随时随地记录想法
+  </h1>
 
-  <p class="text-lg mb-4">
-    信用卡账单来了，金额有点大，想分期还？但每次看到“手续费率0.6%”这种数字，心里总犯嘀咕：这到底要多还多少钱？每期还多少？别急，今天咱们就用人人都能懂的大白话，把信用卡分期这件事掰扯明白。你甚至可以拿着手机自己算，再也不怕被绕晕。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-    <p class="text-sm text-blue-800">
-      小提醒：文末有分期计算小工具，不用记公式，填数字就能出结果，建议先收藏。
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
+    <p>
+      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
     </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">1. 信用卡分期，到底在分什么？</h2>
-  <p class="mb-4">
-    简单说，信用卡分期就是你把一笔消费金额，分成几个月还给银行。比如这个月花了12000元，手头紧，就可以申请分12期，接下来12个月每个月还一部分。银行不是免费帮你分期的，它会收一笔钱，叫“手续费”。这笔手续费是按你分期的总额乘以一个百分比算出来的。
-  </p>
-  <p class="mb-4">
-    手续费率通常用“每期费率”来表示，比如0.6%/期，意思就是每一期要额外付本金的0.6%作为手续费。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">2. 分期手续费和每期还款，其实就这三个数</h2>
-  <p class="mb-2">搞懂信用卡分期计算，你只需要关注三个数字：</p>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><span class="font-medium">分期本金</span>：你打算分期的总金额（比如10000元）。</li>
-    <li><span class="font-medium">分期期数</span>：分多少个月还（比如3期、6期、12期）。</li>
-    <li><span class="font-medium">每期手续费率</span>：银行收的手续费比例（比如0.6%）。</li>
-  </ul>
-  <p class="mb-4">
-    有了这三个数，下面这些结果自己都能算：
-  </p>
-  <ul class="list-disc pl-6 mb-6 space-y-1">
-    <li><span class="font-medium">每期手续费</span> = 分期本金 × 每期手续费率 ÷ 100（如果费率是0.6，直接乘0.006）</li>
-    <li><span class="font-medium">每期应还本金</span> = 分期本金 ÷ 分期期数</li>
-    <li><span class="font-medium">每期还款总额</span> = 每期手续费 + 每期应还本金</li>
-    <li><span class="font-medium">总手续费</span> = 每期手续费 × 分期期数</li>
-    <li><span class="font-medium">总还款额</span> = 分期本金 + 总手续费</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. 举个真实的例子，一看就懂</h2>
-  <p class="mb-2">假设你上个月消费了10000元，申请分12期还，银行给的每期手续费率是0.6%。我们来一步步算：</p>
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
-    <p class="mb-1">• 每期手续费 = 10000 × 0.6% = 60元</p>
-    <p class="mb-1">• 每期应还本金 = 10000 ÷ 12 ≈ 833.33元</p>
-    <p class="mb-1">• 每期还款总额 = 60 + 833.33 = 893.33元</p>
-    <p class="mb-1">• 总手续费 = 60 × 12 = 720元</p>
-    <p class="mb-1">• 总还款额 = 10000 + 720 = 10720元</p>
-  </div>
-  <p class="mb-4">
-    也就是说，你分12期总共要多还720元，每个月还893.33元。是不是很清楚？
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. 分期期数怎么选更划算？</h2>
-  <p class="mb-4">
-    银行通常提供3期、6期、12期、24期等选项。期数越短，总手续费越少，但每月还款压力大；期数越长，总手续费越多，但每月还款轻松。比如上面例子，如果分6期，假设费率也是0.6%，总手续费就是10000×0.6%×6=360元，比12期省了一半，但每月要还(10000÷6+60)≈1726.67元。
-  </p>
-  <p class="mb-4">
-    所以选期数要看自己当下的现金流：如果未来几个月收入稳定，选短期的更省钱；如果确实手头紧，选长期分摊压力。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">5. 注意两个容易忽略的“坑”</h2>
-  <p class="mb-2 font-medium">① 手续费率 ≠ 真实年利率</p>
-  <p class="mb-3">
-    银行给你看的0.6%是每期费率，如果简单乘以12得到7.2%，听起来不高。但实际上因为本金每月在减少，你占用的资金越来越少，真实年化利率大概是这个数字的两倍左右（用内部收益率IRR算会更准确）。所以分期消费前，可以问问自己：这笔钱如果用来投资，能赚回这个利率吗？
-  </p>
-  <p class="mb-2 font-medium">② 提前还款手续费怎么算？</p>
-  <p class="mb-4">
-    很多银行即使你提前还清，剩余期数的手续费也要照收，或者收一笔违约金。办理分期前最好问清楚条款，免得后来想提前还却发现不划算。
-  </p>
-
-  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-5 mt-6 mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">用分期计算器，省心不费脑</h3>
-    <p class="mb-3">
-      如果不想手动算，或者想试试不同金额、期数和费率的结果，可以用我们准备的这个小工具。输入本金、期数、手续费率，马上就能看到每期还多少、总手续费多少，清清楚楚，帮你做决策。
-    </p>
-    <p class="text-sm text-gray-600">
-      （本文介绍的信用卡分期计算器就是页面下方那个，所有结果都是实时计算，保留两位小数，供你参考。）
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
+    <p class="text-gray-700">
+      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
     </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">关于信用卡分期，你可能还想问</h2>
-  <div class="space-y-4">
-    <div>
-      <p class="font-medium">问：所有消费都能分期吗？</p>
-      <p>大部分普通消费都可以，但有些银行对特定交易（比如取现、临时额度）有限制，具体以账单为准。</p>
-    </div>
-    <div>
-      <p class="font-medium">问：分期会影响信用记录吗？</p>
-      <p>按时还款不仅不会影响，反而有助于积累良好信用。但如果逾期，后果也很严重。</p>
-    </div>
-    <div>
-      <p class="font-medium">问：手续费率有优惠吗？</p>
-      <p>银行经常有分期优惠活动，比如特定商户、新用户免息等，可以多留意App或客服通知。</p>
-    </div>
+  <div class="space-y-10">
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何使用这个便签工具？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        使用非常简单，就像用真实的便利贴一样。
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700">
+        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
+        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
+        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
+        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
+        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        便签上的小工具能做什么？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        每张便签底部都有一排小按钮，能让你的文字更丰富。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li><b>B</b>：加粗文字</li>
+            <li><i>I</i>：让文字倾斜</li>
+            <li><u>U</u>：给文字加下划线</li>
+            <li><s>ab</s>：给文字划上删除线</li>
+            <li>Points：创建项目符号列表</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
+          <p class="text-gray-700">
+            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何保护我的便签内容？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+            导出备份
+          </h3>
+          <p class="text-gray-700">
+            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
+          </p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+            导入恢复
+          </h3>
+          <p class="text-gray-700">
+            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
+          </p>
+        </div>
+      </div>
+      <p class="mt-4 text-gray-600 text-sm">
+        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        适合哪些场景使用？
+      </h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-yellow-800 font-medium">1</span>
+          </div>
+          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-pink-800 font-medium">2</span>
+          </div>
+          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-green-800 font-medium">3</span>
+          </div>
+          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-purple-800 font-medium">4</span>
+          </div>
+          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        几个贴心的小提示
+      </h2>
+      <ul class="space-y-4 text-gray-700">
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
+        </li>
+      </ul>
+    </section>
   </div>
 
-  <p class="text-center text-gray-500 text-sm mt-10 pt-4 border-t border-gray-200">
-    希望这篇文章让你对信用卡分期心里有底。下次再看到分期选项，不妨先算一算，再做决定。
-  </p>
-</div>
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+    <p class="text-gray-600">
+      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
+    </p>
+    <p class="text-gray-500 text-sm mt-2">
+      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
+    </p>
+  </div>
+</article>
 `;export{s as default};

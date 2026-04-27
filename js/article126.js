@@ -1,17 +1,40 @@
 const t=`
-<div class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans">
-  <h1 class="text-3xl text-center font-bold mb-4 text-gray-900">你的家乡有哪些明星</h1>
-  <p class="text-gray-700 mb-6">
-    选择你的家乡所在省份、城市或区县，查看来自同一片土地的明星名人。支持省、市、区三级查询，无需选择完整路径即可筛选。涵盖歌手、演员、企业家等各领域公众人物。
-  </p>
-  <div class="bg-gray-50 p-4 rounded-lg mb-6">
-    <h2 class="text-xl font-semibold mb-3 text-gray-900">使用说明</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-      <li>选择省份即可查看该省所有明星</li>
-      <li>继续选择城市可缩小范围</li>
-      <li>精确到区县可查看来自你家乡的明星</li>
-      <li>数据持续更新中，欢迎关注</li>
-    </ul>
-  </div>
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个计算器适合拿来做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合先估算房贷、车贷这类分期贷款的大致月供、总利息和还款总额，
+        也能快速比较等额本息和等额本金两种还款方式的差异。页面下方会列出前 12 期明细，方便你看本金和利息的变化。
+      </p>
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">输入前先确认 4 个数字</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>贷款金额：尽量按你真实准备贷的金额填写。</li>
+        <li>年利率：先用银行给到的口径，不要混用宣传利率和审批利率。</li>
+        <li>贷款年限：不同年限会直接影响月供压力和总利息。</li>
+        <li>还款方式：等额本息更稳定，等额本金前高后低。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>为什么工具结果和银行方案不完全一样？</strong> 银行审批会叠加实际利率、手续费、组合贷结构和还款规则，工具只做标准口径试算。</p>
+        <p><strong>该先看月供还是总利息？</strong> 如果更关心每月压力，先看月供；如果在比长期成本，再看总利息和总还款额。</p>
+        <p><strong>能替代正式贷款方案吗？</strong> 不能，结果仅供预算参考，最终以银行审批和合同为准。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你想先看怎样输入才能更接近真实月供，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/loan-payment-estimation/">《房贷月供怎么估算更准确》</a>。
+      </p>
+    </section>
+  </article>
 </div>
 `;export{t as default};

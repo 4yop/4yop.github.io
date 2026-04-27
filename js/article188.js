@@ -1,189 +1,40 @@
-const e=`
-<div class="bg-gray-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto">
-    <!-- 文章标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 text-center leading-tight">
-      PDF轻松转图片：为何你需要这个工具以及如何使用
-    </h1>
-    
-    <!-- 引言部分 -->
-    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
-      <p class="text-lg text-gray-700 mb-4 leading-relaxed">
-        你是否遇到过这样的情况：收到一份PDF文件，但需要里面的某一页作为图片分享给朋友？或者想将PDF中的图表插入到演示文稿中，却不知道如何提取？如果你对技术操作感到头疼，那么这篇文章就是为你准备的。
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合把一段 JSON 做格式化、压缩和校验，也支持设置缩进、查看基础结构统计，并且可以直接复制或下载结果。
+        对接口调试、配置整理和日志排查这类场景很实用。
       </p>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        今天，我们来聊聊一个非常实用的功能——将PDF文件转换为图片。完全不需要安装任何软件，也不用学习复杂的技术，就像使用手机拍照一样简单。
+    </section>
+
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先把原始 JSON 粘贴进输入框，第一步优先用“验证”看语法是否正确。</li>
+        <li>排查结构时用“格式化”，这样对象、数组和缩进层级更容易看清。</li>
+        <li>准备嵌入请求参数、日志或配置文件时，再切到“压缩”模式。</li>
+        <li>如果报错，优先检查尾逗号、单双引号和非法注释。</li>
+      </ol>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>格式化和验证有什么区别？</strong> 验证只判断 JSON 语法是否正确；格式化会在语法正确的前提下，把结构排版成更容易阅读的样子。</p>
+        <p><strong>压缩会不会改数据？</strong> 不会，压缩只是去掉多余空格和换行，不会改变字段含义。</p>
+        <p><strong>适合处理超大的 JSON 吗？</strong> 日常接口返回和配置文件没问题，但特别大的导出文件建议分段处理更稳。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你分不清什么时候该“格式化”，什么时候只需要“校验”，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/json-format-vs-validate/">《JSON 格式化和 JSON 校验有什么区别》</a>。
       </p>
-    </div>
-
-    <!-- 为什么需要转换 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        为什么要把PDF转换成图片？
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">分享更方便</h3>
-          <p class="text-gray-700 leading-relaxed">
-            图片格式可以直接在聊天软件中发送，对方无需任何特殊软件就能查看。比如将合同的一页转为图片，通过微信发送给同事确认。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">使用更灵活</h3>
-          <p class="text-gray-700 leading-relaxed">
-            图片可以轻松插入到Word、PPT等文档中，也可以设为电脑或手机壁纸。例如，将PDF中的设计图转为图片，放入你的工作汇报。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">查看更简单</h3>
-          <p class="text-gray-700 leading-relaxed">
-            有些老旧设备或特定软件可能不支持PDF，但几乎所有的设备都能打开图片文件。确保你的文件在任何地方都能被看到。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">保护内容格式</h3>
-          <p class="text-gray-700 leading-relaxed">
-            转换为图片后，文件的排版、字体和布局会被固定下来，不会因为不同设备而显示错乱，适合重要文件的分享。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 工具介绍 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-green-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        在线转换工具：就像用水杯接水一样简单
-      </h2>
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          现在有很多网站提供了PDF转图片的功能，它们通常操作非常直观。你不需要是电脑高手，只需要会点击鼠标就能完成。
-        </p>
-        <div class="mt-6">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">主要特点：</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li><span class="font-medium">完全免费：</span>大多数基础功能都是免费的，无需付费。</li>
-            <li><span class="font-medium">无需安装：</span>直接在浏览器中使用，不占用电脑空间。</li>
-            <li><span class="font-medium">保护隐私：</span>好的工具会在转换后自动删除你的文件，不会保留。</li>
-            <li><span class="font-medium">支持多种设备：</span>无论是在电脑、平板还是手机上，都能正常使用。</li>
-            <li><span class="font-medium">批量处理：</span>一次可以转换多页PDF，每页生成一张图片。</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- 使用步骤 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-yellow-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        三步完成转换：比煮泡面还快
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-blue-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-blue-600 mb-4">1</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">上传PDF文件</h3>
-          <p class="text-gray-700 leading-relaxed">
-            点击“选择文件”按钮，从你的电脑或手机里找到要转换的PDF。就像你上传照片到社交网络一样。
-          </p>
-        </div>
-        <div class="bg-green-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-green-600 mb-4">2</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">点击转换按钮</h3>
-          <p class="text-gray-700 leading-relaxed">
-            选择“转为图片”选项，然后点击“开始转换”。系统会自动处理，你可以看到进度条。
-          </p>
-        </div>
-        <div class="bg-purple-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-purple-600 mb-4">3</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">预览并下载</h3>
-          <p class="text-gray-700 leading-relaxed">
-            转换完成后，可以直接预览每一页图片。满意的话，一键打包下载所有图片到你的设备。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 常见问题 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-red-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        你可能关心的问题
-      </h2>
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">转换后的图片清晰吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            是的，转换工具会尽量保持原始PDF的清晰度。你可以预览确认，如果觉得不够清晰，可以调整设置重新转换。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">我的文件安全吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            正规的在线工具通常不会存储你的文件。转换完成后，文件会从服务器删除，就像ATM机不会记住你的银行卡密码一样。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">支持多大的PDF文件？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            大多数工具支持几十兆的文件，对于普通的文档、简历、电子书等完全足够。如果文件太大，可以尝试分几次转换。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">转换需要很长时间吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            这取决于PDF的页数和大小。通常，一个10页的文档在几秒到一分钟内就能完成。页数越多，时间稍长，但进度条会让你知道还需等待多久。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 应用场景 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        这些情况特别有用
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📄</div>
-          <p class="text-gray-700 leading-relaxed">将电子书的一页转为图片，分享精彩段落</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📊</div>
-          <p class="text-gray-700 leading-relaxed">提取PDF报告中的图表，放入PPT演示</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📑</div>
-          <p class="text-gray-700 leading-relaxed">转换扫描的纸质文档，方便手机查看</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">🎨</div>
-          <p class="text-gray-700 leading-relaxed">保存设计稿或图纸，作为参考图片</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📧</div>
-          <p class="text-gray-700 leading-relaxed">将合同关键页转为图片，邮件发送确认</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📱</div>
-          <p class="text-gray-700 leading-relaxed">制作手机壁纸，从喜欢的PDF页面提取</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 结尾总结 -->
-    <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl shadow-sm p-8 text-center">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">开始尝试吧</h2>
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        把PDF转换成图片，就像把书本的一页拍成照片一样简单。无论你是学生、上班族，还是普通用户，这个工具都能让你的数字生活更便捷。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        记住，好的工具应该让你感觉不到技术的存在。下次遇到PDF转换的需求，不妨试试在线工具，体验一下“点击即得”的轻松。
-      </p>
-    </div>
-
-    <!-- 小提示 -->
-    <div class="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-      <p class="text-gray-700 text-center leading-relaxed">
-        <span class="font-medium">小提示：</span>使用前请确保你有权转换该PDF文件，尊重版权和隐私。转换工具只是帮手，正确使用才能发挥最大价值。
-      </p>
-    </div>
-  </div>
+    </section>
+  </article>
 </div>
-`;export{e as default};
+`;export{t as default};

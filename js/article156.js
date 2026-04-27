@@ -1,169 +1,90 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">智能抠图工具：一键去除背景，让主体脱颖而出</h1>
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight">网上每天那么多热点，一个页面就能全看完？</h1>
+  <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
+    有没有觉得，每天想看看网上在聊什么，得在好几个软件之间来回切换？一会儿打开微博，一会儿刷刷抖音，再去贴吧逛逛……来回切换不仅麻烦，还容易错过重要的信息。其实，有个更简单的办法。
+  </p>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">还在为去除图片背景发愁？</p>
-    <p class="mt-2 mb-0">无论是制作证件照、设计电商产品图，还是创作社交媒体内容，去除图片背景都是常见需求。智能抠图工具利用AI技术，一键自动识别主体并去除背景，无需复杂的PS操作，几秒钟就能完成专业级效果。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="text-gray-700">
+      <span class="font-semibold">简单来说：</span>现在有一个工具，可以把微博、抖音、百度等多个平台的热搜榜，都集合在同一个页面里。你只需要点一下切换，就能看到不同平台最火的话题，不用再反复打开不同的应用了。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">智能抠图的应用场景</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🪪 证件照制作</h3>
-      <p class="text-sm text-gray-600">快速去除原背景，更换为白色、蓝色或红色背景，制作标准证件照。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🛍️ 电商产品图</h3>
-      <p class="text-sm text-gray-600">去除产品背景，制作白底图或透明背景图，符合电商平台要求。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体</h3>
-      <p class="text-sm text-gray-600">制作创意头像、表情包、合成图片，让内容更有趣。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🎨 设计创作</h3>
-      <p class="text-sm text-gray-600">提取素材元素，用于海报、Banner、PPT等设计作品。</p>
-    </div>
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它为你解决了什么？</h2>
+  <ul class="list-disc pl-5 mb-8 space-y-3 text-gray-700">
+    <li><span class="font-medium">节省时间：</span>不用再一个个应用点开，找热搜入口。所有热门话题一次性呈现。</li>
+    <li><span class="font-medium">快速了解全貌：</span>今天哪个平台最热闹？社会新闻在微博火，还是搞笑段子在抖音热？一眼就能比较。</li>
+    <li><span class="font-medium">不再错过热点：</span>你常刷抖音，可能就错过了微博上正在热议的社会话题。这个工具能帮你查漏补缺。</li>
+    <li><span class="font-medium">发现差异：</span>同一个事件，在不同平台的网友关注点可能完全不同，对比着看很有意思。</li>
+  </ul>
+
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它是怎么工作的？</h2>
+  <p class="mb-4 text-gray-700">
+    使用起来非常直观。页面顶部有几个按钮，分别代表不同的平台，比如“微博”、“抖音”、“百度热搜”、“百度贴吧”。
+  </p>
+  <div class="bg-gray-100 p-5 rounded-lg mb-6 border border-gray-300">
+    <h3 class="font-bold text-lg mb-3 text-gray-800">你可以这样操作：</h3>
+    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+      <li>打开页面，默认看到的是微博的热搜榜。</li>
+      <li>想看抖音的热门视频挑战或话题？点击“抖音”按钮，列表瞬间就切换过去了。</li>
+      <li>每个话题会显示它的排名、标题和大概的热度值。排名前三的通常会标红，比较醒目。</li>
+      <li>点击任何一条热搜的标题，就能在新窗口打开对应的链接，查看详细内容。</li>
+    </ol>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图 vs 传统方法</h2>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">对比项</th>
-          <th class="border border-gray-300 p-3 text-left">AI智能抠图</th>
-          <th class="border border-gray-300 p-3 text-left">传统PS抠图</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">操作难度</td>
-          <td class="border border-gray-300 p-3 text-green-600">简单，一键完成</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">复杂，需要专业技能</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">处理时间</td>
-          <td class="border border-gray-300 p-3 text-green-600">几秒钟</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">几分钟到几十分钟</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">边缘处理</td>
-          <td class="border border-gray-300 p-3 text-green-600">自动识别，效果自然</td>
-          <td class="border border-gray-300 p-3 text-green-600">精细控制，专业级</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">成本</td>
-          <td class="border border-gray-300 p-3 text-green-600">免费或低成本</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">软件订阅费用</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">适用场景</td>
-          <td class="border border-gray-300 p-3">日常需求、批量处理</td>
-          <td class="border border-gray-300 p-3">专业设计、精细修图</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图的工作原理</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
-      <h3 class="font-medium text-indigo-800 mb-2">1. 图像识别</h3>
-      <p class="text-indigo-700">AI模型分析图片内容，识别出前景主体（人物、物体）和背景区域。</p>
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">有什么特别之处？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 清晰明了
+      </h3>
+      <p class="text-gray-700">界面设计得很干净，没有乱七八糟的广告或多余信息。就是纯粹的热搜榜单，让你专注在内容本身。</p>
     </div>
-    
-    <div class="p-5 bg-blue-50 rounded-lg border border-blue-100">
-      <h3 class="font-medium text-blue-800 mb-2">2. 边缘检测</h3>
-      <p class="text-blue-700">精确识别主体边缘，处理头发丝、毛发等细节，确保抠图自然。</p>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 实时更新
+      </h3>
+      <p class="text-gray-700">榜单上方会显示最近的更新时间，让你知道看到的信息是不是最新的。数据也会定期刷新。</p>
     </div>
-    
-    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
-      <h3 class="font-medium text-green-800 mb-2">3. 背景移除</h3>
-      <p class="text-green-700">将识别出的背景区域变为透明或纯色，保留主体完整。</p>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 多端适配
+      </h3>
+      <p class="text-gray-700">无论是在电脑的大屏幕上，还是用手机的小屏幕浏览，页面的排版都会自动调整，看得都很舒服。</p>
     </div>
-    
-    <div class="p-5 bg-purple-50 rounded-lg border border-purple-100">
-      <h3 class="font-medium text-purple-800 mb-2">4. 优化输出</h3>
-      <p class="text-purple-700">对边缘进行平滑处理，消除锯齿，生成高质量的PNG透明背景图片。</p>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 快速加载
+      </h3>
+      <p class="text-gray-700">切换平台时，数据加载很快。如果正在加载，你会看到一个转圈的小动画，知道页面正在工作，不会以为是卡住了。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧与注意事项</h2>
-  
-  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
-    <h3 class="font-medium text-yellow-800 mb-3">💡 获得最佳效果的建议：</h3>
-    <ul class="space-y-2 text-yellow-700">
-      <li>• <strong>主体清晰</strong>：确保主体与背景有明显对比，边缘清晰</li>
-      <li>• <strong>光线均匀</strong>：避免主体一半过亮一半过暗，影响识别</li>
-      <li>• <strong>背景简洁</strong>：复杂背景可能影响识别精度，纯色背景效果最佳</li>
-      <li>• <strong>分辨率适中</strong>：图片过大可能导致处理缓慢，过小则影响细节</li>
-      <li>• <strong>检查边缘</strong>：抠图后检查头发、手指等细节区域，必要时手动调整</li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">抠图后的创意应用</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🌅</div>
-      <h3 class="font-medium text-gray-800 mb-2">换背景</h3>
-      <p class="text-sm text-gray-600">将人物放到风景、城市或虚拟场景中</p>
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">你可能会问的问题</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">数据是实时的吗？</h3>
+      <p class="text-gray-700">它展示的是各个平台官方或公开的热搜榜单，数据会尽可能保持同步更新。但和原平台相比，可能会有几分钟的延迟，这属于正常情况。</p>
     </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">✨</div>
-      <h3 class="font-medium text-gray-800 mb-2">加特效</h3>
-      <p class="text-sm text-gray-600">添加阴影、描边、光效等视觉效果</p>
+    <div>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">为什么没有知乎或B站？</h3>
+      <p class="text-gray-700">目前主要集成了几个用户量最大、热搜文化最典型的平台。未来可能会根据大家的需求，加入更多平台的选择。</p>
     </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🎭</div>
-      <h3 class="font-medium text-gray-800 mb-2">做合成</h3>
-      <p class="text-sm text-gray-600">多元素组合，创作创意图片</p>
+    <div>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">这个工具安全吗？</h3>
+      <p class="text-gray-700">它只是一个信息的“展示窗口”。当你点击某条热搜时，会跳转到对应平台的官方网站或页面，浏览和互动过程都在原平台进行，所以和直接访问那些网站是一样的。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：AI抠图能处理复杂背景吗？</p>
-      <p class="text-gray-600">答：现代AI抠图工具可以处理大多数复杂背景，但效果取决于主体与背景的对比度。对于头发丝、半透明物体等细节，高端工具表现更好。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图后的图片是什么格式？</p>
-      <p class="text-gray-600">答：通常输出为PNG格式，支持透明背景。如果不需要透明背景，也可以选择JPG格式并指定背景颜色。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：在线抠图工具安全吗？</p>
-      <p class="text-gray-600">答：使用本地处理的工具非常安全，图片不会上传到服务器。避免使用需要上传图片到云端的服务处理敏感照片。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图效果不满意怎么办？</p>
-      <p class="text-gray-600">答：可以尝试更换原图（选择主体更清晰的），或使用支持手动调整的工具进行边缘修正。部分工具提供"保留"和"删除"画笔进行精细调整。</p>
-    </div>
+  <div class="mt-12 p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-300">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      在这个信息满天飞的时代，我们需要的可能不是更多信息，而是更高效获取信息的方式。一个聚合多个平台热搜的工具，就像给你的手机或电脑装了一个“热点雷达”。
+    </p>
+    <p class="text-gray-700">
+      它帮你省去了反复切换的麻烦，让你用最短的时间，快速把握当天各个社交平台上的脉搏。无论是想跟上潮流、寻找谈资，还是单纯不想与社会脱节，这或许都是一个值得尝试的省心选择。
+    </p>
   </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让图片处理更简单</h2>
-  <p>AI技术的发展让原本专业的设计技能变得触手可及。智能抠图工具让每个人都能轻松获得专业级的图片处理效果，无论是工作需求还是个人创作，都能事半功倍。</p>
-  
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">✅ 使用建议：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 选择本地处理的工具，保护图片隐私</li>
-      <li>• 上传前确保图片质量，主体清晰</li>
-      <li>• 抠图后检查细节，特别是头发和边缘</li>
-      <li>• 保存为PNG格式保留透明背景</li>
-      <li>• 尝试不同的背景替换，发挥创意</li>
-    </ul>
-  </div>
-  
-  <p class="mt-6 text-center text-gray-600">好的工具能让创意无限延伸。现在就开始体验智能抠图的魔力吧！</p>
 </div>
-`;export{r as default};
+`;export{s as default};

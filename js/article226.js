@@ -1,223 +1,84 @@
-const e=`
-<div class="bg-white text-gray-800 font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8">
-    <!-- 文章标题 -->
-    <header class="mb-8 text-center">
-      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
-      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
-    </header>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    还在用“生日”当密码？手把手教你打造“破门锤”也打不开的强力密码
+  </h1>
 
-    <!-- 引言部分 -->
-    <section class="mb-10">
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-        <p class="text-gray-700 leading-relaxed">
-          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
-        </p>
-      </div>
-    </section>
+  <div class="text-lg text-gray-600 mb-8">
+    <p>你的网络账号，是不是还在用“123456”、自己生日或者“qwerty”这种简单密码？今天我们就来聊聊，怎么轻松设置一个既安全又好记的密码，给你的数字生活上一把真正的“防盗锁”。</p>
+  </div>
 
-    <!-- 什么是命名方式 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
-          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → userName</li>
-              <li>• 我的文档 → myDocument</li>
-              <li>• 首页标题 → homePageTitle</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
-          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → user_name</li>
-              <li>• 我的文档 → my_document</li>
-              <li>• 首页标题 → home_page_title</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="text-gray-700 leading-relaxed">
-        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
-      </p>
-    </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium text-blue-800">你知道吗？</p>
+    <p class="mt-1">黑客破解一个6位纯数字密码，可能只需要几秒钟。而一个复杂的强密码，却能让他们望而却步。</p>
+  </div>
 
-    <!-- 为什么需要转换 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
-      
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">1</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
-            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">2</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
-            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">3</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
-            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">为什么你的旧密码不够安全？</h2>
+  <p class="mb-4">想象一下，你家的门锁如果是用透明塑料做的，小偷一眼就能看清里面的结构，那还安全吗？简单密码就像这“透明锁”。很多人习惯用：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>自己的名字、生日、手机号。</li>
+    <li>“password”、“admin”这类通用词。</li>
+    <li>键盘上简单的字母序列，比如“asdfgh”。</li>
+  </ul>
+  <p class="mb-6">这些密码太容易被猜到，或者被黑客用“字典攻击”（一种用常见密码列表不断尝试的方法）轻松破解。</p>
 
-    <!-- 工具介绍 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
-      
-      <div class="bg-gray-50 rounded-xl p-6 mb-6">
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
-        
-        <div class="space-y-6">
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
-              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
-            </div>
-          </div>
-          
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
-              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">一个好密码的“配方”是什么？</h2>
+  <p class="mb-4">一个真正强力的密码，就像一份独家秘方，需要混合多种“食材”：</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">长度是基础</h3>
+      <p>密码越长，破解难度呈指数级增长。<strong>12位以上</strong>是个不错的起点，就像把锁的链条加长加粗。</p>
+    </div>
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">混合是关键</h3>
+      <p>把<strong>大写字母、小写字母、数字、特殊符号</strong>（如!@#$）混合使用，能让密码的复杂度大大提升。</p>
+    </div>
+  </div>
+  <p class="mb-6">避免使用有规律的单词或序列，比如“Abc123!@#”虽然混合了多种字符，但规律太明显，安全性也会打折。</p>
 
-    <!-- 使用场景扩展 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-blue-600 text-xl font-medium">A</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
-          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-green-600 text-xl font-medium">B</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
-          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-purple-600 text-xl font-medium">C</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
-          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">如何轻松获得一个高安全密码？</h2>
+  <p class="mb-4">自己编一个又长又复杂的密码很难记住，这时候，你可以借助一些在线工具——<strong>密码生成器</strong>。它能帮你：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>一键生成</strong>：根据你设定的长度和字符类型，瞬间产生一个随机、无规律的密码。</li>
+    <li><strong>强度分析</strong>：生成后，工具会告诉你这个密码大概有多“强壮”。</li>
+    <li><strong>批量制作</strong>：一次可以生成好几个，方便你在不同场合使用。</li>
+  </ul>
+  <div class="bg-gray-100 p-5 rounded-lg mb-8">
+    <h3 class="font-bold text-gray-800 mb-3">使用密码生成器的小建议：</h3>
+    <p>1. <strong>设定长度</strong>：建议从16位左右开始尝试。</p>
+    <p>2. <strong>勾选字符类型</strong>：尽量把“大写字母、小写字母、数字、符号”全选上。</p>
+    <p>3. <strong>检查强度</strong>：生成后，看看工具给出的强度评分是不是“强”。</p>
+    <p>4. <strong>妥善保存</strong>：生成的密码一定要保存在安全的地方，比如可靠的密码管理器，而不是写在电脑的记事本里。</p>
+  </div>
 
-    <!-- 常见问题 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
-      
-      <div class="space-y-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
-          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
-          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
-          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">有了强密码，就万无一失了吗？</h2>
+  <p class="mb-4">强密码是坚固的“锁芯”，但门框也得结实。你还需要：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>开启双重验证</strong>：这是最重要的防线。就像除了密码锁，再加一个指纹或短信验证。</li>
+    <li><strong>不同网站用不同密码</strong>：避免“一把钥匙开所有门”，防止一个网站密码泄露，连累所有账号。</li>
+    <li><strong>定期更换</strong>：尤其是重要账号（如邮箱、银行），建议每半年或一年更换一次密码。</li>
+  </ul>
 
-    <!-- 结语 -->
-    <section class="mt-12 pt-8 border-t border-gray-200">
-      <div class="text-center">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
-        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
-          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
-        </p>
-        <p class="text-gray-600">
-          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
-        </p>
+  <div class="mt-12 pt-8 border-t border-gray-200">
+    <h3 class="text-xl font-bold text-gray-800 mb-4">关于密码，你可能还想知道：</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium text-gray-800">问：密码太长太难记怎么办？</p>
+        <p class="text-gray-600 mt-1">答：可以使用“密码管理器”来帮你记忆和自动填写。你只需要记住一个主密码即可。</p>
       </div>
-    </section>
-  </article>
+      <div>
+        <p class="font-medium text-gray-800">问：用家人名字+生日做密码安全吗？</p>
+        <p class="text-gray-600 mt-1">答：不安全。这类个人信息在社交媒体上很容易被找到，是黑客首先尝试的组合。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-800">问：所有的密码都需要很强吗？</p>
+        <p class="text-gray-600 mt-1">答：可以分级处理。重要的核心账号（支付、邮箱）必须用最高强度的密码和双重验证。一些不重要的临时账号，可以使用稍简单但依然不重复的密码。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-300">
+    <p class="text-center font-medium text-gray-800">总结一下，守护你的数字资产，从一个真正的强密码开始。别再使用那些“透明锁”了，现在就动手，为你最重要的账号换上一把“破门锤”也打不开的“防盗锁”吧。</p>
+  </div>
 </div>
-`;export{e as default};
+`;export{t as default};

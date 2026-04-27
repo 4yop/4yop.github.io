@@ -1,144 +1,97 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
-  <article>
-    <!-- 文章标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">生辰八字是什么？普通人也能看懂的八字入门指南</h1>
-    <p class="text-gray-600 text-lg mb-8 text-center md:text-left">了解自己与生俱来的“生命密码”</p>
+<article class="max-w-3xl mx-auto p-4 md:p-6 bg-white rounded-lg shadow-sm text-gray-800">
+  <header class="mb-8 pb-6 border-b border-gray-200">
+    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">链接分享总出错？这个小工具帮你把复杂信息“装”进网址里</h1>
+    <p class="text-gray-600">你有没有遇到过，想和别人分享一个带有很多选项的网页，结果对方打开的却是一片空白？今天，我们就来聊聊这个常常被忽视，却又实实在在影响效率的小麻烦。</p>
+  </header>
 
-    <!-- 引语 -->
-    <div class="bg-blue-50 border-l-4 border-blue-500 italic p-6 mb-8 rounded-r-lg">
-      <p class="text-gray-700">“一命二运三风水”，这句老话很多人都听过。其中的“命”，常被认为与“生辰八字”息息相关。它到底是什么？和我们现代人的生活又有什么关系呢？</p>
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">你很可能遇到过这些情况</h2>
+    <div class="space-y-4">
+      <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+        <p class="font-medium mb-1">场景一：分享商品筛选结果</p>
+        <p class="text-gray-700">你在购物网站筛选了“价格500-1000元”、“红色”、“包邮”的商品，想把结果页分享给朋友。你复制了浏览器顶部的长链接发过去，可朋友点开一看，怎么筛选条件全没了，显示的是所有商品？</p>
+      </div>
+      <div class="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+        <p class="font-medium mb-1">场景二：填写好的表单或问卷</p>
+        <p class="text-gray-700">你费劲填完了一个长长的在线申请表，里面有个人信息、多个选项和勾选内容。临时有事关闭了网页，再想打开时，之前填好的内容全都不见了，一切都要重头再来，是不是很崩溃？</p>
+      </div>
     </div>
+    <p class="mt-4 text-gray-700">这些问题，其实都和一个叫做“<strong>网址里的查询信息</strong>”有关。它能把你选择的所有条件，“打包”进一个链接里，让分享和保存变得无比简单。</p>
+  </section>
 
-    <!-- 第一部分：八字是什么 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">生辰八字到底是什么？</h2>
-      <p class="mb-4 leading-relaxed">你可以把<strong>生辰八字</strong>理解为一个古老的生命“时间戳”。它记录了你出生的具体时间——精确到“时辰”，并将其转换成一套由天干和地支组成的特殊符号系统。这套系统，也叫“四柱八字”。</p>
-      <p class="mb-4 leading-relaxed">简单来说，“八字”就是八个字。它不像星座，只用一个月份来定义你。它认为，出生的年、月、日、时，这四个时间单位共同构成了一个人独特的先天特质，就像一份专属的“出生说明书”。</p>
-      <div class="bg-gray-50 p-5 rounded-lg my-6">
-        <h3 class="font-medium text-gray-800 mb-2">举个例子：</h3>
-        <p class="text-gray-700">假设某人出生于公历1990年5月15日上午10点。通过传统历法转换和计算，他的八字可能排出来是“庚午、辛巳、庚辰、辛巳”。这四组词，就是他的年柱、月柱、日柱和时柱。</p>
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">像“快递单”和“地址标签”的关系</h2>
+    <p class="mb-4 text-gray-700">想象一下，你要寄一个快递。</p>
+    <div class="flex flex-col md:flex-row items-center mb-6 gap-6">
+      <div class="flex-1 p-5 border border-gray-300 rounded-lg bg-gray-50">
+        <p class="font-medium mb-2 text-center">详细的快递单</p>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>收件人：张三</li>
+          <li>电话：138xxxx1234</li>
+          <li>物品：书籍(3本)、衣服(2件)</li>
+          <li>备注：易碎品，轻拿轻放</li>
+        </ul>
+        <p class="text-xs text-gray-500 mt-3 text-center">（包含所有详细信息，但内容多，体积大）</p>
       </div>
-    </section>
-
-    <!-- 第二部分：八字的构成 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">八字里的“四柱”是什么意思？</h2>
-      <p class="mb-6 leading-relaxed">八字之所以叫“四柱八字”，是因为它由四根“柱子”组成，每柱两个字，一共八个字。</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h4 class="font-bold text-lg text-blue-700 mb-2">年柱</h4>
-          <p class="text-gray-700">代表出生的年份。它常常被看作是与祖先、家庭背景、早年运势相关的信息。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h4 class="font-bold text-lg text-green-700 mb-2">月柱</h4>
-          <p class="text-gray-700">代表出生的月份。这根柱子通常关联着一个人的性格特点、天赋才能，以及兄弟姐妹等信息。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h4 class="font-bold text-lg text-yellow-700 mb-2">日柱</h4>
-          <p class="text-gray-700">这是八字的“核心”。日柱的天干代表“自己”（日主），是分析一个人特质和婚姻状况的关键。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h4 class="font-bold text-lg text-red-700 mb-2">时柱</h4>
-          <p class="text-gray-700">代表出生的时辰。它更多地与一个人的晚年运势、子女情况，以及事业发展的最终归宿有关。</p>
-        </div>
+      <div class="text-2xl text-gray-400">→</div>
+      <div class="flex-1 p-5 border border-blue-200 rounded-lg bg-blue-50">
+        <p class="font-medium mb-2 text-center">贴在箱子上的小标签</p>
+        <p class="text-sm text-gray-800 font-mono break-all">name=张三&phone=138xxxx1234&items=书籍,衣服&note=易碎</p>
+        <p class="text-xs text-gray-500 mt-3 text-center">（提取关键信息，压缩成简洁的格式，方便传递）</p>
       </div>
-      <p class="text-gray-600 text-sm">可以看到，八字提供了一个从宏观（年）到微观（时）的视角，来观察一个人的生命轨迹。</p>
-    </section>
-
-    <!-- 第三部分：五行 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">八字和“金木水火土”有什么关系？</h2>
-      <p class="mb-4 leading-relaxed">这就要说到<strong>五行</strong>了。八字里的每一个字，都可以归入“金、木、水、火、土”这五种基本元素中的一种。</p>
-      <p class="mb-6 leading-relaxed">五行学说认为，世间万物都由这五种元素构成，它们之间存在着“相生”（促进）和“相克”（抑制）的关系。分析八字，很重要的一步就是看一个人八字中这五种元素的强弱和平衡状况。</p>
-
-      <div class="overflow-x-auto mb-6">
-        <table class="w-full text-left border-collapse">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="border p-3 font-medium">五行</th>
-              <th class="border p-3 font-medium">可以代表的方向</th>
-              <th class="border p-3 font-medium">一种性格倾向（举例）</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-50">
-              <td class="border p-3 font-medium">金</td>
-              <td class="border p-3">义气、规则、决断</td>
-              <td class="border p-3">讲义气，做事有原则，但有时可能显得固执。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="border p-3 font-medium">木</td>
-              <td class="border p-3">成长、仁爱、开拓</td>
-              <td class="border p-3">有同情心，积极向上，喜欢尝试新事物。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="border p-3 font-medium">水</td>
-              <td class="border p-3">智慧、变通、流动</td>
-              <td class="border p-3">聪明，适应力强，但想法可能变化较多。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="border p-3 font-medium">火</td>
-              <td class="border p-3">礼仪、热情、表现</td>
-              <td class="border p-3">待人热情，注重礼节，精力充沛。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="border p-3 font-medium">土</td>
-              <td class="border p-3">诚信、包容、稳定</td>
-              <td class="border p-3">为人可靠，有耐心，做事脚踏实地。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="text-gray-700">所以，当你看到“八字五行”的分析时，它就是在告诉你，你先天能量中哪种特质比较突出，哪种可能稍弱，这就像一份先天的“性格与潜能分析报告”。</p>
-    </section>
-
-    <!-- 第四部分：有什么用 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">了解自己的八字，有什么用？</h2>
-      <p class="mb-6 leading-relaxed">对于现代人来说，了解八字更像是一种自我探索和文化认知。它可以提供一个认识自己的有趣视角，但绝不等同于“算命”。</p>
-
-      <ul class="list-disc pl-6 space-y-3 mb-6 text-gray-700">
-        <li><strong>自我认知的镜子：</strong>通过五行分析，你可能会发现一些描述与你的性格特点有吻合之处，这能帮助你从另一个角度理解自己的长处和短处。</li>
-        <li><strong>决策时的参考：</strong>比如，知道自己可能在某些年份会面临较大压力或较多变动，可以提前做好心理建设，更沉稳地应对。</li>
-        <li><strong>传统文化的接触：</strong>八字是中华传统文化的一部分，了解它也是了解古人的时间观、生命观和哲学思想。</li>
-        <li><strong>择吉的文化习俗：</strong>在一些传统习俗，如选择结婚、开业等日子的“择吉”中，八字是其中一个参考因素。</li>
-      </ul>
-
-      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-5">
-        <p class="font-medium text-gray-800 mb-2">重要提醒：</p>
-        <p class="text-gray-700">八字所揭示的是一种“趋势”和“可能性”，而非绝对的“命运”。人生的走向，永远掌握在自己的选择和努力中。任何分析都应仅作参考，切勿迷信，更不应以此作为人生重大决策的唯一依据。</p>
-      </div>
-    </section>
-
-    <!-- 第五部分：如何知道自己的八字 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何知道自己的生辰八字？</h2>
-      <p class="mb-4 leading-relaxed">在过去，排八字需要专业人士查阅万年历，并进行复杂的计算，门槛很高。而现在，借助一些设计良好的在线工具，普通人也能轻松获取自己的八字信息。</p>
-      <p class="mb-6 leading-relaxed">一般来说，你需要准备以下信息：</p>
-
-      <ol class="list-decimal pl-6 space-y-3 mb-8 text-gray-700">
-        <li><strong>准确的出生日期：</strong>包括公历的年、月、日。有些工具也支持输入农历生日。</li>
-        <li><strong>出生时辰：</strong>这是非常关键的一环。时辰不准，时柱就会错，整个分析也会失准。如果不确定具体时辰，有些工具会提供“未知”选项。</li>
-        <li><strong>性别：</strong>在八字的一些后续推演中（如排大运），男女的算法是相反的，所以性别信息也是必要的。</li>
-      </ol>
-
-      <p class="leading-relaxed">把这些信息输入到工具中，点击计算，你就能看到自己的“四柱八字”和对应的“五行属性”了。一个好的工具会把这些复杂的符号清晰地展示出来，并附上一些基础的解读，让你能一目了然。</p>
-    </section>
-
-    <!-- 结尾总结 -->
-    <section class="mt-12 pt-8 border-t">
-      <h2 class="text-2xl font-semibold mb-4 text-center">写在最后</h2>
-      <p class="text-center text-gray-700 mb-4 leading-relaxed">生辰八字，是古人观察天地、理解生命的一种智慧和尝试。它就像一颗种子自带的基因序列，描述了它可能长成的样子。但最终这棵树能长多高、开什么花、结什么果，还取决于后天的阳光、雨水和园丁的照料。</p>
-      <p class="text-center text-gray-700 leading-relaxed">抱着了解传统文化、探索自我的心态去看待它，或许能为你打开一扇认识自己的新窗户。但请记住，最精彩的“运”，永远是你用双手创造的人生。</p>
-    </section>
-
-    <!-- 免责声明 -->
-    <div class="mt-10 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
-      <p>本文旨在介绍传统文化知识，所有内容仅供参考。</p>
-      <p class="mt-1">不构成任何人生建议或决策依据。</p>
     </div>
-  </article>
-</div>
+    <p class="text-gray-700">我们工具做的事，就是把左边那份详细的“快递单”（结构化的数据），转换成右边那种能贴在“快递箱”（网址）上的简洁“小标签”（查询字符串）。反过来，也能把“小标签”还原成清晰易读的“快递单”。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">这能给你带来什么方便？</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">1</div>
+        <div>
+          <p class="font-medium text-gray-900">省时省力，一键分享完整状态</p>
+          <p class="text-gray-700">无论是复杂的搜索结果、包含多选项的表单，还是一个游戏进度，都能浓缩成一个链接。发给别人，对方看到的就是和你一模一样的页面状态，无需再次设置。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center mr-3 mt-1">2</div>
+        <div>
+          <p class="font-medium text-gray-900">准确无误，告别信息错漏</p>
+          <p class="text-gray-700">用文字或截图描述多个选项容易遗漏，而链接里的信息是精确的。保存为书签或稍后打开，内容也不会丢失。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 text-purple-800 flex items-center justify-center mr-3 mt-1">3</div>
+        <div>
+          <p class="font-medium text-gray-900">操作简单，无需专业知识</p>
+          <p class="text-gray-700">你只需要准备一份清晰的数据清单，剩下的转换工作交给工具就行。还能选择是否需要将中文字符进行安全编码，确保链接在任何地方都能正常打开。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">生活中的实际应用</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-5 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+        <h3 class="font-semibold mb-3 text-gray-900">给同事分享精准的调研数据</h3>
+        <p class="text-gray-700">小李在做市场调研，他筛选了“华东地区”、“25-35岁”、“月消费超过3000元”的用户数据图表。他使用工具生成一个链接发给团队，每个人点开都能立刻看到完全相同的分析视图，极大提升了沟通效率。</p>
+      </div>
+      <div class="p-5 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+        <h3 class="font-semibold mb-3 text-gray-900">保存未完成的在线申请</h3>
+        <p class="text-gray-700">小王在申请一项服务，填了半天的表格临时要出门。他利用工具，将已填好的部分（姓名、联系方式、选择的套餐等）生成一个专属链接保存下来。回来后点击这个链接，之前填写的内容自动恢复，可以直接继续，无需重填。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12 p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+    <p class="text-lg font-medium mb-3 text-gray-900">想要体验这种“把复杂信息装进链接”的便利吗？</p>
+    <p class="text-gray-700 mb-4">我们准备了一个简单易用的在线工具，你不需要理解背后的技术原理，只需要专注于你的数据和需求。</p>
+    <a href="#转换工具" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md transition-colors">
+      前往免费转换工具
+    </a>
+    <p class="text-sm text-gray-500 mt-4">试试看，你会发现分享和保存多选项信息，原来可以如此简单。</p>
+  </section>
+</article>
 `;export{t as default};

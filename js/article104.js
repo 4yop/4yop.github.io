@@ -1,137 +1,88 @@
-const e=`
-<article class="bg-white text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-    <!-- 标题 -->
-    <header class="text-center mb-10 md:mb-16">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">还在为编号重复烦恼？试试这个在线工具</h1>
-      <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
-        网店订单号、会员编号、文件代码… 教你如何轻松生成“永不重复”的数字号码。
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">还在为拼图烦恼？教你一个把多张图片轻松合成一张的简单方法</h1>
+
+  <p class="text-lg text-gray-600 mb-8 text-center">
+    旅游照片、产品对比、朋友圈九宫格...不用下载软件，在线就能搞定。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+    <p class="mb-2"><strong>你是不是也遇到过这些情况？</strong></p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>旅游回来，想把几张风景照横着拼成一张长图，却不知道用什么工具。</li>
+      <li>做产品对比图，需要把好几个细节图整齐地排在一起，调来调去总对不齐。</li>
+      <li>想在社交媒体发一组照片，但又不想刷屏，希望能把它们合成一张。</li>
+      <li>用手机或电脑自带的软件操作步骤太麻烦，专门下载个软件又觉得不值。</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">拼图，其实比你想象的简单</h2>
+  <p class="mb-4">
+    别再把“图片拼接”想成是什么复杂的技术活了。它就像小朋友玩的拼图游戏，只不过我们是在电脑或手机上，把几张电子图片，按照你想要的方式组合成一张新的图片。
+  </p>
+  <p class="mb-4">
+    比如，你想把三天旅行的标志性照片，从左到右连成一条时间线，这就是<strong>横向拼接</strong>。你想把同一个景点的远景、中景、特写从上到下排列，这就是<strong>纵向拼接</strong>。
+  </p>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">一个在线工具就能解决的麻烦</h2>
+  <p class="mb-4">
+    现在，你不需要成为设计师，也不需要记住复杂的软件操作。一个好的在线图片拼接工具，就像一个智能的图片排版助手，你只需要告诉它你的想法，它就能帮你实现。
+  </p>
+
+  <div class="bg-gray-50 p-6 rounded-xl mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-gray-900">它能为你做什么？</h3>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <strong>操作极其简单</strong>：你只需要把电脑里或手机上的照片拖进去，或者点一下选择。就像把文件放进一个文件夹一样直观。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <strong>拼接方式灵活</strong>：想横着拼、竖着拼，还是排成几行几列的网格（比如经典的九宫格），都可以自由选择。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <strong>细节可以微调</strong>：图片之间要不要留白、留多大空、图片在格子里的对齐方式（靠上、居中、靠下），甚至背景颜色都可以随你心意调整。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <strong>无需等待，快速生成</strong>：调整好以后，点一下按钮，一张崭新的合成图就做好了。你可以直接下载保存到手机或电脑里。
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">这些时候，你特别需要它</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">制作旅行纪念长图</h4>
+      <p class="text-gray-700">
+        把一次旅行中不同地点的标志性照片，按行程顺序横向拼接起来，形成一张有故事感的“视觉游记”，分享起来更有格调，也方便打印留念。
       </p>
-    </header>
-
-    <!-- 痛点场景 -->
-    <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b">你遇到过这些麻烦吗？</h2>
-      <div class="space-y-4">
-        <p class="text-lg leading-relaxed">
-          小张开了一家网店，生意越来越好，但他发现一个头疼的问题：有时候两个不同的订单，系统竟然生成了同一个订单号，把发货信息都搞乱了。
-        </p>
-        <p class="text-lg leading-relaxed">
-          李老师的团队在整理几千份电子档案，他们手动给文件编号，没几天就发现号码编重了，哪些是新文件、哪些是旧版本，谁也分不清。
-        </p>
-        <p class="text-lg leading-relaxed">
-          还有很多人，在管理会员卡、产品序列号、或者任何需要唯一标识的东西时，都曾被“号码重复”这个问题困扰过。
-        </p>
-      </div>
-    </section>
-
-    <!-- 简单解释 -->
-    <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b">号码牌是怎么做到“永不重复”的？</h2>
-      <p class="text-lg leading-relaxed mb-6">
-        想象一下，有一个制定编号规则的超级智能机器，它能够确保在庞大的系统中，无论是今天、明天，还是在不同的电脑上生成的每一个号码，都是独一无二的。
+    </div>
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">社交媒体内容创作</h4>
+      <p class="text-gray-700">
+        想分享多张美食、宠物或穿搭照片？与其连发好几条，不如把它们优雅地拼成一张九宫格或对比图。信息更集中，版面也更美观，更容易获得关注。
       </p>
-      <div class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-        <h3 class="text-xl font-bold mb-4 text-blue-700">一个号码的“身份证”</h3>
-        <p class="mb-4">它生成的每个长号码，其实是由几个简单的部分组合而成：</p>
-        <ul class="space-y-3 pl-5 list-disc">
-          <li><strong>生成时刻的密码：</strong> 号码里包含了生成它的精确到毫秒的时间信息，时间永远向前，这构成了号码的主体。</li>
-          <li><strong>车间和工位号：</strong> 就好像一个大工厂里有不同的车间（数据中心），每个车间里又有不同的工位（机器），给每个工位一个编号，避免它们互相冲突。</li>
-          <li><strong>流水号：</strong> 如果在同一毫秒内，同一个工位需要生成多个号码，就给它一个简单的顺序号。</li>
-        </ul>
-        <p class="mt-6 text-gray-700">
-          把这几个信息巧妙地拼在一起，就得到了一个超长数字。这个方法的精妙之处在于，<strong>它不依赖任何中心化的记录本（比如数据库）来查重</strong>，而是靠这套规则本身就能保证唯一性。
-        </p>
-      </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- 好处列举 -->
-    <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-8 pb-2 border-b">这对你有什么好处？</h2>
-      <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-3 flex items-center">
-            <span class="w-8 h-8 bg-green-100 text-green-800 rounded-full flex items-center justify-center mr-3">1</span>
-            绝对唯一
-          </h3>
-          <p>你再也不用担心号码会重复。无论是你自己用，还是分给多个人、多台电脑同时使用，生成的号码都不会撞车。</p>
-        </div>
-        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-3 flex items-center">
-            <span class="w-8 h-8 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center mr-3">2</span>
-            自带顺序
-          </h3>
-          <p>新来的号码总是比旧号码大，整理起来特别方便。按号码排序，就等于按生成时间排序，找东西一目了然。</p>
-        </div>
-        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-3 flex items-center">
-            <span class="w-8 h-8 bg-purple-100 text-purple-800 rounded-full flex items-center justify-center mr-3">3</span>
-            速度快得惊人
-          </h3>
-          <p>生成号码几乎不花时间。一秒钟内就能准备好成千上万个号码，完全跟得上你的工作节奏。</p>
-        </div>
-        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
-          <h3 class="text-xl font-bold mb-3 flex items-center">
-            <span class="w-8 h-8 bg-orange-100 text-orange-800 rounded-full flex items-center justify-center mr-3">4</span>
-            简单好用
-          </h3>
-          <p>不需要复杂的设置或安装软件。就像使用一个在线的计算器，输入简单参数，点一下按钮，号码就出来了。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 应用场景 -->
-    <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b">它能在哪里帮到你？</h2>
-      <div class="space-y-8">
-        <div class="flex flex-col md:flex-row gap-6 items-start">
-          <div class="md:w-1/3">
-            <div class="bg-indigo-50 text-indigo-800 p-4 rounded-lg text-center font-bold">
-              场景一：网店订单管理
-            </div>
-          </div>
-          <div class="md:w-2/3">
-            <p class="text-lg leading-relaxed">
-              给你的每一个订单分配一个独一无二的号码。顾客查询、客服跟进、仓库发货，都凭这个号码来识别。即使你的网站同时涌进大量订单，也绝不会出现两个订单共用一个号码的混乱情况。
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row gap-6 items-start">
-          <div class="md:w-1/3">
-            <div class="bg-teal-50 text-teal-800 p-4 rounded-lg text-center font-bold">
-              场景二：团队文件管理
-            </div>
-          </div>
-          <div class="md:w-2/3">
-            <p class="text-lg leading-relaxed">
-              团队协作时，每个人都在往共享文件夹里上传文件。用这个工具生成一个长号码作为文件名的前缀，比如“<span class="font-mono text-sm bg-gray-100 px-1">1641234567890123456_季度报告.pdf</span>”。这样，不管谁上传、什么时候上传，所有文件都能自动按时间排好序，且文件名绝不会重复，历史版本清晰可查。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 行动号召 -->
-    <section class="text-center py-10 border-t border-gray-200 mt-12">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6">想亲自体验一下吗？</h2>
-      <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-        我们有一个在线的“唯一号码生成器”工具，操作非常简单。你只需要指定一下“工位”编号（比如1号电脑用1，2号电脑用2），然后选择需要多少个号码，点击生成即可。
-      </p>
-      <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 md:p-8 max-w-2xl mx-auto">
-        <p class="mb-6 text-lg">
-          这个工具完全免费，在手机和电脑上都能用。你可以立刻生成一批号码，复制下来用在你的Excel表格、文档命名或者任何需要唯一标识的地方。
-        </p>
-        <div class="text-lg font-medium text-gray-800">
-          试试看，让“编号重复”成为过去式。
-        </div>
-      </div>
-    </section>
-
-    <!-- 隐含的关键词和FAQ -->
-    <footer class="mt-12 pt-8 border-t border-gray-300 text-sm text-gray-600">
-      <p class="mb-2">这篇文章可能也回答了这些问题：怎么给大量文件生成不重复的编号？分布式ID生成器是什么原理？有什么好用的在线订单号生成工具？如何避免手动编号重复？</p>
-      <p>希望这个关于生成唯一号码的解释，能帮你解决实际工作和生活中的小麻烦。</p>
-    </footer>
+  <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl border text-center mt-14">
+    <h3 class="text-2xl font-bold mb-3">告别拼图繁琐，试试更聪明的办法</h3>
+    <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
+      一个顺手的小工具，能省去你大量查找软件、学习操作的时间。无论是为了工作展示，还是生活分享，把几张图片完美地合成一张，都可以变得非常简单。
+    </p>
+    <p class="font-medium">
+      如果你正好需要处理图片，不妨去了解一下这种在线拼接图片的便捷方式。
+    </p>
   </div>
 </article>
-`;export{e as default};
+`;export{t as default};

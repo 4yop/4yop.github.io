@@ -961,5 +961,50 @@
     "features": "全球首个AI原生电商操作系统；三大AI Agent智能产品矩阵：建站智能体Shoplazza AI、视觉创作智能体LazzaStudio（匠影实验室）、广告投放智能体AdValet；实现\"需求输入—智能生成—自动执行—持续优化\"闭环自动化；将传统数周建站工作压缩至分钟级；还将推出智能运营智能体Agent Athena覆盖全场景运营",
     "website": "https://www.shoplazza.cn/",
     "id": 147
+  },
+  {
+    "name": "SentiCat",
+    "developer": "思维光谱（SentiPulse）",
+    "releaseTime": "2026.04.23",
+    "deployment": "Windows桌面客户端，公测阶段，需官网申请体验资格",
+    "features": "定位「任务执行+情感陪伴」双能力AI助手；由数字伙伴SUSU负责情感陪伴、AI小猫SentiCat负责任务执行；目前仅支持Windows系统电脑端；尝试在任务执行能力之上叠加长期交互与情感陪伴，重新定义人机关系",
+    "website": "https://senticat.ai/",
+    "id": 148
+  },
+  {
+    "name": "Agent Buddy",
+    "developer": "广州途道信息科技有限公司",
+    "releaseTime": "2026.04.21",
+    "deployment": "企业级SaaS平台，支持轻量化公有云订阅与定制化私有化部署双模式",
+    "features": "以Agent Computer为核心范式的全流程办公智能体；突破传统AI办公工具「对话式辅助」局限；可执行、可协同、可落地，替代人工完成跨系统数据对接、全流程任务执行、多场景业务协同；从「帮你写」到「帮你做」的能力跨越，成为企业专属数字员工",
+    "website": "https://news.ikanchai.com/2026/0424/655617.shtml",
+    "id": 149
+  },
+  {
+    "name": "MiniMax Agent（桌面端）",
+    "developer": "MiniMax（上海稀宇科技）",
+    "releaseTime": "2026年初上线，2026.04.14重大更新",
+    "deployment": "桌面客户端（Windows/macOS），支持Computer Use和Pocket功能",
+    "features": "国产AI桌面助手，作为Claude Cowork/OpenClaw等海外Computer Use类工具国内替代品；2026年4月上线Pocket功能（Beta版），支持接入飞书/微信/企业微信/Slack等IM；Computer Use功能可让Agent像人一样看屏幕、操作鼠标键盘；搭载MiniMax M2.7多模态大模型；支持多步规划与多子任务执行",
+    "website": "https://agent.minimaxi.com/",
+    "id": 150
+  },
+  {
+    "name": "Work Claw（一键养虾）",
+    "developer": "微盟集团",
+    "releaseTime": "2026.04",
+    "deployment": "云端SaaS平台，面向泛办公人群",
+    "features": "微盟发布的面向泛办公人群的智能体产品；营销、运营等办公核心场景更贴合个人和企业实际办公需求；基于Agent+Skills架构，从Workflow转向Skill调度；结合自研WAI智能大脑与龙虾生态Skills互补；中国SaaS行业首个垂直领域AI Skill Weimob Admin Skills已上线",
+    "website": "https://www.weimob.com/",
+    "id": 151
+  },
+  {
+    "name": "灵境云 EdgeAIStation",
+    "developer": "云工场科技",
+    "releaseTime": "2026.04",
+    "deployment": "企业级边缘云平台，支持云主机/容器/裸金属等多种交付形态，分钟级部署",
+    "features": "企业级OpenClaw云端部署方案，2026年企业级OpenClaw云服务商排名TOP1；预置优化OpenClaw镜像与环境，分钟级上线开箱即用；支持GPU资源与高性能算力支撑；兼容主流开源模型（Qwen/DeepSeek等）；帮助用户以更低成本更高效率使用算力资源；连续四年入选中国边缘计算企业20强",
+    "website": "https://docs.ljyun.cn/",
+    "id": 152
   }
 ]

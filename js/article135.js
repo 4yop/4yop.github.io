@@ -1,96 +1,197 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">几点睡觉最合适？一个简单方法帮你算出最佳入睡时间</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">每天早上闹钟响起时，你是不是也常常感到疲惫不堪？其实，问题可能不在于你睡了多久，而在于你什么时候入睡。今天，我们来聊聊一个简单却很实用的问题：根据你的起床时间，几点睡觉最合适？</p>
-  </header>
+const t=`
+<div class="bg-white text-gray-800 font-sans leading-relaxed">
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- 文章标题 -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
+      拼手气红包模拟器：揭秘微信群红包的"手气"奥秘
+    </h2>
+    <p class="text-center text-gray-600 mb-10 text-lg">
+      想知道你总是抢到最小红包，是手气问题还是规则使然？试试这个有趣的工具。
+    </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 为什么"几点睡"比"睡多久"更重要？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">很多人觉得，只要睡够8小时，几点睡都一样。但事实并非如此。我们的身体有一个内在的"生物钟"，它喜欢规律，也喜欢在特定的时间段休息。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-teal-600 my-5">
-      <p class="text-gray-700"><strong>打个比方：</strong>想象你的身体是一家工厂，晚上10点到凌晨2点是"深度维修"时间。如果你总是在这个时间段还醒着，工厂的维修工作就会被打乱，久而久之，身体就会出现各种小毛病——白天犯困、注意力不集中、皮肤变差、抵抗力下降。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">所以，与其纠结睡了几个小时，不如先搞清楚：我该什么时候上床？</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 不同年龄的人，需要睡多久？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">国家卫生健康委员会的睡眠健康指南告诉我们，不同年龄段的人，对睡眠的需求是不一样的：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">成年人（18-64岁）：</strong>每天需要7-8小时睡眠。这是大多数打工人的标准配置。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">中小学生：</strong>每天需要8-10小时睡眠。孩子正在长身体，睡眠对他们的发育和学习都非常重要。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">老年人（65岁以上）：</strong>每天需要6-7小时睡眠。随着年龄增长，睡眠时间会自然减少，但质量更重要。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">知道了需要睡多久，再结合你每天必须起床的时间，就能倒推出你应该什么时候入睡了。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 一个简单的计算方法</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">假设你每天早上7点半必须起床，成年人需要睡8小时。那么，倒推回去，你应该在晚上11点半左右入睡。</p>
-    <p class="mb-4 text-gray-700 leading-relaxed">但这里有个小细节：<strong>入睡不等于上床</strong>。从躺下到真正睡着，大多数人需要15-30分钟。所以，如果你11点半要入睡，最好11点就上床躺好。</p>
-    <div class="bg-teal-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong></p>
-      <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-700">
-        <li>起床时间：早上7:30</li>
-        <li>需要睡眠：8小时</li>
-        <li>最佳入睡时间：晚上11:30</li>
-        <li>建议上床时间：晚上11:15（预留15分钟准备）</li>
+    <!-- 引入部分 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+      <p class="mb-3">
+        逢年过节，或是朋友庆祝，微信群里发一个"拼手气红包"总能瞬间活跃气氛。看着大家抢到的金额各不相同，有人欢呼"手气最佳"，有人调侃"一分也是爱"，你是不是也好奇过：
+      </p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>红包里的钱到底是怎么分的？</li>
+        <li>真的是完全随机，全凭运气吗？</li>
+        <li>发红包前，能不能先"排练"一下看看效果？</li>
       </ul>
+      <p class="mt-3">
+        今天介绍一个好玩的小工具——"拼手气红包模拟器"，它能帮你把这些问题看得清清楚楚。
+      </p>
     </div>
-    <p class="text-gray-700 leading-relaxed">这样一算，是不是就很清楚了？</p>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 睡前准备也很重要</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">知道了上床时间，还要做好睡前准备，才能真正睡个好觉。以下是一些实用的小建议：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-blue-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前1小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">放下手机，远离电脑屏幕。蓝光会抑制褪黑素分泌，让你更难入睡。可以看看纸质书、听听轻音乐，或者泡个热水脚。</p>
+    <!-- 第一部分：这是什么？ -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b border-gray-200 text-gray-800">
+        一、什么是拼手气红包模拟器？
+      </h2>
+      <p class="mb-4">
+        简单来说，这是一个在线小工具，它的作用就是<strong>模仿微信"拼手气红包"的分配方式</strong>。
+      </p>
+      <p class="mb-4">
+        你只需要告诉它两个数字：<strong>总共要发多少钱</strong>，和<strong>一共分成多少个红包</strong>。点击一下按钮，它就能立刻模拟出发红包的过程，并把每个红包的金额清清楚楚地列出来给你看。
+      </p>
+      <div class="bg-gray-100 p-5 rounded-lg my-6">
+        <p class="font-medium mb-2">举个例子：</p>
+        <p>你想在10个人的群里发一个100元的红包。把这两个数字输入进去，一秒钟后，你就能看到模拟结果：</p>
+        <p class="mt-2 text-gray-700">张三可能抢到15.23元，李四抢到8.71元，王五抢到22.48元……直到10个红包分完，总额刚好是100元。</p>
       </div>
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前2-3小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">不要吃太饱，也不要喝太多水。晚餐后可以适当散步，但避免剧烈运动。咖啡和茶最好下午就不要喝了。</p>
-      </div>
-    </div>
-    <p class="text-gray-700 leading-relaxed">这些小习惯看似简单，但坚持下来，你会发现入睡变得更容易，睡眠质量也会明显提升。</p>
-  </section>
+      <p>
+        它就像一个"红包彩排导演"，让你在真实发送前，先预览一下红包分配的大致效果，完全透明，没有秘密。
+      </p>
+    </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：我每天睡够8小时，但还是觉得累，怎么回事？</p>
-        <p class="text-gray-700 text-sm">A：可能是睡眠质量不高，或者入睡时间不规律。建议固定上床和起床时间，让身体形成规律。另外，睡前玩手机、熬夜后补觉等习惯都会影响睡眠质量。</p>
+    <!-- 第二部分：为什么大家爱玩拼手气红包？ -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b border-gray-200 text-gray-800">
+        二、拼手气红包的魅力在哪里？
+      </h2>
+      <p class="mb-4">
+        比起平均分配的"普通红包"，拼手气红包的乐趣就在于它的<strong>不确定性和惊喜感</strong>。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="p-5 border border-gray-300 rounded-lg">
+          <h3 class="font-bold text-lg mb-3 text-red-600">对于发红包的人：</h3>
+          <p>一份心意，多种惊喜。你设定好总额，系统来创造变量，让每个收到红包的人都有独特的体验，互动感和趣味性更强。</p>
+        </div>
+        <div class="p-5 border border-gray-300 rounded-lg">
+          <h3 class="font-bold text-lg mb-3 text-green-600">对于抢红包的人：</h3>
+          <p>"开盲盒"的快乐。点开红包前的那一秒，充满期待。金额大小成了朋友们之间善意的谈资，"手气最佳"更是能带来小小的成就感。</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：周末可以晚睡晚起吗？</p>
-        <p class="text-gray-700 text-sm">A：偶尔可以，但不要相差太大。如果平时11点睡，周末熬到凌晨2点，周一早上会非常痛苦。建议周末起床时间不要比平时晚超过1小时。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：入睡困难怎么办？</p>
-        <p class="text-gray-700 text-sm">A：如果躺下30分钟还睡不着，不要强迫自己。可以起来做点放松的事，比如看会儿书，等有困意了再躺下。长期入睡困难的话，建议咨询医生。</p>
-      </div>
-    </div>
-  </section>
+      <p>
+        而这个模拟器，正是让你站在"上帝视角"，观察这份惊喜是如何被制造出来的。
+      </p>
+    </section>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：好的睡眠，从规律开始</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">睡眠占了我们人生的三分之一，它影响着我们的精力、情绪、工作效率，甚至健康。而好的睡眠，其实不需要什么神奇的方法，只需要做到两点：<strong>规律</strong>和<strong>充足</strong>。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">今天开始，试着算算你的最佳入睡时间，然后坚持每天在那个时间上床。一周后，你会发现早上起床不再那么痛苦，白天的精神也会好很多。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">想知道你该几点睡？用上面的工具算一算，今晚就开始改变吧！</p>
-    </div>
-  </section>
-</article>
-`;export{s as default};
+    <!-- 第三部分：模拟器能做什么？（功能详解） -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b border-gray-200 text-gray-800">
+        三、这个模拟器怎么用？能看什么？
+      </h2>
+      <p class="mb-6">操作非常简单，就像填两个格子一样。但生成的结果，信息量却很丰富。</p>
+
+      <div class="space-y-10">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="md:w-1/3">
+            <div class="bg-gray-900 text-white p-4 rounded-lg font-mono text-center">
+              <div class="text-sm opacity-75 mb-1">第一步：设置</div>
+              <div class="text-xl">总金额 & 红包个数</div>
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h4 class="font-bold text-xl mb-3">1. 自由设置场景</h4>
+            <p class="mb-3">在工具里，你会看到两个清晰的输入框：</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>总金额</strong>：你想发的总钱数，比如66.66、200、888。有合理的上限，和现实情况类似。</li>
+              <li><strong>红包个数</strong>：你要把这份钱分成几份，也就是群里有多少个人抢。</li>
+            </ul>
+            <p class="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded">
+              小提示：<strong>总金额必须不少于（红包个数×1分钱）</strong>，因为每个红包最少要有0.01元，这是规则。
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="md:w-1/3">
+            <div class="bg-blue-900 text-white p-4 rounded-lg font-mono text-center">
+              <div class="text-sm opacity-75 mb-1">第二步：生成</div>
+              <div class="text-xl">点击"生成红包"</div>
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h4 class="font-bold text-xl mb-3">2. 一键模拟分配</h4>
+            <p>填好数字后，点击中间的<strong>"生成红包"按钮</strong>。一瞬间，系统就会按照类似于微信的规则，完成一次虚拟的"抢红包"过程，并把结果展示出来。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="md:w-1/3">
+            <div class="bg-green-800 text-white p-4 rounded-lg font-mono text-center">
+              <div class="text-sm opacity-75 mb-1">第三步：查看</div>
+              <div class="text-xl">详尽的分配报告</div>
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h4 class="font-bold text-xl mb-3">3. 读懂你的"红包报告"</h4>
+            <p class="mb-4">这是最有趣的部分！生成后，你会看到一份清晰的报告：</p>
+            <ul class="list-disc pl-5 space-y-3">
+              <li>
+                <strong>红包列表</strong>：每个红包是几号，具体分到了多少钱，一目了然。你会发现金额高低错落，很有真实感。
+              </li>
+              <li>
+                <strong>关键统计</strong>：
+                <ul class="list-circle pl-5 mt-2 space-y-1">
+                  <li><strong>手气最佳（最大金额）</strong>：这次模拟中，运气最好的人抢到了多少。</li>
+                  <li><strong>最小金额</strong>：那个需要安慰的"小伙伴"抢到了多少。</li>
+                  <li><strong>平均金额</strong>：总金额除以个数，这是一个参考值，但实际金额会围绕它上下波动。</li>
+                </ul>
+              </li>
+              <li>
+                <strong>总额校验</strong>：工具会帮你把分出去的钱再加起来，确保和你的总金额一分不差，非常可靠。
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="md:w-1/3">
+            <div class="bg-purple-800 text-white p-4 rounded-lg font-mono text-center">
+              <div class="text-sm opacity-75 mb-1">第四步：分享</div>
+              <div class="text-xl">复制结果</div>
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h4 class="font-bold text-xl mb-3">4. 分享或保存你的模拟结果</h4>
+            <p>如果觉得某次模拟的结果特别有意思——比如金额分布特别均匀，或者出现了超级大的"手气最佳"——你可以点击<strong>"复制结果"</strong>按钮。</p>
+            <p class="mt-3">工具会把整个模拟报告（包含所有金额和统计）变成一段文字，你可以轻松地粘贴到微信、QQ里分享给朋友，或者自己保存下来。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第四部分：常见问题解答 -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 pb-2 border-b border-gray-200 text-gray-800">
+        四、你可能想知道的问题
+      </h2>
+      <div class="space-y-8">
+        <div>
+          <h4 class="font-bold text-xl mb-2 text-gray-800">问：它模拟的和微信红包一样吗？</h4>
+          <p class="pl-4">核心的分配逻辑是高度相似的，都是随机分配，保证公平和趣味性，并且每个红包至少有一分钱。你可以把它看作是一个原理相同的"透明版"微信红包。</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl mb-2 text-gray-800">问：每次生成的结果都一样吗？</h4>
+          <p class="pl-4">当然不一样！这正是"拼手气"的精髓。即使总金额和红包个数不变，你多点击几次"生成红包"，每次出来的金额分布都会不同。你可以连着试几次，看看"手气最佳"的金额能差多少。</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl mb-2 text-gray-800">问：我可以用它来做什么？</h4>
+          <ul class="list-disc pl-10 space-y-2">
+            <li><strong>发红包前"预演"</strong>：看看你设定的金额，大概会分出一个什么样的范围，心里有个数。</li>
+            <li><strong>满足好奇心</strong>：终于能明白红包里的钱是怎么"变"出来的了。</li>
+            <li><strong>朋友间的小游戏</strong>：模拟一个巨額红包（比如2000元分100个），看看"手气王"能拿到多少，分享结果和朋友们一起乐一乐。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 结尾总结 -->
+    <section class="bg-gray-50 p-8 rounded-xl border border-gray-200 mt-12">
+      <h2 class="text-2xl font-bold mb-4 text-center text-gray-900">写在最后</h2>
+      <p class="text-center mb-4">
+        "拼手气红包模拟器"就像一个小巧的趣味实验室，它把微信群裡那份即时的、隐藏的快乐，拆解成我们可以观察和把玩的数字。
+      </p>
+      <p class="text-center">
+        无论是为了筹划一次完美的红包活动，还是单纯想探索一下随机分配的奥秘，它都是一个简单又直接的选择。下次发红包前，不妨先来模拟一下，或许能带来一点不一样的乐趣和安心。
+      </p>
+      <p class="text-center text-gray-600 mt-6 text-sm">
+        （本工具仅供模拟与娱乐参考，实际微信红包功能请以官方为准。）
+      </p>
+    </section>
+  </article>
+</div>
+`;export{t as default};

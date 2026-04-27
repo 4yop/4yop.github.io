@@ -1,96 +1,140 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">编码修复工具：一键解决文本乱码问题，让文字回归本真</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <!-- 主标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    不用安装软件，你的浏览器就是视频录制器和相机
+  </h1>
 
-  <div class="mb-8">
-    <p class="mb-4 text-base leading-relaxed">你是否遇到过这样的困扰：从网页复制下来的文字变成了一堆看不懂的符号，打开某个文件满屏都是"浣犲埌"之类的奇怪字符，或者从数据库导出的数据完全无法阅读？这些都是典型的编码问题导致的乱码现象。</p>
-    <p class="mb-4 text-base leading-relaxed">别担心，编码修复工具就是专门为解决这类问题而设计的。它能够自动检测文本的原始编码格式，并将其正确转换为目标编码，让你的文字恢复本来面目。整个过程在浏览器中完成，无需上传任何数据到服务器，既快捷又安全。</p>
+  <!-- 摘要/引言 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 mb-8 rounded-r">
+    <p class="text-gray-700 leading-relaxed">
+      想用电脑或手机的摄像头录一段视频、拍张照片，还得专门下载软件吗？其实不用那么麻烦。现在，只要你的设备有摄像头，打开一个网页就能轻松搞定录制和拍照。这就像打开手电筒一样简单。
+    </p>
   </div>
 
+  <!-- 主要功能介绍部分 -->
   <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">什么是文本编码？</h2>
-    <p class="mb-4 text-base leading-relaxed">文本编码是将字符转换为计算机可以存储和传输的字节序列的过程。不同的编码标准使用不同的方式来表示字符，常见的编码格式包括：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">UTF-8：</span>国际通用编码，支持所有Unicode字符，是网页和现代应用的标准编码</li>
-      <li><span class="font-medium">GBK：</span>中文编码标准，支持简体中文、繁体中文和日韩字符</li>
-      <li><span class="font-medium">GB2312：</span>早期中文编码标准，主要支持简体中文</li>
-      <li><span class="font-medium">ISO-8859-1：</span>拉丁字母编码，主要用于西欧语言</li>
-      <li><span class="font-medium">Big5：</span>繁体中文编码标准，主要在台湾、香港地区使用</li>
-    </ul>
-  </div>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
+      一个网页，多种用途
+    </h2>
+    <p class="text-gray-700 mb-6 leading-relaxed">
+      这个在线的录制工具就像一个放在浏览器里的多功能工作室，它能调用你设备上的摄像头和麦克风，完成视频和照片的创作。
+    </p>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么会出现乱码？</h2>
-    <p class="mb-4 text-base leading-relaxed">乱码通常由以下原因造成：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">编码不一致：</span>文件保存时使用的编码格式与打开时使用的编码格式不一致，这是最常见的原因</li>
-      <li><span class="font-medium">缺少编码声明：</span>网页或应用没有正确声明字符编码，导致浏览器猜测错误的编码</li>
-      <li><span class="font-medium">传输过程中丢失：</span>数据传输过程中编码信息丢失或被修改</li>
-      <li><span class="font-medium">系统差异：</span>不同操作系统之间的编码标准默认值不同</li>
-      <li><span class="font-medium">多重编码：</span>文本经过多次编码转换，导致累积性损坏</li>
-    </ul>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">如何使用编码修复工具？</h2>
-    <div class="space-y-4 text-base leading-relaxed">
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第一步：输入文本</p>
-        <p>在输入框中粘贴或输入出现乱码或编码问题的文本</p>
+    <!-- 功能卡片 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800">高清视频录制</h3>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          一键开始录制视频，还可以选择是否录入声音。录制时会有明显的红色提示，让你清楚地知道正在工作中。录好的视频会立即生成预览，方便查看。
+        </p>
       </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第二步：选择编码选项</p>
-        <p>可以选择源编码（或使用自动检测），选择目标编码（推荐使用UTF-8），并根据需要勾选"移除BOM标记"或"修复损坏字符"</p>
-      </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第三步：执行修复</p>
-        <p>点击"执行修复"按钮，工具会自动分析并转换编码</p>
-      </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第四步：获取结果</p>
-        <p>查看修复结果，可以复制或下载为文本文件</p>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800">实时拍照</h3>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          除了录像，随时可以按下拍照按钮，捕捉当前画面。拍下的照片会单独保存在一个相册列表里，可以一键下载保存到自己的设备上。
+        </p>
       </div>
     </div>
   </div>
 
+  <!-- 特色与设置 -->
   <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见使用场景</h2>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">网页乱码修复：</span>修复从网页复制或下载时出现的乱码问题</li>
-      <li><span class="font-medium">文件编码转换：</span>将GBK编码的文件转换为UTF-8，或反之</li>
-      <li><span class="font-medium">数据库数据修复：</span>修复数据库中因编码不一致导致的乱码数据</li>
-      <li><span class="font-medium">API数据处理：</span>处理不同编码格式的API响应数据</li>
-      <li><span class="font-medium">日志文件分析：</span>修复日志文件中因编码问题导致的乱码</li>
-      <li><span class="font-medium">邮件内容修复：</span>修复邮件中出现的编码错误</li>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
+      就像使用真正的相机一样灵活
+    </h2>
+    <p class="text-gray-700 mb-6 leading-relaxed">
+      为了让体验更好，这个工具还提供了一些实用的调节选项，让你能根据自己的需要来设置。
+    </p>
+    <ul class="list-disc pl-5 space-y-3 text-gray-700">
+      <li class="leading-relaxed">
+        <span class="font-medium">切换摄像头：</span>如果你有多个摄像头（比如笔记本电脑的前置和后置摄像头），可以在这里自由切换。
+      </li>
+      <li class="leading-relaxed">
+        <span class="font-medium">调节清晰度：</span>可以选择不同的画面分辨率，从高清的720p到超清的4K，根据你的网络和设备能力来选择。
+      </li>
+      <li class="leading-relaxed">
+        <span class="font-medium">管理你的作品：</span>所有录制好的视频和拍摄的照片都会在页面下方列出。你可以播放、下载，或者删除不需要的内容。
+      </li>
     </ul>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">UTF-8 和 GBK 有什么区别？</h3>
-        <p class="text-base leading-relaxed">UTF-8是国际通用编码，支持所有语言的字符，是互联网和现代软件的标准编码。每个字符可能占用1-4个字节。GBK是中文编码标准，主要支持中文字符，每个中文字符占用2个字节。建议：现代应用应优先使用UTF-8编码，以确保跨平台和跨语言的兼容性。</p>
+  <!-- 使用场景 -->
+  <div class="bg-gray-50 p-6 sm:p-8 rounded-xl mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-5">你会在什么情况下用到它？</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1">
+          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <p class="ml-3 text-gray-700 leading-relaxed">临时需要录一段工作说明或作业讲解发给别人。</p>
       </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">什么是 BOM 标记？需要移除吗？</h3>
-        <p class="text-base leading-relaxed">BOM（Byte Order Mark）是文件开头的特殊标记，用于标识文件的编码格式。某些编辑器会在UTF-8文件开头添加BOM标记（EF BB BF）。如果文件用于网页、接口或脚本，BOM更容易造成显示异常或解析错误，建议移除。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1">
+          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <p class="ml-3 text-gray-700 leading-relaxed">想拍一张证件照或产品照片，但觉得手机App操作复杂。</p>
       </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">如何判断文本是什么编码？</h3>
-        <p class="text-base leading-relaxed">可以通过以下方式判断：查看文件头部的BOM标记（UTF-8 BOM为EF BB BF）；观察乱码模式（如"浣犲埌"通常是UTF-8被当GBK读取）；使用本工具的自动检测功能进行智能识别。工具会尝试多种编码组合，并自动选择最可能正确的修复结果。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1">
+          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <p class="ml-3 text-gray-700 leading-relaxed">进行简单的直播测试，或者检查自己的摄像头和麦克风是否工作正常。</p>
       </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">修复后还是不对怎么办？</h3>
-        <p class="text-base leading-relaxed">如果源文本已经被错误编码多次，工具只能尽量还原最常见的情况。遇到多重乱码时，建议先保留原文，再分别尝试不同的源编码和目标编码组合进行比对。也可以开启"修复损坏字符"选项来进一步优化结果。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1">
+          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <p class="ml-3 text-gray-700 leading-relaxed">为家人录制一段祝福视频，或者记录下孩子的某个瞬间。</p>
       </div>
     </div>
   </div>
 
-  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
-    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
-    <p class="mb-3 text-base leading-relaxed">编码修复工具是一个实用的文本处理助手，它能帮你快速诊断和修复各种编码问题。无论是网页乱码、文件编码不匹配还是数据库导出数据的显示异常，都可以通过这个工具得到有效解决。</p>
-    <p class="text-base leading-relaxed">最重要的是，所有处理都在你的浏览器本地完成，不需要将任何敏感信息上传到远程服务器，确保了数据的安全性和隐私保护。下次遇到乱码问题，不妨试试这个工具，也许能省去很多手动排查的时间。</p>
+  <!-- 常见问题/温馨提示 -->
+  <div class="border border-yellow-200 bg-yellow-50 rounded-xl p-6 mb-8">
+    <h3 class="text-lg font-semibold text-yellow-800 mb-3 flex items-center">
+      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+      温馨提示
+    </h3>
+    <ul class="space-y-2 text-yellow-700 text-sm">
+      <li class="flex items-start">
+        <span class="mr-2">•</span>
+        <span>第一次使用时，你的浏览器会弹出窗口，请求使用摄像头和麦克风的权限，请点击“允许”。这是为了你的隐私安全。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="mr-2">•</span>
+        <span>所有的录制和拍照内容都只在你的浏览器本地处理，不会上传到任何服务器，可以放心使用。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="mr-2">•</span>
+        <span>在使用前，请确保摄像头和麦克风没有被其他软件（如微信、Zoom）占用，以免无法正常启动。</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 结语 -->
+  <div class="text-center pt-4 border-t border-gray-200">
+    <p class="text-gray-600 leading-relaxed">
+      技术的发展，让我们能用越来越简单的方式完成生活中的小事。以前需要复杂设备或专业软件才能做的事，现在一个网页就能轻松实现。无论是录制一段视频，还是拍摄一张照片，都可以变得更简单、更快捷。
+    </p>
   </div>
 </div>
-`;export{s as default};
+`;export{e as default};

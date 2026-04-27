@@ -1,103 +1,176 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-  <!-- 标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center leading-tight">
-    你的照片会“说话”？教你一键读取每张图片的隐藏故事
-  </h1>
+const e=`
+<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">PDF文件被锁住了怎么办？在线解密工具帮你快速移除密码限制</h1>
 
-  <!-- 引言/痛点 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
-    <p class="text-gray-700 text-lg">
-      有没有过这样的经历？翻看几年前的老照片，却怎么也想不起来<strong>这是在哪儿拍的</strong>。或者看到一张特别美的风景照，非常想知道对方是用什么相机、什么参数拍出来的。
-    </p>
-    <p class="text-gray-700 mt-2">
-      其实，答案就藏在照片本身里。每一张你用手机或相机拍摄的照片，都像一本隐秘的日记，自动记录了大量的幕后信息。只是，我们不知道如何去翻开它。
+  <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+    你有没有遇到过这种情况：急需打开一份PDF文件，却发现它被密码锁住了，或者只能看不能打印、不能编辑？别着急，这篇文章就为你介绍一款完全在浏览器本地运行的PDF解密工具，帮助你安全、快速地移除PDF密码限制。
+  </p>
+
+  <div class="border-l-4 border-green-500 bg-green-50 p-5 mb-8">
+    <p class="text-gray-700 italic">
+      "同事发来的重要资料打不开"、"自己设的密码忘了"、"网上下载的文献无法标注"……这些烦恼，用这款本地PDF解密工具就能轻松解决。
     </p>
   </div>
 
-  <!-- 第一部分：解释什么是EXIF（非技术化） -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">照片的“数字身份证”：你不知道的隐藏信息</h2>
-    <p class="text-gray-700 mb-4">
-      你可以把每一张数码照片想象成一件刚出厂的商品。商品有自己的标签，写着生产日期、厂家、型号等信息。照片也一样，它在被创建的那一刻，就自动生成了一份详细的“<strong>数字标签</strong>”，专业名称叫做<strong>EXIF信息</strong>。
-    </p>
-    <p class="text-gray-700 mb-4">
-      这份标签里都写了些什么呢？内容比你想象的要多得多：
-    </p>
-    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
-      <li><strong>时空密码</strong>：<span class="text-gray-600">精确的拍摄时间、甚至是被修改过的时间。</span></li>
-      <li><strong>地理足迹</strong>：<span class="text-gray-600">如果拍照时打开了定位，它会记录下<strong>精确的经纬度和海拔</strong>，帮你准确找回那个地点。</span></li>
-      <li><strong>设备名片</strong>：<span class="text-gray-600">用的是哪个牌子的手机或相机？哪个型号的镜头？照片的宽度和高度是多少？这里一目了然。</span></li>
-      <li><strong>摄影师日记</strong>：<span class="text-gray-600">拍摄时的光圈大小、快门速度、感光度（ISO）这些专业参数，也被忠实地记录了下来。这对于学习拍照特别有用。</span></li>
-    </ul>
-    <p class="text-gray-700">
-      这些信息原本是给相机和软件系统看的，普通用户在日常看图时根本察觉不到。但通过一些简单的方法，我们就能轻松“翻阅”这本照片日记。
-    </p>
-  </section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">PDF为什么会被"锁上"？</h2>
+  <p class="mb-4 leading-relaxed">
+    你可以把PDF文件想象成一间房子。房主（也就是文件创建者）为了保护里面的内容，可能会给房子加两把"锁"。
+  </p>
+  <ul class="space-y-3 mb-8 pl-5">
+    <li class="flex items-start">
+      <span class="text-green-500 mr-2">1.</span>
+      <span><strong>第一把锁：打开密码（用户密码）。</strong>就像大门钥匙，没有正确的密码，你连门都进不去，文件完全无法打开查看。</span>
+    </li>
+    <li class="flex items-start">
+      <span class="text-green-500 mr-2">2.</span>
+      <span><strong>第二把锁：权限限制（所有者密码）。</strong>进了门，但主人规定"不能拍照（打印）"、"不能移动家具（编辑）"、"不能复制物品上的文字"。这些就是权限限制。</span>
+    </li>
+  </ul>
+  <p class="text-gray-600 mb-10 leading-relaxed">
+    无论是忘了钥匙，还是想摆脱屋内的种种限制，你需要的都是一把合适的"工具"。而这款在线PDF解密工具，正是为此而生。
+  </p>
 
-  <!-- 第二部分：工具能做什么（将代码功能转化为好处） -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">如何轻松翻开照片的隐藏日记？</h2>
-    <p class="text-gray-700 mb-6">
-      现在有很多在线工具可以帮你瞬间解读照片的EXIF信息，整个过程就像把照片放进一个“阅读器”，等上几秒钟，所有的秘密就呈现在你面前了。通常，这类工具可以帮你做到以下几件事：
-    </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三步完成PDF解密：简单到不可思议</h2>
+  <p class="mb-6 leading-relaxed">
+    这款PDF解密工具的操作流程非常直观，整个过程都在你的浏览器中完成：
+  </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">1. 批量阅读，效率翻倍</h3>
-        <p class="text-gray-700">一次性上传多张照片，工具会同时解析出所有照片的信息，并以清晰的表格形式展示出来。你再也不用一张张照片去查找属性了。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">2. 一键定位，重回现场</h3>
-        <p class="text-gray-700">如果照片含有地理位置信息，工具不仅能显示出枯燥的经纬度数字，更能生成一个地图链接。点一下，你就能在地图上看到那个精确的拍摄点，瞬间勾起所有回忆。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">3. 导出存档，永久保存</h3>
-        <p class="text-gray-700">所有解析出来的信息，无论是拍摄时间、设备型号还是相机参数，都可以一键导出成Excel表格。方便你归档整理，或者作为学习摄影的参考数据。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium text-gray-800 mb-3">4. 整理照片，随心所欲</h3>
-        <p class="text-gray-700">在查看结果时，你可以随时删除单张或批量删除不需要的照片信息，让界面保持清爽，只聚焦在你关心的那些照片上。</p>
-      </div>
+  <div class="grid md:grid-cols-3 gap-6 mb-10">
+    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
+      <div class="text-3xl text-green-500 mb-3 font-bold">1</div>
+      <h3 class="font-medium mb-2 h-10 leading-[40px]">上传 PDF 文件</h3>
+      <p class="text-sm text-gray-600">点击选择或直接拖拽加密的PDF文件到上传区域，支持单个文件处理。</p>
     </div>
-  </section>
+    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
+      <div class="text-3xl text-green-500 mb-3 font-bold">2</div>
+      <h3 class="font-medium mb-2 h-10 leading-[40px]">输入解密密码</h3>
+      <p class="text-sm text-gray-600">输入PDF的正确密码。如果只有权限限制没有打开密码，可以先留空尝试。</p>
+    </div>
+    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
+      <div class="text-3xl text-green-500 mb-3 font-bold">3</div>
+      <h3 class="font-medium mb-2 h-10 leading-[40px]">下载解密结果</h3>
+      <p class="text-sm text-gray-600">点击下载按钮，获取已移除所有密码和权限限制的新PDF文件。</p>
+    </div>
+  </div>
 
-  <!-- 第三部分：应用场景 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">这些时候，你特别需要它</h2>
+  <h3 class="text-xl font-semibold mt-8 mb-4 text-green-700">为什么选择这款工具？三大核心优势</h3>
+  <ul class="space-y-4 mb-10">
+    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
+      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+      <div>
+        <strong class="block mb-1">文件从未离开你的设备</strong>
+        <p class="text-sm text-gray-600">所有处理过程都在你设备的浏览器里瞬间完成，就像在你自己家里整理文件一样，无需上传到任何陌生网站，彻底保护你的隐私和数据安全。</p>
+      </div>
+    </li>
+    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
+      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+      <div>
+        <strong class="block mb-1">支持两种密码类型</strong>
+        <p class="text-sm text-gray-600">同时支持用户密码（打开密码）和所有者密码（权限密码），能够移除包括打印限制、修改限制、复制限制在内的各类权限保护。</p>
+      </div>
+    </li>
+    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
+      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+      <div>
+        <strong class="block mb-1">完全免费且无需注册</strong>
+        <p class="text-sm text-gray-600">不需要安装任何软件或插件，不需要注册账号，打开浏览器就能使用。无论是在电脑上还是在手机上，随时随地都能操作。</p>
+      </div>
+    </li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">哪些场景下需要用到它？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <div class="p-5 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-3 text-gray-800">职场办公场景</h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        收到客户或同事发来的加密合同、报价单，急需查看或打印；公司内部受限制的资料，需要复制部分内容用于报告编写；投标材料复核前需要解除限制以便查阅。
+      </p>
+    </div>
+    <div class="p-5 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-3 text-gray-800">学习研究场景</h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        从学术数据库下载的加密PDF论文无法做笔记和高亮标注；自己多年前加密保存的学习资料，如今密码想不起来了；历史档案和归档文件需要重新查看或编辑。
+      </p>
+    </div>
+    <div class="p-5 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-3 text-gray-800">财务票据场景</h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        发票、报销文件和财务资料带有密码保护，需要再次整理归档；银行流水和账单类PDF文件有权限限制无法复制数据。
+      </p>
+    </div>
+    <div class="p-5 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-3 text-gray-800">内部协作场景</h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        内部共享文件在二次处理前需要移除打开限制；跨部门流转的文档需要去除密码以便后续编辑和分发。
+      </p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">关于密码你需要知道的几件事</h2>
+  <div class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200 mt-4 mb-12">
     <div class="space-y-6">
       <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">场景一：旅行回忆整理者</h3>
-        <p class="text-gray-700 pl-4 border-l-4 border-green-500 py-1">
-          “几年前去的那个小镇太美了，可具体位置叫什么来着？” 上传当时的照片，直接获取经纬度并在地图上定位，轻松找回那个让你流连忘返的角落。你还可以按拍摄时间顺序导出所有照片信息，制作一份独一无二的数字旅行手账。
-        </p>
+        <h4 class="font-medium mb-2 text-gray-800">问：用户密码和所有者密码有什么区别？</h4>
+        <p class="text-gray-600 text-sm pl-4">答：用户密码也叫打开密码，是打开文件时必须输入的密码。所有者密码也叫权限密码，用于控制文件的权限设置（如是否允许打印、复制等）。大多数情况下，知道其中任意一个密码都可以尝试进行解密操作。</p>
       </div>
       <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">场景二：摄影爱好者或学习者</h3>
-        <p class="text-gray-700 pl-4 border-l-4 border-amber-500 py-1">
-          “朋友这张星空拍得真清晰，他怎么设置的？” 如果你得到了原图，上传后就能看到完整的光圈、快门、ISO和镜头型号。这对于学习摄影参数、模仿优秀作品的拍摄手法非常有帮助。你也可以分析自己不同照片的参数，总结出最佳拍摄设置。
-        </p>
+        <h4 class="font-medium mb-2 text-gray-800">问：如果我不知道密码怎么办？</h4>
+        <p class="text-gray-600 text-sm pl-4">答：很遗憾，如果文件设置了打开密码而你不知道密码，任何工具都无法帮助你打开它。这和忘记了自家保险柜密码是一样的道理。本工具的作用是在你知道密码的前提下，帮你移除后续的各种使用限制。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-800">问：如果文件只有权限限制没有打开密码呢？</h4>
+        <p class="text-gray-600 text-sm pl-4">答：这种情况下你可以先不输入密码，直接点击"开始解密"按钮尝试。如果文件确实只有权限限制而没有打开密码，工具可以直接移除这些限制并生成新文件。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-800">问：解密后的文件会损坏吗？原文件会变吗？</h4>
+        <p class="text-gray-600 text-sm pl-4">答：不会。工具会生成一个全新的、内容完整但去除了所有密码和限制的PDF文件。原始加密文件依然完好无损地保留在你的设备上，不会被修改或删除。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-800">问：这个工具安全吗？我的文件会被上传吗？</h4>
+        <p class="text-gray-600 text-sm pl-4">答：非常安全。整个解密过程就像在你自己的书房里用剪刀和胶水处理一份纸质文件，文件从未离开你的设备，不会被任何网络服务器看到或保存。密码也仅在当前浏览器会话中使用，不会被发送或记录。</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- 第四部分：注意事项与结尾 -->
-  <section class="bg-gray-50 p-6 rounded-lg">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">使用前的小提示</h2>
-    <ul class="text-gray-700 space-y-3">
-      <li><strong>隐私提醒</strong>：正因为照片可能包含地理位置等隐私信息，在<strong>分享原图给他人或上传到公开网络时需格外谨慎</strong>。使用这类工具查看，也能让你知道自己无意中分享了哪些信息。</li>
-      <li><strong>信息完整性</strong>：并非每张照片都包含完整的EXIF信息。例如，用某些社交软件编辑并保存后的图片，或者截图，其原始拍摄信息可能会被剥离。</li>
-      <li><strong>纯粹的工具</strong>：这类工具通常在网页端运行，<strong>无需安装软件</strong>，也<strong>不需要你具备任何技术知识</strong>。它的目的只有一个：帮你把照片里已有的信息，用最明白的方式“翻译”出来。</li>
-    </ul>
-
-    <div class="mt-8 p-4 text-center border-t border-gray-200 pt-6">
-      <p class="text-gray-800 text-lg mb-4">
-        现在，你是否对手机相册里那些沉默的照片产生了新的好奇？不妨找几张有纪念意义的照片，试试看能否读出它们背后的“隐秘日记”。
-      </p>
-      <p class="text-gray-600">
-        探索这些隐藏信息，不仅是解决一个“在哪里拍的”小疑问，更是用一种新的视角，重温你定格下的每一个瞬间。
-      </p>
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">使用步骤详解</h2>
+  <div class="space-y-6 mb-12">
+    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
+      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-1">上传 PDF 文件</h4>
+        <p class="text-gray-600 text-sm">在页面左侧的上传区域，点击"选择PDF文件"按钮或直接将PDF文件拖拽到虚线框内。支持单个PDF文件上传，文件大小不限。</p>
+      </div>
     </div>
-  </section>
+    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
+      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-1">输入解密密码（如需要）</h4>
+        <p class="text-gray-600 text-sm">在密码输入框中输入PDF的正确密码。如果你不确定文件是否有打开密码，可以留空先尝试解密。工具支持显示/隐藏密码切换功能，方便确认输入。</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
+      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-1">点击开始解密</h4>
+        <p class="text-gray-600 text-sm">点击绿色的"开始解密"按钮，工具会在浏览器中读取文件、验证密码、移除限制并生成新的PDF文件。处理过程中会显示进度提示。</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
+      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-1">下载解密后的文件</h4>
+        <p class="text-gray-600 text-sm">解密完成后，右侧区域会显示结果信息。点击"下载解密后的PDF"按钮即可保存新文件到本地。文件名包含时间戳便于管理。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12 pt-8 border-t text-center">
+    <p class="text-gray-700 mb-4">
+      希望这篇文章能帮你了解如何使用PDF解密工具来处理那些被"锁住"的PDF文件。当再遇到打不开、无法打印或编辑的PDF时，你知道有一个安全、本地且简单的方法可以尝试了。
+    </p>
+    <p class="text-sm text-gray-500">
+      请注意：请仅将此工具用于处理你合法拥有或获得授权的文件。尊重知识产权，遵守相关法律法规。
+    </p>
+  </div>
 </article>
-`;export{t as default};
+`;export{e as default};

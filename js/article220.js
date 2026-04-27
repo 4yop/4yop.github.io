@@ -1,104 +1,47 @@
-const e=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
-    双色球选号不用愁，一个免费小工具帮你轻松搞定
-  </h1>
+const l=`
+<div class="text-gray-800 leading-relaxed">
+  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
 
-  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
-    <p>更新于 2023年10月 • 阅读约需3分钟</p>
+  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
+  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
+  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
+  <p class="mb-4">使用起来非常简单，只需要三步：</p>
+  <ol class="list-decimal pl-8 mb-6 space-y-3">
+    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
+    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
+    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
+  </ol>
+
+  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
+    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
+    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
   </div>
 
-  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
-    <p class="text-gray-700">
-      买双色球时，面对茫茫多的数字是不是常感到选择困难？别急，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的选号小助手。
-    </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
+  <ul class="list-disc pl-8 mb-6 space-y-3">
+    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
+    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
+    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
+    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
+    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
+    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
+  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
+  <ul class="list-disc pl-8 mb-8 space-y-2">
+    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
+    <li>需要查找某个地区对应的官方行政编码时。</li>
+    <li>学习或了解中国行政区划的层级结构时。</li>
+    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
+  </ul>
+
+  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
+    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
   </div>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      选号，真的有那么难吗？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      相信很多朋友都有过这样的经历：站在彩票店前，拿着选号单，脑子里却一片空白。自己生日、纪念日、幸运数字都试过了，还是觉得不够“随机”。有时候甚至想，要是有人能帮我想几组号码就好了。
-    </p>
-    <p class="leading-relaxed">
-      这种纠结非常正常。双色球红球要从1-33个数字里选6个，蓝球要从1-16个数字里选1个，组合方式多到数不清。靠我们自己拍脑袋想，难免会陷入固定的思维模式。
-    </p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      什么是随机选号工具？它能做什么？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      简单来说，它就像一个聪明的数字机器。你只需要告诉它：“帮我生成几组号码”，它就能立刻为你组合出全新的、完全随机的双色球号码。
-    </p>
-
-    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
-      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
-      <ul class="space-y-3 pl-5 list-disc text-gray-700">
-        <li><span class="font-medium">想生成几注就几注</span>：你可以选择一次性生成1组到10组号码，不用一次次重复操作。</li>
-        <li><span class="font-medium">号码一目了然</span>：生成的红球和蓝球会分开、整齐地排列好，红球还自动从小到大排好序，看着特别清楚。</li>
-        <li><span class="font-medium">一键复制，方便保存</span>：看中了哪组号码，点一下“复制”就能存到手机剪贴板，然后直接粘贴到你的备忘录或者发给朋友，再也不用担心手抄抄错了。</li>
-        <li><span class="font-medium">纯属“脑力劳动”，保护你的隐私</span>：整个生成过程都在你自己的手机或电脑上完成，不会把你的任何选择记录或发送到别处，安全又省心。</li>
-        <li><span class="font-medium">操作简单到没朋友</span>：整个页面就一两个按钮，点一下“立即生成”就有结果，没有任何复杂步骤。</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      为什么要用这种方式来选号？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      你可能会有疑问：“机器选的号码，能行吗？”
-    </p>
-    <p class="mb-4 leading-relaxed">
-      首先，我们要明白，双色球的开奖结果是完全随机的。这意味着，每一个数字组合在每一次抽奖中的中奖概率理论上是相同的。无论是你自己想的号码，还是机器生成的号码，中奖的概率都一样。
-    </p>
-    <p class="mb-4 leading-relaxed">
-      使用这种随机工具，最大的好处是帮你打破了选号时的“思维定式”。我们人类在“随机”选择时，总会不自觉地带入一些偏好（比如避开数字4，或者总选连号）。而这个工具能做到更纯粹的随机，覆盖更广的数字组合范围。
-    </p>
-    <p class="leading-relaxed">
-      它更像是一个帮你开拓思路、提供灵感的伙伴。当你没有头绪时，让它给你一些随机的选项，你也许能从这些组合中发现新的灵感，或者直接采用。
-    </p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      如何使用它？简单三步
-    </h2>
-    <ol class="space-y-6 pl-0 list-decimal list-inside">
-      <li>
-        <span class="font-medium text-gray-900">第一步：打开工具</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑上找到这个双色球随机选号工具的页面。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第二步：选择数量</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在“生成注数”旁边，输入你想看的号码组数，比如3组或5组。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第三步：生成与选用</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">点击“立即生成”按钮，几组号码瞬间出现。浏览一下，如果有觉得顺眼的，点击那组号码旁边的“复制”按钮，就可以拿去用了。不满意？点一下“再来一注”试试运气。</p>
-      </li>
-    </ol>
-  </section>
-
-  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">最后，几句心里话</h2>
-    <p class="mb-4 leading-relaxed">
-      这个双色球随机选号工具，本质上是一个为了增添趣味、提供便利的小助手。它能帮你解决“不知道选什么号”的纠结，让选号过程变得轻松有趣一些。
-    </p>
-    <p class="mb-4 leading-relaxed font-medium text-gray-900">
-      但请一定记住，它不能预测未来，也无法提高中奖概率。
-    </p>
-    <p class="leading-relaxed">
-      购买彩票应该是一种健康的娱乐方式。我们希望你在使用这个小工具时，能抱着轻松、理性的心态。享受那份期待的过程，但更要珍惜自己实实在在的生活。量力而行，理性购彩，才是最重要的。
-    </p>
-  </section>
-
-  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
-    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，请理性参与。</p>
-  </div>
-</article>
-`;export{e as default};
+</div>
+`;export{l as default};

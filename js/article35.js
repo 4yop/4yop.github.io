@@ -1,130 +1,219 @@
-const s=`
-<div class="text-gray-800 font-sans leading-relaxed">
-  <article class="max-w-4xl mx-auto p-4 md:p-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">想给头像加点新花样？试试这个头像挂件生成器</h1>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
+    还在为重复的增删改查代码发愁？这个工具能帮你省掉80%的样板代码
+  </h1>
 
-    <div class="my-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
-      <p class="text-blue-800">
-        简单来说，它是一个在线小工具。你上传自己的头像照片，然后就能给它加上各种有趣的小装饰，比如太阳镜、小皇冠、爱心、星星等等，最后生成一张全新的、带有个性装饰的头像。
-      </p>
-    </div>
+  <p class="text-lg text-gray-600 mb-8 text-center leading-relaxed">
+    粘贴一张建表语句，一键生成 6 大主流框架的全栈 CRUD 代码——从后端到前端页面，ZIP 一键打包下载。
+  </p>
 
-    <p class="mb-6 text-lg">
-      你的微信、QQ或者游戏头像，是不是用了很久都没换过？直接拍的照片做头像又觉得有点普通。有没有什么办法，能让自己的头像看起来既像自己，又特别一点呢？
-    </p>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">为什么需要给头像加“挂件”？</h2>
-    <p class="mb-4">
-      你可能见过一些朋友的头像，在角落有个小星星，或者戴着一副虚拟的酷酷墨镜。这些小元素就叫“头像挂件”。它们就像现实中的徽章、贴纸一样，能瞬间表达你的心情、爱好或者个性。
-    </p>
-    <ul class="mb-6 pl-5 space-y-2">
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span><strong>表达个性：</strong>喜欢音乐？加个音符。觉得自己今天很棒？加个小皇冠。简单一个图案，比文字更有趣。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span><strong>区分场合：</strong>平常用一个头像，过节过年时，可以给同一个头像加上节日元素，既有延续性又有新鲜感。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span><strong>保护隐私：</strong>如果不想完全露脸，用卡通图案或者小挂件遮挡部分，既生动又保护了隐私。</span>
-      </li>
+  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
+    <h2 class="text-xl font-semibold text-gray-800 mb-3">为什么你需要一个 CRUD 生成器？</h2>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>每个新项目都在写几乎一样的列表页、新增、编辑、删除接口</li>
+      <li>换一个框架就得重新回忆字段映射、验证规则、分页写法</li>
+      <li>团队里每个人写的 CRUD 风格不统一，Code Review 全在挑格式问题</li>
+      <li>一个中等规模的系统动辄几十张表，每张表都手动写一遍 CRUD 太浪费时间</li>
     </ul>
+  </div>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">有哪些好玩的挂件可以选择？</h2>
-    <p class="mb-4">
-      这种生成器通常会提供一个丰富的“挂件库”，里面都是设计好的小图案。你不需要自己画，就像走进一个装饰品商店，直接挑选喜欢的就行。
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    它能做什么？一句话：粘贴 SQL，出全套代码
+  </h2>
+
+  <p class="mb-4 text-gray-700 leading-relaxed">
+    你只需要提供数据库建表语句（或者用可视化编辑器手动定义字段），这个工具就能自动生成以下内容：
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 class="font-semibold text-base mb-2 text-gray-800">后端代码</h3>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc pl-4">
+        <li>Model / Entity / 结构体（数据模型）</li>
+        <li>Controller / Handler（接口控制器）</li>
+        <li>Service 层（业务逻辑）</li>
+        <li>Repository / Mapper（数据访问）</li>
+        <li>DTO / VO（数据传输对象）</li>
+        <li>Request Validator（表单校验）</li>
+        <li>Migration / 数据库迁移文件</li>
+        <li>路由定义</li>
+        <li>API 文档</li>
+      </ul>
+    </div>
+    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 class="font-semibold text-base mb-2 text-gray-800">辅助产出</h3>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc pl-4">
+        <li>Vue 列表页（含表格、搜索、分页）</li>
+        <li>Factory 测试工厂 / 测试用例</li>
+        <li>Admin 后台注册（Django）</li>
+        <li>Swagger 注解（Java/Node.js/Go）</li>
+        <li>cURL 测试命令参考</li>
+        <li>Postman 导入集合</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    支持 6 大主流技术栈
+  </h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">🐘</div>
+      <h3 class="font-semibold text-gray-800">Laravel</h3>
+      <p class="text-sm text-gray-600">Model / Controller / Service / Request / Migration / Route / Factory / Resource / Vue 页面 / API 文档</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">⚡</div>
+      <h3 class="font-semibold text-gray-800">ThinkPHP</h3>
+      <p class="text-sm text-gray-600">Model / Controller / Validate / Route / Vue 列表页</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">☕</div>
+      <h3 class="font-semibold text-gray-800">Spring Boot</h3>
+      <p class="text-sm text-gray-600">Entity / DTO / VO / Mapper + XML / Service + Impl / Controller（含 Swagger 注解）</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">🐍</div>
+      <h3 class="font-semibold text-gray-800">Django</h3>
+      <p class="text-sm text-gray-600">Model / Serializer / ViewSet / URL / Admin / Test Case / Factory</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">🟢</div>
+      <h3 class="font-semibold text-gray-800">Express + Sequelize</h3>
+      <p class="text-sm text-gray-600">Sequelize Model / Controller / Router / Service / DTO 校验 / Middleware</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+      <div class="text-2xl mb-1">🔵</div>
+      <h3 class="font-semibold text-gray-800">Go Gin</h3>
+      <p class="text-sm text-gray-600">Model 结构体 / Handler / Router / Service / DTO Request / Response（含 Swagger 注解）</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    三种方式定义表结构
+  </h2>
+
+  <div class="space-y-4 my-6">
+    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+      <span class="text-2xl flex-shrink-0">📋</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">SQL 粘贴</h3>
+        <p class="text-sm text-gray-600">直接粘贴 CREATE TABLE 建表语句，工具自动解析所有字段信息。支持多表检测。</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+      <span class="text-2xl flex-shrink-0">📁</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">上传 SQL 文件</h3>
+        <p class="text-sm text-gray-600">点击上传 .sql 文件，自动读取并解析表结构，适合导出的数据库脚本。</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+      <span class="text-2xl flex-shrink-0">✏️</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">可视化编辑</h3>
+        <p class="text-sm text-gray-600">手动逐个添加字段，选择类型、设置可空和主键。灵活度最高，适合自定义场景。</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    内置快速模板，开箱即用
+  </h2>
+
+  <p class="mb-4 text-gray-700">不想手写 SQL？内置 4 套常用表结构模板，一键填充：</p>
+
+  <div class="space-y-3 my-6">
+    <div class="p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg">
+      <h3 class="font-semibold text-gray-800">用户管理</h3>
+      <p class="text-sm text-gray-600">用户名、邮箱、手机号、头像、状态等 9 个字段，覆盖最常见的用户表结构。</p>
+    </div>
+    <div class="p-4 border-l-4 border-green-500 bg-green-50 rounded-r-lg">
+      <h3 class="font-semibold text-gray-800">博客文章</h3>
+      <p class="text-sm text-gray-600">标题、摘要、正文、封面图、分类、作者、阅读量、发布状态等 13 个字段。</p>
+    </div>
+    <div class="p-4 border-l-4 border-orange-500 bg-orange-50 rounded-r-lg">
+      <h3 class="font-semibold text-gray-800">商品管理</h3>
+      <p class="text-sm text-gray-600">名称、SKU、价格、原价、库存、分类、主图、上下架状态等 12 个字段。</p>
+    </div>
+    <div class="p-4 border-l-4 border-purple-500 bg-purple-50 rounded-r-lg">
+      <h3 class="font-semibold text-gray-800">订单系统</h3>
+      <p class="text-sm text-gray-600">订单编号、金额、优惠、支付方式、收货人信息、备注等 15 个字段，完整的电商订单结构。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    高级功能一览
+  </h2>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full text-sm border-collapse border border-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="px-4 py-2 text-left border-b border-gray-200">功能</th>
+          <th class="px-4 py-2 text-left border-b border-gray-200">说明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">智能字段识别</td><td class="px-4 py-2 text-gray-600">自动识别主键、时间戳、软删除、自增字段</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">类型映射</td><td class="px-4 py-2 text-gray-600">MySQL 类型自动映射到目标语言的正确类型（如 varchar→string、decimal→BigDecimal）</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">验证规则生成</td><td class="px-4 py-2 text-gray-600">根据字段类型和长度自动生成验证规则（required、email、max 等）</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">命名转换</td><td class="px-4 py-2 text-gray-600">支持 snake_case / camelCase / PascalCase / kebab-case 自动互转</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">ZIP 打包下载</td><td class="px-4 py-2 text-gray-600">一键打包所有生成的代码为 ZIP 文件，按框架目录组织</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">代码统计面板</td><td class="px-4 py-2 text-gray-600">实时显示生成的文件数、总行数、字段数等统计信息</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">Vue 前端页面</td><td class="px-4 py-2 text-gray-600">生成基于 Element Plus 的完整列表页（表格、搜索、分页、操作按钮）</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">API 文档</td><td class="px-4 py-2 text-gray-600">生成 Markdown 格式的 API 接口文档，包含请求参数和响应示例</td></tr>
+        <tr class="border-b border-gray-100"><td class="px-4 py-2 font-medium">Swagger 注解</td><td class="px-4 py-2 text-gray-600">Java / Node.js / Go 框架可选生成 Swagger/OpenAPI 注解</td></tr>
+        <tr><td class="px-4 py-2 font-medium">测试代码</td><td class="px-4 py-2 text-gray-600">Django 可生成单元测试用例和 FactoryBoy 工厂；Laravel 生成 Factory</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    使用步骤
+  </h2>
+
+  <ol class="list-decimal pl-5 space-y-3 text-gray-700 my-6">
+    <li><strong>选框架</strong> — 从 Laravel / ThinkPHP / Spring Boot / Django / Express / Go Gin 中选择你的目标框架</li>
+    <li><strong>定义表结构</strong> — 粘贴 SQL、上传 .sql 文件、或使用快速模板一键填充，也可以切换到「可视化编辑」手动添加字段</li>
+    <li><strong>配置选项</strong> — 选择要生成的代码类型，开启时间戳、软删除、分页、Swagger 等高级选项</li>
+    <li><strong>一键生成</strong> — 点击生成按钮，右侧面板实时展示所有生成的代码</li>
+    <li><strong>预览与下载</strong> — 通过标签页浏览每个文件，单独复制或 ZIP 整包下载</li>
+  </ol>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900 pt-6 border-t border-gray-200">
+    适用场景
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+    <div class="p-5 bg-gray-50 rounded-lg">
+      <h3 class="font-semibold text-gray-800 mb-2">快速原型开发</h3>
+      <p class="text-sm text-gray-600">MVP 阶段需要快速搭建后台管理系统，CRUD 生成器几分钟就能搞定所有基础模块的代码骨架。</p>
+    </div>
+    <div class="p-5 bg-gray-50 rounded-lg">
+      <h3 class="font-semibold text-gray-800 mb-2">团队规范统一</h3>
+      <p class="text-sm text-gray-600">统一使用生成器输出标准化的 CRUD 代码风格，减少 Code Review 中关于格式和结构的讨论成本。</p>
+    </div>
+    <div class="p-5 bg-gray-50 rounded-lg">
+      <h3 class="font-semibold text-gray-800 mb-2">跨框架学习</h3>
+      <p class="text-sm text-gray-600">同一个表结构，分别生成不同框架的代码，对比学习各框架的最佳实践和惯用写法差异。</p>
+    </div>
+    <div class="p-5 bg-gray-50 rounded-lg">
+      <h3 class="font-semibold text-gray-800 mb-2">数据库迁移</h3>
+      <p class="text-sm text-gray-600">旧项目要迁移到新框架时，直接导入原有表结构，快速生成目标框架的基础代码。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 text-center bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl">
+    <h3 class="text-xl font-bold mb-3 text-gray-900">告别重复劳动，把时间花在有创造力的事情上</h3>
+    <p class="text-gray-700 mb-4">
+      每次新建一张表就手动写一套 CRUD 的时代已经过去了。把这个工具加入你的开发工作流，让样板代码自动生成成为常态。
     </p>
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 my-6">
-      <div class="bg-gray-50 rounded-lg p-3 text-center border">
-        <div class="w-12 h-12 mx-auto mb-2 bg-blue-100 rounded-full flex items-center justify-center">
-          <div class="w-8 h-4 bg-blue-300 rounded-full"></div>
-        </div>
-        <p class="text-sm">时尚配饰</p>
-      </div>
-      <div class="bg-gray-50 rounded-lg p-3 text-center border">
-        <div class="w-12 h-12 mx-auto mb-2 bg-yellow-100 rounded-full flex items-center justify-center">
-          <div class="w-6 h-6 bg-yellow-300 rotate-45"></div>
-        </div>
-        <p class="text-sm">可爱表情</p>
-      </div>
-      <div class="bg-gray-50 rounded-lg p-3 text-center border">
-        <div class="w-12 h-12 mx-auto mb-2 bg-red-100 rounded-full flex items-center justify-center">
-          <div class="w-8 h-8 bg-red-300 rounded-full"></div>
-        </div>
-        <p class="text-sm">节日元素</p>
-      </div>
-      <div class="bg-gray-50 rounded-lg p-3 text-center border">
-        <div class="w-12 h-12 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
-          <div class="w-10 h-2 bg-green-300 rounded-full"></div>
-        </div>
-        <p class="text-sm">兴趣符号</p>
-      </div>
-      <div class="bg-gray-50 rounded-lg p-3 text-center border col-span-2 md:col-span-1">
-        <div class="w-12 h-12 mx-auto mb-2 bg-purple-100 rounded-full flex items-center justify-center">
-          <div class="w-5 h-8 bg-purple-300"></div>
-        </div>
-        <p class="text-sm">潮流文字</p>
-      </div>
-    </div>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">具体怎么操作？非常简单</h2>
-    <ol class="list-decimal pl-5 space-y-4 mb-6">
-      <li class="pl-2">
-        <strong>第一步：传照片</strong>
-        <p class="text-gray-600 mt-1">打开页面，把你的头像照片拖进去或者点一下上传。支持手机里常见的图片格式。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第二步：挑挂件</strong>
-        <p class="text-gray-600 mt-1">从下面的挂件库里，点击任何一个你喜欢的图案，它就会自动“贴”到你的头像上。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第三步：摆位置</strong>
-        <p class="text-gray-600 mt-1">觉得挂件位置不对？直接用手指（在手机上）或鼠标（在电脑上）按住它，拖到你想要的任何地方。想放帽子就拖到头项，想放墨镜就拖到眼睛上。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第四步：调大小</strong>
-        <p class="text-gray-600 mt-1">挂件太大了或太小？旁边会有简单的拉杆，动一下就能自由缩放，还可以旋转角度。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第五步：保存使用</strong>
-        <p class="text-gray-600 mt-1">全部调整满意后，点一下“导出图片”按钮。等一小会儿，一张全新的、带装饰的头像就保存到你手机或电脑里了，直接就能用来更换。</p>
-      </li>
-    </ol>
-
-    <div class="my-8 p-6 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl border">
-      <h3 class="text-xl font-bold mb-3">需要下载软件吗？完全不用</h3>
-      <p class="mb-3">
-        这类工具最大的好处就是它是“在线”的。你不需要在手机或电脑上安装任何应用程序，只要用浏览器（比如手机上的微信浏览器、 Safari、 Chrome，或者电脑上的浏览器）打开网页就能用。
-      </p>
-      <p>
-        这意味着无论你用的是苹果手机、安卓手机，还是 Windows 电脑、苹果电脑，都能同样方便地使用。做好的图片直接存在本地，非常方便安全。
-      </p>
-    </div>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">在哪些地方能用上这样的个性头像？</h2>
-    <p class="mb-4">
-      制作好的头像，几乎可以用在所有你需要头像的地方：
+    <p class="font-medium text-gray-900">
+      支持的框架还在持续增加中，如果你有需要的框架或语言，欢迎反馈建议。
     </p>
-    <div class="flex flex-wrap gap-3 my-6">
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">微信/QQ头像</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">微博/小红书</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">游戏账号</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">论坛社区</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">工作社交软件</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">视频平台</span>
-    </div>
-
-    <div class="mt-12 pt-8 border-t text-center">
-      <p class="text-xl font-semibold mb-4">给你的旧头像一次“变身”的机会</p>
-      <p class="text-gray-700 mb-2">
-        下次觉得自己的头像有点单调，或者想换个心情又不想大动干戈时，不妨试试这个简单的办法。上传、挑选、拖拽、保存，几分钟就能获得一个独一无二的新形象。
-      </p>
-      <p class="text-gray-700">
-        它就像是一个随时在线的头像装饰小工坊，简单、免费、而且充满趣味。快去试试，为你熟悉的头像，加上一点属于自己的新意吧。
-      </p>
-    </div>
-  </article>
+  </div>
 </div>
-`;export{s as default};
+`;export{t as default};

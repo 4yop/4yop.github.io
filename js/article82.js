@@ -1,70 +1,252 @@
-const t=`
-<div class="bg-gray-50 text-gray-800 font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg shadow-sm">
-    <h1 class="text-3xl font-bold mb-6 text-center">为什么你的网页打开这么慢？一个简单的“瘦身”方法或许能帮到你</h1>
+const e=`
+<div class="bg-white text-gray-800 font-sans">
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- 文章标题 -->
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+      基础代谢率是什么？一文读懂你身体的“基础能耗”
+    </h1>
     
-    <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
-      <p class="text-gray-700">你是否曾经点开一个网页，却对着那个不停转圈的小图标干等？或者在手机上浏览时，图片和文字半天都显示不全？今天，我们就来聊聊这个烦人的问题，并告诉你一个很多人都在用的简单解决思路。</p>
+    <!-- 引言部分 -->
+    <div class="mb-10">
+      <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+        你有没有想过，就算一整天躺在床上不动，你的身体也在默默消耗热量？这种“躺着也能瘦”的消耗，其实就是基础代谢率在起作用。
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        今天我们就来聊聊这个影响你体重变化的关键因素——基础代谢率，让你更了解自己的身体。
+      </p>
     </div>
     
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 text-gray-900">你的网页，可能背了太多“包袱”</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">想象一下，你要出门旅行，却把整个衣柜的衣服都塞进行李箱。结果箱子又重又难搬，行动变得非常缓慢。</p>
-      <p class="mb-4 text-gray-700 leading-relaxed">一个打开缓慢的网页，情况往往类似。它在“出门”（即加载显示）时，也携带了许多看不见的“多余行李”。这些“行李”包括大量的空格、换行、以及一些只为编写者看的备注说明。这些东西对网页最终显示的样子没有帮助，却实实在在地拖慢了它的“脚步”。</p>
-      <p class="text-gray-700 leading-relaxed">访客每多等一秒钟，离开的可能性就增加一分。无论是个人博客、产品展示页，还是小型网店，加载速度都直接影响到访客的体验和去留。</p>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 text-gray-900">给网页“瘦身”：像整理行李箱一样精简它</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">既然知道了问题所在，解决办法就很直观了：为网页“减负瘦身”。这个过程，专业上常被称作“优化”或“压缩”，但你可以简单地理解为：<strong>把网页里所有不影响最终显示效果的多余东西，统统清理掉。</strong></p>
-      <div class="bg-gray-100 p-5 rounded-lg mb-4">
-        <h3 class="text-xl font-medium mb-3 text-gray-800">这能带来什么好处？</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li><strong>打开速度更快：</strong>“行李”轻了，“跑”起来自然快。访客无需漫长等待。</li>
-          <li><strong>手机浏览更顺畅：</strong>对于移动网络用户，减少数据加载量意味着更少的卡顿和流量消耗。</li>
-          <li><strong>更受搜索引擎青睐：</strong>快速的网页更容易获得好的展示位置，让别人更容易找到你。</li>
-          <li><strong>提升访客好感度：</strong>没人喜欢等待。一个响应迅速的网站，会给访客留下专业、高效的印象。</li>
-        </ul>
-      </div>
-      <p class="text-gray-700 leading-relaxed">这个过程完全是自动化的，就像使用一个智能打包机，它能精准识别并移除无用的填充物，而绝不会损坏你的核心物品（即网页的正常内容和功能）。</p>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 text-gray-900">谁需要为网页“瘦身”？</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">也许你会想，这是不是只适合大型网站？其实不然，任何希望提升在线表现的个人或小团队都能从中受益。</p>
-      
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="border border-gray-200 p-5 rounded-lg">
-          <h4 class="font-medium text-lg mb-2 text-gray-900">场景一：独立店主或自媒体博主</h4>
-          <p class="text-gray-600">你用心经营着一个网店或个人主页。当你分享产品链接或文章时，却因为加载慢而让潜在客户或读者流失。给页面“瘦身”，能确保他们第一时间看到你想展示的内容。</p>
+    <!-- 第一部分：BMR基本概念 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        什么是基础代谢率？
+      </h2>
+      <div class="space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          基础代谢率，英文简称BMR，指的是你的身体在完全静息状态下，维持基本生命活动所需的最低能量。简单来说，就是你的身体为了“活着”而必须消耗的热量。
+        </p>
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+          <p class="text-gray-800 leading-relaxed">
+            <span class="font-semibold">打个比方：</span>把你的身体想象成一辆汽车，基础代谢率就像是发动机怠速时的油耗。就算车停着不动，发动机也要保持运转，消耗燃油。同样，你的心脏跳动、肺部呼吸、大脑思考、细胞更新……这些基本功能都需要能量支撑。
+          </p>
         </div>
-        <div class="border border-gray-200 p-5 rounded-lg">
-          <h4 class="font-medium text-lg mb-2 text-gray-900">场景二：使用网站搭建平台的新手</h4>
-          <p class="text-gray-600">许多平台在生成网页时，会自动加入一些冗余信息。通过一次简单的“瘦身”处理，你可以轻松地让页面变得更轻巧，提升自己网站的访问体验。</p>
+        <p class="text-gray-700 leading-relaxed">
+          这个数值通常以“千卡/天”为单位，也就是你每天在什么都不做的情况下，身体自然消耗的热量。
+        </p>
+      </div>
+    </div>
+    
+    <!-- 第二部分：为什么BMR重要 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        知道自己的基础代谢率有什么用？
+      </h2>
+      <div class="space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          了解自己的基础代谢率，就像拿到了身体能量消耗的“说明书”，对健康管理非常有帮助。
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">对于控制体重</h3>
+            <p class="text-gray-700 leading-relaxed">
+              如果你想减肥，每天摄入的热量需要低于总消耗量。而总消耗量的基础就是BMR。知道了这个“底线”，你就能更科学地安排饮食，避免盲目节食。
+            </p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">对于保持健康</h3>
+            <p class="text-gray-700 leading-relaxed">
+              长期摄入热量远低于基础代谢率，身体会启动“节能模式”，反而可能降低代谢，不利于健康。了解BMR能帮你找到平衡点。
+            </p>
+          </div>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed">
+          很多人在减肥时只关注“少吃”，却忽略了身体的基础需求。长期热量摄入不足，可能导致疲劳、脱发、月经不调等问题。基础代谢率就是你健康饮食的“参考线”。
+        </p>
+      </div>
+    </div>
+    
+    <!-- 第三部分：影响BMR的因素 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        哪些因素会影响基础代谢率？
+      </h2>
+      <div class="space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          每个人的基础代谢率都不一样，它主要受以下几个因素影响：
+        </p>
+        
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-4 mt-1">
+              <span class="font-semibold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">性别</h3>
+              <p class="text-gray-700 leading-relaxed">
+                通常，男性的基础代谢率会比女性高一些。这是因为男性一般肌肉比例更高，而肌肉消耗的热量比脂肪多。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center mr-4 mt-1">
+              <span class="font-semibold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">年龄</h3>
+              <p class="text-gray-700 leading-relaxed">
+                随着年龄增长，基础代谢率会逐渐下降。这也是为什么很多人感觉“年纪大了容易发胖”——身体的基础消耗变少了。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-700 rounded-full flex items-center justify-center mr-4 mt-1">
+              <span class="font-semibold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">身高体重</h3>
+              <p class="text-gray-700 leading-relaxed">
+                身材高大、体重较重的人，维持身体运转需要更多能量，所以基础代谢率通常更高。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mr-4 mt-1">
+              <span class="font-semibold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">肌肉量</h3>
+              <p class="text-gray-700 leading-relaxed">
+                肌肉是“耗能大户”。肌肉多的人，即使休息时消耗的热量也更多。这就是为什么增肌有助于提高代谢。
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
     
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 text-gray-900">具体怎么做？其实可以很简单</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">现代的在线工具已经让这个过程变得极其简单。通常，你只需要：</p>
-      <ol class="list-decimal pl-5 space-y-3 mb-4 text-gray-700">
-        <li>找到你需要优化的网页内容。</li>
-        <li>将其复制到一个专门的“瘦身”工具中。</li>
-        <li>点击开始，工具会自动完成清理工作。</li>
-        <li>获取清理后的结果，并替换回原来的位置。</li>
-      </ol>
-      <p class="text-gray-700 leading-relaxed">整个操作过程往往是可视化的，你能清楚地看到“瘦身”前后的大小对比，例如“体积减少了30%”。一些工具还允许你选择不同的清理强度，或是对不同类型的页面结构进行针对性的优化。</p>
-    </section>
-    
-    <section class="border-t pt-8">
-      <h2 class="text-2xl font-semibold mb-4 text-gray-900">小结</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">网页加载缓慢是一个常见却容易被忽视的问题。它像一道无形的门槛，挡住了许多访客。幸运的是，解决这个问题的核心思路并不复杂——<strong>为你的网页“减负瘦身”。</strong></p>
-      <p class="mb-6 text-gray-700 leading-relaxed">通过移除那些不影响显示效果的多余内容，你可以有效提升网页的打开速度，让手机访问更流畅，并给所有访客带来更好的浏览体验。无论你是经营个人网站、博客还是小型在线店铺，这都是一项值得尝试的简单优化。</p>
-      <div class="p-5 bg-green-50 border border-green-200 rounded-lg text-center">
-        <p class="font-medium text-gray-800">如果你也关心自己的网页加载速度，不妨了解一下网页“瘦身”工具。找一个可靠的在线工具尝试一下，亲眼看看你的网页“轻装上阵”后能跑多快。</p>
+    <!-- 第四部分：如何计算和利用BMR -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        如何知道自己的基础代谢率？
+      </h2>
+      <div class="space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          专业机构可以通过仪器精确测量，但对于普通人来说，使用广泛认可的公式计算就能得到相当准确的参考值。
+        </p>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">计算公式的简单理解</h3>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            最常用的计算会考虑你的性别、身高、体重和年龄。公式背后的逻辑很直观：
+          </p>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span>体重越重，消耗越多（因为要支撑更多组织）</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span>身高越高，消耗越多（体型大的身体需要更多能量维持）</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">•</span>
+              <span>年龄越大，消耗越少（新陈代谢自然减慢）</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">•</span>
+              <span>性别不同，公式有调整（反映男女身体的天然差异）</span>
+            </li>
+          </ul>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed">
+          现在有很多在线的<strong>基础代谢率计算器</strong>，你只需要输入几个基本信息，就能快速得到结果。这比手动计算方便多了。
+        </p>
       </div>
-    </section>
-  </article>
+    </div>
+    
+    <!-- 第五部分：日常应用建议 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        知道了BMR，日常生活怎么用？
+      </h2>
+      <div class="space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          算出基础代谢率只是第一步，更重要的是如何应用到生活中。这里有几个实用的建议：
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">对于想控制体重的人</h3>
+            <p class="text-gray-700 leading-relaxed">
+              你的每日总消耗 = 基础代谢率 + 活动消耗（走路、工作、运动等）。要减肥，可以让每日摄入热量略低于总消耗，但<strong>不要长期低于基础代谢率</strong>。
+            </p>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">对于想保持现状的人</h3>
+            <p class="text-gray-700 leading-relaxed">
+              如果你的目标是维持体重，那么每日摄入热量可以接近总消耗量。了解自己的基础代谢率，能帮你更好地规划三餐。
+            </p>
+          </div>
+        </div>
+        
+        <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">一个重要的提醒</h3>
+          <p class="text-gray-800 leading-relaxed">
+            基础代谢率不是一成不变的。通过增加肌肉锻炼、保证充足睡眠、合理饮食，你可以适度提高自己的基础代谢。相反，长期极低热量饮食或肌肉流失，则可能让它下降。
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 第六部分：常见问题 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+        关于基础代谢率的常见疑问
+      </h2>
+      <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">基础代谢率越高越好吗？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            不一定。基础代谢率高意味着你“基础能耗”大，对控制体重可能有利，但它主要反映的是身体的基本特征。健康的关键在于平衡，而不是一味追求高代谢。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">为什么两个人身高体重一样，BMR可能不同？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            除了身高体重，年龄、性别、肌肉脂肪比例都会影响。一个经常锻炼、肌肉多的人，基础代谢率通常会比同体重但肌肉少的人高。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">多久需要重新计算一次？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            如果你的体重、年龄发生了明显变化，或者健身增肌取得了效果，建议重新计算。一般每隔3-6个月算一次，能更准确地反映当前状态。
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 结尾部分 -->
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <div class="bg-blue-50 rounded-xl p-8 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">了解自己，从了解身体的“基础能耗”开始</h2>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          基础代谢率是一个有用的健康参考指标，它能帮你更科学地管理饮食和运动。记住，每个人的身体都是独特的，数字只是参考，更重要的是倾听身体的感受，找到适合自己的健康节奏。
+        </p>
+        <p class="text-gray-600 text-sm">
+          不妨找个时间，用基础代谢率计算器了解一下自己的数字吧。知彼知己，才能更好地照顾自己。
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-`;export{t as default};
+`;export{e as default};

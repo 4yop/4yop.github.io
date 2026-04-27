@@ -1,59 +1,84 @@
-const s=`
-<div class="text-slate-700 max-w-3xl mx-auto p-4 md:p-0">
-  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h1>
-
-  <p class="text-lg mb-8 leading-relaxed">
-    工作中，面对一堆密密麻麻的销售数字，是不是感到头疼？学习中，复杂的统计资料，是不是让你眼花缭乱？我们常常需要把枯燥的数据变成一目了然的图表，但专业的软件太难，手绘又太慢。有没有一种方法，能让我们普通人，像填写表格一样简单，就能得到专业的图表呢？
-  </p>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">告别混乱数字，让数据自己“说话”</h2>
-  <p class="mb-6 leading-relaxed">
-    无论你是要做一份工作报告，还是整理自己的学习笔记，图表都是最好的帮手。一张好的柱状图，能瞬间让你看清谁多谁少，哪个项目更突出。以前，这可能是设计师或者数据分析师的工作。而现在，借助一些简单好用的在线工具，每个人都能轻松胜任。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">只需简单三步，你的专属图表即刻呈现</h2>
-  <p class="mb-4 leading-relaxed">
-    很多人一听到“做图表”就觉得复杂。其实，整个过程可以非常简单，就像用记事本一样。
-  </p>
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第一步：输入你的数据</h3>
-    <p class="mb-3">你不需要任何特殊格式。只需像平时记流水账一样，把你的项目名称和对应的数字，用逗号隔开，一行行写下来。</p>
-    <p class="text-sm text-slate-500 mb-3">例如：<br>产品A, 120, 80<br>产品B, 150, 160</p>
-    <p>写好之后，点击一个按钮，系统就会自动识别并准备好你的图表数据。</p>
-  </div>
-
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第二步：调整到你喜欢的样子</h3>
-    <p class="mb-3">图表可以“竖着”排列，也可以“横着”排列，哪种看着顺眼就用哪种。</p>
-    <p class="mb-3">颜色也可以随心换。有沉稳的“商务蓝”适合正式报告，有简洁的“工程灰”显得专业，还有清新的“生态绿”让人眼前一亮。</p>
-    <p>所有的调整都是实时生效的，你可以立刻看到变化，直到找到最满意的样式。</p>
-  </div>
-
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第三步：保存你的成果</h3>
-    <p>图表做好后，可以直接保存为一张高清图片。无论是插入到PPT里，还是分享到工作群，都非常方便。</p>
-    <p class="text-sm text-slate-500 mt-2">还有一个贴心的小功能：在你操作的过程中，系统会自动帮你记住上一次的数据和设置，下次打开，一切都还在，不用重新做。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">这个工具能帮你解决哪些具体问题？</h2>
-  <ul class="list-disc pl-5 space-y-2 mb-8">
-    <li><span class="font-medium">月度销售汇报：</span>快速对比各个业务小组或产品的业绩高低。</li>
-    <li><span class="font-medium">项目进度跟踪：</span>清晰展示不同任务阶段的完成情况。</li>
-    <li><span class="font-medium">学习成果统计：</span>将各科成绩或学习时间直观地呈现出来。</li>
-    <li><span class="font-medium">家庭开支分析：</span>一眼看出每月在饮食、购物、教育等方面的花费占比。</li>
-    <li><span class="font-medium">活动投票结果展示：</span>让投票数多少变得一目了然。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">担心操作复杂？其实很简单</h2>
-  <p class="mb-6 leading-relaxed">
-    很多朋友可能会问，我需要先学习什么吗？完全不用。这类工具的设计初衷，就是给非专业人士使用的。它的界面通常很干净，按钮上的字都写得明明白白，比如“解析数据”、“导出图片”。你完全不需要知道背后复杂的原理，就像我们用电饭煲煮饭，不需要懂它的电路一样。你只需要关心你的数据，然后选择你喜欢的样子。
-  </p>
-
-  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10">
-    <h2 class="text-2xl font-semibold text-slate-800 mb-3">总结一下</h2>
-    <p class="leading-relaxed">
-      当数字变得难以理解时，图表是最好的翻译官。一个好的免费图表生成工具，应该像一位耐心的助手：<span class="font-medium">操作上足够简单</span>，让你轻松上手；<span class="font-medium">样式上足够灵活</span>，满足不同场合的需求；<span class="font-medium">结果上足够实用</span>，能直接拿去使用。别再让杂乱的数据困住你，试着把它们变成一张张清晰的图表，你会发现，理解和表达，原来可以如此轻松。
+const e=`
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <article class="bg-white shadow-sm rounded-lg p-6 md:p-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">身份证号码的秘密：一键解析你的出生日期与生肖</h1>
+    
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+      我们每个人都有一个独一无二的身份证号码。这一长串数字不仅是一个身份代码，更像是一个微型“信息卡”，里面隐藏着你的出生日期，甚至能推算出你的生肖属相。今天，我们就来聊聊怎么快速读懂身份证里的这些“隐藏信息”。
     </p>
-  </div>
+    
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">一、你的生日，就藏在身份证号码里</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        你可能不知道，身份证号码的第7到第14位（18位身份证）或者第7到第12位（15位身份证），就是你的出生日期编码。
+      </p>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        例如，号码“110101<b class="text-blue-600">19900307</b>7219”中，加粗的“19900307”就代表着1990年3月7日。过去的老式15位身份证，则用类似“900307”这样的六位数字表示1990年3月7日。不过，手动去数位、截取、换算，既麻烦又容易出错。
+      </p>
+      <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 rounded">
+        <p class="text-gray-700 italic">一个简单的工具就能解决这个问题：你只需要把身份证号码输进去，它就能立刻把里面包含的出生年月日提取出来，并以你习惯的日期格式（如“1990-03-07”或“1990年3月7日”）展示给你看。</p>
+      </div>
+    </section>
+    
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">二、除了生日，还能看出你的生肖？</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        生肖，是我们传统文化中很有意思的一部分。很多人知道自己的属相，但可能没想过，它和你的出生年份紧密相关，而出生年份就藏在身份证里。
+      </p>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        根据一个简单的规律：每12年一个轮回，分别是鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪。知道了出生年份，就能立刻知道属相。
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        所以，一些好用的解析工具在提取出你的出生年份后，可以顺便帮你算出生肖。比如，1990年出生的人属马。这样，你不仅能快速核对生日信息，还能顺便看一眼自己或他人的生肖，挺有趣的。
+      </p>
+    </section>
+    
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">三、批量处理：整理名单时的好帮手</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        想象一下这些场景：公司的HR需要为新员工录入信息；学校的老师要统计全班学生的生日；活动主办方需要核对参与者的身份资料……这些时候，面对几十甚至上百个身份证号码，如果一个个手动去看、去记录，工作量非常大，还容易看花眼。
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        批量解析功能就是为了应对这种情况而生的。你只需要把所有身份证号码，每行一个地粘贴到工具里，点击一下，所有号码对应的出生日期（和生肖）就会整齐地罗列出来。你可以一目了然地查看，也可以一键复制全部结果，直接粘贴到你的表格或文档里，效率提升不止一点点。
+      </p>
+    </section>
+    
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">四、用你习惯的方式看日期</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        不同的人、不同的场合，对日期的格式要求可能不同。有人习惯“1990-03-07”，有人喜欢“1990年3月7日”，还有人只需要“3月7日”或者单独的“1990年”。
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        一个好的解析工具应该能灵活地满足这些需求。它通常会提供多种日期格式选项，让你可以自由选择最顺眼、最符合你需要的那一种，解析结果会立刻以你选择的格式呈现。
+      </p>
+    </section>
+    
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">五、最重要的：你的信息是否安全？</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        在处理身份证号码这类敏感信息时，大家最关心的一定是安全。谁都不希望自己的信息在网络上被泄露。
+      </p>
+      <div class="bg-green-50 border-l-4 border-green-400 p-4 my-6 rounded">
+        <p class="text-gray-700 font-medium">这里有一个关键的区别：工具是在哪里处理你的数据的？</p>
+        <p class="text-gray-700 mt-2">现在很多注重隐私的工具采用了“纯前端处理”的方式。这意味着，整个解析过程只在你自己的电脑或手机浏览器里完成，数据<b>不会通过网络发送到任何服务器</b>。就像你用计算器算数一样，算完结果就停留在你的设备上。选择这样的工具，可以让你用得更安心。</p>
+      </div>
+    </section>
+    
+    <section class="mt-12 pt-8 border-t border-gray-200">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">总结一下</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        身份证号码解析，其实就是把那一长串数字里本来就包含的生日信息，用更清晰、更直观的方式“翻译”出来。如果再结合年份推算出生肖，就又多了一层文化趣味。
+      </p>
+      <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-6">
+        <li>它的核心作用是<b>快速、准确地提取出生日期</b>。</li>
+        <li>附加功能是帮你<b>轻松查看对应的生肖属相</b>。</li>
+        <li><b>批量处理</b>能力让它成为整理大量信息的效率利器。</li>
+        <li>选择<b>纯本地处理</b>的工具，能最大程度保护你的隐私安全。</li>
+      </ul>
+      <p class="text-gray-700 leading-relaxed">
+        下次当你需要从身份证号码里找生日，或者只是好奇想看看自己号码里的“秘密”时，不妨试试这类小工具。你会发现，原来读懂身份证，可以这么简单。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{s as default};
+`;export{e as default};

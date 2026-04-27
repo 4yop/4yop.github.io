@@ -1,67 +1,50 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 text-gray-800 font-sans bg-white">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">一张身份证号码能看出哪些信息？</h1>
-  <p class="text-gray-600 mb-8 text-lg">除了证明身份，那一长串数字里还藏着你可能不知道的秘密。</p>
+const l=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <article>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6">你的反应速度有多快？一分钟免费测测看</h1>
 
-  <div class="mb-10">
-    <p class="mb-4">我们每个人都有身份证。拿到手里，上面有照片、姓名、住址，还有那串长长的18位号码。很多人都知道这串号码很重要，但具体每一位代表什么，可能就不太清楚了。</p>
-    <p>今天，我们就来轻松聊聊，这18位身份证号码，到底告诉了我们哪些关于你的信息。</p>
-  </div>
+    <p class="text-lg mb-6">你有没有好奇过，自己在关键时刻反应够不够快？开车时遇到突发状况，或者运动时需要瞬间判断，反应速度都起着关键作用。今天，我们就来聊聊这个有趣的话题，并提供一个简单的方法，让你立刻了解自己的反应时间。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">身份证号码的秘密：三段式解读</h2>
-  <p class="mb-6">其实，你的18位身份证号可以被清晰地分成三个部分，每一部分都对应着特定的信息。</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">反应速度到底是什么？</h2>
+    <p class="mb-4">简单来说，反应速度就是你从看到或听到某个信号，到身体做出动作所需要的时间。比如，绿灯亮起后踩下油门，或者看到球飞来时挥动球拍，这中间短暂的延迟，就是你的反应时间。</p>
+    <p class="mb-6">这个时间通常以毫秒（千分之一秒）来计算。普通人的反应时间一般在200到300毫秒之间，经过训练的运动员或电竞选手可能会更快。了解自己的反应速度，不仅能满足好奇心，也能让你更了解自己的身体状态。</p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-    <h3 class="font-bold text-blue-900 mb-1">第一部分：地址码（前6位）</h3>
-    <p class="text-gray-700">这就像是你的“籍贯密码”。最开始的两位代表你所在的省份或直辖市，中间两位代表城市，最后两位则对应着区或县。通过这六位数，就能知道你最初是在哪里登记户口的。</p>
-  </div>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">哪些因素会影响反应速度？</h2>
+    <p class="mb-4">反应速度并不是一成不变的，它受到很多日常生活因素的影响：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">睡眠质量：</span>没睡好或者熬夜后，反应会明显变慢。</li>
+      <li><span class="font-medium">专注程度：</span>走神的时候，反应时间自然会延长。</li>
+      <li><span class="font-medium">情绪压力：</span>紧张或焦虑时，反应可能变得不稳定。</li>
+      <li><span class="font-medium">身体疲劳：</span>长时间工作或运动后，反应能力会下降。</li>
+      <li><span class="font-medium">年龄：</span>一般来说，年轻人的反应会略快于老年人，但个体差异很大。</li>
+    </ul>
 
-  <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
-    <h3 class="font-bold text-green-900 mb-1">第二部分：出生日期码（第7到14位）</h3>
-    <p class="text-gray-700">这是最直观的部分。比如“19900101”，就代表1990年1月1日。你的公历生日就牢牢地嵌在了这里。</p>
-  </div>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何简单测试你的反应速度？</h2>
+    <p class="mb-4">测试反应速度其实很简单，不需要复杂的仪器。其核心原理是：在你毫无准备的情况下给出一个视觉信号（比如颜色变化），然后记录下你从看到信号到做出指定动作（比如点击按钮）所花的时间。</p>
+    <p class="mb-6">通过这种测试，你可以得到一个具体的毫秒数。多测试几次，取一个平均水平，就能比较客观地反映你当下的反应状态。记住，测试时尽量保持放松和专注，结果会更准确。</p>
 
-  <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-8">
-    <h3 class="font-bold text-purple-900 mb-1">第三部分：顺序码和校验码（最后4位）</h3>
-    <p class="text-gray-700">第15到17位是顺序码，其中第17位特别关键——<strong>奇数代表男性，偶数代表女性</strong>。最后一位是校验码，它是通过一套复杂的公式计算出来的，用来验证整个号码是否正确有效，防止输错。</p>
-  </div>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">测出来的反应时间有什么用？</h2>
+    <p class="mb-4">首先，它给你一个有趣的参照。你可以和朋友或家人比一比，看看谁的反应更快，变成一个小游戏。</p>
+    <p class="mb-4">更重要的是，你可以把它当作一个简单的“状态监测仪”。如果某天测出来反应时间特别长，也许是在提醒你：是不是太累了？该休息了？或者最近注意力不太集中？</p>
+    <p class="mb-6">当然，这只是一个参考，不能作为医学判断依据。如果你长期感觉反应迟钝，并伴有其他不适，还是要咨询专业医生。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">生日数字里的更多趣味信息</h2>
-  <p class="mb-4">知道了出生日期，其实还能推算出很多有趣的信息，让你的个人资料变得更加立体。</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2 text-gray-700">
-    <li><strong>农历生日</strong>：我们很多人还会过农历生日，它和公历生日每年都不同。</li>
-    <li><strong>星座</strong>：根据出生日期可以找到对应的十二星座。</li>
-    <li><strong>生肖</strong>：你的农历出生年份决定了你的属相。</li>
-    <li><strong>出生那天是星期几？</strong>：这是一个常被忽略但很有意思的小细节。</li>
-    <li><strong>现在的准确年龄</strong>：精确到岁的年龄计算。</li>
-  </ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">怎样让反应变得更快？</h2>
+    <p class="mb-4">虽然先天条件有影响，但反应速度是可以通过一些方式锻炼和维持的：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">规律运动：</span>尤其是球类、乒乓球、羽毛球等需要快速反应的运动。</li>
+      <li><span class="font-medium">保证睡眠：</span>让大脑得到充分休息，是保持反应敏捷的基础。</li>
+      <li><span class="font-medium">适度游戏：</span>一些需要快速判断的动作类或益智类游戏，也是一种练习。</li>
+      <li><span class="font-medium">练习专注：</span>尝试冥想或在一段时间内专注于一件事，减少分心。</li>
+    </ul>
+    <p class="mb-6">最重要的是保持身心健康和良好的生活习惯。</p>
 
-  <div class="bg-gray-50 rounded-xl p-6 md:p-8 my-10 border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何安全地查看这些信息？</h2>
-    <p class="mb-4">既然身份证号码包含这么多个人隐私，很多人都会担心：如果我想看看自己的号码解析出来是什么样子，或者核对一下信息，安全吗？</p>
-    <p class="mb-4 font-medium">这里就涉及到一个非常重要的概念：<span class="text-blue-700">本地解析</span>。</p>
-    <p>“本地解析”的意思是，所有的计算和查询工作，都在你自己的设备（比如你的手机或电脑）上瞬间完成。你的身份证号码<strong>根本不会被发送到任何网络服务器上</strong>，也就完全避免了信息在传输过程中被截获或泄露的风险。</p>
-    <p class="mt-4 text-gray-600 text-sm">就像一个计算器，你在上面输入数字做计算，结果立刻出来，整个过程不需要告诉任何人。本地解析工具的原理就和这个类似，把隐私牢牢锁在你的设备里。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
-  <div class="space-y-6 mb-10">
-    <div>
-      <h3 class="font-bold text-gray-900 mb-2">它能做什么？安全吗？</h3>
-      <p class="text-gray-700">它可以根据你输入的号码，快速告诉你对应的地址、生日、性别、农历生日、星座等信息。关键在于，这是一个纯粹的本地工具，你输入的内容不会被上传，所以非常安全，可以放心用来了解自己或核对信息。</p>
+    <div class="bg-blue-50 p-6 rounded-lg my-8">
+      <h3 class="text-xl font-semibold mb-3">小提示：正确看待测试结果</h3>
+      <p class="mb-2">反应速度的测试结果受当时环境、心情、设备甚至点击动作本身的影响，会有波动。一次的结果不代表你的永久水平。</p>
+      <p>别太纠结于具体数字，更重要的是关注自己状态的变化趋势，以及通过测试更了解自己的身体信号。把它当作一个认识自己的小工具，玩得开心就好。</p>
     </div>
-    <div>
-      <h3 class="font-bold text-gray-900 mb-2">什么时候会用到它？</h3>
-      <p class="text-gray-700">当你想确认自己记的身份证号码是否正确（通过校验码）；当你想快速知道某个号码对应的生日和年龄；或者仅仅是想好奇地了解一下自己身份证号码背后的“隐藏信息”。</p>
-    </div>
-    <div>
-      <h3 class="font-bold text-gray-900 mb-2">所有人都能用吗？</h3>
-      <p class="text-gray-700">是的，只要你知道一个18位的中国大陆居民身份证号码（仅供自己或获得他人允许后用于信息核对），就可以使用。操作非常简单，只需输入号码，结果一目了然。</p>
-    </div>
-  </div>
 
-  <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-    <p>了解自己的身份信息是件有趣的事，但请务必妥善保管好你的身份证及号码，切勿随意向他人泄露。</p>
-  </div>
-</article>
-`;export{t as default};
+    <p class="text-lg mt-10 pt-6 border-t">希望这篇文章能帮你解开关于反应速度的小疑惑。不妨现在就找个工具测一测，看看你的“瞬时反应”在什么水平吧！记得，健康的生活方式和愉悦的心情，才是保持思维敏捷的最好“补剂”。</p>
+  </article>
+</div>
+`;export{l as default};

@@ -1,152 +1,67 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
-    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 leading-tight">
-      做生意怎么算利润？一个小工具让你明明白白
-    </h1>
-    
-    <div class="text-gray-600 text-sm mb-6">
-      <span>更新日期：2023年10月</span>
-      <span class="mx-2">|</span>
-      <span>阅读时间：约5分钟</span>
+const t=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 text-gray-800 font-sans bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">一张身份证号码能看出哪些信息？</h1>
+  <p class="text-gray-600 mb-8 text-lg">除了证明身份，那一长串数字里还藏着你可能不知道的秘密。</p>
+
+  <div class="mb-10">
+    <p class="mb-4">我们每个人都有身份证。拿到手里，上面有照片、姓名、住址，还有那串长长的18位号码。很多人都知道这串号码很重要，但具体每一位代表什么，可能就不太清楚了。</p>
+    <p>今天，我们就来轻松聊聊，这18位身份证号码，到底告诉了我们哪些关于你的信息。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">身份证号码的秘密：三段式解读</h2>
+  <p class="mb-6">其实，你的18位身份证号可以被清晰地分成三个部分，每一部分都对应着特定的信息。</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <h3 class="font-bold text-blue-900 mb-1">第一部分：地址码（前6位）</h3>
+    <p class="text-gray-700">这就像是你的“籍贯密码”。最开始的两位代表你所在的省份或直辖市，中间两位代表城市，最后两位则对应着区或县。通过这六位数，就能知道你最初是在哪里登记户口的。</p>
+  </div>
+
+  <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+    <h3 class="font-bold text-green-900 mb-1">第二部分：出生日期码（第7到14位）</h3>
+    <p class="text-gray-700">这是最直观的部分。比如“19900101”，就代表1990年1月1日。你的公历生日就牢牢地嵌在了这里。</p>
+  </div>
+
+  <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-8">
+    <h3 class="font-bold text-purple-900 mb-1">第三部分：顺序码和校验码（最后4位）</h3>
+    <p class="text-gray-700">第15到17位是顺序码，其中第17位特别关键——<strong>奇数代表男性，偶数代表女性</strong>。最后一位是校验码，它是通过一套复杂的公式计算出来的，用来验证整个号码是否正确有效，防止输错。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">生日数字里的更多趣味信息</h2>
+  <p class="mb-4">知道了出生日期，其实还能推算出很多有趣的信息，让你的个人资料变得更加立体。</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2 text-gray-700">
+    <li><strong>农历生日</strong>：我们很多人还会过农历生日，它和公历生日每年都不同。</li>
+    <li><strong>星座</strong>：根据出生日期可以找到对应的十二星座。</li>
+    <li><strong>生肖</strong>：你的农历出生年份决定了你的属相。</li>
+    <li><strong>出生那天是星期几？</strong>：这是一个常被忽略但很有意思的小细节。</li>
+    <li><strong>现在的准确年龄</strong>：精确到岁的年龄计算。</li>
+  </ul>
+
+  <div class="bg-gray-50 rounded-xl p-6 md:p-8 my-10 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何安全地查看这些信息？</h2>
+    <p class="mb-4">既然身份证号码包含这么多个人隐私，很多人都会担心：如果我想看看自己的号码解析出来是什么样子，或者核对一下信息，安全吗？</p>
+    <p class="mb-4 font-medium">这里就涉及到一个非常重要的概念：<span class="text-blue-700">本地解析</span>。</p>
+    <p>“本地解析”的意思是，所有的计算和查询工作，都在你自己的设备（比如你的手机或电脑）上瞬间完成。你的身份证号码<strong>根本不会被发送到任何网络服务器上</strong>，也就完全避免了信息在传输过程中被截获或泄露的风险。</p>
+    <p class="mt-4 text-gray-600 text-sm">就像一个计算器，你在上面输入数字做计算，结果立刻出来，整个过程不需要告诉任何人。本地解析工具的原理就和这个类似，把隐私牢牢锁在你的设备里。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">它能做什么？安全吗？</h3>
+      <p class="text-gray-700">它可以根据你输入的号码，快速告诉你对应的地址、生日、性别、农历生日、星座等信息。关键在于，这是一个纯粹的本地工具，你输入的内容不会被上传，所以非常安全，可以放心用来了解自己或核对信息。</p>
     </div>
-    
-    <div class="prose prose-gray max-w-none">
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        你有没有遇到过这样的情况：做了一笔生意，订单金额看起来不错，但最后算下来却没赚多少钱？手续费、提现费、成本...各种费用一扣，实际利润和预期相差甚远。今天，我们来聊聊如何准确计算生意的真实利润。
-      </p>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        为什么生意做了很多，钱却没剩下多少？
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        很多刚开始做生意的朋友都会有这样的困惑：明明订单金额不小，为什么到手的钱却不多？其实，这是因为我们常常忽略了几个重要的成本项。
-      </p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
-        <p class="text-gray-700 m-0 leading-relaxed">
-          举个例子：一笔1000元的订单，平台收取5%的手续费，提现时再扣10元，成本占80%。这样算下来，最后的利润可能只有几十元。
-        </p>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        影响实际利润的三大因素
-      </h2>
-      
-      <div class="space-y-6 my-8">
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">1. 平台手续费</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            现在很多生意都在线上进行，电商平台、支付平台都会收取一定比例的手续费。这个费用通常按订单金额的百分比计算，是很多人容易忽略的隐形成本。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">2. 提现手续费</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            钱在平台上，要转到自己的银行卡里，往往还需要支付一笔提现费。这笔费用有时是固定的，有时按比例计算，积少成多也是一笔不小的开支。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">3. 成本控制</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            除了直接的产品成本，还有物流、包装、人工等间接成本。把这些都算进去，才能知道真正的利润空间有多大。
-          </p>
-        </div>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        怎么知道自己什么时候开始赚钱？
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个问题很多人都关心。其实每个生意都有一个“开始盈利点”，也就是要达到多少销售额才能覆盖所有成本，开始真正赚钱。
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个点需要考虑提现手续费、平台手续费和你的成本比例。通过计算，你可以清楚地知道：我的生意要做到多少钱才能不亏本？做到多少钱才能达到目标利润？
-      </p>
-      
-      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
-        <h3 class="text-lg font-semibold text-gray-800 mb-4">一个简单的计算方法：</h3>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
-            <span>先算出手续费占总金额的比例</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
-            <span>再加上提现手续费</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
-            <span>考虑成本占比</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">4</span>
-            <span>综合计算得出盈利点</span>
-          </li>
-        </ul>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        最终利润比例：衡量生意健康度的重要指标
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        只看赚了多少钱还不够，还要看利润比例。同样赚100元，一个是1000元订单赚的，一个是5000元订单赚的，生意健康度完全不同。
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        最终利润比例 = （最终利润 ÷ 订单总金额）× 100%
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个数字能帮你判断：我的定价合理吗？成本控制得好吗？有没有优化空间？
-      </p>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        常见问题解答
-      </h2>
-      
-      <div class="space-y-6 my-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：为什么我算出来的利润和实际到手的不一样？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            可能是因为漏算了一些费用。除了平台手续费和提现费，还要考虑退款率、优惠券成本、包装材料费等。建议把所有可能产生的费用都列出来，逐一计算。
-          </p>
-        </div>
-        
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：手续费多少算合理？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            不同平台手续费不同，一般在0.6%-5%之间。关键不是看绝对值，而是看扣除所有费用后，你的利润是否还能保持健康水平。如果手续费吃掉太多利润，就要考虑换平台或者调整定价策略。
-          </p>
-        </div>
-        
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：如何提高最终利润比例？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            可以从几个方面入手：1. 优化成本，寻找性价比更高的供应商；2. 提高客单价，适当调整定价；3. 减少中间环节，降低手续费；4. 提高运营效率，减少浪费。
-          </p>
-        </div>
-      </div>
-      
-      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-10">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">小贴士：定期计算利润</h3>
-        <p class="text-gray-700 m-0 leading-relaxed">
-          建议每个月都算一次账，把当月的所有订单、所有费用都统计清楚。这样不仅能了解自己的真实盈利情况，还能及时发现问题，调整经营策略。做生意，心中有数才能走得更远。
-        </p>
-      </div>
-      
-      <div class="border-t border-gray-200 mt-10 pt-8">
-        <p class="text-gray-600 text-sm leading-relaxed">
-          本文旨在帮助普通生意人理解利润计算的原理和方法。实际经营中，建议咨询专业财务人员，确保账目清晰准确。
-        </p>
-      </div>
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">什么时候会用到它？</h3>
+      <p class="text-gray-700">当你想确认自己记的身份证号码是否正确（通过校验码）；当你想快速知道某个号码对应的生日和年龄；或者仅仅是想好奇地了解一下自己身份证号码背后的“隐藏信息”。</p>
     </div>
-  </article>
-</div>
-`;export{e as default};
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">所有人都能用吗？</h3>
+      <p class="text-gray-700">是的，只要你知道一个18位的中国大陆居民身份证号码（仅供自己或获得他人允许后用于信息核对），就可以使用。操作非常简单，只需输入号码，结果一目了然。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+    <p>了解自己的身份信息是件有趣的事，但请务必妥善保管好你的身份证及号码，切勿随意向他人泄露。</p>
+  </div>
+</article>
+`;export{t as default};

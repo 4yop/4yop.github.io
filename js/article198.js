@@ -1,176 +1,123 @@
-const e=`
-<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">PDF文件被锁住了怎么办？在线解密工具帮你快速移除密码限制</h1>
+const h=`
+<div class="article-content">
+  <h1>文本对比工具 - 快速发现代码与文档的差异</h1>
 
-  <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-    你有没有遇到过这种情况：急需打开一份PDF文件，却发现它被密码锁住了，或者只能看不能打印、不能编辑？别着急，这篇文章就为你介绍一款完全在浏览器本地运行的PDF解密工具，帮助你安全、快速地移除PDF密码限制。
+  <p class="intro">
+    在日常开发、文档编写和数据处理工作中，我们经常需要对比两段文本的差异。文本对比工具（Text Diff Tool）能够智能识别并高亮显示文本之间的增删改内容，帮助用户快速定位差异，提高工作效率。无论是代码审查、文档校对还是合同比对，一个高效的差异比较工具都能为工作流程带来质的飞跃。
   </p>
 
-  <div class="border-l-4 border-green-500 bg-green-50 p-5 mb-8">
-    <p class="text-gray-700 italic">
-      "同事发来的重要资料打不开"、"自己设的密码忘了"、"网上下载的文献无法标注"……这些烦恼，用这款本地PDF解密工具就能轻松解决。
-    </p>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">PDF为什么会被"锁上"？</h2>
-  <p class="mb-4 leading-relaxed">
-    你可以把PDF文件想象成一间房子。房主（也就是文件创建者）为了保护里面的内容，可能会给房子加两把"锁"。
-  </p>
-  <ul class="space-y-3 mb-8 pl-5">
-    <li class="flex items-start">
-      <span class="text-green-500 mr-2">1.</span>
-      <span><strong>第一把锁：打开密码（用户密码）。</strong>就像大门钥匙，没有正确的密码，你连门都进不去，文件完全无法打开查看。</span>
-    </li>
-    <li class="flex items-start">
-      <span class="text-green-500 mr-2">2.</span>
-      <span><strong>第二把锁：权限限制（所有者密码）。</strong>进了门，但主人规定"不能拍照（打印）"、"不能移动家具（编辑）"、"不能复制物品上的文字"。这些就是权限限制。</span>
-    </li>
-  </ul>
-  <p class="text-gray-600 mb-10 leading-relaxed">
-    无论是忘了钥匙，还是想摆脱屋内的种种限制，你需要的都是一把合适的"工具"。而这款在线PDF解密工具，正是为此而生。
+  <h2>什么是文本对比工具</h2>
+  <p>
+    文本对比工具是一种用于比较两段文本或文件差异的在线工具。它通过逐行或逐字符的算法分析，自动识别出两段文本之间的不同之处，并用不同的颜色高亮显示新增、删除和修改的内容。这类工具通常支持代码对比和文档对比两种模式，能够满足不同场景下的使用需求。
   </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三步完成PDF解密：简单到不可思议</h2>
-  <p class="mb-6 leading-relaxed">
-    这款PDF解密工具的操作流程非常直观，整个过程都在你的浏览器中完成：
+  <h2>核心功能特点</h2>
+
+  <h3>1. 差异高亮显示</h3>
+  <p>
+    文本对比工具最核心的功能是差异高亮。通过直观的颜色标识，用户可以一眼看出两段文本的差异：
   </p>
-
-  <div class="grid md:grid-cols-3 gap-6 mb-10">
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-green-500 mb-3 font-bold">1</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">上传 PDF 文件</h3>
-      <p class="text-sm text-gray-600">点击选择或直接拖拽加密的PDF文件到上传区域，支持单个文件处理。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-green-500 mb-3 font-bold">2</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">输入解密密码</h3>
-      <p class="text-sm text-gray-600">输入PDF的正确密码。如果只有权限限制没有打开密码，可以先留空尝试。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-green-500 mb-3 font-bold">3</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">下载解密结果</h3>
-      <p class="text-sm text-gray-600">点击下载按钮，获取已移除所有密码和权限限制的新PDF文件。</p>
-    </div>
-  </div>
-
-  <h3 class="text-xl font-semibold mt-8 mb-4 text-green-700">为什么选择这款工具？三大核心优势</h3>
-  <ul class="space-y-4 mb-10">
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">文件从未离开你的设备</strong>
-        <p class="text-sm text-gray-600">所有处理过程都在你设备的浏览器里瞬间完成，就像在你自己家里整理文件一样，无需上传到任何陌生网站，彻底保护你的隐私和数据安全。</p>
-      </div>
-    </li>
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">支持两种密码类型</strong>
-        <p class="text-sm text-gray-600">同时支持用户密码（打开密码）和所有者密码（权限密码），能够移除包括打印限制、修改限制、复制限制在内的各类权限保护。</p>
-      </div>
-    </li>
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">完全免费且无需注册</strong>
-        <p class="text-sm text-gray-600">不需要安装任何软件或插件，不需要注册账号，打开浏览器就能使用。无论是在电脑上还是在手机上，随时随地都能操作。</p>
-      </div>
-    </li>
+  <ul>
+    <li><strong>绿色高亮</strong>：表示新增的内容</li>
+    <li><strong>红色高亮</strong>：表示删除的内容</li>
+    <li><strong>黄色高亮</strong>：表示修改的内容</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">哪些场景下需要用到它？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">职场办公场景</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        收到客户或同事发来的加密合同、报价单，急需查看或打印；公司内部受限制的资料，需要复制部分内容用于报告编写；投标材料复核前需要解除限制以便查阅。
-      </p>
-    </div>
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">学习研究场景</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        从学术数据库下载的加密PDF论文无法做笔记和高亮标注；自己多年前加密保存的学习资料，如今密码想不起来了；历史档案和归档文件需要重新查看或编辑。
-      </p>
-    </div>
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">财务票据场景</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        发票、报销文件和财务资料带有密码保护，需要再次整理归档；银行流水和账单类PDF文件有权限限制无法复制数据。
-      </p>
-    </div>
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">内部协作场景</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        内部共享文件在二次处理前需要移除打开限制；跨部门流转的文档需要去除密码以便后续编辑和分发。
-      </p>
-    </div>
+  <h3>2. 行级对比与字符级对比</h3>
+  <p>
+    不同的对比粒度适用于不同的场景：
+  </p>
+  <ul>
+    <li><strong>行级对比</strong>：以行为单位进行差异识别，适合文档、合同等整体内容较多的文本对比。当某一行发生变化时，整行会被标记为修改。</li>
+    <li><strong>字符级对比</strong>：以字符为单位进行精细对比，适合代码、配置文件等需要精确到字符差异的场景。即使只修改了一个字符，也能精准定位。</li>
+  </ul>
+
+  <h3>3. 代码语法高亮</h3>
+  <p>
+    针对代码对比场景，现代文本对比工具通常支持多种编程语言的语法高亮显示，使代码差异更易阅读和理解。支持的语言包括但不限于JavaScript、Python、Java、C++、HTML、CSS等主流编程语言。</p>
+
+  <h3>4. 实时同步滚动</h3>
+  <p>
+    当对比长篇文本或文件时，实时同步滚动功能可以让用户在滚动一侧内容时，另一侧自动同步滚动到对应位置，大大提升了对比体验。</p>
+
+  <h2>文本对比工具的应用场景</h2>
+
+  <h3>1. 代码审查（Code Review）</h3>
+  <p>
+    在团队开发中，代码审查是保证代码质量的重要环节。开发者提交代码后，审查者需要对比代码的前后版本，查看改动是否符合规范、逻辑是否正确。文本对比工具能够清晰展示每一次代码变更，帮助审查者快速理解修改意图。
+  </p>
+
+  <h3>2. 文档校对</h3>
+  <p>
+    编辑、文案人员经常需要对比文档的不同版本，查看修订内容。文本对比工具可以高亮显示文档的修改部分，避免人工查找的繁琐过程，特别适用于合同修改、方案优化、文章校对等场景。
+  </p>
+
+  <h3>3. 配置文件管理</h3>
+  <p>
+    系统管理员和运维人员经常需要对比服务器配置文件的变更，确保修改正确且符合预期。通过文本对比工具，可以快速识别配置项的增删改，减少人为错误。
+  </p>
+
+  <h3>4. 数据迁移验证</h3>
+  <p>
+    在数据迁移或数据同步过程中，对比源数据和目标数据的一致性非常重要。文本对比工具可以帮助验证数据是否完整迁移，发现潜在的数据丢失或错误。
+  </p>
+
+  <h2>提高文本对比效率的技巧</h2>
+
+  <h3>1. 选择合适的对比粒度</h3>
+  <p>
+    根据对比内容的类型选择合适的对比粒度。对于代码等需要精确对比的内容，优先使用字符级对比；对于文档、合同等整体性较强的内容，行级对比更为合适。
+  </p>
+
+  <h3>2. 忽略空格差异</h3>
+  <p>
+    在某些场景下，空格的差异可能并不重要。启用"忽略空格差异"功能可以过滤掉纯空格的变化，让用户聚焦于实质性的内容修改。
+  </p>
+
+  <h3>3. 使用统一格式化</h3>
+  <p>
+    在对比代码或格式化文本前，先统一格式化两端内容，消除格式差异的干扰。这样可以避免因为缩进、换行等格式问题导致的误判。
+  </p>
+
+  <h3>4. 分段对比长文本</h3>
+  <p>
+    对于超长文本，可以考虑分段对比，或者使用工具提供的搜索功能定位到特定区域再进行对比，提高对比效率。
+  </p>
+
+  <h2>文本对比工具 vs Git Diff</h2>
+  <p>
+    很多开发者会问：文本对比工具和Git Diff有什么区别？实际上，两者在功能上有一定重叠，但定位不同：
+  </p>
+  <ul>
+    <li><strong>Git Diff</strong>：专注于版本控制场景，对比的是Git仓库中不同版本文件的差异，需要Git环境支持，适合项目开发流程中的代码变更追踪。</li>
+    <li><strong>文本对比工具</strong>：是一个独立的在线工具，不依赖任何版本控制系统，可以对比任意两段文本，使用场景更灵活，包括非开发场景（如合同比对、文档校对）。</li>
+  </ul>
+  <p>
+    在实际工作中，两者可以互补使用。Git Diff用于日常开发流程中的代码审查，文本对比工具用于临时性的对比需求或非代码类的文本对比。
+  </p>
+
+  <h2>常见问题解答</h2>
+
+  <div class="faq">
+    <h3>Q1: 文本对比工具可以比较哪些类型的文件？</h3>
+    <p>A: 理论上，文本对比工具可以比较所有基于文本格式的文件，包括代码文件（.js、.py、.java等）、配置文件（.json、.xml、.yaml等）、文档文件（.txt、.md、.html等）。但不适用于二进制文件（如图片、视频、可执行文件等）。</p>
+
+    <h3>Q2: 行级对比和字符级对比有什么区别？</h3>
+    <p>A: 行级对比以行为单位识别差异，当一行中的任何内容发生变化时，整行会被标记为修改；字符级对比则以单个字符为单位进行精确识别，能够定位到具体的变化位置。字符级对比更精细，适合代码对比；行级对比更宏观，适合文档对比。</p>
+
+    <h3>Q3: 如何处理格式差异导致的误判？</h3>
+    <p>A: 可以使用以下方法处理格式差异：1）启用"忽略空格差异"功能；2）对比前统一格式化两段文本；3）手动调整格式后再进行对比；4）选择支持智能格式识别的高级对比工具。</p>
+
+    <h3>Q4: 文本对比工具会保存我输入的内容吗？</h3>
+    <p>A: 这取决于具体的工具实现。大多数在线文本对比工具为了保护用户隐私，不会保存用户输入的文本内容，对比过程完全在浏览器端完成。但使用前建议查看工具的隐私政策，确保数据安全。</p>
+
+    <h3>Q5: 对超大文件进行对比时有什么优化建议？</h3>
+    <p>A: 对于超大文件，建议：1）分段对比，逐段查看差异；2）使用支持部分加载的工具，避免一次性加载整个文件；3）利用搜索功能定位到特定区域；4）考虑使用本地对比工具，避免浏览器内存溢出。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">关于密码你需要知道的几件事</h2>
-  <div class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200 mt-4 mb-12">
-    <div class="space-y-6">
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：用户密码和所有者密码有什么区别？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：用户密码也叫打开密码，是打开文件时必须输入的密码。所有者密码也叫权限密码，用于控制文件的权限设置（如是否允许打印、复制等）。大多数情况下，知道其中任意一个密码都可以尝试进行解密操作。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：如果我不知道密码怎么办？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：很遗憾，如果文件设置了打开密码而你不知道密码，任何工具都无法帮助你打开它。这和忘记了自家保险柜密码是一样的道理。本工具的作用是在你知道密码的前提下，帮你移除后续的各种使用限制。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：如果文件只有权限限制没有打开密码呢？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：这种情况下你可以先不输入密码，直接点击"开始解密"按钮尝试。如果文件确实只有权限限制而没有打开密码，工具可以直接移除这些限制并生成新文件。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：解密后的文件会损坏吗？原文件会变吗？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：不会。工具会生成一个全新的、内容完整但去除了所有密码和限制的PDF文件。原始加密文件依然完好无损地保留在你的设备上，不会被修改或删除。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：这个工具安全吗？我的文件会被上传吗？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：非常安全。整个解密过程就像在你自己的书房里用剪刀和胶水处理一份纸质文件，文件从未离开你的设备，不会被任何网络服务器看到或保存。密码也仅在当前浏览器会话中使用，不会被发送或记录。</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">使用步骤详解</h2>
-  <div class="space-y-6 mb-12">
-    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
-      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
-      <div>
-        <h4 class="font-semibold text-gray-800 mb-1">上传 PDF 文件</h4>
-        <p class="text-gray-600 text-sm">在页面左侧的上传区域，点击"选择PDF文件"按钮或直接将PDF文件拖拽到虚线框内。支持单个PDF文件上传，文件大小不限。</p>
-      </div>
-    </div>
-    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
-      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
-      <div>
-        <h4 class="font-semibold text-gray-800 mb-1">输入解密密码（如需要）</h4>
-        <p class="text-gray-600 text-sm">在密码输入框中输入PDF的正确密码。如果你不确定文件是否有打开密码，可以留空先尝试解密。工具支持显示/隐藏密码切换功能，方便确认输入。</p>
-      </div>
-    </div>
-    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
-      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
-      <div>
-        <h4 class="font-semibold text-gray-800 mb-1">点击开始解密</h4>
-        <p class="text-gray-600 text-sm">点击绿色的"开始解密"按钮，工具会在浏览器中读取文件、验证密码、移除限制并生成新的PDF文件。处理过程中会显示进度提示。</p>
-      </div>
-    </div>
-    <div class="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-lg">
-      <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
-      <div>
-        <h4 class="font-semibold text-gray-800 mb-1">下载解密后的文件</h4>
-        <p class="text-gray-600 text-sm">解密完成后，右侧区域会显示结果信息。点击"下载解密后的PDF"按钮即可保存新文件到本地。文件名包含时间戳便于管理。</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-12 pt-8 border-t text-center">
-    <p class="text-gray-700 mb-4">
-      希望这篇文章能帮你了解如何使用PDF解密工具来处理那些被"锁住"的PDF文件。当再遇到打不开、无法打印或编辑的PDF时，你知道有一个安全、本地且简单的方法可以尝试了。
-    </p>
-    <p class="text-sm text-gray-500">
-      请注意：请仅将此工具用于处理你合法拥有或获得授权的文件。尊重知识产权，遵守相关法律法规。
-    </p>
-  </div>
-</article>
-`;export{e as default};
+  <h2>结语</h2>
+  <p>
+    文本对比工具是现代工作中不可或缺的效率工具，无论是开发者、编辑还是普通办公人员，都能从中受益。通过智能的差异识别和直观的高亮显示，它让复杂的对比工作变得简单高效。选择一款合适的文本对比工具，掌握正确的使用技巧，将大大提升您的工作效率和准确性。
+  </p>
+</div>
+`;export{h as default};

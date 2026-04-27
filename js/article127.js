@@ -1,1 +1,82 @@
-const t='<div class="bg-white text-gray-800 font-sans"><div class="max-w-3xl mx-auto px-4 py-8 md:py-12"><h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">太阳方位角与高度角计算器：轻松知道太阳在哪，什么时候拍照最好？</h1><p class="text-lg text-gray-600 mb-6">你有没有遇到过这种情况：想趁着夕阳拍一组逆光大片，却不知道太阳几点落到西边；或者想在阳台种满喜欢阳光的植物，却不清楚哪个角落光照最足？太阳每天东升西落，但它的具体位置其实可以通过两个简单数字来描述——<strong class="font-semibold text-gray-900">太阳方位角</strong>和<strong class="font-semibold text-gray-900">太阳高度角</strong>。今天我们就来聊聊这两个概念，以及一个能帮你随时知道太阳位置的小工具。</p><div class="mb-10"><h2 class="text-2xl font-semibold text-gray-900 mb-3">方位角和高度角到底是什么？</h2><p class="text-gray-700 leading-relaxed mb-3">想象你站在一片空旷的平地上，头顶是蓝天。太阳在天空中的位置可以用两个方向来描述：</p><ul class="list-disc pl-6 text-gray-700 space-y-2 mb-3"><li><strong class="font-medium">方位角</strong> 告诉你太阳从哪个方向照过来。比如早上太阳从东边升起，方位角大约是90°（正东）；中午太阳在正南（北半球），方位角180°；傍晚落入西边，方位角270°。简单说，它就是太阳在地平线上的“指南针方向”。</li><li><strong class="font-medium">高度角</strong> 则告诉你太阳有多高，或者说它离地平线有多远。早上日出时高度角为0°，随着太阳升高，角度越来越大，正午时达到一天中的最大值（比如夏天可能接近90°，就在头顶），然后又慢慢下降，日落时又回到0°。</li></ul><p class="text-gray-700 leading-relaxed">有了这两个角度，你就能准确地知道此时此刻太阳相对于你所在的位置，就好像给太阳在天空中的位置画了一个坐标。</p></div><div class="mb-10"><h2 class="text-2xl font-semibold text-gray-900 mb-3">这个小工具能帮你做什么？</h2><p class="text-gray-700 leading-relaxed mb-3">我们做的这个太阳方位角与高度角计算器，就是为了让你不用公式、不用查表，随时随地都能知道太阳的位置。你只需要：</p><ol class="list-decimal pl-6 text-gray-700 space-y-2 mb-3"><li>选择你想查询的日期和时间（也可以直接点“设为当前时间”）。</li><li>输入你所在位置的经纬度。如果你不知道经纬度，点击“获取当前位置”，浏览器就会自动帮你填好（记得允许定位哦）。</li><li>然后，右边的结果区就会立刻显示出当时的太阳方位角和高度角，甚至连方向描述（比如“西南”）都给你写好了。</li></ol><p class="text-gray-700 leading-relaxed">整个过程只需要几秒钟，完全不需要任何专业知识。</p></div><div class="mb-10"><h2 class="text-2xl font-semibold text-gray-900 mb-3">谁最需要知道太阳的准确位置？</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"><div class="bg-gray-50 p-4 rounded-lg"><h3 class="font-semibold text-lg text-gray-900 mb-1">📷 摄影师与视频创作者</h3><p class="text-gray-600">“黄金时刻”和“蓝色时刻”是摄影的绝佳时机，提前知道太阳高度角和方位，就能选好机位，等光来。比如拍逆光人像，需要太阳在西边且角度较低，计算器能帮你精确到几点几分。</p></div><div class="bg-gray-50 p-4 rounded-lg"><h3 class="font-semibold text-lg text-gray-900 mb-1">🏠 建筑与室内设计</h3><p class="text-gray-600">想给新家设计一扇落地窗，让冬天阳光满屋，夏天又不暴晒？不同季节、不同时间的太阳高度角差别很大，用计算器模拟一下，就能找到最适合的窗户朝向和遮阳方式。</p></div><div class="bg-gray-50 p-4 rounded-lg"><h3 class="font-semibold text-lg text-gray-900 mb-1">☀️ 太阳能设备安装</h3><p class="text-gray-600">太阳能板只有正对太阳才能最高效发电。通过全年的太阳轨迹，确定最佳倾角和朝向，让每一缕阳光都变成电能。</p></div><div class="bg-gray-50 p-4 rounded-lg"><h3 class="font-semibold text-lg text-gray-900 mb-1">🌱 园艺与农业</h3><p class="text-gray-600">菜园、花园的光照决定了植物能不能长好。知道太阳位置，就能合理规划种植区域，把喜阳的蔬菜放在阳光最持久的地方。</p></div></div><p class="text-gray-700 leading-relaxed">当然，即使你只是好奇每天太阳位置的变化，或者想给孩子解释为什么影子长短会变，这个工具也很有趣。</p></div><div class="mb-10"><h2 class="text-2xl font-semibold text-gray-900 mb-3">如何看懂结果？</h2><p class="text-gray-700 leading-relaxed mb-3">结果页会显示两个数值：</p><ul class="list-disc pl-6 text-gray-700 space-y-2 mb-3"><li><strong class="font-medium">方位角</strong> 从0°（正北）开始，顺时针增加：90°为正东，180°为正南，270°为正西，360°又回到正北。旁边还会用中文告诉你大致方向（比如北、东北、东等），更直观。</li><li><strong class="font-medium">高度角</strong> 0°表示太阳刚好在地平线上（日出或日落），90°表示太阳就在头顶正上方（正午直射）。数值越大，太阳越高，影子越短。</li></ul><p class="text-gray-700 leading-relaxed">举个例子：如果你看到“方位角 135° 东南”，就说明太阳在东南方向，大约在东南和正南中间；“高度角 45°”则说明太阳差不多是斜45°角照射，既不低也不高。</p></div><div class="mb-10"><h2 class="text-2xl font-semibold text-gray-900 mb-3">生活中的实用小场景</h2><p class="text-gray-700 leading-relaxed mb-3">▸ 周末想去公园野餐，想找个有树荫但不完全晒不到太阳的地方？提前查一下下午两点的太阳方位，就能避开直晒区域。<br>▸ 打算在客厅挂一幅画，怕被阳光晒褪色？看看春分那天下午阳光会从哪个角度照进来，把画挂在背光的那面墙。<br>▸ 买了新房，想确定阳台在冬至那天能不能晒到太阳？输入冬至那天的日期和你的纬度，就能看到最低的太阳高度，判断阳台是否会被前排楼遮挡。</p></div><div class="border-t border-gray-200 pt-6 text-gray-500 text-sm"><p>太阳的轨迹其实很规律，但以前总觉得要查专业软件或看复杂的表格。有了这个太阳方位角与高度角计算器，任何人都能随手掌握太阳的动态。无论你是专业人士还是普通爱好者，希望这个小工具能帮你更好地安排生活，与阳光和谐相处。</p></div></div></div>';export{t as default};
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-6 text-gray-700 leading-relaxed">
+
+  <!-- 主标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">数学步骤计算器：让复杂表达式一步步变简单，告别计算烦恼</h1>
+
+  <!-- 引言段落 -->
+  <p class="text-lg mb-6">
+    小时候做数学题，最怕的不是算不出结果，而是不知道中间过程哪里错了。工作后遇到带括号、乘方、三角函数的混合算式，总想有个人能一步一步拆给我们看。现在，这个“数学步骤计算器”就像一位耐心的数学老师，你输入一个算式，它就把每一步怎么算的都列出来，清清楚楚。
+  </p>
+
+  <!-- 小标题：它有什么用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">它有什么用？不只是给答案，更给过程</h2>
+  <p class="mb-4">
+    普通计算器只给你一个冷冰冰的数字，错了你都不知道哪一步出了问题。而这个计算器的特别之处在于，它会像你手算一样，先算括号里的，再算乘方，然后乘除，最后加减——每一层都展开给你看。比如输入 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)+(2+3)*4^2/2</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)=4</code>，再算 <code class="bg-gray-100 px-1 py-0.5 rounded">(2+3)=5</code>，然后一步步得出最终结果。整个过程都在右侧的“计算步骤”区显示，你可以一边看一边对照自己的思路。
+  </p>
+
+  <!-- 小标题：支持哪些运算？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">加减乘除、平方根、三角函数……它都会</h2>
+  <p class="mb-4">
+    除了最基础的加减乘除（+ - * /）和乘方（^），它还支持很多常用数学函数：
+  </p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>平方根</strong>：sqrt(9)  → 3</li>
+    <li><strong>三角函数</strong>：sin, cos, tan 以及它们的反函数 asin, acos, atan</li>
+    <li><strong>对数</strong>：log（以10为底）、ln（自然对数）、exp（e的次方）</li>
+    <li><strong>绝对值</strong>：abs(-5) → 5</li>
+  </ul>
+  <p class="mb-4">
+    不论你是中学生做函数题，还是工程师验算数据，这些功能都够用。而且它完全免费，打开网页就能用，不用下载任何软件。
+  </p>
+
+  <!-- 小标题：为什么需要看到每一步？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">看到每一步，才能真的理解数学</h2>
+  <p class="mb-4">
+    很多朋友用计算器只是求个结果，但遇到复杂算式时，运算顺序（先乘除后加减、括号优先）往往容易搞混。这个计算器把每一步都展示出来，等于帮你复习了一遍运算法则。比如 <code class="bg-gray-100 px-1 py-0.5 rounded">2+3×4</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">3×4=12</code>，再加2得14，而不是从左到右傻算。如果你不小心写错了括号，它还会提示语法错误，让你及时修改。
+  </p>
+
+  <!-- 小标题：适合哪些人用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">谁最需要这个计算器？</h2>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>学生党</strong>：做作业时检查过程，或者遇到不会算的式子，看步骤学习。</li>
+    <li><strong>家长</strong>：辅导孩子数学，自己先验算一遍，确保讲得对。</li>
+    <li><strong>老师</strong>：出题后快速验证步骤，省去手算时间。</li>
+    <li><strong>上班族</strong>：财务、工程、数据分析中遇到复杂公式，不再头疼。</li>
+    <li><strong>考研/备考族</strong>：复习基础运算，巩固计算能力。</li>
+  </ul>
+
+  <!-- 小标题：怎么用？简单三步 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？简单三步</h2>
+  <ol class="list-decimal pl-6 mb-6 space-y-2">
+    <li>在输入框里写下你的数学表达式，比如 <code class="bg-gray-100 px-1 py-0.5 rounded">(5+3)/2^3</code>。</li>
+    <li>点击蓝色的“计算”按钮（或者直接按回车）。</li>
+    <li>右侧立刻显示一步步的计算过程，最下面还有最终结果。</li>
+  </ol>
+  <p class="mb-4">
+    如果你想保存结果或步骤，可以点“复制数值”只复制最终数字，或者点“复制全部（结果+步骤）”把整个计算过程复制下来，方便贴在作业或报告里。
+  </p>
+
+  <!-- 小标题：常见问题 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">你可能想问</h2>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-medium text-gray-900">输入错误怎么办？</h3>
+      <p>输入框下面会有红色提示，告诉你哪里错了，比如括号不匹配、用了不支持的符号。修改正确后再点计算就行。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">可以计算很长的式子吗？</h3>
+      <p>当然可以，只要你的表达式合理，它都会耐心地一步步拆解。不过为了阅读方便，建议适当换行或用括号分组。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">手机上好用吗？</h3>
+      <p>完全适配手机，输入框和按钮在手机上会自动竖排，步骤区也在下方，字号都调整得刚刚好，手指点按也很方便。</p>
+    </div>
+  </div>
+
+  <!-- 结尾 -->
+  <p class="text-lg border-t pt-6 mt-8 text-gray-600">
+    数学不应该只有答案，还应该有清晰的过程。试试这个数学步骤计算器，让每一个算式都变得透明、可追溯。无论是学习还是工作，它都能成为你随身携带的“数学草稿纸”。
+  </p>
+</div>
+`;export{s as default};

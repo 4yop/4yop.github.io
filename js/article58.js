@@ -1,124 +1,184 @@
-const t=`
-<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">PDF文件被锁住了怎么办？一个简单方法教你轻松打开</h1>
+const s=`
+<div class="bg-white text-gray-800 font-sans leading-relaxed p-4 md:p-8 max-w-4xl mx-auto">
+  <!-- 标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">假装系统在升级：让工作间隙变得更有趣的摸鱼神器</h1>
 
-  <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-    你有没有遇到过这种情况：急需打开一份PDF文件，却发现它被密码锁住了，或者只能看不能打印、不能编辑？别着急，这篇文章就是为你准备的。
+  <!-- 引言 -->
+  <p class="text-lg mb-6 text-gray-600">
+    在紧张的工作中，每个人都偶尔需要片刻的放松。"假装系统在升级"正是为这样的时刻而生——它能让你的电脑屏幕瞬间变成各种操作系统的"正在更新"界面，为你争取宝贵的休息时间。
   </p>
 
-  <div class="border-l-4 border-blue-500 bg-blue-50 p-5 mb-8">
-    <p class="text-gray-700 italic">
-      “同事发来的重要资料打不开”、“自己设的密码忘了”、“网上下载的文献无法标注”……这些烦恼，今天我们就来一起解决。
+  <!-- 工具介绍 -->
+  <div class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是"假装系统在升级"？</h2>
+    <p class="mb-4">
+      这是一个纯前端实现的 <strong class="text-blue-600">系统更新界面模拟器</strong>。它通过CSS动画和JavaScript技术，高度还原了各大主流操作系统的更新界面视觉效果，包括：
     </p>
+    <ul class="list-disc list-inside space-y-2 text-gray-700">
+      <li><strong>Windows XP</strong> - 经典的蓝色渐变背景和文字提示</li>
+      <li><strong>Windows 7</strong> - 优雅的圆形进度条和配置更新界面</li>
+      <li><strong>Windows 10</strong> - 现代化的动态光线效果</li>
+      <li><strong>Windows 11</strong> - 简约的圆环进度设计</li>
+      <li><strong>Ubuntu</strong> - 标志性的紫橙配色和Logo</li>
+      <li><strong>macOS</strong> - 苹果风格的简洁优雅设计</li>
+    </ul>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">PDF为什么会被“锁上”？</h2>
-  <p class="mb-4 leading-relaxed">
-    你可以把PDF文件想象成一间房子。房主（也就是文件创建者）为了保护里面的内容，可能会给房子加两把“锁”。
-  </p>
-  <ul class="space-y-3 mb-8 pl-5">
-    <li class="flex items-start">
-      <span class="text-blue-500 mr-2">•</span>
-      <span><strong>第一把锁：打开密码。</strong>就像大门钥匙，没有正确的密码，你连门都进不去。</span>
-    </li>
-    <li class="flex items-start">
-      <span class="text-blue-500 mr-2">•</span>
-      <span><strong>第二把锁：权限限制。</strong>进了门，但主人规定“不能拍照（打印）”、“不能移动家具（编辑）”、“不能复制物品上的文字”。这些就是权限限制。</span>
-    </li>
-  </ul>
-  <p class="text-gray-600 mb-10 leading-relaxed">
-    无论是忘了钥匙，还是想摆脱屋内的种种限制，你需要的都是一把合适的“工具”。
-  </p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">给你的PDF“松绑”：一个安全又省心的选择</h2>
-  <p class="mb-6 leading-relaxed">
-    现在，有一种非常方便的方法，可以帮你处理被锁住的PDF文件。它的工作原理非常容易理解：
-  </p>
-
-  <div class="grid md:grid-cols-3 gap-6 mb-10">
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-blue-500 mb-3">1</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">选择文件</h3>
-      <p class="text-sm text-gray-600">把你的那个加密PDF文件拖进来或点一下选中它。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-blue-500 mb-3">2</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">输入密码（如果需要）</h3>
-      <p class="text-sm text-gray-600">如果文件有打开密码，就在提示框里输进去。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5 text-center shadow-sm">
-      <div class="text-3xl text-blue-500 mb-3">3</div>
-      <h3 class="font-medium mb-2 h-10 leading-[40px]">获得新文件</h3>
-      <p class="text-sm text-gray-600">稍等片刻，你会得到一份全新的、没有任何限制的PDF。</p>
-    </div>
-  </div>
-
-  <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-700">它最大的好处是什么？</h3>
-  <ul class="space-y-4 mb-10">
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">你的文件从未离开你的电脑/手机</strong>
-        <p class="text-sm text-gray-600">所有处理过程都在你设备的浏览器里瞬间完成，就像在你自己家里整理文件一样，无需上传到任何陌生网站，彻底保护你的隐私。</p>
+  <!-- 功能特点 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">核心功能特点</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-2 text-green-700">多系统支持</h3>
+        <p class="text-gray-700">覆盖市面上最主流的桌面操作系统，每个系统的更新界面都经过精心设计和还原，细节到位。</p>
       </div>
-    </li>
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">操作简单，三步搞定</strong>
-        <p class="text-sm text-gray-600">不需要安装复杂软件，不需要懂任何技术知识。整个过程清晰明了，跟着提示点几下就行。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-2 text-green-700">真实动画效果</h3>
+        <p class="text-gray-700">不仅仅是静态图片，而是包含真实的进度条动画、加载动画和动态消息切换，更加逼真。</p>
       </div>
-    </li>
-    <li class="flex items-start p-4 bg-gray-50 rounded-lg">
-      <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-      <div>
-        <strong class="block mb-1">完全免费，随时随地可用</strong>
-        <p class="text-sm text-gray-600">无论是在家里的电脑，还是通勤路上的手机，打开浏览器就能用，不收取任何费用。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-2 text-green-700">一键全屏显示</h3>
+        <p class="text-gray-700">点击即可进入全屏模式，配合浏览器F11键可实现真正的全屏体验，效果更加震撼。</p>
       </div>
-    </li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">谁可能会需要它？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">职场人士</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        收到客户或同事发来的加密合同、报价单，急需查看或打印；公司内部受限制的资料，需要复制部分内容用于报告。
-      </p>
-    </div>
-    <div class="p-5 border border-gray-200 rounded-lg">
-      <h4 class="font-medium text-lg mb-3 text-gray-800">学生与研究人员</h4>
-      <p class="text-gray-600 text-sm leading-relaxed">
-        从学术数据库下载的PDF论文无法做笔记和高亮标记；自己多年前加密保存的学习资料，如今密码却想不起来了。
-      </p>
-    </div>
-  </div>
-
-  <div class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200 mt-12">
-    <h3 class="text-xl font-semibold mb-4 text-center">常见问题解答</h3>
-    <div class="space-y-6">
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：用这个处理文件安全吗？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：非常安全。整个过程就像在你自己的书房里用剪刀和胶水处理一份纸质文件，文件从未离开你的设备，不会被任何网络服务器看到或保存。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：如果密码输错了怎么办？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：工具会提示你密码错误。你需要输入正确的打开密码才能继续。它并不能破解未知的密码，只是帮你在有密码的前提下，移除文件后续的各种使用限制。</p>
-      </div>
-      <div>
-        <h4 class="font-medium mb-2 text-gray-800">问：处理后的文件会损坏吗？</h4>
-        <p class="text-gray-600 text-sm pl-4">答：不会。它会生成一个内容完整、但去除了所有密码和限制的新PDF文件，原文件依然完好无损地留在你的电脑里。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-2 text-green-700">安全无风险</h3>
+        <p class="text-gray-700">纯前端实现，不会修改任何系统文件或设置，完全无害。按ESC或点击即可随时退出。</p>
       </div>
     </div>
   </div>
 
-  <div class="mt-12 pt-8 border-t text-center">
-    <p class="text-gray-700 mb-4">
-      希望这篇文章能帮你理解如何应对那些被“锁住”的PDF文件。当再遇到打不开、无法打印或编辑的PDF时，你知道有一个安全、本地且简单的方法可以尝试了。
-    </p>
-    <p class="text-sm text-gray-500">
-      记住，保护知识产权非常重要，请仅将此方法用于处理你合法拥有或获得授权的文件。
-    </p>
+  <!-- 使用场景 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">适用场景</h2>
+    
+    <div class="space-y-4">
+      <div class="flex items-start gap-4 p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg">
+        <span class="text-2xl">&#x1F3E0;</span>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-1">办公室摸鱼</h4>
+          <p class="text-gray-700 text-sm">当老板突然出现时，快速启动这个工具，看起来你的电脑正在"认真"地更新系统。</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-4 p-4 border-l-4 border-green-500 bg-green-50 rounded-r-lg">
+        <span class="text-2xl">&#x2615;</span>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-1">休息时间</h4>
+          <p class="text-gray-700 text-sm">午休时间想小憩一下？打开这个工具，安心休息，不用担心被误认为在偷懒。</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-4 p-4 border-l-4 border-yellow-500 bg-yellow-50 rounded-r-lg">
+        <span class="text-2xl">&#x1F4A1;</span>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-1">灵感创作</h4>
+          <p class="text-gray-700 text-sm">有时候盯着屏幕发呆反而能激发创意。用这个工具作为背景，让大脑自由漫游。</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-4 p-4 border-l-4 border-purple-500 bg-purple-50 rounded-r-lg">
+        <span class="text-2xl">&#x1F680;</span>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-1">技术展示</h4>
+          <p class="text-gray-700 text-sm">前端开发者可以学习其中的CSS动画技术，了解如何实现逼真的UI效果。</p>
+        </div>
+      </div>
+    </div>
   </div>
-</article>
-`;export{t as default};
+
+  <!-- 使用方法 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">如何使用？</h2>
+    
+    <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl">
+      <ol class="space-y-4">
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">选择系统</h4>
+            <p class="text-gray-600 text-sm mt-1">从页面上选择你想要模拟的操作系统类型（Windows XP/7/10/11、Ubuntu 或 macOS）。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">点击启动</h4>
+            <p class="text-gray-600 text-sm mt-1">点击对应系统的卡片，页面会自动进入全屏模式并开始播放更新动画。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">享受时光</h4>
+            <p class="text-gray-600 text-sm mt-1">现在你可以放心地休息了。屏幕会持续显示更新进度，看起来完全像真的在更新系统。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">随时退出</h4>
+            <p class="text-gray-600 text-sm mt-1">按 ESC 键、点击屏幕任意位置或移动鼠标，即可立即退出全屏模式恢复正常使用。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 技术实现 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-6 border-b pb-2">技术亮点</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-5 rounded-lg border border-indigo-200">
+        <h4 class="font-semibold text-indigo-900 mb-2">纯CSS动画</h4>
+        <p class="text-indigo-700 text-sm">所有动画效果均使用CSS3实现，包括旋转、渐变、脉冲等，性能优秀且流畅。</p>
+      </div>
+      
+      <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 rounded-lg border border-emerald-200">
+        <h4 class="font-semibold text-emerald-900 mb-2">响应式设计</h4>
+        <p class="text-emerald-700 text-sm">完美适配PC端和移动端，在不同屏幕尺寸下都能正常显示和使用。</p>
+      </div>
+      
+      <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-5 rounded-lg border border-orange-200">
+        <h4 class="font-semibold text-orange-900 mb-2">Vue3组件化</h4>
+        <p class="text-orange-700 text-sm">采用Vue 3 Composition API编写，代码结构清晰，易于维护和扩展。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 注意事项 -->
+  <div class="p-6 bg-red-50 border border-red-200 rounded-xl">
+    <h3 class="text-xl font-semibold mb-4 text-red-800">温馨提示</h3>
+    <ul class="space-y-2 text-red-900 text-sm md:text-base">
+      <li class="flex items-start gap-2">
+        <span class="text-red-600 mt-1">&#x26A0;</span>
+        <span>本工具仅供娱乐和学习使用，请合理安排工作和休息时间。</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-red-600 mt-1">&#x26A0;</span>
+        <span>适度休息有益健康，但过度摸鱼可能影响工作效率哦。</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-red-600 mt-1">&#x26A0;</span>
+        <span>请勿在工作的重要场合使用此工具，以免造成不必要的误解。</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-red-600 mt-1">&#x26A0;</span>
+        <span>本工具不会对您的电脑进行任何实际操作，请放心使用。</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 结尾 -->
+  <div class="mt-10 pt-6 border-t text-center text-gray-500 text-sm">
+    <p>愿每一位打工人都能劳逸结合，工作生活两不误。适当的放松是为了更好地出发！</p>
+  </div>
+</div>
+`;export{s as default};

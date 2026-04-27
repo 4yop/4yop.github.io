@@ -1,90 +1,17 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-neutral-800">
-  <header class="mb-8 md:mb-12">
-    <h1 class="text-2xl md:text-3xl font-bold mb-4">游戏王爱好者看过来：一个在线制作专属卡牌的简单方法</h1>
-    <p class="text-neutral-600 text-sm md:text-base leading-relaxed">
-      是否曾经幻想过，为自己或者朋友设计一张独一无二的《游戏王》卡牌？无需专业软件，一个在线工具就能帮你实现。
-    </p>
-  </header>
-
-  <main class="space-y-8 md:space-y-12">
-    <section class="bg-neutral-50 p-6 rounded-lg border border-neutral-200">
-      <h2 class="text-xl font-bold mb-4 pb-2 border-b border-neutral-300">你是不是也有过这样的想法？</h2>
-      <ul class="space-y-3 text-neutral-700">
-        <li class="flex items-start">
-          <span class="inline-block w-1.5 h-1.5 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span>看着动画里酷炫的卡牌，也想设计一张属于自己的“王牌怪兽”，却不知道从何下手。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-1.5 h-1.5 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span>想为一起打牌的朋友设计一张特别的生日贺卡，有卡牌的样子，还包含专属的祝福效果。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-1.5 h-1.5 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span>脑袋里构思了一个超棒的怪兽或魔法卡创意，但只能停留在想象中，无法变成可以看见、可以分享的“实物”。</span>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-xl font-bold mb-4">它是什么？一个在线的卡片设计工作室</h2>
-      <p class="mb-4 leading-relaxed">
-        简单来说，这是一个在网页浏览器里就能使用的工具。它就像一个为你准备好的、现成的卡牌画框和模板。你不需要会画画，也不需要懂复杂的设计软件，只需要发挥你的想象力。
-      </p>
-      <p class="leading-relaxed">
-        从设定卡牌的名字、属性、攻击力，到编写独一无二的效果说明，整个过程就像填一张有趣的表格。你在这边调整，旁边就有一张“虚拟卡牌”实时变化，让你立刻看到最终效果。
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-xl font-bold mb-4">用它能为你带来什么？</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="space-y-2">
-          <h3 class="font-bold text-lg">1. 释放创意，零门槛</h3>
-          <p class="text-sm text-neutral-700">不需要任何设计基础。所有选项都清晰明了，选择、输入、上传图片，几分钟就能把脑海中的卡牌变成眼前的画面。</p>
-        </div>
-        <div class="space-y-2">
-          <h3 class="font-bold text-lg">2. 所见即所得</h3>
-          <p class="text-sm text-neutral-700">最大的好处就是“实时预览”。你每改一个字、换一个属性，旁边的卡牌图就会跟着变。完全不用担心做完了和想的不一样。</p>
-        </div>
-        <div class="space-y-2">
-          <h3 class="font-bold text-lg">3. 轻松保存与分享</h3>
-          <p class="text-sm text-neutral-700">设计完成后，可以一键把它保存成一张高清图片，或者生成一个PDF文件。方便你收藏在手机里，或者分享到朋友圈、聊天群，向朋友们展示你的大作。</p>
-        </div>
-        <div class="space-y-2">
-          <h3 class="font-bold text-lg">4. 自由定制图片</h3>
-          <p class="text-sm text-neutral-700">卡牌中间最重要的图案部分，支持上传你自己的图片。可以是你的宠物、喜欢的动漫角色，或者任何你觉得酷的图片，让卡牌真正独一无二。上传后，点击图片还能放大查看细节。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-neutral-50 p-6 rounded-lg">
-      <h2 class="text-xl font-bold mb-4">它可以用在哪些地方？</h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="font-bold text-lg mb-2">场景一：设计个人专属卡牌</h3>
-          <p class="text-neutral-700 text-sm leading-relaxed">
-            如果你是《游戏王》的忠实粉丝，完全可以为自己设计一张“本命卡”。用你的网名作为卡名，构思一个符合你个性的效果描述，再找一张帅气的图片放上去。做完后保存下来，当作手机壁纸或者头像，感觉非常酷。
-          </p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-2">场景二：制作特别的礼物</h3>
-          <p class="text-neutral-700 text-sm leading-relaxed">
-            朋友的生日、或者想感谢某个一起打牌的伙伴，送一张你为他“定制”的卡牌会非常有心意。你可以把祝福的话写成“魔法卡”或“陷阱卡”的效果文本，攻击力防御力设成有纪念意义的数字。这份礼物既有创意，又包含了共同的回忆。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="text-center border-t border-neutral-200 pt-8">
-      <h2 class="text-xl font-bold mb-4">让创意不再只是想象</h2>
-      <p class="mb-6 text-neutral-700 max-w-2xl mx-auto">
-        这个在线工具就像一个连接想象与现实的小桥。它把复杂的卡牌设计，简化成了每个人都能轻松上手的几步操作。无论你是想自娱自乐，还是想创造一份特别的纪念，都不妨尝试一下，体验亲手“创造”一张卡牌的乐趣。
-      </p>
-      <p class="text-sm text-neutral-500">
-        下次当你又有关于“如果这张卡存在就好了”的灵感时，记得有一个简单的方法可以把它实现出来。
-      </p>
-    </section>
-  </main>
+const t=`
+<div class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans">
+  <h1 class="text-3xl text-center font-bold mb-4 text-gray-900">你的家乡有哪些明星</h1>
+  <p class="text-gray-700 mb-6">
+    选择你的家乡所在省份、城市或区县，查看来自同一片土地的明星名人。支持省、市、区三级查询，无需选择完整路径即可筛选。涵盖歌手、演员、企业家等各领域公众人物。
+  </p>
+  <div class="bg-gray-50 p-4 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-gray-900">使用说明</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>选择省份即可查看该省所有明星</li>
+      <li>继续选择城市可缩小范围</li>
+      <li>精确到区县可查看来自你家乡的明星</li>
+      <li>数据持续更新中，欢迎关注</li>
+    </ul>
+  </div>
 </div>
-`;export{s as default};
+`;export{t as default};

@@ -1,50 +1,97 @@
-const s=`
-<div class="text-gray-800 max-w-4xl mx-auto px-4 py-8 sm:px-6">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6">还在为配色发愁？试试这个好用的图片颜色分析工具</h1>
-  <p class="text-lg text-gray-600 mb-8">无论是设计海报、制作PPT，还是想让你的社交媒体图片更吸引人，选对颜色往往是关键一步。今天，我们来聊聊一个能帮你快速“抓住”图片核心色彩的小帮手。</p>
+const t=`
+<article class="text-gray-800 font-sans bg-white">
+  <header class="py-8 px-4 lg:px-8 text-center border-b border-gray-100">
+    <h1 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Excel表格转Word文档，原来可以这么简单快速</h1>
+    <p class="text-gray-600 text-lg">还在为格式错乱、复制粘贴而烦恼吗？一个工具就能搞定。</p>
+  </header>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium">想象一下这些场景，你是不是也遇到过？</p>
-    <ul class="list-disc pl-5 mt-2 space-y-1">
-      <li>看到一张风景照，特别想用里面的天空蓝作为自己设计的背景色，却不知道这个颜色的具体数值。</li>
-      <li>为公司活动做海报，想从Logo里提取标准色，手动取色总觉得不准确。</li>
-      <li>整理了一堆灵感图片，想要快速总结出它们的色彩风格，感觉无从下手。</li>
-    </ul>
-  </div>
+  <div class="px-4 lg:px-8 py-8 max-w-4xl mx-auto">
+    <section class="mb-10">
+      <p class="mb-6 text-lg leading-relaxed">
+        在工作中，我们常常需要将Excel表格里的数据放到Word文档里。你可能是想制作一份包含数据表格的报告，或者是需要提交一份带统计表的方案。
+      </p>
+      <p class="mb-6 text-lg leading-relaxed">
+        这个过程听起来简单，做起来却常常让人头疼。直接复制粘贴吧，表格的格式经常会乱掉，宽度对不齐，颜色也消失了。如果表格有好几页，或者有好几个不同的工作表，那更是费时费力。
+      </p>
+      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-800">你是不是也遇到过这些情况？</h2>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>精心调整的表格颜色和字体，一粘贴到Word里就全没了。</li>
+          <li>表格太宽，在Word里总是超出页面，需要手动一列一列调整。</li>
+          <li>一个Excel文件里有好几张表，得一张一张处理，非常麻烦。</li>
+          <li>只想快速把数据变成一份规整的文档，却花了大半天时间在调整格式上。</li>
+        </ul>
+      </div>
+    </section>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">它是什么？一个聪明的“色彩翻译官”</h2>
-  <p class="mb-4">你可以把它理解为一个专注颜色的“图片分析师”。它的工作很简单：你给它一张或多张图片，它就能快速帮你找出图片里“最主要”的颜色和“整体平均”颜色。</p>
-  <p class="mb-6"><span class="font-medium">主色</span>就像图片的“主角”，是画面中最突出、占比最多的色调。<span class="font-medium">平均色</span>则像是把所有颜色搅拌混合后得到的总和色调，能代表图片的整体氛围。工具会把这些颜色用<span class="bg-gray-100 px-2 py-1 rounded">RGB</span>和<span class="bg-gray-100 px-2 py-1 rounded">色值码</span>两种方式清晰展示给你，方便你直接使用。</p>
+    <section class="mb-12">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">一个省心工具能帮你做什么？</h2>
+      <p class="mb-8 text-lg leading-relaxed">
+        好消息是，现在有专门处理这个问题的工具。它就像一个聪明的“格式搬运工”，能帮你把Excel里的表格，原原本本地“搬”到Word文档里，而且过程非常简单。
+      </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">对你有什么用？三个看得见的好处</h2>
-  <div class="space-y-6">
-    <div>
-      <h3 class="text-xl font-medium mb-2">1. 省时省力，告别手动取色烦恼</h3>
-      <p>再也不用瞪大眼睛在软件里一点点找颜色了。无论图片多么复杂，一键上传，几秒钟内就能获得准确的颜色代码。你可以直接复制使用，大大提高工作效率。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium mb-2">2. 激发灵感，找到专业配色方案</h3>
-      <p>好看的电影截图、优秀的设计作品、迷人的自然风光……所有让你心动的图片都可以成为你的色彩灵感库。分析它们的颜色，你就能理解为什么它们看起来那么和谐，并把这份和谐用到你自己的创作中。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium mb-2">3. 批量处理，轻松管理多个方案</h3>
-      <p>如果你收集了很多参考图，可以一次性上传多张图片进行批量分析。所有结果以表格形式清晰罗列，方便你对比和筛选。你还可以将最终的分析结果导出成表格文件，方便保存和分享给同事或朋友。</p>
-    </div>
-  </div>
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-green-600 font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">一步上传，自动识别</h3>
+          <p class="text-gray-700">你只需要把Excel文件拖进去或者点一下上传，它就能立刻看到你表格里所有的数据，非常直观。</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-blue-600 font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">保留样式，保持美观</h3>
+          <p class="text-gray-700">你之前在Excel里设置的文字加粗、单元格背景颜色，大部分都能被保留下来，生成和你原表很像的Word表格。</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-purple-600 font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">按需调整，一键生成</h3>
+          <p class="text-gray-700">你可以选择生成Word文档的纸张大小（比如常用的A4或Letter），然后点一下按钮，一份完整的Word文档就生成好了，可以直接下载使用。</p>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">生活中可以怎么用？举两个小例子</h2>
-  <div class="bg-gray-50 p-6 rounded-lg mb-6">
-    <h3 class="text-xl font-medium mb-2">例子一：制作统一风格的团队PPT</h3>
-    <p>你需要为公司新项目制作一系列PPT。为了让所有材料看起来是一个整体，你可以将公司的Logo图片上传分析，得到标准的品牌色。之后所有幻灯片的标题、图表、边框都使用这个颜色，整套材料的专业感和统一感瞬间就提升了。</p>
-  </div>
-  <div class="bg-gray-50 p-6 rounded-lg mb-8">
-    <h3 class="text-xl font-medium mb-2">例子二：让社交媒体分享更出彩</h3>
-    <p>你想分享一张自己做的美食照片。除了滤镜，还可以用这个工具分析一下照片的主色调（比如烤面包的金黄色）。然后，在编辑文案时，选择这个金黄色作为点缀色，或者用它来制作一张简单的背景图作为文字衬托，你的帖子在信息流里会显得格外精致、有设计感。</p>
-  </div>
+    <section class="mb-12">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">具体怎么使用？</h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        整个过程只需要三四步，在电脑和手机上都能操作，对使用者的技术水平没有任何要求。
+      </p>
+      <ol class="list-decimal pl-5 space-y-8 text-lg">
+        <li class="pl-2">
+          <strong class="text-gray-900">准备好你的Excel文件：</strong> 确保你要转换的表格已经保存在你的电脑或手机里。
+        </li>
+        <li class="pl-2">
+          <strong class="text-gray-900">打开工具，上传文件：</strong> 找到页面上醒目的“上传Excel”按钮，点击它，然后从你的设备里选择文件。你也可以直接把文件拖到那个按钮上，更加方便。
+        </li>
+        <li class="pl-2">
+          <strong class="text-gray-900">预览并简单设置：</strong> 上传后，你马上就能在页面下方看到表格内容的预览，确认无误。如果需要，可以在上方选择一个你想要的文档纸张大小。
+        </li>
+        <li class="pl-2">
+          <strong class="text-gray-900">转换并下载：</strong> 点击“转换并下载Word”按钮，稍等片刻，浏览器就会自动开始下载生成好的Word文档。打开它，你就会看到一份排版好的表格文档。
+        </li>
+      </ol>
+      <div class="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
+        <p class="text-amber-900"><strong>小提示：</strong> 这个工具会尽力保留你表格的样式。如果原表格特别复杂，生成后可能需要在Word里做一些微调，但比起从零开始，已经节省了大量时间。</p>
+      </div>
+    </section>
 
-  <div class="border-t pt-8 mt-8">
-    <p class="mb-4">很多时候，好的色彩感觉并非天生，而是借助合适的工具和方法培养出来的。希望这个关于颜色分析工具的介绍，能为你打开一扇新窗户，让你在处理图片配色时多一个轻松又高效的选择。</p>
-    <p class="font-medium">下次当你再被“用什么颜色好”这个问题困扰时，不妨试着让工具先帮你看看图片自己是怎么“说”的。</p>
+    <section class="mb-10">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">它适合哪些场景？</h2>
+      <ul class="list-disc pl-5 text-lg space-y-3 text-gray-700">
+        <li><strong>学生：</strong> 将实验数据从Excel整理到实验报告或论文中。</li>
+        <li><strong>办公族：</strong> 制作周报、月报、项目总结，需要将数据表格嵌入文档。</li>
+        <li><strong>HR或财务：</strong> 将人员名单、费用统计表转换成正式的文档格式进行提交或打印。</li>
+        <li><strong>任何需要数据呈现的人：</strong> 当你需要一份既包含详细数据，又排版规范的正式文件时。</li>
+      </ul>
+    </section>
+
+    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
+      <p class="text-xl mb-4 font-medium">总而言之，将Excel转为Word不再是一个技术活。</p>
+      <p class="text-gray-600 mb-8">
+        借助这类便捷的工具，你可以把时间和精力从繁琐的格式调整中解放出来，更多地专注于内容本身。下次再遇到需要转换表格的时候，不妨试试这种方法，体验一下一键生成的轻松。
+      </p>
+      <div class="inline-block px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200">
+        去试试快速转换工具
+      </div>
+    </footer>
   </div>
-</div>
-`;export{s as default};
+</article>
+`;export{t as default};

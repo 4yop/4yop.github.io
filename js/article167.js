@@ -1,183 +1,48 @@
-const s=`
-<article class="article-content">
-  <h1 class="article-title">图片水印添加工具：一键为照片添加专业水印，保护版权提升品牌</h1>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
+  <!-- 标题 -->
+  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
   
-  <div class="article-meta">
-    <span class="meta-tag">图片处理</span>
-    <span class="meta-tag">版权保护</span>
-    <span class="meta-tag">批量处理</span>
+  <!-- 引言 -->
+  <p class="mb-4 text-lg">
+    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
+  </p>
+
+  <!-- 两个模式解决不同场景 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
+  <p class="mb-4">
+    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
+  </p>
+  <p class="mb-4">
+    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
+  </p>
+
+  <!-- 避免配对功能 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
+  <p class="mb-4">
+    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
+  </p>
+
+  <!-- 操作简单，三步完成 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
+  <p class="mb-4">
+    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
+  </p>
+
+  <!-- 导出与分享 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
+  <p class="mb-4">
+    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
+  </p>
+
+  <!-- 总结 -->
+  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
+    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
+  </p>
+
+  <!-- 底部小提示，符合原文风格 -->
+  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
+    * 工具完全免费，无需安装，打开网页就能用
   </div>
-
-  <section class="article-section">
-    <h2 class="section-title">引言</h2>
-    <p class="article-paragraph">
-      在数字化时代，图片成为我们记录生活、展示作品的重要载体。无论是摄影师的作品集、设计师的设计稿，还是企业的营销图片，都面临着被盗用、侵权的风险。给图片添加水印已成为保护版权、展示品牌最有效的方式之一。我们的图片水印添加工具，支持文字水印和图片水印，可批量处理、自定义位置和透明度，让您轻松为图片穿上"保护衣"。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">为什么要给图片添加水印？</h2>
-    
-    <h3 class="subsection-title">1. 版权保护，防止盗用</h3>
-    <p class="article-paragraph">
-      在互联网时代，一张精美的图片很容易被他人保存、复制甚至直接使用。添加水印可以有效标识图片的所有权，即使图片被传播，水印也能起到警示作用，提醒使用者尊重原创。对于摄影师、设计师等创作者来说，水印是保护自身劳动成果的重要手段。
-    </p>
-
-    <h3 class="subsection-title">2. 品牌展示，提升曝光</h3>
-    <p class="article-paragraph">
-      水印不仅是保护工具，更是免费的广告位。通过添加带有品牌Logo或名称的水印，可以在图片传播过程中实现品牌曝光。当您的优质内容被转发、分享时，水印也随之传播，形成品牌传播的长尾效应。
-    </p>
-
-    <h3 class="subsection-title">3. 防止商业盗用</h3>
-    <p class="article-paragraph">
-      对于商业图片来说，水印可以阻止未经授权的商业使用。即使有人试图盗用图片用于商业用途，带水印的图片也会影响其使用效果，从而降低盗用动机。同时，水印也是维权的重要证据。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">文字水印 vs 图片水印：如何选择？</h2>
-
-    <h3 class="subsection-title">文字水印</h3>
-    <p class="article-paragraph">
-      文字水印是最常见的水印形式，适合添加版权声明、作者名称、网站地址等信息。优点是制作简单、文件体积小、加载速度快。您可以选择不同的字体、大小、颜色和透明度，让文字水印既能清晰可见，又不会喧宾夺主。常用的文字包括"© 作者名"、"禁止转载"、"品牌名称"等。
-    </p>
-
-    <h3 class="subsection-title">图片水印</h3>
-    <p class="article-paragraph">
-      图片水印通常使用Logo、图标或设计图案，视觉冲击力更强，品牌识别度更高。适合企业营销图片、设计师作品集等场景。图片水印的设计需要考虑透明度、大小和位置，既要保证水印清晰可见，又不能遮挡图片的主要内容。PNG格式的透明图片是制作图片水印的最佳选择。
-    </p>
-
-    <h3 class="subsection-title">组合水印</h3>
-    <p class="article-paragraph">
-      在某些情况下，可以将文字和图片组合使用，既有品牌Logo又有版权信息，实现更全面的保护和展示效果。组合水印需要注意整体布局，避免过于复杂影响图片美观。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">水印设计原则：让水印既实用又美观</h2>
-
-    <h3 class="subsection-title">1. 位置选择</h3>
-    <p class="article-paragraph">
-      水印位置的选择至关重要。常见的位置包括：
-    </p>
-    <ul class="article-list">
-      <li><strong>右下角</strong>：最常用的位置，不易遮挡主体，符合视觉习惯</li>
-      <li><strong>右下角+居中</strong>：斜向排列，适合矩形水印</li>
-      <li><strong>四角分布</strong>：适合防伪要求较高的场景</li>
-      <li><strong>平铺水印</strong>：全图重复水印，防伪效果最佳，但可能影响观感</li>
-    </ul>
-
-    <h3 class="subsection-title">2. 大小控制</h3>
-    <p class="article-paragraph">
-      水印大小应该适中，既要能清晰识别，又不能喧宾夺主。一般来说，水印宽度不超过图片宽度的30%，高度不超过图片高度的20%。对于不同分辨率的图片，应该等比例调整水印大小。
-    </p>
-
-    <h3 class="subsection-title">3. 透明度设置</h3>
-    <p class="article-paragraph">
-      透明度是水印设计的关键。通常设置为20%-50%的透明度，既能看到水印，又不会过于突出。透明度过高会影响图片观感，过低则失去水印作用。建议根据图片背景色调整透明度，浅色背景用深色水印，深色背景用浅色水印。
-    </p>
-
-    <h3 class="subsection-title">4. 颜色搭配</h3>
-    <p class="article-paragraph">
-      水印颜色应该与图片背景形成对比，确保清晰可见。常用的颜色包括白色、黑色、灰色，也可以使用品牌主色。避免使用与背景色过于接近的颜色，否则水印几乎看不出来。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">批量添加水印：提升效率的必备技巧</h2>
-
-    <h3 class="subsection-title">批量处理场景</h3>
-    <p class="article-paragraph">
-      批量加水印适用于需要处理大量图片的场景，如：
-    </p>
-    <ul class="article-list">
-      <li><strong>摄影师作品整理</strong>：一次给几百张照片添加统一水印</li>
-      <li><strong>电商产品图片</strong>：为所有产品图添加店铺水印</li>
-      <li><strong>社交媒体运营</strong>：批量处理待发布的图片内容</li>
-      <li><strong>设计作品归档</strong>：为设计稿添加版权标识</li>
-    </ul>
-
-    <h3 class="subsection-title">批量处理技巧</h3>
-    <p class="article-paragraph">
-      使用我们的批量水印工具，可以一次选择多张图片，统一设置水印参数，一键完成所有图片的水印添加。建议先测试一张图片，调整好水印效果后，再进行批量处理，避免批量后不满意需要重新处理。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">水印去除与防去除</h2>
-
-    <h3 class="subsection-title">水印可以被去除吗？</h3>
-    <p class="article-paragraph">
-      严格来说，任何数字水印理论上都可以被去除，但高质量的图片水印会增加去除难度。水印去除需要专业的图像处理技术和大量时间成本，这在一定程度上起到了威慑作用。
-    </p>
-
-    <h3 class="subsection-title">如何提高水印防去除能力？</h3>
-    <ul class="article-list">
-      <li><strong>避免纯色背景</strong>：选择与图片内容融合的水印位置</li>
-      <li><strong>使用透明度</strong>：适当透明度的水印更难完美去除</li>
-      <li><strong>复杂图案</strong>：图片水印比单纯文字更难去除</li>
-      <li><strong>多个水印</strong>：在图片不同位置添加多个水印</li>
-      <li><strong>平铺水印</strong>：全图重复的水印去除难度最高</li>
-    </ul>
-
-    <h3 class="subsection-title">法律层面</h3>
-    <p class="article-paragraph">
-      即使水印被去除，图片的版权依然属于原作者。盗用去除水印的图片，仍然是侵权行为，可以通过法律途径维权。水印是证明版权归属的重要证据之一。
-    </p>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">常见问题解答</h2>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q: 添加水印会影响图片质量吗？</h3>
-      <p class="faq-answer">
-        A: 合理添加水印不会明显降低图片质量。水印是叠加在原图之上的，不会改变原图的分辨率和清晰度。只要使用合适的透明度和大小，水印对图片观感的影响可以降到最低。
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q: 水印应该添加在原图还是上传后？</h3>
-      <p class="faq-answer">
-        A: 建议在本地添加好水印后再上传到网络。这样可以确保所有传播的图片都带有水印，避免有人下载无水印版本。同时，保留一张高质量的无水印原图作为备份。
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q: 如何选择合适的透明度？</h3>
-      <p class="faq-answer">
-        A: 一般建议透明度在20%-50%之间。可以从30%开始测试，根据实际效果调整。如果图片背景复杂，可以适当降低透明度；如果背景简单，可以适当提高透明度。
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q: 批量处理时可以每张图片设置不同的水印吗？</h3>
-      <p class="faq-answer">
-        A: 目前批量处理功能使用统一的水印设置。如果需要为不同图片设置不同水印，建议分组处理。未来版本可能会支持更灵活的批量处理选项。
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="faq-question">Q: 添加水印后的图片可以用于打印吗？</h3>
-      <p class="faq-answer">
-        A: 可以。水印在打印后依然可见，如果需要无水印的打印版本，建议在原始文件上添加图层水印，打印时可以选择隐藏水印图层。
-      </p>
-    </div>
-  </section>
-
-  <section class="article-section conclusion">
-    <h2 class="section-title">结语</h2>
-    <p class="article-paragraph">
-      图片水印是保护版权、展示品牌的有效手段。使用我们的图片水印添加工具，您可以轻松为单张或多张图片添加专业的文字水印或图片水印。记住，保护好您的创作成果，让您的图片在互联网上安全传播，同时让更多人看到您的品牌和才华。立即试用我们的工具，为您的图片加上专属水印吧！
-    </p>
-  </section>
-
-  <div class="article-tags">
-    <span class="tag">#图片水印</span>
-    <span class="tag">#添加水印</span>
-    <span class="tag">#版权保护</span>
-    <span class="tag">#批量处理</span>
-    <span class="tag">#水印工具</span>
-  </div>
-</article>
-`;export{s as default};
+</div>
+`;export{t as default};

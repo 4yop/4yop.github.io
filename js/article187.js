@@ -1,90 +1,119 @@
-const t=`
-<div class="text-slate-700 font-sans leading-relaxed">
-  <article class="max-w-4xl mx-auto p-4 md:p-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">如何清晰比较人与事的综合能力？试试这个直观的评估工具</h1>
-    <p class="text-lg text-slate-600 mb-8">
-      无论是比较两个员工的工作表现，还是评估几个不同方案的优缺点，你是不是常常觉得心里有数，但说不清楚？今天，我们来介绍一种简单的方法，帮你把复杂的综合对比，变得一目了然。
+const s=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800 bg-white">
+  <header class="mb-10 sm:mb-16 text-center">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
+      互联网黑话到底是什么？它怎么悄悄改变了我们的对话方式
+    </h1>
+    <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+      你有没有在开会时，听到一堆“赋能”、“抓手”、“闭环”却一头雾水？这背后是一套独特的语言系统，正在许多行业中悄然流行。
     </p>
+  </header>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-      <p class="text-slate-700">
-        <strong>核心功能：</strong>这个工具让你可以自由设定比较的方面（比如沟通能力、专业技能），然后为每个你要比较的对象打分，最后生成一张像蜘蛛网一样的“雷达图”，让你一眼就能看出各自的优势和短板。
-      </p>
-    </div>
+  <div class="space-y-8 sm:space-y-12">
+    <section>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
+        一、当简单的话变复杂了：无处不在的“黑话”
+      </h2>
+      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
+        <p>
+          想象一下这个场景：公司开会，领导说“我们要<strong>打通底层逻辑</strong>，形成<strong>闭环</strong>，为业务<strong>赋能</strong>”。旁边的同事频频点头，而你却暗自疑惑：“他到底想让我们做什么？”
+        </p>
+        <p>
+          这就是所谓的“互联网黑话”或者“行业术语”。它指的是一些听起来很专业、很高级的词汇和说法，在科技、金融、电商这些圈子里尤其常见。最初，这些词是为了快速、准确地描述一些复杂的概念或方法。但不知从什么时候开始，它们变得越来越让人听不懂，甚至成了一种独特的“沟通方式”。
+        </p>
+        <p>
+          很多人感到困惑：为什么不能好好说话？明明可以用“想办法提高销量”，偏要说“寻找增长抓手，实现流量转化”。这种语言，像一层朦胧的纱，让圈外人看不清，也让圈内人有时自己都绕晕了。
+        </p>
+      </div>
+    </section>
 
-    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">我们什么时候需要用它？</h2>
-    <p class="mb-4">
-      其实，生活和工作中有很多需要多角度对比的场景，单靠感觉或者文字描述总是不够直观。
-    </p>
-    <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-600">
-      <li><strong>面试后比较候选人：</strong>A技术很强但沟通一般，B沟通出色但经验稍浅。怎么综合权衡？</li>
-      <li><strong>个人年度复盘：</strong>今年自己在“专业技能”、“团队协作”、“创新能力”上各进步了多少？</li>
-      <li><strong>产品功能对比：</strong>几款竞品在价格、性能、易用性、服务上分别表现如何？</li>
-      <li><strong>团队人员评估：</strong>为小组成员做一个能力画像，方便后续的培训和发展规划。</li>
-    </ul>
-
-    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">工具怎么用？三步搞定</h2>
-    <p class="mb-6">
-      操作非常简单，就像填一张灵活的表格，结果会自动用图形展示出来。
-    </p>
-
-    <div class="space-y-8 mb-10">
-      <section>
-        <h3 class="text-xl font-medium text-slate-800 mb-3">第一步：定下比较的方面</h3>
-        <p class="text-slate-600 mb-3">
-          你想从哪些维度来评价？这些方面完全由你决定。工具默认给了“专业技术”、“沟通协作”等几个常见选项，你可以直接修改它们，或者点击“添加评估维度”来增加新的方面，比如“成本控制”、“市场潜力”等等。
+    <section>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
+        二、大家为什么爱说“黑话”？不只是为了显得厉害
+      </h2>
+      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
+        <p>
+          这种说话方式的流行，背后有几个简单的原因：
         </p>
-        <p class="text-slate-500 text-sm">
-          提示：建议方面不要太多，5-8个最能突出重点，也方便查看。
-        </p>
-      </section>
-
-      <section>
-        <h3 class="text-xl font-medium text-slate-800 mb-3">第二步：添加要对比的对象并打分</h3>
-        <p class="text-slate-600 mb-3">
-          接下来，把你要比较的人、产品、方案添加进来。给每个对象起个名字，比如“张三”、“产品A”、“方案一”。然后，在刚才设定的每一个方面下，为这个对象打一个分数（0-100分）。
-        </p>
-        <p class="text-slate-600">
-          你可以随时增加新的对比对象，或者删除已有的对象。所有数据填写后，系统会实时处理。
-        </p>
-      </section>
-
-      <section>
-        <h3 class="text-xl font-medium text-slate-800 mb-3">第三步：查看雷达图，获得洞察</h3>
-        <p class="text-slate-600 mb-3">
-          右侧会自动生成一张彩色的雷达图。图中每一个“角”代表一个评估方面，而不同颜色的多边形则代表不同的对比对象。面积越大、越靠外的部分，代表在该方面的能力或分数越强。
-        </p>
-        <p class="text-slate-600 mb-3">
-          通过这张图，你可以轻松回答这些问题：
-        </p>
-        <ul class="list-disc pl-6 mb-4 space-y-2 text-slate-600">
-          <li>谁的能力发展最均衡？</li>
-          <li>谁在某个特定方面特别突出？</li>
-          <li>各个对象的短板分别在哪里？</li>
+        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
+          <li><strong>效率假象</strong>：一个词，比如“<strong>对齐</strong>”，就能代替“我们互相沟通一下，确保想法一致，没有理解偏差”。听起来省事多了。</li>
+          <li><strong>身份认同</strong>：能熟练使用这些词，仿佛就在说：“我是这个圈子里的人，我懂行。”它是一种无形的名片。</li>
+          <li><strong>自我保护</strong>：把普通的事情用复杂的词汇包装，有时能让提议听起来更严谨、更难以反驳。</li>
+          <li><strong>追赶潮流</strong>：当身边人都在这么说时，如果你不用，反而显得落伍了。语言也有从众心理。</li>
         </ul>
-        <p class="text-slate-600">
-          如果结论需要分享给同事或用于报告，点击“导出结果图片”按钮，就能将这张清晰的雷达图保存到电脑里。
+        <p>
+          所以，它不全是坏事，也不全是为了装样子。在某些专业的讨论中，它确实能提高沟通效率。但问题在于，当它泛滥到日常交谈、甚至模糊了事情的本质时，沟通就变味了。
         </p>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">为什么图形对比更有效？</h2>
-    <p class="mb-4 text-slate-600">
-      人脑处理图像信息的速度远快于处理文字和数字。面对一堆分数，我们需要反复思考和记忆才能得出结论。而一张雷达图，瞬间就能呈现出“整体轮廓”和“局部差异”。
-    </p>
-    <p class="mb-8 text-slate-600">
-      它把抽象的、多维度的比较，转化成了具体的形状和面积。在进行团队讨论、个人复盘或决策时，这种视觉化的呈现方式能让所有人快速聚焦，达成共识。
-    </p>
+    <section>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
+        三、“黑话”给我们的沟通带来了什么？
+      </h2>
+      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
+        <p>
+          过度依赖这种语言，会带来一些实实在在的困扰：
+        </p>
+        <p>
+          <strong>制造隔阂</strong>：新人入职，面对满口的“<strong>迭代</strong>”、“<strong>复盘</strong>”、“<strong>颗粒度</strong>”，可能需要很长时间才能融入。这无形中提高了理解和协作的成本。
+        </p>
+        <p>
+          <strong>模糊重点</strong>：当一份方案充满了“<strong>打造生态</strong>”、“<strong>聚焦赛道</strong>”时，它的具体执行步骤是什么？谁负责？什么时候完成？这些最关键的信息，反而可能被华丽的辞藻淹没。
+        </p>
+        <p>
+          <strong>掩盖问题</strong>：有时候，用复杂的词汇来描述一个简单的错误或瓶颈，会让问题看起来没那么严重，或者把责任变得模糊。
+        </p>
+        <p>
+          沟通的本质，是让对方明白。如果一种语言体系让听的人越来越糊涂，那它可能已经背离了初衷。
+        </p>
+      </div>
+    </section>
 
-    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mt-12">
-      <h3 class="text-xl font-medium text-slate-800 mb-3">开始你的第一次综合评估吧</h3>
-      <p class="text-slate-600 mb-4">
-        无论是为了更科学地做决策，还是为了更清晰地展示你的分析，这个免费的工具都能帮上忙。它不保存你的任何数据，所有操作都在你的浏览器中进行，简单、安全、私密。
-      </p>
-      <p class="text-slate-600">
-        下次当你面临选择困难，或者需要向别人解释一个复杂的对比结论时，不妨试着用它画一张图。你会发现，把事情“看清楚”，是解决问题最好的第一步。
-      </p>
-    </div>
-  </article>
-</div>
-`;export{t as default};
+    <section>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
+        四、一个有趣的小工具：帮你“翻译”和生成这些术语
+      </h2>
+      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
+        <p>
+          为了更好地理解这种现象，甚至用它来轻松一下，有人做了一个好玩的小工具。你可以把它看作一个“术语生成器”或“语境模拟器”。
+        </p>
+        <p>
+          你只需要输入一个普通的主题，比如“如何做好一个项目”，然后选择相关的行业（比如科技、电商）和场景（比如开会、写报告）。它就能帮你“翻译”成一套充满行业术语的表述。
+        </p>
+        <p>
+          你会发现，原来“我们要认真做项目”，可以被表达为：“我们需要<strong>聚焦项目核心价值链路</strong>，通过<strong>精细化运营</strong>和<strong>敏捷迭代</strong>来<strong>赋能团队</strong>，最终<strong>打通闭环</strong>，实现<strong>价值最大化</strong>。”
+        </p>
+        <p>
+          这个过程本身就像一面镜子，让我们看到，日常的交流是如何被“包装”起来的。它不是一个严肃的生产工具，更像一个轻松的互动游戏，帮助你：
+        </p>
+        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
+          <li><strong>快速理解</strong>：当你听到一堆陌生术语时，或许能猜到它们大概想表达什么。</li>
+          <li><strong>会心一笑</strong>：生成的内容往往夸张又熟悉，让人忍不住发笑，缓解一下被术语轰炸的压力。</li>
+          <li><strong>自我提醒</strong>：在需要用专业语言沟通时，检查一下自己是不是也陷入了“不说人话”的陷阱。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
+        五、回归清晰：让语言重新成为桥梁
+      </h2>
+      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
+        <p>
+          了解“黑话”，不是为了学会并天天使用它。恰恰相反，是为了看清它，然后有选择地使用。
+        </p>
+        <p>
+          专业的术语在专业的场合有其价值，能高效地沟通复杂思想。但最有效的沟通，永远是建立在清晰、准确和真诚的基础上。无论是工作还是生活，把复杂的事情讲简单，是一种难得的能力。
+        </p>
+        <p>
+          下次当你再听到或想使用这些词汇时，不妨先在心里问自己：“我能不能用更直白的话说清楚？” 让语言重新成为连接你我的桥梁，而不是一堵墙。
+        </p>
+        <p class="pt-4 text-gray-700 italic">
+          语言是活的，它会随着时代和行业变化。观察这些变化很有趣，但别忘了，最好的语言永远是能让对方听懂的、充满真诚的语言。
+        </p>
+      </div>
+    </section>
+  </div>
+</article>
+`;export{s as default};

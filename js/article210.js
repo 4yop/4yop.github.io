@@ -1,39 +1,74 @@
 const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具适合先做参考换算</h2>
-      <p class="text-sm leading-7">
-        这页适合在旅行预算、海淘比价、学费汇款和跨币种报价时，先快速估出大致金额。
-        你可以直接输入金额，选择来源货币和目标货币，页面会按当前数据口径给出参考结果。
-      </p>
-    </section>
+<div class="max-w-3xl mx-auto px-4 py-6 md:py-10 text-gray-300">
+  <h1 class="text-3xl md:text-4xl font-bold text-center mb-2 text-white">高考倒计时2026：距离高考还有多少天？高效备考攻略</h1>
+  <p class="text-sm text-gray-500 text-center mb-8">2026年3月11日 ｜ 高考备考指南</p>
 
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">使用时要注意的 3 件事</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>先看清楚是“人民币换外币”还是“外币换人民币”，方向不同，口径也不同。</li>
-        <li>工具结果是参考换算值，不包含刷卡手续费、现钞点差或支付平台附加费用。</li>
-        <li>如果你要真实换汇或支付，最后仍要以银行或支付机构的结算结果为准。</li>
-      </ol>
-    </section>
+  <p class="text-lg mb-4">高考，这个几乎每个中国家庭都会经历的关键词，总是带着一点紧张和期待。对于即将参加2026年高考的考生和家长来说，时间已经进入了最后的冲刺阶段。看着日历一页页翻过，很多人都会下意识地问一句："今天离高考还有多少天？"</p>
 
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>为什么和银行卡最终扣款不一样？</strong> 卡组织汇率、清算时间和手续费都会让最终结果出现差异。</p>
-        <p><strong>为什么不同方向换算结果不完全对称？</strong> 数据源会区分不同牌价口径，人民币换外币和外币换人民币不是同一条线性结果。</p>
-        <p><strong>适合做投资判断吗？</strong> 不适合，这页更适合日常预算和金额估算，不构成投资建议。</p>
-      </div>
-    </section>
+  <p class="text-lg mb-6">其实，高考倒计时不仅仅是一个数字，它更像一个无形的闹钟，提醒我们合理规划每一天，把焦虑转化为行动。今天我们就来聊聊2026年高考倒计时那些事儿，顺便分享一些备考干货，希望能帮你稳稳走过这段路。</p>
 
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        如果你想知道哪些场景下最适合先用汇率工具估算，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/exchange-rate-tool-scenarios/">《汇率换算工具适合什么场景》</a>。
-      </p>
-    </section>
-  </article>
+  <div class="bg-gray-700/50 border-l-4 border-yellow-400 p-4 mb-6 rounded-r-lg">
+    <p class="text-lg font-medium text-gray-200">📅 2026年高考时间：通常为6月7日（部分省份持续到8日或9日）。以全国统一时间6月7日为例，今天（2026年3月11日）距离高考还有：</p>
+    <p class="text-3xl font-bold text-center text-yellow-400 my-2">88天</p>
+    <p class="text-sm text-gray-400 text-center">（计算方式：3月剩余20天 + 4月30天 + 5月31天 + 6月7天 = 88天）</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">一、为什么倒计时对我们很重要？</h2>
+  <p class="mb-4">倒计时让我们从"还有很久"的错觉中清醒过来。很多同学总觉得时间还多，习惯把复习任务一拖再拖。但当看到数字一天天变小，就会产生一种紧迫感，这种紧迫感如果引导得好，就是专注力和效率的来源。</p>
+  <p class="mb-4">同时，倒计时也能帮助我们设置阶段性目标。比如把剩下的88天分成三个阶段：基础巩固期、专项突破期、全真模拟期。每个阶段有明确的任务，最后上考场时心里就有底了。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">二、怎样用好高考倒计时工具？</h2>
+  <p class="mb-4">现在网上有很多好用的高考倒计时小程序或网页，它们通常会用很大的数字显示天、时、分、秒，有的还能全屏专注。我个人建议你选择一个界面清爽、无广告的倒计时工具，把它放在手机桌面上或者电脑浏览器里，每天打开看一眼，给自己一个小小的提醒。</p>
+  <p class="mb-4">比如有的倒计时设计得像黑板或课堂挂钟，深色背景配上彩色数字，一目了然。你甚至可以把全屏倒计时投在教室的大屏幕上，全班一起感受时间的步伐。当然，工具只是辅助，关键还是看我们自己怎么利用每一天。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">三、88天，如何高效备考？</h2>
+  <p class="mb-2">剩下的88天说长不长，说短不短。如果能科学规划，足够把各科知识再过两遍。下面这几点建议，希望对你有帮助：</p>
+  <ul class="list-disc list-inside mb-4 space-y-2">
+    <li><span class="font-medium text-yellow-300">制定具体到周的复习计划</span> – 别只写"复习数学"，要写"完成三角函数专题练习+整理错题5道"。每周日晚上复盘本周完成情况，调整下周计划。</li>
+    <li><span class="font-medium text-yellow-300">回归课本，查漏补缺</span> – 最后阶段别再死磕偏题怪题。把教材上的例题、定义、公式重新过一遍，尤其是物理化学的实验步骤、历史时间轴，这些基础分最容易拿。</li>
+    <li><span class="font-medium text-yellow-300">利用好真题和错题本</span> – 近五年的高考真题至少刷两遍，第一遍按章节，第二遍按整套卷。错题本不要只抄题，要写错误原因和正确思路，考前一周只看错题本就够了。</li>
+    <li><span class="font-medium text-yellow-300">进行全真模拟考试</span> – 周末按高考时间表做一套卷子，包括涂答题卡、用标准答题纸。提前适应上午考语文、下午考数学的节奏，让身体和大脑到那个点就兴奋起来。</li>
+    <li><span class="font-medium text-yellow-300">坚持体育锻炼</span> – 每天抽出15分钟跑跑步、跳跳绳，哪怕在教室里转转脖子、伸伸懒腰都行。身体状态好，脑子才转得快。</li>
+  </ul>
+
+  <div class="bg-gray-700/40 p-4 rounded-lg mb-6 border border-gray-600/50">
+    <h3 class="font-bold text-lg mb-2 text-gray-200">📌 一个实用的每日时间表（供参考）</h3>
+    <ul class="text-sm space-y-1">
+      <li>6:30 起床，简单拉伸</li>
+      <li>7:00-7:30 早读（语文古诗词、英语单词）</li>
+      <li>8:00-11:30 复习文综/理综（按高考时间）</li>
+      <li>12:00-13:30 午饭+午休（30分钟足够）</li>
+      <li>14:00-17:00 数学/语文（交替进行）</li>
+      <li>17:30-18:30 晚饭+散步</li>
+      <li>19:00-21:00 英语听力+阅读，或整理错题</li>
+      <li>21:30-22:30 自由复习（弱项科目）</li>
+      <li>23:00 准备睡觉，不熬夜</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">四、心态调整：把压力变成朋友</h2>
+  <p class="mb-4">倒计时越近，心态越容易波动。这时候你可能会失眠、烦躁、突然觉得自己什么都不会。别怕，几乎每个考生都会有这个阶段。试试这几个小方法：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li><strong class="text-yellow-300">写下来</strong> – 把焦虑和担心写在纸上，然后撕掉，暗示自己"把它扔掉"。</li>
+    <li><strong class="text-yellow-300">深呼吸</strong> – 用4-7-8呼吸法：吸气4秒，屏住7秒，呼气8秒，能快速平静。</li>
+    <li><strong class="text-yellow-300">和朋友聊聊天</strong> – 你会发现大家都差不多，互相吐槽一下反而轻松很多。</li>
+    <li><strong class="text-yellow-300">别追求完美</strong> – 高考是选拔性考试，不可能所有题都会。我们的目标是把自己会做的做对，拿到该拿的分就够了。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">五、家长能做些什么？</h2>
+  <p class="mb-4">家长们可能比孩子还紧张，但请一定把这份紧张藏起来。这个阶段孩子最需要的是"稳定的后方"：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li>保持正常的家庭氛围，不要突然变得特别关心或小心翼翼。</li>
+    <li>饮食上注意清淡营养，不要突然大补，避免肠胃不适。</li>
+    <li>多听少说，当孩子想倾诉时，耐心听，不要急着给建议。</li>
+    <li>帮助孩子整理志愿信息，提前了解大学和专业，但不要强加自己的想法。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">写在最后</h2>
+  <p class="mb-4">高考倒计时的数字终究会归零，但那段拼搏的日子会成为你人生中宝贵的财富。无论最后去了哪所大学，只要全力以赴，就无愧于自己。希望88天后，你能从容地走进考场，合上笔盖的那一刻，有战士收刀入鞘的骄傲。</p>
+  <p class="text-lg font-medium text-center mt-8 text-yellow-300">加油，2026高考生！</p>
+
+  <hr class="my-6 border-gray-600" />
+  <p class="text-sm text-gray-500 text-center">如果你觉得这篇文章有帮助，欢迎分享给更多正在备考的同学和家长。</p>
 </div>
 `;export{t as default};

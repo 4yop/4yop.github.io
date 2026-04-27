@@ -1,40 +1,97 @@
-const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
-      <p class="text-sm leading-7">
-        这页适合把 <code>.docx</code> 文档快速转成 PDF，页面里可以选择是否尽量保留基础排版，
-        也可以在大文件场景下启用 Web Worker 来减少卡顿。转换过程在浏览器里完成，不需要把文件传到服务器。
-      </p>
-    </section>
+const d=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4 text-center">八字是什么？如何从出生日期算出你的生辰八字？</h1>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="text-lg mb-4">很多朋友都听说过“八字”，但可能不太清楚它到底是什么，又该怎么算。其实，八字并不神秘，它就像你出生时刻的一张“人生地图”，由年、月、日、时四个时间点组成，每个时间点用一个天干和一个地支表示，一共八个字，所以叫“八字”。</p>
+    <p class="text-lg">今天我们就用通俗易懂的方式，聊聊八字的基础知识，并介绍一个简单好用的八字转换器，让你轻松算出自己的八字命盘。</p>
+  </div>
 
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样用</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>先上传 <code>.docx</code> 文件，确认文件名和体积正常。</li>
-        <li>如果正文、表格和常规图片为主，保留“基础排版”通常更稳。</li>
-        <li>文件较大时开启 Web Worker，转换时页面会更顺一些。</li>
-        <li>下载 PDF 后快速核一遍字体、分页、表格和图片位置。</li>
-      </ol>
-    </section>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">一、八字的组成：天干和地支</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">八字的基础是“天干”和“地支”。天干有十个：甲、乙、丙、丁、戊、己、庚、辛、壬、癸。地支有十二个：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥。</p>
+    <p class="mb-3">古人把天干和地支搭配起来，形成六十个不同的组合，用来记录年、月、日、时。比如今年是2024年，就是“甲辰”年；现在是农历八月，就是“癸酉”月；今天是某一天，可能是“丙寅”日；现在的时间如果是晚上9点，就是“亥”时，配上日干推出时干，就得到了时辰的干支。</p>
+    <p class="mb-3">所以，你的八字就是由年柱、月柱、日柱、时柱这四柱的干支组成的八个字。比如一个人出生在公历1995年12月26日晚上11点，他的八字可能就是“乙亥 戊子 戊子 甲子”。</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>为什么格式和 Word 不完全一样？</strong> 复杂字体、浮动图片、表格和分页规则，都会影响转换后的外观。</p>
-        <p><strong>支持哪些文件？</strong> 当前页面只接收 <code>.docx</code>，并限制在 50MB 以内。</p>
-        <p><strong>适合哪些文档？</strong> 适合简历、说明文档、普通表格文档这类轻量办公内容；非常复杂的模板仍建议手动复核。</p>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">二、怎么算出自己的八字？</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">要得到准确的八字，需要知道准确的出生年月日时，并且要注意两个关键点：</p>
+    <ul class="list-disc pl-6 mb-3 space-y-2">
+      <li><strong>公历还是农历？</strong> 八字用的是干支历，它和公历、农历都有关系。你可以选择用公历生日，也可以直接用农历生日，但工具会自动转换到正确的干支。</li>
+      <li><strong>年份分界是立春，不是春节。</strong> 比如有人出生在2024年2月3日，虽然还没过春节（2024年春节是2月10日），但在干支历上已经进入“甲辰”年了，因为2月4日立春。所以不能简单按正月初一来换年柱。</li>
+      <li><strong>月份分界是节气，不是初一。</strong> 每个月的开始是一个节气，比如立春是寅月的开始，惊蛰是卯月的开始。所以哪怕农历已经二月，如果还没到惊蛰，还是寅月。</li>
+      <li><strong>时辰的早晚子时。</strong> 晚上23点到凌晨1点是子时，但23点到24点是“晚子时”，属于今天的日柱，时柱却要用明天的日干来推。这个细节容易出错，专业的工具会处理好。</li>
+    </ul>
+    <p>所以，手动计算八字很繁琐，容易出错。最好的办法是用一个靠谱的八字转换器，输入出生信息，一键就能得到完整的八字命盘。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">三、八字转换器能给你什么信息？</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">一个完整的八字转换器，不只是给你八个字，还会提供很多辅助信息，帮助你更好地理解自己的命盘：</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">八字</h3>
+        <p>四柱的干支组合，比如“甲子 乙丑 丙寅 丁卯”。</p>
       </div>
-    </section>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">天干、地支</h3>
+        <p>分别列出四柱的天干和地支，方便查看。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">藏干</h3>
+        <p>每个地支里还藏着天干，代表内在的能量。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">五行</h3>
+        <p>每个干支对应的五行属性（金木水火土）。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">纳音</h3>
+        <p>每个干支组合还对应一种“纳音五行”，比如海中金、炉中火等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">十神</h3>
+        <p>以日干（代表自己）为基础，与其他天干地支的关系，比如正官、偏财、食神等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">胎元、命宫、身宫</h3>
+        <p>从八字推衍出的几个重要宫位。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">地势（长生十二神）</h3>
+        <p>每个天干在地支的状态，如长生、沐浴、冠带等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">空亡</h3>
+        <p>某些干支组合中，会有“空亡”的星煞。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">起运时间</h3>
+        <p>根据出生时间计算的开始行大运的年龄和具体时间。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">大运</h3>
+        <p>列出人生各个阶段的大运干支和起运年份、年龄。</p>
+      </div>
+    </div>
+    <p>有了这些信息，你就可以进一步了解自己的性格、运势走向，或者作为研究传统文化的参考。</p>
+  </div>
 
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        如果你遇到的是字体替换、表格换页、图片偏移这类问题，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/word-to-pdf-layout-issues/">《Word 转 PDF 常见排版问题怎么处理》</a>。
-      </p>
-    </section>
-  </article>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">四、使用八字转换器的注意事项</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">一个好的八字转换器，必须严格遵循传统规则：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>年柱以立春为界</strong>，而不是正月初一。</li>
+      <li><strong>月柱以节气为界</strong>，确保每个月的干支正确。</li>
+      <li><strong>日柱和时柱</strong>要正确处理早晚子时。一般有两种流派，最常用的是“晚子时日柱算当天，时柱算明天”，工具会明确说明。</li>
+    </ul>
+    <p class="mt-3">我们的八字转换器完全按照这些规则设计，你只需选择公历或农历，输入出生日期和时间，点击按钮，就能得到准确的八字命盘。所有信息都以中文清晰呈现，方便阅读。</p>
+  </div>
+
+  <div class="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-xl p-6 sm:p-8 text-center border border-amber-300">
+    <h2 class="text-2xl font-semibold text-red-700 mb-4">现在就来试试吧</h2>
+    <p class="text-lg mb-4">打开八字转换器，输入你的出生信息，看看自己的八字命盘里藏着哪些有趣的奥秘。无论是了解自己，还是学习传统文化，这都是一个简单而可靠的起点。</p>
+    <p class="text-md text-amber-800">工具完全免费，无需注册，一键转换。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{d as default};

@@ -1,40 +1,101 @@
-const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
-      <p class="text-sm leading-7">
-        这页适合快速生成一份可编辑的 <code>robots.txt</code>，
-        支持 WordPress、Typecho、Discuz 预设，也能手动填写 Disallow、Allow、Crawl-delay 和 sitemap。
-      </p>
-    </section>
+const o={title:"故障风格图片生成器使用指南",content:`
+## 什么是故障风格图片（Glitch Image）？
 
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>先选 CMS 预设，快速带出常见目录规则。</li>
-        <li>再补充你自己站点的后台、临时目录或公开目录路径。</li>
-        <li>确认 sitemap 地址使用的是正式域名。</li>
-        <li>生成后复制或下载，再去线上 <code>/robots.txt</code> 自查一遍。</li>
-      </ol>
-    </section>
+故障风格图片是一种利用数字图像处理技术，通过**混合模式叠加 + 随机偏移 + RGB色差**等方式，模拟数字信号故障、数据损坏等视觉效果的图片艺术形式。广泛应用于赛博朋克设计、电子音乐封面、社交媒体头像等场景。
 
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>写了 robots.txt 就等于页面保密了吗？</strong> 不是。它只是在告诉爬虫“不建议抓”，不等于权限控制。</p>
-        <p><strong>CSS 和 JS 要不要屏蔽？</strong> 不建议默认全屏蔽，尤其是依赖前端渲染的页面，误封会影响搜索引擎理解内容。</p>
-        <p><strong>Crawl-delay 一定有效吗？</strong> 不同爬虫支持程度不同，所以它更适合作为辅助规则，不要把它当成核心控制手段。</p>
-      </div>
-    </section>
+## 功能特点
 
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        想先看哪些写法最容易出错，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/robots-txt-checklist/">《robots.txt 常见写法和避坑清单》</a>。
-      </p>
-    </section>
-  </article>
-</div>
-`;export{t as default};
+### 18种混合模式
+
+本工具基于 HTML5 Canvas 的 \`globalCompositeOperation\` API，提供以下混合模式：
+
+| 模式 | 说明 | 视觉效果 |
+|------|------|----------|
+| 差值 (difference) | 两图差值运算 | 强烈的色彩反转对比，最经典的 Glitch 效果 |
+| 源顶 (source-atop) | 源图覆盖目标重叠区 | 图像边缘错位撕裂感 |
+| 目标排除 (destination-out) | 排除源图覆盖区域 | 镂空/残影效果 |
+| 变亮 (lighter) | 取两图较亮部分 | 发光/过曝效果 |
+| 正片叠底 (multiply) | 颜色相乘变暗 | 暗调加重，对比增强 |
+| 滤色 (screen) | 颜色相滤变亮 | 亮调提亮，柔光效果 |
+| 叠加 (overlay) | 正片叠底与滤色结合 | 对比度大幅提升 |
+| 变暗 (darken) | 取两图较暗部分 | 压暗效果 |
+| 颜色减淡 (color-dodge) | 减淡高光区域 | 高光溢出效果 |
+| 颜色加深 (color-burn) | 加深阴影区域 | 阴影浓重效果 |
+| 强光 (hard-light) | 聚光灯式混合 | 硬朗的明暗对比 |
+| 柔光 (soft-light) | 柔和光照混合 | 自然的明暗过渡 |
+| 排除 (exclusion) | 类似差值但更柔和 | 温和的色彩偏移 |
+| 色相 (hue) | 保留底层亮度饱和度 | 色彩替换效果 |
+| 颜色 (color) | 保留底层明度 | 色彩染色效果 |
+| 明度 (luminosity) | 保留底层色相饱和度 | 亮度重映射 |
+
+### 可调参数
+
+- **数量 (1-50)**：控制故障效果的叠加次数。数值越大，随机偏移层数越多，效果越强烈
+- **透明度 (10%-100%)：**控制每次叠加的不透明度。较低值产生更细腻的重影效果
+
+### 自动增强算法
+
+除基础混合模式外，本工具还内置：
+- **随机水平切片错位**：模拟信号中断产生的横向撕裂
+- **RGB 色差分离**：红蓝通道微偏移，增强经典 Glitch 质感
+- **智能尺寸限制**：超过 2048px 的图片自动缩放，保证流畅体验
+
+## 使用方法
+
+1. **上传图片** — 点击上传区域或拖拽图片到页面
+2. **选择模式** — 从 18 种混合模式中选择一种（默认"差值"）
+3. **调整参数** — 拖动「数量」和「透明度」滑块，实时预览效果
+4. **保存图片** — 点击「保存图片」下载 PNG 格式结果
+
+## 使用技巧
+
+### 推荐模式组合
+
+- **经典 Glitch**：差值模式，数量 15-25，透明度 75-90%
+- **赛博朋克风**：颜色减淡或强光，数量 20-30，透明度 60-80%
+- **柔和故障**：排除或柔光，数量 8-15，透明度 85-95%
+- **重度破坏**：正片叠底 + 高数量(35+)，透明度 50-70%
+
+### 最佳实践
+
+- 使用**对比度高、色彩丰富**的原图效果更佳
+- 人像照片配合「差值」或「排除」模式最有冲击力
+- 文字/Logo 配合「颜色」或「色相」模式可做创意变形
+- 数量建议从低开始逐步上调，避免过度失真
+
+## 技术原理
+
+### Canvas 混合模式
+
+Canvas 2D 的 \`globalCompositeOperation\` 属性决定了新绘制内容如何与已有画布内容混合。本工具的核心思路是：
+
+1. 先将原图绘制为底层
+2. 循环 N 次（数量参数），每次以随机偏移量重新绘制原图
+3. 每次绘制使用选定的混合模式和不透明度
+4. 最后施加轻微的 RGB 色差增强
+
+### 随机切片
+
+在叠加过程中，有 25% 的概率触发水平切片操作——随机选择一行像素带，将其水平位移，模拟 CRT 显示器的行扫描故障。
+
+## 浏览器兼容性
+
+基于 HTML5 Canvas API，支持所有现代浏览器：
+- Chrome / Edge 60+
+- Firefox 55+
+- Safari 12+
+
+## 常见问题
+
+**Q: 支持哪些格式？**
+A: 支持 JPG、PNG、WebP 等常见图片格式。
+
+**Q: 输出是什么格式？**
+A: PNG 格式，无损质量。
+
+**Q: 图片太大怎么办？**
+A: 超过 2048px 会自动缩放，保证处理速度。
+
+**Q: 哪个模式最好看？**
+A: 「差值」是最经典的 Glitch 效果，推荐先试这个。
+`};export{o as article};

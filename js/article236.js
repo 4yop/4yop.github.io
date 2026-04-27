@@ -1,119 +1,191 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800 bg-white">
-  <header class="mb-10 sm:mb-16 text-center">
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
-      互联网黑话到底是什么？它怎么悄悄改变了我们的对话方式
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <article>
+    <!-- 文章标题 -->
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+      如何在线快速截取视频片段？这个免费工具太方便了
     </h1>
-    <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-      你有没有在开会时，听到一堆“赋能”、“抓手”、“闭环”却一头雾水？这背后是一套独特的语言系统，正在许多行业中悄然流行。
+    <p class="text-lg text-gray-600 mb-8">
+      想从长视频里单独保存精彩瞬间？不需要安装复杂的软件，用这个在线工具就能轻松搞定。
     </p>
-  </header>
 
-  <div class="space-y-8 sm:space-y-12">
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        一、当简单的话变复杂了：无处不在的“黑话”
+    <!-- 核心功能介绍 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+      <p class="text-gray-800">
+        无论你是想保存电影里的感人镜头，还是剪辑一段游戏高光时刻，甚至是为教学视频分段，这个在线视频截取工具都能帮你快速完成，完全免费，操作简单。
+      </p>
+    </div>
+
+    <!-- 工具能做什么 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+        这个视频截取工具能帮你做什么？
       </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          想象一下这个场景：公司开会，领导说“我们要<strong>打通底层逻辑</strong>，形成<strong>闭环</strong>，为业务<strong>赋能</strong>”。旁边的同事频频点头，而你却暗自疑惑：“他到底想让我们做什么？”
-        </p>
-        <p>
-          这就是所谓的“互联网黑话”或者“行业术语”。它指的是一些听起来很专业、很高级的词汇和说法，在科技、金融、电商这些圈子里尤其常见。最初，这些词是为了快速、准确地描述一些复杂的概念或方法。但不知从什么时候开始，它们变得越来越让人听不懂，甚至成了一种独特的“沟通方式”。
-        </p>
-        <p>
-          很多人感到困惑：为什么不能好好说话？明明可以用“想办法提高销量”，偏要说“寻找增长抓手，实现流量转化”。这种语言，像一层朦胧的纱，让圈外人看不清，也让圈内人有时自己都绕晕了。
-        </p>
+      <ul class="space-y-4 text-gray-700">
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>提取精彩片段</strong>：从几个小时的家庭录像、会议记录或直播回放中，精准提取出你最需要的几分钟。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>制作短视频素材</strong>：为社交媒体剪辑适合传播的短视频，比如有趣的瞬间、教程的关键步骤。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>分割长视频</strong>：把一部长电影、一堂长课程或一次长演讲，按照内容分割成多个小片段，方便观看和学习。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>批量截取多个片段</strong>：一次操作，就能从同一个视频里截取出多个不同时间段的片段，效率翻倍。</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 工具的主要特点 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+        为什么大家都喜欢用这个工具？
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-lg text-gray-900 mb-2">💻 无需安装，打开网页就用</h3>
+          <p class="text-gray-700">它是一个网页工具，直接在浏览器里使用。你不用下载和安装任何软件，不占用电脑空间，打开就能用。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-lg text-gray-900 mb-2">🔒 隐私安全有保障</h3>
+          <p class="text-gray-700">你的视频文件只在你的浏览器中进行处理，不会被上传到陌生的服务器，不用担心隐私泄露的问题。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-lg text-gray-900 mb-2">⏱️ 时间设置超级精准</h3>
+          <p class="text-gray-700">可以精确到秒来设置开始和结束时间。播放视频时，还能一键将当前播放时间设为截取点，非常方便。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-lg text-gray-900 mb-2">📱 手机电脑都能用</h3>
+          <p class="text-gray-700">工具会自动适应你的屏幕，无论是在电脑的大屏幕上，还是用手机操作，界面都很清晰，步骤都一样简单。</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        二、大家为什么爱说“黑话”？不只是为了显得厉害
+    <!-- 适用人群 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+        谁特别需要这个工具？
       </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          这种说话方式的流行，背后有几个简单的原因：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>效率假象</strong>：一个词，比如“<strong>对齐</strong>”，就能代替“我们互相沟通一下，确保想法一致，没有理解偏差”。听起来省事多了。</li>
-          <li><strong>身份认同</strong>：能熟练使用这些词，仿佛就在说：“我是这个圈子里的人，我懂行。”它是一种无形的名片。</li>
-          <li><strong>自我保护</strong>：把普通的事情用复杂的词汇包装，有时能让提议听起来更严谨、更难以反驳。</li>
-          <li><strong>追赶潮流</strong>：当身边人都在这么说时，如果你不用，反而显得落伍了。语言也有从众心理。</li>
-        </ul>
-        <p>
-          所以，它不全是坏事，也不全是为了装样子。在某些专业的讨论中，它确实能提高沟通效率。但问题在于，当它泛滥到日常交谈、甚至模糊了事情的本质时，沟通就变味了。
-        </p>
+      <div class="space-y-5">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
+          <div class="mb-3 sm:mb-0 sm:mr-5">
+            <div class="w-12 h-12 bg-green-100 text-green-800 rounded-full flex items-center justify-center font-bold">学</div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-900 mb-1">学生与自学者</h3>
+            <p class="text-gray-700">从网络课程中截取重点知识片段，制作自己的复习笔记，让学习更高效。</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
+          <div class="mb-3 sm:mb-0 sm:mr-5">
+            <div class="w-12 h-12 bg-purple-100 text-purple-800 rounded-full flex items-center justify-center font-bold">社</div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-900 mb-1">社交媒体爱好者</h3>
+            <p class="text-gray-700">轻松从喜爱的影视剧、综艺或游戏直播中，截取有趣片段分享到朋友圈、抖音或微博。</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
+          <div class="mb-3 sm:mb-0 sm:mr-5">
+            <div class="w-12 h-12 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-bold">工</div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-900 mb-1">普通上班族</h3>
+            <p class="text-gray-700">整理工作会议录像中的决策部分，或者从培训视频中提取操作指南，方便随时查阅。</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        三、“黑话”给我们的沟通带来了什么？
+    <!-- 使用步骤（非技术化描述） -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+        简单四步，完成视频截取
       </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          过度依赖这种语言，会带来一些实实在在的困扰：
-        </p>
-        <p>
-          <strong>制造隔阂</strong>：新人入职，面对满口的“<strong>迭代</strong>”、“<strong>复盘</strong>”、“<strong>颗粒度</strong>”，可能需要很长时间才能融入。这无形中提高了理解和协作的成本。
-        </p>
-        <p>
-          <strong>模糊重点</strong>：当一份方案充满了“<strong>打造生态</strong>”、“<strong>聚焦赛道</strong>”时，它的具体执行步骤是什么？谁负责？什么时候完成？这些最关键的信息，反而可能被华丽的辞藻淹没。
-        </p>
-        <p>
-          <strong>掩盖问题</strong>：有时候，用复杂的词汇来描述一个简单的错误或瓶颈，会让问题看起来没那么严重，或者把责任变得模糊。
-        </p>
-        <p>
-          沟通的本质，是让对方明白。如果一种语言体系让听的人越来越糊涂，那它可能已经背离了初衷。
-        </p>
+      <div class="relative">
+        <!-- 步骤线 -->
+        <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 md:block hidden"></div>
+
+        <div class="space-y-8 relative">
+          <div class="flex flex-col md:flex-row items-start">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">1</div>
+            </div>
+            <div class="md:ml-8 flex-1">
+              <h3 class="font-bold text-xl text-gray-900 mb-2">上传你的视频</h3>
+              <p class="text-gray-700">就像发送邮件添加附件一样简单。把电脑或手机里的视频文件拖到网页指定区域，或者点击按钮选择文件。它支持常见的视频格式，比如MP4、AVI等。</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">2</div>
+            </div>
+            <div class="md:ml-8 flex-1">
+              <h3 class="font-bold text-xl text-gray-900 mb-2">标记想要截取的部分</h3>
+              <p class="text-gray-700">在视频播放条上，或直接输入时间，设置“从这里开始”和“到这里结束”。你可以添加多个这样的时间段，把视频里所有精彩部分一次都标记出来。</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">3</div>
+            </div>
+            <div class="md:ml-8 flex-1">
+              <h3 class="font-bold text-xl text-gray-900 mb-2">选择保存的格式</h3>
+              <p class="text-gray-700">选择你希望截取出来的视频片段用什么格式保存，通常选择通用的MP4格式就好。你还可以选择视频质量，平衡文件大小和清晰度。</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">4</div>
+            </div>
+            <div class="md:ml-8 flex-1">
+              <h3 class="font-bold text-xl text-gray-900 mb-2">一键截取并保存</h3>
+              <p class="text-gray-700">点击“开始截取”按钮，稍等片刻，处理完成后，你标记的所有视频片段就会被打包好，供你下载到本地。整个过程一目了然。</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        四、一个有趣的小工具：帮你“翻译”和生成这些术语
+    <!-- 常见问题（SEO问答） -->
+    <section class="mb-10 bg-gray-50 p-6 md:p-8 rounded-xl">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">
+        关于在线视频截取，你可能想知道
       </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          为了更好地理解这种现象，甚至用它来轻松一下，有人做了一个好玩的小工具。你可以把它看作一个“术语生成器”或“语境模拟器”。
-        </p>
-        <p>
-          你只需要输入一个普通的主题，比如“如何做好一个项目”，然后选择相关的行业（比如科技、电商）和场景（比如开会、写报告）。它就能帮你“翻译”成一套充满行业术语的表述。
-        </p>
-        <p>
-          你会发现，原来“我们要认真做项目”，可以被表达为：“我们需要<strong>聚焦项目核心价值链路</strong>，通过<strong>精细化运营</strong>和<strong>敏捷迭代</strong>来<strong>赋能团队</strong>，最终<strong>打通闭环</strong>，实现<strong>价值最大化</strong>。”
-        </p>
-        <p>
-          这个过程本身就像一面镜子，让我们看到，日常的交流是如何被“包装”起来的。它不是一个严肃的生产工具，更像一个轻松的互动游戏，帮助你：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>快速理解</strong>：当你听到一堆陌生术语时，或许能猜到它们大概想表达什么。</li>
-          <li><strong>会心一笑</strong>：生成的内容往往夸张又熟悉，让人忍不住发笑，缓解一下被术语轰炸的压力。</li>
-          <li><strong>自我提醒</strong>：在需要用专业语言沟通时，检查一下自己是不是也陷入了“不说人话”的陷阱。</li>
-        </ul>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">问：这个工具是免费的吗？</h3>
+          <p class="text-gray-700 pl-5">是的，这是一个完全免费的在线工具。你不需要注册账号，也没有使用次数限制，随时打开网页就能使用。</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">问：对视频文件大小有限制吗？</h3>
+          <p class="text-gray-700 pl-5">为了确保处理速度和稳定性，建议上传不超过500MB的视频文件。这对于大多数手机拍摄的视频或短片来说完全足够。</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">问：截取后的视频画质会变差吗？</h3>
+          <p class="text-gray-700 pl-5">你可以自己选择输出质量。选择“高质量”模式，画质基本和原视频一致。如果为了节省存储空间，也可以选择压缩后的“中等”或“低质量”。</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">问：可以在手机上使用吗？</h3>
+          <p class="text-gray-700 pl-5">当然可以。这个工具的网页版针对手机屏幕做了专门优化，操作按钮和文字大小都适合在手机上触摸操作，体验很好。</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        五、回归清晰：让语言重新成为桥梁
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          了解“黑话”，不是为了学会并天天使用它。恰恰相反，是为了看清它，然后有选择地使用。
-        </p>
-        <p>
-          专业的术语在专业的场合有其价值，能高效地沟通复杂思想。但最有效的沟通，永远是建立在清晰、准确和真诚的基础上。无论是工作还是生活，把复杂的事情讲简单，是一种难得的能力。
-        </p>
-        <p>
-          下次当你再听到或想使用这些词汇时，不妨先在心里问自己：“我能不能用更直白的话说清楚？” 让语言重新成为连接你我的桥梁，而不是一堵墙。
-        </p>
-        <p class="pt-4 text-gray-700 italic">
-          语言是活的，它会随着时代和行业变化。观察这些变化很有趣，但别忘了，最好的语言永远是能让对方听懂的、充满真诚的语言。
-        </p>
-      </div>
-    </section>
-  </div>
-</article>
+    <!-- 结尾总结 -->
+    <div class="p-6 border border-blue-200 bg-white rounded-xl text-center">
+      <p class="text-gray-800 text-lg">
+        下次当你需要从长视频里<span class="font-semibold text-blue-700">保存精彩一刻</span>、<span class="font-semibold text-blue-700">制作短视频素材</span>或<span class="font-semibold text-blue-700">分割学习内容</span>时，别再为复杂软件发愁了。试试这个操作简单、免费安全的在线视频截取工具，你会发现，处理视频片段原来可以这么轻松。
+      </p>
+    </div>
+  </article>
+</div>
 `;export{s as default};

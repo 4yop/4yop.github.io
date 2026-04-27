@@ -1,97 +1,120 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <article>
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h1>
-    <p class="text-lg text-gray-600 mb-8 text-center">无论是社区篮球赛、家庭桌游夜，还是公司内部竞赛，一个清晰、好看的记分板能让比赛体验立刻升级。</p>
+const t=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 py-8 md:px-6">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">还在为找不到资料发愁？试试这个让搜索变简单的智能工具</h1>
 
-    <div class="my-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
-      <p class="text-blue-800">你是不是也遇到过这些情况？组织一场小比赛，比分靠手写纸片，看不清还容易出错；或者临时找不到合适的工具来展示实时比分，让观众和参与者一头雾水。</p>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否经历过这些？想找一份专业报告，却搜出满屏无关网页；需要某个网站内的信息，却要翻遍全网；明明记得看过一篇好文章，再想找时却怎么也搜不到了。别担心，这些问题，一个简单的搜索工具就能帮你解决。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 rounded-r">
+    <p class="text-gray-700">
+      <strong>简单来说：</strong> 这是一个集成了百度、谷歌、必应三大搜索引擎的“一站式”搜索入口，最大的亮点是它把许多资深人士才知道的“搜索秘籍”，变成了人人都能轻松点击使用的按钮。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
+
+  <p class="mb-6">和普通搜索框不同，这个工具让你能“指哪打哪”，大幅提升找资料的效率和准确度。</p>
+
+  <div class="space-y-8">
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-700 rounded-full text-center leading-6 mr-2 text-sm">1</span>
+        一站切换，不用记网址
+      </h3>
+      <p class="pl-8">无论是查国内资讯用百度，还是找国际资料用谷歌、必应，在这里一键就能切换。你不用再费力记住不同搜索引擎的网址，更不用来回切换浏览器标签页。</p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-green-100 text-green-700 rounded-full text-center leading-6 mr-2 text-sm">2</span>
+        用“秘籍”精准锁定目标
+      </h3>
+      <p class="pl-8 mb-4">这是它的核心功能。那些复杂的搜索规则，现在你只需要点一下按钮就能用上。</p>
+      <ul class="pl-8 space-y-3">
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">site:</span>
+          <div>
+            <p class="font-medium">锁定特定网站：</p>
+            <p class="text-gray-600 text-sm">比如，你只想在某个政府网站或大学官网上找政策文件或学术资料，用这个功能就能把搜索范围锁定在你信任的网站上。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">filetype:</span>
+          <div>
+            <p class="font-medium">专门找特定文件：</p>
+            <p class="text-gray-600 text-sm">想直接下载PDF格式的电子书、PPT课件或者Word文档？这个指令能帮你过滤掉网页，直接找到可下载的文件。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">“关键词”</span>
+          <div>
+            <p class="font-medium">搜索原话：</p>
+            <p class="text-gray-600 text-sm">当你需要搜索一句完整的话、一句名言或一个固定短语时，加上引号，搜索引擎就会原封不动地去找它。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">-排除词</span>
+          <div>
+            <p class="font-medium">排除干扰信息：</p>
+            <p class="text-gray-600 text-sm">搜“苹果”不想看到手机，只想看水果？用一个减号就能排除掉你不想看到的关键词。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-amber-100 text-amber-700 rounded-full text-center leading-6 mr-2 text-sm">3</span>
+        你的“搜索记忆”，随时找回
+      </h3>
+      <p class="pl-8">每次搜索都会自动保存下来，形成你的个人搜索历史。之前找过什么资料，用的是哪个搜索引擎，一目了然。想再次查看，点一下就能恢复搜索，不用再费力回忆。</p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-center leading-6 mr-2 text-sm">4</span>
+        不用记，点一下就用
+      </h3>
+      <p class="pl-8">所有的高级搜索指令都以快捷按钮的形式排列在搜索框下方。你不用记忆复杂的语法格式，需要哪种搜索方式，直接用鼠标点一下对应的按钮，它就会自动添加到搜索框里，你只需要补充自己的关键词就行。</p>
+    </section>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">这个工具适合谁用？</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">学生和研究者</h4>
+      <p class="text-gray-600">写论文时需要精准查找学术网站上的PDF文献、特定领域的研究资料，用“站点锁定”和“文件类型”搜索能省下大量筛选时间。</p>
     </div>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">告别混乱，比赛记分可以很简单</h2>
-    <p class="mb-4">过去，我们可能需要专门的设备或复杂的软件来管理比赛比分。但现在，一个轻便的在线工具就能解决所有问题。它的核心目标只有一个：让每个人，无论在场内还是远处，都能一目了然地看到比赛进展。</p>
-    <p class="mb-4">想象一下，在社区羽毛球赛现场，一块大屏幕上实时跳动着你支持的队伍比分；或者家庭玩扑克牌时，手机屏幕就是你们的计分中心。这能让任何形式的竞技都变得更有仪式感和趣味性。</p>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">一个好用的记分工具，应该具备哪些特点？</h2>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">实时更新比分</span>：比分变化能立刻显示出来，没有延迟。</li>
-      <li><span class="font-medium">操作极其简单</span>：不需要学习，上手就能点按加减分数。</li>
-      <li><span class="font-medium">视觉清晰直观</span>：数字够大，颜色分明，远处也能看清。</li>
-      <li><span class="font-medium">适应各种场合</span>：既能在手机、平板上用，也能投屏到电视或投影仪上。</li>
-      <li><span class="font-medium">帮你掌握节奏</span>：可以设置比赛总时长，显示剩余时间。</li>
-    </ul>
-
-    <div class="my-8 p-6 bg-gray-50 rounded-xl">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">它能用在哪些地方？</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社区与校园比赛</h4>
-          <p class="text-sm text-gray-600">篮球、足球、乒乓球友谊赛，运动会项目计分。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">家庭与朋友聚会</h4>
-          <p class="text-sm text-gray-600">桌游、棋牌、家庭趣味竞技，让游戏计分不再麻烦。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社团与兴趣小组</h4>
-          <p class="text-sm text-gray-600">电竞对战、台球比赛、读书会知识竞赛等。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">企业内部活动</h4>
-          <p class="text-sm text-gray-600">团队建设比赛、技能比武、年会游戏环节。</p>
-        </div>
-      </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">办公族和资料收集者</h4>
+      <p class="text-gray-600">经常需要收集行业报告、市场数据、竞品信息？这个工具可以帮助你更高效地从指定来源（如官网、文库）获取所需文件，并管理好自己的搜索记录。</p>
     </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">对搜索质量有要求的普通人</h4>
+      <p class="text-gray-600">厌倦了在海量无效结果里“淘金”。想更快找到某个问题的确切答案、一张清晰的图片教程，或是一个靠谱的解决方案。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">需要多引擎对比的人</h4>
+      <p class="text-gray-600">想看看百度、谷歌对同一个问题的搜索结果有何不同？在这里切换比手动输入网址方便太多了。</p>
+    </div>
+  </div>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">三步上手，轻松管理你的比赛</h2>
-    <p class="mb-6">使用这样的工具，就像操作一个简单的遥控器。你不需要懂技术，只需要关注比赛本身。</p>
-    <ol class="list-decimal pl-5 space-y-6 mb-8">
-      <li>
-        <span class="font-medium text-gray-800">第一步：设定基础信息</span>
-        <p class="mt-1 text-gray-600">给你的两支队伍起个名字，比如“旋风队”和“勇者队”。设定一下比赛的预计结束时间，这样大家都能看到倒计时。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第二步：开始记分</span>
-        <p class="mt-1 text-gray-600">比赛开始后，哪个队伍得分了，就在对应的队伍下面点一下“+”号。如果计分员不小心加错了，点“-”号就能减回去。所有改动都会自动保存。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第三步：全屏展示</span>
-        <p class="mt-1 text-gray-600">当需要把比分展示给大家看时，只需要点击一下“全屏显示”，整个屏幕就会变成一块简洁大气的大记分牌，非常适合投屏。</p>
-      </li>
+  <div class="mt-12 p-6 border rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4">如何使用它来提升效率？</h2>
+    <p class="mb-4">使用起来和普通搜索一样简单：</p>
+    <ol class="list-decimal pl-5 space-y-3">
+      <li><strong>选搜索引擎：</strong> 根据你要找的内容性质，点击上方的“百度”、“谷歌”或“必应”。</li>
+      <li><strong>输入或组合关键词：</strong> 在搜索框直接打字，或者先点击下方你需要的“秘籍”按钮（如<span class="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">site:</span>），再输入你的具体关键词。</li>
+      <li><strong>开始搜索：</strong> 按下回车或点击搜索按钮，结果会在新页面打开。</li>
+      <li><strong>查看与复用历史：</strong> 在左侧“搜索历史”里，你可以随时找回之前的任何一次搜索。</li>
     </ol>
+    <p class="mt-6 text-gray-600">整个过程，你不需要学习任何复杂的知识，工具的右侧区域就像一个随时可查的说明书，对每个“搜索秘籍”都有通俗的解释和例子。</p>
+  </div>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么说它提升了比赛体验？</h2>
-    <p class="mb-4">一个专业的记分板，看似只是显示了几个数字，但它实际上解决了比赛组织中的几个核心痛点：</p>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">公平公正，一目了然</span>：所有人都盯着同一个权威比分来源，避免了因听错或看错产生的争议。</li>
-      <li><span class="font-medium">营造紧张氛围</span>：跳动的数字和倒数的时间，能有效点燃参赛者和观众的热情。</li>
-      <li><span class="font-medium">解放组织者</span>：无需再专门安排一个人反复大声报分或更新黑板，省时省力。</li>
-      <li><span class="font-medium">灵活适配</span>：你可以根据比赛的主题颜色，调整记分板的背景和文字颜色，让它更贴合现场风格。</li>
-    </ul>
-
-    <div class="my-10 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border text-center">
-      <h3 class="text-2xl font-bold text-gray-800 mb-3">让下一场比赛更精彩</h3>
-      <p class="text-gray-700 mb-4">工具的价值在于为人服务。一个好的记分工具，就是让组织者更省心，让参与者更投入，让观众更尽兴。它把琐碎的管理事务变得简单，把大家的注意力重新聚焦到比赛的乐趣和竞技本身。</p>
-      <p class="font-medium text-gray-800">如果你正在筹划一场比赛，或者希望日常的游戏竞争更有趣，不妨试试这个免费、简单又直观的解决方案。</p>
-    </div>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
-    <div class="space-y-4 mb-10">
-      <div>
-        <h4 class="font-medium text-gray-800">这个工具是免费的吗？</h4>
-        <p class="text-gray-600">是的，这是一个完全免费的工具，无需下载安装，在浏览器中打开即可使用。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">需要注册账号吗？</h4>
-        <p class="text-gray-600">完全不需要。所有设置和比分数据都会自动保存在你当前使用的设备上，方便下次继续。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">除了两队对战，能记录更多队伍吗？</h4>
-        <p class="text-gray-600">目前的设计专注于两支队伍的对决场景，这是最常见的比赛形式，能确保界面最清晰、操作最直接。</p>
-      </div>
-    </div>
-
-    <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">希望这篇文章能帮你找到轻松管理比赛比分的好方法。祝你的每一场比赛都组织顺利，精彩纷呈！</p>
-  </article>
-</div>
-`;export{s as default};
+  <p class="mt-12 text-center text-gray-500 border-t pt-8">
+    搜索不是碰运气。用好工具，其实就是在给你的信息获取能力装上“导航仪”，让你在信息的海洋里，能更直接、更准确地驶向目的地。希望这个介绍，能帮你打开高效搜索的新思路。
+  </p>
+</article>
+`;export{t as default};

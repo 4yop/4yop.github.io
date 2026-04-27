@@ -1,84 +1,65 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white shadow-sm rounded-lg p-6 md:p-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">身份证号码的秘密：一键解析你的出生日期与生肖</h1>
-    
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      我们每个人都有一个独一无二的身份证号码。这一长串数字不仅是一个身份代码，更像是一个微型“信息卡”，里面隐藏着你的出生日期，甚至能推算出你的生肖属相。今天，我们就来聊聊怎么快速读懂身份证里的这些“隐藏信息”。
-    </p>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">一、你的生日，就藏在身份证号码里</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        你可能不知道，身份证号码的第7到第14位（18位身份证）或者第7到第12位（15位身份证），就是你的出生日期编码。
-      </p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        例如，号码“110101<b class="text-blue-600">19900307</b>7219”中，加粗的“19900307”就代表着1990年3月7日。过去的老式15位身份证，则用类似“900307”这样的六位数字表示1990年3月7日。不过，手动去数位、截取、换算，既麻烦又容易出错。
-      </p>
-      <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 rounded">
-        <p class="text-gray-700 italic">一个简单的工具就能解决这个问题：你只需要把身份证号码输进去，它就能立刻把里面包含的出生年月日提取出来，并以你习惯的日期格式（如“1990-03-07”或“1990年3月7日”）展示给你看。</p>
-      </div>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">二、除了生日，还能看出你的生肖？</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        生肖，是我们传统文化中很有意思的一部分。很多人知道自己的属相，但可能没想过，它和你的出生年份紧密相关，而出生年份就藏在身份证里。
-      </p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        根据一个简单的规律：每12年一个轮回，分别是鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪。知道了出生年份，就能立刻知道属相。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        所以，一些好用的解析工具在提取出你的出生年份后，可以顺便帮你算出生肖。比如，1990年出生的人属马。这样，你不仅能快速核对生日信息，还能顺便看一眼自己或他人的生肖，挺有趣的。
-      </p>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">三、批量处理：整理名单时的好帮手</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        想象一下这些场景：公司的HR需要为新员工录入信息；学校的老师要统计全班学生的生日；活动主办方需要核对参与者的身份资料……这些时候，面对几十甚至上百个身份证号码，如果一个个手动去看、去记录，工作量非常大，还容易看花眼。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        批量解析功能就是为了应对这种情况而生的。你只需要把所有身份证号码，每行一个地粘贴到工具里，点击一下，所有号码对应的出生日期（和生肖）就会整齐地罗列出来。你可以一目了然地查看，也可以一键复制全部结果，直接粘贴到你的表格或文档里，效率提升不止一点点。
-      </p>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">四、用你习惯的方式看日期</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        不同的人、不同的场合，对日期的格式要求可能不同。有人习惯“1990-03-07”，有人喜欢“1990年3月7日”，还有人只需要“3月7日”或者单独的“1990年”。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        一个好的解析工具应该能灵活地满足这些需求。它通常会提供多种日期格式选项，让你可以自由选择最顺眼、最符合你需要的那一种，解析结果会立刻以你选择的格式呈现。
-      </p>
-    </section>
-    
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">五、最重要的：你的信息是否安全？</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        在处理身份证号码这类敏感信息时，大家最关心的一定是安全。谁都不希望自己的信息在网络上被泄露。
-      </p>
-      <div class="bg-green-50 border-l-4 border-green-400 p-4 my-6 rounded">
-        <p class="text-gray-700 font-medium">这里有一个关键的区别：工具是在哪里处理你的数据的？</p>
-        <p class="text-gray-700 mt-2">现在很多注重隐私的工具采用了“纯前端处理”的方式。这意味着，整个解析过程只在你自己的电脑或手机浏览器里完成，数据<b>不会通过网络发送到任何服务器</b>。就像你用计算器算数一样，算完结果就停留在你的设备上。选择这样的工具，可以让你用得更安心。</p>
-      </div>
-    </section>
-    
-    <section class="mt-12 pt-8 border-t border-gray-200">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">总结一下</h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        身份证号码解析，其实就是把那一长串数字里本来就包含的生日信息，用更清晰、更直观的方式“翻译”出来。如果再结合年份推算出生肖，就又多了一层文化趣味。
-      </p>
-      <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-6">
-        <li>它的核心作用是<b>快速、准确地提取出生日期</b>。</li>
-        <li>附加功能是帮你<b>轻松查看对应的生肖属相</b>。</li>
-        <li><b>批量处理</b>能力让它成为整理大量信息的效率利器。</li>
-        <li>选择<b>纯本地处理</b>的工具，能最大程度保护你的隐私安全。</li>
-      </ul>
-      <p class="text-gray-700 leading-relaxed">
-        下次当你需要从身份证号码里找生日，或者只是好奇想看看自己号码里的“秘密”时，不妨试试这类小工具。你会发现，原来读懂身份证，可以这么简单。
-      </p>
-    </section>
-  </article>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h1>
+  <p class="text-lg text-gray-600 mb-8">你是否在电影片尾、广告大屏或视频里看过那些缓缓移动的文字？现在，不用学习复杂软件，你也可以轻松创建属于自己的滚动文字效果了。</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium">简单来说，滚动文字生成器就是一个在线小工具。你只需要输入文字、调调颜色和速度，它就能立刻帮你生成一段会“走动”的文字动画，你可以把它用在视频里、网页上，或者做成一个特别的图片。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">什么是滚动文字？</h2>
+  <p class="mb-4">滚动文字，顾名思义，就是会沿着一定方向（比如从左到右、从上到下）自动移动的文字。它和我们平时看的静态文字不同，自带一种动感和吸引力。</p>
+  <p class="mb-6">想想这些场景：古老的电影院里向上滚动的演员表；商场电子屏上循环播放的打折信息；你制作的短视频里，需要一段横穿屏幕的标题……这些都是滚动文字的应用。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">它能用来做什么？</h2>
+  <p class="mb-4">这个小工具非常适合普通人在日常创作中使用：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>制作视频字幕</strong>：为你拍摄的短片添加专业的片头或片尾滚动字幕。</li>
+    <li><strong>创建动态海报</strong>：设计一个带有滚动标语的宣传图，更抓人眼球。</li>
+    <li><strong>丰富演示文稿</strong>：在PPT或Keynote中插入一小段滚动文字，让演示更生动。</li>
+    <li><strong>装饰社交媒体</strong>：为你的社交媒体状态或故事制作独特的动态背景文字。</li>
+    <li><strong>简单的广告展示</strong>：小店铺可以用来制作电子广告语，在平板或电脑上循环播放。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">如何使用它？（完全不用懂技术）</h2>
+  <p class="mb-4">使用过程就像“搭积木”一样简单直观，所有操作都是即时可见的：</p>
+
+  <div class="bg-gray-50 rounded-lg p-5 mb-6">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">第一步：写下你想说的</h3>
+    <p class="mb-4">在文字框里输入任何内容：一句祝福、一个口号、一段歌词，或者店铺名称和电话。输入的同时，右边预览区里的文字就会立刻出现。</p>
+
+    <h3 class="text-xl font-medium text-gray-800 mb-3">第二步：给它“穿衣服”</h3>
+    <p class="mb-2">你可以随意打扮这段文字：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>换颜色</strong>：点击色块，给文字换个喜欢的颜色，也能改变整个背景板的颜色。</li>
+      <li><strong>调大小</strong>：拖动滑块，让文字变大或变小。</li>
+      <li><strong>选字体</strong>：在几种常见字体里选择，比如端庄的宋体或现代的黑体。</li>
+    </ul>
+
+    <h3 class="text-xl font-medium text-gray-800 mb-3">第三步：设置它如何“走动”</h3>
+    <p class="mb-2">这是最关键也最好玩的部分：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>选方向</strong>：让文字从左向右走、从右向左走，或者上下移动。</li>
+      <li><strong>控速度</strong>：拖动滑块，决定文字移动得快一点还是慢一点。</li>
+      <li><strong>定起点</strong>：精细控制文字从屏幕的哪个位置开始出现。</li>
+      <li><strong>改画布</strong>：调整显示区域的大小，适应你不同的用途。</li>
+    </ul>
+    <p>每调整一个参数，右边的预览效果都会实时变化，真正做到“所见即所得”。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">第四步：保存你的作品</h2>
+  <p class="mb-6">调整到自己最满意的效果后，点击“生成动画”按钮。稍等片刻，工具就会为你制作好一段完整的滚动文字视频。你可以直接下载这个视频文件，用到任何你需要的地方去。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">给初学者的几点小建议</h2>
+  <ul class="list-disc pl-5 mb-8 space-y-3">
+    <li><strong>文字别太长</strong>：滚动文字适合展示简短精悍的信息，太长会看不完。</li>
+    <li><strong>颜色要对</strong>：确保文字颜色和背景颜色有足够的对比度，不然会看不清。</li>
+    <li><strong>速度要适中</strong>：太快让人眼花，太慢显得拖沓，多预览几次找到最舒服的速度。</li>
+    <li><strong>先模仿再创造</strong>：如果不确定怎么做，可以先试试模仿你见过的、觉得好看的滚动文字效果。</li>
+  </ul>
+
+  <div class="border-t pt-8">
+    <p class="text-gray-600">总而言之，滚动文字生成器是一个将简单想法快速变成动态视觉的小帮手。它不需要任何专业知识，只需你的创意。无论是为了工作展示，还是个人兴趣，都可以来试试看，亲手创造一段属于你自己的、会“说话”的文字。</p>
+  </div>
 </div>
-`;export{e as default};
+`;export{s as default};

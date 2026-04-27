@@ -1,113 +1,114 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想找国产AI智能体框架？这份清单帮你省时间</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">最近AI很火，很多人想试试AI智能体，但不知道从哪里开始。国内其实有很多优秀的AI智能体框架，而且大部分都是免费的。今天，我整理了一份国产AI智能体框架清单，帮你快速了解和选择。</p>
-  </header>
+<div class="text-gray-800 bg-white">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-8 text-center">SVG和图片互转工具：免费在线转换，简单三步搞定</h1>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是AI智能体框架？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">你可能会好奇，AI智能体框架到底是什么？</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-blue-600 my-5">
-      <p class="text-gray-700"><strong>简单来说：</strong>AI智能体框架就像是一个工具箱，里面装好了各种工具，你不需要自己造工具，直接拿来用就行。比如，你想让AI帮你写文章、做表格、处理数据，用这些框架就能快速实现。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">对于普通人来说，这些框架可能用不上，但如果你是做开发、做产品、做运营的，了解这些框架会很有帮助。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 为什么关注国产框架？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">国外有很多优秀的AI智能体框架，比如OpenAI的GPT系列，但国产框架也有自己的优势：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">中文支持更好：</strong>国产框架对中文的理解和处理更准确，适合中文场景。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">本地化服务：</strong>服务器在国内，访问速度快，不用担心网络问题。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">符合国内法规：</strong>数据安全和隐私保护符合国内要求，用着更放心。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">社区活跃：</strong>国内开发者多，遇到问题容易找到解决方案。</span>
-      </li>
+  <!-- 引言/痛点 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+    <p class="text-lg">你是不是也遇到过这些情况？</p>
+    <ul class="mt-4 space-y-2 pl-5 list-disc">
+      <li>设计师发来一个<span class="font-medium">SVG格式的图标</span>，但你只想把它当成普通图片插入到PPT或文章里。</li>
+      <li>手头有一张很喜欢的JPG或PNG图片，想把它做成可以<span class="font-medium">随意放大缩小都不模糊</span>的矢量图。</li>
+      <li>下载的素材背景是白色的，放到深色网页上特别突兀，想把它<span class="font-medium">背景变透明</span>或者换个颜色。</li>
     </ul>
-    <p class="text-gray-700 leading-relaxed">所以，如果你的项目主要面向国内用户，国产框架是不错的选择。</p>
-  </section>
+    <p class="mt-4">别再为格式问题头疼了。今天，我们就来介绍一个完全在浏览器里运行的免费小工具，像变魔术一样，轻松解决SVG和常见图片之间的转换难题。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 如何使用这份清单？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">这份清单列出了国内主流的AI智能体框架，包括开发者、简介、GitHub链接等信息。你可以：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">搜索筛选：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">输入框架名称或开发者名称，快速找到你感兴趣的框架。</p>
+  <!-- 第一部分：通俗解释什么是SVG和图片 -->
+  <div class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">图纸和照片：一图看懂两者的区别</h2>
+    <p class="mb-4">你可以这样理解：</p>
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-3 text-green-600">SVG (矢量图) - 像一份“设计图纸”</h3>
+        <ul class="space-y-2">
+          <li><span class="font-medium">本质：</span>一份记录了“怎么画”的指令清单（比如：在中心画个红色的圆）。</li>
+          <li><span class="font-medium">特点：</span>无限放大都不会出现马赛克，永远清晰。文件通常很小。</li>
+          <li><span class="font-medium">常见用途：</span>网站图标(Logo)、图表、简单的插画。</li>
+          <li><span class="font-medium">缺点：</span>不适合表现复杂的、像照片一样的真实场景。</li>
+        </ul>
       </div>
-      <div class="bg-yellow-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">状态筛选：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">查看框架的活跃状态，选择正在维护的框架，避免使用停止更新的项目。</p>
+      <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium mb-3 text-blue-600">PNG/JPG (位图) - 像一张“拍好的照片”</h3>
+        <ul class="space-y-2">
+          <li><span class="font-medium">本质：</span>由成千上万个小色块（像素）拼成的完整画面。</li>
+          <li><span class="font-medium">特点：</span>能展现丰富的色彩和细节，比如你的自拍照。</li>
+          <li><span class="font-medium">常见用途：</span>摄影作品、网页背景图、生活照片。</li>
+          <li><span class="font-medium">缺点：</span>放大会变模糊，高质量图片文件可能很大。</li>
+        </ul>
       </div>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>导出功能：</strong>如果你想把清单保存下来，可以点击"导出Excel"按钮，把数据下载到本地，方便以后查看。</p>
-    </div>
-  </section>
+    <p>所以，<span class="font-medium">“转换”其实就是把“图纸”变成“照片”，或者把“照片”模拟成“图纸”的过程。</span>各有各的用处，关键在于你需要它做什么。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 选择框架时要注意什么？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">选择AI智能体框架时，需要考虑几个方面：</p>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">1. 活跃状态</p>
-        <p class="text-gray-700 text-sm">优先选择"活跃"状态的框架，说明有团队在持续维护和更新。"维护中"也可以考虑，但"暂停"的框架不建议使用。</p>
+  <!-- 第二部分：工具能做什么（好处） -->
+  <div class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">这个转换工具能为你解决的5个具体问题</h2>
+    <div class="space-y-6">
+      <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">1</div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">格式兼容，随处使用</h3>
+          <p>无论你是想把SVG变成PNG、JPG还是WebP格式，以便在<span class="font-medium">任何软件、任何平台</span>上使用，这个工具都能一键搞定，告别“格式不支持”的提示。</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">2. 开发者背景</p>
-        <p class="text-gray-700 text-sm">大厂或知名高校开发的框架通常更可靠，比如阿里巴巴、百度、腾讯、清华大学等。社区开发者维护的框架也可以，但要看GitHub的活跃度。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">2</div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">尺寸自由，随心所欲</h3>
+          <p>需要把一个小图标做成海报那么大？或者把一张大图缩小成头像？在转换时，你可以<span class="font-medium">自由设定图片的宽度和高度</span>，或者按比例缩放，输出完美符合你要求的尺寸。</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">3. 功能匹配</p>
-        <p class="text-gray-700 text-sm">看框架的简介，了解它主要做什么，是否满足你的需求。有的框架擅长多智能体协作，有的擅长自动化编程，有的擅长多模态交互。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">3</div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">背景魔法，去留由你</h3>
+          <p>讨厌图标后面那个方方正正的白色背景吗？在“SVG转图片”时，你可以选择<span class="font-medium">生成背景透明的PNG图片</span>，让它完美融入任何颜色的背景。或者，你也可以把它换成你喜欢的任意颜色。</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">4. 文档和社区</p>
-        <p class="text-gray-700 text-sm">好的框架会有完善的文档和活跃的社区。使用前先看看文档是否清晰，GitHub上是否有很多人提问和回答问题。</p>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">4</div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">保护隐私，安全省心</h3>
+          <p>所有操作都在<span class="font-medium">你自己的电脑浏览器中完成</span>，图片数据不会上传到任何服务器。这意味着你的设计素材、私人图片绝对安全，转换完即关闭页面，不留痕迹。</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">5</div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">简单三步，无需安装</h3>
+          <p>不需要下载软件，不需要注册账号。打开网页，<span class="font-medium">选择方向、上传文件（或粘贴代码）、点击转换</span>，三个步骤就能完成，对电脑新手也极其友好。</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：普通人能用这些框架吗？</p>
-        <p class="text-gray-700 text-sm">A：这些框架主要是给开发者用的，需要一定的编程基础。如果你只是想体验AI，建议直接用现成的AI产品，比如ChatGPT、文心一言等。</p>
+  <!-- 第三部分：应用场景 -->
+  <div class="mb-10">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">这些场景下，你可能会需要它</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-50 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-3 flex items-center">
+          <span class="inline-block w-3 h-3 bg-purple-500 rounded-full mr-2"></span> 场景一：为自媒体文章或PPT配图
+        </h3>
+        <p class="mb-3">你在网上找到一个设计感很强的SVG矢量图标，想用在你的公众号文章或工作汇报PPT里。</p>
+        <p class="text-gray-600"><span class="font-medium">怎么办：</span>使用工具的 <strong>“SVG → 图片”</strong> 功能，把它转换成PNG格式，调整到合适的大小，甚至可以去掉背景，让它和你的PPT模板更搭。这样一来，在任何电脑上打开都能正常显示。</p>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：这些框架收费吗？</p>
-        <p class="text-gray-700 text-sm">A：大部分国产框架都是开源免费的，可以免费使用。但有些框架提供付费服务，比如更快的响应速度、更多的功能等，根据需要选择。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：如何开始使用某个框架？</p>
-        <p class="text-gray-700 text-sm">A：先访问框架的官网或GitHub，查看文档和快速开始指南。大部分框架都有详细的安装和使用说明，跟着文档一步步操作就行。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：哪个框架最好？</p>
-        <p class="text-gray-700 text-sm">A：没有绝对最好的框架，只有最适合你的框架。根据你的需求、技术背景、项目特点来选择。建议先试用几个，看哪个顺手。</p>
+      <div class="bg-gray-50 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-3 flex items-center">
+          <span class="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span> 场景二：获取简易的矢量素材
+        </h3>
+        <p class="mb-3">你有一张公司的Logo图片（JPG格式），现在需要把它放到一个新设计的宣传册上，希望放大后依然清晰。</p>
+        <p class="text-gray-600"><span class="font-medium">怎么办：</span>使用工具的 <strong>“图片 → SVG”</strong> 功能，将Logo图片转换为SVG格式。虽然对于复杂图片效果有限，但对于颜色分明、结构简单的Logo，能得到一个可以<span class="font-medium">自由缩放不失真</span>的矢量版本，方便后续设计使用。</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：AI智能体是未来趋势</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">AI智能体正在改变我们工作和生活的方式。从简单的对话到复杂的任务执行，AI的能力越来越强。国产AI智能体框架的发展，让我们有了更多选择，也能更好地服务国内用户。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">希望这份清单能帮你快速了解国产AI智能体框架，找到适合你的工具。如果你是开发者，不妨试试这些框架；如果你是普通用户，也可以关注一下，了解AI的发展趋势。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">现在就去看看有哪些国产AI智能体框架吧！</p>
-    </div>
-  </section>
-</article>
+  <!-- 第四部分：总结与引导 -->
+  <div class="text-center py-8 px-4 border-t mt-12">
+    <h2 class="text-2xl font-bold mb-4">告别格式困扰，让创意更自由</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">无论是工作还是生活中的简单设计需求，在数字格式之间来回切换都不应该成为阻碍你的门槛。一个简单、免费、安全的在线工具，就能为你打开更多可能性。</p>
+    <p class="font-medium text-gray-700">如果你正被SVG或图片格式问题所困扰，不妨去试试这个“图纸与照片”的转换小助手吧。</p>
+  </div>
+</div>
 `;export{s as default};

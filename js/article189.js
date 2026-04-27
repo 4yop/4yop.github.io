@@ -1,91 +1,130 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <article>
-    <!-- 文章标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">还在为表格文件烦恼？试试这个免费的在线表格小帮手</h1>
+<div class="text-gray-700 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    人生时间计算器：你的人生，还剩下多少天？
+  </h1>
 
-    <!-- 引语 -->
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      无论是工作汇报、整理通讯录，还是管理简单的项目清单，我们总会遇到一种叫CSV的表格文件。今天，给大家介绍一个藏在浏览器里的免费工具，无需安装软件，就能轻松查看、修改和管理你的表格数据。
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你是否常常感觉时间不够用？是否想过，如果生命是一张有期限的日历，你现在翻到了哪一页？今天，我们来聊聊一个能让你直观看见生命进度的工具。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="italic">
+      这不是算命，也不是制造焦虑。它只是帮你把抽象的生命长度，换算成具体的数字和进度条，让你能“看见”时间。
     </p>
+  </div>
 
-    <!-- 核心功能1 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">它能帮你做什么？</h2>
-      <p class="mb-4 leading-relaxed">
-        你可以把它想象成一个简易版的在线电子表格。它的核心是让你能<strong>直接看到</strong>表格里的内容，并且进行一些基础的<strong>整理和调整</strong>。
-      </p>
-      <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong>打开你的表格文件</strong>：只需点击一下，就能上传你电脑里的CSV或TXT格式的表格文件，内容立刻清晰展示。</li>
-        <li><strong>随时修改内容</strong>：发现电话写错了？金额不对？直接点击表格里的格子就能修改，像在笔记本上写字一样简单。</li>
-        <li><strong>整理行列</strong>：需要增加一行新记录，或者添加一个“备注”列？点一下按钮就自动加好了。不需要的内容，也能随时删掉。</li>
-        <li><strong>快速找到目标</strong>：表格数据太多？顶部的搜索框可以帮你快速筛选出包含特定文字的所有行。</li>
-      </ul>
-    </section>
+  <!-- 第一部分：这是什么？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    一、 人生时间计算器是什么？
+  </h2>
+  <p class="mb-4">
+    简单来说，它就像一个为你生命定制的“进度条”。你只需要告诉它两个简单的信息：你的生日，以及你期望活到的岁数（可以参考国家公布的平均寿命，比如85岁）。
+  </p>
+  <p class="mb-6">
+    然后，它就会为你计算出一些非常直观的结果，比如：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>你已经来到这个世界<strong>多少天</strong>了。</li>
+    <li>你的生命进度条<strong>走到了百分之几</strong>。</li>
+    <li>在预期里，你大概还剩下<strong>多少年、多少个月、多少个周末</strong>。</li>
+  </ul>
+  <p class="mb-6">
+    这些数字本身没有好坏，关键在于你怎么看待和利用它们背后的提醒。
+  </p>
 
-    <!-- 核心功能2 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">格式转换与保存</h2>
-      <p class="mb-4 leading-relaxed">
-        很多人可能遇到过这种情况：一个表格文件用手机打不开，或者需要发给别人但对方要求另一种格式。这个小工具可以帮你解决这个麻烦。
-      </p>
-      <div class="bg-gray-50 p-5 rounded-lg mb-4">
-        <p><strong>一键转换格式</strong>：你编辑好的表格，可以随时保存回CSV文件，方便下次使用。更实用的是，它还能<strong>转换成JSON格式</strong>保存。虽然你不一定知道JSON是什么，但许多网站和应用程序都认识这种格式，转换一下可能就让你的数据能在别处派上用场。</p>
-      </div>
-      <p class="leading-relaxed">
-        所有操作都在你的浏览器里完成，文件不会上传到陌生服务器，修改起来更安心。
-      </p>
-    </section>
-
-    <!-- 核心功能3 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">兼容各种格式的表格</h2>
-      <p class="mb-4 leading-relaxed">
-        为什么有时候从邮箱或不同电脑下载的表格会乱码？通常是文件里用的“分隔符号”不一样。
-      </p>
-      <p class="leading-relaxed">
-        这个工具考虑到了这一点。在右侧的<strong>“表格设置”</strong>区域，你可以自由切换分隔符，比如从逗号改成制表符或分号。也可以设置是否将第一行作为标题。这样一来，无论你拿到哪种格式的表格，基本都能正确打开并阅读。
-      </p>
-    </section>
-
-    <!-- 适用场景 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b">谁可能会用到它？</h2>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="bg-blue-50 p-5 rounded-lg">
-          <h3 class="font-medium text-blue-800 mb-2">普通办公族</h3>
-          <p class="text-sm">临时收到一个数据表格需要快速核对或微调，又不想打开笨重的大型软件。</p>
-        </div>
-        <div class="bg-green-50 p-5 rounded-lg">
-          <h3 class="font-medium text-green-800 mb-2">学生或研究者</h3>
-          <p class="text-sm">整理实验数据、调查问卷结果，需要简单的清洗（比如删除空行）和格式统一。</p>
-        </div>
-        <div class="bg-yellow-50 p-5 rounded-lg">
-          <h3 class="font-medium text-yellow-800 mb-2">自由职业者</h3>
-          <p class="text-sm">管理客户名单、项目报价单，需要随时更新并保存为通用格式发给客户。</p>
-        </div>
-        <div class="bg-purple-50 p-5 rounded-lg">
-          <h3 class="font-medium text-purple-800 mb-2">偶尔需要处理数据的人</h3>
-          <p class="text-sm">比如从网上下载了汇率数据、天气记录等CSV文件，想先打开看看，删掉不需要的部分。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 总结 -->
-    <section class="bg-gray-100 p-6 rounded-xl">
-      <h2 class="text-xl font-semibold text-gray-800 mb-3">简单总结</h2>
-      <p class="mb-3 leading-relaxed">
-        这个<strong>在线表格处理器</strong>就是一个轻巧、方便的工具。它不追求复杂的功能，而是专注解决几个常见痛点：<strong>打开、查看、简单编辑、转换格式</strong>。
-      </p>
-      <p class="leading-relaxed">
-        下次当你再遇到一个打不开、看不懂或者需要简单整理的表格文件时，或许可以尝试一下这类在线小工具。它可能就在你的浏览器书签栏里，安静地等着帮你省下几分钟的折腾时间。
-      </p>
-    </section>
-
-    <!-- 提示 -->
-    <div class="mt-8 pt-6 border-t border-gray-200 text-sm text-gray-500">
-      <p>提示：本文介绍的是一款通用工具的功能思路，具体操作界面可能因不同实现而略有差异，但其核心目的都是为了方便普通用户处理表格数据。</p>
+  <!-- 第二部分：为什么需要它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    二、 为什么要看看自己的“人生进度”？
+  </h2>
+  <p class="mb-4">
+    我们每天都在看手机电量、看项目进度、看快递到哪儿了，却很少停下来看看自己最宝贵的资源——时间的存量。
+  </p>
+  <div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">1. 对抗“总觉得还有时间”的错觉</h3>
+      <p class="text-sm text-gray-600">日子一天天过，感觉好像永远过不完。但当“剩余2万个周末”这个数字摆在面前时，那种具体感会让人心头一震，促使你重新思考事情的优先级。</p>
     </div>
-  </article>
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">2. 庆祝已经拥有的时光</h3>
+      <p class="text-sm text-gray-600">工具不仅告诉你还剩多少，也清晰地展示你已经度过了多少丰富或平凡的日夜。每一个“已活天数”的增长，都值得被看见和肯定。</p>
+    </div>
+  </div>
+
+  <!-- 第三部分：它具体能告诉你什么？（对应功能） -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    三、 它能为你算出的“人生账本”
+  </h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">1. 整体概览：你的生命时间线</h3>
+    <p class="mb-4">
+      输入信息后，你会立刻看到一个像温度计一样的“人生进度条”。蓝色（或绿色）的部分代表已度过的人生，空白部分代表未来。旁边清晰的百分比，让你对自己所处的阶段一目了然。
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 数字模式：把时间“拆开”看</h3>
+    <p class="mb-2">如果你喜欢具体的数据，可以切换到数字模式。这里会把你的剩余时间拆解成：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>剩余年/月数：</strong>帮你做中长期规划（比如，我想用5年掌握一门技能）。</li>
+      <li><strong>剩余周末数：</strong>这个数字往往最让人触动。它提醒你，能完全放松、陪伴家人或发展兴趣的完整两天，其实是有限的。</li>
+    </ul>
+    <p class="text-gray-600 text-sm">
+      （注：这些计算基于简单的平均换算，意在提供一种视角，并非精确预言。）
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">3. 每日签到：与时间的温柔互动</h3>
+    <p class="mb-4">
+      工具附带一个简单的“每日签到”功能。每天花一秒钟点一下，记录“我今天在场”。它会随机送你一句关于时间的箴言，并默默记下你的打卡足迹。这像是一个小小的仪式，提醒自己珍惜又一个独一无二的日子。
+    </p>
+  </div>
+
+  <!-- 第四部分：如何使用它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    四、 如何使用这个工具？（简单三步）
+  </h2>
+  <ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li>
+      <strong>第一步：填写基本信息。</strong>打开工具页面，选择你的出生日期，并设定一个预期寿命（如果不确定，用默认的85岁就好）。
+    </li>
+    <li>
+      <strong>第二步：查看你的报告。</strong>信息填好后，页面会自动更新。你可以自由切换“励志模式”（看进度条和名言）和“数字模式”（看详细统计）。
+    </li>
+    <li>
+      <strong>第三步：尝试每日互动。</strong>如果觉得有启发，可以每天来签个到，看看今天的时间格言。你所有的签到记录可以导出保存。
+    </li>
+  </ol>
+  <p class="mb-6 bg-gray-50 p-4 rounded italic text-sm">
+    请放心，所有这些数据都只保存在你自己的手机或电脑浏览器里，没有网络传输，不用担心隐私问题。你也可以随时清空所有记录。
+  </p>
+
+  <!-- 第五部分：最后的提醒 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    写在最后：工具的意义，由你赋予
+  </h2>
+  <p class="mb-4">
+    这个计算器算出的，绝不是命运的定数。预期寿命只是一个参考值，随着医疗和生活方式进步，很多人都会远远超越它。
+  </p>
+  <p class="mb-4">
+    它的真正价值在于提供一种“视角”。就像站上一个小山坡回望来路、眺望前方，它能帮助我们：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>对过去的时光多一份感激和接纳。</li>
+    <li>对未来的日子多一份清醒和规划。</li>
+    <li>对正在流逝的“现在”，多一份觉察和珍视。</li>
+  </ul>
+  <div class="text-center py-6 px-4 border-t mt-8">
+    <p class="text-gray-800 font-medium mb-2">
+      时间对每个人都公平，但感知时间的方式，我们可以自己选择。
+    </p>
+    <p class="text-gray-600">
+      希望这个小小的“人生进度条”，能成为你珍惜当下、认真生活的一个友善提醒。
+    </p>
+  </div>
 </div>
 `;export{s as default};

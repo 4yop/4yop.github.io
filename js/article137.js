@@ -1,103 +1,120 @@
-const r=`
-<div class="max-w-3xl mx-auto p-4 text-gray-800">
-  <h1 class="text-3xl font-bold mb-4 text-center sm:text-left">每天喝多少水最健康？科学计算公式告诉你</h1>
-  
-  <p class="mb-4 text-lg leading-relaxed">
-    水是生命之源，人体大约70%由水构成。你可能常听到「每天要喝8杯水」的说法，但每个人的体重、活动量不同，这个标准真的适合你吗？其实，科学界有一套更精准的计算方法——根据体重估算每日需水量。今天我们就来聊聊，如何算出属于自己的「健康饮水量」，并合理安排一天的喝水时间。
-  </p>
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800 bg-white">
+  <header class="text-center mb-8 md:mb-12">
+    <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4">轻松制作专业饼图：一个简单好用的在线工具</h1>
+    <p class="text-lg text-gray-600">告别复杂软件，无需学习设计，三步搞定数据展示。</p>
+  </header>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">体重计算法：你一天到底需要多少毫升水？</h2>
-  <p class="mb-3">
-    最简单且被广泛认可的计算公式是：<span class="font-medium">每日需水量（毫升） = 体重（公斤） × 33</span>。这个系数来源于人体基础代谢所需水量的研究，能够满足大部分成年人的日常需求。
-  </p>
-  <p class="mb-3">
-    举个例子：如果你的体重是60公斤，那么每天大约需要喝 60 × 33 = 1980 毫升水，差不多相当于4瓶500毫升的矿泉水。如果体重75公斤，则需要约2475毫升，大约5瓶水。用这个公式算一算，你会发现可能比「8杯水」更贴合自己的身体状况。
-  </p>
-  <p class="mb-3 bg-blue-50 p-3 rounded">
-    <span class="font-medium">小提示：</span> 这只是一个基础参考值。如果你当天运动量大、出汗多，或者处于炎热环境，需要额外补充水分；而如果吃了大量水果、汤羹，也可适当减少纯饮水量。
-  </p>
+  <section class="mb-10">
+    <p class="mb-6 leading-relaxed">
+      你是不是经常需要把一堆数据展示给别人看？比如，想告诉老板各个产品的销售比例，或者想向朋友展示一次旅行的花费构成。对着枯燥的数字列表，别人可能很难一眼看明白。
+    </p>
+    <p class="mb-6 leading-relaxed">
+      这时候，一张饼图就能帮上大忙。它像切蛋糕一样，把整体分成几块，每块的大小代表相应的数据份额，谁多谁少，一目了然。
+    </p>
+    <p class="leading-relaxed">
+      但说到做饼图，很多人就头疼了。是不是得打开复杂的办公软件，或者下载一个从来没学过的设计工具？其实，现在有一个更简单的选择。
+    </p>
+  </section>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">喝水时间表：什么时候喝，效果更好？</h2>
-  <p class="mb-3">
-    光知道喝多少还不够，喝水的时间也影响身体吸收和利用。把全天的水量分散到不同时段，既能避免一次性喝太多增加肾脏负担，又能让身体时刻保持水润状态。下面是一份参考时间表，你可以根据自己的作息调整：
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">为什么你需要一个简单的饼图工具？</h2>
+    <ul class="list-disc pl-5 space-y-3 text-gray-700">
+      <li><span class="font-medium">工作汇报：</span>在总结报告里，用饼图展示项目预算分配、客户来源占比，让领导瞬间抓住重点。</li>
+      <li><span class="font-medium">学习研究：</span>整理调查问卷结果，比如用户对不同功能的喜好度，用图表呈现更直观。</li>
+      <li><span class="font-medium">个人生活：</span>记录月度开支，看看钱都花在了哪里；或者统计一下每周的时间都分配给了哪些事情。</li>
+    </ul>
+    <p class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 italic">
+      一个好的工具，应该让你专注于数据本身，而不是折腾怎么把图做出来。
+    </p>
+  </section>
 
-  <div class="overflow-x-auto my-4">
-    <table class="min-w-full border-collapse border border-gray-300">
-      <thead class="bg-gray-100">
-        <tr>
-          <th class="border border-gray-300 p-2 text-left">时间点</th>
-          <th class="border border-gray-300 p-2 text-left">喝水量（毫升）</th>
-          <th class="border border-gray-300 p-2 text-left">为什么这个时间喝？</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-2">06:30 起床后</td>
-          <td class="border border-gray-300 p-2">约350</td>
-          <td class="border border-gray-300 p-2">经过一夜睡眠，身体处于缺水状态，一杯温水唤醒新陈代谢。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">08:30 上班/出门前</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充水分，缓解即将面对工作的紧张情绪。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">11:00 工作间隙</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">此时身体容易因专注而忘记喝水，小口补水防止疲劳。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">12:50 午餐后</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">帮助消化，促进营养吸收。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">15:00 下午茶时间</td>
-          <td class="border border-gray-300 p-2">约370</td>
-          <td class="border border-gray-300 p-2">替代咖啡或含糖饮料，提神又健康。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">17:30 下班/晚餐前</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">增加饱腹感，避免晚餐过量进食。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">22:00 睡前1小时</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充夜间所需水分，但不宜太多，防止起夜。可根据个人情况微调。</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="text-sm text-gray-600 mb-4">注：上表水量以体重75公斤计算（总量2475毫升），你可以按自己每日总量按比例分配。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">这个工具能帮你做什么？</h2>
+    <p class="mb-4">它就像一个为你量身定制的“图表小助手”，操作简单得超乎想象。</p>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">常见问题解答</h2>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝水量必须精确到毫升吗？</h3>
-    <p class="mb-2">不需要，整数估算即可。可以用常见容器作为参考：一罐可乐约335毫升，一瓶矿泉水约500毫升。只要全天总量大致达标，身体不觉得口渴，尿液呈淡黄色，就说明喝够了。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：运动和夏天怎么调整？</h3>
-    <p class="mb-2">剧烈运动或高温天气下，每小时可能多流失500～1000毫升水分，建议在运动前后及过程中少量多次补充淡盐水或电解质饮料。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝汤、吃水果算不算喝水量？</h3>
-    <p class="mb-2">算！食物中的水分也应计入每日总摄入量。比如一碗清汤约200毫升，一个苹果含水约100毫升。不过，纯水更易被吸收，建议大部分水分还是通过饮水获取。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：水喝多了会中毒吗？</h3>
-    <p class="mb-2">健康人肾脏每小时能排出800～1000毫升水，只要不是短时间内狂饮（比如1小时内喝超过2升），一般不会水中毒。但心肾功能不全者需遵医嘱限制饮水量。</p>
-  </div>
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">1</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">输入数据，像记账一样简单</h3>
+        <p class="text-gray-700">你只需要告诉它每部分的名称和数值。比如“餐饮消费：1500”、“交通出行：800”。可以一条条手动添加，就像在笔记本上列清单。</p>
+      </div>
 
-  <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-    <p class="font-medium">记住，喝水是为了让身体舒服，不必教条。你可以用上面的公式算出基础量，再根据季节、活动量微调。不妨设个闹钟，分时段小口慢饮，养成习惯后，你会发现皮肤、精力都会变好。</p>
-  </div>
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">2</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">文件导入，一键搞定</h3>
+        <p class="text-gray-700">如果你已经把数据整理在电脑的表格文件里（比如Excel），直接上传就行。工具会自动读取里面的信息，省去你重复输入的麻烦。</p>
+      </div>
 
-  <p class="mt-6 text-sm text-gray-500">温馨提示：本文内容为健康科普，不能替代专业医疗建议。如有特殊疾病或身体状况，请咨询医生。</p>
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">3</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">换个“皮肤”，让图表更顺眼</h3>
+        <p class="text-gray-700">觉得默认颜色太普通？你可以选择“商务蓝”、“生态绿”等不同的配色主题，让图表风格更匹配你的报告或个人喜好。</p>
+      </div>
+
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">4</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">调整布局，保存高清图片</h3>
+        <p class="text-gray-700">可以自由调整图例说明文字的位置。完成后，一键就能把制作好的饼图保存为高清图片，直接插入到你的PPT或文档中。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10 bg-gray-50 p-6 md:p-8 rounded-xl">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">它适合谁用？</h2>
+    <p class="mb-4">几乎任何需要展示数据比例的人都可以用它：</p>
+    <ul class="list-none space-y-2">
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>需要做简单数据分析的职场人士</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>经常要交报告的学生或研究人员</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>想用图表管理个人事务的家庭成员</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>对专业图表软件望而却步的初学者</span></li>
+    </ul>
+    <p class="mt-6 text-gray-700">
+      它的目标就是让<span class="font-medium">“制作一张清晰的饼图”</span>这件事，变得和在线填一张表格一样简单。你完全不需要有任何设计或技术背景。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">如何使用？超简单的流程</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center my-8">
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
+        <div class="text-4xl mb-2 text-gray-400">①</div>
+        <p class="font-medium">填入或导入<br/>你的数据</p>
+      </div>
+      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
+        <div class="text-4xl mb-2 text-gray-400">②</div>
+        <p class="font-medium">选择喜欢的<br/>样式和布局</p>
+      </div>
+      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg">
+        <div class="text-4xl mb-2 text-gray-400">③</div>
+        <p class="font-medium">点击导出<br/>获得高清图片</p>
+      </div>
+    </div>
+    <p class="text-center text-gray-600 mt-4">整个过程通常只需要几分钟，所见即所得。</p>
+  </section>
+
+  <section class="text-center py-8 border-t border-gray-200 mt-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">让数据自己“说话”</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+      当数字变成直观的图形，信息的传递会高效得多。无论是为了更清晰的工作沟通，还是更有条理的自我管理，一个好的可视化工具都能成为你的得力帮手。
+    </p>
+    <p class="text-lg">
+      <span class="font-medium">最关键的是，</span>整个过程应该轻松、快速，让你把精力花在思考数据本身，而不是折腾工具上。
+    </p>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 mt-12 pt-6 border-t">
+    <p>希望这篇文章能帮助你了解，原来制作一张专业的饼图可以如此简单。</p>
+  </footer>
 </div>
-`;export{r as default};
+`;export{s as default};

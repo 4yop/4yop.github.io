@@ -1,157 +1,105 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    一个好用的在线便签工具，能帮你随时随地记录想法
-  </h1>
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想给朋友送一份特别的祝福？试试这个烟花祝福生成器</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">节日到了、朋友生日了、新年到了，想送一份特别的祝福，但发个红包太俗，发段文字太平淡？今天给大家介绍一个有趣的小工具——烟花祝福生成器，让你送的祝福既炫酷又走心。</p>
+  </header>
 
-  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
-    <p>
-      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
-    </p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是烟花祝福？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福，简单来说，就是把你想要说的话，配上绚丽的烟花动画效果，做成一个可以分享的祝福页面。朋友打开后，会看到夜空中绽放的烟花，还有你精心准备的祝福文字。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-orange-500 my-5">
+      <p class="text-gray-700"><strong>想象一下：</strong>除夕夜，你给远方的父母发了一个链接。他们点开后，屏幕上绽放出绚烂的烟花，同时出现"爸妈新年快乐，身体健康"的字样。是不是比一条普通短信温暖多了？</p>
+    </div>
+    <p class="text-gray-700 leading-relaxed">这种祝福方式，既有仪式感，又显得用心。而且操作起来非常简单，不需要任何专业技能。</p>
+  </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
-    <p class="text-gray-700">
-      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
-    </p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 适合哪些场景？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福几乎适用于所有需要表达祝福的场合：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">新年祝福：</strong>除夕、春节、元旦，送上烟花绽放的新年祝福，喜庆又热闹。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-pink-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">生日祝福：</strong>朋友、家人过生日，送一份烟花生日祝福，比蛋糕还甜。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">节日祝福：</strong>中秋节、国庆节、情人节、圣诞节，各种节日都能用。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-purple-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">表白求婚：</strong>想对喜欢的人说点什么？烟花配上真心话，成功率翻倍。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">毕业祝福：</strong>毕业季送别同学，烟花祝福留下美好回忆。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">总之，只要是想要表达祝福、传递心意的时刻，都可以用烟花祝福来增添一份仪式感。</p>
+  </section>
 
-  <div class="space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何使用这个便签工具？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        使用非常简单，就像用真实的便利贴一样。
-      </p>
-      <ul class="list-disc pl-6 space-y-3 text-gray-700">
-        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
-        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
-        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
-        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
-        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
-      </ul>
-    </section>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 怎么制作烟花祝福？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">制作过程非常简单，只需要几步：</p>
+    <div class="bg-orange-50 p-5 rounded-lg my-5">
+      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+        <li><strong>输入祝福文字：</strong>在文字框里写下你想说的话，可以是一句话，也可以是多行。比如"新年快乐""万事如意""心想事成"。</li>
+        <li><strong>选择模板：</strong>工具提供了一些现成的模板，比如新年祝福、生日祝福、表白祝福等，点击就能一键填充。</li>
+        <li><strong>调整效果（可选）：</strong>如果想更个性化，可以调整文字颜色、大小、烟花颜色和密度。</li>
+        <li><strong>点击开始：</strong>点击"开始放烟花"，就能看到效果了。</li>
+        <li><strong>分享给朋友：</strong>点击"分享"按钮，把链接发给朋友，他们打开就能看到你的祝福。</li>
+      </ol>
+    </div>
+    <p class="text-gray-700 leading-relaxed">整个过程不需要下载任何软件，不需要注册账号，打开网页就能用。</p>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        便签上的小工具能做什么？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        每张便签底部都有一排小按钮，能让你的文字更丰富。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li><b>B</b>：加粗文字</li>
-            <li><i>I</i>：让文字倾斜</li>
-            <li><u>U</u>：给文字加下划线</li>
-            <li><s>ab</s>：给文字划上删除线</li>
-            <li>Points：创建项目符号列表</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
-          <p class="text-gray-700">
-            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
-          </p>
-        </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 一些实用小技巧</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">想让你的烟花祝福更出彩？试试这些小技巧：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-blue-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">文字要简洁有力：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">祝福文字不要太长，3-5行最合适。太长了反而看不清。每行控制在10个字以内效果最好。</p>
       </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何保护我的便签内容？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-            导出备份
-          </h3>
-          <p class="text-gray-700">
-            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
-          </p>
-        </div>
-        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-            导入恢复
-          </h3>
-          <p class="text-gray-700">
-            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
-          </p>
-        </div>
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">颜色搭配要协调：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">文字颜色建议用亮色，比如金色、白色、黄色，在黑色背景上更醒目。烟花可以选"随机"，效果更丰富。</p>
       </div>
-      <p class="mt-4 text-gray-600 text-sm">
-        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
-      </p>
-    </section>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg my-5">
+      <p class="text-gray-700"><strong>温馨提示：</strong>分享链接后，朋友在手机上打开效果也很好。建议让他们在WiFi环境下打开，加载更流畅。如果想要更好的观看体验，可以点击"全屏"按钮。</p>
+    </div>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        适合哪些场景使用？
-      </h2>
-      <ul class="grid md:grid-cols-2 gap-4">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-yellow-800 font-medium">1</span>
-          </div>
-          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-pink-800 font-medium">2</span>
-          </div>
-          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-green-800 font-medium">3</span>
-          </div>
-          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-purple-800 font-medium">4</span>
-          </div>
-          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
-        </li>
-      </ul>
-    </section>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：朋友打开链接后看不到烟花怎么办？</p>
+        <p class="text-gray-700 text-sm">A：可能是网络问题或浏览器兼容问题。建议让朋友换个浏览器试试，或者检查网络连接。大多数情况下，微信自带浏览器、QQ浏览器、Safari、Chrome都能正常显示。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：可以保存成视频发给别人吗？</p>
+        <p class="text-gray-700 text-sm">A：目前这个工具主要是分享链接的形式。如果想保存成视频，可以用手机录屏功能，把播放过程录下来。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：祝福链接会过期吗？</p>
+        <p class="text-gray-700 text-sm">A：链接长期有效，朋友随时打开都能看到。不过建议在合适的时机发送，比如除夕夜零点、生日当天早上，效果更好。</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-        几个贴心的小提示
-      </h2>
-      <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
-    <p class="text-gray-600">
-      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
-    </p>
-    <p class="text-gray-500 text-sm mt-2">
-      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
-    </p>
-  </div>
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：用心，是最好的祝福</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">在这个快节奏的时代，我们习惯了群发祝福、复制粘贴的问候。但真正打动人心的，永远是那些花了一点心思、带有一点创意的祝福。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">烟花祝福生成器，就是一个帮你把心意变成视觉惊喜的小工具。不需要什么技术，只需要几分钟，就能送出一份独一无二的祝福。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">下次想送祝福的时候，不妨试试这个工具，让烟花替你说出心里话。</p>
+    </div>
+  </section>
 </article>
 `;export{s as default};

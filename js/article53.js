@@ -1,90 +1,82 @@
 const s=`
-<article class="max-w-4xl mx-auto p-6 bg-white text-gray-800">
-  <header class="mb-10 border-b pb-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">你的网络“身份证”和“定位仪”，一个工具全看清</h1>
-    <p class="text-lg text-gray-600">想知道谁“看”到了你上网，或者好奇那个陌生地址来自何方？一个简单工具就能揭开谜底。</p>
-  </header>
+<div class="bg-white text-gray-800 font-sans">
+  <article class="max-w-4xl mx-auto p-6">
+    <!-- 标题 -->
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+      还在为保存网页素材而烦恼？教你一键“捞出”所有图片和视频
+    </h1>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 pb-2 border-b">你有没有过这些疑惑？</h2>
-    <ul class="space-y-4 pl-5">
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <p>访问某些网站或服务时，页面提示“您所在的地区无法访问”。你心里嘀咕：<strong>它究竟是怎么知道我在哪儿的？</strong></p>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <p>收到一封奇怪的邮件，或者看到一个陌生的账号留言，上面显示了一个看不懂的数字地址（比如 8.8.8.8）。你很想知道：<strong>这家伙到底在世界的哪个角落？</strong></p>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <p>看视频总是卡顿，游戏延迟高得让人恼火。你抱怨网络太慢，但不确定是自家网络的问题，还是你要访问的网站本身“距离”你太远。</p>
-      </li>
-    </ul>
-    <p class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 italic">其实，这些问题背后都与两个关键信息有关：<strong>IP地址</strong>和<strong>网络连接质量</strong>。下面这个工具，就像给你的网络世界装上了“透视镜”和“测速仪”。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 pb-2 border-b">这个工具能为你做什么？</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
-        <div class="text-blue-600 text-2xl font-bold mb-3">一、看清你的网络“身份证”</div>
-        <p class="mb-3">当你连接互联网时，会获得一个独一无二的“数字门牌号”，这就是公网IP。它是你在网络世界的临时身份证。</p>
-        <ul class="text-sm space-y-2 text-gray-700">
-          <li>• <strong>即刻显示</strong>：打开工具，一秒看到你自己的IP地址。</li>
-          <li>• <strong>归属地揭秘</strong>：同时显示你大致的地理位置（如城市）和网络服务商。</li>
-          <li>• <strong>心里有数</strong>：明白网站是如何“认出”并定位你的。</li>
-        </ul>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
-        <div class="text-blue-600 text-2xl font-bold mb-3">二、化身网络“侦探”</div>
-        <p class="mb-3">对任何IP地址感到好奇？把它输入进去，就像在地图上输入坐标一样。</p>
-        <ul class="text-sm space-y-2 text-gray-700">
-          <li>• <strong>全球定位</strong>：查出该地址所在的国家、地区甚至城市。</li>
-          <li>• <strong>更多细节</strong>：了解当地的时区、使用的货币，甚至经纬度。</li>
-          <li>• <strong>记录足迹</strong>：你查询过的地址会被自动记录下来，方便下次核对。</li>
-        </ul>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
-        <div class="text-blue-600 text-2xl font-bold mb-3">三、一键“体检”网速</div>
-        <p class="mb-3">感觉网络不顺畅？用工具自带的诊断功能快速测一下。</p>
-        <ul class="text-sm space-y-2 text-gray-700">
-          <li>• <strong>连接延迟测试</strong>：测试连接到常用网站（如百度、GitHub）的速度，用毫秒数直观显示。</li>
-          <li>• <strong>颜色提示</strong>：绿色代表良好，黄色代表一般，红色则可能有问题。</li>
-          <li>• <strong>快速排查</strong>：帮你初步判断是本地网络问题，还是目标网站响应慢。</li>
-        </ul>
-      </div>
+    <!-- 引言/痛点 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+      <p class="text-lg mb-2">你是否遇到过这些情况？</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>浏览网页时，看到一套非常精美的图标或产品图，却只能右键一张一张地保存，既麻烦又耗时。</li>
+        <li>想收集某个页面的所有教学视频或背景音乐，却不知道它们藏在哪里。</li>
+        <li>好不容易找到心仪的网页模板样式，却苦于无法快速获取里面用到的所有素材文件。</li>
+      </ul>
+      <p class="mt-3">如果你有过类似的经历，那么今天介绍的方法，可能就是你的“效率救星”。它不需要你懂任何技术，就能轻松解决这些问题。</p>
     </div>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-6 pb-2 border-b">在生活中，你可以这样用它</h2>
-    <div class="space-y-8">
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-gray-900">场景一：解决“地域限制”的困惑</h3>
-        <p class="text-gray-700 mb-3">当你无法访问某个服务时，先别急着怪网络。用工具看一眼<b>自己的IP显示的地理位置</b>。有时，可能是因为你的网络出口被分配到了其他城市，导致服务商误判。了解这一点后，你可以尝试重启路由器，或者联系你的网络服务商咨询。</p>
+    <!-- 简单解释 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这是什么“神奇”工具？</h2>
+      <p class="mb-4">简单来说，你可以把它想象成一个“网页素材捞取网”。</p>
+      <div class="bg-gray-100 p-5 rounded-lg mb-4">
+        <p>我们都知道，一个丰富多彩的网页（比如商品详情页、摄影作品集）就像一锅精心熬制的“浓汤”，里面包含了图片、视频、背景音乐（脚本）和装饰样式等各种“食材”。</p>
+        <p class="mt-2">通常，我们只能看到汤的表面（即浏览器的最终显示效果），却很难把里面的“干货”单独捞出来。</p>
+        <p class="mt-2 font-medium">而这个工具的作用，就是帮你读懂网页的“菜谱”（源代码），然后用一个智能“漏勺”，把你指定想要的“食材”——无论是图片、视频，还是其他文件——一次性全部捞出来，整理好，方便你打包带走。</p>
       </div>
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-gray-900">场景二：识别陌生信息的来源</h3>
-        <p class="text-gray-700">在论坛、邮箱或后台日志里看到一个不认识的IP地址。将它复制到工具的查询框，<b>“侦探”功能</b>能立刻告诉你它大概来自哪里。如果显示来自一个你毫无关联的遥远国度，那么对于这条信息的可信度，你心里就能多一分警惕。</p>
-      </div>
-      <div class="p-5 bg-gray-50 border rounded-lg">
-        <h3 class="text-xl font-medium mb-3 text-gray-900">额外小技巧：便捷的图片管理</h3>
-        <p class="text-gray-700 mb-2">工具还附带了一个简单的图片查看区。你可以上传多张截图（比如错误提示的截图、网络测速结果的截图），并像看手机相册一样<b>点击放大、滑动浏览</b>。这方便你在排查问题时，把所有相关证据集中在一起查看。</p>
-        <p class="text-sm text-gray-500">（提示：点击图片可放大，点击黑色背景或“×”可关闭，两侧箭头可切换。）</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="mt-12 p-6 md:p-8 border border-blue-200 bg-blue-50 rounded-xl">
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">总结一下</h2>
-    <p class="mb-4 text-lg">这个工具就像给你的网络体验配了一个<strong>简易仪表盘</strong>。它不复杂，却能解答你最常遇到的几个网络身份和连接问题：</p>
-    <ol class="list-decimal pl-5 space-y-2 mb-6 text-gray-700">
-      <li><strong>“我在哪？”</strong> – 显示你自己的IP和位置。</li>
-      <li><strong>“TA在哪？”</strong> – 查询任意IP地址的详细信息。</li>
-      <li><strong>“连接快吗？”</strong> – 快速测试到关键网站的延迟。</li>
-    </ol>
-    <p class="font-medium">无论你是普通网民，还是需要偶尔处理网络相关事务的人，了解这些信息都能让你在面对网络问题时更加从容，减少一些“未知”带来的困扰。网络世界的信息脉络，其实比你想象的要清晰。</p>
-  </section>
-</article>
+    <!-- 好处列举 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">它能为你带来哪些便利？</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+          <h3 class="text-xl font-medium mb-2 text-blue-600">1. 操作简单，像“填空”一样</h3>
+          <p>你不需要理解复杂的代码。整个过程就像“复制”和“粘贴”一样简单：从浏览器里复制整个页面的代码，然后粘贴到工具里，点一下按钮，剩下的就交给它来处理。</p>
+        </div>
+        <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+          <h3 class="text-xl font-medium mb-2 text-blue-600">2. 精准筛选，不遗漏</h3>
+          <p>你可以自由选择想要提取的类型，是只要图片，还是连视频和背景音乐一起？勾选一下就行。工具会自动帮你把所有符合要求的文件找出来，列成一个清晰的清单，你还可以预览图片缩略图。</p>
+        </div>
+        <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+          <h3 class="text-xl font-medium mb-2 text-blue-600">3. 一键打包，省时省力</h3>
+          <p>无需一个个手动点击下载。在清单里勾选你需要的文件，它可以帮你把所有文件打包成一个压缩包（ZIP文件），一次下载就能获得全部素材，极大提升了效率。</p>
+        </div>
+        <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+          <h3 class="text-xl font-medium mb-2 text-blue-600">4. 安全自主，不依赖</h3>
+          <p>整个过程在你的浏览器本地完成，你粘贴的网页代码不会被上传到任何别人的服务器，保护了你的浏览隐私和数据安全。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 应用场景 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">谁最需要用到它？</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-medium mb-2">场景一：灵感收集与素材管理</h3>
+          <p><strong>人物画像：</strong>设计师、自媒体运营者、市场营销人员。</p>
+          <p><strong>具体需求：</strong>小张是一位平面设计师，经常需要浏览国内外设计网站寻找灵感。他看到某个作品集的排版和图片运用很棒，想保存下来作为参考。使用这个工具，他可以瞬间将这个作品集页面的所有高质量图片提取出来，建立自己的灵感库，而不用费劲地截图或单张保存。</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">场景二：资料整理与离线学习</h3>
+          <p><strong>人物画像：</strong>学生、教师、知识爱好者。</p>
+          <p><strong>具体需求：</strong>李老师在网上找到一套非常系统的公开课页面，里面每个章节都配有讲解视频和图文讲义。他想把这些资料下载下来，方便在没有网络的环境下学习或备课。通过这个工具，他可以轻松提取页面中的所有视频文件和配套图片，整理成有序的学习资料包。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 总结与引导 -->
+    <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+      <h2 class="text-2xl font-semibold mb-4">告别低效，尝试新的方法</h2>
+      <p class="mb-4">在信息时代，高效地获取和管理数字素材是一项非常有用的技能。手动收集网页素材的方式，不仅效率低下，还容易出错和遗漏。</p>
+      <p class="mb-6">本文所介绍的这种基于“网页源码提取”的思路，提供了一种更聪明、更快捷的解决方案。它把原本需要专业知识的操作，简化成了人人都能上手的几个步骤。</p>
+      <div class="p-4 bg-white border border-blue-200 rounded-lg">
+        <p class="font-medium">如果你想亲自体验这种“一键捞取”网页图片、视频的便捷，不妨搜索或寻找类似的在线工具尝试一下。你会发现，处理网页素材这件事，原来可以如此轻松。</p>
+      </div>
+    </section>
+  </article>
+</div>
 `;export{s as default};

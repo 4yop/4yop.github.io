@@ -1,101 +1,79 @@
 const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">PDF加密工具使用指南</h2>
-      <p class="mb-4 text-gray-600 leading-relaxed">
-        PDF加密工具用于为单个PDF文件添加打开密码和所有者密码，全部处理都在浏览器本地完成，适合对合同、发票、方案、报告和共享资料进行下载前保护。
-      </p>
-    </section>
+<div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <section class="mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 leading-tight">一键整理凌乱文字中的联系方式</h1>
+    <p class="text-lg text-gray-600 mb-2">还在为从大段文字里找手机号、邮箱而头疼？这个小工具能帮你瞬间搞定。</p>
+    <p class="text-gray-500">无论是会议纪要、客户资料还是网页内容，它都能自动识别并整理出所有联系方式，让你的工作效率翻倍。</p>
+  </section>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">核心功能</h3>
-      <ul class="list-disc space-y-2 pl-6 text-gray-600">
-        <li>支持上传单个PDF文件并本地执行加密</li>
-        <li>支持设置用户密码，用于控制文件打开访问</li>
-        <li>支持设置所有者密码，留空时自动与用户密码保持一致</li>
-        <li>默认使用AES-256加密后导出新的PDF文件</li>
-        <li>支持一键下载加密结果，不上传原始文件和密码</li>
-      </ul>
-    </section>
+  <section class="mb-10 bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg">
+    <h2 class="text-xl font-semibold text-gray-800 mb-3">你是不是也遇到过这种情况？</h2>
+    <ul class="space-y-2 list-disc pl-5 text-gray-700">
+      <li>拿到一份长长的会议记录，里面混杂着好几个人的电话和邮箱，需要一个一个挑出来。</li>
+      <li>在网页上看到一篇有用的文章，里面提到了联系方式，但和正文混在一起，手动复制容易出错。</li>
+      <li>收集了多份文档里的客户信息，想把所有人的联系方式汇总到一个表格里，却要逐字逐句地翻找。</li>
+    </ul>
+    <p class="mt-4 text-gray-600">手动做这些事情，不仅费时费力，还容易看走眼，不小心就漏掉或者抄错了一个数字、一个字母。</p>
+  </section>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">使用步骤</h3>
-      <ol class="list-decimal space-y-2 pl-6 text-gray-600">
-        <li><strong>选择文件</strong>：在工具区域选择或拖拽一个PDF文件</li>
-        <li><strong>输入用户密码</strong>：填写后接收方打开PDF时需要输入该密码（可选）</li>
-        <li><strong>补充所有者密码</strong>：按需填写，用于移除加密或管理权限限制（可选）</li>
-        <li><strong>配置文档权限</strong>：勾选或取消需要的权限选项</li>
-        <li><strong>开始加密</strong>：点击"开始加密"按钮，等待浏览器本地完成处理</li>
-        <li><strong>下载结果</strong>：切换到结果区域下载新的加密PDF文件</li>
-      </ol>
-    </section>
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">它是怎么帮到你的？</h2>
+    <p class="mb-6">简单来说，它就像一个智能的“文字筛子”。你只需要把包含联系方式的整段文字“倒”进去，它就会自动把手机号码、电子邮箱和网页链接这三样东西筛出来，分门别类地摆在你面前。</p>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">密码说明</h3>
-      <div class="overflow-x-auto">
-        <table class="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr class="bg-gray-50">
-              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">密码类型</th>
-              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">用途</th>
-              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">说明</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-200 px-4 py-2">用户密码</td>
-              <td class="border border-gray-200 px-4 py-2">打开PDF</td>
-              <td class="border border-gray-200 px-4 py-2">接收方在查看文件时需要输入</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-200 px-4 py-2">所有者密码</td>
-              <td class="border border-gray-200 px-4 py-2">文档管理</td>
-              <td class="border border-gray-200 px-4 py-2">用于文档管理和权限控制，通常由文件提供者保留</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">1</span>
+          它能找什么？
+        </h3>
+        <div class="grid sm:grid-cols-3 gap-4 text-center">
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+            <div class="text-blue-600 font-bold text-lg mb-1">手机号码</div>
+            <div class="text-sm text-gray-500">国内主流的11位手机号，都会帮你识别出来。</div>
+          </div>
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+            <div class="text-green-600 font-bold text-lg mb-1">电子邮箱</div>
+            <div class="text-sm text-gray-500">带有“@”符号的标准邮箱地址，一个都跑不掉。</div>
+          </div>
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+            <div class="text-amber-600 font-bold text-lg mb-1">网页链接</div>
+            <div class="text-sm text-gray-500">以 http、https 或 www 开头的网址链接。</div>
+          </div>
+        </div>
       </div>
-      <p class="mt-3 text-sm text-gray-500">如果不单独设置所有者密码，工具会默认复用用户密码。若要启用权限限制，需设置与用户密码不同的所有者密码。</p>
-    </section>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">文档权限说明</h3>
-      <ul class="list-disc space-y-2 pl-6 text-gray-600">
-        <li><strong>允许打印</strong>：控制是否允许打印文档内容</li>
-        <li><strong>允许修改内容</strong>：控制是否允许修改文档内容</li>
-        <li><strong>允许复制文本和图片</strong>：控制是否允许从文档复制文本和图片</li>
-        <li><strong>允许批注</strong>：控制是否允许添加批注和注释</li>
-        <li><strong>允许填写表单</strong>：控制是否允许填写表单字段</li>
-        <li><strong>允许辅助功能读取</strong>：控制是否允许辅助功能读取文档内容</li>
-        <li><strong>允许页面组装</strong>：控制是否允许插入、删除或旋转页面</li>
-      </ul>
-      <p class="mt-3 rounded bg-yellow-50 p-3 text-sm text-yellow-800">注意：只有当所有者密码与用户密码不同时，上述权限限制才会写入PDF文件。</p>
-    </section>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">2</span>
+          操作有多简单？
+        </h3>
+        <ol class="space-y-4 list-decimal pl-5 text-gray-700">
+          <li><strong>粘贴文字</strong>：把你手头那段“乱糟糟”的文字，全部复制并粘贴到页面的输入框里。</li>
+          <li><strong>自动识别</strong>：就在你粘贴完成的一瞬间，右边的结果区域已经自动把手机、邮箱、链接分开列好了，还会告诉你各找到了多少个。</li>
+          <li><strong>怎么拿走？</strong>：你可以点击任何一个单独的号码或邮箱来复制；也可以点一下“复制全部”，把找出来的所有信息一次性打包复制走；或者，选择“导出”成一个文本文件保存到电脑里。</li>
+        </ol>
+        <p class="mt-4 p-4 bg-gray-100 rounded-lg text-gray-600 text-sm">整个过程，你只需要做“粘贴”和“点击”这两个动作，剩下的全部交给工具来完成。如果想换一段文字重新整理，点一下“清空全部”就恢复如初了。</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">适用场景</h3>
-      <ul class="list-disc space-y-2 pl-6 text-gray-600">
-        <li>合同、报价单和投标材料发送前加密</li>
-        <li>发票、报销文件和财务资料下载前保护</li>
-        <li>报告、方案、客户资料对外共享前加密</li>
-        <li>内部文档归档或跨部门传输时增加访问门槛</li>
-      </ul>
-    </section>
+  <section class="mb-10 p-6 bg-gray-100 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">为什么你会需要它？</h2>
+    <div class="space-y-4">
+      <p><strong>为了快</strong>：节省下大量手动查找和核对的时间，几分钟甚至几秒钟就能完成以前需要半小时的工作。</p>
+      <p><strong>为了准</strong>：机器识别比人眼更可靠，能有效避免因为疲劳或疏忽而导致的遗漏和错抄。</p>
+      <p><strong>为了整齐</strong>：把散落在文字各处的信息，规规矩矩地整理成清单，方便你后续的拨打、联系或归档。</p>
+    </div>
+    <p class="mt-6 text-gray-600">这个工具完全在网页浏览器里运行，你无需下载任何软件，打开网页就能用。更重要的是，<strong>你粘贴进去的所有文字内容都只在你的电脑浏览器里处理</strong>，不会被上传到任何服务器，你可以放心整理那些包含敏感信息的文件。</p>
+  </section>
 
-    <section class="mb-8">
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">隐私安全</h3>
-      <p class="text-gray-600 leading-relaxed">
-        当前工具在浏览器本地读取文件、执行加密并导出结果，不会主动上传PDF内容和密码到服务器。
-      </p>
-    </section>
-
-    <section>
-      <h3 class="mb-3 text-xl font-semibold text-gray-900">加密算法</h3>
-      <p class="text-gray-600 leading-relaxed">
-        本工具默认使用AES-256算法进行PDF加密，这是目前业界公认的安全加密标准之一。
-      </p>
-    </section>
-  </article>
+  <section class="text-center py-8 border-t border-gray-200">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结一下</h2>
+    <p class="text-lg text-gray-700 mb-6">无论是处理工作文档、收集网络信息，还是整理个人资料，面对混杂在文字中的联系方式，你不再需要变成一个“人肉扫描仪”。</p>
+    <div class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-default">
+      让这个小工具成为你的效率助手
+    </div>
+    <p class="mt-6 text-gray-500 text-sm">简单、快速、免费，把繁琐的事情交给工具，把你的时间和精力留给更重要的事。</p>
+  </section>
 </div>
 `;export{t as default};

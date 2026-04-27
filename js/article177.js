@@ -1,56 +1,223 @@
-const t=`
-<div class="max-w-3xl mx-auto p-4 md:p-6 font-sans text-gray-800 leading-relaxed">
-  <h1 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h1>
-  
-  <p class="mb-4 text-gray-700">在日常生活中，我们经常会遇到需要把数字写成中文的情况——写收据、填报销单、签合同，甚至给孩子辅导作业。但你知道数字转中文其实有几种不同的方式吗？数字大写和小写有什么区别？什么时候该用“数字读法”？今天我们就来聊聊数字转中文的那些事，并介绍一个实用的在线工具，帮你轻松搞定各种转换。</p>
+const e=`
+<div class="bg-white text-gray-800 font-sans">
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
+      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
+    </header>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字转中文，原来有这么多讲究</h2>
-  <p class="mb-3">我们平时随手写的“一、二、三”是中文小写，简单好认，适合日常记录。但在财务领域，你一定会看到“壹、贰、叁”这样复杂的大写数字。其实数字转中文可以分成四种常见形式，每种都有自己的用途：</p>
-  
-  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
-    <li><span class="font-medium text-gray-900">中文小写</span>（如：一千二百三十四）——就是我们平常书写的方式，用在笔记、普通文书里。</li>
-    <li><span class="font-medium text-gray-900">中文大写</span>（如：壹仟贰佰叁拾肆）——笔画复杂，难以涂改，主要用于发票、合同、支票等正式财务文件。</li>
-    <li><span class="font-medium text-gray-900">数字读法</span>（如：一二三四）——逐个数字朗读，常用于报电话号码、身份证号、验证码，避免听错。</li>
-    <li><span class="font-medium text-gray-900">金额格式</span>（如：壹仟贰佰叁拾肆元伍角陆分）——自动带上元角分，完全符合财务大写规范，写借条、填报销单最方便。</li>
-  </ul>
+    <!-- 引言部分 -->
+    <section class="mb-10">
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+        <p class="text-gray-700 leading-relaxed">
+          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
+        </p>
+      </div>
+    </section>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">为什么金额要用大写？老祖宗的防篡改智慧</h2>
-  <p class="mb-3">很多人都有疑问：为什么发票、合同上的金额必须写成大写？其实这是从古代延续下来的防篡改方法。小写的“一”加一笔就变成“二”、“十”，很容易被修改。而大写的“壹”笔画复杂，很难通过添减笔画改成其他数字。比如“壹”很难改成“贰”，“叁”也很难改成其他字。这种设计大大增加了涂改难度，保障了资金安全。所以直到今天，所有正规财务票据仍然强制要求使用中文大写金额。</p>
+    <!-- 什么是命名方式 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
+          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → userName</li>
+              <li>• 我的文档 → myDocument</li>
+              <li>• 首页标题 → homePageTitle</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
+          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → user_name</li>
+              <li>• 我的文档 → my_document</li>
+              <li>• 首页标题 → home_page_title</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
+      </p>
+    </section>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字读法，让沟通更清晰</h2>
-  <p class="mb-3">你有没有遇到过电话里报银行卡号、快递取件码时听错的情况？数字读法就是专门为解决这个问题而生的。把“1234”读成“一二三四”，每个字发音清晰，不容易混淆。特别是像“1”和“7”这样的数字，用“幺”和“拐”来读（工具里可以自定义），能最大程度避免误听。很多客服、快递员都习惯用这种读法。</p>
+    <!-- 为什么需要转换 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
+            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
+            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
+            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">金额格式：自动加元角分，规范又省心</h2>
-  <p class="mb-3">如果你需要写借条、填报销单，或者开具收据，最头疼的可能就是怎么把小数点后面的数字转换成“角”和“分”。金额格式功能直接帮你搞定：比如输入123.45，它会自动生成“壹佰贰拾叁元肆角伍分”，完全符合财务大写规则。如果金额是整数，也会自动补上“元整”（工具中显示为元后无角分）。再也不用担心写错单位。</p>
+    <!-- 工具介绍 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
+      
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
+        </p>
+        
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
+              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
+              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">这个工具能做什么？</h2>
-  <p class="mb-2">上面提到的四种转换，一个在线工具就能全部搞定。你只需要输入任意数字（支持负数和小数），它就会实时显示出对应的中文小写、中文大写、数字读法和金额格式。还有几个贴心的细节：</p>
-  <ul class="list-disc pl-6 space-y-1 mb-6 text-gray-700">
-    <li>小数点读法可以自定义，比如把默认的“点”改成“又”，满足不同习惯；</li>
-    <li>自动过滤非法字符，输入“12a3.45”只会保留有效数字“123.45”；</li>
-    <li>每个结果旁边都有“复制”按钮，一键粘贴到你需要的地方。</li>
-  </ul>
+    <!-- 使用场景扩展 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-blue-600 text-xl font-medium">A</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
+          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-green-600 text-xl font-medium">B</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
+          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-purple-600 text-xl font-medium">C</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
+          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="bg-blue-50 border border-blue-100 rounded-md p-4 my-6 text-sm text-blue-800">
-    <p class="mb-1"><span class="font-medium">举个例子：</span>输入“-1234.567”</p>
-    <p>中文小写：负一千二百三十四点五六七</p>
-    <p>中文大写：负壹仟贰佰叁拾肆点伍陆柒</p>
-    <p>数字读法：负一二三四点五六七</p>
-    <p>金额格式：负壹仟贰佰叁拾肆元伍角陆分（小数第三位自动忽略）</p>
-  </div>
+    <!-- 常见问题 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
+      
+      <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
+          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
+          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
+          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">生活中的实用场景</h2>
-  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
-    <li><span class="font-medium">写借条/收据：</span>借款5000元，写成“伍仟元整”，对方无法涂改，双方都放心。</li>
-    <li><span class="font-medium">填报销单：</span>差旅费1234.56元，直接转换粘贴，避免填写错误。</li>
-    <li><span class="font-medium">报手机号：</span>13912345678，逐字读成“一三九一二三四五六七八”，对方一次记对。</li>
-    <li><span class="font-medium">给孩子辅导：</span>让孩子对照数字练习大写，认识“壹贰叁”，顺便了解传统文化。</li>
-    <li><span class="font-medium">合同条款：</span>涉及金额的地方，同时写小写和大写，双重保险。</li>
-  </ul>
-
-  <p class="mt-6 text-gray-700 border-t border-gray-200 pt-4">下次需要大写金额、数字读法或者标准金额格式时，不妨试试这个数字转中文工具。不用翻字典查大写，不用纠结“角分”怎么加，输入数字，一键复制，省时省力，还能避免出错。无论是工作还是生活，它都能成为你的实用小帮手。</p>
-
-  <!-- 自然提及工具，但不做营销 -->
-  <p class="text-xs text-gray-400 mt-8 text-center">—— 让数字转中文更简单 ——</p>
+    <!-- 结语 -->
+    <section class="mt-12 pt-8 border-t border-gray-200">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
+        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
+          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
+        </p>
+        <p class="text-gray-600">
+          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
+        </p>
+      </div>
+    </section>
+  </article>
 </div>
-`;export{t as default};
+`;export{e as default};

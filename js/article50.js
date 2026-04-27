@@ -1,123 +1,119 @@
-const s=`
-<article class="text-gray-800 font-sans max-w-4xl mx-auto px-4 md:px-8 py-8">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">想一键把照片里的人或物“剪”下来？这个在线工具帮你轻松搞定</h1>
+const l=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">密码生成器：为你的数字生活筑起安全防线</h1>
 
-  <!-- 摘要 -->
-  <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-    你是否遇到过这样的烦恼：拍了一张很棒的合照，却只想留下主角；网上下载了一张精美图片，却只想要其中的某个元素？现在，这一切变得和“一键美颜”一样简单。
-  </p>
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">⚠️ 你的密码可能比你想象的更脆弱</p>
+    <p class="mt-2 mb-0">据安全研究机构统计，超过80%的数据泄露事件都与弱密码有关。如果你还在使用"123456"、"password"或生日作为密码，那么这篇文章就是为你准备的。</p>
+  </div>
 
-  <!-- 痛点场景 -->
-  <section class="mb-10 p-6 bg-blue-50 border-l-4 border-blue-500">
-    <h2 class="text-xl font-semibold mb-4 text-gray-800">你是否也曾为此头疼？</h2>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>想给网店商品换个干净的背景，却不会用复杂的PS软件。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>旅行照片背景杂乱，想把最美的自己“提”出来做成海报。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <span>手头有一堆图片素材，需要快速批量地把里面的核心物体分离出来。</span>
-      </li>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">为什么你需要一个强大的密码？</h2>
+  <p>在数字化时代，密码就像你家门的钥匙。不同的是，这扇门后面存放着你的银行账户、私人照片、工作文件，甚至是身份信息。一个强大的密码，是保护这些数字资产的第一道防线。</p>
+  
+  <div class="bg-red-50 p-5 rounded-lg my-6 border border-red-100">
+    <h3 class="font-medium text-red-800 mb-3">弱密码的常见风险：</h3>
+    <ul class="space-y-2 text-red-700">
+      <li>• <strong>字典攻击</strong>：黑客使用常见密码列表，几秒钟就能破解简单密码</li>
+      <li>• <strong>暴力破解</strong>：短密码（8位以下）在现代计算机面前撑不过几分钟</li>
+      <li>• <strong>撞库攻击</strong>：一个网站的泄露密码，可能被用来尝试登录你的其他账户</li>
+      <li>• <strong>社会工程学</strong>：使用生日、姓名等个人信息，容易被熟人猜到</li>
     </ul>
-    <p class="mt-4 text-gray-700">传统方法要么需要下载专业软件和学习时间，要么得花钱找专人处理，既麻烦又耗时。</p>
-  </section>
+  </div>
 
-  <!-- 简单解释 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800">它是什么？一把聪明的“AI剪刀”</h2>
-    <p class="mb-4 leading-relaxed">
-      你可以把这个工具想象成一把<strong class="text-blue-700">具有“火眼金睛”的智能剪刀</strong>。你只需要把照片“喂”给它，它就能瞬间看懂图片里哪个是人、哪个是猫、哪个是商品，并自动沿着它们的边缘精准地裁剪下来。
-    </p>
-    <p class="mb-4 leading-relaxed">
-      整个过程完全在你的浏览器中进行，<strong class="text-blue-700">无需下载任何软件</strong>，也<strong class="text-blue-700">不需要你把照片上传到陌生服务器</strong>，最大限度地保护了你的隐私。
-    </p>
-    <div class="bg-gray-100 p-5 rounded-lg my-6">
-      <h3 class="font-medium mb-2 text-gray-800">简单三步，获得透明背景的素材：</h3>
-      <ol class="list-decimal pl-5 space-y-2 text-gray-700">
-        <li><strong>选模式</strong>：告诉“剪刀”你是想精细抠人像，还是抠一般物品。</li>
-        <li><strong>传照片</strong>：像发微信图片一样，把照片拖进去或点一下上传，一次可以传好多张。</li>
-        <li><strong>等结果</strong>：点击按钮，喝口水的时间，所有图片里被“剪”下来的物体就整齐排好了。</li>
-      </ol>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">什么样的密码才算安全？</h2>
+  <p>网络安全专家普遍推荐的密码标准：</p>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg bg-green-50">
+      <h3 class="font-medium text-green-800 mb-2">✅ 安全的密码特征</h3>
+      <ul class="text-sm text-green-700 space-y-1">
+        <li>• 至少12位以上长度</li>
+        <li>• 包含大小写字母混合</li>
+        <li>• 包含数字和特殊符号</li>
+        <li>• 不包含个人信息</li>
+        <li>• 每个账户使用不同密码</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- 好处列举 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800">为什么你会喜欢用它？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-        <h3 class="text-xl font-semibold mb-3 text-gray-800 leading-8 h-8">1. 零门槛，上手就会</h3>
-        <p class="text-gray-700 leading-relaxed">界面就像你常用的手机APP一样清晰。没有复杂的参数，没有让人头晕的菜单，任何会点鼠标的人都能立即使用。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-        <h3 class="text-xl font-semibold mb-3 text-gray-800 leading-8 h-8">2. 闪电般的处理速度</h3>
-        <p class="text-gray-700 leading-relaxed">借助先进的AI技术，处理单张图片往往只需几秒钟。更棒的是，它可以一口气处理你上传的所有图片，批量解放你的双手。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-        <h3 class="text-xl font-semibold mb-3 text-gray-800 leading-8 h-8">3. 结果清晰，边缘自然</h3>
-        <p class="text-gray-700 leading-relaxed">AI的识别精度非常高，无论是飞扬的发丝、商品的复杂轮廓，都能被细致地保留下来，得到的图片边缘干净，可以直接使用。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-        <h3 class="text-xl font-semibold mb-3 text-gray-800 leading-8 h-8">4. 你的照片，只留在你手里</h3>
-        <p class="text-gray-700 leading-relaxed">整个过程就像在你自己的电脑本地上演算，照片数据不会离开你的设备，避免了隐私泄露的风险，用起来更安心。</p>
-      </div>
+    <div class="p-4 border border-gray-200 rounded-lg bg-red-50">
+      <h3 class="font-medium text-red-800 mb-2">❌ 避免的密码类型</h3>
+      <ul class="text-sm text-red-700 space-y-1">
+        <li>• 连续数字（123456）</li>
+        <li>• 键盘顺序（qwerty）</li>
+        <li>• 常见单词（password）</li>
+        <li>• 生日或纪念日</li>
+        <li>• 在多个网站重复使用</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
-  <!-- 应用场景 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800">这些场景下，它特别有用</h2>
-    <div class="space-y-8">
-      <div class="flex flex-col md:flex-row items-start gap-6">
-        <div class="md:w-1/4">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto md:mx-0">
-            <span class="text-2xl text-green-700 font-bold">店</span>
-          </div>
-        </div>
-        <div class="md:w-3/4">
-          <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：电商创业者的好帮手</h3>
-          <p class="text-gray-700 leading-relaxed">
-            小王开了个网店，每天要处理几十张商品图。他想给商品换上统一的白色或场景化背景来提升店铺形象。以前要么花钱外包，要么自己用软件抠到眼花。现在，他只需把原图批量拖进这个工具，几分钟后就能拿到所有抠好的商品图，效率提升十倍不止，省下的时间和钱就是利润。
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col md:flex-row items-start gap-6">
-        <div class="md:w-1/4">
-          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto md:mx-0">
-            <span class="text-2xl text-purple-700 font-bold">创</span>
-          </div>
-        </div>
-        <div class="md:w-3/4">
-          <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：创意设计的神奇起点</h3>
-          <p class="text-gray-700 leading-relaxed">
-            喜欢做电子相册、节日贺卡或趣味海报的普通用户，常常苦于找不到合适的透明素材。现在，你可以用自己的照片！把家人、宠物、旅行纪念品从原背景中“提取”出来，然后自由地放到任何你喜欢的背景模板里，轻松制作出独一无二、充满个人印记的创意作品。
-          </p>
-        </div>
-      </div>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">密码生成器：让安全变得简单</h2>
+  <p>手动创建并记住几十个复杂密码几乎是不可能的任务。这就是密码生成器的价值所在——它能在几秒钟内为你生成符合安全标准的随机密码。</p>
+
+  <h3 class="text-xl font-medium text-gray-800 mt-8 mb-3">一个好用的密码生成器应该具备：</h3>
+  <ul class="my-4 pl-5 space-y-2">
+    <li><strong>自定义长度</strong>：根据需求生成4-64位密码</li>
+    <li><strong>字符类型选择</strong>：灵活开关大小写、数字、特殊符号</li>
+    <li><strong>批量生成</strong>：一次生成多个选项供选择</li>
+    <li><strong>一键复制</strong>：方便快速使用</li>
+    <li><strong>本地运行</strong>：密码不在网络传输，更安全</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">密码安全最佳实践</h2>
+  
+  <div class="space-y-6 my-6">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">1. 使用密码管理器</h3>
+      <p>记住几十个复杂密码不现实。使用密码管理器（如Bitwarden、1Password）可以安全存储所有密码，你只需要记住一个主密码。</p>
     </div>
-  </section>
-
-  <!-- 行动号召 -->
-  <section class="text-center p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl border border-gray-200">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800">告别繁琐的抠图，拥抱智能与便捷</h2>
-    <p class="text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
-      技术本该服务于人，让复杂的事情变简单。这个免费的在线AI图像提取工具，正是为了解你的燃眉之急而生。无需专业知识，无需漫长等待。
-    </p>
-    <div class="space-y-3 text-gray-600 text-sm">
-      <p>你只需要：一台能上网的手机或电脑，和一张你想要“提炼”的照片。</p>
-      <p>剩下的，交给这把聪明的“AI剪刀”。</p>
+    
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">2. 开启双重验证（2FA）</h3>
+      <p>即使密码泄露，双重验证也能提供额外保护。建议为重要账户（邮箱、银行、社交账号）开启此功能。</p>
     </div>
-  </section>
+    
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">3. 定期更换重要密码</h3>
+      <p>对于银行账户、邮箱等关键服务，建议每3-6个月更换一次密码。如果收到安全提醒，应立即更换。</p>
+    </div>
+    
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">4. 警惕钓鱼攻击</h3>
+      <p>不要在可疑网站输入密码。检查网址是否正确，留意拼写错误（如g00gle.com）。</p>
+    </div>
+  </div>
 
-  <!-- 自然融入的关键词结尾 -->
-  <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-    <p>本文介绍了如何使用先进的AI技术，实现<strong>一键在线抠图</strong>、<strong>免费去除图片背景</strong>、<strong>批量提取照片中物体</strong>的实用方法，帮助电商、设计师和普通用户高效解决图像处理难题。</p>
-  </footer>
-</article>
-`;export{s as default};
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：密码生成器生成的密码安全吗？</p>
+      <p class="text-gray-600">答：是的。密码生成器使用加密安全的随机数生成算法，产生的密码具有高度随机性，几乎不可能被猜测或破解。相比人脑想出的密码，随机生成的密码安全性要高得多。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：多长的密码才算足够安全？</p>
+      <p class="text-gray-600">答：对于一般网站，12位以上即可。对于银行、邮箱等重要账户，建议使用16位或更长的密码。每增加一位，破解难度呈指数级增长。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：特殊符号真的有必要吗？</p>
+      <p class="text-gray-600">答：有必要。包含特殊符号（!@#$%^&*等）可以大幅增加密码的复杂度。不过，有些网站不支持某些特殊字符，这时可以灵活调整。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">立即行动，保护你的数字资产</h2>
+  <p>密码安全不是小事。一次数据泄露可能带来身份盗用、财产损失等严重后果。好消息是，保护自己也并不复杂。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">🛡️ 今天的行动计划：</p>
+    <ol class="text-green-800 space-y-1">
+      <li>1. 使用密码生成器，为你的重要账户创建新密码</li>
+      <li>2. 安装一个密码管理器，开始有序管理密码</li>
+      <li>3. 为邮箱和银行账户开启双重验证</li>
+      <li>4. 检查是否有重复使用的密码，逐一更换</li>
+    </ol>
+  </div>
+  
+  <p class="mt-6 text-center text-gray-600">安全是一个持续的过程，而不是一次性的任务。从今天开始，让你的数字生活更加安全。</p>
+</div>
+`;export{l as default};

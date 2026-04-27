@@ -1,100 +1,113 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">贪吃蛇：一款让你瞬间回到童年的经典游戏，在线就能玩！</h1>
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl font-bold tracking-tight text-gray-900 mb-4">神奇的复利：让您的财富像滚雪球一样增长</h1>
+  <p class="text-gray-600 mb-8">您是否好奇，为什么有人能通过储蓄或投资让财富稳定增值？秘密可能就藏在“复利”这个听起来有点专业，但其实非常简单的概念里。今天，我们就来聊聊这个普通人也能掌握的财富增长秘诀。</p>
 
-  <!-- 引言/痛点 -->
-  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-green-600">
-    <p class="text-lg mb-2">你是不是也有这样的时刻？</p>
-    <p class="mb-2">地铁上信号不好，想找个游戏打发时间，却发现都要下载；工作间隙想放松几分钟，却找不到简单不费脑的消遣；或者，单纯想重温一下小时候在诺基亚手机上摁键盘的快乐。</p>
-    <p class="font-medium">这时候，一个打开就能玩、规则简单却充满挑战的经典游戏，就成了你最需要的“解压神器”。</p>
+  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+    <p class="font-medium text-blue-800 mb-2">一句话理解复利：</p>
+    <p class="text-blue-700">“利滚利”。您投资获得的利息，会加入本金，在下一期继续产生新的利息。雪球就是这么滚大的。</p>
   </div>
 
-  <!-- 简单解释 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">贪吃蛇是什么？</h2>
-    <p class="mb-4">想象一下，你控制一条由小方块组成的“小蛇”，在一个方方正正的场地上穿梭。你的目标是吃掉随机出现的“小豆子”。每吃一颗，小蛇的身体就会长长一节。</p>
-    <p class="mb-4">听起来很简单，对吧？但挑战在于：你不能让小蛇撞到四周的墙壁，更不能让它回头咬到自己的身体！随着小蛇越来越长，你需要越来越小心地规划路线，游戏的紧张感和成就感也就随之而来。</p>
-    <p>它没有复杂的剧情和绚丽的特效，但那种“就差一点！”和“我又破记录了！”的纯粹快乐，正是它风靡几十年的秘密。</p>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">复利和您熟悉的“单利”有什么不同？</h2>
+  <p class="mb-6">为了更清楚，我们来打个比方：</p>
+  <div class="overflow-x-auto my-6">
+    <table class="min-w-full border border-gray-300 text-sm">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">计算方式</th>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">简单理解</th>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">10年后结果 (1万元，年利率5%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-50">
+          <td class="border border-gray-300 px-4 py-3"><strong>单利</strong></td>
+          <td class="border border-gray-300 px-4 py-3">每年的利息只按最初的本金计算。</td>
+          <td class="border border-gray-300 px-4 py-3 font-mono">约 15，000 元</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border border-gray-300 px-4 py-3"><strong>复利</strong></td>
+          <td class="border border-gray-300 px-4 py-3">利息加入本金，一起计算下一年的利息。</td>
+          <td class="border border-gray-300 px-4 py-3 font-mono">约 16，289 元</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mb-8 text-gray-700">看，仅仅10年，复利就多出了近1300元。时间越长，这个差距就会变得越惊人，这就是复利被爱因斯坦称为“世界第八大奇迹”的原因。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">影响复利效果的三个关键因素</h2>
+  <p class="mb-6">想让您的财富雪球滚得更快更大，主要看这三点：</p>
+
+  <div class="grid md:grid-cols-3 gap-6 my-8">
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">1. 本金：最初的雪球</h3>
+      <p class="text-gray-700">您最初投入的多少钱。本金越大，起点越高，未来增长的绝对数额自然也越大。这不意味着钱少就不能开始，恰恰相反，<strong>尽早开始</strong>同样重要。</p>
+    </div>
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">2. 利率：山坡的陡峭度</h3>
+      <p class="text-gray-700">您的钱每年能增长百分之几。利率越高，财富增长的速度就越快。但请记住，高收益往往伴随高风险，需要根据自身情况谨慎选择。</p>
+    </div>
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">3. 时间：山坡的长度</h3>
+      <p class="text-gray-700">这是<strong>最关键</strong>的因素。复利需要时间发酵。投资10年和投资30年，最终结果会是天壤之别。所以，理财规划中，“耐心”是最宝贵的品质。</p>
+    </div>
   </div>
 
-  <!-- 好处列举 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">为什么你现在还会想玩贪吃蛇？</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-green-700">1. 真正的“零负担”游戏</h3>
-        <p>无需下载，不占手机空间。点开一个网页就能立刻开始，玩完关掉页面就行，像用一张即用即扔的“数字纸巾”一样方便。</p>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">普通人如何利用复利？两种常见思路</h2>
+  <p class="mb-4">理解了原理，我们该怎么用呢？主要有两种方式，对应不同的资金情况：</p>
+
+  <div class="space-y-8 my-8">
+    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
+      <div class="md:w-1/4">
+        <div class="bg-blue-100 text-blue-800 font-bold text-center py-4 px-2 rounded">
+          <p class="text-xl">方式一</p>
+          <p class="text-lg">一次性投入</p>
+        </div>
       </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-green-700">2. 随时随地，想停就停</h3>
-        <p>无论是等餐的5分钟，还是会议开始前的间隙，你都能来上一局。游戏可以随时暂停，不用担心突然有事而前功尽弃。</p>
+      <div class="md:w-3/4">
+        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您有一笔闲置资金</h3>
+        <p class="mb-3">比如年终奖、一笔存款，可以将其作为初始本金进行一次性的投资或储蓄，然后让它在漫长的岁月里通过复利自然生长。</p>
+        <p class="text-gray-600 text-sm"><strong>适合人群：</strong>手头有一笔闲钱，希望进行长期规划的人。</p>
       </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-green-700">3. 挑战自己，看得到的进步</h3>
-        <p>每次游戏都会记录你的“得分”和“坚持了多久”。你可以不断挑战自己的最高分，看着数字一点点突破，那种看得见的成长感非常解压。</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
+      <div class="md:w-1/4">
+        <div class="bg-green-100 text-green-800 font-bold text-center py-4 px-2 rounded">
+          <p class="text-xl">方式二</p>
+          <p class="text-lg">定期定额投入</p>
+        </div>
       </div>
-      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-medium mb-3 text-green-700">4. 友好的“光荣榜”</h3>
-        <p>你的每一次高分都会被记录下来，形成一个专属的“成绩单”。你可以清楚地看到自己的最佳战绩是在什么时候创造的，回味那份成就感。</p>
+      <div class="md:w-3/4">
+        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您每月有稳定结余</h3>
+        <p class="mb-3">也就是常说的“定投”。比如每月固定拿出1000元进行投资。这种方式好处很多：</p>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>积少成多：</strong>不知不觉中积累可观的本金。</li>
+          <li><strong>平摊成本：</strong>市场波动时，自动实现“买得多时价格低，买得少时价格高”。</li>
+          <li><strong>强迫储蓄：</strong>养成良好的理财习惯。</li>
+        </ul>
+        <p class="mt-3 text-gray-600 text-sm"><strong>适合人群：</strong>大多数有固定收入的工薪阶层，理财新手入门的好方法。</p>
       </div>
     </div>
   </div>
 
-  <!-- 应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">你会在哪些时刻需要它？</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景一：碎片时间的“填充剂”</h3>
-        <p>通勤路上、排队等候、电视广告时间……把这些零碎的几分钟利用起来，玩两局贪吃蛇，比漫无目的地刷手机更能让你感到放松和充实。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景二：工作学习的“大脑重启键”</h3>
-        <p>当你写报告卡壳了，或者学习感到疲惫时，强制自己休息5分钟，来一局贪吃蛇。这种需要集中精力但无需深入思考的游戏，能很好地帮你转换思维，回来之后效率更高。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">场景三：亲子互动的“小桥梁”</h3>
-        <p>规则简单，上手容易，非常适合教小朋友玩。你可以和孩子比比谁得分更高，在简单的游戏中享受亲子时光，还能锻炼孩子的反应力和规划能力。</p>
-      </div>
-    </div>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">动手算一算：您的复利未来会是多少？</h2>
+  <p class="mb-6">光听概念可能还是有点模糊。现在有很多在线的<strong>复利计算器</strong>可以帮我们直观地看到结果。您可以尝试输入不同的数字，比如：</p>
+  <ul class="list-disc pl-5 space-y-3 mb-8 text-gray-700">
+    <li>如果每月定投1000元，年利率5%，30年后会变成多少钱？</li>
+    <li>如果一次性投入5万元，年利率8%，20年后和30年后差距有多大？</li>
+    <li>把复利频率从“一年一次”改成“一月一次”，结果会有什么变化？</li>
+  </ul>
+  <p class="mb-10 p-4 bg-gray-100 border-l-4 border-blue-500 italic">通过这样的模拟计算，您能更深刻地感受到时间、利率和投入方式对最终结果的影响，从而为自己制定更清晰、合理的长期理财目标。</p>
+
+  <div class="my-10 p-6 border border-yellow-300 bg-yellow-50 rounded-lg">
+    <h3 class="font-bold text-lg mb-3 text-gray-900">最后的小建议</h3>
+    <p class="mb-3">复利的魔力在于其长期性和稳定性。它不是一个让你一夜暴富的工具，而是一个关于<strong>耐心、纪律和长期规划</strong>的财富哲学。</p>
+    <p>最重要的步骤永远是：<strong>了解原理，设定目标，然后，尽早开始您的第一步。</strong></p>
   </div>
 
-  <!-- 核心功能通俗解释（对应代码功能） -->
-  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">这个贪吃蛇游戏有什么不一样？</h2>
-    <ul class="space-y-4 list-disc pl-5">
-      <li><span class="font-medium">双端都能玩得顺手：</span>在电脑上，你可以用键盘的方向键灵活操控；在手机上，屏幕下方就有模拟方向键和开始按钮，点按就能操作，非常跟手。</li>
-      <li><span class="font-medium">你的专属成绩档案：</span>游戏会默默记下你每次的得分和游戏时长，并按照分数高低排成榜单。想知道自己的历史最佳表现？点开“分数排行榜”就能一目了然。</li>
-      <li><span class="font-medium">越来越快的节奏：</span>为了增加挑战性，小蛇每吃几颗“豆子”，移动速度就会悄悄加快一点，让你的心跳也跟着加速。</li>
-      <li><span class="font-medium">清晰明了的界面：</span>当前得分、本局用时都在屏幕上清晰显示。绿色的豆子，深色的小蛇，浅色的格子背景，看起来清爽不费眼。</li>
-    </ul>
-  </div>
-
-  <!-- 行动号召 -->
-  <div class="text-center p-8 border-t border-b border-gray-300">
-    <p class="text-2xl font-semibold mb-4">简单的快乐，最是难得</p>
-    <p class="mb-6 text-gray-700">在越来越复杂的数字世界里，贪吃蛇用它最原始的规则，带来了最直接的快乐。它不需要你学习任何新东西，却能立刻给你反馈和挑战。</p>
-    <p class="text-lg font-medium">下次当你感到无聊或需要短暂抽离时，不妨给自己两三分钟，指挥那条小蛇去吃豆子吧。你会发现，找回童年的快乐，其实就这么简单。</p>
-  </div>
-
-  <!-- 针对SEO的自然问答 -->
-  <div class="mt-10 pt-8 border-t border-gray-300">
-    <h3 class="text-xl font-semibold mb-4">关于贪吃蛇，你可能想问：</h3>
-    <div class="space-y-6">
-      <div>
-        <p class="font-medium mb-1">问：贪吃蛇游戏怎么玩？</p>
-        <p class="text-gray-700">答：目标就是控制小蛇吃豆子变长，别撞墙也别撞到自己。电脑用键盘方向键，手机点屏幕上的方向按钮就行。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-1">问：有没有可以随时暂停的在线小游戏？</p>
-        <p class="text-gray-700">答：有，像这种网页版的贪吃蛇就特别适合。按空格键或点暂停按钮就能随时停下，忙完回来可以继续，不担心游戏进度丢失。</p>
-      </div>
-      <div>
-        <p class="font-medium mb-1">问：不用下载的手机游戏有哪些？</p>
-        <p class="text-gray-700">答：很多经典游戏比如贪吃蛇、俄罗斯方块都有网页版，直接通过手机浏览器打开就能玩，完全不占用手机存储空间，非常方便。</p>
-      </div>
-    </div>
-  </div>
-</div>
-`;export{s as default};
+  <footer class="mt-12 pt-8 border-t border-gray-300 text-sm text-gray-500">
+    <p>希望这篇文章能帮助您理解复利这个强大的概念。理财路上，从理解一个简单的原理开始。请注意，文中涉及的数字均为示例，不构成任何具体的投资建议，实际投资需谨慎决策。</p>
+  </footer>
+</article>
+`;export{t as default};

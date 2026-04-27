@@ -1,90 +1,162 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-slate-800 font-sans">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">别再截图了！教你一键提取文档里的高清原图</h1>
-
-  <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed">
-    你是否遇到过这样的情况？在一份精美的PDF报告、Word文档或者PPT里看到一张特别合适的图片，想保存下来自己用，结果发现无法直接右键保存，最后只能无奈地截个模糊的图？
-  </p>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+    营销号生成器：一键生成"震惊体"文案
+  </h1>
 
   <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-    <p class="text-slate-700">
-      其实，那些文档里的图片，大多都能以原来的高清质量被“拿”出来。今天就来介绍一个简单又安全的方法。
+    <p class="text-gray-700">
+      还在为写不出"爆款文案"发愁？想体验一下营销号的独特文风？这个营销号生成器能帮你瞬间生成一篇充满"震惊"、"竟然"、"真相了"等标志性词汇的趣味文章。当然，这纯属娱乐，千万别当真！
     </p>
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">文档里的图片，都藏在哪里？</h2>
-  <p class="mb-6 leading-relaxed">
-    我们日常接触的文档，比如PDF、Word（.docx）、Excel（.xlsx）和PowerPoint（.pptx），它们就像一个个“数字容器”。你看到的文字、图表和图片，都被打包在里面。尤其是图片，它们通常以原始的、高质量的数据格式保存在文档内部，这就是为什么我们无法像在普通网页上那样直接“另存为”。
-  </p>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">如何无损地拿出这些图片？</h2>
-  <p class="mb-6 leading-relaxed">
-    你需要的是一个专门的“提取工具”。它的原理就像一个智能的开箱器，能安全地打开这些文档“容器”，识别出里面的所有图片，并把它们一张张完整地、高质量地复原出来，而不是简单地截取屏幕。
-  </p>
-
-  <div class="my-8 p-6 bg-slate-100 rounded-lg">
-    <h3 class="text-xl font-bold mb-3">一个好用的工具应该具备什么？</h3>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">1</span>
-        <span><strong>支持常见格式</strong>：至少能处理PDF、Word、Excel、PPT这几种大家最常用的文件。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">2</span>
-        <span><strong>操作简单直观</strong>：不需要复杂的设置，拖入文件，点击按钮就能完成。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">3</span>
-        <span><strong>保护你的隐私</strong>：所有操作最好在你的电脑本地完成，文件不需要上传到陌生服务器，这样最让人放心。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">4</span>
-        <span><strong>方便管理结果</strong>：提取出来的图片能一张张预览，还能打包成一个文件夹下载，方便整理。</span>
-      </li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">具体怎么操作？</h2>
-  <p class="mb-4 leading-relaxed">
-    整个过程非常简单，比你想象的要容易得多：
-  </p>
-  <ol class="list-decimal pl-5 space-y-4 mb-8">
-    <li class="pl-2"><strong>找到工具</strong>：在浏览器里打开一个具备上述功能的网页工具。</li>
-    <li class="pl-2"><strong>添加文档</strong>：点击“添加”区域，或者直接把你的PDF、Word等文件拖进去。可以一次处理多个文件。</li>
-    <li class="pl-2"><strong>等待提取</strong>：工具会自动开始工作，你可能会看到一个简单的进度提示。</li>
-    <li class="pl-2"><strong>保存图片</strong>：完成后，所有图片会以缩略图形式展示。你可以点击单张图片放大查看，也可以一键将所有图片打包下载到电脑里。</li>
-  </ol>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">我需要担心安全问题吗？</h2>
-  <p class="mb-6 leading-relaxed">
-    这是很多人最关心的一点。如果工具明确说明“所有操作在本地浏览器完成”，那就意味着你的文档文件从来没有离开过你的电脑。整个处理过程就像你用电脑自带的计算器算数一样，是离线进行的，因此不必担心文档内容被上传或泄露。
-  </p>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">这可以用来做什么？</h2>
-  <div class="grid sm:grid-cols-2 gap-4 mb-10">
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">整理素材库</h4>
-      <p class="text-sm text-slate-600">从下载的行业报告、产品手册里提取高质量的配图，建立自己的素材库。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">制作新内容</h4>
-      <p class="text-sm text-slate-600">想用之前方案PPT里的某张图表做新资料？直接提取原图，比截图清晰多了。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">保存重要资料</h4>
-      <p class="text-sm text-slate-600">合同、证明文件里的印章或签名图片，可以单独提取出来妥善保存。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">学习与参考</h4>
-      <p class="text-sm text-slate-600">看到别人文档里优秀的流程图、信息图，提取出来方便自己学习和借鉴排版。</p>
-    </div>
-  </div>
-
-  <div class="border-t border-slate-200 pt-8 mt-8">
-    <h2 class="text-2xl font-bold mb-4">写在最后</h2>
-    <p class="leading-relaxed">
-      从文档中提取图片，并不是什么高深的技术。它只是一个能帮你提高效率、获得更好效果的小技巧。关键在于找到一个<b>操作简单、注重隐私、支持格式广</b>的工具。下次再遇到心仪的文档图片时，不妨试试这个方法，告别模糊的截图，轻松获得高清原图。
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      什么是营销号生成器？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器是一个模拟网络"营销号"文风的在线娱乐工具。你只需要输入一个主题关键词（比如"人工智能"、"直播带货"、"元宇宙"等），它就能自动生成一篇具有以下特点的文章：
     </p>
-  </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+        <h3 class="font-bold text-red-700 mb-2">夸张标题</h3>
+        <p class="text-sm text-gray-600">"外国小伙一脸懵逼！"、"99%的人都不知道！"</p>
+      </div>
+      <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <h3 class="font-bold text-yellow-700 mb-2">反复提问</h3>
+        <p class="text-sm text-gray-600">"说到XX大家肯定都不陌生，但是你知道XX到底是怎么回事吗？"</p>
+      </div>
+      <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+        <h3 class="font-bold text-green-700 mb-2">自问自答</h3>
+        <p class="text-sm text-gray-600">"那么问题来了...其实原因很简单..."</p>
+      </div>
+      <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+        <h3 class="font-bold text-purple-700 mb-2">引导互动</h3>
+        <p class="text-sm text-gray-600">"觉得不错点个赞！评论区告诉我你的看法！"</p>
+      </div>
+    </div>
+
+    <p class="text-gray-700 mb-4">
+      这个工具纯粹是为了娱乐和恶搞而设计的，生成的内容没有任何实际信息量，也不代表任何观点。它让我们在欢笑中反思：什么样的内容才是真正有价值的？
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      如何使用？
+    </h2>
+    
+    <div class="space-y-6 bg-gray-50 p-6 rounded-xl">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">1</span>
+          输入主题
+        </h3>
+        <p class="text-gray-700 pl-8">
+          在输入框中填写你想要生成的主题关键词，比如"人工智能"、"短视频"、"新能源汽车"等。也可以点击"随机主题"按钮让系统帮你选择。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">2</span>
+          调整参数
+        </h3>
+        <p class="text-gray-700 pl-8">
+          可以选择生成文章的段落数量（3-10段），段落越多，文章越长。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">3</span>
+          生成并复制
+        </h3>
+        <p class="text-gray-700 pl-8">
+          点击"生成文章"按钮，系统会在几秒钟内为你生成一篇完整的营销号风格文章。满意的话可以点击"复制文章"按钮保存到剪贴板。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      适用场景
+    </h2>
+    
+    <div class="space-y-4">
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">😄</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">朋友间娱乐</h3>
+          <p class="text-gray-600 text-sm">生成搞笑文章分享到朋友圈或群里，活跃气氛</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">💡</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">学习反面教材</h3>
+          <p class="text-gray-600 text-sm">了解什么是"营销号文风"，避免自己在写作时踩坑</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">✍️</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">填充文本测试</h3>
+          <p class="text-gray-600 text-sm">用于网页排版、UI设计时的占位文本</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">🎭</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">创意启发</h3>
+          <p class="text-gray-600 text-sm">看看荒诞的组合能否激发你的灵感</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      温馨提示
+    </h2>
+    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r">
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>本工具生成的内容<strong>仅供娱乐</strong>，不代表任何观点，请勿用于正式场合</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>生成的内容可能包含<strong>夸张、误导性表述</strong>，请理性看待</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>请勿将生成的内容用于<strong>商业推广、学术写作</strong>等严肃场景</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>希望这个工具能让大家在欢笑中思考：<strong>什么才是真正有价值的内容？</strong></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mt-12 pt-8 border-t border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器的出现，反映了当前网络内容生态中的一些现象。它用幽默的方式揭示了某些"流量至上"的内容创作问题：为了吸引眼球而不惜夸大其词、制造焦虑、传播不实信息。
+    </p>
+    <p class="text-gray-700 mb-4">
+      作为内容的消费者，我们需要提高媒介素养，学会辨别信息的真伪和价值；作为内容的创作者，我们更应该坚持真实、有价值、有深度的创作原则。
+    </p>
+    <p class="text-gray-700">
+      希望这个小小的工具不仅能给你带来欢乐，也能引发你对网络内容质量的思考。好了，本期内容到这就结束了，如果觉得有帮助，记得点赞收藏加关注哦！（开个玩笑~）
+    </p>
+  </section>
 </div>
-`;export{l as default};
+`;export{s as default};

@@ -1,88 +1,53 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-    <article>
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线抽签工具怎么用？一个页面搞定随机点名和抽奖</h1>
+const s=`
+<div class="max-w-3xl mx-auto bg-white text-gray-800 p-5 md:p-8 font-sans leading-relaxed">
+  <h1 class="text-2xl md:text-3xl font-medium mb-4 text-gray-900">浮窗倒计时：精确到秒，抢购、纪念日再也不错过</h1>
+  
+  <p class="mb-5 text-base md:text-lg">生活中总有一些时刻需要精准把握：限量球鞋开售、偶像演唱会抢票、考试倒计时、恋爱纪念日……普通的计时器要么不能精确到秒，要么一刷手机就看不到了。如果你也需要一款能“浮”在其他应用上的倒计时，这个工具或许能帮上忙。</p>
 
-        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
-            还在为聚会抽奖、课堂提问选谁、或者团队任务分配而烦恼吗？自己写纸条？转盘？这些方法要么麻烦，要么感觉不够公平。其实，一个简单的网页工具就能帮你轻松、有趣又公平地解决这些问题。
-        </p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">浮窗倒计时有什么特别之处？</h2>
+  <p class="mb-4">简单说，它能把倒计时画面变成一个可以悬浮的小视频窗口。哪怕你正在刷微博、回微信、看文章，倒计时也会一直显示在屏幕角落，时间一目了然。而且它是精确到秒的，每一秒都在跳动，特别适合需要卡点的场景。</p>
+  <p class="mb-4">这个功能在手机上尤其实用——iPhone用户用Safari浏览器打开，点击视频的“画中画”按钮，倒计时就能缩小拖到任意位置；安卓手机如果浏览器支持画中画，也能实现同样的效果。电脑上同样可以，把浏览器窗口放在一边，倒计时浮窗永远可见。</p>
 
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-            <p class="text-gray-800">本文将为你介绍一个功能全面的在线抽签工具，它能做什么，以及如何用最简单的方式使用它。</p>
-        </div>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">这款倒计时工具的几个亮点</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">精确到秒：</span>倒计时实时更新，剩余秒数清清楚楚，最后10秒甚至能帮你读秒。</li>
+    <li><span class="font-medium">浮窗显示：</span>利用浏览器的视频画中画功能，倒计时画面可自由缩放、随意拖放，不影响其他操作。</li>
+    <li><span class="font-medium">自动记忆：</span>设置一次目标时间，下次打开页面会自动加载，不用重复输入，省事。</li>
+    <li><span class="font-medium">双平台通用：</span>手机电脑都能用，iOS的Safari体验最流畅，安卓部分浏览器也支持。</li>
+    <li><span class="font-medium">界面极简：</span>黑底白字，目标时间显示在上方，巨大秒数在中间，一眼就能看清。</li>
+  </ul>
 
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">一、这个工具能帮你做什么？</h2>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            简单来说，它是一个“电子抽签箱”。你可以把一堆名字放进去，然后让它随机滚动，最后停在一个名字上。听起来简单，但它有一些贴心的小功能，让不同场景下的使用都很方便。
-        </p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">怎么用它？三步搞定</h2>
+  <p class="mb-3"><span class="font-medium">第一步：</span>在页面中找到日期时间选择框，选好目标日期和具体时间（精确到分钟就行）。</p>
+  <p class="mb-3"><span class="font-medium">第二步：</span>点击“开始”按钮，下方就会立刻出现一个黑色背景的视频画面，上面显示你设定的目标时刻，中间是不断减少的秒数。</p>
+  <p class="mb-4"><span class="font-medium">第三步：</span>如果你想让倒计时悬浮起来，点击视频播放器右下角的画中画图标（通常是一个小方框带向下箭头），画面就会自动缩小成一个浮动窗口，你可以把它拖到屏幕任何位置。</p>
+  <p class="mb-4 text-sm bg-gray-50 p-3 rounded-lg">小提示：在iPhone上记得用Safari浏览器打开，画中画功能最稳定；安卓用户可以试试Chrome或Edge。</p>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景一：公司年会抽奖</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把所有员工的名字导入进去。点击开始，大屏幕上名字飞快滚动，营造紧张气氛。点击停止，幸运儿的名字被放大展示，系统还会自动撒花庆祝，并且能把结果保存成图片，方便留念或公布。
-        </p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">哪些场景适合用它？</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">电商抢购/秒杀：</span>双十一、限量发售、优惠券开抢，最后几秒做好准备，付款快人一步。</li>
+    <li><span class="font-medium">考试倒计时：</span>高考、考研、职业资格考试，每天看着秒数减少，提醒自己珍惜时间。</li>
+    <li><span class="font-medium">纪念日/生日：</span>恋爱纪念日、父母生日、结婚纪念日，提前倒数，让期待感慢慢积累。</li>
+    <li><span class="font-medium">线上活动提醒：</span>直播开播、线上讲座、网课开始，设置倒计时避免错过。</li>
+    <li><span class="font-medium">运动/健身间歇：</span>高强度间歇训练需要精确控制休息时间，把倒计时浮窗放在屏幕一角，边看视频边跟练。</li>
+  </ul>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景二：老师课堂提问</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把全班学生的名单录入。开启“不重复抽取”选项，这样被抽到过的同学下次就不会再出现，确保每个人都有机会被点到。旁边的历史记录清楚地显示了哪些同学已经被提问过。
-        </p>
-
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景三：家庭决定谁洗碗</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            家里成员名字输入进去。你甚至可以为经常偷懒的家人设置“权重”，让他的名字更容易被抽中（虽然这不太“公平”，但很“家庭”）。然后用手机打开，全家人围在一起点击屏幕，让命运决定今晚的洗碗工。
-        </p>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">二、核心功能，一看就会</h2>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">1. 导入名单：支持两种傻瓜式操作</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">你需要先把参与者的名字告诉工具。</p>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>拖拽文件</strong>：如果你有一个写满名字的文本文件（每行一个名字），直接把它拖到网页指定区域就行。</li>
-                <li><strong>直接输入</strong>：也可以在网页的文本框里，一行一个，把名字打进去或粘贴进去。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">2. 核心操作：开始与停止</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">名单准备好后，点击大大的“开始”按钮，中间显示区域的名字就会开始高速随机滚动，伴有紧张的提示音。当你觉得时机到了，点击“停止”，结果即刻揭晓。</p>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">3. 实用设置：让抽签更符合你的需要</h4>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>不重复抽取</strong>：勾选后，被抽中的人会自动从待抽名单中移除，适合需要覆盖所有人的情况。</li>
-                <li><strong>更换颜色</strong>：可以自由调整背景和文字的颜色，匹配你的活动主题或公司Logo色。</li>
-                <li><strong>全屏模式</strong>：点击切换全屏，让抽签过程充满整个屏幕，视觉冲击力更强，特别适合现场活动。</li>
-                <li><strong>查看历史</strong>：所有被抽中过的名字都会列在旁边，一目了然，随时可以清空重新开始。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">4. 保存与分享</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">每次抽中结果，都可以一键保存为一张简洁美观的图片，方便你发到群里公示或者保存记录。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">三、常见问题解答</h2>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：这个工具需要下载或安装吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：完全不需要。它是一个网页工具，在手机或电脑的浏览器里打开就能用，用完关掉即可，非常轻便。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：名字滚动是真随机吗？会不会有黑幕？</h4>
-            <p class="text-gray-700 leading-relaxed">答：它的随机算法是均匀的，确保每个名字在每次滚动中被选中的机会均等。你甚至可以设置“权重”来人为影响概率，但这需要你手动设置。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：在手机上用起来方便吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：方便。网页针对手机屏幕做了专门优化，按钮大小合适，操作区域清晰，和电脑上使用体验一样好。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">总结</h2>
-        <p class="text-gray-700 mb-6 leading-relaxed">
-            无论是需要一点仪式感的小型活动，还是追求高效公平的日常决策，一个设计良好的在线抽签工具都能派上用场。它把传统的抽签过程数字化，变得更可视化、可记录、可定制，而且对使用者没有任何技术门槛。下次当你需要公平地选择一个“幸运儿”时，不妨试试这类工具，或许能让过程变得更有趣。
-        </p>
-    </article>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">关于倒计时，你可能想问这些</h2>
+  <div class="mb-4">
+    <p class="font-medium">问：倒计时最长能设置多久？</p>
+    <p class="mb-3">理论上可以设置到未来很多年，只要目标时间还没到，它就会一直倒计时。不过秒数太大时，显示的是总剩余秒数，比如还有多少万秒，适合长期倒计时。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：手机锁屏后倒计时还会继续吗？</p>
+    <p class="mb-3">如果用的是画中画浮窗，锁屏后浮窗会消失，但再次解锁打开浏览器，倒计时依然在（只要页面没被系统杀掉）。如果只是普通在浏览器里看，锁屏就会暂停。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：为什么我的浏览器没有画中画按钮？</p>
+    <p class="mb-3">部分安卓浏览器或旧版本可能不支持画中画，可以尝试升级浏览器或换用Chrome、Edge。iPhone只要系统在iOS14以上，Safari都自带画中画。</p>
+  </div>
+  
+  <p class="text-base md:text-lg mt-8 pt-4 border-t border-gray-200 text-gray-600">倒计时不只是数字的变化，更是一种心理提醒——让我们对即将到来的时刻多一份准备，也多一份期待。下次有重要事件，不妨试试这个浮窗倒计时，让它帮你把时间牢牢“抓”在眼前。</p>
+  
+  <div class="text-xs text-gray-400 mt-6 text-center">© 浮窗倒计时 · 精确到秒 · 支持iOS/Android浮窗</div>
 </div>
-`;export{t as default};
+`;export{s as default};

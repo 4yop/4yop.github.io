@@ -1,49 +1,83 @@
-const s=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">亲戚称呼太难记？教你用工具快速理清辈分与称呼</h1>
-
-  <p class="mb-6">春节团圆，家族聚会，或是翻看厚重的家谱时，你有没有遇到过这样的尴尬：面对一位笑容满面的长辈，却突然卡壳，不知道该怎么称呼？妈妈的舅舅，爸爸的姑姑，这些绕来绕去的关系，是不是一想就头疼？</p>
-
-  <p class="mb-8">别担心，这不是你一个人的烦恼。中国传统的亲戚关系网庞大又精密，称呼更是讲究。好在，现在有了一种非常方便的工具——<strong>亲戚关系计算器</strong>，它能像做数学题一样，帮你快速算出准确的称呼。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、亲戚关系为什么容易搞混？</h2>
-  <p class="mb-4">我们觉得亲戚称呼复杂，通常是因为两个原因：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>关系链条长</strong>：“我爸爸的妈妈的妹妹”，光是念出来就要想一想，更别说快速反应出该叫“姨奶奶”了。</li>
-    <li><strong>称呼分男女和辈分</strong>：同样是父母的兄弟，父亲那边的叫“伯伯”、“叔叔”，母亲那边的就叫“舅舅”。同样是兄弟姐妹的子女，你称呼他们为“侄子/侄女”还是“外甥/外甥女”，也取决于你自己的性别。</li>
-  </ul>
-  <p class="mb-6">这些复杂的规则背后，其实是传统亲族文化的一套精密逻辑。不过，对于日常生活的我们来说，能快速找到正确答案就足够了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个“计算器”是怎么用的？</h2>
-  <p class="mb-4">想象一下，你面前有一个简单的面板，上面有十个最核心的家庭成员按钮：<strong>父、母、夫、妻、兄、弟、姐、妹、子、女</strong>。</p>
-  <p class="mb-4">想知道“爸爸的哥哥”怎么称呼？你只需要依次点击“父”和“兄”这两个按钮。计算器会把你点的词连成“爸爸的哥哥”这样一个关系式，然后瞬间告诉你结果：<strong>伯伯</strong>。</p>
-  <p class="mb-6">它就像在帮你“拼写”一段亲戚关系。无论是“妈妈妹妹的女儿”，还是“爸爸姐姐的丈夫”，你都可以通过组合这些基本按钮来描述。输入完毕后，点一下“计算”，答案立刻就出来了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、两个贴心功能，让结果更精准</h2>
-  <p class="mb-4">为了让结果完全符合你的实际情况，这个工具还有两个很贴心的选项：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>选择你的性别</strong>：这一点非常重要！因为同样是你“姐姐的儿子”，如果你是男性，你应该叫他“外甥”；如果你是女性，则应该叫他“侄子”。选择性别后，计算器才能给出最准确的称呼。</li>
-    <li><strong>“互称”功能</strong>：这个功能特别有意思。我们不仅需要知道怎么称呼别人，有时也需要知道别人会怎么称呼我们。比如，你知道了你该叫对方“表姑”，那么对方应该叫你什么呢？打开“互称”开关再计算一下，你就能看到答案了。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">四、这个工具靠谱吗？</h2>
-  <p class="mb-4">你可能会好奇，它背后的依据是什么？其实，它的计算规则是基于一套被广泛认可的<strong>中国亲戚关系逻辑库</strong>。这套逻辑严格遵循了传统的“九族五服”亲缘体系和现代常用称呼习惯。</p>
-  <p class="mb-6">无论是直系血亲、旁系血亲还是姻亲，大部分常见的、甚至一些比较疏远的亲戚关系，它都能准确计算。如果遇到极其生僻或关系太远的情况，它也会老实告诉你“关系太远，无法计算”。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">五、除了计算，它还能帮你什么？</h2>
-  <p class="mb-4">对于普通人来说，这个工具不止是一个“称呼查询器”，它还有一些意想不到的用处：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>化解社交尴尬</strong>：在见面前提前“预习”一下复杂关系，做到心中有数，称呼时更得体。</li>
-    <li><strong>辅助理解家庭故事</strong>：看年代剧或家族历史时，用它来理清人物关系，故事会变得更清晰有趣。</li>
-    <li><strong>满足好奇心</strong>：单纯地体验一下传统亲戚网络的庞大和巧妙，也是一种文化知识的了解。</li>
-  </ul>
-
-  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-800">小提示：让家庭沟通更顺畅</h3>
-    <p class="mb-3">一个准确的称呼，是尊重和亲近的开始。尤其是在一些正式的家族场合，正确的辈分称呼显得尤为重要。下次再遇到吃不准的亲戚关系时，不妨先用工具查一查。</p>
-    <p class="mb-0">当然，工具是辅助。最重要的还是那份愿意了解、维系亲情的心意。当你笑着喊出正确的称呼时，长辈脸上的笑容就是最好的回报。</p>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">文字转换工具：简体、繁体、火星文一键互转，沟通从此更轻松</h1>
+  
+  <div class="mb-8">
+    <p class="mb-4 text-base leading-relaxed">你是不是偶尔会遇到这样的情况？看到一篇繁体字文章读起来有点费劲，或者朋友发来的火星文消息完全看不懂。别担心，这并不是什么难题，现在有了文字转换工具，这些烦恼都可以轻松解决。</p>
+    <p class="mb-4 text-base leading-relaxed">这篇文章就来聊聊文字转换的那些事，让你完全不需要懂任何技术，也能自由自在地在不同文字之间切换。</p>
   </div>
 
-  <p class="mt-10 text-lg">希望这个小小的工具，能帮你扫清亲戚关系中的迷雾，让你在每一次家庭相聚时，都能更轻松、更亲切。</p>
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么我们需要转换文字？</h2>
+    <p class="mb-4 text-base leading-relaxed">生活中，我们接触到的文字形式多种多样。比如：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
+      <li><span class="font-medium">阅读古籍或港澳台资讯：</span>很多传统文化资料、电影字幕或新闻网站使用繁体字，转换后阅读更顺畅。</li>
+      <li><span class="font-medium">与不同地区朋友交流：</span>大陆用简体字，台湾、香港等地常用繁体字，互相转换一下，沟通无障碍。</li>
+      <li><span class="font-medium">理解网络流行语：</span>火星文是年轻人喜欢的趣味表达，转换一下就能明白其中的意思。</li>
+      <li><span class="font-medium">学习与研究：</span>对比简体与繁体的差异，或者收集网络用语素材，转换工具非常实用。</li>
+    </ul>
+    <p class="text-base leading-relaxed">总之，文字转换就像一座桥梁，连接不同的书写习惯，让信息传递更简单。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">一分钟认识三种文字</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">简体字</h3>
+        <p class="text-sm leading-relaxed">这是我们日常最常用的写法，笔画简单，书写快速。中国大陆的标准用字，比如“学习”、“电脑”。</p>
+      </div>
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">繁体字</h3>
+        <p class="text-sm leading-relaxed">保留了更多传统笔画，看起来更复杂一些。在台湾、香港、澳门以及海外华人社区广泛使用，比如“學習”、“電腦”。</p>
+      </div>
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">火星文</h3>
+        <p class="text-sm leading-relaxed">一种有趣的网络文字，通过符号、谐音或变形来表达，充满个性。比如“伱好”变成“沵恏”，常在社交聊天中出现。</p>
+      </div>
+    </div>
+    <p class="text-base leading-relaxed">这三种文字各有特点，转换工具就能在它们之间自由切换，就像翻译不同方言一样方便。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">文字转换工具能做什么？</h2>
+    <p class="mb-4 text-base leading-relaxed">一个简单的在线工具，通常提供以下转换方式：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
+      <li>简体字转成繁体字</li>
+      <li>繁体字转回简体字</li>
+      <li>简体字变成火星文</li>
+      <li>火星文还原为简体字</li>
+      <li>繁体字与火星文互相转换</li>
+    </ul>
+    <p class="mb-4 text-base leading-relaxed">使用起来非常简单：选择你要的转换方式，把文字粘贴进去，点一下按钮，结果立刻就出来了。你还可以把转换好的文字复制下来，用到任何需要的地方。</p>
+    <p class="text-base leading-relaxed">整个过程完全免费，而且不需要安装任何软件，在手机或电脑上打开网页就能用。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">转换结果准确吗？</h3>
+        <p class="text-base leading-relaxed">一般来说，基于标准的字库对应关系，转换准确度很高。但对于一些多音字或特殊用法，可能需要稍作核对，就像我们平时查字典一样。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">一次能转换多少文字？</h3>
+        <p class="text-base leading-relaxed">大部分工具都没有严格限制，你可以粘贴整篇文章、长段落进行转换。如果文字量特别大，分几次操作会更顺畅。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">转换后的文字可以用在哪里？</h3>
+        <p class="text-base leading-relaxed">任何需要的地方！比如发社交媒体、写文档、做研究、或者只是好奇看看不同的写法。转换后的文字和普通文字一样，可以随意复制、粘贴、编辑。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">在手机上能用吗？</h3>
+        <p class="text-base leading-relaxed">当然可以。好的转换工具会自动适应手机屏幕，操作和电脑上一样简单，无论你是在地铁上还是在家里，随时都能用。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
+    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
+    <p class="mb-3 text-base leading-relaxed">文字转换工具是一个贴心的小帮手，它让简体字、繁体字和火星文之间的切换变得像开关灯一样简单。无论你是为了学习、工作还是娱乐，它都能帮你省去很多麻烦。</p>
+    <p class="text-base leading-relaxed">下次再遇到看不懂的文字，不妨试试转换一下，也许会有意想不到的发现。沟通的本质是理解，而工具的存在，就是让这份理解更容易达成。</p>
+  </div>
 </div>
-`;export{s as default};
+`;export{e as default};

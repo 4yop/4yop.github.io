@@ -1,114 +1,82 @@
-const s=`
-<div class="text-gray-800 bg-white">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-8 text-center">SVG和图片互转工具：免费在线转换，简单三步搞定</h1>
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">图片太大传不上去？别急，尺寸调整其实很简单</h1>
 
-  <!-- 引言/痛点 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
-    <p class="text-lg">你是不是也遇到过这些情况？</p>
-    <ul class="mt-4 space-y-2 pl-5 list-disc">
-      <li>设计师发来一个<span class="font-medium">SVG格式的图标</span>，但你只想把它当成普通图片插入到PPT或文章里。</li>
-      <li>手头有一张很喜欢的JPG或PNG图片，想把它做成可以<span class="font-medium">随意放大缩小都不模糊</span>的矢量图。</li>
-      <li>下载的素材背景是白色的，放到深色网页上特别突兀，想把它<span class="font-medium">背景变透明</span>或者换个颜色。</li>
-    </ul>
-    <p class="mt-4">别再为格式问题头疼了。今天，我们就来介绍一个完全在浏览器里运行的免费小工具，像变魔术一样，轻松解决SVG和常见图片之间的转换难题。</p>
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed">
+    <p>你是不是也遇到过这种尴尬：精心拍好的照片，想传到网站做头像，或者发给朋友，结果系统弹出一行冷冰冰的字——“图片过大，无法上传”。又或者，传是传上去了，但在手机上看模糊一片，或者把整个网页的排版都挤乱了。</p>
   </div>
 
-  <!-- 第一部分：通俗解释什么是SVG和图片 -->
-  <div class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">图纸和照片：一图看懂两者的区别</h2>
-    <p class="mb-4">你可以这样理解：</p>
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-      <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-3 text-green-600">SVG (矢量图) - 像一份“设计图纸”</h3>
-        <ul class="space-y-2">
-          <li><span class="font-medium">本质：</span>一份记录了“怎么画”的指令清单（比如：在中心画个红色的圆）。</li>
-          <li><span class="font-medium">特点：</span>无限放大都不会出现马赛克，永远清晰。文件通常很小。</li>
-          <li><span class="font-medium">常见用途：</span>网站图标(Logo)、图表、简单的插画。</li>
-          <li><span class="font-medium">缺点：</span>不适合表现复杂的、像照片一样的真实场景。</li>
-        </ul>
-      </div>
-      <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium mb-3 text-blue-600">PNG/JPG (位图) - 像一张“拍好的照片”</h3>
-        <ul class="space-y-2">
-          <li><span class="font-medium">本质：</span>由成千上万个小色块（像素）拼成的完整画面。</li>
-          <li><span class="font-medium">特点：</span>能展现丰富的色彩和细节，比如你的自拍照。</li>
-          <li><span class="font-medium">常见用途：</span>摄影作品、网页背景图、生活照片。</li>
-          <li><span class="font-medium">缺点：</span>放大会变模糊，高质量图片文件可能很大。</li>
-        </ul>
-      </div>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+    <p class="text-blue-800"><strong>先别怪你的手机或电脑</strong>，这其实是一个很常见的小问题。简单来说，就是图片的“身材”（尺寸）不太适合它要去的地方。好消息是，给图片“调整身材”这件事，现在人人都能做，而且完全免费、超级简单。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">为什么我们需要给图片“变个身”？</h2>
+
+  <p class="mb-4">你可以把不同的网站和App想象成不同尺寸的“相框”。</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+    <li><strong>微信朋友圈</strong>的“相框”有自己的最佳尺寸，图片太大，它就会自动帮你压缩，结果可能就是变模糊。</li>
+    <li><strong>电商平台</strong>上传商品图，要求图片既清晰又不能太大，否则影响页面打开速度，顾客可能就没耐心等了。</li>
+    <li><strong>报名、签证等网站</strong>的系统往往比较“古板”，对图片大小和尺寸有严格的数字要求，差一点都不行。</li>
+    <li>自己做个简单的<strong>PPT或者文档</strong>，插入一张巨大的照片，整个文件立刻变得笨重不堪，发给同事都麻烦。</li>
+  </ul>
+  <p class="mb-6">所以，学会自己调整图片尺寸，就像学会给衣服修改裤脚一样，是个非常实用的生活小技能。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">图片调整，到底在调什么？</h2>
+
+  <p class="mb-6">别被“像素”、“分辨率”这些词吓到。你可以把它理解成两种主要操作：</p>
+
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h3 class="font-medium text-gray-900 text-lg mb-2">1. 改大小（缩放）</h3>
+      <p class="text-gray-700">就像把一张大海报按比例缩小成明信片。这是最常用的功能，目的是减少图片占用的空间，让它更容易上传和传输。</p>
     </div>
-    <p>所以，<span class="font-medium">“转换”其实就是把“图纸”变成“照片”，或者把“照片”模拟成“图纸”的过程。</span>各有各的用处，关键在于你需要它做什么。</p>
-  </div>
-
-  <!-- 第二部分：工具能做什么（好处） -->
-  <div class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">这个转换工具能为你解决的5个具体问题</h2>
-    <div class="space-y-6">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">1</div>
-        <div>
-          <h3 class="text-xl font-medium mb-2">格式兼容，随处使用</h3>
-          <p>无论你是想把SVG变成PNG、JPG还是WebP格式，以便在<span class="font-medium">任何软件、任何平台</span>上使用，这个工具都能一键搞定，告别“格式不支持”的提示。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">2</div>
-        <div>
-          <h3 class="text-xl font-medium mb-2">尺寸自由，随心所欲</h3>
-          <p>需要把一个小图标做成海报那么大？或者把一张大图缩小成头像？在转换时，你可以<span class="font-medium">自由设定图片的宽度和高度</span>，或者按比例缩放，输出完美符合你要求的尺寸。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">3</div>
-        <div>
-          <h3 class="text-xl font-medium mb-2">背景魔法，去留由你</h3>
-          <p>讨厌图标后面那个方方正正的白色背景吗？在“SVG转图片”时，你可以选择<span class="font-medium">生成背景透明的PNG图片</span>，让它完美融入任何颜色的背景。或者，你也可以把它换成你喜欢的任意颜色。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">4</div>
-        <div>
-          <h3 class="text-xl font-medium mb-2">保护隐私，安全省心</h3>
-          <p>所有操作都在<span class="font-medium">你自己的电脑浏览器中完成</span>，图片数据不会上传到任何服务器。这意味着你的设计素材、私人图片绝对安全，转换完即关闭页面，不留痕迹。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4 font-bold">5</div>
-        <div>
-          <h3 class="text-xl font-medium mb-2">简单三步，无需安装</h3>
-          <p>不需要下载软件，不需要注册账号。打开网页，<span class="font-medium">选择方向、上传文件（或粘贴代码）、点击转换</span>，三个步骤就能完成，对电脑新手也极其友好。</p>
-        </div>
-      </div>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h3 class="font-medium text-gray-900 text-lg mb-2">2. 改尺寸（裁切/固定）</h3>
+      <p class="text-gray-700">就像把一张长方形照片，裁剪成正方形，或者硬性规定它必须是800宽、600高。这通常是为了满足一些平台严格的格式要求。</p>
     </div>
   </div>
 
-  <!-- 第三部分：应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 border-b">这些场景下，你可能会需要它</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-6 rounded-xl">
-        <h3 class="text-xl font-medium mb-3 flex items-center">
-          <span class="inline-block w-3 h-3 bg-purple-500 rounded-full mr-2"></span> 场景一：为自媒体文章或PPT配图
-        </h3>
-        <p class="mb-3">你在网上找到一个设计感很强的SVG矢量图标，想用在你的公众号文章或工作汇报PPT里。</p>
-        <p class="text-gray-600"><span class="font-medium">怎么办：</span>使用工具的 <strong>“SVG → 图片”</strong> 功能，把它转换成PNG格式，调整到合适的大小，甚至可以去掉背景，让它和你的PPT模板更搭。这样一来，在任何电脑上打开都能正常显示。</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-xl">
-        <h3 class="text-xl font-medium mb-3 flex items-center">
-          <span class="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span> 场景二：获取简易的矢量素材
-        </h3>
-        <p class="mb-3">你有一张公司的Logo图片（JPG格式），现在需要把它放到一个新设计的宣传册上，希望放大后依然清晰。</p>
-        <p class="text-gray-600"><span class="font-medium">怎么办：</span>使用工具的 <strong>“图片 → SVG”</strong> 功能，将Logo图片转换为SVG格式。虽然对于复杂图片效果有限，但对于颜色分明、结构简单的Logo，能得到一个可以<span class="font-medium">自由缩放不失真</span>的矢量版本，方便后续设计使用。</p>
-      </div>
-    </div>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">一个好用的工具应该让你“怎么想就怎么调”</h2>
+
+  <p class="mb-4">对于不懂技术的人来说，最好的工具就是能听懂你的“人话”。比如：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+    <li>你心里想：“<strong>这张图我想缩小一半</strong>。” 那就可以直接选择“按百分比调整”，输入50%。</li>
+    <li>网站要求：“<strong>头像必须是200x200像素</strong>。” 你就可以选择“固定尺寸”，宽和高都输入200。</li>
+    <li>你只关心：“<strong>把宽度调到800，高度随便，别变形就行</strong>。” 那就用“固定宽度”模式，输入800，高度会自动按比例算好。</li>
+    <li>想一次处理<strong>好几张旅游照片</strong>？一个现代的工具肯定支持你一次性全部选中，统一调整，然后一键打包下载，省时省力。</li>
+  </ul>
+
+  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-8">
+    <h3 class="font-medium text-yellow-800 text-lg mb-2">一个小提示：关于清晰度</h3>
+    <p class="text-yellow-800">把图片调小，通常不会影响你在手机或电脑上看的清晰度。但如果你把一张很小的图片强行放大，就肯定会变模糊。所以，调整时，<strong>“由大变小”很安全，“由小变大”要谨慎</strong>。</p>
   </div>
 
-  <!-- 第四部分：总结与引导 -->
-  <div class="text-center py-8 px-4 border-t mt-12">
-    <h2 class="text-2xl font-bold mb-4">告别格式困扰，让创意更自由</h2>
-    <p class="text-lg mb-6 max-w-2xl mx-auto">无论是工作还是生活中的简单设计需求，在数字格式之间来回切换都不应该成为阻碍你的门槛。一个简单、免费、安全的在线工具，就能为你打开更多可能性。</p>
-    <p class="font-medium text-gray-700">如果你正被SVG或图片格式问题所困扰，不妨去试试这个“图纸与照片”的转换小助手吧。</p>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">谁最需要这个技能？可能就有你！</h2>
+
+  <div class="mb-6">
+    <p class="font-medium text-gray-900 mb-2">▸ 开网店的朋友：</p>
+    <p class="text-gray-700 pl-4 mb-4">主图、详情页图都有尺寸规范。图片调整得当，店铺页面加载快，看起来专业，顾客体验更好。</p>
+
+    <p class="font-medium text-gray-900 mb-2">▸ 经常需要交电子材料的上班族或学生：</p>
+    <p class="text-gray-700 pl-4 mb-4">无论是求职的简历照，还是各种申请表的附件，再也不用担心“图片格式不符合要求”被退回来。</p>
+
+    <p class="font-medium text-gray-900 mb-2">▸ 喜欢在社交媒体分享生活的你：</p>
+    <p class="text-gray-700 pl-4">把照片调整到合适的大小再发布，画质更可控，也不会因为原图太大消耗好友的流量。</p>
   </div>
-</div>
-`;export{s as default};
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">行动起来，其实就几步</h2>
+
+  <p class="mb-6">整个过程，比你想象得更流畅：</p>
+  <ol class="list-decimal pl-6 mb-8 space-y-3 text-gray-700">
+    <li><strong>找到工具</strong>：找到一个在浏览器里就能用的在线图片尺寸调整器。</li>
+    <li><strong>拖入照片</strong>：直接把电脑里的图片拖进网页，或者点击上传。可以一张，也可以多张。</li>
+    <li><strong>说出你的要求</strong>：是用百分比缩小？还是指定一个精确的宽度？按你的需求选择。</li>
+    <li><strong>点击处理并下载</strong>：稍等片刻，就能预览调整后的效果，满意的话就下载到电脑或手机里。</li>
+  </ol>
+
+  <div class="text-center p-8 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-300 mt-12">
+    <p class="text-xl font-medium text-gray-900 mb-3">别再让“图片尺寸不对”这种小麻烦影响你的好心情和正事了。</p>
+    <p class="text-gray-700">现在有很多简单易用的在线工具，能把这件事变得像拖拽文件一样轻松。花一分钟了解一下，下次遇到问题，你就能从容应对，快速搞定。</p>
+  </div>
+</article>
+`;export{t as default};
