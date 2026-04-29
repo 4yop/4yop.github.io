@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20",
+  "updatedAt": "2026-04-29",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -20,7 +20,10 @@
           "gemma-3-27b-it",
           "gemma-3-12b-it",
           "gemma-3-4b-it",
-          "gemma-3-1b-it"
+          "gemma-3-1b-it",
+          "gemma-4-31b-it",
+          "gemma-4-26b-a4b-it",
+          "gemma-4-9b-it"
         ]
       }
     },
@@ -234,8 +237,15 @@
           "openai/gpt-oss-120b:free",
           "openai/gpt-oss-20b:free",
           "nvidia/nemotron-3-super-120b-a12b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "google/gemma-4-31b-it:free",
+          "google/gemma-4-26b-a4b-it:free",
           "google/gemma-3-27b-it:free",
+          "tencent/hy3-preview:free",
+          "inclusionai/ling-2.6-1t:free",
+          "poolside/laguna-xs.2:free",
+          "poolside/laguna-m.1:free",
+          "baidu/qianfan-ocr-fast:free",
           "anthropic/claude-3.5-sonnet:free"
         ]
       }
@@ -258,7 +268,7 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V3.2 / DeepSeek-V4 及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ DeepSeek V4 预计2026年4月下旬发布）",
+      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V4 系列及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ DeepSeek V4 已于2026年4月下旬正式发布，支持1M上下文，优惠期至2026/05/31）",
       "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
@@ -267,6 +277,8 @@
         "models": [
           "deepseek-chat",
           "deepseek-reasoner",
+          "deepseek-v4-flash",
+          "deepseek-v4-pro",
           "deepseek-v3",
           "deepseek-r1"
         ]
@@ -612,6 +624,7 @@
         "document_url": "https://ling.tbox.cn/doc",
         "base_url": "https://openapi.aliyuncs.com/api/v3",
         "models": [
+          "ling-2.6-1t",
           "ling-1t",
           "ring-1t",
           "ming-m2"
