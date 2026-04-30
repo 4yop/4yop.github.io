@@ -17,6 +17,7 @@ const s=`
     <li><span class="font-medium">直观的指针时钟</span>：就像你墙上的挂钟一样，通过时针、分针、秒针的位置，一眼就能大致判断时间。</li>
     <li><span class="font-medium">精准的数字时间</span>：旁边会同步显示精确到分钟的数字时间，确保无误。</li>
     <li><span class="font-medium">自由探索时区</span>：你可以用底部的滑块，从UTC-12（最西边）滑到UTC+12（最东边），亲眼看看时间如何随着“经度”变化。</li>
+    <li><span class="font-medium">全屏显示模式</span>：点击全屏按钮即可将时钟切换至全屏模式，字体放大、背景优化，非常适合演讲汇报、会议展示、课堂演示等场合使用。按 ESC 键可随时退出全屏。</li>
   </ul>
 
   <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">时区小知识：世界是如何统一时间的？</h2>
@@ -40,7 +41,11 @@ const s=`
     </div>
     <div class="bg-gray-50 p-5 rounded-lg">
       <h3 class="font-bold text-lg mb-2 text-blue-700">场景四：学习地理知识</h3>
-      <p>对孩子来说，滑动滑块，看着时钟指针飞快转动，是理解“时差”和“地球自转”最生动的方式。</p>
+      <p>对孩子来说，滑动滑块，看着时钟指针飞快转动，是理解"时差"和"地球自转"最生动的方式。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景五：演讲与会议展示</h3>
+      <p>在进行工作汇报、产品演示或公开演讲时，将时钟全屏显示在屏幕上，让观众能够清晰地看到时间进度，帮助控制节奏，提升专业度。</p>
     </div>
   </div>
 
@@ -49,6 +54,7 @@ const s=`
     <p class="mb-4">无论你是频繁出差的商务人士、有亲友在海外的普通人，还是对世界充满好奇的探索者，一个清晰、易用的世界时钟都是你的好帮手。</p>
     <p>它把抽象的时差概念，变成了看得见的指针转动和数字跳动。希望这个工具能让你在连接世界时，多一份从容，少一点计算的烦恼。</p>
     <p class="mt-4 text-gray-700"><strong>小提示：</strong> 工具会根据你设备的时间自动初始化，显示你所在的本地时间。所有操作都在你的设备上完成，无需担心隐私问题。</p>
+    <p class="mt-3 text-gray-700">特别值得一提的是，<span class="font-medium">全屏显示功能</span>让这个工具不仅适合个人使用，也能在团队协作和公开场合发挥重要作用。</p>
   </div>
 
   <p class="text-center text-gray-500 text-sm mt-12 pt-6 border-t">最后更新：2023年10月 | 工具免费使用，无需下载</p>
