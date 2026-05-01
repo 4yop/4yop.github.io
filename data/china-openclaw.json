@@ -1006,5 +1006,68 @@
     "features": "企业级OpenClaw云端部署方案，2026年企业级OpenClaw云服务商排名TOP1；预置优化OpenClaw镜像与环境，分钟级上线开箱即用；支持GPU资源与高性能算力支撑；兼容主流开源模型（Qwen/DeepSeek等）；帮助用户以更低成本更高效率使用算力资源；连续四年入选中国边缘计算企业20强",
     "website": "https://docs.ljyun.cn/",
     "id": 152
+  },
+  {
+    "id": 153,
+    "name": "RedClaw",
+    "developer": "百度",
+    "releaseTime": "2026.03.28",
+    "deployment": "手机端应用，全球首款手机端龙虾应用",
+    "features": "百度推出的全球首款手机端龙虾AI智能体应用；3月28日至29日在北京朝阳完成线下体验首秀；围绕工作、娱乐、赚钱、省钱四大场景设置互动体验；展示AI智能体在移动端的创新应用与落地场景；配套「抓虾吧」贴吧社区，AI自动发帖、评论、互动",
+    "website": "https://www.chinaz.com/"
+  },
+  {
+    "id": 154,
+    "name": "GenFlow4.0",
+    "developer": "百度（文库与网盘联合）",
+    "releaseTime": "2026.04.27",
+    "deployment": "百度网盘内一键部署，零门槛不占本地内存，支持PC端和APP端",
+    "features": "百度文库与网盘联合发布的通用智能体；深度兼容OpenClaw框架，用户可在网盘内一键部署龙虾；Office Agent支持一句自然语言指令并行调用PPT、Excel、Word三个子智能体；PPT Agent支持专业和创意两种生成模式；Excel Agent率先实现自然语言操作复杂表格处理；Word Agent能快速生成万字学术长文并自动抓取行业数据；月活用户突破1亿，月任务交付量达2亿次；百度网盘累计服务超10亿用户，平台已聚集超24万开发者、6000余家生态企业",
+    "website": "https://pan.baidu.com/"
+  },
+  {
+    "id": 155,
+    "name": "Auto Claw",
+    "developer": "斑马智行",
+    "releaseTime": "2026.04",
+    "deployment": "车载系统集成，基于「一脑双引擎」架构",
+    "features": "斑马智行发布的车载龙虾方案；以「一脑双引擎」开启汽车智能的奇点时刻；同步发布车载Agent短剧产品「元神小剧」；实现龙虾上车，将AI Agent能力带入智能座舱场景",
+    "website": "https://www.banma.com/"
+  },
+  {
+    "id": 156,
+    "name": "AquaClaw",
+    "developer": "中科创达",
+    "releaseTime": "2026.04",
+    "deployment": "车载系统集成，基于NVIDIA NemoClaw参考软件栈，即插即用",
+    "features": "中科创达基于NVIDIA NemoClaw参考软件栈打造的车载AI智能体；采用即插即用标准化方案；滴水AIOS 2.1重构智能汽车底层逻辑；形成「本土定制+全球技术」双轮驱动；加速车载AI智能体普及",
+    "website": "https://www.thundersoft.com/"
+  },
+  {
+    "id": 157,
+    "name": "KaKaClaw",
+    "developer": "地平线",
+    "releaseTime": "2026.04",
+    "deployment": "车载系统集成，开放Agent框架",
+    "features": "地平线余凯发布的开放车载Agent框架；后端可接入各种大模型；让智能座舱具备AI Agent执行能力；亮相2026北京国际汽车展览会",
+    "website": "https://www.horizon.ai/"
+  },
+  {
+    "id": 158,
+    "name": "兽牙Claw",
+    "developer": "云知声",
+    "releaseTime": "2026.04",
+    "deployment": "企业级私有化部署",
+    "features": "云知声发布的企业级AI Agent产品；定位安全可控，让AI高效「干实事」；亮相2026数字中国建设峰会；专注企业级场景的智能体落地",
+    "website": "https://www.unisound.com/"
+  },
+  {
+    "id": 159,
+    "name": "Joy-logistics（京东物流国际商家工作台）",
+    "developer": "京东物流",
+    "releaseTime": "2026.04.24",
+    "deployment": "云端SaaS平台，Claw Hub搜索Joy-logistics安装",
+    "features": "京东物流融合OpenClaw框架的全新国际商家工作台；在Claw Hub搜索Joy-logistics安装即可拥有「AI数智化运营官」；支持查询包裹轨迹及运营关键数据；全链路物流动态及运营质量尽在掌握；亮相第九届跨境电商物流趋势峰会；京东物流全球仓网已覆盖4大洲25个国家近200个海外仓",
+    "website": "https://www.jdl.com/"
   }
 ]
