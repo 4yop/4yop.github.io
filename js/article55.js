@@ -3,7 +3,7 @@ const e=`
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
     <!-- 标题 -->
     <header class="text-center mb-10 md:mb-16">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">还在为编号重复烦恼？试试这个在线工具</h1>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">还在为编号重复烦恼？试试这个在线工具</h2>
       <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
         网店订单号、会员编号、文件代码… 教你如何轻松生成“永不重复”的数字号码。
       </p>

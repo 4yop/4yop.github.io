@@ -2,7 +2,7 @@ const s=`
 <div class="bg-white text-gray-800 font-sans">
   <article class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
     <header class="text-center mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4 leading-tight">告别词穷！原来好评可以这样“一键生成”，真实又贴心</h1>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 leading-tight">告别词穷！原来好评可以这样“一键生成”，真实又贴心</h2>
       <p class="text-lg text-gray-600">你是否也为写一条走心的好评而绞尽脑汁？一个小工具，或许能帮你打开思路。</p>
     </header>
 

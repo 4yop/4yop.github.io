@@ -1,7 +1,7 @@
 const t=`
 <article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
   <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">国产AI智能体哪家强？11款主流产品对比帮你选</h1>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">国产AI智能体哪家强？11款主流产品对比帮你选</h2>
     <p class="text-lg text-gray-600 leading-relaxed">最近AI智能体很火，国内各大厂商都在推出自己的产品。腾讯、字节、百度、阿里等纷纷入局，让人眼花缭乱。今天，我整理了11款主流国产AI智能体产品，从使用方式到核心特点，帮你快速找到适合自己的那一款。</p>
   </header>
 

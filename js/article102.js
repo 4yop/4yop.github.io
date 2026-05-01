@@ -1,6 +1,6 @@
 const l=`
 <div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">想把动图GIF拆成一堆静态图片？这个工具能一键搞定</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">想把动图GIF拆成一堆静态图片？这个工具能一键搞定</h2>
 
   <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
     <p class="text-base">你是不是也遇到过这种情况：看到一个有趣的GIF动图，特别想保存里面的某一瞬间，却怎么也截不到最清晰的那一帧？</p>

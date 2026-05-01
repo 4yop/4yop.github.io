@@ -2,9 +2,9 @@ const s=`
 <div class="bg-white text-gray-800 font-sans leading-relaxed">
   <article class="max-w-4xl mx-auto px-4 py-8">
     <!-- 标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
       IP地址转换：网络世界的“语言翻译器”，你了解吗？
-    </h1>
+    </h2>
     
     <!-- 引语 -->
     <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">

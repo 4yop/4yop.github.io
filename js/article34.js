@@ -1,6 +1,6 @@
 const t=`<article class="article-container">
   <header class="article-header">
-    <h1 class="article-title">Cron表达式生成器：轻松掌握定时任务配置技巧</h1>
+    <h2 class="article-title">Cron表达式生成器：轻松掌握定时任务配置技巧</h2>
     <p class="article-meta">发布时间：2026-03-28 | 阅读时间：8分钟 | 分类：开发工具</p>
   </header>
 

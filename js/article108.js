@@ -1,7 +1,7 @@
 const t=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
   <article>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h1>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h2>
 
     <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
       <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>

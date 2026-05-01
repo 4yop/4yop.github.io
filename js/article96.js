@@ -1,7 +1,7 @@
 const t=`
 <div class="max-w-4xl mx-auto p-4 sm:p-6 text-gray-800">
   <!-- 标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">分享照片前，你删掉那些“隐藏信息”了吗？</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">分享照片前，你删掉那些“隐藏信息”了吗？</h2>
 
   <!-- 引语/首段 -->
   <p class="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed text-center">

@@ -1,6 +1,6 @@
 const t=`
 <div class="prose prose-lg max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">藏在每个人童年里的石头剪刀布，原来这么有学问</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">藏在每个人童年里的石头剪刀布，原来这么有学问</h2>
 
   <p class="text-gray-700 text-lg leading-relaxed mb-8 text-center">
     一个瞬间就能完成的简单手势，决定了多少孩子王和零食的归属。今天，我们来聊聊这个全世界通用的“公平裁决器”。

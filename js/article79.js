@@ -4,7 +4,7 @@ const t=`
   <meta itemprop="author" content="Tools321">
 
   <header>
-    <h1 class="text-3xl font-bold mb-4 text-gray-900 text-center" itemprop="headline">日出日落时间查询 - 全球今日日出日落时刻在线计算器</h1>
+    <h2 class="text-3xl font-bold mb-4 text-gray-900 text-center" itemprop="headline">日出日落时间查询 - 全球今日日出日落时刻在线计算器</h2>
   </header>
 
   <section class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-200" itemprop="description">

@@ -1,7 +1,7 @@
 const t=`
 <div class="max-w-4xl mx-auto px-4 py-8">
   <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h1>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h2>
 
     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
       你是否遇到过这样的烦恼？公司发来一个包含上百位客户联系方式的Excel表格，或者社团活动收集了一大堆成员信息。看着密密麻麻的姓名和电话，难道要一个一个手动输入到手机里？别担心，今天教你一个省时省力的好方法。

@@ -1,9 +1,9 @@
 const s=`
 <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800 bg-white">
   <header class="mb-10 sm:mb-16 text-center">
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
       互联网黑话到底是什么？它怎么悄悄改变了我们的对话方式
-    </h1>
+    </h2>
     <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
       你有没有在开会时，听到一堆“赋能”、“抓手”、“闭环”却一头雾水？这背后是一套独特的语言系统，正在许多行业中悄然流行。
     </p>

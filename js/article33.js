@@ -1,7 +1,7 @@
 const t=`
 <div class="bg-gray-50 text-gray-800 font-sans">
   <article class="max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg shadow-sm">
-    <h1 class="text-3xl font-bold mb-6 text-center">为什么你的网页打开这么慢？一个简单的“瘦身”方法或许能帮到你</h1>
+    <h2 class="text-3xl font-bold mb-6 text-center">为什么你的网页打开这么慢？一个简单的“瘦身”方法或许能帮到你</h2>
     
     <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
       <p class="text-gray-700">你是否曾经点开一个网页，却对着那个不停转圈的小图标干等？或者在手机上浏览时，图片和文字半天都显示不全？今天，我们就来聊聊这个烦人的问题，并告诉你一个很多人都在用的简单解决思路。</p>

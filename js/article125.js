@@ -1,6 +1,6 @@
 const l=`
 <div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-gray-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">猜数字游戏：经典的逻辑挑战，重温简单纯粹的思考乐趣</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">猜数字游戏：经典的逻辑挑战，重温简单纯粹的思考乐趣</h2>
 
   <p class="text-lg mb-6 leading-relaxed">还记得小时候玩过的“猜数字”游戏吗？一个人心里默默想好一个数字，另一个人通过不断的猜测和“大了”、“小了”的提示，最终找出正确答案。这个看似简单的游戏，其实充满了逻辑的魅力，是锻炼思维、消磨时间的好方法。今天，我们就来聊聊这个经典的游戏。</p>
 

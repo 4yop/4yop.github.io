@@ -1,6 +1,6 @@
 const s=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h1>
+  <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h2>
   <p class="text-lg text-gray-600 mb-8">你是否在电影片尾、广告大屏或视频里看过那些缓缓移动的文字？现在，不用学习复杂软件，你也可以轻松创建属于自己的滚动文字效果了。</p>
 
   <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">

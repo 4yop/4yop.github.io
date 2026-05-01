@@ -1,7 +1,7 @@
 const s=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
   <article>
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h1>
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h2>
     <p class="text-lg text-gray-600 mb-8 text-center">无论是社区篮球赛、家庭桌游夜，还是公司内部竞赛，一个清晰、好看的记分板能让比赛体验立刻升级。</p>
 
     <div class="my-8 p-4 bg-blue-50 rounded-lg border border-blue-100">

@@ -1,7 +1,7 @@
 const l=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
   <article>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-6">你的反应速度有多快？一分钟免费测测看</h1>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">你的反应速度有多快？一分钟免费测测看</h2>
 
     <p class="text-lg mb-6">你有没有好奇过，自己在关键时刻反应够不够快？开车时遇到突发状况，或者运动时需要瞬间判断，反应速度都起着关键作用。今天，我们就来聊聊这个有趣的话题，并提供一个简单的方法，让你立刻了解自己的反应时间。</p>
 

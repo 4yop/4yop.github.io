@@ -1,6 +1,6 @@
 const s=`
 <div class="text-gray-800 leading-relaxed px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center mt-6">视频总是被判定为重复？试试自己动手，给它一个“新身份”</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center mt-6">视频总是被判定为重复？试试自己动手，给它一个“新身份”</h2>
 
   <p class="mb-6 text-lg">你有没有遇到过这样的烦恼：精心制作的视频，上传到平台时却被提示“内容重复”？或者想在不同地方保存同一段珍贵记忆，却被告知“文件已存在”？别急，这很正常，今天我们就来聊聊一个轻松解决这个问题的小方法。</p>
 

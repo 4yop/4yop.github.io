@@ -1,6 +1,6 @@
 const s=`
 <div class="text-gray-800 font-sans leading-relaxed">
-  <h1 class="text-3xl font-bold mb-6 text-center md:text-left">还在手动打编号？这个序号生成器，让你三秒搞定批量编号</h1>
+  <h2 class="text-3xl font-bold mb-6 text-center md:text-left">还在手动打编号？这个序号生成器，让你三秒搞定批量编号</h2>
 
   <p class="mb-4">无论你是整理资料、制作名单，还是给物品贴标签，是不是常常遇到需要输入一大串序号的情况？从1写到100，不仅枯燥，还特别容易出错。</p>
 

@@ -1,6 +1,6 @@
 const s=`
 <div class="text-slate-700 max-w-3xl mx-auto p-4 md:p-0">
-  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h1>
+  <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h2>
 
   <p class="text-lg mb-8 leading-relaxed">
     工作中，面对一堆密密麻麻的销售数字，是不是感到头疼？学习中，复杂的统计资料，是不是让你眼花缭乱？我们常常需要把枯燥的数据变成一目了然的图表，但专业的软件太难，手绘又太慢。有没有一种方法，能让我们普通人，像填写表格一样简单，就能得到专业的图表呢？

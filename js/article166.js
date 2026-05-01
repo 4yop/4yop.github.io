@@ -1,6 +1,6 @@
 const t=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h1>
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h2>
 
   <div class="mb-8 text-lg text-gray-600 leading-relaxed">
     <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>

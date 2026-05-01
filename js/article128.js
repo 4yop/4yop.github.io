@@ -1,6 +1,6 @@
 const t=`
 <div class="max-w-3xl mx-auto p-4 md:p-6 font-sans text-gray-800 leading-relaxed">
-  <h1 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h1>
+  <h2 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h2>
   
   <p class="mb-4 text-gray-700">在日常生活中，我们经常会遇到需要把数字写成中文的情况——写收据、填报销单、签合同，甚至给孩子辅导作业。但你知道数字转中文其实有几种不同的方式吗？数字大写和小写有什么区别？什么时候该用“数字读法”？今天我们就来聊聊数字转中文的那些事，并介绍一个实用的在线工具，帮你轻松搞定各种转换。</p>
 
