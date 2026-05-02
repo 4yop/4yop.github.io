@@ -1,101 +1,88 @@
-const o={title:"故障风格图片生成器使用指南",content:`
-## 什么是故障风格图片（Glitch Image）？
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">还在为拼图烦恼？教你一个把多张图片轻松合成一张的简单方法</h1>
 
-故障风格图片是一种利用数字图像处理技术，通过**混合模式叠加 + 随机偏移 + RGB色差**等方式，模拟数字信号故障、数据损坏等视觉效果的图片艺术形式。广泛应用于赛博朋克设计、电子音乐封面、社交媒体头像等场景。
+  <p class="text-lg text-gray-600 mb-8 text-center">
+    旅游照片、产品对比、朋友圈九宫格...不用下载软件，在线就能搞定。
+  </p>
 
-## 功能特点
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+    <p class="mb-2"><strong>你是不是也遇到过这些情况？</strong></p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>旅游回来，想把几张风景照横着拼成一张长图，却不知道用什么工具。</li>
+      <li>做产品对比图，需要把好几个细节图整齐地排在一起，调来调去总对不齐。</li>
+      <li>想在社交媒体发一组照片，但又不想刷屏，希望能把它们合成一张。</li>
+      <li>用手机或电脑自带的软件操作步骤太麻烦，专门下载个软件又觉得不值。</li>
+    </ul>
+  </div>
 
-### 18种混合模式
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">拼图，其实比你想象的简单</h2>
+  <p class="mb-4">
+    别再把“图片拼接”想成是什么复杂的技术活了。它就像小朋友玩的拼图游戏，只不过我们是在电脑或手机上，把几张电子图片，按照你想要的方式组合成一张新的图片。
+  </p>
+  <p class="mb-4">
+    比如，你想把三天旅行的标志性照片，从左到右连成一条时间线，这就是<strong>横向拼接</strong>。你想把同一个景点的远景、中景、特写从上到下排列，这就是<strong>纵向拼接</strong>。
+  </p>
 
-本工具基于 HTML5 Canvas 的 \`globalCompositeOperation\` API，提供以下混合模式：
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">一个在线工具就能解决的麻烦</h2>
+  <p class="mb-4">
+    现在，你不需要成为设计师，也不需要记住复杂的软件操作。一个好的在线图片拼接工具，就像一个智能的图片排版助手，你只需要告诉它你的想法，它就能帮你实现。
+  </p>
 
-| 模式 | 说明 | 视觉效果 |
-|------|------|----------|
-| 差值 (difference) | 两图差值运算 | 强烈的色彩反转对比，最经典的 Glitch 效果 |
-| 源顶 (source-atop) | 源图覆盖目标重叠区 | 图像边缘错位撕裂感 |
-| 目标排除 (destination-out) | 排除源图覆盖区域 | 镂空/残影效果 |
-| 变亮 (lighter) | 取两图较亮部分 | 发光/过曝效果 |
-| 正片叠底 (multiply) | 颜色相乘变暗 | 暗调加重，对比增强 |
-| 滤色 (screen) | 颜色相滤变亮 | 亮调提亮，柔光效果 |
-| 叠加 (overlay) | 正片叠底与滤色结合 | 对比度大幅提升 |
-| 变暗 (darken) | 取两图较暗部分 | 压暗效果 |
-| 颜色减淡 (color-dodge) | 减淡高光区域 | 高光溢出效果 |
-| 颜色加深 (color-burn) | 加深阴影区域 | 阴影浓重效果 |
-| 强光 (hard-light) | 聚光灯式混合 | 硬朗的明暗对比 |
-| 柔光 (soft-light) | 柔和光照混合 | 自然的明暗过渡 |
-| 排除 (exclusion) | 类似差值但更柔和 | 温和的色彩偏移 |
-| 色相 (hue) | 保留底层亮度饱和度 | 色彩替换效果 |
-| 颜色 (color) | 保留底层明度 | 色彩染色效果 |
-| 明度 (luminosity) | 保留底层色相饱和度 | 亮度重映射 |
+  <div class="bg-gray-50 p-6 rounded-xl mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-gray-900">它能为你做什么？</h3>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <strong>操作极其简单</strong>：你只需要把电脑里或手机上的照片拖进去，或者点一下选择。就像把文件放进一个文件夹一样直观。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <strong>拼接方式灵活</strong>：想横着拼、竖着拼，还是排成几行几列的网格（比如经典的九宫格），都可以自由选择。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <strong>细节可以微调</strong>：图片之间要不要留白、留多大空、图片在格子里的对齐方式（靠上、居中、靠下），甚至背景颜色都可以随你心意调整。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <strong>无需等待，快速生成</strong>：调整好以后，点一下按钮，一张崭新的合成图就做好了。你可以直接下载保存到手机或电脑里。
+        </div>
+      </li>
+    </ul>
+  </div>
 
-### 可调参数
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">这些时候，你特别需要它</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">制作旅行纪念长图</h4>
+      <p class="text-gray-700">
+        把一次旅行中不同地点的标志性照片，按行程顺序横向拼接起来，形成一张有故事感的“视觉游记”，分享起来更有格调，也方便打印留念。
+      </p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">社交媒体内容创作</h4>
+      <p class="text-gray-700">
+        想分享多张美食、宠物或穿搭照片？与其连发好几条，不如把它们优雅地拼成一张九宫格或对比图。信息更集中，版面也更美观，更容易获得关注。
+      </p>
+    </div>
+  </div>
 
-- **数量 (1-50)**：控制故障效果的叠加次数。数值越大，随机偏移层数越多，效果越强烈
-- **透明度 (10%-100%)：**控制每次叠加的不透明度。较低值产生更细腻的重影效果
-
-### 自动增强算法
-
-除基础混合模式外，本工具还内置：
-- **随机水平切片错位**：模拟信号中断产生的横向撕裂
-- **RGB 色差分离**：红蓝通道微偏移，增强经典 Glitch 质感
-- **智能尺寸限制**：超过 2048px 的图片自动缩放，保证流畅体验
-
-## 使用方法
-
-1. **上传图片** — 点击上传区域或拖拽图片到页面
-2. **选择模式** — 从 18 种混合模式中选择一种（默认"差值"）
-3. **调整参数** — 拖动「数量」和「透明度」滑块，实时预览效果
-4. **保存图片** — 点击「保存图片」下载 PNG 格式结果
-
-## 使用技巧
-
-### 推荐模式组合
-
-- **经典 Glitch**：差值模式，数量 15-25，透明度 75-90%
-- **赛博朋克风**：颜色减淡或强光，数量 20-30，透明度 60-80%
-- **柔和故障**：排除或柔光，数量 8-15，透明度 85-95%
-- **重度破坏**：正片叠底 + 高数量(35+)，透明度 50-70%
-
-### 最佳实践
-
-- 使用**对比度高、色彩丰富**的原图效果更佳
-- 人像照片配合「差值」或「排除」模式最有冲击力
-- 文字/Logo 配合「颜色」或「色相」模式可做创意变形
-- 数量建议从低开始逐步上调，避免过度失真
-
-## 技术原理
-
-### Canvas 混合模式
-
-Canvas 2D 的 \`globalCompositeOperation\` 属性决定了新绘制内容如何与已有画布内容混合。本工具的核心思路是：
-
-1. 先将原图绘制为底层
-2. 循环 N 次（数量参数），每次以随机偏移量重新绘制原图
-3. 每次绘制使用选定的混合模式和不透明度
-4. 最后施加轻微的 RGB 色差增强
-
-### 随机切片
-
-在叠加过程中，有 25% 的概率触发水平切片操作——随机选择一行像素带，将其水平位移，模拟 CRT 显示器的行扫描故障。
-
-## 浏览器兼容性
-
-基于 HTML5 Canvas API，支持所有现代浏览器：
-- Chrome / Edge 60+
-- Firefox 55+
-- Safari 12+
-
-## 常见问题
-
-**Q: 支持哪些格式？**
-A: 支持 JPG、PNG、WebP 等常见图片格式。
-
-**Q: 输出是什么格式？**
-A: PNG 格式，无损质量。
-
-**Q: 图片太大怎么办？**
-A: 超过 2048px 会自动缩放，保证处理速度。
-
-**Q: 哪个模式最好看？**
-A: 「差值」是最经典的 Glitch 效果，推荐先试这个。
-`};export{o as article};
+  <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl border text-center mt-14">
+    <h3 class="text-2xl font-bold mb-3">告别拼图繁琐，试试更聪明的办法</h3>
+    <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
+      一个顺手的小工具，能省去你大量查找软件、学习操作的时间。无论是为了工作展示，还是生活分享，把几张图片完美地合成一张，都可以变得非常简单。
+    </p>
+    <p class="font-medium">
+      如果你正好需要处理图片，不妨去了解一下这种在线拼接图片的便捷方式。
+    </p>
+  </div>
+</article>
+`;export{t as default};

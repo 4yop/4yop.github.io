@@ -1,88 +1,97 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-    <article>
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线抽签工具怎么用？一个页面搞定随机点名和抽奖</h1>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h2>
 
-        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
-            还在为聚会抽奖、课堂提问选谁、或者团队任务分配而烦恼吗？自己写纸条？转盘？这些方法要么麻烦，要么感觉不够公平。其实，一个简单的网页工具就能帮你轻松、有趣又公平地解决这些问题。
-        </p>
+  <div class="mb-8 text-lg text-gray-600 leading-relaxed">
+    <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>
+    <p>这种“选择困难”的小烦恼，几乎每个人都遇到过。它浪费我们的时间，消耗我们的精力。今天，我们就来认识一个简单又好玩的小工具——<strong class="text-gray-900">随机决定器</strong>，它能像抛硬币一样，帮你快速做出决定，让生活更轻松。</p>
+  </div>
 
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-            <p class="text-gray-800">本文将为你介绍一个功能全面的在线抽签工具，它能做什么，以及如何用最简单的方式使用它。</p>
-        </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="what-is">随机决定器是什么？</h2>
+  <div class="bg-blue-50 p-5 rounded-lg mb-8">
+    <p class="mb-3">简单来说，<strong>随机决定器就是一个帮你从多个选项中，公平地随机挑选一个的智能小助手</strong>。</p>
+    <p>想象一下，你把“吃面条”“吃米饭”“吃饺子”三个选项交给它，它就像一个公正的裁判，快速地在它们中间“抓阄”，然后告诉你结果。你不用再纠结，也不用担心选择不公平，因为它完全随机，纯粹看“运气”。</p>
+  </div>
 
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">一、这个工具能帮你做什么？</h2>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            简单来说，它是一个“电子抽签箱”。你可以把一堆名字放进去，然后让它随机滚动，最后停在一个名字上。听起来简单，但它有一些贴心的小功能，让不同场景下的使用都很方便。
-        </p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="how-to-use">它是怎么工作的？简单三步，一看就会</h2>
+  <div class="space-y-6 mb-10">
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">1</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">写下你的“待办清单”</h3>
+        <p class="text-gray-700">把你所有纠结的选项，一条一条地写下来。比如今天要完成哪项工作、晚上看哪部电影、周末去哪里玩。每个选项占一行，写得越清楚越好。</p>
+      </div>
+    </div>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景一：公司年会抽奖</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把所有员工的名字导入进去。点击开始，大屏幕上名字飞快滚动，营造紧张气氛。点击停止，幸运儿的名字被放大展示，系统还会自动撒花庆祝，并且能把结果保存成图片，方便留念或公布。
-        </p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">2</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">让机器“帮你思考”</h3>
+        <p class="text-gray-700">设定好你想让它随机选择的次数（比如10次），然后点击“开始决定”。你会看到选项在屏幕上快速滚动变化，就像一个转盘在转动，充满了小小的期待感。</p>
+      </div>
+    </div>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景二：老师课堂提问</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把全班学生的名单录入。开启“不重复抽取”选项，这样被抽到过的同学下次就不会再出现，确保每个人都有机会被点到。旁边的历史记录清楚地显示了哪些同学已经被提问过。
-        </p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">3</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">接受惊喜的结果</h3>
+        <p class="text-gray-700">转动停止，最终结果会醒目地显示出来。这就是“命运”为你做出的选择！更棒的是，它还会把所有选择的历史记录下来，并用图表告诉你每个选项被选中的比例，一目了然。</p>
+      </div>
+    </div>
+  </div>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景三：家庭决定谁洗碗</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            家里成员名字输入进去。你甚至可以为经常偷懒的家人设置“权重”，让他的名字更容易被抽中（虽然这不太“公平”，但很“家庭”）。然后用手机打开，全家人围在一起点击屏幕，让命运决定今晚的洗碗工。
-        </p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="when-to-use">哪些时候，你需要一个随机决定器？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🏠 生活日常</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>今天午餐/晚餐吃什么？</li>
+        <li>周末是宅家还是出门？</li>
+        <li>下一本该读什么书？</li>
+        <li>家里大扫除先从哪个房间开始？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">👫 朋友聚会</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>聚会玩什么游戏？</li>
+        <li>团队活动去哪里？</li>
+        <li>看电影还是唱KTV？</li>
+        <li>谁去买饮料？（是的，它也能选人）</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">💼 工作学习</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>优先处理哪项任务？</li>
+        <li>学习哪个新技能？</li>
+        <li>报告用什么主题颜色？</li>
+        <li>头脑风暴时，从哪个创意点开始深挖？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🎮 休闲娱乐</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>旅行目的地选择</li>
+        <li>今晚追哪部剧？</li>
+        <li>游戏里选择哪条路线？</li>
+        <li>给宠物取什么名字？</li>
+      </ul>
+    </div>
+  </div>
 
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">二、核心功能，一看就会</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="benefits">为什么用随机决定器？</h2>
+  <div class="space-y-5 mb-10">
+    <p><strong class="text-gray-900">节省时间，停止内耗：</strong>把宝贵的精力从无休止的纠结中解放出来。决定过程可能只需要几秒钟，省下的时间可以做更多有意义的事。</p>
+    <p><strong class="text-gray-900">增加乐趣与期待感：</strong>看着选项滚动，等待未知的结果，本身就像一个小游戏，能为平淡的决定过程增添一抹趣味和仪式感。</p>
+    <p><strong class="text-gray-900">公平公正，避免争执：</strong>朋友间意见不合时，让“随机”来做裁判，大家都会心服口服，瞬间化解僵局。</p>
+    <p><strong class="text-gray-900">帮你突破思维定式：</strong>有时候，我们心里可能已经有了偏向，但随机结果可能会带你尝试一个被你忽略的选项，发现新的可能。</p>
+  </div>
 
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">1. 导入名单：支持两种傻瓜式操作</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">你需要先把参与者的名字告诉工具。</p>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>拖拽文件</strong>：如果你有一个写满名字的文本文件（每行一个名字），直接把它拖到网页指定区域就行。</li>
-                <li><strong>直接输入</strong>：也可以在网页的文本框里，一行一个，把名字打进去或粘贴进去。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">2. 核心操作：开始与停止</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">名单准备好后，点击大大的“开始”按钮，中间显示区域的名字就会开始高速随机滚动，伴有紧张的提示音。当你觉得时机到了，点击“停止”，结果即刻揭晓。</p>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">3. 实用设置：让抽签更符合你的需要</h4>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>不重复抽取</strong>：勾选后，被抽中的人会自动从待抽名单中移除，适合需要覆盖所有人的情况。</li>
-                <li><strong>更换颜色</strong>：可以自由调整背景和文字的颜色，匹配你的活动主题或公司Logo色。</li>
-                <li><strong>全屏模式</strong>：点击切换全屏，让抽签过程充满整个屏幕，视觉冲击力更强，特别适合现场活动。</li>
-                <li><strong>查看历史</strong>：所有被抽中过的名字都会列在旁边，一目了然，随时可以清空重新开始。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">4. 保存与分享</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">每次抽中结果，都可以一键保存为一张简洁美观的图片，方便你发到群里公示或者保存记录。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">三、常见问题解答</h2>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：这个工具需要下载或安装吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：完全不需要。它是一个网页工具，在手机或电脑的浏览器里打开就能用，用完关掉即可，非常轻便。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：名字滚动是真随机吗？会不会有黑幕？</h4>
-            <p class="text-gray-700 leading-relaxed">答：它的随机算法是均匀的，确保每个名字在每次滚动中被选中的机会均等。你甚至可以设置“权重”来人为影响概率，但这需要你手动设置。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：在手机上用起来方便吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：方便。网页针对手机屏幕做了专门优化，按钮大小合适，操作区域清晰，和电脑上使用体验一样好。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">总结</h2>
-        <p class="text-gray-700 mb-6 leading-relaxed">
-            无论是需要一点仪式感的小型活动，还是追求高效公平的日常决策，一个设计良好的在线抽签工具都能派上用场。它把传统的抽签过程数字化，变得更可视化、可记录、可定制，而且对使用者没有任何技术门槛。下次当你需要公平地选择一个“幸运儿”时，不妨试试这类工具，或许能让过程变得更有趣。
-        </p>
-    </article>
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-12 text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-3">告别选择困难，从今天开始</h3>
+    <p class="text-gray-700 mb-4">生活中已经有很多事需要我们仔细权衡，就把那些无伤大雅的小决定，交给“随机”的乐趣吧。无论是用手机还是电脑，都能随时打开这个<span class="font-semibold text-gray-900">随机决定器</span>。</p>
+    <p class="text-gray-700">下次再为“吃什么”、“去哪玩”、“做什么”而纠结时，不妨试一试。也许，让随机帮你做的那个决定，会带来意想不到的惊喜和轻松好心情。</p>
+  </div>
 </div>
 `;export{t as default};

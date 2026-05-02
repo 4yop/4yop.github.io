@@ -1,110 +1,251 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
+const t=`
+<article class="article-content">
+  <header class="article-header">
+    <h1 class="article-title">正则表达式测试工具 - 在线正则匹配、替换与调试</h1>
+    <p class="article-meta">发布日期：2026-03-28 | 阅读时间：8分钟</p>
   </header>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
+  <section class="article-section intro">
+    <p class="lead">在处理文本数据时，你是否经常遇到需要批量查找、替换或验证特定格式内容的场景？手动处理不仅效率低下，还容易出错。<strong>正则表达式测试工具</strong>正是为解决这类问题而生的利器。本文将带你深入了解正则表达式的核心概念、实际应用场景，以及如何利用我们的在线正则测试工具提升工作效率。</p>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
-      </li>
+  <section class="article-section">
+    <h2>什么是正则表达式</h2>
+    <p>正则表达式（Regular Expression，简称Regex或Regexp）是一种用于描述字符串匹配模式的强大工具。它由一系列特殊字符和普通字符组成，可以精确地定义搜索、匹配、替换的规则。</p>
+    
+    <div class="highlight-box">
+      <h3>正则表达式的核心优势</h3>
+      <ul>
+        <li><strong>精确匹配</strong>：通过模式定义，精准定位目标文本</li>
+        <li><strong>批量处理</strong>：一次性处理大量数据，无需逐条检查</li>
+        <li><strong>跨语言通用</strong>：几乎所有编程语言都支持正则表达式</li>
+        <li><strong>高效简洁</strong>：用简短的模式表达复杂的匹配逻辑</li>
+      </ul>
+    </div>
+
+    <p>正则表达式的历史可以追溯到20世纪50年代，由数学家Stephen Kleene提出。如今，它已成为程序员、数据分析师、运维工程师等技术人员必备的技能之一。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>正则表达式的应用场景</h2>
+    <p>正则表达式在现代软件开发和数据处理中无处不在。以下是几个最常见的应用场景：</p>
+
+    <h3>1. 表单验证</h3>
+    <p>在Web开发中，用户输入的数据需要经过严格验证。正则表达式可以轻松实现：</p>
+    <ul>
+      <li>邮箱格式验证：确保用户输入的是有效的电子邮件地址</li>
+      <li>手机号验证：检查手机号码是否符合规范</li>
+      <li>密码强度检测：验证密码是否包含大小写字母、数字和特殊字符</li>
+      <li>身份证号验证：校验身份证号码的格式和校验位</li>
     </ul>
-    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
+
+    <h3>2. 文本处理与清洗</h3>
+    <p>数据分析师经常需要从非结构化文本中提取有价值的信息：</p>
+    <ul>
+      <li>从网页HTML中提取特定标签内容</li>
+      <li>批量替换文档中的敏感词汇</li>
+      <li>格式化日期、时间、货币等数据</li>
+      <li>删除多余的空格、换行符或特殊字符</li>
+    </ul>
+
+    <h3>3. 日志分析</h3>
+    <p>运维工程师使用正则表达式分析服务器日志：</p>
+    <ul>
+      <li>提取错误日志中的关键信息</li>
+      <li>统计特定IP地址的访问频率</li>
+      <li>分析用户行为模式和访问路径</li>
+      <li>监控异常请求和潜在攻击</li>
+    </ul>
+
+    <h3>4. 代码重构</h3>
+    <p>开发者利用正则表达式进行代码批量修改：</p>
+    <ul>
+      <li>批量重命名变量或函数</li>
+      <li>统一代码格式和命名规范</li>
+      <li>查找未使用的代码片段</li>
+      <li>迁移旧API到新接口</li>
+    </ul>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
-    <div class="bg-pink-50 p-5 rounded-lg my-5">
-      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
-        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
-        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
-        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
-        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
-      </ol>
+  <section class="article-section">
+    <h2>常用正则表达式模式大全</h2>
+    <p>掌握常用正则模式可以大幅提升工作效率。以下是我们精心整理的高频使用模式：</p>
+
+    <div class="pattern-table">
+      <table>
+        <thead>
+          <tr>
+            <th>用途</th>
+            <th>正则表达式</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>邮箱验证</td>
+            <td><code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$</code></td>
+            <td>匹配标准邮箱格式</td>
+          </tr>
+          <tr>
+            <td>手机号（中国）</td>
+            <td><code>^1[3-9]\\d{9}$</code></td>
+            <td>匹配11位手机号码</td>
+          </tr>
+          <tr>
+            <td>身份证号</td>
+            <td><code>^\\d{15}|\\d{18}$</code></td>
+            <td>匹配15位或18位身份证号</td>
+          </tr>
+          <tr>
+            <td>URL地址</td>
+            <td><code>^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$</code></td>
+            <td>匹配HTTP/HTTPS网址</td>
+          </tr>
+          <tr>
+            <td>IP地址</td>
+            <td><code>^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$</code></td>
+            <td>匹配IPv4地址</td>
+          </tr>
+          <tr>
+            <td>中文字符</td>
+            <td><code>[\\u4e00-\\u9fa5]+</code></td>
+            <td>匹配一个或多个中文字符</td>
+          </tr>
+          <tr>
+            <td>数字提取</td>
+            <td><code>\\d+</code></td>
+            <td>匹配连续的数字</td>
+          </tr>
+          <tr>
+            <td>日期格式（YYYY-MM-DD）</td>
+            <td><code>^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$</code></td>
+            <td>匹配标准日期格式</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
+
+    <p>使用我们的<strong>正则表达式测试工具</strong>，你可以实时验证这些模式，并根据实际需求进行调整。</p>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
-          <li>配合表情使用，效果更佳</li>
-          <li>真诚最重要，即使是夸张的话也要发自内心</li>
-        </ul>
+  <section class="article-section">
+    <h2>正则调试技巧与最佳实践</h2>
+    <p>编写正确的正则表达式往往是一个迭代调试的过程。以下是一些实用的调试技巧：</p>
+
+    <h3>1. 从简单开始，逐步复杂</h3>
+    <p>不要试图一次性写出完美的正则表达式。先匹配最简单的形式，然后逐步添加约束条件。例如，验证邮箱可以先从匹配<code>@</code>符号开始，再逐步完善前后缀的校验规则。</p>
+
+    <h3>2. 善用分组和捕获</h3>
+    <p>使用括号<code>()</code>进行分组，不仅可以应用量词，还能捕获匹配内容供后续使用。非捕获组<code>(?:)</code>在不需要捕获时可以提高性能。</p>
+
+    <h3>3. 注意贪婪与懒惰匹配</h3>
+    <p>默认情况下，量词（如<code>*</code>、<code>+</code>）是贪婪的，会尽可能多地匹配字符。在需要最小匹配时，使用懒惰版本（<code>*?</code>、<code>+?</code>）。</p>
+
+    <h3>4. 使用在线工具辅助调试</h3>
+    <p>我们的正则表达式测试工具提供了实时匹配高亮、分组显示、替换预览等功能，是调试复杂正则的得力助手。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>学习正则表达式的建议路径</h2>
+    <p>正则表达式虽然强大，但学习曲线相对陡峭。以下是我们推荐的学习路径：</p>
+
+    <div class="learning-path">
+      <div class="step">
+        <span class="step-number">1</span>
+        <div class="step-content">
+          <h4>掌握基础元字符</h4>
+          <p>学习<code>.</code>、<code>*</code>、<code>+</code>、<code>?</code>、<code>^</code>、<code>$</code>等基本符号的含义和用法。</p>
+        </div>
       </div>
-      <div class="bg-red-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
-          <li>在正式场合用，比如工作汇报、商务谈判</li>
-          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
-        </ul>
+      <div class="step">
+        <span class="step-number">2</span>
+        <div class="step-content">
+          <h4>理解字符类</h4>
+          <p>掌握<code>[abc]</code>、<code>[^abc]</code>、<code>\\d</code>、<code>\\w</code>、<code>\\s</code>等字符类的使用。</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <div class="step-content">
+          <h4>学习分组和引用</h4>
+          <p>理解捕获组、非捕获组、反向引用的概念和应用场景。</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-number">4</span>
+        <div class="step-content">
+          <h4>实践常见模式</h4>
+          <p>通过实际项目练习，积累常用正则模式，培养模式识别能力。</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-number">5</span>
+        <div class="step-content">
+          <h4>深入高级特性</h4>
+          <p>学习断言（lookahead/lookbehind）、条件表达式、递归模式等高级特性。</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
+  <section class="article-section faq-section">
+    <h2>常见问题解答（FAQ）</h2>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q1: 正则表达式在所有编程语言中都一样吗？</h3>
+      <div class="faq-answer">
+        <p>大部分基础语法是通用的，但不同编程语言或工具可能有一些差异。例如，JavaScript不支持后行断言（lookbehind）直到ES2018，而Python的re模块和regex模块在功能上也有所不同。我们的正则测试工具支持主流的正则语法，可以帮助你验证跨平台的兼容性。</p>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q2: 正则表达式性能如何？会不会很慢？</h3>
+      <div class="faq-answer">
+        <p>大多数情况下，正则表达式的性能是非常优秀的。但需要注意避免"灾难性回溯"——当正则中存在嵌套量词或复杂的分支时，可能导致指数级的时间复杂度。建议：1) 尽量使用具体的字符类代替通配符；2) 使用占有量词或原子组防止不必要的回溯；3) 对于超大文本，考虑分段处理。</p>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q3: 如何调试复杂的正则表达式？</h3>
+      <div class="faq-answer">
+        <p>调试复杂正则的最佳方法是：1) 使用可视化工具查看匹配过程；2) 添加注释（支持注释模式的正则引擎）；3) 分步测试各个子模式；4) 使用我们的在线正则测试工具，它提供实时高亮、分组显示和替换预览功能，让调试过程更加直观高效。</p>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q4: 正则表达式可以处理HTML/XML解析吗？</h3>
+      <div class="faq-answer">
+        <p>虽然可以用正则表达式提取简单的HTML标签内容，但不建议用于复杂的HTML/XML解析。因为HTML不是正则语言，使用正则解析可能导致错误和漏洞。对于复杂的文档解析，建议使用专门的解析库，如BeautifulSoup（Python）、DOM Parser（JavaScript）等。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q5: 有哪些学习正则表达式的优质资源？</h3>
+      <div class="faq-answer">
+        <p>推荐以下学习资源：1) RegexOne - 交互式正则教程；2) 正则表达式30分钟入门教程 - 中文经典教程；3) RegExr - 在线正则学习和测试工具；4) 《精通正则表达式》 - Jeffrey Friedl的经典著作。同时，多使用我们的正则测试工具进行实践，是掌握正则的最佳方式。</p>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
+  <section class="article-section conclusion">
+    <h2>结语</h2>
+    <p>正则表达式是每个技术人员都值得投入时间学习的技能。它虽然初期学习成本较高，但一旦掌握，将在数据处理、文本分析、表单验证等众多场景中大幅提升你的工作效率。</p>
+    
+    <p>我们的<strong>正则表达式测试工具</strong>为你提供了一个便捷的在线环境，支持实时匹配、替换、分割等功能，帮助你快速验证和调试正则表达式。无论你是正则新手还是经验丰富的开发者，这个工具都能成为你日常工作的得力助手。</p>
+
+    <div class="cta-box">
+      <p><strong>立即开始使用正则表达式测试工具</strong>，让复杂的文本处理变得简单高效！</p>
     </div>
   </section>
+
+  <footer class="article-footer">
+    <div class="tags">
+      <span class="tag">正则表达式</span>
+      <span class="tag">正则测试</span>
+      <span class="tag">在线工具</span>
+      <span class="tag">文本处理</span>
+      <span class="tag">表单验证</span>
+    </div>
+  </footer>
 </article>
-`;export{s as default};
+`;export{t as default};

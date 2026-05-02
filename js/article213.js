@@ -1,150 +1,72 @@
-const t=`
-<div class="bg-gray-50 text-gray-800">
-  <div class="max-w-4xl mx-auto px-4 py-8 md:px-6">
-    <!-- 文章标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 leading-tight">
-      天数计算器：轻松算出那些对你重要的日子，过了多久
-    </h1>
-    <p class="text-lg text-gray-600 text-center mb-10 leading-relaxed">
-      你是否曾好奇，距离某个特别的日子，已经过去了多少年、多少月、甚至多少秒？一个简单工具就能告诉你答案。
-    </p>
+const l=`
+<div class="max-w-3xl mx-auto px-4 py-6 md:py-10 text-gray-300">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 text-white">高考倒计时2026：距离高考还有多少天？高效备考攻略</h2>
+  <p class="text-sm text-gray-500 text-center mb-8">高考备考指南</p>
 
-    <!-- 引语部分 -->
-    <div class="bg-blue-50 border-l-4 border-blue-400 p-5 mb-8 rounded-r">
-      <p class="text-gray-700 italic">
-        “时间看不见也摸不着，但我们总想为它标上刻度。从出生那天起，到第一次远行，再到某个铭记于心的纪念日，计算天数，是我们丈量生活的一种方式。”
-      </p>
-    </div>
+  <p class="text-lg mb-4">高考，这个几乎每个中国家庭都会经历的关键词，总是带着一点紧张和期待。对于即将参加2026年高考的考生和家长来说，时间已经进入了最后的冲刺阶段。看着日历一页页翻过，很多人都会下意识地问一句："今天离高考还有多少天？"</p>
 
-    <!-- 工具能做什么 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个计算器，到底能算什么？</h2>
-      <p class="mb-4 leading-relaxed">
-        它就像一个专注于时间的尺子。你只需要告诉它一个<strong>过去的日期</strong>，它就能立刻帮你算出，从那天到现在，总共经历了多长时间。
-      </p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-700">
-        <li><strong>人生里程碑：</strong> 算算你来到这个世界已经多少天，或者你的孩子出生多久了。</li>
-        <li><strong>爱情与纪念：</strong> 想知道恋爱或结婚至今的具体年、月、日吗？它都能精确显示。</li>
-        <li><strong>工作与学习：</strong> 入职公司多少天？距离一个项目启动过去了多久？帮你清晰记录。</li>
-        <li><strong>历史与社会大事：</strong> 对重要的历史时刻感到好奇？比如新中国成立至今的精确时间。</li>
-        <li><strong>未来倒数：</strong> 虽然主要计算过去，但理解时间跨度也能帮你更好地期待未来的目标。</li>
-      </ul>
-    </div>
+  <p class="text-lg mb-6">其实，高考倒计时不仅仅是一个数字，它更像一个无形的闹钟，提醒我们合理规划每一天，把焦虑转化为行动。今天我们就来聊聊2026年高考倒计时那些事儿，顺便分享一些备考干货，希望能帮你稳稳走过这段路。</p>
 
-    <!-- 为什么我们需要计算天数 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么要计算得这么仔细？</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-5 rounded-lg shadow-sm border">
-          <h3 class="text-xl font-medium mb-2 text-blue-600">让记忆更具体</h3>
-          <p class="leading-relaxed">
-            说“好几年了”很模糊，但“1825天”这个数字会瞬间让你的记忆变得清晰可触。时间被量化，情感也因此有了更坚实的载体。
-          </p>
-        </div>
-        <div class="bg-white p-5 rounded-lg shadow-sm border">
-          <h3 class="text-xl font-medium mb-2 text-green-600">见证成长与积累</h3>
-          <p class="leading-relaxed">
-            无论是坚持一个习惯，还是经营一段关系，看到不断累积增长的天数，本身就是一种无声的鼓励和成就感的来源。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 如何使用 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何使用它？（非常简单）</h2>
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-3">1</div>
-          <div>
-            <h3 class="text-lg font-medium mb-1">选择你的起始日</h3>
-            <p class="text-gray-700 leading-relaxed">
-              在页面上找到一个日历选择框，点击它，然后选出那个对你意义非凡的年、月、日，甚至可以精确到当时的时刻。
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold mr-3">2</div>
-          <div>
-            <h3 class="text-lg font-medium mb-1">查看丰富的结果</h3>
-            <p class="text-gray-700 leading-relaxed">
-              选择完成后，下方会立刻出现一个清晰的结果面板。你会看到两种时间呈现方式：
-            </p>
-            <ul class="list-disc pl-5 mt-2 text-gray-600">
-              <li><strong>总计数：</strong> 从那天起，一共过去了多少天、多少小时、多少分钟。</li>
-              <li><strong>详细分解：</strong> 像“X年Y个月Z天A小时B分钟C秒”这样更符合我们日常习惯的说法。</li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold mr-3">3</div>
-          <div>
-            <h3 class="text-lg font-medium mb-1">试试快捷按钮</h3>
-            <p class="text-gray-700 leading-relaxed">
-              如果你一时想不到要算哪天，或者想看看一些公共纪念日的时间，可以试试页面上的预设按钮，比如“新中国成立”、“北京奥运”等，一键就能看到结果。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 时间单位的意义 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">看懂那些数字：时间单位的意义</h2>
-      <p class="mb-4 leading-relaxed">
-        计算器给出的不同数字，可以帮助你从不同角度理解时间的跨度：
-      </p>
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white border rounded-lg">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="py-3 px-4 border-b text-left font-medium">单位</th>
-              <th class="py-3 px-4 border-b text-left font-medium">它告诉你什么</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-50">
-              <td class="py-3 px-4 border-b font-medium">总天数</td>
-              <td class="py-3 px-4 border-b">最宏观的衡量，适合记录长期坚持或人生大阶段。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="py-3 px-4 border-b font-medium">年、月、日</td>
-              <td class="py-3 px-4 border-b">我们最熟悉、最口语化的表达方式，方便与人分享。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="py-3 px-4 border-b font-medium">总小时/分钟</td>
-              <td class="py-3 px-4 border-b">当时间跨度没那么长时，这些单位会让你更觉震撼，感受分秒的珍贵。</td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="py-3 px-4 border-b font-medium">秒</td>
-              <td class="py-3 px-4 border-b">时间最精细的刻度，而且数字在实时跳动，让你直观感受到“此刻”正在流逝。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- 关于里程碑 -->
-    <div class="mb-10 bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-100">
-      <h2 class="text-2xl font-semibold mb-3">一个小惊喜：里程碑</h2>
-      <p class="mb-3 leading-relaxed">
-        除了基本计算，这个工具还会帮你关注一些特殊的“整点”时刻。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        例如，当你计算自己的生日或纪念日时，它会自动算出“百日”、“一周年”、“千日”等里程碑日期。已经过去的，它会标记为“已达成”；未来的，则会告诉你“还需X天”，像一个小小的时间向导，帮你期待下一个值得庆祝的日子。
-      </p>
-    </div>
-
-    <!-- 结语 -->
-    <div class="text-center pt-6 border-t">
-      <h2 class="text-2xl font-semibold mb-4">开始你的时间旅行吧</h2>
-      <p class="text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
-        时间对每个人都是公平的，但赋予时间的意义却各不相同。找一个安静的片刻，输入那个对你而言独一无二的日期。看看跳动的数字，回想那段时光。计算天数，不只是为了一个结果，更是为了<span class="font-medium text-gray-900">重温、确认和纪念</span>。
-      </p>
-      <p class="text-gray-500">
-        希望这个简单的小工具，能帮你更好地收藏那些闪亮的日子。
-      </p>
-    </div>
+  <div class="bg-gray-700/50 border-l-4 border-yellow-400 p-4 mb-6 rounded-r-lg">
+    <p class="text-lg font-medium text-gray-200">2026年高考时间：通常为6月7日（部分省份持续到8日或9日）。使用上方倒计时工具可实时查看距离高考还有多少天。</p>
   </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">一、高考倒计时为什么对我们很重要？</h2>
+  <p class="mb-4">倒计时让我们从"还有很久"的错觉中清醒过来。很多同学总觉得时间还多，习惯把复习任务一拖再拖。但当看到数字一天天变小，就会产生一种紧迫感，这种紧迫感如果引导得好，就是专注力和效率的来源。</p>
+  <p class="mb-4">同时，倒计时也能帮助我们设置阶段性目标。比如把剩下的时间分成三个阶段：基础巩固期、专项突破期、全真模拟期。每个阶段有明确的任务，最后上考场时心里就有底了。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">二、怎样用好高考倒计时工具和全屏倒计时？</h2>
+  <p class="mb-4">现在网上有很多好用的高考倒计时小程序或网页，它们通常会用很大的数字显示天、时、分、秒，有的还能全屏专注。我个人建议你选择一个界面清爽、无广告的倒计时工具，把它放在手机桌面上或者电脑浏览器里，每天打开看一眼，给自己一个小小的提醒。</p>
+  <p class="mb-4">比如有的倒计时设计得像黑板或课堂挂钟，深色背景配上彩色数字，一目了然。你甚至可以把全屏倒计时投在教室的大屏幕上，全班一起感受时间的步伐。当然，工具只是辅助，关键还是看我们自己怎么利用每一天。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">三、距离高考还有多少天，如何高效备考？</h2>
+  <p class="mb-2">剩下的时间说长不长，说短不短。如果能科学规划，足够把各科知识再过两遍。下面这几点建议，希望对你有帮助：</p>
+  <ul class="list-disc list-inside mb-4 space-y-2">
+    <li><span class="font-medium text-yellow-300">制定具体到周的复习计划</span> – 别只写"复习数学"，要写"完成三角函数专题练习+整理错题5道"。每周日晚上复盘本周完成情况，调整下周计划。</li>
+    <li><span class="font-medium text-yellow-300">回归课本，查漏补缺</span> – 最后阶段别再死磕偏题怪题。把教材上的例题、定义、公式重新过一遍，尤其是物理化学的实验步骤、历史时间轴，这些基础分最容易拿。</li>
+    <li><span class="font-medium text-yellow-300">利用好真题和错题本</span> – 近五年的高考真题至少刷两遍，第一遍按章节，第二遍按整套卷。错题本不要只抄题，要写错误原因和正确思路，考前一周只看错题本就够了。</li>
+    <li><span class="font-medium text-yellow-300">进行全真模拟考试</span> – 周末按高考时间表做一套卷子，包括涂答题卡、用标准答题纸。提前适应上午考语文、下午考数学的节奏，让身体和大脑到那个点就兴奋起来。</li>
+    <li><span class="font-medium text-yellow-300">坚持体育锻炼</span> – 每天抽出15分钟跑跑步、跳跳绳，哪怕在教室里转转脖子、伸伸懒腰都行。身体状态好，脑子才转得快。</li>
+  </ul>
+
+  <div class="bg-gray-700/40 p-4 rounded-lg mb-6 border border-gray-600/50">
+    <h3 class="font-bold text-lg mb-2 text-gray-200">📌 一个实用的每日时间表（供参考）</h3>
+    <ul class="text-sm space-y-1">
+      <li>6:30 起床，简单拉伸</li>
+      <li>7:00-7:30 早读（语文古诗词、英语单词）</li>
+      <li>8:00-11:30 复习文综/理综（按高考时间）</li>
+      <li>12:00-13:30 午饭+午休（30分钟足够）</li>
+      <li>14:00-17:00 数学/语文（交替进行）</li>
+      <li>17:30-18:30 晚饭+散步</li>
+      <li>19:00-21:00 英语听力+阅读，或整理错题</li>
+      <li>21:30-22:30 自由复习（弱项科目）</li>
+      <li>23:00 准备睡觉，不熬夜</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">四、高考时间倒计时：心态调整把压力变朋友</h2>
+  <p class="mb-4">倒计时越近，心态越容易波动。这时候你可能会失眠、烦躁、突然觉得自己什么都不会。别怕，几乎每个考生都会有这个阶段。试试这几个小方法：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li><strong class="text-yellow-300">写下来</strong> – 把焦虑和担心写在纸上，然后撕掉，暗示自己"把它扔掉"。</li>
+    <li><strong class="text-yellow-300">深呼吸</strong> – 用4-7-8呼吸法：吸气4秒，屏住7秒，呼气8秒，能快速平静。</li>
+    <li><strong class="text-yellow-300">和朋友聊聊天</strong> – 你会发现大家都差不多，互相吐槽一下反而轻松很多。</li>
+    <li><strong class="text-yellow-300">别追求完美</strong> – 高考是选拔性考试，不可能所有题都会。我们的目标是把自己会做的做对，拿到该拿的分就够了。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">五、高考时间安排：家长能做些什么？</h2>
+  <p class="mb-4">家长们可能比孩子还紧张，但请一定把这份紧张藏起来。这个阶段孩子最需要的是"稳定的后方"：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li>保持正常的家庭氛围，不要突然变得特别关心或小心翼翼。</li>
+    <li>饮食上注意清淡营养，不要突然大补，避免肠胃不适。</li>
+    <li>多听少说，当孩子想倾诉时，耐心听，不要急着给建议。</li>
+    <li>帮助孩子整理志愿信息，提前了解大学和专业，但不要强加自己的想法。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">写在最后</h2>
+  <p class="mb-4">高考倒计时的数字终究会归零，但那段拼搏的日子会成为你人生中宝贵的财富。无论最后去了哪所大学，只要全力以赴，就无愧于自己。希望那天到来时，你能从容地走进考场，合上笔盖的那一刻，有战士收刀入鞘的骄傲。</p>
+  <p class="text-lg font-medium text-center mt-8 text-yellow-300">加油，2026高考生！</p>
+
+  <hr class="my-6 border-gray-600" />
+  <p class="text-sm text-gray-500 text-center">如果你觉得这篇文章有帮助，欢迎分享给更多正在备考的同学和家长。</p>
 </div>
-`;export{t as default};
+`;export{l as default};

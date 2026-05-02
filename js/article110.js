@@ -1,169 +1,84 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">智能抠图工具：一键去除背景，让主体脱颖而出</h1>
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h2>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">还在为去除图片背景发愁？</p>
-    <p class="mt-2 mb-0">无论是制作证件照、设计电商产品图，还是创作社交媒体内容，去除图片背景都是常见需求。智能抠图工具利用AI技术，一键自动识别主体并去除背景，无需复杂的PS操作，几秒钟就能完成专业级效果。</p>
-  </div>
+    <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
+      <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>
+    </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">智能抠图的应用场景</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🪪 证件照制作</h3>
-      <p class="text-sm text-gray-600">快速去除原背景，更换为白色、蓝色或红色背景，制作标准证件照。</p>
+    <div class="relative w-full h-64 sm:h-80 mb-8 bg-gray-100 rounded-lg overflow-hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+          <div class="text-5xl mb-4 text-gray-300">🖼️</div>
+          <p class="text-gray-500">（这里可以放一张简单的、带马赛克效果的示例图片示意图）</p>
+        </div>
+      </div>
     </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🛍️ 电商产品图</h3>
-      <p class="text-sm text-gray-600">去除产品背景，制作白底图或透明背景图，符合电商平台要求。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体</h3>
-      <p class="text-sm text-gray-600">制作创意头像、表情包、合成图片，让内容更有趣。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🎨 设计创作</h3>
-      <p class="text-sm text-gray-600">提取素材元素，用于海报、Banner、PPT等设计作品。</p>
-    </div>
-  </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图 vs 传统方法</h2>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">对比项</th>
-          <th class="border border-gray-300 p-3 text-left">AI智能抠图</th>
-          <th class="border border-gray-300 p-3 text-left">传统PS抠图</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">操作难度</td>
-          <td class="border border-gray-300 p-3 text-green-600">简单，一键完成</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">复杂，需要专业技能</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">处理时间</td>
-          <td class="border border-gray-300 p-3 text-green-600">几秒钟</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">几分钟到几十分钟</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">边缘处理</td>
-          <td class="border border-gray-300 p-3 text-green-600">自动识别，效果自然</td>
-          <td class="border border-gray-300 p-3 text-green-600">精细控制，专业级</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">成本</td>
-          <td class="border border-gray-300 p-3 text-green-600">免费或低成本</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">软件订阅费用</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">适用场景</td>
-          <td class="border border-gray-300 p-3">日常需求、批量处理</td>
-          <td class="border border-gray-300 p-3">专业设计、精细修图</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="prose prose-lg max-w-none">
+      <p class="mb-4">在网上分享照片、上传证件或者发布截图时，我们常常需要把一些敏感信息遮挡起来，比如车牌号、门牌号、个人信息，或者不想露脸的照片。这时候，马赛克就成了我们的好帮手。</p>
+      <p class="mb-6">你可能会想，给图片打马赛克是不是要用到很复杂的软件？其实不用。现在有一些非常方便的小工具，在网页上点几下就能完成。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图的工作原理</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
-      <h3 class="font-medium text-indigo-800 mb-2">1. 图像识别</h3>
-      <p class="text-indigo-700">AI模型分析图片内容，识别出前景主体（人物、物体）和背景区域。</p>
-    </div>
-    
-    <div class="p-5 bg-blue-50 rounded-lg border border-blue-100">
-      <h3 class="font-medium text-blue-800 mb-2">2. 边缘检测</h3>
-      <p class="text-blue-700">精确识别主体边缘，处理头发丝、毛发等细节，确保抠图自然。</p>
-    </div>
-    
-    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
-      <h3 class="font-medium text-green-800 mb-2">3. 背景移除</h3>
-      <p class="text-green-700">将识别出的背景区域变为透明或纯色，保留主体完整。</p>
-    </div>
-    
-    <div class="p-5 bg-purple-50 rounded-lg border border-purple-100">
-      <h3 class="font-medium text-purple-800 mb-2">4. 优化输出</h3>
-      <p class="text-purple-700">对边缘进行平滑处理，消除锯齿，生成高质量的PNG透明背景图片。</p>
-    </div>
-  </div>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">为什么我们需要给图片打马赛克？</h2>
+      <p class="mb-4">这主要是在保护我们自己和别人的隐私。想一想下面这些场景：</p>
+      <ul class="list-disc pl-5 mb-6 space-y-2">
+        <li><strong>分享生活照时</strong>：照片背景里无意拍到的家庭地址、快递单号，需要遮一下。</li>
+        <li><strong>处理工作截图时</strong>：发给同事或客户的截图中，可能含有其他人的联系方式或内部编号，需要隐藏。</li>
+        <li><strong>上传证件材料时</strong>：在办理一些线上业务时，可能需要上传身份证、营业执照等，但除了必要信息，其他部分最好能打上马赛克。</li>
+        <li><strong>发布内容到社交媒体时</strong>：拍到了路人清晰的正脸，或者不想让自己的脸太突出，打上马赛克是对彼此的尊重。</li>
+      </ul>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧与注意事项</h2>
-  
-  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
-    <h3 class="font-medium text-yellow-800 mb-3">💡 获得最佳效果的建议：</h3>
-    <ul class="space-y-2 text-yellow-700">
-      <li>• <strong>主体清晰</strong>：确保主体与背景有明显对比，边缘清晰</li>
-      <li>• <strong>光线均匀</strong>：避免主体一半过亮一半过暗，影响识别</li>
-      <li>• <strong>背景简洁</strong>：复杂背景可能影响识别精度，纯色背景效果最佳</li>
-      <li>• <strong>分辨率适中</strong>：图片过大可能导致处理缓慢，过小则影响细节</li>
-      <li>• <strong>检查边缘</strong>：抠图后检查头发、手指等细节区域，必要时手动调整</li>
-    </ul>
-  </div>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么给图片打马赛克？分四步搞定</h2>
+      <p class="mb-6">使用一个简单的在线编辑器，整个过程就像在手机上圈画一样直观。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">抠图后的创意应用</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🌅</div>
-      <h3 class="font-medium text-gray-800 mb-2">换背景</h3>
-      <p class="text-sm text-gray-600">将人物放到风景、城市或虚拟场景中</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">✨</div>
-      <h3 class="font-medium text-gray-800 mb-2">加特效</h3>
-      <p class="text-sm text-gray-600">添加阴影、描边、光效等视觉效果</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🎭</div>
-      <h3 class="font-medium text-gray-800 mb-2">做合成</h3>
-      <p class="text-sm text-gray-600">多元素组合，创作创意图片</p>
-    </div>
-  </div>
+      <div class="bg-blue-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-blue-800">第一步：找到你的图片</h3>
+        <p class="mb-2">首先，点击“上传图片”按钮，从你的电脑或手机里选择你想处理的那张照片。支持常见的图片格式，比如 JPG、PNG 都可以。</p>
+      </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：AI抠图能处理复杂背景吗？</p>
-      <p class="text-gray-600">答：现代AI抠图工具可以处理大多数复杂背景，但效果取决于主体与背景的对比度。对于头发丝、半透明物体等细节，高端工具表现更好。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图后的图片是什么格式？</p>
-      <p class="text-gray-600">答：通常输出为PNG格式，支持透明背景。如果不需要透明背景，也可以选择JPG格式并指定背景颜色。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：在线抠图工具安全吗？</p>
-      <p class="text-gray-600">答：使用本地处理的工具非常安全，图片不会上传到服务器。避免使用需要上传图片到云端的服务处理敏感照片。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图效果不满意怎么办？</p>
-      <p class="text-gray-600">答：可以尝试更换原图（选择主体更清晰的），或使用支持手动调整的工具进行边缘修正。部分工具提供"保留"和"删除"画笔进行精细调整。</p>
-    </div>
-  </div>
+      <div class="bg-green-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-green-800">第二步：圈出要遮挡的地方</h3>
+        <p class="mb-2">上传后，点击“开始绘制”按钮。然后，就像你用鼠标或手指在屏幕上画框一样，按住并拖动，把需要打码的区域框选出来。</p>
+        <p>你可以<strong>反复框选多个不同的区域</strong>，比如同时把一张图片里的人脸和背景里的文字都遮住。</p>
+      </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让图片处理更简单</h2>
-  <p>AI技术的发展让原本专业的设计技能变得触手可及。智能抠图工具让每个人都能轻松获得专业级的图片处理效果，无论是工作需求还是个人创作，都能事半功倍。</p>
-  
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">✅ 使用建议：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 选择本地处理的工具，保护图片隐私</li>
-      <li>• 上传前确保图片质量，主体清晰</li>
-      <li>• 抠图后检查细节，特别是头发和边缘</li>
-      <li>• 保存为PNG格式保留透明背景</li>
-      <li>• 尝试不同的背景替换，发挥创意</li>
-    </ul>
-  </div>
-  
-  <p class="mt-6 text-center text-gray-600">好的工具能让创意无限延伸。现在就开始体验智能抠图的魔力吧！</p>
+      <div class="bg-yellow-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-yellow-800">第三步：预览和调整</h3>
+        <p class="mb-2">在框选的时候，你就能立刻看到马赛克效果。如果框的位置不对，或者想重来，可以点击“清除全部”，然后重新框选。</p>
+        <p>全部框选满意后，记得点击“完成绘制”。</p>
+      </div>
+
+      <div class="bg-purple-50 p-5 rounded-xl mb-8">
+        <h3 class="text-xl font-medium mb-4 text-purple-800">第四步：保存你的新图片</h3>
+        <p class="mb-2">最后一步最简单，点击“保存图片”。处理好的图片就会保存到你的设备里了，原来图片上被圈选的地方，都变成了格子状的马赛克。</p>
+        <p>接下来，你就可以放心地使用这张处理过的图片了。</p>
+      </div>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">几个常见问题</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-medium mb-2">马赛克打得牢固吗？会被还原吗？</h3>
+        <p class="mb-4">通过这种像素格处理方式打上的马赛克，从常规的图片查看方式来说，信息已经被永久性地模糊处理了，无法直接看清。这是保护隐私的可靠方法。当然，任何技术都没有绝对的“牢不可破”，但对于日常的隐私保护需求来说，这已经足够了。</p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-medium mb-2">会不会影响图片其他部分的质量？</h3>
+        <p class="mb-4">不会。这种工具只会改变你<strong>亲手框选出来的那一小块区域</strong>，图片的其他部分完全保持原样，清晰度不变。</p>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="text-xl font-medium mb-2">在手机上好操作吗？</h3>
+        <p class="mb-4">好的工具会考虑到手机用户。页面布局会自动适应手机屏幕的大小，框选操作也支持手指触摸拖动，和在电脑上用鼠标操作一样方便。</p>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-xl mt-12">
+        <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
+        <p class="mb-3 text-center">给图片打马赛克，核心就是三步：<strong>上传 → 圈选 → 保存</strong>。</p>
+        <p class="text-center">这已经不再是需要专业软件才能做的事。花一分钟时间，动动手指，就能有效地为你的图片加上一道隐私“防护栏”，让自己和他人更安心。</p>
+        <p class="mt-4 text-gray-600 text-sm text-center">下次发图前如果需要遮挡信息，不妨试试看。</p>
+      </div>
+    </div>
+  </article>
 </div>
-`;export{r as default};
+`;export{t as default};

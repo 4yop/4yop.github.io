@@ -1,90 +1,105 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight">网上每天那么多热点，一个页面就能全看完？</h1>
-  <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
-    有没有觉得，每天想看看网上在聊什么，得在好几个软件之间来回切换？一会儿打开微博，一会儿刷刷抖音，再去贴吧逛逛……来回切换不仅麻烦，还容易错过重要的信息。其实，有个更简单的办法。
-  </p>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">快速查看家乡归属！一个工具搞懂“省、市、区、街道”的上下级关系</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700">
-      <span class="font-semibold">简单来说：</span>现在有一个工具，可以把微博、抖音、百度等多个平台的热搜榜，都集合在同一个页面里。你只需要点一下切换，就能看到不同平台最火的话题，不用再反复打开不同的应用了。
-    </p>
+  <div class="text-gray-600 mb-8 leading-relaxed">
+    <p class="mb-4">在生活中，我们常常需要填写或者确认一个地方的详细地址。比如寄快递、办手续，或者只是单纯想了解一下某个地方的行政归属。</p>
+    <p>你是不是也曾困惑：这个县到底属于哪个市？这个街道又归哪个区管？今天，就给大家介绍一个能帮你一秒理清这些关系的小工具，操作简单，一看就会。</p>
   </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它为你解决了什么？</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3 text-gray-700">
-    <li><span class="font-medium">节省时间：</span>不用再一个个应用点开，找热搜入口。所有热门话题一次性呈现。</li>
-    <li><span class="font-medium">快速了解全貌：</span>今天哪个平台最热闹？社会新闻在微博火，还是搞笑段子在抖音热？一眼就能比较。</li>
-    <li><span class="font-medium">不再错过热点：</span>你常刷抖音，可能就错过了微博上正在热议的社会话题。这个工具能帮你查漏补缺。</li>
-    <li><span class="font-medium">发现差异：</span>同一个事件，在不同平台的网友关注点可能完全不同，对比着看很有意思。</li>
-  </ul>
+  <section class="mb-10 bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-sm">
+    <h2 class="text-xl font-bold text-gray-900 mb-3">这是个什么工具？</h2>
+    <p class="text-gray-700 leading-relaxed">
+      简单来说，它就是一个在线的“行政区划查询器”。你可以像剥洋葱一样，从“省份”开始，一层层选择到“乡镇或社区”。每选择一层，它就会自动帮你筛选出下一层所有可选的地方，并最终展示出这个地方完整的“家庭关系”。
+    </p>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它是怎么工作的？</h2>
-  <p class="mb-4 text-gray-700">
-    使用起来非常直观。页面顶部有几个按钮，分别代表不同的平台，比如“微博”、“抖音”、“百度热搜”、“百度贴吧”。
-  </p>
-  <div class="bg-gray-100 p-5 rounded-lg mb-6 border border-gray-300">
-    <h3 class="font-bold text-lg mb-3 text-gray-800">你可以这样操作：</h3>
-    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
-      <li>打开页面，默认看到的是微博的热搜榜。</li>
-      <li>想看抖音的热门视频挑战或话题？点击“抖音”按钮，列表瞬间就切换过去了。</li>
-      <li>每个话题会显示它的排名、标题和大概的热度值。排名前三的通常会标红，比较醒目。</li>
-      <li>点击任何一条热搜的标题，就能在新窗口打开对应的链接，查看详细内容。</li>
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">具体能帮我们解决什么问题？</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">确认地址准确性</h3>
+          <p class="text-gray-600">在网上购物或寄送重要文件时，确保填写的市、区、街道信息准确无误，避免快递送错或手续延误。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">了解地域归属</h3>
+          <p class="text-gray-600">听说一个地方的名字，想快速知道它属于哪个更大的行政区划。比如，想知道“义乌市”上面是“金华市”还是“浙江省”直管？用它一查便知。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-yellow-100 text-yellow-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-1">获取官方编码</h3>
+          <p class="text-gray-600">有些正式表格或系统需要填写行政区划的官方数字代码。这个工具在展示信息的同时，也提供了对应的标准代码，并且可以一键复制，非常方便。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">如何使用？非常简单！</h2>
+    <p class="text-gray-700 mb-6 leading-relaxed">整个过程就像在手机上设置导航一样直观，只需要点选几下。</p>
+    <ol class="space-y-6 border border-gray-200 rounded-lg p-6 bg-white">
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">①</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">第一步：选择省份或直辖市</h4>
+          <p class="text-gray-600">打开页面后，第一个下拉框会列出全国所有的省、自治区、直辖市和特别行政区。从中找到你想查的省份，比如“广东省”。如果列表太长，你还可以直接在框里输入名字搜索。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">②</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">第二步：选择城市或地区</h4>
+          <p class="text-gray-600">选择省份后，第二个下拉框会自动变成可选状态，里面只显示属于该省的所有地级市或地区。这时你就可以选择“广州市”。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">③</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">后续步骤：逐级深入</h4>
+          <p class="text-gray-600">接着，第三个框会列出“广州市”下辖的所有区或县级市（如“天河区”），选择后，第四个框会进一步列出该区下辖的街道或镇。你可以一直选到你想要了解的层级。</p>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row items-start sm:items-center">
+        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">✓</div>
+        <div>
+          <h4 class="font-medium text-gray-900 mb-1">立刻得到结果</h4>
+          <p class="text-gray-600">每当你做出一个选择，页面右侧就会立刻更新，清晰显示出从省到当前级别的完整路径。所有信息一目了然。</p>
+        </div>
+      </li>
     </ol>
-  </div>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">有什么特别之处？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 清晰明了
-      </h3>
-      <p class="text-gray-700">界面设计得很干净，没有乱七八糟的广告或多余信息。就是纯粹的热搜榜单，让你专注在内容本身。</p>
+  <section class="mb-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
+    <h2 class="text-xl font-bold mb-4 text-gray-900">几个贴心的小设计</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">随时可以重来</h3>
+        <p class="text-sm text-gray-600">如果选错了或者想查另一个地方，只需要点击“重置查询”按钮，所有选项就会清空，你可以从头开始新的查询。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">结果清晰直观</h3>
+        <p class="text-sm text-gray-600">右侧结果栏不仅会显示一个完整的文字路径（例如：广东省 / 广州市 / 天河区），还会将每一级的官方数字编码单独列出。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">编码一键复制</h3>
+        <p class="text-sm text-gray-600">如果你需要用到某个行政区划的编码，只需要点击结果中对应编码旁边的区域，它就会自动复制到你的剪贴板，省去了手动输入的麻烦。</p>
+      </div>
+      <div class="p-4 bg-white rounded border border-gray-100">
+        <h3 class="font-medium text-gray-900 mb-2">全程无需等待</h3>
+        <p class="text-sm text-gray-600">所有数据都已提前准备好，选择操作和结果展示都是瞬间完成的，你不会有“正在加载”的卡顿感。</p>
+      </div>
     </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 实时更新
-      </h3>
-      <p class="text-gray-700">榜单上方会显示最近的更新时间，让你知道看到的信息是不是最新的。数据也会定期刷新。</p>
-    </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 多端适配
-      </h3>
-      <p class="text-gray-700">无论是在电脑的大屏幕上，还是用手机的小屏幕浏览，页面的排版都会自动调整，看得都很舒服。</p>
-    </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 快速加载
-      </h3>
-      <p class="text-gray-700">切换平台时，数据加载很快。如果正在加载，你会看到一个转圈的小动画，知道页面正在工作，不会以为是卡住了。</p>
-    </div>
-  </div>
+  </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">你可能会问的问题</h2>
-  <div class="space-y-6 mb-10">
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">数据是实时的吗？</h3>
-      <p class="text-gray-700">它展示的是各个平台官方或公开的热搜榜单，数据会尽可能保持同步更新。但和原平台相比，可能会有几分钟的延迟，这属于正常情况。</p>
-    </div>
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">为什么没有知乎或B站？</h3>
-      <p class="text-gray-700">目前主要集成了几个用户量最大、热搜文化最典型的平台。未来可能会根据大家的需求，加入更多平台的选择。</p>
-    </div>
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">这个工具安全吗？</h3>
-      <p class="text-gray-700">它只是一个信息的“展示窗口”。当你点击某条热搜时，会跳转到对应平台的官方网站或页面，浏览和互动过程都在原平台进行，所以和直接访问那些网站是一样的。</p>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-300">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800">写在最后</h2>
-    <p class="text-gray-700 mb-4">
-      在这个信息满天飞的时代，我们需要的可能不是更多信息，而是更高效获取信息的方式。一个聚合多个平台热搜的工具，就像给你的手机或电脑装了一个“热点雷达”。
-    </p>
-    <p class="text-gray-700">
-      它帮你省去了反复切换的麻烦，让你用最短的时间，快速把握当天各个社交平台上的脉搏。无论是想跟上潮流、寻找谈资，还是单纯不想与社会脱节，这或许都是一个值得尝试的省心选择。
-    </p>
+  <div class="text-center mt-12 pt-8 border-t border-gray-200">
+    <p class="text-gray-700 italic">希望这个简单的小工具，能在你需要理清地址归属的时候，帮上一点小忙。</p>
   </div>
 </div>
-`;export{s as default};
+`;export{e as default};

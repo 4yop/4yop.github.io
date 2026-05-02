@@ -1,157 +1,97 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    一个好用的在线便签工具，能帮你随时随地记录想法
-  </h1>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h2>
+    <p class="text-lg text-gray-600 mb-8 text-center">无论是社区篮球赛、家庭桌游夜，还是公司内部竞赛，一个清晰、好看的记分板能让比赛体验立刻升级。</p>
 
-  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
-    <p>
-      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
-    </p>
-  </div>
+    <div class="my-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
+      <p class="text-blue-800">你是不是也遇到过这些情况？组织一场小比赛，比分靠手写纸片，看不清还容易出错；或者临时找不到合适的工具来展示实时比分，让观众和参与者一头雾水。</p>
+    </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
-    <p class="text-gray-700">
-      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
-    </p>
-  </div>
+    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">告别混乱，比赛记分可以很简单</h2>
+    <p class="mb-4">过去，我们可能需要专门的设备或复杂的软件来管理比赛比分。但现在，一个轻便的在线工具就能解决所有问题。它的核心目标只有一个：让每个人，无论在场内还是远处，都能一目了然地看到比赛进展。</p>
+    <p class="mb-4">想象一下，在社区羽毛球赛现场，一块大屏幕上实时跳动着你支持的队伍比分；或者家庭玩扑克牌时，手机屏幕就是你们的计分中心。这能让任何形式的竞技都变得更有仪式感和趣味性。</p>
 
-  <div class="space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何使用这个便签工具？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        使用非常简单，就像用真实的便利贴一样。
-      </p>
-      <ul class="list-disc pl-6 space-y-3 text-gray-700">
-        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
-        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
-        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
-        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
-        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
-      </ul>
-    </section>
+    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">一个好用的记分工具，应该具备哪些特点？</h2>
+    <ul class="list-disc pl-5 space-y-2 mb-6">
+      <li><span class="font-medium">实时更新比分</span>：比分变化能立刻显示出来，没有延迟。</li>
+      <li><span class="font-medium">操作极其简单</span>：不需要学习，上手就能点按加减分数。</li>
+      <li><span class="font-medium">视觉清晰直观</span>：数字够大，颜色分明，远处也能看清。</li>
+      <li><span class="font-medium">适应各种场合</span>：既能在手机、平板上用，也能投屏到电视或投影仪上。</li>
+      <li><span class="font-medium">帮你掌握节奏</span>：可以设置比赛总时长，显示剩余时间。</li>
+    </ul>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        便签上的小工具能做什么？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        每张便签底部都有一排小按钮，能让你的文字更丰富。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li><b>B</b>：加粗文字</li>
-            <li><i>I</i>：让文字倾斜</li>
-            <li><u>U</u>：给文字加下划线</li>
-            <li><s>ab</s>：给文字划上删除线</li>
-            <li>Points：创建项目符号列表</li>
-          </ul>
+    <div class="my-8 p-6 bg-gray-50 rounded-xl">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">它能用在哪些地方？</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium text-gray-800 mb-1">社区与校园比赛</h4>
+          <p class="text-sm text-gray-600">篮球、足球、乒乓球友谊赛，运动会项目计分。</p>
         </div>
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
-          <p class="text-gray-700">
-            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
-          </p>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium text-gray-800 mb-1">家庭与朋友聚会</h4>
+          <p class="text-sm text-gray-600">桌游、棋牌、家庭趣味竞技，让游戏计分不再麻烦。</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium text-gray-800 mb-1">社团与兴趣小组</h4>
+          <p class="text-sm text-gray-600">电竞对战、台球比赛、读书会知识竞赛等。</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium text-gray-800 mb-1">企业内部活动</h4>
+          <p class="text-sm text-gray-600">团队建设比赛、技能比武、年会游戏环节。</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何保护我的便签内容？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-            导出备份
-          </h3>
-          <p class="text-gray-700">
-            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
-          </p>
-        </div>
-        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-            导入恢复
-          </h3>
-          <p class="text-gray-700">
-            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
-          </p>
-        </div>
+    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">三步上手，轻松管理你的比赛</h2>
+    <p class="mb-6">使用这样的工具，就像操作一个简单的遥控器。你不需要懂技术，只需要关注比赛本身。</p>
+    <ol class="list-decimal pl-5 space-y-6 mb-8">
+      <li>
+        <span class="font-medium text-gray-800">第一步：设定基础信息</span>
+        <p class="mt-1 text-gray-600">给你的两支队伍起个名字，比如“旋风队”和“勇者队”。设定一下比赛的预计结束时间，这样大家都能看到倒计时。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-800">第二步：开始记分</span>
+        <p class="mt-1 text-gray-600">比赛开始后，哪个队伍得分了，就在对应的队伍下面点一下“+”号。如果计分员不小心加错了，点“-”号就能减回去。所有改动都会自动保存。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-800">第三步：全屏展示</span>
+        <p class="mt-1 text-gray-600">当需要把比分展示给大家看时，只需要点击一下“全屏显示”，整个屏幕就会变成一块简洁大气的大记分牌，非常适合投屏。</p>
+      </li>
+    </ol>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么说它提升了比赛体验？</h2>
+    <p class="mb-4">一个专业的记分板，看似只是显示了几个数字，但它实际上解决了比赛组织中的几个核心痛点：</p>
+    <ul class="list-disc pl-5 space-y-2 mb-6">
+      <li><span class="font-medium">公平公正，一目了然</span>：所有人都盯着同一个权威比分来源，避免了因听错或看错产生的争议。</li>
+      <li><span class="font-medium">营造紧张氛围</span>：跳动的数字和倒数的时间，能有效点燃参赛者和观众的热情。</li>
+      <li><span class="font-medium">解放组织者</span>：无需再专门安排一个人反复大声报分或更新黑板，省时省力。</li>
+      <li><span class="font-medium">灵活适配</span>：你可以根据比赛的主题颜色，调整记分板的背景和文字颜色，让它更贴合现场风格。</li>
+    </ul>
+
+    <div class="my-10 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border text-center">
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">让下一场比赛更精彩</h3>
+      <p class="text-gray-700 mb-4">工具的价值在于为人服务。一个好的记分工具，就是让组织者更省心，让参与者更投入，让观众更尽兴。它把琐碎的管理事务变得简单，把大家的注意力重新聚焦到比赛的乐趣和竞技本身。</p>
+      <p class="font-medium text-gray-800">如果你正在筹划一场比赛，或者希望日常的游戏竞争更有趣，不妨试试这个免费、简单又直观的解决方案。</p>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
+    <div class="space-y-4 mb-10">
+      <div>
+        <h4 class="font-medium text-gray-800">这个工具是免费的吗？</h4>
+        <p class="text-gray-600">是的，这是一个完全免费的工具，无需下载安装，在浏览器中打开即可使用。</p>
       </div>
-      <p class="mt-4 text-gray-600 text-sm">
-        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
-      </p>
-    </section>
+      <div>
+        <h4 class="font-medium text-gray-800">需要注册账号吗？</h4>
+        <p class="text-gray-600">完全不需要。所有设置和比分数据都会自动保存在你当前使用的设备上，方便下次继续。</p>
+      </div>
+      <div>
+        <h4 class="font-medium text-gray-800">除了两队对战，能记录更多队伍吗？</h4>
+        <p class="text-gray-600">目前的设计专注于两支队伍的对决场景，这是最常见的比赛形式，能确保界面最清晰、操作最直接。</p>
+      </div>
+    </div>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        适合哪些场景使用？
-      </h2>
-      <ul class="grid md:grid-cols-2 gap-4">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-yellow-800 font-medium">1</span>
-          </div>
-          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-pink-800 font-medium">2</span>
-          </div>
-          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-green-800 font-medium">3</span>
-          </div>
-          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-purple-800 font-medium">4</span>
-          </div>
-          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-        几个贴心的小提示
-      </h2>
-      <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
-    <p class="text-gray-600">
-      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
-    </p>
-    <p class="text-gray-500 text-sm mt-2">
-      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
-    </p>
-  </div>
-</article>
+    <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">希望这篇文章能帮你找到轻松管理比赛比分的好方法。祝你的每一场比赛都组织顺利，精彩纷呈！</p>
+  </article>
+</div>
 `;export{s as default};

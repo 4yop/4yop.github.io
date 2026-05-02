@@ -1,40 +1,107 @@
 const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
-      <p class="text-sm leading-7">
-        这页适合把截图、扫描件和照片里的文字提取出来，支持继续复制文本或导出结果。
-        对票据整理、表格录入、试卷摘录和扫描文档提取这类场景很方便。
-      </p>
-    </section>
-
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>先选对识别语言，再上传图片；混合内容时优先选更接近主体的语言。</li>
-        <li>图片尽量裁正、提高对比度，识别结果通常会更稳。</li>
-        <li>批量处理时先看前几张结果，再决定是否整批导出。</li>
-        <li>识别错得比较明显的单张图片，单独重跑通常比整批重复更省时间。</li>
-      </ol>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>手写字能识别吗？</strong> 可以尝试，但规整印刷体和清晰截图通常更准，潦草手写体更容易出错。</p>
-        <p><strong>为什么同一批图效果差别很大？</strong> 最常见原因是清晰度、倾斜角度、背景干扰和语言选择不一致。</p>
-        <p><strong>结果能继续整理吗？</strong> 可以，页面支持复制文本和导出结果，方便后续清洗和复核。</p>
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
+  
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
+  </div>
+  
+  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
+      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
+      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
+      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
+      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
+  
+  <div class="mb-8">
+    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
+    
+    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
+      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
+      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
+      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
+    </ul>
+  </div>
+  
+  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
+      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
+    </div>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
+      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
+    </div>
+    
+    <div>
+      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
+      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
+  
+  <div class="mb-8">
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">1</div>
       </div>
-    </section>
-
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        如果你还在比较本地 OCR 和在线 OCR 的差别，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/local-ocr-vs-online-ocr/">《本地 OCR 和在线 OCR 怎么选》</a>。
-      </p>
-    </section>
-  </article>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
+        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
+      </div>
+    </div>
+    
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">2</div>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
+        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
+      </div>
+    </div>
+    
+    <div class="flex items-start">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">3</div>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
+        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
+    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
+    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
+  </div>
 </div>
 `;export{t as default};

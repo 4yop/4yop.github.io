@@ -1,153 +1,110 @@
 const t=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 lg:px-8 text-gray-800">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight">路上的车牌号，你真的看懂了吗？</h1>
-  <p class="text-gray-600 mb-6 md:mb-8 text-lg">每次看到车牌上的简称，你是不是也好奇过它代表哪里？这篇文章帮你轻松读懂车牌的秘密。</p>
+<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">你的身份证号码里，藏着哪些不为人知的“小秘密”？</h1>
 
-  <!-- 导语引入场景 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-8">
-    <p class="font-medium">想象一下这些场景：</p>
-    <ul class="mt-2 pl-5 list-disc text-gray-700 space-y-1">
-      <li>在停车场看到一辆“粤B”的车，想知道它来自哪个城市。</li>
-      <li>朋友告诉你他的新车牌是“苏A”，你想知道这代表什么地方。</li>
-      <li>去外地旅行，看到满街的“川A”，好奇这是哪里的车辆。</li>
-    </ul>
-    <p class="mt-4">其实，车牌的第一个字，就像车辆的“身份证地址”，看一眼就能知道它的大概归属地。下面我们就来详细了解一下。</p>
+  <div class="mb-8">
+    <p class="text-lg text-gray-700 mb-4">
+      你知道吗？你的身份证号码里，其实藏着不少关于你的小秘密。它不仅仅是一串用来证明“你是谁”的数字，更像是一个精心设计的个人信息“密码本”。
+    </p>
+    <p class="text-gray-600">
+      今天，我们不谈复杂的科技，就聊聊这18位数字，是如何在不泄露你隐私的前提下，告诉我们你的故事。
+    </p>
   </div>
 
-  <!-- 第一部分：车牌的基本构成 -->
-  <section class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4 pb-2 border-b border-gray-200">一、车牌上的字母和汉字，是什么意思？</h2>
-    <p class="mb-4">中国的车牌，有一套全国统一的规则。它主要告诉我们两件事：<strong>这辆车是哪个省的</strong>，以及<strong>在省内的哪个城市注册的</strong>。</p>
-    
-    <div class="my-6 p-5 bg-gray-100 rounded-xl">
-      <p class="font-medium mb-2">举个最常见的例子：</p>
-      <p>车牌 <span class="text-2xl font-bold text-blue-600 mx-2">粤B·12345</span></p>
-      <ul class="mt-3 pl-5 list-decimal space-y-2">
-        <li><span class="font-medium">“粤”</span>：这是省份的简称，代表 <strong>广东省</strong>。每个省、自治区、直辖市都有一个对应的汉字。</li>
-        <li><span class="font-medium">“B”</span>：这是城市代号，代表这个车牌是在 <strong>广东省深圳市</strong> 注册上牌的。</li>
-        <li><span class="font-medium">“12345”</span>：这是车辆的序列编号。</li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">安全第一：你的信息，只留在你的设备里</h2>
+    <p class="text-gray-700">
+      在开始探索之前，最重要的事情是安全。我们使用的解析工具，其核心原则是<span class="font-medium text-blue-700">“本地解析，数据不上传”</span>。这意味着，当你输入号码后，所有的计算和解读都在你自己的手机或电脑里瞬间完成，结果一出来，过程就结束了。没有服务器记录，没有网络传输，就像用一个离线的计算器一样私密。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">解码18位数字：你的“人生简史”</h2>
+  <p class="text-gray-600 mb-6">
+    让我们把身份证号码拆开看看，每一段数字都有它特定的使命：
+  </p>
+
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 你的“根源”：前6位地址码</h3>
+      <p class="text-gray-700">
+        这就像是你的“数字籍贯”。它对应着你最初申领身份证时所在的省、市、区（县）。通过它，工具可以快速定位并显示出你对应的行政区划名称。有时候，这可能会让你想起自己的故乡。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 最重要的时刻：中间8位生日码</h3>
+      <p class="text-gray-700">
+        这是号码里最直白的一部分，直接记录了你的公历出生年月日。但有趣的是，工具还能从这里延伸出更多信息：
+      </p>
+      <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
+        <li><span class="font-medium">当前年龄</span>：自动帮你算好，不用再掰着手指头数。</li>
+        <li><span class="font-medium">农历生日</span>：很多传统节日和习俗看农历，知道自己的农历生日，也许能让庆祝更有仪式感。</li>
+        <li><span class="font-medium">出生那天是星期几</span>：一个有趣的生活冷知识，或许是你人生一个平凡又特别的开始。</li>
       </ul>
     </div>
-    <p>所以，记住这个规律：<strong>第一个汉字看省份，后面的字母看城市</strong>。</p>
-  </section>
 
-  <!-- 第二部分：常见省份简称速查 -->
-  <section class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4 pb-2 border-b border-gray-200">二、快速认识常见省份简称</h2>
-    <p class="mb-4">很多省份的简称都取自其历史名称或地理特征。记住下面这些常见的，你就能认出大部分车辆了。</p>
-    
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 my-6">
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">京</div>
-        <div class="text-sm font-medium">北京</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">沪</div>
-        <div class="text-sm font-medium">上海</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">粤</div>
-        <div class="text-sm font-medium">广东</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">苏</div>
-        <div class="text-sm font-medium">江苏</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">浙</div>
-        <div class="text-sm font-medium">浙江</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">鲁</div>
-        <div class="text-sm font-medium">山东</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">川</div>
-        <div class="text-sm font-medium">四川</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">豫</div>
-        <div class="text-sm font-medium">河南</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">鄂</div>
-        <div class="text-sm font-medium">湖北</div>
-      </div>
-      <div class="p-4 bg-white border border-gray-300 rounded-lg text-center">
-        <div class="text-2xl font-bold text-blue-700 mb-1">湘</div>
-        <div class="text-sm font-medium">湖南</div>
-      </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 独特的身份标识：接下来的3位顺序码</h3>
+      <p class="text-gray-700">
+        这3位数字信息量很大。其中，<span class="font-medium">第17位（即倒数第二位）的奇偶性，直接决定了性别</span>：奇数通常代表男性，偶数通常代表女性。这是号码里隐藏的一个关键“彩蛋”。
+      </p>
     </div>
-    
-    <p class="text-gray-600 text-sm">有些简称很有趣，比如“鄂”代表湖北，源于古代的鄂州；“豫”代表河南，源于古九州之一的豫州。</p>
-  </section>
 
-  <!-- 第三部分：如何轻松查询（对应工具功能） -->
-  <section class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4 pb-2 border-b border-gray-200">三、遇到不认识的简称，怎么查？</h2>
-    <p class="mb-4">中国的省份和城市很多，不可能全部记住。现在有很方便的查询工具，可以帮你一秒破解车牌归属地。</p>
-
-    <div class="bg-gray-50 p-5 rounded-xl my-6">
-      <h3 class="font-bold text-xl mb-3 text-gray-800">一个好的查询工具，通常有这些特点：</h3>
-      <ul class="space-y-3">
-        <li class="flex items-start">
-          <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 flex-shrink-0">1</span>
-          <span><strong>智能纠错</strong>：如果你不小心把“粤”打成了同音的“月”，它能自动帮你纠正成正确的“粤”，非常贴心。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 flex-shrink-0">2</span>
-          <span><strong>模糊查询</strong>：不用输入完整车牌。只输入一个“粤”字，它就能列出广东省所有主要城市的车牌代号，比如粤A（广州）、粤B（深圳）。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 flex-shrink-0">3</span>
-          <span><strong>历史记录</strong>：你之前查过的车牌号会自动保存下来，下次想再看的时候，点一下就行，不用重复输入。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 flex-shrink-0">4</span>
-          <span><strong>快速选择</strong>：工具页面通常会列出一些常见省份的按钮，比如“北京京”、“广东粤”，点一下就能直接查，特别省事。</span>
-        </li>
-      </ul>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 最后的守护者：末尾校验码</h3>
+      <p class="text-gray-700">
+        最后一位数字（有时是X）不是随便写的。它是通过一套严谨的数学公式计算出来的，专门用来<span class="font-medium">检验前面17位数字是否正确</span>。如果输入错误，校验码就对不上，工具会提示号码无效。它是这串数字“密码”的防盗锁。
+      </p>
     </div>
-    
-    <p>使用起来也非常简单：在搜索框里输入你看到的车牌简称（比如“陕A”、“皖”），然后点击查询，结果马上就会显示这个车牌属于哪个省、哪个市。</p>
-  </section>
+  </div>
 
-  <!-- 第四部分：常见问答 -->
-  <section class="mb-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4 pb-2 border-b border-gray-200">四、关于车牌，你可能还想知道</h2>
-    
+  <h2 class="text-2xl font-bold mt-12 mb-4 text-gray-900">除了基本信息，还有哪些趣味解读？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的星座</h3>
+      <p class="text-gray-700">
+        根据你的阳历生日，可以轻松对应到十二星座之一。是细致周到的处女座，还是热情开朗的射手座？这个“标签”常常是朋友间有趣的谈资。
+      </p>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的生肖</h3>
+      <p class="text-gray-700">
+        结合农历年份，就能知道你的生肖属相。这是中国传统文化中一个非常重要的符号，承载着岁月轮回的独特纪念。
+      </p>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-200 pt-8 mt-10">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">常见疑问解答</h2>
     <div class="space-y-6">
       <div>
-        <h3 class="font-bold text-lg mb-2 text-gray-800">1. 所有城市的车牌字母都是按顺序排的吗？</h3>
-        <p class="text-gray-700">大部分情况下，一个省内的A通常代表省会城市，比如川A是成都，湘A是长沙。但后面的字母（B、C、D...）分配则因省而异，有的按城市成立早晚，有的按地理位置，并没有全国完全统一的顺序。</p>
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：输入我的身份证号，真的安全吗？</h3>
+        <p class="text-gray-700">
+          <strong>答：安全。</strong>这正是本地解析工具最大的优势。整个过程在你的设备上完成，就像你在自己的本子上做计算一样，算完结果就在眼前，本子上的原始数据不会被拍照上传。你的号码从未离开过你的设备。
+        </p>
       </div>
       <div>
-        <h3 class="font-bold text-lg mb-2 text-gray-800">2. 为什么有些车牌是“使”或“领”字开头？</h3>
-        <p class="text-gray-700">那是外国驻华使馆（“使”字牌）或外国领馆（“领”字牌）的车辆，和我们普通的民用车牌（蓝牌、绿牌）不是一个系统。</p>
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：为什么我看到的籍贯和我知道的不一样？</h3>
+        <p class="text-gray-700">
+          <strong>答：这很正常。</strong>身份证上的地址码，记录的是你首次申领身份证时的户籍所在地。如果你后来迁移了户口，或者出生地与户籍地不同，这里显示的信息就可能和你现在认为的“老家”有出入。它是一份历史的数字记录。
+        </p>
       </div>
       <div>
-        <h3 class="font-bold text-lg mb-2 text-gray-800">3. 查询结果准确吗？</h3>
-        <p class="text-gray-700">这类工具的数据都来源于官方发布的机动车号牌标准，对于判断<strong>车牌简称对应的省份和主要城市</strong>是非常准确的，可以作为日常参考。当然，最权威的信息还是要以车辆管理部门的记录为准。</p>
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：这个工具能用来做什么？</h3>
+        <p class="text-gray-700">
+          <strong>答：主要是满足个人好奇心和对信息的了解。</strong>它可以帮你快速查看身份证上的基本信息，验证号码格式是否正确，或者了解一下号码背后的传统文化元素（如农历、生肖）。它并非官方验证工具，不能用于任何正式的身份认证场景。
+        </p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- 总结 -->
-  <section class="bg-gray-100 p-6 md:p-8 rounded-2xl">
-    <h2 class="text-2xl font-bold mb-4">总结一下</h2>
-    <p class="mb-4">读懂车牌号，其实就是读懂了一个简单的“地址代码”。</p>
-    <ul class="mb-4 space-y-2">
-      <li>• <strong>记住规律</strong>：汉字看省，字母看市。</li>
-      <li>• <strong>善用工具</strong>：遇到不认识的，用查询工具一秒搞定。</li>
-      <li>• <strong>生活小应用</strong>：旅行时认认当地车牌，停车场找车时留意下省份，都是很有意思的观察。</li>
-    </ul>
-    <p>希望这篇文章能帮你解开对车牌号的小疑惑。下次再看到路上的车辆，不妨试试看，你能认出几个？</p>
-  </section>
-
-  <!-- 页脚声明 -->
-  <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-gray-500 text-sm">
-    <p>本文内容仅供参考。车牌信息数据依据中华人民共和国机动车号牌标准。</p>
-  </footer>
-</article>
+  <div class="mt-12 p-6 bg-gray-50 rounded-lg text-center">
+    <p class="text-gray-700 mb-2">
+      一个小小的身份证号码，原来包含了从地域、时间到个人特征的多种信息。科技让解读这些信息变得简单，而本地处理的方式，则为我们守护了最重要的隐私安全。
+    </p>
+    <p class="text-gray-600">
+      如果你也对自己的这串“人生密码”感到好奇，不妨用注重隐私的本地工具，亲自探索一下。
+    </p>
+  </div>
+</div>
 `;export{t as default};

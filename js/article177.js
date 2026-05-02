@@ -1,97 +1,124 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h2>
-    <p class="text-lg text-gray-600 mb-8 text-center">无论是社区篮球赛、家庭桌游夜，还是公司内部竞赛，一个清晰、好看的记分板能让比赛体验立刻升级。</p>
+<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 py-8">
+  <!-- 标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center leading-tight">
+    和朋友打游戏王还在口算？一个聪明工具帮你搞定所有记分烦恼
+  </h1>
 
-    <div class="my-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
-      <p class="text-blue-800">你是不是也遇到过这些情况？组织一场小比赛，比分靠手写纸片，看不清还容易出错；或者临时找不到合适的工具来展示实时比分，让观众和参与者一头雾水。</p>
+  <!-- 引言 -->
+  <p class="text-lg mb-8 text-gray-600 text-center">
+    你是否曾因复杂的生命值计算中断了紧张刺激的决斗？试试这个专为游戏王玩家设计的贴心助手。
+  </p>
+
+  <div class="bg-gray-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-gray-700">
+      无论你是刚入坑的新手，还是经验丰富的老玩家，精准便捷地记录生命值，能让你的对局体验提升一个档次。
+    </p>
+  </div>
+
+  <!-- 主体内容第一部分 -->
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
+    为什么你需要一个专门的生命值计算器？
+  </h2>
+  <p class="mb-4">
+    回想一下你和朋友的对战场景。一方发动了效果，另一方连锁，生命值就像坐过山车一样上上下下。这时候，你们是不是常常需要：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-700">
+    <li>暂停游戏，拿出手机计算器反复按</li>
+    <li>担心自己算错，要求对方再算一遍</li>
+    <li>用纸笔记录，但字迹潦草过后就忘</li>
+    <li>在多人群战时，完全搞不清谁还剩多少生命值</li>
+  </ul>
+  <p class="mb-6">
+    这些瞬间不仅打断了流畅的对战节奏，还可能引发不必要的争执。一个顺手好用的记分工具，能让你们完全沉浸于策略的较量中。
+  </p>
+
+  <!-- 功能介绍 -->
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
+    它如何让你们的对战变得更轻松？
+  </h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-600">一、多种模式，适应各种对局</h3>
+    <p class="mb-4">
+      就像游戏王有不同的玩法规则一样，这个工具也准备了不同的模式。
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
+        <h4 class="font-bold mb-2">经典1对1</h4>
+        <p class="text-sm text-gray-600">最常用的模式，标准8000点生命值开局，适合大部分日常切磋。</p>
+      </div>
+      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
+        <h4 class="font-bold mb-2">激动人心的2v2</h4>
+        <p class="text-sm text-gray-600">团队战专用，每队共享16000点生命值，协同作战的体验拉满。</p>
+      </div>
+      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
+        <h4 class="font-bold mb-2">自由自定义</h4>
+        <p class="text-sm text-gray-600">想玩点特别的？可以自由设定初始生命值，满足你的各种创意规则。</p>
+      </div>
     </div>
+  </div>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">告别混乱，比赛记分可以很简单</h2>
-    <p class="mb-4">过去，我们可能需要专门的设备或复杂的软件来管理比赛比分。但现在，一个轻便的在线工具就能解决所有问题。它的核心目标只有一个：让每个人，无论在场内还是远处，都能一目了然地看到比赛进展。</p>
-    <p class="mb-4">想象一下，在社区羽毛球赛现场，一块大屏幕上实时跳动着你支持的队伍比分；或者家庭玩扑克牌时，手机屏幕就是你们的计分中心。这能让任何形式的竞技都变得更有仪式感和趣味性。</p>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">一个好用的记分工具，应该具备哪些特点？</h2>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">实时更新比分</span>：比分变化能立刻显示出来，没有延迟。</li>
-      <li><span class="font-medium">操作极其简单</span>：不需要学习，上手就能点按加减分数。</li>
-      <li><span class="font-medium">视觉清晰直观</span>：数字够大，颜色分明，远处也能看清。</li>
-      <li><span class="font-medium">适应各种场合</span>：既能在手机、平板上用，也能投屏到电视或投影仪上。</li>
-      <li><span class="font-medium">帮你掌握节奏</span>：可以设置比赛总时长，显示剩余时间。</li>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-600">二、操作简单，快如闪电</h3>
+    <p class="mb-4">
+      它的设计核心就是“快”。在决斗中，每一次计算都应该在瞬息间完成。
+    </p>
+    <ul class="list-disc pl-5 mb-4 space-y-2">
+      <li><strong>核心操作：</strong>输入数值，点“增加”或“减少”，完成。就这么简单。</li>
+      <li><strong>快捷按键：</strong>常用的+500、+1000，以及“生命值减半”都有独立按钮，一键到位。</li>
+      <li><strong>为移动端优化：</strong>在手机上按钮够大，间距合适，不会误触，躺着玩也能轻松操作。</li>
     </ul>
+  </div>
 
-    <div class="my-8 p-6 bg-gray-50 rounded-xl">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">它能用在哪些地方？</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社区与校园比赛</h4>
-          <p class="text-sm text-gray-600">篮球、足球、乒乓球友谊赛，运动会项目计分。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">家庭与朋友聚会</h4>
-          <p class="text-sm text-gray-600">桌游、棋牌、家庭趣味竞技，让游戏计分不再麻烦。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社团与兴趣小组</h4>
-          <p class="text-sm text-gray-600">电竞对战、台球比赛、读书会知识竞赛等。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">企业内部活动</h4>
-          <p class="text-sm text-gray-600">团队建设比赛、技能比武、年会游戏环节。</p>
-        </div>
-      </div>
-    </div>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-600">三、像裁判一样自动记录</h3>
+    <p class="mb-4">
+      它不仅是计算器，更是一个称职的“对战记录员”。
+    </p>
+    <p class="mb-4">
+      每一次生命值的变动，都会被精确地记录下来：什么时间、变化了多少、最终结果是多少。对局结束后，你可以清晰地回顾整个对战过程，复盘关键操作，或者解决“刚才是不是算错了”的疑问。
+    </p>
+  </div>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">三步上手，轻松管理你的比赛</h2>
-    <p class="mb-6">使用这样的工具，就像操作一个简单的遥控器。你不需要懂技术，只需要关注比赛本身。</p>
-    <ol class="list-decimal pl-5 space-y-6 mb-8">
-      <li>
-        <span class="font-medium text-gray-800">第一步：设定基础信息</span>
-        <p class="mt-1 text-gray-600">给你的两支队伍起个名字，比如“旋风队”和“勇者队”。设定一下比赛的预计结束时间，这样大家都能看到倒计时。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第二步：开始记分</span>
-        <p class="mt-1 text-gray-600">比赛开始后，哪个队伍得分了，就在对应的队伍下面点一下“+”号。如果计分员不小心加错了，点“-”号就能减回去。所有改动都会自动保存。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第三步：全屏展示</span>
-        <p class="mt-1 text-gray-600">当需要把比分展示给大家看时，只需要点击一下“全屏显示”，整个屏幕就会变成一块简洁大气的大记分牌，非常适合投屏。</p>
-      </li>
-    </ol>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么说它提升了比赛体验？</h2>
-    <p class="mb-4">一个专业的记分板，看似只是显示了几个数字，但它实际上解决了比赛组织中的几个核心痛点：</p>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">公平公正，一目了然</span>：所有人都盯着同一个权威比分来源，避免了因听错或看错产生的争议。</li>
-      <li><span class="font-medium">营造紧张氛围</span>：跳动的数字和倒数的时间，能有效点燃参赛者和观众的热情。</li>
-      <li><span class="font-medium">解放组织者</span>：无需再专门安排一个人反复大声报分或更新黑板，省时省力。</li>
-      <li><span class="font-medium">灵活适配</span>：你可以根据比赛的主题颜色，调整记分板的背景和文字颜色，让它更贴合现场风格。</li>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-600">四、贴心的细节设计</h3>
+    <p class="mb-4">
+      一些你可能没注意到，但用起来会感觉很舒服的功能：
+    </p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>记住你的习惯：</strong>如果你和固定的朋友玩，可以输入他们的名字，下次会自动提示，不用每次都输。</li>
+      <li><strong>数据自动保存：</strong>就算不小心关闭了浏览器页面，或者手机来电话中断了游戏，重新打开，对局数据依然还在。</li>
+      <li><strong>随时重新开始：</strong>一局打完，点一下“重开一局”，所有数据瞬间归位，准备迎接下一场决斗。</li>
     </ul>
+  </div>
 
-    <div class="my-10 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border text-center">
-      <h3 class="text-2xl font-bold text-gray-800 mb-3">让下一场比赛更精彩</h3>
-      <p class="text-gray-700 mb-4">工具的价值在于为人服务。一个好的记分工具，就是让组织者更省心，让参与者更投入，让观众更尽兴。它把琐碎的管理事务变得简单，把大家的注意力重新聚焦到比赛的乐趣和竞技本身。</p>
-      <p class="font-medium text-gray-800">如果你正在筹划一场比赛，或者希望日常的游戏竞争更有趣，不妨试试这个免费、简单又直观的解决方案。</p>
-    </div>
+  <!-- 场景化描述 -->
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
+    它会出现在你的哪些游戏场景里？
+  </h2>
+  <div class="bg-blue-50 p-6 rounded-lg mb-8">
+    <p class="font-semibold mb-2">周末的朋友聚会：</p>
+    <p class="mb-4 text-gray-700">大家围坐在一起，手机或平板放在桌子中央，所有人都能清楚看到当前生命值，争议少了，欢乐多了。</p>
+    <p class="font-semibold mb-2">卡店的小型比赛：</p>
+    <p class="mb-4 text-gray-700">除了正式的记分纸，用它作为辅助记录，能让你的计算更准确，避免因分数错误影响比赛成绩。</p>
+    <p class="font-semibold mb-2">家庭内的亲子娱乐：</p>
+    <p class="text-gray-700">教孩子玩游戏王时，用它来管理分数，可以让规则讲解更直观，孩子也更容易理解和上手。</p>
+  </div>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
-    <div class="space-y-4 mb-10">
-      <div>
-        <h4 class="font-medium text-gray-800">这个工具是免费的吗？</h4>
-        <p class="text-gray-600">是的，这是一个完全免费的工具，无需下载安装，在浏览器中打开即可使用。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">需要注册账号吗？</h4>
-        <p class="text-gray-600">完全不需要。所有设置和比分数据都会自动保存在你当前使用的设备上，方便下次继续。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">除了两队对战，能记录更多队伍吗？</h4>
-        <p class="text-gray-600">目前的设计专注于两支队伍的对决场景，这是最常见的比赛形式，能确保界面最清晰、操作最直接。</p>
-      </div>
-    </div>
+  <!-- 总结与引导 -->
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
+    告别心算和纸笔，让工具服务于快乐
+  </h2>
+  <p class="mb-6">
+    游戏王最大的魅力在于千变万化的战术和扣人心弦的博弈。一个好的工具，应该默默解决掉那些繁琐的后勤工作，让你能更专注地享受思考与对决的乐趣本身。
+  </p>
+  <p class="mb-10">
+    这个游戏王生命值计算器，就像一个永远在线、绝对公正的裁判助理。它不改变任何游戏规则，只是让你遵守规则的过程变得异常顺畅。下次决斗开始时，不妨试一试，你可能会发现，你们的对局因此变得更加专注和愉快。
+  </p>
 
-    <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">希望这篇文章能帮你找到轻松管理比赛比分的好方法。祝你的每一场比赛都组织顺利，精彩纷呈！</p>
-  </article>
+  <div class="text-center text-sm text-gray-500 mt-12 pt-8 border-t border-gray-200">
+    <p>希望这个小工具能成为你卡组之外的又一个得力助手，祝你决斗愉快！</p>
+  </div>
 </div>
 `;export{s as default};

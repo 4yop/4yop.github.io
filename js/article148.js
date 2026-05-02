@@ -1,135 +1,97 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h2>
+<article class="text-gray-800 font-sans bg-white">
+  <header class="py-8 px-4 lg:px-8 text-center border-b border-gray-100">
+    <h1 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Excel表格转Word文档，原来可以这么简单快速</h1>
+    <p class="text-gray-600 text-lg">还在为格式错乱、复制粘贴而烦恼吗？一个工具就能搞定。</p>
+  </header>
 
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      你是否遇到过这样的烦恼？公司发来一个包含上百位客户联系方式的Excel表格，或者社团活动收集了一大堆成员信息。看着密密麻麻的姓名和电话，难道要一个一个手动输入到手机里？别担心，今天教你一个省时省力的好方法。
-    </p>
-
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-8 rounded-r-lg">
-      <p class="text-gray-700">
-        <strong>核心方法：</strong>借助一个在线工具，将Excel文件（.xlsx或.xls格式）转换成手机能认识的“通讯录文件”（VCF格式），然后一键导入。
-      </p>
-    </div>
-
+  <div class="px-4 lg:px-8 py-8 max-w-4xl mx-auto">
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">一、为什么需要转换？直接复制不行吗？</h2>
-      <p class="text-gray-700 mb-4">
-        手机通讯录和Excel表格是两种完全不同的“语言”。手机无法直接理解Excel里一行行的数据。而<strong>VCF文件（也叫vCard）</strong>，就像是全球通讯录的“通用翻译官”，iPhone、安卓手机、邮箱（如QQ邮箱、Gmail）都能识别并导入它。
+      <p class="mb-6 text-lg leading-relaxed">
+        在工作中，我们常常需要将Excel表格里的数据放到Word文档里。你可能是想制作一份包含数据表格的报告，或者是需要提交一份带统计表的方案。
       </p>
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <h3 class="font-medium text-gray-800 mb-2">你可以用它来做什么：</h3>
-        <ul class="text-gray-600 list-disc pl-5 space-y-1">
-          <li>批量导入工作客户、合作伙伴的联系方式。</li>
-          <li>快速备份或迁移手机通讯录到新手机。</li>
-          <li>整理社团、班级、活动参与者的名单。</li>
-          <li>将线上收集的表单数据（导出为Excel后）变成手机联系人。</li>
+      <p class="mb-6 text-lg leading-relaxed">
+        这个过程听起来简单，做起来却常常让人头疼。直接复制粘贴吧，表格的格式经常会乱掉，宽度对不齐，颜色也消失了。如果表格有好几页，或者有好几个不同的工作表，那更是费时费力。
+      </p>
+      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-800">你是不是也遇到过这些情况？</h2>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>精心调整的表格颜色和字体，一粘贴到Word里就全没了。</li>
+          <li>表格太宽，在Word里总是超出页面，需要手动一列一列调整。</li>
+          <li>一个Excel文件里有好几张表，得一张一张处理，非常麻烦。</li>
+          <li>只想快速把数据变成一份规整的文档，却花了大半天时间在调整格式上。</li>
         </ul>
       </div>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">二、从Excel到手机通讯录，只需简单几步</h2>
-      <ol class="space-y-6">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">准备好你的Excel文件</h4>
-            <p class="text-gray-600">确保表格第一行是标题，比如“姓名”、“电话”、“公司”等。这是关键，工具要靠标题来识别哪一列是什么信息。数据从第二行开始填写。</p>
-            <p class="text-sm text-gray-500 mt-1">（如果不知道怎么整理，很多工具都提供“模板”下载，照着填就行。）</p>
-          </div>
+    <section class="mb-12">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">一个省心工具能帮你做什么？</h2>
+      <p class="mb-8 text-lg leading-relaxed">
+        好消息是，现在有专门处理这个问题的工具。它就像一个聪明的“格式搬运工”，能帮你把Excel里的表格，原原本本地“搬”到Word文档里，而且过程非常简单。
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-green-600 font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">一步上传，自动识别</h3>
+          <p class="text-gray-700">你只需要把Excel文件拖进去或者点一下上传，它就能立刻看到你表格里所有的数据，非常直观。</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-blue-600 font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">保留样式，保持美观</h3>
+          <p class="text-gray-700">你之前在Excel里设置的文字加粗、单元格背景颜色，大部分都能被保留下来，生成和你原表很像的Word表格。</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div class="text-4xl mb-4 text-center text-purple-600 font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-3 text-center">按需调整，一键生成</h3>
+          <p class="text-gray-700">你可以选择生成Word文档的纸张大小（比如常用的A4或Letter），然后点一下按钮，一份完整的Word文档就生成好了，可以直接下载使用。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">具体怎么使用？</h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        整个过程只需要三四步，在电脑和手机上都能操作，对使用者的技术水平没有任何要求。
+      </p>
+      <ol class="list-decimal pl-5 space-y-8 text-lg">
+        <li class="pl-2">
+          <strong class="text-gray-900">准备好你的Excel文件：</strong> 确保你要转换的表格已经保存在你的电脑或手机里。
         </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">上传文件并“对号入座”</h4>
-            <p class="text-gray-600">在工具页面上传你的Excel文件。上传后，工具会列出你表格里的所有标题（如姓名、电话）。你需要简单地告诉它：我的“姓名”信息在表格的哪一列，“电话”在哪一列。</p>
-            <p class="text-sm text-gray-500 mt-1">（通常工具会智能猜测，你检查一下是否正确即可。）</p>
-          </div>
+        <li class="pl-2">
+          <strong class="text-gray-900">打开工具，上传文件：</strong> 找到页面上醒目的“上传Excel”按钮，点击它，然后从你的设备里选择文件。你也可以直接把文件拖到那个按钮上，更加方便。
         </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">预览并转换下载</h4>
-            <p class="text-gray-600">确认字段匹配无误后，可以先预览几行数据。点击“转换”按钮，几秒钟后，就会生成一个 <code class="bg-gray-100 px-1 rounded text-sm">.vcf</code> 文件并自动下载到你的电脑或手机上。</p>
-          </div>
+        <li class="pl-2">
+          <strong class="text-gray-900">预览并简单设置：</strong> 上传后，你马上就能在页面下方看到表格内容的预览，确认无误。如果需要，可以在上方选择一个你想要的文档纸张大小。
         </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">4</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">将VCF文件导入手机</h4>
-            <p class="text-gray-600 mb-2">这是最后一步，也非常简单：</p>
-            <div class="grid md:grid-cols-2 gap-4 mt-3">
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">苹果iPhone用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>找到下载好的 .vcf 文件（通常在“文件”App里）。</li>
-                  <li>点击它，系统会自动提示用“通讯录”应用打开。</li>
-                  <li>点击“添加所有联系人”即可。</li>
-                </ul>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">安卓手机用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>在手机的文件管理器中找到 .vcf 文件。</li>
-                  <li>点击它，选择用“联系人”或“通讯录”应用导入。</li>
-                </ul>
-              </div>
-            </div>
-            <p class="text-sm text-gray-500 mt-3">如果点击没反应，可以尝试将VCF文件通过微信或QQ发送到手机，在聊天记录里打开它，通常也能导入。</p>
-          </div>
+        <li class="pl-2">
+          <strong class="text-gray-900">转换并下载：</strong> 点击“转换并下载Word”按钮，稍等片刻，浏览器就会自动开始下载生成好的Word文档。打开它，你就会看到一份排版好的表格文档。
         </li>
       </ol>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">三、几个实用小技巧和注意事项</h2>
-      <div class="space-y-4">
-        <div class="p-4 border border-yellow-200 bg-yellow-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧一：先下载模板</h4>
-          <p class="text-gray-600 text-sm">如果你是第一次操作，强烈建议先在工具页面下载提供的Excel模板。模板已经设好了标准的列标题，你只需要在下面填充数据，能省去很多匹配字段的麻烦。</p>
-        </div>
-        <div class="p-4 border border-green-200 bg-green-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧二：整理好Excel数据</h4>
-          <p class="text-gray-600 text-sm">
-            <strong>“姓名”和“电话”列是必须的</strong>，不能为空。确保电话号码格式基本正确（11位手机号）。像“公司”、“备注”等信息，有就填上，导入后会在联系人详情里显示，非常方便。
-          </p>
-        </div>
-        <div class="p-4 border border-blue-200 bg-blue-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧三：检查导入结果</h4>
-          <p class="text-gray-600 text-sm">导入完成后，去手机通讯录里检查一下。看看姓名和电话是否正确对应，有没有乱码或重复。如果有少数错误，手动修改一下也比全部重输快得多。</p>
-        </div>
+      <div class="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
+        <p class="text-amber-900"><strong>小提示：</strong> 这个工具会尽力保留你表格的样式。如果原表格特别复杂，生成后可能需要在Word里做一些微调，但比起从零开始，已经节省了大量时间。</p>
       </div>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">四、常见问题解答</h2>
-      <div class="space-y-6">
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：这个转换过程安全吗？我的联系人信息会不会泄露？</h4>
-          <p class="text-gray-600">答：整个过程通常在你的浏览器本地完成，数据不会上传到服务器。为保险起见，使用前可以留意一下工具页面的说明，选择那些明确标注“本地转换”、“无需上传”的工具。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：转换后，我原来的手机联系人会被覆盖或清空吗？</h4>
-          <p class="text-gray-600">答：<strong>不会。</strong>导入VCF文件是“添加”新联系人，不会删除或覆盖你手机里已有的任何联系人。如果遇到同名同号，手机会提示你选择合并或跳过。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：支持导入头像吗？</h4>
-          <p class="text-gray-600">答：通常这种批量转换工具主要处理文本信息（姓名、电话等），不支持直接从Excel导入头像。头像需要在手机通讯录里为每个联系人单独设置。</p>
-        </div>
-      </div>
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">它适合哪些场景？</h2>
+      <ul class="list-disc pl-5 text-lg space-y-3 text-gray-700">
+        <li><strong>学生：</strong> 将实验数据从Excel整理到实验报告或论文中。</li>
+        <li><strong>办公族：</strong> 制作周报、月报、项目总结，需要将数据表格嵌入文档。</li>
+        <li><strong>HR或财务：</strong> 将人员名单、费用统计表转换成正式的文档格式进行提交或打印。</li>
+        <li><strong>任何需要数据呈现的人：</strong> 当你需要一份既包含详细数据，又排版规范的正式文件时。</li>
+      </ul>
     </section>
 
-    <section class="bg-gray-50 p-6 rounded-xl border">
-      <h2 class="text-xl font-semibold text-gray-800 mb-4">总结</h2>
-      <p class="text-gray-700">
-        将Excel联系人批量导入手机，其实就是一个“翻译”和“搬运”的过程：<strong>Excel文件 → 通用通讯录文件（VCF）→ 手机通讯录</strong>。借助一个靠谱的在线转换工具，几分钟就能搞定原本需要数小时的手动输入工作。
+    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
+      <p class="text-xl mb-4 font-medium">总而言之，将Excel转为Word不再是一个技术活。</p>
+      <p class="text-gray-600 mb-8">
+        借助这类便捷的工具，你可以把时间和精力从繁琐的格式调整中解放出来，更多地专注于内容本身。下次再遇到需要转换表格的时候，不妨试试这种方法，体验一下一键生成的轻松。
       </p>
-      <p class="text-gray-700 mt-3">
-        无论是为了工作高效，还是管理个人社交圈，掌握这个小技巧都能让你事半功倍。下次再收到Excel名单时，就不用头疼了。
-      </p>
-    </section>
-  </article>
-</div>
+      <div class="inline-block px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200">
+        去试试快速转换工具
+      </div>
+    </footer>
+  </div>
+</article>
 `;export{t as default};

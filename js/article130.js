@@ -1,82 +1,56 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 py-6 text-gray-700 leading-relaxed">
+const t=`
+<div class="max-w-3xl mx-auto p-4 md:p-6 font-sans text-gray-800 leading-relaxed">
+  <h2 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h2>
+  
+  <p class="mb-4 text-gray-700">在日常生活中，我们经常会遇到需要把数字写成中文的情况——写收据、填报销单、签合同，甚至给孩子辅导作业。但你知道数字转中文其实有几种不同的方式吗？数字大写和小写有什么区别？什么时候该用“数字读法”？今天我们就来聊聊数字转中文的那些事，并介绍一个实用的在线工具，帮你轻松搞定各种转换。</p>
 
-  <!-- 主标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">数学步骤计算器：让复杂表达式一步步变简单，告别计算烦恼</h1>
-
-  <!-- 引言段落 -->
-  <p class="text-lg mb-6">
-    小时候做数学题，最怕的不是算不出结果，而是不知道中间过程哪里错了。工作后遇到带括号、乘方、三角函数的混合算式，总想有个人能一步一步拆给我们看。现在，这个“数学步骤计算器”就像一位耐心的数学老师，你输入一个算式，它就把每一步怎么算的都列出来，清清楚楚。
-  </p>
-
-  <!-- 小标题：它有什么用？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">它有什么用？不只是给答案，更给过程</h2>
-  <p class="mb-4">
-    普通计算器只给你一个冷冰冰的数字，错了你都不知道哪一步出了问题。而这个计算器的特别之处在于，它会像你手算一样，先算括号里的，再算乘方，然后乘除，最后加减——每一层都展开给你看。比如输入 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)+(2+3)*4^2/2</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)=4</code>，再算 <code class="bg-gray-100 px-1 py-0.5 rounded">(2+3)=5</code>，然后一步步得出最终结果。整个过程都在右侧的“计算步骤”区显示，你可以一边看一边对照自己的思路。
-  </p>
-
-  <!-- 小标题：支持哪些运算？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">加减乘除、平方根、三角函数……它都会</h2>
-  <p class="mb-4">
-    除了最基础的加减乘除（+ - * /）和乘方（^），它还支持很多常用数学函数：
-  </p>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><strong>平方根</strong>：sqrt(9)  → 3</li>
-    <li><strong>三角函数</strong>：sin, cos, tan 以及它们的反函数 asin, acos, atan</li>
-    <li><strong>对数</strong>：log（以10为底）、ln（自然对数）、exp（e的次方）</li>
-    <li><strong>绝对值</strong>：abs(-5) → 5</li>
-  </ul>
-  <p class="mb-4">
-    不论你是中学生做函数题，还是工程师验算数据，这些功能都够用。而且它完全免费，打开网页就能用，不用下载任何软件。
-  </p>
-
-  <!-- 小标题：为什么需要看到每一步？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">看到每一步，才能真的理解数学</h2>
-  <p class="mb-4">
-    很多朋友用计算器只是求个结果，但遇到复杂算式时，运算顺序（先乘除后加减、括号优先）往往容易搞混。这个计算器把每一步都展示出来，等于帮你复习了一遍运算法则。比如 <code class="bg-gray-100 px-1 py-0.5 rounded">2+3×4</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">3×4=12</code>，再加2得14，而不是从左到右傻算。如果你不小心写错了括号，它还会提示语法错误，让你及时修改。
-  </p>
-
-  <!-- 小标题：适合哪些人用？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">谁最需要这个计算器？</h2>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><strong>学生党</strong>：做作业时检查过程，或者遇到不会算的式子，看步骤学习。</li>
-    <li><strong>家长</strong>：辅导孩子数学，自己先验算一遍，确保讲得对。</li>
-    <li><strong>老师</strong>：出题后快速验证步骤，省去手算时间。</li>
-    <li><strong>上班族</strong>：财务、工程、数据分析中遇到复杂公式，不再头疼。</li>
-    <li><strong>考研/备考族</strong>：复习基础运算，巩固计算能力。</li>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字转中文，原来有这么多讲究</h2>
+  <p class="mb-3">我们平时随手写的“一、二、三”是中文小写，简单好认，适合日常记录。但在财务领域，你一定会看到“壹、贰、叁”这样复杂的大写数字。其实数字转中文可以分成四种常见形式，每种都有自己的用途：</p>
+  
+  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+    <li><span class="font-medium text-gray-900">中文小写</span>（如：一千二百三十四）——就是我们平常书写的方式，用在笔记、普通文书里。</li>
+    <li><span class="font-medium text-gray-900">中文大写</span>（如：壹仟贰佰叁拾肆）——笔画复杂，难以涂改，主要用于发票、合同、支票等正式财务文件。</li>
+    <li><span class="font-medium text-gray-900">数字读法</span>（如：一二三四）——逐个数字朗读，常用于报电话号码、身份证号、验证码，避免听错。</li>
+    <li><span class="font-medium text-gray-900">金额格式</span>（如：壹仟贰佰叁拾肆元伍角陆分）——自动带上元角分，完全符合财务大写规范，写借条、填报销单最方便。</li>
   </ul>
 
-  <!-- 小标题：怎么用？简单三步 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？简单三步</h2>
-  <ol class="list-decimal pl-6 mb-6 space-y-2">
-    <li>在输入框里写下你的数学表达式，比如 <code class="bg-gray-100 px-1 py-0.5 rounded">(5+3)/2^3</code>。</li>
-    <li>点击蓝色的“计算”按钮（或者直接按回车）。</li>
-    <li>右侧立刻显示一步步的计算过程，最下面还有最终结果。</li>
-  </ol>
-  <p class="mb-4">
-    如果你想保存结果或步骤，可以点“复制数值”只复制最终数字，或者点“复制全部（结果+步骤）”把整个计算过程复制下来，方便贴在作业或报告里。
-  </p>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">为什么金额要用大写？老祖宗的防篡改智慧</h2>
+  <p class="mb-3">很多人都有疑问：为什么发票、合同上的金额必须写成大写？其实这是从古代延续下来的防篡改方法。小写的“一”加一笔就变成“二”、“十”，很容易被修改。而大写的“壹”笔画复杂，很难通过添减笔画改成其他数字。比如“壹”很难改成“贰”，“叁”也很难改成其他字。这种设计大大增加了涂改难度，保障了资金安全。所以直到今天，所有正规财务票据仍然强制要求使用中文大写金额。</p>
 
-  <!-- 小标题：常见问题 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">你可能想问</h2>
-  <div class="space-y-4">
-    <div>
-      <h3 class="font-medium text-gray-900">输入错误怎么办？</h3>
-      <p>输入框下面会有红色提示，告诉你哪里错了，比如括号不匹配、用了不支持的符号。修改正确后再点计算就行。</p>
-    </div>
-    <div>
-      <h3 class="font-medium text-gray-900">可以计算很长的式子吗？</h3>
-      <p>当然可以，只要你的表达式合理，它都会耐心地一步步拆解。不过为了阅读方便，建议适当换行或用括号分组。</p>
-    </div>
-    <div>
-      <h3 class="font-medium text-gray-900">手机上好用吗？</h3>
-      <p>完全适配手机，输入框和按钮在手机上会自动竖排，步骤区也在下方，字号都调整得刚刚好，手指点按也很方便。</p>
-    </div>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字读法，让沟通更清晰</h2>
+  <p class="mb-3">你有没有遇到过电话里报银行卡号、快递取件码时听错的情况？数字读法就是专门为解决这个问题而生的。把“1234”读成“一二三四”，每个字发音清晰，不容易混淆。特别是像“1”和“7”这样的数字，用“幺”和“拐”来读（工具里可以自定义），能最大程度避免误听。很多客服、快递员都习惯用这种读法。</p>
+
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">金额格式：自动加元角分，规范又省心</h2>
+  <p class="mb-3">如果你需要写借条、填报销单，或者开具收据，最头疼的可能就是怎么把小数点后面的数字转换成“角”和“分”。金额格式功能直接帮你搞定：比如输入123.45，它会自动生成“壹佰贰拾叁元肆角伍分”，完全符合财务大写规则。如果金额是整数，也会自动补上“元整”（工具中显示为元后无角分）。再也不用担心写错单位。</p>
+
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">这个工具能做什么？</h2>
+  <p class="mb-2">上面提到的四种转换，一个在线工具就能全部搞定。你只需要输入任意数字（支持负数和小数），它就会实时显示出对应的中文小写、中文大写、数字读法和金额格式。还有几个贴心的细节：</p>
+  <ul class="list-disc pl-6 space-y-1 mb-6 text-gray-700">
+    <li>小数点读法可以自定义，比如把默认的“点”改成“又”，满足不同习惯；</li>
+    <li>自动过滤非法字符，输入“12a3.45”只会保留有效数字“123.45”；</li>
+    <li>每个结果旁边都有“复制”按钮，一键粘贴到你需要的地方。</li>
+  </ul>
+
+  <div class="bg-blue-50 border border-blue-100 rounded-md p-4 my-6 text-sm text-blue-800">
+    <p class="mb-1"><span class="font-medium">举个例子：</span>输入“-1234.567”</p>
+    <p>中文小写：负一千二百三十四点五六七</p>
+    <p>中文大写：负壹仟贰佰叁拾肆点伍陆柒</p>
+    <p>数字读法：负一二三四点五六七</p>
+    <p>金额格式：负壹仟贰佰叁拾肆元伍角陆分（小数第三位自动忽略）</p>
   </div>
 
-  <!-- 结尾 -->
-  <p class="text-lg border-t pt-6 mt-8 text-gray-600">
-    数学不应该只有答案，还应该有清晰的过程。试试这个数学步骤计算器，让每一个算式都变得透明、可追溯。无论是学习还是工作，它都能成为你随身携带的“数学草稿纸”。
-  </p>
+  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">生活中的实用场景</h2>
+  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+    <li><span class="font-medium">写借条/收据：</span>借款5000元，写成“伍仟元整”，对方无法涂改，双方都放心。</li>
+    <li><span class="font-medium">填报销单：</span>差旅费1234.56元，直接转换粘贴，避免填写错误。</li>
+    <li><span class="font-medium">报手机号：</span>13912345678，逐字读成“一三九一二三四五六七八”，对方一次记对。</li>
+    <li><span class="font-medium">给孩子辅导：</span>让孩子对照数字练习大写，认识“壹贰叁”，顺便了解传统文化。</li>
+    <li><span class="font-medium">合同条款：</span>涉及金额的地方，同时写小写和大写，双重保险。</li>
+  </ul>
+
+  <p class="mt-6 text-gray-700 border-t border-gray-200 pt-4">下次需要大写金额、数字读法或者标准金额格式时，不妨试试这个数字转中文工具。不用翻字典查大写，不用纠结“角分”怎么加，输入数字，一键复制，省时省力，还能避免出错。无论是工作还是生活，它都能成为你的实用小帮手。</p>
+
+  <!-- 自然提及工具，但不做营销 -->
+  <p class="text-xs text-gray-400 mt-8 text-center">—— 让数字转中文更简单 ——</p>
 </div>
-`;export{s as default};
+`;export{t as default};

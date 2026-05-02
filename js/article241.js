@@ -1,65 +1,69 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700">
-  <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h2>
-  <p class="text-lg text-gray-600 mb-8">你是否在电影片尾、广告大屏或视频里看过那些缓缓移动的文字？现在，不用学习复杂软件，你也可以轻松创建属于自己的滚动文字效果了。</p>
+<div class="article-content max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">免费文字转语音工具：轻松把文字变成自然流畅的说话声</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium">简单来说，滚动文字生成器就是一个在线小工具。你只需要输入文字、调调颜色和速度，它就能立刻帮你生成一段会“走动”的文字动画，你可以把它用在视频里、网页上，或者做成一个特别的图片。</p>
+  <div class="mb-8 text-lg text-gray-600">
+    <p>有没有想过，把自己写的文章、小说片段，或者任何一段文字，直接变成一段可以“听”的声音？现在，通过一个简单好用的在线工具就能实现。无论你是想把长篇文章变成有声读物放松眼睛，还是想听听自己写的内容朗读出来是什么感觉，这个工具都能帮到你。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">什么是滚动文字？</h2>
-  <p class="mb-4">滚动文字，顾名思义，就是会沿着一定方向（比如从左到右、从上到下）自动移动的文字。它和我们平时看的静态文字不同，自带一种动感和吸引力。</p>
-  <p class="mb-6">想想这些场景：古老的电影院里向上滚动的演员表；商场电子屏上循环播放的打折信息；你制作的短视频里，需要一段横穿屏幕的标题……这些都是滚动文字的应用。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">它能用来做什么？</h2>
-  <p class="mb-4">这个小工具非常适合普通人在日常创作中使用：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>制作视频字幕</strong>：为你拍摄的短片添加专业的片头或片尾滚动字幕。</li>
-    <li><strong>创建动态海报</strong>：设计一个带有滚动标语的宣传图，更抓人眼球。</li>
-    <li><strong>丰富演示文稿</strong>：在PPT或Keynote中插入一小段滚动文字，让演示更生动。</li>
-    <li><strong>装饰社交媒体</strong>：为你的社交媒体状态或故事制作独特的动态背景文字。</li>
-    <li><strong>简单的广告展示</strong>：小店铺可以用来制作电子广告语，在平板或电脑上循环播放。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">如何使用它？（完全不用懂技术）</h2>
-  <p class="mb-4">使用过程就像“搭积木”一样简单直观，所有操作都是即时可见的：</p>
-
-  <div class="bg-gray-50 rounded-lg p-5 mb-6">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第一步：写下你想说的</h3>
-    <p class="mb-4">在文字框里输入任何内容：一句祝福、一个口号、一段歌词，或者店铺名称和电话。输入的同时，右边预览区里的文字就会立刻出现。</p>
-
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第二步：给它“穿衣服”</h3>
-    <p class="mb-2">你可以随意打扮这段文字：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>换颜色</strong>：点击色块，给文字换个喜欢的颜色，也能改变整个背景板的颜色。</li>
-      <li><strong>调大小</strong>：拖动滑块，让文字变大或变小。</li>
-      <li><strong>选字体</strong>：在几种常见字体里选择，比如端庄的宋体或现代的黑体。</li>
-    </ul>
-
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第三步：设置它如何“走动”</h3>
-    <p class="mb-2">这是最关键也最好玩的部分：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>选方向</strong>：让文字从左向右走、从右向左走，或者上下移动。</li>
-      <li><strong>控速度</strong>：拖动滑块，决定文字移动得快一点还是慢一点。</li>
-      <li><strong>定起点</strong>：精细控制文字从屏幕的哪个位置开始出现。</li>
-      <li><strong>改画布</strong>：调整显示区域的大小，适应你不同的用途。</li>
-    </ul>
-    <p>每调整一个参数，右边的预览效果都会实时变化，真正做到“所见即所得”。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
+    <p class="text-gray-700">它就像一个智能的“朗读者”。你只需把文字贴进去，它就能用多种声音（包括不同口音的中文和英文）清晰、自然地读出来。你还可以像调节收音机一样，控制朗读的快慢、音调高低和声音大小，甚至可以把生成的声音保存成音频文件，用在你的视频里或者随时播放。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">第四步：保存你的作品</h2>
-  <p class="mb-6">调整到自己最满意的效果后，点击“生成动画”按钮。稍等片刻，工具就会为你制作好一段完整的滚动文字视频。你可以直接下载这个视频文件，用到任何你需要的地方去。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">给初学者的几点小建议</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3">
-    <li><strong>文字别太长</strong>：滚动文字适合展示简短精悍的信息，太长会看不完。</li>
-    <li><strong>颜色要对</strong>：确保文字颜色和背景颜色有足够的对比度，不然会看不清。</li>
-    <li><strong>速度要适中</strong>：太快让人眼花，太慢显得拖沓，多预览几次找到最舒服的速度。</li>
-    <li><strong>先模仿再创造</strong>：如果不确定怎么做，可以先试试模仿你见过的、觉得好看的滚动文字效果。</li>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么大家喜欢用文字转语音？</h2>
+  <p class="mb-4">你可能没意识到，把文字变成语音，在我们的生活和工作中其实有很多实用的场景：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+    <li><span class="font-medium">解放双眼，用耳朵“阅读”</span>：长时间看屏幕眼睛累了，可以把你正在读的文章、资料转换成语音，闭目养神的同时也能获取信息。</li>
+    <li><span class="font-medium">内容创作者的好帮手</span>：自媒体作者、视频制作人可以用它快速生成视频的配音旁白，比自己录音更省时省力。</li>
+    <li><span class="font-medium">检查文稿的好方法</span>：写完一篇文章后，听一遍朗读出来的效果，很容易就能发现那些读起来拗口、不通顺的句子。</li>
+    <li><span class="font-medium">语言学习辅助</span>：学习外语时，输入一段外语文字，听听地道的发音和语调，对提升语感很有帮助。</li>
+    <li><span class="font-medium">为有需要的人提供便利</span>：对于视力不佳或阅读障碍的朋友，这是一个将文字信息转化为可听内容的友好方式。</li>
   </ul>
 
-  <div class="border-t pt-8">
-    <p class="text-gray-600">总而言之，滚动文字生成器是一个将简单想法快速变成动态视觉的小帮手。它不需要任何专业知识，只需你的创意。无论是为了工作展示，还是个人兴趣，都可以来试试看，亲手创造一段属于你自己的、会“说话”的文字。</p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">这个免费工具的几个贴心功能</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">1. 操作简单，一看就会</h3>
+      <p>整个页面非常干净。左边一个大框用来输入或粘贴你的文字，右边是调节声音的按钮和滑块。没有复杂的步骤，就像使用一个普通的记事本和播放器一样简单。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">2. 声音可以“定制”</h3>
+      <p>工具提供了多种系统自带的声音库供你选择。你可以试试不同的朗读者，找到最符合你内容情绪的那个声音。更重要的是，你可以通过三个简单的滑块：</p>
+      <ul class="list-disc pl-6 mt-2 space-y-1">
+        <li><span class="font-medium">语速</span>：从慢悠悠的讲述到快速的播报，随心调节。</li>
+        <li><span class="font-medium">音高</span>：让声音变得更低沉稳重，或者更高亢明亮。</li>
+        <li><span class="font-medium">音量</span>：轻轻滑动，调整到最合适的聆听音量。</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">3. 像控制音乐一样控制朗读</h3>
+      <p>和听歌一样，你可以随时“播放”、“暂停”、“停止”朗读过程。如果某一段没听清，点一下“重新开始”就能从头再听一遍，非常方便。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">4. 一键保存声音文件</h3>
+      <p>当你对生成的语音满意后，可以直接点击“下载语音文件”按钮，它会将刚才朗读的内容保存为一个标准的WAV格式音频文件。这样你就可以把它插入到PPT、视频剪辑软件中，或者分享给其他人了。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">5. 在手机和电脑上都能用</h3>
+      <p>这个工具的页面会自动适应你的设备屏幕。无论是在家里用电脑，还是在外面用手机，都能获得同样舒适的操作体验。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">如何使用这个免费的在线文字转语音工具？</h2>
+  <ol class="list-decimal pl-6 mb-10 space-y-3 text-gray-700">
+    <li><span class="font-medium">找到输入框</span>：打开页面，你会看到一个显眼的文本输入区域。</li>
+    <li><span class="font-medium">输入或粘贴文字</span>：把你的任何文字内容复制进去，比如一篇公众号文章、一段工作总结、或者给孩子编的小故事。</li>
+    <li><span class="font-medium">挑选一个喜欢的声音</span>：在下拉菜单里，尝试选择不同的“语音库”，听听哪个声音最顺耳。</li>
+    <li><span class="font-medium">微调声音效果</span>：试试拖动“语速”、“音高”和“音量”的滑块，调到你觉得最舒服的状态。</li>
+    <li><span class="font-medium">点击播放</span>：准备好后，点击绿色的“播放”按钮，就可以聆听你的文字被朗读出来了。</li>
+    <li><span class="font-medium">保存成果（如果需要）</span>：听完后如果觉得不错，点击“下载语音文件”按钮，就能把这段声音保存到自己的设备里。</li>
+  </ol>
+
+  <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-12">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结</h2>
+    <p class="mb-4">这个免费的在线文字转语音工具，就像一个随时待命、声音多变的私人播音员。它把复杂的语音合成技术，变成了人人可用的简单操作。无论你是想减轻阅读负担、辅助内容创作，还是仅仅出于好奇，它都值得一试。</p>
+    <p class="font-medium text-gray-800">下次当你面对大段文字感到疲惫，或者需要一段即时语音时，不妨试试让工具为你“朗读”，你会发现用耳朵“阅读”世界，也是一种很棒的体验。</p>
   </div>
 </div>
 `;export{s as default};

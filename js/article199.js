@@ -1,97 +1,98 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <article>
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">想拥有与众不同的网络名字吗？字符花样转换器帮你轻松实现</h1>
-    <p class="text-gray-600 mb-8 text-lg text-center">告别普通字体，教你如何将简单的数字和字母，变成一眼就能被记住的个性符号。</p>
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-700 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">想知道你的文章到底写了些什么？一个免费工具全告诉你</h1>
+  <p class="text-lg mb-8 text-gray-600">
+    无论是写工作总结、发一篇长微博，还是准备演讲稿，你是否也曾对着屏幕疑惑：我这篇文章到底写了多少字？读起来费劲吗？有没有哪个词被我翻来覆去地用？今天，就给大家介绍一个能帮你一眼看清文章“底细”的免费在线工具。
+  </p>
 
-    <div class="mb-10 p-6 bg-blue-50 border-l-4 border-blue-500">
-      <p class="mb-2">你是否也遇到过这些烦恼？</p>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>想注册一个酷炫的网名，但所有好名字都被人用过了？</li>
-        <li>社交媒体上的个人介绍平平无奇，很难吸引别人注意？</li>
-        <li>想在评论区留言时，让自己的发言看起来更特别一些？</li>
-      </ul>
-      <p class="mt-4">其实，不用苦恼。你只需要将普通的字母数字稍微“打扮”一下，就能立刻变得与众不同。今天，我们就来聊聊如何轻松玩转各种特殊字符。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
+    <p class="mb-3">简单来说，它就像一个文章的“体检中心”。你只需要把文字内容贴进去，它就能瞬间生成一份详细的“体检报告”，让你对文章了如指掌。</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><span class="font-medium">数得清清楚楚</span>：总字数、中文字数、英文单词数、段落、句子，这些基础信息一目了然。</li>
+      <li><span class="font-medium">揪出“高频词”</span>：看看你最爱用哪个词，避免文章里同一个词出现太多次。</li>
+      <li><span class="font-medium">评估阅读难度</span>：它会告诉你这篇文章大概是什么阅读水平，是通俗易懂还是需要仔细琢磨。</li>
+      <li><span class="font-medium">分析成分构成</span>：你的文章里，中文、英文、数字、标点各自占了多少比例？</li>
+      <li><span class="font-medium">预估阅读时间</span>：读者大概需要几分钟能读完你的内容？</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">它具体是怎么帮我分析文章的？</h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 第一步：把文章放进去</h3>
+    <p class="mb-3">你可以直接把文字粘贴到那个大文本框里。如果字太多，也可以上传一个TXT文档，或者点一下“加载示例”，看看分析效果。</p>
+    <p class="text-sm text-gray-500 italic">小提示：你一输入文字，分析结果就会实时更新，非常方便。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 看基础数据：我的文章有多“大”？</h3>
+    <p class="mb-3">这里会整齐地展示文章的基本规模。比如，你想确认一篇稿子是不是超过了800字，或者想知道英文报告里有多少个单词，看这里就行了。它还会贴心地估算出别人读完大概需要的时间。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 看词频分析：我是不是老用同一个词？</h3>
+    <p class="mb-3">这个功能特别适合写作者。它会把你文章里所有词语（中英文都算）的使用次数排个队，用得最多的词排在前面，并用长短不一的彩色条显示出来。</p>
+    <p class="text-sm text-gray-500 italic">比如，如果你发现“非常”、“然后”这样的词条特别长，可能就需要考虑换一些更丰富的表达了。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 看字符分布：我的文章“成分”是什么？</h3>
+    <p class="mb-3">你的文章是中文居多，还是夹杂了大量英文？有没有用到很多数据（数字）？通过四个不同颜色的进度条，你能直观地看到文章的文字构成比例。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. 看可读性：我的文章好懂吗？</h3>
+    <p class="mb-3">这是很多人关心的。工具会根据句子的平均长度等信息，给你的文章一个“复杂度评级”，比如“简单”、“中等”或“复杂”。同时，它还会给出一个“建议阅读水平”的参考，比如“中学水平”或“大学水平”。</p>
+    <p class="text-sm text-gray-500 italic">如果你在写一篇面向大众的科普文，那么让评级保持在“简单”或“中等”可能更合适。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">我可能会在哪些地方用到它？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">📝 写作与校对</h4>
+      <p>检查文章长度是否符合要求，优化用词，避免重复，让行文更流畅。</p>
     </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🎓 学习与备考</h4>
+      <p>分析范文结构，评估自己作文的难度，或者准备演讲时控制篇幅和语速。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">💼 工作与汇报</h4>
+      <p>确保工作总结、项目报告内容精炼、重点突出，数据比例清晰。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🌐 内容创作</h4>
+      <p>为公众号、博客文章把脉，调整可读性以适应目标读者，优化阅读体验。</p>
+    </div>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">什么是“字符花样”？</h2>
-      <p class="mb-4">简单来说，就是用一些看起来相似、但更特别的符号，来替换你原本想用的普通字符。</p>
-      <p class="mb-4">比如，你的生日是“1990”，但直接用它做网名后缀，可能显得有点普通。如果把它变成带圈的数字“①⑨⑨⓪”，是不是瞬间就有了设计感？再比如，你想写“LOVE”，如果变成“<span class="text-pink-600">❥love</span>”或“<span class="font-bold">𝐋𝐎𝐕𝐄</span>”，情感表达是不是更强烈了？</p>
-      <p>这些看起来有点“高级”的符号，其实并不神秘。它们本就存在于你的电脑和手机字体库中，只是大多数人不知道去哪里找、怎么用。而现在，有专门的在线工具可以帮你瞬间完成这种转换。</p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">常见的字符转换风格有哪些？</h2>
-      <p class="mb-4">了解这些风格，下次你想装饰文字时，就能轻松说出你想要的效果。</p>
-      <ul class="space-y-6">
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">1. 圆圈数字</h3>
-          <p class="text-gray-600">效果：① ② ③ … ⑩</p>
-          <p>这是非常受欢迎的一种风格，尤其适合点缀日期、序号或幸运数字。看起来既清晰又可爱，常用于游戏昵称或列表标记。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">2. 全角字符</h3>
-          <p class="text-gray-600">效果：ＡＢＣ １２３（每个字符更宽）</p>
-          <p>简单地将英文字母和数字“加胖”。虽然变化细微，但能让一行文字看起来更整齐、更醒目，非常适合用作标题或需要强调的短句。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">3. 上标与下标</h3>
-          <p class="text-gray-600">效果：¹²³ᴸᵒʳᵉᵐ 和 ₁₂₃₄₅</p>
-          <p>想表达“平方”“立方”（如m²）？或者想营造一种化学公式、数学注释般的专业感？这两种格式就能派上用场。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">4. 装饰前缀</h3>
-          <p class="text-gray-600">效果：★star ❥love</p>
-          <p>直接在文字前加上小符号来点明主题。一颗星星、一颗爱心，就能让一个普通的单词充满情绪和画面感。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">5. 加粗与等宽字体</h3>
-          <p class="text-gray-600">效果：<span class="font-bold">𝐁𝐨𝐥𝐝</span> 与 <span style="font-family: monospace">𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎</span></p>
-          <p>纯粹的加粗能让文字更有力量感。而等宽字体则让每个字母宽度一致，常给人技术、复古或打字机般的独特格调。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">这些花样字符，可以用在哪里？</h2>
-      <p class="mb-4">知道了怎么做，更要了解怎么用。下面这些场景，你一定会碰到：</p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">社交网络名片</h4>
-          <p>微信、微博、抖音、小红书等平台的昵称和个性签名，是使用花样字符最多的地方。一个特别的昵称能让你更容易被记住和发现。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">评论区与弹幕</h4>
-          <p>在热门视频或文章下评论时，让你的留言在千篇一律的文字中“跳”出来，获得更多点赞和互动的机会。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">游戏角色名</h4>
-          <p>在网游或手游中，一个酷炫的角色名不仅能彰显个性，有时还能在虚拟世界里带来更高的“辨识度”。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">文件与笔记标题</h4>
-          <p>在整理电脑文件或写电子笔记时，用特殊符号来区分重要等级或分类，能让浏览效率大大提升。</p>
-        </div>
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+    <h2 class="text-xl font-bold text-gray-800 mb-3">常见问题解答</h2>
+    <div class="space-y-4">
+      <div>
+        <h4 class="font-semibold text-gray-800">问：这个工具要收费吗？需要注册吗？</h4>
+        <p class="text-gray-600">答：完全免费，打开网页就能用，不需要注册或登录。</p>
       </div>
-    </section>
-
-    <section class="mb-10 p-6 bg-gray-50 rounded-lg">
-      <h2 class="text-2xl font-bold mb-4">如何使用这些字符？</h2>
-      <p class="mb-4">过程其实非常简单，就像把大象放进冰箱一样，只需三步：</p>
-      <ol class="list-decimal pl-5 space-y-3">
-        <li><strong>输入</strong>：在工具里，写下你想转换的普通文字，比如你的名字“Lucy2024”。</li>
-        <li><strong>选择</strong>：从列表里挑一个你喜欢的风格，比如“圆圈数字”。</li>
-        <li><strong>复制</strong>：转换后的“Lucy②⓪②④”会立刻出现，点击“复制”按钮，就可以把它粘贴到任何你想用的地方了。</li>
-      </ol>
-      <p class="mt-4 text-gray-600">现在，很多在线工具都提供了这样的功能，操作直观，而且完全免费。你甚至可以自己定义一些独特的替换规则，创造出只属于你自己的字符风格。</p>
-    </section>
-
-    <div class="mt-12 p-6 border border-gray-300 text-center">
-      <p class="font-medium mb-2">总结一下：</p>
-      <p>想让自己的网络形象更突出，不一定需要复杂的图案或设计。有时，仅仅是将普通的字母数字换成几枚<span class="text-blue-600">带圈的数字</span>、一个<span class="font-bold">加粗的单词</span>，或者一颗<span class="text-pink-600">爱心前缀</span>，就足以产生令人眼前一亮的效果。</p>
-      <p class="mt-4">希望这篇文章能帮你打开思路。下次，当你想让你的文字“不一样”时，不妨试试这个有趣的“字符花样”转换方法吧。</p>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：我的文章内容会被上传到服务器吗？安全吗？</h4>
+        <p class="text-gray-600">答：分析过程通常在您的浏览器本地完成，保证了文章内容的私密性。您可以放心使用。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：分析完的结果能保存下来吗？</h4>
+        <p class="text-gray-600">答：可以的。工具提供了多种导出方式，您可以把详细的“体检报告”保存为TXT或JSON文件，或者直接复制结果。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：它支持分析中英文混合的文章吗？</h4>
+        <p class="text-gray-600">答：当然支持。这正是它的一个特色，能够同时精准识别和统计中英文内容。</p>
+      </div>
     </div>
-  </article>
+  </div>
+
+  <div class="text-center mt-12 p-8 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border">
+    <p class="text-xl font-medium text-gray-800 mb-4">想立刻为你的文章做一次全面“体检”吗？</p>
+    <p class="mb-6 text-gray-600">这个<span class="font-medium text-gray-800">文本统计分析器</span>操作简单，功能全面，就像一位默默帮你检查文章的得力助手。无论你是学生、作者还是上班族，它都能帮你更清晰地认识自己的文字作品。</p>
+    <p class="text-lg font-semibold text-blue-600">快去试试吧，只需粘贴文字，一切答案即刻呈现。</p>
+  </div>
 </div>
-`;export{s as default};
+`;export{t as default};

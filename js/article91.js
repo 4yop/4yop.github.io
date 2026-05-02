@@ -1,114 +1,93 @@
-const l=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
-  <article>
-    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
-      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
-    </h1>
+const e=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-12 font-sans text-gray-800">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">想给照片加点艺术感？这个在线工具让你秒变“艺术家”</h1>
+    <p class="text-lg text-gray-600">告别单调的普通照片，用简单几步为你的回忆披上独特的艺术外衣。</p>
+  </header>
 
-    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
-      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
-    </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">你的烦恼，我懂</h2>
+    <p class="mb-4 leading-relaxed">翻看手机相册，是不是总觉得照片太“写实”了？想发个朋友圈，又嫌照片风格平淡无奇，不够吸引眼球。</p>
+    <p class="mb-4 leading-relaxed">你或许想过把照片变成酷酷的像素风，或者复古的怀旧色调，但一打开那些复杂的专业软件，就被密密麻麻的按钮和看不懂的术语劝退了。</p>
+    <p class="leading-relaxed">没关系，你不是一个人。许多人都希望用一种<strong>简单、快速、零门槛</strong>的方式，让普通照片焕发新生。</p>
+  </section>
 
-    <div class="mb-8">
-      <p class="mb-4 leading-relaxed">
-        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
-      </p>
-      <p class="leading-relaxed">
-        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
-      </p>
-    </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它是什么？你的“魔法艺术滤镜箱”</h2>
+    <p class="mb-4 leading-relaxed">你可以把它想象成一个在线的“魔法艺术滤镜箱”。你只需要把照片放进去，然后从十几种各具特色的“滤镜”中挑选一个，轻轻一点，就能立刻得到一张风格大变样的新图片。</p>
+    <p class="leading-relaxed">整个过程就像给照片“穿”上了一件不同风格的衣服，完全不需要你懂任何绘画或设计知识。</p>
+  </section>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        一、认识你的生理周期：不仅仅是“那几天”
-      </h2>
-      <p class="mb-3 leading-relaxed">
-        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
-        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
-        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
-        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
-      </ul>
-      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
-        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
-      </p>
-    </section>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它能为你做什么？</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <h3 class="font-medium mb-1">化繁为简，一键拥有艺术感</h3>
+          <p class="text-gray-600 leading-relaxed">你不用再研究复杂的软件。这里没有复杂的操作，上传图片、选择风格、点击生成，三步就能获得一张充满设计感的作品。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <h3 class="font-medium mb-1">风格多样，总有一款适合你</h3>
+          <p class="text-gray-600 leading-relaxed">无论你喜欢像乐高积木一样的<strong>像素风</strong>，还是像铅笔描绘的<strong>素描画</strong>，亦或是泛黄回忆的<strong>老照片效果</strong>，甚至是神秘的<strong>浮雕感</strong>，这里都能轻松实现。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <h3 class="font-medium mb-1">解放手机，在线处理更方便</h3>
+          <p class="text-gray-600 leading-relaxed">无需在手机上下载额外的App，打开网页就能用。处理完的图片直接下载保存到手机或电脑里，不占存储空间。</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <h3 class="font-medium mb-1">效果可控，打造专属风格</h3>
+          <p class="text-gray-600 leading-relaxed">部分风格还可以微调强度。比如想让像素块更大一点，或者让素描线条更粗犷一些，都能通过简单的滑块来调整，让你的作品与众不同。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        二、推算的核心：找到身体的“节拍器”
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
-      </p>
-
-      <div class="bg-gray-50 p-5 rounded-lg mb-4">
-        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
-        <p class="mb-3 text-gray-700 leading-relaxed">
-          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
-        </p>
-
-        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
-        <p class="text-gray-700 leading-relaxed">
-          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
-        </p>
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">在生活中，你可以这样用它</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="font-medium text-lg mb-2">场景一：打造独一无二的头像</h3>
+        <p class="text-gray-600 leading-relaxed">觉得自己的微信、微博头像太普通？用一张清晰的自拍照，试试“素描”或“油画”风格，瞬间变成一张充满艺术气息的个人标志，让你在好友列表里脱颖而出。</p>
       </div>
-
-      <p class="leading-relaxed">
-        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        三、预测工具能帮你做什么？
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
-        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
-        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
-      </ul>
-      <p class="leading-relaxed">
-        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        四、重要提醒：推算结果是“参考”，不是“医嘱”
-      </h2>
-      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
-        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
-        <p class="text-red-700 leading-relaxed mb-2">
-          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
-        </p>
-        <p class="text-red-700 leading-relaxed">
-          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
-        </p>
+      <div>
+        <h3 class="font-medium text-lg mb-2">场景二：为旅行照片增加故事感</h3>
+        <p class="text-gray-600 leading-relaxed">上次旅行的风景照很美，但总觉得少了点味道。给古镇的照片加上“怀旧”滤镜，给现代建筑加上“高对比”效果，就能营造出不同的情绪和氛围，让每张照片都像在讲述一个故事。</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        五、从了解到掌控，开启更自在的生活
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
-        <li>在经期前准备好护理用品，避免尴尬。</li>
-        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
-        <li>为备孕计划提供一个基础的参考时间框架。</li>
-      </ul>
-      <p class="leading-relaxed text-gray-900 font-medium">
-        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
-      </p>
-    </section>
-  </article>
-</div>
-`;export{l as default};
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-medium mb-1">问：我的照片会上传到服务器吗？安全吗？</h3>
+        <p class="text-gray-600 leading-relaxed">答：完全不用担心隐私。整个处理过程通常在您的浏览器内完成，图片数据不会上传到远程服务器，处理完成后即可关闭页面，安全便捷。</p>
+      </div>
+      <div>
+        <h3 class="font-medium mb-1">问：处理图片需要很长时间吗？</h3>
+        <p class="text-gray-600 leading-relaxed">答：完全不需要。对于普通尺寸的照片，大部分效果都是“秒出”。你甚至感觉不到等待，就能看到焕然一新的作品。</p>
+      </div>
+      <div>
+        <h3 class="font-medium mb-1">问：支持哪些类型的图片？</h3>
+        <p class="text-gray-600 leading-relaxed">答：你手机里常用的图片格式，比如JPG、PNG等，基本都可以直接使用。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-8 border-t border-gray-200">
+    <p class="text-center text-gray-600 leading-relaxed">
+      与其羡慕别人的创意照片，不如现在就动手，让你的普通照片也来一场华丽的“艺术变身”吧。这个过程，简单得超乎你的想象。
+    </p>
+  </footer>
+</article>
+`;export{e as default};

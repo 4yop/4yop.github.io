@@ -1,101 +1,169 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-800">
-  <article>
-    <!-- 文章标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center sm:text-left">长图太烦人？试试这个免费在线切割工具</h1>
-    <p class="text-gray-600 text-lg mb-8 leading-relaxed">是不是经常遇到长图发送失败、查看不方便的问题？这篇文章教你一个简单方法，轻松把长图切成几小份。</p>
+const r=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">智能抠图工具：一键去除背景，让主体脱颖而出</h1>
 
-    <!-- 引导图片 -->
-    <div class="my-8 bg-gray-50 rounded-xl p-4 border border-gray-200">
-      <p class="text-gray-700 mb-2">一个工具，解决长图带来的所有麻烦。</p>
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">还在为去除图片背景发愁？</p>
+    <p class="mt-2 mb-0">无论是制作证件照、设计电商产品图，还是创作社交媒体内容，去除图片背景都是常见需求。智能抠图工具利用AI技术，一键自动识别主体并去除背景，无需复杂的PS操作，几秒钟就能完成专业级效果。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">智能抠图的应用场景</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🪪 证件照制作</h3>
+      <p class="text-sm text-gray-600">快速去除原背景，更换为白色、蓝色或红色背景，制作标准证件照。</p>
     </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🛍️ 电商产品图</h3>
+      <p class="text-sm text-gray-600">去除产品背景，制作白底图或透明背景图，符合电商平台要求。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体</h3>
+      <p class="text-sm text-gray-600">制作创意头像、表情包、合成图片，让内容更有趣。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🎨 设计创作</h3>
+      <p class="text-sm text-gray-600">提取素材元素，用于海报、Banner、PPT等设计作品。</p>
+    </div>
+  </div>
 
-    <!-- 问题引入 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">为什么需要切割长图？</h2>
-    <p class="mb-4 leading-relaxed">你可能遇到过这些情况：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li>在聊天软件里发送一张很长的产品介绍图，结果被压缩得看不清。</li>
-      <li>做了一张电商商品详情长图，但上传到平台有高度限制。</li>
-      <li>想在朋友圈或微博分享一张长截图，但加载速度很慢。</li>
-      <li>一张超长的全家福或风景图，在手机上浏览需要来回滑动。</li>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图 vs 传统方法</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">对比项</th>
+          <th class="border border-gray-300 p-3 text-left">AI智能抠图</th>
+          <th class="border border-gray-300 p-3 text-left">传统PS抠图</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">操作难度</td>
+          <td class="border border-gray-300 p-3 text-green-600">简单，一键完成</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">复杂，需要专业技能</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">处理时间</td>
+          <td class="border border-gray-300 p-3 text-green-600">几秒钟</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">几分钟到几十分钟</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">边缘处理</td>
+          <td class="border border-gray-300 p-3 text-green-600">自动识别，效果自然</td>
+          <td class="border border-gray-300 p-3 text-green-600">精细控制，专业级</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">成本</td>
+          <td class="border border-gray-300 p-3 text-green-600">免费或低成本</td>
+          <td class="border border-gray-300 p-3 text-yellow-600">软件订阅费用</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">适用场景</td>
+          <td class="border border-gray-300 p-3">日常需求、批量处理</td>
+          <td class="border border-gray-300 p-3">专业设计、精细修图</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图的工作原理</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
+      <h3 class="font-medium text-indigo-800 mb-2">1. 图像识别</h3>
+      <p class="text-indigo-700">AI模型分析图片内容，识别出前景主体（人物、物体）和背景区域。</p>
+    </div>
+    
+    <div class="p-5 bg-blue-50 rounded-lg border border-blue-100">
+      <h3 class="font-medium text-blue-800 mb-2">2. 边缘检测</h3>
+      <p class="text-blue-700">精确识别主体边缘，处理头发丝、毛发等细节，确保抠图自然。</p>
+    </div>
+    
+    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
+      <h3 class="font-medium text-green-800 mb-2">3. 背景移除</h3>
+      <p class="text-green-700">将识别出的背景区域变为透明或纯色，保留主体完整。</p>
+    </div>
+    
+    <div class="p-5 bg-purple-50 rounded-lg border border-purple-100">
+      <h3 class="font-medium text-purple-800 mb-2">4. 优化输出</h3>
+      <p class="text-purple-700">对边缘进行平滑处理，消除锯齿，生成高质量的PNG透明背景图片。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧与注意事项</h2>
+  
+  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
+    <h3 class="font-medium text-yellow-800 mb-3">💡 获得最佳效果的建议：</h3>
+    <ul class="space-y-2 text-yellow-700">
+      <li>• <strong>主体清晰</strong>：确保主体与背景有明显对比，边缘清晰</li>
+      <li>• <strong>光线均匀</strong>：避免主体一半过亮一半过暗，影响识别</li>
+      <li>• <strong>背景简洁</strong>：复杂背景可能影响识别精度，纯色背景效果最佳</li>
+      <li>• <strong>分辨率适中</strong>：图片过大可能导致处理缓慢，过小则影响细节</li>
+      <li>• <strong>检查边缘</strong>：抠图后检查头发、手指等细节区域，必要时手动调整</li>
     </ul>
-    <p class="mb-6 leading-relaxed">这些问题，其实只需要把一张长图横向切成几个部分，就能轻松解决。就像把一张很长的纸，按虚线撕成几页小册子一样方便。</p>
+  </div>
 
-    <!-- 解决方案 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">怎么把长图分成几部分？</h2>
-    <p class="mb-4 leading-relaxed">过去你可能需要专门安装一个软件，或者找人帮忙处理。现在完全不需要那么麻烦了。</p>
-    <p class="mb-6 leading-relaxed">网上有一些免费的工具，打开浏览器就能用。你只需要上传图片，告诉它你想怎么切，它马上就能帮你处理好，而且可以直接下载。</p>
-
-    <!-- 功能介绍（非技术描述） -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">一个好用的工具能做什么？</h2>
-    <div class="grid sm:grid-cols-2 gap-6 mb-8">
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">两种切法，随你选</h3>
-        <p class="text-gray-700">你可以选择“切成平均的几份”，比如一份长图切成4等份。或者选择“按固定高度来切”，比如规定每一部分都是500像素高，工具会自动计算能切出几份。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">先看效果，再保存</h3>
-        <p class="text-gray-700">切割之后，所有的小图会像照片墙一样展示出来，你可以一张一张点开看，确认没问题了再下载。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">格式和大小自己定</h3>
-        <p class="text-gray-700">可以选择保存为常见的JPG、PNG格式，还能调整JPG图片的清晰度，在文件大小和图片质量之间找到平衡。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">下载方式很灵活</h3>
-        <p class="text-gray-700">你可以把所有切割后的小图打包成一个压缩文件下载，也可以选择单独下载某一张，非常方便。</p>
-      </div>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">抠图后的创意应用</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">🌅</div>
+      <h3 class="font-medium text-gray-800 mb-2">换背景</h3>
+      <p class="text-sm text-gray-600">将人物放到风景、城市或虚拟场景中</p>
     </div>
-
-    <!-- 使用场景 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">哪些地方会用到这个功能？</h2>
-    <p class="mb-4 leading-relaxed">这个功能在生活中和工作中都很实用：</p>
-    <div class="space-y-4 mb-8">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">1</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">电商卖家</p>
-          <p class="text-gray-700">将长长的商品详情页图片切割后，分开发布到商品介绍里，让买家看得更顺畅。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">2</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">社交媒体用户</p>
-          <p class="text-gray-700">在朋友圈、微博或小红书发布长图教程、旅行游记时，切成几份发布，加载更快，体验更好。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">3</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">普通生活记录</p>
-          <p class="text-gray-700">将一张超长的聊天记录截图、全家福长图或风景照切割，方便分享给家人朋友。</p>
-        </div>
-      </div>
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">✨</div>
+      <h3 class="font-medium text-gray-800 mb-2">加特效</h3>
+      <p class="text-sm text-gray-600">添加阴影、描边、光效等视觉效果</p>
     </div>
-
-    <!-- 操作步骤（通俗版） -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">使用起来有多简单？</h2>
-    <p class="mb-6 leading-relaxed">整个过程只需要几步，在手机或电脑上都能完成：</p>
-    <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
-      <li><span class="font-medium">上传图片</span>：点击上传按钮，从你的手机相册或电脑里选择一张长图。</li>
-      <li><span class="font-medium">选择切法</span>：告诉工具你想“平均切成几份”还是“按固定的高度来切”。</li>
-      <li><span class="font-medium">预览效果</span>：工具会立刻生成切割后的小图预览，你可以检查是否满意。</li>
-      <li><span class="font-medium">保存图片</span>：满意后，点击一个按钮，所有的小图就会打包好让你下载到本地。</li>
-    </ol>
-
-    <!-- 总结 -->
-    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mt-12">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">写在最后</h3>
-      <p class="text-gray-700 mb-3">处理长图不再是一个技术难题。利用这些免费、在线的工具，你可以轻松地把一张难以处理的图片，变成几张方便分享、查看和传播的小图。</p>
-      <p class="text-gray-700">下次再遇到长图的烦恼时，不妨试试这个简单的方法。</p>
+    <div class="p-4 border border-gray-200 rounded-lg text-center">
+      <div class="text-3xl mb-2">🎭</div>
+      <h3 class="font-medium text-gray-800 mb-2">做合成</h3>
+      <p class="text-sm text-gray-600">多元素组合，创作创意图片</p>
     </div>
-  </article>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：AI抠图能处理复杂背景吗？</p>
+      <p class="text-gray-600">答：现代AI抠图工具可以处理大多数复杂背景，但效果取决于主体与背景的对比度。对于头发丝、半透明物体等细节，高端工具表现更好。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：抠图后的图片是什么格式？</p>
+      <p class="text-gray-600">答：通常输出为PNG格式，支持透明背景。如果不需要透明背景，也可以选择JPG格式并指定背景颜色。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：在线抠图工具安全吗？</p>
+      <p class="text-gray-600">答：使用本地处理的工具非常安全，图片不会上传到服务器。避免使用需要上传图片到云端的服务处理敏感照片。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：抠图效果不满意怎么办？</p>
+      <p class="text-gray-600">答：可以尝试更换原图（选择主体更清晰的），或使用支持手动调整的工具进行边缘修正。部分工具提供"保留"和"删除"画笔进行精细调整。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让图片处理更简单</h2>
+  <p>AI技术的发展让原本专业的设计技能变得触手可及。智能抠图工具让每个人都能轻松获得专业级的图片处理效果，无论是工作需求还是个人创作，都能事半功倍。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">✅ 使用建议：</p>
+    <ul class="text-green-800 space-y-1">
+      <li>• 选择本地处理的工具，保护图片隐私</li>
+      <li>• 上传前确保图片质量，主体清晰</li>
+      <li>• 抠图后检查细节，特别是头发和边缘</li>
+      <li>• 保存为PNG格式保留透明背景</li>
+      <li>• 尝试不同的背景替换，发挥创意</li>
+    </ul>
+  </div>
+  
+  <p class="mt-6 text-center text-gray-600">好的工具能让创意无限延伸。现在就开始体验智能抠图的魔力吧！</p>
 </div>
-`;export{s as default};
+`;export{r as default};

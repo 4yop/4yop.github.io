@@ -1,92 +1,90 @@
-const t=`<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">还在为搜不到想要的结果烦恼？这个多引擎搜索工具帮你精准定位</h1>
-  <!-- 导语 -->
-  <p class="text-lg text-center text-gray-600 mb-8">想找资料，却总被广告淹没？搜出来的东西牛头不对马嘴？别急，试试这款能同时用百度、谷歌、必应搜索的小工具，还有几十种“搜索暗号”帮你直达答案。</p>
+const t=`
+<article class="max-w-3xl mx-auto px-4 md:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-6 text-gray-900">想知道一个IP地址在哪？这个免费工具能告诉你很多</h1>
 
-  <!-- 正文部分 -->
-  <div class="space-y-8">
+  <p class="text-lg text-gray-700 mb-6">
+    你可能经常听到“IP地址”这个词，尤其是在上网遇到问题的时候。它就像网络世界的“门牌号”，每一台上网的设备都有一个。你有没有好奇过，通过这个“门牌号”，能了解到哪些信息呢？
+  </p>
 
-    <!-- 第一部分：搜索痛点 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">为什么你总觉得“搜不到”</h2>
-      <p class="mb-3">你有没有这样的经历：打开百度输入一个词，前几页全是广告和推广，翻半天也找不到真正有用的信息。或者想找一份PDF文档、一个政府网站的文件，结果出来一堆不相关的网页。这不是你搜索的方式不对，而是普通的搜索框太“笨”了，它听不懂你的真实需求。</p>
-      <p class="mb-3">其实，搜索引擎自己都提供了一些“高级指令”，就像给搜索框下的暗号，可以让它只给你想要的东西。但大多数人不知道这些指令，或者觉得记起来太麻烦。今天要说的这个工具，就是把所有搜索引擎的“暗号”都集成在一起，你只需要点一点，就能用上这些专业功能。</p>
-    </section>
-
-    <!-- 第二部分：什么是多引擎智能搜索工具 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">一个工具，三个搜索引擎</h2>
-      <p class="mb-3">这个小工具最直观的地方，就是它把百度、谷歌、必应都放在了一起。你不需要记住三个网址，也不用在不同标签页之间切来切去。想用哪个，点一下按钮就行。</p>
-      <ul class="list-disc pl-6 mb-3 space-y-1">
-        <li><span class="font-medium text-blue-600">百度</span>：适合搜中文内容，尤其是国内网站的信息。</li>
-        <li><span class="font-medium text-blue-600">谷歌</span>：全球最大的搜索引擎，搜外文资料、学术内容特别好用。</li>
-        <li><span class="font-medium text-blue-600">必应</span>：微软家的，界面干净，搜图片和视频质量很高。</li>
-      </ul>
-      <p>你可以根据自己需要，随时切换。比如找国内的政策文件用百度，查国外的论文用谷歌，找高清图片用必应。一个入口全搞定。</p>
-    </section>
-
-    <!-- 第三部分：高级搜索指令，像说话一样精准 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">“搜索暗号”让结果直击要害</h2>
-      <p class="mb-3">这个工具最厉害的地方，是它自带了几十种“搜索暗号”——也就是搜索引擎的高级指令。你不用死记硬背，因为工具里都列出来了，点一下就能用。下面举几个生活中常见的例子：</p>
-
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <!-- 例子1：搜特定网站 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">只想看某个网站里的内容？用“site:”</h3>
-          <p class="text-sm text-gray-600">比如你想在知乎上搜“人工智能”，但不想看其他网站，就在关键词前加上<code class="bg-gray-200 px-1 rounded">site:zhihu.com 人工智能</code>。工具里点一下“site:”按钮，再输入网址和关键词就行。</p>
-        </div>
-        <!-- 例子2：搜特定文件 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想要PDF文档？用“filetype:pdf”</h3>
-          <p class="text-sm text-gray-600">找工作简历模板、学术论文，往往PDF格式更规范。输入<code class="bg-gray-200 px-1 rounded">filetype:pdf 简历模板</code>，结果就全是PDF文件，省去筛选时间。</p>
-        </div>
-        <!-- 例子3：标题中含有关键词 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想找标题里带“通知”的网页？用“intitle:”</h3>
-          <p class="text-sm text-gray-600">如果关键词出现在网页标题里，通常相关性更高。比如搜<code class="bg-gray-200 px-1 rounded">intitle:放假通知</code>，出来的都是标题中明确有“放假通知”的页面。</p>
-        </div>
-        <!-- 例子4：排除不想要的关键词 -->
-        <div class="bg-gray-50 p-4 rounded-lg">
-          <h3 class="font-medium text-lg mb-2 text-gray-800">想排除广告？用减号“-”</h3>
-          <p class="text-sm text-gray-600">搜“手机”，但不想看电商广告，可以搜<code class="bg-gray-200 px-1 rounded">手机 -京东 -淘宝</code>，结果里就不会出现包含“京东”“淘宝”的页面。</p>
-        </div>
-      </div>
-      <p class="mt-4">还有更多指令，比如搜索特定时间范围、搜索某个网页的缓存、搜索相关网站等等，工具右侧的“高级搜索指令说明”里都列得清清楚楚，点一下就能复制或插入，非常方便。</p>
-    </section>
-
-    <!-- 第四部分：实际操作体验 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">怎么用？三步搞定</h2>
-      <ol class="list-decimal pl-6 mb-3 space-y-2">
-        <li><strong>选引擎</strong>：在百度、谷歌、必应中选一个你需要的。</li>
-        <li><strong>输关键词</strong>：直接在搜索框里打字，如果要用高级指令，可以点下方的快捷按钮（比如“site:”），指令会自动填入，你再接着输入网址或关键词就行。</li>
-        <li><strong>点搜索</strong>：点击右侧的搜索按钮（颜色会随引擎变化），结果就会在新标签页打开。</li>
-      </ol>
-      <p>就这么简单。而且你每次搜索，工具都会帮你记录下来（存在你自己的浏览器里，别人看不到）。以后想重复搜同样内容，点一下历史记录就行，不用重新打字。</p>
-    </section>
-
-    <!-- 第五部分：小细节让搜索更舒心 -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">贴心的细节</h2>
-      <ul class="list-disc pl-6 mb-3 space-y-1">
-        <li><strong>输入提示</strong>：当你开始打字，工具会联想你可能想用的高级指令，选一个就直接填好。</li>
-        <li><strong>历史记录</strong>：自动保存最近50次搜索，还能按引擎分类，点一下就能重新搜索。</li>
-        <li><strong>使用统计</strong>：你可以看到自己总共搜了多少次，哪个引擎用得最多，有点小成就感。</li>
-        <li><strong>移动端也能用</strong>：在手机上打开，布局会自动变成上下结构，按钮大小合适，很好点。</li>
-      </ul>
-    </section>
-
-    <!-- 第六部分：总结 -->
-    <section class="bg-blue-50 p-6 rounded-lg">
-      <h2 class="text-2xl font-semibold mb-3 text-gray-900">从现在起，让搜索更聪明</h2>
-      <p class="mb-3">以前你可能觉得“搜不到”是因为自己不会搜，其实只是没遇到好工具。这个多引擎智能搜索工具，把三大搜索引擎和几十种高级指令集合在一起，不用背、不用记，点一点就能用上“专业搜索”功能。</p>
-      <p>下次想查资料、找文档、搜图片，不妨试试它。你会发现，原来答案可以离你那么近。</p>
-    </section>
-
-    <!-- 附加提示（非营销，纯说明） -->
-    <p class="text-sm text-gray-500 text-center pt-4">—— 一个让搜索回归纯粹的小工具，不收集任何个人信息，所有历史记录只保存在你的浏览器中。</p>
-
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-7 rounded-r">
+    <h2 class="text-xl font-semibold mb-2 text-gray-800">这个小工具能帮你：</h2>
+    <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
+      <li>一键查询自己或他人的网络IP地址。</li>
+      <li>知道这个地址对应在哪个国家、哪个城市。</li>
+      <li>了解当地的时区、货币和语言。</li>
+      <li>快速测试一下自己到百度、GitHub的网络连接速度。</li>
+    </ul>
   </div>
-</div>`;export{t as default};
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">查IP，不仅仅是看个地址</h2>
+
+  <p class="mb-4">
+    当你输入一个IP地址进行查询后，得到的远不止“它在某地”这么简单。结果会像一张详细的信息卡片，让你对这个地址背后的网络世界有更清晰的认识。
+  </p>
+
+  <p class="mb-4">
+    首先，当然是它的<strong>地理位置</strong>。你能看到它属于哪个国家、哪个省份甚至哪个城市。如果这个地址在海外，你还能顺便知道那个国家的首都、人口和面积，算是一个小小的地理知识补充。
+  </p>
+
+  <p class="mb-4">
+    其次，是与生活相关的<strong>实用信息</strong>。比如当地的<strong>时区</strong>和<strong>时间偏移</strong>，这能帮你理解为什么你和海外朋友有时差；当地的<strong>官方货币和语言</strong>是什么，如果你要访问那里的网站或服务，这些信息或许有用。
+  </p>
+
+  <p class="mb-4">
+    最后，是<strong>网络本身的信息</strong>。比如这个IP地址属于哪家<strong>网络运营商或组织</strong>。有时候网络慢，可能就是这段网络线路的“管理人”不同导致的。
+  </p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">随手测测你的网速快不快</h2>
+
+  <p class="mb-4">
+    除了查地址信息，这个工具还有一个很实用的“网络诊断”功能。它能帮你快速测试当前网络连接到两个常用网站的延迟。
+  </p>
+
+  <p class="mb-4">
+    <strong>延迟</strong>，你可以简单理解为数据从你电脑跑到目标网站再回来的时间，单位是毫秒（ms）。这个数字<strong>越小越好</strong>。通常，看视频、打游戏的时候，延迟小会更流畅。
+  </p>
+
+  <p class="mb-4">
+    测试结果会用颜色清晰地标示出来：<span class="text-green-600 font-medium">绿色</span>代表速度很快，<span class="text-orange-500 font-medium">橙色</span>代表速度一般，<span class="text-red-600 font-medium">红色</span>则代表可能比较慢或连接不畅。点一下“开始测试”，几秒钟就能看到结果。
+  </p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">常见问题与解答</h2>
+
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 我为什么要查IP地址？</h3>
+      <p class="text-gray-700">
+        有几个常见场景：比如你登录某个网站，发现提示“新设备登录，地址在XX”，你想确认这个地址对不对；或者你访问一个外国网站很慢，想看看它服务器大概在哪；又或者只是单纯对某个网络来源感到好奇。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 查到的地址准确吗？能精确定位到我家吗？</h3>
+      <p class="text-gray-700">
+        一般来说，IP地址定位到城市级别是比较常见的，大多数公开查询服务提供的也是这个级别的精度。<strong>它通常无法直接精确定位到具体的街道、门牌号或个人家庭住址</strong>。这主要是由IP地址分配机制决定的，也涉及个人隐私保护。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 查询会泄露我的隐私吗？</h3>
+      <p class="text-gray-700">
+        使用这个工具时，如果你查询的是自己的IP，那么这些信息（大致地理位置、网络运营商等）本身就可能被你所访问的网站获取。这个工具只是将这些信息更清晰地展示给你看。它不会记录和存储你的个人查询行为。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 测试延迟时，为什么两个网站结果不同？</h3>
+      <p class="text-gray-700">
+        这非常正常。百度服务器主要在国内，而GitHub服务器主要在海外。连接到国内服务器的延迟自然会更低。这个对比能帮你判断，是你的整体网络有问题，还是仅仅访问国外网站比较慢。
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">总结一下</h2>
+    <p class="mb-3 text-gray-700">
+      这个网络信息查询工具，就像一个简单的“网络望远镜”。它把一串冰冷的数字（IP地址），转化成了你能看懂的国家、城市、时区、网络运营商等信息。
+    </p>
+    <p class="text-gray-700">
+      无论你是想验证登录信息，了解网站服务器位置，还是单纯满足好奇心，它都能提供一个快速、免费的参考。下次再遇到和网络地址相关的问题时，不妨试试用它来寻找答案。
+    </p>
+  </div>
+</article>
+`;export{t as default};

@@ -1,233 +1,87 @@
-const s=`
-<div class="article-content">
-  <h1>进制转换指南：从二进制到十六进制的全面解析</h1>
-  
-  <p class="intro">进制转换是计算机科学中最基础也是最重要的概念之一。无论是程序员、学生还是对计算机感兴趣的人士，掌握进制转换原理都能让你更好地理解计算机的工作机制。本文将详细介绍二进制、八进制、十进制和十六进制之间的转换方法，以及它们在实际应用中的重要性。</p>
-  
-  <h2>什么是进制系统？</h2>
-  
-  <p>进制系统（Number System）是一种表示数字的方法。我们在日常生活中使用的<strong>十进制</strong>是最常见的进制，它使用0-9共10个数字符号。而在计算机领域，<strong>二进制</strong>是最基础的进制，因为计算机的所有数据最终都由0和1表示。</p>
-  
-  <p>除了十进制和二进制，计算机中常用的进制还有：</p>
-  
-  <ul class="feature-list">
-    <li><strong>二进制（Binary）</strong>：使用0和1两个符号，基数是2，计算机的底层语言</li>
-    <li><strong>八进制（Octal）</strong>：使用0-7八个符号，基数是8，常用于Unix权限表示</li>
-    <li><strong>十进制（Decimal）</strong>：使用0-9十个符号，基数是10，人类日常使用</li>
-    <li><strong>十六进制（Hexadecimal）</strong>：使用0-9和A-F十六个符号，基数是16，广泛用于颜色代码、内存地址等</li>
+const o=`
+<div class="prose prose-lg max-w-4xl mx-auto px-4 py-8">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #e8f5e9;">21点计算器：一种锻炼大脑的有趣数字游戏</h2>
+
+  <p class="text-lg mb-8" style="color: #a5d6a7;">
+    你是否曾在闲暇时，想找一种既简单又能活动脑筋的游戏？或者，你是否还记得小时候玩过的，用扑克牌算24点的乐趣？今天，我们来聊聊一种和它很像，但目标更灵活的脑力游戏——"21点"计算游戏。
+  </p>
+
+  <div style="background: rgba(240,192,64,0.15); border-left: 4px solid #f0c040; padding: 1rem 1.25rem; margin-bottom: 2rem; border-radius: 0 12px 12px 0;">
+    <p style="color: #e8f5e9; margin-bottom: 0.5rem;"><strong>简单来说，它的规则是：</strong></p>
+    <p style="color: #a5d6a7;">给你<strong>四个1到10之间的数字</strong>，你的任务是<strong>只使用加（+）、减（-）、乘（×）、除（÷）这四种运算</strong>，想办法让计算结果等于一个特定的目标数字，比如21或者经典的24。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4 mt-10" style="color: #e8f5e9;">这不是赌博，而是数学游戏</h2>
+  <p class="mb-6" style="color: #a5d6a7;">
+    请注意，这里说的"21点"和扑克牌玩法中的21点（Blackjack）不同。它完全无关金钱与运气，是一个纯粹的<strong>逻辑与数学思维游戏</strong>。你不需要任何数学背景，只需要小学学过的四则运算知识就可以上手。
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">为什么这个游戏值得一玩？</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">1. 锻炼大脑灵活性</h3>
+      <p style="color: #a5d6a7;">面对四个看似普通的数字，你需要不断尝试不同的组合和运算顺序，这能有效锻炼你的<strong>发散思维和逻辑推理能力</strong>。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">2. 老少咸宜，随时随地</h3>
+      <p style="color: #a5d6a7;">无论是在家休息、通勤路上，还是作为家庭亲子活动，它都不需要任何道具（除了纸笔或手机），<strong>几分钟就能来一局</strong>。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">3. 从24点到21点</h3>
+      <p style="color: #a5d6a7;">很多人熟悉算24点，而将目标改为21点，给游戏带来了<strong>新的挑战和变化</strong>。数字21有它独特的数字特性，能带来不同的解题思路。</p>
+    </div>
+    <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; background: rgba(255,255,255,0.06);">
+      <h3 class="font-bold mb-2" style="color: #e8f5e9;">4. 无压力解压</h3>
+      <p style="color: #a5d6a7;">专注在数字和符号的组合中，暂时忘记烦恼。当终于找到那个正确的等式时，那种<strong>"灵光一现"的成就感</strong>非常解压。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">如何玩转21点游戏？</h2>
+  <p class="mb-4" style="color: #a5d6a7;">
+    玩这个游戏，你可以遵循一个简单的"三步法"：
+  </p>
+  <ol class="list-decimal pl-5 space-y-3 mb-6" style="color: #a5d6a7;">
+    <li><strong>观察数字</strong>：拿到四个数字后，先快速浏览一下。有没有能轻易凑成21倍数的数？比如7和3？或者有没有特别大的数（如10、9）和特别小的数（如1）？</li>
+    <li><strong>尝试基本组合</strong>：先试试两两组合。比如，先把两个数字相加或相乘，得到一个中间结果，再用这个结果去和剩下的数字运算。</li>
+    <li><strong>善用括号，改变顺序</strong>：这是游戏的精髓！<strong>(3+8)×2</strong> 和 <strong>3+(8×2)</strong> 的结果完全不同。多想想运算的先后顺序。</li>
+  </ol>
+
+  <div style="background: rgba(255,255,255,0.06); padding: 1.25rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem;">
+    <h3 class="font-bold mb-3" style="color: #e8f5e9;">举个例子：</h3>
+    <p class="mb-2" style="color: #a5d6a7;">假设你抽到的四个数字是：<strong>4, 5, 6, 7</strong>，目标是<strong>21</strong>。</p>
+    <p style="color: #a5d6a7;">一种解法是：<strong style="color: #f0c040;">(6 ÷ (5 - 4)) × 7 = 21</strong></p>
+    <p class="mt-2 text-sm" style="color: #5a8a60;">解析：先算括号里的 5-4=1，然后用6除以这个1得到6，最后6乘以7正好等于21。你看，并不难吧？</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">当你卡住时，可以借助"21点计算器"</h2>
+  <p class="mb-4" style="color: #a5d6a7;">
+    和所有解谜游戏一样，遇到难题卡住很久是很常见的。这时，使用在线的"21点计算器"工具会是个好帮手：
+  </p>
+  <ul class="list-disc pl-5 space-y-2 mb-6" style="color: #a5d6a7;">
+    <li><strong>验证思路</strong>：当你自己想出一个算式后，可以用它快速验证结果是否正确。</li>
+    <li><strong>寻找启发</strong>：如果实在想不出，让它给出一个答案，看看它的解题路径，常常能<strong>给你新的思路启发</strong>，下次遇到类似数字组合就能举一反三。</li>
+    <li><strong>挑战更多可能</strong>：一个题目往往不止一种解法。你可以用它来探索，看看你找到的解法是不是唯一的，或许还有更巧妙的办法。</li>
   </ul>
-  
-  <h2>常用进制系统详解</h2>
-  
-  <h3>1. 二进制（Binary - 基数2）</h3>
-  
-  <p>二进制是计算机的"母语"。计算机中的所有数据——文字、图片、视频、程序代码——最终都以二进制形式存储和处理。二进制的每一位称为一个"比特"（bit），8个比特组成一个"字节"（byte）。</p>
-  
-  <p class="example">示例：二进制数 <code>10110</code> 表示的十进制值是：
-  1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 0×2⁰ = 16 + 0 + 4 + 2 + 0 = 22</p>
-  
-  <h3>2. 八进制（Octal - 基数8）</h3>
-  
-  <p>八进制使用数字0-7，在早期的计算机系统中经常使用。一个八进制位可以恰好表示3个二进制位（因为2³=8），这使得八进制在表示二进制数据时非常方便。如今，八进制主要用于Unix/Linux系统的文件权限表示。</p>
-  
-  <p class="example">示例：八进制数 <code>75</code> 表示的十进制值是：
-  7×8¹ + 5×8⁰ = 56 + 5 = 61</p>
-  
-  <h3>3. 十进制（Decimal - 基数10）</h3>
-  
-  <p>十进制是我们最熟悉的进制，使用数字0-9。十进制的"十"源于人类有十根手指，这是最自然的选择。在计算机编程中，我们经常需要将其他进制转换为十进制以便理解和调试。</p>
-  
-  <p class="example">示例：十进制数 <code>255</code> 表示为：
-  2×10² + 5×10¹ + 5×10⁰ = 200 + 50 + 5 = 255</p>
-  
-  <h3>4. 十六进制（Hexadecimal - 基数16）</h3>
-  
-  <p>十六进制使用数字0-9和字母A-F（a-f），其中A-F分别表示10-15。十六进制的一个巨大优势是：一个十六进制位可以恰好表示4个二进制位（因为2⁴=16），这使得十六进制成为表示二进制数据的高效方式。</p>
-  
-  <p class="example">示例：十六进制数 <code>2A</code> 表示的十进制值是：
-  2×16¹ + 10×16⁰ = 32 + 10 = 42</p>
-  
-  <h2>进制转换方法</h2>
-  
-  <h3>任意进制转十进制</h3>
-  
-  <p>将任意进制数转换为十进制，只需要将每一位数字乘以该位的权重（基数的相应次方），然后将所有结果相加。</p>
-  
-  <div class="conversion-example">
-    <p><strong>示例1</strong>：二进制 1101 → 十进制</p>
-    <p>1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13</p>
-    
-    <p><strong>示例2</strong>：十六进制 F3 → 十进制</p>
-    <p>15×16¹ + 3×16⁰ = 240 + 3 = 243</p>
-  </div>
-  
-  <h3>十进制转任意进制</h3>
-  
-  <p>将十进制转换为其他进制，采用"除基取余法"：不断除以目标进制的基数，取余数，直到商为0。余数倒序排列就是结果。</p>
-  
-  <div class="conversion-example">
-    <p><strong>示例</strong>：十进制 37 → 二进制</p>
-    <p>37 ÷ 2 = 18 余 1</p>
-    <p>18 ÷ 2 = 9 余 0</p>
-    <p>9 ÷ 2 = 4 余 1</p>
-    <p>4 ÷ 2 = 2 余 0</p>
-    <p>2 ÷ 2 = 1 余 0</p>
-    <p>1 ÷ 2 = 0 余 1</p>
-    <p>余数倒序：100101，所以 37(十进制) = 100101(二进制)</p>
-  </div>
-  
-  <h3>二进制与八进制/十六进制互转</h3>
-  
-  <p>由于2³=8和2⁴=16，二进制与八进制、十六进制的转换非常简单，只需要按位分组转换。</p>
-  
-  <div class="conversion-example">
-    <p><strong>二进制转八进制</strong>：从右向左每3位二进制数为一组，转换为1位八进制数</p>
-    <p>10110110(二进制) → 10 110 110 → 2 6 6 → 266(八进制)</p>
-    
-    <p><strong>二进制转十六进制</strong>：从右向左每4位二进制数为一组，转换为1位十六进制数</p>
-    <p>10110110(二进制) → 1011 0110 → B 6 → B6(十六进制)</p>
-  </div>
-  
-  <h2>程序员如何使用进制转换</h2>
-  
-  <h3>1. 颜色代码</h3>
-  
-  <p>在网页设计和图形编程中，颜色通常用十六进制表示。例如，纯红色是 <code>#FF0000</code>，其中FF表示红色分量，00表示绿色分量，00表示蓝色分量。每个分量的范围是00-FF（十进制的0-255）。</p>
-  
-  <div class="color-example">
-    <div class="color-box" style="background-color: #FF0000;"></div>
-    <p><code>#FF0000</code> = RGB(255, 0, 0) = 纯红色</p>
-  </div>
-  
-  <h3>2. 内存地址</h3>
-  
-  <p>计算机的内存地址通常用十六进制表示，因为这样更简洁且易于阅读。例如，一个32位系统的内存地址可能显示为 <code>0x7FFE1234</code>，其中 <code>0x</code> 前缀表示这是一个十六进制数。</p>
-  
-  <h3>3. 位运算</h3>
-  
-  <p>位运算是直接对二进制位进行操作的运算，包括与（AND）、或（OR）、异或（XOR）、非（NOT）、左移（<<）、右移（>>）等。位运算在底层编程、加密算法、图像处理等领域非常重要。</p>
-  
-  <div class="code-example">
-    <p><strong>示例</strong>：使用位运算检查一个数的奇偶性</p>
-    <p>如果 <code>(n & 1) == 0</code>，则n是偶数；如果 <code>(n & 1) == 1</code>，则n是奇数。</p>
-  </div>
-  
-  <h3>4. 数据压缩和编码</h3>
-  
-  <p>十六进制常用于表示二进制数据，如Base64编码、文件哈希值（MD5、SHA256）、加密密钥等。这些场景下，十六进制比二进制更紧凑，比十进制更直观。</p>
-  
-  <div class="hash-example">
-    <p><strong>文件哈希值示例</strong>：</p>
-    <p>MD5: <code>5d41402abc4b2a76b9719d911017c592</code></p>
-    <p>SHA256: <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></p>
-  </div>
-  
-  <h2>手动进制转换技巧</h2>
-  
-  <h3>二进制快速心算</h3>
-  
-  <p>记住一些常见的二进制数值，可以快速进行心算：</p>
-  
-  <ul class="tips-list">
-    <li>2¹⁰ = 1024 ≈ 1K</li>
-    <li>2²⁰ ≈ 1M（百万）</li>
-    <li>2³⁰ ≈ 1G（十亿）</li>
-    <li>2ⁿ 的二进制形式是 1 后面跟 n 个 0</li>
-  </ul>
-  
-  <h3>十六进制记忆口诀</h3>
-  
-  <p>记住十六进制的字母对应值：</p>
-  
-  <ul class="tips-list">
-    <li>A = 10（Ace，扑克牌中的A）</li>
-    <li>B = 11（Baseball，棒球）</li>
-    <li>C = 12（Clock，时钟）</li>
-    <li>D = 13（Doctor，医生）</li>
-    <li>E = 14（Eagle，老鹰）</li>
-    <li>F = 15（Fifteen，十五）</li>
-  </ul>
-  
-  <h3>使用计算器工具</h3>
-  
-  <p>现代计算器（包括Windows计算器、手机计算器）都支持进制转换功能，可以快速准确地进行复杂的进制转换运算。</p>
-  
-  <h2>进制转换的实际应用场景</h2>
-  
-  <div class="application-grid">
-    <div class="application-card">
-      <h4>🔢 计算机科学教育</h4>
-      <p>理解计算机底层原理，学习数据结构和算法的基础</p>
-    </div>
-    <div class="application-card">
-      <h4>🎨 网页设计</h4>
-      <p>使用十六进制颜色代码设计网页和界面</p>
-    </div>
-    <div class="application-card">
-      <h4>💻 软件开发</h4>
-      <p>调试程序、查看内存、进行位运算操作</p>
-    </div>
-    <div class="application-card">
-      <h4>🔒 网络安全</h4>
-      <p>分析加密算法、破解哈希值、协议分析</p>
-    </div>
-    <div class="application-card">
-      <h4>📡 嵌入式开发</h4>
-      <p>单片机编程、寄存器配置、硬件控制</p>
-    </div>
-    <div class="application-card">
-      <h4>🎮 游戏开发</h4>
-      <p>图形渲染、碰撞检测、性能优化</p>
-    </div>
-  </div>
-  
-  <h2>为什么进制转换如此重要？</h2>
-  
-  <p>进制转换不仅仅是数学运算，它是连接人类思维与计算机世界的桥梁。掌握进制转换可以帮你：</p>
-  
-  <ul class="benefit-list">
-    <li><strong>深入理解计算机</strong>：明白数据如何在计算机中存储和传输</li>
-    <li><strong>提高编程效率</strong>：在调试和优化代码时能够快速定位问题</li>
-    <li><strong>增强逻辑思维</strong>：培养抽象思维和问题分析能力</li>
-    <li><strong>拓展职业发展</strong>：在计算机相关领域拥有竞争优势</li>
-  </ul>
-  
-  <div class="faq-section">
-    <h2>常见问题（FAQ）</h2>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">1. 为什么计算机使用二进制而不是十进制？</h4>
-      <p class="faq-answer">计算机使用二进制是因为电子元件最容易实现两种稳定状态（开/关、高电平/低电平）。二进制系统简单、可靠，适合硬件实现，而十进制需要10种不同的状态，实现起来复杂且成本高昂。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">2. 八进制在现代编程中还有什么用？</h4>
-      <p class="faq-answer">虽然八进制在编程中的使用不如十六进制广泛，但它仍在一些特定场景中使用。最典型的是Unix/Linux系统的文件权限表示，例如 <code>chmod 755</code> 中的755就是八进制，表示文件所有者的读、写、执行权限。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">3. 如何快速判断一个十六进制数的奇偶性？</h4>
-      <p class="faq-answer">只需要看十六进制数的最后一位。如果最后一位是偶数（0, 2, 4, 6, 8, A, C, E），则整个数是偶数；如果最后一位是奇数（1, 3, 5, 7, 9, B, D, F），则整个数是奇数。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">4. 为什么颜色代码使用十六进制而不是RGB数字？</h4>
-      <p class="faq-answer">十六进制更紧凑且易于阅读。一个颜色分量用十六进制只需2位（00-FF），而十进制需要1-3位（0-255）。此外，十六进制与二进制的转换关系简单，便于计算机内部处理。例如，#FF0000 比 RGB(255, 0, 0) 更简洁。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">5. 如何将大数字从二进制转换为十进制？</h4>
-      <p class="faq-answer">对于大数字，可以先将二进制转换为十六进制（每4位一组），然后将十六进制转换为十进制，这样计算量更小。或者使用计算器工具，特别是程序员计算器，可以快速完成任意进制之间的转换。</p>
-    </div>
-  </div>
-  
-  <div class="conclusion">
-    <h2>总结</h2>
-    <p>进制转换是计算机科学的基础知识，虽然看起来抽象，但在实际编程和系统维护中无处不在。从颜色代码到内存地址，从位运算到加密算法，掌握进制转换能让你更深入地理解计算机的工作原理。</p>
-    
-    <p>现在你可以使用我们的<strong>在线进制转换器</strong>，快速准确地完成二进制、八进制、十进制和十六进制之间的任意转换。无论你是学习编程的学生、从事软件开发的专业人士，还是对计算机技术感兴趣的爱好者，这个工具都能为你提供强大的支持。</p>
-    
-    <p class="cta">开始使用进制转换器，让数字转换变得简单高效！</p>
+  <p class="mb-6" style="color: #a5d6a7;">
+    记住，工具的目的是<strong>辅助学习和提供灵感</strong>，而不是代替思考。最好的乐趣仍然来自于你自己解开谜题的那一刻。
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4" style="color: #e8f5e9;">从经典24点开始尝试</h2>
+  <p class="mb-6" style="color: #a5d6a7;">
+    如果你刚接触这类游戏，不妨从更经典的"24点"开始练手。因为24有更多的因数（比如2,3,4,6,8,12），组合方式更丰富，相对容易一些。
+  </p>
+  <p class="mb-6" style="color: #a5d6a7;">
+    这里有一个著名的24点题目：<strong>3, 3, 8, 8</strong>。你能让它们等于24吗？（提示：需要用到分数思想）。等你熟悉了24点的节奏，再挑战21点，会发现别有一番趣味。
+  </p>
+
+  <div style="background: rgba(240,192,64,0.1); border: 1px solid rgba(240,192,64,0.25); border-radius: 14px; padding: 1.5rem; margin-top: 2.5rem; text-align: center;">
+    <h3 class="text-xl font-semibold mb-3" style="color: #e8f5e9;">开始你的脑力锻炼吧！</h3>
+    <p class="mb-4" style="color: #a5d6a7;">
+      无论是为了在朋友聚会时小露一手，还是单纯想给日常生活添点思考的乐趣，"21点"或"24点"都是一个绝佳的选择。它像一副随身携带的"数字积木"，随时可以拿出来搭建一番。
+    </p>
+    <p style="color: #a5d6a7;">
+      不妨现在就找来四个数字，试试看能不能搭出"21"这座小塔。享受思考的过程，你会发现，数字的世界也可以很有趣。
+    </p>
   </div>
 </div>
-`;export{s as default};
+`;export{o as default};

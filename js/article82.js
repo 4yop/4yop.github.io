@@ -1,88 +1,169 @@
-const s=`
-<article class="max-w-4xl mx-auto p-6 font-sans text-gray-800">
-  <header class="mb-8 text-center">
-    <h1 class="text-3xl font-bold text-slate-900 mb-4">你的身体变化，有把“聪明”的尺子</h1>
-    <p class="text-gray-600 text-lg">告别健忘与混乱，轻松看懂自己的健康趋势</p>
-  </header>
-
-  <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl mb-8">
-    <p class="mb-4">你是不是也有过这样的经历？站在秤上，看着体重数字，心里冒出无数问号：</p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-      <li>体重没变，怎么感觉肚子又大了？</li>
-      <li>辛苦锻炼一个月，效果到底怎么样？</li>
-      <li>去年夏天的数据和今年的，早就混在一起记不清了。</li>
-      <li>买过体脂秤，但那些数据看一眼就忘了，根本不知道自己是进步了还是退步了。</li>
-    </ul>
-    <p class="mt-4">很多人管理健康，就像在用一把刻度模糊、还不带记忆功能的尺子，量了半天，结果还是糊涂账。</p>
+const t=`
+<div class="article-container">
+  <h1 class="article-title">BMI计算器：了解你的身体质量指数，掌握健康体重标准</h1>
+  
+  <div class="article-intro">
+    <p>在健康管理的道路上，了解自己的身体状况是第一步。<strong>BMI身体质量指数</strong>作为国际上通用的体重评估标准，能够帮助我们快速判断体重是否处于健康范围。本文将详细介绍BMI计算器的使用方法、BMI计算公式以及中国成人的BMI健康标准，助你科学管理体重，迈向健康生活。</p>
   </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-blue-500 pl-3 mb-4">一把更懂你的“健康尺”：体脂率</h2>
-    <p class="mb-4">我们常说的“胖瘦”，体重只是一个粗略参考。真正关键的是<strong>体脂率</strong>，也就是你身体里脂肪所占的比例。它就像一面更精准的镜子：</p>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">1</span>
-        <span>同样体重，肌肉多的人看起来紧致，脂肪多的人则显得臃肿，区别就在体脂率。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">2</span>
-        <span>减肥成功的标志不一定是体重暴跌，而是体脂率的稳步下降。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">3</span>
-        <span>它比单纯的体重，更能反映你的锻炼成果和身体成分的真实变化。</span>
-      </li>
+  <h2 class="article-section-title">一、什么是BMI身体质量指数？</h2>
+  <div class="article-section">
+    <p><strong>BMI（Body Mass Index，身体质量指数）</strong>是衡量人体胖瘦程度与健康状况的国际标准指标。它通过身高和体重的比例关系，评估一个人的体重是否处于健康范围。</p>
+    <p>BMI的概念由比利时数学家阿道夫·凯特勒在19世纪提出，如今已被世界卫生组织（WHO）和各国卫生机构广泛采用。相比单纯的体重数据，BMI更能反映身体的匀称程度，是判断肥胖和营养不良的重要参考指标。</p>
+    <p>使用<strong>BMI计算器</strong>可以快速得出你的BMI数值，无需复杂的手动计算，即可获得专业的健康评估结果。</p>
+  </div>
+
+  <h2 class="article-section-title">二、BMI计算公式详解</h2>
+  <div class="article-section">
+    <p>BMI的计算方法非常简单，只需两个基础数据：体重和身高。</p>
+    
+    <div class="formula-box">
+      <h3>BMI计算公式：</h3>
+      <p class="formula">BMI = 体重（kg）÷ 身高²（m²）</p>
+    </div>
+    
+    <p><strong>计算示例：</strong></p>
+    <ul class="example-list">
+      <li>假设某人身高1.75米，体重70公斤</li>
+      <li>BMI = 70 ÷ (1.75 × 1.75) = 70 ÷ 3.0625 ≈ 22.9</li>
     </ul>
-  </section>
+    
+    <p>如果你觉得手动计算麻烦，可以直接使用我们的<strong>在线BMI计算器</strong>，输入身高体重即可秒得结果，还能获取个性化的健康建议。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-green-500 pl-3 mb-4">如何轻松拥有自己的“健康日记本”？</h2>
-    <p class="mb-6">现在，想象你有一个<strong>专属的健康小助手</strong>，它能帮你解决上面的所有烦恼。你不需要懂复杂的数据，只需要像聊天一样告诉它几个基本信息。</p>
+  <h2 class="article-section-title">三、中国成人BMI健康标准</h2>
+  <div class="article-section">
+    <p>根据中华人民共和国卫生部发布的《中国成人超重和肥胖症预防控制指南》，中国成人的BMI标准如下：</p>
+    
+    <table class="bmi-standard-table">
+      <thead>
+        <tr>
+          <th>BMI范围</th>
+          <th>体重状态</th>
+          <th>健康风险</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="underweight">
+          <td>&lt; 18.5</td>
+          <td>偏瘦</td>
+          <td>营养不良风险</td>
+        </tr>
+        <tr class="normal">
+          <td>18.5 - 23.9</td>
+          <td>正常</td>
+          <td>健康范围</td>
+        </tr>
+        <tr class="overweight">
+          <td>24.0 - 27.9</td>
+          <td>超重</td>
+          <td>患病风险增加</td>
+        </tr>
+        <tr class="obese">
+          <td>≥ 28.0</td>
+          <td>肥胖</td>
+          <td>患病风险较高</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p class="note">需要注意的是，中国标准比WHO标准更为严格（WHO正常范围为18.5-24.9），这是因为亚洲人群在较低BMI时就已经面临较高的代谢疾病风险。</p>
+  </div>
 
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg mb-3 text-blue-700">第一步：简单输入</h3>
-        <p>就像每次体检填表一样，选择性别，输入你的身高、体重和年龄。然后点击“计算”，你的体脂率结果立刻就出来了。这个过程，比你泡一杯茶还快。</p>
-      </div>
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-        <h3 class="font-bold text-lg mb-3 text-green-700">第二步：自动记忆</h3>
-        <p>神奇的是，每次计算后，这个小助手都会默默记下这次的数据和日期。你完全不用担心忘记或丢失。它会自动帮你整理好，形成一个清晰的历史记录表。</p>
-      </div>
+  <h2 class="article-section-title">四、BMI的局限性</h2>
+  <div class="article-section">
+    <p>虽然BMI是评估体重健康的重要工具，但它也有一定的局限性：</p>
+    
+    <ul class="limitation-list">
+      <li><strong>不区分脂肪和肌肉：</strong>运动员或健身爱好者肌肉量高，BMI可能显示超重，但体脂率正常</li>
+      <li><strong>不考虑脂肪分布：</strong>腹部脂肪（内脏脂肪）比皮下脂肪危害更大，但BMI无法反映</li>
+      <li><strong>不适用于特殊人群：</strong>孕妇、儿童、老年人需要采用不同的评估标准</li>
+      <li><strong>种族差异：</strong>不同种族的BMI健康范围可能存在差异</li>
+    </ul>
+    
+    <p>因此，建议将BMI与腰围、体脂率等指标结合使用，获得更全面的健康评估。</p>
+  </div>
+
+  <h2 class="article-section-title">五、健康体重管理建议</h2>
+  <div class="article-section">
+    <p>根据你的BMI计算结果，我们提供以下健康建议：</p>
+    
+    <h3>BMI偏瘦（&lt;18.5）</h3>
+    <ul>
+      <li>增加营养摄入，保证蛋白质、碳水化合物和健康脂肪的均衡</li>
+      <li>进行适度的力量训练，增加肌肉量</li>
+      <li>规律作息，保证充足睡眠</li>
+      <li>如有必要，咨询营养师制定增重计划</li>
+    </ul>
+    
+    <h3>BMI正常（18.5-23.9）</h3>
+    <ul>
+      <li>保持当前的健康生活方式</li>
+      <li>每周进行至少150分钟中等强度运动</li>
+      <li>定期监测BMI，预防体重波动</li>
+      <li>关注腰围变化，男性应&lt;85cm，女性应&lt;80cm</li>
+    </ul>
+    
+    <h3>BMI超重（24.0-27.9）</h3>
+    <ul>
+      <li>控制饮食热量，减少高糖高脂食物</li>
+      <li>增加有氧运动，如快走、游泳、骑行</li>
+      <li>设定合理的减重目标（每周0.5-1公斤）</li>
+      <li>记录饮食和运动，提高自我监督</li>
+    </ul>
+    
+    <h3>BMI肥胖（≥28.0）</h3>
+    <ul>
+      <li>建议咨询医生或专业营养师</li>
+      <li>制定科学的减重计划，避免极端节食</li>
+      <li>关注血压、血糖、血脂等指标</li>
+      <li>考虑加入减重支持小组，获得心理支持</li>
+    </ul>
+  </div>
+
+  <h2 class="article-section-title">六、BMI计算器常见问题（FAQ）</h2>
+  <div class="article-section faq-section">
+    
+    <div class="faq-item">
+      <h4>Q1：BMI计算器的结果准确吗？</h4>
+      <p>BMI计算器基于国际标准公式计算，数学上是准确的。但BMI本身是一个筛查工具，不是诊断工具。如需准确的健康评估，建议结合其他指标并咨询专业医生。</p>
     </div>
-
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <h3 class="font-bold text-lg mb-4 text-purple-700">第三步：看懂趋势</h3>
-      <p class="mb-4">这是最有价值的部分！所有记录下来的数据，会自动生成一张<strong>趋势变化图</strong>。</p>
-      <ul class="space-y-2 text-gray-700">
-        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span> <strong>蓝线代表体脂率</strong>：一眼就能看出它是上升、下降还是持平。</li>
-        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span> <strong>绿线代表体重</strong>：可以和体脂率对照着看。</li>
-      </ul>
-      <p class="mt-4">比如，你可以清晰地看到：“哦，从3月到5月，我的体重没怎么变，但体脂率这条蓝线确实在慢慢往下走，这说明我长的可能是肌肉，减的是脂肪，锻炼有效！”</p>
+    
+    <div class="faq-item">
+      <h4>Q2：儿童和青少年可以使用成人BMI标准吗？</h4>
+      <p>不可以。2-20岁的儿童和青少年需要使用年龄和性别特定的BMI百分位数来评估。成人的BMI标准不适用于生长发育期的未成年人。</p>
     </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-amber-500 pl-3 mb-4">给你的数据，加上“双保险”</h2>
-    <p class="mb-4">我们最怕的就是数据丢失。这个小助手还有两个贴心功能：</p>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <div class="flex-1 bg-amber-50 p-5 rounded-xl border border-amber-100">
-        <h4 class="font-bold mb-2">打包带走（导出）</h4>
-        <p>你可以把所有的记录一键导出，保存到电脑或手机里，就像给珍贵的照片备份一样安心。</p>
-      </div>
-      <div class="flex-1 bg-emerald-50 p-5 rounded-xl border border-emerald-100">
-        <h4 class="font-bold mb-2">原样恢复（导入）</h4>
-        <p>万一需要，你可以把之前备份的数据文件再导入回来，所有记录瞬间恢复原样，无需重复输入。</p>
-      </div>
+    
+    <div class="faq-item">
+      <h4>Q3：为什么我的BMI正常但看起来偏胖？</h4>
+      <p>可能原因包括：体脂率偏高（隐性肥胖）、肌肉量偏低、脂肪主要堆积在腹部。建议测量腰围和体脂率，获得更全面的身体成分分析。</p>
     </div>
-  </section>
-
-  <section class="bg-slate-50 p-6 rounded-2xl">
-    <h2 class="text-2xl font-semibold text-slate-800 mb-4">现在就开始，量一量你的健康轨迹</h2>
-    <p class="mb-4">管理健康，不应该是一件复杂和健忘的事情。它需要的不是多么高深的知识，而只是一个<strong>简单、持续、可视化</strong>的记录方式。</p>
-    <p class="mb-6">无论你是想减肥、增肌，还是仅仅想了解自己身体的变化规律，从今天开始，试着记录下你的体脂率。几个星期或几个月后，回头看看那张趋势图，你可能会对自己有更清晰、更惊喜的发现。</p>
-    <div class="text-center p-4 border border-dashed border-slate-300 rounded-lg">
-      <p class="font-medium">找一找那个能帮你<strong>计算、记住、画出趋势</strong>的小工具吧。它就是你那把聪明的“健康尺”和永不忘事的“健康日记本”。</p>
+    
+    <div class="faq-item">
+      <h4>Q4：BMI和体脂率有什么区别？</h4>
+      <p>BMI基于身高体重计算，无法区分脂肪和肌肉；体脂率直接测量体内脂肪所占比例。体脂率能更准确地反映肥胖程度，但需要专业设备测量。</p>
     </div>
-  </section>
-</article>
-`;export{s as default};
+    
+    <div class="faq-item">
+      <h4>Q5：多久应该测量一次BMI？</h4>
+      <p>建议每月测量一次BMI并记录。减重期间可以每周测量，但要注意体重日常波动（1-2公斤）属于正常现象，应关注长期趋势而非单日数据。</p>
+    </div>
+    
+  </div>
+
+  <h2 class="article-section-title">七、结语</h2>
+  <div class="article-section conclusion">
+    <p><strong>BMI身体质量指数</strong>是了解自身健康状况的重要工具，通过BMI计算器，你可以快速评估体重是否处于健康范围。记住，健康的体重不仅关乎外表，更是预防慢性疾病、保持活力的基础。</p>
+    <p>无论你的BMI结果如何，重要的是采取积极的健康行动。偏瘦者注重营养均衡，正常者保持良好习惯，超重和肥胖者制定科学的减重计划。健康是一场马拉松，而不是短跑，持之以恒才能收获长久的健康。</p>
+    <p>立即使用我们的<strong>BMI计算器</strong>，开启你的健康管理之旅吧！</p>
+  </div>
+
+  <div class="article-tags">
+    <span class="tag">BMI计算器</span>
+    <span class="tag">身体质量指数</span>
+    <span class="tag">健康体重</span>
+    <span class="tag">体重管理</span>
+    <span class="tag">健康评估</span>
+  </div>
+</div>
+`;export{t as default};

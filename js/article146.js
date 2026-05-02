@@ -1,113 +1,96 @@
-const l=`
-<div class="text-gray-800 leading-relaxed">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Excel和CSV文件互转：一个简单工具解决办公小烦恼</h1>
+const t=`
+<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
 
-  <!-- 引言 -->
-  <p class="mb-6 text-lg">
-    你在工作中是否遇到过这样的困扰：精心制作的Excel表格，发给同事或上传到某个系统时，对方却提示无法打开或格式不支持？或者收到一个CSV文件，点开却发现全是乱码，数据都挤在一起？今天，我们就来聊聊这两种常见的电子表格文件，以及如何轻松地在它们之间转换。
+  <p class="text-lg text-gray-600 mb-8">
+    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
   </p>
 
-  <!-- 第一部分：解释两种格式 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">Excel 和 CSV，到底有什么区别？</h2>
-    <p class="mb-4">
-      我们可以把文件格式想象成不同的“包装盒”。<strong>Excel文件</strong>（比如 .xlsx 或 .xls）就像一个功能齐全的“豪华礼品盒”，它不仅能装下数据（表格里的数字和文字），还能记住颜色、字体、公式、多个工作表等丰富的样式和设置。这是微软Office和WPS等办公软件最常用的格式。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
+    <p class="text-gray-800">
+      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
     </p>
-    <p class="mb-4">
-      而<strong>CSV文件</strong>（.csv）则像一个最朴素的“通用纸箱”。它只关心最核心的东西——数据本身。它用简单的逗号来分隔每一列，用换行来分隔每一行，里面没有任何颜色、公式或者多余的格式。正因为这种简单，几乎所有的软件和系统都能识别并打开它，兼容性极好。
-    </p>
-    <div class="bg-blue-50 p-4 rounded-lg mb-4 border border-blue-100">
-      <p class="text-blue-800 mb-2"><strong>简单来说：</strong></p>
-      <ul class="list-disc pl-5 space-y-1 text-blue-800">
-        <li>Excel文件：功能强，样式丰富，适合编辑和保存。</li>
-        <li>CSV文件：结构简单，兼容性无敌，适合交换和导入数据。</li>
-      </ul>
+  </div>
+
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
+  <p class="mb-6">
+    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
+  </p>
+  <ul class="space-y-4 mb-10 pl-5 list-disc">
+    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
+    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
+    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
+    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
+  </ul>
+  <p class="mb-10">
+    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
+  </p>
+
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
+  <p class="mb-6">
+    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
+      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
+      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
+      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
+      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
     </div>
   </div>
 
-  <!-- 第二部分：为什么需要转换？ -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么时候需要把文件转来转去？</h2>
-    <p class="mb-4">
-      理解了它们的特性，就知道转换的必要性了。下面这些场景，你可能也碰到过：
-    </p>
-    <div class="grid md:grid-cols-2 gap-4 mb-6">
-      <div class="bg-gray-50 p-4 rounded-lg border">
-        <h3 class="font-semibold mb-2 text-lg">需要把 Excel 转成 CSV</h3>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>将客户数据导入到网站后台或邮件系统。</li>
-          <li>把销售报表上传到只支持CSV的财务软件。</li>
-          <li>和用不同办公软件（如Mac的Numbers）的伙伴共享纯数据。</li>
-          <li>避免因Excel版本不同导致的格式错乱问题。</li>
-        </ul>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg border">
-        <h3 class="font-semibold mb-2 text-lg">需要把 CSV 转成 Excel</h3>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>从银行或电商平台下载的账单是CSV，想用Excel做进一步计算和图表分析。</li>
-          <li>收到的CSV数据没有排版，想把它整理得美观易读。</li>
-          <li>需要将多个CSV文件的数据合并到一个Excel文件的多个工作表中。</li>
-          <li>单纯觉得用Excel查看和编辑更顺手。</li>
-        </ul>
-      </div>
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
+
+  <div class="space-y-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
+      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
+      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
+      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
+      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
     </div>
   </div>
 
-  <!-- 第三部分：介绍工具（非技术化描述） -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何轻松完成转换？</h2>
-    <p class="mb-4">
-      以前，你可能需要打开复杂的办公软件，进行“另存为”操作，或者手动复制粘贴，步骤繁琐还容易出错。现在，整个过程可以变得像“上传文件-点击按钮-下载结果”一样简单。
+  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
+    <p class="text-gray-700 mb-6">
+      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
     </p>
-    <p class="mb-6">
-      一个设计友好的在线工具就能帮你搞定。你只需要：
-    </p>
-    <ol class="list-decimal pl-5 space-y-3 mb-6">
-      <li><strong>选择转换方向</strong>：告诉工具，你是想把Excel变成CSV，还是反过来。</li>
-      <li><strong>上传你的文件</strong>：从电脑里选择那个需要转换的文件。</li>
-      <li><strong>做点小选择（如果需要）</strong>：比如转换Excel时，可以选择里面的某一个具体工作表；转换CSV时，可以选一种更通用的文字编码来彻底避免乱码。</li>
-      <li><strong>开始转换并下载</strong>：点击按钮，稍等片刻，就能得到一份格式完美兼容的新文件。</li>
-    </ol>
-    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
-      <p class="text-green-800">
-        <strong>整个过程在浏览器里完成</strong>，无需安装任何软件，也无需担心复杂的设置。无论是用Windows电脑、Mac，还是手机，只要你能打开网页，就能使用。
-      </p>
-    </div>
-  </div>
-
-  <!-- 第四部分：解决常见问题（FAQ形式） -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你可能关心的问题</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-semibold mb-2">转换后会丢失我的公式和颜色吗？</h3>
-        <p>当从Excel转为CSV时，<strong>会的</strong>。CSV格式只保存最终的数值和文字结果。所以如果你的表格依赖复杂的计算，建议保留原始的Excel文件作为“母版”，只将最终需要交换的数据转为CSV。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">为什么转换后的CSV用记事本打开是乱码？</h3>
-        <p>这通常是“文字编码”不匹配造成的。选择带有“<strong>BOM</strong>”的UTF-8编码选项进行转换，可以最大限度地保证在不同系统上都能正确显示中文等字符，彻底解决乱码烦恼。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">我的文件很大，转换会卡住吗？</h3>
-        <p>一个好的工具会考虑到大文件的情况，采用流式处理的方式，就像细水长流一样分批处理数据，而不是一次性全部吞下，从而更稳定地完成大型表格的转换。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">转换安全吗？我的数据会上传到哪里？</h3>
-        <p>对于靠谱的工具，整个转换过程通常在<strong>你的浏览器本地完成</strong>，文件数据并不会被上传到远方的服务器。这意味着你的敏感业务数据或个人信息，从始至终都只留在你自己的电脑或手机上，安全有保障。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 结尾总结 -->
-  <div class="bg-gray-50 p-6 rounded-xl border">
-    <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
-    <p class="mb-4 text-center">
-      Excel和CSV，各有各的用武之地。当它们在沟通中“语言不通”时，我们不再需要手足无措。利用简单易用的转换工具，就像给文件找一个“万能翻译”，轻松跨越格式障碍，让数据顺畅地流动起来，为你提高办公效率，减少不必要的麻烦。
-    </p>
-    <p class="text-center text-gray-600">
-      希望这篇文章能帮你理清思路。下次再遇到格式不兼容的提示，不妨试试这个简单的转换方法。
+    <p class="text-gray-700">
+      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
     </p>
   </div>
-</div>
-`;export{l as default};
+</article>
+`;export{t as default};

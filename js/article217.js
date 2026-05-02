@@ -1,510 +1,235 @@
-const e=`
-<article class="article-container">
-  <style>
-    .article-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem 3rem;
-      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", -apple-system, sans-serif;
-      color: rgba(255, 255, 255, 0.9);
-      position: relative;
-      overflow: hidden;
-    }
-    .article-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-      background: #1a0f0a;
-    }
-    .article-bg::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(239, 68, 68, 0.2) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 20%, rgba(249, 115, 22, 0.18) 0%, transparent 55%),
-        radial-gradient(ellipse 70% 55% at 50% 80%, rgba(245, 158, 11, 0.15) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 40% at 85% 75%, rgba(234, 88, 12, 0.2) 0%, transparent 50%);
-      animation: bg-shift 12s ease-in-out infinite alternate;
-    }
-    @keyframes bg-shift {
-      0% { opacity: 0.8; }
-      100% { opacity: 1; }
-    }
-    .article-content {
-      position: relative;
-      z-index: 1;
-    }
-    .glass-card {
-      background: rgba(40, 20, 12, 0.5);
-      backdrop-filter: blur(24px) saturate(1.4);
-      -webkit-backdrop-filter: blur(24px) saturate(1.4);
-      border: 1px solid rgba(249, 115, 22, 0.12);
-      border-radius: 20px;
-      padding: 2rem 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 180, 120, 0.06), 0 0 60px rgba(239, 68, 68, 0.04);
-    }
-    .article-header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    .article-title {
-      font-size: 1.85rem;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 0.95);
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-      line-height: 1.3;
-    }
-    .article-subtitle {
-      font-size: 1.05rem;
-      color: rgba(251, 191, 36, 0.85);
-      line-height: 1.7;
-    }
-    .section-title {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.92);
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .section-title::before {
-      content: '';
-      width: 4px;
-      height: 1.2em;
-      background: #ef4444;
-      border-radius: 2px;
-    }
-    .article-text {
-      font-size: 1rem;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 1rem;
-    }
-    .feature-list {
-      list-style: none;
-      padding: 0;
-      margin: 1.25rem 0;
-    }
-    .feature-item {
-      display: flex;
-      align-items: flex-start;
-      padding: 0.75rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      gap: 0.75rem;
-    }
-    .feature-item:last-child {
-      border-bottom: none;
-    }
-    .feature-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #f97316;
-      margin-top: 0.5rem;
-      flex-shrink: 0;
-      box-shadow: 0 0 8px rgba(249, 115, 22, 0.5);
-    }
-    .feature-text {
-      color: rgba(255, 255, 255, 0.8);
-      line-height: 1.6;
-    }
-    .feature-text strong {
-      color: rgba(255, 255, 255, 0.95);
-    }
-    .scene-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      margin: 1.25rem 0;
-    }
-    @media (max-width: 580px) {
-      .scene-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .scene-card {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 1.25rem;
-      transition: all 0.3s ease;
-    }
-    .scene-card:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.18);
-    }
-    .scene-card-red { border-left: 3px solid rgba(239, 68, 68, 0.6); }
-    .scene-card-orange { border-left: 3px solid rgba(249, 115, 22, 0.6); }
-    .scene-card-amber { border-left: 3px solid rgba(245, 158, 11, 0.6); }
-    .scene-card-rose { border-left: 3px solid rgba(225, 29, 72, 0.6); }
-    .scene-title {
-      font-size: 1rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.92);
-      margin-bottom: 0.5rem;
-    }
-    .scene-desc {
-      font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.65);
-      line-height: 1.6;
-    }
-    .step-list {
-      list-style: none;
-      padding: 0;
-      margin: 1.25rem 0;
-      counter-reset: step;
-    }
-    .step-item {
-      position: relative;
-      padding-left: 3.5rem;
-      margin-bottom: 1.5rem;
-      counter-increment: step;
-    }
-    .step-item::before {
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2.2rem;
-      height: 2.2rem;
-      background: #ef4444;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: white;
-      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
-    }
-    .step-item:nth-child(2)::before {
-      background: #f97316;
-      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
-    }
-    .step-item:nth-child(3)::before {
-      background: #f59e0b;
-      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
-    }
-    .step-item:nth-child(4)::before {
-      background: #ea580c;
-      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.4);
-    }
-    .step-text {
-      color: rgba(255, 255, 255, 0.8);
-      line-height: 1.7;
-      padding-top: 0.25rem;
-    }
-    .highlight-box {
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid rgba(239, 68, 68, 0.2);
-      border-radius: 16px;
-      padding: 1.25rem;
-      margin: 1.25rem 0;
-    }
-    .highlight-box-title {
-      font-size: 1rem;
-      font-weight: 600;
-      color: rgba(251, 191, 36, 0.95);
-      margin-bottom: 0.5rem;
-    }
-    .highlight-box-content {
-      font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.7);
-      line-height: 1.7;
-    }
-    .advantage-list {
-      list-style: none;
-      padding: 0;
-      margin: 1.25rem 0;
-    }
-    .advantage-item {
-      display: flex;
-      align-items: flex-start;
-      padding: 0.65rem 0;
-      gap: 0.75rem;
-    }
-    .advantage-icon {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(52, 211, 153, 0.2);
-      border: 1px solid rgba(52, 211, 153, 0.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 0.15rem;
-    }
-    .advantage-icon svg {
-      width: 12px;
-      height: 12px;
-      color: #34d399;
-    }
-    .summary-box {
-      background: rgba(40, 20, 12, 0.4);
-      border: 1px solid rgba(249, 115, 22, 0.1);
-      border-radius: 20px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .summary-text {
-      font-size: 1.05rem;
-      color: rgba(255, 255, 255, 0.85);
-      line-height: 1.8;
-    }
+const s=`
+<div class="article-container">
 
-    /* ====== 展开/收起按钮适配 ====== */
-    .article-toggle-wrap {
-      text-align: center;
-      position: relative;
-      z-index: 5;
-      margin-bottom: -1.25rem;
-      pointer-events: none;
-    }
-    .article-toggle-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 9999px;
-      padding: 10px 24px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.85);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-      pointer-events: auto;
-      user-select: none;
-      letter-spacing: 0.02em;
-    }
-    .article-toggle-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
-      border-color: rgba(255, 255, 255, 0.35);
-      color: #fff;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-    .article-toggle-icon {
-      width: 14px;
-      height: 14px;
-      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .article-toggle-icon.rotated {
-      transform: rotate(180deg);
-    }
+  <h1 class="article-title">退休年龄计算器2026最新版：法定退休年龄精准计算与延迟退休政策解读</h1>
 
-    @media (max-width: 580px) {
-      .article-title {
-        font-size: 1.5rem;
-      }
-      .glass-card {
-        padding: 1.5rem 1rem;
-        border-radius: 18px;
-      }
-    }
-  </style>
-
-  <!-- 展开/收起按钮样式（最高优先级覆盖App.vue灰色按钮） -->
-  <style>
-    .article-container > button.mt-2,
-    .article-container > button[class*="bg-gray"] {
-      background: rgba(255,255,255,.12) !important;
-      backdrop-filter: blur(20px) !important;
-      -webkit-backdrop-filter: blur(20px) !important;
-      color: rgba(255,255,255,.85) !important;
-      border: 1px solid rgba(255,255,255,.22) !important;
-      border-radius: 9999px !important;
-      padding: 10px 26px !important;
-      font-size: .88rem !important;
-      box-shadow: 0 4px 16px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.08) !important;
-    }
-    .article-container > button.mt-2:hover,
-    .article-container > button[class*="bg-gray"]:hover {
-      background: rgba(255,255,255,.22) !important;
-      color: #fff !important;
-      border-color: rgba(255,255,255,.4) !important;
-    }
-  </style>
-
-  <div class="article-bg"></div>
-
-  <div class="article-content">
-    <header class="article-header">
-      <h1 class="article-title">番茄时钟：用25分钟改变你的工作效率</h1>
-      <p class="article-subtitle">番茄工作法是最简单有效的时间管理方法之一，25分钟专注+5分钟休息的节奏，让你告别拖延，找回掌控感。</p>
-    </header>
-
-    <div class="glass-card">
-      <h2 class="section-title">你是不是也经常无法专注？</h2>
-      <p class="article-text">打开电脑准备写报告，结果刷了半小时手机；说好只看一条消息，回过神来已经过去了四十分钟；坐在书桌前发呆，脑子里想的全是待会吃什么。</p>
-      <p class="article-text">这些场景太常见了。不是你不够努力，而是人的大脑本来就不适合长时间连续运转。科学研究表明，大多数人的注意力在持续工作20到30分钟后就会明显下降。硬撑着继续，效率只会越来越低。</p>
-      <p class="article-text">那怎么办？答案很简单：<strong style="color: rgba(255,255,255,0.95)">别跟大脑对着干，顺着它的节奏来。</strong></p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">什么是番茄工作法？</h2>
-      <p class="article-text">番茄工作法（Pomodoro Technique）是意大利人弗朗切斯科-西里洛在1980年代发明的一种时间管理方法。名字来源于他当时用的那个番茄形状的厨房计时器。</p>
-      <p class="article-text">核心规则非常简单：</p>
-
-      <ul class="feature-list">
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>专注25分钟</strong>：设定一个25分钟的计时器，在这段时间里只做一件事，不看手机、不刷网页、不回消息。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>短休息5分钟</strong>：25分钟到了之后，站起来活动一下，喝口水，让大脑喘口气。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>每4个番茄后来一次长休息</strong>：完成4轮25分钟专注后，给自己15到30分钟的较长休息，彻底放松一下。</span>
-        </li>
-      </ul>
-
-      <div class="highlight-box">
-        <p class="highlight-box-content">就这么简单。不需要复杂的计划表，不需要昂贵的软件，只需要一个计时器和一点自律。25分钟的长度刚好够你进入状态，5分钟的休息又不会让你彻底走神。</p>
-      </div>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">这个番茄时钟能帮你做什么？</h2>
-      <p class="article-text">我们按照番茄工作法的核心规则，做了一个开箱即用的在线番茄时钟工具：</p>
-
-      <ul class="feature-list">
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>自动循环切换</strong>：25分钟专注结束后自动切换到5分钟短休息，4轮之后自动进入15分钟长休息，不用手动操作。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>圆形进度环</strong>：大号圆形进度条实时显示剩余时间，一眼就能看出还剩多久，不用盯着数字看。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>自定义时长</strong>：觉得25分钟太长或太短？专注、短休息、长休息的时长都可以自己调整。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>声音提醒</strong>：每个阶段结束时会播放提示音，即使你在看别的窗口也不会错过切换。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>浏览器通知</strong>：授权后会在桌面弹出通知，告诉你"专注结束，该休息了"或"休息结束，继续加油"。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>全屏模式</strong>：一键全屏，大字显示倒计时，适合放在副屏或投影上，团队一起用也没问题。</span>
-        </li>
-        <li class="feature-item">
-          <span class="feature-dot"></span>
-          <span class="feature-text"><strong>番茄计数统计</strong>：记录你今天完成了多少个番茄，看着数字增长，成就感满满。</span>
-        </li>
-      </ul>
-
-      <p class="article-text">所有功能都在浏览器里运行，不需要下载安装，打开网页就能开始你的第一个番茄。</p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">哪些人适合用番茄工作法？</h2>
-      <p class="article-text">番茄工作法几乎适用于所有需要专注的场景，以下几类人尤其受益：</p>
-
-      <div class="scene-grid">
-        <div class="scene-card scene-card-red">
-          <h4 class="scene-title">学生</h4>
-          <p class="scene-desc">备考复习、写论文、做作业，25分钟刚好是一个高效的学习单元，5分钟休息防止大脑过载。</p>
-        </div>
-        <div class="scene-card scene-card-orange">
-          <h4 class="scene-title">程序员</h4>
-          <p class="scene-desc">写代码需要深度思考，番茄钟帮你进入心流状态，定时休息还能预防久坐带来的身体问题。</p>
-        </div>
-        <div class="scene-card scene-card-amber">
-          <h4 class="scene-title">写作者</h4>
-          <p class="scene-desc">面对空白文档最难的是开始，番茄钟给你一个"先写25分钟"的承诺，写着写着就停不下来。</p>
-        </div>
-        <div class="scene-card scene-card-rose">
-          <h4 class="scene-title">远程办公者</h4>
-          <p class="scene-desc">在家工作最怕分心，番茄钟帮你划分工作与休息的界限，4个番茄后心安理得地休息。</p>
-        </div>
-      </div>
-
-      <p class="article-text">其实不只是这些，任何需要集中注意力的事情都可以用番茄工作法：读书、画画、学外语、整理房间......核心逻辑都是一样的：<strong style="color: rgba(255,255,255,0.95)">短时间全力投入，定时休息恢复，循环往复。</strong></p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">如何使用番茄时钟？</h2>
-      <p class="article-text">操作非常简单，四步就能开始：</p>
-
-      <ol class="step-list">
-        <li class="step-item">
-          <span class="step-text"><strong>打开页面。</strong> 点击进入番茄时钟页面，默认已经按照25分钟专注、5分钟短休息、15分钟长休息的标准番茄工作法设置好了。</span>
-        </li>
-        <li class="step-item">
-          <span class="step-text"><strong>点击开始。</strong> 按下开始按钮，25分钟倒计时启动，圆形进度环开始走动。把手机放一边，专心做你该做的事。</span>
-        </li>
-        <li class="step-item">
-          <span class="step-text"><strong>听到提示音后休息。</strong> 25分钟结束，声音提醒响起，自动进入5分钟休息。站起来走走、喝口水、看看窗外。</span>
-        </li>
-        <li class="step-item">
-          <span class="step-text"><strong>循环往复。</strong> 休息结束自动开始下一个番茄。每完成4个番茄，自动进入15分钟长休息。页面会记录你完成了几个番茄。</span>
-        </li>
-      </ol>
-
-      <div class="highlight-box">
-        <p class="highlight-box-content">如果你觉得25分钟不适合自己，可以随时调整专注和休息的时长。番茄工作法的精神是"短时间全力投入"，具体多短由你决定。</p>
-      </div>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">为什么选择在线番茄时钟？</h2>
-      <p class="article-text">市面上有很多番茄钟APP，为什么用网页版？</p>
-
-      <ul class="advantage-list">
-        <li class="advantage-item">
-          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
-          <span class="feature-text"><strong>无需下载安装</strong>：打开浏览器就能用，不占手机存储，不占电脑空间。</span>
-        </li>
-        <li class="advantage-item">
-          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
-          <span class="feature-text"><strong>电脑端体验更好</strong>：在电脑上工作时，浏览器标签页里的番茄钟比手机APP更方便，不用来回切换设备。</span>
-        </li>
-        <li class="advantage-item">
-          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
-          <span class="feature-text"><strong>完全免费</strong>：没有高级版，没有内购，所有功能全部免费使用。</span>
-        </li>
-        <li class="advantage-item">
-          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
-          <span class="feature-text"><strong>数据本地处理</strong>：你的番茄记录全部保存在浏览器本地，不上传任何服务器，隐私有保障。</span>
-        </li>
-        <li class="advantage-item">
-          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
-          <span class="feature-text"><strong>全屏大字显示</strong>：一键全屏，倒计时数字大到整个屏幕都看得见，适合放在副屏上随时查看。</span>
-        </li>
-      </ul>
-
-      <p class="article-text">对于每天在电脑前工作学习的人来说，浏览器里放一个番茄钟，比掏出手机设闹钟方便得多，也更能避免"拿手机设闹钟结果顺便刷了二十分钟"的尴尬。</p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="section-title">总结</h2>
-      <p class="article-text">番茄工作法的魅力在于它的简单。不需要复杂的学习曲线，不需要昂贵的工具，只需要一个25分钟的计时器和一点开始的勇气。</p>
-      <p class="article-text">很多人觉得时间管理很难，其实难的不是方法，而是开始。番茄工作法给了你一个极低的启动门槛："先专注25分钟试试。"往往开始之后，你会发现25分钟根本不够用。</p>
-    </div>
-
-    <div class="summary-box">
-      <p class="summary-text">好的时间管理工具应该帮你减少决策负担，而不是增加它。这个番茄时钟就是为了这个目的而设计的：打开就用，自动循环，声音提醒，专注做事就好。</p>
-    </div>
+  <div class="article-intro">
+    <p>您是否想知道自己准确的法定退休年龄？随着2026年延迟退休政策在部分地区开展试点，退休年龄计算变得愈发重要。我们的<strong>退休年龄计算器</strong>支持输入性别、人员类型、工种及出生年月，一键精准计算您的法定退休年龄、退休时间及剩余工作年限。无论您是普通职工、女性工人/干部，还是从事特殊工种的人员，都能通过本工具快速获取准确的退休时间预测，帮助您提前做好养老规划和职业安排。</p>
   </div>
-</article>
-`;export{e as default};
+
+  <section class="article-section">
+    <h2 class="section-title">中国法定退休年龄对照表（2026最新版）</h2>
+    <p>根据中国现行法律法规及2026年延迟退休试点政策，不同人群的法定退休年龄如下表所示：</p>
+    
+    <div class="table-wrapper">
+      <table class="policy-table">
+        <thead>
+          <tr>
+            <th>人员类型</th>
+            <th>工种类型</th>
+            <th>法定退休年龄</th>
+            <th>适用人群</th>
+            <th>备注说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>男性职工</td>
+            <td>通用工种</td>
+            <td><span class="highlight">60周岁</span></td>
+            <td>所有男性参保人员</td>
+            <td>无身份区分，统一60岁退休（试点地区按延迟细则执行）</td>
+          </tr>
+          <tr>
+            <td>女性工人</td>
+            <td>通用工种</td>
+            <td><span class="highlight">50周岁</span></td>
+            <td>企业女工人、合同制女工</td>
+            <td>以社保参保身份核定（试点地区按延迟细则执行）</td>
+          </tr>
+          <tr>
+            <td>女性干部/灵活就业</td>
+            <td>通用工种</td>
+            <td><span class="highlight">55周岁</span></td>
+            <td>机关事业单位女干部、企业女管理岗、灵活就业女性</td>
+            <td>灵活就业女性按55岁执行（试点地区为延迟退休重点试点人群）</td>
+          </tr>
+          <tr>
+            <td>男性/女性</td>
+            <td>特殊工种</td>
+            <td><span class="highlight">男55岁/女45岁</span></td>
+            <td>井下、高空、高温、特别繁重体力劳动或其他有害身体健康工种</td>
+            <td>需满足工种工作年限要求（井下/高空9年、高温/重体力10年、有害身体8年），延迟退休试点不调整特殊工种退休年龄</td>
+          </tr>
+          <tr>
+            <td>男性/女性</td>
+            <td>因病/非因工致残</td>
+            <td><span class="highlight">男50岁/女45岁</span></td>
+            <td>经劳动能力鉴定完全丧失劳动能力的参保人员</td>
+            <td>需提供市级以上劳动能力鉴定委员会的完全丧失劳动能力证明，延迟退休试点不调整因病退休年龄</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <h2 class="section-title">2026法定退休年龄政策最新解读（退休年龄计算器配套科普）</h2>
+    
+    <div class="policy-item">
+      <h3>1. 2026年法定退休年龄核心标准</h3>
+      <p>本退休年龄计算器的核心计算依据为全国统一执行的法定退休年龄基础标准，分「通用工种、特殊工种、因病/非因工致残」三类，延迟退休政策2026年已在部分地区开展试点实施，试点范围以女性灵活就业人员、中青年男性群体为主，全国统一落地时间和细则以人社部官方公告为准，试点地区退休年龄按当地细则核定。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>2. 工种类型对退休年龄的核心影响</h3>
+      <p>工种类型是核定退休年龄的关键维度，也是本退休年龄计算器新增的核心输入项：① 通用工种按基础年龄退休（男60/女工人50/女干部55），试点地区按延迟细则微调；② 特殊工种可提前退休（男55/女45）；③ 因病/非因工致残完全丧失劳动能力的，可提前退休（男50/女45）；特殊工种、因病退休的提前政策在延迟退休试点中保持不变。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>3. 女性退休身份如何核定？</h3>
+      <p>女性法定退休年龄的核心判定依据是<strong>社保参保身份</strong>，也是退休年龄计算器的重要计算维度，而非实际工作岗位：① 企业参保时登记为「工人」的，按50岁退休；② 登记为「管理/技术岗」、灵活就业人员参保的，按55岁退休；③ 岗位变动的，以退休前最后一个连续参保身份为准（需满10年）；女性灵活就业人员是2026年延迟退休试点的核心人群，试点地区该类人群退休年龄按当地细则执行。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>4. 特殊工种退休的核心条件</h3>
+      <p>特殊工种提前退休并非仅看工种类型，还需同时满足3个条件：① 从事对应特殊工种岗位满法定工作年限；② 养老保险累计缴费满15年；③ 达到特殊工种法定退休年龄，三者缺一不可，退休年龄计算器仅做年龄计算，最终需社保部门审核工种年限。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>5. 延迟退休政策2026年试点最新进展</h3>
+      <p>延迟退休遵循「小步调整、弹性实施、分类推进、统筹兼顾」原则，2026年试点实施的核心思路为「小步慢调、逐步推进」，试点地区暂按「每几年延迟1岁」的节奏执行，特殊工种、因病退休、重体力劳动者等群体的退休年龄政策予以保留，不纳入本次试点调整范围，具体试点细则由各地人社部门制定，后续退休年龄计算器将同步更新试点地区计算规则。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>6. 退休年龄计算规则</h3>
+      <p>法定退休时间按「出生年月+法定退休年龄」精确计算，也是本退休年龄计算器的核心计算逻辑，例如1985年8月出生的女工人（通用工种50岁），退休时间为2035年8月；特殊工种女性1985年出生，45岁退休则2030年8月办理，出生月份为12月的，需到对应年份12月满周岁后办理退休，次月开始领取养老金；试点地区按当地延迟细则在基础年龄上微调退休时间。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>7. 社保缴费与退休的关系</h3>
+      <p>达到法定退休年龄仅为退休前提之一，也是退休年龄计算器的计算基础，所有人群均需满足<strong>养老保险累计缴费满15年</strong>，才能办理退休并按月领取养老金；缴费不足15年的，可按规定延长缴费、一次性补缴（部分地区适用）或转为城乡居民养老保险，该规则2026年未做调整。</p>
+    </div>
+
+    <div class="policy-item">
+      <h3>8. 异地参保退休年龄核定</h3>
+      <p>异地参保人员的法定退休年龄按「待遇领取地」政策执行，也是退休年龄计算器异地参保用户的计算参考，待遇领取地判定规则：① 最后一个缴费满10年的地区；② 所有地区缴费均不满10年的，回户籍所在地办理退休；③ 若待遇领取地为延迟退休试点地区，按试点细则核定退休年龄；非试点地区按全国基础标准执行。</p>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <h2 class="section-title">退休倒计时计算器功能介绍</h2>
+    <p>我们的在线<strong>退休年龄计算器</strong>集成了最新的退休政策规则，为您提供一键式精准计算服务。主要功能包括：</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h4>精准日期计算</h4>
+        <p>输入您的出生日期和人员类型，系统自动计算您的法定退休日期，精确到年月日。</p>
+      </div>
+      <div class="feature-item">
+        <h4>实时倒计时</h4>
+        <p>实时显示距离退休还剩多少天、多少时、多少分、多少秒，让您对剩余工作时间一目了然。</p>
+      </div>
+      <div class="feature-item">
+        <h4>多类型支持</h4>
+        <p>支持男性职工、女性职工（工人）、女性干部、特殊工种、因病退休等多种职业类型。</p>
+      </div>
+      <div class="feature-item">
+        <h4>政策同步更新</h4>
+        <p>实时反映延迟退休政策调整及2026年试点进展，确保计算结果符合最新法规。</p>
+      </div>
+    </div>
+    <p>工具操作极为简便：只需选择您的<strong>性别</strong>和<strong>人员类型</strong>，输入<strong>出生日期</strong>，即可立即获得您的退休年龄和倒计时结果。无需注册、无需下载，随时随地免费使用。</p>
+  </section>
+
+  <section class="article-section">
+    <h2 class="section-title">哪些人最需要退休年龄计算？</h2>
+    <p>退休年龄不仅仅是一个数字，它是您人生下一阶段的起跑线。以下几类人群尤其需要关注自己的退休年龄：</p>
+
+    <div class="use-case-list">
+      <div class="use-case">
+        <h3>职场中年人（40-55岁）</h3>
+        <p>正处于职业黄金期，同时也是退休规划的关键窗口期。清楚知道距退休还有多少年，有助于制定合理的养老储蓄计划、投资策略和职业发展路径。</p>
+      </div>
+      <div class="use-case">
+        <h3>职场新人（25-35岁）</h3>
+        <p>越早了解退休年龄，越能从容布局长期财务规划。复利的力量需要时间积累，提前规划是实现财务自由的关键。</p>
+      </div>
+      <div class="use-case">
+        <h3>特殊工种从业者</h3>
+        <p>从事井下作业、高温环境、放射性工作等特殊工种的人员，享有提前退休的政策福利，了解自己的具体退休时间尤为重要。</p>
+      </div>
+      <div class="use-case">
+        <h3>HR与企业管理者</h3>
+        <p>人力资源管理人员需要掌握员工的退休时间线，合理规划人才梯队，提前做好岗位交接和人员储备工作。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <h2 class="section-title">退休规划：从倒计时开始的人生蓝图</h2>
+    <p>知道了退休年龄和倒计时，下一步就是将这个时间节点转化为具体的行动计划。以下是退休规划的几个核心维度：</p>
+
+    <h3>1. 养老金规划</h3>
+    <p>中国的养老保险体系由三大支柱构成：基本养老保险（第一支柱）、企业年金/职业年金（第二支柱）和个人养老金（第三支柱）。建议在工作期间积极参与三大支柱，最大化退休后的养老金收入。2022年推出的<strong>个人养老金制度</strong>每年最高可享受12000元的税收优惠，是职场人的重要理财工具。</p>
+
+    <h3>2. 财务储蓄目标</h3>
+    <p>根据退休倒计时倒推财务目标。一般建议退休时储备相当于退休前年收入10-15倍的资产，以维持退休后的生活质量。可以使用"4%提取规则"作为参考：退休储蓄总额乘以4%，即为每年可安全提取的金额。</p>
+
+    <h3>3. 健康管理</h3>
+    <p>健康是退休生活质量的根本保障。建议在退休前保持规律锻炼、定期体检，并提前了解医疗保险的衔接政策，确保退休后医疗保障不中断。</p>
+
+    <h3>4. 技能与兴趣培养</h3>
+    <p>利用退休前的时间培养兴趣爱好、学习新技能，不仅能为退休后的精神生活打下基础，也可能开辟额外的收入来源，为退休生活增添更多可能性。</p>
+  </section>
+
+  <section class="article-section faq-section">
+    <h2 class="section-title">常见问题解答（FAQ）</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q1：延迟退休政策对我的退休年龄有什么影响？</h3>
+        <div class="faq-answer">
+          <p>延迟退休政策采用渐进式推进方式，对不同出生年份的人员影响不同。2026年起在部分地区开展试点，试点范围以女性灵活就业人员、中青年男性群体为主。以男性职工为例，1965年及以前出生者仍按60岁退休；1976年9月至12月出生的，法定退休年龄均为63岁。具体影响因您的出生年份和所在地区而异，建议使用我们的退休计算器输入您的实际信息获取精准结果。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q2：女性职工和女性干部的退休年龄有什么区别？</h3>
+        <div class="faq-answer">
+          <p>根据现行政策，女性普通工人（从事体力劳动或生产岗位）法定退休年龄为50岁，而女性干部（管理岗位、专业技术岗位等）法定退休年龄为55岁。需要注意的是，判定依据是社保参保身份而非实际工作岗位：企业参保时登记为「工人」的按50岁退休，登记为「管理/技术岗」的按55岁退休。延迟退休后，这两类人员的目标退休年龄分别延至55岁和58岁。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q3：特殊工种如何申请提前退休？</h3>
+        <div class="faq-answer">
+          <p>特殊工种提前退休需满足以下条件：①从事国家规定的特殊工种（高温、井下、高空、有毒有害等）；②在特殊工种岗位累计工作年限达到规定要求（井下/高空9年、高温/重体力10年、有害身体健康8年）；③男性年满55周岁或女性年满45周岁；④参加基本养老保险累计缴费满15年。符合条件者需向所在单位及当地社保部门提交申请，经审核批准后方可提前办理退休手续。延迟退休试点不调整特殊工种退休年龄。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q4：退休年龄计算器的计算结果准确吗？</h3>
+        <div class="faq-answer">
+          <p>本计算器基于国家现行法规和最新延迟退休政策规则进行计算，结果具有较高的参考价值。但需注意：①个人实际退休日期还可能受到特殊情况的影响，如因病提前退休、返聘延迟退休等；②延迟退休政策仍在持续落地实施中，2026年已在部分地区开展试点，具体细则可能随政策更新而调整；③最终以当地社保部门的认定为准。建议将计算结果作为规划参考，重要决策前请咨询专业人士或社保部门。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q5：养老保险缴费不满15年怎么办？</h3>
+        <div class="faq-answer">
+          <p>达到法定退休年龄但养老保险累计缴费不足15年的，有以下几种处理方式：①按规定延长缴费至满15年（推荐）；②一次性补缴（部分地区适用，需咨询当地社保部门）；③转为城乡居民养老保险。需要注意的是，从2030年1月1日起，最低缴费年限将逐步提高至20年，因此建议尽早开始缴纳并保持连续缴费。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q6：异地参保如何确定退休待遇领取地？</h3>
+        <div class="faq-answer">
+          <p>异地参保人员的待遇领取地判定规则如下：①最后一个养老保险缴费满10年的地区为待遇领取地；②所有地区缴费均不满10年的，回户籍所在地办理退休；③若待遇领取地为延迟退休试点地区，按试点细则核定退休年龄；非试点地区按全国基础标准执行。建议提前查询自己在各地的缴费年限，合理规划退休地点。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="article-conclusion">
+    <h2 class="section-title">结语：掌握退休年龄，把握人生主动权</h2>
+    <p>退休不是终点，而是人生新篇章的开始。通过<strong>退休年龄计算器</strong>，您可以清晰地看到这个新篇章何时启程，从而以更从容的姿态迎接它的到来。无论距离退休是30年还是3年，现在都是开始规划的最佳时机。</p>
+    <p>立即使用我们的<strong>退休年龄计算</strong>工具，输入您的信息，查看您的专属退休年龄和倒计时。让数字成为行动的起点，让规划成为幸福晚年的基石。您的退休生活，值得从今天就开始精心准备。</p>
+    <div class="cta-box">
+      <p><strong>温馨提示</strong>：将本页面添加到收藏夹，定期查看退休倒计时，让它成为激励您持续规划的动力源泉！如有任何疑问，欢迎随时使用本工具进行测算。</p>
+    </div>
+  </section>
+
+</div>
+`;export{s as default};

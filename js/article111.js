@@ -1,84 +1,57 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h2>
+const e={title:"新消息头像制作",content:`
+## 新消息头像制作工具使用指南
 
-    <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
-      <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>
-    </div>
+### 功能介绍
 
-    <div class="relative w-full h-64 sm:h-80 mb-8 bg-gray-100 rounded-lg overflow-hidden">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-center">
-          <div class="text-5xl mb-4 text-gray-300">🖼️</div>
-          <p class="text-gray-500">（这里可以放一张简单的、带马赛克效果的示例图片示意图）</p>
-        </div>
-      </div>
-    </div>
+新消息头像制作工具是一款免费在线工具，可以快速为您的头像添加类似微信、QQ等社交软件的**未读消息提示角标**。
 
-    <div class="prose prose-lg max-w-none">
-      <p class="mb-4">在网上分享照片、上传证件或者发布截图时，我们常常需要把一些敏感信息遮挡起来，比如车牌号、门牌号、个人信息，或者不想露脸的照片。这时候，马赛克就成了我们的好帮手。</p>
-      <p class="mb-6">你可能会想，给图片打马赛克是不是要用到很复杂的软件？其实不用。现在有一些非常方便的小工具，在网页上点几下就能完成。</p>
+### 主要功能
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">为什么我们需要给图片打马赛克？</h2>
-      <p class="mb-4">这主要是在保护我们自己和别人的隐私。想一想下面这些场景：</p>
-      <ul class="list-disc pl-5 mb-6 space-y-2">
-        <li><strong>分享生活照时</strong>：照片背景里无意拍到的家庭地址、快递单号，需要遮一下。</li>
-        <li><strong>处理工作截图时</strong>：发给同事或客户的截图中，可能含有其他人的联系方式或内部编号，需要隐藏。</li>
-        <li><strong>上传证件材料时</strong>：在办理一些线上业务时，可能需要上传身份证、营业执照等，但除了必要信息，其他部分最好能打上马赛克。</li>
-        <li><strong>发布内容到社交媒体时</strong>：拍到了路人清晰的正脸，或者不想让自己的脸太突出，打上马赛克是对彼此的尊重。</li>
-      </ul>
+- **上传头像**：支持点击上传、拖拽上传、粘贴截图三种方式
+- **自定义消息数**：可输入 1-999 任意数字，超过 99 自动显示为 99+
+- **头像风格**：支持直角和圆角两种风格
+- **圆点大小**：提供小、默认、大三种尺寸选择
+- **实时预览**：修改参数即时查看效果
+- **一键下载**：导出高清 512x512 PNG 格式头像
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么给图片打马赛克？分四步搞定</h2>
-      <p class="mb-6">使用一个简单的在线编辑器，整个过程就像在手机上圈画一样直观。</p>
+### 使用步骤
 
-      <div class="bg-blue-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-blue-800">第一步：找到你的图片</h3>
-        <p class="mb-2">首先，点击“上传图片”按钮，从你的电脑或手机里选择你想处理的那张照片。支持常见的图片格式，比如 JPG、PNG 都可以。</p>
-      </div>
+1. **上传头像图片**
+   - 点击虚线框区域选择本地图片
+   - 或直接将图片拖拽到上传区域
+   - 或使用 Ctrl+V 粘贴剪贴板中的图片
 
-      <div class="bg-green-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-green-800">第二步：圈出要遮挡的地方</h3>
-        <p class="mb-2">上传后，点击“开始绘制”按钮。然后，就像你用鼠标或手指在屏幕上画框一样，按住并拖动，把需要打码的区域框选出来。</p>
-        <p>你可以<strong>反复框选多个不同的区域</strong>，比如同时把一张图片里的人脸和背景里的文字都遮住。</p>
-      </div>
+2. **设置消息参数**
+   - 在"消息数量"输入框中填入要显示的数字
+   - 选择喜欢的头像风格（直角/圆角）
+   - 选择合适的通知圆点大小
 
-      <div class="bg-yellow-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-yellow-800">第三步：预览和调整</h3>
-        <p class="mb-2">在框选的时候，你就能立刻看到马赛克效果。如果框的位置不对，或者想重来，可以点击“清除全部”，然后重新框选。</p>
-        <p>全部框选满意后，记得点击“完成绘制”。</p>
-      </div>
+3. **预览和下载**
+   - 左侧画布会实时显示合成效果
+   - 满意后点击"下载头像"按钮保存
 
-      <div class="bg-purple-50 p-5 rounded-xl mb-8">
-        <h3 class="text-xl font-medium mb-4 text-purple-800">第四步：保存你的新图片</h3>
-        <p class="mb-2">最后一步最简单，点击“保存图片”。处理好的图片就会保存到你的设备里了，原来图片上被圈选的地方，都变成了格子状的马赛克。</p>
-        <p>接下来，你就可以放心地使用这张处理过的图片了。</p>
-      </div>
+### 应用场景
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">几个常见问题</h2>
+- 制作恶搞表情包
+- 社交媒体头像装饰
+- 模拟消息通知效果
+- 个人品牌宣传
 
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">马赛克打得牢固吗？会被还原吗？</h3>
-        <p class="mb-4">通过这种像素格处理方式打上的马赛克，从常规的图片查看方式来说，信息已经被永久性地模糊处理了，无法直接看清。这是保护隐私的可靠方法。当然，任何技术都没有绝对的“牢不可破”，但对于日常的隐私保护需求来说，这已经足够了。</p>
-      </div>
+### 注意事项
 
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">会不会影响图片其他部分的质量？</h3>
-        <p class="mb-4">不会。这种工具只会改变你<strong>亲手框选出来的那一小块区域</strong>，图片的其他部分完全保持原样，清晰度不变。</p>
-      </div>
+- 支持的图片格式：JPG、PNG、GIF、WebP
+- 建议使用正方形图片以获得最佳效果
+- 所有处理在浏览器本地完成，图片不会上传到服务器
+- 推荐使用 Chrome、Firefox、Edge 等现代浏览器
 
-      <div class="mb-10">
-        <h3 class="text-xl font-medium mb-2">在手机上好操作吗？</h3>
-        <p class="mb-4">好的工具会考虑到手机用户。页面布局会自动适应手机屏幕的大小，框选操作也支持手指触摸拖动，和在电脑上用鼠标操作一样方便。</p>
-      </div>
+### 常见问题
 
-      <div class="bg-gray-100 p-6 rounded-xl mt-12">
-        <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
-        <p class="mb-3 text-center">给图片打马赛克，核心就是三步：<strong>上传 → 圈选 → 保存</strong>。</p>
-        <p class="text-center">这已经不再是需要专业软件才能做的事。花一分钟时间，动动手指，就能有效地为你的图片加上一道隐私“防护栏”，让自己和他人更安心。</p>
-        <p class="mt-4 text-gray-600 text-sm text-center">下次发图前如果需要遮挡信息，不妨试试看。</p>
-      </div>
-    </div>
-  </article>
-</div>
-`;export{t as default};
+**Q: 消息数最大支持多少？**
+A: 支持 1-999 的任意数字，超过 99 会自动显示为 99+。
+
+**Q: 可以调整消息角标的位置吗？**
+A: 目前固定在右上角位置，符合主流社交软件的设计规范。
+
+**Q: 下载的图片是什么格式？**
+A: 高清 PNG 格式，尺寸为 512x512 像素。
+`};export{e as default};

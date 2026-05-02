@@ -1,29 +1,66 @@
-const l=`<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">什么是渣男渣女语录？</h2>
-  <p class="mb-4 leading-relaxed">渣男渣女语录，是指在感情关系中那些只索取不付出、擅长自我感动和推卸责任的人经常说出的话。这些语录往往看似深情，实则是在推卸责任、操控对方、或者为自己的不当行为找借口。本工具收集了大量此类经典语录，帮助大家识别这些"话术"，提高警惕。</p>
+const t=`
+<div class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans">
+  <h1 class="text-3xl font-bold mb-4 text-gray-900 text-center">3D地球可视化工具</h1>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    3D地球可视化工具是一款基于 WebGL 技术的在线交互式地球浏览器。通过高精度的三维渲染引擎，你可以自由旋转、缩放地球，从太空视角俯瞰我们居住的蓝色星球，探索七大洲四大洋的壮丽地貌。
+  </p>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">渣男渣女语录的分类</h2>
-  <p class="mb-2 leading-relaxed">本工具将语录分为以下几大类：</p>
-  <ul class="list-disc list-inside mb-4 space-y-2 leading-relaxed">
-    <li><strong>渣男语录</strong>：男性在感情中常用的推脱、甩锅、暧昧话语</li>
-    <li><strong>渣女语录</strong>：女性在感情中常用的吊着、索取、双标话语</li>
-    <li><strong>PUA语录</strong>：精神控制、打压贬低、情感操控类话语</li>
-    <li><strong>渣男回头语录</strong>：分手后回头求复合时的经典话术</li>
-    <li><strong>通用语录</strong>：渣男渣女都会使用的敷衍、甩锅、推脱话语</li>
-  </ul>
+  <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-5 rounded-xl mb-6 border border-blue-100">
+    <h2 class="text-xl font-semibold mb-3 text-blue-900">功能特点</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li><strong>自由旋转</strong> — 鼠标左键拖拽可360度旋转地球，从任意角度观察</li>
+      <li><strong>滚轮缩放</strong> — 滚动鼠标滚轮可拉近或拉远视角，从近地轨道到万米高空</li>
+      <li><strong>真实纹理</strong> — 采用 NASA 公开的地球影像数据，呈现真实的地形与海洋色彩</li>
+      <li><strong>实时光照</strong> — 模拟太阳光照效果，直观感受昼夜分界线</li>
+    </ul>
+  </div>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">如何识别渣男渣女？</h2>
-  <p class="mb-4 leading-relaxed">识别渣男渣女的关键在于观察对方的言行是否一致。如果一个人经常说出上述语录中的话，同时行为上也在不断伤害你、利用你，那么就需要提高警惕了。健康的感情关系应该建立在相互尊重、坦诚沟通的基础上。</p>
+  <div class="bg-gray-50 p-5 rounded-xl mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-gray-900">操作指南</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">1</span>
+        <div>
+          <p class="font-medium text-gray-800">拖动旋转</p>
+          <p class="text-sm text-gray-600">按住鼠标左键并移动即可旋转地球</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">2</span>
+        <div>
+          <p class="font-medium text-gray-800">滚轮缩放</p>
+          <p class="text-sm text-gray-600">滚动鼠标滚轮调整观察距离</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">3</span>
+        <div>
+          <p class="font-medium text-gray-800">平移视角</p>
+          <p class="text-sm text-gray-600">右键拖动可平移画面中心位置</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">4</span>
+        <div>
+          <p class="font-medium text-gray-800">自动旋转</p>
+          <p class="text-sm text-gray-600">松开鼠标后地球会缓慢自转</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">使用说明</h2>
-  <p class="mb-2 leading-relaxed">本工具使用方法非常简单：</p>
-  <ol class="list-decimal list-inside mb-4 space-y-2 leading-relaxed">
-    <li>选择你感兴趣的分类标签，或选择"全部"查看所有语录</li>
-    <li>点击"随机语录"按钮，即可获取一条随机语录</li>
-    <li>点击"复制语录"按钮，可将当前语录复制到剪贴板，方便分享</li>
-    <li>点击收藏按钮，可将喜欢的语录保存到本地收藏列表</li>
-  </ol>
+  <div class="bg-amber-50 p-5 rounded-xl mb-6 border border-amber-200">
+    <h2 class="text-xl font-semibold mb-3 text-amber-900">应用场景</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>地理教学与科普演示</li>
+      <li>旅行路线规划与目的地预览</li>
+      <li>时区与国际日期变更线的直观理解</li>
+      <li>了解大洲大洋的相对位置关系</li>
+    </ul>
+  </div>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">注意事项</h2>
-  <p class="mb-4 leading-relaxed text-red-600 font-medium">本工具仅供娱乐使用，请勿将语录内容代入现实生活！如果您正在经历情感困扰，建议寻求专业的心理咨询帮助。</p>
-</div>`;export{l as default};
+  <p class="text-gray-500 text-sm text-center pt-4 border-t border-gray-200">
+    基于 WebGL / Three.js 技术构建 · 无需安装任何插件
+  </p>
+</div>
+`;export{t as default};

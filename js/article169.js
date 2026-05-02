@@ -1,97 +1,48 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h2>
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
+  <!-- 标题 -->
+  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
+  
+  <!-- 引言 -->
+  <p class="mb-4 text-lg">
+    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
+  </p>
 
-  <div class="mb-8 text-lg text-gray-600 leading-relaxed">
-    <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>
-    <p>这种“选择困难”的小烦恼，几乎每个人都遇到过。它浪费我们的时间，消耗我们的精力。今天，我们就来认识一个简单又好玩的小工具——<strong class="text-gray-900">随机决定器</strong>，它能像抛硬币一样，帮你快速做出决定，让生活更轻松。</p>
-  </div>
+  <!-- 两个模式解决不同场景 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
+  <p class="mb-4">
+    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
+  </p>
+  <p class="mb-4">
+    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="what-is">随机决定器是什么？</h2>
-  <div class="bg-blue-50 p-5 rounded-lg mb-8">
-    <p class="mb-3">简单来说，<strong>随机决定器就是一个帮你从多个选项中，公平地随机挑选一个的智能小助手</strong>。</p>
-    <p>想象一下，你把“吃面条”“吃米饭”“吃饺子”三个选项交给它，它就像一个公正的裁判，快速地在它们中间“抓阄”，然后告诉你结果。你不用再纠结，也不用担心选择不公平，因为它完全随机，纯粹看“运气”。</p>
-  </div>
+  <!-- 避免配对功能 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
+  <p class="mb-4">
+    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="how-to-use">它是怎么工作的？简单三步，一看就会</h2>
-  <div class="space-y-6 mb-10">
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">1</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">写下你的“待办清单”</h3>
-        <p class="text-gray-700">把你所有纠结的选项，一条一条地写下来。比如今天要完成哪项工作、晚上看哪部电影、周末去哪里玩。每个选项占一行，写得越清楚越好。</p>
-      </div>
-    </div>
+  <!-- 操作简单，三步完成 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
+  <p class="mb-4">
+    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
+  </p>
 
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">2</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">让机器“帮你思考”</h3>
-        <p class="text-gray-700">设定好你想让它随机选择的次数（比如10次），然后点击“开始决定”。你会看到选项在屏幕上快速滚动变化，就像一个转盘在转动，充满了小小的期待感。</p>
-      </div>
-    </div>
+  <!-- 导出与分享 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
+  <p class="mb-4">
+    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
+  </p>
 
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">3</div>
-      <div>
-        <h3 class="font-bold text-xl mb-2 text-gray-900">接受惊喜的结果</h3>
-        <p class="text-gray-700">转动停止，最终结果会醒目地显示出来。这就是“命运”为你做出的选择！更棒的是，它还会把所有选择的历史记录下来，并用图表告诉你每个选项被选中的比例，一目了然。</p>
-      </div>
-    </div>
-  </div>
+  <!-- 总结 -->
+  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
+    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
+  </p>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="when-to-use">哪些时候，你需要一个随机决定器？</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">🏠 生活日常</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>今天午餐/晚餐吃什么？</li>
-        <li>周末是宅家还是出门？</li>
-        <li>下一本该读什么书？</li>
-        <li>家里大扫除先从哪个房间开始？</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">👫 朋友聚会</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>聚会玩什么游戏？</li>
-        <li>团队活动去哪里？</li>
-        <li>看电影还是唱KTV？</li>
-        <li>谁去买饮料？（是的，它也能选人）</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">💼 工作学习</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>优先处理哪项任务？</li>
-        <li>学习哪个新技能？</li>
-        <li>报告用什么主题颜色？</li>
-        <li>头脑风暴时，从哪个创意点开始深挖？</li>
-      </ul>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-      <h4 class="font-bold text-lg mb-3 text-gray-900">🎮 休闲娱乐</h4>
-      <ul class="list-disc pl-5 text-gray-700 space-y-1">
-        <li>旅行目的地选择</li>
-        <li>今晚追哪部剧？</li>
-        <li>游戏里选择哪条路线？</li>
-        <li>给宠物取什么名字？</li>
-      </ul>
-    </div>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="benefits">为什么用随机决定器？</h2>
-  <div class="space-y-5 mb-10">
-    <p><strong class="text-gray-900">节省时间，停止内耗：</strong>把宝贵的精力从无休止的纠结中解放出来。决定过程可能只需要几秒钟，省下的时间可以做更多有意义的事。</p>
-    <p><strong class="text-gray-900">增加乐趣与期待感：</strong>看着选项滚动，等待未知的结果，本身就像一个小游戏，能为平淡的决定过程增添一抹趣味和仪式感。</p>
-    <p><strong class="text-gray-900">公平公正，避免争执：</strong>朋友间意见不合时，让“随机”来做裁判，大家都会心服口服，瞬间化解僵局。</p>
-    <p><strong class="text-gray-900">帮你突破思维定式：</strong>有时候，我们心里可能已经有了偏向，但随机结果可能会带你尝试一个被你忽略的选项，发现新的可能。</p>
-  </div>
-
-  <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-12 text-center">
-    <h3 class="text-2xl font-bold text-gray-900 mb-3">告别选择困难，从今天开始</h3>
-    <p class="text-gray-700 mb-4">生活中已经有很多事需要我们仔细权衡，就把那些无伤大雅的小决定，交给“随机”的乐趣吧。无论是用手机还是电脑，都能随时打开这个<span class="font-semibold text-gray-900">随机决定器</span>。</p>
-    <p class="text-gray-700">下次再为“吃什么”、“去哪玩”、“做什么”而纠结时，不妨试一试。也许，让随机帮你做的那个决定，会带来意想不到的惊喜和轻松好心情。</p>
+  <!-- 底部小提示，符合原文风格 -->
+  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
+    * 工具完全免费，无需安装，打开网页就能用
   </div>
 </div>
 `;export{t as default};

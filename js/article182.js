@@ -1,83 +1,79 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">文字转换工具：简体、繁体、火星文一键互转，沟通从此更轻松</h1>
-  
-  <div class="mb-8">
-    <p class="mb-4 text-base leading-relaxed">你是不是偶尔会遇到这样的情况？看到一篇繁体字文章读起来有点费劲，或者朋友发来的火星文消息完全看不懂。别担心，这并不是什么难题，现在有了文字转换工具，这些烦恼都可以轻松解决。</p>
-    <p class="mb-4 text-base leading-relaxed">这篇文章就来聊聊文字转换的那些事，让你完全不需要懂任何技术，也能自由自在地在不同文字之间切换。</p>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
+
+  <p class="text-lg text-slate-600 mb-8">
+    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-blue-800">
+      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
+    </p>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么我们需要转换文字？</h2>
-    <p class="mb-4 text-base leading-relaxed">生活中，我们接触到的文字形式多种多样。比如：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">阅读古籍或港澳台资讯：</span>很多传统文化资料、电影字幕或新闻网站使用繁体字，转换后阅读更顺畅。</li>
-      <li><span class="font-medium">与不同地区朋友交流：</span>大陆用简体字，台湾、香港等地常用繁体字，互相转换一下，沟通无障碍。</li>
-      <li><span class="font-medium">理解网络流行语：</span>火星文是年轻人喜欢的趣味表达，转换一下就能明白其中的意思。</li>
-      <li><span class="font-medium">学习与研究：</span>对比简体与繁体的差异，或者收集网络用语素材，转换工具非常实用。</li>
-    </ul>
-    <p class="text-base leading-relaxed">总之，文字转换就像一座桥梁，连接不同的书写习惯，让信息传递更简单。</p>
-  </div>
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
+  <p class="mb-4">想一想这些场景：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
+    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
+    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
+  </ul>
+  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">一分钟认识三种文字</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">简体字</h3>
-        <p class="text-sm leading-relaxed">这是我们日常最常用的写法，笔画简单，书写快速。中国大陆的标准用字，比如“学习”、“电脑”。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">繁体字</h3>
-        <p class="text-sm leading-relaxed">保留了更多传统笔画，看起来更复杂一些。在台湾、香港、澳门以及海外华人社区广泛使用，比如“學習”、“電腦”。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">火星文</h3>
-        <p class="text-sm leading-relaxed">一种有趣的网络文字，通过符号、谐音或变形来表达，充满个性。比如“伱好”变成“沵恏”，常在社交聊天中出现。</p>
-      </div>
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
+  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
     </div>
-    <p class="text-base leading-relaxed">这三种文字各有特点，转换工具就能在它们之间自由切换，就像翻译不同方言一样方便。</p>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">文字转换工具能做什么？</h2>
-    <p class="mb-4 text-base leading-relaxed">一个简单的在线工具，通常提供以下转换方式：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li>简体字转成繁体字</li>
-      <li>繁体字转回简体字</li>
-      <li>简体字变成火星文</li>
-      <li>火星文还原为简体字</li>
-      <li>繁体字与火星文互相转换</li>
-    </ul>
-    <p class="mb-4 text-base leading-relaxed">使用起来非常简单：选择你要的转换方式，把文字粘贴进去，点一下按钮，结果立刻就出来了。你还可以把转换好的文字复制下来，用到任何需要的地方。</p>
-    <p class="text-base leading-relaxed">整个过程完全免费，而且不需要安装任何软件，在手机或电脑上打开网页就能用。</p>
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">转换结果准确吗？</h3>
-        <p class="text-base leading-relaxed">一般来说，基于标准的字库对应关系，转换准确度很高。但对于一些多音字或特殊用法，可能需要稍作核对，就像我们平时查字典一样。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">一次能转换多少文字？</h3>
-        <p class="text-base leading-relaxed">大部分工具都没有严格限制，你可以粘贴整篇文章、长段落进行转换。如果文字量特别大，分几次操作会更顺畅。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">转换后的文字可以用在哪里？</h3>
-        <p class="text-base leading-relaxed">任何需要的地方！比如发社交媒体、写文档、做研究、或者只是好奇看看不同的写法。转换后的文字和普通文字一样，可以随意复制、粘贴、编辑。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">在手机上能用吗？</h3>
-        <p class="text-base leading-relaxed">当然可以。好的转换工具会自动适应手机屏幕，操作和电脑上一样简单，无论你是在地铁上还是在家里，随时都能用。</p>
-      </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
     </div>
   </div>
 
-  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
-    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
-    <p class="mb-3 text-base leading-relaxed">文字转换工具是一个贴心的小帮手，它让简体字、繁体字和火星文之间的切换变得像开关灯一样简单。无论你是为了学习、工作还是娱乐，它都能帮你省去很多麻烦。</p>
-    <p class="text-base leading-relaxed">下次再遇到看不懂的文字，不妨试试转换一下，也许会有意想不到的发现。沟通的本质是理解，而工具的存在，就是让这份理解更容易达成。</p>
+  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
+  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
+    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
+    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
+  </ul>
+
+  <div class="bg-slate-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
+    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
+    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
+      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
+      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
+      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
+  <p class="mb-6">
+    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
+  </p>
+  <p class="mb-8">
+    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
+  </p>
+
+  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
+    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
   </div>
 </div>
-`;export{e as default};
+`;export{s as default};

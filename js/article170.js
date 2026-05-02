@@ -1,48 +1,131 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
-  <!-- 标题 -->
-  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
-  
-  <!-- 引言 -->
-  <p class="mb-4 text-lg">
-    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
-  </p>
-
-  <!-- 两个模式解决不同场景 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
-  <p class="mb-4">
-    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
-  </p>
-  <p class="mb-4">
-    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
-  </p>
-
-  <!-- 避免配对功能 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
-  <p class="mb-4">
-    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
-  </p>
-
-  <!-- 操作简单，三步完成 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
-  <p class="mb-4">
-    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
-  </p>
-
-  <!-- 导出与分享 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
-  <p class="mb-4">
-    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
-  </p>
-
-  <!-- 总结 -->
-  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
-    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
-  </p>
-
-  <!-- 底部小提示，符合原文风格 -->
-  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
-    * 工具完全免费，无需安装，打开网页就能用
-  </div>
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6 leading-tight">还在为选择发愁？一个简单工具帮你轻松做决定</h1>
+    
+    <div class="text-gray-600 mb-8 text-center">
+      <p class="mb-2">每天都要做无数选择，从吃什么到去哪里，有时候真的让人头疼。</p>
+      <p>今天就来介绍一个特别实用的小工具，它能帮你快速做出随机选择，让生活变得更简单。</p>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">什么是随机选择器？</h2>
+      <div class="space-y-4 text-gray-700">
+        <p>随机选择器就像一个电子抽签盒，你可以把不同的选项放进去，它就会帮你随机选出一个。</p>
+        <p>想象一下，你和朋友争论晚上吃什么，把“火锅、烧烤、炒菜、面条”这些选项输入进去，点击一下按钮，它就会给出一个随机结果。</p>
+        <p>这样一来，既公平又有趣，再也不用为“到底听谁的”而烦恼了。</p>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">哪些时候特别需要它？</h2>
+      <ul class="grid md:grid-cols-2 gap-4 text-gray-700">
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">日常吃饭难题</div>
+          <div class="text-sm">每天都要想的“吃什么”，把常吃的几家店列出来，让它帮你决定。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">周末活动安排</div>
+          <div class="text-sm">看电影、逛公园、去爬山……太多选择反而不知道做什么好。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">家庭游戏时间</div>
+          <div class="text-sm">和孩子玩游戏时，用它来决定谁先开始，或者选择游戏项目。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">学习抽检复习</div>
+          <div class="text-sm">把要复习的知识点写下来，随机抽选，检验自己的掌握情况。</div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">使用起来有多简单？</h2>
+      <div class="space-y-6 text-gray-700">
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">输入你的选项</p>
+            <p>把你想选择的项目一个个写下来，比如“红色、蓝色、绿色”，或者每行写一个。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">点击选择按钮</p>
+            <p>轻轻点一下“随机选择”按钮，它会立刻从你的列表中抽出一个结果。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shri0">3</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">得到最终结果</p>
+            <p>屏幕上会清晰显示被选中的项目，你可以直接使用这个结果，或者重新选择。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">这些场景你可能遇到过</h2>
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景一：和朋友争论不休时</div>
+          <p class="text-gray-700">周末去哪里玩？有人说去公园，有人说去商场，有人说去看展览。与其争论半天，不如把选项都列出来，让随机选择器帮忙决定，大家都服气。</p>
+        </div>
+        
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景二：自己犹豫不决时</div>
+          <p class="text-gray-700">想买件新衣服，看中了三件都挺喜欢，但预算只够买一件。这时候让选择器帮你挑，既解决了选择困难，又有点小惊喜。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-2">场景三：需要公平分配时</div>
+          <p class="text-gray-700">家里大扫除，谁擦窗户、谁拖地、谁整理厨房？把任务写下来随机分配，公平合理，谁也没意见。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">常见问题解答</h2>
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <div class="font-medium text-gray-800 mb-1">这个工具收费吗？</div>
+          <p>完全免费，打开网页就能用，不需要下载任何软件，也不会有烦人的广告。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">需要注册账号吗？</div>
+          <p>不需要，就像使用一个简单的计算器一样，随开随用，用完就关，没有任何门槛。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">手机和电脑都能用吗？</div>
+          <p>都可以，无论是在家里的电脑上，还是在外出的手机上，都能正常使用，操作一样简单。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">选项有数量限制吗？</div>
+          <p>几乎没有限制，你可以输入几个选项，也可以输入几十个选项，都能正常工作。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-blue-50 border border-blue-100 rounded-lg p-6 mt-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">小提示：让选择变得更有趣</h2>
+      <div class="text-gray-700 space-y-3">
+        <p>• 不确定今晚吃什么？把附近常去的餐厅都列出来，让随机选择器给你一个惊喜。</p>
+        <p>• 孩子不知道看哪本书？把书架上的书名写下来，随机挑选，增加阅读的趣味性。</p>
+        <p>• 运动前热身做什么？把几个热身动作输入进去，每次都不一样，避免枯燥。</p>
+        <p class="font-medium text-gray-800 mt-4">很多时候，我们不是没有选择，而是选择太多。让随机选择器帮你简化这个流程，你会发现做决定原来可以这么轻松。</p>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10 pt-6 border-t border-gray-200">
+      <p class="text-gray-600">希望这个简单的小工具能帮你减少生活中的选择烦恼，让每一天的决策都变得更轻松愉快。</p>
+    </div>
+  </article>
 </div>
 `;export{t as default};

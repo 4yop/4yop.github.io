@@ -1,120 +1,90 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800 bg-white">
-  <header class="text-center mb-8 md:mb-12">
-    <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4">轻松制作专业饼图：一个简单好用的在线工具</h1>
-    <p class="text-lg text-gray-600">告别复杂软件，无需学习设计，三步搞定数据展示。</p>
-  </header>
-
-  <section class="mb-10">
-    <p class="mb-6 leading-relaxed">
-      你是不是经常需要把一堆数据展示给别人看？比如，想告诉老板各个产品的销售比例，或者想向朋友展示一次旅行的花费构成。对着枯燥的数字列表，别人可能很难一眼看明白。
+const t=`
+<div class="text-slate-700 font-sans leading-relaxed">
+  <article class="max-w-4xl mx-auto p-4 md:p-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">如何清晰比较人与事的综合能力？试试这个直观的评估工具</h1>
+    <p class="text-lg text-slate-600 mb-8">
+      无论是比较两个员工的工作表现，还是评估几个不同方案的优缺点，你是不是常常觉得心里有数，但说不清楚？今天，我们来介绍一种简单的方法，帮你把复杂的综合对比，变得一目了然。
     </p>
-    <p class="mb-6 leading-relaxed">
-      这时候，一张饼图就能帮上大忙。它像切蛋糕一样，把整体分成几块，每块的大小代表相应的数据份额，谁多谁少，一目了然。
-    </p>
-    <p class="leading-relaxed">
-      但说到做饼图，很多人就头疼了。是不是得打开复杂的办公软件，或者下载一个从来没学过的设计工具？其实，现在有一个更简单的选择。
-    </p>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">为什么你需要一个简单的饼图工具？</h2>
-    <ul class="list-disc pl-5 space-y-3 text-gray-700">
-      <li><span class="font-medium">工作汇报：</span>在总结报告里，用饼图展示项目预算分配、客户来源占比，让领导瞬间抓住重点。</li>
-      <li><span class="font-medium">学习研究：</span>整理调查问卷结果，比如用户对不同功能的喜好度，用图表呈现更直观。</li>
-      <li><span class="font-medium">个人生活：</span>记录月度开支，看看钱都花在了哪里；或者统计一下每周的时间都分配给了哪些事情。</li>
-    </ul>
-    <p class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 italic">
-      一个好的工具，应该让你专注于数据本身，而不是折腾怎么把图做出来。
-    </p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">这个工具能帮你做什么？</h2>
-    <p class="mb-4">它就像一个为你量身定制的“图表小助手”，操作简单得超乎想象。</p>
-
-    <div class="grid md:grid-cols-2 gap-6 mt-8">
-      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
-          <span class="font-bold">1</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">输入数据，像记账一样简单</h3>
-        <p class="text-gray-700">你只需要告诉它每部分的名称和数值。比如“餐饮消费：1500”、“交通出行：800”。可以一条条手动添加，就像在笔记本上列清单。</p>
-      </div>
-
-      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-          <span class="font-bold">2</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">文件导入，一键搞定</h3>
-        <p class="text-gray-700">如果你已经把数据整理在电脑的表格文件里（比如Excel），直接上传就行。工具会自动读取里面的信息，省去你重复输入的麻烦。</p>
-      </div>
-
-      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-        <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mb-4">
-          <span class="font-bold">3</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">换个“皮肤”，让图表更顺眼</h3>
-        <p class="text-gray-700">觉得默认颜色太普通？你可以选择“商务蓝”、“生态绿”等不同的配色主题，让图表风格更匹配你的报告或个人喜好。</p>
-      </div>
-
-      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4">
-          <span class="font-bold">4</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">调整布局，保存高清图片</h3>
-        <p class="text-gray-700">可以自由调整图例说明文字的位置。完成后，一键就能把制作好的饼图保存为高清图片，直接插入到你的PPT或文档中。</p>
-      </div>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+      <p class="text-slate-700">
+        <strong>核心功能：</strong>这个工具让你可以自由设定比较的方面（比如沟通能力、专业技能），然后为每个你要比较的对象打分，最后生成一张像蜘蛛网一样的“雷达图”，让你一眼就能看出各自的优势和短板。
+      </p>
     </div>
-  </section>
 
-  <section class="mb-10 bg-gray-50 p-6 md:p-8 rounded-xl">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">它适合谁用？</h2>
-    <p class="mb-4">几乎任何需要展示数据比例的人都可以用它：</p>
-    <ul class="list-none space-y-2">
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>需要做简单数据分析的职场人士</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>经常要交报告的学生或研究人员</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>想用图表管理个人事务的家庭成员</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>对专业图表软件望而却步的初学者</span></li>
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">我们什么时候需要用它？</h2>
+    <p class="mb-4">
+      其实，生活和工作中有很多需要多角度对比的场景，单靠感觉或者文字描述总是不够直观。
+    </p>
+    <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-600">
+      <li><strong>面试后比较候选人：</strong>A技术很强但沟通一般，B沟通出色但经验稍浅。怎么综合权衡？</li>
+      <li><strong>个人年度复盘：</strong>今年自己在“专业技能”、“团队协作”、“创新能力”上各进步了多少？</li>
+      <li><strong>产品功能对比：</strong>几款竞品在价格、性能、易用性、服务上分别表现如何？</li>
+      <li><strong>团队人员评估：</strong>为小组成员做一个能力画像，方便后续的培训和发展规划。</li>
     </ul>
-    <p class="mt-6 text-gray-700">
-      它的目标就是让<span class="font-medium">“制作一张清晰的饼图”</span>这件事，变得和在线填一张表格一样简单。你完全不需要有任何设计或技术背景。
-    </p>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">如何使用？超简单的流程</h2>
-    <div class="flex flex-col md:flex-row items-center justify-center my-8">
-      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
-        <div class="text-4xl mb-2 text-gray-400">①</div>
-        <p class="font-medium">填入或导入<br/>你的数据</p>
-      </div>
-      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
-      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
-        <div class="text-4xl mb-2 text-gray-400">②</div>
-        <p class="font-medium">选择喜欢的<br/>样式和布局</p>
-      </div>
-      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
-      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg">
-        <div class="text-4xl mb-2 text-gray-400">③</div>
-        <p class="font-medium">点击导出<br/>获得高清图片</p>
-      </div>
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">工具怎么用？三步搞定</h2>
+    <p class="mb-6">
+      操作非常简单，就像填一张灵活的表格，结果会自动用图形展示出来。
+    </p>
+
+    <div class="space-y-8 mb-10">
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第一步：定下比较的方面</h3>
+        <p class="text-slate-600 mb-3">
+          你想从哪些维度来评价？这些方面完全由你决定。工具默认给了“专业技术”、“沟通协作”等几个常见选项，你可以直接修改它们，或者点击“添加评估维度”来增加新的方面，比如“成本控制”、“市场潜力”等等。
+        </p>
+        <p class="text-slate-500 text-sm">
+          提示：建议方面不要太多，5-8个最能突出重点，也方便查看。
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第二步：添加要对比的对象并打分</h3>
+        <p class="text-slate-600 mb-3">
+          接下来，把你要比较的人、产品、方案添加进来。给每个对象起个名字，比如“张三”、“产品A”、“方案一”。然后，在刚才设定的每一个方面下，为这个对象打一个分数（0-100分）。
+        </p>
+        <p class="text-slate-600">
+          你可以随时增加新的对比对象，或者删除已有的对象。所有数据填写后，系统会实时处理。
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第三步：查看雷达图，获得洞察</h3>
+        <p class="text-slate-600 mb-3">
+          右侧会自动生成一张彩色的雷达图。图中每一个“角”代表一个评估方面，而不同颜色的多边形则代表不同的对比对象。面积越大、越靠外的部分，代表在该方面的能力或分数越强。
+        </p>
+        <p class="text-slate-600 mb-3">
+          通过这张图，你可以轻松回答这些问题：
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2 text-slate-600">
+          <li>谁的能力发展最均衡？</li>
+          <li>谁在某个特定方面特别突出？</li>
+          <li>各个对象的短板分别在哪里？</li>
+        </ul>
+        <p class="text-slate-600">
+          如果结论需要分享给同事或用于报告，点击“导出结果图片”按钮，就能将这张清晰的雷达图保存到电脑里。
+        </p>
+      </section>
     </div>
-    <p class="text-center text-gray-600 mt-4">整个过程通常只需要几分钟，所见即所得。</p>
-  </section>
 
-  <section class="text-center py-8 border-t border-gray-200 mt-12">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4">让数据自己“说话”</h2>
-    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
-      当数字变成直观的图形，信息的传递会高效得多。无论是为了更清晰的工作沟通，还是更有条理的自我管理，一个好的可视化工具都能成为你的得力帮手。
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">为什么图形对比更有效？</h2>
+    <p class="mb-4 text-slate-600">
+      人脑处理图像信息的速度远快于处理文字和数字。面对一堆分数，我们需要反复思考和记忆才能得出结论。而一张雷达图，瞬间就能呈现出“整体轮廓”和“局部差异”。
     </p>
-    <p class="text-lg">
-      <span class="font-medium">最关键的是，</span>整个过程应该轻松、快速，让你把精力花在思考数据本身，而不是折腾工具上。
+    <p class="mb-8 text-slate-600">
+      它把抽象的、多维度的比较，转化成了具体的形状和面积。在进行团队讨论、个人复盘或决策时，这种视觉化的呈现方式能让所有人快速聚焦，达成共识。
     </p>
-  </section>
 
-  <footer class="text-center text-sm text-gray-500 mt-12 pt-6 border-t">
-    <p>希望这篇文章能帮助你了解，原来制作一张专业的饼图可以如此简单。</p>
-  </footer>
+    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mt-12">
+      <h3 class="text-xl font-medium text-slate-800 mb-3">开始你的第一次综合评估吧</h3>
+      <p class="text-slate-600 mb-4">
+        无论是为了更科学地做决策，还是为了更清晰地展示你的分析，这个免费的工具都能帮上忙。它不保存你的任何数据，所有操作都在你的浏览器中进行，简单、安全、私密。
+      </p>
+      <p class="text-slate-600">
+        下次当你面临选择困难，或者需要向别人解释一个复杂的对比结论时，不妨试着用它画一张图。你会发现，把事情“看清楚”，是解决问题最好的第一步。
+      </p>
+    </div>
+  </article>
 </div>
-`;export{s as default};
+`;export{t as default};

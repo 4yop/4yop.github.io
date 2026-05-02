@@ -1,116 +1,84 @@
 const t=`
-<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 md:px-0">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-6">手机号码段生成器：轻松批量创建你需要的号码列表</h1>
-  <p class="text-lg text-gray-600 mb-8">
-    你是否遇到过需要一批手机号来测试软件、挑选靓号或者策划活动，却不知道从哪里找？手动一个个编又太麻烦。今天，我们来介绍一个简单好用的小工具，它能帮你轻松解决这个问题。
-  </p>
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    还在用“生日”当密码？手把手教你打造“破门锤”也打不开的强力密码
+  </h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-    <h2 class="text-xl font-semibold mb-2">这个工具是什么？</h2>
-    <p class="mb-0">
-      简单来说，它就是一个“号码组合器”。就像用积木搭房子，你可以指定号码固定的“开头”（前缀）和“结尾”（后缀），然后设定中间几位数字的变化范围，工具就能自动组合出所有可能的号码，并生成一个完整的列表给你。整个过程完全自动化，省时省力。
-    </p>
+  <div class="text-lg text-gray-600 mb-8">
+    <p>你的网络账号，是不是还在用“123456”、自己生日或者“qwerty”这种简单密码？今天我们就来聊聊，怎么轻松设置一个既安全又好记的密码，给你的数字生活上一把真正的“防盗锁”。</p>
   </div>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4">它到底能做什么？几个常见的使用场景</h2>
-  <p class="mb-6">
-    这个工具的核心是“批量生成”和“灵活定制”。它不是什么神秘的黑科技，而是为了解决一些日常中实实在在的麻烦事。下面这些情况，你可能也遇到过。
-  </p>
-
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：软件或系统测试</h3>
-      <p class="text-gray-700">
-        开发人员测试注册、登录、短信验证码功能时，常常需要大量不同的手机号来模拟真实用户。用真实的号码既不现实也不安全。使用这个生成器，可以快速创建一批测试专用的虚拟号码，非常方便。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：挑选心仪的“靓号”</h3>
-      <p class="text-gray-700">
-        很多人喜欢带有特定数字组合的手机号，比如尾号是“888”、“666”或者生日日期。你可以把想要的尾号设为“后缀”，然后生成中间所有可能的组合，快速看看在某个号段（比如139）下，有哪些号码符合你的要求。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景三：活动策划与数据模拟</h3>
-      <p class="text-gray-700">
-        做市场活动时，可能需要准备一批模拟的参与用户数据。或者在学习数据分析时，需要一份包含手机号字段的模拟数据表。这个工具可以按规则生成号码，配合其他信息，快速构建出需要的样本数据。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景四：记忆或查询特定号段</h3>
-      <p class="text-gray-700">
-        只记得朋友手机号的前几位和后几位，中间几位想不起来了？你可以把记得的部分设为前缀和后缀，然后生成中间数字所有可能的组合。虽然结果可能很多，但可以帮你缩小回忆或查找的范围。
-      </p>
-    </div>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium text-blue-800">你知道吗？</p>
+    <p class="mt-1">黑客破解一个6位纯数字密码，可能只需要几秒钟。而一个复杂的强密码，却能让他们望而却步。</p>
   </div>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4">怎么使用？三步就能搞定</h2>
-  <p class="mb-6">
-    使用这个工具非常简单，完全不需要任何技术知识。它的界面设计得很直观，你只需要像填空一样操作就行。
-  </p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">为什么你的旧密码不够安全？</h2>
+  <p class="mb-4">想象一下，你家的门锁如果是用透明塑料做的，小偷一眼就能看清里面的结构，那还安全吗？简单密码就像这“透明锁”。很多人习惯用：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>自己的名字、生日、手机号。</li>
+    <li>“password”、“admin”这类通用词。</li>
+    <li>键盘上简单的字母序列，比如“asdfgh”。</li>
+  </ul>
+  <p class="mb-6">这些密码太容易被猜到，或者被黑客用“字典攻击”（一种用常见密码列表不断尝试的方法）轻松破解。</p>
 
-  <div class="space-y-8 mb-10">
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">1</div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">设定号码的“固定部分”</h3>
-        <p class="text-gray-700 mb-2">
-          在“前缀”框里，输入你希望所有号码都一样的开头数字。比如，你想生成所有以“138”开头的号码，就填“138”。
-        </p>
-        <p class="text-gray-700 mb-2">
-          在“后缀”框里，输入你希望所有号码都一样的结尾数字。比如，你想要所有号码都以“000”结尾，就填“000”。如果开头或结尾不需要固定，空着不填就行。
-        </p>
-      </div>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">一个好密码的“配方”是什么？</h2>
+  <p class="mb-4">一个真正强力的密码，就像一份独家秘方，需要混合多种“食材”：</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">长度是基础</h3>
+      <p>密码越长，破解难度呈指数级增长。<strong>12位以上</strong>是个不错的起点，就像把锁的链条加长加粗。</p>
     </div>
-
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">2</div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">设定中间数字的变化规则</h3>
-        <p class="text-gray-700 mb-2">
-          这是最关键的一步。“中间号码位数”决定了中间部分有几位数字在变化。比如，选“5位”，那么中间部分就是像“12345”、“00001”这样的5位数。
-        </p>
-        <p class="text-gray-700 mb-2">
-          接着，在“号码范围”里，设定这几位数字从多少变到多少。例如，从“0”到“999”，工具就会生成中间部分为000, 001, 002...一直到999的所有组合。
-        </p>
-        <p class="text-gray-700">
-          <strong>小提示：</strong>工具会贴心地根据你选择的位数，自动建议最大的范围，你只需要根据需求缩小它即可，避免一次生成太多数据。
-        </p>
-      </div>
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">混合是关键</h3>
+      <p>把<strong>大写字母、小写字母、数字、特殊符号</strong>（如!@#$）混合使用，能让密码的复杂度大大提升。</p>
     </div>
+  </div>
+  <p class="mb-6">避免使用有规律的单词或序列，比如“Abc123!@#”虽然混合了多种字符，但规律太明显，安全性也会打折。</p>
 
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">3</div>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">如何轻松获得一个高安全密码？</h2>
+  <p class="mb-4">自己编一个又长又复杂的密码很难记住，这时候，你可以借助一些在线工具——<strong>密码生成器</strong>。它能帮你：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>一键生成</strong>：根据你设定的长度和字符类型，瞬间产生一个随机、无规律的密码。</li>
+    <li><strong>强度分析</strong>：生成后，工具会告诉你这个密码大概有多“强壮”。</li>
+    <li><strong>批量制作</strong>：一次可以生成好几个，方便你在不同场合使用。</li>
+  </ul>
+  <div class="bg-gray-100 p-5 rounded-lg mb-8">
+    <h3 class="font-bold text-gray-800 mb-3">使用密码生成器的小建议：</h3>
+    <p>1. <strong>设定长度</strong>：建议从16位左右开始尝试。</p>
+    <p>2. <strong>勾选字符类型</strong>：尽量把“大写字母、小写字母、数字、符号”全选上。</p>
+    <p>3. <strong>检查强度</strong>：生成后，看看工具给出的强度评分是不是“强”。</p>
+    <p>4. <strong>妥善保存</strong>：生成的密码一定要保存在安全的地方，比如可靠的密码管理器，而不是写在电脑的记事本里。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">有了强密码，就万无一失了吗？</h2>
+  <p class="mb-4">强密码是坚固的“锁芯”，但门框也得结实。你还需要：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>开启双重验证</strong>：这是最重要的防线。就像除了密码锁，再加一个指纹或短信验证。</li>
+    <li><strong>不同网站用不同密码</strong>：避免“一把钥匙开所有门”，防止一个网站密码泄露，连累所有账号。</li>
+    <li><strong>定期更换</strong>：尤其是重要账号（如邮箱、银行），建议每半年或一年更换一次密码。</li>
+  </ul>
+
+  <div class="mt-12 pt-8 border-t border-gray-200">
+    <h3 class="text-xl font-bold text-gray-800 mb-4">关于密码，你可能还想知道：</h3>
+    <div class="space-y-4">
       <div>
-        <h3 class="text-xl font-semibold mb-2">生成与保存结果</h3>
-        <p class="text-gray-700 mb-2">
-          点击“开始生成”按钮，几秒钟后，完整的号码列表就会出现在下方。你可以直接滚动预览。
-        </p>
-        <p class="text-gray-700">
-          如果需要保存，可以点击“下载TXT”或“下载CSV”按钮。TXT文件是简单的文本格式，方便查看；CSV是表格格式，可以直接用Excel打开，方便做进一步处理。
-        </p>
+        <p class="font-medium text-gray-800">问：密码太长太难记怎么办？</p>
+        <p class="text-gray-600 mt-1">答：可以使用“密码管理器”来帮你记忆和自动填写。你只需要记住一个主密码即可。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-800">问：用家人名字+生日做密码安全吗？</p>
+        <p class="text-gray-600 mt-1">答：不安全。这类个人信息在社交媒体上很容易被找到，是黑客首先尝试的组合。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-800">问：所有的密码都需要很强吗？</p>
+        <p class="text-gray-600 mt-1">答：可以分级处理。重要的核心账号（支付、邮箱）必须用最高强度的密码和双重验证。一些不重要的临时账号，可以使用稍简单但依然不重复的密码。</p>
       </div>
     </div>
   </div>
 
-  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-10">
-    <h3 class="text-xl font-semibold mb-3 text-gray-800">重要提醒：请合理合法地使用</h3>
-    <p class="mb-3">
-      这个工具生成的号码是<strong>虚拟的、随机的数字组合</strong>。它们绝大部分并未被真实分配使用。
-    </p>
-    <ul class="list-disc pl-5 space-y-2 text-gray-700">
-      <li><strong>禁止用于非法用途：</strong>严禁将这些号码用于任何骚扰、诈骗、虚假注册等违法活动。</li>
-      <li><strong>主要用途是测试与模拟：</strong>它的设计初衷是服务于软件测试、数据分析学习、内部模拟等合法合规的场景。</li>
-      <li><strong>注意数据量：</strong>一次不要生成太多数据（如上百万条），以免占用过多资源，工具本身也做了数量限制来保护你的设备流畅运行。</li>
-    </ul>
+  <div class="mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-300">
+    <p class="text-center font-medium text-gray-800">总结一下，守护你的数字资产，从一个真正的强密码开始。别再使用那些“透明锁”了，现在就动手，为你最重要的账号换上一把“破门锤”也打不开的“防盗锁”吧。</p>
   </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4">总结</h2>
-  <p class="mb-6">
-    手机号码段生成器，本质上是一个帮你自动化完成“数字排列组合”的贴心助手。它把原本枯燥、易错的手工劳动，变成了点几下鼠标就能完成的事。无论你是为了工作测试、学习研究，还是个人需要，它都能成为一个提高效率的小帮手。
-  </p>
-  <p class="text-gray-600 pb-10">
-    希望这篇文章能帮你清楚地了解这个工具的用途和用法。记住，工具的价值在于如何使用它，务必在合法合规的范围内，让它为你的工作和生活带来便利。
-  </p>
 </div>
 `;export{t as default};

@@ -1,65 +1,99 @@
-const t=`<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
-  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">在线猫咪图片生成器：一键定制属于你的喵星人照片</h1>
-  
-  <p class="mb-4">
-    喜欢猫咪的朋友，一定在网上收藏过各种可爱的猫咪图片。但有时候，我们想要的不是一张普通的猫咪照，而是一张带点特别效果的——比如黑白复古风、模糊意境图，甚至一张会动的猫咪GIF。如果还能自己调整图片大小，那就更好了。现在，有一个简单的小工具就能满足这些需求，而且完全免费，打开网页就能用。
+const t=`
+<div class="max-w-4xl mx-auto p-4 sm:p-6 text-gray-800">
+  <!-- 标题 -->
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">分享照片前，你删掉那些“隐藏信息”了吗？</h2>
+
+  <!-- 引语/首段 -->
+  <p class="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed text-center">
+    你是否想过，随手拍下并分享到网络的照片，可能会悄悄透露你的家庭住址、拍摄时间，甚至手机型号？
   </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">这个工具能做什么？</h2>
-  <p class="mb-4">
-    它是一个在线的猫咪图片生成器，不需要你注册或安装任何软件。你只需要选择想要的样式，点击一下按钮，就能得到一张独一无二的猫咪图片。无论是做头像、表情包，还是单纯想换个新鲜的壁纸，它都能快速帮你搞定。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">主要功能一览</h2>
-  
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">1. 静态图还是动图？</h3>
-  <p class="mb-3">
-    你可以选择生成普通的静态猫咪照片，也可以生成GIF动画猫咪。动图会让猫咪更生动，比如眨眼、摇尾巴，特别适合用来活跃聊天气氛。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">2. 图片尺寸随便挑</h3>
-  <p class="mb-3">
-    工具提供了几种常用尺寸：小尺寸、中等尺寸、大尺寸、正方形。如果你想做头像，正方形就很合适；想要壁纸，可以选择大尺寸。如果预设尺寸都不满意，你还可以手动输入宽度和高度，定制完全符合你需要的尺寸。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">3. 多种滤镜效果，让猫咪更有味道</h3>
-  <p class="mb-3">
-    滤镜是让照片出彩的利器。这个工具内置了模糊、黑白、反色等效果。黑白滤镜能让猫咪看起来复古文艺；模糊效果可以营造朦胧感；反色则会带来一种怪诞的视觉冲击。如果你喜欢自己调色，还可以使用“自定义滤镜”，分别调整亮度、明度、饱和度、色相，甚至单独调整红绿蓝三个颜色通道，打造完全属于你的色调。
-  </p>
-
-  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">4. 点击图片放大预览</h3>
-  <p class="mb-3">
-    生成的图片会直接显示在页面上。如果你想看得更清楚，只需点击图片，它就会在黑色半透明背景中放大展示。再点击一下空白处或黑色区域，就能关闭预览，非常方便。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？三步搞定</h2>
-  <p class="mb-2">1. 在左侧面板选择你想要的参数：API类型（静态或动图）、图片尺寸、滤镜效果等。</p>
-  <p class="mb-2">2. 点击“获取喵星人图片”按钮。</p>
-  <p class="mb-4">3. 稍等片刻，一张新鲜出炉的猫咪图片就会出现在右侧。不满意可以继续调整参数再生成。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">常见问题</h2>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：生成图片需要付费吗？</p>
-    <p>答：完全免费，没有任何隐藏收费。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：生成的图片可以下载吗？</p>
-    <p>答：当然可以。在图片上右键选择“图片另存为”就能保存到电脑，手机端长按图片也可以保存。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：为什么我选了GIF，生成的图片还是静态的？</p>
-    <p>答：GIF动画只对部分猫咪素材有效，如果某个猫咪本身就是静态的，那么生成的就是静态图。你可以多试几次，总会遇到动起来的猫咪。</p>
-  </div>
-  
-  <div class="mb-4">
-    <p class="font-medium text-gray-800">问：自定义滤镜里的参数怎么填？</p>
-    <p>答：亮度、明度、饱和度一般填0到100的数字，色相填0到360，RGB三个颜色通道也填0到255的数字。你可以先填一些数值试试效果，慢慢调整到满意为止。</p>
+  <!-- 痛点场景 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-3">一个常见的担忧</h2>
+    <p class="text-gray-700 mb-2">想在网上晒一晒新家的装修，却担心照片会暴露精确的地理位置。</p>
+    <p class="text-gray-700 mb-2">想把孩子的可爱瞬间发给亲友群，但不想让照片里记录的拍摄时间和设备信息一起传出去。</p>
+    <p class="text-gray-700">工作中需要上传产品图片到公开平台，希望只展示图片本身，不附带任何多余的相机参数。</p>
   </div>
 
-  <p class="mt-8 text-center text-gray-600">
-    如果你是一个爱猫人士，或者正需要一张特别的猫咪图片，不妨试试这个在线生成器。不用下载APP，不用注册账号，打开网页就能玩。希望你能在这里找到你喜欢的喵星人瞬间！
-  </p>
-</div>`;export{t as default};
+  <!-- 简单解释 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">照片的“隐形日记本”：EXIF信息</h2>
+    <p class="text-gray-700 mb-4">
+      你可以把每张数码照片想象成一本小小的“日记本”。除了我们能看到的画面（日记内容），它里面还悄悄记录了很多拍摄时的“背景信息”（日记的备注）。
+    </p>
+    <p class="text-gray-700 mb-4">
+      这些“背景信息”就是EXIF数据。它可能包括：
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700 mb-4">
+      <li><strong>你的位置</strong>：如果拍照时开启了定位，经纬度坐标就可能被记下。</li>
+      <li><strong>拍摄时间</strong>：具体的年月日、时分秒。</li>
+      <li><strong>你的设备</strong>：用什么牌子、什么型号的手机或相机拍的。</li>
+      <li><strong>拍摄参数</strong>：光圈、快门速度、ISO等专业数据。</li>
+    </ul>
+    <p class="text-gray-700">
+      当你把原图直接发送或上传时，这本“隐形日记本”通常也会一并交给对方。在网络分享时，这可能会带来一些隐私顾虑。
+    </p>
+  </div>
+
+  <!-- 解决方案引入 -->
+  <div class="bg-gray-100 p-6 sm:p-8 rounded-xl mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">给你的照片做个“大扫除”</h2>
+    <p class="text-gray-700 mb-4 text-center">
+      其实，你可以在分享前，轻松抹去这些不需要的“背景信息”，只留下干净的图片本身。这个过程，就像是为照片做一次保护隐私的“大扫除”。
+    </p>
+  </div>
+
+  <!-- 好处列举 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">这样做有什么好处？</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">保护个人隐私</h3>
+        <p class="text-gray-700">安心分享生活瞬间，不必担心泄露家庭、公司等常去地点的位置信息。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">让文件更“清爽”</h3>
+        <p class="text-gray-700">移除不必要的数据，有时能让图片文件变得更小，上传和发送更快捷。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">操作简单快捷</h3>
+        <p class="text-gray-700">整个过程就像给图片“冲个澡”一样简单，无需学习复杂的技术知识。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">完全在本地完成</h3>
+        <p class="text-gray-700">所有处理都在你自己的设备上进行，图片无需上传到陌生服务器，更加安全。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 应用场景 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">哪些时候特别需要？</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">场景一：旅行分享</h3>
+        <p class="text-gray-700">
+          旅行归来，想发九宫格美景到社交平台。在发布前，清理一下照片的EXIF信息，可以避免你精美的构图背后，附带一串精确的GPS坐标，既能分享快乐，又保护了旅行轨迹的隐私。
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">场景二：二手交易或工作展示</h3>
+        <p class="text-gray-700">
+          在网上出售闲置物品，或者需要向客户展示产品图片。上传清理后的照片，可以确保对方只关注商品或产品本身，而不会看到你手机的型号、照片的原始拍摄时间等无关信息，显得更加专业。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 结尾与引导 -->
+  <div class="text-center border-t pt-8 mt-8">
+    <p class="text-gray-700 mb-4">
+      在这个注重隐私的时代，掌握对自己数字信息的控制权，从小小的习惯开始。下次分享照片前，不妨花一分钟时间，考虑一下是否要为它做一次简单的“信息大扫除”。
+    </p>
+    <p class="text-sm text-gray-600">
+      了解如何轻松便捷地清除照片隐私信息，保护你的数字足迹。
+    </p>
+  </div>
+</div>
+`;export{t as default};

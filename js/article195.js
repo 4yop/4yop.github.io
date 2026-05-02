@@ -1,70 +1,110 @@
-const l=`
-<div class="container mx-auto px-4 py-8 max-w-3xl font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">你是不是也听过这样的话？认识“职场PUA话术”与应对方法</h1>
-  <p class="text-center text-gray-600 mb-8">—— 一个帮你识别和理解的实用小工具</p>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
+  </header>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-    <p class="mb-2"><strong>文章核心：</strong> 本文不讨论任何技术或代码，只为普通人介绍一种在职场或人际中可能遇到的语言现象，并提供一个能帮助你具体感受和练习应对的“话术生成器”工具。目的是增进理解与自我保护。</p>
-  </div>
-
-  <p class="mb-6">在职场上，或者在某种人际关系里，你有没有听到过一些让你感觉不舒服、压力很大，但又好像挑不出具体毛病的话？比如，对方总是强调“为你好”、“希望你成长”，但话里话外却让你不断怀疑自己、感到愧疚和必须加倍努力？</p>
-  <p class="mb-8">很多人把这类沟通方式，笼统地称为“PUA话术”。今天，我们就来聊聊它到底是什么，以及我们可以怎么看待和应对。</p>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">一、什么是“PUA话术”？它听起来什么样？</h2>
-  <p class="mb-4">首先，我们需要明确，这里说的“PUA话术”并不单指恋爱中的技巧，而是引申为一种通过特定语言模式，试图影响、控制对方情绪和行为的沟通方式。尤其在存在权力不对等的关系中（如上级对下级）更常见。</p>
-  <p class="mb-6">这类话术通常有几个特点：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2">
-    <li><strong>模糊的贬低与施压：</strong> 不直接批评事情本身，而是评价你的“状态”、“潜力”或“态度”。例如：“我对你是有些失望的”，“你的投入程度，和XX比是有些不足的”。</li>
-    <li><strong>“画饼”与抬高期待：</strong> 先给予一个高于你当前能力的肯定或位置，然后设定一个模糊但极高的目标。例如：“当初给你这个职位，是高于你当时水平的。我是希望你…能够快速成长的。”</li>
-    <li><strong>制造焦虑与紧迫感：</strong> 频繁使用“价值点”、“护城河”、“核心竞争力”、“差异化”等宏大词汇提问，让你觉得自己的日常工作毫无价值，必须立刻找到“不可替代性”。同时设定紧迫的“时间节点”。</li>
-    <li><strong>要求“思考”而非“执行”：</strong> 否定你具体的工作成果，转而要求你输出抽象的“思考”、“判断”、“方法论”，并形成报告，这常常让人无从下手，感到迷茫。</li>
-    <li><strong>树立“别人家孩子”的榜样：</strong> “你看XX，人家在彻夜加班/带病工作…” ，通过极端案例进行隐性施压。</li>
-    <li><strong>将痛苦与成长绑定：</strong> “成长一定是伴随着痛苦的”，这句话本身有一定道理，但被用来合理化所有不合理的要求和压力。</li>
-  </ul>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">二、为什么我们需要了解这些话术？</h2>
-  <p class="mb-4">了解的目的不是为了学习如何去用，而是为了：</p>
-  <ol class="list-decimal pl-6 mb-8 space-y-2">
-    <li><strong>识别与清醒：</strong> 当对方说出某些话时，你能迅速反应过来：“哦，这可能是某种施加压力的套路”，而不是立刻陷入自我怀疑。识破套路，是摆脱其影响的第一步。</li>
-    <li><strong>保护自己的情绪：</strong> 明白这些话术的通用性和非针对性，有助于你把它从对你个人能力的否定中剥离出来，减少精神内耗。</li>
-    <li><strong>练习应对：</strong> 知道了常见的“出招”模式，你才能提前想好如何“接招”。是冷静澄清事实？是提出具体问题？还是明确自己的边界？</li>
-  </ol>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">三、用一个“话术生成器”来感受和拆解</h2>
-  <p class="mb-4">单纯讲道理可能有点抽象。为了方便大家更具体地感受这种话术的“组装”逻辑，网络上出现了一些有趣的<strong>“PUA话术生成器”</strong>。你可以把它理解为一个“造句模板”或“填空题”游戏。</p>
-  <p class="mb-4">它的用法很简单：</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li>你会看到一个预设好的话术段落，里面有很多空白处，比如“情绪评价”、“职位”、“核心竞争力”等。</li>
-    <li>你可以自己随意填写这些空白，比如把“情绪评价”填成“期待”，把“职位”填成“负责这个项目的机会”。</li>
-    <li>点击“生成”，一段符合那个套路逻辑的、完整的话就出来了。</li>
-    <li>通常生成器还会提供几个“预设场景”，比如“职场CPU”、“绩效面谈”等，一键填充典型词汇，让你立刻看到不同场景下的效果。</li>
-  </ul>
-  <p class="mb-8">通过自己动手“组装”一遍，你会惊奇地发现，原来这种让人倍感压力的话术，其骨架是如此相似和可复制。这个工具就像一个“照妖镜”，让套路变得清晰可见，从而削弱它的威力。</p>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">四、如果你遇到了，可以怎么办？</h2>
-  <p class="mb-6">识别之后，更重要的是应对。这里有一些平实的建议：</p>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-green-50 p-5 rounded-lg border border-green-200">
-      <h3 class="font-bold text-lg mb-3 text-green-800">保持冷静，隔离情绪</h3>
-      <p class="text-gray-700">心里默念：“这是对方的沟通方式问题，不全是我的问题。” 把关注点从“我是不是很差”转移到“他到底想表达什么具体问题”上。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
+      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
     </div>
-    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
-      <h3 class="font-bold text-lg mb-3 text-yellow-800">追问具体，避免模糊</h3>
-      <p class="text-gray-700">针对模糊评价，礼貌地请求具体例子。“您说我‘投入不足’，能具体分享一下是哪个时间点或哪件事让您有这种感觉吗？我想针对性改进。”</p>
-    </div>
-    <div class="bg-red-50 p-5 rounded-lg border border-red-200">
-      <h3 class="font-bold text-lg mb-3 text-red-800">记录事实，保护自己</h3>
-      <p class="text-gray-700">对于重要的沟通，尤其是涉及承诺和评价的，事后简单用邮件或消息确认一下。“总结一下刚才您提到的三点要求：1… 2… 3…，我这样理解对吗？” 留下记录。</p>
-    </div>
-    <div class="bg-blue-50 p-5 rounded-lg border border-blue-200">
-      <h3 class="font-bold text-lg mb-3 text-blue-800">明确边界，量力而行</h3>
-      <p class="text-gray-700">“成长伴随痛苦”不等于“所有痛苦都值得承受”。判断工作要求是否合理，是否严重透支健康和生活。学会在无法承受时，清晰、理性地表达自己的困难。</p>
-    </div>
-  </div>
+    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
+  </section>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">写在最后</h2>
-  <p class="mb-4">无论是“PUA话术生成器”这个工具，还是这篇文章，我们的目的都不是为了挑起对立或学会攻击。恰恰相反，是为了<strong>增进理解、促进清醒、保护自我</strong>。</p>
-  <p class="mb-4">健康的沟通应该基于事实、尊重与清晰的目标。希望你在了解这些模式后，既能避免自己不自觉地使用它，也能在遇到时，有能力守护自己的心理边界，将沟通拉回到解决实际问题的轨道上来。</p>
-  <p class="pt-6 border-t text-gray-600">如果你对这类沟通现象感兴趣，不妨去找找那个“话术生成器”亲自体验一下，你会发现，拆解套路本身，就是一种很好的治愈和赋能。</p>
-</div>
-`;export{l as default};
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
+    <div class="bg-pink-50 p-5 rounded-lg my-5">
+      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
+        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
+        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
+        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
+      </ol>
+    </div>
+    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
+          <li>配合表情使用，效果更佳</li>
+          <li>真诚最重要，即使是夸张的话也要发自内心</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
+          <li>在正式场合用，比如工作汇报、商务谈判</li>
+          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
+    </div>
+  </section>
+</article>
+`;export{s as default};

@@ -1,99 +1,50 @@
-const t=`
-<div class="max-w-4xl mx-auto p-4 sm:p-6 text-gray-800">
-  <!-- 标题 -->
-  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">分享照片前，你删掉那些“隐藏信息”了吗？</h2>
+const s=`
+<div class="text-gray-800 max-w-4xl mx-auto px-4 py-8 sm:px-6">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6">还在为配色发愁？试试这个好用的图片颜色分析工具</h1>
+  <p class="text-lg text-gray-600 mb-8">无论是设计海报、制作PPT，还是想让你的社交媒体图片更吸引人，选对颜色往往是关键一步。今天，我们来聊聊一个能帮你快速“抓住”图片核心色彩的小帮手。</p>
 
-  <!-- 引语/首段 -->
-  <p class="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed text-center">
-    你是否想过，随手拍下并分享到网络的照片，可能会悄悄透露你的家庭住址、拍摄时间，甚至手机型号？
-  </p>
-
-  <!-- 痛点场景 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
-    <h2 class="text-xl font-semibold text-gray-900 mb-3">一个常见的担忧</h2>
-    <p class="text-gray-700 mb-2">想在网上晒一晒新家的装修，却担心照片会暴露精确的地理位置。</p>
-    <p class="text-gray-700 mb-2">想把孩子的可爱瞬间发给亲友群，但不想让照片里记录的拍摄时间和设备信息一起传出去。</p>
-    <p class="text-gray-700">工作中需要上传产品图片到公开平台，希望只展示图片本身，不附带任何多余的相机参数。</p>
-  </div>
-
-  <!-- 简单解释 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4">照片的“隐形日记本”：EXIF信息</h2>
-    <p class="text-gray-700 mb-4">
-      你可以把每张数码照片想象成一本小小的“日记本”。除了我们能看到的画面（日记内容），它里面还悄悄记录了很多拍摄时的“背景信息”（日记的备注）。
-    </p>
-    <p class="text-gray-700 mb-4">
-      这些“背景信息”就是EXIF数据。它可能包括：
-    </p>
-    <ul class="list-disc pl-5 space-y-2 text-gray-700 mb-4">
-      <li><strong>你的位置</strong>：如果拍照时开启了定位，经纬度坐标就可能被记下。</li>
-      <li><strong>拍摄时间</strong>：具体的年月日、时分秒。</li>
-      <li><strong>你的设备</strong>：用什么牌子、什么型号的手机或相机拍的。</li>
-      <li><strong>拍摄参数</strong>：光圈、快门速度、ISO等专业数据。</li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium">想象一下这些场景，你是不是也遇到过？</p>
+    <ul class="list-disc pl-5 mt-2 space-y-1">
+      <li>看到一张风景照，特别想用里面的天空蓝作为自己设计的背景色，却不知道这个颜色的具体数值。</li>
+      <li>为公司活动做海报，想从Logo里提取标准色，手动取色总觉得不准确。</li>
+      <li>整理了一堆灵感图片，想要快速总结出它们的色彩风格，感觉无从下手。</li>
     </ul>
-    <p class="text-gray-700">
-      当你把原图直接发送或上传时，这本“隐形日记本”通常也会一并交给对方。在网络分享时，这可能会带来一些隐私顾虑。
-    </p>
   </div>
 
-  <!-- 解决方案引入 -->
-  <div class="bg-gray-100 p-6 sm:p-8 rounded-xl mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">给你的照片做个“大扫除”</h2>
-    <p class="text-gray-700 mb-4 text-center">
-      其实，你可以在分享前，轻松抹去这些不需要的“背景信息”，只留下干净的图片本身。这个过程，就像是为照片做一次保护隐私的“大扫除”。
-    </p>
-  </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">它是什么？一个聪明的“色彩翻译官”</h2>
+  <p class="mb-4">你可以把它理解为一个专注颜色的“图片分析师”。它的工作很简单：你给它一张或多张图片，它就能快速帮你找出图片里“最主要”的颜色和“整体平均”颜色。</p>
+  <p class="mb-6"><span class="font-medium">主色</span>就像图片的“主角”，是画面中最突出、占比最多的色调。<span class="font-medium">平均色</span>则像是把所有颜色搅拌混合后得到的总和色调，能代表图片的整体氛围。工具会把这些颜色用<span class="bg-gray-100 px-2 py-1 rounded">RGB</span>和<span class="bg-gray-100 px-2 py-1 rounded">色值码</span>两种方式清晰展示给你，方便你直接使用。</p>
 
-  <!-- 好处列举 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">这样做有什么好处？</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">保护个人隐私</h3>
-        <p class="text-gray-700">安心分享生活瞬间，不必担心泄露家庭、公司等常去地点的位置信息。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">让文件更“清爽”</h3>
-        <p class="text-gray-700">移除不必要的数据，有时能让图片文件变得更小，上传和发送更快捷。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">操作简单快捷</h3>
-        <p class="text-gray-700">整个过程就像给图片“冲个澡”一样简单，无需学习复杂的技术知识。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">完全在本地完成</h3>
-        <p class="text-gray-700">所有处理都在你自己的设备上进行，图片无需上传到陌生服务器，更加安全。</p>
-      </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">对你有什么用？三个看得见的好处</h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-medium mb-2">1. 省时省力，告别手动取色烦恼</h3>
+      <p>再也不用瞪大眼睛在软件里一点点找颜色了。无论图片多么复杂，一键上传，几秒钟内就能获得准确的颜色代码。你可以直接复制使用，大大提高工作效率。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium mb-2">2. 激发灵感，找到专业配色方案</h3>
+      <p>好看的电影截图、优秀的设计作品、迷人的自然风光……所有让你心动的图片都可以成为你的色彩灵感库。分析它们的颜色，你就能理解为什么它们看起来那么和谐，并把这份和谐用到你自己的创作中。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium mb-2">3. 批量处理，轻松管理多个方案</h3>
+      <p>如果你收集了很多参考图，可以一次性上传多张图片进行批量分析。所有结果以表格形式清晰罗列，方便你对比和筛选。你还可以将最终的分析结果导出成表格文件，方便保存和分享给同事或朋友。</p>
     </div>
   </div>
 
-  <!-- 应用场景 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">哪些时候特别需要？</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">场景一：旅行分享</h3>
-        <p class="text-gray-700">
-          旅行归来，想发九宫格美景到社交平台。在发布前，清理一下照片的EXIF信息，可以避免你精美的构图背后，附带一串精确的GPS坐标，既能分享快乐，又保护了旅行轨迹的隐私。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">场景二：二手交易或工作展示</h3>
-        <p class="text-gray-700">
-          在网上出售闲置物品，或者需要向客户展示产品图片。上传清理后的照片，可以确保对方只关注商品或产品本身，而不会看到你手机的型号、照片的原始拍摄时间等无关信息，显得更加专业。
-        </p>
-      </div>
-    </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">生活中可以怎么用？举两个小例子</h2>
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-xl font-medium mb-2">例子一：制作统一风格的团队PPT</h3>
+    <p>你需要为公司新项目制作一系列PPT。为了让所有材料看起来是一个整体，你可以将公司的Logo图片上传分析，得到标准的品牌色。之后所有幻灯片的标题、图表、边框都使用这个颜色，整套材料的专业感和统一感瞬间就提升了。</p>
+  </div>
+  <div class="bg-gray-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-medium mb-2">例子二：让社交媒体分享更出彩</h3>
+    <p>你想分享一张自己做的美食照片。除了滤镜，还可以用这个工具分析一下照片的主色调（比如烤面包的金黄色）。然后，在编辑文案时，选择这个金黄色作为点缀色，或者用它来制作一张简单的背景图作为文字衬托，你的帖子在信息流里会显得格外精致、有设计感。</p>
   </div>
 
-  <!-- 结尾与引导 -->
-  <div class="text-center border-t pt-8 mt-8">
-    <p class="text-gray-700 mb-4">
-      在这个注重隐私的时代，掌握对自己数字信息的控制权，从小小的习惯开始。下次分享照片前，不妨花一分钟时间，考虑一下是否要为它做一次简单的“信息大扫除”。
-    </p>
-    <p class="text-sm text-gray-600">
-      了解如何轻松便捷地清除照片隐私信息，保护你的数字足迹。
-    </p>
+  <div class="border-t pt-8 mt-8">
+    <p class="mb-4">很多时候，好的色彩感觉并非天生，而是借助合适的工具和方法培养出来的。希望这个关于颜色分析工具的介绍，能为你打开一扇新窗户，让你在处理图片配色时多一个轻松又高效的选择。</p>
+    <p class="font-medium">下次当你再被“用什么颜色好”这个问题困扰时，不妨试着让工具先帮你看看图片自己是怎么“说”的。</p>
   </div>
 </div>
-`;export{t as default};
+`;export{s as default};

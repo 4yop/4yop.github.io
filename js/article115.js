@@ -1,99 +1,64 @@
-const s=`
-<article class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    快速制作个性化图片？试试这个在线图片生成工具
-  </h1>
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center leading-tight">给你的照片换个玩法：一键生成专属打乱拼图</h1>
 
-  <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-    你是否需要一张简单又好看的图片，用来当头像、文章配图，或是测试设计效果？在网上找图往往费时费力，尺寸和风格还不一定合适。其实，有个简单的小工具能帮你自己“造”出想要的图片。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">它能做什么？</h2>
-    <p class="text-gray-700">
-      简单来说，这是一个在线图片制作工具。你只需要动动鼠标，选择想要的尺寸、颜色和风格，就能立刻得到一张全新的、专属于你的图片。整个过程完全免费，也不需要注册账号。
-    </p>
+  <div class="text-lg text-gray-600 mb-8 text-center">
+    <p>想让普通的照片变得更有趣、更具挑战性吗？今天介绍一个简单的小工具，它能轻松把你的照片变成等待还原的拼图。</p>
   </div>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">为什么你会需要它？</h2>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+    <p class="font-medium text-blue-800">简单来说：你上传一张照片，选择切成多少块，工具就会自动把它打乱，生成一张全新的、等待被“破解”的图片。</p>
+  </div>
 
-  <p class="mb-4 leading-relaxed">
-    很多时候，我们需要的只是一张“占位图”或简单的背景图。比如：
-  </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">这是做什么用的？</h2>
+  <p class="mb-4">想象一下，你有一张非常喜欢的风景照、宠物照或者全家福。直接分享出去，大家看一眼就过去了。但如果把它变成一张被打乱顺序的拼图，再分享给朋友或家人，就多了一份互动和挑战的乐趣。</p>
+  <p class="mb-4">它就像是一个数字版的“拼图制作器”。你不用去购买实体的拼图块，也不用费力地用软件一点点裁剪。整个过程，只需要点几下鼠标。</p>
 
-  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
-    <li><span class="font-medium">发社交媒体</span>：想发动态，却找不到合适的配图。</li>
-    <li><span class="font-medium">做PPT或文档</span>：需要一个简洁的背景或示意图。</li>
-    <li><span class="font-medium">设计头像</span>：不想用真人照片，想做个特别的头像。</li>
-    <li><span class="font-medium">测试网站或App</span>：开发时，需要放入不同尺寸的图片看看效果。</li>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么使用？非常简单，三步搞定</h2>
+  <ul class="list-decimal pl-5 space-y-4 mb-8">
+    <li>
+      <strong>第一步：选照片</strong>
+      <p class="text-gray-700 mt-1">点击“选择图片”按钮，从你的电脑或手机里挑出一张你想加工的照片。支持常见的图片格式。</p>
+    </li>
+    <li>
+      <strong>第二步：定难度</strong>
+      <p class="text-gray-700 mt-1">选择你想把照片切成多少块。比如9块（3x3）、16块（4x4），块数越多，打乱后的还原难度就越高，适合喜欢挑战的人。</p>
+    </li>
+    <li>
+      <strong>第三步：生成并下载</strong>
+      <p class="text-gray-700 mt-1">点击“切割并打乱”按钮，稍等片刻，你就能在右边看到打乱后的效果。满意的话，直接点击“下载拼图”，这张独一无二的谜题图就保存到你的设备里了。</p>
+    </li>
   </ul>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">可以做出哪些风格的图片？</h2>
-
-  <p class="mb-6 leading-relaxed">
-    这个工具提供了好几种现成的风格模板，你可以直接选用，省去自己设计的麻烦：
-  </p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 简洁纯色与渐变</h3>
-      <p class="text-gray-700">
-        选择一种喜欢的颜色，或者让几种颜色平滑过渡。这种图非常干净，适合做背景，不会干扰文字内容。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 有趣的几何与像素风</h3>
-      <p class="text-gray-700">
-        自动生成由圆形、方块、三角形组成的图案，或者充满复古感的像素画。风格独特，很有设计感。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 艺术感抽象图案</h3>
-      <p class="text-gray-700">
-        随机生成带有线条和色块的抽象画，每一张都不同。用来做海报或封面的底图很有格调。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 带文字的说明图</h3>
-      <p class="text-gray-700">
-        你可以在图片中央加上自己的文字，比如尺寸信息、简单标语，让它变成一张信息明确的说明图。
-      </p>
+  <div class="bg-gray-100 p-5 rounded-lg my-8">
+    <h3 class="font-bold text-xl mb-3">你可能会问的几个问题</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium">我的照片会被上传到服务器吗？</p>
+        <p class="text-gray-700">完全不会。所有处理都在你当前的浏览器页面里完成，照片数据不会离开你的电脑或手机，非常注重隐私安全。</p>
+      </div>
+      <div>
+        <p class="font-medium">可以切成任意块数吗？</p>
+        <p class="text-gray-700">为了保证打乱后每个小块形状规整（都是小方格），工具会自动建议一些特定的块数，比如4、9、16、25等，这样最终效果最好。</p>
+      </div>
+      <div>
+        <p class="font-medium">打乱后的图片清晰度会下降吗？</p>
+        <p class="text-gray-700">处理过程会尽量保持原图的清晰度。你可以随时通过预览功能查看原图和效果图，并进行对比。</p>
+      </div>
+      <div>
+        <p class="font-medium">这个工具有什么实际用途？</p>
+        <p class="text-gray-700">除了娱乐，它还可以用于制作简单的互动谜题、活动预热海报、或者作为亲子游戏素材。老师们甚至可以用它来制作别出心裁的课件题目。</p>
+      </div>
     </div>
   </div>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">使用起来复杂吗？非常简单！</h2>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">给你的创意和生活加点料</h2>
+  <p class="mb-4">一张普通的照片，经过这样简单的处理，就变成了一个等待被解锁的小小谜团。无论是用于社交分享增加互动，还是作为一个小游戏和朋友一起玩，都能带来不一样的体验。</p>
+  <p class="mb-4">工具本身是免费的，操作门槛极低。你不必懂任何复杂的图片编辑技术，也不需要下载安装软件，打开网页就能用。</p>
+  <p class="mb-8">下次当你觉得某张照片值得被更仔细地“观赏”时，不妨试试把它变成一张打乱的拼图。这不仅仅是改变图片的排列方式，更是为你的记忆和分享，增添了一层探索的乐趣。</p>
 
-  <p class="mb-6 leading-relaxed">
-    不用担心操作复杂，整个过程就像填选择题一样简单，主要就三步：
-  </p>
-
-  <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
-    <li>
-      <span class="font-medium">第一步：选尺寸。</span>工具里已经预设好了“头像”、“手机屏幕”、“电脑横幅”等常用尺寸，一键就能选中。
-    </li>
-    <li>
-      <span class="font-medium">第二步：挑风格和颜色。</span>从上面介绍的风格里选一个你喜欢的，再选择暖色调、冷色调或者随机的彩虹色。
-    </li>
-    <li>
-      <span class="font-medium">第三步：生成并保存。</span>点击按钮，图片立刻就出现在右边了。觉得满意，点一下“下载”按钮就能把图片保存到电脑或手机里。
-    </li>
-  </ol>
-
-  <div class="bg-gray-50 p-6 rounded-lg mb-10">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">一个小窍门：让工具帮你决定</h3>
-    <p class="text-gray-700">
-      如果不知道该怎么搭配才好，可以直接点击“随机参数”按钮。工具会帮你随机组合尺寸、风格和颜色，常常能带来意想不到的惊喜效果，特别适合寻找灵感。
-    </p>
+  <div class="text-center text-gray-500 text-sm mt-12 pt-8 border-t">
+    <p>希望这个简单的小工具，能为你平淡的图片分享带来一点新鲜感。</p>
   </div>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">总结一下</h2>
-
-  <p class="mb-6 leading-relaxed">
-    当你临时需要一张图片，又不想花费太多时间搜索或学习复杂的设计软件时，这类在线图片生成工具就是一个非常轻巧便捷的选择。它把专业的设计选项变成了简单的下拉菜单和按钮，让任何人都能快速获得一张可用、好看的图片。
-  </p>
-
-  <p class="text-gray-600 italic border-l-4 border-gray-300 pl-4 py-2">
-    下次你需要图片素材时，不妨试试自己动手“生成”一张。或许你会发现，创造一张属于自己的独特图片，原来可以这么简单和有趣。
-  </p>
 </article>
-`;export{s as default};
+`;export{t as default};

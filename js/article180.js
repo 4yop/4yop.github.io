@@ -1,223 +1,67 @@
-const e=`
-<div class="bg-white text-gray-800 font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8">
-    <!-- 文章标题 -->
-    <header class="mb-8 text-center">
-      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
-      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
-    </header>
+const t=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 text-gray-800 font-sans bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">一张身份证号码能看出哪些信息？</h1>
+  <p class="text-gray-600 mb-8 text-lg">除了证明身份，那一长串数字里还藏着你可能不知道的秘密。</p>
 
-    <!-- 引言部分 -->
-    <section class="mb-10">
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-        <p class="text-gray-700 leading-relaxed">
-          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
-        </p>
-      </div>
-    </section>
+  <div class="mb-10">
+    <p class="mb-4">我们每个人都有身份证。拿到手里，上面有照片、姓名、住址，还有那串长长的18位号码。很多人都知道这串号码很重要，但具体每一位代表什么，可能就不太清楚了。</p>
+    <p>今天，我们就来轻松聊聊，这18位身份证号码，到底告诉了我们哪些关于你的信息。</p>
+  </div>
 
-    <!-- 什么是命名方式 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
-          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → userName</li>
-              <li>• 我的文档 → myDocument</li>
-              <li>• 首页标题 → homePageTitle</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
-          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → user_name</li>
-              <li>• 我的文档 → my_document</li>
-              <li>• 首页标题 → home_page_title</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="text-gray-700 leading-relaxed">
-        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
-      </p>
-    </section>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">身份证号码的秘密：三段式解读</h2>
+  <p class="mb-6">其实，你的18位身份证号可以被清晰地分成三个部分，每一部分都对应着特定的信息。</p>
 
-    <!-- 为什么需要转换 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
-      
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">1</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
-            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">2</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
-            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">3</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
-            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <h3 class="font-bold text-blue-900 mb-1">第一部分：地址码（前6位）</h3>
+    <p class="text-gray-700">这就像是你的“籍贯密码”。最开始的两位代表你所在的省份或直辖市，中间两位代表城市，最后两位则对应着区或县。通过这六位数，就能知道你最初是在哪里登记户口的。</p>
+  </div>
 
-    <!-- 工具介绍 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
-      
-      <div class="bg-gray-50 rounded-xl p-6 mb-6">
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
-        
-        <div class="space-y-6">
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
-              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
-            </div>
-          </div>
-          
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
-              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+    <h3 class="font-bold text-green-900 mb-1">第二部分：出生日期码（第7到14位）</h3>
+    <p class="text-gray-700">这是最直观的部分。比如“19900101”，就代表1990年1月1日。你的公历生日就牢牢地嵌在了这里。</p>
+  </div>
 
-    <!-- 使用场景扩展 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-blue-600 text-xl font-medium">A</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
-          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-green-600 text-xl font-medium">B</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
-          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-purple-600 text-xl font-medium">C</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
-          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
-        </div>
-      </div>
-    </section>
+  <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-8">
+    <h3 class="font-bold text-purple-900 mb-1">第三部分：顺序码和校验码（最后4位）</h3>
+    <p class="text-gray-700">第15到17位是顺序码，其中第17位特别关键——<strong>奇数代表男性，偶数代表女性</strong>。最后一位是校验码，它是通过一套复杂的公式计算出来的，用来验证整个号码是否正确有效，防止输错。</p>
+  </div>
 
-    <!-- 常见问题 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
-      
-      <div class="space-y-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
-          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
-          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
-          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">生日数字里的更多趣味信息</h2>
+  <p class="mb-4">知道了出生日期，其实还能推算出很多有趣的信息，让你的个人资料变得更加立体。</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2 text-gray-700">
+    <li><strong>农历生日</strong>：我们很多人还会过农历生日，它和公历生日每年都不同。</li>
+    <li><strong>星座</strong>：根据出生日期可以找到对应的十二星座。</li>
+    <li><strong>生肖</strong>：你的农历出生年份决定了你的属相。</li>
+    <li><strong>出生那天是星期几？</strong>：这是一个常被忽略但很有意思的小细节。</li>
+    <li><strong>现在的准确年龄</strong>：精确到岁的年龄计算。</li>
+  </ul>
 
-    <!-- 结语 -->
-    <section class="mt-12 pt-8 border-t border-gray-200">
-      <div class="text-center">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
-        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
-          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
-        </p>
-        <p class="text-gray-600">
-          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
-        </p>
-      </div>
-    </section>
-  </article>
-</div>
-`;export{e as default};
+  <div class="bg-gray-50 rounded-xl p-6 md:p-8 my-10 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何安全地查看这些信息？</h2>
+    <p class="mb-4">既然身份证号码包含这么多个人隐私，很多人都会担心：如果我想看看自己的号码解析出来是什么样子，或者核对一下信息，安全吗？</p>
+    <p class="mb-4 font-medium">这里就涉及到一个非常重要的概念：<span class="text-blue-700">本地解析</span>。</p>
+    <p>“本地解析”的意思是，所有的计算和查询工作，都在你自己的设备（比如你的手机或电脑）上瞬间完成。你的身份证号码<strong>根本不会被发送到任何网络服务器上</strong>，也就完全避免了信息在传输过程中被截获或泄露的风险。</p>
+    <p class="mt-4 text-gray-600 text-sm">就像一个计算器，你在上面输入数字做计算，结果立刻出来，整个过程不需要告诉任何人。本地解析工具的原理就和这个类似，把隐私牢牢锁在你的设备里。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">它能做什么？安全吗？</h3>
+      <p class="text-gray-700">它可以根据你输入的号码，快速告诉你对应的地址、生日、性别、农历生日、星座等信息。关键在于，这是一个纯粹的本地工具，你输入的内容不会被上传，所以非常安全，可以放心用来了解自己或核对信息。</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">什么时候会用到它？</h3>
+      <p class="text-gray-700">当你想确认自己记的身份证号码是否正确（通过校验码）；当你想快速知道某个号码对应的生日和年龄；或者仅仅是想好奇地了解一下自己身份证号码背后的“隐藏信息”。</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">所有人都能用吗？</h3>
+      <p class="text-gray-700">是的，只要你知道一个18位的中国大陆居民身份证号码（仅供自己或获得他人允许后用于信息核对），就可以使用。操作非常简单，只需输入号码，结果一目了然。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+    <p>了解自己的身份信息是件有趣的事，但请务必妥善保管好你的身份证及号码，切勿随意向他人泄露。</p>
+  </div>
+</article>
+`;export{t as default};

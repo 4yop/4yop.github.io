@@ -1,79 +1,29 @@
-const t=`
-<div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <section class="mb-10">
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 leading-tight">一键整理凌乱文字中的联系方式</h1>
-    <p class="text-lg text-gray-600 mb-2">还在为从大段文字里找手机号、邮箱而头疼？这个小工具能帮你瞬间搞定。</p>
-    <p class="text-gray-500">无论是会议纪要、客户资料还是网页内容，它都能自动识别并整理出所有联系方式，让你的工作效率翻倍。</p>
-  </section>
+const l=`<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">什么是渣男渣女语录？</h2>
+  <p class="mb-4 leading-relaxed">渣男渣女语录，是指在感情关系中那些只索取不付出、擅长自我感动和推卸责任的人经常说出的话。这些语录往往看似深情，实则是在推卸责任、操控对方、或者为自己的不当行为找借口。本工具收集了大量此类经典语录，帮助大家识别这些"话术"，提高警惕。</p>
 
-  <section class="mb-10 bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg">
-    <h2 class="text-xl font-semibold text-gray-800 mb-3">你是不是也遇到过这种情况？</h2>
-    <ul class="space-y-2 list-disc pl-5 text-gray-700">
-      <li>拿到一份长长的会议记录，里面混杂着好几个人的电话和邮箱，需要一个一个挑出来。</li>
-      <li>在网页上看到一篇有用的文章，里面提到了联系方式，但和正文混在一起，手动复制容易出错。</li>
-      <li>收集了多份文档里的客户信息，想把所有人的联系方式汇总到一个表格里，却要逐字逐句地翻找。</li>
-    </ul>
-    <p class="mt-4 text-gray-600">手动做这些事情，不仅费时费力，还容易看走眼，不小心就漏掉或者抄错了一个数字、一个字母。</p>
-  </section>
+  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">渣男渣女语录的分类</h2>
+  <p class="mb-2 leading-relaxed">本工具将语录分为以下几大类：</p>
+  <ul class="list-disc list-inside mb-4 space-y-2 leading-relaxed">
+    <li><strong>渣男语录</strong>：男性在感情中常用的推脱、甩锅、暧昧话语</li>
+    <li><strong>渣女语录</strong>：女性在感情中常用的吊着、索取、双标话语</li>
+    <li><strong>PUA语录</strong>：精神控制、打压贬低、情感操控类话语</li>
+    <li><strong>渣男回头语录</strong>：分手后回头求复合时的经典话术</li>
+    <li><strong>通用语录</strong>：渣男渣女都会使用的敷衍、甩锅、推脱话语</li>
+  </ul>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">它是怎么帮到你的？</h2>
-    <p class="mb-6">简单来说，它就像一个智能的“文字筛子”。你只需要把包含联系方式的整段文字“倒”进去，它就会自动把手机号码、电子邮箱和网页链接这三样东西筛出来，分门别类地摆在你面前。</p>
+  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">如何识别渣男渣女？</h2>
+  <p class="mb-4 leading-relaxed">识别渣男渣女的关键在于观察对方的言行是否一致。如果一个人经常说出上述语录中的话，同时行为上也在不断伤害你、利用你，那么就需要提高警惕了。健康的感情关系应该建立在相互尊重、坦诚沟通的基础上。</p>
 
-    <div class="space-y-8">
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">1</span>
-          它能找什么？
-        </h3>
-        <div class="grid sm:grid-cols-3 gap-4 text-center">
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-blue-600 font-bold text-lg mb-1">手机号码</div>
-            <div class="text-sm text-gray-500">国内主流的11位手机号，都会帮你识别出来。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-green-600 font-bold text-lg mb-1">电子邮箱</div>
-            <div class="text-sm text-gray-500">带有“@”符号的标准邮箱地址，一个都跑不掉。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-amber-600 font-bold text-lg mb-1">网页链接</div>
-            <div class="text-sm text-gray-500">以 http、https 或 www 开头的网址链接。</div>
-          </div>
-        </div>
-      </div>
+  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">使用说明</h2>
+  <p class="mb-2 leading-relaxed">本工具使用方法非常简单：</p>
+  <ol class="list-decimal list-inside mb-4 space-y-2 leading-relaxed">
+    <li>选择你感兴趣的分类标签，或选择"全部"查看所有语录</li>
+    <li>点击"随机语录"按钮，即可获取一条随机语录</li>
+    <li>点击"复制语录"按钮，可将当前语录复制到剪贴板，方便分享</li>
+    <li>点击收藏按钮，可将喜欢的语录保存到本地收藏列表</li>
+  </ol>
 
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">2</span>
-          操作有多简单？
-        </h3>
-        <ol class="space-y-4 list-decimal pl-5 text-gray-700">
-          <li><strong>粘贴文字</strong>：把你手头那段“乱糟糟”的文字，全部复制并粘贴到页面的输入框里。</li>
-          <li><strong>自动识别</strong>：就在你粘贴完成的一瞬间，右边的结果区域已经自动把手机、邮箱、链接分开列好了，还会告诉你各找到了多少个。</li>
-          <li><strong>怎么拿走？</strong>：你可以点击任何一个单独的号码或邮箱来复制；也可以点一下“复制全部”，把找出来的所有信息一次性打包复制走；或者，选择“导出”成一个文本文件保存到电脑里。</li>
-        </ol>
-        <p class="mt-4 p-4 bg-gray-100 rounded-lg text-gray-600 text-sm">整个过程，你只需要做“粘贴”和“点击”这两个动作，剩下的全部交给工具来完成。如果想换一段文字重新整理，点一下“清空全部”就恢复如初了。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-10 p-6 bg-gray-100 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">为什么你会需要它？</h2>
-    <div class="space-y-4">
-      <p><strong>为了快</strong>：节省下大量手动查找和核对的时间，几分钟甚至几秒钟就能完成以前需要半小时的工作。</p>
-      <p><strong>为了准</strong>：机器识别比人眼更可靠，能有效避免因为疲劳或疏忽而导致的遗漏和错抄。</p>
-      <p><strong>为了整齐</strong>：把散落在文字各处的信息，规规矩矩地整理成清单，方便你后续的拨打、联系或归档。</p>
-    </div>
-    <p class="mt-6 text-gray-600">这个工具完全在网页浏览器里运行，你无需下载任何软件，打开网页就能用。更重要的是，<strong>你粘贴进去的所有文字内容都只在你的电脑浏览器里处理</strong>，不会被上传到任何服务器，你可以放心整理那些包含敏感信息的文件。</p>
-  </section>
-
-  <section class="text-center py-8 border-t border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结一下</h2>
-    <p class="text-lg text-gray-700 mb-6">无论是处理工作文档、收集网络信息，还是整理个人资料，面对混杂在文字中的联系方式，你不再需要变成一个“人肉扫描仪”。</p>
-    <div class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-default">
-      让这个小工具成为你的效率助手
-    </div>
-    <p class="mt-6 text-gray-500 text-sm">简单、快速、免费，把繁琐的事情交给工具，把你的时间和精力留给更重要的事。</p>
-  </section>
-</div>
-`;export{t as default};
+  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">注意事项</h2>
+  <p class="mb-4 leading-relaxed text-red-600 font-medium">本工具仅供娱乐使用，请勿将语录内容代入现实生活！如果您正在经历情感困扰，建议寻求专业的心理咨询帮助。</p>
+</div>`;export{l as default};

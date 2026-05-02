@@ -1,71 +1,157 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
+<article class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    一个好用的在线便签工具，能帮你随时随地记录想法
+  </h1>
 
-  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
+    <p>
+      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
+    </p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
-    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
-    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
-  </section>
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
+    <p class="text-gray-700">
+      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
+    </p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
-    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
-    <ul class="list-disc pl-6 space-y-2 mb-4">
-      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
-      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
-      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
-      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
-    </ul>
-    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
-  </section>
+  <div class="space-y-10">
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何使用这个便签工具？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        使用非常简单，就像用真实的便利贴一样。
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700">
+        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
+        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
+        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
+        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
+        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
+      </ul>
+    </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
-    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
-    <ol class="list-decimal pl-6 space-y-3 mb-6">
-      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
-      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
-      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
-    </ol>
-    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
-    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
-      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
-      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
-      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
-    </ul>
-  </section>
-
-  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
-        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        便签上的小工具能做什么？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        每张便签底部都有一排小按钮，能让你的文字更丰富。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li><b>B</b>：加粗文字</li>
+            <li><i>I</i>：让文字倾斜</li>
+            <li><u>U</u>：给文字加下划线</li>
+            <li><s>ab</s>：给文字划上删除线</li>
+            <li>Points：创建项目符号列表</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
+          <p class="text-gray-700">
+            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
+          </p>
+        </div>
       </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
-        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
-        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="text-center py-8 border-t">
-    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
-    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
-    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
-  </section>
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何保护我的便签内容？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+            导出备份
+          </h3>
+          <p class="text-gray-700">
+            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
+          </p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+            导入恢复
+          </h3>
+          <p class="text-gray-700">
+            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
+          </p>
+        </div>
+      </div>
+      <p class="mt-4 text-gray-600 text-sm">
+        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        适合哪些场景使用？
+      </h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-yellow-800 font-medium">1</span>
+          </div>
+          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-pink-800 font-medium">2</span>
+          </div>
+          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-green-800 font-medium">3</span>
+          </div>
+          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-purple-800 font-medium">4</span>
+          </div>
+          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        几个贴心的小提示
+      </h2>
+      <ul class="space-y-4 text-gray-700">
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+    <p class="text-gray-600">
+      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
+    </p>
+    <p class="text-gray-500 text-sm mt-2">
+      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
+    </p>
+  </div>
 </article>
 `;export{s as default};

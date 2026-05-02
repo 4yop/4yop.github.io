@@ -1,104 +1,71 @@
-const e=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
-    双色球选号不用愁，一个免费小工具帮你轻松搞定
-  </h1>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
 
-  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
-    <p>更新于 2023年10月 • 阅读约需3分钟</p>
-  </div>
-
-  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
-    <p class="text-gray-700">
-      买双色球时，面对茫茫多的数字是不是常感到选择困难？别急，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的选号小助手。
-    </p>
-  </div>
+  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      选号，真的有那么难吗？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      相信很多朋友都有过这样的经历：站在彩票店前，拿着选号单，脑子里却一片空白。自己生日、纪念日、幸运数字都试过了，还是觉得不够“随机”。有时候甚至想，要是有人能帮我想几组号码就好了。
-    </p>
-    <p class="leading-relaxed">
-      这种纠结非常正常。双色球红球要从1-33个数字里选6个，蓝球要从1-16个数字里选1个，组合方式多到数不清。靠我们自己拍脑袋想，难免会陷入固定的思维模式。
-    </p>
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
+    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
+    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
   </section>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      什么是随机选号工具？它能做什么？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      简单来说，它就像一个聪明的数字机器。你只需要告诉它：“帮我生成几组号码”，它就能立刻为你组合出全新的、完全随机的双色球号码。
-    </p>
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
+    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
+      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
+      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
+      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
+    </ul>
+    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
+  </section>
 
-    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
-      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
-      <ul class="space-y-3 pl-5 list-disc text-gray-700">
-        <li><span class="font-medium">想生成几注就几注</span>：你可以选择一次性生成1组到10组号码，不用一次次重复操作。</li>
-        <li><span class="font-medium">号码一目了然</span>：生成的红球和蓝球会分开、整齐地排列好，红球还自动从小到大排好序，看着特别清楚。</li>
-        <li><span class="font-medium">一键复制，方便保存</span>：看中了哪组号码，点一下“复制”就能存到手机剪贴板，然后直接粘贴到你的备忘录或者发给朋友，再也不用担心手抄抄错了。</li>
-        <li><span class="font-medium">纯属“脑力劳动”，保护你的隐私</span>：整个生成过程都在你自己的手机或电脑上完成，不会把你的任何选择记录或发送到别处，安全又省心。</li>
-        <li><span class="font-medium">操作简单到没朋友</span>：整个页面就一两个按钮，点一下“立即生成”就有结果，没有任何复杂步骤。</li>
-      </ul>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
+    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
+    <ol class="list-decimal pl-6 space-y-3 mb-6">
+      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
+      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
+      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
+    </ol>
+    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
+    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
+      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
+      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
+      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
+    </ul>
+  </section>
+
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
+        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
+        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
+        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
+      </div>
     </div>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      为什么要用这种方式来选号？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      你可能会有疑问：“机器选的号码，能行吗？”
-    </p>
-    <p class="mb-4 leading-relaxed">
-      首先，我们要明白，双色球的开奖结果是完全随机的。这意味着，每一个数字组合在每一次抽奖中的中奖概率理论上是相同的。无论是你自己想的号码，还是机器生成的号码，中奖的概率都一样。
-    </p>
-    <p class="mb-4 leading-relaxed">
-      使用这种随机工具，最大的好处是帮你打破了选号时的“思维定式”。我们人类在“随机”选择时，总会不自觉地带入一些偏好（比如避开数字4，或者总选连号）。而这个工具能做到更纯粹的随机，覆盖更广的数字组合范围。
-    </p>
-    <p class="leading-relaxed">
-      它更像是一个帮你开拓思路、提供灵感的伙伴。当你没有头绪时，让它给你一些随机的选项，你也许能从这些组合中发现新的灵感，或者直接采用。
-    </p>
+  <section class="text-center py-8 border-t">
+    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
+    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
+    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
   </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      如何使用它？简单三步
-    </h2>
-    <ol class="space-y-6 pl-0 list-decimal list-inside">
-      <li>
-        <span class="font-medium text-gray-900">第一步：打开工具</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑上找到这个双色球随机选号工具的页面。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第二步：选择数量</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在“生成注数”旁边，输入你想看的号码组数，比如3组或5组。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第三步：生成与选用</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">点击“立即生成”按钮，几组号码瞬间出现。浏览一下，如果有觉得顺眼的，点击那组号码旁边的“复制”按钮，就可以拿去用了。不满意？点一下“再来一注”试试运气。</p>
-      </li>
-    </ol>
-  </section>
-
-  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">最后，几句心里话</h2>
-    <p class="mb-4 leading-relaxed">
-      这个双色球随机选号工具，本质上是一个为了增添趣味、提供便利的小助手。它能帮你解决“不知道选什么号”的纠结，让选号过程变得轻松有趣一些。
-    </p>
-    <p class="mb-4 leading-relaxed font-medium text-gray-900">
-      但请一定记住，它不能预测未来，也无法提高中奖概率。
-    </p>
-    <p class="leading-relaxed">
-      购买彩票应该是一种健康的娱乐方式。我们希望你在使用这个小工具时，能抱着轻松、理性的心态。享受那份期待的过程，但更要珍惜自己实实在在的生活。量力而行，理性购彩，才是最重要的。
-    </p>
-  </section>
-
-  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
-    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，请理性参与。</p>
-  </div>
 </article>
-`;export{e as default};
+`;export{s as default};

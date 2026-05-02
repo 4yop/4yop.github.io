@@ -1,130 +1,162 @@
 const s=`
-<div class="text-gray-700 leading-relaxed">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    人生时间计算器：你的人生，还剩下多少天？
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+    营销号生成器：一键生成"震惊体"文案
   </h1>
 
-  <!-- 引言 -->
-  <p class="mb-6 text-lg">
-    你是否常常感觉时间不够用？是否想过，如果生命是一张有期限的日历，你现在翻到了哪一页？今天，我们来聊聊一个能让你直观看见生命进度的工具。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="italic">
-      这不是算命，也不是制造焦虑。它只是帮你把抽象的生命长度，换算成具体的数字和进度条，让你能“看见”时间。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-gray-700">
+      还在为写不出"爆款文案"发愁？想体验一下营销号的独特文风？这个营销号生成器能帮你瞬间生成一篇充满"震惊"、"竟然"、"真相了"等标志性词汇的趣味文章。当然，这纯属娱乐，千万别当真！
     </p>
   </div>
 
-  <!-- 第一部分：这是什么？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
-    一、 人生时间计算器是什么？
-  </h2>
-  <p class="mb-4">
-    简单来说，它就像一个为你生命定制的“进度条”。你只需要告诉它两个简单的信息：你的生日，以及你期望活到的岁数（可以参考国家公布的平均寿命，比如85岁）。
-  </p>
-  <p class="mb-6">
-    然后，它就会为你计算出一些非常直观的结果，比如：
-  </p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li>你已经来到这个世界<strong>多少天</strong>了。</li>
-    <li>你的生命进度条<strong>走到了百分之几</strong>。</li>
-    <li>在预期里，你大概还剩下<strong>多少年、多少个月、多少个周末</strong>。</li>
-  </ul>
-  <p class="mb-6">
-    这些数字本身没有好坏，关键在于你怎么看待和利用它们背后的提醒。
-  </p>
-
-  <!-- 第二部分：为什么需要它？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
-    二、 为什么要看看自己的“人生进度”？
-  </h2>
-  <p class="mb-4">
-    我们每天都在看手机电量、看项目进度、看快递到哪儿了，却很少停下来看看自己最宝贵的资源——时间的存量。
-  </p>
-  <div class="grid md:grid-cols-2 gap-6 my-6">
-    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="font-medium text-gray-800 mb-2">1. 对抗“总觉得还有时间”的错觉</h3>
-      <p class="text-sm text-gray-600">日子一天天过，感觉好像永远过不完。但当“剩余2万个周末”这个数字摆在面前时，那种具体感会让人心头一震，促使你重新思考事情的优先级。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      什么是营销号生成器？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器是一个模拟网络"营销号"文风的在线娱乐工具。你只需要输入一个主题关键词（比如"人工智能"、"直播带货"、"元宇宙"等），它就能自动生成一篇具有以下特点的文章：
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+        <h3 class="font-bold text-red-700 mb-2">夸张标题</h3>
+        <p class="text-sm text-gray-600">"外国小伙一脸懵逼！"、"99%的人都不知道！"</p>
+      </div>
+      <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <h3 class="font-bold text-yellow-700 mb-2">反复提问</h3>
+        <p class="text-sm text-gray-600">"说到XX大家肯定都不陌生，但是你知道XX到底是怎么回事吗？"</p>
+      </div>
+      <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+        <h3 class="font-bold text-green-700 mb-2">自问自答</h3>
+        <p class="text-sm text-gray-600">"那么问题来了...其实原因很简单..."</p>
+      </div>
+      <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+        <h3 class="font-bold text-purple-700 mb-2">引导互动</h3>
+        <p class="text-sm text-gray-600">"觉得不错点个赞！评论区告诉我你的看法！"</p>
+      </div>
     </div>
-    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="font-medium text-gray-800 mb-2">2. 庆祝已经拥有的时光</h3>
-      <p class="text-sm text-gray-600">工具不仅告诉你还剩多少，也清晰地展示你已经度过了多少丰富或平凡的日夜。每一个“已活天数”的增长，都值得被看见和肯定。</p>
+
+    <p class="text-gray-700 mb-4">
+      这个工具纯粹是为了娱乐和恶搞而设计的，生成的内容没有任何实际信息量，也不代表任何观点。它让我们在欢笑中反思：什么样的内容才是真正有价值的？
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      如何使用？
+    </h2>
+    
+    <div class="space-y-6 bg-gray-50 p-6 rounded-xl">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">1</span>
+          输入主题
+        </h3>
+        <p class="text-gray-700 pl-8">
+          在输入框中填写你想要生成的主题关键词，比如"人工智能"、"短视频"、"新能源汽车"等。也可以点击"随机主题"按钮让系统帮你选择。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">2</span>
+          调整参数
+        </h3>
+        <p class="text-gray-700 pl-8">
+          可以选择生成文章的段落数量（3-10段），段落越多，文章越长。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">3</span>
+          生成并复制
+        </h3>
+        <p class="text-gray-700 pl-8">
+          点击"生成文章"按钮，系统会在几秒钟内为你生成一篇完整的营销号风格文章。满意的话可以点击"复制文章"按钮保存到剪贴板。
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- 第三部分：它具体能告诉你什么？（对应功能） -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
-    三、 它能为你算出的“人生账本”
-  </h2>
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      适用场景
+    </h2>
+    
+    <div class="space-y-4">
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">😄</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">朋友间娱乐</h3>
+          <p class="text-gray-600 text-sm">生成搞笑文章分享到朋友圈或群里，活跃气氛</p>
+        </div>
+      </div>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">1. 整体概览：你的生命时间线</h3>
-    <p class="mb-4">
-      输入信息后，你会立刻看到一个像温度计一样的“人生进度条”。蓝色（或绿色）的部分代表已度过的人生，空白部分代表未来。旁边清晰的百分比，让你对自己所处的阶段一目了然。
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">💡</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">学习反面教材</h3>
+          <p class="text-gray-600 text-sm">了解什么是"营销号文风"，避免自己在写作时踩坑</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">✍️</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">填充文本测试</h3>
+          <p class="text-gray-600 text-sm">用于网页排版、UI设计时的占位文本</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">🎭</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">创意启发</h3>
+          <p class="text-gray-600 text-sm">看看荒诞的组合能否激发你的灵感</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      温馨提示
+    </h2>
+    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r">
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>本工具生成的内容<strong>仅供娱乐</strong>，不代表任何观点，请勿用于正式场合</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>生成的内容可能包含<strong>夸张、误导性表述</strong>，请理性看待</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>请勿将生成的内容用于<strong>商业推广、学术写作</strong>等严肃场景</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>希望这个工具能让大家在欢笑中思考：<strong>什么才是真正有价值的内容？</strong></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mt-12 pt-8 border-t border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器的出现，反映了当前网络内容生态中的一些现象。它用幽默的方式揭示了某些"流量至上"的内容创作问题：为了吸引眼球而不惜夸大其词、制造焦虑、传播不实信息。
     </p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 数字模式：把时间“拆开”看</h3>
-    <p class="mb-2">如果你喜欢具体的数据，可以切换到数字模式。这里会把你的剩余时间拆解成：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>剩余年/月数：</strong>帮你做中长期规划（比如，我想用5年掌握一门技能）。</li>
-      <li><strong>剩余周末数：</strong>这个数字往往最让人触动。它提醒你，能完全放松、陪伴家人或发展兴趣的完整两天，其实是有限的。</li>
-    </ul>
-    <p class="text-gray-600 text-sm">
-      （注：这些计算基于简单的平均换算，意在提供一种视角，并非精确预言。）
+    <p class="text-gray-700 mb-4">
+      作为内容的消费者，我们需要提高媒介素养，学会辨别信息的真伪和价值；作为内容的创作者，我们更应该坚持真实、有价值、有深度的创作原则。
     </p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">3. 每日签到：与时间的温柔互动</h3>
-    <p class="mb-4">
-      工具附带一个简单的“每日签到”功能。每天花一秒钟点一下，记录“我今天在场”。它会随机送你一句关于时间的箴言，并默默记下你的打卡足迹。这像是一个小小的仪式，提醒自己珍惜又一个独一无二的日子。
+    <p class="text-gray-700">
+      希望这个小小的工具不仅能给你带来欢乐，也能引发你对网络内容质量的思考。好了，本期内容到这就结束了，如果觉得有帮助，记得点赞收藏加关注哦！（开个玩笑~）
     </p>
-  </div>
-
-  <!-- 第四部分：如何使用它？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
-    四、 如何使用这个工具？（简单三步）
-  </h2>
-  <ol class="list-decimal pl-5 space-y-4 mb-6">
-    <li>
-      <strong>第一步：填写基本信息。</strong>打开工具页面，选择你的出生日期，并设定一个预期寿命（如果不确定，用默认的85岁就好）。
-    </li>
-    <li>
-      <strong>第二步：查看你的报告。</strong>信息填好后，页面会自动更新。你可以自由切换“励志模式”（看进度条和名言）和“数字模式”（看详细统计）。
-    </li>
-    <li>
-      <strong>第三步：尝试每日互动。</strong>如果觉得有启发，可以每天来签个到，看看今天的时间格言。你所有的签到记录可以导出保存。
-    </li>
-  </ol>
-  <p class="mb-6 bg-gray-50 p-4 rounded italic text-sm">
-    请放心，所有这些数据都只保存在你自己的手机或电脑浏览器里，没有网络传输，不用担心隐私问题。你也可以随时清空所有记录。
-  </p>
-
-  <!-- 第五部分：最后的提醒 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
-    写在最后：工具的意义，由你赋予
-  </h2>
-  <p class="mb-4">
-    这个计算器算出的，绝不是命运的定数。预期寿命只是一个参考值，随着医疗和生活方式进步，很多人都会远远超越它。
-  </p>
-  <p class="mb-4">
-    它的真正价值在于提供一种“视角”。就像站上一个小山坡回望来路、眺望前方，它能帮助我们：
-  </p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li>对过去的时光多一份感激和接纳。</li>
-    <li>对未来的日子多一份清醒和规划。</li>
-    <li>对正在流逝的“现在”，多一份觉察和珍视。</li>
-  </ul>
-  <div class="text-center py-6 px-4 border-t mt-8">
-    <p class="text-gray-800 font-medium mb-2">
-      时间对每个人都公平，但感知时间的方式，我们可以自己选择。
-    </p>
-    <p class="text-gray-600">
-      希望这个小小的“人生进度条”，能成为你珍惜当下、认真生活的一个友善提醒。
-    </p>
-  </div>
+  </section>
 </div>
 `;export{s as default};

@@ -1,165 +1,96 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <article>
-    <header class="mb-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-        游戏名字被人占了怎么办？这个隐藏字符技巧帮你轻松解决
-      </h1>
-      <p class="text-gray-600 text-lg">
-        你是否也遇到过这种情况：想到一个绝佳的游戏名字，输入时却发现已被占用？别着急，今天分享一个简单方法，让你心仪的名字重新变得可用。
-      </p>
-    </header>
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">还在为写评价发愁？这个好评生成器，让你告别词穷！</h1>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2">
-        核心功能快速了解
-      </h2>
-      <p class="text-gray-700">
-        这是一个在线小工具，它能在你输入的名字里加入“看不见的特殊字符”。这样系统会认为是一个新名字，而其他人看到的还是原来的样子。简单说，就是让你的名字“看似相同，实则不同”。
-      </p>
+  <!-- 首段 -->
+  <p class="mb-6 text-lg">
+    你是不是也这样？网购收到心仪的商品，或者吃到美味的外卖，心里明明很满意，可到了写评价的时候，手指悬在屏幕上半天，却只憋出一句“东西不错”或者“好吃”？想给商家一个走心的好评，却不知道从何说起。今天，就给大家介绍一个能帮你轻松解决这个烦恼的小工具。
+  </p>
+
+  <!-- 核心功能介绍部分 -->
+  <div class="bg-blue-50 p-6 rounded-xl mb-8">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是好评生成器？</h2>
+    <p class="mb-4">
+      简单来说，它就像一个贴心的“评价小助手”。你只需要告诉它你要评价什么（比如一件衣服或一份披萨），选择你喜欢的说话风格，它就能在几秒钟内，为你生成好几条内容完整、听起来特别真实自然的好评。
+    </p>
+    <p>
+      无论是想表达对商品质量的认可，还是想夸夸外卖的配送速度，它都能帮你把那份满意，用更生动、更具体的话说出来。
+    </p>
+  </div>
+
+  <!-- 工具能做什么 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">它具体能帮你做什么？</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3 text-xl">🛍️</div>
+        <h3 class="text-xl font-medium">给网购商品写评价</h3>
+      </div>
+      <p class="text-gray-600">刚买的宝贝质量超好，物流也快，但你的评价却干巴巴的？切换到“通用商品”模式，选择“质量好”、“物流快”等亮点，它就能帮你生成热情或专业的评价，让你的好评不再单调。</p>
     </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        为什么会有名字重复的问题？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        现在的游戏和社交平台越来越多，好听的、酷炫的名字自然成了抢手货。尤其是热门游戏，比如《王者荣耀》《原神》《和平精英》这些，你可能试了十几个名字都显示“已存在”。
-      </p>
-      <p class="text-gray-700 mb-4">
-        这不仅仅是游戏的问题，很多论坛、社区、应用注册时都有这个限制。系统要求每个用户名必须唯一，但创意有限，重复在所难免。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        哪些情况特别适合用这个方法？
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">游戏玩家</h3>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 想用特定名字但已被注册</li>
-            <li>• 创建系列小号（名字风格统一）</li>
-            <li>• 和朋友用相似的名字开黑</li>
-            <li>• 热门游戏里抢注心仪ID</li>
-          </ul>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">日常使用</h3>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 论坛、贴吧昵称重复</li>
-            <li>• 社交媒体平台用户名</li>
-            <li>• 各种账号注册</li>
-            <li>• 需要批量注册账号时</li>
-          </ul>
-        </div>
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mr-3 text-xl">🍱</div>
+        <h3 class="text-xl font-medium">给外卖美食写评价</h3>
       </div>
-    </section>
+      <p class="text-gray-600">外卖味道棒极了，想鼓励一下商家？切换到“外卖美食”模式，聚焦“味道好”、“分量足”等特点。你可以生成简洁的“吃货”推荐，也可以写一段让老板看了开心的暖心评价。</p>
+    </div>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        它是怎么工作的？（通俗版）
-      </h2>
-      <p class="text-gray-700 mb-4">
-        你可以把它想象成一种“文字隐身术”。我们平时打字，每个字符都会在屏幕上占据位置。但有一些特殊的符号，它们虽然存在，却完全看不见。
-      </p>
-      <p class="text-gray-700 mb-4">
-        这个工具就是把这些“隐形符号”悄悄加到你想要的名字里。比如你想用“旅行者”这个名字，工具会生成一个看起来还是“旅行者”，但实际上内部略有不同的版本。
-      </p>
-      <div class="bg-gray-50 p-6 rounded-lg mb-4">
-        <h3 class="font-medium text-gray-900 mb-2">举个简单的例子：</h3>
-        <p class="text-gray-700">
-          假设“无敌剑客”这个名字被占用了。工具会生成一个新的“无敌剑客”，外表一模一样，但因为加入了隐形字符，系统就会认为这是一个全新的名字，允许你注册。
-        </p>
-      </div>
-    </section>
+  <!-- 核心价值 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">为什么你需要它？</h2>
+  <ul class="space-y-4 mb-10 pl-5">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>省时省力：</strong>再也不用绞尽脑汁组织语言，几秒钟就能获得多条可选评价，复制粘贴即可。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>提供灵感：</strong>当你不知道除了“好”还能说什么时，它可以给你提供夸赞商品不同角度的思路。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>评价更生动：</strong>告别千篇一律的“好评”，生成带有个性风格和具体细节的评价，帮助其他买家更好地做参考。</span>
+    </li>
+  </ul>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        操作起来难不难？
-      </h2>
-      <p class="text-gray-700 mb-6">
-        非常简单，只需要三步，就像平时在网上填表一样。
-      </p>
-      <ol class="space-y-6">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">输入你想用的名字</h3>
-            <p class="text-gray-700">在输入框里写下你心仪的游戏ID或昵称。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">选择生成数量</h3>
-            <p class="text-gray-700">可以一次生成多个版本，提高注册成功率。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">复制使用</h3>
-            <p class="text-gray-700">点击复制按钮，将生成的名字粘贴到游戏或应用的注册框里即可。</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+  <!-- 使用场景 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">这些时候，你可能会想起它</h2>
+  <div class="bg-gray-50 p-6 rounded-xl mb-10">
+    <ul class="space-y-3">
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 收到满意的网购商品，想写个详细好评鼓励卖家时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 工作繁忙，只想快速完成评价任务时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 点到了特别好吃的外卖，想夸夸厨师和骑手时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 觉得自己写的评价总是很“路人”，想提升一下“文采”时。</li>
+    </ul>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        常见问题解答
-      </h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">这样做的名字，别人能看到吗？</h3>
-          <p class="text-gray-700">
-            别人看到的名字和你看到的基本一样。因为加入的是隐形字符，在绝大多数游戏和应用里，显示效果完全相同。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">会不会影响聊天或社交功能？</h3>
-          <p class="text-gray-700">
-            通常情况下不会。这些特殊字符在设计时就不会影响正常的文字显示和功能，你可以正常加好友、组队、聊天。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">所有游戏都适用吗？</h3>
-          <p class="text-gray-700">
-            适用于绝大多数游戏和平台，特别是那些只做简单名字重复检查的系统。如果某个游戏有特殊的字符过滤机制，可能会失败，但试试无妨。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">安全吗？会被封号吗？</h3>
-          <p class="text-gray-700">
-            这个方法只是利用了系统允许的字符，没有修改游戏文件或破坏规则，通常不会被判定为违规。但建议不要用于恶意冒充他人等不正当用途。
-          </p>
-        </div>
-      </div>
-    </section>
+  <!-- FAQ 部分 -->
+  <h2 class="text-2xl font-semibold mb-6 mt-14 pt-6 border-t">你可能想问的几个问题</h2>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        需要注意的小细节
-      </h2>
-      <ul class="space-y-3 text-gray-700">
-        <li>• 生成的名字虽然看起来一样，但实际上是不同的，所以无法用原始名字登录</li>
-        <li>• 最好自己记录下用的是哪个生成版本</li>
-        <li>• 如果某个版本注册失败，可以尝试工具生成的其他版本</li>
-        <li>• 部分极其严格的平台可能会过滤掉所有特殊字符，导致不成功</li>
-      </ul>
-    </section>
+  <div class="space-y-6 mb-12">
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：生成的评价会重复吗？看起来假吗？</h3>
+      <p class="text-gray-600">答：工具内置了丰富的词库和多种表达方式，每次生成都会随机组合。只要你选择的风格和亮点符合真实感受，生成的内容就会非常自然，像是你自己写的。你可以一次生成多条，挑选最合心意的那一条。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：我需要下载什么软件吗？</h3>
+      <p class="text-gray-600">答：完全不需要。它是一个可以直接在网页浏览器里使用的小工具，打开就能用，没有任何复杂的安装步骤。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：除了好评，它能写中评或差评吗？</h3>
+      <p class="text-gray-600">答：目前这个工具主要专注于帮助大家表达“满意”的心情，生成积极、正面的评价。毕竟，分享快乐和认可，也是一件很棒的事。</p>
+    </div>
+  </div>
 
-    <footer class="mt-12 pt-8 border-t border-gray-200">
-      <p class="text-gray-700 mb-4">
-        下次再遇到“该昵称已存在”的提示时，不妨试试这个方法。它不能保证100%成功，但在大多数情况下，能帮你解决燃眉之急，用上心仪已久的名字。
-      </p>
-      <p class="text-gray-600 text-sm">
-        希望这个小技巧能帮到你。无论是驰骋峡谷的召唤师，还是提瓦特大陆的旅行者，一个好名字总能带来更好的开始。
-      </p>
-    </footer>
-  </article>
+  <!-- 总结 -->
+  <div class="bg-gradient-to-r from-gray-50 to-blue-50 p-8 rounded-2xl text-center mt-12 mb-10">
+    <p class="text-xl font-medium mb-4">说到底，写评价不是为了应付任务。</p>
+    <p class="text-gray-700 mb-6">当你对一次购物或一份美食感到满意时，一句具体而真诚的好评，既能给商家带来鼓励，也能为其他像你一样的消费者提供有价值的参考。如果“词穷”暂时阻挡了你分享的冲动，那么这个好评生成器，或许能帮你轻松迈出第一步。</p>
+    <p class="text-gray-600 text-sm">试试看，让你心中的“五星好评”，找到更贴切的表达方式。</p>
+  </div>
 </div>
 `;export{t as default};

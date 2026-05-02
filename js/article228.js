@@ -1,105 +1,120 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想给朋友送一份特别的祝福？试试这个烟花祝福生成器</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">节日到了、朋友生日了、新年到了，想送一份特别的祝福，但发个红包太俗，发段文字太平淡？今天给大家介绍一个有趣的小工具——烟花祝福生成器，让你送的祝福既炫酷又走心。</p>
-  </header>
+const t=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 py-8 md:px-6">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">还在为找不到资料发愁？试试这个让搜索变简单的智能工具</h1>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是烟花祝福？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福，简单来说，就是把你想要说的话，配上绚丽的烟花动画效果，做成一个可以分享的祝福页面。朋友打开后，会看到夜空中绽放的烟花，还有你精心准备的祝福文字。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-orange-500 my-5">
-      <p class="text-gray-700"><strong>想象一下：</strong>除夕夜，你给远方的父母发了一个链接。他们点开后，屏幕上绽放出绚烂的烟花，同时出现"爸妈新年快乐，身体健康"的字样。是不是比一条普通短信温暖多了？</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">这种祝福方式，既有仪式感，又显得用心。而且操作起来非常简单，不需要任何专业技能。</p>
-  </section>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否经历过这些？想找一份专业报告，却搜出满屏无关网页；需要某个网站内的信息，却要翻遍全网；明明记得看过一篇好文章，再想找时却怎么也搜不到了。别担心，这些问题，一个简单的搜索工具就能帮你解决。
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 适合哪些场景？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福几乎适用于所有需要表达祝福的场合：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">新年祝福：</strong>除夕、春节、元旦，送上烟花绽放的新年祝福，喜庆又热闹。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-pink-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">生日祝福：</strong>朋友、家人过生日，送一份烟花生日祝福，比蛋糕还甜。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">节日祝福：</strong>中秋节、国庆节、情人节、圣诞节，各种节日都能用。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-purple-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">表白求婚：</strong>想对喜欢的人说点什么？烟花配上真心话，成功率翻倍。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">毕业祝福：</strong>毕业季送别同学，烟花祝福留下美好回忆。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">总之，只要是想要表达祝福、传递心意的时刻，都可以用烟花祝福来增添一份仪式感。</p>
-  </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 rounded-r">
+    <p class="text-gray-700">
+      <strong>简单来说：</strong> 这是一个集成了百度、谷歌、必应三大搜索引擎的“一站式”搜索入口，最大的亮点是它把许多资深人士才知道的“搜索秘籍”，变成了人人都能轻松点击使用的按钮。
+    </p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 怎么制作烟花祝福？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">制作过程非常简单，只需要几步：</p>
-    <div class="bg-orange-50 p-5 rounded-lg my-5">
-      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
-        <li><strong>输入祝福文字：</strong>在文字框里写下你想说的话，可以是一句话，也可以是多行。比如"新年快乐""万事如意""心想事成"。</li>
-        <li><strong>选择模板：</strong>工具提供了一些现成的模板，比如新年祝福、生日祝福、表白祝福等，点击就能一键填充。</li>
-        <li><strong>调整效果（可选）：</strong>如果想更个性化，可以调整文字颜色、大小、烟花颜色和密度。</li>
-        <li><strong>点击开始：</strong>点击"开始放烟花"，就能看到效果了。</li>
-        <li><strong>分享给朋友：</strong>点击"分享"按钮，把链接发给朋友，他们打开就能看到你的祝福。</li>
-      </ol>
-    </div>
-    <p class="text-gray-700 leading-relaxed">整个过程不需要下载任何软件，不需要注册账号，打开网页就能用。</p>
-  </section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 一些实用小技巧</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">想让你的烟花祝福更出彩？试试这些小技巧：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-blue-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">文字要简洁有力：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">祝福文字不要太长，3-5行最合适。太长了反而看不清。每行控制在10个字以内效果最好。</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">颜色搭配要协调：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">文字颜色建议用亮色，比如金色、白色、黄色，在黑色背景上更醒目。烟花可以选"随机"，效果更丰富。</p>
-      </div>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>温馨提示：</strong>分享链接后，朋友在手机上打开效果也很好。建议让他们在WiFi环境下打开，加载更流畅。如果想要更好的观看体验，可以点击"全屏"按钮。</p>
-    </div>
-  </section>
+  <p class="mb-6">和普通搜索框不同，这个工具让你能“指哪打哪”，大幅提升找资料的效率和准确度。</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：朋友打开链接后看不到烟花怎么办？</p>
-        <p class="text-gray-700 text-sm">A：可能是网络问题或浏览器兼容问题。建议让朋友换个浏览器试试，或者检查网络连接。大多数情况下，微信自带浏览器、QQ浏览器、Safari、Chrome都能正常显示。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：可以保存成视频发给别人吗？</p>
-        <p class="text-gray-700 text-sm">A：目前这个工具主要是分享链接的形式。如果想保存成视频，可以用手机录屏功能，把播放过程录下来。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：祝福链接会过期吗？</p>
-        <p class="text-gray-700 text-sm">A：链接长期有效，朋友随时打开都能看到。不过建议在合适的时机发送，比如除夕夜零点、生日当天早上，效果更好。</p>
-      </div>
-    </div>
-  </section>
+  <div class="space-y-8">
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-700 rounded-full text-center leading-6 mr-2 text-sm">1</span>
+        一站切换，不用记网址
+      </h3>
+      <p class="pl-8">无论是查国内资讯用百度，还是找国际资料用谷歌、必应，在这里一键就能切换。你不用再费力记住不同搜索引擎的网址，更不用来回切换浏览器标签页。</p>
+    </section>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：用心，是最好的祝福</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">在这个快节奏的时代，我们习惯了群发祝福、复制粘贴的问候。但真正打动人心的，永远是那些花了一点心思、带有一点创意的祝福。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">烟花祝福生成器，就是一个帮你把心意变成视觉惊喜的小工具。不需要什么技术，只需要几分钟，就能送出一份独一无二的祝福。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">下次想送祝福的时候，不妨试试这个工具，让烟花替你说出心里话。</p>
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-green-100 text-green-700 rounded-full text-center leading-6 mr-2 text-sm">2</span>
+        用“秘籍”精准锁定目标
+      </h3>
+      <p class="pl-8 mb-4">这是它的核心功能。那些复杂的搜索规则，现在你只需要点一下按钮就能用上。</p>
+      <ul class="pl-8 space-y-3">
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">site:</span>
+          <div>
+            <p class="font-medium">锁定特定网站：</p>
+            <p class="text-gray-600 text-sm">比如，你只想在某个政府网站或大学官网上找政策文件或学术资料，用这个功能就能把搜索范围锁定在你信任的网站上。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">filetype:</span>
+          <div>
+            <p class="font-medium">专门找特定文件：</p>
+            <p class="text-gray-600 text-sm">想直接下载PDF格式的电子书、PPT课件或者Word文档？这个指令能帮你过滤掉网页，直接找到可下载的文件。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">“关键词”</span>
+          <div>
+            <p class="font-medium">搜索原话：</p>
+            <p class="text-gray-600 text-sm">当你需要搜索一句完整的话、一句名言或一个固定短语时，加上引号，搜索引擎就会原封不动地去找它。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">-排除词</span>
+          <div>
+            <p class="font-medium">排除干扰信息：</p>
+            <p class="text-gray-600 text-sm">搜“苹果”不想看到手机，只想看水果？用一个减号就能排除掉你不想看到的关键词。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-amber-100 text-amber-700 rounded-full text-center leading-6 mr-2 text-sm">3</span>
+        你的“搜索记忆”，随时找回
+      </h3>
+      <p class="pl-8">每次搜索都会自动保存下来，形成你的个人搜索历史。之前找过什么资料，用的是哪个搜索引擎，一目了然。想再次查看，点一下就能恢复搜索，不用再费力回忆。</p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-center leading-6 mr-2 text-sm">4</span>
+        不用记，点一下就用
+      </h3>
+      <p class="pl-8">所有的高级搜索指令都以快捷按钮的形式排列在搜索框下方。你不用记忆复杂的语法格式，需要哪种搜索方式，直接用鼠标点一下对应的按钮，它就会自动添加到搜索框里，你只需要补充自己的关键词就行。</p>
+    </section>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">这个工具适合谁用？</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">学生和研究者</h4>
+      <p class="text-gray-600">写论文时需要精准查找学术网站上的PDF文献、特定领域的研究资料，用“站点锁定”和“文件类型”搜索能省下大量筛选时间。</p>
     </div>
-  </section>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">办公族和资料收集者</h4>
+      <p class="text-gray-600">经常需要收集行业报告、市场数据、竞品信息？这个工具可以帮助你更高效地从指定来源（如官网、文库）获取所需文件，并管理好自己的搜索记录。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">对搜索质量有要求的普通人</h4>
+      <p class="text-gray-600">厌倦了在海量无效结果里“淘金”。想更快找到某个问题的确切答案、一张清晰的图片教程，或是一个靠谱的解决方案。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">需要多引擎对比的人</h4>
+      <p class="text-gray-600">想看看百度、谷歌对同一个问题的搜索结果有何不同？在这里切换比手动输入网址方便太多了。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 border rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4">如何使用它来提升效率？</h2>
+    <p class="mb-4">使用起来和普通搜索一样简单：</p>
+    <ol class="list-decimal pl-5 space-y-3">
+      <li><strong>选搜索引擎：</strong> 根据你要找的内容性质，点击上方的“百度”、“谷歌”或“必应”。</li>
+      <li><strong>输入或组合关键词：</strong> 在搜索框直接打字，或者先点击下方你需要的“秘籍”按钮（如<span class="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">site:</span>），再输入你的具体关键词。</li>
+      <li><strong>开始搜索：</strong> 按下回车或点击搜索按钮，结果会在新页面打开。</li>
+      <li><strong>查看与复用历史：</strong> 在左侧“搜索历史”里，你可以随时找回之前的任何一次搜索。</li>
+    </ol>
+    <p class="mt-6 text-gray-600">整个过程，你不需要学习任何复杂的知识，工具的右侧区域就像一个随时可查的说明书，对每个“搜索秘籍”都有通俗的解释和例子。</p>
+  </div>
+
+  <p class="mt-12 text-center text-gray-500 border-t pt-8">
+    搜索不是碰运气。用好工具，其实就是在给你的信息获取能力装上“导航仪”，让你在信息的海洋里，能更直接、更准确地驶向目的地。希望这个介绍，能帮你打开高效搜索的新思路。
+  </p>
 </article>
-`;export{s as default};
+`;export{t as default};

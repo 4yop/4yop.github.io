@@ -1,129 +1,64 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 py-8 bg-white text-gray-800 font-sans">
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">罗马数字转换器：揭开古老计数法的奥秘</h1>
-  <p class="text-lg mb-6 leading-relaxed">
-    你是否曾在老式钟表、书籍的章节编号、电影片尾的版权年份，甚至一些正式的文档中，看到过像 <span class="font-mono bg-gray-100 px-1">I</span>、<span class="font-mono bg-gray-100 px-1">V</span>、<span class="font-mono bg-gray-100 px-1">X</span> 这样的符号？这些看似神秘的字母，其实就是古罗马人使用的数字——罗马数字。虽然我们日常生活中早已习惯了阿拉伯数字（0,1,2,3...），但罗马数字依然以一种优雅而古典的方式存在于现代社会的各个角落。如果你偶尔遇到它们却不知道怎么读，或者想把阿拉伯数字转换成罗马数字，别担心，看完这篇文章你就能轻松掌握，而且还能用上方便的在线转换工具。
-  </p>
+<div class="text-gray-800 font-sans leading-relaxed">
+  <h2 class="text-3xl font-bold mb-6 text-center md:text-left">还在手动打编号？这个序号生成器，让你三秒搞定批量编号</h2>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字从哪来？一段古老的历史</h2>
-  <p class="mb-4 leading-relaxed">
-    罗马数字起源于古罗马帝国，大约在公元前1000年左右开始使用。那时候的人们需要记录数字、进行交易、标记年份，于是发明了这套简单但有效的计数系统。罗马数字的符号主要来源于罗马人的日常生活工具和武器，比如：
-  </p>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><span class="font-mono bg-gray-100 px-1">I</span> 代表一根手指，或者一根木棍。</li>
-    <li><span class="font-mono bg-gray-100 px-1">V</span> 象征一只手的形状，特别是食指和中指分开的样子，代表数字5。</li>
-    <li><span class="font-mono bg-gray-100 px-1">X</span> 则是两个 <span class="font-mono bg-gray-100 px-1">V</span> 交叉在一起，代表数字10。</li>
+  <p class="mb-4">无论你是整理资料、制作名单，还是给物品贴标签，是不是常常遇到需要输入一大串序号的情况？从1写到100，不仅枯燥，还特别容易出错。</p>
+
+  <p class="mb-6">今天，就给大家介绍一个简单又聪明的小工具——<strong class="text-blue-600">序号生成器</strong>。它能帮你瞬间生成任意你需要的数字序列，彻底告别手动输入的麻烦。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">它到底能做什么？</h2>
+  <p class="mb-4">简单来说，它就是帮你“自动写数字”。你只需要告诉它几个简单的规则，它就能给你一整列整齐的序号。</p>
+
+  <div class="bg-gray-50 p-5 rounded-lg mb-6">
+    <h3 class="text-xl font-medium mb-3">1. 想从几开始，到几结束？你说了算</h3>
+    <p class="mb-3">比如你需要一份从“15号”到“30号”的名单。你只需要输入起始值15，结束值30。工具就会自动生成中间的每一个数字。</p>
+
+    <h3 class="text-xl font-medium mb-3">2. 数字可以“跳着走”</h3>
+    <p class="mb-3">你需要隔一个数取一个吗？比如只要1、3、5、7……？这个“步长”功能就能实现。设置步长为2，它就会自动帮你跳过数字。</p>
+
+    <h3 class="text-xl font-medium mb-3">3. 可以从小到大，也能从大到小</h3>
+    <p class="mb-3">大多数时候我们需要数字递增。但有些场景，比如倒计时列表，就需要数字递减。这个工具可以自由切换“自增”或“自减”模式。</p>
+
+    <h3 class="text-xl font-medium mb-3">4. 给编号加上“前后缀”，更规范</h3>
+    <p class="mb-3">生成“1,2,3”太普通了？你可以轻松为它们加上文字。比如加上前缀“第”和后缀“名”，生成的序列就会变成“第1名”、“第2名”……立刻显得专业又清晰。</p>
+
+    <h3 class="text-xl font-medium mb-3">5. 一键复制，直接使用</h3>
+    <p>生成好的序号列表，可以直接一键复制到剪贴板，然后粘贴到你的Word、Excel、记事本或者任何你需要的地方，效率翻倍。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">谁可能会需要它？</h2>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>办公族：</strong>制作员工工号、会议座位号、档案编号、项目任务清单。</li>
+    <li><strong>老师/学生：</strong>给试卷编号、生成学号列表、制作活动签到表。</li>
+    <li><strong>活动组织者：</strong>为参赛者、门票、抽奖券生成连续的号码。</li>
+    <li><strong>个人整理：</strong>给家里的书籍、收藏品、文件贴上整齐的标签序号。</li>
+    <li><strong>任何需要处理列表的人：</strong>只要你觉得手动输入数字太慢、太累、容易错，这个工具就是为你准备的。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字怎么读？简单规则让你秒懂</h2>
-  <p class="mb-4 leading-relaxed">
-    罗马数字看起来复杂，其实规则很简单。只要记住几个基本符号和组合规则，就能轻松看懂和使用。
-  </p>
-
-  <div class="bg-gray-50 p-4 rounded-lg mb-6">
-    <h3 class="font-semibold mb-2">基本符号</h3>
-    <table class="w-full border-collapse">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 px-3 py-2 text-left">罗马数字</th>
-          <th class="border border-gray-300 px-3 py-2 text-left">对应的阿拉伯数字</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">I</td>
-          <td class="border border-gray-300 px-3 py-2">1</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">V</td>
-          <td class="border border-gray-300 px-3 py-2">5</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">X</td>
-          <td class="border border-gray-300 px-3 py-2">10</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">L</td>
-          <td class="border border-gray-300 px-3 py-2">50</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">C</td>
-          <td class="border border-gray-300 px-3 py-2">100</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 px-3 py-2 font-mono">D</td>
-          <td class="border border-gray-300 px-3 py-2">500</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-3 py-2 font-mono">M</td>
-          <td class="border border-gray-300 px-3 py-2">1000</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="text-xl font-medium mt-6 mb-3">组合规则</h3>
-  <ol class="list-decimal pl-6 mb-6 space-y-2">
-    <li><strong>右加左减：</strong>较大的罗马数字右边加上较小的罗马数字，表示两者相加。例如，<span class="font-mono bg-gray-100 px-1">VI</span> 是 5+1=6，<span class="font-mono bg-gray-100 px-1">XI</span> 是 10+1=11。而较大的罗马数字左边加上较小的罗马数字，表示两者相减。例如，<span class="font-mono bg-gray-100 px-1">IV</span> 是 5-1=4，<span class="font-mono bg-gray-100 px-1">IX</span> 是 10-1=9。</li>
-    <li><strong>上标表示：</strong>在罗马数字上方加一条横线，表示乘以1000。例如，<span class="font-mono bg-gray-100 px-1">V̅</span> 表示 5×1000=5000。不过这种用法在现代已经很少见了。</li>
-    <li><strong>重复限制：</strong>同一个罗马数字最多连续重复3次。例如，<span class="font-mono bg-gray-100 px-1">III</span> 是 3，但 4 不能写成 <span class="font-mono bg-gray-100 px-1">IIII</span>，而应该写成 <span class="font-mono bg-gray-100 px-1">IV</span>。</li>
-  </ol>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字的现代应用：古典与现代的完美融合</h2>
-  <p class="mb-4 leading-relaxed">
-    虽然阿拉伯数字已经成为全球通用的计数系统，但罗马数字并没有完全退出历史舞台。相反，它以一种独特的方式，在现代社会中找到了自己的位置：
-  </p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>时间表示：</strong>许多老式钟表和手表的表盘上，仍然使用罗马数字来标记小时。</li>
-    <li><strong>章节编号：</strong>在书籍、论文、法律文件等正式文档中，常用罗马数字来编号章节或部分。</li>
-    <li><strong>版权年份：</strong>电影、电视节目和音乐作品的片尾，常常使用罗马数字来标注版权年份，给人一种经典、永恒的感觉。</li>
-    <li><strong>体育赛事：</strong>一些重要的体育赛事，如奥运会、世界杯，也会使用罗马数字来编号，例如 <span class="font-mono bg-gray-100 px-1">XXI</span> 届世界杯。</li>
-    <li><strong>建筑和纪念碑：</strong>许多历史建筑、纪念碑和公共设施上，会用罗马数字来标记建造年份。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">在线罗马数字转换器：告别手动计算的烦恼</h2>
-  <p class="mb-4 leading-relaxed">
-    虽然罗马数字的规则不难掌握，但当你需要转换较大的数字，或者频繁进行转换时，手动计算就会变得繁琐而容易出错。这时，一个好用的在线罗马数字转换器就能派上大用场了。
-  </p>
-  <p class="mb-6 leading-relaxed">
-    我们的在线罗马数字转换器，就是这样一个简单却强大的工具。它不仅能在阿拉伯数字和罗马数字之间快速转换，还能处理较大的数字，让你告别手动计算的烦恼。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-    <h3 class="font-semibold text-blue-800 mb-2">如何使用我们的罗马数字转换器？</h3>
-    <ol class="list-decimal pl-6 space-y-2 text-blue-700">
-      <li>在输入框中，输入你想要转换的阿拉伯数字（如 2024）或罗马数字（如 <span class="font-mono">MMXXIV</span>）。</li>
-      <li>点击“转换”按钮。</li>
-      <li>转换器会立即在下方显示转换后的结果。</li>
-      <li>如果输入有误，转换器会给出友好的提示信息。</li>
-    </ol>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字转换的常见问题</h2>
-  <div class="space-y-4 mb-6">
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">罗马数字有0吗？</h3>
-      <p>没有。罗马数字的计数系统中，没有专门表示0的符号。这也是它后来被阿拉伯数字取代的原因之一，因为在进行数学运算时，0的存在非常重要。</p>
+  <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">总结一下：它的核心好处</h2>
+  <div class="grid md:grid-cols-2 gap-4 mb-8">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">📈 效率超高</h4>
+      <p class="text-sm">原来需要几分钟甚至更久的手工输入，现在几秒钟就能完成。</p>
     </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">罗马数字最大能表示多少？</h3>
-      <p>在标准的罗马数字系统中，最大的数字是 <span class="font-mono bg-gray-100 px-1">MMMCMXCIX</span>，即 3999。如果要表示更大的数字，就需要使用上标（在数字上方加横线），但这种方法在现代已经很少使用了。</p>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">✅ 准确无误</h4>
+      <p class="text-sm">完全避免手动输入时可能发生的漏写、重复或写错数字的问题。</p>
     </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-1">为什么有时候会看到 <span class="font-mono bg-gray-100 px-1">IIII</span> 而不是 <span class="font-mono bg-gray-100 px-1">IV</span>？</h3>
-      <p>在一些老式钟表上，你可能会看到用 <span class="font-mono bg-gray-100 px-1">IIII</span> 来表示4，而不是标准的 <span class="font-mono bg-gray-100 px-1">IV</span>。这是因为在钟表的圆形表盘上，<span class="font-mono bg-gray-100 px-1">IIII</span> 的对称性更好，视觉效果更平衡。</p>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">🛠️ 灵活定制</h4>
+      <p class="text-sm">不是死板地只能从1开始，各种规则都可以按你的想法来设置。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h4 class="font-medium text-lg mb-2 text-blue-700">📋 即用即走</h4>
+      <p class="text-sm">生成结果一键复制，无缝对接到你正在进行的任何工作里。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">结语：罗马数字的魅力与价值</h2>
-  <p class="mb-6 leading-relaxed">
-    罗马数字，这种古老的计数方法，不仅是一种实用的工具，更是一种文化遗产。它承载着古罗马文明的智慧，也为现代社会增添了一份古典的美感。无论是在日常生活中遇到罗马数字，还是在学习历史、艺术时需要了解它，掌握罗马数字的基本规则和使用方法，都能让你受益匪浅。
-  </p>
-  <p class="mb-6 leading-relaxed">
-    而我们的在线罗马数字转换器，则为你提供了一种便捷的方式，让你在需要时快速、准确地进行转换。无论你是学生、教师、设计师，还是对历史文化感兴趣的爱好者，这个工具都能为你节省时间，提高效率。
-  </p>
-  <p class="font-medium text-center mt-10 text-gray-600">
-    现在，就去试试我们的罗马数字转换器吧，体验古老与现代的完美结合！
-  </p>
+  <p class="mb-6">希望这个介绍能帮你了解到，处理序号、编号这类重复工作，其实有一个非常简单高效的解决方法。下次再遇到需要批量生成数字的情况，不妨试试这个思路。</p>
+
+  <div class="text-sm text-gray-500 border-t pt-4 mt-8">
+    <p>本文介绍了序号生成器（批量编号工具）的功能和使用场景，帮助普通用户快速完成列表编号、文件排序等工作，提升效率与准确性。</p>
+  </div>
 </div>
 `;export{s as default};
