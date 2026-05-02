@@ -1,191 +1,69 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <article>
-    <!-- 文章标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-      如何在线快速截取视频片段？这个免费工具太方便了
-    </h1>
-    <p class="text-lg text-gray-600 mb-8">
-      想从长视频里单独保存精彩瞬间？不需要安装复杂的软件，用这个在线工具就能轻松搞定。
-    </p>
+<div class="article-content max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">免费文字转语音工具：轻松把文字变成自然流畅的说话声</h1>
 
-    <!-- 核心功能介绍 -->
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
-      <p class="text-gray-800">
-        无论你是想保存电影里的感人镜头，还是剪辑一段游戏高光时刻，甚至是为教学视频分段，这个在线视频截取工具都能帮你快速完成，完全免费，操作简单。
-      </p>
+  <div class="mb-8 text-lg text-gray-600">
+    <p>有没有想过，把自己写的文章、小说片段，或者任何一段文字，直接变成一段可以“听”的声音？现在，通过一个简单好用的在线工具就能实现。无论你是想把长篇文章变成有声读物放松眼睛，还是想听听自己写的内容朗读出来是什么感觉，这个工具都能帮到你。</p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
+    <p class="text-gray-700">它就像一个智能的“朗读者”。你只需把文字贴进去，它就能用多种声音（包括不同口音的中文和英文）清晰、自然地读出来。你还可以像调节收音机一样，控制朗读的快慢、音调高低和声音大小，甚至可以把生成的声音保存成音频文件，用在你的视频里或者随时播放。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么大家喜欢用文字转语音？</h2>
+  <p class="mb-4">你可能没意识到，把文字变成语音，在我们的生活和工作中其实有很多实用的场景：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+    <li><span class="font-medium">解放双眼，用耳朵“阅读”</span>：长时间看屏幕眼睛累了，可以把你正在读的文章、资料转换成语音，闭目养神的同时也能获取信息。</li>
+    <li><span class="font-medium">内容创作者的好帮手</span>：自媒体作者、视频制作人可以用它快速生成视频的配音旁白，比自己录音更省时省力。</li>
+    <li><span class="font-medium">检查文稿的好方法</span>：写完一篇文章后，听一遍朗读出来的效果，很容易就能发现那些读起来拗口、不通顺的句子。</li>
+    <li><span class="font-medium">语言学习辅助</span>：学习外语时，输入一段外语文字，听听地道的发音和语调，对提升语感很有帮助。</li>
+    <li><span class="font-medium">为有需要的人提供便利</span>：对于视力不佳或阅读障碍的朋友，这是一个将文字信息转化为可听内容的友好方式。</li>
+  </ul>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">这个免费工具的几个贴心功能</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">1. 操作简单，一看就会</h3>
+      <p>整个页面非常干净。左边一个大框用来输入或粘贴你的文字，右边是调节声音的按钮和滑块。没有复杂的步骤，就像使用一个普通的记事本和播放器一样简单。</p>
     </div>
-
-    <!-- 工具能做什么 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        这个视频截取工具能帮你做什么？
-      </h2>
-      <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>提取精彩片段</strong>：从几个小时的家庭录像、会议记录或直播回放中，精准提取出你最需要的几分钟。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>制作短视频素材</strong>：为社交媒体剪辑适合传播的短视频，比如有趣的瞬间、教程的关键步骤。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>分割长视频</strong>：把一部长电影、一堂长课程或一次长演讲，按照内容分割成多个小片段，方便观看和学习。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>批量截取多个片段</strong>：一次操作，就能从同一个视频里截取出多个不同时间段的片段，效率翻倍。</span>
-        </li>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">2. 声音可以“定制”</h3>
+      <p>工具提供了多种系统自带的声音库供你选择。你可以试试不同的朗读者，找到最符合你内容情绪的那个声音。更重要的是，你可以通过三个简单的滑块：</p>
+      <ul class="list-disc pl-6 mt-2 space-y-1">
+        <li><span class="font-medium">语速</span>：从慢悠悠的讲述到快速的播报，随心调节。</li>
+        <li><span class="font-medium">音高</span>：让声音变得更低沉稳重，或者更高亢明亮。</li>
+        <li><span class="font-medium">音量</span>：轻轻滑动，调整到最合适的聆听音量。</li>
       </ul>
-    </section>
-
-    <!-- 工具的主要特点 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        为什么大家都喜欢用这个工具？
-      </h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">💻 无需安装，打开网页就用</h3>
-          <p class="text-gray-700">它是一个网页工具，直接在浏览器里使用。你不用下载和安装任何软件，不占用电脑空间，打开就能用。</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">🔒 隐私安全有保障</h3>
-          <p class="text-gray-700">你的视频文件只在你的浏览器中进行处理，不会被上传到陌生的服务器，不用担心隐私泄露的问题。</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">⏱️ 时间设置超级精准</h3>
-          <p class="text-gray-700">可以精确到秒来设置开始和结束时间。播放视频时，还能一键将当前播放时间设为截取点，非常方便。</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">📱 手机电脑都能用</h3>
-          <p class="text-gray-700">工具会自动适应你的屏幕，无论是在电脑的大屏幕上，还是用手机操作，界面都很清晰，步骤都一样简单。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 适用人群 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        谁特别需要这个工具？
-      </h2>
-      <div class="space-y-5">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
-          <div class="mb-3 sm:mb-0 sm:mr-5">
-            <div class="w-12 h-12 bg-green-100 text-green-800 rounded-full flex items-center justify-center font-bold">学</div>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg text-gray-900 mb-1">学生与自学者</h3>
-            <p class="text-gray-700">从网络课程中截取重点知识片段，制作自己的复习笔记，让学习更高效。</p>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
-          <div class="mb-3 sm:mb-0 sm:mr-5">
-            <div class="w-12 h-12 bg-purple-100 text-purple-800 rounded-full flex items-center justify-center font-bold">社</div>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg text-gray-900 mb-1">社交媒体爱好者</h3>
-            <p class="text-gray-700">轻松从喜爱的影视剧、综艺或游戏直播中，截取有趣片段分享到朋友圈、抖音或微博。</p>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row items-start sm:items-center p-5 bg-gray-50 rounded-lg">
-          <div class="mb-3 sm:mb-0 sm:mr-5">
-            <div class="w-12 h-12 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-bold">工</div>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg text-gray-900 mb-1">普通上班族</h3>
-            <p class="text-gray-700">整理工作会议录像中的决策部分，或者从培训视频中提取操作指南，方便随时查阅。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 使用步骤（非技术化描述） -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        简单四步，完成视频截取
-      </h2>
-      <div class="relative">
-        <!-- 步骤线 -->
-        <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 md:block hidden"></div>
-
-        <div class="space-y-8 relative">
-          <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">1</div>
-            </div>
-            <div class="md:ml-8 flex-1">
-              <h3 class="font-bold text-xl text-gray-900 mb-2">上传你的视频</h3>
-              <p class="text-gray-700">就像发送邮件添加附件一样简单。把电脑或手机里的视频文件拖到网页指定区域，或者点击按钮选择文件。它支持常见的视频格式，比如MP4、AVI等。</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">2</div>
-            </div>
-            <div class="md:ml-8 flex-1">
-              <h3 class="font-bold text-xl text-gray-900 mb-2">标记想要截取的部分</h3>
-              <p class="text-gray-700">在视频播放条上，或直接输入时间，设置“从这里开始”和“到这里结束”。你可以添加多个这样的时间段，把视频里所有精彩部分一次都标记出来。</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">3</div>
-            </div>
-            <div class="md:ml-8 flex-1">
-              <h3 class="font-bold text-xl text-gray-900 mb-2">选择保存的格式</h3>
-              <p class="text-gray-700">选择你希望截取出来的视频片段用什么格式保存，通常选择通用的MP4格式就好。你还可以选择视频质量，平衡文件大小和清晰度。</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold z-10 relative">4</div>
-            </div>
-            <div class="md:ml-8 flex-1">
-              <h3 class="font-bold text-xl text-gray-900 mb-2">一键截取并保存</h3>
-              <p class="text-gray-700">点击“开始截取”按钮，稍等片刻，处理完成后，你标记的所有视频片段就会被打包好，供你下载到本地。整个过程一目了然。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 常见问题（SEO问答） -->
-    <section class="mb-10 bg-gray-50 p-6 md:p-8 rounded-xl">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">
-        关于在线视频截取，你可能想知道
-      </h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="font-bold text-lg text-gray-900 mb-2">问：这个工具是免费的吗？</h3>
-          <p class="text-gray-700 pl-5">是的，这是一个完全免费的在线工具。你不需要注册账号，也没有使用次数限制，随时打开网页就能使用。</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg text-gray-900 mb-2">问：对视频文件大小有限制吗？</h3>
-          <p class="text-gray-700 pl-5">为了确保处理速度和稳定性，建议上传不超过500MB的视频文件。这对于大多数手机拍摄的视频或短片来说完全足够。</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg text-gray-900 mb-2">问：截取后的视频画质会变差吗？</h3>
-          <p class="text-gray-700 pl-5">你可以自己选择输出质量。选择“高质量”模式，画质基本和原视频一致。如果为了节省存储空间，也可以选择压缩后的“中等”或“低质量”。</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg text-gray-900 mb-2">问：可以在手机上使用吗？</h3>
-          <p class="text-gray-700 pl-5">当然可以。这个工具的网页版针对手机屏幕做了专门优化，操作按钮和文字大小都适合在手机上触摸操作，体验很好。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 结尾总结 -->
-    <div class="p-6 border border-blue-200 bg-white rounded-xl text-center">
-      <p class="text-gray-800 text-lg">
-        下次当你需要从长视频里<span class="font-semibold text-blue-700">保存精彩一刻</span>、<span class="font-semibold text-blue-700">制作短视频素材</span>或<span class="font-semibold text-blue-700">分割学习内容</span>时，别再为复杂软件发愁了。试试这个操作简单、免费安全的在线视频截取工具，你会发现，处理视频片段原来可以这么轻松。
-      </p>
     </div>
-  </article>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">3. 像控制音乐一样控制朗读</h3>
+      <p>和听歌一样，你可以随时“播放”、“暂停”、“停止”朗读过程。如果某一段没听清，点一下“重新开始”就能从头再听一遍，非常方便。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">4. 一键保存声音文件</h3>
+      <p>当你对生成的语音满意后，可以直接点击“下载语音文件”按钮，它会将刚才朗读的内容保存为一个标准的WAV格式音频文件。这样你就可以把它插入到PPT、视频剪辑软件中，或者分享给其他人了。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">5. 在手机和电脑上都能用</h3>
+      <p>这个工具的页面会自动适应你的设备屏幕。无论是在家里用电脑，还是在外面用手机，都能获得同样舒适的操作体验。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">如何使用这个免费的在线文字转语音工具？</h2>
+  <ol class="list-decimal pl-6 mb-10 space-y-3 text-gray-700">
+    <li><span class="font-medium">找到输入框</span>：打开页面，你会看到一个显眼的文本输入区域。</li>
+    <li><span class="font-medium">输入或粘贴文字</span>：把你的任何文字内容复制进去，比如一篇公众号文章、一段工作总结、或者给孩子编的小故事。</li>
+    <li><span class="font-medium">挑选一个喜欢的声音</span>：在下拉菜单里，尝试选择不同的“语音库”，听听哪个声音最顺耳。</li>
+    <li><span class="font-medium">微调声音效果</span>：试试拖动“语速”、“音高”和“音量”的滑块，调到你觉得最舒服的状态。</li>
+    <li><span class="font-medium">点击播放</span>：准备好后，点击绿色的“播放”按钮，就可以聆听你的文字被朗读出来了。</li>
+    <li><span class="font-medium">保存成果（如果需要）</span>：听完后如果觉得不错，点击“下载语音文件”按钮，就能把这段声音保存到自己的设备里。</li>
+  </ol>
+
+  <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-12">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结</h2>
+    <p class="mb-4">这个免费的在线文字转语音工具，就像一个随时待命、声音多变的私人播音员。它把复杂的语音合成技术，变成了人人可用的简单操作。无论你是想减轻阅读负担、辅助内容创作，还是仅仅出于好奇，它都值得一试。</p>
+    <p class="font-medium text-gray-800">下次当你面对大段文字感到疲惫，或者需要一段即时语音时，不妨试试让工具为你“朗读”，你会发现用耳朵“阅读”世界，也是一种很棒的体验。</p>
+  </div>
 </div>
 `;export{s as default};
