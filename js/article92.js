@@ -1,70 +1,170 @@
-const s=`
-<div class="text-gray-800 font-sans leading-relaxed">
-  <article class="max-w-4xl mx-auto p-4 md:p-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">节日头像制作工具使用指南</h1>
+const t=`<div class="article-container">
+  <h1>条形码生成器 | 在线条码制作工具完整指南</h1>
+  
+  <div class="article-meta">
+    <span class="category">工具使用</span>
+    <span class="date">2024-01-15</span>
+  </div>
 
-    <div class="my-6 p-4 bg-red-50 rounded-lg border border-red-100">
-      <p class="text-red-800">
-        节日到了，想给微信、QQ或社交平台的头像换个节日气氛？这个工具帮你一键搞定——上传头像，选个节日边框，几秒钟就能得到一张带节日装饰的新头像。
-      </p>
-    </div>
+  <h2>引言</h2>
+  <p>在现代商业和日常生活中，<strong>条形码生成器</strong>已经成为不可或缺的工具。无论是超市购物、图书馆借书，还是仓库管理，都离不开条码技术的支持。本文将详细介绍条形码的类型、应用场景，以及如何使用在线<strong>条码制作</strong>工具，帮助你快速掌握这一实用技能。</p>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">支持哪些节日？</h2>
-    <p class="mb-4">
-      工具内置了多个主流节日的边框模板，每个节日都有多款不同风格的设计：
-    </p>
-    <ul class="mb-6 pl-5 space-y-2">
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>国庆节：</strong>红金配色为主，包含"中国加油""我❤️祖国""欢度国庆"等爱国主题文字边框</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>圣诞节：</strong>红绿白经典圣诞配色，包含圣诞树、雪花、礼物盒等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>元旦/新年：</strong>喜庆红金配色，包含倒计时、烟花、新年祝福文字</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>春节：</strong>中国红+金色，包含灯笼、春联、福字、"新年快乐"等传统元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>情人节：</strong>粉红爱心主题，包含爱心、玫瑰、"情人节快乐"等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>中秋：</strong>暖黄色调，包含月亮、玉兔、桂花、团圆祝福</span></li>
-    </ul>
+  <h2>常见条形码类型</h2>
+  <p>条形码主要分为一维码和二维码两大类。一维码是我们最常见的传统条形码，由平行线条组成，只能存储有限信息；二维码则是升级版本，可以存储更多数据类型。接下来让我们了解几种最常用的一维条码格式：</p>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">怎么用？三步搞定</h2>
-    <ol class="list-decimal pl-5 space-y-4 mb-6">
-      <li class="pl-2">
-        <strong>第一步：上传头像</strong>
-        <p class="text-gray-600 mt-1">支持三种方式：<br/>• 直接把图片<strong>拖拽</strong>到上传区域<br/>• 从剪贴板<strong>粘贴</strong>截图（Ctrl+V / Command+V）<br/>• 点击"<strong>选择图片</strong>"按钮从电脑选取<br/>推荐使用正方形头像图片，效果最佳。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第二步：选择边框</strong>
-        <p class="text-gray-600 mt-1">顶部切换节日分类，下方展示该节日的所有边框模板。点击任意边框即可实时预览合成效果。可以左右滑动浏览更多模板。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第三步：下载保存</strong>
-        <p class="text-gray-600 mt-1">预览满意后，点击"下载头像"按钮，高清PNG图片会自动保存到本地。直接拿去当微信/QQ头像就行。</p>
-      </li>
-    </ol>
+  <h3>EAN-13商品条码</h3>
+  <p>EAN-13是国际通用的商品条码标准，主要用于零售商品的标识。它由13位数字组成，前几位代表国家或地区代码，后面是厂商代码、商品代码和校验位。在中国，EAN-13条码广泛应用于各类商品包装上，消费者在超市结账时扫描的就是这种条码。</p>
 
-    <div class="my-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-100">
-      <h3 class="text-xl font-bold mb-3 text-red-700">几个实用小技巧</h3>
-      <ul class="space-y-2 text-sm text-gray-700">
-        <li><strong>最佳头像尺寸：</strong>建议上传 300×300 像素以上的正方形图片，合成后效果最清晰。</li>
-        <li><strong>边框位置：</strong>边框通常叠加在头像的底部或角落区域，不会遮挡面部主体部分。</li>
-        <li><strong>隐私安全：</strong>所有图片处理都在你的浏览器里完成，图片不会上传到任何服务器。</li>
-        <li><strong>手机也能用：</strong>完全响应式设计，手机浏览器打开一样流畅操作。</li>
-      </ul>
-    </div>
+  <h3>UPC条码</h3>
+  <p>UPC（Universal Product Code）是北美地区最常用的商品条码标准，采用12位数字格式。与EAN-13类似，UPC条码主要用于标识零售商品，是美国和加拿大市场的主流条码格式。如果你需要在美国电商平台销售商品，UPC条码是必不可少的选择。</p>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">适用场景</h2>
-    <div class="flex flex-wrap gap-3 my-6">
-      <span class="px-4 py-2 bg-red-50 rounded-full text-sm text-red-700">微信头像</span>
-      <span class="px-4 py-2 bg-blue-50 rounded-full text-sm text-blue-700">QQ头像</span>
-      <span class="px-4 py-2 bg-pink-50 rounded-full text-sm text-pink-700">微博头像</span>
-      <span class="px-4 py-2 bg-purple-50 rounded-full text-sm text-purple-700">抖音头像</span>
-      <span class="px-4 py-2 bg-green-50 rounded-full text-sm text-green-700">小红书头像</span>
-      <span class="px-4 py-2 bg-orange-50 rounded-full text-sm text-orange-700">游戏头像</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">论坛/社区</span>
-    </div>
+  <h3>CODE128高密度码</h3>
+  <p>CODE128是一种支持全ASCII字符的高密度条码，可以编码数字、字母和特殊符号。由于其存储密度高、长度灵活，CODE128广泛应用于物流运输、仓储管理、医疗保健等行业。许多物流公司和电商平台都采用CODE128作为内部管理条码。</p>
 
-    <div class="mt-12 pt-8 border-t text-center">
-      <p class="text-lg font-semibold mb-2">让头像也过节吧 🎉</p>
-      <p class="text-gray-600">
-        每到节日，换一个应景的头像，既表达了心情，又给朋友们带来一点小惊喜。简单几步，让你的头像焕然一新。
-      </p>
-    </div>
-  </article>
+  <h3>CODE39条码</h3>
+  <p>CODE39是最早出现的条码格式之一，支持数字、大写字母和少量特殊字符。由于其结构简单、兼容性好，CODE39在工业自动化、军队、政府机构等领域仍有广泛应用。这种条码特别适合需要长期保存和快速识别的场景。</p>
+
+  <h2>一维码与二维码的区别</h2>
+  <p>很多人会混淆一维码和二维码的概念，虽然它们都属于自动识别技术，但在功能和用途上有明显区别：</p>
+  <ul>
+    <li><strong>数据容量</strong>：一维条码只能存储20-30位数字或字符，而二维码可以存储数千个字符</li>
+    <li><strong>信息类型</strong>：一维码只能存储数字或简单字母，二维码可以存储文字、网址、图片等多种信息</li>
+    <li><strong>扫描方式</strong>：一维码需要水平扫描，二维码支持360度任意方向扫描</li>
+    <li><strong>尺寸要求</strong>：一维码通常较长，二维码相对紧凑</li>
+    <li><strong>应用场景</strong>：一维码适合大批量标准化管理，二维码适合需要承载更多信息的场景</li>
+  </ul>
+
+  <h2>条形码的应用场景</h2>
+  <p>条形码技术的应用已经渗透到各行各业，下面我们来看看几个最常见的应用领域：</p>
+
+  <h3>零售商品管理</h3>
+  <p>在商场、超市和便利店，EAN-13条码是商品的标准身份证。收银员通过扫描条码快速识别商品名称、价格和库存信息，大大提高了结账效率。同时，商家也可以通过条码系统实时监控库存，及时补货或调整营销策略。</p>
+
+  <h3>图书管理系统</h3>
+  <p>图书馆采用ISBN条码管理图书，每本书都有唯一的条码标识。借书时，工作人员扫描读者证和图书条码即可完成借阅手续；还书时同样扫描条码确认归还。图书管理系统大大简化了借还流程，提高了图书馆的管理效率。</p>
+
+  <h3>固定资产管理</h3>
+  <p>企业办公设备、工厂机器、医用设备等固定资产都需要进行有效管理。通过为每件资产粘贴唯一的条码标签，可以实现资产的快速盘点、追踪和定位。这种方式比传统的手工登记更加高效准确。</p>
+
+  <h3>物流与供应链</h3>
+  <p>快递公司和物流企业使用CODE128或QR码追踪包裹运输状态。从收件到派送，每个环节都会扫描条码记录信息，客户可以通过单号查询物流进度。条形码技术的应用让物流行业实现了信息化和自动化。</p>
+
+  <h2>如何使用条形码生成器</h2>
+  <p>使用在线条形码生成器非常简单，只需几个步骤即可制作出高质量的条码：</p>
+  <ol>
+    <li><strong>选择条码类型</strong>：根据用途选择合适的条码格式，商品用EAN/UPC，物流用CODE128，工业用CODE39</li>
+    <li><strong>输入数据内容</strong>：在生成器中输入需要编码的数字或字符，注意遵守各类条码的编码规则</li>
+    <li><strong>自定义样式</strong>：可以调整条码的高度、宽度、颜色、显示文字等参数</li>
+    <li><strong>导出使用</strong>：生成后可以下载为PNG、SVG等格式的图片，直接打印或嵌入系统使用</li>
+  </ol>
+
+  <h2>条形码生成注意事项</h2>
+  <p>在制作和使用条形码时，需要注意以下几点：</p>
+  <ul>
+    <li><strong>选择正确的条码类型</strong>：不同行业有不同的标准，不要混用</li>
+    <li><strong>确保数据准确性</strong>：输入的数字必须正确，校验位会自动计算</li>
+    <li><strong>注意条码尺寸</strong>：打印时要保证足够的尺寸以确保扫描效果</li>
+    <li><strong>保持条码清晰</strong>：避免条码模糊、残缺或污损</li>
+    <li><strong>预留空白区域</strong>：条码周围需要保留足够的静区以便扫描设备识别</li>
+  </ul>
+
+  <h2>FAQ常见问题</h2>
+
+  <h3>1. 条形码是如何被扫描识别的？</h3>
+  <p>条码扫描器发出光线照射条码，黑色条纹吸收光线，白色条纹反射光线。扫描器通过检测反射光的变化，将其转换为数字信号，再解码为原始数据。这就是为什么条码需要黑白色对比分明才能正常扫描。</p>
+
+  <h3>2. 条形码可以自己制作吗？</h3>
+  <p>当然可以！使用在线条形码生成器，任何人都可以轻松制作条码。对于商品条码（EAN/UPC），如果要在正规渠道销售，需要从编码中心申请正式的商品代码；内部管理使用的条码则可以自行编制。</p>
+
+  <h3>3. 扫描不出条码怎么办？</h3>
+  <p>首先检查条码是否清晰完整，确保有足够的对比度和空白区。其次检查扫描器是否正常工作，距离和角度是否合适。如果使用手机扫描，确保光线充足且对准条码中心。</p>
+
+  <h3>4. 条形码和二维码哪个更好？</h3>
+  <p>没有绝对的好坏，关键看具体需求。一维码成本低、技术成熟，适合大批量标准化管理；二维码存储量大、功能丰富，适合需要承载更多信息的场景。很多企业会根据实际需求选择使用其中一种或两种配合使用。</p>
+
+  <h3>5. 打印条码需要注意什么？</h3>
+  <p>打印时要使用高分辨率输出，确保条码线条清晰锐利。建议使用专业标签打印机或铜版纸，普通打印纸效果可能不佳。同时要注意条码尺寸不能过小，一般建议宽度不小于30mm，高度不小于10mm。</p>
+
+  <h2>结语</h2>
+  <p>条形码技术作为自动识别的基础工具，在现代社会中发挥着越来越重要的作用。通过本文的介绍，相信你已经对各种条码类型和应用场景有了全面了解。无论你是商家需要管理商品，还是个人需要制作条码，掌握<strong>条形码生成器</strong>的使用方法都将带来极大的便利。现在就尝试使用在线<strong>条码制作</strong>工具，为你的工作和生活提效吧！</p>
 </div>
-`;export{s as default};
+
+<style>
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.article-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.article-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3498db;
+}
+
+.article-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.article-container p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.article-container ul,
+.article-container ol {
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.article-container li {
+  margin-bottom: 8px;
+}
+
+.article-meta {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.category {
+  background: #3498db;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.article-container strong {
+  color: #e74c3c;
+}
+
+.article-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.article-container a:hover {
+  text-decoration: underline;
+}
+</style>`;export{t as default};

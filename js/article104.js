@@ -1,56 +1,101 @@
-const l=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">想把动图GIF拆成一堆静态图片？这个工具能一键搞定</h2>
+const o={title:"故障风格图片生成器使用指南",content:`
+## 什么是故障风格图片（Glitch Image）？
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
-    <p class="text-base">你是不是也遇到过这种情况：看到一个有趣的GIF动图，特别想保存里面的某一瞬间，却怎么也截不到最清晰的那一帧？</p>
-  </div>
+故障风格图片是一种利用数字图像处理技术，通过**混合模式叠加 + 随机偏移 + RGB色差**等方式，模拟数字信号故障、数据损坏等视觉效果的图片艺术形式。广泛应用于赛博朋克设计、电子音乐封面、社交媒体头像等场景。
 
-  <p class="text-lg mb-6 leading-relaxed">GIF动图很生动，但有时我们需要的恰恰是它“不动”的样子。比如，从一段动态表情包里保存最搞笑的那张脸，或者从产品展示动图中提取一张最清晰的静态图来使用。自己一帧帧截图？既麻烦，画质还可能受损。</p>
+## 功能特点
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">GIF拆帧：像“分解动画”一样简单</h2>
-  <p class="mb-6 leading-relaxed">你可以把一个GIF动图想象成一本快速的翻页动画书。这本书由很多页（也就是“帧”）快速翻过，形成了动画效果。所谓“提取帧”，就是把这本书拆开，把每一页都变成一张独立的、清晰的图片摆在你面前。</p>
-  <p class="mb-6 leading-relaxed">这样一来，动图里的每一个瞬间，你都可以轻松获得，再也不用为截不到完美瞬间而烦恼了。</p>
+### 18种混合模式
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么你需要这样一个工具？</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3">
-    <li class="leading-relaxed"><strong>保存心动的瞬间</strong>：从喜欢的电影动图、爱豆表情包里，精准保存你最钟爱的那一帧画面，当作手机壁纸或收藏。</li>
-    <li class="leading-relaxed"><strong>获取设计素材</strong>：做海报、剪视频时，可以直接从GIF里提取出高质量的静态图片作为素材，省去全网搜索的麻烦。</li>
-    <li class="leading-relaxed"><strong>制作表情包合集</strong>：把一个长故事的GIF拆解成多个单张表情，方便你在不同聊天场景下使用。</li>
-    <li class="leading-relaxed"><strong>分析与学习</strong>：如果你对动画制作感兴趣，可以通过拆解GIF的每一帧，来了解一个动画效果的实现过程。</li>
-    <li class="leading-relaxed"><strong>纯粹因为好奇</strong>：就是想看看一个有趣的GIF到底是由多少张图片组成的，满足你的好奇心。</li>
-  </ul>
+本工具基于 HTML5 Canvas 的 \`globalCompositeOperation\` API，提供以下混合模式：
 
-  <div class="bg-gray-100 p-6 rounded-xl my-8">
-    <h3 class="text-xl font-semibold mb-3">常见问题解答</h3>
-    <div class="space-y-4">
-      <div>
-        <p class="font-medium text-gray-900">问：处理GIF会损坏原图吗？</p>
-        <p class="text-gray-700 mt-1">答：完全不会。这个过程就像复印一本书的每一页，原书（你的GIF文件）不会被做任何改动，是安全的“只读”操作。</p>
-      </div>
-      <div>
-        <p class="font-medium text-gray-900">问：提取出来的图片清晰度怎么样？</p>
-        <p class="text-gray-700 mt-1">答：提取出的图片就是GIF里原本的画面，是它能提供的最高清晰度，比你在屏幕上直接截图要清晰和准确得多。</p>
-      </div>
-      <div>
-        <p class="font-medium text-gray-900">问：操作起来复杂吗？需要安装软件吗？</p>
-        <p class="text-gray-700 mt-1">答：非常简单，全程在网页里完成。你只需要“选择文件”和“点击提取”两个动作，不需要下载或安装任何软件到电脑上。</p>
-      </div>
-    </div>
-  </div>
+| 模式 | 说明 | 视觉效果 |
+|------|------|----------|
+| 差值 (difference) | 两图差值运算 | 强烈的色彩反转对比，最经典的 Glitch 效果 |
+| 源顶 (source-atop) | 源图覆盖目标重叠区 | 图像边缘错位撕裂感 |
+| 目标排除 (destination-out) | 排除源图覆盖区域 | 镂空/残影效果 |
+| 变亮 (lighter) | 取两图较亮部分 | 发光/过曝效果 |
+| 正片叠底 (multiply) | 颜色相乘变暗 | 暗调加重，对比增强 |
+| 滤色 (screen) | 颜色相滤变亮 | 亮调提亮，柔光效果 |
+| 叠加 (overlay) | 正片叠底与滤色结合 | 对比度大幅提升 |
+| 变暗 (darken) | 取两图较暗部分 | 压暗效果 |
+| 颜色减淡 (color-dodge) | 减淡高光区域 | 高光溢出效果 |
+| 颜色加深 (color-burn) | 加深阴影区域 | 阴影浓重效果 |
+| 强光 (hard-light) | 聚光灯式混合 | 硬朗的明暗对比 |
+| 柔光 (soft-light) | 柔和光照混合 | 自然的明暗过渡 |
+| 排除 (exclusion) | 类似差值但更柔和 | 温和的色彩偏移 |
+| 色相 (hue) | 保留底层亮度饱和度 | 色彩替换效果 |
+| 颜色 (color) | 保留底层明度 | 色彩染色效果 |
+| 明度 (luminosity) | 保留底层色相饱和度 | 亮度重映射 |
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">两个生活中的真实用处</h2>
-  <div class="grid md:grid-cols-2 gap-6 my-8">
-    <div class="border border-gray-200 p-5 rounded-lg">
-      <h3 class="text-lg font-semibold mb-2">场景一：制作专属表情包九宫格</h3>
-      <p class="text-gray-700">找到一个超级好笑的连贯动作GIF，你可以把它拆成9张图，然后拼成一张九宫格图片发朋友圈，故事感和趣味性直接拉满。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg">
-      <h3 class="text-lg font-semibold mb-2">场景二：从动态教程里提取关键步骤图</h3>
-      <p class="text-gray-700">网上很多手工、烹饪教程是GIF格式的。你可以把它拆开，把“关键一步”的图片单独保存、打印出来，对照着操作，比反复播放视频方便多了。</p>
-    </div>
-  </div>
+### 可调参数
 
-  <p class="text-lg mt-12 p-5 bg-gray-50 rounded-xl leading-relaxed">下次再遇到想从动图里“定格”某个瞬间的情况，不必再手忙脚乱地截图了。一个简单的工具，就能帮你把动图里的每一幕都完整地保留下来。无论是为了工作、创作，还是简单的娱乐与收藏，这都能让你更自如地处理那些生动的图片。</p>
-</div>
-`;export{l as default};
+- **数量 (1-50)**：控制故障效果的叠加次数。数值越大，随机偏移层数越多，效果越强烈
+- **透明度 (10%-100%)：**控制每次叠加的不透明度。较低值产生更细腻的重影效果
+
+### 自动增强算法
+
+除基础混合模式外，本工具还内置：
+- **随机水平切片错位**：模拟信号中断产生的横向撕裂
+- **RGB 色差分离**：红蓝通道微偏移，增强经典 Glitch 质感
+- **智能尺寸限制**：超过 2048px 的图片自动缩放，保证流畅体验
+
+## 使用方法
+
+1. **上传图片** — 点击上传区域或拖拽图片到页面
+2. **选择模式** — 从 18 种混合模式中选择一种（默认"差值"）
+3. **调整参数** — 拖动「数量」和「透明度」滑块，实时预览效果
+4. **保存图片** — 点击「保存图片」下载 PNG 格式结果
+
+## 使用技巧
+
+### 推荐模式组合
+
+- **经典 Glitch**：差值模式，数量 15-25，透明度 75-90%
+- **赛博朋克风**：颜色减淡或强光，数量 20-30，透明度 60-80%
+- **柔和故障**：排除或柔光，数量 8-15，透明度 85-95%
+- **重度破坏**：正片叠底 + 高数量(35+)，透明度 50-70%
+
+### 最佳实践
+
+- 使用**对比度高、色彩丰富**的原图效果更佳
+- 人像照片配合「差值」或「排除」模式最有冲击力
+- 文字/Logo 配合「颜色」或「色相」模式可做创意变形
+- 数量建议从低开始逐步上调，避免过度失真
+
+## 技术原理
+
+### Canvas 混合模式
+
+Canvas 2D 的 \`globalCompositeOperation\` 属性决定了新绘制内容如何与已有画布内容混合。本工具的核心思路是：
+
+1. 先将原图绘制为底层
+2. 循环 N 次（数量参数），每次以随机偏移量重新绘制原图
+3. 每次绘制使用选定的混合模式和不透明度
+4. 最后施加轻微的 RGB 色差增强
+
+### 随机切片
+
+在叠加过程中，有 25% 的概率触发水平切片操作——随机选择一行像素带，将其水平位移，模拟 CRT 显示器的行扫描故障。
+
+## 浏览器兼容性
+
+基于 HTML5 Canvas API，支持所有现代浏览器：
+- Chrome / Edge 60+
+- Firefox 55+
+- Safari 12+
+
+## 常见问题
+
+**Q: 支持哪些格式？**
+A: 支持 JPG、PNG、WebP 等常见图片格式。
+
+**Q: 输出是什么格式？**
+A: PNG 格式，无损质量。
+
+**Q: 图片太大怎么办？**
+A: 超过 2048px 会自动缩放，保证处理速度。
+
+**Q: 哪个模式最好看？**
+A: 「差值」是最经典的 Glitch 效果，推荐先试这个。
+`};export{o as article};

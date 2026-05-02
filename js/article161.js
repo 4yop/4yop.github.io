@@ -1,110 +1,42 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">你的身份证号码里，藏着哪些不为人知的“小秘密”？</h1>
-
-  <div class="mb-8">
-    <p class="text-lg text-gray-700 mb-4">
-      你知道吗？你的身份证号码里，其实藏着不少关于你的小秘密。它不仅仅是一串用来证明“你是谁”的数字，更像是一个精心设计的个人信息“密码本”。
-    </p>
-    <p class="text-gray-600">
-      今天，我们不谈复杂的科技，就聊聊这18位数字，是如何在不泄露你隐私的前提下，告诉我们你的故事。
-    </p>
-  </div>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">安全第一：你的信息，只留在你的设备里</h2>
-    <p class="text-gray-700">
-      在开始探索之前，最重要的事情是安全。我们使用的解析工具，其核心原则是<span class="font-medium text-blue-700">“本地解析，数据不上传”</span>。这意味着，当你输入号码后，所有的计算和解读都在你自己的手机或电脑里瞬间完成，结果一出来，过程就结束了。没有服务器记录，没有网络传输，就像用一个离线的计算器一样私密。
-    </p>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">解码18位数字：你的“人生简史”</h2>
-  <p class="text-gray-600 mb-6">
-    让我们把身份证号码拆开看看，每一段数字都有它特定的使命：
+const s=`<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 font-sans">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl font-bold mb-4 text-center">手机话费流量怎么查？三大运营商官方查询方法一览</h1>
+  
+  <!-- 引言 -->
+  <p class="text-lg mb-6 leading-relaxed">
+    每个月最关心的事，除了工资到账，恐怕就是手机话费和流量还剩多少了。想查话费余额、剩余流量，却总是找不到入口？别着急，其实每家运营商都提供了简单快捷的查询方式，发条短信或者打个电话就能搞定。今天我们就来整理一下中国移动、中国联通、中国电信最常用的官方查询方法，让你随时掌握消费动态。
   </p>
 
-  <div class="space-y-6 mb-10">
-    <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 你的“根源”：前6位地址码</h3>
-      <p class="text-gray-700">
-        这就像是你的“数字籍贯”。它对应着你最初申领身份证时所在的省、市、区（县）。通过它，工具可以快速定位并显示出你对应的行政区划名称。有时候，这可能会让你想起自己的故乡。
-      </p>
-    </div>
+  <!-- 中国联通 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-blue-500 pl-3">中国联通：短信指令+客服热线</h2>
+  <p class="mb-2">联通用户最常用的短信查询指令是发送 <span class="bg-gray-100 px-2 py-1 rounded">CXHF</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10010</span> 查询话费余额；发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10010</span> 查询剩余流量。如果不方便发短信，也可以直接拨打客服热线 <span class="bg-gray-100 px-2 py-1 rounded">10010</span>，按语音提示选择话费流量查询，或者拨打快捷查询号码 <span class="bg-gray-100 px-2 py-1 rounded">10010011</span> 一次性获取话费和流量信息。</p>
+  <p class="mb-4">当然，你还可以下载“中国联通”手机营业厅APP，登录后首页就能看到实时话费和流量情况，还能办理各种套餐变更。</p>
 
-    <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 最重要的时刻：中间8位生日码</h3>
-      <p class="text-gray-700">
-        这是号码里最直白的一部分，直接记录了你的公历出生年月日。但有趣的是，工具还能从这里延伸出更多信息：
-      </p>
-      <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
-        <li><span class="font-medium">当前年龄</span>：自动帮你算好，不用再掰着手指头数。</li>
-        <li><span class="font-medium">农历生日</span>：很多传统节日和习俗看农历，知道自己的农历生日，也许能让庆祝更有仪式感。</li>
-        <li><span class="font-medium">出生那天是星期几</span>：一个有趣的生活冷知识，或许是你人生一个平凡又特别的开始。</li>
-      </ul>
-    </div>
+  <!-- 中国移动 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-red-500 pl-3">中国移动：短信指令+10086</h2>
+  <p class="mb-2">移动用户查询话费可以发送短信 <span class="bg-gray-100 px-2 py-1 rounded">YE</span> 或 <span class="bg-gray-100 px-2 py-1 rounded">101</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>；查询流量发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>。拨打电话可以直接拨打 <span class="bg-gray-100 px-2 py-1 rounded">10086</span>，根据语音提示操作，或者接通后说“查话费”“查流量”智能语音也能帮忙。</p>
+  <p class="mb-4">中国移动的“移动营业厅”APP同样功能强大，绑定手机号后，首页就能看到剩余话费、流量以及各类账单明细。</p>
 
-    <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 独特的身份标识：接下来的3位顺序码</h3>
-      <p class="text-gray-700">
-        这3位数字信息量很大。其中，<span class="font-medium">第17位（即倒数第二位）的奇偶性，直接决定了性别</span>：奇数通常代表男性，偶数通常代表女性。这是号码里隐藏的一个关键“彩蛋”。
-      </p>
-    </div>
+  <!-- 中国电信 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-yellow-500 pl-3">中国电信：短信指令+10000</h2>
+  <p class="mb-2">电信用户发送短信 <span class="bg-gray-100 px-2 py-1 rounded">CXTCSY</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 可查询话费；发送 <span class="bg-gray-100 px-2 py-1 rounded">CXLL</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 可查询剩余流量。客服热线是 <span class="bg-gray-100 px-2 py-1 rounded">10000</span>，拨打后根据语音提示选择话费流量查询即可。部分省份还支持发送 <span class="bg-gray-100 px-2 py-1 rounded">101</span> 到 <span class="bg-gray-100 px-2 py-1 rounded">10001</span> 快速查话费，你可以先试一下哪个指令有效。</p>
+  <p class="mb-4">此外，“电信营业厅”APP也是查询好帮手，登录后首页就能直观看到话费余额和流量使用情况。</p>
 
-    <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 最后的守护者：末尾校验码</h3>
-      <p class="text-gray-700">
-        最后一位数字（有时是X）不是随便写的。它是通过一套严谨的数学公式计算出来的，专门用来<span class="font-medium">检验前面17位数字是否正确</span>。如果输入错误，校验码就对不上，工具会提示号码无效。它是这串数字“密码”的防盗锁。
-      </p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-12 mb-4 text-gray-900">除了基本信息，还有哪些趣味解读？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的星座</h3>
-      <p class="text-gray-700">
-        根据你的阳历生日，可以轻松对应到十二星座之一。是细致周到的处女座，还是热情开朗的射手座？这个“标签”常常是朋友间有趣的谈资。
-      </p>
-    </div>
-    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的生肖</h3>
-      <p class="text-gray-700">
-        结合农历年份，就能知道你的生肖属相。这是中国传统文化中一个非常重要的符号，承载着岁月轮回的独特纪念。
-      </p>
-    </div>
-  </div>
-
-  <div class="border-t border-gray-200 pt-8 mt-10">
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">常见疑问解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：输入我的身份证号，真的安全吗？</h3>
-        <p class="text-gray-700">
-          <strong>答：安全。</strong>这正是本地解析工具最大的优势。整个过程在你的设备上完成，就像你在自己的本子上做计算一样，算完结果就在眼前，本子上的原始数据不会被拍照上传。你的号码从未离开过你的设备。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：为什么我看到的籍贯和我知道的不一样？</h3>
-        <p class="text-gray-700">
-          <strong>答：这很正常。</strong>身份证上的地址码，记录的是你首次申领身份证时的户籍所在地。如果你后来迁移了户口，或者出生地与户籍地不同，这里显示的信息就可能和你现在认为的“老家”有出入。它是一份历史的数字记录。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：这个工具能用来做什么？</h3>
-        <p class="text-gray-700">
-          <strong>答：主要是满足个人好奇心和对信息的了解。</strong>它可以帮你快速查看身份证上的基本信息，验证号码格式是否正确，或者了解一下号码背后的传统文化元素（如农历、生肖）。它并非官方验证工具，不能用于任何正式的身份认证场景。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 bg-gray-50 rounded-lg text-center">
-    <p class="text-gray-700 mb-2">
-      一个小小的身份证号码，原来包含了从地域、时间到个人特征的多种信息。科技让解读这些信息变得简单，而本地处理的方式，则为我们守护了最重要的隐私安全。
-    </p>
-    <p class="text-gray-600">
-      如果你也对自己的这串“人生密码”感到好奇，不妨用注重隐私的本地工具，亲自探索一下。
+  <!-- 提醒卡片 -->
+  <div class="bg-orange-50 border-l-4 border-orange-400 p-5 my-8">
+    <h3 class="text-lg font-bold text-orange-800 mb-2">温馨提示：高峰期查询可能延迟</h3>
+    <p class="text-orange-700 leading-relaxed">
+      每月月初（1-3日）和月末（28-31日）是话费流量查询的高峰期，短信反馈和APP数据更新可能会稍有延迟。如果遇到回复慢或者数据不准的情况，可以稍等片刻再试，或者错开这些时段查询，体验会更顺畅。
     </p>
   </div>
-</div>
-`;export{t as default};
+
+  <!-- 补充小贴士 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 border-l-4 border-green-500 pl-3">小贴士：如何快速使用这些查询方式？</h2>
+  <p class="mb-2">如果你觉得每次都要记短信指令太麻烦，可以把常用指令存为手机联系人，比如把“10010”存为“联通查话费”，需要时直接打开短信发送。或者直接把客服热线设为快捷拨号，一键拨打。</p>
+  <p class="mb-4">现在很多手机系统也自带“运营商查询”功能，在设置里的“蜂窝网络”或“移动数据”中就能看到当前套餐用量，同样很方便。</p>
+
+  <!-- 总结 -->
+  <p class="text-base text-gray-600 mt-8 pt-4 border-t border-gray-200">
+    掌握这些官方查询方法，再也不用担心话费超支、流量不够用了。如果你觉得本文有用，不妨收藏起来，或者分享给身边需要的朋友。如果你有更快捷的查询技巧，也欢迎在评论区留言分享！
+  </p>
+</div>`;export{s as default};

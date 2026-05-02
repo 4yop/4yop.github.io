@@ -1,96 +1,135 @@
 const t=`
-<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h2>
 
-  <p class="text-lg text-gray-600 mb-8">
-    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
-    <p class="text-gray-800">
-      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+      你是否遇到过这样的烦恼？公司发来一个包含上百位客户联系方式的Excel表格，或者社团活动收集了一大堆成员信息。看着密密麻麻的姓名和电话，难道要一个一个手动输入到手机里？别担心，今天教你一个省时省力的好方法。
     </p>
-  </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
-  <p class="mb-6">
-    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
-  </p>
-  <ul class="space-y-4 mb-10 pl-5 list-disc">
-    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
-    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
-    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
-    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
-  </ul>
-  <p class="mb-10">
-    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
-  </p>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-8 rounded-r-lg">
+      <p class="text-gray-700">
+        <strong>核心方法：</strong>借助一个在线工具，将Excel文件（.xlsx或.xls格式）转换成手机能认识的“通讯录文件”（VCF格式），然后一键导入。
+      </p>
+    </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
-  <p class="mb-6">
-    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
-  </p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">一、为什么需要转换？直接复制不行吗？</h2>
+      <p class="text-gray-700 mb-4">
+        手机通讯录和Excel表格是两种完全不同的“语言”。手机无法直接理解Excel里一行行的数据。而<strong>VCF文件（也叫vCard）</strong>，就像是全球通讯录的“通用翻译官”，iPhone、安卓手机、邮箱（如QQ邮箱、Gmail）都能识别并导入它。
+      </p>
+      <div class="bg-gray-50 p-5 rounded-lg">
+        <h3 class="font-medium text-gray-800 mb-2">你可以用它来做什么：</h3>
+        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+          <li>批量导入工作客户、合作伙伴的联系方式。</li>
+          <li>快速备份或迁移手机通讯录到新手机。</li>
+          <li>整理社团、班级、活动参与者的名单。</li>
+          <li>将线上收集的表单数据（导出为Excel后）变成手机联系人。</li>
+        </ul>
       </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
-      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
-      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
-      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
-      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
-    </div>
-  </div>
+    </section>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">二、从Excel到手机通讯录，只需简单几步</h2>
+      <ol class="space-y-6">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">准备好你的Excel文件</h4>
+            <p class="text-gray-600">确保表格第一行是标题，比如“姓名”、“电话”、“公司”等。这是关键，工具要靠标题来识别哪一列是什么信息。数据从第二行开始填写。</p>
+            <p class="text-sm text-gray-500 mt-1">（如果不知道怎么整理，很多工具都提供“模板”下载，照着填就行。）</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">上传文件并“对号入座”</h4>
+            <p class="text-gray-600">在工具页面上传你的Excel文件。上传后，工具会列出你表格里的所有标题（如姓名、电话）。你需要简单地告诉它：我的“姓名”信息在表格的哪一列，“电话”在哪一列。</p>
+            <p class="text-sm text-gray-500 mt-1">（通常工具会智能猜测，你检查一下是否正确即可。）</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">预览并转换下载</h4>
+            <p class="text-gray-600">确认字段匹配无误后，可以先预览几行数据。点击“转换”按钮，几秒钟后，就会生成一个 <code class="bg-gray-100 px-1 rounded text-sm">.vcf</code> 文件并自动下载到你的电脑或手机上。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">4</div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">将VCF文件导入手机</h4>
+            <p class="text-gray-600 mb-2">这是最后一步，也非常简单：</p>
+            <div class="grid md:grid-cols-2 gap-4 mt-3">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="font-medium text-gray-800 mb-2">苹果iPhone用户：</h5>
+                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
+                  <li>找到下载好的 .vcf 文件（通常在“文件”App里）。</li>
+                  <li>点击它，系统会自动提示用“通讯录”应用打开。</li>
+                  <li>点击“添加所有联系人”即可。</li>
+                </ul>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="font-medium text-gray-800 mb-2">安卓手机用户：</h5>
+                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
+                  <li>在手机的文件管理器中找到 .vcf 文件。</li>
+                  <li>点击它，选择用“联系人”或“通讯录”应用导入。</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 mt-3">如果点击没反应，可以尝试将VCF文件通过微信或QQ发送到手机，在聊天记录里打开它，通常也能导入。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-  <div class="space-y-6 mb-12">
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
-      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
-      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
-      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
-      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
-    </div>
-  </div>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">三、几个实用小技巧和注意事项</h2>
+      <div class="space-y-4">
+        <div class="p-4 border border-yellow-200 bg-yellow-50 rounded-lg">
+          <h4 class="font-medium text-gray-800 mb-1">技巧一：先下载模板</h4>
+          <p class="text-gray-600 text-sm">如果你是第一次操作，强烈建议先在工具页面下载提供的Excel模板。模板已经设好了标准的列标题，你只需要在下面填充数据，能省去很多匹配字段的麻烦。</p>
+        </div>
+        <div class="p-4 border border-green-200 bg-green-50 rounded-lg">
+          <h4 class="font-medium text-gray-800 mb-1">技巧二：整理好Excel数据</h4>
+          <p class="text-gray-600 text-sm">
+            <strong>“姓名”和“电话”列是必须的</strong>，不能为空。确保电话号码格式基本正确（11位手机号）。像“公司”、“备注”等信息，有就填上，导入后会在联系人详情里显示，非常方便。
+          </p>
+        </div>
+        <div class="p-4 border border-blue-200 bg-blue-50 rounded-lg">
+          <h4 class="font-medium text-gray-800 mb-1">技巧三：检查导入结果</h4>
+          <p class="text-gray-600 text-sm">导入完成后，去手机通讯录里检查一下。看看姓名和电话是否正确对应，有没有乱码或重复。如果有少数错误，手动修改一下也比全部重输快得多。</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
-    <p class="text-gray-700 mb-6">
-      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
-    </p>
-    <p class="text-gray-700">
-      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
-    </p>
-  </div>
-</article>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">四、常见问题解答</h2>
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-medium text-gray-800 mb-2">问：这个转换过程安全吗？我的联系人信息会不会泄露？</h4>
+          <p class="text-gray-600">答：整个过程通常在你的浏览器本地完成，数据不会上传到服务器。为保险起见，使用前可以留意一下工具页面的说明，选择那些明确标注“本地转换”、“无需上传”的工具。</p>
+        </div>
+        <div>
+          <h4 class="font-medium text-gray-800 mb-2">问：转换后，我原来的手机联系人会被覆盖或清空吗？</h4>
+          <p class="text-gray-600">答：<strong>不会。</strong>导入VCF文件是“添加”新联系人，不会删除或覆盖你手机里已有的任何联系人。如果遇到同名同号，手机会提示你选择合并或跳过。</p>
+        </div>
+        <div>
+          <h4 class="font-medium text-gray-800 mb-2">问：支持导入头像吗？</h4>
+          <p class="text-gray-600">答：通常这种批量转换工具主要处理文本信息（姓名、电话等），不支持直接从Excel导入头像。头像需要在手机通讯录里为每个联系人单独设置。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 p-6 rounded-xl border">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">总结</h2>
+      <p class="text-gray-700">
+        将Excel联系人批量导入手机，其实就是一个“翻译”和“搬运”的过程：<strong>Excel文件 → 通用通讯录文件（VCF）→ 手机通讯录</strong>。借助一个靠谱的在线转换工具，几分钟就能搞定原本需要数小时的手动输入工作。
+      </p>
+      <p class="text-gray-700 mt-3">
+        无论是为了工作高效，还是管理个人社交圈，掌握这个小技巧都能让你事半功倍。下次再收到Excel名单时，就不用头疼了。
+      </p>
+    </section>
+  </article>
+</div>
 `;export{t as default};

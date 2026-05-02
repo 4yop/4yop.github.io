@@ -1,59 +1,120 @@
 const s=`
-<div class="text-slate-700 max-w-3xl mx-auto p-4 md:p-0">
-  <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h2>
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800 bg-white">
+  <header class="text-center mb-8 md:mb-12">
+    <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4">轻松制作专业饼图：一个简单好用的在线工具</h1>
+    <p class="text-lg text-gray-600">告别复杂软件，无需学习设计，三步搞定数据展示。</p>
+  </header>
 
-  <p class="text-lg mb-8 leading-relaxed">
-    工作中，面对一堆密密麻麻的销售数字，是不是感到头疼？学习中，复杂的统计资料，是不是让你眼花缭乱？我们常常需要把枯燥的数据变成一目了然的图表，但专业的软件太难，手绘又太慢。有没有一种方法，能让我们普通人，像填写表格一样简单，就能得到专业的图表呢？
-  </p>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">告别混乱数字，让数据自己“说话”</h2>
-  <p class="mb-6 leading-relaxed">
-    无论你是要做一份工作报告，还是整理自己的学习笔记，图表都是最好的帮手。一张好的柱状图，能瞬间让你看清谁多谁少，哪个项目更突出。以前，这可能是设计师或者数据分析师的工作。而现在，借助一些简单好用的在线工具，每个人都能轻松胜任。
-  </p>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">只需简单三步，你的专属图表即刻呈现</h2>
-  <p class="mb-4 leading-relaxed">
-    很多人一听到“做图表”就觉得复杂。其实，整个过程可以非常简单，就像用记事本一样。
-  </p>
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第一步：输入你的数据</h3>
-    <p class="mb-3">你不需要任何特殊格式。只需像平时记流水账一样，把你的项目名称和对应的数字，用逗号隔开，一行行写下来。</p>
-    <p class="text-sm text-slate-500 mb-3">例如：<br>产品A, 120, 80<br>产品B, 150, 160</p>
-    <p>写好之后，点击一个按钮，系统就会自动识别并准备好你的图表数据。</p>
-  </div>
-
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第二步：调整到你喜欢的样子</h3>
-    <p class="mb-3">图表可以“竖着”排列，也可以“横着”排列，哪种看着顺眼就用哪种。</p>
-    <p class="mb-3">颜色也可以随心换。有沉稳的“商务蓝”适合正式报告，有简洁的“工程灰”显得专业，还有清新的“生态绿”让人眼前一亮。</p>
-    <p>所有的调整都是实时生效的，你可以立刻看到变化，直到找到最满意的样式。</p>
-  </div>
-
-  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
-    <h3 class="text-xl font-medium text-slate-700 mb-4">第三步：保存你的成果</h3>
-    <p>图表做好后，可以直接保存为一张高清图片。无论是插入到PPT里，还是分享到工作群，都非常方便。</p>
-    <p class="text-sm text-slate-500 mt-2">还有一个贴心的小功能：在你操作的过程中，系统会自动帮你记住上一次的数据和设置，下次打开，一切都还在，不用重新做。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">这个工具能帮你解决哪些具体问题？</h2>
-  <ul class="list-disc pl-5 space-y-2 mb-8">
-    <li><span class="font-medium">月度销售汇报：</span>快速对比各个业务小组或产品的业绩高低。</li>
-    <li><span class="font-medium">项目进度跟踪：</span>清晰展示不同任务阶段的完成情况。</li>
-    <li><span class="font-medium">学习成果统计：</span>将各科成绩或学习时间直观地呈现出来。</li>
-    <li><span class="font-medium">家庭开支分析：</span>一眼看出每月在饮食、购物、教育等方面的花费占比。</li>
-    <li><span class="font-medium">活动投票结果展示：</span>让投票数多少变得一目了然。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">担心操作复杂？其实很简单</h2>
-  <p class="mb-6 leading-relaxed">
-    很多朋友可能会问，我需要先学习什么吗？完全不用。这类工具的设计初衷，就是给非专业人士使用的。它的界面通常很干净，按钮上的字都写得明明白白，比如“解析数据”、“导出图片”。你完全不需要知道背后复杂的原理，就像我们用电饭煲煮饭，不需要懂它的电路一样。你只需要关心你的数据，然后选择你喜欢的样子。
-  </p>
-
-  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10">
-    <h2 class="text-2xl font-semibold text-slate-800 mb-3">总结一下</h2>
-    <p class="leading-relaxed">
-      当数字变得难以理解时，图表是最好的翻译官。一个好的免费图表生成工具，应该像一位耐心的助手：<span class="font-medium">操作上足够简单</span>，让你轻松上手；<span class="font-medium">样式上足够灵活</span>，满足不同场合的需求；<span class="font-medium">结果上足够实用</span>，能直接拿去使用。别再让杂乱的数据困住你，试着把它们变成一张张清晰的图表，你会发现，理解和表达，原来可以如此轻松。
+  <section class="mb-10">
+    <p class="mb-6 leading-relaxed">
+      你是不是经常需要把一堆数据展示给别人看？比如，想告诉老板各个产品的销售比例，或者想向朋友展示一次旅行的花费构成。对着枯燥的数字列表，别人可能很难一眼看明白。
     </p>
-  </div>
+    <p class="mb-6 leading-relaxed">
+      这时候，一张饼图就能帮上大忙。它像切蛋糕一样，把整体分成几块，每块的大小代表相应的数据份额，谁多谁少，一目了然。
+    </p>
+    <p class="leading-relaxed">
+      但说到做饼图，很多人就头疼了。是不是得打开复杂的办公软件，或者下载一个从来没学过的设计工具？其实，现在有一个更简单的选择。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">为什么你需要一个简单的饼图工具？</h2>
+    <ul class="list-disc pl-5 space-y-3 text-gray-700">
+      <li><span class="font-medium">工作汇报：</span>在总结报告里，用饼图展示项目预算分配、客户来源占比，让领导瞬间抓住重点。</li>
+      <li><span class="font-medium">学习研究：</span>整理调查问卷结果，比如用户对不同功能的喜好度，用图表呈现更直观。</li>
+      <li><span class="font-medium">个人生活：</span>记录月度开支，看看钱都花在了哪里；或者统计一下每周的时间都分配给了哪些事情。</li>
+    </ul>
+    <p class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 italic">
+      一个好的工具，应该让你专注于数据本身，而不是折腾怎么把图做出来。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">这个工具能帮你做什么？</h2>
+    <p class="mb-4">它就像一个为你量身定制的“图表小助手”，操作简单得超乎想象。</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">1</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">输入数据，像记账一样简单</h3>
+        <p class="text-gray-700">你只需要告诉它每部分的名称和数值。比如“餐饮消费：1500”、“交通出行：800”。可以一条条手动添加，就像在笔记本上列清单。</p>
+      </div>
+
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">2</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">文件导入，一键搞定</h3>
+        <p class="text-gray-700">如果你已经把数据整理在电脑的表格文件里（比如Excel），直接上传就行。工具会自动读取里面的信息，省去你重复输入的麻烦。</p>
+      </div>
+
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">3</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">换个“皮肤”，让图表更顺眼</h3>
+        <p class="text-gray-700">觉得默认颜色太普通？你可以选择“商务蓝”、“生态绿”等不同的配色主题，让图表风格更匹配你的报告或个人喜好。</p>
+      </div>
+
+      <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4">
+          <span class="font-bold">4</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">调整布局，保存高清图片</h3>
+        <p class="text-gray-700">可以自由调整图例说明文字的位置。完成后，一键就能把制作好的饼图保存为高清图片，直接插入到你的PPT或文档中。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10 bg-gray-50 p-6 md:p-8 rounded-xl">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">它适合谁用？</h2>
+    <p class="mb-4">几乎任何需要展示数据比例的人都可以用它：</p>
+    <ul class="list-none space-y-2">
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>需要做简单数据分析的职场人士</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>经常要交报告的学生或研究人员</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>想用图表管理个人事务的家庭成员</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span>对专业图表软件望而却步的初学者</span></li>
+    </ul>
+    <p class="mt-6 text-gray-700">
+      它的目标就是让<span class="font-medium">“制作一张清晰的饼图”</span>这件事，变得和在线填一张表格一样简单。你完全不需要有任何设计或技术背景。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b">如何使用？超简单的流程</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center my-8">
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
+        <div class="text-4xl mb-2 text-gray-400">①</div>
+        <p class="font-medium">填入或导入<br/>你的数据</p>
+      </div>
+      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4">
+        <div class="text-4xl mb-2 text-gray-400">②</div>
+        <p class="font-medium">选择喜欢的<br/>样式和布局</p>
+      </div>
+      <div class="hidden md:block text-2xl text-gray-400 mx-4">→</div>
+      <div class="text-center px-6 py-4 border-2 border-dashed border-gray-300 rounded-lg">
+        <div class="text-4xl mb-2 text-gray-400">③</div>
+        <p class="font-medium">点击导出<br/>获得高清图片</p>
+      </div>
+    </div>
+    <p class="text-center text-gray-600 mt-4">整个过程通常只需要几分钟，所见即所得。</p>
+  </section>
+
+  <section class="text-center py-8 border-t border-gray-200 mt-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">让数据自己“说话”</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+      当数字变成直观的图形，信息的传递会高效得多。无论是为了更清晰的工作沟通，还是更有条理的自我管理，一个好的可视化工具都能成为你的得力帮手。
+    </p>
+    <p class="text-lg">
+      <span class="font-medium">最关键的是，</span>整个过程应该轻松、快速，让你把精力花在思考数据本身，而不是折腾工具上。
+    </p>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 mt-12 pt-6 border-t">
+    <p>希望这篇文章能帮助你了解，原来制作一张专业的饼图可以如此简单。</p>
+  </footer>
 </div>
 `;export{s as default};

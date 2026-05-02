@@ -1,1 +1,100 @@
-const s='<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 bg-white"><h1 class="text-3xl font-bold text-gray-900 mb-6">舒尔特方格：每天5分钟，悄悄提升你的注意力和反应速度</h1><p class="text-lg leading-relaxed mb-6">你是不是经常觉得很难集中注意力？工作一会儿就想看手机，看书没几页就走神，甚至和别人说话时也会突然脑子放空？别担心，这很常见。但好消息是，注意力是可以像肌肉一样锻炼的。今天给你介绍一个风靡全球的大脑训练小工具——<strong class="font-semibold text-gray-900">舒尔特方格</strong>，它简单、有趣，每天几分钟，就能有效提升专注力、反应速度和视觉搜索能力。</p><div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8"><p class="text-blue-800 font-medium">什么是舒尔特方格？</p><p class="text-blue-700 mt-1">它就是一个由数字随机排列的方格网，比如常见的3x3、4x5或5x5。你需要做的，就是按照从小到大的顺序，快速准确地依次点击这些数字。听起来简单？试试就知道，它真的很考验专注力。</p></div><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格怎么玩？</h2><p class="mb-4">玩法非常简单：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li>屏幕上会出现一张布满数字的方格，数字从1开始一直到总数（比如9、16、25）。</li><li>你只需要用手指或鼠标，按顺序点击1、2、3……直到最后一个数字。</li><li>点击第一个数字时，计时开始；点完最后一个数字，计时停止，你就得到这一次的完成时间。</li><li>如果不小心点错了，按错的格子会快速闪一下红色，提醒你点错了，但计时不会停止，你需要继续找正确的数字。</li></ul><p class="mb-6">整个过程就像在玩一个“找数字”的游戏，时间越短，说明你的注意力和反应越快。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">不同难度，适合不同水平的你</h2><p class="mb-4">舒尔特方格通常有三种常见的尺寸：</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6"><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">3 x 3</p><p class="text-gray-600">总共9个数字，适合刚开始接触的新手、小朋友，或者想快速热身的你。简单易上手，能帮你建立信心。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">4 x 4</p><p class="text-gray-600">16个数字，最常见的训练难度。大多数人会在这个级别停留较长时间，用来稳步提升注意力。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">5 x 5</p><p class="text-gray-600">25个数字，属于挑战级别。需要眼睛快速扫视全盘，对注意力和反应速度要求很高，适合经常练习的老手。</p></div></div><p class="mb-6">你可以根据自己的状态随时切换难度。比如一开始用3x3找找感觉，再逐步挑战更大的方格。完成时间会记录下你的最佳成绩，看着自己不断进步，会很有成就感。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格究竟有什么好处？</h2><p class="mb-4">它可不仅仅是个小游戏，很多飞行员、运动员都用它来训练专注力。普通人练习，也能收获很多：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">提升注意力：</span>强迫你全神贯注在数字上，长时间练习，你会发现走神的次数变少了。</li><li><span class="font-medium text-gray-900">扩大视野范围：</span>为了快速找到下一个数字，你不得不学会用余光扫视，这能锻炼你的视觉广度，甚至有助于提高阅读速度。</li><li><span class="font-medium text-gray-900">增强反应速度：</span>从看到数字到点击，这个过程反复训练，你的大脑和手会配合得越来越快。</li><li><span class="font-medium text-gray-900">老少皆宜：</span>孩子玩可以改善学习走神，成年人玩能提高工作效率，老年人玩有助于延缓大脑衰老，预防认知功能下降。</li></ul><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">怎样才能玩得更好？几个小技巧</h2><p class="mb-4">刚开始玩，可能十几秒甚至二十几秒才能完成一个方格，别灰心，每个人都是这么过来的。试试这几个方法：</p><ol class="list-decimal pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">不要默念数字：</span>很多人习惯心里念着“1、2、3……”，这会拖慢速度。试着用眼睛直接看，用余光去找下一个数字。</li><li><span class="font-medium text-gray-900">保持身体放松：</span>别绷得太紧，肩膀放松，眼睛离屏幕适当距离，用指尖快速点击。</li><li><span class="font-medium text-gray-900">每天坚持几分钟：</span>注意力训练就像健身，贵在坚持。每天花5分钟玩几轮，比一周猛练一小时效果更好。</li><li><span class="font-medium text-gray-900">从简单难度开始：</span>先练好3x3，再慢慢升级，避免一开始就挑战高难度，产生挫败感。</li></ol><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">你可能关心的问题</h2><div class="space-y-4 mb-6"><div><p class="font-medium text-gray-900">为什么我总是点错？</p><p class="text-gray-700">点错通常是因为注意力被干扰，或者太着急了。试着先稳住心态，看清数字再点。随着练习增多，错误率自然会下降。</p></div><div><p class="font-medium text-gray-900">怎样才算好的成绩？</p><p class="text-gray-700">一般来说，3x3方格在4-6秒内完成算不错，4x4在20秒以内，5x5在40秒以内。但不用太和别人比，和自己的昨天比有进步就是好事。</p></div><div><p class="font-medium text-gray-900">需要每天都练吗？</p><p class="text-gray-700">如果希望有明显提升，建议每天练习。但偶尔中断也没关系，关键是保持兴趣，别把它当成任务。</p></div></div><p class="text-lg border-t border-gray-200 pt-6 mt-8">舒尔特方格就像一个装在手机里的“大脑健身房”，简单直接，却又非常有效。现在就打开它，从3x3开始，测测你的专注力水平吧。每天几分钟，悄悄变专注，你会发现自己工作学习都更得心应手了。</p></div>';export{s as default};
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <!-- 标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">贪吃蛇：一款让你瞬间回到童年的经典游戏，在线就能玩！</h1>
+
+  <!-- 引言/痛点 -->
+  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-green-600">
+    <p class="text-lg mb-2">你是不是也有这样的时刻？</p>
+    <p class="mb-2">地铁上信号不好，想找个游戏打发时间，却发现都要下载；工作间隙想放松几分钟，却找不到简单不费脑的消遣；或者，单纯想重温一下小时候在诺基亚手机上摁键盘的快乐。</p>
+    <p class="font-medium">这时候，一个打开就能玩、规则简单却充满挑战的经典游戏，就成了你最需要的“解压神器”。</p>
+  </div>
+
+  <!-- 简单解释 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">贪吃蛇是什么？</h2>
+    <p class="mb-4">想象一下，你控制一条由小方块组成的“小蛇”，在一个方方正正的场地上穿梭。你的目标是吃掉随机出现的“小豆子”。每吃一颗，小蛇的身体就会长长一节。</p>
+    <p class="mb-4">听起来很简单，对吧？但挑战在于：你不能让小蛇撞到四周的墙壁，更不能让它回头咬到自己的身体！随着小蛇越来越长，你需要越来越小心地规划路线，游戏的紧张感和成就感也就随之而来。</p>
+    <p>它没有复杂的剧情和绚丽的特效，但那种“就差一点！”和“我又破记录了！”的纯粹快乐，正是它风靡几十年的秘密。</p>
+  </div>
+
+  <!-- 好处列举 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">为什么你现在还会想玩贪吃蛇？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-green-700">1. 真正的“零负担”游戏</h3>
+        <p>无需下载，不占手机空间。点开一个网页就能立刻开始，玩完关掉页面就行，像用一张即用即扔的“数字纸巾”一样方便。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-green-700">2. 随时随地，想停就停</h3>
+        <p>无论是等餐的5分钟，还是会议开始前的间隙，你都能来上一局。游戏可以随时暂停，不用担心突然有事而前功尽弃。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-green-700">3. 挑战自己，看得到的进步</h3>
+        <p>每次游戏都会记录你的“得分”和“坚持了多久”。你可以不断挑战自己的最高分，看着数字一点点突破，那种看得见的成长感非常解压。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-green-700">4. 友好的“光荣榜”</h3>
+        <p>你的每一次高分都会被记录下来，形成一个专属的“成绩单”。你可以清楚地看到自己的最佳战绩是在什么时候创造的，回味那份成就感。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 应用场景 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">你会在哪些时刻需要它？</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景一：碎片时间的“填充剂”</h3>
+        <p>通勤路上、排队等候、电视广告时间……把这些零碎的几分钟利用起来，玩两局贪吃蛇，比漫无目的地刷手机更能让你感到放松和充实。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景二：工作学习的“大脑重启键”</h3>
+        <p>当你写报告卡壳了，或者学习感到疲惫时，强制自己休息5分钟，来一局贪吃蛇。这种需要集中精力但无需深入思考的游戏，能很好地帮你转换思维，回来之后效率更高。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景三：亲子互动的“小桥梁”</h3>
+        <p>规则简单，上手容易，非常适合教小朋友玩。你可以和孩子比比谁得分更高，在简单的游戏中享受亲子时光，还能锻炼孩子的反应力和规划能力。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心功能通俗解释（对应代码功能） -->
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">这个贪吃蛇游戏有什么不一样？</h2>
+    <ul class="space-y-4 list-disc pl-5">
+      <li><span class="font-medium">双端都能玩得顺手：</span>在电脑上，你可以用键盘的方向键灵活操控；在手机上，屏幕下方就有模拟方向键和开始按钮，点按就能操作，非常跟手。</li>
+      <li><span class="font-medium">你的专属成绩档案：</span>游戏会默默记下你每次的得分和游戏时长，并按照分数高低排成榜单。想知道自己的历史最佳表现？点开“分数排行榜”就能一目了然。</li>
+      <li><span class="font-medium">越来越快的节奏：</span>为了增加挑战性，小蛇每吃几颗“豆子”，移动速度就会悄悄加快一点，让你的心跳也跟着加速。</li>
+      <li><span class="font-medium">清晰明了的界面：</span>当前得分、本局用时都在屏幕上清晰显示。绿色的豆子，深色的小蛇，浅色的格子背景，看起来清爽不费眼。</li>
+    </ul>
+  </div>
+
+  <!-- 行动号召 -->
+  <div class="text-center p-8 border-t border-b border-gray-300">
+    <p class="text-2xl font-semibold mb-4">简单的快乐，最是难得</p>
+    <p class="mb-6 text-gray-700">在越来越复杂的数字世界里，贪吃蛇用它最原始的规则，带来了最直接的快乐。它不需要你学习任何新东西，却能立刻给你反馈和挑战。</p>
+    <p class="text-lg font-medium">下次当你感到无聊或需要短暂抽离时，不妨给自己两三分钟，指挥那条小蛇去吃豆子吧。你会发现，找回童年的快乐，其实就这么简单。</p>
+  </div>
+
+  <!-- 针对SEO的自然问答 -->
+  <div class="mt-10 pt-8 border-t border-gray-300">
+    <h3 class="text-xl font-semibold mb-4">关于贪吃蛇，你可能想问：</h3>
+    <div class="space-y-6">
+      <div>
+        <p class="font-medium mb-1">问：贪吃蛇游戏怎么玩？</p>
+        <p class="text-gray-700">答：目标就是控制小蛇吃豆子变长，别撞墙也别撞到自己。电脑用键盘方向键，手机点屏幕上的方向按钮就行。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：有没有可以随时暂停的在线小游戏？</p>
+        <p class="text-gray-700">答：有，像这种网页版的贪吃蛇就特别适合。按空格键或点暂停按钮就能随时停下，忙完回来可以继续，不担心游戏进度丢失。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：不用下载的手机游戏有哪些？</p>
+        <p class="text-gray-700">答：很多经典游戏比如贪吃蛇、俄罗斯方块都有网页版，直接通过手机浏览器打开就能玩，完全不占用手机存储空间，非常方便。</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;export{s as default};

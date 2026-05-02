@@ -1,162 +1,56 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">图片格式转换：让你的图片适配任何使用场景</h1>
+const l=`
+<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">想把动图GIF拆成一堆静态图片？这个工具能一键搞定</h2>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">不同平台需要不同格式？一张图搞定</p>
-    <p class="mt-2 mb-0">网站需要WebP、微信需要JPG、设计需要PNG透明、App图标需要ICO……图片格式转换是日常开发中最高频的操作之一。这个工具让你在浏览器中批量完成所有转换，无需安装任何软件。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+    <p class="text-base">你是不是也遇到过这种情况：看到一个有趣的GIF动图，特别想保存里面的某一瞬间，却怎么也截不到最清晰的那一帧？</p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">为什么要转换图片格式？</h2>
+  <p class="text-lg mb-6 leading-relaxed">GIF动图很生动，但有时我们需要的恰恰是它“不动”的样子。比如，从一段动态表情包里保存最搞笑的那张脸，或者从产品展示动图中提取一张最清晰的静态图来使用。自己一帧帧截图？既麻烦，画质还可能受损。</p>
 
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🌐</div>
-      <h3 class="font-medium text-gray-800 mb-2">平台兼容</h3>
-      <p class="text-sm text-gray-600">不同平台对图片格式要求不同，转换后才能正常使用</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">📦</div>
-      <h3 class="font-medium text-gray-800 mb-2">减小体积</h3>
-      <p class="text-sm text-gray-600">WebP比JPEG小25-35%，转换格式可大幅节省存储和带宽</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🎨</div>
-      <h3 class="font-medium text-gray-800 mb-2">功能需求</h3>
-      <p class="text-sm text-gray-600">透明背景需要PNG、动态图需要WebP/GIF、图标需要ICO</p>
-    </div>
-  </div>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">GIF拆帧：像“分解动画”一样简单</h2>
+  <p class="mb-6 leading-relaxed">你可以把一个GIF动图想象成一本快速的翻页动画书。这本书由很多页（也就是“帧”）快速翻过，形成了动画效果。所谓“提取帧”，就是把这本书拆开，把每一页都变成一张独立的、清晰的图片摆在你面前。</p>
+  <p class="mb-6 leading-relaxed">这样一来，动图里的每一个瞬间，你都可以轻松获得，再也不用为截不到完美瞬间而烦恼了。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见图片格式对比</h2>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么你需要这样一个工具？</h2>
+  <ul class="list-disc pl-5 mb-8 space-y-3">
+    <li class="leading-relaxed"><strong>保存心动的瞬间</strong>：从喜欢的电影动图、爱豆表情包里，精准保存你最钟爱的那一帧画面，当作手机壁纸或收藏。</li>
+    <li class="leading-relaxed"><strong>获取设计素材</strong>：做海报、剪视频时，可以直接从GIF里提取出高质量的静态图片作为素材，省去全网搜索的麻烦。</li>
+    <li class="leading-relaxed"><strong>制作表情包合集</strong>：把一个长故事的GIF拆解成多个单张表情，方便你在不同聊天场景下使用。</li>
+    <li class="leading-relaxed"><strong>分析与学习</strong>：如果你对动画制作感兴趣，可以通过拆解GIF的每一帧，来了解一个动画效果的实现过程。</li>
+    <li class="leading-relaxed"><strong>纯粹因为好奇</strong>：就是想看看一个有趣的GIF到底是由多少张图片组成的，满足你的好奇心。</li>
+  </ul>
 
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">格式</th>
-          <th class="border border-gray-300 p-3 text-left">类型</th>
-          <th class="border border-gray-300 p-3 text-left">透明</th>
-          <th class="border border-gray-300 p-3 text-left">动画</th>
-          <th class="border border-gray-300 p-3 text-left">适用场景</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">JPEG/JPG</td>
-          <td class="border border-gray-300 p-3">有损</td>
-          <td class="border border-gray-300 p-3">不支持</td>
-          <td class="border border-gray-300 p-3">不支持</td>
-          <td class="border border-gray-300 p-3">照片、社交媒体</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">PNG</td>
-          <td class="border border-gray-300 p-3">无损</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">不支持</td>
-          <td class="border border-gray-300 p-3">图标、截图、透明图</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">WebP</td>
-          <td class="border border-gray-300 p-3">有损/无损</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">网站图片、现代Web</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">BMP</td>
-          <td class="border border-gray-300 p-3">无损</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">不支持</td>
-          <td class="border border-gray-300 p-3">Windows系统、打印</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">ICO</td>
-          <td class="border border-gray-300 p-3">无损</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">不支持</td>
-          <td class="border border-gray-300 p-3">网站Favicon、App图标</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">AVIF</td>
-          <td class="border border-gray-300 p-3">有损/无损</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">支持</td>
-          <td class="border border-gray-300 p-3">新一代Web图片格式</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="bg-indigo-50 p-5 rounded-lg my-6 border border-indigo-100">
-    <p class="font-medium text-indigo-900 mb-2">提示：选择合适的格式很重要</p>
-    <p class="text-indigo-800 text-sm">JPEG适合照片、PNG适合带透明的图片、WebP是网站优化的首选。根据你的使用场景选择合适的输出格式，可以兼顾画质和文件大小。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见使用场景</h2>
-
-  <div class="space-y-4 my-6">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🌐 网站开发</h3>
-      <p class="text-sm text-gray-600"><strong>推荐格式：</strong>WebP（体积小，兼容性好）</p>
-      <p class="text-sm text-gray-600">将PNG/JPG转换为WebP，可以在保持画质的同时减小25-50%的文件体积。</p>
-    </div>
-
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体分享</h3>
-      <p class="text-sm text-gray-600"><strong>推荐格式：</strong>JPEG</p>
-      <p class="text-sm text-gray-600">微信、微博等平台对JPEG兼容性最好，上传后不会出现格式不支持的问题。</p>
-    </div>
-
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🖼️ 设计素材</h3>
-      <p class="text-sm text-gray-600"><strong>推荐格式：</strong>PNG</p>
-      <p class="text-sm text-gray-600">需要透明背景的Logo、图标等素材必须使用PNG格式。</p>
-    </div>
-
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">⚙️ 网站图标</h3>
-      <p class="text-sm text-gray-600"><strong>推荐格式：</strong>ICO</p>
-      <p class="text-sm text-gray-600">浏览器标签页图标（Favicon）需要ICO格式，通常是16x16或32x32像素。</p>
+  <div class="bg-gray-100 p-6 rounded-xl my-8">
+    <h3 class="text-xl font-semibold mb-3">常见问题解答</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium text-gray-900">问：处理GIF会损坏原图吗？</p>
+        <p class="text-gray-700 mt-1">答：完全不会。这个过程就像复印一本书的每一页，原书（你的GIF文件）不会被做任何改动，是安全的“只读”操作。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-900">问：提取出来的图片清晰度怎么样？</p>
+        <p class="text-gray-700 mt-1">答：提取出的图片就是GIF里原本的画面，是它能提供的最高清晰度，比你在屏幕上直接截图要清晰和准确得多。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-900">问：操作起来复杂吗？需要安装软件吗？</p>
+        <p class="text-gray-700 mt-1">答：非常简单，全程在网页里完成。你只需要“选择文件”和“点击提取”两个动作，不需要下载或安装任何软件到电脑上。</p>
+      </div>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题</h2>
-
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：转换后画质会下降吗？</p>
-      <p class="text-gray-600">答：转换为无损格式（PNG、BMP、ICO）不会损失画质。转换为有损格式（JPEG、WebP、AVIF）时，可以通过调节质量参数控制画质损失程度，高质量设置下人眼几乎无法分辨差异。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">两个生活中的真实用处</h2>
+  <div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="border border-gray-200 p-5 rounded-lg">
+      <h3 class="text-lg font-semibold mb-2">场景一：制作专属表情包九宫格</h3>
+      <p class="text-gray-700">找到一个超级好笑的连贯动作GIF，你可以把它拆成9张图，然后拼成一张九宫格图片发朋友圈，故事感和趣味性直接拉满。</p>
     </div>
-
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：我的图片会被上传到服务器吗？</p>
-      <p class="text-gray-600">答：不会。所有转换都在你的浏览器本地完成，图片不会离开你的设备，充分保护你的隐私。</p>
-    </div>
-
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：支持批量转换吗？</p>
-      <p class="text-gray-600">答：支持。你可以一次选择多张图片，统一设置目标格式和质量，然后逐个下载或打包为ZIP一次下载。</p>
-    </div>
-
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：GIF动图可以转换格式吗？</p>
-      <p class="text-gray-600">答：GIF动图可以转换为其他格式，但动画帧信息会丢失，只保留第一帧静态图片。如需保留动画，建议转换为WebP动画格式。</p>
+    <div class="border border-gray-200 p-5 rounded-lg">
+      <h3 class="text-lg font-semibold mb-2">场景二：从动态教程里提取关键步骤图</h3>
+      <p class="text-gray-700">网上很多手工、烹饪教程是GIF格式的。你可以把它拆开，把“关键一步”的图片单独保存、打印出来，对照着操作，比反复播放视频方便多了。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧</h2>
-
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">格式转换最佳实践：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 网站图片优先使用WebP格式，体积最小</li>
-      <li>• 需要透明背景时选择PNG，避免使用JPEG</li>
-      <li>• JPEG质量设置80-90即可满足大部分场景</li>
-      <li>• 网站Favicon建议转为ICO，尺寸建议32x32</li>
-      <li>• 批量处理大量图片时，使用ZIP打包下载更高效</li>
-    </ul>
-  </div>
-
-  <p class="mt-6 text-center text-gray-600">无需安装软件，打开浏览器就能用。现在就开始转换你的图片吧！</p>
+  <p class="text-lg mt-12 p-5 bg-gray-50 rounded-xl leading-relaxed">下次再遇到想从动图里“定格”某个瞬间的情况，不必再手忙脚乱地截图了。一个简单的工具，就能帮你把动图里的每一幕都完整地保留下来。无论是为了工作、创作，还是简单的娱乐与收藏，这都能让你更自如地处理那些生动的图片。</p>
 </div>
-`;export{r as default};
+`;export{l as default};

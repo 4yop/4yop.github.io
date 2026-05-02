@@ -1,151 +1,103 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <article class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
-    <!-- 文章标题 -->
-    <header class="mb-8 border-b pb-6">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">了解真实的自己：一份全面的MBTI性格测试指南</h1>
-      <p class="text-gray-600 text-lg">你是否曾好奇，为什么你和某些人一拍即合，和另一些人却沟通困难？为什么你偏爱安静思考，而朋友却热衷热闹聚会？认识自己，可以从了解性格开始。</p>
-    </header>
+const r=`
+<div class="max-w-3xl mx-auto p-4 text-gray-800">
+  <h1 class="text-3xl font-bold mb-4 text-center sm:text-left">每天喝多少水最健康？科学计算公式告诉你</h1>
+  
+  <p class="mb-4 text-lg leading-relaxed">
+    水是生命之源，人体大约70%由水构成。你可能常听到「每天要喝8杯水」的说法，但每个人的体重、活动量不同，这个标准真的适合你吗？其实，科学界有一套更精准的计算方法——根据体重估算每日需水量。今天我们就来聊聊，如何算出属于自己的「健康饮水量」，并合理安排一天的喝水时间。
+  </p>
 
-    <!-- 引言 -->
-    <section class="mb-10">
-      <p class="text-gray-700 mb-4">在生活中，我们常常会遇到这样的疑问：我到底适合做什么工作？为什么我总感觉和别人想的不一样？如何更好地与他人相处？其实，这些问题都与我们的性格特质密切相关。</p>
-      <p class="text-gray-700 mb-4">有一种被广泛使用的工具，可以帮助我们描绘出自己性格的“地图”，它就是MBTI性格测试。它不是什么神秘的占卜，而是一个基于心理学理论的性格类型指标，帮助我们更清晰地看到自己的偏好和倾向。</p>
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-        <p class="text-gray-800">简单来说，MBTI就像一面镜子，帮助我们观察自己在获取能量、收集信息、做决策和安排生活这四个方面的习惯性偏好。</p>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">体重计算法：你一天到底需要多少毫升水？</h2>
+  <p class="mb-3">
+    最简单且被广泛认可的计算公式是：<span class="font-medium">每日需水量（毫升） = 体重（公斤） × 33</span>。这个系数来源于人体基础代谢所需水量的研究，能够满足大部分成年人的日常需求。
+  </p>
+  <p class="mb-3">
+    举个例子：如果你的体重是60公斤，那么每天大约需要喝 60 × 33 = 1980 毫升水，差不多相当于4瓶500毫升的矿泉水。如果体重75公斤，则需要约2475毫升，大约5瓶水。用这个公式算一算，你会发现可能比「8杯水」更贴合自己的身体状况。
+  </p>
+  <p class="mb-3 bg-blue-50 p-3 rounded">
+    <span class="font-medium">小提示：</span> 这只是一个基础参考值。如果你当天运动量大、出汗多，或者处于炎热环境，需要额外补充水分；而如果吃了大量水果、汤羹，也可适当减少纯饮水量。
+  </p>
 
-    <!-- MBTI是什么 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">MBTI是什么？不仅仅是四个字母</h2>
-      <p class="text-gray-700 mb-4">你可能见过诸如“INFP”、“ESTJ”这样的四个字母组合。这不是密码，而是MBTI性格测试的结果代码。每一个字母代表你在某个性格维度上的倾向。</p>
-      <p class="text-gray-700 mb-6">它主要从四个角度来观察我们：</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">1. 能量来源：内向(I) 还是 外向(E)？</h3>
-          <p class="text-gray-700">这里不是指爱不爱说话，而是指你从哪里获得能量。喜欢从内心世界、独处中恢复精力的人是“内向”(I)；而通过与外界互动、与人交往来充电的人则是“外向”(E)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">2. 信息收集：实感(S) 还是 直觉(N)？</h3>
-          <p class="text-gray-700">你更相信眼睛看到的现实细节，还是更关注未来的可能性？注重具体事实和实际经验的是“实感”(S)；喜欢抽象概念、联想和潜在意义的是“直觉”(N)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">3. 决策方式：思考(T) 还是 情感(F)？</h3>
-          <p class="text-gray-700">做决定时，你更依赖逻辑分析，还是更重视人情与和谐？基于客观逻辑和因果分析做判断的是“思考”(T)；优先考虑价值观和他人感受的是“情感”(F)。</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
-          <h3 class="font-bold text-gray-800 text-lg mb-2">4. 生活方式：判断(J) 还是 感知(P)？</h3>
-          <p class="text-gray-700">你喜欢有计划、有条理的生活，还是灵活、随性的方式？喜欢做决定、让事情有明确结果的是“判断”(J)；喜欢保持开放、适应变化的是“感知”(P)。</p>
-        </div>
-      </div>
-      <p class="text-gray-700">将这四个维度的倾向组合起来，就形成了16种不同的性格类型，每一种都有其独特的特点。</p>
-    </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">喝水时间表：什么时候喝，效果更好？</h2>
+  <p class="mb-3">
+    光知道喝多少还不够，喝水的时间也影响身体吸收和利用。把全天的水量分散到不同时段，既能避免一次性喝太多增加肾脏负担，又能让身体时刻保持水润状态。下面是一份参考时间表，你可以根据自己的作息调整：
+  </p>
 
-    <!-- 测试过程 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">一次专业的MBTI测试是怎样的？</h2>
-      <p class="text-gray-700 mb-4">一个完整的在线MBTI测试，通常会让你回答一系列关于日常行为、想法和感受的选择题。这些题目旨在探索你在上述四个维度上的自然偏好。</p>
-      
-      <div class="bg-gray-50 p-5 rounded-lg mb-6">
-        <h3 class="font-bold text-gray-800 text-lg mb-3">测试时你可能会看到：</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">1</span>
-            <span><strong>清晰的进度提示</strong>：让你知道已经完成了多少，还有多少题目。</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">2</span>
-            <span><strong>贴近生活的场景题</strong>：比如“在社交聚会中，你通常...”，选项没有对错，只需选择最符合你真实感受的一项。</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">3</span>
-            <span><strong>实时的维度反馈</strong>：有些测试会边做边显示你在各个维度上的初步倾向，就像看着自己的性格画像一笔笔画出来。</span>
-          </li>
-        </ul>
-      </div>
-      <p class="text-gray-700">完成所有题目后，系统会根据你的选择进行计分，最终得出一个属于你的四字母性格类型代码。</p>
-    </section>
+  <div class="overflow-x-auto my-4">
+    <table class="min-w-full border-collapse border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="border border-gray-300 p-2 text-left">时间点</th>
+          <th class="border border-gray-300 p-2 text-left">喝水量（毫升）</th>
+          <th class="border border-gray-300 p-2 text-left">为什么这个时间喝？</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-2">06:30 起床后</td>
+          <td class="border border-gray-300 p-2">约350</td>
+          <td class="border border-gray-300 p-2">经过一夜睡眠，身体处于缺水状态，一杯温水唤醒新陈代谢。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">08:30 上班/出门前</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">补充水分，缓解即将面对工作的紧张情绪。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">11:00 工作间隙</td>
+          <td class="border border-gray-300 p-2">约360</td>
+          <td class="border border-gray-300 p-2">此时身体容易因专注而忘记喝水，小口补水防止疲劳。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">12:50 午餐后</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">帮助消化，促进营养吸收。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">15:00 下午茶时间</td>
+          <td class="border border-gray-300 p-2">约370</td>
+          <td class="border border-gray-300 p-2">替代咖啡或含糖饮料，提神又健康。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">17:30 下班/晚餐前</td>
+          <td class="border border-gray-300 p-2">约360</td>
+          <td class="border border-gray-300 p-2">增加饱腹感，避免晚餐过量进食。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">22:00 睡前1小时</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">补充夜间所需水分，但不宜太多，防止起夜。可根据个人情况微调。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-gray-600 mb-4">注：上表水量以体重75公斤计算（总量2475毫升），你可以按自己每日总量按比例分配。</p>
 
-    <!-- 报告价值 -->
-    <section class="mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">测试报告能告诉你什么？</h2>
-      <p class="text-gray-700 mb-6">一份详细的MBTI测试报告，远不止告诉你四个字母。它更像一份个人使用说明书，可以帮助你：</p>
-      
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-green-600 font-bold">优</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">发现自己的天然优势</h3>
-            <p class="text-gray-700">报告会详细分析你这种性格类型的闪光点。比如，你可能天生善于逻辑分析、有强大的创新能力，或者对人际关系有深刻的洞察力。了解优势，能让你在工作和生活中更好地发挥所长。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-yellow-600 font-bold">长</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">看到可能的成长方向</h3>
-            <p class="text-gray-700">每种性格也都有其面临的挑战。报告可能会指出，你可能需要注意避免过度陷入理论而忽视执行，或者需要学习更好地表达情感。认识到这些，是个人成长的第一步。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-indigo-600 font-bold">职</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">获得职业选择的参考</h3>
-            <p class="text-gray-700">性格与职业的匹配度很重要。报告常常会列出一些高度匹配的职业方向。例如，内向直觉思考感知型的人，可能在科研、编程、架构设计等领域如鱼得水。这可以为你的学业或职业规划提供有价值的参考。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-            <span class="text-purple-600 font-bold">处</span>
-          </div>
-          <div>
-            <h3 class="font-bold text-gray-800 text-lg mb-1">改善人际沟通与理解</h3>
-            <p class="text-gray-700">当你明白自己是“思考型”而伴侣是“情感型”时，就能理解为什么Ta有时会觉得你“太讲道理”。MBTI提供了一个中立的框架，帮助我们理解人与人的不同，学会用对方能接受的方式沟通，减少摩擦。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">常见问题解答</h2>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：喝水量必须精确到毫升吗？</h3>
+    <p class="mb-2">不需要，整数估算即可。可以用常见容器作为参考：一罐可乐约335毫升，一瓶矿泉水约500毫升。只要全天总量大致达标，身体不觉得口渴，尿液呈淡黄色，就说明喝够了。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：运动和夏天怎么调整？</h3>
+    <p class="mb-2">剧烈运动或高温天气下，每小时可能多流失500～1000毫升水分，建议在运动前后及过程中少量多次补充淡盐水或电解质饮料。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：喝汤、吃水果算不算喝水量？</h3>
+    <p class="mb-2">算！食物中的水分也应计入每日总摄入量。比如一碗清汤约200毫升，一个苹果含水约100毫升。不过，纯水更易被吸收，建议大部分水分还是通过饮水获取。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：水喝多了会中毒吗？</h3>
+    <p class="mb-2">健康人肾脏每小时能排出800～1000毫升水，只要不是短时间内狂饮（比如1小时内喝超过2升），一般不会水中毒。但心肾功能不全者需遵医嘱限制饮水量。</p>
+  </div>
 
-    <!-- 正确看待 -->
-    <section class="mb-10 bg-gray-50 p-6 rounded-xl">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">如何正确看待MBTI测试结果？</h2>
-      <p class="text-gray-700 mb-4">在探索自我的旅程中，MBTI是一个好用的工具，但也有一些需要注意的地方：</p>
-      <ul class="space-y-3 text-gray-700 mb-4">
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>它描述偏好，不是能力</strong>：MBTI说明你“喜欢”怎样，而不是你“擅长”什么。一个内向的人也可以练就出色的演讲能力。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>类型没有好坏之分</strong>：16种性格类型各有其独特的价值和贡献。世界需要细致的守护者，也需要大胆的创新者。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>人是动态发展的</strong>：你的偏好可能会随着经历和环境发生细微变化。测试结果是一个当下的快照，而非终身不变的标签。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          <span><strong>目的是理解与发展</strong>：测试的最终目的不是把自己框定在某个类型里，而是借助这种洞察，更好地扬长避短，实现个人成长，同时更包容地看待他人。</span>
-        </li>
-      </ul>
-      <p class="text-gray-700">最好的使用方式，是把报告作为一面镜子，从中看到自己可能忽略的特点，然后带着这份对自己的理解，更自信、更智慧地去生活和工作。</p>
-    </section>
+  <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+    <p class="font-medium">记住，喝水是为了让身体舒服，不必教条。你可以用上面的公式算出基础量，再根据季节、活动量微调。不妨设个闹钟，分时段小口慢饮，养成习惯后，你会发现皮肤、精力都会变好。</p>
+  </div>
 
-    <!-- 结语 -->
-    <section class="pt-6 border-t">
-      <p class="text-gray-700 mb-6">认识自己是一生的课题。MBTI性格测试就像在这条路上提供了一张粗略但很有用的地图。它不能决定你的终点，但能帮你了解自己出发时的“默认路径”。</p>
-      <p class="text-gray-700">如果你对“我究竟是怎样的一个人”感到好奇，不妨花上一点时间，诚实地回答一些问题。你可能会对自己有新的发现，也可能对身边人的行为多一分理解。这份自我了解的旅程，本身就是一种收获。</p>
-    </section>
-  </article>
+  <p class="mt-6 text-sm text-gray-500">温馨提示：本文内容为健康科普，不能替代专业医疗建议。如有特殊疾病或身体状况，请咨询医生。</p>
 </div>
-`;export{s as default};
+`;export{r as default};

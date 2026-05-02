@@ -1,152 +1,49 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
-    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 leading-tight">
-      做生意怎么算利润？一个小工具让你明明白白
-    </h1>
-    
-    <div class="text-gray-600 text-sm mb-6">
-      <span>更新日期：2023年10月</span>
-      <span class="mx-2">|</span>
-      <span>阅读时间：约5分钟</span>
-    </div>
-    
-    <div class="prose prose-gray max-w-none">
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        你有没有遇到过这样的情况：做了一笔生意，订单金额看起来不错，但最后算下来却没赚多少钱？手续费、提现费、成本...各种费用一扣，实际利润和预期相差甚远。今天，我们来聊聊如何准确计算生意的真实利润。
-      </p>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        为什么生意做了很多，钱却没剩下多少？
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        很多刚开始做生意的朋友都会有这样的困惑：明明订单金额不小，为什么到手的钱却不多？其实，这是因为我们常常忽略了几个重要的成本项。
-      </p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
-        <p class="text-gray-700 m-0 leading-relaxed">
-          举个例子：一笔1000元的订单，平台收取5%的手续费，提现时再扣10元，成本占80%。这样算下来，最后的利润可能只有几十元。
-        </p>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        影响实际利润的三大因素
-      </h2>
-      
-      <div class="space-y-6 my-8">
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">1. 平台手续费</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            现在很多生意都在线上进行，电商平台、支付平台都会收取一定比例的手续费。这个费用通常按订单金额的百分比计算，是很多人容易忽略的隐形成本。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">2. 提现手续费</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            钱在平台上，要转到自己的银行卡里，往往还需要支付一笔提现费。这笔费用有时是固定的，有时按比例计算，积少成多也是一笔不小的开支。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">3. 成本控制</h3>
-          <p class="text-gray-700 m-0 leading-relaxed">
-            除了直接的产品成本，还有物流、包装、人工等间接成本。把这些都算进去，才能知道真正的利润空间有多大。
-          </p>
-        </div>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        怎么知道自己什么时候开始赚钱？
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个问题很多人都关心。其实每个生意都有一个“开始盈利点”，也就是要达到多少销售额才能覆盖所有成本，开始真正赚钱。
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个点需要考虑提现手续费、平台手续费和你的成本比例。通过计算，你可以清楚地知道：我的生意要做到多少钱才能不亏本？做到多少钱才能达到目标利润？
-      </p>
-      
-      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
-        <h3 class="text-lg font-semibold text-gray-800 mb-4">一个简单的计算方法：</h3>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
-            <span>先算出手续费占总金额的比例</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
-            <span>再加上提现手续费</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
-            <span>考虑成本占比</span>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">4</span>
-            <span>综合计算得出盈利点</span>
-          </li>
-        </ul>
-      </div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        最终利润比例：衡量生意健康度的重要指标
-      </h2>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        只看赚了多少钱还不够，还要看利润比例。同样赚100元，一个是1000元订单赚的，一个是5000元订单赚的，生意健康度完全不同。
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        最终利润比例 = （最终利润 ÷ 订单总金额）× 100%
-      </p>
-      
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        这个数字能帮你判断：我的定价合理吗？成本控制得好吗？有没有优化空间？
-      </p>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
-        常见问题解答
-      </h2>
-      
-      <div class="space-y-6 my-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：为什么我算出来的利润和实际到手的不一样？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            可能是因为漏算了一些费用。除了平台手续费和提现费，还要考虑退款率、优惠券成本、包装材料费等。建议把所有可能产生的费用都列出来，逐一计算。
-          </p>
-        </div>
-        
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：手续费多少算合理？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            不同平台手续费不同，一般在0.6%-5%之间。关键不是看绝对值，而是看扣除所有费用后，你的利润是否还能保持健康水平。如果手续费吃掉太多利润，就要考虑换平台或者调整定价策略。
-          </p>
-        </div>
-        
-        <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：如何提高最终利润比例？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            可以从几个方面入手：1. 优化成本，寻找性价比更高的供应商；2. 提高客单价，适当调整定价；3. 减少中间环节，降低手续费；4. 提高运营效率，减少浪费。
-          </p>
-        </div>
-      </div>
-      
-      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-10">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">小贴士：定期计算利润</h3>
-        <p class="text-gray-700 m-0 leading-relaxed">
-          建议每个月都算一次账，把当月的所有订单、所有费用都统计清楚。这样不仅能了解自己的真实盈利情况，还能及时发现问题，调整经营策略。做生意，心中有数才能走得更远。
-        </p>
-      </div>
-      
-      <div class="border-t border-gray-200 mt-10 pt-8">
-        <p class="text-gray-600 text-sm leading-relaxed">
-          本文旨在帮助普通生意人理解利润计算的原理和方法。实际经营中，建议咨询专业财务人员，确保账目清晰准确。
-        </p>
-      </div>
-    </div>
-  </article>
+const s=`
+<div class="text-gray-800 leading-relaxed">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">亲戚称呼太难记？教你用工具快速理清辈分与称呼</h1>
+
+  <p class="mb-6">春节团圆，家族聚会，或是翻看厚重的家谱时，你有没有遇到过这样的尴尬：面对一位笑容满面的长辈，却突然卡壳，不知道该怎么称呼？妈妈的舅舅，爸爸的姑姑，这些绕来绕去的关系，是不是一想就头疼？</p>
+
+  <p class="mb-8">别担心，这不是你一个人的烦恼。中国传统的亲戚关系网庞大又精密，称呼更是讲究。好在，现在有了一种非常方便的工具——<strong>亲戚关系计算器</strong>，它能像做数学题一样，帮你快速算出准确的称呼。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、亲戚关系为什么容易搞混？</h2>
+  <p class="mb-4">我们觉得亲戚称呼复杂，通常是因为两个原因：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>关系链条长</strong>：“我爸爸的妈妈的妹妹”，光是念出来就要想一想，更别说快速反应出该叫“姨奶奶”了。</li>
+    <li><strong>称呼分男女和辈分</strong>：同样是父母的兄弟，父亲那边的叫“伯伯”、“叔叔”，母亲那边的就叫“舅舅”。同样是兄弟姐妹的子女，你称呼他们为“侄子/侄女”还是“外甥/外甥女”，也取决于你自己的性别。</li>
+  </ul>
+  <p class="mb-6">这些复杂的规则背后，其实是传统亲族文化的一套精密逻辑。不过，对于日常生活的我们来说，能快速找到正确答案就足够了。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个“计算器”是怎么用的？</h2>
+  <p class="mb-4">想象一下，你面前有一个简单的面板，上面有十个最核心的家庭成员按钮：<strong>父、母、夫、妻、兄、弟、姐、妹、子、女</strong>。</p>
+  <p class="mb-4">想知道“爸爸的哥哥”怎么称呼？你只需要依次点击“父”和“兄”这两个按钮。计算器会把你点的词连成“爸爸的哥哥”这样一个关系式，然后瞬间告诉你结果：<strong>伯伯</strong>。</p>
+  <p class="mb-6">它就像在帮你“拼写”一段亲戚关系。无论是“妈妈妹妹的女儿”，还是“爸爸姐姐的丈夫”，你都可以通过组合这些基本按钮来描述。输入完毕后，点一下“计算”，答案立刻就出来了。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、两个贴心功能，让结果更精准</h2>
+  <p class="mb-4">为了让结果完全符合你的实际情况，这个工具还有两个很贴心的选项：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>选择你的性别</strong>：这一点非常重要！因为同样是你“姐姐的儿子”，如果你是男性，你应该叫他“外甥”；如果你是女性，则应该叫他“侄子”。选择性别后，计算器才能给出最准确的称呼。</li>
+    <li><strong>“互称”功能</strong>：这个功能特别有意思。我们不仅需要知道怎么称呼别人，有时也需要知道别人会怎么称呼我们。比如，你知道了你该叫对方“表姑”，那么对方应该叫你什么呢？打开“互称”开关再计算一下，你就能看到答案了。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">四、这个工具靠谱吗？</h2>
+  <p class="mb-4">你可能会好奇，它背后的依据是什么？其实，它的计算规则是基于一套被广泛认可的<strong>中国亲戚关系逻辑库</strong>。这套逻辑严格遵循了传统的“九族五服”亲缘体系和现代常用称呼习惯。</p>
+  <p class="mb-6">无论是直系血亲、旁系血亲还是姻亲，大部分常见的、甚至一些比较疏远的亲戚关系，它都能准确计算。如果遇到极其生僻或关系太远的情况，它也会老实告诉你“关系太远，无法计算”。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">五、除了计算，它还能帮你什么？</h2>
+  <p class="mb-4">对于普通人来说，这个工具不止是一个“称呼查询器”，它还有一些意想不到的用处：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>化解社交尴尬</strong>：在见面前提前“预习”一下复杂关系，做到心中有数，称呼时更得体。</li>
+    <li><strong>辅助理解家庭故事</strong>：看年代剧或家族历史时，用它来理清人物关系，故事会变得更清晰有趣。</li>
+    <li><strong>满足好奇心</strong>：单纯地体验一下传统亲戚网络的庞大和巧妙，也是一种文化知识的了解。</li>
+  </ul>
+
+  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
+    <h3 class="text-xl font-semibold mb-3 text-blue-800">小提示：让家庭沟通更顺畅</h3>
+    <p class="mb-3">一个准确的称呼，是尊重和亲近的开始。尤其是在一些正式的家族场合，正确的辈分称呼显得尤为重要。下次再遇到吃不准的亲戚关系时，不妨先用工具查一查。</p>
+    <p class="mb-0">当然，工具是辅助。最重要的还是那份愿意了解、维系亲情的心意。当你笑着喊出正确的称呼时，长辈脸上的笑容就是最好的回报。</p>
+  </div>
+
+  <p class="mt-10 text-lg">希望这个小小的工具，能帮你扫清亲戚关系中的迷雾，让你在每一次家庭相聚时，都能更轻松、更亲切。</p>
 </div>
-`;export{e as default};
+`;export{s as default};

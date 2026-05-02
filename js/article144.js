@@ -1,76 +1,113 @@
 const l=`
-<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6">懒人必备的文档文字提取工具，告别繁琐复制粘贴</h1>
-  <p class="text-lg text-gray-600 mb-8">每次想把PDF、Word里的文字弄出来，都得打开文件一点点复制，格式还容易乱？试试这个一站式的解决方案。</p>
+<div class="text-gray-800 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Excel和CSV文件互转：一个简单工具解决办公小烦恼</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-gray-700">无论你是学生、上班族还是研究人员，只要需要从各种文件中“拿出”纯文字，这篇文章介绍的方法或许能帮你节省大量时间。</p>
-  </div>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你在工作中是否遇到过这样的困扰：精心制作的Excel表格，发给同事或上传到某个系统时，对方却提示无法打开或格式不支持？或者收到一个CSV文件，点开却发现全是乱码，数据都挤在一起？今天，我们就来聊聊这两种常见的电子表格文件，以及如何轻松地在它们之间转换。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4">什么是文档文字提取？</h2>
-  <p class="mb-4">简单来说，它就像一个“文字搬运工”。你手里有一堆不同格式的文件——可能是上司发来的PDF报告、网上下载的Word资料、包含数据的Excel表格，甚至是一个网页文章。</p>
-  <p class="mb-6">这个工具能帮你把这些文件里的所有文字内容，“搬”到一个干干净净的文本文件里。你得到的就是纯粹的、可以随意编辑和复制的文字，没有复杂的排版、图片干扰。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4">它都能处理哪些文件？</h2>
-  <p class="mb-4">基本上，你日常会遇到的文档格式，它都能应对：</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>PDF文件</strong>：最让人头疼的格式之一，无论是扫描版还是文字版，都能提取文字。</li>
-    <li><strong>Word文档</strong>：日常办公最常用的.doc和.docx格式。</li>
-    <li><strong>Excel表格</strong>：把表格里的数据和文字内容提取出来。</li>
-    <li><strong>网页文件(HTML)</strong>：保存下来的网页，可以过滤掉广告、导航栏，只留下正文。</li>
-    <li><strong>Markdown文件</strong>：程序员或写作者常用的轻量级标记文件。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4">用它来做什么？几个真实的场景</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-semibold text-lg mb-2">整理学习资料</h3>
-      <p class="text-gray-700">下载了十几篇PDF论文，需要汇总核心观点。不用打开每个PDF费力查找复制，一键提取所有文字，然后在统一的文本文档里搜索、摘录，效率翻倍。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-semibold text-lg mb-2">处理工作报告</h3>
-      <p class="text-gray-700">每周都要从多个Word和Excel报告中汇总数据。先把所有报告的文字提取出来，再整合信息，避免了在不同软件间反复切换的麻烦。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-semibold text-lg mb-2">收集网络素材</h3>
-      <p class="text-gray-700">做自媒体需要搜集素材，把有用的网页“另存为”HTML文件。用这个工具批量处理，直接得到干净的文本，方便引用和整理，还不带乱七八糟的网页元素。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-semibold text-lg mb-2">存档重要信息</h3>
-      <p class="text-gray-700">合同、说明书等重要PDF，将其文字内容提取保存为TXT文件，占用空间小，方便全文检索，以防原文件丢失或损坏。</p>
+  <!-- 第一部分：解释两种格式 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">Excel 和 CSV，到底有什么区别？</h2>
+    <p class="mb-4">
+      我们可以把文件格式想象成不同的“包装盒”。<strong>Excel文件</strong>（比如 .xlsx 或 .xls）就像一个功能齐全的“豪华礼品盒”，它不仅能装下数据（表格里的数字和文字），还能记住颜色、字体、公式、多个工作表等丰富的样式和设置。这是微软Office和WPS等办公软件最常用的格式。
+    </p>
+    <p class="mb-4">
+      而<strong>CSV文件</strong>（.csv）则像一个最朴素的“通用纸箱”。它只关心最核心的东西——数据本身。它用简单的逗号来分隔每一列，用换行来分隔每一行，里面没有任何颜色、公式或者多余的格式。正因为这种简单，几乎所有的软件和系统都能识别并打开它，兼容性极好。
+    </p>
+    <div class="bg-blue-50 p-4 rounded-lg mb-4 border border-blue-100">
+      <p class="text-blue-800 mb-2"><strong>简单来说：</strong></p>
+      <ul class="list-disc pl-5 space-y-1 text-blue-800">
+        <li>Excel文件：功能强，样式丰富，适合编辑和保存。</li>
+        <li>CSV文件：结构简单，兼容性无敌，适合交换和导入数据。</li>
+      </ul>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4">为什么说这个方式很省心？</h2>
-  <p class="mb-4">传统的复制粘贴方式，往往会遇到格式混乱、无法复制（如扫描PDF）、过程重复枯燥等问题。一个专门的提取工具解决了这些痛点：</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>批量处理</strong>：可以一次性上传多个文件，让工具自动逐个处理，你无需守在电脑前。</li>
-    <li><strong>格式纯净</strong>：提取出的文字会自动清理多余的空行和空格，呈现清爽的文本。</li>
-    <li><strong>结果即拿即用</strong>：每处理完一个文件，你可以立即复制文字，也可以下载为独立的TXT文件。</li>
-    <li><strong>整理方便</strong>：所有文件都处理完后，还能一键“打包下载”，得到一个压缩包，里面是所有文件的文本结果，管理起来非常方便。</li>
-  </ul>
+  <!-- 第二部分：为什么需要转换？ -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么时候需要把文件转来转去？</h2>
+    <p class="mb-4">
+      理解了它们的特性，就知道转换的必要性了。下面这些场景，你可能也碰到过：
+    </p>
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 Excel 转成 CSV</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>将客户数据导入到网站后台或邮件系统。</li>
+          <li>把销售报表上传到只支持CSV的财务软件。</li>
+          <li>和用不同办公软件（如Mac的Numbers）的伙伴共享纯数据。</li>
+          <li>避免因Excel版本不同导致的格式错乱问题。</li>
+        </ul>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 CSV 转成 Excel</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>从银行或电商平台下载的账单是CSV，想用Excel做进一步计算和图表分析。</li>
+          <li>收到的CSV数据没有排版，想把它整理得美观易读。</li>
+          <li>需要将多个CSV文件的数据合并到一个Excel文件的多个工作表中。</li>
+          <li>单纯觉得用Excel查看和编辑更顺手。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <div class="bg-gray-100 p-6 rounded-xl my-10">
-    <h3 class="text-xl font-semibold mb-3">操作起来复杂吗？</h3>
-    <p class="mb-4">完全不难，整个过程就像发邮件添加附件一样简单，只需要三步：</p>
-    <ol class="list-decimal pl-6 space-y-2">
-      <li><strong>选择文件</strong>：点击按钮，从电脑里选中你需要提取文字的PDF、Word等文件。</li>
-      <li><strong>自动转换</strong>：上传后，工具会在后台自动工作，你可以在列表中看到每个文件的处理进度。</li>
-      <li><strong>获取文字</strong>：处理完成后，直接复制文字，或者点击下载，文字就到手了。</li>
+  <!-- 第三部分：介绍工具（非技术化描述） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何轻松完成转换？</h2>
+    <p class="mb-4">
+      以前，你可能需要打开复杂的办公软件，进行“另存为”操作，或者手动复制粘贴，步骤繁琐还容易出错。现在，整个过程可以变得像“上传文件-点击按钮-下载结果”一样简单。
+    </p>
+    <p class="mb-6">
+      一个设计友好的在线工具就能帮你搞定。你只需要：
+    </p>
+    <ol class="list-decimal pl-5 space-y-3 mb-6">
+      <li><strong>选择转换方向</strong>：告诉工具，你是想把Excel变成CSV，还是反过来。</li>
+      <li><strong>上传你的文件</strong>：从电脑里选择那个需要转换的文件。</li>
+      <li><strong>做点小选择（如果需要）</strong>：比如转换Excel时，可以选择里面的某一个具体工作表；转换CSV时，可以选一种更通用的文字编码来彻底避免乱码。</li>
+      <li><strong>开始转换并下载</strong>：点击按钮，稍等片刻，就能得到一份格式完美兼容的新文件。</li>
     </ol>
+    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+      <p class="text-green-800">
+        <strong>整个过程在浏览器里完成</strong>，无需安装任何软件，也无需担心复杂的设置。无论是用Windows电脑、Mac，还是手机，只要你能打开网页，就能使用。
+      </p>
+    </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4">谁特别需要这个功能？</h2>
-  <p class="mb-4">如果你符合下面任何一种情况，那么文档文字提取工具很可能成为你的得力助手：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2">
-    <li>经常需要阅读和汇总大量电子文献的学生或教师。</li>
-    <li>需要整合多份不同格式报告的行政、文秘或数据分析人员。</li>
-    <li>喜欢收藏网页文章、电子书，并希望将其内容本地化保存的阅读爱好者。</li>
-    <li>任何厌倦了在不同软件间反复复制粘贴，追求效率的上班族。</li>
-  </ul>
+  <!-- 第四部分：解决常见问题（FAQ形式） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你可能关心的问题</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换后会丢失我的公式和颜色吗？</h3>
+        <p>当从Excel转为CSV时，<strong>会的</strong>。CSV格式只保存最终的数值和文字结果。所以如果你的表格依赖复杂的计算，建议保留原始的Excel文件作为“母版”，只将最终需要交换的数据转为CSV。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">为什么转换后的CSV用记事本打开是乱码？</h3>
+        <p>这通常是“文字编码”不匹配造成的。选择带有“<strong>BOM</strong>”的UTF-8编码选项进行转换，可以最大限度地保证在不同系统上都能正确显示中文等字符，彻底解决乱码烦恼。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">我的文件很大，转换会卡住吗？</h3>
+        <p>一个好的工具会考虑到大文件的情况，采用流式处理的方式，就像细水长流一样分批处理数据，而不是一次性全部吞下，从而更稳定地完成大型表格的转换。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换安全吗？我的数据会上传到哪里？</h3>
+        <p>对于靠谱的工具，整个转换过程通常在<strong>你的浏览器本地完成</strong>，文件数据并不会被上传到远方的服务器。这意味着你的敏感业务数据或个人信息，从始至终都只留在你自己的电脑或手机上，安全有保障。</p>
+      </div>
+    </div>
+  </div>
 
-  <div class="border-t pt-8 mt-10">
-    <p class="text-gray-700">总而言之，文档文字提取的核心价值就是<strong>“化繁为简”</strong>。它把分散在不同格式、不同文件中的文字信息，统一、纯净地汇集到一起，为你接下来的阅读、编辑、分析和存档扫清障碍。在这个信息爆炸的时代，拥有一个高效的“信息整理”小工具，无疑能让你的学习和工作变得更加轻松。</p>
+  <!-- 结尾总结 -->
+  <div class="bg-gray-50 p-6 rounded-xl border">
+    <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
+    <p class="mb-4 text-center">
+      Excel和CSV，各有各的用武之地。当它们在沟通中“语言不通”时，我们不再需要手足无措。利用简单易用的转换工具，就像给文件找一个“万能翻译”，轻松跨越格式障碍，让数据顺畅地流动起来，为你提高办公效率，减少不必要的麻烦。
+    </p>
+    <p class="text-center text-gray-600">
+      希望这篇文章能帮你理清思路。下次再遇到格式不兼容的提示，不妨试试这个简单的转换方法。
+    </p>
   </div>
 </div>
 `;export{l as default};

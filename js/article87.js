@@ -1,96 +1,151 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">几点睡觉最合适？一个简单方法帮你算出最佳入睡时间</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">每天早上闹钟响起时，你是不是也常常感到疲惫不堪？其实，问题可能不在于你睡了多久，而在于你什么时候入睡。今天，我们来聊聊一个简单却很实用的问题：根据你的起床时间，几点睡觉最合适？</p>
-  </header>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <article class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 border-b pb-6">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">了解真实的自己：一份全面的MBTI性格测试指南</h1>
+      <p class="text-gray-600 text-lg">你是否曾好奇，为什么你和某些人一拍即合，和另一些人却沟通困难？为什么你偏爱安静思考，而朋友却热衷热闹聚会？认识自己，可以从了解性格开始。</p>
+    </header>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 为什么"几点睡"比"睡多久"更重要？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">很多人觉得，只要睡够8小时，几点睡都一样。但事实并非如此。我们的身体有一个内在的"生物钟"，它喜欢规律，也喜欢在特定的时间段休息。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-teal-600 my-5">
-      <p class="text-gray-700"><strong>打个比方：</strong>想象你的身体是一家工厂，晚上10点到凌晨2点是"深度维修"时间。如果你总是在这个时间段还醒着，工厂的维修工作就会被打乱，久而久之，身体就会出现各种小毛病——白天犯困、注意力不集中、皮肤变差、抵抗力下降。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">所以，与其纠结睡了几个小时，不如先搞清楚：我该什么时候上床？</p>
-  </section>
+    <!-- 引言 -->
+    <section class="mb-10">
+      <p class="text-gray-700 mb-4">在生活中，我们常常会遇到这样的疑问：我到底适合做什么工作？为什么我总感觉和别人想的不一样？如何更好地与他人相处？其实，这些问题都与我们的性格特质密切相关。</p>
+      <p class="text-gray-700 mb-4">有一种被广泛使用的工具，可以帮助我们描绘出自己性格的“地图”，它就是MBTI性格测试。它不是什么神秘的占卜，而是一个基于心理学理论的性格类型指标，帮助我们更清晰地看到自己的偏好和倾向。</p>
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+        <p class="text-gray-800">简单来说，MBTI就像一面镜子，帮助我们观察自己在获取能量、收集信息、做决策和安排生活这四个方面的习惯性偏好。</p>
+      </div>
+    </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 不同年龄的人，需要睡多久？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">国家卫生健康委员会的睡眠健康指南告诉我们，不同年龄段的人，对睡眠的需求是不一样的：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">成年人（18-64岁）：</strong>每天需要7-8小时睡眠。这是大多数打工人的标准配置。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">中小学生：</strong>每天需要8-10小时睡眠。孩子正在长身体，睡眠对他们的发育和学习都非常重要。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">老年人（65岁以上）：</strong>每天需要6-7小时睡眠。随着年龄增长，睡眠时间会自然减少，但质量更重要。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">知道了需要睡多久，再结合你每天必须起床的时间，就能倒推出你应该什么时候入睡了。</p>
-  </section>
+    <!-- MBTI是什么 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">MBTI是什么？不仅仅是四个字母</h2>
+      <p class="text-gray-700 mb-4">你可能见过诸如“INFP”、“ESTJ”这样的四个字母组合。这不是密码，而是MBTI性格测试的结果代码。每一个字母代表你在某个性格维度上的倾向。</p>
+      <p class="text-gray-700 mb-6">它主要从四个角度来观察我们：</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">1. 能量来源：内向(I) 还是 外向(E)？</h3>
+          <p class="text-gray-700">这里不是指爱不爱说话，而是指你从哪里获得能量。喜欢从内心世界、独处中恢复精力的人是“内向”(I)；而通过与外界互动、与人交往来充电的人则是“外向”(E)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">2. 信息收集：实感(S) 还是 直觉(N)？</h3>
+          <p class="text-gray-700">你更相信眼睛看到的现实细节，还是更关注未来的可能性？注重具体事实和实际经验的是“实感”(S)；喜欢抽象概念、联想和潜在意义的是“直觉”(N)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">3. 决策方式：思考(T) 还是 情感(F)？</h3>
+          <p class="text-gray-700">做决定时，你更依赖逻辑分析，还是更重视人情与和谐？基于客观逻辑和因果分析做判断的是“思考”(T)；优先考虑价值观和他人感受的是“情感”(F)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">4. 生活方式：判断(J) 还是 感知(P)？</h3>
+          <p class="text-gray-700">你喜欢有计划、有条理的生活，还是灵活、随性的方式？喜欢做决定、让事情有明确结果的是“判断”(J)；喜欢保持开放、适应变化的是“感知”(P)。</p>
+        </div>
+      </div>
+      <p class="text-gray-700">将这四个维度的倾向组合起来，就形成了16种不同的性格类型，每一种都有其独特的特点。</p>
+    </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 一个简单的计算方法</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">假设你每天早上7点半必须起床，成年人需要睡8小时。那么，倒推回去，你应该在晚上11点半左右入睡。</p>
-    <p class="mb-4 text-gray-700 leading-relaxed">但这里有个小细节：<strong>入睡不等于上床</strong>。从躺下到真正睡着，大多数人需要15-30分钟。所以，如果你11点半要入睡，最好11点就上床躺好。</p>
-    <div class="bg-teal-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong></p>
-      <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-700">
-        <li>起床时间：早上7:30</li>
-        <li>需要睡眠：8小时</li>
-        <li>最佳入睡时间：晚上11:30</li>
-        <li>建议上床时间：晚上11:15（预留15分钟准备）</li>
+    <!-- 测试过程 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">一次专业的MBTI测试是怎样的？</h2>
+      <p class="text-gray-700 mb-4">一个完整的在线MBTI测试，通常会让你回答一系列关于日常行为、想法和感受的选择题。这些题目旨在探索你在上述四个维度上的自然偏好。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg mb-6">
+        <h3 class="font-bold text-gray-800 text-lg mb-3">测试时你可能会看到：</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">1</span>
+            <span><strong>清晰的进度提示</strong>：让你知道已经完成了多少，还有多少题目。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">2</span>
+            <span><strong>贴近生活的场景题</strong>：比如“在社交聚会中，你通常...”，选项没有对错，只需选择最符合你真实感受的一项。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">3</span>
+            <span><strong>实时的维度反馈</strong>：有些测试会边做边显示你在各个维度上的初步倾向，就像看着自己的性格画像一笔笔画出来。</span>
+          </li>
+        </ul>
+      </div>
+      <p class="text-gray-700">完成所有题目后，系统会根据你的选择进行计分，最终得出一个属于你的四字母性格类型代码。</p>
+    </section>
+
+    <!-- 报告价值 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">测试报告能告诉你什么？</h2>
+      <p class="text-gray-700 mb-6">一份详细的MBTI测试报告，远不止告诉你四个字母。它更像一份个人使用说明书，可以帮助你：</p>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-green-600 font-bold">优</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">发现自己的天然优势</h3>
+            <p class="text-gray-700">报告会详细分析你这种性格类型的闪光点。比如，你可能天生善于逻辑分析、有强大的创新能力，或者对人际关系有深刻的洞察力。了解优势，能让你在工作和生活中更好地发挥所长。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-yellow-600 font-bold">长</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">看到可能的成长方向</h3>
+            <p class="text-gray-700">每种性格也都有其面临的挑战。报告可能会指出，你可能需要注意避免过度陷入理论而忽视执行，或者需要学习更好地表达情感。认识到这些，是个人成长的第一步。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-indigo-600 font-bold">职</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">获得职业选择的参考</h3>
+            <p class="text-gray-700">性格与职业的匹配度很重要。报告常常会列出一些高度匹配的职业方向。例如，内向直觉思考感知型的人，可能在科研、编程、架构设计等领域如鱼得水。这可以为你的学业或职业规划提供有价值的参考。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-purple-600 font-bold">处</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">改善人际沟通与理解</h3>
+            <p class="text-gray-700">当你明白自己是“思考型”而伴侣是“情感型”时，就能理解为什么Ta有时会觉得你“太讲道理”。MBTI提供了一个中立的框架，帮助我们理解人与人的不同，学会用对方能接受的方式沟通，减少摩擦。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 正确看待 -->
+    <section class="mb-10 bg-gray-50 p-6 rounded-xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">如何正确看待MBTI测试结果？</h2>
+      <p class="text-gray-700 mb-4">在探索自我的旅程中，MBTI是一个好用的工具，但也有一些需要注意的地方：</p>
+      <ul class="space-y-3 text-gray-700 mb-4">
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>它描述偏好，不是能力</strong>：MBTI说明你“喜欢”怎样，而不是你“擅长”什么。一个内向的人也可以练就出色的演讲能力。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>类型没有好坏之分</strong>：16种性格类型各有其独特的价值和贡献。世界需要细致的守护者，也需要大胆的创新者。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>人是动态发展的</strong>：你的偏好可能会随着经历和环境发生细微变化。测试结果是一个当下的快照，而非终身不变的标签。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>目的是理解与发展</strong>：测试的最终目的不是把自己框定在某个类型里，而是借助这种洞察，更好地扬长避短，实现个人成长，同时更包容地看待他人。</span>
+        </li>
       </ul>
-    </div>
-    <p class="text-gray-700 leading-relaxed">这样一算，是不是就很清楚了？</p>
-  </section>
+      <p class="text-gray-700">最好的使用方式，是把报告作为一面镜子，从中看到自己可能忽略的特点，然后带着这份对自己的理解，更自信、更智慧地去生活和工作。</p>
+    </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 睡前准备也很重要</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">知道了上床时间，还要做好睡前准备，才能真正睡个好觉。以下是一些实用的小建议：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-blue-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前1小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">放下手机，远离电脑屏幕。蓝光会抑制褪黑素分泌，让你更难入睡。可以看看纸质书、听听轻音乐，或者泡个热水脚。</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前2-3小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">不要吃太饱，也不要喝太多水。晚餐后可以适当散步，但避免剧烈运动。咖啡和茶最好下午就不要喝了。</p>
-      </div>
-    </div>
-    <p class="text-gray-700 leading-relaxed">这些小习惯看似简单，但坚持下来，你会发现入睡变得更容易，睡眠质量也会明显提升。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：我每天睡够8小时，但还是觉得累，怎么回事？</p>
-        <p class="text-gray-700 text-sm">A：可能是睡眠质量不高，或者入睡时间不规律。建议固定上床和起床时间，让身体形成规律。另外，睡前玩手机、熬夜后补觉等习惯都会影响睡眠质量。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：周末可以晚睡晚起吗？</p>
-        <p class="text-gray-700 text-sm">A：偶尔可以，但不要相差太大。如果平时11点睡，周末熬到凌晨2点，周一早上会非常痛苦。建议周末起床时间不要比平时晚超过1小时。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：入睡困难怎么办？</p>
-        <p class="text-gray-700 text-sm">A：如果躺下30分钟还睡不着，不要强迫自己。可以起来做点放松的事，比如看会儿书，等有困意了再躺下。长期入睡困难的话，建议咨询医生。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：好的睡眠，从规律开始</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">睡眠占了我们人生的三分之一，它影响着我们的精力、情绪、工作效率，甚至健康。而好的睡眠，其实不需要什么神奇的方法，只需要做到两点：<strong>规律</strong>和<strong>充足</strong>。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">今天开始，试着算算你的最佳入睡时间，然后坚持每天在那个时间上床。一周后，你会发现早上起床不再那么痛苦，白天的精神也会好很多。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">想知道你该几点睡？用上面的工具算一算，今晚就开始改变吧！</p>
-    </div>
-  </section>
-</article>
+    <!-- 结语 -->
+    <section class="pt-6 border-t">
+      <p class="text-gray-700 mb-6">认识自己是一生的课题。MBTI性格测试就像在这条路上提供了一张粗略但很有用的地图。它不能决定你的终点，但能帮你了解自己出发时的“默认路径”。</p>
+      <p class="text-gray-700">如果你对“我究竟是怎样的一个人”感到好奇，不妨花上一点时间，诚实地回答一些问题。你可能会对自己有新的发现，也可能对身边人的行为多一分理解。这份自我了解的旅程，本身就是一种收获。</p>
+    </section>
+  </article>
+</div>
 `;export{s as default};

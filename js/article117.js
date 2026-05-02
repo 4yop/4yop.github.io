@@ -1,142 +1,167 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
   <article>
-    <!-- 主标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-      电子签名怎么做？这个免费小工具，3秒搞定签名，还特安全
-    </h1>
+    <!-- 标题 -->
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">文字一键变美图：简单好用的在线文字图片生成工具</h1>
 
-    <!-- 摘要/引导 -->
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      有时候啊，一份文件急着要签名，身边又没有打印机和笔，真是急死人。别急，今天介绍一个完全在你自己手机上或电脑上就能用的“电子签名”小方法，不用安装软件，不用花钱，关键是签完的字还能直接保存成图片，用起来跟手写的一模一样。
-    </p>
-
-    <!-- 什么是电子签名 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-        什么是电子签名？它有什么用？
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        简单说，电子签名就是用手写笔、鼠标或者直接用手指头，在屏幕上写下的你的名字。它不是一个简单的打字字体，而是你亲手一笔一画“写”出来的，能代表你个人的笔迹。
+    <!-- 引言 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 sm:mb-8 rounded-r">
+      <p class="text-gray-800">
+        你是否遇到过这样的情况：想在朋友圈发一段有格调的句子，配图却找不到合适的？或者，为工作报告、演示文稿制作一张清晰又美观的标题图，总觉得用软件太麻烦？今天，我们就来聊聊一个能解决这些烦恼的小工具——在线文字图片生成器。
       </p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed">
-        <li><span class="font-medium">远程签合同：</span>朋友或同事在外地，把合同发给你，你签好名再发回去，省去来回邮寄的麻烦。</li>
-        <li><span class="font-medium">审批文件：</span>公司内部的请假条、报销单需要你签字确认，直接线上完成。</li>
-        <li><span class="font-medium">日常证明：</span>给孩子学校的回执、社区的一些确认单，都可以用上。</li>
-        <li><span class="font-medium">保存签名样式：</span>做一次好看的签名，保存下来，以后随时能用。</li>
+    </div>
+
+    <!-- 第一部分：什么是文字图片，有什么用？ -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">一、 为什么需要把文字做成图片？</h2>
+      <p class="text-gray-700 mb-4">纯文字发布，有时显得单调，难以抓住眼球。而一张精心设计的文字图片，却能瞬间提升内容的质感。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">社交媒体分享</h3>
+          <p class="text-gray-600">把喜欢的名言、诗句、心情语录配上好看的字体和背景，生成图片分享到朋友圈、微博、小红书，点赞率更高。</p>
+        </div>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">内容创作与展示</h3>
+          <p class="text-gray-600">为公众号文章制作头图、为视频制作封面、为电商商品制作宣传标语，一张好的文字图是吸引用户点击的第一步。</p>
+        </div>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">学习与工作</h3>
+          <p class="text-gray-600">提炼PPT的核心观点、制作学习卡片、整理知识重点，图片形式更直观，也方便保存和传播。</p>
+        </div>
+        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-lg font-medium text-gray-900 mb-2">个人表达</h3>
+          <p class="text-gray-600">生日祝福、节日问候、活动邀请，用一张自定义的图片来表达，比普通文字消息更有心意和仪式感。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第二部分：这个生成工具的核心特点 -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">二、 一个好用的文字图片工具应该什么样？</h2>
+      <p class="text-gray-700 mb-6">一个对普通人友好的工具，关键在于“简单”和“效果”。下面这几条，我认为很重要：</p>
+      <ul class="space-y-4 sm:space-y-5">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-green-600 font-bold text-sm">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">所见即所得，实时预览</h3>
+            <p class="text-gray-600">调整任何设置，比如字体大小、颜色，旁边的图片预览区立刻就能看到变化。不用猜效果，非常直观。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-blue-600 font-bold text-sm">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">样式丰富，自由搭配</h3>
+            <p class="text-gray-600">不仅有多种中文字体可选，还能设置纯色或漂亮的渐变色彩，给文字加粗、变斜体、加阴影，让文字更有设计感。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-purple-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-purple-600 font-bold text-sm">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">操作简单，不用学习</h3>
+            <p class="text-gray-600">所有功能都用滑块、按钮、颜色选择器来操作，就像玩简单的游戏一样。还有现成的模板可以一键套用，三秒出图。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-yellow-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
+            <span class="text-yellow-600 font-bold text-sm">4</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">输出方便，格式齐全</h3>
+            <p class="text-gray-600">做好图片后，可以下载成常用的PNG或JPG格式，高清无水印。有些工具还支持直接复制图片到手机相册，分享更快捷。</p>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <!-- 工具特点 -->
-    <section class="mb-10 bg-blue-50 p-6 rounded-lg border border-blue-100">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-        这个签名工具的几个贴心之处
-      </h2>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-            <span class="text-blue-600 font-bold">1</span>
-          </div>
-          <div>
-            <h3 class="font-medium text-gray-900 mb-1">绝对安全，信息不联网</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">你写的每一个笔画，都只留在你自己的手机或电脑里，不会上传到任何人的服务器。签完直接保存到本地，就像在自家本子上写字一样私密。</p>
-          </div>
+    <!-- 第三部分：如何使用（非教程，是功能介绍） -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">三、 它是如何帮你制作图片的？</h2>
+      <p class="text-gray-700 mb-6">整个过程就像在纸上画画写字一样自然，只不过这张“纸”和“笔”都在网页上。你只需要关注你想表达的内容和喜欢的样子。</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">1</span>
+            第一步：写下你的文字
+          </h3>
+          <p class="text-gray-600 pl-11">在最上面的文本框里，输入任何你想展示的文字。可以是一句话，一段诗，或者一个标题。支持换行，让排版更灵活。</p>
         </div>
-        <div class="flex items-start">
-          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-            <span class="text-blue-600 font-bold">2</span>
-          </div>
-          <div>
-            <h3 class="font-medium text-gray-900 mb-1">操作简单，像真的一样</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">打开就能写，电脑用鼠标，手机用手指。写错了可以“撤销”，还能选不同的笔迹颜色和纸张背景，直到你满意为止。</p>
-          </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">2</span>
+            第二步：打扮你的文字
+          </h3>
+          <p class="text-gray-600 pl-11 mb-3">这是最有意思的部分。就像给文字“选衣服”：</p>
+          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
+            <li><strong>选字体和大小</strong>：用宋体显得端庄，用黑体显得醒目，用楷体显得文艺。滑动滑块就能轻松改变字号。</li>
+            <li><strong>选颜色</strong>：可以选一个单色，更推荐试试“渐变色”，让文字从一种颜色自然过渡到另一种，效果非常出彩。</li>
+            <li><strong>加特效</strong>：勾选“粗体”让文字更有力量，勾选“阴影”让文字从背景中跳出来。</li>
+            <li><strong>调位置</strong>：选择让文字居中对齐、靠左还是靠右。</li>
+          </ul>
         </div>
-        <div class="flex items-start">
-          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-            <span class="text-blue-600 font-bold">3</span>
-          </div>
-          <div>
-            <h3 class="font-medium text-gray-900 mb-1">导出方便，格式齐全</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">签好的名字可以保存成常用的PNG、JPG图片，方便插入Word、PDF文件。也可以保存为透明的背景图片，叠加到任何文件上都好看。</p>
-          </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">3</span>
+            第三步：布置你的画布
+          </h3>
+          <p class="text-gray-600 pl-11 mb-3">画布就是文字背后的那张“纸”。你可以：</p>
+          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
+            <li>设置画布的宽和高，适应不同平台（如手机竖屏、电脑横屏）。</li>
+            <li>选择画布的背景颜色，白色简洁，浅灰色柔和，选一个和文字搭配的颜色。</li>
+            <li>调整文字距离画布边缘的“内边距”，让版面看起来更舒服。</li>
+            <li>如果不知道设多大，可以直接点击“16:9”（视频比例）、“1:1”（正方形）等常用比例按钮。</li>
+          </ul>
         </div>
-        <div class="flex items-start">
-          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-            <span class="text-blue-600 font-bold">4</span>
-          </div>
-          <div>
-            <h3 class="font-medium text-gray-900 mb-1">自动裁剪，省心省力</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">保存时，工具会自动把签名周围多余的空白裁掉，你得到的图片就是干干净净的签名本身，不用再自己用软件裁剪。</p>
-          </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">4</span>
+            第四步：保存与使用
+          </h3>
+          <p class="text-gray-600 pl-11">图片满意后，点击“下载PNG”或“下载JPG”就能保存到电脑或手机里。有些工具提供“复制图片”功能，可以直接粘贴到聊天软件里发送。</p>
         </div>
       </div>
     </section>
 
-    <!-- 使用场景 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-        谁特别需要它？看看有没有你
-      </h2>
-      <div class="space-y-4">
-        <div class="p-4 border border-gray-200 rounded-lg">
-          <h3 class="font-medium text-gray-900 mb-1">经常在家办公的上班族</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">不用为了签个字特意跑一趟公司，电子签名后直接邮件回复，工作效率高。</p>
-        </div>
-        <div class="p-4 border border-gray-200 rounded-lg">
-          <h3 class="font-medium text-gray-900 mb-1">自由职业者和创业者</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">与合作方签协议、给客户开发票，有个正式的电子签名显得更专业。</p>
-        </div>
-        <div class="p-4 border border-gray-200 rounded-lg">
-          <h3 class="font-medium text-gray-900 mb-1">学生和家长</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">填各种电子表格、提交在线申请时，往往需要一个签名栏，这个小工具正好派上用场。</p>
-        </div>
-        <div class="p-4 border border-gray-200 rounded-lg">
-          <h3 class="font-medium text-gray-900 mb-1">任何需要处理文件的人</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">生活中总有些需要你“确认签字”的时刻，提前准备好电子签名，有备无患。</p>
-        </div>
+    <!-- 第四部分：技巧和小建议 -->
+    <section class="mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">四、 几个让图片更好看的小技巧</h2>
+      <div class="bg-gradient-to-r from-gray-50 to-white p-5 sm:p-6 rounded-xl border border-gray-200">
+        <ul class="space-y-3 sm:space-y-4">
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>从模板开始</strong>：如果不熟悉配色和搭配，可以先使用“经典黑白”、“渐变蓝紫”等预设模板，在其基础上微调，能快速找到感觉。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>对比产生美</strong>：深色文字配浅色背景，或浅色文字配深色背景，这样阅读起来最清晰。如果文字用了很亮的颜色，背景就用暗一些的来衬托。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>留白很重要</strong>：适当增加“内边距”，不要让文字挤满画布的边缘，留出一些空白会让整体看起来更高级、更舒适。</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-gray-700"><strong>内容精炼</strong>：一张图片上的文字不宜过多，突出重点即可。如果需要表达长篇内容，可以制作成系列图片。</span>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-        你可能关心的问题
-      </h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="font-medium text-gray-900 mb-2">问：用这个工具签名，有法律效力吗？</h3>
-          <p class="text-gray-700 leading-relaxed">答：这取决于你用在什么地方。对于公司内部审批、日常确认等大多数非严格法律场景，完全够用。如果是涉及重大财产的法律合同，建议使用国家认证的第三方电子签名平台，它们会提供更严格的身份验证和存证服务。我们这个工具主要解决的是“方便”和“效率”问题。</p>
-        </div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-2">问：手机上用手指能写得好吗？</h3>
-          <p class="text-gray-700 leading-relaxed">答：刚开始可能需要适应一下，就像第一次在手机上写字一样。多练几次，或者把手机横过来，获得更大的书写区域，就能写出不错的签名。工具也支持“撤销”功能，写坏了重来就好。</p>
-        </div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-2">问：保存的图片会很大吗？</h3>
-          <p class="text-gray-700 leading-relaxed">答：不用担心。因为主要是线条，保存成图片文件非常小，通常只有几十KB，不会占用太多手机空间，通过微信、邮件发送也很快。</p>
-        </div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-2">问：需要注册账号或付费吗？</h3>
-          <p class="text-gray-700 leading-relaxed">答：完全不需要。这是一个纯粹的网页工具，打开即用，用完即走。没有任何注册、登录的步骤，也永远不会弹出来让你付费的窗口。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 结尾引导 -->
-    <section class="text-center p-8 border border-gray-300 rounded-xl bg-gray-50">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-3">试试亲手做一个专属电子签名吧</h2>
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        花几分钟时间，创建一个既方便又体面的电子签名。下次再遇到需要签字的时候，你就可以从容不迫地拿出它，快速解决问题。记住，整个过程都在你自己的设备上完成，安全又放心。
+    <!-- 结尾 -->
+    <section class="pt-6 border-t border-gray-200">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">总结</h2>
+      <p class="text-gray-700 text-lg text-center mb-6">
+        把文字变成好看的图片，已经不再是设计师的专属技能。借助简单易用的<span class="font-medium text-gray-900">在线文字图片生成工具</span>，每个人都能轻松制作出用于分享、工作或学习的精美图文。下次当你有了一段想突出展示的文字时，不妨试试这个方法，给你的表达增添一份视觉的魅力。
       </p>
-      <p class="text-sm text-gray-600">
-        （提示：工具页面通常包含一个空白的画布区域，旁边有颜色选择、清除、保存等按钮，操作非常直观。）
-      </p>
+      <div class="text-center text-gray-500 text-sm">
+        <p>希望这篇文章能帮助你了解如何制作文字图片。关键就是：<strong>写下想法，自由设计，轻松保存</strong>。</p>
+      </div>
     </section>
-
-    <!-- 优化尾部 -->
-    <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
-      <p>本文介绍了在线电子签名工具的用途、优势和使用场景，帮助你高效、安全地处理日常文件签署需求。</p>
-    </footer>
   </article>
 </div>
-`;export{e as default};
+`;export{s as default};

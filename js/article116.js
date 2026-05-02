@@ -1,135 +1,142 @@
-const t=`
-<div class="text-gray-800 font-sans bg-white">
-  <!-- 文章标题 -->
-  <h1 class="text-2xl md:text-3xl font-bold mb-6 pt-6 px-4 md:px-0 text-center">电子印章制作全攻略：轻松在线设计专属印章</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <article>
+    <!-- 主标题 -->
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+      电子签名怎么做？这个免费小工具，3秒搞定签名，还特安全
+    </h1>
 
-  <!-- 开篇引入 -->
-  <div class="mb-8 px-4 md:px-0">
-    <p class="text-base md:text-lg mb-4 leading-relaxed">在数字时代，很多文件、合同都需要盖章确认。但传统印章携带不便，而电子印章就成了现代办公的好帮手。今天，我们就来聊聊电子印章的那些事，让你也能轻松设计出自己的专属印章。</p>
-    <p class="text-base md:text-lg leading-relaxed">或许你正在为公司寻找一个正式的电子印章，或者想为个人文件添加一个独特的签名章。不管什么需求，了解一些基本知识，就能让你的印章既美观又实用。</p>
-  </div>
+    <!-- 摘要/引导 -->
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+      有时候啊，一份文件急着要签名，身边又没有打印机和笔，真是急死人。别急，今天介绍一个完全在你自己手机上或电脑上就能用的“电子签名”小方法，不用安装软件，不用花钱，关键是签完的字还能直接保存成图片，用起来跟手写的一模一样。
+    </p>
 
-  <!-- 印章类型介绍 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见的电子印章有哪些样式？</h2>
-    <p class="text-base mb-4 leading-relaxed">电子印章的样式多种多样，每种都有不同的用途和风格。了解这些，可以帮助你快速选择适合自己的类型。</p>
-    <ul class="list-none space-y-3">
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">圆形印章</h3>
-          <p class="text-gray-600 leading-relaxed">这是最常见的一种，通常用于公司公章或财务章。印章外圈可以环绕公司名称，中间是“专用章”或部门名称，整体显得正式、权威。</p>
+    <!-- 什么是电子签名 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+        什么是电子签名？它有什么用？
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        简单说，电子签名就是用手写笔、鼠标或者直接用手指头，在屏幕上写下的你的名字。它不是一个简单的打字字体，而是你亲手一笔一画“写”出来的，能代表你个人的笔迹。
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed">
+        <li><span class="font-medium">远程签合同：</span>朋友或同事在外地，把合同发给你，你签好名再发回去，省去来回邮寄的麻烦。</li>
+        <li><span class="font-medium">审批文件：</span>公司内部的请假条、报销单需要你签字确认，直接线上完成。</li>
+        <li><span class="font-medium">日常证明：</span>给孩子学校的回执、社区的一些确认单，都可以用上。</li>
+        <li><span class="font-medium">保存签名样式：</span>做一次好看的签名，保存下来，以后随时能用。</li>
+      </ul>
+    </section>
+
+    <!-- 工具特点 -->
+    <section class="mb-10 bg-blue-50 p-6 rounded-lg border border-blue-100">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">
+        这个签名工具的几个贴心之处
+      </h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+            <span class="text-blue-600 font-bold">1</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900 mb-1">绝对安全，信息不联网</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">你写的每一个笔画，都只留在你自己的手机或电脑里，不会上传到任何人的服务器。签完直接保存到本地，就像在自家本子上写字一样私密。</p>
+          </div>
         </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">方形印章</h3>
-          <p class="text-gray-600 leading-relaxed">方形印章简洁大方，常用于部门章或个人签名章。文字通常从上到下排列，适合名字较短的情况，看起来干净利落。</p>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+            <span class="text-blue-600 font-bold">2</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900 mb-1">操作简单，像真的一样</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">打开就能写，电脑用鼠标，手机用手指。写错了可以“撤销”，还能选不同的笔迹颜色和纸张背景，直到你满意为止。</p>
+          </div>
         </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">私人印章</h3>
-          <p class="text-gray-600 leading-relaxed">个人使用的印章，比如用于书画落款或文件签名。一般是长方形，文字竖排，体现个人品味和传统韵味。</p>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+            <span class="text-blue-600 font-bold">3</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900 mb-1">导出方便，格式齐全</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">签好的名字可以保存成常用的PNG、JPG图片，方便插入Word、PDF文件。也可以保存为透明的背景图片，叠加到任何文件上都好看。</p>
+          </div>
         </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">仿古印章</h3>
-          <p class="text-gray-600 leading-relaxed">带有复古风格的印章，模仿古代玉玺或石刻效果。外圈可能有双层线条，文字排列更具艺术感，适合文化、创意类场景。</p>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+            <span class="text-blue-600 font-bold">4</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900 mb-1">自动裁剪，省心省力</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">保存时，工具会自动把签名周围多余的空白裁掉，你得到的图片就是干干净净的签名本身，不用再自己用软件裁剪。</p>
+          </div>
         </div>
-      </li>
-    </ul>
-  </div>
-
-  <!-- 设计要素详解 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">如何设计一个好看的电子印章？</h2>
-    <p class="text-base mb-6 leading-relaxed">设计电子印章就像搭配衣服，颜色、字体、文字都要协调。掌握这几个要点，你也能成为印章设计小能手。</p>
-
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">文字内容怎么安排？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">印章上的文字是关键。对于圆形印章，外圈通常放公司全称，比如“某某有限公司”，中间则是“专用章”或核心标识。私人印章一般直接放姓名。</p>
-        <p class="text-gray-600 leading-relaxed">记住，文字要清晰易读。太挤或太松都会影响效果，可以根据字数调整大小和间距。</p>
       </div>
+    </section>
 
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">颜色选哪种红更好？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">红色是印章的传统颜色，但红色也有不同色调：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>大红色</strong>：最常用，鲜艳醒目，适合正式场合。</li>
-          <li><strong>朱砂红</strong>：稍暗一些，带有古典感，看起来更沉稳。</li>
-          <li><strong>暗红色</strong>：深沉厚重，适合仿古或庄重的设计。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">一般来说，公司印章用大红色，个人或艺术印章可以尝试其他红色。</p>
+    <!-- 使用场景 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+        谁特别需要它？看看有没有你
+      </h2>
+      <div class="space-y-4">
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h3 class="font-medium text-gray-900 mb-1">经常在家办公的上班族</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">不用为了签个字特意跑一趟公司，电子签名后直接邮件回复，工作效率高。</p>
+        </div>
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h3 class="font-medium text-gray-900 mb-1">自由职业者和创业者</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">与合作方签协议、给客户开发票，有个正式的电子签名显得更专业。</p>
+        </div>
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h3 class="font-medium text-gray-900 mb-1">学生和家长</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">填各种电子表格、提交在线申请时，往往需要一个签名栏，这个小工具正好派上用场。</p>
+        </div>
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h3 class="font-medium text-gray-900 mb-1">任何需要处理文件的人</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">生活中总有些需要你“确认签字”的时刻，提前准备好电子签名，有备无患。</p>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">字体风格怎么选？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">字体决定了印章的气质。常见选择有：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>宋体</strong>：端正规范，适合正式的公司印章。</li>
-          <li><strong>隶书</strong>：优雅古朴，有传统书法味道。</li>
-          <li><strong>行楷</strong>：流畅自然，介于工整和随意之间。</li>
-          <li><strong>篆感字体</strong>：模仿古代篆书，适合仿古印章。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">选择时，考虑印章用途——正式文件选规整字体，个人创作可选艺术字体。</p>
+    <!-- FAQ -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+        你可能关心的问题
+      </h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">问：用这个工具签名，有法律效力吗？</h3>
+          <p class="text-gray-700 leading-relaxed">答：这取决于你用在什么地方。对于公司内部审批、日常确认等大多数非严格法律场景，完全够用。如果是涉及重大财产的法律合同，建议使用国家认证的第三方电子签名平台，它们会提供更严格的身份验证和存证服务。我们这个工具主要解决的是“方便”和“效率”问题。</p>
+        </div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">问：手机上用手指能写得好吗？</h3>
+          <p class="text-gray-700 leading-relaxed">答：刚开始可能需要适应一下，就像第一次在手机上写字一样。多练几次，或者把手机横过来，获得更大的书写区域，就能写出不错的签名。工具也支持“撤销”功能，写坏了重来就好。</p>
+        </div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">问：保存的图片会很大吗？</h3>
+          <p class="text-gray-700 leading-relaxed">答：不用担心。因为主要是线条，保存成图片文件非常小，通常只有几十KB，不会占用太多手机空间，通过微信、邮件发送也很快。</p>
+        </div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">问：需要注册账号或付费吗？</h3>
+          <p class="text-gray-700 leading-relaxed">答：完全不需要。这是一个纯粹的网页工具，打开即用，用完即走。没有任何注册、登录的步骤，也永远不会弹出来让你付费的窗口。</p>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">细节调整有什么讲究？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">想让印章更逼真或独特，可以注意这些细节：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>文字大小</strong>：太大显得笨重，太小看不清，适中最好。</li>
-          <li><strong>线条粗细</strong>：粗线条有力，细线条精致，根据印章大小调整。</li>
-          <li><strong>斑驳效果</strong>：添加一点磨损感，让印章像用过一样，更真实自然。</li>
-          <li><strong>五角星图案</strong>：在圆形印章中间加个五角星，是常见设计，增加正式感。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">这些小调整，能让你的印章脱颖而出。</p>
-      </div>
-    </div>
-  </div>
+    <!-- 结尾引导 -->
+    <section class="text-center p-8 border border-gray-300 rounded-xl bg-gray-50">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-3">试试亲手做一个专属电子签名吧</h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        花几分钟时间，创建一个既方便又体面的电子签名。下次再遇到需要签字的时候，你就可以从容不迫地拿出它，快速解决问题。记住，整个过程都在你自己的设备上完成，安全又放心。
+      </p>
+      <p class="text-sm text-gray-600">
+        （提示：工具页面通常包含一个空白的画布区域，旁边有颜色选择、清除、保存等按钮，操作非常直观。）
+      </p>
+    </section>
 
-  <!-- 使用和导出 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">做好后怎么使用电子印章？</h2>
-    <p class="text-base mb-4 leading-relaxed">设计完成后，电子印章通常可以保存为透明背景的图片文件（比如PNG格式）。这样，你就能轻松把它添加到PDF、Word文档或图片中。</p>
-    <p class="text-base leading-relaxed">使用时，确保印章清晰可见，位置合适。对于重要文件，建议搭配数字签名，以增强安全性和法律效力。如果你是个人使用，比如电子合同或作品签名，一个设计精良的电子印章既能体现诚意，又方便快捷。</p>
-  </div>
-
-  <!-- 常见问题 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">关于电子印章，你可能还想知道</h2>
-    <div class="space-y-4">
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">电子印章合法吗？</h3>
-        <p class="text-gray-600 leading-relaxed">在大多数情况下，电子印章需要符合相关法律法规，比如使用数字证书认证，才具有法律效力。对于日常非正式使用，如个人文件或内部文档，自定义电子印章是方便的工具。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">我可以自己设计电子印章吗？</h3>
-        <p class="text-gray-600 leading-relaxed">当然可以！现在有很多在线工具允许你自由设计电子印章，选择样式、颜色、文字，然后导出使用。只要不侵犯他人权益，用于个人或授权场合是没问题的。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">设计时要注意什么？</h3>
-        <p class="text-gray-600 leading-relaxed">避免使用过于花哨的颜色或字体，确保文字清晰可辨。如果是公司用途，最好遵循品牌规范。简单、专业的设计往往最有效。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 结尾总结 -->
-  <div class="bg-gray-50 rounded-lg p-6 mb-8 mx-4 md:mx-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-3 text-center">小结</h2>
-    <p class="text-base text-gray-700 mb-3 leading-relaxed">电子印章制作并不复杂。从选择样式（圆印、方印、私章或仿古），到设置文字、颜色、字体，再到调整细节，每一步都能让你更接近理想的印章。</p>
-    <p class="text-base text-gray-700 leading-relaxed">无论用于工作还是个人，一个好的电子印章既能提升效率，又能展现个性。希望这些介绍能帮助你轻松上手，设计出既美观又实用的专属印章。</p>
-  </div>
-
-  <!-- 版权或备注 -->
-  <div class="text-center text-gray-500 text-sm pb-6 px-4 md:px-0">
-    <p>本文仅供科普参考，具体使用请遵循相关规范。</p>
-  </div>
+    <!-- 优化尾部 -->
+    <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
+      <p>本文介绍了在线电子签名工具的用途、优势和使用场景，帮助你高效、安全地处理日常文件签署需求。</p>
+    </footer>
+  </article>
 </div>
-`;export{t as default};
+`;export{e as default};

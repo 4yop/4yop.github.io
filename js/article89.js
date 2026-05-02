@@ -1,103 +1,114 @@
-const r=`
-<div class="max-w-3xl mx-auto p-4 text-gray-800">
-  <h1 class="text-3xl font-bold mb-4 text-center sm:text-left">每天喝多少水最健康？科学计算公式告诉你</h1>
-  
-  <p class="mb-4 text-lg leading-relaxed">
-    水是生命之源，人体大约70%由水构成。你可能常听到「每天要喝8杯水」的说法，但每个人的体重、活动量不同，这个标准真的适合你吗？其实，科学界有一套更精准的计算方法——根据体重估算每日需水量。今天我们就来聊聊，如何算出属于自己的「健康饮水量」，并合理安排一天的喝水时间。
-  </p>
+const l=`
+<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
+  <article>
+    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
+      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
+    </h1>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">体重计算法：你一天到底需要多少毫升水？</h2>
-  <p class="mb-3">
-    最简单且被广泛认可的计算公式是：<span class="font-medium">每日需水量（毫升） = 体重（公斤） × 33</span>。这个系数来源于人体基础代谢所需水量的研究，能够满足大部分成年人的日常需求。
-  </p>
-  <p class="mb-3">
-    举个例子：如果你的体重是60公斤，那么每天大约需要喝 60 × 33 = 1980 毫升水，差不多相当于4瓶500毫升的矿泉水。如果体重75公斤，则需要约2475毫升，大约5瓶水。用这个公式算一算，你会发现可能比「8杯水」更贴合自己的身体状况。
-  </p>
-  <p class="mb-3 bg-blue-50 p-3 rounded">
-    <span class="font-medium">小提示：</span> 这只是一个基础参考值。如果你当天运动量大、出汗多，或者处于炎热环境，需要额外补充水分；而如果吃了大量水果、汤羹，也可适当减少纯饮水量。
-  </p>
+    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
+      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
+    </div>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">喝水时间表：什么时候喝，效果更好？</h2>
-  <p class="mb-3">
-    光知道喝多少还不够，喝水的时间也影响身体吸收和利用。把全天的水量分散到不同时段，既能避免一次性喝太多增加肾脏负担，又能让身体时刻保持水润状态。下面是一份参考时间表，你可以根据自己的作息调整：
-  </p>
+    <div class="mb-8">
+      <p class="mb-4 leading-relaxed">
+        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
+      </p>
+      <p class="leading-relaxed">
+        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
+      </p>
+    </div>
 
-  <div class="overflow-x-auto my-4">
-    <table class="min-w-full border-collapse border border-gray-300">
-      <thead class="bg-gray-100">
-        <tr>
-          <th class="border border-gray-300 p-2 text-left">时间点</th>
-          <th class="border border-gray-300 p-2 text-left">喝水量（毫升）</th>
-          <th class="border border-gray-300 p-2 text-left">为什么这个时间喝？</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-2">06:30 起床后</td>
-          <td class="border border-gray-300 p-2">约350</td>
-          <td class="border border-gray-300 p-2">经过一夜睡眠，身体处于缺水状态，一杯温水唤醒新陈代谢。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">08:30 上班/出门前</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充水分，缓解即将面对工作的紧张情绪。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">11:00 工作间隙</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">此时身体容易因专注而忘记喝水，小口补水防止疲劳。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">12:50 午餐后</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">帮助消化，促进营养吸收。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">15:00 下午茶时间</td>
-          <td class="border border-gray-300 p-2">约370</td>
-          <td class="border border-gray-300 p-2">替代咖啡或含糖饮料，提神又健康。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">17:30 下班/晚餐前</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">增加饱腹感，避免晚餐过量进食。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">22:00 睡前1小时</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充夜间所需水分，但不宜太多，防止起夜。可根据个人情况微调。</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="text-sm text-gray-600 mb-4">注：上表水量以体重75公斤计算（总量2475毫升），你可以按自己每日总量按比例分配。</p>
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        一、认识你的生理周期：不仅仅是“那几天”
+      </h2>
+      <p class="mb-3 leading-relaxed">
+        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
+        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
+        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
+        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
+      </ul>
+      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
+        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
+      </p>
+    </section>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">常见问题解答</h2>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝水量必须精确到毫升吗？</h3>
-    <p class="mb-2">不需要，整数估算即可。可以用常见容器作为参考：一罐可乐约335毫升，一瓶矿泉水约500毫升。只要全天总量大致达标，身体不觉得口渴，尿液呈淡黄色，就说明喝够了。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：运动和夏天怎么调整？</h3>
-    <p class="mb-2">剧烈运动或高温天气下，每小时可能多流失500～1000毫升水分，建议在运动前后及过程中少量多次补充淡盐水或电解质饮料。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝汤、吃水果算不算喝水量？</h3>
-    <p class="mb-2">算！食物中的水分也应计入每日总摄入量。比如一碗清汤约200毫升，一个苹果含水约100毫升。不过，纯水更易被吸收，建议大部分水分还是通过饮水获取。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：水喝多了会中毒吗？</h3>
-    <p class="mb-2">健康人肾脏每小时能排出800～1000毫升水，只要不是短时间内狂饮（比如1小时内喝超过2升），一般不会水中毒。但心肾功能不全者需遵医嘱限制饮水量。</p>
-  </div>
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        二、推算的核心：找到身体的“节拍器”
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
+      </p>
 
-  <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-    <p class="font-medium">记住，喝水是为了让身体舒服，不必教条。你可以用上面的公式算出基础量，再根据季节、活动量微调。不妨设个闹钟，分时段小口慢饮，养成习惯后，你会发现皮肤、精力都会变好。</p>
-  </div>
+      <div class="bg-gray-50 p-5 rounded-lg mb-4">
+        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
+        <p class="mb-3 text-gray-700 leading-relaxed">
+          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
+        </p>
 
-  <p class="mt-6 text-sm text-gray-500">温馨提示：本文内容为健康科普，不能替代专业医疗建议。如有特殊疾病或身体状况，请咨询医生。</p>
+        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
+        <p class="text-gray-700 leading-relaxed">
+          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
+        </p>
+      </div>
+
+      <p class="leading-relaxed">
+        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        三、预测工具能帮你做什么？
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
+        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
+        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
+      </ul>
+      <p class="leading-relaxed">
+        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        四、重要提醒：推算结果是“参考”，不是“医嘱”
+      </h2>
+      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
+        <p class="text-red-700 leading-relaxed mb-2">
+          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
+        </p>
+        <p class="text-red-700 leading-relaxed">
+          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        五、从了解到掌控，开启更自在的生活
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
+        <li>在经期前准备好护理用品，避免尴尬。</li>
+        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
+        <li>为备孕计划提供一个基础的参考时间框架。</li>
+      </ul>
+      <p class="leading-relaxed text-gray-900 font-medium">
+        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{r as default};
+`;export{l as default};

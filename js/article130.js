@@ -1,56 +1,152 @@
-const t=`
-<div class="max-w-3xl mx-auto p-4 md:p-6 font-sans text-gray-800 leading-relaxed">
-  <h2 class="text-2xl md:text-3xl font-medium text-gray-900 mb-4 border-b border-gray-200 pb-2">数字转中文在线工具：为什么发票上要用大写金额？生活中数字转中文的妙用</h2>
-  
-  <p class="mb-4 text-gray-700">在日常生活中，我们经常会遇到需要把数字写成中文的情况——写收据、填报销单、签合同，甚至给孩子辅导作业。但你知道数字转中文其实有几种不同的方式吗？数字大写和小写有什么区别？什么时候该用“数字读法”？今天我们就来聊聊数字转中文的那些事，并介绍一个实用的在线工具，帮你轻松搞定各种转换。</p>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字转中文，原来有这么多讲究</h2>
-  <p class="mb-3">我们平时随手写的“一、二、三”是中文小写，简单好认，适合日常记录。但在财务领域，你一定会看到“壹、贰、叁”这样复杂的大写数字。其实数字转中文可以分成四种常见形式，每种都有自己的用途：</p>
-  
-  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
-    <li><span class="font-medium text-gray-900">中文小写</span>（如：一千二百三十四）——就是我们平常书写的方式，用在笔记、普通文书里。</li>
-    <li><span class="font-medium text-gray-900">中文大写</span>（如：壹仟贰佰叁拾肆）——笔画复杂，难以涂改，主要用于发票、合同、支票等正式财务文件。</li>
-    <li><span class="font-medium text-gray-900">数字读法</span>（如：一二三四）——逐个数字朗读，常用于报电话号码、身份证号、验证码，避免听错。</li>
-    <li><span class="font-medium text-gray-900">金额格式</span>（如：壹仟贰佰叁拾肆元伍角陆分）——自动带上元角分，完全符合财务大写规范，写借条、填报销单最方便。</li>
-  </ul>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">为什么金额要用大写？老祖宗的防篡改智慧</h2>
-  <p class="mb-3">很多人都有疑问：为什么发票、合同上的金额必须写成大写？其实这是从古代延续下来的防篡改方法。小写的“一”加一笔就变成“二”、“十”，很容易被修改。而大写的“壹”笔画复杂，很难通过添减笔画改成其他数字。比如“壹”很难改成“贰”，“叁”也很难改成其他字。这种设计大大增加了涂改难度，保障了资金安全。所以直到今天，所有正规财务票据仍然强制要求使用中文大写金额。</p>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">数字读法，让沟通更清晰</h2>
-  <p class="mb-3">你有没有遇到过电话里报银行卡号、快递取件码时听错的情况？数字读法就是专门为解决这个问题而生的。把“1234”读成“一二三四”，每个字发音清晰，不容易混淆。特别是像“1”和“7”这样的数字，用“幺”和“拐”来读（工具里可以自定义），能最大程度避免误听。很多客服、快递员都习惯用这种读法。</p>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">金额格式：自动加元角分，规范又省心</h2>
-  <p class="mb-3">如果你需要写借条、填报销单，或者开具收据，最头疼的可能就是怎么把小数点后面的数字转换成“角”和“分”。金额格式功能直接帮你搞定：比如输入123.45，它会自动生成“壹佰贰拾叁元肆角伍分”，完全符合财务大写规则。如果金额是整数，也会自动补上“元整”（工具中显示为元后无角分）。再也不用担心写错单位。</p>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">这个工具能做什么？</h2>
-  <p class="mb-2">上面提到的四种转换，一个在线工具就能全部搞定。你只需要输入任意数字（支持负数和小数），它就会实时显示出对应的中文小写、中文大写、数字读法和金额格式。还有几个贴心的细节：</p>
-  <ul class="list-disc pl-6 space-y-1 mb-6 text-gray-700">
-    <li>小数点读法可以自定义，比如把默认的“点”改成“又”，满足不同习惯；</li>
-    <li>自动过滤非法字符，输入“12a3.45”只会保留有效数字“123.45”；</li>
-    <li>每个结果旁边都有“复制”按钮，一键粘贴到你需要的地方。</li>
-  </ul>
-
-  <div class="bg-blue-50 border border-blue-100 rounded-md p-4 my-6 text-sm text-blue-800">
-    <p class="mb-1"><span class="font-medium">举个例子：</span>输入“-1234.567”</p>
-    <p>中文小写：负一千二百三十四点五六七</p>
-    <p>中文大写：负壹仟贰佰叁拾肆点伍陆柒</p>
-    <p>数字读法：负一二三四点五六七</p>
-    <p>金额格式：负壹仟贰佰叁拾肆元伍角陆分（小数第三位自动忽略）</p>
-  </div>
-
-  <h2 class="text-xl font-medium text-gray-800 mt-6 mb-2">生活中的实用场景</h2>
-  <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
-    <li><span class="font-medium">写借条/收据：</span>借款5000元，写成“伍仟元整”，对方无法涂改，双方都放心。</li>
-    <li><span class="font-medium">填报销单：</span>差旅费1234.56元，直接转换粘贴，避免填写错误。</li>
-    <li><span class="font-medium">报手机号：</span>13912345678，逐字读成“一三九一二三四五六七八”，对方一次记对。</li>
-    <li><span class="font-medium">给孩子辅导：</span>让孩子对照数字练习大写，认识“壹贰叁”，顺便了解传统文化。</li>
-    <li><span class="font-medium">合同条款：</span>涉及金额的地方，同时写小写和大写，双重保险。</li>
-  </ul>
-
-  <p class="mt-6 text-gray-700 border-t border-gray-200 pt-4">下次需要大写金额、数字读法或者标准金额格式时，不妨试试这个数字转中文工具。不用翻字典查大写，不用纠结“角分”怎么加，输入数字，一键复制，省时省力，还能避免出错。无论是工作还是生活，它都能成为你的实用小帮手。</p>
-
-  <!-- 自然提及工具，但不做营销 -->
-  <p class="text-xs text-gray-400 mt-8 text-center">—— 让数字转中文更简单 ——</p>
+const e=`
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 leading-tight">
+      做生意怎么算利润？一个小工具让你明明白白
+    </h1>
+    
+    <div class="text-gray-600 text-sm mb-6">
+      <span>更新日期：2023年10月</span>
+      <span class="mx-2">|</span>
+      <span>阅读时间：约5分钟</span>
+    </div>
+    
+    <div class="prose prose-gray max-w-none">
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        你有没有遇到过这样的情况：做了一笔生意，订单金额看起来不错，但最后算下来却没赚多少钱？手续费、提现费、成本...各种费用一扣，实际利润和预期相差甚远。今天，我们来聊聊如何准确计算生意的真实利润。
+      </p>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        为什么生意做了很多，钱却没剩下多少？
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        很多刚开始做生意的朋友都会有这样的困惑：明明订单金额不小，为什么到手的钱却不多？其实，这是因为我们常常忽略了几个重要的成本项。
+      </p>
+      
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+        <p class="text-gray-700 m-0 leading-relaxed">
+          举个例子：一笔1000元的订单，平台收取5%的手续费，提现时再扣10元，成本占80%。这样算下来，最后的利润可能只有几十元。
+        </p>
+      </div>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        影响实际利润的三大因素
+      </h2>
+      
+      <div class="space-y-6 my-8">
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">1. 平台手续费</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            现在很多生意都在线上进行，电商平台、支付平台都会收取一定比例的手续费。这个费用通常按订单金额的百分比计算，是很多人容易忽略的隐形成本。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">2. 提现手续费</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            钱在平台上，要转到自己的银行卡里，往往还需要支付一笔提现费。这笔费用有时是固定的，有时按比例计算，积少成多也是一笔不小的开支。
+          </p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-sm transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">3. 成本控制</h3>
+          <p class="text-gray-700 m-0 leading-relaxed">
+            除了直接的产品成本，还有物流、包装、人工等间接成本。把这些都算进去，才能知道真正的利润空间有多大。
+          </p>
+        </div>
+      </div>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        怎么知道自己什么时候开始赚钱？
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个问题很多人都关心。其实每个生意都有一个“开始盈利点”，也就是要达到多少销售额才能覆盖所有成本，开始真正赚钱。
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个点需要考虑提现手续费、平台手续费和你的成本比例。通过计算，你可以清楚地知道：我的生意要做到多少钱才能不亏本？做到多少钱才能达到目标利润？
+      </p>
+      
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">一个简单的计算方法：</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
+            <span>先算出手续费占总金额的比例</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
+            <span>再加上提现手续费</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
+            <span>考虑成本占比</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-3 flex-shrink-0">4</span>
+            <span>综合计算得出盈利点</span>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        最终利润比例：衡量生意健康度的重要指标
+      </h2>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        只看赚了多少钱还不够，还要看利润比例。同样赚100元，一个是1000元订单赚的，一个是5000元订单赚的，生意健康度完全不同。
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        最终利润比例 = （最终利润 ÷ 订单总金额）× 100%
+      </p>
+      
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        这个数字能帮你判断：我的定价合理吗？成本控制得好吗？有没有优化空间？
+      </p>
+      
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-snug">
+        常见问题解答
+      </h2>
+      
+      <div class="space-y-6 my-6">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：为什么我算出来的利润和实际到手的不一样？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            可能是因为漏算了一些费用。除了平台手续费和提现费，还要考虑退款率、优惠券成本、包装材料费等。建议把所有可能产生的费用都列出来，逐一计算。
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：手续费多少算合理？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            不同平台手续费不同，一般在0.6%-5%之间。关键不是看绝对值，而是看扣除所有费用后，你的利润是否还能保持健康水平。如果手续费吃掉太多利润，就要考虑换平台或者调整定价策略。
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">问：如何提高最终利润比例？</h3>
+          <p class="text-gray-700 leading-relaxed">
+            可以从几个方面入手：1. 优化成本，寻找性价比更高的供应商；2. 提高客单价，适当调整定价；3. 减少中间环节，降低手续费；4. 提高运营效率，减少浪费。
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-10">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">小贴士：定期计算利润</h3>
+        <p class="text-gray-700 m-0 leading-relaxed">
+          建议每个月都算一次账，把当月的所有订单、所有费用都统计清楚。这样不仅能了解自己的真实盈利情况，还能及时发现问题，调整经营策略。做生意，心中有数才能走得更远。
+        </p>
+      </div>
+      
+      <div class="border-t border-gray-200 mt-10 pt-8">
+        <p class="text-gray-600 text-sm leading-relaxed">
+          本文旨在帮助普通生意人理解利润计算的原理和方法。实际经营中，建议咨询专业财务人员，确保账目清晰准确。
+        </p>
+      </div>
+    </div>
+  </article>
 </div>
-`;export{t as default};
+`;export{e as default};

@@ -1,79 +1,56 @@
-const t=`
-<div class="text-gray-700 max-w-4xl mx-auto px-4 sm:px-6">
-  <article class="space-y-8">
-    <header class="pt-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 leading-tight">父母血型能决定孩子的血型吗？一篇带你读懂血型遗传的奥秘</h1>
-      <p class="mt-4 text-gray-600">你可能在家庭聚会或朋友聊天时听过这样的讨论：“我俩都是A型，孩子肯定是A型吧？”“我是O型，我老公是AB型，那孩子会是什么血型呢？”今天，我们就来聊聊血型遗传那些事儿。</p>
-    </header>
-
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型是什么？为什么我们的血型不一样？</h2>
-      <p>简单来说，血型是血液表面的“小标识”。就像人的长相有高矮胖瘦，血液也有不同的“型号”。我们常说的ABO血型，主要有四种：A型、B型、O型和AB型。</p>
-      <p>你的血型，是从你父母那里继承来的。每个人会从爸爸那里获得一个“血型信息”，从妈妈那里获得另一个“血型信息”，这两个信息组合在一起，就决定了你最终是什么血型。</p>
-    </section>
-
-    <section class="space-y-6 bg-blue-50 p-6 rounded-lg my-8">
-      <h2 class="text-2xl font-bold text-gray-800">一个简单的孩子血型预测方法</h2>
-      <p>想知道你和另一半未来的宝宝可能是什么血型吗？其实这有一套很明确的遗传规则。</p>
-      <p>为了方便大家理解，网上有一些基于这些遗传规则设计的查询方法。你只需要选择父亲和母亲的血型，它就能帮你计算出宝宝可能出现的血型以及对应的概率。</p>
-      <p class="text-sm text-gray-500">（请注意，这只是一个基于经典遗传学的概率预测，主要用于科普和了解，不能替代医学诊断。）</p>
-    </section>
-
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型遗传的基本规律，一看就懂</h2>
-      <p>我们把复杂的科学原理，用大白话翻译一下：</p>
-      <ul class="list-disc pl-5 space-y-2">
-        <li><strong>A型或B型血的人</strong>，他们传递给孩子的“信息”可能是A（或B），也可能是O。</li>
-        <li><strong>O型血的人</strong>，他们传递给孩子的“信息”一定是O。</li>
-        <li><strong>AB型血的人</strong>，他们传递给孩子的“信息”要么是A，要么是B。</li>
-      </ul>
-      <p>孩子的血型，就是看TA从父母那里得到的两个“信息”是什么。</p>
-      <div class="overflow-x-auto my-4">
-        <table class="min-w-full bg-white border border-gray-300">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="py-3 px-4 border-b text-left font-medium">父母血型组合</th>
-              <th class="py-3 px-4 border-b text-left font-medium">孩子可能有的血型</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td class="py-3 px-4 border-b">父亲O型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子只能是 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲B型</td><td class="py-3 px-4 border-b">孩子可能是 A、B、AB 或 O 型</td></tr>
-            <tr><td class="py-3 px-4 border-b">父亲AB型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 B 型</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">关于血型遗传的几个常见疑问</h2>
-      <div class="space-y-4">
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">1. 为什么父母都是A型，孩子却是O型？</h3>
-          <p>这完全有可能。如果父母双方都携带了O“信息”（但他们自己表现为A型），那么他们各自都有50%的概率把O“信息”传给孩子。当孩子恰好同时收到这两个O“信息”时，就会是O型血。</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">2. A型和B型父母能生出O型孩子吗？</h3>
-          <p>可以，但需要满足一个条件：父母双方都必须携带O“信息”（即他们的基因型是AO和BO）。这样组合起来，就有一定的概率生出OO（即O型）的孩子。</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800">3. 父母有一方是AB型，孩子可能是O型吗？</h3>
-          <p>不可能。AB型血的人只会传递A或B“信息”，不会传递O“信息”。所以，只要父母一方是AB型，孩子就不可能得到两个O“信息”，也就不可能是O型血。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="space-y-6">
-      <h2 class="text-2xl font-bold text-gray-800 pt-4">了解血型遗传有什么用？</h2>
-      <p>首先，它能满足我们的好奇心，解开“我为什么是这个血型”的疑问。在家庭聊天中，这也是一个很有趣的话题。</p>
-      <p>其次，了解基本的血型知识，能在一些情况下帮助我们建立初步的判断。比如在紧急情况下需要输血时，知道家人的血型或许能提供一些线索，但<b>所有医疗行为都必须以正规医院的检验为准</b>。</p>
-      <p>最重要的是，这让我们对生命的传承多了一份了解。我们身上的许多特征，都携带着来自父母双方的、独一无二的“密码”。</p>
-    </section>
-
-    <footer class="pt-8 mt-8 border-t border-gray-200">
-      <p class="text-gray-600">希望这篇文章能帮你轻松理解血型遗传的规律。下次再和朋友聊起这个话题时，你也可以分享这些有趣的知识了。</p>
-    </footer>
-  </article>
+const l=`
+<div class="article-content bg-white rounded-2xl shadow-lg p-6 md:p-8">
+  <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">后代身高预测：科学计算孩子的成年身高</h1>
+  
+  <p class="text-gray-700 mb-6">身高是许多家长关心的话题，了解孩子的潜在身高范围有助于家长更好地关注孩子的生长发育。我们的身高预测计算器基于科学的遗传身高预测公式，为您提供参考性的预测结果。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">身高预测的科学依据</h2>
+  <p class="text-gray-700 mb-6">研究表明，遗传因素对身高的影响约占60%-80%。我们使用的预测公式是基于大量人群数据统计得出的，虽然不能100%准确预测最终身高，但可以提供一个合理的参考范围。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">如何使用身高预测计算器</h2>
+  <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+    <li>在左侧输入框中填写父亲的身高（厘米）</li>
+    <li>在右侧输入框中填写母亲的身高（厘米）</li>
+    <li>点击"开始计算"按钮，系统会自动为您预测男孩和女孩的身高范围</li>
+  </ol>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">影响身高的其他因素</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-blue-50 p-4 rounded-lg">
+      <h3 class="font-bold text-blue-800 mb-2">营养因素</h3>
+      <p class="text-gray-700">均衡的营养是孩子长高的基础，特别是蛋白质、钙、维生素D等营养素对骨骼发育至关重要。</p>
+    </div>
+    <div class="bg-green-50 p-4 rounded-lg">
+      <h3 class="font-bold text-green-800 mb-2">运动因素</h3>
+      <p class="text-gray-700">适当的运动可以刺激骨骼生长，如篮球、跳绳、游泳等纵向运动对长高特别有益。</p>
+    </div>
+    <div class="bg-purple-50 p-4 rounded-lg">
+      <h3 class="font-bold text-purple-800 mb-2">睡眠因素</h3>
+      <p class="text-gray-700">生长激素在睡眠时分泌最旺盛，保证充足的睡眠时间和良好的睡眠质量对孩子长高非常重要。</p>
+    </div>
+    <div class="bg-yellow-50 p-4 rounded-lg">
+      <h3 class="font-bold text-yellow-800 mb-2">环境因素</h3>
+      <p class="text-gray-700">良好的生活环境、减少压力、避免疾病等都有助于孩子的正常生长发育。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">有助于孩子长高的建议</h2>
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li>保证孩子摄入均衡的营养，多吃富含蛋白质、钙和维生素的食物</li>
+    <li>鼓励孩子进行适量的运动，特别是有助于长高的纵向运动</li>
+    <li>确保孩子有充足的睡眠时间，小学生每天应睡10小时左右</li>
+    <li>创造良好的家庭环境，减少孩子的精神压力</li>
+    <li>定期带孩子进行体检，及时发现和处理可能影响生长发育的问题</li>
+  </ul>
+  
+  <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+    <h3 class="font-bold text-gray-800 mb-3">身高预测注意事项</h3>
+    <p class="text-gray-700 mb-4">需要注意的是，我们的身高预测计算器基于遗传因素，仅供参考。实际身高还会受到多种因素的影响，如营养、运动、睡眠等。如果您对孩子的生长发育有疑虑，建议咨询专业医生。</p>
+    <p class="text-gray-700">此外，身高并不是衡量一个人价值的唯一标准，每个孩子都有自己的闪光点和潜力，家长应该关注孩子的全面发展。</p>
+  </div>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">结语</h2>
+  <p class="text-gray-700 mb-6">通过我们的身高预测计算器，您可以了解孩子的潜在身高范围，为孩子的生长发育提供参考。同时，结合科学的营养、适当的运动和良好的生活习惯，帮助孩子实现最佳的生长潜能。</p>
+  <p class="text-gray-700">希望我们的身高预测计算器能为您提供有价值的信息，祝您的孩子健康成长！</p>
 </div>
-`;export{t as default};
+`;export{l as default};

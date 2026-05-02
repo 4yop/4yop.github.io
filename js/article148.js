@@ -1,97 +1,95 @@
-const t=`
-<article class="text-gray-800 font-sans bg-white">
-  <header class="py-8 px-4 lg:px-8 text-center border-b border-gray-100">
-    <h1 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Excel表格转Word文档，原来可以这么简单快速</h1>
-    <p class="text-gray-600 text-lg">还在为格式错乱、复制粘贴而烦恼吗？一个工具就能搞定。</p>
-  </header>
+const l=`
+<div class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">照片太多不好整理？试试这个免费的图片转PDF工具</h1>
 
-  <div class="px-4 lg:px-8 py-8 max-w-4xl mx-auto">
-    <section class="mb-10">
-      <p class="mb-6 text-lg leading-relaxed">
-        在工作中，我们常常需要将Excel表格里的数据放到Word文档里。你可能是想制作一份包含数据表格的报告，或者是需要提交一份带统计表的方案。
-      </p>
-      <p class="mb-6 text-lg leading-relaxed">
-        这个过程听起来简单，做起来却常常让人头疼。直接复制粘贴吧，表格的格式经常会乱掉，宽度对不齐，颜色也消失了。如果表格有好几页，或者有好几个不同的工作表，那更是费时费力。
-      </p>
-      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
-        <h2 class="text-xl font-semibold mb-2 text-blue-800">你是不是也遇到过这些情况？</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-          <li>精心调整的表格颜色和字体，一粘贴到Word里就全没了。</li>
-          <li>表格太宽，在Word里总是超出页面，需要手动一列一列调整。</li>
-          <li>一个Excel文件里有好几张表，得一张一张处理，非常麻烦。</li>
-          <li>只想快速把数据变成一份规整的文档，却花了大半天时间在调整格式上。</li>
-        </ul>
-      </div>
-    </section>
+  <p class="text-lg mb-6 leading-relaxed">
+    你是不是也有过这样的烦恼？手机相册里塞满了各种照片——家人的合影、重要的证件、孩子的涂鸦、旅游的风景，还有工作中需要保存的截图。一张张翻找起来麻烦，发给别人也容易弄乱顺序。今天，我们就来聊聊一个简单又免费的方法：把散乱的图片，一键打包成一份整齐的PDF文件。
+  </p>
 
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">一个省心工具能帮你做什么？</h2>
-      <p class="mb-8 text-lg leading-relaxed">
-        好消息是，现在有专门处理这个问题的工具。它就像一个聪明的“格式搬运工”，能帮你把Excel里的表格，原原本本地“搬”到Word文档里，而且过程非常简单。
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-10">
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-green-600 font-bold">1</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">一步上传，自动识别</h3>
-          <p class="text-gray-700">你只需要把Excel文件拖进去或者点一下上传，它就能立刻看到你表格里所有的数据，非常直观。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-blue-600 font-bold">2</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">保留样式，保持美观</h3>
-          <p class="text-gray-700">你之前在Excel里设置的文字加粗、单元格背景颜色，大部分都能被保留下来，生成和你原表很像的Word表格。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-purple-600 font-bold">3</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">按需调整，一键生成</h3>
-          <p class="text-gray-700">你可以选择生成Word文档的纸张大小（比如常用的A4或Letter），然后点一下按钮，一份完整的Word文档就生成好了，可以直接下载使用。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">具体怎么使用？</h2>
-      <p class="mb-6 text-lg leading-relaxed">
-        整个过程只需要三四步，在电脑和手机上都能操作，对使用者的技术水平没有任何要求。
-      </p>
-      <ol class="list-decimal pl-5 space-y-8 text-lg">
-        <li class="pl-2">
-          <strong class="text-gray-900">准备好你的Excel文件：</strong> 确保你要转换的表格已经保存在你的电脑或手机里。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">打开工具，上传文件：</strong> 找到页面上醒目的“上传Excel”按钮，点击它，然后从你的设备里选择文件。你也可以直接把文件拖到那个按钮上，更加方便。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">预览并简单设置：</strong> 上传后，你马上就能在页面下方看到表格内容的预览，确认无误。如果需要，可以在上方选择一个你想要的文档纸张大小。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">转换并下载：</strong> 点击“转换并下载Word”按钮，稍等片刻，浏览器就会自动开始下载生成好的Word文档。打开它，你就会看到一份排版好的表格文档。
-        </li>
-      </ol>
-      <div class="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
-        <p class="text-amber-900"><strong>小提示：</strong> 这个工具会尽力保留你表格的样式。如果原表格特别复杂，生成后可能需要在Word里做一些微调，但比起从零开始，已经节省了大量时间。</p>
-      </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">它适合哪些场景？</h2>
-      <ul class="list-disc pl-5 text-lg space-y-3 text-gray-700">
-        <li><strong>学生：</strong> 将实验数据从Excel整理到实验报告或论文中。</li>
-        <li><strong>办公族：</strong> 制作周报、月报、项目总结，需要将数据表格嵌入文档。</li>
-        <li><strong>HR或财务：</strong> 将人员名单、费用统计表转换成正式的文档格式进行提交或打印。</li>
-        <li><strong>任何需要数据呈现的人：</strong> 当你需要一份既包含详细数据，又排版规范的正式文件时。</li>
-      </ul>
-    </section>
-
-    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
-      <p class="text-xl mb-4 font-medium">总而言之，将Excel转为Word不再是一个技术活。</p>
-      <p class="text-gray-600 mb-8">
-        借助这类便捷的工具，你可以把时间和精力从繁琐的格式调整中解放出来，更多地专注于内容本身。下次再遇到需要转换表格的时候，不妨试试这种方法，体验一下一键生成的轻松。
-      </p>
-      <div class="inline-block px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200">
-        去试试快速转换工具
-      </div>
-    </footer>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+    <p class="text-blue-800">
+      <strong>简单来说：</strong> 想象一下，你把一堆散落的纸张，整理好顺序，装订成一本小册子。这个工具做的事情就和这个类似，只不过是把电脑或手机里的电子图片，整理成一份方便查看、分享和打印的PDF文档。
+    </p>
   </div>
-</article>
-`;export{t as default};
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">为什么我们需要把图片转成PDF？</h2>
+
+  <p class="mb-4 leading-relaxed">
+    你可能觉得，图片单独发也没什么问题。但在很多情况下，把它们合并成一个PDF会方便得多：
+  </p>
+
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>方便归档：</strong> 将相关的多张图片（如一次旅行的所有照片、一份合同的所有页面）合并成一个文件，管理起来更清晰。</li>
+    <li><strong>保持顺序：</strong> 不用担心图片在传送过程中顺序错乱，PDF里的页面顺序是固定的。</li>
+    <li><strong>便于打印：</strong> 可以直接用家里或办公室的打印机，按照你设定的纸张大小（比如常用的A4纸）打印出来，图片会自动调整到合适的位置。</li>
+    <li><strong>保护内容：</strong> 相比容易修改的图片文件，PDF格式更利于保持内容的原始样貌，适合用于提交正式文件。</li>
+    <li><strong>节省空间：</strong> 在某些情况下，将多张图片合成一个PDF，会比单独保存一堆图片文件更节省设备空间。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">如何使用图片转PDF工具？</h2>
+
+  <p class="mb-6 leading-relaxed">
+    整个过程非常简单，就像在手机上整理相册一样直观，你完全不需要任何复杂的知识。
+  </p>
+
+  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第一步：把你的照片“放”进去</h3>
+  <p class="mb-4 leading-relaxed">
+    工具页面上会有一个大大的“+”号区域。点击它，就可以从你的电脑或手机里选择照片了。你可以一次性选择很多张，它们会像小卡片一样排列在页面上。如果选错了，点一下图片角落的“×”就能删掉。
+  </p>
+
+  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第二步：简单调整，让效果更合心意</h3>
+  <p class="mb-4 leading-relaxed">
+    在开始制作前，你可以进行几个简单的设置，让生成的PDF更符合你的需要：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>选择纸张大小：</strong> 就像打印前要选纸一样，你可以选择常见的A4纸尺寸，或者Letter（信纸）大小等。</li>
+    <li><strong>调整图片大小：</strong> 你可以控制图片在页面上的显示比例，放大或缩小，让页面布局看起来更舒服。</li>
+    <li><strong>选择图片位置：</strong> 你可以让图片居中显示，或者紧贴页面上方开始排列。</li>
+  </ul>
+
+  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第三步：预览和生成</h3>
+  <p class="mb-4 leading-relaxed">
+    在制作前，你可以随时点击任何一张缩略图来放大查看，确认是否是自己想要的图片。左右滑动可以查看上一张和下一张，检查完毕后点击关闭即可。
+  </p>
+  <p class="mb-6 leading-relaxed">
+    一切准备就绪，点击“导出PDF”按钮。稍等片刻，一份整理好的PDF文件就会自动保存到你的设备里了。你可以给它重命名，方便日后查找。
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">这个工具适合哪些场景？</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h4 class="font-medium text-lg mb-2 text-gray-700">生活记录</h4>
+      <p class="text-gray-600">将孩子一个学期的画作整理成一本电子画册；把一次家庭聚会的照片做成纪念册，分享给亲友。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h4 class="font-medium text-lg mb-2 text-gray-700">学习工作</h4>
+      <p class="text-gray-600">把用手机拍下的书本重点页面做成复习资料；将多张会议白板照片或报告截图合并成一份完整的会议纪要。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h4 class="font-medium text-lg mb-2 text-gray-700">办事必备</h4>
+      <p class="text-gray-600">申请签证或办理业务时，需要提交身份证、户口本等多张证件的照片，合并成一个PDF文件再上传，既规范又方便。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h4 class="font-medium text-lg mb-2 text-gray-700">创意分享</h4>
+      <p class="text-gray-600">设计师或摄影师可以将一系列作品样图合成一个PDF作品集，用于展示或发送给客户审阅。</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 p-5 rounded-xl my-10 border border-gray-300">
+    <h3 class="text-xl font-semibold mb-3">重要提示：关于你的隐私安全</h3>
+    <p class="mb-2 leading-relaxed">
+      你可能担心自己的照片上传到网上会不会有风险。请放心，一个设计良好的在线图片转PDF工具，其处理过程通常在你的浏览器中本地完成。
+    </p>
+    <p class="leading-relaxed">
+      这意味着你的照片数据<strong>不会上传到任何服务器</strong>，全部转换操作都在你自己的电脑或手机上瞬间完成。制作完成后，PDF文件直接保存在你的设备里，最大限度地保护了你的个人隐私和文件安全。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">总结</h2>
+
+  <p class="text-lg mb-8 leading-relaxed">
+    无论是为了生活记录、工作提效，还是处理日常事务，把散乱的图片整理成一份PDF都是一个非常实用的小技巧。它不要求你掌握复杂的软件，整个过程快速、免费，而且能很好地保护你的隐私。下次当你再面对一堆需要整理的照片时，不妨试试这个方法，给你的数字生活带来一点小小的秩序和便捷。
+  </p>
+</div>
+`;export{l as default};

@@ -1,110 +1,92 @@
-const s=`
-<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white">
-  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">快递单号怎么查？一篇讲清楚查询方法和常见问题</h1>
+const t=`<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">还在为搜不到想要的结果烦恼？这个多引擎搜索工具帮你精准定位</h1>
+  <!-- 导语 -->
+  <p class="text-lg text-center text-gray-600 mb-8">想找资料，却总被广告淹没？搜出来的东西牛头不对马嘴？别急，试试这款能同时用百度、谷歌、必应搜索的小工具，还有几十种“搜索暗号”帮你直达答案。</p>
 
-  <p class="text-lg text-slate-600 mb-8">
-    网购后最期待的就是拆快递，而等待过程中，最常做的事就是一遍遍查看物流信息。快递到哪里了？今天能到吗？这份期待和焦急，相信每个人都经历过。今天，我们就来聊聊怎么方便地查询快递，以及遇到查询问题时该怎么办。
-  </p>
+  <!-- 正文部分 -->
+  <div class="space-y-8">
 
-  <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-r">
-    <h2 class="text-xl font-semibold text-slate-800 mb-2">核心方法速览</h2>
-    <p class="text-slate-700">
-      查询快递，本质上就是通过唯一的“快递单号”，在物流公司的系统里找到你的包裹轨迹。就像用身份证号查人一样。
-    </p>
+    <!-- 第一部分：搜索痛点 -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">为什么你总觉得“搜不到”</h2>
+      <p class="mb-3">你有没有这样的经历：打开百度输入一个词，前几页全是广告和推广，翻半天也找不到真正有用的信息。或者想找一份PDF文档、一个政府网站的文件，结果出来一堆不相关的网页。这不是你搜索的方式不对，而是普通的搜索框太“笨”了，它听不懂你的真实需求。</p>
+      <p class="mb-3">其实，搜索引擎自己都提供了一些“高级指令”，就像给搜索框下的暗号，可以让它只给你想要的东西。但大多数人不知道这些指令，或者觉得记起来太麻烦。今天要说的这个工具，就是把所有搜索引擎的“暗号”都集成在一起，你只需要点一点，就能用上这些专业功能。</p>
+    </section>
+
+    <!-- 第二部分：什么是多引擎智能搜索工具 -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">一个工具，三个搜索引擎</h2>
+      <p class="mb-3">这个小工具最直观的地方，就是它把百度、谷歌、必应都放在了一起。你不需要记住三个网址，也不用在不同标签页之间切来切去。想用哪个，点一下按钮就行。</p>
+      <ul class="list-disc pl-6 mb-3 space-y-1">
+        <li><span class="font-medium text-blue-600">百度</span>：适合搜中文内容，尤其是国内网站的信息。</li>
+        <li><span class="font-medium text-blue-600">谷歌</span>：全球最大的搜索引擎，搜外文资料、学术内容特别好用。</li>
+        <li><span class="font-medium text-blue-600">必应</span>：微软家的，界面干净，搜图片和视频质量很高。</li>
+      </ul>
+      <p>你可以根据自己需要，随时切换。比如找国内的政策文件用百度，查国外的论文用谷歌，找高清图片用必应。一个入口全搞定。</p>
+    </section>
+
+    <!-- 第三部分：高级搜索指令，像说话一样精准 -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">“搜索暗号”让结果直击要害</h2>
+      <p class="mb-3">这个工具最厉害的地方，是它自带了几十种“搜索暗号”——也就是搜索引擎的高级指令。你不用死记硬背，因为工具里都列出来了，点一下就能用。下面举几个生活中常见的例子：</p>
+
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <!-- 例子1：搜特定网站 -->
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-medium text-lg mb-2 text-gray-800">只想看某个网站里的内容？用“site:”</h3>
+          <p class="text-sm text-gray-600">比如你想在知乎上搜“人工智能”，但不想看其他网站，就在关键词前加上<code class="bg-gray-200 px-1 rounded">site:zhihu.com 人工智能</code>。工具里点一下“site:”按钮，再输入网址和关键词就行。</p>
+        </div>
+        <!-- 例子2：搜特定文件 -->
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-medium text-lg mb-2 text-gray-800">想要PDF文档？用“filetype:pdf”</h3>
+          <p class="text-sm text-gray-600">找工作简历模板、学术论文，往往PDF格式更规范。输入<code class="bg-gray-200 px-1 rounded">filetype:pdf 简历模板</code>，结果就全是PDF文件，省去筛选时间。</p>
+        </div>
+        <!-- 例子3：标题中含有关键词 -->
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-medium text-lg mb-2 text-gray-800">想找标题里带“通知”的网页？用“intitle:”</h3>
+          <p class="text-sm text-gray-600">如果关键词出现在网页标题里，通常相关性更高。比如搜<code class="bg-gray-200 px-1 rounded">intitle:放假通知</code>，出来的都是标题中明确有“放假通知”的页面。</p>
+        </div>
+        <!-- 例子4：排除不想要的关键词 -->
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-medium text-lg mb-2 text-gray-800">想排除广告？用减号“-”</h3>
+          <p class="text-sm text-gray-600">搜“手机”，但不想看电商广告，可以搜<code class="bg-gray-200 px-1 rounded">手机 -京东 -淘宝</code>，结果里就不会出现包含“京东”“淘宝”的页面。</p>
+        </div>
+      </div>
+      <p class="mt-4">还有更多指令，比如搜索特定时间范围、搜索某个网页的缓存、搜索相关网站等等，工具右侧的“高级搜索指令说明”里都列得清清楚楚，点一下就能复制或插入，非常方便。</p>
+    </section>
+
+    <!-- 第四部分：实际操作体验 -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">怎么用？三步搞定</h2>
+      <ol class="list-decimal pl-6 mb-3 space-y-2">
+        <li><strong>选引擎</strong>：在百度、谷歌、必应中选一个你需要的。</li>
+        <li><strong>输关键词</strong>：直接在搜索框里打字，如果要用高级指令，可以点下方的快捷按钮（比如“site:”），指令会自动填入，你再接着输入网址或关键词就行。</li>
+        <li><strong>点搜索</strong>：点击右侧的搜索按钮（颜色会随引擎变化），结果就会在新标签页打开。</li>
+      </ol>
+      <p>就这么简单。而且你每次搜索，工具都会帮你记录下来（存在你自己的浏览器里，别人看不到）。以后想重复搜同样内容，点一下历史记录就行，不用重新打字。</p>
+    </section>
+
+    <!-- 第五部分：小细节让搜索更舒心 -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900 border-l-4 border-blue-500 pl-3">贴心的细节</h2>
+      <ul class="list-disc pl-6 mb-3 space-y-1">
+        <li><strong>输入提示</strong>：当你开始打字，工具会联想你可能想用的高级指令，选一个就直接填好。</li>
+        <li><strong>历史记录</strong>：自动保存最近50次搜索，还能按引擎分类，点一下就能重新搜索。</li>
+        <li><strong>使用统计</strong>：你可以看到自己总共搜了多少次，哪个引擎用得最多，有点小成就感。</li>
+        <li><strong>移动端也能用</strong>：在手机上打开，布局会自动变成上下结构，按钮大小合适，很好点。</li>
+      </ul>
+    </section>
+
+    <!-- 第六部分：总结 -->
+    <section class="bg-blue-50 p-6 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-3 text-gray-900">从现在起，让搜索更聪明</h2>
+      <p class="mb-3">以前你可能觉得“搜不到”是因为自己不会搜，其实只是没遇到好工具。这个多引擎智能搜索工具，把三大搜索引擎和几十种高级指令集合在一起，不用背、不用记，点一点就能用上“专业搜索”功能。</p>
+      <p>下次想查资料、找文档、搜图片，不妨试试它。你会发现，原来答案可以离你那么近。</p>
+    </section>
+
+    <!-- 附加提示（非营销，纯说明） -->
+    <p class="text-sm text-gray-500 text-center pt-4">—— 一个让搜索回归纯粹的小工具，不收集任何个人信息，所有历史记录只保存在你的浏览器中。</p>
+
   </div>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">一、最常用的几种查询方式</h2>
-    <p class="text-slate-700 mb-4">
-      知道自己寄的或收的是哪家快递，是快速查询的第一步。快递单号通常由数字或字母组合而成，打印在面单最显眼的位置。
-    </p>
-    <ul class="space-y-4 pl-5 text-slate-700">
-      <li class="pl-2">
-        <strong class="text-slate-800">1. 快递公司官网/APP查询</strong>
-        <p class="mt-1">这是最直接的方法。如果你知道是顺丰、中通、圆通等，直接进入他们的官方网站或手机应用，找到“物流查询”入口，输入单号即可。信息最权威。</p>
-      </li>
-      <li class="pl-2">
-        <strong class="text-slate-800">2. 购物平台直接查看</strong>
-        <p class="mt-1">在淘宝、京东等平台下单的包裹，不用记单号。直接在“我的订单”里点击物流信息，就能看到实时动态，非常省心。</p>
-      </li>
-      <li class="pl-2">
-        <strong class="text-slate-800">3. 使用综合查询工具</strong>
-        <p class="mt-1">如果你手头只有一个单号，不确定是哪家快递公司，或者想一次性管理多个不同公司的包裹，这类工具就派上用场了。你只需要输入单号，它通常能自动识别快递公司并展示物流信息，省去了来回切换不同网站的麻烦。</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">二、查询时，你可能会遇到这些问题</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">1. 单号无效或查不到信息？</h3>
-        <p class="text-slate-700 mb-2">别急，可能有以下几个原因：</p>
-        <ul class="list-disc pl-5 text-slate-700 space-y-1">
-          <li><strong>刚发货：</strong>卖家点击发货后，物流公司需要时间揽收、扫描单号，信息上传系统有延迟，一般等几小时再查。</li>
-          <li><strong>单号输错了：</strong>仔细核对，数字“0”和字母“O”，数字“1”和字母“I”最易混淆。</li>
-          <li><strong>快递公司选错了：</strong>用综合查询工具时，如果自动识别有误，可以尝试手动选择公司。</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">2. 物流信息好几天不更新？</h3>
-        <p class="text-slate-700">
-          包裹在运输途中，从一个城市转运中心到另一个城市，中间的长途运输可能没有扫描节点。如果长时间停在“已发货”或某个中转站，可能是遇到了高峰期堵车、天气原因延误，或者包裹确实遗漏扫描了。如果超过预估时间很久，可以联系发货方或快递客服询问。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">3. 显示“已签收”但我没收到？</h3>
-        <p class="text-slate-700">
-          首先检查是否被家人、同事或物业门卫代收。如果没有，可能是快递员误操作提前点击了签收，实际上包裹还在派送中。可以直接电话联系派件员，或通过官方渠道投诉反馈。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">三、让查快递变得更轻松的小习惯</h2>
-    <p class="text-slate-700 mb-4">
-      养成几个好习惯，能让你在需要时快速找到物流信息，避免手忙脚乱。
-    </p>
-    <ul class="grid md:grid-cols-2 gap-4 text-slate-700">
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">保存发货通知</strong>
-        网购后，卖家发的发货短信或平台通知里含有单号，别急着删，等收货后再清理。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">利用查询历史</strong>
-        有些查询页面会自动帮你保存最近查过的单号。再次查询时直接点击，就不用重复输入一长串数字了，特别方便。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">关注关键节点</strong>
-        不用每分钟刷新。重点关注“已揽收”、“到达XX转运中心”、“开始派送”这几个节点，就能大致掌握包裹行程。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">善用手机通知</strong>
-        在快递公司APP或购物平台开启物流提醒，重要动态会通过推送通知你，解放双手。
-      </li>
-    </ul>
-  </section>
-
-  <section class="mb-10 p-6 bg-slate-50 rounded-xl">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4">关于隐私和安全的提醒</h2>
-    <p class="text-slate-700 mb-3">
-      快递单号本身是公开信息，通过官方或正规渠道查询物流是安全的。但也要注意：
-    </p>
-    <ul class="list-disc pl-5 text-slate-700 space-y-2">
-      <li>不要轻易将单号连同你的详细姓名、住址、电话一起泄露给不明身份的陌生人。</li>
-      <li>收到以“快递丢失理赔”为名、索要你个人和财务信息的电话或短信，务必通过官方渠道核实，极可能是诈骗。</li>
-      <li>丢弃快递箱时，最好涂抹或撕掉面单上的个人信息。</li>
-    </ul>
-  </section>
-
-  <div class="border-t border-slate-200 pt-8 mt-8">
-    <p class="text-slate-700 mb-2">
-      总的来说，查快递是个简单的小事，但掌握正确省力的方法，确实能让等待的过程少一些焦躁，多一些了然于心。
-    </p>
-    <p class="text-slate-700">
-      无论是通过购物平台、快递公司，还是借助一个顺手好用的综合查询页面，核心都是为了让信息获取更便捷。希望下次等快递时，你能更从容地知道它的“行踪”。
-    </p>
-  </div>
-</article>
-`;export{s as default};
+</div>`;export{t as default};

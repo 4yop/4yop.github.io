@@ -1,252 +1,79 @@
-const e=`
-<div class="bg-white text-gray-800 font-sans">
-  <div class="container mx-auto px-4 py-8 max-w-4xl">
-    <!-- 文章标题 -->
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-      基础代谢率是什么？一文读懂你身体的“基础能耗”
-    </h1>
-    
-    <!-- 引言部分 -->
-    <div class="mb-10">
-      <p class="text-lg text-gray-700 mb-4 leading-relaxed">
-        你有没有想过，就算一整天躺在床上不动，你的身体也在默默消耗热量？这种“躺着也能瘦”的消耗，其实就是基础代谢率在起作用。
-      </p>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        今天我们就来聊聊这个影响你体重变化的关键因素——基础代谢率，让你更了解自己的身体。
-      </p>
-    </div>
-    
-    <!-- 第一部分：BMR基本概念 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        什么是基础代谢率？
-      </h2>
-      <div class="space-y-6">
-        <p class="text-gray-700 leading-relaxed">
-          基础代谢率，英文简称BMR，指的是你的身体在完全静息状态下，维持基本生命活动所需的最低能量。简单来说，就是你的身体为了“活着”而必须消耗的热量。
-        </p>
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-          <p class="text-gray-800 leading-relaxed">
-            <span class="font-semibold">打个比方：</span>把你的身体想象成一辆汽车，基础代谢率就像是发动机怠速时的油耗。就算车停着不动，发动机也要保持运转，消耗燃油。同样，你的心脏跳动、肺部呼吸、大脑思考、细胞更新……这些基本功能都需要能量支撑。
-          </p>
-        </div>
-        <p class="text-gray-700 leading-relaxed">
-          这个数值通常以“千卡/天”为单位，也就是你每天在什么都不做的情况下，身体自然消耗的热量。
-        </p>
+const t=`
+<div class="text-gray-700 max-w-4xl mx-auto px-4 sm:px-6">
+  <article class="space-y-8">
+    <header class="pt-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 leading-tight">父母血型能决定孩子的血型吗？一篇带你读懂血型遗传的奥秘</h1>
+      <p class="mt-4 text-gray-600">你可能在家庭聚会或朋友聊天时听过这样的讨论：“我俩都是A型，孩子肯定是A型吧？”“我是O型，我老公是AB型，那孩子会是什么血型呢？”今天，我们就来聊聊血型遗传那些事儿。</p>
+    </header>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型是什么？为什么我们的血型不一样？</h2>
+      <p>简单来说，血型是血液表面的“小标识”。就像人的长相有高矮胖瘦，血液也有不同的“型号”。我们常说的ABO血型，主要有四种：A型、B型、O型和AB型。</p>
+      <p>你的血型，是从你父母那里继承来的。每个人会从爸爸那里获得一个“血型信息”，从妈妈那里获得另一个“血型信息”，这两个信息组合在一起，就决定了你最终是什么血型。</p>
+    </section>
+
+    <section class="space-y-6 bg-blue-50 p-6 rounded-lg my-8">
+      <h2 class="text-2xl font-bold text-gray-800">一个简单的孩子血型预测方法</h2>
+      <p>想知道你和另一半未来的宝宝可能是什么血型吗？其实这有一套很明确的遗传规则。</p>
+      <p>为了方便大家理解，网上有一些基于这些遗传规则设计的查询方法。你只需要选择父亲和母亲的血型，它就能帮你计算出宝宝可能出现的血型以及对应的概率。</p>
+      <p class="text-sm text-gray-500">（请注意，这只是一个基于经典遗传学的概率预测，主要用于科普和了解，不能替代医学诊断。）</p>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型遗传的基本规律，一看就懂</h2>
+      <p>我们把复杂的科学原理，用大白话翻译一下：</p>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>A型或B型血的人</strong>，他们传递给孩子的“信息”可能是A（或B），也可能是O。</li>
+        <li><strong>O型血的人</strong>，他们传递给孩子的“信息”一定是O。</li>
+        <li><strong>AB型血的人</strong>，他们传递给孩子的“信息”要么是A，要么是B。</li>
+      </ul>
+      <p>孩子的血型，就是看TA从父母那里得到的两个“信息”是什么。</p>
+      <div class="overflow-x-auto my-4">
+        <table class="min-w-full bg-white border border-gray-300">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="py-3 px-4 border-b text-left font-medium">父母血型组合</th>
+              <th class="py-3 px-4 border-b text-left font-medium">孩子可能有的血型</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="py-3 px-4 border-b">父亲O型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子只能是 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲B型</td><td class="py-3 px-4 border-b">孩子可能是 A、B、AB 或 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲AB型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 B 型</td></tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-    
-    <!-- 第二部分：为什么BMR重要 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        知道自己的基础代谢率有什么用？
-      </h2>
-      <div class="space-y-6">
-        <p class="text-gray-700 leading-relaxed">
-          了解自己的基础代谢率，就像拿到了身体能量消耗的“说明书”，对健康管理非常有帮助。
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">对于控制体重</h3>
-            <p class="text-gray-700 leading-relaxed">
-              如果你想减肥，每天摄入的热量需要低于总消耗量。而总消耗量的基础就是BMR。知道了这个“底线”，你就能更科学地安排饮食，避免盲目节食。
-            </p>
-          </div>
-          
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">对于保持健康</h3>
-            <p class="text-gray-700 leading-relaxed">
-              长期摄入热量远低于基础代谢率，身体会启动“节能模式”，反而可能降低代谢，不利于健康。了解BMR能帮你找到平衡点。
-            </p>
-          </div>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">关于血型遗传的几个常见疑问</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">1. 为什么父母都是A型，孩子却是O型？</h3>
+          <p>这完全有可能。如果父母双方都携带了O“信息”（但他们自己表现为A型），那么他们各自都有50%的概率把O“信息”传给孩子。当孩子恰好同时收到这两个O“信息”时，就会是O型血。</p>
         </div>
-        
-        <p class="text-gray-700 leading-relaxed">
-          很多人在减肥时只关注“少吃”，却忽略了身体的基础需求。长期热量摄入不足，可能导致疲劳、脱发、月经不调等问题。基础代谢率就是你健康饮食的“参考线”。
-        </p>
-      </div>
-    </div>
-    
-    <!-- 第三部分：影响BMR的因素 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        哪些因素会影响基础代谢率？
-      </h2>
-      <div class="space-y-6">
-        <p class="text-gray-700 leading-relaxed">
-          每个人的基础代谢率都不一样，它主要受以下几个因素影响：
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-4 mt-1">
-              <span class="font-semibold">1</span>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">性别</h3>
-              <p class="text-gray-700 leading-relaxed">
-                通常，男性的基础代谢率会比女性高一些。这是因为男性一般肌肉比例更高，而肌肉消耗的热量比脂肪多。
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center mr-4 mt-1">
-              <span class="font-semibold">2</span>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">年龄</h3>
-              <p class="text-gray-700 leading-relaxed">
-                随着年龄增长，基础代谢率会逐渐下降。这也是为什么很多人感觉“年纪大了容易发胖”——身体的基础消耗变少了。
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-700 rounded-full flex items-center justify-center mr-4 mt-1">
-              <span class="font-semibold">3</span>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">身高体重</h3>
-              <p class="text-gray-700 leading-relaxed">
-                身材高大、体重较重的人，维持身体运转需要更多能量，所以基础代谢率通常更高。
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mr-4 mt-1">
-              <span class="font-semibold">4</span>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">肌肉量</h3>
-              <p class="text-gray-700 leading-relaxed">
-                肌肉是“耗能大户”。肌肉多的人，即使休息时消耗的热量也更多。这就是为什么增肌有助于提高代谢。
-              </p>
-            </div>
-          </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">2. A型和B型父母能生出O型孩子吗？</h3>
+          <p>可以，但需要满足一个条件：父母双方都必须携带O“信息”（即他们的基因型是AO和BO）。这样组合起来，就有一定的概率生出OO（即O型）的孩子。</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">3. 父母有一方是AB型，孩子可能是O型吗？</h3>
+          <p>不可能。AB型血的人只会传递A或B“信息”，不会传递O“信息”。所以，只要父母一方是AB型，孩子就不可能得到两个O“信息”，也就不可能是O型血。</p>
         </div>
       </div>
-    </div>
-    
-    <!-- 第四部分：如何计算和利用BMR -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        如何知道自己的基础代谢率？
-      </h2>
-      <div class="space-y-6">
-        <p class="text-gray-700 leading-relaxed">
-          专业机构可以通过仪器精确测量，但对于普通人来说，使用广泛认可的公式计算就能得到相当准确的参考值。
-        </p>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold text-gray-900 mb-4">计算公式的简单理解</h3>
-          <p class="text-gray-700 mb-4 leading-relaxed">
-            最常用的计算会考虑你的性别、身高、体重和年龄。公式背后的逻辑很直观：
-          </p>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span>体重越重，消耗越多（因为要支撑更多组织）</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-600 mr-2">•</span>
-              <span>身高越高，消耗越多（体型大的身体需要更多能量维持）</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-orange-600 mr-2">•</span>
-              <span>年龄越大，消耗越少（新陈代谢自然减慢）</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-600 mr-2">•</span>
-              <span>性别不同，公式有调整（反映男女身体的天然差异）</span>
-            </li>
-          </ul>
-        </div>
-        
-        <p class="text-gray-700 leading-relaxed">
-          现在有很多在线的<strong>基础代谢率计算器</strong>，你只需要输入几个基本信息，就能快速得到结果。这比手动计算方便多了。
-        </p>
-      </div>
-    </div>
-    
-    <!-- 第五部分：日常应用建议 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        知道了BMR，日常生活怎么用？
-      </h2>
-      <div class="space-y-6">
-        <p class="text-gray-700 leading-relaxed">
-          算出基础代谢率只是第一步，更重要的是如何应用到生活中。这里有几个实用的建议：
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="border border-gray-200 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">对于想控制体重的人</h3>
-            <p class="text-gray-700 leading-relaxed">
-              你的每日总消耗 = 基础代谢率 + 活动消耗（走路、工作、运动等）。要减肥，可以让每日摄入热量略低于总消耗，但<strong>不要长期低于基础代谢率</strong>。
-            </p>
-          </div>
-          
-          <div class="border border-gray-200 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">对于想保持现状的人</h3>
-            <p class="text-gray-700 leading-relaxed">
-              如果你的目标是维持体重，那么每日摄入热量可以接近总消耗量。了解自己的基础代谢率，能帮你更好地规划三餐。
-            </p>
-          </div>
-        </div>
-        
-        <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">一个重要的提醒</h3>
-          <p class="text-gray-800 leading-relaxed">
-            基础代谢率不是一成不变的。通过增加肌肉锻炼、保证充足睡眠、合理饮食，你可以适度提高自己的基础代谢。相反，长期极低热量饮食或肌肉流失，则可能让它下降。
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- 第六部分：常见问题 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-        关于基础代谢率的常见疑问
-      </h2>
-      <div class="space-y-6">
-        <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">基础代谢率越高越好吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            不一定。基础代谢率高意味着你“基础能耗”大，对控制体重可能有利，但它主要反映的是身体的基本特征。健康的关键在于平衡，而不是一味追求高代谢。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">为什么两个人身高体重一样，BMR可能不同？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            除了身高体重，年龄、性别、肌肉脂肪比例都会影响。一个经常锻炼、肌肉多的人，基础代谢率通常会比同体重但肌肉少的人高。
-          </p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">多久需要重新计算一次？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            如果你的体重、年龄发生了明显变化，或者健身增肌取得了效果，建议重新计算。一般每隔3-6个月算一次，能更准确地反映当前状态。
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- 结尾部分 -->
-    <div class="mt-12 pt-8 border-t border-gray-200">
-      <div class="bg-blue-50 rounded-xl p-8 text-center">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">了解自己，从了解身体的“基础能耗”开始</h2>
-        <p class="text-gray-700 mb-6 leading-relaxed">
-          基础代谢率是一个有用的健康参考指标，它能帮你更科学地管理饮食和运动。记住，每个人的身体都是独特的，数字只是参考，更重要的是倾听身体的感受，找到适合自己的健康节奏。
-        </p>
-        <p class="text-gray-600 text-sm">
-          不妨找个时间，用基础代谢率计算器了解一下自己的数字吧。知彼知己，才能更好地照顾自己。
-        </p>
-      </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">了解血型遗传有什么用？</h2>
+      <p>首先，它能满足我们的好奇心，解开“我为什么是这个血型”的疑问。在家庭聊天中，这也是一个很有趣的话题。</p>
+      <p>其次，了解基本的血型知识，能在一些情况下帮助我们建立初步的判断。比如在紧急情况下需要输血时，知道家人的血型或许能提供一些线索，但<b>所有医疗行为都必须以正规医院的检验为准</b>。</p>
+      <p>最重要的是，这让我们对生命的传承多了一份了解。我们身上的许多特征，都携带着来自父母双方的、独一无二的“密码”。</p>
+    </section>
+
+    <footer class="pt-8 mt-8 border-t border-gray-200">
+      <p class="text-gray-600">希望这篇文章能帮你轻松理解血型遗传的规律。下次再和朋友聊起这个话题时，你也可以分享这些有趣的知识了。</p>
+    </footer>
+  </article>
 </div>
-`;export{e as default};
+`;export{t as default};

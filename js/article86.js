@@ -1,3 +1,96 @@
-const s=`<div class="max-w-4xl mx-auto p-4 sm:p-6 text-gray-800 bg-white">
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">几点睡觉最合适？一个简单方法帮你算出最佳入睡时间</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">每天早上闹钟响起时，你是不是也常常感到疲惫不堪？其实，问题可能不在于你睡了多久，而在于你什么时候入睡。今天，我们来聊聊一个简单却很实用的问题：根据你的起床时间，几点睡觉最合适？</p>
+  </header>
 
-<!-- 标题 --> <h1 class="text-3xl sm:text-4xl font-bold text-center mb-3 text-gray-900">人生小格：用一个格子代表一个月，看清你一生的时间分配</h1> <p class="text-base sm:text-lg text-center text-gray-600 mb-8 border-b border-gray-200 pb-6">工作、睡眠、陪伴家人……你的余生还剩多少格子？</p> <!-- 引言 --> <section class="mb-8"> <p class="text-base sm:text-lg mb-4 leading-relaxed"> 你有没有认真算过，如果活到80岁，你的一生总共有多少个月？答案是<span class="font-semibold text-green-700">960个月</span>。如果每个月用一个小格子代表，画在纸上，也就不到1000个格子。现在你已经划掉了多少？剩下的格子里，有多少要交给工作，多少要在睡眠中度过，又有多少能留给父母和孩子？ </p> <p class="text-base sm:text-lg mb-4 leading-relaxed"> 「人生小格」就是这样一个把生命变成彩色方格的小工具。你只需输入出生日期、预期寿命、退休年龄和结婚年龄，它就会自动生成一张格子图——每个格子代表一个月，不同颜色记录着你已经走过的日子，以及未来时间里睡眠、工作、退休、陪孩子、陪父母所占用的月份。一眼看过去，人生进度清清楚楚。 </p> </section> <!-- 颜色说明卡片 --> <section class="mb-10 bg-gray-50 p-5 rounded-xl border border-gray-200"> <h2 class="text-xl font-semibold mb-4 text-gray-900">每个颜色代表什么？</h2> <div class="grid grid-cols-1 sm:grid-cols-2 gap-3"> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-green-500 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">绿色：</span>你已经走过的生命月份</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-blue-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">浅蓝：</span>睡眠（假设余生平均每天睡8小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-gray-400 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">灰色：</span>工作（退休前每天工作8小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-yellow-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">黄色：</span>退休后的日子</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-pink-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">粉色：</span>陪伴孩子（孩子出生后18年，每天5小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-blue-500 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">深蓝：</span>陪伴父母（每月看望一天，直到父母预期寿命）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-gray-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">浅灰：</span>其他自由支配的时间</span></div> </div> <p class="text-xs text-gray-500 mt-4 italic">注：所有时间分配都是基于平均假设，实际你可以通过调整退休年龄、结婚年龄来观察变化。</p> </section> <!-- 一个具体的例子 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">举个🌰：1995年出生的人，现在还剩多少格子？</h2> <p class="text-base mb-3 leading-relaxed"> 假设你出生于1995年12月26日（对，就是代码里那个默认日期），预期寿命80岁，打算65岁退休，30岁结婚并且有了孩子。那么到今天（2026年2月），你已经走过了大约30年零2个月，也就是<span class="font-medium">362个绿色格子</span>。余生还有<span class="font-medium">598个格子</span>（80×12－362）。 </p> <p class="text-base mb-3 leading-relaxed"> 在这598个格子里： </p> <ul class="list-disc pl-6 space-y-1 text-base mb-4"> <li><span class="font-medium">约200个浅蓝格子</span>会被睡眠悄悄占据（毕竟人每天要睡8小时）；</li> <li><span class="font-medium">约180个灰色格子</span>要用来工作（从30岁到65岁，每天8小时，换算成整月）；</li> <li><span class="font-medium">约80个黄色格子</span>是65岁后的退休时光；</li> <li><span class="font-medium">约40个粉色格子</span>属于陪伴孩子的18年（假设每天5小时，累积起来其实只有这么少）；</li> <li><span class="font-medium">约30个深蓝格子</span>是看望父母的珍贵时刻（每月一天，直到他们80岁）；</li> <li>剩下<span class="font-medium">不到70个浅灰格子</span>才是完全属于你自己的、可以自由支配的完整月份。</li> </ul> <p class="text-base bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-300"> <span class="font-medium">是不是有点吃惊？</span> 原来一辈子看起来很长，但除去睡眠、工作、固定责任，真正能随心所欲的时间，竟然只有五六年（70个月左右）。这就是视觉化的力量——让抽象的“时间”变成一个个小方格，逼你直视。 </p> </section> <!-- 你可以自己调整 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">换一种活法，格子颜色就会变</h2> <p class="text-base mb-3 leading-relaxed"> 人生小格最有意思的地方，是你可以在计算器里随意改变退休年龄、结婚年龄，甚至选择“不退休”或“不结婚”。每改一次，格子图都会重新排列，让你立刻看到不同选择带来的变化： </p> <ul class="list-disc pl-6 space-y-2 text-base"> <li><span class="font-medium">如果延迟退休到70岁：</span>灰色工作格子会多出一大片，黄色退休格子相应减少，你自由支配的浅灰格子被进一步压缩。</li> <li><span class="font-medium">如果选择不结婚：</span>粉色格子完全消失，但深蓝（陪父母）和其他颜色基本不变，你可能会意识到，原来陪伴孩子的时间竟然只占生命的一小撮，错过了就真的没了。</li> <li><span class="font-medium">如果预期寿命增加到90岁：</span>总格子变成1080个，你会多出120个格子——但这些多出来的格子大部分会分给睡眠（浅蓝）和退休后的黄色，工作灰色并不会增加（除非你延迟退休）。</li> </ul> <p class="text-base mt-4">这种互动让很多人开始认真思考：我到底想把生命“涂”成什么样子？是希望工作格子少一点，还是陪伴家人的颜色深一点？</p> </section> <!-- 为什么值得一看 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">为什么每个普通人都该试试“人生小格”？</h2> <p class="text-base mb-3 leading-relaxed"> 因为我们平时总觉得日子还长，但数字不会骗人。900多个格子，随手一划就过了三分之一。那些你以为会很多的时间——比如陪孩子长大、陪父母聊天——在格子里其实只有一小排。相反，工作和睡眠却像背景色一样铺满了整个生命。 </p> <p class="text-base mb-3 leading-relaxed"> 有一位用户说，看到自己剩余格子中代表父母的深蓝色只有那么几行，他立刻订了周末回家的车票。还有一位刚工作的年轻人，发现如果自己65岁退休，工作格子几乎要占到剩余格子的三分之一，于是开始认真研究副业和理财，想提前“买回”一些灰色格子。 </p> <p class="text-base font-medium">这就是人生小格想带给你的——不是焦虑，而是一份清晰的“人生地图”，让你在做每一个重大决定时，能想起那些格子的颜色。</p> </section> <!-- 结尾呼吁 --> <section class="mt-10 pt-6 border-t border-gray-300 text-center"> <p class="text-base sm:text-lg text-gray-700 mb-2">你不妨也拿出自己的出生日期，算一算已经划掉了多少格子，剩下的还想怎么涂。</p> <p class="text-xl font-semibold text-gray-900">希望你的格子图里，暖色多一些，遗憾少一些。</p> <p class="text-sm text-gray-500 mt-6">（你可以直接在页面上方的工具里输入你的信息，实时生成属于你自己的“人生小格”。）</p> </section> </div>`;export{s as default};
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 为什么"几点睡"比"睡多久"更重要？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">很多人觉得，只要睡够8小时，几点睡都一样。但事实并非如此。我们的身体有一个内在的"生物钟"，它喜欢规律，也喜欢在特定的时间段休息。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-teal-600 my-5">
+      <p class="text-gray-700"><strong>打个比方：</strong>想象你的身体是一家工厂，晚上10点到凌晨2点是"深度维修"时间。如果你总是在这个时间段还醒着，工厂的维修工作就会被打乱，久而久之，身体就会出现各种小毛病——白天犯困、注意力不集中、皮肤变差、抵抗力下降。</p>
+    </div>
+    <p class="text-gray-700 leading-relaxed">所以，与其纠结睡了几个小时，不如先搞清楚：我该什么时候上床？</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 不同年龄的人，需要睡多久？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">国家卫生健康委员会的睡眠健康指南告诉我们，不同年龄段的人，对睡眠的需求是不一样的：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">成年人（18-64岁）：</strong>每天需要7-8小时睡眠。这是大多数打工人的标准配置。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">中小学生：</strong>每天需要8-10小时睡眠。孩子正在长身体，睡眠对他们的发育和学习都非常重要。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">老年人（65岁以上）：</strong>每天需要6-7小时睡眠。随着年龄增长，睡眠时间会自然减少，但质量更重要。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">知道了需要睡多久，再结合你每天必须起床的时间，就能倒推出你应该什么时候入睡了。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 一个简单的计算方法</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">假设你每天早上7点半必须起床，成年人需要睡8小时。那么，倒推回去，你应该在晚上11点半左右入睡。</p>
+    <p class="mb-4 text-gray-700 leading-relaxed">但这里有个小细节：<strong>入睡不等于上床</strong>。从躺下到真正睡着，大多数人需要15-30分钟。所以，如果你11点半要入睡，最好11点就上床躺好。</p>
+    <div class="bg-teal-50 p-5 rounded-lg my-5">
+      <p class="text-gray-700"><strong>举个例子：</strong></p>
+      <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-700">
+        <li>起床时间：早上7:30</li>
+        <li>需要睡眠：8小时</li>
+        <li>最佳入睡时间：晚上11:30</li>
+        <li>建议上床时间：晚上11:15（预留15分钟准备）</li>
+      </ul>
+    </div>
+    <p class="text-gray-700 leading-relaxed">这样一算，是不是就很清楚了？</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 睡前准备也很重要</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">知道了上床时间，还要做好睡前准备，才能真正睡个好觉。以下是一些实用的小建议：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-blue-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前1小时：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">放下手机，远离电脑屏幕。蓝光会抑制褪黑素分泌，让你更难入睡。可以看看纸质书、听听轻音乐，或者泡个热水脚。</p>
+      </div>
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前2-3小时：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">不要吃太饱，也不要喝太多水。晚餐后可以适当散步，但避免剧烈运动。咖啡和茶最好下午就不要喝了。</p>
+      </div>
+    </div>
+    <p class="text-gray-700 leading-relaxed">这些小习惯看似简单，但坚持下来，你会发现入睡变得更容易，睡眠质量也会明显提升。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：我每天睡够8小时，但还是觉得累，怎么回事？</p>
+        <p class="text-gray-700 text-sm">A：可能是睡眠质量不高，或者入睡时间不规律。建议固定上床和起床时间，让身体形成规律。另外，睡前玩手机、熬夜后补觉等习惯都会影响睡眠质量。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：周末可以晚睡晚起吗？</p>
+        <p class="text-gray-700 text-sm">A：偶尔可以，但不要相差太大。如果平时11点睡，周末熬到凌晨2点，周一早上会非常痛苦。建议周末起床时间不要比平时晚超过1小时。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：入睡困难怎么办？</p>
+        <p class="text-gray-700 text-sm">A：如果躺下30分钟还睡不着，不要强迫自己。可以起来做点放松的事，比如看会儿书，等有困意了再躺下。长期入睡困难的话，建议咨询医生。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：好的睡眠，从规律开始</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">睡眠占了我们人生的三分之一，它影响着我们的精力、情绪、工作效率，甚至健康。而好的睡眠，其实不需要什么神奇的方法，只需要做到两点：<strong>规律</strong>和<strong>充足</strong>。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">今天开始，试着算算你的最佳入睡时间，然后坚持每天在那个时间上床。一周后，你会发现早上起床不再那么痛苦，白天的精神也会好很多。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">想知道你该几点睡？用上面的工具算一算，今晚就开始改变吧！</p>
+    </div>
+  </section>
+</article>
+`;export{s as default};

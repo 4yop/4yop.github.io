@@ -1,107 +1,99 @@
-const t=`
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
-  
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
+const s=`
+<article class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    快速制作个性化图片？试试这个在线图片生成工具
+  </h1>
+
+  <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+    你是否需要一张简单又好看的图片，用来当头像、文章配图，或是测试设计效果？在网上找图往往费时费力，尺寸和风格还不一定合适。其实，有个简单的小工具能帮你自己“造”出想要的图片。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">它能做什么？</h2>
+    <p class="text-gray-700">
+      简单来说，这是一个在线图片制作工具。你只需要动动鼠标，选择想要的尺寸、颜色和风格，就能立刻得到一张全新的、专属于你的图片。整个过程完全免费，也不需要注册账号。
+    </p>
   </div>
-  
-  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
-      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">为什么你会需要它？</h2>
+
+  <p class="mb-4 leading-relaxed">
+    很多时候，我们需要的只是一张“占位图”或简单的背景图。比如：
+  </p>
+
+  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+    <li><span class="font-medium">发社交媒体</span>：想发动态，却找不到合适的配图。</li>
+    <li><span class="font-medium">做PPT或文档</span>：需要一个简洁的背景或示意图。</li>
+    <li><span class="font-medium">设计头像</span>：不想用真人照片，想做个特别的头像。</li>
+    <li><span class="font-medium">测试网站或App</span>：开发时，需要放入不同尺寸的图片看看效果。</li>
+  </ul>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">可以做出哪些风格的图片？</h2>
+
+  <p class="mb-6 leading-relaxed">
+    这个工具提供了好几种现成的风格模板，你可以直接选用，省去自己设计的麻烦：
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 简洁纯色与渐变</h3>
+      <p class="text-gray-700">
+        选择一种喜欢的颜色，或者让几种颜色平滑过渡。这种图非常干净，适合做背景，不会干扰文字内容。
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
-      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 有趣的几何与像素风</h3>
+      <p class="text-gray-700">
+        自动生成由圆形、方块、三角形组成的图案，或者充满复古感的像素画。风格独特，很有设计感。
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
-      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 艺术感抽象图案</h3>
+      <p class="text-gray-700">
+        随机生成带有线条和色块的抽象画，每一张都不同。用来做海报或封面的底图很有格调。
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
-      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
-    </div>
-  </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
-  
-  <div class="mb-8">
-    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
-    
-    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
-      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
-      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
-      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
-      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
-    </ul>
-  </div>
-  
-  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
-      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
-    </div>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
-      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
-    </div>
-    
-    <div>
-      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
-      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 带文字的说明图</h3>
+      <p class="text-gray-700">
+        你可以在图片中央加上自己的文字，比如尺寸信息、简单标语，让它变成一张信息明确的说明图。
+      </p>
     </div>
   </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
-  
-  <div class="mb-8">
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">1</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
-        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
-      </div>
-    </div>
-    
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">2</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
-        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
-      </div>
-    </div>
-    
-    <div class="flex items-start">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">3</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
-        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
-      </div>
-    </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">使用起来复杂吗？非常简单！</h2>
+
+  <p class="mb-6 leading-relaxed">
+    不用担心操作复杂，整个过程就像填选择题一样简单，主要就三步：
+  </p>
+
+  <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
+    <li>
+      <span class="font-medium">第一步：选尺寸。</span>工具里已经预设好了“头像”、“手机屏幕”、“电脑横幅”等常用尺寸，一键就能选中。
+    </li>
+    <li>
+      <span class="font-medium">第二步：挑风格和颜色。</span>从上面介绍的风格里选一个你喜欢的，再选择暖色调、冷色调或者随机的彩虹色。
+    </li>
+    <li>
+      <span class="font-medium">第三步：生成并保存。</span>点击按钮，图片立刻就出现在右边了。觉得满意，点一下“下载”按钮就能把图片保存到电脑或手机里。
+    </li>
+  </ol>
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">一个小窍门：让工具帮你决定</h3>
+    <p class="text-gray-700">
+      如果不知道该怎么搭配才好，可以直接点击“随机参数”按钮。工具会帮你随机组合尺寸、风格和颜色，常常能带来意想不到的惊喜效果，特别适合寻找灵感。
+    </p>
   </div>
-  
-  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
-    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
-    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
-  </div>
-</div>
-`;export{t as default};
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">总结一下</h2>
+
+  <p class="mb-6 leading-relaxed">
+    当你临时需要一张图片，又不想花费太多时间搜索或学习复杂的设计软件时，这类在线图片生成工具就是一个非常轻巧便捷的选择。它把专业的设计选项变成了简单的下拉菜单和按钮，让任何人都能快速获得一张可用、好看的图片。
+  </p>
+
+  <p class="text-gray-600 italic border-l-4 border-gray-300 pl-4 py-2">
+    下次你需要图片素材时，不妨试试自己动手“生成”一张。或许你会发现，创造一张属于自己的独特图片，原来可以这么简单和有趣。
+  </p>
+</article>
+`;export{s as default};

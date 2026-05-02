@@ -1,40 +1,82 @@
-const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个计算器适合拿来做什么</h2>
-      <p class="text-sm leading-7">
-        这页适合先估算房贷、车贷这类分期贷款的大致月供、总利息和还款总额，
-        也能快速比较等额本息和等额本金两种还款方式的差异。页面下方会列出前 12 期明细，方便你看本金和利息的变化。
-      </p>
-    </section>
+const s=`
+<div class="max-w-4xl mx-auto px-4 py-6 text-gray-700 leading-relaxed">
 
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">输入前先确认 4 个数字</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>贷款金额：尽量按你真实准备贷的金额填写。</li>
-        <li>年利率：先用银行给到的口径，不要混用宣传利率和审批利率。</li>
-        <li>贷款年限：不同年限会直接影响月供压力和总利息。</li>
-        <li>还款方式：等额本息更稳定，等额本金前高后低。</li>
-      </ol>
-    </section>
+  <!-- 主标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">数学步骤计算器：让复杂表达式一步步变简单，告别计算烦恼</h1>
 
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>为什么工具结果和银行方案不完全一样？</strong> 银行审批会叠加实际利率、手续费、组合贷结构和还款规则，工具只做标准口径试算。</p>
-        <p><strong>该先看月供还是总利息？</strong> 如果更关心每月压力，先看月供；如果在比长期成本，再看总利息和总还款额。</p>
-        <p><strong>能替代正式贷款方案吗？</strong> 不能，结果仅供预算参考，最终以银行审批和合同为准。</p>
-      </div>
-    </section>
+  <!-- 引言段落 -->
+  <p class="text-lg mb-6">
+    小时候做数学题，最怕的不是算不出结果，而是不知道中间过程哪里错了。工作后遇到带括号、乘方、三角函数的混合算式，总想有个人能一步一步拆给我们看。现在，这个“数学步骤计算器”就像一位耐心的数学老师，你输入一个算式，它就把每一步怎么算的都列出来，清清楚楚。
+  </p>
 
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        如果你想先看怎样输入才能更接近真实月供，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/loan-payment-estimation/">《房贷月供怎么估算更准确》</a>。
-      </p>
-    </section>
-  </article>
+  <!-- 小标题：它有什么用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">它有什么用？不只是给答案，更给过程</h2>
+  <p class="mb-4">
+    普通计算器只给你一个冷冰冰的数字，错了你都不知道哪一步出了问题。而这个计算器的特别之处在于，它会像你手算一样，先算括号里的，再算乘方，然后乘除，最后加减——每一层都展开给你看。比如输入 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)+(2+3)*4^2/2</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)=4</code>，再算 <code class="bg-gray-100 px-1 py-0.5 rounded">(2+3)=5</code>，然后一步步得出最终结果。整个过程都在右侧的“计算步骤”区显示，你可以一边看一边对照自己的思路。
+  </p>
+
+  <!-- 小标题：支持哪些运算？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">加减乘除、平方根、三角函数……它都会</h2>
+  <p class="mb-4">
+    除了最基础的加减乘除（+ - * /）和乘方（^），它还支持很多常用数学函数：
+  </p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>平方根</strong>：sqrt(9)  → 3</li>
+    <li><strong>三角函数</strong>：sin, cos, tan 以及它们的反函数 asin, acos, atan</li>
+    <li><strong>对数</strong>：log（以10为底）、ln（自然对数）、exp（e的次方）</li>
+    <li><strong>绝对值</strong>：abs(-5) → 5</li>
+  </ul>
+  <p class="mb-4">
+    不论你是中学生做函数题，还是工程师验算数据，这些功能都够用。而且它完全免费，打开网页就能用，不用下载任何软件。
+  </p>
+
+  <!-- 小标题：为什么需要看到每一步？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">看到每一步，才能真的理解数学</h2>
+  <p class="mb-4">
+    很多朋友用计算器只是求个结果，但遇到复杂算式时，运算顺序（先乘除后加减、括号优先）往往容易搞混。这个计算器把每一步都展示出来，等于帮你复习了一遍运算法则。比如 <code class="bg-gray-100 px-1 py-0.5 rounded">2+3×4</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">3×4=12</code>，再加2得14，而不是从左到右傻算。如果你不小心写错了括号，它还会提示语法错误，让你及时修改。
+  </p>
+
+  <!-- 小标题：适合哪些人用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">谁最需要这个计算器？</h2>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>学生党</strong>：做作业时检查过程，或者遇到不会算的式子，看步骤学习。</li>
+    <li><strong>家长</strong>：辅导孩子数学，自己先验算一遍，确保讲得对。</li>
+    <li><strong>老师</strong>：出题后快速验证步骤，省去手算时间。</li>
+    <li><strong>上班族</strong>：财务、工程、数据分析中遇到复杂公式，不再头疼。</li>
+    <li><strong>考研/备考族</strong>：复习基础运算，巩固计算能力。</li>
+  </ul>
+
+  <!-- 小标题：怎么用？简单三步 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？简单三步</h2>
+  <ol class="list-decimal pl-6 mb-6 space-y-2">
+    <li>在输入框里写下你的数学表达式，比如 <code class="bg-gray-100 px-1 py-0.5 rounded">(5+3)/2^3</code>。</li>
+    <li>点击蓝色的“计算”按钮（或者直接按回车）。</li>
+    <li>右侧立刻显示一步步的计算过程，最下面还有最终结果。</li>
+  </ol>
+  <p class="mb-4">
+    如果你想保存结果或步骤，可以点“复制数值”只复制最终数字，或者点“复制全部（结果+步骤）”把整个计算过程复制下来，方便贴在作业或报告里。
+  </p>
+
+  <!-- 小标题：常见问题 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">你可能想问</h2>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-medium text-gray-900">输入错误怎么办？</h3>
+      <p>输入框下面会有红色提示，告诉你哪里错了，比如括号不匹配、用了不支持的符号。修改正确后再点计算就行。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">可以计算很长的式子吗？</h3>
+      <p>当然可以，只要你的表达式合理，它都会耐心地一步步拆解。不过为了阅读方便，建议适当换行或用括号分组。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">手机上好用吗？</h3>
+      <p>完全适配手机，输入框和按钮在手机上会自动竖排，步骤区也在下方，字号都调整得刚刚好，手指点按也很方便。</p>
+    </div>
+  </div>
+
+  <!-- 结尾 -->
+  <p class="text-lg border-t pt-6 mt-8 text-gray-600">
+    数学不应该只有答案，还应该有清晰的过程。试试这个数学步骤计算器，让每一个算式都变得透明、可追溯。无论是学习还是工作，它都能成为你随身携带的“数学草稿纸”。
+  </p>
 </div>
-`;export{t as default};
+`;export{s as default};

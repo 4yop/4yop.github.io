@@ -1,57 +1,40 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-gray-700">
-  <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">猜数字游戏：经典的逻辑挑战，重温简单纯粹的思考乐趣</h2>
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个计算器适合拿来做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合先估算房贷、车贷这类分期贷款的大致月供、总利息和还款总额，
+        也能快速比较等额本息和等额本金两种还款方式的差异。页面下方会列出前 12 期明细，方便你看本金和利息的变化。
+      </p>
+    </section>
 
-  <p class="text-lg mb-6 leading-relaxed">还记得小时候玩过的“猜数字”游戏吗？一个人心里默默想好一个数字，另一个人通过不断的猜测和“大了”、“小了”的提示，最终找出正确答案。这个看似简单的游戏，其实充满了逻辑的魅力，是锻炼思维、消磨时间的好方法。今天，我们就来聊聊这个经典的游戏。</p>
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">输入前先确认 4 个数字</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>贷款金额：尽量按你真实准备贷的金额填写。</li>
+        <li>年利率：先用银行给到的口径，不要混用宣传利率和审批利率。</li>
+        <li>贷款年限：不同年限会直接影响月供压力和总利息。</li>
+        <li>还款方式：等额本息更稳定，等额本金前高后低。</li>
+      </ol>
+    </section>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pt-6 border-t border-gray-200">为什么猜数字游戏经久不衰？</h2>
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>为什么工具结果和银行方案不完全一样？</strong> 银行审批会叠加实际利率、手续费、组合贷结构和还款规则，工具只做标准口径试算。</p>
+        <p><strong>该先看月供还是总利息？</strong> 如果更关心每月压力，先看月供；如果在比长期成本，再看总利息和总还款额。</p>
+        <p><strong>能替代正式贷款方案吗？</strong> 不能，结果仅供预算参考，最终以银行审批和合同为准。</p>
+      </div>
+    </section>
 
-  <p class="mb-4 leading-relaxed">它没有复杂的规则，不需要任何道具，随时随地，只要有两个数字的范围和一点思考，游戏就可以开始。它的魅力恰恰在于这份简单和纯粹。</p>
-
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li class="leading-relaxed"><span class="font-medium text-gray-800">锻炼逻辑思维：</span> 每一次猜测都不是盲目的，你需要根据“大了”或“小了”的反馈，不断缩小数字的可能范围，这个过程就是最简单的逻辑推理训练。</li>
-    <li class="leading-relaxed"><span class="font-medium text-gray-800">老少咸宜，没有门槛：</span> 无论是孩子还是老人，都能立刻理解玩法。它可以是亲子间的互动，也可以是朋友间的小比拼。</li>
-    <li class="leading-relaxed"><span class="font-medium text-gray-800">纯粹的心流体验：</span> 在猜测的过程中，你会全神贯注于数字和范围的变化，暂时忘却外界的纷扰，获得一种专注的放松感。</li>
-    <li class="leading-relaxed"><span class="font-medium text-gray-800">挑战自我的成就感：</span> 当你用最少的次数猜中答案，尤其是面对1到100甚至更大的范围时，那种“我真聪明”的成就感非常直接。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pt-6 border-t border-gray-200">猜数字游戏怎么玩？</h2>
-
-  <p class="mb-4 leading-relaxed">它的规则简单到一句话就能说清：系统（或你的朋友）会在一个设定的范围内（比如1到100），随机“想”好一个数字。你的任务就是猜出这个数字是什么。</p>
-
-  <p class="mb-4 leading-relaxed">每当你报出一个数字，系统会给你明确的提示：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li class="leading-relaxed">如果你猜的数字<strong>比答案大</strong>，系统会说：“太大了，再小一点。”</li>
-    <li class="leading-relaxed">如果你猜的数字<strong>比答案小</strong>，系统会说：“太小了，再大一点。”</li>
-    <li class="leading-relaxed">如果你<strong>猜中了</strong>，游戏胜利！</li>
-  </ul>
-
-  <p class="mb-6 leading-relaxed">你的目标就是用尽可能少的次数，锁定最终的答案。你可以从简单的1到10开始，熟练后再挑战1到100，甚至更大的范围，感受思维升级的乐趣。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pt-6 border-t border-gray-200">想玩得快？试试这两个小策略</h2>
-
-  <p class="mb-4 leading-relaxed">虽然可以随意乱猜，但掌握一点小技巧，能让你更快找到答案，体验“运筹帷幄”的快感。</p>
-
-  <div class="bg-blue-50 p-5 rounded-lg mb-6">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">1. “对半砍”策略（二分法）</h3>
-    <p class="mb-3 leading-relaxed">这是最科学、最高效的方法。无论范围多大，每次都猜当前可能范围的<strong>正中间那个数</strong>。</p>
-    <p class="leading-relaxed">例如，范围是1到100，第一次就猜50。如果系统说“太大”，你就知道答案在1-49之间；如果系统说“太小”，你就知道答案在51-100之间。这样，无论结果如何，你都能立刻排除掉一半的错误答案！接着在新的范围里继续取中间数，以此类推。用这个方法，猜中1-100之间的任何数字，最多只需要7次。</p>
-  </div>
-
-  <div class="bg-green-50 p-5 rounded-lg mb-6">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 边界记忆法</h3>
-    <p class="leading-relaxed">在猜测过程中，时刻记住两个关键的边界：你猜过的所有数字中，<strong>最大的“太小”数字</strong>和<strong>最小的“太大”数字</strong>。实际的答案一定在这两个数字之间。明确这个“包围圈”，能让你避免重复猜测无效的数字，思路更清晰。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pt-6 border-t border-gray-200">重温经典，享受思考的片刻</h2>
-
-  <p class="mb-6 leading-relaxed">在这个信息爆炸、娱乐方式多样的时代，像猜数字这样简单的逻辑游戏，反而能带给我们一种返璞归真的宁静。它不消耗你的注意力去处理复杂剧情或炫酷画面，只是让你和一组数字、一个逻辑问题单纯地相处。</p>
-
-  <p class="mb-6 leading-relaxed">无论你是想在工作间隙放松一下大脑，还是想找一个亲子互动的小游戏，或者单纯怀念那种用纸笔就能玩的乐趣，猜数字都是一个绝佳的选择。它让我们相信，最简单的规则，往往能诞生最长久的乐趣和最深入的思考。</p>
-
-  <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-8">
-    <p class="font-medium text-gray-800 mb-2">💡 小贴士：</p>
-    <p class="leading-relaxed">现在，你可以在网上找到很多现成的猜数字游戏，它们通常提供从易到难多个档次（比如从1-10到1-10000），并且会自动记录你的猜测历史、统计你的战绩，甚至给出“智能提示”，告诉你当前最可能的目标范围。下次当你需要片刻放松或想动动脑子时，不妨打开一个，体验一下这份经典的逻辑魅力吧。</p>
-  </div>
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你想先看怎样输入才能更接近真实月供，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/loan-payment-estimation/">《房贷月供怎么估算更准确》</a>。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{l as default};
+`;export{t as default};

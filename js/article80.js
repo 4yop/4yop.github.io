@@ -1,133 +1,88 @@
-const t=`
-<article class="max-w-4xl mx-auto p-6 bg-white text-gray-800 font-sans" itemscope itemtype="https://schema.org/Article">
-  <meta itemprop="datePublished" content="2024-02-10">
-  <meta itemprop="author" content="Tools321">
-
-  <header>
-    <h2 class="text-3xl font-bold mb-4 text-gray-900 text-center" itemprop="headline">日出日落时间查询 - 全球今日日出日落时刻在线计算器</h2>
+const s=`
+<article class="max-w-4xl mx-auto p-6 font-sans text-gray-800">
+  <header class="mb-8 text-center">
+    <h1 class="text-3xl font-bold text-slate-900 mb-4">你的身体变化，有把“聪明”的尺子</h1>
+    <p class="text-gray-600 text-lg">告别健忘与混乱，轻松看懂自己的健康趋势</p>
   </header>
 
-  <section class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-200" itemprop="description">
-    <h2 class="text-xl font-semibold mb-3 text-blue-800">什么是日出日落时间？</h2>
-    <p class="mb-2">
-      <strong>日出日落时间</strong>是指太阳从地平线升起（<strong>日出</strong>）和完全没入地平线以下（<strong>日落</strong>）的精确时刻。这两个时刻并非固定不变，而是随着<strong>地理位置（经纬度）</strong>、<strong>日期</strong>、<strong>海拔高度</strong>的不同而每天变化。本工具采用 NOAA 太阳位置算法，可精确计算全球任意地点的<strong>今日日出日落时刻</strong>，以及包含天文晨光、航海晨光、民用晨光等在内的 <strong>16 个关键太阳时段</strong>。
-    </p>
-  </section>
+  <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl mb-8">
+    <p class="mb-4">你是不是也有过这样的经历？站在秤上，看着体重数字，心里冒出无数问号：</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>体重没变，怎么感觉肚子又大了？</li>
+      <li>辛苦锻炼一个月，效果到底怎么样？</li>
+      <li>去年夏天的数据和今年的，早就混在一起记不清了。</li>
+      <li>买过体脂秤，但那些数据看一眼就忘了，根本不知道自己是进步了还是退步了。</li>
+    </ul>
+    <p class="mt-4">很多人管理健康，就像在用一把刻度模糊、还不带记忆功能的尺子，量了半天，结果还是糊涂账。</p>
+  </div>
 
-  <p class="text-gray-700 mb-6">
-    无论你是想规划摄影的<strong>黄金时刻</strong>、安排户外徒步的行程、还是了解农作物的日照时长，准确的日出日落时间都是必不可少的信息。本<strong>日出日落时间查询工具</strong>无需下载安装，打开浏览器输入经纬度即可免费使用，数据全部在本地计算处理，保护你的隐私安全。
-  </p>
-
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="what-is-sunrise">
-    <h2 id="what-is-sunrise" class="text-xl font-semibold mb-3 text-gray-900">什么是日出和日落？影响时间的因素有哪些？</h2>
-    <p class="text-gray-700 mb-3">
-      <strong>日出</strong>指太阳上边缘首次露出地平线的瞬间，<strong>日落</strong>则是太阳完全没入地平线以下的瞬间。具体时刻取决于以下四个核心因素：
-    </p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-0">
-      <li><strong>经纬度坐标</strong>：越靠近两极地区，昼夜变化越极端；赤道附近全年昼长稳定在约 12 小时。不同城市的日出日落时间差异显著。</li>
-      <li><strong>日期（季节）</strong>：夏至前后北半球白昼最长、日出最早日落最晚；冬至则相反（南半球季节相反）。春秋分时全球昼夜大致均等。</li>
-      <li><strong>海拔高度</strong>：海拔越高，地平线越远，日出会提前、日落会延后。一般每升高 1000 米，日出约提前 1~2 分钟。</li>
-      <li><strong>时区</strong>：本工具的计算结果已自动转换为当地时间，无需手动换算。</li>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-blue-500 pl-3 mb-4">一把更懂你的“健康尺”：体脂率</h2>
+    <p class="mb-4">我们常说的“胖瘦”，体重只是一个粗略参考。真正关键的是<strong>体脂率</strong>，也就是你身体里脂肪所占的比例。它就像一面更精准的镜子：</p>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">1</span>
+        <span>同样体重，肌肉多的人看起来紧致，脂肪多的人则显得臃肿，区别就在体脂率。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">2</span>
+        <span>减肥成功的标志不一定是体重暴跌，而是体脂率的稳步下降。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center leading-6 mr-2 flex-shrink-0">3</span>
+        <span>它比单纯的体重，更能反映你的锻炼成果和身体成分的真实变化。</span>
+      </li>
     </ul>
   </section>
 
-  <section class="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-6" aria-labelledby="twilight-stages">
-    <h2 id="twilight-stages" class="text-lg font-semibold mb-2 text-blue-900">黎明与黄昏的三个阶段：天文晨光、航海晨光、民用晨光</h2>
-    <p class="text-blue-800 text-sm mb-3">天文学根据太阳在地平线下的角度，将黎明和黄昏各分为三个阶段：</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-orange-600 text-sm">天文晨光 / 天文黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-18度 至 -12度<br/>天空开始微亮，肉眼可见最亮的星体，适合天文观测和深空摄影</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-green-500 pl-3 mb-4">如何轻松拥有自己的“健康日记本”？</h2>
+    <p class="mb-6">现在，想象你有一个<strong>专属的健康小助手</strong>，它能帮你解决上面的所有烦恼。你不需要懂复杂的数据，只需要像聊天一样告诉它几个基本信息。</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <h3 class="font-bold text-lg mb-3 text-blue-700">第一步：简单输入</h3>
+        <p>就像每次体检填表一样，选择性别，输入你的身高、体重和年龄。然后点击“计算”，你的体脂率结果立刻就出来了。这个过程，比你泡一杯茶还快。</p>
       </div>
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-yellow-600 text-sm">航海晨光 / 航海黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-12度 至 -6度<br/>地平线和主要星体清晰可见，水手可用以导航定位</p>
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <h3 class="font-bold text-lg mb-3 text-green-700">第二步：自动记忆</h3>
+        <p>神奇的是，每次计算后，这个小助手都会默默记下这次的数据和日期。你完全不用担心忘记或丢失。它会自动帮你整理好，形成一个清晰的历史记录表。</p>
       </div>
-      <div class="bg-white/70 rounded-lg p-3">
-        <p class="font-semibold text-sky-600 text-sm">民用晨光 / 民用黄昏</p>
-        <p class="text-xs text-gray-600 mt-1">太阳角度：-6度 至 0度<br/>地面景物清晰可辨，无需人工照明即可进行户外活动</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-lg mb-4 text-purple-700">第三步：看懂趋势</h3>
+      <p class="mb-4">这是最有价值的部分！所有记录下来的数据，会自动生成一张<strong>趋势变化图</strong>。</p>
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span> <strong>蓝线代表体脂率</strong>：一眼就能看出它是上升、下降还是持平。</li>
+        <li class="flex items-center"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span> <strong>绿线代表体重</strong>：可以和体脂率对照着看。</li>
+      </ul>
+      <p class="mt-4">比如，你可以清晰地看到：“哦，从3月到5月，我的体重没怎么变，但体脂率这条蓝线确实在慢慢往下走，这说明我长的可能是肌肉，减的是脂肪，锻炼有效！”</p>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-slate-800 border-l-4 border-amber-500 pl-3 mb-4">给你的数据，加上“双保险”</h2>
+    <p class="mb-4">我们最怕的就是数据丢失。这个小助手还有两个贴心功能：</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <div class="flex-1 bg-amber-50 p-5 rounded-xl border border-amber-100">
+        <h4 class="font-bold mb-2">打包带走（导出）</h4>
+        <p>你可以把所有的记录一键导出，保存到电脑或手机里，就像给珍贵的照片备份一样安心。</p>
+      </div>
+      <div class="flex-1 bg-emerald-50 p-5 rounded-xl border border-emerald-100">
+        <h4 class="font-bold mb-2">原样恢复（导入）</h4>
+        <p>万一需要，你可以把之前备份的数据文件再导入回来，所有记录瞬间恢复原样，无需重复输入。</p>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="how-to-use">
-    <h2 id="how-to-use" class="text-xl font-semibold mb-3 text-gray-900">如何使用日出日落时间查询工具？</h2>
-    <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-      <li><strong>选择日期</strong>：点击日期输入框选择你想查询的日期（默认显示今天，即<strong>今日日出日落</strong>时间）。</li>
-      <li><strong>输入经纬度</strong>：手动输入城市名称或经纬度坐标，或点击「获取当前位置」按钮自动 GPS 定位。页面进入时会通过 IP 自动获取大致位置并缓存。</li>
-      <li><strong>设置海拔（可选）</strong>：如果你在高海拔地区（如高原城市），填写海拔高度可获得更精确的结果。</li>
-      <li><strong>查看结果</strong>：页面上方横排显示今日日出时间、正午时间、日落时间和昼长；下方列表展示全部 16 个太阳时段的精确时刻，以及当前月相信息。</li>
-    </ol>
-  </section>
-
-  <section class="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-r-lg mb-6" aria-labelledby="use-cases">
-    <h2 id="use-cases" class="text-lg font-semibold mb-2 text-amber-900">日出日落时间查询的实际应用场景</h2>
-    <ul class="list-disc pl-5 space-y-1.5 text-sm text-amber-900/80 mb-0">
-      <li><strong>摄影规划</strong>：「黄金时刻」在日出后和日落前约 1 小时，光线柔和色彩丰富；「蓝色时刻」在民用晨光/民用黄昏期间，天空呈深蓝色调，是拍摄城市夜景和人像的最佳时机。</li>
-      <li><strong>徒步露营</strong>：利用日出日落时间精确规划行程，确保在天黑前到达营地；参考天文晨光时间判断安全的早起出发时间。</li>
-      <li><strong>农业种植</strong>：了解每日日照时长变化，合理安排农事活动。不同作物对昼长有不同需求，日照数据是农业生产的重要参考。</li>
-      <li><strong>太阳能发电</strong>：根据日出日落时间估算当日有效日照时长，从而预测光伏板发电量。</li>
-      <li><strong>生物节律与健康</strong>：日出日落影响人体褪黑素分泌和昼夜节律，了解自然光照规律有助于科学调整作息时间。</li>
-      <li><strong>航空航海</strong>：飞行员和水手需要精确的晨光昏影时间来进行目视飞行规则(VFR)操作和天文导航。</li>
-    </ul>
-  </section>
-
-  <section class="bg-gray-50 p-5 rounded-lg mb-6" aria-labelledby="algorithm">
-    <h2 id="algorithm" class="text-xl font-semibold mb-3 text-gray-900">日出日落时间计算原理是什么？</h2>
-    <p class="text-gray-700 mb-2">
-      本工具采用 <strong>NOAA（美国国家海洋大气管理局）公开发布的太阳位置算法</strong>，这是目前最权威的天文计算方法之一。核心计算步骤如下：
-    </p>
-    <ul class="list-disc pl-6 space-y-1.5 text-sm text-gray-600 mb-2">
-      <li>计算儒略世纪数（以 J2000 历元为基准的时间偏移量）</li>
-      <li>计算太阳平近点角、平黄经、真黄经等轨道参数</li>
-      <li>考虑地球轨道偏心率和黄赤交角修正</li>
-      <li>结合观测者的经纬度和海拔高度，求解太阳时角方程</li>
-      <li>输出 UTC 时间后自动转换为当地标准时间</li>
-    </ul>
-    <p class="text-gray-500 text-xs">
-      注：<strong>日出日落时间计算精度通常在正负 1 分钟以内</strong>。极地地区（出现极昼或极夜现象）可能显示为 --:--。实际时刻可能因局部地形遮挡、天气折射等因素略有偏差。
-    </p>
-  </section>
-
-  <section class="mb-10" aria-labelledby="faq">
-    <h2 id="faq" class="text-2xl font-semibold mb-6 border-b pb-2">常见问题</h2>
-    <div class="space-y-4">
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors" open>
-        <summary class="font-semibold cursor-pointer text-lg mb-2">如何查询今天的日出日落时间？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">打开本工具后，默认即可看到<strong>今日日出日落时间</strong>。如果需要查询其他城市或地点，只需在输入框中输入地名或经纬度坐标，系统会自动计算并显示该地点当天的日出时刻、日落时刻、昼长、正午时间以及全部16个太阳时段。也可以点击「获取当前位置」按钮自动定位到你所在的位置。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">日出日落时间查询准确吗？误差有多大？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">本工具采用的 NOAA 太阳位置算法是目前公认最精确的民用天文算法之一，<strong>计算精度通常在正负 1 分钟以内</strong>。需要注意的是，这个精度假设观测者在开阔地带且无地形遮挡。实际生活中，山脉、建筑物等地形因素可能导致日出延迟数分钟或日落提前数分钟。此外，大气折射效应也会产生微小影响。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">什么是天文晨光、航海晨光、民用晨光？有什么区别？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">这三个概念描述的是日出前（晨光）和日落后（黄昏）天空亮度的不同阶段，区别在于太阳在地平线下的角度：<br/><br/>
-        <strong>天文晨光/黄昏</strong>（太阳 -18° ~ -12°）：天空最暗的阶段，仅最亮的行星和恒星可见，适合天文观测。<br/><br/>
-        <strong>航海晨光/黄昏</strong>（太阳 -12° ~ -6°）：地平线已经可见，水手可以利用星体进行导航。<br/><br/>
-        <strong>民用晨光/黄昏</strong>（太阳 -6° ~ 0°）：户外活动无需额外照明即可进行，大多数日常活动可以开始或结束。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">为什么不同城市的日出日落时间不一样？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">日出日落时间主要受三个因素影响：<strong>纬度</strong>决定了太阳照射的角度——高纬度地区季节性差异大，低纬度地区全年较稳定；<strong>经度</strong>决定了时区位置——同一时区内东西部城市日出时间可相差数十分钟；<strong>日期</strong>决定了太阳直射点的位置——夏至北半球日出最早，冬至最晚。例如北京和海口在同一天的日出时间可相差 1 小时以上。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">摄影中的黄金时刻和蓝色时刻是什么时候？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t"><strong>黄金时刻（Golden Hour）</strong>指日出后约 1 小时内和日落前约 1 小时内的时段，此时太阳接近地平线，光线温暖柔和、阴影较长，是人像摄影和风光摄影的最佳时机。<strong>蓝色时刻（Blue Hour）</strong>指太阳在地平线下 -4° 到 -6° 之间（即民用晨光期间），天空呈现深邃的蓝色调，适合拍摄城市夜景和剪影照片。本工具会在结果中标注这些特殊时段。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">海拔高度对日出日落时间有什么影响？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">海拔越高，视线所及的地平线就越远，因此<strong>海拔高的地方日出会更早、日落会更晚</strong>。经验公式是：每升高 1000 米，日出约提前 1~2 分钟，日落约延后 1~2 分钟。对于平原地区的用户来说这个差异可以忽略，但对于高原城市（如拉萨，海拔约 3650 米）或登山者来说，海拔修正是获得精确时间的重要参数。本工具支持可选的海拔高度输入。</p>
-      </details>
-      <details class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-        <summary class="font-semibold cursor-pointer text-lg mb-2">日出方向是怎么确定的？能查到吗？</summary>
-        <p class="text-gray-700 mt-2 pt-2 border-t">日出的方向并非永远正东，而是随季节变化。春分和秋分前后太阳大致从正东方升起、正西方落下；夏季北半球日出偏向东北、日落偏向西北；冬季则日出偏向东南、日落偏向西南。偏移角度取决于日期和纬度。本工具主要提供时间维度的精确数据，如需方位角信息可结合太阳位置算法进一步推算。</p>
-      </details>
+  <section class="bg-slate-50 p-6 rounded-2xl">
+    <h2 class="text-2xl font-semibold text-slate-800 mb-4">现在就开始，量一量你的健康轨迹</h2>
+    <p class="mb-4">管理健康，不应该是一件复杂和健忘的事情。它需要的不是多么高深的知识，而只是一个<strong>简单、持续、可视化</strong>的记录方式。</p>
+    <p class="mb-6">无论你是想减肥、增肌，还是仅仅想了解自己身体的变化规律，从今天开始，试着记录下你的体脂率。几个星期或几个月后，回头看看那张趋势图，你可能会对自己有更清晰、更惊喜的发现。</p>
+    <div class="text-center p-4 border border-dashed border-slate-300 rounded-lg">
+      <p class="font-medium">找一找那个能帮你<strong>计算、记住、画出趋势</strong>的小工具吧。它就是你那把聪明的“健康尺”和永不忘事的“健康日记本”。</p>
     </div>
   </section>
-
-  <footer class="text-center text-gray-400 text-sm pt-4 border-t border-gray-200">
-    <p>日出日落时间数据仅供参考，实际时刻可能因局部地形遮挡、大气折射、天气条件等因素略有偏差。</p>
-  </footer>
 </article>
-`;export{t as default};
+`;export{s as default};

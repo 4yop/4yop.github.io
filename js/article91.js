@@ -1,93 +1,70 @@
-const e=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-12 font-sans text-gray-800">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">想给照片加点艺术感？这个在线工具让你秒变“艺术家”</h1>
-    <p class="text-lg text-gray-600">告别单调的普通照片，用简单几步为你的回忆披上独特的艺术外衣。</p>
-  </header>
+const s=`
+<div class="text-gray-800 font-sans leading-relaxed">
+  <article class="max-w-4xl mx-auto p-4 md:p-6">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">节日头像制作工具使用指南</h1>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">你的烦恼，我懂</h2>
-    <p class="mb-4 leading-relaxed">翻看手机相册，是不是总觉得照片太“写实”了？想发个朋友圈，又嫌照片风格平淡无奇，不够吸引眼球。</p>
-    <p class="mb-4 leading-relaxed">你或许想过把照片变成酷酷的像素风，或者复古的怀旧色调，但一打开那些复杂的专业软件，就被密密麻麻的按钮和看不懂的术语劝退了。</p>
-    <p class="leading-relaxed">没关系，你不是一个人。许多人都希望用一种<strong>简单、快速、零门槛</strong>的方式，让普通照片焕发新生。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它是什么？你的“魔法艺术滤镜箱”</h2>
-    <p class="mb-4 leading-relaxed">你可以把它想象成一个在线的“魔法艺术滤镜箱”。你只需要把照片放进去，然后从十几种各具特色的“滤镜”中挑选一个，轻轻一点，就能立刻得到一张风格大变样的新图片。</p>
-    <p class="leading-relaxed">整个过程就像给照片“穿”上了一件不同风格的衣服，完全不需要你懂任何绘画或设计知识。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它能为你做什么？</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">1</div>
-        <div>
-          <h3 class="font-medium mb-1">化繁为简，一键拥有艺术感</h3>
-          <p class="text-gray-600 leading-relaxed">你不用再研究复杂的软件。这里没有复杂的操作，上传图片、选择风格、点击生成，三步就能获得一张充满设计感的作品。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">2</div>
-        <div>
-          <h3 class="font-medium mb-1">风格多样，总有一款适合你</h3>
-          <p class="text-gray-600 leading-relaxed">无论你喜欢像乐高积木一样的<strong>像素风</strong>，还是像铅笔描绘的<strong>素描画</strong>，亦或是泛黄回忆的<strong>老照片效果</strong>，甚至是神秘的<strong>浮雕感</strong>，这里都能轻松实现。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">3</div>
-        <div>
-          <h3 class="font-medium mb-1">解放手机，在线处理更方便</h3>
-          <p class="text-gray-600 leading-relaxed">无需在手机上下载额外的App，打开网页就能用。处理完的图片直接下载保存到手机或电脑里，不占存储空间。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">4</div>
-        <div>
-          <h3 class="font-medium mb-1">效果可控，打造专属风格</h3>
-          <p class="text-gray-600 leading-relaxed">部分风格还可以微调强度。比如想让像素块更大一点，或者让素描线条更粗犷一些，都能通过简单的滑块来调整，让你的作品与众不同。</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
-    <h2 class="text-2xl font-semibold mb-4">在生活中，你可以这样用它</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div>
-        <h3 class="font-medium text-lg mb-2">场景一：打造独一无二的头像</h3>
-        <p class="text-gray-600 leading-relaxed">觉得自己的微信、微博头像太普通？用一张清晰的自拍照，试试“素描”或“油画”风格，瞬间变成一张充满艺术气息的个人标志，让你在好友列表里脱颖而出。</p>
-      </div>
-      <div>
-        <h3 class="font-medium text-lg mb-2">场景二：为旅行照片增加故事感</h3>
-        <p class="text-gray-600 leading-relaxed">上次旅行的风景照很美，但总觉得少了点味道。给古镇的照片加上“怀旧”滤镜，给现代建筑加上“高对比”效果，就能营造出不同的情绪和氛围，让每张照片都像在讲述一个故事。</p>
-      </div>
+    <div class="my-6 p-4 bg-red-50 rounded-lg border border-red-100">
+      <p class="text-red-800">
+        节日到了，想给微信、QQ或社交平台的头像换个节日气氛？这个工具帮你一键搞定——上传头像，选个节日边框，几秒钟就能得到一张带节日装饰的新头像。
+      </p>
     </div>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-    <div class="space-y-4">
-      <div>
-        <h3 class="font-medium mb-1">问：我的照片会上传到服务器吗？安全吗？</h3>
-        <p class="text-gray-600 leading-relaxed">答：完全不用担心隐私。整个处理过程通常在您的浏览器内完成，图片数据不会上传到远程服务器，处理完成后即可关闭页面，安全便捷。</p>
-      </div>
-      <div>
-        <h3 class="font-medium mb-1">问：处理图片需要很长时间吗？</h3>
-        <p class="text-gray-600 leading-relaxed">答：完全不需要。对于普通尺寸的照片，大部分效果都是“秒出”。你甚至感觉不到等待，就能看到焕然一新的作品。</p>
-      </div>
-      <div>
-        <h3 class="font-medium mb-1">问：支持哪些类型的图片？</h3>
-        <p class="text-gray-600 leading-relaxed">答：你手机里常用的图片格式，比如JPG、PNG等，基本都可以直接使用。</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="pt-8 border-t border-gray-200">
-    <p class="text-center text-gray-600 leading-relaxed">
-      与其羡慕别人的创意照片，不如现在就动手，让你的普通照片也来一场华丽的“艺术变身”吧。这个过程，简单得超乎你的想象。
+    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">支持哪些节日？</h2>
+    <p class="mb-4">
+      工具内置了多个主流节日的边框模板，每个节日都有多款不同风格的设计：
     </p>
-  </footer>
-</article>
-`;export{e as default};
+    <ul class="mb-6 pl-5 space-y-2">
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>国庆节：</strong>红金配色为主，包含"中国加油""我❤️祖国""欢度国庆"等爱国主题文字边框</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>圣诞节：</strong>红绿白经典圣诞配色，包含圣诞树、雪花、礼物盒等元素</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>元旦/新年：</strong>喜庆红金配色，包含倒计时、烟花、新年祝福文字</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>春节：</strong>中国红+金色，包含灯笼、春联、福字、"新年快乐"等传统元素</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>情人节：</strong>粉红爱心主题，包含爱心、玫瑰、"情人节快乐"等元素</span></li>
+      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>中秋：</strong>暖黄色调，包含月亮、玉兔、桂花、团圆祝福</span></li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">怎么用？三步搞定</h2>
+    <ol class="list-decimal pl-5 space-y-4 mb-6">
+      <li class="pl-2">
+        <strong>第一步：上传头像</strong>
+        <p class="text-gray-600 mt-1">支持三种方式：<br/>• 直接把图片<strong>拖拽</strong>到上传区域<br/>• 从剪贴板<strong>粘贴</strong>截图（Ctrl+V / Command+V）<br/>• 点击"<strong>选择图片</strong>"按钮从电脑选取<br/>推荐使用正方形头像图片，效果最佳。</p>
+      </li>
+      <li class="pl-2">
+        <strong>第二步：选择边框</strong>
+        <p class="text-gray-600 mt-1">顶部切换节日分类，下方展示该节日的所有边框模板。点击任意边框即可实时预览合成效果。可以左右滑动浏览更多模板。</p>
+      </li>
+      <li class="pl-2">
+        <strong>第三步：下载保存</strong>
+        <p class="text-gray-600 mt-1">预览满意后，点击"下载头像"按钮，高清PNG图片会自动保存到本地。直接拿去当微信/QQ头像就行。</p>
+      </li>
+    </ol>
+
+    <div class="my-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-100">
+      <h3 class="text-xl font-bold mb-3 text-red-700">几个实用小技巧</h3>
+      <ul class="space-y-2 text-sm text-gray-700">
+        <li><strong>最佳头像尺寸：</strong>建议上传 300×300 像素以上的正方形图片，合成后效果最清晰。</li>
+        <li><strong>边框位置：</strong>边框通常叠加在头像的底部或角落区域，不会遮挡面部主体部分。</li>
+        <li><strong>隐私安全：</strong>所有图片处理都在你的浏览器里完成，图片不会上传到任何服务器。</li>
+        <li><strong>手机也能用：</strong>完全响应式设计，手机浏览器打开一样流畅操作。</li>
+      </ul>
+    </div>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">适用场景</h2>
+    <div class="flex flex-wrap gap-3 my-6">
+      <span class="px-4 py-2 bg-red-50 rounded-full text-sm text-red-700">微信头像</span>
+      <span class="px-4 py-2 bg-blue-50 rounded-full text-sm text-blue-700">QQ头像</span>
+      <span class="px-4 py-2 bg-pink-50 rounded-full text-sm text-pink-700">微博头像</span>
+      <span class="px-4 py-2 bg-purple-50 rounded-full text-sm text-purple-700">抖音头像</span>
+      <span class="px-4 py-2 bg-green-50 rounded-full text-sm text-green-700">小红书头像</span>
+      <span class="px-4 py-2 bg-orange-50 rounded-full text-sm text-orange-700">游戏头像</span>
+      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">论坛/社区</span>
+    </div>
+
+    <div class="mt-12 pt-8 border-t text-center">
+      <p class="text-lg font-semibold mb-2">让头像也过节吧 🎉</p>
+      <p class="text-gray-600">
+        每到节日，换一个应景的头像，既表达了心情，又给朋友们带来一点小惊喜。简单几步，让你的头像焕然一新。
+      </p>
+    </div>
+  </article>
+</div>
+`;export{s as default};

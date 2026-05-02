@@ -1,90 +1,103 @@
-const t=`
-<article class="max-w-3xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 leading-relaxed">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">心里有点烦？试试这个在线“赛博木鱼”，点点就能静心</h1>
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Emoji重力碰撞：点击屏幕释放你的解压小精灵</h1>
 
-  <!-- 痛点场景 -->
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-5 mb-8 rounded-r">
-    <p class="mb-2">你是不是也有这样的时刻？</p>
-    <p class="mb-0">工作累了，心里莫名烦躁；想静一静，却又不知道从何做起；刷手机越刷越焦虑，想找个简单又不费神的小事放空自己……</p>
+  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-blue-600">
+    <p class="text-lg mb-2">工作压力太大？心情有点郁闷？</p>
+    <p class="mb-2">有时候你只是想找个简单的东西发泄一下，不需要复杂的操作，不需要动脑子思考策略。</p>
+    <p class="font-medium">这个Emoji重力碰撞小游戏就是为你准备的——点一下，看着可爱的表情符号在屏幕上蹦蹦跳跳，烦恼好像也跟着弹飞了。</p>
   </div>
 
-  <p class="mb-6">
-    我们都在寻找一种快速、简单的方法，让自己从日常的紧绷中抽离片刻。现在，一种结合了古老智慧和现代趣味的方式正在悄悄流行——许多人发现，通过点击屏幕上的一个虚拟木鱼，竟然能收获意想不到的平静。
-  </p>
-
-  <!-- 简单解释 -->
-  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">这个“赛博木鱼”到底是什么？</h2>
-  <p class="mb-4">
-    想象一下，把庙宇里那种能发出清脆声响、帮助人静心的木鱼，搬到了你的手机或电脑屏幕上。你不用去特定的地方，也不需要准备任何实物。
-  </p>
-  <p class="mb-6">
-    它就是一个简单的在线页面：画面上有一个精致的木鱼图案和一个小锤子。当你用手指或鼠标轻轻点击它时，木鱼会微微震动，同时伴有一声令人心神安宁的敲击音效。每敲一下，屏幕上还会飘出一个鼓励的小提示。
-  </p>
-  <div class="bg-gray-100 p-5 rounded-lg mb-6 italic">
-    <p class="mb-0">它的核心不是宗教仪式，而是一个为现代人设计的<strong>“注意力锚点”</strong>。通过一个简单、重复且有即时反馈的动作，帮你把四处乱飘的思绪暂时拉回来，集中在“点击”和“聆听”这一刻。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">这是什么游戏？</h2>
+    <p class="mb-4">这是一个基于物理引擎的趣味互动小游戏。玩法极其简单：</p>
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>用鼠标（或手指）点击屏幕任意位置</li>
+      <li>该位置会瞬间"炸"出5到15个随机Emoji表情</li>
+      <li>这些Emoji会像真实物体一样受到重力影响往下掉</li>
+      <li>碰到屏幕边缘会反弹，碰到地面会弹起再落下</li>
+      <li>每个Emoji还会边下落边旋转，直到慢慢停下来</li>
+    </ul>
+    <p>整个过程就像往地上撒了一把会跳舞的糖果，既治愈又解压。</p>
   </div>
 
-  <!-- 好处列举 -->
-  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">为什么你会想试试它？</h2>
-  <ul class="list-none space-y-4 mb-8">
-    <li class="flex items-start">
-      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">1</div>
-      <div>
-        <strong class="block text-gray-900">随时可用的“静心开关”</strong>
-        <p class="mt-1">无论是在办公室午休、通勤路上，还是睡前几分钟，打开网页就能用。它把一种需要氛围和道具的静心方式，变成了一个随时随地可进行的迷你练习。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">为什么这个游戏这么好玩？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">1. 真实物理效果</h3>
+        <p>游戏模拟了真实的重力加速度、弹性碰撞、摩擦力减速等物理效果。Emoji不是简单地下落，而是像有质量的小球一样自然运动，看起来非常舒服。</p>
       </div>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">2</div>
-      <div>
-        <strong class="block text-gray-900">零门槛，动动手指就行</strong>
-        <p class="mt-1">没有任何复杂的规则需要学习。你的全部操作就是“点击”。这种极致的简单，恰恰能让你迅速进入状态，无需思考，只需感受每次敲击的视听反馈。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">2. 30种随机Emoji</h3>
+        <p>每次点击都会从30种不同的Emoji中随机选择，包括笑脸、动物、手势等。你永远不知道下一个蹦出来的是小猫还是鬼脸，充满惊喜感。</p>
       </div>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">3</div>
-      <div>
-        <strong class="block text-gray-900">正向的微小积累感</strong>
-        <p class="mt-1">每敲一下，都像为自己积累了一点“平静值”。这种可视化的、累积的反馈，能带来一种微小的成就感，正向激励你继续这个放松的过程。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">3. 零门槛上手</h3>
+        <p>不需要学习规则，不需要看教程，打开页面就能玩。老人小孩都能轻松上手，是真正的"全民友好型"小游戏。</p>
       </div>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-1">4</div>
-      <div>
-        <strong class="block text-gray-900">趣味化的数字体验</strong>
-        <p class="mt-1">它用动画、音效和文字这些数字时代熟悉的方式，重新包装了古老的静心方式。让寻求内心平静这件事，变得轻松、直观，甚至带有一点游戏的趣味性。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">4. 完美解压神器</h3>
+        <p>疯狂点击屏幕，看着满屏的Emoji四处乱飞，这种简单的重复动作能有效释放压力。很多人表示光是看着它们落地就很满足。</p>
       </div>
-    </li>
-  </ul>
-
-  <!-- 应用场景 -->
-  <h2 class="text-2xl font-semibold mt-10 mb-4 text-gray-900 border-b pb-2">它适合用在哪些时刻？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gradient-to-br from-amber-50 to-white p-5 rounded-xl border border-amber-200">
-      <h3 class="font-bold text-lg mb-3 text-amber-900">场景一：工作学习的间隙</h3>
-      <p>连续处理文档或思考问题后，头脑发胀。离开座位走走或许不错，但有时条件不允许。这时，花一两分钟，专注地敲几下“赛博木鱼”，清脆的声音和简单的动作能有效打断持续的思维紧张，给大脑一个清爽的“重启”。</p>
-    </div>
-    <div class="bg-gradient-to-br from-indigo-50 to-white p-5 rounded-xl border border-indigo-200">
-      <h3 class="font-bold text-lg mb-3 text-indigo-900">场景二：睡前放下手机</h3>
-      <p>打算睡觉，却忍不住刷着社交媒体，信息流让神经更加兴奋。不如把最后几分钟交给这个木鱼。关掉大灯，在昏暗环境中，跟随每次敲击的声音和画面，有意识地放慢呼吸。它能帮你形成一个睡前的小仪式，告诉身体：“现在要准备休息了。”</p>
     </div>
   </div>
 
-  <!-- 行动号召 -->
-  <div class="text-center mt-12 p-7 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-300">
-    <h3 class="text-xl font-bold mb-3 text-gray-900">给自己一分钟的宁静</h3>
-    <p class="mb-5 mx-auto max-w-lg">
-      这个小小的“赛博木鱼”就在网络上，等待为你提供一个短暂的避风港。它不解决宏大的问题，却可能在你需要喘口气的当下，送上一份最即时的平静。
-    </p>
-    <p class="text-lg font-medium text-gray-700">
-      下次感到心烦意乱时，不妨搜索尝试一下，体验这种古老智慧与现代生活结合带来的奇妙宁静。
-    </p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">适合什么场景？</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景一：工作间隙的快速放松</h3>
+        <p>写代码写到头大？做PPT做到眼花？花30秒点点屏幕，让Emoji帮你把烦躁的情绪"弹"走，回来继续干效率更高。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景二：等待时的消遣利器</h3>
+        <p>等电梯、等外卖、等视频加载……这些碎片时间与其发呆，不如来一场Emoji雨。手机电脑都支持，随时随地都能玩。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景三：给小朋友的数字玩具</h3>
+        <p>孩子吵着要玩手机？打开这个页面让他们尽情点击吧。色彩丰富的Emoji、有趣的物理效果，既能吸引注意力又完全无害。</p>
+      </div>
+    </div>
   </div>
 
-  <!-- 自然结尾，融入SEO长尾词 -->
-  <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">
-    本文介绍了当下流行的一种在线解压小工具——数字木鱼，它适合在心情烦躁、寻求短暂专注或作为睡前仪式时使用，是一种简单易行的手机端静心方法。
-  </p>
-</article>
-`;export{t as default};
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">技术实现原理</h2>
+    <ul class="space-y-4 list-disc pl-5">
+      <li><span class="font-medium">Canvas渲染：</span>使用HTML5 Canvas进行高性能图形绘制，确保大量Emoji同时运动时依然流畅不卡顿。</li>
+      <li><span class="font-medium">物理引擎：</span>内置重力系统(GRAVITY=0.2)、摩擦系数(FRICTION=0.95)、反弹衰减(BOUNCE_REDUCTION=0.8)，模拟真实世界的物理行为。</li>
+      <li><span class="font-medium">边界碰撞检测：</span>实时检测Emoji与屏幕四边的碰撞，计算反弹后的速度和位置，防止穿透。</li>
+      <li><span class="font-medium">旋转动画：</span>每个Emoji粒子拥有独立的旋转角度和角速度，在下落过程中持续自转，视觉效果更生动。</li>
+      <li><span class="font-medium">响应式适配：</span>自动监听窗口大小变化，Canvas尺寸实时调整，PC端和移动端都有良好体验。</li>
+    </ul>
+  </div>
+
+  <div class="text-center p-8 border-t border-b border-gray-300">
+    <p class="text-2xl font-semibold mb-4">快乐其实很简单</p>
+    <p class="mb-6 text-gray-700">在这个越来越复杂的世界里，我们常常忘记了最纯粹的快乐是什么样子。一个笑脸、一次弹跳、一串随机的惊喜，就足以让人会心一笑。</p>
+    <p class="text-lg font-medium">现在就去试试吧！点击屏幕的任意位置，让你的Emoji小精灵们开始它们的表演。</p>
+  </div>
+
+  <div class="mt-10 pt-8 border-t border-gray-300">
+    <h3 class="text-xl font-semibold mb-4">常见问题</h3>
+    <div class="space-y-6">
+      <div>
+        <p class="font-medium mb-1">问：这个游戏需要下载安装吗？</p>
+        <p class="text-gray-700">答：完全不需要！这是纯网页版游戏，用浏览器直接打开就能玩，不占用任何存储空间。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：手机上能玩吗？</p>
+        <p class="text-gray-700">答：当然可以！支持触屏点击，用手指点哪里Emoji就从哪里出来，体验和电脑端一样好。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：为什么有些Emoji最后会停在底部不动？</p>
+        <p class="text-gray-700">答：这是正常的物理现象。当Emoji的速度降到足够低时，系统会让它停止运动，模拟现实中物体最终静止的效果。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：一次点击会产生多少个Emoji？</p>
+        <p class="text-gray-700">答：每次点击会随机生成5到15个Emoji，数量也是随机的，所以每次点击的效果都不太一样。</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;export{s as default};

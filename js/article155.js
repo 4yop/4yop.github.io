@@ -1,82 +1,125 @@
-const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6">给PDF文件加水印，原来这么简单</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
+    还在为文档格式发愁？试试这个本地Word转换工具
+  </h1>
 
-  <p class="mb-6 text-lg">你是不是也遇到过这样的烦恼？辛苦做好的PDF文件发给别人，总担心被随意转发或盗用。这时，如果能给文件加上一个专属的“印记”，比如“内部资料”或者自己的Logo，心里就踏实多了。这个“印记”，就是我们常说的“水印”。</p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
-    <p class="font-semibold mb-1">一句话了解水印：</p>
-    <p>水印就像是盖在文件上的一个透明印章，既能表明文件归属和性质，又不会过多遮挡原文内容。</p>
+  <div class="text-gray-600 text-base sm:text-lg mb-8 text-center">
+    不上传文件、不担心隐私，轻松把Word文档变成网页和笔记需要的格式。
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">PDF水印有什么用？</h2>
-  <p class="mb-4">别小看这个小小的水印，它在很多场合都能派上大用场：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2">
-    <li><span class="font-medium">声明版权：</span>在设计稿、方案书等作品上加上公司名称或Logo，声明所有权。</li>
-    <li><span class="font-medium">区分状态：</span>给合同、标书等文件盖上“草案”、“终版”、“已确认”等字样，避免混淆。</li>
-    <li><span class="font-medium">防泄密提醒：</span>在内部资料上添加“机密”、“严禁外传”等警示语，提醒接收者注意。</li>
-    <li><span class="font-medium">品牌展示：</span>在产品手册、宣传PDF中加入品牌标识，潜移默化地强化品牌印象。</li>
+  <div class="prose prose-lg max-w-none mb-10">
+    <p class="mb-4">
+      你是不是也遇到过这样的情况？好不容易写完一份Word文档，或是收到一份重要的.docx文件，却发现网站后台只支持粘贴特定格式的文本，或者想把它整理成简洁的笔记，却无从下手。手动调整格式？那太费时间了。
+    </p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-10 rounded-r-lg">
+    <h2 class="text-xl font-semibold mb-2 text-gray-900">一个更安心的选择：本地转换</h2>
+    <p class="mb-0">
+      现在有一个新思路：<strong>在你自己电脑的浏览器里直接完成转换</strong>。整个过程，你的文档文件不会离开你的电脑，不会上传到任何人的服务器。就像在自家厨房做饭，食材不离开家门，做完直接上桌，安全和隐私都由你自己掌握。
+    </p>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">它能帮你做什么？</h2>
+
+  <p class="mb-6">
+    简单来说，这个工具就是帮你把熟悉的Word文档（.docx格式），变成两种更通用的文本格式。
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-blue-700 mb-2">1. 转换成 HTML</div>
+      <p class="mb-4">HTML 是网页的“骨架”和“血肉”。转换后，你的文档标题、段落、列表甚至加粗文字，都会变成网页能识别的代码。非常适合需要把内容发布到网站、博客或内部系统的朋友。</p>
+      <div class="text-sm text-gray-500">比如：公司通告、产品介绍、带排版的文章。</div>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-green-700 mb-2">2. 转换成 Markdown</div>
+      <p class="mb-4">Markdown 是一种轻量级的标记语言，让你用简单的符号（比如 # 表示标题，* 表示列表）就能排版。它干净、易读，是记笔记、写文档（如Readme）的利器。</p>
+      <div class="text-sm text-gray-500">比如：个人知识库、技术文档、简洁的会议记录。</div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">怎么使用？非常简单</h2>
+
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">1</div>
+        <span class="font-medium">上传你的Word文档</span>
+      </div>
+      <div class="text-sm text-gray-500 bg-white px-3 py-1 rounded-full border">支持 .docx 格式</div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">2</div>
+        <span class="font-medium">选择想要的格式</span>
+      </div>
+      <div class="text-sm text-gray-500">一键点击“转换为 HTML”或“转换为 Markdown”</div>
+    </div>
+    <div class="flex items-center">
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">3</div>
+      <div>
+        <span class="font-medium mr-2">获取并复制结果</span>
+        <span class="text-sm text-gray-500">转换后的内容会直接显示，并可以一键复制使用</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">为什么推荐这种方式？</h2>
+
+  <ul class="space-y-4 mb-10 list-none pl-0">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>保护隐私：</strong>你的文件全程只在浏览器里处理，没有上传到网络，不必担心敏感内容泄露。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>操作简单：</strong>就像给文件换个“包装”，点几下鼠标就能完成，不需要学习复杂软件。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>即开即用：</strong>通常打开网页就能使用，无需下载安装任何程序。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>免费便捷：</strong>省去了寻找、购买或学习专业转换软件的麻烦。</span>
+    </li>
   </ul>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">两种常见的水印，你选哪种？</h2>
-  <p class="mb-6">一般来说，我们可以选择添加文字水印或图片水印，它们各有特点。</p>
-
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="text-xl font-semibold mb-3 text-center">文字水印</h3>
-      <p class="mb-3">就像用半透明的笔在纸上写字。它简单直接，通常用于添加提示性文字。</p>
-      <div class="text-gray-600 bg-gray-100 p-4 rounded text-center italic">
-        <p>示例效果：</p>
-        <p class="text-2xl mt-2 opacity-50 rotate-12">CONFIDENTIAL</p>
+  <div class="border-t border-gray-200 pt-10 mt-10">
+    <h3 class="text-xl font-semibold mb-4 text-gray-900">常见问题解答</h3>
+    <div class="space-y-6">
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：我的文件安全吗？</h4>
+        <p class="text-gray-600">答：非常安全。这种“本地转换”方式，处理过程完全在你的电脑浏览器内完成，文件数据不会通过网络发送出去，你可以放心处理任何文档。</p>
       </div>
-      <p class="mt-4 text-sm">你可以自由输入任何文字，比如公司名称、文件状态、警示语等，并调整它的大小、颜色和倾斜角度。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="text-xl font-semibold mb-3 text-center">图片水印</h3>
-      <p class="mb-3">就像在文件上盖一个透明的图案章。它更形象美观，适合放置Logo或特定图标。</p>
-      <div class="text-gray-600 bg-gray-100 p-4 rounded flex justify-center items-center min-h-[120px]">
-        <p class="text-sm">（这里通常会显示一个公司Logo的预览图）</p>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：支持哪些Word文件？</h4>
+        <p class="text-gray-600">答：主要支持较新版本的Word保存的 <code class="bg-gray-100 px-1 py-0.5 rounded text-sm">.docx</code> 格式文件。这是目前最常用的Word文档格式。</p>
       </div>
-      <p class="mt-4 text-sm">你可以上传自己的Logo或任何图片，并控制它在页面上的大小，让品牌展示更加直观。</p>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：转换后会保留图片和表格吗？</h4>
+        <p class="text-gray-600">答：对于简单的文档转换，基础的格式（如标题、列表、加粗）通常都能很好保留。如果是非常复杂的排版（如精密表格、特殊样式），转换后可能需要做一些微调。</p>
+      </div>
     </div>
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">如何调整出一个“恰到好处”的水印？</h2>
-  <p class="mb-6">水印加得太深，会干扰阅读；加得太浅，又起不到作用。掌握几个小技巧，就能做出效果刚刚好的水印。</p>
-
-  <div class="space-y-6 mb-12">
-    <div>
-      <h4 class="text-xl font-medium mb-2">1. 透明度是关键</h4>
-      <p>这是影响观感最重要的设置。数值调低，水印颜色变淡，更像背景；数值调高，水印更清晰醒目。通常设置在中间值附近，既看得见，又不刺眼。</p>
-    </div>
-    <div>
-      <h4 class="text-xl font-medium mb-2">2. 选个好位置</h4>
-      <p>水印放在哪里好？通常放在页面正中央，或者对角线斜着铺满整个页面，视觉效果和防涂改效果都不错。就像贴邮票，可以贴在信封中间，也可以斜着贴一个角。</p>
-    </div>
-    <div>
-      <h4 class="text-xl font-medium mb-2">3. 试试旋转一下</h4>
-      <p>让水印倾斜一个角度（比如经典的45度角），是常见的做法。这样看起来更专业，也让它不那么死板，同时减少对正文文字的遮挡。</p>
-    </div>
+  <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl mt-12 text-center">
+    <p class="text-lg mb-4 font-medium">
+      下次当你需要把Word文档里的内容搬到网页、博客或笔记软件时，不妨先试试这种本地转换的方法。
+    </p>
+    <p class="text-gray-600 mb-0">
+      它或许能帮你节省大量调整格式的时间，更重要的是，让你对自己的文件多一份安心。
+    </p>
   </div>
-
-  <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 mt-12 mb-8">
-    <h3 class="text-2xl font-semibold mb-4">给PDF加水印的步骤，其实很简单</h3>
-    <ol class="list-decimal pl-6 space-y-4">
-      <li><span class="font-medium">准备好你的PDF文件：</span>就像打印前需要准备好文档一样。</li>
-      <li><span class="font-medium">选择水印类型：</span>想加文字就选“文字”，想加Logo就选“图片”。</li>
-      <li><span class="font-medium">设计你的水印：</span>输入文字或上传图片，然后调整它的透明度、位置和角度，直到你满意为止。</li>
-      <li><span class="font-medium">预览与完成：</span>在右侧可以实时看到添加水印后的效果，确认无误后，就可以保存新的文件了。</li>
-    </ol>
-    <p class="mt-6 text-gray-600">整个过程，就像是在给你的电子文件“盖个章”，操作直观，所见即所得。</p>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">几个实用的小建议</h2>
-  <ul class="list-disc pl-6 mb-12 space-y-3">
-    <li><span class="font-medium">明确目的：</span>加水印前先想清楚，是为了提醒保密，还是展示版权？目的不同，水印的文字、大小和深浅都可以调整。</li>
-    <li><span class="font-medium">保持清晰：</span>水印是用来“看”的，不是用来“猜”的。确保它在各种设备上都能被清晰辨认。</li>
-    <li><span class="font-medium">风格统一：</span>如果是给一系列文件加水印，尽量使用相同的位置、字体和透明度，看起来更专业。</li>
-  </ul>
-
-  <p class="mt-12 pt-6 border-t border-gray-300">希望这篇文章能帮你了解PDF水印的作用和方法。下次需要保护或标记你的重要PDF文件时，不妨试试给它加上一个合适的水印吧。</p>
 </div>
-`;export{s as default};
+`;export{e as default};

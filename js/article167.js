@@ -1,88 +1,137 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-    <article>
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线抽签工具怎么用？一个页面搞定随机点名和抽奖</h1>
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">翻牌抽奖工具：让每一次抽奖都充满惊喜和仪式感！</h1>
 
-        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
-            还在为聚会抽奖、课堂提问选谁、或者团队任务分配而烦恼吗？自己写纸条？转盘？这些方法要么麻烦，要么感觉不够公平。其实，一个简单的网页工具就能帮你轻松、有趣又公平地解决这些问题。
-        </p>
+  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-red-600">
+    <p class="text-lg mb-2">你有没有遇到过这些场景？</p>
+    <p class="mb-2">年会抽奖用纸条抽，大家围一圈等着，既无聊又缺乏氛围；直播互动想搞抽奖，却找不到好用的工具；团建活动需要随机分组或抽签，手机App下载了一堆都不顺手。</p>
+    <p class="font-medium">翻牌抽奖工具就是为了解决这些问题而生的——打开浏览器就能用，翻牌的瞬间充满悬念，让每一次抽奖都变成一场小型"开奖仪式"。</p>
+  </div>
 
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-            <p class="text-gray-800">本文将为你介绍一个功能全面的在线抽签工具，它能做什么，以及如何用最简单的方式使用它。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">翻牌抽奖工具是什么？</h2>
+    <p class="mb-4">简单来说，它是一个在线的翻牌抽奖工具。屏幕上排列着一张张背面朝上的卡片，每张卡片背后都藏着一个奖项。参与者点击或触摸卡片，卡片翻转后揭晓奖品——就像综艺节目里的"开门大吉"一样，悬念感和惊喜感拉满。</p>
+    <p class="mb-4">和传统的"抽签筒"或"随机数生成器"不同，翻牌抽奖把抽象的随机过程变成了一个可视化的、有仪式感的互动体验。翻牌的那一刻，全场屏息；揭晓的瞬间，欢呼声四起。这就是翻牌抽奖的魅力所在。</p>
+    <p>最关键的是，它完全免费，无需下载安装，打开网页就能直接使用，手机和电脑都完美适配。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">哪些场景最适合用翻牌抽奖？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">年会抽奖</h3>
+        <p>公司年会上，把奖品设置到卡片里，投屏到大屏幕上，员工轮流翻牌。比传统的"摇号"更有参与感和仪式感，现场气氛直接拉满。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">直播互动</h3>
+        <p>主播在直播间开启翻牌抽奖，观众弹幕互动决定翻哪张。悬念感十足，弹幕瞬间刷屏，直播间的活跃度和停留时长蹭蹭往上涨。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">团建活动</h3>
+        <p>团队建设时，用翻牌来决定分组、任务或小惩罚。未知的刺激让每个人都参与进来，打破冷场，快速热身，团建效果翻倍。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">课堂趣味测验</h3>
+        <p>老师把题目或奖励藏在卡片后面，学生翻牌答题或领奖。把枯燥的课堂变成一场"寻宝游戏"，学生的注意力和积极性立刻提升。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">怎么使用翻牌抽奖工具？</h2>
+    <div class="space-y-6">
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">1</span>
+        <div>
+          <h3 class="text-xl font-medium mb-2">设置奖项</h3>
+          <p>在设置面板中添加你想要的奖项名称和数量。比如"一等奖 x1"、"二等奖 x3"、"参与奖 x10"。你也可以选择"指定奖项"模式，精确控制每张卡片背后的奖品；或者选择"随机奖项"模式，让系统自动随机分配。</p>
         </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">一、这个工具能帮你做什么？</h2>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            简单来说，它是一个“电子抽签箱”。你可以把一堆名字放进去，然后让它随机滚动，最后停在一个名字上。听起来简单，但它有一些贴心的小功能，让不同场景下的使用都很方便。
-        </p>
-
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景一：公司年会抽奖</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把所有员工的名字导入进去。点击开始，大屏幕上名字飞快滚动，营造紧张气氛。点击停止，幸运儿的名字被放大展示，系统还会自动撒花庆祝，并且能把结果保存成图片，方便留念或公布。
-        </p>
-
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景二：老师课堂提问</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把全班学生的名单录入。开启“不重复抽取”选项，这样被抽到过的同学下次就不会再出现，确保每个人都有机会被点到。旁边的历史记录清楚地显示了哪些同学已经被提问过。
-        </p>
-
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景三：家庭决定谁洗碗</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            家里成员名字输入进去。你甚至可以为经常偷懒的家人设置“权重”，让他的名字更容易被抽中（虽然这不太“公平”，但很“家庭”）。然后用手机打开，全家人围在一起点击屏幕，让命运决定今晚的洗碗工。
-        </p>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">二、核心功能，一看就会</h2>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">1. 导入名单：支持两种傻瓜式操作</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">你需要先把参与者的名字告诉工具。</p>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>拖拽文件</strong>：如果你有一个写满名字的文本文件（每行一个名字），直接把它拖到网页指定区域就行。</li>
-                <li><strong>直接输入</strong>：也可以在网页的文本框里，一行一个，把名字打进去或粘贴进去。</li>
-            </ul>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">2</span>
+        <div>
+          <h3 class="text-xl font-medium mb-2">选择主题和卡片数量</h3>
+          <p>根据你的活动风格选择主题模式，调整卡片数量。卡片越多，悬念感越强；卡片少，节奏更快。找到适合你场景的平衡点。</p>
         </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">2. 核心操作：开始与停止</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">名单准备好后，点击大大的“开始”按钮，中间显示区域的名字就会开始高速随机滚动，伴有紧张的提示音。当你觉得时机到了，点击“停止”，结果即刻揭晓。</p>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">3</span>
+        <div>
+          <h3 class="text-xl font-medium mb-2">开始翻牌</h3>
+          <p>点击"开始"按钮，卡片整齐排列在屏幕上。参与者点击任意一张卡片，卡片翻转动画后揭晓奖项。翻牌音效配合动画，氛围感直接拉满。</p>
         </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">3. 实用设置：让抽签更符合你的需要</h4>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>不重复抽取</strong>：勾选后，被抽中的人会自动从待抽名单中移除，适合需要覆盖所有人的情况。</li>
-                <li><strong>更换颜色</strong>：可以自由调整背景和文字的颜色，匹配你的活动主题或公司Logo色。</li>
-                <li><strong>全屏模式</strong>：点击切换全屏，让抽签过程充满整个屏幕，视觉冲击力更强，特别适合现场活动。</li>
-                <li><strong>查看历史</strong>：所有被抽中过的名字都会列在旁边，一目了然，随时可以清空重新开始。</li>
-            </ul>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">4</span>
+        <div>
+          <h3 class="text-xl font-medium mb-2">查看结果与重置</h3>
+          <p>所有卡片翻完后，可以查看完整的抽奖结果。需要再来一轮？一键重置，所有卡片恢复背面，准备下一轮抽奖。</p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">4. 保存与分享</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">每次抽中结果，都可以一键保存为一张简洁美观的图片，方便你发到群里公示或者保存记录。</p>
-        </div>
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">核心功能一览</h2>
+    <ul class="space-y-4 list-disc pl-5">
+      <li><span class="font-medium">自定义奖项和数量：</span>想放什么奖品、放几个，完全由你决定。支持添加多个不同等级的奖项，灵活搭配。</li>
+      <li><span class="font-medium">两种抽奖模式：</span>"指定奖项"模式让你精确控制每张卡片的奖品；"随机奖项"模式让系统自动分配，更公平也更刺激。</li>
+      <li><span class="font-medium">多种主题模式：</span>不同主题带来不同的视觉风格，适配年会、生日派对、课堂活动等各种场景。</li>
+      <li><span class="font-medium">翻牌音效：</span>每次翻牌都有清脆的音效反馈，配合翻转动画，仪式感十足。也可以关闭音效，适合安静场合。</li>
+      <li><span class="font-medium">全屏展示：</span>一键全屏，投屏到大屏幕上效果更震撼，特别适合年会和直播场景。</li>
+      <li><span class="font-medium">本地保存设置：</span>你的奖项配置和偏好设置会自动保存在浏览器中，下次打开无需重新配置，省时省力。</li>
+      <li><span class="font-medium">手机电脑都能用：</span>响应式设计，手机触摸翻牌、电脑鼠标点击，操作体验一样流畅。</li>
+    </ul>
+  </div>
 
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">三、常见问题解答</h2>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">用好翻牌抽奖的小技巧</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">奖项设置要有梯度</h3>
+        <p>大奖少放、小奖多放，制造"稀缺感"。比如1个特等奖、3个一等奖、10个参与奖，这样翻到大奖的惊喜感会更强，翻到参与奖也不会太失落。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">善用全屏模式</h3>
+        <p>投屏到大屏幕或电视上，让所有人都能看到翻牌过程。视觉冲击力更强，现场氛围更好。特别是年会场景，全屏+音效=完美组合。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">提前配置好奖项</h3>
+        <p>活动开始前就把奖项设置好并保存，现场直接打开就能用。避免临时手忙脚乱地输入，保证活动流程顺畅。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">卡片数量适中</h3>
+        <p>卡片太多会让抽奖时间过长，参与者容易失去耐心；卡片太少又缺乏悬念感。一般建议8-20张卡片，根据参与人数灵活调整。</p>
+      </div>
+    </div>
+  </div>
 
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：这个工具需要下载或安装吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：完全不需要。它是一个网页工具，在手机或电脑的浏览器里打开就能用，用完关掉即可，非常轻便。</p>
-        </div>
+  <div class="text-center p-8 border-t border-b border-gray-300">
+    <p class="text-2xl font-semibold mb-4">让每一次抽奖都值得期待</p>
+    <p class="mb-6 text-gray-700">抽奖不应该只是冷冰冰的随机数，它应该是一场充满期待和惊喜的互动体验。翻牌抽奖工具用最直观的方式，把"悬念"和"揭晓"变成了看得见、听得到的过程。</p>
+    <p class="text-lg font-medium">无论是年会、直播、团建还是课堂，打开翻牌抽奖工具，让每一次翻牌都成为全场的高光时刻！</p>
+  </div>
 
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：名字滚动是真随机吗？会不会有黑幕？</h4>
-            <p class="text-gray-700 leading-relaxed">答：它的随机算法是均匀的，确保每个名字在每次滚动中被选中的机会均等。你甚至可以设置“权重”来人为影响概率，但这需要你手动设置。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：在手机上用起来方便吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：方便。网页针对手机屏幕做了专门优化，按钮大小合适，操作区域清晰，和电脑上使用体验一样好。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">总结</h2>
-        <p class="text-gray-700 mb-6 leading-relaxed">
-            无论是需要一点仪式感的小型活动，还是追求高效公平的日常决策，一个设计良好的在线抽签工具都能派上用场。它把传统的抽签过程数字化，变得更可视化、可记录、可定制，而且对使用者没有任何技术门槛。下次当你需要公平地选择一个“幸运儿”时，不妨试试这类工具，或许能让过程变得更有趣。
-        </p>
-    </article>
+  <div class="mt-10 pt-8 border-t border-gray-300">
+    <h3 class="text-xl font-semibold mb-4">关于翻牌抽奖，你可能想问：</h3>
+    <div class="space-y-6">
+      <div>
+        <p class="font-medium mb-1">问：翻牌抽奖工具需要下载吗？</p>
+        <p class="text-gray-700">答：完全不需要。翻牌抽奖工具是一个网页应用，打开浏览器就能直接使用，不占手机存储空间，也不需要安装任何软件。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：可以自定义奖项吗？</p>
+        <p class="text-gray-700">答：当然可以。你可以自由添加奖项名称和数量，支持多等级奖项设置。还可以选择"指定奖项"模式，精确控制每张卡片背后的奖品内容。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：手机上能用吗？</p>
+        <p class="text-gray-700">答：可以。翻牌抽奖工具采用响应式设计，手机、平板、电脑都能流畅使用。触摸翻牌操作体验和电脑端一样顺畅。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：适合多少人参与的活动？</p>
+        <p class="text-gray-700">答：从几人的小型团建到几百人的年会都适用。小活动可以轮流翻牌，大活动可以投屏到大屏幕，让所有人一起见证翻牌瞬间。</p>
+      </div>
+    </div>
+  </div>
 </div>
-`;export{t as default};
+`;export{s as default};

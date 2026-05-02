@@ -1,49 +1,129 @@
 const s=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">亲戚称呼太难记？教你用工具快速理清辈分与称呼</h1>
+<div class="max-w-4xl mx-auto px-4 py-8 bg-white text-gray-800 font-sans">
+  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">罗马数字转换器：揭开古老计数法的奥秘</h1>
+  <p class="text-lg mb-6 leading-relaxed">
+    你是否曾在老式钟表、书籍的章节编号、电影片尾的版权年份，甚至一些正式的文档中，看到过像 <span class="font-mono bg-gray-100 px-1">I</span>、<span class="font-mono bg-gray-100 px-1">V</span>、<span class="font-mono bg-gray-100 px-1">X</span> 这样的符号？这些看似神秘的字母，其实就是古罗马人使用的数字——罗马数字。虽然我们日常生活中早已习惯了阿拉伯数字（0,1,2,3...），但罗马数字依然以一种优雅而古典的方式存在于现代社会的各个角落。如果你偶尔遇到它们却不知道怎么读，或者想把阿拉伯数字转换成罗马数字，别担心，看完这篇文章你就能轻松掌握，而且还能用上方便的在线转换工具。
+  </p>
 
-  <p class="mb-6">春节团圆，家族聚会，或是翻看厚重的家谱时，你有没有遇到过这样的尴尬：面对一位笑容满面的长辈，却突然卡壳，不知道该怎么称呼？妈妈的舅舅，爸爸的姑姑，这些绕来绕去的关系，是不是一想就头疼？</p>
-
-  <p class="mb-8">别担心，这不是你一个人的烦恼。中国传统的亲戚关系网庞大又精密，称呼更是讲究。好在，现在有了一种非常方便的工具——<strong>亲戚关系计算器</strong>，它能像做数学题一样，帮你快速算出准确的称呼。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、亲戚关系为什么容易搞混？</h2>
-  <p class="mb-4">我们觉得亲戚称呼复杂，通常是因为两个原因：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>关系链条长</strong>：“我爸爸的妈妈的妹妹”，光是念出来就要想一想，更别说快速反应出该叫“姨奶奶”了。</li>
-    <li><strong>称呼分男女和辈分</strong>：同样是父母的兄弟，父亲那边的叫“伯伯”、“叔叔”，母亲那边的就叫“舅舅”。同样是兄弟姐妹的子女，你称呼他们为“侄子/侄女”还是“外甥/外甥女”，也取决于你自己的性别。</li>
-  </ul>
-  <p class="mb-6">这些复杂的规则背后，其实是传统亲族文化的一套精密逻辑。不过，对于日常生活的我们来说，能快速找到正确答案就足够了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个“计算器”是怎么用的？</h2>
-  <p class="mb-4">想象一下，你面前有一个简单的面板，上面有十个最核心的家庭成员按钮：<strong>父、母、夫、妻、兄、弟、姐、妹、子、女</strong>。</p>
-  <p class="mb-4">想知道“爸爸的哥哥”怎么称呼？你只需要依次点击“父”和“兄”这两个按钮。计算器会把你点的词连成“爸爸的哥哥”这样一个关系式，然后瞬间告诉你结果：<strong>伯伯</strong>。</p>
-  <p class="mb-6">它就像在帮你“拼写”一段亲戚关系。无论是“妈妈妹妹的女儿”，还是“爸爸姐姐的丈夫”，你都可以通过组合这些基本按钮来描述。输入完毕后，点一下“计算”，答案立刻就出来了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、两个贴心功能，让结果更精准</h2>
-  <p class="mb-4">为了让结果完全符合你的实际情况，这个工具还有两个很贴心的选项：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>选择你的性别</strong>：这一点非常重要！因为同样是你“姐姐的儿子”，如果你是男性，你应该叫他“外甥”；如果你是女性，则应该叫他“侄子”。选择性别后，计算器才能给出最准确的称呼。</li>
-    <li><strong>“互称”功能</strong>：这个功能特别有意思。我们不仅需要知道怎么称呼别人，有时也需要知道别人会怎么称呼我们。比如，你知道了你该叫对方“表姑”，那么对方应该叫你什么呢？打开“互称”开关再计算一下，你就能看到答案了。</li>
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字从哪来？一段古老的历史</h2>
+  <p class="mb-4 leading-relaxed">
+    罗马数字起源于古罗马帝国，大约在公元前1000年左右开始使用。那时候的人们需要记录数字、进行交易、标记年份，于是发明了这套简单但有效的计数系统。罗马数字的符号主要来源于罗马人的日常生活工具和武器，比如：
+  </p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><span class="font-mono bg-gray-100 px-1">I</span> 代表一根手指，或者一根木棍。</li>
+    <li><span class="font-mono bg-gray-100 px-1">V</span> 象征一只手的形状，特别是食指和中指分开的样子，代表数字5。</li>
+    <li><span class="font-mono bg-gray-100 px-1">X</span> 则是两个 <span class="font-mono bg-gray-100 px-1">V</span> 交叉在一起，代表数字10。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">四、这个工具靠谱吗？</h2>
-  <p class="mb-4">你可能会好奇，它背后的依据是什么？其实，它的计算规则是基于一套被广泛认可的<strong>中国亲戚关系逻辑库</strong>。这套逻辑严格遵循了传统的“九族五服”亲缘体系和现代常用称呼习惯。</p>
-  <p class="mb-6">无论是直系血亲、旁系血亲还是姻亲，大部分常见的、甚至一些比较疏远的亲戚关系，它都能准确计算。如果遇到极其生僻或关系太远的情况，它也会老实告诉你“关系太远，无法计算”。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字怎么读？简单规则让你秒懂</h2>
+  <p class="mb-4 leading-relaxed">
+    罗马数字看起来复杂，其实规则很简单。只要记住几个基本符号和组合规则，就能轻松看懂和使用。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">五、除了计算，它还能帮你什么？</h2>
-  <p class="mb-4">对于普通人来说，这个工具不止是一个“称呼查询器”，它还有一些意想不到的用处：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>化解社交尴尬</strong>：在见面前提前“预习”一下复杂关系，做到心中有数，称呼时更得体。</li>
-    <li><strong>辅助理解家庭故事</strong>：看年代剧或家族历史时，用它来理清人物关系，故事会变得更清晰有趣。</li>
-    <li><strong>满足好奇心</strong>：单纯地体验一下传统亲戚网络的庞大和巧妙，也是一种文化知识的了解。</li>
-  </ul>
-
-  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-800">小提示：让家庭沟通更顺畅</h3>
-    <p class="mb-3">一个准确的称呼，是尊重和亲近的开始。尤其是在一些正式的家族场合，正确的辈分称呼显得尤为重要。下次再遇到吃不准的亲戚关系时，不妨先用工具查一查。</p>
-    <p class="mb-0">当然，工具是辅助。最重要的还是那份愿意了解、维系亲情的心意。当你笑着喊出正确的称呼时，长辈脸上的笑容就是最好的回报。</p>
+  <div class="bg-gray-50 p-4 rounded-lg mb-6">
+    <h3 class="font-semibold mb-2">基本符号</h3>
+    <table class="w-full border-collapse">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 px-3 py-2 text-left">罗马数字</th>
+          <th class="border border-gray-300 px-3 py-2 text-left">对应的阿拉伯数字</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-3 py-2 font-mono">I</td>
+          <td class="border border-gray-300 px-3 py-2">1</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 px-3 py-2 font-mono">V</td>
+          <td class="border border-gray-300 px-3 py-2">5</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-3 py-2 font-mono">X</td>
+          <td class="border border-gray-300 px-3 py-2">10</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 px-3 py-2 font-mono">L</td>
+          <td class="border border-gray-300 px-3 py-2">50</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-3 py-2 font-mono">C</td>
+          <td class="border border-gray-300 px-3 py-2">100</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 px-3 py-2 font-mono">D</td>
+          <td class="border border-gray-300 px-3 py-2">500</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-3 py-2 font-mono">M</td>
+          <td class="border border-gray-300 px-3 py-2">1000</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <p class="mt-10 text-lg">希望这个小小的工具，能帮你扫清亲戚关系中的迷雾，让你在每一次家庭相聚时，都能更轻松、更亲切。</p>
+  <h3 class="text-xl font-medium mt-6 mb-3">组合规则</h3>
+  <ol class="list-decimal pl-6 mb-6 space-y-2">
+    <li><strong>右加左减：</strong>较大的罗马数字右边加上较小的罗马数字，表示两者相加。例如，<span class="font-mono bg-gray-100 px-1">VI</span> 是 5+1=6，<span class="font-mono bg-gray-100 px-1">XI</span> 是 10+1=11。而较大的罗马数字左边加上较小的罗马数字，表示两者相减。例如，<span class="font-mono bg-gray-100 px-1">IV</span> 是 5-1=4，<span class="font-mono bg-gray-100 px-1">IX</span> 是 10-1=9。</li>
+    <li><strong>上标表示：</strong>在罗马数字上方加一条横线，表示乘以1000。例如，<span class="font-mono bg-gray-100 px-1">V̅</span> 表示 5×1000=5000。不过这种用法在现代已经很少见了。</li>
+    <li><strong>重复限制：</strong>同一个罗马数字最多连续重复3次。例如，<span class="font-mono bg-gray-100 px-1">III</span> 是 3，但 4 不能写成 <span class="font-mono bg-gray-100 px-1">IIII</span>，而应该写成 <span class="font-mono bg-gray-100 px-1">IV</span>。</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字的现代应用：古典与现代的完美融合</h2>
+  <p class="mb-4 leading-relaxed">
+    虽然阿拉伯数字已经成为全球通用的计数系统，但罗马数字并没有完全退出历史舞台。相反，它以一种独特的方式，在现代社会中找到了自己的位置：
+  </p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>时间表示：</strong>许多老式钟表和手表的表盘上，仍然使用罗马数字来标记小时。</li>
+    <li><strong>章节编号：</strong>在书籍、论文、法律文件等正式文档中，常用罗马数字来编号章节或部分。</li>
+    <li><strong>版权年份：</strong>电影、电视节目和音乐作品的片尾，常常使用罗马数字来标注版权年份，给人一种经典、永恒的感觉。</li>
+    <li><strong>体育赛事：</strong>一些重要的体育赛事，如奥运会、世界杯，也会使用罗马数字来编号，例如 <span class="font-mono bg-gray-100 px-1">XXI</span> 届世界杯。</li>
+    <li><strong>建筑和纪念碑：</strong>许多历史建筑、纪念碑和公共设施上，会用罗马数字来标记建造年份。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">在线罗马数字转换器：告别手动计算的烦恼</h2>
+  <p class="mb-4 leading-relaxed">
+    虽然罗马数字的规则不难掌握，但当你需要转换较大的数字，或者频繁进行转换时，手动计算就会变得繁琐而容易出错。这时，一个好用的在线罗马数字转换器就能派上大用场了。
+  </p>
+  <p class="mb-6 leading-relaxed">
+    我们的在线罗马数字转换器，就是这样一个简单却强大的工具。它不仅能在阿拉伯数字和罗马数字之间快速转换，还能处理较大的数字，让你告别手动计算的烦恼。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <h3 class="font-semibold text-blue-800 mb-2">如何使用我们的罗马数字转换器？</h3>
+    <ol class="list-decimal pl-6 space-y-2 text-blue-700">
+      <li>在输入框中，输入你想要转换的阿拉伯数字（如 2024）或罗马数字（如 <span class="font-mono">MMXXIV</span>）。</li>
+      <li>点击“转换”按钮。</li>
+      <li>转换器会立即在下方显示转换后的结果。</li>
+      <li>如果输入有误，转换器会给出友好的提示信息。</li>
+    </ol>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">罗马数字转换的常见问题</h2>
+  <div class="space-y-4 mb-6">
+    <div class="bg-gray-50 p-4 rounded-lg">
+      <h3 class="font-medium mb-1">罗马数字有0吗？</h3>
+      <p>没有。罗马数字的计数系统中，没有专门表示0的符号。这也是它后来被阿拉伯数字取代的原因之一，因为在进行数学运算时，0的存在非常重要。</p>
+    </div>
+    <div class="bg-gray-50 p-4 rounded-lg">
+      <h3 class="font-medium mb-1">罗马数字最大能表示多少？</h3>
+      <p>在标准的罗马数字系统中，最大的数字是 <span class="font-mono bg-gray-100 px-1">MMMCMXCIX</span>，即 3999。如果要表示更大的数字，就需要使用上标（在数字上方加横线），但这种方法在现代已经很少使用了。</p>
+    </div>
+    <div class="bg-gray-50 p-4 rounded-lg">
+      <h3 class="font-medium mb-1">为什么有时候会看到 <span class="font-mono bg-gray-100 px-1">IIII</span> 而不是 <span class="font-mono bg-gray-100 px-1">IV</span>？</h3>
+      <p>在一些老式钟表上，你可能会看到用 <span class="font-mono bg-gray-100 px-1">IIII</span> 来表示4，而不是标准的 <span class="font-mono bg-gray-100 px-1">IV</span>。这是因为在钟表的圆形表盘上，<span class="font-mono bg-gray-100 px-1">IIII</span> 的对称性更好，视觉效果更平衡。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-3 border-b border-gray-200 pb-1">结语：罗马数字的魅力与价值</h2>
+  <p class="mb-6 leading-relaxed">
+    罗马数字，这种古老的计数方法，不仅是一种实用的工具，更是一种文化遗产。它承载着古罗马文明的智慧，也为现代社会增添了一份古典的美感。无论是在日常生活中遇到罗马数字，还是在学习历史、艺术时需要了解它，掌握罗马数字的基本规则和使用方法，都能让你受益匪浅。
+  </p>
+  <p class="mb-6 leading-relaxed">
+    而我们的在线罗马数字转换器，则为你提供了一种便捷的方式，让你在需要时快速、准确地进行转换。无论你是学生、教师、设计师，还是对历史文化感兴趣的爱好者，这个工具都能为你节省时间，提高效率。
+  </p>
+  <p class="font-medium text-center mt-10 text-gray-600">
+    现在，就去试试我们的罗马数字转换器吧，体验古老与现代的完美结合！
+  </p>
 </div>
 `;export{s as default};
