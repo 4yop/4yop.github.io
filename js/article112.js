@@ -1,99 +1,57 @@
-const s=`
-<article class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    快速制作个性化图片？试试这个在线图片生成工具
-  </h1>
+const e={title:"新消息头像制作",content:`
+## 新消息头像制作工具使用指南
 
-  <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-    你是否需要一张简单又好看的图片，用来当头像、文章配图，或是测试设计效果？在网上找图往往费时费力，尺寸和风格还不一定合适。其实，有个简单的小工具能帮你自己“造”出想要的图片。
-  </p>
+### 功能介绍
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">它能做什么？</h2>
-    <p class="text-gray-700">
-      简单来说，这是一个在线图片制作工具。你只需要动动鼠标，选择想要的尺寸、颜色和风格，就能立刻得到一张全新的、专属于你的图片。整个过程完全免费，也不需要注册账号。
-    </p>
-  </div>
+新消息头像制作工具是一款免费在线工具，可以快速为您的头像添加类似微信、QQ等社交软件的**未读消息提示角标**。
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">为什么你会需要它？</h2>
+### 主要功能
 
-  <p class="mb-4 leading-relaxed">
-    很多时候，我们需要的只是一张“占位图”或简单的背景图。比如：
-  </p>
+- **上传头像**：支持点击上传、拖拽上传、粘贴截图三种方式
+- **自定义消息数**：可输入 1-999 任意数字，超过 99 自动显示为 99+
+- **头像风格**：支持直角和圆角两种风格
+- **圆点大小**：提供小、默认、大三种尺寸选择
+- **实时预览**：修改参数即时查看效果
+- **一键下载**：导出高清 512x512 PNG 格式头像
 
-  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
-    <li><span class="font-medium">发社交媒体</span>：想发动态，却找不到合适的配图。</li>
-    <li><span class="font-medium">做PPT或文档</span>：需要一个简洁的背景或示意图。</li>
-    <li><span class="font-medium">设计头像</span>：不想用真人照片，想做个特别的头像。</li>
-    <li><span class="font-medium">测试网站或App</span>：开发时，需要放入不同尺寸的图片看看效果。</li>
-  </ul>
+### 使用步骤
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">可以做出哪些风格的图片？</h2>
+1. **上传头像图片**
+   - 点击虚线框区域选择本地图片
+   - 或直接将图片拖拽到上传区域
+   - 或使用 Ctrl+V 粘贴剪贴板中的图片
 
-  <p class="mb-6 leading-relaxed">
-    这个工具提供了好几种现成的风格模板，你可以直接选用，省去自己设计的麻烦：
-  </p>
+2. **设置消息参数**
+   - 在"消息数量"输入框中填入要显示的数字
+   - 选择喜欢的头像风格（直角/圆角）
+   - 选择合适的通知圆点大小
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 简洁纯色与渐变</h3>
-      <p class="text-gray-700">
-        选择一种喜欢的颜色，或者让几种颜色平滑过渡。这种图非常干净，适合做背景，不会干扰文字内容。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 有趣的几何与像素风</h3>
-      <p class="text-gray-700">
-        自动生成由圆形、方块、三角形组成的图案，或者充满复古感的像素画。风格独特，很有设计感。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 艺术感抽象图案</h3>
-      <p class="text-gray-700">
-        随机生成带有线条和色块的抽象画，每一张都不同。用来做海报或封面的底图很有格调。
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 带文字的说明图</h3>
-      <p class="text-gray-700">
-        你可以在图片中央加上自己的文字，比如尺寸信息、简单标语，让它变成一张信息明确的说明图。
-      </p>
-    </div>
-  </div>
+3. **预览和下载**
+   - 左侧画布会实时显示合成效果
+   - 满意后点击"下载头像"按钮保存
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">使用起来复杂吗？非常简单！</h2>
+### 应用场景
 
-  <p class="mb-6 leading-relaxed">
-    不用担心操作复杂，整个过程就像填选择题一样简单，主要就三步：
-  </p>
+- 制作恶搞表情包
+- 社交媒体头像装饰
+- 模拟消息通知效果
+- 个人品牌宣传
 
-  <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
-    <li>
-      <span class="font-medium">第一步：选尺寸。</span>工具里已经预设好了“头像”、“手机屏幕”、“电脑横幅”等常用尺寸，一键就能选中。
-    </li>
-    <li>
-      <span class="font-medium">第二步：挑风格和颜色。</span>从上面介绍的风格里选一个你喜欢的，再选择暖色调、冷色调或者随机的彩虹色。
-    </li>
-    <li>
-      <span class="font-medium">第三步：生成并保存。</span>点击按钮，图片立刻就出现在右边了。觉得满意，点一下“下载”按钮就能把图片保存到电脑或手机里。
-    </li>
-  </ol>
+### 注意事项
 
-  <div class="bg-gray-50 p-6 rounded-lg mb-10">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">一个小窍门：让工具帮你决定</h3>
-    <p class="text-gray-700">
-      如果不知道该怎么搭配才好，可以直接点击“随机参数”按钮。工具会帮你随机组合尺寸、风格和颜色，常常能带来意想不到的惊喜效果，特别适合寻找灵感。
-    </p>
-  </div>
+- 支持的图片格式：JPG、PNG、GIF、WebP
+- 建议使用正方形图片以获得最佳效果
+- 所有处理在浏览器本地完成，图片不会上传到服务器
+- 推荐使用 Chrome、Firefox、Edge 等现代浏览器
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">总结一下</h2>
+### 常见问题
 
-  <p class="mb-6 leading-relaxed">
-    当你临时需要一张图片，又不想花费太多时间搜索或学习复杂的设计软件时，这类在线图片生成工具就是一个非常轻巧便捷的选择。它把专业的设计选项变成了简单的下拉菜单和按钮，让任何人都能快速获得一张可用、好看的图片。
-  </p>
+**Q: 消息数最大支持多少？**
+A: 支持 1-999 的任意数字，超过 99 会自动显示为 99+。
 
-  <p class="text-gray-600 italic border-l-4 border-gray-300 pl-4 py-2">
-    下次你需要图片素材时，不妨试试自己动手“生成”一张。或许你会发现，创造一张属于自己的独特图片，原来可以这么简单和有趣。
-  </p>
-</article>
-`;export{s as default};
+**Q: 可以调整消息角标的位置吗？**
+A: 目前固定在右上角位置，符合主流社交软件的设计规范。
+
+**Q: 下载的图片是什么格式？**
+A: 高清 PNG 格式，尺寸为 512x512 像素。
+`};export{e as default};

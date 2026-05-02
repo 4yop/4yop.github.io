@@ -1,49 +1,82 @@
 const s=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">亲戚称呼太难记？教你用工具快速理清辈分与称呼</h1>
+<div class="max-w-4xl mx-auto px-4 py-6 text-gray-700 leading-relaxed">
 
-  <p class="mb-6">春节团圆，家族聚会，或是翻看厚重的家谱时，你有没有遇到过这样的尴尬：面对一位笑容满面的长辈，却突然卡壳，不知道该怎么称呼？妈妈的舅舅，爸爸的姑姑，这些绕来绕去的关系，是不是一想就头疼？</p>
+  <!-- 主标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">数学步骤计算器：让复杂表达式一步步变简单，告别计算烦恼</h1>
 
-  <p class="mb-8">别担心，这不是你一个人的烦恼。中国传统的亲戚关系网庞大又精密，称呼更是讲究。好在，现在有了一种非常方便的工具——<strong>亲戚关系计算器</strong>，它能像做数学题一样，帮你快速算出准确的称呼。</p>
+  <!-- 引言段落 -->
+  <p class="text-lg mb-6">
+    小时候做数学题，最怕的不是算不出结果，而是不知道中间过程哪里错了。工作后遇到带括号、乘方、三角函数的混合算式，总想有个人能一步一步拆给我们看。现在，这个“数学步骤计算器”就像一位耐心的数学老师，你输入一个算式，它就把每一步怎么算的都列出来，清清楚楚。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、亲戚关系为什么容易搞混？</h2>
-  <p class="mb-4">我们觉得亲戚称呼复杂，通常是因为两个原因：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>关系链条长</strong>：“我爸爸的妈妈的妹妹”，光是念出来就要想一想，更别说快速反应出该叫“姨奶奶”了。</li>
-    <li><strong>称呼分男女和辈分</strong>：同样是父母的兄弟，父亲那边的叫“伯伯”、“叔叔”，母亲那边的就叫“舅舅”。同样是兄弟姐妹的子女，你称呼他们为“侄子/侄女”还是“外甥/外甥女”，也取决于你自己的性别。</li>
+  <!-- 小标题：它有什么用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">它有什么用？不只是给答案，更给过程</h2>
+  <p class="mb-4">
+    普通计算器只给你一个冷冰冰的数字，错了你都不知道哪一步出了问题。而这个计算器的特别之处在于，它会像你手算一样，先算括号里的，再算乘方，然后乘除，最后加减——每一层都展开给你看。比如输入 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)+(2+3)*4^2/2</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)=4</code>，再算 <code class="bg-gray-100 px-1 py-0.5 rounded">(2+3)=5</code>，然后一步步得出最终结果。整个过程都在右侧的“计算步骤”区显示，你可以一边看一边对照自己的思路。
+  </p>
+
+  <!-- 小标题：支持哪些运算？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">加减乘除、平方根、三角函数……它都会</h2>
+  <p class="mb-4">
+    除了最基础的加减乘除（+ - * /）和乘方（^），它还支持很多常用数学函数：
+  </p>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>平方根</strong>：sqrt(9)  → 3</li>
+    <li><strong>三角函数</strong>：sin, cos, tan 以及它们的反函数 asin, acos, atan</li>
+    <li><strong>对数</strong>：log（以10为底）、ln（自然对数）、exp（e的次方）</li>
+    <li><strong>绝对值</strong>：abs(-5) → 5</li>
   </ul>
-  <p class="mb-6">这些复杂的规则背后，其实是传统亲族文化的一套精密逻辑。不过，对于日常生活的我们来说，能快速找到正确答案就足够了。</p>
+  <p class="mb-4">
+    不论你是中学生做函数题，还是工程师验算数据，这些功能都够用。而且它完全免费，打开网页就能用，不用下载任何软件。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个“计算器”是怎么用的？</h2>
-  <p class="mb-4">想象一下，你面前有一个简单的面板，上面有十个最核心的家庭成员按钮：<strong>父、母、夫、妻、兄、弟、姐、妹、子、女</strong>。</p>
-  <p class="mb-4">想知道“爸爸的哥哥”怎么称呼？你只需要依次点击“父”和“兄”这两个按钮。计算器会把你点的词连成“爸爸的哥哥”这样一个关系式，然后瞬间告诉你结果：<strong>伯伯</strong>。</p>
-  <p class="mb-6">它就像在帮你“拼写”一段亲戚关系。无论是“妈妈妹妹的女儿”，还是“爸爸姐姐的丈夫”，你都可以通过组合这些基本按钮来描述。输入完毕后，点一下“计算”，答案立刻就出来了。</p>
+  <!-- 小标题：为什么需要看到每一步？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">看到每一步，才能真的理解数学</h2>
+  <p class="mb-4">
+    很多朋友用计算器只是求个结果，但遇到复杂算式时，运算顺序（先乘除后加减、括号优先）往往容易搞混。这个计算器把每一步都展示出来，等于帮你复习了一遍运算法则。比如 <code class="bg-gray-100 px-1 py-0.5 rounded">2+3×4</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">3×4=12</code>，再加2得14，而不是从左到右傻算。如果你不小心写错了括号，它还会提示语法错误，让你及时修改。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、两个贴心功能，让结果更精准</h2>
-  <p class="mb-4">为了让结果完全符合你的实际情况，这个工具还有两个很贴心的选项：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>选择你的性别</strong>：这一点非常重要！因为同样是你“姐姐的儿子”，如果你是男性，你应该叫他“外甥”；如果你是女性，则应该叫他“侄子”。选择性别后，计算器才能给出最准确的称呼。</li>
-    <li><strong>“互称”功能</strong>：这个功能特别有意思。我们不仅需要知道怎么称呼别人，有时也需要知道别人会怎么称呼我们。比如，你知道了你该叫对方“表姑”，那么对方应该叫你什么呢？打开“互称”开关再计算一下，你就能看到答案了。</li>
+  <!-- 小标题：适合哪些人用？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">谁最需要这个计算器？</h2>
+  <ul class="list-disc pl-6 mb-4 space-y-1">
+    <li><strong>学生党</strong>：做作业时检查过程，或者遇到不会算的式子，看步骤学习。</li>
+    <li><strong>家长</strong>：辅导孩子数学，自己先验算一遍，确保讲得对。</li>
+    <li><strong>老师</strong>：出题后快速验证步骤，省去手算时间。</li>
+    <li><strong>上班族</strong>：财务、工程、数据分析中遇到复杂公式，不再头疼。</li>
+    <li><strong>考研/备考族</strong>：复习基础运算，巩固计算能力。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">四、这个工具靠谱吗？</h2>
-  <p class="mb-4">你可能会好奇，它背后的依据是什么？其实，它的计算规则是基于一套被广泛认可的<strong>中国亲戚关系逻辑库</strong>。这套逻辑严格遵循了传统的“九族五服”亲缘体系和现代常用称呼习惯。</p>
-  <p class="mb-6">无论是直系血亲、旁系血亲还是姻亲，大部分常见的、甚至一些比较疏远的亲戚关系，它都能准确计算。如果遇到极其生僻或关系太远的情况，它也会老实告诉你“关系太远，无法计算”。</p>
+  <!-- 小标题：怎么用？简单三步 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？简单三步</h2>
+  <ol class="list-decimal pl-6 mb-6 space-y-2">
+    <li>在输入框里写下你的数学表达式，比如 <code class="bg-gray-100 px-1 py-0.5 rounded">(5+3)/2^3</code>。</li>
+    <li>点击蓝色的“计算”按钮（或者直接按回车）。</li>
+    <li>右侧立刻显示一步步的计算过程，最下面还有最终结果。</li>
+  </ol>
+  <p class="mb-4">
+    如果你想保存结果或步骤，可以点“复制数值”只复制最终数字，或者点“复制全部（结果+步骤）”把整个计算过程复制下来，方便贴在作业或报告里。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">五、除了计算，它还能帮你什么？</h2>
-  <p class="mb-4">对于普通人来说，这个工具不止是一个“称呼查询器”，它还有一些意想不到的用处：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>化解社交尴尬</strong>：在见面前提前“预习”一下复杂关系，做到心中有数，称呼时更得体。</li>
-    <li><strong>辅助理解家庭故事</strong>：看年代剧或家族历史时，用它来理清人物关系，故事会变得更清晰有趣。</li>
-    <li><strong>满足好奇心</strong>：单纯地体验一下传统亲戚网络的庞大和巧妙，也是一种文化知识的了解。</li>
-  </ul>
-
-  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-800">小提示：让家庭沟通更顺畅</h3>
-    <p class="mb-3">一个准确的称呼，是尊重和亲近的开始。尤其是在一些正式的家族场合，正确的辈分称呼显得尤为重要。下次再遇到吃不准的亲戚关系时，不妨先用工具查一查。</p>
-    <p class="mb-0">当然，工具是辅助。最重要的还是那份愿意了解、维系亲情的心意。当你笑着喊出正确的称呼时，长辈脸上的笑容就是最好的回报。</p>
+  <!-- 小标题：常见问题 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">你可能想问</h2>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-medium text-gray-900">输入错误怎么办？</h3>
+      <p>输入框下面会有红色提示，告诉你哪里错了，比如括号不匹配、用了不支持的符号。修改正确后再点计算就行。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">可以计算很长的式子吗？</h3>
+      <p>当然可以，只要你的表达式合理，它都会耐心地一步步拆解。不过为了阅读方便，建议适当换行或用括号分组。</p>
+    </div>
+    <div>
+      <h3 class="font-medium text-gray-900">手机上好用吗？</h3>
+      <p>完全适配手机，输入框和按钮在手机上会自动竖排，步骤区也在下方，字号都调整得刚刚好，手指点按也很方便。</p>
+    </div>
   </div>
 
-  <p class="mt-10 text-lg">希望这个小小的工具，能帮你扫清亲戚关系中的迷雾，让你在每一次家庭相聚时，都能更轻松、更亲切。</p>
+  <!-- 结尾 -->
+  <p class="text-lg border-t pt-6 mt-8 text-gray-600">
+    数学不应该只有答案，还应该有清晰的过程。试试这个数学步骤计算器，让每一个算式都变得透明、可追溯。无论是学习还是工作，它都能成为你随身携带的“数学草稿纸”。
+  </p>
 </div>
 `;export{s as default};

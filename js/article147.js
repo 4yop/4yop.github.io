@@ -1,95 +1,96 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">照片太多不好整理？试试这个免费的图片转PDF工具</h1>
+const t=`
+<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
 
-  <p class="text-lg mb-6 leading-relaxed">
-    你是不是也有过这样的烦恼？手机相册里塞满了各种照片——家人的合影、重要的证件、孩子的涂鸦、旅游的风景，还有工作中需要保存的截图。一张张翻找起来麻烦，发给别人也容易弄乱顺序。今天，我们就来聊聊一个简单又免费的方法：把散乱的图片，一键打包成一份整齐的PDF文件。
+  <p class="text-lg text-gray-600 mb-8">
+    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
   </p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
-    <p class="text-blue-800">
-      <strong>简单来说：</strong> 想象一下，你把一堆散落的纸张，整理好顺序，装订成一本小册子。这个工具做的事情就和这个类似，只不过是把电脑或手机里的电子图片，整理成一份方便查看、分享和打印的PDF文档。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
+    <p class="text-gray-800">
+      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
     </p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">为什么我们需要把图片转成PDF？</h2>
-
-  <p class="mb-4 leading-relaxed">
-    你可能觉得，图片单独发也没什么问题。但在很多情况下，把它们合并成一个PDF会方便得多：
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
+  <p class="mb-6">
+    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
   </p>
-
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>方便归档：</strong> 将相关的多张图片（如一次旅行的所有照片、一份合同的所有页面）合并成一个文件，管理起来更清晰。</li>
-    <li><strong>保持顺序：</strong> 不用担心图片在传送过程中顺序错乱，PDF里的页面顺序是固定的。</li>
-    <li><strong>便于打印：</strong> 可以直接用家里或办公室的打印机，按照你设定的纸张大小（比如常用的A4纸）打印出来，图片会自动调整到合适的位置。</li>
-    <li><strong>保护内容：</strong> 相比容易修改的图片文件，PDF格式更利于保持内容的原始样貌，适合用于提交正式文件。</li>
-    <li><strong>节省空间：</strong> 在某些情况下，将多张图片合成一个PDF，会比单独保存一堆图片文件更节省设备空间。</li>
+  <ul class="space-y-4 mb-10 pl-5 list-disc">
+    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
+    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
+    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
+    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
   </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">如何使用图片转PDF工具？</h2>
-
-  <p class="mb-6 leading-relaxed">
-    整个过程非常简单，就像在手机上整理相册一样直观，你完全不需要任何复杂的知识。
+  <p class="mb-10">
+    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
   </p>
 
-  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第一步：把你的照片“放”进去</h3>
-  <p class="mb-4 leading-relaxed">
-    工具页面上会有一个大大的“+”号区域。点击它，就可以从你的电脑或手机里选择照片了。你可以一次性选择很多张，它们会像小卡片一样排列在页面上。如果选错了，点一下图片角落的“×”就能删掉。
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
+  <p class="mb-6">
+    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
   </p>
 
-  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第二步：简单调整，让效果更合心意</h3>
-  <p class="mb-4 leading-relaxed">
-    在开始制作前，你可以进行几个简单的设置，让生成的PDF更符合你的需要：
-  </p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>选择纸张大小：</strong> 就像打印前要选纸一样，你可以选择常见的A4纸尺寸，或者Letter（信纸）大小等。</li>
-    <li><strong>调整图片大小：</strong> 你可以控制图片在页面上的显示比例，放大或缩小，让页面布局看起来更舒服。</li>
-    <li><strong>选择图片位置：</strong> 你可以让图片居中显示，或者紧贴页面上方开始排列。</li>
-  </ul>
-
-  <h3 class="text-xl font-medium mt-8 mb-3 text-gray-700">第三步：预览和生成</h3>
-  <p class="mb-4 leading-relaxed">
-    在制作前，你可以随时点击任何一张缩略图来放大查看，确认是否是自己想要的图片。左右滑动可以查看上一张和下一张，检查完毕后点击关闭即可。
-  </p>
-  <p class="mb-6 leading-relaxed">
-    一切准备就绪，点击“导出PDF”按钮。稍等片刻，一份整理好的PDF文件就会自动保存到你的设备里了。你可以给它重命名，方便日后查找。
-  </p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">这个工具适合哪些场景？</h2>
-
-  <div class="grid md:grid-cols-2 gap-6 my-6">
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h4 class="font-medium text-lg mb-2 text-gray-700">生活记录</h4>
-      <p class="text-gray-600">将孩子一个学期的画作整理成一本电子画册；把一次家庭聚会的照片做成纪念册，分享给亲友。</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
+      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h4 class="font-medium text-lg mb-2 text-gray-700">学习工作</h4>
-      <p class="text-gray-600">把用手机拍下的书本重点页面做成复习资料；将多张会议白板照片或报告截图合并成一份完整的会议纪要。</p>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
+      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h4 class="font-medium text-lg mb-2 text-gray-700">办事必备</h4>
-      <p class="text-gray-600">申请签证或办理业务时，需要提交身份证、户口本等多张证件的照片，合并成一个PDF文件再上传，既规范又方便。</p>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
+      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-      <h4 class="font-medium text-lg mb-2 text-gray-700">创意分享</h4>
-      <p class="text-gray-600">设计师或摄影师可以将一系列作品样图合成一个PDF作品集，用于展示或发送给客户审阅。</p>
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
+      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
     </div>
   </div>
 
-  <div class="bg-gray-100 p-5 rounded-xl my-10 border border-gray-300">
-    <h3 class="text-xl font-semibold mb-3">重要提示：关于你的隐私安全</h3>
-    <p class="mb-2 leading-relaxed">
-      你可能担心自己的照片上传到网上会不会有风险。请放心，一个设计良好的在线图片转PDF工具，其处理过程通常在你的浏览器中本地完成。
-    </p>
-    <p class="leading-relaxed">
-      这意味着你的照片数据<strong>不会上传到任何服务器</strong>，全部转换操作都在你自己的电脑或手机上瞬间完成。制作完成后，PDF文件直接保存在你的设备里，最大限度地保护了你的个人隐私和文件安全。
-    </p>
+  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
+
+  <div class="space-y-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
+      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
+      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
+      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
+      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
+    </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 border-b pb-2">总结</h2>
-
-  <p class="text-lg mb-8 leading-relaxed">
-    无论是为了生活记录、工作提效，还是处理日常事务，把散乱的图片整理成一份PDF都是一个非常实用的小技巧。它不要求你掌握复杂的软件，整个过程快速、免费，而且能很好地保护你的隐私。下次当你再面对一堆需要整理的照片时，不妨试试这个方法，给你的数字生活带来一点小小的秩序和便捷。
-  </p>
-</div>
-`;export{l as default};
+  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
+    <p class="text-gray-700 mb-6">
+      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
+    </p>
+    <p class="text-gray-700">
+      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
+    </p>
+  </div>
+</article>
+`;export{t as default};

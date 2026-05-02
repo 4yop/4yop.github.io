@@ -1,101 +1,101 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-800">
-  <article>
-    <!-- 文章标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center sm:text-left">长图太烦人？试试这个免费在线切割工具</h1>
-    <p class="text-gray-600 text-lg mb-8 leading-relaxed">是不是经常遇到长图发送失败、查看不方便的问题？这篇文章教你一个简单方法，轻松把长图切成几小份。</p>
+const o={title:"故障风格图片生成器使用指南",content:`
+## 什么是故障风格图片（Glitch Image）？
 
-    <!-- 引导图片 -->
-    <div class="my-8 bg-gray-50 rounded-xl p-4 border border-gray-200">
-      <p class="text-gray-700 mb-2">一个工具，解决长图带来的所有麻烦。</p>
-    </div>
+故障风格图片是一种利用数字图像处理技术，通过**混合模式叠加 + 随机偏移 + RGB色差**等方式，模拟数字信号故障、数据损坏等视觉效果的图片艺术形式。广泛应用于赛博朋克设计、电子音乐封面、社交媒体头像等场景。
 
-    <!-- 问题引入 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">为什么需要切割长图？</h2>
-    <p class="mb-4 leading-relaxed">你可能遇到过这些情况：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li>在聊天软件里发送一张很长的产品介绍图，结果被压缩得看不清。</li>
-      <li>做了一张电商商品详情长图，但上传到平台有高度限制。</li>
-      <li>想在朋友圈或微博分享一张长截图，但加载速度很慢。</li>
-      <li>一张超长的全家福或风景图，在手机上浏览需要来回滑动。</li>
-    </ul>
-    <p class="mb-6 leading-relaxed">这些问题，其实只需要把一张长图横向切成几个部分，就能轻松解决。就像把一张很长的纸，按虚线撕成几页小册子一样方便。</p>
+## 功能特点
 
-    <!-- 解决方案 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">怎么把长图分成几部分？</h2>
-    <p class="mb-4 leading-relaxed">过去你可能需要专门安装一个软件，或者找人帮忙处理。现在完全不需要那么麻烦了。</p>
-    <p class="mb-6 leading-relaxed">网上有一些免费的工具，打开浏览器就能用。你只需要上传图片，告诉它你想怎么切，它马上就能帮你处理好，而且可以直接下载。</p>
+### 18种混合模式
 
-    <!-- 功能介绍（非技术描述） -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">一个好用的工具能做什么？</h2>
-    <div class="grid sm:grid-cols-2 gap-6 mb-8">
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">两种切法，随你选</h3>
-        <p class="text-gray-700">你可以选择“切成平均的几份”，比如一份长图切成4等份。或者选择“按固定高度来切”，比如规定每一部分都是500像素高，工具会自动计算能切出几份。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">先看效果，再保存</h3>
-        <p class="text-gray-700">切割之后，所有的小图会像照片墙一样展示出来，你可以一张一张点开看，确认没问题了再下载。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">格式和大小自己定</h3>
-        <p class="text-gray-700">可以选择保存为常见的JPG、PNG格式，还能调整JPG图片的清晰度，在文件大小和图片质量之间找到平衡。</p>
-      </div>
-      <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-        <h3 class="font-medium text-lg mb-2 text-gray-800">下载方式很灵活</h3>
-        <p class="text-gray-700">你可以把所有切割后的小图打包成一个压缩文件下载，也可以选择单独下载某一张，非常方便。</p>
-      </div>
-    </div>
+本工具基于 HTML5 Canvas 的 \`globalCompositeOperation\` API，提供以下混合模式：
 
-    <!-- 使用场景 -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">哪些地方会用到这个功能？</h2>
-    <p class="mb-4 leading-relaxed">这个功能在生活中和工作中都很实用：</p>
-    <div class="space-y-4 mb-8">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">1</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">电商卖家</p>
-          <p class="text-gray-700">将长长的商品详情页图片切割后，分开发布到商品介绍里，让买家看得更顺畅。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">2</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">社交媒体用户</p>
-          <p class="text-gray-700">在朋友圈、微博或小红书发布长图教程、旅行游记时，切成几份发布，加载更快，体验更好。</p>
-        </div>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3">
-          <span class="text-blue-600 text-sm font-medium">3</span>
-        </div>
-        <div>
-          <p class="font-medium text-gray-800">普通生活记录</p>
-          <p class="text-gray-700">将一张超长的聊天记录截图、全家福长图或风景照切割，方便分享给家人朋友。</p>
-        </div>
-      </div>
-    </div>
+| 模式 | 说明 | 视觉效果 |
+|------|------|----------|
+| 差值 (difference) | 两图差值运算 | 强烈的色彩反转对比，最经典的 Glitch 效果 |
+| 源顶 (source-atop) | 源图覆盖目标重叠区 | 图像边缘错位撕裂感 |
+| 目标排除 (destination-out) | 排除源图覆盖区域 | 镂空/残影效果 |
+| 变亮 (lighter) | 取两图较亮部分 | 发光/过曝效果 |
+| 正片叠底 (multiply) | 颜色相乘变暗 | 暗调加重，对比增强 |
+| 滤色 (screen) | 颜色相滤变亮 | 亮调提亮，柔光效果 |
+| 叠加 (overlay) | 正片叠底与滤色结合 | 对比度大幅提升 |
+| 变暗 (darken) | 取两图较暗部分 | 压暗效果 |
+| 颜色减淡 (color-dodge) | 减淡高光区域 | 高光溢出效果 |
+| 颜色加深 (color-burn) | 加深阴影区域 | 阴影浓重效果 |
+| 强光 (hard-light) | 聚光灯式混合 | 硬朗的明暗对比 |
+| 柔光 (soft-light) | 柔和光照混合 | 自然的明暗过渡 |
+| 排除 (exclusion) | 类似差值但更柔和 | 温和的色彩偏移 |
+| 色相 (hue) | 保留底层亮度饱和度 | 色彩替换效果 |
+| 颜色 (color) | 保留底层明度 | 色彩染色效果 |
+| 明度 (luminosity) | 保留底层色相饱和度 | 亮度重映射 |
 
-    <!-- 操作步骤（通俗版） -->
-    <h2 class="text-2xl font-semibold mt-10 mb-4">使用起来有多简单？</h2>
-    <p class="mb-6 leading-relaxed">整个过程只需要几步，在手机或电脑上都能完成：</p>
-    <ol class="list-decimal pl-6 mb-8 space-y-4 text-gray-700">
-      <li><span class="font-medium">上传图片</span>：点击上传按钮，从你的手机相册或电脑里选择一张长图。</li>
-      <li><span class="font-medium">选择切法</span>：告诉工具你想“平均切成几份”还是“按固定的高度来切”。</li>
-      <li><span class="font-medium">预览效果</span>：工具会立刻生成切割后的小图预览，你可以检查是否满意。</li>
-      <li><span class="font-medium">保存图片</span>：满意后，点击一个按钮，所有的小图就会打包好让你下载到本地。</li>
-    </ol>
+### 可调参数
 
-    <!-- 总结 -->
-    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mt-12">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">写在最后</h3>
-      <p class="text-gray-700 mb-3">处理长图不再是一个技术难题。利用这些免费、在线的工具，你可以轻松地把一张难以处理的图片，变成几张方便分享、查看和传播的小图。</p>
-      <p class="text-gray-700">下次再遇到长图的烦恼时，不妨试试这个简单的方法。</p>
-    </div>
-  </article>
-</div>
-`;export{s as default};
+- **数量 (1-50)**：控制故障效果的叠加次数。数值越大，随机偏移层数越多，效果越强烈
+- **透明度 (10%-100%)：**控制每次叠加的不透明度。较低值产生更细腻的重影效果
+
+### 自动增强算法
+
+除基础混合模式外，本工具还内置：
+- **随机水平切片错位**：模拟信号中断产生的横向撕裂
+- **RGB 色差分离**：红蓝通道微偏移，增强经典 Glitch 质感
+- **智能尺寸限制**：超过 2048px 的图片自动缩放，保证流畅体验
+
+## 使用方法
+
+1. **上传图片** — 点击上传区域或拖拽图片到页面
+2. **选择模式** — 从 18 种混合模式中选择一种（默认"差值"）
+3. **调整参数** — 拖动「数量」和「透明度」滑块，实时预览效果
+4. **保存图片** — 点击「保存图片」下载 PNG 格式结果
+
+## 使用技巧
+
+### 推荐模式组合
+
+- **经典 Glitch**：差值模式，数量 15-25，透明度 75-90%
+- **赛博朋克风**：颜色减淡或强光，数量 20-30，透明度 60-80%
+- **柔和故障**：排除或柔光，数量 8-15，透明度 85-95%
+- **重度破坏**：正片叠底 + 高数量(35+)，透明度 50-70%
+
+### 最佳实践
+
+- 使用**对比度高、色彩丰富**的原图效果更佳
+- 人像照片配合「差值」或「排除」模式最有冲击力
+- 文字/Logo 配合「颜色」或「色相」模式可做创意变形
+- 数量建议从低开始逐步上调，避免过度失真
+
+## 技术原理
+
+### Canvas 混合模式
+
+Canvas 2D 的 \`globalCompositeOperation\` 属性决定了新绘制内容如何与已有画布内容混合。本工具的核心思路是：
+
+1. 先将原图绘制为底层
+2. 循环 N 次（数量参数），每次以随机偏移量重新绘制原图
+3. 每次绘制使用选定的混合模式和不透明度
+4. 最后施加轻微的 RGB 色差增强
+
+### 随机切片
+
+在叠加过程中，有 25% 的概率触发水平切片操作——随机选择一行像素带，将其水平位移，模拟 CRT 显示器的行扫描故障。
+
+## 浏览器兼容性
+
+基于 HTML5 Canvas API，支持所有现代浏览器：
+- Chrome / Edge 60+
+- Firefox 55+
+- Safari 12+
+
+## 常见问题
+
+**Q: 支持哪些格式？**
+A: 支持 JPG、PNG、WebP 等常见图片格式。
+
+**Q: 输出是什么格式？**
+A: PNG 格式，无损质量。
+
+**Q: 图片太大怎么办？**
+A: 超过 2048px 会自动缩放，保证处理速度。
+
+**Q: 哪个模式最好看？**
+A: 「差值」是最经典的 Glitch 效果，推荐先试这个。
+`};export{o as article};

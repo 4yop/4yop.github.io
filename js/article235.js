@@ -1,69 +1,116 @@
 const s=`
-<div class="article-content max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">免费文字转语音工具：轻松把文字变成自然流畅的说话声</h1>
+<div class="text-gray-800 bg-white">
+  <article class="max-w-4xl mx-auto px-4 py-8 md:px-6">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">屏幕录制其实很简单：一文看懂怎么录屏和常用设置</h1>
+    
+    <p class="mb-6 text-lg leading-relaxed">
+      你有没有遇到过这样的情景？想保存一段重要的线上会议内容，或是给朋友演示软件怎么操作，又或者想记录下自己打游戏的精彩瞬间，却不知道该怎么把电脑屏幕上的画面录下来。
+    </p>
+    
+    <p class="mb-8 text-lg leading-relaxed">
+      别担心，屏幕录制这件事，远没有你想的那么复杂。今天我们就来聊聊，如何轻松地录制屏幕视频，以及那些听起来很专业的设置，到底该怎么选。
+    </p>
 
-  <div class="mb-8 text-lg text-gray-600">
-    <p>有没有想过，把自己写的文章、小说片段，或者任何一段文字，直接变成一段可以“听”的声音？现在，通过一个简单好用的在线工具就能实现。无论你是想把长篇文章变成有声读物放松眼睛，还是想听听自己写的内容朗读出来是什么感觉，这个工具都能帮到你。</p>
-  </div>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
-    <p class="text-gray-700">它就像一个智能的“朗读者”。你只需把文字贴进去，它就能用多种声音（包括不同口音的中文和英文）清晰、自然地读出来。你还可以像调节收音机一样，控制朗读的快慢、音调高低和声音大小，甚至可以把生成的声音保存成音频文件，用在你的视频里或者随时播放。</p>
-  </div>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么大家喜欢用文字转语音？</h2>
-  <p class="mb-4">你可能没意识到，把文字变成语音，在我们的生活和工作中其实有很多实用的场景：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2 text-gray-700">
-    <li><span class="font-medium">解放双眼，用耳朵“阅读”</span>：长时间看屏幕眼睛累了，可以把你正在读的文章、资料转换成语音，闭目养神的同时也能获取信息。</li>
-    <li><span class="font-medium">内容创作者的好帮手</span>：自媒体作者、视频制作人可以用它快速生成视频的配音旁白，比自己录音更省时省力。</li>
-    <li><span class="font-medium">检查文稿的好方法</span>：写完一篇文章后，听一遍朗读出来的效果，很容易就能发现那些读起来拗口、不通顺的句子。</li>
-    <li><span class="font-medium">语言学习辅助</span>：学习外语时，输入一段外语文字，听听地道的发音和语调，对提升语感很有帮助。</li>
-    <li><span class="font-medium">为有需要的人提供便利</span>：对于视力不佳或阅读障碍的朋友，这是一个将文字信息转化为可听内容的友好方式。</li>
-  </ul>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">这个免费工具的几个贴心功能</h2>
-  <div class="space-y-6 mb-10">
-    <div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">1. 操作简单，一看就会</h3>
-      <p>整个页面非常干净。左边一个大框用来输入或粘贴你的文字，右边是调节声音的按钮和滑块。没有复杂的步骤，就像使用一个普通的记事本和播放器一样简单。</p>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+      <p class="text-gray-700">
+        本文不涉及任何复杂的技术术语，就像朋友聊天一样，告诉你录屏的常识和技巧。
+      </p>
     </div>
-    <div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">2. 声音可以“定制”</h3>
-      <p>工具提供了多种系统自带的声音库供你选择。你可以试试不同的朗读者，找到最符合你内容情绪的那个声音。更重要的是，你可以通过三个简单的滑块：</p>
-      <ul class="list-disc pl-6 mt-2 space-y-1">
-        <li><span class="font-medium">语速</span>：从慢悠悠的讲述到快速的播报，随心调节。</li>
-        <li><span class="font-medium">音高</span>：让声音变得更低沉稳重，或者更高亢明亮。</li>
-        <li><span class="font-medium">音量</span>：轻轻滑动，调整到最合适的聆听音量。</li>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录屏能用来做什么？比你想象的更多</h2>
+    <p class="mb-4">
+      很多人觉得录屏是专业人士才用的功能，其实不然。它在我们的日常工作和生活中非常实用：
+    </p>
+    <ul class="list-disc pl-5 mb-8 space-y-2">
+      <li><strong>工作学习：</strong>保存重要的培训会议、制作软件操作教程、记录网课重点内容。</li>
+      <li><strong>生活娱乐：</strong>录制游戏高光时刻、保存线上家人的视频聊天、记录直播中有趣的片段。</li>
+      <li><strong>沟通协助：</strong>当用语言说不清电脑问题时，直接录一段视频发给别人看，一目了然。</li>
+    </ul>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录制前，需要了解的几项简单设置</h2>
+    <p class="mb-6">
+      开始录制前，你可能会看到几个选项。别被它们吓到，我们一个一个说清楚。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">1. 清晰度（分辨率）：选适合的，不一定要最高的</h3>
+    <p class="mb-4">
+      就像电视有标清、高清一样，录屏也有清晰度选择。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>1080P：</strong>最清晰的选项，适合录制细节丰富的画面，比如设计软件操作、高清游戏。文件会比较大。</li>
+      <li><strong>720P：</strong>高清画质，适合大多数情况，比如录制会议、网页操作。清晰度和文件大小比较平衡，最常用。</li>
+      <li><strong>480P：</strong>普通画质，如果对清晰度要求不高，或者想快速分享一个小文件，可以选择它。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      简单来说，日常使用选720P就很好。如果录给手机看，480P也足够清晰。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">2. 画面比例：视频形状的长和宽</h3>
+    <p class="mb-4">
+      这个决定了你录出来的视频是“长方形”还是“正方形”。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>16:9：</strong>最常见的宽屏比例，和大多数电脑显示器、电视机、手机屏幕形状一样。录制通用视频就选它。</li>
+      <li><strong>4:3：</strong>稍微“方”一点的比例，一些老式显示屏或特定演示文稿会用到。</li>
+      <li><strong>1:1：</strong>正方形，适合录制一些用于社交媒体（如部分平台头像、短内容）的画面。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      不确定怎么选？直接选16:9，基本不会出错。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">3. 流畅度（帧率）：画面卡不卡的关键</h3>
+    <p class="mb-4">
+      帧率可以理解为1秒钟闪过多少张画面。数字越高，视频看起来就越流畅。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>60 FPS：</strong>非常流畅，适合录制快速变化的画面，比如动作类游戏、体育赛事视频。</li>
+      <li><strong>30 FPS：</strong>标准流畅度，适合录制办公软件操作、网页浏览、大部分会议和课程。这是最通用的选择。</li>
+      <li><strong>15 FPS：</strong>基本流畅，如果只是录制一些几乎静止的画面（比如一张PPT停留很久），为了节省文件空间可以考虑。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      录制普通操作选30就够用。如果录游戏，可以试试60，观感会更好。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">4. 视频格式和一个小细节</h3>
+    <p class="mb-4">
+      <strong>视频格式：</strong>简单理解为视频的“包装盒”。常见的有MP4和WebM。MP4兼容性最好，几乎所有电脑和手机都能直接打开播放，建议优先选择。WebM在某些情况下文件更小。
+    </p>
+    <p class="mb-8">
+      <strong>显示光标：</strong>这个选项打勾后，录制时会把你鼠标指针（那个小箭头）也录进去。这在制作教学视频时非常有用，别人可以清楚看到你点了哪里。如果只是录制电影或游戏画面，可以关掉。
+    </p>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">轻松三步，开始你的第一次录屏</h2>
+    <ol class="list-decimal pl-5 mb-8 space-y-4">
+      <li>
+        <strong>第一步：选好设置。</strong>根据上面介绍的，结合你的用途，选好清晰度、比例等。第一次可以用推荐的组合：720P、16:9、30帧、MP4格式、勾选显示光标。
+      </li>
+      <li>
+        <strong>第二步：开始录制。</strong>点击“开始录制”按钮。这时，你的电脑通常会让你选择“要录制整个屏幕，还是只录制某个软件窗口”。根据你的需要选择即可。
+      </li>
+      <li>
+        <strong>第三步：结束与保存。</strong>录制完成后，点击“停止录制”。视频会自动保存到录制记录列表里。你可以播放预览，也可以点击“下载”把视频文件保存到自己的电脑中。
+      </li>
+    </ol>
+
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-10">
+      <h3 class="text-xl font-medium mb-3 text-gray-900">几个实用小贴士</h3>
+      <ul class="space-y-2">
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录制前，关闭不必要的网页和软件通知，避免隐私信息或弹窗被录进去。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>如果需要录音（比如讲解），记得在开始录制时，同意浏览器使用麦克风的请求。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录好的视频如果不需要了，记得在列表里“删除”，可以帮电脑节省空间。</span></li>
       </ul>
     </div>
-    <div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">3. 像控制音乐一样控制朗读</h3>
-      <p>和听歌一样，你可以随时“播放”、“暂停”、“停止”朗读过程。如果某一段没听清，点一下“重新开始”就能从头再听一遍，非常方便。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">4. 一键保存声音文件</h3>
-      <p>当你对生成的语音满意后，可以直接点击“下载语音文件”按钮，它会将刚才朗读的内容保存为一个标准的WAV格式音频文件。这样你就可以把它插入到PPT、视频剪辑软件中，或者分享给其他人了。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">5. 在手机和电脑上都能用</h3>
-      <p>这个工具的页面会自动适应你的设备屏幕。无论是在家里用电脑，还是在外面用手机，都能获得同样舒适的操作体验。</p>
-    </div>
-  </div>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-2 border-b">如何使用这个免费的在线文字转语音工具？</h2>
-  <ol class="list-decimal pl-6 mb-10 space-y-3 text-gray-700">
-    <li><span class="font-medium">找到输入框</span>：打开页面，你会看到一个显眼的文本输入区域。</li>
-    <li><span class="font-medium">输入或粘贴文字</span>：把你的任何文字内容复制进去，比如一篇公众号文章、一段工作总结、或者给孩子编的小故事。</li>
-    <li><span class="font-medium">挑选一个喜欢的声音</span>：在下拉菜单里，尝试选择不同的“语音库”，听听哪个声音最顺耳。</li>
-    <li><span class="font-medium">微调声音效果</span>：试试拖动“语速”、“音高”和“音量”的滑块，调到你觉得最舒服的状态。</li>
-    <li><span class="font-medium">点击播放</span>：准备好后，点击绿色的“播放”按钮，就可以聆听你的文字被朗读出来了。</li>
-    <li><span class="font-medium">保存成果（如果需要）</span>：听完后如果觉得不错，点击“下载语音文件”按钮，就能把这段声音保存到自己的设备里。</li>
-  </ol>
-
-  <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-12">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结</h2>
-    <p class="mb-4">这个免费的在线文字转语音工具，就像一个随时待命、声音多变的私人播音员。它把复杂的语音合成技术，变成了人人可用的简单操作。无论你是想减轻阅读负担、辅助内容创作，还是仅仅出于好奇，它都值得一试。</p>
-    <p class="font-medium text-gray-800">下次当你面对大段文字感到疲惫，或者需要一段即时语音时，不妨试试让工具为你“朗读”，你会发现用耳朵“阅读”世界，也是一种很棒的体验。</p>
-  </div>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">总结</h2>
+    <p class="mb-4">
+      屏幕录制并不是一项专业技能，它只是一个方便我们保存和分享视觉信息的工具。
+    </p>
+    <p class="mb-4">
+      记住核心要点：<strong>日常使用，720P、30帧、MP4格式就是黄金组合</strong>。其他设置可以根据特殊需求稍作调整。
+    </p>
+    <p class="mb-10 text-lg">
+      希望这篇文章能帮你打消对录屏的陌生感。下次再需要保存屏幕上的精彩内容时，不妨轻松地试一试吧。
+    </p>
+  </article>
 </div>
 `;export{s as default};

@@ -1,60 +1,71 @@
 const s=`
-<div class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <article>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">听歌新体验：这个能跟着歌词跳转的播放器，让你不错过每一句感动</h1>
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <header class="mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">在线体验转动地球：一个可以亲手探索的3D地球模型</h1>
+    <p class="text-lg text-gray-600">你是否曾想象过把地球捧在手中，慢慢转动，仔细看看每一片大陆和海洋？现在，不用想象，在网页上就能轻松实现。</p>
+  </header>
 
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
-      你是否曾在深夜单曲循环一首歌，只为等待那一句直击心灵的歌词？现在，有一种更懂你的音乐播放方式，它让歌词不再是静止的文字，而是随着旋律跃动的灵魂。
-    </p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+    <p class="text-blue-700"><strong>小提示：</strong> 如果你看到一个悬浮在黑色背景上、缓缓旋转的蓝色星球，试着用鼠标（电脑）或手指（手机）按住它并拖动，你会发现新大陆。</p>
+  </div>
 
-    <div class="my-10">
-      <img src="https://img.alicdn.com/imgextra/i3/O1CN01HKF8IE21NglxmBjwj_!!6000000006973-2-tps-456-502.png" alt="音乐播放器界面示意图，展示专辑封面和动态歌词" class="rounded-xl shadow-lg w-full max-w-md mx-auto">
-      <p class="text-sm text-gray-500 text-center mt-2">（音乐播放界面示意图，歌词会随播放进度高亮）</p>
-    </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">一个活过来的地球仪</h2>
+    <p class="mb-4">还记得小时候地理课上的地球仪吗？我们需要用手去转动它，才能看到地球另一面的国家。而这个在线的3D地球，就像是那个地球仪活了过来，变成了动态的、充满细节的数字版本。</p>
+    <p class="mb-4">它不是一个简单的图片。当你和它互动时，光影会随着你的操作而变化，山脉的起伏、海洋的深浅，都以一种更生动的方式呈现出来。这和我们平时看的平面地图感受完全不同。</p>
+  </section>
 
-    <h2 class="text-2xl font-semibold mt-12 mb-4 pt-6 border-t">歌词活了：你的私人卡拉OK时刻</h2>
-    <p class="mb-4 leading-loose">还记得以前听歌，要盯着小小的手机屏幕，手动滑动歌词的日子吗？现在的在线音乐播放器，带来了全新的“歌词同步”功能。就像有一位贴心的朋友，在歌曲播放时，自动为你高亮当前正在唱的那一行。</p>
-    <p class="mb-4 leading-loose">更妙的是，播放器界面会智能地将正在演唱的歌词滚动到屏幕中央。你不用再分神去寻找歌词跑到哪里去了，可以完全沉浸在音乐和文字营造的氛围里。无论是学唱新歌，还是细细品味歌词的深意，都变得前所未有的轻松。</p>
-
-    <h2 class="text-2xl font-semibold mt-12 mb-4 pt-6 border-t">指哪听哪：进度条与歌词的奇妙联动</h2>
-    <p class="mb-4 leading-loose">有没有过这种经历？一首歌听到一半，突然想回味前面某一句特别打动你的歌词。传统的播放器，你只能大概拖动进度条，反复试听才能找到那个“精确瞬间”。</p>
-    <p class="mb-4 leading-loose">而新一代的播放器解决了这个痛点。你不仅可以通过点击进度条上的任意位置，快速跳到歌曲的对应时间点，还有一个更神奇的功能：<strong>直接点击任何一行歌词</strong>。是的，当你看到某句歌词想立刻听时，只需轻轻一点，歌曲便会从那一句开始播放。这就像是给歌曲和歌词之间架起了一座精准的桥梁。</p>
-
-    <h2 class="text-2xl font-semibold mt-12 mb-4 pt-6 border-t">一切尽在掌控：简洁易懂的播放控制</h2>
-    <p class="mb-4 leading-loose">好的播放器，操作起来应该直觉、简单。常见的播放/暂停、上一曲/下一曲按钮设计得清晰明了。为了满足不同场景下的听歌需求，许多播放器还提供了“随机播放”和“单曲循环”模式。</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2">
-      <li><strong>随机播放：</strong>适合当你不知道想听什么的时候，让系统为你带来惊喜。</li>
-      <li><strong>单曲循环：</strong>遇到一首特别喜欢的歌，可以无限重复播放，直到尽兴。</li>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">你能用它做什么？</h2>
+    <ul class="list-disc pl-5 space-y-3">
+      <li><strong>自由探索地球全貌</strong>：没有边界，没有限制。你可以从任何角度观察我们的星球，看看各大洲是如何连接在一起的。</li>
+      <li><strong>感受地球的自转</strong>：即使你不去拖动它，它也会自己非常缓慢地旋转，模拟出地球在宇宙中运动的感觉。</li>
+      <li><strong>一个放松的“电子玩具”</strong>：有时候，只是看着这个美丽的蓝色星球慢慢转动，就能让人感到平静和治愈。随手转一转，也是一种简单的乐趣。</li>
+      <li><strong>辅助地理学习</strong>：对于学生或者对世界好奇的人来说，这是一个非常直观的工具。你可以更清楚地看到大陆的相对位置和形状。</li>
     </ul>
+  </section>
 
-    <h2 class="text-2xl font-semibold mt-12 mb-4 pt-6 border-t">视觉与听觉的双重享受</h2>
-    <p class="mb-4 leading-loose">一个赏心悦目的界面，能让听歌的幸福感加倍。现在的播放器设计往往非常注重美感。大尺寸的专辑封面让你能欣赏精美的艺术设计，精心搭配的色彩和布局，营造出沉浸式的氛围。</p>
-    <p class="mb-4 leading-loose">无论是深邃的暗色主题保护你夜晚的视力，还是简洁明快的亮色主题，其核心目标都是一致的：让你专注于音乐本身。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何使用这个互动地球？</h2>
+    <p class="mb-4">使用起来非常简单，没有任何复杂步骤：</p>
+    <ol class="list-decimal pl-5 space-y-2 mb-4">
+      <li>打开页面，你会立刻看到一个正在旋转的地球。</li>
+      <li><strong>在电脑上</strong>：用鼠标左键按住地球的任意位置，向左、右、上、下拖动，地球就会跟着你的鼠标方向转动。</li>
+      <li><strong>在手机或平板上</strong>：直接用手指在屏幕上按住并滑动，效果是一样的。</li>
+      <li>松开鼠标或手指，地球会停下来，或者恢复缓慢的自动旋转。</li>
+    </ol>
+    <p>整个过程非常流畅，就像在操作一个真实的物体。页面上方通常会有简单的文字提示，告诉你“拖动地球旋转”。</p>
+  </section>
 
-    <h2 class="text-2xl font-semibold mt-12 mb-4 pt-6 border-t">随时随地，畅听无阻</h2>
-    <p class="mb-4 leading-loose">我们可能在手机、平板或电脑上听歌。一个好的在线音乐播放器，会考虑到不同设备的使用习惯。在电脑上，它可能会以更宽阔的布局展示更多信息；在手机上，它则自动调整，确保所有按钮和歌词都清晰易读、易于触控。这种无缝切换的体验，让你在任何设备上都能获得最佳的聆听感受。</p>
-
-    <div class="bg-gray-50 p-6 rounded-xl my-10">
-      <h3 class="text-xl font-semibold mb-3">听歌小贴士：如何更好地使用歌词同步功能？</h3>
-      <ul class="space-y-3">
-        <li class="flex items-start">
-          <span class="bg-gray-200 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
-          <span><strong>学歌利器：</strong> 跟着高亮移动的歌词学唱新歌，节奏和发音把握得更准。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="bg-gray-200 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
-          <span><strong>情感共鸣：</strong> 在看歌词的同时听歌，更容易理解歌曲背后的故事和情绪。</span>
-        </li>
-        <li class="flex items-start">
-          <span class="bg-gray-200 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
-          <span><strong>快速回顾：</strong> 遇到喜欢的段落，直接点击那句歌词即可反复聆听，无需手动快进倒退。</span>
-        </li>
-      </ul>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">它和普通地图有什么区别？</h2>
+    <div class="bg-gray-100 p-5 rounded-lg">
+      <p class="mb-3">我们习惯了看手机上的导航地图，那是为了寻找路线和地点。而这个3D互动地球的重点在于<strong>“观察”和“感知”</strong>。</p>
+      <p class="mb-3">它不强调具体的国界线或城市名，而是着重展现地球作为一个整体的形态、地貌和色彩。通过立体的形式和光影，它能帮助你建立对地球空间感的认知，这是平面地图很难做到的。</p>
+      <p>简单说，它不是用来“找路”的，而是用来“看球”的——看我们生活的这颗星球。</p>
     </div>
+  </section>
 
-    <p class="text-lg mt-12 pt-6 border-t leading-loose">
-      音乐是情感的载体，歌词是心灵的注脚。一个集成了智能歌词同步、精准进度控制和优美设计的在线音乐播放器，就像一位懂你的音乐伙伴。它让听歌这件事，从单纯的听觉接收，变成一场全方位的沉浸式体验。下次当你打开播放器，不妨多留意一下这些贴心的功能，或许你会发现，每一首歌，都能听出新的感动。
-    </p>
-  </article>
-</div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">常见问题解答</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">需要下载软件吗？</h3>
+        <p class="text-gray-700">完全不需要。你只需要一个现代浏览器（比如Chrome、Edge、Safari），打开网页就能直接使用，非常方便。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">在手机上能用吗？</h3>
+        <p class="text-gray-700">可以的。这个地球模型专门做了适配，无论在电脑的大屏幕上，还是在手机的小屏幕上，都能正常显示和操作，体验同样出色。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">为什么有时候转动起来感觉有点卡？</h3>
+        <p class="text-gray-700">这通常和你设备的性能或网络加载贴图资源有关。第一次加载时可能需要一点点时间，加载完成后就会非常流畅了。如果感觉卡顿，可以尝试稍等片刻再操作。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-8 border-t border-gray-200">
+    <p class="text-gray-600">下次当你想换个视角看看我们的世界时，不妨来找找这个可以转动的3D地球。它用一种简洁而美丽的方式提醒我们：人类共同的家园，是如此迷人。</p>
+  </footer>
+</article>
 `;export{s as default};

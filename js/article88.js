@@ -1,103 +1,96 @@
-const r=`
-<div class="max-w-3xl mx-auto p-4 text-gray-800">
-  <h1 class="text-3xl font-bold mb-4 text-center sm:text-left">每天喝多少水最健康？科学计算公式告诉你</h1>
-  
-  <p class="mb-4 text-lg leading-relaxed">
-    水是生命之源，人体大约70%由水构成。你可能常听到「每天要喝8杯水」的说法，但每个人的体重、活动量不同，这个标准真的适合你吗？其实，科学界有一套更精准的计算方法——根据体重估算每日需水量。今天我们就来聊聊，如何算出属于自己的「健康饮水量」，并合理安排一天的喝水时间。
-  </p>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">几点睡觉最合适？一个简单方法帮你算出最佳入睡时间</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">每天早上闹钟响起时，你是不是也常常感到疲惫不堪？其实，问题可能不在于你睡了多久，而在于你什么时候入睡。今天，我们来聊聊一个简单却很实用的问题：根据你的起床时间，几点睡觉最合适？</p>
+  </header>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">体重计算法：你一天到底需要多少毫升水？</h2>
-  <p class="mb-3">
-    最简单且被广泛认可的计算公式是：<span class="font-medium">每日需水量（毫升） = 体重（公斤） × 33</span>。这个系数来源于人体基础代谢所需水量的研究，能够满足大部分成年人的日常需求。
-  </p>
-  <p class="mb-3">
-    举个例子：如果你的体重是60公斤，那么每天大约需要喝 60 × 33 = 1980 毫升水，差不多相当于4瓶500毫升的矿泉水。如果体重75公斤，则需要约2475毫升，大约5瓶水。用这个公式算一算，你会发现可能比「8杯水」更贴合自己的身体状况。
-  </p>
-  <p class="mb-3 bg-blue-50 p-3 rounded">
-    <span class="font-medium">小提示：</span> 这只是一个基础参考值。如果你当天运动量大、出汗多，或者处于炎热环境，需要额外补充水分；而如果吃了大量水果、汤羹，也可适当减少纯饮水量。
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 为什么"几点睡"比"睡多久"更重要？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">很多人觉得，只要睡够8小时，几点睡都一样。但事实并非如此。我们的身体有一个内在的"生物钟"，它喜欢规律，也喜欢在特定的时间段休息。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-teal-600 my-5">
+      <p class="text-gray-700"><strong>打个比方：</strong>想象你的身体是一家工厂，晚上10点到凌晨2点是"深度维修"时间。如果你总是在这个时间段还醒着，工厂的维修工作就会被打乱，久而久之，身体就会出现各种小毛病——白天犯困、注意力不集中、皮肤变差、抵抗力下降。</p>
+    </div>
+    <p class="text-gray-700 leading-relaxed">所以，与其纠结睡了几个小时，不如先搞清楚：我该什么时候上床？</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">喝水时间表：什么时候喝，效果更好？</h2>
-  <p class="mb-3">
-    光知道喝多少还不够，喝水的时间也影响身体吸收和利用。把全天的水量分散到不同时段，既能避免一次性喝太多增加肾脏负担，又能让身体时刻保持水润状态。下面是一份参考时间表，你可以根据自己的作息调整：
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 不同年龄的人，需要睡多久？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">国家卫生健康委员会的睡眠健康指南告诉我们，不同年龄段的人，对睡眠的需求是不一样的：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">成年人（18-64岁）：</strong>每天需要7-8小时睡眠。这是大多数打工人的标准配置。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">中小学生：</strong>每天需要8-10小时睡眠。孩子正在长身体，睡眠对他们的发育和学习都非常重要。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">老年人（65岁以上）：</strong>每天需要6-7小时睡眠。随着年龄增长，睡眠时间会自然减少，但质量更重要。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">知道了需要睡多久，再结合你每天必须起床的时间，就能倒推出你应该什么时候入睡了。</p>
+  </section>
 
-  <div class="overflow-x-auto my-4">
-    <table class="min-w-full border-collapse border border-gray-300">
-      <thead class="bg-gray-100">
-        <tr>
-          <th class="border border-gray-300 p-2 text-left">时间点</th>
-          <th class="border border-gray-300 p-2 text-left">喝水量（毫升）</th>
-          <th class="border border-gray-300 p-2 text-left">为什么这个时间喝？</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-2">06:30 起床后</td>
-          <td class="border border-gray-300 p-2">约350</td>
-          <td class="border border-gray-300 p-2">经过一夜睡眠，身体处于缺水状态，一杯温水唤醒新陈代谢。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">08:30 上班/出门前</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充水分，缓解即将面对工作的紧张情绪。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">11:00 工作间隙</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">此时身体容易因专注而忘记喝水，小口补水防止疲劳。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">12:50 午餐后</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">帮助消化，促进营养吸收。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">15:00 下午茶时间</td>
-          <td class="border border-gray-300 p-2">约370</td>
-          <td class="border border-gray-300 p-2">替代咖啡或含糖饮料，提神又健康。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">17:30 下班/晚餐前</td>
-          <td class="border border-gray-300 p-2">约360</td>
-          <td class="border border-gray-300 p-2">增加饱腹感，避免晚餐过量进食。</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-2">22:00 睡前1小时</td>
-          <td class="border border-gray-300 p-2">约340</td>
-          <td class="border border-gray-300 p-2">补充夜间所需水分，但不宜太多，防止起夜。可根据个人情况微调。</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="text-sm text-gray-600 mb-4">注：上表水量以体重75公斤计算（总量2475毫升），你可以按自己每日总量按比例分配。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 一个简单的计算方法</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">假设你每天早上7点半必须起床，成年人需要睡8小时。那么，倒推回去，你应该在晚上11点半左右入睡。</p>
+    <p class="mb-4 text-gray-700 leading-relaxed">但这里有个小细节：<strong>入睡不等于上床</strong>。从躺下到真正睡着，大多数人需要15-30分钟。所以，如果你11点半要入睡，最好11点就上床躺好。</p>
+    <div class="bg-teal-50 p-5 rounded-lg my-5">
+      <p class="text-gray-700"><strong>举个例子：</strong></p>
+      <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-700">
+        <li>起床时间：早上7:30</li>
+        <li>需要睡眠：8小时</li>
+        <li>最佳入睡时间：晚上11:30</li>
+        <li>建议上床时间：晚上11:15（预留15分钟准备）</li>
+      </ul>
+    </div>
+    <p class="text-gray-700 leading-relaxed">这样一算，是不是就很清楚了？</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold mt-6 mb-3">常见问题解答</h2>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝水量必须精确到毫升吗？</h3>
-    <p class="mb-2">不需要，整数估算即可。可以用常见容器作为参考：一罐可乐约335毫升，一瓶矿泉水约500毫升。只要全天总量大致达标，身体不觉得口渴，尿液呈淡黄色，就说明喝够了。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：运动和夏天怎么调整？</h3>
-    <p class="mb-2">剧烈运动或高温天气下，每小时可能多流失500～1000毫升水分，建议在运动前后及过程中少量多次补充淡盐水或电解质饮料。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：喝汤、吃水果算不算喝水量？</h3>
-    <p class="mb-2">算！食物中的水分也应计入每日总摄入量。比如一碗清汤约200毫升，一个苹果含水约100毫升。不过，纯水更易被吸收，建议大部分水分还是通过饮水获取。</p>
-  </div>
-  
-  <div class="mb-4">
-    <h3 class="text-xl font-medium mb-1">Q：水喝多了会中毒吗？</h3>
-    <p class="mb-2">健康人肾脏每小时能排出800～1000毫升水，只要不是短时间内狂饮（比如1小时内喝超过2升），一般不会水中毒。但心肾功能不全者需遵医嘱限制饮水量。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 睡前准备也很重要</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">知道了上床时间，还要做好睡前准备，才能真正睡个好觉。以下是一些实用的小建议：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-blue-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前1小时：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">放下手机，远离电脑屏幕。蓝光会抑制褪黑素分泌，让你更难入睡。可以看看纸质书、听听轻音乐，或者泡个热水脚。</p>
+      </div>
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前2-3小时：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">不要吃太饱，也不要喝太多水。晚餐后可以适当散步，但避免剧烈运动。咖啡和茶最好下午就不要喝了。</p>
+      </div>
+    </div>
+    <p class="text-gray-700 leading-relaxed">这些小习惯看似简单，但坚持下来，你会发现入睡变得更容易，睡眠质量也会明显提升。</p>
+  </section>
 
-  <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-    <p class="font-medium">记住，喝水是为了让身体舒服，不必教条。你可以用上面的公式算出基础量，再根据季节、活动量微调。不妨设个闹钟，分时段小口慢饮，养成习惯后，你会发现皮肤、精力都会变好。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：我每天睡够8小时，但还是觉得累，怎么回事？</p>
+        <p class="text-gray-700 text-sm">A：可能是睡眠质量不高，或者入睡时间不规律。建议固定上床和起床时间，让身体形成规律。另外，睡前玩手机、熬夜后补觉等习惯都会影响睡眠质量。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：周末可以晚睡晚起吗？</p>
+        <p class="text-gray-700 text-sm">A：偶尔可以，但不要相差太大。如果平时11点睡，周末熬到凌晨2点，周一早上会非常痛苦。建议周末起床时间不要比平时晚超过1小时。</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：入睡困难怎么办？</p>
+        <p class="text-gray-700 text-sm">A：如果躺下30分钟还睡不着，不要强迫自己。可以起来做点放松的事，比如看会儿书，等有困意了再躺下。长期入睡困难的话，建议咨询医生。</p>
+      </div>
+    </div>
+  </section>
 
-  <p class="mt-6 text-sm text-gray-500">温馨提示：本文内容为健康科普，不能替代专业医疗建议。如有特殊疾病或身体状况，请咨询医生。</p>
-</div>
-`;export{r as default};
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：好的睡眠，从规律开始</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">睡眠占了我们人生的三分之一，它影响着我们的精力、情绪、工作效率，甚至健康。而好的睡眠，其实不需要什么神奇的方法，只需要做到两点：<strong>规律</strong>和<strong>充足</strong>。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">今天开始，试着算算你的最佳入睡时间，然后坚持每天在那个时间上床。一周后，你会发现早上起床不再那么痛苦，白天的精神也会好很多。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">想知道你该几点睡？用上面的工具算一算，今晚就开始改变吧！</p>
+    </div>
+  </section>
+</article>
+`;export{s as default};

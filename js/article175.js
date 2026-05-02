@@ -1,124 +1,71 @@
 const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 py-8">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center leading-tight">
-    和朋友打游戏王还在口算？一个聪明工具帮你搞定所有记分烦恼
-  </h1>
+<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
 
-  <!-- 引言 -->
-  <p class="text-lg mb-8 text-gray-600 text-center">
-    你是否曾因复杂的生命值计算中断了紧张刺激的决斗？试试这个专为游戏王玩家设计的贴心助手。
-  </p>
+  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
 
-  <div class="bg-gray-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-gray-700">
-      无论你是刚入坑的新手，还是经验丰富的老玩家，精准便捷地记录生命值，能让你的对局体验提升一个档次。
-    </p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
+    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
+    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
+  </section>
 
-  <!-- 主体内容第一部分 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    为什么你需要一个专门的生命值计算器？
-  </h2>
-  <p class="mb-4">
-    回想一下你和朋友的对战场景。一方发动了效果，另一方连锁，生命值就像坐过山车一样上上下下。这时候，你们是不是常常需要：
-  </p>
-  <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-700">
-    <li>暂停游戏，拿出手机计算器反复按</li>
-    <li>担心自己算错，要求对方再算一遍</li>
-    <li>用纸笔记录，但字迹潦草过后就忘</li>
-    <li>在多人群战时，完全搞不清谁还剩多少生命值</li>
-  </ul>
-  <p class="mb-6">
-    这些瞬间不仅打断了流畅的对战节奏，还可能引发不必要的争执。一个顺手好用的记分工具，能让你们完全沉浸于策略的较量中。
-  </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
+    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
+      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
+      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
+      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
+    </ul>
+    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
+  </section>
 
-  <!-- 功能介绍 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    它如何让你们的对战变得更轻松？
-  </h2>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
+    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
+    <ol class="list-decimal pl-6 space-y-3 mb-6">
+      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
+      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
+      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
+    </ol>
+    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
+  </section>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">一、多种模式，适应各种对局</h3>
-    <p class="mb-4">
-      就像游戏王有不同的玩法规则一样，这个工具也准备了不同的模式。
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">经典1对1</h4>
-        <p class="text-sm text-gray-600">最常用的模式，标准8000点生命值开局，适合大部分日常切磋。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
+    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
+      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
+      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
+      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
+    </ul>
+  </section>
+
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
+        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
       </div>
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">激动人心的2v2</h4>
-        <p class="text-sm text-gray-600">团队战专用，每队共享16000点生命值，协同作战的体验拉满。</p>
+      <div>
+        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
+        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
       </div>
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">自由自定义</h4>
-        <p class="text-sm text-gray-600">想玩点特别的？可以自由设定初始生命值，满足你的各种创意规则。</p>
+      <div>
+        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
+        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">二、操作简单，快如闪电</h3>
-    <p class="mb-4">
-      它的设计核心就是“快”。在决斗中，每一次计算都应该在瞬息间完成。
-    </p>
-    <ul class="list-disc pl-5 mb-4 space-y-2">
-      <li><strong>核心操作：</strong>输入数值，点“增加”或“减少”，完成。就这么简单。</li>
-      <li><strong>快捷按键：</strong>常用的+500、+1000，以及“生命值减半”都有独立按钮，一键到位。</li>
-      <li><strong>为移动端优化：</strong>在手机上按钮够大，间距合适，不会误触，躺着玩也能轻松操作。</li>
-    </ul>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">三、像裁判一样自动记录</h3>
-    <p class="mb-4">
-      它不仅是计算器，更是一个称职的“对战记录员”。
-    </p>
-    <p class="mb-4">
-      每一次生命值的变动，都会被精确地记录下来：什么时间、变化了多少、最终结果是多少。对局结束后，你可以清晰地回顾整个对战过程，复盘关键操作，或者解决“刚才是不是算错了”的疑问。
-    </p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">四、贴心的细节设计</h3>
-    <p class="mb-4">
-      一些你可能没注意到，但用起来会感觉很舒服的功能：
-    </p>
-    <ul class="list-disc pl-5 space-y-2">
-      <li><strong>记住你的习惯：</strong>如果你和固定的朋友玩，可以输入他们的名字，下次会自动提示，不用每次都输。</li>
-      <li><strong>数据自动保存：</strong>就算不小心关闭了浏览器页面，或者手机来电话中断了游戏，重新打开，对局数据依然还在。</li>
-      <li><strong>随时重新开始：</strong>一局打完，点一下“重开一局”，所有数据瞬间归位，准备迎接下一场决斗。</li>
-    </ul>
-  </div>
-
-  <!-- 场景化描述 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    它会出现在你的哪些游戏场景里？
-  </h2>
-  <div class="bg-blue-50 p-6 rounded-lg mb-8">
-    <p class="font-semibold mb-2">周末的朋友聚会：</p>
-    <p class="mb-4 text-gray-700">大家围坐在一起，手机或平板放在桌子中央，所有人都能清楚看到当前生命值，争议少了，欢乐多了。</p>
-    <p class="font-semibold mb-2">卡店的小型比赛：</p>
-    <p class="mb-4 text-gray-700">除了正式的记分纸，用它作为辅助记录，能让你的计算更准确，避免因分数错误影响比赛成绩。</p>
-    <p class="font-semibold mb-2">家庭内的亲子娱乐：</p>
-    <p class="text-gray-700">教孩子玩游戏王时，用它来管理分数，可以让规则讲解更直观，孩子也更容易理解和上手。</p>
-  </div>
-
-  <!-- 总结与引导 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    告别心算和纸笔，让工具服务于快乐
-  </h2>
-  <p class="mb-6">
-    游戏王最大的魅力在于千变万化的战术和扣人心弦的博弈。一个好的工具，应该默默解决掉那些繁琐的后勤工作，让你能更专注地享受思考与对决的乐趣本身。
-  </p>
-  <p class="mb-10">
-    这个游戏王生命值计算器，就像一个永远在线、绝对公正的裁判助理。它不改变任何游戏规则，只是让你遵守规则的过程变得异常顺畅。下次决斗开始时，不妨试一试，你可能会发现，你们的对局因此变得更加专注和愉快。
-  </p>
-
-  <div class="text-center text-sm text-gray-500 mt-12 pt-8 border-t border-gray-200">
-    <p>希望这个小工具能成为你卡组之外的又一个得力助手，祝你决斗愉快！</p>
-  </div>
-</div>
+  <section class="text-center py-8 border-t">
+    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
+    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
+    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
+  </section>
+</article>
 `;export{s as default};

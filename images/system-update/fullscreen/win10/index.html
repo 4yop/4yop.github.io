@@ -14,9 +14,13 @@ body{background:#0078d7;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <svg class="win-logo" viewBox="0 0 88 88" fill="#fff"><path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/></svg>
-<div class="title">正在配置 Windows 更新 — 请勿关闭电脑</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">已完成 <span id="pct">0</span%</div>
+<div class="sub"><span id="pctLabel"></span> <span id="pct">0</span>%</div>
 <div class="spinner"></div>
-<script>var n=0;setInterval(function(){n=n<95?n+Math.floor(Math.random()*2+1):95;document.getElementById('pct').textContent=n},550)</script>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Configuring Windows Update — Don\'t turn off your PC':'正在配置 Windows 更新 — 请勿关闭电脑';
+document.getElementById('pctLabel').textContent=lang==='en'?'Complete':'已完成';
+document.title=lang==='en'?'Windows 10 Updating':'Windows 10 更新中';
+var n=0;setInterval(function(){n=n<95?n+Math.floor(Math.random()*2+1):95;document.getElementById('pct').textContent=n},550)</script>
 </body></html>

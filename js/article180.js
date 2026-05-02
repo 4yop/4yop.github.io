@@ -1,79 +1,223 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
+const e=`
+<div class="bg-white text-gray-800 font-sans">
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
+      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
+    </header>
 
-  <p class="text-lg text-slate-600 mb-8">
-    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
-  </p>
+    <!-- 引言部分 -->
+    <section class="mb-10">
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+        <p class="text-gray-700 leading-relaxed">
+          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
+        </p>
+      </div>
+    </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-blue-800">
-      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
-    </p>
-  </div>
+    <!-- 什么是命名方式 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
+          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → userName</li>
+              <li>• 我的文档 → myDocument</li>
+              <li>• 首页标题 → homePageTitle</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
+          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → user_name</li>
+              <li>• 我的文档 → my_document</li>
+              <li>• 首页标题 → home_page_title</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
+      </p>
+    </section>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
-  <p class="mb-4">想一想这些场景：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
-    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
-    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
-  </ul>
-  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
+    <!-- 为什么需要转换 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
+            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
+            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
+            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
-  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
+    <!-- 工具介绍 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
+      
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
+        </p>
+        
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
+              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
+              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
-    </div>
-  </div>
+    <!-- 使用场景扩展 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-blue-600 text-xl font-medium">A</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
+          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-green-600 text-xl font-medium">B</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
+          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-purple-600 text-xl font-medium">C</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
+          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
+        </div>
+      </div>
+    </section>
 
-  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
+    <!-- 常见问题 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
+      
+      <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
+          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
+          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
+          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
+        </div>
+      </div>
+    </section>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
-  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
-    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
-    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
-  </ul>
-
-  <div class="bg-slate-50 p-6 rounded-lg mb-8">
-    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
-    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
-    <ul class="list-disc pl-5 space-y-1 text-slate-600">
-      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
-      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
-      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
-      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
-  <p class="mb-6">
-    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
-  </p>
-  <p class="mb-8">
-    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
-  </p>
-
-  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
-    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
-  </div>
+    <!-- 结语 -->
+    <section class="mt-12 pt-8 border-t border-gray-200">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
+        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
+          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
+        </p>
+        <p class="text-gray-600">
+          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
+        </p>
+      </div>
+    </section>
+  </article>
 </div>
-`;export{s as default};
+`;export{e as default};

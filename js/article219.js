@@ -1,71 +1,95 @@
-const s=`
-<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <header class="mb-10">
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">在线体验转动地球：一个可以亲手探索的3D地球模型</h1>
-    <p class="text-lg text-gray-600">你是否曾想象过把地球捧在手中，慢慢转动，仔细看看每一片大陆和海洋？现在，不用想象，在网页上就能轻松实现。</p>
-  </header>
+const a=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <!-- 主标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+    秒表：不只是计时，更是你效率与专注的搭档
+  </h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-    <p class="text-blue-700"><strong>小提示：</strong> 如果你看到一个悬浮在黑色背景上、缓缓旋转的蓝色星球，试着用鼠标（电脑）或手指（手机）按住它并拖动，你会发现新大陆。</p>
+  <!-- 引言段 -->
+  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
+  </p>
+
+  <!-- 第一小节 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    一个秒表，为什么需要更“聪明”？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
+  </p>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
+  </p>
+
+  <!-- 第二小节 - 功能介绍 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    这个“时间伙伴”能为你做什么？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
+  </p>
+  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
+    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
+    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
+    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
+  </ul>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
+  </p>
+
+  <!-- 第三小节 - 问答形式 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    你可能想知道的问题
+  </h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        它的用途超乎你的想象：
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
+        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
+        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
+        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
+        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        当然可以。假设你正在准备一顿周末大餐。
+      </p>
+      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
+        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
+        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
+        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
+      </p>
+    </div>
   </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">一个活过来的地球仪</h2>
-    <p class="mb-4">还记得小时候地理课上的地球仪吗？我们需要用手去转动它，才能看到地球另一面的国家。而这个在线的3D地球，就像是那个地球仪活了过来，变成了动态的、充满细节的数字版本。</p>
-    <p class="mb-4">它不是一个简单的图片。当你和它互动时，光影会随着你的操作而变化，山脉的起伏、海洋的深浅，都以一种更生动的方式呈现出来。这和我们平时看的平面地图感受完全不同。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">你能用它做什么？</h2>
-    <ul class="list-disc pl-5 space-y-3">
-      <li><strong>自由探索地球全貌</strong>：没有边界，没有限制。你可以从任何角度观察我们的星球，看看各大洲是如何连接在一起的。</li>
-      <li><strong>感受地球的自转</strong>：即使你不去拖动它，它也会自己非常缓慢地旋转，模拟出地球在宇宙中运动的感觉。</li>
-      <li><strong>一个放松的“电子玩具”</strong>：有时候，只是看着这个美丽的蓝色星球慢慢转动，就能让人感到平静和治愈。随手转一转，也是一种简单的乐趣。</li>
-      <li><strong>辅助地理学习</strong>：对于学生或者对世界好奇的人来说，这是一个非常直观的工具。你可以更清楚地看到大陆的相对位置和形状。</li>
-    </ul>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何使用这个互动地球？</h2>
-    <p class="mb-4">使用起来非常简单，没有任何复杂步骤：</p>
-    <ol class="list-decimal pl-5 space-y-2 mb-4">
-      <li>打开页面，你会立刻看到一个正在旋转的地球。</li>
-      <li><strong>在电脑上</strong>：用鼠标左键按住地球的任意位置，向左、右、上、下拖动，地球就会跟着你的鼠标方向转动。</li>
-      <li><strong>在手机或平板上</strong>：直接用手指在屏幕上按住并滑动，效果是一样的。</li>
-      <li>松开鼠标或手指，地球会停下来，或者恢复缓慢的自动旋转。</li>
-    </ol>
-    <p>整个过程非常流畅，就像在操作一个真实的物体。页面上方通常会有简单的文字提示，告诉你“拖动地球旋转”。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">它和普通地图有什么区别？</h2>
-    <div class="bg-gray-100 p-5 rounded-lg">
-      <p class="mb-3">我们习惯了看手机上的导航地图，那是为了寻找路线和地点。而这个3D互动地球的重点在于<strong>“观察”和“感知”</strong>。</p>
-      <p class="mb-3">它不强调具体的国界线或城市名，而是着重展现地球作为一个整体的形态、地貌和色彩。通过立体的形式和光影，它能帮助你建立对地球空间感的认知，这是平面地图很难做到的。</p>
-      <p>简单说，它不是用来“找路”的，而是用来“看球”的——看我们生活的这颗星球。</p>
-    </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">常见问题解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-medium text-gray-900 mb-2">需要下载软件吗？</h3>
-        <p class="text-gray-700">完全不需要。你只需要一个现代浏览器（比如Chrome、Edge、Safari），打开网页就能直接使用，非常方便。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-900 mb-2">在手机上能用吗？</h3>
-        <p class="text-gray-700">可以的。这个地球模型专门做了适配，无论在电脑的大屏幕上，还是在手机的小屏幕上，都能正常显示和操作，体验同样出色。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-900 mb-2">为什么有时候转动起来感觉有点卡？</h3>
-        <p class="text-gray-700">这通常和你设备的性能或网络加载贴图资源有关。第一次加载时可能需要一点点时间，加载完成后就会非常流畅了。如果感觉卡顿，可以尝试稍等片刻再操作。</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="pt-8 border-t border-gray-200">
-    <p class="text-gray-600">下次当你想换个视角看看我们的世界时，不妨来找找这个可以转动的3D地球。它用一种简洁而美丽的方式提醒我们：人类共同的家园，是如此迷人。</p>
-  </footer>
-</article>
-`;export{s as default};
+  <!-- 结尾引导 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
+    让时间变得清晰可见
+  </h2>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
+  </p>
+  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
+    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
+  </p>
+</div>
+`;export{a as default};

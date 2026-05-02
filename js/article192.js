@@ -1,70 +1,130 @@
-const l=`
-<div class="container mx-auto px-4 py-8 max-w-3xl font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">你是不是也听过这样的话？认识“职场PUA话术”与应对方法</h1>
-  <p class="text-center text-gray-600 mb-8">—— 一个帮你识别和理解的实用小工具</p>
+const s=`
+<div class="text-gray-700 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    人生时间计算器：你的人生，还剩下多少天？
+  </h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-    <p class="mb-2"><strong>文章核心：</strong> 本文不讨论任何技术或代码，只为普通人介绍一种在职场或人际中可能遇到的语言现象，并提供一个能帮助你具体感受和练习应对的“话术生成器”工具。目的是增进理解与自我保护。</p>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你是否常常感觉时间不够用？是否想过，如果生命是一张有期限的日历，你现在翻到了哪一页？今天，我们来聊聊一个能让你直观看见生命进度的工具。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="italic">
+      这不是算命，也不是制造焦虑。它只是帮你把抽象的生命长度，换算成具体的数字和进度条，让你能“看见”时间。
+    </p>
   </div>
 
-  <p class="mb-6">在职场上，或者在某种人际关系里，你有没有听到过一些让你感觉不舒服、压力很大，但又好像挑不出具体毛病的话？比如，对方总是强调“为你好”、“希望你成长”，但话里话外却让你不断怀疑自己、感到愧疚和必须加倍努力？</p>
-  <p class="mb-8">很多人把这类沟通方式，笼统地称为“PUA话术”。今天，我们就来聊聊它到底是什么，以及我们可以怎么看待和应对。</p>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">一、什么是“PUA话术”？它听起来什么样？</h2>
-  <p class="mb-4">首先，我们需要明确，这里说的“PUA话术”并不单指恋爱中的技巧，而是引申为一种通过特定语言模式，试图影响、控制对方情绪和行为的沟通方式。尤其在存在权力不对等的关系中（如上级对下级）更常见。</p>
-  <p class="mb-6">这类话术通常有几个特点：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2">
-    <li><strong>模糊的贬低与施压：</strong> 不直接批评事情本身，而是评价你的“状态”、“潜力”或“态度”。例如：“我对你是有些失望的”，“你的投入程度，和XX比是有些不足的”。</li>
-    <li><strong>“画饼”与抬高期待：</strong> 先给予一个高于你当前能力的肯定或位置，然后设定一个模糊但极高的目标。例如：“当初给你这个职位，是高于你当时水平的。我是希望你…能够快速成长的。”</li>
-    <li><strong>制造焦虑与紧迫感：</strong> 频繁使用“价值点”、“护城河”、“核心竞争力”、“差异化”等宏大词汇提问，让你觉得自己的日常工作毫无价值，必须立刻找到“不可替代性”。同时设定紧迫的“时间节点”。</li>
-    <li><strong>要求“思考”而非“执行”：</strong> 否定你具体的工作成果，转而要求你输出抽象的“思考”、“判断”、“方法论”，并形成报告，这常常让人无从下手，感到迷茫。</li>
-    <li><strong>树立“别人家孩子”的榜样：</strong> “你看XX，人家在彻夜加班/带病工作…” ，通过极端案例进行隐性施压。</li>
-    <li><strong>将痛苦与成长绑定：</strong> “成长一定是伴随着痛苦的”，这句话本身有一定道理，但被用来合理化所有不合理的要求和压力。</li>
+  <!-- 第一部分：这是什么？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    一、 人生时间计算器是什么？
+  </h2>
+  <p class="mb-4">
+    简单来说，它就像一个为你生命定制的“进度条”。你只需要告诉它两个简单的信息：你的生日，以及你期望活到的岁数（可以参考国家公布的平均寿命，比如85岁）。
+  </p>
+  <p class="mb-6">
+    然后，它就会为你计算出一些非常直观的结果，比如：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>你已经来到这个世界<strong>多少天</strong>了。</li>
+    <li>你的生命进度条<strong>走到了百分之几</strong>。</li>
+    <li>在预期里，你大概还剩下<strong>多少年、多少个月、多少个周末</strong>。</li>
   </ul>
+  <p class="mb-6">
+    这些数字本身没有好坏，关键在于你怎么看待和利用它们背后的提醒。
+  </p>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">二、为什么我们需要了解这些话术？</h2>
-  <p class="mb-4">了解的目的不是为了学习如何去用，而是为了：</p>
-  <ol class="list-decimal pl-6 mb-8 space-y-2">
-    <li><strong>识别与清醒：</strong> 当对方说出某些话时，你能迅速反应过来：“哦，这可能是某种施加压力的套路”，而不是立刻陷入自我怀疑。识破套路，是摆脱其影响的第一步。</li>
-    <li><strong>保护自己的情绪：</strong> 明白这些话术的通用性和非针对性，有助于你把它从对你个人能力的否定中剥离出来，减少精神内耗。</li>
-    <li><strong>练习应对：</strong> 知道了常见的“出招”模式，你才能提前想好如何“接招”。是冷静澄清事实？是提出具体问题？还是明确自己的边界？</li>
+  <!-- 第二部分：为什么需要它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    二、 为什么要看看自己的“人生进度”？
+  </h2>
+  <p class="mb-4">
+    我们每天都在看手机电量、看项目进度、看快递到哪儿了，却很少停下来看看自己最宝贵的资源——时间的存量。
+  </p>
+  <div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">1. 对抗“总觉得还有时间”的错觉</h3>
+      <p class="text-sm text-gray-600">日子一天天过，感觉好像永远过不完。但当“剩余2万个周末”这个数字摆在面前时，那种具体感会让人心头一震，促使你重新思考事情的优先级。</p>
+    </div>
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">2. 庆祝已经拥有的时光</h3>
+      <p class="text-sm text-gray-600">工具不仅告诉你还剩多少，也清晰地展示你已经度过了多少丰富或平凡的日夜。每一个“已活天数”的增长，都值得被看见和肯定。</p>
+    </div>
+  </div>
+
+  <!-- 第三部分：它具体能告诉你什么？（对应功能） -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    三、 它能为你算出的“人生账本”
+  </h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">1. 整体概览：你的生命时间线</h3>
+    <p class="mb-4">
+      输入信息后，你会立刻看到一个像温度计一样的“人生进度条”。蓝色（或绿色）的部分代表已度过的人生，空白部分代表未来。旁边清晰的百分比，让你对自己所处的阶段一目了然。
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 数字模式：把时间“拆开”看</h3>
+    <p class="mb-2">如果你喜欢具体的数据，可以切换到数字模式。这里会把你的剩余时间拆解成：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>剩余年/月数：</strong>帮你做中长期规划（比如，我想用5年掌握一门技能）。</li>
+      <li><strong>剩余周末数：</strong>这个数字往往最让人触动。它提醒你，能完全放松、陪伴家人或发展兴趣的完整两天，其实是有限的。</li>
+    </ul>
+    <p class="text-gray-600 text-sm">
+      （注：这些计算基于简单的平均换算，意在提供一种视角，并非精确预言。）
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">3. 每日签到：与时间的温柔互动</h3>
+    <p class="mb-4">
+      工具附带一个简单的“每日签到”功能。每天花一秒钟点一下，记录“我今天在场”。它会随机送你一句关于时间的箴言，并默默记下你的打卡足迹。这像是一个小小的仪式，提醒自己珍惜又一个独一无二的日子。
+    </p>
+  </div>
+
+  <!-- 第四部分：如何使用它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    四、 如何使用这个工具？（简单三步）
+  </h2>
+  <ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li>
+      <strong>第一步：填写基本信息。</strong>打开工具页面，选择你的出生日期，并设定一个预期寿命（如果不确定，用默认的85岁就好）。
+    </li>
+    <li>
+      <strong>第二步：查看你的报告。</strong>信息填好后，页面会自动更新。你可以自由切换“励志模式”（看进度条和名言）和“数字模式”（看详细统计）。
+    </li>
+    <li>
+      <strong>第三步：尝试每日互动。</strong>如果觉得有启发，可以每天来签个到，看看今天的时间格言。你所有的签到记录可以导出保存。
+    </li>
   </ol>
+  <p class="mb-6 bg-gray-50 p-4 rounded italic text-sm">
+    请放心，所有这些数据都只保存在你自己的手机或电脑浏览器里，没有网络传输，不用担心隐私问题。你也可以随时清空所有记录。
+  </p>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">三、用一个“话术生成器”来感受和拆解</h2>
-  <p class="mb-4">单纯讲道理可能有点抽象。为了方便大家更具体地感受这种话术的“组装”逻辑，网络上出现了一些有趣的<strong>“PUA话术生成器”</strong>。你可以把它理解为一个“造句模板”或“填空题”游戏。</p>
-  <p class="mb-4">它的用法很简单：</p>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li>你会看到一个预设好的话术段落，里面有很多空白处，比如“情绪评价”、“职位”、“核心竞争力”等。</li>
-    <li>你可以自己随意填写这些空白，比如把“情绪评价”填成“期待”，把“职位”填成“负责这个项目的机会”。</li>
-    <li>点击“生成”，一段符合那个套路逻辑的、完整的话就出来了。</li>
-    <li>通常生成器还会提供几个“预设场景”，比如“职场CPU”、“绩效面谈”等，一键填充典型词汇，让你立刻看到不同场景下的效果。</li>
+  <!-- 第五部分：最后的提醒 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    写在最后：工具的意义，由你赋予
+  </h2>
+  <p class="mb-4">
+    这个计算器算出的，绝不是命运的定数。预期寿命只是一个参考值，随着医疗和生活方式进步，很多人都会远远超越它。
+  </p>
+  <p class="mb-4">
+    它的真正价值在于提供一种“视角”。就像站上一个小山坡回望来路、眺望前方，它能帮助我们：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>对过去的时光多一份感激和接纳。</li>
+    <li>对未来的日子多一份清醒和规划。</li>
+    <li>对正在流逝的“现在”，多一份觉察和珍视。</li>
   </ul>
-  <p class="mb-8">通过自己动手“组装”一遍，你会惊奇地发现，原来这种让人倍感压力的话术，其骨架是如此相似和可复制。这个工具就像一个“照妖镜”，让套路变得清晰可见，从而削弱它的威力。</p>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">四、如果你遇到了，可以怎么办？</h2>
-  <p class="mb-6">识别之后，更重要的是应对。这里有一些平实的建议：</p>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-green-50 p-5 rounded-lg border border-green-200">
-      <h3 class="font-bold text-lg mb-3 text-green-800">保持冷静，隔离情绪</h3>
-      <p class="text-gray-700">心里默念：“这是对方的沟通方式问题，不全是我的问题。” 把关注点从“我是不是很差”转移到“他到底想表达什么具体问题”上。</p>
-    </div>
-    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
-      <h3 class="font-bold text-lg mb-3 text-yellow-800">追问具体，避免模糊</h3>
-      <p class="text-gray-700">针对模糊评价，礼貌地请求具体例子。“您说我‘投入不足’，能具体分享一下是哪个时间点或哪件事让您有这种感觉吗？我想针对性改进。”</p>
-    </div>
-    <div class="bg-red-50 p-5 rounded-lg border border-red-200">
-      <h3 class="font-bold text-lg mb-3 text-red-800">记录事实，保护自己</h3>
-      <p class="text-gray-700">对于重要的沟通，尤其是涉及承诺和评价的，事后简单用邮件或消息确认一下。“总结一下刚才您提到的三点要求：1… 2… 3…，我这样理解对吗？” 留下记录。</p>
-    </div>
-    <div class="bg-blue-50 p-5 rounded-lg border border-blue-200">
-      <h3 class="font-bold text-lg mb-3 text-blue-800">明确边界，量力而行</h3>
-      <p class="text-gray-700">“成长伴随痛苦”不等于“所有痛苦都值得承受”。判断工作要求是否合理，是否严重透支健康和生活。学会在无法承受时，清晰、理性地表达自己的困难。</p>
-    </div>
+  <div class="text-center py-6 px-4 border-t mt-8">
+    <p class="text-gray-800 font-medium mb-2">
+      时间对每个人都公平，但感知时间的方式，我们可以自己选择。
+    </p>
+    <p class="text-gray-600">
+      希望这个小小的“人生进度条”，能成为你珍惜当下、认真生活的一个友善提醒。
+    </p>
   </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">写在最后</h2>
-  <p class="mb-4">无论是“PUA话术生成器”这个工具，还是这篇文章，我们的目的都不是为了挑起对立或学会攻击。恰恰相反，是为了<strong>增进理解、促进清醒、保护自我</strong>。</p>
-  <p class="mb-4">健康的沟通应该基于事实、尊重与清晰的目标。希望你在了解这些模式后，既能避免自己不自觉地使用它，也能在遇到时，有能力守护自己的心理边界，将沟通拉回到解决实际问题的轨道上来。</p>
-  <p class="pt-6 border-t text-gray-600">如果你对这类沟通现象感兴趣，不妨去找找那个“话术生成器”亲自体验一下，你会发现，拆解套路本身，就是一种很好的治愈和赋能。</p>
 </div>
-`;export{l as default};
+`;export{s as default};

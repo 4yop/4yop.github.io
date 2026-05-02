@@ -1,65 +1,85 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700">
-  <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h2>
-  <p class="text-lg text-gray-600 mb-8">你是否在电影片尾、广告大屏或视频里看过那些缓缓移动的文字？现在，不用学习复杂软件，你也可以轻松创建属于自己的滚动文字效果了。</p>
+const t=`
+<article class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线录音工具怎么用？一个免费工具帮你轻松录制声音</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium">简单来说，滚动文字生成器就是一个在线小工具。你只需要输入文字、调调颜色和速度，它就能立刻帮你生成一段会“走动”的文字动画，你可以把它用在视频里、网页上，或者做成一个特别的图片。</p>
-  </div>
+  <p class="text-lg text-gray-700 mb-8">无论是想录下会议内容、保存一段灵感迸发的歌声，还是记录网课的重点，你可能都在寻找一个好用的录音方法。今天，我们就来介绍一种直接在网页上就能使用的录音工具，无需安装软件，打开浏览器就能开始录制。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">什么是滚动文字？</h2>
-  <p class="mb-4">滚动文字，顾名思义，就是会沿着一定方向（比如从左到右、从上到下）自动移动的文字。它和我们平时看的静态文字不同，自带一种动感和吸引力。</p>
-  <p class="mb-6">想想这些场景：古老的电影院里向上滚动的演员表；商场电子屏上循环播放的打折信息；你制作的短视频里，需要一段横穿屏幕的标题……这些都是滚动文字的应用。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-4">什么是网页录音工具？</h2>
+    <p class="text-gray-700 mb-4">简单来说，它是一个在你电脑或手机浏览器里运行的“录音机”。就像你用手机自带的录音功能一样，但它更侧重于在网页上直接使用，录好的声音文件可以直接保存在你的设备里。</p>
+    <p class="text-gray-700">它的好处很明显：<strong class="text-gray-900">方便</strong>，不用下载安装；<strong class="text-gray-900">快捷</strong>，点开网页就能用；而且很多都是<strong class="text-gray-900">免费</strong>的。</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">它能用来做什么？</h2>
-  <p class="mb-4">这个小工具非常适合普通人在日常创作中使用：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>制作视频字幕</strong>：为你拍摄的短片添加专业的片头或片尾滚动字幕。</li>
-    <li><strong>创建动态海报</strong>：设计一个带有滚动标语的宣传图，更抓人眼球。</li>
-    <li><strong>丰富演示文稿</strong>：在PPT或Keynote中插入一小段滚动文字，让演示更生动。</li>
-    <li><strong>装饰社交媒体</strong>：为你的社交媒体状态或故事制作独特的动态背景文字。</li>
-    <li><strong>简单的广告展示</strong>：小店铺可以用来制作电子广告语，在平板或电脑上循环播放。</li>
-  </ul>
+  <section class="mb-10 bg-blue-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">核心功能一览</h2>
+    <p class="text-gray-700 mb-6">一个功能齐全的在线录音工具，通常包含以下让你用起来很顺手的特点：</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">如何使用它？（完全不用懂技术）</h2>
-  <p class="mb-4">使用过程就像“搭积木”一样简单直观，所有操作都是即时可见的：</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
+          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+          清晰的录音状态和计时
+        </h3>
+        <p class="text-gray-700">开始录音后，屏幕中央会有明确的状态提示，比如“录制中”、“已暂停”。旁边还有一个实时走动的计时器，让你准确掌握录音时长。</p>
+      </div>
 
-  <div class="bg-gray-50 rounded-lg p-5 mb-6">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第一步：写下你想说的</h3>
-    <p class="mb-4">在文字框里输入任何内容：一句祝福、一个口号、一段歌词，或者店铺名称和电话。输入的同时，右边预览区里的文字就会立刻出现。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
+          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+          看得见的声音波形
+        </h3>
+        <p class="text-gray-700">这不是静悄悄的录音。屏幕上会有一个动态跳动的条形图，声音越大，条形跳得越高。这样你就能直观地看到麦克风是否在正常工作，以及音量大小。</p>
+      </div>
 
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第二步：给它“穿衣服”</h3>
-    <p class="mb-2">你可以随意打扮这段文字：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>换颜色</strong>：点击色块，给文字换个喜欢的颜色，也能改变整个背景板的颜色。</li>
-      <li><strong>调大小</strong>：拖动滑块，让文字变大或变小。</li>
-      <li><strong>选字体</strong>：在几种常见字体里选择，比如端庄的宋体或现代的黑体。</li>
+      <div class="bg-white p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
+          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+          灵活的录音控制
+        </h3>
+        <p class="text-gray-700">拥有和实体录音机一样的按键：开始、暂停、继续、停止。你可以随时暂停整理思路，然后继续录，最终合成一个完整的文件。</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-lg shadow-sm">
+        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
+          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
+          多种格式保存和播放
+        </h3>
+        <p class="text-gray-700">录完后，你可以选择把声音存成不同的格式。比如选择通用性好的MP3，或者音质无损但文件稍大的WAV格式。录制后可以直接在网页上试听回放。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-green-500 pl-4">它能在哪些场合派上用场？</h2>
+    <ul class="list-disc pl-6 text-gray-700 space-y-3">
+      <li><strong class="text-gray-900">工作学习：</strong>远程会议时录制重要内容以防遗漏，录下网课或在线培训的重点部分方便复习。</li>
+      <li><strong class="text-gray-900">内容创作：</strong>录制自己的播客片段、有声书朗读、或歌曲小样，快速捕捉灵感。</li>
+      <li><strong class="text-gray-900">生活记录：</strong>录下家人朋友的生日祝福、孩子的童言稚语，或者采访长辈的口述故事。</li>
+      <li><strong class="text-gray-900">临时备忘：</strong>当双手不方便打字时，用语音快速记录想法、待办事项或购物清单。</li>
     </ul>
+  </section>
 
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第三步：设置它如何“走动”</h3>
-    <p class="mb-2">这是最关键也最好玩的部分：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>选方向</strong>：让文字从左向右走、从右向左走，或者上下移动。</li>
-      <li><strong>控速度</strong>：拖动滑块，决定文字移动得快一点还是慢一点。</li>
-      <li><strong>定起点</strong>：精细控制文字从屏幕的哪个位置开始出现。</li>
-      <li><strong>改画布</strong>：调整显示区域的大小，适应你不同的用途。</li>
-    </ul>
-    <p>每调整一个参数，右边的预览效果都会实时变化，真正做到“所见即所得”。</p>
-  </div>
+  <section class="mb-10 p-6 border border-gray-200 rounded-xl">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">使用小贴士</h2>
+    <div class="space-y-4">
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">①</div>
+        <p class="ml-3 text-gray-700"><strong class="text-gray-900">第一次使用需要授权：</strong>就像手机App一样，网页首次使用麦克风时，浏览器会弹窗询问是否允许。点击“允许”即可。</p>
+      </div>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">②</div>
+        <p class="ml-3 text-gray-700"><strong class="text-gray-900">找一个安静的环境：</strong>录制前尽量关闭背景音乐、电视声，能有效提升录音的清晰度。</p>
+      </div>
+      <div class="flex items-start">
+        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">③</div>
+        <p class="ml-3 text-gray-700"><strong class="text-gray-900">录音前先试音：</strong>正式开始前，可以说几句话看看波形图是否有跳动，以确认设备工作正常。</p>
+      </div>
+    </div>
+  </section>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">第四步：保存你的作品</h2>
-  <p class="mb-6">调整到自己最满意的效果后，点击“生成动画”按钮。稍等片刻，工具就会为你制作好一段完整的滚动文字视频。你可以直接下载这个视频文件，用到任何你需要的地方去。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">给初学者的几点小建议</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3">
-    <li><strong>文字别太长</strong>：滚动文字适合展示简短精悍的信息，太长会看不完。</li>
-    <li><strong>颜色要对</strong>：确保文字颜色和背景颜色有足够的对比度，不然会看不清。</li>
-    <li><strong>速度要适中</strong>：太快让人眼花，太慢显得拖沓，多预览几次找到最舒服的速度。</li>
-    <li><strong>先模仿再创造</strong>：如果不确定怎么做，可以先试试模仿你见过的、觉得好看的滚动文字效果。</li>
-  </ul>
-
-  <div class="border-t pt-8">
-    <p class="text-gray-600">总而言之，滚动文字生成器是一个将简单想法快速变成动态视觉的小帮手。它不需要任何专业知识，只需你的创意。无论是为了工作展示，还是个人兴趣，都可以来试试看，亲手创造一段属于你自己的、会“说话”的文字。</p>
-  </div>
-</div>
-`;export{s as default};
+  <section class="text-center py-8 border-t border-b border-gray-200">
+    <p class="text-xl text-gray-800 mb-4">总的来说，一个设计良好的在线录音工具，旨在让录音这件事变得像按下按钮一样简单。</p>
+    <p class="text-gray-700">它打破了专业软件的壁垒，让你无需任何技术背景，就能快速、高质量地完成声音录制和保存。下次当你需要录下任何声音时，不妨试试在浏览器中寻找这个便捷的解决方案。</p>
+  </section>
+</article>
+`;export{t as default};

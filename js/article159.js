@@ -1,110 +1,90 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">你的身份证号码里，藏着哪些不为人知的“小秘密”？</h1>
-
-  <div class="mb-8">
-    <p class="text-lg text-gray-700 mb-4">
-      你知道吗？你的身份证号码里，其实藏着不少关于你的小秘密。它不仅仅是一串用来证明“你是谁”的数字，更像是一个精心设计的个人信息“密码本”。
-    </p>
-    <p class="text-gray-600">
-      今天，我们不谈复杂的科技，就聊聊这18位数字，是如何在不泄露你隐私的前提下，告诉我们你的故事。
-    </p>
-  </div>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">安全第一：你的信息，只留在你的设备里</h2>
-    <p class="text-gray-700">
-      在开始探索之前，最重要的事情是安全。我们使用的解析工具，其核心原则是<span class="font-medium text-blue-700">“本地解析，数据不上传”</span>。这意味着，当你输入号码后，所有的计算和解读都在你自己的手机或电脑里瞬间完成，结果一出来，过程就结束了。没有服务器记录，没有网络传输，就像用一个离线的计算器一样私密。
-    </p>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">解码18位数字：你的“人生简史”</h2>
-  <p class="text-gray-600 mb-6">
-    让我们把身份证号码拆开看看，每一段数字都有它特定的使命：
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight">网上每天那么多热点，一个页面就能全看完？</h1>
+  <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
+    有没有觉得，每天想看看网上在聊什么，得在好几个软件之间来回切换？一会儿打开微博，一会儿刷刷抖音，再去贴吧逛逛……来回切换不仅麻烦，还容易错过重要的信息。其实，有个更简单的办法。
   </p>
 
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="text-gray-700">
+      <span class="font-semibold">简单来说：</span>现在有一个工具，可以把微博、抖音、百度等多个平台的热搜榜，都集合在同一个页面里。你只需要点一下切换，就能看到不同平台最火的话题，不用再反复打开不同的应用了。
+    </p>
+  </div>
+
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它为你解决了什么？</h2>
+  <ul class="list-disc pl-5 mb-8 space-y-3 text-gray-700">
+    <li><span class="font-medium">节省时间：</span>不用再一个个应用点开，找热搜入口。所有热门话题一次性呈现。</li>
+    <li><span class="font-medium">快速了解全貌：</span>今天哪个平台最热闹？社会新闻在微博火，还是搞笑段子在抖音热？一眼就能比较。</li>
+    <li><span class="font-medium">不再错过热点：</span>你常刷抖音，可能就错过了微博上正在热议的社会话题。这个工具能帮你查漏补缺。</li>
+    <li><span class="font-medium">发现差异：</span>同一个事件，在不同平台的网友关注点可能完全不同，对比着看很有意思。</li>
+  </ul>
+
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它是怎么工作的？</h2>
+  <p class="mb-4 text-gray-700">
+    使用起来非常直观。页面顶部有几个按钮，分别代表不同的平台，比如“微博”、“抖音”、“百度热搜”、“百度贴吧”。
+  </p>
+  <div class="bg-gray-100 p-5 rounded-lg mb-6 border border-gray-300">
+    <h3 class="font-bold text-lg mb-3 text-gray-800">你可以这样操作：</h3>
+    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+      <li>打开页面，默认看到的是微博的热搜榜。</li>
+      <li>想看抖音的热门视频挑战或话题？点击“抖音”按钮，列表瞬间就切换过去了。</li>
+      <li>每个话题会显示它的排名、标题和大概的热度值。排名前三的通常会标红，比较醒目。</li>
+      <li>点击任何一条热搜的标题，就能在新窗口打开对应的链接，查看详细内容。</li>
+    </ol>
+  </div>
+
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">有什么特别之处？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 清晰明了
+      </h3>
+      <p class="text-gray-700">界面设计得很干净，没有乱七八糟的广告或多余信息。就是纯粹的热搜榜单，让你专注在内容本身。</p>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 实时更新
+      </h3>
+      <p class="text-gray-700">榜单上方会显示最近的更新时间，让你知道看到的信息是不是最新的。数据也会定期刷新。</p>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 多端适配
+      </h3>
+      <p class="text-gray-700">无论是在电脑的大屏幕上，还是用手机的小屏幕浏览，页面的排版都会自动调整，看得都很舒服。</p>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
+      <h3 class="font-bold text-lg mb-2 flex items-center">
+        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 快速加载
+      </h3>
+      <p class="text-gray-700">切换平台时，数据加载很快。如果正在加载，你会看到一个转圈的小动画，知道页面正在工作，不会以为是卡住了。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">你可能会问的问题</h2>
   <div class="space-y-6 mb-10">
     <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 你的“根源”：前6位地址码</h3>
-      <p class="text-gray-700">
-        这就像是你的“数字籍贯”。它对应着你最初申领身份证时所在的省、市、区（县）。通过它，工具可以快速定位并显示出你对应的行政区划名称。有时候，这可能会让你想起自己的故乡。
-      </p>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">数据是实时的吗？</h3>
+      <p class="text-gray-700">它展示的是各个平台官方或公开的热搜榜单，数据会尽可能保持同步更新。但和原平台相比，可能会有几分钟的延迟，这属于正常情况。</p>
     </div>
-
     <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 最重要的时刻：中间8位生日码</h3>
-      <p class="text-gray-700">
-        这是号码里最直白的一部分，直接记录了你的公历出生年月日。但有趣的是，工具还能从这里延伸出更多信息：
-      </p>
-      <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
-        <li><span class="font-medium">当前年龄</span>：自动帮你算好，不用再掰着手指头数。</li>
-        <li><span class="font-medium">农历生日</span>：很多传统节日和习俗看农历，知道自己的农历生日，也许能让庆祝更有仪式感。</li>
-        <li><span class="font-medium">出生那天是星期几</span>：一个有趣的生活冷知识，或许是你人生一个平凡又特别的开始。</li>
-      </ul>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">为什么没有知乎或B站？</h3>
+      <p class="text-gray-700">目前主要集成了几个用户量最大、热搜文化最典型的平台。未来可能会根据大家的需求，加入更多平台的选择。</p>
     </div>
-
     <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 独特的身份标识：接下来的3位顺序码</h3>
-      <p class="text-gray-700">
-        这3位数字信息量很大。其中，<span class="font-medium">第17位（即倒数第二位）的奇偶性，直接决定了性别</span>：奇数通常代表男性，偶数通常代表女性。这是号码里隐藏的一个关键“彩蛋”。
-      </p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 最后的守护者：末尾校验码</h3>
-      <p class="text-gray-700">
-        最后一位数字（有时是X）不是随便写的。它是通过一套严谨的数学公式计算出来的，专门用来<span class="font-medium">检验前面17位数字是否正确</span>。如果输入错误，校验码就对不上，工具会提示号码无效。它是这串数字“密码”的防盗锁。
-      </p>
+      <h3 class="font-bold text-lg mb-2 text-gray-800">这个工具安全吗？</h3>
+      <p class="text-gray-700">它只是一个信息的“展示窗口”。当你点击某条热搜时，会跳转到对应平台的官方网站或页面，浏览和互动过程都在原平台进行，所以和直接访问那些网站是一样的。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-bold mt-12 mb-4 text-gray-900">除了基本信息，还有哪些趣味解读？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的星座</h3>
-      <p class="text-gray-700">
-        根据你的阳历生日，可以轻松对应到十二星座之一。是细致周到的处女座，还是热情开朗的射手座？这个“标签”常常是朋友间有趣的谈资。
-      </p>
-    </div>
-    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的生肖</h3>
-      <p class="text-gray-700">
-        结合农历年份，就能知道你的生肖属相。这是中国传统文化中一个非常重要的符号，承载着岁月轮回的独特纪念。
-      </p>
-    </div>
-  </div>
-
-  <div class="border-t border-gray-200 pt-8 mt-10">
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">常见疑问解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：输入我的身份证号，真的安全吗？</h3>
-        <p class="text-gray-700">
-          <strong>答：安全。</strong>这正是本地解析工具最大的优势。整个过程在你的设备上完成，就像你在自己的本子上做计算一样，算完结果就在眼前，本子上的原始数据不会被拍照上传。你的号码从未离开过你的设备。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：为什么我看到的籍贯和我知道的不一样？</h3>
-        <p class="text-gray-700">
-          <strong>答：这很正常。</strong>身份证上的地址码，记录的是你首次申领身份证时的户籍所在地。如果你后来迁移了户口，或者出生地与户籍地不同，这里显示的信息就可能和你现在认为的“老家”有出入。它是一份历史的数字记录。
-        </p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：这个工具能用来做什么？</h3>
-        <p class="text-gray-700">
-          <strong>答：主要是满足个人好奇心和对信息的了解。</strong>它可以帮你快速查看身份证上的基本信息，验证号码格式是否正确，或者了解一下号码背后的传统文化元素（如农历、生肖）。它并非官方验证工具，不能用于任何正式的身份认证场景。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 bg-gray-50 rounded-lg text-center">
-    <p class="text-gray-700 mb-2">
-      一个小小的身份证号码，原来包含了从地域、时间到个人特征的多种信息。科技让解读这些信息变得简单，而本地处理的方式，则为我们守护了最重要的隐私安全。
+  <div class="mt-12 p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-300">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      在这个信息满天飞的时代，我们需要的可能不是更多信息，而是更高效获取信息的方式。一个聚合多个平台热搜的工具，就像给你的手机或电脑装了一个“热点雷达”。
     </p>
-    <p class="text-gray-600">
-      如果你也对自己的这串“人生密码”感到好奇，不妨用注重隐私的本地工具，亲自探索一下。
+    <p class="text-gray-700">
+      它帮你省去了反复切换的麻烦，让你用最短的时间，快速把握当天各个社交平台上的脉搏。无论是想跟上潮流、寻找谈资，还是单纯不想与社会脱节，这或许都是一个值得尝试的省心选择。
     </p>
   </div>
 </div>
-`;export{t as default};
+`;export{s as default};

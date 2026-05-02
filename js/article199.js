@@ -1,79 +1,97 @@
-const t=`
-<div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <section class="mb-10">
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 leading-tight">一键整理凌乱文字中的联系方式</h1>
-    <p class="text-lg text-gray-600 mb-2">还在为从大段文字里找手机号、邮箱而头疼？这个小工具能帮你瞬间搞定。</p>
-    <p class="text-gray-500">无论是会议纪要、客户资料还是网页内容，它都能自动识别并整理出所有联系方式，让你的工作效率翻倍。</p>
-  </section>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <article>
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">想拥有与众不同的网络名字吗？字符花样转换器帮你轻松实现</h1>
+    <p class="text-gray-600 mb-8 text-lg text-center">告别普通字体，教你如何将简单的数字和字母，变成一眼就能被记住的个性符号。</p>
 
-  <section class="mb-10 bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg">
-    <h2 class="text-xl font-semibold text-gray-800 mb-3">你是不是也遇到过这种情况？</h2>
-    <ul class="space-y-2 list-disc pl-5 text-gray-700">
-      <li>拿到一份长长的会议记录，里面混杂着好几个人的电话和邮箱，需要一个一个挑出来。</li>
-      <li>在网页上看到一篇有用的文章，里面提到了联系方式，但和正文混在一起，手动复制容易出错。</li>
-      <li>收集了多份文档里的客户信息，想把所有人的联系方式汇总到一个表格里，却要逐字逐句地翻找。</li>
-    </ul>
-    <p class="mt-4 text-gray-600">手动做这些事情，不仅费时费力，还容易看走眼，不小心就漏掉或者抄错了一个数字、一个字母。</p>
-  </section>
+    <div class="mb-10 p-6 bg-blue-50 border-l-4 border-blue-500">
+      <p class="mb-2">你是否也遇到过这些烦恼？</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>想注册一个酷炫的网名，但所有好名字都被人用过了？</li>
+        <li>社交媒体上的个人介绍平平无奇，很难吸引别人注意？</li>
+        <li>想在评论区留言时，让自己的发言看起来更特别一些？</li>
+      </ul>
+      <p class="mt-4">其实，不用苦恼。你只需要将普通的字母数字稍微“打扮”一下，就能立刻变得与众不同。今天，我们就来聊聊如何轻松玩转各种特殊字符。</p>
+    </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">它是怎么帮到你的？</h2>
-    <p class="mb-6">简单来说，它就像一个智能的“文字筛子”。你只需要把包含联系方式的整段文字“倒”进去，它就会自动把手机号码、电子邮箱和网页链接这三样东西筛出来，分门别类地摆在你面前。</p>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">什么是“字符花样”？</h2>
+      <p class="mb-4">简单来说，就是用一些看起来相似、但更特别的符号，来替换你原本想用的普通字符。</p>
+      <p class="mb-4">比如，你的生日是“1990”，但直接用它做网名后缀，可能显得有点普通。如果把它变成带圈的数字“①⑨⑨⓪”，是不是瞬间就有了设计感？再比如，你想写“LOVE”，如果变成“<span class="text-pink-600">❥love</span>”或“<span class="font-bold">𝐋𝐎𝐕𝐄</span>”，情感表达是不是更强烈了？</p>
+      <p>这些看起来有点“高级”的符号，其实并不神秘。它们本就存在于你的电脑和手机字体库中，只是大多数人不知道去哪里找、怎么用。而现在，有专门的在线工具可以帮你瞬间完成这种转换。</p>
+    </section>
 
-    <div class="space-y-8">
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">1</span>
-          它能找什么？
-        </h3>
-        <div class="grid sm:grid-cols-3 gap-4 text-center">
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-blue-600 font-bold text-lg mb-1">手机号码</div>
-            <div class="text-sm text-gray-500">国内主流的11位手机号，都会帮你识别出来。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-green-600 font-bold text-lg mb-1">电子邮箱</div>
-            <div class="text-sm text-gray-500">带有“@”符号的标准邮箱地址，一个都跑不掉。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-amber-600 font-bold text-lg mb-1">网页链接</div>
-            <div class="text-sm text-gray-500">以 http、https 或 www 开头的网址链接。</div>
-          </div>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">常见的字符转换风格有哪些？</h2>
+      <p class="mb-4">了解这些风格，下次你想装饰文字时，就能轻松说出你想要的效果。</p>
+      <ul class="space-y-6">
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">1. 圆圈数字</h3>
+          <p class="text-gray-600">效果：① ② ③ … ⑩</p>
+          <p>这是非常受欢迎的一种风格，尤其适合点缀日期、序号或幸运数字。看起来既清晰又可爱，常用于游戏昵称或列表标记。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">2. 全角字符</h3>
+          <p class="text-gray-600">效果：ＡＢＣ １２３（每个字符更宽）</p>
+          <p>简单地将英文字母和数字“加胖”。虽然变化细微，但能让一行文字看起来更整齐、更醒目，非常适合用作标题或需要强调的短句。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">3. 上标与下标</h3>
+          <p class="text-gray-600">效果：¹²³ᴸᵒʳᵉᵐ 和 ₁₂₃₄₅</p>
+          <p>想表达“平方”“立方”（如m²）？或者想营造一种化学公式、数学注释般的专业感？这两种格式就能派上用场。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">4. 装饰前缀</h3>
+          <p class="text-gray-600">效果：★star ❥love</p>
+          <p>直接在文字前加上小符号来点明主题。一颗星星、一颗爱心，就能让一个普通的单词充满情绪和画面感。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">5. 加粗与等宽字体</h3>
+          <p class="text-gray-600">效果：<span class="font-bold">𝐁𝐨𝐥𝐝</span> 与 <span style="font-family: monospace">𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎</span></p>
+          <p>纯粹的加粗能让文字更有力量感。而等宽字体则让每个字母宽度一致，常给人技术、复古或打字机般的独特格调。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">这些花样字符，可以用在哪里？</h2>
+      <p class="mb-4">知道了怎么做，更要了解怎么用。下面这些场景，你一定会碰到：</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">社交网络名片</h4>
+          <p>微信、微博、抖音、小红书等平台的昵称和个性签名，是使用花样字符最多的地方。一个特别的昵称能让你更容易被记住和发现。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">评论区与弹幕</h4>
+          <p>在热门视频或文章下评论时，让你的留言在千篇一律的文字中“跳”出来，获得更多点赞和互动的机会。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">游戏角色名</h4>
+          <p>在网游或手游中，一个酷炫的角色名不仅能彰显个性，有时还能在虚拟世界里带来更高的“辨识度”。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">文件与笔记标题</h4>
+          <p>在整理电脑文件或写电子笔记时，用特殊符号来区分重要等级或分类，能让浏览效率大大提升。</p>
         </div>
       </div>
+    </section>
 
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">2</span>
-          操作有多简单？
-        </h3>
-        <ol class="space-y-4 list-decimal pl-5 text-gray-700">
-          <li><strong>粘贴文字</strong>：把你手头那段“乱糟糟”的文字，全部复制并粘贴到页面的输入框里。</li>
-          <li><strong>自动识别</strong>：就在你粘贴完成的一瞬间，右边的结果区域已经自动把手机、邮箱、链接分开列好了，还会告诉你各找到了多少个。</li>
-          <li><strong>怎么拿走？</strong>：你可以点击任何一个单独的号码或邮箱来复制；也可以点一下“复制全部”，把找出来的所有信息一次性打包复制走；或者，选择“导出”成一个文本文件保存到电脑里。</li>
-        </ol>
-        <p class="mt-4 p-4 bg-gray-100 rounded-lg text-gray-600 text-sm">整个过程，你只需要做“粘贴”和“点击”这两个动作，剩下的全部交给工具来完成。如果想换一段文字重新整理，点一下“清空全部”就恢复如初了。</p>
-      </div>
-    </div>
-  </section>
+    <section class="mb-10 p-6 bg-gray-50 rounded-lg">
+      <h2 class="text-2xl font-bold mb-4">如何使用这些字符？</h2>
+      <p class="mb-4">过程其实非常简单，就像把大象放进冰箱一样，只需三步：</p>
+      <ol class="list-decimal pl-5 space-y-3">
+        <li><strong>输入</strong>：在工具里，写下你想转换的普通文字，比如你的名字“Lucy2024”。</li>
+        <li><strong>选择</strong>：从列表里挑一个你喜欢的风格，比如“圆圈数字”。</li>
+        <li><strong>复制</strong>：转换后的“Lucy②⓪②④”会立刻出现，点击“复制”按钮，就可以把它粘贴到任何你想用的地方了。</li>
+      </ol>
+      <p class="mt-4 text-gray-600">现在，很多在线工具都提供了这样的功能，操作直观，而且完全免费。你甚至可以自己定义一些独特的替换规则，创造出只属于你自己的字符风格。</p>
+    </section>
 
-  <section class="mb-10 p-6 bg-gray-100 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">为什么你会需要它？</h2>
-    <div class="space-y-4">
-      <p><strong>为了快</strong>：节省下大量手动查找和核对的时间，几分钟甚至几秒钟就能完成以前需要半小时的工作。</p>
-      <p><strong>为了准</strong>：机器识别比人眼更可靠，能有效避免因为疲劳或疏忽而导致的遗漏和错抄。</p>
-      <p><strong>为了整齐</strong>：把散落在文字各处的信息，规规矩矩地整理成清单，方便你后续的拨打、联系或归档。</p>
+    <div class="mt-12 p-6 border border-gray-300 text-center">
+      <p class="font-medium mb-2">总结一下：</p>
+      <p>想让自己的网络形象更突出，不一定需要复杂的图案或设计。有时，仅仅是将普通的字母数字换成几枚<span class="text-blue-600">带圈的数字</span>、一个<span class="font-bold">加粗的单词</span>，或者一颗<span class="text-pink-600">爱心前缀</span>，就足以产生令人眼前一亮的效果。</p>
+      <p class="mt-4">希望这篇文章能帮你打开思路。下次，当你想让你的文字“不一样”时，不妨试试这个有趣的“字符花样”转换方法吧。</p>
     </div>
-    <p class="mt-6 text-gray-600">这个工具完全在网页浏览器里运行，你无需下载任何软件，打开网页就能用。更重要的是，<strong>你粘贴进去的所有文字内容都只在你的电脑浏览器里处理</strong>，不会被上传到任何服务器，你可以放心整理那些包含敏感信息的文件。</p>
-  </section>
-
-  <section class="text-center py-8 border-t border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结一下</h2>
-    <p class="text-lg text-gray-700 mb-6">无论是处理工作文档、收集网络信息，还是整理个人资料，面对混杂在文字中的联系方式，你不再需要变成一个“人肉扫描仪”。</p>
-    <div class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-default">
-      让这个小工具成为你的效率助手
-    </div>
-    <p class="mt-6 text-gray-500 text-sm">简单、快速、免费，把繁琐的事情交给工具，把你的时间和精力留给更重要的事。</p>
-  </section>
+  </article>
 </div>
-`;export{t as default};
+`;export{s as default};

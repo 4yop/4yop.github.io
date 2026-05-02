@@ -1,90 +1,90 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-slate-800 font-sans">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">别再截图了！教你一键提取文档里的高清原图</h1>
-
-  <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed">
-    你是否遇到过这样的情况？在一份精美的PDF报告、Word文档或者PPT里看到一张特别合适的图片，想保存下来自己用，结果发现无法直接右键保存，最后只能无奈地截个模糊的图？
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-    <p class="text-slate-700">
-      其实，那些文档里的图片，大多都能以原来的高清质量被“拿”出来。今天就来介绍一个简单又安全的方法。
+const t=`
+<div class="text-slate-700 font-sans leading-relaxed">
+  <article class="max-w-4xl mx-auto p-4 md:p-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">如何清晰比较人与事的综合能力？试试这个直观的评估工具</h1>
+    <p class="text-lg text-slate-600 mb-8">
+      无论是比较两个员工的工作表现，还是评估几个不同方案的优缺点，你是不是常常觉得心里有数，但说不清楚？今天，我们来介绍一种简单的方法，帮你把复杂的综合对比，变得一目了然。
     </p>
-  </div>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">文档里的图片，都藏在哪里？</h2>
-  <p class="mb-6 leading-relaxed">
-    我们日常接触的文档，比如PDF、Word（.docx）、Excel（.xlsx）和PowerPoint（.pptx），它们就像一个个“数字容器”。你看到的文字、图表和图片，都被打包在里面。尤其是图片，它们通常以原始的、高质量的数据格式保存在文档内部，这就是为什么我们无法像在普通网页上那样直接“另存为”。
-  </p>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+      <p class="text-slate-700">
+        <strong>核心功能：</strong>这个工具让你可以自由设定比较的方面（比如沟通能力、专业技能），然后为每个你要比较的对象打分，最后生成一张像蜘蛛网一样的“雷达图”，让你一眼就能看出各自的优势和短板。
+      </p>
+    </div>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">如何无损地拿出这些图片？</h2>
-  <p class="mb-6 leading-relaxed">
-    你需要的是一个专门的“提取工具”。它的原理就像一个智能的开箱器，能安全地打开这些文档“容器”，识别出里面的所有图片，并把它们一张张完整地、高质量地复原出来，而不是简单地截取屏幕。
-  </p>
-
-  <div class="my-8 p-6 bg-slate-100 rounded-lg">
-    <h3 class="text-xl font-bold mb-3">一个好用的工具应该具备什么？</h3>
-    <ul class="space-y-3">
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">1</span>
-        <span><strong>支持常见格式</strong>：至少能处理PDF、Word、Excel、PPT这几种大家最常用的文件。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">2</span>
-        <span><strong>操作简单直观</strong>：不需要复杂的设置，拖入文件，点击按钮就能完成。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">3</span>
-        <span><strong>保护你的隐私</strong>：所有操作最好在你的电脑本地完成，文件不需要上传到陌生服务器，这样最让人放心。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">4</span>
-        <span><strong>方便管理结果</strong>：提取出来的图片能一张张预览，还能打包成一个文件夹下载，方便整理。</span>
-      </li>
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">我们什么时候需要用它？</h2>
+    <p class="mb-4">
+      其实，生活和工作中有很多需要多角度对比的场景，单靠感觉或者文字描述总是不够直观。
+    </p>
+    <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-600">
+      <li><strong>面试后比较候选人：</strong>A技术很强但沟通一般，B沟通出色但经验稍浅。怎么综合权衡？</li>
+      <li><strong>个人年度复盘：</strong>今年自己在“专业技能”、“团队协作”、“创新能力”上各进步了多少？</li>
+      <li><strong>产品功能对比：</strong>几款竞品在价格、性能、易用性、服务上分别表现如何？</li>
+      <li><strong>团队人员评估：</strong>为小组成员做一个能力画像，方便后续的培训和发展规划。</li>
     </ul>
-  </div>
 
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">具体怎么操作？</h2>
-  <p class="mb-4 leading-relaxed">
-    整个过程非常简单，比你想象的要容易得多：
-  </p>
-  <ol class="list-decimal pl-5 space-y-4 mb-8">
-    <li class="pl-2"><strong>找到工具</strong>：在浏览器里打开一个具备上述功能的网页工具。</li>
-    <li class="pl-2"><strong>添加文档</strong>：点击“添加”区域，或者直接把你的PDF、Word等文件拖进去。可以一次处理多个文件。</li>
-    <li class="pl-2"><strong>等待提取</strong>：工具会自动开始工作，你可能会看到一个简单的进度提示。</li>
-    <li class="pl-2"><strong>保存图片</strong>：完成后，所有图片会以缩略图形式展示。你可以点击单张图片放大查看，也可以一键将所有图片打包下载到电脑里。</li>
-  </ol>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">我需要担心安全问题吗？</h2>
-  <p class="mb-6 leading-relaxed">
-    这是很多人最关心的一点。如果工具明确说明“所有操作在本地浏览器完成”，那就意味着你的文档文件从来没有离开过你的电脑。整个处理过程就像你用电脑自带的计算器算数一样，是离线进行的，因此不必担心文档内容被上传或泄露。
-  </p>
-
-  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">这可以用来做什么？</h2>
-  <div class="grid sm:grid-cols-2 gap-4 mb-10">
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">整理素材库</h4>
-      <p class="text-sm text-slate-600">从下载的行业报告、产品手册里提取高质量的配图，建立自己的素材库。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">制作新内容</h4>
-      <p class="text-sm text-slate-600">想用之前方案PPT里的某张图表做新资料？直接提取原图，比截图清晰多了。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">保存重要资料</h4>
-      <p class="text-sm text-slate-600">合同、证明文件里的印章或签名图片，可以单独提取出来妥善保存。</p>
-    </div>
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h4 class="font-bold mb-2">学习与参考</h4>
-      <p class="text-sm text-slate-600">看到别人文档里优秀的流程图、信息图，提取出来方便自己学习和借鉴排版。</p>
-    </div>
-  </div>
-
-  <div class="border-t border-slate-200 pt-8 mt-8">
-    <h2 class="text-2xl font-bold mb-4">写在最后</h2>
-    <p class="leading-relaxed">
-      从文档中提取图片，并不是什么高深的技术。它只是一个能帮你提高效率、获得更好效果的小技巧。关键在于找到一个<b>操作简单、注重隐私、支持格式广</b>的工具。下次再遇到心仪的文档图片时，不妨试试这个方法，告别模糊的截图，轻松获得高清原图。
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">工具怎么用？三步搞定</h2>
+    <p class="mb-6">
+      操作非常简单，就像填一张灵活的表格，结果会自动用图形展示出来。
     </p>
-  </div>
+
+    <div class="space-y-8 mb-10">
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第一步：定下比较的方面</h3>
+        <p class="text-slate-600 mb-3">
+          你想从哪些维度来评价？这些方面完全由你决定。工具默认给了“专业技术”、“沟通协作”等几个常见选项，你可以直接修改它们，或者点击“添加评估维度”来增加新的方面，比如“成本控制”、“市场潜力”等等。
+        </p>
+        <p class="text-slate-500 text-sm">
+          提示：建议方面不要太多，5-8个最能突出重点，也方便查看。
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第二步：添加要对比的对象并打分</h3>
+        <p class="text-slate-600 mb-3">
+          接下来，把你要比较的人、产品、方案添加进来。给每个对象起个名字，比如“张三”、“产品A”、“方案一”。然后，在刚才设定的每一个方面下，为这个对象打一个分数（0-100分）。
+        </p>
+        <p class="text-slate-600">
+          你可以随时增加新的对比对象，或者删除已有的对象。所有数据填写后，系统会实时处理。
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl font-medium text-slate-800 mb-3">第三步：查看雷达图，获得洞察</h3>
+        <p class="text-slate-600 mb-3">
+          右侧会自动生成一张彩色的雷达图。图中每一个“角”代表一个评估方面，而不同颜色的多边形则代表不同的对比对象。面积越大、越靠外的部分，代表在该方面的能力或分数越强。
+        </p>
+        <p class="text-slate-600 mb-3">
+          通过这张图，你可以轻松回答这些问题：
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2 text-slate-600">
+          <li>谁的能力发展最均衡？</li>
+          <li>谁在某个特定方面特别突出？</li>
+          <li>各个对象的短板分别在哪里？</li>
+        </ul>
+        <p class="text-slate-600">
+          如果结论需要分享给同事或用于报告，点击“导出结果图片”按钮，就能将这张清晰的雷达图保存到电脑里。
+        </p>
+      </section>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pt-6 border-t border-slate-200">为什么图形对比更有效？</h2>
+    <p class="mb-4 text-slate-600">
+      人脑处理图像信息的速度远快于处理文字和数字。面对一堆分数，我们需要反复思考和记忆才能得出结论。而一张雷达图，瞬间就能呈现出“整体轮廓”和“局部差异”。
+    </p>
+    <p class="mb-8 text-slate-600">
+      它把抽象的、多维度的比较，转化成了具体的形状和面积。在进行团队讨论、个人复盘或决策时，这种视觉化的呈现方式能让所有人快速聚焦，达成共识。
+    </p>
+
+    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mt-12">
+      <h3 class="text-xl font-medium text-slate-800 mb-3">开始你的第一次综合评估吧</h3>
+      <p class="text-slate-600 mb-4">
+        无论是为了更科学地做决策，还是为了更清晰地展示你的分析，这个免费的工具都能帮上忙。它不保存你的任何数据，所有操作都在你的浏览器中进行，简单、安全、私密。
+      </p>
+      <p class="text-slate-600">
+        下次当你面临选择困难，或者需要向别人解释一个复杂的对比结论时，不妨试着用它画一张图。你会发现，把事情“看清楚”，是解决问题最好的第一步。
+      </p>
+    </div>
+  </article>
 </div>
-`;export{l as default};
+`;export{t as default};

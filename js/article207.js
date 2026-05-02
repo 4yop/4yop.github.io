@@ -1,62 +1,97 @@
-const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">世界时钟在线工具：一眼看懂全球时间</h1>
-  <p class="text-lg mb-8 text-gray-600 text-center">和国外亲友约时间、安排跨国会议、或者单纯好奇地球另一端现在是白天还是黑夜？这个免费的小工具都能帮你。</p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="font-medium text-blue-800">简单说明：这是一个完全在网页上运行的“世界时钟”，你可以用它查看全球主要城市（如北京、伦敦、纽约）的当前时间，也可以手动调整时区，直观地看到时间变化。</p>
+const d=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4 text-center">八字是什么？如何从出生日期算出你的生辰八字？</h1>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="text-lg mb-4">很多朋友都听说过“八字”，但可能不太清楚它到底是什么，又该怎么算。其实，八字并不神秘，它就像你出生时刻的一张“人生地图”，由年、月、日、时四个时间点组成，每个时间点用一个天干和一个地支表示，一共八个字，所以叫“八字”。</p>
+    <p class="text-lg">今天我们就用通俗易懂的方式，聊聊八字的基础知识，并介绍一个简单好用的八字转换器，让你轻松算出自己的八字命盘。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么我们需要关注世界时间？</h2>
-  <p class="mb-4">我们的生活越来越全球化。也许你的孩子在海外留学，你正在计划一次跨国旅行，或者你的工作需要与不同国家的同事协作。了解时差，是顺畅沟通的第一步。</p>
-  <p class="mb-6">直接心算“北京下午3点，纽约是几点？”，对很多人来说并不容易。有一个可视化的工具会方便得多。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">这个时钟工具能帮你做什么？</h2>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><span class="font-medium">查看任一城市时间</span>：从下拉菜单里选择一个著名城市（如东京、悉尼、柏林），表盘和数字时间会立刻切换为该地时间。</li>
-    <li><span class="font-medium">直观的指针时钟</span>：就像你墙上的挂钟一样，通过时针、分针、秒针的位置，一眼就能大致判断时间。</li>
-    <li><span class="font-medium">精准的数字时间</span>：旁边会同步显示精确到分钟的数字时间，确保无误。</li>
-    <li><span class="font-medium">自由探索时区</span>：你可以用底部的滑块，从UTC-12（最西边）滑到UTC+12（最东边），亲眼看看时间如何随着“经度”变化。</li>
-    <li><span class="font-medium">全屏显示模式</span>：点击全屏按钮即可将时钟切换至全屏模式，字体放大、背景优化，非常适合演讲汇报、会议展示、课堂演示等场合使用。按 ESC 键可随时退出全屏。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">时区小知识：世界是如何统一时间的？</h2>
-  <p class="mb-4">地球是圆的，并且自西向东自转，这就导致了不同地方迎接太阳的时间不同。为了统一标准，人们将地球划分为24个时区。</p>
-  <p class="mb-4"><span class="font-medium">什么是UTC？</span>你可以把它理解为世界时间的“原点”或“基准线”，位于英国伦敦的格林尼治天文台。其他地区的时间都用“UTC+数字”或“UTC-数字”来表示比这个基准快或慢多少小时。</p>
-  <p class="mb-6">例如，<span class="font-medium">北京时间是UTC+8</span>，意思就是比世界标准时间快8个小时。当UTC是午夜0点时，北京已经是早上8点了。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">实用场景举例</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-8">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景一：计划国际旅行</h3>
-      <p>飞往美国洛杉矶前，把时钟调到“洛杉矶”（UTC-8），了解一下当地的昼夜时间，有助于提前规划行程和调整生物钟。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景二：安排跨国视频会议</h3>
-      <p>需要和欧洲的团队开会。把时钟调到“柏林”（UTC+1），看看他们那边的上班时间，再结合你的时间，就能找到一个大家都合适的时间段。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景三：联系海外亲友</h3>
-      <p>想给在澳大利亚留学的孩子打个电话。先看看“悉尼”（UTC+10）的时间，避免在对方的深夜或凌晨吵醒他们。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景四：学习地理知识</h3>
-      <p>对孩子来说，滑动滑块，看着时钟指针飞快转动，是理解"时差"和"地球自转"最生动的方式。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景五：演讲与会议展示</h3>
-      <p>在进行工作汇报、产品演示或公开演讲时，将时钟全屏显示在屏幕上，让观众能够清晰地看到时间进度，帮助控制节奏，提升专业度。</p>
-    </div>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">一、八字的组成：天干和地支</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">八字的基础是“天干”和“地支”。天干有十个：甲、乙、丙、丁、戊、己、庚、辛、壬、癸。地支有十二个：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥。</p>
+    <p class="mb-3">古人把天干和地支搭配起来，形成六十个不同的组合，用来记录年、月、日、时。比如今年是2024年，就是“甲辰”年；现在是农历八月，就是“癸酉”月；今天是某一天，可能是“丙寅”日；现在的时间如果是晚上9点，就是“亥”时，配上日干推出时干，就得到了时辰的干支。</p>
+    <p class="mb-3">所以，你的八字就是由年柱、月柱、日柱、时柱这四柱的干支组成的八个字。比如一个人出生在公历1995年12月26日晚上11点，他的八字可能就是“乙亥 戊子 戊子 甲子”。</p>
   </div>
 
-  <div class="mt-12 p-6 bg-gray-100 rounded-lg">
-    <h3 class="text-xl font-semibold mb-3">总结一下</h3>
-    <p class="mb-4">无论你是频繁出差的商务人士、有亲友在海外的普通人，还是对世界充满好奇的探索者，一个清晰、易用的世界时钟都是你的好帮手。</p>
-    <p>它把抽象的时差概念，变成了看得见的指针转动和数字跳动。希望这个工具能让你在连接世界时，多一份从容，少一点计算的烦恼。</p>
-    <p class="mt-4 text-gray-700"><strong>小提示：</strong> 工具会根据你设备的时间自动初始化，显示你所在的本地时间。所有操作都在你的设备上完成，无需担心隐私问题。</p>
-    <p class="mt-3 text-gray-700">特别值得一提的是，<span class="font-medium">全屏显示功能</span>让这个工具不仅适合个人使用，也能在团队协作和公开场合发挥重要作用。</p>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">二、怎么算出自己的八字？</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">要得到准确的八字，需要知道准确的出生年月日时，并且要注意两个关键点：</p>
+    <ul class="list-disc pl-6 mb-3 space-y-2">
+      <li><strong>公历还是农历？</strong> 八字用的是干支历，它和公历、农历都有关系。你可以选择用公历生日，也可以直接用农历生日，但工具会自动转换到正确的干支。</li>
+      <li><strong>年份分界是立春，不是春节。</strong> 比如有人出生在2024年2月3日，虽然还没过春节（2024年春节是2月10日），但在干支历上已经进入“甲辰”年了，因为2月4日立春。所以不能简单按正月初一来换年柱。</li>
+      <li><strong>月份分界是节气，不是初一。</strong> 每个月的开始是一个节气，比如立春是寅月的开始，惊蛰是卯月的开始。所以哪怕农历已经二月，如果还没到惊蛰，还是寅月。</li>
+      <li><strong>时辰的早晚子时。</strong> 晚上23点到凌晨1点是子时，但23点到24点是“晚子时”，属于今天的日柱，时柱却要用明天的日干来推。这个细节容易出错，专业的工具会处理好。</li>
+    </ul>
+    <p>所以，手动计算八字很繁琐，容易出错。最好的办法是用一个靠谱的八字转换器，输入出生信息，一键就能得到完整的八字命盘。</p>
   </div>
 
-  <p class="text-center text-gray-500 text-sm mt-12 pt-6 border-t">最后更新：2023年10月 | 工具免费使用，无需下载</p>
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">三、八字转换器能给你什么信息？</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">一个完整的八字转换器，不只是给你八个字，还会提供很多辅助信息，帮助你更好地理解自己的命盘：</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">八字</h3>
+        <p>四柱的干支组合，比如“甲子 乙丑 丙寅 丁卯”。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">天干、地支</h3>
+        <p>分别列出四柱的天干和地支，方便查看。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">藏干</h3>
+        <p>每个地支里还藏着天干，代表内在的能量。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">五行</h3>
+        <p>每个干支对应的五行属性（金木水火土）。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">纳音</h3>
+        <p>每个干支组合还对应一种“纳音五行”，比如海中金、炉中火等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">十神</h3>
+        <p>以日干（代表自己）为基础，与其他天干地支的关系，比如正官、偏财、食神等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">胎元、命宫、身宫</h3>
+        <p>从八字推衍出的几个重要宫位。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">地势（长生十二神）</h3>
+        <p>每个天干在地支的状态，如长生、沐浴、冠带等。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">空亡</h3>
+        <p>某些干支组合中，会有“空亡”的星煞。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">起运时间</h3>
+        <p>根据出生时间计算的开始行大运的年龄和具体时间。</p>
+      </div>
+      <div class="p-3 bg-amber-50 rounded-lg">
+        <h3 class="font-medium text-red-700">大运</h3>
+        <p>列出人生各个阶段的大运干支和起运年份、年龄。</p>
+      </div>
+    </div>
+    <p>有了这些信息，你就可以进一步了解自己的性格、运势走向，或者作为研究传统文化的参考。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-red-700 mt-8 mb-4 pb-2 border-b border-amber-200">四、使用八字转换器的注意事项</h2>
+  <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 mb-8 border border-amber-200">
+    <p class="mb-3">一个好的八字转换器，必须严格遵循传统规则：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>年柱以立春为界</strong>，而不是正月初一。</li>
+      <li><strong>月柱以节气为界</strong>，确保每个月的干支正确。</li>
+      <li><strong>日柱和时柱</strong>要正确处理早晚子时。一般有两种流派，最常用的是“晚子时日柱算当天，时柱算明天”，工具会明确说明。</li>
+    </ul>
+    <p class="mt-3">我们的八字转换器完全按照这些规则设计，你只需选择公历或农历，输入出生日期和时间，点击按钮，就能得到准确的八字命盘。所有信息都以中文清晰呈现，方便阅读。</p>
+  </div>
+
+  <div class="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-xl p-6 sm:p-8 text-center border border-amber-300">
+    <h2 class="text-2xl font-semibold text-red-700 mb-4">现在就来试试吧</h2>
+    <p class="text-lg mb-4">打开八字转换器，输入你的出生信息，看看自己的八字命盘里藏着哪些有趣的奥秘。无论是了解自己，还是学习传统文化，这都是一个简单而可靠的起点。</p>
+    <p class="text-md text-amber-800">工具完全免费，无需注册，一键转换。</p>
+  </div>
 </div>
-`;export{s as default};
+`;export{d as default};

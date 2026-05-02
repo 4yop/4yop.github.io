@@ -1,71 +1,75 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
+<div class="max-w-4xl mx-auto p-4 md:p-8 bg-white text-slate-800 font-sans">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为分组发愁？试试这个简单又公平的分组方法</h1>
+  <p class="text-slate-600 mb-8 text-lg">无论是公司团建、学校活动，还是朋友聚会，只要涉及到分组，总是让人头疼。怎么分才能又快又好？今天就来聊聊这件事。</p>
 
-  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">分组为什么总让人纠结？</h2>
+  <p class="mb-4">相信很多人都有过类似的经历：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-700">
+    <li><strong>怕不公平</strong>：总觉得某个组实力太强，另一个组又太弱，比赛还没开始就失去了悬念。</li>
+    <li><strong>效率低下</strong>：大家围在一起，你一言我一语，半天也定不下名单，浪费宝贵时间。</li>
+    <li><strong>人情难顾</strong>：好朋友想分在一起，但又怕别人说不公平；想把经常合作的同事分开，又不知如何开口。</li>
+    <li><strong>考虑不周</strong>：只想着按人数分，却忘了考虑男女比例，导致有的组全是男生，活动效果大打折扣。</li>
+  </ul>
+  <p class="mb-8 text-slate-600">这些烦恼，归根结底是因为我们用了“凭感觉”的手工分组法。要解决它，我们需要一点更科学的思路。</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
-    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
-    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
-    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
-    <ul class="list-disc pl-6 space-y-2 mb-4">
-      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
-      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
-      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
-      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
-    </ul>
-    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
-    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
-    <ol class="list-decimal pl-6 space-y-3 mb-6">
-      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
-      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
-      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
-    </ol>
-    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
-    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
-      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
-      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
-      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
-    </ul>
-  </section>
-
-  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
-        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
-        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
-        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
-      </div>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">什么是好的分组方法？</h2>
+  <p class="mb-4">一个好的分组方法，至少要满足下面三个条件：</p>
+  <div class="grid md:grid-cols-3 gap-4 mb-8">
+    <div class="bg-blue-50 p-5 border border-blue-100">
+      <h3 class="font-bold text-blue-800 mb-2">结果公平</h3>
+      <p class="text-sm text-slate-700">不是绝对的平等，而是让每个人都有机会，每个组都有希望，过程透明，大家心服口服。</p>
     </div>
-  </section>
+    <div class="bg-green-50 p-5 border border-green-100">
+      <h3 class="font-bold text-green-800 mb-2">快速省时</h3>
+      <p class="text-sm text-slate-700">把繁琐的讨论和调整交给方法，几分钟内出结果，把时间留给真正的活动和交流。</p>
+    </div>
+    <div class="bg-amber-50 p-5 border border-amber-100">
+      <h3 class="font-bold text-amber-800 mb-2">灵活可控</h3>
+      <p class="text-sm text-slate-700">可以根据活动的不同需求，调整分组的规则，而不是只能“一刀切”。</p>
+    </div>
+  </div>
 
-  <section class="text-center py-8 border-t">
-    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
-    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
-    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
-  </section>
-</article>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">几种常见又实用的分组思路</h2>
+  <p class="mb-6">了解了目标，我们可以看看有哪些具体的方法能帮到我们：</p>
+
+  <div class="space-y-6 mb-10">
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h3 class="text-xl font-semibold mb-3 text-blue-700">1. 随机分组：最基础的公平</h3>
+      <p class="mb-3">就像抽签一样，把所有人的名字打乱，然后按顺序分到各个组里。这是最简单粗暴，但也最不容易引发争议的方法。适合对小组构成没有特殊要求的娱乐活动。</p>
+      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：破冰游戏、抽奖、简单的小任务分配。</p>
+    </div>
+
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h3 class="text-xl font-semibold mb-3 text-green-700">2. 均衡性别分组：让小组更有活力</h3>
+      <p class="mb-3">俗话说“男女搭配，干活不累”。均衡性别分组，就是把男生和女生先分开，然后像发牌一样，轮流分到每个组，确保每个组的男女比例都差不多。这样能促进交流，让小组氛围更融洽。</p>
+      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：团队拓展、项目小组、学习讨论班、联谊活动。</p>
+    </div>
+
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h3 class="text-xl font-semibold mb-3 text-amber-700">3. 避开特定组合：巧妙的“人情”处理</h3>
+      <p class="mb-3">有时候，我们需要把两个经常合作的人分开，以促进新的碰撞；或者把两个有矛盾的同学暂时分开，保证活动顺利进行。这个功能可以指定“谁和谁最好不要在一组”，系统会优先考虑这个要求。</p>
+      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：教学分组（避免总是一组的同学）、需要创新思维的头脑风暴、调解型团队活动。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">如何选择分组方式？一个简单的决策图</h2>
+  <p class="mb-6">面对不同的活动，你可以这样思考：</p>
+  <div class="bg-slate-50 p-6 rounded-xl mb-10 border border-slate-300">
+    <p class="mb-4 font-medium">首先问自己：<span class="text-blue-700">“这次分组，最重要的是什么？”</span></p>
+    <ul class="space-y-3 text-slate-700">
+      <li>▶ 如果答案是 <strong>“绝对公平，省去一切解释”</strong>，那就选 <span class="font-semibold">完全随机</span>。</li>
+      <li>▶ 如果答案是 <strong>“希望小组内部能更好地协作交流”</strong>，那就选 <span class="font-semibold">均衡性别</span>。</li>
+      <li>▶ 如果答案是 <strong>“有几个特殊情况需要特别处理”</strong>，那就选 <span class="font-semibold">避开特定组合</span>。</li>
+    </ul>
+    <p class="mt-6 text-slate-600 text-sm">想清楚核心目的，选择就变得简单了。</p>
+  </div>
+
+  <div class="p-6 md:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl mt-12">
+    <h2 class="text-2xl font-bold mb-4 text-slate-800">告别分组烦恼，让事情更简单</h2>
+    <p class="mb-4">一个好的开始是成功的一半。分组看似是小事，却直接影响着后续活动的氛围和效率。</p>
+    <p class="mb-6">无论是想随机抽签图个乐子，还是希望科学搭配提升团队效能，亦或是要巧妙处理一些人际关系，总有一种分组思路适合你。下次再遇到需要分组的情况，不妨试试这些方法。</p>
+    <p class="font-medium text-slate-800">把纠结的时间省下来，去享受活动本身带来的快乐吧。</p>
+  </div>
+</div>
 `;export{s as default};

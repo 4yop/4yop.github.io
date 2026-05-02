@@ -1,82 +1,102 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 py-6 text-gray-700 leading-relaxed">
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">信用卡分期怎么算？看完这篇自己就能算清楚</h1>
 
-  <!-- 主标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">数学步骤计算器：让复杂表达式一步步变简单，告别计算烦恼</h1>
-
-  <!-- 引言段落 -->
-  <p class="text-lg mb-6">
-    小时候做数学题，最怕的不是算不出结果，而是不知道中间过程哪里错了。工作后遇到带括号、乘方、三角函数的混合算式，总想有个人能一步一步拆给我们看。现在，这个“数学步骤计算器”就像一位耐心的数学老师，你输入一个算式，它就把每一步怎么算的都列出来，清清楚楚。
+  <p class="text-lg mb-4">
+    信用卡账单来了，金额有点大，想分期还？但每次看到“手续费率0.6%”这种数字，心里总犯嘀咕：这到底要多还多少钱？每期还多少？别急，今天咱们就用人人都能懂的大白话，把信用卡分期这件事掰扯明白。你甚至可以拿着手机自己算，再也不怕被绕晕。
   </p>
 
-  <!-- 小标题：它有什么用？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">它有什么用？不只是给答案，更给过程</h2>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <p class="text-sm text-blue-800">
+      小提醒：文末有分期计算小工具，不用记公式，填数字就能出结果，建议先收藏。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">1. 信用卡分期，到底在分什么？</h2>
   <p class="mb-4">
-    普通计算器只给你一个冷冰冰的数字，错了你都不知道哪一步出了问题。而这个计算器的特别之处在于，它会像你手算一样，先算括号里的，再算乘方，然后乘除，最后加减——每一层都展开给你看。比如输入 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)+(2+3)*4^2/2</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">sqrt(16)=4</code>，再算 <code class="bg-gray-100 px-1 py-0.5 rounded">(2+3)=5</code>，然后一步步得出最终结果。整个过程都在右侧的“计算步骤”区显示，你可以一边看一边对照自己的思路。
+    简单说，信用卡分期就是你把一笔消费金额，分成几个月还给银行。比如这个月花了12000元，手头紧，就可以申请分12期，接下来12个月每个月还一部分。银行不是免费帮你分期的，它会收一笔钱，叫“手续费”。这笔手续费是按你分期的总额乘以一个百分比算出来的。
+  </p>
+  <p class="mb-4">
+    手续费率通常用“每期费率”来表示，比如0.6%/期，意思就是每一期要额外付本金的0.6%作为手续费。
   </p>
 
-  <!-- 小标题：支持哪些运算？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">加减乘除、平方根、三角函数……它都会</h2>
-  <p class="mb-4">
-    除了最基础的加减乘除（+ - * /）和乘方（^），它还支持很多常用数学函数：
-  </p>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">2. 分期手续费和每期还款，其实就这三个数</h2>
+  <p class="mb-2">搞懂信用卡分期计算，你只需要关注三个数字：</p>
   <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><strong>平方根</strong>：sqrt(9)  → 3</li>
-    <li><strong>三角函数</strong>：sin, cos, tan 以及它们的反函数 asin, acos, atan</li>
-    <li><strong>对数</strong>：log（以10为底）、ln（自然对数）、exp（e的次方）</li>
-    <li><strong>绝对值</strong>：abs(-5) → 5</li>
+    <li><span class="font-medium">分期本金</span>：你打算分期的总金额（比如10000元）。</li>
+    <li><span class="font-medium">分期期数</span>：分多少个月还（比如3期、6期、12期）。</li>
+    <li><span class="font-medium">每期手续费率</span>：银行收的手续费比例（比如0.6%）。</li>
   </ul>
   <p class="mb-4">
-    不论你是中学生做函数题，还是工程师验算数据，这些功能都够用。而且它完全免费，打开网页就能用，不用下载任何软件。
+    有了这三个数，下面这些结果自己都能算：
   </p>
-
-  <!-- 小标题：为什么需要看到每一步？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">看到每一步，才能真的理解数学</h2>
-  <p class="mb-4">
-    很多朋友用计算器只是求个结果，但遇到复杂算式时，运算顺序（先乘除后加减、括号优先）往往容易搞混。这个计算器把每一步都展示出来，等于帮你复习了一遍运算法则。比如 <code class="bg-gray-100 px-1 py-0.5 rounded">2+3×4</code>，它会先算 <code class="bg-gray-100 px-1 py-0.5 rounded">3×4=12</code>，再加2得14，而不是从左到右傻算。如果你不小心写错了括号，它还会提示语法错误，让你及时修改。
-  </p>
-
-  <!-- 小标题：适合哪些人用？ -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">谁最需要这个计算器？</h2>
-  <ul class="list-disc pl-6 mb-4 space-y-1">
-    <li><strong>学生党</strong>：做作业时检查过程，或者遇到不会算的式子，看步骤学习。</li>
-    <li><strong>家长</strong>：辅导孩子数学，自己先验算一遍，确保讲得对。</li>
-    <li><strong>老师</strong>：出题后快速验证步骤，省去手算时间。</li>
-    <li><strong>上班族</strong>：财务、工程、数据分析中遇到复杂公式，不再头疼。</li>
-    <li><strong>考研/备考族</strong>：复习基础运算，巩固计算能力。</li>
+  <ul class="list-disc pl-6 mb-6 space-y-1">
+    <li><span class="font-medium">每期手续费</span> = 分期本金 × 每期手续费率 ÷ 100（如果费率是0.6，直接乘0.006）</li>
+    <li><span class="font-medium">每期应还本金</span> = 分期本金 ÷ 分期期数</li>
+    <li><span class="font-medium">每期还款总额</span> = 每期手续费 + 每期应还本金</li>
+    <li><span class="font-medium">总手续费</span> = 每期手续费 × 分期期数</li>
+    <li><span class="font-medium">总还款额</span> = 分期本金 + 总手续费</li>
   </ul>
 
-  <!-- 小标题：怎么用？简单三步 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？简单三步</h2>
-  <ol class="list-decimal pl-6 mb-6 space-y-2">
-    <li>在输入框里写下你的数学表达式，比如 <code class="bg-gray-100 px-1 py-0.5 rounded">(5+3)/2^3</code>。</li>
-    <li>点击蓝色的“计算”按钮（或者直接按回车）。</li>
-    <li>右侧立刻显示一步步的计算过程，最下面还有最终结果。</li>
-  </ol>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. 举个真实的例子，一看就懂</h2>
+  <p class="mb-2">假设你上个月消费了10000元，申请分12期还，银行给的每期手续费率是0.6%。我们来一步步算：</p>
+  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+    <p class="mb-1">• 每期手续费 = 10000 × 0.6% = 60元</p>
+    <p class="mb-1">• 每期应还本金 = 10000 ÷ 12 ≈ 833.33元</p>
+    <p class="mb-1">• 每期还款总额 = 60 + 833.33 = 893.33元</p>
+    <p class="mb-1">• 总手续费 = 60 × 12 = 720元</p>
+    <p class="mb-1">• 总还款额 = 10000 + 720 = 10720元</p>
+  </div>
   <p class="mb-4">
-    如果你想保存结果或步骤，可以点“复制数值”只复制最终数字，或者点“复制全部（结果+步骤）”把整个计算过程复制下来，方便贴在作业或报告里。
+    也就是说，你分12期总共要多还720元，每个月还893.33元。是不是很清楚？
   </p>
 
-  <!-- 小标题：常见问题 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">你可能想问</h2>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. 分期期数怎么选更划算？</h2>
+  <p class="mb-4">
+    银行通常提供3期、6期、12期、24期等选项。期数越短，总手续费越少，但每月还款压力大；期数越长，总手续费越多，但每月还款轻松。比如上面例子，如果分6期，假设费率也是0.6%，总手续费就是10000×0.6%×6=360元，比12期省了一半，但每月要还(10000÷6+60)≈1726.67元。
+  </p>
+  <p class="mb-4">
+    所以选期数要看自己当下的现金流：如果未来几个月收入稳定，选短期的更省钱；如果确实手头紧，选长期分摊压力。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">5. 注意两个容易忽略的“坑”</h2>
+  <p class="mb-2 font-medium">① 手续费率 ≠ 真实年利率</p>
+  <p class="mb-3">
+    银行给你看的0.6%是每期费率，如果简单乘以12得到7.2%，听起来不高。但实际上因为本金每月在减少，你占用的资金越来越少，真实年化利率大概是这个数字的两倍左右（用内部收益率IRR算会更准确）。所以分期消费前，可以问问自己：这笔钱如果用来投资，能赚回这个利率吗？
+  </p>
+  <p class="mb-2 font-medium">② 提前还款手续费怎么算？</p>
+  <p class="mb-4">
+    很多银行即使你提前还清，剩余期数的手续费也要照收，或者收一笔违约金。办理分期前最好问清楚条款，免得后来想提前还却发现不划算。
+  </p>
+
+  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-5 mt-6 mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">用分期计算器，省心不费脑</h3>
+    <p class="mb-3">
+      如果不想手动算，或者想试试不同金额、期数和费率的结果，可以用我们准备的这个小工具。输入本金、期数、手续费率，马上就能看到每期还多少、总手续费多少，清清楚楚，帮你做决策。
+    </p>
+    <p class="text-sm text-gray-600">
+      （本文介绍的信用卡分期计算器就是页面下方那个，所有结果都是实时计算，保留两位小数，供你参考。）
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">关于信用卡分期，你可能还想问</h2>
   <div class="space-y-4">
     <div>
-      <h3 class="font-medium text-gray-900">输入错误怎么办？</h3>
-      <p>输入框下面会有红色提示，告诉你哪里错了，比如括号不匹配、用了不支持的符号。修改正确后再点计算就行。</p>
+      <p class="font-medium">问：所有消费都能分期吗？</p>
+      <p>大部分普通消费都可以，但有些银行对特定交易（比如取现、临时额度）有限制，具体以账单为准。</p>
     </div>
     <div>
-      <h3 class="font-medium text-gray-900">可以计算很长的式子吗？</h3>
-      <p>当然可以，只要你的表达式合理，它都会耐心地一步步拆解。不过为了阅读方便，建议适当换行或用括号分组。</p>
+      <p class="font-medium">问：分期会影响信用记录吗？</p>
+      <p>按时还款不仅不会影响，反而有助于积累良好信用。但如果逾期，后果也很严重。</p>
     </div>
     <div>
-      <h3 class="font-medium text-gray-900">手机上好用吗？</h3>
-      <p>完全适配手机，输入框和按钮在手机上会自动竖排，步骤区也在下方，字号都调整得刚刚好，手指点按也很方便。</p>
+      <p class="font-medium">问：手续费率有优惠吗？</p>
+      <p>银行经常有分期优惠活动，比如特定商户、新用户免息等，可以多留意App或客服通知。</p>
     </div>
   </div>
 
-  <!-- 结尾 -->
-  <p class="text-lg border-t pt-6 mt-8 text-gray-600">
-    数学不应该只有答案，还应该有清晰的过程。试试这个数学步骤计算器，让每一个算式都变得透明、可追溯。无论是学习还是工作，它都能成为你随身携带的“数学草稿纸”。
+  <p class="text-center text-gray-500 text-sm mt-10 pt-4 border-t border-gray-200">
+    希望这篇文章让你对信用卡分期心里有底。下次再看到分期选项，不妨先算一算，再做决定。
   </p>
 </div>
 `;export{s as default};

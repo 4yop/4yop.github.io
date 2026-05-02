@@ -1,48 +1,90 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
-  <!-- 标题 -->
-  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
-  
-  <!-- 引言 -->
-  <p class="mb-4 text-lg">
-    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
+<article class="max-w-3xl mx-auto px-4 md:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-6 text-gray-900">想知道一个IP地址在哪？这个免费工具能告诉你很多</h1>
+
+  <p class="text-lg text-gray-700 mb-6">
+    你可能经常听到“IP地址”这个词，尤其是在上网遇到问题的时候。它就像网络世界的“门牌号”，每一台上网的设备都有一个。你有没有好奇过，通过这个“门牌号”，能了解到哪些信息呢？
   </p>
 
-  <!-- 两个模式解决不同场景 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
-  <p class="mb-4">
-    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
-  </p>
-  <p class="mb-4">
-    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
-  </p>
-
-  <!-- 避免配对功能 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
-  <p class="mb-4">
-    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
-  </p>
-
-  <!-- 操作简单，三步完成 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
-  <p class="mb-4">
-    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
-  </p>
-
-  <!-- 导出与分享 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
-  <p class="mb-4">
-    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
-  </p>
-
-  <!-- 总结 -->
-  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
-    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
-  </p>
-
-  <!-- 底部小提示，符合原文风格 -->
-  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
-    * 工具完全免费，无需安装，打开网页就能用
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-7 rounded-r">
+    <h2 class="text-xl font-semibold mb-2 text-gray-800">这个小工具能帮你：</h2>
+    <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
+      <li>一键查询自己或他人的网络IP地址。</li>
+      <li>知道这个地址对应在哪个国家、哪个城市。</li>
+      <li>了解当地的时区、货币和语言。</li>
+      <li>快速测试一下自己到百度、GitHub的网络连接速度。</li>
+    </ul>
   </div>
-</div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">查IP，不仅仅是看个地址</h2>
+
+  <p class="mb-4">
+    当你输入一个IP地址进行查询后，得到的远不止“它在某地”这么简单。结果会像一张详细的信息卡片，让你对这个地址背后的网络世界有更清晰的认识。
+  </p>
+
+  <p class="mb-4">
+    首先，当然是它的<strong>地理位置</strong>。你能看到它属于哪个国家、哪个省份甚至哪个城市。如果这个地址在海外，你还能顺便知道那个国家的首都、人口和面积，算是一个小小的地理知识补充。
+  </p>
+
+  <p class="mb-4">
+    其次，是与生活相关的<strong>实用信息</strong>。比如当地的<strong>时区</strong>和<strong>时间偏移</strong>，这能帮你理解为什么你和海外朋友有时差；当地的<strong>官方货币和语言</strong>是什么，如果你要访问那里的网站或服务，这些信息或许有用。
+  </p>
+
+  <p class="mb-4">
+    最后，是<strong>网络本身的信息</strong>。比如这个IP地址属于哪家<strong>网络运营商或组织</strong>。有时候网络慢，可能就是这段网络线路的“管理人”不同导致的。
+  </p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">随手测测你的网速快不快</h2>
+
+  <p class="mb-4">
+    除了查地址信息，这个工具还有一个很实用的“网络诊断”功能。它能帮你快速测试当前网络连接到两个常用网站的延迟。
+  </p>
+
+  <p class="mb-4">
+    <strong>延迟</strong>，你可以简单理解为数据从你电脑跑到目标网站再回来的时间，单位是毫秒（ms）。这个数字<strong>越小越好</strong>。通常，看视频、打游戏的时候，延迟小会更流畅。
+  </p>
+
+  <p class="mb-4">
+    测试结果会用颜色清晰地标示出来：<span class="text-green-600 font-medium">绿色</span>代表速度很快，<span class="text-orange-500 font-medium">橙色</span>代表速度一般，<span class="text-red-600 font-medium">红色</span>则代表可能比较慢或连接不畅。点一下“开始测试”，几秒钟就能看到结果。
+  </p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pt-2 border-t border-gray-200 text-gray-900">常见问题与解答</h2>
+
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 我为什么要查IP地址？</h3>
+      <p class="text-gray-700">
+        有几个常见场景：比如你登录某个网站，发现提示“新设备登录，地址在XX”，你想确认这个地址对不对；或者你访问一个外国网站很慢，想看看它服务器大概在哪；又或者只是单纯对某个网络来源感到好奇。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 查到的地址准确吗？能精确定位到我家吗？</h3>
+      <p class="text-gray-700">
+        一般来说，IP地址定位到城市级别是比较常见的，大多数公开查询服务提供的也是这个级别的精度。<strong>它通常无法直接精确定位到具体的街道、门牌号或个人家庭住址</strong>。这主要是由IP地址分配机制决定的，也涉及个人隐私保护。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 查询会泄露我的隐私吗？</h3>
+      <p class="text-gray-700">
+        使用这个工具时，如果你查询的是自己的IP，那么这些信息（大致地理位置、网络运营商等）本身就可能被你所访问的网站获取。这个工具只是将这些信息更清晰地展示给你看。它不会记录和存储你的个人查询行为。
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 测试延迟时，为什么两个网站结果不同？</h3>
+      <p class="text-gray-700">
+        这非常正常。百度服务器主要在国内，而GitHub服务器主要在海外。连接到国内服务器的延迟自然会更低。这个对比能帮你判断，是你的整体网络有问题，还是仅仅访问国外网站比较慢。
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">总结一下</h2>
+    <p class="mb-3 text-gray-700">
+      这个网络信息查询工具，就像一个简单的“网络望远镜”。它把一串冰冷的数字（IP地址），转化成了你能看懂的国家、城市、时区、网络运营商等信息。
+    </p>
+    <p class="text-gray-700">
+      无论你是想验证登录信息，了解网站服务器位置，还是单纯满足好奇心，它都能提供一个快速、免费的参考。下次再遇到和网络地址相关的问题时，不妨试试用它来寻找答案。
+    </p>
+  </div>
+</article>
 `;export{t as default};

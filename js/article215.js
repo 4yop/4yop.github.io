@@ -1,95 +1,232 @@
-const a=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <!-- 主标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-    秒表：不只是计时，更是你效率与专注的搭档
-  </h1>
+const r=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">农历阳历转换工具：轻松查询传统与现代日期</h1>
 
-  <!-- 引言段 -->
-  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
-  </p>
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">你的农历生日是哪天？</p>
+    <p class="mt-2 mb-0">很多年轻人只记得自己的阳历生日，但长辈们更习惯用农历。农历阳历转换工具帮你轻松在这两种历法之间切换，无论是查询传统节日、安排生日庆祝，还是了解老黄历，都能快速搞定。</p>
+  </div>
 
-  <!-- 第一小节 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    一个秒表，为什么需要更“聪明”？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
-  </p>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
-  </p>
-
-  <!-- 第二小节 - 功能介绍 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    这个“时间伙伴”能为你做什么？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
-  </p>
-  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
-    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
-    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
-    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
-  </ul>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
-  </p>
-
-  <!-- 第三小节 - 问答形式 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    你可能想知道的问题
-  </h2>
-  <div class="space-y-6">
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
-      </p>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">为什么需要农历阳历转换？</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🎂 生日查询</h3>
+      <p class="text-sm text-gray-600">查询农历生日对应的阳历日期，或反之，不错过重要的生日庆祝。</p>
     </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        它的用途超乎你的想象：
-      </p>
-      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
-        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
-        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
-        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
-        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
-      </ul>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">🧧 传统节日</h3>
+      <p class="text-sm text-gray-600">春节、中秋、端午等传统节日都按农历计算，需要转换才能确定阳历日期。</p>
     </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        当然可以。假设你正在准备一顿周末大餐。
-      </p>
-      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
-        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
-        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
-        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
-      </ol>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">📅 择日办事</h3>
+      <p class="text-sm text-gray-600">搬家、结婚、开业等传统习俗需要参考农历黄道吉日。</p>
     </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
-      </p>
+    <div class="p-4 border border-gray-200 rounded-lg">
+      <h3 class="font-medium text-gray-800 mb-2">👴 长辈沟通</h3>
+      <p class="text-sm text-gray-600">方便与习惯使用农历的长辈交流日期，避免误解。</p>
     </div>
   </div>
 
-  <!-- 结尾引导 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
-    让时间变得清晰可见
-  </h2>
-  <p class="text-gray-700 mb-6 leading-relaxed">
-    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
-  </p>
-  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
-    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
-  </p>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历与阳历的区别</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">对比项</th>
+          <th class="border border-gray-300 p-3 text-left">阳历（公历）</th>
+          <th class="border border-gray-300 p-3 text-left">农历（阴历）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">起源</td>
+          <td class="border border-gray-300 p-3">西方，基于太阳运行</td>
+          <td class="border border-gray-300 p-3">中国传统，基于月相变化</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">月份天数</td>
+          <td class="border border-gray-300 p-3">固定（28-31天）</td>
+          <td class="border border-gray-300 p-3">不固定（29或30天）</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">年份天数</td>
+          <td class="border border-gray-300 p-3">365或366天</td>
+          <td class="border border-gray-300 p-3">353-355天（平年）或383-385天（闰年）</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">新年日期</td>
+          <td class="border border-gray-300 p-3">固定1月1日</td>
+          <td class="border border-gray-300 p-3">不固定（1月下旬至2月中旬）</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">使用场景</td>
+          <td class="border border-gray-300 p-3">国际通用、官方事务</td>
+          <td class="border border-gray-300 p-3">传统节日、民俗活动</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历的奥秘：闰月与节气</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
+      <h3 class="font-medium text-indigo-800 mb-2">什么是闰月？</h3>
+      <p class="text-indigo-700">农历采用"十九年七闰"的规则来协调太阳年和月亮月的关系。当某个月份没有中气（二十四节气中的偶数位节气）时，就设为闰月。闰月会导致该农历年有13个月，全年约384天。</p>
+    </div>
+    
+    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
+      <h3 class="font-medium text-green-800 mb-2">二十四节气</h3>
+      <p class="text-green-700">农历融合了二十四节气，这是中国古代农耕文明的智慧结晶。节气按照太阳在黄道上的位置划分，指导农事活动。如立春、清明、夏至、冬至等。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">2024-2025年主要传统节日对照</h2>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">节日</th>
+          <th class="border border-gray-300 p-3 text-left">农历日期</th>
+          <th class="border border-gray-300 p-3 text-left">2024年阳历</th>
+          <th class="border border-gray-300 p-3 text-left">2025年阳历</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">春节</td>
+          <td class="border border-gray-300 p-3">正月初一</td>
+          <td class="border border-gray-300 p-3">2月10日</td>
+          <td class="border border-gray-300 p-3">1月29日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">元宵节</td>
+          <td class="border border-gray-300 p-3">正月十五</td>
+          <td class="border border-gray-300 p-3">2月24日</td>
+          <td class="border border-gray-300 p-3">2月12日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">清明节</td>
+          <td class="border border-gray-300 p-3">（节气）</td>
+          <td class="border border-gray-300 p-3">4月4日</td>
+          <td class="border border-gray-300 p-3">4月4日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">端午节</td>
+          <td class="border border-gray-300 p-3">五月初五</td>
+          <td class="border border-gray-300 p-3">6月10日</td>
+          <td class="border border-gray-300 p-3">5月31日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">七夕节</td>
+          <td class="border border-gray-300 p-3">七月初七</td>
+          <td class="border border-gray-300 p-3">8月10日</td>
+          <td class="border border-gray-300 p-3">8月29日</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">中秋节</td>
+          <td class="border border-gray-300 p-3">八月十五</td>
+          <td class="border border-gray-300 p-3">9月17日</td>
+          <td class="border border-gray-300 p-3">10月6日</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">重阳节</td>
+          <td class="border border-gray-300 p-3">九月初九</td>
+          <td class="border border-gray-300 p-3">10月11日</td>
+          <td class="border border-gray-300 p-3">10月29日</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">生肖与干支纪年</h2>
+  
+  <p>农历使用干支纪年法，每60年一个周期。同时每年对应一个生肖，12年一轮回。</p>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+    <div class="p-3 bg-red-50 rounded text-center">
+      <div class="text-2xl">🐭</div>
+      <div class="text-sm font-medium">鼠年</div>
+      <div class="text-xs text-gray-500">2020, 2032</div>
+    </div>
+    <div class="p-3 bg-yellow-50 rounded text-center">
+      <div class="text-2xl">🐮</div>
+      <div class="text-sm font-medium">牛年</div>
+      <div class="text-xs text-gray-500">2021, 2033</div>
+    </div>
+    <div class="p-3 bg-blue-50 rounded text-center">
+      <div class="text-2xl">🐯</div>
+      <div class="text-sm font-medium">虎年</div>
+      <div class="text-xs text-gray-500">2022, 2034</div>
+    </div>
+    <div class="p-3 bg-green-50 rounded text-center">
+      <div class="text-2xl">🐰</div>
+      <div class="text-sm font-medium">兔年</div>
+      <div class="text-xs text-gray-500">2023, 2035</div>
+    </div>
+    <div class="p-3 bg-red-50 rounded text-center">
+      <div class="text-2xl">🐲</div>
+      <div class="text-sm font-medium">龙年</div>
+      <div class="text-xs text-gray-500">2024, 2036</div>
+    </div>
+    <div class="p-3 bg-yellow-50 rounded text-center">
+      <div class="text-2xl">🐍</div>
+      <div class="text-sm font-medium">蛇年</div>
+      <div class="text-xs text-gray-500">2025, 2037</div>
+    </div>
+    <div class="p-3 bg-blue-50 rounded text-center">
+      <div class="text-2xl">🐴</div>
+      <div class="text-sm font-medium">马年</div>
+      <div class="text-xs text-gray-500">2026, 2038</div>
+    </div>
+    <div class="p-3 bg-green-50 rounded text-center">
+      <div class="text-2xl">🐑</div>
+      <div class="text-sm font-medium">羊年</div>
+      <div class="text-xs text-gray-500">2027, 2039</div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：农历和阴历是一回事吗？</p>
+      <p class="text-gray-600">答：日常生活中常混用，但严格来说有区别。农历是阴阳合历，既考虑月相（阴历成分），又通过闰月协调太阳年（阳历成分）。而纯阴历只考虑月相。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：为什么农历新年每年日期不同？</p>
+      <p class="text-gray-600">答：农历新年（春节）是农历正月初一。由于农历一年约354天，比阳历少11天左右，所以农历日期每年在阳历中会"漂移"约11天。为了协调，农历采用闰月，使春节保持在阳历1月下旬至2月中旬之间。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：农历生日每年阳历日期都不一样吗？</p>
+      <p class="text-gray-600">答：是的。农历生日对应的阳历日期每年都会变化，通常比上一年晚约11天（遇闰月则变化不同）。如果想知道某年农历生日是阳历哪天，需要使用农历阳历转换工具查询。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：转换工具支持哪些年份范围？</p>
+      <p class="text-gray-600">答：大多数工具支持1900年至2100年左右的转换，覆盖日常需求。某些专业工具可能支持更宽的年份范围，甚至上溯到清朝时期。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">连接传统与现代</h2>
+  <p>农历承载着中华民族数千年的文化积淀，是传统节日、民俗活动的时间坐标。在现代社会，农历阳历转换工具成为连接传统与现代的重要桥梁，让我们既能享受现代生活的便利，又不遗忘传统文化的根脉。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">💡 使用建议：</p>
+    <ul class="text-green-800 space-y-1">
+      <li>• 提前查询传统节日的阳历日期，方便安排假期和活动</li>
+      <li>• 记录家人的农历生日，按传统方式庆祝</li>
+      <li>• 了解二十四节气，感受自然节律的变化</li>
+      <li>• 将转换工具加入收藏，随时查询</li>
+      <li>• 向外国朋友介绍中国农历文化时，用转换工具辅助说明</li>
+    </ul>
+  </div>
+  
+  <p class="mt-6 text-center text-gray-600">历法是人类丈量时间的标尺，农历与阳历各有其美。用好转换工具，让两种时间体系和谐共存。</p>
 </div>
-`;export{a as default};
+`;export{r as default};

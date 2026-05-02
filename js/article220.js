@@ -1,47 +1,59 @@
 const l=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">时间进度条：让时间流逝一目了然的可视化工具</h2>
 
-  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
+    <p class="text-lg mb-6">时间看不见摸不着，却无时无刻不在流逝。很多人常常感叹"时间都去哪了"，却很难对时间的消耗有一个直观的感受。时间进度条工具，正是为了解决这个问题而生——它将抽象的时间流逝转化为清晰的进度百分比，让你一眼就能看出今天过了多少、本周还剩多久、这个月已经消耗了几成、今年又走过了几分之几。</p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
-  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
-  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">什么是时间进度条？</h2>
+    <p class="mb-4">时间进度条是一种将时间流逝可视化的在线工具。它通过计算当前时间在日、周、月、年等不同时间维度中的占比，以进度条的形式直观展示时间消耗情况。每一条进度条都精确到秒，实时更新，让你对时间的感知不再模糊。</p>
+    <p class="mb-6">与传统的时钟或日历不同，时间进度条关注的不是"现在是几点"，而是"时间已经过了多少"。这种视角的转换，能帮助你建立更强的时间意识，从而更合理地安排和利用时间。</p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
-  <p class="mb-4">使用起来非常简单，只需要三步：</p>
-  <ol class="list-decimal pl-8 mb-6 space-y-3">
-    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
-    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
-    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
-  </ol>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">核心功能一览</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">今日进度：</span>实时展示当天已过时间的百分比，从0:00到24:00，精确到秒。让你清楚知道一天中还剩多少可用时间，合理安排当日计划。</li>
+      <li><span class="font-medium">本周进度：</span>以周一为起点、周日为终点，计算当前处于一周中的哪个位置。帮助你把握每周的工作节奏，避免周末才想起还有事情没做。</li>
+      <li><span class="font-medium">本月进度：</span>展示当月已过天数的占比，让你对月度目标的完成情况有一个时间维度的参照，及时调整节奏。</li>
+      <li><span class="font-medium">年度进度：</span>从1月1日到12月31日，直观呈现一年已经过去了多少。看到年度进度条飞速推进，往往能给人强烈的紧迫感，激励自己珍惜时间。</li>
+      <li><span class="font-medium">自定义时间：</span>支持设定任意起止日期，查看特定时间段内的进度。无论是项目周期、备考倒计时，还是等待某个重要日期，都可以自定义追踪。</li>
+    </ul>
 
-  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
-    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
-    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
-  </div>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">适用场景</h2>
+    <p class="mb-4">时间进度条的应用场景远比你想象的广泛：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">工作效率追踪：</span>打开今日进度条，看着时间一分一秒地流逝，能有效减少摸鱼和拖延。当进度条已经走到70%而你还有大量工作未完成时，紧迫感会自然产生，推动你更专注地投入工作。</li>
+      <li><span class="font-medium">学习进度管理：</span>考研、考公、考证的备考周期往往长达数月。用年度进度条或自定义进度条来追踪备考进度，能让你对剩余复习时间有清晰认知，合理分配各科目的学习精力。</li>
+      <li><span class="font-medium">项目管理与规划：</span>项目经理可以创建自定义进度条来追踪项目周期，团队成员随时可以看到项目时间消耗情况，避免后期赶工。月度进度条也适合做月度复盘，对照时间消耗和任务完成度。</li>
+      <li><span class="font-medium">个人时间感知：</span>很多人对时间的感知是迟钝的，总觉得"还有时间"，结果一拖再拖。时间进度条用直观的视觉反馈打破这种错觉，让你真切感受到时间的有限性，从而更加珍惜每一天。</li>
+    </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
-  <ul class="list-disc pl-8 mb-6 space-y-3">
-    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
-    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
-    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
-    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
-    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
-    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
-  </ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何使用时间进度条？</h2>
+    <p class="mb-4">操作非常简单，无需注册登录，打开即用：</p>
+    <ol class="list-decimal pl-6 mb-6 space-y-2">
+      <li>打开时间进度条工具页面，默认展示今日、本周、本月、年度四个维度的实时进度。</li>
+      <li>每条进度条都会显示已过百分比和剩余百分比，数据每秒自动更新。</li>
+      <li>如需查看特定时间段，切换到自定义模式，输入起止日期即可生成对应的进度条。</li>
+      <li>可以将页面保持打开状态，放在桌面一角，随时瞥一眼就能了解时间进度。</li>
+      <li>进度条支持动画效果，视觉体验流畅，让时间流逝的感知更加生动。</li>
+    </ol>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
-  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
-  <ul class="list-disc pl-8 mb-8 space-y-2">
-    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
-    <li>需要查找某个地区对应的官方行政编码时。</li>
-    <li>学习或了解中国行政区划的层级结构时。</li>
-    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
-  </ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">时间管理小技巧</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">设定每日锚点：</span>在今日进度条到达25%、50%、75%时各设一个检查点，快速回顾已完成和待完成的事项，及时调整节奏。</li>
+      <li><span class="font-medium">周维度规划：</span>每周一查看本周进度条归零重新开始，借此机会做周计划，把重要任务安排在精力最充沛的工作日。</li>
+      <li><span class="font-medium">月度复盘：</span>每月最后一天，对照月度进度条100%的时刻，回顾这个月的目标完成情况，总结经验，为下个月做更好的规划。</li>
+      <li><span class="font-medium">年度目标拆解：</span>看到年度进度条走到某个节点时，检查年度目标的完成进度是否匹配。如果年度已过半但目标完成不到一半，就需要加快节奏或调整目标。</li>
+      <li><span class="font-medium">善用自定义进度：</span>为重要的截止日期创建自定义进度条，比如项目交付日、考试日期、出行日期等，让倒计时可视化，提前做好准备。</li>
+      <li><span class="font-medium">避免时间焦虑：</span>时间进度条的目的是增强时间意识，而非制造焦虑。如果进度条让你感到压力过大，可以适当减少查看频率，把关注点放在"我还能做什么"而非"时间又少了"。</li>
+    </ul>
 
-  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
-    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
-  </div>
+    <div class="bg-blue-50 p-6 rounded-lg my-8">
+      <h3 class="text-xl font-semibold mb-3">温馨提示</h3>
+      <p class="mb-2">时间进度条是一个辅助工具，它能帮你看见时间的流逝，但真正决定时间价值的是你如何使用它。不要把进度条当成焦虑的来源，而应该把它当作提醒自己珍惜当下的朋友。</p>
+      <p>每个人的节奏不同，不必因为进度条走得快就慌张，也不必因为进度条走得慢就懈怠。找到适合自己的节奏，让每一秒都有意义，才是时间管理的真谛。</p>
+    </div>
+
+    <p class="text-lg mt-10 pt-6 border-t">无论你是想提高工作效率的学生、需要管理项目进度的职场人，还是单纯想对时间有更清晰感知的朋友，时间进度条都能给你一个直观的时间视角。打开工具，看着进度条缓缓推进，也许你会对"时间就是生命"这句话有更深的体会。珍惜当下，从看见时间开始。</p>
+  </article>
 </div>
 `;export{l as default};

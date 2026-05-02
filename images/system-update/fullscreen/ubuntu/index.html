@@ -16,9 +16,13 @@ body{background:#2c001e;width:100vw;height:100vh;display:flex;flex-direction:col
 <div class="ubu-logo">
 <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#dd4814"/><circle cx="16" cy="16" r="12" fill="#fff"/><circle cx="16" cy="16" r="4" fill="#dd4814"/><circle cx="9" cy="9" r="3" fill="#77216f"/><circle cx="23" cy="23" r="3" fill="#77216f"/><circle cx="24" cy="9" r="2" fill="#5E2750"/><circle cx="8" cy="23" r="2" fill="#5E2750"/></svg>
 </div>
-<div class="title">正在安装系统更新 — 请勿关闭电源</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">正在安装更新 (<span id="pct">0</span>%)</div>
+<div class="sub"><span id="subLabel"></span> (<span id="pct">0</span>%)</div>
 <div class="lines" id="lines"></div>
-<script>var n=0,pkgs=['linux-image-generic','libssl1.1','firefox','snapd','gnome-shell','systemd','apt','dpkg'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.6){var d=document.getElementById('lines');var t='Setting up '+pkgs[li%pkgs.length]+' ('+(Math.floor(Math.random()*900)+100)+'kB) ...';d.innerHTML+='<div>'+t+'</div>';li++;if(d.children.length>6)d.removeChild(d.firstChild)}},700)</script>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Installing system updates — Do not turn off the power':'正在安装系统更新 — 请勿关闭电源';
+document.getElementById('subLabel').textContent=lang==='en'?'Installing updates':'正在安装更新';
+document.title=lang==='en'?'Ubuntu Updating':'Ubuntu 更新中';
+var n=0,pkgs=['linux-image-generic','libssl1.1','firefox','snapd','gnome-shell','systemd','apt','dpkg'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.6){var d=document.getElementById('lines');var t='Setting up '+pkgs[li%pkgs.length]+' ('+(Math.floor(Math.random()*900)+100)+'kB) ...';d.innerHTML+='<div>'+t+'</div>';li++;if(d.children.length>6)d.removeChild(d.firstChild)}},700)</script>
 </body></html>

@@ -1,140 +1,116 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <!-- 主标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    不用安装软件，你的浏览器就是视频录制器和相机
-  </h1>
+const t=`
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 md:px-0">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-6">手机号码段生成器：轻松批量创建你需要的号码列表</h1>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否遇到过需要一批手机号来测试软件、挑选靓号或者策划活动，却不知道从哪里找？手动一个个编又太麻烦。今天，我们来介绍一个简单好用的小工具，它能帮你轻松解决这个问题。
+  </p>
 
-  <!-- 摘要/引言 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 mb-8 rounded-r">
-    <p class="text-gray-700 leading-relaxed">
-      想用电脑或手机的摄像头录一段视频、拍张照片，还得专门下载软件吗？其实不用那么麻烦。现在，只要你的设备有摄像头，打开一个网页就能轻松搞定录制和拍照。这就像打开手电筒一样简单。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold mb-2">这个工具是什么？</h2>
+    <p class="mb-0">
+      简单来说，它就是一个“号码组合器”。就像用积木搭房子，你可以指定号码固定的“开头”（前缀）和“结尾”（后缀），然后设定中间几位数字的变化范围，工具就能自动组合出所有可能的号码，并生成一个完整的列表给你。整个过程完全自动化，省时省力。
     </p>
   </div>
 
-  <!-- 主要功能介绍部分 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
-      一个网页，多种用途
-    </h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-      这个在线的录制工具就像一个放在浏览器里的多功能工作室，它能调用你设备上的摄像头和麦克风，完成视频和照片的创作。
-    </p>
+  <h2 class="text-2xl font-bold mt-10 mb-4">它到底能做什么？几个常见的使用场景</h2>
+  <p class="mb-6">
+    这个工具的核心是“批量生成”和“灵活定制”。它不是什么神秘的黑科技，而是为了解决一些日常中实实在在的麻烦事。下面这些情况，你可能也遇到过。
+  </p>
 
-    <!-- 功能卡片 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-        <div class="flex items-center mb-3">
-          <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800">高清视频录制</h3>
-        </div>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          一键开始录制视频，还可以选择是否录入声音。录制时会有明显的红色提示，让你清楚地知道正在工作中。录好的视频会立即生成预览，方便查看。
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：软件或系统测试</h3>
+      <p class="text-gray-700">
+        开发人员测试注册、登录、短信验证码功能时，常常需要大量不同的手机号来模拟真实用户。用真实的号码既不现实也不安全。使用这个生成器，可以快速创建一批测试专用的虚拟号码，非常方便。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：挑选心仪的“靓号”</h3>
+      <p class="text-gray-700">
+        很多人喜欢带有特定数字组合的手机号，比如尾号是“888”、“666”或者生日日期。你可以把想要的尾号设为“后缀”，然后生成中间所有可能的组合，快速看看在某个号段（比如139）下，有哪些号码符合你的要求。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景三：活动策划与数据模拟</h3>
+      <p class="text-gray-700">
+        做市场活动时，可能需要准备一批模拟的参与用户数据。或者在学习数据分析时，需要一份包含手机号字段的模拟数据表。这个工具可以按规则生成号码，配合其他信息，快速构建出需要的样本数据。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景四：记忆或查询特定号段</h3>
+      <p class="text-gray-700">
+        只记得朋友手机号的前几位和后几位，中间几位想不起来了？你可以把记得的部分设为前缀和后缀，然后生成中间数字所有可能的组合。虽然结果可能很多，但可以帮你缩小回忆或查找的范围。
+      </p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4">怎么使用？三步就能搞定</h2>
+  <p class="mb-6">
+    使用这个工具非常简单，完全不需要任何技术知识。它的界面设计得很直观，你只需要像填空一样操作就行。
+  </p>
+
+  <div class="space-y-8 mb-10">
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">1</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">设定号码的“固定部分”</h3>
+        <p class="text-gray-700 mb-2">
+          在“前缀”框里，输入你希望所有号码都一样的开头数字。比如，你想生成所有以“138”开头的号码，就填“138”。
+        </p>
+        <p class="text-gray-700 mb-2">
+          在“后缀”框里，输入你希望所有号码都一样的结尾数字。比如，你想要所有号码都以“000”结尾，就填“000”。如果开头或结尾不需要固定，空着不填就行。
         </p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-        <div class="flex items-center mb-3">
-          <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800">实时拍照</h3>
-        </div>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          除了录像，随时可以按下拍照按钮，捕捉当前画面。拍下的照片会单独保存在一个相册列表里，可以一键下载保存到自己的设备上。
+    </div>
+
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">2</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">设定中间数字的变化规则</h3>
+        <p class="text-gray-700 mb-2">
+          这是最关键的一步。“中间号码位数”决定了中间部分有几位数字在变化。比如，选“5位”，那么中间部分就是像“12345”、“00001”这样的5位数。
+        </p>
+        <p class="text-gray-700 mb-2">
+          接着，在“号码范围”里，设定这几位数字从多少变到多少。例如，从“0”到“999”，工具就会生成中间部分为000, 001, 002...一直到999的所有组合。
+        </p>
+        <p class="text-gray-700">
+          <strong>小提示：</strong>工具会贴心地根据你选择的位数，自动建议最大的范围，你只需要根据需求缩小它即可，避免一次生成太多数据。
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">3</div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">生成与保存结果</h3>
+        <p class="text-gray-700 mb-2">
+          点击“开始生成”按钮，几秒钟后，完整的号码列表就会出现在下方。你可以直接滚动预览。
+        </p>
+        <p class="text-gray-700">
+          如果需要保存，可以点击“下载TXT”或“下载CSV”按钮。TXT文件是简单的文本格式，方便查看；CSV是表格格式，可以直接用Excel打开，方便做进一步处理。
         </p>
       </div>
     </div>
   </div>
 
-  <!-- 特色与设置 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
-      就像使用真正的相机一样灵活
-    </h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-      为了让体验更好，这个工具还提供了一些实用的调节选项，让你能根据自己的需要来设置。
+  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-semibold mb-3 text-gray-800">重要提醒：请合理合法地使用</h3>
+    <p class="mb-3">
+      这个工具生成的号码是<strong>虚拟的、随机的数字组合</strong>。它们绝大部分并未被真实分配使用。
     </p>
-    <ul class="list-disc pl-5 space-y-3 text-gray-700">
-      <li class="leading-relaxed">
-        <span class="font-medium">切换摄像头：</span>如果你有多个摄像头（比如笔记本电脑的前置和后置摄像头），可以在这里自由切换。
-      </li>
-      <li class="leading-relaxed">
-        <span class="font-medium">调节清晰度：</span>可以选择不同的画面分辨率，从高清的720p到超清的4K，根据你的网络和设备能力来选择。
-      </li>
-      <li class="leading-relaxed">
-        <span class="font-medium">管理你的作品：</span>所有录制好的视频和拍摄的照片都会在页面下方列出。你可以播放、下载，或者删除不需要的内容。
-      </li>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li><strong>禁止用于非法用途：</strong>严禁将这些号码用于任何骚扰、诈骗、虚假注册等违法活动。</li>
+      <li><strong>主要用途是测试与模拟：</strong>它的设计初衷是服务于软件测试、数据分析学习、内部模拟等合法合规的场景。</li>
+      <li><strong>注意数据量：</strong>一次不要生成太多数据（如上百万条），以免占用过多资源，工具本身也做了数量限制来保护你的设备流畅运行。</li>
     </ul>
   </div>
 
-  <!-- 使用场景 -->
-  <div class="bg-gray-50 p-6 sm:p-8 rounded-xl mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5">你会在什么情况下用到它？</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">临时需要录一段工作说明或作业讲解发给别人。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">想拍一张证件照或产品照片，但觉得手机App操作复杂。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">进行简单的直播测试，或者检查自己的摄像头和麦克风是否工作正常。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">为家人录制一段祝福视频，或者记录下孩子的某个瞬间。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 常见问题/温馨提示 -->
-  <div class="border border-yellow-200 bg-yellow-50 rounded-xl p-6 mb-8">
-    <h3 class="text-lg font-semibold text-yellow-800 mb-3 flex items-center">
-      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-      温馨提示
-    </h3>
-    <ul class="space-y-2 text-yellow-700 text-sm">
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>第一次使用时，你的浏览器会弹出窗口，请求使用摄像头和麦克风的权限，请点击“允许”。这是为了你的隐私安全。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>所有的录制和拍照内容都只在你的浏览器本地处理，不会上传到任何服务器，可以放心使用。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>在使用前，请确保摄像头和麦克风没有被其他软件（如微信、Zoom）占用，以免无法正常启动。</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- 结语 -->
-  <div class="text-center pt-4 border-t border-gray-200">
-    <p class="text-gray-600 leading-relaxed">
-      技术的发展，让我们能用越来越简单的方式完成生活中的小事。以前需要复杂设备或专业软件才能做的事，现在一个网页就能轻松实现。无论是录制一段视频，还是拍摄一张照片，都可以变得更简单、更快捷。
-    </p>
-  </div>
+  <h2 class="text-2xl font-bold mt-10 mb-4">总结</h2>
+  <p class="mb-6">
+    手机号码段生成器，本质上是一个帮你自动化完成“数字排列组合”的贴心助手。它把原本枯燥、易错的手工劳动，变成了点几下鼠标就能完成的事。无论你是为了工作测试、学习研究，还是个人需要，它都能成为一个提高效率的小帮手。
+  </p>
+  <p class="text-gray-600 pb-10">
+    希望这篇文章能帮你清楚地了解这个工具的用途和用法。记住，工具的价值在于如何使用它，务必在合法合规的范围内，让它为你的工作和生活带来便利。
+  </p>
 </div>
-`;export{e as default};
+`;export{t as default};

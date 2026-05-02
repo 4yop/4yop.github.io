@@ -1,96 +1,67 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">编码修复工具：一键解决文本乱码问题，让文字回归本真</h1>
-
-  <div class="mb-8">
-    <p class="mb-4 text-base leading-relaxed">你是否遇到过这样的困扰：从网页复制下来的文字变成了一堆看不懂的符号，打开某个文件满屏都是"浣犲埌"之类的奇怪字符，或者从数据库导出的数据完全无法阅读？这些都是典型的编码问题导致的乱码现象。</p>
-    <p class="mb-4 text-base leading-relaxed">别担心，编码修复工具就是专门为解决这类问题而设计的。它能够自动检测文本的原始编码格式，并将其正确转换为目标编码，让你的文字恢复本来面目。整个过程在浏览器中完成，无需上传任何数据到服务器，既快捷又安全。</p>
-  </div>
+const t=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 text-gray-800 font-sans bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">一张身份证号码能看出哪些信息？</h1>
+  <p class="text-gray-600 mb-8 text-lg">除了证明身份，那一长串数字里还藏着你可能不知道的秘密。</p>
 
   <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">什么是文本编码？</h2>
-    <p class="mb-4 text-base leading-relaxed">文本编码是将字符转换为计算机可以存储和传输的字节序列的过程。不同的编码标准使用不同的方式来表示字符，常见的编码格式包括：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">UTF-8：</span>国际通用编码，支持所有Unicode字符，是网页和现代应用的标准编码</li>
-      <li><span class="font-medium">GBK：</span>中文编码标准，支持简体中文、繁体中文和日韩字符</li>
-      <li><span class="font-medium">GB2312：</span>早期中文编码标准，主要支持简体中文</li>
-      <li><span class="font-medium">ISO-8859-1：</span>拉丁字母编码，主要用于西欧语言</li>
-      <li><span class="font-medium">Big5：</span>繁体中文编码标准，主要在台湾、香港地区使用</li>
-    </ul>
+    <p class="mb-4">我们每个人都有身份证。拿到手里，上面有照片、姓名、住址，还有那串长长的18位号码。很多人都知道这串号码很重要，但具体每一位代表什么，可能就不太清楚了。</p>
+    <p>今天，我们就来轻松聊聊，这18位身份证号码，到底告诉了我们哪些关于你的信息。</p>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么会出现乱码？</h2>
-    <p class="mb-4 text-base leading-relaxed">乱码通常由以下原因造成：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">编码不一致：</span>文件保存时使用的编码格式与打开时使用的编码格式不一致，这是最常见的原因</li>
-      <li><span class="font-medium">缺少编码声明：</span>网页或应用没有正确声明字符编码，导致浏览器猜测错误的编码</li>
-      <li><span class="font-medium">传输过程中丢失：</span>数据传输过程中编码信息丢失或被修改</li>
-      <li><span class="font-medium">系统差异：</span>不同操作系统之间的编码标准默认值不同</li>
-      <li><span class="font-medium">多重编码：</span>文本经过多次编码转换，导致累积性损坏</li>
-    </ul>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">身份证号码的秘密：三段式解读</h2>
+  <p class="mb-6">其实，你的18位身份证号可以被清晰地分成三个部分，每一部分都对应着特定的信息。</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+    <h3 class="font-bold text-blue-900 mb-1">第一部分：地址码（前6位）</h3>
+    <p class="text-gray-700">这就像是你的“籍贯密码”。最开始的两位代表你所在的省份或直辖市，中间两位代表城市，最后两位则对应着区或县。通过这六位数，就能知道你最初是在哪里登记户口的。</p>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">如何使用编码修复工具？</h2>
-    <div class="space-y-4 text-base leading-relaxed">
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第一步：输入文本</p>
-        <p>在输入框中粘贴或输入出现乱码或编码问题的文本</p>
-      </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第二步：选择编码选项</p>
-        <p>可以选择源编码（或使用自动检测），选择目标编码（推荐使用UTF-8），并根据需要勾选"移除BOM标记"或"修复损坏字符"</p>
-      </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第三步：执行修复</p>
-        <p>点击"执行修复"按钮，工具会自动分析并转换编码</p>
-      </div>
-      <div class="p-4 bg-gray-50 rounded-lg">
-        <p class="font-medium mb-2">第四步：获取结果</p>
-        <p>查看修复结果，可以复制或下载为文本文件</p>
-      </div>
+  <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+    <h3 class="font-bold text-green-900 mb-1">第二部分：出生日期码（第7到14位）</h3>
+    <p class="text-gray-700">这是最直观的部分。比如“19900101”，就代表1990年1月1日。你的公历生日就牢牢地嵌在了这里。</p>
+  </div>
+
+  <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-8">
+    <h3 class="font-bold text-purple-900 mb-1">第三部分：顺序码和校验码（最后4位）</h3>
+    <p class="text-gray-700">第15到17位是顺序码，其中第17位特别关键——<strong>奇数代表男性，偶数代表女性</strong>。最后一位是校验码，它是通过一套复杂的公式计算出来的，用来验证整个号码是否正确有效，防止输错。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">生日数字里的更多趣味信息</h2>
+  <p class="mb-4">知道了出生日期，其实还能推算出很多有趣的信息，让你的个人资料变得更加立体。</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2 text-gray-700">
+    <li><strong>农历生日</strong>：我们很多人还会过农历生日，它和公历生日每年都不同。</li>
+    <li><strong>星座</strong>：根据出生日期可以找到对应的十二星座。</li>
+    <li><strong>生肖</strong>：你的农历出生年份决定了你的属相。</li>
+    <li><strong>出生那天是星期几？</strong>：这是一个常被忽略但很有意思的小细节。</li>
+    <li><strong>现在的准确年龄</strong>：精确到岁的年龄计算。</li>
+  </ul>
+
+  <div class="bg-gray-50 rounded-xl p-6 md:p-8 my-10 border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何安全地查看这些信息？</h2>
+    <p class="mb-4">既然身份证号码包含这么多个人隐私，很多人都会担心：如果我想看看自己的号码解析出来是什么样子，或者核对一下信息，安全吗？</p>
+    <p class="mb-4 font-medium">这里就涉及到一个非常重要的概念：<span class="text-blue-700">本地解析</span>。</p>
+    <p>“本地解析”的意思是，所有的计算和查询工作，都在你自己的设备（比如你的手机或电脑）上瞬间完成。你的身份证号码<strong>根本不会被发送到任何网络服务器上</strong>，也就完全避免了信息在传输过程中被截获或泄露的风险。</p>
+    <p class="mt-4 text-gray-600 text-sm">就像一个计算器，你在上面输入数字做计算，结果立刻出来，整个过程不需要告诉任何人。本地解析工具的原理就和这个类似，把隐私牢牢锁在你的设备里。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">它能做什么？安全吗？</h3>
+      <p class="text-gray-700">它可以根据你输入的号码，快速告诉你对应的地址、生日、性别、农历生日、星座等信息。关键在于，这是一个纯粹的本地工具，你输入的内容不会被上传，所以非常安全，可以放心用来了解自己或核对信息。</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">什么时候会用到它？</h3>
+      <p class="text-gray-700">当你想确认自己记的身份证号码是否正确（通过校验码）；当你想快速知道某个号码对应的生日和年龄；或者仅仅是想好奇地了解一下自己身份证号码背后的“隐藏信息”。</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-gray-900 mb-2">所有人都能用吗？</h3>
+      <p class="text-gray-700">是的，只要你知道一个18位的中国大陆居民身份证号码（仅供自己或获得他人允许后用于信息核对），就可以使用。操作非常简单，只需输入号码，结果一目了然。</p>
     </div>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见使用场景</h2>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">网页乱码修复：</span>修复从网页复制或下载时出现的乱码问题</li>
-      <li><span class="font-medium">文件编码转换：</span>将GBK编码的文件转换为UTF-8，或反之</li>
-      <li><span class="font-medium">数据库数据修复：</span>修复数据库中因编码不一致导致的乱码数据</li>
-      <li><span class="font-medium">API数据处理：</span>处理不同编码格式的API响应数据</li>
-      <li><span class="font-medium">日志文件分析：</span>修复日志文件中因编码问题导致的乱码</li>
-      <li><span class="font-medium">邮件内容修复：</span>修复邮件中出现的编码错误</li>
-    </ul>
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+    <p>了解自己的身份信息是件有趣的事，但请务必妥善保管好你的身份证及号码，切勿随意向他人泄露。</p>
   </div>
-
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">UTF-8 和 GBK 有什么区别？</h3>
-        <p class="text-base leading-relaxed">UTF-8是国际通用编码，支持所有语言的字符，是互联网和现代软件的标准编码。每个字符可能占用1-4个字节。GBK是中文编码标准，主要支持中文字符，每个中文字符占用2个字节。建议：现代应用应优先使用UTF-8编码，以确保跨平台和跨语言的兼容性。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">什么是 BOM 标记？需要移除吗？</h3>
-        <p class="text-base leading-relaxed">BOM（Byte Order Mark）是文件开头的特殊标记，用于标识文件的编码格式。某些编辑器会在UTF-8文件开头添加BOM标记（EF BB BF）。如果文件用于网页、接口或脚本，BOM更容易造成显示异常或解析错误，建议移除。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">如何判断文本是什么编码？</h3>
-        <p class="text-base leading-relaxed">可以通过以下方式判断：查看文件头部的BOM标记（UTF-8 BOM为EF BB BF）；观察乱码模式（如"浣犲埌"通常是UTF-8被当GBK读取）；使用本工具的自动检测功能进行智能识别。工具会尝试多种编码组合，并自动选择最可能正确的修复结果。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">修复后还是不对怎么办？</h3>
-        <p class="text-base leading-relaxed">如果源文本已经被错误编码多次，工具只能尽量还原最常见的情况。遇到多重乱码时，建议先保留原文，再分别尝试不同的源编码和目标编码组合进行比对。也可以开启"修复损坏字符"选项来进一步优化结果。</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
-    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
-    <p class="mb-3 text-base leading-relaxed">编码修复工具是一个实用的文本处理助手，它能帮你快速诊断和修复各种编码问题。无论是网页乱码、文件编码不匹配还是数据库导出数据的显示异常，都可以通过这个工具得到有效解决。</p>
-    <p class="text-base leading-relaxed">最重要的是，所有处理都在你的浏览器本地完成，不需要将任何敏感信息上传到远程服务器，确保了数据的安全性和隐私保护。下次遇到乱码问题，不妨试试这个工具，也许能省去很多手动排查的时间。</p>
-  </div>
-</div>
-`;export{s as default};
+</article>
+`;export{t as default};

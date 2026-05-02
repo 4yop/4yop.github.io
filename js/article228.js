@@ -1,85 +1,120 @@
 const t=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线录音工具怎么用？一个免费工具帮你轻松录制声音</h1>
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 py-8 md:px-6">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">还在为找不到资料发愁？试试这个让搜索变简单的智能工具</h1>
 
-  <p class="text-lg text-gray-700 mb-8">无论是想录下会议内容、保存一段灵感迸发的歌声，还是记录网课的重点，你可能都在寻找一个好用的录音方法。今天，我们就来介绍一种直接在网页上就能使用的录音工具，无需安装软件，打开浏览器就能开始录制。</p>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否经历过这些？想找一份专业报告，却搜出满屏无关网页；需要某个网站内的信息，却要翻遍全网；明明记得看过一篇好文章，再想找时却怎么也搜不到了。别担心，这些问题，一个简单的搜索工具就能帮你解决。
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-4">什么是网页录音工具？</h2>
-    <p class="text-gray-700 mb-4">简单来说，它是一个在你电脑或手机浏览器里运行的“录音机”。就像你用手机自带的录音功能一样，但它更侧重于在网页上直接使用，录好的声音文件可以直接保存在你的设备里。</p>
-    <p class="text-gray-700">它的好处很明显：<strong class="text-gray-900">方便</strong>，不用下载安装；<strong class="text-gray-900">快捷</strong>，点开网页就能用；而且很多都是<strong class="text-gray-900">免费</strong>的。</p>
-  </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 rounded-r">
+    <p class="text-gray-700">
+      <strong>简单来说：</strong> 这是一个集成了百度、谷歌、必应三大搜索引擎的“一站式”搜索入口，最大的亮点是它把许多资深人士才知道的“搜索秘籍”，变成了人人都能轻松点击使用的按钮。
+    </p>
+  </div>
 
-  <section class="mb-10 bg-blue-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">核心功能一览</h2>
-    <p class="text-gray-700 mb-6">一个功能齐全的在线录音工具，通常包含以下让你用起来很顺手的特点：</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-          清晰的录音状态和计时
-        </h3>
-        <p class="text-gray-700">开始录音后，屏幕中央会有明确的状态提示，比如“录制中”、“已暂停”。旁边还有一个实时走动的计时器，让你准确掌握录音时长。</p>
-      </div>
+  <p class="mb-6">和普通搜索框不同，这个工具让你能“指哪打哪”，大幅提升找资料的效率和准确度。</p>
 
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-          看得见的声音波形
-        </h3>
-        <p class="text-gray-700">这不是静悄悄的录音。屏幕上会有一个动态跳动的条形图，声音越大，条形跳得越高。这样你就能直观地看到麦克风是否在正常工作，以及音量大小。</p>
-      </div>
+  <div class="space-y-8">
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-700 rounded-full text-center leading-6 mr-2 text-sm">1</span>
+        一站切换，不用记网址
+      </h3>
+      <p class="pl-8">无论是查国内资讯用百度，还是找国际资料用谷歌、必应，在这里一键就能切换。你不用再费力记住不同搜索引擎的网址，更不用来回切换浏览器标签页。</p>
+    </section>
 
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-          灵活的录音控制
-        </h3>
-        <p class="text-gray-700">拥有和实体录音机一样的按键：开始、暂停、继续、停止。你可以随时暂停整理思路，然后继续录，最终合成一个完整的文件。</p>
-      </div>
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-green-100 text-green-700 rounded-full text-center leading-6 mr-2 text-sm">2</span>
+        用“秘籍”精准锁定目标
+      </h3>
+      <p class="pl-8 mb-4">这是它的核心功能。那些复杂的搜索规则，现在你只需要点一下按钮就能用上。</p>
+      <ul class="pl-8 space-y-3">
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">site:</span>
+          <div>
+            <p class="font-medium">锁定特定网站：</p>
+            <p class="text-gray-600 text-sm">比如，你只想在某个政府网站或大学官网上找政策文件或学术资料，用这个功能就能把搜索范围锁定在你信任的网站上。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">filetype:</span>
+          <div>
+            <p class="font-medium">专门找特定文件：</p>
+            <p class="text-gray-600 text-sm">想直接下载PDF格式的电子书、PPT课件或者Word文档？这个指令能帮你过滤掉网页，直接找到可下载的文件。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">“关键词”</span>
+          <div>
+            <p class="font-medium">搜索原话：</p>
+            <p class="text-gray-600 text-sm">当你需要搜索一句完整的话、一句名言或一个固定短语时，加上引号，搜索引擎就会原封不动地去找它。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">-排除词</span>
+          <div>
+            <p class="font-medium">排除干扰信息：</p>
+            <p class="text-gray-600 text-sm">搜“苹果”不想看到手机，只想看水果？用一个减号就能排除掉你不想看到的关键词。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-          多种格式保存和播放
-        </h3>
-        <p class="text-gray-700">录完后，你可以选择把声音存成不同的格式。比如选择通用性好的MP3，或者音质无损但文件稍大的WAV格式。录制后可以直接在网页上试听回放。</p>
-      </div>
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-amber-100 text-amber-700 rounded-full text-center leading-6 mr-2 text-sm">3</span>
+        你的“搜索记忆”，随时找回
+      </h3>
+      <p class="pl-8">每次搜索都会自动保存下来，形成你的个人搜索历史。之前找过什么资料，用的是哪个搜索引擎，一目了然。想再次查看，点一下就能恢复搜索，不用再费力回忆。</p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-center leading-6 mr-2 text-sm">4</span>
+        不用记，点一下就用
+      </h3>
+      <p class="pl-8">所有的高级搜索指令都以快捷按钮的形式排列在搜索框下方。你不用记忆复杂的语法格式，需要哪种搜索方式，直接用鼠标点一下对应的按钮，它就会自动添加到搜索框里，你只需要补充自己的关键词就行。</p>
+    </section>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">这个工具适合谁用？</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">学生和研究者</h4>
+      <p class="text-gray-600">写论文时需要精准查找学术网站上的PDF文献、特定领域的研究资料，用“站点锁定”和“文件类型”搜索能省下大量筛选时间。</p>
     </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-green-500 pl-4">它能在哪些场合派上用场？</h2>
-    <ul class="list-disc pl-6 text-gray-700 space-y-3">
-      <li><strong class="text-gray-900">工作学习：</strong>远程会议时录制重要内容以防遗漏，录下网课或在线培训的重点部分方便复习。</li>
-      <li><strong class="text-gray-900">内容创作：</strong>录制自己的播客片段、有声书朗读、或歌曲小样，快速捕捉灵感。</li>
-      <li><strong class="text-gray-900">生活记录：</strong>录下家人朋友的生日祝福、孩子的童言稚语，或者采访长辈的口述故事。</li>
-      <li><strong class="text-gray-900">临时备忘：</strong>当双手不方便打字时，用语音快速记录想法、待办事项或购物清单。</li>
-    </ul>
-  </section>
-
-  <section class="mb-10 p-6 border border-gray-200 rounded-xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">使用小贴士</h2>
-    <div class="space-y-4">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">①</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">第一次使用需要授权：</strong>就像手机App一样，网页首次使用麦克风时，浏览器会弹窗询问是否允许。点击“允许”即可。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">②</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">找一个安静的环境：</strong>录制前尽量关闭背景音乐、电视声，能有效提升录音的清晰度。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">③</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">录音前先试音：</strong>正式开始前，可以说几句话看看波形图是否有跳动，以确认设备工作正常。</p>
-      </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">办公族和资料收集者</h4>
+      <p class="text-gray-600">经常需要收集行业报告、市场数据、竞品信息？这个工具可以帮助你更高效地从指定来源（如官网、文库）获取所需文件，并管理好自己的搜索记录。</p>
     </div>
-  </section>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">对搜索质量有要求的普通人</h4>
+      <p class="text-gray-600">厌倦了在海量无效结果里“淘金”。想更快找到某个问题的确切答案、一张清晰的图片教程，或是一个靠谱的解决方案。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">需要多引擎对比的人</h4>
+      <p class="text-gray-600">想看看百度、谷歌对同一个问题的搜索结果有何不同？在这里切换比手动输入网址方便太多了。</p>
+    </div>
+  </div>
 
-  <section class="text-center py-8 border-t border-b border-gray-200">
-    <p class="text-xl text-gray-800 mb-4">总的来说，一个设计良好的在线录音工具，旨在让录音这件事变得像按下按钮一样简单。</p>
-    <p class="text-gray-700">它打破了专业软件的壁垒，让你无需任何技术背景，就能快速、高质量地完成声音录制和保存。下次当你需要录下任何声音时，不妨试试在浏览器中寻找这个便捷的解决方案。</p>
-  </section>
+  <div class="mt-12 p-6 border rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4">如何使用它来提升效率？</h2>
+    <p class="mb-4">使用起来和普通搜索一样简单：</p>
+    <ol class="list-decimal pl-5 space-y-3">
+      <li><strong>选搜索引擎：</strong> 根据你要找的内容性质，点击上方的“百度”、“谷歌”或“必应”。</li>
+      <li><strong>输入或组合关键词：</strong> 在搜索框直接打字，或者先点击下方你需要的“秘籍”按钮（如<span class="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">site:</span>），再输入你的具体关键词。</li>
+      <li><strong>开始搜索：</strong> 按下回车或点击搜索按钮，结果会在新页面打开。</li>
+      <li><strong>查看与复用历史：</strong> 在左侧“搜索历史”里，你可以随时找回之前的任何一次搜索。</li>
+    </ol>
+    <p class="mt-6 text-gray-600">整个过程，你不需要学习任何复杂的知识，工具的右侧区域就像一个随时可查的说明书，对每个“搜索秘籍”都有通俗的解释和例子。</p>
+  </div>
+
+  <p class="mt-12 text-center text-gray-500 border-t pt-8">
+    搜索不是碰运气。用好工具，其实就是在给你的信息获取能力装上“导航仪”，让你在信息的海洋里，能更直接、更准确地驶向目的地。希望这个介绍，能帮你打开高效搜索的新思路。
+  </p>
 </article>
 `;export{t as default};

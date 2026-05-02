@@ -1,135 +1,107 @@
 const t=`
-<div class="text-gray-800 font-sans bg-white">
-  <!-- 文章标题 -->
-  <h1 class="text-2xl md:text-3xl font-bold mb-6 pt-6 px-4 md:px-0 text-center">电子印章制作全攻略：轻松在线设计专属印章</h1>
-
-  <!-- 开篇引入 -->
-  <div class="mb-8 px-4 md:px-0">
-    <p class="text-base md:text-lg mb-4 leading-relaxed">在数字时代，很多文件、合同都需要盖章确认。但传统印章携带不便，而电子印章就成了现代办公的好帮手。今天，我们就来聊聊电子印章的那些事，让你也能轻松设计出自己的专属印章。</p>
-    <p class="text-base md:text-lg leading-relaxed">或许你正在为公司寻找一个正式的电子印章，或者想为个人文件添加一个独特的签名章。不管什么需求，了解一些基本知识，就能让你的印章既美观又实用。</p>
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
+  
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
   </div>
-
-  <!-- 印章类型介绍 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见的电子印章有哪些样式？</h2>
-    <p class="text-base mb-4 leading-relaxed">电子印章的样式多种多样，每种都有不同的用途和风格。了解这些，可以帮助你快速选择适合自己的类型。</p>
-    <ul class="list-none space-y-3">
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">圆形印章</h3>
-          <p class="text-gray-600 leading-relaxed">这是最常见的一种，通常用于公司公章或财务章。印章外圈可以环绕公司名称，中间是“专用章”或部门名称，整体显得正式、权威。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">方形印章</h3>
-          <p class="text-gray-600 leading-relaxed">方形印章简洁大方，常用于部门章或个人签名章。文字通常从上到下排列，适合名字较短的情况，看起来干净利落。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">私人印章</h3>
-          <p class="text-gray-600 leading-relaxed">个人使用的印章，比如用于书画落款或文件签名。一般是长方形，文字竖排，体现个人品味和传统韵味。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <span class="block w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-        <div>
-          <h3 class="text-lg font-medium text-gray-900 mb-1">仿古印章</h3>
-          <p class="text-gray-600 leading-relaxed">带有复古风格的印章，模仿古代玉玺或石刻效果。外圈可能有双层线条，文字排列更具艺术感，适合文化、创意类场景。</p>
-        </div>
-      </li>
+  
+  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
+      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
+      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
+      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-sm border">
+      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
+      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
+  
+  <div class="mb-8">
+    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
+    
+    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
+      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
+      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
+      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
     </ul>
   </div>
-
-  <!-- 设计要素详解 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">如何设计一个好看的电子印章？</h2>
-    <p class="text-base mb-6 leading-relaxed">设计电子印章就像搭配衣服，颜色、字体、文字都要协调。掌握这几个要点，你也能成为印章设计小能手。</p>
-
-    <div class="space-y-6">
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">文字内容怎么安排？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">印章上的文字是关键。对于圆形印章，外圈通常放公司全称，比如“某某有限公司”，中间则是“专用章”或核心标识。私人印章一般直接放姓名。</p>
-        <p class="text-gray-600 leading-relaxed">记住，文字要清晰易读。太挤或太松都会影响效果，可以根据字数调整大小和间距。</p>
+  
+  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
+      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
+    </div>
+    
+    <div class="mb-4">
+      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
+      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
+    </div>
+    
+    <div>
+      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
+      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
+    </div>
+  </div>
+  
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
+  
+  <div class="mb-8">
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">1</div>
       </div>
-
       <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">颜色选哪种红更好？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">红色是印章的传统颜色，但红色也有不同色调：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>大红色</strong>：最常用，鲜艳醒目，适合正式场合。</li>
-          <li><strong>朱砂红</strong>：稍暗一些，带有古典感，看起来更沉稳。</li>
-          <li><strong>暗红色</strong>：深沉厚重，适合仿古或庄重的设计。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">一般来说，公司印章用大红色，个人或艺术印章可以尝试其他红色。</p>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
+        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
       </div>
-
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">字体风格怎么选？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">字体决定了印章的气质。常见选择有：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>宋体</strong>：端正规范，适合正式的公司印章。</li>
-          <li><strong>隶书</strong>：优雅古朴，有传统书法味道。</li>
-          <li><strong>行楷</strong>：流畅自然，介于工整和随意之间。</li>
-          <li><strong>篆感字体</strong>：模仿古代篆书，适合仿古印章。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">选择时，考虑印章用途——正式文件选规整字体，个人创作可选艺术字体。</p>
+    </div>
+    
+    <div class="flex items-start mb-6">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">2</div>
       </div>
-
       <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-2">细节调整有什么讲究？</h3>
-        <p class="text-gray-600 mb-2 leading-relaxed">想让印章更逼真或独特，可以注意这些细节：</p>
-        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-          <li><strong>文字大小</strong>：太大显得笨重，太小看不清，适中最好。</li>
-          <li><strong>线条粗细</strong>：粗线条有力，细线条精致，根据印章大小调整。</li>
-          <li><strong>斑驳效果</strong>：添加一点磨损感，让印章像用过一样，更真实自然。</li>
-          <li><strong>五角星图案</strong>：在圆形印章中间加个五角星，是常见设计，增加正式感。</li>
-        </ul>
-        <p class="text-gray-600 mt-2 leading-relaxed">这些小调整，能让你的印章脱颖而出。</p>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
+        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
+      </div>
+    </div>
+    
+    <div class="flex items-start">
+      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
+        <div class="text-center font-medium">3</div>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
+        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
       </div>
     </div>
   </div>
-
-  <!-- 使用和导出 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">做好后怎么使用电子印章？</h2>
-    <p class="text-base mb-4 leading-relaxed">设计完成后，电子印章通常可以保存为透明背景的图片文件（比如PNG格式）。这样，你就能轻松把它添加到PDF、Word文档或图片中。</p>
-    <p class="text-base leading-relaxed">使用时，确保印章清晰可见，位置合适。对于重要文件，建议搭配数字签名，以增强安全性和法律效力。如果你是个人使用，比如电子合同或作品签名，一个设计精良的电子印章既能体现诚意，又方便快捷。</p>
-  </div>
-
-  <!-- 常见问题 -->
-  <div class="mb-10 px-4 md:px-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">关于电子印章，你可能还想知道</h2>
-    <div class="space-y-4">
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">电子印章合法吗？</h3>
-        <p class="text-gray-600 leading-relaxed">在大多数情况下，电子印章需要符合相关法律法规，比如使用数字证书认证，才具有法律效力。对于日常非正式使用，如个人文件或内部文档，自定义电子印章是方便的工具。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">我可以自己设计电子印章吗？</h3>
-        <p class="text-gray-600 leading-relaxed">当然可以！现在有很多在线工具允许你自由设计电子印章，选择样式、颜色、文字，然后导出使用。只要不侵犯他人权益，用于个人或授权场合是没问题的。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium text-gray-900 mb-1">设计时要注意什么？</h3>
-        <p class="text-gray-600 leading-relaxed">避免使用过于花哨的颜色或字体，确保文字清晰可辨。如果是公司用途，最好遵循品牌规范。简单、专业的设计往往最有效。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 结尾总结 -->
-  <div class="bg-gray-50 rounded-lg p-6 mb-8 mx-4 md:mx-0">
-    <h2 class="text-xl md:text-2xl font-semibold mb-3 text-center">小结</h2>
-    <p class="text-base text-gray-700 mb-3 leading-relaxed">电子印章制作并不复杂。从选择样式（圆印、方印、私章或仿古），到设置文字、颜色、字体，再到调整细节，每一步都能让你更接近理想的印章。</p>
-    <p class="text-base text-gray-700 leading-relaxed">无论用于工作还是个人，一个好的电子印章既能提升效率，又能展现个性。希望这些介绍能帮助你轻松上手，设计出既美观又实用的专属印章。</p>
-  </div>
-
-  <!-- 版权或备注 -->
-  <div class="text-center text-gray-500 text-sm pb-6 px-4 md:px-0">
-    <p>本文仅供科普参考，具体使用请遵循相关规范。</p>
+  
+  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
+    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
+    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
   </div>
 </div>
 `;export{t as default};

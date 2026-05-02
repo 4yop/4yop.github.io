@@ -1,119 +1,96 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800 bg-white">
-  <header class="mb-10 sm:mb-16 text-center">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
-      互联网黑话到底是什么？它怎么悄悄改变了我们的对话方式
-    </h2>
-    <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-      你有没有在开会时，听到一堆“赋能”、“抓手”、“闭环”却一头雾水？这背后是一套独特的语言系统，正在许多行业中悄然流行。
+const t=`
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">还在为写评价发愁？这个好评生成器，让你告别词穷！</h1>
+
+  <!-- 首段 -->
+  <p class="mb-6 text-lg">
+    你是不是也这样？网购收到心仪的商品，或者吃到美味的外卖，心里明明很满意，可到了写评价的时候，手指悬在屏幕上半天，却只憋出一句“东西不错”或者“好吃”？想给商家一个走心的好评，却不知道从何说起。今天，就给大家介绍一个能帮你轻松解决这个烦恼的小工具。
+  </p>
+
+  <!-- 核心功能介绍部分 -->
+  <div class="bg-blue-50 p-6 rounded-xl mb-8">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是好评生成器？</h2>
+    <p class="mb-4">
+      简单来说，它就像一个贴心的“评价小助手”。你只需要告诉它你要评价什么（比如一件衣服或一份披萨），选择你喜欢的说话风格，它就能在几秒钟内，为你生成好几条内容完整、听起来特别真实自然的好评。
     </p>
-  </header>
-
-  <div class="space-y-8 sm:space-y-12">
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        一、当简单的话变复杂了：无处不在的“黑话”
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          想象一下这个场景：公司开会，领导说“我们要<strong>打通底层逻辑</strong>，形成<strong>闭环</strong>，为业务<strong>赋能</strong>”。旁边的同事频频点头，而你却暗自疑惑：“他到底想让我们做什么？”
-        </p>
-        <p>
-          这就是所谓的“互联网黑话”或者“行业术语”。它指的是一些听起来很专业、很高级的词汇和说法，在科技、金融、电商这些圈子里尤其常见。最初，这些词是为了快速、准确地描述一些复杂的概念或方法。但不知从什么时候开始，它们变得越来越让人听不懂，甚至成了一种独特的“沟通方式”。
-        </p>
-        <p>
-          很多人感到困惑：为什么不能好好说话？明明可以用“想办法提高销量”，偏要说“寻找增长抓手，实现流量转化”。这种语言，像一层朦胧的纱，让圈外人看不清，也让圈内人有时自己都绕晕了。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        二、大家为什么爱说“黑话”？不只是为了显得厉害
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          这种说话方式的流行，背后有几个简单的原因：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>效率假象</strong>：一个词，比如“<strong>对齐</strong>”，就能代替“我们互相沟通一下，确保想法一致，没有理解偏差”。听起来省事多了。</li>
-          <li><strong>身份认同</strong>：能熟练使用这些词，仿佛就在说：“我是这个圈子里的人，我懂行。”它是一种无形的名片。</li>
-          <li><strong>自我保护</strong>：把普通的事情用复杂的词汇包装，有时能让提议听起来更严谨、更难以反驳。</li>
-          <li><strong>追赶潮流</strong>：当身边人都在这么说时，如果你不用，反而显得落伍了。语言也有从众心理。</li>
-        </ul>
-        <p>
-          所以，它不全是坏事，也不全是为了装样子。在某些专业的讨论中，它确实能提高沟通效率。但问题在于，当它泛滥到日常交谈、甚至模糊了事情的本质时，沟通就变味了。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        三、“黑话”给我们的沟通带来了什么？
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          过度依赖这种语言，会带来一些实实在在的困扰：
-        </p>
-        <p>
-          <strong>制造隔阂</strong>：新人入职，面对满口的“<strong>迭代</strong>”、“<strong>复盘</strong>”、“<strong>颗粒度</strong>”，可能需要很长时间才能融入。这无形中提高了理解和协作的成本。
-        </p>
-        <p>
-          <strong>模糊重点</strong>：当一份方案充满了“<strong>打造生态</strong>”、“<strong>聚焦赛道</strong>”时，它的具体执行步骤是什么？谁负责？什么时候完成？这些最关键的信息，反而可能被华丽的辞藻淹没。
-        </p>
-        <p>
-          <strong>掩盖问题</strong>：有时候，用复杂的词汇来描述一个简单的错误或瓶颈，会让问题看起来没那么严重，或者把责任变得模糊。
-        </p>
-        <p>
-          沟通的本质，是让对方明白。如果一种语言体系让听的人越来越糊涂，那它可能已经背离了初衷。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        四、一个有趣的小工具：帮你“翻译”和生成这些术语
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          为了更好地理解这种现象，甚至用它来轻松一下，有人做了一个好玩的小工具。你可以把它看作一个“术语生成器”或“语境模拟器”。
-        </p>
-        <p>
-          你只需要输入一个普通的主题，比如“如何做好一个项目”，然后选择相关的行业（比如科技、电商）和场景（比如开会、写报告）。它就能帮你“翻译”成一套充满行业术语的表述。
-        </p>
-        <p>
-          你会发现，原来“我们要认真做项目”，可以被表达为：“我们需要<strong>聚焦项目核心价值链路</strong>，通过<strong>精细化运营</strong>和<strong>敏捷迭代</strong>来<strong>赋能团队</strong>，最终<strong>打通闭环</strong>，实现<strong>价值最大化</strong>。”
-        </p>
-        <p>
-          这个过程本身就像一面镜子，让我们看到，日常的交流是如何被“包装”起来的。它不是一个严肃的生产工具，更像一个轻松的互动游戏，帮助你：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>快速理解</strong>：当你听到一堆陌生术语时，或许能猜到它们大概想表达什么。</li>
-          <li><strong>会心一笑</strong>：生成的内容往往夸张又熟悉，让人忍不住发笑，缓解一下被术语轰炸的压力。</li>
-          <li><strong>自我提醒</strong>：在需要用专业语言沟通时，检查一下自己是不是也陷入了“不说人话”的陷阱。</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        五、回归清晰：让语言重新成为桥梁
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          了解“黑话”，不是为了学会并天天使用它。恰恰相反，是为了看清它，然后有选择地使用。
-        </p>
-        <p>
-          专业的术语在专业的场合有其价值，能高效地沟通复杂思想。但最有效的沟通，永远是建立在清晰、准确和真诚的基础上。无论是工作还是生活，把复杂的事情讲简单，是一种难得的能力。
-        </p>
-        <p>
-          下次当你再听到或想使用这些词汇时，不妨先在心里问自己：“我能不能用更直白的话说清楚？” 让语言重新成为连接你我的桥梁，而不是一堵墙。
-        </p>
-        <p class="pt-4 text-gray-700 italic">
-          语言是活的，它会随着时代和行业变化。观察这些变化很有趣，但别忘了，最好的语言永远是能让对方听懂的、充满真诚的语言。
-        </p>
-      </div>
-    </section>
+    <p>
+      无论是想表达对商品质量的认可，还是想夸夸外卖的配送速度，它都能帮你把那份满意，用更生动、更具体的话说出来。
+    </p>
   </div>
-</article>
-`;export{s as default};
+
+  <!-- 工具能做什么 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">它具体能帮你做什么？</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3 text-xl">🛍️</div>
+        <h3 class="text-xl font-medium">给网购商品写评价</h3>
+      </div>
+      <p class="text-gray-600">刚买的宝贝质量超好，物流也快，但你的评价却干巴巴的？切换到“通用商品”模式，选择“质量好”、“物流快”等亮点，它就能帮你生成热情或专业的评价，让你的好评不再单调。</p>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mr-3 text-xl">🍱</div>
+        <h3 class="text-xl font-medium">给外卖美食写评价</h3>
+      </div>
+      <p class="text-gray-600">外卖味道棒极了，想鼓励一下商家？切换到“外卖美食”模式，聚焦“味道好”、“分量足”等特点。你可以生成简洁的“吃货”推荐，也可以写一段让老板看了开心的暖心评价。</p>
+    </div>
+  </div>
+
+  <!-- 核心价值 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">为什么你需要它？</h2>
+  <ul class="space-y-4 mb-10 pl-5">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>省时省力：</strong>再也不用绞尽脑汁组织语言，几秒钟就能获得多条可选评价，复制粘贴即可。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>提供灵感：</strong>当你不知道除了“好”还能说什么时，它可以给你提供夸赞商品不同角度的思路。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>评价更生动：</strong>告别千篇一律的“好评”，生成带有个性风格和具体细节的评价，帮助其他买家更好地做参考。</span>
+    </li>
+  </ul>
+
+  <!-- 使用场景 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">这些时候，你可能会想起它</h2>
+  <div class="bg-gray-50 p-6 rounded-xl mb-10">
+    <ul class="space-y-3">
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 收到满意的网购商品，想写个详细好评鼓励卖家时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 工作繁忙，只想快速完成评价任务时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 点到了特别好吃的外卖，想夸夸厨师和骑手时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 觉得自己写的评价总是很“路人”，想提升一下“文采”时。</li>
+    </ul>
+  </div>
+
+  <!-- FAQ 部分 -->
+  <h2 class="text-2xl font-semibold mb-6 mt-14 pt-6 border-t">你可能想问的几个问题</h2>
+
+  <div class="space-y-6 mb-12">
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：生成的评价会重复吗？看起来假吗？</h3>
+      <p class="text-gray-600">答：工具内置了丰富的词库和多种表达方式，每次生成都会随机组合。只要你选择的风格和亮点符合真实感受，生成的内容就会非常自然，像是你自己写的。你可以一次生成多条，挑选最合心意的那一条。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：我需要下载什么软件吗？</h3>
+      <p class="text-gray-600">答：完全不需要。它是一个可以直接在网页浏览器里使用的小工具，打开就能用，没有任何复杂的安装步骤。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：除了好评，它能写中评或差评吗？</h3>
+      <p class="text-gray-600">答：目前这个工具主要专注于帮助大家表达“满意”的心情，生成积极、正面的评价。毕竟，分享快乐和认可，也是一件很棒的事。</p>
+    </div>
+  </div>
+
+  <!-- 总结 -->
+  <div class="bg-gradient-to-r from-gray-50 to-blue-50 p-8 rounded-2xl text-center mt-12 mb-10">
+    <p class="text-xl font-medium mb-4">说到底，写评价不是为了应付任务。</p>
+    <p class="text-gray-700 mb-6">当你对一次购物或一份美食感到满意时，一句具体而真诚的好评，既能给商家带来鼓励，也能为其他像你一样的消费者提供有价值的参考。如果“词穷”暂时阻挡了你分享的冲动，那么这个好评生成器，或许能帮你轻松迈出第一步。</p>
+    <p class="text-gray-600 text-sm">试试看，让你心中的“五星好评”，找到更贴切的表达方式。</p>
+  </div>
+</div>
+`;export{t as default};

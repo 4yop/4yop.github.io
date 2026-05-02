@@ -1,90 +1,82 @@
 const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight">网上每天那么多热点，一个页面就能全看完？</h1>
-  <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
-    有没有觉得，每天想看看网上在聊什么，得在好几个软件之间来回切换？一会儿打开微博，一会儿刷刷抖音，再去贴吧逛逛……来回切换不仅麻烦，还容易错过重要的信息。其实，有个更简单的办法。
-  </p>
+<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6">给PDF文件加水印，原来这么简单</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700">
-      <span class="font-semibold">简单来说：</span>现在有一个工具，可以把微博、抖音、百度等多个平台的热搜榜，都集合在同一个页面里。你只需要点一下切换，就能看到不同平台最火的话题，不用再反复打开不同的应用了。
-    </p>
+  <p class="mb-6 text-lg">你是不是也遇到过这样的烦恼？辛苦做好的PDF文件发给别人，总担心被随意转发或盗用。这时，如果能给文件加上一个专属的“印记”，比如“内部资料”或者自己的Logo，心里就踏实多了。这个“印记”，就是我们常说的“水印”。</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
+    <p class="font-semibold mb-1">一句话了解水印：</p>
+    <p>水印就像是盖在文件上的一个透明印章，既能表明文件归属和性质，又不会过多遮挡原文内容。</p>
   </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它为你解决了什么？</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3 text-gray-700">
-    <li><span class="font-medium">节省时间：</span>不用再一个个应用点开，找热搜入口。所有热门话题一次性呈现。</li>
-    <li><span class="font-medium">快速了解全貌：</span>今天哪个平台最热闹？社会新闻在微博火，还是搞笑段子在抖音热？一眼就能比较。</li>
-    <li><span class="font-medium">不再错过热点：</span>你常刷抖音，可能就错过了微博上正在热议的社会话题。这个工具能帮你查漏补缺。</li>
-    <li><span class="font-medium">发现差异：</span>同一个事件，在不同平台的网友关注点可能完全不同，对比着看很有意思。</li>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">PDF水印有什么用？</h2>
+  <p class="mb-4">别小看这个小小的水印，它在很多场合都能派上大用场：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2">
+    <li><span class="font-medium">声明版权：</span>在设计稿、方案书等作品上加上公司名称或Logo，声明所有权。</li>
+    <li><span class="font-medium">区分状态：</span>给合同、标书等文件盖上“草案”、“终版”、“已确认”等字样，避免混淆。</li>
+    <li><span class="font-medium">防泄密提醒：</span>在内部资料上添加“机密”、“严禁外传”等警示语，提醒接收者注意。</li>
+    <li><span class="font-medium">品牌展示：</span>在产品手册、宣传PDF中加入品牌标识，潜移默化地强化品牌印象。</li>
   </ul>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">它是怎么工作的？</h2>
-  <p class="mb-4 text-gray-700">
-    使用起来非常直观。页面顶部有几个按钮，分别代表不同的平台，比如“微博”、“抖音”、“百度热搜”、“百度贴吧”。
-  </p>
-  <div class="bg-gray-100 p-5 rounded-lg mb-6 border border-gray-300">
-    <h3 class="font-bold text-lg mb-3 text-gray-800">你可以这样操作：</h3>
-    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
-      <li>打开页面，默认看到的是微博的热搜榜。</li>
-      <li>想看抖音的热门视频挑战或话题？点击“抖音”按钮，列表瞬间就切换过去了。</li>
-      <li>每个话题会显示它的排名、标题和大概的热度值。排名前三的通常会标红，比较醒目。</li>
-      <li>点击任何一条热搜的标题，就能在新窗口打开对应的链接，查看详细内容。</li>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">两种常见的水印，你选哪种？</h2>
+  <p class="mb-6">一般来说，我们可以选择添加文字水印或图片水印，它们各有特点。</p>
+
+  <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="text-xl font-semibold mb-3 text-center">文字水印</h3>
+      <p class="mb-3">就像用半透明的笔在纸上写字。它简单直接，通常用于添加提示性文字。</p>
+      <div class="text-gray-600 bg-gray-100 p-4 rounded text-center italic">
+        <p>示例效果：</p>
+        <p class="text-2xl mt-2 opacity-50 rotate-12">CONFIDENTIAL</p>
+      </div>
+      <p class="mt-4 text-sm">你可以自由输入任何文字，比如公司名称、文件状态、警示语等，并调整它的大小、颜色和倾斜角度。</p>
+    </div>
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="text-xl font-semibold mb-3 text-center">图片水印</h3>
+      <p class="mb-3">就像在文件上盖一个透明的图案章。它更形象美观，适合放置Logo或特定图标。</p>
+      <div class="text-gray-600 bg-gray-100 p-4 rounded flex justify-center items-center min-h-[120px]">
+        <p class="text-sm">（这里通常会显示一个公司Logo的预览图）</p>
+      </div>
+      <p class="mt-4 text-sm">你可以上传自己的Logo或任何图片，并控制它在页面上的大小，让品牌展示更加直观。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">如何调整出一个“恰到好处”的水印？</h2>
+  <p class="mb-6">水印加得太深，会干扰阅读；加得太浅，又起不到作用。掌握几个小技巧，就能做出效果刚刚好的水印。</p>
+
+  <div class="space-y-6 mb-12">
+    <div>
+      <h4 class="text-xl font-medium mb-2">1. 透明度是关键</h4>
+      <p>这是影响观感最重要的设置。数值调低，水印颜色变淡，更像背景；数值调高，水印更清晰醒目。通常设置在中间值附近，既看得见，又不刺眼。</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium mb-2">2. 选个好位置</h4>
+      <p>水印放在哪里好？通常放在页面正中央，或者对角线斜着铺满整个页面，视觉效果和防涂改效果都不错。就像贴邮票，可以贴在信封中间，也可以斜着贴一个角。</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium mb-2">3. 试试旋转一下</h4>
+      <p>让水印倾斜一个角度（比如经典的45度角），是常见的做法。这样看起来更专业，也让它不那么死板，同时减少对正文文字的遮挡。</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 mt-12 mb-8">
+    <h3 class="text-2xl font-semibold mb-4">给PDF加水印的步骤，其实很简单</h3>
+    <ol class="list-decimal pl-6 space-y-4">
+      <li><span class="font-medium">准备好你的PDF文件：</span>就像打印前需要准备好文档一样。</li>
+      <li><span class="font-medium">选择水印类型：</span>想加文字就选“文字”，想加Logo就选“图片”。</li>
+      <li><span class="font-medium">设计你的水印：</span>输入文字或上传图片，然后调整它的透明度、位置和角度，直到你满意为止。</li>
+      <li><span class="font-medium">预览与完成：</span>在右侧可以实时看到添加水印后的效果，确认无误后，就可以保存新的文件了。</li>
     </ol>
+    <p class="mt-6 text-gray-600">整个过程，就像是在给你的电子文件“盖个章”，操作直观，所见即所得。</p>
   </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">有什么特别之处？</h2>
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 清晰明了
-      </h3>
-      <p class="text-gray-700">界面设计得很干净，没有乱七八糟的广告或多余信息。就是纯粹的热搜榜单，让你专注在内容本身。</p>
-    </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 实时更新
-      </h3>
-      <p class="text-gray-700">榜单上方会显示最近的更新时间，让你知道看到的信息是不是最新的。数据也会定期刷新。</p>
-    </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 多端适配
-      </h3>
-      <p class="text-gray-700">无论是在电脑的大屏幕上，还是用手机的小屏幕浏览，页面的排版都会自动调整，看得都很舒服。</p>
-    </div>
-    <div class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm">
-      <h3 class="font-bold text-lg mb-2 flex items-center">
-        <span class="inline-block w-3 h-3 bg-blue-500 mr-2"></span> 快速加载
-      </h3>
-      <p class="text-gray-700">切换平台时，数据加载很快。如果正在加载，你会看到一个转圈的小动画，知道页面正在工作，不会以为是卡住了。</p>
-    </div>
-  </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">几个实用的小建议</h2>
+  <ul class="list-disc pl-6 mb-12 space-y-3">
+    <li><span class="font-medium">明确目的：</span>加水印前先想清楚，是为了提醒保密，还是展示版权？目的不同，水印的文字、大小和深浅都可以调整。</li>
+    <li><span class="font-medium">保持清晰：</span>水印是用来“看”的，不是用来“猜”的。确保它在各种设备上都能被清晰辨认。</li>
+    <li><span class="font-medium">风格统一：</span>如果是给一系列文件加水印，尽量使用相同的位置、字体和透明度，看起来更专业。</li>
+  </ul>
 
-  <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 md:mb-6 pt-4 border-t border-gray-200">你可能会问的问题</h2>
-  <div class="space-y-6 mb-10">
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">数据是实时的吗？</h3>
-      <p class="text-gray-700">它展示的是各个平台官方或公开的热搜榜单，数据会尽可能保持同步更新。但和原平台相比，可能会有几分钟的延迟，这属于正常情况。</p>
-    </div>
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">为什么没有知乎或B站？</h3>
-      <p class="text-gray-700">目前主要集成了几个用户量最大、热搜文化最典型的平台。未来可能会根据大家的需求，加入更多平台的选择。</p>
-    </div>
-    <div>
-      <h3 class="font-bold text-lg mb-2 text-gray-800">这个工具安全吗？</h3>
-      <p class="text-gray-700">它只是一个信息的“展示窗口”。当你点击某条热搜时，会跳转到对应平台的官方网站或页面，浏览和互动过程都在原平台进行，所以和直接访问那些网站是一样的。</p>
-    </div>
-  </div>
-
-  <div class="mt-12 p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-300">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800">写在最后</h2>
-    <p class="text-gray-700 mb-4">
-      在这个信息满天飞的时代，我们需要的可能不是更多信息，而是更高效获取信息的方式。一个聚合多个平台热搜的工具，就像给你的手机或电脑装了一个“热点雷达”。
-    </p>
-    <p class="text-gray-700">
-      它帮你省去了反复切换的麻烦，让你用最短的时间，快速把握当天各个社交平台上的脉搏。无论是想跟上潮流、寻找谈资，还是单纯不想与社会脱节，这或许都是一个值得尝试的省心选择。
-    </p>
-  </div>
+  <p class="mt-12 pt-6 border-t border-gray-300">希望这篇文章能帮你了解PDF水印的作用和方法。下次需要保护或标记你的重要PDF文件时，不妨试试给它加上一个合适的水印吧。</p>
 </div>
 `;export{s as default};

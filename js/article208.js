@@ -1,213 +1,182 @@
-const r=`
-<div class="text-gray-800 bg-white font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8 md:px-8">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">星宿关系计算器：探秘《宿曜经》27星宿的因缘奥秘</h1>
+const l=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
+    <!-- 文章标题 -->
+    <header class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">北京时间倒计时工具：让你不再错过任何重要时刻</h1>
+      <p class="text-gray-600 text-lg leading-relaxed">无论是开会、考试，还是等待重要的节日，一个精准的倒计时工具都能帮你更好地管理时间。</p>
+    </header>
 
-    <p class="text-lg mb-8 leading-relaxed">
-      在古老的东方智慧中，星宿不仅是夜空中闪烁的星辰，更是一把解读人与人之间缘分奥秘的钥匙。《宿曜经》，这部由唐代不空三藏大师翻译的经典，将古印度占星术与中国传统文化完美融合，为我们揭示了27星宿背后深邃的人际关系密码。
-    </p>
-
-    <div class="bg-gray-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
-      <p class="italic">
-        本文将带你走进27星宿的神秘世界，了解六种核心星宿关系的含义，探索人与人之间业力与缘分的深层联系。愿这古老的智慧能为你理解人际关系提供一个全新的视角。
-      </p>
+    <!-- 引子 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg mb-8">
+      <p class="text-gray-700 leading-relaxed">你有没有过这样的经历？<br>因为忘记时间而错过了重要的会议；<br>在等待朋友时不断看手机，却还是不小心错过了约定时间；<br>或者准备一顿美食，却因为计时不准而煮过了头。<br>其实，一个简单好用的倒计时工具，就能帮你解决这些问题。</p>
     </div>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-6 pb-2 border-b">一、什么是《宿曜经》与27星宿？</h2>
-    <p class="mb-4 leading-relaxed">
-      《文殊师利菩萨及诸仙所说吉凶时日善恶宿曜经》，简称《宿曜经》，是唐代密教大师不空三藏所译的一部重要典籍。它不仅是一部佛经，更是中国历史上最早、最系统的占星学著作之一。这部经典将古印度的Nakshatras（星宿）体系与中国本土文化完美融合，形成了独具特色的星宿文化。
-    </p>
+    <!-- 什么是北京时间倒计时 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-5 pb-3 border-b border-gray-200">什么是北京时间倒计时？</h2>
+      <p class="mb-4 leading-relaxed">北京时间倒计时，顾名思义就是以中国标准时间（北京时间，UTC+8）为准的计时工具。它不仅能精确显示当前的时间、日期和星期，还能帮你设置各种倒计时。</p>
+      <p class="leading-relaxed">和普通的计时器不同，北京时间倒计时工具更符合我们在国内的生活习惯，无论是上班打卡、学校上课，还是观看直播节目，都能提供最准确的时间参考。</p>
+    </section>
 
-    <h3 class="text-xl font-medium mt-8 mb-4">为什么是27星宿而非28？</h3>
-    <p class="mb-4 leading-relaxed">
-      在天文学上，月亮绕地球一周约为27.32日。中国传统的28星宿为了四方对称增加了一个"牛宿"，但在《宿曜经》的演算体系中，为了精准对齐月律周期，剔除了跨度极小的牛宿，采用27星宿循环。这种算法更侧重于月亮所代表的潜意识、情感本能与灵魂业力。
-    </p>
-
-    <p class="mb-6 leading-relaxed">
-      27星宿，每一个都有其独特的象征意义和能量特质。从角宿的开创精神，到轸宿的智慧收尾，27个星宿如同一幅生命的画卷，展现了人性的各个面向。
-    </p>
-
-    <h3 class="text-xl font-medium mt-8 mb-4">27星宿一览</h3>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">角木蛟</h4>
-        <p class="text-gray-600 text-sm">开创、领导</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">亢金龙</h4>
-        <p class="text-gray-600 text-sm">内敛、积蓄</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">氐土貉</h4>
-        <p class="text-gray-600 text-sm">根基、稳定</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">房日兔</h4>
-        <p class="text-gray-600 text-sm">内在、私密</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">心月狐</h4>
-        <p class="text-gray-600 text-sm">情感、直觉</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">尾火虎</h4>
-        <p class="text-gray-600 text-sm">热情、行动力</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">箕水豹</h4>
-        <p class="text-gray-600 text-sm">流动、传播</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">斗木獬</h4>
-        <p class="text-gray-600 text-sm">收集、整合</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">女土蝠</h4>
-        <p class="text-gray-600 text-sm">细腻、洞察</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">虚日鼠</h4>
-        <p class="text-gray-600 text-sm">隐藏、守护</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">危月燕</h4>
-        <p class="text-gray-600 text-sm">危机、转机</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">室火猪</h4>
-        <p class="text-gray-600 text-sm">充实、饱满</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">壁水貐</h4>
-        <p class="text-gray-600 text-sm">屏障、保护</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">奎木狼</h4>
-        <p class="text-gray-600 text-sm">开启、探索</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">娄金狗</h4>
-        <p class="text-gray-600 text-sm">聚集、累积</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">胃土雉</h4>
-        <p class="text-gray-600 text-sm">储存、滋养</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">昴日鸡</h4>
-        <p class="text-gray-600 text-sm">警觉、清晰</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">毕月乌</h4>
-        <p class="text-gray-600 text-sm">完全、圆满</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">觜火猴</h4>
-        <p class="text-gray-600 text-sm">精简、核心</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">参水猿</h4>
-        <p class="text-gray-600 text-sm">参与、观察</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">井木犴</h4>
-        <p class="text-gray-600 text-sm">源泉、深度</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">鬼金羊</h4>
-        <p class="text-gray-600 text-sm">神秘、隐藏</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">柳土獐</h4>
-        <p class="text-gray-600 text-sm">柔顺、适应</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">星日马</h4>
-        <p class="text-gray-600 text-sm">光明、照耀</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">张月鹿</h4>
-        <p class="text-gray-600 text-sm">展开、延伸</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">翼火蛇</h4>
-        <p class="text-gray-600 text-sm">飞翔、升华</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold mb-1">轸水蚓</h4>
-        <p class="text-gray-600 text-sm">转化、循环</p>
-      </div>
-    </div>
-
-    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">二、六种核心星宿关系：三九之法</h2>
-    <p class="mb-6 leading-relaxed">
-      《宿曜经》将星宿之间的关系归纳为六种核心类型，称为"三九之法"。每一种关系都揭示了人与人之间独特的能量互动模式和业力连接。
-    </p>
-
-    <div class="space-y-6 mb-10">
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">一、命之星 · 镜中相遇</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>双方属于同一个星宿</p>
-        <p class="text-gray-600">
-          这种关系如同照镜子，性格、习惯、思维极度相似。相遇时有强烈的同类感，仿佛遇到了另一个自己。他们能够深刻理解对方的内心世界，是灵魂的另一半。
-        </p>
+    <!-- 为什么需要倒计时工具 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-5 pb-3 border-b border-gray-200">为什么你需要一个倒计时工具？</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3 text-blue-600">提高工作效率</h3>
+          <p class="text-gray-700">无论是开会、工作汇报还是限时任务，设定倒计时能让你更加专注，避免拖延。比如设置25分钟的专注工作时间，然后休息5分钟，这就是著名的番茄工作法。</p>
+        </div>
+        
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3 text-green-600">避免错过重要时刻</h3>
+          <p class="text-gray-700">重要的会议、朋友的生日、节假日的到来...设置倒计时提醒，就不会因为忙碌而忘记了。倒计时结束时，工具会通过声音或通知提醒你。</p>
+        </div>
       </div>
 
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">二、业胎关系 · 宿世债缘</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>星宿距离为9或18</p>
-        <p class="text-gray-600">
-          这是最具宿命感的关系，一方为"业"（前世因），一方为"胎"（今世果）。双方即便没有血缘，也会有无法斩断的连接感。这种关系往往伴随着深刻的情感纠葛和成长课题。
-        </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3 text-purple-600">日常生活的得力助手</h3>
+          <p class="text-gray-700">煮鸡蛋需要几分钟？面膜要敷多久？健身时每组动作的时间间隔是多少？这些日常小事，用倒计时工具来管理，既方便又准确。</p>
+        </div>
+        
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3 text-orange-600">培养时间观念</h3>
+          <p class="text-gray-700">通过倒计时，你能更直观地感受时间的流逝。对于孩子来说，这也是培养时间管理能力的好方法。比如写作业前设定45分钟，帮助他们养成专注的习惯。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 如何使用倒计时工具 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-5 pb-3 border-b border-gray-200">倒计时工具怎么用？</h2>
+      
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">快速倒计时：适合短时间需求</h3>
+        <p class="mb-4 leading-relaxed">如果你需要一个简单的倒计时，比如5分钟后要关火、10分钟后要出门，快速倒计时是最方便的选择。</p>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+          <li><span class="font-medium">预设时间按钮</span>：直接点击1分钟、5分钟、10分钟等常用时间</li>
+          <li><span class="font-medium">自定义时间</span>：如果需要特定时长，比如7分钟或45分钟，可以手动输入小时、分钟和秒钟</li>
+          <li><span class="font-medium">一键开始</span>：设置好后点击开始，倒计时就会自动运行</li>
+        </ul>
       </div>
 
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">三、荣亲关系 · 家族守护</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>代表荣耀与亲近</p>
-        <p class="text-gray-600">
-          这是最适合婚姻的关系，双方相处如家人般自在，能互相增益对方的运势，稳定而持久。荣亲关系带来的是温暖的归属感和彼此成就的能量。
-        </p>
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">目标时间倒计时：期待重要时刻</h3>
+        <p class="mb-4 leading-relaxed">如果你在等待特定的时间点，比如今天下午3点的会议、下周五的假期，或者明年的生日，目标时间倒计时就派上用场了。</p>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+          <li><span class="font-medium">选择日期和时间</span>：直接在日历上选择目标日期，然后选择具体时间</li>
+          <li><span class="font-medium">添加标题</span>：给倒计时起个名字，比如"团队会议"或"春节放假"</li>
+          <li><span class="font-medium">常用目标预设</span>：工具还提供了"今天下班"、"明天上班"、"周末"等常用选项，一键设置</li>
+        </ul>
       </div>
 
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">四、安坏关系 · 极致虐恋</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"安住"，一方为"破坏"</p>
-        <p class="text-gray-600">
-          这种关系极具吸引力但也极具杀伤力，充满了控制与被控制的博弈，是修行中最难跨越的课题。安坏关系往往带来深刻的成长，但也伴随着剧烈的情感波动。
-        </p>
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">倒计时进行中：随时掌握剩余时间</h3>
+        <p class="mb-4 leading-relaxed">倒计时开始后，你可以清楚地看到：</p>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>剩余的天数、小时、分钟和秒钟</li>
+          <li>进度条显示已经过去了多少时间</li>
+          <li>颜色变化：时间快结束时，数字会变成醒目的红色</li>
+          <li>随时暂停、继续或停止倒计时</li>
+        </ul>
       </div>
 
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">五、危成关系 · 现实博弈</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"危险"，一方为"成就"</p>
-        <p class="text-gray-600">
-          多发生于事业合作伙伴或因才华吸引的伴侣，强调现实价值的创造与博弈。危成关系往往在物质和事业层面带来显著的互动和成就。
-        </p>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">提醒功能：不再错过</h3>
+        <p class="mb-4 leading-relaxed">倒计时结束时，工具会：</p>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>播放提示音</li>
+          <li>在页面上显示完成通知</li>
+          <li>如果开启了浏览器通知权限，还会在电脑或手机屏幕上弹出提醒</li>
+          <li>即使你切换到其他网页或应用，也能收到提醒</li>
+        </ul>
       </div>
+    </section>
 
-      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
-        <h3 class="text-xl font-bold mb-3">六、友衰关系 · 志趣相投</h3>
-        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"友"，一方为"衰"</p>
-        <p class="text-gray-600">
-          像朋友一样玩在一起，轻松愉快，但缺乏物质上的深度绑定，缘分较轻，需靠共同爱好维系。友衰关系带来的是轻松的陪伴和思想的交流。
-        </p>
+    <!-- 使用场景 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-5 pb-3 border-b border-gray-200">倒计时工具的使用场景</h2>
+      
+      <div class="space-y-6">
+        <div class="flex flex-col md:flex-row gap-5 items-start">
+          <div class="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">1</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">工作学习</h3>
+            <p class="text-gray-700 leading-relaxed">会议倒计时、项目截止时间、考试时间、番茄工作法计时、午休时间提醒等。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-5 items-start">
+          <div class="bg-green-100 text-green-800 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">2</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">日常生活</h3>
+            <p class="text-gray-700 leading-relaxed">烹饪计时（煮面、炖汤、烘焙）、健身计时（每组动作、休息间隔）、服药提醒、面膜时间等。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-5 items-start">
+          <div class="bg-purple-100 text-purple-800 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">3</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">节日活动</h3>
+            <p class="text-gray-700 leading-relaxed">春节倒计时、生日倒计时、纪念日倒计时、假期倒计时、节目直播倒计时等。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-5 items-start">
+          <div class="bg-orange-100 text-orange-800 font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">4</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">育儿教育</h3>
+            <p class="text-gray-700 leading-relaxed">孩子写作业计时、游戏时间限制、看电视时间管理、刷牙计时等，帮助孩子建立时间观念。</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">三、如何计算自己的星宿？</h2>
-    <p class="mb-4 leading-relaxed">
-      计算星宿需要你的公历出生日期。星宿的确定基于农历日期，通过复杂的天文计算得出。现代的星宿计算器已经将这些复杂的算法简化，你只需要输入出生日期，就能立刻知道自己属于哪个星宿。
-    </p>
-    <p class="mb-6 leading-relaxed">
-      星宿不仅仅是一个标签，更是一种能量的象征。每个星宿都有其独特的特质和倾向，了解自己的星宿，可以帮助你更好地认识自己，理解自己的行为模式和情感需求。
-    </p>
+    <!-- 常见问题 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-5 pb-3 border-b border-gray-200">常见问题解答</h2>
+      
+      <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">这个倒计时工具需要下载安装吗？</h3>
+          <p class="text-gray-700">不需要。这是一个在线工具，直接在浏览器中打开网页就能使用，无需下载安装任何软件。</p>
+        </div>
 
-    <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10 text-center">
-      <p class="text-lg font-medium mb-3">想知道你和他/她之间的星宿关系吗？</p>
-      <p class="text-gray-700">
-        星宿揭示的是一种能量倾向。了解关系背景是为了更好地经营，而非定义结局。愿你在星辰的指引下，遇见更好的彼此。现在就来试试这个免费的星宿关系计算器，探索你们之间的缘分奥秘吧！
-      </p>
-    </div>
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">倒计时准确吗？</h3>
+          <p class="text-gray-700">工具使用的是北京时间（中国标准时间），与国家标准时间同步，非常准确。即使在倒计时过程中关闭了网页，再次打开时也可以查看历史记录。</p>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">如何收到提醒？</h3>
+          <p class="text-gray-700">当倒计时结束时，网页会播放提示音并显示通知。如果你允许浏览器发送通知，还会在屏幕右上角（电脑）或通知中心（手机）收到提醒。</p>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">在手机上能用吗？</h3>
+          <p class="text-gray-700">当然可以。这个工具在手机和电脑上都能正常使用，界面会自动调整，方便在各种设备上操作。</p>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">需要注册账号吗？</h3>
+          <p class="text-gray-700">完全不需要。打开即用，所有设置都会保存在你的浏览器中，保护你的隐私。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 总结 -->
+    <section class="bg-gray-50 rounded-xl p-6 md:p-8">
+      <h2 class="text-2xl font-bold mb-4">总结</h2>
+      <p class="mb-4 leading-relaxed">一个好的时间管理工具，能让我们的生活更加有序。北京时间倒计时工具正是这样一个简单实用的助手，它不复杂，不花哨，但能在你需要的时候提供准确的计时服务。</p>
+      <p class="leading-relaxed">无论你是需要短时间的提醒，还是在期待某个重要的日子，都可以试试这个工具。它完全免费，无需注册，打开网页就能开始使用，为你的生活增添一份从容和准时。</p>
+    </section>
+
+    <!-- 文章结尾 -->
+    <footer class="mt-10 pt-6 border-t border-gray-200">
+      <p class="text-gray-600 text-center">时间是最公平的资源，每个人每天都只有24小时。用好每一分钟，让生活更加充实而有意义。</p>
+    </footer>
   </article>
 </div>
-`;export{r as default};
+`;export{l as default};

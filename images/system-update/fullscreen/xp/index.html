@@ -10,8 +10,14 @@ body{background:#0055aa;width:100vw;height:100vh;display:flex;flex-direction:col
 .pct{margin-top:12px;font-size:13px;color:#aaddff}
 </style></head>
 <body>
-<div class="title">正在配置更新。请勿关闭计算机。</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="pct">已完成 <span id="pct">0</span>%</div>
-<script>var n=0;setInterval(function(){n=n<95?n+Math.floor(Math.random()*3+1):95;document.getElementById('pct').textContent=n},500)</script>
+<div class="pct"><span id="pctLabel"></span> <span id="pct">0</span>%</div>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+var t=lang==='en'?'Configuring updates. Do not turn off your computer.':'正在配置更新。请勿关闭计算机。';
+var p=lang==='en'?'Complete':'已完成';
+document.getElementById('title').textContent=t;
+document.getElementById('pctLabel').textContent=p;
+document.title=lang==='en'?'Windows XP Updating':'Windows XP 更新中';
+var n=0;setInterval(function(){n=n<95?n+Math.floor(Math.random()*3+1):95;document.getElementById('pct').textContent=n},500)</script>
 </body></html>

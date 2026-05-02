@@ -1,84 +1,82 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h2>
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">图片太大传不上去？别急，尺寸调整其实很简单</h1>
 
-    <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
-      <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed">
+    <p>你是不是也遇到过这种尴尬：精心拍好的照片，想传到网站做头像，或者发给朋友，结果系统弹出一行冷冰冰的字——“图片过大，无法上传”。又或者，传是传上去了，但在手机上看模糊一片，或者把整个网页的排版都挤乱了。</p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+    <p class="text-blue-800"><strong>先别怪你的手机或电脑</strong>，这其实是一个很常见的小问题。简单来说，就是图片的“身材”（尺寸）不太适合它要去的地方。好消息是，给图片“调整身材”这件事，现在人人都能做，而且完全免费、超级简单。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">为什么我们需要给图片“变个身”？</h2>
+
+  <p class="mb-4">你可以把不同的网站和App想象成不同尺寸的“相框”。</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+    <li><strong>微信朋友圈</strong>的“相框”有自己的最佳尺寸，图片太大，它就会自动帮你压缩，结果可能就是变模糊。</li>
+    <li><strong>电商平台</strong>上传商品图，要求图片既清晰又不能太大，否则影响页面打开速度，顾客可能就没耐心等了。</li>
+    <li><strong>报名、签证等网站</strong>的系统往往比较“古板”，对图片大小和尺寸有严格的数字要求，差一点都不行。</li>
+    <li>自己做个简单的<strong>PPT或者文档</strong>，插入一张巨大的照片，整个文件立刻变得笨重不堪，发给同事都麻烦。</li>
+  </ul>
+  <p class="mb-6">所以，学会自己调整图片尺寸，就像学会给衣服修改裤脚一样，是个非常实用的生活小技能。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">图片调整，到底在调什么？</h2>
+
+  <p class="mb-6">别被“像素”、“分辨率”这些词吓到。你可以把它理解成两种主要操作：</p>
+
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h3 class="font-medium text-gray-900 text-lg mb-2">1. 改大小（缩放）</h3>
+      <p class="text-gray-700">就像把一张大海报按比例缩小成明信片。这是最常用的功能，目的是减少图片占用的空间，让它更容易上传和传输。</p>
     </div>
-
-    <div class="relative w-full h-64 sm:h-80 mb-8 bg-gray-100 rounded-lg overflow-hidden">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-center">
-          <div class="text-5xl mb-4 text-gray-300">🖼️</div>
-          <p class="text-gray-500">（这里可以放一张简单的、带马赛克效果的示例图片示意图）</p>
-        </div>
-      </div>
+    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+      <h3 class="font-medium text-gray-900 text-lg mb-2">2. 改尺寸（裁切/固定）</h3>
+      <p class="text-gray-700">就像把一张长方形照片，裁剪成正方形，或者硬性规定它必须是800宽、600高。这通常是为了满足一些平台严格的格式要求。</p>
     </div>
+  </div>
 
-    <div class="prose prose-lg max-w-none">
-      <p class="mb-4">在网上分享照片、上传证件或者发布截图时，我们常常需要把一些敏感信息遮挡起来，比如车牌号、门牌号、个人信息，或者不想露脸的照片。这时候，马赛克就成了我们的好帮手。</p>
-      <p class="mb-6">你可能会想，给图片打马赛克是不是要用到很复杂的软件？其实不用。现在有一些非常方便的小工具，在网页上点几下就能完成。</p>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">一个好用的工具应该让你“怎么想就怎么调”</h2>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">为什么我们需要给图片打马赛克？</h2>
-      <p class="mb-4">这主要是在保护我们自己和别人的隐私。想一想下面这些场景：</p>
-      <ul class="list-disc pl-5 mb-6 space-y-2">
-        <li><strong>分享生活照时</strong>：照片背景里无意拍到的家庭地址、快递单号，需要遮一下。</li>
-        <li><strong>处理工作截图时</strong>：发给同事或客户的截图中，可能含有其他人的联系方式或内部编号，需要隐藏。</li>
-        <li><strong>上传证件材料时</strong>：在办理一些线上业务时，可能需要上传身份证、营业执照等，但除了必要信息，其他部分最好能打上马赛克。</li>
-        <li><strong>发布内容到社交媒体时</strong>：拍到了路人清晰的正脸，或者不想让自己的脸太突出，打上马赛克是对彼此的尊重。</li>
-      </ul>
+  <p class="mb-4">对于不懂技术的人来说，最好的工具就是能听懂你的“人话”。比如：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+    <li>你心里想：“<strong>这张图我想缩小一半</strong>。” 那就可以直接选择“按百分比调整”，输入50%。</li>
+    <li>网站要求：“<strong>头像必须是200x200像素</strong>。” 你就可以选择“固定尺寸”，宽和高都输入200。</li>
+    <li>你只关心：“<strong>把宽度调到800，高度随便，别变形就行</strong>。” 那就用“固定宽度”模式，输入800，高度会自动按比例算好。</li>
+    <li>想一次处理<strong>好几张旅游照片</strong>？一个现代的工具肯定支持你一次性全部选中，统一调整，然后一键打包下载，省时省力。</li>
+  </ul>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么给图片打马赛克？分四步搞定</h2>
-      <p class="mb-6">使用一个简单的在线编辑器，整个过程就像在手机上圈画一样直观。</p>
+  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-8">
+    <h3 class="font-medium text-yellow-800 text-lg mb-2">一个小提示：关于清晰度</h3>
+    <p class="text-yellow-800">把图片调小，通常不会影响你在手机或电脑上看的清晰度。但如果你把一张很小的图片强行放大，就肯定会变模糊。所以，调整时，<strong>“由大变小”很安全，“由小变大”要谨慎</strong>。</p>
+  </div>
 
-      <div class="bg-blue-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-blue-800">第一步：找到你的图片</h3>
-        <p class="mb-2">首先，点击“上传图片”按钮，从你的电脑或手机里选择你想处理的那张照片。支持常见的图片格式，比如 JPG、PNG 都可以。</p>
-      </div>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">谁最需要这个技能？可能就有你！</h2>
 
-      <div class="bg-green-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-green-800">第二步：圈出要遮挡的地方</h3>
-        <p class="mb-2">上传后，点击“开始绘制”按钮。然后，就像你用鼠标或手指在屏幕上画框一样，按住并拖动，把需要打码的区域框选出来。</p>
-        <p>你可以<strong>反复框选多个不同的区域</strong>，比如同时把一张图片里的人脸和背景里的文字都遮住。</p>
-      </div>
+  <div class="mb-6">
+    <p class="font-medium text-gray-900 mb-2">▸ 开网店的朋友：</p>
+    <p class="text-gray-700 pl-4 mb-4">主图、详情页图都有尺寸规范。图片调整得当，店铺页面加载快，看起来专业，顾客体验更好。</p>
 
-      <div class="bg-yellow-50 p-5 rounded-xl mb-6">
-        <h3 class="text-xl font-medium mb-4 text-yellow-800">第三步：预览和调整</h3>
-        <p class="mb-2">在框选的时候，你就能立刻看到马赛克效果。如果框的位置不对，或者想重来，可以点击“清除全部”，然后重新框选。</p>
-        <p>全部框选满意后，记得点击“完成绘制”。</p>
-      </div>
+    <p class="font-medium text-gray-900 mb-2">▸ 经常需要交电子材料的上班族或学生：</p>
+    <p class="text-gray-700 pl-4 mb-4">无论是求职的简历照，还是各种申请表的附件，再也不用担心“图片格式不符合要求”被退回来。</p>
 
-      <div class="bg-purple-50 p-5 rounded-xl mb-8">
-        <h3 class="text-xl font-medium mb-4 text-purple-800">第四步：保存你的新图片</h3>
-        <p class="mb-2">最后一步最简单，点击“保存图片”。处理好的图片就会保存到你的设备里了，原来图片上被圈选的地方，都变成了格子状的马赛克。</p>
-        <p>接下来，你就可以放心地使用这张处理过的图片了。</p>
-      </div>
+    <p class="font-medium text-gray-900 mb-2">▸ 喜欢在社交媒体分享生活的你：</p>
+    <p class="text-gray-700 pl-4">把照片调整到合适的大小再发布，画质更可控，也不会因为原图太大消耗好友的流量。</p>
+  </div>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">几个常见问题</h2>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">行动起来，其实就几步</h2>
 
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">马赛克打得牢固吗？会被还原吗？</h3>
-        <p class="mb-4">通过这种像素格处理方式打上的马赛克，从常规的图片查看方式来说，信息已经被永久性地模糊处理了，无法直接看清。这是保护隐私的可靠方法。当然，任何技术都没有绝对的“牢不可破”，但对于日常的隐私保护需求来说，这已经足够了。</p>
-      </div>
+  <p class="mb-6">整个过程，比你想象得更流畅：</p>
+  <ol class="list-decimal pl-6 mb-8 space-y-3 text-gray-700">
+    <li><strong>找到工具</strong>：找到一个在浏览器里就能用的在线图片尺寸调整器。</li>
+    <li><strong>拖入照片</strong>：直接把电脑里的图片拖进网页，或者点击上传。可以一张，也可以多张。</li>
+    <li><strong>说出你的要求</strong>：是用百分比缩小？还是指定一个精确的宽度？按你的需求选择。</li>
+    <li><strong>点击处理并下载</strong>：稍等片刻，就能预览调整后的效果，满意的话就下载到电脑或手机里。</li>
+  </ol>
 
-      <div class="mb-6">
-        <h3 class="text-xl font-medium mb-2">会不会影响图片其他部分的质量？</h3>
-        <p class="mb-4">不会。这种工具只会改变你<strong>亲手框选出来的那一小块区域</strong>，图片的其他部分完全保持原样，清晰度不变。</p>
-      </div>
-
-      <div class="mb-10">
-        <h3 class="text-xl font-medium mb-2">在手机上好操作吗？</h3>
-        <p class="mb-4">好的工具会考虑到手机用户。页面布局会自动适应手机屏幕的大小，框选操作也支持手指触摸拖动，和在电脑上用鼠标操作一样方便。</p>
-      </div>
-
-      <div class="bg-gray-100 p-6 rounded-xl mt-12">
-        <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
-        <p class="mb-3 text-center">给图片打马赛克，核心就是三步：<strong>上传 → 圈选 → 保存</strong>。</p>
-        <p class="text-center">这已经不再是需要专业软件才能做的事。花一分钟时间，动动手指，就能有效地为你的图片加上一道隐私“防护栏”，让自己和他人更安心。</p>
-        <p class="mt-4 text-gray-600 text-sm text-center">下次发图前如果需要遮挡信息，不妨试试看。</p>
-      </div>
-    </div>
-  </article>
-</div>
+  <div class="text-center p-8 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-300 mt-12">
+    <p class="text-xl font-medium text-gray-900 mb-3">别再让“图片尺寸不对”这种小麻烦影响你的好心情和正事了。</p>
+    <p class="text-gray-700">现在有很多简单易用的在线工具，能把这件事变得像拖拽文件一样轻松。花一分钟了解一下，下次遇到问题，你就能从容应对，快速搞定。</p>
+  </div>
+</article>
 `;export{t as default};

@@ -18,9 +18,13 @@ body{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);widt
 </style></head>
 <body>
 <svg class="gear" viewBox="0 0 64 64" fill="#78909c"><path d="M32 16a16 16 0 1016 16 16 16 0 00-16-16zm0 26a10 10 0 1110-10 10 10 0 01-10 10z"/><path d="M59.6 27.4l-4.8-1a23 23 0 000-6l4.8-1a2 2 0 001.6-2.4l-.8-3.2a2 2 0 00-2.4-1.6l-4.8 1A23 23 0 0049 9.2l2.4-4.2a2 2 0 00-.8-2.8l-2.8-1.6a2 2 0 00-2.8.8L42.6 6a23 23 0 00-5.2-3V2a2 2 0 00-2-2h-3.2a2 2 0 00-2 2v1A23 23 0 0025 6l-2.4-4.2a2 2 0 00-2.8-.8L17 2.4a2 2 0 00-.8 2.8L18.6 9a23 23 0 00-4.2 4.2l-4.8-1a2 2 0 00-2.4 1.6l-.8 3.2a2 2 0 001.6 2.4l4.8 1a23 23 0 000 6l-4.8 1a2 2 0 00-1.6 2.4l.8 3.2a2 2 0 002.4 1.6l4.8-1A23 23 0 0018.6 55l-2.4 4.2a2 2 0 00.8 2.8l2.8 1.6a2 2 0 002.8-.8L25 58a23 23 0 005.2 3v1a2 2 0 002 2h3.2a2 2 0 002-2v-1a23 23 0 005.2-3l2.4 4.2a2 2 0 002.8.8l2.8-1.6a2 2 0 00.8-2.8L49.4 55a23 23 0 004.2-4.2l4.8 1a2 2 0 002.4-1.6l.8-3.2a2 2 0 00-1.6-2.4z"/></svg>
-<div class="title">系统正在更新，请耐心等待</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">已完成 <span id="pct">0</span>%</div>
+<div class="sub"><span id="pctLabel"></span> <span id="pct">0</span>%</div>
 <div class="dots"><span>.</span><span>.</span><span>.</span></div>
-<script>var n=0;setInterval(function(){n=n<96?n+Math.floor(Math.random()*1+1):96;document.getElementById('pct').textContent=n},600)</script>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'System is updating, please wait':'系统正在更新，请耐心等待';
+document.getElementById('pctLabel').textContent=lang==='en'?'Complete':'已完成';
+document.title=lang==='en'?'System Updating':'系统更新中';
+var n=0;setInterval(function(){n=n<96?n+Math.floor(Math.random()*1+1):96;document.getElementById('pct').textContent=n},600)</script>
 </body></html>

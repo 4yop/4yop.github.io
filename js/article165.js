@@ -1,88 +1,110 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-    <article>
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线抽签工具怎么用？一个页面搞定随机点名和抽奖</h1>
+const s=`
+<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">快递单号怎么查？一篇讲清楚查询方法和常见问题</h1>
 
-        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
-            还在为聚会抽奖、课堂提问选谁、或者团队任务分配而烦恼吗？自己写纸条？转盘？这些方法要么麻烦，要么感觉不够公平。其实，一个简单的网页工具就能帮你轻松、有趣又公平地解决这些问题。
+  <p class="text-lg text-slate-600 mb-8">
+    网购后最期待的就是拆快递，而等待过程中，最常做的事就是一遍遍查看物流信息。快递到哪里了？今天能到吗？这份期待和焦急，相信每个人都经历过。今天，我们就来聊聊怎么方便地查询快递，以及遇到查询问题时该怎么办。
+  </p>
+
+  <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-r">
+    <h2 class="text-xl font-semibold text-slate-800 mb-2">核心方法速览</h2>
+    <p class="text-slate-700">
+      查询快递，本质上就是通过唯一的“快递单号”，在物流公司的系统里找到你的包裹轨迹。就像用身份证号查人一样。
+    </p>
+  </div>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">一、最常用的几种查询方式</h2>
+    <p class="text-slate-700 mb-4">
+      知道自己寄的或收的是哪家快递，是快速查询的第一步。快递单号通常由数字或字母组合而成，打印在面单最显眼的位置。
+    </p>
+    <ul class="space-y-4 pl-5 text-slate-700">
+      <li class="pl-2">
+        <strong class="text-slate-800">1. 快递公司官网/APP查询</strong>
+        <p class="mt-1">这是最直接的方法。如果你知道是顺丰、中通、圆通等，直接进入他们的官方网站或手机应用，找到“物流查询”入口，输入单号即可。信息最权威。</p>
+      </li>
+      <li class="pl-2">
+        <strong class="text-slate-800">2. 购物平台直接查看</strong>
+        <p class="mt-1">在淘宝、京东等平台下单的包裹，不用记单号。直接在“我的订单”里点击物流信息，就能看到实时动态，非常省心。</p>
+      </li>
+      <li class="pl-2">
+        <strong class="text-slate-800">3. 使用综合查询工具</strong>
+        <p class="mt-1">如果你手头只有一个单号，不确定是哪家快递公司，或者想一次性管理多个不同公司的包裹，这类工具就派上用场了。你只需要输入单号，它通常能自动识别快递公司并展示物流信息，省去了来回切换不同网站的麻烦。</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">二、查询时，你可能会遇到这些问题</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold text-slate-800 mb-2">1. 单号无效或查不到信息？</h3>
+        <p class="text-slate-700 mb-2">别急，可能有以下几个原因：</p>
+        <ul class="list-disc pl-5 text-slate-700 space-y-1">
+          <li><strong>刚发货：</strong>卖家点击发货后，物流公司需要时间揽收、扫描单号，信息上传系统有延迟，一般等几小时再查。</li>
+          <li><strong>单号输错了：</strong>仔细核对，数字“0”和字母“O”，数字“1”和字母“I”最易混淆。</li>
+          <li><strong>快递公司选错了：</strong>用综合查询工具时，如果自动识别有误，可以尝试手动选择公司。</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-slate-800 mb-2">2. 物流信息好几天不更新？</h3>
+        <p class="text-slate-700">
+          包裹在运输途中，从一个城市转运中心到另一个城市，中间的长途运输可能没有扫描节点。如果长时间停在“已发货”或某个中转站，可能是遇到了高峰期堵车、天气原因延误，或者包裹确实遗漏扫描了。如果超过预估时间很久，可以联系发货方或快递客服询问。
         </p>
-
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-            <p class="text-gray-800">本文将为你介绍一个功能全面的在线抽签工具，它能做什么，以及如何用最简单的方式使用它。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">一、这个工具能帮你做什么？</h2>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            简单来说，它是一个“电子抽签箱”。你可以把一堆名字放进去，然后让它随机滚动，最后停在一个名字上。听起来简单，但它有一些贴心的小功能，让不同场景下的使用都很方便。
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-slate-800 mb-2">3. 显示“已签收”但我没收到？</h3>
+        <p class="text-slate-700">
+          首先检查是否被家人、同事或物业门卫代收。如果没有，可能是快递员误操作提前点击了签收，实际上包裹还在派送中。可以直接电话联系派件员，或通过官方渠道投诉反馈。
         </p>
+      </div>
+    </div>
+  </section>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景一：公司年会抽奖</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把所有员工的名字导入进去。点击开始，大屏幕上名字飞快滚动，营造紧张气氛。点击停止，幸运儿的名字被放大展示，系统还会自动撒花庆祝，并且能把结果保存成图片，方便留念或公布。
-        </p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">三、让查快递变得更轻松的小习惯</h2>
+    <p class="text-slate-700 mb-4">
+      养成几个好习惯，能让你在需要时快速找到物流信息，避免手忙脚乱。
+    </p>
+    <ul class="grid md:grid-cols-2 gap-4 text-slate-700">
+      <li class="p-4 border border-slate-200 rounded-lg">
+        <strong class="block text-slate-800 mb-1">保存发货通知</strong>
+        网购后，卖家发的发货短信或平台通知里含有单号，别急着删，等收货后再清理。
+      </li>
+      <li class="p-4 border border-slate-200 rounded-lg">
+        <strong class="block text-slate-800 mb-1">利用查询历史</strong>
+        有些查询页面会自动帮你保存最近查过的单号。再次查询时直接点击，就不用重复输入一长串数字了，特别方便。
+      </li>
+      <li class="p-4 border border-slate-200 rounded-lg">
+        <strong class="block text-slate-800 mb-1">关注关键节点</strong>
+        不用每分钟刷新。重点关注“已揽收”、“到达XX转运中心”、“开始派送”这几个节点，就能大致掌握包裹行程。
+      </li>
+      <li class="p-4 border border-slate-200 rounded-lg">
+        <strong class="block text-slate-800 mb-1">善用手机通知</strong>
+        在快递公司APP或购物平台开启物流提醒，重要动态会通过推送通知你，解放双手。
+      </li>
+    </ul>
+  </section>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景二：老师课堂提问</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            把全班学生的名单录入。开启“不重复抽取”选项，这样被抽到过的同学下次就不会再出现，确保每个人都有机会被点到。旁边的历史记录清楚地显示了哪些同学已经被提问过。
-        </p>
+  <section class="mb-10 p-6 bg-slate-50 rounded-xl">
+    <h2 class="text-2xl font-bold text-slate-800 mb-4">关于隐私和安全的提醒</h2>
+    <p class="text-slate-700 mb-3">
+      快递单号本身是公开信息，通过官方或正规渠道查询物流是安全的。但也要注意：
+    </p>
+    <ul class="list-disc pl-5 text-slate-700 space-y-2">
+      <li>不要轻易将单号连同你的详细姓名、住址、电话一起泄露给不明身份的陌生人。</li>
+      <li>收到以“快递丢失理赔”为名、索要你个人和财务信息的电话或短信，务必通过官方渠道核实，极可能是诈骗。</li>
+      <li>丢弃快递箱时，最好涂抹或撕掉面单上的个人信息。</li>
+    </ul>
+  </section>
 
-        <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-3">场景三：家庭决定谁洗碗</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-            家里成员名字输入进去。你甚至可以为经常偷懒的家人设置“权重”，让他的名字更容易被抽中（虽然这不太“公平”，但很“家庭”）。然后用手机打开，全家人围在一起点击屏幕，让命运决定今晚的洗碗工。
-        </p>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">二、核心功能，一看就会</h2>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">1. 导入名单：支持两种傻瓜式操作</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">你需要先把参与者的名字告诉工具。</p>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>拖拽文件</strong>：如果你有一个写满名字的文本文件（每行一个名字），直接把它拖到网页指定区域就行。</li>
-                <li><strong>直接输入</strong>：也可以在网页的文本框里，一行一个，把名字打进去或粘贴进去。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">2. 核心操作：开始与停止</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">名单准备好后，点击大大的“开始”按钮，中间显示区域的名字就会开始高速随机滚动，伴有紧张的提示音。当你觉得时机到了，点击“停止”，结果即刻揭晓。</p>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">3. 实用设置：让抽签更符合你的需要</h4>
-            <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                <li><strong>不重复抽取</strong>：勾选后，被抽中的人会自动从待抽名单中移除，适合需要覆盖所有人的情况。</li>
-                <li><strong>更换颜色</strong>：可以自由调整背景和文字的颜色，匹配你的活动主题或公司Logo色。</li>
-                <li><strong>全屏模式</strong>：点击切换全屏，让抽签过程充满整个屏幕，视觉冲击力更强，特别适合现场活动。</li>
-                <li><strong>查看历史</strong>：所有被抽中过的名字都会列在旁边，一目了然，随时可以清空重新开始。</li>
-            </ul>
-        </div>
-
-        <div class="my-6">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">4. 保存与分享</h4>
-            <p class="text-gray-700 mb-2 leading-relaxed">每次抽中结果，都可以一键保存为一张简洁美观的图片，方便你发到群里公示或者保存记录。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">三、常见问题解答</h2>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：这个工具需要下载或安装吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：完全不需要。它是一个网页工具，在手机或电脑的浏览器里打开就能用，用完关掉即可，非常轻便。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：名字滚动是真随机吗？会不会有黑幕？</h4>
-            <p class="text-gray-700 leading-relaxed">答：它的随机算法是均匀的，确保每个名字在每次滚动中被选中的机会均等。你甚至可以设置“权重”来人为影响概率，但这需要你手动设置。</p>
-        </div>
-
-        <div class="my-4">
-            <h4 class="text-lg font-medium text-gray-900 mb-2">问：在手机上用起来方便吗？</h4>
-            <p class="text-gray-700 leading-relaxed">答：方便。网页针对手机屏幕做了专门优化，按钮大小合适，操作区域清晰，和电脑上使用体验一样好。</p>
-        </div>
-
-        <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">总结</h2>
-        <p class="text-gray-700 mb-6 leading-relaxed">
-            无论是需要一点仪式感的小型活动，还是追求高效公平的日常决策，一个设计良好的在线抽签工具都能派上用场。它把传统的抽签过程数字化，变得更可视化、可记录、可定制，而且对使用者没有任何技术门槛。下次当你需要公平地选择一个“幸运儿”时，不妨试试这类工具，或许能让过程变得更有趣。
-        </p>
-    </article>
-</div>
-`;export{t as default};
+  <div class="border-t border-slate-200 pt-8 mt-8">
+    <p class="text-slate-700 mb-2">
+      总的来说，查快递是个简单的小事，但掌握正确省力的方法，确实能让等待的过程少一些焦躁，多一些了然于心。
+    </p>
+    <p class="text-slate-700">
+      无论是通过购物平台、快递公司，还是借助一个顺手好用的综合查询页面，核心都是为了让信息获取更便捷。希望下次等快递时，你能更从容地知道它的“行踪”。
+    </p>
+  </div>
+</article>
+`;export{s as default};

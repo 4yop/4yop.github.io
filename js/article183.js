@@ -1,165 +1,79 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <article>
-    <header class="mb-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-        游戏名字被人占了怎么办？这个隐藏字符技巧帮你轻松解决
-      </h1>
-      <p class="text-gray-600 text-lg">
-        你是否也遇到过这种情况：想到一个绝佳的游戏名字，输入时却发现已被占用？别着急，今天分享一个简单方法，让你心仪的名字重新变得可用。
-      </p>
-    </header>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2">
-        核心功能快速了解
-      </h2>
-      <p class="text-gray-700">
-        这是一个在线小工具，它能在你输入的名字里加入“看不见的特殊字符”。这样系统会认为是一个新名字，而其他人看到的还是原来的样子。简单说，就是让你的名字“看似相同，实则不同”。
-      </p>
+  <p class="text-lg text-slate-600 mb-8">
+    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-blue-800">
+      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
+  <p class="mb-4">想一想这些场景：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
+    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
+    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
+  </ul>
+  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
+  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
     </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
+    </div>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        为什么会有名字重复的问题？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        现在的游戏和社交平台越来越多，好听的、酷炫的名字自然成了抢手货。尤其是热门游戏，比如《王者荣耀》《原神》《和平精英》这些，你可能试了十几个名字都显示“已存在”。
-      </p>
-      <p class="text-gray-700 mb-4">
-        这不仅仅是游戏的问题，很多论坛、社区、应用注册时都有这个限制。系统要求每个用户名必须唯一，但创意有限，重复在所难免。
-      </p>
-    </section>
+  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        哪些情况特别适合用这个方法？
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">游戏玩家</h3>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 想用特定名字但已被注册</li>
-            <li>• 创建系列小号（名字风格统一）</li>
-            <li>• 和朋友用相似的名字开黑</li>
-            <li>• 热门游戏里抢注心仪ID</li>
-          </ul>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">日常使用</h3>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 论坛、贴吧昵称重复</li>
-            <li>• 社交媒体平台用户名</li>
-            <li>• 各种账号注册</li>
-            <li>• 需要批量注册账号时</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
+  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
+    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
+    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
+  </ul>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        它是怎么工作的？（通俗版）
-      </h2>
-      <p class="text-gray-700 mb-4">
-        你可以把它想象成一种“文字隐身术”。我们平时打字，每个字符都会在屏幕上占据位置。但有一些特殊的符号，它们虽然存在，却完全看不见。
-      </p>
-      <p class="text-gray-700 mb-4">
-        这个工具就是把这些“隐形符号”悄悄加到你想要的名字里。比如你想用“旅行者”这个名字，工具会生成一个看起来还是“旅行者”，但实际上内部略有不同的版本。
-      </p>
-      <div class="bg-gray-50 p-6 rounded-lg mb-4">
-        <h3 class="font-medium text-gray-900 mb-2">举个简单的例子：</h3>
-        <p class="text-gray-700">
-          假设“无敌剑客”这个名字被占用了。工具会生成一个新的“无敌剑客”，外表一模一样，但因为加入了隐形字符，系统就会认为这是一个全新的名字，允许你注册。
-        </p>
-      </div>
-    </section>
+  <div class="bg-slate-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
+    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
+    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
+      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
+      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
+      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
+    </ul>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        操作起来难不难？
-      </h2>
-      <p class="text-gray-700 mb-6">
-        非常简单，只需要三步，就像平时在网上填表一样。
-      </p>
-      <ol class="space-y-6">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">输入你想用的名字</h3>
-            <p class="text-gray-700">在输入框里写下你心仪的游戏ID或昵称。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">选择生成数量</h3>
-            <p class="text-gray-700">可以一次生成多个版本，提高注册成功率。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
-          <div>
-            <h3 class="font-semibold text-gray-900 mb-1">复制使用</h3>
-            <p class="text-gray-700">点击复制按钮，将生成的名字粘贴到游戏或应用的注册框里即可。</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
+  <p class="mb-6">
+    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
+  </p>
+  <p class="mb-8">
+    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
+  </p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        常见问题解答
-      </h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">这样做的名字，别人能看到吗？</h3>
-          <p class="text-gray-700">
-            别人看到的名字和你看到的基本一样。因为加入的是隐形字符，在绝大多数游戏和应用里，显示效果完全相同。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">会不会影响聊天或社交功能？</h3>
-          <p class="text-gray-700">
-            通常情况下不会。这些特殊字符在设计时就不会影响正常的文字显示和功能，你可以正常加好友、组队、聊天。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">所有游戏都适用吗？</h3>
-          <p class="text-gray-700">
-            适用于绝大多数游戏和平台，特别是那些只做简单名字重复检查的系统。如果某个游戏有特殊的字符过滤机制，可能会失败，但试试无妨。
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">安全吗？会被封号吗？</h3>
-          <p class="text-gray-700">
-            这个方法只是利用了系统允许的字符，没有修改游戏文件或破坏规则，通常不会被判定为违规。但建议不要用于恶意冒充他人等不正当用途。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-        需要注意的小细节
-      </h2>
-      <ul class="space-y-3 text-gray-700">
-        <li>• 生成的名字虽然看起来一样，但实际上是不同的，所以无法用原始名字登录</li>
-        <li>• 最好自己记录下用的是哪个生成版本</li>
-        <li>• 如果某个版本注册失败，可以尝试工具生成的其他版本</li>
-        <li>• 部分极其严格的平台可能会过滤掉所有特殊字符，导致不成功</li>
-      </ul>
-    </section>
-
-    <footer class="mt-12 pt-8 border-t border-gray-200">
-      <p class="text-gray-700 mb-4">
-        下次再遇到“该昵称已存在”的提示时，不妨试试这个方法。它不能保证100%成功，但在大多数情况下，能帮你解决燃眉之急，用上心仪已久的名字。
-      </p>
-      <p class="text-gray-600 text-sm">
-        希望这个小技巧能帮到你。无论是驰骋峡谷的召唤师，还是提瓦特大陆的旅行者，一个好名字总能带来更好的开始。
-      </p>
-    </footer>
-  </article>
+  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
+    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{s as default};

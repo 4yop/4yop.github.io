@@ -1,189 +1,59 @@
-const e=`
-<div class="bg-gray-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto">
-    <!-- 文章标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 text-center leading-tight">
-      PDF轻松转图片：为何你需要这个工具以及如何使用
-    </h1>
-    
-    <!-- 引言部分 -->
-    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
-      <p class="text-lg text-gray-700 mb-4 leading-relaxed">
-        你是否遇到过这样的情况：收到一份PDF文件，但需要里面的某一页作为图片分享给朋友？或者想将PDF中的图表插入到演示文稿中，却不知道如何提取？如果你对技术操作感到头疼，那么这篇文章就是为你准备的。
-      </p>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        今天，我们来聊聊一个非常实用的功能——将PDF文件转换为图片。完全不需要安装任何软件，也不用学习复杂的技术，就像使用手机拍照一样简单。
-      </p>
-    </div>
+const s=`
+<div class="text-slate-700 max-w-3xl mx-auto p-4 md:p-0">
+  <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">数据太多看不懂？试试这个免费工具，一键生成清晰图表</h2>
 
-    <!-- 为什么需要转换 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        为什么要把PDF转换成图片？
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">分享更方便</h3>
-          <p class="text-gray-700 leading-relaxed">
-            图片格式可以直接在聊天软件中发送，对方无需任何特殊软件就能查看。比如将合同的一页转为图片，通过微信发送给同事确认。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">使用更灵活</h3>
-          <p class="text-gray-700 leading-relaxed">
-            图片可以轻松插入到Word、PPT等文档中，也可以设为电脑或手机壁纸。例如，将PDF中的设计图转为图片，放入你的工作汇报。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">查看更简单</h3>
-          <p class="text-gray-700 leading-relaxed">
-            有些老旧设备或特定软件可能不支持PDF，但几乎所有的设备都能打开图片文件。确保你的文件在任何地方都能被看到。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">保护内容格式</h3>
-          <p class="text-gray-700 leading-relaxed">
-            转换为图片后，文件的排版、字体和布局会被固定下来，不会因为不同设备而显示错乱，适合重要文件的分享。
-          </p>
-        </div>
-      </div>
-    </div>
+  <p class="text-lg mb-8 leading-relaxed">
+    工作中，面对一堆密密麻麻的销售数字，是不是感到头疼？学习中，复杂的统计资料，是不是让你眼花缭乱？我们常常需要把枯燥的数据变成一目了然的图表，但专业的软件太难，手绘又太慢。有没有一种方法，能让我们普通人，像填写表格一样简单，就能得到专业的图表呢？
+  </p>
 
-    <!-- 工具介绍 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-green-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        在线转换工具：就像用水杯接水一样简单
-      </h2>
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          现在有很多网站提供了PDF转图片的功能，它们通常操作非常直观。你不需要是电脑高手，只需要会点击鼠标就能完成。
-        </p>
-        <div class="mt-6">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">主要特点：</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li><span class="font-medium">完全免费：</span>大多数基础功能都是免费的，无需付费。</li>
-            <li><span class="font-medium">无需安装：</span>直接在浏览器中使用，不占用电脑空间。</li>
-            <li><span class="font-medium">保护隐私：</span>好的工具会在转换后自动删除你的文件，不会保留。</li>
-            <li><span class="font-medium">支持多种设备：</span>无论是在电脑、平板还是手机上，都能正常使用。</li>
-            <li><span class="font-medium">批量处理：</span>一次可以转换多页PDF，每页生成一张图片。</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">告别混乱数字，让数据自己“说话”</h2>
+  <p class="mb-6 leading-relaxed">
+    无论你是要做一份工作报告，还是整理自己的学习笔记，图表都是最好的帮手。一张好的柱状图，能瞬间让你看清谁多谁少，哪个项目更突出。以前，这可能是设计师或者数据分析师的工作。而现在，借助一些简单好用的在线工具，每个人都能轻松胜任。
+  </p>
 
-    <!-- 使用步骤 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-yellow-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        三步完成转换：比煮泡面还快
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-blue-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-blue-600 mb-4">1</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">上传PDF文件</h3>
-          <p class="text-gray-700 leading-relaxed">
-            点击“选择文件”按钮，从你的电脑或手机里找到要转换的PDF。就像你上传照片到社交网络一样。
-          </p>
-        </div>
-        <div class="bg-green-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-green-600 mb-4">2</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">点击转换按钮</h3>
-          <p class="text-gray-700 leading-relaxed">
-            选择“转为图片”选项，然后点击“开始转换”。系统会自动处理，你可以看到进度条。
-          </p>
-        </div>
-        <div class="bg-purple-50 p-6 rounded-xl text-center">
-          <div class="text-3xl font-bold text-purple-600 mb-4">3</div>
-          <h3 class="text-xl font-medium text-gray-800 mb-3">预览并下载</h3>
-          <p class="text-gray-700 leading-relaxed">
-            转换完成后，可以直接预览每一页图片。满意的话，一键打包下载所有图片到你的设备。
-          </p>
-        </div>
-      </div>
-    </div>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">只需简单三步，你的专属图表即刻呈现</h2>
+  <p class="mb-4 leading-relaxed">
+    很多人一听到“做图表”就觉得复杂。其实，整个过程可以非常简单，就像用记事本一样。
+  </p>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第一步：输入你的数据</h3>
+    <p class="mb-3">你不需要任何特殊格式。只需像平时记流水账一样，把你的项目名称和对应的数字，用逗号隔开，一行行写下来。</p>
+    <p class="text-sm text-slate-500 mb-3">例如：<br>产品A, 120, 80<br>产品B, 150, 160</p>
+    <p>写好之后，点击一个按钮，系统就会自动识别并准备好你的图表数据。</p>
+  </div>
 
-    <!-- 常见问题 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-red-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        你可能关心的问题
-      </h2>
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">转换后的图片清晰吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            是的，转换工具会尽量保持原始PDF的清晰度。你可以预览确认，如果觉得不够清晰，可以调整设置重新转换。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">我的文件安全吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            正规的在线工具通常不会存储你的文件。转换完成后，文件会从服务器删除，就像ATM机不会记住你的银行卡密码一样。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">支持多大的PDF文件？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            大多数工具支持几十兆的文件，对于普通的文档、简历、电子书等完全足够。如果文件太大，可以尝试分几次转换。
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">转换需要很长时间吗？</h3>
-          <p class="text-gray-700 leading-relaxed">
-            这取决于PDF的页数和大小。通常，一个10页的文档在几秒到一分钟内就能完成。页数越多，时间稍长，但进度条会让你知道还需等待多久。
-          </p>
-        </div>
-      </div>
-    </div>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第二步：调整到你喜欢的样子</h3>
+    <p class="mb-3">图表可以“竖着”排列，也可以“横着”排列，哪种看着顺眼就用哪种。</p>
+    <p class="mb-3">颜色也可以随心换。有沉稳的“商务蓝”适合正式报告，有简洁的“工程灰”显得专业，还有清新的“生态绿”让人眼前一亮。</p>
+    <p>所有的调整都是实时生效的，你可以立刻看到变化，直到找到最满意的样式。</p>
+  </div>
 
-    <!-- 应用场景 -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4 leading-10" style="height: 40px; line-height: 40px;">
-        这些情况特别有用
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📄</div>
-          <p class="text-gray-700 leading-relaxed">将电子书的一页转为图片，分享精彩段落</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📊</div>
-          <p class="text-gray-700 leading-relaxed">提取PDF报告中的图表，放入PPT演示</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📑</div>
-          <p class="text-gray-700 leading-relaxed">转换扫描的纸质文档，方便手机查看</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">🎨</div>
-          <p class="text-gray-700 leading-relaxed">保存设计稿或图纸，作为参考图片</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📧</div>
-          <p class="text-gray-700 leading-relaxed">将合同关键页转为图片，邮件发送确认</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm text-center">
-          <div class="text-4xl mb-4">📱</div>
-          <p class="text-gray-700 leading-relaxed">制作手机壁纸，从喜欢的PDF页面提取</p>
-        </div>
-      </div>
-    </div>
+  <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-8">
+    <h3 class="text-xl font-medium text-slate-700 mb-4">第三步：保存你的成果</h3>
+    <p>图表做好后，可以直接保存为一张高清图片。无论是插入到PPT里，还是分享到工作群，都非常方便。</p>
+    <p class="text-sm text-slate-500 mt-2">还有一个贴心的小功能：在你操作的过程中，系统会自动帮你记住上一次的数据和设置，下次打开，一切都还在，不用重新做。</p>
+  </div>
 
-    <!-- 结尾总结 -->
-    <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl shadow-sm p-8 text-center">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">开始尝试吧</h2>
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        把PDF转换成图片，就像把书本的一页拍成照片一样简单。无论你是学生、上班族，还是普通用户，这个工具都能让你的数字生活更便捷。
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        记住，好的工具应该让你感觉不到技术的存在。下次遇到PDF转换的需求，不妨试试在线工具，体验一下“点击即得”的轻松。
-      </p>
-    </div>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">这个工具能帮你解决哪些具体问题？</h2>
+  <ul class="list-disc pl-5 space-y-2 mb-8">
+    <li><span class="font-medium">月度销售汇报：</span>快速对比各个业务小组或产品的业绩高低。</li>
+    <li><span class="font-medium">项目进度跟踪：</span>清晰展示不同任务阶段的完成情况。</li>
+    <li><span class="font-medium">学习成果统计：</span>将各科成绩或学习时间直观地呈现出来。</li>
+    <li><span class="font-medium">家庭开支分析：</span>一眼看出每月在饮食、购物、教育等方面的花费占比。</li>
+    <li><span class="font-medium">活动投票结果展示：</span>让投票数多少变得一目了然。</li>
+  </ul>
 
-    <!-- 小提示 -->
-    <div class="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-      <p class="text-gray-700 text-center leading-relaxed">
-        <span class="font-medium">小提示：</span>使用前请确保你有权转换该PDF文件，尊重版权和隐私。转换工具只是帮手，正确使用才能发挥最大价值。
-      </p>
-    </div>
+  <h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4 pb-2 border-b border-slate-200">担心操作复杂？其实很简单</h2>
+  <p class="mb-6 leading-relaxed">
+    很多朋友可能会问，我需要先学习什么吗？完全不用。这类工具的设计初衷，就是给非专业人士使用的。它的界面通常很干净，按钮上的字都写得明明白白，比如“解析数据”、“导出图片”。你完全不需要知道背后复杂的原理，就像我们用电饭煲煮饭，不需要懂它的电路一样。你只需要关心你的数据，然后选择你喜欢的样子。
+  </p>
+
+  <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10">
+    <h2 class="text-2xl font-semibold text-slate-800 mb-3">总结一下</h2>
+    <p class="leading-relaxed">
+      当数字变得难以理解时，图表是最好的翻译官。一个好的免费图表生成工具，应该像一位耐心的助手：<span class="font-medium">操作上足够简单</span>，让你轻松上手；<span class="font-medium">样式上足够灵活</span>，满足不同场合的需求；<span class="font-medium">结果上足够实用</span>，能直接拿去使用。别再让杂乱的数据困住你，试着把它们变成一张张清晰的图表，你会发现，理解和表达，原来可以如此轻松。
+    </p>
   </div>
 </div>
-`;export{e as default};
+`;export{s as default};

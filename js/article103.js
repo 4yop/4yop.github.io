@@ -1,101 +1,103 @@
-const o={title:"故障风格图片生成器使用指南",content:`
-## 什么是故障风格图片（Glitch Image）？
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+  <!-- 标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center leading-tight">
+    你的照片会“说话”？教你一键读取每张图片的隐藏故事
+  </h1>
 
-故障风格图片是一种利用数字图像处理技术，通过**混合模式叠加 + 随机偏移 + RGB色差**等方式，模拟数字信号故障、数据损坏等视觉效果的图片艺术形式。广泛应用于赛博朋克设计、电子音乐封面、社交媒体头像等场景。
+  <!-- 引言/痛点 -->
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+    <p class="text-gray-700 text-lg">
+      有没有过这样的经历？翻看几年前的老照片，却怎么也想不起来<strong>这是在哪儿拍的</strong>。或者看到一张特别美的风景照，非常想知道对方是用什么相机、什么参数拍出来的。
+    </p>
+    <p class="text-gray-700 mt-2">
+      其实，答案就藏在照片本身里。每一张你用手机或相机拍摄的照片，都像一本隐秘的日记，自动记录了大量的幕后信息。只是，我们不知道如何去翻开它。
+    </p>
+  </div>
 
-## 功能特点
+  <!-- 第一部分：解释什么是EXIF（非技术化） -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">照片的“数字身份证”：你不知道的隐藏信息</h2>
+    <p class="text-gray-700 mb-4">
+      你可以把每一张数码照片想象成一件刚出厂的商品。商品有自己的标签，写着生产日期、厂家、型号等信息。照片也一样，它在被创建的那一刻，就自动生成了一份详细的“<strong>数字标签</strong>”，专业名称叫做<strong>EXIF信息</strong>。
+    </p>
+    <p class="text-gray-700 mb-4">
+      这份标签里都写了些什么呢？内容比你想象的要多得多：
+    </p>
+    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
+      <li><strong>时空密码</strong>：<span class="text-gray-600">精确的拍摄时间、甚至是被修改过的时间。</span></li>
+      <li><strong>地理足迹</strong>：<span class="text-gray-600">如果拍照时打开了定位，它会记录下<strong>精确的经纬度和海拔</strong>，帮你准确找回那个地点。</span></li>
+      <li><strong>设备名片</strong>：<span class="text-gray-600">用的是哪个牌子的手机或相机？哪个型号的镜头？照片的宽度和高度是多少？这里一目了然。</span></li>
+      <li><strong>摄影师日记</strong>：<span class="text-gray-600">拍摄时的光圈大小、快门速度、感光度（ISO）这些专业参数，也被忠实地记录了下来。这对于学习拍照特别有用。</span></li>
+    </ul>
+    <p class="text-gray-700">
+      这些信息原本是给相机和软件系统看的，普通用户在日常看图时根本察觉不到。但通过一些简单的方法，我们就能轻松“翻阅”这本照片日记。
+    </p>
+  </section>
 
-### 18种混合模式
+  <!-- 第二部分：工具能做什么（将代码功能转化为好处） -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">如何轻松翻开照片的隐藏日记？</h2>
+    <p class="text-gray-700 mb-6">
+      现在有很多在线工具可以帮你瞬间解读照片的EXIF信息，整个过程就像把照片放进一个“阅读器”，等上几秒钟，所有的秘密就呈现在你面前了。通常，这类工具可以帮你做到以下几件事：
+    </p>
 
-本工具基于 HTML5 Canvas 的 \`globalCompositeOperation\` API，提供以下混合模式：
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium text-gray-800 mb-3">1. 批量阅读，效率翻倍</h3>
+        <p class="text-gray-700">一次性上传多张照片，工具会同时解析出所有照片的信息，并以清晰的表格形式展示出来。你再也不用一张张照片去查找属性了。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium text-gray-800 mb-3">2. 一键定位，重回现场</h3>
+        <p class="text-gray-700">如果照片含有地理位置信息，工具不仅能显示出枯燥的经纬度数字，更能生成一个地图链接。点一下，你就能在地图上看到那个精确的拍摄点，瞬间勾起所有回忆。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium text-gray-800 mb-3">3. 导出存档，永久保存</h3>
+        <p class="text-gray-700">所有解析出来的信息，无论是拍摄时间、设备型号还是相机参数，都可以一键导出成Excel表格。方便你归档整理，或者作为学习摄影的参考数据。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium text-gray-800 mb-3">4. 整理照片，随心所欲</h3>
+        <p class="text-gray-700">在查看结果时，你可以随时删除单张或批量删除不需要的照片信息，让界面保持清爽，只聚焦在你关心的那些照片上。</p>
+      </div>
+    </div>
+  </section>
 
-| 模式 | 说明 | 视觉效果 |
-|------|------|----------|
-| 差值 (difference) | 两图差值运算 | 强烈的色彩反转对比，最经典的 Glitch 效果 |
-| 源顶 (source-atop) | 源图覆盖目标重叠区 | 图像边缘错位撕裂感 |
-| 目标排除 (destination-out) | 排除源图覆盖区域 | 镂空/残影效果 |
-| 变亮 (lighter) | 取两图较亮部分 | 发光/过曝效果 |
-| 正片叠底 (multiply) | 颜色相乘变暗 | 暗调加重，对比增强 |
-| 滤色 (screen) | 颜色相滤变亮 | 亮调提亮，柔光效果 |
-| 叠加 (overlay) | 正片叠底与滤色结合 | 对比度大幅提升 |
-| 变暗 (darken) | 取两图较暗部分 | 压暗效果 |
-| 颜色减淡 (color-dodge) | 减淡高光区域 | 高光溢出效果 |
-| 颜色加深 (color-burn) | 加深阴影区域 | 阴影浓重效果 |
-| 强光 (hard-light) | 聚光灯式混合 | 硬朗的明暗对比 |
-| 柔光 (soft-light) | 柔和光照混合 | 自然的明暗过渡 |
-| 排除 (exclusion) | 类似差值但更柔和 | 温和的色彩偏移 |
-| 色相 (hue) | 保留底层亮度饱和度 | 色彩替换效果 |
-| 颜色 (color) | 保留底层明度 | 色彩染色效果 |
-| 明度 (luminosity) | 保留底层色相饱和度 | 亮度重映射 |
+  <!-- 第三部分：应用场景 -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">这些时候，你特别需要它</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">场景一：旅行回忆整理者</h3>
+        <p class="text-gray-700 pl-4 border-l-4 border-green-500 py-1">
+          “几年前去的那个小镇太美了，可具体位置叫什么来着？” 上传当时的照片，直接获取经纬度并在地图上定位，轻松找回那个让你流连忘返的角落。你还可以按拍摄时间顺序导出所有照片信息，制作一份独一无二的数字旅行手账。
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2">场景二：摄影爱好者或学习者</h3>
+        <p class="text-gray-700 pl-4 border-l-4 border-amber-500 py-1">
+          “朋友这张星空拍得真清晰，他怎么设置的？” 如果你得到了原图，上传后就能看到完整的光圈、快门、ISO和镜头型号。这对于学习摄影参数、模仿优秀作品的拍摄手法非常有帮助。你也可以分析自己不同照片的参数，总结出最佳拍摄设置。
+        </p>
+      </div>
+    </div>
+  </section>
 
-### 可调参数
+  <!-- 第四部分：注意事项与结尾 -->
+  <section class="bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">使用前的小提示</h2>
+    <ul class="text-gray-700 space-y-3">
+      <li><strong>隐私提醒</strong>：正因为照片可能包含地理位置等隐私信息，在<strong>分享原图给他人或上传到公开网络时需格外谨慎</strong>。使用这类工具查看，也能让你知道自己无意中分享了哪些信息。</li>
+      <li><strong>信息完整性</strong>：并非每张照片都包含完整的EXIF信息。例如，用某些社交软件编辑并保存后的图片，或者截图，其原始拍摄信息可能会被剥离。</li>
+      <li><strong>纯粹的工具</strong>：这类工具通常在网页端运行，<strong>无需安装软件</strong>，也<strong>不需要你具备任何技术知识</strong>。它的目的只有一个：帮你把照片里已有的信息，用最明白的方式“翻译”出来。</li>
+    </ul>
 
-- **数量 (1-50)**：控制故障效果的叠加次数。数值越大，随机偏移层数越多，效果越强烈
-- **透明度 (10%-100%)：**控制每次叠加的不透明度。较低值产生更细腻的重影效果
-
-### 自动增强算法
-
-除基础混合模式外，本工具还内置：
-- **随机水平切片错位**：模拟信号中断产生的横向撕裂
-- **RGB 色差分离**：红蓝通道微偏移，增强经典 Glitch 质感
-- **智能尺寸限制**：超过 2048px 的图片自动缩放，保证流畅体验
-
-## 使用方法
-
-1. **上传图片** — 点击上传区域或拖拽图片到页面
-2. **选择模式** — 从 18 种混合模式中选择一种（默认"差值"）
-3. **调整参数** — 拖动「数量」和「透明度」滑块，实时预览效果
-4. **保存图片** — 点击「保存图片」下载 PNG 格式结果
-
-## 使用技巧
-
-### 推荐模式组合
-
-- **经典 Glitch**：差值模式，数量 15-25，透明度 75-90%
-- **赛博朋克风**：颜色减淡或强光，数量 20-30，透明度 60-80%
-- **柔和故障**：排除或柔光，数量 8-15，透明度 85-95%
-- **重度破坏**：正片叠底 + 高数量(35+)，透明度 50-70%
-
-### 最佳实践
-
-- 使用**对比度高、色彩丰富**的原图效果更佳
-- 人像照片配合「差值」或「排除」模式最有冲击力
-- 文字/Logo 配合「颜色」或「色相」模式可做创意变形
-- 数量建议从低开始逐步上调，避免过度失真
-
-## 技术原理
-
-### Canvas 混合模式
-
-Canvas 2D 的 \`globalCompositeOperation\` 属性决定了新绘制内容如何与已有画布内容混合。本工具的核心思路是：
-
-1. 先将原图绘制为底层
-2. 循环 N 次（数量参数），每次以随机偏移量重新绘制原图
-3. 每次绘制使用选定的混合模式和不透明度
-4. 最后施加轻微的 RGB 色差增强
-
-### 随机切片
-
-在叠加过程中，有 25% 的概率触发水平切片操作——随机选择一行像素带，将其水平位移，模拟 CRT 显示器的行扫描故障。
-
-## 浏览器兼容性
-
-基于 HTML5 Canvas API，支持所有现代浏览器：
-- Chrome / Edge 60+
-- Firefox 55+
-- Safari 12+
-
-## 常见问题
-
-**Q: 支持哪些格式？**
-A: 支持 JPG、PNG、WebP 等常见图片格式。
-
-**Q: 输出是什么格式？**
-A: PNG 格式，无损质量。
-
-**Q: 图片太大怎么办？**
-A: 超过 2048px 会自动缩放，保证处理速度。
-
-**Q: 哪个模式最好看？**
-A: 「差值」是最经典的 Glitch 效果，推荐先试这个。
-`};export{o as article};
+    <div class="mt-8 p-4 text-center border-t border-gray-200 pt-6">
+      <p class="text-gray-800 text-lg mb-4">
+        现在，你是否对手机相册里那些沉默的照片产生了新的好奇？不妨找几张有纪念意义的照片，试试看能否读出它们背后的“隐秘日记”。
+      </p>
+      <p class="text-gray-600">
+        探索这些隐藏信息，不仅是解决一个“在哪里拍的”小疑问，更是用一种新的视角，重温你定格下的每一个瞬间。
+      </p>
+    </div>
+  </section>
+</article>
+`;export{t as default};

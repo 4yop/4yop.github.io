@@ -1,107 +1,84 @@
 const t=`
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">二维码生成器：轻松制作各种用途的二维码</h1>
-  
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="text-gray-700 m-0">你是否想过自己制作二维码？现在，只需简单几步，就能免费生成用于分享、连接或展示信息的个性化二维码。</p>
-  </div>
-  
-  <p class="text-gray-600 mb-6 leading-relaxed">在日常生活中，二维码越来越常见。无论是餐厅点餐、商店促销，还是朋友分享联系方式，扫一扫就能获取信息。但你可能不知道，制作自己的二维码其实非常简单，不需要任何技术知识。</p>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">二维码能用来做什么？</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">分享网址链接</h3>
-      <p class="text-gray-600">把网页链接变成二维码，别人用手机一扫就能直接访问，省去手动输入长网址的麻烦。</p>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">给图片打马赛克？其实很简单，一分钟就能学会</h2>
+
+    <div class="text-gray-600 text-sm sm:text-base mb-8 text-center">
+      <p>发图片前，你是不是也常常为遮挡某些信息而烦恼？</p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">快速连接WiFi</h3>
-      <p class="text-gray-600">家里来客人时，不用一个个告诉WiFi密码。生成一个WiFi二维码，客人扫码就能自动连接网络。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">电子名片</h3>
-      <p class="text-gray-600">把自己的姓名、电话、公司等信息做成二维码名片，商务场合交换起来既方便又专业。</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 class="text-xl font-medium text-gray-800 mb-3">发送短信或邮件</h3>
-      <p class="text-gray-600">预设好短信内容和收件人，或者设置好邮件主题和正文，生成二维码后扫码就能直接发送。</p>
-    </div>
-  </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">如何制作个性化二维码？</h2>
-  
-  <div class="mb-8">
-    <p class="text-gray-600 mb-4 leading-relaxed">一个好的二维码生成工具应该操作简单，功能实用。下面这些功能可以让你的二维码更好用：</p>
-    
-    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
-      <li><span class="font-medium">多种内容类型</span>：除了普通文本和网址，还支持WiFi信息、电话号码、短信、电子邮件和电子名片。</li>
-      <li><span class="font-medium">样式自定义</span>：可以调整二维码的大小，修改颜色搭配，让它更符合你的审美。</li>
-      <li><span class="font-medium">高清下载</span>：生成的二维码可以保存为PNG图片或SVG矢量图，打印出来也清晰。</li>
-      <li><span class="font-medium">一键复制</span>：直接复制二维码图片，方便粘贴到文档或设计稿中。</li>
-    </ul>
-  </div>
-  
-  <div class="bg-gray-50 p-6 rounded-lg mb-8 border">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">常见问题解答</h3>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">二维码的容错级别是什么意思？</h4>
-      <p class="text-gray-600 pl-4">容错级别越高，二维码即使有部分损坏或遮挡，仍然能够被正确扫描。如果你打算把二维码印在物品上或长期使用，建议选择较高的容错级别。</p>
-    </div>
-    
-    <div class="mb-4">
-      <h4 class="text-lg font-medium text-gray-700 mb-2">生成的二维码安全吗？</h4>
-      <p class="text-gray-600 pl-4">所有操作都在你的设备上完成，内容不会上传到服务器。你输入的信息只用于生成二维码图片，生成后可以放心使用。</p>
-    </div>
-    
-    <div>
-      <h4 class="text-lg font-medium text-gray-700 mb-2">在手机上能用吗？</h4>
-      <p class="text-gray-600 pl-4">当然可以。工具会自动适应手机屏幕，在设置和预览之间切换方便，操作体验和电脑上一样流畅。</p>
-    </div>
-  </div>
-  
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">使用场景举例</h2>
-  
-  <div class="mb-8">
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">1</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">小店宣传</h3>
-        <p class="text-gray-600">把店铺活动页面链接做成二维码，印在宣传单上，顾客扫码就能查看详情。</p>
+
+    <div class="relative w-full h-64 sm:h-80 mb-8 bg-gray-100 rounded-lg overflow-hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+          <div class="text-5xl mb-4 text-gray-300">🖼️</div>
+          <p class="text-gray-500">（这里可以放一张简单的、带马赛克效果的示例图片示意图）</p>
+        </div>
       </div>
     </div>
-    
-    <div class="flex items-start mb-6">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">2</div>
+
+    <div class="prose prose-lg max-w-none">
+      <p class="mb-4">在网上分享照片、上传证件或者发布截图时，我们常常需要把一些敏感信息遮挡起来，比如车牌号、门牌号、个人信息，或者不想露脸的照片。这时候，马赛克就成了我们的好帮手。</p>
+      <p class="mb-6">你可能会想，给图片打马赛克是不是要用到很复杂的软件？其实不用。现在有一些非常方便的小工具，在网页上点几下就能完成。</p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">为什么我们需要给图片打马赛克？</h2>
+      <p class="mb-4">这主要是在保护我们自己和别人的隐私。想一想下面这些场景：</p>
+      <ul class="list-disc pl-5 mb-6 space-y-2">
+        <li><strong>分享生活照时</strong>：照片背景里无意拍到的家庭地址、快递单号，需要遮一下。</li>
+        <li><strong>处理工作截图时</strong>：发给同事或客户的截图中，可能含有其他人的联系方式或内部编号，需要隐藏。</li>
+        <li><strong>上传证件材料时</strong>：在办理一些线上业务时，可能需要上传身份证、营业执照等，但除了必要信息，其他部分最好能打上马赛克。</li>
+        <li><strong>发布内容到社交媒体时</strong>：拍到了路人清晰的正脸，或者不想让自己的脸太突出，打上马赛克是对彼此的尊重。</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么给图片打马赛克？分四步搞定</h2>
+      <p class="mb-6">使用一个简单的在线编辑器，整个过程就像在手机上圈画一样直观。</p>
+
+      <div class="bg-blue-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-blue-800">第一步：找到你的图片</h3>
+        <p class="mb-2">首先，点击“上传图片”按钮，从你的电脑或手机里选择你想处理的那张照片。支持常见的图片格式，比如 JPG、PNG 都可以。</p>
       </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">家庭便利</h3>
-        <p class="text-gray-600">把家庭WiFi信息生成二维码贴在客厅，来访亲友扫码就能上网，不用反复询问密码。</p>
+
+      <div class="bg-green-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-green-800">第二步：圈出要遮挡的地方</h3>
+        <p class="mb-2">上传后，点击“开始绘制”按钮。然后，就像你用鼠标或手指在屏幕上画框一样，按住并拖动，把需要打码的区域框选出来。</p>
+        <p>你可以<strong>反复框选多个不同的区域</strong>，比如同时把一张图片里的人脸和背景里的文字都遮住。</p>
+      </div>
+
+      <div class="bg-yellow-50 p-5 rounded-xl mb-6">
+        <h3 class="text-xl font-medium mb-4 text-yellow-800">第三步：预览和调整</h3>
+        <p class="mb-2">在框选的时候，你就能立刻看到马赛克效果。如果框的位置不对，或者想重来，可以点击“清除全部”，然后重新框选。</p>
+        <p>全部框选满意后，记得点击“完成绘制”。</p>
+      </div>
+
+      <div class="bg-purple-50 p-5 rounded-xl mb-8">
+        <h3 class="text-xl font-medium mb-4 text-purple-800">第四步：保存你的新图片</h3>
+        <p class="mb-2">最后一步最简单，点击“保存图片”。处理好的图片就会保存到你的设备里了，原来图片上被圈选的地方，都变成了格子状的马赛克。</p>
+        <p>接下来，你就可以放心地使用这张处理过的图片了。</p>
+      </div>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">几个常见问题</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-medium mb-2">马赛克打得牢固吗？会被还原吗？</h3>
+        <p class="mb-4">通过这种像素格处理方式打上的马赛克，从常规的图片查看方式来说，信息已经被永久性地模糊处理了，无法直接看清。这是保护隐私的可靠方法。当然，任何技术都没有绝对的“牢不可破”，但对于日常的隐私保护需求来说，这已经足够了。</p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-medium mb-2">会不会影响图片其他部分的质量？</h3>
+        <p class="mb-4">不会。这种工具只会改变你<strong>亲手框选出来的那一小块区域</strong>，图片的其他部分完全保持原样，清晰度不变。</p>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="text-xl font-medium mb-2">在手机上好操作吗？</h3>
+        <p class="mb-4">好的工具会考虑到手机用户。页面布局会自动适应手机屏幕的大小，框选操作也支持手指触摸拖动，和在电脑上用鼠标操作一样方便。</p>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-xl mt-12">
+        <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
+        <p class="mb-3 text-center">给图片打马赛克，核心就是三步：<strong>上传 → 圈选 → 保存</strong>。</p>
+        <p class="text-center">这已经不再是需要专业软件才能做的事。花一分钟时间，动动手指，就能有效地为你的图片加上一道隐私“防护栏”，让自己和他人更安心。</p>
+        <p class="mt-4 text-gray-600 text-sm text-center">下次发图前如果需要遮挡信息，不妨试试看。</p>
       </div>
     </div>
-    
-    <div class="flex items-start">
-      <div class="bg-blue-100 text-blue-800 rounded-full p-2 mr-4 flex-shrink-0" style="width: 40px; height: 40px; line-height: 24px;">
-        <div class="text-center font-medium">3</div>
-      </div>
-      <div>
-        <h3 class="text-xl font-medium text-gray-800 mb-2">个人资料</h3>
-        <p class="text-gray-600">制作包含联系方式的电子名片二维码，添加到邮件签名或社交媒体主页，方便他人联系。</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-12">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">开始制作你的第一个二维码</h3>
-    <p class="text-gray-600 mb-4">其实很简单：选择内容类型，输入你的信息，调整喜欢的颜色和大小，然后下载保存。整个过程不到一分钟，而且完全免费。</p>
-    <p class="text-gray-600">无论你是想分享一个有趣的链接，还是制作专业的联系方式，二维码生成器都能帮你轻松实现。试试看，你会发现制作二维码原来这么简单。</p>
-  </div>
+  </article>
 </div>
 `;export{t as default};

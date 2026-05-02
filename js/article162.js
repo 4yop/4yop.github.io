@@ -1,110 +1,110 @@
-const s=`
-<article class="max-w-4xl mx-auto p-4 md:p-8 bg-white">
-  <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">快递单号怎么查？一篇讲清楚查询方法和常见问题</h1>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">你的身份证号码里，藏着哪些不为人知的“小秘密”？</h1>
 
-  <p class="text-lg text-slate-600 mb-8">
-    网购后最期待的就是拆快递，而等待过程中，最常做的事就是一遍遍查看物流信息。快递到哪里了？今天能到吗？这份期待和焦急，相信每个人都经历过。今天，我们就来聊聊怎么方便地查询快递，以及遇到查询问题时该怎么办。
-  </p>
-
-  <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-r">
-    <h2 class="text-xl font-semibold text-slate-800 mb-2">核心方法速览</h2>
-    <p class="text-slate-700">
-      查询快递，本质上就是通过唯一的“快递单号”，在物流公司的系统里找到你的包裹轨迹。就像用身份证号查人一样。
+  <div class="mb-8">
+    <p class="text-lg text-gray-700 mb-4">
+      你知道吗？你的身份证号码里，其实藏着不少关于你的小秘密。它不仅仅是一串用来证明“你是谁”的数字，更像是一个精心设计的个人信息“密码本”。
+    </p>
+    <p class="text-gray-600">
+      今天，我们不谈复杂的科技，就聊聊这18位数字，是如何在不泄露你隐私的前提下，告诉我们你的故事。
     </p>
   </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">一、最常用的几种查询方式</h2>
-    <p class="text-slate-700 mb-4">
-      知道自己寄的或收的是哪家快递，是快速查询的第一步。快递单号通常由数字或字母组合而成，打印在面单最显眼的位置。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">安全第一：你的信息，只留在你的设备里</h2>
+    <p class="text-gray-700">
+      在开始探索之前，最重要的事情是安全。我们使用的解析工具，其核心原则是<span class="font-medium text-blue-700">“本地解析，数据不上传”</span>。这意味着，当你输入号码后，所有的计算和解读都在你自己的手机或电脑里瞬间完成，结果一出来，过程就结束了。没有服务器记录，没有网络传输，就像用一个离线的计算器一样私密。
     </p>
-    <ul class="space-y-4 pl-5 text-slate-700">
-      <li class="pl-2">
-        <strong class="text-slate-800">1. 快递公司官网/APP查询</strong>
-        <p class="mt-1">这是最直接的方法。如果你知道是顺丰、中通、圆通等，直接进入他们的官方网站或手机应用，找到“物流查询”入口，输入单号即可。信息最权威。</p>
-      </li>
-      <li class="pl-2">
-        <strong class="text-slate-800">2. 购物平台直接查看</strong>
-        <p class="mt-1">在淘宝、京东等平台下单的包裹，不用记单号。直接在“我的订单”里点击物流信息，就能看到实时动态，非常省心。</p>
-      </li>
-      <li class="pl-2">
-        <strong class="text-slate-800">3. 使用综合查询工具</strong>
-        <p class="mt-1">如果你手头只有一个单号，不确定是哪家快递公司，或者想一次性管理多个不同公司的包裹，这类工具就派上用场了。你只需要输入单号，它通常能自动识别快递公司并展示物流信息，省去了来回切换不同网站的麻烦。</p>
-      </li>
-    </ul>
-  </section>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">二、查询时，你可能会遇到这些问题</h2>
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">解码18位数字：你的“人生简史”</h2>
+  <p class="text-gray-600 mb-6">
+    让我们把身份证号码拆开看看，每一段数字都有它特定的使命：
+  </p>
+
+  <div class="space-y-6 mb-10">
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">1. 你的“根源”：前6位地址码</h3>
+      <p class="text-gray-700">
+        这就像是你的“数字籍贯”。它对应着你最初申领身份证时所在的省、市、区（县）。通过它，工具可以快速定位并显示出你对应的行政区划名称。有时候，这可能会让你想起自己的故乡。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">2. 最重要的时刻：中间8位生日码</h3>
+      <p class="text-gray-700">
+        这是号码里最直白的一部分，直接记录了你的公历出生年月日。但有趣的是，工具还能从这里延伸出更多信息：
+      </p>
+      <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
+        <li><span class="font-medium">当前年龄</span>：自动帮你算好，不用再掰着手指头数。</li>
+        <li><span class="font-medium">农历生日</span>：很多传统节日和习俗看农历，知道自己的农历生日，也许能让庆祝更有仪式感。</li>
+        <li><span class="font-medium">出生那天是星期几</span>：一个有趣的生活冷知识，或许是你人生一个平凡又特别的开始。</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">3. 独特的身份标识：接下来的3位顺序码</h3>
+      <p class="text-gray-700">
+        这3位数字信息量很大。其中，<span class="font-medium">第17位（即倒数第二位）的奇偶性，直接决定了性别</span>：奇数通常代表男性，偶数通常代表女性。这是号码里隐藏的一个关键“彩蛋”。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">4. 最后的守护者：末尾校验码</h3>
+      <p class="text-gray-700">
+        最后一位数字（有时是X）不是随便写的。它是通过一套严谨的数学公式计算出来的，专门用来<span class="font-medium">检验前面17位数字是否正确</span>。如果输入错误，校验码就对不上，工具会提示号码无效。它是这串数字“密码”的防盗锁。
+      </p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-12 mb-4 text-gray-900">除了基本信息，还有哪些趣味解读？</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的星座</h3>
+      <p class="text-gray-700">
+        根据你的阳历生日，可以轻松对应到十二星座之一。是细致周到的处女座，还是热情开朗的射手座？这个“标签”常常是朋友间有趣的谈资。
+      </p>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+      <h3 class="text-lg font-semibold mb-2 text-gray-800">你的生肖</h3>
+      <p class="text-gray-700">
+        结合农历年份，就能知道你的生肖属相。这是中国传统文化中一个非常重要的符号，承载着岁月轮回的独特纪念。
+      </p>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-200 pt-8 mt-10">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">常见疑问解答</h2>
     <div class="space-y-6">
       <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">1. 单号无效或查不到信息？</h3>
-        <p class="text-slate-700 mb-2">别急，可能有以下几个原因：</p>
-        <ul class="list-disc pl-5 text-slate-700 space-y-1">
-          <li><strong>刚发货：</strong>卖家点击发货后，物流公司需要时间揽收、扫描单号，信息上传系统有延迟，一般等几小时再查。</li>
-          <li><strong>单号输错了：</strong>仔细核对，数字“0”和字母“O”，数字“1”和字母“I”最易混淆。</li>
-          <li><strong>快递公司选错了：</strong>用综合查询工具时，如果自动识别有误，可以尝试手动选择公司。</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">2. 物流信息好几天不更新？</h3>
-        <p class="text-slate-700">
-          包裹在运输途中，从一个城市转运中心到另一个城市，中间的长途运输可能没有扫描节点。如果长时间停在“已发货”或某个中转站，可能是遇到了高峰期堵车、天气原因延误，或者包裹确实遗漏扫描了。如果超过预估时间很久，可以联系发货方或快递客服询问。
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：输入我的身份证号，真的安全吗？</h3>
+        <p class="text-gray-700">
+          <strong>答：安全。</strong>这正是本地解析工具最大的优势。整个过程在你的设备上完成，就像你在自己的本子上做计算一样，算完结果就在眼前，本子上的原始数据不会被拍照上传。你的号码从未离开过你的设备。
         </p>
       </div>
       <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-2">3. 显示“已签收”但我没收到？</h3>
-        <p class="text-slate-700">
-          首先检查是否被家人、同事或物业门卫代收。如果没有，可能是快递员误操作提前点击了签收，实际上包裹还在派送中。可以直接电话联系派件员，或通过官方渠道投诉反馈。
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：为什么我看到的籍贯和我知道的不一样？</h3>
+        <p class="text-gray-700">
+          <strong>答：这很正常。</strong>身份证上的地址码，记录的是你首次申领身份证时的户籍所在地。如果你后来迁移了户口，或者出生地与户籍地不同，这里显示的信息就可能和你现在认为的“老家”有出入。它是一份历史的数字记录。
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-1 text-gray-800">问：这个工具能用来做什么？</h3>
+        <p class="text-gray-700">
+          <strong>答：主要是满足个人好奇心和对信息的了解。</strong>它可以帮你快速查看身份证上的基本信息，验证号码格式是否正确，或者了解一下号码背后的传统文化元素（如农历、生肖）。它并非官方验证工具，不能用于任何正式的身份认证场景。
         </p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">三、让查快递变得更轻松的小习惯</h2>
-    <p class="text-slate-700 mb-4">
-      养成几个好习惯，能让你在需要时快速找到物流信息，避免手忙脚乱。
+  <div class="mt-12 p-6 bg-gray-50 rounded-lg text-center">
+    <p class="text-gray-700 mb-2">
+      一个小小的身份证号码，原来包含了从地域、时间到个人特征的多种信息。科技让解读这些信息变得简单，而本地处理的方式，则为我们守护了最重要的隐私安全。
     </p>
-    <ul class="grid md:grid-cols-2 gap-4 text-slate-700">
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">保存发货通知</strong>
-        网购后，卖家发的发货短信或平台通知里含有单号，别急着删，等收货后再清理。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">利用查询历史</strong>
-        有些查询页面会自动帮你保存最近查过的单号。再次查询时直接点击，就不用重复输入一长串数字了，特别方便。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">关注关键节点</strong>
-        不用每分钟刷新。重点关注“已揽收”、“到达XX转运中心”、“开始派送”这几个节点，就能大致掌握包裹行程。
-      </li>
-      <li class="p-4 border border-slate-200 rounded-lg">
-        <strong class="block text-slate-800 mb-1">善用手机通知</strong>
-        在快递公司APP或购物平台开启物流提醒，重要动态会通过推送通知你，解放双手。
-      </li>
-    </ul>
-  </section>
-
-  <section class="mb-10 p-6 bg-slate-50 rounded-xl">
-    <h2 class="text-2xl font-bold text-slate-800 mb-4">关于隐私和安全的提醒</h2>
-    <p class="text-slate-700 mb-3">
-      快递单号本身是公开信息，通过官方或正规渠道查询物流是安全的。但也要注意：
-    </p>
-    <ul class="list-disc pl-5 text-slate-700 space-y-2">
-      <li>不要轻易将单号连同你的详细姓名、住址、电话一起泄露给不明身份的陌生人。</li>
-      <li>收到以“快递丢失理赔”为名、索要你个人和财务信息的电话或短信，务必通过官方渠道核实，极可能是诈骗。</li>
-      <li>丢弃快递箱时，最好涂抹或撕掉面单上的个人信息。</li>
-    </ul>
-  </section>
-
-  <div class="border-t border-slate-200 pt-8 mt-8">
-    <p class="text-slate-700 mb-2">
-      总的来说，查快递是个简单的小事，但掌握正确省力的方法，确实能让等待的过程少一些焦躁，多一些了然于心。
-    </p>
-    <p class="text-slate-700">
-      无论是通过购物平台、快递公司，还是借助一个顺手好用的综合查询页面，核心都是为了让信息获取更便捷。希望下次等快递时，你能更从容地知道它的“行踪”。
+    <p class="text-gray-600">
+      如果你也对自己的这串“人生密码”感到好奇，不妨用注重隐私的本地工具，亲自探索一下。
     </p>
   </div>
-</article>
-`;export{s as default};
+</div>
+`;export{t as default};

@@ -14,9 +14,14 @@ body{background:#0078d7;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <div class="err-face">:(</div>
-<div class="title">你的电脑遇到问题，需要重新启动</div>
-<div class="sub">我们正在收集一些错误信息，然后为你重新启动</div>
-<div class="pct"><span id="pct">35</span>% 完成</div>
+<div class="title" id="title"></div>
+<div class="sub" id="sub"></div>
+<div class="pct"><span id="pct">35</span>% <span id="pctLabel"></span></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<script>var n=35;setInterval(function(){n=n<95?n+Math.floor(Math.random()*3):95;document.getElementById('pct').textContent=n},800)</script>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Your PC ran into a problem and needs to restart':'你的电脑遇到问题，需要重新启动';
+document.getElementById('sub').textContent=lang==='en'?"We're just collecting some error info, and then we'll restart for you":'我们正在收集一些错误信息，然后为你重新启动';
+document.getElementById('pctLabel').textContent=lang==='en'?'complete':'完成';
+document.title=lang==='en'?'Windows Error':'Windows 错误';
+var n=35;setInterval(function(){n=n<95?n+Math.floor(Math.random()*3):95;document.getElementById('pct').textContent=n},800)</script>
 </body></html>

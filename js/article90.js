@@ -1,93 +1,103 @@
-const e=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-12 font-sans text-gray-800">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">想给照片加点艺术感？这个在线工具让你秒变“艺术家”</h1>
-    <p class="text-lg text-gray-600">告别单调的普通照片，用简单几步为你的回忆披上独特的艺术外衣。</p>
-  </header>
+const r=`
+<div class="max-w-3xl mx-auto p-4 text-gray-800">
+  <h1 class="text-3xl font-bold mb-4 text-center sm:text-left">每天喝多少水最健康？科学计算公式告诉你</h1>
+  
+  <p class="mb-4 text-lg leading-relaxed">
+    水是生命之源，人体大约70%由水构成。你可能常听到「每天要喝8杯水」的说法，但每个人的体重、活动量不同，这个标准真的适合你吗？其实，科学界有一套更精准的计算方法——根据体重估算每日需水量。今天我们就来聊聊，如何算出属于自己的「健康饮水量」，并合理安排一天的喝水时间。
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">你的烦恼，我懂</h2>
-    <p class="mb-4 leading-relaxed">翻看手机相册，是不是总觉得照片太“写实”了？想发个朋友圈，又嫌照片风格平淡无奇，不够吸引眼球。</p>
-    <p class="mb-4 leading-relaxed">你或许想过把照片变成酷酷的像素风，或者复古的怀旧色调，但一打开那些复杂的专业软件，就被密密麻麻的按钮和看不懂的术语劝退了。</p>
-    <p class="leading-relaxed">没关系，你不是一个人。许多人都希望用一种<strong>简单、快速、零门槛</strong>的方式，让普通照片焕发新生。</p>
-  </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">体重计算法：你一天到底需要多少毫升水？</h2>
+  <p class="mb-3">
+    最简单且被广泛认可的计算公式是：<span class="font-medium">每日需水量（毫升） = 体重（公斤） × 33</span>。这个系数来源于人体基础代谢所需水量的研究，能够满足大部分成年人的日常需求。
+  </p>
+  <p class="mb-3">
+    举个例子：如果你的体重是60公斤，那么每天大约需要喝 60 × 33 = 1980 毫升水，差不多相当于4瓶500毫升的矿泉水。如果体重75公斤，则需要约2475毫升，大约5瓶水。用这个公式算一算，你会发现可能比「8杯水」更贴合自己的身体状况。
+  </p>
+  <p class="mb-3 bg-blue-50 p-3 rounded">
+    <span class="font-medium">小提示：</span> 这只是一个基础参考值。如果你当天运动量大、出汗多，或者处于炎热环境，需要额外补充水分；而如果吃了大量水果、汤羹，也可适当减少纯饮水量。
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它是什么？你的“魔法艺术滤镜箱”</h2>
-    <p class="mb-4 leading-relaxed">你可以把它想象成一个在线的“魔法艺术滤镜箱”。你只需要把照片放进去，然后从十几种各具特色的“滤镜”中挑选一个，轻轻一点，就能立刻得到一张风格大变样的新图片。</p>
-    <p class="leading-relaxed">整个过程就像给照片“穿”上了一件不同风格的衣服，完全不需要你懂任何绘画或设计知识。</p>
-  </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">喝水时间表：什么时候喝，效果更好？</h2>
+  <p class="mb-3">
+    光知道喝多少还不够，喝水的时间也影响身体吸收和利用。把全天的水量分散到不同时段，既能避免一次性喝太多增加肾脏负担，又能让身体时刻保持水润状态。下面是一份参考时间表，你可以根据自己的作息调整：
+  </p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">它能为你做什么？</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">1</div>
-        <div>
-          <h3 class="font-medium mb-1">化繁为简，一键拥有艺术感</h3>
-          <p class="text-gray-600 leading-relaxed">你不用再研究复杂的软件。这里没有复杂的操作，上传图片、选择风格、点击生成，三步就能获得一张充满设计感的作品。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">2</div>
-        <div>
-          <h3 class="font-medium mb-1">风格多样，总有一款适合你</h3>
-          <p class="text-gray-600 leading-relaxed">无论你喜欢像乐高积木一样的<strong>像素风</strong>，还是像铅笔描绘的<strong>素描画</strong>，亦或是泛黄回忆的<strong>老照片效果</strong>，甚至是神秘的<strong>浮雕感</strong>，这里都能轻松实现。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">3</div>
-        <div>
-          <h3 class="font-medium mb-1">解放手机，在线处理更方便</h3>
-          <p class="text-gray-600 leading-relaxed">无需在手机上下载额外的App，打开网页就能用。处理完的图片直接下载保存到手机或电脑里，不占存储空间。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 mt-0.5">4</div>
-        <div>
-          <h3 class="font-medium mb-1">效果可控，打造专属风格</h3>
-          <p class="text-gray-600 leading-relaxed">部分风格还可以微调强度。比如想让像素块更大一点，或者让素描线条更粗犷一些，都能通过简单的滑块来调整，让你的作品与众不同。</p>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <div class="overflow-x-auto my-4">
+    <table class="min-w-full border-collapse border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="border border-gray-300 p-2 text-left">时间点</th>
+          <th class="border border-gray-300 p-2 text-left">喝水量（毫升）</th>
+          <th class="border border-gray-300 p-2 text-left">为什么这个时间喝？</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-2">06:30 起床后</td>
+          <td class="border border-gray-300 p-2">约350</td>
+          <td class="border border-gray-300 p-2">经过一夜睡眠，身体处于缺水状态，一杯温水唤醒新陈代谢。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">08:30 上班/出门前</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">补充水分，缓解即将面对工作的紧张情绪。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">11:00 工作间隙</td>
+          <td class="border border-gray-300 p-2">约360</td>
+          <td class="border border-gray-300 p-2">此时身体容易因专注而忘记喝水，小口补水防止疲劳。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">12:50 午餐后</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">帮助消化，促进营养吸收。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">15:00 下午茶时间</td>
+          <td class="border border-gray-300 p-2">约370</td>
+          <td class="border border-gray-300 p-2">替代咖啡或含糖饮料，提神又健康。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">17:30 下班/晚餐前</td>
+          <td class="border border-gray-300 p-2">约360</td>
+          <td class="border border-gray-300 p-2">增加饱腹感，避免晚餐过量进食。</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-2">22:00 睡前1小时</td>
+          <td class="border border-gray-300 p-2">约340</td>
+          <td class="border border-gray-300 p-2">补充夜间所需水分，但不宜太多，防止起夜。可根据个人情况微调。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-gray-600 mb-4">注：上表水量以体重75公斤计算（总量2475毫升），你可以按自己每日总量按比例分配。</p>
 
-  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
-    <h2 class="text-2xl font-semibold mb-4">在生活中，你可以这样用它</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div>
-        <h3 class="font-medium text-lg mb-2">场景一：打造独一无二的头像</h3>
-        <p class="text-gray-600 leading-relaxed">觉得自己的微信、微博头像太普通？用一张清晰的自拍照，试试“素描”或“油画”风格，瞬间变成一张充满艺术气息的个人标志，让你在好友列表里脱颖而出。</p>
-      </div>
-      <div>
-        <h3 class="font-medium text-lg mb-2">场景二：为旅行照片增加故事感</h3>
-        <p class="text-gray-600 leading-relaxed">上次旅行的风景照很美，但总觉得少了点味道。给古镇的照片加上“怀旧”滤镜，给现代建筑加上“高对比”效果，就能营造出不同的情绪和氛围，让每张照片都像在讲述一个故事。</p>
-      </div>
-    </div>
-  </section>
+  <h2 class="text-2xl font-semibold mt-6 mb-3">常见问题解答</h2>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：喝水量必须精确到毫升吗？</h3>
+    <p class="mb-2">不需要，整数估算即可。可以用常见容器作为参考：一罐可乐约335毫升，一瓶矿泉水约500毫升。只要全天总量大致达标，身体不觉得口渴，尿液呈淡黄色，就说明喝够了。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：运动和夏天怎么调整？</h3>
+    <p class="mb-2">剧烈运动或高温天气下，每小时可能多流失500～1000毫升水分，建议在运动前后及过程中少量多次补充淡盐水或电解质饮料。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：喝汤、吃水果算不算喝水量？</h3>
+    <p class="mb-2">算！食物中的水分也应计入每日总摄入量。比如一碗清汤约200毫升，一个苹果含水约100毫升。不过，纯水更易被吸收，建议大部分水分还是通过饮水获取。</p>
+  </div>
+  
+  <div class="mb-4">
+    <h3 class="text-xl font-medium mb-1">Q：水喝多了会中毒吗？</h3>
+    <p class="mb-2">健康人肾脏每小时能排出800～1000毫升水，只要不是短时间内狂饮（比如1小时内喝超过2升），一般不会水中毒。但心肾功能不全者需遵医嘱限制饮水量。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-    <div class="space-y-4">
-      <div>
-        <h3 class="font-medium mb-1">问：我的照片会上传到服务器吗？安全吗？</h3>
-        <p class="text-gray-600 leading-relaxed">答：完全不用担心隐私。整个处理过程通常在您的浏览器内完成，图片数据不会上传到远程服务器，处理完成后即可关闭页面，安全便捷。</p>
-      </div>
-      <div>
-        <h3 class="font-medium mb-1">问：处理图片需要很长时间吗？</h3>
-        <p class="text-gray-600 leading-relaxed">答：完全不需要。对于普通尺寸的照片，大部分效果都是“秒出”。你甚至感觉不到等待，就能看到焕然一新的作品。</p>
-      </div>
-      <div>
-        <h3 class="font-medium mb-1">问：支持哪些类型的图片？</h3>
-        <p class="text-gray-600 leading-relaxed">答：你手机里常用的图片格式，比如JPG、PNG等，基本都可以直接使用。</p>
-      </div>
-    </div>
-  </section>
+  <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+    <p class="font-medium">记住，喝水是为了让身体舒服，不必教条。你可以用上面的公式算出基础量，再根据季节、活动量微调。不妨设个闹钟，分时段小口慢饮，养成习惯后，你会发现皮肤、精力都会变好。</p>
+  </div>
 
-  <footer class="pt-8 border-t border-gray-200">
-    <p class="text-center text-gray-600 leading-relaxed">
-      与其羡慕别人的创意照片，不如现在就动手，让你的普通照片也来一场华丽的“艺术变身”吧。这个过程，简单得超乎你的想象。
-    </p>
-  </footer>
-</article>
-`;export{e as default};
+  <p class="mt-6 text-sm text-gray-500">温馨提示：本文内容为健康科普，不能替代专业医疗建议。如有特殊疾病或身体状况，请咨询医生。</p>
+</div>
+`;export{r as default};

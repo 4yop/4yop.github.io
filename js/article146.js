@@ -1,97 +1,113 @@
-const t=`
-<article class="text-gray-800 font-sans bg-white">
-  <header class="py-8 px-4 lg:px-8 text-center border-b border-gray-100">
-    <h1 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Excel表格转Word文档，原来可以这么简单快速</h1>
-    <p class="text-gray-600 text-lg">还在为格式错乱、复制粘贴而烦恼吗？一个工具就能搞定。</p>
-  </header>
+const l=`
+<div class="text-gray-800 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Excel和CSV文件互转：一个简单工具解决办公小烦恼</h1>
 
-  <div class="px-4 lg:px-8 py-8 max-w-4xl mx-auto">
-    <section class="mb-10">
-      <p class="mb-6 text-lg leading-relaxed">
-        在工作中，我们常常需要将Excel表格里的数据放到Word文档里。你可能是想制作一份包含数据表格的报告，或者是需要提交一份带统计表的方案。
-      </p>
-      <p class="mb-6 text-lg leading-relaxed">
-        这个过程听起来简单，做起来却常常让人头疼。直接复制粘贴吧，表格的格式经常会乱掉，宽度对不齐，颜色也消失了。如果表格有好几页，或者有好几个不同的工作表，那更是费时费力。
-      </p>
-      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
-        <h2 class="text-xl font-semibold mb-2 text-blue-800">你是不是也遇到过这些情况？</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-          <li>精心调整的表格颜色和字体，一粘贴到Word里就全没了。</li>
-          <li>表格太宽，在Word里总是超出页面，需要手动一列一列调整。</li>
-          <li>一个Excel文件里有好几张表，得一张一张处理，非常麻烦。</li>
-          <li>只想快速把数据变成一份规整的文档，却花了大半天时间在调整格式上。</li>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你在工作中是否遇到过这样的困扰：精心制作的Excel表格，发给同事或上传到某个系统时，对方却提示无法打开或格式不支持？或者收到一个CSV文件，点开却发现全是乱码，数据都挤在一起？今天，我们就来聊聊这两种常见的电子表格文件，以及如何轻松地在它们之间转换。
+  </p>
+
+  <!-- 第一部分：解释两种格式 -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">Excel 和 CSV，到底有什么区别？</h2>
+    <p class="mb-4">
+      我们可以把文件格式想象成不同的“包装盒”。<strong>Excel文件</strong>（比如 .xlsx 或 .xls）就像一个功能齐全的“豪华礼品盒”，它不仅能装下数据（表格里的数字和文字），还能记住颜色、字体、公式、多个工作表等丰富的样式和设置。这是微软Office和WPS等办公软件最常用的格式。
+    </p>
+    <p class="mb-4">
+      而<strong>CSV文件</strong>（.csv）则像一个最朴素的“通用纸箱”。它只关心最核心的东西——数据本身。它用简单的逗号来分隔每一列，用换行来分隔每一行，里面没有任何颜色、公式或者多余的格式。正因为这种简单，几乎所有的软件和系统都能识别并打开它，兼容性极好。
+    </p>
+    <div class="bg-blue-50 p-4 rounded-lg mb-4 border border-blue-100">
+      <p class="text-blue-800 mb-2"><strong>简单来说：</strong></p>
+      <ul class="list-disc pl-5 space-y-1 text-blue-800">
+        <li>Excel文件：功能强，样式丰富，适合编辑和保存。</li>
+        <li>CSV文件：结构简单，兼容性无敌，适合交换和导入数据。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 第二部分：为什么需要转换？ -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么时候需要把文件转来转去？</h2>
+    <p class="mb-4">
+      理解了它们的特性，就知道转换的必要性了。下面这些场景，你可能也碰到过：
+    </p>
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 Excel 转成 CSV</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>将客户数据导入到网站后台或邮件系统。</li>
+          <li>把销售报表上传到只支持CSV的财务软件。</li>
+          <li>和用不同办公软件（如Mac的Numbers）的伙伴共享纯数据。</li>
+          <li>避免因Excel版本不同导致的格式错乱问题。</li>
         </ul>
       </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">一个省心工具能帮你做什么？</h2>
-      <p class="mb-8 text-lg leading-relaxed">
-        好消息是，现在有专门处理这个问题的工具。它就像一个聪明的“格式搬运工”，能帮你把Excel里的表格，原原本本地“搬”到Word文档里，而且过程非常简单。
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-10">
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-green-600 font-bold">1</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">一步上传，自动识别</h3>
-          <p class="text-gray-700">你只需要把Excel文件拖进去或者点一下上传，它就能立刻看到你表格里所有的数据，非常直观。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-blue-600 font-bold">2</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">保留样式，保持美观</h3>
-          <p class="text-gray-700">你之前在Excel里设置的文字加粗、单元格背景颜色，大部分都能被保留下来，生成和你原表很像的Word表格。</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-          <div class="text-4xl mb-4 text-center text-purple-600 font-bold">3</div>
-          <h3 class="text-xl font-semibold mb-3 text-center">按需调整，一键生成</h3>
-          <p class="text-gray-700">你可以选择生成Word文档的纸张大小（比如常用的A4或Letter），然后点一下按钮，一份完整的Word文档就生成好了，可以直接下载使用。</p>
-        </div>
+      <div class="bg-gray-50 p-4 rounded-lg border">
+        <h3 class="font-semibold mb-2 text-lg">需要把 CSV 转成 Excel</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>从银行或电商平台下载的账单是CSV，想用Excel做进一步计算和图表分析。</li>
+          <li>收到的CSV数据没有排版，想把它整理得美观易读。</li>
+          <li>需要将多个CSV文件的数据合并到一个Excel文件的多个工作表中。</li>
+          <li>单纯觉得用Excel查看和编辑更顺手。</li>
+        </ul>
       </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">具体怎么使用？</h2>
-      <p class="mb-6 text-lg leading-relaxed">
-        整个过程只需要三四步，在电脑和手机上都能操作，对使用者的技术水平没有任何要求。
-      </p>
-      <ol class="list-decimal pl-5 space-y-8 text-lg">
-        <li class="pl-2">
-          <strong class="text-gray-900">准备好你的Excel文件：</strong> 确保你要转换的表格已经保存在你的电脑或手机里。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">打开工具，上传文件：</strong> 找到页面上醒目的“上传Excel”按钮，点击它，然后从你的设备里选择文件。你也可以直接把文件拖到那个按钮上，更加方便。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">预览并简单设置：</strong> 上传后，你马上就能在页面下方看到表格内容的预览，确认无误。如果需要，可以在上方选择一个你想要的文档纸张大小。
-        </li>
-        <li class="pl-2">
-          <strong class="text-gray-900">转换并下载：</strong> 点击“转换并下载Word”按钮，稍等片刻，浏览器就会自动开始下载生成好的Word文档。打开它，你就会看到一份排版好的表格文档。
-        </li>
-      </ol>
-      <div class="mt-8 p-6 bg-amber-50 rounded-lg border border-amber-200">
-        <p class="text-amber-900"><strong>小提示：</strong> 这个工具会尽力保留你表格的样式。如果原表格特别复杂，生成后可能需要在Word里做一些微调，但比起从零开始，已经节省了大量时间。</p>
-      </div>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-6 text-gray-900 border-b pb-2">它适合哪些场景？</h2>
-      <ul class="list-disc pl-5 text-lg space-y-3 text-gray-700">
-        <li><strong>学生：</strong> 将实验数据从Excel整理到实验报告或论文中。</li>
-        <li><strong>办公族：</strong> 制作周报、月报、项目总结，需要将数据表格嵌入文档。</li>
-        <li><strong>HR或财务：</strong> 将人员名单、费用统计表转换成正式的文档格式进行提交或打印。</li>
-        <li><strong>任何需要数据呈现的人：</strong> 当你需要一份既包含详细数据，又排版规范的正式文件时。</li>
-      </ul>
-    </section>
-
-    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
-      <p class="text-xl mb-4 font-medium">总而言之，将Excel转为Word不再是一个技术活。</p>
-      <p class="text-gray-600 mb-8">
-        借助这类便捷的工具，你可以把时间和精力从繁琐的格式调整中解放出来，更多地专注于内容本身。下次再遇到需要转换表格的时候，不妨试试这种方法，体验一下一键生成的轻松。
-      </p>
-      <div class="inline-block px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200">
-        去试试快速转换工具
-      </div>
-    </footer>
+    </div>
   </div>
-</article>
-`;export{t as default};
+
+  <!-- 第三部分：介绍工具（非技术化描述） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何轻松完成转换？</h2>
+    <p class="mb-4">
+      以前，你可能需要打开复杂的办公软件，进行“另存为”操作，或者手动复制粘贴，步骤繁琐还容易出错。现在，整个过程可以变得像“上传文件-点击按钮-下载结果”一样简单。
+    </p>
+    <p class="mb-6">
+      一个设计友好的在线工具就能帮你搞定。你只需要：
+    </p>
+    <ol class="list-decimal pl-5 space-y-3 mb-6">
+      <li><strong>选择转换方向</strong>：告诉工具，你是想把Excel变成CSV，还是反过来。</li>
+      <li><strong>上传你的文件</strong>：从电脑里选择那个需要转换的文件。</li>
+      <li><strong>做点小选择（如果需要）</strong>：比如转换Excel时，可以选择里面的某一个具体工作表；转换CSV时，可以选一种更通用的文字编码来彻底避免乱码。</li>
+      <li><strong>开始转换并下载</strong>：点击按钮，稍等片刻，就能得到一份格式完美兼容的新文件。</li>
+    </ol>
+    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+      <p class="text-green-800">
+        <strong>整个过程在浏览器里完成</strong>，无需安装任何软件，也无需担心复杂的设置。无论是用Windows电脑、Mac，还是手机，只要你能打开网页，就能使用。
+      </p>
+    </div>
+  </div>
+
+  <!-- 第四部分：解决常见问题（FAQ形式） -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你可能关心的问题</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换后会丢失我的公式和颜色吗？</h3>
+        <p>当从Excel转为CSV时，<strong>会的</strong>。CSV格式只保存最终的数值和文字结果。所以如果你的表格依赖复杂的计算，建议保留原始的Excel文件作为“母版”，只将最终需要交换的数据转为CSV。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">为什么转换后的CSV用记事本打开是乱码？</h3>
+        <p>这通常是“文字编码”不匹配造成的。选择带有“<strong>BOM</strong>”的UTF-8编码选项进行转换，可以最大限度地保证在不同系统上都能正确显示中文等字符，彻底解决乱码烦恼。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">我的文件很大，转换会卡住吗？</h3>
+        <p>一个好的工具会考虑到大文件的情况，采用流式处理的方式，就像细水长流一样分批处理数据，而不是一次性全部吞下，从而更稳定地完成大型表格的转换。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">转换安全吗？我的数据会上传到哪里？</h3>
+        <p>对于靠谱的工具，整个转换过程通常在<strong>你的浏览器本地完成</strong>，文件数据并不会被上传到远方的服务器。这意味着你的敏感业务数据或个人信息，从始至终都只留在你自己的电脑或手机上，安全有保障。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 结尾总结 -->
+  <div class="bg-gray-50 p-6 rounded-xl border">
+    <h2 class="text-2xl font-semibold mb-4 text-center">总结一下</h2>
+    <p class="mb-4 text-center">
+      Excel和CSV，各有各的用武之地。当它们在沟通中“语言不通”时，我们不再需要手足无措。利用简单易用的转换工具，就像给文件找一个“万能翻译”，轻松跨越格式障碍，让数据顺畅地流动起来，为你提高办公效率，减少不必要的麻烦。
+    </p>
+    <p class="text-center text-gray-600">
+      希望这篇文章能帮你理清思路。下次再遇到格式不兼容的提示，不妨试试这个简单的转换方法。
+    </p>
+  </div>
+</div>
+`;export{l as default};

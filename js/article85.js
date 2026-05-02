@@ -1,3 +1,79 @@
-const s=`<div class="max-w-4xl mx-auto p-4 sm:p-6 text-gray-800 bg-white">
+const t=`
+<div class="text-gray-700 max-w-4xl mx-auto px-4 sm:px-6">
+  <article class="space-y-8">
+    <header class="pt-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 leading-tight">父母血型能决定孩子的血型吗？一篇带你读懂血型遗传的奥秘</h1>
+      <p class="mt-4 text-gray-600">你可能在家庭聚会或朋友聊天时听过这样的讨论：“我俩都是A型，孩子肯定是A型吧？”“我是O型，我老公是AB型，那孩子会是什么血型呢？”今天，我们就来聊聊血型遗传那些事儿。</p>
+    </header>
 
-<!-- 标题 --> <h1 class="text-3xl sm:text-4xl font-bold text-center mb-3 text-gray-900">人生小格：用一个格子代表一个月，看清你一生的时间分配</h1> <p class="text-base sm:text-lg text-center text-gray-600 mb-8 border-b border-gray-200 pb-6">工作、睡眠、陪伴家人……你的余生还剩多少格子？</p> <!-- 引言 --> <section class="mb-8"> <p class="text-base sm:text-lg mb-4 leading-relaxed"> 你有没有认真算过，如果活到80岁，你的一生总共有多少个月？答案是<span class="font-semibold text-green-700">960个月</span>。如果每个月用一个小格子代表，画在纸上，也就不到1000个格子。现在你已经划掉了多少？剩下的格子里，有多少要交给工作，多少要在睡眠中度过，又有多少能留给父母和孩子？ </p> <p class="text-base sm:text-lg mb-4 leading-relaxed"> 「人生小格」就是这样一个把生命变成彩色方格的小工具。你只需输入出生日期、预期寿命、退休年龄和结婚年龄，它就会自动生成一张格子图——每个格子代表一个月，不同颜色记录着你已经走过的日子，以及未来时间里睡眠、工作、退休、陪孩子、陪父母所占用的月份。一眼看过去，人生进度清清楚楚。 </p> </section> <!-- 颜色说明卡片 --> <section class="mb-10 bg-gray-50 p-5 rounded-xl border border-gray-200"> <h2 class="text-xl font-semibold mb-4 text-gray-900">每个颜色代表什么？</h2> <div class="grid grid-cols-1 sm:grid-cols-2 gap-3"> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-green-500 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">绿色：</span>你已经走过的生命月份</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-blue-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">浅蓝：</span>睡眠（假设余生平均每天睡8小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-gray-400 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">灰色：</span>工作（退休前每天工作8小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-yellow-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">黄色：</span>退休后的日子</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-pink-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">粉色：</span>陪伴孩子（孩子出生后18年，每天5小时）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-blue-500 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">深蓝：</span>陪伴父母（每月看望一天，直到父母预期寿命）</span></div> <div class="flex items-center"><span class="inline-block w-5 h-5 bg-gray-300 rounded-sm mr-3 flex-shrink-0"></span><span class="text-sm sm:text-base"><span class="font-medium">浅灰：</span>其他自由支配的时间</span></div> </div> <p class="text-xs text-gray-500 mt-4 italic">注：所有时间分配都是基于平均假设，实际你可以通过调整退休年龄、结婚年龄来观察变化。</p> </section> <!-- 一个具体的例子 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">举个🌰：1995年出生的人，现在还剩多少格子？</h2> <p class="text-base mb-3 leading-relaxed"> 假设你出生于1995年12月26日（对，就是代码里那个默认日期），预期寿命80岁，打算65岁退休，30岁结婚并且有了孩子。那么到今天（2026年2月），你已经走过了大约30年零2个月，也就是<span class="font-medium">362个绿色格子</span>。余生还有<span class="font-medium">598个格子</span>（80×12－362）。 </p> <p class="text-base mb-3 leading-relaxed"> 在这598个格子里： </p> <ul class="list-disc pl-6 space-y-1 text-base mb-4"> <li><span class="font-medium">约200个浅蓝格子</span>会被睡眠悄悄占据（毕竟人每天要睡8小时）；</li> <li><span class="font-medium">约180个灰色格子</span>要用来工作（从30岁到65岁，每天8小时，换算成整月）；</li> <li><span class="font-medium">约80个黄色格子</span>是65岁后的退休时光；</li> <li><span class="font-medium">约40个粉色格子</span>属于陪伴孩子的18年（假设每天5小时，累积起来其实只有这么少）；</li> <li><span class="font-medium">约30个深蓝格子</span>是看望父母的珍贵时刻（每月一天，直到他们80岁）；</li> <li>剩下<span class="font-medium">不到70个浅灰格子</span>才是完全属于你自己的、可以自由支配的完整月份。</li> </ul> <p class="text-base bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-300"> <span class="font-medium">是不是有点吃惊？</span> 原来一辈子看起来很长，但除去睡眠、工作、固定责任，真正能随心所欲的时间，竟然只有五六年（70个月左右）。这就是视觉化的力量——让抽象的“时间”变成一个个小方格，逼你直视。 </p> </section> <!-- 你可以自己调整 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">换一种活法，格子颜色就会变</h2> <p class="text-base mb-3 leading-relaxed"> 人生小格最有意思的地方，是你可以在计算器里随意改变退休年龄、结婚年龄，甚至选择“不退休”或“不结婚”。每改一次，格子图都会重新排列，让你立刻看到不同选择带来的变化： </p> <ul class="list-disc pl-6 space-y-2 text-base"> <li><span class="font-medium">如果延迟退休到70岁：</span>灰色工作格子会多出一大片，黄色退休格子相应减少，你自由支配的浅灰格子被进一步压缩。</li> <li><span class="font-medium">如果选择不结婚：</span>粉色格子完全消失，但深蓝（陪父母）和其他颜色基本不变，你可能会意识到，原来陪伴孩子的时间竟然只占生命的一小撮，错过了就真的没了。</li> <li><span class="font-medium">如果预期寿命增加到90岁：</span>总格子变成1080个，你会多出120个格子——但这些多出来的格子大部分会分给睡眠（浅蓝）和退休后的黄色，工作灰色并不会增加（除非你延迟退休）。</li> </ul> <p class="text-base mt-4">这种互动让很多人开始认真思考：我到底想把生命“涂”成什么样子？是希望工作格子少一点，还是陪伴家人的颜色深一点？</p> </section> <!-- 为什么值得一看 --> <section class="mb-8"> <h2 class="text-xl font-semibold mb-3 text-gray-900">为什么每个普通人都该试试“人生小格”？</h2> <p class="text-base mb-3 leading-relaxed"> 因为我们平时总觉得日子还长，但数字不会骗人。900多个格子，随手一划就过了三分之一。那些你以为会很多的时间——比如陪孩子长大、陪父母聊天——在格子里其实只有一小排。相反，工作和睡眠却像背景色一样铺满了整个生命。 </p> <p class="text-base mb-3 leading-relaxed"> 有一位用户说，看到自己剩余格子中代表父母的深蓝色只有那么几行，他立刻订了周末回家的车票。还有一位刚工作的年轻人，发现如果自己65岁退休，工作格子几乎要占到剩余格子的三分之一，于是开始认真研究副业和理财，想提前“买回”一些灰色格子。 </p> <p class="text-base font-medium">这就是人生小格想带给你的——不是焦虑，而是一份清晰的“人生地图”，让你在做每一个重大决定时，能想起那些格子的颜色。</p> </section> <!-- 结尾呼吁 --> <section class="mt-10 pt-6 border-t border-gray-300 text-center"> <p class="text-base sm:text-lg text-gray-700 mb-2">你不妨也拿出自己的出生日期，算一算已经划掉了多少格子，剩下的还想怎么涂。</p> <p class="text-xl font-semibold text-gray-900">希望你的格子图里，暖色多一些，遗憾少一些。</p> <p class="text-sm text-gray-500 mt-6">（你可以直接在页面上方的工具里输入你的信息，实时生成属于你自己的“人生小格”。）</p> </section> </div>`;export{s as default};
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型是什么？为什么我们的血型不一样？</h2>
+      <p>简单来说，血型是血液表面的“小标识”。就像人的长相有高矮胖瘦，血液也有不同的“型号”。我们常说的ABO血型，主要有四种：A型、B型、O型和AB型。</p>
+      <p>你的血型，是从你父母那里继承来的。每个人会从爸爸那里获得一个“血型信息”，从妈妈那里获得另一个“血型信息”，这两个信息组合在一起，就决定了你最终是什么血型。</p>
+    </section>
+
+    <section class="space-y-6 bg-blue-50 p-6 rounded-lg my-8">
+      <h2 class="text-2xl font-bold text-gray-800">一个简单的孩子血型预测方法</h2>
+      <p>想知道你和另一半未来的宝宝可能是什么血型吗？其实这有一套很明确的遗传规则。</p>
+      <p>为了方便大家理解，网上有一些基于这些遗传规则设计的查询方法。你只需要选择父亲和母亲的血型，它就能帮你计算出宝宝可能出现的血型以及对应的概率。</p>
+      <p class="text-sm text-gray-500">（请注意，这只是一个基于经典遗传学的概率预测，主要用于科普和了解，不能替代医学诊断。）</p>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">血型遗传的基本规律，一看就懂</h2>
+      <p>我们把复杂的科学原理，用大白话翻译一下：</p>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>A型或B型血的人</strong>，他们传递给孩子的“信息”可能是A（或B），也可能是O。</li>
+        <li><strong>O型血的人</strong>，他们传递给孩子的“信息”一定是O。</li>
+        <li><strong>AB型血的人</strong>，他们传递给孩子的“信息”要么是A，要么是B。</li>
+      </ul>
+      <p>孩子的血型，就是看TA从父母那里得到的两个“信息”是什么。</p>
+      <div class="overflow-x-auto my-4">
+        <table class="min-w-full bg-white border border-gray-300">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="py-3 px-4 border-b text-left font-medium">父母血型组合</th>
+              <th class="py-3 px-4 border-b text-left font-medium">孩子可能有的血型</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="py-3 px-4 border-b">父亲O型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子只能是 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲A型 + 母亲B型</td><td class="py-3 px-4 border-b">孩子可能是 A、B、AB 或 O 型</td></tr>
+            <tr><td class="py-3 px-4 border-b">父亲AB型 + 母亲O型</td><td class="py-3 px-4 border-b">孩子可能是 A 型 或 B 型</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">关于血型遗传的几个常见疑问</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">1. 为什么父母都是A型，孩子却是O型？</h3>
+          <p>这完全有可能。如果父母双方都携带了O“信息”（但他们自己表现为A型），那么他们各自都有50%的概率把O“信息”传给孩子。当孩子恰好同时收到这两个O“信息”时，就会是O型血。</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">2. A型和B型父母能生出O型孩子吗？</h3>
+          <p>可以，但需要满足一个条件：父母双方都必须携带O“信息”（即他们的基因型是AO和BO）。这样组合起来，就有一定的概率生出OO（即O型）的孩子。</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">3. 父母有一方是AB型，孩子可能是O型吗？</h3>
+          <p>不可能。AB型血的人只会传递A或B“信息”，不会传递O“信息”。所以，只要父母一方是AB型，孩子就不可能得到两个O“信息”，也就不可能是O型血。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 pt-4">了解血型遗传有什么用？</h2>
+      <p>首先，它能满足我们的好奇心，解开“我为什么是这个血型”的疑问。在家庭聊天中，这也是一个很有趣的话题。</p>
+      <p>其次，了解基本的血型知识，能在一些情况下帮助我们建立初步的判断。比如在紧急情况下需要输血时，知道家人的血型或许能提供一些线索，但<b>所有医疗行为都必须以正规医院的检验为准</b>。</p>
+      <p>最重要的是，这让我们对生命的传承多了一份了解。我们身上的许多特征，都携带着来自父母双方的、独一无二的“密码”。</p>
+    </section>
+
+    <footer class="pt-8 mt-8 border-t border-gray-200">
+      <p class="text-gray-600">希望这篇文章能帮你轻松理解血型遗传的规律。下次再和朋友聊起这个话题时，你也可以分享这些有趣的知识了。</p>
+    </footer>
+  </article>
+</div>
+`;export{t as default};

@@ -1,114 +1,151 @@
-const l=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
-  <article>
-    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
-      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
-    </h1>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <article class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 border-b pb-6">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">了解真实的自己：一份全面的MBTI性格测试指南</h1>
+      <p class="text-gray-600 text-lg">你是否曾好奇，为什么你和某些人一拍即合，和另一些人却沟通困难？为什么你偏爱安静思考，而朋友却热衷热闹聚会？认识自己，可以从了解性格开始。</p>
+    </header>
 
-    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
-      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
-    </div>
-
-    <div class="mb-8">
-      <p class="mb-4 leading-relaxed">
-        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
-      </p>
-      <p class="leading-relaxed">
-        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
-      </p>
-    </div>
-
+    <!-- 引言 -->
     <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        一、认识你的生理周期：不仅仅是“那几天”
-      </h2>
-      <p class="mb-3 leading-relaxed">
-        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
-        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
-        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
-        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
-      </ul>
-      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
-        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        二、推算的核心：找到身体的“节拍器”
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
-      </p>
-
-      <div class="bg-gray-50 p-5 rounded-lg mb-4">
-        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
-        <p class="mb-3 text-gray-700 leading-relaxed">
-          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
-        </p>
-
-        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
-        <p class="text-gray-700 leading-relaxed">
-          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
-        </p>
-      </div>
-
-      <p class="leading-relaxed">
-        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        三、预测工具能帮你做什么？
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
-        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
-        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
-      </ul>
-      <p class="leading-relaxed">
-        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        四、重要提醒：推算结果是“参考”，不是“医嘱”
-      </h2>
-      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
-        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
-        <p class="text-red-700 leading-relaxed mb-2">
-          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
-        </p>
-        <p class="text-red-700 leading-relaxed">
-          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
-        </p>
+      <p class="text-gray-700 mb-4">在生活中，我们常常会遇到这样的疑问：我到底适合做什么工作？为什么我总感觉和别人想的不一样？如何更好地与他人相处？其实，这些问题都与我们的性格特质密切相关。</p>
+      <p class="text-gray-700 mb-4">有一种被广泛使用的工具，可以帮助我们描绘出自己性格的“地图”，它就是MBTI性格测试。它不是什么神秘的占卜，而是一个基于心理学理论的性格类型指标，帮助我们更清晰地看到自己的偏好和倾向。</p>
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+        <p class="text-gray-800">简单来说，MBTI就像一面镜子，帮助我们观察自己在获取能量、收集信息、做决策和安排生活这四个方面的习惯性偏好。</p>
       </div>
     </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
-        五、从了解到掌控，开启更自在的生活
-      </h2>
-      <p class="mb-4 leading-relaxed">
-        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
-      </p>
-      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
-        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
-        <li>在经期前准备好护理用品，避免尴尬。</li>
-        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
-        <li>为备孕计划提供一个基础的参考时间框架。</li>
+    <!-- MBTI是什么 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">MBTI是什么？不仅仅是四个字母</h2>
+      <p class="text-gray-700 mb-4">你可能见过诸如“INFP”、“ESTJ”这样的四个字母组合。这不是密码，而是MBTI性格测试的结果代码。每一个字母代表你在某个性格维度上的倾向。</p>
+      <p class="text-gray-700 mb-6">它主要从四个角度来观察我们：</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">1. 能量来源：内向(I) 还是 外向(E)？</h3>
+          <p class="text-gray-700">这里不是指爱不爱说话，而是指你从哪里获得能量。喜欢从内心世界、独处中恢复精力的人是“内向”(I)；而通过与外界互动、与人交往来充电的人则是“外向”(E)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">2. 信息收集：实感(S) 还是 直觉(N)？</h3>
+          <p class="text-gray-700">你更相信眼睛看到的现实细节，还是更关注未来的可能性？注重具体事实和实际经验的是“实感”(S)；喜欢抽象概念、联想和潜在意义的是“直觉”(N)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">3. 决策方式：思考(T) 还是 情感(F)？</h3>
+          <p class="text-gray-700">做决定时，你更依赖逻辑分析，还是更重视人情与和谐？基于客观逻辑和因果分析做判断的是“思考”(T)；优先考虑价值观和他人感受的是“情感”(F)。</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-gray-800 text-lg mb-2">4. 生活方式：判断(J) 还是 感知(P)？</h3>
+          <p class="text-gray-700">你喜欢有计划、有条理的生活，还是灵活、随性的方式？喜欢做决定、让事情有明确结果的是“判断”(J)；喜欢保持开放、适应变化的是“感知”(P)。</p>
+        </div>
+      </div>
+      <p class="text-gray-700">将这四个维度的倾向组合起来，就形成了16种不同的性格类型，每一种都有其独特的特点。</p>
+    </section>
+
+    <!-- 测试过程 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">一次专业的MBTI测试是怎样的？</h2>
+      <p class="text-gray-700 mb-4">一个完整的在线MBTI测试，通常会让你回答一系列关于日常行为、想法和感受的选择题。这些题目旨在探索你在上述四个维度上的自然偏好。</p>
+      
+      <div class="bg-gray-50 p-5 rounded-lg mb-6">
+        <h3 class="font-bold text-gray-800 text-lg mb-3">测试时你可能会看到：</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">1</span>
+            <span><strong>清晰的进度提示</strong>：让你知道已经完成了多少，还有多少题目。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">2</span>
+            <span><strong>贴近生活的场景题</strong>：比如“在社交聚会中，你通常...”，选项没有对错，只需选择最符合你真实感受的一项。</span>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center mr-2 flex-shrink-0 leading-6">3</span>
+            <span><strong>实时的维度反馈</strong>：有些测试会边做边显示你在各个维度上的初步倾向，就像看着自己的性格画像一笔笔画出来。</span>
+          </li>
+        </ul>
+      </div>
+      <p class="text-gray-700">完成所有题目后，系统会根据你的选择进行计分，最终得出一个属于你的四字母性格类型代码。</p>
+    </section>
+
+    <!-- 报告价值 -->
+    <section class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 pb-2 border-b">测试报告能告诉你什么？</h2>
+      <p class="text-gray-700 mb-6">一份详细的MBTI测试报告，远不止告诉你四个字母。它更像一份个人使用说明书，可以帮助你：</p>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-green-600 font-bold">优</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">发现自己的天然优势</h3>
+            <p class="text-gray-700">报告会详细分析你这种性格类型的闪光点。比如，你可能天生善于逻辑分析、有强大的创新能力，或者对人际关系有深刻的洞察力。了解优势，能让你在工作和生活中更好地发挥所长。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-yellow-600 font-bold">长</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">看到可能的成长方向</h3>
+            <p class="text-gray-700">每种性格也都有其面临的挑战。报告可能会指出，你可能需要注意避免过度陷入理论而忽视执行，或者需要学习更好地表达情感。认识到这些，是个人成长的第一步。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-indigo-600 font-bold">职</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">获得职业选择的参考</h3>
+            <p class="text-gray-700">性格与职业的匹配度很重要。报告常常会列出一些高度匹配的职业方向。例如，内向直觉思考感知型的人，可能在科研、编程、架构设计等领域如鱼得水。这可以为你的学业或职业规划提供有价值的参考。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+            <span class="text-purple-600 font-bold">处</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg mb-1">改善人际沟通与理解</h3>
+            <p class="text-gray-700">当你明白自己是“思考型”而伴侣是“情感型”时，就能理解为什么Ta有时会觉得你“太讲道理”。MBTI提供了一个中立的框架，帮助我们理解人与人的不同，学会用对方能接受的方式沟通，减少摩擦。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 正确看待 -->
+    <section class="mb-10 bg-gray-50 p-6 rounded-xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">如何正确看待MBTI测试结果？</h2>
+      <p class="text-gray-700 mb-4">在探索自我的旅程中，MBTI是一个好用的工具，但也有一些需要注意的地方：</p>
+      <ul class="space-y-3 text-gray-700 mb-4">
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>它描述偏好，不是能力</strong>：MBTI说明你“喜欢”怎样，而不是你“擅长”什么。一个内向的人也可以练就出色的演讲能力。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>类型没有好坏之分</strong>：16种性格类型各有其独特的价值和贡献。世界需要细致的守护者，也需要大胆的创新者。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>人是动态发展的</strong>：你的偏好可能会随着经历和环境发生细微变化。测试结果是一个当下的快照，而非终身不变的标签。</span>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 bg-gray-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>目的是理解与发展</strong>：测试的最终目的不是把自己框定在某个类型里，而是借助这种洞察，更好地扬长避短，实现个人成长，同时更包容地看待他人。</span>
+        </li>
       </ul>
-      <p class="leading-relaxed text-gray-900 font-medium">
-        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
-      </p>
+      <p class="text-gray-700">最好的使用方式，是把报告作为一面镜子，从中看到自己可能忽略的特点，然后带着这份对自己的理解，更自信、更智慧地去生活和工作。</p>
+    </section>
+
+    <!-- 结语 -->
+    <section class="pt-6 border-t">
+      <p class="text-gray-700 mb-6">认识自己是一生的课题。MBTI性格测试就像在这条路上提供了一张粗略但很有用的地图。它不能决定你的终点，但能帮你了解自己出发时的“默认路径”。</p>
+      <p class="text-gray-700">如果你对“我究竟是怎样的一个人”感到好奇，不妨花上一点时间，诚实地回答一些问题。你可能会对自己有新的发现，也可能对身边人的行为多一分理解。这份自我了解的旅程，本身就是一种收获。</p>
     </section>
   </article>
 </div>
-`;export{l as default};
+`;export{s as default};

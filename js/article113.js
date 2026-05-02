@@ -1,64 +1,40 @@
 const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center leading-tight">给你的照片换个玩法：一键生成专属打乱拼图</h1>
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个工具能做什么</h2>
+      <p class="text-sm leading-7">
+        这页适合把截图、扫描件和照片里的文字提取出来，支持继续复制文本或导出结果。
+        对票据整理、表格录入、试卷摘录和扫描文档提取这类场景很方便。
+      </p>
+    </section>
 
-  <div class="text-lg text-gray-600 mb-8 text-center">
-    <p>想让普通的照片变得更有趣、更具挑战性吗？今天介绍一个简单的小工具，它能轻松把你的照片变成等待还原的拼图。</p>
-  </div>
+    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">建议这样使用</h2>
+      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
+        <li>先选对识别语言，再上传图片；混合内容时优先选更接近主体的语言。</li>
+        <li>图片尽量裁正、提高对比度，识别结果通常会更稳。</li>
+        <li>批量处理时先看前几张结果，再决定是否整批导出。</li>
+        <li>识别错得比较明显的单张图片，单独重跑通常比整批重复更省时间。</li>
+      </ol>
+    </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
-    <p class="font-medium text-blue-800">简单来说：你上传一张照片，选择切成多少块，工具就会自动把它打乱，生成一张全新的、等待被“破解”的图片。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">这是做什么用的？</h2>
-  <p class="mb-4">想象一下，你有一张非常喜欢的风景照、宠物照或者全家福。直接分享出去，大家看一眼就过去了。但如果把它变成一张被打乱顺序的拼图，再分享给朋友或家人，就多了一份互动和挑战的乐趣。</p>
-  <p class="mb-4">它就像是一个数字版的“拼图制作器”。你不用去购买实体的拼图块，也不用费力地用软件一点点裁剪。整个过程，只需要点几下鼠标。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么使用？非常简单，三步搞定</h2>
-  <ul class="list-decimal pl-5 space-y-4 mb-8">
-    <li>
-      <strong>第一步：选照片</strong>
-      <p class="text-gray-700 mt-1">点击“选择图片”按钮，从你的电脑或手机里挑出一张你想加工的照片。支持常见的图片格式。</p>
-    </li>
-    <li>
-      <strong>第二步：定难度</strong>
-      <p class="text-gray-700 mt-1">选择你想把照片切成多少块。比如9块（3x3）、16块（4x4），块数越多，打乱后的还原难度就越高，适合喜欢挑战的人。</p>
-    </li>
-    <li>
-      <strong>第三步：生成并下载</strong>
-      <p class="text-gray-700 mt-1">点击“切割并打乱”按钮，稍等片刻，你就能在右边看到打乱后的效果。满意的话，直接点击“下载拼图”，这张独一无二的谜题图就保存到你的设备里了。</p>
-    </li>
-  </ul>
-
-  <div class="bg-gray-100 p-5 rounded-lg my-8">
-    <h3 class="font-bold text-xl mb-3">你可能会问的几个问题</h3>
-    <div class="space-y-4">
-      <div>
-        <p class="font-medium">我的照片会被上传到服务器吗？</p>
-        <p class="text-gray-700">完全不会。所有处理都在你当前的浏览器页面里完成，照片数据不会离开你的电脑或手机，非常注重隐私安全。</p>
+    <section class="mb-8">
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
+      <div class="space-y-4 text-sm leading-7 text-gray-700">
+        <p><strong>手写字能识别吗？</strong> 可以尝试，但规整印刷体和清晰截图通常更准，潦草手写体更容易出错。</p>
+        <p><strong>为什么同一批图效果差别很大？</strong> 最常见原因是清晰度、倾斜角度、背景干扰和语言选择不一致。</p>
+        <p><strong>结果能继续整理吗？</strong> 可以，页面支持复制文本和导出结果，方便后续清洗和复核。</p>
       </div>
-      <div>
-        <p class="font-medium">可以切成任意块数吗？</p>
-        <p class="text-gray-700">为了保证打乱后每个小块形状规整（都是小方格），工具会自动建议一些特定的块数，比如4、9、16、25等，这样最终效果最好。</p>
-      </div>
-      <div>
-        <p class="font-medium">打乱后的图片清晰度会下降吗？</p>
-        <p class="text-gray-700">处理过程会尽量保持原图的清晰度。你可以随时通过预览功能查看原图和效果图，并进行对比。</p>
-      </div>
-      <div>
-        <p class="font-medium">这个工具有什么实际用途？</p>
-        <p class="text-gray-700">除了娱乐，它还可以用于制作简单的互动谜题、活动预热海报、或者作为亲子游戏素材。老师们甚至可以用它来制作别出心裁的课件题目。</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">给你的创意和生活加点料</h2>
-  <p class="mb-4">一张普通的照片，经过这样简单的处理，就变成了一个等待被解锁的小小谜团。无论是用于社交分享增加互动，还是作为一个小游戏和朋友一起玩，都能带来不一样的体验。</p>
-  <p class="mb-4">工具本身是免费的，操作门槛极低。你不必懂任何复杂的图片编辑技术，也不需要下载安装软件，打开网页就能用。</p>
-  <p class="mb-8">下次当你觉得某张照片值得被更仔细地“观赏”时，不妨试试把它变成一张打乱的拼图。这不仅仅是改变图片的排列方式，更是为你的记忆和分享，增添了一层探索的乐趣。</p>
-
-  <div class="text-center text-gray-500 text-sm mt-12 pt-8 border-t">
-    <p>希望这个简单的小工具，能为你平淡的图片分享带来一点新鲜感。</p>
-  </div>
-</article>
+    <section>
+      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
+      <p class="text-sm leading-7">
+        如果你还在比较本地 OCR 和在线 OCR 的差别，可以继续看
+        <a class="text-blue-600 hover:text-blue-700" href="/article/local-ocr-vs-online-ocr/">《本地 OCR 和在线 OCR 怎么选》</a>。
+      </p>
+    </section>
+  </article>
+</div>
 `;export{t as default};

@@ -1,40 +1,113 @@
 const t=`
-<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
-  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <section class="mb-8">
-      <h2 class="mb-4 text-2xl font-semibold text-gray-900">这个计算器适合拿来做什么</h2>
-      <p class="text-sm leading-7">
-        这页适合先估算房贷、车贷这类分期贷款的大致月供、总利息和还款总额，
-        也能快速比较等额本息和等额本金两种还款方式的差异。页面下方会列出前 12 期明细，方便你看本金和利息的变化。
-      </p>
-    </section>
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl font-bold tracking-tight text-gray-900 mb-4">神奇的复利：让您的财富像滚雪球一样增长</h1>
+  <p class="text-gray-600 mb-8">您是否好奇，为什么有人能通过储蓄或投资让财富稳定增值？秘密可能就藏在“复利”这个听起来有点专业，但其实非常简单的概念里。今天，我们就来聊聊这个普通人也能掌握的财富增长秘诀。</p>
 
-    <section class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">输入前先确认 4 个数字</h2>
-      <ol class="space-y-3 pl-5 text-sm leading-7 text-gray-700 list-decimal">
-        <li>贷款金额：尽量按你真实准备贷的金额填写。</li>
-        <li>年利率：先用银行给到的口径，不要混用宣传利率和审批利率。</li>
-        <li>贷款年限：不同年限会直接影响月供压力和总利息。</li>
-        <li>还款方式：等额本息更稳定，等额本金前高后低。</li>
-      </ol>
-    </section>
+  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+    <p class="font-medium text-blue-800 mb-2">一句话理解复利：</p>
+    <p class="text-blue-700">“利滚利”。您投资获得的利息，会加入本金，在下一期继续产生新的利息。雪球就是这么滚大的。</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">常见问题</h2>
-      <div class="space-y-4 text-sm leading-7 text-gray-700">
-        <p><strong>为什么工具结果和银行方案不完全一样？</strong> 银行审批会叠加实际利率、手续费、组合贷结构和还款规则，工具只做标准口径试算。</p>
-        <p><strong>该先看月供还是总利息？</strong> 如果更关心每月压力，先看月供；如果在比长期成本，再看总利息和总还款额。</p>
-        <p><strong>能替代正式贷款方案吗？</strong> 不能，结果仅供预算参考，最终以银行审批和合同为准。</p>
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">复利和您熟悉的“单利”有什么不同？</h2>
+  <p class="mb-6">为了更清楚，我们来打个比方：</p>
+  <div class="overflow-x-auto my-6">
+    <table class="min-w-full border border-gray-300 text-sm">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">计算方式</th>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">简单理解</th>
+          <th class="border border-gray-300 px-4 py-3 text-left font-medium">10年后结果 (1万元，年利率5%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-50">
+          <td class="border border-gray-300 px-4 py-3"><strong>单利</strong></td>
+          <td class="border border-gray-300 px-4 py-3">每年的利息只按最初的本金计算。</td>
+          <td class="border border-gray-300 px-4 py-3 font-mono">约 15，000 元</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border border-gray-300 px-4 py-3"><strong>复利</strong></td>
+          <td class="border border-gray-300 px-4 py-3">利息加入本金，一起计算下一年的利息。</td>
+          <td class="border border-gray-300 px-4 py-3 font-mono">约 16，289 元</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mb-8 text-gray-700">看，仅仅10年，复利就多出了近1300元。时间越长，这个差距就会变得越惊人，这就是复利被爱因斯坦称为“世界第八大奇迹”的原因。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">影响复利效果的三个关键因素</h2>
+  <p class="mb-6">想让您的财富雪球滚得更快更大，主要看这三点：</p>
+
+  <div class="grid md:grid-cols-3 gap-6 my-8">
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">1. 本金：最初的雪球</h3>
+      <p class="text-gray-700">您最初投入的多少钱。本金越大，起点越高，未来增长的绝对数额自然也越大。这不意味着钱少就不能开始，恰恰相反，<strong>尽早开始</strong>同样重要。</p>
+    </div>
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">2. 利率：山坡的陡峭度</h3>
+      <p class="text-gray-700">您的钱每年能增长百分之几。利率越高，财富增长的速度就越快。但请记住，高收益往往伴随高风险，需要根据自身情况谨慎选择。</p>
+    </div>
+    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
+      <h3 class="font-bold text-lg mb-3 text-gray-900">3. 时间：山坡的长度</h3>
+      <p class="text-gray-700">这是<strong>最关键</strong>的因素。复利需要时间发酵。投资10年和投资30年，最终结果会是天壤之别。所以，理财规划中，“耐心”是最宝贵的品质。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">普通人如何利用复利？两种常见思路</h2>
+  <p class="mb-4">理解了原理，我们该怎么用呢？主要有两种方式，对应不同的资金情况：</p>
+
+  <div class="space-y-8 my-8">
+    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
+      <div class="md:w-1/4">
+        <div class="bg-blue-100 text-blue-800 font-bold text-center py-4 px-2 rounded">
+          <p class="text-xl">方式一</p>
+          <p class="text-lg">一次性投入</p>
+        </div>
       </div>
-    </section>
+      <div class="md:w-3/4">
+        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您有一笔闲置资金</h3>
+        <p class="mb-3">比如年终奖、一笔存款，可以将其作为初始本金进行一次性的投资或储蓄，然后让它在漫长的岁月里通过复利自然生长。</p>
+        <p class="text-gray-600 text-sm"><strong>适合人群：</strong>手头有一笔闲钱，希望进行长期规划的人。</p>
+      </div>
+    </div>
 
-    <section>
-      <h2 class="mb-4 text-xl font-semibold text-gray-900">继续看</h2>
-      <p class="text-sm leading-7">
-        如果你想先看怎样输入才能更接近真实月供，可以继续看
-        <a class="text-blue-600 hover:text-blue-700" href="/article/loan-payment-estimation/">《房贷月供怎么估算更准确》</a>。
-      </p>
-    </section>
-  </article>
-</div>
+    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
+      <div class="md:w-1/4">
+        <div class="bg-green-100 text-green-800 font-bold text-center py-4 px-2 rounded">
+          <p class="text-xl">方式二</p>
+          <p class="text-lg">定期定额投入</p>
+        </div>
+      </div>
+      <div class="md:w-3/4">
+        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您每月有稳定结余</h3>
+        <p class="mb-3">也就是常说的“定投”。比如每月固定拿出1000元进行投资。这种方式好处很多：</p>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>积少成多：</strong>不知不觉中积累可观的本金。</li>
+          <li><strong>平摊成本：</strong>市场波动时，自动实现“买得多时价格低，买得少时价格高”。</li>
+          <li><strong>强迫储蓄：</strong>养成良好的理财习惯。</li>
+        </ul>
+        <p class="mt-3 text-gray-600 text-sm"><strong>适合人群：</strong>大多数有固定收入的工薪阶层，理财新手入门的好方法。</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">动手算一算：您的复利未来会是多少？</h2>
+  <p class="mb-6">光听概念可能还是有点模糊。现在有很多在线的<strong>复利计算器</strong>可以帮我们直观地看到结果。您可以尝试输入不同的数字，比如：</p>
+  <ul class="list-disc pl-5 space-y-3 mb-8 text-gray-700">
+    <li>如果每月定投1000元，年利率5%，30年后会变成多少钱？</li>
+    <li>如果一次性投入5万元，年利率8%，20年后和30年后差距有多大？</li>
+    <li>把复利频率从“一年一次”改成“一月一次”，结果会有什么变化？</li>
+  </ul>
+  <p class="mb-10 p-4 bg-gray-100 border-l-4 border-blue-500 italic">通过这样的模拟计算，您能更深刻地感受到时间、利率和投入方式对最终结果的影响，从而为自己制定更清晰、合理的长期理财目标。</p>
+
+  <div class="my-10 p-6 border border-yellow-300 bg-yellow-50 rounded-lg">
+    <h3 class="font-bold text-lg mb-3 text-gray-900">最后的小建议</h3>
+    <p class="mb-3">复利的魔力在于其长期性和稳定性。它不是一个让你一夜暴富的工具，而是一个关于<strong>耐心、纪律和长期规划</strong>的财富哲学。</p>
+    <p>最重要的步骤永远是：<strong>了解原理，设定目标，然后，尽早开始您的第一步。</strong></p>
+  </div>
+
+  <footer class="mt-12 pt-8 border-t border-gray-300 text-sm text-gray-500">
+    <p>希望这篇文章能帮助您理解复利这个强大的概念。理财路上，从理解一个简单的原理开始。请注意，文中涉及的数字均为示例，不构成任何具体的投资建议，实际投资需谨慎决策。</p>
+  </footer>
+</article>
 `;export{t as default};

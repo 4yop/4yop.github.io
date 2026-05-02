@@ -1,96 +1,56 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">几点睡觉最合适？一个简单方法帮你算出最佳入睡时间</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">每天早上闹钟响起时，你是不是也常常感到疲惫不堪？其实，问题可能不在于你睡了多久，而在于你什么时候入睡。今天，我们来聊聊一个简单却很实用的问题：根据你的起床时间，几点睡觉最合适？</p>
-  </header>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 为什么"几点睡"比"睡多久"更重要？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">很多人觉得，只要睡够8小时，几点睡都一样。但事实并非如此。我们的身体有一个内在的"生物钟"，它喜欢规律，也喜欢在特定的时间段休息。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-teal-600 my-5">
-      <p class="text-gray-700"><strong>打个比方：</strong>想象你的身体是一家工厂，晚上10点到凌晨2点是"深度维修"时间。如果你总是在这个时间段还醒着，工厂的维修工作就会被打乱，久而久之，身体就会出现各种小毛病——白天犯困、注意力不集中、皮肤变差、抵抗力下降。</p>
+const l=`
+<div class="article-content bg-white rounded-2xl shadow-lg p-6 md:p-8">
+  <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">后代身高预测：科学计算孩子的成年身高</h1>
+  
+  <p class="text-gray-700 mb-6">身高是许多家长关心的话题，了解孩子的潜在身高范围有助于家长更好地关注孩子的生长发育。我们的身高预测计算器基于科学的遗传身高预测公式，为您提供参考性的预测结果。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">身高预测的科学依据</h2>
+  <p class="text-gray-700 mb-6">研究表明，遗传因素对身高的影响约占60%-80%。我们使用的预测公式是基于大量人群数据统计得出的，虽然不能100%准确预测最终身高，但可以提供一个合理的参考范围。</p>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">如何使用身高预测计算器</h2>
+  <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+    <li>在左侧输入框中填写父亲的身高（厘米）</li>
+    <li>在右侧输入框中填写母亲的身高（厘米）</li>
+    <li>点击"开始计算"按钮，系统会自动为您预测男孩和女孩的身高范围</li>
+  </ol>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">影响身高的其他因素</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-blue-50 p-4 rounded-lg">
+      <h3 class="font-bold text-blue-800 mb-2">营养因素</h3>
+      <p class="text-gray-700">均衡的营养是孩子长高的基础，特别是蛋白质、钙、维生素D等营养素对骨骼发育至关重要。</p>
     </div>
-    <p class="text-gray-700 leading-relaxed">所以，与其纠结睡了几个小时，不如先搞清楚：我该什么时候上床？</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 不同年龄的人，需要睡多久？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">国家卫生健康委员会的睡眠健康指南告诉我们，不同年龄段的人，对睡眠的需求是不一样的：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">成年人（18-64岁）：</strong>每天需要7-8小时睡眠。这是大多数打工人的标准配置。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">中小学生：</strong>每天需要8-10小时睡眠。孩子正在长身体，睡眠对他们的发育和学习都非常重要。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">老年人（65岁以上）：</strong>每天需要6-7小时睡眠。随着年龄增长，睡眠时间会自然减少，但质量更重要。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">知道了需要睡多久，再结合你每天必须起床的时间，就能倒推出你应该什么时候入睡了。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 一个简单的计算方法</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">假设你每天早上7点半必须起床，成年人需要睡8小时。那么，倒推回去，你应该在晚上11点半左右入睡。</p>
-    <p class="mb-4 text-gray-700 leading-relaxed">但这里有个小细节：<strong>入睡不等于上床</strong>。从躺下到真正睡着，大多数人需要15-30分钟。所以，如果你11点半要入睡，最好11点就上床躺好。</p>
-    <div class="bg-teal-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong></p>
-      <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-700">
-        <li>起床时间：早上7:30</li>
-        <li>需要睡眠：8小时</li>
-        <li>最佳入睡时间：晚上11:30</li>
-        <li>建议上床时间：晚上11:15（预留15分钟准备）</li>
-      </ul>
+    <div class="bg-green-50 p-4 rounded-lg">
+      <h3 class="font-bold text-green-800 mb-2">运动因素</h3>
+      <p class="text-gray-700">适当的运动可以刺激骨骼生长，如篮球、跳绳、游泳等纵向运动对长高特别有益。</p>
     </div>
-    <p class="text-gray-700 leading-relaxed">这样一算，是不是就很清楚了？</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 睡前准备也很重要</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">知道了上床时间，还要做好睡前准备，才能真正睡个好觉。以下是一些实用的小建议：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-blue-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前1小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">放下手机，远离电脑屏幕。蓝光会抑制褪黑素分泌，让你更难入睡。可以看看纸质书、听听轻音乐，或者泡个热水脚。</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">睡前2-3小时：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">不要吃太饱，也不要喝太多水。晚餐后可以适当散步，但避免剧烈运动。咖啡和茶最好下午就不要喝了。</p>
-      </div>
+    <div class="bg-purple-50 p-4 rounded-lg">
+      <h3 class="font-bold text-purple-800 mb-2">睡眠因素</h3>
+      <p class="text-gray-700">生长激素在睡眠时分泌最旺盛，保证充足的睡眠时间和良好的睡眠质量对孩子长高非常重要。</p>
     </div>
-    <p class="text-gray-700 leading-relaxed">这些小习惯看似简单，但坚持下来，你会发现入睡变得更容易，睡眠质量也会明显提升。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：我每天睡够8小时，但还是觉得累，怎么回事？</p>
-        <p class="text-gray-700 text-sm">A：可能是睡眠质量不高，或者入睡时间不规律。建议固定上床和起床时间，让身体形成规律。另外，睡前玩手机、熬夜后补觉等习惯都会影响睡眠质量。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：周末可以晚睡晚起吗？</p>
-        <p class="text-gray-700 text-sm">A：偶尔可以，但不要相差太大。如果平时11点睡，周末熬到凌晨2点，周一早上会非常痛苦。建议周末起床时间不要比平时晚超过1小时。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：入睡困难怎么办？</p>
-        <p class="text-gray-700 text-sm">A：如果躺下30分钟还睡不着，不要强迫自己。可以起来做点放松的事，比如看会儿书，等有困意了再躺下。长期入睡困难的话，建议咨询医生。</p>
-      </div>
+    <div class="bg-yellow-50 p-4 rounded-lg">
+      <h3 class="font-bold text-yellow-800 mb-2">环境因素</h3>
+      <p class="text-gray-700">良好的生活环境、减少压力、避免疾病等都有助于孩子的正常生长发育。</p>
     </div>
-  </section>
-
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：好的睡眠，从规律开始</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">睡眠占了我们人生的三分之一，它影响着我们的精力、情绪、工作效率，甚至健康。而好的睡眠，其实不需要什么神奇的方法，只需要做到两点：<strong>规律</strong>和<strong>充足</strong>。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">今天开始，试着算算你的最佳入睡时间，然后坚持每天在那个时间上床。一周后，你会发现早上起床不再那么痛苦，白天的精神也会好很多。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">想知道你该几点睡？用上面的工具算一算，今晚就开始改变吧！</p>
-    </div>
-  </section>
-</article>
-`;export{s as default};
+  </div>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">有助于孩子长高的建议</h2>
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li>保证孩子摄入均衡的营养，多吃富含蛋白质、钙和维生素的食物</li>
+    <li>鼓励孩子进行适量的运动，特别是有助于长高的纵向运动</li>
+    <li>确保孩子有充足的睡眠时间，小学生每天应睡10小时左右</li>
+    <li>创造良好的家庭环境，减少孩子的精神压力</li>
+    <li>定期带孩子进行体检，及时发现和处理可能影响生长发育的问题</li>
+  </ul>
+  
+  <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+    <h3 class="font-bold text-gray-800 mb-3">身高预测注意事项</h3>
+    <p class="text-gray-700 mb-4">需要注意的是，我们的身高预测计算器基于遗传因素，仅供参考。实际身高还会受到多种因素的影响，如营养、运动、睡眠等。如果您对孩子的生长发育有疑虑，建议咨询专业医生。</p>
+    <p class="text-gray-700">此外，身高并不是衡量一个人价值的唯一标准，每个孩子都有自己的闪光点和潜力，家长应该关注孩子的全面发展。</p>
+  </div>
+  
+  <h2 class="text-xl font-bold text-gray-800 mb-4">结语</h2>
+  <p class="text-gray-700 mb-6">通过我们的身高预测计算器，您可以了解孩子的潜在身高范围，为孩子的生长发育提供参考。同时，结合科学的营养、适当的运动和良好的生活习惯，帮助孩子实现最佳的生长潜能。</p>
+  <p class="text-gray-700">希望我们的身高预测计算器能为您提供有价值的信息，祝您的孩子健康成长！</p>
+</div>
+`;export{l as default};

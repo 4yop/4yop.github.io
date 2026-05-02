@@ -1,135 +1,76 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8">
-  <article class="bg-white rounded-xl shadow-sm p-6 md:p-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">如何将Excel里的联系人，一键导入你的手机通讯录？</h2>
+const l=`
+<div class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">懒人必备的文档文字提取工具，告别繁琐复制粘贴</h1>
+  <p class="text-lg text-gray-600 mb-8">每次想把PDF、Word里的文字弄出来，都得打开文件一点点复制，格式还容易乱？试试这个一站式的解决方案。</p>
 
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-      你是否遇到过这样的烦恼？公司发来一个包含上百位客户联系方式的Excel表格，或者社团活动收集了一大堆成员信息。看着密密麻麻的姓名和电话，难道要一个一个手动输入到手机里？别担心，今天教你一个省时省力的好方法。
-    </p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-gray-700">无论你是学生、上班族还是研究人员，只要需要从各种文件中“拿出”纯文字，这篇文章介绍的方法或许能帮你节省大量时间。</p>
+  </div>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-8 rounded-r-lg">
-      <p class="text-gray-700">
-        <strong>核心方法：</strong>借助一个在线工具，将Excel文件（.xlsx或.xls格式）转换成手机能认识的“通讯录文件”（VCF格式），然后一键导入。
-      </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4">什么是文档文字提取？</h2>
+  <p class="mb-4">简单来说，它就像一个“文字搬运工”。你手里有一堆不同格式的文件——可能是上司发来的PDF报告、网上下载的Word资料、包含数据的Excel表格，甚至是一个网页文章。</p>
+  <p class="mb-6">这个工具能帮你把这些文件里的所有文字内容，“搬”到一个干干净净的文本文件里。你得到的就是纯粹的、可以随意编辑和复制的文字，没有复杂的排版、图片干扰。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">它都能处理哪些文件？</h2>
+  <p class="mb-4">基本上，你日常会遇到的文档格式，它都能应对：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>PDF文件</strong>：最让人头疼的格式之一，无论是扫描版还是文字版，都能提取文字。</li>
+    <li><strong>Word文档</strong>：日常办公最常用的.doc和.docx格式。</li>
+    <li><strong>Excel表格</strong>：把表格里的数据和文字内容提取出来。</li>
+    <li><strong>网页文件(HTML)</strong>：保存下来的网页，可以过滤掉广告、导航栏，只留下正文。</li>
+    <li><strong>Markdown文件</strong>：程序员或写作者常用的轻量级标记文件。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4">用它来做什么？几个真实的场景</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">整理学习资料</h3>
+      <p class="text-gray-700">下载了十几篇PDF论文，需要汇总核心观点。不用打开每个PDF费力查找复制，一键提取所有文字，然后在统一的文本文档里搜索、摘录，效率翻倍。</p>
     </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">处理工作报告</h3>
+      <p class="text-gray-700">每周都要从多个Word和Excel报告中汇总数据。先把所有报告的文字提取出来，再整合信息，避免了在不同软件间反复切换的麻烦。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">收集网络素材</h3>
+      <p class="text-gray-700">做自媒体需要搜集素材，把有用的网页“另存为”HTML文件。用这个工具批量处理，直接得到干净的文本，方便引用和整理，还不带乱七八糟的网页元素。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-semibold text-lg mb-2">存档重要信息</h3>
+      <p class="text-gray-700">合同、说明书等重要PDF，将其文字内容提取保存为TXT文件，占用空间小，方便全文检索，以防原文件丢失或损坏。</p>
+    </div>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">一、为什么需要转换？直接复制不行吗？</h2>
-      <p class="text-gray-700 mb-4">
-        手机通讯录和Excel表格是两种完全不同的“语言”。手机无法直接理解Excel里一行行的数据。而<strong>VCF文件（也叫vCard）</strong>，就像是全球通讯录的“通用翻译官”，iPhone、安卓手机、邮箱（如QQ邮箱、Gmail）都能识别并导入它。
-      </p>
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <h3 class="font-medium text-gray-800 mb-2">你可以用它来做什么：</h3>
-        <ul class="text-gray-600 list-disc pl-5 space-y-1">
-          <li>批量导入工作客户、合作伙伴的联系方式。</li>
-          <li>快速备份或迁移手机通讯录到新手机。</li>
-          <li>整理社团、班级、活动参与者的名单。</li>
-          <li>将线上收集的表单数据（导出为Excel后）变成手机联系人。</li>
-        </ul>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4">为什么说这个方式很省心？</h2>
+  <p class="mb-4">传统的复制粘贴方式，往往会遇到格式混乱、无法复制（如扫描PDF）、过程重复枯燥等问题。一个专门的提取工具解决了这些痛点：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>批量处理</strong>：可以一次性上传多个文件，让工具自动逐个处理，你无需守在电脑前。</li>
+    <li><strong>格式纯净</strong>：提取出的文字会自动清理多余的空行和空格，呈现清爽的文本。</li>
+    <li><strong>结果即拿即用</strong>：每处理完一个文件，你可以立即复制文字，也可以下载为独立的TXT文件。</li>
+    <li><strong>整理方便</strong>：所有文件都处理完后，还能一键“打包下载”，得到一个压缩包，里面是所有文件的文本结果，管理起来非常方便。</li>
+  </ul>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">二、从Excel到手机通讯录，只需简单几步</h2>
-      <ol class="space-y-6">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">1</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">准备好你的Excel文件</h4>
-            <p class="text-gray-600">确保表格第一行是标题，比如“姓名”、“电话”、“公司”等。这是关键，工具要靠标题来识别哪一列是什么信息。数据从第二行开始填写。</p>
-            <p class="text-sm text-gray-500 mt-1">（如果不知道怎么整理，很多工具都提供“模板”下载，照着填就行。）</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">2</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">上传文件并“对号入座”</h4>
-            <p class="text-gray-600">在工具页面上传你的Excel文件。上传后，工具会列出你表格里的所有标题（如姓名、电话）。你需要简单地告诉它：我的“姓名”信息在表格的哪一列，“电话”在哪一列。</p>
-            <p class="text-sm text-gray-500 mt-1">（通常工具会智能猜测，你检查一下是否正确即可。）</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">3</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">预览并转换下载</h4>
-            <p class="text-gray-600">确认字段匹配无误后，可以先预览几行数据。点击“转换”按钮，几秒钟后，就会生成一个 <code class="bg-gray-100 px-1 rounded text-sm">.vcf</code> 文件并自动下载到你的电脑或手机上。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-4">4</div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">将VCF文件导入手机</h4>
-            <p class="text-gray-600 mb-2">这是最后一步，也非常简单：</p>
-            <div class="grid md:grid-cols-2 gap-4 mt-3">
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">苹果iPhone用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>找到下载好的 .vcf 文件（通常在“文件”App里）。</li>
-                  <li>点击它，系统会自动提示用“通讯录”应用打开。</li>
-                  <li>点击“添加所有联系人”即可。</li>
-                </ul>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="font-medium text-gray-800 mb-2">安卓手机用户：</h5>
-                <ul class="text-sm text-gray-600 list-decimal pl-4 space-y-1">
-                  <li>在手机的文件管理器中找到 .vcf 文件。</li>
-                  <li>点击它，选择用“联系人”或“通讯录”应用导入。</li>
-                </ul>
-              </div>
-            </div>
-            <p class="text-sm text-gray-500 mt-3">如果点击没反应，可以尝试将VCF文件通过微信或QQ发送到手机，在聊天记录里打开它，通常也能导入。</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+  <div class="bg-gray-100 p-6 rounded-xl my-10">
+    <h3 class="text-xl font-semibold mb-3">操作起来复杂吗？</h3>
+    <p class="mb-4">完全不难，整个过程就像发邮件添加附件一样简单，只需要三步：</p>
+    <ol class="list-decimal pl-6 space-y-2">
+      <li><strong>选择文件</strong>：点击按钮，从电脑里选中你需要提取文字的PDF、Word等文件。</li>
+      <li><strong>自动转换</strong>：上传后，工具会在后台自动工作，你可以在列表中看到每个文件的处理进度。</li>
+      <li><strong>获取文字</strong>：处理完成后，直接复制文字，或者点击下载，文字就到手了。</li>
+    </ol>
+  </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">三、几个实用小技巧和注意事项</h2>
-      <div class="space-y-4">
-        <div class="p-4 border border-yellow-200 bg-yellow-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧一：先下载模板</h4>
-          <p class="text-gray-600 text-sm">如果你是第一次操作，强烈建议先在工具页面下载提供的Excel模板。模板已经设好了标准的列标题，你只需要在下面填充数据，能省去很多匹配字段的麻烦。</p>
-        </div>
-        <div class="p-4 border border-green-200 bg-green-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧二：整理好Excel数据</h4>
-          <p class="text-gray-600 text-sm">
-            <strong>“姓名”和“电话”列是必须的</strong>，不能为空。确保电话号码格式基本正确（11位手机号）。像“公司”、“备注”等信息，有就填上，导入后会在联系人详情里显示，非常方便。
-          </p>
-        </div>
-        <div class="p-4 border border-blue-200 bg-blue-50 rounded-lg">
-          <h4 class="font-medium text-gray-800 mb-1">技巧三：检查导入结果</h4>
-          <p class="text-gray-600 text-sm">导入完成后，去手机通讯录里检查一下。看看姓名和电话是否正确对应，有没有乱码或重复。如果有少数错误，手动修改一下也比全部重输快得多。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4">谁特别需要这个功能？</h2>
+  <p class="mb-4">如果你符合下面任何一种情况，那么文档文字提取工具很可能成为你的得力助手：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2">
+    <li>经常需要阅读和汇总大量电子文献的学生或教师。</li>
+    <li>需要整合多份不同格式报告的行政、文秘或数据分析人员。</li>
+    <li>喜欢收藏网页文章、电子书，并希望将其内容本地化保存的阅读爱好者。</li>
+    <li>任何厌倦了在不同软件间反复复制粘贴，追求效率的上班族。</li>
+  </ul>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-3 border-b">四、常见问题解答</h2>
-      <div class="space-y-6">
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：这个转换过程安全吗？我的联系人信息会不会泄露？</h4>
-          <p class="text-gray-600">答：整个过程通常在你的浏览器本地完成，数据不会上传到服务器。为保险起见，使用前可以留意一下工具页面的说明，选择那些明确标注“本地转换”、“无需上传”的工具。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：转换后，我原来的手机联系人会被覆盖或清空吗？</h4>
-          <p class="text-gray-600">答：<strong>不会。</strong>导入VCF文件是“添加”新联系人，不会删除或覆盖你手机里已有的任何联系人。如果遇到同名同号，手机会提示你选择合并或跳过。</p>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-800 mb-2">问：支持导入头像吗？</h4>
-          <p class="text-gray-600">答：通常这种批量转换工具主要处理文本信息（姓名、电话等），不支持直接从Excel导入头像。头像需要在手机通讯录里为每个联系人单独设置。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-gray-50 p-6 rounded-xl border">
-      <h2 class="text-xl font-semibold text-gray-800 mb-4">总结</h2>
-      <p class="text-gray-700">
-        将Excel联系人批量导入手机，其实就是一个“翻译”和“搬运”的过程：<strong>Excel文件 → 通用通讯录文件（VCF）→ 手机通讯录</strong>。借助一个靠谱的在线转换工具，几分钟就能搞定原本需要数小时的手动输入工作。
-      </p>
-      <p class="text-gray-700 mt-3">
-        无论是为了工作高效，还是管理个人社交圈，掌握这个小技巧都能让你事半功倍。下次再收到Excel名单时，就不用头疼了。
-      </p>
-    </section>
-  </article>
+  <div class="border-t pt-8 mt-10">
+    <p class="text-gray-700">总而言之，文档文字提取的核心价值就是<strong>“化繁为简”</strong>。它把分散在不同格式、不同文件中的文字信息，统一、纯净地汇集到一起，为你接下来的阅读、编辑、分析和存档扫清障碍。在这个信息爆炸的时代，拥有一个高效的“信息整理”小工具，无疑能让你的学习和工作变得更加轻松。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{l as default};

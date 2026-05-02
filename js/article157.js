@@ -1,105 +1,125 @@
 const e=`
 <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight">快速查看家乡归属！一个工具搞懂“省、市、区、街道”的上下级关系</h1>
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
+    还在为文档格式发愁？试试这个本地Word转换工具
+  </h1>
 
-  <div class="text-gray-600 mb-8 leading-relaxed">
-    <p class="mb-4">在生活中，我们常常需要填写或者确认一个地方的详细地址。比如寄快递、办手续，或者只是单纯想了解一下某个地方的行政归属。</p>
-    <p>你是不是也曾困惑：这个县到底属于哪个市？这个街道又归哪个区管？今天，就给大家介绍一个能帮你一秒理清这些关系的小工具，操作简单，一看就会。</p>
+  <div class="text-gray-600 text-base sm:text-lg mb-8 text-center">
+    不上传文件、不担心隐私，轻松把Word文档变成网页和笔记需要的格式。
   </div>
 
-  <section class="mb-10 bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-sm">
-    <h2 class="text-xl font-bold text-gray-900 mb-3">这是个什么工具？</h2>
-    <p class="text-gray-700 leading-relaxed">
-      简单来说，它就是一个在线的“行政区划查询器”。你可以像剥洋葱一样，从“省份”开始，一层层选择到“乡镇或社区”。每选择一层，它就会自动帮你筛选出下一层所有可选的地方，并最终展示出这个地方完整的“家庭关系”。
+  <div class="prose prose-lg max-w-none mb-10">
+    <p class="mb-4">
+      你是不是也遇到过这样的情况？好不容易写完一份Word文档，或是收到一份重要的.docx文件，却发现网站后台只支持粘贴特定格式的文本，或者想把它整理成简洁的笔记，却无从下手。手动调整格式？那太费时间了。
     </p>
-  </section>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">具体能帮我们解决什么问题？</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-1">确认地址准确性</h3>
-          <p class="text-gray-600">在网上购物或寄送重要文件时，确保填写的市、区、街道信息准确无误，避免快递送错或手续延误。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center mr-3 mt-0.5">2</div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-1">了解地域归属</h3>
-          <p class="text-gray-600">听说一个地方的名字，想快速知道它属于哪个更大的行政区划。比如，想知道“义乌市”上面是“金华市”还是“浙江省”直管？用它一查便知。</p>
-        </div>
-      </li>
-      <li class="flex items-start">
-        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-yellow-100 text-yellow-800 flex items-center justify-center mr-3 mt-0.5">3</div>
-        <div>
-          <h3 class="font-medium text-gray-900 mb-1">获取官方编码</h3>
-          <p class="text-gray-600">有些正式表格或系统需要填写行政区划的官方数字代码。这个工具在展示信息的同时，也提供了对应的标准代码，并且可以一键复制，非常方便。</p>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-10 rounded-r-lg">
+    <h2 class="text-xl font-semibold mb-2 text-gray-900">一个更安心的选择：本地转换</h2>
+    <p class="mb-0">
+      现在有一个新思路：<strong>在你自己电脑的浏览器里直接完成转换</strong>。整个过程，你的文档文件不会离开你的电脑，不会上传到任何人的服务器。就像在自家厨房做饭，食材不离开家门，做完直接上桌，安全和隐私都由你自己掌握。
+    </p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold mb-5 pb-2 border-b border-gray-200">如何使用？非常简单！</h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">整个过程就像在手机上设置导航一样直观，只需要点选几下。</p>
-    <ol class="space-y-6 border border-gray-200 rounded-lg p-6 bg-white">
-      <li class="flex flex-col sm:flex-row items-start sm:items-center">
-        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">①</div>
-        <div>
-          <h4 class="font-medium text-gray-900 mb-1">第一步：选择省份或直辖市</h4>
-          <p class="text-gray-600">打开页面后，第一个下拉框会列出全国所有的省、自治区、直辖市和特别行政区。从中找到你想查的省份，比如“广东省”。如果列表太长，你还可以直接在框里输入名字搜索。</p>
-        </div>
-      </li>
-      <li class="flex flex-col sm:flex-row items-start sm:items-center">
-        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">②</div>
-        <div>
-          <h4 class="font-medium text-gray-900 mb-1">第二步：选择城市或地区</h4>
-          <p class="text-gray-600">选择省份后，第二个下拉框会自动变成可选状态，里面只显示属于该省的所有地级市或地区。这时你就可以选择“广州市”。</p>
-        </div>
-      </li>
-      <li class="flex flex-col sm:flex-row items-start sm:items-center">
-        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">③</div>
-        <div>
-          <h4 class="font-medium text-gray-900 mb-1">后续步骤：逐级深入</h4>
-          <p class="text-gray-600">接着，第三个框会列出“广州市”下辖的所有区或县级市（如“天河区”），选择后，第四个框会进一步列出该区下辖的街道或镇。你可以一直选到你想要了解的层级。</p>
-        </div>
-      </li>
-      <li class="flex flex-col sm:flex-row items-start sm:items-center">
-        <div class="bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">✓</div>
-        <div>
-          <h4 class="font-medium text-gray-900 mb-1">立刻得到结果</h4>
-          <p class="text-gray-600">每当你做出一个选择，页面右侧就会立刻更新，清晰显示出从省到当前级别的完整路径。所有信息一目了然。</p>
-        </div>
-      </li>
-    </ol>
-  </section>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">它能帮你做什么？</h2>
 
-  <section class="mb-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
-    <h2 class="text-xl font-bold mb-4 text-gray-900">几个贴心的小设计</h2>
-    <div class="grid sm:grid-cols-2 gap-4">
-      <div class="p-4 bg-white rounded border border-gray-100">
-        <h3 class="font-medium text-gray-900 mb-2">随时可以重来</h3>
-        <p class="text-sm text-gray-600">如果选错了或者想查另一个地方，只需要点击“重置查询”按钮，所有选项就会清空，你可以从头开始新的查询。</p>
+  <p class="mb-6">
+    简单来说，这个工具就是帮你把熟悉的Word文档（.docx格式），变成两种更通用的文本格式。
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-blue-700 mb-2">1. 转换成 HTML</div>
+      <p class="mb-4">HTML 是网页的“骨架”和“血肉”。转换后，你的文档标题、段落、列表甚至加粗文字，都会变成网页能识别的代码。非常适合需要把内容发布到网站、博客或内部系统的朋友。</p>
+      <div class="text-sm text-gray-500">比如：公司通告、产品介绍、带排版的文章。</div>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+      <div class="text-2xl font-bold text-green-700 mb-2">2. 转换成 Markdown</div>
+      <p class="mb-4">Markdown 是一种轻量级的标记语言，让你用简单的符号（比如 # 表示标题，* 表示列表）就能排版。它干净、易读，是记笔记、写文档（如Readme）的利器。</p>
+      <div class="text-sm text-gray-500">比如：个人知识库、技术文档、简洁的会议记录。</div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">怎么使用？非常简单</h2>
+
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">1</div>
+        <span class="font-medium">上传你的Word文档</span>
       </div>
-      <div class="p-4 bg-white rounded border border-gray-100">
-        <h3 class="font-medium text-gray-900 mb-2">结果清晰直观</h3>
-        <p class="text-sm text-gray-600">右侧结果栏不仅会显示一个完整的文字路径（例如：广东省 / 广州市 / 天河区），还会将每一级的官方数字编码单独列出。</p>
+      <div class="text-sm text-gray-500 bg-white px-3 py-1 rounded-full border">支持 .docx 格式</div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 pb-4 border-b border-gray-200">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">2</div>
+        <span class="font-medium">选择想要的格式</span>
       </div>
-      <div class="p-4 bg-white rounded border border-gray-100">
-        <h3 class="font-medium text-gray-900 mb-2">编码一键复制</h3>
-        <p class="text-sm text-gray-600">如果你需要用到某个行政区划的编码，只需要点击结果中对应编码旁边的区域，它就会自动复制到你的剪贴板，省去了手动输入的麻烦。</p>
-      </div>
-      <div class="p-4 bg-white rounded border border-gray-100">
-        <h3 class="font-medium text-gray-900 mb-2">全程无需等待</h3>
-        <p class="text-sm text-gray-600">所有数据都已提前准备好，选择操作和结果展示都是瞬间完成的，你不会有“正在加载”的卡顿感。</p>
+      <div class="text-sm text-gray-500">一键点击“转换为 HTML”或“转换为 Markdown”</div>
+    </div>
+    <div class="flex items-center">
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold mr-3">3</div>
+      <div>
+        <span class="font-medium mr-2">获取并复制结果</span>
+        <span class="text-sm text-gray-500">转换后的内容会直接显示，并可以一键复制使用</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <div class="text-center mt-12 pt-8 border-t border-gray-200">
-    <p class="text-gray-700 italic">希望这个简单的小工具，能在你需要理清地址归属的时候，帮上一点小忙。</p>
+  <h2 class="text-2xl sm:text-3xl font-bold mt-12 mb-6 text-gray-900">为什么推荐这种方式？</h2>
+
+  <ul class="space-y-4 mb-10 list-none pl-0">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>保护隐私：</strong>你的文件全程只在浏览器里处理，没有上传到网络，不必担心敏感内容泄露。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>操作简单：</strong>就像给文件换个“包装”，点几下鼠标就能完成，不需要学习复杂软件。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>即开即用：</strong>通常打开网页就能使用，无需下载安装任何程序。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+        <div class="w-2 h-2 rounded-full bg-green-600"></div>
+      </div>
+      <span><strong>免费便捷：</strong>省去了寻找、购买或学习专业转换软件的麻烦。</span>
+    </li>
+  </ul>
+
+  <div class="border-t border-gray-200 pt-10 mt-10">
+    <h3 class="text-xl font-semibold mb-4 text-gray-900">常见问题解答</h3>
+    <div class="space-y-6">
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：我的文件安全吗？</h4>
+        <p class="text-gray-600">答：非常安全。这种“本地转换”方式，处理过程完全在你的电脑浏览器内完成，文件数据不会通过网络发送出去，你可以放心处理任何文档。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：支持哪些Word文件？</h4>
+        <p class="text-gray-600">答：主要支持较新版本的Word保存的 <code class="bg-gray-100 px-1 py-0.5 rounded text-sm">.docx</code> 格式文件。这是目前最常用的Word文档格式。</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-2 text-gray-900">问：转换后会保留图片和表格吗？</h4>
+        <p class="text-gray-600">答：对于简单的文档转换，基础的格式（如标题、列表、加粗）通常都能很好保留。如果是非常复杂的排版（如精密表格、特殊样式），转换后可能需要做一些微调。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl mt-12 text-center">
+    <p class="text-lg mb-4 font-medium">
+      下次当你需要把Word文档里的内容搬到网页、博客或笔记软件时，不妨先试试这种本地转换的方法。
+    </p>
+    <p class="text-gray-600 mb-0">
+      它或许能帮你节省大量调整格式的时间，更重要的是，让你对自己的文件多一份安心。
+    </p>
   </div>
 </div>
 `;export{e as default};

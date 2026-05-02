@@ -1,116 +1,47 @@
-const t=`
-<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 md:px-0">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-6">手机号码段生成器：轻松批量创建你需要的号码列表</h1>
-  <p class="text-lg text-gray-600 mb-8">
-    你是否遇到过需要一批手机号来测试软件、挑选靓号或者策划活动，却不知道从哪里找？手动一个个编又太麻烦。今天，我们来介绍一个简单好用的小工具，它能帮你轻松解决这个问题。
-  </p>
+const l=`
+<div class="text-gray-800 leading-relaxed">
+  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-    <h2 class="text-xl font-semibold mb-2">这个工具是什么？</h2>
-    <p class="mb-0">
-      简单来说，它就是一个“号码组合器”。就像用积木搭房子，你可以指定号码固定的“开头”（前缀）和“结尾”（后缀），然后设定中间几位数字的变化范围，工具就能自动组合出所有可能的号码，并生成一个完整的列表给你。整个过程完全自动化，省时省力。
-    </p>
+  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
+  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
+  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
+  <p class="mb-4">使用起来非常简单，只需要三步：</p>
+  <ol class="list-decimal pl-8 mb-6 space-y-3">
+    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
+    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
+    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
+  </ol>
+
+  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
+    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
+    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
   </div>
 
-  <h2 class="text-2xl font-bold mt-10 mb-4">它到底能做什么？几个常见的使用场景</h2>
-  <p class="mb-6">
-    这个工具的核心是“批量生成”和“灵活定制”。它不是什么神秘的黑科技，而是为了解决一些日常中实实在在的麻烦事。下面这些情况，你可能也遇到过。
-  </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
+  <ul class="list-disc pl-8 mb-6 space-y-3">
+    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
+    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
+    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
+    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
+    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
+    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
+  </ul>
 
-  <div class="grid md:grid-cols-2 gap-6 mb-10">
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：软件或系统测试</h3>
-      <p class="text-gray-700">
-        开发人员测试注册、登录、短信验证码功能时，常常需要大量不同的手机号来模拟真实用户。用真实的号码既不现实也不安全。使用这个生成器，可以快速创建一批测试专用的虚拟号码，非常方便。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：挑选心仪的“靓号”</h3>
-      <p class="text-gray-700">
-        很多人喜欢带有特定数字组合的手机号，比如尾号是“888”、“666”或者生日日期。你可以把想要的尾号设为“后缀”，然后生成中间所有可能的组合，快速看看在某个号段（比如139）下，有哪些号码符合你的要求。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景三：活动策划与数据模拟</h3>
-      <p class="text-gray-700">
-        做市场活动时，可能需要准备一批模拟的参与用户数据。或者在学习数据分析时，需要一份包含手机号字段的模拟数据表。这个工具可以按规则生成号码，配合其他信息，快速构建出需要的样本数据。
-      </p>
-    </div>
-    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景四：记忆或查询特定号段</h3>
-      <p class="text-gray-700">
-        只记得朋友手机号的前几位和后几位，中间几位想不起来了？你可以把记得的部分设为前缀和后缀，然后生成中间数字所有可能的组合。虽然结果可能很多，但可以帮你缩小回忆或查找的范围。
-      </p>
-    </div>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
+  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
+  <ul class="list-disc pl-8 mb-8 space-y-2">
+    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
+    <li>需要查找某个地区对应的官方行政编码时。</li>
+    <li>学习或了解中国行政区划的层级结构时。</li>
+    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
+  </ul>
+
+  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
+    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
   </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4">怎么使用？三步就能搞定</h2>
-  <p class="mb-6">
-    使用这个工具非常简单，完全不需要任何技术知识。它的界面设计得很直观，你只需要像填空一样操作就行。
-  </p>
-
-  <div class="space-y-8 mb-10">
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">1</div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">设定号码的“固定部分”</h3>
-        <p class="text-gray-700 mb-2">
-          在“前缀”框里，输入你希望所有号码都一样的开头数字。比如，你想生成所有以“138”开头的号码，就填“138”。
-        </p>
-        <p class="text-gray-700 mb-2">
-          在“后缀”框里，输入你希望所有号码都一样的结尾数字。比如，你想要所有号码都以“000”结尾，就填“000”。如果开头或结尾不需要固定，空着不填就行。
-        </p>
-      </div>
-    </div>
-
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">2</div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">设定中间数字的变化规则</h3>
-        <p class="text-gray-700 mb-2">
-          这是最关键的一步。“中间号码位数”决定了中间部分有几位数字在变化。比如，选“5位”，那么中间部分就是像“12345”、“00001”这样的5位数。
-        </p>
-        <p class="text-gray-700 mb-2">
-          接着，在“号码范围”里，设定这几位数字从多少变到多少。例如，从“0”到“999”，工具就会生成中间部分为000, 001, 002...一直到999的所有组合。
-        </p>
-        <p class="text-gray-700">
-          <strong>小提示：</strong>工具会贴心地根据你选择的位数，自动建议最大的范围，你只需要根据需求缩小它即可，避免一次生成太多数据。
-        </p>
-      </div>
-    </div>
-
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">3</div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">生成与保存结果</h3>
-        <p class="text-gray-700 mb-2">
-          点击“开始生成”按钮，几秒钟后，完整的号码列表就会出现在下方。你可以直接滚动预览。
-        </p>
-        <p class="text-gray-700">
-          如果需要保存，可以点击“下载TXT”或“下载CSV”按钮。TXT文件是简单的文本格式，方便查看；CSV是表格格式，可以直接用Excel打开，方便做进一步处理。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-10">
-    <h3 class="text-xl font-semibold mb-3 text-gray-800">重要提醒：请合理合法地使用</h3>
-    <p class="mb-3">
-      这个工具生成的号码是<strong>虚拟的、随机的数字组合</strong>。它们绝大部分并未被真实分配使用。
-    </p>
-    <ul class="list-disc pl-5 space-y-2 text-gray-700">
-      <li><strong>禁止用于非法用途：</strong>严禁将这些号码用于任何骚扰、诈骗、虚假注册等违法活动。</li>
-      <li><strong>主要用途是测试与模拟：</strong>它的设计初衷是服务于软件测试、数据分析学习、内部模拟等合法合规的场景。</li>
-      <li><strong>注意数据量：</strong>一次不要生成太多数据（如上百万条），以免占用过多资源，工具本身也做了数量限制来保护你的设备流畅运行。</li>
-    </ul>
-  </div>
-
-  <h2 class="text-2xl font-bold mt-10 mb-4">总结</h2>
-  <p class="mb-6">
-    手机号码段生成器，本质上是一个帮你自动化完成“数字排列组合”的贴心助手。它把原本枯燥、易错的手工劳动，变成了点几下鼠标就能完成的事。无论你是为了工作测试、学习研究，还是个人需要，它都能成为一个提高效率的小帮手。
-  </p>
-  <p class="text-gray-600 pb-10">
-    希望这篇文章能帮你清楚地了解这个工具的用途和用法。记住，工具的价值在于如何使用它，务必在合法合规的范围内，让它为你的工作和生活带来便利。
-  </p>
 </div>
-`;export{t as default};
+`;export{l as default};

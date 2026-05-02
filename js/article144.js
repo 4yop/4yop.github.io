@@ -1,96 +1,90 @@
-const t=`
-<article class="text-gray-700 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">还在为多个Excel文件发愁？教你快速合并在一个表里</h1>
+const l=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-slate-800 font-sans">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">别再截图了！教你一键提取文档里的高清原图</h1>
 
-  <p class="text-lg text-gray-600 mb-8">
-    相信很多人都有过这样的经历：每个月各个部门发来的销售数据是单独的Excel，每学期的学生成绩也是分班单独一个文件。看着电脑里一堆零散的表格，想要汇总分析，是不是感觉头都大了？只能一个一个打开，再手动复制粘贴，不仅麻烦，还很容易出错。今天，我们就来聊聊如何快速、准确地把多个Excel文件合并成一个，解放你的双手。
+  <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed">
+    你是否遇到过这样的情况？在一份精美的PDF报告、Word文档或者PPT里看到一张特别合适的图片，想保存下来自己用，结果发现无法直接右键保存，最后只能无奈地截个模糊的图？
   </p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-r-lg mb-10">
-    <p class="text-gray-800">
-      <strong>简单来说，Excel合并工具</strong>就像是一个“表格收集器”。你只需要把想合并的文件都交给它，它就能自动把所有内容整理好，放到一个新的Excel文件里，而且原来的表格样式、数字格式大多都能原封不动地保留下来。
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-slate-700">
+      其实，那些文档里的图片，大多都能以原来的高清质量被“拿”出来。今天就来介绍一个简单又安全的方法。
     </p>
   </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">为什么我们需要合并Excel？</h2>
-  <p class="mb-6">
-    你可能觉得这只是个小问题，但对于经常和表格打交道的人来说，这简直是“刚需”。想想这些场景，你是不是也遇到过？
-  </p>
-  <ul class="space-y-4 mb-10 pl-5 list-disc">
-    <li><strong>月度/年度报告：</strong>12个月的流水账，每个月一个文件，年底做总结时需要一个总表。</li>
-    <li><strong>多校区/多班级统计：</strong>学校要统计全年级的成绩，每个班班主任交上来一个单独的表格。</li>
-    <li><strong>收集调研问卷：</strong>线上表单导出的结果，常常是按时间或批次分成多个文件。</li>
-    <li><strong>合并供应商报价单：</strong>采购时收到多家供应商的报价，需要横向对比。</li>
-  </ul>
-  <p class="mb-10">
-    手动操作不仅效率低，一旦某个文件的数据复制错了行或列，整个汇总表就都错了，后续检查修改更是耗时耗力。
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">文档里的图片，都藏在哪里？</h2>
+  <p class="mb-6 leading-relaxed">
+    我们日常接触的文档，比如PDF、Word（.docx）、Excel（.xlsx）和PowerPoint（.pptx），它们就像一个个“数字容器”。你看到的文字、图表和图片，都被打包在里面。尤其是图片，它们通常以原始的、高质量的数据格式保存在文档内部，这就是为什么我们无法像在普通网页上那样直接“另存为”。
   </p>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">好的合并工具应该是什么样？</h2>
-  <p class="mb-6">
-    一个真正好用的合并工具，应该做到“省心、省力、不出错”。它通常会具备下面这几个特点：
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">如何无损地拿出这些图片？</h2>
+  <p class="mb-6 leading-relaxed">
+    你需要的是一个专门的“提取工具”。它的原理就像一个智能的开箱器，能安全地打开这些文档“容器”，识别出里面的所有图片，并把它们一张张完整地、高质量地复原出来，而不是简单地截取屏幕。
   </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">操作极其简单</h3>
-      <p class="text-gray-600">就像在电脑上选择多个照片一样，只需点击“添加文件”或直接把文件拖进去即可，不需要任何复杂的设置。</p>
+  <div class="my-8 p-6 bg-slate-100 rounded-lg">
+    <h3 class="text-xl font-bold mb-3">一个好用的工具应该具备什么？</h3>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">1</span>
+        <span><strong>支持常见格式</strong>：至少能处理PDF、Word、Excel、PPT这几种大家最常用的文件。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">2</span>
+        <span><strong>操作简单直观</strong>：不需要复杂的设置，拖入文件，点击按钮就能完成。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">3</span>
+        <span><strong>保护你的隐私</strong>：所有操作最好在你的电脑本地完成，文件不需要上传到陌生服务器，这样最让人放心。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-blue-500 text-white text-center leading-6 rounded-full mr-3 flex-shrink-0">4</span>
+        <span><strong>方便管理结果</strong>：提取出来的图片能一张张预览，还能打包成一个文件夹下载，方便整理。</span>
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">具体怎么操作？</h2>
+  <p class="mb-4 leading-relaxed">
+    整个过程非常简单，比你想象的要容易得多：
+  </p>
+  <ol class="list-decimal pl-5 space-y-4 mb-8">
+    <li class="pl-2"><strong>找到工具</strong>：在浏览器里打开一个具备上述功能的网页工具。</li>
+    <li class="pl-2"><strong>添加文档</strong>：点击“添加”区域，或者直接把你的PDF、Word等文件拖进去。可以一次处理多个文件。</li>
+    <li class="pl-2"><strong>等待提取</strong>：工具会自动开始工作，你可能会看到一个简单的进度提示。</li>
+    <li class="pl-2"><strong>保存图片</strong>：完成后，所有图片会以缩略图形式展示。你可以点击单张图片放大查看，也可以一键将所有图片打包下载到电脑里。</li>
+  </ol>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">我需要担心安全问题吗？</h2>
+  <p class="mb-6 leading-relaxed">
+    这是很多人最关心的一点。如果工具明确说明“所有操作在本地浏览器完成”，那就意味着你的文档文件从来没有离开过你的电脑。整个处理过程就像你用电脑自带的计算器算数一样，是离线进行的，因此不必担心文档内容被上传或泄露。
+  </p>
+
+  <h2 class="text-2xl sm:text-3xl font-bold mt-10 mb-4">这可以用来做什么？</h2>
+  <div class="grid sm:grid-cols-2 gap-4 mb-10">
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h4 class="font-bold mb-2">整理素材库</h4>
+      <p class="text-sm text-slate-600">从下载的行业报告、产品手册里提取高质量的配图，建立自己的素材库。</p>
     </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">保留原有模样</h3>
-      <p class="text-gray-600">合并后，原来表格里的加粗、颜色、数字格式（比如货币、百分比）、日期格式等，都能很好地保留下来，不用再重新调整。</p>
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h4 class="font-bold mb-2">制作新内容</h4>
+      <p class="text-sm text-slate-600">想用之前方案PPT里的某张图表做新资料？直接提取原图，比截图清晰多了。</p>
     </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并前可预览</h3>
-      <p class="text-gray-600">在点击合并按钮前，你可以随时点开任何一个文件，查看里面的具体内容，确保没有选错文件，心里更有底。</p>
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h4 class="font-bold mb-2">保存重要资料</h4>
+      <p class="text-sm text-slate-600">合同、证明文件里的印章或签名图片，可以单独提取出来妥善保存。</p>
     </div>
-    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-      </div>
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一键下载结果</h3>
-      <p class="text-gray-600">合并完成后，直接点击下载，就能得到一个新的、包含了所有数据的Excel文件，马上就可以打开使用或发送给同事。</p>
+    <div class="p-5 border border-slate-200 rounded-lg">
+      <h4 class="font-bold mb-2">学习与参考</h4>
+      <p class="text-sm text-slate-600">看到别人文档里优秀的流程图、信息图，提取出来方便自己学习和借鉴排版。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mt-12 mb-6">关于Excel合并，你可能想问</h2>
-
-  <div class="space-y-6 mb-12">
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">合并后格式会乱吗？</h3>
-      <p class="text-gray-600">这是大家最关心的问题。现在很多工具在这方面都做得不错，基础的单元格样式（字体、颜色、边框）、数字格式（如会计专用、日期）通常都能保留。但如果原文件有非常复杂的公式或特殊对象，建议合并后简单检查一下关键数据。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">一次能合并几个文件？</h3>
-      <p class="text-gray-600">理论上，几十个甚至上百个文件都可以批量处理。但对于普通用户来说，一次性合并十几个文件已经能满足绝大多数工作需求了。如果文件特别多、特别大，合并过程可能需要多一点时间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">对电脑有要求吗？需要安装软件吗？</h3>
-      <p class="text-gray-600">如果是在网页浏览器里使用的在线工具，通常对电脑没什么特殊要求，只要你的浏览器（比如Chrome、Edge）是比较新的版本就行。最大的好处就是<strong>不用安装任何软件</strong>，打开网页就能用，用完即走，不占电脑空间。</p>
-    </div>
-    <div class="border border-gray-200 rounded-xl p-6">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">安全吗？我的数据会被上传吗？</h3>
-      <p class="text-gray-600">这是一个很好的问题。在使用任何在线处理文件的服务时，都应注意隐私。可靠的工具通常会在页面说明其数据处理方式，例如承诺“文件仅在浏览器本地处理，不会上传到服务器”。对于包含敏感信息的文件，使用前了解这一点很重要。</p>
-    </div>
-  </div>
-
-  <div class="bg-gray-50 rounded-2xl p-6 md:p-8 mt-12 border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">告别繁琐的复制粘贴</h2>
-    <p class="text-gray-700 mb-6">
-      处理Excel本是为了提高效率，不应该被机械的重复操作拖累。无论是整理家庭开支、汇总工作报表，还是处理学习数据，一个顺手的小工具往往能节省大量时间，让我们把精力花在更重要的数据分析与决策上。
-    </p>
-    <p class="text-gray-700">
-      下次再面对一堆需要合并的表格时，不妨尝试寻找一个操作简单、能保留格式的合并工具。你会发现，原来让人头疼的整理工作，其实点几下鼠标就能轻松搞定。
+  <div class="border-t border-slate-200 pt-8 mt-8">
+    <h2 class="text-2xl font-bold mb-4">写在最后</h2>
+    <p class="leading-relaxed">
+      从文档中提取图片，并不是什么高深的技术。它只是一个能帮你提高效率、获得更好效果的小技巧。关键在于找到一个<b>操作简单、注重隐私、支持格式广</b>的工具。下次再遇到心仪的文档图片时，不妨试试这个方法，告别模糊的截图，轻松获得高清原图。
     </p>
   </div>
-</article>
-`;export{t as default};
+</div>
+`;export{l as default};

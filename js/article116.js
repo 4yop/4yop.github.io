@@ -1,167 +1,64 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-  <article>
-    <!-- 标题 -->
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">文字一键变美图：简单好用的在线文字图片生成工具</h1>
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center leading-tight">给你的照片换个玩法：一键生成专属打乱拼图</h1>
 
-    <!-- 引言 -->
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 sm:mb-8 rounded-r">
-      <p class="text-gray-800">
-        你是否遇到过这样的情况：想在朋友圈发一段有格调的句子，配图却找不到合适的？或者，为工作报告、演示文稿制作一张清晰又美观的标题图，总觉得用软件太麻烦？今天，我们就来聊聊一个能解决这些烦恼的小工具——在线文字图片生成器。
-      </p>
+  <div class="text-lg text-gray-600 mb-8 text-center">
+    <p>想让普通的照片变得更有趣、更具挑战性吗？今天介绍一个简单的小工具，它能轻松把你的照片变成等待还原的拼图。</p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+    <p class="font-medium text-blue-800">简单来说：你上传一张照片，选择切成多少块，工具就会自动把它打乱，生成一张全新的、等待被“破解”的图片。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">这是做什么用的？</h2>
+  <p class="mb-4">想象一下，你有一张非常喜欢的风景照、宠物照或者全家福。直接分享出去，大家看一眼就过去了。但如果把它变成一张被打乱顺序的拼图，再分享给朋友或家人，就多了一份互动和挑战的乐趣。</p>
+  <p class="mb-4">它就像是一个数字版的“拼图制作器”。你不用去购买实体的拼图块，也不用费力地用软件一点点裁剪。整个过程，只需要点几下鼠标。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">怎么使用？非常简单，三步搞定</h2>
+  <ul class="list-decimal pl-5 space-y-4 mb-8">
+    <li>
+      <strong>第一步：选照片</strong>
+      <p class="text-gray-700 mt-1">点击“选择图片”按钮，从你的电脑或手机里挑出一张你想加工的照片。支持常见的图片格式。</p>
+    </li>
+    <li>
+      <strong>第二步：定难度</strong>
+      <p class="text-gray-700 mt-1">选择你想把照片切成多少块。比如9块（3x3）、16块（4x4），块数越多，打乱后的还原难度就越高，适合喜欢挑战的人。</p>
+    </li>
+    <li>
+      <strong>第三步：生成并下载</strong>
+      <p class="text-gray-700 mt-1">点击“切割并打乱”按钮，稍等片刻，你就能在右边看到打乱后的效果。满意的话，直接点击“下载拼图”，这张独一无二的谜题图就保存到你的设备里了。</p>
+    </li>
+  </ul>
+
+  <div class="bg-gray-100 p-5 rounded-lg my-8">
+    <h3 class="font-bold text-xl mb-3">你可能会问的几个问题</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium">我的照片会被上传到服务器吗？</p>
+        <p class="text-gray-700">完全不会。所有处理都在你当前的浏览器页面里完成，照片数据不会离开你的电脑或手机，非常注重隐私安全。</p>
+      </div>
+      <div>
+        <p class="font-medium">可以切成任意块数吗？</p>
+        <p class="text-gray-700">为了保证打乱后每个小块形状规整（都是小方格），工具会自动建议一些特定的块数，比如4、9、16、25等，这样最终效果最好。</p>
+      </div>
+      <div>
+        <p class="font-medium">打乱后的图片清晰度会下降吗？</p>
+        <p class="text-gray-700">处理过程会尽量保持原图的清晰度。你可以随时通过预览功能查看原图和效果图，并进行对比。</p>
+      </div>
+      <div>
+        <p class="font-medium">这个工具有什么实际用途？</p>
+        <p class="text-gray-700">除了娱乐，它还可以用于制作简单的互动谜题、活动预热海报、或者作为亲子游戏素材。老师们甚至可以用它来制作别出心裁的课件题目。</p>
+      </div>
     </div>
+  </div>
 
-    <!-- 第一部分：什么是文字图片，有什么用？ -->
-    <section class="mb-8 sm:mb-12">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">一、 为什么需要把文字做成图片？</h2>
-      <p class="text-gray-700 mb-4">纯文字发布，有时显得单调，难以抓住眼球。而一张精心设计的文字图片，却能瞬间提升内容的质感。</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
-          <h3 class="text-lg font-medium text-gray-900 mb-2">社交媒体分享</h3>
-          <p class="text-gray-600">把喜欢的名言、诗句、心情语录配上好看的字体和背景，生成图片分享到朋友圈、微博、小红书，点赞率更高。</p>
-        </div>
-        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
-          <h3 class="text-lg font-medium text-gray-900 mb-2">内容创作与展示</h3>
-          <p class="text-gray-600">为公众号文章制作头图、为视频制作封面、为电商商品制作宣传标语，一张好的文字图是吸引用户点击的第一步。</p>
-        </div>
-        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
-          <h3 class="text-lg font-medium text-gray-900 mb-2">学习与工作</h3>
-          <p class="text-gray-600">提炼PPT的核心观点、制作学习卡片、整理知识重点，图片形式更直观，也方便保存和传播。</p>
-        </div>
-        <div class="bg-white p-4 sm:p-5 rounded-lg shadow-sm border border-gray-200">
-          <h3 class="text-lg font-medium text-gray-900 mb-2">个人表达</h3>
-          <p class="text-gray-600">生日祝福、节日问候、活动邀请，用一张自定义的图片来表达，比普通文字消息更有心意和仪式感。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pt-6 border-t">给你的创意和生活加点料</h2>
+  <p class="mb-4">一张普通的照片，经过这样简单的处理，就变成了一个等待被解锁的小小谜团。无论是用于社交分享增加互动，还是作为一个小游戏和朋友一起玩，都能带来不一样的体验。</p>
+  <p class="mb-4">工具本身是免费的，操作门槛极低。你不必懂任何复杂的图片编辑技术，也不需要下载安装软件，打开网页就能用。</p>
+  <p class="mb-8">下次当你觉得某张照片值得被更仔细地“观赏”时，不妨试试把它变成一张打乱的拼图。这不仅仅是改变图片的排列方式，更是为你的记忆和分享，增添了一层探索的乐趣。</p>
 
-    <!-- 第二部分：这个生成工具的核心特点 -->
-    <section class="mb-8 sm:mb-12">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">二、 一个好用的文字图片工具应该什么样？</h2>
-      <p class="text-gray-700 mb-6">一个对普通人友好的工具，关键在于“简单”和“效果”。下面这几条，我认为很重要：</p>
-      <ul class="space-y-4 sm:space-y-5">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
-            <span class="text-green-600 font-bold text-sm">1</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-900 mb-1">所见即所得，实时预览</h3>
-            <p class="text-gray-600">调整任何设置，比如字体大小、颜色，旁边的图片预览区立刻就能看到变化。不用猜效果，非常直观。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
-            <span class="text-blue-600 font-bold text-sm">2</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-900 mb-1">样式丰富，自由搭配</h3>
-            <p class="text-gray-600">不仅有多种中文字体可选，还能设置纯色或漂亮的渐变色彩，给文字加粗、变斜体、加阴影，让文字更有设计感。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-purple-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
-            <span class="text-purple-600 font-bold text-sm">3</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-900 mb-1">操作简单，不用学习</h3>
-            <p class="text-gray-600">所有功能都用滑块、按钮、颜色选择器来操作，就像玩简单的游戏一样。还有现成的模板可以一键套用，三秒出图。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 h-6 w-6 sm:h-7 sm:w-7 rounded-full bg-yellow-100 flex items-center justify-center mt-1 mr-3 sm:mr-4">
-            <span class="text-yellow-600 font-bold text-sm">4</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-900 mb-1">输出方便，格式齐全</h3>
-            <p class="text-gray-600">做好图片后，可以下载成常用的PNG或JPG格式，高清无水印。有些工具还支持直接复制图片到手机相册，分享更快捷。</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- 第三部分：如何使用（非教程，是功能介绍） -->
-    <section class="mb-8 sm:mb-12">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">三、 它是如何帮你制作图片的？</h2>
-      <p class="text-gray-700 mb-6">整个过程就像在纸上画画写字一样自然，只不过这张“纸”和“笔”都在网页上。你只需要关注你想表达的内容和喜欢的样子。</p>
-      <div class="space-y-8">
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">1</span>
-            第一步：写下你的文字
-          </h3>
-          <p class="text-gray-600 pl-11">在最上面的文本框里，输入任何你想展示的文字。可以是一句话，一段诗，或者一个标题。支持换行，让排版更灵活。</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">2</span>
-            第二步：打扮你的文字
-          </h3>
-          <p class="text-gray-600 pl-11 mb-3">这是最有意思的部分。就像给文字“选衣服”：</p>
-          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
-            <li><strong>选字体和大小</strong>：用宋体显得端庄，用黑体显得醒目，用楷体显得文艺。滑动滑块就能轻松改变字号。</li>
-            <li><strong>选颜色</strong>：可以选一个单色，更推荐试试“渐变色”，让文字从一种颜色自然过渡到另一种，效果非常出彩。</li>
-            <li><strong>加特效</strong>：勾选“粗体”让文字更有力量，勾选“阴影”让文字从背景中跳出来。</li>
-            <li><strong>调位置</strong>：选择让文字居中对齐、靠左还是靠右。</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">3</span>
-            第三步：布置你的画布
-          </h3>
-          <p class="text-gray-600 pl-11 mb-3">画布就是文字背后的那张“纸”。你可以：</p>
-          <ul class="text-gray-600 pl-14 space-y-2 list-disc">
-            <li>设置画布的宽和高，适应不同平台（如手机竖屏、电脑横屏）。</li>
-            <li>选择画布的背景颜色，白色简洁，浅灰色柔和，选一个和文字搭配的颜色。</li>
-            <li>调整文字距离画布边缘的“内边距”，让版面看起来更舒服。</li>
-            <li>如果不知道设多大，可以直接点击“16:9”（视频比例）、“1:1”（正方形）等常用比例按钮。</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-            <span class="inline-block w-8 h-8 leading-8 text-center rounded-full bg-gray-800 text-white mr-3 text-sm">4</span>
-            第四步：保存与使用
-          </h3>
-          <p class="text-gray-600 pl-11">图片满意后，点击“下载PNG”或“下载JPG”就能保存到电脑或手机里。有些工具提供“复制图片”功能，可以直接粘贴到聊天软件里发送。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 第四部分：技巧和小建议 -->
-    <section class="mb-8 sm:mb-12">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 pb-2 border-b">四、 几个让图片更好看的小技巧</h2>
-      <div class="bg-gradient-to-r from-gray-50 to-white p-5 sm:p-6 rounded-xl border border-gray-200">
-        <ul class="space-y-3 sm:space-y-4">
-          <li class="flex items-start">
-            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-700"><strong>从模板开始</strong>：如果不熟悉配色和搭配，可以先使用“经典黑白”、“渐变蓝紫”等预设模板，在其基础上微调，能快速找到感觉。</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-700"><strong>对比产生美</strong>：深色文字配浅色背景，或浅色文字配深色背景，这样阅读起来最清晰。如果文字用了很亮的颜色，背景就用暗一些的来衬托。</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-700"><strong>留白很重要</strong>：适当增加“内边距”，不要让文字挤满画布的边缘，留出一些空白会让整体看起来更高级、更舒适。</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="flex-shrink-0 w-5 h-5 text-green-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-700"><strong>内容精炼</strong>：一张图片上的文字不宜过多，突出重点即可。如果需要表达长篇内容，可以制作成系列图片。</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 结尾 -->
-    <section class="pt-6 border-t border-gray-200">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">总结</h2>
-      <p class="text-gray-700 text-lg text-center mb-6">
-        把文字变成好看的图片，已经不再是设计师的专属技能。借助简单易用的<span class="font-medium text-gray-900">在线文字图片生成工具</span>，每个人都能轻松制作出用于分享、工作或学习的精美图文。下次当你有了一段想突出展示的文字时，不妨试试这个方法，给你的表达增添一份视觉的魅力。
-      </p>
-      <div class="text-center text-gray-500 text-sm">
-        <p>希望这篇文章能帮助你了解如何制作文字图片。关键就是：<strong>写下想法，自由设计，轻松保存</strong>。</p>
-      </div>
-    </section>
-  </article>
-</div>
-`;export{s as default};
+  <div class="text-center text-gray-500 text-sm mt-12 pt-8 border-t">
+    <p>希望这个简单的小工具，能为你平淡的图片分享带来一点新鲜感。</p>
+  </div>
+</article>
+`;export{t as default};

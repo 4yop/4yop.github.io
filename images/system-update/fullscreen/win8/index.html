@@ -12,7 +12,11 @@ body{background:#0078d7;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <svg class="win-logo" viewBox="0 0 88 88" fill="#fff"><path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/></svg>
-<div class="title">正在更新 — 请勿关闭</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">正在应用更改...</div>
+<div class="sub" id="sub"></div>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Updating — Do not turn off':'正在更新 — 请勿关闭';
+document.getElementById('sub').textContent=lang==='en'?'Applying changes...':'正在应用更改...';
+document.title=lang==='en'?'Windows 8 Updating':'Windows 8 更新中';</script>
 </body></html>

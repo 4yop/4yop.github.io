@@ -10,7 +10,11 @@ body{background:linear-gradient(180deg,#1a3a6a 0%,#0a1a4a 100%);width:100vw;heig
 .sub{margin-top:16px;font-size:13px;color:#88aadd}
 </style></head>
 <body>
-<div class="title">正在安装更新 — 请勿关闭计算机</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">第 1 步，共 3 步</div>
+<div class="sub" id="sub"></div>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Installing updates — Do not turn off your computer':'正在安装更新 — 请勿关闭计算机';
+document.getElementById('sub').textContent=lang==='en'?'Step 1 of 3':'第 1 步，共 3 步';
+document.title=lang==='en'?'Windows Vista Updating':'Windows Vista 更新中';</script>
 </body></html>

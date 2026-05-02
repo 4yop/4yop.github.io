@@ -1,75 +1,97 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 bg-white text-slate-800 font-sans">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为分组发愁？试试这个简单又公平的分组方法</h1>
-  <p class="text-slate-600 mb-8 text-lg">无论是公司团建、学校活动，还是朋友聚会，只要涉及到分组，总是让人头疼。怎么分才能又快又好？今天就来聊聊这件事。</p>
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">还在纠结午饭吃什么？随机决定器，帮你一秒终结选择困难</h2>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">分组为什么总让人纠结？</h2>
-  <p class="mb-4">相信很多人都有过类似的经历：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-700">
-    <li><strong>怕不公平</strong>：总觉得某个组实力太强，另一个组又太弱，比赛还没开始就失去了悬念。</li>
-    <li><strong>效率低下</strong>：大家围在一起，你一言我一语，半天也定不下名单，浪费宝贵时间。</li>
-    <li><strong>人情难顾</strong>：好朋友想分在一起，但又怕别人说不公平；想把经常合作的同事分开，又不知如何开口。</li>
-    <li><strong>考虑不周</strong>：只想着按人数分，却忘了考虑男女比例，导致有的组全是男生，活动效果大打折扣。</li>
-  </ul>
-  <p class="mb-8 text-slate-600">这些烦恼，归根结底是因为我们用了“凭感觉”的手工分组法。要解决它，我们需要一点更科学的思路。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">什么是好的分组方法？</h2>
-  <p class="mb-4">一个好的分组方法，至少要满足下面三个条件：</p>
-  <div class="grid md:grid-cols-3 gap-4 mb-8">
-    <div class="bg-blue-50 p-5 border border-blue-100">
-      <h3 class="font-bold text-blue-800 mb-2">结果公平</h3>
-      <p class="text-sm text-slate-700">不是绝对的平等，而是让每个人都有机会，每个组都有希望，过程透明，大家心服口服。</p>
-    </div>
-    <div class="bg-green-50 p-5 border border-green-100">
-      <h3 class="font-bold text-green-800 mb-2">快速省时</h3>
-      <p class="text-sm text-slate-700">把繁琐的讨论和调整交给方法，几分钟内出结果，把时间留给真正的活动和交流。</p>
-    </div>
-    <div class="bg-amber-50 p-5 border border-amber-100">
-      <h3 class="font-bold text-amber-800 mb-2">灵活可控</h3>
-      <p class="text-sm text-slate-700">可以根据活动的不同需求，调整分组的规则，而不是只能“一刀切”。</p>
-    </div>
+  <div class="mb-8 text-lg text-gray-600 leading-relaxed">
+    <p class="mb-4">你是不是也经常这样？和朋友们站在餐厅门口，翻来覆去讨论半天，却还是决定不了到底吃火锅、烤肉还是炒菜。又或者，周末休息时，躺在床上纠结今天是看电影、看书还是出门运动，结果一天就在犹豫中过去了。</p>
+    <p>这种“选择困难”的小烦恼，几乎每个人都遇到过。它浪费我们的时间，消耗我们的精力。今天，我们就来认识一个简单又好玩的小工具——<strong class="text-gray-900">随机决定器</strong>，它能像抛硬币一样，帮你快速做出决定，让生活更轻松。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">几种常见又实用的分组思路</h2>
-  <p class="mb-6">了解了目标，我们可以看看有哪些具体的方法能帮到我们：</p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="what-is">随机决定器是什么？</h2>
+  <div class="bg-blue-50 p-5 rounded-lg mb-8">
+    <p class="mb-3">简单来说，<strong>随机决定器就是一个帮你从多个选项中，公平地随机挑选一个的智能小助手</strong>。</p>
+    <p>想象一下，你把“吃面条”“吃米饭”“吃饺子”三个选项交给它，它就像一个公正的裁判，快速地在它们中间“抓阄”，然后告诉你结果。你不用再纠结，也不用担心选择不公平，因为它完全随机，纯粹看“运气”。</p>
+  </div>
 
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="how-to-use">它是怎么工作的？简单三步，一看就会</h2>
   <div class="space-y-6 mb-10">
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-blue-700">1. 随机分组：最基础的公平</h3>
-      <p class="mb-3">就像抽签一样，把所有人的名字打乱，然后按顺序分到各个组里。这是最简单粗暴，但也最不容易引发争议的方法。适合对小组构成没有特殊要求的娱乐活动。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：破冰游戏、抽奖、简单的小任务分配。</p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">1</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">写下你的“待办清单”</h3>
+        <p class="text-gray-700">把你所有纠结的选项，一条一条地写下来。比如今天要完成哪项工作、晚上看哪部电影、周末去哪里玩。每个选项占一行，写得越清楚越好。</p>
+      </div>
     </div>
 
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-green-700">2. 均衡性别分组：让小组更有活力</h3>
-      <p class="mb-3">俗话说“男女搭配，干活不累”。均衡性别分组，就是把男生和女生先分开，然后像发牌一样，轮流分到每个组，确保每个组的男女比例都差不多。这样能促进交流，让小组氛围更融洽。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：团队拓展、项目小组、学习讨论班、联谊活动。</p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">2</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">让机器“帮你思考”</h3>
+        <p class="text-gray-700">设定好你想让它随机选择的次数（比如10次），然后点击“开始决定”。你会看到选项在屏幕上快速滚动变化，就像一个转盘在转动，充满了小小的期待感。</p>
+      </div>
     </div>
 
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-amber-700">3. 避开特定组合：巧妙的“人情”处理</h3>
-      <p class="mb-3">有时候，我们需要把两个经常合作的人分开，以促进新的碰撞；或者把两个有矛盾的同学暂时分开，保证活动顺利进行。这个功能可以指定“谁和谁最好不要在一组”，系统会优先考虑这个要求。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：教学分组（避免总是一组的同学）、需要创新思维的头脑风暴、调解型团队活动。</p>
+    <div class="flex items-start">
+      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold mr-4">3</div>
+      <div>
+        <h3 class="font-bold text-xl mb-2 text-gray-900">接受惊喜的结果</h3>
+        <p class="text-gray-700">转动停止，最终结果会醒目地显示出来。这就是“命运”为你做出的选择！更棒的是，它还会把所有选择的历史记录下来，并用图表告诉你每个选项被选中的比例，一目了然。</p>
+      </div>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">如何选择分组方式？一个简单的决策图</h2>
-  <p class="mb-6">面对不同的活动，你可以这样思考：</p>
-  <div class="bg-slate-50 p-6 rounded-xl mb-10 border border-slate-300">
-    <p class="mb-4 font-medium">首先问自己：<span class="text-blue-700">“这次分组，最重要的是什么？”</span></p>
-    <ul class="space-y-3 text-slate-700">
-      <li>▶ 如果答案是 <strong>“绝对公平，省去一切解释”</strong>，那就选 <span class="font-semibold">完全随机</span>。</li>
-      <li>▶ 如果答案是 <strong>“希望小组内部能更好地协作交流”</strong>，那就选 <span class="font-semibold">均衡性别</span>。</li>
-      <li>▶ 如果答案是 <strong>“有几个特殊情况需要特别处理”</strong>，那就选 <span class="font-semibold">避开特定组合</span>。</li>
-    </ul>
-    <p class="mt-6 text-slate-600 text-sm">想清楚核心目的，选择就变得简单了。</p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="when-to-use">哪些时候，你需要一个随机决定器？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🏠 生活日常</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>今天午餐/晚餐吃什么？</li>
+        <li>周末是宅家还是出门？</li>
+        <li>下一本该读什么书？</li>
+        <li>家里大扫除先从哪个房间开始？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">👫 朋友聚会</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>聚会玩什么游戏？</li>
+        <li>团队活动去哪里？</li>
+        <li>看电影还是唱KTV？</li>
+        <li>谁去买饮料？（是的，它也能选人）</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">💼 工作学习</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>优先处理哪项任务？</li>
+        <li>学习哪个新技能？</li>
+        <li>报告用什么主题颜色？</li>
+        <li>头脑风暴时，从哪个创意点开始深挖？</li>
+      </ul>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+      <h4 class="font-bold text-lg mb-3 text-gray-900">🎮 休闲娱乐</h4>
+      <ul class="list-disc pl-5 text-gray-700 space-y-1">
+        <li>旅行目的地选择</li>
+        <li>今晚追哪部剧？</li>
+        <li>游戏里选择哪条路线？</li>
+        <li>给宠物取什么名字？</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="p-6 md:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl mt-12">
-    <h2 class="text-2xl font-bold mb-4 text-slate-800">告别分组烦恼，让事情更简单</h2>
-    <p class="mb-4">一个好的开始是成功的一半。分组看似是小事，却直接影响着后续活动的氛围和效率。</p>
-    <p class="mb-6">无论是想随机抽签图个乐子，还是希望科学搭配提升团队效能，亦或是要巧妙处理一些人际关系，总有一种分组思路适合你。下次再遇到需要分组的情况，不妨试试这些方法。</p>
-    <p class="font-medium text-slate-800">把纠结的时间省下来，去享受活动本身带来的快乐吧。</p>
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-5 text-gray-900 border-l-4 border-blue-500 pl-4 leading-tight" id="benefits">为什么用随机决定器？</h2>
+  <div class="space-y-5 mb-10">
+    <p><strong class="text-gray-900">节省时间，停止内耗：</strong>把宝贵的精力从无休止的纠结中解放出来。决定过程可能只需要几秒钟，省下的时间可以做更多有意义的事。</p>
+    <p><strong class="text-gray-900">增加乐趣与期待感：</strong>看着选项滚动，等待未知的结果，本身就像一个小游戏，能为平淡的决定过程增添一抹趣味和仪式感。</p>
+    <p><strong class="text-gray-900">公平公正，避免争执：</strong>朋友间意见不合时，让“随机”来做裁判，大家都会心服口服，瞬间化解僵局。</p>
+    <p><strong class="text-gray-900">帮你突破思维定式：</strong>有时候，我们心里可能已经有了偏向，但随机结果可能会带你尝试一个被你忽略的选项，发现新的可能。</p>
+  </div>
+
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-12 text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-3">告别选择困难，从今天开始</h3>
+    <p class="text-gray-700 mb-4">生活中已经有很多事需要我们仔细权衡，就把那些无伤大雅的小决定，交给“随机”的乐趣吧。无论是用手机还是电脑，都能随时打开这个<span class="font-semibold text-gray-900">随机决定器</span>。</p>
+    <p class="text-gray-700">下次再为“吃什么”、“去哪玩”、“做什么”而纠结时，不妨试一试。也许，让随机帮你做的那个决定，会带来意想不到的惊喜和轻松好心情。</p>
   </div>
 </div>
-`;export{s as default};
+`;export{t as default};

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Windows 10 更新中</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+      color: #fff;
+      overflow: hidden;
+      cursor: default;
+      user-select: none;
+    }
+
+    .win-logo {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 40px;
+    }
+
+    /* 圆形旋转加载指示器 - 模拟 Windows 10 风格的圆点旋转 */
+    .spinner-wrap {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 36px;
+    }
+
+    .spinner-dot {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0;
+      animation: dot-spin 1.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    }
+
+    .spinner-dot:nth-child(1) {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-delay: 0s;
+    }
+
+    .spinner-dot:nth-child(2) {
+      top: 7%;
+      right: 7%;
+      transform: translate(50%, -50%);
+      animation-delay: -0.15s;
+    }
+
+    .spinner-dot:nth-child(3) {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      animation-delay: -0.3s;
+    }
+
+    .spinner-dot:nth-child(4) {
+      bottom: 7%;
+      right: 7%;
+      transform: translate(50%, 50%);
+      animation-delay: -0.45s;
+    }
+
+    .spinner-dot:nth-child(5) {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-delay: -0.6s;
+    }
+
+    .spinner-dot:nth-child(6) {
+      bottom: 7%;
+      left: 7%;
+      transform: translate(-50%, 50%);
+      animation-delay: -0.75s;
+    }
+
+    .spinner-dot:nth-child(7) {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      animation-delay: -0.9s;
+    }
+
+    .spinner-dot:nth-child(8) {
+      top: 7%;
+      left: 7%;
+      transform: translate(-50%, -50%);
+      animation-delay: -1.05s;
+    }
+
+    @keyframes dot-spin {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+      20% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      80% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .pct {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 480px) {
+      .win-logo {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 32px;
+      }
+
+      .spinner-wrap {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 28px;
+      }
+
+      .spinner-dot {
+        width: 5px;
+        height: 5px;
+      }
+
+      .title {
+        font-size: 16px;
+        padding: 0 24px;
+        text-align: center;
+      }
+
+      .pct {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg class="win-logo" viewBox="0 0 88 88" fill="#fff">
+    <path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/>
+  </svg>
+
+  <div class="spinner-wrap">
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+    <div class="spinner-dot"></div>
+  </div>
+
+  <div class="title" id="title">正在配置 Windows 更新 — 请勿关闭电脑</div>
+  <div class="pct" id="pct">已完成 0%</div>
+
+  <script>
+    var lang = new URLSearchParams(window.location.search).get('lang') || 'zh';
+
+    var i18n = {
+      zh: {
+        title: '正在配置 Windows 更新 — 请勿关闭电脑',
+        pct: function (n) { return '已完成 ' + n + '%'; },
+        docTitle: 'Windows 10 更新中'
+      },
+      en: {
+        title: 'Configuring Windows Update — Don\'t turn off your PC',
+        pct: function (n) { return n + '% complete'; },
+        docTitle: 'Windows 10 Updating'
+      }
+    };
+
+    var t = i18n[lang] || i18n.zh;
+    document.getElementById('title').textContent = t.title;
+    document.title = t.docTitle;
+
+    var n = 0;
+    var pctEl = document.getElementById('pct');
+
+    setInterval(function () {
+      if (n < 96) {
+        n = n + Math.floor(Math.random() * 2 + 1);
+        if (n > 96) n = 96;
+      }
+      pctEl.textContent = t.pct(n);
+    }, 550);
+  </script>
+</body>
+</html>

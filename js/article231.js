@@ -1,85 +1,84 @@
-const s=`
-<div class="text-gray-800 leading-relaxed px-4 sm:px-0">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center mt-6">视频总是被判定为重复？试试自己动手，给它一个“新身份”</h2>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    还在用“生日”当密码？手把手教你打造“破门锤”也打不开的强力密码
+  </h1>
 
-  <p class="mb-6 text-lg">你有没有遇到过这样的烦恼：精心制作的视频，上传到平台时却被提示“内容重复”？或者想在不同地方保存同一段珍贵记忆，却被告知“文件已存在”？别急，这很正常，今天我们就来聊聊一个轻松解决这个问题的小方法。</p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-    <p class="font-medium text-blue-800">简单来说，很多网站和软件会通过一个看不见的“文件指纹”来识别视频是否相同。我们的方法，就是帮你轻轻地、安全地改变这个“指纹”。</p>
+  <div class="text-lg text-gray-600 mb-8">
+    <p>你的网络账号，是不是还在用“123456”、自己生日或者“qwerty”这种简单密码？今天我们就来聊聊，怎么轻松设置一个既安全又好记的密码，给你的数字生活上一把真正的“防盗锁”。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么我的视频会被认为是“重复”的？</h2>
-  <p class="mb-4">想象一下，每份文件就像一个人，都有一个独一无二的身份证号码。对于视频、图片、文档这些数字文件来说，这个“身份证号”就叫“哈希值”。</p>
-  <p class="mb-4">当你上传视频时，网站的后台系统会飞快地计算并记录下它的这个号码。下次你再上传一个视频，哪怕只是改了个名字，系统一查号码，发现和数据库里某个记录一模一样，就会认为这是“同一个人”，从而判断为重复内容。</p>
-  <p class="mb-4">这原本是为了防止恶意上传垃圾信息，但有时也会“误伤”我们普通用户。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium text-blue-800">你知道吗？</p>
+    <p class="mt-1">黑客破解一个6位纯数字密码，可能只需要几秒钟。而一个复杂的强密码，却能让他们望而却步。</p>
+  </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">这个小工具能帮我做什么？</h2>
-  <p class="mb-4">这里介绍的方法，核心就是帮你<strong>安全地、轻微地</strong>修改视频文件的“身份证号码”。</p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">为什么你的旧密码不够安全？</h2>
+  <p class="mb-4">想象一下，你家的门锁如果是用透明塑料做的，小偷一眼就能看清里面的结构，那还安全吗？简单密码就像这“透明锁”。很多人习惯用：</p>
   <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>改变文件“指纹”</strong>：通过对视频文件进行微小的、不影响观看的调整，生成一个全新的“身份证号”。</li>
-    <li><strong>绕过重复检测</strong>：让网站或软件将它识别为一个“全新”的文件，从而成功上传或备份。</li>
-    <li><strong>完全不影响播放</strong>：这种修改非常轻微，不会改变视频的画面、声音、时长和清晰度，在任何播放器上都能正常打开。</li>
+    <li>自己的名字、生日、手机号。</li>
+    <li>“password”、“admin”这类通用词。</li>
+    <li>键盘上简单的字母序列，比如“asdfgh”。</li>
+  </ul>
+  <p class="mb-6">这些密码太容易被猜到，或者被黑客用“字典攻击”（一种用常见密码列表不断尝试的方法）轻松破解。</p>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">一个好密码的“配方”是什么？</h2>
+  <p class="mb-4">一个真正强力的密码，就像一份独家秘方，需要混合多种“食材”：</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">长度是基础</h3>
+      <p>密码越长，破解难度呈指数级增长。<strong>12位以上</strong>是个不错的起点，就像把锁的链条加长加粗。</p>
+    </div>
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">混合是关键</h3>
+      <p>把<strong>大写字母、小写字母、数字、特殊符号</strong>（如!@#$）混合使用，能让密码的复杂度大大提升。</p>
+    </div>
+  </div>
+  <p class="mb-6">避免使用有规律的单词或序列，比如“Abc123!@#”虽然混合了多种字符，但规律太明显，安全性也会打折。</p>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">如何轻松获得一个高安全密码？</h2>
+  <p class="mb-4">自己编一个又长又复杂的密码很难记住，这时候，你可以借助一些在线工具——<strong>密码生成器</strong>。它能帮你：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>一键生成</strong>：根据你设定的长度和字符类型，瞬间产生一个随机、无规律的密码。</li>
+    <li><strong>强度分析</strong>：生成后，工具会告诉你这个密码大概有多“强壮”。</li>
+    <li><strong>批量制作</strong>：一次可以生成好几个，方便你在不同场合使用。</li>
+  </ul>
+  <div class="bg-gray-100 p-5 rounded-lg mb-8">
+    <h3 class="font-bold text-gray-800 mb-3">使用密码生成器的小建议：</h3>
+    <p>1. <strong>设定长度</strong>：建议从16位左右开始尝试。</p>
+    <p>2. <strong>勾选字符类型</strong>：尽量把“大写字母、小写字母、数字、符号”全选上。</p>
+    <p>3. <strong>检查强度</strong>：生成后，看看工具给出的强度评分是不是“强”。</p>
+    <p>4. <strong>妥善保存</strong>：生成的密码一定要保存在安全的地方，比如可靠的密码管理器，而不是写在电脑的记事本里。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">有了强密码，就万无一失了吗？</h2>
+  <p class="mb-4">强密码是坚固的“锁芯”，但门框也得结实。你还需要：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>开启双重验证</strong>：这是最重要的防线。就像除了密码锁，再加一个指纹或短信验证。</li>
+    <li><strong>不同网站用不同密码</strong>：避免“一把钥匙开所有门”，防止一个网站密码泄露，连累所有账号。</li>
+    <li><strong>定期更换</strong>：尤其是重要账号（如邮箱、银行），建议每半年或一年更换一次密码。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">什么时候会用到它？</h2>
-  <p class="mb-4">这个办法适用于一些对普通用户友好的场景：</p>
-  <div class="grid sm:grid-cols-2 gap-4 mb-8">
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-2">上传个人视频遇到阻碍</h3>
-      <p class="text-sm">比如你想把同一段家庭录像备份到多个网盘，或者上传到不同社交平台分享给亲友时被系统拦截。</p>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-2">需要重新提交材料</h3>
-      <p class="text-sm">在某些需要提交视频证明的场合（非严肃法律或版权场景），如果系统误判重复，可以尝试此方法生成一份“新”文件。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">如何使用？很简单，三步搞定</h2>
-  <div class="space-y-8 mb-10">
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">1</div>
+  <div class="mt-12 pt-8 border-t border-gray-200">
+    <h3 class="text-xl font-bold text-gray-800 mb-4">关于密码，你可能还想知道：</h3>
+    <div class="space-y-4">
       <div>
-        <h3 class="font-medium mb-2">选择你的视频</h3>
-        <p>在工具页面上，点击“选择视频文件”按钮，从你的手机或电脑里找到那个被提示重复的视频。选中后，你会看到它的名字和大小。</p>
+        <p class="font-medium text-gray-800">问：密码太长太难记怎么办？</p>
+        <p class="text-gray-600 mt-1">答：可以使用“密码管理器”来帮你记忆和自动填写。你只需要记住一个主密码即可。</p>
       </div>
-    </div>
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">2</div>
       <div>
-        <h3 class="font-medium mb-2">选择修改方式</h3>
-        <p>工具会显示视频原来的“身份证号”。下面有几个简单的选项，比如“末尾追加”或“随机修改”，它们的作用原理不同，但效果一样——生成新号码。任选一个你喜欢的就好。</p>
+        <p class="font-medium text-gray-800">问：用家人名字+生日做密码安全吗？</p>
+        <p class="text-gray-600 mt-1">答：不安全。这类个人信息在社交媒体上很容易被找到，是黑客首先尝试的组合。</p>
       </div>
-    </div>
-    <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">3</div>
       <div>
-        <h3 class="font-medium mb-2">生成并下载新文件</h3>
-        <p>点击“修改文件”按钮，稍等片刻。处理完成后，你会看到一个新的“身份证号”出现了，这证明修改成功。最后点击“下载修改后文件”，就能得到一个内容和原来一样，但“身份”全新的视频文件了。</p>
+        <p class="font-medium text-gray-800">问：所有的密码都需要很强吗？</p>
+        <p class="text-gray-600 mt-1">答：可以分级处理。重要的核心账号（支付、邮箱）必须用最高强度的密码和双重验证。一些不重要的临时账号，可以使用稍简单但依然不重复的密码。</p>
       </div>
     </div>
   </div>
 
-  <div class="bg-yellow-50 border border-yellow-200 p-4 my-8 rounded-lg">
-    <h3 class="font-medium text-yellow-800 mb-2">重要提醒：请合理使用</h3>
-    <p class="text-yellow-700 text-sm">这个方法的目的是为了方便普通用户的个人使用。请务必尊重他人的劳动成果，不要用于任何侵犯版权的行为。对于有明确版权保护或需要严格验证文件的正式场合，此方法并不适用。</p>
+  <div class="mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-300">
+    <p class="text-center font-medium text-gray-800">总结一下，守护你的数字资产，从一个真正的强密码开始。别再使用那些“透明锁”了，现在就动手，为你最重要的账号换上一把“破门锤”也打不开的“防盗锁”吧。</p>
   </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
-  <div class="space-y-6 mb-12">
-    <div>
-      <h3 class="font-medium mb-2">修改后的视频画质会变差吗？</h3>
-      <p class="text-gray-600">完全不会。这个过程不对视频的画面和声音数据进行任何压缩或重编码，就像给一本书换了个新封面，里面的内容一个字都没变。</p>
-    </div>
-    <div>
-      <h3 class="font-medium mb-2">所有网站都适用吗？</h3>
-      <p class="text-gray-600">对于大多数仅依靠“文件指纹”做初步重复检测的个人网盘、社交平台是有效的。但如果网站使用了更复杂的视频内容识别技术，则可能无效。</p>
-    </div>
-    <div>
-      <h3 class="font-medium mb-2">这个过程安全吗？我的视频会上传到别人的服务器吗？</h3>
-      <p class="text-gray-600">安全。整个修改过程通常在你的浏览器内本地完成，视频文件不会上传到任何外部服务器，处理完即刻下载，保护你的隐私。</p>
-    </div>
-  </div>
-
-  <p class="mt-12 p-4 bg-gray-100 rounded-lg text-center">希望这个通俗的解释能帮你理解如何巧妙地应对视频重复的问题。下次再遇到上传被拒，不妨试试这个思路，给你的视频一个“重新开始”的机会。</p>
 </div>
-`;export{s as default};
+`;export{t as default};

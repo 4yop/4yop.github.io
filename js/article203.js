@@ -1,94 +1,193 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
-    Zalgo故障文本生成器：让你的文字“扭曲”起来
-  </h1>
-  <!-- 引言 -->
-  <p class="text-lg mb-6 text-gray-700 leading-relaxed">
-    你有没有在网上见过这样的文字——“H̴̢ę̵l̷̛l̷̢o̴̢”看起来像是出了故障，但又莫名酷炫？这就是Zalgo文本，一种通过叠加特殊符号让普通文字产生扭曲、撕裂效果的文字艺术。不管是游戏昵称、社交签名，还是文案设计，它都能让你的表达瞬间与众不同。今天我们就来聊聊这种有趣的文字玩法，以及怎么轻松生成你自己的故障文本。
-  </p>
+const r=`
+<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">大小写转换工具：一键统一文本格式，告别手动修改</h1>
 
-  <!-- 什么是Zalgo文本 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">什么是Zalgo文本？</h2>
-  <p class="mb-4 text-gray-700">
-    Zalgo文本最早起源于国外一个叫“Zalgo”的网络漫画角色，后来网友们开始用Unicode里的组合字符（比如各种声调符号、点、横线）堆叠在普通字母上下，制造出一种文字“发疯”的效果。因为看起来很像电脑显示故障，所以也叫“故障文本”。它并不是真正的乱码，而是一种视觉风格——每个基础字符后面跟着一串看不见的附加符号，叠加多了就会变得张牙舞爪。
-  </p>
-  <p class="mb-4 text-gray-700">
-    简单来说，它就像给文字穿上了“刺猬外套”，原本整齐的句子立刻有了不安分的感觉。强度低的时候只是带点小点缀，强度高了就像文字在屏幕里挣扎，特别适合用来表达疯狂、混乱、神秘或者搞怪的情绪。
-  </p>
+  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+    <p class="m-0 font-medium text-blue-900">一段大小写混乱的文本，你准备怎么改？</p>
+    <p class="mt-2 mb-0">手动一个个字母修改？太浪费时间了。大小写转换工具可以一键将文本转换为大写、小写或首字母大写格式，几秒钟完成原本需要几分钟的工作。</p>
+  </div>
 
-  <!-- 为什么人们喜欢用故障文本 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">为什么大家都爱用故障文本？</h2>
-  <p class="mb-4 text-gray-700">
-    在网络世界里，大家都想让自己显得特别。普通名字容易淹没在人群里，而一个带点故障效果的名字——比如“M̴y̴ ̴n̴a̴m̴e̴”就会让人忍不住多看两眼。游戏玩家用它来打造酷炫ID，社交博主用它做个性签名，甚至有些设计师会把故障文字用在海报、视频标题里，营造科技感或恐怖氛围。它就像一种视觉上的“滤镜”，让文字不再平淡。
-  </p>
-  <p class="mb-4 text-gray-700">
-    而且生成起来非常简单，不需要你会任何代码，只要往工具里输入文字，拖动一下滑块，就能得到专属的扭曲文字。这也是Zalgo文本生成器受欢迎的原因——简单、好玩、出效果。
-  </p>
-
-  <!-- 如何使用这个生成器 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">三步生成你的故障文本</h2>
-  <p class="mb-2 text-gray-700">这个工具完全傻瓜式操作，你只需要：</p>
-  <ol class="list-decimal list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">输入文字：</span>在左侧输入框里打上你想转换的内容，中文、英文、数字都支持。</li>
-    <li><span class="font-medium">调节强度：</span>拖动滑块从0到20，数字越大，文字上叠加的符号就越多，效果越“疯狂”。</li>
-    <li><span class="font-medium">复制使用：</span>右侧会实时显示效果，满意了直接点“复制故障文本”，就能粘贴到任何地方——微信、游戏、论坛都可以。</li>
-  </ol>
-  <p class="mb-4 text-gray-700">
-    如果你不知道写什么，点一下“随机示例”，工具会给你几个常用句子，你可以直接拿来玩。
-  </p>
-
-  <!-- 滑块强度是什么意思 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">滑块强度有什么用？</h2>
-  <p class="mb-4 text-gray-700">
-    这个滑块控制的是文字“发疯”的程度。强度为0时，文字完全正常，没有任何附加符号。随着强度增加，每个字符后面会随机添加不同数量的组合符号——比如在字母上下加小点、横线、波浪号等。强度到20时，字符后面会叠上几十个符号，看起来就像一团乱码，但仔细看还能认出原本的字形。你可以根据自己的喜好调节：想要低调一点就用低强度（比如3-5），只想稍微加点纹理；想要夸张炸裂就用高强度（15以上），让文字充满视觉冲击。
-  </p>
-
-  <!-- 西里尔字符选项是干嘛的 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">“启用西里尔字符”有什么用？</h2>
-  <p class="mb-4 text-gray-700">
-    这个选项是给追求更酷效果的人准备的。西里尔字母就是俄文等语言使用的字母，里面有一些和英文字母长得很像，比如“a”变成“а”（俄文），看起来几乎一样，但其实是不同字符。勾选之后，工具会把部分英文字母替换成相似的西里尔字母，然后再叠加故障符号。这样生成的文字会多一种“异域感”，而且因为字符变了，在一些系统里可能显得更特别。如果你想要文字既有故障效果，又有种陌生语言的错觉，就可以打开它。
-  </p>
-
-  <!-- 复制和注意事项 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">复制粘贴，随时使用</h2>
-  <p class="mb-4 text-gray-700">
-    生成后直接点“复制故障文本”，文字就会存到你的剪贴板。然后你可以去改游戏昵称、发朋友圈、写签名，想贴哪就贴哪。不过要提醒一下：因为故障文本使用了Unicode的特殊组合符号，有些老旧的应用或网站可能显示不正常（比如符号乱掉），但绝大多数现代软件——微信、QQ、微博、抖音、游戏平台——都能完美显示。如果不确定，可以先发给自己测试一下。
-  </p>
-
-  <!-- 故障文本的创意用法 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">还能怎么玩？几个创意点子</h2>
-  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">恐怖故事标题：</span>用高强度故障写“半夜别开门”，效果瞬间阴森。</li>
-    <li><span class="font-medium">游戏战队名：</span>比如“混沌军团”变成故障版，气势拉满。</li>
-    <li><span class="font-medium">隐藏彩蛋：</span>在文章里插入一小段故障文字，让细心读者发现惊喜。</li>
-    <li><span class="font-medium">表情包配字：</span>配合崩溃的表情，用故障文字配“我疯了”，十分应景。</li>
-  </ul>
-  <p class="mb-4 text-gray-700">
-    只要你有创意，故障文本就能帮你把情绪放大。
-  </p>
-
-  <!-- 常见问题 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">你可能想问的</h2>
-  <div class="space-y-4">
-    <div>
-      <p class="font-medium text-gray-900">Q：生成后的文字能商用吗？</p>
-      <p class="text-gray-700">A：可以，它只是字符的组合，不涉及版权。不过如果你要用在商标上，建议先确认字符显示稳定。</p>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">大小写转换的常见应用场景</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+      <h3 class="font-medium text-gray-800 mb-2">📝 文档格式化</h3>
+      <p class="text-sm text-gray-600">统一标题、段落的大小写风格，让文档更专业规范。</p>
     </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：为什么我复制到某些地方显示不全？</p>
-      <p class="text-gray-700">A：有些老旧的输入框或数据库不支持Unicode组合字符，会过滤掉附加符号。换到新一点的平台就好了。</p>
+    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+      <h3 class="font-medium text-gray-800 mb-2">💻 编程开发</h3>
+      <p class="text-sm text-gray-600">快速转换变量名、常量名（如camelCase、CONSTANT_CASE）。</p>
     </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：我能控制加在字母上面还是下面吗？</p>
-      <p class="text-gray-700">A：目前这个工具是随机添加上下组合符号，你也可以多生成几次，直到满意为止。因为随机，每次效果都不一样。</p>
+    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+      <h3 class="font-medium text-gray-800 mb-2">📊 数据整理</h3>
+      <p class="text-sm text-gray-600">统一Excel或数据库中的文本字段格式。</p>
+    </div>
+    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+      <h3 class="font-medium text-gray-800 mb-2">✍️ 内容创作</h3>
+      <p class="text-sm text-gray-600">调整文章标题、社交媒体文案的大小写风格。</p>
     </div>
   </div>
 
-  <!-- 结尾 -->
-  <p class="mt-8 text-gray-700 border-t pt-6 text-center text-sm text-gray-500">
-    故障文本就像文字的化妆术，简单一弄就能让普通句子拥有性格。下次想要在网络上脱颖而出，不妨来试试这个Zalgo故障文本生成器，让你的文字“发疯”起来吧！
-  </p>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">支持的转换格式</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-4 border-2 border-gray-200 rounded-lg">
+      <div class="flex justify-between items-center mb-2">
+        <h3 class="font-medium text-gray-800">大写 (UPPERCASE)</h3>
+        <span class="text-xs bg-gray-200 px-2 py-1 rounded">全大写</span>
+      </div>
+      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+        <span class="text-gray-500">输入：</span>Hello World<br>
+        <span class="text-gray-500">输出：</span>HELLO WORLD
+      </div>
+      <p class="text-sm text-gray-600 mt-2">适用于强调、标题、缩写或需要突出显示的场景。</p>
+    </div>
+    
+    <div class="p-4 border-2 border-gray-200 rounded-lg">
+      <div class="flex justify-between items-center mb-2">
+        <h3 class="font-medium text-gray-800">小写 (lowercase)</h3>
+        <span class="text-xs bg-gray-200 px-2 py-1 rounded">全小写</span>
+      </div>
+      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+        <span class="text-gray-500">输入：</span>Hello World<br>
+        <span class="text-gray-500">输出：</span>hello world
+      </div>
+      <p class="text-sm text-gray-600 mt-2">适用于URL、文件名、某些编程场景或统一格式。</p>
+    </div>
+    
+    <div class="p-4 border-2 border-gray-200 rounded-lg">
+      <div class="flex justify-between items-center mb-2">
+        <h3 class="font-medium text-gray-800">首字母大写 (Title Case)</h3>
+        <span class="text-xs bg-gray-200 px-2 py-1 rounded">标题格式</span>
+      </div>
+      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+        <span class="text-gray-500">输入：</span>hello world<br>
+        <span class="text-gray-500">输出：</span>Hello World
+      </div>
+      <p class="text-sm text-gray-600 mt-2">适用于文章标题、人名、地名、产品名等。</p>
+    </div>
+    
+    <div class="p-4 border-2 border-gray-200 rounded-lg">
+      <div class="flex justify-between items-center mb-2">
+        <h3 class="font-medium text-gray-800">句首大写 (Sentence case)</h3>
+        <span class="text-xs bg-gray-200 px-2 py-1 rounded">句子格式</span>
+      </div>
+      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+        <span class="text-gray-500">输入：</span>HELLO WORLD. THIS IS A TEST.<br>
+        <span class="text-gray-500">输出：</span>Hello world. This is a test.
+      </div>
+      <p class="text-sm text-gray-600 mt-2">适用于正文段落、普通句子。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">开发者常用：命名风格转换</h2>
+  
+  <p>对于程序员来说，大小写转换是日常工作中最高频的操作之一。不同编程语言和场景有不同的命名规范：</p>
+  
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-gray-300 text-sm">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left">命名风格</th>
+          <th class="border border-gray-300 p-3 text-left">示例</th>
+          <th class="border border-gray-300 p-3 text-left">使用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">camelCase</td>
+          <td class="border border-gray-300 p-3 font-mono">userName, getData</td>
+          <td class="border border-gray-300 p-3">JavaScript变量、函数</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">PascalCase</td>
+          <td class="border border-gray-300 p-3 font-mono">UserName, GetData</td>
+          <td class="border border-gray-300 p-3">类名、组件名</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">snake_case</td>
+          <td class="border border-gray-300 p-3 font-mono">user_name, get_data</td>
+          <td class="border border-gray-300 p-3">Python、数据库字段</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-medium">CONSTANT_CASE</td>
+          <td class="border border-gray-300 p-3 font-mono">MAX_SIZE, API_KEY</td>
+          <td class="border border-gray-300 p-3">常量、配置项</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-medium">kebab-case</td>
+          <td class="border border-gray-300 p-3 font-mono">user-name, get-data</td>
+          <td class="border border-gray-300 p-3">CSS类名、URL</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">实际使用案例</h2>
+  
+  <div class="space-y-6 my-6">
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">案例一：统一数据格式</h3>
+      <p>数据分析师小王从多个来源收集了一批用户数据，发现姓名字段格式混乱：有的全大写（"ZHANG SAN"），有的全小写（"zhang san"），有的不规范（"zHANG sAN"）。使用大小写转换工具，一键将所有姓名统一为"首字母大写"格式，数据瞬间变得整洁规范。</p>
+    </div>
+    
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">案例二：代码重构</h3>
+      <p>开发者小李接手了一个老项目，发现代码中的常量命名不统一，有的是小写，有的是混合大小写。他使用大小写转换工具，快速将所有常量名统一为全大写的CONSTANT_CASE格式，代码规范性和可读性大大提升。</p>
+    </div>
+    
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
+      <h3 class="font-medium text-lg text-gray-800 mb-2">案例三：文档排版</h3>
+      <p>编辑小张正在整理一份报告，发现标题格式不统一。他使用大小写转换工具，将所有一级标题转换为全大写，二级标题转换为标题格式（Title Case），文档的专业感立即提升。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧</h2>
+  
+  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
+    <h3 class="font-medium text-yellow-800 mb-3">💡 提高效率的小技巧：</h3>
+    <ul class="space-y-2 text-yellow-700">
+      <li>• <strong>批量处理</strong>：将多行文本一次性粘贴，统一转换格式</li>
+      <li>• <strong>快捷键</strong>：熟悉工具的快捷键，操作更快</li>
+      <li>• <strong>复制即用</strong>：转换后直接复制，无需手动选择</li>
+      <li>• <strong>撤销功能</strong>：转换前保留原文，方便对比</li>
+      <li>• <strong>特殊字符</strong>：注意某些特殊字符在转换时的处理</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：转换会改变非英文字符吗？</p>
+      <p class="text-gray-600">答：不会。大小写转换只影响英文字母（A-Z, a-z），中文字符、数字、符号等保持不变。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：可以转换整篇文章吗？</p>
+      <p class="text-gray-600">答：可以。工具通常支持大段文本输入，但建议分段处理，以便更好地控制格式。</p>
+    </div>
+    
+    <div class="border border-gray-200 rounded-lg p-4">
+      <p class="font-medium mb-2">问：转换后的文本可以撤销吗？</p>
+      <p class="text-gray-600">答：建议在转换前复制保留原文。虽然可以再次转换，但多次转换可能无法完全恢复原样（如全大写转小写再转大写，原小写部分信息丢失）。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让文本处理更高效</h2>
+  <p>大小写转换看似简单，却是文本处理中最基础、最高频的操作之一。一个好用的工具，能让你从繁琐的手动修改中解放出来，专注于更有价值的工作。</p>
+  
+  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
+    <p class="font-medium text-green-900 mb-2">✅ 记住这些要点：</p>
+    <ul class="text-green-800 space-y-1">
+      <li>• 根据使用场景选择合适的转换格式</li>
+      <li>• 转换前保留原文备份</li>
+      <li>• 大段文本建议分段处理</li>
+      <li>• 注意特殊字符和空格的保留</li>
+      <li>• 将工具加入书签，随时可用</li>
+    </ul>
+  </div>
+  
+  <p class="mt-6 text-center text-gray-600">小工具，大效率。从今天开始，让大小写转换成为你文本处理的标准步骤。</p>
 </div>
-`;export{t as default};
+`;export{r as default};

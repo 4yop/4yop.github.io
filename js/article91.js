@@ -1,70 +1,114 @@
-const s=`
-<div class="text-gray-800 font-sans leading-relaxed">
-  <article class="max-w-4xl mx-auto p-4 md:p-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">节日头像制作工具使用指南</h1>
+const l=`
+<div class="max-w-4xl mx-auto p-4 md:p-8 font-sans text-gray-800 bg-white">
+  <article>
+    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 leading-tight">
+      如何轻松预测你的生理周期？一篇写给所有女性的健康指南
+    </h1>
 
-    <div class="my-6 p-4 bg-red-50 rounded-lg border border-red-100">
-      <p class="text-red-800">
-        节日到了，想给微信、QQ或社交平台的头像换个节日气氛？这个工具帮你一键搞定——上传头像，选个节日边框，几秒钟就能得到一张带节日装饰的新头像。
+    <div class="text-sm text-gray-500 mb-6 border-b pb-4">
+      <p>了解自己的身体节奏，是关爱自己的第一步。</p>
+    </div>
+
+    <div class="mb-8">
+      <p class="mb-4 leading-relaxed">
+        每个月，我们的身体都在经历一次精密的循环。很多女性朋友都有过这样的经历：突然到来的月经打乱了周末计划，或者备孕时总是不确定哪天才是“好时机”。其实，掌握自己生理周期的规律，并不需要高深的医学知识，它更像是一本身体交给你的日记，而学会“阅读”它，就能让生活更加从容。
+      </p>
+      <p class="leading-relaxed">
+        今天，我们就来聊聊如何利用简单的推算方法，提前了解身体的“日程表”，更好地管理自己的健康与生活。
       </p>
     </div>
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">支持哪些节日？</h2>
-    <p class="mb-4">
-      工具内置了多个主流节日的边框模板，每个节日都有多款不同风格的设计：
-    </p>
-    <ul class="mb-6 pl-5 space-y-2">
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>国庆节：</strong>红金配色为主，包含"中国加油""我❤️祖国""欢度国庆"等爱国主题文字边框</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>圣诞节：</strong>红绿白经典圣诞配色，包含圣诞树、雪花、礼物盒等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>元旦/新年：</strong>喜庆红金配色，包含倒计时、烟花、新年祝福文字</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>春节：</strong>中国红+金色，包含灯笼、春联、福字、"新年快乐"等传统元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>情人节：</strong>粉红爱心主题，包含爱心、玫瑰、"情人节快乐"等元素</span></li>
-      <li class="flex items-start"><span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span><span><strong>中秋：</strong>暖黄色调，包含月亮、玉兔、桂花、团圆祝福</span></li>
-    </ul>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">怎么用？三步搞定</h2>
-    <ol class="list-decimal pl-5 space-y-4 mb-6">
-      <li class="pl-2">
-        <strong>第一步：上传头像</strong>
-        <p class="text-gray-600 mt-1">支持三种方式：<br/>• 直接把图片<strong>拖拽</strong>到上传区域<br/>• 从剪贴板<strong>粘贴</strong>截图（Ctrl+V / Command+V）<br/>• 点击"<strong>选择图片</strong>"按钮从电脑选取<br/>推荐使用正方形头像图片，效果最佳。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第二步：选择边框</strong>
-        <p class="text-gray-600 mt-1">顶部切换节日分类，下方展示该节日的所有边框模板。点击任意边框即可实时预览合成效果。可以左右滑动浏览更多模板。</p>
-      </li>
-      <li class="pl-2">
-        <strong>第三步：下载保存</strong>
-        <p class="text-gray-600 mt-1">预览满意后，点击"下载头像"按钮，高清PNG图片会自动保存到本地。直接拿去当微信/QQ头像就行。</p>
-      </li>
-    </ol>
-
-    <div class="my-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-100">
-      <h3 class="text-xl font-bold mb-3 text-red-700">几个实用小技巧</h3>
-      <ul class="space-y-2 text-sm text-gray-700">
-        <li><strong>最佳头像尺寸：</strong>建议上传 300×300 像素以上的正方形图片，合成后效果最清晰。</li>
-        <li><strong>边框位置：</strong>边框通常叠加在头像的底部或角落区域，不会遮挡面部主体部分。</li>
-        <li><strong>隐私安全：</strong>所有图片处理都在你的浏览器里完成，图片不会上传到任何服务器。</li>
-        <li><strong>手机也能用：</strong>完全响应式设计，手机浏览器打开一样流畅操作。</li>
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        一、认识你的生理周期：不仅仅是“那几天”
+      </h2>
+      <p class="mb-3 leading-relaxed">
+        一个完整的生理周期，是从这次月经来潮的第一天，到下次月经来潮的前一天为止。它不仅仅是流血的那几天，整个周期大致可以分为三个阶段：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700 leading-relaxed">
+        <li><span class="font-medium text-red-600">月经期</span>：子宫内膜脱落出血的时期，也就是我们常说的“来例假”。</li>
+        <li><span class="font-medium text-blue-600">排卵期</span>：卵巢排出卵子的前后一段时间，这是受孕可能性最高的阶段。</li>
+        <li><span class="font-medium text-gray-600">安全期</span>：除开月经期和排卵期以外的日子，受孕概率相对较低。</li>
       </ul>
-    </div>
-
-    <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">适用场景</h2>
-    <div class="flex flex-wrap gap-3 my-6">
-      <span class="px-4 py-2 bg-red-50 rounded-full text-sm text-red-700">微信头像</span>
-      <span class="px-4 py-2 bg-blue-50 rounded-full text-sm text-blue-700">QQ头像</span>
-      <span class="px-4 py-2 bg-pink-50 rounded-full text-sm text-pink-700">微博头像</span>
-      <span class="px-4 py-2 bg-purple-50 rounded-full text-sm text-purple-700">抖音头像</span>
-      <span class="px-4 py-2 bg-green-50 rounded-full text-sm text-green-700">小红书头像</span>
-      <span class="px-4 py-2 bg-orange-50 rounded-full text-sm text-orange-700">游戏头像</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-sm">论坛/社区</span>
-    </div>
-
-    <div class="mt-12 pt-8 border-t text-center">
-      <p class="text-lg font-semibold mb-2">让头像也过节吧 🎉</p>
-      <p class="text-gray-600">
-        每到节日，换一个应景的头像，既表达了心情，又给朋友们带来一点小惊喜。简单几步，让你的头像焕然一新。
+      <p class="text-sm text-gray-600 bg-gray-50 p-4 rounded leading-relaxed">
+        请注意：每个人的周期长度和特征都不同，“安全期”并非绝对安全。任何周期推算方法都不能保证100%精准，<span class="font-medium">绝不能将其作为唯一的避孕依据</span>。
       </p>
-    </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        二、推算的核心：找到身体的“节拍器”
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        周期推算的核心逻辑并不复杂。简单来说，主要依据两个你最容易观察到的信息：
+      </p>
+
+      <div class="bg-gray-50 p-5 rounded-lg mb-4">
+        <h3 class="font-medium mb-2 text-gray-900">1. 你的周期有多长？</h3>
+        <p class="mb-3 text-gray-700 leading-relaxed">
+          这指的是两次月经第一天之间的间隔天数。28天是一个常见的平均值，但完全正常的情况可能在21天到35天之间浮动。记录连续几个周期的长度，就能算出你自己的平均周期。
+        </p>
+
+        <h3 class="font-medium mb-2 text-gray-900 mt-4">2. 排卵日怎么找？</h3>
+        <p class="text-gray-700 leading-relaxed">
+          一个经典且简单的估算方法是：<span class="font-medium">你的排卵日通常发生在下次月经来潮前的第14天左右</span>。例如，如果你的周期是30天，预计下次月经第一天是30号，那么排卵日大概就在16号。
+        </p>
+      </div>
+
+      <p class="leading-relaxed">
+        基于这个“前14天”的规律，排卵期通常被定义为排卵日的前5天和后4天，这大约10天的时间里，身体处于易孕期。知道了这些，你就能大概画出自己每个月身体变化的“地图”。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        三、预测工具能帮你做什么？
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        理解了基本原理后，现代工具可以帮助我们把这些计算可视化，让预测变得一目了然。一个友好的预测工具通常能做到以下几点：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li><span class="font-medium">未来月经日预测</span>：根据你输入的最近一次月经日期和平均周期长度，推算出未来几个月大姨妈可能的“到访日”。</li>
+        <li><span class="font-medium">排卵期与排卵日标记</span>：在日历上清晰地标出易孕的排卵期和核心的排卵日，方便备孕或避孕的女性朋友参考。</li>
+        <li><span class="font-medium">完整的周期视图</span>：在一个日历视图里，用不同颜色区分月经期、排卵期和安全期，让你对自己整个月的身体阶段有全局把握。</li>
+      </ul>
+      <p class="leading-relaxed">
+        你只需要告诉它几个关键信息：最近一次月经是哪天开始的、每次月经通常持续几天、你的周期平均是多少天。它就能像一位贴心的助手，帮你把未来的“身体日历”排列出来。
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        四、重要提醒：推算结果是“参考”，不是“医嘱”
+      </h2>
+      <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+        <p class="font-medium text-red-700 mb-2">请务必记住这一点：</p>
+        <p class="text-red-700 leading-relaxed mb-2">
+          任何基于日历的推算方法，其准确性都依赖于规律且稳定的月经周期。而现实是，压力、情绪波动、作息改变、饮食运动甚至一场感冒，都可能导致排卵提前或延后，从而打乱整个周期。
+        </p>
+        <p class="text-red-700 leading-relaxed">
+          因此，<span class="font-bold">这类工具的预测结果仅供个人健康管理参考</span>，绝不能替代必要的避孕措施，也无法用于诊断任何妇科疾病。如果你的周期长期紊乱，或需要严谨的备孕、避孕指导，请务必咨询专业的医生。
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-500 pl-3 leading-7">
+        五、从了解到掌控，开启更自在的生活
+      </h2>
+      <p class="mb-4 leading-relaxed">
+        了解自己的生理周期，最终目的是为了更好地倾听身体的声音，与它和谐相处。当你能够预判身体的变化时，你可以：
+      </p>
+      <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+        <li>为重要的日子（如旅行、考试、约会）提前做好规划。</li>
+        <li>在经期前准备好护理用品，避免尴尬。</li>
+        <li>在情绪可能容易波动的时段，给自己更多的宽容和休息。</li>
+        <li>为备孕计划提供一个基础的参考时间框架。</li>
+      </ul>
+      <p class="leading-relaxed text-gray-900 font-medium">
+        身体是我们最亲密的伙伴。花一点时间了解它的节律，是送给自己一份贴心又实用的关怀。希望每位女性都能更从容、更科学地管理自己的周期健康，拥抱更自在的生活。
+      </p>
+    </section>
   </article>
 </div>
-`;export{s as default};
+`;export{l as default};

@@ -1,1 +1,103 @@
-const s='<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 bg-white"><h1 class="text-3xl font-bold text-gray-900 mb-6">舒尔特方格：每天5分钟，悄悄提升你的注意力和反应速度</h1><p class="text-lg leading-relaxed mb-6">你是不是经常觉得很难集中注意力？工作一会儿就想看手机，看书没几页就走神，甚至和别人说话时也会突然脑子放空？别担心，这很常见。但好消息是，注意力是可以像肌肉一样锻炼的。今天给你介绍一个风靡全球的大脑训练小工具——<strong class="font-semibold text-gray-900">舒尔特方格</strong>，它简单、有趣，每天几分钟，就能有效提升专注力、反应速度和视觉搜索能力。</p><div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8"><p class="text-blue-800 font-medium">什么是舒尔特方格？</p><p class="text-blue-700 mt-1">它就是一个由数字随机排列的方格网，比如常见的3x3、4x5或5x5。你需要做的，就是按照从小到大的顺序，快速准确地依次点击这些数字。听起来简单？试试就知道，它真的很考验专注力。</p></div><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格怎么玩？</h2><p class="mb-4">玩法非常简单：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li>屏幕上会出现一张布满数字的方格，数字从1开始一直到总数（比如9、16、25）。</li><li>你只需要用手指或鼠标，按顺序点击1、2、3……直到最后一个数字。</li><li>点击第一个数字时，计时开始；点完最后一个数字，计时停止，你就得到这一次的完成时间。</li><li>如果不小心点错了，按错的格子会快速闪一下红色，提醒你点错了，但计时不会停止，你需要继续找正确的数字。</li></ul><p class="mb-6">整个过程就像在玩一个“找数字”的游戏，时间越短，说明你的注意力和反应越快。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">不同难度，适合不同水平的你</h2><p class="mb-4">舒尔特方格通常有三种常见的尺寸：</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6"><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">3 x 3</p><p class="text-gray-600">总共9个数字，适合刚开始接触的新手、小朋友，或者想快速热身的你。简单易上手，能帮你建立信心。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">4 x 4</p><p class="text-gray-600">16个数字，最常见的训练难度。大多数人会在这个级别停留较长时间，用来稳步提升注意力。</p></div><div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200"><p class="text-xl font-bold text-gray-800 mb-2">5 x 5</p><p class="text-gray-600">25个数字，属于挑战级别。需要眼睛快速扫视全盘，对注意力和反应速度要求很高，适合经常练习的老手。</p></div></div><p class="mb-6">你可以根据自己的状态随时切换难度。比如一开始用3x3找找感觉，再逐步挑战更大的方格。完成时间会记录下你的最佳成绩，看着自己不断进步，会很有成就感。</p><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">舒尔特方格究竟有什么好处？</h2><p class="mb-4">它可不仅仅是个小游戏，很多飞行员、运动员都用它来训练专注力。普通人练习，也能收获很多：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">提升注意力：</span>强迫你全神贯注在数字上，长时间练习，你会发现走神的次数变少了。</li><li><span class="font-medium text-gray-900">扩大视野范围：</span>为了快速找到下一个数字，你不得不学会用余光扫视，这能锻炼你的视觉广度，甚至有助于提高阅读速度。</li><li><span class="font-medium text-gray-900">增强反应速度：</span>从看到数字到点击，这个过程反复训练，你的大脑和手会配合得越来越快。</li><li><span class="font-medium text-gray-900">老少皆宜：</span>孩子玩可以改善学习走神，成年人玩能提高工作效率，老年人玩有助于延缓大脑衰老，预防认知功能下降。</li></ul><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">怎样才能玩得更好？几个小技巧</h2><p class="mb-4">刚开始玩，可能十几秒甚至二十几秒才能完成一个方格，别灰心，每个人都是这么过来的。试试这几个方法：</p><ol class="list-decimal pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">不要默念数字：</span>很多人习惯心里念着“1、2、3……”，这会拖慢速度。试着用眼睛直接看，用余光去找下一个数字。</li><li><span class="font-medium text-gray-900">保持身体放松：</span>别绷得太紧，肩膀放松，眼睛离屏幕适当距离，用指尖快速点击。</li><li><span class="font-medium text-gray-900">每天坚持几分钟：</span>注意力训练就像健身，贵在坚持。每天花5分钟玩几轮，比一周猛练一小时效果更好。</li><li><span class="font-medium text-gray-900">从简单难度开始：</span>先练好3x3，再慢慢升级，避免一开始就挑战高难度，产生挫败感。</li></ol><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">你可能关心的问题</h2><div class="space-y-4 mb-6"><div><p class="font-medium text-gray-900">为什么我总是点错？</p><p class="text-gray-700">点错通常是因为注意力被干扰，或者太着急了。试着先稳住心态，看清数字再点。随着练习增多，错误率自然会下降。</p></div><div><p class="font-medium text-gray-900">怎样才算好的成绩？</p><p class="text-gray-700">一般来说，3x3方格在4-6秒内完成算不错，4x4在20秒以内，5x5在40秒以内。但不用太和别人比，和自己的昨天比有进步就是好事。</p></div><div><p class="font-medium text-gray-900">需要每天都练吗？</p><p class="text-gray-700">如果希望有明显提升，建议每天练习。但偶尔中断也没关系，关键是保持兴趣，别把它当成任务。</p></div></div><p class="text-lg border-t border-gray-200 pt-6 mt-8">舒尔特方格就像一个装在手机里的“大脑健身房”，简单直接，却又非常有效。现在就打开它，从3x3开始，测测你的专注力水平吧。每天几分钟，悄悄变专注，你会发现自己工作学习都更得心应手了。</p></div>';export{s as default};
+const s=`
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Emoji重力碰撞：点击屏幕释放你的解压小精灵</h1>
+
+  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-blue-600">
+    <p class="text-lg mb-2">工作压力太大？心情有点郁闷？</p>
+    <p class="mb-2">有时候你只是想找个简单的东西发泄一下，不需要复杂的操作，不需要动脑子思考策略。</p>
+    <p class="font-medium">这个Emoji重力碰撞小游戏就是为你准备的——点一下，看着可爱的表情符号在屏幕上蹦蹦跳跳，烦恼好像也跟着弹飞了。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">这是什么游戏？</h2>
+    <p class="mb-4">这是一个基于物理引擎的趣味互动小游戏。玩法极其简单：</p>
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>用鼠标（或手指）点击屏幕任意位置</li>
+      <li>该位置会瞬间"炸"出5到15个随机Emoji表情</li>
+      <li>这些Emoji会像真实物体一样受到重力影响往下掉</li>
+      <li>碰到屏幕边缘会反弹，碰到地面会弹起再落下</li>
+      <li>每个Emoji还会边下落边旋转，直到慢慢停下来</li>
+    </ul>
+    <p>整个过程就像往地上撒了一把会跳舞的糖果，既治愈又解压。</p>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">为什么这个游戏这么好玩？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">1. 真实物理效果</h3>
+        <p>游戏模拟了真实的重力加速度、弹性碰撞、摩擦力减速等物理效果。Emoji不是简单地下落，而是像有质量的小球一样自然运动，看起来非常舒服。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">2. 30种随机Emoji</h3>
+        <p>每次点击都会从30种不同的Emoji中随机选择，包括笑脸、动物、手势等。你永远不知道下一个蹦出来的是小猫还是鬼脸，充满惊喜感。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">3. 零门槛上手</h3>
+        <p>不需要学习规则，不需要看教程，打开页面就能玩。老人小孩都能轻松上手，是真正的"全民友好型"小游戏。</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-blue-700">4. 完美解压神器</h3>
+        <p>疯狂点击屏幕，看着满屏的Emoji四处乱飞，这种简单的重复动作能有效释放压力。很多人表示光是看着它们落地就很满足。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">适合什么场景？</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景一：工作间隙的快速放松</h3>
+        <p>写代码写到头大？做PPT做到眼花？花30秒点点屏幕，让Emoji帮你把烦躁的情绪"弹"走，回来继续干效率更高。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景二：等待时的消遣利器</h3>
+        <p>等电梯、等外卖、等视频加载……这些碎片时间与其发呆，不如来一场Emoji雨。手机电脑都支持，随时随地都能玩。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">场景三：给小朋友的数字玩具</h3>
+        <p>孩子吵着要玩手机？打开这个页面让他们尽情点击吧。色彩丰富的Emoji、有趣的物理效果，既能吸引注意力又完全无害。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">技术实现原理</h2>
+    <ul class="space-y-4 list-disc pl-5">
+      <li><span class="font-medium">Canvas渲染：</span>使用HTML5 Canvas进行高性能图形绘制，确保大量Emoji同时运动时依然流畅不卡顿。</li>
+      <li><span class="font-medium">物理引擎：</span>内置重力系统(GRAVITY=0.2)、摩擦系数(FRICTION=0.95)、反弹衰减(BOUNCE_REDUCTION=0.8)，模拟真实世界的物理行为。</li>
+      <li><span class="font-medium">边界碰撞检测：</span>实时检测Emoji与屏幕四边的碰撞，计算反弹后的速度和位置，防止穿透。</li>
+      <li><span class="font-medium">旋转动画：</span>每个Emoji粒子拥有独立的旋转角度和角速度，在下落过程中持续自转，视觉效果更生动。</li>
+      <li><span class="font-medium">响应式适配：</span>自动监听窗口大小变化，Canvas尺寸实时调整，PC端和移动端都有良好体验。</li>
+    </ul>
+  </div>
+
+  <div class="text-center p-8 border-t border-b border-gray-300">
+    <p class="text-2xl font-semibold mb-4">快乐其实很简单</p>
+    <p class="mb-6 text-gray-700">在这个越来越复杂的世界里，我们常常忘记了最纯粹的快乐是什么样子。一个笑脸、一次弹跳、一串随机的惊喜，就足以让人会心一笑。</p>
+    <p class="text-lg font-medium">现在就去试试吧！点击屏幕的任意位置，让你的Emoji小精灵们开始它们的表演。</p>
+  </div>
+
+  <div class="mt-10 pt-8 border-t border-gray-300">
+    <h3 class="text-xl font-semibold mb-4">常见问题</h3>
+    <div class="space-y-6">
+      <div>
+        <p class="font-medium mb-1">问：这个游戏需要下载安装吗？</p>
+        <p class="text-gray-700">答：完全不需要！这是纯网页版游戏，用浏览器直接打开就能玩，不占用任何存储空间。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：手机上能玩吗？</p>
+        <p class="text-gray-700">答：当然可以！支持触屏点击，用手指点哪里Emoji就从哪里出来，体验和电脑端一样好。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：为什么有些Emoji最后会停在底部不动？</p>
+        <p class="text-gray-700">答：这是正常的物理现象。当Emoji的速度降到足够低时，系统会让它停止运动，模拟现实中物体最终静止的效果。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：一次点击会产生多少个Emoji？</p>
+        <p class="text-gray-700">答：每次点击会随机生成5到15个Emoji，数量也是随机的，所以每次点击的效果都不太一样。</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;export{s as default};

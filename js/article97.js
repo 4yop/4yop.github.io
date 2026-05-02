@@ -1,50 +1,65 @@
-const s=`
-<div class="text-gray-800 max-w-4xl mx-auto px-4 py-8 sm:px-6">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6">还在为配色发愁？试试这个好用的图片颜色分析工具</h1>
-  <p class="text-lg text-gray-600 mb-8">无论是设计海报、制作PPT，还是想让你的社交媒体图片更吸引人，选对颜色往往是关键一步。今天，我们来聊聊一个能帮你快速“抓住”图片核心色彩的小帮手。</p>
+const t=`<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">在线猫咪图片生成器：一键定制属于你的喵星人照片</h1>
+  
+  <p class="mb-4">
+    喜欢猫咪的朋友，一定在网上收藏过各种可爱的猫咪图片。但有时候，我们想要的不是一张普通的猫咪照，而是一张带点特别效果的——比如黑白复古风、模糊意境图，甚至一张会动的猫咪GIF。如果还能自己调整图片大小，那就更好了。现在，有一个简单的小工具就能满足这些需求，而且完全免费，打开网页就能用。
+  </p>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium">想象一下这些场景，你是不是也遇到过？</p>
-    <ul class="list-disc pl-5 mt-2 space-y-1">
-      <li>看到一张风景照，特别想用里面的天空蓝作为自己设计的背景色，却不知道这个颜色的具体数值。</li>
-      <li>为公司活动做海报，想从Logo里提取标准色，手动取色总觉得不准确。</li>
-      <li>整理了一堆灵感图片，想要快速总结出它们的色彩风格，感觉无从下手。</li>
-    </ul>
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">这个工具能做什么？</h2>
+  <p class="mb-4">
+    它是一个在线的猫咪图片生成器，不需要你注册或安装任何软件。你只需要选择想要的样式，点击一下按钮，就能得到一张独一无二的猫咪图片。无论是做头像、表情包，还是单纯想换个新鲜的壁纸，它都能快速帮你搞定。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">主要功能一览</h2>
+  
+  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">1. 静态图还是动图？</h3>
+  <p class="mb-3">
+    你可以选择生成普通的静态猫咪照片，也可以生成GIF动画猫咪。动图会让猫咪更生动，比如眨眼、摇尾巴，特别适合用来活跃聊天气氛。
+  </p>
+
+  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">2. 图片尺寸随便挑</h3>
+  <p class="mb-3">
+    工具提供了几种常用尺寸：小尺寸、中等尺寸、大尺寸、正方形。如果你想做头像，正方形就很合适；想要壁纸，可以选择大尺寸。如果预设尺寸都不满意，你还可以手动输入宽度和高度，定制完全符合你需要的尺寸。
+  </p>
+
+  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">3. 多种滤镜效果，让猫咪更有味道</h3>
+  <p class="mb-3">
+    滤镜是让照片出彩的利器。这个工具内置了模糊、黑白、反色等效果。黑白滤镜能让猫咪看起来复古文艺；模糊效果可以营造朦胧感；反色则会带来一种怪诞的视觉冲击。如果你喜欢自己调色，还可以使用“自定义滤镜”，分别调整亮度、明度、饱和度、色相，甚至单独调整红绿蓝三个颜色通道，打造完全属于你的色调。
+  </p>
+
+  <h3 class="text-xl font-medium text-gray-800 mt-5 mb-2">4. 点击图片放大预览</h3>
+  <p class="mb-3">
+    生成的图片会直接显示在页面上。如果你想看得更清楚，只需点击图片，它就会在黑色半透明背景中放大展示。再点击一下空白处或黑色区域，就能关闭预览，非常方便。
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">怎么用？三步搞定</h2>
+  <p class="mb-2">1. 在左侧面板选择你想要的参数：API类型（静态或动图）、图片尺寸、滤镜效果等。</p>
+  <p class="mb-2">2. 点击“获取喵星人图片”按钮。</p>
+  <p class="mb-4">3. 稍等片刻，一张新鲜出炉的猫咪图片就会出现在右侧。不满意可以继续调整参数再生成。</p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">常见问题</h2>
+  
+  <div class="mb-4">
+    <p class="font-medium text-gray-800">问：生成图片需要付费吗？</p>
+    <p>答：完全免费，没有任何隐藏收费。</p>
+  </div>
+  
+  <div class="mb-4">
+    <p class="font-medium text-gray-800">问：生成的图片可以下载吗？</p>
+    <p>答：当然可以。在图片上右键选择“图片另存为”就能保存到电脑，手机端长按图片也可以保存。</p>
+  </div>
+  
+  <div class="mb-4">
+    <p class="font-medium text-gray-800">问：为什么我选了GIF，生成的图片还是静态的？</p>
+    <p>答：GIF动画只对部分猫咪素材有效，如果某个猫咪本身就是静态的，那么生成的就是静态图。你可以多试几次，总会遇到动起来的猫咪。</p>
+  </div>
+  
+  <div class="mb-4">
+    <p class="font-medium text-gray-800">问：自定义滤镜里的参数怎么填？</p>
+    <p>答：亮度、明度、饱和度一般填0到100的数字，色相填0到360，RGB三个颜色通道也填0到255的数字。你可以先填一些数值试试效果，慢慢调整到满意为止。</p>
   </div>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">它是什么？一个聪明的“色彩翻译官”</h2>
-  <p class="mb-4">你可以把它理解为一个专注颜色的“图片分析师”。它的工作很简单：你给它一张或多张图片，它就能快速帮你找出图片里“最主要”的颜色和“整体平均”颜色。</p>
-  <p class="mb-6"><span class="font-medium">主色</span>就像图片的“主角”，是画面中最突出、占比最多的色调。<span class="font-medium">平均色</span>则像是把所有颜色搅拌混合后得到的总和色调，能代表图片的整体氛围。工具会把这些颜色用<span class="bg-gray-100 px-2 py-1 rounded">RGB</span>和<span class="bg-gray-100 px-2 py-1 rounded">色值码</span>两种方式清晰展示给你，方便你直接使用。</p>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">对你有什么用？三个看得见的好处</h2>
-  <div class="space-y-6">
-    <div>
-      <h3 class="text-xl font-medium mb-2">1. 省时省力，告别手动取色烦恼</h3>
-      <p>再也不用瞪大眼睛在软件里一点点找颜色了。无论图片多么复杂，一键上传，几秒钟内就能获得准确的颜色代码。你可以直接复制使用，大大提高工作效率。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium mb-2">2. 激发灵感，找到专业配色方案</h3>
-      <p>好看的电影截图、优秀的设计作品、迷人的自然风光……所有让你心动的图片都可以成为你的色彩灵感库。分析它们的颜色，你就能理解为什么它们看起来那么和谐，并把这份和谐用到你自己的创作中。</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium mb-2">3. 批量处理，轻松管理多个方案</h3>
-      <p>如果你收集了很多参考图，可以一次性上传多张图片进行批量分析。所有结果以表格形式清晰罗列，方便你对比和筛选。你还可以将最终的分析结果导出成表格文件，方便保存和分享给同事或朋友。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">生活中可以怎么用？举两个小例子</h2>
-  <div class="bg-gray-50 p-6 rounded-lg mb-6">
-    <h3 class="text-xl font-medium mb-2">例子一：制作统一风格的团队PPT</h3>
-    <p>你需要为公司新项目制作一系列PPT。为了让所有材料看起来是一个整体，你可以将公司的Logo图片上传分析，得到标准的品牌色。之后所有幻灯片的标题、图表、边框都使用这个颜色，整套材料的专业感和统一感瞬间就提升了。</p>
-  </div>
-  <div class="bg-gray-50 p-6 rounded-lg mb-8">
-    <h3 class="text-xl font-medium mb-2">例子二：让社交媒体分享更出彩</h3>
-    <p>你想分享一张自己做的美食照片。除了滤镜，还可以用这个工具分析一下照片的主色调（比如烤面包的金黄色）。然后，在编辑文案时，选择这个金黄色作为点缀色，或者用它来制作一张简单的背景图作为文字衬托，你的帖子在信息流里会显得格外精致、有设计感。</p>
-  </div>
-
-  <div class="border-t pt-8 mt-8">
-    <p class="mb-4">很多时候，好的色彩感觉并非天生，而是借助合适的工具和方法培养出来的。希望这个关于颜色分析工具的介绍，能为你打开一扇新窗户，让你在处理图片配色时多一个轻松又高效的选择。</p>
-    <p class="font-medium">下次当你再被“用什么颜色好”这个问题困扰时，不妨试着让工具先帮你看看图片自己是怎么“说”的。</p>
-  </div>
-</div>
-`;export{s as default};
+  <p class="mt-8 text-center text-gray-600">
+    如果你是一个爱猫人士，或者正需要一张特别的猫咪图片，不妨试试这个在线生成器。不用下载APP，不用注册账号，打开网页就能玩。希望你能在这里找到你喜欢的喵星人瞬间！
+  </p>
+</div>`;export{t as default};

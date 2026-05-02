@@ -1,82 +1,101 @@
-const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6">给PDF文件加水印，原来这么简单</h1>
+const t=`
+<div class="mx-auto max-w-4xl px-4 pb-8 text-gray-700">
+  <article class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-8">
+      <h2 class="mb-4 text-2xl font-semibold text-gray-900">PDF加密工具使用指南</h2>
+      <p class="mb-4 text-gray-600 leading-relaxed">
+        PDF加密工具用于为单个PDF文件添加打开密码和所有者密码，全部处理都在浏览器本地完成，适合对合同、发票、方案、报告和共享资料进行下载前保护。
+      </p>
+    </section>
 
-  <p class="mb-6 text-lg">你是不是也遇到过这样的烦恼？辛苦做好的PDF文件发给别人，总担心被随意转发或盗用。这时，如果能给文件加上一个专属的“印记”，比如“内部资料”或者自己的Logo，心里就踏实多了。这个“印记”，就是我们常说的“水印”。</p>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">核心功能</h3>
+      <ul class="list-disc space-y-2 pl-6 text-gray-600">
+        <li>支持上传单个PDF文件并本地执行加密</li>
+        <li>支持设置用户密码，用于控制文件打开访问</li>
+        <li>支持设置所有者密码，留空时自动与用户密码保持一致</li>
+        <li>默认使用AES-256加密后导出新的PDF文件</li>
+        <li>支持一键下载加密结果，不上传原始文件和密码</li>
+      </ul>
+    </section>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
-    <p class="font-semibold mb-1">一句话了解水印：</p>
-    <p>水印就像是盖在文件上的一个透明印章，既能表明文件归属和性质，又不会过多遮挡原文内容。</p>
-  </div>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">使用步骤</h3>
+      <ol class="list-decimal space-y-2 pl-6 text-gray-600">
+        <li><strong>选择文件</strong>：在工具区域选择或拖拽一个PDF文件</li>
+        <li><strong>输入用户密码</strong>：填写后接收方打开PDF时需要输入该密码（可选）</li>
+        <li><strong>补充所有者密码</strong>：按需填写，用于移除加密或管理权限限制（可选）</li>
+        <li><strong>配置文档权限</strong>：勾选或取消需要的权限选项</li>
+        <li><strong>开始加密</strong>：点击"开始加密"按钮，等待浏览器本地完成处理</li>
+        <li><strong>下载结果</strong>：切换到结果区域下载新的加密PDF文件</li>
+      </ol>
+    </section>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">PDF水印有什么用？</h2>
-  <p class="mb-4">别小看这个小小的水印，它在很多场合都能派上大用场：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2">
-    <li><span class="font-medium">声明版权：</span>在设计稿、方案书等作品上加上公司名称或Logo，声明所有权。</li>
-    <li><span class="font-medium">区分状态：</span>给合同、标书等文件盖上“草案”、“终版”、“已确认”等字样，避免混淆。</li>
-    <li><span class="font-medium">防泄密提醒：</span>在内部资料上添加“机密”、“严禁外传”等警示语，提醒接收者注意。</li>
-    <li><span class="font-medium">品牌展示：</span>在产品手册、宣传PDF中加入品牌标识，潜移默化地强化品牌印象。</li>
-  </ul>
-
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">两种常见的水印，你选哪种？</h2>
-  <p class="mb-6">一般来说，我们可以选择添加文字水印或图片水印，它们各有特点。</p>
-
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="text-xl font-semibold mb-3 text-center">文字水印</h3>
-      <p class="mb-3">就像用半透明的笔在纸上写字。它简单直接，通常用于添加提示性文字。</p>
-      <div class="text-gray-600 bg-gray-100 p-4 rounded text-center italic">
-        <p>示例效果：</p>
-        <p class="text-2xl mt-2 opacity-50 rotate-12">CONFIDENTIAL</p>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">密码说明</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">密码类型</th>
+              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">用途</th>
+              <th class="border border-gray-200 px-4 py-2 font-semibold text-gray-900">说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">用户密码</td>
+              <td class="border border-gray-200 px-4 py-2">打开PDF</td>
+              <td class="border border-gray-200 px-4 py-2">接收方在查看文件时需要输入</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">所有者密码</td>
+              <td class="border border-gray-200 px-4 py-2">文档管理</td>
+              <td class="border border-gray-200 px-4 py-2">用于文档管理和权限控制，通常由文件提供者保留</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <p class="mt-4 text-sm">你可以自由输入任何文字，比如公司名称、文件状态、警示语等，并调整它的大小、颜色和倾斜角度。</p>
-    </div>
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="text-xl font-semibold mb-3 text-center">图片水印</h3>
-      <p class="mb-3">就像在文件上盖一个透明的图案章。它更形象美观，适合放置Logo或特定图标。</p>
-      <div class="text-gray-600 bg-gray-100 p-4 rounded flex justify-center items-center min-h-[120px]">
-        <p class="text-sm">（这里通常会显示一个公司Logo的预览图）</p>
-      </div>
-      <p class="mt-4 text-sm">你可以上传自己的Logo或任何图片，并控制它在页面上的大小，让品牌展示更加直观。</p>
-    </div>
-  </div>
+      <p class="mt-3 text-sm text-gray-500">如果不单独设置所有者密码，工具会默认复用用户密码。若要启用权限限制，需设置与用户密码不同的所有者密码。</p>
+    </section>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">如何调整出一个“恰到好处”的水印？</h2>
-  <p class="mb-6">水印加得太深，会干扰阅读；加得太浅，又起不到作用。掌握几个小技巧，就能做出效果刚刚好的水印。</p>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">文档权限说明</h3>
+      <ul class="list-disc space-y-2 pl-6 text-gray-600">
+        <li><strong>允许打印</strong>：控制是否允许打印文档内容</li>
+        <li><strong>允许修改内容</strong>：控制是否允许修改文档内容</li>
+        <li><strong>允许复制文本和图片</strong>：控制是否允许从文档复制文本和图片</li>
+        <li><strong>允许批注</strong>：控制是否允许添加批注和注释</li>
+        <li><strong>允许填写表单</strong>：控制是否允许填写表单字段</li>
+        <li><strong>允许辅助功能读取</strong>：控制是否允许辅助功能读取文档内容</li>
+        <li><strong>允许页面组装</strong>：控制是否允许插入、删除或旋转页面</li>
+      </ul>
+      <p class="mt-3 rounded bg-yellow-50 p-3 text-sm text-yellow-800">注意：只有当所有者密码与用户密码不同时，上述权限限制才会写入PDF文件。</p>
+    </section>
 
-  <div class="space-y-6 mb-12">
-    <div>
-      <h4 class="text-xl font-medium mb-2">1. 透明度是关键</h4>
-      <p>这是影响观感最重要的设置。数值调低，水印颜色变淡，更像背景；数值调高，水印更清晰醒目。通常设置在中间值附近，既看得见，又不刺眼。</p>
-    </div>
-    <div>
-      <h4 class="text-xl font-medium mb-2">2. 选个好位置</h4>
-      <p>水印放在哪里好？通常放在页面正中央，或者对角线斜着铺满整个页面，视觉效果和防涂改效果都不错。就像贴邮票，可以贴在信封中间，也可以斜着贴一个角。</p>
-    </div>
-    <div>
-      <h4 class="text-xl font-medium mb-2">3. 试试旋转一下</h4>
-      <p>让水印倾斜一个角度（比如经典的45度角），是常见的做法。这样看起来更专业，也让它不那么死板，同时减少对正文文字的遮挡。</p>
-    </div>
-  </div>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">适用场景</h3>
+      <ul class="list-disc space-y-2 pl-6 text-gray-600">
+        <li>合同、报价单和投标材料发送前加密</li>
+        <li>发票、报销文件和财务资料下载前保护</li>
+        <li>报告、方案、客户资料对外共享前加密</li>
+        <li>内部文档归档或跨部门传输时增加访问门槛</li>
+      </ul>
+    </section>
 
-  <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 mt-12 mb-8">
-    <h3 class="text-2xl font-semibold mb-4">给PDF加水印的步骤，其实很简单</h3>
-    <ol class="list-decimal pl-6 space-y-4">
-      <li><span class="font-medium">准备好你的PDF文件：</span>就像打印前需要准备好文档一样。</li>
-      <li><span class="font-medium">选择水印类型：</span>想加文字就选“文字”，想加Logo就选“图片”。</li>
-      <li><span class="font-medium">设计你的水印：</span>输入文字或上传图片，然后调整它的透明度、位置和角度，直到你满意为止。</li>
-      <li><span class="font-medium">预览与完成：</span>在右侧可以实时看到添加水印后的效果，确认无误后，就可以保存新的文件了。</li>
-    </ol>
-    <p class="mt-6 text-gray-600">整个过程，就像是在给你的电子文件“盖个章”，操作直观，所见即所得。</p>
-  </div>
+    <section class="mb-8">
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">隐私安全</h3>
+      <p class="text-gray-600 leading-relaxed">
+        当前工具在浏览器本地读取文件、执行加密并导出结果，不会主动上传PDF内容和密码到服务器。
+      </p>
+    </section>
 
-  <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-4">几个实用的小建议</h2>
-  <ul class="list-disc pl-6 mb-12 space-y-3">
-    <li><span class="font-medium">明确目的：</span>加水印前先想清楚，是为了提醒保密，还是展示版权？目的不同，水印的文字、大小和深浅都可以调整。</li>
-    <li><span class="font-medium">保持清晰：</span>水印是用来“看”的，不是用来“猜”的。确保它在各种设备上都能被清晰辨认。</li>
-    <li><span class="font-medium">风格统一：</span>如果是给一系列文件加水印，尽量使用相同的位置、字体和透明度，看起来更专业。</li>
-  </ul>
-
-  <p class="mt-12 pt-6 border-t border-gray-300">希望这篇文章能帮你了解PDF水印的作用和方法。下次需要保护或标记你的重要PDF文件时，不妨试试给它加上一个合适的水印吧。</p>
+    <section>
+      <h3 class="mb-3 text-xl font-semibold text-gray-900">加密算法</h3>
+      <p class="text-gray-600 leading-relaxed">
+        本工具默认使用AES-256算法进行PDF加密，这是目前业界公认的安全加密标准之一。
+      </p>
+    </section>
+  </article>
 </div>
-`;export{s as default};
+`;export{t as default};

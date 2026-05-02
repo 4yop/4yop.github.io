@@ -13,9 +13,17 @@ body{background:#300a24;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <svg class="ubu-logo" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#e95420"/><circle cx="16" cy="16" r="12" fill="#fff"/><circle cx="16" cy="16" r="4" fill="#e95420"/><circle cx="9" cy="9" r="3" fill="#77216f"/><circle cx="23" cy="23" r="3" fill="#77216f"/><circle cx="24" cy="9" r="2" fill="#5E2750"/><circle cx="8" cy="23" r="2" fill="#5E2750"/></svg>
-<div class="title">正在安装 Ubuntu — 请勿关闭电源</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">安装进度 (<span id="pct">0</span>%)</div>
-<div class="step" id="step">正在复制文件...</div>
-<script>var n=0,steps=['正在复制文件...','正在检测硬件...','正在配置网络...','正在设置时区...','正在创建用户...','正在安装引导程序...','正在清理...'];var si=0;setInterval(function(){n=n<98?n+Math.floor(Math.random()*1+1):98;document.getElementById('pct').textContent=n;if(n>si*(98/steps.length)+5&&si<steps.length-1){si++;document.getElementById('step').textContent=steps[si]}},650)</script>
+<div class="sub"><span id="subLabel"></span> (<span id="pct">0</span>%)</div>
+<div class="step" id="step"></div>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Installing Ubuntu — Do not turn off the power':'正在安装 Ubuntu — 请勿关闭电源';
+document.getElementById('subLabel').textContent=lang==='en'?'Installation progress':'安装进度';
+document.title=lang==='en'?'Ubuntu Installing':'Ubuntu 安装中';
+var stepsZh=['正在复制文件...','正在检测硬件...','正在配置网络...','正在设置时区...','正在创建用户...','正在安装引导程序...','正在清理...'];
+var stepsEn=['Copying files...','Detecting hardware...','Configuring network...','Setting timezone...','Creating user...','Installing bootloader...','Cleaning up...'];
+var steps=lang==='en'?stepsEn:stepsZh;
+document.getElementById('step').textContent=steps[0];
+var n=0,si=0;setInterval(function(){n=n<98?n+Math.floor(Math.random()*1+1):98;document.getElementById('pct').textContent=n;if(n>si*(98/steps.length)+5&&si<steps.length-1){si++;document.getElementById('step').textContent=steps[si]}},650)</script>
 </body></html>

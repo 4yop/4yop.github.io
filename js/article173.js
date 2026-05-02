@@ -1,157 +1,111 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    一个好用的在线便签工具，能帮你随时随地记录想法
-  </h1>
+const t=`
+<div class="prose prose-lg max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">藏在每个人童年里的石头剪刀布，原来这么有学问</h2>
 
-  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
-    <p>
-      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
-    </p>
+  <p class="text-gray-700 text-lg leading-relaxed mb-8 text-center">
+    一个瞬间就能完成的简单手势，决定了多少孩子王和零食的归属。今天，我们来聊聊这个全世界通用的“公平裁决器”。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-10 rounded-r">
+    <p class="text-gray-800 mb-2"><strong>本文要点：</strong></p>
+    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+      <li>石头剪刀布不仅仅是游戏，它是一种公平的决策工具。</li>
+      <li>了解它的规则和隐含的心理博弈。</li>
+      <li>通过大量模拟，观察游戏背后的概率与统计规律。</li>
+    </ul>
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">猜拳到底是什么？</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    闭上眼睛回想一下，你是不是也记得，小时候用猜拳决定谁先玩、谁吃最后一块糖？石头、剪刀、布，三个简单的手势，构成了一个奇妙的循环：石头能砸坏剪刀，剪刀能剪开布，布又能包住石头。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    它没有复杂的装备要求，不受场地限制，几乎在任何地方、任何两个人之间都能立刻开始。这大概就是它能从街头巷尾的儿童游戏，变成一种世界通用“语言”的原因吧。在很多需要快速、公平二选一的场合，人们依然会下意识地说：“来，猜拳决定！”
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">我们为什么需要它？不只是为了玩</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    你可能觉得这只是一个幼稚的游戏。但仔细想想，它在我们生活中扮演的角色还挺重要。
+  </p>
+  <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-2">
+    <li><strong>化解小矛盾：</strong> 两个人都想先看同一本书，或者谁去关灯？猜拳一下，输赢都服气，避免了无谓的争执。</li>
+    <li><strong>增加互动趣味：</strong> 在聚会或者团队活动中，用猜拳分组或决定顺序，比直接点名有趣多了。</li>
+    <li><strong>快速决策工具：</strong> 当两个选择看起来差不多，纠结浪费时间时，把结果交给一次公平的猜拳，瞬间就能推动事情前进。</li>
+  </ul>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    它本质上是一种建立共识的仪式，用最简单的随机性，给结果披上了“公平”的外衣，让大家都愿意接受。
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">如果有个“猜拳实验室”会怎样？</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    想象一下，你可以随时找电脑猜拳，而且这个电脑伙伴还会像个认真的裁判一样，帮你把所有的胜负都记录下来。这听起来是不是挺有意思？
+  </p>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    在这样的“实验室”里，你可以做两件事：
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">1. 手动对决：体验即时的胜负乐趣</h3>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    就像和朋友玩一样，凭直觉或小心思，从石头、剪刀、布里选一个点下去。电脑会立刻随机出一个手势来应对。胜负结果马上揭晓，伴随着清晰的提示，让你一目了然。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    每次出拳都是一次微小的心理冒险——“对方这次会出什么？我该克他上次出的，还是重复我赢了的？” 虽然对面是电脑，但思考的过程依然充满乐趣。
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">2. 自动对决：观察成千上万次的结果</h3>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    更有意思的是，你可以设置让电脑自己和自己玩，比如让它快速进行几百甚至上千次猜拳。你不需要一次次点击，只需看着数字飞快跳动。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    这个过程就像开启了一个上帝视角。当样本量足够大时，我们就能摆脱单次输赢的偶然性，去看看那些隐藏的规律。这满足了我们对“纯粹概率”的好奇心。
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">胜负之外，数字告诉我们的故事</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    单纯的玩几次，输赢一笑而过。但如果把所有的对战都记录下来，你会发现一个关于你自己的“猜拳数据画像”。
+  </p>
+  <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-3">
+    <li><strong>你的胜率是多少？</strong> 是常胜将军，还是运气平平？一个清晰的百分比数字，比感觉要真实得多。</li>
+    <li><strong>你最爱出什么？</strong> 是觉得“石头”有力量感，还是觉得“布”能包容一切？统计图会直观地告诉你，你的下意识偏好是什么。也许你会发现，自己出“剪刀”的次数远低于其他两种。</li>
+    <li><strong>历史回放：</strong> 最近十次对战，你是怎么赢的，又是怎么输的？看看历史记录，说不定能总结出一点小经验。</li>
+  </ul>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    这些统计不是冰冷的数字，它们是你游戏旅程的足迹。通过它们，你甚至可以进行一些简单的“复盘”，虽然猜拳很大程度上是随机的，但观察自己的模式本身就是一种乐趣。
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">关于猜拳，你可能还想知道这些</h2>
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">出哪个手势胜算更高？</h3>
     <p class="text-gray-700">
-      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
+      在完全随机、公平的理想情况下，三个手势的赢面是一样的，都是三分之一。但现实中，因为人有心理偏好和惯性思维，所以研究显示，初学者出“石头”的概率略高，而男性比女性更倾向于先出“石头”。当然，如果你的对手是电脑随机出，那就纯粹是运气了。
     </p>
   </div>
 
-  <div class="space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何使用这个便签工具？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        使用非常简单，就像用真实的便利贴一样。
-      </p>
-      <ul class="list-disc pl-6 space-y-3 text-gray-700">
-        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
-        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
-        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
-        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
-        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        便签上的小工具能做什么？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        每张便签底部都有一排小按钮，能让你的文字更丰富。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li><b>B</b>：加粗文字</li>
-            <li><i>I</i>：让文字倾斜</li>
-            <li><u>U</u>：给文字加下划线</li>
-            <li><s>ab</s>：给文字划上删除线</li>
-            <li>Points：创建项目符号列表</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
-          <p class="text-gray-700">
-            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何保护我的便签内容？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-            导出备份
-          </h3>
-          <p class="text-gray-700">
-            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
-          </p>
-        </div>
-        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-            导入恢复
-          </h3>
-          <p class="text-gray-700">
-            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
-          </p>
-        </div>
-      </div>
-      <p class="mt-4 text-gray-600 text-sm">
-        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        适合哪些场景使用？
-      </h2>
-      <ul class="grid md:grid-cols-2 gap-4">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-yellow-800 font-medium">1</span>
-          </div>
-          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-pink-800 font-medium">2</span>
-          </div>
-          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-green-800 font-medium">3</span>
-          </div>
-          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-purple-800 font-medium">4</span>
-          </div>
-          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-        几个贴心的小提示
-      </h2>
-      <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
-    <p class="text-gray-600">
-      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
-    </p>
-    <p class="text-gray-500 text-sm mt-2">
-      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">有必胜的技巧吗？</h3>
+    <p class="text-gray-700">
+      严格来说，没有绝对必胜的技巧，因为它包含随机性。但有一些基于心理博弈的小策略，比如：<br>
+      • <strong>观察对手的习惯：</strong> 有人输了喜欢换手势，有人喜欢重复出拳。<br>
+      • <strong>利用“输家换招”心理：</strong> 很多人输了一局后，下一局会下意识地换成能克制对方上一局手势的选项。<br>
+      • <strong>保持不可预测：</strong> 最好的策略可能就是让自己都猜不到下次出什么，避免形成固定模式。
     </p>
   </div>
-</article>
-`;export{s as default};
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-10">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">多轮决胜怎么玩？</h3>
+    <p class="text-gray-700">
+      我们常玩的是“一盘定胜负”。但正式比赛或需要更公平的场景，会采用“三局两胜”甚至“五局三胜”制。这样可以大大降低单次运气的决定性作用，让结果更倾向于实力或策略（虽然在这个游戏里，“实力”很微妙）。在多人游戏中，也常通过循环赛或淘汰赛来决定最终顺序。
+    </p>
+  </div>
+
+  <div class="border-t pt-8 mt-8">
+    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+      看，一个小小的猜拳游戏，背后也有这么多可以琢磨的地方。它连接着我们的童年记忆，也是成年人世界里最简单的公平法则。
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      下次当你需要做一个无关紧要的小决定时，不妨再试试这个古老的方法。或者，找个“猜拳模拟器”，和电脑来上一千局对决，在飞速跳动的数字里，感受一下纯粹的概率之美。这何尝不是一种放松呢？
+    </p>
+  </div>
+</div>
+`;export{t as default};

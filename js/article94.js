@@ -1,225 +1,170 @@
-const t=`
-<article class="article-content">
-  <header class="article-header">
-    <h1 class="article-title">证件照制作工具：在线证件照换背景，3分钟搞定标准证件照</h1>
-    <p class="article-intro">还在为证件照发愁？排队拍照、价格昂贵、效果不满意……现在有了在线证件照制作工具，足不出户就能制作专业级证件照，支持证件照换背景、智能美颜、尺寸调整等功能，省时省力又省钱。</p>
-  </header>
+const t=`<div class="article-container">
+  <h1>条形码生成器 | 在线条码制作工具完整指南</h1>
+  
+  <div class="article-meta">
+    <span class="category">工具使用</span>
+    <span class="date">2024-01-15</span>
+  </div>
 
-  <section class="article-section">
-    <h2 class="section-title">传统证件照制作的三大痛点</h2>
-    <div class="pain-points">
-      <div class="pain-point-item">
-        <h3>时间成本高</h3>
-        <p>去照相馆拍证件照，往返路程加上排队等待，往往需要花费半天时间。对于工作繁忙的上班族和学生来说，这无疑是一种时间浪费。</p>
-      </div>
-      <div class="pain-point-item">
-        <h3>价格不便宜</h3>
-        <p>普通证件照拍摄费用通常在30-80元不等，如果需要精修或加急，价格可能翻倍。而且一旦照片不合格需要重拍，还得重新付费。</p>
-      </div>
-      <div class="pain-point-item">
-        <h3>效果难满意</h3>
-        <p>照相馆的拍摄风格千篇一律，很难根据个人需求调整。拍出来的照片可能表情僵硬、光线不佳，甚至因为背景色不对而无法使用。</p>
-      </div>
-    </div>
-  </section>
+  <h2>引言</h2>
+  <p>在现代商业和日常生活中，<strong>条形码生成器</strong>已经成为不可或缺的工具。无论是超市购物、图书馆借书，还是仓库管理，都离不开条码技术的支持。本文将详细介绍条形码的类型、应用场景，以及如何使用在线<strong>条码制作</strong>工具，帮助你快速掌握这一实用技能。</p>
 
-  <section class="article-section">
-    <h2 class="section-title">在线证件照制作工具的优势</h2>
-    <p>相比传统照相馆，使用在线证件照制作工具有着明显的优势：</p>
-    <ul class="benefit-list">
-      <li><strong>随时随地制作</strong>：只要有手机和电脑，在家、在公司、在咖啡厅都能轻松制作证件照</li>
-      <li><strong>操作简单快捷</strong>：上传照片、选择规格、调整背景，3分钟就能完成</li>
-      <li><strong>成本几乎为零</strong>：免费使用基础功能，付费版也远低于照相馆价格</li>
-      <li><strong>效果可控可调</strong>：支持证件照换背景、智能美颜、亮度调整，不满意可以反复修改</li>
-      <li><strong>多种规格可选</strong>：一寸、二寸、护照、签证等常见规格一键切换</li>
-    </ul>
-  </section>
+  <h2>常见条形码类型</h2>
+  <p>条形码主要分为一维码和二维码两大类。一维码是我们最常见的传统条形码，由平行线条组成，只能存储有限信息；二维码则是升级版本，可以存储更多数据类型。接下来让我们了解几种最常用的一维条码格式：</p>
 
-  <section class="article-section">
-    <h2 class="section-title">常见证件照规格对照表</h2>
-    <p>不同用途的证件照有着不同的尺寸和背景要求。以下是常见证件照规格对照表：</p>
-    <table class="spec-table">
-      <thead>
-        <tr>
-          <th>证件类型</th>
-          <th>尺寸规格</th>
-          <th>背景颜色</th>
-          <th>像素要求</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>一寸证件照</td>
-          <td>25mm x 35mm</td>
-          <td>红/蓝/白</td>
-          <td>295x413px</td>
-        </tr>
-        <tr>
-          <td>二寸证件照</td>
-          <td>35mm x 49mm</td>
-          <td>红/蓝/白</td>
-          <td>413x579px</td>
-        </tr>
-        <tr>
-          <td>小一寸</td>
-          <td>22mm x 32mm</td>
-          <td>红/蓝/白</td>
-          <td>260x378px</td>
-        </tr>
-        <tr>
-          <td>中国护照</td>
-          <td>33mm x 48mm</td>
-          <td>白色/淡蓝</td>
-          <td>390x567px</td>
-        </tr>
-        <tr>
-          <td>美国签证</td>
-          <td>51mm x 51mm</td>
-          <td>白色</td>
-          <td>600x600px</td>
-        </tr>
-        <tr>
-          <td>驾驶证</td>
-          <td>22mm x 32mm</td>
-          <td>白色</td>
-          <td>260x378px</td>
-        </tr>
-        <tr>
-          <td>毕业证/学位证</td>
-          <td>33mm x 48mm</td>
-          <td>蓝色</td>
-          <td>390x567px</td>
-        </tr>
-        <tr>
-          <td>结婚证</td>
-          <td>53mm x 35mm</td>
-          <td>红色</td>
-          <td>626x413px</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <h3>EAN-13商品条码</h3>
+  <p>EAN-13是国际通用的商品条码标准，主要用于零售商品的标识。它由13位数字组成，前几位代表国家或地区代码，后面是厂商代码、商品代码和校验位。在中国，EAN-13条码广泛应用于各类商品包装上，消费者在超市结账时扫描的就是这种条码。</p>
 
-  <section class="article-section">
-    <h2 class="section-title">不同场景的背景色要求</h2>
-    <p>证件照换背景是制作过程中的关键步骤，不同用途对背景颜色有严格要求：</p>
-    
-    <h3>白色背景</h3>
-    <p>白色背景是最通用的选择，适用于：</p>
-    <ul>
-      <li>护照、身份证、驾驶证等官方证件</li>
-      <li>签证申请（大多数国家要求）</li>
-      <li>简历、求职申请</li>
-      <li>考试报名（公务员考试、研究生考试等）</li>
-    </ul>
+  <h3>UPC条码</h3>
+  <p>UPC（Universal Product Code）是北美地区最常用的商品条码标准，采用12位数字格式。与EAN-13类似，UPC条码主要用于标识零售商品，是美国和加拿大市场的主流条码格式。如果你需要在美国电商平台销售商品，UPC条码是必不可少的选择。</p>
 
-    <h3>蓝色背景</h3>
-    <p>蓝色背景常见于教育和职业场景：</p>
-    <ul>
-      <li>毕业证、学位证</li>
-      <li>工作证、胸牌</li>
-      <li>部分职业资格考试</li>
-      <li>企业入职材料</li>
-    </ul>
+  <h3>CODE128高密度码</h3>
+  <p>CODE128是一种支持全ASCII字符的高密度条码，可以编码数字、字母和特殊符号。由于其存储密度高、长度灵活，CODE128广泛应用于物流运输、仓储管理、医疗保健等行业。许多物流公司和电商平台都采用CODE128作为内部管理条码。</p>
 
-    <h3>红色背景</h3>
-    <p>红色背景主要用于特定场合：</p>
-    <ul>
-      <li>结婚证</li>
-      <li>部分国家的身份证</li>
-      <li>某些单位的内部证件</li>
-      <li>保险、医保相关证件</li>
-    </ul>
-  </section>
+  <h3>CODE39条码</h3>
+  <p>CODE39是最早出现的条码格式之一，支持数字、大写字母和少量特殊字符。由于其结构简单、兼容性好，CODE39在工业自动化、军队、政府机构等领域仍有广泛应用。这种条码特别适合需要长期保存和快速识别的场景。</p>
 
-  <section class="article-section">
-    <h2 class="section-title">证件照拍摄与制作技巧</h2>
-    
-    <h3>拍摄前的准备</h3>
-    <ul class="tips-list">
-      <li><strong>服装选择</strong>：穿着深色有领衣服，避免与背景色相近的颜色</li>
-      <li><strong>妆容建议</strong>：保持自然妆容，避免浓妆艳抹；男生保持面部整洁</li>
-      <li><strong>发型整理</strong>：露出眉毛和耳朵，长发建议扎起或别在耳后</li>
-      <li><strong>表情管理</strong>：保持自然微笑或中性表情，双眼平视镜头</li>
-    </ul>
+  <h2>一维码与二维码的区别</h2>
+  <p>很多人会混淆一维码和二维码的概念，虽然它们都属于自动识别技术，但在功能和用途上有明显区别：</p>
+  <ul>
+    <li><strong>数据容量</strong>：一维条码只能存储20-30位数字或字符，而二维码可以存储数千个字符</li>
+    <li><strong>信息类型</strong>：一维码只能存储数字或简单字母，二维码可以存储文字、网址、图片等多种信息</li>
+    <li><strong>扫描方式</strong>：一维码需要水平扫描，二维码支持360度任意方向扫描</li>
+    <li><strong>尺寸要求</strong>：一维码通常较长，二维码相对紧凑</li>
+    <li><strong>应用场景</strong>：一维码适合大批量标准化管理，二维码适合需要承载更多信息的场景</li>
+  </ul>
 
-    <h3>拍摄环境要求</h3>
-    <ul class="tips-list">
-      <li><strong>光线充足</strong>：选择自然光或柔和的室内灯光，避免阴影</li>
-      <li><strong>背景简洁</strong>：纯色墙面最佳，避免杂乱背景增加后期难度</li>
-      <li><strong>距离适中</strong>：距离镜头约1-1.5米，确保面部清晰</li>
-      <li><strong>设备稳定</strong>：使用三脚架或固定手机，避免照片模糊</li>
-    </ul>
+  <h2>条形码的应用场景</h2>
+  <p>条形码技术的应用已经渗透到各行各业，下面我们来看看几个最常见的应用领域：</p>
 
-    <h3>使用在线工具制作步骤</h3>
-    <ol class="steps-list">
-      <li><strong>上传照片</strong>：选择一张清晰的正面照上传至证件照制作工具</li>
-      <li><strong>选择规格</strong>：根据用途选择对应的证件照尺寸</li>
-      <li><strong>证件照换背景</strong>：使用智能抠图功能更换背景颜色（白/蓝/红）</li>
-      <li><strong>调整优化</strong>：微调亮度、对比度，开启美颜功能（可选）</li>
-      <li><strong>预览保存</strong>：确认效果后下载高清电子版，可排版打印</li>
-    </ol>
-  </section>
+  <h3>零售商品管理</h3>
+  <p>在商场、超市和便利店，EAN-13条码是商品的标准身份证。收银员通过扫描条码快速识别商品名称、价格和库存信息，大大提高了结账效率。同时，商家也可以通过条码系统实时监控库存，及时补货或调整营销策略。</p>
 
-  <section class="article-section">
-    <h2 class="section-title">为什么选择我们的证件照制作工具？</h2>
-    <p>我们的在线证件照制作工具采用先进的AI技术，为用户提供专业级的证件照制作体验：</p>
-    <div class="feature-grid">
-      <div class="feature-item">
-        <h4>智能抠图</h4>
-        <p>AI自动识别人像边缘，证件照换背景精准自然，发丝级抠图效果</p>
-      </div>
-      <div class="feature-item">
-        <h4>丰富规格</h4>
-        <p>内置100+种证件照规格，覆盖国内外各类证件需求</p>
-      </div>
-      <div class="feature-item">
-        <h4>一键美颜</h4>
-        <p>自然美颜不夸张，祛痘、美白、瘦脸，让证件照更精神</p>
-      </div>
-      <div class="feature-item">
-        <h4>排版打印</h4>
-        <p>自动生成6寸/5寸排版，直接送印或自行打印都方便</p>
-      </div>
-    </div>
-  </section>
+  <h3>图书管理系统</h3>
+  <p>图书馆采用ISBN条码管理图书，每本书都有唯一的条码标识。借书时，工作人员扫描读者证和图书条码即可完成借阅手续；还书时同样扫描条码确认归还。图书管理系统大大简化了借还流程，提高了图书馆的管理效率。</p>
 
-  <section class="article-section faq-section">
-    <h2 class="section-title">常见问题解答（FAQ）</h2>
-    
-    <div class="faq-item">
-      <h3 class="faq-question">Q1: 在线制作的证件照会被官方认可吗？</h3>
-      <p class="faq-answer">只要符合官方要求的尺寸、背景颜色和清晰度，在线制作的证件照完全可以使用。我们的工具严格按照国家标准设计，生成的照片符合各类证件办理要求。</p>
-    </div>
+  <h3>固定资产管理</h3>
+  <p>企业办公设备、工厂机器、医用设备等固定资产都需要进行有效管理。通过为每件资产粘贴唯一的条码标签，可以实现资产的快速盘点、追踪和定位。这种方式比传统的手工登记更加高效准确。</p>
 
-    <div class="faq-item">
-      <h3 class="faq-question">Q2: 证件照换背景后边缘会有锯齿吗？</h3>
-      <p class="faq-answer">我们的工具采用AI智能抠图技术，能够精准识别人像边缘，即使是头发丝等细节也能处理得自然流畅，不会出现明显的锯齿或白边。</p>
-    </div>
+  <h3>物流与供应链</h3>
+  <p>快递公司和物流企业使用CODE128或QR码追踪包裹运输状态。从收件到派送，每个环节都会扫描条码记录信息，客户可以通过单号查询物流进度。条形码技术的应用让物流行业实现了信息化和自动化。</p>
 
-    <div class="faq-item">
-      <h3 class="faq-question">Q3: 可以用手机自拍的照片制作证件照吗？</h3>
-      <p class="faq-answer">可以，但建议使用后置摄像头拍摄，确保照片清晰。拍摄时注意光线充足、背景简洁、正面平视镜头，这样制作出来的证件照效果更好。</p>
-    </div>
+  <h2>如何使用条形码生成器</h2>
+  <p>使用在线条形码生成器非常简单，只需几个步骤即可制作出高质量的条码：</p>
+  <ol>
+    <li><strong>选择条码类型</strong>：根据用途选择合适的条码格式，商品用EAN/UPC，物流用CODE128，工业用CODE39</li>
+    <li><strong>输入数据内容</strong>：在生成器中输入需要编码的数字或字符，注意遵守各类条码的编码规则</li>
+    <li><strong>自定义样式</strong>：可以调整条码的高度、宽度、颜色、显示文字等参数</li>
+    <li><strong>导出使用</strong>：生成后可以下载为PNG、SVG等格式的图片，直接打印或嵌入系统使用</li>
+  </ol>
 
-    <div class="faq-item">
-      <h3 class="faq-question">Q4: 制作好的证件照如何打印？</h3>
-      <p class="faq-answer">我们提供一键排版功能，可以将证件照自动排版到6寸或5寸相纸上。您可以选择在线冲印服务，也可以下载电子版后到附近的照相馆或打印店打印。</p>
-    </div>
+  <h2>条形码生成注意事项</h2>
+  <p>在制作和使用条形码时，需要注意以下几点：</p>
+  <ul>
+    <li><strong>选择正确的条码类型</strong>：不同行业有不同的标准，不要混用</li>
+    <li><strong>确保数据准确性</strong>：输入的数字必须正确，校验位会自动计算</li>
+    <li><strong>注意条码尺寸</strong>：打印时要保证足够的尺寸以确保扫描效果</li>
+    <li><strong>保持条码清晰</strong>：避免条码模糊、残缺或污损</li>
+    <li><strong>预留空白区域</strong>：条码周围需要保留足够的静区以便扫描设备识别</li>
+  </ul>
 
-    <div class="faq-item">
-      <h3 class="faq-question">Q5: 证件照制作需要付费吗？</h3>
-      <p class="faq-answer">基础功能完全免费，包括证件照换背景、尺寸调整、简单美颜等。高级功能如高清下载、批量处理等可选择付费升级，价格远低于传统照相馆。</p>
-    </div>
-  </section>
+  <h2>FAQ常见问题</h2>
 
-  <section class="article-section conclusion">
-    <h2 class="section-title">结语</h2>
-    <p>证件照制作不再是麻烦事。借助专业的在线证件照制作工具，您可以轻松完成证件照换背景、尺寸调整、美颜优化等操作，在家就能制作出符合标准的专业证件照。</p>
-    <p>无论是办理护照、签证申请，还是求职应聘、考试报名，一张得体的证件照都能给人留下良好的第一印象。现在就来体验我们的证件照制作工具，3分钟制作您的专属证件照！</p>
-    <div class="cta-box">
-      <p class="cta-text">立即使用证件照制作工具，免费制作您的专业证件照！</p>
-    </div>
-  </section>
-</article>
-`;export{t as default};
+  <h3>1. 条形码是如何被扫描识别的？</h3>
+  <p>条码扫描器发出光线照射条码，黑色条纹吸收光线，白色条纹反射光线。扫描器通过检测反射光的变化，将其转换为数字信号，再解码为原始数据。这就是为什么条码需要黑白色对比分明才能正常扫描。</p>
+
+  <h3>2. 条形码可以自己制作吗？</h3>
+  <p>当然可以！使用在线条形码生成器，任何人都可以轻松制作条码。对于商品条码（EAN/UPC），如果要在正规渠道销售，需要从编码中心申请正式的商品代码；内部管理使用的条码则可以自行编制。</p>
+
+  <h3>3. 扫描不出条码怎么办？</h3>
+  <p>首先检查条码是否清晰完整，确保有足够的对比度和空白区。其次检查扫描器是否正常工作，距离和角度是否合适。如果使用手机扫描，确保光线充足且对准条码中心。</p>
+
+  <h3>4. 条形码和二维码哪个更好？</h3>
+  <p>没有绝对的好坏，关键看具体需求。一维码成本低、技术成熟，适合大批量标准化管理；二维码存储量大、功能丰富，适合需要承载更多信息的场景。很多企业会根据实际需求选择使用其中一种或两种配合使用。</p>
+
+  <h3>5. 打印条码需要注意什么？</h3>
+  <p>打印时要使用高分辨率输出，确保条码线条清晰锐利。建议使用专业标签打印机或铜版纸，普通打印纸效果可能不佳。同时要注意条码尺寸不能过小，一般建议宽度不小于30mm，高度不小于10mm。</p>
+
+  <h2>结语</h2>
+  <p>条形码技术作为自动识别的基础工具，在现代社会中发挥着越来越重要的作用。通过本文的介绍，相信你已经对各种条码类型和应用场景有了全面了解。无论你是商家需要管理商品，还是个人需要制作条码，掌握<strong>条形码生成器</strong>的使用方法都将带来极大的便利。现在就尝试使用在线<strong>条码制作</strong>工具，为你的工作和生活提效吧！</p>
+</div>
+
+<style>
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.article-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.article-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3498db;
+}
+
+.article-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.article-container p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.article-container ul,
+.article-container ol {
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.article-container li {
+  margin-bottom: 8px;
+}
+
+.article-meta {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.category {
+  background: #3498db;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.article-container strong {
+  color: #e74c3c;
+}
+
+.article-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.article-container a:hover {
+  text-decoration: underline;
+}
+</style>`;export{t as default};

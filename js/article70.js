@@ -1,1 +1,91 @@
-const t='<div class="max-w-3xl mx-auto px-4 py-8 text-gray-700 bg-white"><h1 class="text-3xl font-bold text-gray-900 mb-6">色盲色弱在线免费测试：20道石原氏检测图，快速了解你的色觉健康状况</h1><p class="text-lg leading-relaxed mb-6">你是否曾经怀疑过自己的色觉是否正常？看到别人能轻松分辨的颜色，自己却总是分不清？或者在体检时被告知可能存在色盲或色弱？别担心，今天我们为你介绍一个专业可靠的<strong class="font-semibold text-gray-900">色盲色弱在线测试工具</strong>，只需5分钟，通过20道标准化石原氏色盲检测图，就能初步了解你的色觉健康状况。</p><div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-8"><p class="text-orange-800 font-medium">什么是石原氏色盲检测图？</p><p class="text-orange-700 mt-1">石原氏色盲检测图（Ishihara Test Plates）由日本眼科医生石原忍于1917年发明，是全球最广泛使用的色觉检查工具。它由一系列圆形色点图案组成，每个图案中隐藏着数字、动物或几何形状。正常人可以清晰识别出这些图形，而色盲或色弱患者则无法辨认或看到不同的内容。</p></div><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">色盲测试怎么做？</h2><p class="mb-4">测试过程非常简单，只需要3个步骤：</p><ol class="list-decimal pl-6 space-y-3 mb-6"><li><span class="font-medium text-gray-900">观察检测图：</span>系统会逐张展示标准化的石原氏色盲检测图。每张图片由不同颜色和大小的圆点组成，其中隐藏着特定的数字或形状。请在光线充足的环境下仔细观察。</li><li><span class="font-medium text-gray-900">选择答案：</span>观察完每张检测图后，从四个选项中选择你看到的内容（如具体数字、动物名称等）。如果你完全看不清图中隐藏的内容，请选择「看不清」选项。</li><li><span class="font-medium text-gray-900">查看报告：</span>完成全部20道测试题目后，系统将自动分析你的答案，生成详细的色觉健康评估报告，包括得分、等级评定和健康建议。</li></ol><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">测试结果如何解读？</h2><p class="mb-4">系统根据20道测试题的正确率进行<strong class="font-semibold text-gray-900">6级精细化评估</strong>：</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><div class="bg-green-50 p-4 rounded-xl border border-green-200"><p class="text-lg font-bold text-green-800 mb-1">18-20分：色觉正常</p><p class="text-green-700 text-sm">能够准确识别各种色彩差异，红绿色觉和蓝黄色觉均在正常范围内。</p></div><div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200"><p class="text-lg font-bold text-emerald-800 mb-1">15-17分：基本正常</p><p class="text-emerald-700 text-sm">大部分色彩识别准确，个别题目存在轻微偏差，整体状况良好。</p></div><div class="bg-yellow-50 p-4 rounded-xl border border-yellow-200"><p class="text-lg font-bold text-yellow-800 mb-1">12-14分：轻微色弱</p><p class="text-yellow-700 text-sm">对某些相近颜色的区分能力略低于常人，日常生活影响较小。</p></div><div class="bg-orange-50 p-4 rounded-xl border border-orange-200"><p class="text-lg font-bold text-orange-800 mb-1">9-11分：轻度异常</p><p class="text-orange-700 text-sm">显示轻度色觉异常，可能存在红绿色弱或蓝黄色弱倾向。</p></div><div class="bg-red-50 p-4 rounded-xl border border-red-200"><p class="text-lg font-bold text-red-800 mb-1">6-8分：中度异常</p><p class="text-red-700 text-sm">多个检测图无法正确识别，可能存在较明显的色觉缺陷。</p></div><div class="bg-red-100 p-4 rounded-xl border border-red-300"><p class="text-lg font-bold text-red-900 mb-1">0-5分：需专业检查</p><p class="text-red-800 text-sm">提示可能存在明显的色觉障碍，建议尽快前往医疗机构检查。</p></div></div><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">什么是色盲和色弱？</h2><p class="mb-4">色觉异常主要分为以下几种类型：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">红色盲（Protanopia）：</span>无法分辨红色，红色看起来像深灰色或黑色。是最常见的色盲类型之一。</li><li><span class="font-medium text-gray-900">绿色盲（Deuteranopia）：</span>无法分辨绿色，绿色和红色、棕色容易混淆。是男性最常见的色盲类型。</li><li><span class="font-medium text-gray-900">蓝黄色盲（Tritanopia）：</span>无法分辨蓝色和黄色，较为罕见。蓝色看起来偏绿，黄色偏粉白。</li><li><span class="font-medium text-gray-900">全色盲（Achromatopsia）：</span>只能看到黑白灰三种颜色，极为罕见。</li><li><span class="font-medium text-gray-900">色弱（Color Weakness）：</span>并非完全不能辨别某种颜色，只是辨别能力比正常人弱，程度有轻有重。</li></ul><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">测试注意事项</h2><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium text-gray-900">环境光线：</span>请在光线充足的室内环境进行测试，避免强光直射或过暗的环境。</li><li><span class="font-medium text-gray-900">显示设备：</span>确保你的显示器或手机屏幕色彩设置正常，色盲检测图对设备色彩还原度有一定要求。</li><li><span class="font-medium text-gray-900">观看距离：</span>保持正常的观看距离（约50-75厘米），不要离屏幕太近或太远。</li><li><span class="font-medium text-gray-900">连续完成：</span>测试需要一次性连续完成，中途退出需要重新开始，建议预留5-10分钟完整时间。</li><li><span class="font-medium text-gray-900">仅供参考：</span>本测试结果仅作为初步筛查参考，不能替代专业医疗诊断。如需确诊请前往正规医院眼科检查。</li></ul><h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">常见问题解答</h2><div class="space-y-4 mb-6"><div><p class="font-medium text-gray-900">色盲能治愈吗？</p><p class="text-gray-700">目前先天性色盲尚无根治方法，但可以通过特殊眼镜（如色盲矫正眼镜）在一定程度上改善辨色能力。后天性色盲则需要针对病因进行治疗。</p></div><div><p class="font-medium text-gray-900">色盲会影响驾驶吗？</p><p class="text-gray-700">在中国，红绿色盲者不能领取机动车驾驶证。这是出于交通安全考虑，因为交通信号灯主要依赖红绿颜色来传递信息。</p></div><div><p class="font-medium text-gray-900">色盲会遗传给下一代吗？</p><p class="text-gray-700">大部分色盲是遗传性的，与X染色体相关。如果父亲是色盲，女儿会是携带者但通常不发病；如果母亲是携带者，儿子有50%概率患色盲。</p></div><div><p class="font-medium text-gray-900">这个测试准确吗？</p><p class="text-gray-700">本测试基于标准的石原氏色盲检测原理设计，具有较高的参考价值。但由于在线测试受显示设备、环境光线等因素影响，结果可能与专业医疗检查存在差异。建议以医院检查结果为准。</p></div></div><p class="text-lg border-t border-gray-200 pt-6 mt-8">了解自己的色觉健康状况是很重要的。无论测试结果如何，都建议定期关注眼睛健康。现在就开始测试吧，只需5分钟，你就能获得一份专业的色觉健康评估报告。</p></div>';export{t as default};
+const s=`
+<div class="text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">你的屏幕还好吗？教你轻松发现显示器隐藏的问题</h1>
+
+  <div class="mb-8">
+    <p class="text-lg mb-4">新买的显示器总觉得色彩有点怪？用了几年的笔记本屏幕，边缘在暗处会泛白？你可能从没想过，一块小小的屏幕，藏着这么多我们平时看不见的秘密。</p>
+    <p class="text-lg">今天，我们就来聊聊如何像专业人士一样，给你的屏幕做个简单又全面的“体检”。完全不用懂技术，几分钟就能搞定。</p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+    <h2 class="text-xl font-semibold mb-2">先问问自己，有没有遇到过这些情况：</h2>
+    <ul class="list-disc pl-5 space-y-2">
+      <li>在全黑的电影画面里，屏幕角落却有一小块怎么也黑不下去，泛着白光。</li>
+      <li>看一张纯色的图片（比如蓝天），屏幕上某个位置总有一个顽固的、不会变色的小点。</li>
+      <li>看文字时觉得有点模糊、发虚，眼睛容易累。</li>
+      <li>屏幕的颜色看起来总是灰蒙蒙的，不够鲜艳生动。</li>
+    </ul>
+    <p class="mt-4">如果有一条说中了，那你的屏幕可能真的需要“检查”一下了。</p>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 border-b pb-2">屏幕“体检”到底查什么？</h2>
+    <p class="mb-6">想象一下，你买了一个新水杯，要检查它有没有裂缝、图案印得是否清晰、材质好不好。检查屏幕也是类似的道理，只不过我们看的是光、颜色和细节。一套简单的屏幕测试，主要帮你发现下面几类问题：</p>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">1. 坏点与亮点（屏幕的“瑕疵”）</h3>
+        <p>这就像白墙上的一个黑点，或者黑布上的一个白点。它永远定在那里，不会随着画面变化而改变。通过显示纯净的红色、绿色、蓝色、白色和黑色，就能把这些“瑕疵”一个一个找出来。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">2. 漏光问题（屏幕的“密封性”）</h3>
+        <p>你可以把它理解为屏幕边框的“密封条”不严实。在显示全黑画面，并且环境光很暗的时候，屏幕边缘可能会透出不均匀的光晕。这会严重影响你看电影或夜间使用的体验。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">3. 清晰度与对焦（屏幕的“视力”）</h3>
+        <p>屏幕显示文字和线条是否清晰锐利，就像检查它的“视力”好不好。如果看起来有重影或模糊，长时间盯着看眼睛会非常疲劳。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">4. 色彩表现力（屏幕的“妆容”）</h3>
+        <p>颜色是否鲜艳、丰富，从深到浅的灰色过渡是否平滑自然，这决定了屏幕显示的画面是否真实、生动。就像一幅画的色彩是否饱满有层次。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 border-b pb-2">自己动手检测，好处比你想象的多</h2>
+    <ul class="space-y-4">
+      <li class="flex items-start">
+        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+        <div>
+          <span class="font-semibold">帮你省钱省事：</span>新买的显示器、手机或电视，收货后花几分钟验一下。如果发现问题，可以及时联系售后退换，避免过了期限才发现，有理说不清。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+        <div>
+          <span class="font-semibold">保护你的眼睛：</span>如果屏幕对焦不准、有闪烁，你自己可能说不清哪里不对，但眼睛会容易干涩、疲劳。发现问题，才能想办法调整或维修。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+        <div>
+          <span class="font-semibold">买得明白，用得放心：</span>无论是选购新设备，还是评估手头旧设备的状态，一次简单的测试能给你最直观的判断依据，不再凭感觉猜。
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-gray-50 p-6 sm:p-8 rounded-xl mb-10">
+    <h2 class="text-2xl font-bold mb-4">动手试试看：一个简单的应用场景</h2>
+    <p class="mb-4">假设你刚收到一台新显示器：</p>
+    <ol class="list-decimal pl-5 space-y-3">
+      <li><span class="font-medium">找个暗点的环境：</span>晚上关掉房间大灯，只留一点背景光最好。</li>
+      <li><span class="font-medium">打开测试工具：</span>找到一个在线的屏幕检测页面（很多网站都提供）。</li>
+      <li><span class="font-medium">重点看两项：</span>
+        <ul class="list-disc pl-5 mt-2">
+          <li>在“纯色测试”时，仔细看红、绿、蓝、白、黑画面下，有没有异常的小点。</li>
+          <li>在“漏光测试”（全黑画面）时，凑近看看屏幕四个边缘，有没有明显发灰、发白的光晕。</li>
+        </ul>
+      </li>
+      <li><span class="font-medium">快速过一遍：</span>再用“对焦测试”看看文字清不清晰，用“色阶测试”看看颜色过渡顺不顺畅。</li>
+    </ol>
+    <p class="mt-6 p-4 bg-white rounded border border-blue-200">整个过程就像给屏幕拍一套“X光片”，不同画面能照出不同的问题。花上5分钟，你就对自己屏幕的健康状况了如指掌了。</p>
+  </div>
+
+  <div class="text-center border-t pt-8">
+    <p class="text-xl mb-4">别再对屏幕的那点“不舒服”视而不见了。</p>
+    <p class="text-gray-600">无论是为了验新货，还是关心自己的日常用眼健康，一次简单的屏幕检测都值得你尝试。现在就去网上搜索“<span class="font-semibold">屏幕检测工具</span>”或“<span class="font-semibold">显示器测试</span>”，找个顺手的工具，给你的屏幕做个全面体检吧！</p>
+  </div>
+</div>
+`;export{s as default};

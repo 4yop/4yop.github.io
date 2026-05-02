@@ -1,157 +1,83 @@
-const t=`
-<div class="article-content">
-  <h1>文本加密与Base64加密：全面解析在线加密解密工具的使用方法</h1>
+const e=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">文字转换工具：简体、繁体、火星文一键互转，沟通从此更轻松</h1>
+  
+  <div class="mb-8">
+    <p class="mb-4 text-base leading-relaxed">你是不是偶尔会遇到这样的情况？看到一篇繁体字文章读起来有点费劲，或者朋友发来的火星文消息完全看不懂。别担心，这并不是什么难题，现在有了文字转换工具，这些烦恼都可以轻松解决。</p>
+    <p class="mb-4 text-base leading-relaxed">这篇文章就来聊聊文字转换的那些事，让你完全不需要懂任何技术，也能自由自在地在不同文字之间切换。</p>
+  </div>
 
-  <p>在数字化时代，信息安全已成为每个人都无法回避的重要话题。无论是个人隐私保护、企业数据传输，还是网络通信安全，<strong>文本加密</strong>技术都扮演着不可或缺的角色。本文将深入解析文本加密的核心概念、常见加密算法（如Base64加密、MD5哈希、SHA加密、AES加密等）的原理与应用，帮助您全面了解如何利用在线加密解密工具保护敏感数据。</p>
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么我们需要转换文字？</h2>
+    <p class="mb-4 text-base leading-relaxed">生活中，我们接触到的文字形式多种多样。比如：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
+      <li><span class="font-medium">阅读古籍或港澳台资讯：</span>很多传统文化资料、电影字幕或新闻网站使用繁体字，转换后阅读更顺畅。</li>
+      <li><span class="font-medium">与不同地区朋友交流：</span>大陆用简体字，台湾、香港等地常用繁体字，互相转换一下，沟通无障碍。</li>
+      <li><span class="font-medium">理解网络流行语：</span>火星文是年轻人喜欢的趣味表达，转换一下就能明白其中的意思。</li>
+      <li><span class="font-medium">学习与研究：</span>对比简体与繁体的差异，或者收集网络用语素材，转换工具非常实用。</li>
+    </ul>
+    <p class="text-base leading-relaxed">总之，文字转换就像一座桥梁，连接不同的书写习惯，让信息传递更简单。</p>
+  </div>
 
-  <h2>什么是文本加密？</h2>
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">一分钟认识三种文字</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">简体字</h3>
+        <p class="text-sm leading-relaxed">这是我们日常最常用的写法，笔画简单，书写快速。中国大陆的标准用字，比如“学习”、“电脑”。</p>
+      </div>
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">繁体字</h3>
+        <p class="text-sm leading-relaxed">保留了更多传统笔画，看起来更复杂一些。在台湾、香港、澳门以及海外华人社区广泛使用，比如“學習”、“電腦”。</p>
+      </div>
+      <div class="p-4 border border-gray-200 rounded-lg">
+        <h3 class="text-lg font-medium mb-2 text-blue-600">火星文</h3>
+        <p class="text-sm leading-relaxed">一种有趣的网络文字，通过符号、谐音或变形来表达，充满个性。比如“伱好”变成“沵恏”，常在社交聊天中出现。</p>
+      </div>
+    </div>
+    <p class="text-base leading-relaxed">这三种文字各有特点，转换工具就能在它们之间自由切换，就像翻译不同方言一样方便。</p>
+  </div>
 
-  <p>文本加密是指通过特定的算法和密钥，将可读的<strong>明文</strong>（plaintext）转换为不可读的<strong>密文</strong>（ciphertext）的过程。只有掌握正确密钥或解密方法的人，才能将密文还原为原始内容。根据算法特性的不同，文本加密技术可以分为以下几大类：</p>
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">文字转换工具能做什么？</h2>
+    <p class="mb-4 text-base leading-relaxed">一个简单的在线工具，通常提供以下转换方式：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
+      <li>简体字转成繁体字</li>
+      <li>繁体字转回简体字</li>
+      <li>简体字变成火星文</li>
+      <li>火星文还原为简体字</li>
+      <li>繁体字与火星文互相转换</li>
+    </ul>
+    <p class="mb-4 text-base leading-relaxed">使用起来非常简单：选择你要的转换方式，把文字粘贴进去，点一下按钮，结果立刻就出来了。你还可以把转换好的文字复制下来，用到任何需要的地方。</p>
+    <p class="text-base leading-relaxed">整个过程完全免费，而且不需要安装任何软件，在手机或电脑上打开网页就能用。</p>
+  </div>
 
-  <ul>
-    <li><strong>编码类</strong>：如Base64，主要用于数据格式转换，不具备真正的安全性</li>
-    <li><strong>哈希类</strong>：如MD5、SHA-1、SHA-256，单向不可逆，常用于数据校验和密码存储</li>
-    <li><strong>对称加密</strong>：如AES、DES，加密和解密使用同一密钥，效率高且安全性强</li>
-    <li><strong>非对称加密</strong>：如RSA，使用公钥和私钥对，安全性极高但计算开销较大</li>
-  </ul>
+  <div class="mb-10">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">转换结果准确吗？</h3>
+        <p class="text-base leading-relaxed">一般来说，基于标准的字库对应关系，转换准确度很高。但对于一些多音字或特殊用法，可能需要稍作核对，就像我们平时查字典一样。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">一次能转换多少文字？</h3>
+        <p class="text-base leading-relaxed">大部分工具都没有严格限制，你可以粘贴整篇文章、长段落进行转换。如果文字量特别大，分几次操作会更顺畅。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">转换后的文字可以用在哪里？</h3>
+        <p class="text-base leading-relaxed">任何需要的地方！比如发社交媒体、写文档、做研究、或者只是好奇看看不同的写法。转换后的文字和普通文字一样，可以随意复制、粘贴、编辑。</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium mb-2 text-gray-700">在手机上能用吗？</h3>
+        <p class="text-base leading-relaxed">当然可以。好的转换工具会自动适应手机屏幕，操作和电脑上一样简单，无论你是在地铁上还是在家里，随时都能用。</p>
+      </div>
+    </div>
+  </div>
 
-  <h2>编码与加密的区别：以Base64为例</h2>
-
-  <p>很多人容易将"编码"和"加密"混淆，尤其是Base64编码常被误认为是一种加密方式。事实上，这两者有着本质的区别：</p>
-
-  <p><strong>编码（Encoding）</strong>是一种数据格式转换方式，目的是让数据在不同系统之间正确传输。Base64编码将二进制数据转换为纯文本格式（由A-Z、a-z、0-9及+和/共64个字符组成），任何人都可以轻松将其解码还原。Base64<strong>不是加密算法</strong>，它不提供任何安全性保障。</p>
-
-  <p><strong>加密（Encryption）</strong>则是通过数学算法和密钥对数据进行保护，目的是防止未经授权的人读取内容。真正的加密算法（如AES）即使算法公开，没有正确的密钥也无法破解。</p>
-
-  <p>简单来说：<strong>编码是给人看的，加密是藏起来不让别人看的。</strong>不过Base64在实际开发中仍然非常重要——它是电子邮件附件（MIME）、URL安全传输、图片内嵌等场景的基础编码方案。</p>
-
-  <h2>常见加密算法详解</h2>
-
-  <h3>1. Base64编码</h3>
-  <p>Base64是最广泛使用的编码方式之一。它将每3个字节（24位）的数据分为4组，每组6位，映射为Base64字符表中的一个字符。由于输出只包含ASCII可打印字符，Base64非常适合在纯文本环境中传输二进制数据。本工具支持Base64编码和解码，方便开发者快速进行数据格式转换。</p>
-
-  <h3>2. MD5哈希</h3>
-  <p>MD5（Message-Digest Algorithm 5）是一种广泛使用的密码散列函数，可以将任意长度的数据映射为固定的128位（32位十六进制）哈希值。MD5是<strong>单向不可逆</strong>的——您无法通过哈希值还原原始数据。虽然MD5已被发现存在碰撞漏洞，不推荐用于安全敏感场景，但它在文件完整性校验、数据去重等领域仍然有实用价值。</p>
-
-  <h3>3. SHA系列哈希</h3>
-  <p>SHA（Secure Hash Algorithm）系列是比MD5更安全的哈希算法。本工具支持SHA-1、SHA-256、SHA-384和SHA-512等多种变体：</p>
-  <ul>
-    <li><strong>SHA-1</strong>：产生160位哈希值，已被发现存在安全漏洞</li>
-    <li><strong>SHA-256</strong>：产生256位哈希值，目前广泛使用的安全标准</li>
-    <li><strong>SHA-512</strong>：产生512位哈希值，安全性更高，适合对安全要求极高的场景</li>
-  </ul>
-  <p>SHA系列同样是单向哈希，常用于数字签名、SSL证书、区块链技术等领域。</p>
-
-  <h3>4. AES对称加密</h3>
-  <p>AES（Advanced Encryption Standard）是目前最流行的对称加密算法，被美国国家标准与技术研究院（NIST）选为标准加密算法。AES支持128位、192位和256位密钥长度，其中AES-256被认为是目前最安全的加密方式之一。AES加密速度快、安全性高，广泛应用于VPN通信、磁盘加密、数据库字段加密等场景。</p>
-
-  <h2>文本加密工具的实际应用场景</h2>
-
-  <h3>场景一：API数据传输加密</h3>
-  <p>在前后端分离的Web开发中，API接口的数据传输安全至关重要。开发者常使用Base64对参数进行编码以兼容URL格式，或使用AES对敏感字段（如手机号、身份证号）进行加密传输，防止数据在传输过程中被窃取。</p>
-
-  <h3>场景二：用户密码安全存储</h3>
-  <p>网站存储用户密码时，绝不能以明文形式保存。业界标准做法是使用SHA-256或更强的哈希算法对密码进行单向哈希，并配合盐值（Salt）存储。这样即使数据库泄露，攻击者也难以还原用户的原始密码。</p>
-
-  <h3>场景三：隐私信息保护</h3>
-  <p>在发送包含敏感信息的邮件、消息或文档时，可以先对关键内容进行加密处理。例如，使用AES加密合同中的重要条款，再将密文发送给对方，只有持有密钥的接收者才能解密查看。</p>
-
-  <h3>场景四：数据完整性校验</h3>
-  <p>通过MD5或SHA哈希值，可以快速验证文件或数据是否在传输过程中被篡改。下载大文件时对比哈希值、数据库同步时校验数据一致性，都是哈希算法的典型应用。</p>
-
-  <h3>场景五：开发调试与测试</h3>
-  <p>开发者在调试接口时，经常需要对数据进行Base64编解码、MD5签名验证等操作。一个便捷的在线加密解密工具能大幅提升开发效率，免去编写临时测试代码的麻烦。</p>
-
-  <h2>加密算法安全性对比</h2>
-
-  <table class="comparison-table">
-    <thead>
-      <tr>
-        <th>算法</th>
-        <th>类型</th>
-        <th>可逆性</th>
-        <th>安全等级</th>
-        <th>主要用途</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Base64</td>
-        <td>编码</td>
-        <td>可逆</td>
-        <td>无安全性</td>
-        <td>数据格式转换</td>
-      </tr>
-      <tr>
-        <td>MD5</td>
-        <td>哈希</td>
-        <td>不可逆</td>
-        <td>低（存在碰撞）</td>
-        <td>数据校验、去重</td>
-      </tr>
-      <tr>
-        <td>SHA-1</td>
-        <td>哈希</td>
-        <td>不可逆</td>
-        <td>中（已不推荐）</td>
-        <td>旧版数字签名</td>
-      </tr>
-      <tr>
-        <td>SHA-256</td>
-        <td>哈希</td>
-        <td>不可逆</td>
-        <td>高</td>
-        <td>密码存储、签名</td>
-      </tr>
-      <tr>
-        <td>SHA-512</td>
-        <td>哈希</td>
-        <td>不可逆</td>
-        <td>很高</td>
-        <td>高安全需求场景</td>
-      </tr>
-      <tr>
-        <td>AES-256</td>
-        <td>对称加密</td>
-        <td>可逆（需密钥）</td>
-        <td>极高</td>
-        <td>数据加密传输与存储</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>使用加密工具的安全建议</h2>
-
-  <ol>
-    <li><strong>根据场景选择合适算法</strong>：如果需要可逆加密，选择AES等对称加密；如果只需验证数据完整性，选择SHA-256等哈希算法；如果仅做数据格式转换，Base64即可。</li>
-    <li><strong>不要用Base64当加密</strong>：Base64只是编码，任何人都可以解码。不要用它来保护敏感信息。</li>
-    <li><strong>避免在客户端处理敏感密钥</strong>：在线加密工具适合开发和测试，但生产环境中密钥管理应放在服务端，避免前端暴露加密密钥。</li>
-    <li><strong>定期更新加密方案</strong>：随着计算能力提升，曾经安全的算法可能变得脆弱。及时关注行业动态，迁移到更安全的算法。</li>
-    <li><strong>使用强密钥</strong>：AES-256配合足够长且随机的密钥才能发挥最大安全效果，避免使用简单密码作为密钥。</li>
-    <li><strong>注意数据残留</strong>：在使用在线工具加密敏感数据后，注意清除浏览器缓存和历史记录，防止信息泄露。</li>
-  </ol>
-
-  <h2>常见问题（FAQ）</h2>
-
-  <h3>Base64和AES加密有什么区别？</h3>
-  <p>Base64是一种编码方式，不是加密算法。它只是将数据转换为另一种ASCII表示形式，任何人都可以轻松解码。AES则是一种真正的加密算法，需要密钥才能解密，提供了实际的数据保护功能。简单来说，Base64相当于换了一种"写法"，而AES相当于把数据"锁"了起来。</p>
-
-  <h3>MD5加密的密码还能被破解吗？</h3>
-  <p>MD5是单向哈希函数，无法直接"解密"。但通过<strong>彩虹表攻击</strong>和<strong>暴力破解</strong>，攻击者可以尝试大量常见密码的MD5值来匹配。因此，存储密码时应使用SHA-256或更强的算法，并配合随机盐值（Salt）来增加破解难度。</p>
-
-  <h3>在线加密工具安全吗？会不会泄露我的数据？</h3>
-  <p>本在线加密工具的所有计算均在浏览器本地完成，数据不会上传到任何服务器。您可以放心使用它来处理敏感信息。但为了最大程度保护隐私，建议在使用后清除浏览器缓存，避免加密后的密文被他人获取。</p>
-
-  <h3>SHA-256和SHA-512应该选哪个？</h3>
-  <p>对于大多数应用场景，SHA-256已经足够安全，且计算效率更高。SHA-512提供更强的安全保证，但计算开销也更大。一般建议：普通业务使用SHA-256，涉及国家安全、金融核心系统等高安全需求场景使用SHA-512。</p>
-
-  <h3>什么情况下需要使用加密，什么情况下使用哈希就够了？</h3>
-  <p>如果您需要在未来某个时刻还原原始数据，就应该使用加密（如AES）。例如加密传输的文件、保护存储的敏感字段。如果您只需要验证数据的完整性和一致性，不需要还原数据，那么哈希（如SHA-256）就足够了。例如验证文件是否被篡改、存储用户密码的哈希值等。</p>
-
-  <h2>结语</h2>
-
-  <p>文本加密技术是信息安全的基石。无论是日常开发中的数据编解码、接口调试，还是生产环境中的密码存储、数据传输保护，选择合适的加密算法都至关重要。通过本在线工具，您可以快速进行Base64编解码、MD5哈希、SHA系列哈希、AES加解密等操作，提升工作效率的同时也能更好地保护数据安全。</p>
-
-  <p>记住一个核心原则：<strong>没有绝对安全的系统，只有不断升级的安全意识。</strong>在实际应用中，始终根据具体的安全需求选择恰当的算法，做好密钥管理，定期审视和更新安全策略，才能在数字化世界中更好地守护您的数据资产。</p>
+  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
+    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
+    <p class="mb-3 text-base leading-relaxed">文字转换工具是一个贴心的小帮手，它让简体字、繁体字和火星文之间的切换变得像开关灯一样简单。无论你是为了学习、工作还是娱乐，它都能帮你省去很多麻烦。</p>
+    <p class="text-base leading-relaxed">下次再遇到看不懂的文字，不妨试试转换一下，也许会有意想不到的发现。沟通的本质是理解，而工具的存在，就是让这份理解更容易达成。</p>
+  </div>
 </div>
-`;export{t as default};
+`;export{e as default};

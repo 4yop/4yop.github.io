@@ -1,98 +1,251 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-700 leading-relaxed">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">想知道你的文章到底写了些什么？一个免费工具全告诉你</h1>
-  <p class="text-lg mb-8 text-gray-600">
-    无论是写工作总结、发一篇长微博，还是准备演讲稿，你是否也曾对着屏幕疑惑：我这篇文章到底写了多少字？读起来费劲吗？有没有哪个词被我翻来覆去地用？今天，就给大家介绍一个能帮你一眼看清文章“底细”的免费在线工具。
-  </p>
+<article class="article-content">
+  <header class="article-header">
+    <h1 class="article-title">正则表达式测试工具 - 在线正则匹配、替换与调试</h1>
+    <p class="article-meta">发布日期：2026-03-28 | 阅读时间：8分钟</p>
+  </header>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
-    <p class="mb-3">简单来说，它就像一个文章的“体检中心”。你只需要把文字内容贴进去，它就能瞬间生成一份详细的“体检报告”，让你对文章了如指掌。</p>
-    <ul class="list-disc pl-5 space-y-1">
-      <li><span class="font-medium">数得清清楚楚</span>：总字数、中文字数、英文单词数、段落、句子，这些基础信息一目了然。</li>
-      <li><span class="font-medium">揪出“高频词”</span>：看看你最爱用哪个词，避免文章里同一个词出现太多次。</li>
-      <li><span class="font-medium">评估阅读难度</span>：它会告诉你这篇文章大概是什么阅读水平，是通俗易懂还是需要仔细琢磨。</li>
-      <li><span class="font-medium">分析成分构成</span>：你的文章里，中文、英文、数字、标点各自占了多少比例？</li>
-      <li><span class="font-medium">预估阅读时间</span>：读者大概需要几分钟能读完你的内容？</li>
+  <section class="article-section intro">
+    <p class="lead">在处理文本数据时，你是否经常遇到需要批量查找、替换或验证特定格式内容的场景？手动处理不仅效率低下，还容易出错。<strong>正则表达式测试工具</strong>正是为解决这类问题而生的利器。本文将带你深入了解正则表达式的核心概念、实际应用场景，以及如何利用我们的在线正则测试工具提升工作效率。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>什么是正则表达式</h2>
+    <p>正则表达式（Regular Expression，简称Regex或Regexp）是一种用于描述字符串匹配模式的强大工具。它由一系列特殊字符和普通字符组成，可以精确地定义搜索、匹配、替换的规则。</p>
+    
+    <div class="highlight-box">
+      <h3>正则表达式的核心优势</h3>
+      <ul>
+        <li><strong>精确匹配</strong>：通过模式定义，精准定位目标文本</li>
+        <li><strong>批量处理</strong>：一次性处理大量数据，无需逐条检查</li>
+        <li><strong>跨语言通用</strong>：几乎所有编程语言都支持正则表达式</li>
+        <li><strong>高效简洁</strong>：用简短的模式表达复杂的匹配逻辑</li>
+      </ul>
+    </div>
+
+    <p>正则表达式的历史可以追溯到20世纪50年代，由数学家Stephen Kleene提出。如今，它已成为程序员、数据分析师、运维工程师等技术人员必备的技能之一。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>正则表达式的应用场景</h2>
+    <p>正则表达式在现代软件开发和数据处理中无处不在。以下是几个最常见的应用场景：</p>
+
+    <h3>1. 表单验证</h3>
+    <p>在Web开发中，用户输入的数据需要经过严格验证。正则表达式可以轻松实现：</p>
+    <ul>
+      <li>邮箱格式验证：确保用户输入的是有效的电子邮件地址</li>
+      <li>手机号验证：检查手机号码是否符合规范</li>
+      <li>密码强度检测：验证密码是否包含大小写字母、数字和特殊字符</li>
+      <li>身份证号验证：校验身份证号码的格式和校验位</li>
     </ul>
-  </div>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">它具体是怎么帮我分析文章的？</h2>
+    <h3>2. 文本处理与清洗</h3>
+    <p>数据分析师经常需要从非结构化文本中提取有价值的信息：</p>
+    <ul>
+      <li>从网页HTML中提取特定标签内容</li>
+      <li>批量替换文档中的敏感词汇</li>
+      <li>格式化日期、时间、货币等数据</li>
+      <li>删除多余的空格、换行符或特殊字符</li>
+    </ul>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 第一步：把文章放进去</h3>
-    <p class="mb-3">你可以直接把文字粘贴到那个大文本框里。如果字太多，也可以上传一个TXT文档，或者点一下“加载示例”，看看分析效果。</p>
-    <p class="text-sm text-gray-500 italic">小提示：你一输入文字，分析结果就会实时更新，非常方便。</p>
-  </div>
+    <h3>3. 日志分析</h3>
+    <p>运维工程师使用正则表达式分析服务器日志：</p>
+    <ul>
+      <li>提取错误日志中的关键信息</li>
+      <li>统计特定IP地址的访问频率</li>
+      <li>分析用户行为模式和访问路径</li>
+      <li>监控异常请求和潜在攻击</li>
+    </ul>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 看基础数据：我的文章有多“大”？</h3>
-    <p class="mb-3">这里会整齐地展示文章的基本规模。比如，你想确认一篇稿子是不是超过了800字，或者想知道英文报告里有多少个单词，看这里就行了。它还会贴心地估算出别人读完大概需要的时间。</p>
-  </div>
+    <h3>4. 代码重构</h3>
+    <p>开发者利用正则表达式进行代码批量修改：</p>
+    <ul>
+      <li>批量重命名变量或函数</li>
+      <li>统一代码格式和命名规范</li>
+      <li>查找未使用的代码片段</li>
+      <li>迁移旧API到新接口</li>
+    </ul>
+  </section>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 看词频分析：我是不是老用同一个词？</h3>
-    <p class="mb-3">这个功能特别适合写作者。它会把你文章里所有词语（中英文都算）的使用次数排个队，用得最多的词排在前面，并用长短不一的彩色条显示出来。</p>
-    <p class="text-sm text-gray-500 italic">比如，如果你发现“非常”、“然后”这样的词条特别长，可能就需要考虑换一些更丰富的表达了。</p>
-  </div>
+  <section class="article-section">
+    <h2>常用正则表达式模式大全</h2>
+    <p>掌握常用正则模式可以大幅提升工作效率。以下是我们精心整理的高频使用模式：</p>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 看字符分布：我的文章“成分”是什么？</h3>
-    <p class="mb-3">你的文章是中文居多，还是夹杂了大量英文？有没有用到很多数据（数字）？通过四个不同颜色的进度条，你能直观地看到文章的文字构成比例。</p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. 看可读性：我的文章好懂吗？</h3>
-    <p class="mb-3">这是很多人关心的。工具会根据句子的平均长度等信息，给你的文章一个“复杂度评级”，比如“简单”、“中等”或“复杂”。同时，它还会给出一个“建议阅读水平”的参考，比如“中学水平”或“大学水平”。</p>
-    <p class="text-sm text-gray-500 italic">如果你在写一篇面向大众的科普文，那么让评级保持在“简单”或“中等”可能更合适。</p>
-  </div>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">我可能会在哪些地方用到它？</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">📝 写作与校对</h4>
-      <p>检查文章长度是否符合要求，优化用词，避免重复，让行文更流畅。</p>
+    <div class="pattern-table">
+      <table>
+        <thead>
+          <tr>
+            <th>用途</th>
+            <th>正则表达式</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>邮箱验证</td>
+            <td><code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$</code></td>
+            <td>匹配标准邮箱格式</td>
+          </tr>
+          <tr>
+            <td>手机号（中国）</td>
+            <td><code>^1[3-9]\\d{9}$</code></td>
+            <td>匹配11位手机号码</td>
+          </tr>
+          <tr>
+            <td>身份证号</td>
+            <td><code>^\\d{15}|\\d{18}$</code></td>
+            <td>匹配15位或18位身份证号</td>
+          </tr>
+          <tr>
+            <td>URL地址</td>
+            <td><code>^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$</code></td>
+            <td>匹配HTTP/HTTPS网址</td>
+          </tr>
+          <tr>
+            <td>IP地址</td>
+            <td><code>^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$</code></td>
+            <td>匹配IPv4地址</td>
+          </tr>
+          <tr>
+            <td>中文字符</td>
+            <td><code>[\\u4e00-\\u9fa5]+</code></td>
+            <td>匹配一个或多个中文字符</td>
+          </tr>
+          <tr>
+            <td>数字提取</td>
+            <td><code>\\d+</code></td>
+            <td>匹配连续的数字</td>
+          </tr>
+          <tr>
+            <td>日期格式（YYYY-MM-DD）</td>
+            <td><code>^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$</code></td>
+            <td>匹配标准日期格式</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">🎓 学习与备考</h4>
-      <p>分析范文结构，评估自己作文的难度，或者准备演讲时控制篇幅和语速。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">💼 工作与汇报</h4>
-      <p>确保工作总结、项目报告内容精炼、重点突出，数据比例清晰。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">🌐 内容创作</h4>
-      <p>为公众号、博客文章把脉，调整可读性以适应目标读者，优化阅读体验。</p>
-    </div>
-  </div>
 
-  <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
-    <h2 class="text-xl font-bold text-gray-800 mb-3">常见问题解答</h2>
-    <div class="space-y-4">
-      <div>
-        <h4 class="font-semibold text-gray-800">问：这个工具要收费吗？需要注册吗？</h4>
-        <p class="text-gray-600">答：完全免费，打开网页就能用，不需要注册或登录。</p>
+    <p>使用我们的<strong>正则表达式测试工具</strong>，你可以实时验证这些模式，并根据实际需求进行调整。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>正则调试技巧与最佳实践</h2>
+    <p>编写正确的正则表达式往往是一个迭代调试的过程。以下是一些实用的调试技巧：</p>
+
+    <h3>1. 从简单开始，逐步复杂</h3>
+    <p>不要试图一次性写出完美的正则表达式。先匹配最简单的形式，然后逐步添加约束条件。例如，验证邮箱可以先从匹配<code>@</code>符号开始，再逐步完善前后缀的校验规则。</p>
+
+    <h3>2. 善用分组和捕获</h3>
+    <p>使用括号<code>()</code>进行分组，不仅可以应用量词，还能捕获匹配内容供后续使用。非捕获组<code>(?:)</code>在不需要捕获时可以提高性能。</p>
+
+    <h3>3. 注意贪婪与懒惰匹配</h3>
+    <p>默认情况下，量词（如<code>*</code>、<code>+</code>）是贪婪的，会尽可能多地匹配字符。在需要最小匹配时，使用懒惰版本（<code>*?</code>、<code>+?</code>）。</p>
+
+    <h3>4. 使用在线工具辅助调试</h3>
+    <p>我们的正则表达式测试工具提供了实时匹配高亮、分组显示、替换预览等功能，是调试复杂正则的得力助手。</p>
+  </section>
+
+  <section class="article-section">
+    <h2>学习正则表达式的建议路径</h2>
+    <p>正则表达式虽然强大，但学习曲线相对陡峭。以下是我们推荐的学习路径：</p>
+
+    <div class="learning-path">
+      <div class="step">
+        <span class="step-number">1</span>
+        <div class="step-content">
+          <h4>掌握基础元字符</h4>
+          <p>学习<code>.</code>、<code>*</code>、<code>+</code>、<code>?</code>、<code>^</code>、<code>$</code>等基本符号的含义和用法。</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：我的文章内容会被上传到服务器吗？安全吗？</h4>
-        <p class="text-gray-600">答：分析过程通常在您的浏览器本地完成，保证了文章内容的私密性。您可以放心使用。</p>
+      <div class="step">
+        <span class="step-number">2</span>
+        <div class="step-content">
+          <h4>理解字符类</h4>
+          <p>掌握<code>[abc]</code>、<code>[^abc]</code>、<code>\\d</code>、<code>\\w</code>、<code>\\s</code>等字符类的使用。</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：分析完的结果能保存下来吗？</h4>
-        <p class="text-gray-600">答：可以的。工具提供了多种导出方式，您可以把详细的“体检报告”保存为TXT或JSON文件，或者直接复制结果。</p>
+      <div class="step">
+        <span class="step-number">3</span>
+        <div class="step-content">
+          <h4>学习分组和引用</h4>
+          <p>理解捕获组、非捕获组、反向引用的概念和应用场景。</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：它支持分析中英文混合的文章吗？</h4>
-        <p class="text-gray-600">答：当然支持。这正是它的一个特色，能够同时精准识别和统计中英文内容。</p>
+      <div class="step">
+        <span class="step-number">4</span>
+        <div class="step-content">
+          <h4>实践常见模式</h4>
+          <p>通过实际项目练习，积累常用正则模式，培养模式识别能力。</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-number">5</span>
+        <div class="step-content">
+          <h4>深入高级特性</h4>
+          <p>学习断言（lookahead/lookbehind）、条件表达式、递归模式等高级特性。</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="text-center mt-12 p-8 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border">
-    <p class="text-xl font-medium text-gray-800 mb-4">想立刻为你的文章做一次全面“体检”吗？</p>
-    <p class="mb-6 text-gray-600">这个<span class="font-medium text-gray-800">文本统计分析器</span>操作简单，功能全面，就像一位默默帮你检查文章的得力助手。无论你是学生、作者还是上班族，它都能帮你更清晰地认识自己的文字作品。</p>
-    <p class="text-lg font-semibold text-blue-600">快去试试吧，只需粘贴文字，一切答案即刻呈现。</p>
-  </div>
-</div>
+  <section class="article-section faq-section">
+    <h2>常见问题解答（FAQ）</h2>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q1: 正则表达式在所有编程语言中都一样吗？</h3>
+      <div class="faq-answer">
+        <p>大部分基础语法是通用的，但不同编程语言或工具可能有一些差异。例如，JavaScript不支持后行断言（lookbehind）直到ES2018，而Python的re模块和regex模块在功能上也有所不同。我们的正则测试工具支持主流的正则语法，可以帮助你验证跨平台的兼容性。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q2: 正则表达式性能如何？会不会很慢？</h3>
+      <div class="faq-answer">
+        <p>大多数情况下，正则表达式的性能是非常优秀的。但需要注意避免"灾难性回溯"——当正则中存在嵌套量词或复杂的分支时，可能导致指数级的时间复杂度。建议：1) 尽量使用具体的字符类代替通配符；2) 使用占有量词或原子组防止不必要的回溯；3) 对于超大文本，考虑分段处理。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q3: 如何调试复杂的正则表达式？</h3>
+      <div class="faq-answer">
+        <p>调试复杂正则的最佳方法是：1) 使用可视化工具查看匹配过程；2) 添加注释（支持注释模式的正则引擎）；3) 分步测试各个子模式；4) 使用我们的在线正则测试工具，它提供实时高亮、分组显示和替换预览功能，让调试过程更加直观高效。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q4: 正则表达式可以处理HTML/XML解析吗？</h3>
+      <div class="faq-answer">
+        <p>虽然可以用正则表达式提取简单的HTML标签内容，但不建议用于复杂的HTML/XML解析。因为HTML不是正则语言，使用正则解析可能导致错误和漏洞。对于复杂的文档解析，建议使用专门的解析库，如BeautifulSoup（Python）、DOM Parser（JavaScript）等。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">Q5: 有哪些学习正则表达式的优质资源？</h3>
+      <div class="faq-answer">
+        <p>推荐以下学习资源：1) RegexOne - 交互式正则教程；2) 正则表达式30分钟入门教程 - 中文经典教程；3) RegExr - 在线正则学习和测试工具；4) 《精通正则表达式》 - Jeffrey Friedl的经典著作。同时，多使用我们的正则测试工具进行实践，是掌握正则的最佳方式。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-section conclusion">
+    <h2>结语</h2>
+    <p>正则表达式是每个技术人员都值得投入时间学习的技能。它虽然初期学习成本较高，但一旦掌握，将在数据处理、文本分析、表单验证等众多场景中大幅提升你的工作效率。</p>
+    
+    <p>我们的<strong>正则表达式测试工具</strong>为你提供了一个便捷的在线环境，支持实时匹配、替换、分割等功能，帮助你快速验证和调试正则表达式。无论你是正则新手还是经验丰富的开发者，这个工具都能成为你日常工作的得力助手。</p>
+
+    <div class="cta-box">
+      <p><strong>立即开始使用正则表达式测试工具</strong>，让复杂的文本处理变得简单高效！</p>
+    </div>
+  </section>
+
+  <footer class="article-footer">
+    <div class="tags">
+      <span class="tag">正则表达式</span>
+      <span class="tag">正则测试</span>
+      <span class="tag">在线工具</span>
+      <span class="tag">文本处理</span>
+      <span class="tag">表单验证</span>
+    </div>
+  </footer>
+</article>
 `;export{t as default};

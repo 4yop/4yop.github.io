@@ -1,1 +1,50 @@
-const t='<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800"><h1 class="text-3xl sm:text-4xl font-bold text-center text-amber-800 mb-6">汪星人图鉴：从柯基到哈士奇，教你一眼认出狗狗品种</h1><p class="text-lg text-gray-600 text-center mb-8">狗狗是人类最好的朋友，它们种类繁多，长相各异。每次刷到可爱的狗图，你是不是也好奇：这是什么品种？今天我们就来聊聊那些常见的狗狗，让你轻松成为“识狗达人”。</p><h2 class="text-2xl font-semibold text-amber-700 mt-10 mb-4">为什么我们总爱看狗狗图片？</h2><p class="mb-4">科学研究表明，看可爱的动物图片能释放多巴胺，缓解压力。狗狗那无辜的眼神、摇尾巴的憨态，瞬间就能治愈坏心情。无论是工作累了，还是心情低落，打开手机看看“汪星人”，嘴角就会不自觉上扬。而且，不同品种的狗狗有着截然不同的魅力——有的威猛，有的呆萌，有的优雅，让人忍不住想了解它们背后的故事。</p><h2 class="text-2xl font-semibold text-amber-700 mt-10 mb-4">热门狗品种速览：你认识几个？</h2><p class="mb-4">世界上有数百种狗狗，但有些品种因为性格温顺、外形讨喜，成了大家眼中的“明星”。下面这些你肯定见过，但叫得出名字吗？</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6"><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🐕 柯基</h3><p class="text-gray-700">小短腿、大屁股，走起路来一扭一扭，是英国女王的最爱。柯基精力旺盛，聪明机灵，笑起来特别有感染力。</p></div><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🐕‍🦺 哈士奇</h3><p class="text-gray-700">人称“二哈”，表情包常驻嘉宾。外表像狼，内心却是个逗比，拆家本领一流，但那种傻乎乎的样子让人又爱又恨。</p></div><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🦴 金毛</h3><p class="text-gray-700">暖男代表，对谁都很友善。金毛智商高，容易训练，特别适合有孩子的家庭，是完美的陪伴犬。</p></div><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🐾 柴犬</h3><p class="text-gray-700">日本土狗，表情丰富，爱笑。柴犬独立又倔强，但那份傲娇的小表情，让无数人甘愿当“铲屎官”。</p></div><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🐩 贵宾犬</h3><p class="text-gray-700">聪明不掉毛，造型多变，有玩具贵宾、迷你贵宾和标准贵宾。它们活泼好动，是很多城市家庭的选择。</p></div><div class="bg-amber-50 p-5 rounded-lg"><h3 class="text-xl font-medium text-amber-800 mb-2">🐕 拉布拉多</h3><p class="text-gray-700">导盲犬首选，性格温和，精力充沛。它们喜欢玩水，对主人忠诚，是优秀的工作犬和家庭犬。</p></div></div><h2 class="text-2xl font-semibold text-amber-700 mt-10 mb-4">怎么通过图片快速辨认品种？</h2><p class="mb-4">有时候看到一张狗图，想知道它是什么品种，可以从这几个方面观察：</p><ul class="list-disc pl-6 space-y-2 mb-6"><li><span class="font-medium">体型大小：</span>是大型犬（如大丹犬）还是小型犬（如吉娃娃）？</li><li><span class="font-medium">毛发特征：</span>长毛还是短毛？卷毛还是直毛？颜色分布如何？</li><li><span class="font-medium">耳朵形状：</span>是立耳（如哈士奇）还是垂耳（如比格犬）？</li><li><span class="font-medium">脸部特征：</span>嘴是长是短？脸上有没有褶皱（如巴哥犬）？</li><li><span class="font-medium">尾巴姿态：</span>是卷尾（如柴犬）还是直尾？</li></ul><p>当然，混血犬可能同时具备多个品种的特征，那就不用太纠结，统称“串串”也很可爱。</p><h2 class="text-2xl font-semibold text-amber-700 mt-10 mb-4">想看特定品种的高清图？这里都有！</h2><p class="mb-4">如果你对某个品种特别感兴趣，比如想收集柯基的萌照，或者想看看秋田犬到底长什么样，现在网上有专门的狗狗图片库，你可以按品种名称筛选，一次性看到几十张同品种的高清图。有些网站甚至支持按数量、按品种随机展示，轻松满足你的吸狗欲望。</p><p class="mb-4">而且，很多图片库还贴心地给每个品种配上了中文名和英文名，比如“柴犬”对应“shiba”，这样即使你只记得英文名也能找到。图片点开还能放大查看细节，左右滑动浏览，就像在翻看一本电子狗狗相册。</p><p class="mb-4">如果你想把喜欢的狗狗图片保存下来，不少工具还支持一键打包下载，方便你收藏或分享给朋友。无论是手机还是电脑，这些页面都会自动适应屏幕，让你随时随地享受萌宠暴击。</p><div class="bg-amber-100 p-6 rounded-lg mt-8 text-center"><p class="text-lg font-medium text-amber-800 mb-2">吸狗小贴士</p><p class="text-gray-700">看狗狗图片虽然解压，但也要注意休息眼睛哦！如果条件允许，不妨去附近的宠物店或公园，亲身感受一下“汪星人”的温暖。毕竟，没有什么比真实的互动更能治愈人心了。</p></div><p class="text-sm text-gray-500 text-center mt-10">本文介绍的品种只是冰山一角，还有更多像“萨摩耶”、“边境牧羊犬”、“法斗”等可爱狗狗等着你去发现。希望这篇文章能帮你更好地认识这些人类的好朋友，下次看到狗图时，你能自信地说出它的名字！</p></div>';export{t as default};
+const s=`
+<div class="text-gray-800 max-w-4xl mx-auto px-4 py-8 sm:px-6">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6">还在为配色发愁？试试这个好用的图片颜色分析工具</h1>
+  <p class="text-lg text-gray-600 mb-8">无论是设计海报、制作PPT，还是想让你的社交媒体图片更吸引人，选对颜色往往是关键一步。今天，我们来聊聊一个能帮你快速“抓住”图片核心色彩的小帮手。</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium">想象一下这些场景，你是不是也遇到过？</p>
+    <ul class="list-disc pl-5 mt-2 space-y-1">
+      <li>看到一张风景照，特别想用里面的天空蓝作为自己设计的背景色，却不知道这个颜色的具体数值。</li>
+      <li>为公司活动做海报，想从Logo里提取标准色，手动取色总觉得不准确。</li>
+      <li>整理了一堆灵感图片，想要快速总结出它们的色彩风格，感觉无从下手。</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">它是什么？一个聪明的“色彩翻译官”</h2>
+  <p class="mb-4">你可以把它理解为一个专注颜色的“图片分析师”。它的工作很简单：你给它一张或多张图片，它就能快速帮你找出图片里“最主要”的颜色和“整体平均”颜色。</p>
+  <p class="mb-6"><span class="font-medium">主色</span>就像图片的“主角”，是画面中最突出、占比最多的色调。<span class="font-medium">平均色</span>则像是把所有颜色搅拌混合后得到的总和色调，能代表图片的整体氛围。工具会把这些颜色用<span class="bg-gray-100 px-2 py-1 rounded">RGB</span>和<span class="bg-gray-100 px-2 py-1 rounded">色值码</span>两种方式清晰展示给你，方便你直接使用。</p>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">对你有什么用？三个看得见的好处</h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-medium mb-2">1. 省时省力，告别手动取色烦恼</h3>
+      <p>再也不用瞪大眼睛在软件里一点点找颜色了。无论图片多么复杂，一键上传，几秒钟内就能获得准确的颜色代码。你可以直接复制使用，大大提高工作效率。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium mb-2">2. 激发灵感，找到专业配色方案</h3>
+      <p>好看的电影截图、优秀的设计作品、迷人的自然风光……所有让你心动的图片都可以成为你的色彩灵感库。分析它们的颜色，你就能理解为什么它们看起来那么和谐，并把这份和谐用到你自己的创作中。</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium mb-2">3. 批量处理，轻松管理多个方案</h3>
+      <p>如果你收集了很多参考图，可以一次性上传多张图片进行批量分析。所有结果以表格形式清晰罗列，方便你对比和筛选。你还可以将最终的分析结果导出成表格文件，方便保存和分享给同事或朋友。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4">生活中可以怎么用？举两个小例子</h2>
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-xl font-medium mb-2">例子一：制作统一风格的团队PPT</h3>
+    <p>你需要为公司新项目制作一系列PPT。为了让所有材料看起来是一个整体，你可以将公司的Logo图片上传分析，得到标准的品牌色。之后所有幻灯片的标题、图表、边框都使用这个颜色，整套材料的专业感和统一感瞬间就提升了。</p>
+  </div>
+  <div class="bg-gray-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-medium mb-2">例子二：让社交媒体分享更出彩</h3>
+    <p>你想分享一张自己做的美食照片。除了滤镜，还可以用这个工具分析一下照片的主色调（比如烤面包的金黄色）。然后，在编辑文案时，选择这个金黄色作为点缀色，或者用它来制作一张简单的背景图作为文字衬托，你的帖子在信息流里会显得格外精致、有设计感。</p>
+  </div>
+
+  <div class="border-t pt-8 mt-8">
+    <p class="mb-4">很多时候，好的色彩感觉并非天生，而是借助合适的工具和方法培养出来的。希望这个关于颜色分析工具的介绍，能为你打开一扇新窗户，让你在处理图片配色时多一个轻松又高效的选择。</p>
+    <p class="font-medium">下次当你再被“用什么颜色好”这个问题困扰时，不妨试着让工具先帮你看看图片自己是怎么“说”的。</p>
+  </div>
+</div>
+`;export{s as default};

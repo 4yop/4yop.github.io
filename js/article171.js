@@ -1,104 +1,131 @@
-const e=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
-    双色球选号不用愁，一个免费小工具帮你轻松搞定
-  </h1>
-
-  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
-    <p>更新于 2023年10月 • 阅读约需3分钟</p>
-  </div>
-
-  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
-    <p class="text-gray-700">
-      买双色球时，面对茫茫多的数字是不是常感到选择困难？别急，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的选号小助手。
-    </p>
-  </div>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      选号，真的有那么难吗？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      相信很多朋友都有过这样的经历：站在彩票店前，拿着选号单，脑子里却一片空白。自己生日、纪念日、幸运数字都试过了，还是觉得不够“随机”。有时候甚至想，要是有人能帮我想几组号码就好了。
-    </p>
-    <p class="leading-relaxed">
-      这种纠结非常正常。双色球红球要从1-33个数字里选6个，蓝球要从1-16个数字里选1个，组合方式多到数不清。靠我们自己拍脑袋想，难免会陷入固定的思维模式。
-    </p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      什么是随机选号工具？它能做什么？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      简单来说，它就像一个聪明的数字机器。你只需要告诉它：“帮我生成几组号码”，它就能立刻为你组合出全新的、完全随机的双色球号码。
-    </p>
-
-    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
-      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
-      <ul class="space-y-3 pl-5 list-disc text-gray-700">
-        <li><span class="font-medium">想生成几注就几注</span>：你可以选择一次性生成1组到10组号码，不用一次次重复操作。</li>
-        <li><span class="font-medium">号码一目了然</span>：生成的红球和蓝球会分开、整齐地排列好，红球还自动从小到大排好序，看着特别清楚。</li>
-        <li><span class="font-medium">一键复制，方便保存</span>：看中了哪组号码，点一下“复制”就能存到手机剪贴板，然后直接粘贴到你的备忘录或者发给朋友，再也不用担心手抄抄错了。</li>
-        <li><span class="font-medium">纯属“脑力劳动”，保护你的隐私</span>：整个生成过程都在你自己的手机或电脑上完成，不会把你的任何选择记录或发送到别处，安全又省心。</li>
-        <li><span class="font-medium">操作简单到没朋友</span>：整个页面就一两个按钮，点一下“立即生成”就有结果，没有任何复杂步骤。</li>
+const t=`
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6 leading-tight">还在为选择发愁？一个简单工具帮你轻松做决定</h1>
+    
+    <div class="text-gray-600 mb-8 text-center">
+      <p class="mb-2">每天都要做无数选择，从吃什么到去哪里，有时候真的让人头疼。</p>
+      <p>今天就来介绍一个特别实用的小工具，它能帮你快速做出随机选择，让生活变得更简单。</p>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">什么是随机选择器？</h2>
+      <div class="space-y-4 text-gray-700">
+        <p>随机选择器就像一个电子抽签盒，你可以把不同的选项放进去，它就会帮你随机选出一个。</p>
+        <p>想象一下，你和朋友争论晚上吃什么，把“火锅、烧烤、炒菜、面条”这些选项输入进去，点击一下按钮，它就会给出一个随机结果。</p>
+        <p>这样一来，既公平又有趣，再也不用为“到底听谁的”而烦恼了。</p>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">哪些时候特别需要它？</h2>
+      <ul class="grid md:grid-cols-2 gap-4 text-gray-700">
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">日常吃饭难题</div>
+          <div class="text-sm">每天都要想的“吃什么”，把常吃的几家店列出来，让它帮你决定。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">周末活动安排</div>
+          <div class="text-sm">看电影、逛公园、去爬山……太多选择反而不知道做什么好。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">家庭游戏时间</div>
+          <div class="text-sm">和孩子玩游戏时，用它来决定谁先开始，或者选择游戏项目。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">学习抽检复习</div>
+          <div class="text-sm">把要复习的知识点写下来，随机抽选，检验自己的掌握情况。</div>
+        </li>
       </ul>
     </div>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      为什么要用这种方式来选号？
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      你可能会有疑问：“机器选的号码，能行吗？”
-    </p>
-    <p class="mb-4 leading-relaxed">
-      首先，我们要明白，双色球的开奖结果是完全随机的。这意味着，每一个数字组合在每一次抽奖中的中奖概率理论上是相同的。无论是你自己想的号码，还是机器生成的号码，中奖的概率都一样。
-    </p>
-    <p class="mb-4 leading-relaxed">
-      使用这种随机工具，最大的好处是帮你打破了选号时的“思维定式”。我们人类在“随机”选择时，总会不自觉地带入一些偏好（比如避开数字4，或者总选连号）。而这个工具能做到更纯粹的随机，覆盖更广的数字组合范围。
-    </p>
-    <p class="leading-relaxed">
-      它更像是一个帮你开拓思路、提供灵感的伙伴。当你没有头绪时，让它给你一些随机的选项，你也许能从这些组合中发现新的灵感，或者直接采用。
-    </p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
-      如何使用它？简单三步
-    </h2>
-    <ol class="space-y-6 pl-0 list-decimal list-inside">
-      <li>
-        <span class="font-medium text-gray-900">第一步：打开工具</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑上找到这个双色球随机选号工具的页面。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第二步：选择数量</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">在“生成注数”旁边，输入你想看的号码组数，比如3组或5组。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-900">第三步：生成与选用</span>
-        <p class="ml-0 mt-2 pl-0 text-gray-700">点击“立即生成”按钮，几组号码瞬间出现。浏览一下，如果有觉得顺眼的，点击那组号码旁边的“复制”按钮，就可以拿去用了。不满意？点一下“再来一注”试试运气。</p>
-      </li>
-    </ol>
-  </section>
-
-  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-900">最后，几句心里话</h2>
-    <p class="mb-4 leading-relaxed">
-      这个双色球随机选号工具，本质上是一个为了增添趣味、提供便利的小助手。它能帮你解决“不知道选什么号”的纠结，让选号过程变得轻松有趣一些。
-    </p>
-    <p class="mb-4 leading-relaxed font-medium text-gray-900">
-      但请一定记住，它不能预测未来，也无法提高中奖概率。
-    </p>
-    <p class="leading-relaxed">
-      购买彩票应该是一种健康的娱乐方式。我们希望你在使用这个小工具时，能抱着轻松、理性的心态。享受那份期待的过程，但更要珍惜自己实实在在的生活。量力而行，理性购彩，才是最重要的。
-    </p>
-  </section>
-
-  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
-    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，请理性参与。</p>
-  </div>
-</article>
-`;export{e as default};
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">使用起来有多简单？</h2>
+      <div class="space-y-6 text-gray-700">
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">输入你的选项</p>
+            <p>把你想选择的项目一个个写下来，比如“红色、蓝色、绿色”，或者每行写一个。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">点击选择按钮</p>
+            <p>轻轻点一下“随机选择”按钮，它会立刻从你的列表中抽出一个结果。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shri0">3</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">得到最终结果</p>
+            <p>屏幕上会清晰显示被选中的项目，你可以直接使用这个结果，或者重新选择。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">这些场景你可能遇到过</h2>
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景一：和朋友争论不休时</div>
+          <p class="text-gray-700">周末去哪里玩？有人说去公园，有人说去商场，有人说去看展览。与其争论半天，不如把选项都列出来，让随机选择器帮忙决定，大家都服气。</p>
+        </div>
+        
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景二：自己犹豫不决时</div>
+          <p class="text-gray-700">想买件新衣服，看中了三件都挺喜欢，但预算只够买一件。这时候让选择器帮你挑，既解决了选择困难，又有点小惊喜。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-2">场景三：需要公平分配时</div>
+          <p class="text-gray-700">家里大扫除，谁擦窗户、谁拖地、谁整理厨房？把任务写下来随机分配，公平合理，谁也没意见。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">常见问题解答</h2>
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <div class="font-medium text-gray-800 mb-1">这个工具收费吗？</div>
+          <p>完全免费，打开网页就能用，不需要下载任何软件，也不会有烦人的广告。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">需要注册账号吗？</div>
+          <p>不需要，就像使用一个简单的计算器一样，随开随用，用完就关，没有任何门槛。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">手机和电脑都能用吗？</div>
+          <p>都可以，无论是在家里的电脑上，还是在外出的手机上，都能正常使用，操作一样简单。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">选项有数量限制吗？</div>
+          <p>几乎没有限制，你可以输入几个选项，也可以输入几十个选项，都能正常工作。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-blue-50 border border-blue-100 rounded-lg p-6 mt-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">小提示：让选择变得更有趣</h2>
+      <div class="text-gray-700 space-y-3">
+        <p>• 不确定今晚吃什么？把附近常去的餐厅都列出来，让随机选择器给你一个惊喜。</p>
+        <p>• 孩子不知道看哪本书？把书架上的书名写下来，随机挑选，增加阅读的趣味性。</p>
+        <p>• 运动前热身做什么？把几个热身动作输入进去，每次都不一样，避免枯燥。</p>
+        <p class="font-medium text-gray-800 mt-4">很多时候，我们不是没有选择，而是选择太多。让随机选择器帮你简化这个流程，你会发现做决定原来可以这么轻松。</p>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10 pt-6 border-t border-gray-200">
+      <p class="text-gray-600">希望这个简单的小工具能帮你减少生活中的选择烦恼，让每一天的决策都变得更轻松愉快。</p>
+    </div>
+  </article>
+</div>
+`;export{t as default};

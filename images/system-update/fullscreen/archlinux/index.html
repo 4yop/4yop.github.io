@@ -15,9 +15,14 @@ body{background:#0d1117;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <svg class="arch-logo" viewBox="0 0 72 72" fill="#58a6ff"><path d="M36 4L8 20v32l28 16 28-16V20L36 4zm0 6l22 12.5v25L36 60l-22-13v-25L36 10z"/><text x="36" y="44" text-anchor="middle" font-size="20" font-weight="bold">A</text></svg>
-<div class="title">正在同步软件包数据库</div>
+<div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
-<div class="sub">进度 (<span id="pct">0</span>%)</div>
+<div class="sub"><span id="subLabel"></span> (<span id="pct">0</span>%)</div>
 <div class="terminal" id="term"></div>
-<script>var n=0,pkgs=['linux','systemd','pacman','bash','gcc','python','firefox','neovim'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('term');var t='<span class=t-line>[::] 正在下载 '+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*900)+100)+'.pkg.tar.zst ('+(Math.floor(Math.random()*800)+200)+' KiB)</span>';d.innerHTML+='<div>'+t+'</div>';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
+<script>var lang=new URLSearchParams(window.location.search).get('lang')||'zh';
+document.getElementById('title').textContent=lang==='en'?'Synchronizing package databases':'正在同步软件包数据库';
+document.getElementById('subLabel').textContent=lang==='en'?'Progress':'进度';
+document.title=lang==='en'?'Arch Linux Updating':'Arch Linux 更新中';
+var dlLabel=lang==='en'?'Downloading':'正在下载';
+var n=0,pkgs=['linux','systemd','pacman','bash','gcc','python','firefox','neovim'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('term');var t='<span class=t-line>[::] '+dlLabel+' '+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*900)+100)+'.pkg.tar.zst ('+(Math.floor(Math.random()*800)+200)+' KiB)</span>';d.innerHTML+='<div>'+t+'</div>';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
 </body></html>

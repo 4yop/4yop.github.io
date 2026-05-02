@@ -1,74 +1,62 @@
-const t=`
-<div class="max-w-3xl mx-auto px-4 py-6 md:py-10 text-gray-300">
-  <h1 class="text-3xl md:text-4xl font-bold text-center mb-2 text-white">高考倒计时2026：距离高考还有多少天？高效备考攻略</h1>
-  <p class="text-sm text-gray-500 text-center mb-8">2026年3月11日 ｜ 高考备考指南</p>
+const s=`
+<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">世界时钟在线工具：一眼看懂全球时间</h1>
+  <p class="text-lg mb-8 text-gray-600 text-center">和国外亲友约时间、安排跨国会议、或者单纯好奇地球另一端现在是白天还是黑夜？这个免费的小工具都能帮你。</p>
 
-  <p class="text-lg mb-4">高考，这个几乎每个中国家庭都会经历的关键词，总是带着一点紧张和期待。对于即将参加2026年高考的考生和家长来说，时间已经进入了最后的冲刺阶段。看着日历一页页翻过，很多人都会下意识地问一句："今天离高考还有多少天？"</p>
-
-  <p class="text-lg mb-6">其实，高考倒计时不仅仅是一个数字，它更像一个无形的闹钟，提醒我们合理规划每一天，把焦虑转化为行动。今天我们就来聊聊2026年高考倒计时那些事儿，顺便分享一些备考干货，希望能帮你稳稳走过这段路。</p>
-
-  <div class="bg-gray-700/50 border-l-4 border-yellow-400 p-4 mb-6 rounded-r-lg">
-    <p class="text-lg font-medium text-gray-200">📅 2026年高考时间：通常为6月7日（部分省份持续到8日或9日）。以全国统一时间6月7日为例，今天（2026年3月11日）距离高考还有：</p>
-    <p class="text-3xl font-bold text-center text-yellow-400 my-2">88天</p>
-    <p class="text-sm text-gray-400 text-center">（计算方式：3月剩余20天 + 4月30天 + 5月31天 + 6月7天 = 88天）</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="font-medium text-blue-800">简单说明：这是一个完全在网页上运行的“世界时钟”，你可以用它查看全球主要城市（如北京、伦敦、纽约）的当前时间，也可以手动调整时区，直观地看到时间变化。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">一、为什么倒计时对我们很重要？</h2>
-  <p class="mb-4">倒计时让我们从"还有很久"的错觉中清醒过来。很多同学总觉得时间还多，习惯把复习任务一拖再拖。但当看到数字一天天变小，就会产生一种紧迫感，这种紧迫感如果引导得好，就是专注力和效率的来源。</p>
-  <p class="mb-4">同时，倒计时也能帮助我们设置阶段性目标。比如把剩下的88天分成三个阶段：基础巩固期、专项突破期、全真模拟期。每个阶段有明确的任务，最后上考场时心里就有底了。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么我们需要关注世界时间？</h2>
+  <p class="mb-4">我们的生活越来越全球化。也许你的孩子在海外留学，你正在计划一次跨国旅行，或者你的工作需要与不同国家的同事协作。了解时差，是顺畅沟通的第一步。</p>
+  <p class="mb-6">直接心算“北京下午3点，纽约是几点？”，对很多人来说并不容易。有一个可视化的工具会方便得多。</p>
 
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">二、怎样用好高考倒计时工具？</h2>
-  <p class="mb-4">现在网上有很多好用的高考倒计时小程序或网页，它们通常会用很大的数字显示天、时、分、秒，有的还能全屏专注。我个人建议你选择一个界面清爽、无广告的倒计时工具，把它放在手机桌面上或者电脑浏览器里，每天打开看一眼，给自己一个小小的提醒。</p>
-  <p class="mb-4">比如有的倒计时设计得像黑板或课堂挂钟，深色背景配上彩色数字，一目了然。你甚至可以把全屏倒计时投在教室的大屏幕上，全班一起感受时间的步伐。当然，工具只是辅助，关键还是看我们自己怎么利用每一天。</p>
-
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">三、88天，如何高效备考？</h2>
-  <p class="mb-2">剩下的88天说长不长，说短不短。如果能科学规划，足够把各科知识再过两遍。下面这几点建议，希望对你有帮助：</p>
-  <ul class="list-disc list-inside mb-4 space-y-2">
-    <li><span class="font-medium text-yellow-300">制定具体到周的复习计划</span> – 别只写"复习数学"，要写"完成三角函数专题练习+整理错题5道"。每周日晚上复盘本周完成情况，调整下周计划。</li>
-    <li><span class="font-medium text-yellow-300">回归课本，查漏补缺</span> – 最后阶段别再死磕偏题怪题。把教材上的例题、定义、公式重新过一遍，尤其是物理化学的实验步骤、历史时间轴，这些基础分最容易拿。</li>
-    <li><span class="font-medium text-yellow-300">利用好真题和错题本</span> – 近五年的高考真题至少刷两遍，第一遍按章节，第二遍按整套卷。错题本不要只抄题，要写错误原因和正确思路，考前一周只看错题本就够了。</li>
-    <li><span class="font-medium text-yellow-300">进行全真模拟考试</span> – 周末按高考时间表做一套卷子，包括涂答题卡、用标准答题纸。提前适应上午考语文、下午考数学的节奏，让身体和大脑到那个点就兴奋起来。</li>
-    <li><span class="font-medium text-yellow-300">坚持体育锻炼</span> – 每天抽出15分钟跑跑步、跳跳绳，哪怕在教室里转转脖子、伸伸懒腰都行。身体状态好，脑子才转得快。</li>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">这个时钟工具能帮你做什么？</h2>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><span class="font-medium">查看任一城市时间</span>：从下拉菜单里选择一个著名城市（如东京、悉尼、柏林），表盘和数字时间会立刻切换为该地时间。</li>
+    <li><span class="font-medium">直观的指针时钟</span>：就像你墙上的挂钟一样，通过时针、分针、秒针的位置，一眼就能大致判断时间。</li>
+    <li><span class="font-medium">精准的数字时间</span>：旁边会同步显示精确到分钟的数字时间，确保无误。</li>
+    <li><span class="font-medium">自由探索时区</span>：你可以用底部的滑块，从UTC-12（最西边）滑到UTC+12（最东边），亲眼看看时间如何随着“经度”变化。</li>
+    <li><span class="font-medium">全屏显示模式</span>：点击全屏按钮即可将时钟切换至全屏模式，字体放大、背景优化，非常适合演讲汇报、会议展示、课堂演示等场合使用。按 ESC 键可随时退出全屏。</li>
   </ul>
 
-  <div class="bg-gray-700/40 p-4 rounded-lg mb-6 border border-gray-600/50">
-    <h3 class="font-bold text-lg mb-2 text-gray-200">📌 一个实用的每日时间表（供参考）</h3>
-    <ul class="text-sm space-y-1">
-      <li>6:30 起床，简单拉伸</li>
-      <li>7:00-7:30 早读（语文古诗词、英语单词）</li>
-      <li>8:00-11:30 复习文综/理综（按高考时间）</li>
-      <li>12:00-13:30 午饭+午休（30分钟足够）</li>
-      <li>14:00-17:00 数学/语文（交替进行）</li>
-      <li>17:30-18:30 晚饭+散步</li>
-      <li>19:00-21:00 英语听力+阅读，或整理错题</li>
-      <li>21:30-22:30 自由复习（弱项科目）</li>
-      <li>23:00 准备睡觉，不熬夜</li>
-    </ul>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">时区小知识：世界是如何统一时间的？</h2>
+  <p class="mb-4">地球是圆的，并且自西向东自转，这就导致了不同地方迎接太阳的时间不同。为了统一标准，人们将地球划分为24个时区。</p>
+  <p class="mb-4"><span class="font-medium">什么是UTC？</span>你可以把它理解为世界时间的“原点”或“基准线”，位于英国伦敦的格林尼治天文台。其他地区的时间都用“UTC+数字”或“UTC-数字”来表示比这个基准快或慢多少小时。</p>
+  <p class="mb-6">例如，<span class="font-medium">北京时间是UTC+8</span>，意思就是比世界标准时间快8个小时。当UTC是午夜0点时，北京已经是早上8点了。</p>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">实用场景举例</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-8">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景一：计划国际旅行</h3>
+      <p>飞往美国洛杉矶前，把时钟调到“洛杉矶”（UTC-8），了解一下当地的昼夜时间，有助于提前规划行程和调整生物钟。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景二：安排跨国视频会议</h3>
+      <p>需要和欧洲的团队开会。把时钟调到“柏林”（UTC+1），看看他们那边的上班时间，再结合你的时间，就能找到一个大家都合适的时间段。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景三：联系海外亲友</h3>
+      <p>想给在澳大利亚留学的孩子打个电话。先看看“悉尼”（UTC+10）的时间，避免在对方的深夜或凌晨吵醒他们。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景四：学习地理知识</h3>
+      <p>对孩子来说，滑动滑块，看着时钟指针飞快转动，是理解"时差"和"地球自转"最生动的方式。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h3 class="font-bold text-lg mb-2 text-blue-700">场景五：演讲与会议展示</h3>
+      <p>在进行工作汇报、产品演示或公开演讲时，将时钟全屏显示在屏幕上，让观众能够清晰地看到时间进度，帮助控制节奏，提升专业度。</p>
+    </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">四、心态调整：把压力变成朋友</h2>
-  <p class="mb-4">倒计时越近，心态越容易波动。这时候你可能会失眠、烦躁、突然觉得自己什么都不会。别怕，几乎每个考生都会有这个阶段。试试这几个小方法：</p>
-  <ul class="list-disc list-inside mb-4">
-    <li><strong class="text-yellow-300">写下来</strong> – 把焦虑和担心写在纸上，然后撕掉，暗示自己"把它扔掉"。</li>
-    <li><strong class="text-yellow-300">深呼吸</strong> – 用4-7-8呼吸法：吸气4秒，屏住7秒，呼气8秒，能快速平静。</li>
-    <li><strong class="text-yellow-300">和朋友聊聊天</strong> – 你会发现大家都差不多，互相吐槽一下反而轻松很多。</li>
-    <li><strong class="text-yellow-300">别追求完美</strong> – 高考是选拔性考试，不可能所有题都会。我们的目标是把自己会做的做对，拿到该拿的分就够了。</li>
-  </ul>
+  <div class="mt-12 p-6 bg-gray-100 rounded-lg">
+    <h3 class="text-xl font-semibold mb-3">总结一下</h3>
+    <p class="mb-4">无论你是频繁出差的商务人士、有亲友在海外的普通人，还是对世界充满好奇的探索者，一个清晰、易用的世界时钟都是你的好帮手。</p>
+    <p>它把抽象的时差概念，变成了看得见的指针转动和数字跳动。希望这个工具能让你在连接世界时，多一份从容，少一点计算的烦恼。</p>
+    <p class="mt-4 text-gray-700"><strong>小提示：</strong> 工具会根据你设备的时间自动初始化，显示你所在的本地时间。所有操作都在你的设备上完成，无需担心隐私问题。</p>
+    <p class="mt-3 text-gray-700">特别值得一提的是，<span class="font-medium">全屏显示功能</span>让这个工具不仅适合个人使用，也能在团队协作和公开场合发挥重要作用。</p>
+  </div>
 
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">五、家长能做些什么？</h2>
-  <p class="mb-4">家长们可能比孩子还紧张，但请一定把这份紧张藏起来。这个阶段孩子最需要的是"稳定的后方"：</p>
-  <ul class="list-disc list-inside mb-4">
-    <li>保持正常的家庭氛围，不要突然变得特别关心或小心翼翼。</li>
-    <li>饮食上注意清淡营养，不要突然大补，避免肠胃不适。</li>
-    <li>多听少说，当孩子想倾诉时，耐心听，不要急着给建议。</li>
-    <li>帮助孩子整理志愿信息，提前了解大学和专业，但不要强加自己的想法。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">写在最后</h2>
-  <p class="mb-4">高考倒计时的数字终究会归零，但那段拼搏的日子会成为你人生中宝贵的财富。无论最后去了哪所大学，只要全力以赴，就无愧于自己。希望88天后，你能从容地走进考场，合上笔盖的那一刻，有战士收刀入鞘的骄傲。</p>
-  <p class="text-lg font-medium text-center mt-8 text-yellow-300">加油，2026高考生！</p>
-
-  <hr class="my-6 border-gray-600" />
-  <p class="text-sm text-gray-500 text-center">如果你觉得这篇文章有帮助，欢迎分享给更多正在备考的同学和家长。</p>
+  <p class="text-center text-gray-500 text-sm mt-12 pt-6 border-t">最后更新：2023年10月 | 工具免费使用，无需下载</p>
 </div>
-`;export{t as default};
+`;export{s as default};

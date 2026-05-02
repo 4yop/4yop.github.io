@@ -1,233 +1,85 @@
-const s=`
-<div class="article-content">
-  <h1>进制转换指南：从二进制到十六进制的全面解析</h1>
-  
-  <p class="intro">进制转换是计算机科学中最基础也是最重要的概念之一。无论是程序员、学生还是对计算机感兴趣的人士，掌握进制转换原理都能让你更好地理解计算机的工作机制。本文将详细介绍二进制、八进制、十进制和十六进制之间的转换方法，以及它们在实际应用中的重要性。</p>
-  
-  <h2>什么是进制系统？</h2>
-  
-  <p>进制系统（Number System）是一种表示数字的方法。我们在日常生活中使用的<strong>十进制</strong>是最常见的进制，它使用0-9共10个数字符号。而在计算机领域，<strong>二进制</strong>是最基础的进制，因为计算机的所有数据最终都由0和1表示。</p>
-  
-  <p>除了十进制和二进制，计算机中常用的进制还有：</p>
-  
-  <ul class="feature-list">
-    <li><strong>二进制（Binary）</strong>：使用0和1两个符号，基数是2，计算机的底层语言</li>
-    <li><strong>八进制（Octal）</strong>：使用0-7八个符号，基数是8，常用于Unix权限表示</li>
-    <li><strong>十进制（Decimal）</strong>：使用0-9十个符号，基数是10，人类日常使用</li>
-    <li><strong>十六进制（Hexadecimal）</strong>：使用0-9和A-F十六个符号，基数是16，广泛用于颜色代码、内存地址等</li>
-  </ul>
-  
-  <h2>常用进制系统详解</h2>
-  
-  <h3>1. 二进制（Binary - 基数2）</h3>
-  
-  <p>二进制是计算机的"母语"。计算机中的所有数据——文字、图片、视频、程序代码——最终都以二进制形式存储和处理。二进制的每一位称为一个"比特"（bit），8个比特组成一个"字节"（byte）。</p>
-  
-  <p class="example">示例：二进制数 <code>10110</code> 表示的十进制值是：
-  1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 0×2⁰ = 16 + 0 + 4 + 2 + 0 = 22</p>
-  
-  <h3>2. 八进制（Octal - 基数8）</h3>
-  
-  <p>八进制使用数字0-7，在早期的计算机系统中经常使用。一个八进制位可以恰好表示3个二进制位（因为2³=8），这使得八进制在表示二进制数据时非常方便。如今，八进制主要用于Unix/Linux系统的文件权限表示。</p>
-  
-  <p class="example">示例：八进制数 <code>75</code> 表示的十进制值是：
-  7×8¹ + 5×8⁰ = 56 + 5 = 61</p>
-  
-  <h3>3. 十进制（Decimal - 基数10）</h3>
-  
-  <p>十进制是我们最熟悉的进制，使用数字0-9。十进制的"十"源于人类有十根手指，这是最自然的选择。在计算机编程中，我们经常需要将其他进制转换为十进制以便理解和调试。</p>
-  
-  <p class="example">示例：十进制数 <code>255</code> 表示为：
-  2×10² + 5×10¹ + 5×10⁰ = 200 + 50 + 5 = 255</p>
-  
-  <h3>4. 十六进制（Hexadecimal - 基数16）</h3>
-  
-  <p>十六进制使用数字0-9和字母A-F（a-f），其中A-F分别表示10-15。十六进制的一个巨大优势是：一个十六进制位可以恰好表示4个二进制位（因为2⁴=16），这使得十六进制成为表示二进制数据的高效方式。</p>
-  
-  <p class="example">示例：十六进制数 <code>2A</code> 表示的十进制值是：
-  2×16¹ + 10×16⁰ = 32 + 10 = 42</p>
-  
-  <h2>进制转换方法</h2>
-  
-  <h3>任意进制转十进制</h3>
-  
-  <p>将任意进制数转换为十进制，只需要将每一位数字乘以该位的权重（基数的相应次方），然后将所有结果相加。</p>
-  
-  <div class="conversion-example">
-    <p><strong>示例1</strong>：二进制 1101 → 十进制</p>
-    <p>1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13</p>
-    
-    <p><strong>示例2</strong>：十六进制 F3 → 十进制</p>
-    <p>15×16¹ + 3×16⁰ = 240 + 3 = 243</p>
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    照片太模糊了怎么办？一个简单方法让你的图片变高清
+  </h1>
+
+  <div class="text-gray-600 mb-8 text-base sm:text-lg leading-relaxed">
+    <p class="mb-4">你是否遇到过这些情况？翻看老照片时发现画质模糊不清；从网上下载的图片放大后全是马赛克；手机拍的照片传到电脑上就变模糊了。</p>
+    <p>别担心，今天我们就来聊聊，如何轻松让这些模糊的图片重新变得清晰起来。</p>
   </div>
-  
-  <h3>十进制转任意进制</h3>
-  
-  <p>将十进制转换为其他进制，采用"除基取余法"：不断除以目标进制的基数，取余数，直到商为0。余数倒序排列就是结果。</p>
-  
-  <div class="conversion-example">
-    <p><strong>示例</strong>：十进制 37 → 二进制</p>
-    <p>37 ÷ 2 = 18 余 1</p>
-    <p>18 ÷ 2 = 9 余 0</p>
-    <p>9 ÷ 2 = 4 余 1</p>
-    <p>4 ÷ 2 = 2 余 0</p>
-    <p>2 ÷ 2 = 1 余 0</p>
-    <p>1 ÷ 2 = 0 余 1</p>
-    <p>余数倒序：100101，所以 37(十进制) = 100101(二进制)</p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">图片高清化是什么？</h2>
+    <p class="text-gray-700">简单来说，它就像给图片做一次“智能修复”。通过分析图片的像素和纹理，智能地补充细节，让原本模糊、有锯齿的图片变得更清晰、更细腻。这和我们用手机软件简单的“锐化”滤镜不同，效果要好得多。</p>
   </div>
-  
-  <h3>二进制与八进制/十六进制互转</h3>
-  
-  <p>由于2³=8和2⁴=16，二进制与八进制、十六进制的转换非常简单，只需要按位分组转换。</p>
-  
-  <div class="conversion-example">
-    <p><strong>二进制转八进制</strong>：从右向左每3位二进制数为一组，转换为1位八进制数</p>
-    <p>10110110(二进制) → 10 110 110 → 2 6 6 → 266(八进制)</p>
-    
-    <p><strong>二进制转十六进制</strong>：从右向左每4位二进制数为一组，转换为1位十六进制数</p>
-    <p>10110110(二进制) → 1011 0110 → B 6 → B6(十六进制)</p>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">为什么我的照片会模糊？</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">1</span>
+        <span class="text-gray-700"><strong>拍摄问题：</strong>手抖、光线不足、对焦不准，都会让照片拍出来不够清晰。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">2</span>
+        <span class="text-gray-700"><strong>多次压缩：</strong>图片在微信、QQ等社交软件里反复发送，会被严重压缩，画质越来越差。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-6 h-6 bg-gray-200 text-gray-700 rounded-full text-center leading-6 mr-3 flex-shrink-0">3</span>
+        <span class="text-gray-700"><strong>放大图片：</strong>把一张小图强行拉大，电脑只能复制原有的像素点，结果就是出现难看的马赛克和锯齿。</span>
+      </li>
+    </ul>
   </div>
-  
-  <h2>程序员如何使用进制转换</h2>
-  
-  <h3>1. 颜色代码</h3>
-  
-  <p>在网页设计和图形编程中，颜色通常用十六进制表示。例如，纯红色是 <code>#FF0000</code>，其中FF表示红色分量，00表示绿色分量，00表示蓝色分量。每个分量的范围是00-FF（十进制的0-255）。</p>
-  
-  <div class="color-example">
-    <div class="color-box" style="background-color: #FF0000;"></div>
-    <p><code>#FF0000</code> = RGB(255, 0, 0) = 纯红色</p>
-  </div>
-  
-  <h3>2. 内存地址</h3>
-  
-  <p>计算机的内存地址通常用十六进制表示，因为这样更简洁且易于阅读。例如，一个32位系统的内存地址可能显示为 <code>0x7FFE1234</code>，其中 <code>0x</code> 前缀表示这是一个十六进制数。</p>
-  
-  <h3>3. 位运算</h3>
-  
-  <p>位运算是直接对二进制位进行操作的运算，包括与（AND）、或（OR）、异或（XOR）、非（NOT）、左移（<<）、右移（>>）等。位运算在底层编程、加密算法、图像处理等领域非常重要。</p>
-  
-  <div class="code-example">
-    <p><strong>示例</strong>：使用位运算检查一个数的奇偶性</p>
-    <p>如果 <code>(n & 1) == 0</code>，则n是偶数；如果 <code>(n & 1) == 1</code>，则n是奇数。</p>
-  </div>
-  
-  <h3>4. 数据压缩和编码</h3>
-  
-  <p>十六进制常用于表示二进制数据，如Base64编码、文件哈希值（MD5、SHA256）、加密密钥等。这些场景下，十六进制比二进制更紧凑，比十进制更直观。</p>
-  
-  <div class="hash-example">
-    <p><strong>文件哈希值示例</strong>：</p>
-    <p>MD5: <code>5d41402abc4b2a76b9719d911017c592</code></p>
-    <p>SHA256: <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></p>
-  </div>
-  
-  <h2>手动进制转换技巧</h2>
-  
-  <h3>二进制快速心算</h3>
-  
-  <p>记住一些常见的二进制数值，可以快速进行心算：</p>
-  
-  <ul class="tips-list">
-    <li>2¹⁰ = 1024 ≈ 1K</li>
-    <li>2²⁰ ≈ 1M（百万）</li>
-    <li>2³⁰ ≈ 1G（十亿）</li>
-    <li>2ⁿ 的二进制形式是 1 后面跟 n 个 0</li>
-  </ul>
-  
-  <h3>十六进制记忆口诀</h3>
-  
-  <p>记住十六进制的字母对应值：</p>
-  
-  <ul class="tips-list">
-    <li>A = 10（Ace，扑克牌中的A）</li>
-    <li>B = 11（Baseball，棒球）</li>
-    <li>C = 12（Clock，时钟）</li>
-    <li>D = 13（Doctor，医生）</li>
-    <li>E = 14（Eagle，老鹰）</li>
-    <li>F = 15（Fifteen，十五）</li>
-  </ul>
-  
-  <h3>使用计算器工具</h3>
-  
-  <p>现代计算器（包括Windows计算器、手机计算器）都支持进制转换功能，可以快速准确地进行复杂的进制转换运算。</p>
-  
-  <h2>进制转换的实际应用场景</h2>
-  
-  <div class="application-grid">
-    <div class="application-card">
-      <h4>🔢 计算机科学教育</h4>
-      <p>理解计算机底层原理，学习数据结构和算法的基础</p>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">如何让模糊图片变清晰？</h2>
+    <p class="text-gray-700 mb-6">现在有一些在线工具可以帮你解决这个问题。它们操作起来很简单，不需要你会任何复杂的软件。</p>
+
+    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">一般的使用步骤是这样的：</h3>
+      <ol class="space-y-4 pl-5 list-decimal text-gray-700">
+        <li><strong>打开工具页面：</strong>在你的浏览器里找到相应的在线工具。</li>
+        <li><strong>上传图片：</strong>点击按钮，从你的电脑或手机里选择那张模糊的图片。通常可以一次上传多张。</li>
+        <li><strong>开始处理：</strong>点击“高清化”或类似的按钮，工具就会开始智能修复你的图片。</li>
+        <li><strong>等待并下载：</strong>处理需要一点时间，完成后直接下载清晰的新图片即可。</li>
+      </ol>
     </div>
-    <div class="application-card">
-      <h4>🎨 网页设计</h4>
-      <p>使用十六进制颜色代码设计网页和界面</p>
-    </div>
-    <div class="application-card">
-      <h4>💻 软件开发</h4>
-      <p>调试程序、查看内存、进行位运算操作</p>
-    </div>
-    <div class="application-card">
-      <h4>🔒 网络安全</h4>
-      <p>分析加密算法、破解哈希值、协议分析</p>
-    </div>
-    <div class="application-card">
-      <h4>📡 嵌入式开发</h4>
-      <p>单片机编程、寄存器配置、硬件控制</p>
-    </div>
-    <div class="application-card">
-      <h4>🎮 游戏开发</h4>
-      <p>图形渲染、碰撞检测、性能优化</p>
+
+    <div class="grid sm:grid-cols-2 gap-6 mt-8">
+      <div class="border border-gray-200 rounded-lg p-5">
+        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理时能看到什么？</h4>
+        <p class="text-gray-700 text-sm">你会看到一个进度条，知道处理到哪一步了。如果图片特别大，工具可能会把它分成很多小块来慢慢处理，这时你会看到当前在处理第几块，总共多少块，大概还要多久，非常直观。</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-5">
+        <h4 class="font-semibold text-lg text-gray-800 mb-2">处理完可以做什么？</h4>
+        <p class="text-gray-700 text-sm">处理完成后，你可以预览高清版的效果，和原图对比。满意的话，就一键下载到电脑里。如果处理了好几张图，还可以把它们打包成一个压缩文件一起下载，非常方便。</p>
+      </div>
     </div>
   </div>
-  
-  <h2>为什么进制转换如此重要？</h2>
-  
-  <p>进制转换不仅仅是数学运算，它是连接人类思维与计算机世界的桥梁。掌握进制转换可以帮你：</p>
-  
-  <ul class="benefit-list">
-    <li><strong>深入理解计算机</strong>：明白数据如何在计算机中存储和传输</li>
-    <li><strong>提高编程效率</strong>：在调试和优化代码时能够快速定位问题</li>
-    <li><strong>增强逻辑思维</strong>：培养抽象思维和问题分析能力</li>
-    <li><strong>拓展职业发展</strong>：在计算机相关领域拥有竞争优势</li>
-  </ul>
-  
-  <div class="faq-section">
-    <h2>常见问题（FAQ）</h2>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">1. 为什么计算机使用二进制而不是十进制？</h4>
-      <p class="faq-answer">计算机使用二进制是因为电子元件最容易实现两种稳定状态（开/关、高电平/低电平）。二进制系统简单、可靠，适合硬件实现，而十进制需要10种不同的状态，实现起来复杂且成本高昂。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">2. 八进制在现代编程中还有什么用？</h4>
-      <p class="faq-answer">虽然八进制在编程中的使用不如十六进制广泛，但它仍在一些特定场景中使用。最典型的是Unix/Linux系统的文件权限表示，例如 <code>chmod 755</code> 中的755就是八进制，表示文件所有者的读、写、执行权限。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">3. 如何快速判断一个十六进制数的奇偶性？</h4>
-      <p class="faq-answer">只需要看十六进制数的最后一位。如果最后一位是偶数（0, 2, 4, 6, 8, A, C, E），则整个数是偶数；如果最后一位是奇数（1, 3, 5, 7, 9, B, D, F），则整个数是奇数。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">4. 为什么颜色代码使用十六进制而不是RGB数字？</h4>
-      <p class="faq-answer">十六进制更紧凑且易于阅读。一个颜色分量用十六进制只需2位（00-FF），而十进制需要1-3位（0-255）。此外，十六进制与二进制的转换关系简单，便于计算机内部处理。例如，#FF0000 比 RGB(255, 0, 0) 更简洁。</p>
-    </div>
-    
-    <div class="faq-item">
-      <h4 class="faq-question">5. 如何将大数字从二进制转换为十进制？</h4>
-      <p class="faq-answer">对于大数字，可以先将二进制转换为十六进制（每4位一组），然后将十六进制转换为十进制，这样计算量更小。或者使用计算器工具，特别是程序员计算器，可以快速完成任意进制之间的转换。</p>
+
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b">使用前你需要知道的几点</h2>
+    <div class="space-y-4">
+      <div class="p-4 border border-yellow-200 bg-yellow-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">需要浏览器支持</h4>
+        <p class="text-gray-700 text-sm">这类工具通常需要你电脑或手机里的浏览器支持一个叫“WebGL”的功能，这依赖于你的显卡。绝大多数现代设备和浏览器都没问题，但如果你用的是很老的电脑或浏览器，可能会无法使用。</p>
+      </div>
+      <div class="p-4 border border-blue-200 bg-blue-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">第一次使用要等等</h4>
+        <p class="text-gray-700 text-sm">就像打开一个新软件需要加载一样，这类在线工具第一次使用时，也需要一点点时间来加载背后的“智能修复模型”。加载完成后，以后再用就快了。</p>
+      </div>
+      <div class="p-4 border border-gray-200 bg-gray-50 rounded">
+        <h4 class="font-semibold text-gray-800 mb-1">关于图片格式</h4>
+        <p class="text-gray-700 text-sm">普通的JPG、PNG图片都可以处理。但是动态的GIF图片目前一般不支持，因为它是很多张图组成的，处理起来很不一样。</p>
+      </div>
     </div>
   </div>
-  
-  <div class="conclusion">
-    <h2>总结</h2>
-    <p>进制转换是计算机科学的基础知识，虽然看起来抽象，但在实际编程和系统维护中无处不在。从颜色代码到内存地址，从位运算到加密算法，掌握进制转换能让你更深入地理解计算机的工作原理。</p>
-    
-    <p>现在你可以使用我们的<strong>在线进制转换器</strong>，快速准确地完成二进制、八进制、十进制和十六进制之间的任意转换。无论你是学习编程的学生、从事软件开发的专业人士，还是对计算机技术感兴趣的爱好者，这个工具都能为你提供强大的支持。</p>
-    
-    <p class="cta">开始使用进制转换器，让数字转换变得简单高效！</p>
+
+  <div class="text-center border-t pt-8 mt-8">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">让记忆重新清晰起来</h3>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">无论是想要修复一张珍贵的家庭老照片，还是需要一张清晰的图片用于工作展示，图片高清化工具都能帮上忙。它把复杂的技术藏在背后，留给我们的是一个简单、直观的解决模糊问题的方法。</p>
+    <p class="text-gray-600 text-sm">下次再遇到模糊的图片，不妨试试看。</p>
   </div>
 </div>
-`;export{s as default};
+`;export{t as default};

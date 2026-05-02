@@ -1,91 +1,137 @@
 const s=`
-<div class="text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">你的屏幕还好吗？教你轻松发现显示器隐藏的问题</h1>
+<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">翻牌抽奖工具：让每一次抽奖都充满惊喜和仪式感！</h1>
 
-  <div class="mb-8">
-    <p class="text-lg mb-4">新买的显示器总觉得色彩有点怪？用了几年的笔记本屏幕，边缘在暗处会泛白？你可能从没想过，一块小小的屏幕，藏着这么多我们平时看不见的秘密。</p>
-    <p class="text-lg">今天，我们就来聊聊如何像专业人士一样，给你的屏幕做个简单又全面的“体检”。完全不用懂技术，几分钟就能搞定。</p>
+  <div class="bg-gray-50 p-5 rounded-lg mb-8 border-l-4 border-red-600">
+    <p class="text-lg mb-2">你有没有遇到过这些场景？</p>
+    <p class="mb-2">年会抽奖用纸条抽，大家围一圈等着，既无聊又缺乏氛围；直播互动想搞抽奖，却找不到好用的工具；团建活动需要随机分组或抽签，手机App下载了一堆都不顺手。</p>
+    <p class="font-medium">翻牌抽奖工具就是为了解决这些问题而生的——打开浏览器就能用，翻牌的瞬间充满悬念，让每一次抽奖都变成一场小型"开奖仪式"。</p>
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
-    <h2 class="text-xl font-semibold mb-2">先问问自己，有没有遇到过这些情况：</h2>
-    <ul class="list-disc pl-5 space-y-2">
-      <li>在全黑的电影画面里，屏幕角落却有一小块怎么也黑不下去，泛着白光。</li>
-      <li>看一张纯色的图片（比如蓝天），屏幕上某个位置总有一个顽固的、不会变色的小点。</li>
-      <li>看文字时觉得有点模糊、发虚，眼睛容易累。</li>
-      <li>屏幕的颜色看起来总是灰蒙蒙的，不够鲜艳生动。</li>
-    </ul>
-    <p class="mt-4">如果有一条说中了，那你的屏幕可能真的需要“检查”一下了。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">翻牌抽奖工具是什么？</h2>
+    <p class="mb-4">简单来说，它是一个在线的翻牌抽奖工具。屏幕上排列着一张张背面朝上的卡片，每张卡片背后都藏着一个奖项。参与者点击或触摸卡片，卡片翻转后揭晓奖品——就像综艺节目里的"开门大吉"一样，悬念感和惊喜感拉满。</p>
+    <p class="mb-4">和传统的"抽签筒"或"随机数生成器"不同，翻牌抽奖把抽象的随机过程变成了一个可视化的、有仪式感的互动体验。翻牌的那一刻，全场屏息；揭晓的瞬间，欢呼声四起。这就是翻牌抽奖的魅力所在。</p>
+    <p>最关键的是，它完全免费，无需下载安装，打开网页就能直接使用，手机和电脑都完美适配。</p>
   </div>
 
-  <div class="mb-12">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 border-b pb-2">屏幕“体检”到底查什么？</h2>
-    <p class="mb-6">想象一下，你买了一个新水杯，要检查它有没有裂缝、图案印得是否清晰、材质好不好。检查屏幕也是类似的道理，只不过我们看的是光、颜色和细节。一套简单的屏幕测试，主要帮你发现下面几类问题：</p>
-
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-semibold mb-3 text-blue-600">1. 坏点与亮点（屏幕的“瑕疵”）</h3>
-        <p>这就像白墙上的一个黑点，或者黑布上的一个白点。它永远定在那里，不会随着画面变化而改变。通过显示纯净的红色、绿色、蓝色、白色和黑色，就能把这些“瑕疵”一个一个找出来。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">哪些场景最适合用翻牌抽奖？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">年会抽奖</h3>
+        <p>公司年会上，把奖品设置到卡片里，投屏到大屏幕上，员工轮流翻牌。比传统的"摇号"更有参与感和仪式感，现场气氛直接拉满。</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-semibold mb-3 text-blue-600">2. 漏光问题（屏幕的“密封性”）</h3>
-        <p>你可以把它理解为屏幕边框的“密封条”不严实。在显示全黑画面，并且环境光很暗的时候，屏幕边缘可能会透出不均匀的光晕。这会严重影响你看电影或夜间使用的体验。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">直播互动</h3>
+        <p>主播在直播间开启翻牌抽奖，观众弹幕互动决定翻哪张。悬念感十足，弹幕瞬间刷屏，直播间的活跃度和停留时长蹭蹭往上涨。</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-semibold mb-3 text-blue-600">3. 清晰度与对焦（屏幕的“视力”）</h3>
-        <p>屏幕显示文字和线条是否清晰锐利，就像检查它的“视力”好不好。如果看起来有重影或模糊，长时间盯着看眼睛会非常疲劳。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">团建活动</h3>
+        <p>团队建设时，用翻牌来决定分组、任务或小惩罚。未知的刺激让每个人都参与进来，打破冷场，快速热身，团建效果翻倍。</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-        <h3 class="text-xl font-semibold mb-3 text-blue-600">4. 色彩表现力（屏幕的“妆容”）</h3>
-        <p>颜色是否鲜艳、丰富，从深到浅的灰色过渡是否平滑自然，这决定了屏幕显示的画面是否真实、生动。就像一幅画的色彩是否饱满有层次。</p>
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+        <h3 class="text-xl font-medium mb-3 text-red-700">课堂趣味测验</h3>
+        <p>老师把题目或奖励藏在卡片后面，学生翻牌答题或领奖。把枯燥的课堂变成一场"寻宝游戏"，学生的注意力和积极性立刻提升。</p>
       </div>
     </div>
   </div>
 
-  <div class="mb-12">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 border-b pb-2">自己动手检测，好处比你想象的多</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">怎么使用翻牌抽奖工具？</h2>
+    <div class="space-y-6">
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">1</span>
         <div>
-          <span class="font-semibold">帮你省钱省事：</span>新买的显示器、手机或电视，收货后花几分钟验一下。如果发现问题，可以及时联系售后退换，避免过了期限才发现，有理说不清。
+          <h3 class="text-xl font-medium mb-2">设置奖项</h3>
+          <p>在设置面板中添加你想要的奖项名称和数量。比如"一等奖 x1"、"二等奖 x3"、"参与奖 x10"。你也可以选择"指定奖项"模式，精确控制每张卡片背后的奖品；或者选择"随机奖项"模式，让系统自动随机分配。</p>
         </div>
-      </li>
-      <li class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">2</span>
         <div>
-          <span class="font-semibold">保护你的眼睛：</span>如果屏幕对焦不准、有闪烁，你自己可能说不清哪里不对，但眼睛会容易干涩、疲劳。发现问题，才能想办法调整或维修。
+          <h3 class="text-xl font-medium mb-2">选择主题和卡片数量</h3>
+          <p>根据你的活动风格选择主题模式，调整卡片数量。卡片越多，悬念感越强；卡片少，节奏更快。找到适合你场景的平衡点。</p>
         </div>
-      </li>
-      <li class="flex items-start">
-        <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">✓</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">3</span>
         <div>
-          <span class="font-semibold">买得明白，用得放心：</span>无论是选购新设备，还是评估手头旧设备的状态，一次简单的测试能给你最直观的判断依据，不再凭感觉猜。
+          <h3 class="text-xl font-medium mb-2">开始翻牌</h3>
+          <p>点击"开始"按钮，卡片整齐排列在屏幕上。参与者点击任意一张卡片，卡片翻转动画后揭晓奖项。翻牌音效配合动画，氛围感直接拉满。</p>
         </div>
-      </li>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg">4</span>
+        <div>
+          <h3 class="text-xl font-medium mb-2">查看结果与重置</h3>
+          <p>所有卡片翻完后，可以查看完整的抽奖结果。需要再来一轮？一键重置，所有卡片恢复背面，准备下一轮抽奖。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-10 bg-gray-50 p-6 rounded-xl">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">核心功能一览</h2>
+    <ul class="space-y-4 list-disc pl-5">
+      <li><span class="font-medium">自定义奖项和数量：</span>想放什么奖品、放几个，完全由你决定。支持添加多个不同等级的奖项，灵活搭配。</li>
+      <li><span class="font-medium">两种抽奖模式：</span>"指定奖项"模式让你精确控制每张卡片的奖品；"随机奖项"模式让系统自动分配，更公平也更刺激。</li>
+      <li><span class="font-medium">多种主题模式：</span>不同主题带来不同的视觉风格，适配年会、生日派对、课堂活动等各种场景。</li>
+      <li><span class="font-medium">翻牌音效：</span>每次翻牌都有清脆的音效反馈，配合翻转动画，仪式感十足。也可以关闭音效，适合安静场合。</li>
+      <li><span class="font-medium">全屏展示：</span>一键全屏，投屏到大屏幕上效果更震撼，特别适合年会和直播场景。</li>
+      <li><span class="font-medium">本地保存设置：</span>你的奖项配置和偏好设置会自动保存在浏览器中，下次打开无需重新配置，省时省力。</li>
+      <li><span class="font-medium">手机电脑都能用：</span>响应式设计，手机触摸翻牌、电脑鼠标点击，操作体验一样流畅。</li>
     </ul>
   </div>
 
-  <div class="bg-gray-50 p-6 sm:p-8 rounded-xl mb-10">
-    <h2 class="text-2xl font-bold mb-4">动手试试看：一个简单的应用场景</h2>
-    <p class="mb-4">假设你刚收到一台新显示器：</p>
-    <ol class="list-decimal pl-5 space-y-3">
-      <li><span class="font-medium">找个暗点的环境：</span>晚上关掉房间大灯，只留一点背景光最好。</li>
-      <li><span class="font-medium">打开测试工具：</span>找到一个在线的屏幕检测页面（很多网站都提供）。</li>
-      <li><span class="font-medium">重点看两项：</span>
-        <ul class="list-disc pl-5 mt-2">
-          <li>在“纯色测试”时，仔细看红、绿、蓝、白、黑画面下，有没有异常的小点。</li>
-          <li>在“漏光测试”（全黑画面）时，凑近看看屏幕四个边缘，有没有明显发灰、发白的光晕。</li>
-        </ul>
-      </li>
-      <li><span class="font-medium">快速过一遍：</span>再用“对焦测试”看看文字清不清晰，用“色阶测试”看看颜色过渡顺不顺畅。</li>
-    </ol>
-    <p class="mt-6 p-4 bg-white rounded border border-blue-200">整个过程就像给屏幕拍一套“X光片”，不同画面能照出不同的问题。花上5分钟，你就对自己屏幕的健康状况了如指掌了。</p>
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">用好翻牌抽奖的小技巧</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium mb-2">奖项设置要有梯度</h3>
+        <p>大奖少放、小奖多放，制造"稀缺感"。比如1个特等奖、3个一等奖、10个参与奖，这样翻到大奖的惊喜感会更强，翻到参与奖也不会太失落。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">善用全屏模式</h3>
+        <p>投屏到大屏幕或电视上，让所有人都能看到翻牌过程。视觉冲击力更强，现场氛围更好。特别是年会场景，全屏+音效=完美组合。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">提前配置好奖项</h3>
+        <p>活动开始前就把奖项设置好并保存，现场直接打开就能用。避免临时手忙脚乱地输入，保证活动流程顺畅。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">卡片数量适中</h3>
+        <p>卡片太多会让抽奖时间过长，参与者容易失去耐心；卡片太少又缺乏悬念感。一般建议8-20张卡片，根据参与人数灵活调整。</p>
+      </div>
+    </div>
   </div>
 
-  <div class="text-center border-t pt-8">
-    <p class="text-xl mb-4">别再对屏幕的那点“不舒服”视而不见了。</p>
-    <p class="text-gray-600">无论是为了验新货，还是关心自己的日常用眼健康，一次简单的屏幕检测都值得你尝试。现在就去网上搜索“<span class="font-semibold">屏幕检测工具</span>”或“<span class="font-semibold">显示器测试</span>”，找个顺手的工具，给你的屏幕做个全面体检吧！</p>
+  <div class="text-center p-8 border-t border-b border-gray-300">
+    <p class="text-2xl font-semibold mb-4">让每一次抽奖都值得期待</p>
+    <p class="mb-6 text-gray-700">抽奖不应该只是冷冰冰的随机数，它应该是一场充满期待和惊喜的互动体验。翻牌抽奖工具用最直观的方式，把"悬念"和"揭晓"变成了看得见、听得到的过程。</p>
+    <p class="text-lg font-medium">无论是年会、直播、团建还是课堂，打开翻牌抽奖工具，让每一次翻牌都成为全场的高光时刻！</p>
+  </div>
+
+  <div class="mt-10 pt-8 border-t border-gray-300">
+    <h3 class="text-xl font-semibold mb-4">关于翻牌抽奖，你可能想问：</h3>
+    <div class="space-y-6">
+      <div>
+        <p class="font-medium mb-1">问：翻牌抽奖工具需要下载吗？</p>
+        <p class="text-gray-700">答：完全不需要。翻牌抽奖工具是一个网页应用，打开浏览器就能直接使用，不占手机存储空间，也不需要安装任何软件。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：可以自定义奖项吗？</p>
+        <p class="text-gray-700">答：当然可以。你可以自由添加奖项名称和数量，支持多等级奖项设置。还可以选择"指定奖项"模式，精确控制每张卡片背后的奖品内容。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：手机上能用吗？</p>
+        <p class="text-gray-700">答：可以。翻牌抽奖工具采用响应式设计，手机、平板、电脑都能流畅使用。触摸翻牌操作体验和电脑端一样顺畅。</p>
+      </div>
+      <div>
+        <p class="font-medium mb-1">问：适合多少人参与的活动？</p>
+        <p class="text-gray-700">答：从几人的小型团建到几百人的年会都适用。小活动可以轮流翻牌，大活动可以投屏到大屏幕，让所有人一起见证翻牌瞬间。</p>
+      </div>
+    </div>
   </div>
 </div>
 `;export{s as default};

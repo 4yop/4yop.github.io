@@ -1,110 +1,162 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
-  </header>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+    营销号生成器：一键生成"震惊体"文案
+  </h1>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-gray-700">
+      还在为写不出"爆款文案"发愁？想体验一下营销号的独特文风？这个营销号生成器能帮你瞬间生成一篇充满"震惊"、"竟然"、"真相了"等标志性词汇的趣味文章。当然，这纯属娱乐，千万别当真！
+    </p>
+  </div>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
-    <div class="bg-pink-50 p-5 rounded-lg my-5">
-      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
-        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
-        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
-        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
-        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
-      </ol>
-    </div>
-    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
-  </section>
-
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
-          <li>配合表情使用，效果更佳</li>
-          <li>真诚最重要，即使是夸张的话也要发自内心</li>
-        </ul>
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      什么是营销号生成器？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器是一个模拟网络"营销号"文风的在线娱乐工具。你只需要输入一个主题关键词（比如"人工智能"、"直播带货"、"元宇宙"等），它就能自动生成一篇具有以下特点的文章：
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+        <h3 class="font-bold text-red-700 mb-2">夸张标题</h3>
+        <p class="text-sm text-gray-600">"外国小伙一脸懵逼！"、"99%的人都不知道！"</p>
       </div>
-      <div class="bg-red-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
-          <li>在正式场合用，比如工作汇报、商务谈判</li>
-          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
-        </ul>
+      <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <h3 class="font-bold text-yellow-700 mb-2">反复提问</h3>
+        <p class="text-sm text-gray-600">"说到XX大家肯定都不陌生，但是你知道XX到底是怎么回事吗？"</p>
+      </div>
+      <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+        <h3 class="font-bold text-green-700 mb-2">自问自答</h3>
+        <p class="text-sm text-gray-600">"那么问题来了...其实原因很简单..."</p>
+      </div>
+      <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+        <h3 class="font-bold text-purple-700 mb-2">引导互动</h3>
+        <p class="text-sm text-gray-600">"觉得不错点个赞！评论区告诉我你的看法！"</p>
       </div>
     </div>
+
+    <p class="text-gray-700 mb-4">
+      这个工具纯粹是为了娱乐和恶搞而设计的，生成的内容没有任何实际信息量，也不代表任何观点。它让我们在欢笑中反思：什么样的内容才是真正有价值的？
+    </p>
   </section>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      如何使用？
+    </h2>
+    
+    <div class="space-y-6 bg-gray-50 p-6 rounded-xl">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">1</span>
+          输入主题
+        </h3>
+        <p class="text-gray-700 pl-8">
+          在输入框中填写你想要生成的主题关键词，比如"人工智能"、"短视频"、"新能源汽车"等。也可以点击"随机主题"按钮让系统帮你选择。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">2</span>
+          调整参数
+        </h3>
+        <p class="text-gray-700 pl-8">
+          可以选择生成文章的段落数量（3-10段），段落越多，文章越长。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">3</span>
+          生成并复制
+        </h3>
+        <p class="text-gray-700 pl-8">
+          点击"生成文章"按钮，系统会在几秒钟内为你生成一篇完整的营销号风格文章。满意的话可以点击"复制文章"按钮保存到剪贴板。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      适用场景
+    </h2>
+    
     <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">😄</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">朋友间娱乐</h3>
+          <p class="text-gray-600 text-sm">生成搞笑文章分享到朋友圈或群里，活跃气氛</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">💡</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">学习反面教材</h3>
+          <p class="text-gray-600 text-sm">了解什么是"营销号文风"，避免自己在写作时踩坑</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">✍️</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">填充文本测试</h3>
+          <p class="text-gray-600 text-sm">用于网页排版、UI设计时的占位文本</p>
+        </div>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">🎭</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">创意启发</h3>
+          <p class="text-gray-600 text-sm">看看荒诞的组合能否激发你的灵感</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      温馨提示
+    </h2>
+    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r">
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>本工具生成的内容<strong>仅供娱乐</strong>，不代表任何观点，请勿用于正式场合</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>生成的内容可能包含<strong>夸张、误导性表述</strong>，请理性看待</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>请勿将生成的内容用于<strong>商业推广、学术写作</strong>等严肃场景</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>希望这个工具能让大家在欢笑中思考：<strong>什么才是真正有价值的内容？</strong></span>
+        </li>
+      </ul>
     </div>
   </section>
-</article>
+
+  <section class="mt-12 pt-8 border-t border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器的出现，反映了当前网络内容生态中的一些现象。它用幽默的方式揭示了某些"流量至上"的内容创作问题：为了吸引眼球而不惜夸大其词、制造焦虑、传播不实信息。
+    </p>
+    <p class="text-gray-700 mb-4">
+      作为内容的消费者，我们需要提高媒介素养，学会辨别信息的真伪和价值；作为内容的创作者，我们更应该坚持真实、有价值、有深度的创作原则。
+    </p>
+    <p class="text-gray-700">
+      希望这个小小的工具不仅能给你带来欢乐，也能引发你对网络内容质量的思考。好了，本期内容到这就结束了，如果觉得有帮助，记得点赞收藏加关注哦！（开个玩笑~）
+    </p>
+  </section>
+</div>
 `;export{s as default};

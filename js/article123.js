@@ -1,113 +1,233 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <h1 class="text-3xl font-bold tracking-tight text-gray-900 mb-4">神奇的复利：让您的财富像滚雪球一样增长</h1>
-  <p class="text-gray-600 mb-8">您是否好奇，为什么有人能通过储蓄或投资让财富稳定增值？秘密可能就藏在“复利”这个听起来有点专业，但其实非常简单的概念里。今天，我们就来聊聊这个普通人也能掌握的财富增长秘诀。</p>
-
-  <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
-    <p class="font-medium text-blue-800 mb-2">一句话理解复利：</p>
-    <p class="text-blue-700">“利滚利”。您投资获得的利息，会加入本金，在下一期继续产生新的利息。雪球就是这么滚大的。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">复利和您熟悉的“单利”有什么不同？</h2>
-  <p class="mb-6">为了更清楚，我们来打个比方：</p>
-  <div class="overflow-x-auto my-6">
-    <table class="min-w-full border border-gray-300 text-sm">
-      <thead class="bg-gray-100">
-        <tr>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">计算方式</th>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">简单理解</th>
-          <th class="border border-gray-300 px-4 py-3 text-left font-medium">10年后结果 (1万元，年利率5%)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="hover:bg-gray-50">
-          <td class="border border-gray-300 px-4 py-3"><strong>单利</strong></td>
-          <td class="border border-gray-300 px-4 py-3">每年的利息只按最初的本金计算。</td>
-          <td class="border border-gray-300 px-4 py-3 font-mono">约 15，000 元</td>
-        </tr>
-        <tr class="hover:bg-gray-50">
-          <td class="border border-gray-300 px-4 py-3"><strong>复利</strong></td>
-          <td class="border border-gray-300 px-4 py-3">利息加入本金，一起计算下一年的利息。</td>
-          <td class="border border-gray-300 px-4 py-3 font-mono">约 16，289 元</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="mb-8 text-gray-700">看，仅仅10年，复利就多出了近1300元。时间越长，这个差距就会变得越惊人，这就是复利被爱因斯坦称为“世界第八大奇迹”的原因。</p>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">影响复利效果的三个关键因素</h2>
-  <p class="mb-6">想让您的财富雪球滚得更快更大，主要看这三点：</p>
-
-  <div class="grid md:grid-cols-3 gap-6 my-8">
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">1. 本金：最初的雪球</h3>
-      <p class="text-gray-700">您最初投入的多少钱。本金越大，起点越高，未来增长的绝对数额自然也越大。这不意味着钱少就不能开始，恰恰相反，<strong>尽早开始</strong>同样重要。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">2. 利率：山坡的陡峭度</h3>
-      <p class="text-gray-700">您的钱每年能增长百分之几。利率越高，财富增长的速度就越快。但请记住，高收益往往伴随高风险，需要根据自身情况谨慎选择。</p>
-    </div>
-    <div class="border border-gray-200 p-5 rounded-lg shadow-sm">
-      <h3 class="font-bold text-lg mb-3 text-gray-900">3. 时间：山坡的长度</h3>
-      <p class="text-gray-700">这是<strong>最关键</strong>的因素。复利需要时间发酵。投资10年和投资30年，最终结果会是天壤之别。所以，理财规划中，“耐心”是最宝贵的品质。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">普通人如何利用复利？两种常见思路</h2>
-  <p class="mb-4">理解了原理，我们该怎么用呢？主要有两种方式，对应不同的资金情况：</p>
-
-  <div class="space-y-8 my-8">
-    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
-      <div class="md:w-1/4">
-        <div class="bg-blue-100 text-blue-800 font-bold text-center py-4 px-2 rounded">
-          <p class="text-xl">方式一</p>
-          <p class="text-lg">一次性投入</p>
-        </div>
-      </div>
-      <div class="md:w-3/4">
-        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您有一笔闲置资金</h3>
-        <p class="mb-3">比如年终奖、一笔存款，可以将其作为初始本金进行一次性的投资或储蓄，然后让它在漫长的岁月里通过复利自然生长。</p>
-        <p class="text-gray-600 text-sm"><strong>适合人群：</strong>手头有一笔闲钱，希望进行长期规划的人。</p>
-      </div>
-    </div>
-
-    <div class="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-lg">
-      <div class="md:w-1/4">
-        <div class="bg-green-100 text-green-800 font-bold text-center py-4 px-2 rounded">
-          <p class="text-xl">方式二</p>
-          <p class="text-lg">定期定额投入</p>
-        </div>
-      </div>
-      <div class="md:w-3/4">
-        <h3 class="font-bold text-xl mb-3 text-gray-900">如果您每月有稳定结余</h3>
-        <p class="mb-3">也就是常说的“定投”。比如每月固定拿出1000元进行投资。这种方式好处很多：</p>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li><strong>积少成多：</strong>不知不觉中积累可观的本金。</li>
-          <li><strong>平摊成本：</strong>市场波动时，自动实现“买得多时价格低，买得少时价格高”。</li>
-          <li><strong>强迫储蓄：</strong>养成良好的理财习惯。</li>
-        </ul>
-        <p class="mt-3 text-gray-600 text-sm"><strong>适合人群：</strong>大多数有固定收入的工薪阶层，理财新手入门的好方法。</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-900 mt-10 mb-4">动手算一算：您的复利未来会是多少？</h2>
-  <p class="mb-6">光听概念可能还是有点模糊。现在有很多在线的<strong>复利计算器</strong>可以帮我们直观地看到结果。您可以尝试输入不同的数字，比如：</p>
-  <ul class="list-disc pl-5 space-y-3 mb-8 text-gray-700">
-    <li>如果每月定投1000元，年利率5%，30年后会变成多少钱？</li>
-    <li>如果一次性投入5万元，年利率8%，20年后和30年后差距有多大？</li>
-    <li>把复利频率从“一年一次”改成“一月一次”，结果会有什么变化？</li>
+const s=`
+<div class="article-content">
+  <h1>进制转换指南：从二进制到十六进制的全面解析</h1>
+  
+  <p class="intro">进制转换是计算机科学中最基础也是最重要的概念之一。无论是程序员、学生还是对计算机感兴趣的人士，掌握进制转换原理都能让你更好地理解计算机的工作机制。本文将详细介绍二进制、八进制、十进制和十六进制之间的转换方法，以及它们在实际应用中的重要性。</p>
+  
+  <h2>什么是进制系统？</h2>
+  
+  <p>进制系统（Number System）是一种表示数字的方法。我们在日常生活中使用的<strong>十进制</strong>是最常见的进制，它使用0-9共10个数字符号。而在计算机领域，<strong>二进制</strong>是最基础的进制，因为计算机的所有数据最终都由0和1表示。</p>
+  
+  <p>除了十进制和二进制，计算机中常用的进制还有：</p>
+  
+  <ul class="feature-list">
+    <li><strong>二进制（Binary）</strong>：使用0和1两个符号，基数是2，计算机的底层语言</li>
+    <li><strong>八进制（Octal）</strong>：使用0-7八个符号，基数是8，常用于Unix权限表示</li>
+    <li><strong>十进制（Decimal）</strong>：使用0-9十个符号，基数是10，人类日常使用</li>
+    <li><strong>十六进制（Hexadecimal）</strong>：使用0-9和A-F十六个符号，基数是16，广泛用于颜色代码、内存地址等</li>
   </ul>
-  <p class="mb-10 p-4 bg-gray-100 border-l-4 border-blue-500 italic">通过这样的模拟计算，您能更深刻地感受到时间、利率和投入方式对最终结果的影响，从而为自己制定更清晰、合理的长期理财目标。</p>
-
-  <div class="my-10 p-6 border border-yellow-300 bg-yellow-50 rounded-lg">
-    <h3 class="font-bold text-lg mb-3 text-gray-900">最后的小建议</h3>
-    <p class="mb-3">复利的魔力在于其长期性和稳定性。它不是一个让你一夜暴富的工具，而是一个关于<strong>耐心、纪律和长期规划</strong>的财富哲学。</p>
-    <p>最重要的步骤永远是：<strong>了解原理，设定目标，然后，尽早开始您的第一步。</strong></p>
+  
+  <h2>常用进制系统详解</h2>
+  
+  <h3>1. 二进制（Binary - 基数2）</h3>
+  
+  <p>二进制是计算机的"母语"。计算机中的所有数据——文字、图片、视频、程序代码——最终都以二进制形式存储和处理。二进制的每一位称为一个"比特"（bit），8个比特组成一个"字节"（byte）。</p>
+  
+  <p class="example">示例：二进制数 <code>10110</code> 表示的十进制值是：
+  1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 0×2⁰ = 16 + 0 + 4 + 2 + 0 = 22</p>
+  
+  <h3>2. 八进制（Octal - 基数8）</h3>
+  
+  <p>八进制使用数字0-7，在早期的计算机系统中经常使用。一个八进制位可以恰好表示3个二进制位（因为2³=8），这使得八进制在表示二进制数据时非常方便。如今，八进制主要用于Unix/Linux系统的文件权限表示。</p>
+  
+  <p class="example">示例：八进制数 <code>75</code> 表示的十进制值是：
+  7×8¹ + 5×8⁰ = 56 + 5 = 61</p>
+  
+  <h3>3. 十进制（Decimal - 基数10）</h3>
+  
+  <p>十进制是我们最熟悉的进制，使用数字0-9。十进制的"十"源于人类有十根手指，这是最自然的选择。在计算机编程中，我们经常需要将其他进制转换为十进制以便理解和调试。</p>
+  
+  <p class="example">示例：十进制数 <code>255</code> 表示为：
+  2×10² + 5×10¹ + 5×10⁰ = 200 + 50 + 5 = 255</p>
+  
+  <h3>4. 十六进制（Hexadecimal - 基数16）</h3>
+  
+  <p>十六进制使用数字0-9和字母A-F（a-f），其中A-F分别表示10-15。十六进制的一个巨大优势是：一个十六进制位可以恰好表示4个二进制位（因为2⁴=16），这使得十六进制成为表示二进制数据的高效方式。</p>
+  
+  <p class="example">示例：十六进制数 <code>2A</code> 表示的十进制值是：
+  2×16¹ + 10×16⁰ = 32 + 10 = 42</p>
+  
+  <h2>进制转换方法</h2>
+  
+  <h3>任意进制转十进制</h3>
+  
+  <p>将任意进制数转换为十进制，只需要将每一位数字乘以该位的权重（基数的相应次方），然后将所有结果相加。</p>
+  
+  <div class="conversion-example">
+    <p><strong>示例1</strong>：二进制 1101 → 十进制</p>
+    <p>1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13</p>
+    
+    <p><strong>示例2</strong>：十六进制 F3 → 十进制</p>
+    <p>15×16¹ + 3×16⁰ = 240 + 3 = 243</p>
   </div>
-
-  <footer class="mt-12 pt-8 border-t border-gray-300 text-sm text-gray-500">
-    <p>希望这篇文章能帮助您理解复利这个强大的概念。理财路上，从理解一个简单的原理开始。请注意，文中涉及的数字均为示例，不构成任何具体的投资建议，实际投资需谨慎决策。</p>
-  </footer>
-</article>
-`;export{t as default};
+  
+  <h3>十进制转任意进制</h3>
+  
+  <p>将十进制转换为其他进制，采用"除基取余法"：不断除以目标进制的基数，取余数，直到商为0。余数倒序排列就是结果。</p>
+  
+  <div class="conversion-example">
+    <p><strong>示例</strong>：十进制 37 → 二进制</p>
+    <p>37 ÷ 2 = 18 余 1</p>
+    <p>18 ÷ 2 = 9 余 0</p>
+    <p>9 ÷ 2 = 4 余 1</p>
+    <p>4 ÷ 2 = 2 余 0</p>
+    <p>2 ÷ 2 = 1 余 0</p>
+    <p>1 ÷ 2 = 0 余 1</p>
+    <p>余数倒序：100101，所以 37(十进制) = 100101(二进制)</p>
+  </div>
+  
+  <h3>二进制与八进制/十六进制互转</h3>
+  
+  <p>由于2³=8和2⁴=16，二进制与八进制、十六进制的转换非常简单，只需要按位分组转换。</p>
+  
+  <div class="conversion-example">
+    <p><strong>二进制转八进制</strong>：从右向左每3位二进制数为一组，转换为1位八进制数</p>
+    <p>10110110(二进制) → 10 110 110 → 2 6 6 → 266(八进制)</p>
+    
+    <p><strong>二进制转十六进制</strong>：从右向左每4位二进制数为一组，转换为1位十六进制数</p>
+    <p>10110110(二进制) → 1011 0110 → B 6 → B6(十六进制)</p>
+  </div>
+  
+  <h2>程序员如何使用进制转换</h2>
+  
+  <h3>1. 颜色代码</h3>
+  
+  <p>在网页设计和图形编程中，颜色通常用十六进制表示。例如，纯红色是 <code>#FF0000</code>，其中FF表示红色分量，00表示绿色分量，00表示蓝色分量。每个分量的范围是00-FF（十进制的0-255）。</p>
+  
+  <div class="color-example">
+    <div class="color-box" style="background-color: #FF0000;"></div>
+    <p><code>#FF0000</code> = RGB(255, 0, 0) = 纯红色</p>
+  </div>
+  
+  <h3>2. 内存地址</h3>
+  
+  <p>计算机的内存地址通常用十六进制表示，因为这样更简洁且易于阅读。例如，一个32位系统的内存地址可能显示为 <code>0x7FFE1234</code>，其中 <code>0x</code> 前缀表示这是一个十六进制数。</p>
+  
+  <h3>3. 位运算</h3>
+  
+  <p>位运算是直接对二进制位进行操作的运算，包括与（AND）、或（OR）、异或（XOR）、非（NOT）、左移（<<）、右移（>>）等。位运算在底层编程、加密算法、图像处理等领域非常重要。</p>
+  
+  <div class="code-example">
+    <p><strong>示例</strong>：使用位运算检查一个数的奇偶性</p>
+    <p>如果 <code>(n & 1) == 0</code>，则n是偶数；如果 <code>(n & 1) == 1</code>，则n是奇数。</p>
+  </div>
+  
+  <h3>4. 数据压缩和编码</h3>
+  
+  <p>十六进制常用于表示二进制数据，如Base64编码、文件哈希值（MD5、SHA256）、加密密钥等。这些场景下，十六进制比二进制更紧凑，比十进制更直观。</p>
+  
+  <div class="hash-example">
+    <p><strong>文件哈希值示例</strong>：</p>
+    <p>MD5: <code>5d41402abc4b2a76b9719d911017c592</code></p>
+    <p>SHA256: <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></p>
+  </div>
+  
+  <h2>手动进制转换技巧</h2>
+  
+  <h3>二进制快速心算</h3>
+  
+  <p>记住一些常见的二进制数值，可以快速进行心算：</p>
+  
+  <ul class="tips-list">
+    <li>2¹⁰ = 1024 ≈ 1K</li>
+    <li>2²⁰ ≈ 1M（百万）</li>
+    <li>2³⁰ ≈ 1G（十亿）</li>
+    <li>2ⁿ 的二进制形式是 1 后面跟 n 个 0</li>
+  </ul>
+  
+  <h3>十六进制记忆口诀</h3>
+  
+  <p>记住十六进制的字母对应值：</p>
+  
+  <ul class="tips-list">
+    <li>A = 10（Ace，扑克牌中的A）</li>
+    <li>B = 11（Baseball，棒球）</li>
+    <li>C = 12（Clock，时钟）</li>
+    <li>D = 13（Doctor，医生）</li>
+    <li>E = 14（Eagle，老鹰）</li>
+    <li>F = 15（Fifteen，十五）</li>
+  </ul>
+  
+  <h3>使用计算器工具</h3>
+  
+  <p>现代计算器（包括Windows计算器、手机计算器）都支持进制转换功能，可以快速准确地进行复杂的进制转换运算。</p>
+  
+  <h2>进制转换的实际应用场景</h2>
+  
+  <div class="application-grid">
+    <div class="application-card">
+      <h4>🔢 计算机科学教育</h4>
+      <p>理解计算机底层原理，学习数据结构和算法的基础</p>
+    </div>
+    <div class="application-card">
+      <h4>🎨 网页设计</h4>
+      <p>使用十六进制颜色代码设计网页和界面</p>
+    </div>
+    <div class="application-card">
+      <h4>💻 软件开发</h4>
+      <p>调试程序、查看内存、进行位运算操作</p>
+    </div>
+    <div class="application-card">
+      <h4>🔒 网络安全</h4>
+      <p>分析加密算法、破解哈希值、协议分析</p>
+    </div>
+    <div class="application-card">
+      <h4>📡 嵌入式开发</h4>
+      <p>单片机编程、寄存器配置、硬件控制</p>
+    </div>
+    <div class="application-card">
+      <h4>🎮 游戏开发</h4>
+      <p>图形渲染、碰撞检测、性能优化</p>
+    </div>
+  </div>
+  
+  <h2>为什么进制转换如此重要？</h2>
+  
+  <p>进制转换不仅仅是数学运算，它是连接人类思维与计算机世界的桥梁。掌握进制转换可以帮你：</p>
+  
+  <ul class="benefit-list">
+    <li><strong>深入理解计算机</strong>：明白数据如何在计算机中存储和传输</li>
+    <li><strong>提高编程效率</strong>：在调试和优化代码时能够快速定位问题</li>
+    <li><strong>增强逻辑思维</strong>：培养抽象思维和问题分析能力</li>
+    <li><strong>拓展职业发展</strong>：在计算机相关领域拥有竞争优势</li>
+  </ul>
+  
+  <div class="faq-section">
+    <h2>常见问题（FAQ）</h2>
+    
+    <div class="faq-item">
+      <h4 class="faq-question">1. 为什么计算机使用二进制而不是十进制？</h4>
+      <p class="faq-answer">计算机使用二进制是因为电子元件最容易实现两种稳定状态（开/关、高电平/低电平）。二进制系统简单、可靠，适合硬件实现，而十进制需要10种不同的状态，实现起来复杂且成本高昂。</p>
+    </div>
+    
+    <div class="faq-item">
+      <h4 class="faq-question">2. 八进制在现代编程中还有什么用？</h4>
+      <p class="faq-answer">虽然八进制在编程中的使用不如十六进制广泛，但它仍在一些特定场景中使用。最典型的是Unix/Linux系统的文件权限表示，例如 <code>chmod 755</code> 中的755就是八进制，表示文件所有者的读、写、执行权限。</p>
+    </div>
+    
+    <div class="faq-item">
+      <h4 class="faq-question">3. 如何快速判断一个十六进制数的奇偶性？</h4>
+      <p class="faq-answer">只需要看十六进制数的最后一位。如果最后一位是偶数（0, 2, 4, 6, 8, A, C, E），则整个数是偶数；如果最后一位是奇数（1, 3, 5, 7, 9, B, D, F），则整个数是奇数。</p>
+    </div>
+    
+    <div class="faq-item">
+      <h4 class="faq-question">4. 为什么颜色代码使用十六进制而不是RGB数字？</h4>
+      <p class="faq-answer">十六进制更紧凑且易于阅读。一个颜色分量用十六进制只需2位（00-FF），而十进制需要1-3位（0-255）。此外，十六进制与二进制的转换关系简单，便于计算机内部处理。例如，#FF0000 比 RGB(255, 0, 0) 更简洁。</p>
+    </div>
+    
+    <div class="faq-item">
+      <h4 class="faq-question">5. 如何将大数字从二进制转换为十进制？</h4>
+      <p class="faq-answer">对于大数字，可以先将二进制转换为十六进制（每4位一组），然后将十六进制转换为十进制，这样计算量更小。或者使用计算器工具，特别是程序员计算器，可以快速完成任意进制之间的转换。</p>
+    </div>
+  </div>
+  
+  <div class="conclusion">
+    <h2>总结</h2>
+    <p>进制转换是计算机科学的基础知识，虽然看起来抽象，但在实际编程和系统维护中无处不在。从颜色代码到内存地址，从位运算到加密算法，掌握进制转换能让你更深入地理解计算机的工作原理。</p>
+    
+    <p>现在你可以使用我们的<strong>在线进制转换器</strong>，快速准确地完成二进制、八进制、十进制和十六进制之间的任意转换。无论你是学习编程的学生、从事软件开发的专业人士，还是对计算机技术感兴趣的爱好者，这个工具都能为你提供强大的支持。</p>
+    
+    <p class="cta">开始使用进制转换器，让数字转换变得简单高效！</p>
+  </div>
+</div>
+`;export{s as default};

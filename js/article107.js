@@ -1,169 +1,88 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">智能抠图工具：一键去除背景，让主体脱颖而出</h1>
+const t=`
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">还在为拼图烦恼？教你一个把多张图片轻松合成一张的简单方法</h1>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">还在为去除图片背景发愁？</p>
-    <p class="mt-2 mb-0">无论是制作证件照、设计电商产品图，还是创作社交媒体内容，去除图片背景都是常见需求。智能抠图工具利用AI技术，一键自动识别主体并去除背景，无需复杂的PS操作，几秒钟就能完成专业级效果。</p>
-  </div>
+  <p class="text-lg text-gray-600 mb-8 text-center">
+    旅游照片、产品对比、朋友圈九宫格...不用下载软件，在线就能搞定。
+  </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">智能抠图的应用场景</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🪪 证件照制作</h3>
-      <p class="text-sm text-gray-600">快速去除原背景，更换为白色、蓝色或红色背景，制作标准证件照。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🛍️ 电商产品图</h3>
-      <p class="text-sm text-gray-600">去除产品背景，制作白底图或透明背景图，符合电商平台要求。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">📱 社交媒体</h3>
-      <p class="text-sm text-gray-600">制作创意头像、表情包、合成图片，让内容更有趣。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🎨 设计创作</h3>
-      <p class="text-sm text-gray-600">提取素材元素，用于海报、Banner、PPT等设计作品。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图 vs 传统方法</h2>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">对比项</th>
-          <th class="border border-gray-300 p-3 text-left">AI智能抠图</th>
-          <th class="border border-gray-300 p-3 text-left">传统PS抠图</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">操作难度</td>
-          <td class="border border-gray-300 p-3 text-green-600">简单，一键完成</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">复杂，需要专业技能</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">处理时间</td>
-          <td class="border border-gray-300 p-3 text-green-600">几秒钟</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">几分钟到几十分钟</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">边缘处理</td>
-          <td class="border border-gray-300 p-3 text-green-600">自动识别，效果自然</td>
-          <td class="border border-gray-300 p-3 text-green-600">精细控制，专业级</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">成本</td>
-          <td class="border border-gray-300 p-3 text-green-600">免费或低成本</td>
-          <td class="border border-gray-300 p-3 text-yellow-600">软件订阅费用</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">适用场景</td>
-          <td class="border border-gray-300 p-3">日常需求、批量处理</td>
-          <td class="border border-gray-300 p-3">专业设计、精细修图</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">AI抠图的工作原理</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
-      <h3 class="font-medium text-indigo-800 mb-2">1. 图像识别</h3>
-      <p class="text-indigo-700">AI模型分析图片内容，识别出前景主体（人物、物体）和背景区域。</p>
-    </div>
-    
-    <div class="p-5 bg-blue-50 rounded-lg border border-blue-100">
-      <h3 class="font-medium text-blue-800 mb-2">2. 边缘检测</h3>
-      <p class="text-blue-700">精确识别主体边缘，处理头发丝、毛发等细节，确保抠图自然。</p>
-    </div>
-    
-    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
-      <h3 class="font-medium text-green-800 mb-2">3. 背景移除</h3>
-      <p class="text-green-700">将识别出的背景区域变为透明或纯色，保留主体完整。</p>
-    </div>
-    
-    <div class="p-5 bg-purple-50 rounded-lg border border-purple-100">
-      <h3 class="font-medium text-purple-800 mb-2">4. 优化输出</h3>
-      <p class="text-purple-700">对边缘进行平滑处理，消除锯齿，生成高质量的PNG透明背景图片。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧与注意事项</h2>
-  
-  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
-    <h3 class="font-medium text-yellow-800 mb-3">💡 获得最佳效果的建议：</h3>
-    <ul class="space-y-2 text-yellow-700">
-      <li>• <strong>主体清晰</strong>：确保主体与背景有明显对比，边缘清晰</li>
-      <li>• <strong>光线均匀</strong>：避免主体一半过亮一半过暗，影响识别</li>
-      <li>• <strong>背景简洁</strong>：复杂背景可能影响识别精度，纯色背景效果最佳</li>
-      <li>• <strong>分辨率适中</strong>：图片过大可能导致处理缓慢，过小则影响细节</li>
-      <li>• <strong>检查边缘</strong>：抠图后检查头发、手指等细节区域，必要时手动调整</li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-10">
+    <p class="mb-2"><strong>你是不是也遇到过这些情况？</strong></p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>旅游回来，想把几张风景照横着拼成一张长图，却不知道用什么工具。</li>
+      <li>做产品对比图，需要把好几个细节图整齐地排在一起，调来调去总对不齐。</li>
+      <li>想在社交媒体发一组照片，但又不想刷屏，希望能把它们合成一张。</li>
+      <li>用手机或电脑自带的软件操作步骤太麻烦，专门下载个软件又觉得不值。</li>
     </ul>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">抠图后的创意应用</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🌅</div>
-      <h3 class="font-medium text-gray-800 mb-2">换背景</h3>
-      <p class="text-sm text-gray-600">将人物放到风景、城市或虚拟场景中</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">✨</div>
-      <h3 class="font-medium text-gray-800 mb-2">加特效</h3>
-      <p class="text-sm text-gray-600">添加阴影、描边、光效等视觉效果</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg text-center">
-      <div class="text-3xl mb-2">🎭</div>
-      <h3 class="font-medium text-gray-800 mb-2">做合成</h3>
-      <p class="text-sm text-gray-600">多元素组合，创作创意图片</p>
-    </div>
-  </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">拼图，其实比你想象的简单</h2>
+  <p class="mb-4">
+    别再把“图片拼接”想成是什么复杂的技术活了。它就像小朋友玩的拼图游戏，只不过我们是在电脑或手机上，把几张电子图片，按照你想要的方式组合成一张新的图片。
+  </p>
+  <p class="mb-4">
+    比如，你想把三天旅行的标志性照片，从左到右连成一条时间线，这就是<strong>横向拼接</strong>。你想把同一个景点的远景、中景、特写从上到下排列，这就是<strong>纵向拼接</strong>。
+  </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：AI抠图能处理复杂背景吗？</p>
-      <p class="text-gray-600">答：现代AI抠图工具可以处理大多数复杂背景，但效果取决于主体与背景的对比度。对于头发丝、半透明物体等细节，高端工具表现更好。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图后的图片是什么格式？</p>
-      <p class="text-gray-600">答：通常输出为PNG格式，支持透明背景。如果不需要透明背景，也可以选择JPG格式并指定背景颜色。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：在线抠图工具安全吗？</p>
-      <p class="text-gray-600">答：使用本地处理的工具非常安全，图片不会上传到服务器。避免使用需要上传图片到云端的服务处理敏感照片。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：抠图效果不满意怎么办？</p>
-      <p class="text-gray-600">答：可以尝试更换原图（选择主体更清晰的），或使用支持手动调整的工具进行边缘修正。部分工具提供"保留"和"删除"画笔进行精细调整。</p>
-    </div>
-  </div>
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">一个在线工具就能解决的麻烦</h2>
+  <p class="mb-4">
+    现在，你不需要成为设计师，也不需要记住复杂的软件操作。一个好的在线图片拼接工具，就像一个智能的图片排版助手，你只需要告诉它你的想法，它就能帮你实现。
+  </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让图片处理更简单</h2>
-  <p>AI技术的发展让原本专业的设计技能变得触手可及。智能抠图工具让每个人都能轻松获得专业级的图片处理效果，无论是工作需求还是个人创作，都能事半功倍。</p>
-  
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">✅ 使用建议：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 选择本地处理的工具，保护图片隐私</li>
-      <li>• 上传前确保图片质量，主体清晰</li>
-      <li>• 抠图后检查细节，特别是头发和边缘</li>
-      <li>• 保存为PNG格式保留透明背景</li>
-      <li>• 尝试不同的背景替换，发挥创意</li>
+  <div class="bg-gray-50 p-6 rounded-xl mb-8">
+    <h3 class="text-xl font-semibold mb-3 text-gray-900">它能为你做什么？</h3>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">1</div>
+        <div>
+          <strong>操作极其简单</strong>：你只需要把电脑里或手机上的照片拖进去，或者点一下选择。就像把文件放进一个文件夹一样直观。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">2</div>
+        <div>
+          <strong>拼接方式灵活</strong>：想横着拼、竖着拼，还是排成几行几列的网格（比如经典的九宫格），都可以自由选择。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">3</div>
+        <div>
+          <strong>细节可以微调</strong>：图片之间要不要留白、留多大空、图片在格子里的对齐方式（靠上、居中、靠下），甚至背景颜色都可以随你心意调整。
+        </div>
+      </li>
+      <li class="flex items-start">
+        <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 text-green-800 flex items-center justify-center mr-3 mt-0.5">4</div>
+        <div>
+          <strong>无需等待，快速生成</strong>：调整好以后，点一下按钮，一张崭新的合成图就做好了。你可以直接下载保存到手机或电脑里。
+        </div>
+      </li>
     </ul>
   </div>
-  
-  <p class="mt-6 text-center text-gray-600">好的工具能让创意无限延伸。现在就开始体验智能抠图的魔力吧！</p>
-</div>
-`;export{r as default};
+
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-4 mt-12">这些时候，你特别需要它</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">制作旅行纪念长图</h4>
+      <p class="text-gray-700">
+        把一次旅行中不同地点的标志性照片，按行程顺序横向拼接起来，形成一张有故事感的“视觉游记”，分享起来更有格调，也方便打印留念。
+      </p>
+    </div>
+    <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+      <h4 class="font-bold text-lg mb-2 text-gray-900">社交媒体内容创作</h4>
+      <p class="text-gray-700">
+        想分享多张美食、宠物或穿搭照片？与其连发好几条，不如把它们优雅地拼成一张九宫格或对比图。信息更集中，版面也更美观，更容易获得关注。
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl border text-center mt-14">
+    <h3 class="text-2xl font-bold mb-3">告别拼图繁琐，试试更聪明的办法</h3>
+    <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
+      一个顺手的小工具，能省去你大量查找软件、学习操作的时间。无论是为了工作展示，还是生活分享，把几张图片完美地合成一张，都可以变得非常简单。
+    </p>
+    <p class="font-medium">
+      如果你正好需要处理图片，不妨去了解一下这种在线拼接图片的便捷方式。
+    </p>
+  </div>
+</article>
+`;export{t as default};

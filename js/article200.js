@@ -1,193 +1,98 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">大小写转换工具：一键统一文本格式，告别手动修改</h1>
+const t=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-700 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">想知道你的文章到底写了些什么？一个免费工具全告诉你</h1>
+  <p class="text-lg mb-8 text-gray-600">
+    无论是写工作总结、发一篇长微博，还是准备演讲稿，你是否也曾对着屏幕疑惑：我这篇文章到底写了多少字？读起来费劲吗？有没有哪个词被我翻来覆去地用？今天，就给大家介绍一个能帮你一眼看清文章“底细”的免费在线工具。
+  </p>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">一段大小写混乱的文本，你准备怎么改？</p>
-    <p class="mt-2 mb-0">手动一个个字母修改？太浪费时间了。大小写转换工具可以一键将文本转换为大写、小写或首字母大写格式，几秒钟完成原本需要几分钟的工作。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">大小写转换的常见应用场景</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-      <h3 class="font-medium text-gray-800 mb-2">📝 文档格式化</h3>
-      <p class="text-sm text-gray-600">统一标题、段落的大小写风格，让文档更专业规范。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-      <h3 class="font-medium text-gray-800 mb-2">💻 编程开发</h3>
-      <p class="text-sm text-gray-600">快速转换变量名、常量名（如camelCase、CONSTANT_CASE）。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-      <h3 class="font-medium text-gray-800 mb-2">📊 数据整理</h3>
-      <p class="text-sm text-gray-600">统一Excel或数据库中的文本字段格式。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-      <h3 class="font-medium text-gray-800 mb-2">✍️ 内容创作</h3>
-      <p class="text-sm text-gray-600">调整文章标题、社交媒体文案的大小写风格。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">支持的转换格式</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="p-4 border-2 border-gray-200 rounded-lg">
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="font-medium text-gray-800">大写 (UPPERCASE)</h3>
-        <span class="text-xs bg-gray-200 px-2 py-1 rounded">全大写</span>
-      </div>
-      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
-        <span class="text-gray-500">输入：</span>Hello World<br>
-        <span class="text-gray-500">输出：</span>HELLO WORLD
-      </div>
-      <p class="text-sm text-gray-600 mt-2">适用于强调、标题、缩写或需要突出显示的场景。</p>
-    </div>
-    
-    <div class="p-4 border-2 border-gray-200 rounded-lg">
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="font-medium text-gray-800">小写 (lowercase)</h3>
-        <span class="text-xs bg-gray-200 px-2 py-1 rounded">全小写</span>
-      </div>
-      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
-        <span class="text-gray-500">输入：</span>Hello World<br>
-        <span class="text-gray-500">输出：</span>hello world
-      </div>
-      <p class="text-sm text-gray-600 mt-2">适用于URL、文件名、某些编程场景或统一格式。</p>
-    </div>
-    
-    <div class="p-4 border-2 border-gray-200 rounded-lg">
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="font-medium text-gray-800">首字母大写 (Title Case)</h3>
-        <span class="text-xs bg-gray-200 px-2 py-1 rounded">标题格式</span>
-      </div>
-      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
-        <span class="text-gray-500">输入：</span>hello world<br>
-        <span class="text-gray-500">输出：</span>Hello World
-      </div>
-      <p class="text-sm text-gray-600 mt-2">适用于文章标题、人名、地名、产品名等。</p>
-    </div>
-    
-    <div class="p-4 border-2 border-gray-200 rounded-lg">
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="font-medium text-gray-800">句首大写 (Sentence case)</h3>
-        <span class="text-xs bg-gray-200 px-2 py-1 rounded">句子格式</span>
-      </div>
-      <div class="bg-gray-100 p-3 rounded text-sm font-mono">
-        <span class="text-gray-500">输入：</span>HELLO WORLD. THIS IS A TEST.<br>
-        <span class="text-gray-500">输出：</span>Hello world. This is a test.
-      </div>
-      <p class="text-sm text-gray-600 mt-2">适用于正文段落、普通句子。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">开发者常用：命名风格转换</h2>
-  
-  <p>对于程序员来说，大小写转换是日常工作中最高频的操作之一。不同编程语言和场景有不同的命名规范：</p>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">命名风格</th>
-          <th class="border border-gray-300 p-3 text-left">示例</th>
-          <th class="border border-gray-300 p-3 text-left">使用场景</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">camelCase</td>
-          <td class="border border-gray-300 p-3 font-mono">userName, getData</td>
-          <td class="border border-gray-300 p-3">JavaScript变量、函数</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">PascalCase</td>
-          <td class="border border-gray-300 p-3 font-mono">UserName, GetData</td>
-          <td class="border border-gray-300 p-3">类名、组件名</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">snake_case</td>
-          <td class="border border-gray-300 p-3 font-mono">user_name, get_data</td>
-          <td class="border border-gray-300 p-3">Python、数据库字段</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">CONSTANT_CASE</td>
-          <td class="border border-gray-300 p-3 font-mono">MAX_SIZE, API_KEY</td>
-          <td class="border border-gray-300 p-3">常量、配置项</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">kebab-case</td>
-          <td class="border border-gray-300 p-3 font-mono">user-name, get-data</td>
-          <td class="border border-gray-300 p-3">CSS类名、URL</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">实际使用案例</h2>
-  
-  <div class="space-y-6 my-6">
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
-      <h3 class="font-medium text-lg text-gray-800 mb-2">案例一：统一数据格式</h3>
-      <p>数据分析师小王从多个来源收集了一批用户数据，发现姓名字段格式混乱：有的全大写（"ZHANG SAN"），有的全小写（"zhang san"），有的不规范（"zHANG sAN"）。使用大小写转换工具，一键将所有姓名统一为"首字母大写"格式，数据瞬间变得整洁规范。</p>
-    </div>
-    
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
-      <h3 class="font-medium text-lg text-gray-800 mb-2">案例二：代码重构</h3>
-      <p>开发者小李接手了一个老项目，发现代码中的常量命名不统一，有的是小写，有的是混合大小写。他使用大小写转换工具，快速将所有常量名统一为全大写的CONSTANT_CASE格式，代码规范性和可读性大大提升。</p>
-    </div>
-    
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-indigo-500">
-      <h3 class="font-medium text-lg text-gray-800 mb-2">案例三：文档排版</h3>
-      <p>编辑小张正在整理一份报告，发现标题格式不统一。他使用大小写转换工具，将所有一级标题转换为全大写，二级标题转换为标题格式（Title Case），文档的专业感立即提升。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">使用技巧</h2>
-  
-  <div class="bg-yellow-50 p-5 rounded-lg my-6 border border-yellow-200">
-    <h3 class="font-medium text-yellow-800 mb-3">💡 提高效率的小技巧：</h3>
-    <ul class="space-y-2 text-yellow-700">
-      <li>• <strong>批量处理</strong>：将多行文本一次性粘贴，统一转换格式</li>
-      <li>• <strong>快捷键</strong>：熟悉工具的快捷键，操作更快</li>
-      <li>• <strong>复制即用</strong>：转换后直接复制，无需手动选择</li>
-      <li>• <strong>撤销功能</strong>：转换前保留原文，方便对比</li>
-      <li>• <strong>特殊字符</strong>：注意某些特殊字符在转换时的处理</li>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
+    <p class="mb-3">简单来说，它就像一个文章的“体检中心”。你只需要把文字内容贴进去，它就能瞬间生成一份详细的“体检报告”，让你对文章了如指掌。</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><span class="font-medium">数得清清楚楚</span>：总字数、中文字数、英文单词数、段落、句子，这些基础信息一目了然。</li>
+      <li><span class="font-medium">揪出“高频词”</span>：看看你最爱用哪个词，避免文章里同一个词出现太多次。</li>
+      <li><span class="font-medium">评估阅读难度</span>：它会告诉你这篇文章大概是什么阅读水平，是通俗易懂还是需要仔细琢磨。</li>
+      <li><span class="font-medium">分析成分构成</span>：你的文章里，中文、英文、数字、标点各自占了多少比例？</li>
+      <li><span class="font-medium">预估阅读时间</span>：读者大概需要几分钟能读完你的内容？</li>
     </ul>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：转换会改变非英文字符吗？</p>
-      <p class="text-gray-600">答：不会。大小写转换只影响英文字母（A-Z, a-z），中文字符、数字、符号等保持不变。</p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">它具体是怎么帮我分析文章的？</h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 第一步：把文章放进去</h3>
+    <p class="mb-3">你可以直接把文字粘贴到那个大文本框里。如果字太多，也可以上传一个TXT文档，或者点一下“加载示例”，看看分析效果。</p>
+    <p class="text-sm text-gray-500 italic">小提示：你一输入文字，分析结果就会实时更新，非常方便。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 看基础数据：我的文章有多“大”？</h3>
+    <p class="mb-3">这里会整齐地展示文章的基本规模。比如，你想确认一篇稿子是不是超过了800字，或者想知道英文报告里有多少个单词，看这里就行了。它还会贴心地估算出别人读完大概需要的时间。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 看词频分析：我是不是老用同一个词？</h3>
+    <p class="mb-3">这个功能特别适合写作者。它会把你文章里所有词语（中英文都算）的使用次数排个队，用得最多的词排在前面，并用长短不一的彩色条显示出来。</p>
+    <p class="text-sm text-gray-500 italic">比如，如果你发现“非常”、“然后”这样的词条特别长，可能就需要考虑换一些更丰富的表达了。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 看字符分布：我的文章“成分”是什么？</h3>
+    <p class="mb-3">你的文章是中文居多，还是夹杂了大量英文？有没有用到很多数据（数字）？通过四个不同颜色的进度条，你能直观地看到文章的文字构成比例。</p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. 看可读性：我的文章好懂吗？</h3>
+    <p class="mb-3">这是很多人关心的。工具会根据句子的平均长度等信息，给你的文章一个“复杂度评级”，比如“简单”、“中等”或“复杂”。同时，它还会给出一个“建议阅读水平”的参考，比如“中学水平”或“大学水平”。</p>
+    <p class="text-sm text-gray-500 italic">如果你在写一篇面向大众的科普文，那么让评级保持在“简单”或“中等”可能更合适。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">我可能会在哪些地方用到它？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">📝 写作与校对</h4>
+      <p>检查文章长度是否符合要求，优化用词，避免重复，让行文更流畅。</p>
     </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：可以转换整篇文章吗？</p>
-      <p class="text-gray-600">答：可以。工具通常支持大段文本输入，但建议分段处理，以便更好地控制格式。</p>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🎓 学习与备考</h4>
+      <p>分析范文结构，评估自己作文的难度，或者准备演讲时控制篇幅和语速。</p>
     </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：转换后的文本可以撤销吗？</p>
-      <p class="text-gray-600">答：建议在转换前复制保留原文。虽然可以再次转换，但多次转换可能无法完全恢复原样（如全大写转小写再转大写，原小写部分信息丢失）。</p>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">💼 工作与汇报</h4>
+      <p>确保工作总结、项目报告内容精炼、重点突出，数据比例清晰。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🌐 内容创作</h4>
+      <p>为公众号、博客文章把脉，调整可读性以适应目标读者，优化阅读体验。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">让文本处理更高效</h2>
-  <p>大小写转换看似简单，却是文本处理中最基础、最高频的操作之一。一个好用的工具，能让你从繁琐的手动修改中解放出来，专注于更有价值的工作。</p>
-  
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">✅ 记住这些要点：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 根据使用场景选择合适的转换格式</li>
-      <li>• 转换前保留原文备份</li>
-      <li>• 大段文本建议分段处理</li>
-      <li>• 注意特殊字符和空格的保留</li>
-      <li>• 将工具加入书签，随时可用</li>
-    </ul>
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+    <h2 class="text-xl font-bold text-gray-800 mb-3">常见问题解答</h2>
+    <div class="space-y-4">
+      <div>
+        <h4 class="font-semibold text-gray-800">问：这个工具要收费吗？需要注册吗？</h4>
+        <p class="text-gray-600">答：完全免费，打开网页就能用，不需要注册或登录。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：我的文章内容会被上传到服务器吗？安全吗？</h4>
+        <p class="text-gray-600">答：分析过程通常在您的浏览器本地完成，保证了文章内容的私密性。您可以放心使用。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：分析完的结果能保存下来吗？</h4>
+        <p class="text-gray-600">答：可以的。工具提供了多种导出方式，您可以把详细的“体检报告”保存为TXT或JSON文件，或者直接复制结果。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：它支持分析中英文混合的文章吗？</h4>
+        <p class="text-gray-600">答：当然支持。这正是它的一个特色，能够同时精准识别和统计中英文内容。</p>
+      </div>
+    </div>
   </div>
-  
-  <p class="mt-6 text-center text-gray-600">小工具，大效率。从今天开始，让大小写转换成为你文本处理的标准步骤。</p>
+
+  <div class="text-center mt-12 p-8 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border">
+    <p class="text-xl font-medium text-gray-800 mb-4">想立刻为你的文章做一次全面“体检”吗？</p>
+    <p class="mb-6 text-gray-600">这个<span class="font-medium text-gray-800">文本统计分析器</span>操作简单，功能全面，就像一位默默帮你检查文章的得力助手。无论你是学生、作者还是上班族，它都能帮你更清晰地认识自己的文字作品。</p>
+    <p class="text-lg font-semibold text-blue-600">快去试试吧，只需粘贴文字，一切答案即刻呈现。</p>
+  </div>
 </div>
-`;export{r as default};
+`;export{t as default};
