@@ -1,1 +1,1 @@
-@keyframes pulse-21627234{0%,to{transform:scale(1)}50%{transform:scale(1.05)}}.animate-pulse[data-v-21627234]{animation:pulse-21627234 1s ease-in-out infinite}@media(max-width:768px){.max-w-\[1400px\][data-v-21627234]{padding:10px}}
+.animate-spin[data-v-c1252d3a]{animation:spin-c1252d3a 1s linear infinite}@keyframes spin-c1252d3a{to{transform:rotate(360deg)}}
