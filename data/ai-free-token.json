@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02",
+  "updatedAt": "2026-05-04",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -116,7 +116,7 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户注册即领 2000万 token（约等于14元代金券，永久有效）；完成实名认证再赠 16元 代金券（真金白银）；支持DeepSeek、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k",
+      "quota": "新用户注册即领 2000万 token（约等于14元代金券，永久有效）；完成实名认证再赠 16元 代金券（真金白银）；支持DeepSeek-V4、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k",
       "cycle": "2000万token永久有效；实名认证代金券一次性赠送",
       "url": "https://cloud.siliconflow.cn/i/mrnv0xyV",
       "develop": {
@@ -125,6 +125,7 @@
         "models": [
           "deepseek-ai/DeepSeek-V3",
           "deepseek-ai/DeepSeek-R1",
+          "deepseek-ai/DeepSeek-V4-Flash",
           "Qwen/Qwen2.5-72B-Instruct",
           "Qwen/Qwen2.5-32B-Instruct",
           "meta-llama/Llama-3.3-70B-Instruct",
@@ -271,17 +272,17 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 deepseek-chat / DeepSeek-V4 系列及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ DeepSeek V4 已于2026年4月下旬正式发布，支持1M上下文，优惠期至2026/05/31）",
+      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 DeepSeek-V4 系列及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ 旧模型名 deepseek-chat / deepseek-reasoner 将于 2026-07-24 停用，当前分别指向 deepseek-v4-flash 的非思考模式和思考模式，请尽快迁移；DeepSeek V4 支持1M上下文）",
       "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
         "base_url": "https://api.deepseek.com/v1",
         "models": [
+          "deepseek-v4-pro",
+          "deepseek-v4-flash",
           "deepseek-chat",
           "deepseek-reasoner",
-          "deepseek-v4-flash",
-          "deepseek-v4-pro",
           "deepseek-v3",
           "deepseek-r1"
         ]
@@ -1370,6 +1371,41 @@
           "meta-llama/llama-3-3-70b-instruct",
           "mistralai/mistral-small-3-1-24b-instruct-2503",
           "ibm/granite-embedding-278m-multilingual"
+        ]
+      }
+    },
+    {
+      "name": "OpenAI API",
+      "quota": "新账户赠送 $5-18 免费积分（因地区而异，无需信用卡；可用于 GPT-4o Mini、GPT-4o、GPT-5、o3 等全系列模型；⚠️ 注意：2025年8月起部分新账户不再自动获赠积分，具体以账户 Billing 页面为准，积分不可靠、账户差异大，建议验证后再规划使用）",
+      "cycle": "一次性注册积分（3个月有效，过期清零不可延期）",
+      "url": "https://platform.openai.com",
+      "develop": {
+        "document_url": "https://platform.openai.com/docs",
+        "base_url": "https://api.openai.com/v1",
+        "models": [
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4.1",
+          "o3",
+          "o4-mini"
+        ]
+      }
+    },
+    {
+      "name": "Glhf.chat",
+      "quota": "免费无限制 API 访问（测试阶段）；可将 Hugging Face 上任意开源模型转为 OpenAI 兼容 API；支持 Llama 3.3 70B、Qwen2.5 72B、DeepSeek R1 等主流开源模型；自动扩缩 GPU 集群",
+      "cycle": "永久免费（测试阶段，政策可能调整）",
+      "url": "https://glhf.chat",
+      "develop": {
+        "document_url": "https://glhf.chat/docs",
+        "base_url": "https://api.glhf.chat/v1",
+        "models": [
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "deepseek-ai/DeepSeek-R1"
         ]
       }
     }

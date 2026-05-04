@@ -1141,5 +1141,23 @@
     "features": "金融行业专属AI智能体平台；信通院智能体5级认证、等保三级及ISO 27001认证；内置金融行业专属知识库及多模态数据处理能力；认知+执行双引擎与多智能体协同架构；支持风控模型、信贷审批等金融场景；已服务1300+政企客户；在重庆银行等标杆案例中实现信贷审批时效缩短87%、单笔录入时间由210分钟降至15分钟",
     "website": "https://www.kingsee.com/",
     "id": 167
+  },
+  {
+    "name": "QwenPaw",
+    "developer": "阿里云通义实验室（AgentScope团队）",
+    "releaseTime": "2026.04.13",
+    "deployment": "本地+云端双部署，开源项目（GitHub），支持一键本地部署和魔搭社区云端部署",
+    "features": "CoPaw正式更名QwenPaw，深度融入通义千问(Qwen)生态；业界最低部署门槛的桌面Agent工具；支持钉钉/飞书/QQ/Discord/iMessage等10+通讯渠道；内置心跳主动执行、定时任务、多Agent隔离运行；定制QwenPaw-Flash小模型开源，适配本地部署；搭配ToolGuard/FileGuard/SkillScanner三重安全机制；记忆与个性化完全由用户掌控",
+    "website": "https://github.com/agentscope-ai/QwenPaw",
+    "id": 168
+  },
+  {
+    "name": "ClawSeeds",
+    "developer": "未明确",
+    "releaseTime": "2026.05.03",
+    "deployment": "纯手机端H5网页应用，免部署免下载，注册登录即用",
+    "features": "手机端免部署龙虾AI工具，网页端直接访问即开即用；全云端运行，无需本地部署环境；跨应用协同（电商下单、社交回复、办公协作）；自然语言指令全链执行，无需代码无需维护脚本；云端沙箱隔离+独立AI引擎双重安全防护；手机号验证30秒进入操作界面；不读取隐私文件、不泄露敏感信息",
+    "website": "https://www.sohu.com/a/1017955743_122636163",
+    "id": 169
   }
 ]
