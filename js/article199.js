@@ -1,98 +1,162 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-700 leading-relaxed">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">想知道你的文章到底写了些什么？一个免费工具全告诉你</h1>
-  <p class="text-lg mb-8 text-gray-600">
-    无论是写工作总结、发一篇长微博，还是准备演讲稿，你是否也曾对着屏幕疑惑：我这篇文章到底写了多少字？读起来费劲吗？有没有哪个词被我翻来覆去地用？今天，就给大家介绍一个能帮你一眼看清文章“底细”的免费在线工具。
-  </p>
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+    营销号生成器：一键生成"震惊体"文案
+  </h1>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
-    <p class="mb-3">简单来说，它就像一个文章的“体检中心”。你只需要把文字内容贴进去，它就能瞬间生成一份详细的“体检报告”，让你对文章了如指掌。</p>
-    <ul class="list-disc pl-5 space-y-1">
-      <li><span class="font-medium">数得清清楚楚</span>：总字数、中文字数、英文单词数、段落、句子，这些基础信息一目了然。</li>
-      <li><span class="font-medium">揪出“高频词”</span>：看看你最爱用哪个词，避免文章里同一个词出现太多次。</li>
-      <li><span class="font-medium">评估阅读难度</span>：它会告诉你这篇文章大概是什么阅读水平，是通俗易懂还是需要仔细琢磨。</li>
-      <li><span class="font-medium">分析成分构成</span>：你的文章里，中文、英文、数字、标点各自占了多少比例？</li>
-      <li><span class="font-medium">预估阅读时间</span>：读者大概需要几分钟能读完你的内容？</li>
-    </ul>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="text-gray-700">
+      还在为写不出"爆款文案"发愁？想体验一下营销号的独特文风？这个营销号生成器能帮你瞬间生成一篇充满"震惊"、"竟然"、"真相了"等标志性词汇的趣味文章。当然，这纯属娱乐，千万别当真！
+    </p>
   </div>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">它具体是怎么帮我分析文章的？</h2>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 第一步：把文章放进去</h3>
-    <p class="mb-3">你可以直接把文字粘贴到那个大文本框里。如果字太多，也可以上传一个TXT文档，或者点一下“加载示例”，看看分析效果。</p>
-    <p class="text-sm text-gray-500 italic">小提示：你一输入文字，分析结果就会实时更新，非常方便。</p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 看基础数据：我的文章有多“大”？</h3>
-    <p class="mb-3">这里会整齐地展示文章的基本规模。比如，你想确认一篇稿子是不是超过了800字，或者想知道英文报告里有多少个单词，看这里就行了。它还会贴心地估算出别人读完大概需要的时间。</p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 看词频分析：我是不是老用同一个词？</h3>
-    <p class="mb-3">这个功能特别适合写作者。它会把你文章里所有词语（中英文都算）的使用次数排个队，用得最多的词排在前面，并用长短不一的彩色条显示出来。</p>
-    <p class="text-sm text-gray-500 italic">比如，如果你发现“非常”、“然后”这样的词条特别长，可能就需要考虑换一些更丰富的表达了。</p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 看字符分布：我的文章“成分”是什么？</h3>
-    <p class="mb-3">你的文章是中文居多，还是夹杂了大量英文？有没有用到很多数据（数字）？通过四个不同颜色的进度条，你能直观地看到文章的文字构成比例。</p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. 看可读性：我的文章好懂吗？</h3>
-    <p class="mb-3">这是很多人关心的。工具会根据句子的平均长度等信息，给你的文章一个“复杂度评级”，比如“简单”、“中等”或“复杂”。同时，它还会给出一个“建议阅读水平”的参考，比如“中学水平”或“大学水平”。</p>
-    <p class="text-sm text-gray-500 italic">如果你在写一篇面向大众的科普文，那么让评级保持在“简单”或“中等”可能更合适。</p>
-  </div>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">我可能会在哪些地方用到它？</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-10">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">📝 写作与校对</h4>
-      <p>检查文章长度是否符合要求，优化用词，避免重复，让行文更流畅。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      什么是营销号生成器？
+    </h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器是一个模拟网络"营销号"文风的在线娱乐工具。你只需要输入一个主题关键词（比如"人工智能"、"直播带货"、"元宇宙"等），它就能自动生成一篇具有以下特点的文章：
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+        <h3 class="font-bold text-red-700 mb-2">夸张标题</h3>
+        <p class="text-sm text-gray-600">"外国小伙一脸懵逼！"、"99%的人都不知道！"</p>
+      </div>
+      <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <h3 class="font-bold text-yellow-700 mb-2">反复提问</h3>
+        <p class="text-sm text-gray-600">"说到XX大家肯定都不陌生，但是你知道XX到底是怎么回事吗？"</p>
+      </div>
+      <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+        <h3 class="font-bold text-green-700 mb-2">自问自答</h3>
+        <p class="text-sm text-gray-600">"那么问题来了...其实原因很简单..."</p>
+      </div>
+      <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+        <h3 class="font-bold text-purple-700 mb-2">引导互动</h3>
+        <p class="text-sm text-gray-600">"觉得不错点个赞！评论区告诉我你的看法！"</p>
+      </div>
     </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">🎓 学习与备考</h4>
-      <p>分析范文结构，评估自己作文的难度，或者准备演讲时控制篇幅和语速。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">💼 工作与汇报</h4>
-      <p>确保工作总结、项目报告内容精炼、重点突出，数据比例清晰。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h4 class="font-bold text-lg text-gray-800 mb-2">🌐 内容创作</h4>
-      <p>为公众号、博客文章把脉，调整可读性以适应目标读者，优化阅读体验。</p>
-    </div>
-  </div>
 
-  <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
-    <h2 class="text-xl font-bold text-gray-800 mb-3">常见问题解答</h2>
+    <p class="text-gray-700 mb-4">
+      这个工具纯粹是为了娱乐和恶搞而设计的，生成的内容没有任何实际信息量，也不代表任何观点。它让我们在欢笑中反思：什么样的内容才是真正有价值的？
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      如何使用？
+    </h2>
+    
+    <div class="space-y-6 bg-gray-50 p-6 rounded-xl">
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">1</span>
+          输入主题
+        </h3>
+        <p class="text-gray-700 pl-8">
+          在输入框中填写你想要生成的主题关键词，比如"人工智能"、"短视频"、"新能源汽车"等。也可以点击"随机主题"按钮让系统帮你选择。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">2</span>
+          调整参数
+        </h3>
+        <p class="text-gray-700 pl-8">
+          可以选择生成文章的段落数量（3-10段），段落越多，文章越长。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium text-gray-800 mb-2 flex items-center">
+          <span class="flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full text-sm mr-2">3</span>
+          生成并复制
+        </h3>
+        <p class="text-gray-700 pl-8">
+          点击"生成文章"按钮，系统会在几秒钟内为你生成一篇完整的营销号风格文章。满意的话可以点击"复制文章"按钮保存到剪贴板。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      适用场景
+    </h2>
+    
     <div class="space-y-4">
-      <div>
-        <h4 class="font-semibold text-gray-800">问：这个工具要收费吗？需要注册吗？</h4>
-        <p class="text-gray-600">答：完全免费，打开网页就能用，不需要注册或登录。</p>
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">😄</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">朋友间娱乐</h3>
+          <p class="text-gray-600 text-sm">生成搞笑文章分享到朋友圈或群里，活跃气氛</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：我的文章内容会被上传到服务器吗？安全吗？</h4>
-        <p class="text-gray-600">答：分析过程通常在您的浏览器本地完成，保证了文章内容的私密性。您可以放心使用。</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">💡</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">学习反面教材</h3>
+          <p class="text-gray-600 text-sm">了解什么是"营销号文风"，避免自己在写作时踩坑</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：分析完的结果能保存下来吗？</h4>
-        <p class="text-gray-600">答：可以的。工具提供了多种导出方式，您可以把详细的“体检报告”保存为TXT或JSON文件，或者直接复制结果。</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">✍️</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">填充文本测试</h3>
+          <p class="text-gray-600 text-sm">用于网页排版、UI设计时的占位文本</p>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-gray-800">问：它支持分析中英文混合的文章吗？</h4>
-        <p class="text-gray-600">答：当然支持。这正是它的一个特色，能够同时精准识别和统计中英文内容。</p>
+
+      <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+        <span class="text-2xl">🎭</span>
+        <div>
+          <h3 class="font-semibold text-gray-800">创意启发</h3>
+          <p class="text-gray-600 text-sm">看看荒诞的组合能否激发你的灵感</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="text-center mt-12 p-8 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border">
-    <p class="text-xl font-medium text-gray-800 mb-4">想立刻为你的文章做一次全面“体检”吗？</p>
-    <p class="mb-6 text-gray-600">这个<span class="font-medium text-gray-800">文本统计分析器</span>操作简单，功能全面，就像一位默默帮你检查文章的得力助手。无论你是学生、作者还是上班族，它都能帮你更清晰地认识自己的文字作品。</p>
-    <p class="text-lg font-semibold text-blue-600">快去试试吧，只需粘贴文字，一切答案即刻呈现。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b">
+      温馨提示
+    </h2>
+    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r">
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>本工具生成的内容<strong>仅供娱乐</strong>，不代表任何观点，请勿用于正式场合</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>生成的内容可能包含<strong>夸张、误导性表述</strong>，请理性看待</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>请勿将生成的内容用于<strong>商业推广、学术写作</strong>等严肃场景</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 mr-2 font-bold">!</span>
+          <span>希望这个工具能让大家在欢笑中思考：<strong>什么才是真正有价值的内容？</strong></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mt-12 pt-8 border-t border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">写在最后</h2>
+    <p class="text-gray-700 mb-4">
+      营销号生成器的出现，反映了当前网络内容生态中的一些现象。它用幽默的方式揭示了某些"流量至上"的内容创作问题：为了吸引眼球而不惜夸大其词、制造焦虑、传播不实信息。
+    </p>
+    <p class="text-gray-700 mb-4">
+      作为内容的消费者，我们需要提高媒介素养，学会辨别信息的真伪和价值；作为内容的创作者，我们更应该坚持真实、有价值、有深度的创作原则。
+    </p>
+    <p class="text-gray-700">
+      希望这个小小的工具不仅能给你带来欢乐，也能引发你对网络内容质量的思考。好了，本期内容到这就结束了，如果觉得有帮助，记得点赞收藏加关注哦！（开个玩笑~）
+    </p>
+  </section>
 </div>
-`;export{t as default};
+`;export{s as default};

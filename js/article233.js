@@ -1,50 +1,47 @@
 const l=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6">你的反应速度有多快？一分钟免费测测看</h2>
+<div class="text-gray-800 leading-relaxed">
+  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
 
-    <p class="text-lg mb-6">你有没有好奇过，自己在关键时刻反应够不够快？开车时遇到突发状况，或者运动时需要瞬间判断，反应速度都起着关键作用。今天，我们就来聊聊这个有趣的话题，并提供一个简单的方法，让你立刻了解自己的反应时间。</p>
+  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">反应速度到底是什么？</h2>
-    <p class="mb-4">简单来说，反应速度就是你从看到或听到某个信号，到身体做出动作所需要的时间。比如，绿灯亮起后踩下油门，或者看到球飞来时挥动球拍，这中间短暂的延迟，就是你的反应时间。</p>
-    <p class="mb-6">这个时间通常以毫秒（千分之一秒）来计算。普通人的反应时间一般在200到300毫秒之间，经过训练的运动员或电竞选手可能会更快。了解自己的反应速度，不仅能满足好奇心，也能让你更了解自己的身体状态。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
+  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
+  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">哪些因素会影响反应速度？</h2>
-    <p class="mb-4">反应速度并不是一成不变的，它受到很多日常生活因素的影响：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">睡眠质量：</span>没睡好或者熬夜后，反应会明显变慢。</li>
-      <li><span class="font-medium">专注程度：</span>走神的时候，反应时间自然会延长。</li>
-      <li><span class="font-medium">情绪压力：</span>紧张或焦虑时，反应可能变得不稳定。</li>
-      <li><span class="font-medium">身体疲劳：</span>长时间工作或运动后，反应能力会下降。</li>
-      <li><span class="font-medium">年龄：</span>一般来说，年轻人的反应会略快于老年人，但个体差异很大。</li>
-    </ul>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
+  <p class="mb-4">使用起来非常简单，只需要三步：</p>
+  <ol class="list-decimal pl-8 mb-6 space-y-3">
+    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
+    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
+    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
+  </ol>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何简单测试你的反应速度？</h2>
-    <p class="mb-4">测试反应速度其实很简单，不需要复杂的仪器。其核心原理是：在你毫无准备的情况下给出一个视觉信号（比如颜色变化），然后记录下你从看到信号到做出指定动作（比如点击按钮）所花的时间。</p>
-    <p class="mb-6">通过这种测试，你可以得到一个具体的毫秒数。多测试几次，取一个平均水平，就能比较客观地反映你当下的反应状态。记住，测试时尽量保持放松和专注，结果会更准确。</p>
+  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
+    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
+    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
+  </div>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">测出来的反应时间有什么用？</h2>
-    <p class="mb-4">首先，它给你一个有趣的参照。你可以和朋友或家人比一比，看看谁的反应更快，变成一个小游戏。</p>
-    <p class="mb-4">更重要的是，你可以把它当作一个简单的“状态监测仪”。如果某天测出来反应时间特别长，也许是在提醒你：是不是太累了？该休息了？或者最近注意力不太集中？</p>
-    <p class="mb-6">当然，这只是一个参考，不能作为医学判断依据。如果你长期感觉反应迟钝，并伴有其他不适，还是要咨询专业医生。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
+  <ul class="list-disc pl-8 mb-6 space-y-3">
+    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
+    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
+    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
+    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
+    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
+    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
+  </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">怎样让反应变得更快？</h2>
-    <p class="mb-4">虽然先天条件有影响，但反应速度是可以通过一些方式锻炼和维持的：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">规律运动：</span>尤其是球类、乒乓球、羽毛球等需要快速反应的运动。</li>
-      <li><span class="font-medium">保证睡眠：</span>让大脑得到充分休息，是保持反应敏捷的基础。</li>
-      <li><span class="font-medium">适度游戏：</span>一些需要快速判断的动作类或益智类游戏，也是一种练习。</li>
-      <li><span class="font-medium">练习专注：</span>尝试冥想或在一段时间内专注于一件事，减少分心。</li>
-    </ul>
-    <p class="mb-6">最重要的是保持身心健康和良好的生活习惯。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
+  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
+  <ul class="list-disc pl-8 mb-8 space-y-2">
+    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
+    <li>需要查找某个地区对应的官方行政编码时。</li>
+    <li>学习或了解中国行政区划的层级结构时。</li>
+    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
+  </ul>
 
-    <div class="bg-blue-50 p-6 rounded-lg my-8">
-      <h3 class="text-xl font-semibold mb-3">小提示：正确看待测试结果</h3>
-      <p class="mb-2">反应速度的测试结果受当时环境、心情、设备甚至点击动作本身的影响，会有波动。一次的结果不代表你的永久水平。</p>
-      <p>别太纠结于具体数字，更重要的是关注自己状态的变化趋势，以及通过测试更了解自己的身体信号。把它当作一个认识自己的小工具，玩得开心就好。</p>
-    </div>
-
-    <p class="text-lg mt-10 pt-6 border-t">希望这篇文章能帮你解开关于反应速度的小疑惑。不妨现在就找个工具测一测，看看你的“瞬时反应”在什么水平吧！记得，健康的生活方式和愉悦的心情，才是保持思维敏捷的最好“补剂”。</p>
-  </article>
+  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
+    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
+  </div>
 </div>
 `;export{l as default};

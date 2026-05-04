@@ -1,84 +1,71 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    还在用“生日”当密码？手把手教你打造“破门锤”也打不开的强力密码
-  </h1>
+const s=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <header class="mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">在线体验转动地球：一个可以亲手探索的3D地球模型</h1>
+    <p class="text-lg text-gray-600">你是否曾想象过把地球捧在手中，慢慢转动，仔细看看每一片大陆和海洋？现在，不用想象，在网页上就能轻松实现。</p>
+  </header>
 
-  <div class="text-lg text-gray-600 mb-8">
-    <p>你的网络账号，是不是还在用“123456”、自己生日或者“qwerty”这种简单密码？今天我们就来聊聊，怎么轻松设置一个既安全又好记的密码，给你的数字生活上一把真正的“防盗锁”。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+    <p class="text-blue-700"><strong>小提示：</strong> 如果你看到一个悬浮在黑色背景上、缓缓旋转的蓝色星球，试着用鼠标（电脑）或手指（手机）按住它并拖动，你会发现新大陆。</p>
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium text-blue-800">你知道吗？</p>
-    <p class="mt-1">黑客破解一个6位纯数字密码，可能只需要几秒钟。而一个复杂的强密码，却能让他们望而却步。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">一个活过来的地球仪</h2>
+    <p class="mb-4">还记得小时候地理课上的地球仪吗？我们需要用手去转动它，才能看到地球另一面的国家。而这个在线的3D地球，就像是那个地球仪活了过来，变成了动态的、充满细节的数字版本。</p>
+    <p class="mb-4">它不是一个简单的图片。当你和它互动时，光影会随着你的操作而变化，山脉的起伏、海洋的深浅，都以一种更生动的方式呈现出来。这和我们平时看的平面地图感受完全不同。</p>
+  </section>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">为什么你的旧密码不够安全？</h2>
-  <p class="mb-4">想象一下，你家的门锁如果是用透明塑料做的，小偷一眼就能看清里面的结构，那还安全吗？简单密码就像这“透明锁”。很多人习惯用：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li>自己的名字、生日、手机号。</li>
-    <li>“password”、“admin”这类通用词。</li>
-    <li>键盘上简单的字母序列，比如“asdfgh”。</li>
-  </ul>
-  <p class="mb-6">这些密码太容易被猜到，或者被黑客用“字典攻击”（一种用常见密码列表不断尝试的方法）轻松破解。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">你能用它做什么？</h2>
+    <ul class="list-disc pl-5 space-y-3">
+      <li><strong>自由探索地球全貌</strong>：没有边界，没有限制。你可以从任何角度观察我们的星球，看看各大洲是如何连接在一起的。</li>
+      <li><strong>感受地球的自转</strong>：即使你不去拖动它，它也会自己非常缓慢地旋转，模拟出地球在宇宙中运动的感觉。</li>
+      <li><strong>一个放松的“电子玩具”</strong>：有时候，只是看着这个美丽的蓝色星球慢慢转动，就能让人感到平静和治愈。随手转一转，也是一种简单的乐趣。</li>
+      <li><strong>辅助地理学习</strong>：对于学生或者对世界好奇的人来说，这是一个非常直观的工具。你可以更清楚地看到大陆的相对位置和形状。</li>
+    </ul>
+  </section>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">一个好密码的“配方”是什么？</h2>
-  <p class="mb-4">一个真正强力的密码，就像一份独家秘方，需要混合多种“食材”：</p>
-  <div class="grid md:grid-cols-2 gap-6 mb-8">
-    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="font-bold text-gray-800 mb-2">长度是基础</h3>
-      <p>密码越长，破解难度呈指数级增长。<strong>12位以上</strong>是个不错的起点，就像把锁的链条加长加粗。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何使用这个互动地球？</h2>
+    <p class="mb-4">使用起来非常简单，没有任何复杂步骤：</p>
+    <ol class="list-decimal pl-5 space-y-2 mb-4">
+      <li>打开页面，你会立刻看到一个正在旋转的地球。</li>
+      <li><strong>在电脑上</strong>：用鼠标左键按住地球的任意位置，向左、右、上、下拖动，地球就会跟着你的鼠标方向转动。</li>
+      <li><strong>在手机或平板上</strong>：直接用手指在屏幕上按住并滑动，效果是一样的。</li>
+      <li>松开鼠标或手指，地球会停下来，或者恢复缓慢的自动旋转。</li>
+    </ol>
+    <p>整个过程非常流畅，就像在操作一个真实的物体。页面上方通常会有简单的文字提示，告诉你“拖动地球旋转”。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">它和普通地图有什么区别？</h2>
+    <div class="bg-gray-100 p-5 rounded-lg">
+      <p class="mb-3">我们习惯了看手机上的导航地图，那是为了寻找路线和地点。而这个3D互动地球的重点在于<strong>“观察”和“感知”</strong>。</p>
+      <p class="mb-3">它不强调具体的国界线或城市名，而是着重展现地球作为一个整体的形态、地貌和色彩。通过立体的形式和光影，它能帮助你建立对地球空间感的认知，这是平面地图很难做到的。</p>
+      <p>简单说，它不是用来“找路”的，而是用来“看球”的——看我们生活的这颗星球。</p>
     </div>
-    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-      <h3 class="font-bold text-gray-800 mb-2">混合是关键</h3>
-      <p>把<strong>大写字母、小写字母、数字、特殊符号</strong>（如!@#$）混合使用，能让密码的复杂度大大提升。</p>
-    </div>
-  </div>
-  <p class="mb-6">避免使用有规律的单词或序列，比如“Abc123!@#”虽然混合了多种字符，但规律太明显，安全性也会打折。</p>
+  </section>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">如何轻松获得一个高安全密码？</h2>
-  <p class="mb-4">自己编一个又长又复杂的密码很难记住，这时候，你可以借助一些在线工具——<strong>密码生成器</strong>。它能帮你：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>一键生成</strong>：根据你设定的长度和字符类型，瞬间产生一个随机、无规律的密码。</li>
-    <li><strong>强度分析</strong>：生成后，工具会告诉你这个密码大概有多“强壮”。</li>
-    <li><strong>批量制作</strong>：一次可以生成好几个，方便你在不同场合使用。</li>
-  </ul>
-  <div class="bg-gray-100 p-5 rounded-lg mb-8">
-    <h3 class="font-bold text-gray-800 mb-3">使用密码生成器的小建议：</h3>
-    <p>1. <strong>设定长度</strong>：建议从16位左右开始尝试。</p>
-    <p>2. <strong>勾选字符类型</strong>：尽量把“大写字母、小写字母、数字、符号”全选上。</p>
-    <p>3. <strong>检查强度</strong>：生成后，看看工具给出的强度评分是不是“强”。</p>
-    <p>4. <strong>妥善保存</strong>：生成的密码一定要保存在安全的地方，比如可靠的密码管理器，而不是写在电脑的记事本里。</p>
-  </div>
-
-  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">有了强密码，就万无一失了吗？</h2>
-  <p class="mb-4">强密码是坚固的“锁芯”，但门框也得结实。你还需要：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>开启双重验证</strong>：这是最重要的防线。就像除了密码锁，再加一个指纹或短信验证。</li>
-    <li><strong>不同网站用不同密码</strong>：避免“一把钥匙开所有门”，防止一个网站密码泄露，连累所有账号。</li>
-    <li><strong>定期更换</strong>：尤其是重要账号（如邮箱、银行），建议每半年或一年更换一次密码。</li>
-  </ul>
-
-  <div class="mt-12 pt-8 border-t border-gray-200">
-    <h3 class="text-xl font-bold text-gray-800 mb-4">关于密码，你可能还想知道：</h3>
-    <div class="space-y-4">
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">常见问题解答</h2>
+    <div class="space-y-6">
       <div>
-        <p class="font-medium text-gray-800">问：密码太长太难记怎么办？</p>
-        <p class="text-gray-600 mt-1">答：可以使用“密码管理器”来帮你记忆和自动填写。你只需要记住一个主密码即可。</p>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">需要下载软件吗？</h3>
+        <p class="text-gray-700">完全不需要。你只需要一个现代浏览器（比如Chrome、Edge、Safari），打开网页就能直接使用，非常方便。</p>
       </div>
       <div>
-        <p class="font-medium text-gray-800">问：用家人名字+生日做密码安全吗？</p>
-        <p class="text-gray-600 mt-1">答：不安全。这类个人信息在社交媒体上很容易被找到，是黑客首先尝试的组合。</p>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">在手机上能用吗？</h3>
+        <p class="text-gray-700">可以的。这个地球模型专门做了适配，无论在电脑的大屏幕上，还是在手机的小屏幕上，都能正常显示和操作，体验同样出色。</p>
       </div>
       <div>
-        <p class="font-medium text-gray-800">问：所有的密码都需要很强吗？</p>
-        <p class="text-gray-600 mt-1">答：可以分级处理。重要的核心账号（支付、邮箱）必须用最高强度的密码和双重验证。一些不重要的临时账号，可以使用稍简单但依然不重复的密码。</p>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">为什么有时候转动起来感觉有点卡？</h3>
+        <p class="text-gray-700">这通常和你设备的性能或网络加载贴图资源有关。第一次加载时可能需要一点点时间，加载完成后就会非常流畅了。如果感觉卡顿，可以尝试稍等片刻再操作。</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-300">
-    <p class="text-center font-medium text-gray-800">总结一下，守护你的数字资产，从一个真正的强密码开始。别再使用那些“透明锁”了，现在就动手，为你最重要的账号换上一把“破门锤”也打不开的“防盗锁”吧。</p>
-  </div>
-</div>
-`;export{t as default};
+  <footer class="pt-8 border-t border-gray-200">
+    <p class="text-gray-600">下次当你想换个视角看看我们的世界时，不妨来找找这个可以转动的3D地球。它用一种简洁而美丽的方式提醒我们：人类共同的家园，是如此迷人。</p>
+  </footer>
+</article>
+`;export{s as default};

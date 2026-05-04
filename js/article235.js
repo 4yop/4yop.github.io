@@ -1,85 +1,105 @@
-const t=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">在线录音工具怎么用？一个免费工具帮你轻松录制声音</h1>
-
-  <p class="text-lg text-gray-700 mb-8">无论是想录下会议内容、保存一段灵感迸发的歌声，还是记录网课的重点，你可能都在寻找一个好用的录音方法。今天，我们就来介绍一种直接在网页上就能使用的录音工具，无需安装软件，打开浏览器就能开始录制。</p>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想给朋友送一份特别的祝福？试试这个烟花祝福生成器</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">节日到了、朋友生日了、新年到了，想送一份特别的祝福，但发个红包太俗，发段文字太平淡？今天给大家介绍一个有趣的小工具——烟花祝福生成器，让你送的祝福既炫酷又走心。</p>
+  </header>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-4">什么是网页录音工具？</h2>
-    <p class="text-gray-700 mb-4">简单来说，它是一个在你电脑或手机浏览器里运行的“录音机”。就像你用手机自带的录音功能一样，但它更侧重于在网页上直接使用，录好的声音文件可以直接保存在你的设备里。</p>
-    <p class="text-gray-700">它的好处很明显：<strong class="text-gray-900">方便</strong>，不用下载安装；<strong class="text-gray-900">快捷</strong>，点开网页就能用；而且很多都是<strong class="text-gray-900">免费</strong>的。</p>
-  </section>
-
-  <section class="mb-10 bg-blue-50 p-6 rounded-xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">核心功能一览</h2>
-    <p class="text-gray-700 mb-6">一个功能齐全的在线录音工具，通常包含以下让你用起来很顺手的特点：</p>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-          清晰的录音状态和计时
-        </h3>
-        <p class="text-gray-700">开始录音后，屏幕中央会有明确的状态提示，比如“录制中”、“已暂停”。旁边还有一个实时走动的计时器，让你准确掌握录音时长。</p>
-      </div>
-
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-          看得见的声音波形
-        </h3>
-        <p class="text-gray-700">这不是静悄悄的录音。屏幕上会有一个动态跳动的条形图，声音越大，条形跳得越高。这样你就能直观地看到麦克风是否在正常工作，以及音量大小。</p>
-      </div>
-
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-          灵活的录音控制
-        </h3>
-        <p class="text-gray-700">拥有和实体录音机一样的按键：开始、暂停、继续、停止。你可以随时暂停整理思路，然后继续录，最终合成一个完整的文件。</p>
-      </div>
-
-      <div class="bg-white p-5 rounded-lg shadow-sm">
-        <h3 class="text-xl font-medium text-gray-800 mb-3 flex items-center">
-          <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-          多种格式保存和播放
-        </h3>
-        <p class="text-gray-700">录完后，你可以选择把声音存成不同的格式。比如选择通用性好的MP3，或者音质无损但文件稍大的WAV格式。录制后可以直接在网页上试听回放。</p>
-      </div>
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是烟花祝福？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福，简单来说，就是把你想要说的话，配上绚丽的烟花动画效果，做成一个可以分享的祝福页面。朋友打开后，会看到夜空中绽放的烟花，还有你精心准备的祝福文字。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-orange-500 my-5">
+      <p class="text-gray-700"><strong>想象一下：</strong>除夕夜，你给远方的父母发了一个链接。他们点开后，屏幕上绽放出绚烂的烟花，同时出现"爸妈新年快乐，身体健康"的字样。是不是比一条普通短信温暖多了？</p>
     </div>
+    <p class="text-gray-700 leading-relaxed">这种祝福方式，既有仪式感，又显得用心。而且操作起来非常简单，不需要任何专业技能。</p>
   </section>
 
   <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-green-500 pl-4">它能在哪些场合派上用场？</h2>
-    <ul class="list-disc pl-6 text-gray-700 space-y-3">
-      <li><strong class="text-gray-900">工作学习：</strong>远程会议时录制重要内容以防遗漏，录下网课或在线培训的重点部分方便复习。</li>
-      <li><strong class="text-gray-900">内容创作：</strong>录制自己的播客片段、有声书朗读、或歌曲小样，快速捕捉灵感。</li>
-      <li><strong class="text-gray-900">生活记录：</strong>录下家人朋友的生日祝福、孩子的童言稚语，或者采访长辈的口述故事。</li>
-      <li><strong class="text-gray-900">临时备忘：</strong>当双手不方便打字时，用语音快速记录想法、待办事项或购物清单。</li>
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 适合哪些场景？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福几乎适用于所有需要表达祝福的场合：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">新年祝福：</strong>除夕、春节、元旦，送上烟花绽放的新年祝福，喜庆又热闹。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-pink-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">生日祝福：</strong>朋友、家人过生日，送一份烟花生日祝福，比蛋糕还甜。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">节日祝福：</strong>中秋节、国庆节、情人节、圣诞节，各种节日都能用。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-purple-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">表白求婚：</strong>想对喜欢的人说点什么？烟花配上真心话，成功率翻倍。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">毕业祝福：</strong>毕业季送别同学，烟花祝福留下美好回忆。</span>
+      </li>
     </ul>
+    <p class="text-gray-700 leading-relaxed">总之，只要是想要表达祝福、传递心意的时刻，都可以用烟花祝福来增添一份仪式感。</p>
   </section>
 
-  <section class="mb-10 p-6 border border-gray-200 rounded-xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">使用小贴士</h2>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 怎么制作烟花祝福？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">制作过程非常简单，只需要几步：</p>
+    <div class="bg-orange-50 p-5 rounded-lg my-5">
+      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+        <li><strong>输入祝福文字：</strong>在文字框里写下你想说的话，可以是一句话，也可以是多行。比如"新年快乐""万事如意""心想事成"。</li>
+        <li><strong>选择模板：</strong>工具提供了一些现成的模板，比如新年祝福、生日祝福、表白祝福等，点击就能一键填充。</li>
+        <li><strong>调整效果（可选）：</strong>如果想更个性化，可以调整文字颜色、大小、烟花颜色和密度。</li>
+        <li><strong>点击开始：</strong>点击"开始放烟花"，就能看到效果了。</li>
+        <li><strong>分享给朋友：</strong>点击"分享"按钮，把链接发给朋友，他们打开就能看到你的祝福。</li>
+      </ol>
+    </div>
+    <p class="text-gray-700 leading-relaxed">整个过程不需要下载任何软件，不需要注册账号，打开网页就能用。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 一些实用小技巧</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">想让你的烟花祝福更出彩？试试这些小技巧：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-blue-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">文字要简洁有力：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">祝福文字不要太长，3-5行最合适。太长了反而看不清。每行控制在10个字以内效果最好。</p>
+      </div>
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">颜色搭配要协调：</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">文字颜色建议用亮色，比如金色、白色、黄色，在黑色背景上更醒目。烟花可以选"随机"，效果更丰富。</p>
+      </div>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg my-5">
+      <p class="text-gray-700"><strong>温馨提示：</strong>分享链接后，朋友在手机上打开效果也很好。建议让他们在WiFi环境下打开，加载更流畅。如果想要更好的观看体验，可以点击"全屏"按钮。</p>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
     <div class="space-y-4">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">①</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">第一次使用需要授权：</strong>就像手机App一样，网页首次使用麦克风时，浏览器会弹窗询问是否允许。点击“允许”即可。</p>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：朋友打开链接后看不到烟花怎么办？</p>
+        <p class="text-gray-700 text-sm">A：可能是网络问题或浏览器兼容问题。建议让朋友换个浏览器试试，或者检查网络连接。大多数情况下，微信自带浏览器、QQ浏览器、Safari、Chrome都能正常显示。</p>
       </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">②</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">找一个安静的环境：</strong>录制前尽量关闭背景音乐、电视声，能有效提升录音的清晰度。</p>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：可以保存成视频发给别人吗？</p>
+        <p class="text-gray-700 text-sm">A：目前这个工具主要是分享链接的形式。如果想保存成视频，可以用手机录屏功能，把播放过程录下来。</p>
       </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 text-sm">③</div>
-        <p class="ml-3 text-gray-700"><strong class="text-gray-900">录音前先试音：</strong>正式开始前，可以说几句话看看波形图是否有跳动，以确认设备工作正常。</p>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="font-medium text-gray-900 mb-2">Q：祝福链接会过期吗？</p>
+        <p class="text-gray-700 text-sm">A：链接长期有效，朋友随时打开都能看到。不过建议在合适的时机发送，比如除夕夜零点、生日当天早上，效果更好。</p>
       </div>
     </div>
   </section>
 
-  <section class="text-center py-8 border-t border-b border-gray-200">
-    <p class="text-xl text-gray-800 mb-4">总的来说，一个设计良好的在线录音工具，旨在让录音这件事变得像按下按钮一样简单。</p>
-    <p class="text-gray-700">它打破了专业软件的壁垒，让你无需任何技术背景，就能快速、高质量地完成声音录制和保存。下次当你需要录下任何声音时，不妨试试在浏览器中寻找这个便捷的解决方案。</p>
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：用心，是最好的祝福</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">在这个快节奏的时代，我们习惯了群发祝福、复制粘贴的问候。但真正打动人心的，永远是那些花了一点心思、带有一点创意的祝福。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">烟花祝福生成器，就是一个帮你把心意变成视觉惊喜的小工具。不需要什么技术，只需要几分钟，就能送出一份独一无二的祝福。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">下次想送祝福的时候，不妨试试这个工具，让烟花替你说出心里话。</p>
+    </div>
   </section>
 </article>
-`;export{t as default};
+`;export{s as default};

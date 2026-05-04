@@ -1,65 +1,63 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-700">
-  <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">滚动文字生成器：轻松制作会动的字幕和标语</h2>
-  <p class="text-lg text-gray-600 mb-8">你是否在电影片尾、广告大屏或视频里看过那些缓缓移动的文字？现在，不用学习复杂软件，你也可以轻松创建属于自己的滚动文字效果了。</p>
+const l=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">屏幕补光灯：让你的屏幕秒变柔光补光利器</h2>
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="font-medium">简单来说，滚动文字生成器就是一个在线小工具。你只需要输入文字、调调颜色和速度，它就能立刻帮你生成一段会“走动”的文字动画，你可以把它用在视频里、网页上，或者做成一个特别的图片。</p>
-  </div>
+    <p class="text-lg mb-6">在视频通话、直播或自拍时，光线不足是最常见的问题。暗淡的环境不仅让人看起来没精神，还会影响画面质量。如果你手边没有专业的补光灯，其实你的手机或电脑屏幕就能派上大用场——屏幕补光灯工具，就是为此而生。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">什么是滚动文字？</h2>
-  <p class="mb-4">滚动文字，顾名思义，就是会沿着一定方向（比如从左到右、从上到下）自动移动的文字。它和我们平时看的静态文字不同，自带一种动感和吸引力。</p>
-  <p class="mb-6">想想这些场景：古老的电影院里向上滚动的演员表；商场电子屏上循环播放的打折信息；你制作的短视频里，需要一段横穿屏幕的标题……这些都是滚动文字的应用。</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">什么是屏幕补光灯？</h2>
+    <p class="mb-4">屏幕补光灯是一种利用屏幕发光来为面部提供补充光源的在线工具。它的原理很简单：将屏幕调整为均匀的暖色或冷色光面，放在面部前方，屏幕发出的光线就能柔和地照亮你的脸，起到和专业补光灯类似的效果。</p>
+    <p class="mb-6">与传统的硬件补光灯相比，屏幕补光灯不需要额外购买设备，打开浏览器就能使用，特别适合临时需要补光但又没有专业器材的场景。</p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">它能用来做什么？</h2>
-  <p class="mb-4">这个小工具非常适合普通人在日常创作中使用：</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>制作视频字幕</strong>：为你拍摄的短片添加专业的片头或片尾滚动字幕。</li>
-    <li><strong>创建动态海报</strong>：设计一个带有滚动标语的宣传图，更抓人眼球。</li>
-    <li><strong>丰富演示文稿</strong>：在PPT或Keynote中插入一小段滚动文字，让演示更生动。</li>
-    <li><strong>装饰社交媒体</strong>：为你的社交媒体状态或故事制作独特的动态背景文字。</li>
-    <li><strong>简单的广告展示</strong>：小店铺可以用来制作电子广告语，在平板或电脑上循环播放。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">如何使用它？（完全不用懂技术）</h2>
-  <p class="mb-4">使用过程就像“搭积木”一样简单直观，所有操作都是即时可见的：</p>
-
-  <div class="bg-gray-50 rounded-lg p-5 mb-6">
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第一步：写下你想说的</h3>
-    <p class="mb-4">在文字框里输入任何内容：一句祝福、一个口号、一段歌词，或者店铺名称和电话。输入的同时，右边预览区里的文字就会立刻出现。</p>
-
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第二步：给它“穿衣服”</h3>
-    <p class="mb-2">你可以随意打扮这段文字：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>换颜色</strong>：点击色块，给文字换个喜欢的颜色，也能改变整个背景板的颜色。</li>
-      <li><strong>调大小</strong>：拖动滑块，让文字变大或变小。</li>
-      <li><strong>选字体</strong>：在几种常见字体里选择，比如端庄的宋体或现代的黑体。</li>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">核心功能一览</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">色温调节（1000K-15000K）：</span>从温暖的烛光色到清冷的日光色，自由切换。低色温适合营造温馨氛围，高色温则更接近自然光，适合正式场合。</li>
+      <li><span class="font-medium">亮度控制：</span>无级调节屏幕亮度，从微弱柔光到明亮补光，根据环境光线灵活调整，避免过曝或不足。</li>
+      <li><span class="font-medium">饱和度调整：</span>调节色彩饱和度，让补光颜色更纯净或更柔和，满足不同肤色和场景的需求。</li>
+      <li><span class="font-medium">呼吸灯效果：</span>屏幕亮度随节奏缓慢起伏，模拟自然光线变化，适合冥想、放松或创意拍摄场景。</li>
+      <li><span class="font-medium">全屏模式：</span>一键全屏，最大化补光面积，消除屏幕边框和界面元素的干扰，获得最纯净的光源。</li>
+      <li><span class="font-medium">自定义颜色：</span>除了色温预设，还可以直接选择任意颜色，满足特殊拍摄或创意需求。</li>
     </ul>
 
-    <h3 class="text-xl font-medium text-gray-800 mb-3">第三步：设置它如何“走动”</h3>
-    <p class="mb-2">这是最关键也最好玩的部分：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-1">
-      <li><strong>选方向</strong>：让文字从左向右走、从右向左走，或者上下移动。</li>
-      <li><strong>控速度</strong>：拖动滑块，决定文字移动得快一点还是慢一点。</li>
-      <li><strong>定起点</strong>：精细控制文字从屏幕的哪个位置开始出现。</li>
-      <li><strong>改画布</strong>：调整显示区域的大小，适应你不同的用途。</li>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">哪些场景用得上？</h2>
+    <p class="mb-4">屏幕补光灯的适用场景比你想象的更多：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">视频通话：</span>线上会议、远程面试时，屏幕补光让面部更清晰，显得更专业、更有精神。</li>
+      <li><span class="font-medium">直播：</span>夜间直播或光线不足的房间，用另一台设备的屏幕补光，简单又高效。</li>
+      <li><span class="font-medium">自拍：</span>手机前置摄像头拍照时，用另一台手机屏幕补光，告别暗沉自拍。</li>
+      <li><span class="font-medium">线上课程：</span>老师录制教学视频时，屏幕补光让画面更清晰，学生看得更舒服。</li>
+      <li><span class="font-medium">阅读灯：</span>夜间阅读时，将屏幕调至暖色低亮度，充当柔和的小夜灯。</li>
+      <li><span class="font-medium">产品拍摄：</span>拍摄小物件时，屏幕补光提供均匀柔和的光线，减少阴影。</li>
     </ul>
-    <p>每调整一个参数，右边的预览效果都会实时变化，真正做到“所见即所得”。</p>
-  </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">第四步：保存你的作品</h2>
-  <p class="mb-6">调整到自己最满意的效果后，点击“生成动画”按钮。稍等片刻，工具就会为你制作好一段完整的滚动文字视频。你可以直接下载这个视频文件，用到任何你需要的地方去。</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何使用屏幕补光灯？</h2>
+    <p class="mb-4">操作非常简单，只需几步：</p>
+    <ol class="list-decimal pl-6 mb-6 space-y-2">
+      <li>打开屏幕补光灯工具页面。</li>
+      <li>根据需要调节色温滑块，选择暖光或冷光。一般视频通话建议使用4000K-5500K的自然白光。</li>
+      <li>调整亮度滑块，让光线强度适中。太亮容易过曝，太暗则补光效果不明显。</li>
+      <li>如需调整色彩浓度，可以微调饱和度。</li>
+      <li>点击全屏按钮，让屏幕变为纯净的光源面。</li>
+      <li>将补光设备放在面部前方偏上的位置，稍微向下倾斜，效果最佳。</li>
+    </ol>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">给初学者的几点小建议</h2>
-  <ul class="list-disc pl-5 mb-8 space-y-3">
-    <li><strong>文字别太长</strong>：滚动文字适合展示简短精悍的信息，太长会看不完。</li>
-    <li><strong>颜色要对</strong>：确保文字颜色和背景颜色有足够的对比度，不然会看不清。</li>
-    <li><strong>速度要适中</strong>：太快让人眼花，太慢显得拖沓，多预览几次找到最舒服的速度。</li>
-    <li><strong>先模仿再创造</strong>：如果不确定怎么做，可以先试试模仿你见过的、觉得好看的滚动文字效果。</li>
-  </ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">补光小技巧</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">色温选择：</span>日常视频通话选4000K-5500K最自然；直播或自拍可以试试3000K-4000K的暖光，显得肤色更好。</li>
+      <li><span class="font-medium">亮度适中：</span>补光不是越亮越好，亮度调到面部看起来自然舒适即可，过亮反而会显得不真实。</li>
+      <li><span class="font-medium">位置摆放：</span>补光屏幕放在正前方略高于视线的位置，光线从上往下打，能自然消除面部阴影。</li>
+      <li><span class="font-medium">双屏补光：</span>如果有两块屏幕，分别放在左右两侧45度角，能获得更均匀的环形光效果。</li>
+      <li><span class="font-medium">距离控制：</span>手机屏幕补光建议距离面部30-50厘米，电脑屏幕可以稍远一些。</li>
+      <li><span class="font-medium">呼吸灯妙用：</span>拍摄创意视频或做冥想引导时，呼吸灯效果能营造独特的氛围感。</li>
+    </ul>
 
-  <div class="border-t pt-8">
-    <p class="text-gray-600">总而言之，滚动文字生成器是一个将简单想法快速变成动态视觉的小帮手。它不需要任何专业知识，只需你的创意。无论是为了工作展示，还是个人兴趣，都可以来试试看，亲手创造一段属于你自己的、会“说话”的文字。</p>
-  </div>
+    <div class="bg-blue-50 p-6 rounded-lg my-8">
+      <h3 class="text-xl font-semibold mb-3">温馨提示</h3>
+      <p class="mb-2">屏幕补光灯是临时补光的好帮手，但长时间以高亮度注视屏幕可能引起眼部不适。使用时建议将补光设备放在侧面或稍微偏离视线的位置，避免直视高亮屏幕。</p>
+      <p>如果经常需要补光，建议搭配专业补光灯使用，效果更佳。屏幕补光灯最适合应急和临时使用，方便快捷，随时可用。</p>
+    </div>
+
+    <p class="text-lg mt-10 pt-6 border-t">无论你是远程办公的上班族、深夜直播的主播，还是喜欢自拍记录生活的朋友，屏幕补光灯都能在光线不足时给你及时的帮助。打开浏览器，调好色温和亮度，让屏幕成为你最方便的补光搭档吧！</p>
+  </article>
 </div>
-`;export{s as default};
+`;export{l as default};

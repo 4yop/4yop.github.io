@@ -1,235 +1,213 @@
-const s=`
-<div class="article-container">
+const r=`
+<div class="text-gray-800 bg-white font-sans">
+  <article class="max-w-4xl mx-auto px-4 py-8 md:px-8">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">星宿关系计算器：探秘《宿曜经》27星宿的因缘奥秘</h1>
 
-  <h1 class="article-title">退休年龄计算器2026最新版：法定退休年龄精准计算与延迟退休政策解读</h1>
+    <p class="text-lg mb-8 leading-relaxed">
+      在古老的东方智慧中，星宿不仅是夜空中闪烁的星辰，更是一把解读人与人之间缘分奥秘的钥匙。《宿曜经》，这部由唐代不空三藏大师翻译的经典，将古印度占星术与中国传统文化完美融合，为我们揭示了27星宿背后深邃的人际关系密码。
+    </p>
 
-  <div class="article-intro">
-    <p>您是否想知道自己准确的法定退休年龄？随着2026年延迟退休政策在部分地区开展试点，退休年龄计算变得愈发重要。我们的<strong>退休年龄计算器</strong>支持输入性别、人员类型、工种及出生年月，一键精准计算您的法定退休年龄、退休时间及剩余工作年限。无论您是普通职工、女性工人/干部，还是从事特殊工种的人员，都能通过本工具快速获取准确的退休时间预测，帮助您提前做好养老规划和职业安排。</p>
-  </div>
-
-  <section class="article-section">
-    <h2 class="section-title">中国法定退休年龄对照表（2026最新版）</h2>
-    <p>根据中国现行法律法规及2026年延迟退休试点政策，不同人群的法定退休年龄如下表所示：</p>
-    
-    <div class="table-wrapper">
-      <table class="policy-table">
-        <thead>
-          <tr>
-            <th>人员类型</th>
-            <th>工种类型</th>
-            <th>法定退休年龄</th>
-            <th>适用人群</th>
-            <th>备注说明</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>男性职工</td>
-            <td>通用工种</td>
-            <td><span class="highlight">60周岁</span></td>
-            <td>所有男性参保人员</td>
-            <td>无身份区分，统一60岁退休（试点地区按延迟细则执行）</td>
-          </tr>
-          <tr>
-            <td>女性工人</td>
-            <td>通用工种</td>
-            <td><span class="highlight">50周岁</span></td>
-            <td>企业女工人、合同制女工</td>
-            <td>以社保参保身份核定（试点地区按延迟细则执行）</td>
-          </tr>
-          <tr>
-            <td>女性干部/灵活就业</td>
-            <td>通用工种</td>
-            <td><span class="highlight">55周岁</span></td>
-            <td>机关事业单位女干部、企业女管理岗、灵活就业女性</td>
-            <td>灵活就业女性按55岁执行（试点地区为延迟退休重点试点人群）</td>
-          </tr>
-          <tr>
-            <td>男性/女性</td>
-            <td>特殊工种</td>
-            <td><span class="highlight">男55岁/女45岁</span></td>
-            <td>井下、高空、高温、特别繁重体力劳动或其他有害身体健康工种</td>
-            <td>需满足工种工作年限要求（井下/高空9年、高温/重体力10年、有害身体8年），延迟退休试点不调整特殊工种退休年龄</td>
-          </tr>
-          <tr>
-            <td>男性/女性</td>
-            <td>因病/非因工致残</td>
-            <td><span class="highlight">男50岁/女45岁</span></td>
-            <td>经劳动能力鉴定完全丧失劳动能力的参保人员</td>
-            <td>需提供市级以上劳动能力鉴定委员会的完全丧失劳动能力证明，延迟退休试点不调整因病退休年龄</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">2026法定退休年龄政策最新解读（退休年龄计算器配套科普）</h2>
-    
-    <div class="policy-item">
-      <h3>1. 2026年法定退休年龄核心标准</h3>
-      <p>本退休年龄计算器的核心计算依据为全国统一执行的法定退休年龄基础标准，分「通用工种、特殊工种、因病/非因工致残」三类，延迟退休政策2026年已在部分地区开展试点实施，试点范围以女性灵活就业人员、中青年男性群体为主，全国统一落地时间和细则以人社部官方公告为准，试点地区退休年龄按当地细则核定。</p>
+    <div class="bg-gray-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+      <p class="italic">
+        本文将带你走进27星宿的神秘世界，了解六种核心星宿关系的含义，探索人与人之间业力与缘分的深层联系。愿这古老的智慧能为你理解人际关系提供一个全新的视角。
+      </p>
     </div>
 
-    <div class="policy-item">
-      <h3>2. 工种类型对退休年龄的核心影响</h3>
-      <p>工种类型是核定退休年龄的关键维度，也是本退休年龄计算器新增的核心输入项：① 通用工种按基础年龄退休（男60/女工人50/女干部55），试点地区按延迟细则微调；② 特殊工种可提前退休（男55/女45）；③ 因病/非因工致残完全丧失劳动能力的，可提前退休（男50/女45）；特殊工种、因病退休的提前政策在延迟退休试点中保持不变。</p>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-6 pb-2 border-b">一、什么是《宿曜经》与27星宿？</h2>
+    <p class="mb-4 leading-relaxed">
+      《文殊师利菩萨及诸仙所说吉凶时日善恶宿曜经》，简称《宿曜经》，是唐代密教大师不空三藏所译的一部重要典籍。它不仅是一部佛经，更是中国历史上最早、最系统的占星学著作之一。这部经典将古印度的Nakshatras（星宿）体系与中国本土文化完美融合，形成了独具特色的星宿文化。
+    </p>
+
+    <h3 class="text-xl font-medium mt-8 mb-4">为什么是27星宿而非28？</h3>
+    <p class="mb-4 leading-relaxed">
+      在天文学上，月亮绕地球一周约为27.32日。中国传统的28星宿为了四方对称增加了一个"牛宿"，但在《宿曜经》的演算体系中，为了精准对齐月律周期，剔除了跨度极小的牛宿，采用27星宿循环。这种算法更侧重于月亮所代表的潜意识、情感本能与灵魂业力。
+    </p>
+
+    <p class="mb-6 leading-relaxed">
+      27星宿，每一个都有其独特的象征意义和能量特质。从角宿的开创精神，到轸宿的智慧收尾，27个星宿如同一幅生命的画卷，展现了人性的各个面向。
+    </p>
+
+    <h3 class="text-xl font-medium mt-8 mb-4">27星宿一览</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">角木蛟</h4>
+        <p class="text-gray-600 text-sm">开创、领导</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">亢金龙</h4>
+        <p class="text-gray-600 text-sm">内敛、积蓄</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">氐土貉</h4>
+        <p class="text-gray-600 text-sm">根基、稳定</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">房日兔</h4>
+        <p class="text-gray-600 text-sm">内在、私密</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">心月狐</h4>
+        <p class="text-gray-600 text-sm">情感、直觉</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">尾火虎</h4>
+        <p class="text-gray-600 text-sm">热情、行动力</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">箕水豹</h4>
+        <p class="text-gray-600 text-sm">流动、传播</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">斗木獬</h4>
+        <p class="text-gray-600 text-sm">收集、整合</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">女土蝠</h4>
+        <p class="text-gray-600 text-sm">细腻、洞察</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">虚日鼠</h4>
+        <p class="text-gray-600 text-sm">隐藏、守护</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">危月燕</h4>
+        <p class="text-gray-600 text-sm">危机、转机</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">室火猪</h4>
+        <p class="text-gray-600 text-sm">充实、饱满</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">壁水貐</h4>
+        <p class="text-gray-600 text-sm">屏障、保护</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">奎木狼</h4>
+        <p class="text-gray-600 text-sm">开启、探索</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">娄金狗</h4>
+        <p class="text-gray-600 text-sm">聚集、累积</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">胃土雉</h4>
+        <p class="text-gray-600 text-sm">储存、滋养</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">昴日鸡</h4>
+        <p class="text-gray-600 text-sm">警觉、清晰</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">毕月乌</h4>
+        <p class="text-gray-600 text-sm">完全、圆满</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">觜火猴</h4>
+        <p class="text-gray-600 text-sm">精简、核心</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">参水猿</h4>
+        <p class="text-gray-600 text-sm">参与、观察</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">井木犴</h4>
+        <p class="text-gray-600 text-sm">源泉、深度</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">鬼金羊</h4>
+        <p class="text-gray-600 text-sm">神秘、隐藏</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">柳土獐</h4>
+        <p class="text-gray-600 text-sm">柔顺、适应</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">星日马</h4>
+        <p class="text-gray-600 text-sm">光明、照耀</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">张月鹿</h4>
+        <p class="text-gray-600 text-sm">展开、延伸</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">翼火蛇</h4>
+        <p class="text-gray-600 text-sm">飞翔、升华</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
+        <h4 class="font-bold mb-1">轸水蚓</h4>
+        <p class="text-gray-600 text-sm">转化、循环</p>
+      </div>
     </div>
 
-    <div class="policy-item">
-      <h3>3. 女性退休身份如何核定？</h3>
-      <p>女性法定退休年龄的核心判定依据是<strong>社保参保身份</strong>，也是退休年龄计算器的重要计算维度，而非实际工作岗位：① 企业参保时登记为「工人」的，按50岁退休；② 登记为「管理/技术岗」、灵活就业人员参保的，按55岁退休；③ 岗位变动的，以退休前最后一个连续参保身份为准（需满10年）；女性灵活就业人员是2026年延迟退休试点的核心人群，试点地区该类人群退休年龄按当地细则执行。</p>
-    </div>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">二、六种核心星宿关系：三九之法</h2>
+    <p class="mb-6 leading-relaxed">
+      《宿曜经》将星宿之间的关系归纳为六种核心类型，称为"三九之法"。每一种关系都揭示了人与人之间独特的能量互动模式和业力连接。
+    </p>
 
-    <div class="policy-item">
-      <h3>4. 特殊工种退休的核心条件</h3>
-      <p>特殊工种提前退休并非仅看工种类型，还需同时满足3个条件：① 从事对应特殊工种岗位满法定工作年限；② 养老保险累计缴费满15年；③ 达到特殊工种法定退休年龄，三者缺一不可，退休年龄计算器仅做年龄计算，最终需社保部门审核工种年限。</p>
-    </div>
-
-    <div class="policy-item">
-      <h3>5. 延迟退休政策2026年试点最新进展</h3>
-      <p>延迟退休遵循「小步调整、弹性实施、分类推进、统筹兼顾」原则，2026年试点实施的核心思路为「小步慢调、逐步推进」，试点地区暂按「每几年延迟1岁」的节奏执行，特殊工种、因病退休、重体力劳动者等群体的退休年龄政策予以保留，不纳入本次试点调整范围，具体试点细则由各地人社部门制定，后续退休年龄计算器将同步更新试点地区计算规则。</p>
-    </div>
-
-    <div class="policy-item">
-      <h3>6. 退休年龄计算规则</h3>
-      <p>法定退休时间按「出生年月+法定退休年龄」精确计算，也是本退休年龄计算器的核心计算逻辑，例如1985年8月出生的女工人（通用工种50岁），退休时间为2035年8月；特殊工种女性1985年出生，45岁退休则2030年8月办理，出生月份为12月的，需到对应年份12月满周岁后办理退休，次月开始领取养老金；试点地区按当地延迟细则在基础年龄上微调退休时间。</p>
-    </div>
-
-    <div class="policy-item">
-      <h3>7. 社保缴费与退休的关系</h3>
-      <p>达到法定退休年龄仅为退休前提之一，也是退休年龄计算器的计算基础，所有人群均需满足<strong>养老保险累计缴费满15年</strong>，才能办理退休并按月领取养老金；缴费不足15年的，可按规定延长缴费、一次性补缴（部分地区适用）或转为城乡居民养老保险，该规则2026年未做调整。</p>
-    </div>
-
-    <div class="policy-item">
-      <h3>8. 异地参保退休年龄核定</h3>
-      <p>异地参保人员的法定退休年龄按「待遇领取地」政策执行，也是退休年龄计算器异地参保用户的计算参考，待遇领取地判定规则：① 最后一个缴费满10年的地区；② 所有地区缴费均不满10年的，回户籍所在地办理退休；③ 若待遇领取地为延迟退休试点地区，按试点细则核定退休年龄；非试点地区按全国基础标准执行。</p>
-    </div>
-  </section>
-
-  <section class="article-section">
-    <h2 class="section-title">退休倒计时计算器功能介绍</h2>
-    <p>我们的在线<strong>退休年龄计算器</strong>集成了最新的退休政策规则，为您提供一键式精准计算服务。主要功能包括：</p>
-    <div class="feature-grid">
-      <div class="feature-item">
-        <h4>精准日期计算</h4>
-        <p>输入您的出生日期和人员类型，系统自动计算您的法定退休日期，精确到年月日。</p>
+    <div class="space-y-6 mb-10">
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">一、命之星 · 镜中相遇</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>双方属于同一个星宿</p>
+        <p class="text-gray-600">
+          这种关系如同照镜子，性格、习惯、思维极度相似。相遇时有强烈的同类感，仿佛遇到了另一个自己。他们能够深刻理解对方的内心世界，是灵魂的另一半。
+        </p>
       </div>
-      <div class="feature-item">
-        <h4>实时倒计时</h4>
-        <p>实时显示距离退休还剩多少天、多少时、多少分、多少秒，让您对剩余工作时间一目了然。</p>
-      </div>
-      <div class="feature-item">
-        <h4>多类型支持</h4>
-        <p>支持男性职工、女性职工（工人）、女性干部、特殊工种、因病退休等多种职业类型。</p>
-      </div>
-      <div class="feature-item">
-        <h4>政策同步更新</h4>
-        <p>实时反映延迟退休政策调整及2026年试点进展，确保计算结果符合最新法规。</p>
-      </div>
-    </div>
-    <p>工具操作极为简便：只需选择您的<strong>性别</strong>和<strong>人员类型</strong>，输入<strong>出生日期</strong>，即可立即获得您的退休年龄和倒计时结果。无需注册、无需下载，随时随地免费使用。</p>
-  </section>
 
-  <section class="article-section">
-    <h2 class="section-title">哪些人最需要退休年龄计算？</h2>
-    <p>退休年龄不仅仅是一个数字，它是您人生下一阶段的起跑线。以下几类人群尤其需要关注自己的退休年龄：</p>
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">二、业胎关系 · 宿世债缘</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>星宿距离为9或18</p>
+        <p class="text-gray-600">
+          这是最具宿命感的关系，一方为"业"（前世因），一方为"胎"（今世果）。双方即便没有血缘，也会有无法斩断的连接感。这种关系往往伴随着深刻的情感纠葛和成长课题。
+        </p>
+      </div>
 
-    <div class="use-case-list">
-      <div class="use-case">
-        <h3>职场中年人（40-55岁）</h3>
-        <p>正处于职业黄金期，同时也是退休规划的关键窗口期。清楚知道距退休还有多少年，有助于制定合理的养老储蓄计划、投资策略和职业发展路径。</p>
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">三、荣亲关系 · 家族守护</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>代表荣耀与亲近</p>
+        <p class="text-gray-600">
+          这是最适合婚姻的关系，双方相处如家人般自在，能互相增益对方的运势，稳定而持久。荣亲关系带来的是温暖的归属感和彼此成就的能量。
+        </p>
       </div>
-      <div class="use-case">
-        <h3>职场新人（25-35岁）</h3>
-        <p>越早了解退休年龄，越能从容布局长期财务规划。复利的力量需要时间积累，提前规划是实现财务自由的关键。</p>
+
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">四、安坏关系 · 极致虐恋</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"安住"，一方为"破坏"</p>
+        <p class="text-gray-600">
+          这种关系极具吸引力但也极具杀伤力，充满了控制与被控制的博弈，是修行中最难跨越的课题。安坏关系往往带来深刻的成长，但也伴随着剧烈的情感波动。
+        </p>
       </div>
-      <div class="use-case">
-        <h3>特殊工种从业者</h3>
-        <p>从事井下作业、高温环境、放射性工作等特殊工种的人员，享有提前退休的政策福利，了解自己的具体退休时间尤为重要。</p>
+
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">五、危成关系 · 现实博弈</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"危险"，一方为"成就"</p>
+        <p class="text-gray-600">
+          多发生于事业合作伙伴或因才华吸引的伴侣，强调现实价值的创造与博弈。危成关系往往在物质和事业层面带来显著的互动和成就。
+        </p>
       </div>
-      <div class="use-case">
-        <h3>HR与企业管理者</h3>
-        <p>人力资源管理人员需要掌握员工的退休时间线，合理规划人才梯队，提前做好岗位交接和人员储备工作。</p>
+
+      <div class="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 transition">
+        <h3 class="text-xl font-bold mb-3">六、友衰关系 · 志趣相投</h3>
+        <p class="text-gray-600 mb-2"><strong>关系特征：</strong>一方为"友"，一方为"衰"</p>
+        <p class="text-gray-600">
+          像朋友一样玩在一起，轻松愉快，但缺乏物质上的深度绑定，缘分较轻，需靠共同爱好维系。友衰关系带来的是轻松的陪伴和思想的交流。
+        </p>
       </div>
     </div>
-  </section>
 
-  <section class="article-section">
-    <h2 class="section-title">退休规划：从倒计时开始的人生蓝图</h2>
-    <p>知道了退休年龄和倒计时，下一步就是将这个时间节点转化为具体的行动计划。以下是退休规划的几个核心维度：</p>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">三、如何计算自己的星宿？</h2>
+    <p class="mb-4 leading-relaxed">
+      计算星宿需要你的公历出生日期。星宿的确定基于农历日期，通过复杂的天文计算得出。现代的星宿计算器已经将这些复杂的算法简化，你只需要输入出生日期，就能立刻知道自己属于哪个星宿。
+    </p>
+    <p class="mb-6 leading-relaxed">
+      星宿不仅仅是一个标签，更是一种能量的象征。每个星宿都有其独特的特质和倾向，了解自己的星宿，可以帮助你更好地认识自己，理解自己的行为模式和情感需求。
+    </p>
 
-    <h3>1. 养老金规划</h3>
-    <p>中国的养老保险体系由三大支柱构成：基本养老保险（第一支柱）、企业年金/职业年金（第二支柱）和个人养老金（第三支柱）。建议在工作期间积极参与三大支柱，最大化退休后的养老金收入。2022年推出的<strong>个人养老金制度</strong>每年最高可享受12000元的税收优惠，是职场人的重要理财工具。</p>
-
-    <h3>2. 财务储蓄目标</h3>
-    <p>根据退休倒计时倒推财务目标。一般建议退休时储备相当于退休前年收入10-15倍的资产，以维持退休后的生活质量。可以使用"4%提取规则"作为参考：退休储蓄总额乘以4%，即为每年可安全提取的金额。</p>
-
-    <h3>3. 健康管理</h3>
-    <p>健康是退休生活质量的根本保障。建议在退休前保持规律锻炼、定期体检，并提前了解医疗保险的衔接政策，确保退休后医疗保障不中断。</p>
-
-    <h3>4. 技能与兴趣培养</h3>
-    <p>利用退休前的时间培养兴趣爱好、学习新技能，不仅能为退休后的精神生活打下基础，也可能开辟额外的收入来源，为退休生活增添更多可能性。</p>
-  </section>
-
-  <section class="article-section faq-section">
-    <h2 class="section-title">常见问题解答（FAQ）</h2>
-
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q1：延迟退休政策对我的退休年龄有什么影响？</h3>
-        <div class="faq-answer">
-          <p>延迟退休政策采用渐进式推进方式，对不同出生年份的人员影响不同。2026年起在部分地区开展试点，试点范围以女性灵活就业人员、中青年男性群体为主。以男性职工为例，1965年及以前出生者仍按60岁退休；1976年9月至12月出生的，法定退休年龄均为63岁。具体影响因您的出生年份和所在地区而异，建议使用我们的退休计算器输入您的实际信息获取精准结果。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q2：女性职工和女性干部的退休年龄有什么区别？</h3>
-        <div class="faq-answer">
-          <p>根据现行政策，女性普通工人（从事体力劳动或生产岗位）法定退休年龄为50岁，而女性干部（管理岗位、专业技术岗位等）法定退休年龄为55岁。需要注意的是，判定依据是社保参保身份而非实际工作岗位：企业参保时登记为「工人」的按50岁退休，登记为「管理/技术岗」的按55岁退休。延迟退休后，这两类人员的目标退休年龄分别延至55岁和58岁。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q3：特殊工种如何申请提前退休？</h3>
-        <div class="faq-answer">
-          <p>特殊工种提前退休需满足以下条件：①从事国家规定的特殊工种（高温、井下、高空、有毒有害等）；②在特殊工种岗位累计工作年限达到规定要求（井下/高空9年、高温/重体力10年、有害身体健康8年）；③男性年满55周岁或女性年满45周岁；④参加基本养老保险累计缴费满15年。符合条件者需向所在单位及当地社保部门提交申请，经审核批准后方可提前办理退休手续。延迟退休试点不调整特殊工种退休年龄。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q4：退休年龄计算器的计算结果准确吗？</h3>
-        <div class="faq-answer">
-          <p>本计算器基于国家现行法规和最新延迟退休政策规则进行计算，结果具有较高的参考价值。但需注意：①个人实际退休日期还可能受到特殊情况的影响，如因病提前退休、返聘延迟退休等；②延迟退休政策仍在持续落地实施中，2026年已在部分地区开展试点，具体细则可能随政策更新而调整；③最终以当地社保部门的认定为准。建议将计算结果作为规划参考，重要决策前请咨询专业人士或社保部门。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q5：养老保险缴费不满15年怎么办？</h3>
-        <div class="faq-answer">
-          <p>达到法定退休年龄但养老保险累计缴费不足15年的，有以下几种处理方式：①按规定延长缴费至满15年（推荐）；②一次性补缴（部分地区适用，需咨询当地社保部门）；③转为城乡居民养老保险。需要注意的是，从2030年1月1日起，最低缴费年限将逐步提高至20年，因此建议尽早开始缴纳并保持连续缴费。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">Q6：异地参保如何确定退休待遇领取地？</h3>
-        <div class="faq-answer">
-          <p>异地参保人员的待遇领取地判定规则如下：①最后一个养老保险缴费满10年的地区为待遇领取地；②所有地区缴费均不满10年的，回户籍所在地办理退休；③若待遇领取地为延迟退休试点地区，按试点细则核定退休年龄；非试点地区按全国基础标准执行。建议提前查询自己在各地的缴费年限，合理规划退休地点。</p>
-        </div>
-      </div>
-
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10 text-center">
+      <p class="text-lg font-medium mb-3">想知道你和他/她之间的星宿关系吗？</p>
+      <p class="text-gray-700">
+        星宿揭示的是一种能量倾向。了解关系背景是为了更好地经营，而非定义结局。愿你在星辰的指引下，遇见更好的彼此。现在就来试试这个免费的星宿关系计算器，探索你们之间的缘分奥秘吧！
+      </p>
     </div>
-  </section>
-
-  <section class="article-conclusion">
-    <h2 class="section-title">结语：掌握退休年龄，把握人生主动权</h2>
-    <p>退休不是终点，而是人生新篇章的开始。通过<strong>退休年龄计算器</strong>，您可以清晰地看到这个新篇章何时启程，从而以更从容的姿态迎接它的到来。无论距离退休是30年还是3年，现在都是开始规划的最佳时机。</p>
-    <p>立即使用我们的<strong>退休年龄计算</strong>工具，输入您的信息，查看您的专属退休年龄和倒计时。让数字成为行动的起点，让规划成为幸福晚年的基石。您的退休生活，值得从今天就开始精心准备。</p>
-    <div class="cta-box">
-      <p><strong>温馨提示</strong>：将本页面添加到收藏夹，定期查看退休倒计时，让它成为激励您持续规划的动力源泉！如有任何疑问，欢迎随时使用本工具进行测算。</p>
-    </div>
-  </section>
-
+  </article>
 </div>
-`;export{s as default};
+`;export{r as default};

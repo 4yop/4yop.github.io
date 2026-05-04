@@ -1,96 +1,223 @@
-const t=`
-<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
-  <!-- 文章标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">还在为写评价发愁？这个好评生成器，让你告别词穷！</h1>
+const e=`
+<div class="bg-white text-gray-800 font-sans">
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <!-- 文章标题 -->
+    <header class="mb-8 text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
+      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
+    </header>
 
-  <!-- 首段 -->
-  <p class="mb-6 text-lg">
-    你是不是也这样？网购收到心仪的商品，或者吃到美味的外卖，心里明明很满意，可到了写评价的时候，手指悬在屏幕上半天，却只憋出一句“东西不错”或者“好吃”？想给商家一个走心的好评，却不知道从何说起。今天，就给大家介绍一个能帮你轻松解决这个烦恼的小工具。
-  </p>
-
-  <!-- 核心功能介绍部分 -->
-  <div class="bg-blue-50 p-6 rounded-xl mb-8">
-    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是好评生成器？</h2>
-    <p class="mb-4">
-      简单来说，它就像一个贴心的“评价小助手”。你只需要告诉它你要评价什么（比如一件衣服或一份披萨），选择你喜欢的说话风格，它就能在几秒钟内，为你生成好几条内容完整、听起来特别真实自然的好评。
-    </p>
-    <p>
-      无论是想表达对商品质量的认可，还是想夸夸外卖的配送速度，它都能帮你把那份满意，用更生动、更具体的话说出来。
-    </p>
-  </div>
-
-  <!-- 工具能做什么 -->
-  <h2 class="text-2xl font-semibold mb-4 mt-10">它具体能帮你做什么？</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
-      <div class="flex items-center mb-3">
-        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3 text-xl">🛍️</div>
-        <h3 class="text-xl font-medium">给网购商品写评价</h3>
+    <!-- 引言部分 -->
+    <section class="mb-10">
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+        <p class="text-gray-700 leading-relaxed">
+          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
+        </p>
       </div>
-      <p class="text-gray-600">刚买的宝贝质量超好，物流也快，但你的评价却干巴巴的？切换到“通用商品”模式，选择“质量好”、“物流快”等亮点，它就能帮你生成热情或专业的评价，让你的好评不再单调。</p>
-    </div>
+    </section>
 
-    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
-      <div class="flex items-center mb-3">
-        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mr-3 text-xl">🍱</div>
-        <h3 class="text-xl font-medium">给外卖美食写评价</h3>
+    <!-- 什么是命名方式 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
+          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → userName</li>
+              <li>• 我的文档 → myDocument</li>
+              <li>• 首页标题 → homePageTitle</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
+          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
+          <div class="bg-white p-4 rounded border">
+            <p class="text-green-600 font-medium">例如：</p>
+            <ul class="mt-2 space-y-1 text-gray-700">
+              <li>• 用户名字 → user_name</li>
+              <li>• 我的文档 → my_document</li>
+              <li>• 首页标题 → home_page_title</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <p class="text-gray-600">外卖味道棒极了，想鼓励一下商家？切换到“外卖美食”模式，聚焦“味道好”、“分量足”等特点。你可以生成简洁的“吃货”推荐，也可以写一段让老板看了开心的暖心评价。</p>
-    </div>
-  </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
+      </p>
+    </section>
 
-  <!-- 核心价值 -->
-  <h2 class="text-2xl font-semibold mb-4 mt-10">为什么你需要它？</h2>
-  <ul class="space-y-4 mb-10 pl-5">
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
-      <span><strong>省时省力：</strong>再也不用绞尽脑汁组织语言，几秒钟就能获得多条可选评价，复制粘贴即可。</span>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
-      <span><strong>提供灵感：</strong>当你不知道除了“好”还能说什么时，它可以给你提供夸赞商品不同角度的思路。</span>
-    </li>
-    <li class="flex items-start">
-      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
-      <span><strong>评价更生动：</strong>告别千篇一律的“好评”，生成带有个性风格和具体细节的评价，帮助其他买家更好地做参考。</span>
-    </li>
-  </ul>
+    <!-- 为什么需要转换 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
+            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
+            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+            <span class="font-medium">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
+            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- 使用场景 -->
-  <h2 class="text-2xl font-semibold mb-4 mt-10">这些时候，你可能会想起它</h2>
-  <div class="bg-gray-50 p-6 rounded-xl mb-10">
-    <ul class="space-y-3">
-      <li class="flex"><div class="mr-2 text-gray-500">•</div> 收到满意的网购商品，想写个详细好评鼓励卖家时。</li>
-      <li class="flex"><div class="mr-2 text-gray-500">•</div> 工作繁忙，只想快速完成评价任务时。</li>
-      <li class="flex"><div class="mr-2 text-gray-500">•</div> 点到了特别好吃的外卖，想夸夸厨师和骑手时。</li>
-      <li class="flex"><div class="mr-2 text-gray-500">•</div> 觉得自己写的评价总是很“路人”，想提升一下“文采”时。</li>
-    </ul>
-  </div>
+    <!-- 工具介绍 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
+      
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
+        </p>
+        
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+              <span class="text-white text-sm">✓</span>
+            </div>
+            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
+              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
+            <div class="bg-gray-100 p-4 rounded">
+              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
+              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- FAQ 部分 -->
-  <h2 class="text-2xl font-semibold mb-6 mt-14 pt-6 border-t">你可能想问的几个问题</h2>
+    <!-- 使用场景扩展 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-blue-600 text-xl font-medium">A</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
+          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-green-600 text-xl font-medium">B</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
+          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-purple-600 text-xl font-medium">C</span>
+          </div>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
+          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="space-y-6 mb-12">
-    <div>
-      <h3 class="text-lg font-medium mb-2 text-gray-900">问：生成的评价会重复吗？看起来假吗？</h3>
-      <p class="text-gray-600">答：工具内置了丰富的词库和多种表达方式，每次生成都会随机组合。只要你选择的风格和亮点符合真实感受，生成的内容就会非常自然，像是你自己写的。你可以一次生成多条，挑选最合心意的那一条。</p>
-    </div>
-    <div>
-      <h3 class="text-lg font-medium mb-2 text-gray-900">问：我需要下载什么软件吗？</h3>
-      <p class="text-gray-600">答：完全不需要。它是一个可以直接在网页浏览器里使用的小工具，打开就能用，没有任何复杂的安装步骤。</p>
-    </div>
-    <div>
-      <h3 class="text-lg font-medium mb-2 text-gray-900">问：除了好评，它能写中评或差评吗？</h3>
-      <p class="text-gray-600">答：目前这个工具主要专注于帮助大家表达“满意”的心情，生成积极、正面的评价。毕竟，分享快乐和认可，也是一件很棒的事。</p>
-    </div>
-  </div>
+    <!-- 常见问题 -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
+      
+      <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
+          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
+          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-5">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
+          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- 总结 -->
-  <div class="bg-gradient-to-r from-gray-50 to-blue-50 p-8 rounded-2xl text-center mt-12 mb-10">
-    <p class="text-xl font-medium mb-4">说到底，写评价不是为了应付任务。</p>
-    <p class="text-gray-700 mb-6">当你对一次购物或一份美食感到满意时，一句具体而真诚的好评，既能给商家带来鼓励，也能为其他像你一样的消费者提供有价值的参考。如果“词穷”暂时阻挡了你分享的冲动，那么这个好评生成器，或许能帮你轻松迈出第一步。</p>
-    <p class="text-gray-600 text-sm">试试看，让你心中的“五星好评”，找到更贴切的表达方式。</p>
-  </div>
+    <!-- 结语 -->
+    <section class="mt-12 pt-8 border-t border-gray-200">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
+        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
+          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
+        </p>
+        <p class="text-gray-600">
+          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
+        </p>
+      </div>
+    </section>
+  </article>
 </div>
-`;export{t as default};
+`;export{e as default};

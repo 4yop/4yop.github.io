@@ -1,85 +1,116 @@
-const s=`
-<div class="text-gray-800 leading-relaxed px-4 sm:px-0">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center mt-6">视频总是被判定为重复？试试自己动手，给它一个“新身份”</h2>
+const t=`
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 md:px-0">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 pt-6">手机号码段生成器：轻松批量创建你需要的号码列表</h1>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否遇到过需要一批手机号来测试软件、挑选靓号或者策划活动，却不知道从哪里找？手动一个个编又太麻烦。今天，我们来介绍一个简单好用的小工具，它能帮你轻松解决这个问题。
+  </p>
 
-  <p class="mb-6 text-lg">你有没有遇到过这样的烦恼：精心制作的视频，上传到平台时却被提示“内容重复”？或者想在不同地方保存同一段珍贵记忆，却被告知“文件已存在”？别急，这很正常，今天我们就来聊聊一个轻松解决这个问题的小方法。</p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-    <p class="font-medium text-blue-800">简单来说，很多网站和软件会通过一个看不见的“文件指纹”来识别视频是否相同。我们的方法，就是帮你轻轻地、安全地改变这个“指纹”。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold mb-2">这个工具是什么？</h2>
+    <p class="mb-0">
+      简单来说，它就是一个“号码组合器”。就像用积木搭房子，你可以指定号码固定的“开头”（前缀）和“结尾”（后缀），然后设定中间几位数字的变化范围，工具就能自动组合出所有可能的号码，并生成一个完整的列表给你。整个过程完全自动化，省时省力。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么我的视频会被认为是“重复”的？</h2>
-  <p class="mb-4">想象一下，每份文件就像一个人，都有一个独一无二的身份证号码。对于视频、图片、文档这些数字文件来说，这个“身份证号”就叫“哈希值”。</p>
-  <p class="mb-4">当你上传视频时，网站的后台系统会飞快地计算并记录下它的这个号码。下次你再上传一个视频，哪怕只是改了个名字，系统一查号码，发现和数据库里某个记录一模一样，就会认为这是“同一个人”，从而判断为重复内容。</p>
-  <p class="mb-4">这原本是为了防止恶意上传垃圾信息，但有时也会“误伤”我们普通用户。</p>
+  <h2 class="text-2xl font-bold mt-10 mb-4">它到底能做什么？几个常见的使用场景</h2>
+  <p class="mb-6">
+    这个工具的核心是“批量生成”和“灵活定制”。它不是什么神秘的黑科技，而是为了解决一些日常中实实在在的麻烦事。下面这些情况，你可能也遇到过。
+  </p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">这个小工具能帮我做什么？</h2>
-  <p class="mb-4">这里介绍的方法，核心就是帮你<strong>安全地、轻微地</strong>修改视频文件的“身份证号码”。</p>
-  <ul class="list-disc pl-5 mb-6 space-y-2">
-    <li><strong>改变文件“指纹”</strong>：通过对视频文件进行微小的、不影响观看的调整，生成一个全新的“身份证号”。</li>
-    <li><strong>绕过重复检测</strong>：让网站或软件将它识别为一个“全新”的文件，从而成功上传或备份。</li>
-    <li><strong>完全不影响播放</strong>：这种修改非常轻微，不会改变视频的画面、声音、时长和清晰度，在任何播放器上都能正常打开。</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">什么时候会用到它？</h2>
-  <p class="mb-4">这个办法适用于一些对普通用户友好的场景：</p>
-  <div class="grid sm:grid-cols-2 gap-4 mb-8">
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-2">上传个人视频遇到阻碍</h3>
-      <p class="text-sm">比如你想把同一段家庭录像备份到多个网盘，或者上传到不同社交平台分享给亲友时被系统拦截。</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景一：软件或系统测试</h3>
+      <p class="text-gray-700">
+        开发人员测试注册、登录、短信验证码功能时，常常需要大量不同的手机号来模拟真实用户。用真实的号码既不现实也不安全。使用这个生成器，可以快速创建一批测试专用的虚拟号码，非常方便。
+      </p>
     </div>
-    <div class="bg-gray-50 p-4 rounded-lg">
-      <h3 class="font-medium mb-2">需要重新提交材料</h3>
-      <p class="text-sm">在某些需要提交视频证明的场合（非严肃法律或版权场景），如果系统误判重复，可以尝试此方法生成一份“新”文件。</p>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景二：挑选心仪的“靓号”</h3>
+      <p class="text-gray-700">
+        很多人喜欢带有特定数字组合的手机号，比如尾号是“888”、“666”或者生日日期。你可以把想要的尾号设为“后缀”，然后生成中间所有可能的组合，快速看看在某个号段（比如139）下，有哪些号码符合你的要求。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景三：活动策划与数据模拟</h3>
+      <p class="text-gray-700">
+        做市场活动时，可能需要准备一批模拟的参与用户数据。或者在学习数据分析时，需要一份包含手机号字段的模拟数据表。这个工具可以按规则生成号码，配合其他信息，快速构建出需要的样本数据。
+      </p>
+    </div>
+    <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">场景四：记忆或查询特定号段</h3>
+      <p class="text-gray-700">
+        只记得朋友手机号的前几位和后几位，中间几位想不起来了？你可以把记得的部分设为前缀和后缀，然后生成中间数字所有可能的组合。虽然结果可能很多，但可以帮你缩小回忆或查找的范围。
+      </p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">如何使用？很简单，三步搞定</h2>
+  <h2 class="text-2xl font-bold mt-10 mb-4">怎么使用？三步就能搞定</h2>
+  <p class="mb-6">
+    使用这个工具非常简单，完全不需要任何技术知识。它的界面设计得很直观，你只需要像填空一样操作就行。
+  </p>
+
   <div class="space-y-8 mb-10">
     <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">1</div>
+      <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">1</div>
       <div>
-        <h3 class="font-medium mb-2">选择你的视频</h3>
-        <p>在工具页面上，点击“选择视频文件”按钮，从你的手机或电脑里找到那个被提示重复的视频。选中后，你会看到它的名字和大小。</p>
+        <h3 class="text-xl font-semibold mb-2">设定号码的“固定部分”</h3>
+        <p class="text-gray-700 mb-2">
+          在“前缀”框里，输入你希望所有号码都一样的开头数字。比如，你想生成所有以“138”开头的号码，就填“138”。
+        </p>
+        <p class="text-gray-700 mb-2">
+          在“后缀”框里，输入你希望所有号码都一样的结尾数字。比如，你想要所有号码都以“000”结尾，就填“000”。如果开头或结尾不需要固定，空着不填就行。
+        </p>
       </div>
     </div>
+
     <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">2</div>
+      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">2</div>
       <div>
-        <h3 class="font-medium mb-2">选择修改方式</h3>
-        <p>工具会显示视频原来的“身份证号”。下面有几个简单的选项，比如“末尾追加”或“随机修改”，它们的作用原理不同，但效果一样——生成新号码。任选一个你喜欢的就好。</p>
+        <h3 class="text-xl font-semibold mb-2">设定中间数字的变化规则</h3>
+        <p class="text-gray-700 mb-2">
+          这是最关键的一步。“中间号码位数”决定了中间部分有几位数字在变化。比如，选“5位”，那么中间部分就是像“12345”、“00001”这样的5位数。
+        </p>
+        <p class="text-gray-700 mb-2">
+          接着，在“号码范围”里，设定这几位数字从多少变到多少。例如，从“0”到“999”，工具就会生成中间部分为000, 001, 002...一直到999的所有组合。
+        </p>
+        <p class="text-gray-700">
+          <strong>小提示：</strong>工具会贴心地根据你选择的位数，自动建议最大的范围，你只需要根据需求缩小它即可，避免一次生成太多数据。
+        </p>
       </div>
     </div>
+
     <div class="flex items-start">
-      <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold mr-4">3</div>
+      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold mr-4 mt-1">3</div>
       <div>
-        <h3 class="font-medium mb-2">生成并下载新文件</h3>
-        <p>点击“修改文件”按钮，稍等片刻。处理完成后，你会看到一个新的“身份证号”出现了，这证明修改成功。最后点击“下载修改后文件”，就能得到一个内容和原来一样，但“身份”全新的视频文件了。</p>
+        <h3 class="text-xl font-semibold mb-2">生成与保存结果</h3>
+        <p class="text-gray-700 mb-2">
+          点击“开始生成”按钮，几秒钟后，完整的号码列表就会出现在下方。你可以直接滚动预览。
+        </p>
+        <p class="text-gray-700">
+          如果需要保存，可以点击“下载TXT”或“下载CSV”按钮。TXT文件是简单的文本格式，方便查看；CSV是表格格式，可以直接用Excel打开，方便做进一步处理。
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="bg-yellow-50 border border-yellow-200 p-4 my-8 rounded-lg">
-    <h3 class="font-medium text-yellow-800 mb-2">重要提醒：请合理使用</h3>
-    <p class="text-yellow-700 text-sm">这个方法的目的是为了方便普通用户的个人使用。请务必尊重他人的劳动成果，不要用于任何侵犯版权的行为。对于有明确版权保护或需要严格验证文件的正式场合，此方法并不适用。</p>
+  <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-semibold mb-3 text-gray-800">重要提醒：请合理合法地使用</h3>
+    <p class="mb-3">
+      这个工具生成的号码是<strong>虚拟的、随机的数字组合</strong>。它们绝大部分并未被真实分配使用。
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li><strong>禁止用于非法用途：</strong>严禁将这些号码用于任何骚扰、诈骗、虚假注册等违法活动。</li>
+      <li><strong>主要用途是测试与模拟：</strong>它的设计初衷是服务于软件测试、数据分析学习、内部模拟等合法合规的场景。</li>
+      <li><strong>注意数据量：</strong>一次不要生成太多数据（如上百万条），以免占用过多资源，工具本身也做了数量限制来保护你的设备流畅运行。</li>
+    </ul>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
-  <div class="space-y-6 mb-12">
-    <div>
-      <h3 class="font-medium mb-2">修改后的视频画质会变差吗？</h3>
-      <p class="text-gray-600">完全不会。这个过程不对视频的画面和声音数据进行任何压缩或重编码，就像给一本书换了个新封面，里面的内容一个字都没变。</p>
-    </div>
-    <div>
-      <h3 class="font-medium mb-2">所有网站都适用吗？</h3>
-      <p class="text-gray-600">对于大多数仅依靠“文件指纹”做初步重复检测的个人网盘、社交平台是有效的。但如果网站使用了更复杂的视频内容识别技术，则可能无效。</p>
-    </div>
-    <div>
-      <h3 class="font-medium mb-2">这个过程安全吗？我的视频会上传到别人的服务器吗？</h3>
-      <p class="text-gray-600">安全。整个修改过程通常在你的浏览器内本地完成，视频文件不会上传到任何外部服务器，处理完即刻下载，保护你的隐私。</p>
-    </div>
-  </div>
-
-  <p class="mt-12 p-4 bg-gray-100 rounded-lg text-center">希望这个通俗的解释能帮你理解如何巧妙地应对视频重复的问题。下次再遇到上传被拒，不妨试试这个思路，给你的视频一个“重新开始”的机会。</p>
+  <h2 class="text-2xl font-bold mt-10 mb-4">总结</h2>
+  <p class="mb-6">
+    手机号码段生成器，本质上是一个帮你自动化完成“数字排列组合”的贴心助手。它把原本枯燥、易错的手工劳动，变成了点几下鼠标就能完成的事。无论你是为了工作测试、学习研究，还是个人需要，它都能成为一个提高效率的小帮手。
+  </p>
+  <p class="text-gray-600 pb-10">
+    希望这篇文章能帮你清楚地了解这个工具的用途和用法。记住，工具的价值在于如何使用它，务必在合法合规的范围内，让它为你的工作和生活带来便利。
+  </p>
 </div>
-`;export{s as default};
+`;export{t as default};

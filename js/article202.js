@@ -1,29 +1,110 @@
-const l=`<div class="max-w-4xl mx-auto p-4 md:p-6 font-sans text-gray-800">
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">什么是渣男渣女语录？</h2>
-  <p class="mb-4 leading-relaxed">渣男渣女语录，是指在感情关系中那些只索取不付出、擅长自我感动和推卸责任的人经常说出的话。这些语录往往看似深情，实则是在推卸责任、操控对方、或者为自己的不当行为找借口。本工具收集了大量此类经典语录，帮助大家识别这些"话术"，提高警惕。</p>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
+  <header class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
+    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
+  </header>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">渣男渣女语录的分类</h2>
-  <p class="mb-2 leading-relaxed">本工具将语录分为以下几大类：</p>
-  <ul class="list-disc list-inside mb-4 space-y-2 leading-relaxed">
-    <li><strong>渣男语录</strong>：男性在感情中常用的推脱、甩锅、暧昧话语</li>
-    <li><strong>渣女语录</strong>：女性在感情中常用的吊着、索取、双标话语</li>
-    <li><strong>PUA语录</strong>：精神控制、打压贬低、情感操控类话语</li>
-    <li><strong>渣男回头语录</strong>：分手后回头求复合时的经典话术</li>
-    <li><strong>通用语录</strong>：渣男渣女都会使用的敷衍、甩锅、推脱话语</li>
-  </ul>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
+    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
+      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
+    </div>
+    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
+  </section>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">如何识别渣男渣女？</h2>
-  <p class="mb-4 leading-relaxed">识别渣男渣女的关键在于观察对方的言行是否一致。如果一个人经常说出上述语录中的话，同时行为上也在不断伤害你、利用你，那么就需要提高警惕了。健康的感情关系应该建立在相互尊重、坦诚沟通的基础上。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
+    <ul class="space-y-3 my-5">
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
+        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
+      </li>
+    </ul>
+    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
+  </section>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">使用说明</h2>
-  <p class="mb-2 leading-relaxed">本工具使用方法非常简单：</p>
-  <ol class="list-decimal list-inside mb-4 space-y-2 leading-relaxed">
-    <li>选择你感兴趣的分类标签，或选择"全部"查看所有语录</li>
-    <li>点击"随机语录"按钮，即可获取一条随机语录</li>
-    <li>点击"复制语录"按钮，可将当前语录复制到剪贴板，方便分享</li>
-    <li>点击收藏按钮，可将喜欢的语录保存到本地收藏列表</li>
-  </ol>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
+    <div class="bg-pink-50 p-5 rounded-lg my-5">
+      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
+        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
+        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
+        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
+      </ol>
+    </div>
+    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
+  </section>
 
-  <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">注意事项</h2>
-  <p class="mb-4 leading-relaxed text-red-600 font-medium">本工具仅供娱乐使用，请勿将语录内容代入现实生活！如果您正在经历情感困扰，建议寻求专业的心理咨询帮助。</p>
-</div>`;export{l as default};
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-green-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
+          <li>配合表情使用，效果更佳</li>
+          <li>真诚最重要，即使是夸张的话也要发自内心</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 p-5 rounded-lg">
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
+          <li>在正式场合用，比如工作汇报、商务谈判</li>
+          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
+    <div class="space-y-4">
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
+    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
+    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
+    <div class="text-center">
+      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
+    </div>
+  </section>
+</article>
+`;export{s as default};

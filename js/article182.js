@@ -1,79 +1,157 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
-  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
+<article class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    一个好用的在线便签工具，能帮你随时随地记录想法
+  </h1>
 
-  <p class="text-lg text-slate-600 mb-8">
-    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-blue-800">
-      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
+  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
+    <p>
+      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
     </p>
   </div>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
-  <p class="mb-4">想一想这些场景：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
-    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
-    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
-  </ul>
-  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
-
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
-  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
-    </div>
-    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
-      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
-      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
-    </div>
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
+    <p class="text-gray-700">
+      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
+    </p>
   </div>
 
-  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
+  <div class="space-y-10">
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何使用这个便签工具？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        使用非常简单，就像用真实的便利贴一样。
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700">
+        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
+        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
+        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
+        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
+        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
+      </ul>
+    </section>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
-  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
-  <ul class="list-disc pl-5 mb-8 space-y-2">
-    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
-    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
-    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
-  </ul>
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        便签上的小工具能做什么？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        每张便签底部都有一排小按钮，能让你的文字更丰富。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li><b>B</b>：加粗文字</li>
+            <li><i>I</i>：让文字倾斜</li>
+            <li><u>U</u>：给文字加下划线</li>
+            <li><s>ab</s>：给文字划上删除线</li>
+            <li>Points：创建项目符号列表</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
+          <p class="text-gray-700">
+            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <div class="bg-slate-50 p-6 rounded-lg mb-8">
-    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
-    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
-    <ul class="list-disc pl-5 space-y-1 text-slate-600">
-      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
-      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
-      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
-      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
-    </ul>
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        如何保护我的便签内容？
+      </h2>
+      <p class="text-gray-700 mb-4">
+        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+            导出备份
+          </h3>
+          <p class="text-gray-700">
+            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
+          </p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
+            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+            导入恢复
+          </h3>
+          <p class="text-gray-700">
+            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
+          </p>
+        </div>
+      </div>
+      <p class="mt-4 text-gray-600 text-sm">
+        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
+        适合哪些场景使用？
+      </h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-yellow-800 font-medium">1</span>
+          </div>
+          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-pink-800 font-medium">2</span>
+          </div>
+          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-green-800 font-medium">3</span>
+          </div>
+          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+            <span class="text-purple-800 font-medium">4</span>
+          </div>
+          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        几个贴心的小提示
+      </h2>
+      <ul class="space-y-4 text-gray-700">
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
+        </li>
+      </ul>
+    </section>
   </div>
 
-  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
-  <p class="mb-6">
-    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
-  </p>
-  <p class="mb-8">
-    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
-  </p>
-
-  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
-    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
+  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+    <p class="text-gray-600">
+      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
+    </p>
+    <p class="text-gray-500 text-sm mt-2">
+      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
+    </p>
   </div>
-</div>
+</article>
 `;export{s as default};

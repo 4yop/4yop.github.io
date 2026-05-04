@@ -1,110 +1,59 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想夸人却不知道怎么说？彩虹屁生成器帮你搞定</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">生活中总有一些时刻，你想夸一个人，但话到嘴边却不知道怎么说。太直接显得敷衍，太文艺又觉得别扭。今天给大家介绍一个有趣的小工具——彩虹屁生成器，帮你把赞美的话说得既真诚又动听。</p>
-  </header>
+<div class="max-w-3xl mx-auto p-6 text-gray-800 font-sans">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">开会总听同事说“赋能”和“闭环”？揭秘互联网黑话的真实意思</h1>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">"彩虹屁"这个词来源于网络，指的是那些听起来夸张但让人很舒服的赞美话。就像彩虹一样，虽然有点虚幻，但看到的人心情都会变好。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-pink-500 my-5">
-      <p class="text-gray-700"><strong>举个例子：</strong>普通的夸法是"你真好看"，彩虹屁的说法可能是"你的颜值简直是上帝亲手捏的，看一眼都觉得是视觉盛宴"。</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">彩虹屁的精髓在于：夸张但不虚假，肉麻但不油腻。它能让被夸的人开心，也能让夸人的人显得有趣。</p>
-  </section>
+  <p class="mb-6 text-lg">不知道你有没有这样的经历：公司开会，身边的同事侃侃而谈，说我们要“对齐一下认知”，找到业务“抓手”，为团队“赋能”，最终实现“闭环”……你听得云里雾里，只能频频点头，心里却在想：他们到底在说什么？</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 什么时候需要彩虹屁？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">彩虹屁不是随便用的，用对了场合，效果翻倍。以下是一些适合的场景：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">朋友发自拍：</strong>朋友发了新照片，除了点赞，还可以用彩虹屁评论，让TA开心一整天。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-orange-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">对象生气了：</strong>吵架后想哄人，一句走心的彩虹屁比"对不起"管用多了。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">同事帮了忙：</strong>想感谢同事，普通的"谢谢"太干巴，加点彩虹屁显得更有诚意。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-green-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">爸妈做了饭：</strong>夸妈妈做的菜好吃，彩虹屁能让妈妈笑得合不拢嘴。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">偶像发新歌：</strong>追星的时候，彩虹屁是必备技能，让偶像看到你的热情。</span>
-      </li>
-    </ul>
-    <p class="text-gray-700 leading-relaxed">总之，只要是想让人开心、想表达好感的场合，彩虹屁都能派上用场。</p>
-  </section>
+  <p class="mb-6">这些词，就是大家常说的“互联网黑话”。它们本身是有用的专业术语，但用错了场合，或者为了用而用，就变成了让人头疼的沟通障碍。今天，我们就来聊聊几个最常见的黑话，把它们“翻译”成普通人一听就懂的大白话。</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 彩虹屁生成器怎么用？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">如果你实在想不出彩虹屁，别担心，这个生成器可以帮你。使用方法非常简单：</p>
-    <div class="bg-pink-50 p-5 rounded-lg my-5">
-      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
-        <li><strong>输入对方的名字：</strong>比如你想夸朋友"小明"，就在输入框里填"小明"。</li>
-        <li><strong>点击生成：</strong>工具会自动生成一段彩虹屁，每次生成的内容都不一样。</li>
-        <li><strong>不满意就再点：</strong>如果生成的内容不够满意，可以多点几次，直到出现喜欢的。</li>
-        <li><strong>复制发送：</strong>选中喜欢的内容，复制下来发给对方就行了。</li>
-      </ol>
-    </div>
-    <p class="text-gray-700 leading-relaxed">整个过程不到一分钟，就能送出一段让人开心的赞美话。</p>
-  </section>
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话一：赋能</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“我们要用技术为销售团队赋能。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>其实就是“帮助别人获得能力”或“提供支持”。比如，给团队培训新技能、配更好的工具，都叫赋能。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</span>公司引入了新的客户管理系统，<span class="bg-amber-200 px-1 rounded">赋能</span>一线销售，让他们能更快地查询客户信息。<br>
+  <span class="text-red-600">✗ 用错了：</span>老板晚上十点在工作群布置新任务，并说“给大家<span class="bg-amber-200 px-1 rounded">赋能</span>一下”。（这明明是加班，哪里是赋能呀！）</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 彩虹屁使用小贴士</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">虽然彩虹屁很好玩，但用的时候也要注意分寸，不然可能适得其反：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>根据对方的特点调整，比如夸女生可以侧重颜值，夸男生可以侧重才华</li>
-          <li>配合表情使用，效果更佳</li>
-          <li>真诚最重要，即使是夸张的话也要发自内心</li>
-        </ul>
-      </div>
-      <div class="bg-red-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">不要做的：</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
-          <li>对不太熟的人用太肉麻的话，可能会让人觉得奇怪</li>
-          <li>在正式场合用，比如工作汇报、商务谈判</li>
-          <li>过度使用，什么都说彩虹屁会显得不真诚</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话二：抓手</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“提升用户满意度是我们下个季度的核心抓手。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>可以理解为“关键突破口”、“主要办法”或者“能着力去做的事情”。就像开门需要门把手（抓手）一样，做事也需要找到一个发力点。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</span>对于这个新项目，快速推出一个试用版收集反馈，是我们验证想法的核心<span class="bg-amber-200 px-1 rounded">抓手</span>。<br>
+  <span class="text-red-600">✗ 用错了：</span>这次活动的<span class="bg-amber-200 px-1 rounded">抓手</span>是天气，希望当天别下雨。（天气怎么成了你能控制的办法了？）</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 彩虹屁示例欣赏</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">以下是一些经典的彩虹屁，给你一些灵感：</p>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的笑容就像是春天的阳光，看一眼就觉得整个世界都亮了。"</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你简直就是行走的艺术品，每一个角度都值得被收藏。"</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"你的才华就像是宝藏，每次挖掘都有新的惊喜。"</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="text-gray-700 italic">"如果世界上有完美这个词，那一定是在形容你。"</p>
-      </div>
-    </div>
-  </section>
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话三：对齐</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“我们先对齐一下信息，避免后面出错。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>就是“沟通清楚，统一认识”。确保大家掌握的情况、对目标的理解是一致的，不要各想各的。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</strong>会议开始前，我们用五分钟把项目截止日期和主要要求跟所有人<span class="bg-amber-200 px-1 rounded">对齐</span>了一下。<br>
+  <span class="text-red-600">✗ 用错了：</span>你把这份表格里的文字<span class="bg-amber-200 px-1 rounded">对齐</span>一下。（这里说的就是简单的排版对齐，不是沟通对齐。）</p>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：赞美是一种能力</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">其实，彩虹屁的本质就是学会欣赏别人、表达善意。在这个快节奏的社会里，一句真诚的赞美，可能会成为别人一天中最温暖的记忆。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">所以，不要吝啬你的赞美。用彩虹屁生成器也好，自己组织语言也好，多夸夸身边的人。你会发现，当你让别人开心的时候，自己也会变得更快乐。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">现在就去试试，给你想夸的人送上一句彩虹屁吧！</p>
-    </div>
-  </section>
-</article>
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话四：闭环</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“从用户反馈到产品改进，要形成一个闭环。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>指一件事有始有终，形成了一个完整的循环。比如，你提出建议 -> 被采纳 -> 看到改进结果 -> 再提新建议，这就是一个闭环。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</span>我们建立了每周客户投诉分析会，确保每个问题都有跟进和回复，形成了服务<span class="bg-amber-200 px-1 rounded">闭环</span>。<br>
+  <span class="text-red-600">✗ 用错了：</span>我这个想法在脑子里转了一圈，已经形成完美<span class="bg-amber-200 px-1 rounded">闭环</span>了。（这只是自己想通了，没有实际动作和结果，不算真正闭环。）</p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话五：复盘</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“活动结束了，我们明天下午复盘一下。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>来源于围棋术语，就是“事后回顾总结”。把做完的事情再捋一遍，看看哪里做得好（保持），哪里没做好（改进）。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</span>这次促销活动销量超出预期，我们需要好好<span class="bg-amber-200 px-1 rounded">复盘</span>一下成功的原因，下次可以复制。<br>
+  <span class="text-red-600">✗ 用错了：</span>这个计划是老板定的，肯定不会错，不需要<span class="bg-amber-200 px-1 rounded">复盘</span>。（再好的计划，执行后也有总结的价值。）</p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 pb-2 border-b">黑话六：颗粒度</h2>
+  <p class="mb-4"><strong>听到的场景：</strong>“你的报告颗粒度不够，需要更细一些。”</p>
+  <p class="mb-4"><strong>大白话翻译：</strong>指的是“详细程度”或“细致程度”。颗粒度粗，就是大概、笼统；颗粒度细，就是具体、详细。</p>
+  <p class="mb-4 bg-gray-100 p-4 rounded"><strong>举个栗子：</strong><br>
+  <span class="text-green-600">✓ 用对了：</span>下季度的预算，请把<span class="bg-amber-200 px-1 rounded">颗粒度</span>做到每周，这样更好控制成本。<br>
+  <span class="text-red-600">✗ 用错了：</span>你这个人的<span class="bg-amber-200 px-1 rounded">颗粒度</span>很高。（这听起来像是在形容一个物体，而不是人的思维或计划的细致度。）</p>
+
+  <div class="mt-12 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+    <h3 class="text-xl font-bold mb-4">一个小互动：你能分辨黑话的正确用法吗？</h3>
+    <p class="mb-4">看完上面的解释，你是不是对互联网黑话稍微“祛魅”了？其实，这些词在合适的语境下使用，能让专业沟通更高效。但如果滥用或错用，就会变成“不说人话”的典型。</p>
+    <p>关键不在于用不用这些词，而在于我们是否真的理解了它们的意思，并且用在能让沟通更清晰的地方，而不是用来设置门槛、凸显“专业”。毕竟，所有沟通的最终目的，不就是为了让对方明白吗？</p>
+  </div>
+
+  <p class="mt-10 text-gray-600">希望这篇文章能帮你下次再听到这些词时，能会心一笑，准确get到同事想表达的真实意图。</p>
+</div>
 `;export{s as default};

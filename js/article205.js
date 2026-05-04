@@ -1,74 +1,97 @@
-const Q={title:"闲鱼违禁词检测工具",description:"支持敏感词、极限词、广告法禁用词智能识别",content:`
-## 什么是闲鱼违禁词检测工具
+const s=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
+  <article>
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">想拥有与众不同的网络名字吗？字符花样转换器帮你轻松实现</h1>
+    <p class="text-gray-600 mb-8 text-lg text-center">告别普通字体，教你如何将简单的数字和字母，变成一眼就能被记住的个性符号。</p>
 
-闲鱼违禁词检测工具是一款专为闲鱼卖家设计的内容合规检测工具，帮助用户快速识别商品标题、描述中可能违反平台规则的敏感词汇，避免商品被限流或下架。
+    <div class="mb-10 p-6 bg-blue-50 border-l-4 border-blue-500">
+      <p class="mb-2">你是否也遇到过这些烦恼？</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>想注册一个酷炫的网名，但所有好名字都被人用过了？</li>
+        <li>社交媒体上的个人介绍平平无奇，很难吸引别人注意？</li>
+        <li>想在评论区留言时，让自己的发言看起来更特别一些？</li>
+      </ul>
+      <p class="mt-4">其实，不用苦恼。你只需要将普通的字母数字稍微“打扮”一下，就能立刻变得与众不同。今天，我们就来聊聊如何轻松玩转各种特殊字符。</p>
+    </div>
 
-## 主要功能
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">什么是“字符花样”？</h2>
+      <p class="mb-4">简单来说，就是用一些看起来相似、但更特别的符号，来替换你原本想用的普通字符。</p>
+      <p class="mb-4">比如，你的生日是“1990”，但直接用它做网名后缀，可能显得有点普通。如果把它变成带圈的数字“①⑨⑨⓪”，是不是瞬间就有了设计感？再比如，你想写“LOVE”，如果变成“<span class="text-pink-600">❥love</span>”或“<span class="font-bold">𝐋𝐎𝐕𝐄</span>”，情感表达是不是更强烈了？</p>
+      <p>这些看起来有点“高级”的符号，其实并不神秘。它们本就存在于你的电脑和手机字体库中，只是大多数人不知道去哪里找、怎么用。而现在，有专门的在线工具可以帮你瞬间完成这种转换。</p>
+    </section>
 
-### 违禁词自动检测
-- 支持广告法极限词检测（如最、第一、唯一等）
-- 识别外部平台引流词（如微信、QQ、淘宝等）
-- 检测营销欺诈词（如高仿、复刻、原单等）
-- 识别违禁商品相关词（如烟、酒、医疗器械等）
-- 检测联系方式（手机号、网址、二维码等）
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">常见的字符转换风格有哪些？</h2>
+      <p class="mb-4">了解这些风格，下次你想装饰文字时，就能轻松说出你想要的效果。</p>
+      <ul class="space-y-6">
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">1. 圆圈数字</h3>
+          <p class="text-gray-600">效果：① ② ③ … ⑩</p>
+          <p>这是非常受欢迎的一种风格，尤其适合点缀日期、序号或幸运数字。看起来既清晰又可爱，常用于游戏昵称或列表标记。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">2. 全角字符</h3>
+          <p class="text-gray-600">效果：ＡＢＣ １２３（每个字符更宽）</p>
+          <p>简单地将英文字母和数字“加胖”。虽然变化细微，但能让一行文字看起来更整齐、更醒目，非常适合用作标题或需要强调的短句。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">3. 上标与下标</h3>
+          <p class="text-gray-600">效果：¹²³ᴸᵒʳᵉᵐ 和 ₁₂₃₄₅</p>
+          <p>想表达“平方”“立方”（如m²）？或者想营造一种化学公式、数学注释般的专业感？这两种格式就能派上用场。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">4. 装饰前缀</h3>
+          <p class="text-gray-600">效果：★star ❥love</p>
+          <p>直接在文字前加上小符号来点明主题。一颗星星、一颗爱心，就能让一个普通的单词充满情绪和画面感。</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">5. 加粗与等宽字体</h3>
+          <p class="text-gray-600">效果：<span class="font-bold">𝐁𝐨𝐥𝐝</span> 与 <span style="font-family: monospace">𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎</span></p>
+          <p>纯粹的加粗能让文字更有力量感。而等宽字体则让每个字母宽度一致，常给人技术、复古或打字机般的独特格调。</p>
+        </li>
+      </ul>
+    </section>
 
-### 自定义词库
-- 支持添加自定义违禁词
-- 词库自动持久化存储
-- 与内置词库自动合并检测
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">这些花样字符，可以用在哪里？</h2>
+      <p class="mb-4">知道了怎么做，更要了解怎么用。下面这些场景，你一定会碰到：</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">社交网络名片</h4>
+          <p>微信、微博、抖音、小红书等平台的昵称和个性签名，是使用花样字符最多的地方。一个特别的昵称能让你更容易被记住和发现。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">评论区与弹幕</h4>
+          <p>在热门视频或文章下评论时，让你的留言在千篇一律的文字中“跳”出来，获得更多点赞和互动的机会。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">游戏角色名</h4>
+          <p>在网游或手游中，一个酷炫的角色名不仅能彰显个性，有时还能在虚拟世界里带来更高的“辨识度”。</p>
+        </div>
+        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">文件与笔记标题</h4>
+          <p>在整理电脑文件或写电子笔记时，用特殊符号来区分重要等级或分类，能让浏览效率大大提升。</p>
+        </div>
+      </div>
+    </section>
 
-### 格式保留
-- 支持原格式输出，保留空格与换行
-- 支持紧凑格式输出，便于摘要提取
+    <section class="mb-10 p-6 bg-gray-50 rounded-lg">
+      <h2 class="text-2xl font-bold mb-4">如何使用这些字符？</h2>
+      <p class="mb-4">过程其实非常简单，就像把大象放进冰箱一样，只需三步：</p>
+      <ol class="list-decimal pl-5 space-y-3">
+        <li><strong>输入</strong>：在工具里，写下你想转换的普通文字，比如你的名字“Lucy2024”。</li>
+        <li><strong>选择</strong>：从列表里挑一个你喜欢的风格，比如“圆圈数字”。</li>
+        <li><strong>复制</strong>：转换后的“Lucy②⓪②④”会立刻出现，点击“复制”按钮，就可以把它粘贴到任何你想用的地方了。</li>
+      </ol>
+      <p class="mt-4 text-gray-600">现在，很多在线工具都提供了这样的功能，操作直观，而且完全免费。你甚至可以自己定义一些独特的替换规则，创造出只属于你自己的字符风格。</p>
+    </section>
 
-### 一键复制
-- 检测结果一键复制到剪贴板
-- 违禁词自动用【】标记
-
-## 使用场景
-
-1. **商品发布前检测**：发布商品前检测标题和描述，避免违规
-2. **批量内容审核**：运营人员批量检查商品文案
-3. **内容优化**：根据检测结果优化商品描述
-4. **合规培训**：学习平台规则，提升合规意识
-
-## 违禁词类型说明
-
-### 广告法极限词
-包括国家级、最高级、最佳、唯一、顶级等词汇，违反广告法规定。
-
-### 外部平台引流词
-包括微信、QQ、淘宝、抖音等其他平台名称，属于导流行为。
-
-### 营销欺诈词
-包括高仿、复刻、原单等词汇，涉及假冒伪劣商品描述。
-
-### 违禁商品词
-包括香烟、酒类、医疗器械、情趣用品等平台禁止销售的商品相关词汇。
-
-### 联系方式
-包括手机号、微信号、QQ号、网址等联系方式，平台禁止直接留联系方式。
-
-## 常见问题
-
-**Q: 为什么商品发布后没有曝光？**
-A: 可能是标题或描述中包含了违禁词，系统会自动限制含违禁词商品的展示。
-
-**Q: 自定义词库会丢失吗？**
-A: 不会，自定义词库会自动保存到本地存储，刷新页面不会丢失。
-
-**Q: 可以检测哪些类型的违禁词？**
-A: 支持广告法极限词、外部引流词、营销欺诈词、违禁商品词、联系方式等多种类型。
-
-**Q: 检测结果如何导出？**
-A: 可以一键复制检测结果到剪贴板，违禁词会用【】标记。
-
-## 更新日志
-
-### v1.0.0
-- 初始版本发布
-- 支持内置违禁词库检测
-- 支持自定义词库
-- 支持原格式输出
-- 支持一键复制功能
-  `};export{Q as default};
+    <div class="mt-12 p-6 border border-gray-300 text-center">
+      <p class="font-medium mb-2">总结一下：</p>
+      <p>想让自己的网络形象更突出，不一定需要复杂的图案或设计。有时，仅仅是将普通的字母数字换成几枚<span class="text-blue-600">带圈的数字</span>、一个<span class="font-bold">加粗的单词</span>，或者一颗<span class="text-pink-600">爱心前缀</span>，就足以产生令人眼前一亮的效果。</p>
+      <p class="mt-4">希望这篇文章能帮你打开思路。下次，当你想让你的文字“不一样”时，不妨试试这个有趣的“字符花样”转换方法吧。</p>
+    </div>
+  </article>
+</div>
+`;export{s as default};

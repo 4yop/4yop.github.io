@@ -1,124 +1,131 @@
-const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 py-8">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center leading-tight">
-    和朋友打游戏王还在口算？一个聪明工具帮你搞定所有记分烦恼
-  </h1>
-
-  <!-- 引言 -->
-  <p class="text-lg mb-8 text-gray-600 text-center">
-    你是否曾因复杂的生命值计算中断了紧张刺激的决斗？试试这个专为游戏王玩家设计的贴心助手。
-  </p>
-
-  <div class="bg-gray-50 border-l-4 border-blue-500 p-4 mb-8">
-    <p class="text-gray-700">
-      无论你是刚入坑的新手，还是经验丰富的老玩家，精准便捷地记录生命值，能让你的对局体验提升一个档次。
-    </p>
-  </div>
-
-  <!-- 主体内容第一部分 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    为什么你需要一个专门的生命值计算器？
-  </h2>
-  <p class="mb-4">
-    回想一下你和朋友的对战场景。一方发动了效果，另一方连锁，生命值就像坐过山车一样上上下下。这时候，你们是不是常常需要：
-  </p>
-  <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-700">
-    <li>暂停游戏，拿出手机计算器反复按</li>
-    <li>担心自己算错，要求对方再算一遍</li>
-    <li>用纸笔记录，但字迹潦草过后就忘</li>
-    <li>在多人群战时，完全搞不清谁还剩多少生命值</li>
-  </ul>
-  <p class="mb-6">
-    这些瞬间不仅打断了流畅的对战节奏，还可能引发不必要的争执。一个顺手好用的记分工具，能让你们完全沉浸于策略的较量中。
-  </p>
-
-  <!-- 功能介绍 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    它如何让你们的对战变得更轻松？
-  </h2>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">一、多种模式，适应各种对局</h3>
-    <p class="mb-4">
-      就像游戏王有不同的玩法规则一样，这个工具也准备了不同的模式。
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">经典1对1</h4>
-        <p class="text-sm text-gray-600">最常用的模式，标准8000点生命值开局，适合大部分日常切磋。</p>
-      </div>
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">激动人心的2v2</h4>
-        <p class="text-sm text-gray-600">团队战专用，每队共享16000点生命值，协同作战的体验拉满。</p>
-      </div>
-      <div class="bg-white p-4 border border-gray-200 rounded shadow-sm">
-        <h4 class="font-bold mb-2">自由自定义</h4>
-        <p class="text-sm text-gray-600">想玩点特别的？可以自由设定初始生命值，满足你的各种创意规则。</p>
+const t=`
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6 leading-tight">还在为选择发愁？一个简单工具帮你轻松做决定</h1>
+    
+    <div class="text-gray-600 mb-8 text-center">
+      <p class="mb-2">每天都要做无数选择，从吃什么到去哪里，有时候真的让人头疼。</p>
+      <p>今天就来介绍一个特别实用的小工具，它能帮你快速做出随机选择，让生活变得更简单。</p>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">什么是随机选择器？</h2>
+      <div class="space-y-4 text-gray-700">
+        <p>随机选择器就像一个电子抽签盒，你可以把不同的选项放进去，它就会帮你随机选出一个。</p>
+        <p>想象一下，你和朋友争论晚上吃什么，把“火锅、烧烤、炒菜、面条”这些选项输入进去，点击一下按钮，它就会给出一个随机结果。</p>
+        <p>这样一来，既公平又有趣，再也不用为“到底听谁的”而烦恼了。</p>
       </div>
     </div>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">二、操作简单，快如闪电</h3>
-    <p class="mb-4">
-      它的设计核心就是“快”。在决斗中，每一次计算都应该在瞬息间完成。
-    </p>
-    <ul class="list-disc pl-5 mb-4 space-y-2">
-      <li><strong>核心操作：</strong>输入数值，点“增加”或“减少”，完成。就这么简单。</li>
-      <li><strong>快捷按键：</strong>常用的+500、+1000，以及“生命值减半”都有独立按钮，一键到位。</li>
-      <li><strong>为移动端优化：</strong>在手机上按钮够大，间距合适，不会误触，躺着玩也能轻松操作。</li>
-    </ul>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">三、像裁判一样自动记录</h3>
-    <p class="mb-4">
-      它不仅是计算器，更是一个称职的“对战记录员”。
-    </p>
-    <p class="mb-4">
-      每一次生命值的变动，都会被精确地记录下来：什么时间、变化了多少、最终结果是多少。对局结束后，你可以清晰地回顾整个对战过程，复盘关键操作，或者解决“刚才是不是算错了”的疑问。
-    </p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold mb-3 text-blue-600">四、贴心的细节设计</h3>
-    <p class="mb-4">
-      一些你可能没注意到，但用起来会感觉很舒服的功能：
-    </p>
-    <ul class="list-disc pl-5 space-y-2">
-      <li><strong>记住你的习惯：</strong>如果你和固定的朋友玩，可以输入他们的名字，下次会自动提示，不用每次都输。</li>
-      <li><strong>数据自动保存：</strong>就算不小心关闭了浏览器页面，或者手机来电话中断了游戏，重新打开，对局数据依然还在。</li>
-      <li><strong>随时重新开始：</strong>一局打完，点一下“重开一局”，所有数据瞬间归位，准备迎接下一场决斗。</li>
-    </ul>
-  </div>
-
-  <!-- 场景化描述 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    它会出现在你的哪些游戏场景里？
-  </h2>
-  <div class="bg-blue-50 p-6 rounded-lg mb-8">
-    <p class="font-semibold mb-2">周末的朋友聚会：</p>
-    <p class="mb-4 text-gray-700">大家围坐在一起，手机或平板放在桌子中央，所有人都能清楚看到当前生命值，争议少了，欢乐多了。</p>
-    <p class="font-semibold mb-2">卡店的小型比赛：</p>
-    <p class="mb-4 text-gray-700">除了正式的记分纸，用它作为辅助记录，能让你的计算更准确，避免因分数错误影响比赛成绩。</p>
-    <p class="font-semibold mb-2">家庭内的亲子娱乐：</p>
-    <p class="text-gray-700">教孩子玩游戏王时，用它来管理分数，可以让规则讲解更直观，孩子也更容易理解和上手。</p>
-  </div>
-
-  <!-- 总结与引导 -->
-  <h2 class="text-2xl font-bold mt-10 mb-4 pt-6 border-t border-gray-200">
-    告别心算和纸笔，让工具服务于快乐
-  </h2>
-  <p class="mb-6">
-    游戏王最大的魅力在于千变万化的战术和扣人心弦的博弈。一个好的工具，应该默默解决掉那些繁琐的后勤工作，让你能更专注地享受思考与对决的乐趣本身。
-  </p>
-  <p class="mb-10">
-    这个游戏王生命值计算器，就像一个永远在线、绝对公正的裁判助理。它不改变任何游戏规则，只是让你遵守规则的过程变得异常顺畅。下次决斗开始时，不妨试一试，你可能会发现，你们的对局因此变得更加专注和愉快。
-  </p>
-
-  <div class="text-center text-sm text-gray-500 mt-12 pt-8 border-t border-gray-200">
-    <p>希望这个小工具能成为你卡组之外的又一个得力助手，祝你决斗愉快！</p>
-  </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">哪些时候特别需要它？</h2>
+      <ul class="grid md:grid-cols-2 gap-4 text-gray-700">
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">日常吃饭难题</div>
+          <div class="text-sm">每天都要想的“吃什么”，把常吃的几家店列出来，让它帮你决定。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">周末活动安排</div>
+          <div class="text-sm">看电影、逛公园、去爬山……太多选择反而不知道做什么好。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">家庭游戏时间</div>
+          <div class="text-sm">和孩子玩游戏时，用它来决定谁先开始，或者选择游戏项目。</div>
+        </li>
+        <li class="bg-gray-50 p-4 rounded-lg">
+          <div class="font-medium text-gray-800 mb-1">学习抽检复习</div>
+          <div class="text-sm">把要复习的知识点写下来，随机抽选，检验自己的掌握情况。</div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">使用起来有多简单？</h2>
+      <div class="space-y-6 text-gray-700">
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">输入你的选项</p>
+            <p>把你想选择的项目一个个写下来，比如“红色、蓝色、绿色”，或者每行写一个。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">点击选择按钮</p>
+            <p>轻轻点一下“随机选择”按钮，它会立刻从你的列表中抽出一个结果。</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shri0">3</div>
+          <div>
+            <p class="font-medium text-gray-800 mb-1">得到最终结果</p>
+            <p>屏幕上会清晰显示被选中的项目，你可以直接使用这个结果，或者重新选择。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">这些场景你可能遇到过</h2>
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景一：和朋友争论不休时</div>
+          <p class="text-gray-700">周末去哪里玩？有人说去公园，有人说去商场，有人说去看展览。与其争论半天，不如把选项都列出来，让随机选择器帮忙决定，大家都服气。</p>
+        </div>
+        
+        <div class="mb-4">
+          <div class="font-medium text-gray-800 mb-2">场景二：自己犹豫不决时</div>
+          <p class="text-gray-700">想买件新衣服，看中了三件都挺喜欢，但预算只够买一件。这时候让选择器帮你挑，既解决了选择困难，又有点小惊喜。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-2">场景三：需要公平分配时</div>
+          <p class="text-gray-700">家里大扫除，谁擦窗户、谁拖地、谁整理厨房？把任务写下来随机分配，公平合理，谁也没意见。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-100">常见问题解答</h2>
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <div class="font-medium text-gray-800 mb-1">这个工具收费吗？</div>
+          <p>完全免费，打开网页就能用，不需要下载任何软件，也不会有烦人的广告。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">需要注册账号吗？</div>
+          <p>不需要，就像使用一个简单的计算器一样，随开随用，用完就关，没有任何门槛。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">手机和电脑都能用吗？</div>
+          <p>都可以，无论是在家里的电脑上，还是在外出的手机上，都能正常使用，操作一样简单。</p>
+        </div>
+        
+        <div>
+          <div class="font-medium text-gray-800 mb-1">选项有数量限制吗？</div>
+          <p>几乎没有限制，你可以输入几个选项，也可以输入几十个选项，都能正常工作。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-blue-50 border border-blue-100 rounded-lg p-6 mt-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">小提示：让选择变得更有趣</h2>
+      <div class="text-gray-700 space-y-3">
+        <p>• 不确定今晚吃什么？把附近常去的餐厅都列出来，让随机选择器给你一个惊喜。</p>
+        <p>• 孩子不知道看哪本书？把书架上的书名写下来，随机挑选，增加阅读的趣味性。</p>
+        <p>• 运动前热身做什么？把几个热身动作输入进去，每次都不一样，避免枯燥。</p>
+        <p class="font-medium text-gray-800 mt-4">很多时候，我们不是没有选择，而是选择太多。让随机选择器帮你简化这个流程，你会发现做决定原来可以这么轻松。</p>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10 pt-6 border-t border-gray-200">
+      <p class="text-gray-600">希望这个简单的小工具能帮你减少生活中的选择烦恼，让每一天的决策都变得更轻松愉快。</p>
+    </div>
+  </article>
 </div>
-`;export{s as default};
+`;export{t as default};

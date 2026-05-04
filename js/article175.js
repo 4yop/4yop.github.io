@@ -1,157 +1,104 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8">
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-    一个好用的在线便签工具，能帮你随时随地记录想法
+const e=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
+    7星彩选号不用愁，一个免费小工具帮你轻松搞定
   </h1>
 
-  <div class="text-lg text-gray-600 mb-8 leading-relaxed text-center">
-    <p>
-      你是否经常有一些零碎的想法需要随手记下？试试这个在浏览器里就能用的彩色便签板，无需下载，打开就能写。
-    </p>
+  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
+    <p>更新于 2025年5月 • 阅读约需3分钟</p>
   </div>
 
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg">
+  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
     <p class="text-gray-700">
-      <span class="font-semibold">核心特点：</span>数据保存在你自己的电脑浏览器里，无需注册登录，打开页面就能使用，关闭页面内容也不会丢失。
+      买7星彩时，面对茫茫多的数字是不是常感到选择困难？别急，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的选号小助手。
     </p>
   </div>
 
-  <div class="space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何使用这个便签工具？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        使用非常简单，就像用真实的便利贴一样。
-      </p>
-      <ul class="list-disc pl-6 space-y-3 text-gray-700">
-        <li><span class="font-medium">新建便签：</span>点击任意便签左上角的“+”号，就可以在它前面添加一张新便签。</li>
-        <li><span class="font-medium">写下内容：</span>直接点击便签的空白区域，就可以开始打字记录了。</li>
-        <li><span class="font-medium">改变颜色：</span>点击便签右上角的“...”，会弹出一排颜色选项，点一下就能给便签换背景色，方便分类。</li>
-        <li><span class="font-medium">调整顺序：</span>点击便签右上角的“‹”和“›”箭头，可以将便签向前或向后移动位置。</li>
-        <li><span class="font-medium">删除便签：</span>点击便签右上角的“✕”号，确认后即可删除。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        便签上的小工具能做什么？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        每张便签底部都有一排小按钮，能让你的文字更丰富。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文字编辑</h3>
-          <ul class="list-disc pl-5 space-y-1 text-gray-700">
-            <li><b>B</b>：加粗文字</li>
-            <li><i>I</i>：让文字倾斜</li>
-            <li><u>U</u>：给文字加下划线</li>
-            <li><s>ab</s>：给文字划上删除线</li>
-            <li>Points：创建项目符号列表</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 p-5 rounded-lg">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">插入图片</h3>
-          <p class="text-gray-700">
-            点击“🖼️”按钮，可以从电脑中选择一张图片插入到便签中。插入后，点击图片可以放大查看；在大图浏览时，可以左右切换看其他图片，点击空白处或黑色背景即可关闭。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        如何保护我的便签内容？
-      </h2>
-      <p class="text-gray-700 mb-4">
-        数据虽然保存在本地很安全，但为了以防万一（例如清空浏览器缓存），定期备份是个好习惯。
-      </p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-green-50 p-5 rounded-lg border border-green-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-            导出备份
-          </h3>
-          <p class="text-gray-700">
-            点击页面上方的“导出”按钮，会下载一个压缩包文件，里面包含了所有便签的文字和图片。你可以把这个文件保存在电脑或网盘里。
-          </p>
-        </div>
-        <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
-          <h3 class="text-lg font-medium text-gray-800 mb-2 flex items-center">
-            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-            导入恢复
-          </h3>
-          <p class="text-gray-700">
-            如果你有之前备份的文件，可以点击“追加导入”把内容添加到现在便签的后面，或者点击“覆盖导入”用备份完全替换当前所有便签。
-          </p>
-        </div>
-      </div>
-      <p class="mt-4 text-gray-600 text-sm">
-        进行导入、导出或清空操作时，页面会有短暂的加载提示，这是工具正在处理数据，请稍等片刻即可。
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 pt-2 border-t border-gray-200">
-        适合哪些场景使用？
-      </h2>
-      <ul class="grid md:grid-cols-2 gap-4">
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-yellow-800 font-medium">1</span>
-          </div>
-          <p class="text-gray-700">记录临时的工作任务清单或会议要点。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-pink-800 font-medium">2</span>
-          </div>
-          <p class="text-gray-700">收集和整理网页上看到的好句子、好图片。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-green-800 font-medium">3</span>
-          </div>
-          <p class="text-gray-700">随手写下突然冒出来的灵感或创意。</p>
-        </li>
-        <li class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
-            <span class="text-purple-800 font-medium">4</span>
-          </div>
-          <p class="text-gray-700">规划周末的购物清单或旅行计划。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-gray-50 p-6 md:p-8 rounded-xl">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-        几个贴心的小提示
-      </h2>
-      <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>页面<span class="font-medium">最右侧那张米黄色的便签是使用说明</span>，里面有一些重要提醒，初次使用时可以看一下。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>这个工具在手机和电脑上都能很好地使用，<span class="font-medium">界面会根据你的屏幕大小自动调整</span>。</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="flex-shrink-0 w-6 h-6 text-gray-400 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-          <span>如果你不再需要所有便签，可以使用“清空”功能。请放心，<span class="font-medium">点击后会有明确的确认提示</span>，避免误操作。</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="mt-12 pt-8 border-t border-gray-200 text-center">
-    <p class="text-gray-600">
-      希望这个简单、直观的便签工具，能让你的记录和整理工作变得更轻松。
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      选号，真的有那么难吗？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      相信很多朋友都有过这样的经历：站在彩票店前，拿着选号单，脑子里却一片空白。自己生日、纪念日、幸运数字都试过了，还是觉得不够"随机"。有时候甚至想，要是有人能帮我想几组号码就好了。
     </p>
-    <p class="text-gray-500 text-sm mt-2">
-      记住你的数据就保存在当前设备里，定期导出备份，就能随时安心使用。
+    <p class="leading-relaxed">
+      这种纠结非常正常。7星彩前区要从1-30个数字里选7个，后区要从1-10个数字里选1个，组合方式多到数不清。靠我们自己拍脑袋想，难免会陷入固定的思维模式。
     </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      什么是随机选号工具？它能做什么？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      简单来说，它就像一个聪明的数字机器。你只需要告诉它："帮我生成几组号码"，它就能立刻为你组合出全新的、完全随机的7星彩号码。
+    </p>
+
+    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
+      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
+      <ul class="space-y-3 pl-5 list-disc text-gray-700">
+        <li><span class="font-medium">想生成几注就几注</span>：你可以选择一次性生成1组到10组号码，不用一次次重复操作。</li>
+        <li><span class="font-medium">号码一目了然</span>：生成的前区和后区号码会分开、整齐地排列好，前区还自动从小到大排好序，看着特别清楚。</li>
+        <li><span class="font-medium">一键复制，方便保存</span>：看中了哪组号码，点一下"复制"就能存到手机剪贴板，然后直接粘贴到你的备忘录或者发给朋友，再也不用担心手抄抄错了。</li>
+        <li><span class="font-medium">纯属"脑力劳动"，保护你的隐私</span>：整个生成过程都在你自己的手机或电脑上完成，不会把你的任何选择记录或发送到别处，安全又省心。</li>
+        <li><span class="font-medium">操作简单到没朋友</span>：整个页面就一两个按钮，点一下"立即生成"就有结果，没有任何复杂步骤。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      为什么要用这种方式来选号？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      你可能会有疑问："机器选的号码，能行吗？"
+    </p>
+    <p class="mb-4 leading-relaxed">
+      首先，我们要明白，7星彩的开奖结果是完全随机的。这意味着，每一个数字组合在每一次抽奖中的中奖概率理论上是相同的。无论是你自己想的号码，还是机器生成的号码，中奖的概率都一样。
+    </p>
+    <p class="mb-4 leading-relaxed">
+      使用这种随机工具，最大的好处是帮你打破了选号时的"思维定式"。我们人类在"随机"选择时，总会不自觉地带入一些偏好（比如避开数字4，或者总选连号）。而这个工具能做到更纯粹的随机，覆盖更广的数字组合范围。
+    </p>
+    <p class="leading-relaxed">
+      它更像是一个帮你开拓思路、提供灵感的伙伴。当你没有头绪时，让它给你一些随机的选项，你也许能从这些组合中发现新的灵感，或者直接采用。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      如何使用它？简单三步
+    </h2>
+    <ol class="space-y-6 pl-0 list-decimal list-inside">
+      <li>
+        <span class="font-medium text-gray-900">第一步：打开工具</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑上找到这个7星彩随机选号工具的页面。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第二步：选择数量</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在"生成注数"旁边，输入你想看的号码组数，比如3组或5组。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第三步：生成与选用</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">点击"立即生成"按钮，几组号码瞬间出现。浏览一下，如果有觉得顺眼的，点击那组号码旁边的"复制"按钮，就可以拿去用了。不满意？点一下"再来一注"试试运气。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">最后，几句心里话</h2>
+    <p class="mb-4 leading-relaxed">
+      这个7星彩随机选号工具，本质上是一个为了增添趣味、提供便利的小助手。它能帮你解决"不知道选什么号"的纠结，让选号过程变得轻松有趣一些。
+    </p>
+    <p class="mb-4 leading-relaxed font-medium text-gray-900">
+      但请一定记住，它不能预测未来，也无法提高中奖概率。
+    </p>
+    <p class="leading-relaxed">
+      购买彩票应该是一种健康的娱乐方式。我们希望你在使用这个小工具时，能抱着轻松、理性的心态。享受那份期待的过程，但更要珍惜自己实实在在的生活。量力而行，理性购彩，才是最重要的。
+    </p>
+  </section>
+
+  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
+    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，请理性参与。</p>
   </div>
 </article>
-`;export{s as default};
+`;export{e as default};

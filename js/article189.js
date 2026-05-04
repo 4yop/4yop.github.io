@@ -1,119 +1,79 @@
 const s=`
-<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 font-sans text-gray-800 bg-white">
-  <header class="mb-10 sm:mb-16 text-center">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
-      互联网黑话到底是什么？它怎么悄悄改变了我们的对话方式
-    </h2>
-    <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-      你有没有在开会时，听到一堆“赋能”、“抓手”、“闭环”却一头雾水？这背后是一套独特的语言系统，正在许多行业中悄然流行。
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-slate-700">
+  <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">数据也能“打码”？一个简单工具，保护你的隐私信息</h1>
+
+  <p class="text-lg text-slate-600 mb-8">
+    不知道你有没有这样的顾虑：发给别人的资料里，手机号、身份证号这些关键信息全都暴露无遗。今天，我们就来聊聊一个像“美图秀秀”给照片打码一样，能给文字信息“打码”的小工具，让你分享数据时更安心。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="text-blue-800">
+      <span class="font-semibold">简单来说：</span>数据脱敏，就是把一份数据里敏感的部分隐藏起来，只露出不影响使用的部分。就像把手机号“13912345678”变成“139****5678”。
     </p>
-  </header>
-
-  <div class="space-y-8 sm:space-y-12">
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        一、当简单的话变复杂了：无处不在的“黑话”
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          想象一下这个场景：公司开会，领导说“我们要<strong>打通底层逻辑</strong>，形成<strong>闭环</strong>，为业务<strong>赋能</strong>”。旁边的同事频频点头，而你却暗自疑惑：“他到底想让我们做什么？”
-        </p>
-        <p>
-          这就是所谓的“互联网黑话”或者“行业术语”。它指的是一些听起来很专业、很高级的词汇和说法，在科技、金融、电商这些圈子里尤其常见。最初，这些词是为了快速、准确地描述一些复杂的概念或方法。但不知从什么时候开始，它们变得越来越让人听不懂，甚至成了一种独特的“沟通方式”。
-        </p>
-        <p>
-          很多人感到困惑：为什么不能好好说话？明明可以用“想办法提高销量”，偏要说“寻找增长抓手，实现流量转化”。这种语言，像一层朦胧的纱，让圈外人看不清，也让圈内人有时自己都绕晕了。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        二、大家为什么爱说“黑话”？不只是为了显得厉害
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          这种说话方式的流行，背后有几个简单的原因：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>效率假象</strong>：一个词，比如“<strong>对齐</strong>”，就能代替“我们互相沟通一下，确保想法一致，没有理解偏差”。听起来省事多了。</li>
-          <li><strong>身份认同</strong>：能熟练使用这些词，仿佛就在说：“我是这个圈子里的人，我懂行。”它是一种无形的名片。</li>
-          <li><strong>自我保护</strong>：把普通的事情用复杂的词汇包装，有时能让提议听起来更严谨、更难以反驳。</li>
-          <li><strong>追赶潮流</strong>：当身边人都在这么说时，如果你不用，反而显得落伍了。语言也有从众心理。</li>
-        </ul>
-        <p>
-          所以，它不全是坏事，也不全是为了装样子。在某些专业的讨论中，它确实能提高沟通效率。但问题在于，当它泛滥到日常交谈、甚至模糊了事情的本质时，沟通就变味了。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        三、“黑话”给我们的沟通带来了什么？
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          过度依赖这种语言，会带来一些实实在在的困扰：
-        </p>
-        <p>
-          <strong>制造隔阂</strong>：新人入职，面对满口的“<strong>迭代</strong>”、“<strong>复盘</strong>”、“<strong>颗粒度</strong>”，可能需要很长时间才能融入。这无形中提高了理解和协作的成本。
-        </p>
-        <p>
-          <strong>模糊重点</strong>：当一份方案充满了“<strong>打造生态</strong>”、“<strong>聚焦赛道</strong>”时，它的具体执行步骤是什么？谁负责？什么时候完成？这些最关键的信息，反而可能被华丽的辞藻淹没。
-        </p>
-        <p>
-          <strong>掩盖问题</strong>：有时候，用复杂的词汇来描述一个简单的错误或瓶颈，会让问题看起来没那么严重，或者把责任变得模糊。
-        </p>
-        <p>
-          沟通的本质，是让对方明白。如果一种语言体系让听的人越来越糊涂，那它可能已经背离了初衷。
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        四、一个有趣的小工具：帮你“翻译”和生成这些术语
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          为了更好地理解这种现象，甚至用它来轻松一下，有人做了一个好玩的小工具。你可以把它看作一个“术语生成器”或“语境模拟器”。
-        </p>
-        <p>
-          你只需要输入一个普通的主题，比如“如何做好一个项目”，然后选择相关的行业（比如科技、电商）和场景（比如开会、写报告）。它就能帮你“翻译”成一套充满行业术语的表述。
-        </p>
-        <p>
-          你会发现，原来“我们要认真做项目”，可以被表达为：“我们需要<strong>聚焦项目核心价值链路</strong>，通过<strong>精细化运营</strong>和<strong>敏捷迭代</strong>来<strong>赋能团队</strong>，最终<strong>打通闭环</strong>，实现<strong>价值最大化</strong>。”
-        </p>
-        <p>
-          这个过程本身就像一面镜子，让我们看到，日常的交流是如何被“包装”起来的。它不是一个严肃的生产工具，更像一个轻松的互动游戏，帮助你：
-        </p>
-        <ul class="list-disc pl-5 sm:pl-8 space-y-3">
-          <li><strong>快速理解</strong>：当你听到一堆陌生术语时，或许能猜到它们大概想表达什么。</li>
-          <li><strong>会心一笑</strong>：生成的内容往往夸张又熟悉，让人忍不住发笑，缓解一下被术语轰炸的压力。</li>
-          <li><strong>自我提醒</strong>：在需要用专业语言沟通时，检查一下自己是不是也陷入了“不说人话”的陷阱。</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 pb-2 border-b border-gray-200 text-gray-900">
-        五、回归清晰：让语言重新成为桥梁
-      </h2>
-      <div class="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed sm:leading-loose">
-        <p>
-          了解“黑话”，不是为了学会并天天使用它。恰恰相反，是为了看清它，然后有选择地使用。
-        </p>
-        <p>
-          专业的术语在专业的场合有其价值，能高效地沟通复杂思想。但最有效的沟通，永远是建立在清晰、准确和真诚的基础上。无论是工作还是生活，把复杂的事情讲简单，是一种难得的能力。
-        </p>
-        <p>
-          下次当你再听到或想使用这些词汇时，不妨先在心里问自己：“我能不能用更直白的话说清楚？” 让语言重新成为连接你我的桥梁，而不是一堵墙。
-        </p>
-        <p class="pt-4 text-gray-700 italic">
-          语言是活的，它会随着时代和行业变化。观察这些变化很有趣，但别忘了，最好的语言永远是能让对方听懂的、充满真诚的语言。
-        </p>
-      </div>
-    </section>
   </div>
-</article>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">为什么我们需要给信息“打码”？</h2>
+  <p class="mb-4">想一想这些场景：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li>公司需要把一部分客户资料交给第三方做分析，但又不能泄露客户的完整手机号。</li>
+    <li>你在社区论坛分享一个操作成功的截图，但截图里包含你的邮箱和姓名。</li>
+    <li>培训机构要展示学员成绩，但必须隐去学员的身份证号。</li>
+  </ul>
+  <p class="mb-8">直接分享原始信息风险太大，全部删除又失去了数据的意义。这时，“信息打码”（数据脱敏）就是一个完美的折中方案。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">这个工具能“打码”哪些信息？</h2>
+  <p class="mb-6">它专门为几种我们最常需要保护的信息，预设了“打码模板”，一键就能处理好：</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">手机号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">13912345678 → 139****5678</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">电子邮箱</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">zhangsan@example.com → zh******@example.com</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">身份证号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">110101199001011234 → 1101**********1234</span></p>
+    </div>
+    <div class="bg-white p-4 border border-slate-200 rounded shadow-sm">
+      <h3 class="font-semibold text-slate-800 mb-2">银行卡号</h3>
+      <p class="text-sm text-slate-600">像这样：<span class="font-mono">6228480012345678901 → 622848*******8901</span></p>
+    </div>
+  </div>
+
+  <p class="mb-8">除了这些预设的，你也可以自己定规则。比如，想把名字“张三”变成“张*”，或者自定义用哪个符号（比如*、#、X）来隐藏信息。</p>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">它用起来有多方便？</h2>
+  <p class="mb-4">这个工具的设计思路就是“省事”：</p>
+  <ul class="list-disc pl-5 mb-8 space-y-2">
+    <li><span class="font-medium">批量处理：</span>不用一个个手动改。你可以把几百个手机号一起粘贴进去，点一下按钮，所有号码就瞬间处理好了。</li>
+    <li><span class="font-medium">操作简单：</span>左边粘贴原文，右边立刻出结果。处理了多少条、用了多久，都清清楚楚显示出来。</li>
+    <li><span class="font-medium">结果好用：</span>处理完的结果可以直接一键复制走，方便你粘贴到需要的地方。</li>
+  </ul>
+
+  <div class="bg-slate-50 p-6 rounded-lg mb-8">
+    <h3 class="text-xl font-semibold text-slate-800 mb-3">哪些人特别需要它？</h3>
+    <p class="mb-3">其实，任何需要处理或分享信息的人都能用上：</p>
+    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+      <li>办公室文员、数据分析员，需要对外提供“清洗”过的数据。</li>
+      <li>社交媒体运营者，发布案例时需要隐藏用户隐私。</li>
+      <li>教师或培训师，公布信息时需要保护学员隐私。</li>
+      <li>甚至普通网友，在分享截图前想隐藏自己的关键信息。</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-bold text-slate-800 mt-10 mb-4 pb-2 border-b">总结一下</h2>
+  <p class="mb-6">
+    在信息时代，保护隐私变得越来越重要。这个“数据脱敏工具”就像一个专门给文字信息用的“打码器”，操作简单，效果直观。
+  </p>
+  <p class="mb-8">
+    它不改变数据的格式和可用性，只是把最关键的那部分藏了起来。下次当你需要把一份包含私人信息的数据发给别人时，不妨先用它处理一下，让自己多一分安心，少一分风险。
+  </p>
+
+  <div class="text-center text-sm text-slate-500 border-t pt-8 mt-8">
+    <p>希望这个关于信息“打码”工具的介绍，能帮助你更安全地处理日常数据。</p>
+  </div>
+</div>
 `;export{s as default};

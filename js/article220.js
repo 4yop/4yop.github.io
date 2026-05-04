@@ -1,95 +1,72 @@
-const a=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <!-- 主标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-    秒表：不只是计时，更是你效率与专注的搭档
-  </h1>
+const l=`
+<div class="max-w-3xl mx-auto px-4 py-6 md:py-10 text-gray-300">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 text-white">高考倒计时2026：距离高考还有多少天？高效备考攻略</h2>
+  <p class="text-sm text-gray-500 text-center mb-8">高考备考指南</p>
 
-  <!-- 引言段 -->
-  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
-  </p>
+  <p class="text-lg mb-4">高考，这个几乎每个中国家庭都会经历的关键词，总是带着一点紧张和期待。对于即将参加2026年高考的考生和家长来说，时间已经进入了最后的冲刺阶段。看着日历一页页翻过，很多人都会下意识地问一句："今天离高考还有多少天？"</p>
 
-  <!-- 第一小节 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    一个秒表，为什么需要更“聪明”？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
-  </p>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
-  </p>
+  <p class="text-lg mb-6">其实，高考倒计时不仅仅是一个数字，它更像一个无形的闹钟，提醒我们合理规划每一天，把焦虑转化为行动。今天我们就来聊聊2026年高考倒计时那些事儿，顺便分享一些备考干货，希望能帮你稳稳走过这段路。</p>
 
-  <!-- 第二小节 - 功能介绍 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    这个“时间伙伴”能为你做什么？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
-  </p>
-  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
-    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
-    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
-    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
-  </ul>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
-  </p>
-
-  <!-- 第三小节 - 问答形式 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    你可能想知道的问题
-  </h2>
-  <div class="space-y-6">
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
-      </p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        它的用途超乎你的想象：
-      </p>
-      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
-        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
-        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
-        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
-        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        当然可以。假设你正在准备一顿周末大餐。
-      </p>
-      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
-        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
-        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
-        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
-      </ol>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
-      </p>
-    </div>
+  <div class="bg-gray-700/50 border-l-4 border-yellow-400 p-4 mb-6 rounded-r-lg">
+    <p class="text-lg font-medium text-gray-200">2026年高考时间：通常为6月7日（部分省份持续到8日或9日）。使用上方倒计时工具可实时查看距离高考还有多少天。</p>
   </div>
 
-  <!-- 结尾引导 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
-    让时间变得清晰可见
-  </h2>
-  <p class="text-gray-700 mb-6 leading-relaxed">
-    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
-  </p>
-  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
-    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
-  </p>
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">一、高考倒计时为什么对我们很重要？</h2>
+  <p class="mb-4">倒计时让我们从"还有很久"的错觉中清醒过来。很多同学总觉得时间还多，习惯把复习任务一拖再拖。但当看到数字一天天变小，就会产生一种紧迫感，这种紧迫感如果引导得好，就是专注力和效率的来源。</p>
+  <p class="mb-4">同时，倒计时也能帮助我们设置阶段性目标。比如把剩下的时间分成三个阶段：基础巩固期、专项突破期、全真模拟期。每个阶段有明确的任务，最后上考场时心里就有底了。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">二、怎样用好高考倒计时工具和全屏倒计时？</h2>
+  <p class="mb-4">现在网上有很多好用的高考倒计时小程序或网页，它们通常会用很大的数字显示天、时、分、秒，有的还能全屏专注。我个人建议你选择一个界面清爽、无广告的倒计时工具，把它放在手机桌面上或者电脑浏览器里，每天打开看一眼，给自己一个小小的提醒。</p>
+  <p class="mb-4">比如有的倒计时设计得像黑板或课堂挂钟，深色背景配上彩色数字，一目了然。你甚至可以把全屏倒计时投在教室的大屏幕上，全班一起感受时间的步伐。当然，工具只是辅助，关键还是看我们自己怎么利用每一天。</p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">三、距离高考还有多少天，如何高效备考？</h2>
+  <p class="mb-2">剩下的时间说长不长，说短不短。如果能科学规划，足够把各科知识再过两遍。下面这几点建议，希望对你有帮助：</p>
+  <ul class="list-disc list-inside mb-4 space-y-2">
+    <li><span class="font-medium text-yellow-300">制定具体到周的复习计划</span> – 别只写"复习数学"，要写"完成三角函数专题练习+整理错题5道"。每周日晚上复盘本周完成情况，调整下周计划。</li>
+    <li><span class="font-medium text-yellow-300">回归课本，查漏补缺</span> – 最后阶段别再死磕偏题怪题。把教材上的例题、定义、公式重新过一遍，尤其是物理化学的实验步骤、历史时间轴，这些基础分最容易拿。</li>
+    <li><span class="font-medium text-yellow-300">利用好真题和错题本</span> – 近五年的高考真题至少刷两遍，第一遍按章节，第二遍按整套卷。错题本不要只抄题，要写错误原因和正确思路，考前一周只看错题本就够了。</li>
+    <li><span class="font-medium text-yellow-300">进行全真模拟考试</span> – 周末按高考时间表做一套卷子，包括涂答题卡、用标准答题纸。提前适应上午考语文、下午考数学的节奏，让身体和大脑到那个点就兴奋起来。</li>
+    <li><span class="font-medium text-yellow-300">坚持体育锻炼</span> – 每天抽出15分钟跑跑步、跳跳绳，哪怕在教室里转转脖子、伸伸懒腰都行。身体状态好，脑子才转得快。</li>
+  </ul>
+
+  <div class="bg-gray-700/40 p-4 rounded-lg mb-6 border border-gray-600/50">
+    <h3 class="font-bold text-lg mb-2 text-gray-200">📌 一个实用的每日时间表（供参考）</h3>
+    <ul class="text-sm space-y-1">
+      <li>6:30 起床，简单拉伸</li>
+      <li>7:00-7:30 早读（语文古诗词、英语单词）</li>
+      <li>8:00-11:30 复习文综/理综（按高考时间）</li>
+      <li>12:00-13:30 午饭+午休（30分钟足够）</li>
+      <li>14:00-17:00 数学/语文（交替进行）</li>
+      <li>17:30-18:30 晚饭+散步</li>
+      <li>19:00-21:00 英语听力+阅读，或整理错题</li>
+      <li>21:30-22:30 自由复习（弱项科目）</li>
+      <li>23:00 准备睡觉，不熬夜</li>
+    </ul>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">四、高考时间倒计时：心态调整把压力变朋友</h2>
+  <p class="mb-4">倒计时越近，心态越容易波动。这时候你可能会失眠、烦躁、突然觉得自己什么都不会。别怕，几乎每个考生都会有这个阶段。试试这几个小方法：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li><strong class="text-yellow-300">写下来</strong> – 把焦虑和担心写在纸上，然后撕掉，暗示自己"把它扔掉"。</li>
+    <li><strong class="text-yellow-300">深呼吸</strong> – 用4-7-8呼吸法：吸气4秒，屏住7秒，呼气8秒，能快速平静。</li>
+    <li><strong class="text-yellow-300">和朋友聊聊天</strong> – 你会发现大家都差不多，互相吐槽一下反而轻松很多。</li>
+    <li><strong class="text-yellow-300">别追求完美</strong> – 高考是选拔性考试，不可能所有题都会。我们的目标是把自己会做的做对，拿到该拿的分就够了。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">五、高考时间安排：家长能做些什么？</h2>
+  <p class="mb-4">家长们可能比孩子还紧张，但请一定把这份紧张藏起来。这个阶段孩子最需要的是"稳定的后方"：</p>
+  <ul class="list-disc list-inside mb-4">
+    <li>保持正常的家庭氛围，不要突然变得特别关心或小心翼翼。</li>
+    <li>饮食上注意清淡营养，不要突然大补，避免肠胃不适。</li>
+    <li>多听少说，当孩子想倾诉时，耐心听，不要急着给建议。</li>
+    <li>帮助孩子整理志愿信息，提前了解大学和专业，但不要强加自己的想法。</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-3 text-white">写在最后</h2>
+  <p class="mb-4">高考倒计时的数字终究会归零，但那段拼搏的日子会成为你人生中宝贵的财富。无论最后去了哪所大学，只要全力以赴，就无愧于自己。希望那天到来时，你能从容地走进考场，合上笔盖的那一刻，有战士收刀入鞘的骄傲。</p>
+  <p class="text-lg font-medium text-center mt-8 text-yellow-300">加油，2026高考生！</p>
+
+  <hr class="my-6 border-gray-600" />
+  <p class="text-sm text-gray-500 text-center">如果你觉得这篇文章有帮助，欢迎分享给更多正在备考的同学和家长。</p>
 </div>
-`;export{a as default};
+`;export{l as default};

@@ -1,47 +1,63 @@
-const l=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
+const s=`
+<div class="max-w-3xl mx-auto bg-white text-gray-800 p-5 md:p-8 font-sans leading-relaxed">
+  <h1 class="text-2xl md:text-3xl font-medium mb-4 text-gray-900">浮窗倒计时：精确到毫秒，抢购、纪念日再也不错过</h1>
 
-  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
+  <p class="mb-5 text-base md:text-lg">生活中总有一些时刻需要精准把握：限量球鞋开售、偶像演唱会抢票、考试倒计时、恋爱纪念日……普通的计时器要么精度不够，要么一刷手机就看不到了。如果你也需要一款能"浮"在其他应用上的高精度倒计时，这个工具或许能帮上忙——它精确到毫秒级别。</p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
-  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
-  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">毫秒级精度倒计时的特别之处</h2>
+  <p class="mb-4">简单说，它能把倒计时画面变成一个可以悬浮的小视频窗口，而且显示的是毫秒级精度的剩余时间。哪怕你正在刷微博、回微信、看文章，倒计时也会一直显示在屏幕角落，时间一目了然。每一毫秒都在跳动，特别适合需要卡点的场景，比如抢购秒杀、限时活动等。</p>
+  <p class="mb-4">这个功能在手机上尤其实用——iPhone用户用Safari浏览器打开，点击视频的"画中画"按钮，倒计时就能缩小拖到任意位置；安卓手机如果浏览器支持画中画，也能实现同样的效果。电脑上同样可以，把浏览器窗口放在一边，倒计时浮窗永远可见。</p>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
-  <p class="mb-4">使用起来非常简单，只需要三步：</p>
-  <ol class="list-decimal pl-8 mb-6 space-y-3">
-    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
-    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
-    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
-  </ol>
-
-  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
-    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
-    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
-  </div>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
-  <ul class="list-disc pl-8 mb-6 space-y-3">
-    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
-    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
-    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
-    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
-    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
-    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">这款毫秒级倒计时工具的几个亮点</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">精确到毫秒：</span>倒计时实时更新，显示格式为"秒.毫秒"（例如：125.892），最后几秒甚至能看到毫秒级别的跳动，帮你做到真正的精准卡点。</li>
+    <li><span class="font-medium">高频刷新：</span>每16毫秒刷新一次（约60fps），画面流畅不卡顿，数字变化丝滑自然。</li>
+    <li><span class="font-medium">浮窗显示：</span>利用浏览器的视频画中画功能，倒计时画面可自由缩放、随意拖放，不影响其他操作。</li>
+    <li><span class="font-medium">自动记忆：</span>设置一次目标时间，下次打开页面会自动加载，不用重复输入，省事。</li>
+    <li><span class="font-medium">双平台通用：</span>手机电脑都能用，iOS的Safari体验最流畅，安卓部分浏览器也支持。</li>
+    <li><span class="font-medium">界面极简：</span>可自定义背景色和字体颜色，目标时间显示在上方，巨大毫秒数在中间，一眼就能看清。</li>
   </ul>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
-  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
-  <ul class="list-disc pl-8 mb-8 space-y-2">
-    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
-    <li>需要查找某个地区对应的官方行政编码时。</li>
-    <li>学习或了解中国行政区划的层级结构时。</li>
-    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">怎么用它？三步搞定</h2>
+  <p class="mb-3"><span class="font-medium">第一步：</span>在页面中找到日期时间选择框，选好目标日期和具体时间（精确到分钟就行）。</p>
+  <p class="mb-3"><span class="font-medium">第二步：</span>点击"开始"按钮，下方就会立刻出现一个视频画面，上面显示你设定的目标时刻，中间是不断减少的毫秒级时间（格式：秒.毫秒）。</p>
+  <p class="mb-4"><span class="font-medium">第三步：</span>如果你想让倒计时悬浮起来，点击视频播放器右下角的画中画图标（通常是一个小方框带向下箭头），画面就会自动缩小成一个浮动窗口，你可以把它拖到屏幕任何位置。</p>
+  <p class="mb-4 text-sm bg-gray-50 p-3 rounded-lg">小提示：在iPhone上记得用Safari浏览器打开，画中画功能最稳定；安卓用户可以试试Chrome或Edge。</p>
+
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">哪些场景适合用它？</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">电商抢购/秒杀：</span>双十一、限量发售、优惠券开抢，毫秒级的精度让你在最后一刻精准出手，快人一步完成付款。</li>
+    <li><span class="font-medium">考试倒计时：</span>高考、考研、职业资格考试，看着毫秒数减少，提醒自己珍惜每一刻时间。</li>
+    <li><span class="font-medium">纪念日/生日：</span>恋爱纪念日、父母生日、结婚纪念日，提前倒数，让期待感慢慢积累。</li>
+    <li><span class="font-medium">线上活动提醒：</span>直播开播、线上讲座、网课开始，设置倒计时避免错过精彩内容。</li>
+    <li><span class="font-medium">运动/健身间歇：</span>高强度间歇训练需要精确控制休息时间，把毫秒级倒计时浮窗放在屏幕一角，边看视频边跟练。</li>
+    <li><span class="font-medium">游戏/竞速场景：</span>某些游戏或竞技活动需要精确到毫秒的操作时机，这个工具可以帮你精准把握节奏。</li>
   </ul>
 
-  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
-    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">关于毫秒级倒计时，你可能想问这些</h2>
+  <div class="mb-4">
+    <p class="font-medium">问：为什么需要精确到毫秒？</p>
+    <p class="mb-3">在很多场景下，秒级精度已经不够用了。比如电商秒杀、限时抢购，往往就是几百毫秒的差距；某些竞技游戏或直播互动，也需要毫秒级的反应速度。毫秒级倒计时能帮你更好地把握这些关键时刻。</p>
   </div>
+  <div class="mb-4">
+    <p class="font-medium">问：倒计时最长能设置多久？</p>
+    <p class="mb-3">理论上可以设置到未来很多年，只要目标时间还没到，它就会一直倒计时。显示格式会根据剩余时间自动调整，适合长期或短期倒计时。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：手机锁屏后倒计时还会继续吗？</p>
+    <p class="mb-3">如果用的是画中画浮窗，锁屏后浮窗会消失，但再次解锁打开浏览器，倒计时依然在（只要页面没被系统杀掉）。如果只是普通在浏览器里看，锁屏就会暂停。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：为什么我的浏览器没有画中画按钮？</p>
+    <p class="mb-3">部分安卓浏览器或旧版本可能不支持画中画，可以尝试升级浏览器或换用Chrome、Edge。iPhone只要系统在iOS14以上，Safari都自带画中画。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：毫秒级显示会影响性能吗？</p>
+    <p class="mb-3">不会。我们采用了优化的渲染机制，每16毫秒刷新一次（约60fps），在现代设备上运行非常流畅，不会造成卡顿或耗电过快的问题。</p>
+  </div>
+
+  <p class="text-base md:text-lg mt-8 pt-4 border-t border-gray-200 text-gray-600">毫秒级倒计时不只是数字的变化，更是一种对时间的极致掌控——让我们对即将到来的时刻多一份准备，也多一份期待。下次有重要事件，不妨试试这个高精度浮窗倒计时，让它帮你把时间牢牢"抓"在眼前。</p>
+
+  <div class="text-xs text-gray-400 mt-6 text-center">© 毫秒级浮窗倒计时 · 精确到毫秒 · 支持iOS/Android浮窗</div>
 </div>
-`;export{l as default};
+`;export{s as default};

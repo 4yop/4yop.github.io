@@ -1,116 +1,120 @@
-const s=`
-<div class="text-gray-800 bg-white">
-  <article class="max-w-4xl mx-auto px-4 py-8 md:px-6">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">屏幕录制其实很简单：一文看懂怎么录屏和常用设置</h1>
-    
-    <p class="mb-6 text-lg leading-relaxed">
-      你有没有遇到过这样的情景？想保存一段重要的线上会议内容，或是给朋友演示软件怎么操作，又或者想记录下自己打游戏的精彩瞬间，却不知道该怎么把电脑屏幕上的画面录下来。
-    </p>
-    
-    <p class="mb-8 text-lg leading-relaxed">
-      别担心，屏幕录制这件事，远没有你想的那么复杂。今天我们就来聊聊，如何轻松地录制屏幕视频，以及那些听起来很专业的设置，到底该怎么选。
-    </p>
+const t=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 py-8 md:px-6">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">还在为找不到资料发愁？试试这个让搜索变简单的智能工具</h1>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
-      <p class="text-gray-700">
-        本文不涉及任何复杂的技术术语，就像朋友聊天一样，告诉你录屏的常识和技巧。
-      </p>
-    </div>
+  <p class="text-lg text-gray-600 mb-8">
+    你是否经历过这些？想找一份专业报告，却搜出满屏无关网页；需要某个网站内的信息，却要翻遍全网；明明记得看过一篇好文章，再想找时却怎么也搜不到了。别担心，这些问题，一个简单的搜索工具就能帮你解决。
+  </p>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录屏能用来做什么？比你想象的更多</h2>
-    <p class="mb-4">
-      很多人觉得录屏是专业人士才用的功能，其实不然。它在我们的日常工作和生活中非常实用：
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 rounded-r">
+    <p class="text-gray-700">
+      <strong>简单来说：</strong> 这是一个集成了百度、谷歌、必应三大搜索引擎的“一站式”搜索入口，最大的亮点是它把许多资深人士才知道的“搜索秘籍”，变成了人人都能轻松点击使用的按钮。
     </p>
-    <ul class="list-disc pl-5 mb-8 space-y-2">
-      <li><strong>工作学习：</strong>保存重要的培训会议、制作软件操作教程、记录网课重点内容。</li>
-      <li><strong>生活娱乐：</strong>录制游戏高光时刻、保存线上家人的视频聊天、记录直播中有趣的片段。</li>
-      <li><strong>沟通协助：</strong>当用语言说不清电脑问题时，直接录一段视频发给别人看，一目了然。</li>
-    </ul>
+  </div>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录制前，需要了解的几项简单设置</h2>
-    <p class="mb-6">
-      开始录制前，你可能会看到几个选项。别被它们吓到，我们一个一个说清楚。
-    </p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
 
-    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">1. 清晰度（分辨率）：选适合的，不一定要最高的</h3>
-    <p class="mb-4">
-      就像电视有标清、高清一样，录屏也有清晰度选择。
-    </p>
-    <ul class="list-disc pl-5 mb-6 space-y-2">
-      <li><strong>1080P：</strong>最清晰的选项，适合录制细节丰富的画面，比如设计软件操作、高清游戏。文件会比较大。</li>
-      <li><strong>720P：</strong>高清画质，适合大多数情况，比如录制会议、网页操作。清晰度和文件大小比较平衡，最常用。</li>
-      <li><strong>480P：</strong>普通画质，如果对清晰度要求不高，或者想快速分享一个小文件，可以选择它。</li>
-    </ul>
-    <p class="mb-8 text-gray-600">
-      简单来说，日常使用选720P就很好。如果录给手机看，480P也足够清晰。
-    </p>
+  <p class="mb-6">和普通搜索框不同，这个工具让你能“指哪打哪”，大幅提升找资料的效率和准确度。</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">2. 画面比例：视频形状的长和宽</h3>
-    <p class="mb-4">
-      这个决定了你录出来的视频是“长方形”还是“正方形”。
-    </p>
-    <ul class="list-disc pl-5 mb-6 space-y-2">
-      <li><strong>16:9：</strong>最常见的宽屏比例，和大多数电脑显示器、电视机、手机屏幕形状一样。录制通用视频就选它。</li>
-      <li><strong>4:3：</strong>稍微“方”一点的比例，一些老式显示屏或特定演示文稿会用到。</li>
-      <li><strong>1:1：</strong>正方形，适合录制一些用于社交媒体（如部分平台头像、短内容）的画面。</li>
-    </ul>
-    <p class="mb-8 text-gray-600">
-      不确定怎么选？直接选16:9，基本不会出错。
-    </p>
+  <div class="space-y-8">
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-700 rounded-full text-center leading-6 mr-2 text-sm">1</span>
+        一站切换，不用记网址
+      </h3>
+      <p class="pl-8">无论是查国内资讯用百度，还是找国际资料用谷歌、必应，在这里一键就能切换。你不用再费力记住不同搜索引擎的网址，更不用来回切换浏览器标签页。</p>
+    </section>
 
-    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">3. 流畅度（帧率）：画面卡不卡的关键</h3>
-    <p class="mb-4">
-      帧率可以理解为1秒钟闪过多少张画面。数字越高，视频看起来就越流畅。
-    </p>
-    <ul class="list-disc pl-5 mb-6 space-y-2">
-      <li><strong>60 FPS：</strong>非常流畅，适合录制快速变化的画面，比如动作类游戏、体育赛事视频。</li>
-      <li><strong>30 FPS：</strong>标准流畅度，适合录制办公软件操作、网页浏览、大部分会议和课程。这是最通用的选择。</li>
-      <li><strong>15 FPS：</strong>基本流畅，如果只是录制一些几乎静止的画面（比如一张PPT停留很久），为了节省文件空间可以考虑。</li>
-    </ul>
-    <p class="mb-8 text-gray-600">
-      录制普通操作选30就够用。如果录游戏，可以试试60，观感会更好。
-    </p>
-
-    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">4. 视频格式和一个小细节</h3>
-    <p class="mb-4">
-      <strong>视频格式：</strong>简单理解为视频的“包装盒”。常见的有MP4和WebM。MP4兼容性最好，几乎所有电脑和手机都能直接打开播放，建议优先选择。WebM在某些情况下文件更小。
-    </p>
-    <p class="mb-8">
-      <strong>显示光标：</strong>这个选项打勾后，录制时会把你鼠标指针（那个小箭头）也录进去。这在制作教学视频时非常有用，别人可以清楚看到你点了哪里。如果只是录制电影或游戏画面，可以关掉。
-    </p>
-
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">轻松三步，开始你的第一次录屏</h2>
-    <ol class="list-decimal pl-5 mb-8 space-y-4">
-      <li>
-        <strong>第一步：选好设置。</strong>根据上面介绍的，结合你的用途，选好清晰度、比例等。第一次可以用推荐的组合：720P、16:9、30帧、MP4格式、勾选显示光标。
-      </li>
-      <li>
-        <strong>第二步：开始录制。</strong>点击“开始录制”按钮。这时，你的电脑通常会让你选择“要录制整个屏幕，还是只录制某个软件窗口”。根据你的需要选择即可。
-      </li>
-      <li>
-        <strong>第三步：结束与保存。</strong>录制完成后，点击“停止录制”。视频会自动保存到录制记录列表里。你可以播放预览，也可以点击“下载”把视频文件保存到自己的电脑中。
-      </li>
-    </ol>
-
-    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-10">
-      <h3 class="text-xl font-medium mb-3 text-gray-900">几个实用小贴士</h3>
-      <ul class="space-y-2">
-        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录制前，关闭不必要的网页和软件通知，避免隐私信息或弹窗被录进去。</span></li>
-        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>如果需要录音（比如讲解），记得在开始录制时，同意浏览器使用麦克风的请求。</span></li>
-        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录好的视频如果不需要了，记得在列表里“删除”，可以帮电脑节省空间。</span></li>
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-green-100 text-green-700 rounded-full text-center leading-6 mr-2 text-sm">2</span>
+        用“秘籍”精准锁定目标
+      </h3>
+      <p class="pl-8 mb-4">这是它的核心功能。那些复杂的搜索规则，现在你只需要点一下按钮就能用上。</p>
+      <ul class="pl-8 space-y-3">
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">site:</span>
+          <div>
+            <p class="font-medium">锁定特定网站：</p>
+            <p class="text-gray-600 text-sm">比如，你只想在某个政府网站或大学官网上找政策文件或学术资料，用这个功能就能把搜索范围锁定在你信任的网站上。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">filetype:</span>
+          <div>
+            <p class="font-medium">专门找特定文件：</p>
+            <p class="text-gray-600 text-sm">想直接下载PDF格式的电子书、PPT课件或者Word文档？这个指令能帮你过滤掉网页，直接找到可下载的文件。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">“关键词”</span>
+          <div>
+            <p class="font-medium">搜索原话：</p>
+            <p class="text-gray-600 text-sm">当你需要搜索一句完整的话、一句名言或一个固定短语时，加上引号，搜索引擎就会原封不动地去找它。</p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">-排除词</span>
+          <div>
+            <p class="font-medium">排除干扰信息：</p>
+            <p class="text-gray-600 text-sm">搜“苹果”不想看到手机，只想看水果？用一个减号就能排除掉你不想看到的关键词。</p>
+          </div>
+        </li>
       </ul>
-    </div>
+    </section>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">总结</h2>
-    <p class="mb-4">
-      屏幕录制并不是一项专业技能，它只是一个方便我们保存和分享视觉信息的工具。
-    </p>
-    <p class="mb-4">
-      记住核心要点：<strong>日常使用，720P、30帧、MP4格式就是黄金组合</strong>。其他设置可以根据特殊需求稍作调整。
-    </p>
-    <p class="mb-10 text-lg">
-      希望这篇文章能帮你打消对录屏的陌生感。下次再需要保存屏幕上的精彩内容时，不妨轻松地试一试吧。
-    </p>
-  </article>
-</div>
-`;export{s as default};
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-amber-100 text-amber-700 rounded-full text-center leading-6 mr-2 text-sm">3</span>
+        你的“搜索记忆”，随时找回
+      </h3>
+      <p class="pl-8">每次搜索都会自动保存下来，形成你的个人搜索历史。之前找过什么资料，用的是哪个搜索引擎，一目了然。想再次查看，点一下就能恢复搜索，不用再费力回忆。</p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+        <span class="inline-block w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-center leading-6 mr-2 text-sm">4</span>
+        不用记，点一下就用
+      </h3>
+      <p class="pl-8">所有的高级搜索指令都以快捷按钮的形式排列在搜索框下方。你不用记忆复杂的语法格式，需要哪种搜索方式，直接用鼠标点一下对应的按钮，它就会自动添加到搜索框里，你只需要补充自己的关键词就行。</p>
+    </section>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">这个工具适合谁用？</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">学生和研究者</h4>
+      <p class="text-gray-600">写论文时需要精准查找学术网站上的PDF文献、特定领域的研究资料，用“站点锁定”和“文件类型”搜索能省下大量筛选时间。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">办公族和资料收集者</h4>
+      <p class="text-gray-600">经常需要收集行业报告、市场数据、竞品信息？这个工具可以帮助你更高效地从指定来源（如官网、文库）获取所需文件，并管理好自己的搜索记录。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">对搜索质量有要求的普通人</h4>
+      <p class="text-gray-600">厌倦了在海量无效结果里“淘金”。想更快找到某个问题的确切答案、一张清晰的图片教程，或是一个靠谱的解决方案。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-xl">
+      <h4 class="font-semibold text-lg mb-3">需要多引擎对比的人</h4>
+      <p class="text-gray-600">想看看百度、谷歌对同一个问题的搜索结果有何不同？在这里切换比手动输入网址方便太多了。</p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 border rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4">如何使用它来提升效率？</h2>
+    <p class="mb-4">使用起来和普通搜索一样简单：</p>
+    <ol class="list-decimal pl-5 space-y-3">
+      <li><strong>选搜索引擎：</strong> 根据你要找的内容性质，点击上方的“百度”、“谷歌”或“必应”。</li>
+      <li><strong>输入或组合关键词：</strong> 在搜索框直接打字，或者先点击下方你需要的“秘籍”按钮（如<span class="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">site:</span>），再输入你的具体关键词。</li>
+      <li><strong>开始搜索：</strong> 按下回车或点击搜索按钮，结果会在新页面打开。</li>
+      <li><strong>查看与复用历史：</strong> 在左侧“搜索历史”里，你可以随时找回之前的任何一次搜索。</li>
+    </ol>
+    <p class="mt-6 text-gray-600">整个过程，你不需要学习任何复杂的知识，工具的右侧区域就像一个随时可查的说明书，对每个“搜索秘籍”都有通俗的解释和例子。</p>
+  </div>
+
+  <p class="mt-12 text-center text-gray-500 border-t pt-8">
+    搜索不是碰运气。用好工具，其实就是在给你的信息获取能力装上“导航仪”，让你在信息的海洋里，能更直接、更准确地驶向目的地。希望这个介绍，能帮你打开高效搜索的新思路。
+  </p>
+</article>
+`;export{t as default};

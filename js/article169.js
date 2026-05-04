@@ -1,48 +1,104 @@
-const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
-  <!-- 标题 -->
-  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
-  
-  <!-- 引言 -->
-  <p class="mb-4 text-lg">
-    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
-  </p>
+const e=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
+    大乐透选号不再纠结，免费随机选号工具助你轻松搞定
+  </h1>
 
-  <!-- 两个模式解决不同场景 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
-  <p class="mb-4">
-    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
-  </p>
-  <p class="mb-4">
-    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
-  </p>
-
-  <!-- 避免配对功能 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
-  <p class="mb-4">
-    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
-  </p>
-
-  <!-- 操作简单，三步完成 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
-  <p class="mb-4">
-    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
-  </p>
-
-  <!-- 导出与分享 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
-  <p class="mb-4">
-    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
-  </p>
-
-  <!-- 总结 -->
-  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
-    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
-  </p>
-
-  <!-- 底部小提示，符合原文风格 -->
-  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
-    * 工具完全免费，无需安装，打开网页就能用
+  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
+    <p>更新于 2025年5月 • 阅读约需3分钟</p>
   </div>
-</div>
-`;export{t as default};
+
+  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
+    <p class="text-gray-700">
+      买大乐透时，面对35个前区号码和12个后区号码的组合海洋，是不是常感到无从下手？别担心，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的大乐透选号小助手。
+    </p>
+  </div>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
+      选号，真的有那么难吗？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      相信很多彩民朋友都有过这样的经历：站在体育彩票店前，拿着选号单，脑子里却一片空白。自己生日、纪念日、幸运数字都试过了，还是觉得不够"随机"。有时候甚至想，要是有人能帮我想几组号码就好了。
+    </p>
+    <p class="leading-relaxed">
+      这种纠结非常正常。大乐透的规则是：前区要从1-35个数字里选5个，后区还要从1-12个数字里选2个，组合方式多到数不清。靠我们自己拍脑袋想，难免会陷入固定的思维模式，总是那几个熟悉的数字翻来覆去。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
+      什么是随机选号工具？它能做什么？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      简单来说，它就像一个聪明的数字机器。你只需要告诉它："帮我生成几组大乐透号码"，它就能立刻为你组合出全新的、完全随机的前区和后区号码。
+    </p>
+
+    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
+      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
+      <ul class="space-y-3 pl-5 list-disc text-gray-700">
+        <li><span class="font-medium">支持多注批量生成</span>：你可以选择一次性生成1注到10注号码，不用一次次重复操作，省时又省力。</li>
+        <li><span class="font-medium">号码清晰排列</span>：生成的号码会按照大乐透的标准格式展示，前区5个红球和后区2个蓝球分开显示，并且自动从小到大排序，看着特别清楚直观。</li>
+        <li><span class="font-medium">一键复制功能</span>：看中了哪组号码，点一下"复制"就能存到手机剪贴板，然后直接粘贴到备忘录或者发给朋友，再也不用担心手抄抄错了。</li>
+        <li><span class="font-medium">本地运算保护隐私</span>：整个生成过程都在你自己的设备上完成，不会把你的任何选择记录或发送到服务器，安全又放心。</li>
+        <li><span class="font-medium">操作简单到没朋友</span>：整个页面就几个按钮，选择数量后点一下"立即生成"就有结果，没有任何复杂步骤，老人小孩都能轻松上手。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
+      为什么要用随机方式来选号？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      你可能会有疑问："机器随机选的号码，靠谱吗？"
+    </p>
+    <p class="mb-4 leading-relaxed">
+      首先，我们要明白一个基本事实：大乐透的开奖结果是完全随机的。这意味着，每一个符合规则的数字组合在每一次开奖中的中奖概率理论上是相同的。无论是你自己精心挑选的号码，还是机器随机生成的号码，中奖的概率都一样公平。
+    </p>
+    <p class="mb-4 leading-relaxed">
+      使用这种随机选号工具，最大的好处是帮你打破了选号时的"思维定式"。我们人类在尝试"随机"选择时，总会不自觉地带入一些个人偏好（比如避开数字4，或者总喜欢选连号，又或者偏爱某些特定数字）。而这个工具能做到更纯粹的随机性，覆盖更广的数字组合范围，让你的选号更加多样化。
+    </p>
+    <p class="leading-relaxed">
+      它更像是一个帮你开拓思路、提供灵感的伙伴。当你面对茫茫数字没有头绪时，让它给你一些随机的选项，你也许能从这些组合中发现新的灵感，或者直接采用其中某组看着顺眼的号码作为参考。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-red-500 pl-3">
+      如何使用它？简单三步走
+    </h2>
+    <ol class="space-y-6 pl-0 list-decimal list-inside">
+      <li>
+        <span class="font-medium text-gray-900">第一步：打开工具</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑浏览器中打开这个大乐透随机选号工具的页面，无需下载安装任何软件。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第二步：选择生成数量</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在页面上找到"生成注数"的选项，根据你的需要选择想生成的号码组数，可以是1注到10注之间的任意数量。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第三步：生成与选用</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">点击"立即生成"按钮，几组完整的大乐透号码（前区5个+后区2个）就会瞬间出现在屏幕上。仔细浏览每一组号码，如果有觉得顺眼的，点击该组旁边的"复制"按钮就可以保存使用了。对生成的结果不满意？没关系，再点一次"重新生成"试试新的运气。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">最后，几句心里话</h2>
+    <p class="mb-4 leading-relaxed">
+      这个大乐透随机选号工具，本质上是一个为了增添购彩乐趣、提供便利的小助手。它能帮你解决"不知道选什么号码好"的纠结，让选号过程变得轻松有趣一些，节省你在彩票店前的犹豫时间。
+    </p>
+    <p class="mb-4 leading-relaxed font-medium text-gray-900">
+      但请一定记住，它只是一个随机号码生成器，不能预测未来，也无法提高任何中奖概率。
+    </p>
+    <p class="leading-relaxed">
+      购买体育彩票应该是一种健康的娱乐方式。我们希望你在使用这个小工具时，能抱着轻松、理性的心态去参与。享受那份期待的过程，但更要珍惜自己实实在在的生活和工作。量力而行，理性购彩，才是最重要的原则。
+    </p>
+  </section>
+
+  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
+    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，购彩需理性，请勿沉迷。</p>
+  </div>
+</article>
+`;export{e as default};

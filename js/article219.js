@@ -1,63 +1,150 @@
-const s=`
-<div class="max-w-3xl mx-auto bg-white text-gray-800 p-5 md:p-8 font-sans leading-relaxed">
-  <h1 class="text-2xl md:text-3xl font-medium mb-4 text-gray-900">浮窗倒计时：精确到毫秒，抢购、纪念日再也不错过</h1>
+const t=`
+<div class="bg-gray-50 text-gray-800">
+  <div class="max-w-4xl mx-auto px-4 py-8 md:px-6">
+    <!-- 文章标题 -->
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 leading-tight">
+      天数计算器：轻松算出那些对你重要的日子，过了多久
+    </h1>
+    <p class="text-lg text-gray-600 text-center mb-10 leading-relaxed">
+      你是否曾好奇，距离某个特别的日子，已经过去了多少年、多少月、甚至多少秒？一个简单工具就能告诉你答案。
+    </p>
 
-  <p class="mb-5 text-base md:text-lg">生活中总有一些时刻需要精准把握：限量球鞋开售、偶像演唱会抢票、考试倒计时、恋爱纪念日……普通的计时器要么精度不够，要么一刷手机就看不到了。如果你也需要一款能"浮"在其他应用上的高精度倒计时，这个工具或许能帮上忙——它精确到毫秒级别。</p>
+    <!-- 引语部分 -->
+    <div class="bg-blue-50 border-l-4 border-blue-400 p-5 mb-8 rounded-r">
+      <p class="text-gray-700 italic">
+        “时间看不见也摸不着，但我们总想为它标上刻度。从出生那天起，到第一次远行，再到某个铭记于心的纪念日，计算天数，是我们丈量生活的一种方式。”
+      </p>
+    </div>
 
-  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">毫秒级精度倒计时的特别之处</h2>
-  <p class="mb-4">简单说，它能把倒计时画面变成一个可以悬浮的小视频窗口，而且显示的是毫秒级精度的剩余时间。哪怕你正在刷微博、回微信、看文章，倒计时也会一直显示在屏幕角落，时间一目了然。每一毫秒都在跳动，特别适合需要卡点的场景，比如抢购秒杀、限时活动等。</p>
-  <p class="mb-4">这个功能在手机上尤其实用——iPhone用户用Safari浏览器打开，点击视频的"画中画"按钮，倒计时就能缩小拖到任意位置；安卓手机如果浏览器支持画中画，也能实现同样的效果。电脑上同样可以，把浏览器窗口放在一边，倒计时浮窗永远可见。</p>
+    <!-- 工具能做什么 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个计算器，到底能算什么？</h2>
+      <p class="mb-4 leading-relaxed">
+        它就像一个专注于时间的尺子。你只需要告诉它一个<strong>过去的日期</strong>，它就能立刻帮你算出，从那天到现在，总共经历了多长时间。
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-700">
+        <li><strong>人生里程碑：</strong> 算算你来到这个世界已经多少天，或者你的孩子出生多久了。</li>
+        <li><strong>爱情与纪念：</strong> 想知道恋爱或结婚至今的具体年、月、日吗？它都能精确显示。</li>
+        <li><strong>工作与学习：</strong> 入职公司多少天？距离一个项目启动过去了多久？帮你清晰记录。</li>
+        <li><strong>历史与社会大事：</strong> 对重要的历史时刻感到好奇？比如新中国成立至今的精确时间。</li>
+        <li><strong>未来倒数：</strong> 虽然主要计算过去，但理解时间跨度也能帮你更好地期待未来的目标。</li>
+      </ul>
+    </div>
 
-  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">这款毫秒级倒计时工具的几个亮点</h2>
-  <ul class="list-disc pl-6 mb-5 space-y-2">
-    <li><span class="font-medium">精确到毫秒：</span>倒计时实时更新，显示格式为"秒.毫秒"（例如：125.892），最后几秒甚至能看到毫秒级别的跳动，帮你做到真正的精准卡点。</li>
-    <li><span class="font-medium">高频刷新：</span>每16毫秒刷新一次（约60fps），画面流畅不卡顿，数字变化丝滑自然。</li>
-    <li><span class="font-medium">浮窗显示：</span>利用浏览器的视频画中画功能，倒计时画面可自由缩放、随意拖放，不影响其他操作。</li>
-    <li><span class="font-medium">自动记忆：</span>设置一次目标时间，下次打开页面会自动加载，不用重复输入，省事。</li>
-    <li><span class="font-medium">双平台通用：</span>手机电脑都能用，iOS的Safari体验最流畅，安卓部分浏览器也支持。</li>
-    <li><span class="font-medium">界面极简：</span>可自定义背景色和字体颜色，目标时间显示在上方，巨大毫秒数在中间，一眼就能看清。</li>
-  </ul>
+    <!-- 为什么我们需要计算天数 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么要计算得这么仔细？</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h3 class="text-xl font-medium mb-2 text-blue-600">让记忆更具体</h3>
+          <p class="leading-relaxed">
+            说“好几年了”很模糊，但“1825天”这个数字会瞬间让你的记忆变得清晰可触。时间被量化，情感也因此有了更坚实的载体。
+          </p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h3 class="text-xl font-medium mb-2 text-green-600">见证成长与积累</h3>
+          <p class="leading-relaxed">
+            无论是坚持一个习惯，还是经营一段关系，看到不断累积增长的天数，本身就是一种无声的鼓励和成就感的来源。
+          </p>
+        </div>
+      </div>
+    </div>
 
-  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">怎么用它？三步搞定</h2>
-  <p class="mb-3"><span class="font-medium">第一步：</span>在页面中找到日期时间选择框，选好目标日期和具体时间（精确到分钟就行）。</p>
-  <p class="mb-3"><span class="font-medium">第二步：</span>点击"开始"按钮，下方就会立刻出现一个视频画面，上面显示你设定的目标时刻，中间是不断减少的毫秒级时间（格式：秒.毫秒）。</p>
-  <p class="mb-4"><span class="font-medium">第三步：</span>如果你想让倒计时悬浮起来，点击视频播放器右下角的画中画图标（通常是一个小方框带向下箭头），画面就会自动缩小成一个浮动窗口，你可以把它拖到屏幕任何位置。</p>
-  <p class="mb-4 text-sm bg-gray-50 p-3 rounded-lg">小提示：在iPhone上记得用Safari浏览器打开，画中画功能最稳定；安卓用户可以试试Chrome或Edge。</p>
+    <!-- 如何使用 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">如何使用它？（非常简单）</h2>
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mr-3">1</div>
+          <div>
+            <h3 class="text-lg font-medium mb-1">选择你的起始日</h3>
+            <p class="text-gray-700 leading-relaxed">
+              在页面上找到一个日历选择框，点击它，然后选出那个对你意义非凡的年、月、日，甚至可以精确到当时的时刻。
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold mr-3">2</div>
+          <div>
+            <h3 class="text-lg font-medium mb-1">查看丰富的结果</h3>
+            <p class="text-gray-700 leading-relaxed">
+              选择完成后，下方会立刻出现一个清晰的结果面板。你会看到两种时间呈现方式：
+            </p>
+            <ul class="list-disc pl-5 mt-2 text-gray-600">
+              <li><strong>总计数：</strong> 从那天起，一共过去了多少天、多少小时、多少分钟。</li>
+              <li><strong>详细分解：</strong> 像“X年Y个月Z天A小时B分钟C秒”这样更符合我们日常习惯的说法。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold mr-3">3</div>
+          <div>
+            <h3 class="text-lg font-medium mb-1">试试快捷按钮</h3>
+            <p class="text-gray-700 leading-relaxed">
+              如果你一时想不到要算哪天，或者想看看一些公共纪念日的时间，可以试试页面上的预设按钮，比如“新中国成立”、“北京奥运”等，一键就能看到结果。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">哪些场景适合用它？</h2>
-  <ul class="list-disc pl-6 mb-5 space-y-2">
-    <li><span class="font-medium">电商抢购/秒杀：</span>双十一、限量发售、优惠券开抢，毫秒级的精度让你在最后一刻精准出手，快人一步完成付款。</li>
-    <li><span class="font-medium">考试倒计时：</span>高考、考研、职业资格考试，看着毫秒数减少，提醒自己珍惜每一刻时间。</li>
-    <li><span class="font-medium">纪念日/生日：</span>恋爱纪念日、父母生日、结婚纪念日，提前倒数，让期待感慢慢积累。</li>
-    <li><span class="font-medium">线上活动提醒：</span>直播开播、线上讲座、网课开始，设置倒计时避免错过精彩内容。</li>
-    <li><span class="font-medium">运动/健身间歇：</span>高强度间歇训练需要精确控制休息时间，把毫秒级倒计时浮窗放在屏幕一角，边看视频边跟练。</li>
-    <li><span class="font-medium">游戏/竞速场景：</span>某些游戏或竞技活动需要精确到毫秒的操作时机，这个工具可以帮你精准把握节奏。</li>
-  </ul>
+    <!-- 时间单位的意义 -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">看懂那些数字：时间单位的意义</h2>
+      <p class="mb-4 leading-relaxed">
+        计算器给出的不同数字，可以帮助你从不同角度理解时间的跨度：
+      </p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border rounded-lg">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="py-3 px-4 border-b text-left font-medium">单位</th>
+              <th class="py-3 px-4 border-b text-left font-medium">它告诉你什么</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-50">
+              <td class="py-3 px-4 border-b font-medium">总天数</td>
+              <td class="py-3 px-4 border-b">最宏观的衡量，适合记录长期坚持或人生大阶段。</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-3 px-4 border-b font-medium">年、月、日</td>
+              <td class="py-3 px-4 border-b">我们最熟悉、最口语化的表达方式，方便与人分享。</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-3 px-4 border-b font-medium">总小时/分钟</td>
+              <td class="py-3 px-4 border-b">当时间跨度没那么长时，这些单位会让你更觉震撼，感受分秒的珍贵。</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-3 px-4 border-b font-medium">秒</td>
+              <td class="py-3 px-4 border-b">时间最精细的刻度，而且数字在实时跳动，让你直观感受到“此刻”正在流逝。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">关于毫秒级倒计时，你可能想问这些</h2>
-  <div class="mb-4">
-    <p class="font-medium">问：为什么需要精确到毫秒？</p>
-    <p class="mb-3">在很多场景下，秒级精度已经不够用了。比如电商秒杀、限时抢购，往往就是几百毫秒的差距；某些竞技游戏或直播互动，也需要毫秒级的反应速度。毫秒级倒计时能帮你更好地把握这些关键时刻。</p>
+    <!-- 关于里程碑 -->
+    <div class="mb-10 bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-100">
+      <h2 class="text-2xl font-semibold mb-3">一个小惊喜：里程碑</h2>
+      <p class="mb-3 leading-relaxed">
+        除了基本计算，这个工具还会帮你关注一些特殊的“整点”时刻。
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        例如，当你计算自己的生日或纪念日时，它会自动算出“百日”、“一周年”、“千日”等里程碑日期。已经过去的，它会标记为“已达成”；未来的，则会告诉你“还需X天”，像一个小小的时间向导，帮你期待下一个值得庆祝的日子。
+      </p>
+    </div>
+
+    <!-- 结语 -->
+    <div class="text-center pt-6 border-t">
+      <h2 class="text-2xl font-semibold mb-4">开始你的时间旅行吧</h2>
+      <p class="text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+        时间对每个人都是公平的，但赋予时间的意义却各不相同。找一个安静的片刻，输入那个对你而言独一无二的日期。看看跳动的数字，回想那段时光。计算天数，不只是为了一个结果，更是为了<span class="font-medium text-gray-900">重温、确认和纪念</span>。
+      </p>
+      <p class="text-gray-500">
+        希望这个简单的小工具，能帮你更好地收藏那些闪亮的日子。
+      </p>
+    </div>
   </div>
-  <div class="mb-4">
-    <p class="font-medium">问：倒计时最长能设置多久？</p>
-    <p class="mb-3">理论上可以设置到未来很多年，只要目标时间还没到，它就会一直倒计时。显示格式会根据剩余时间自动调整，适合长期或短期倒计时。</p>
-  </div>
-  <div class="mb-4">
-    <p class="font-medium">问：手机锁屏后倒计时还会继续吗？</p>
-    <p class="mb-3">如果用的是画中画浮窗，锁屏后浮窗会消失，但再次解锁打开浏览器，倒计时依然在（只要页面没被系统杀掉）。如果只是普通在浏览器里看，锁屏就会暂停。</p>
-  </div>
-  <div class="mb-4">
-    <p class="font-medium">问：为什么我的浏览器没有画中画按钮？</p>
-    <p class="mb-3">部分安卓浏览器或旧版本可能不支持画中画，可以尝试升级浏览器或换用Chrome、Edge。iPhone只要系统在iOS14以上，Safari都自带画中画。</p>
-  </div>
-  <div class="mb-4">
-    <p class="font-medium">问：毫秒级显示会影响性能吗？</p>
-    <p class="mb-3">不会。我们采用了优化的渲染机制，每16毫秒刷新一次（约60fps），在现代设备上运行非常流畅，不会造成卡顿或耗电过快的问题。</p>
-  </div>
-
-  <p class="text-base md:text-lg mt-8 pt-4 border-t border-gray-200 text-gray-600">毫秒级倒计时不只是数字的变化，更是一种对时间的极致掌控——让我们对即将到来的时刻多一份准备，也多一份期待。下次有重要事件，不妨试试这个高精度浮窗倒计时，让它帮你把时间牢牢"抓"在眼前。</p>
-
-  <div class="text-xs text-gray-400 mt-6 text-center">© 毫秒级浮窗倒计时 · 精确到毫秒 · 支持iOS/Android浮窗</div>
 </div>
-`;export{s as default};
+`;export{t as default};

@@ -1,83 +1,71 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-800 bg-white">
-  <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center leading-tight">文字转换工具：简体、繁体、火星文一键互转，沟通从此更轻松</h1>
-  
-  <div class="mb-8">
-    <p class="mb-4 text-base leading-relaxed">你是不是偶尔会遇到这样的情况？看到一篇繁体字文章读起来有点费劲，或者朋友发来的火星文消息完全看不懂。别担心，这并不是什么难题，现在有了文字转换工具，这些烦恼都可以轻松解决。</p>
-    <p class="mb-4 text-base leading-relaxed">这篇文章就来聊聊文字转换的那些事，让你完全不需要懂任何技术，也能自由自在地在不同文字之间切换。</p>
-  </div>
+const s=`
+<article class="max-w-4xl mx-auto px-4 py-8 font-sans text-gray-800 bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">还在为选择烦恼？试试这个在线抽签转盘工具，让决定变简单</h1>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">为什么我们需要转换文字？</h2>
-    <p class="mb-4 text-base leading-relaxed">生活中，我们接触到的文字形式多种多样。比如：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li><span class="font-medium">阅读古籍或港澳台资讯：</span>很多传统文化资料、电影字幕或新闻网站使用繁体字，转换后阅读更顺畅。</li>
-      <li><span class="font-medium">与不同地区朋友交流：</span>大陆用简体字，台湾、香港等地常用繁体字，互相转换一下，沟通无障碍。</li>
-      <li><span class="font-medium">理解网络流行语：</span>火星文是年轻人喜欢的趣味表达，转换一下就能明白其中的意思。</li>
-      <li><span class="font-medium">学习与研究：</span>对比简体与繁体的差异，或者收集网络用语素材，转换工具非常实用。</li>
+  <p class="text-lg mb-8 text-gray-600 text-center">生活中，我们常常面临大大小小的选择。和朋友聚餐去哪里？周末看哪部电影？谁去买奶茶？每次都要讨论半天，实在让人头疼。今天，就为大家介绍一个能帮你瞬间解决这些烦恼的小工具。</p>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">什么是抽签转盘工具？</h2>
+    <p class="mb-4">你可以把它想象成一个电子版的“幸运转盘”或者“抓阄桶”。它的用法非常简单：把你所有难以抉择的选项都写进去，轻轻一点，转盘就会飞快转动，最后随机为你选出一个结果。</p>
+    <p>比如，你和朋友在“火锅、烧烤、日料、炒菜”之间争论不休。把这些选项输入进去，让转盘来替你们做决定，公平又省事，还能增添一点乐趣。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">你会在什么情况下用到它？</h2>
+    <p class="mb-4">这个抽签转盘的用处可多了，几乎覆盖了生活和工作的各种场景：</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+      <li><strong>朋友聚会时</strong>：决定今天谁请客、玩什么游戏、下一个轮到谁唱歌。</li>
+      <li><strong>团队工作中</strong>：公平地分配一个临时任务，或者决定午餐外卖点什么。</li>
+      <li><strong>家庭生活里</strong>：让孩子决定周末去动物园还是科技馆，或者决定今晚谁洗碗。</li>
+      <li><strong>个人选择时</strong>：纠结今晚看哪本书、先复习哪一门功课、甚至决定先宠幸哪一款游戏。</li>
     </ul>
-    <p class="text-base leading-relaxed">总之，文字转换就像一座桥梁，连接不同的书写习惯，让信息传递更简单。</p>
-  </div>
+    <p>它的核心价值，就是把“选择”这个耗费精力的过程，变成一个轻松、公平、带点小惊喜的游戏。</p>
+  </section>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">一分钟认识三种文字</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">简体字</h3>
-        <p class="text-sm leading-relaxed">这是我们日常最常用的写法，笔画简单，书写快速。中国大陆的标准用字，比如“学习”、“电脑”。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">繁体字</h3>
-        <p class="text-sm leading-relaxed">保留了更多传统笔画，看起来更复杂一些。在台湾、香港、澳门以及海外华人社区广泛使用，比如“學習”、“電腦”。</p>
-      </div>
-      <div class="p-4 border border-gray-200 rounded-lg">
-        <h3 class="text-lg font-medium mb-2 text-blue-600">火星文</h3>
-        <p class="text-sm leading-relaxed">一种有趣的网络文字，通过符号、谐音或变形来表达，充满个性。比如“伱好”变成“沵恏”，常在社交聊天中出现。</p>
-      </div>
-    </div>
-    <p class="text-base leading-relaxed">这三种文字各有特点，转换工具就能在它们之间自由切换，就像翻译不同方言一样方便。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">这个转盘工具怎么用？</h2>
+    <p class="mb-4">使用起来只需要三步，一分钟就能学会：</p>
+    <ol class="list-decimal pl-6 space-y-3 mb-6">
+      <li><strong>写下你的选项</strong>：在页面右侧的方框里，把你的备选答案一行一个地写进去。比如“看电影”“逛公园”“宅家里”。</li>
+      <li><strong>点击开始抽签</strong>：写好之后，点击中间那个大大的“开始抽签”按钮。漂亮的彩色转盘就会立刻旋转起来。</li>
+      <li><strong>等待结果揭晓</strong>：几秒钟后，转盘会慢慢停下，指针指向的那个选项，就是你的“天选之子”！结果会清晰地显示在转盘下方。</li>
+    </ol>
+    <p class="text-gray-600">更贴心的是，你写好的选项会被自动保存下来，下次打开页面时还在，不用重新输入。</p>
+  </section>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">文字转换工具能做什么？</h2>
-    <p class="mb-4 text-base leading-relaxed">一个简单的在线工具，通常提供以下转换方式：</p>
-    <ul class="list-disc pl-5 mb-4 space-y-2 text-base leading-relaxed">
-      <li>简体字转成繁体字</li>
-      <li>繁体字转回简体字</li>
-      <li>简体字变成火星文</li>
-      <li>火星文还原为简体字</li>
-      <li>繁体字与火星文互相转换</li>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">为什么大家都爱用这种方式做决定？</h2>
+    <p class="mb-4">你可能觉得，不就是随便选一个嘛，自己心里默念也行。但转盘抽签有几个独特的优势：</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>绝对公平</strong>：结果是完全随机的，避免了人情世故带来的偏袒或谦让，让每个人心服口服。</li>
+      <li><strong>过程有趣</strong>：看着转盘哗啦啦地转，那种 suspense （悬念感）和最后揭晓的瞬间，比干巴巴地说一个名字有意思多了。</li>
+      <li><strong>终结纠结</strong>：对于有选择困难症的人来说，这相当于把决定权交给了“命运”，自己反而如释重负，能够坦然接受任何结果。</li>
+      <li><strong>直观可信</strong>：“眼见为实”，转盘的物理转动和停止过程，比手机里随机跳一个数字，看起来更真实、更有仪式感。</li>
     </ul>
-    <p class="mb-4 text-base leading-relaxed">使用起来非常简单：选择你要的转换方式，把文字粘贴进去，点一下按钮，结果立刻就出来了。你还可以把转换好的文字复制下来，用到任何需要的地方。</p>
-    <p class="text-base leading-relaxed">整个过程完全免费，而且不需要安装任何软件，在手机或电脑上打开网页就能用。</p>
-  </div>
+  </section>
 
-  <div class="mb-10">
-    <h2 class="text-xl sm:text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">常见问题解答</h2>
+  <section class="mb-10 bg-gray-50 p-6 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b">关于在线抽签，你可能想知道的事</h2>
     <div class="space-y-6">
       <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">转换结果准确吗？</h3>
-        <p class="text-base leading-relaxed">一般来说，基于标准的字库对应关系，转换准确度很高。但对于一些多音字或特殊用法，可能需要稍作核对，就像我们平时查字典一样。</p>
+        <h3 class="text-xl font-medium mb-2">这个抽签真的随机吗？</h3>
+        <p>是的，它背后的算法会确保每个选项被选中的概率是完全均等的。无论你把选项放在第一行还是最后一行，中签的机会都一样。这就像掷一个完美的骰子，每一面朝上的概率都是六分之一。</p>
       </div>
       <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">一次能转换多少文字？</h3>
-        <p class="text-base leading-relaxed">大部分工具都没有严格限制，你可以粘贴整篇文章、长段落进行转换。如果文字量特别大，分几次操作会更顺畅。</p>
+        <h3 class="text-xl font-medium mb-2">选项数量有限制吗？</h3>
+        <p>几乎没有。你可以只放2个选项，也可以放几十个选项。转盘会自动调整，把一整圈360度平均分给每一个选项。当然，为了美观和清晰，建议一次不要放太多，否则转盘上的字会挤在一起。</p>
       </div>
       <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">转换后的文字可以用在哪里？</h3>
-        <p class="text-base leading-relaxed">任何需要的地方！比如发社交媒体、写文档、做研究、或者只是好奇看看不同的写法。转换后的文字和普通文字一样，可以随意复制、粘贴、编辑。</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-medium mb-2 text-gray-700">在手机上能用吗？</h3>
-        <p class="text-base leading-relaxed">当然可以。好的转换工具会自动适应手机屏幕，操作和电脑上一样简单，无论你是在地铁上还是在家里，随时都能用。</p>
+        <h3 class="text-xl font-medium mb-2">用手机也能操作吗？</h3>
+        <p>完全可以。这个工具在设计时就考虑到了手机用户。无论在电脑的大屏幕上，还是在手机的小屏幕上，转盘和操作区域都会自动调整成合适的布局，用起来一样方便。</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="mt-12 p-6 border border-gray-300 rounded-lg bg-gray-50">
-    <h2 class="text-xl font-semibold mb-3 text-gray-800">小结</h2>
-    <p class="mb-3 text-base leading-relaxed">文字转换工具是一个贴心的小帮手，它让简体字、繁体字和火星文之间的切换变得像开关灯一样简单。无论你是为了学习、工作还是娱乐，它都能帮你省去很多麻烦。</p>
-    <p class="text-base leading-relaxed">下次再遇到看不懂的文字，不妨试试转换一下，也许会有意想不到的发现。沟通的本质是理解，而工具的存在，就是让这份理解更容易达成。</p>
-  </div>
-</div>
-`;export{e as default};
+  <section class="text-center py-8 border-t">
+    <h2 class="text-2xl font-semibold mb-4">告别选择困难，让生活多一点小乐趣</h2>
+    <p class="mb-6">生活中不是所有决定都需要深思熟虑。对于那些无关紧要却又让人纠结的小事，不如交给命运来安排。这个免费的在线抽签转盘工具，就是一个能帮你快速决策、增添生活趣味的小帮手。</p>
+    <p class="text-gray-600">下次当你和朋友、家人或同事陷入“到底选哪个”的僵局时，不妨试试这个转盘。也许，惊喜就在下一秒的旋转中。</p>
+  </section>
+</article>
+`;export{s as default};

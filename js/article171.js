@@ -1,75 +1,104 @@
-const s=`
-<div class="max-w-4xl mx-auto p-4 md:p-8 bg-white text-slate-800 font-sans">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">还在为分组发愁？试试这个简单又公平的分组方法</h1>
-  <p class="text-slate-600 mb-8 text-lg">无论是公司团建、学校活动，还是朋友聚会，只要涉及到分组，总是让人头疼。怎么分才能又快又好？今天就来聊聊这件事。</p>
+const e=`
+<article class="max-w-4xl mx-auto px-4 py-8 md:px-8 font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 leading-tight">
+    快乐8选号不用愁，一个免费小工具帮你轻松搞定
+  </h1>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">分组为什么总让人纠结？</h2>
-  <p class="mb-4">相信很多人都有过类似的经历：</p>
-  <ul class="list-disc pl-6 mb-8 space-y-2 text-slate-700">
-    <li><strong>怕不公平</strong>：总觉得某个组实力太强，另一个组又太弱，比赛还没开始就失去了悬念。</li>
-    <li><strong>效率低下</strong>：大家围在一起，你一言我一语，半天也定不下名单，浪费宝贵时间。</li>
-    <li><strong>人情难顾</strong>：好朋友想分在一起，但又怕别人说不公平；想把经常合作的同事分开，又不知如何开口。</li>
-    <li><strong>考虑不周</strong>：只想着按人数分，却忘了考虑男女比例，导致有的组全是男生，活动效果大打折扣。</li>
-  </ul>
-  <p class="mb-8 text-slate-600">这些烦恼，归根结底是因为我们用了“凭感觉”的手工分组法。要解决它，我们需要一点更科学的思路。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">什么是好的分组方法？</h2>
-  <p class="mb-4">一个好的分组方法，至少要满足下面三个条件：</p>
-  <div class="grid md:grid-cols-3 gap-4 mb-8">
-    <div class="bg-blue-50 p-5 border border-blue-100">
-      <h3 class="font-bold text-blue-800 mb-2">结果公平</h3>
-      <p class="text-sm text-slate-700">不是绝对的平等，而是让每个人都有机会，每个组都有希望，过程透明，大家心服口服。</p>
-    </div>
-    <div class="bg-green-50 p-5 border border-green-100">
-      <h3 class="font-bold text-green-800 mb-2">快速省时</h3>
-      <p class="text-sm text-slate-700">把繁琐的讨论和调整交给方法，几分钟内出结果，把时间留给真正的活动和交流。</p>
-    </div>
-    <div class="bg-amber-50 p-5 border border-amber-100">
-      <h3 class="font-bold text-amber-800 mb-2">灵活可控</h3>
-      <p class="text-sm text-slate-700">可以根据活动的不同需求，调整分组的规则，而不是只能“一刀切”。</p>
-    </div>
+  <div class="text-sm text-gray-500 text-center mb-8 border-b border-gray-200 pb-6">
+    <p>更新于 2025年5月 • 阅读约需3分钟</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">几种常见又实用的分组思路</h2>
-  <p class="mb-6">了解了目标，我们可以看看有哪些具体的方法能帮到我们：</p>
-
-  <div class="space-y-6 mb-10">
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-blue-700">1. 随机分组：最基础的公平</h3>
-      <p class="mb-3">就像抽签一样，把所有人的名字打乱，然后按顺序分到各个组里。这是最简单粗暴，但也最不容易引发争议的方法。适合对小组构成没有特殊要求的娱乐活动。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：破冰游戏、抽奖、简单的小任务分配。</p>
-    </div>
-
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-green-700">2. 均衡性别分组：让小组更有活力</h3>
-      <p class="mb-3">俗话说“男女搭配，干活不累”。均衡性别分组，就是把男生和女生先分开，然后像发牌一样，轮流分到每个组，确保每个组的男女比例都差不多。这样能促进交流，让小组氛围更融洽。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：团队拓展、项目小组、学习讨论班、联谊活动。</p>
-    </div>
-
-    <div class="p-5 border border-slate-200 rounded-lg">
-      <h3 class="text-xl font-semibold mb-3 text-amber-700">3. 避开特定组合：巧妙的“人情”处理</h3>
-      <p class="mb-3">有时候，我们需要把两个经常合作的人分开，以促进新的碰撞；或者把两个有矛盾的同学暂时分开，保证活动顺利进行。这个功能可以指定“谁和谁最好不要在一组”，系统会优先考虑这个要求。</p>
-      <p class="text-slate-600 text-sm"><strong>适合场景</strong>：教学分组（避免总是一组的同学）、需要创新思维的头脑风暴、调解型团队活动。</p>
-    </div>
+  <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r">
+    <p class="text-gray-700">
+      买快乐8时，面对1到80个数字要选出10个，是不是常常感到无从下手？别担心，这篇文章就是来帮你解决这个烦恼的。我们来聊聊一个完全免费、操作简单的随机选号小助手。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-slate-200">如何选择分组方式？一个简单的决策图</h2>
-  <p class="mb-6">面对不同的活动，你可以这样思考：</p>
-  <div class="bg-slate-50 p-6 rounded-xl mb-10 border border-slate-300">
-    <p class="mb-4 font-medium">首先问自己：<span class="text-blue-700">“这次分组，最重要的是什么？”</span></p>
-    <ul class="space-y-3 text-slate-700">
-      <li>▶ 如果答案是 <strong>“绝对公平，省去一切解释”</strong>，那就选 <span class="font-semibold">完全随机</span>。</li>
-      <li>▶ 如果答案是 <strong>“希望小组内部能更好地协作交流”</strong>，那就选 <span class="font-semibold">均衡性别</span>。</li>
-      <li>▶ 如果答案是 <strong>“有几个特殊情况需要特别处理”</strong>，那就选 <span class="font-semibold">避开特定组合</span>。</li>
-    </ul>
-    <p class="mt-6 text-slate-600 text-sm">想清楚核心目的，选择就变得简单了。</p>
-  </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      选号真的有那么难吗？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      相信很多购彩朋友都有过这样的经历：站在彩票终端机前，面对密密麻麻的数字面板，脑子里却一片空白。自己的生日、纪念日、幸运号码都试过了，总感觉选出来的组合不够"随机"，好像少了点什么。
+    </p>
+    <p class="leading-relaxed">
+      这种纠结非常正常。快乐8的玩法是从1到80共80个数字中选取10个数字作为一注，理论上的组合数量是一个天文数字。靠我们人脑去想，难免会陷入固定的思维模式——总是偏爱某些数字区间，或者不自觉地避开一些数字，最终选出来的号码反而不够"随机"。
+    </p>
+  </section>
 
-  <div class="p-6 md:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl mt-12">
-    <h2 class="text-2xl font-bold mb-4 text-slate-800">告别分组烦恼，让事情更简单</h2>
-    <p class="mb-4">一个好的开始是成功的一半。分组看似是小事，却直接影响着后续活动的氛围和效率。</p>
-    <p class="mb-6">无论是想随机抽签图个乐子，还是希望科学搭配提升团队效能，亦或是要巧妙处理一些人际关系，总有一种分组思路适合你。下次再遇到需要分组的情况，不妨试试这些方法。</p>
-    <p class="font-medium text-slate-800">把纠结的时间省下来，去享受活动本身带来的快乐吧。</p>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      什么是随机选号工具？它能做什么？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      简单来说，它就像一个聪明的数字摇号器。你只需要告诉它你想生成几组号码，它就能立刻为你组合出全新的、完全随机的快乐8号码，每注包含10个不重复的数字。
+    </p>
+
+    <div class="bg-gray-50 p-6 rounded-lg my-6 border border-gray-200">
+      <h3 class="text-xl font-medium mb-3 text-gray-800">这个小工具的几个贴心功能：</h3>
+      <ul class="space-y-3 pl-5 list-disc text-gray-700">
+        <li><span class="font-medium">支持生成1到10注</span>：你可以选择一次性生成1组到10组号码，灵活满足不同需求，不用一次次重复操作。</li>
+        <li><span class="font-medium">号码从小到大排列</span>：每注生成的10个数字会自动按从小到大的顺序整齐排列，一目了然，方便核对。</li>
+        <li><span class="font-medium">一键复制功能</span>：看中了哪组号码，点一下"复制"就能存到剪贴板，然后直接粘贴到备忘录或发给朋友，再也不用手抄抄错。</li>
+        <li><span class="font-medium">纯本地运算保护隐私</span>：整个随机生成过程都在你自己的设备上完成，不会把你的任何选择记录或发送到外部服务器，安全又省心。</li>
+        <li><span class="font-medium">操作简单</span>：整个界面简洁直观，选择注数后点击按钮就能得到结果，没有任何复杂的学习成本。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      为什么要用这种方式来选号？
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      你可能会有疑问："机器随机选出来的号码，靠谱吗？"
+    </p>
+    <p class="mb-4 leading-relaxed">
+      首先，我们要明白一个基本事实：快乐8的开奖结果是完全随机的。这意味着，每一个合法的数字组合在每一次开奖中的中奖概率在理论上是完全相等的。无论这组号码是你自己精心挑选的，还是机器随机生成的，它们的中奖概率没有任何区别。
+    </p>
+    <p class="mb-4 leading-relaxed">
+      使用这种随机选号工具，最大的好处在于它能够帮助你打破选号时的"思维定式"。我们人类在做"随机"选择时，总会不自觉地带入各种偏好——比如倾向于避开数字4或13，喜欢选连号，或者总是集中在某个数字区间。而机器随机能做到更纯粹的均匀分布，覆盖更广的数字组合范围。
+    </p>
+    <p class="leading-relaxed">
+      所以说，这个工具更像是一个帮你开拓思路、提供灵感的伙伴。当你面对80个数字毫无头绪时，让它给你几组随机的选项，你也许能从中发现新的灵感，或者直接选用其中一组作为参考。
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-orange-500 pl-3">
+      如何使用它？简单三步
+    </h2>
+    <ol class="space-y-6 pl-0 list-decimal list-inside">
+      <li>
+        <span class="font-medium text-gray-900">第一步：打开工具</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在手机或电脑浏览器中打开这个快乐8随机选号工具页面，无需下载安装任何软件。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第二步：选择数量</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">在页面上找到"生成注数"选项，设置你想生成的号码组数，支持1注到10注自由选择。</p>
+      </li>
+      <li>
+        <span class="font-medium text-gray-900">第三步：生成与选用</span>
+        <p class="ml-0 mt-2 pl-0 text-gray-700">点击"摇号"或"生成"按钮，几组快乐8号码瞬间出现在页面上。仔细浏览每组号码，如果有觉得顺眼的，点击旁边的"复制"按钮即可保存使用。不满意的话，随时可以重新生成。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="mb-12 p-6 border border-gray-300 rounded-xl bg-gradient-to-r from-gray-50 to-white">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-900">温馨提示</h2>
+    <p class="mb-4 leading-relaxed">
+      这个快乐8随机选号工具，本质上是一个为了增添趣味、提供便利的小助手。它能帮你解决"不知道选什么号码"的纠结，让选号过程变得轻松有趣一些。
+    </p>
+    <p class="mb-4 leading-relaxed font-medium text-gray-900">
+      但请一定记住，它不能预测未来开奖结果，也无法提高任何中奖概率。
+    </p>
+    <p class="leading-relaxed">
+      购买彩票应该是一种健康的娱乐方式，而非赚钱的手段。我们希望你在使用这个小工具时，能抱着轻松、理性的心态。享受那份期待的过程，但更要珍惜自己实实在在的生活和工作。量力而行，理性购彩，才是最重要的态度。
+    </p>
+  </section>
+
+  <div class="text-xs text-gray-400 border-t border-gray-200 pt-6 mt-8">
+    <p>免责声明：本文介绍的工具仅供娱乐与参考之用。彩票有风险，请理性参与。</p>
   </div>
-</div>
-`;export{s as default};
+</article>
+`;export{e as default};

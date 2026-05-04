@@ -1,97 +1,48 @@
-const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">如何优雅地举办小型比赛？一个记分工具就够了</h2>
-    <p class="text-lg text-gray-600 mb-8 text-center">无论是社区篮球赛、家庭桌游夜，还是公司内部竞赛，一个清晰、好看的记分板能让比赛体验立刻升级。</p>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800 leading-relaxed">
+  <!-- 标题 -->
+  <h1 class="text-3xl font-bold text-center mb-6 text-gray-900 h-12 leading-12">智能配对工具：让活动分组、搭档组合不再头疼</h1>
+  
+  <!-- 引言 -->
+  <p class="mb-4 text-lg">
+    组织一场团建活动，需要把两个部门的员工混合分成小组；课堂上老师想让学生两两组队完成作业；兴趣社团要安排新老成员结对……每次遇到这种需要“配对”或“分组”的情况，你是不是也犯过难？抽签太随机，可能把合不来的人凑到一起；手动分配又费时费力，还得反复调整。其实，一个智能配对工具就能帮你轻松搞定。
+  </p>
 
-    <div class="my-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
-      <p class="text-blue-800">你是不是也遇到过这些情况？组织一场小比赛，比分靠手写纸片，看不清还容易出错；或者临时找不到合适的工具来展示实时比分，让观众和参与者一头雾水。</p>
-    </div>
+  <!-- 两个模式解决不同场景 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">两种模式，覆盖常见配对需求</h2>
+  <p class="mb-4">
+    智能配对工具提供了两种最常用的配对模式。第一种是<strong class="font-medium">“A-B组配对”</strong>，适合两个不同群体之间的混合。比如公司销售部和研发部要搞联谊活动，希望把两边的同事一对一搭配起来；或者学校两个班级一起做交流项目，需要把学生交叉分组。你只需要把两组名单分别录入，工具就会自动把两边的人随机配对，保证每个人都有搭档。
+  </p>
+  <p class="mb-4">
+    第二种是<strong class="font-medium">“单组内部配对”</strong>，适用于同一个群体内两两组合。比如一个班级有40名学生，需要分成20个学习小组；或者一个志愿者团队要结成两人小队去执行任务。你只需输入全部成员的名字，工具就会自动把他们随机分成两人一组，如果总人数是奇数，还会贴心地标注“待定”，方便你后续处理。
+  </p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">告别混乱，比赛记分可以很简单</h2>
-    <p class="mb-4">过去，我们可能需要专门的设备或复杂的软件来管理比赛比分。但现在，一个轻便的在线工具就能解决所有问题。它的核心目标只有一个：让每个人，无论在场内还是远处，都能一目了然地看到比赛进展。</p>
-    <p class="mb-4">想象一下，在社区羽毛球赛现场，一块大屏幕上实时跳动着你支持的队伍比分；或者家庭玩扑克牌时，手机屏幕就是你们的计分中心。这能让任何形式的竞技都变得更有仪式感和趣味性。</p>
+  <!-- 避免配对功能 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">避免尴尬：提前设置“不想同组”的人</h2>
+  <p class="mb-4">
+    最让人头疼的往往是“不能让他们在一起”的情况。比如两位同事之前合作不太愉快，或者某些成员已经多次搭档过，希望这次换换新人。这时候，你可以在“避免配对”里提前设置规则，比如输入“张三-李四”，工具在生成配对时就会自动避开他们俩，绝不会把他们分到同一组。你还可以随时添加或删除这些规则，完全由你掌控。
+  </p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">一个好用的记分工具，应该具备哪些特点？</h2>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">实时更新比分</span>：比分变化能立刻显示出来，没有延迟。</li>
-      <li><span class="font-medium">操作极其简单</span>：不需要学习，上手就能点按加减分数。</li>
-      <li><span class="font-medium">视觉清晰直观</span>：数字够大，颜色分明，远处也能看清。</li>
-      <li><span class="font-medium">适应各种场合</span>：既能在手机、平板上用，也能投屏到电视或投影仪上。</li>
-      <li><span class="font-medium">帮你掌握节奏</span>：可以设置比赛总时长，显示剩余时间。</li>
-    </ul>
+  <!-- 操作简单，三步完成 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">三步操作，一键生成配对方案</h2>
+  <p class="mb-4">
+    使用起来也非常简单。第一步，选择你需要的配对模式；第二步，把成员名单复制粘贴进来（用空格或换行分隔都可以）；第三步，点击“立即生成配对方案”。工具就会在后台快速计算，几秒钟后屏幕上就会显示出完整的配对结果。如果你对某对组合不满意，还可以点击“调换”按钮，手动交换两个组的成员，直到你满意为止。
+  </p>
 
-    <div class="my-8 p-6 bg-gray-50 rounded-xl">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">它能用在哪些地方？</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社区与校园比赛</h4>
-          <p class="text-sm text-gray-600">篮球、足球、乒乓球友谊赛，运动会项目计分。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">家庭与朋友聚会</h4>
-          <p class="text-sm text-gray-600">桌游、棋牌、家庭趣味竞技，让游戏计分不再麻烦。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">社团与兴趣小组</h4>
-          <p class="text-sm text-gray-600">电竞对战、台球比赛、读书会知识竞赛等。</p>
-        </div>
-        <div class="p-4 bg-white rounded-lg shadow-sm">
-          <h4 class="font-medium text-gray-800 mb-1">企业内部活动</h4>
-          <p class="text-sm text-gray-600">团队建设比赛、技能比武、年会游戏环节。</p>
-        </div>
-      </div>
-    </div>
+  <!-- 导出与分享 -->
+  <h2 class="text-2xl font-semibold mt-8 mb-3 h-10 leading-10 border-l-4 border-blue-500 pl-3">导出结果，方便打印或分享</h2>
+  <p class="mb-4">
+    配对方案确定后，你可以一键导出为CSV文件。这个文件可以用Excel打开，也可以直接打印出来贴在活动墙上，或者发到群里让大家查看。再也不用拿笔在纸上画来画去，也不用反复口头确认了。
+  </p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">三步上手，轻松管理你的比赛</h2>
-    <p class="mb-6">使用这样的工具，就像操作一个简单的遥控器。你不需要懂技术，只需要关注比赛本身。</p>
-    <ol class="list-decimal pl-5 space-y-6 mb-8">
-      <li>
-        <span class="font-medium text-gray-800">第一步：设定基础信息</span>
-        <p class="mt-1 text-gray-600">给你的两支队伍起个名字，比如“旋风队”和“勇者队”。设定一下比赛的预计结束时间，这样大家都能看到倒计时。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第二步：开始记分</span>
-        <p class="mt-1 text-gray-600">比赛开始后，哪个队伍得分了，就在对应的队伍下面点一下“+”号。如果计分员不小心加错了，点“-”号就能减回去。所有改动都会自动保存。</p>
-      </li>
-      <li>
-        <span class="font-medium text-gray-800">第三步：全屏展示</span>
-        <p class="mt-1 text-gray-600">当需要把比分展示给大家看时，只需要点击一下“全屏显示”，整个屏幕就会变成一块简洁大气的大记分牌，非常适合投屏。</p>
-      </li>
-    </ol>
+  <!-- 总结 -->
+  <p class="mt-8 text-lg border-t border-gray-200 pt-6">
+    智能配对工具就像一个贴心的助手，帮你把繁琐的分组工作变得轻松、公平又人性化。不管你是组织活动的HR、课堂上的老师，还是社团负责人，下次需要配对时，不妨试试这个智能方法，把时间留给更有意义的事。
+  </p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">为什么说它提升了比赛体验？</h2>
-    <p class="mb-4">一个专业的记分板，看似只是显示了几个数字，但它实际上解决了比赛组织中的几个核心痛点：</p>
-    <ul class="list-disc pl-5 space-y-2 mb-6">
-      <li><span class="font-medium">公平公正，一目了然</span>：所有人都盯着同一个权威比分来源，避免了因听错或看错产生的争议。</li>
-      <li><span class="font-medium">营造紧张氛围</span>：跳动的数字和倒数的时间，能有效点燃参赛者和观众的热情。</li>
-      <li><span class="font-medium">解放组织者</span>：无需再专门安排一个人反复大声报分或更新黑板，省时省力。</li>
-      <li><span class="font-medium">灵活适配</span>：你可以根据比赛的主题颜色，调整记分板的背景和文字颜色，让它更贴合现场风格。</li>
-    </ul>
-
-    <div class="my-10 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border text-center">
-      <h3 class="text-2xl font-bold text-gray-800 mb-3">让下一场比赛更精彩</h3>
-      <p class="text-gray-700 mb-4">工具的价值在于为人服务。一个好的记分工具，就是让组织者更省心，让参与者更投入，让观众更尽兴。它把琐碎的管理事务变得简单，把大家的注意力重新聚焦到比赛的乐趣和竞技本身。</p>
-      <p class="font-medium text-gray-800">如果你正在筹划一场比赛，或者希望日常的游戏竞争更有趣，不妨试试这个免费、简单又直观的解决方案。</p>
-    </div>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">常见问题解答</h2>
-    <div class="space-y-4 mb-10">
-      <div>
-        <h4 class="font-medium text-gray-800">这个工具是免费的吗？</h4>
-        <p class="text-gray-600">是的，这是一个完全免费的工具，无需下载安装，在浏览器中打开即可使用。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">需要注册账号吗？</h4>
-        <p class="text-gray-600">完全不需要。所有设置和比分数据都会自动保存在你当前使用的设备上，方便下次继续。</p>
-      </div>
-      <div>
-        <h4 class="font-medium text-gray-800">除了两队对战，能记录更多队伍吗？</h4>
-        <p class="text-gray-600">目前的设计专注于两支队伍的对决场景，这是最常见的比赛形式，能确保界面最清晰、操作最直接。</p>
-      </div>
-    </div>
-
-    <p class="text-sm text-gray-500 text-center mt-12 pt-6 border-t">希望这篇文章能帮你找到轻松管理比赛比分的好方法。祝你的每一场比赛都组织顺利，精彩纷呈！</p>
-  </article>
+  <!-- 底部小提示，符合原文风格 -->
+  <div class="mt-6 text-sm text-gray-500 text-center h-8 leading-8">
+    * 工具完全免费，无需安装，打开网页就能用
+  </div>
 </div>
-`;export{s as default};
+`;export{t as default};

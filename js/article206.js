@@ -1,94 +1,98 @@
 const t=`
-<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800">
-  <!-- 标题 -->
-  <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
-    Zalgo故障文本生成器：让你的文字“扭曲”起来
-  </h1>
-  <!-- 引言 -->
-  <p class="text-lg mb-6 text-gray-700 leading-relaxed">
-    你有没有在网上见过这样的文字——“H̴̢ę̵l̷̛l̷̢o̴̢”看起来像是出了故障，但又莫名酷炫？这就是Zalgo文本，一种通过叠加特殊符号让普通文字产生扭曲、撕裂效果的文字艺术。不管是游戏昵称、社交签名，还是文案设计，它都能让你的表达瞬间与众不同。今天我们就来聊聊这种有趣的文字玩法，以及怎么轻松生成你自己的故障文本。
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 font-sans text-gray-700 leading-relaxed">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">想知道你的文章到底写了些什么？一个免费工具全告诉你</h1>
+  <p class="text-lg mb-8 text-gray-600">
+    无论是写工作总结、发一篇长微博，还是准备演讲稿，你是否也曾对着屏幕疑惑：我这篇文章到底写了多少字？读起来费劲吗？有没有哪个词被我翻来覆去地用？今天，就给大家介绍一个能帮你一眼看清文章“底细”的免费在线工具。
   </p>
 
-  <!-- 什么是Zalgo文本 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">什么是Zalgo文本？</h2>
-  <p class="mb-4 text-gray-700">
-    Zalgo文本最早起源于国外一个叫“Zalgo”的网络漫画角色，后来网友们开始用Unicode里的组合字符（比如各种声调符号、点、横线）堆叠在普通字母上下，制造出一种文字“发疯”的效果。因为看起来很像电脑显示故障，所以也叫“故障文本”。它并不是真正的乱码，而是一种视觉风格——每个基础字符后面跟着一串看不见的附加符号，叠加多了就会变得张牙舞爪。
-  </p>
-  <p class="mb-4 text-gray-700">
-    简单来说，它就像给文字穿上了“刺猬外套”，原本整齐的句子立刻有了不安分的感觉。强度低的时候只是带点小点缀，强度高了就像文字在屏幕里挣扎，特别适合用来表达疯狂、混乱、神秘或者搞怪的情绪。
-  </p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">这个工具能帮你做什么？</h2>
+    <p class="mb-3">简单来说，它就像一个文章的“体检中心”。你只需要把文字内容贴进去，它就能瞬间生成一份详细的“体检报告”，让你对文章了如指掌。</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><span class="font-medium">数得清清楚楚</span>：总字数、中文字数、英文单词数、段落、句子，这些基础信息一目了然。</li>
+      <li><span class="font-medium">揪出“高频词”</span>：看看你最爱用哪个词，避免文章里同一个词出现太多次。</li>
+      <li><span class="font-medium">评估阅读难度</span>：它会告诉你这篇文章大概是什么阅读水平，是通俗易懂还是需要仔细琢磨。</li>
+      <li><span class="font-medium">分析成分构成</span>：你的文章里，中文、英文、数字、标点各自占了多少比例？</li>
+      <li><span class="font-medium">预估阅读时间</span>：读者大概需要几分钟能读完你的内容？</li>
+    </ul>
+  </div>
 
-  <!-- 为什么人们喜欢用故障文本 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">为什么大家都爱用故障文本？</h2>
-  <p class="mb-4 text-gray-700">
-    在网络世界里，大家都想让自己显得特别。普通名字容易淹没在人群里，而一个带点故障效果的名字——比如“M̴y̴ ̴n̴a̴m̴e̴”就会让人忍不住多看两眼。游戏玩家用它来打造酷炫ID，社交博主用它做个性签名，甚至有些设计师会把故障文字用在海报、视频标题里，营造科技感或恐怖氛围。它就像一种视觉上的“滤镜”，让文字不再平淡。
-  </p>
-  <p class="mb-4 text-gray-700">
-    而且生成起来非常简单，不需要你会任何代码，只要往工具里输入文字，拖动一下滑块，就能得到专属的扭曲文字。这也是Zalgo文本生成器受欢迎的原因——简单、好玩、出效果。
-  </p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">它具体是怎么帮我分析文章的？</h2>
 
-  <!-- 如何使用这个生成器 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">三步生成你的故障文本</h2>
-  <p class="mb-2 text-gray-700">这个工具完全傻瓜式操作，你只需要：</p>
-  <ol class="list-decimal list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">输入文字：</span>在左侧输入框里打上你想转换的内容，中文、英文、数字都支持。</li>
-    <li><span class="font-medium">调节强度：</span>拖动滑块从0到20，数字越大，文字上叠加的符号就越多，效果越“疯狂”。</li>
-    <li><span class="font-medium">复制使用：</span>右侧会实时显示效果，满意了直接点“复制故障文本”，就能粘贴到任何地方——微信、游戏、论坛都可以。</li>
-  </ol>
-  <p class="mb-4 text-gray-700">
-    如果你不知道写什么，点一下“随机示例”，工具会给你几个常用句子，你可以直接拿来玩。
-  </p>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 第一步：把文章放进去</h3>
+    <p class="mb-3">你可以直接把文字粘贴到那个大文本框里。如果字太多，也可以上传一个TXT文档，或者点一下“加载示例”，看看分析效果。</p>
+    <p class="text-sm text-gray-500 italic">小提示：你一输入文字，分析结果就会实时更新，非常方便。</p>
+  </div>
 
-  <!-- 滑块强度是什么意思 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">滑块强度有什么用？</h2>
-  <p class="mb-4 text-gray-700">
-    这个滑块控制的是文字“发疯”的程度。强度为0时，文字完全正常，没有任何附加符号。随着强度增加，每个字符后面会随机添加不同数量的组合符号——比如在字母上下加小点、横线、波浪号等。强度到20时，字符后面会叠上几十个符号，看起来就像一团乱码，但仔细看还能认出原本的字形。你可以根据自己的喜好调节：想要低调一点就用低强度（比如3-5），只想稍微加点纹理；想要夸张炸裂就用高强度（15以上），让文字充满视觉冲击。
-  </p>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 看基础数据：我的文章有多“大”？</h3>
+    <p class="mb-3">这里会整齐地展示文章的基本规模。比如，你想确认一篇稿子是不是超过了800字，或者想知道英文报告里有多少个单词，看这里就行了。它还会贴心地估算出别人读完大概需要的时间。</p>
+  </div>
 
-  <!-- 西里尔字符选项是干嘛的 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">“启用西里尔字符”有什么用？</h2>
-  <p class="mb-4 text-gray-700">
-    这个选项是给追求更酷效果的人准备的。西里尔字母就是俄文等语言使用的字母，里面有一些和英文字母长得很像，比如“a”变成“а”（俄文），看起来几乎一样，但其实是不同字符。勾选之后，工具会把部分英文字母替换成相似的西里尔字母，然后再叠加故障符号。这样生成的文字会多一种“异域感”，而且因为字符变了，在一些系统里可能显得更特别。如果你想要文字既有故障效果，又有种陌生语言的错觉，就可以打开它。
-  </p>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 看词频分析：我是不是老用同一个词？</h3>
+    <p class="mb-3">这个功能特别适合写作者。它会把你文章里所有词语（中英文都算）的使用次数排个队，用得最多的词排在前面，并用长短不一的彩色条显示出来。</p>
+    <p class="text-sm text-gray-500 italic">比如，如果你发现“非常”、“然后”这样的词条特别长，可能就需要考虑换一些更丰富的表达了。</p>
+  </div>
 
-  <!-- 复制和注意事项 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">复制粘贴，随时使用</h2>
-  <p class="mb-4 text-gray-700">
-    生成后直接点“复制故障文本”，文字就会存到你的剪贴板。然后你可以去改游戏昵称、发朋友圈、写签名，想贴哪就贴哪。不过要提醒一下：因为故障文本使用了Unicode的特殊组合符号，有些老旧的应用或网站可能显示不正常（比如符号乱掉），但绝大多数现代软件——微信、QQ、微博、抖音、游戏平台——都能完美显示。如果不确定，可以先发给自己测试一下。
-  </p>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 看字符分布：我的文章“成分”是什么？</h3>
+    <p class="mb-3">你的文章是中文居多，还是夹杂了大量英文？有没有用到很多数据（数字）？通过四个不同颜色的进度条，你能直观地看到文章的文字构成比例。</p>
+  </div>
 
-  <!-- 故障文本的创意用法 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">还能怎么玩？几个创意点子</h2>
-  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
-    <li><span class="font-medium">恐怖故事标题：</span>用高强度故障写“半夜别开门”，效果瞬间阴森。</li>
-    <li><span class="font-medium">游戏战队名：</span>比如“混沌军团”变成故障版，气势拉满。</li>
-    <li><span class="font-medium">隐藏彩蛋：</span>在文章里插入一小段故障文字，让细心读者发现惊喜。</li>
-    <li><span class="font-medium">表情包配字：</span>配合崩溃的表情，用故障文字配“我疯了”，十分应景。</li>
-  </ul>
-  <p class="mb-4 text-gray-700">
-    只要你有创意，故障文本就能帮你把情绪放大。
-  </p>
+  <div class="mb-8">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. 看可读性：我的文章好懂吗？</h3>
+    <p class="mb-3">这是很多人关心的。工具会根据句子的平均长度等信息，给你的文章一个“复杂度评级”，比如“简单”、“中等”或“复杂”。同时，它还会给出一个“建议阅读水平”的参考，比如“中学水平”或“大学水平”。</p>
+    <p class="text-sm text-gray-500 italic">如果你在写一篇面向大众的科普文，那么让评级保持在“简单”或“中等”可能更合适。</p>
+  </div>
 
-  <!-- 常见问题 -->
-  <h2 class="text-2xl font-semibold mt-8 mb-3 text-gray-900">你可能想问的</h2>
-  <div class="space-y-4">
-    <div>
-      <p class="font-medium text-gray-900">Q：生成后的文字能商用吗？</p>
-      <p class="text-gray-700">A：可以，它只是字符的组合，不涉及版权。不过如果你要用在商标上，建议先确认字符显示稳定。</p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pt-6 border-t">我可能会在哪些地方用到它？</h2>
+  <div class="grid sm:grid-cols-2 gap-6 mb-10">
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">📝 写作与校对</h4>
+      <p>检查文章长度是否符合要求，优化用词，避免重复，让行文更流畅。</p>
     </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：为什么我复制到某些地方显示不全？</p>
-      <p class="text-gray-700">A：有些老旧的输入框或数据库不支持Unicode组合字符，会过滤掉附加符号。换到新一点的平台就好了。</p>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🎓 学习与备考</h4>
+      <p>分析范文结构，评估自己作文的难度，或者准备演讲时控制篇幅和语速。</p>
     </div>
-    <div>
-      <p class="font-medium text-gray-900">Q：我能控制加在字母上面还是下面吗？</p>
-      <p class="text-gray-700">A：目前这个工具是随机添加上下组合符号，你也可以多生成几次，直到满意为止。因为随机，每次效果都不一样。</p>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">💼 工作与汇报</h4>
+      <p>确保工作总结、项目报告内容精炼、重点突出，数据比例清晰。</p>
+    </div>
+    <div class="bg-gray-50 p-5 rounded-lg">
+      <h4 class="font-bold text-lg text-gray-800 mb-2">🌐 内容创作</h4>
+      <p>为公众号、博客文章把脉，调整可读性以适应目标读者，优化阅读体验。</p>
     </div>
   </div>
 
-  <!-- 结尾 -->
-  <p class="mt-8 text-gray-700 border-t pt-6 text-center text-sm text-gray-500">
-    故障文本就像文字的化妆术，简单一弄就能让普通句子拥有性格。下次想要在网络上脱颖而出，不妨来试试这个Zalgo故障文本生成器，让你的文字“发疯”起来吧！
-  </p>
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+    <h2 class="text-xl font-bold text-gray-800 mb-3">常见问题解答</h2>
+    <div class="space-y-4">
+      <div>
+        <h4 class="font-semibold text-gray-800">问：这个工具要收费吗？需要注册吗？</h4>
+        <p class="text-gray-600">答：完全免费，打开网页就能用，不需要注册或登录。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：我的文章内容会被上传到服务器吗？安全吗？</h4>
+        <p class="text-gray-600">答：分析过程通常在您的浏览器本地完成，保证了文章内容的私密性。您可以放心使用。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：分析完的结果能保存下来吗？</h4>
+        <p class="text-gray-600">答：可以的。工具提供了多种导出方式，您可以把详细的“体检报告”保存为TXT或JSON文件，或者直接复制结果。</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">问：它支持分析中英文混合的文章吗？</h4>
+        <p class="text-gray-600">答：当然支持。这正是它的一个特色，能够同时精准识别和统计中英文内容。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-12 p-8 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border">
+    <p class="text-xl font-medium text-gray-800 mb-4">想立刻为你的文章做一次全面“体检”吗？</p>
+    <p class="mb-6 text-gray-600">这个<span class="font-medium text-gray-800">文本统计分析器</span>操作简单，功能全面，就像一位默默帮你检查文章的得力助手。无论你是学生、作者还是上班族，它都能帮你更清晰地认识自己的文字作品。</p>
+    <p class="text-lg font-semibold text-blue-600">快去试试吧，只需粘贴文字，一切答案即刻呈现。</p>
+  </div>
 </div>
 `;export{t as default};

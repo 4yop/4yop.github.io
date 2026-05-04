@@ -1,1 +1,96 @@
-const t='<div class="max-w-4xl mx-auto px-4 py-8 text-gray-800"><h1 class="text-3xl font-bold mb-6 text-center text-gray-900">智能地址解析：从杂乱文字中一秒提取姓名、电话、地址</h1><p class="text-lg mb-4">每次网购或者寄快递，最烦的就是手动填写收货地址。尤其是当对方发来一串长长的话，比如“李四 13912345678 上海市浦东新区世纪大道100号 200120”，你需要把姓名、手机、省市区、详细地址和邮编一个个拆开，分别复制粘贴到不同的框里。不仅麻烦，还容易出错。今天我们就来聊聊一个能帮你“一键搞定”的智能地址解析工具，它到底有多好用。</p><h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">你还在手动拆分地址信息吗？</h2><p class="mb-4">很多人在填写地址时，都有过这样的体验：收到朋友发来的地址，或者从聊天记录里复制一段收货信息，然后打开购物App，对照着一点一点填。如果地址格式统一还好，就怕遇到“张三北京市朝阳区xx路18号3号楼502 13901012233”这种连空格都没有的，或者夹杂着座机号、公司名称的，手动拆分简直让人头大。</p><p class="mb-4">更麻烦的是，有些平台要求省市区必须分开选，详细地址单独填，邮编有时候也需要。手动操作不仅慢，还容易漏填或者填错区。这时候，一个智能的地址解析工具就能帮你省下不少时间。</p><h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">地址解析工具能帮你做什么？</h2><p class="mb-4">简单来说，你只需要把整段地址文字粘贴到一个输入框里，点击一下按钮，工具就会自动把里面的姓名、手机号、座机号、省市区、详细地址、邮编全部提取出来，并分门别类地填好。你只需要核对一下，就可以直接复制使用了。</p><p class="mb-4">比如上面那段“李四 13912345678 上海市浦东新区世纪大道100号 200120”，解析后你会得到：</p><ul class="list-disc pl-6 mb-4 space-y-1"><li>收货人：李四</li><li>手机号：13912345678</li><li>座机号：（如果没有就不显示）</li><li>邮编：200120</li><li>省：上海市</li><li>市：上海市</li><li>区：浦东新区</li><li>详细地址：世纪大道100号</li></ul><p class="mb-4">是不是很清晰？而且每个字段都单独显示，你可以直接复制某个字段，或者一键复制全部信息，贴到需要的地方。</p><h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">操作简单，复制粘贴即可</h2><p class="mb-4">使用这个工具没有任何门槛。打开页面后，你会看到一个大的输入框，把你想解析的地址文字粘贴进去，系统会自动开始解析，稍等一秒就会显示出结果。如果你粘贴的文字很长，包含了多余的信息也没关系，工具会尽量识别出关键部分。</p><p class="mb-4">如果识别出来的个别字段有偏差，你还可以手动修改输入框里的内容，修改后直接复制使用。比如有时候人名和地址连在一起，工具可能会把名字的一部分误认为地址，这时候你只需要手动调整一下就行。</p><p class="mb-4">整个页面分为左右两部分，左边输入，右边显示结果，一目了然。在手机上使用也很方便，页面会自动适配，输入框和结果框会上下排列，操作起来很顺手。</p><h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">常见问题解答</h2><div class="space-y-4"><div><h3 class="text-xl font-medium mb-1">Q：不同格式的地址都能识别吗？</h3><p>A：工具会智能匹配常见的地址模式，比如带空格、不带空格、姓名在前电话在后、电话在中间等等。大部分日常看到的收货地址都能准确解析。如果遇到特别奇怪的分隔方式，可能个别字段需要手动调整，但整体识别率很高。</p></div><div><h3 class="text-xl font-medium mb-1">Q：支持座机号吗？</h3><p>A：支持的。如果地址中包含类似“010-12345678”或“0755-88889999”这样的座机号码，工具也能把它单独提取出来，放在座机号字段里。</p></div><div><h3 class="text-xl font-medium mb-1">Q：邮编怎么提取的？</h3><p>A：工具会识别6位数字的邮政编码（通常紧跟在地址后面），并自动填到邮编字段。如果地址中没有提供邮编，这个字段就会留空。</p></div><div><h3 class="text-xl font-medium mb-1">Q：地址不完整怎么办？</h3><p>A：如果地址里缺少省市区，比如只写了“中关村大街1号”，工具会根据上下文尽量识别，但可能无法补全省市区。这时候你需要手动输入缺失的部分。当然，如果地址本身就不完整，任何工具都难以补全，建议还是找发件人核实一下。</p></div><div><h3 class="text-xl font-medium mb-1">Q：这个工具收费吗？</h3><p>A：完全免费，打开网页就能用，不需要安装任何软件，也不限制使用次数。</p></div></div><h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">智能解析让填单更省心</h2><p class="mb-4">无论你是经常网购的剁手党，还是需要处理大量订单的电商卖家、客服人员，或者只是偶尔帮家人朋友填个地址，这个智能地址解析工具都能帮你节省时间、减少错误。它把繁琐的手动拆分变成了轻松的一键操作，让你把精力放在更重要的事情上。</p><p class="mb-4">下次再收到一串乱七八糟的地址，别再傻傻地复制粘贴了，试试用智能解析工具，一秒搞定。记住，好的工具就是让你感觉不到它的存在，但它一直在帮你悄悄省力。</p><div class="border-t border-gray-200 mt-8 pt-6 text-sm text-gray-500 text-center">如果觉得有用，欢迎分享给身边需要的朋友。</div></div>';export{t as default};
+const t=`
+<div class="text-gray-800 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">还在为写评价发愁？这个好评生成器，让你告别词穷！</h1>
+
+  <!-- 首段 -->
+  <p class="mb-6 text-lg">
+    你是不是也这样？网购收到心仪的商品，或者吃到美味的外卖，心里明明很满意，可到了写评价的时候，手指悬在屏幕上半天，却只憋出一句“东西不错”或者“好吃”？想给商家一个走心的好评，却不知道从何说起。今天，就给大家介绍一个能帮你轻松解决这个烦恼的小工具。
+  </p>
+
+  <!-- 核心功能介绍部分 -->
+  <div class="bg-blue-50 p-6 rounded-xl mb-8">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">什么是好评生成器？</h2>
+    <p class="mb-4">
+      简单来说，它就像一个贴心的“评价小助手”。你只需要告诉它你要评价什么（比如一件衣服或一份披萨），选择你喜欢的说话风格，它就能在几秒钟内，为你生成好几条内容完整、听起来特别真实自然的好评。
+    </p>
+    <p>
+      无论是想表达对商品质量的认可，还是想夸夸外卖的配送速度，它都能帮你把那份满意，用更生动、更具体的话说出来。
+    </p>
+  </div>
+
+  <!-- 工具能做什么 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">它具体能帮你做什么？</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3 text-xl">🛍️</div>
+        <h3 class="text-xl font-medium">给网购商品写评价</h3>
+      </div>
+      <p class="text-gray-600">刚买的宝贝质量超好，物流也快，但你的评价却干巴巴的？切换到“通用商品”模式，选择“质量好”、“物流快”等亮点，它就能帮你生成热情或专业的评价，让你的好评不再单调。</p>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg p-5 shadow-sm">
+      <div class="flex items-center mb-3">
+        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mr-3 text-xl">🍱</div>
+        <h3 class="text-xl font-medium">给外卖美食写评价</h3>
+      </div>
+      <p class="text-gray-600">外卖味道棒极了，想鼓励一下商家？切换到“外卖美食”模式，聚焦“味道好”、“分量足”等特点。你可以生成简洁的“吃货”推荐，也可以写一段让老板看了开心的暖心评价。</p>
+    </div>
+  </div>
+
+  <!-- 核心价值 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">为什么你需要它？</h2>
+  <ul class="space-y-4 mb-10 pl-5">
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>省时省力：</strong>再也不用绞尽脑汁组织语言，几秒钟就能获得多条可选评价，复制粘贴即可。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>提供灵感：</strong>当你不知道除了“好”还能说什么时，它可以给你提供夸赞商品不同角度的思路。</span>
+    </li>
+    <li class="flex items-start">
+      <div class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">✓</div>
+      <span><strong>评价更生动：</strong>告别千篇一律的“好评”，生成带有个性风格和具体细节的评价，帮助其他买家更好地做参考。</span>
+    </li>
+  </ul>
+
+  <!-- 使用场景 -->
+  <h2 class="text-2xl font-semibold mb-4 mt-10">这些时候，你可能会想起它</h2>
+  <div class="bg-gray-50 p-6 rounded-xl mb-10">
+    <ul class="space-y-3">
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 收到满意的网购商品，想写个详细好评鼓励卖家时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 工作繁忙，只想快速完成评价任务时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 点到了特别好吃的外卖，想夸夸厨师和骑手时。</li>
+      <li class="flex"><div class="mr-2 text-gray-500">•</div> 觉得自己写的评价总是很“路人”，想提升一下“文采”时。</li>
+    </ul>
+  </div>
+
+  <!-- FAQ 部分 -->
+  <h2 class="text-2xl font-semibold mb-6 mt-14 pt-6 border-t">你可能想问的几个问题</h2>
+
+  <div class="space-y-6 mb-12">
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：生成的评价会重复吗？看起来假吗？</h3>
+      <p class="text-gray-600">答：工具内置了丰富的词库和多种表达方式，每次生成都会随机组合。只要你选择的风格和亮点符合真实感受，生成的内容就会非常自然，像是你自己写的。你可以一次生成多条，挑选最合心意的那一条。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：我需要下载什么软件吗？</h3>
+      <p class="text-gray-600">答：完全不需要。它是一个可以直接在网页浏览器里使用的小工具，打开就能用，没有任何复杂的安装步骤。</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-medium mb-2 text-gray-900">问：除了好评，它能写中评或差评吗？</h3>
+      <p class="text-gray-600">答：目前这个工具主要专注于帮助大家表达“满意”的心情，生成积极、正面的评价。毕竟，分享快乐和认可，也是一件很棒的事。</p>
+    </div>
+  </div>
+
+  <!-- 总结 -->
+  <div class="bg-gradient-to-r from-gray-50 to-blue-50 p-8 rounded-2xl text-center mt-12 mb-10">
+    <p class="text-xl font-medium mb-4">说到底，写评价不是为了应付任务。</p>
+    <p class="text-gray-700 mb-6">当你对一次购物或一份美食感到满意时，一句具体而真诚的好评，既能给商家带来鼓励，也能为其他像你一样的消费者提供有价值的参考。如果“词穷”暂时阻挡了你分享的冲动，那么这个好评生成器，或许能帮你轻松迈出第一步。</p>
+    <p class="text-gray-600 text-sm">试试看，让你心中的“五星好评”，找到更贴切的表达方式。</p>
+  </div>
+</div>
+`;export{t as default};

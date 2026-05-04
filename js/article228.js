@@ -1,105 +1,59 @@
-const s=`
-<article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
-  <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想给朋友送一份特别的祝福？试试这个烟花祝福生成器</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">节日到了、朋友生日了、新年到了，想送一份特别的祝福，但发个红包太俗，发段文字太平淡？今天给大家介绍一个有趣的小工具——烟花祝福生成器，让你送的祝福既炫酷又走心。</p>
-  </header>
+const l=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
+  <article>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">时间进度条：让时间流逝一目了然的可视化工具</h2>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">一、 什么是烟花祝福？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福，简单来说，就是把你想要说的话，配上绚丽的烟花动画效果，做成一个可以分享的祝福页面。朋友打开后，会看到夜空中绽放的烟花，还有你精心准备的祝福文字。</p>
-    <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-orange-500 my-5">
-      <p class="text-gray-700"><strong>想象一下：</strong>除夕夜，你给远方的父母发了一个链接。他们点开后，屏幕上绽放出绚烂的烟花，同时出现"爸妈新年快乐，身体健康"的字样。是不是比一条普通短信温暖多了？</p>
-    </div>
-    <p class="text-gray-700 leading-relaxed">这种祝福方式，既有仪式感，又显得用心。而且操作起来非常简单，不需要任何专业技能。</p>
-  </section>
+    <p class="text-lg mb-6">时间看不见摸不着，却无时无刻不在流逝。很多人常常感叹"时间都去哪了"，却很难对时间的消耗有一个直观的感受。时间进度条工具，正是为了解决这个问题而生——它将抽象的时间流逝转化为清晰的进度百分比，让你一眼就能看出今天过了多少、本周还剩多久、这个月已经消耗了几成、今年又走过了几分之几。</p>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">二、 适合哪些场景？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">烟花祝福几乎适用于所有需要表达祝福的场合：</p>
-    <ul class="space-y-3 my-5">
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">新年祝福：</strong>除夕、春节、元旦，送上烟花绽放的新年祝福，喜庆又热闹。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-pink-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">生日祝福：</strong>朋友、家人过生日，送一份烟花生日祝福，比蛋糕还甜。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">节日祝福：</strong>中秋节、国庆节、情人节、圣诞节，各种节日都能用。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-purple-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">表白求婚：</strong>想对喜欢的人说点什么？烟花配上真心话，成功率翻倍。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-3 h-3 rounded-full bg-blue-500 mt-1 mr-3 flex-shrink-0"></span>
-        <span><strong class="text-gray-900">毕业祝福：</strong>毕业季送别同学，烟花祝福留下美好回忆。</span>
-      </li>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">什么是时间进度条？</h2>
+    <p class="mb-4">时间进度条是一种将时间流逝可视化的在线工具。它通过计算当前时间在日、周、月、年等不同时间维度中的占比，以进度条的形式直观展示时间消耗情况。每一条进度条都精确到秒，实时更新，让你对时间的感知不再模糊。</p>
+    <p class="mb-6">与传统的时钟或日历不同，时间进度条关注的不是"现在是几点"，而是"时间已经过了多少"。这种视角的转换，能帮助你建立更强的时间意识，从而更合理地安排和利用时间。</p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">核心功能一览</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">今日进度：</span>实时展示当天已过时间的百分比，从0:00到24:00，精确到秒。让你清楚知道一天中还剩多少可用时间，合理安排当日计划。</li>
+      <li><span class="font-medium">本周进度：</span>以周一为起点、周日为终点，计算当前处于一周中的哪个位置。帮助你把握每周的工作节奏，避免周末才想起还有事情没做。</li>
+      <li><span class="font-medium">本月进度：</span>展示当月已过天数的占比，让你对月度目标的完成情况有一个时间维度的参照，及时调整节奏。</li>
+      <li><span class="font-medium">年度进度：</span>从1月1日到12月31日，直观呈现一年已经过去了多少。看到年度进度条飞速推进，往往能给人强烈的紧迫感，激励自己珍惜时间。</li>
+      <li><span class="font-medium">自定义时间：</span>支持设定任意起止日期，查看特定时间段内的进度。无论是项目周期、备考倒计时，还是等待某个重要日期，都可以自定义追踪。</li>
     </ul>
-    <p class="text-gray-700 leading-relaxed">总之，只要是想要表达祝福、传递心意的时刻，都可以用烟花祝福来增添一份仪式感。</p>
-  </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">三、 怎么制作烟花祝福？</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">制作过程非常简单，只需要几步：</p>
-    <div class="bg-orange-50 p-5 rounded-lg my-5">
-      <ol class="list-decimal pl-5 space-y-3 text-gray-700">
-        <li><strong>输入祝福文字：</strong>在文字框里写下你想说的话，可以是一句话，也可以是多行。比如"新年快乐""万事如意""心想事成"。</li>
-        <li><strong>选择模板：</strong>工具提供了一些现成的模板，比如新年祝福、生日祝福、表白祝福等，点击就能一键填充。</li>
-        <li><strong>调整效果（可选）：</strong>如果想更个性化，可以调整文字颜色、大小、烟花颜色和密度。</li>
-        <li><strong>点击开始：</strong>点击"开始放烟花"，就能看到效果了。</li>
-        <li><strong>分享给朋友：</strong>点击"分享"按钮，把链接发给朋友，他们打开就能看到你的祝福。</li>
-      </ol>
-    </div>
-    <p class="text-gray-700 leading-relaxed">整个过程不需要下载任何软件，不需要注册账号，打开网页就能用。</p>
-  </section>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">适用场景</h2>
+    <p class="mb-4">时间进度条的应用场景远比你想象的广泛：</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">工作效率追踪：</span>打开今日进度条，看着时间一分一秒地流逝，能有效减少摸鱼和拖延。当进度条已经走到70%而你还有大量工作未完成时，紧迫感会自然产生，推动你更专注地投入工作。</li>
+      <li><span class="font-medium">学习进度管理：</span>考研、考公、考证的备考周期往往长达数月。用年度进度条或自定义进度条来追踪备考进度，能让你对剩余复习时间有清晰认知，合理分配各科目的学习精力。</li>
+      <li><span class="font-medium">项目管理与规划：</span>项目经理可以创建自定义进度条来追踪项目周期，团队成员随时可以看到项目时间消耗情况，避免后期赶工。月度进度条也适合做月度复盘，对照时间消耗和任务完成度。</li>
+      <li><span class="font-medium">个人时间感知：</span>很多人对时间的感知是迟钝的，总觉得"还有时间"，结果一拖再拖。时间进度条用直观的视觉反馈打破这种错觉，让你真切感受到时间的有限性，从而更加珍惜每一天。</li>
+    </ul>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">四、 一些实用小技巧</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">想让你的烟花祝福更出彩？试试这些小技巧：</p>
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-blue-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">文字要简洁有力：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">祝福文字不要太长，3-5行最合适。太长了反而看不清。每行控制在10个字以内效果最好。</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded-lg">
-        <h3 class="font-semibold text-lg text-gray-900 mb-2">颜色搭配要协调：</h3>
-        <p class="text-gray-700 text-sm leading-relaxed">文字颜色建议用亮色，比如金色、白色、黄色，在黑色背景上更醒目。烟花可以选"随机"，效果更丰富。</p>
-      </div>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg my-5">
-      <p class="text-gray-700"><strong>温馨提示：</strong>分享链接后，朋友在手机上打开效果也很好。建议让他们在WiFi环境下打开，加载更流畅。如果想要更好的观看体验，可以点击"全屏"按钮。</p>
-    </div>
-  </section>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何使用时间进度条？</h2>
+    <p class="mb-4">操作非常简单，无需注册登录，打开即用：</p>
+    <ol class="list-decimal pl-6 mb-6 space-y-2">
+      <li>打开时间进度条工具页面，默认展示今日、本周、本月、年度四个维度的实时进度。</li>
+      <li>每条进度条都会显示已过百分比和剩余百分比，数据每秒自动更新。</li>
+      <li>如需查看特定时间段，切换到自定义模式，输入起止日期即可生成对应的进度条。</li>
+      <li>可以将页面保持打开状态，放在桌面一角，随时瞥一眼就能了解时间进度。</li>
+      <li>进度条支持动画效果，视觉体验流畅，让时间流逝的感知更加生动。</li>
+    </ol>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">五、 常见问题解答</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：朋友打开链接后看不到烟花怎么办？</p>
-        <p class="text-gray-700 text-sm">A：可能是网络问题或浏览器兼容问题。建议让朋友换个浏览器试试，或者检查网络连接。大多数情况下，微信自带浏览器、QQ浏览器、Safari、Chrome都能正常显示。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：可以保存成视频发给别人吗？</p>
-        <p class="text-gray-700 text-sm">A：目前这个工具主要是分享链接的形式。如果想保存成视频，可以用手机录屏功能，把播放过程录下来。</p>
-      </div>
-      <div class="bg-gray-50 p-4 rounded-lg">
-        <p class="font-medium text-gray-900 mb-2">Q：祝福链接会过期吗？</p>
-        <p class="text-gray-700 text-sm">A：链接长期有效，朋友随时打开都能看到。不过建议在合适的时机发送，比如除夕夜零点、生日当天早上，效果更好。</p>
-      </div>
-    </div>
-  </section>
+    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">时间管理小技巧</h2>
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><span class="font-medium">设定每日锚点：</span>在今日进度条到达25%、50%、75%时各设一个检查点，快速回顾已完成和待完成的事项，及时调整节奏。</li>
+      <li><span class="font-medium">周维度规划：</span>每周一查看本周进度条归零重新开始，借此机会做周计划，把重要任务安排在精力最充沛的工作日。</li>
+      <li><span class="font-medium">月度复盘：</span>每月最后一天，对照月度进度条100%的时刻，回顾这个月的目标完成情况，总结经验，为下个月做更好的规划。</li>
+      <li><span class="font-medium">年度目标拆解：</span>看到年度进度条走到某个节点时，检查年度目标的完成进度是否匹配。如果年度已过半但目标完成不到一半，就需要加快节奏或调整目标。</li>
+      <li><span class="font-medium">善用自定义进度：</span>为重要的截止日期创建自定义进度条，比如项目交付日、考试日期、出行日期等，让倒计时可视化，提前做好准备。</li>
+      <li><span class="font-medium">避免时间焦虑：</span>时间进度条的目的是增强时间意识，而非制造焦虑。如果进度条让你感到压力过大，可以适当减少查看频率，把关注点放在"我还能做什么"而非"时间又少了"。</li>
+    </ul>
 
-  <section class="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-4">写在最后：用心，是最好的祝福</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">在这个快节奏的时代，我们习惯了群发祝福、复制粘贴的问候。但真正打动人心的，永远是那些花了一点心思、带有一点创意的祝福。</p>
-    <p class="mb-6 text-gray-700 leading-relaxed">烟花祝福生成器，就是一个帮你把心意变成视觉惊喜的小工具。不需要什么技术，只需要几分钟，就能送出一份独一无二的祝福。</p>
-    <div class="text-center">
-      <p class="text-lg font-medium text-gray-900">下次想送祝福的时候，不妨试试这个工具，让烟花替你说出心里话。</p>
+    <div class="bg-blue-50 p-6 rounded-lg my-8">
+      <h3 class="text-xl font-semibold mb-3">温馨提示</h3>
+      <p class="mb-2">时间进度条是一个辅助工具，它能帮你看见时间的流逝，但真正决定时间价值的是你如何使用它。不要把进度条当成焦虑的来源，而应该把它当作提醒自己珍惜当下的朋友。</p>
+      <p>每个人的节奏不同，不必因为进度条走得快就慌张，也不必因为进度条走得慢就懈怠。找到适合自己的节奏，让每一秒都有意义，才是时间管理的真谛。</p>
     </div>
-  </section>
-</article>
-`;export{s as default};
+
+    <p class="text-lg mt-10 pt-6 border-t">无论你是想提高工作效率的学生、需要管理项目进度的职场人，还是单纯想对时间有更清晰感知的朋友，时间进度条都能给你一个直观的时间视角。打开工具，看着进度条缓缓推进，也许你会对"时间就是生命"这句话有更深的体会。珍惜当下，从看见时间开始。</p>
+  </article>
+</div>
+`;export{l as default};

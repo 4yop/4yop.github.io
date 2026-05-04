@@ -1,97 +1,130 @@
 const s=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800">
-  <article>
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">想拥有与众不同的网络名字吗？字符花样转换器帮你轻松实现</h1>
-    <p class="text-gray-600 mb-8 text-lg text-center">告别普通字体，教你如何将简单的数字和字母，变成一眼就能被记住的个性符号。</p>
+<div class="text-gray-700 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    人生时间计算器：你的人生，还剩下多少天？
+  </h1>
 
-    <div class="mb-10 p-6 bg-blue-50 border-l-4 border-blue-500">
-      <p class="mb-2">你是否也遇到过这些烦恼？</p>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>想注册一个酷炫的网名，但所有好名字都被人用过了？</li>
-        <li>社交媒体上的个人介绍平平无奇，很难吸引别人注意？</li>
-        <li>想在评论区留言时，让自己的发言看起来更特别一些？</li>
-      </ul>
-      <p class="mt-4">其实，不用苦恼。你只需要将普通的字母数字稍微“打扮”一下，就能立刻变得与众不同。今天，我们就来聊聊如何轻松玩转各种特殊字符。</p>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你是否常常感觉时间不够用？是否想过，如果生命是一张有期限的日历，你现在翻到了哪一页？今天，我们来聊聊一个能让你直观看见生命进度的工具。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="italic">
+      这不是算命，也不是制造焦虑。它只是帮你把抽象的生命长度，换算成具体的数字和进度条，让你能“看见”时间。
+    </p>
+  </div>
+
+  <!-- 第一部分：这是什么？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    一、 人生时间计算器是什么？
+  </h2>
+  <p class="mb-4">
+    简单来说，它就像一个为你生命定制的“进度条”。你只需要告诉它两个简单的信息：你的生日，以及你期望活到的岁数（可以参考国家公布的平均寿命，比如85岁）。
+  </p>
+  <p class="mb-6">
+    然后，它就会为你计算出一些非常直观的结果，比如：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>你已经来到这个世界<strong>多少天</strong>了。</li>
+    <li>你的生命进度条<strong>走到了百分之几</strong>。</li>
+    <li>在预期里，你大概还剩下<strong>多少年、多少个月、多少个周末</strong>。</li>
+  </ul>
+  <p class="mb-6">
+    这些数字本身没有好坏，关键在于你怎么看待和利用它们背后的提醒。
+  </p>
+
+  <!-- 第二部分：为什么需要它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    二、 为什么要看看自己的“人生进度”？
+  </h2>
+  <p class="mb-4">
+    我们每天都在看手机电量、看项目进度、看快递到哪儿了，却很少停下来看看自己最宝贵的资源——时间的存量。
+  </p>
+  <div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">1. 对抗“总觉得还有时间”的错觉</h3>
+      <p class="text-sm text-gray-600">日子一天天过，感觉好像永远过不完。但当“剩余2万个周末”这个数字摆在面前时，那种具体感会让人心头一震，促使你重新思考事情的优先级。</p>
     </div>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">什么是“字符花样”？</h2>
-      <p class="mb-4">简单来说，就是用一些看起来相似、但更特别的符号，来替换你原本想用的普通字符。</p>
-      <p class="mb-4">比如，你的生日是“1990”，但直接用它做网名后缀，可能显得有点普通。如果把它变成带圈的数字“①⑨⑨⓪”，是不是瞬间就有了设计感？再比如，你想写“LOVE”，如果变成“<span class="text-pink-600">❥love</span>”或“<span class="font-bold">𝐋𝐎𝐕𝐄</span>”，情感表达是不是更强烈了？</p>
-      <p>这些看起来有点“高级”的符号，其实并不神秘。它们本就存在于你的电脑和手机字体库中，只是大多数人不知道去哪里找、怎么用。而现在，有专门的在线工具可以帮你瞬间完成这种转换。</p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">常见的字符转换风格有哪些？</h2>
-      <p class="mb-4">了解这些风格，下次你想装饰文字时，就能轻松说出你想要的效果。</p>
-      <ul class="space-y-6">
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">1. 圆圈数字</h3>
-          <p class="text-gray-600">效果：① ② ③ … ⑩</p>
-          <p>这是非常受欢迎的一种风格，尤其适合点缀日期、序号或幸运数字。看起来既清晰又可爱，常用于游戏昵称或列表标记。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">2. 全角字符</h3>
-          <p class="text-gray-600">效果：ＡＢＣ １２３（每个字符更宽）</p>
-          <p>简单地将英文字母和数字“加胖”。虽然变化细微，但能让一行文字看起来更整齐、更醒目，非常适合用作标题或需要强调的短句。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">3. 上标与下标</h3>
-          <p class="text-gray-600">效果：¹²³ᴸᵒʳᵉᵐ 和 ₁₂₃₄₅</p>
-          <p>想表达“平方”“立方”（如m²）？或者想营造一种化学公式、数学注释般的专业感？这两种格式就能派上用场。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">4. 装饰前缀</h3>
-          <p class="text-gray-600">效果：★star ❥love</p>
-          <p>直接在文字前加上小符号来点明主题。一颗星星、一颗爱心，就能让一个普通的单词充满情绪和画面感。</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-gray-700 mb-1">5. 加粗与等宽字体</h3>
-          <p class="text-gray-600">效果：<span class="font-bold">𝐁𝐨𝐥𝐝</span> 与 <span style="font-family: monospace">𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎</span></p>
-          <p>纯粹的加粗能让文字更有力量感。而等宽字体则让每个字母宽度一致，常给人技术、复古或打字机般的独特格调。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">这些花样字符，可以用在哪里？</h2>
-      <p class="mb-4">知道了怎么做，更要了解怎么用。下面这些场景，你一定会碰到：</p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">社交网络名片</h4>
-          <p>微信、微博、抖音、小红书等平台的昵称和个性签名，是使用花样字符最多的地方。一个特别的昵称能让你更容易被记住和发现。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">评论区与弹幕</h4>
-          <p>在热门视频或文章下评论时，让你的留言在千篇一律的文字中“跳”出来，获得更多点赞和互动的机会。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">游戏角色名</h4>
-          <p>在网游或手游中，一个酷炫的角色名不仅能彰显个性，有时还能在虚拟世界里带来更高的“辨识度”。</p>
-        </div>
-        <div class="p-5 border border-gray-200 rounded-lg shadow-sm">
-          <h4 class="font-bold text-lg mb-2 text-blue-600">文件与笔记标题</h4>
-          <p>在整理电脑文件或写电子笔记时，用特殊符号来区分重要等级或分类，能让浏览效率大大提升。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-10 p-6 bg-gray-50 rounded-lg">
-      <h2 class="text-2xl font-bold mb-4">如何使用这些字符？</h2>
-      <p class="mb-4">过程其实非常简单，就像把大象放进冰箱一样，只需三步：</p>
-      <ol class="list-decimal pl-5 space-y-3">
-        <li><strong>输入</strong>：在工具里，写下你想转换的普通文字，比如你的名字“Lucy2024”。</li>
-        <li><strong>选择</strong>：从列表里挑一个你喜欢的风格，比如“圆圈数字”。</li>
-        <li><strong>复制</strong>：转换后的“Lucy②⓪②④”会立刻出现，点击“复制”按钮，就可以把它粘贴到任何你想用的地方了。</li>
-      </ol>
-      <p class="mt-4 text-gray-600">现在，很多在线工具都提供了这样的功能，操作直观，而且完全免费。你甚至可以自己定义一些独特的替换规则，创造出只属于你自己的字符风格。</p>
-    </section>
-
-    <div class="mt-12 p-6 border border-gray-300 text-center">
-      <p class="font-medium mb-2">总结一下：</p>
-      <p>想让自己的网络形象更突出，不一定需要复杂的图案或设计。有时，仅仅是将普通的字母数字换成几枚<span class="text-blue-600">带圈的数字</span>、一个<span class="font-bold">加粗的单词</span>，或者一颗<span class="text-pink-600">爱心前缀</span>，就足以产生令人眼前一亮的效果。</p>
-      <p class="mt-4">希望这篇文章能帮你打开思路。下次，当你想让你的文字“不一样”时，不妨试试这个有趣的“字符花样”转换方法吧。</p>
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">2. 庆祝已经拥有的时光</h3>
+      <p class="text-sm text-gray-600">工具不仅告诉你还剩多少，也清晰地展示你已经度过了多少丰富或平凡的日夜。每一个“已活天数”的增长，都值得被看见和肯定。</p>
     </div>
-  </article>
+  </div>
+
+  <!-- 第三部分：它具体能告诉你什么？（对应功能） -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    三、 它能为你算出的“人生账本”
+  </h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">1. 整体概览：你的生命时间线</h3>
+    <p class="mb-4">
+      输入信息后，你会立刻看到一个像温度计一样的“人生进度条”。蓝色（或绿色）的部分代表已度过的人生，空白部分代表未来。旁边清晰的百分比，让你对自己所处的阶段一目了然。
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 数字模式：把时间“拆开”看</h3>
+    <p class="mb-2">如果你喜欢具体的数据，可以切换到数字模式。这里会把你的剩余时间拆解成：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>剩余年/月数：</strong>帮你做中长期规划（比如，我想用5年掌握一门技能）。</li>
+      <li><strong>剩余周末数：</strong>这个数字往往最让人触动。它提醒你，能完全放松、陪伴家人或发展兴趣的完整两天，其实是有限的。</li>
+    </ul>
+    <p class="text-gray-600 text-sm">
+      （注：这些计算基于简单的平均换算，意在提供一种视角，并非精确预言。）
+    </p>
+  </div>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">3. 每日签到：与时间的温柔互动</h3>
+    <p class="mb-4">
+      工具附带一个简单的“每日签到”功能。每天花一秒钟点一下，记录“我今天在场”。它会随机送你一句关于时间的箴言，并默默记下你的打卡足迹。这像是一个小小的仪式，提醒自己珍惜又一个独一无二的日子。
+    </p>
+  </div>
+
+  <!-- 第四部分：如何使用它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    四、 如何使用这个工具？（简单三步）
+  </h2>
+  <ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li>
+      <strong>第一步：填写基本信息。</strong>打开工具页面，选择你的出生日期，并设定一个预期寿命（如果不确定，用默认的85岁就好）。
+    </li>
+    <li>
+      <strong>第二步：查看你的报告。</strong>信息填好后，页面会自动更新。你可以自由切换“励志模式”（看进度条和名言）和“数字模式”（看详细统计）。
+    </li>
+    <li>
+      <strong>第三步：尝试每日互动。</strong>如果觉得有启发，可以每天来签个到，看看今天的时间格言。你所有的签到记录可以导出保存。
+    </li>
+  </ol>
+  <p class="mb-6 bg-gray-50 p-4 rounded italic text-sm">
+    请放心，所有这些数据都只保存在你自己的手机或电脑浏览器里，没有网络传输，不用担心隐私问题。你也可以随时清空所有记录。
+  </p>
+
+  <!-- 第五部分：最后的提醒 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    写在最后：工具的意义，由你赋予
+  </h2>
+  <p class="mb-4">
+    这个计算器算出的，绝不是命运的定数。预期寿命只是一个参考值，随着医疗和生活方式进步，很多人都会远远超越它。
+  </p>
+  <p class="mb-4">
+    它的真正价值在于提供一种“视角”。就像站上一个小山坡回望来路、眺望前方，它能帮助我们：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>对过去的时光多一份感激和接纳。</li>
+    <li>对未来的日子多一份清醒和规划。</li>
+    <li>对正在流逝的“现在”，多一份觉察和珍视。</li>
+  </ul>
+  <div class="text-center py-6 px-4 border-t mt-8">
+    <p class="text-gray-800 font-medium mb-2">
+      时间对每个人都公平，但感知时间的方式，我们可以自己选择。
+    </p>
+    <p class="text-gray-600">
+      希望这个小小的“人生进度条”，能成为你珍惜当下、认真生活的一个友善提醒。
+    </p>
+  </div>
 </div>
 `;export{s as default};

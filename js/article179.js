@@ -1,223 +1,111 @@
-const e=`
-<div class="bg-white text-gray-800 font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8">
-    <!-- 文章标题 -->
-    <header class="mb-8 text-center">
-      <h1 class="text-3xl font-bold text-gray-900 mb-4">轻松搞定命名转换：驼峰与下划线的互转工具</h1>
-      <p class="text-lg text-gray-600">你是否遇到过名字格式不统一带来的小麻烦？一个简单工具帮你快速转换</p>
-    </header>
+const t=`
+<div class="prose prose-lg max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">藏在每个人童年里的石头剪刀布，原来这么有学问</h2>
 
-    <!-- 引言部分 -->
-    <section class="mb-10">
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-        <p class="text-gray-700 leading-relaxed">
-          想象一下，你在整理文件时，有些文件名是“个人照片”这样连写的，有些却是“个人_照片”这样分开的。这种不一致会不会让你觉得有点困扰？今天我们来聊聊如何轻松处理这种命名方式的小问题。
-        </p>
-      </div>
-    </section>
+  <p class="text-gray-700 text-lg leading-relaxed mb-8 text-center">
+    一个瞬间就能完成的简单手势，决定了多少孩子王和零食的归属。今天，我们来聊聊这个全世界通用的“公平裁决器”。
+  </p>
 
-    <!-- 什么是命名方式 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">两种常见的命名方式</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">连写方式（驼峰式）</h3>
-          <p class="text-gray-700 mb-3">就像骆驼的背一样有起伏，把多个单词连在一起写，每个单词的首字母大写。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → userName</li>
-              <li>• 我的文档 → myDocument</li>
-              <li>• 首页标题 → homePageTitle</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-medium text-gray-800 mb-3">分隔方式（下划线式）</h3>
-          <p class="text-gray-700 mb-3">用下划线把单词分开，就像给每个单词划出独立的小隔间。</p>
-          <div class="bg-white p-4 rounded border">
-            <p class="text-green-600 font-medium">例如：</p>
-            <ul class="mt-2 space-y-1 text-gray-700">
-              <li>• 用户名字 → user_name</li>
-              <li>• 我的文档 → my_document</li>
-              <li>• 首页标题 → home_page_title</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="text-gray-700 leading-relaxed">
-        这两种方式各有特点，但在不同场合可能需要统一成其中一种。比如有些系统只认其中一种格式，这时候就需要进行转换。
-      </p>
-    </section>
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-10 rounded-r">
+    <p class="text-gray-800 mb-2"><strong>本文要点：</strong></p>
+    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+      <li>石头剪刀布不仅仅是游戏，它是一种公平的决策工具。</li>
+      <li>了解它的规则和隐含的心理博弈。</li>
+      <li>通过大量模拟，观察游戏背后的概率与统计规律。</li>
+    </ul>
+  </div>
 
-    <!-- 为什么需要转换 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">什么时候需要转换命名方式？</h2>
-      
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">1</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">整理电子表格时</h3>
-            <p class="text-gray-700">从不同地方导出的数据，列标题的格式可能不一样，统一格式后更方便查看和筛选。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">2</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">统一文件命名时</h3>
-            <p class="text-gray-700">团队协作中，大家的命名习惯不同，统一格式能让文件管理更有序。</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start">
-          <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
-            <span class="font-medium">3</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium text-gray-800 mb-2">处理数据导入时</h3>
-            <p class="text-gray-700">有些系统对数据格式有要求，转换命名方式能让数据顺利导入。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">猜拳到底是什么？</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    闭上眼睛回想一下，你是不是也记得，小时候用猜拳决定谁先玩、谁吃最后一块糖？石头、剪刀、布，三个简单的手势，构成了一个奇妙的循环：石头能砸坏剪刀，剪刀能剪开布，布又能包住石头。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    它没有复杂的装备要求，不受场地限制，几乎在任何地方、任何两个人之间都能立刻开始。这大概就是它能从街头巷尾的儿童游戏，变成一种世界通用“语言”的原因吧。在很多需要快速、公平二选一的场合，人们依然会下意识地说：“来，猜拳决定！”
+  </p>
 
-    <!-- 工具介绍 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">一个简单好用的转换工具</h2>
-      
-      <div class="bg-gray-50 rounded-xl p-6 mb-6">
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          现在有一个在线工具，可以轻松在两种命名方式之间转换。你不需要懂任何技术知识，就像使用普通的文本处理工具一样简单。
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">双向转换</span>：可以从连写方式转到分隔方式，也可以反向转换。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">批量处理</span>：一次可以转换多行内容，提高效率。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">一键复制</span>：转换完成后，可以快速复制结果，直接使用。</p>
-          </div>
-          
-          <div class="flex items-start">
-            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-              <span class="text-white text-sm">✓</span>
-            </div>
-            <p class="text-gray-700"><span class="font-medium">完全免费</span>：在线使用，无需下载安装，打开网页就能用。</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 class="text-xl font-medium text-gray-800 mb-4">使用示例</h3>
-        
-        <div class="space-y-6">
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况一：连写转分隔</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：userName, myDocument, pageTitle</p>
-              <p class="text-green-600 font-medium">输出：user_name, my_document, page_title</p>
-            </div>
-          </div>
-          
-          <div>
-            <h4 class="font-medium text-gray-700 mb-2">情况二：分隔转连写</h4>
-            <div class="bg-gray-100 p-4 rounded">
-              <p class="text-gray-600 mb-1">输入：user_name, my_document, page_title</p>
-              <p class="text-green-600 font-medium">输出：userName, myDocument, pageTitle</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">我们为什么需要它？不只是为了玩</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    你可能觉得这只是一个幼稚的游戏。但仔细想想，它在我们生活中扮演的角色还挺重要。
+  </p>
+  <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-2">
+    <li><strong>化解小矛盾：</strong> 两个人都想先看同一本书，或者谁去关灯？猜拳一下，输赢都服气，避免了无谓的争执。</li>
+    <li><strong>增加互动趣味：</strong> 在聚会或者团队活动中，用猜拳分组或决定顺序，比直接点名有趣多了。</li>
+    <li><strong>快速决策工具：</strong> 当两个选择看起来差不多，纠结浪费时间时，把结果交给一次公平的猜拳，瞬间就能推动事情前进。</li>
+  </ul>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    它本质上是一种建立共识的仪式，用最简单的随机性，给结果披上了“公平”的外衣，让大家都愿意接受。
+  </p>
 
-    <!-- 使用场景扩展 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">更多实用场景</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-blue-600 text-xl font-medium">A</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">文档整理</h3>
-          <p class="text-gray-700">统一大量文档的文件名格式，让查找更便捷。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-green-600 text-xl font-medium">B</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">数据处理</h3>
-          <p class="text-gray-700">准备数据时，调整格式以符合不同系统的要求。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <span class="text-purple-600 text-xl font-medium">C</span>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800 mb-2">内容迁移</h3>
-          <p class="text-gray-700">将内容从旧系统转移到新系统时，统一命名格式。</p>
-        </div>
-      </div>
-    </section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">如果有个“猜拳实验室”会怎样？</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    想象一下，你可以随时找电脑猜拳，而且这个电脑伙伴还会像个认真的裁判一样，帮你把所有的胜负都记录下来。这听起来是不是挺有意思？
+  </p>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    在这样的“实验室”里，你可以做两件事：
+  </p>
 
-    <!-- 常见问题 -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b">你可能想知道</h2>
-      
-      <div class="space-y-6">
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">转换后会改变原意吗？</h3>
-          <p class="text-gray-700">不会。这只是改变单词的连接方式，就像把“北京上海”写成“北京_上海”一样，内容本身不变。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">支持中文转换吗？</h3>
-          <p class="text-gray-700">这个工具主要针对英文单词的转换。中文内容本身没有这种连接方式的问题。</p>
-        </div>
-        
-        <div class="border border-gray-200 rounded-lg p-5">
-          <h3 class="text-lg font-medium text-gray-800 mb-2">需要注册账号吗？</h3>
-          <p class="text-gray-700">完全不需要。打开网页就能使用，所有操作都在本地完成，保护你的隐私。</p>
-        </div>
-      </div>
-    </section>
+  <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">1. 手动对决：体验即时的胜负乐趣</h3>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    就像和朋友玩一样，凭直觉或小心思，从石头、剪刀、布里选一个点下去。电脑会立刻随机出一个手势来应对。胜负结果马上揭晓，伴随着清晰的提示，让你一目了然。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    每次出拳都是一次微小的心理冒险——“对方这次会出什么？我该克他上次出的，还是重复我赢了的？” 虽然对面是电脑，但思考的过程依然充满乐趣。
+  </p>
 
-    <!-- 结语 -->
-    <section class="mt-12 pt-8 border-t border-gray-200">
-      <div class="text-center">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4">让命名格式不再是小麻烦</h2>
-        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
-          无论是处理工作文件还是整理个人数据，一个统一的命名方式都能让事情变得更有序。驼峰与下划线的转换工具，就是帮你轻松跨过这个小障碍的帮手。
-        </p>
-        <p class="text-gray-600">
-          下次遇到命名格式不统一时，不妨试试这个简单工具，你会发现转换起来原来这么轻松。
-        </p>
-      </div>
-    </section>
-  </article>
+  <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">2. 自动对决：观察成千上万次的结果</h3>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    更有意思的是，你可以设置让电脑自己和自己玩，比如让它快速进行几百甚至上千次猜拳。你不需要一次次点击，只需看着数字飞快跳动。
+  </p>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    这个过程就像开启了一个上帝视角。当样本量足够大时，我们就能摆脱单次输赢的偶然性，去看看那些隐藏的规律。这满足了我们对“纯粹概率”的好奇心。
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">胜负之外，数字告诉我们的故事</h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    单纯的玩几次，输赢一笑而过。但如果把所有的对战都记录下来，你会发现一个关于你自己的“猜拳数据画像”。
+  </p>
+  <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-3">
+    <li><strong>你的胜率是多少？</strong> 是常胜将军，还是运气平平？一个清晰的百分比数字，比感觉要真实得多。</li>
+    <li><strong>你最爱出什么？</strong> 是觉得“石头”有力量感，还是觉得“布”能包容一切？统计图会直观地告诉你，你的下意识偏好是什么。也许你会发现，自己出“剪刀”的次数远低于其他两种。</li>
+    <li><strong>历史回放：</strong> 最近十次对战，你是怎么赢的，又是怎么输的？看看历史记录，说不定能总结出一点小经验。</li>
+  </ul>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    这些统计不是冰冷的数字，它们是你游戏旅程的足迹。通过它们，你甚至可以进行一些简单的“复盘”，虽然猜拳很大程度上是随机的，但观察自己的模式本身就是一种乐趣。
+  </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">关于猜拳，你可能还想知道这些</h2>
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">出哪个手势胜算更高？</h3>
+    <p class="text-gray-700">
+      在完全随机、公平的理想情况下，三个手势的赢面是一样的，都是三分之一。但现实中，因为人有心理偏好和惯性思维，所以研究显示，初学者出“石头”的概率略高，而男性比女性更倾向于先出“石头”。当然，如果你的对手是电脑随机出，那就纯粹是运气了。
+    </p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-6">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">有必胜的技巧吗？</h3>
+    <p class="text-gray-700">
+      严格来说，没有绝对必胜的技巧，因为它包含随机性。但有一些基于心理博弈的小策略，比如：<br>
+      • <strong>观察对手的习惯：</strong> 有人输了喜欢换手势，有人喜欢重复出拳。<br>
+      • <strong>利用“输家换招”心理：</strong> 很多人输了一局后，下一局会下意识地换成能克制对方上一局手势的选项。<br>
+      • <strong>保持不可预测：</strong> 最好的策略可能就是让自己都猜不到下次出什么，避免形成固定模式。
+    </p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg mb-10">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2">多轮决胜怎么玩？</h3>
+    <p class="text-gray-700">
+      我们常玩的是“一盘定胜负”。但正式比赛或需要更公平的场景，会采用“三局两胜”甚至“五局三胜”制。这样可以大大降低单次运气的决定性作用，让结果更倾向于实力或策略（虽然在这个游戏里，“实力”很微妙）。在多人游戏中，也常通过循环赛或淘汰赛来决定最终顺序。
+    </p>
+  </div>
+
+  <div class="border-t pt-8 mt-8">
+    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+      看，一个小小的猜拳游戏，背后也有这么多可以琢磨的地方。它连接着我们的童年记忆，也是成年人世界里最简单的公平法则。
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      下次当你需要做一个无关紧要的小决定时，不妨再试试这个古老的方法。或者，找个“猜拳模拟器”，和电脑来上一千局对决，在飞速跳动的数字里，感受一下纯粹的概率之美。这何尝不是一种放松呢？
+    </p>
+  </div>
 </div>
-`;export{e as default};
+`;export{t as default};

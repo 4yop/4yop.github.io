@@ -1,79 +1,70 @@
-const t=`
-<div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-gray-700">
-  <section class="mb-10">
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 leading-tight">一键整理凌乱文字中的联系方式</h1>
-    <p class="text-lg text-gray-600 mb-2">还在为从大段文字里找手机号、邮箱而头疼？这个小工具能帮你瞬间搞定。</p>
-    <p class="text-gray-500">无论是会议纪要、客户资料还是网页内容，它都能自动识别并整理出所有联系方式，让你的工作效率翻倍。</p>
-  </section>
+const l=`
+<div class="container mx-auto px-4 py-8 max-w-3xl font-sans text-gray-800">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">你是不是也听过这样的话？认识“职场PUA话术”与应对方法</h1>
+  <p class="text-center text-gray-600 mb-8">—— 一个帮你识别和理解的实用小工具</p>
 
-  <section class="mb-10 bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg">
-    <h2 class="text-xl font-semibold text-gray-800 mb-3">你是不是也遇到过这种情况？</h2>
-    <ul class="space-y-2 list-disc pl-5 text-gray-700">
-      <li>拿到一份长长的会议记录，里面混杂着好几个人的电话和邮箱，需要一个一个挑出来。</li>
-      <li>在网页上看到一篇有用的文章，里面提到了联系方式，但和正文混在一起，手动复制容易出错。</li>
-      <li>收集了多份文档里的客户信息，想把所有人的联系方式汇总到一个表格里，却要逐字逐句地翻找。</li>
-    </ul>
-    <p class="mt-4 text-gray-600">手动做这些事情，不仅费时费力，还容易看走眼，不小心就漏掉或者抄错了一个数字、一个字母。</p>
-  </section>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="mb-2"><strong>文章核心：</strong> 本文不讨论任何技术或代码，只为普通人介绍一种在职场或人际中可能遇到的语言现象，并提供一个能帮助你具体感受和练习应对的“话术生成器”工具。目的是增进理解与自我保护。</p>
+  </div>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">它是怎么帮到你的？</h2>
-    <p class="mb-6">简单来说，它就像一个智能的“文字筛子”。你只需要把包含联系方式的整段文字“倒”进去，它就会自动把手机号码、电子邮箱和网页链接这三样东西筛出来，分门别类地摆在你面前。</p>
+  <p class="mb-6">在职场上，或者在某种人际关系里，你有没有听到过一些让你感觉不舒服、压力很大，但又好像挑不出具体毛病的话？比如，对方总是强调“为你好”、“希望你成长”，但话里话外却让你不断怀疑自己、感到愧疚和必须加倍努力？</p>
+  <p class="mb-8">很多人把这类沟通方式，笼统地称为“PUA话术”。今天，我们就来聊聊它到底是什么，以及我们可以怎么看待和应对。</p>
 
-    <div class="space-y-8">
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">1</span>
-          它能找什么？
-        </h3>
-        <div class="grid sm:grid-cols-3 gap-4 text-center">
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-blue-600 font-bold text-lg mb-1">手机号码</div>
-            <div class="text-sm text-gray-500">国内主流的11位手机号，都会帮你识别出来。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-green-600 font-bold text-lg mb-1">电子邮箱</div>
-            <div class="text-sm text-gray-500">带有“@”符号的标准邮箱地址，一个都跑不掉。</div>
-          </div>
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-            <div class="text-amber-600 font-bold text-lg mb-1">网页链接</div>
-            <div class="text-sm text-gray-500">以 http、https 或 www 开头的网址链接。</div>
-          </div>
-        </div>
-      </div>
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">一、什么是“PUA话术”？它听起来什么样？</h2>
+  <p class="mb-4">首先，我们需要明确，这里说的“PUA话术”并不单指恋爱中的技巧，而是引申为一种通过特定语言模式，试图影响、控制对方情绪和行为的沟通方式。尤其在存在权力不对等的关系中（如上级对下级）更常见。</p>
+  <p class="mb-6">这类话术通常有几个特点：</p>
+  <ul class="list-disc pl-6 mb-8 space-y-2">
+    <li><strong>模糊的贬低与施压：</strong> 不直接批评事情本身，而是评价你的“状态”、“潜力”或“态度”。例如：“我对你是有些失望的”，“你的投入程度，和XX比是有些不足的”。</li>
+    <li><strong>“画饼”与抬高期待：</strong> 先给予一个高于你当前能力的肯定或位置，然后设定一个模糊但极高的目标。例如：“当初给你这个职位，是高于你当时水平的。我是希望你…能够快速成长的。”</li>
+    <li><strong>制造焦虑与紧迫感：</strong> 频繁使用“价值点”、“护城河”、“核心竞争力”、“差异化”等宏大词汇提问，让你觉得自己的日常工作毫无价值，必须立刻找到“不可替代性”。同时设定紧迫的“时间节点”。</li>
+    <li><strong>要求“思考”而非“执行”：</strong> 否定你具体的工作成果，转而要求你输出抽象的“思考”、“判断”、“方法论”，并形成报告，这常常让人无从下手，感到迷茫。</li>
+    <li><strong>树立“别人家孩子”的榜样：</strong> “你看XX，人家在彻夜加班/带病工作…” ，通过极端案例进行隐性施压。</li>
+    <li><strong>将痛苦与成长绑定：</strong> “成长一定是伴随着痛苦的”，这句话本身有一定道理，但被用来合理化所有不合理的要求和压力。</li>
+  </ul>
 
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-          <span class="inline-block w-6 h-6 bg-blue-100 text-blue-800 rounded-full text-center leading-6 mr-2">2</span>
-          操作有多简单？
-        </h3>
-        <ol class="space-y-4 list-decimal pl-5 text-gray-700">
-          <li><strong>粘贴文字</strong>：把你手头那段“乱糟糟”的文字，全部复制并粘贴到页面的输入框里。</li>
-          <li><strong>自动识别</strong>：就在你粘贴完成的一瞬间，右边的结果区域已经自动把手机、邮箱、链接分开列好了，还会告诉你各找到了多少个。</li>
-          <li><strong>怎么拿走？</strong>：你可以点击任何一个单独的号码或邮箱来复制；也可以点一下“复制全部”，把找出来的所有信息一次性打包复制走；或者，选择“导出”成一个文本文件保存到电脑里。</li>
-        </ol>
-        <p class="mt-4 p-4 bg-gray-100 rounded-lg text-gray-600 text-sm">整个过程，你只需要做“粘贴”和“点击”这两个动作，剩下的全部交给工具来完成。如果想换一段文字重新整理，点一下“清空全部”就恢复如初了。</p>
-      </div>
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">二、为什么我们需要了解这些话术？</h2>
+  <p class="mb-4">了解的目的不是为了学习如何去用，而是为了：</p>
+  <ol class="list-decimal pl-6 mb-8 space-y-2">
+    <li><strong>识别与清醒：</strong> 当对方说出某些话时，你能迅速反应过来：“哦，这可能是某种施加压力的套路”，而不是立刻陷入自我怀疑。识破套路，是摆脱其影响的第一步。</li>
+    <li><strong>保护自己的情绪：</strong> 明白这些话术的通用性和非针对性，有助于你把它从对你个人能力的否定中剥离出来，减少精神内耗。</li>
+    <li><strong>练习应对：</strong> 知道了常见的“出招”模式，你才能提前想好如何“接招”。是冷静澄清事实？是提出具体问题？还是明确自己的边界？</li>
+  </ol>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">三、用一个“话术生成器”来感受和拆解</h2>
+  <p class="mb-4">单纯讲道理可能有点抽象。为了方便大家更具体地感受这种话术的“组装”逻辑，网络上出现了一些有趣的<strong>“PUA话术生成器”</strong>。你可以把它理解为一个“造句模板”或“填空题”游戏。</p>
+  <p class="mb-4">它的用法很简单：</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li>你会看到一个预设好的话术段落，里面有很多空白处，比如“情绪评价”、“职位”、“核心竞争力”等。</li>
+    <li>你可以自己随意填写这些空白，比如把“情绪评价”填成“期待”，把“职位”填成“负责这个项目的机会”。</li>
+    <li>点击“生成”，一段符合那个套路逻辑的、完整的话就出来了。</li>
+    <li>通常生成器还会提供几个“预设场景”，比如“职场CPU”、“绩效面谈”等，一键填充典型词汇，让你立刻看到不同场景下的效果。</li>
+  </ul>
+  <p class="mb-8">通过自己动手“组装”一遍，你会惊奇地发现，原来这种让人倍感压力的话术，其骨架是如此相似和可复制。这个工具就像一个“照妖镜”，让套路变得清晰可见，从而削弱它的威力。</p>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">四、如果你遇到了，可以怎么办？</h2>
+  <p class="mb-6">识别之后，更重要的是应对。这里有一些平实的建议：</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="bg-green-50 p-5 rounded-lg border border-green-200">
+      <h3 class="font-bold text-lg mb-3 text-green-800">保持冷静，隔离情绪</h3>
+      <p class="text-gray-700">心里默念：“这是对方的沟通方式问题，不全是我的问题。” 把关注点从“我是不是很差”转移到“他到底想表达什么具体问题”上。</p>
     </div>
-  </section>
-
-  <section class="mb-10 p-6 bg-gray-100 rounded-xl border border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">为什么你会需要它？</h2>
-    <div class="space-y-4">
-      <p><strong>为了快</strong>：节省下大量手动查找和核对的时间，几分钟甚至几秒钟就能完成以前需要半小时的工作。</p>
-      <p><strong>为了准</strong>：机器识别比人眼更可靠，能有效避免因为疲劳或疏忽而导致的遗漏和错抄。</p>
-      <p><strong>为了整齐</strong>：把散落在文字各处的信息，规规矩矩地整理成清单，方便你后续的拨打、联系或归档。</p>
+    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
+      <h3 class="font-bold text-lg mb-3 text-yellow-800">追问具体，避免模糊</h3>
+      <p class="text-gray-700">针对模糊评价，礼貌地请求具体例子。“您说我‘投入不足’，能具体分享一下是哪个时间点或哪件事让您有这种感觉吗？我想针对性改进。”</p>
     </div>
-    <p class="mt-6 text-gray-600">这个工具完全在网页浏览器里运行，你无需下载任何软件，打开网页就能用。更重要的是，<strong>你粘贴进去的所有文字内容都只在你的电脑浏览器里处理</strong>，不会被上传到任何服务器，你可以放心整理那些包含敏感信息的文件。</p>
-  </section>
-
-  <section class="text-center py-8 border-t border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">总结一下</h2>
-    <p class="text-lg text-gray-700 mb-6">无论是处理工作文档、收集网络信息，还是整理个人资料，面对混杂在文字中的联系方式，你不再需要变成一个“人肉扫描仪”。</p>
-    <div class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-default">
-      让这个小工具成为你的效率助手
+    <div class="bg-red-50 p-5 rounded-lg border border-red-200">
+      <h3 class="font-bold text-lg mb-3 text-red-800">记录事实，保护自己</h3>
+      <p class="text-gray-700">对于重要的沟通，尤其是涉及承诺和评价的，事后简单用邮件或消息确认一下。“总结一下刚才您提到的三点要求：1… 2… 3…，我这样理解对吗？” 留下记录。</p>
     </div>
-    <p class="mt-6 text-gray-500 text-sm">简单、快速、免费，把繁琐的事情交给工具，把你的时间和精力留给更重要的事。</p>
-  </section>
+    <div class="bg-blue-50 p-5 rounded-lg border border-blue-200">
+      <h3 class="font-bold text-lg mb-3 text-blue-800">明确边界，量力而行</h3>
+      <p class="text-gray-700">“成长伴随痛苦”不等于“所有痛苦都值得承受”。判断工作要求是否合理，是否严重透支健康和生活。学会在无法承受时，清晰、理性地表达自己的困难。</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-10 mb-4 text-gray-900">写在最后</h2>
+  <p class="mb-4">无论是“PUA话术生成器”这个工具，还是这篇文章，我们的目的都不是为了挑起对立或学会攻击。恰恰相反，是为了<strong>增进理解、促进清醒、保护自我</strong>。</p>
+  <p class="mb-4">健康的沟通应该基于事实、尊重与清晰的目标。希望你在了解这些模式后，既能避免自己不自觉地使用它，也能在遇到时，有能力守护自己的心理边界，将沟通拉回到解决实际问题的轨道上来。</p>
+  <p class="pt-6 border-t text-gray-600">如果你对这类沟通现象感兴趣，不妨去找找那个“话术生成器”亲自体验一下，你会发现，拆解套路本身，就是一种很好的治愈和赋能。</p>
 </div>
-`;export{t as default};
+`;export{l as default};

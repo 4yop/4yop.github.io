@@ -1,120 +1,66 @@
-const t=`
-<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 py-8 md:px-6">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6">还在为找不到资料发愁？试试这个让搜索变简单的智能工具</h1>
+const s=`
+<div class="text-gray-800 max-w-4xl mx-auto px-4 md:px-6 py-8">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">时间查看器：帮你搞定所有时间问题的小助手</h1>
+  <p class="text-lg text-gray-600 mb-8 text-center">你是不是也遇到过，想知道现在精确的北京时间？或者需要把一串奇怪的数字转换成日期？别急，这个在线小工具能帮你轻松解决。</p>
 
-  <p class="text-lg text-gray-600 mb-8">
-    你是否经历过这些？想找一份专业报告，却搜出满屏无关网页；需要某个网站内的信息，却要翻遍全网；明明记得看过一篇好文章，再想找时却怎么也搜不到了。别担心，这些问题，一个简单的搜索工具就能帮你解决。
-  </p>
-
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 rounded-r">
-    <p class="text-gray-700">
-      <strong>简单来说：</strong> 这是一个集成了百度、谷歌、必应三大搜索引擎的“一站式”搜索入口，最大的亮点是它把许多资深人士才知道的“搜索秘籍”，变成了人人都能轻松点击使用的按钮。
-    </p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+    <p class="mb-2"><strong>它能帮你做什么？</strong></p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>一眼看清现在的精确到秒的北京时间</li>
+      <li>搞清楚“时间戳”到底是什么东西，并相互转换</li>
+      <li>查看纽约、伦敦、东京等世界各地现在是几点</li>
+      <li>获得不同格式的时间，方便你复制使用</li>
+    </ul>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">它到底能帮你做什么？</h2>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">一、为什么需要一个时间查看工具？</h2>
+  <p class="mb-4">我们每天的生活都离不开时间。早上设闹钟、和朋友约会议、记录重要文件的创建时间……虽然手机和电脑都能看时间，但当我们需要更精确、或者处理一些特殊格式的时间时，就有点手忙脚乱了。</p>
+  <p class="mb-4">比如，你收到的文件上可能写着“创建时间：1659876543”，这串数字是什么意思？或者你需要给国外的同事发一封邮件，得知道他们那边现在是上班时间还是深夜。这些时候，有一个专门的工具就会方便很多。</p>
 
-  <p class="mb-6">和普通搜索框不同，这个工具让你能“指哪打哪”，大幅提升找资料的效率和准确度。</p>
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">二、这个查看器有哪些好用的功能？</h2>
 
-  <div class="space-y-8">
-    <section>
-      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-        <span class="inline-block w-6 h-6 bg-blue-100 text-blue-700 rounded-full text-center leading-6 mr-2 text-sm">1</span>
-        一站切换，不用记网址
-      </h3>
-      <p class="pl-8">无论是查国内资讯用百度，还是找国际资料用谷歌、必应，在这里一键就能切换。你不用再费力记住不同搜索引擎的网址，更不用来回切换浏览器标签页。</p>
-    </section>
-
-    <section>
-      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-        <span class="inline-block w-6 h-6 bg-green-100 text-green-700 rounded-full text-center leading-6 mr-2 text-sm">2</span>
-        用“秘籍”精准锁定目标
-      </h3>
-      <p class="pl-8 mb-4">这是它的核心功能。那些复杂的搜索规则，现在你只需要点一下按钮就能用上。</p>
-      <ul class="pl-8 space-y-3">
-        <li class="flex items-start">
-          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">site:</span>
-          <div>
-            <p class="font-medium">锁定特定网站：</p>
-            <p class="text-gray-600 text-sm">比如，你只想在某个政府网站或大学官网上找政策文件或学术资料，用这个功能就能把搜索范围锁定在你信任的网站上。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">filetype:</span>
-          <div>
-            <p class="font-medium">专门找特定文件：</p>
-            <p class="text-gray-600 text-sm">想直接下载PDF格式的电子书、PPT课件或者Word文档？这个指令能帮你过滤掉网页，直接找到可下载的文件。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">“关键词”</span>
-          <div>
-            <p class="font-medium">搜索原话：</p>
-            <p class="text-gray-600 text-sm">当你需要搜索一句完整的话、一句名言或一个固定短语时，加上引号，搜索引擎就会原封不动地去找它。</p>
-          </div>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mr-3 font-mono whitespace-nowrap">-排除词</span>
-          <div>
-            <p class="font-medium">排除干扰信息：</p>
-            <p class="text-gray-600 text-sm">搜“苹果”不想看到手机，只想看水果？用一个减号就能排除掉你不想看到的关键词。</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-        <span class="inline-block w-6 h-6 bg-amber-100 text-amber-700 rounded-full text-center leading-6 mr-2 text-sm">3</span>
-        你的“搜索记忆”，随时找回
-      </h3>
-      <p class="pl-8">每次搜索都会自动保存下来，形成你的个人搜索历史。之前找过什么资料，用的是哪个搜索引擎，一目了然。想再次查看，点一下就能恢复搜索，不用再费力回忆。</p>
-    </section>
-
-    <section>
-      <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
-        <span class="inline-block w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-center leading-6 mr-2 text-sm">4</span>
-        不用记，点一下就用
-      </h3>
-      <p class="pl-8">所有的高级搜索指令都以快捷按钮的形式排列在搜索框下方。你不用记忆复杂的语法格式，需要哪种搜索方式，直接用鼠标点一下对应的按钮，它就会自动添加到搜索框里，你只需要补充自己的关键词就行。</p>
-    </section>
+  <div class="mb-8">
+    <h3 class="text-xl font-medium mb-3 text-blue-700">1. 实时显示北京时间</h3>
+    <p class="mb-3">打开页面，最显眼的地方就会用大号字显示当前的年月日、星期几和具体时分秒。它就像一块挂在墙上的精准电子钟，而且是网络同步的，不用担心走快或走慢。</p>
+    <p class="text-sm text-gray-500">小提示：如果你暂时不想让时间跳动，可以点一下“暂停”按钮，让它静止在某一刻方便你记录。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-12 mb-4 pb-2 border-b">这个工具适合谁用？</h2>
-
-  <div class="grid md:grid-cols-2 gap-6 my-8">
-    <div class="bg-gray-50 p-5 rounded-xl">
-      <h4 class="font-semibold text-lg mb-3">学生和研究者</h4>
-      <p class="text-gray-600">写论文时需要精准查找学术网站上的PDF文献、特定领域的研究资料，用“站点锁定”和“文件类型”搜索能省下大量筛选时间。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-xl">
-      <h4 class="font-semibold text-lg mb-3">办公族和资料收集者</h4>
-      <p class="text-gray-600">经常需要收集行业报告、市场数据、竞品信息？这个工具可以帮助你更高效地从指定来源（如官网、文库）获取所需文件，并管理好自己的搜索记录。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-xl">
-      <h4 class="font-semibold text-lg mb-3">对搜索质量有要求的普通人</h4>
-      <p class="text-gray-600">厌倦了在海量无效结果里“淘金”。想更快找到某个问题的确切答案、一张清晰的图片教程，或是一个靠谱的解决方案。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-xl">
-      <h4 class="font-semibold text-lg mb-3">需要多引擎对比的人</h4>
-      <p class="text-gray-600">想看看百度、谷歌对同一个问题的搜索结果有何不同？在这里切换比手动输入网址方便太多了。</p>
-    </div>
+  <div class="mb-8">
+    <h3 class="text-xl font-medium mb-3 text-blue-700">2. 理解“时间戳”</h3>
+    <p class="mb-3"><strong>时间戳是什么？</strong> 简单说，它就是计算机用来记录某个时刻的一串数字。通常有两种：一种是10位数的“秒数”，一种是13位数的“毫秒数”。在电脑系统、聊天记录、网页后台里经常出现。</p>
+    <p class="mb-3">这个工具直接把当前的时间戳显示出来，你可以一键复制。更重要的是，它提供了<strong>双向转换</strong>：</p>
+    <ul class="list-disc pl-5 space-y-2 mb-3">
+      <li><strong>数字变日期</strong>：把别人给你的时间戳（比如 1659876543）输进去，马上就知道它对应的是哪年哪月哪日几点。</li>
+      <li><strong>日期变数字</strong>：在日历上选一个具体的日期和时间，工具会立刻算出对应的时间戳是多少。</li>
+    </ul>
+    <p class="text-sm text-gray-500">这对于核对系统日志、处理技术文档或者仅仅是好奇那串数字的含义，都非常有用。</p>
   </div>
 
-  <div class="mt-12 p-6 border rounded-xl bg-gradient-to-r from-gray-50 to-white">
-    <h2 class="text-2xl font-semibold mb-4">如何使用它来提升效率？</h2>
-    <p class="mb-4">使用起来和普通搜索一样简单：</p>
-    <ol class="list-decimal pl-5 space-y-3">
-      <li><strong>选搜索引擎：</strong> 根据你要找的内容性质，点击上方的“百度”、“谷歌”或“必应”。</li>
-      <li><strong>输入或组合关键词：</strong> 在搜索框直接打字，或者先点击下方你需要的“秘籍”按钮（如<span class="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">site:</span>），再输入你的具体关键词。</li>
-      <li><strong>开始搜索：</strong> 按下回车或点击搜索按钮，结果会在新页面打开。</li>
-      <li><strong>查看与复用历史：</strong> 在左侧“搜索历史”里，你可以随时找回之前的任何一次搜索。</li>
-    </ol>
-    <p class="mt-6 text-gray-600">整个过程，你不需要学习任何复杂的知识，工具的右侧区域就像一个随时可查的说明书，对每个“搜索秘籍”都有通俗的解释和例子。</p>
+  <div class="mb-8">
+    <h3 class="text-xl font-medium mb-3 text-blue-700">3. 查看世界时间</h3>
+    <p class="mb-3">有亲友在国外？需要和海外团队协作？工具里有一个“世界时间”区域，里面列出了纽约、伦敦、巴黎、东京、悉尼等主要城市的当前时间。</p>
+    <p>这样你就能一目了然，现在给谁打电话是合适的，而谁可能正在睡梦中，避免尴尬的“午夜惊铃”。</p>
   </div>
 
-  <p class="mt-12 text-center text-gray-500 border-t pt-8">
-    搜索不是碰运气。用好工具，其实就是在给你的信息获取能力装上“导航仪”，让你在信息的海洋里，能更直接、更准确地驶向目的地。希望这个介绍，能帮你打开高效搜索的新思路。
-  </p>
-</article>
-`;export{t as default};
+  <div class="mb-8">
+    <h3 class="text-xl font-medium mb-3 text-blue-700">4. 获取各种时间格式</h3>
+    <p class="mb-3">有时候，不同场合需要不同写法的时间。比如正式文件要用“2023-10-01 08:00:00”，中文报告里可能写“2023年10月1日”，而国外习惯用“10/01/2023”。</p>
+    <p>这个工具帮你把常用的时间格式都准备好了，直接点一下就能复制使用，省去自己琢磨和打字的麻烦。</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">三、在手机和电脑上都能方便使用</h2>
+  <p class="mb-4">考虑到大家的使用习惯，这个工具在电脑大屏幕和手机小屏幕上都有舒适的布局。</p>
+  <ul class="list-disc pl-5 space-y-2 mb-6">
+    <li><strong>在电脑上</strong>：屏幕比较宽，所有信息可以并排展示，一眼全能看清。</li>
+    <li><strong>在手机上</strong>：为了让你看得更舒服，上方设计了简单的标签页，可以分别在“当前时间”、“转换器”和“世界时间”几个核心功能间切换，操作简单，字迹清晰。</li>
+  </ul>
+  <p class="text-sm text-gray-500">无论你是在办公室用电脑，还是在路上用手机，都能获得同样便捷的体验。</p>
+
+  <div class="bg-gray-50 p-6 rounded-lg mt-10 border">
+    <h2 class="text-xl font-semibold mb-3">总结一下</h2>
+    <p class="mb-3">这个时间查看器就像一个随时在线的“时间管家”。它把散落在各处的、关于时间的常见需求——看时间、对时区、解数字、换格式——都集合在了一起。</p>
+    <p>下次当你再对着一串时间戳数字发懵，或者不确定国外现在是几点时，不用再到处搜索或手动计算了。打开这个工具，很多问题都能迎刃而解。</p>
+    <p class="mt-4 text-gray-600">希望这个简单的小工具，能让你的生活和网络冲浪，多一分从容和方便。</p>
+  </div>
+</div>
+`;export{s as default};
