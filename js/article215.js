@@ -1,232 +1,130 @@
-const r=`
-<div class="text-gray-700 leading-relaxed max-w-4xl mx-auto px-4 sm:px-0">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 mt-8 text-center">农历阳历转换工具：轻松查询传统与现代日期</h1>
+const s=`
+<div class="text-gray-700 leading-relaxed">
+  <!-- 文章标题 -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+    人生时间计算器：你的人生，还剩下多少天？
+  </h1>
 
-  <div class="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
-    <p class="m-0 font-medium text-blue-900">你的农历生日是哪天？</p>
-    <p class="mt-2 mb-0">很多年轻人只记得自己的阳历生日，但长辈们更习惯用农历。农历阳历转换工具帮你轻松在这两种历法之间切换，无论是查询传统节日、安排生日庆祝，还是了解老黄历，都能快速搞定。</p>
+  <!-- 引言 -->
+  <p class="mb-6 text-lg">
+    你是否常常感觉时间不够用？是否想过，如果生命是一张有期限的日历，你现在翻到了哪一页？今天，我们来聊聊一个能让你直观看见生命进度的工具。
+  </p>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+    <p class="italic">
+      这不是算命，也不是制造焦虑。它只是帮你把抽象的生命长度，换算成具体的数字和进度条，让你能"看见"时间。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">为什么需要农历阳历转换？</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🎂 生日查询</h3>
-      <p class="text-sm text-gray-600">查询农历生日对应的阳历日期，或反之，不错过重要的生日庆祝。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">🧧 传统节日</h3>
-      <p class="text-sm text-gray-600">春节、中秋、端午等传统节日都按农历计算，需要转换才能确定阳历日期。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">📅 择日办事</h3>
-      <p class="text-sm text-gray-600">搬家、结婚、开业等传统习俗需要参考农历黄道吉日。</p>
-    </div>
-    <div class="p-4 border border-gray-200 rounded-lg">
-      <h3 class="font-medium text-gray-800 mb-2">👴 长辈沟通</h3>
-      <p class="text-sm text-gray-600">方便与习惯使用农历的长辈交流日期，避免误解。</p>
-    </div>
-  </div>
+  <!-- 第一部分：这是什么？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    一、 人生时间计算器是什么？
+  </h2>
+  <p class="mb-4">
+    简单来说，它就像一个为你生命定制的"进度条"。你只需要告诉它两个简单的信息：你的生日，以及你期望活到的岁数（可以参考国家公布的平均寿命，比如85岁）。
+  </p>
+  <p class="mb-6">
+    然后，它就会为你计算出一些非常直观的结果，比如：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>你已经来到这个世界<strong>多少天</strong>了。</li>
+    <li>你的生命进度条<strong>走到了百分之几</strong>。</li>
+    <li>在预期里，你大概还剩下<strong>多少年、多少个月、多少个周末</strong>。</li>
+  </ul>
+  <p class="mb-6">
+    这些数字本身没有好坏，关键在于你怎么看待和利用它们背后的提醒。
+  </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历与阳历的区别</h2>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">对比项</th>
-          <th class="border border-gray-300 p-3 text-left">阳历（公历）</th>
-          <th class="border border-gray-300 p-3 text-left">农历（阴历）</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">起源</td>
-          <td class="border border-gray-300 p-3">西方，基于太阳运行</td>
-          <td class="border border-gray-300 p-3">中国传统，基于月相变化</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">月份天数</td>
-          <td class="border border-gray-300 p-3">固定（28-31天）</td>
-          <td class="border border-gray-300 p-3">不固定（29或30天）</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">年份天数</td>
-          <td class="border border-gray-300 p-3">365或366天</td>
-          <td class="border border-gray-300 p-3">353-355天（平年）或383-385天（闰年）</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">新年日期</td>
-          <td class="border border-gray-300 p-3">固定1月1日</td>
-          <td class="border border-gray-300 p-3">不固定（1月下旬至2月中旬）</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">使用场景</td>
-          <td class="border border-gray-300 p-3">国际通用、官方事务</td>
-          <td class="border border-gray-300 p-3">传统节日、民俗活动</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">农历的奥秘：闰月与节气</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="p-5 bg-indigo-50 rounded-lg border border-indigo-100">
-      <h3 class="font-medium text-indigo-800 mb-2">什么是闰月？</h3>
-      <p class="text-indigo-700">农历采用"十九年七闰"的规则来协调太阳年和月亮月的关系。当某个月份没有中气（二十四节气中的偶数位节气）时，就设为闰月。闰月会导致该农历年有13个月，全年约384天。</p>
+  <!-- 第二部分：为什么需要它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    二、 为什么要看看自己的"人生进度"？
+  </h2>
+  <p class="mb-4">
+    我们每天都在看手机电量、看项目进度、看快递到哪儿了，却很少停下来看看自己最宝贵的资源——时间的存量。
+  </p>
+  <div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">1. 对抗"总觉得还有时间"的错觉</h3>
+      <p class="text-sm text-gray-600">日子一天天过，感觉好像永远过不完。但当"剩余2万个周末"这个数字摆在面前时，那种具体感会让人心头一震，促使你重新思考事情的优先级。</p>
     </div>
-    
-    <div class="p-5 bg-green-50 rounded-lg border border-green-100">
-      <h3 class="font-medium text-green-800 mb-2">二十四节气</h3>
-      <p class="text-green-700">农历融合了二十四节气，这是中国古代农耕文明的智慧结晶。节气按照太阳在黄道上的位置划分，指导农事活动。如立春、清明、夏至、冬至等。</p>
+    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+      <h3 class="font-medium text-gray-800 mb-2">2. 庆祝已经拥有的时光</h3>
+      <p class="text-sm text-gray-600">工具不仅告诉你还剩多少，也清晰地展示你已经度过了多少丰富或平凡的日夜。每一个"已活天数"的增长，都值得被看见和肯定。</p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">2024-2025年主要传统节日对照</h2>
-  
-  <div class="overflow-x-auto my-6">
-    <table class="w-full border-collapse border border-gray-300 text-sm">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border border-gray-300 p-3 text-left">节日</th>
-          <th class="border border-gray-300 p-3 text-left">农历日期</th>
-          <th class="border border-gray-300 p-3 text-left">2024年阳历</th>
-          <th class="border border-gray-300 p-3 text-left">2025年阳历</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">春节</td>
-          <td class="border border-gray-300 p-3">正月初一</td>
-          <td class="border border-gray-300 p-3">2月10日</td>
-          <td class="border border-gray-300 p-3">1月29日</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">元宵节</td>
-          <td class="border border-gray-300 p-3">正月十五</td>
-          <td class="border border-gray-300 p-3">2月24日</td>
-          <td class="border border-gray-300 p-3">2月12日</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">清明节</td>
-          <td class="border border-gray-300 p-3">（节气）</td>
-          <td class="border border-gray-300 p-3">4月4日</td>
-          <td class="border border-gray-300 p-3">4月4日</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">端午节</td>
-          <td class="border border-gray-300 p-3">五月初五</td>
-          <td class="border border-gray-300 p-3">6月10日</td>
-          <td class="border border-gray-300 p-3">5月31日</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">七夕节</td>
-          <td class="border border-gray-300 p-3">七月初七</td>
-          <td class="border border-gray-300 p-3">8月10日</td>
-          <td class="border border-gray-300 p-3">8月29日</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="border border-gray-300 p-3 font-medium">中秋节</td>
-          <td class="border border-gray-300 p-3">八月十五</td>
-          <td class="border border-gray-300 p-3">9月17日</td>
-          <td class="border border-gray-300 p-3">10月6日</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 p-3 font-medium">重阳节</td>
-          <td class="border border-gray-300 p-3">九月初九</td>
-          <td class="border border-gray-300 p-3">10月11日</td>
-          <td class="border border-gray-300 p-3">10月29日</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- 第三部分：它具体能告诉你什么？（对应功能） -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    三、 它能为你算出的"人生账本"
+  </h2>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">1. 整体概览：你的生命时间线</h3>
+    <p class="mb-4">
+      输入信息后，你会立刻看到一个像温度计一样的"人生进度条"。蓝色（或绿色）的部分代表已度过的人生，空白部分代表未来。旁边清晰的百分比，让你对自己所处的阶段一目了然。
+    </p>
   </div>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">生肖与干支纪年</h2>
-  
-  <p>农历使用干支纪年法，每60年一个周期。同时每年对应一个生肖，12年一轮回。</p>
-  
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
-    <div class="p-3 bg-red-50 rounded text-center">
-      <div class="text-2xl">🐭</div>
-      <div class="text-sm font-medium">鼠年</div>
-      <div class="text-xs text-gray-500">2020, 2032</div>
-    </div>
-    <div class="p-3 bg-yellow-50 rounded text-center">
-      <div class="text-2xl">🐮</div>
-      <div class="text-sm font-medium">牛年</div>
-      <div class="text-xs text-gray-500">2021, 2033</div>
-    </div>
-    <div class="p-3 bg-blue-50 rounded text-center">
-      <div class="text-2xl">🐯</div>
-      <div class="text-sm font-medium">虎年</div>
-      <div class="text-xs text-gray-500">2022, 2034</div>
-    </div>
-    <div class="p-3 bg-green-50 rounded text-center">
-      <div class="text-2xl">🐰</div>
-      <div class="text-sm font-medium">兔年</div>
-      <div class="text-xs text-gray-500">2023, 2035</div>
-    </div>
-    <div class="p-3 bg-red-50 rounded text-center">
-      <div class="text-2xl">🐲</div>
-      <div class="text-sm font-medium">龙年</div>
-      <div class="text-xs text-gray-500">2024, 2036</div>
-    </div>
-    <div class="p-3 bg-yellow-50 rounded text-center">
-      <div class="text-2xl">🐍</div>
-      <div class="text-sm font-medium">蛇年</div>
-      <div class="text-xs text-gray-500">2025, 2037</div>
-    </div>
-    <div class="p-3 bg-blue-50 rounded text-center">
-      <div class="text-2xl">🐴</div>
-      <div class="text-sm font-medium">马年</div>
-      <div class="text-xs text-gray-500">2026, 2038</div>
-    </div>
-    <div class="p-3 bg-green-50 rounded text-center">
-      <div class="text-2xl">🐑</div>
-      <div class="text-sm font-medium">羊年</div>
-      <div class="text-xs text-gray-500">2027, 2039</div>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">常见问题解答</h2>
-  
-  <div class="space-y-4 my-6">
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：农历和阴历是一回事吗？</p>
-      <p class="text-gray-600">答：日常生活中常混用，但严格来说有区别。农历是阴阳合历，既考虑月相（阴历成分），又通过闰月协调太阳年（阳历成分）。而纯阴历只考虑月相。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：为什么农历新年每年日期不同？</p>
-      <p class="text-gray-600">答：农历新年（春节）是农历正月初一。由于农历一年约354天，比阳历少11天左右，所以农历日期每年在阳历中会"漂移"约11天。为了协调，农历采用闰月，使春节保持在阳历1月下旬至2月中旬之间。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：农历生日每年阳历日期都不一样吗？</p>
-      <p class="text-gray-600">答：是的。农历生日对应的阳历日期每年都会变化，通常比上一年晚约11天（遇闰月则变化不同）。如果想知道某年农历生日是阳历哪天，需要使用农历阳历转换工具查询。</p>
-    </div>
-    
-    <div class="border border-gray-200 rounded-lg p-4">
-      <p class="font-medium mb-2">问：转换工具支持哪些年份范围？</p>
-      <p class="text-gray-600">答：大多数工具支持1900年至2100年左右的转换，覆盖日常需求。某些专业工具可能支持更宽的年份范围，甚至上溯到清朝时期。</p>
-    </div>
-  </div>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 border-l-4 border-blue-500 pl-3">连接传统与现代</h2>
-  <p>农历承载着中华民族数千年的文化积淀，是传统节日、民俗活动的时间坐标。在现代社会，农历阳历转换工具成为连接传统与现代的重要桥梁，让我们既能享受现代生活的便利，又不遗忘传统文化的根脉。</p>
-  
-  <div class="mt-6 p-5 bg-green-50 border border-green-100 rounded-lg">
-    <p class="font-medium text-green-900 mb-2">💡 使用建议：</p>
-    <ul class="text-green-800 space-y-1">
-      <li>• 提前查询传统节日的阳历日期，方便安排假期和活动</li>
-      <li>• 记录家人的农历生日，按传统方式庆祝</li>
-      <li>• 了解二十四节气，感受自然节律的变化</li>
-      <li>• 将转换工具加入收藏，随时查询</li>
-      <li>• 向外国朋友介绍中国农历文化时，用转换工具辅助说明</li>
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">2. 数字模式：把时间"拆开"看</h3>
+    <p class="mb-2">如果你喜欢具体的数据，可以切换到数字模式。这里会把你的剩余时间拆解成：</p>
+    <ul class="list-disc pl-5 mb-4 space-y-1">
+      <li><strong>剩余年/月数：</strong>帮你做中长期规划（比如，我想用5年掌握一门技能）。</li>
+      <li><strong>剩余周末数：</strong>这个数字往往最让人触动。它提醒你，能完全放松、陪伴家人或发展兴趣的完整两天，其实是有限的。</li>
     </ul>
+    <p class="text-gray-600 text-sm">
+      （注：这些计算基于简单的平均换算，意在提供一种视角，并非精确预言。）
+    </p>
   </div>
-  
-  <p class="mt-6 text-center text-gray-600">历法是人类丈量时间的标尺，农历与阳历各有其美。用好转换工具，让两种时间体系和谐共存。</p>
+
+  <div class="mb-8">
+    <h3 class="text-xl font-medium text-gray-800 mb-3">3. 每日签到：与时间的温柔互动</h3>
+    <p class="mb-4">
+      工具附带一个简单的"每日签到"功能。每天花一秒钟点一下，记录"我今天在场"。它会随机送你一句关于时间的箴言，并默默记下你的打卡足迹。这像是一个小小的仪式，提醒自己珍惜又一个独一无二的日子。
+    </p>
+  </div>
+
+  <!-- 第四部分：如何使用它？ -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    四、 如何使用这个工具？（简单三步）
+  </h2>
+  <ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li>
+      <strong>第一步：填写基本信息。</strong>打开工具页面，选择你的出生日期，并设定一个预期寿命（如果不确定，用默认的85岁就好）。
+    </li>
+    <li>
+      <strong>第二步：查看你的报告。</strong>信息填好后，页面会自动更新。你可以自由切换"励志模式"（看进度条和名言）和"数字模式"（看详细统计）。
+    </li>
+    <li>
+      <strong>第三步：尝试每日互动。</strong>如果觉得有启发，可以每天来签个到，看看今天的时间格言。你所有的签到记录可以导出保存。
+    </li>
+  </ol>
+  <p class="mb-6 bg-gray-50 p-4 rounded italic text-sm">
+    请放心，所有这些数据都只保存在你自己的手机或电脑浏览器里，没有网络传输，不用担心隐私问题。你也可以随时清空所有记录。
+  </p>
+
+  <!-- 第五部分：最后的提醒 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b">
+    写在最后：工具的意义，由你赋予
+  </h2>
+  <p class="mb-4">
+    这个计算器算出的，绝不是命运的定数。预期寿命只是一个参考值，随着医疗和生活方式进步，很多人都会远远超越它。
+  </p>
+  <p class="mb-4">
+    它的真正价值在于提供一种"视角"。就像站上一个小山坡回望来路、眺望前方，它能帮助我们：
+  </p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>对过去的时光多一份感激和接纳。</li>
+    <li>对未来的日子多一份清醒和规划。</li>
+    <li>对正在流逝的"现在"，多一份觉察和珍视。</li>
+  </ul>
+  <div class="text-center py-6 px-4 border-t mt-8">
+    <p class="text-gray-800 font-medium mb-2">
+      时间对每个人都公平，但感知时间的方式，我们可以自己选择。
+    </p>
+    <p class="text-gray-600">
+      希望这个小小的"人生进度条"，能成为你珍惜当下、认真生活的一个友善提醒。
+    </p>
+  </div>
 </div>
-`;export{r as default};
+`;export{s as default};

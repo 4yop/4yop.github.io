@@ -1,47 +1,71 @@
-const l=`
-<div class="text-gray-800 leading-relaxed">
-  <h1 class="text-3xl font-bold mb-6 pb-4 border-b border-gray-200 text-center md:text-left">行政区划级联查询，快速找到你需要的地址信息</h1>
+const s=`
+<article class="font-sans text-gray-800 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <header class="mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">在线体验转动地球：一个可以亲手探索的3D地球模型</h1>
+    <p class="text-lg text-gray-600">你是否曾想象过把地球捧在手中，慢慢转动，仔细看看每一片大陆和海洋？现在，不用想象，在网页上就能轻松实现。</p>
+  </header>
 
-  <p class="mb-6 text-lg">在生活中，我们经常会遇到需要填写详细地址的情况，比如寄快递、办理证件或者登记信息。你是不是也常常对着长长的地址列表感到困惑，不知道省、市、区、街道之间到底该怎么选？今天，就给大家介绍一个能帮你理清这些关系的小工具。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它到底是什么？</h2>
-  <p class="mb-4">简单来说，这是一个“行政区划查询助手”。它把咱们国家从省到街道的各级地址信息，像整理好的抽屉一样，一层一层地摆放清楚。</p>
-  <p class="mb-6">你只需要从第一个“省份/直辖市”的选项开始选择，选好了省，下一个“城市/区”的选项里就会自动出现这个省下属的所有城市，非常方便。就像一个智能的导航，带你一步步找到最具体的那个地点。</p>
-
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">怎么使用它？</h2>
-  <p class="mb-4">使用起来非常简单，只需要三步：</p>
-  <ol class="list-decimal pl-8 mb-6 space-y-3">
-    <li><strong>逐级选择</strong>：从“省份/直辖市”开始，依次选择市、区县、乡镇。每选完一级，下一级的列表才会自动更新出来。</li>
-    <li><strong>查看结果</strong>：在右侧，你会清晰地看到你选择的完整地址路径，例如“广东省 / 深圳市 / 南山区 / 粤海街道”。</li>
-    <li><strong>获取编号</strong>：每个行政区都有一个唯一的官方编号。如果你需要这个编号（比如在某些表格里会用到），直接点击它旁边的数字就可以一键复制，非常省事。</li>
-  </ol>
-
-  <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 my-8">
-    <h3 class="font-bold text-blue-800 mb-2">举个例子：</h3>
-    <p class="text-blue-700">假设你想找“北京市海淀区中关村街道”。你只需先选择“北京市”，然后在第二级选择“海淀区”，最后在第三级选择“中关村街道”。右侧会立刻显示出完整的层级和对应的编号。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+    <p class="text-blue-700"><strong>小提示：</strong> 如果你看到一个悬浮在黑色背景上、缓缓旋转的蓝色星球，试着用鼠标（电脑）或手指（手机）按住它并拖动，你会发现新大陆。</p>
   </div>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">这个小工具有什么特点？</h2>
-  <ul class="list-disc pl-8 mb-6 space-y-3">
-    <li><strong>清晰直观</strong>：界面干净，层级关系一目了然，不会让人眼花缭乱。</li>
-    <li><strong>快速筛选</strong>：每一级都可以直接输入关键字进行搜索，不用在长长的列表里慢慢找。</li>
-    <li><strong>离线也能用</strong>：所有地址数据都已提前准备好，页面加载后，即使网络不太稳定也可以正常查询。</li>
-    <li><strong>自动清空</strong>：如果你中途改变了主意，比如重新选择了省份，那么后面的市、区选项会自动清空，让你从头开始选，避免出错。</li>
-    <li><strong>一键重置</strong>：旁边有一个“重置查询”按钮，点一下，所有选择就都清空了，方便开始一次全新的查找。</li>
-    <li><strong>手机电脑都好用</strong>：无论在手机屏幕上，还是在电脑大屏上，界面都会自动调整，操作起来都很顺手。</li>
-  </ul>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">一个活过来的地球仪</h2>
+    <p class="mb-4">还记得小时候地理课上的地球仪吗？我们需要用手去转动它，才能看到地球另一面的国家。而这个在线的3D地球，就像是那个地球仪活了过来，变成了动态的、充满细节的数字版本。</p>
+    <p class="mb-4">它不是一个简单的图片。当你和它互动时，光影会随着你的操作而变化，山脉的起伏、海洋的深浅，都以一种更生动的方式呈现出来。这和我们平时看的平面地图感受完全不同。</p>
+  </section>
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b border-gray-100">它适合哪些场景？</h2>
-  <p class="mb-4">这个工具虽然简单，但在很多地方都能派上用场：</p>
-  <ul class="list-disc pl-8 mb-8 space-y-2">
-    <li>在线填写各类收货地址、注册信息时，快速确认标准的行政区划名称。</li>
-    <li>需要查找某个地区对应的官方行政编码时。</li>
-    <li>学习或了解中国行政区划的层级结构时。</li>
-    <li>工作中处理与地域相关的数据，需要核对标准地名时。</li>
-  </ul>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">你能用它做什么？</h2>
+    <ul class="list-disc pl-5 space-y-3">
+      <li><strong>自由探索地球全貌</strong>：没有边界，没有限制。你可以从任何角度观察我们的星球，看看各大洲是如何连接在一起的。</li>
+      <li><strong>感受地球的自转</strong>：即使你不去拖动它，它也会自己非常缓慢地旋转，模拟出地球在宇宙中运动的感觉。</li>
+      <li><strong>一个放松的“电子玩具”</strong>：有时候，只是看着这个美丽的蓝色星球慢慢转动，就能让人感到平静和治愈。随手转一转，也是一种简单的乐趣。</li>
+      <li><strong>辅助地理学习</strong>：对于学生或者对世界好奇的人来说，这是一个非常直观的工具。你可以更清楚地看到大陆的相对位置和形状。</li>
+    </ul>
+  </section>
 
-  <div class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-600">
-    <p>希望这个“行政区划查询助手”能让您在需要查找地址时，少一点麻烦，多一点便捷。下次再为地址发愁时，不妨试试它吧。</p>
-  </div>
-</div>
-`;export{l as default};
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">如何使用这个互动地球？</h2>
+    <p class="mb-4">使用起来非常简单，没有任何复杂步骤：</p>
+    <ol class="list-decimal pl-5 space-y-2 mb-4">
+      <li>打开页面，你会立刻看到一个正在旋转的地球。</li>
+      <li><strong>在电脑上</strong>：用鼠标左键按住地球的任意位置，向左、右、上、下拖动，地球就会跟着你的鼠标方向转动。</li>
+      <li><strong>在手机或平板上</strong>：直接用手指在屏幕上按住并滑动，效果是一样的。</li>
+      <li>松开鼠标或手指，地球会停下来，或者恢复缓慢的自动旋转。</li>
+    </ol>
+    <p>整个过程非常流畅，就像在操作一个真实的物体。页面上方通常会有简单的文字提示，告诉你“拖动地球旋转”。</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">它和普通地图有什么区别？</h2>
+    <div class="bg-gray-100 p-5 rounded-lg">
+      <p class="mb-3">我们习惯了看手机上的导航地图，那是为了寻找路线和地点。而这个3D互动地球的重点在于<strong>“观察”和“感知”</strong>。</p>
+      <p class="mb-3">它不强调具体的国界线或城市名，而是着重展现地球作为一个整体的形态、地貌和色彩。通过立体的形式和光影，它能帮助你建立对地球空间感的认知，这是平面地图很难做到的。</p>
+      <p>简单说，它不是用来“找路”的，而是用来“看球”的——看我们生活的这颗星球。</p>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">常见问题解答</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">需要下载软件吗？</h3>
+        <p class="text-gray-700">完全不需要。你只需要一个现代浏览器（比如Chrome、Edge、Safari），打开网页就能直接使用，非常方便。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">在手机上能用吗？</h3>
+        <p class="text-gray-700">可以的。这个地球模型专门做了适配，无论在电脑的大屏幕上，还是在手机的小屏幕上，都能正常显示和操作，体验同样出色。</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">为什么有时候转动起来感觉有点卡？</h3>
+        <p class="text-gray-700">这通常和你设备的性能或网络加载贴图资源有关。第一次加载时可能需要一点点时间，加载完成后就会非常流畅了。如果感觉卡顿，可以尝试稍等片刻再操作。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-8 border-t border-gray-200">
+    <p class="text-gray-600">下次当你想换个视角看看我们的世界时，不妨来找找这个可以转动的3D地球。它用一种简洁而美丽的方式提醒我们：人类共同的家园，是如此迷人。</p>
+  </footer>
+</article>
+`;export{s as default};

@@ -1,50 +1,84 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6">你的反应速度有多快？一分钟免费测测看</h2>
+const t=`
+<div class="max-w-4xl mx-auto px-4 py-8 text-gray-700">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+    还在用“生日”当密码？手把手教你打造“破门锤”也打不开的强力密码
+  </h1>
 
-    <p class="text-lg mb-6">你有没有好奇过，自己在关键时刻反应够不够快？开车时遇到突发状况，或者运动时需要瞬间判断，反应速度都起着关键作用。今天，我们就来聊聊这个有趣的话题，并提供一个简单的方法，让你立刻了解自己的反应时间。</p>
+  <div class="text-lg text-gray-600 mb-8">
+    <p>你的网络账号，是不是还在用“123456”、自己生日或者“qwerty”这种简单密码？今天我们就来聊聊，怎么轻松设置一个既安全又好记的密码，给你的数字生活上一把真正的“防盗锁”。</p>
+  </div>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">反应速度到底是什么？</h2>
-    <p class="mb-4">简单来说，反应速度就是你从看到或听到某个信号，到身体做出动作所需要的时间。比如，绿灯亮起后踩下油门，或者看到球飞来时挥动球拍，这中间短暂的延迟，就是你的反应时间。</p>
-    <p class="mb-6">这个时间通常以毫秒（千分之一秒）来计算。普通人的反应时间一般在200到300毫秒之间，经过训练的运动员或电竞选手可能会更快。了解自己的反应速度，不仅能满足好奇心，也能让你更了解自己的身体状态。</p>
+  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+    <p class="font-medium text-blue-800">你知道吗？</p>
+    <p class="mt-1">黑客破解一个6位纯数字密码，可能只需要几秒钟。而一个复杂的强密码，却能让他们望而却步。</p>
+  </div>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">哪些因素会影响反应速度？</h2>
-    <p class="mb-4">反应速度并不是一成不变的，它受到很多日常生活因素的影响：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">睡眠质量：</span>没睡好或者熬夜后，反应会明显变慢。</li>
-      <li><span class="font-medium">专注程度：</span>走神的时候，反应时间自然会延长。</li>
-      <li><span class="font-medium">情绪压力：</span>紧张或焦虑时，反应可能变得不稳定。</li>
-      <li><span class="font-medium">身体疲劳：</span>长时间工作或运动后，反应能力会下降。</li>
-      <li><span class="font-medium">年龄：</span>一般来说，年轻人的反应会略快于老年人，但个体差异很大。</li>
-    </ul>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">为什么你的旧密码不够安全？</h2>
+  <p class="mb-4">想象一下，你家的门锁如果是用透明塑料做的，小偷一眼就能看清里面的结构，那还安全吗？简单密码就像这“透明锁”。很多人习惯用：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li>自己的名字、生日、手机号。</li>
+    <li>“password”、“admin”这类通用词。</li>
+    <li>键盘上简单的字母序列，比如“asdfgh”。</li>
+  </ul>
+  <p class="mb-6">这些密码太容易被猜到，或者被黑客用“字典攻击”（一种用常见密码列表不断尝试的方法）轻松破解。</p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何简单测试你的反应速度？</h2>
-    <p class="mb-4">测试反应速度其实很简单，不需要复杂的仪器。其核心原理是：在你毫无准备的情况下给出一个视觉信号（比如颜色变化），然后记录下你从看到信号到做出指定动作（比如点击按钮）所花的时间。</p>
-    <p class="mb-6">通过这种测试，你可以得到一个具体的毫秒数。多测试几次，取一个平均水平，就能比较客观地反映你当下的反应状态。记住，测试时尽量保持放松和专注，结果会更准确。</p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">测出来的反应时间有什么用？</h2>
-    <p class="mb-4">首先，它给你一个有趣的参照。你可以和朋友或家人比一比，看看谁的反应更快，变成一个小游戏。</p>
-    <p class="mb-4">更重要的是，你可以把它当作一个简单的“状态监测仪”。如果某天测出来反应时间特别长，也许是在提醒你：是不是太累了？该休息了？或者最近注意力不太集中？</p>
-    <p class="mb-6">当然，这只是一个参考，不能作为医学判断依据。如果你长期感觉反应迟钝，并伴有其他不适，还是要咨询专业医生。</p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">怎样让反应变得更快？</h2>
-    <p class="mb-4">虽然先天条件有影响，但反应速度是可以通过一些方式锻炼和维持的：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">规律运动：</span>尤其是球类、乒乓球、羽毛球等需要快速反应的运动。</li>
-      <li><span class="font-medium">保证睡眠：</span>让大脑得到充分休息，是保持反应敏捷的基础。</li>
-      <li><span class="font-medium">适度游戏：</span>一些需要快速判断的动作类或益智类游戏，也是一种练习。</li>
-      <li><span class="font-medium">练习专注：</span>尝试冥想或在一段时间内专注于一件事，减少分心。</li>
-    </ul>
-    <p class="mb-6">最重要的是保持身心健康和良好的生活习惯。</p>
-
-    <div class="bg-blue-50 p-6 rounded-lg my-8">
-      <h3 class="text-xl font-semibold mb-3">小提示：正确看待测试结果</h3>
-      <p class="mb-2">反应速度的测试结果受当时环境、心情、设备甚至点击动作本身的影响，会有波动。一次的结果不代表你的永久水平。</p>
-      <p>别太纠结于具体数字，更重要的是关注自己状态的变化趋势，以及通过测试更了解自己的身体信号。把它当作一个认识自己的小工具，玩得开心就好。</p>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">一个好密码的“配方”是什么？</h2>
+  <p class="mb-4">一个真正强力的密码，就像一份独家秘方，需要混合多种“食材”：</p>
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">长度是基础</h3>
+      <p>密码越长，破解难度呈指数级增长。<strong>12位以上</strong>是个不错的起点，就像把锁的链条加长加粗。</p>
     </div>
+    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+      <h3 class="font-bold text-gray-800 mb-2">混合是关键</h3>
+      <p>把<strong>大写字母、小写字母、数字、特殊符号</strong>（如!@#$）混合使用，能让密码的复杂度大大提升。</p>
+    </div>
+  </div>
+  <p class="mb-6">避免使用有规律的单词或序列，比如“Abc123!@#”虽然混合了多种字符，但规律太明显，安全性也会打折。</p>
 
-    <p class="text-lg mt-10 pt-6 border-t">希望这篇文章能帮你解开关于反应速度的小疑惑。不妨现在就找个工具测一测，看看你的“瞬时反应”在什么水平吧！记得，健康的生活方式和愉悦的心情，才是保持思维敏捷的最好“补剂”。</p>
-  </article>
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">如何轻松获得一个高安全密码？</h2>
+  <p class="mb-4">自己编一个又长又复杂的密码很难记住，这时候，你可以借助一些在线工具——<strong>密码生成器</strong>。它能帮你：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>一键生成</strong>：根据你设定的长度和字符类型，瞬间产生一个随机、无规律的密码。</li>
+    <li><strong>强度分析</strong>：生成后，工具会告诉你这个密码大概有多“强壮”。</li>
+    <li><strong>批量制作</strong>：一次可以生成好几个，方便你在不同场合使用。</li>
+  </ul>
+  <div class="bg-gray-100 p-5 rounded-lg mb-8">
+    <h3 class="font-bold text-gray-800 mb-3">使用密码生成器的小建议：</h3>
+    <p>1. <strong>设定长度</strong>：建议从16位左右开始尝试。</p>
+    <p>2. <strong>勾选字符类型</strong>：尽量把“大写字母、小写字母、数字、符号”全选上。</p>
+    <p>3. <strong>检查强度</strong>：生成后，看看工具给出的强度评分是不是“强”。</p>
+    <p>4. <strong>妥善保存</strong>：生成的密码一定要保存在安全的地方，比如可靠的密码管理器，而不是写在电脑的记事本里。</p>
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4">有了强密码，就万无一失了吗？</h2>
+  <p class="mb-4">强密码是坚固的“锁芯”，但门框也得结实。你还需要：</p>
+  <ul class="list-disc pl-5 mb-6 space-y-2">
+    <li><strong>开启双重验证</strong>：这是最重要的防线。就像除了密码锁，再加一个指纹或短信验证。</li>
+    <li><strong>不同网站用不同密码</strong>：避免“一把钥匙开所有门”，防止一个网站密码泄露，连累所有账号。</li>
+    <li><strong>定期更换</strong>：尤其是重要账号（如邮箱、银行），建议每半年或一年更换一次密码。</li>
+  </ul>
+
+  <div class="mt-12 pt-8 border-t border-gray-200">
+    <h3 class="text-xl font-bold text-gray-800 mb-4">关于密码，你可能还想知道：</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium text-gray-800">问：密码太长太难记怎么办？</p>
+        <p class="text-gray-600 mt-1">答：可以使用“密码管理器”来帮你记忆和自动填写。你只需要记住一个主密码即可。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-800">问：用家人名字+生日做密码安全吗？</p>
+        <p class="text-gray-600 mt-1">答：不安全。这类个人信息在社交媒体上很容易被找到，是黑客首先尝试的组合。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-800">问：所有的密码都需要很强吗？</p>
+        <p class="text-gray-600 mt-1">答：可以分级处理。重要的核心账号（支付、邮箱）必须用最高强度的密码和双重验证。一些不重要的临时账号，可以使用稍简单但依然不重复的密码。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-300">
+    <p class="text-center font-medium text-gray-800">总结一下，守护你的数字资产，从一个真正的强密码开始。别再使用那些“透明锁”了，现在就动手，为你最重要的账号换上一把“破门锤”也打不开的“防盗锁”吧。</p>
+  </div>
 </div>
-`;export{l as default};
+`;export{t as default};

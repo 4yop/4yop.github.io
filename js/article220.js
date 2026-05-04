@@ -1,59 +1,95 @@
-const l=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800">
-  <article>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6">时间进度条：让时间流逝一目了然的可视化工具</h2>
+const a=`
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+  <!-- 主标题 -->
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+    秒表：不只是计时，更是你效率与专注的搭档
+  </h1>
 
-    <p class="text-lg mb-6">时间看不见摸不着，却无时无刻不在流逝。很多人常常感叹"时间都去哪了"，却很难对时间的消耗有一个直观的感受。时间进度条工具，正是为了解决这个问题而生——它将抽象的时间流逝转化为清晰的进度百分比，让你一眼就能看出今天过了多少、本周还剩多久、这个月已经消耗了几成、今年又走过了几分之几。</p>
+  <!-- 引言段 -->
+  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
+  </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">什么是时间进度条？</h2>
-    <p class="mb-4">时间进度条是一种将时间流逝可视化的在线工具。它通过计算当前时间在日、周、月、年等不同时间维度中的占比，以进度条的形式直观展示时间消耗情况。每一条进度条都精确到秒，实时更新，让你对时间的感知不再模糊。</p>
-    <p class="mb-6">与传统的时钟或日历不同，时间进度条关注的不是"现在是几点"，而是"时间已经过了多少"。这种视角的转换，能帮助你建立更强的时间意识，从而更合理地安排和利用时间。</p>
+  <!-- 第一小节 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    一个秒表，为什么需要更“聪明”？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
+  </p>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
+  </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">核心功能一览</h2>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">今日进度：</span>实时展示当天已过时间的百分比，从0:00到24:00，精确到秒。让你清楚知道一天中还剩多少可用时间，合理安排当日计划。</li>
-      <li><span class="font-medium">本周进度：</span>以周一为起点、周日为终点，计算当前处于一周中的哪个位置。帮助你把握每周的工作节奏，避免周末才想起还有事情没做。</li>
-      <li><span class="font-medium">本月进度：</span>展示当月已过天数的占比，让你对月度目标的完成情况有一个时间维度的参照，及时调整节奏。</li>
-      <li><span class="font-medium">年度进度：</span>从1月1日到12月31日，直观呈现一年已经过去了多少。看到年度进度条飞速推进，往往能给人强烈的紧迫感，激励自己珍惜时间。</li>
-      <li><span class="font-medium">自定义时间：</span>支持设定任意起止日期，查看特定时间段内的进度。无论是项目周期、备考倒计时，还是等待某个重要日期，都可以自定义追踪。</li>
-    </ul>
+  <!-- 第二小节 - 功能介绍 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    这个“时间伙伴”能为你做什么？
+  </h2>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
+  </p>
+  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
+    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
+    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
+    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
+  </ul>
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
+  </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">适用场景</h2>
-    <p class="mb-4">时间进度条的应用场景远比你想象的广泛：</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">工作效率追踪：</span>打开今日进度条，看着时间一分一秒地流逝，能有效减少摸鱼和拖延。当进度条已经走到70%而你还有大量工作未完成时，紧迫感会自然产生，推动你更专注地投入工作。</li>
-      <li><span class="font-medium">学习进度管理：</span>考研、考公、考证的备考周期往往长达数月。用年度进度条或自定义进度条来追踪备考进度，能让你对剩余复习时间有清晰认知，合理分配各科目的学习精力。</li>
-      <li><span class="font-medium">项目管理与规划：</span>项目经理可以创建自定义进度条来追踪项目周期，团队成员随时可以看到项目时间消耗情况，避免后期赶工。月度进度条也适合做月度复盘，对照时间消耗和任务完成度。</li>
-      <li><span class="font-medium">个人时间感知：</span>很多人对时间的感知是迟钝的，总觉得"还有时间"，结果一拖再拖。时间进度条用直观的视觉反馈打破这种错觉，让你真切感受到时间的有限性，从而更加珍惜每一天。</li>
-    </ul>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">如何使用时间进度条？</h2>
-    <p class="mb-4">操作非常简单，无需注册登录，打开即用：</p>
-    <ol class="list-decimal pl-6 mb-6 space-y-2">
-      <li>打开时间进度条工具页面，默认展示今日、本周、本月、年度四个维度的实时进度。</li>
-      <li>每条进度条都会显示已过百分比和剩余百分比，数据每秒自动更新。</li>
-      <li>如需查看特定时间段，切换到自定义模式，输入起止日期即可生成对应的进度条。</li>
-      <li>可以将页面保持打开状态，放在桌面一角，随时瞥一眼就能了解时间进度。</li>
-      <li>进度条支持动画效果，视觉体验流畅，让时间流逝的感知更加生动。</li>
-    </ol>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4 border-l-4 border-blue-500 pl-3">时间管理小技巧</h2>
-    <ul class="list-disc pl-6 mb-6 space-y-2">
-      <li><span class="font-medium">设定每日锚点：</span>在今日进度条到达25%、50%、75%时各设一个检查点，快速回顾已完成和待完成的事项，及时调整节奏。</li>
-      <li><span class="font-medium">周维度规划：</span>每周一查看本周进度条归零重新开始，借此机会做周计划，把重要任务安排在精力最充沛的工作日。</li>
-      <li><span class="font-medium">月度复盘：</span>每月最后一天，对照月度进度条100%的时刻，回顾这个月的目标完成情况，总结经验，为下个月做更好的规划。</li>
-      <li><span class="font-medium">年度目标拆解：</span>看到年度进度条走到某个节点时，检查年度目标的完成进度是否匹配。如果年度已过半但目标完成不到一半，就需要加快节奏或调整目标。</li>
-      <li><span class="font-medium">善用自定义进度：</span>为重要的截止日期创建自定义进度条，比如项目交付日、考试日期、出行日期等，让倒计时可视化，提前做好准备。</li>
-      <li><span class="font-medium">避免时间焦虑：</span>时间进度条的目的是增强时间意识，而非制造焦虑。如果进度条让你感到压力过大，可以适当减少查看频率，把关注点放在"我还能做什么"而非"时间又少了"。</li>
-    </ul>
-
-    <div class="bg-blue-50 p-6 rounded-lg my-8">
-      <h3 class="text-xl font-semibold mb-3">温馨提示</h3>
-      <p class="mb-2">时间进度条是一个辅助工具，它能帮你看见时间的流逝，但真正决定时间价值的是你如何使用它。不要把进度条当成焦虑的来源，而应该把它当作提醒自己珍惜当下的朋友。</p>
-      <p>每个人的节奏不同，不必因为进度条走得快就慌张，也不必因为进度条走得慢就懈怠。找到适合自己的节奏，让每一秒都有意义，才是时间管理的真谛。</p>
+  <!-- 第三小节 - 问答形式 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
+    你可能想知道的问题
+  </h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
+      </p>
     </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        它的用途超乎你的想象：
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
+        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
+        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
+        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
+        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        当然可以。假设你正在准备一顿周末大餐。
+      </p>
+      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
+        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
+        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
+        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
+        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
+      <p class="text-gray-700 leading-relaxed">
+        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
+      </p>
+    </div>
+  </div>
 
-    <p class="text-lg mt-10 pt-6 border-t">无论你是想提高工作效率的学生、需要管理项目进度的职场人，还是单纯想对时间有更清晰感知的朋友，时间进度条都能给你一个直观的时间视角。打开工具，看着进度条缓缓推进，也许你会对"时间就是生命"这句话有更深的体会。珍惜当下，从看见时间开始。</p>
-  </article>
+  <!-- 结尾引导 -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
+    让时间变得清晰可见
+  </h2>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
+  </p>
+  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
+    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
+  </p>
 </div>
-`;export{l as default};
+`;export{a as default};

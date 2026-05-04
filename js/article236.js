@@ -1,140 +1,116 @@
-const e=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <!-- 主标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
-    不用安装软件，你的浏览器就是视频录制器和相机
-  </h1>
-
-  <!-- 摘要/引言 -->
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-5 mb-8 rounded-r">
-    <p class="text-gray-700 leading-relaxed">
-      想用电脑或手机的摄像头录一段视频、拍张照片，还得专门下载软件吗？其实不用那么麻烦。现在，只要你的设备有摄像头，打开一个网页就能轻松搞定录制和拍照。这就像打开手电筒一样简单。
+const s=`
+<div class="text-gray-800 bg-white">
+  <article class="max-w-4xl mx-auto px-4 py-8 md:px-6">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">屏幕录制其实很简单：一文看懂怎么录屏和常用设置</h1>
+    
+    <p class="mb-6 text-lg leading-relaxed">
+      你有没有遇到过这样的情景？想保存一段重要的线上会议内容，或是给朋友演示软件怎么操作，又或者想记录下自己打游戏的精彩瞬间，却不知道该怎么把电脑屏幕上的画面录下来。
     </p>
-  </div>
-
-  <!-- 主要功能介绍部分 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
-      一个网页，多种用途
-    </h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-      这个在线的录制工具就像一个放在浏览器里的多功能工作室，它能调用你设备上的摄像头和麦克风，完成视频和照片的创作。
+    
+    <p class="mb-8 text-lg leading-relaxed">
+      别担心，屏幕录制这件事，远没有你想的那么复杂。今天我们就来聊聊，如何轻松地录制屏幕视频，以及那些听起来很专业的设置，到底该怎么选。
     </p>
 
-    <!-- 功能卡片 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-        <div class="flex items-center mb-3">
-          <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800">高清视频录制</h3>
-        </div>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          一键开始录制视频，还可以选择是否录入声音。录制时会有明显的红色提示，让你清楚地知道正在工作中。录好的视频会立即生成预览，方便查看。
-        </p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-        <div class="flex items-center mb-3">
-          <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-          </div>
-          <h3 class="text-lg font-medium text-gray-800">实时拍照</h3>
-        </div>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          除了录像，随时可以按下拍照按钮，捕捉当前画面。拍下的照片会单独保存在一个相册列表里，可以一键下载保存到自己的设备上。
-        </p>
-      </div>
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded-r">
+      <p class="text-gray-700">
+        本文不涉及任何复杂的技术术语，就像朋友聊天一样，告诉你录屏的常识和技巧。
+      </p>
     </div>
-  </div>
 
-  <!-- 特色与设置 -->
-  <div class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5 pb-2 border-b border-gray-200">
-      就像使用真正的相机一样灵活
-    </h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-      为了让体验更好，这个工具还提供了一些实用的调节选项，让你能根据自己的需要来设置。
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录屏能用来做什么？比你想象的更多</h2>
+    <p class="mb-4">
+      很多人觉得录屏是专业人士才用的功能，其实不然。它在我们的日常工作和生活中非常实用：
     </p>
-    <ul class="list-disc pl-5 space-y-3 text-gray-700">
-      <li class="leading-relaxed">
-        <span class="font-medium">切换摄像头：</span>如果你有多个摄像头（比如笔记本电脑的前置和后置摄像头），可以在这里自由切换。
-      </li>
-      <li class="leading-relaxed">
-        <span class="font-medium">调节清晰度：</span>可以选择不同的画面分辨率，从高清的720p到超清的4K，根据你的网络和设备能力来选择。
-      </li>
-      <li class="leading-relaxed">
-        <span class="font-medium">管理你的作品：</span>所有录制好的视频和拍摄的照片都会在页面下方列出。你可以播放、下载，或者删除不需要的内容。
-      </li>
+    <ul class="list-disc pl-5 mb-8 space-y-2">
+      <li><strong>工作学习：</strong>保存重要的培训会议、制作软件操作教程、记录网课重点内容。</li>
+      <li><strong>生活娱乐：</strong>录制游戏高光时刻、保存线上家人的视频聊天、记录直播中有趣的片段。</li>
+      <li><strong>沟通协助：</strong>当用语言说不清电脑问题时，直接录一段视频发给别人看，一目了然。</li>
     </ul>
-  </div>
 
-  <!-- 使用场景 -->
-  <div class="bg-gray-50 p-6 sm:p-8 rounded-xl mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-5">你会在什么情况下用到它？</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">临时需要录一段工作说明或作业讲解发给别人。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">想拍一张证件照或产品照片，但觉得手机App操作复杂。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">进行简单的直播测试，或者检查自己的摄像头和麦克风是否工作正常。</p>
-      </div>
-      <div class="flex items-start">
-        <div class="flex-shrink-0 mt-1">
-          <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-          </div>
-        </div>
-        <p class="ml-3 text-gray-700 leading-relaxed">为家人录制一段祝福视频，或者记录下孩子的某个瞬间。</p>
-      </div>
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">录制前，需要了解的几项简单设置</h2>
+    <p class="mb-6">
+      开始录制前，你可能会看到几个选项。别被它们吓到，我们一个一个说清楚。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">1. 清晰度（分辨率）：选适合的，不一定要最高的</h3>
+    <p class="mb-4">
+      就像电视有标清、高清一样，录屏也有清晰度选择。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>1080P：</strong>最清晰的选项，适合录制细节丰富的画面，比如设计软件操作、高清游戏。文件会比较大。</li>
+      <li><strong>720P：</strong>高清画质，适合大多数情况，比如录制会议、网页操作。清晰度和文件大小比较平衡，最常用。</li>
+      <li><strong>480P：</strong>普通画质，如果对清晰度要求不高，或者想快速分享一个小文件，可以选择它。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      简单来说，日常使用选720P就很好。如果录给手机看，480P也足够清晰。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">2. 画面比例：视频形状的长和宽</h3>
+    <p class="mb-4">
+      这个决定了你录出来的视频是“长方形”还是“正方形”。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>16:9：</strong>最常见的宽屏比例，和大多数电脑显示器、电视机、手机屏幕形状一样。录制通用视频就选它。</li>
+      <li><strong>4:3：</strong>稍微“方”一点的比例，一些老式显示屏或特定演示文稿会用到。</li>
+      <li><strong>1:1：</strong>正方形，适合录制一些用于社交媒体（如部分平台头像、短内容）的画面。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      不确定怎么选？直接选16:9，基本不会出错。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">3. 流畅度（帧率）：画面卡不卡的关键</h3>
+    <p class="mb-4">
+      帧率可以理解为1秒钟闪过多少张画面。数字越高，视频看起来就越流畅。
+    </p>
+    <ul class="list-disc pl-5 mb-6 space-y-2">
+      <li><strong>60 FPS：</strong>非常流畅，适合录制快速变化的画面，比如动作类游戏、体育赛事视频。</li>
+      <li><strong>30 FPS：</strong>标准流畅度，适合录制办公软件操作、网页浏览、大部分会议和课程。这是最通用的选择。</li>
+      <li><strong>15 FPS：</strong>基本流畅，如果只是录制一些几乎静止的画面（比如一张PPT停留很久），为了节省文件空间可以考虑。</li>
+    </ul>
+    <p class="mb-8 text-gray-600">
+      录制普通操作选30就够用。如果录游戏，可以试试60，观感会更好。
+    </p>
+
+    <h3 class="text-xl font-medium mt-6 mb-3 text-gray-800">4. 视频格式和一个小细节</h3>
+    <p class="mb-4">
+      <strong>视频格式：</strong>简单理解为视频的“包装盒”。常见的有MP4和WebM。MP4兼容性最好，几乎所有电脑和手机都能直接打开播放，建议优先选择。WebM在某些情况下文件更小。
+    </p>
+    <p class="mb-8">
+      <strong>显示光标：</strong>这个选项打勾后，录制时会把你鼠标指针（那个小箭头）也录进去。这在制作教学视频时非常有用，别人可以清楚看到你点了哪里。如果只是录制电影或游戏画面，可以关掉。
+    </p>
+
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">轻松三步，开始你的第一次录屏</h2>
+    <ol class="list-decimal pl-5 mb-8 space-y-4">
+      <li>
+        <strong>第一步：选好设置。</strong>根据上面介绍的，结合你的用途，选好清晰度、比例等。第一次可以用推荐的组合：720P、16:9、30帧、MP4格式、勾选显示光标。
+      </li>
+      <li>
+        <strong>第二步：开始录制。</strong>点击“开始录制”按钮。这时，你的电脑通常会让你选择“要录制整个屏幕，还是只录制某个软件窗口”。根据你的需要选择即可。
+      </li>
+      <li>
+        <strong>第三步：结束与保存。</strong>录制完成后，点击“停止录制”。视频会自动保存到录制记录列表里。你可以播放预览，也可以点击“下载”把视频文件保存到自己的电脑中。
+      </li>
+    </ol>
+
+    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-10">
+      <h3 class="text-xl font-medium mb-3 text-gray-900">几个实用小贴士</h3>
+      <ul class="space-y-2">
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录制前，关闭不必要的网页和软件通知，避免隐私信息或弹窗被录进去。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>如果需要录音（比如讲解），记得在开始录制时，同意浏览器使用麦克风的请求。</span></li>
+        <li class="flex items-start"><span class="inline-block h-2 w-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span> <span>录好的视频如果不需要了，记得在列表里“删除”，可以帮电脑节省空间。</span></li>
+      </ul>
     </div>
-  </div>
 
-  <!-- 常见问题/温馨提示 -->
-  <div class="border border-yellow-200 bg-yellow-50 rounded-xl p-6 mb-8">
-    <h3 class="text-lg font-semibold text-yellow-800 mb-3 flex items-center">
-      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-      温馨提示
-    </h3>
-    <ul class="space-y-2 text-yellow-700 text-sm">
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>第一次使用时，你的浏览器会弹出窗口，请求使用摄像头和麦克风的权限，请点击“允许”。这是为了你的隐私安全。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>所有的录制和拍照内容都只在你的浏览器本地处理，不会上传到任何服务器，可以放心使用。</span>
-      </li>
-      <li class="flex items-start">
-        <span class="mr-2">•</span>
-        <span>在使用前，请确保摄像头和麦克风没有被其他软件（如微信、Zoom）占用，以免无法正常启动。</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- 结语 -->
-  <div class="text-center pt-4 border-t border-gray-200">
-    <p class="text-gray-600 leading-relaxed">
-      技术的发展，让我们能用越来越简单的方式完成生活中的小事。以前需要复杂设备或专业软件才能做的事，现在一个网页就能轻松实现。无论是录制一段视频，还是拍摄一张照片，都可以变得更简单、更快捷。
+    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-4 text-gray-900 pb-2 border-b">总结</h2>
+    <p class="mb-4">
+      屏幕录制并不是一项专业技能，它只是一个方便我们保存和分享视觉信息的工具。
     </p>
-  </div>
+    <p class="mb-4">
+      记住核心要点：<strong>日常使用，720P、30帧、MP4格式就是黄金组合</strong>。其他设置可以根据特殊需求稍作调整。
+    </p>
+    <p class="mb-10 text-lg">
+      希望这篇文章能帮你打消对录屏的陌生感。下次再需要保存屏幕上的精彩内容时，不妨轻松地试一试吧。
+    </p>
+  </article>
 </div>
-`;export{e as default};
+`;export{s as default};
