@@ -1159,5 +1159,32 @@
     "features": "手机端免部署龙虾AI工具，网页端直接访问即开即用；全云端运行，无需本地部署环境；跨应用协同（电商下单、社交回复、办公协作）；自然语言指令全链执行，无需代码无需维护脚本；云端沙箱隔离+独立AI引擎双重安全防护；手机号验证30秒进入操作界面；不读取隐私文件、不泄露敏感信息",
     "website": "https://www.sohu.com/a/1017955743_122636163",
     "id": 169
+  },
+  {
+    "id": 170,
+    "name": "AgnesClaw",
+    "developer": "Agnes AI（腾讯云深度共创）",
+    "releaseTime": "2026.04",
+    "deployment": "云端部署，基于腾讯云Lighthouse轻量应用服务器，1美元/月起",
+    "features": "海外市场AI Agent应用，覆盖180多个国家，服务超800万全球用户；采用Agent实例轻量化架构，每只智能体独立绑定一台Lighthouse服务器；创新「1美元养龙虾」模式，极低成本零门槛部署；支持任务自动化、跨平台检索及复杂文件处理的多Agent协作；上线仅半月部署数量突破1000台",
+    "website": "https://new.qq.com/rain/a/20260424A07TP200"
+  },
+  {
+    "id": 171,
+    "name": "Accio Work",
+    "developer": "阿里国际（Alibaba International）",
+    "releaseTime": "2026.03.24",
+    "deployment": "桌面客户端，下载即用，无需部署，全球用户开放",
+    "features": "阿里国际站发布的首个企业级电商AI Agent；从AI采购引擎Accio升级为多Agent协作平台；内置电商专家、网店运营、一件代发货等39个专业技能；覆盖市场分析、选品设计、店铺装修、商品发布全流程；支持自主供应链谈判与多轮博弈；支持Claude、Gemini、GPT、Qwen3四大模型；可通过Telegram、微信、飞书远程操控；7×24小时自主运行",
+    "website": "https://wallstreetcn.com/articles/3768249"
+  },
+  {
+    "id": 172,
+    "name": "智枢AI座舱",
+    "developer": "光庭信息",
+    "releaseTime": "2026.05",
+    "deployment": "车载系统集成，基于UE5引擎深度适配，融合自研Kustom3D框架",
+    "features": "基于OpenClaw生态及AI大模型能力的智能座舱AI Agent解决方案；基于UE5引擎深度适配，融合自研Kustom3D框架；以场景理解为核心，打造全场景AI Agent方案；AI千人千面，实现功能按需动态生成；让座舱真正成为懂用户习惯、知用户喜好的「出行管家」；亮相2026北京车展",
+    "website": "https://k.sina.com.cn/article_7857141524_1d4527714019025kbo.html"
   }
 ]
