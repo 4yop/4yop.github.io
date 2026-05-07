@@ -3,7 +3,8 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Debian 更新中</title>
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{background:#a80030;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DejaVu Sans','Noto Sans',sans-serif;color:#fff;overflow:hidden}
-.deb-logo{width:60px;margin-bottom:32px}
+.deb-logo{width:64px;margin-bottom:32px}
+.deb-logo svg{display:block;width:100%;height:auto}
 .title{font-size:18px;margin-bottom:20px;font-weight:normal}
 .bar-wrap{width:300px;height:6px;background:#700020;border-radius:3px}
 .bar-inner{height:100%;width:0%;background:#ff6b8a;border-radius:3px;animation:prog 18s ease-in-out infinite}
@@ -12,7 +13,18 @@ body{background:#a80030;width:100vw;height:100vh;display:flex;flex-direction:col
 .lines{margin-top:10px;font-family:'DejaVu Sans Mono',monospace;font-size:11px;text-align:left;width:340px;line-height:1.5;height:110px;overflow:hidden;color:#ee8899}
 </style></head>
 <body>
-<svg class="deb-logo" viewBox="0 0 64 76" fill="#fff"><path d="M32 0L0 19v38l32 19 32-19V19L32 0zm0 8l24 14v28L32 64 8 36V22L32 8z"/><circle cx="32" cy="42" r="12"/></svg>
+<svg class="deb-logo" viewBox="0 0 96 106" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="debGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M48 4 L88 28 L88 76 L48 100 L8 76 L8 28 Z" fill="none" stroke="url(#debGrad)" stroke-width="5"/>
+  <path d="M48 16 L76 33 L76 73 L48 90 L20 73 L20 33 Z" fill="#fff" opacity="0.15"/>
+  <circle cx="48" cy="54" r="18" fill="url(#debGrad)"/>
+  <text x="48" y="61" text-anchor="middle" font-size="22" font-weight="bold" fill="#a80030" font-family="serif">debian</text>
+</svg>
 <div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
 <div class="sub"><span id="subLabel"></span> (<span id="pct">0</span>%)</div>
@@ -21,5 +33,5 @@ body{background:#a80030;width:100vw;height:100vh;display:flex;flex-direction:col
 document.getElementById('title').textContent=lang==='en'?'Configuring packages — Do not turn off':'正在配置软件包 — 请勿关闭';
 document.getElementById('subLabel').textContent=lang==='en'?'Installing':'正在安装';
 document.title=lang==='en'?'Debian Updating':'Debian 更新中';
-var n=0,pkgs=['libc6','coreutils','bash','dpkg','apt','perl','python3','gcc'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('lines');d.innerHTML+='<div>Unpacking '+pkgs[li%pkgs.length]+' ...</div>';li++;if(d.children.length>6)d.removeChild(d.firstChild)}},750)</script>
+var n=0,pkgs=['libc6','coreutils','bash','dpkg','apt','perl','python3','gcc'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.55){var d=document.getElementById('lines');d.innerHTML+='<div>'+(lang==='en'?'Unpacking ':'正在解压 ')+pkgs[li%pkgs.length]+' ...</div>';li++;if(d.children.length>6)d.removeChild(d.firstChild)}},750)</script>
 </body></html>

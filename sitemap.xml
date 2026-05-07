@@ -185,10 +185,6 @@
     <lastmod>2026-04-16</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/img/moments-generator/</loc>
-    <lastmod>2026-04-16</lastmod>
-  </url>
-  <url>
     <loc>https://tools321.com/office/</loc>
     <lastmod>2026-05-05</lastmod>
   </url>
@@ -511,6 +507,10 @@
   <url>
     <loc>https://tools321.com/time/clock/</loc>
     <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/time/cinema-hourglass/</loc>
+    <lastmod>2026-05-07</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/time/day-counter/</loc>
@@ -883,6 +883,10 @@
   <url>
     <loc>https://tools321.com/tools/fps-test/</loc>
     <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/tools/teleprompter/</loc>
+    <lastmod>2026-05-07</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/tools/time-waste-tracker/</loc>

@@ -1,95 +1,63 @@
-const a=`
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-  <!-- 主标题 -->
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-    秒表：不只是计时，更是你效率与专注的搭档
-  </h1>
+const s=`
+<div class="max-w-3xl mx-auto bg-white text-gray-800 p-5 md:p-8 font-sans leading-relaxed">
+  <h1 class="text-2xl md:text-3xl font-medium mb-4 text-gray-900">浮窗倒计时：精确到毫秒，抢购、纪念日再也不错过</h1>
 
-  <!-- 引言段 -->
-  <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-    你是不是经常需要给事情计时？无论是厨房里盯着煮鸡蛋，还是运动时记录每组动作的间隔，又或者是想看看自己专注工作到底能持续多久。你可能已经习惯掏出手机，用自带的时钟应用。但今天，我想给你介绍一个更聪明、更专一的“时间伙伴”——一个功能强大的在线秒表。
-  </p>
+  <p class="mb-5 text-base md:text-lg">生活中总有一些时刻需要精准把握：限量球鞋开售、偶像演唱会抢票、考试倒计时、恋爱纪念日……普通的计时器要么精度不够，要么一刷手机就看不到了。如果你也需要一款能"浮"在其他应用上的高精度倒计时，这个工具或许能帮上忙——它精确到毫秒级别。</p>
 
-  <!-- 第一小节 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    一个秒表，为什么需要更“聪明”？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    普通的计时器，大多只能做到“开始”和“停止”。但生活中很多计时场景是连续的、分阶段的。比如一场面试，自我介绍用了多久，问答环节又花了多少时间？普通的计时方式，要么你得准备多个计时器，要么就得在心里默记或者匆忙拿笔记录，既容易出错，也打断了当下的专注。
-  </p>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    这正是“分段计时”功能大显身手的时候。它就像给你的时间流贴上标签，让你能在不打断整体进程的情况下，清晰看到每一个环节的消耗。
-  </p>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">毫秒级精度倒计时的特别之处</h2>
+  <p class="mb-4">简单说，它能把倒计时画面变成一个可以悬浮的小视频窗口，而且显示的是毫秒级精度的剩余时间。哪怕你正在刷微博、回微信、看文章，倒计时也会一直显示在屏幕角落，时间一目了然。每一毫秒都在跳动，特别适合需要卡点的场景，比如抢购秒杀、限时活动等。</p>
+  <p class="mb-4">这个功能在手机上尤其实用——iPhone用户用Safari浏览器打开，点击视频的"画中画"按钮，倒计时就能缩小拖到任意位置；安卓手机如果浏览器支持画中画，也能实现同样的效果。电脑上同样可以，把浏览器窗口放在一边，倒计时浮窗永远可见。</p>
 
-  <!-- 第二小节 - 功能介绍 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    这个“时间伙伴”能为你做什么？
-  </h2>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    想象一下，你眼前有一个设计简洁的大屏幕，上面跳动着精准到百分之一秒的时间。它的操作按钮一目了然：
-  </p>
-  <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2 leading-relaxed">
-    <li><span class="font-medium text-blue-600">开始/继续/暂停</span>：和所有计时器一样，掌控时间的流逝与暂停。</li>
-    <li><span class="font-medium text-green-600">分段</span>：这是它的核心魔法。正在进行中，随时点一下，它就会把此刻的时间点记录下来，生成一个“时间段快照”，同时计时毫不中断地继续走下去。</li>
-    <li><span class="font-medium text-gray-600">重置</span>：一切归零，准备下一次的计时任务。</li>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">这款毫秒级倒计时工具的几个亮点</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">精确到毫秒：</span>倒计时实时更新，显示格式为"秒.毫秒"（例如：125.892），最后几秒甚至能看到毫秒级别的跳动，帮你做到真正的精准卡点。</li>
+    <li><span class="font-medium">高频刷新：</span>每16毫秒刷新一次（约60fps），画面流畅不卡顿，数字变化丝滑自然。</li>
+    <li><span class="font-medium">浮窗显示：</span>利用浏览器的视频画中画功能，倒计时画面可自由缩放、随意拖放，不影响其他操作。</li>
+    <li><span class="font-medium">自动记忆：</span>设置一次目标时间，下次打开页面会自动加载，不用重复输入，省事。</li>
+    <li><span class="font-medium">双平台通用：</span>手机电脑都能用，iOS的Safari体验最流畅，安卓部分浏览器也支持。</li>
+    <li><span class="font-medium">界面极简：</span>可自定义背景色和字体颜色，目标时间显示在上方，巨大毫秒数在中间，一眼就能看清。</li>
   </ul>
-  <p class="text-gray-700 mb-4 leading-relaxed">
-    更贴心的是，所有被你记录下的“分段”时间，都会整齐地列在下方。它甚至会自动帮你分析，标出<span class="font-medium text-green-600">最快</span>和<span class="font-medium text-red-600">最慢</span>的那一段，让你一眼就能看出节奏的变化。
-  </p>
 
-  <!-- 第三小节 - 问答形式 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4 pb-2 border-b border-gray-200">
-    你可能想知道的问题
-  </h2>
-  <div class="space-y-6">
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">用它来记时间，到底有什么好处？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        最大的好处是“释放你的大脑”。你不需要再分心去记忆“第一个任务结束时是几分几秒”，所有数据都被自动、准确地保存下来。事后回顾，你能清晰地看到时间是如何被分配的，更容易发现自己的“时间黑洞”或者高效率时段。
-      </p>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">它适合哪些人、哪些场景用？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        它的用途超乎你的想象：
-      </p>
-      <ul class="list-disc pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li><span class="font-medium">学生与备考者</span>：模拟考试时，记录每道大题的实际用时，优化答题节奏。</li>
-        <li><span class="font-medium">运动健身爱好者</span>：记录每组运动的耗时和组间休息时间，让训练更科学。</li>
-        <li><span class="font-medium">上班族与自由职业者</span>：用“番茄工作法”时，精准记录每个“番茄钟”和短休息的长度。</li>
-        <li><span class="font-medium">演讲者与主持人</span>：排练时把控每个环节的时间，确保活动流程顺畅。</li>
-        <li><span class="font-medium">厨房新手</span>：烹饪复杂菜肴时，给不同的腌制、烘焙步骤计时，再也不怕手忙脚乱。</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">“分段计时”具体怎么用？能举个例子吗？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        当然可以。假设你正在准备一顿周末大餐。
-      </p>
-      <ol class="list-decimal pl-6 text-gray-700 mt-2 space-y-1 leading-relaxed">
-        <li>点击<span class="font-medium">开始</span>，整个烹饪计时启动。</li>
-        <li>当你把蛋糕放进烤箱时，点击一下<span class="font-medium">分段</span>，列表里就会出现“准备阶段”的时间（比如 15分30秒）。</li>
-        <li>计时不停，蛋糕在烤，你可以去处理沙拉。沙拉做完时，再点一下<span class="font-medium">分段</span>，列表新增“烘焙与制作沙拉”的时间（比如 25分05秒）。</li>
-        <li>最后所有菜上桌，点击<span class="font-medium">暂停</span>。这时你就能看到：准备蛋糕胚用了多久，烤蛋糕+做沙拉用了多久，总共耗时又是多少。下次再做，你就能更好地规划时间了。</li>
-      </ol>
-    </div>
-    <div>
-      <h3 class="text-xl font-medium text-gray-800 mb-2">我的计时数据安全吗？会保存在哪里？</h3>
-      <p class="text-gray-700 leading-relaxed">
-        请放心。所有的计时和分段数据都只保存在你当前浏览器的页面中，这意味着它们非常私密。一旦你关闭这个浏览器标签页，或者点击了“重置”按钮，所有数据都会被清空，不会上传到任何服务器。这就像你在纸上用笔记录一样，那张纸只属于你当前的使用时刻。
-      </p>
-    </div>
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">怎么用它？三步搞定</h2>
+  <p class="mb-3"><span class="font-medium">第一步：</span>在页面中找到日期时间选择框，选好目标日期和具体时间（精确到分钟就行）。</p>
+  <p class="mb-3"><span class="font-medium">第二步：</span>点击"开始"按钮，下方就会立刻出现一个视频画面，上面显示你设定的目标时刻，中间是不断减少的毫秒级时间（格式：秒.毫秒）。</p>
+  <p class="mb-4"><span class="font-medium">第三步：</span>如果你想让倒计时悬浮起来，点击视频播放器右下角的画中画图标（通常是一个小方框带向下箭头），画面就会自动缩小成一个浮动窗口，你可以把它拖到屏幕任何位置。</p>
+  <p class="mb-4 text-sm bg-gray-50 p-3 rounded-lg">小提示：在iPhone上记得用Safari浏览器打开，画中画功能最稳定；安卓用户可以试试Chrome或Edge。</p>
+
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">哪些场景适合用它？</h2>
+  <ul class="list-disc pl-6 mb-5 space-y-2">
+    <li><span class="font-medium">电商抢购/秒杀：</span>双十一、限量发售、优惠券开抢，毫秒级的精度让你在最后一刻精准出手，快人一步完成付款。</li>
+    <li><span class="font-medium">考试倒计时：</span>高考、考研、职业资格考试，看着毫秒数减少，提醒自己珍惜每一刻时间。</li>
+    <li><span class="font-medium">纪念日/生日：</span>恋爱纪念日、父母生日、结婚纪念日，提前倒数，让期待感慢慢积累。</li>
+    <li><span class="font-medium">线上活动提醒：</span>直播开播、线上讲座、网课开始，设置倒计时避免错过精彩内容。</li>
+    <li><span class="font-medium">运动/健身间歇：</span>高强度间歇训练需要精确控制休息时间，把毫秒级倒计时浮窗放在屏幕一角，边看视频边跟练。</li>
+    <li><span class="font-medium">游戏/竞速场景：</span>某些游戏或竞技活动需要精确到毫秒的操作时机，这个工具可以帮你精准把握节奏。</li>
+  </ul>
+
+  <h2 class="text-xl md:text-2xl font-medium mt-8 mb-3 text-gray-900">关于毫秒级倒计时，你可能想问这些</h2>
+  <div class="mb-4">
+    <p class="font-medium">问：为什么需要精确到毫秒？</p>
+    <p class="mb-3">在很多场景下，秒级精度已经不够用了。比如电商秒杀、限时抢购，往往就是几百毫秒的差距；某些竞技游戏或直播互动，也需要毫秒级的反应速度。毫秒级倒计时能帮你更好地把握这些关键时刻。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：倒计时最长能设置多久？</p>
+    <p class="mb-3">理论上可以设置到未来很多年，只要目标时间还没到，它就会一直倒计时。显示格式会根据剩余时间自动调整，适合长期或短期倒计时。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：手机锁屏后倒计时还会继续吗？</p>
+    <p class="mb-3">如果用的是画中画浮窗，锁屏后浮窗会消失，但再次解锁打开浏览器，倒计时依然在（只要页面没被系统杀掉）。如果只是普通在浏览器里看，锁屏就会暂停。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：为什么我的浏览器没有画中画按钮？</p>
+    <p class="mb-3">部分安卓浏览器或旧版本可能不支持画中画，可以尝试升级浏览器或换用Chrome、Edge。iPhone只要系统在iOS14以上，Safari都自带画中画。</p>
+  </div>
+  <div class="mb-4">
+    <p class="font-medium">问：毫秒级显示会影响性能吗？</p>
+    <p class="mb-3">不会。我们采用了优化的渲染机制，每16毫秒刷新一次（约60fps），在现代设备上运行非常流畅，不会造成卡顿或耗电过快的问题。</p>
   </div>
 
-  <!-- 结尾引导 -->
-  <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4 pb-2 border-b border-gray-200">
-    让时间变得清晰可见
-  </h2>
-  <p class="text-gray-700 mb-6 leading-relaxed">
-    时间是我们最宝贵的资源，却也是最容易被模糊感知的。一个简单的秒表，加上“分段”这个小小的功能，就能像一把尺子，把无形的时间流丈量成一节节清晰的片段。无论你是想提升效率、精进技能，还是单纯想让生活更有条理，试着用它来记录一下，你可能会对“时间”产生全新的认识。
-  </p>
-  <p class="text-lg font-medium text-blue-700 italic leading-relaxed">
-    不妨现在就找个需要计时的小任务，体验一下这位专注、精准的“时间伙伴”吧。
-  </p>
+  <p class="text-base md:text-lg mt-8 pt-4 border-t border-gray-200 text-gray-600">毫秒级倒计时不只是数字的变化，更是一种对时间的极致掌控——让我们对即将到来的时刻多一份准备，也多一份期待。下次有重要事件，不妨试试这个高精度浮窗倒计时，让它帮你把时间牢牢"抓"在眼前。</p>
+
+  <div class="text-xs text-gray-400 mt-6 text-center">© 毫秒级浮窗倒计时 · 精确到毫秒 · 支持iOS/Android浮窗</div>
 </div>
-`;export{a as default};
+`;export{s as default};

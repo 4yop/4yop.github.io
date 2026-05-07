@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ubuntu 更新中</title>
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{background:#2c001e;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Ubuntu','DejaVu Sans',sans-serif;color:#fff;overflow:hidden}
-.ubu-logo{width:64px;margin-bottom:36px;border-radius:50%;border:3px solid #dd4814;padding:8px}
+.ubu-logo{width:72px;margin-bottom:36px}
 .ubu-logo svg{display:block;width:100%;height:auto}
 .title{font-size:18px;margin-bottom:22px;font-weight:300}
 .bar-wrap{width:320px;height:6px;background:#5a002a;border-radius:3px}
@@ -14,7 +14,20 @@ body{background:#2c001e;width:100vw;height:100vh;display:flex;flex-direction:col
 </style></head>
 <body>
 <div class="ubu-logo">
-<svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#dd4814"/><circle cx="16" cy="16" r="12" fill="#fff"/><circle cx="16" cy="16" r="4" fill="#dd4814"/><circle cx="9" cy="9" r="3" fill="#77216f"/><circle cx="23" cy="23" r="3" fill="#77216f"/><circle cx="24" cy="9" r="2" fill="#5E2750"/><circle cx="8" cy="23" r="2" fill="#5E2750"/></svg>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="16" cy="16" r="15" fill="#dd4814"/>
+  <g fill="#fff">
+    <circle cx="16" cy="7" r="3"/>
+    <circle cx="8" cy="12" r="3"/>
+    <circle cx="24" cy="12" r="3"/>
+    <path d="M16 10 Q13 13 9 12 M16 10 Q19 13 23 12" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M10 14 Q12 18 16 19 M22 14 Q20 18 16 19" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="16" cy="21" r="2.5"/>
+    <path d="M16 23.5 L16 28" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8 14.5 L5 18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M24 14.5 L27 18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
 </div>
 <div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>

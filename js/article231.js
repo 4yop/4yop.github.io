@@ -1,152 +1,464 @@
-const r=`
-<div class="text-gray-800 bg-white font-sans">
-  <article class="max-w-4xl mx-auto px-4 py-8 md:px-8">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">你的出生日期，藏着怎样的性格密码？聊聊生肖与星座</h1>
+const e=`
+<article class="article-container">
+  <style>
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", -apple-system, sans-serif;
+      color: rgba(255, 255, 255, 0.9);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a1035 15%, #2d1b4e 30%, #4a1942 45%, #6b2149 55%, #a63d40 68%, #d66646 78%, #f5a642 88%, #fcd34d 100%);
+    }
+    .article-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(99, 102, 241, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 20%, rgba(168, 85, 247, 0.3) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 55% at 50% 80%, rgba(236, 72, 153, 0.25) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 85% 75%, rgba(249, 115, 22, 0.3) 0%, transparent 50%);
+      animation: bg-shift 12s ease-in-out infinite alternate;
+    }
+    @keyframes bg-shift {
+      0% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+    .article-content {
+      position: relative;
+      z-index: 1;
+    }
+    .glass-card {
+      background: rgba(30, 15, 50, 0.45);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border: 1px solid rgba(200, 180, 255, 0.12);
+      border-radius: 20px;
+      padding: 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(220, 200, 255, 0.06), 0 0 60px rgba(139, 92, 246, 0.05);
+    }
+    .article-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .article-title {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      line-height: 1.3;
+    }
+    .article-subtitle {
+      font-size: 1.05rem;
+      color: rgba(196, 181, 253, 0.85);
+      line-height: 1.7;
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 1.2em;
+      background: linear-gradient(180deg, #818cf8, #e879f9);
+      border-radius: 2px;
+    }
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 1rem;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      gap: 0.75rem;
+    }
+    .feature-item:last-child {
+      border-bottom: none;
+    }
+    .feature-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+    }
+    .feature-text {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+    }
+    .feature-text strong {
+      color: rgba(255, 255, 255, 0.95);
+    }
+    .scene-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 580px) {
+      .scene-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .scene-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .scene-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+    .scene-card-orange { border-left: 3px solid rgba(249, 115, 22, 0.6); }
+    .scene-card-blue { border-left: 3px solid rgba(56, 189, 248, 0.6); }
+    .scene-card-yellow { border-left: 3px solid rgba(251, 191, 36, 0.6); }
+    .scene-card-pink { border-left: 3px solid rgba(236, 72, 153, 0.6); }
+    .scene-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 0.5rem;
+    }
+    .scene-desc {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.6;
+    }
+    .step-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+      counter-reset: step;
+    }
+    .step-item {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 1.5rem;
+      counter-increment: step;
+    }
+    .step-item::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.2rem;
+      height: 2.2rem;
+      background: linear-gradient(135deg, #818cf8, #e879f9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: white;
+      box-shadow: 0 4px 12px rgba(129, 140, 248, 0.4);
+    }
+    .step-item:nth-child(2)::before {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+    }
+    .step-item:nth-child(3)::before {
+      background: linear-gradient(135deg, #34d399, #38bdf8);
+      box-shadow: 0 4px 12px rgba(52, 211, 153, 0.4);
+    }
+    .step-text {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+      padding-top: 0.25rem;
+    }
+    .highlight-box {
+      background: rgba(129, 140, 248, 0.12);
+      border: 1px solid rgba(129, 140, 248, 0.25);
+      border-radius: 16px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .highlight-box-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(196, 181, 253, 0.95);
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box-content {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+    }
+    .advantage-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+    }
+    .advantage-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.65rem 0;
+      gap: 0.75rem;
+    }
+    .advantage-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(52, 211, 153, 0.2);
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+    .advantage-icon svg {
+      width: 12px;
+      height: 12px;
+      color: #34d399;
+    }
+    .summary-box {
+      background: rgba(30, 15, 50, 0.4);
+      border: 1px solid rgba(200, 180, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .summary-text {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.8;
+    }
 
-    <p class="text-lg mb-8 leading-relaxed">
-      你是否曾经好奇，为什么自己天生就有一股不服输的劲头？或者，为什么你对家庭和朋友总是格外珍视？很多时候，人们会从古老的智慧中寻找答案，而生肖和星座，就是两把流传甚广、用来解读自我性格与命运的有趣“钥匙”。
-    </p>
+    /* ====== 展开/收起按钮适配 ====== */
+    .article-toggle-wrap {
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin-bottom: -1.25rem;
+      pointer-events: none;
+    }
+    .article-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 9999px;
+      padding: 10px 24px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      pointer-events: auto;
+      user-select: none;
+      letter-spacing: 0.02em;
+    }
+    .article-toggle-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+    .article-toggle-icon {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .article-toggle-icon.rotated {
+      transform: rotate(180deg);
+    }
 
-    <div class="bg-gray-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
-      <p class="italic">
-        本文带你轻松了解生肖与星座的由来和含义，它们并非精确的科学，却像一面镜子，映照出文化与传统中对人性的观察与归纳。了解它们，或许能为你认识自己提供一个别致的角度。
-      </p>
+    @media (max-width: 580px) {
+      .article-title {
+        font-size: 1.5rem;
+      }
+      .glass-card {
+        padding: 1.5rem 1rem;
+        border-radius: 18px;
+      }
+    }
+  </style>
+
+  <!-- 展开/收起按钮样式（最高优先级覆盖App.vue灰色按钮） -->
+  <style>
+    .article-container > button.mt-2,
+    .article-container > button[class*="bg-gray"] {
+      background: rgba(255,255,255,.12) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      color: rgba(255,255,255,.85) !important;
+      border: 1px solid rgba(255,255,255,.22) !important;
+      border-radius: 9999px !important;
+      padding: 10px 26px !important;
+      font-size: .88rem !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.08) !important;
+    }
+    .article-container > button.mt-2:hover,
+    .article-container > button[class*="bg-gray"]:hover {
+      background: rgba(255,255,255,.22) !important;
+      color: #fff !important;
+      border-color: rgba(255,255,255,.4) !important;
+    }
+  </style>
+
+  <div class="article-bg"></div>
+
+  <div class="article-content">
+    <header class="article-header">
+      <h1 class="article-title">免费在线计时器：你的随身时间管理小助手</h1>
+      <p class="article-subtitle">无论是煮鸡蛋、运动计时，还是提醒休息，这个简单好用的倒计时工具都能帮你精准掌控时间。</p>
+    </header>
+
+    <div class="glass-card">
+      <h2 class="section-title">你是不是也经常忘记时间？</h2>
+      <p class="article-text">想想看这些场景：锅里炖着汤，转身去忙别的事，结果一不小心就糊了；说好只玩十分钟手机，抬头却发现一小时过去了；工作学习时需要专注一段时间，却总是被各种事情打断。</p>
+      <p class="article-text">时间看不见摸不着，稍不注意就从指缝溜走。这时候，如果能有一个简单、醒目的倒计时工具在一旁提醒你，事情就简单多了。</p>
     </div>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-10 mb-6 pb-2 border-b">一、生肖：来自古老东方的十二年轮回</h2>
-    <p class="mb-4 leading-relaxed">
-      生肖，也叫属相，是中国及东亚一些地区用来代表年份和人的出生年的十二种动物。据说它的起源与古代的动物崇拜和纪年法有关。每十二年一个循环，每个人都拥有一个属于自己的生肖属相。
-    </p>
-    <p class="mb-6 leading-relaxed">
-      它不仅仅是记住你属什么那么简单，每一种动物都被赋予了一套独特的性格特征和象征意义，成为人们探讨个性、运势甚至人际缘分时常聊的话题。
-    </p>
+    <div class="glass-card">
+      <h2 class="section-title">一个为你量身打造的时间提醒工具</h2>
+      <p class="article-text">我们常常需要为各种活动计时，但手机自带的时钟应用可能操作繁琐，或者功能单一。一个好用的在线计时器应该是什么样子？它应该像你的私人助理一样，既听话又醒目。</p>
 
-    <h3 class="text-xl font-medium mt-8 mb-4">十二生肖性格速览</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">鼠</h4>
-        <p class="text-gray-600">象征聪明与机灵，通常被认为头脑灵活，适应能力很强。</p>
+      <ul class="feature-list">
+        <li class="feature-item">
+          <span class="feature-dot"></span>
+          <span class="feature-text"><strong>设定任意时长</strong>：无论是短短1分钟，还是长达数小时，都可以自由组合小时、分钟和秒。</span>
+        </li>
+        <li class="feature-item">
+          <span class="feature-dot"></span>
+          <span class="feature-text"><strong>一键快速设置</strong>：泡面3分钟、番茄工作法25分钟、午休30分钟……常用时间只需点一下。</span>
+        </li>
+        <li class="feature-item">
+          <span class="feature-dot"></span>
+          <span class="feature-text"><strong>清晰直观的显示</strong>：大数字倒计时，搭配一个逐渐填充的圆环进度条，剩余时间一目了然。</span>
+        </li>
+        <li class="feature-item">
+          <span class="feature-dot"></span>
+          <span class="feature-text"><strong>灵活的控制</strong>：可以随时开始、暂停、继续，或者直接停止和重置，完全由你掌控节奏。</span>
+        </li>
+        <li class="feature-item">
+          <span class="feature-dot"></span>
+          <span class="feature-text"><strong>贴心的完成提醒</strong>：时间一到，会有声音提示，如果允许，还会在电脑屏幕上弹出通知，绝不会让你错过。</span>
+        </li>
+      </ul>
+
+      <p class="article-text">它就像一个放在电脑浏览器里的迷你计时闹钟，不占地方，随开随用，用完关掉即可。</p>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="section-title">生活中哪些地方用得上它？</h2>
+      <p class="article-text">这个工具的设计初衷就是解决日常小麻烦，它的应用场景远超你的想象：</p>
+
+      <div class="scene-grid">
+        <div class="scene-card scene-card-orange">
+          <h4 class="scene-title">厨房好帮手</h4>
+          <p class="scene-desc">煮鸡蛋、泡茶叶、煲汤炖肉，设定好时间就可以放心离开，清脆的提示音会叫你回来。</p>
+        </div>
+        <div class="scene-card scene-card-blue">
+          <h4 class="scene-title">学习工作伴侣</h4>
+          <p class="scene-desc">采用"番茄工作法"，设定25分钟专注工作，5分钟休息，循环往复，大幅提升效率。</p>
+        </div>
+        <div class="scene-card scene-card-yellow">
+          <h4 class="scene-title">健身运动教练</h4>
+          <p class="scene-desc">做平板支撑？设定1分钟。组间休息？设定30秒。让计时器帮你严格遵循训练计划。</p>
+        </div>
+        <div class="scene-card scene-card-pink">
+          <h4 class="scene-title">生活小提醒</h4>
+          <p class="scene-desc">线上会议提前5分钟提醒，护肤品敷脸15分钟提醒，给孩子设定的游戏时间提醒……守护你的每个生活片段。</p>
+        </div>
       </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">牛</h4>
-        <p class="text-gray-600">象征勤劳与稳重，代表了一种坚韧不拔、踏实可靠的品质。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">虎</h4>
-        <p class="text-gray-600">象征勇猛与力量，往往与权威、勇气和冒险精神联系在一起。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">兔</h4>
-        <p class="text-gray-600">象征温柔与谨慎，给人的印象是敏捷、仁慈且富有同情心。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">龙</h4>
-        <p class="text-gray-600">象征权威与尊贵，是权力、幸运和强大生命力的代表。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">蛇</h4>
-        <p class="text-gray-600">象征神秘与智慧，常被认为直觉敏锐，行事优雅而深刻。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">马</h4>
-        <p class="text-gray-600">象征自由与奔放，热爱独立，充满活力，不愿受束缚。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">羊</h4>
-        <p class="text-gray-600">象征温顺与和平，是和谐、善良与注重审美的化身。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">猴</h4>
-        <p class="text-gray-600">象征聪明与灵活，充满了机智、好奇心和创新能力。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">鸡</h4>
-        <p class="text-gray-600">象征勤奋与守信，做事准时，对自己充满自信。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">狗</h4>
-        <p class="text-gray-600">象征忠诚与友善，是诚实、可靠和富有责任感的代名词。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-lg mb-1">猪</h4>
-        <p class="text-gray-600">象征富足与乐观，懂得宽容，也懂得享受生活的乐趣。</p>
+
+      <p class="article-text">它的核心价值就在于：<strong style="color: rgba(255,255,255,0.95)">把抽象的时间，变成看得见、听得到的信号</strong>，帮你从"记时间"的负担中解脱出来，更专注于眼前的事情。</p>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="section-title">简单三步，轻松掌握</h2>
+      <p class="article-text">使用起来非常简单，不需要任何学习成本：</p>
+
+      <ol class="step-list">
+        <li class="step-item">
+          <span class="step-text"><strong>第一步：设定时间。</strong> 在页面上找到数字设置区域，通过点击加减号或直接输入，设定你所需的小时、分钟和秒。如果觉得麻烦，直接点击下方的"5分钟"、"30分钟"等快速按钮。</span>
+        </li>
+        <li class="step-item">
+          <span class="step-text"><strong>第二步：开始计时。</strong> 点击大大的"开始"按钮，倒计时即刻启动。屏幕中央的大数字开始跳动，周围的进度环也会随之填充，视觉上非常直观。</span>
+        </li>
+        <li class="step-item">
+          <span class="step-text"><strong>第三步：等待提醒。</strong> 你可以最小化浏览器页面去做自己的事。时间一到，提示音会响起，确保你能收到完成的信号。</span>
+        </li>
+      </ol>
+
+      <div class="highlight-box">
+        <p class="highlight-box-content">整个过程就像设置一个传统的机械闹钟一样自然，但比它更灵活、更智能。</p>
       </div>
     </div>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">二、星座：仰望星空时看见的“自己”</h2>
-    <p class="mb-4 leading-relaxed">
-      星座的传说则来自西方。古人把天空中位置相近的恒星想象成各种图形，这就是星座。后来，人们把太阳在一年中运行的轨道（黄道）分成了十二段，每一段对应一个星座，并根据你出生时太阳所在的位置，来确定你的“太阳星座”。
-    </p>
-    <p class="mb-6 leading-relaxed">
-      与生肖类似，每个星座也被赋予了一系列典型的性格特征。星座文化在现代流行文化中非常普及，常被用于分析个性、情感模式和人际关系。
-    </p>
+    <div class="glass-card">
+      <h2 class="section-title">为什么选择在线计时器？</h2>
+      <p class="article-text">相比手机APP或实体计时器，在浏览器里使用的在线工具有几个独特优势：</p>
 
-    <h3 class="text-xl font-medium mt-8 mb-4">十二星座性格一览</h3>
-    <div class="space-y-6 mb-10">
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">白羊座 (3.21-4.19)</h4>
-        <p class="text-gray-600">像春天一样充满生机，性格勇敢、直接，行动力十足，充满热情。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">金牛座 (4.20-5.20)</h4>
-        <p class="text-gray-600">如同大地般稳固，追求安全感，性格耐心、稳定，做事非常务实。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">双子座 (5.21-6.21)</h4>
-        <p class="text-gray-600">象征沟通与交流，思维灵活，好奇心旺盛，适应能力非常强。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">巨蟹座 (6.22-7.22)</h4>
-        <p class="text-gray-600">家庭和情感的守护者，内心情感丰富，具有强烈的保护欲和直觉。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">狮子座 (7.23-8.22)</h4>
-        <p class="text-gray-600">天生的领导者，像太阳一样自信、慷慨，拥有强大的个人魅力。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">处女座 (8.23-9.22)</h4>
-        <p class="text-gray-600">善于分析与服务，做事细致谨慎，有追求完美的倾向。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">天秤座 (9.23-10.23)</h4>
-        <p class="text-gray-600">追求平衡与和谐，天生具有正义感，社交能力出众，注重美感。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">天蝎座 (10.24-11.22)</h4>
-        <p class="text-gray-600">性格深刻而神秘，情感强烈，拥有强大的意志力和深刻的洞察力。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">射手座 (11.23-12.21)</h4>
-        <p class="text-gray-600">热爱自由的冒险家，天性乐观，喜欢探索，富有哲学思维。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">摩羯座 (12.22-1.19)</h4>
-        <p class="text-gray-600">象征成就与抱负，有很强的责任感和纪律性，行事稳健踏实。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">水瓶座 (1.20-2.18)</h4>
-        <p class="text-gray-600">思想前卫的创新者，重视独立与人道主义精神，想法常常与众不同。</p>
-      </div>
-      <div class="border border-gray-200 rounded-lg p-5 hover:bg-gray-50 transition">
-        <h4 class="font-bold text-xl mb-2">双鱼座 (2.19-3.20)</h4>
-        <p class="text-gray-600">充满梦想与同情心，直觉敏锐，富有艺术感，内心世界非常丰富。</p>
-      </div>
+      <ul class="advantage-list">
+        <li class="advantage-item">
+          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="feature-text"><strong>无需下载安装</strong>：打开网页就能用，不占用手机或电脑的存储空间。</span>
+        </li>
+        <li class="advantage-item">
+          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="feature-text"><strong>多设备通用</strong>：无论是在家里的电脑、公司的笔记本，还是平板上，只要有个浏览器，功能体验完全一样。</span>
+        </li>
+        <li class="advantage-item">
+          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="feature-text"><strong>完全免费</strong>：没有任何隐藏费用或高级订阅，所有功能都可以免费使用。</span>
+        </li>
+        <li class="advantage-item">
+          <span class="advantage-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="feature-text"><strong>界面清爽</strong>：设计简洁，没有扰人的广告，让你能聚焦于倒计时本身。</span>
+        </li>
+      </ul>
+
+      <p class="article-text">对于经常在电脑前工作学习的人来说，在浏览器标签页里放一个计时器，比拿起手机设置闹钟要方便得多，也更能减少分心。</p>
     </div>
 
-    <h2 class="text-2xl md:text-3xl font-semibold mt-12 mb-6 pb-2 border-b">三、如何知道自己的生肖与星座？</h2>
-    <p class="mb-4 leading-relaxed">
-      <strong>查询生肖：</strong>非常简单，只需要你的出生<strong>年份</strong>。生肖按照农历新年（春节）作为分界点，但通常情况下，我们直接使用公历年份对照，也能得到准确的属相。例如，1990年出生的人属马。
-    </p>
-    <p class="mb-6 leading-relaxed">
-      <strong>查询星座：</strong>需要你的公历<strong>出生月日</strong>。星座的日期范围是固定的，对照上面的日期表，看看你的生日落在哪个区间，就能知道自己的太阳星座。比如，生日是5月15日，那就是金牛座。
-    </p>
-
-    <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-10 text-center">
-      <p class="text-lg font-medium mb-3">是不是想立刻查查自己的生肖和星座了？</p>
-      <p class="text-gray-700">
-        了解这些古老的文化符号，不是为了给自己贴标签，而是开启一扇认识自我和他人性格特点的趣味窗口。你的生肖和星座是什么？它们的描述和你像吗？不妨把它当作一次轻松有趣的自我探索之旅吧。
-      </p>
+    <div class="glass-card">
+      <h2 class="section-title">总结</h2>
+      <p class="article-text">时间管理并不总是需要复杂的计划和软件。很多时候，我们只是需要一个靠谱的提醒，把自己从对时间的焦虑和遗忘中拉回来。</p>
+      <p class="article-text">这个免费的在线计时器，正是这样一个轻巧而实用的工具。它把复杂的计时功能变得极其简单，用最直观的方式告诉你："还有多久？"</p>
     </div>
-  </article>
-</div>
-`;export{r as default};
+
+    <div class="summary-box">
+      <p class="summary-text">好的工具应该融入生活，而不是增加负担。希望这个小小的计时器，能成为你管理碎片时间、享受专注当下的得力助手。</p>
+    </div>
+  </div>
+</article>
+`;export{e as default};

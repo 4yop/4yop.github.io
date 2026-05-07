@@ -3,6 +3,7 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Windows XP 更新中</title>
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{background:#0055aa;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Microsoft YaHei',Tahoma,sans-serif;color:#fff;overflow:hidden}
+.win-logo{width:80px;margin-bottom:40px}
 .title{font-size:24px;margin-bottom:30px;font-weight:normal}
 .bar-wrap{width:320px;height:18px;background:#1a4a7a;border-radius:3px;border:2px solid #3a7ac0;padding:2px}
 .bar-inner{height:100%;width:0%;background:linear-gradient(90deg,#2a6ab0,#5a9ae0);border-radius:2px;animation:prog 8s ease-in-out infinite}
@@ -10,6 +11,9 @@ body{background:#0055aa;width:100vw;height:100vh;display:flex;flex-direction:col
 .pct{margin-top:12px;font-size:13px;color:#aaddff}
 </style></head>
 <body>
+<svg class="win-logo" viewBox="0 0 88 88" fill="#fff">
+  <path d="M42 10L14 16v30l28 4V10zm2 0v41l30-4V17L44 10zM14 48l28 4v27L14 72V48zm30 4l30-5v26L44 79V52z"/>
+</svg>
 <div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
 <div class="pct"><span id="pctLabel"></span> <span id="pct">0</span>%</div>

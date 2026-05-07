@@ -3,18 +3,29 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CentOS 更新中</title>
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{background:#262626;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DejaVu Sans','Noto Sans SC',sans-serif;color:#e0e0e0;overflow:hidden}
-.cent-logo{width:64px;margin-bottom:28px;border-radius:50%;border:3px solid #932a1c;padding:8px;background:#fff}
+.cent-logo{width:72px;margin-bottom:28px}
+.cent-logo svg{display:block;width:100%;height:auto}
 .title{font-size:18px;margin-bottom:20px;font-weight:normal;color:#ccc}
 .bar-wrap{width:320px;height:5px;background:#444;border-radius:3px}
 .bar-inner{height:100%;width:0%;background:#932a1c;border-radius:3px;animation:prog 18s ease-in-out infinite}
 @keyframes prog{0%{width:0%}50%{width:55%}100%{width:94%}}
 .sub{margin-top:14px;font-size:12px;color:#999}
-.terminal{margin-top:12px;width:380px;height:120px;background:#1a1a1a;border-radius:4px;padding:10px;font-family:'DejaVu Sans Mono',monospace;font-size:11px;line-height:1.55;color:#b8860b;text-align:left;overflow:hidden}
+.terminal{margin-top:12px;width:380px;height:120px;background:#1a1a1a;border-radius:4px;padding:10px;font-family:'DejaVu Sans Mono',monospace;font-size:11px;line-height:1.55;color:#b8860b;text-align:left;overflow:hidden;border:1px solid #333}
 </style></head>
 <body>
-<div class="cent-logo">
-<svg viewBox="0 0 96 96"><rect width="96" height="96" rx="16" fill="#fff"/><path d="M48 12L20 28v40l28 16 28-16V28L48 12z" fill="#932a1c"/><text x="48" y="58" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">C</text></svg>
-</div>
+<svg class="cent-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="centGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#932a1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c74438;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="20" fill="#fff"/>
+  <rect x="10" y="10" width="100" height="100" rx="16" fill="url(#centGrad)"/>
+  <path d="M60 30 L40 50 L40 80 L60 95 L80 80 L80 50 Z" fill="#fff" opacity="0.9"/>
+  <text x="60" y="70" text-anchor="middle" font-size="32" font-weight="bold" fill="#932a1c" font-family="Arial, sans-serif">C</text>
+  <text x="60" y="88" text-anchor="middle" font-size="12" font-weight="bold" fill="#932a1c" font-family="Arial, sans-serif">CentOS</text>
+</svg>
 <div class="title" id="title"></div>
 <div class="bar-wrap"><div class="bar-inner"></div></div>
 <div class="sub"><span id="subLabel"></span> (<span id="pct">0</span>%)</div>
@@ -23,5 +34,5 @@ body{background:#262626;width:100vw;height:100vh;display:flex;flex-direction:col
 document.getElementById('title').textContent=lang==='en'?'Updating system packages':'正在更新系统软件包';
 document.getElementById('subLabel').textContent=lang==='en'?'Update progress':'更新进度';
 document.title=lang==='en'?'CentOS Updating':'CentOS 更新中';
-var n=0,pkgs=['kernel-core','glibc','openssl','bash','systemd','python3','nginx','vim-minimal'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.5){var d=document.getElementById('term');d.innerHTML+='<div>Updating '+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*90)+10)+'.el7.x86_64 ...';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
+var n=0,pkgs=['kernel-core','glibc','openssl','bash','systemd','python3','nginx','vim-minimal'];var li=0;setInterval(function(){n=n<97?n+Math.floor(Math.random()*1+1):97;document.getElementById('pct').textContent=n;if(Math.random()>.5){var d=document.getElementById('term');var msg=lang==='en'?'Updating ':'正在更新 ';d.innerHTML+='<div>'+msg+pkgs[li%pkgs.length]+'-'+(Math.floor(Math.random()*90)+10)+'.el7.x86_64 ...';li++;if(d.children.length>5)d.removeChild(d.firstChild)}},700)</script>
 </body></html>

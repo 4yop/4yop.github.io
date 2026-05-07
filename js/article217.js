@@ -1,62 +1,59 @@
-const s=`
-<div class="text-gray-800 font-sans max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">世界时钟在线工具：一眼看懂全球时间</h1>
-  <p class="text-lg mb-8 text-gray-600 text-center">和国外亲友约时间、安排跨国会议、或者单纯好奇地球另一端现在是白天还是黑夜？这个免费的小工具都能帮你。</p>
+const e={title:"沙漏倒计时",content:`
+## 沙漏倒计时工具
 
-  <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
-    <p class="font-medium text-blue-800">简单说明：这是一个完全在网页上运行的“世界时钟”，你可以用它查看全球主要城市（如北京、伦敦、纽约）的当前时间，也可以手动调整时区，直观地看到时间变化。</p>
-  </div>
+### 工具介绍
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">为什么我们需要关注世界时间？</h2>
-  <p class="mb-4">我们的生活越来越全球化。也许你的孩子在海外留学，你正在计划一次跨国旅行，或者你的工作需要与不同国家的同事协作。了解时差，是顺畅沟通的第一步。</p>
-  <p class="mb-6">直接心算“北京下午3点，纽约是几点？”，对很多人来说并不容易。有一个可视化的工具会方便得多。</p>
+沙漏倒计时是一款基于 **Three.js WebGL** 技术的视觉倒计时工具。它采用真实的**玻璃材质渲染**、**粒子系统流沙动画**、**木质支架**和自然暖光照明，打造出温馨优雅的沙漏倒计时界面。
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">这个时钟工具能帮你做什么？</h2>
-  <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><span class="font-medium">查看任一城市时间</span>：从下拉菜单里选择一个著名城市（如东京、悉尼、柏林），表盘和数字时间会立刻切换为该地时间。</li>
-    <li><span class="font-medium">直观的指针时钟</span>：就像你墙上的挂钟一样，通过时针、分针、秒针的位置，一眼就能大致判断时间。</li>
-    <li><span class="font-medium">精准的数字时间</span>：旁边会同步显示精确到分钟的数字时间，确保无误。</li>
-    <li><span class="font-medium">自由探索时区</span>：你可以用底部的滑块，从UTC-12（最西边）滑到UTC+12（最东边），亲眼看看时间如何随着“经度”变化。</li>
-    <li><span class="font-medium">全屏显示模式</span>：点击全屏按钮即可将时钟切换至全屏模式，字体放大、背景优化，非常适合演讲汇报、会议展示、课堂演示等场合使用。按 ESC 键可随时退出全屏。</li>
-  </ul>
+### 核心特性
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">时区小知识：世界是如何统一时间的？</h2>
-  <p class="mb-4">地球是圆的，并且自西向东自转，这就导致了不同地方迎接太阳的时间不同。为了统一标准，人们将地球划分为24个时区。</p>
-  <p class="mb-4"><span class="font-medium">什么是UTC？</span>你可以把它理解为世界时间的“原点”或“基准线”，位于英国伦敦的格林尼治天文台。其他地区的时间都用“UTC+数字”或“UTC-数字”来表示比这个基准快或慢多少小时。</p>
-  <p class="mb-6">例如，<span class="font-medium">北京时间是UTC+8</span>，意思就是比世界标准时间快8个小时。当UTC是午夜0点时，北京已经是早上8点了。</p>
+- **真实玻璃沙漏**: 使用 LatheGeometry 19控制点构建沙漏轮廓，MeshPhysicalMaterial 物理材质模拟真实玻璃
+- **粒子流沙系统**: 数千个沙色粒子模拟沙子流动，自然堆积效果
+- **木质支架**: 上下横档加四根立柱的木质支架，增加真实感
+- **自然暖光照明**: 暖白环境光和方向光，营造温馨氛围
+- **平滑翻转动画**: 倒计时结束时沙漏自动180度翻转，循环自然流畅
+- **高度可配置**: 支持自定义时长、粒子数量、沙子颜色等
+- **响应式设计**: 完美适配 PC 端和移动端
+- **性能优化**: GPU加速渲染，智能降级机制
 
-  <h2 class="text-2xl font-semibold mt-10 mb-4 pb-2 border-b">实用场景举例</h2>
-  <div class="grid sm:grid-cols-2 gap-6 mb-8">
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景一：计划国际旅行</h3>
-      <p>飞往美国洛杉矶前，把时钟调到“洛杉矶”（UTC-8），了解一下当地的昼夜时间，有助于提前规划行程和调整生物钟。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景二：安排跨国视频会议</h3>
-      <p>需要和欧洲的团队开会。把时钟调到“柏林”（UTC+1），看看他们那边的上班时间，再结合你的时间，就能找到一个大家都合适的时间段。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景三：联系海外亲友</h3>
-      <p>想给在澳大利亚留学的孩子打个电话。先看看“悉尼”（UTC+10）的时间，避免在对方的深夜或凌晨吵醒他们。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景四：学习地理知识</h3>
-      <p>对孩子来说，滑动滑块，看着时钟指针飞快转动，是理解"时差"和"地球自转"最生动的方式。</p>
-    </div>
-    <div class="bg-gray-50 p-5 rounded-lg">
-      <h3 class="font-bold text-lg mb-2 text-blue-700">场景五：演讲与会议展示</h3>
-      <p>在进行工作汇报、产品演示或公开演讲时，将时钟全屏显示在屏幕上，让观众能够清晰地看到时间进度，帮助控制节奏，提升专业度。</p>
-    </div>
-  </div>
+### 使用场景
 
-  <div class="mt-12 p-6 bg-gray-100 rounded-lg">
-    <h3 class="text-xl font-semibold mb-3">总结一下</h3>
-    <p class="mb-4">无论你是频繁出差的商务人士、有亲友在海外的普通人，还是对世界充满好奇的探索者，一个清晰、易用的世界时钟都是你的好帮手。</p>
-    <p>它把抽象的时差概念，变成了看得见的指针转动和数字跳动。希望这个工具能让你在连接世界时，多一份从容，少一点计算的烦恼。</p>
-    <p class="mt-4 text-gray-700"><strong>小提示：</strong> 工具会根据你设备的时间自动初始化，显示你所在的本地时间。所有操作都在你的设备上完成，无需担心隐私问题。</p>
-    <p class="mt-3 text-gray-700">特别值得一提的是，<span class="font-medium">全屏显示功能</span>让这个工具不仅适合个人使用，也能在团队协作和公开场合发挥重要作用。</p>
-  </div>
+- **工作专注**: 番茄钟、深度工作时间管理
+- **冥想放松**: 引导式冥想、呼吸练习计时
+- **演讲演示**: 会议汇报、产品发布倒计时
+- **活动策划**: 跨年倒计时、活动开场
+- **教育学习**: 考试倒计时、阅读计时
 
-  <p class="text-center text-gray-500 text-sm mt-12 pt-6 border-t">最后更新：2023年10月 | 工具免费使用，无需下载</p>
-</div>
-`;export{s as default};
+### 操作指南
+
+1. **设置时间**: 选择预设时间（1分钟/3分钟/5分钟/10分钟/25分钟），或输入自定义分钟数
+2. **启动倒计时**: 点击"开始"按钮启动，沙子开始从上半部分流向下半部分
+3. **暂停/继续**: 运行中可随时暂停和继续
+4. **重置**: 点击"重置"按钮恢复初始状态
+5. **全屏模式**: 点击全屏按钮进入沉浸式体验（按ESC退出）
+6. **翻转循环**: 倒计时归零时沙漏自动翻转
+
+### 自定义选项
+
+- **duration**: 倒计时时长（秒），默认60秒
+- **particleCount**: 粒子数量，默认5000个
+- **sandColorPrimary**: 沙子主色，默认'#c4935a'（琥珀色）
+- **sandColorSecondary**: 沙子辅色，默认'#a87640'
+- **width/height**: 渲染区域尺寸，默认400x700
+- **autoRotate**: 自动旋转开关，默认关闭
+
+### 性能建议
+
+- **高性能设备**: 可设置粒子数10000-20000，获得更密实的沙粒效果
+- **主流设备**: 推荐默认5000粒子，平衡画质和性能
+- **移动设备/低配设备**: 系统自动降至2000粒子
+
+### 浏览器兼容性
+
+本工具需要 **WebGL 2.0** 支持。建议使用 Chrome、Firefox、Safari 或 Edge 最新版本。如遇显示问题，请检查浏览器是否启用硬件加速。
+
+### 版本信息
+
+- **当前版本**: v2.0.0
+- **技术栈**: Vue 3 + Three.js + GLSL + Vite
+`};export{e as default};
