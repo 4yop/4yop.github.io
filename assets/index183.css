@@ -1,1 +1,1 @@
-@media(min-width:768px){.md\:w-30[data-v-ea81cf2b]{width:7.5rem}.md\:h-30[data-v-ea81cf2b]{height:7.5rem}}
+.animate-spin[data-v-6a69a0f4]{animation:spin-6a69a0f4 1s linear infinite}@keyframes spin-6a69a0f4{0%{transform:rotate(0)}to{transform:rotate(360deg)}}

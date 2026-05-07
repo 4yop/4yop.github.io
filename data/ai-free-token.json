@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-07",
+  "updatedAt": "2026-05-04",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/500 RPD）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/500 RPD）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3系列（1B/4B/12B/27B）：14,400 RPD/15K TPM免费；Google搜索/地图接地：500 RPD免费（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
@@ -31,8 +31,8 @@
     },
     {
       "name": "阿里云百炼",
-      "quota": "新用户开通即赠 7000万Tokens + 100张AI生图 + 50秒视频生成额度（免费领取、无需绑卡）；Qwen-Turbo、Qwen-Plus等模型100万tokens/天内免费调用；另赠200元无门槛代金券；DataWorks API已调整为按量付费（标准版10万次/月、专业版50万次/月）；新增模型：Qwen3.5-Omni、Qwen3-Coder-Plus、DeepSeek-R1-0528等",
-      "cycle": "有效期180天（此前为90天）；免费额度用完可开启「用完即停」避免扣费",
+      "quota": "每个模型独立赠送 100万 token（Qwen全系、DeepSeek系列、Kimi系列、GLM等，主账号与RAM子账号共享）；免费额度仅用于实时推理，不含 Batch/微调；DataWorks API免费额度已于2026年4月14日起调整为按量付费（标准版10万次/月、专业版50万次/月），百炼模型Token免费额度暂未调整",
+      "cycle": "自2025年9月8日起有效期调整为90天（此前开通的用户不受影响）；免费额度用完可开启「用完即停」避免扣费",
       "url": "https://bailian.console.aliyun.com/",
       "develop": {
         "document_url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
@@ -46,16 +46,13 @@
           "deepseek-r1",
           "deepseek-v3",
           "glm-4-flash",
-          "kimi-k2.5",
-          "qwen3.5-omni",
-          "qwen3-coder-plus",
-          "deepseek-r1-0528"
+          "kimi-k2.5"
         ]
       }
     },
     {
       "name": "百度千帆",
-      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite、ERNIE-Tiny 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5-Turbo、DeepSeek（R1/V3系列）、Qwen3、Kimi K2.5 等主流模型每模型 100万 token（3个月有效）；新用户注册送150万tokens，企业认证送200万tokens；2026年2月上线千帆Coding Plan",
+      "quota": "【永久免费不限量】ERNIE-Speed、ERNIE-Lite 系列永久免费调用不限量（仅QPS限速50次/秒）；ERNIE-3.5-8K 永久免费不限量；ERNIE-4.5-Turbo、DeepSeek（R1/V3系列）、Qwen3、Kimi K2.5 等主流模型每模型 100万 token（3个月有效）",
       "cycle": "Speed/Lite/3.5系列永久免费；主流模型额度3个月有效（自开通起算）",
       "url": "https://console.bce.baidu.com/qianfan/",
       "develop": {
@@ -75,14 +72,13 @@
           "kimi-k2-instruct",
           "qwen3-235b-a22b-instruct",
           "qwen3-30b-a3b-instruct",
-          "qwen3-coder-480b-a35b-instruct",
-          "ernie-tiny-8k"
+          "qwen3-coder-480b-a35b-instruct"
         ]
       }
     },
     {
       "name": "腾讯混元",
-      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束；混元3.0将于2026年5月发布",
+      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）",
       "cycle": "通用包1年有效；Lite版永久免费；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
@@ -120,7 +116,7 @@
     },
     {
       "name": "硅基流动（SiliconFlow）",
-      "quota": "新用户注册即领 2000万 token（永久有效）；完成新手任务可额外领取 1000万 token，累计最高 3000万 token；完成实名认证再赠 16元 代金券；支持DeepSeek-V4、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k；部分轻量级模型提供永久免费调用额度",
+      "quota": "新用户注册即领 2000万 token（约等于14元代金券，永久有效）；完成实名认证再赠 16元 代金券（真金白银）；支持DeepSeek-V4、Llama、Qwen等主流开源模型，完全兼容OpenAI格式；基础用户QPS=5，TPM=100k",
       "cycle": "2000万token永久有效；实名认证代金券一次性赠送",
       "url": "https://cloud.siliconflow.cn/i/mrnv0xyV",
       "develop": {
@@ -140,8 +136,8 @@
     },
     {
       "name": "智谱AI",
-      "quota": "新用户注册赠送约 500万 token（此前为2000万，已调整）；GLM-4-Air：每月100万tokens（长期有效，每月自动重置）；GLM-4V（多模态）：每月50万tokens（长期有效）；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash 永久免费调用（cost=0）；GLM-5-Turbo、GLM-5 等旗舰模型按量付费；每日签到送1万tokens，邀请好友送50万tokens；⚠️ 2026年内智谱进行了三次API价格上调，GLM-5国内API价格提升约50%；GLM Coding Plan旧套餐已于2026年4月30日关闭迁移",
-      "cycle": "新用户500万token；Flash系列模型永久免费；GLM-4-Air每月100万tokens自动重置；GLM-5系列按量付费",
+      "quota": "新用户注册直接赠送 2000万 token 且永久有效；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash 永久免费调用（cost=0）；GLM-5-Turbo、GLM-5 等旗舰模型按量付费；包含600万 Tokens 的 glm-4.6v、1200万 Tokens 的 glm-4.5-air，另有 200万通用 Tokens；基础用户QPS=2，无额外RPM/TPM限制；邀请好友双方各获2000万 GLM-4.5-Air Tokens",
+      "cycle": "新用户2000万永久有效；Flash系列模型永久免费；GLM-5系列按量付费",
       "url": "https://bigmodel.cn",
       "develop": {
         "document_url": "https://www.bigmodel.cn/dev",
@@ -194,8 +190,8 @@
     },
     {
       "name": "Mistral AI",
-      "quota": "Free Tier：每月约100 credits（1 credit = 1K tokens，约10万token/月）；速率限制：约6 RPM、1 RPS；⚠️ 原 Experiment Plan（10亿token/月）已取消，免费额度大幅缩减；可访问全部模型（含 Mistral Large 3、Mistral Medium 3.1、Mistral Small 3.2、Magistral推理系列、Codestral/Devstral代码系列）",
-      "cycle": "每月重置（Free Tier，约10万token/月；原10亿token/月Experiment Plan已取消）",
+      "quota": "Experiment Plan（实验计划）：无需信用卡，仅需手机号验证；速率限制：2 RPM（请求/分钟）、50万 TPM（token/分钟）；每月总额度：10亿 token（约合 $1000+ 等值推理）；可访问全部模型（含 Mistral Large 3、Mistral Medium 3、Mistral Small 3.1、Codestral）",
+      "cycle": "每月重置（永久免费 Experiment Plan）",
       "url": "https://console.mistral.ai",
       "develop": {
         "document_url": "https://docs.mistral.ai/api",
@@ -211,8 +207,8 @@
     },
     {
       "name": "Cohere",
-      "quota": "Trial API Key：每月 1,000 次 API 调用（⚠️ 已从1,000次/天缩减为1,000次/月）；Chat模型速率限制：20 requests/min；Embed：2,000 inputs/min；Rerank：10 req/min；支持 Command A Reasoning、Command A Vision 等新模型；Trial Key不可用于生产或商业用途",
-      "cycle": "每月重置（Trial Key，1,000次/月；原1,000次/天已缩减）",
+      "quota": "1000 次请求/天（Command R+、Embed 4 等）",
+      "cycle": "每月重置（试用 Key）",
       "url": "https://dashboard.cohere.com",
       "develop": {
         "document_url": "https://docs.cohere.com/",
@@ -276,8 +272,8 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "注册验证后每月 100万 token 免费额度；实名认证后获5000-10000次/月调用；开发者扶持计划最高 500万 token/月；体验计划每日500次临时额度；DeepSeek-V4已发布，百万token上下文完全开源免费可商用，API价格暴降98%；完全兼容 OpenAI API 格式；⚠️ 旧模型名 deepseek-chat / deepseek-reasoner 将于 2026-07-24 停用，请尽快迁移",
-      "cycle": "每月100万token（注册验证）；开发者扶持最高500万/月；DeepSeek-V4开源模型永久免费可商用",
+      "quota": "新用户注册赠送 500万 token（注册无需绑卡，可用于 DeepSeek-V4 系列及 deepseek-reasoner 推理模型；完全兼容 OpenAI API 格式；赠送余额优先扣除；⚠️ 旧模型名 deepseek-chat / deepseek-reasoner 将于 2026-07-24 停用，当前分别指向 deepseek-v4-flash 的非思考模式和思考模式，请尽快迁移；DeepSeek V4 支持1M上下文）",
+      "cycle": "一次性注册赠送（30天有效，用完需充值）",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
@@ -294,7 +290,7 @@
     },
     {
       "name": "Anthropic Claude API",
-      "quota": "新用户可能赠送 $5 API 积分（⚠️ 2026年未找到官方明确确认，部分账户可能不再自动获得；可用于全系列 Claude Opus、Sonnet、Haiku 模型；建议注册后实际确认）；Anthropic已停止向中国资本持有的集团出售Claude服务",
+      "quota": "新用户赠送 $5 API 积分（可用于全系列 Claude Opus、Sonnet、Haiku 模型）",
       "cycle": "一次性注册积分（30天有效）",
       "url": "https://console.anthropic.com",
       "develop": {
@@ -309,7 +305,7 @@
     },
     {
       "name": "百川智能 (Baichuan)",
-      "quota": "⚠️ 百川智能已放弃通用大模型赛道，全力押注AI医疗；原注册赠送80元API额度政策无法确认是否仍有效；「海纳百川计划」：医疗大模型Baichuan-M3 Plus API免费开放给医疗工作者和机构（300余家机构已接入）；通用API建议注册后确认",
+      "quota": "新用户注册赠送 80元 API 额度（可用于 Baichuan4 系列模型）；另有【海纳百川计划】：申请通过可免费使用 Baichuan-M3Plus API",
       "cycle": "注册80元一次性（用完为止）；海纳百川计划申请通过后有效",
       "url": "https://platform.baichuan-ai.com",
       "develop": {
@@ -325,7 +321,7 @@
     },
     {
       "name": "零一万物 (01.AI)",
-      "quota": "⚠️ 零一万物已放弃通用大模型赛道，裁撤金融、教育等B端团队；原注册赠送100元API额度政策无法确认是否仍有效；平台仍可访问，建议注册后实际确认当前赠送额度",
+      "quota": "新用户注册赠送 100元 API 额度（可用于 Yi-Lightning、Yi-1.5 等全系 Yi 模型）",
       "cycle": "一次性注册赠送（用完为止）",
       "url": "https://platform.lingyiwanwu.com",
       "develop": {
@@ -406,7 +402,7 @@
     },
     {
       "name": "AtomGit AI（开放原子）",
-      "quota": "新用户注册赠送 1000万 Tokens（此前为200万，已大幅提升，永久有效）；另有3个指定模型提供「无限Token」独立API Key（GLM-5量化版、Qwen3.5-397B、Qwen3.5-122B），每24小时可免费续期一次，不占用基础额度；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）",
+      "quota": "新用户注册赠送 200万 Tokens（永久有效）；另有3个指定模型提供「无限Token」独立API Key（GLM-5量化版、Qwen3.5-397B、Qwen3.5-122B），每24小时可免费续期一次，不占用基础额度；另每月赠送 1000核时 免费算力（用于推理/微调，按月刷新不累积）；支持 Qwen3.5、GLM-5、Llama、Claude 蒸馏版等多模型（注意：GLM-5原始版可能响应异常，推荐使用GLM-5量化版）",
       "cycle": "200万Token永久有效；无限Token模型需每24小时手动续期；算力额度每月重置",
       "url": "https://ai.atomgit.com",
       "develop": {
@@ -421,8 +417,8 @@
     },
     {
       "name": "Azure OpenAI",
-      "quota": "新用户注册GCP可获得 $300 免费试用额度（90天有效，需绑定信用卡但试用期内不扣费；可用于 GPT-4o、GPT-4.1、GPT-5、o3、o4-mini 等全系列模型）；⚠️ 原$5积分非通用政策，实际以GCP $300试用额度为准；GitHub Student Developer Pack 可额外获得 $100 Azure 信用额度；2026年4月微软与OpenAI独家云合作终止",
-      "cycle": "$300试用额度90天有效（需绑卡，试用期内不扣费）；GitHub学生包$100信用额度12个月有效",
+      "quota": "新用户注册赠送 $5 API 积分（可用于 GPT-4o、GPT-4.1、GPT-5、o3、o4-mini 等全系列模型；有效期3个月）；GitHub Student Developer Pack 可额外获得 $100 Azure 信用额度",
+      "cycle": "一次性注册额度（$5积分3个月有效）；GitHub学生包$100信用额度12个月有效",
       "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
       "develop": {
         "document_url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
@@ -494,7 +490,7 @@
     },
     {
       "name": "fal.ai",
-      "quota": "⚠️ $5免费积分未在当前定价页提及，可能已取消；采用按输出计费模式（视频按秒/按视频，图像按兆像素）；GPU部署从$0.60/hr（A6000）到$2.10/hr（H200）；支持1000+生产就绪的图像、视频、音频、3D生成模型；建议注册后确认是否有新用户赠送",
+      "quota": "新用户赠送 $5 免费积分（支持 1000+ 生产就绪的图像、视频、音频、3D 生成模型）",
       "cycle": "一次性注册积分（用完为止）",
       "url": "https://fal.ai",
       "develop": {
@@ -609,8 +605,8 @@
     },
     {
       "name": "Kimi（月之暗面）",
-      "quota": "新用户注册赠送约 800万 Tokens（此前为15元，已大幅提升）；Free Tier：1并发、3 RPM、32K TPM、150万 TPD；可用于 kimi-k2.5（262k超长上下文）、kimi-k2-thinking（超强推理）、k2-fc 等模型；无需实名认证；常有充值返券活动（如充100返300）",
-      "cycle": "一次性注册赠送约800万Tokens（此前为15元，已大幅提升）；Free Tier速率限制永久有效",
+      "quota": "新用户注册赠送 15元 API 额度（Free Tier：1并发、3 RPM、32K TPM、150万 TPD；可用于 kimi-k2.5、k2-fc 等模型；充值 50元可升级到 Tier1：50并发、200 RPM；支持工具调用、长上下文 128K；另有充值返券活动）",
+      "cycle": "一次性注册赠送15元（用完需充值）；Free Tier速率限制永久有效",
       "url": "https://platform.moonshot.cn",
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
@@ -641,7 +637,7 @@
     },
     {
       "name": "MiniMax 开放平台",
-      "quota": "新用户注册赠送 500万 Tokens（语音、文本模型均可用，此前额度已提升）；2026年5月推出 TokenPlan（全球首个支持全模态模型的统一订阅计划）；支持 MiniMax M2.5、语音合成等多模态",
+      "quota": "新用户注册赠送免费 token（具体额度以注册时平台活动为准，支持 MiniMax M2.5、语音合成等多模态）",
       "cycle": "一次性注册赠送（约30天有效）",
       "url": "https://platform.minimaxi.com",
       "develop": {
@@ -766,8 +762,8 @@
     },
     {
       "name": "Scaleway Generative APIs",
-      "quota": "⚠️ 免费测试版有效期至2025年3月，到期后切换为按量计费模式；2026年未找到仍提供免费100万token的确认；100万token免费额度可能已过期，建议到官网确认当前政策；支持 Llama、Mistral、Qwen3、DeepSeek等多款开源模型；完全兼容OpenAI API格式",
-      "cycle": "⚠️ 可能已过期（免费期或已于2025年3月结束，建议到官网确认）",
+      "quota": "100万 token 免费额度（输入输出合计计算）；60 RPM速率限制；欧洲托管（符合GDPR，适合欧盟项目）；支持 Llama 3.3 70B、Mistral Small 3.x、Qwen3、DeepSeek R1 Distill、Gemma 3、Pixtral 12B等多款开源模型；完全兼容OpenAI API格式",
+      "cycle": "一次性免费额度（用完后按量付费，€0.30-1.80/百万token不等）",
       "url": "https://www.scaleway.com/en/generative-apis/",
       "develop": {
         "document_url": "https://www.scaleway.com/en/docs/generative-apis",
@@ -834,7 +830,7 @@
     },
     {
       "name": "xAI (Grok)",
-      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）；⚠️ 2026年5月xAI已并入SpaceX（改名为SpaceXAI），API免费政策可能发生变化，建议前往官网确认最新政策",
+      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）",
       "cycle": "注册$25一次性；数据共享$150每月重置（永久，需满足$5消费门槛后激活）",
       "url": "https://console.x.ai",
       "develop": {
@@ -935,17 +931,14 @@
     },
     {
       "name": "超算互联网 (SCNET)",
-      "quota": "向全体用户免费发放单人最高 3000万 Tokens 额度（此前为100万，已大幅提升）；面向OpenClaw用户免费发放每人限时2周总计1000万Tokens额度；续购价格：0.1元/百万Tokens；支持 Qwen3-30B-A3B 等国产大模型",
+      "quota": "新用户首次登录赠送 100万 tokens（⚠️ 原限时1000万Token活动已于2026-03-25结束，现为常规100万额度）；支持 Qwen3-30B-A3B 等国产大模型",
       "cycle": "一次性注册赠送（1个月有效）",
       "url": "https://www.scnet.cn",
       "develop": {
         "document_url": "https://www.scnet.cn",
         "base_url": "https://api.scnet.cn/v1",
         "models": [
-          "Qwen3-30B-A3B",
-          "deepseek-r1",
-          "deepseek-v3",
-          "qwen3-235b-a22b"
+          "Qwen3-30B-A3B"
         ]
       }
     },
@@ -1020,8 +1013,8 @@
     },
     {
       "name": "移动云（中国移动）一站式模型托管平台",
-      "quota": "⚠️ 已结束：原新用户2500万tokens免费体验活动已于2025年12月31日截止（活动时间：2026年2月15日-2025年12月31日）；当前无替代免费活动；2026年5月7-9日移动云大会可能推出新活动，请关注官网",
-      "cycle": "⚠️ 已结束（活动已于2025年12月31日截止，不再提供免费额度）",
+      "quota": "首次使用平台的新用户系统自动提供 2500万 tokens 免费体验额度（活动时间：2026年2月15日-2026年12月31日，30天内有效；每位用户限领取一次）；支持 DeepSeek、GLM-5、MiniMax、Kimi 等多模型",
+      "cycle": "活动有效期至2026年12月31日；领取后30天内有效",
       "url": "https://ecloud.10086.cn",
       "develop": {
         "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
@@ -1056,7 +1049,7 @@
     },
     {
       "name": "DMXAPI",
-      "quota": "22+ 款免费大模型无限畅用（含GLM-Z1-Flash、qwen3-8b-free、bge-reranker-v2-m3-free等高性能模型）；新用户注册赠送免费Token；全程不限流、不涨价；支持DeepSeek-V3.2国内直连、GPT、Claude等主流模型；整合全球100+款主流大模型",
+      "quota": "新用户注册赠送 10000 免费 Token；22+ 款免费大模型无限畅用（DeepSeek-V3.2 国内直连、GPT、Claude 等主流模型）；支持合规报销凭证；第三方 API 聚合代理平台",
       "cycle": "注册赠送一次性（用完为止）",
       "url": "https://www.dmxapi.com",
       "develop": {
@@ -1137,8 +1130,8 @@
     },
     {
       "name": "白山智算",
-      "quota": "⚠️ 已结束：原注册实名认证送150元+首次调用后再送300元（累计450元体验金）活动已于2026年3月10日截止；当前无替代免费活动；部分永久免费模型可能仍可用：DeepSeek-R1-0528-Qwen3-8B、BAAI/bge-m3 等，建议访问官网确认",
-      "cycle": "⚠️ 已结束（活动已于2026年3月10日截止，建议关注是否有新活动）",
+      "quota": "新用户注册实名认证送 150元 体验金，体验 API 调用后次日再送 300元，累计最高 450元 体验金（约合 Qwen3 模型 1.125亿 Tokens 调用额度；支持 DeepSeek-R1、Qwen3 系列、Kimi、GLM 等主流模型；兼容 OpenAI API 格式）",
+      "cycle": "一次性注册赠送（额度用完为止；部分永久免费模型：DeepSeek-R1-0528-Qwen3-8B、BAAI/bge-m3 等）",
       "url": "https://ai.baishan.com",
       "develop": {
         "document_url": "https://ai.baishan.com/docs/docs/llm-api.html",
@@ -1209,8 +1202,8 @@
     },
     {
       "name": "OpenCode Zen",
-      "quota": "⚠️ OpenCode是开源AI编程助手工具（类似Claude Code/Cursor），不是API平台；支持75+模型提供商，用户需自行提供API Key（可使用各免费平台的Key）；免费模型（MiniMax M2.5 Free、MiMo V2 Pro Free、Qwen3.6 Plus Free等）用于收集模型反馈，输入输出缓存均免费",
-      "cycle": "免费模型永久可用（Beta测试阶段）；需自行提供其他模型的API Key",
+      "quota": "多个模型限时免费使用：MiniMax M2.5 Free、MiMo V2 Pro Free、MiMo V2 Omni Free、Qwen3.6 Plus Free、Nemotron 3 Super Free、Big Pickle、GPT 5 Nano（输入输出缓存均免费，用于收集模型反馈）；付费模型按量计费，支持 GPT-5.4、Claude Opus 4.6、Gemini 3.1 Pro 等全系列模型",
+      "cycle": "免费模型永久可用（处于Beta测试阶段）；付费模型按量计费",
       "url": "https://opencode.ai/zen",
       "develop": {
         "document_url": "https://opencode.ai/docs/zh-cn/zen/",
@@ -1308,7 +1301,7 @@
     },
     {
       "name": "NVIDIA NIM (build.nvidia.com)",
-      "quota": "新用户获得 1,000 credits（有效期12个月，1 credit≈1K tokens）；免费API端点支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V3/R1等主流模型",
+      "quota": "免费API端点（Free Endpoint），支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V3/R1等主流开源及商业模型；基于NVIDIA GPU加速推理",
       "cycle": "每日重置（永久免费层）",
       "url": "https://build.nvidia.com",
       "develop": {
@@ -1329,8 +1322,8 @@
     },
     {
       "name": "Pollinations AI",
-      "quota": "基于「花粉（pollen）」积分制的免费计算资源；Seed层：0.15 pollen/小时（免费）；Flower层：0.4 pollen/小时（需应用上线并获得使用量）；每日150万次请求，500+活跃应用；支持文本、图像、视频、音频生成及LLM推理；OpenAI兼容API；⚠️ 不再是完全无限制免费，但免费层足够个人开发者使用",
-      "cycle": "永久免费层（基于pollen积分制；Seed层免费，Flower层需应用上线）",
+      "quota": "完全免费、无需注册、无速率限制（基于社区算力，支持图片生成+大语言模型）；支持 OpenAI 兼容 API，直接替换 base URL 即可使用；支持 DeepSeek R1、Qwen、Llama、Gemini 等 50+ 模型；图片生成支持 Flux 系列模型（flux、turbo 等）",
+      "cycle": "永久免费（无需注册，无速率限制；社区算力驱动）",
       "url": "https://pollinations.ai",
       "develop": {
         "document_url": "https://docs.pollinations.ai",
@@ -1345,7 +1338,7 @@
     },
     {
       "name": "LongCat（美团）",
-      "quota": "LongCat-Flash-Lite 每日 5000万 token 免费（轻量级高效 MoE 模型）；LongCat-2.0-Preview（万亿参数模型）测试期间每天 1000万免费 Token；LongCat-Flash-Chat/Thinking/Omni 等系列每日 50万 token 免费；全程依托国产算力集群完成，英伟达算力占比为零；公测阶段暂不支持付费购买额度；支持 OpenAI 兼容 API 及 Anthropic 协议",
+      "quota": "LongCat-Flash-Lite 每日 5000万 token 免费（轻量级高效 MoE 模型）；LongCat-Flash-Chat/Thinking/Omni 等系列每日 50万 token 免费；公测阶段暂不支持付费购买额度；申请可提升至每日 500万 token；支持 OpenAI 兼容 API 及 Anthropic 协议",
       "cycle": "每日重置（永久免费，公测阶段）",
       "url": "https://longcat.chat/platform",
       "develop": {
@@ -1357,8 +1350,7 @@
           "LongCat-Flash-Chat-2602-Exp",
           "LongCat-Flash-Thinking",
           "LongCat-Flash-Thinking-2601",
-          "LongCat-Flash-Omni-2603",
-          "LongCat-2.0-Preview"
+          "LongCat-Flash-Omni-2603"
         ]
       }
     },
@@ -1384,7 +1376,7 @@
     },
     {
       "name": "OpenAI API",
-      "quota": "新账户可能赠送 $5 免费积分（⚠️ 2025年8月起部分新账户不再自动获赠积分，2026年情况未完全确认，因地区和账户而异，不可靠；可用于 GPT-4o Mini、GPT-4o、GPT-5、o3 等全系列模型；2026年5月1日已发布GPT-5.5；积分3个月有效，过期清零不可延期）",
+      "quota": "新账户赠送 $5-18 免费积分（因地区而异，无需信用卡；可用于 GPT-4o Mini、GPT-4o、GPT-5、o3 等全系列模型；⚠️ 注意：2025年8月起部分新账户不再自动获赠积分，具体以账户 Billing 页面为准，积分不可靠、账户差异大，建议验证后再规划使用）",
       "cycle": "一次性注册积分（3个月有效，过期清零不可延期）",
       "url": "https://platform.openai.com",
       "develop": {
@@ -1404,8 +1396,8 @@
     },
     {
       "name": "Glhf.chat",
-      "quota": "⚠️ 网站无法正常访问（2026年5月验证），平台可能已停止服务或变更域名；原提供免费无限制API访问，支持HF开源模型转OpenAI兼容API",
-      "cycle": "⚠️ 可能已停止服务（网站无法访问，建议确认）",
+      "quota": "免费无限制 API 访问（测试阶段）；可将 Hugging Face 上任意开源模型转为 OpenAI 兼容 API；支持 Llama 3.3 70B、Qwen2.5 72B、DeepSeek R1 等主流开源模型；自动扩缩 GPU 集群",
+      "cycle": "永久免费（测试阶段，政策可能调整）",
       "url": "https://glhf.chat",
       "develop": {
         "document_url": "https://glhf.chat/docs",
@@ -1414,64 +1406,6 @@
           "meta-llama/Llama-3.3-70B-Instruct",
           "Qwen/Qwen2.5-72B-Instruct",
           "deepseek-ai/DeepSeek-R1"
-        ]
-      }
-    },
-    {
-      "name": "华为云盘古大模型（ModelArts MaaS）",
-      "quota": "每月50万tokens免费；新用户送20万tokens；华为云开发者认证送50万tokens；支持盘古大模型系列、DeepSeek-V3.2、GLM-5、Kimi-K2、Qwen系列等；9.9元即可获得大量Token抵扣；支持CV计算机视觉等多模态能力",
-      "cycle": "每月重置（永久免费层）；新用户20万tokens一次性",
-      "url": "https://www.huaweicloud.com/product/modelarts.html",
-      "develop": {
-        "document_url": "https://support.huaweicloud.com/modelarts/index.html",
-        "base_url": "https://api.modelarts-maas.com/v2/chat/completions",
-        "models": [
-          "pangu-large",
-          "deepseek-v3.2",
-          "glm-5",
-          "kimi-k2",
-          "qwen3-235b-a22b"
-        ]
-      }
-    },
-    {
-      "name": "FreeTheAI.xyz",
-      "quota": "完全免费，无每日上限；支持GPT-4.1/4o/5系列、Claude-3.7/4/4.5/Opus系列、DeepSeek-R1/V3、Gemini-2.5/3.0系列、Grok-3/4、Kimi-K2.5/K2.6等主流顶级模型；速率限制：每分钟30请求（部分模型10次/分钟）；OpenAI兼容API；通过Discord注册获取API Key",
-      "cycle": "永久免费（无每日上限；社区驱动，政策可能调整）",
-      "url": "https://freetheai.xyz",
-      "develop": {
-        "document_url": "https://github.com/vibheksoni/free-ai",
-        "base_url": "https://api.freetheai.xyz/v1",
-        "models": [
-          "gpt-4.1",
-          "gpt-4o",
-          "gpt-5",
-          "claude-4.5-sonnet",
-          "claude-opus-4-5",
-          "deepseek-r1",
-          "deepseek-v3",
-          "gemini-3.0-flash",
-          "grok-4",
-          "kimi-k2.5",
-          "llama-3.2-3b",
-          "minimax-m2.5"
-        ]
-      }
-    },
-    {
-      "name": "Google Vertex AI",
-      "quota": "新用户注册GCP获得 $300 免费试用额度（90天有效，需绑定信用卡但试用期内不扣费）；可用于Gemini全系列（2.5 Flash/Pro、3.0、3.1 Pro）、Imagen图像生成等Google最新模型；企业级AI平台，与Google AI Studio不同",
-      "cycle": "$300试用额度90天有效（需绑卡，试用期内不扣费）",
-      "url": "https://cloud.google.com/vertex-ai",
-      "develop": {
-        "document_url": "https://cloud.google.com/vertex-ai/docs",
-        "base_url": "https://{REGION}-aiplatform.googleapis.com/v1",
-        "models": [
-          "gemini-2.5-flash",
-          "gemini-2.5-pro",
-          "gemini-3.0-flash",
-          "gemini-3.1-pro",
-          "imagen-3"
         ]
       }
     }
