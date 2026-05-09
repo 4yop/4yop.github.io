@@ -1,7 +1,7 @@
 const s=`
 <article class="max-w-4xl mx-auto px-4 py-8 md:px-6 font-sans text-gray-800 bg-white">
   <header class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想免费用AI？这份AI平台免费额度清单请收好</h1>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">想免费用AI？这份AI平台免费额度清单请收好</h2>
     <p class="text-lg text-gray-600 leading-relaxed">最近AI很火，很多人想试试，但一看价格就劝退了。其实，大部分主流AI平台都提供免费额度，足够日常使用。今天，我整理了一份AI平台免费额度清单，帮你省钱又省心。</p>
   </header>
 

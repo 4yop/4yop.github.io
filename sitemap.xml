@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://tools321.com/img/matting/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/img/qr-generator/</loc>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://tools321.com/img/avatar-generator/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/img/qr-decoder/</loc>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://tools321.com/text/text-analyzer/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/text/camel-to-underscore/</loc>
@@ -438,7 +438,7 @@
   </url>
   <url>
     <loc>https://tools321.com/math/proportion-calculator/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/math/real-time-income/</loc>
@@ -498,7 +498,7 @@
   </url>
   <url>
     <loc>https://tools321.com/time/timer/</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/time/beijing-time-countdown/</loc>
@@ -594,7 +594,7 @@
   </url>
   <url>
     <loc>https://tools321.com/geography/area-search/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/geography/sum-angle-calculator/</loc>
@@ -602,7 +602,7 @@
   </url>
   <url>
     <loc>https://tools321.com/geography/hometown-start/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/</loc>
@@ -786,7 +786,7 @@
   </url>
   <url>
     <loc>https://tools321.com/quick-find/card-analyze/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/quick-find/check-mobile-balance-usage/</loc>
@@ -814,7 +814,7 @@
   </url>
   <url>
     <loc>https://tools321.com/record/score-board/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/record/note/</loc>
@@ -850,7 +850,7 @@
   </url>
   <url>
     <loc>https://tools321.com/tools/birthday-card/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/tools/shortcut-generator/</loc>
@@ -902,11 +902,23 @@
   </url>
   <url>
     <loc>https://tools321.com/tools/ruler/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/tools/color-blind-test/</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/tools/line-text/</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/tools/sqlite-reader/</loc>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/tool/image-size-calculator</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/game/</loc>
@@ -997,12 +1009,16 @@
     <lastmod>2026-04-25</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/ai/ai-experts/</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/dev/</loc>
     <lastmod>2026-05-05</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/hacker-terminal/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/snowflake-id/</loc>
@@ -1038,7 +1054,7 @@
   </url>
   <url>
     <loc>https://tools321.com/dev/batch-script-creator/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/crud-generator/</loc>
@@ -1174,7 +1190,7 @@
   </url>
   <url>
     <loc>https://tools321.com/dev/ai-experts/</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-05-09</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/article/</loc>
