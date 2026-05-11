@@ -1,1 +1,1 @@
-const t="儿童注意力缺陷多动症评定量表(SNAP-IV)",o="儿童注意力缺陷多动症评定量表(SNAP-IV)在线测评工具，用于评估儿童的注意力不集中、多动冲动等核心症状表现及严重程度。适用于ADHD初步筛查诊断参考和儿童行为问题定期监测，家长和教师均可使用的免费在线评估工具，数据本地存储安全可靠，无需下载安装。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};
+const t={name:"儿童注意力缺陷多动症评定量表(SNAP-IV)",description:"儿童注意力缺陷多动症评定量表(SNAP-IV)在线测评工具，用于评估儿童的注意力不集中、多动冲动等核心症状表现及严重程度。适用于ADHD初步筛查诊断参考和儿童行为问题定期监测，家长和教师均可使用的免费在线评估工具，数据本地存储安全可靠，无需下载安装。",icon:"",category:"health",sort:0};export{t as default};

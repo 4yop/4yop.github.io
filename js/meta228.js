@@ -1,1 +1,1 @@
-const t="图片在线预览",e="免费在线图片预览工具，通过URL地址直接预览远程服务器上的图片文件。支持JPG、PNG、GIF、WebP、SVG、BMP等多种常见图片格式，无需下载到本地即可查看大图和原图尺寸。适用于快速检查远程图片内容、验证图片链接有效性、查看图片EXIF信息等场景。",o=["图片预览","在线查看","图片URL"],s={title:t,description:e,keywords:o};export{s as default,e as description,o as keywords,t as title};
+const e={title:"图片在线预览",description:"免费在线图片预览工具，通过URL地址直接预览远程服务器上的图片文件。支持JPG、PNG、GIF、WebP、SVG、BMP等多种常见图片格式，无需下载到本地即可查看大图和原图尺寸。适用于快速检查远程图片内容、验证图片链接有效性、查看图片EXIF信息等场景。",keywords:["图片预览","在线查看","图片URL"]};export{e as default};

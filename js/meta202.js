@@ -1,1 +1,1 @@
-const t="考试焦虑量表(TAS)",o="考试焦虑量表(TAS)在线测评工具，用于评估个体在考试情境中产生的焦虑情绪程度和伴随的身心生理反应。包含考前紧张焦虑、考试过程焦虑和考后担忧三个维度的检测项目，帮助学生科学了解自身考试焦虑状况并寻求应对策略，免费在线使用无需注册，数据本地存储安全。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};
+const t={name:"考试焦虑量表(TAS)",description:"考试焦虑量表(TAS)在线测评工具，用于评估个体在考试情境中产生的焦虑情绪程度和伴随的身心生理反应。包含考前紧张焦虑、考试过程焦虑和考后担忧三个维度的检测项目，帮助学生科学了解自身考试焦虑状况并寻求应对策略，免费在线使用无需注册，数据本地存储安全。",icon:"",category:"health",sort:0};export{t as default};

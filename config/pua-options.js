@@ -1,0 +1,78 @@
+const puaPresets = {
+    ceo: {
+    emotionEvaluation: '失望',
+    position: '定级CEO',
+    currentLevel: '面试时的水平',
+    newPosition: 'CEO',
+    subjectiveExpectation: '拼一把，快速成长起来',
+    abstractAbility1: '体系化思考',
+    moat: '壁垒',
+    coreCompetence: '核心竞争力',
+    comparison: '国内其他公司',
+    reusableAsset: '物理资料和方法论',
+    otherPeople: '其他人',
+    reportType: '月报季报年报',
+    thoughtType: '思考',
+    progressType: '进度',
+    performanceType: '产出',
+    benchmark: '同层级的东子',
+    negativeEvaluation: '单薄',
+    timeNode: '年底',
+    benchmarkCase: '隔壁团队的舟子',
+    extremeEffort: '一整年都在加拿大打地铺'
+  },
+  p7: {
+    emotionEvaluation: '失望',
+    position: '定级p7',
+    currentLevel: '面试时的水平',
+    newPosition: 'p7',
+    subjectiveExpectation: '拼把，快速成长起来',
+    abstractAbility1: '体系化思考',
+    moat: '壁垒',
+    coreCompetence: '核心竟争力',
+    comparison: '公司内其他团队',
+    reusableAsset: '物理资料和方法论',
+    otherPeople: '其他人',
+    reportType: '日报周报月报',
+    thoughtType: '思考',
+    progressType: '进度',
+    performanceType: '产出',
+    benchmark: '同层级',
+    negativeEvaluation: '单薄',
+    timeNode: '年底',
+    benchmarkCase: '',
+    extremeEffort: ''
+  },
+  relationship: {
+    emotionEvaluation: '失望',
+    position: '选择和你在一起',
+    currentLevel: '当时对感情的成熟度',
+    newPosition: '我男朋友',
+    subjectiveExpectation: '拼一把，快点成长起来',
+    abstractAbility1: '体系化思考',
+    moat: '安全感',
+    coreCompetence: '稳定的依靠',
+    comparison: '我身边那些成熟的男生',
+    reusableAsset: '计划和行动',
+    otherPeople: '别人',
+    reportType: '实际行动',
+    thoughtType: '反思和改变',
+    progressType: '跟我说"我会改""我已经很努力了"',
+    performanceType: '在这段感情里的付出',
+    benchmark: '我身边那些成熟、有担当的男生',
+    negativeEvaluation: '单薄',
+    timeNode: '我们感情的一个关键阶段',
+    benchmarkCase: '我朋友的男朋友',
+    extremeEffort: '长期异地、通宵加班、牺牲自己的生活'
+  }
+};
+
+const presetOptions = [
+  { value: '', label: '选择预设' },
+
+  { value: 'ceo', label: 'CEO 场景' },
+  { value: 'p7', label: '职场' },
+  { value: 'relationship', label: '感情场景' }
+];
+
+return { puaPresets, presetOptions };

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-10",
+  "updatedAt": "2026-05-11",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1527,6 +1527,21 @@
           "gemini-3.0-flash",
           "gemini-3.1-pro",
           "imagen-3"
+        ]
+      }
+    },
+    {
+      "name": "小米 MiMo",
+      "quota": "MiMo Orbit 百万亿 Token 创造者激励计划：注册申请可获得数亿免费 Token（有用户反馈获 7 亿 Token）；活动时间 2026-04-28 至 2026-05-28，面向全球用户，赠完即止；通过邀请链接注册可额外获 ¥10 API 体验金；MiMo-V2-Flash 模型限时免费（RPM: 100，上下文 256K，最大输出 128K）；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
+      "cycle": "创造者激励计划赠完即止（2026-04-28至05-28）；MiMo-V2-Flash 限时免费；Token Plan 按量付费",
+      "url": "https://platform.xiaomimimo.com",
+      "develop": {
+        "document_url": "https://platform.xiaomimimo.com/docs",
+        "base_url": "https://api.xiaomimimo.com/v1",
+        "models": [
+          "mimo-v2.5-pro",
+          "mimo-v2-flash",
+          "mimo-v2-pro"
         ]
       }
     }

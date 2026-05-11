@@ -1,1 +1,1 @@
-const t="大学生心理健康调查表(UPI)",o="大学生心理健康调查表(UPI)在线测评工具，用于评估大学生群体的整体心理健康状况、潜在心理风险因素和心理援助需求。涵盖情绪状态稳定性、人际交往适应性、学习生活压力等多个维度的检测项目，高校心理健康教育普查使用的免费在线工具，无需注册打开即用。",n="",c="health",s=0,e={name:t,description:o,icon:"",category:c,sort:0};export{c as category,e as default,o as description,n as icon,t as name,s as sort};
+const t={name:"大学生心理健康调查表(UPI)",description:"大学生心理健康调查表(UPI)在线测评工具，用于评估大学生群体的整体心理健康状况、潜在心理风险因素和心理援助需求。涵盖情绪状态稳定性、人际交往适应性、学习生活压力等多个维度的检测项目，高校心理健康教育普查使用的免费在线工具，无需注册打开即用。",icon:"",category:"health",sort:0};export{t as default};
