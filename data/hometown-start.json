@@ -12382,5 +12382,170 @@
       "SEVENTEEN成员"
     ],
     "source": "百度百科"
+  },
+  {
+    "name": "亚历山大",
+    "avatar": "亚历山大.webp",
+    "hometowns": [
+      [
+        "加拿大",
+        "安大略省",
+        "汉密尔顿"
+      ]
+    ],
+    "birthday": "1998-07-12",
+    "tags": [
+      "篮球运动员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "大勒布伦",
+    "avatar": "大勒布伦.webp",
+    "hometowns": [
+      [
+        "法国",
+        "奥克西塔尼大区",
+        "蒙彼利埃"
+      ]
+    ],
+    "birthday": "2003-08-27",
+    "tags": [
+      "乒乓球运动员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "小勒布伦",
+    "avatar": "小勒布伦.webp",
+    "hometowns": [
+      [
+        "法国",
+        "奥克西塔尼大区",
+        "蒙彼利埃"
+      ]
+    ],
+    "birthday": "2006-09-12",
+    "tags": [
+      "乒乓球运动员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "Viper",
+    "avatar": "Viper.webp",
+    "hometowns": [
+      [
+        "韩国",
+        "京畿道",
+        ""
+      ]
+    ],
+    "birthday": "2000-10-19",
+    "tags": [
+      "英雄联盟职业选手"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "Doinb",
+    "avatar": "Doinb.webp",
+    "hometowns": [
+      [
+        "韩国",
+        "首尔特别市",
+        ""
+      ]
+    ],
+    "birthday": "1996-12-30",
+    "tags": [
+      "英雄联盟职业选手",
+      "主播"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "Chovy",
+    "avatar": "Chovy.webp",
+    "hometowns": [
+      [
+        "韩国",
+        "仁川广域市",
+        ""
+      ]
+    ],
+    "birthday": "2001-03-03",
+    "tags": [
+      "英雄联盟职业选手"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "汤唯",
+    "avatar": "汤唯.webp",
+    "hometowns": [
+      [
+        "浙江省",
+        "杭州市",
+        ""
+      ]
+    ],
+    "birthday": "1979-10-07",
+    "tags": [
+      "演员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "边佑锡",
+    "avatar": "边佑锡.webp",
+    "hometowns": [
+      [
+        "韩国",
+        "京畿道",
+        "坡州市"
+      ]
+    ],
+    "birthday": "1991-10-31",
+    "tags": [
+      "演员",
+      "模特"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "任家萱",
+    "avatar": "任家萱.webp",
+    "hometowns": [
+      [
+        "台湾省",
+        "台北市",
+        ""
+      ]
+    ],
+    "birthday": "1981-10-31",
+    "tags": [
+      "歌手",
+      "演员",
+      "S.H.E成员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "杨子",
+    "avatar": "杨子.webp",
+    "hometowns": [
+      [
+        "河北省",
+        "保定市",
+        ""
+      ]
+    ],
+    "birthday": "1975-06-18",
+    "tags": [
+      "演员",
+      "企业家"
+    ],
+    "source": "百度百科"
   }
 ]

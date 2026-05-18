@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11",
+  "updatedAt": "2026-05-18",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -506,21 +506,6 @@
       }
     },
     {
-      "name": "fal.ai",
-      "quota": "⚠️ $5免费积分已取消（2026年5月验证确认），当前无免费层；采用按量付费模式（GPU部署H100从$1.89/hr起；视频按秒计费如Veo 2为$0.5/视频秒；图像按兆像素计费如FLUX.1 schnell为$0.003/MP）；支持1000+生产就绪的图像、视频、音频、3D生成模型",
-      "cycle": "⚠️ 无免费层（$5免费积分已取消，当前纯按量付费）",
-      "url": "https://fal.ai",
-      "develop": {
-        "document_url": "https://docs.fal.ai",
-        "base_url": "https://api.fal.ai/v1",
-        "models": [
-          "fal-ai/flux/dev",
-          "fal-ai/flux/schnell",
-          "fal-ai/kling-video/v1"
-        ]
-      }
-    },
-    {
       "name": "Fireworks AI",
       "quota": "新用户赠送 $1 免费积分（支持 50+ 开源模型，含 Llama 4、Qwen3、Gemma 3、Mixtral 等，快速推理）",
       "cycle": "一次性注册积分（用完为止）",
@@ -790,25 +775,6 @@
       }
     },
     {
-      "name": "Scaleway Generative APIs",
-      "quota": "⚠️ 免费期很可能已结束（2026年5月验证，官方定价页面被Cloudflare安全验证拦截，无法直接确认；2025年初信息称免费期于2025年3月结束；截至2026年5月未找到任何恢复免费政策的信息；AI推理服务仍在运营但免费层级存续状态无法确认）",
-      "cycle": "⚠️ 很可能已过期（免费期或已于2025年3月结束，建议到官网确认）",
-      "url": "https://www.scaleway.com/en/generative-apis/",
-      "develop": {
-        "document_url": "https://www.scaleway.com/en/docs/generative-apis",
-        "base_url": "https://api.scaleway.com/v1",
-        "models": [
-          "meta-llama/Llama-3.3-70B-Instruct",
-          "meta-llama/Llama-3.1-8B-Instruct",
-          "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-          "qwen/Qwen3-235B-A22B-Instruct",
-          "deepseek-ai/deepseek-r1-distill-llama-70b",
-          "google/gemma-3-27b-it",
-          "black-forest-labs/Pixtral-12B-2409"
-        ]
-      }
-    },
-    {
       "name": "Stability AI",
       "quota": "新用户赠送 25 积分（约$0.25，可生成约10张图像；SD3.5系列模型）",
       "cycle": "一次性注册积分（用完为止）",
@@ -1037,9 +1003,7 @@
     {
       "name": "联通云 AI Coding Plan",
       "quota": "已推出新活动：支持 GLM-5、MiniMax M2.5、Qwen3.5、DeepSeek-V4、Qwen3 等主流模型；适配 OpenCode、Claude Code、OpenClaw 等工具；此前限时免费1个月活动（2026-03-15截止）已替换为新活动；曾推出限量5000台免费送1个月4核8G服务器（预装OpenClaw）活动",
-      "cycle": [
-        "新活动持续中（具体额度以联通云官方最新公告为准）"
-      ],
+      "cycle": "新活动持续中（具体额度以联通云官方最新公告为准）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
@@ -1453,21 +1417,6 @@
           "gpt-4.1",
           "o3",
           "o4-mini"
-        ]
-      }
-    },
-    {
-      "name": "Glhf.chat",
-      "quota": "⚠️ 已停止服务（2026年5月验证，网站无法访问，请求超时）；原提供免费无限制API访问，支持HF开源模型转OpenAI兼容API；未找到任何恢复运营的信息",
-      "cycle": "⚠️ 已停止服务（网站无法访问，建议删除）",
-      "url": "https://glhf.chat",
-      "develop": {
-        "document_url": "https://glhf.chat/docs",
-        "base_url": "https://api.glhf.chat/v1",
-        "models": [
-          "meta-llama/Llama-3.3-70B-Instruct",
-          "Qwen/Qwen2.5-72B-Instruct",
-          "deepseek-ai/DeepSeek-R1"
         ]
       }
     },
