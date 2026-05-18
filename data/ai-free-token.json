@@ -1493,6 +1493,77 @@
           "mimo-v2-pro"
         ]
       }
+    },
+    {
+      "name": "Featherless AI",
+      "quota": "所有模型目前免费使用（支持 30000+ 开源模型，含 DeepSeek R1/V3、Qwen3-Coder-480B、GLM-5、Kimi-K2.5、GPT-OSS-120B、Llama 4 等主流模型）；OpenAI 兼容 API；上下文约 32678 tokens，最大输出 4096 tokens；Basic 付费计划 $10/月（15B以下模型无限token，2并发）",
+      "cycle": "永久免费（当前所有模型免费；政策以官方公告为准）",
+      "url": "https://featherless.ai",
+      "develop": {
+        "document_url": "https://featherless.ai/account/api-keys",
+        "base_url": "https://api.featherless.ai/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-R1-0528",
+          "deepseek-ai/DeepSeek-V3-0324",
+          "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+          "moonshotai/Kimi-K2-Instruct",
+          "openai/gpt-oss-120b",
+          "zai-org/GLM-5",
+          "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "商汤日日新 (SenseNova)",
+      "quota": "Token Plan 限时免费公测：每5小时1500次调用（SenseNova 6.7 Flash-Lite、SenseNova U1 Fast）；DeepSeek V4 Flash 每5小时150次；原生多模态架构，专为办公工作流设计；SenseNova-Skills 已在 GitHub 开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式",
+      "cycle": "限时免费公测（首月免费，后续将推出 Lite/Pro 付费档位）",
+      "url": "https://www.sensenova.cn",
+      "develop": {
+        "document_url": "https://www.sensenova.cn/token-plan",
+        "base_url": "https://api.sensenova.cn/v1",
+        "models": [
+          "sensenova-6.7-flash-lite",
+          "sensenova-u1-fast",
+          "deepseek-v4-flash"
+        ]
+      }
+    },
+    {
+      "name": "Scaleway Generative APIs",
+      "quota": "新用户赠送 100万 tokens 免费额度（一次性，用完为止）；60 RPM 速率限制；支持 Qwen3.5-397B、Qwen3-235B、GPT-OSS-120B、Gemma 4/3、Mistral Small 3.2、Llama 3.3 70B、DeepSeek R1 Distill、Whisper 等模型；欧洲数据中心，完全 GDPR 合规，数据不被用于训练；Batch API 享5折优惠",
+      "cycle": "一次性注册赠送100万tokens（用完为止，不刷新）",
+      "url": "https://www.scaleway.com/en/generative-apis/",
+      "develop": {
+        "document_url": "https://www.scaleway.com/en/docs/generative-apis/",
+        "base_url": "https://api.scaleway.ai/v1",
+        "models": [
+          "qwen3.5-397b-a17b",
+          "qwen3-235b-a22b-instruct-2507",
+          "gpt-oss-120b",
+          "gemma-4-26b-a4b-it",
+          "gemma-3-27b-it",
+          "mistral-small-3.2-24b-instruct-2506",
+          "llama-3.3-70b-instruct",
+          "deepseek-r1-distill-llama-70b",
+          "qwen3-coder-30b-a3b-instruct",
+          "whisper-large-v3"
+        ]
+      }
+    },
+    {
+      "name": "快手万擎 (StreamLake)",
+      "quota": "KAT-Coder-Air V1 永久免费调用；新用户赠送 2000万 tokens KAT-Coder-Pro V1 体验额度；KAT-Coder-Pro V2 已全量上线（SWE-bench Verified 73.4%，超越 GPT-5 与 Claude Sonnet 4）；平台集成 DeepSeek、Qwen、Kimi 等主流模型；99.95% SLA 保障；兼容 Claude Code、Cline、Kilo、OpenCode 等10+主流AI编码工具",
+      "cycle": "KAT-Coder-Air V1 永久免费；新用户2000万tokens一次性赠送",
+      "url": "https://www.streamlake.com",
+      "develop": {
+        "document_url": "https://www.streamlake.com/product/kat-coder",
+        "base_url": "https://api.streamlake.com/v1",
+        "models": [
+          "kat-coder-pro-v2",
+          "kat-coder-pro-v1",
+          "kat-coder-air-v1"
+        ]
+      }
     }
   ]
 }

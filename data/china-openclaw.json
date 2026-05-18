@@ -1123,5 +1123,149 @@
     "deployment": "企业级本地安全网关+云端安全运营",
     "features": "中国电信推出的智能体安全防护产品(业内称龙虾保镖)；以本地安全网关+云端安全运营为核心架构；三层防护闭环：资产测绘(含免费捕虾小助手内网扫描工具)、攻击拦截(内置OpenClaw高危漏洞专属特征库)、态势审计；深度融合大网威胁情报与运营商级云网数据资源；毫秒级拦截高风险指令；覆盖资产发现、风险识别、攻击拦截到审计溯源全流程；亮相2026数字中国建设峰会",
     "website": "https://www.ctyun.cn/"
+  },
+  {
+    "name": "Dify.ai",
+    "developer": "Dify.ai（兰一科技）",
+    "releaseTime": "2024.04",
+    "deployment": "开源项目（Apache 2.0），支持Docker私有化部署和云端SaaS",
+    "features": "国产开源LLMOps标杆平台；将Prompt工程、RAG检索增强生成、插件调用集成为可视化界面；提供完善的API监控和日志系统；支持Agent构建与工作流编排；适合企业内部中台，将AI能力嵌入现有业务系统",
+    "website": "https://dify.ai/",
+    "id": 175
+  },
+  {
+    "name": "AgentUniverse",
+    "developer": "蚂蚁集团",
+    "releaseTime": "2024.04",
+    "deployment": "开源框架，支持私有化部署",
+    "features": "垂直于金融等严谨行业的Agent框架；强调多步推理控制和合规性检查；支持多智能体协作；适合处理对准确率要求极高的任务；金融场景深度适配",
+    "website": "https://github.com/alibaba/agent-universe",
+    "id": 176
+  },
+  {
+    "name": "腾讯元器 (Yuanqi)",
+    "developer": "腾讯",
+    "releaseTime": "2024.05",
+    "deployment": "云端SaaS平台，支持API导出",
+    "features": "腾讯低代码智能体平台；深度集成腾讯生态；提供插件+知识库+工作流模式；可无缝调用混元大模型各版本；支持直接导出为API供自有App调用；强化企业级私有数据安全隔离",
+    "website": "https://yuanqi.tencent.com/",
+    "id": 177
+  },
+  {
+    "name": "文心智能体平台",
+    "developer": "百度",
+    "releaseTime": "2024.04",
+    "deployment": "云端SaaS平台",
+    "features": "百度智能体开发平台（原灵境矩阵）；依托百度搜索生态，智能体可直接挂载在百度搜索结果页获得流量入口；低代码/无代码搭建；支持知识库、插件和工作流配置",
+    "website": "https://agents.baidu.com/",
+    "id": 178
+  },
+  {
+    "name": "WiseClaw",
+    "developer": "智诊科技",
+    "releaseTime": "2026.04",
+    "deployment": "企业级SaaS平台，支持私有化部署",
+    "features": "全球首个医疗Agent OS；支持病历质控、用药审查等医疗场景；深度融合医学知识库与AI执行能力；面向医疗行业的专业级智能体平台",
+    "website": "https://www.izhizhen.com/",
+    "id": 179
+  },
+  {
+    "name": "OpenMAIC",
+    "developer": "清华大学",
+    "releaseTime": "2026.04",
+    "deployment": "开源项目，支持本地部署",
+    "features": "清华团队开源的多智能体AI课堂系统；可一键生成交互式课程；面向教育场景的多Agent协作框架；支持AI辅助教学与课程自动生成",
+    "website": "https://github.com/openmaic",
+    "id": 180
+  },
+  {
+    "name": "Skywork Super Agents",
+    "developer": "昆仑万维",
+    "releaseTime": "2026.03",
+    "deployment": "云端SaaS平台",
+    "features": "昆仑万维推出的超级智能体平台；基于天工大模型构建；支持多Agent协作与任务自动化执行；覆盖内容创作、数据分析等场景",
+    "website": "https://skywork.ai/",
+    "id": 181
+  },
+  {
+    "name": "Cherry Studio",
+    "developer": "CherryHQ开源社区",
+    "releaseTime": "2025.01",
+    "deployment": "桌面客户端（DMG/EXE/Linux），Apache 2.0开源",
+    "features": "多模型AI对话管理工具；支持300+模型；兼容OpenClaw生态；提供统一的AI工具管理与对话界面；支持多平台安装；GitHub 41.5k+ Stars",
+    "website": "https://github.com/CherryHQ/cherry-studio",
+    "id": 182
+  },
+  {
+    "name": "AionUi",
+    "developer": "iOfficeAI",
+    "releaseTime": "2026.02",
+    "deployment": "桌面安装包，MIT开源",
+    "features": "AI工具统一管理桌面应用；CLI工具管理层；支持多模型配置与切换；提供统一的Agent工具管理界面；GitHub 18.9k+ Stars",
+    "website": "https://github.com/iOfficeAI/aionui",
+    "id": 183
+  },
+  {
+    "name": "openJiuwen",
+    "developer": "华为",
+    "releaseTime": "2026.04",
+    "deployment": "开源AgentOS框架，支持华为云部署",
+    "features": "华为发布的AgentOS架构；三大设计理念：Skill as New Library（可复用智能能力）、Agent as New Service（分布式协同）、CLI as New POSIX（智能体时代系统原语）；已完成华为云OfficeClaw、邮储银行PSBC-Claw等生产级部署",
+    "website": "https://www.huawei.com/",
+    "id": 184
+  },
+  {
+    "name": "OpenAPA",
+    "developer": "来也科技",
+    "releaseTime": "2026.04",
+    "deployment": "开源框架，支持私有化部署",
+    "features": "计算机操控智能体框架；在OSWorld基准测试Agentic Framework技术路线位列全球第一（78.3%）；采用通用模型+Agent框架路线；依靠分层规划、动态反思、Coding Agent与GUI Agent协作等工程架构突破；不依赖专用模型训练即达世界级水平",
+    "website": "https://www.laiye.com/",
+    "id": 185
+  },
+  {
+    "name": "Qwen-Agent",
+    "developer": "阿里云通义千问团队",
+    "releaseTime": "2024.01",
+    "deployment": "开源框架（Apache 2.0），支持pip安装和私有化部署",
+    "features": "基于通义千问大模型体系开源的Agent框架；核心代码完全开放，Apache 2.0协议支持商业用途无限制二次开发；内置任务拆解、工具调用、RAG知识库等Agent核心能力；核心技术国产自研，无境外技术依赖",
+    "website": "https://github.com/QwenLM/Qwen-Agent",
+    "id": 186
+  },
+  {
+    "name": "PowerClaw",
+    "developer": "中关村科金",
+    "releaseTime": "2026.04",
+    "deployment": "企业级私有化部署，行业定制版",
+    "features": "行业定制版AI Agent平台；深耕营销服场景；适合金融、零售等行业；企业级安全合规与数据隔离；支持与现有业务系统深度集成",
+    "website": "https://www.zgcjk.com/",
+    "id": 187
+  },
+  {
+    "name": "GLM-Edge/All Tools",
+    "developer": "智谱AI",
+    "releaseTime": "2025.06",
+    "deployment": "开源工具集，支持端侧部署",
+    "features": "智谱AI专门针对GLM系列模型优化的工具集；在端侧AI（手机、PC）Agent开发上具有领先优势；支持复杂的代码执行（Code Interpreter）和网络搜索工具；与AutoClaw形成模型+框架闭环",
+    "website": "https://www.zhipuai.cn/",
+    "id": 188
+  },
+  {
+    "name": "DeerFlow 2.0",
+    "developer": "阿里巴巴",
+    "releaseTime": "2026.04",
+    "deployment": "开源框架（Apache 2.0），支持Docker部署",
+    "features": "企业级低代码AI Agent平台；可视化拖拽式界面构建Agent工作流；深度集成阿里云服务；多租户支持，完善的权限和资源隔离；GitHub 12.8k+ Stars",
+    "website": "https://github.com/bytedance/deer-flow",
+    "id": 189
+  },
+  {
+    "name": "Spring AI",
+    "developer": "VMware/Broadcom",
+    "releaseTime": "2024.05",
+    "deployment": "开源框架，Maven/Gradle依赖引入",
+    "features": "Java生态的AI Agent开发框架；Spring生态原生集成；支持多模型提供商切换；提供Agent编排与工具调用能力；适合Java企业级应用集成AI能力",
+    "website": "https://spring.io/projects/spring-ai",
+    "id": 190
   }
 ]
