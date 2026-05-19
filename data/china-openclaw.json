@@ -288,15 +288,6 @@
     "website": "https://picoclaw.ai/"
   },
   {
-    "id": 82,
-    "name": "ZeroClaw",
-    "developer": "哈佛/MIT/Sundai.Club社区",
-    "releaseTime": "2026.02",
-    "deployment": "Rust单二进制部署，支持IoT和超低端硬件",
-    "features": "Rust实现的AI Agent基础设施，内存占用<5MB；支持单片机级设备运行；三种守护进程模式（Agent CLI/Gateway HTTP/Daemon）；无垃圾回收暂停，编译时内存安全保证；支持OpenRouter/Anthropic/OpenAI/Ollama/DeepSeek/Groq/智谱等多模型",
-    "website": "https://zeroclaw.org/zh"
-  },
-  {
     "id": 83,
     "name": "loomoClaw",
     "developer": "iloomo",
@@ -304,15 +295,6 @@
     "deployment": "Windows桌面客户端，一键安装，可视化GUI",
     "features": "纯国产OpenClaw平替，深度适配Windows平台；内置开箱即用技能库，覆盖微信自动化、办公操作、文件处理、开发辅助等场景；极低使用门槛，可视化GUI无需复杂配置；支持AI驱动的技能执行引擎，含轻量级和重量级两种模式",
     "website": "https://www.iloomo.com/"
-  },
-  {
-    "id": 84,
-    "name": "IronClaw",
-    "developer": "NEAR AI团队",
-    "releaseTime": "2026.03",
-    "deployment": "Rust源码编译或Docker一键部署，支持Windows/macOS/Linux",
-    "features": "基于Rust重写的安全型AI助手框架；WASM沙箱隔离所有第三方代码，零信任架构默认不信任；加密保险库（Vault）管理API密钥，LLM全程不可见密钥；能力驱动安全模型，工具需显式声明权限；网络白名单、文件系统虚拟化、资源计量等多重防护；性能提升3-5倍，编译时内存安全保证",
-    "website": "https://github.com/nearai/ironclaw"
   },
   {
     "id": 85,
@@ -396,15 +378,6 @@
     "website": "https://github.com/matevip/mateclaw/"
   },
   {
-    "id": 94,
-    "name": "OpenJarvis",
-    "developer": "斯坦福Hazy Research + Scaling Intelligence Lab",
-    "releaseTime": "2026.03.14",
-    "deployment": "本地优先，完全在个人设备上运行",
-    "features": "斯坦福发布的本地优先个人AI Agent框架；核心理念是\"个人AI跑在个人设备上\"；与OpenClaw不同，强调完全本地化的隐私保护；致敬钢铁侠Jarvis的设计理念",
-    "website": "https://github.com/stanford-oval/OpenJarvis"
-  },
-  {
     "id": 95,
     "name": "OpenAgentKit (OAK)",
     "developer": "零一万物 + 开源中国",
@@ -430,15 +403,6 @@
     "deployment": "桌面端本地运行，数据不上传云端；企业版2026.03.07已开源",
     "features": "国产龙虾桌面应用，以小螃蟹桌宠形态呈现；能操作浏览器、读写文件、调用本地应用，完成市场调研、信息整理等自动化工作；深度适配飞书、钉钉、企业微信；支持MiniMax/Kimi/GLM/Qwen/DeepSeek等多家国产模型；本地运行隐私保护；获近亿元融资（湖畔山南、初心资本、高途、顺福资本联投）",
     "website": "https://deskclaw.ai"
-  },
-  {
-    "id": 98,
-    "name": "Hermes Agent",
-    "developer": "Nous Research（美国开源AI研究实验室）",
-    "releaseTime": "2026.02",
-    "deployment": "开源部署，支持5美元VPS/Docker/Serverless等6种方式，一行命令安装",
-    "features": "唯一内置自学习循环的AI Agent框架，从任务中自主生成skill并持续优化；跨会话持久记忆用户偏好；支持200+大模型（OpenRouter/OpenAI/Claude/Ollama等）；600+预置技能；MIT协议完全免费可商用；GitHub 70,000+ Stars，2026年增长最快开源Agent项目之一",
-    "website": "https://github.com/NousResearch/hermes-agent"
   },
   {
     "id": 99,
@@ -555,7 +519,7 @@
     "releaseTime": "2026.04.09",
     "deployment": "企业级本地化AI一体机，开箱即用，支持私有化部署",
     "features": "深度融合AiCube一体机基座与Co-Claw企业级AI智能体能力；「龙虾版」智会屏实现全流程AI智能体覆盖；会前智能预约、参会人员邀请、日程同步、资料生成；会中语音入会、会议协同、成员呼叫；会后任务闭环管理；开箱即用、安全可控、经济高效",
-    "website": "https://www.huawei.com/"
+    "website": "https://www.zte.com.cn/"
   },
   {
     "id": 112,
@@ -1104,7 +1068,7 @@
     "releaseTime": "2026.05",
     "deployment": "车载系统集成，基于UE5引擎深度适配，融合自研Kustom3D框架",
     "features": "基于OpenClaw生态及AI大模型能力的智能座舱AI Agent解决方案；基于UE5引擎深度适配，融合自研Kustom3D框架；以场景理解为核心，打造全场景AI Agent方案；AI千人千面，实现功能按需动态生成；让座舱真正成为懂用户习惯、知用户喜好的「出行管家」；亮相2026北京车展",
-    "website": "https://www.huawei.com/"
+    "website": "https://www.kotei-info.com/"
   },
   {
     "id": 173,
@@ -1188,24 +1152,6 @@
     "id": 181
   },
   {
-    "name": "Cherry Studio",
-    "developer": "CherryHQ开源社区",
-    "releaseTime": "2025.01",
-    "deployment": "桌面客户端（DMG/EXE/Linux），Apache 2.0开源",
-    "features": "多模型AI对话管理工具；支持300+模型；兼容OpenClaw生态；提供统一的AI工具管理与对话界面；支持多平台安装；GitHub 41.5k+ Stars",
-    "website": "https://github.com/CherryHQ/cherry-studio",
-    "id": 182
-  },
-  {
-    "name": "AionUi",
-    "developer": "iOfficeAI",
-    "releaseTime": "2026.02",
-    "deployment": "桌面安装包，MIT开源",
-    "features": "AI工具统一管理桌面应用；CLI工具管理层；支持多模型配置与切换；提供统一的Agent工具管理界面；GitHub 18.9k+ Stars",
-    "website": "https://github.com/iOfficeAI/aionui",
-    "id": 183
-  },
-  {
     "name": "openJiuwen",
     "developer": "华为",
     "releaseTime": "2026.04",
@@ -1251,21 +1197,39 @@
     "id": 188
   },
   {
-    "name": "DeerFlow 2.0",
-    "developer": "阿里巴巴",
-    "releaseTime": "2026.04",
-    "deployment": "开源框架（Apache 2.0），支持Docker部署",
-    "features": "企业级低代码AI Agent平台；可视化拖拽式界面构建Agent工作流；深度集成阿里云服务；多租户支持，完善的权限和资源隔离；GitHub 12.8k+ Stars",
-    "website": "https://github.com/bytedance/deer-flow",
+    "name": "OpenClawChinese",
+    "developer": "jiulingyun / AI-ZiMo（开源社区）",
+    "releaseTime": "2026.02",
+    "deployment": "开源项目，基于OpenClaw的汉化优化版，支持本地部署和Docker启动",
+    "features": "OpenClaw中文汉化优化版；内置飞书集成与国内网络环境优化；专注让中文开发者更易理解和使用OpenClaw框架；定期与上游主项目同步更新；解决国内网络连接与配置难题",
+    "website": "https://github.com/jiulingyun/openclaw-cn",
     "id": 189
   },
   {
-    "name": "Spring AI",
-    "developer": "VMware/Broadcom",
-    "releaseTime": "2024.05",
-    "deployment": "开源框架，Maven/Gradle依赖引入",
-    "features": "Java生态的AI Agent开发框架；Spring生态原生集成；支持多模型提供商切换；提供Agent编排与工具调用能力；适合Java企业级应用集成AI能力",
-    "website": "https://spring.io/projects/spring-ai",
+    "name": "ZeroClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.02",
+    "deployment": "开源项目，极致轻量设计，支持树莓派等边缘设备运行",
+    "features": "OpenClaw生态轻量级变体；专为树莓派等边缘计算设备优化；极致轻量化设计，资源占用极低；支持离线运行和低功耗场景；适合IoT和嵌入式环境",
+    "website": "https://github.com/zeroclaw/zeroclaw",
     "id": 190
+  },
+  {
+    "name": "OpenFang",
+    "developer": "开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "开源项目，Rust编写，支持跨平台部署",
+    "features": "Rust编写的生产级Agent OS；高性能内存安全设计；支持多Agent协作与任务编排；面向生产环境的高可靠性架构",
+    "website": "https://github.com/openfang/openfang",
+    "id": 191
+  },
+  {
+    "name": "ClawPhone",
+    "developer": "字节跳动",
+    "releaseTime": "2026.03",
+    "deployment": "手机端侧部署，支持DIY定制",
+    "features": "字节跳动推出的端侧AI Agent方案；支持手机端本地运行；可DIY定制Agent能力与行为模式；面向个人用户的轻量级智能体",
+    "website": "https://www.volcengine.com/",
+    "id": 192
   }
 ]

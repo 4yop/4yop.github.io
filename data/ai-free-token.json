@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-05-19",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/500 RPD）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated；⚠️ Google I/O 2026（5月19日）可能发布Gemini 4并调整免费政策，建议密切关注（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 4.0：已发布（原生多模态架构，2小时4K视频分析，端云协同，响应速度提升40%，2026-05-19开放API接入，免费层政策待确认）；Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/500 RPD）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
         "document_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
         "base_url": "https://generativelanguage.googleapis.com",
         "models": [
+          "gemini-4.0",
           "gemini-3-flash",
           "gemini-2.5-flash",
           "gemini-2.5-flash-lite",
@@ -212,8 +213,8 @@
     },
     {
       "name": "Cohere",
-      "quota": "Trial API Key：每月 1,000 次 API 调用（⚠️ 已从1,000次/天缩减为1,000次/月）；Chat模型速率限制：20 requests/min；Embed：2,000 inputs/min；Rerank：10 req/min；支持 Command A Reasoning、Command A Vision 等新模型；Trial Key不可用于生产或商业用途",
-      "cycle": "每月重置（Trial Key，1,000次/月；原1,000次/天已缩减）",
+      "quota": "Trial API Key免费（速率受限，不可用于生产或商业用途）；Production Key按量付费：Command R $0.50/百万输入 $1.50/百万输出；Command $1.00/百万输入 $2.00/百万输出；Aya Expanse $0.50/百万输入 $1.50/百万输出；Verified 2026-05-19",
+      "cycle": "Trial Key免费（速率限制）",
       "url": "https://dashboard.cohere.com",
       "develop": {
         "document_url": "https://docs.cohere.com/",
@@ -281,26 +282,24 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "注册验证后每月 100万 token 免费额度；实名认证后获5000-10000次/月调用；开发者扶持计划最高 500万 token/月；体验计划每日500次临时额度；DeepSeek-V4已发布（Flash/Pro双版本），百万token上下文完全开源免费可商用；API缓存输入价格降至0.025元/百万tokens（历史最低）；完全兼容 OpenAI API 格式；⚠️ 旧模型名 deepseek-chat / deepseek-reasoner 将于 2026-07-24 停用，请尽快迁移",
-      "cycle": "每月100万token（注册验证）；开发者扶持最高500万/月；DeepSeek-V4开源模型永久免费可商用",
+      "quota": "⚠️ API无免费额度，纯按量付费；网页端 chat.deepseek.com 免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：输入3元/百万（2.5折优惠至2026-05-31，原价12元，缓存命中0.025元），输出6元/百万（原价24元）；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；⚠️ deepseek-chat/deepseek-reasoner 将于 2026-07-24 停用",
+      "cycle": "无免费Token；网页端永久免费",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
-        "base_url": "https://api.deepseek.com/v1",
+        "base_url": "https://api.deepseek.com",
         "models": [
           "deepseek-v4-pro",
           "deepseek-v4-flash",
           "deepseek-chat",
-          "deepseek-reasoner",
-          "deepseek-v3",
-          "deepseek-r1"
+          "deepseek-reasoner"
         ]
       }
     },
     {
       "name": "Anthropic Claude API",
-      "quota": "新用户可能赠送 $5 API 积分（⚠️ 2026年未找到官方明确确认，部分账户可能不再自动获得；可用于全系列 Claude Opus、Sonnet、Haiku 模型；建议注册后实际确认）；2026年5月获谷歌400亿美元投资，年化收入达300亿美元；API速率大幅提升（输入速率提升16倍）；Anthropic已停止向中国资本持有的集团出售Claude服务",
-      "cycle": "一次性注册积分（30天有效）",
+      "quota": "⚠️ 官方定价页面无任何免费额度，纯按量付费（Claude Opus 4.6：输入$5/百万，输出$25/百万；Claude Sonnet 4.6：输入$3/百万，输出$15/百万；Claude Haiku 4.5：输入$1/百万，输出$5/百万）；Verified 2026-05-19",
+      "cycle": "无免费API额度",
       "url": "https://console.anthropic.com",
       "develop": {
         "document_url": "https://docs.anthropic.com/en/api/getting-started",
@@ -450,7 +449,7 @@
     },
     {
       "name": "Baseten",
-      "quota": "新用户赠送 $30 免费积分（可部署任意 HuggingFace 模型，支持 GPU 推理、Serverless 函数）",
+      "quota": "有限免费请求次数，超出按量付费",
       "cycle": "一次性注册积分（用完为止）",
       "url": "https://www.baseten.co",
       "develop": {
@@ -918,7 +917,7 @@
       "name": "SOPHNET",
       "quota": "新用户注册赠送 1000万 Tokens；支持 DeepSeek R1 满血版、QwQ-32B、DeepSeek V3 等主流模型",
       "cycle": "一次性注册赠送（用完为止）",
-      "url": "https://www.sophnet.com",
+      "url": "https://www.sophnet.com/",
       "develop": {
         "document_url": "https://www.sophnet.com",
         "base_url": "https://api.sophnet.com/v1",
@@ -984,7 +983,7 @@
     },
     {
       "name": "ZenMux",
-      "quota": "Agens 1.5 Pro 免费使用；企业级大模型聚合平台，一站式访问 OpenAI、Anthropic、Google、DeepSeek 等主流模型",
+      "quota": "新用户赠送$1（聚合平台，非Token来源）",
       "cycle": "永久免费（Agens 1.5 Pro）",
       "url": "https://zenmux.ai",
       "develop": {
@@ -1161,9 +1160,9 @@
       "name": "Scitely",
       "quota": "无限制免费API访问（社区版适用于个人和非商业用途，遵循公平使用政策）；支持50+前沿AI模型，包含DeepSeek R1/V3、Qwen、Kimi、Llama 4、GLM等；非功能缩水的演示版，与企业团队使用的相同模型",
       "cycle": "永久免费（社区版个人和非商业用途）",
-      "url": "https://platform.scitely.com",
+      "url": "https://api.scitely.com/",
       "develop": {
-        "document_url": "https://platform.scitely.com/docs",
+        "document_url": "https://api.scitely.com/v1",
         "base_url": "https://api.scitely.com/v1",
         "models": [
           "deepseek-r1",
@@ -1401,8 +1400,8 @@
     },
     {
       "name": "OpenAI API",
-      "quota": "新账户可能赠送 $5 免费积分（⚠️ 2025年8月起部分新账户不再自动获赠积分，2026年情况未完全确认，因地区和账户而异，不可靠；可用于 GPT-4o Mini、GPT-4o、GPT-5、GPT-5.5、o3 等全系列模型；2026年5月1日已发布GPT-5.5；积分3个月有效，过期清零不可延期）",
-      "cycle": "一次性注册积分（3个月有效，过期清零不可延期）",
+      "quota": "⚠️ 官方定价页面无任何免费额度，纯按量付费（GPT-5.5：输入$5/百万，输出$30/百万；GPT-5.4：输入$2.50/百万，输出$15/百万；GPT-5.4 mini：输入$0.75/百万，输出$4.50/百万）；网页端chatgpt.com有免费版但有限制；Verified 2026-05-19",
+      "cycle": "无免费API额度",
       "url": "https://platform.openai.com",
       "develop": {
         "document_url": "https://platform.openai.com/docs",
@@ -1471,6 +1470,7 @@
         "document_url": "https://cloud.google.com/vertex-ai/docs",
         "base_url": "https://{REGION}-aiplatform.googleapis.com/v1",
         "models": [
+          "gemini-4.0",
           "gemini-2.5-flash",
           "gemini-2.5-pro",
           "gemini-3.0-flash",
@@ -1496,7 +1496,7 @@
     },
     {
       "name": "Featherless AI",
-      "quota": "所有模型目前免费使用（支持 30000+ 开源模型，含 DeepSeek R1/V3、Qwen3-Coder-480B、GLM-5、Kimi-K2.5、GPT-OSS-120B、Llama 4 等主流模型）；OpenAI 兼容 API；上下文约 32678 tokens，最大输出 4096 tokens；Basic 付费计划 $10/月（15B以下模型无限token，2并发）",
+      "quota": "按量付费，无永久免费层（仅少量免费测试请求）",
       "cycle": "永久免费（当前所有模型免费；政策以官方公告为准）",
       "url": "https://featherless.ai",
       "develop": {
