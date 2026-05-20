@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-19",
+  "updatedAt": "2026-05-20",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 4.0：已发布（原生多模态架构，2小时4K视频分析，端云协同，响应速度提升40%，2026-05-19开放API接入，免费层政策待确认）；Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 2.5 Pro：输入输出token免费（5 RPM/25万TPM/100 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（15 RPM/25万TPM/1000 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/500 RPD）；Gemini 3.1 Pro 预览版：输入输出token免费（5 RPM）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 4.0：已发布（原生多模态架构，2小时4K视频分析，端云协同，响应速度提升40%，2026-05-19开放API接入，免费层政策待确认）；Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费（3 RPM/15K TPM/14400 RPD）；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.5 Pro及Gemini 3.1 Pro自2026年4月1日起移除免费层（已转为付费）；Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated（免费层不适用于EU/EEA/UK地区）",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
@@ -282,8 +282,8 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "⚠️ API无免费额度，纯按量付费；网页端 chat.deepseek.com 免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：输入3元/百万（2.5折优惠至2026-05-31，原价12元，缓存命中0.025元），输出6元/百万（原价24元）；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；⚠️ deepseek-chat/deepseek-reasoner 将于 2026-07-24 停用",
-      "cycle": "无免费Token；网页端永久免费",
+      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端 chat.deepseek.com 免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：输入3元/百万（2.5折优惠至2026-05-31，原价12元，缓存命中0.025元），输出6元/百万（原价24元）；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；⚠️ deepseek-chat/deepseek-reasoner 将于 2026-07-24 停用",
+      "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
@@ -1019,7 +1019,7 @@
     },
     {
       "name": "移动云（中国移动）一站式模型托管平台",
-      "quota": "全新 MoMA（移动模型服务平台）已于2026年5月8日在移动云大会正式发布；接入超过 300 款国内主流 AI 大模型（九天、豆包、通义千问等），为目前国内最大；首创 Token 集约化运营模式；定位为「国内首个开放普惠的 AI 模型超级入口」；实测显示目前平台可免费使用；原新用户2500万tokens免费体验活动（2025年12月31日截止）已被MoMA平台取代",
+      "quota": "全新 MoMA（移动模型服务平台）已于2026年5月8日在移动云大会正式发布；新用户注册即送9000万Tokens体验包（涵盖Ernie 4.5T系列、X1T系列、DeepSeek系列等9款主流模型，各模型独立额度）；接入超过300款国内主流AI大模型（九天、豆包、通义千问等），为目前国内最大；首创Token集约化运营模式与「模型联邦+智能路由」技术，可按成本/效果优先自动匹配最优模型，降低约30%单位成本；定位为「国内首个开放普惠的AI模型超级入口」；原新用户2500万tokens免费体验活动（2025年12月31日截止）已被MoMA平台取代",
       "cycle": "MoMA平台全新上线（2026-05-08发布，具体免费政策以官方公告为准）",
       "url": "https://ecloud.10086.cn",
       "develop": {
@@ -1562,6 +1562,50 @@
           "kat-coder-pro-v2",
           "kat-coder-pro-v1",
           "kat-coder-air-v1"
+        ]
+      }
+    },
+    {
+      "name": "腾讯云TokenHub",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、MiniMax-M2.7 100万Tokens、HY 2.0 Think 50万Tokens、Kimi-K2.6 50万Tokens、其他模型50-100万Tokens不等；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅",
+      "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效",
+      "url": "https://cloud.tencent.com/product/tokenhub",
+      "develop": {
+        "document_url": "https://cloud.tencent.com/document/product/1823",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "models": [
+          "hy3-preview",
+          "deepseek-v4-flash",
+          "deepseek-v4-pro",
+          "glm-5",
+          "minimax-m2.7",
+          "hunyuan-2.0-thinking-20251109",
+          "hunyuan-2.0-instruct-20251111",
+          "kimi-k2.6",
+          "deepseek-v3.2",
+          "deepseek-r1-0528",
+          "glm-5-turbo",
+          "kimi-k2.5",
+          "minimax-m2.5"
+        ]
+      }
+    },
+    {
+      "name": "AWS Bedrock",
+      "quota": "新用户注册AWS Free Tier可获得最高$200服务抵扣金（$100注册赠送 + $100完成5个入门任务）；可用于Bedrock API调用Claude系列（Opus/Sonnet/Haiku）、OpenAI GPT-5系列、DeepSeek V4、Llama 4、Mistral Large、Amazon Nova、Cohere、Stability AI等全系列模型；需绑定信用卡（$1临时验证，验证后释放）；支持Playground免代码测试；另有AWS Activate创业计划可申请更高额度",
+      "cycle": "免费计划6个月或额度耗尽（以先到者为准）；升级付费计划后剩余额度12个月有效",
+      "url": "https://aws.amazon.com/bedrock",
+      "develop": {
+        "document_url": "https://docs.aws.amazon.com/bedrock/",
+        "base_url": "https://bedrock-runtime.{region}.amazonaws.com",
+        "models": [
+          "anthropic.claude-sonnet-4",
+          "anthropic.claude-opus-4-5",
+          "openai.gpt-5",
+          "deepseek.deepseek-v4-pro",
+          "meta.llama-4-scout",
+          "mistral.mistral-large",
+          "amazon.nova-pro"
         ]
       }
     }

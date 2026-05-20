@@ -1231,5 +1231,32 @@
     "features": "字节跳动推出的端侧AI Agent方案；支持手机端本地运行；可DIY定制Agent能力与行为模式；面向个人用户的轻量级智能体",
     "website": "https://www.volcengine.com/",
     "id": 192
+  },
+  {
+    "id": 193,
+    "name": "IronClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "Rust编写，单二进制部署，支持跨平台运行",
+    "features": "Rust开发的安全优先AI Agent框架；强隔离沙箱机制保障数据安全；本地数据处理，隐私数据不出设备；极低内存占用，适合边缘设备和数据隐私敏感场景；支持多Agent协作",
+    "website": "https://github.com/ironclaw/ironclaw"
+  },
+  {
+    "id": 194,
+    "name": "LightAgent",
+    "developer": "万兴科技（wanxingai）",
+    "releaseTime": "2026.03",
+    "deployment": "开源框架（Apache 2.0），pip一键安装，支持Docker部署",
+    "features": "超轻量开源Agent框架，已原生支持Skills与MCP协议（stdio/SSE）；具备持久记忆、工具调用与Tree-of-Thought推理能力；一步构建自学习Agent，支持多Agent协作；兼容OpenAI、DeepSeek、Qwen等主流大模型；输出OpenAI兼容流式API，可对接任何聊天界面；5分钟即可启动运行",
+    "website": "https://github.com/wanxingai/LightAgent"
+  },
+  {
+    "id": 195,
+    "name": "AgentScope Java",
+    "developer": "阿里云通义实验室",
+    "releaseTime": "2026.03",
+    "deployment": "开源框架，Maven/Gradle依赖引入，支持Spring Boot/Quarkus集成",
+    "features": "面向智能体编程的企业级Java AI Agent框架；ReAct范式实现思考-行动-观察闭环；PlanNotebook复杂任务规划与拆解；自校正结构化输出解析器确保LLM输出格式正确；多级记忆（短期对话记忆/长期语义记忆/多租户隔离）；Human-in-the-Loop人工介入机制；支持GraalVM原生镜像编译与云原生Serverless部署；适配通义千问、GPT-4、Ollama本地模型等主流LLM",
+    "website": "https://github.com/agentscope-ai/agentscope-java"
   }
 ]
