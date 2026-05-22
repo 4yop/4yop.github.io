@@ -1,120 +1,120 @@
 {
-  "updateTime": "2026/5/22 01:17:00",
+  "updateTime": "2026/5/23 00:38:03",
   "data": [
     {
       "domain": "github.com",
       "ip": "20.205.243.166",
-      "avg_delay": 120
+      "avg_delay": 116
     },
     {
       "domain": "alive.github.com",
       "ip": "140.82.112.25",
-      "avg_delay": 242
+      "avg_delay": 246
     },
     {
       "domain": "api.github.com",
       "ip": "20.205.243.168",
-      "avg_delay": 313
+      "avg_delay": 120
     },
     {
       "domain": "api.individual.githubcopilot.com",
-      "ip": "140.82.113.22",
-      "avg_delay": 246
+      "ip": "140.82.113.21",
+      "avg_delay": 236
     },
     {
       "domain": "avatars.githubusercontent.com",
-      "ip": "185.199.109.133",
-      "avg_delay": 81
+      "ip": "185.199.111.133",
+      "avg_delay": 131
     },
     {
       "domain": "avatars0.githubusercontent.com",
       "ip": "185.199.109.133",
-      "avg_delay": 85
+      "avg_delay": 101
     },
     {
       "domain": "avatars1.githubusercontent.com",
-      "ip": "185.199.108.133",
-      "avg_delay": 78
+      "ip": "185.199.109.133",
+      "avg_delay": 97
     },
     {
       "domain": "avatars2.githubusercontent.com",
-      "ip": "185.199.108.133",
-      "avg_delay": 75
+      "ip": "185.199.110.133",
+      "avg_delay": 87
     },
     {
       "domain": "avatars3.githubusercontent.com",
-      "ip": "185.199.108.133",
-      "avg_delay": 81
+      "ip": "185.199.110.133",
+      "avg_delay": 108
     },
     {
       "domain": "avatars4.githubusercontent.com",
-      "ip": "185.199.111.133",
-      "avg_delay": 304
+      "ip": "185.199.109.133",
+      "avg_delay": 120
     },
     {
       "domain": "avatars5.githubusercontent.com",
-      "ip": "185.199.109.133",
-      "avg_delay": 94
+      "ip": "185.199.110.133",
+      "avg_delay": 105
     },
     {
       "domain": "broker.actions.githubusercontent.com",
       "ip": "20.85.130.105",
-      "avg_delay": 285
+      "avg_delay": 683
     },
     {
       "domain": "camo.githubusercontent.com",
-      "ip": "185.199.111.133",
-      "avg_delay": 86
+      "ip": "185.199.108.133",
+      "avg_delay": 97
     },
     {
       "domain": "central.github.com",
-      "ip": "140.82.114.22",
-      "avg_delay": 240
+      "ip": "140.82.112.21",
+      "avg_delay": 252
     },
     {
       "domain": "cloud.githubusercontent.com",
-      "ip": "185.199.110.133",
-      "avg_delay": 79
+      "ip": "185.199.108.133",
+      "avg_delay": 293
     },
     {
       "domain": "codeload.github.com",
       "ip": "20.205.243.165",
-      "avg_delay": 116
+      "avg_delay": 518
     },
     {
       "domain": "collector.github.com",
       "ip": "140.82.112.21",
-      "avg_delay": 661
+      "avg_delay": 445
     },
     {
       "domain": "containers.pkg.github.com",
       "ip": "20.205.243.164",
-      "avg_delay": 116
+      "avg_delay": 517
     },
     {
       "domain": "copilot-proxy.githubusercontent.com",
       "ip": "4.249.131.160",
-      "avg_delay": 256
+      "avg_delay": 260
     },
     {
       "domain": "default.exp-tas.com",
       "ip": "13.107.5.93",
-      "avg_delay": 81
+      "avg_delay": 91
     },
     {
       "domain": "dependabot-actions.githubapp.com",
-      "ip": "140.82.114.22",
-      "avg_delay": 247
+      "ip": "140.82.113.21",
+      "avg_delay": 249
     },
     {
       "domain": "desktop.githubusercontent.com",
-      "ip": "185.199.111.133",
-      "avg_delay": 94
+      "ip": "185.199.109.133",
+      "avg_delay": 292
     },
     {
       "domain": "docker-proxy.pkg.github.com",
       "ip": "20.205.243.164",
-      "avg_delay": 316
+      "avg_delay": 113
     },
     {
       "domain": "docker.pkg.github.com",
@@ -123,293 +123,293 @@
     },
     {
       "domain": "education.github.com",
-      "ip": "140.82.114.21",
-      "avg_delay": 261
-    },
-    {
-      "domain": "favicons.githubusercontent.com",
-      "ip": "185.199.110.133",
-      "avg_delay": 95
-    },
-    {
-      "domain": "fulcio.githubapp.com",
-      "ip": "140.82.112.21",
-      "avg_delay": 447
-    },
-    {
-      "domain": "ghcr.io",
-      "ip": "20.205.243.164",
-      "avg_delay": 115
-    },
-    {
-      "domain": "gist.github.com",
-      "ip": "159.24.3.173",
-      "avg_delay": 9999
-    },
-    {
-      "domain": "github-cloud.githubusercontent.com",
-      "ip": "185.199.109.154",
-      "avg_delay": 84
-    },
-    {
-      "domain": "github-cloud.s3.amazonaws.com",
-      "ip": "52.217.81.60",
-      "avg_delay": 231
-    },
-    {
-      "domain": "github-com.s3.amazonaws.com",
-      "ip": "16.15.254.67",
-      "avg_delay": 230
-    },
-    {
-      "domain": "github-registry-files.githubusercontent.com",
-      "ip": "185.199.108.154",
-      "avg_delay": 76
-    },
-    {
-      "domain": "github-releases.githubusercontent.com",
-      "ip": "185.199.108.154",
-      "avg_delay": 108
-    },
-    {
-      "domain": "github.blog",
-      "ip": "192.0.66.2",
-      "avg_delay": 203
-    },
-    {
-      "domain": "github.community",
-      "ip": "140.82.112.18",
-      "avg_delay": 251
-    },
-    {
-      "domain": "github.dev",
-      "ip": "20.43.185.14",
-      "avg_delay": 120
-    },
-    {
-      "domain": "github.githubassets.com",
-      "ip": "185.199.111.215",
-      "avg_delay": 95
-    },
-    {
-      "domain": "github.global.ssl.fastly.net",
-      "ip": "208.77.47.172",
-      "avg_delay": 9999
-    },
-    {
-      "domain": "github.io",
-      "ip": "185.199.109.153",
-      "avg_delay": 79
-    },
-    {
-      "domain": "github.map.fastly.net",
-      "ip": "185.199.111.133",
-      "avg_delay": 79
-    },
-    {
-      "domain": "githubcopilot.com",
-      "ip": "140.82.114.18",
-      "avg_delay": 244
-    },
-    {
-      "domain": "githubstatus.com",
-      "ip": "185.199.108.153",
-      "avg_delay": 84
-    },
-    {
-      "domain": "launch.actions.githubusercontent.com",
-      "ip": "140.82.114.22",
-      "avg_delay": 248
-    },
-    {
-      "domain": "live.github.com",
-      "ip": "140.82.114.25",
-      "avg_delay": 253
-    },
-    {
-      "domain": "maven.pkg.github.com",
-      "ip": "20.205.243.164",
-      "avg_delay": 324
-    },
-    {
-      "domain": "media.githubusercontent.com",
-      "ip": "185.199.108.133",
-      "avg_delay": 90
-    },
-    {
-      "domain": "mpsghub.actions.githubusercontent.com",
-      "ip": "20.22.118.40",
-      "avg_delay": 638
-    },
-    {
-      "domain": "npm-beta-proxy.pkg.github.com",
-      "ip": "20.205.243.164",
-      "avg_delay": 113
-    },
-    {
-      "domain": "npm-proxy.pkg.github.com",
-      "ip": "20.205.243.164",
-      "avg_delay": 109
-    },
-    {
-      "domain": "npm.pkg.github.com",
-      "ip": "20.205.243.164",
-      "avg_delay": 309
-    },
-    {
-      "domain": "npmregistryv2prod.blob.core.windows.net",
-      "ip": "20.60.7.132",
-      "avg_delay": 282
-    },
-    {
-      "domain": "nuget.pkg.github.com",
-      "ip": "20.205.243.164",
-      "avg_delay": 109
-    },
-    {
-      "domain": "objects-origin.githubusercontent.com",
-      "ip": "140.82.112.22",
-      "avg_delay": 248
-    },
-    {
-      "domain": "objects.githubusercontent.com",
-      "ip": "185.199.110.133",
-      "avg_delay": 91
-    },
-    {
-      "domain": "origin-tracker.githubusercontent.com",
       "ip": "140.82.113.22",
       "avg_delay": 245
     },
     {
+      "domain": "favicons.githubusercontent.com",
+      "ip": "185.199.111.133",
+      "avg_delay": 286
+    },
+    {
+      "domain": "fulcio.githubapp.com",
+      "ip": "140.82.114.22",
+      "avg_delay": 246
+    },
+    {
+      "domain": "ghcr.io",
+      "ip": "20.205.243.164",
+      "avg_delay": 312
+    },
+    {
+      "domain": "gist.github.com",
+      "ip": "20.205.243.166",
+      "avg_delay": 525
+    },
+    {
+      "domain": "github-cloud.githubusercontent.com",
+      "ip": "185.199.108.154",
+      "avg_delay": 301
+    },
+    {
+      "domain": "github-cloud.s3.amazonaws.com",
+      "ip": "52.217.193.209",
+      "avg_delay": 235
+    },
+    {
+      "domain": "github-com.s3.amazonaws.com",
+      "ip": "16.15.207.32",
+      "avg_delay": 237
+    },
+    {
+      "domain": "github-registry-files.githubusercontent.com",
+      "ip": "185.199.111.154",
+      "avg_delay": 85
+    },
+    {
+      "domain": "github-releases.githubusercontent.com",
+      "ip": "185.199.108.154",
+      "avg_delay": 82
+    },
+    {
+      "domain": "github.blog",
+      "ip": "192.0.66.2",
+      "avg_delay": 190
+    },
+    {
+      "domain": "github.community",
+      "ip": "140.82.112.17",
+      "avg_delay": 255
+    },
+    {
+      "domain": "github.dev",
+      "ip": "20.43.185.14",
+      "avg_delay": 116
+    },
+    {
+      "domain": "github.githubassets.com",
+      "ip": "185.199.108.215",
+      "avg_delay": 119
+    },
+    {
+      "domain": "github.global.ssl.fastly.net",
+      "ip": "104.244.43.234",
+      "avg_delay": 9999
+    },
+    {
+      "domain": "github.io",
+      "ip": "185.199.111.153",
+      "avg_delay": 93
+    },
+    {
+      "domain": "github.map.fastly.net",
+      "ip": "185.199.108.133",
+      "avg_delay": 88
+    },
+    {
+      "domain": "githubcopilot.com",
+      "ip": "140.82.113.17",
+      "avg_delay": 246
+    },
+    {
+      "domain": "githubstatus.com",
+      "ip": "185.199.109.153",
+      "avg_delay": 94
+    },
+    {
+      "domain": "launch.actions.githubusercontent.com",
+      "ip": "140.82.113.22",
+      "avg_delay": 249
+    },
+    {
+      "domain": "live.github.com",
+      "ip": "140.82.114.25",
+      "avg_delay": 449
+    },
+    {
+      "domain": "maven.pkg.github.com",
+      "ip": "20.205.243.164",
+      "avg_delay": 320
+    },
+    {
+      "domain": "media.githubusercontent.com",
+      "ip": "185.199.111.133",
+      "avg_delay": 88
+    },
+    {
+      "domain": "mpsghub.actions.githubusercontent.com",
+      "ip": "20.22.118.40",
+      "avg_delay": 443
+    },
+    {
+      "domain": "npm-beta-proxy.pkg.github.com",
+      "ip": "20.205.243.164",
+      "avg_delay": 121
+    },
+    {
+      "domain": "npm-proxy.pkg.github.com",
+      "ip": "20.205.243.164",
+      "avg_delay": 110
+    },
+    {
+      "domain": "npm.pkg.github.com",
+      "ip": "20.205.243.164",
+      "avg_delay": 114
+    },
+    {
+      "domain": "npmregistryv2prod.blob.core.windows.net",
+      "ip": "20.60.7.132",
+      "avg_delay": 284
+    },
+    {
+      "domain": "nuget.pkg.github.com",
+      "ip": "20.205.243.164",
+      "avg_delay": 331
+    },
+    {
+      "domain": "objects-origin.githubusercontent.com",
+      "ip": "140.82.113.21",
+      "avg_delay": 247
+    },
+    {
+      "domain": "objects.githubusercontent.com",
+      "ip": "185.199.111.133",
+      "avg_delay": 89
+    },
+    {
+      "domain": "origin-tracker.githubusercontent.com",
+      "ip": "140.82.114.22",
+      "avg_delay": 247
+    },
+    {
       "domain": "pipelines.actions.githubusercontent.com",
       "ip": "13.107.42.16",
-      "avg_delay": 86
+      "avg_delay": 82
     },
     {
       "domain": "pipelinesghubeus1.actions.githubusercontent.com",
       "ip": "20.242.179.206",
-      "avg_delay": 251
+      "avg_delay": 846
     },
     {
       "domain": "pkg-containers.githubusercontent.com",
       "ip": "185.199.111.154",
-      "avg_delay": 80
+      "avg_delay": 95
     },
     {
       "domain": "pkg.actions.githubusercontent.com",
-      "ip": "185.199.111.154",
-      "avg_delay": 289
+      "ip": "185.199.109.154",
+      "avg_delay": 96
     },
     {
       "domain": "pkg.github.com",
       "ip": "20.205.243.164",
-      "avg_delay": 316
+      "avg_delay": 521
     },
     {
       "domain": "private-user-images.githubusercontent.com",
       "ip": "185.199.108.133",
-      "avg_delay": 112
+      "avg_delay": 282
     },
     {
       "domain": "productionresultssa1.blob.core.windows.net",
-      "ip": "20.209.226.129",
-      "avg_delay": 241
+      "ip": "20.209.227.33",
+      "avg_delay": 242
     },
     {
       "domain": "production-release-asset-2e65be.s3.amazonaws.com",
-      "ip": "16.15.229.181",
-      "avg_delay": 232
+      "ip": "52.216.38.153",
+      "avg_delay": 230
     },
     {
       "domain": "production-repository-file-5c1aeb.s3.amazonaws.com",
-      "ip": "52.217.233.1",
-      "avg_delay": 233
+      "ip": "54.231.193.249",
+      "avg_delay": 242
     },
     {
       "domain": "production-user-asset-6210df.s3.amazonaws.com",
-      "ip": "16.15.207.142",
-      "avg_delay": 228
+      "ip": "16.182.65.193",
+      "avg_delay": 238
     },
     {
       "domain": "pypi.pkg.github.com",
       "ip": "20.205.243.164",
-      "avg_delay": 112
+      "avg_delay": 122
     },
     {
       "domain": "raw.githubusercontent.com",
-      "ip": "185.199.108.133",
-      "avg_delay": 89
+      "ip": "185.199.111.133",
+      "avg_delay": 95
     },
     {
       "domain": "release-assets.githubusercontent.com",
-      "ip": "185.199.109.133",
-      "avg_delay": 79
+      "ip": "185.199.111.133",
+      "avg_delay": 93
     },
     {
       "domain": "results-receiver.actions.githubusercontent.com",
-      "ip": "140.82.112.22",
-      "avg_delay": 239
+      "ip": "140.82.113.22",
+      "avg_delay": 246
     },
     {
       "domain": "rubygems.pkg.github.com",
-      "ip": "20.200.245.241",
-      "avg_delay": 101
+      "ip": "20.205.243.164",
+      "avg_delay": 119
     },
     {
       "domain": "run-actions-1-azure-eastus.actions.githubusercontent.com",
       "ip": "20.85.130.105",
-      "avg_delay": 279
+      "avg_delay": 497
     },
     {
       "domain": "runner-auth.actions.githubusercontent.com",
-      "ip": "140.82.113.22",
-      "avg_delay": 251
+      "ip": "140.82.114.22",
+      "avg_delay": 250
     },
     {
       "domain": "runnerghubeus1.actions.githubusercontent.com",
       "ip": "40.88.240.168",
-      "avg_delay": 281
+      "avg_delay": 478
     },
     {
       "domain": "setup-tools.actions.githubusercontent.com",
-      "ip": "150.171.110.102",
-      "avg_delay": 86
+      "ip": "150.171.110.68",
+      "avg_delay": 135
     },
     {
       "domain": "swift.pkg.github.com",
       "ip": "20.205.243.164",
-      "avg_delay": 2093
+      "avg_delay": 122
     },
     {
       "domain": "timestamp.githubapp.com",
-      "ip": "140.82.112.22",
-      "avg_delay": 246
+      "ip": "140.82.112.21",
+      "avg_delay": 255
     },
     {
       "domain": "tokenghub.actions.githubusercontent.com",
       "ip": "20.85.108.33",
-      "avg_delay": 280
+      "avg_delay": 287
     },
     {
       "domain": "tuf-repo.github.com",
-      "ip": "185.199.109.153",
-      "avg_delay": 95
+      "ip": "185.199.110.153",
+      "avg_delay": 514
     },
     {
       "domain": "user-images.githubusercontent.com",
-      "ip": "185.199.111.133",
-      "avg_delay": 75
+      "ip": "185.199.108.133",
+      "avg_delay": 78
     },
     {
       "domain": "visualstudio.com",
-      "ip": "150.171.74.16",
-      "avg_delay": 86
+      "ip": "150.171.73.16",
+      "avg_delay": 74
     },
     {
       "domain": "vscode.dev",
-      "ip": "150.171.110.138",
-      "avg_delay": 109
+      "ip": "150.171.110.97",
+      "avg_delay": 104
     },
     {
       "domain": "vstoken.actions.githubusercontent.com",
