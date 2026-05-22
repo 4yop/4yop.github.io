@@ -1258,5 +1258,41 @@
     "deployment": "开源框架，Maven/Gradle依赖引入，支持Spring Boot/Quarkus集成",
     "features": "面向智能体编程的企业级Java AI Agent框架；ReAct范式实现思考-行动-观察闭环；PlanNotebook复杂任务规划与拆解；自校正结构化输出解析器确保LLM输出格式正确；多级记忆（短期对话记忆/长期语义记忆/多租户隔离）；Human-in-the-Loop人工介入机制；支持GraalVM原生镜像编译与云原生Serverless部署；适配通义千问、GPT-4、Ollama本地模型等主流LLM",
     "website": "https://github.com/agentscope-ai/agentscope-java"
+  },
+  {
+    "name": "DuMate（搭子）",
+    "developer": "百度智能云",
+    "releaseTime": "2026.03.22",
+    "deployment": "桌面客户端一键安装（Windows/macOS），本地安全沙箱运行，数据不出设备",
+    "features": "国内首个国产企业级满血版OpenClaw，对标OpenClaw+Claude Cowork；91%核心模块自主研发；支持Word/Excel/PPT全流程操作、文件智能管理、多源数据分析、浏览器自动化；内置百度搜索Skill（下载超4.5万次）；打通微信/飞书/企业微信等国内IM；个人每日获赠1000积分；2026年5月8日登顶PinchBench和DeepResearch双榜全球第一；通过信通院可信AI双项认证获功能4+级最高评级",
+    "website": "https://cloud.baidu.com/product/dumate.html",
+    "id": 196
+  },
+  {
+    "name": "GenericAgent",
+    "developer": "A3实验室（深圳夸夸菁领科技 × 复旦大学知识工场实验室）",
+    "releaseTime": "2026.01.11",
+    "deployment": "开源项目（MIT协议），pip安装，支持本地运行和云端部署",
+    "features": "极简自进化Agent框架，核心代码仅3300行，Agent Loop仅92行；9个原子工具覆盖完整Agent能力环；相同任务Token消耗仅OpenClaw的29.8%、Claude Code的35.1%；上下文信息密度最大化设计，四道闸口过滤噪音；自我进化流水线：成功经验提炼成Skill；支持微信朋友圈自动互动等社交场景；GitHub 10.2k+ Stars",
+    "website": "https://github.com/lsdefine/GenericAgent",
+    "id": 197
+  },
+  {
+    "name": "Marvis（马维斯）",
+    "developer": "腾讯（应用宝团队）",
+    "releaseTime": "2026.05.20",
+    "deployment": "操作系统层级AI助手，支持Windows/Mac/Android/iOS多端，同账号互通",
+    "features": "操作系统层级AI助手，直接触达系统设置、文件管理、应用调用与硬件信息；1主Agent+5副Agent协作架构（File/Computer/App/Browser/Search）；效率模式端云协同+隐私模式完全离线（端侧模型）；文件语义搜索穿透文档内容，图片人脸识别与场景分类；跨端可视化操控，手机远程查看并操控电脑屏幕；L2级安全兜底机制，敏感操作强制确认；每日1000万免费Token；与微软Foundry、英特尔OpenVINO战略合作；吉祥物\"小牛马\"可视化多Agent办公场景",
+    "website": "https://marvis.qq.com/",
+    "id": 198
+  },
+  {
+    "name": "OpenAkita",
+    "developer": "OpenAkita开源社区",
+    "releaseTime": "2026.02",
+    "deployment": "开源项目（Apache 2.0），Tauri+React桌面终端，支持Windows/macOS/Linux",
+    "features": "自进化开源AI助手框架；每日凌晨自动记忆整理、自检修复、任务复盘；8种预设人格（女友/管家/Jarvis等）含主动问候与活人感系统；3分钟快速配置开箱即用；支持30+ LLM提供商，优先级路由+自动故障转移；内置89+工具（Shell/浏览器/桌面操作/MCP）；支持Telegram/飞书/钉钉/企业微信/QQ/OneBot六大IM平台；会发表情包（5700+）；Plan模式复杂任务自动拆解与进度追踪；遵循Agent Skills/MCP开放标准",
+    "website": "https://github.com/openakita/openakita",
+    "id": 199
   }
 ]

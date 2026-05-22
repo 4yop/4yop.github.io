@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-05-22",
+  "updatedAt": "2026-05-23",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
-      "quota": "Gemini 4.0：已发布（原生多模态架构，2小时4K视频分析，端云协同，响应速度提升40%，2026-05-19开放API接入，免费层政策待确认）；Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费（3 RPM/15K TPM/14400 RPD）；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.5 Pro及Gemini 3.1 Pro自2026年4月1日起移除免费层（已转为付费）；Gemini 2.0 Flash和Gemini 3 Pro Preview已标记为deprecated（免费层不适用于EU/EEA/UK地区）",
+      "quota": "Gemini 3.5 Flash：2026年5月19日Google I/O发布（289 tokens/秒，竞品4倍速度，1M上下文，64K输出，免费开放）；Gemini 4.0：已发布（原生多模态架构，2小时4K视频分析，端云协同，免费层政策待确认）；Gemini 3 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash：输入输出token免费（5 RPM/25万TPM/20 RPD）；Gemini 2.5 Flash-Lite：输入输出token免费（10 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash-Lite 预览版：输入输出token免费（15 RPM/25万TPM/500 RPD）；Gemini 3.1 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini 2.5 Flash TTS：文本转语音免费（3 RPM/10K TPM/10 RPD）；Gemini Robotics-ER 1.6：免费预览（5 RPM/25万TPM/20 RPD）；Gemma 3/4系列：免费（3 RPM/15K TPM/14400 RPD）；Google搜索/地图接地：500 RPD免费；⚠️ Gemini 2.5 Pro及Gemini 3.1 Pro自2026年4月1日起移除免费层（已转为付费）；Gemini 3.5 Pro预计2026年6月发布；免费层不适用于EU/EEA/UK地区",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ai.google.dev",
       "develop": {
         "document_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
         "base_url": "https://generativelanguage.googleapis.com",
         "models": [
+          "gemini-3.5-flash",
           "gemini-4.0",
           "gemini-3-flash",
           "gemini-2.5-flash",
@@ -32,7 +33,7 @@
     },
     {
       "name": "阿里云百炼",
-      "quota": "新用户开通即赠 7000万Tokens + 100张AI生图 + 50秒视频生成额度（免费领取、无需绑卡）；Qwen-Turbo、Qwen-Plus等模型100万tokens/天内免费调用；另赠200元无门槛代金券；DataWorks API已调整为按量付费（标准版10万次/月、专业版50万次/月）；新增模型：Qwen3.5-Omni、Qwen3-Coder-Plus、DeepSeek-R1-0528等；新增Coding Plan Lite版（首月7.9元无限调用Qwen3-Coder）",
+      "quota": "新用户开通即赠 7000万Tokens + 100张AI生图 + 50秒视频生成额度（免费领取、无需绑卡）；Qwen-Turbo、Qwen-Plus等模型100万tokens/天内免费调用；另赠200元无门槛代金券；DataWorks API已调整为按量付费（标准版10万次/月、专业版50万次/月）；2026年5月20日阿里云峰会宣布全面开放接入第三方大模型：已上架智谱GLM-5.1、MiniMax M2.7、月之暗面Kimi K2.6、Pixverse-v6、可灵、Vidu Q3、阶跃星辰等；模型列表新增Qwen3.5-Omni、Qwen3-Coder-Plus、DeepSeek-R1-0528等；新推出Coding Plan Lite版（首月7.9元无限调用Qwen3-Coder）",
       "cycle": "有效期180天（此前为90天）；免费额度用完可开启「用完即停」避免扣费",
       "url": "https://bailian.console.aliyun.com/",
       "develop": {
@@ -1547,7 +1548,7 @@
       "url": "https://www.sensenova.cn",
       "develop": {
         "document_url": "https://www.sensenova.cn/token-plan",
-        "base_url": "https://api.sensenova.cn/v1",
+        "base_url": "https://token.sensenova.cn/v1",
         "models": [
           "sensenova-6.7-flash-lite",
           "sensenova-u1-fast",
