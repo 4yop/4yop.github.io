@@ -143,7 +143,7 @@
     },
     {
       "name": "智谱AI",
-      "quota": "新用户注册赠送 2000万 token（此前为500万，已大幅提升，永久有效）；GLM-4-Air：每月100万tokens（长期有效，每月自动重置）；GLM-4V（多模态）：每月50万tokens（长期有效）；GLM-4-Flash、GLM-4.7-Flash、GLM-4.5-Flash 永久免费调用（cost=0，30 QPS）；GLM-5-Turbo、GLM-5 等旗舰模型按量付费；每日签到送1万tokens，邀请好友送50万tokens；⚠️ 2026年内智谱进行了三次API价格上调，GLM-5国内API价格提升约50%；GLM Coding Plan旧套餐已于2026年4月30日关闭迁移",
+      "quota": "新用户注册赠送 2000万 token（此前为500万，已大幅提升，永久有效）；GLM-4-Air：每月100万tokens（长期有效，每月自动重置）；GLM-4V（多模态）：每月50万tokens（长期有效）；GLM-4-Flash、GLM-4.7-Flash 永久免费调用（cost=0，30 QPS）；GLM-5-Turbo、GLM-5 等旗舰模型按量付费；每日签到送1万tokens，邀请好友送50万tokens；⚠️ GLM-4.5-Flash已于2026年1月下线，自动路由到GLM-4.7-Flash；GLM-4.6V-Flash免费视觉模型可用；GLM-5.1（744B/40B激活）已发布；2026年内智谱进行了三次API价格上调，GLM-5国内API价格提升约50%；GLM Coding Plan旧套餐已于2026年4月30日关闭迁移",
       "cycle": "新用户500万token；Flash系列模型永久免费；GLM-4-Air每月100万tokens自动重置；GLM-5系列按量付费",
       "url": "https://bigmodel.cn",
       "develop": {
@@ -374,7 +374,7 @@
     },
     {
       "name": "七牛云 AI 推理",
-      "quota": "新用户注册首次体验赠送 300万 token；邀请活动可额外获得 1000万 token；支持 DeepSeek、Kimi、Claude 等 50+ 模型",
+      "quota": "新用户注册首次体验赠送 600万 token（此前为300万，已大幅提升，无时效限制）；邀请活动可额外获得 1000万 token；支持 DeepSeek、Kimi、Claude、Gemini 等 50+ 模型",
       "cycle": "赠送额度2年有效",
       "url": "https://developer.qiniu.com/aitokenapi",
       "develop": {
@@ -657,7 +657,7 @@
     },
     {
       "name": "Ling Studio（蚂蚁百灵）",
-      "quota": "每日 50万 token（支持 Ling-1T、Ring-1T 推理模型及 Ming 多模态模型）",
+      "quota": "每日 50万 token（支持 Ling-1T、Ring-1T 推理模型及 Ming 多模态模型）；2026年5月9日发布万亿级旗舰思考模型Ring-2.6-1T（支持high/xhigh双模式推理，限时一周免费体验，已上线OpenRouter）；Ring-2.6-1T面向复杂逻辑/数学证明/多路径探索等高难度任务优化，推理准确率较前代提升23%",
       "cycle": "每日重置（永久免费层）",
       "url": "https://ling.tbox.cn",
       "develop": {
@@ -1509,7 +1509,7 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "MiMo Orbit 百万亿 Token 创造者激励计划：注册申请可获得数亿免费 Token（有用户反馈获 7 亿 Token）；活动时间 2026-04-28 至 2026-05-28（⚠️ 即将到期，还剩约7天，赠完即止）；通过邀请链接注册可额外获 ¥10 API 体验金；MiMo-V2-Flash 模型限时免费（RPM: 100，上下文 256K，最大输出 128K）；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
+      "quota": "MiMo Orbit 百万亿 Token 创造者激励计划：注册申请可获得数亿免费 Token（有用户反馈获 7 亿 Token）；活动时间 2026-04-28 至 2026-05-28（⚠️ 即将到期，还剩约5天，赠完即止）；通过邀请链接注册可额外获 ¥10 API 体验金；MiMo-V2-Flash 模型限时免费（RPM: 100，上下文 256K，最大输出 128K）；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
       "cycle": "创造者激励计划赠完即止（2026-04-28至05-28）；MiMo-V2-Flash 限时免费；Token Plan 按量付费",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
@@ -1655,6 +1655,86 @@
           "glm-4.7",
           "glm-4.6",
           "glm-4.5"
+        ]
+      }
+    },
+    {
+      "name": "心流平台（iFlow）",
+      "quota": "当前服务完全免费，无Token次数限制（仅1并发限制，一次只能发起1个请求）；支持DeepSeek-R1/V3、Kimi-K2、Qwen3-Coder等主流模型；OpenAI兼容API格式；平台背景为阿里云支持的企业级服务",
+      "cycle": "永久免费（仅1并发限制，政策以官方公告为准）",
+      "url": "https://platform.iflow.cn",
+      "develop": {
+        "document_url": "https://docs.iflow.cn",
+        "base_url": "https://apis.iflow.cn/v1",
+        "models": [
+          "deepseek-r1",
+          "deepseek-v3",
+          "kimi-k2",
+          "qwen3-coder",
+          "qwen3-32b"
+        ]
+      }
+    },
+    {
+      "name": "LLM7.io",
+      "quota": "无需注册即可使用（用unused作为API Key）；免费Token可从 token.llm7.io 获取更高限额；免费层约20 RPM / 100次/小时；支持多模型路由，自动选择最优免费模型；提供OpenAI兼容API，可直接替换base_url",
+      "cycle": "永久免费（无需注册，获取免费Token可提升限额）",
+      "url": "https://llm7.io",
+      "develop": {
+        "document_url": "https://docs.llm7.io",
+        "base_url": "https://api.llm7.io/v1",
+        "models": [
+          "default"
+        ]
+      }
+    },
+    {
+      "name": "Kluster AI",
+      "quota": "新用户注册验证邮箱后赠送$5免费积分；仅支持Batch API异步批处理（不支持实时对话）；支持Llama 3.1 405B Instruct、DeepSeek-R1、Qwen 2.5 72B等大模型；使用JSONL格式提交批处理任务，结果异步返回；适合大规模数据标注、批量文本分类、数据集增强等场景",
+      "cycle": "$5一次性注册积分（用完为止；Batch API模式，按公平使用原则）",
+      "url": "https://kluster.ai",
+      "develop": {
+        "document_url": "https://kluster.ai",
+        "base_url": "https://api.kluster.ai/v1",
+        "models": [
+          "meta-llama/Llama-3.1-405B-Instruct",
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen2.5-72B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "Lepton AI（NVIDIA DGX Cloud）",
+      "quota": "新用户注册即赠送$5免费积分（无需信用卡，GitHub登录即可）；支持Llama 3.1 70B、Mistral 7B、SDXL图像生成、WhisperX语音识别等；OpenAI兼容API格式；已并入NVIDIA DGX Cloud生态，可申请获取更高计算额度",
+      "cycle": "$5一次性注册积分（用完为止；NVIDIA收购后免费政策以官方公告为准）",
+      "url": "https://www.lepton.ai",
+      "develop": {
+        "document_url": "https://www.lepton.ai/docs",
+        "base_url": "https://api.lepton.ai/v1",
+        "models": [
+          "llama3-1-70b",
+          "mistral-7b",
+          "sdxl",
+          "whisperx"
+        ]
+      }
+    },
+    {
+      "name": "阶跃星辰 (StepFun)",
+      "quota": "Step 3.5 Flash模型完全免费（无累计用量限制，196B MoE总参数/11B激活，256K上下文，专为Agent场景设计，支持function calling/工具调用）；注册即赠送免费额度可用于Step系列全系模型（Step 3.5 Flash、Step 3、Step 2、Step 1、Step 1o系列视觉模型、StepAudio语音模型等）；V0免费层：5 RPM/10 QPM/500万TPM；OpenRouter上Step 3.5 Flash也标注为:free可免费调用；2026年2月发布Step 3.5 Flash开源模型，CNCF项目成员，支持昇腾/沐曦/壁仞/燧原等国产芯片适配",
+      "cycle": "Step 3.5 Flash永久免费；新用户注册赠送免费额度一次性；V0免费层级长期有效",
+      "url": "https://platform.stepfun.com",
+      "develop": {
+        "document_url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+        "base_url": "https://api.stepfun.com/v1",
+        "models": [
+          "step-3.5-flash",
+          "step-3",
+          "step-2",
+          "step-1",
+          "step-1o-turbo-vision",
+          "step-r1-v-mini",
+          "stepaudio-2.5-realtime"
         ]
       }
     }

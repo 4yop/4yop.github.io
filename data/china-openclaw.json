@@ -1294,5 +1294,50 @@
     "features": "自进化开源AI助手框架；每日凌晨自动记忆整理、自检修复、任务复盘；8种预设人格（女友/管家/Jarvis等）含主动问候与活人感系统；3分钟快速配置开箱即用；支持30+ LLM提供商，优先级路由+自动故障转移；内置89+工具（Shell/浏览器/桌面操作/MCP）；支持Telegram/飞书/钉钉/企业微信/QQ/OneBot六大IM平台；会发表情包（5700+）；Plan模式复杂任务自动拆解与进度追踪；遵循Agent Skills/MCP开放标准",
     "website": "https://github.com/openakita/openakita",
     "id": 199
+  },
+  {
+    "id": 200,
+    "name": "AionUi",
+    "developer": "iOfficeAI",
+    "releaseTime": "2026.03",
+    "deployment": "桌面安装包（Windows/macOS/Linux），开源项目",
+    "features": "AI工具统一管理平台，内置CLI工具管理层；支持300+模型接入与多模型对话；可作为OpenClaw可视化前端，低门槛管理Agent技能与配置；GitHub 18.9k+ Stars；MIT开源协议",
+    "website": "https://github.com/iOfficeAI/AionUi"
+  },
+  {
+    "id": 201,
+    "name": "Cherry Studio",
+    "developer": "CherryHQ",
+    "releaseTime": "2026.01",
+    "deployment": "DMG/EXE/Linux桌面客户端，一键安装，开源项目（Apache 2.0）",
+    "features": "开源多模型AI桌面客户端；支持300+模型提供商接入；可视化界面实现OpenClaw一键部署，自动检测并补全依赖环境；内置知识库管理、AI编程辅助；支持多Agent对话与MCP协议；GitHub 41.5k+ Stars，5900+次提交",
+    "website": "https://github.com/CherryHQ/cherry-studio"
+  },
+  {
+    "id": 202,
+    "name": "GoClaw",
+    "developer": "NextLevelBuilder.io（smallnest）",
+    "releaseTime": "2026.02",
+    "deployment": "Go单二进制文件部署（~25MB），支持Docker，无运行时依赖",
+    "features": "Go语言重写的企业级AI Agent网关；多租户PostgreSQL + RLS数据隔离；5层安全防护（注入检测/SSRF防护/Shell模式过滤/AES-256-GCM加密）；Agent团队协作与任务面板；20+ LLM提供商，支持MCP协议；7大消息渠道；启动<1秒，比OpenClaw节省90%资源",
+    "website": "https://github.com/nextlevelbuilder/goclaw"
+  },
+  {
+    "id": 203,
+    "name": "bit-Agent（小青龙）",
+    "developer": "九科信息",
+    "releaseTime": "2026.03",
+    "deployment": "企业级SaaS平台，支持私有化部署",
+    "features": "企业级国产AI智能体平台，号称国产「小青龙」对标OpenClaw「小龙虾」；在企业7个真实办公场景测试中全部跑通（OpenClaw仅跑通5个）；GUI操作能力显著优于OpenClaw；Token消耗仅为OpenClaw的几十分之一；支持限定范围内AI自主执行+人类干预的混合模式；面向企业办公自动化和流程自动化场景",
+    "website": "https://www.jiuke.com/"
+  },
+  {
+    "id": 204,
+    "name": "LobeHub",
+    "developer": "LobeHub团队",
+    "releaseTime": "2026.03",
+    "deployment": "云端SaaS平台，支持CLI工具，开源项目",
+    "features": "AI Agent管理与协作平台；提供一键CLI工具从OpenClaw迁移；可视化UI管理与配置Agent；IM集成（Telegram/WhatsApp/Discord等）；内置Skill安全过滤机制，从5400+技能中精选安全可用技能；中文优化界面；支持多模型切换与知识库管理",
+    "website": "https://lobehub.com/"
   }
 ]
