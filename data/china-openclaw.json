@@ -1339,5 +1339,32 @@
     "deployment": "云端SaaS平台，支持CLI工具，开源项目",
     "features": "AI Agent管理与协作平台；提供一键CLI工具从OpenClaw迁移；可视化UI管理与配置Agent；IM集成（Telegram/WhatsApp/Discord等）；内置Skill安全过滤机制，从5400+技能中精选安全可用技能；中文优化界面；支持多模型切换与知识库管理",
     "website": "https://lobehub.com/"
+  },
+  {
+    "id": 205,
+    "name": "Moltis",
+    "developer": "moltis-org开源社区",
+    "releaseTime": "2026.02.12",
+    "deployment": "Rust单二进制文件部署（~60MB），零依赖，支持Docker/Apple Container沙箱隔离",
+    "features": "Rust编写的生产级AI Agent框架，150K行代码零unsafe块；单文件静态编译下载即运行；WASM沙箱隔离每会话独立文件系统/进程/网络空间；内置Prometheus指标与OpenTelemetry追踪；混合向量+全文检索SQLite存储；多Provider路由与故障转移链；自动脱敏API Key/Token/密钥；首次启动安全码无默认密码；支持Telegram/Signal/Discord/Web多渠道；MIT开源协议",
+    "website": "https://moltis.org/"
+  },
+  {
+    "id": 206,
+    "name": "Reasonix",
+    "developer": "esengine开源社区",
+    "releaseTime": "2026.04",
+    "deployment": "开源项目（MIT协议），npm install -g一键安装，支持Tauri桌面客户端",
+    "features": "DeepSeek原生终端AI编码Agent；围绕字节稳定prefix-cache设计append-only运行循环，长会话缓存命中率达99.82%；三大支柱：Cache-First循环（消息只追加不修改）、R1 Thought Harvesting（提取推理链规划信号）、Tool-Call Repair（自动修复DeepSeek工具调用格式bug）；auto模型自动切换（简单用v4-flash复杂用v4-pro）；支持QQ频道远程连接；成本较无缓存优化降低80%；DeepSeek官方文档推荐接入工具；GitHub 4.7k+ Stars",
+    "website": "https://esengine.github.io/DeepSeek-Reasonix/"
+  },
+  {
+    "id": 207,
+    "name": "viaim讯飞智能体耳机（龙虾耳机）",
+    "developer": "未来智能（科大讯飞孵化）",
+    "releaseTime": "2026.05.20",
+    "deployment": "AI硬件设备（入耳式Pro版/挂耳式Air版），端侧AI智能体",
+    "features": "全球首款龙虾形态AI智能体耳机；搭载端侧AI智能体小万，已接入DeepSeek/通义千问/智谱等多款国产大模型自由切换；新增项目功能实现长期记忆能力，从处理一次内容升级为推进一件事情；viaim 2.0系统支持145个国家及地区语言识别与实时三语混合识别；Pro版1549元/Air版1349元；从传统录音耳机到智能办公助手的跨越",
+    "website": "https://www.viaim.ai/"
   }
 ]

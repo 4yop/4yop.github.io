@@ -459,7 +459,7 @@
     },
     {
       "name": "Baseten",
-      "quota": "有限免费请求次数，超出按量付费",
+      "quota": "新用户注册赠送 $30 免费积分（支持任意 HuggingFace 模型部署，按 GPU 计算时间计费；冷启动快）",
       "cycle": "一次性注册积分（用完为止）",
       "url": "https://www.baseten.co",
       "develop": {
@@ -690,8 +690,8 @@
     },
     {
       "name": "Modal",
-      "quota": "Starter 计划每月赠送 $30 免费计算积分（支持 GPU 推理、Serverless 函数、定时任务；初创公司可申请至 $25,000 积分）",
-      "cycle": "每月重置（永久免费层，Starter 计划 $0/月）",
+      "quota": "Starter 计划注册即送 $5/月免费计算积分（添加支付方式后升至 $30/月；支持 GPU 推理、Serverless 函数、定时任务；初创公司可申请至 $25,000 积分）",
+      "cycle": "每月重置（永久免费层，Starter 计划 $0/月，注册送$5/月，添加支付方式后$30/月）",
       "url": "https://modal.com",
       "develop": {
         "document_url": "https://modal.com/docs",
@@ -1350,7 +1350,7 @@
     },
     {
       "name": "NVIDIA NIM (build.nvidia.com)",
-      "quota": "新用户获得 1,000 credits（有效期12个月，1 credit≈1K tokens）；免费API端点支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V4/R1等主流模型",
+      "quota": "新用户获得 1,000 credits（可再申请 4,000，合计 5,000 credits；1 credit≈1K tokens；有效期可选Never Expire永久有效）；免费API端点支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证（中国大陆+86可收验证码）；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V4/R1等主流模型；完全兼容OpenAI ChatCompletion格式",
       "cycle": "每日重置（永久免费层）",
       "url": "https://build.nvidia.com",
       "develop": {
@@ -1595,8 +1595,8 @@
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、MiniMax-M2.7 100万Tokens、HY 2.0 Think 50万Tokens、Kimi-K2.6 50万Tokens、其他模型50-100万Tokens不等；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅",
-      "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、MiniMax-M2.7 100万Tokens、HY 2.0 Think 50万Tokens（⚠️ 2026-06-22下线）、Kimi-K2.6 50万Tokens、Qwen3.5-Plus 100万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324将于2026-05-25下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
+      "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
         "document_url": "https://cloud.tencent.com/document/product/1823",
@@ -1735,6 +1735,86 @@
           "step-1o-turbo-vision",
           "step-r1-v-mini",
           "stepaudio-2.5-realtime"
+        ]
+      }
+    },
+    {
+      "name": "9Router",
+      "quota": "开源AI路由聚合网关（MIT协议，11.4K Star）；本地部署免费使用；支持60+ AI供应商、100+模型；智能3层回退机制（订阅→低价→免费）；RTK Token节省引擎可无损压缩20-65% tokens；Caveman Mode输出再省65%；支持Claude Code、Cursor、Codex、Cline、OpenClaw等10+ CLI工具；OpenAI兼容端点（localhost:20128/v1）；OAuth + API Key双模式认证；多账号轮询负载均衡；Cloudflare边缘隧道远程访问",
+      "cycle": "永久免费（开源MIT协议，本地部署；需自行提供各供应商API Key或OAuth）",
+      "url": "https://9router.com",
+      "develop": {
+        "document_url": "https://github.com/decolua/9router",
+        "base_url": "http://localhost:20128/v1",
+        "models": [
+          "claude-sonnet-4",
+          "gpt-5",
+          "gemini-2.5-flash",
+          "deepseek-r1",
+          "glm-5",
+          "minimax-m2.5",
+          "kimi-k2.5",
+          "qwen3-coder"
+        ]
+      }
+    },
+    {
+      "name": "Free.ai",
+      "quota": "30,000 tokens/天免费（注册后3倍额度）；400+ 免费AI工具（聊天、图像生成、视频生成、TTS、STT、音乐、写作、代码、设计、翻译等18类）；346+ 模型（含38+自托管开源模型：Qwen 2.5 7B-72B、FLUX图像、CogVideoX视频、Kokoro TTS 174声音、Whisper STT、DeepSeek R1 7B等，运行于A100 GPU）；OpenAI兼容REST API；无需信用卡；支持商用；数据不用于训练；100+语言支持；2026年3月上线",
+      "cycle": "每日重置（永久免费层；匿名用户20条聊天/5张图/天，注册用户3倍）",
+      "url": "https://free.ai",
+      "develop": {
+        "document_url": "https://free.ai/api/",
+        "base_url": "https://api.free.ai/v1",
+        "models": [
+          "qwen7b",
+          "qwen72b",
+          "deepseek-r1-7b",
+          "mistral-7b",
+          "flux-schnell",
+          "cogvideox",
+          "kokoro-tts",
+          "whisper-large"
+        ]
+      }
+    },
+    {
+      "name": "AI.cc",
+      "quota": "新用户注册限时赠送免费Token（具体额度以官网最新公告为准）；统一AI API聚合平台，300+模型（GPT-5.5、Claude Opus 4.7、Gemini 3.1 Pro、DeepSeek V4、Llama 4、Qwen 3.6-Plus、Gemma 4、GLM-5.1等）；OpenAI兼容API格式；新加坡总部，亚洲低延迟优化；内置OpenClaw多模型编排框架；AI翻译API、网页抓取服务；比直连零售API节省20%成本",
+      "cycle": "限时免费Token（用完为止）；后续按量付费",
+      "url": "https://www.ai.cc",
+      "develop": {
+        "document_url": "https://docs.ai.cc/",
+        "base_url": "https://api.ai.cc/v1",
+        "models": [
+          "gpt-5.5",
+          "claude-opus-4-7",
+          "gemini-3.1-pro",
+          "deepseek-v4-pro",
+          "llama-4-scout",
+          "qwen3.6-plus",
+          "glm-5.1",
+          "minimax-m2.7"
+        ]
+      }
+    },
+    {
+      "name": "阿里云百炼国际版 (Alibaba Cloud Model Studio)",
+      "quota": "新用户首次开通即赠每模型 100万 tokens 免费额度（新加坡区域International Edition）；覆盖 Qwen 全系列文本/代码/视觉/推理模型（qwen-plus、qwen-flash、qwen3-vl-plus、qvq-max、qwen3-coder-plus等）；另赠 100张AI生图 + 50秒视频生成 + TTS字符额度；无需信用卡；OpenAI兼容API（DashScope API Key）；⚠️ 必须在新加坡区域激活才享免费额度，北京/弗吉尼亚区域无免费额度",
+      "cycle": "激活后90天有效（免费额度从激活时起算，非首次调用）",
+      "url": "https://bailian.console.alibabacloud.com/",
+      "develop": {
+        "document_url": "https://www.alibabacloud.com/help/en/model-studio/new-free-quota",
+        "base_url": "https://dashscope.ap-southeast-1.aliyuncs.com/compatible-mode/v1",
+        "models": [
+          "qwen-plus",
+          "qwen-turbo",
+          "qwen3-coder-plus",
+          "qwen3-vl-plus",
+          "qvq-max",
+          "qwen3.5-omni",
+          "deepseek-r1",
+          "deepseek-v3"
         ]
       }
     }
