@@ -1366,5 +1366,68 @@
     "deployment": "AI硬件设备（入耳式Pro版/挂耳式Air版），端侧AI智能体",
     "features": "全球首款龙虾形态AI智能体耳机；搭载端侧AI智能体小万，已接入DeepSeek/通义千问/智谱等多款国产大模型自由切换；新增项目功能实现长期记忆能力，从处理一次内容升级为推进一件事情；viaim 2.0系统支持145个国家及地区语言识别与实时三语混合识别；Pro版1549元/Air版1349元；从传统录音耳机到智能办公助手的跨越",
     "website": "https://www.viaim.ai/"
+  },
+  {
+    "id": 208,
+    "name": "灵玑OS",
+    "developer": "北京市经信局指导，北京通明湖信息技术应用创新中心联合产业伙伴",
+    "releaseTime": "2026.05.15",
+    "deployment": "开源开放项目，成果面向社会开源开放，支持按需取用、灵活组装",
+    "features": "国内首个开源开放AI智能体共性基础设施；破解智能体产业\"连不上、干不成、管不住、控不稳\"四大痛点；先期核心成果含灵玑·织语(V2.0)能力引擎（低成本存量系统适配复用）和灵玑·星绽(V2.0)框内核操作系统架构（融合宏内核高性能与微内核高安全）；为智能体规模化落地提供安全可控运行底座；在政务、工业、医疗等重点领域打造标杆应用",
+    "website": "https://www.beijing.gov.cn/"
+  },
+  {
+    "id": 209,
+    "name": "字节智助",
+    "developer": "字节跳动",
+    "releaseTime": "2026.05.08",
+    "deployment": "企业级SaaS平台，覆盖智能会议纪要、文档自动生成、邮件智能回复三大场景",
+    "features": "字节跳动发布的企业级AI办公助手；核心覆盖智能会议纪要、文档自动生成、邮件智能回复三大场景；依托字节跳动豆包大模型能力；面向企业办公场景的智能体产品；与火山引擎Agent Plan深度协同",
+    "website": "https://www.volcengine.com/"
+  },
+  {
+    "id": 210,
+    "name": "Agent Plan（火山引擎智能体套餐包）",
+    "developer": "字节跳动火山引擎",
+    "releaseTime": "2026.05.11",
+    "deployment": "云端SaaS订阅服务，40元/月起，适配Claude Code/OpenClaw/Hermes Agent/TRAE等平台",
+    "features": "业界首个Agent套餐包，将Model与Harness能力深度整合；集成字节自研Seed系列SOTA模型(Doubao-Seed/Seedance/Seedream)及GLM-5.1、Kimi-K2.6等三方模型；内置联网搜索、Embedding记忆等Harness工具；引入AFP(Agent燃料值)统一计量；Auto模式智能调度性价比最高模型；Small/Medium/Large/Max四档订阅；Medium及以上免费体验ArkClaw",
+    "website": "https://www.volcengine.com/docs/82379/2229107"
+  },
+  {
+    "id": 211,
+    "name": "枫清Fabarta龙虾版",
+    "developer": "枫清科技（Fabarta）",
+    "releaseTime": "2026.01",
+    "deployment": "本地部署，深度适配Mac mini(M4芯片优先)及银河麒麟系统，支持Windows/macOS/Linux",
+    "features": "中国版龙虾，全本地化部署数据永不离设备；内置本地个人记忆库基于企业级RAG能力构建长期记忆体系；本地执行+人工终审双机制，关键步骤需人工确认；白名单权限管理全程可审计；深度适配macOS与麒麟操作系统；开箱即用零配置；通过信通院首批智能助手Claw基准评估获最高功能4+级；企业版Mac Studio知识中台(EKC)实现数据不出域精细管控",
+    "website": "https://fabarta.com/"
+  },
+  {
+    "id": 212,
+    "name": "ModelEngine Nexent",
+    "developer": "华为",
+    "releaseTime": "2026.05.21",
+    "deployment": "企业级私有化部署，支持云端和Docker本地部署，零代码开发",
+    "features": "华为发布的零代码智能体自动生成平台；支持自然语言交互直接生成Agent，Agent上线周期缩短80%；预置30+主流大模型；支持GPU细粒度调度与1:10切分；Skill/提示词/记忆自动优化实现自进化能力；依托MCP开放生态丰富工具集成；支持多智能体协作；作为华为AI DC数据基础设施全栈方案的核心组件发布",
+    "website": "https://nexent.tech/zh"
+  },
+  {
+    "id": 213,
+    "name": "Uni-Agent",
+    "developer": "veRL开源团队（字节跳动技术团队）",
+    "releaseTime": "2026.05",
+    "deployment": "开源框架（Apache 2.0），pip安装，支持本地和云端部署",
+    "features": "为通用Agent打造的统一训练框架，贯通构建(Build)、运行(Run)、训练(Train)完整流程；统一抽象model/tool/env三层可独立替换；支持1000+并发Agent任务大规模并行交互；集成火山引擎veFaaS Sandbox提供MicroVM级安全隔离；内置实时仪表盘监控大规模任务；与veRL强化学习框架无缝衔接支持Agent持续进化；在SWE-Bench-Verified基准上超越OpenHands",
+    "website": "https://github.com/verl-project/uni-agent"
+  },
+  {
+    "id": 214,
+    "name": "AutoGLM 2.0",
+    "developer": "智谱AI",
+    "releaseTime": "2026.05.16",
+    "deployment": "Agent平台，支持网页浏览、代码执行和文件操作",
+    "features": "智谱AI发布的新一代Agent平台，对标GPT-5 Agent Mode；支持网页浏览、代码执行和文件操作三大核心能力；搭载GLM系列最新模型；智谱AI完成5亿美元融资（估值50亿美元，阿里腾讯共同投资）后重磅发布；自主规划任务并执行复杂多步骤操作；与AutoClaw形成模型+框架产品矩阵",
+    "website": "https://www.zhipuai.cn/"
   }
 ]

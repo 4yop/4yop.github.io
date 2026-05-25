@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-23",
+  "updatedAt": "2026-05-25",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1509,7 +1509,7 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "MiMo Orbit 百万亿 Token 创造者激励计划：注册申请可获得数亿免费 Token（有用户反馈获 7 亿 Token）；活动时间 2026-04-28 至 2026-05-28（⚠️ 即将到期，还剩约5天，赠完即止）；通过邀请链接注册可额外获 ¥10 API 体验金；MiMo-V2-Flash 模型限时免费（RPM: 100，上下文 256K，最大输出 128K）；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
+      "quota": "MiMo Orbit 百万亿 Token 创造者激励计划：注册申请可获得数亿免费 Token（有用户反馈获 7 亿 Token）；活动时间 2026-04-28 至 2026-05-28（⚠️ 即将到期，仅剩约3天，赠完即止）；通过邀请链接注册可额外获 ¥10 API 体验金；MiMo-V2-Flash 模型限时免费（RPM: 100，上下文 256K，最大输出 128K）；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
       "cycle": "创造者激励计划赠完即止（2026-04-28至05-28）；MiMo-V2-Flash 限时免费；Token Plan 按量付费",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
@@ -1595,7 +1595,7 @@
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、MiniMax-M2.7 100万Tokens、HY 2.0 Think 50万Tokens（⚠️ 2026-06-22下线）、Kimi-K2.6 50万Tokens、Qwen3.5-Plus 100万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324将于2026-05-25下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
       "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
@@ -1606,6 +1606,7 @@
           "deepseek-v4-flash",
           "deepseek-v4-pro",
           "glm-5",
+          "glm-5.1",
           "minimax-m2.7",
           "hunyuan-2.0-thinking-20251109",
           "hunyuan-2.0-instruct-20251111",
@@ -1815,6 +1816,26 @@
           "qwen3.5-omni",
           "deepseek-r1",
           "deepseek-v3"
+        ]
+      }
+    },
+    {
+      "name": "FreeLLMAPI（开源自托管聚合代理）",
+      "quota": "MIT协议开源项目（GitHub 3.6K+ Star）；自托管OpenAI兼容代理，将Google Gemini、Groq、Cerebras、SambaNova、Mistral、OpenRouter、GitHub Models、Cloudflare Workers AI、Cohere、Z.ai、NVIDIA NIM等14+家免费API层聚合到单一/v1/chat/completions端点；聚合后可用容量约8亿-13亿tokens/月；支持SSE流式输出、Tool Calling、粘性会话（约30分钟保持同一模型）；AES-256-GCM密钥加密存储；SQLite速率限制账本；React管理面板；资源占用约40MB RSS，可运行于树莓派4",
+      "cycle": "永久免费（MIT开源协议，需自行部署；底层依赖各平台的免费层额度）",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "develop": {
+        "document_url": "https://github.com/tashfeenahmed/freellmapi",
+        "base_url": "http://localhost:3001/v1",
+        "models": [
+          "auto",
+          "gemini-2.5-flash",
+          "llama-3.3-70b-versatile",
+          "llama-3.1-8b-instant",
+          "qwen3-235b-a22b",
+          "deepseek-r1",
+          "mistral-large-latest",
+          "glm-4.7-flash"
         ]
       }
     }
