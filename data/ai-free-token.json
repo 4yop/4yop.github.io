@@ -1029,8 +1029,8 @@
     },
     {
       "name": "联通云 AI Coding Plan",
-      "quota": "已推出新活动：支持 GLM-5、MiniMax M2.5、Qwen3.5、DeepSeek-V4、Qwen3 等主流模型；适配 OpenCode、Claude Code、OpenClaw 等工具；此前限时免费1个月活动（2026-03-15截止）已替换为新活动；曾推出限量5000台免费送1个月4核8G服务器（预装OpenClaw）活动",
-      "cycle": "新活动持续中（具体额度以联通云官方最新公告为准）",
+      "quota": "新一期开发者激励活动进行中：支持 GLM-5、MiniMax M2.5/M2.7、Qwen3.5-397B、Qwen3-235B、DeepSeek-V3.1/V4、Kimi-K2.5 等主流模型；适配 OpenCode、Claude Code、Cursor、OpenClaw、Cline 等工具；OpenAI 兼容协议；此前限时免费1个月活动（2026-03-15截止）已替换为新激励活动；曾推出限量5000台免费送1个月4核8G服务器（预装OpenClaw）活动",
+      "cycle": "新一期激励活动持续中（具体额度和有效期以联通云官方最新公告为准）",
       "url": "https://www.cucloud.cn/activity/kickoffseason.html",
       "develop": {
         "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
@@ -1038,10 +1038,12 @@
         "models": [
           "glm-5",
           "MiniMax-M2.5",
+          "MiniMax-M2.7",
           "kimi-k2.5",
           "Qwen3.5-397B-A17B",
           "Qwen3-235B-A22B",
-          "DeepSeek-V3.1"
+          "DeepSeek-V3.1",
+          "DeepSeek-V4-Flash"
         ]
       }
     },
@@ -1524,8 +1526,8 @@
     },
     {
       "name": "Featherless AI",
-      "quota": "按量付费，无永久免费层（仅少量免费测试请求）",
-      "cycle": "永久免费（当前所有模型免费；政策以官方公告为准）",
+      "quota": "开源模型免费托管平台，提供少量免费测试请求（不限制Token，按GPU时间计量）；支持DeepSeek R1/V4、Qwen3 Coder、Kimi K2、GLM-5、Llama 4等开源模型；大规模使用需按量付费；免费层适合模型选型和轻量测试",
+      "cycle": "免费测试层永久可用（按量付费，无大规模免费层；政策以官方公告为准）",
       "url": "https://featherless.ai",
       "develop": {
         "document_url": "https://featherless.ai/account/api-keys",

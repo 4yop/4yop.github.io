@@ -1429,5 +1429,14 @@
     "deployment": "Agent平台，支持网页浏览、代码执行和文件操作",
     "features": "智谱AI发布的新一代Agent平台，对标GPT-5 Agent Mode；支持网页浏览、代码执行和文件操作三大核心能力；搭载GLM系列最新模型；智谱AI完成5亿美元融资（估值50亿美元，阿里腾讯共同投资）后重磅发布；自主规划任务并执行复杂多步骤操作；与AutoClaw形成模型+框架产品矩阵",
     "website": "https://www.zhipuai.cn/"
+  },
+  {
+    "id": 215,
+    "name": "LongMini·小龙（码客龙龙虾盒子）",
+    "developer": "涛伯开源（深圳码客龙科技）",
+    "releaseTime": "2026.05.22",
+    "deployment": "桌面硬件终端，搭载国产RISC-V架构芯片与Bianbu操作系统，开箱即用",
+    "features": "便携式AI智能体盒子（AI Agent Box），全新品类桌面AI硬件；配备3寸动态LCD屏幕实现可视化交互；内置法务/财务/产品/HR/汇报/金融六套专业工作流；支持语音与文字多模态交互；全国产芯片与操作系统全链路自主可控；数据本地存储与处理保障隐私安全；桌面可视化小桌宠相伴；积分激励机制打卡互动完成任务可兑换AI算力；与阿里云合作配套专属Token积分；由CSDN与华秋电子联合孵化",
+    "website": "https://www.nfnews.com/content/EynGJXxW3Z.html"
   }
 ]
