@@ -13139,5 +13139,55 @@
       "北京大学"
     ],
     "source": "https://news.iqilu.com/shandong/shandonggedi/20221121/5285591.shtml"
+  },
+  {
+    "name": "萨顶顶",
+    "avatar": "萨顶顶.webp",
+    "hometowns": [
+      [
+        "河南省",
+        "平顶山市",
+        "湛河区"
+      ]
+    ],
+    "birthday": "1983-12-27",
+    "tags": [
+      "歌手",
+      "词曲创作人",
+      "演员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "王欣瑜",
+    "avatar": "王欣瑜.webp",
+    "hometowns": [
+      [
+        "广东省",
+        "深圳市",
+        "福田区"
+      ]
+    ],
+    "birthday": "2001-09-26",
+    "tags": [
+      "网球运动员"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "管乐",
+    "avatar": "管乐.webp",
+    "hometowns": [
+      [
+        "山东省",
+        "青岛市",
+        ""
+      ]
+    ],
+    "birthday": "1995-03-02",
+    "tags": [
+      "演员"
+    ],
+    "source": "百度百科"
   }
 ]

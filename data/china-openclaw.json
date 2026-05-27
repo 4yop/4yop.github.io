@@ -1438,5 +1438,59 @@
     "deployment": "桌面硬件终端，搭载国产RISC-V架构芯片与Bianbu操作系统，开箱即用",
     "features": "便携式AI智能体盒子（AI Agent Box），全新品类桌面AI硬件；配备3寸动态LCD屏幕实现可视化交互；内置法务/财务/产品/HR/汇报/金融六套专业工作流；支持语音与文字多模态交互；全国产芯片与操作系统全链路自主可控；数据本地存储与处理保障隐私安全；桌面可视化小桌宠相伴；积分激励机制打卡互动完成任务可兑换AI算力；与阿里云合作配套专属Token积分；由CSDN与华秋电子联合孵化",
     "website": "https://www.nfnews.com/content/EynGJXxW3Z.html"
+  },
+  {
+    "id": 216,
+    "name": "Hermes Agent",
+    "developer": "Nous Research",
+    "releaseTime": "2026.01",
+    "deployment": "开源框架（MIT协议），支持本地部署和云端运行",
+    "features": "自进化个人智能体框架，GitHub 60K+ Stars；三层记忆架构（短期/长期/持久）；闭环学习系统，从实践中自动提炼经验创建可复用技能；支持14+消息平台接入；Cron定时任务；支持200+国产大模型；一行命令安装；与OpenClaw/AutoGPT/CrewAI形成差异化竞争",
+    "website": "https://github.com/nousresearch/hermes"
+  },
+  {
+    "id": 217,
+    "name": "LangGraph",
+    "developer": "LangChain Team",
+    "releaseTime": "2024.06",
+    "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
+    "features": "状态机驱动的精密Agent编排框架，GitHub 28.7K+ Stars；显式状态管理使用TypedDict/Pydantic定义；图结构编排（节点=纯函数，边=条件路由）；可中断执行支持任意节点暂停恢复；适合金融审批、医疗诊断、高可靠性场景；作为LangChain生态核心组件被广泛采用",
+    "website": "https://github.com/langchain-ai/langgraph"
+  },
+  {
+    "id": 218,
+    "name": "CrewAI",
+    "developer": "CrewAI Inc.",
+    "releaseTime": "2024.03",
+    "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
+    "features": "角色扮演式多Agent协作框架，GitHub 38.2K+ Stars；声明式任务定义（Task对象定义目标和期望输出）；角色专业化（Agent拥有固定角色/目标/背景故事）；自动化委派内置任务分配和协调机制；适合内容生成、市场分析、数据报告等流程标准化场景；Process顺序/并行执行模式",
+    "website": "https://github.com/crewAIInc/crewAI"
+  },
+  {
+    "id": 219,
+    "name": "AutoGen",
+    "developer": "Microsoft",
+    "releaseTime": "2023.09",
+    "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
+    "features": "对话驱动的多Agent协作框架，GitHub 42.5K+ Stars；自然语言对话实现Agent协商和协作；动态发言者选择支持自动/轮询；UserProxyAgent实现人机无缝协同；涌现智能大于预设流程理念；适合需要多Agent复杂交互的场景；微软官方维护持续迭代",
+    "website": "https://github.com/microsoft/autogen"
+  },
+  {
+    "id": 220,
+    "name": "Magnetic-One",
+    "developer": "Microsoft",
+    "releaseTime": "2025.01",
+    "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
+    "features": "多Agent编排框架，GitHub 15.3K+ Stars；基于Orchestrator-Worker架构的多智能体协同；通用任务自动化能力；与AutoGen生态深度集成；适合企业级多Agent工作流编排；微软最新一代Agent框架产品",
+    "website": "https://github.com/microsoft/magnetic-one"
+  },
+  {
+    "id": 221,
+    "name": "Spring AI",
+    "developer": "VMware (Spring Team)",
+    "releaseTime": "2023.07",
+    "deployment": "开源框架（Apache 2.0），Maven/Gradle依赖，支持Java/Spring Boot生态",
+    "features": "Java生态AI Agent框架，GitHub 8.5K+ Stars；为Spring开发者提供AI集成方案；支持多种大模型提供商抽象；Prompt模板管理与RAG支持；与企业级Spring生态系统无缝集成；适合Java技术栈企业的AI应用开发；填补Java生态AI Agent空白",
+    "website": "https://github.com/spring-projects/spring-ai"
   }
 ]
