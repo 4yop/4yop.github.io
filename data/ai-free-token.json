@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-29",
+  "updatedAt": "2026-05-30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -214,16 +214,22 @@
     },
     {
       "name": "Cohere",
-      "quota": "Trial API Key免费（速率受限，不可用于生产或商业用途）；Production Key按量付费：Command R $0.50/百万输入 $1.50/百万输出；Command $1.00/百万输入 $2.00/百万输出；Aya Expanse $0.50/百万输入 $1.50/百万输出；Verified 2026-05-19",
-      "cycle": "Trial Key免费（速率限制）",
+      "quota": "Trial API Key免费（速率受限：20 RPM / 1,000次/月，不可用于生产或商业用途）；支持 Command A+、Command A Reasoning、Command A Vision、Command A Translate、Aya Expanse 32B、Aya Vision 32B 等全系列模型；Production Key按量付费；Verified 2026-05-30",
+      "cycle": "Trial Key免费（20 RPM / 1,000次/月）",
       "url": "https://dashboard.cohere.com",
       "develop": {
         "document_url": "https://docs.cohere.com/",
         "base_url": "https://api.cohere.ai/v1",
         "models": [
+          "command-a-plus-05-2026",
+          "command-a-reasoning-08-2025",
+          "command-a-vision-07-2025",
+          "command-a-translate-08-2025",
+          "command-a-03-2025",
           "command-r-plus",
           "command-r",
-          "command",
+          "c4ai-aya-expanse-32b",
+          "c4ai-aya-vision-32b",
           "embed-multilingual-v3.0",
           "embed-english-v3.0"
         ]
@@ -239,13 +245,16 @@
         "base_url": "https://openrouter.ai/api/v1",
         "models": [
           "deepseek/deepseek-r1:free",
+          "deepseek/deepseek-v4-flash:free",
           "meta-llama/llama-4-scout:free",
           "qwen/qwen3-235b-a22b:free",
           "qwen/qwen3-coder-480b-a35b:free",
           "qwen/qwen3-next-80b-a3b-instruct:free",
           "qwen/qwen3-coder:free",
+          "qwen/qwen3.6-plus:free",
           "z-ai/glm-4.5-air:free",
           "minimax/minimax-m2.5:free",
+          "moonshotai/kimi-k2.6:free",
           "openai/gpt-oss-120b:free",
           "openai/gpt-oss-20b:free",
           "nvidia/nemotron-3-super-120b-a12b:free",
@@ -266,7 +275,8 @@
           "arcee-ai/trinity-large-thinking:free",
           "liquid/lfm-2.5-1.2b-instruct:free",
           "liquid/lfm-2.5-1.2b-thinking:free",
-          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free"
+          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+          "servicenow/apriel-1.5-15b-thinker:free"
         ]
       }
     },
@@ -1511,8 +1521,8 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "⚠️ 100T Token创造者激励计划已于2026-05-28到期；2026年5月27日MiMo-V2.5系列API永久降价（最高降幅99%）：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ MiMo-V2-Pro与MiMo-V2-Omni价格不变且即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
-      "cycle": "100T创造者激励计划已到期（2026-05-28）；V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
+      "quota": "⚠️ 100T Token创造者激励计划已于2026-05-28到期（已过期2天）；2026年5月27日MiMo-V2.5系列API永久降价（最高降幅99%）：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ MiMo-V2-Pro与MiMo-V2-Omni价格不变且即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
+      "cycle": "⚠️ 100T创造者激励计划已过期（2026-05-28到期）；V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
         "document_url": "https://platform.xiaomimimo.com/docs",
@@ -1865,6 +1875,48 @@
         "models": [
           "skyclaw-v1.0",
           "skyclaw-v1.0-lite"
+        ]
+      }
+    },
+    {
+      "name": "Puter.js (Puter.com)",
+      "quota": "免费访问500+ AI模型（含Mistral Large 3、Claude Opus/Sonnet/Haiku、GPT-5系列、Gemini、DeepSeek、Llama 4、Grok等）；首创「User-Pays」模型——开发者无需付费，终端用户通过自己的Puter账户承担AI使用成本；无需API Key即可通过Puter.js SDK调用；OpenAI兼容API端点（api.puter.com/puterai/openai/v1/）；也支持Anthropic SDK兼容端点；免费层约100次请求/天（未公开文档化，基于社区反馈估算）；适合前端应用、AI编程助手、Vibe Coding平台集成；⚠️ 官方宣传「Free, Unlimited」但实际存在未文档化的速率限制，超出后报错「usage-limited-chat: Permission denied」",
+      "cycle": "永久免费层（约100次请求/天，限制未公开文档化；User-Pays模型下开发者零成本）",
+      "url": "https://puter.com",
+      "develop": {
+        "document_url": "https://developer.puter.com/",
+        "base_url": "https://api.puter.com/puterai/openai/v1",
+        "models": [
+          "mistralai/mistral-large-2512",
+          "mistralai/mistral-medium-3-5",
+          "mistralai/mistral-small-2603",
+          "mistralai/codestral-2508",
+          "mistralai/devstral-2512",
+          "anthropic/claude-opus-4-7",
+          "anthropic/claude-sonnet-4-6",
+          "anthropic/claude-haiku-4-5",
+          "openai/gpt-5.5",
+          "openai/gpt-5.2",
+          "google/gemini-2.5-pro",
+          "deepseek/deepseek-v4-flash",
+          "meta-llama/llama-4-scout"
+        ]
+      }
+    },
+    {
+      "name": "Glhf.chat",
+      "quota": "免费Serverless推理平台，30 RPM速率限制；支持Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct、QwQ-32B等开源模型；可加载任意HuggingFace仓库模型（通过粘贴链接自动加载）；最多8张Nvidia A100 80GB GPU；OpenAI兼容API格式；自定义自动扩缩容GPU调度器；Beta期间完全免费",
+      "cycle": "永久免费（Beta期间，30 RPM；Beta结束后将推出低价付费方案）",
+      "url": "https://glhf.chat",
+      "develop": {
+        "document_url": "https://glhf.chat",
+        "base_url": "https://glhf.chat/api/openai/v1",
+        "models": [
+          "hf:meta-llama/Llama-3.1-70B-Instruct",
+          "hf:mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "hf:microsoft/Phi-3-mini-4k-instruct",
+          "hf:Qwen/QwQ-32B-Preview",
+          "hf:meta-llama/Llama-3.3-70B-Instruct"
         ]
       }
     }

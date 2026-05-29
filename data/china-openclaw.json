@@ -1672,5 +1672,23 @@
     "deployment": "云端SaaS，垂直招聘场景",
     "features": "专业招聘龙虾，针对中国主流招聘网站深度适配；开箱即用、绝对安全；替代通用OpenClaw在招聘场景的专业化方案；支持简历筛选、候选人沟通、面试安排等招聘全流程自动化",
     "website": "https://www.sjyl.com"
+  },
+  {
+    "id": 242,
+    "name": "ClawPro",
+    "developer": "腾讯云",
+    "releaseTime": "2026.04.02",
+    "deployment": "企业级云端托管平台，支持专有云私有化部署，最快10分钟上线",
+    "features": "国内首个基于百万级用户验证的一站式企业AI智能体管控平台；统一部署OpenClaw模板、下发模型资源配额并监测；搭载Ai2云服务器实例算力成本降低40%；百元起步按需扩容支持最低1个席位开通；支持微信/企业微信/飞书/QQ/钉钉全渠道接入；首发专有云版实现运维+办公双场景联动；原生支持OpenClaw、Hermes等多类型Agent框架；前期内测200+企业客户接入",
+    "website": "https://cloud.tencent.com/product/clawpro"
+  },
+  {
+    "id": 243,
+    "name": "OrayClaw",
+    "developer": "贝锐(Oray)",
+    "releaseTime": "2026.05.29",
+    "deployment": "主控端AI大脑+被控端零负担分层架构，被控设备无需安装AI环境，支持Windows/Linux/macOS/鸿蒙HarmonyOS",
+    "features": "面向远程运维场景的AI Agent产品；差异化架构主控端集中智能被控端零负担；搭配向日葵控控实现硬件级远控可连接老旧工控机等任意终端；三维安全模型(IAM身份与访问管理+FGAC最小权限原则+SIEM安全信息与事件管理)；内置150万+企业客户服务经验沉淀的标准化Skill技能包；自然语言批量操作替代逐台手动运维；等保三级及ISO27001认证",
+    "website": "https://www.oray.com/"
   }
 ]
