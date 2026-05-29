@@ -1,1 +1,0 @@
-const e={title:"MAC地址查询工具",description:"MAC地址查询工具，通过输入物理地址的前六位识别网络设备的生产厂商和组织归属信息。支持OUI数据库前缀匹配和批量查询功能，帮助网络管理员进行设备资产登记、网络故障排查和安全审计工作。免费在线使用无需安装软件，所有数据在浏览器本地处理保护隐私安全可靠。",keywords:["MAC地址查询","MAC地址厂商","OUI查询","网络设备识别"],seo:{keywords:[{keyword:"MAC地址查询工具",searchVolume:22}]},meta:[]};export{e as default};

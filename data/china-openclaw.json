@@ -1492,5 +1492,185 @@
     "deployment": "开源框架（Apache 2.0），Maven/Gradle依赖，支持Java/Spring Boot生态",
     "features": "Java生态AI Agent框架，GitHub 8.5K+ Stars；为Spring开发者提供AI集成方案；支持多种大模型提供商抽象；Prompt模板管理与RAG支持；与企业级Spring生态系统无缝集成；适合Java技术栈企业的AI应用开发；填补Java生态AI Agent空白",
     "website": "https://github.com/spring-projects/spring-ai"
+  },
+  {
+    "id": 222,
+    "name": "SkyClaw",
+    "developer": "昆仑万维（天工AI）",
+    "releaseTime": "2026.05.26",
+    "deployment": "云端API服务（限时免费），OpenAI兼容接口，适配OpenClaw/Hermes/Claude Code/Codex等主流Agent框架",
+    "features": "全球首款原生Agent模型，从训练之初就面向智能体场景设计（非通用模型+工具壳）；百万token超长上下文；重点优化复杂工具调用、多轮任务执行、代码生成、文件编辑；在主流Agent基准评测中全面超越Minimax 2.7、DeepSeek V4 Flash及Qwen 3.6系列；旗舰版输入0.5元输出4元/百万Token，轻量版更低；限时免费2-4周后计划逐步开源；与OpenClaw形成「模型+框架」互补生态",
+    "website": "https://skywork.ai"
+  },
+  {
+    "id": 223,
+    "name": "AutoClaw移动端（澳龙APP）",
+    "developer": "智谱AI",
+    "releaseTime": "2026.05.22",
+    "deployment": "App Store上架移动端应用，支持云端与本地双模式，账号与PC端实时同步",
+    "features": "AutoClaw的移动端版本；用户可在手机上创建、编辑和注销Agent；支持创建Agent群聊让多个智能体协作完成任务；云端模式无需电脑在线即可下发指令；本地模式可将手机作为PC远程遥控器；当前版本聚焦核心的创建与执行功能（Hermes看板、Token统计、MCP服务、IM接入暂未开放）；将AI Agent从办公场景扩展到移动场景",
+    "website": "https://autoglm.zhipuai.cn/autoclaw/"
+  },
+  {
+    "id": 224,
+    "name": "MuleRun（骡子快跑）",
+    "developer": "阿里巴巴（阿里云智能集团）",
+    "releaseTime": "2026.05.20",
+    "deployment": "云端托管，0门槛浏览器即开即用，7×24小时云端独立虚拟机",
+    "features": "全球首创自进化个人AI智能体平台，定位AI数字劳动力市场；0门槛云端运行，无需本地部署；自进化能力学习用户习惯；多Agent独立上下文并行任务；已服务43个国家用户",
+    "website": "https://mulerun.com"
+  },
+  {
+    "id": 225,
+    "name": "PilotDeck",
+    "developer": "清华大学THUNLP实验室/面壁智能/OpenBMB/AI9stars",
+    "releaseTime": "2026.05.28",
+    "deployment": "开源，本地部署，支持Docker",
+    "features": "清华系开源智能体操作系统；项目独立建舱，记忆可视可改；Token成本较OpenClaw降低70%；面向纯生产力的智能体协作舱；多Agent协作管理",
+    "website": "https://github.com/thunlp/PilotDeck"
+  },
+  {
+    "id": 226,
+    "name": "觅游（Meyo）",
+    "developer": "美团（基础研发AI创新产品团队）",
+    "releaseTime": "2026.05.07",
+    "deployment": "云端社区平台，Web端使用",
+    "features": "国内首个AI原生共生社区，让AI Agent拥有身份、关系与成长体系；入驻Agent超3000个，技能4万+；技能便利店支持下载安装管理；支持OpenClaw/Hermes/QClaw等主流Agent入驻",
+    "website": "https://www.meyo123.com"
+  },
+  {
+    "id": 227,
+    "name": "AGenUI",
+    "developer": "高德/阿里千问C端应用团队",
+    "releaseTime": "2026.05.15",
+    "deployment": "开源框架，C++核心，支持iOS/Android/HarmonyOS三端",
+    "features": "行业首个覆盖iOS/Android/HarmonyOS三端的端云一体原生A2UI开源框架；基于Google A2UI协议；AI大模型界面意图直接转化为原生组件渲染；渲染性能提升20%，内存占用降18%；深度适配鸿蒙1+8+N全场景分布式架构",
+    "website": "https://github.com/AGenUI/AGenUI"
+  },
+  {
+    "id": 228,
+    "name": "Cloud Agents（阿里Qoder）",
+    "developer": "阿里巴巴（阿里云）",
+    "releaseTime": "2026.05.28",
+    "deployment": "全托管云服务，API调用",
+    "features": "全托管AI Agent运行平台，Agent上线时间从1个月缩短至1天；原生支持Skills和MCP协议；由Qoder底层Coding Agent引擎驱动；独立沙箱运行环境，SSE事件流实时追踪可审计；自动扩缩容",
+    "website": "https://qoder.aliyun.com"
+  },
+  {
+    "id": 229,
+    "name": "睿治Agent数据治理平台",
+    "developer": "亿信华辰",
+    "releaseTime": "2026.05.20",
+    "deployment": "私有化部署/云端部署",
+    "features": "AI原生数据治理平台，以大模型为内核、智能体为载体；内置二十年积累的三层知识体系（合规政策/行业框架/实施经验）；数据治理大脑实现从数据挖掘到决策落地的全链路闭环；连续四年IDC数据治理市场第一",
+    "website": "https://www.esensoft.com"
+  },
+  {
+    "id": 230,
+    "name": "JoyClaw",
+    "developer": "京东",
+    "releaseTime": "2026.05.28",
+    "deployment": "预装于雷神AI工作站，本地运行",
+    "features": "京东自研龙虾AI Agent，预装于雷神AI Master D9000迷你AI工作站；搭配AI编码工具JoyCode双重智能服务；开机即享，适配本地大模型运行；面向AI工作站场景优化",
+    "website": "https://jclaw.jd.com"
+  },
+  {
+    "id": 231,
+    "name": "支付宝AI收",
+    "developer": "支付宝/蚂蚁集团",
+    "releaseTime": "2026.04.28",
+    "deployment": "云端SaaS，API接入，三步集成",
+    "features": "全球首个大规模商用AI原生支付基建，已完成3亿笔AI支付；支持95%通用智能体框架；与AI付构成A2A交易闭环；个人开发者0费率至2026年底；支持按调用即时收款",
+    "website": "https://a2a.alipay.com"
+  },
+  {
+    "id": 232,
+    "name": "Easy Agent Pilot",
+    "developer": "Easy Agent Pilot开源团队",
+    "releaseTime": "2026.05.15",
+    "deployment": "开源，本地桌面安装，Rust实现",
+    "features": "Rust实现的AI Agent桌面工作台；聚合Claude CLI/Codex CLI/OpenCode CLI；统一管理项目、会话、计划与执行；多Agent专家管理；支持MCP/Skills/Plugins扩展；记忆系统支持原始记忆池和AI压缩记忆库",
+    "website": "https://github.com/easy-agent-pilot"
+  },
+  {
+    "id": 233,
+    "name": "容联云AI Agent智慧联络平台",
+    "developer": "容联云",
+    "releaseTime": "2026.05.15",
+    "deployment": "云端SaaS，企业级部署",
+    "features": "新一代AI Agent智慧联络平台，基于低代码CRM底座；搭载全能客服中枢Agent，打通电话/网页/APP/微信/抖音/小红书全渠道；Agent驱动全流程从意图识别到任务执行；座席仅需关键节点确认，实现人机协同",
+    "website": "https://www.yuntongxun.com"
+  },
+  {
+    "id": 234,
+    "name": "有道龙虾",
+    "developer": "网易有道",
+    "releaseTime": "2026.03",
+    "deployment": "本地桌面端，开源可私有化部署",
+    "features": "国内首个100%开源的桌面级全场景个人AI助理，GitHub超5200星；可私有化部署、可二次开发；已接入DeepSeek-V4和Kimi K2.6模型；获OpenClaw创始人Peter Steinberger公开点赞；支持多模态交互、知识库管理、文件处理等全场景能力",
+    "website": "https://github.com/netease-youdao/LobsterAI"
+  },
+  {
+    "id": 235,
+    "name": "华为OpenClaw安全解决方案",
+    "developer": "华为",
+    "releaseTime": "2026.05.29",
+    "deployment": "企业级混合部署，网络/Agent/主机三层围栏架构",
+    "features": "HNS 2026联合行业机构发布技术白皮书；三层围栏安全架构：网络围栏（AI防火墙+网关白名单+安全过滤+行为审计）、Agent围栏（专属安全网关+语义分析抵御注入攻击+最小化暴露面）、主机围栏（智算EDR检测恶意技能+关键目录防护）；实现AI Agent全面可视、全程可控、全链可管",
+    "website": "https://e.huawei.com"
+  },
+  {
+    "id": 236,
+    "name": "MTT AICUBE",
+    "developer": "摩尔线程",
+    "releaseTime": "2026.05.18",
+    "deployment": "家庭端侧硬件+全域智能体",
+    "features": "摩尔线程2026产品发布会发布，首款面向家庭场景的消费级AI产品；搭载全域智能体\"小麦\"，作为家庭AI中枢；从云到端的智能体落地方案；支持OpenClaw类Agent任务执行，面向家庭成员的自然语言交互",
+    "website": "https://www.mthreads.com"
+  },
+  {
+    "id": 237,
+    "name": "讯飞AI眼镜",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.05.28",
+    "deployment": "消费级智能硬件，40g超轻机身",
+    "features": "BEYOND Expo 2026发布；支持122种语言实时翻译（通话/面对面/视觉翻译）；内置GlassClaw龙虾AI助理，实现多模态记录、AI会议纪要、生活服务调用；GlassClaw可独立完成商务信息采集、出差方案整理、邮件发送等复杂任务；多麦克风阵列+视觉降噪+唇动识别降噪",
+    "website": "https://www.iflytek.com"
+  },
+  {
+    "id": 238,
+    "name": "迪迪虾",
+    "developer": "比亚迪",
+    "releaseTime": "2026.05.28",
+    "deployment": "车载智能体，端云协同",
+    "features": "比亚迪智能化战略发布会发布超级智能体；三大能力：聊得来（全舱记忆+跨域交互+端云协同+快慢思考，有情感有记忆主动服务）、搞得定（模糊语义理解+复杂意图拆解+多方言多语种+超快响应）、玩得转（从手机生态到Agent生态100%兼容）；车载场景深度适配",
+    "website": "https://www.byd.com"
+  },
+  {
+    "id": 239,
+    "name": "企千虾",
+    "developer": "浪潮信息",
+    "releaseTime": "2026.04.02",
+    "deployment": "企业级本地化部署，支持大规模集群管理",
+    "features": "业界首个企业级OpenClaw方案；为企业规模化部署、管理和应用OpenClaw打造全链路方案；四层防御体系（L0-L3），覆盖网络安全、Agent安全、主机安全、数据安全；安全、高效、易用的企业级部署方案；搭载元脑算力平台",
+    "website": "https://www.inspur.com"
+  },
+  {
+    "id": 240,
+    "name": "LumeValley",
+    "developer": "LumeValley",
+    "releaseTime": "2026.05",
+    "deployment": "企业级Agent管理平台，全栈式AI服务",
+    "features": "全栈式AI服务能力，企业级Agent管理平台赛道领跑者；覆盖AI战略咨询、大模型部署、智能体开发工具、算力支撑、系统集成、安全保障、运营维护全链路；一站式智能化转型服务，降低企业技术门槛和实施风险",
+    "website": "https://www.lumevalley.com"
+  },
+  {
+    "id": 241,
+    "name": "世纪云猎",
+    "developer": "世纪云猎",
+    "releaseTime": "2026.05",
+    "deployment": "云端SaaS，垂直招聘场景",
+    "features": "专业招聘龙虾，针对中国主流招聘网站深度适配；开箱即用、绝对安全；替代通用OpenClaw在招聘场景的专业化方案；支持简历筛选、候选人沟通、面试安排等招聘全流程自动化",
+    "website": "https://www.sjyl.com"
   }
 ]
