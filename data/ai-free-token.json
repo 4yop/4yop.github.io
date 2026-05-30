@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-30",
+  "updatedAt": "2026-05-31",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1521,7 +1521,7 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "⚠️ 100T Token创造者激励计划已于2026-05-28到期（已过期2天）；2026年5月27日MiMo-V2.5系列API永久降价（最高降幅99%）：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ MiMo-V2-Pro与MiMo-V2-Omni价格不变且即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
+      "quota": "⚠️ 100T Token创造者激励计划已于2026-05-28到期（已过期3天）；2026年5月27日MiMo-V2.5系列API永久降价（最高降幅99%）：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ MiMo-V2-Pro与MiMo-V2-Omni价格不变且即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro 为旗舰模型（1048576 上下文，131072 最大输出）；OpenAI 兼容协议 + Anthropic 兼容协议；Token Plan 提供 cn 域名端点；可直接对接 Claude Code、Cursor、OpenClaw 等编程工具",
       "cycle": "⚠️ 100T创造者激励计划已过期（2026-05-28到期）；V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
@@ -1917,6 +1917,32 @@
           "hf:microsoft/Phi-3-mini-4k-instruct",
           "hf:Qwen/QwQ-32B-Preview",
           "hf:meta-llama/Llama-3.3-70B-Instruct"
+        ]
+      }
+    },
+    {
+      "name": "诗云API（ShiyunApi）",
+      "quota": "新用户注册赠送600万Token免费体验额度（无任何使用时效限制）；国内头部商业聚合平台，累计收录100+款主流模型，全品类覆盖多模态服务；支持国内原生直连，无需翻墙；覆盖Claude、DeepSeek、Gemini、Kimi、GPT等几乎所有主流大模型；智能Token缓存和资源池管理功能；标称最低可达官网价格5折；人民币按Token计费",
+      "cycle": "一次性注册赠送（无时效限制，用完为止）",
+      "url": "https://shiyunapi.com",
+      "develop": {
+        "document_url": "https://shiyunapi.com",
+        "base_url": "https://api.shiyunapi.com/v1",
+        "models": [
+          "claude-opus-4-6",
+          "claude-sonnet-4",
+          "gpt-5.5",
+          "gpt-5",
+          "gpt-4o",
+          "deepseek-r1",
+          "deepseek-v3",
+          "deepseek-v4-flash",
+          "gemini-2.5-pro",
+          "gemini-3.0-flash",
+          "kimi-k2.5",
+          "glm-5",
+          "minimax-m2.7",
+          "qwen3.5-plus"
         ]
       }
     }
