@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-05-31",
+    "updatedAt":  "2026-06-01",
     "platforms":  [
                       {
                           "name":  "Google AI Studio (Gemini)",
@@ -1417,7 +1417,7 @@
                       },
                       {
                           "name":  "小米 MiMo",
-                          "quota":  "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ 100T Token创造者激励计划已于2026-05-28到期；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
+                          "quota":  "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；❌ 100T Token创造者激励计划已于2026-05-28到期（已结束）；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
                           "cycle":  "V2.5系列永久降价生效；100T创造者激励计划已过期（2026-05-28到期）；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
                           "url":  "https://platform.xiaomimimo.com",
                           "develop":  {

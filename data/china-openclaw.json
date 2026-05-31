@@ -1690,5 +1690,59 @@
     "deployment": "主控端AI大脑+被控端零负担分层架构，被控设备无需安装AI环境，支持Windows/Linux/macOS/鸿蒙HarmonyOS",
     "features": "面向远程运维场景的AI Agent产品；差异化架构主控端集中智能被控端零负担；搭配向日葵控控实现硬件级远控可连接老旧工控机等任意终端；三维安全模型(IAM身份与访问管理+FGAC最小权限原则+SIEM安全信息与事件管理)；内置150万+企业客户服务经验沉淀的标准化Skill技能包；自然语言批量操作替代逐台手动运维；等保三级及ISO27001认证",
     "website": "https://www.oray.com/"
+  },
+  {
+    "id": 244,
+    "name": "OpenHuman",
+    "developer": "TinyHumans (Steven E.)",
+    "releaseTime": "2026.05.13",
+    "deployment": "桌面客户端（Windows/macOS/Linux），Rust+Tauri架构，开源项目（GPL-3.0）",
+    "features": "开源个人AI超级智能助手，核心定位Private/Simple/Powerful；Memory Tree持久记忆系统，每20分钟自动同步118+第三方服务数据（Gmail/Notion/GitHub/Slack等）；TokenJuice智能压缩技术降低80% Token消耗；本地SQLite存储+Obsidian兼容知识库；支持200+模型路由与Ollama本地模型；桌面吉祥物Mascot可视化交互；Google Meet会议集成；GitHub 10.8K+ Stars，Product Hunt #1",
+    "website": "https://github.com/tinyhumansai/openhuman"
+  },
+  {
+    "id": 245,
+    "name": "昆云AI管家",
+    "developer": "昆云科技",
+    "releaseTime": "2026.05",
+    "deployment": "本地部署，下载即用，无需云服务器和API Key配置",
+    "features": "基于开源OpenClaw打造的本地AI智能体助手；内置60000+技能库开箱即用；所有数据本地处理不上传云端保障隐私安全；手机发消息即可远程操控电脑执行任务；5分钟完成部署零门槛；1000万Token成本仅二十几元；真正实现AI从'只聊天'到'真动手干活'的跨越；适合个人办公自动化、文件整理、远程电脑操控场景",
+    "website": "https://mp.weixin.qq.com/s?biz=MzIwNDAyOTQxMQ=="
+  },
+  {
+    "id": 246,
+    "name": "SigenAgent",
+    "developer": "思格新能源",
+    "releaseTime": "2026.05.29",
+    "deployment": "云端SaaS+端侧设备协同，搭载mySigen App 4.0（6月上线）",
+    "features": "行业首个全域AI智能体，定位新能源场景'使命必达'；完整感知-思考-行动-迭代闭环；理解模糊意图（省钱/多用绿电/保障用电）并综合天气电价电网负荷推理最优策略；直接指挥光伏/储能/充电桩协同工作；四大垂直智能体：私人能源管家/电站运维医生/电力交易操盘手/企业经营助手；20万座电站构成神经末梢网络；四条安全准则：用户主权/数据合规/离线安全/运行透明",
+    "website": "https://www.sigennewenergy.com/"
+  },
+  {
+    "id": 247,
+    "name": "TencentDB Agent Memory",
+    "developer": "腾讯云",
+    "releaseTime": "2026.05.13",
+    "deployment": "开源框架（MIT协议），可集成到OpenClaw/Hermes等Agent框架",
+    "features": "腾讯云以MIT协议开源的Agent分层记忆引擎；四层记忆架构：L0原始对话存档/L1原子记忆提取（事件/偏好/任务）/L2场景归纳（用户行为完整画面）/L3用户画像长期积累；接入OpenClaw后最高节省61.38% Token消耗，任务通过率相对提升51.52%；解决Agent'失忆症'痛点，让Agent从玩具变成工具；企业级落地成本减半成功率翻倍的分水岭能力",
+    "website": "https://github.com/TencentDB/agent-memory"
+  },
+  {
+    "id": 248,
+    "name": "Miora 妙境",
+    "developer": "腾讯",
+    "releaseTime": "2026.05.28",
+    "deployment": "云端SaaS平台，全场景创意智能体工作室，邀测阶段",
+    "features": "全场景创意智能体工作室，支持图片/视频/UI/UX/3D等多模态创意生成；可通过自然语言生成品牌视觉全案；提供自由画布创作环境、记忆能力保持上下文连贯、局部编辑精准修改、Skills定制扩展能力；面向设计师和创意工作者的AI Native创意平台；降低多模态内容生产门槛，提升创意工作效率",
+    "website": "https://miora.tencent.com/"
+  },
+  {
+    "id": 249,
+    "name": "百炼CLI (ModelStudio CLI)",
+    "developer": "阿里云",
+    "releaseTime": "2026.05.29",
+    "deployment": "开源命令行工具（GitHub），npm安装，支持AI Agent一键接入",
+    "features": "阿里云百炼核心能力全面CLI化并开源；一行命令让Agent调用150+款主流模型（Qwen/GLM/Kimi/DeepSeek/Wan等）；原生支持Claude Code/Qoder/Qwen Code/OpenClaw/Hermes Agent等主流Agent框架；覆盖多模态模型调用/应用Workflow编排/知识库检索/记忆管理/联网搜索/本地文件处理10+项能力；收录20+专家Skills模块和Showcase案例；将AI Agent开发从'调API'全面转向'写脚本调命令'",
+    "website": "https://github.com/modelstudioai/cli"
   }
 ]
