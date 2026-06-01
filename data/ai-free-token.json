@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-06-01",
+    "updatedAt": "2026-06-02",
     "platforms":  [
                       {
                           "name":  "Google AI Studio (Gemini)",
@@ -1879,6 +1879,21 @@
                                                      ]
                                       },
                           "cycle":  "永久免费（免费层可用）"
+                      },
+                      {
+                          "url":  "https://platform.agnes-ai.com",
+                          "quota":  "全球Top 10 AI Lab，2026年6月1日起三大核心模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列）、图像模型Agnes-Image-2.0-Flash（Artificial Analysis图像编辑榜单前三、一句话改图/换背景/加物体）、视频模型Agnes-Video-V2.0（音画同步生成、Artificial Analysis视频榜上榜）；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
+                          "name":  "Agnes AI",
+                          "develop":  {
+                                          "base_url":  "https://apihub.agnes-ai.com/v1",
+                                          "document_url":  "https://platform.agnes-ai.com/docs",
+                                          "models":  [
+                                                         "agnes-2.0-flash",
+                                                         "agnes-image-2.0-flash",
+                                                         "agnes-video-v2.0"
+                                                     ]
+                                      },
+                          "cycle":  "无限期免费（2026年6月1日起永久免费）"
                       }
                   ]
 }

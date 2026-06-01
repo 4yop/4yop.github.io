@@ -1744,5 +1744,32 @@
     "deployment": "开源命令行工具（GitHub），npm安装，支持AI Agent一键接入",
     "features": "阿里云百炼核心能力全面CLI化并开源；一行命令让Agent调用150+款主流模型（Qwen/GLM/Kimi/DeepSeek/Wan等）；原生支持Claude Code/Qoder/Qwen Code/OpenClaw/Hermes Agent等主流Agent框架；覆盖多模态模型调用/应用Workflow编排/知识库检索/记忆管理/联网搜索/本地文件处理10+项能力；收录20+专家Skills模块和Showcase案例；将AI Agent开发从'调API'全面转向'写脚本调命令'",
     "website": "https://github.com/modelstudioai/cli"
+  },
+  {
+    "id": 250,
+    "name": "OpenAGI",
+    "developer": "BuildBetter",
+    "releaseTime": "2026.Q1-Q2",
+    "deployment": "本地开源Agent框架，以守护进程(daemon)方式运行",
+    "features": "2026年Q1-Q2评测中被评为最佳OpenClaw替代方案；唯一具备'观察-评分-决策-触达'闭环的本地Agent；通过观察用户行为自动学习改进；支持SMS/Telegram/HTTP多通道主动推送；真正本地执行无数据外泄；自改进式Proactive Agent，能像真人助手一样主动发现需求并联系用户",
+    "website": "https://blog.buildbetter.ai"
+  },
+  {
+    "id": 251,
+    "name": "ADP Claw",
+    "developer": "腾讯电脑管家团队",
+    "releaseTime": "2026.03",
+    "deployment": "云端极速部署版，一键安装，适配QQ/微信生态",
+    "features": "腾讯基于OpenClaw打造的云端AI智能体；一键安装零门槛上手；深度适配QQ和微信生态；面向消费级用户的轻量Claw产品；腾讯系IM平台原生集成",
+    "website": "https://guanjia.qq.com"
+  },
+  {
+    "id": 252,
+    "name": "Miclaw",
+    "developer": "小米",
+    "releaseTime": "2026.03",
+    "deployment": "移动端原生Claw，深度适配HyperOS与米家生态",
+    "features": "小米出品的移动端原生OpenClaw产品；深度集成小米HyperOS操作系统；支持米家智能家居设备控制；手机端Agent体验优化；小米生态链设备联动能力",
+    "website": "https://mi.com"
   }
 ]
