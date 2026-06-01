@@ -1771,5 +1771,23 @@
     "deployment": "移动端原生Claw，深度适配HyperOS与米家生态",
     "features": "小米出品的移动端原生OpenClaw产品；深度集成小米HyperOS操作系统；支持米家智能家居设备控制；手机端Agent体验优化；小米生态链设备联动能力",
     "website": "https://mi.com"
+  },
+  {
+    "id": 253,
+    "name": "代号 Craft",
+    "developer": "腾讯游戏生态发展部",
+    "releaseTime": "2026.05",
+    "deployment": "网页端AI对话式创作，申请制首测",
+    "features": "腾讯游戏推出的AI游戏创作平台；通过自然语言输入创意即可生成可运行的2D/3D游戏原型；内置全链路AIGC工具链与20000+云端精品资产库；支持可视化参数面板拖拽调参；覆盖横版闯关、赛车、开放世界、RPG、卡牌等多品类游戏；支持导出Unity等主流引擎格式；2026年5月SPARK 2026腾讯游戏发布会首次亮相，近期开启官方首测",
+    "website": "https://mp.weixin.qq.com/s/csZYzDmJVO__9UsuU_v3nA"
+  },
+  {
+    "id": 254,
+    "name": "Webwright",
+    "developer": "微软研究院（Microsoft Research）",
+    "releaseTime": "2026.05",
+    "deployment": "开源框架，GitHub开源，约1000行代码",
+    "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；采用Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent",
+    "website": "https://github.com/microsoft/Webwright"
   }
 ]
