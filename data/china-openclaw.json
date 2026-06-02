@@ -1789,5 +1789,14 @@
     "deployment": "开源框架，GitHub开源，约1000行代码",
     "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；采用Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent",
     "website": "https://github.com/microsoft/Webwright"
+  },
+  {
+    "id": 255,
+    "name": "中国电子云产业级超级智能体",
+    "developer": "中国电子云",
+    "releaseTime": "2026.05.29",
+    "deployment": "企业级私有化部署，信创专属云",
+    "features": "中国电子云5月29日在天津新产品发布会上发布的产业级超级智能体；定位\"企业AI总指挥\"，具备四层记忆体系；面向行业深度应用；发布\"专属AI云\"产品战略，实现从信创专属云向AI时代全栈智能服务的根本性跨越",
+    "website": "https://www.cecloud.cn/"
   }
 ]
