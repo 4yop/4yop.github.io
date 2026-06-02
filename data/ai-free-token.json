@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-02",
+  "updatedAt": "2026-06-03",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -233,54 +233,6 @@
           "command-r-plus-08-2024",
           "command-r-08-2024",
           "embed-v4"
-        ]
-      }
-    },
-    {
-      "name": "OpenRouter",
-      "quota": "免费模型（模型ID以 :free 结尾）：每分钟最多 20 次请求；每日限额：未充值账户 50 次/天，充值至少 $10 积分后升至 1000 次/天（30+模型包括DeepSeek R1、Llama 4、Qwen3 Coder 480B、GLM-4.5-Air、MiniMax M2.5、GPT-OSS-120B等）；2026年新增 openrouter-router 自动路由功能，智能调度至可用免费模型，毫秒级容错切换；账户余额为负时即使免费模型也无法使用",
-      "cycle": "每日重置（永久免费层，免费模型标注 :free；付费可提升限额）",
-      "url": "https://openrouter.ai",
-      "develop": {
-        "document_url": "https://openrouter.ai/docs",
-        "base_url": "https://openrouter.ai/api/v1",
-        "models": [
-          "deepseek/deepseek-r1:free",
-          "deepseek/deepseek-v4-flash:free",
-          "meta-llama/llama-4-scout:free",
-          "qwen/qwen3-235b-a22b:free",
-          "qwen/qwen3-coder-480b-a35b:free",
-          "qwen/qwen3-next-80b-a3b-instruct:free",
-          "qwen/qwen3-coder:free",
-          "qwen/qwen3.6-plus:free",
-          "z-ai/glm-4.5-air:free",
-          "minimax/minimax-m2.5:free",
-          "moonshotai/kimi-k2.6:free",
-          "openai/gpt-oss-120b:free",
-          "openai/gpt-oss-20b:free",
-          "nvidia/nemotron-3-super-120b-a12b:free",
-          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "nvidia/nemotron-3-nano-30b-a3b:free",
-          "nvidia/nemotron-nano-12b-v2-vl:free",
-          "nvidia/nemotron-nano-9b-v2:free",
-          "google/gemma-4-31b-it:free",
-          "google/gemma-4-26b-a4b-it:free",
-          "google/gemma-3-27b-it:free",
-          "tencent/hy3-preview:free",
-          "inclusionai/ling-2.6-1t:free",
-          "poolside/laguna-xs.2:free",
-          "poolside/laguna-m.1:free",
-          "baidu/qianfan-ocr-fast:free",
-          "baidu/cobuddy:free",
-          "anthropic/claude-3.5-sonnet:free",
-          "arcee-ai/trinity-large-thinking:free",
-          "liquid/lfm-2.5-1.2b-instruct:free",
-          "liquid/lfm-2.5-1.2b-thinking:free",
-          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-          "servicenow/apriel-1.5-15b-thinker:free",
-          "nousresearch/hermes-3-llama-3.1-405b:free",
-          "meta-llama/llama-3.2-3b-instruct:free",
-          "meta-llama/llama-3.3-70b-instruct:free"
         ]
       }
     },
@@ -987,45 +939,6 @@
       }
     },
     {
-      "name": "ChatAnywhere",
-      "quota": "免费API Key：GPT-4o-mini/GPT-3.5-turbo 200次/天，DeepSeek-R1/V3 30次/天，GPT-5系列5次/天（每个IP+Key组合计算；需GitHub登录申请；仅供个人非商业用途）",
-      "cycle": "每日重置（永久免费层，限非商业用途）",
-      "url": "https://api.chatanywhere.tech",
-      "develop": {
-        "document_url": "https://chatanywhere.apifox.cn/",
-        "base_url": "https://api.chatanywhere.tech/v1",
-        "models": [
-          "gpt-4o-mini",
-          "gpt-4o",
-          "gpt-3.5-turbo",
-          "deepseek-r1",
-          "deepseek-v3",
-          "gpt-5.2",
-          "gpt-5.1",
-          "gpt-5",
-          "claude-sonnet-4"
-        ]
-      }
-    },
-    {
-      "name": "ZenMux",
-      "quota": "新用户赠送$1（聚合平台，非Token来源）",
-      "cycle": "永久免费（Agens 1.5 Pro）",
-      "url": "https://zenmux.ai",
-      "develop": {
-        "document_url": "https://zenmux.ai/docs",
-        "base_url": "https://api.zenmux.ai/v1",
-        "models": [
-          "Agens-1.5-Pro",
-          "openai/gpt-4o",
-          "anthropic/claude-3.5-sonnet",
-          "google/gemini-2.5-pro",
-          "deepseek-ai/DeepSeek-V3",
-          "claude-sonnet-4"
-        ]
-      }
-    },
-    {
       "name": "联通云 AI Coding Plan",
       "quota": "新一期开发者激励活动进行中：支持 GLM-5、MiniMax M2.5/M2.7、Qwen3.5-397B、Qwen3-235B、DeepSeek-V3.1/V4、Kimi-K2.5 等主流模型；适配 OpenCode、Claude Code、Cursor、OpenClaw、Cline 等工具；OpenAI 兼容协议；此前限时免费1个月活动（2026-03-15截止）已替换为新激励活动；曾推出限量5000台免费送1个月4核8G服务器（预装OpenClaw）活动",
       "cycle": "新一期激励活动持续中（具体额度和有效期以联通云官方最新公告为准）",
@@ -1223,17 +1136,6 @@
           "gpt-5-nano",
           "claude-sonnet-4"
         ]
-      }
-    },
-    {
-      "name": "ApiFreeLLM",
-      "quota": "完全免费、无限制的 LLM API 访问；使用 200B+ 参数级别的先进模型；免费 API 密钥通过 Google 登录获取，永久有效；轻微延迟防止滥用；Premium 套餐（$12/月）可享受无速率限制和 OpenAI 兼容 API",
-      "cycle": "永久免费（有轻微速率限制）；Premium $12/月无限制",
-      "url": "https://apifreellm.com",
-      "develop": {
-        "document_url": "https://apifreellm.com",
-        "base_url": "https://apifreellm.com/api/v1",
-        "models": []
       }
     },
     {
@@ -1648,26 +1550,6 @@
       }
     },
     {
-      "name": "9Router",
-      "quota": "开源AI路由聚合网关（MIT协议，11.4K Star）；本地部署免费使用；支持60+ AI供应商、100+模型；智能3层回退机制（订阅→低价→免费）；RTK Token节省引擎可无损压缩20-65% tokens；Caveman Mode输出再省65%；支持Claude Code、Cursor、Codex、Cline、OpenClaw等10+ CLI工具；OpenAI兼容端点（localhost:20128/v1）；OAuth + API Key双模式认证；多账号轮询负载均衡；Cloudflare边缘隧道远程访问",
-      "cycle": "永久免费（开源MIT协议，本地部署；需自行提供各供应商API Key或OAuth）",
-      "url": "https://9router.com",
-      "develop": {
-        "document_url": "https://github.com/decolua/9router",
-        "base_url": "http://localhost:20128/v1",
-        "models": [
-          "claude-sonnet-4",
-          "gpt-5",
-          "gemini-2.5-flash",
-          "deepseek-r1",
-          "glm-5",
-          "minimax-m2.5",
-          "kimi-k2.5",
-          "qwen3-coder"
-        ]
-      }
-    },
-    {
       "name": "Free.ai",
       "quota": "30,000 tokens/天免费（注册后3倍额度）；400+ 免费AI工具（聊天、图像生成、视频生成、TTS、STT、音乐、写作、代码、设计、翻译等18类）；346+ 模型（含38+自托管开源模型：Qwen 2.5 7B-72B、FLUX图像、CogVideoX视频、Kokoro TTS 174声音、Whisper STT、DeepSeek R1 7B等，运行于A100 GPU）；OpenAI兼容REST API；无需信用卡；支持商用；数据不用于训练；100+语言支持；2026年3月上线",
       "cycle": "每日重置（永久免费层；匿名用户20条聊天/5张图/天，注册用户3倍）",
@@ -1688,26 +1570,6 @@
       }
     },
     {
-      "name": "AI.cc",
-      "quota": "新用户注册限时赠送免费Token（具体额度以官网最新公告为准）；统一AI API聚合平台，300+模型（GPT-5.5、Claude Opus 4.7、Gemini 3.1 Pro、DeepSeek V4、Llama 4、Qwen 3.6-Plus、Gemma 4、GLM-5.1等）；OpenAI兼容API格式；新加坡总部，亚洲低延迟优化；内置OpenClaw多模型编排框架；AI翻译API、网页抓取服务；比直连零售API节省20%成本",
-      "cycle": "限时免费Token（用完为止）；后续按量付费",
-      "url": "https://www.ai.cc",
-      "develop": {
-        "document_url": "https://docs.ai.cc/",
-        "base_url": "https://api.ai.cc/v1",
-        "models": [
-          "gpt-5.5",
-          "claude-opus-4-7",
-          "gemini-3.1-pro",
-          "deepseek-v4-pro",
-          "llama-4-scout",
-          "qwen3.6-plus",
-          "glm-5.1",
-          "minimax-m2.7"
-        ]
-      }
-    },
-    {
       "name": "阿里云百炼国际版 (Alibaba Cloud Model Studio)",
       "quota": "新用户首次开通即赠每模型 100万 tokens 免费额度（新加坡区域International Edition）；覆盖 Qwen 全系列文本/代码/视觉/推理模型（qwen-plus、qwen-flash、qwen3-vl-plus、qvq-max、qwen3-coder-plus等）；另赠 100张AI生图 + 50秒视频生成 + TTS字符额度；无需信用卡；OpenAI兼容API（DashScope API Key）；⚠️ 必须在新加坡区域激活才享免费额度，北京/弗吉尼亚区域无免费额度",
       "cycle": "激活后90天有效（免费额度从激活时起算，非首次调用）",
@@ -1724,26 +1586,6 @@
           "qwen3.5-omni",
           "deepseek-r1",
           "deepseek-v3"
-        ]
-      }
-    },
-    {
-      "name": "FreeLLMAPI（开源自托管聚合代理）",
-      "quota": "MIT协议开源项目（GitHub 3.6K+ Star）；自托管OpenAI兼容代理，将Google Gemini、Groq、Cerebras、SambaNova、Mistral、OpenRouter、GitHub Models、Cloudflare Workers AI、Cohere、Z.ai、NVIDIA NIM等14+家免费API层聚合到单一/v1/chat/completions端点；聚合后可用容量约8亿-13亿tokens/月；支持SSE流式输出、Tool Calling、粘性会话（约30分钟保持同一模型）；AES-256-GCM密钥加密存储；SQLite速率限制账本；React管理面板；资源占用约40MB RSS，可运行于树莓派4",
-      "cycle": "永久免费（MIT开源协议，需自行部署；底层依赖各平台的免费层额度）",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "develop": {
-        "document_url": "https://github.com/tashfeenahmed/freellmapi",
-        "base_url": "http://localhost:3001/v1",
-        "models": [
-          "auto",
-          "gemini-2.5-flash",
-          "llama-3.3-70b-versatile",
-          "llama-3.1-8b-instant",
-          "qwen3-235b-a22b",
-          "deepseek-r1",
-          "mistral-large-latest",
-          "glm-4.7-flash"
         ]
       }
     },
