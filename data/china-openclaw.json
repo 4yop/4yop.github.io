@@ -1077,7 +1077,7 @@
     "releaseTime": "2026.05.07",
     "deployment": "支持Windows和macOS双平台一键安装，双击即可启动使用；结合移动云MoMA模型聚合平台与AI-eSIM能力",
     "features": "中国移动推出的智能体解决方案；支持Windows和macOS双平台一键安装；预置三十余种官方技能；可直接接入飞书、微信等常用办公软件；基于移动云MoMA聚合300+优质模型；结合AI-eSIM芯片级安全底座，赋予设备唯一数字身份标识；有望在物流分拣、家庭服务等场景实现应用突破；将在2026移动云大会（5月7-9日苏州）正式发布",
-    "website": "https://www.10086.cn/"
+    "website": "https://ecloud.10086.cn/portal/product/hotCase"
   },
   {
     "id": 174,
@@ -1798,5 +1798,14 @@
     "deployment": "企业级私有化部署，信创专属云",
     "features": "中国电子云5月29日在天津新产品发布会上发布的产业级超级智能体；定位\"企业AI总指挥\"，具备四层记忆体系；面向行业深度应用；发布\"专属AI云\"产品战略，实现从信创专属云向AI时代全栈智能服务的根本性跨越",
     "website": "https://www.cecloud.cn/"
+  },
+  {
+    "id": 256,
+    "name": "TinyClaw",
+    "developer": "TinyAGI开源社区",
+    "releaseTime": "2026.02",
+    "deployment": "开源项目（MIT协议），支持macOS/Linux/WSL2，Node.js v18+，CLI+TUI仪表盘+TinyOffice Web门户",
+    "features": "轻量级多智能体协同框架，OpenClaw生态核心产品之一；原生协同调度机制（链式执行/扇出分发），Agent间自动交接任务无需人工干预；多通道持久化交互（Discord/WhatsApp/Telegram），跨平台无缝共享对话上下文；基于SQLite原子事务队列的消息传递，内置自动重试与死信管理；主动心跳机制实现7×24小时自主运行；实时TUI仪表盘与TinyOffice Web后台可视化监控；配对码白名单访问控制保障安全；每个智能体拥有独立工作目录与配置文件，完全隔离运行",
+    "website": "https://github.com/TinyAGI/tinyclaw"
   }
 ]

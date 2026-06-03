@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03",
+  "updatedAt": "2026-06-04",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1082,7 +1082,7 @@
     },
     {
       "name": "Scitely",
-      "quota": "无限制免费API访问（社区版适用于个人和非商业用途，遵循公平使用政策）；支持50+前沿AI模型，包含DeepSeek R1/V3、Qwen、Kimi、Llama 4、GLM等；非功能缩水的演示版，与企业团队使用的相同模型",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】无限制免费API访问（社区版适用于个人和非商业用途，遵循公平使用政策）；支持50+前沿AI模型，包含DeepSeek R1/V3、Qwen、Kimi、Llama 4、GLM等；非功能缩水的演示版，与企业团队使用的相同模型",
       "cycle": "永久免费（社区版个人和非商业用途）",
       "url": "https://api.scitely.com/",
       "develop": {
@@ -1140,7 +1140,7 @@
     },
     {
       "name": "APIFree",
-      "quota": "一站式免费 AI API 统一平台；通过一个 API 端点访问多个主流 AI 模型（GPT-4、Claude、Llama 等）；支持多模态模型；按量计费永久有效",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】一站式免费 AI API 统一平台；通过一个 API 端点访问多个主流 AI 模型（GPT-4、Claude、Llama 等）；支持多模态模型；按量计费永久有效",
       "cycle": "免费起步（按量计费，永久有效）",
       "url": "https://www.apifree.ai",
       "develop": {
@@ -1269,7 +1269,7 @@
     },
     {
       "name": "FreeTheAI.xyz",
-      "quota": "完全免费，无每日上限；支持GPT-4.1/4o/5系列、Claude-3.7/4/4.5/Opus系列、DeepSeek-R1/V3、Gemini-2.5/3.0系列、Grok-3/4、Kimi-K2.5/K2.6等主流顶级模型；速率限制：每分钟30请求（部分模型10次/分钟）；OpenAI兼容API；通过Discord注册获取API Key",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】完全免费，无每日上限；支持GPT-4.1/4o/5系列、Claude-3.7/4/4.5/Opus系列、DeepSeek-R1/V3、Gemini-2.5/3.0系列、Grok-3/4、Kimi-K2.5/K2.6等主流顶级模型；速率限制：每分钟30请求（部分模型10次/分钟）；OpenAI兼容API；通过Discord注册获取API Key",
       "cycle": "永久免费（无每日上限；社区驱动，政策可能调整）",
       "url": "https://freetheai.xyz",
       "develop": {
@@ -1488,7 +1488,7 @@
     },
     {
       "name": "LLM7.io",
-      "quota": "无需注册即可使用（用unused作为API Key）；免费Token可从 token.llm7.io 获取更高限额；免费层约20 RPM / 100次/小时；支持多模型路由，自动选择最优免费模型；提供OpenAI兼容API，可直接替换base_url",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】无需注册即可使用（用unused作为API Key）；免费Token可从 token.llm7.io 获取更高限额；免费层约20 RPM / 100次/小时；支持多模型路由，自动选择最优免费模型；提供OpenAI兼容API，可直接替换base_url",
       "cycle": "永久免费（无需注册，获取免费Token可提升限额）",
       "url": "https://llm7.io",
       "develop": {
@@ -1618,7 +1618,7 @@
     },
     {
       "name": "Puter.js (Puter.com)",
-      "quota": "免费访问500+ AI模型（含Mistral Large 3、Claude Opus/Sonnet/Haiku、GPT-5系列、Gemini、DeepSeek、Llama 4、Grok等）；首创「User-Pays」模型——开发者无需付费，终端用户通过自己的Puter账户承担AI使用成本；无需API Key即可通过Puter.js SDK调用；OpenAI兼容API端点（api.puter.com/puterai/openai/v1/）；也支持Anthropic SDK兼容端点；免费层约100次请求/天（未公开文档化，基于社区反馈估算）；适合前端应用、AI编程助手、Vibe Coding平台集成；⚠️ 官方宣传「Free, Unlimited」但实际存在未文档化的速率限制，超出后报错「usage-limited-chat: Permission denied」",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】免费访问500+ AI模型（含Mistral Large 3、Claude Opus/Sonnet/Haiku、GPT-5系列、Gemini、DeepSeek、Llama 4、Grok等）；首创「User-Pays」模型——开发者无需付费，终端用户通过自己的Puter账户承担AI使用成本；无需API Key即可通过Puter.js SDK调用；OpenAI兼容API端点（api.puter.com/puterai/openai/v1/）；也支持Anthropic SDK兼容端点；免费层约100次请求/天（未公开文档化，基于社区反馈估算）；适合前端应用、AI编程助手、Vibe Coding平台集成；⚠️ 官方宣传「Free, Unlimited」但实际存在未文档化的速率限制，超出后报错「usage-limited-chat: Permission denied」",
       "cycle": "永久免费层（约100次请求/天，限制未公开文档化；User-Pays模型下开发者零成本）",
       "url": "https://puter.com",
       "develop": {
@@ -1660,7 +1660,7 @@
     },
     {
       "url": "https://kilo.ai",
-      "quota": "免费模型无需信用卡；kilo-auto/free自动路由至minimax/minimax-m2.5:free(80%)和stepfun/step-3.5-flash:free(20%)；其他免费模型：x-ai/grok-code-fast-1:free（代码）、bytedance-seed/dola-seed-2.0-pro:free、nvidia/nemotron-3-super-120b-a12b:free（262K上下文，32K输出）、arcee-ai/trinity-large-thinking:free（推理）、openrouter/free（自动路由）；约200请求/小时",
+      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】免费模型无需信用卡；kilo-auto/free自动路由至minimax/minimax-m2.5:free(80%)和stepfun/step-3.5-flash:free(20%)；其他免费模型：x-ai/grok-code-fast-1:free（代码）、bytedance-seed/dola-seed-2.0-pro:free、nvidia/nemotron-3-super-120b-a12b:free（262K上下文，32K输出）、arcee-ai/trinity-large-thinking:free（推理）、openrouter/free（自动路由）；约200请求/小时",
       "name": "Kilo AI",
       "develop": {
         "base_url": "https://api.kilo.ai/api/gateway",
