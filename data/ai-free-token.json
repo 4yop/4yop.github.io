@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04",
+  "updatedAt": "2026-06-05",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1080,30 +1080,7 @@
         ]
       }
     },
-    {
-      "name": "Scitely",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】无限制免费API访问（社区版适用于个人和非商业用途，遵循公平使用政策）；支持50+前沿AI模型，包含DeepSeek R1/V3、Qwen、Kimi、Llama 4、GLM等；非功能缩水的演示版，与企业团队使用的相同模型",
-      "cycle": "永久免费（社区版个人和非商业用途）",
-      "url": "https://api.scitely.com/",
-      "develop": {
-        "document_url": "https://api.scitely.com/v1",
-        "base_url": "https://api.scitely.com/v1",
-        "models": [
-          "deepseek-r1",
-          "deepseek-v3",
-          "deepseek-v4-flash",
-          "qwen3-235b-a22b",
-          "qwen3-32b",
-          "kimi-k2.5",
-          "llama-4-scout",
-          "llama-4-maverick",
-          "glm-5",
-          "glm-4.7-flash",
-          "minimax-m2.5",
-          "minimax-m2.7"
-        ]
-      }
-    },
+
     {
       "name": "书生 Intern AI（上海人工智能实验室）",
       "quota": "免费提供 Intern-S1 系列模型的 OpenAI 兼容 API；支持文本生成、图像分析、工具调用、思考模式等功能；10 RPM 速率限制，密钥有效期6个月",
@@ -1138,17 +1115,7 @@
         ]
       }
     },
-    {
-      "name": "APIFree",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】一站式免费 AI API 统一平台；通过一个 API 端点访问多个主流 AI 模型（GPT-4、Claude、Llama 等）；支持多模态模型；按量计费永久有效",
-      "cycle": "免费起步（按量计费，永久有效）",
-      "url": "https://www.apifree.ai",
-      "develop": {
-        "document_url": "https://www.apifree.ai",
-        "base_url": "https://api.apifree.ai/v1",
-        "models": []
-      }
-    },
+
     {
       "name": "Voyage AI",
       "quota": "新用户注册赠送 2亿 token 免费额度（大多数嵌入及重排序模型，含 voyage-3.5、voyage-3-large、voyage-4、voyage-4-lite、rerank-2.5 等；专用模型 voyage-finance-2 / law-2 / code-2 免费额度为5000万token；多模态嵌入额度为2亿文本token + 1500亿像素；被 Anthropic 收购，与 Claude 深度集成）",
@@ -1267,31 +1234,7 @@
         ]
       }
     },
-    {
-      "name": "FreeTheAI.xyz",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】完全免费，无每日上限；支持GPT-4.1/4o/5系列、Claude-3.7/4/4.5/Opus系列、DeepSeek-R1/V3、Gemini-2.5/3.0系列、Grok-3/4、Kimi-K2.5/K2.6等主流顶级模型；速率限制：每分钟30请求（部分模型10次/分钟）；OpenAI兼容API；通过Discord注册获取API Key",
-      "cycle": "永久免费（无每日上限；社区驱动，政策可能调整）",
-      "url": "https://freetheai.xyz",
-      "develop": {
-        "document_url": "https://github.com/vibheksoni/free-ai",
-        "base_url": "https://api.freetheai.xyz/v1",
-        "models": [
-          "gpt-4.1",
-          "gpt-4o",
-          "gpt-5",
-          "claude-4.5-sonnet",
-          "claude-opus-4-5",
-          "deepseek-r1",
-          "deepseek-v3",
-          "gemini-3.0-flash",
-          "grok-4",
-          "kimi-k2.5",
-          "llama-3.2-3b",
-          "minimax-m2.5",
-          "claude-sonnet-4"
-        ]
-      }
-    },
+
     {
       "name": "Google Vertex AI",
       "quota": "新用户注册GCP获得 $300 免费试用额度（90天有效，需绑定信用卡但试用期内不扣费）；可用于Gemini全系列（2.5 Flash/Pro、3.0、3.1 Pro）、Imagen图像生成等Google最新模型；企业级AI平台，与Google AI Studio不同",
@@ -1312,7 +1255,7 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；❌ 100T Token创造者激励计划已于2026-05-28到期（已结束）；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
+      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
       "cycle": "V2.5系列永久降价生效；100T创造者激励计划已过期（2026-05-28到期）；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
@@ -1486,19 +1429,7 @@
         ]
       }
     },
-    {
-      "name": "LLM7.io",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】无需注册即可使用（用unused作为API Key）；免费Token可从 token.llm7.io 获取更高限额；免费层约20 RPM / 100次/小时；支持多模型路由，自动选择最优免费模型；提供OpenAI兼容API，可直接替换base_url",
-      "cycle": "永久免费（无需注册，获取免费Token可提升限额）",
-      "url": "https://llm7.io",
-      "develop": {
-        "document_url": "https://docs.llm7.io",
-        "base_url": "https://api.llm7.io/v1",
-        "models": [
-          "default"
-        ]
-      }
-    },
+
     {
       "name": "Kluster AI",
       "quota": "新用户注册验证邮箱后赠送$5免费积分；仅支持Batch API异步批处理（不支持实时对话）；支持Llama 3.1 405B Instruct、DeepSeek-R1、Qwen 2.5 72B等大模型；使用JSONL格式提交批处理任务，结果异步返回；适合大规模数据标注、批量文本分类、数据集增强等场景",
@@ -1616,31 +1547,7 @@
         ]
       }
     },
-    {
-      "name": "Puter.js (Puter.com)",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】免费访问500+ AI模型（含Mistral Large 3、Claude Opus/Sonnet/Haiku、GPT-5系列、Gemini、DeepSeek、Llama 4、Grok等）；首创「User-Pays」模型——开发者无需付费，终端用户通过自己的Puter账户承担AI使用成本；无需API Key即可通过Puter.js SDK调用；OpenAI兼容API端点（api.puter.com/puterai/openai/v1/）；也支持Anthropic SDK兼容端点；免费层约100次请求/天（未公开文档化，基于社区反馈估算）；适合前端应用、AI编程助手、Vibe Coding平台集成；⚠️ 官方宣传「Free, Unlimited」但实际存在未文档化的速率限制，超出后报错「usage-limited-chat: Permission denied」",
-      "cycle": "永久免费层（约100次请求/天，限制未公开文档化；User-Pays模型下开发者零成本）",
-      "url": "https://puter.com",
-      "develop": {
-        "document_url": "https://developer.puter.com/",
-        "base_url": "https://api.puter.com/puterai/openai/v1",
-        "models": [
-          "mistralai/mistral-large-2512",
-          "mistralai/mistral-medium-3-5",
-          "mistralai/mistral-small-2603",
-          "mistralai/codestral-2508",
-          "mistralai/devstral-2512",
-          "anthropic/claude-opus-4-7",
-          "anthropic/claude-sonnet-4-6",
-          "anthropic/claude-haiku-4-5",
-          "openai/gpt-5.5",
-          "openai/gpt-5.2",
-          "google/gemini-2.5-pro",
-          "deepseek/deepseek-v4-flash",
-          "meta-llama/llama-4-scout"
-        ]
-      }
-    },
+
     {
       "name": "Glhf.chat",
       "quota": "免费Serverless推理平台，30 RPM速率限制；支持Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct、QwQ-32B等开源模型；可加载任意HuggingFace仓库模型（通过粘贴链接自动加载）；最多8张Nvidia A100 80GB GPU；OpenAI兼容API格式；自定义自动扩缩容GPU调度器；Beta期间完全免费",
@@ -1658,24 +1565,7 @@
         ]
       }
     },
-    {
-      "url": "https://kilo.ai",
-      "quota": "【⚠️中转聚合站：无自有模型，仅API转发】免费模型无需信用卡；kilo-auto/free自动路由至minimax/minimax-m2.5:free(80%)和stepfun/step-3.5-flash:free(20%)；其他免费模型：x-ai/grok-code-fast-1:free（代码）、bytedance-seed/dola-seed-2.0-pro:free、nvidia/nemotron-3-super-120b-a12b:free（262K上下文，32K输出）、arcee-ai/trinity-large-thinking:free（推理）、openrouter/free（自动路由）；约200请求/小时",
-      "name": "Kilo AI",
-      "develop": {
-        "base_url": "https://api.kilo.ai/api/gateway",
-        "document_url": "https://docs.kilo.ai",
-        "models": [
-          "kilo-auto/free",
-          "x-ai/grok-code-fast-1:free",
-          "minimax/minimax-m2.5:free",
-          "bytedance-seed/dola-seed-2.0-pro:free",
-          "nvidia/nemotron-3-super-120b-a12b:free",
-          "arcee-ai/trinity-large-thinking:free"
-        ]
-      },
-      "cycle": "永久免费（免费模型长期可用）"
-    },
+
     {
       "url": "https://console.nscale.com",
       "quota": "新用户注册赠送（无需信用卡）；欧盟主权云提供商，数据中心位于挪威；号称无速率限制、无冷启动；支持Llama-3.3-70B-Instruct（128K上下文）、Qwen3-Coder-30B-A3B-Instruct（256K上下文）、DeepSeek-R1-Distill-Llama-70B（128K上下文）、gpt-oss-120b、Qwen3-32B等开源模型",

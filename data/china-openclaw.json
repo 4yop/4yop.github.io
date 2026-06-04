@@ -1807,5 +1807,23 @@
     "deployment": "开源项目（MIT协议），支持macOS/Linux/WSL2，Node.js v18+，CLI+TUI仪表盘+TinyOffice Web门户",
     "features": "轻量级多智能体协同框架，OpenClaw生态核心产品之一；原生协同调度机制（链式执行/扇出分发），Agent间自动交接任务无需人工干预；多通道持久化交互（Discord/WhatsApp/Telegram），跨平台无缝共享对话上下文；基于SQLite原子事务队列的消息传递，内置自动重试与死信管理；主动心跳机制实现7×24小时自主运行；实时TUI仪表盘与TinyOffice Web后台可视化监控；配对码白名单访问控制保障安全；每个智能体拥有独立工作目录与配置文件，完全隔离运行",
     "website": "https://github.com/TinyAGI/tinyclaw"
+  },
+  {
+    "id": 257,
+    "name": "MaxKB",
+    "developer": "飞致云（FIT2CLOUD）",
+    "releaseTime": "2024.04",
+    "deployment": "开源项目（GPL-3.0），支持Docker私有化部署和云端SaaS",
+    "features": "开源企业级智能体平台，GitHub 20K+ Stars；RAG→Workflow→Agent渐进式能力升级路径；内置工作流引擎支持函数库和MCP工具调用；零编码快速嵌入企业微信/钉钉/飞书等第三方系统；模型中立支持30+大模型无缝对接；支持10+文档格式自动拆分与向量化；已服务1000+企业覆盖30+行业",
+    "website": "https://maxkb.cn/"
+  },
+  {
+    "id": 258,
+    "name": "Flowith",
+    "developer": "Flowith团队",
+    "releaseTime": "2025.06",
+    "deployment": "云端SaaS平台，Web端使用，支持国际版(flowith.io)和中国大陆版(flo.ing)",
+    "features": "画布式AI创作Agent平台，首创节点式交互方式；Agent Neo支持无限步骤持续执行，GAIA测试超越Manus和OpenAI Deep Research；知识花园功能自动构建知识网络；多线程画布界面支持多模型并行交互；支持GPT-5/Claude 4.5/Gemini 3等顶级模型；工作流可视化编排；专家智能体市场支持社区分享与交易",
+    "website": "https://flowith.io/"
   }
 ]
