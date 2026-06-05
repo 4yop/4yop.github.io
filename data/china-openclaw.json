@@ -1825,5 +1825,14 @@
     "deployment": "云端SaaS平台，Web端使用，支持国际版(flowith.io)和中国大陆版(flo.ing)",
     "features": "画布式AI创作Agent平台，首创节点式交互方式；Agent Neo支持无限步骤持续执行，GAIA测试超越Manus和OpenAI Deep Research；知识花园功能自动构建知识网络；多线程画布界面支持多模型并行交互；支持GPT-5/Claude 4.5/Gemini 3等顶级模型；工作流可视化编排；专家智能体市场支持社区分享与交易",
     "website": "https://flowith.io/"
+  },
+  {
+    "id": 259,
+    "name": "青藤WorkClaw",
+    "developer": "青藤云安全",
+    "releaseTime": "2026.04",
+    "deployment": "企业级私有化部署，支持K8s容器化部署（Pod per Employee架构）和brew单机快速体验",
+    "features": "面向企业级智能体部署场景的安全管理平台；四层纵深防御体系（API网关DLP+LLM智能路由+Skill安全市场+安全策略引擎）；统一管理控制台支持实例全生命周期管理（30秒一键部署）、RBAC权限配置、Token成本管控与超额限流、180天全量行为审计；智能评测体系实现变更自动回归测试保障上线质量；已服务8000人制造集团等标杆客户；适用于金融、制造等高安全合规行业",
+    "website": "https://www.qingteng.cn/workclaw.html"
   }
 ]

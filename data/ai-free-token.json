@@ -1009,20 +1009,7 @@
         ]
       }
     },
-    {
-      "name": "Free QWQ（分布式算力）",
-      "quota": "完全免费无限制调用 QwQ-32B 模型；基于全国50台家用电脑的 3090/4080/4090 显卡分布式算力；无需注册，直接使用公开 API Key；性能媲美 DeepSeek-R1、o1-mini 等商业模型",
-      "cycle": "永久免费（高峰时段可能排队）",
-      "url": "https://qwq.aigpu.cn",
-      "develop": {
-        "document_url": "https://qwq.aigpu.cn",
-        "base_url": "https://api.suanli.cn/v1",
-        "models": [
-          "free:QwQ-32B",
-          "QwQ-32B"
-        ]
-      }
-    },
+
     {
       "name": "扣子 Coze（字节跳动）",
       "quota": "每个空间免费额度：QPS=2、QPM=60、QPD=3000；支持创建智能体并远程调用 API；可接入 GPT-5、Claude、Gemini、DeepSeek 等 50+ 大模型；工作流编排、多模态 AI 集成",
@@ -1598,34 +1585,50 @@
       },
       "cycle": "每日重置（永久免费层）"
     },
+
     {
-      "url": "https://api.istero.com",
-      "quota": "面向企业与个人提供免费、全面且高质量的API数据接口资源；已接入DeepSeek-R1满血版等AI模型；免费API接口开放平台",
-      "name": "起零数据 (iStero)",
+      "name": "OpenRouter",
+      "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；50+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill、Mistral Small 3.1、MiniMax M2.5、Nemotron 3、GPT-OSS 120B、Cogito v1 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",
+      "cycle": "每日重置（永久免费层；充值$10后速率限制永久提升）",
+      "url": "https://openrouter.ai",
       "develop": {
-        "base_url": "https://api.istero.com/v1",
-        "document_url": "https://api.istero.com/docs",
+        "document_url": "https://openrouter.ai/docs/api-reference/limits",
+        "base_url": "https://openrouter.ai/api/v1",
         "models": [
-          "deepseek-r1",
-          "deepseek-v3"
+          "meta-llama/llama-3.3-70b-instruct:free",
+          "google/gemma-3-27b-it:free",
+          "google/gemma-3-12b-it:free",
+          "google/gemma-3-4b-it:free",
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "qwen/qwen3-235b-a22b:free",
+          "qwen/qwen3-32b:free",
+          "qwen/qwen3-14b:free",
+          "qwen/qwen3-8b:free",
+          "qwen/qwen3-4b:free",
+          "deepseek/deepseek-r1-distill-llama-70b:free",
+          "mistralai/mistral-small-3.1-24b-instruct:free",
+          "minimax/minimax-m2.5:free",
+          "nvidia/nemotron-3-nano-30b-a3b:free",
+          "openai/gpt-oss-120b:free",
+          "cognitive-cogito/cogito-v1-preview-llama-70b:free"
         ]
-      },
-      "cycle": "永久免费（免费层可用）"
+      }
     },
     {
-      "url": "https://platform.agnes-ai.com",
-      "quota": "全球Top 10 AI Lab，2026年6月1日起三大核心模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列）、图像模型Agnes-Image-2.0-Flash（Artificial Analysis图像编辑榜单前三、一句话改图/换背景/加物体）、视频模型Agnes-Video-V2.0（音画同步生成、Artificial Analysis视频榜上榜）；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
       "name": "Agnes AI",
+      "quota": "全球Top 10 AI Lab，2026年6月1日起三大核心模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列）、图像模型Agnes-Image-2.0-Flash（Artificial Analysis图像编辑榜单前三、一句话改图/换背景/加物体）、视频模型Agnes-Video-V2.0（音画同步生成、Artificial Analysis视频榜上榜）；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
+      "cycle": "无限期免费（2026年6月1日起永久免费）",
+      "url": "https://platform.agnes-ai.com",
       "develop": {
-        "base_url": "https://apihub.agnes-ai.com/v1",
         "document_url": "https://platform.agnes-ai.com/docs",
+        "base_url": "https://apihub.agnes-ai.com/v1",
         "models": [
           "agnes-2.0-flash",
           "agnes-image-2.0-flash",
           "agnes-video-v2.0"
         ]
-      },
-      "cycle": "无限期免费（2026年6月1日起永久免费）"
+      }
     }
   ]
 }
