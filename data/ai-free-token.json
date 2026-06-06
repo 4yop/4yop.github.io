@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-05",
+  "updatedAt": "2026-06-06",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -15,8 +15,6 @@
           "gemini-3-flash",
           "gemini-2.5-flash",
           "gemini-2.5-flash-lite",
-          "gemini-2.5-pro",
-          "gemini-3.1-pro-preview",
           "gemini-3.1-flash-lite-preview",
           "gemini-3.1-flash-tts",
           "gemma-3-27b-it",
