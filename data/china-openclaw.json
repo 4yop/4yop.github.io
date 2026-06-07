@@ -1834,5 +1834,23 @@
     "deployment": "企业级私有化部署，支持K8s容器化部署（Pod per Employee架构）和brew单机快速体验",
     "features": "面向企业级智能体部署场景的安全管理平台；四层纵深防御体系（API网关DLP+LLM智能路由+Skill安全市场+安全策略引擎）；统一管理控制台支持实例全生命周期管理（30秒一键部署）、RBAC权限配置、Token成本管控与超额限流、180天全量行为审计；智能评测体系实现变更自动回归测试保障上线质量；已服务8000人制造集团等标杆客户；适用于金融、制造等高安全合规行业",
     "website": "https://www.qingteng.cn/workclaw.html"
+  },
+  {
+    "id": 260,
+    "name": "Copaw",
+    "developer": "阿里云AgentScope团队",
+    "releaseTime": "2026.03",
+    "deployment": "源码/Docker/桌面版（Windows/macOS/Linux），支持pip一键安装",
+    "features": "阿里云通义实验室推出的OpenClaw平替；Apache 2.0开源协议；四层记忆系统（对话/每日/长期/用户档案）跨会话持久化；多引擎支持（欧拉/玛拉/llama.cpp等本地推理引擎，可离线使用国产大模型）；多渠道接入（钉钉/飞书/QQ/企业微信）；AES-256加密存储+多角色分级权限；支持龙芯/鲲鹏等国产芯片；内存占用约45MB",
+    "website": "https://github.com/agentscope-ai/QwenPaw"
+  },
+  {
+    "id": 261,
+    "name": "LobsterAI（有道龙虾）",
+    "developer": "网易有道",
+    "releaseTime": "2026.02",
+    "deployment": "源码编译/Docker，MIT开源协议",
+    "features": "国内首款MIT开源本土化OpenClaw智能体；全本地存储无云端外溢；安全沙箱机制隔离高风险操作；双引擎驱动（交互引擎+安全引擎）；深度适配中文指令支持口语化表达；远程操控电脑适合居家办公/远程运维；支持DeepSeek/MiniMax等8+国产大模型；内存占用约40MB",
+    "website": "https://github.com/netease-youdao/LobsterAI"
   }
 ]

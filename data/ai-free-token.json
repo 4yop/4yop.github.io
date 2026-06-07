@@ -1619,6 +1619,24 @@
           "agnes-video-v2.0"
         ]
       }
+    },
+    {
+      "name": "fal.ai",
+      "quota": "公司邮箱注册赠送 $20 免费积分；专注图像/视频/音频AI生成平台；支持 Sora 2、可灵(Kling)、Flux Pro、Stable Diffusion 3.5、Stable Video Diffusion、WAN 2.2 等前沿生成模型；OpenAI兼容API格式；按量计费，积分用完为止",
+      "cycle": "$20一次性注册积分（用完为止，公司邮箱验证）",
+      "url": "https://fal.ai",
+      "develop": {
+        "document_url": "https://fal.ai/docs",
+        "base_url": "https://fal.run",
+        "models": [
+          "fal-ai/flux-pro/v1.1-ultra",
+          "fal-ai/flux/dev",
+          "fal-ai/stable-diffusion-v3.5-large",
+          "fal-ai/kling-v1.6/pro",
+          "fal-ai/wan/v2.2",
+          "fal-ai/sora-v2"
+        ]
+      }
     }
   ]
 }
