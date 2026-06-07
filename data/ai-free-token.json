@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07",
+  "updatedAt": "2026-06-08",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -410,21 +410,6 @@
         "document_url": "https://docs.cerebrium.ai",
         "base_url": "https://api.cerebrium.ai/v1",
         "models": []
-      }
-    },
-    {
-      "name": "Chutes.ai",
-      "quota": "200 次 API 调用/天（基于 Bittensor 去中心化网络，支持 GPT 类大模型、代码生成等）",
-      "cycle": "每日重置（永久免费层）",
-      "url": "https://chutes.ai",
-      "develop": {
-        "document_url": "https://chutes.ai/docs",
-        "base_url": "https://api.chutes.ai/v1",
-        "models": [
-          "gpt-3.5-turbo",
-          "deepseek-r1",
-          "llama-3.3-70b-instruct"
-        ]
       }
     },
     {
@@ -1079,26 +1064,6 @@
       }
     },
     {
-      "name": "OpenCode Zen",
-      "quota": "⚠️ OpenCode是开源AI编程助手工具（类似Claude Code/Cursor），不是API平台；支持75+模型提供商，用户需自行提供API Key（可使用各免费平台的Key）；免费模型（MiniMax M2.5 Free、MiMo V2 Pro Free、Qwen3.6 Plus Free等）用于收集模型反馈，输入输出缓存均免费",
-      "cycle": "免费模型永久可用（Beta测试阶段）；需自行提供其他模型的API Key",
-      "url": "https://opencode.ai/zen",
-      "develop": {
-        "document_url": "https://opencode.ai/docs/zh-cn/zen/",
-        "base_url": "https://opencode.ai/zen/v1",
-        "models": [
-          "minimax-m2.5-free",
-          "mimo-v2-pro-free",
-          "mimo-v2-omni-free",
-          "qwen3.6-plus-free",
-          "nemotron-3-super-free",
-          "big-pickle",
-          "gpt-5-nano",
-          "claude-sonnet-4"
-        ]
-      }
-    },
-    {
       "name": "Voyage AI",
       "quota": "新用户注册赠送 2亿 token 免费额度（大多数嵌入及重排序模型，含 voyage-3.5、voyage-3-large、voyage-4、voyage-4-lite、rerank-2.5 等；专用模型 voyage-finance-2 / law-2 / code-2 免费额度为5000万token；多模态嵌入额度为2亿文本token + 1500亿像素；被 Anthropic 收购，与 Claude 深度集成）",
       "cycle": "一次性注册赠送（用完为止，无需信用卡）",
@@ -1270,8 +1235,8 @@
     },
     {
       "name": "商汤日日新 (SenseNova)",
-      "quota": "Token Plan 限时免费公测：每5小时1500次调用（SenseNova 6.7 Flash-Lite、SenseNova U1 Fast）；DeepSeek V4 Flash 每5小时150次；原生多模态架构，专为办公工作流设计；SenseNova-Skills 已在 GitHub 开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式",
-      "cycle": "限时免费公测（首月免费，后续将推出 Lite/Pro 付费档位）",
+      "quota": "Token Plan 限时免费公测：SenseNova 6.7 Flash-Lite 每5小时1500次调用（原生多模态架构，可直接理解网页/文档/图表，信息搜索场景Token消耗较纯文本智能体降60%）；SenseNova U1 Fast 每5小时1500次调用（信息图/Infographics生成）；DeepSeek V4 Flash 每5小时500次调用（256K超长上下文，工具调用）；SenseNova-Skills已在GitHub开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式；最多可创建20个API Key分别管理不同项目；⚠️ 公测首月免费，后续将推出 Lite/Pro 付费档位",
+      "cycle": "限时免费公测（首月免费，每5小时额度自动刷新；后续将推出 Lite/Pro 付费档位）",
       "url": "https://www.sensenova.cn",
       "develop": {
         "document_url": "https://www.sensenova.cn/token-plan",

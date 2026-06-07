@@ -1852,5 +1852,32 @@
     "deployment": "源码编译/Docker，MIT开源协议",
     "features": "国内首款MIT开源本土化OpenClaw智能体；全本地存储无云端外溢；安全沙箱机制隔离高风险操作；双引擎驱动（交互引擎+安全引擎）；深度适配中文指令支持口语化表达；远程操控电脑适合居家办公/远程运维；支持DeepSeek/MiniMax等8+国产大模型；内存占用约40MB",
     "website": "https://github.com/netease-youdao/LobsterAI"
+  },
+  {
+    "id": 262,
+    "name": "星狐Claw",
+    "developer": "星狐Claw团队",
+    "releaseTime": "2026.05",
+    "deployment": "桌面端一键部署工具，支持Windows 11/macOS/Linux",
+    "features": "一键部署OpenClaw到多平台，3分钟完成配置；自动检测并安装所有依赖环境无需手动配置Node.js/npm；支持Claude/GPT/Gemini等主流AI模型一键切换；支持Telegram/飞书/钉钉/Discord等多渠道对接；内置可视化管理面板（实例启停/模型切换/日志查看）；通过星狐云路由API调用节省约20%-40%费用",
+    "website": "https://xinghuclaw.com/"
+  },
+  {
+    "id": 263,
+    "name": "TecoClaw（太初龙虾一体机）",
+    "developer": "太初元碁（Tecorigin）",
+    "releaseTime": "2026.04.09",
+    "deployment": "企业级本地化部署，基于郑州空港智算中心，全栈国产化适配",
+    "features": "企业级全栈国产化AI Agent方案；以自强鲲鹏服务器为物理底座深度融合OpenClaw与沙箱技术；基于郑州空港智算中心提供算力支撑；完成DeepSeek-V4深度适配与协同优化；入选工信部先进计算赋能新质生产力典型应用案例；亮相北京科博会首展龙虾一体机获央视报道；面向政府和企业用户的智能算力系统解决方案",
+    "website": "https://tecorigin.com"
+  },
+  {
+    "id": 264,
+    "name": "飞书OpenClaw",
+    "developer": "飞书（字节跳动）",
+    "releaseTime": "2026.03",
+    "deployment": "云端一键部署，飞书内直接使用，零配置零安装",
+    "features": "飞书官方OpenClaw部署方案；2分钟在飞书内完成养虾，全网最简单的零门槛方案；预装飞书官方插件与搜索/图片生成等热门技能；AI能以用户身份在飞书内完成工作（总结消息/撰写文档/生成多维表格）；获取飞书内海量工作上下文使指令执行更精准；新用户首日可领400万免费Token，每日150万Token；7×24小时稳定在线，平台专业安全保障",
+    "website": "https://openclaw.feishu.cn/"
   }
 ]
