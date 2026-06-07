@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-06",
+  "updatedAt": "2026-06-07",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1007,7 +1007,6 @@
         ]
       }
     },
-
     {
       "name": "扣子 Coze（字节跳动）",
       "quota": "每个空间免费额度：QPS=2、QPM=60、QPD=3000；支持创建智能体并远程调用 API；可接入 GPT-5、Claude、Gemini、DeepSeek 等 50+ 大模型；工作流编排、多模态 AI 集成",
@@ -1065,7 +1064,6 @@
         ]
       }
     },
-
     {
       "name": "书生 Intern AI（上海人工智能实验室）",
       "quota": "免费提供 Intern-S1 系列模型的 OpenAI 兼容 API；支持文本生成、图像分析、工具调用、思考模式等功能；10 RPM 速率限制，密钥有效期6个月",
@@ -1100,7 +1098,6 @@
         ]
       }
     },
-
     {
       "name": "Voyage AI",
       "quota": "新用户注册赠送 2亿 token 免费额度（大多数嵌入及重排序模型，含 voyage-3.5、voyage-3-large、voyage-4、voyage-4-lite、rerank-2.5 等；专用模型 voyage-finance-2 / law-2 / code-2 免费额度为5000万token；多模态嵌入额度为2亿文本token + 1500亿像素；被 Anthropic 收购，与 Claude 深度集成）",
@@ -1219,7 +1216,6 @@
         ]
       }
     },
-
     {
       "name": "Google Vertex AI",
       "quota": "新用户注册GCP获得 $300 免费试用额度（90天有效，需绑定信用卡但试用期内不扣费）；可用于Gemini全系列（2.5 Flash/Pro、3.0、3.1 Pro）、Imagen图像生成等Google最新模型；企业级AI平台，与Google AI Studio不同",
@@ -1414,7 +1410,6 @@
         ]
       }
     },
-
     {
       "name": "Kluster AI",
       "quota": "新用户注册验证邮箱后赠送$5免费积分；仅支持Batch API异步批处理（不支持实时对话）；支持Llama 3.1 405B Instruct、DeepSeek-R1、Qwen 2.5 72B等大模型；使用JSONL格式提交批处理任务，结果异步返回；适合大规模数据标注、批量文本分类、数据集增强等场景",
@@ -1532,7 +1527,6 @@
         ]
       }
     },
-
     {
       "name": "Glhf.chat",
       "quota": "免费Serverless推理平台，30 RPM速率限制；支持Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct、QwQ-32B等开源模型；可加载任意HuggingFace仓库模型（通过粘贴链接自动加载）；最多8张Nvidia A100 80GB GPU；OpenAI兼容API格式；自定义自动扩缩容GPU调度器；Beta期间完全免费",
@@ -1550,7 +1544,6 @@
         ]
       }
     },
-
     {
       "url": "https://console.nscale.com",
       "quota": "新用户注册赠送（无需信用卡）；欧盟主权云提供商，数据中心位于挪威；号称无速率限制、无冷启动；支持Llama-3.3-70B-Instruct（128K上下文）、Qwen3-Coder-30B-A3B-Instruct（256K上下文）、DeepSeek-R1-Distill-Llama-70B（128K上下文）、gpt-oss-120b、Qwen3-32B等开源模型",
@@ -1583,7 +1576,6 @@
       },
       "cycle": "每日重置（永久免费层）"
     },
-
     {
       "name": "OpenRouter",
       "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；50+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill、Mistral Small 3.1、MiniMax M2.5、Nemotron 3、GPT-OSS 120B、Cogito v1 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",
