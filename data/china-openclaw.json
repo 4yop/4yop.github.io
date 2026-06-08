@@ -6,8 +6,7 @@
     "releaseTime": "2026.02.21",
     "deployment": "本地+云端双部署，支持Docker快速启动",
     "features": "轻量级AI Agent框架，适配中文用户习惯；内置角色/团队/工作流管理；支持长期运行与工具链扩展",
-    "website": "https://github.com/countbot-ai/CountBot",
-    "icon": "/images/openclaw-icons/countbot.svg"
+    "website": "https://github.com/countbot-ai/CountBot"
   },
   {
     "id": 45,
@@ -16,8 +15,7 @@
     "releaseTime": "2026.02",
     "deployment": "容器化部署，安全轻量，支持Docker一键启动",
     "features": "安全轻量的OpenClaw替代方案，容器化运行保障隔离性；支持多模型提供商；可自定义和审计的Agent执行；适合注重安全与可控性的用户",
-    "website": "https://nanoclaw.dev/",
-    "icon": "/images/openclaw-icons/nanoclaw.svg"
+    "website": "https://nanoclaw.dev/"
   },
   {
     "id": 48,
@@ -26,8 +24,7 @@
     "releaseTime": "2026.03",
     "deployment": "云端托管，支持Web、iOS、Android三端直接使用",
     "features": "长期记忆跨会话保留上下文；全平台覆盖24/7自动化任务；默认接入Kimi系列大模型；适合个人助理、日程管理等轻量场景",
-    "website": "https://kimi.com",
-    "icon": "/images/openclaw-icons/kismiclaw.svg"
+    "website": "https://kimi.com"
   },
   {
     "id": 49,
@@ -36,8 +33,7 @@
     "releaseTime": "2026.03",
     "deployment": "客户端安装（macOS/Windows），需内测申请",
     "features": "微信直联，零配置远程控制电脑；接入ClawHub及GitHub超5000个技能；支持本地文件管理、浏览器控制等",
-    "website": "https://qclaw.qq.com",
-    "icon": "/images/openclaw-icons/qclaw.svg"
+    "website": "https://qclaw.qq.com"
   },
   {
     "id": 50,
@@ -46,8 +42,7 @@
     "releaseTime": "2026.03",
     "deployment": "零配置部署，下载安装-打开授权-语音对话三步完成。采用本地沙箱运行机制",
     "features": "官方预制技能包，开箱即用；清晰的C端与B端商业化模式；由CEO傅盛实测推广",
-    "website": "https://easyclaw.cmcm.com",
-    "icon": "/images/openclaw-icons/easyclaw.svg"
+    "website": "https://easyclaw.cmcm.com"
   },
   {
     "id": 51,
@@ -56,8 +51,7 @@
     "releaseTime": "2026.03",
     "deployment": "10秒极速云端部署，基础设施由官方托管，零操作门槛",
     "features": "搭载MiniMax M2.5模型，性价比高（基础版39元/月）；支持多平台（Telegram、Discord、Slack）接入；具备长周期记忆能力",
-    "website": "https://maxclaw.ai/zh/",
-    "icon": "/images/openclaw-icons/maxclaw.svg"
+    "website": "https://maxclaw.ai/zh/"
   },
   {
     "id": 52,
@@ -66,8 +60,7 @@
     "releaseTime": "2026.03",
     "deployment": "macOS DMG / Windows EXE安装包（双击即用），支持私有化部署（MIT开源）",
     "features": "支持9大渠道（钉钉、飞书、微信、QQ、Telegram等）；基于ReAct Agent架构，支持多模型切换（DeepSeek、Kimi等）；内置Shell、文件操作、浏览器、截图四大工具；支持MCP协议扩展技能",
-    "website": "https://linclaw.qnlinking.com",
-    "icon": "/images/openclaw-icons/linclaw.svg"
+    "website": "https://linclaw.qnlinking.com"
   },
   {
     "id": 55,
@@ -76,8 +69,7 @@
     "releaseTime": "2026.03.17",
     "deployment": "云端托管，独立APP，支持全球公测",
     "features": "首个企业级AI原生工作平台；OPT一人团队模式；CLI命令行界面化改造支持AI Agent直接操作钉钉；80000+技能一键安装；与钉钉会议、文档、审批深度融合",
-    "website": "https://wukong.dingtalk.com/",
-    "icon": "/images/openclaw-icons/wukong.svg"
+    "website": "https://wukong.dingtalk.com/"
   },
   {
     "id": 56,
@@ -86,8 +78,7 @@
     "releaseTime": "2026.03.08",
     "deployment": "分布式容器部署，开源（GitHub），支持Higress AI网关",
     "features": "开源多Agent协作操作系统；Manager-Workers架构支持团队协作；基于Matrix实时通信协议实现透明可监督的分布式任务；支持人工全程介入和RBAC权限控制；适配3-10人开发/运维/数据团队",
-    "website": "https://www.hiclaw.io/",
-    "icon": "/images/openclaw-icons/hiclaw.svg"
+    "website": "https://www.hiclaw.io/"
   },
   {
     "id": 57,
@@ -96,8 +87,7 @@
     "releaseTime": "2026.03.10",
     "deployment": "桌面客户端一键安装（Windows/macOS），本地运行",
     "features": "国内首个真一键安装的本地版OpenClaw；预置50+内置技能；集成AutoGLM浏览器自动化；基于GLM-5架构专为Agent场景微调；支持飞书集成；可接入DeepSeek、GLM等多种模型",
-    "website": "https://autoglm.zhipuai.cn/autoclaw/",
-    "icon": "/images/openclaw-icons/autoclaw.svg"
+    "website": "https://autoglm.zhipuai.cn/autoclaw/"
   },
   {
     "id": 58,
@@ -106,8 +96,7 @@
     "releaseTime": "2026.03.13",
     "deployment": "云端托管，零部署免配置，SaaS服务",
     "features": "基于文心大模型的云端AI Agent平台；零部署开箱即用；支持多模型调用和自动化任务执行；可绑定多种主流消息平台；首月17.8元低价入门",
-    "website": "https://cloud.baidu.com/doc/DuClaw/index.html",
-    "icon": "/images/openclaw-icons/duclaw.svg"
+    "website": "https://cloud.baidu.com/doc/DuClaw/index.html"
   },
   {
     "id": 59,
@@ -116,8 +105,7 @@
     "releaseTime": "2026.03.09",
     "deployment": "云端一键部署，专属ECS资源，7×24在线",
     "features": "基于开源OpenClaw架构的云端SaaS版；零门槛5分钟快速创建；飞书原生集成；一对一专属ECS资源保障隔离性；支持TOS对象存储绑定；提供Coding Plan",
-    "website": "https://www.volcengine.com/docs/82379/2229107",
-    "icon": "/images/openclaw-icons/arkclaw.svg"
+    "website": "https://www.volcengine.com/docs/82379/2229107"
   },
   {
     "id": 60,
@@ -126,8 +114,7 @@
     "releaseTime": "2026.03.12",
     "deployment": "云端一键部署，7×24小时脱机运行",
     "features": "基于OpenClaw框架的云端AI助手；搭载专为Agent场景设计的Step 3.5 Flash模型；一键部署零配置；支持模型Tokens和服务器存储免费测试资源",
-    "website": "https://www.stepfun.com/studio",
-    "icon": "/images/openclaw-icons/stepclaw.svg"
+    "website": "https://www.stepfun.com/studio"
   },
   {
     "id": 61,
@@ -136,8 +123,7 @@
     "releaseTime": "2026.01.15",
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "全球首款企业级通用智能体；基于RPA+ISS屏幕语义理解技术；一句话自动完成跨软件任务；支持聊天式交互理解任务需求；与惠普等企业建立合作",
-    "website": "https://www.ai-indeed.com/",
-    "icon": "/images/openclaw-icons/shizaiai.svg"
+    "website": "https://www.ai-indeed.com/"
   },
   {
     "id": 62,
@@ -146,8 +132,7 @@
     "releaseTime": "2025.12",
     "deployment": "云端SaaS平台，支持Web端访问",
     "features": "一站式AI办公助手；AI写作、PPT生成、表格处理、设计、播客、生图与视频；支持财经分析、市场营销等场景任务自动化；可视化工作流编排与多模态AI集成",
-    "website": "https://www.coze.cn/",
-    "icon": "/images/openclaw-icons/coze.svg"
+    "website": "https://www.coze.cn/"
   },
   {
     "id": 63,
@@ -156,8 +141,7 @@
     "releaseTime": "2025.10",
     "deployment": "云端SaaS平台，支持API调用和私有化部署",
     "features": "一站式大模型开发平台；支持多种主流大模型接入；提供Agent构建、知识库管理、插件扩展等功能；支持企业级应用部署",
-    "website": "https://bailian.console.aliyun.com/",
-    "icon": "/images/openclaw-icons/bailian.svg"
+    "website": "https://bailian.console.aliyun.com/"
   },
   {
     "id": 64,
@@ -166,8 +150,7 @@
     "releaseTime": "2026.03.24",
     "deployment": "极简部署，本地安全运行",
     "features": "国产OpenClaw平替，一键安装，无复杂环境，数据本地存储，适配国内软件生态，AI自主执行任务",
-    "website": "https://github.com/zhimaAi/ChatClaw",
-    "icon": "/images/openclaw-icons/chatclaw.svg"
+    "website": "https://github.com/zhimaAi/ChatClaw"
   },
   {
     "id": 65,
@@ -176,8 +159,7 @@
     "releaseTime": "2026.01.30",
     "deployment": "本地部署，开源项目",
     "features": "开源AI智能体工厂，融合LLM大模型与Python运行环境；自然语言操作电脑及软件；支持信创操作系统；批量数据分析处理、办公自动化、PPT制作等场景",
-    "website": "https://www.aipyaipy.com/",
-    "icon": "/images/openclaw-icons/aipy.svg"
+    "website": "https://www.aipyaipy.com/"
   },
   {
     "id": 66,
@@ -186,8 +168,7 @@
     "releaseTime": "2026.02.11",
     "deployment": "开源自托管，Go单二进制部署",
     "features": "用Go编写的开源AI Agent Gateway，约2000行核心代码，多通道消息路由(Telegram + 飞书)，持久化记忆系统和定时任务调度",
-    "website": "https://github.com/myclaw-ai/myclaw",
-    "icon": "/images/openclaw-icons/myclaw.svg"
+    "website": "https://github.com/myclaw-ai/myclaw"
   },
   {
     "id": 67,
@@ -196,8 +177,7 @@
     "releaseTime": "2026.03.23",
     "deployment": "Mac/Windows桌面客户端安装",
     "features": "桌面级AI智能体助手，三层Agent体系设计，本地沙箱执行，零信任文件访问，增量式任务处理",
-    "website": "https://qoder.com/zh/qoderwork",
-    "icon": "/images/openclaw-icons/qoderwork.svg"
+    "website": "https://qoder.com/zh/qoderwork"
   },
   {
     "id": 68,
@@ -206,8 +186,7 @@
     "releaseTime": "2026.03.20",
     "deployment": "开源可视化面板",
     "features": "OpenClaw官方最强面板，内置独立AI助手，支持QQ/微信/TG等20+渠道统一管理，一键诊断修复",
-    "website": "https://www.clawpanel.cc/",
-    "icon": "/images/openclaw-icons/clawpanel.svg"
+    "website": "https://www.clawpanel.cc/"
   },
   {
     "id": 70,
@@ -216,8 +195,7 @@
     "releaseTime": "2026.03.20",
     "deployment": "开源3.0版本",
     "features": "全球首个企业级开源AI Agent平台，支持企业级部署和定制化开发",
-    "website": "https://www.letsmagic.cn/",
-    "icon": "/images/openclaw-icons/supermagic.svg"
+    "website": "https://www.letsmagic.cn/"
   },
   {
     "id": 71,
@@ -226,8 +204,7 @@
     "releaseTime": "2025.03.20",
     "deployment": "开源框架",
     "features": "全自动且高度自我进化的框架，GAIA基准测试冠军，自然语言创建Agent和工作流，自管理向量数据库",
-    "website": "https://autoagent-ai.github.io/",
-    "icon": "/images/openclaw-icons/autoagent.svg"
+    "website": "https://autoagent-ai.github.io/"
   },
   {
     "id": 72,
@@ -236,8 +213,7 @@
     "releaseTime": "2026.03",
     "deployment": "开源项目",
     "features": "OpenClaw生态衍生项目，轻量级实现",
-    "website": "https://github.com/nullclaw/nullclaw",
-    "icon": "/images/openclaw-icons/n.svg"
+    "website": "https://github.com/nullclaw/nullclaw"
   },
   {
     "id": 74,
@@ -246,8 +222,7 @@
     "releaseTime": "2026.03",
     "deployment": "桌面客户端",
     "features": "全场景桌面AI智能体，支持多种办公场景",
-    "website": "https://www.codebuddy.cn/fission/?inviteCode=fwmbov4trvwb2",
-    "icon": "/images/openclaw-icons/workbuddy.svg"
+    "website": "https://www.codebuddy.cn/fission/?inviteCode=fwmbov4trvwb2"
   },
   {
     "id": 75,
@@ -256,8 +231,7 @@
     "releaseTime": "2023",
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "企业级AI智能体开发平台，NeuroFlow开发框架和VisionRAG多模态知识库，低代码/无代码开发",
-    "website": "https://www.betteryeah.com/",
-    "icon": "/images/openclaw-icons/betteryeah.svg"
+    "website": "https://www.betteryeah.com/"
   },
   {
     "id": 76,
@@ -266,8 +240,7 @@
     "releaseTime": "2025.03.06",
     "deployment": "云端服务",
     "features": "全球首款通用型AI Agent，GAIA基准测试超越OpenAI同类产品，支持多任务并行处理、自主学习和协作",
-    "website": "https://manus.im",
-    "icon": "/images/openclaw-icons/manus.svg"
+    "website": "https://manus.im"
   },
   {
     "id": 77,
@@ -276,8 +249,7 @@
     "releaseTime": "2026.02.02",
     "deployment": "开源本地部署，pip install 一键安装，支持离线本地模型（vLLM等）",
     "features": "OpenClaw超轻量级开源复刻，仅4000行Python代码（减少99%体量）；兼容11+大模型（DeepSeek/通义/Kimi等）和10+聊天平台；内置Agent Loop/长期记忆/MCP技能加载/多平台消息总线四大核心模块；支持定时任务、流式输出、多模态文件处理；32K+ GitHub Star",
-    "website": "https://github.com/HKUDS/nanobot",
-    "icon": "/images/openclaw-icons/nanobot.svg"
+    "website": "https://github.com/HKUDS/nanobot"
   },
   {
     "id": 78,
@@ -286,8 +258,7 @@
     "releaseTime": "2026.01.12",
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "全链路可信商业决策AI Agent平台；双模型驱动（Mano基础智能体+Cito决策引擎）与多智能体协作框架；GUI自动化操作单步准确率98.9%；复杂业务推理与知识沉淀；适用于金融、医疗、电商、制造业等多行业深度分析场景；推理过程可溯源，大幅降低AI幻觉率",
-    "website": "https://www.mininglamp.com/deepminer/",
-    "icon": "/images/openclaw-icons/deepminer.svg"
+    "website": "https://www.mininglamp.com/deepminer/"
   },
   {
     "id": 79,
@@ -296,8 +267,7 @@
     "releaseTime": "2026.03.12",
     "deployment": "云端一键部署，沙箱隔离运行",
     "features": "基于OpenClaw架构的云端AI助手；采用沙箱隔离技术保障数据安全；支持接入企业微信、钉钉、飞书等主流通讯工具；可调用10000+技能插件；支持自由切换星火X2、MiniMax-M2.5、Kimi-K2.5、GLM-5等多款大模型；胜任行业分析、文档处理等办公场景",
-    "website": "https://www.xfyun.cn/doc/spark/Agent-AstronClaw%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html",
-    "icon": "/images/openclaw-icons/astronclaw.svg"
+    "website": "https://www.xfyun.cn/doc/spark/Agent-AstronClaw%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html"
   },
   {
     "id": 80,
@@ -306,8 +276,7 @@
     "releaseTime": "2026.03.17",
     "deployment": "桌面客户端本地运行，支持Windows/macOS/Linux",
     "features": "基于AstronClaw打造的桌面级AI助理；目录级隔离安全机制，仅允许访问授权工作目录；支持文件整理、内容创作、数据分析、网页操作、邮件处理等多步骤任务；适配QQ、飞书、钉钉等主流IM工具远程操控；1分钟快速部署，零配置开箱即用",
-    "website": "https://loomy.xunfei.cn/",
-    "icon": "/images/openclaw-icons/loomy.svg"
+    "website": "https://loomy.xunfei.cn/"
   },
   {
     "id": 81,
@@ -316,8 +285,7 @@
     "releaseTime": "2026.02.09",
     "deployment": "单二进制文件部署，支持RISC-V/ARM64/x86架构",
     "features": "极致轻量级AI Agent框架，内存常驻<10MB，启动时间<1秒；全球首个支持RISC-V架构的AI Agent；95%代码由AI辅助生成；支持Telegram、Discord、QQ、飞书、微信等多平台；内置Web搜索、MCP协议支持；适合老旧设备和嵌入式场景",
-    "website": "https://picoclaw.ai/",
-    "icon": "/images/openclaw-icons/picoclaw.svg"
+    "website": "https://picoclaw.ai/"
   },
   {
     "id": 83,
@@ -326,8 +294,7 @@
     "releaseTime": "2026.04.08",
     "deployment": "Windows桌面客户端，一键安装，可视化GUI",
     "features": "纯国产OpenClaw平替，深度适配Windows平台；内置开箱即用技能库，覆盖微信自动化、办公操作、文件处理、开发辅助等场景；极低使用门槛，可视化GUI无需复杂配置；支持AI驱动的技能执行引擎，含轻量级和重量级两种模式",
-    "website": "https://www.iloomo.com/",
-    "icon": "/images/openclaw-icons/loomoclaw.svg"
+    "website": "https://www.iloomo.com/"
   },
   {
     "id": 85,
@@ -336,8 +303,7 @@
     "releaseTime": "2026.02.28",
     "deployment": "开源框架（Apache 2.0），支持Docker部署",
     "features": "全栈AI超级智能体框架，基于LangGraph 1.0重构；支持子代理并行调度、持久化记忆和Markdown技能扩展；Docker沙箱代码执行；作为OpenAI Deep Research的开源替代方案；GitHub 22,200+ Stars；支持从分钟级到小时级复杂任务自动化",
-    "website": "https://github.com/bytedance/deer-flow",
-    "icon": "/images/openclaw-icons/deerflow.svg"
+    "website": "https://github.com/bytedance/deer-flow"
   },
   {
     "id": 86,
@@ -346,8 +312,7 @@
     "releaseTime": "2026.02",
     "deployment": "桌面客户端一键安装，开箱即用",
     "features": "国产AI管家桌面应用，完美复刻OpenClaw核心功能并针对中文用户优化；新增系统维护（垃圾清理/启动项优化/问题修复）、AI写作、桌宠陪伴等独有功能；支持飞书、钉钉等国产办公软件；智能邮件处理、日程管理、PPT生成、文件格式转换等办公自动化",
-    "website": "https://yuanqiai.net/",
-    "icon": "/images/openclaw-icons/yuanqiai.svg"
+    "website": "https://yuanqiai.net/"
   },
   {
     "id": 87,
@@ -356,8 +321,7 @@
     "releaseTime": "2026.04",
     "deployment": "本地硬件部署，0.87L超小机身，数据本地存储",
     "features": "全球首款OpenClaw专用AI硬件终端；搭载专为龙虾场景优化的GLM-5-Turbo闭源模型；实现OpenClaw+MacMini级体验；支持文件处理、任务规划、多链路执行等自动化操作；安全可控，适合个人与小微企业；京东预售后一小时破万台，4月15日起发货",
-    "website": "https://news.qq.com/rain/a/20260403A022LX00",
-    "icon": "/images/openclaw-icons/lobsterbox.svg"
+    "website": "https://news.qq.com/rain/a/20260403A022LX00"
   },
   {
     "id": 88,
@@ -366,8 +330,7 @@
     "releaseTime": "2026.04",
     "deployment": "企业级本地化部署，预装openEuler/天鹤OS，集成RAG+vLLM/SGLang推理框架",
     "features": "面向企业级部署的AI工作站；提供超炫1700（入门级）和超炫3700（旗舰级）两款机型；深度融合华为昇腾生态，完成Atlas推理卡与昇思框架认证；支持鲲鹏CPU+昇腾GPU全链路国产化；解决企业算力贵、部署难、安全弱痛点",
-    "website": "https://news.qq.com/rain/a/20260403A022LX00",
-    "icon": "/images/openclaw-icons/算.svg"
+    "website": "https://news.qq.com/rain/a/20260403A022LX00"
   },
   {
     "id": 89,
@@ -376,8 +339,7 @@
     "releaseTime": "2026.04.02",
     "deployment": "云端托管+本地沙箱隔离，内测阶段",
     "features": "定位专业级金融AI龙虾，面向金融专家、理财顾问、数据专家等专业人员；基于原生沙箱技术实现任务与主系统物理隔离；支持上百种专业Skills和熟虾模板一键部署；覆盖投资理财、数据分析等高价值垂直场景；兼容主流大模型，企业系统集成与工作流自动化",
-    "website": "https://antdigital.com/products/DTClaw",
-    "icon": "/images/openclaw-icons/dtclaw.svg"
+    "website": "https://antdigital.com/products/DTClaw"
   },
   {
     "id": 90,
@@ -386,8 +348,7 @@
     "releaseTime": "2026.04.06",
     "deployment": "内嵌支付宝APP，云端服务，手机端使用",
     "features": "定位不懂代码也能云养虾；用户可在支付宝一键领养专属龙虾；管理OpenClaw服务处理日常琐事；不涉及资金安全；将前沿AI Agent从极客终端带入十亿用户手机",
-    "website": "https://www.tahou.com/article/202786867331256325",
-    "icon": "/images/openclaw-icons/aclaw.svg"
+    "website": "https://www.tahou.com/article/202786867331256325"
   },
   {
     "id": 91,
@@ -396,8 +357,7 @@
     "releaseTime": "2026.04.08 / V2版本2026.04.09",
     "deployment": "免部署，QQ浏览器电脑端内置，微信扫码远程操控；V2支持云端+本地双模式",
     "features": "国内首个浏览器龙虾；完全兼容OpenClaw技能，支持自由配置国内主流大模型API Key；内置QQ浏览器Skill；具备眼（X5use高精度识别）与脑（浏览器上下文感知）能力；三维安全防护（沙箱+Markdown约束+Skillhub认证）；微信扫码即可远程调动电脑完成跨软件操作；V2新增：最多3个Agent并行工作、自定义角色性格与专业背景、跨应用直连腾讯文档/Notion/邮箱等主流工具（单任务操作步骤减少60%+）、龙虾管家一键安全防护（拦截恶意prompt/skill投毒/文件误删/敏感信息泄露）",
-    "website": "https://browser.qq.com/",
-    "icon": "/images/openclaw-icons/qbotclaw.svg"
+    "website": "https://browser.qq.com/"
   },
   {
     "id": 92,
@@ -406,8 +366,7 @@
     "releaseTime": "2026.02.28",
     "deployment": "本地+云端双部署，支持钉钉/飞书/QQ/Discord/iMessage等多渠道",
     "features": "轻量级Python AI Agent框架，内存占用仅OpenClaw的1/5；内置Web控制台管理频道/技能/定时任务；支持Ollama/llama.cpp/MLX等本地模型；模块化Skills扩展；主动心跳机制执行定时任务；长期记忆功能自动沉淀用户偏好",
-    "website": "https://copaw.agentscope.io/",
-    "icon": "/images/openclaw-icons/copaw.svg"
+    "website": "https://copaw.agentscope.io/"
   },
   {
     "id": 93,
@@ -416,8 +375,7 @@
     "releaseTime": "2026.04.05",
     "deployment": "Java生态部署，支持跨平台运行",
     "features": "开源Java版本AI Agent框架，补齐Java生态的AI Agent拼图；基于Java语言开发，适合Java开发者使用；支持多平台接入和任务自动化执行",
-    "website": "https://github.com/matevip/mateclaw/",
-    "icon": "/images/openclaw-icons/mateclaw.svg"
+    "website": "https://github.com/matevip/mateclaw/"
   },
   {
     "id": 95,
@@ -426,8 +384,7 @@
     "releaseTime": "2026.04.11",
     "deployment": "开源框架，支持Docker部署",
     "features": "完整的Agent技术栈闭环解决方案；四大核心组件：OAK Framework（基于LangGraph的企业级多Agent框架）、OAK Builder（可视化拖拽式工作流编排）、OAK Runtime（安全沙盒云端运行时）、OAK Studio（企业级PaaS平台）；作为OpenAI AgentKit开源平替，降低LangGraph开发门槛；兼容OpenAI AgentKit与Claude Skills",
-    "website": "https://langcrew.ai/",
-    "icon": "/images/openclaw-icons/openagentkit.svg"
+    "website": "https://langcrew.ai/"
   },
   {
     "id": 96,
@@ -436,8 +393,7 @@
     "releaseTime": "2026.02.03",
     "deployment": "开源自托管，支持Docker部署，本地运行",
     "features": "基于大模型的超级AI助理，比OpenClaw更轻量便捷；自主任务规划，理解复杂任务并持续调用工具直到完成；长期记忆系统，自动持久化对话记忆，支持关键词及向量检索；支持从SkillHub/GitHub一键安装或对话创造Skills；内置文件读写、终端执行、浏览器操作、定时任务等工具；多模态消息支持（文本/图片/语音/文件）；支持OpenAI/Claude/DeepSeek/通义/Kimi/GLM/豆包等国内外主流模型；支持微信、飞书、钉钉、企业微信、QQ、公众号、网页等多渠道接入；GitHub 42k+ Stars",
-    "website": "https://cowagent.ai/",
-    "icon": "/images/openclaw-icons/cowagent.svg"
+    "website": "https://cowagent.ai/"
   },
   {
     "id": 97,
@@ -446,8 +402,7 @@
     "releaseTime": "2026.02.14",
     "deployment": "桌面端本地运行，数据不上传云端；企业版2026.03.07已开源",
     "features": "国产龙虾桌面应用，以小螃蟹桌宠形态呈现；能操作浏览器、读写文件、调用本地应用，完成市场调研、信息整理等自动化工作；深度适配飞书、钉钉、企业微信；支持MiniMax/Kimi/GLM/Qwen/DeepSeek等多家国产模型；本地运行隐私保护；获近亿元融资（湖畔山南、初心资本、高途、顺福资本联投）",
-    "website": "https://deskclaw.ai",
-    "icon": "/images/openclaw-icons/deskclaw.svg"
+    "website": "https://deskclaw.ai"
   },
   {
     "id": 99,
@@ -456,8 +411,7 @@
     "releaseTime": "2026.04",
     "deployment": "基于HarmonyOS系统级集成，华为手机内置",
     "features": "基于HarmonyOS打造的专属养成系AI助理；从视频创作到账单管理的全场景覆盖；深度理解用户习惯，持续学习进化；系统级执行能力，可直接调用鸿蒙系统API",
-    "website": "https://xiaoyi.huawei.com/",
-    "icon": "/images/openclaw-icons/xiaoyiclaw.svg"
+    "website": "https://xiaoyi.huawei.com/"
   },
   {
     "id": 100,
@@ -466,8 +420,7 @@
     "releaseTime": "2026.03.06",
     "deployment": "手机端系统级集成，基于MiMo大模型，首批支持小米17系列机型（封测阶段）",
     "features": "国内首个手机端类OpenClaw AI智能体；基于MiMo万亿参数大模型构建；四层能力架构：系统底层调用、个人上下文理解、人车家全生态互联、自进化学习；可直接操控手机执行复杂任务，管理智能家居设备",
-    "website": "https://www.leikeji.com/article/75272",
-    "icon": "/images/openclaw-icons/miclaw.svg"
+    "website": "https://www.leikeji.com/article/75272"
   },
   {
     "id": 101,
@@ -476,8 +429,7 @@
     "releaseTime": "2026.04.10",
     "deployment": "企业级SaaS平台，支持对接钉钉/飞书/企业微信等办公平台",
     "features": "企业级AI Agent管理平台，定位为指挥龙虾军团协同作战的管理中心；四层纵深安全防御体系；权限管控、算力调度与知识沉淀能力；解决企业AI Agent安全失控、多Agent统一管控、使用经验沉淀三大难题",
-    "website": "https://skills.netease.im/",
-    "icon": "/images/openclaw-icons/clawhive.svg"
+    "website": "https://skills.netease.im/"
   },
   {
     "id": 102,
@@ -486,8 +438,7 @@
     "releaseTime": "2026.03.16",
     "deployment": "桌面客户端本地运行，开箱即用",
     "features": "行业首款专为教师群体打造的AI原生桌面超级智能体；深度融合好未来教研能力与题库积累；支持教案生成、学情分析、课件制作、作业批改等教师专用技能；本地运行保障隐私安全；支持飞书、QQ、企业微信、钉钉等主流IM",
-    "website": "https://www.laoshibang.com/courseware/index",
-    "icon": "/images/openclaw-icons/nineclaw.svg"
+    "website": "https://www.laoshibang.com/courseware/index"
   },
   {
     "id": 103,
@@ -496,8 +447,7 @@
     "releaseTime": "2026.04.02",
     "deployment": "云端SaaS服务",
     "features": "国内首个将权威医学检索与任务型AI执行深度融合的全场景医生工作平台；检索模式基于数千万级医学数据支持权威循证溯源；任务模式基于Claw框架，自主完成学术科研、论文创作、患者随访等复杂任务",
-    "website": "https://health.baidu.com/",
-    "icon": "/images/openclaw-icons/youyi.svg"
+    "website": "https://health.baidu.com/"
   },
   {
     "id": 104,
@@ -506,8 +456,7 @@
     "releaseTime": "2026.03（开发中）",
     "deployment": "手机端系统级集成，基于ColorOS",
     "features": "OPPO正在推进的龙虾AI产品，将实现与OPPO设备的有机融合；定位手机端AI智能体",
-    "website": "https://xiaobu.coloros.com/",
-    "icon": "/images/openclaw-icons/xiaobu.svg"
+    "website": "https://xiaobu.coloros.com/"
   },
   {
     "id": 105,
@@ -516,8 +465,7 @@
     "releaseTime": "2026.04",
     "deployment": "开源框架（MIT协议），GitHub 6.9k+ Stars",
     "features": "基于中国古代官制设计的AI多Agent协作架构；把唐朝三省六部制搬到AI世界；具有分权制衡、专职审核、完全可观测特性；前端React 18 + TypeScript + Vite + Zustand",
-    "website": "https://github.com/cft0808/edict",
-    "icon": "/images/openclaw-icons/edict.svg"
+    "website": "https://github.com/cft0808/edict"
   },
   {
     "id": 106,
@@ -526,8 +474,7 @@
     "releaseTime": "2026.04.13",
     "deployment": "云端SaaS平台，零代码应用部署",
     "features": "面向具身作业场景的零代码应用平台；覆盖机器人全生命周期（开发/部署/运行/优化）；支持VLA模型、强化学习、视觉感知、运动控制、导航规划等核心能力；拖拽式工作流编排；内置三维场景重建与仿真系统；支持真机强化学习与全链路监控运维",
-    "website": "https://genie.agibot.com/",
-    "icon": "/images/openclaw-icons/geniestudio.svg"
+    "website": "https://genie.agibot.com/"
   },
   {
     "id": 107,
@@ -536,8 +483,7 @@
     "releaseTime": "2026.04.12",
     "deployment": "云端SaaS平台，内测阶段",
     "features": "云端AI应用搭建工具，定位\"会编程、懂设计、自部署的全能AI伙伴\"；三大核心模块：创造（桌面/移动应用/技能创建）、技能（模块化能力封装）、橱窗（智能体应用展示）；聚合Kimi K2.5、Qwen3.6-Plus、GLM-5、MiniMax-M2.5等大模型；提供Agent（深度思考）和Swarms（蜂群并发）两种工作模式；可视化编辑系统与多人协作机制",
-    "website": "https://meoo.aliyun.com/",
-    "icon": "/images/openclaw-icons/meoo.svg"
+    "website": "https://meoo.aliyun.com/"
   },
   {
     "id": 108,
@@ -546,8 +492,7 @@
     "releaseTime": "2026.04.09",
     "deployment": "企业级本地化部署，自强鲲鹏服务器物理底座",
     "features": "以自强鲲鹏服务器为物理底座，深度融合OpenClaw与沙箱技术；提供从硬件到应用的全栈国产化、高性能AI Agent落地路径；支持企业级安全防护与数据隔离；适合对数据安全和自主可控有高要求的企业场景",
-    "website": "https://www.powerleader.com.cn/",
-    "icon": "/images/openclaw-icons/宝.svg"
+    "website": "https://www.powerleader.com.cn/"
   },
   {
     "id": 109,
@@ -556,8 +501,7 @@
     "releaseTime": "2026.04.15",
     "deployment": "移动端（手机/平板），联发科G81/G99芯片适配完成",
     "features": "移动端类OpenClaw AI智能体，全面支持OpenClaw v2026.4.14协议；已完成手机、平板双端适配；在联发科G81与G99芯片平台上稳定运行，响应迅速，多任务并发和后台唤醒场景下表现优秀；为移动端用户提供随时随地的AI任务执行能力",
-    "website": "http://news.yesky.com/hotnews/106/347106.shtml",
-    "icon": "/images/openclaw-icons/i.svg"
+    "website": "http://news.yesky.com/hotnews/106/347106.shtml"
   },
   {
     "id": 110,
@@ -566,8 +510,7 @@
     "releaseTime": "2026.04.13",
     "deployment": "系统级集成于MagicBook系列笔记本，开创「养虾本」新品类",
     "features": "荣耀自研终端侧龙虾AI智能体技术；基于PinchBench测试集验证，综合词元消耗节省50%，显著降低长期使用成本；构建设备级独立安全虾守护，核心数据与隐私100%留存本地；首发搭载于荣耀MagicBook系列轻薄本；开创「养虾本」全新PC品类",
-    "website": "https://www.pingwest.com/w/312871",
-    "icon": "/images/openclaw-icons/y.svg"
+    "website": "https://www.pingwest.com/w/312871"
   },
   {
     "id": 111,
@@ -576,8 +519,7 @@
     "releaseTime": "2026.04.09",
     "deployment": "企业级本地化AI一体机，开箱即用，支持私有化部署",
     "features": "深度融合AiCube一体机基座与Co-Claw企业级AI智能体能力；「龙虾版」智会屏实现全流程AI智能体覆盖；会前智能预约、参会人员邀请、日程同步、资料生成；会中语音入会、会议协同、成员呼叫；会后任务闭环管理；开箱即用、安全可控、经济高效",
-    "website": "https://www.zte.com.cn/",
-    "icon": "/images/openclaw-icons/c.svg"
+    "website": "https://www.zte.com.cn/"
   },
   {
     "id": 112,
@@ -586,8 +528,7 @@
     "releaseTime": "2026.04.15",
     "deployment": "智能眼镜硬件设备，首批搭载AstronClaw能力的AI眼镜",
     "features": "首批搭载AstronClaw能力的智能眼镜，极致轻量化设计整机仅40克；多语种AI实时翻译；唇动识别与远距收音技术；语音与视觉协同感知；联动云端实现信息实时理解与补全；搭载于讯飞AI眼镜，化身广交会超级商务助理",
-    "website": "https://www.xfyun.cn/",
-    "icon": "/images/openclaw-icons/g.svg"
+    "website": "https://www.xfyun.cn/"
   },
   {
     "id": 113,
@@ -596,8 +537,7 @@
     "releaseTime": "2026.04.15",
     "deployment": "通用机器人超脑，搭载讯飞Guide01机器人",
     "features": "通用机器人超脑产品；接收自然语言指令后自主完成任务拆解、路径规划与执行；无需预编程及人工干预；现场演示「送咖啡」功能，精准避开障碍物完成物理任务；标志机器人从「需要人伺候的工具」升级为「能听懂人话、自己干活的物理助手」",
-    "website": "https://aibot.xfyun.cn/",
-    "icon": "/images/openclaw-icons/r.svg"
+    "website": "https://aibot.xfyun.cn/"
   },
   {
     "id": 114,
@@ -606,8 +546,7 @@
     "releaseTime": "2026.04.15",
     "deployment": "企业级SaaS平台",
     "features": "企业级招采助手；基于招采大模型；无缝接入企业现有招采系统；引入「多Agent专家协同评审」机制，模拟真实专家团队评审流程；深度融合AstronClaw、SkillHub与招采知识库，构建懂招采业务的Agent智能决策大脑，全面升级企业招采能力",
-    "website": "https://www.xfyun.cn/",
-    "icon": "/images/openclaw-icons/招.svg"
+    "website": "https://www.xfyun.cn/"
   },
   {
     "id": 115,
@@ -616,8 +555,7 @@
     "releaseTime": "2026.03.15",
     "deployment": "桌面客户端（Windows/macOS），一键安装，安装包仅20多MB",
     "features": "国内首个满血中文版OpenClaw替代方案；纯中文交互界面；内置DeepSeek、MiniMax等国产大模型；打通微信/钉钉远程操控；8000+技能商店；文件白名单+本地加密沙箱；Token成本砍半；参与编制国内首个Claw可信标准",
-    "website": "https://www.molili.com.cn/",
-    "icon": "/images/openclaw-icons/molili.svg"
+    "website": "https://www.molili.com.cn/"
   },
   {
     "id": 116,
@@ -626,8 +564,7 @@
     "releaseTime": "2026.04.09",
     "deployment": "内置QClaw V2，安全沙箱本地运行",
     "features": "AI安全沙箱防护系统，一键开启安全防护环境；实时监控拦截高风险脚本；拦截恶意prompt、skill投毒、文件误删、敏感信息泄露",
-    "website": "https://qclaw.qq.com/",
-    "icon": "/images/openclaw-icons/lobsterguardian.svg"
+    "website": "https://qclaw.qq.com/"
   },
   {
     "id": 117,
@@ -636,8 +573,7 @@
     "releaseTime": "2026.03.31",
     "deployment": "云端SaaS平台，淘宝工作台内置",
     "features": "专为电商场景打造的AI Agent团队；四核心角色：AI数据分析师、AI设计师、AI广告投手、AI导购；7x24小时智能运营；内测商家反馈运营效率提升30%-40%",
-    "website": "https://jianghu.taobao.com/",
-    "icon": "/images/openclaw-icons/taobaoclaw.svg"
+    "website": "https://jianghu.taobao.com/"
   },
   {
     "id": 118,
@@ -646,8 +582,7 @@
     "releaseTime": "2026.04.13",
     "deployment": "云端SaaS平台，与畅捷通财务/进销存等系统深度集成",
     "features": "业界首个专为小微企业打造的企业级AI Agent；基于MCP技术进入企业核心财务与业务系统；自我进化飞轮机制越用越聪明；定向权限钥匙确保数据安全",
-    "website": "https://www.chanjet.com/",
-    "icon": "/images/openclaw-icons/chanjetclaw.svg"
+    "website": "https://www.chanjet.com/"
   },
   {
     "id": 119,
@@ -656,8 +591,7 @@
     "releaseTime": "2026.04.14",
     "deployment": "开源桌面应用，支持Windows/macOS",
     "features": "中文OpenClaw/Hermes桌面可视化伴侣；流体玻璃球宠物形态；14情绪系统实时反馈AI工作状态；声音克隆(MiniMax TTS)；Hermes兼容模式",
-    "website": "https://github.com/kk43994/kkclaw",
-    "icon": "/images/openclaw-icons/kkclaw.svg"
+    "website": "https://github.com/kk43994/kkclaw"
   },
   {
     "id": 120,
@@ -666,8 +600,7 @@
     "releaseTime": "2026.03.20",
     "deployment": "企业级硬件一体机，支持日均处理Tokens 3.5亿至10亿",
     "features": "开箱即用的OpenClaw硬件部署方案；预置应用镜像三步部署秒级上线；同步推出Coding Plan提供Token套餐与多模型选择",
-    "website": "https://www.jdcloud.com/",
-    "icon": "/images/openclaw-icons/jdcloudclaw.svg"
+    "website": "https://www.jdcloud.com/"
   },
   {
     "id": 121,
@@ -676,8 +609,7 @@
     "releaseTime": "2026.04",
     "deployment": "企业级部署，支持私有化",
     "features": "全栈技术自主的企业级AI Agent系统；深度国产生态适配；场景化落地能力强；跻身国产OpenClaw排行榜第一梯队",
-    "website": "https://maudelclaw.ai/",
-    "icon": "/images/openclaw-icons/maudelclaw.svg"
+    "website": "https://maudelclaw.ai/"
   },
   {
     "id": 122,
@@ -686,8 +618,7 @@
     "releaseTime": "2026.02",
     "deployment": "桌面客户端，100%全代码开源",
     "features": "国内大厂中首个实现100%代码全开源的AI Agent产品；桌面级全场景个人助理；GitHub Star突破5000；获OpenClaw创始人公开赞誉",
-    "website": "http://www.jjckb.cn/20260415/e6ee6b9112ba439fb566cdbdeb8f6c0d/c.html",
-    "icon": "/images/openclaw-icons/lobsterai.svg"
+    "website": "http://www.jjckb.cn/20260415/e6ee6b9112ba439fb566cdbdeb8f6c0d/c.html"
   },
   {
     "id": 123,
@@ -696,8 +627,7 @@
     "releaseTime": "2026.04.16",
     "deployment": "云端SaaS平台，10秒快速部署，39元/月起",
     "features": "全球首个基于Hermes Agent构建的云端自我进化AI助手；独特学习闭环机制：从每次复杂任务执行中自动提炼可复用技能，技能库持续扩充；搭载MiniMax M2.7模型；支持多子代理并行处理；跨会话长期记忆；支持自然语言定时任务；覆盖电商日报、竞品追踪、文献摘要等自动化场景；越用越智能",
-    "website": "https://maxhermes.minimax.io",
-    "icon": "/images/openclaw-icons/maxhermes.svg"
+    "website": "https://maxhermes.minimax.io"
   },
   {
     "id": 124,
@@ -706,8 +636,7 @@
     "releaseTime": "2026.03.31",
     "deployment": "云端托管，免安装，打开ToDesk即可使用，新用户赠送5000积分",
     "features": "将OpenClaw核心能力深度集成到ToDesk远控软件；零门槛上手无需配置API Key；跨设备绑定ToDesk账号而非单台电脑；技能自动触发无需手动选择；支持微信绑定远程操控；所有复杂计算在云端完成，本地电脑只显示结果",
-    "website": "https://docs.todesk.com/",
-    "icon": "/images/openclaw-icons/toclaw.svg"
+    "website": "https://docs.todesk.com/"
   },
   {
     "id": 125,
@@ -716,8 +645,7 @@
     "releaseTime": "2026.03",
     "deployment": "桌面客户端一键安装，10分钟完成部署，支持Windows系统",
     "features": "360安全卫士官方打造的OpenClaw一键部署工具；一键极速安装，拥有16家顶级模型，21000+技能生态；360龙虾卫士护航；自动进化/自动安装技能；IM一键接入；开箱即用无需复杂配置；将原本数小时的专业配置流程压缩到10分钟内",
-    "website": "https://mydown.yesky.com/c/25502.html",
-    "icon": "/images/openclaw-icons/360claw.svg"
+    "website": "https://mydown.yesky.com/c/25502.html"
   },
   {
     "id": 126,
@@ -726,8 +654,7 @@
     "releaseTime": "2026.03.28",
     "deployment": "企业级本地化部署，服务构建器一键部署，支持客户自有数据中心",
     "features": "覆盖部署、技能、安全、资源与运营的「五维战力」体系；为金融、政务、制造等关键行业构筑落地路径；复杂依赖关系与模型接入流程封装为自动化工具；界面化快速部署实现智能应用上线加速度",
-    "website": "https://www.huaweicloud.com/",
-    "icon": "/images/openclaw-icons/huaweicloud.svg"
+    "website": "https://www.huaweicloud.com/"
   },
   {
     "id": 127,
@@ -736,8 +663,7 @@
     "releaseTime": "2026.03.24",
     "deployment": "安卓手机部署，无需Root，Apache License 2.0开源",
     "features": "国内首款基于OpenClaw框架的手机端工具；打破OpenClaw仅能电脑端使用的局限；不限制手机品牌所有安卓设备均可安装；安卓系统≥Android 9.0，内存≥4GB；隐私透明插件迭代高效",
-    "website": "https://apkclaw.ai",
-    "icon": "/images/openclaw-icons/apkclaw.svg"
+    "website": "https://apkclaw.ai"
   },
   {
     "id": 128,
@@ -746,8 +672,7 @@
     "releaseTime": "2026.03.27",
     "deployment": "一站式本地部署工具，图形化界面，零代码操作",
     "features": "专为OpenClaw打造的一站式本地部署工具；无需编写代码全程可视化操作；自动检测并安装所需组件；双击运行安装包跟随提示完成；让没有编程基础的用户也能轻松搭建AI助手",
-    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_20769c6368114352",
-    "icon": "/images/openclaw-icons/c.svg"
+    "website": "https://so.html5.qq.com/page/real/search_news?docid=70000021_20769c6368114352"
   },
   {
     "id": 129,
@@ -756,8 +681,7 @@
     "releaseTime": "2026.04.16",
     "deployment": "Windows本地部署，PC端一键安装，无需复杂环境配置，邀测阶段每天10点限量发放邀请码",
     "features": "华为云自研龙虾办公智能体，覆盖泛办公场景的企业级Claw应用；独创「思辨专家团」功能，多个Agent接入不同模型互相辩论头脑风暴；一键生成专业级PPT并自动排版美化，全要素可编辑；多智能体协同思辨深度调研产出研究报告；支持微信扫码直连，接入飞书/微信/钉钉/小艺等IM平台；内置工具调用安全护栏，高危操作需确认，敏感数据自动脱敏加密；预置PPT/Word/Excel等多场景技能与技能广场；源于华为云工程师开源项目Cat Café",
-    "website": "https://www.huaweicloud.com/product/officeclaw.html",
-    "icon": "/images/openclaw-icons/officeclaw.svg"
+    "website": "https://www.huaweicloud.com/product/officeclaw.html"
   },
   {
     "id": 130,
@@ -766,8 +690,7 @@
     "releaseTime": "2026.04.20",
     "deployment": "桌面客户端一键安装，零门槛免部署下载即用，已在美国/加拿大/新加坡/韩国上线",
     "features": "QClaw海外版是腾讯面向海外市场的消费级AI智能体；仅用5天完成开发，99%代码由QClaw自身生成；内置Agent Playground，涵盖健身教练/金融顾问/语言教师等多类专家角色；支持WhatsApp/Telegram等主流海外IM；内置多款国际顶尖大模型；支持中/英/法/西/韩多语言界面；内测期间每日赠送4000万token（最高价值700美元）；首批20000个Founding Claw名额；延续国内版极简基因，3分钟上线运行",
-    "website": "https://qclaw.qq.com/global",
-    "icon": "/images/openclaw-icons/qclawglobal.svg"
+    "website": "https://qclaw.qq.com/global"
   },
   {
     "id": 131,
@@ -776,8 +699,7 @@
     "releaseTime": "2026.04.21",
     "deployment": "云端SaaS服务，基于OpenClaw框架",
     "features": "AI出行品牌，一站式AI出行管家；完成近亿元人民币天使轮融资；核心团队来自Meta/Amazon Zoox/Lyft L5/Kimi/腾讯及清华/新南威尔士大学博士；支持自动驾驶接口对接、多模态交互技术与出行大数据模型；计划扩展至全国及OpenClaw覆盖国别；实现智能化个性化出行服务",
-    "website": "https://rideclaw.ai",
-    "icon": "/images/openclaw-icons/rideclaw.svg"
+    "website": "https://rideclaw.ai"
   },
   {
     "id": 132,
@@ -786,8 +708,7 @@
     "releaseTime": "2026.03",
     "deployment": "桌面客户端安装（Windows/macOS），企业版支持私有化部署",
     "features": "腾讯Claw三剑客之一，专注AI编程场景的Agent；与WorkBuddy（办公）、QClaw（个人助手）并列；支持代码生成、调试、重构等开发辅助；深度集成开发工具链；可连接微信等IM远程操控编程任务",
-    "website": "https://www.codebuddy.cn/",
-    "icon": "/images/openclaw-icons/codebuddy.svg"
+    "website": "https://www.codebuddy.cn/"
   },
   {
     "id": 133,
@@ -796,8 +717,7 @@
     "releaseTime": "2026.04.20",
     "deployment": "云端Web登录即用+本地部署，免配置，支持Web/PC/移动端全端访问，免费体验4核8G云部署",
     "features": "阿里云推出的云上安全养虾神器，基于OpenClaw框架打造；连一键都不用，Web登录即可使用；支持远程桌面可视化操作；全端覆盖（Web/PC/移动端App）；率先预装支付宝AI付能力；解决OpenClaw配置门槛高、安全风险大、需24小时开机三大痛点；邀测阶段，免费体验云端4核8G实例",
-    "website": "https://jvs.wuying.aliyun.com",
-    "icon": "/images/openclaw-icons/jvsclaw.svg"
+    "website": "https://jvs.wuying.aliyun.com"
   },
   {
     "id": 134,
@@ -806,8 +726,7 @@
     "releaseTime": "2026.04.24",
     "deployment": "企业级SaaS平台，零售连锁门店专用",
     "features": "海康威视云眸Claw家族首只龙虾，专为零售连锁门店设计的智能管理助手；支持远程巡店、数据复盘等核心功能；海康威视将陆续推出更多云眸Claw家族龙虾产品；结合海康威视视觉感知与安防能力，聚焦零售行业垂直场景",
-    "website": "https://www.hikvision.com/",
-    "icon": "/images/openclaw-icons/cloudeye.svg"
+    "website": "https://www.hikvision.com/"
   },
   {
     "id": 135,
@@ -816,8 +735,7 @@
     "releaseTime": "2026.04.23",
     "deployment": "云端SaaS平台，AI-Native全链路跨境电商智能营销平台",
     "features": "定位AI-Native全链路跨境电商智能营销平台；核心主张AI帮你做不是帮你查，强调AI执行属性；覆盖找爆品、做视频、冲销量完整工作流；从机会判断、内容生成、执行推进到结果回流的系统串联；4月23日举行AI Agent新版线上发布会",
-    "website": "https://chuhaijiang.com/",
-    "icon": "/images/openclaw-icons/chuhaijiang.svg"
+    "website": "https://chuhaijiang.com/"
   },
   {
     "id": 136,
@@ -826,8 +744,7 @@
     "releaseTime": "2026.04",
     "deployment": "云端SaaS平台，适配抖音/快手/视频号/小红书/B站等5大平台",
     "features": "复刻OpenClaw核心能力的营销类AI Agent；AI获客+AI引流+AI销售三位一体架构；追爆智能体10分钟复刻热点爆款；融合Sora2/Seedance/Veo三大视频生成技术；一键聚合5大平台自动分发；Geo智能体精准截留热点流量；AI销售全链路从公域曝光到私域成交闭环",
-    "website": "https://qingful.com/",
-    "icon": "/images/openclaw-icons/qingfu.svg"
+    "website": "https://qingful.com/"
   },
   {
     "id": 137,
@@ -836,8 +753,7 @@
     "releaseTime": "2026.04.22",
     "deployment": "企业级AI原生协作平台，支持手机端/网页版/PC桌面端",
     "features": "企业级AI原生协作平台，让开发者/设计师/产品经理在同一实时空间协作；Agent无处不在，每个项目自带专属Agent；人与Agent都是团队正式成员；Agent以Coding为基础，拥有代码执行能力；支持Team Agent和Private Ask两种模式；内置Cron Job自然语言定时任务；支持预装全局Skill、自建Skill、跨项目复用Skill",
-    "website": "https://codebanana.ai/",
-    "icon": "/images/openclaw-icons/codebanana.svg"
+    "website": "https://codebanana.ai/"
   },
   {
     "id": 138,
@@ -846,8 +762,7 @@
     "releaseTime": "2026.04.22",
     "deployment": "车载系统集成，内置于高德导航",
     "features": "车载导航AI Agent，从被动响应指令迈向主动理解意图；具备理解、推理、记忆与主动服务能力；用户用日常语言或模糊表达触发出行任务；系统将需求转化为可执行路线规划；行程中持续感知环境变化主动提出优化建议；实现从人适应系统到系统适应人的转变",
-    "website": "https://www.amap.com/",
-    "icon": "/images/openclaw-icons/amapagent.svg"
+    "website": "https://www.amap.com/"
   },
   {
     "id": 139,
@@ -856,8 +771,7 @@
     "releaseTime": "2026.04.19",
     "deployment": "企业级SaaS平台，面向电商运营场景",
     "features": "将AI从客服场景扩展至运营管理领域；通过简单指令自动完成任务识别与SOP执行；新品上架场景从200分钟人工时间缩短到10分钟；将高频操作转化为工具形式；通过Skill编排工作流复用运营SOP；同步推出AI智席结合AI与人工服务",
-    "website": "https://www.tungeegroup.com/",
-    "icon": "/images/openclaw-icons/tungee.svg"
+    "website": "https://www.tungeegroup.com/"
   },
   {
     "name": "天禧Claw",
@@ -866,8 +780,7 @@
     "deployment": "端云混合部署，天禧智能体更新至3.6版本即可使用，AI Space搜索即可体验",
     "features": "基于OpenClaw架构的新一代AI助理；零成本部署、零门槛使用、全天候跨端、安全可托付四大核心能力；端云混合架构支持7x24小时执行，电脑关机云端仍可继续处理任务；覆盖AI PC、AI手机、AI平板全端，换设备不断线；高质量专属Skills体系化加持；5月19日天禧AI 4.0大版本将Claw作为智能体核心",
     "website": "https://tianxi.cn/",
-    "id": 140,
-    "icon": "/images/openclaw-icons/tianxi.svg"
+    "id": 140
   },
   {
     "name": "ThinkPad联想AI主机",
@@ -876,8 +789,7 @@
     "deployment": "AI边缘设备，ThinkCentre Mini一键部署龙虾，ThinkCentre/Pro支持一机多虾",
     "features": "专为超级个体与超级团队打造的AI边缘设备；ThinkCentre Mini可一键部署龙虾，较云主机三年总成本可节省48%；ThinkCentre与ThinkCentre Pro支持高并发、更大参数量级本地推理；突破传统单一步骤工作模式，实现一机多虾，全面重塑工作流",
     "website": "https://www.lenovo.com.cn/",
-    "id": 141,
-    "icon": "/images/openclaw-icons/thinkpad.svg"
+    "id": 141
   },
   {
     "name": "xClaw龙虾云",
@@ -886,8 +798,7 @@
     "deployment": "企业级龙虾云方案，秒级部署，支持Hermes Agent私有化部署",
     "features": "企业级龙虾云方案，单个实例部署只需几秒钟；底层深度封装与预置优化，免去所有适配过程；模型处理量提升50%；率先完成对Hermes Agent的企业级私有化部署与精细化管理支持；四大核心能力：可信安全、自主迭代、词元节流、链路智理",
     "website": "https://xcloud.lenovo.com.cn/",
-    "id": 142,
-    "icon": "/images/openclaw-icons/xcloud.svg"
+    "id": 142
   },
   {
     "name": "星穹方舟龙虾硬件",
@@ -896,8 +807,7 @@
     "deployment": "硬件设备，约25克AI眼镜 + 12克水滴吊坠，端侧模型自动判断信息记录时机",
     "features": "首款全场景龙虾硬件，信息收录—知识理解—智能执行闭环方案；三层架构：感知层无感采集、记忆层上下文沉淀、执行层跨系统执行；解决上下文断层难题，将物理世界易消散信息转化为可持续调用的结构化知识库；以极低存在感融入日常，设备核心作用是采集而非交互；字节、阿里、腾讯首次官方宣布龙虾硬件合作",
     "website": "https://new.qq.com/rain/a/20260423A030FT00",
-    "id": 143,
-    "icon": "/images/openclaw-icons/xingqiong.svg"
+    "id": 143
   },
   {
     "name": "Evolver",
@@ -906,8 +816,7 @@
     "deployment": "开源项目（GPL-3.0），GitHub 6.4k+ Stars，一行命令接入全球进化网络",
     "features": "基于基因组进化协议(GEP)的AI代理自进化引擎；将Agent能力分解为可遗传、可突变的基因单元；Scan-Select-Mutate-Validate-Solidify主循环与三级记忆体系；支持基因胶囊跨Agent经验继承，避免重复踩坑；通过EvoMap Hub实现分布式进化网络；审计追踪机制确保进化可追溯安全；2026年4月指控Hermes Agent抄袭其架构设计",
     "website": "https://github.com/EvoMap/evolver",
-    "id": 144,
-    "icon": "/images/openclaw-icons/evolver.svg"
+    "id": 144
   },
   {
     "name": "LangClaw",
@@ -916,8 +825,7 @@
     "deployment": "企业级私有化部署，支持云端SaaS",
     "features": "澜舟科技发布的企业级智能体操作系统（LangClaw）；作为数字员工统一运行底座，支持自然语言转任务、跨系统操作、多数字员工协同；内置安全沙箱执行与全链路审计能力；基于孟子大模型构建可信AI全栈技术体系；覆盖企业智能体OS、企业数字员工、企业大脑及底层可信能力四大支柱",
     "website": "https://langboat.com/",
-    "id": 145,
-    "icon": "/images/openclaw-icons/langclaw.svg"
+    "id": 145
   },
   {
     "name": "Agentic Engine",
@@ -926,8 +834,7 @@
     "deployment": "企业级私有化部署，与华为云MaaS平台深度集成",
     "features": "ThinkingAI在硅谷发布的企业级AI Agent平台；Agent可实时分析业务数据、自主做出决策并执行策略动作，从发现问题到解决问题全闭环；三层知识体系：Agent记忆系统、100+预置行业Skill、持续进化知识积累；覆盖用户分析、留存分析、付费分析、投放分析等8大领域；与MiniMax达成战略合作，后者为私有化部署提供大模型底座；服务1500+家企业、8000+款产品",
     "website": "https://www.thinkingdata.cn/",
-    "id": 146,
-    "icon": "/images/openclaw-icons/agenticengine.svg"
+    "id": 146
   },
   {
     "name": "Shoplazza AI Agent矩阵",
@@ -936,8 +843,7 @@
     "deployment": "云端SaaS平台，AI原生电商操作系统内置",
     "features": "全球首个AI原生电商操作系统；三大AI Agent智能产品矩阵：建站智能体Shoplazza AI、视觉创作智能体LazzaStudio（匠影实验室）、广告投放智能体AdValet；实现\"需求输入—智能生成—自动执行—持续优化\"闭环自动化；将传统数周建站工作压缩至分钟级；还将推出智能运营智能体Agent Athena覆盖全场景运营",
     "website": "https://www.shoplazza.cn/",
-    "id": 147,
-    "icon": "/images/openclaw-icons/shoplazza.svg"
+    "id": 147
   },
   {
     "name": "SentiCat",
@@ -946,8 +852,7 @@
     "deployment": "Windows桌面客户端，公测阶段，需官网申请体验资格",
     "features": "定位「任务执行+情感陪伴」双能力AI助手；由数字伙伴SUSU负责情感陪伴、AI小猫SentiCat负责任务执行；目前仅支持Windows系统电脑端；尝试在任务执行能力之上叠加长期交互与情感陪伴，重新定义人机关系",
     "website": "https://senticat.ai/",
-    "id": 148,
-    "icon": "/images/openclaw-icons/senticat.svg"
+    "id": 148
   },
   {
     "name": "Agent Buddy",
@@ -956,8 +861,7 @@
     "deployment": "企业级SaaS平台，支持轻量化公有云订阅与定制化私有化部署双模式",
     "features": "以Agent Computer为核心范式的全流程办公智能体；突破传统AI办公工具「对话式辅助」局限；可执行、可协同、可落地，替代人工完成跨系统数据对接、全流程任务执行、多场景业务协同；从「帮你写」到「帮你做」的能力跨越，成为企业专属数字员工",
     "website": "https://news.ikanchai.com/2026/0424/655617.shtml",
-    "id": 149,
-    "icon": "/images/openclaw-icons/agentbuddy.svg"
+    "id": 149
   },
   {
     "name": "MiniMax Agent（桌面端）",
@@ -966,8 +870,7 @@
     "deployment": "桌面客户端（Windows/macOS），支持Computer Use和Pocket功能",
     "features": "国产AI桌面助手，作为Claude Cowork/OpenClaw等海外Computer Use类工具国内替代品；2026年4月上线Pocket功能（Beta版），支持接入飞书/微信/企业微信/Slack等IM；Computer Use功能可让Agent像人一样看屏幕、操作鼠标键盘；搭载MiniMax M2.7多模态大模型；支持多步规划与多子任务执行",
     "website": "https://agent.minimaxi.com/",
-    "id": 150,
-    "icon": "/images/openclaw-icons/minimaxagent.svg"
+    "id": 150
   },
   {
     "name": "Work Claw（一键养虾）",
@@ -976,8 +879,7 @@
     "deployment": "云端SaaS平台，面向泛办公人群",
     "features": "微盟发布的面向泛办公人群的智能体产品；营销、运营等办公核心场景更贴合个人和企业实际办公需求；基于Agent+Skills架构，从Workflow转向Skill调度；结合自研WAI智能大脑与龙虾生态Skills互补；中国SaaS行业首个垂直领域AI Skill Weimob Admin Skills已上线",
     "website": "https://www.weimob.com/",
-    "id": 151,
-    "icon": "/images/openclaw-icons/workclaw.svg"
+    "id": 151
   },
   {
     "name": "灵境云 EdgeAIStation",
@@ -986,8 +888,7 @@
     "deployment": "企业级边缘云平台，支持云主机/容器/裸金属等多种交付形态，分钟级部署",
     "features": "企业级OpenClaw云端部署方案，2026年企业级OpenClaw云服务商排名TOP1；预置优化OpenClaw镜像与环境，分钟级上线开箱即用；支持GPU资源与高性能算力支撑；兼容主流开源模型（Qwen/DeepSeek等）；帮助用户以更低成本更高效率使用算力资源；连续四年入选中国边缘计算企业20强",
     "website": "https://docs.ljyun.cn/",
-    "id": 152,
-    "icon": "/images/openclaw-icons/edgeaistation.svg"
+    "id": 152
   },
   {
     "id": 153,
@@ -996,8 +897,7 @@
     "releaseTime": "2026.03.28",
     "deployment": "手机端应用，全球首款手机端龙虾应用",
     "features": "百度推出的全球首款手机端龙虾AI智能体应用；3月28日至29日在北京朝阳完成线下体验首秀；围绕工作、娱乐、赚钱、省钱四大场景设置互动体验；展示AI智能体在移动端的创新应用与落地场景；配套「抓虾吧」贴吧社区，AI自动发帖、评论、互动",
-    "website": "https://operator.gc.com.cn/",
-    "icon": "/images/openclaw-icons/redclaw.svg"
+    "website": "https://operator.gc.com.cn/"
   },
   {
     "id": 154,
@@ -1006,8 +906,7 @@
     "releaseTime": "2026.04.27",
     "deployment": "百度网盘内一键部署，零门槛不占本地内存，支持PC端和APP端",
     "features": "百度文库与网盘联合发布的通用智能体；深度兼容OpenClaw框架，用户可在网盘内一键部署龙虾；Office Agent支持一句自然语言指令并行调用PPT、Excel、Word三个子智能体；PPT Agent支持专业和创意两种生成模式；Excel Agent率先实现自然语言操作复杂表格处理；Word Agent能快速生成万字学术长文并自动抓取行业数据；月活用户突破1亿，月任务交付量达2亿次；百度网盘累计服务超10亿用户，平台已聚集超24万开发者、6000余家生态企业",
-    "website": "https://pan.baidu.com/",
-    "icon": "/images/openclaw-icons/genflow.svg"
+    "website": "https://pan.baidu.com/"
   },
   {
     "id": 155,
@@ -1016,8 +915,7 @@
     "releaseTime": "2026.04",
     "deployment": "车载系统集成，基于「一脑双引擎」架构",
     "features": "斑马智行发布的车载龙虾方案；以「一脑双引擎」开启汽车智能的奇点时刻；同步发布车载Agent短剧产品「元神小剧」；实现龙虾上车，将AI Agent能力带入智能座舱场景",
-    "website": "https://www.banma.com/",
-    "icon": "/images/openclaw-icons/autocarclaw.svg"
+    "website": "https://www.banma.com/"
   },
   {
     "id": 156,
@@ -1026,8 +924,7 @@
     "releaseTime": "2026.04",
     "deployment": "车载系统集成，基于NVIDIA NemoClaw参考软件栈，即插即用",
     "features": "中科创达基于NVIDIA NemoClaw参考软件栈打造的车载AI智能体；采用即插即用标准化方案；滴水AIOS 2.1重构智能汽车底层逻辑；形成「本土定制+全球技术」双轮驱动；加速车载AI智能体普及",
-    "website": "https://www.thundersoft.com/",
-    "icon": "/images/openclaw-icons/aquaclaw.svg"
+    "website": "https://www.thundersoft.com/"
   },
   {
     "id": 157,
@@ -1036,8 +933,7 @@
     "releaseTime": "2026.04",
     "deployment": "车载系统集成，开放Agent框架",
     "features": "地平线余凯发布的开放车载Agent框架；后端可接入各种大模型；让智能座舱具备AI Agent执行能力；亮相2026北京国际汽车展览会",
-    "website": "https://www.horizon.ai/",
-    "icon": "/images/openclaw-icons/kakaclaw.svg"
+    "website": "https://www.horizon.ai/"
   },
   {
     "id": 158,
@@ -1046,8 +942,7 @@
     "releaseTime": "2026.04",
     "deployment": "企业级私有化部署",
     "features": "云知声发布的企业级AI Agent产品；定位安全可控，让AI高效「干实事」；亮相2026数字中国建设峰会；专注企业级场景的智能体落地",
-    "website": "https://www.unisound.com/",
-    "icon": "/images/openclaw-icons/shouya.svg"
+    "website": "https://www.unisound.com/"
   },
   {
     "id": 159,
@@ -1056,8 +951,7 @@
     "releaseTime": "2026.04.24",
     "deployment": "云端SaaS平台，Claw Hub搜索Joy-logistics安装",
     "features": "京东物流融合OpenClaw框架的全新国际商家工作台；在Claw Hub搜索Joy-logistics安装即可拥有「AI数智化运营官」；支持查询包裹轨迹及运营关键数据；全链路物流动态及运营质量尽在掌握；亮相第九届跨境电商物流趋势峰会；京东物流全球仓网已覆盖4大洲25个国家近200个海外仓",
-    "website": "https://www.jdl.com/",
-    "icon": "/images/openclaw-icons/joylogistics.svg"
+    "website": "https://www.jdl.com/"
   },
   {
     "name": "QoderWake",
@@ -1066,8 +960,7 @@
     "deployment": "云端+本地混合部署，邀测阶段，支持手机端App远程操控",
     "features": "业界首个安全可控、持续进化的生产级数字员工产品；五层架构设计（身份/记忆/技能/分工/权限）；首发数字程序员岗位已在阿里内部真实上岗；支持变更简报、日志分析、根因定位、自动生成修复代码等全流程无人值守；人只在部分场景做最终确认；事件触发员工自主接手，从人找AI到AI主动找人",
     "website": "https://qoder.com/zh/qoderwake",
-    "id": 160,
-    "icon": "/images/openclaw-icons/qoderwake.svg"
+    "id": 160
   },
   {
     "name": "Qoder移动端",
@@ -1076,8 +969,7 @@
     "deployment": "手机App，可远程操控桌面端Qoder产品完成任务",
     "features": "阿里云发布的端侧龙虾Agent应用；用户可通过手机远程操作桌面端Qoder系列产品完成任务；与QoderWake同步发布，覆盖个人移动场景；实现手机端随时随地的AI Agent操控能力",
     "website": "https://qoder.com/",
-    "id": 161,
-    "icon": "/images/openclaw-icons/qodermobile.svg"
+    "id": 161
   },
   {
     "name": "速+X综合智能体系统",
@@ -1086,8 +978,7 @@
     "deployment": "企业级私有化部署，零代码配置，数据不出域",
     "features": "企业级私有化智能体系统，自研先知先行大模型；螃蟹式安全架构（坚硬外壳+权限钳制双重保护）；四大核心模块：能力中心、智能表格、智能体、简系统；零代码门槛，自然语言操作；私有化部署数据不离岸，本地化推理引擎内网闭环计算；动态令牌注入实现最小权限限时生效；全链路审计可追溯，实时监控拦截恶意指令",
     "website": "https://www.sohu.com/a/1016251012_122541483",
-    "id": 162,
-    "icon": "/images/openclaw-icons/sux.svg"
+    "id": 162
   },
   {
     "name": "OpenOcta",
@@ -1096,8 +987,7 @@
     "deployment": "企业级私有化部署，完全开源，兼容国产大模型和Ollama",
     "features": "企业级IT运维智能体，核心能力为直接执行IT任务（服务器运维、云原生管理、监控告警等）；四层架构：接入层（钉钉/飞书/微信/QQ/Web）、智能体层、安全执行层、模型层；员工市场内置Linux管理员、数据库专家等数字员工；技能库覆盖巡检、排障、日志分析；MCP标准对接CMDB、监控、工单；支持定时任务无人值守自动化运维",
     "website": "https://databuff.com",
-    "id": 163,
-    "icon": "/images/openclaw-icons/openocta.svg"
+    "id": 163
   },
   {
     "name": "Agentar",
@@ -1106,8 +996,7 @@
     "deployment": "企业级私有化部署，支持数据安全管控",
     "features": "蚂蚁数科发布的企业级AI Agent平台；聚焦企业数据安全与管控痛点；支持完全私有化部署，数据不出域；兼容国产大模型生态；面向企业级场景的智能体落地解决方案",
     "website": "https://antdigital.com/",
-    "id": 164,
-    "icon": "/images/openclaw-icons/agentar.svg"
+    "id": 164
   },
   {
     "name": "红手指Operator",
@@ -1116,8 +1005,7 @@
     "deployment": "手机端应用，无需本地部署，下载即用，基于云手机技术",
     "features": "全球首款手机龙虾应用，无需本地部署下载即用；一句话完成打车、点外卖、跨App操作；集成百度搜索、千帆大模型；支持文档提取与深度研究；操作在云端虚拟手机中执行；基于文心大模型4.5驱动",
     "website": "https://www.gc.com.cn/",
-    "id": 165,
-    "icon": "/images/openclaw-icons/operator.svg"
+    "id": 165
   },
   {
     "name": "星元智能体",
@@ -1126,8 +1014,7 @@
     "deployment": "基于XPU芯片硬件部署，支持单机运行或集群扩展",
     "features": "基于自主研发星光智能五号XPU芯片的智能体产品；多核异构XPU处理器架构，集成标量、矢量和张量算力；端边云一体化分布式智能体系；全自主可控、高安全、高适配；可适配主流开源大模型；涵盖通用与专业两大功能，实现多端联动、工作流编排、AI任务规划；完成专业知识交互、视频解读及数据要素挖掘与确权",
     "website": "https://www.vimicro.com/",
-    "id": 166,
-    "icon": "/images/openclaw-icons/xingyuan.svg"
+    "id": 166
   },
   {
     "name": "金智维金融智能体",
@@ -1136,8 +1023,7 @@
     "deployment": "企业级私有化部署，全栈信创适配，支持本地化部署",
     "features": "金融行业专属AI智能体平台；信通院智能体5级认证、等保三级及ISO 27001认证；内置金融行业专属知识库及多模态数据处理能力；认知+执行双引擎与多智能体协同架构；支持风控模型、信贷审批等金融场景；已服务1300+政企客户；在重庆银行等标杆案例中实现信贷审批时效缩短87%、单笔录入时间由210分钟降至15分钟",
     "website": "https://www.kingsee.com/",
-    "id": 167,
-    "icon": "/images/openclaw-icons/jinzhiwei.svg"
+    "id": 167
   },
   {
     "name": "QwenPaw",
@@ -1146,8 +1032,7 @@
     "deployment": "本地+云端双部署，开源项目（GitHub），支持一键本地部署和魔搭社区云端部署",
     "features": "CoPaw正式更名QwenPaw，深度融入通义千问(Qwen)生态；业界最低部署门槛的桌面Agent工具；支持钉钉/飞书/QQ/Discord/iMessage等10+通讯渠道；内置心跳主动执行、定时任务、多Agent隔离运行；定制QwenPaw-Flash小模型开源，适配本地部署；搭配ToolGuard/FileGuard/SkillScanner三重安全机制；记忆与个性化完全由用户掌控",
     "website": "https://github.com/agentscope-ai/QwenPaw",
-    "id": 168,
-    "icon": "/images/openclaw-icons/qwenpaw.svg"
+    "id": 168
   },
   {
     "name": "ClawSeeds",
@@ -1156,8 +1041,7 @@
     "deployment": "纯手机端H5网页应用，免部署免下载，注册登录即用",
     "features": "手机端免部署龙虾AI工具，网页端直接访问即开即用；全云端运行，无需本地部署环境；跨应用协同（电商下单、社交回复、办公协作）；自然语言指令全链执行，无需代码无需维护脚本；云端沙箱隔离+独立AI引擎双重安全防护；手机号验证30秒进入操作界面；不读取隐私文件、不泄露敏感信息",
     "website": "https://www.sohu.com/a/1017955743_122636163",
-    "id": 169,
-    "icon": "/images/openclaw-icons/clawseeds.svg"
+    "id": 169
   },
   {
     "id": 170,
@@ -1166,8 +1050,7 @@
     "releaseTime": "2026.04",
     "deployment": "云端部署，基于腾讯云Lighthouse轻量应用服务器，1美元/月起",
     "features": "海外市场AI Agent应用，覆盖180多个国家，服务超800万全球用户；采用Agent实例轻量化架构，每只智能体独立绑定一台Lighthouse服务器；创新「1美元养龙虾」模式，极低成本零门槛部署；支持任务自动化、跨平台检索及复杂文件处理的多Agent协作；上线仅半月部署数量突破1000台",
-    "website": "https://www.tencentcloud.com/lighthouse",
-    "icon": "/images/openclaw-icons/agnesclaw.svg"
+    "website": "https://www.tencentcloud.com/lighthouse"
   },
   {
     "id": 171,
@@ -1176,8 +1059,7 @@
     "releaseTime": "2026.03.24",
     "deployment": "桌面客户端，下载即用，无需部署，全球用户开放",
     "features": "阿里国际站发布的首个企业级电商AI Agent；从AI采购引擎Accio升级为多Agent协作平台；内置电商专家、网店运营、一件代发货等39个专业技能；覆盖市场分析、选品设计、店铺装修、商品发布全流程；支持自主供应链谈判与多轮博弈；支持Claude、Gemini、GPT、Qwen3四大模型；可通过Telegram、微信、飞书远程操控；7×24小时自主运行",
-    "website": "https://wallstreetcn.com/articles/3768249",
-    "icon": "/images/openclaw-icons/acciowork.svg"
+    "website": "https://wallstreetcn.com/articles/3768249"
   },
   {
     "id": 172,
@@ -1186,8 +1068,7 @@
     "releaseTime": "2026.05",
     "deployment": "车载系统集成，基于UE5引擎深度适配，融合自研Kustom3D框架",
     "features": "基于OpenClaw生态及AI大模型能力的智能座舱AI Agent解决方案；基于UE5引擎深度适配，融合自研Kustom3D框架；以场景理解为核心，打造全场景AI Agent方案；AI千人千面，实现功能按需动态生成；让座舱真正成为懂用户习惯、知用户喜好的「出行管家」；亮相2026北京车展",
-    "website": "https://www.kotei-info.com/",
-    "icon": "/images/openclaw-icons/zhishu.svg"
+    "website": "https://www.kotei-info.com/"
   },
   {
     "id": 173,
@@ -1196,8 +1077,7 @@
     "releaseTime": "2026.05.07",
     "deployment": "支持Windows和macOS双平台一键安装，双击即可启动使用；结合移动云MoMA模型聚合平台与AI-eSIM能力",
     "features": "中国移动推出的智能体解决方案；支持Windows和macOS双平台一键安装；预置三十余种官方技能；可直接接入飞书、微信等常用办公软件；基于移动云MoMA聚合300+优质模型；结合AI-eSIM芯片级安全底座，赋予设备唯一数字身份标识；有望在物流分拣、家庭服务等场景实现应用突破；将在2026移动云大会（5月7-9日苏州）正式发布",
-    "website": "https://ecloud.10086.cn/portal/product/hotCase",
-    "icon": "/images/openclaw-icons/mobileclaw.svg"
+    "website": "https://ecloud.10086.cn/portal/product/hotCase"
   },
   {
     "id": 174,
@@ -1206,8 +1086,7 @@
     "releaseTime": "2026.05.04",
     "deployment": "企业级本地安全网关+云端安全运营",
     "features": "中国电信推出的智能体安全防护产品(业内称龙虾保镖)；以本地安全网关+云端安全运营为核心架构；三层防护闭环：资产测绘(含免费捕虾小助手内网扫描工具)、攻击拦截(内置OpenClaw高危漏洞专属特征库)、态势审计；深度融合大网威胁情报与运营商级云网数据资源；毫秒级拦截高风险指令；覆盖资产发现、风险识别、攻击拦截到审计溯源全流程；亮相2026数字中国建设峰会",
-    "website": "https://www.ctyun.cn/",
-    "icon": "/images/openclaw-icons/tianyi.svg"
+    "website": "https://www.ctyun.cn/"
   },
   {
     "name": "Dify.ai",
@@ -1216,8 +1095,7 @@
     "deployment": "开源项目（Apache 2.0），支持Docker私有化部署和云端SaaS",
     "features": "国产开源LLMOps标杆平台；将Prompt工程、RAG检索增强生成、插件调用集成为可视化界面；提供完善的API监控和日志系统；支持Agent构建与工作流编排；适合企业内部中台，将AI能力嵌入现有业务系统",
     "website": "https://dify.ai/",
-    "id": 175,
-    "icon": "/images/openclaw-icons/dify.svg"
+    "id": 175
   },
   {
     "name": "AgentUniverse",
@@ -1226,8 +1104,7 @@
     "deployment": "开源框架，支持私有化部署",
     "features": "垂直于金融等严谨行业的Agent框架；强调多步推理控制和合规性检查；支持多智能体协作；适合处理对准确率要求极高的任务；金融场景深度适配",
     "website": "https://github.com/alibaba/agent-universe",
-    "id": 176,
-    "icon": "/images/openclaw-icons/agentuniverse.svg"
+    "id": 176
   },
   {
     "name": "腾讯元器 (Yuanqi)",
@@ -1236,8 +1113,7 @@
     "deployment": "云端SaaS平台，支持API导出",
     "features": "腾讯低代码智能体平台；深度集成腾讯生态；提供插件+知识库+工作流模式；可无缝调用混元大模型各版本；支持直接导出为API供自有App调用；强化企业级私有数据安全隔离",
     "website": "https://yuanqi.tencent.com/",
-    "id": 177,
-    "icon": "/images/openclaw-icons/yuanqi.svg"
+    "id": 177
   },
   {
     "name": "文心智能体平台",
@@ -1246,8 +1122,7 @@
     "deployment": "云端SaaS平台",
     "features": "百度智能体开发平台（原灵境矩阵）；依托百度搜索生态，智能体可直接挂载在百度搜索结果页获得流量入口；低代码/无代码搭建；支持知识库、插件和工作流配置",
     "website": "https://agents.baidu.com/",
-    "id": 178,
-    "icon": "/images/openclaw-icons/wenxinagent.svg"
+    "id": 178
   },
   {
     "name": "WiseClaw",
@@ -1256,8 +1131,7 @@
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "全球首个医疗Agent OS；支持病历质控、用药审查等医疗场景；深度融合医学知识库与AI执行能力；面向医疗行业的专业级智能体平台",
     "website": "https://www.izhizhen.com/",
-    "id": 179,
-    "icon": "/images/openclaw-icons/wiseclaw.svg"
+    "id": 179
   },
   {
     "name": "OpenMAIC",
@@ -1266,8 +1140,7 @@
     "deployment": "开源项目，支持本地部署",
     "features": "清华团队开源的多智能体AI课堂系统；可一键生成交互式课程；面向教育场景的多Agent协作框架；支持AI辅助教学与课程自动生成",
     "website": "https://github.com/openmaic",
-    "id": 180,
-    "icon": "/images/openclaw-icons/openmaic.svg"
+    "id": 180
   },
   {
     "name": "Skywork Super Agents",
@@ -1276,8 +1149,7 @@
     "deployment": "云端SaaS平台",
     "features": "昆仑万维推出的超级智能体平台；基于天工大模型构建；支持多Agent协作与任务自动化执行；覆盖内容创作、数据分析等场景",
     "website": "https://skywork.ai/",
-    "id": 181,
-    "icon": "/images/openclaw-icons/skywork.svg"
+    "id": 181
   },
   {
     "name": "openJiuwen",
@@ -1286,8 +1158,7 @@
     "deployment": "开源AgentOS框架，支持华为云部署",
     "features": "华为发布的AgentOS架构；三大设计理念：Skill as New Library（可复用智能能力）、Agent as New Service（分布式协同）、CLI as New POSIX（智能体时代系统原语）；已完成华为云OfficeClaw、邮储银行PSBC-Claw等生产级部署",
     "website": "https://www.huawei.com/",
-    "id": 184,
-    "icon": "/images/openclaw-icons/openjiuwen.svg"
+    "id": 184
   },
   {
     "name": "OpenAPA",
@@ -1296,8 +1167,7 @@
     "deployment": "开源框架，支持私有化部署",
     "features": "计算机操控智能体框架；在OSWorld基准测试Agentic Framework技术路线位列全球第一（78.3%）；采用通用模型+Agent框架路线；依靠分层规划、动态反思、Coding Agent与GUI Agent协作等工程架构突破；不依赖专用模型训练即达世界级水平",
     "website": "https://www.laiye.com/",
-    "id": 185,
-    "icon": "/images/openclaw-icons/openapa.svg"
+    "id": 185
   },
   {
     "name": "Qwen-Agent",
@@ -1306,8 +1176,7 @@
     "deployment": "开源框架（Apache 2.0），支持pip安装和私有化部署",
     "features": "基于通义千问大模型体系开源的Agent框架；核心代码完全开放，Apache 2.0协议支持商业用途无限制二次开发；内置任务拆解、工具调用、RAG知识库等Agent核心能力；核心技术国产自研，无境外技术依赖",
     "website": "https://github.com/QwenLM/Qwen-Agent",
-    "id": 186,
-    "icon": "/images/openclaw-icons/qwenagent.svg"
+    "id": 186
   },
   {
     "name": "PowerClaw",
@@ -1316,8 +1185,7 @@
     "deployment": "企业级私有化部署，行业定制版",
     "features": "行业定制版AI Agent平台；深耕营销服场景；适合金融、零售等行业；企业级安全合规与数据隔离；支持与现有业务系统深度集成",
     "website": "https://www.zgcjk.com/",
-    "id": 187,
-    "icon": "/images/openclaw-icons/powerclaw.svg"
+    "id": 187
   },
   {
     "name": "GLM-Edge/All Tools",
@@ -1326,8 +1194,7 @@
     "deployment": "开源工具集，支持端侧部署",
     "features": "智谱AI专门针对GLM系列模型优化的工具集；在端侧AI（手机、PC）Agent开发上具有领先优势；支持复杂的代码执行（Code Interpreter）和网络搜索工具；与AutoClaw形成模型+框架闭环",
     "website": "https://www.zhipuai.cn/",
-    "id": 188,
-    "icon": "/images/openclaw-icons/glmedge.svg"
+    "id": 188
   },
   {
     "name": "OpenClawChinese",
@@ -1336,8 +1203,7 @@
     "deployment": "开源项目，基于OpenClaw的汉化优化版，支持本地部署和Docker启动",
     "features": "OpenClaw中文汉化优化版；内置飞书集成与国内网络环境优化；专注让中文开发者更易理解和使用OpenClaw框架；定期与上游主项目同步更新；解决国内网络连接与配置难题",
     "website": "https://github.com/jiulingyun/openclaw-cn",
-    "id": 189,
-    "icon": "/images/openclaw-icons/openclawcn.svg"
+    "id": 189
   },
   {
     "name": "ZeroClaw",
@@ -1346,8 +1212,7 @@
     "deployment": "开源项目，极致轻量设计，支持树莓派等边缘设备运行",
     "features": "OpenClaw生态轻量级变体；专为树莓派等边缘计算设备优化；极致轻量化设计，资源占用极低；支持离线运行和低功耗场景；适合IoT和嵌入式环境",
     "website": "https://github.com/zeroclaw/zeroclaw",
-    "id": 190,
-    "icon": "/images/openclaw-icons/zeroclaw.svg"
+    "id": 190
   },
   {
     "name": "OpenFang",
@@ -1356,8 +1221,7 @@
     "deployment": "开源项目，Rust编写，支持跨平台部署",
     "features": "Rust编写的生产级Agent OS；高性能内存安全设计；支持多Agent协作与任务编排；面向生产环境的高可靠性架构",
     "website": "https://github.com/openfang/openfang",
-    "id": 191,
-    "icon": "/images/openclaw-icons/openfang.svg"
+    "id": 191
   },
   {
     "name": "ClawPhone",
@@ -1366,8 +1230,7 @@
     "deployment": "手机端侧部署，支持DIY定制",
     "features": "字节跳动推出的端侧AI Agent方案；支持手机端本地运行；可DIY定制Agent能力与行为模式；面向个人用户的轻量级智能体",
     "website": "https://www.volcengine.com/",
-    "id": 192,
-    "icon": "/images/openclaw-icons/clawphone.svg"
+    "id": 192
   },
   {
     "id": 193,
@@ -1376,8 +1239,7 @@
     "releaseTime": "2026.03",
     "deployment": "Rust编写，单二进制部署，支持跨平台运行",
     "features": "Rust开发的安全优先AI Agent框架；强隔离沙箱机制保障数据安全；本地数据处理，隐私数据不出设备；极低内存占用，适合边缘设备和数据隐私敏感场景；支持多Agent协作",
-    "website": "https://github.com/ironclaw/ironclaw",
-    "icon": "/images/openclaw-icons/ironclaw.svg"
+    "website": "https://github.com/ironclaw/ironclaw"
   },
   {
     "id": 194,
@@ -1386,8 +1248,7 @@
     "releaseTime": "2026.03",
     "deployment": "开源框架（Apache 2.0），pip一键安装，支持Docker部署",
     "features": "超轻量开源Agent框架，已原生支持Skills与MCP协议（stdio/SSE）；具备持久记忆、工具调用与Tree-of-Thought推理能力；一步构建自学习Agent，支持多Agent协作；兼容OpenAI、DeepSeek、Qwen等主流大模型；输出OpenAI兼容流式API，可对接任何聊天界面；5分钟即可启动运行",
-    "website": "https://github.com/wanxingai/LightAgent",
-    "icon": "/images/openclaw-icons/lightagent.svg"
+    "website": "https://github.com/wanxingai/LightAgent"
   },
   {
     "id": 195,
@@ -1396,8 +1257,7 @@
     "releaseTime": "2026.03",
     "deployment": "开源框架，Maven/Gradle依赖引入，支持Spring Boot/Quarkus集成",
     "features": "面向智能体编程的企业级Java AI Agent框架；ReAct范式实现思考-行动-观察闭环；PlanNotebook复杂任务规划与拆解；自校正结构化输出解析器确保LLM输出格式正确；多级记忆（短期对话记忆/长期语义记忆/多租户隔离）；Human-in-the-Loop人工介入机制；支持GraalVM原生镜像编译与云原生Serverless部署；适配通义千问、GPT-4、Ollama本地模型等主流LLM",
-    "website": "https://github.com/agentscope-ai/agentscope-java",
-    "icon": "/images/openclaw-icons/agentscopejava.svg"
+    "website": "https://github.com/agentscope-ai/agentscope-java"
   },
   {
     "name": "DuMate（搭子）",
@@ -1406,8 +1266,7 @@
     "deployment": "桌面客户端一键安装（Windows/macOS），本地安全沙箱运行，数据不出设备",
     "features": "国内首个国产企业级满血版OpenClaw，对标OpenClaw+Claude Cowork；91%核心模块自主研发；支持Word/Excel/PPT全流程操作、文件智能管理、多源数据分析、浏览器自动化；内置百度搜索Skill（下载超4.5万次）；打通微信/飞书/企业微信等国内IM；个人每日获赠1000积分；2026年5月8日登顶PinchBench和DeepResearch双榜全球第一；通过信通院可信AI双项认证获功能4+级最高评级",
     "website": "https://cloud.baidu.com/product/dumate.html",
-    "id": 196,
-    "icon": "/images/openclaw-icons/dumate.svg"
+    "id": 196
   },
   {
     "name": "GenericAgent",
@@ -1416,8 +1275,7 @@
     "deployment": "开源项目（MIT协议），pip安装，支持本地运行和云端部署",
     "features": "极简自进化Agent框架，核心代码仅3300行，Agent Loop仅92行；9个原子工具覆盖完整Agent能力环；相同任务Token消耗仅OpenClaw的29.8%、Claude Code的35.1%；上下文信息密度最大化设计，四道闸口过滤噪音；自我进化流水线：成功经验提炼成Skill；支持微信朋友圈自动互动等社交场景；GitHub 10.2k+ Stars",
     "website": "https://github.com/lsdefine/GenericAgent",
-    "id": 197,
-    "icon": "/images/openclaw-icons/genericagent.svg"
+    "id": 197
   },
   {
     "name": "Marvis（马维斯）",
@@ -1426,8 +1284,7 @@
     "deployment": "操作系统层级AI助手，支持Windows/Mac/Android/iOS多端，同账号互通",
     "features": "操作系统层级AI助手，直接触达系统设置、文件管理、应用调用与硬件信息；1主Agent+5副Agent协作架构（File/Computer/App/Browser/Search）；效率模式端云协同+隐私模式完全离线（端侧模型）；文件语义搜索穿透文档内容，图片人脸识别与场景分类；跨端可视化操控，手机远程查看并操控电脑屏幕；L2级安全兜底机制，敏感操作强制确认；每日1000万免费Token；与微软Foundry、英特尔OpenVINO战略合作；吉祥物\"小牛马\"可视化多Agent办公场景",
     "website": "https://marvis.qq.com/",
-    "id": 198,
-    "icon": "/images/openclaw-icons/marvis.svg"
+    "id": 198
   },
   {
     "name": "OpenAkita",
@@ -1436,8 +1293,7 @@
     "deployment": "开源项目（Apache 2.0），Tauri+React桌面终端，支持Windows/macOS/Linux",
     "features": "自进化开源AI助手框架；每日凌晨自动记忆整理、自检修复、任务复盘；8种预设人格（女友/管家/Jarvis等）含主动问候与活人感系统；3分钟快速配置开箱即用；支持30+ LLM提供商，优先级路由+自动故障转移；内置89+工具（Shell/浏览器/桌面操作/MCP）；支持Telegram/飞书/钉钉/企业微信/QQ/OneBot六大IM平台；会发表情包（5700+）；Plan模式复杂任务自动拆解与进度追踪；遵循Agent Skills/MCP开放标准",
     "website": "https://github.com/openakita/openakita",
-    "id": 199,
-    "icon": "/images/openclaw-icons/openakita.svg"
+    "id": 199
   },
   {
     "id": 200,
@@ -1446,8 +1302,7 @@
     "releaseTime": "2026.03",
     "deployment": "桌面安装包（Windows/macOS/Linux），开源项目",
     "features": "AI工具统一管理平台，内置CLI工具管理层；支持300+模型接入与多模型对话；可作为OpenClaw可视化前端，低门槛管理Agent技能与配置；GitHub 18.9k+ Stars；MIT开源协议",
-    "website": "https://github.com/iOfficeAI/AionUi",
-    "icon": "/images/openclaw-icons/aionui.svg"
+    "website": "https://github.com/iOfficeAI/AionUi"
   },
   {
     "id": 201,
@@ -1456,8 +1311,7 @@
     "releaseTime": "2026.01",
     "deployment": "DMG/EXE/Linux桌面客户端，一键安装，开源项目（Apache 2.0）",
     "features": "开源多模型AI桌面客户端；支持300+模型提供商接入；可视化界面实现OpenClaw一键部署，自动检测并补全依赖环境；内置知识库管理、AI编程辅助；支持多Agent对话与MCP协议；GitHub 41.5k+ Stars，5900+次提交",
-    "website": "https://github.com/CherryHQ/cherry-studio",
-    "icon": "/images/openclaw-icons/cherrystudio.svg"
+    "website": "https://github.com/CherryHQ/cherry-studio"
   },
   {
     "id": 202,
@@ -1466,8 +1320,7 @@
     "releaseTime": "2026.02",
     "deployment": "Go单二进制文件部署（~25MB），支持Docker，无运行时依赖",
     "features": "Go语言重写的企业级AI Agent网关；多租户PostgreSQL + RLS数据隔离；5层安全防护（注入检测/SSRF防护/Shell模式过滤/AES-256-GCM加密）；Agent团队协作与任务面板；20+ LLM提供商，支持MCP协议；7大消息渠道；启动<1秒，比OpenClaw节省90%资源",
-    "website": "https://github.com/nextlevelbuilder/goclaw",
-    "icon": "/images/openclaw-icons/goclaw.svg"
+    "website": "https://github.com/nextlevelbuilder/goclaw"
   },
   {
     "id": 203,
@@ -1476,8 +1329,7 @@
     "releaseTime": "2026.03",
     "deployment": "企业级SaaS平台，支持私有化部署",
     "features": "企业级国产AI智能体平台，号称国产「小青龙」对标OpenClaw「小龙虾」；在企业7个真实办公场景测试中全部跑通（OpenClaw仅跑通5个）；GUI操作能力显著优于OpenClaw；Token消耗仅为OpenClaw的几十分之一；支持限定范围内AI自主执行+人类干预的混合模式；面向企业办公自动化和流程自动化场景",
-    "website": "https://www.jiuke.com/",
-    "icon": "/images/openclaw-icons/bitagent.svg"
+    "website": "https://www.jiuke.com/"
   },
   {
     "id": 204,
@@ -1486,8 +1338,7 @@
     "releaseTime": "2026.03",
     "deployment": "云端SaaS平台，支持CLI工具，开源项目",
     "features": "AI Agent管理与协作平台；提供一键CLI工具从OpenClaw迁移；可视化UI管理与配置Agent；IM集成（Telegram/WhatsApp/Discord等）；内置Skill安全过滤机制，从5400+技能中精选安全可用技能；中文优化界面；支持多模型切换与知识库管理",
-    "website": "https://lobehub.com/",
-    "icon": "/images/openclaw-icons/lobehub.svg"
+    "website": "https://lobehub.com/"
   },
   {
     "id": 205,
@@ -1496,8 +1347,7 @@
     "releaseTime": "2026.02.12",
     "deployment": "Rust单二进制文件部署（~60MB），零依赖，支持Docker/Apple Container沙箱隔离",
     "features": "Rust编写的生产级AI Agent框架，150K行代码零unsafe块；单文件静态编译下载即运行；WASM沙箱隔离每会话独立文件系统/进程/网络空间；内置Prometheus指标与OpenTelemetry追踪；混合向量+全文检索SQLite存储；多Provider路由与故障转移链；自动脱敏API Key/Token/密钥；首次启动安全码无默认密码；支持Telegram/Signal/Discord/Web多渠道；MIT开源协议",
-    "website": "https://moltis.org/",
-    "icon": "/images/openclaw-icons/moltis.svg"
+    "website": "https://moltis.org/"
   },
   {
     "id": 206,
@@ -1506,8 +1356,7 @@
     "releaseTime": "2026.04",
     "deployment": "开源项目（MIT协议），npm install -g一键安装，支持Tauri桌面客户端",
     "features": "DeepSeek原生终端AI编码Agent；围绕字节稳定prefix-cache设计append-only运行循环，长会话缓存命中率达99.82%；三大支柱：Cache-First循环（消息只追加不修改）、R1 Thought Harvesting（提取推理链规划信号）、Tool-Call Repair（自动修复DeepSeek工具调用格式bug）；auto模型自动切换（简单用v4-flash复杂用v4-pro）；支持QQ频道远程连接；成本较无缓存优化降低80%；DeepSeek官方文档推荐接入工具；GitHub 4.7k+ Stars",
-    "website": "https://esengine.github.io/DeepSeek-Reasonix/",
-    "icon": "/images/openclaw-icons/reasonix.svg"
+    "website": "https://esengine.github.io/DeepSeek-Reasonix/"
   },
   {
     "id": 207,
@@ -1516,8 +1365,7 @@
     "releaseTime": "2026.05.20",
     "deployment": "AI硬件设备（入耳式Pro版/挂耳式Air版），端侧AI智能体",
     "features": "全球首款龙虾形态AI智能体耳机；搭载端侧AI智能体小万，已接入DeepSeek/通义千问/智谱等多款国产大模型自由切换；新增项目功能实现长期记忆能力，从处理一次内容升级为推进一件事情；viaim 2.0系统支持145个国家及地区语言识别与实时三语混合识别；Pro版1549元/Air版1349元；从传统录音耳机到智能办公助手的跨越",
-    "website": "https://www.viaim.ai/",
-    "icon": "/images/openclaw-icons/viaim.svg"
+    "website": "https://www.viaim.ai/"
   },
   {
     "id": 208,
@@ -1526,8 +1374,7 @@
     "releaseTime": "2026.05.15",
     "deployment": "开源开放项目，成果面向社会开源开放，支持按需取用、灵活组装",
     "features": "国内首个开源开放AI智能体共性基础设施；破解智能体产业\"连不上、干不成、管不住、控不稳\"四大痛点；先期核心成果含灵玑·织语(V2.0)能力引擎（低成本存量系统适配复用）和灵玑·星绽(V2.0)框内核操作系统架构（融合宏内核高性能与微内核高安全）；为智能体规模化落地提供安全可控运行底座；在政务、工业、医疗等重点领域打造标杆应用",
-    "website": "https://www.beijing.gov.cn/",
-    "icon": "/images/openclaw-icons/lingji.svg"
+    "website": "https://www.beijing.gov.cn/"
   },
   {
     "id": 209,
@@ -1536,8 +1383,7 @@
     "releaseTime": "2026.05.08",
     "deployment": "企业级SaaS平台，覆盖智能会议纪要、文档自动生成、邮件智能回复三大场景",
     "features": "字节跳动发布的企业级AI办公助手；核心覆盖智能会议纪要、文档自动生成、邮件智能回复三大场景；依托字节跳动豆包大模型能力；面向企业办公场景的智能体产品；与火山引擎Agent Plan深度协同",
-    "website": "https://www.volcengine.com/",
-    "icon": "/images/openclaw-icons/bytedancezhizhu.svg"
+    "website": "https://www.volcengine.com/"
   },
   {
     "id": 210,
@@ -1546,8 +1392,7 @@
     "releaseTime": "2026.05.11",
     "deployment": "云端SaaS订阅服务，40元/月起，适配Claude Code/OpenClaw/Hermes Agent/TRAE等平台",
     "features": "业界首个Agent套餐包，将Model与Harness能力深度整合；集成字节自研Seed系列SOTA模型(Doubao-Seed/Seedance/Seedream)及GLM-5.1、Kimi-K2.6等三方模型；内置联网搜索、Embedding记忆等Harness工具；引入AFP(Agent燃料值)统一计量；Auto模式智能调度性价比最高模型；Small/Medium/Large/Max四档订阅；Medium及以上免费体验ArkClaw",
-    "website": "https://www.volcengine.com/docs/82379/2229107",
-    "icon": "/images/openclaw-icons/agentplan.svg"
+    "website": "https://www.volcengine.com/docs/82379/2229107"
   },
   {
     "id": 211,
@@ -1556,8 +1401,7 @@
     "releaseTime": "2026.01",
     "deployment": "本地部署，深度适配Mac mini(M4芯片优先)及银河麒麟系统，支持Windows/macOS/Linux",
     "features": "中国版龙虾，全本地化部署数据永不离设备；内置本地个人记忆库基于企业级RAG能力构建长期记忆体系；本地执行+人工终审双机制，关键步骤需人工确认；白名单权限管理全程可审计；深度适配macOS与麒麟操作系统；开箱即用零配置；通过信通院首批智能助手Claw基准评估获最高功能4+级；企业版Mac Studio知识中台(EKC)实现数据不出域精细管控",
-    "website": "https://fabarta.com/",
-    "icon": "/images/openclaw-icons/fabarta.svg"
+    "website": "https://fabarta.com/"
   },
   {
     "id": 212,
@@ -1566,8 +1410,7 @@
     "releaseTime": "2026.05.21",
     "deployment": "企业级私有化部署，支持云端和Docker本地部署，零代码开发",
     "features": "华为发布的零代码智能体自动生成平台；支持自然语言交互直接生成Agent，Agent上线周期缩短80%；预置30+主流大模型；支持GPU细粒度调度与1:10切分；Skill/提示词/记忆自动优化实现自进化能力；依托MCP开放生态丰富工具集成；支持多智能体协作；作为华为AI DC数据基础设施全栈方案的核心组件发布",
-    "website": "https://nexent.tech/zh",
-    "icon": "/images/openclaw-icons/nexent.svg"
+    "website": "https://nexent.tech/zh"
   },
   {
     "id": 213,
@@ -1576,8 +1419,7 @@
     "releaseTime": "2026.05",
     "deployment": "开源框架（Apache 2.0），pip安装，支持本地和云端部署",
     "features": "为通用Agent打造的统一训练框架，贯通构建(Build)、运行(Run)、训练(Train)完整流程；统一抽象model/tool/env三层可独立替换；支持1000+并发Agent任务大规模并行交互；集成火山引擎veFaaS Sandbox提供MicroVM级安全隔离；内置实时仪表盘监控大规模任务；与veRL强化学习框架无缝衔接支持Agent持续进化；在SWE-Bench-Verified基准上超越OpenHands",
-    "website": "https://github.com/verl-project/uni-agent",
-    "icon": "/images/openclaw-icons/uniagent.svg"
+    "website": "https://github.com/verl-project/uni-agent"
   },
   {
     "id": 214,
@@ -1586,8 +1428,7 @@
     "releaseTime": "2026.05.16",
     "deployment": "Agent平台，支持网页浏览、代码执行和文件操作",
     "features": "智谱AI发布的新一代Agent平台，对标GPT-5 Agent Mode；支持网页浏览、代码执行和文件操作三大核心能力；搭载GLM系列最新模型；智谱AI完成5亿美元融资（估值50亿美元，阿里腾讯共同投资）后重磅发布；自主规划任务并执行复杂多步骤操作；与AutoClaw形成模型+框架产品矩阵",
-    "website": "https://www.zhipuai.cn/",
-    "icon": "/images/openclaw-icons/autoglm2.svg"
+    "website": "https://www.zhipuai.cn/"
   },
   {
     "id": 215,
@@ -1596,8 +1437,7 @@
     "releaseTime": "2026.05.22",
     "deployment": "桌面硬件终端，搭载国产RISC-V架构芯片与Bianbu操作系统，开箱即用",
     "features": "便携式AI智能体盒子（AI Agent Box），全新品类桌面AI硬件；配备3寸动态LCD屏幕实现可视化交互；内置法务/财务/产品/HR/汇报/金融六套专业工作流；支持语音与文字多模态交互；全国产芯片与操作系统全链路自主可控；数据本地存储与处理保障隐私安全；桌面可视化小桌宠相伴；积分激励机制打卡互动完成任务可兑换AI算力；与阿里云合作配套专属Token积分；由CSDN与华秋电子联合孵化",
-    "website": "https://www.nfnews.com/content/EynGJXxW3Z.html",
-    "icon": "/images/openclaw-icons/longmini.svg"
+    "website": "https://www.nfnews.com/content/EynGJXxW3Z.html"
   },
   {
     "id": 216,
@@ -1606,8 +1446,7 @@
     "releaseTime": "2026.01",
     "deployment": "开源框架（MIT协议），支持本地部署和云端运行",
     "features": "自进化个人智能体框架，GitHub 60K+ Stars；三层记忆架构（短期/长期/持久）；闭环学习系统，从实践中自动提炼经验创建可复用技能；支持14+消息平台接入；Cron定时任务；支持200+国产大模型；一行命令安装；与OpenClaw/AutoGPT/CrewAI形成差异化竞争",
-    "website": "https://github.com/nousresearch/hermes",
-    "icon": "/images/openclaw-icons/hermes.svg"
+    "website": "https://github.com/nousresearch/hermes"
   },
   {
     "id": 217,
@@ -1616,8 +1455,7 @@
     "releaseTime": "2024.06",
     "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
     "features": "状态机驱动的精密Agent编排框架，GitHub 28.7K+ Stars；显式状态管理使用TypedDict/Pydantic定义；图结构编排（节点=纯函数，边=条件路由）；可中断执行支持任意节点暂停恢复；适合金融审批、医疗诊断、高可靠性场景；作为LangChain生态核心组件被广泛采用",
-    "website": "https://github.com/langchain-ai/langgraph",
-    "icon": "/images/openclaw-icons/langgraph.svg"
+    "website": "https://github.com/langchain-ai/langgraph"
   },
   {
     "id": 218,
@@ -1626,8 +1464,7 @@
     "releaseTime": "2024.03",
     "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
     "features": "角色扮演式多Agent协作框架，GitHub 38.2K+ Stars；声明式任务定义（Task对象定义目标和期望输出）；角色专业化（Agent拥有固定角色/目标/背景故事）；自动化委派内置任务分配和协调机制；适合内容生成、市场分析、数据报告等流程标准化场景；Process顺序/并行执行模式",
-    "website": "https://github.com/crewAIInc/crewAI",
-    "icon": "/images/openclaw-icons/crewai.svg"
+    "website": "https://github.com/crewAIInc/crewAI"
   },
   {
     "id": 219,
@@ -1636,8 +1473,7 @@
     "releaseTime": "2023.09",
     "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
     "features": "对话驱动的多Agent协作框架，GitHub 42.5K+ Stars；自然语言对话实现Agent协商和协作；动态发言者选择支持自动/轮询；UserProxyAgent实现人机无缝协同；涌现智能大于预设流程理念；适合需要多Agent复杂交互的场景；微软官方维护持续迭代",
-    "website": "https://github.com/microsoft/autogen",
-    "icon": "/images/openclaw-icons/autogen.svg"
+    "website": "https://github.com/microsoft/autogen"
   },
   {
     "id": 220,
@@ -1646,8 +1482,7 @@
     "releaseTime": "2025.01",
     "deployment": "开源框架（MIT协议），pip安装，支持Python生态",
     "features": "多Agent编排框架，GitHub 15.3K+ Stars；基于Orchestrator-Worker架构的多智能体协同；通用任务自动化能力；与AutoGen生态深度集成；适合企业级多Agent工作流编排；微软最新一代Agent框架产品",
-    "website": "https://github.com/microsoft/magnetic-one",
-    "icon": "/images/openclaw-icons/magneticone.svg"
+    "website": "https://github.com/microsoft/magnetic-one"
   },
   {
     "id": 221,
@@ -1656,8 +1491,7 @@
     "releaseTime": "2023.07",
     "deployment": "开源框架（Apache 2.0），Maven/Gradle依赖，支持Java/Spring Boot生态",
     "features": "Java生态AI Agent框架，GitHub 8.5K+ Stars；为Spring开发者提供AI集成方案；支持多种大模型提供商抽象；Prompt模板管理与RAG支持；与企业级Spring生态系统无缝集成；适合Java技术栈企业的AI应用开发；填补Java生态AI Agent空白",
-    "website": "https://github.com/spring-projects/spring-ai",
-    "icon": "/images/openclaw-icons/springai.svg"
+    "website": "https://github.com/spring-projects/spring-ai"
   },
   {
     "id": 222,
@@ -1666,8 +1500,7 @@
     "releaseTime": "2026.05.26",
     "deployment": "云端API服务（限时免费），OpenAI兼容接口，适配OpenClaw/Hermes/Claude Code/Codex等主流Agent框架",
     "features": "全球首款原生Agent模型，从训练之初就面向智能体场景设计（非通用模型+工具壳）；百万token超长上下文；重点优化复杂工具调用、多轮任务执行、代码生成、文件编辑；在主流Agent基准评测中全面超越Minimax 2.7、DeepSeek V4 Flash及Qwen 3.6系列；旗舰版输入0.5元输出4元/百万Token，轻量版更低；限时免费2-4周后计划逐步开源；与OpenClaw形成「模型+框架」互补生态",
-    "website": "https://skywork.ai",
-    "icon": "/images/openclaw-icons/skyclaw.svg"
+    "website": "https://skywork.ai"
   },
   {
     "id": 223,
@@ -1676,8 +1509,7 @@
     "releaseTime": "2026.05.22",
     "deployment": "App Store上架移动端应用，支持云端与本地双模式，账号与PC端实时同步",
     "features": "AutoClaw的移动端版本；用户可在手机上创建、编辑和注销Agent；支持创建Agent群聊让多个智能体协作完成任务；云端模式无需电脑在线即可下发指令；本地模式可将手机作为PC远程遥控器；当前版本聚焦核心的创建与执行功能（Hermes看板、Token统计、MCP服务、IM接入暂未开放）；将AI Agent从办公场景扩展到移动场景",
-    "website": "https://autoglm.zhipuai.cn/autoclaw/",
-    "icon": "/images/openclaw-icons/autoclawmobile.svg"
+    "website": "https://autoglm.zhipuai.cn/autoclaw/"
   },
   {
     "id": 224,
@@ -1686,8 +1518,7 @@
     "releaseTime": "2026.05.20",
     "deployment": "云端托管，0门槛浏览器即开即用，7×24小时云端独立虚拟机",
     "features": "全球首创自进化个人AI智能体平台，定位AI数字劳动力市场；0门槛云端运行，无需本地部署；自进化能力学习用户习惯；多Agent独立上下文并行任务；已服务43个国家用户",
-    "website": "https://mulerun.com",
-    "icon": "/images/openclaw-icons/mulerun.svg"
+    "website": "https://mulerun.com"
   },
   {
     "id": 225,
@@ -1696,8 +1527,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "开源，本地部署，支持Docker",
     "features": "清华系开源智能体操作系统；项目独立建舱，记忆可视可改；Token成本较OpenClaw降低70%；面向纯生产力的智能体协作舱；多Agent协作管理",
-    "website": "https://github.com/thunlp/PilotDeck",
-    "icon": "/images/openclaw-icons/pilotdeck.svg"
+    "website": "https://github.com/thunlp/PilotDeck"
   },
   {
     "id": 226,
@@ -1706,8 +1536,7 @@
     "releaseTime": "2026.05.07",
     "deployment": "云端社区平台，Web端使用",
     "features": "国内首个AI原生共生社区，让AI Agent拥有身份、关系与成长体系；入驻Agent超3000个，技能4万+；技能便利店支持下载安装管理；支持OpenClaw/Hermes/QClaw等主流Agent入驻",
-    "website": "https://www.meyo123.com",
-    "icon": "/images/openclaw-icons/meyo.svg"
+    "website": "https://www.meyo123.com"
   },
   {
     "id": 227,
@@ -1716,8 +1545,7 @@
     "releaseTime": "2026.05.15",
     "deployment": "开源框架，C++核心，支持iOS/Android/HarmonyOS三端",
     "features": "行业首个覆盖iOS/Android/HarmonyOS三端的端云一体原生A2UI开源框架；基于Google A2UI协议；AI大模型界面意图直接转化为原生组件渲染；渲染性能提升20%，内存占用降18%；深度适配鸿蒙1+8+N全场景分布式架构",
-    "website": "https://github.com/AGenUI/AGenUI",
-    "icon": "/images/openclaw-icons/agenui.svg"
+    "website": "https://github.com/AGenUI/AGenUI"
   },
   {
     "id": 228,
@@ -1726,8 +1554,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "全托管云服务，API调用",
     "features": "全托管AI Agent运行平台，Agent上线时间从1个月缩短至1天；原生支持Skills和MCP协议；由Qoder底层Coding Agent引擎驱动；独立沙箱运行环境，SSE事件流实时追踪可审计；自动扩缩容",
-    "website": "https://qoder.aliyun.com",
-    "icon": "/images/openclaw-icons/cloudagents.svg"
+    "website": "https://qoder.aliyun.com"
   },
   {
     "id": 229,
@@ -1736,8 +1563,7 @@
     "releaseTime": "2026.05.20",
     "deployment": "私有化部署/云端部署",
     "features": "AI原生数据治理平台，以大模型为内核、智能体为载体；内置二十年积累的三层知识体系（合规政策/行业框架/实施经验）；数据治理大脑实现从数据挖掘到决策落地的全链路闭环；连续四年IDC数据治理市场第一",
-    "website": "https://www.esensoft.com",
-    "icon": "/images/openclaw-icons/ruizhi.svg"
+    "website": "https://www.esensoft.com"
   },
   {
     "id": 230,
@@ -1746,8 +1572,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "预装于雷神AI工作站，本地运行",
     "features": "京东自研龙虾AI Agent，预装于雷神AI Master D9000迷你AI工作站；搭配AI编码工具JoyCode双重智能服务；开机即享，适配本地大模型运行；面向AI工作站场景优化",
-    "website": "https://jclaw.jd.com",
-    "icon": "/images/openclaw-icons/joyclaw.svg"
+    "website": "https://jclaw.jd.com"
   },
   {
     "id": 231,
@@ -1756,8 +1581,7 @@
     "releaseTime": "2026.04.28",
     "deployment": "云端SaaS，API接入，三步集成",
     "features": "全球首个大规模商用AI原生支付基建，已完成3亿笔AI支付；支持95%通用智能体框架；与AI付构成A2A交易闭环；个人开发者0费率至2026年底；支持按调用即时收款",
-    "website": "https://a2a.alipay.com",
-    "icon": "/images/openclaw-icons/alipayai.svg"
+    "website": "https://a2a.alipay.com"
   },
   {
     "id": 232,
@@ -1766,8 +1590,7 @@
     "releaseTime": "2026.05.15",
     "deployment": "开源，本地桌面安装，Rust实现",
     "features": "Rust实现的AI Agent桌面工作台；聚合Claude CLI/Codex CLI/OpenCode CLI；统一管理项目、会话、计划与执行；多Agent专家管理；支持MCP/Skills/Plugins扩展；记忆系统支持原始记忆池和AI压缩记忆库",
-    "website": "https://github.com/easy-agent-pilot",
-    "icon": "/images/openclaw-icons/easyagentpilot.svg"
+    "website": "https://github.com/easy-agent-pilot"
   },
   {
     "id": 233,
@@ -1776,8 +1599,7 @@
     "releaseTime": "2026.05.15",
     "deployment": "云端SaaS，企业级部署",
     "features": "新一代AI Agent智慧联络平台，基于低代码CRM底座；搭载全能客服中枢Agent，打通电话/网页/APP/微信/抖音/小红书全渠道；Agent驱动全流程从意图识别到任务执行；座席仅需关键节点确认，实现人机协同",
-    "website": "https://www.yuntongxun.com",
-    "icon": "/images/openclaw-icons/ronglianyun.svg"
+    "website": "https://www.yuntongxun.com"
   },
   {
     "id": 234,
@@ -1786,8 +1608,7 @@
     "releaseTime": "2026.03",
     "deployment": "本地桌面端，开源可私有化部署",
     "features": "国内首个100%开源的桌面级全场景个人AI助理，GitHub超5200星；可私有化部署、可二次开发；已接入DeepSeek-V4和Kimi K2.6模型；获OpenClaw创始人Peter Steinberger公开点赞；支持多模态交互、知识库管理、文件处理等全场景能力",
-    "website": "https://github.com/netease-youdao/LobsterAI",
-    "icon": "/images/openclaw-icons/youdaolobster.svg"
+    "website": "https://github.com/netease-youdao/LobsterAI"
   },
   {
     "id": 235,
@@ -1796,8 +1617,7 @@
     "releaseTime": "2026.05.29",
     "deployment": "企业级混合部署，网络/Agent/主机三层围栏架构",
     "features": "HNS 2026联合行业机构发布技术白皮书；三层围栏安全架构：网络围栏（AI防火墙+网关白名单+安全过滤+行为审计）、Agent围栏（专属安全网关+语义分析抵御注入攻击+最小化暴露面）、主机围栏（智算EDR检测恶意技能+关键目录防护）；实现AI Agent全面可视、全程可控、全链可管",
-    "website": "https://e.huawei.com",
-    "icon": "/images/openclaw-icons/huaweisecurity.svg"
+    "website": "https://e.huawei.com"
   },
   {
     "id": 236,
@@ -1806,8 +1626,7 @@
     "releaseTime": "2026.05.18",
     "deployment": "家庭端侧硬件+全域智能体",
     "features": "摩尔线程2026产品发布会发布，首款面向家庭场景的消费级AI产品；搭载全域智能体\"小麦\"，作为家庭AI中枢；从云到端的智能体落地方案；支持OpenClaw类Agent任务执行，面向家庭成员的自然语言交互",
-    "website": "https://www.mthreads.com",
-    "icon": "/images/openclaw-icons/mttaicube.svg"
+    "website": "https://www.mthreads.com"
   },
   {
     "id": 237,
@@ -1816,8 +1635,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "消费级智能硬件，40g超轻机身",
     "features": "BEYOND Expo 2026发布；支持122种语言实时翻译（通话/面对面/视觉翻译）；内置GlassClaw龙虾AI助理，实现多模态记录、AI会议纪要、生活服务调用；GlassClaw可独立完成商务信息采集、出差方案整理、邮件发送等复杂任务；多麦克风阵列+视觉降噪+唇动识别降噪",
-    "website": "https://www.iflytek.com",
-    "icon": "/images/openclaw-icons/iflytekglasses.svg"
+    "website": "https://www.iflytek.com"
   },
   {
     "id": 238,
@@ -1826,8 +1644,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "车载智能体，端云协同",
     "features": "比亚迪智能化战略发布会发布超级智能体；三大能力：聊得来（全舱记忆+跨域交互+端云协同+快慢思考，有情感有记忆主动服务）、搞得定（模糊语义理解+复杂意图拆解+多方言多语种+超快响应）、玩得转（从手机生态到Agent生态100%兼容）；车载场景深度适配",
-    "website": "https://www.byd.com",
-    "icon": "/images/openclaw-icons/didixia.svg"
+    "website": "https://www.byd.com"
   },
   {
     "id": 239,
@@ -1836,8 +1653,7 @@
     "releaseTime": "2026.04.02",
     "deployment": "企业级本地化部署，支持大规模集群管理",
     "features": "业界首个企业级OpenClaw方案；为企业规模化部署、管理和应用OpenClaw打造全链路方案；四层防御体系（L0-L3），覆盖网络安全、Agent安全、主机安全、数据安全；安全、高效、易用的企业级部署方案；搭载元脑算力平台",
-    "website": "https://www.inspur.com",
-    "icon": "/images/openclaw-icons/qianqixa.svg"
+    "website": "https://www.inspur.com"
   },
   {
     "id": 240,
@@ -1846,8 +1662,7 @@
     "releaseTime": "2026.05",
     "deployment": "企业级Agent管理平台，全栈式AI服务",
     "features": "全栈式AI服务能力，企业级Agent管理平台赛道领跑者；覆盖AI战略咨询、大模型部署、智能体开发工具、算力支撑、系统集成、安全保障、运营维护全链路；一站式智能化转型服务，降低企业技术门槛和实施风险",
-    "website": "https://www.lumevalley.com",
-    "icon": "/images/openclaw-icons/lumevalley.svg"
+    "website": "https://www.lumevalley.com"
   },
   {
     "id": 241,
@@ -1856,8 +1671,7 @@
     "releaseTime": "2026.05",
     "deployment": "云端SaaS，垂直招聘场景",
     "features": "专业招聘龙虾，针对中国主流招聘网站深度适配；开箱即用、绝对安全；替代通用OpenClaw在招聘场景的专业化方案；支持简历筛选、候选人沟通、面试安排等招聘全流程自动化",
-    "website": "https://www.sjyl.com",
-    "icon": "/images/openclaw-icons/shijiyunlie.svg"
+    "website": "https://www.sjyl.com"
   },
   {
     "id": 242,
@@ -1866,8 +1680,7 @@
     "releaseTime": "2026.04.02",
     "deployment": "企业级云端托管平台，支持专有云私有化部署，最快10分钟上线",
     "features": "国内首个基于百万级用户验证的一站式企业AI智能体管控平台；统一部署OpenClaw模板、下发模型资源配额并监测；搭载Ai2云服务器实例算力成本降低40%；百元起步按需扩容支持最低1个席位开通；支持微信/企业微信/飞书/QQ/钉钉全渠道接入；首发专有云版实现运维+办公双场景联动；原生支持OpenClaw、Hermes等多类型Agent框架；前期内测200+企业客户接入",
-    "website": "https://cloud.tencent.com/product/clawpro",
-    "icon": "/images/openclaw-icons/clawpro.svg"
+    "website": "https://cloud.tencent.com/product/clawpro"
   },
   {
     "id": 243,
@@ -1876,8 +1689,7 @@
     "releaseTime": "2026.05.29",
     "deployment": "主控端AI大脑+被控端零负担分层架构，被控设备无需安装AI环境，支持Windows/Linux/macOS/鸿蒙HarmonyOS",
     "features": "面向远程运维场景的AI Agent产品；差异化架构主控端集中智能被控端零负担；搭配向日葵控控实现硬件级远控可连接老旧工控机等任意终端；三维安全模型(IAM身份与访问管理+FGAC最小权限原则+SIEM安全信息与事件管理)；内置150万+企业客户服务经验沉淀的标准化Skill技能包；自然语言批量操作替代逐台手动运维；等保三级及ISO27001认证",
-    "website": "https://www.oray.com/",
-    "icon": "/images/openclaw-icons/orayclaw.svg"
+    "website": "https://www.oray.com/"
   },
   {
     "id": 244,
@@ -1886,8 +1698,7 @@
     "releaseTime": "2026.05.13",
     "deployment": "桌面客户端（Windows/macOS/Linux），Rust+Tauri架构，开源项目（GPL-3.0）",
     "features": "开源个人AI超级智能助手，核心定位Private/Simple/Powerful；Memory Tree持久记忆系统，每20分钟自动同步118+第三方服务数据（Gmail/Notion/GitHub/Slack等）；TokenJuice智能压缩技术降低80% Token消耗；本地SQLite存储+Obsidian兼容知识库；支持200+模型路由与Ollama本地模型；桌面吉祥物Mascot可视化交互；Google Meet会议集成；GitHub 10.8K+ Stars，Product Hunt #1",
-    "website": "https://github.com/tinyhumansai/openhuman",
-    "icon": "/images/openclaw-icons/openhuman.svg"
+    "website": "https://github.com/tinyhumansai/openhuman"
   },
   {
     "id": 245,
@@ -1896,8 +1707,7 @@
     "releaseTime": "2026.05",
     "deployment": "本地部署，下载即用，无需云服务器和API Key配置",
     "features": "基于开源OpenClaw打造的本地AI智能体助手；内置60000+技能库开箱即用；所有数据本地处理不上传云端保障隐私安全；手机发消息即可远程操控电脑执行任务；5分钟完成部署零门槛；1000万Token成本仅二十几元；真正实现AI从'只聊天'到'真动手干活'的跨越；适合个人办公自动化、文件整理、远程电脑操控场景",
-    "website": "https://mp.weixin.qq.com/s?biz=MzIwNDAyOTQxMQ==",
-    "icon": "/images/openclaw-icons/kunyun.svg"
+    "website": "https://mp.weixin.qq.com/s?biz=MzIwNDAyOTQxMQ=="
   },
   {
     "id": 246,
@@ -1906,8 +1716,7 @@
     "releaseTime": "2026.05.29",
     "deployment": "云端SaaS+端侧设备协同，搭载mySigen App 4.0（6月上线）",
     "features": "行业首个全域AI智能体，定位新能源场景'使命必达'；完整感知-思考-行动-迭代闭环；理解模糊意图（省钱/多用绿电/保障用电）并综合天气电价电网负荷推理最优策略；直接指挥光伏/储能/充电桩协同工作；四大垂直智能体：私人能源管家/电站运维医生/电力交易操盘手/企业经营助手；20万座电站构成神经末梢网络；四条安全准则：用户主权/数据合规/离线安全/运行透明",
-    "website": "https://www.sigennewenergy.com/",
-    "icon": "/images/openclaw-icons/sigenagent.svg"
+    "website": "https://www.sigennewenergy.com/"
   },
   {
     "id": 247,
@@ -1916,8 +1725,7 @@
     "releaseTime": "2026.05.13",
     "deployment": "开源框架（MIT协议），可集成到OpenClaw/Hermes等Agent框架",
     "features": "腾讯云以MIT协议开源的Agent分层记忆引擎；四层记忆架构：L0原始对话存档/L1原子记忆提取（事件/偏好/任务）/L2场景归纳（用户行为完整画面）/L3用户画像长期积累；接入OpenClaw后最高节省61.38% Token消耗，任务通过率相对提升51.52%；解决Agent'失忆症'痛点，让Agent从玩具变成工具；企业级落地成本减半成功率翻倍的分水岭能力",
-    "website": "https://github.com/TencentDB/agent-memory",
-    "icon": "/images/openclaw-icons/tencentdbmemory.svg"
+    "website": "https://github.com/TencentDB/agent-memory"
   },
   {
     "id": 248,
@@ -1926,8 +1734,7 @@
     "releaseTime": "2026.05.28",
     "deployment": "云端SaaS平台，全场景创意智能体工作室，邀测阶段",
     "features": "全场景创意智能体工作室，支持图片/视频/UI/UX/3D等多模态创意生成；可通过自然语言生成品牌视觉全案；提供自由画布创作环境、记忆能力保持上下文连贯、局部编辑精准修改、Skills定制扩展能力；面向设计师和创意工作者的AI Native创意平台；降低多模态内容生产门槛，提升创意工作效率",
-    "website": "https://miora.tencent.com/",
-    "icon": "/images/openclaw-icons/miora.svg"
+    "website": "https://miora.tencent.com/"
   },
   {
     "id": 249,
@@ -1936,8 +1743,7 @@
     "releaseTime": "2026.05.29",
     "deployment": "开源命令行工具（GitHub），npm安装，支持AI Agent一键接入",
     "features": "阿里云百炼核心能力全面CLI化并开源；一行命令让Agent调用150+款主流模型（Qwen/GLM/Kimi/DeepSeek/Wan等）；原生支持Claude Code/Qoder/Qwen Code/OpenClaw/Hermes Agent等主流Agent框架；覆盖多模态模型调用/应用Workflow编排/知识库检索/记忆管理/联网搜索/本地文件处理10+项能力；收录20+专家Skills模块和Showcase案例；将AI Agent开发从'调API'全面转向'写脚本调命令'",
-    "website": "https://github.com/modelstudioai/cli",
-    "icon": "/images/openclaw-icons/bailiancli.svg"
+    "website": "https://github.com/modelstudioai/cli"
   },
   {
     "id": 250,
@@ -1946,8 +1752,7 @@
     "releaseTime": "2026.Q1-Q2",
     "deployment": "本地开源Agent框架，以守护进程(daemon)方式运行",
     "features": "2026年Q1-Q2评测中被评为最佳OpenClaw替代方案；唯一具备'观察-评分-决策-触达'闭环的本地Agent；通过观察用户行为自动学习改进；支持SMS/Telegram/HTTP多通道主动推送；真正本地执行无数据外泄；自改进式Proactive Agent，能像真人助手一样主动发现需求并联系用户",
-    "website": "https://blog.buildbetter.ai",
-    "icon": "/images/openclaw-icons/openagi.svg"
+    "website": "https://blog.buildbetter.ai"
   },
   {
     "id": 251,
@@ -1956,8 +1761,7 @@
     "releaseTime": "2026.03",
     "deployment": "云端极速部署版，一键安装，适配QQ/微信生态",
     "features": "腾讯基于OpenClaw打造的云端AI智能体；一键安装零门槛上手；深度适配QQ和微信生态；面向消费级用户的轻量Claw产品；腾讯系IM平台原生集成",
-    "website": "https://guanjia.qq.com",
-    "icon": "/images/openclaw-icons/adpclaw.svg"
+    "website": "https://guanjia.qq.com"
   },
   {
     "id": 252,
@@ -1966,8 +1770,7 @@
     "releaseTime": "2026.03",
     "deployment": "移动端原生Claw，深度适配HyperOS与米家生态",
     "features": "小米出品的移动端原生OpenClaw产品；深度集成小米HyperOS操作系统；支持米家智能家居设备控制；手机端Agent体验优化；小米生态链设备联动能力",
-    "website": "https://mi.com",
-    "icon": "/images/openclaw-icons/miclaw2.svg"
+    "website": "https://mi.com"
   },
   {
     "id": 253,
@@ -1976,8 +1779,7 @@
     "releaseTime": "2026.05",
     "deployment": "网页端AI对话式创作，申请制首测",
     "features": "腾讯游戏推出的AI游戏创作平台；通过自然语言输入创意即可生成可运行的2D/3D游戏原型；内置全链路AIGC工具链与20000+云端精品资产库；支持可视化参数面板拖拽调参；覆盖横版闯关、赛车、开放世界、RPG、卡牌等多品类游戏；支持导出Unity等主流引擎格式；2026年5月SPARK 2026腾讯游戏发布会首次亮相，近期开启官方首测",
-    "website": "https://mp.weixin.qq.com/s/csZYzDmJVO__9UsuU_v3nA",
-    "icon": "/images/openclaw-icons/craft.svg"
+    "website": "https://mp.weixin.qq.com/s/csZYzDmJVO__9UsuU_v3nA"
   },
   {
     "id": 254,
@@ -1986,8 +1788,7 @@
     "releaseTime": "2026.05",
     "deployment": "开源框架，GitHub开源，约1000行代码",
     "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；采用Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent",
-    "website": "https://github.com/microsoft/Webwright",
-    "icon": "/images/openclaw-icons/webwright.svg"
+    "website": "https://github.com/microsoft/Webwright"
   },
   {
     "id": 255,
@@ -1996,8 +1797,7 @@
     "releaseTime": "2026.05.29",
     "deployment": "企业级私有化部署，信创专属云",
     "features": "中国电子云5月29日在天津新产品发布会上发布的产业级超级智能体；定位\"企业AI总指挥\"，具备四层记忆体系；面向行业深度应用；发布\"专属AI云\"产品战略，实现从信创专属云向AI时代全栈智能服务的根本性跨越",
-    "website": "https://www.cecloud.cn/",
-    "icon": "/images/openclaw-icons/cecloud.svg"
+    "website": "https://www.cecloud.cn/"
   },
   {
     "id": 256,
@@ -2006,8 +1806,7 @@
     "releaseTime": "2026.02",
     "deployment": "开源项目（MIT协议），支持macOS/Linux/WSL2，Node.js v18+，CLI+TUI仪表盘+TinyOffice Web门户",
     "features": "轻量级多智能体协同框架，OpenClaw生态核心产品之一；原生协同调度机制（链式执行/扇出分发），Agent间自动交接任务无需人工干预；多通道持久化交互（Discord/WhatsApp/Telegram），跨平台无缝共享对话上下文；基于SQLite原子事务队列的消息传递，内置自动重试与死信管理；主动心跳机制实现7×24小时自主运行；实时TUI仪表盘与TinyOffice Web后台可视化监控；配对码白名单访问控制保障安全；每个智能体拥有独立工作目录与配置文件，完全隔离运行",
-    "website": "https://github.com/TinyAGI/tinyclaw",
-    "icon": "/images/openclaw-icons/tinyclaw.svg"
+    "website": "https://github.com/TinyAGI/tinyclaw"
   },
   {
     "id": 257,
@@ -2016,8 +1815,7 @@
     "releaseTime": "2024.04",
     "deployment": "开源项目（GPL-3.0），支持Docker私有化部署和云端SaaS",
     "features": "开源企业级智能体平台，GitHub 20K+ Stars；RAG→Workflow→Agent渐进式能力升级路径；内置工作流引擎支持函数库和MCP工具调用；零编码快速嵌入企业微信/钉钉/飞书等第三方系统；模型中立支持30+大模型无缝对接；支持10+文档格式自动拆分与向量化；已服务1000+企业覆盖30+行业",
-    "website": "https://maxkb.cn/",
-    "icon": "/images/openclaw-icons/maxkb.svg"
+    "website": "https://maxkb.cn/"
   },
   {
     "id": 258,
@@ -2026,8 +1824,7 @@
     "releaseTime": "2025.06",
     "deployment": "云端SaaS平台，Web端使用，支持国际版(flowith.io)和中国大陆版(flo.ing)",
     "features": "画布式AI创作Agent平台，首创节点式交互方式；Agent Neo支持无限步骤持续执行，GAIA测试超越Manus和OpenAI Deep Research；知识花园功能自动构建知识网络；多线程画布界面支持多模型并行交互；支持GPT-5/Claude 4.5/Gemini 3等顶级模型；工作流可视化编排；专家智能体市场支持社区分享与交易",
-    "website": "https://flowith.io/",
-    "icon": "/images/openclaw-icons/flowith.svg"
+    "website": "https://flowith.io/"
   },
   {
     "id": 259,
@@ -2036,8 +1833,7 @@
     "releaseTime": "2026.04",
     "deployment": "企业级私有化部署，支持K8s容器化部署（Pod per Employee架构）和brew单机快速体验",
     "features": "面向企业级智能体部署场景的安全管理平台；四层纵深防御体系（API网关DLP+LLM智能路由+Skill安全市场+安全策略引擎）；统一管理控制台支持实例全生命周期管理（30秒一键部署）、RBAC权限配置、Token成本管控与超额限流、180天全量行为审计；智能评测体系实现变更自动回归测试保障上线质量；已服务8000人制造集团等标杆客户；适用于金融、制造等高安全合规行业",
-    "website": "https://www.qingteng.cn/workclaw.html",
-    "icon": "/images/openclaw-icons/qingteng.svg"
+    "website": "https://www.qingteng.cn/workclaw.html"
   },
   {
     "id": 260,
@@ -2046,8 +1842,7 @@
     "releaseTime": "2026.03",
     "deployment": "源码/Docker/桌面版（Windows/macOS/Linux），支持pip一键安装",
     "features": "阿里云通义实验室推出的OpenClaw平替；Apache 2.0开源协议；四层记忆系统（对话/每日/长期/用户档案）跨会话持久化；多引擎支持（欧拉/玛拉/llama.cpp等本地推理引擎，可离线使用国产大模型）；多渠道接入（钉钉/飞书/QQ/企业微信）；AES-256加密存储+多角色分级权限；支持龙芯/鲲鹏等国产芯片；内存占用约45MB",
-    "website": "https://github.com/agentscope-ai/QwenPaw",
-    "icon": "/images/openclaw-icons/copaw2.svg"
+    "website": "https://github.com/agentscope-ai/QwenPaw"
   },
   {
     "id": 261,
@@ -2056,8 +1851,7 @@
     "releaseTime": "2026.02",
     "deployment": "源码编译/Docker，MIT开源协议",
     "features": "国内首款MIT开源本土化OpenClaw智能体；全本地存储无云端外溢；安全沙箱机制隔离高风险操作；双引擎驱动（交互引擎+安全引擎）；深度适配中文指令支持口语化表达；远程操控电脑适合居家办公/远程运维；支持DeepSeek/MiniMax等8+国产大模型；内存占用约40MB",
-    "website": "https://github.com/netease-youdao/LobsterAI",
-    "icon": "/images/openclaw-icons/lobsterai.svg"
+    "website": "https://github.com/netease-youdao/LobsterAI"
   },
   {
     "id": 262,
@@ -2066,8 +1860,7 @@
     "releaseTime": "2026.05",
     "deployment": "桌面端一键部署工具，支持Windows 11/macOS/Linux",
     "features": "一键部署OpenClaw到多平台，3分钟完成配置；自动检测并安装所有依赖环境无需手动配置Node.js/npm；支持Claude/GPT/Gemini等主流AI模型一键切换；支持Telegram/飞书/钉钉/Discord等多渠道对接；内置可视化管理面板（实例启停/模型切换/日志查看）；通过星狐云路由API调用节省约20%-40%费用",
-    "website": "https://xinghuclaw.com/",
-    "icon": "/images/openclaw-icons/星.svg"
+    "website": "https://xinghuclaw.com/"
   },
   {
     "id": 263,
@@ -2076,8 +1869,7 @@
     "releaseTime": "2026.04.09",
     "deployment": "企业级本地化部署，基于郑州空港智算中心，全栈国产化适配",
     "features": "企业级全栈国产化AI Agent方案；以自强鲲鹏服务器为物理底座深度融合OpenClaw与沙箱技术；基于郑州空港智算中心提供算力支撑；完成DeepSeek-V4深度适配与协同优化；入选工信部先进计算赋能新质生产力典型应用案例；亮相北京科博会首展龙虾一体机获央视报道；面向政府和企业用户的智能算力系统解决方案",
-    "website": "https://tecorigin.com",
-    "icon": "/images/openclaw-icons/t.svg"
+    "website": "https://tecorigin.com"
   },
   {
     "id": 264,
@@ -2086,7 +1878,6 @@
     "releaseTime": "2026.03",
     "deployment": "云端一键部署，飞书内直接使用，零配置零安装",
     "features": "飞书官方OpenClaw部署方案；2分钟在飞书内完成养虾，全网最简单的零门槛方案；预装飞书官方插件与搜索/图片生成等热门技能；AI能以用户身份在飞书内完成工作（总结消息/撰写文档/生成多维表格）；获取飞书内海量工作上下文使指令执行更精准；新用户首日可领400万免费Token，每日150万Token；7×24小时稳定在线，平台专业安全保障",
-    "website": "https://openclaw.feishu.cn/",
-    "icon": "/images/openclaw-icons/飞.svg"
+    "website": "https://openclaw.feishu.cn/"
   }
 ]

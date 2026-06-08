@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://tools321.com/img/ocr/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/img/color-analyze/</loc>
@@ -809,8 +809,24 @@
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/webmaster/whois-query/</loc>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/webmaster/icp-query/</loc>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/webmaster/domain-check/</loc>
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/webmaster/ping-host/</loc>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/webmaster/dns-query/</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/quick-find/</loc>
@@ -838,7 +854,7 @@
   </url>
   <url>
     <loc>https://tools321.com/quick-find/express-query/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/quick-find/help-search/</loc>
@@ -846,7 +862,7 @@
   </url>
   <url>
     <loc>https://tools321.com/quick-find/ip-search/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/record/</loc>
@@ -1125,8 +1141,8 @@
     <lastmod>2026-03-25</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/dev/ip-black/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://tools321.com/webmaster/ip-black/</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/ip-convert/</loc>
@@ -1149,8 +1165,8 @@
     <lastmod>2026-05-25</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/dev/qr-generator/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://tools321.com/webmaster/qr-generator/</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/robots-txt-generator/</loc>
@@ -1161,12 +1177,12 @@
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/dev/url-batch-generator/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://tools321.com/webmaster/url-batch-generator/</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/dev/utm-generator/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://tools321.com/webmaster/utm-generator/</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/svg-convert/</loc>
