@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08",
+  "updatedAt": "2026-06-09",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -270,24 +270,7 @@
         ]
       }
     },
-    {
-      "name": "零一万物 (01.AI)",
-      "quota": "已收缩通用大模型业务，转向企业级多智能体方向（2026年1月发布「万智2.5企业多智能体」）；API服务状态不确定，建议注册后实际确认；如有免费额度需通过官方Discord或社区申请",
-      "cycle": "免费政策不确定（建议注册后确认）",
-      "url": "https://platform.lingyiwanwu.com",
-      "develop": {
-        "document_url": "https://platform.lingyiwanwu.com/docs",
-        "base_url": "https://api.lingyiwanwu.com/v1",
-        "models": [
-          "yi-lightning",
-          "yi-1.5-34b-chat",
-          "yi-1.5-9b-chat",
-          "yi-1.5-6b-chat",
-          "yi-medium",
-          "yi-spark"
-        ]
-      }
-    },
+
     {
       "name": "魔搭社区（ModelScope）",
       "quota": "每天 2000 次免费调用（支持 DeepSeek-R1、Qwen2.5-VL、Flux.1 等开源模型）",
@@ -888,22 +871,7 @@
         ]
       }
     },
-    {
-      "name": "SOPHNET",
-      "quota": "新用户注册赠送 1000万 Tokens；支持 DeepSeek R1 满血版、QwQ-32B、DeepSeek V3 等主流模型",
-      "cycle": "一次性注册赠送（用完为止）",
-      "url": "https://www.sophnet.com/",
-      "develop": {
-        "document_url": "https://www.sophnet.com",
-        "base_url": "https://api.sophnet.com/v1",
-        "models": [
-          "deepseek-r1",
-          "qwq-32b",
-          "deepseek-v3",
-          "deepseek-v4-flash"
-        ]
-      }
-    },
+
     {
       "name": "超算互联网 (SCNET)",
       "quota": "向全体用户免费发放单人最高 3000万 Tokens 额度（此前为100万，已大幅提升）；面向OpenClaw用户免费发放每人限时2周总计1000万Tokens额度；续购价格：0.1元/百万Tokens；支持 Qwen3-30B-A3B 等国产大模型",
@@ -1202,7 +1170,7 @@
     {
       "name": "小米 MiMo",
       "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
-      "cycle": "V2.5系列永久降价生效；100T创造者激励计划已过期（2026-05-28到期）；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
+      "cycle": "V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
         "document_url": "https://platform.xiaomimimo.com/docs",
@@ -1214,25 +1182,7 @@
         ]
       }
     },
-    {
-      "name": "Featherless AI",
-      "quota": "开源模型免费托管平台，提供少量免费测试请求（不限制Token，按GPU时间计量）；支持DeepSeek R1/V4、Qwen3 Coder、Kimi K2、GLM-5、Llama 4等开源模型；大规模使用需按量付费；免费层适合模型选型和轻量测试",
-      "cycle": "免费测试层永久可用（按量付费，无大规模免费层；政策以官方公告为准）",
-      "url": "https://featherless.ai",
-      "develop": {
-        "document_url": "https://featherless.ai/account/api-keys",
-        "base_url": "https://api.featherless.ai/v1",
-        "models": [
-          "deepseek-ai/DeepSeek-R1-0528",
-          "deepseek-ai/DeepSeek-V3-0324",
-          "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-          "moonshotai/Kimi-K2-Instruct",
-          "openai/gpt-oss-120b",
-          "zai-org/GLM-5",
-          "meta-llama/Llama-4-Scout-17B-16E-Instruct"
-        ]
-      }
-    },
+
     {
       "name": "商汤日日新 (SenseNova)",
       "quota": "Token Plan 限时免费公测：SenseNova 6.7 Flash-Lite 每5小时1500次调用（原生多模态架构，可直接理解网页/文档/图表，信息搜索场景Token消耗较纯文本智能体降60%）；SenseNova U1 Fast 每5小时1500次调用（信息图/Infographics生成）；DeepSeek V4 Flash 每5小时500次调用（256K超长上下文，工具调用）；SenseNova-Skills已在GitHub开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式；最多可创建20个API Key分别管理不同项目；⚠️ 公测首月免费，后续将推出 Lite/Pro 付费档位",
@@ -1358,54 +1308,9 @@
         ]
       }
     },
-    {
-      "name": "心流平台（iFlow）",
-      "quota": "当前服务完全免费，无Token次数限制（仅1并发限制，一次只能发起1个请求）；支持DeepSeek-R1/V3、Kimi-K2、Qwen3-Coder等主流模型；OpenAI兼容API格式；平台背景为阿里云支持的企业级服务",
-      "cycle": "永久免费（仅1并发限制，政策以官方公告为准）",
-      "url": "https://platform.iflow.cn",
-      "develop": {
-        "document_url": "https://docs.iflow.cn",
-        "base_url": "https://apis.iflow.cn/v1",
-        "models": [
-          "deepseek-r1",
-          "deepseek-v3",
-          "kimi-k2",
-          "qwen3-coder",
-          "qwen3-32b"
-        ]
-      }
-    },
-    {
-      "name": "Kluster AI",
-      "quota": "新用户注册验证邮箱后赠送$5免费积分；仅支持Batch API异步批处理（不支持实时对话）；支持Llama 3.1 405B Instruct、DeepSeek-R1、Qwen 2.5 72B等大模型；使用JSONL格式提交批处理任务，结果异步返回；适合大规模数据标注、批量文本分类、数据集增强等场景",
-      "cycle": "$5一次性注册积分（用完为止；Batch API模式，按公平使用原则）",
-      "url": "https://kluster.ai",
-      "develop": {
-        "document_url": "https://kluster.ai",
-        "base_url": "https://api.kluster.ai/v1",
-        "models": [
-          "meta-llama/Llama-3.1-405B-Instruct",
-          "deepseek-ai/DeepSeek-R1",
-          "Qwen/Qwen2.5-72B-Instruct"
-        ]
-      }
-    },
-    {
-      "name": "Lepton AI（NVIDIA DGX Cloud）",
-      "quota": "新用户注册即赠送$5免费积分（无需信用卡，GitHub登录即可）；支持Llama 3.1 70B、Mistral 7B、SDXL图像生成、WhisperX语音识别等；OpenAI兼容API格式；已并入NVIDIA DGX Cloud生态，可申请获取更高计算额度",
-      "cycle": "$5一次性注册积分（用完为止；NVIDIA收购后免费政策以官方公告为准）",
-      "url": "https://www.lepton.ai",
-      "develop": {
-        "document_url": "https://www.lepton.ai/docs",
-        "base_url": "https://api.lepton.ai/v1",
-        "models": [
-          "llama3-1-70b",
-          "mistral-7b",
-          "sdxl",
-          "whisperx"
-        ]
-      }
-    },
+
+
+
     {
       "name": "阶跃星辰 (StepFun)",
       "quota": "Step 3.5 Flash模型完全免费（无累计用量限制，196B MoE总参数/11B激活，256K上下文，专为Agent场景设计，支持function calling/工具调用）；注册即赠送免费额度可用于Step系列全系模型（Step 3.5 Flash、Step 3、Step 2、Step 1、Step 1o系列视觉模型、StepAudio语音模型等）；V0免费层：5 RPM/10 QPM/500万TPM；OpenRouter上Step 3.5 Flash也标注为:free可免费调用；2026年2月发布Step 3.5 Flash开源模型，CNCF项目成员，支持昇腾/沐曦/壁仞/燧原等国产芯片适配",
@@ -1425,26 +1330,7 @@
         ]
       }
     },
-    {
-      "name": "Free.ai",
-      "quota": "30,000 tokens/天免费（注册后3倍额度）；400+ 免费AI工具（聊天、图像生成、视频生成、TTS、STT、音乐、写作、代码、设计、翻译等18类）；346+ 模型（含38+自托管开源模型：Qwen 2.5 7B-72B、FLUX图像、CogVideoX视频、Kokoro TTS 174声音、Whisper STT、DeepSeek R1 7B等，运行于A100 GPU）；OpenAI兼容REST API；无需信用卡；支持商用；数据不用于训练；100+语言支持；2026年3月上线",
-      "cycle": "每日重置（永久免费层；匿名用户20条聊天/5张图/天，注册用户3倍）",
-      "url": "https://free.ai",
-      "develop": {
-        "document_url": "https://free.ai/api/",
-        "base_url": "https://api.free.ai/v1",
-        "models": [
-          "qwen7b",
-          "qwen72b",
-          "deepseek-r1-7b",
-          "mistral-7b",
-          "flux-schnell",
-          "cogvideox",
-          "kokoro-tts",
-          "whisper-large"
-        ]
-      }
-    },
+
     {
       "name": "阿里云百炼国际版 (Alibaba Cloud Model Studio)",
       "quota": "新用户首次开通即赠每模型 100万 tokens 免费额度（新加坡区域International Edition）；覆盖 Qwen 全系列文本/代码/视觉/推理模型（qwen-plus、qwen-flash、qwen3-vl-plus、qvq-max、qwen3-coder-plus等）；另赠 100张AI生图 + 50秒视频生成 + TTS字符额度；无需信用卡；OpenAI兼容API（DashScope API Key）；⚠️ 必须在新加坡区域激活才享免费额度，北京/弗吉尼亚区域无免费额度",
@@ -1465,19 +1351,7 @@
         ]
       }
     },
-    {
-      "name": "Arli AI",
-      "quota": "Free Plan：无限Token、无限请求（1并发限制）；支持 Qwen-3.5-27B-Derestricted 模型免费使用；最大12K上下文tokens；每2天5次全模型试用（可体验所有付费模型）；延迟响应（高峰时段可能较慢）；Zero-log政策（不保存用户对话和生成内容）；OpenAI兼容API格式；支持图像生成（Stable Diffusion等，付费计划）；支持RP Chat前端兼容（SillyTavern、JanitorAI等）；支持Coding Agents（Roo Code、Kilo Code）",
-      "cycle": "永久免费（Free Plan无时间限制；1并发；试用每2天重置）",
-      "url": "https://www.arliai.com",
-      "develop": {
-        "document_url": "https://www.arliai.com/docs/textgen",
-        "base_url": "https://api.arliai.com/v1",
-        "models": [
-          "qwen-3.5-27b-derestricted"
-        ]
-      }
-    },
+
     {
       "name": "昆仑万维天工 (SkyWork)",
       "quota": "SkyClaw-v1.0及SkyClaw-v1.0-lite Agent模型限时免费试用（2026年5月26日发布）；SkyClaw-v1.0输入0.5元/百万Token、输出4元/百万Token；SkyClaw-v1.0-lite输入0.3元/百万Token、输出2元/百万Token；需通过APIFree平台（www.apifree.ai）注册获取密钥；百万token超长上下文；原生Agent训练（非通用大模型+工具壳）；深度适配OpenClaw、Hermes、Claude Code等主流Agent框架；OpenAI兼容API格式；免费期结束后将逐步开源各模型版本",
@@ -1492,55 +1366,9 @@
         ]
       }
     },
-    {
-      "name": "Glhf.chat",
-      "quota": "免费Serverless推理平台，30 RPM速率限制；支持Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct、QwQ-32B等开源模型；可加载任意HuggingFace仓库模型（通过粘贴链接自动加载）；最多8张Nvidia A100 80GB GPU；OpenAI兼容API格式；自定义自动扩缩容GPU调度器；Beta期间完全免费",
-      "cycle": "永久免费（Beta期间，30 RPM；Beta结束后将推出低价付费方案）",
-      "url": "https://glhf.chat",
-      "develop": {
-        "document_url": "https://glhf.chat",
-        "base_url": "https://glhf.chat/api/openai/v1",
-        "models": [
-          "hf:meta-llama/Llama-3.1-70B-Instruct",
-          "hf:mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "hf:microsoft/Phi-3-mini-4k-instruct",
-          "hf:Qwen/QwQ-32B-Preview",
-          "hf:meta-llama/Llama-3.3-70B-Instruct"
-        ]
-      }
-    },
-    {
-      "url": "https://console.nscale.com",
-      "quota": "新用户注册赠送（无需信用卡）；欧盟主权云提供商，数据中心位于挪威；号称无速率限制、无冷启动；支持Llama-3.3-70B-Instruct（128K上下文）、Qwen3-Coder-30B-A3B-Instruct（256K上下文）、DeepSeek-R1-Distill-Llama-70B（128K上下文）、gpt-oss-120b、Qwen3-32B等开源模型",
-      "name": "Nscale",
-      "develop": {
-        "base_url": "https://inference.api.nscale.com/v1",
-        "document_url": "https://docs.nscale.com",
-        "models": [
-          "Llama-3.3-70B-Instruct",
-          "Qwen3-Coder-30B-A3B-Instruct",
-          "DeepSeek-R1-Distill-Llama-70B",
-          "gpt-oss-120b",
-          "Qwen3-32B"
-        ]
-      },
-      "cycle": "一次性注册积分（用完为止）"
-    },
-    {
-      "url": "https://www.aionlabs.ai",
-      "quota": "每日免费Token额度（无需信用卡）；专注角色扮演和故事叙述场景；支持aion-2.0（131K上下文，~32K输出）、aion-1.0、aion-1.0-mini等模型；OpenAI兼容API",
-      "name": "Aion Labs",
-      "develop": {
-        "base_url": "https://api.aionlabs.ai/v1",
-        "document_url": "https://docs.aionlabs.ai",
-        "models": [
-          "aion-2.0",
-          "aion-1.0",
-          "aion-1.0-mini"
-        ]
-      },
-      "cycle": "每日重置（永久免费层）"
-    },
+
+
+
     {
       "name": "OpenRouter",
       "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；50+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill、Mistral Small 3.1、MiniMax M2.5、Nemotron 3、GPT-OSS 120B、Cogito v1 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",

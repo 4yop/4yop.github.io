@@ -1879,5 +1879,50 @@
     "deployment": "云端一键部署，飞书内直接使用，零配置零安装",
     "features": "飞书官方OpenClaw部署方案；2分钟在飞书内完成养虾，全网最简单的零门槛方案；预装飞书官方插件与搜索/图片生成等热门技能；AI能以用户身份在飞书内完成工作（总结消息/撰写文档/生成多维表格）；获取飞书内海量工作上下文使指令执行更精准；新用户首日可领400万免费Token，每日150万Token；7×24小时稳定在线，平台专业安全保障",
     "website": "https://openclaw.feishu.cn/"
+  },
+  {
+    "id": 265,
+    "name": "LikeClaw",
+    "developer": "LikeClaw团队",
+    "releaseTime": "2026.01",
+    "deployment": "云端托管SaaS平台，浏览器访问即用，无需安装",
+    "features": "OpenClaw closest feature match的托管替代平台；E2B沙箱容器隔离执行保障安全；内置Skills市场与100+模型支持（无需管理API Key）；后台任务调度与定时执行能力；按需付费credits模式（注册送20000 credits）；30秒即可运行任务，对比OpenClaw的1-3天部署时间；适合开发者、power users和团队安全使用Agent场景",
+    "website": "https://likeclaw.ai"
+  },
+  {
+    "id": 266,
+    "name": "Open WebUI",
+    "developer": "Open WebUI社区",
+    "releaseTime": "2024.06",
+    "deployment": "开源项目（MIT协议），Docker容器化部署，支持本地私有化部署",
+    "features": "自托管大语言模型Web聊天界面；单Docker容器部署简洁高效；完全私有化数据留在用户服务器；支持RAG检索增强生成与文档上传；多用户访问支持；兼容OpenAI/Ollama等多种API端点；免费开源项目；适合隐私敏感用户需要ChatGPT类界面场景，但无Agent代码执行能力",
+    "website": "https://github.com/open-webui/open-webui"
+  },
+  {
+    "id": 267,
+    "name": "AutoGPT / AgentGPT",
+    "developer": "Significant Gravitas/AutoGPT团队",
+    "releaseTime": "2023.04",
+    "deployment": "开源项目（GPL-3.0），Python环境部署，支持Docker",
+    "features": "全球首个知名开源自主Agent框架；给定目标自动拆解子任务并迭代执行；AgentGPT为Web浏览器版本无需终端；完整源码控制可深度定制；活跃的开源社区持续迭代；Python技术栈便于开发者修改；但存在复杂设置、无沙箱安全、多步任务可靠性问题、高API Token消耗等局限；适合想学习Agent内部原理的开发者",
+    "website": "https://github.com/Significant-Gravitas/AutoGPT"
+  },
+  {
+    "id": 268,
+    "name": "Adopt AI",
+    "developer": "Adopt AI团队",
+    "releaseTime": "2026.02",
+    "deployment": "企业级SaaS平台 + 私有化部署选项",
+    "features": "面向企业的AI Agent自动化平台；比OpenClaw更强的安全控制、更好支持、更低风险；15种开源和企业级OpenClaw替代方案之一；提供Nanobot、ZeroClaw、PicoClaw、Moltis等多种Agent运行时选择；企业级合规治理与专门支持；适合需要生产级稳定性和安全性的组织；解决OpenClaw在企业场景的安全、稳定和支持痛点",
+    "website": "https://www.adopt.ai"
+  },
+  {
+    "id": 269,
+    "name": "Webwright",
+    "developer": "微软研究院（Microsoft Research）",
+    "releaseTime": "2026.05",
+    "deployment": "开源框架（MIT协议），GitHub开源，约1000行代码",
+    "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent；微软研究院出品质量保证",
+    "website": "https://github.com/microsoft/Webwright"
   }
 ]
