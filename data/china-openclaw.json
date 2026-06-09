@@ -1924,5 +1924,68 @@
     "deployment": "开源框架（MIT协议），GitHub开源，约1000行代码",
     "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent；微软研究院出品质量保证",
     "website": "https://github.com/microsoft/Webwright"
+  },
+  {
+    "id": 270,
+    "name": "DeepAgent",
+    "developer": "深兰科技",
+    "releaseTime": "2026.06.04",
+    "deployment": "企业级一站式平台，支持SaaS/专有云/私有化部署三种模式",
+    "features": "一站式企业智能体开发平台，依托'看、听、算、动'全链路自研底层技术基座；三层立体架构：感知层（CV技术全域画面无侵入式信息抓取）、交互层（ACL自然语言98%语音转写准确率）、决策层（1+N分层模型体系+SuperAgent多智能体调度）、执行层（原生RPA引擎99.9%执行准确率）；独创全自动化测评体系，较人工测评周期缩短80%；已在能源合同风控、政务政策咨询、医疗智能问诊等场景完成商业化验证；综合运营成本最高可下降95%；中国移动战略合作，移动云手机搭载DeepAgent系统",
+    "website": "https://www.deepblueai.com/"
+  },
+  {
+    "id": 271,
+    "name": "MiniCPM5-1B",
+    "developer": "面壁智能（OpenBMB/清华大学THUNLP）",
+    "releaseTime": "2026.05.26",
+    "deployment": "开源模型（Apache 2.0），INT4量化后仅0.5GB，可直接运行在手机端",
+    "features": "端侧AI Agent专用模型，仅10亿参数但全面碾压所有20亿参数以下对手；INT4量化后模型文件仅0.5GB，支持手机端本地化运行；离线可用且隐私零泄露；让AI Agent从云端走向端侧，降低部署成本和数据隐私风险；与面壁智能PilotDeck智能体操作系统形成'模型+框架'互补生态",
+    "website": "https://github.com/OpenBMB/MiniCPM"
+  },
+  {
+    "id": 272,
+    "name": "SLIM（Skill Lifecycle Management）",
+    "developer": "香港中文大学（CUHK）",
+    "releaseTime": "2026.06",
+    "deployment": "开源框架，可集成到现有Agent系统",
+    "features": "Agent技能生命周期管理框架，解决技能库臃肿导致检索效率下降和推理链变长问题；Leave-One-Skill-Out审计机制自动评估技能真实价值；动态管理技能的保留、退休或扩展；平均领先现有最佳方法7.1个百分点；ALFWorld家庭环境任务成功率87.5%（远超SkillRL的75%）；让Agent从工具调用器进化为能够自主管理能力体系的智能体",
+    "website": "https://github.com/cuhk-mlagent/slim"
+  },
+  {
+    "id": 273,
+    "name": "GodeX",
+    "developer": "开源社区",
+    "releaseTime": "2026.06",
+    "deployment": "开源网关项目，支持Docker部署",
+    "features": "开源大模型协议统一网关，打破不同厂商API协议壁垒；开发者只需对接一次协议即可接入OpenAI/Anthropic/智谱/MiniMax等多模型生态；v1.1.0升级支持图片理解、视频理解、推理链标准化输出、联网搜索结构化还原；推荐默认模型切换至MiniMax M3；为Agent系统跨模型协同和统一编排提供基础设施支撑",
+    "website": "https://github.com/godex-ai/godex"
+  },
+  {
+    "id": 274,
+    "name": "TradingAgents",
+    "developer": "开源社区",
+    "releaseTime": "2026.05",
+    "deployment": "开源项目（MIT协议），一行命令即可运行，GitHub 71.4K+ Stars",
+    "features": "AI交易团队模拟平台，用多个Agent完整模拟华尔街投行投研交易流程；四大角色协作：分析师Agent（基本面/舆情/新闻/技术面四维度分析）、研究员Agent（多空双方辩论）、交易员Agent（制定买卖策略）、审批经理Agent（最终审核）；完全开源透明可审计；对传统金融信息服务商形成降维打击；一周暴涨11,000+星显示市场需求强烈",
+    "website": "https://github.com/tradingagents/tradingagents"
+  },
+  {
+    "id": 275,
+    "name": "NocoBase",
+    "developer": "NocoBase团队",
+    "releaseTime": "2026.04",
+    "deployment": "开源无代码AI开发平台（Apache 2.0），支持Docker私有化部署，GitHub 22K+ Stars",
+    "features": "开源无代码AI开发平台，AI员工嵌入业务系统核心差异化能力；AI员工可自动获取页面数据作为上下文理解业务场景并直接执行任务；Skills + MCP支持外部Agent参与系统构建；15+数据库集成+REST API+工作流引擎；字段级RBAC权限控制+审计日志+多租户；适合审批、数据录入、报告生成等企业内部工具场景；非技术友好可视化配置，业务人员可直接使用",
+    "website": "https://github.com/nocobase/nocobase"
+  },
+  {
+    "id": 276,
+    "name": "Coze 3.0（扣子3.0）",
+    "developer": "字节跳动",
+    "releaseTime": "2026.06.01",
+    "deployment": "云端SaaS平台升级版，Web端访问",
+    "features": "扣子Coze全新3.0版本重大升级；支持多人多Agent协作模式；新增金融、自媒体、医疗、法律、科研等行业技能包；一键加载与多端同步功能；Claude Code/Codex CLI/OpenClaw等主流Agent框架一键接入；强化企业级多Agent协同工作能力；从单兵作战向团队协作范式演进",
+    "website": "https://www.coze.cn/"
   }
 ]
