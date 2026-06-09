@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-09",
+  "updatedAt": "2026-06-10",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -256,8 +256,8 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash",
-      "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费",
+      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；DeepSeek-V3-Lite：永久免费不限量（200万上下文，支持思维链可视化，QPS限制20，编程能力最强免费API）；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash",
+      "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费；V3-Lite永久免费",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
@@ -265,12 +265,46 @@
         "models": [
           "deepseek-v4-pro",
           "deepseek-v4-flash",
+          "deepseek-v3-lite",
           "deepseek-chat",
           "deepseek-reasoner"
         ]
       }
     },
 
+    {
+      "name": "零一万物 (Yi)",
+      "quota": "Yi-34B-Chat-Free 永久免费（社区版API被永久捐赠给开发者生态，李开复团队出品，34B参数，性能对标GPT-3.5-Turbo）；每天1000次调用，每次最多16K token；中文理解极好，适合内容生成、客服对话、教育类应用；企业版收费，但社区版完全免费；支持OpenAI兼容格式",
+      "cycle": "每日重置（永久免费，1000次/天）",
+      "url": "https://platform.lingyiwanwu.com",
+      "develop": {
+        "document_url": "https://platform.lingyiwanwu.com/docs",
+        "base_url": "https://api.lingyiwanwu.com/v1",
+        "models": [
+          "yi-34b-chat-free",
+          "yi-34b-chat",
+          "yi-34b-chat-200k",
+          "yi-vl-plus"
+        ]
+      }
+    },
+    {
+      "name": "百川智能 (Baichuan)",
+      "quota": "Baichuan4-Air 永久免费（百川最新一代混合专家模型，推理速度极快，首包延迟通常低于300ms）；每天500次调用，支持30并发；内置函数调用能力，可直接操作数据库、发邮件、调其他API；适合Agent开发、自动化工作流、实时交互应用；2026年5月22日发布Baichuan 4（国内SuperCLUE评测第一）；支持多模态能力",
+      "cycle": "每日重置（永久免费，500次/天）",
+      "url": "https://platform.baichuan-ai.com",
+      "develop": {
+        "document_url": "https://platform.baichuan-ai.com/docs",
+        "base_url": "https://api.baichuan-ai.com/v1",
+        "models": [
+          "Baichuan4-Air",
+          "Baichuan4-Turbo",
+          "Baichuan4",
+          "Baichuan3-Turbo",
+          "Baichuan3-Turbo-128k"
+        ]
+      }
+    },
     {
       "name": "魔搭社区（ModelScope）",
       "quota": "每天 2000 次免费调用（支持 DeepSeek-R1、Qwen2.5-VL、Flux.1 等开源模型）",
