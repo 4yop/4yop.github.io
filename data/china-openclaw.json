@@ -1987,5 +1987,41 @@
     "deployment": "云端SaaS平台升级版，Web端访问",
     "features": "扣子Coze全新3.0版本重大升级；支持多人多Agent协作模式；新增金融、自媒体、医疗、法律、科研等行业技能包；一键加载与多端同步功能；Claude Code/Codex CLI/OpenClaw等主流Agent框架一键接入；强化企业级多Agent协同工作能力；从单兵作战向团队协作范式演进",
     "website": "https://www.coze.cn/"
+  },
+  {
+    "id": 277,
+    "name": "New API",
+    "developer": "QuantumNous开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "开源项目（GitHub），Docker Compose部署，支持MySQL/PostgreSQL/SQLite数据库",
+    "features": "AI统一网关平台，兼容OpenAI API格式；支持100+模型统一接入与智能路由；内置重试、熔断、密钥管理与计费统计功能；支持多模型负载均衡与故障自动切换；企业级稳定性，生产环境常用；可作为OpenClaw等Agent框架的网关层使用",
+    "website": "https://github.com/QuantumNous/new-api"
+  },
+  {
+    "id": 278,
+    "name": "Microsoft Agent Framework (MAF)",
+    "developer": "微软（Microsoft）",
+    "releaseTime": "2026.01",
+    "deployment": "开源框架（MIT协议），pip安装，支持Python生态和云原生部署",
+    "features": "微软新一代统一AI Agent框架；多模态支持（文本/图像/语音/视频）；企业级部署能力与Azure深度集成；跨平台支持Windows/Linux/macOS；提供完整的Agent开发工具链；支持MCP协议与插件扩展；适合需要与微软生态集成的企业用户",
+    "website": "https://github.com/microsoft/agent-framework"
+  },
+  {
+    "id": 279,
+    "name": "Eino",
+    "developer": "字节跳动（CloudWeGo团队）",
+    "releaseTime": "2025.01.16",
+    "deployment": "开源框架（CloudWeGo），Go语言编写，支持模块化引入",
+    "features": "字节跳动开源的大语言模型应用综合开发框架；基于Golang的高性能实现，代码可读易维护；组件化设计提供ChatModel、Tool、Retriever等核心组件；强大的流程编排能力支持有向图结构；覆盖devops全流程从开发到部署到监控；背靠字节跳动核心业务线实践经验（豆包、抖音、扣子等已接入）；提供开箱即用的配套工具与示例代码",
+    "website": "https://github.com/cloudwego/eino"
+  },
+  {
+    "id": 280,
+    "name": "360智语企业智能体",
+    "developer": "360集团",
+    "releaseTime": "2026.05",
+    "deployment": "企业级SaaS平台，支持私有化部署和端侧本地推理",
+    "features": "安全原生的国产化企业智能体平台；大模型+安全能力双轮驱动架构；支持私有化部署与端侧本地推理保障数据安全；内置幻觉检测与恶意内容拦截机制；政企数据不出域满足合规要求；多智能体协同能力与办公/业务系统深度集成；面向政府、国企、军工、金融等高安全行业场景",
+    "website": "https://www.360.cn/ai"
   }
 ]
