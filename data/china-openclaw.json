@@ -2023,5 +2023,50 @@
     "deployment": "企业级SaaS平台，支持私有化部署和端侧本地推理",
     "features": "安全原生的国产化企业智能体平台；大模型+安全能力双轮驱动架构；支持私有化部署与端侧本地推理保障数据安全；内置幻觉检测与恶意内容拦截机制；政企数据不出域满足合规要求；多智能体协同能力与办公/业务系统深度集成；面向政府、国企、军工、金融等高安全行业场景",
     "website": "https://www.360.cn/ai"
+  },
+  {
+    "id": 281,
+    "name": "Youtu-Agent",
+    "developer": "腾讯优图实验室（TencentCloudADP）",
+    "releaseTime": "2026.06.04",
+    "deployment": "开源项目（GitHub），YAML配置文件定义Agent，支持多种模型API和工具",
+    "features": "腾讯优图实验室开源的智能体框架，采用'开箱即用'理念；仅需两步（代码安装+YAML配置）即可部署功能完整的Agent；WebWalkerQA基准测试准确率71.47%（使用DeepSeek-V3.1）；GAIA文本子集评估Pass@1率72.8%；支持多模型API和工具集成，不依赖昂贵的闭源解决方案；'自动生成Agent'功能可通过Q&A交互创建配置好的Agent；适用于学术研究自动化（论文分析、文献综述）、数据处理与分析管道、信息合成与知识管理、文件组织与检索系统；深度集成腾讯云ADP智能体开发平台、TI平台模型服务、元器平台",
+    "website": "https://github.com/TencentCloudADP/Youtu-agent"
+  },
+  {
+    "id": 282,
+    "name": "Molili Claw（墨力龙虾）",
+    "developer": "杭州当贝网络",
+    "releaseTime": "2026.03",
+    "deployment": "桌面客户端一键安装（Windows/macOS），中文界面零门槛部署",
+    "features": "国内首个中文版OpenClaw，口号'暴力降门槛'；目标让完全不懂技术的用户也能使用AI Agent；全中文图形界面，无需命令行操作；预置常用技能包开箱即用；深度适配中文用户习惯和使用场景；降低AI Agent使用门槛，推动国产Agent普及",
+    "website": "https://easyclaw.cmcm.com"
+  },
+  {
+    "id": 283,
+    "name": "NemoClaw",
+    "developer": "NVIDIA（英伟达）",
+    "releaseTime": "2026.03",
+    "deployment": "企业级部署，基于NVIDIA GPU硬件优化，需NVIDIA TensorRT-LLM推理引擎",
+    "features": "NVIDIA在GTC 2026发布的硬件优化版OpenClaw；专为NVIDIA GPU设计的企业级Agent运行方案；采用TensorRT-LLM推理技术，响应速度较标准OpenClaw提升3-5倍；适合需要7×24小时运行的高性能Agent场景；基于Nemotron 3系列模型优化；为企业用户提供专用硬件加速的Agent能力",
+    "website": "https://www.nvidia.com/"
+  },
+  {
+    "id": 284,
+    "name": "Nanobot",
+    "developer": "开源社区",
+    "releaseTime": "2026.02",
+    "deployment": "Python环境部署，pip安装，轻量级设计",
+    "features": "Python极简版OpenClaw替代方案；代码简洁易读，适合学习和二次开发；核心功能完整保留（任务执行、记忆系统、工具调用）；低资源占用，适合个人开发者和中小型项目；活跃的开源社区持续维护更新；为Python开发者提供友好的Agent框架选择",
+    "website": "https://github.com/nanobot-ai/nanobot"
+  },
+  {
+    "id": 285,
+    "name": "三省六部制（edict）",
+    "developer": "cft0808（开源社区）",
+    "releaseTime": "2026.02",
+    "deployment": "Python环境部署，开源项目（MIT协议）",
+    "features": "多Agent编排框架，灵感来源于中国古代行政体系架构；支持多个Agent角色分工协作（类似三省六部的职能划分）；灵活的任务分配和协调机制；适合需要复杂多步骤任务拆解的场景；GitHub 9.7k+ Stars；独特的架构设计理念区别于主流Agent框架；为多Agent协作提供新的组织模式参考",
+    "website": "https://github.com/cft0808/edict"
   }
 ]
