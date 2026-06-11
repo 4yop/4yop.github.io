@@ -1074,55 +1074,6 @@
     "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时"
   },
   {
-    "id": "httpbin",
-    "name": "HTTPBin",
-    "description": "HTTP请求测试和调试工具",
-    "fullDescription": "RequestBin团队开发的HTTP测试服务，提供get/post/put/delete/patch等各种HTTP方法的测试端点。可以查看完整的请求头、请求体、响应头等信息。还提供状态码测试、延迟模拟、IP检测、UUID生成、Base64编解码等实用工具端点。是前端和后端开发者调试HTTP请求的神器。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://httpbin.org/get?param1=value1&param2=value2",
-    "baseUrl": "https://httpbin.org",
-    "params": [
-      {
-        "name": "endpoint",
-        "type": "string",
-        "required": true,
-        "description": "端点类型（URL路径部分）",
-        "example": "get|post|put|delete|patch|headers|ip|uuid"
-      },
-      {
-        "name": "custom_params",
-        "type": "string",
-        "required": false,
-        "description": "自定义查询参数",
-        "example": "key1=value1&key2=value2"
-      }
-    ],
-    "responseExample": {
-      "args": {
-        "param1": "value1",
-        "param2": "value2"
-      },
-      "headers": {
-        "Accept": "*/*",
-        "Host": "httpbin.org",
-        "User-Agent": "curl/7.88.1",
-        "X-Forwarded-For": "1.2.3.4"
-      },
-      "origin": "1.2.3.4",
-      "url": "https://httpbin.org/get?param1=value1&param2=value2"
-    },
-    "docUrl": "https://httpbin.org/",
-    "status": "active",
-    "tags": [
-      "HTTP测试",
-      "调试",
-      "请求分析",
-      "headers",
-      "工具"
-    ]
-  },
-  {
     "id": "postman-echo",
     "name": "Postman Echo",
     "description": "Postman请求回显服务，用于测试和调试",
@@ -1707,61 +1658,6 @@
     "note": "免费使用，session token可减少重复题目"
   },
   {
-    "id": "numbers-api",
-    "name": "Numbers API",
-    "description": "数字趣味知识",
-    "fullDescription": "提供关于数字的趣味事实和百科知识API，支持数学、日期、年份等类型，非常适合教育应用",
-    "category": "data",
-    "method": "GET",
-    "url": "http://numbersapi.com/42/math",
-    "baseUrl": "http://numbersapi.com",
-    "params": [],
-    "responseExample": "42 is the number of roads a person must travel down before you can call them a person.",
-    "docUrl": "http://numbersapi.com/",
-    "status": "unstable",
-    "tags": [
-      "数字",
-      "数学",
-      "趣味",
-      "教育"
-    ],
-    "note": "纯文本响应，非JSON"
-  },
-  {
-    "id": "nasa-apod",
-    "name": "NASA 每日天文图片",
-    "description": "NASA每日天文照片",
-    "fullDescription": "NASA提供的每日天文图片API（APOD），使用DEMO_KEY即可免费访问，包含高清天文图片和说明",
-    "category": "image",
-    "method": "GET",
-    "url": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
-    "baseUrl": "https://api.nasa.gov/planetary",
-    "params": [
-      {
-        "name": "api_key",
-        "type": "string",
-        "required": true,
-        "description": "使用DEMO_KEY即可",
-        "example": "DEMO_KEY"
-      }
-    ],
-    "responseExample": {
-      "title": "Moon and Venus",
-      "url": "https://apod.nasa.gov/apod/image/...",
-      "explanation": "..."
-    },
-    "docUrl": "https://api.nasa.gov/",
-    "status": "active",
-    "tags": [
-      "NASA",
-      "天文",
-      "图片",
-      "太空",
-      "科学"
-    ],
-    "note": "DEMO_KEY限速每小时30次，生产环境需申请免费API Key"
-  },
-  {
     "id": "open-notify-iss",
     "name": "Open Notify ISS",
     "description": "国际空间站实时位置",
@@ -1813,5 +1709,628 @@
       "Chuck Norris"
     ],
     "note": ""
+  },
+  {
+    "id": "fakerapi",
+    "name": "FakerAPI",
+    "description": "假数据生成器，支持自定义字段和数量",
+    "fullDescription": "强大的假数据生成API，可生成用户、商品、地址、公司等多种类型的模拟数据。支持自定义字段、指定数据数量、本地化（多语言），非常适合前端开发和原型设计使用。返回格式规范的JSON数据。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://fakerapi.it/api/v1/users?_quantity=3&_locale=zh_CN",
+    "baseUrl": "https://fakerapi.it",
+    "params": [
+      {
+        "name": "_quantity",
+        "type": "number",
+        "required": false,
+        "description": "生成数据条数",
+        "example": "5"
+      },
+      {
+        "name": "_locale",
+        "type": "string",
+        "required": false,
+        "description": "本地化语言",
+        "example": "zh_CN"
+      },
+      {
+        "name": "_seed",
+        "type": "number",
+        "required": false,
+        "description": "随机种子（固定种子返回固定数据）",
+        "example": "123"
+      }
+    ],
+    "responseExample": {
+      "status": "OK",
+      "code": 200,
+      "total": 3,
+      "data": [
+        {
+          "id": 1,
+          "firstname": "明",
+          "lastname": "华",
+          "email": "minghua@example.com"
+        }
+      ]
+    },
+    "docUrl": "https://fakerapi.it/",
+    "status": "active",
+    "tags": [
+      "假数据",
+      "模拟数据",
+      "用户生成",
+      "前端测试",
+      "本地化"
+    ]
+  },
+  {
+    "id": "pokeapi",
+    "name": "PokeAPI",
+    "description": "宝可梦图鉴数据API，获取精灵详细信息",
+    "fullDescription": "最全面的宝可梦(Pokémon)数据API，提供所有世代的精灵、招式、属性、进化链、技能等详细数据。无需认证，无速率限制，数据持续更新至最新游戏版本。适合制作宝可梦图鉴查询工具、对战计算器或粉丝网站。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://pokeapi.co/api/v2/pokemon/pikachu",
+    "baseUrl": "https://pokeapi.co/api/v2",
+    "params": [
+      {
+        "name": "name_or_id",
+        "type": "string",
+        "required": true,
+        "description": "宝可梦名称(英文)或ID数字",
+        "example": "pikachu / 25"
+      }
+    ],
+    "responseExample": {
+      "id": 25,
+      "name": "pikachu",
+      "height": 4,
+      "weight": 60,
+      "types": [
+        {
+          "type": {
+            "name": "electric"
+          }
+        }
+      ],
+      "sprites": {
+        "front_default": "https://..."
+      }
+    },
+    "docUrl": "https://pokeapi.co/docs/v2",
+    "status": "active",
+    "tags": [
+      "宝可梦",
+      "Pokemon",
+      "游戏",
+      "图鉴",
+      "数据"
+    ]
+  },
+  {
+    "id": "hackernews",
+    "name": "Hacker News",
+    "description": "HN热门故事和评论数据API",
+    "fullDescription": "Hacker News官方Firebase API，提供热门/新/最佳故事列表及每条故事的详细内容和评论。完全免费无限量调用，无需任何认证。Y Combinator运营的知名技术社区数据源，适合做技术新闻聚合、趋势分析等应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=10&orderBy=\"$key\"",
+    "baseUrl": "https://hacker-news.firebaseio.com/v0",
+    "params": [
+      {
+        "name": "limitToFirst",
+        "type": "number",
+        "required": false,
+        "description": "返回条数",
+        "example": "10"
+      }
+    ],
+    "responseExample": [
+      123456,
+      123457,
+      123458,
+      123459
+    ],
+    "docUrl": "https://github.com/HackerNews/API",
+    "status": "active",
+    "tags": [
+      "新闻",
+      "技术",
+      "Hacker News",
+      "YC",
+      "社区"
+    ]
+  },
+  {
+    "id": "opentdb",
+    "name": "Open Trivia DB",
+    "description": "免费问答题目API，50+分类",
+    "fullDescription": "提供海量免费问答题目的API，涵盖科学、历史、地理、娱乐、体育、动漫等50+分类。支持多种难度级别、多种题型（多选/判断/填空），可指定题目数量和分类。适合开发知识问答小游戏、学习工具或团队建设活动应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple",
+    "baseUrl": "https://opentdb.com/api.php",
+    "params": [
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "题目数量(1-50)",
+        "example": "10"
+      },
+      {
+        "name": "category",
+        "type": "number",
+        "required": false,
+        "description": "分类ID",
+        "example": "18"
+      },
+      {
+        "name": "difficulty",
+        "type": "string",
+        "required": false,
+        "description": "难度(easy/medium/hard)",
+        "example": "easy"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "题型(multiple/boolean)",
+        "example": "multiple"
+      }
+    ],
+    "responseExample": {
+      "response_code": 0,
+      "results": [
+        {
+          "question": "HTML是什么意思？",
+          "correct_answer": "超文本标记语言",
+          "incorrect_answers": [
+            "高级文本多语言",
+            "Home Tool Markup Language"
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://opentdb.com/api_config.php",
+    "status": "active",
+    "tags": [
+      "问答",
+      "知识",
+      " trivia",
+      "游戏",
+      "教育"
+    ]
+  },
+  {
+    "id": "itunes-rss",
+    "name": "App Store 排行榜",
+    "description": "Apple App Store 应用排行榜数据",
+    "fullDescription": "Apple官方提供的App Store排行榜RSS接口，返回各国家/地区的免费榜、付费榜、畅销榜Top100应用数据。包含应用名称、开发者、图标、分类、价格等信息。CORS全开放，纯前端可直接调用，无需任何认证。适合做应用市场分析、竞品监控工具。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://itunes.apple.com/us/rss/topfreeapplications/limit=10/json",
+    "baseUrl": "https://itunes.apple.com",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家/地区代码",
+        "example": "us/cn/jp"
+      },
+      {
+        "name": "chart",
+        "type": "string",
+        "required": false,
+        "description": "榜单类型",
+        "example": "topfreeapplications/toppaidapplications/topgrossingapplications"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量(最大100)",
+        "example": "10"
+      }
+    ],
+    "responseExample": {
+      "feed": {
+        "entry": [
+          {
+            "im:name": {
+              "label": "TikTok"
+            },
+            "im:artist": {
+              "label": "ByteDance"
+            }
+          }
+        ]
+      }
+    },
+    "docUrl": "https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/",
+    "status": "active",
+    "tags": [
+      "App Store",
+      "排行榜",
+      "Apple",
+      "应用",
+      "iOS"
+    ]
+  },
+  {
+    "id": "usgs-earthquake",
+    "name": "USGS 地震数据",
+    "description": "美国地质调查局实时地震信息API",
+    "fullDescription": "USGS提供的全球实时和历史地震数据API，返回GeoJSON格式的地震事件信息包括震级、位置、深度、时间等。可按时间范围、震级、区域筛选。完全免费公开的政府数据源，适合做地震信息展示、地球科学教育应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-01&minmagnitude=4&limit=5",
+    "baseUrl": "https://earthquake.usgs.gov/fdsnws/event/1",
+    "params": [
+      {
+        "name": "starttime",
+        "type": "string",
+        "required": true,
+        "description": "开始日期",
+        "example": "2026-06-01"
+      },
+      {
+        "name": "minmagnitude",
+        "type": "number",
+        "required": false,
+        "description": "最小震级",
+        "example": "4"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "10"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "返回格式",
+        "example": "geojson"
+      }
+    ],
+    "responseExample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "properties": {
+            "mag": 4.5,
+            "place": "10km E of City",
+            "time": 1749600000000
+          }
+        }
+      ]
+    },
+    "docUrl": "https://earthquake.usgs.gov/fdsnws/event/1/",
+    "status": "active",
+    "tags": [
+      "地震",
+      "地质",
+      "政府数据",
+      "GeoJSON",
+      "科学"
+    ]
+  },
+  {
+    "id": "icanhazdadjoke",
+    "name": "icanhazdadjoke",
+    "description": "程序员专属笑话API，支持多格式",
+    "fullDescription": "专为程序员设计的笑话API，所有笑话都与编程、技术相关。支持纯文本、JSON、PNG图片等多种输出格式，可直接生成分享图片。无需认证，CORS全开，适合做每日一笑功能或技术社区娱乐模块。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://icanhazdadjoke.com/",
+    "baseUrl": "https://icanhazdadjoke.com",
+    "params": [],
+    "responseExample": {
+      "id": "R7UfaahVfFd",
+      "joke": "For a programmer, a keyboard is an input device for entering errors.",
+      "status": 200
+    },
+    "docUrl": "https://icanhazdadjoke.com/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "程序员",
+      "幽默",
+      "技术",
+      "娱乐"
+    ]
+  },
+  {
+    "id": "frankfurter",
+    "name": "Frankfurter",
+    "description": "欧洲央行汇率API，覆盖201种货币",
+    "fullDescription": "基于欧洲央行(ECB)等84家中央银行数据的免费汇率API，覆盖201种货币，历史数据回溯至1948年。无需API Key，开源项目可自托管。提供最新汇率、历史汇率、时间序列查询等功能，是货币换算类应用的理想数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=CNY,EUR,JPY",
+    "baseUrl": "https://api.frankfurter.dev",
+    "params": [
+      {
+        "name": "from",
+        "type": "string",
+        "required": false,
+        "description": "基础货币代码(默认EUR)",
+        "example": "USD"
+      },
+      {
+        "name": "to",
+        "type": "string",
+        "required": false,
+        "description": "目标货币（逗号分隔）",
+        "example": "CNY,EUR,JPY"
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "兑换金额",
+        "example": "100"
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "required": false,
+        "description": "历史日期(YYYY-MM-DD)",
+        "example": "2024-01-01"
+      }
+    ],
+    "responseExample": {
+      "base": "USD",
+      "date": "2026-06-11",
+      "rates": {
+        "CNY": 7.2453,
+        "EUR": 0.9217,
+        "JPY": 154.32
+      }
+    },
+    "docUrl": "https://frankfurter.dev/",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "货币",
+      "金融",
+      "ECB",
+      "换算"
+    ]
+  },
+  {
+    "id": "world-bank",
+    "name": "World Bank 数据",
+    "description": "世界银行经济指标数据API",
+    "fullDescription": "世界银行官方开放数据API，提供全球各国/地区的GDP、人口、教育、健康等1000+经济和社会发展指标。数据回溯数十年，按年度/季度更新。无需认证，JSON格式输出，适合做经济数据分析、国际对比图表等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.worldbank.org/v2/country?format=json&per_page=5",
+    "baseUrl": "https://api.worldbank.org/v2",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家代码(如CHN/USA/all)",
+        "example": "CHN"
+      },
+      {
+        "name": "indicator",
+        "type": "string",
+        "required": false,
+        "description": "指标代码",
+        "example": "NY.GDP.MKTP.CD"
+      },
+      {
+        "name": "per_page",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      {
+        "page": 1,
+        "pages": 68,
+        "per_page": 5,
+        "total": 339
+      },
+      [
+        {
+          "id": "ABW",
+          "iso2code": "AW",
+          "name": "Aruba"
+        }
+      ]
+    ],
+    "docUrl": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information-getting-started-api",
+    "status": "active",
+    "tags": [
+      "世界银行",
+      "GDP",
+      "经济",
+      "数据",
+      "政府"
+    ]
+  },
+  {
+    "id": "evil-insult",
+    "name": "Evil Insult Generator",
+    "description": "多语言\"毒舌\"语句生成器（纯娱乐）",
+    "fullDescription": "支持40+语言的随机趣味语句生成器，纯娱乐用途。返回JSON格式的创意语句，可指定语言。适合做恶搞功能、每日一笑或语言学习中的趣味素材。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://evilinsult.com/generate_insult.php?lang=en&type=json",
+    "baseUrl": "https://evilinsult.com",
+    "params": [
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "语言代码(en/de/fr/es...)",
+        "example": "en"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "返回格式(json/text)",
+        "example": "json"
+      }
+    ],
+    "responseExample": {
+      "number": "42",
+      "insult": "You are as sharp as a marble.",
+      "created": "2024-01-01"
+    },
+    "docUrl": "https://evilinsult.com/api",
+    "status": "active",
+    "tags": [
+      "趣味",
+      "多语言",
+      "娱乐",
+      "毒舌"
+    ]
+  },
+  {
+    "id": "cat-facts",
+    "name": "Cat Facts",
+    "description": "随机猫咪冷知识API",
+    "fullDescription": "提供海量关于猫咪的有趣事实和冷知识，每条都是经过验证的真实信息。纯文本格式返回，无需认证。适合做宠物类应用、每日知识推送或动物科普功能。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://catfact.ninja/fact",
+    "baseUrl": "https://catfact.ninja",
+    "params": [
+      {
+        "name": "max_length",
+        "type": "number",
+        "required": false,
+        "description": "最大字符数限制",
+        "example": "100"
+      }
+    ],
+    "responseExample": {
+      "fact": "Cats have over 20 vocalizations, including the purr.",
+      "length": 45
+    },
+    "docUrl": "https://catfact.ninja/",
+    "status": "active",
+    "tags": [
+      "猫咪",
+      "冷知识",
+      "动物",
+      "宠物"
+    ]
+  },
+  {
+    "id": "exchangerate-host",
+    "name": "ExchangeRate.host",
+    "description": "免费汇率查询API，覆盖160+货币",
+    "fullDescription": "免费的实时汇率查询API，覆盖160+种货币，基于欧洲央行数据每日更新。无需认证，CORS全开放。支持基础货币切换、历史汇率查询、时间序列数据等功能。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.exchangerate.host/latest?base=USD&symbols=CNY,EUR,JPY",
+    "baseUrl": "https://api.exchangerate.host",
+    "params": [
+      {
+        "name": "base",
+        "type": "string",
+        "required": false,
+        "description": "基础货币代码(默认EUR)",
+        "example": "USD"
+      },
+      {
+        "name": "symbols",
+        "type": "string",
+        "required": false,
+        "description": "目标货币(逗号分隔)",
+        "example": "CNY,EUR,JPY"
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "兑换金额",
+        "example": "100"
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "required": false,
+        "description": "历史日期(YYYY-MM-DD)",
+        "example": "2024-06-15"
+      }
+    ],
+    "responseExample": {
+      "motd": {
+        "msg": "ok"
+      },
+      "success": true,
+      "base": "USD",
+      "rates": {
+        "CNY": 7.2453,
+        "EUR": 0.9217,
+        "JPY": 154.32
+      }
+    },
+    "docUrl": "https://exchangerate.host/#/docs",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "货币",
+      "金融",
+      "换算",
+      "ECB"
+    ]
+  },
+  {
+    "id": "httpbin-org",
+    "name": "HTTPBin.org",
+    "description": "HTTP请求调试工具（官方版）",
+    "fullDescription": "最知名的HTTP请求测试和调试工具，能回显客户端发送的所有请求信息包括headers、method、body、IP地址等。支持所有HTTP方法(GET/POST/PUT/PATCH/DELETE)，用于调试fetch/axios、排查CORS问题、测试请求头设置等场景。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://httpbin.org/get?foo=bar&hello=world",
+    "baseUrl": "https://httpbin.org",
+    "params": [
+      {
+        "name": "*",
+        "type": "string",
+        "required": false,
+        "description": "任意查询参数会被原样回显",
+        "example": "foo=bar"
+      }
+    ],
+    "responseExample": {
+      "args": {
+        "foo": "bar",
+        "hello": "world"
+      },
+      "headers": {
+        "Accept": "*/*",
+        "Host": "httpbin.org"
+      },
+      "method": "GET",
+      "origin": "1.2.3.4"
+    },
+    "docUrl": "https://httpbin.org/",
+    "status": "active",
+    "tags": [
+      "HTTP调试",
+      "请求测试",
+      "CORS",
+      "headers",
+      "回显"
+    ]
   }
 ]
