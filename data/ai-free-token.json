@@ -271,7 +271,6 @@
         ]
       }
     },
-
     {
       "name": "零一万物 (Yi)",
       "quota": "Yi-34B-Chat-Free 永久免费（社区版API被永久捐赠给开发者生态，李开复团队出品，34B参数，性能对标GPT-3.5-Turbo）；每天1000次调用，每次最多16K token；中文理解极好，适合内容生成、客服对话、教育类应用；企业版收费，但社区版完全免费；支持OpenAI兼容格式",
@@ -905,7 +904,6 @@
         ]
       }
     },
-
     {
       "name": "超算互联网 (SCNET)",
       "quota": "向全体用户免费发放单人最高 3000万 Tokens 额度（此前为100万，已大幅提升）；面向OpenClaw用户免费发放每人限时2周总计1000万Tokens额度；续购价格：0.1元/百万Tokens；支持 Qwen3-30B-A3B 等国产大模型",
@@ -1216,7 +1214,6 @@
         ]
       }
     },
-
     {
       "name": "商汤日日新 (SenseNova)",
       "quota": "Token Plan 限时免费公测：SenseNova 6.7 Flash-Lite 每5小时1500次调用（原生多模态架构，可直接理解网页/文档/图表，信息搜索场景Token消耗较纯文本智能体降60%）；SenseNova U1 Fast 每5小时1500次调用（信息图/Infographics生成）；DeepSeek V4 Flash 每5小时500次调用（256K超长上下文，工具调用）；SenseNova-Skills已在GitHub开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式；最多可创建20个API Key分别管理不同项目；⚠️ 公测首月免费，后续将推出 Lite/Pro 付费档位",
@@ -1342,9 +1339,6 @@
         ]
       }
     },
-
-
-
     {
       "name": "阶跃星辰 (StepFun)",
       "quota": "Step 3.5 Flash模型完全免费（无累计用量限制，196B MoE总参数/11B激活，256K上下文，专为Agent场景设计，支持function calling/工具调用）；注册即赠送免费额度可用于Step系列全系模型（Step 3.5 Flash、Step 3、Step 2、Step 1、Step 1o系列视觉模型、StepAudio语音模型等）；V0免费层：5 RPM/10 QPM/500万TPM；OpenRouter上Step 3.5 Flash也标注为:free可免费调用；2026年2月发布Step 3.5 Flash开源模型，CNCF项目成员，支持昇腾/沐曦/壁仞/燧原等国产芯片适配",
@@ -1364,7 +1358,6 @@
         ]
       }
     },
-
     {
       "name": "阿里云百炼国际版 (Alibaba Cloud Model Studio)",
       "quota": "新用户首次开通即赠每模型 100万 tokens 免费额度（新加坡区域International Edition）；覆盖 Qwen 全系列文本/代码/视觉/推理模型（qwen-plus、qwen-flash、qwen3-vl-plus、qvq-max、qwen3-coder-plus等）；另赠 100张AI生图 + 50秒视频生成 + TTS字符额度；无需信用卡；OpenAI兼容API（DashScope API Key）；⚠️ 必须在新加坡区域激活才享免费额度，北京/弗吉尼亚区域无免费额度",
@@ -1385,7 +1378,6 @@
         ]
       }
     },
-
     {
       "name": "昆仑万维天工 (SkyWork)",
       "quota": "SkyClaw-v1.0及SkyClaw-v1.0-lite Agent模型限时免费试用（2026年5月26日发布）；SkyClaw-v1.0输入0.5元/百万Token、输出4元/百万Token；SkyClaw-v1.0-lite输入0.3元/百万Token、输出2元/百万Token；需通过APIFree平台（www.apifree.ai）注册获取密钥；百万token超长上下文；原生Agent训练（非通用大模型+工具壳）；深度适配OpenClaw、Hermes、Claude Code等主流Agent框架；OpenAI兼容API格式；免费期结束后将逐步开源各模型版本",
@@ -1400,9 +1392,6 @@
         ]
       }
     },
-
-
-
     {
       "name": "OpenRouter",
       "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；50+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill、Mistral Small 3.1、MiniMax M2.5、Nemotron 3、GPT-OSS 120B、Cogito v1 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",
@@ -1462,6 +1451,137 @@
           "fal-ai/kling-v1.6/pro",
           "fal-ai/wan/v2.2",
           "fal-ai/sora-v2"
+        ]
+      }
+    },
+    {
+      "name": "智谱AI (GLM)",
+      "quota": "2000万Token",
+      "cycle": "永久有效",
+      "url": "https://open.bigmodel.cn",
+      "develop": {
+        "document_url": "https://open.bigmodel.cn/dev/api",
+        "base_url": "https://open.bigmodel.cn/api/paas/v4",
+        "models": [
+          "GLM-4-Flash",
+          "GLM-4.7-Flash",
+          "GLM-5",
+          "GLM-4V-Plus"
+        ]
+      }
+    },
+    {
+      "name": "硅基流动 (SiliconFlow)",
+      "quota": "2000万Token",
+      "cycle": "永久有效(9B以下模型)",
+      "url": "https://siliconflow.cn",
+      "develop": {
+        "document_url": "https://docs.siliconflow.cn",
+        "base_url": "https://api.siliconflow.cn/v1",
+        "models": [
+          "Qwen2.5-7B-Instruct",
+          "GLM-4-Flash",
+          "DeepSeek-V2.5",
+          "DeepSeek-V4",
+          "Qwen3-32B"
+        ]
+      }
+    },
+    {
+      "name": "火山引擎 (豆包/Doubao)",
+      "quota": "每日200万Token(协作奖励)",
+      "cycle": "每日重置",
+      "url": "https://console.volcengine.com/ark",
+      "develop": {
+        "document_url": "https://www.volcengine.com/docs/82379",
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+        "models": [
+          "Doubao-lite-32k",
+          "Doubao-pro-32k",
+          "DeepSeek-R1",
+          "DeepSeek-V4"
+        ]
+      }
+    },
+    {
+      "name": "魔搭社区 (ModelScope)",
+      "quota": "每日2000次调用",
+      "cycle": "每日重置",
+      "url": "https://modelscope.cn",
+      "develop": {
+        "document_url": "https://modelscope.cn/docs",
+        "base_url": "https://api.modelscope.cn/v1",
+        "models": [
+          "Qwen系列",
+          "DeepSeek系列",
+          "GLM系列",
+          "LLaMA系列"
+        ]
+      }
+    },
+    {
+      "name": "百度智能云千帆 (ERNIE)",
+      "quota": "100万Token(每模型)",
+      "cycle": "3个月",
+      "url": "https://console.bce.baidu.com/qianfan",
+      "develop": {
+        "document_url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
+        "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop",
+        "models": [
+          "ERNIE-Speed-8K",
+          "ERNIE-4.5-Turbo",
+          "ERNIE-4.5",
+          "ERNIE-Lite"
+        ]
+      }
+    },
+    {
+      "name": "阿里云百炼 (DashScope)",
+      "quota": "100万Token(每模型)",
+      "cycle": "3个月",
+      "url": "https://bailian.console.aliyun.com",
+      "develop": {
+        "document_url": "https://help.aliyun.com/document_detail/dashscope.html",
+        "base_url": "https://dashscope.aliyuncs.com/api/v1",
+        "models": [
+          "qwen-turbo",
+          "qwen-plus",
+          "qwen-max",
+          "deepseek-r1",
+          "deepseek-v4",
+          "kimi-k2.5",
+          "moonshot-v1",
+          "glm-4-flash"
+        ]
+      }
+    },
+    {
+      "name": "Google Gemini",
+      "quota": "Gemini 2.5 Flash: 500 RPM",
+      "cycle": "永久有效(免费层)",
+      "url": "https://aistudio.google.com",
+      "develop": {
+        "document_url": "https://ai.google.dev/gemini-api/docs",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta",
+        "models": [
+          "Gemini 2.5 Flash",
+          "Gemini 2.5 Flash-Lite",
+          "Gemini 2.5 Pro"
+        ]
+      }
+    },
+    {
+      "name": "OpenAI",
+      "quota": "$5试用额度",
+      "cycle": "用完即止",
+      "url": "https://platform.openai.com",
+      "develop": {
+        "document_url": "https://platform.openai.com/docs",
+        "base_url": "https://api.openai.com/v1",
+        "models": [
+          "GPT-4o",
+          "GPT-4o-mini",
+          "GPT-4.5"
         ]
       }
     }

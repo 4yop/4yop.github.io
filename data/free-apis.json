@@ -1,0 +1,1923 @@
+[
+  {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "description": "假数据REST API，用于前端开发和测试",
+    "fullDescription": "提供posts、comments、albums、photos、todos、users等资源的完整REST API接口，支持CRUD操作，非常适合前端开发原型设计和测试。返回结构化的JSON数据，无需注册即可使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts?_limit=5",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "params": [
+      {
+        "name": "_limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量限制",
+        "example": "5"
+      },
+      {
+        "name": "_page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": "1"
+      }
+    ],
+    "responseExample": [
+      {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      }
+    ],
+    "docUrl": "https://jsonplaceholder.typicode.com/",
+    "status": "active",
+    "tags": [
+      "假数据",
+      "REST API",
+      "前端测试",
+      "mock数据",
+      "posts"
+    ]
+  },
+  {
+    "id": "httpbingo",
+    "name": "HttpBingo",
+    "description": "HTTP请求测试工具，回显请求数据",
+    "fullDescription": "类似于HTTPBin的请求调试工具，可以回显客户端发送的所有请求信息（headers、method、args、origin等）。非常适合前端开发者测试fetch/axios请求、调试CORS问题、查看请求头信息。中国大陆访问稳定快速。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://httpbingo.org/get?foo=bar&hello=world",
+    "baseUrl": "https://httpbingo.org",
+    "params": [
+      {
+        "name": "*",
+        "type": "string",
+        "required": false,
+        "description": "任意查询参数，会被原样回显",
+        "example": "foo=bar"
+      }
+    ],
+    "responseExample": {
+      "args": {
+        "foo": "bar",
+        "hello": "world"
+      },
+      "headers": {
+        "Accept": "*/*",
+        "Host": "httpbingo.org"
+      },
+      "method": "GET",
+      "origin": "1.2.3.4"
+    },
+    "docUrl": "https://httpbingo.org/",
+    "status": "active",
+    "tags": [
+      "HTTP测试",
+      "请求调试",
+      "CORS",
+      "回显",
+      "headers"
+    ]
+  },
+  {
+    "id": "dummyjson",
+    "name": "DummyJSON",
+    "description": "丰富的假数据API，包含产品、用户、购物车等",
+    "fullDescription": "提供产品、用户、购物车、帖子、评论、TODO、认证等多种资源的模拟数据API。数据结构接近真实电商系统，支持搜索、过滤、分页、分类浏览等功能。适合全栈项目开发测试。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://dummyjson.com/products?limit=5&select=title,price,brand",
+    "baseUrl": "https://dummyjson.com",
+    "params": [
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
+      },
+      {
+        "name": "select",
+        "type": "string",
+        "required": false,
+        "description": "选择返回字段",
+        "example": "title,price,brand"
+      },
+      {
+        "name": "skip",
+        "type": "number",
+        "required": false,
+        "description": "跳过数量（分页用）",
+        "example": "0"
+      }
+    ],
+    "responseExample": {
+      "products": [
+        {
+          "id": 1,
+          "title": "iPhone 9",
+          "price": 549,
+          "brand": "Apple"
+        },
+        {
+          "id": 2,
+          "title": "iPhone X",
+          "price": 899,
+          "brand": "Apple"
+        }
+      ],
+      "total": 194,
+      "skip": 0,
+      "limit": 5
+    },
+    "docUrl": "https://dummyjson.com/",
+    "status": "active",
+    "tags": [
+      "产品数据",
+      "电商",
+      "购物车",
+      "假数据",
+      "搜索"
+    ]
+  },
+  {
+    "id": "randomuser",
+    "name": "Random User Generator",
+    "description": "生成随机用户数据的API，含头像、地址等详细信息",
+    "fullDescription": "随机生成用户资料，包括姓名、性别、邮箱、电话、地址、头像图片等完整信息。支持按国籍、性别筛选，可自定义返回字段。生成的头像来自真实照片服务，非常适合需要用户头像的应用开发。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://randomuser.me/api/?results=3&inc=name,email,picture&noinfo",
+    "baseUrl": "https://randomuser.me/api",
+    "params": [
+      {
+        "name": "results",
+        "type": "number",
+        "required": false,
+        "description": "生成数量",
+        "example": "3"
+      },
+      {
+        "name": "inc",
+        "type": "string",
+        "required": false,
+        "description": "包含的字段",
+        "example": "name,email,picture"
+      },
+      {
+        "name": "gender",
+        "type": "string",
+        "required": false,
+        "description": "性别筛选",
+        "example": "male|female"
+      },
+      {
+        "name": "nat",
+        "type": "string",
+        "required": false,
+        "description": "国籍",
+        "example": "US|GB|AU|BR"
+      }
+    ],
+    "responseExample": {
+      "results": [
+        {
+          "gender": "male",
+          "name": {
+            "title": "Mr",
+            "first": "张",
+            "last": "三"
+          },
+          "email": "zhangsan@example.com",
+          "picture": {
+            "large": "https://randomuser.me/api/portraits/men/1.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+          }
+        }
+      ],
+      "info": {
+        "seed": "abc123",
+        "results": 3,
+        "page": 1,
+        "version": "1.4"
+      }
+    },
+    "docUrl": "https://randomuser.me/",
+    "status": "active",
+    "tags": [
+      "随机用户",
+      "头像",
+      "个人信息",
+      "mock数据",
+      "多国籍"
+    ]
+  },
+  {
+    "id": "picsum-photos",
+    "name": "Picsum Photos",
+    "description": "Lorem Picsum随机图片服务，支持自定义尺寸",
+    "fullDescription": "基于Lorem Picsum的高质量随机图片服务，所有图片来自Unsplash免费图库。支持指定宽高尺寸、灰度模式、模糊效果、特定图片ID等参数。可直接作为img标签src使用，也可通过JSON API获取图片信息列表。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://picsum.photos/v2/list?page=2&limit=5",
+    "baseUrl": "https://picsum.photos",
+    "params": [
+      {
+        "name": "width",
+        "type": "number",
+        "required": false,
+        "description": "图片宽度",
+        "example": "400"
+      },
+      {
+        "name": "height",
+        "type": "number",
+        "required": false,
+        "description": "图片高度",
+        "example": "300"
+      },
+      {
+        "name": "grayscale",
+        "type": "boolean",
+        "required": false,
+        "description": "灰度模式",
+        "example": "true"
+      },
+      {
+        "name": "blur",
+        "type": "number",
+        "required": false,
+        "description": "模糊程度(1-10)",
+        "example": "2"
+      }
+    ],
+    "responseExample": [
+      {
+        "id": "1",
+        "author": "John Doe",
+        "width": 400,
+        "height": 300,
+        "url": "https://picsum.photos/id/1/400/300",
+        "download_url": "https://picsum.photos/id/1/400/300"
+      }
+    ],
+    "docUrl": "https://picsum.photos/",
+    "status": "active",
+    "tags": [
+      "随机图片",
+      "占位图",
+      "Unsplash",
+      "高清",
+      "灰度"
+    ]
+  },
+  {
+    "id": "dog-ceo",
+    "name": "Dog CEO",
+    "description": "随机狗狗图片API，支持按品种筛选",
+    "fullDescription": "专门提供狗狗图片的趣味API服务。支持随机获取狗狗图片、按品种分类浏览（如柴犬、金毛、哈士奇等）、获取所有品种列表、多个随机图片等功能。所有图片都是真实的可爱狗狗照片，适合宠物类应用或娱乐功能。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://dog.ceo/api/breeds/image/random/3",
+    "baseUrl": "https://dog.ceo/api",
+    "params": [
+      {
+        "name": "breed",
+        "type": "string",
+        "required": false,
+        "description": "犬种名称",
+        "example": "shiba|retriever|husky"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回图片数量",
+        "example": "3"
+      }
+    ],
+    "responseExample": {
+      "message": [
+        "https://images.dog.ceo/breeds/shiba/shiba-1.jpg",
+        "https://images.dog.ceo/breeds/retriever/golden-1.jpg"
+      ],
+      "status": "success"
+    },
+    "docUrl": "https://dog.ceo/dog-api/documentation/",
+    "status": "active",
+    "tags": [
+      "狗狗",
+      "宠物",
+      "随机图片",
+      "品种",
+      "可爱"
+    ]
+  },
+  {
+    "id": "cat-api",
+    "name": "The Cat API",
+    "description": "猫咪图片和品种信息API",
+    "fullDescription": "全面的猫咪相关API服务，提供随机猫咪图片、品种信息查询、图片分类等功能。可以获取各种猫咪品种的详细描述、性格特点、起源地等信息。图片质量高，种类丰富，是猫咪爱好者和宠物应用开发的理想选择。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://api.thecatapi.com/v1/images/search?limit=3",
+    "baseUrl": "https://api.thecatapi.com/v1",
+    "params": [
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回图片数量",
+        "example": "3"
+      },
+      {
+        "name": "breed_ids",
+        "type": "string",
+        "required": false,
+        "description": "品种ID",
+        "example": "abys|beng|sphy"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "图片尺寸",
+        "example": "small|med|full"
+      }
+    ],
+    "responseExample": [
+      {
+        "id": "abc123",
+        "url": "https://cdn2.thecatapi.com/images/abc.jpg",
+        "width": 1200,
+        "height": 800,
+        "breeds": []
+      }
+    ],
+    "docUrl": "https://thecatapi.com/",
+    "status": "active",
+    "tags": [
+      "猫咪",
+      "宠物",
+      "品种信息",
+      "随机图片",
+      "可爱"
+    ]
+  },
+  {
+    "id": "dummyimage",
+    "name": "DummyImage",
+    "description": "自定义占位图生成服务，支持文字和颜色",
+    "fullDescription": "轻量级占位图生成服务，支持自定义尺寸、背景色、文字颜色、字体大小和显示文字。比PlaceKitten更稳定可控，适合网页原型设计和开发阶段使用。直接在URL中指定参数即可生成图片，无需注册。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://dummyimage.com/400x300/2862b4/ffffff.png&text=Tools321",
+    "baseUrl": "https://dummyimage.com",
+    "params": [
+      {
+        "name": "尺寸",
+        "type": "string",
+        "required": true,
+        "description": "宽x高，如400x300",
+        "example": "400x300"
+      },
+      {
+        "name": "背景色",
+        "type": "string",
+        "required": false,
+        "description": "十六进制颜色",
+        "example": "2862b4"
+      },
+      {
+        "name": "文字色",
+        "type": "string",
+        "required": false,
+        "description": "十六进制颜色",
+        "example": "ffffff"
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "description": "图片上显示的文字",
+        "example": "Hello"
+      }
+    ],
+    "responseExample": "(返回PNG图片)",
+    "docUrl": "https://dummyimage.com/",
+    "status": "active",
+    "tags": [
+      "占位图",
+      "图片生成",
+      "原型设计",
+      "自定义"
+    ]
+  },
+  {
+    "id": "open-meteo",
+    "name": "Open-Meteo",
+    "description": "免费天气预报API，无需API Key",
+    "fullDescription": "开源免费的天气 forecast API，提供当前天气、7天预报、历史天气数据、空气质量预报等功能。支持全球任意经纬度坐标查询，数据来源可靠。完全免费且无使用限制，无需注册或API密钥，是开发者获取天气数据的首选方案之一。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=39.9&longitude=116.4&current_weather=true&hourly=temperature_2m&timezone=Asia%2FShanghai",
+    "baseUrl": "https://api.open-meteo.com/v1",
+    "params": [
+      {
+        "name": "latitude",
+        "type": "number",
+        "required": true,
+        "description": "纬度",
+        "example": "39.9"
+      },
+      {
+        "name": "longitude",
+        "type": "number",
+        "required": true,
+        "description": "经度",
+        "example": "116.4"
+      },
+      {
+        "name": "current_weather",
+        "type": "boolean",
+        "required": false,
+        "description": "是否返回当前天气",
+        "example": "true"
+      },
+      {
+        "name": "hourly",
+        "type": "string",
+        "required": false,
+        "description": "逐小时数据类型",
+        "example": "temperature_2m,relative_humidity_2m"
+      },
+      {
+        "name": "daily",
+        "type": "string",
+        "required": false,
+        "description": "每日数据类型",
+        "example": "temperature_2m_max,temperature_2m_min"
+      }
+    ],
+    "responseExample": {
+      "latitude": 39.9,
+      "longitude": 116.4,
+      "generationtime_ms": 0.25,
+      "utc_offset_seconds": 28800,
+      "timezone": "Asia/Shanghai",
+      "timezone_abbreviation": "CST",
+      "elevation": 57,
+      "current_weather_units": {
+        "time": "iso8601",
+        "temperature": "°C",
+        "windspeed": "km/h",
+        "winddirection": "°",
+        "weathercode": "wmo code",
+        "is_day": ""
+      },
+      "current_weather": {
+        "time": "2024-01-15T14:00",
+        "temperature": 5,
+        "windspeed": 12.3,
+        "winddirection": 180,
+        "weathercode": 3,
+        "is_day": 1
+      }
+    },
+    "docUrl": "https://open-meteo.com/en/docs",
+    "status": "active",
+    "tags": [
+      "天气",
+      "预报",
+      "免费",
+      "全球",
+      "空气质量"
+    ]
+  },
+  {
+    "id": "wttr-in",
+    "name": "wttr.in",
+    "description": "简洁的天气服务，支持多种输出格式",
+    "fullDescription": "极简风格的天气查询服务，支持城市名直接查询。提供JSON、XML、纯文本等多种输出格式，还可在终端中以ASCII图形化方式展示天气。无需注册，使用非常方便。注意：CORS支持情况可能不稳定，建议在实际项目中先测试验证。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://wttr.in/Beijing?format=j1",
+    "baseUrl": "https://wttr.in",
+    "params": [
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "城市名或位置（URL路径部分）",
+        "example": "Beijing|Shanghai|Tokyo"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "输出格式",
+        "example": "j1(JSON)|j2(简化JSON)|xml|html|text"
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "语言",
+        "example": "zh|en|ja"
+      }
+    ],
+    "responseExample": {
+      "current_condition": [
+        {
+          "temp_C": "5",
+          "FeelsLikeC": "2",
+          "humidity": "45",
+          "weatherDesc": [
+            {
+              "value": "Partly cloudy"
+            }
+          ],
+          "windspeedKmph": "12"
+        }
+      ],
+      "weather": [
+        {
+          "date": "2024-01-15",
+          "maxtempC": "8",
+          "mintempC": "-2",
+          "hourly": [
+            {
+              "time": "0600",
+              "tempC": "0",
+              "weatherDesc": [
+                {
+                  "value": "Clear"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://wttr.in/:help",
+    "status": "active",
+    "tags": [
+      "天气",
+      "简洁",
+      "终端",
+      "多格式",
+      "ASCII艺术"
+    ]
+  },
+  {
+    "id": "rest-countries",
+    "name": "REST Countries",
+    "description": "世界各国信息API，含国旗、语言、货币等",
+    "fullDescription": "全面的国家地理信息API，覆盖全球250+国家和地区。提供国家名称、首都、人口、面积、语言、货币、时区、地区、子区域、国旗图片（SVG/PNG）、顶级域名、Calling codes等丰富信息。支持按名称、代码、货币、语言、首都等多维度搜索和筛选。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,flags,currencies,languages",
+    "baseUrl": "https://restcountries.com/v3.1",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "国家名称（URL路径部分）",
+        "example": "china|usa|japan"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段过滤",
+        "example": "name,capital,population,flags"
+      },
+      {
+        "name": "code",
+        "type": "string",
+        "required": false,
+        "description": "ISO国家代码",
+        "example": "cn|us|jp"
+      }
+    ],
+    "responseExample": [
+      {
+        "name": {
+          "common": "中国",
+          "official": "中华人民共和国",
+          "nativeName": {
+            "zho": {
+              "official": "中华人民共和国",
+              "common": "中国"
+            }
+          }
+        },
+        "capital": [
+          "北京"
+        ],
+        "population": 1439323776,
+        "flags": {
+          "png": "https://flagcdn.com/w320/cn.png",
+          "svg": "https://flagcdn.com/cn.svg"
+        }
+      }
+    ],
+    "docUrl": "https://restcountries.com/",
+    "status": "active",
+    "tags": [
+      "国家",
+      "地理",
+      "国旗",
+      "货币",
+      "语言"
+    ]
+  },
+  {
+    "id": "ip-api-com",
+    "name": "IP-API.com",
+    "description": "IP地址归属地查询API",
+    "fullDescription": "IP地理位置查询服务，输入IP地址即可获取详细的归属地信息。返回数据包括：国家、省份/州、城市、邮政编码、ISP运营商、AS号、经纬度坐标、时区等。免费版支持每分钟45次请求，足够一般应用使用。数据准确度较高，覆盖全球范围。",
+    "category": "data",
+    "method": "GET",
+    "url": "http://ip-api.com/json/8.8.8.8?lang=zh-CN&fields=status,message,country,regionName,city,isp,lat,lon,query",
+    "baseUrl": "http://ip-api.com/json",
+    "params": [
+      {
+        "name": "ip",
+        "type": "string",
+        "required": true,
+        "description": "要查询的IP地址（URL路径部分）",
+        "example": "8.8.8.8|1.1.1.1"
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "返回语言",
+        "example": "zh-CN|en|de"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段选择",
+        "example": "status,country,city,isp"
+      }
+    ],
+    "responseExample": {
+      "status": "success",
+      "country": "美国",
+      "regionName": "弗吉尼亚州",
+      "city": "Ashburn",
+      "isp": "Google LLC",
+      "lat": 39.03,
+      "lon": -77.5,
+      "query": "8.8.8.8"
+    },
+    "docUrl": "http://ip-api.com/docs",
+    "status": "active",
+    "tags": [
+      "IP查询",
+      "归属地",
+      "地理位置",
+      "ISP",
+      "经纬度"
+    ]
+  },
+  {
+    "id": "jokeapi",
+    "name": "JokeAPI",
+    "description": "多功能笑话API，支持多语言和多分类",
+    "fullDescription": "强大的笑话API服务，支持编程、暗黑、双关语、圣诞等多个分类。提供单条、多条随机笑话，以及按ID精确查找功能。支持黑名单设置（nsfw、religious、political等），可过滤不适宜内容。支持多种语言，适合娱乐应用开发。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://v2.jokeapi.dev/joke/Programming?safe-mode&type=single&amount=3",
+    "baseUrl": "https://v2.jokeapi.dev/joke",
+    "params": [
+      {
+        "name": "category",
+        "type": "string",
+        "required": true,
+        "description": "笑话分类（URL路径部分）",
+        "example": "Programming|Misc|Dark|Pun|Christmas"
+      },
+      {
+        "name": "safe-mode",
+        "type": "string",
+        "required": false,
+        "description": "安全模式",
+        "example": "safe-mode"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "返回类型",
+        "example": "single|twopart"
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      }
+    ],
+    "responseExample": {
+      "error": false,
+      "category": "Programming",
+      "type": "single",
+      "joke": "There are only 10 types of people in the world: those who understand binary and those who don't.",
+      "id": 1,
+      "safe": true,
+      "lang": "en"
+    },
+    "docUrl": "https://sv443.net/jokeapi/v2/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "编程",
+      "娱乐",
+      "多分类",
+      "安全模式"
+    ]
+  },
+  {
+    "id": "typefit-quotes",
+    "name": "Type.fit Quotes",
+    "description": "经典名言API，中英文双语支持",
+    "fullDescription": "托管在GitHub Gist上的名言API，收录了大量中英文经典名言警句。每条名言包含原文内容和作者信息。数据质量较高，来源可靠。由于托管在Gist上，稳定性较好，适合需要展示名人名言的学习类、励志类应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://type.fit/api/quotes",
+    "baseUrl": "https://type.fit/api",
+    "params": [],
+    "responseExample": [
+      {
+        "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+        "author": "Thomas Edison"
+      },
+      {
+        "text": "生活不是等待暴风雨过去，而是学会在雨中跳舞。",
+        "author": "未知"
+      }
+    ],
+    "docUrl": "https://github.com/lukePeavey/quotable",
+    "status": "active",
+    "tags": [
+      "名言",
+      "语录",
+      "中英双语",
+      "经典",
+      "作者"
+    ]
+  },
+  {
+    "id": "mockerapi-status",
+    "name": "MockerAPI Status",
+    "description": "HTTP状态码测试工具API",
+    "fullDescription": "专业的HTTP状态码测试服务，可以模拟返回任意HTTP状态码（200、201、301、404、500等）。对于前端开发者测试错误处理逻辑、loading状态、重定向行为等非常有用。支持自定义响应延迟时间，可模拟慢网络环境。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://free.mockerapi.com/200?delay=1000",
+    "baseUrl": "https://free.mockerapi.com",
+    "params": [
+      {
+        "name": "statusCode",
+        "type": "number",
+        "required": true,
+        "description": "HTTP状态码（URL路径部分）",
+        "example": "200|201|301|404|500"
+      },
+      {
+        "name": "delay",
+        "type": "number",
+        "required": false,
+        "description": "响应延迟毫秒数",
+        "example": "1000|2000|5000"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "自定义响应消息",
+        "example": "Custom message"
+      }
+    ],
+    "responseExample": {
+      "code": 200,
+      "message": "OK",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "delay": 1000
+    },
+    "docUrl": "https://mockerapi.com/",
+    "status": "active",
+    "tags": [
+      "HTTP状态码",
+      "测试",
+      "错误处理",
+      "延迟模拟",
+      "调试"
+    ]
+  },
+  {
+    "id": "qr-server",
+    "name": "QR Server",
+    "description": "在线二维码生成API，支持多种格式和样式",
+    "fullDescription": "功能强大的二维码在线生成服务，支持自定义尺寸、颜色、纠错级别、Logo嵌入等参数。可以直接在浏览器中显示二维码图片，也可以下载保存。支持PNG、SVG、EPS等多种输出格式。无需任何注册或API Key，即用即得，非常适合集成到各类应用中。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com&color=000000&bgcolor=ffffff",
+    "baseUrl": "https://api.qrserver.com/v1/create-qr-code",
+    "params": [
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "二维码尺寸（宽x高）",
+        "example": "200x200|300x300"
+      },
+      {
+        "name": "data",
+        "type": "string",
+        "required": true,
+        "description": "二维码内容（URL或文本）",
+        "example": "https://example.com|Hello World"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "required": false,
+        "description": "前景色（十六进制）",
+        "example": "000000|ff0000"
+      },
+      {
+        "name": "bgcolor",
+        "type": "string",
+        "required": false,
+        "description": "背景色（十六进制）",
+        "example": "ffffff|ffff00"
+      },
+      {
+        "name": "ecc",
+        "type": "string",
+        "required": false,
+        "description": "纠错级别",
+        "example": "L|M|Q|H"
+      }
+    ],
+    "responseExample": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=test (直接返回二维码图片)",
+    "docUrl": "https://goqr.me/api/doc/create-qr-code/",
+    "status": "active",
+    "tags": [
+      "二维码",
+      "生成器",
+      "QR Code",
+      "自定义样式",
+      "即时生成"
+    ]
+  },
+  {
+    "id": "github-zen",
+    "name": "GitHub Zen",
+    "description": "GitHub随机名言API，返回编程灵感语录",
+    "fullDescription": "GitHub官方提供的随机名言接口，每次请求返回一条精选的编程或人生哲理名言。数据来源于GitHub仓库中的zen.txt文件。无需认证，CORS支持完善，响应速度快，非常适合用作页面随机展示、loading提示或开发灵感获取。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.github.com/zen",
+    "baseUrl": "https://api.github.com",
+    "params": [],
+    "responseExample": "Keep it simple, stupid. The KISS principle is your friend.",
+    "docUrl": "https://developer.github.com/v3/",
+    "status": "active",
+    "note": "有速率限制：每小时60次（未认证）",
+    "tags": [
+      "名言",
+      "GitHub",
+      "随机",
+      "灵感",
+      "编程"
+    ]
+  },
+  {
+    "id": "mymemory-translate",
+    "name": "MyMemory Translation API",
+    "description": "免费机器翻译API，支持多语言互译",
+    "fullDescription": "MyMemory提供的免费机器翻译服务，支持190+语言对之间的互译。翻译质量由社区贡献不断改进，常用语言对效果较好。无需注册即可使用，但有每日翻译量限制（每天约1000词）。返回结果包含翻译文本、匹配度、翻译方向等信息。",
+    "category": "translate",
+    "method": "GET",
+    "url": "https://api.mymemory.translated.net/get?q=Hello%20World&langpair=en|zh-CN",
+    "baseUrl": "https://api.mymemory.translated.net/get",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": true,
+        "description": "要翻译的文本",
+        "example": "Hello World|你好世界"
+      },
+      {
+        "name": "langpair",
+        "type": "string",
+        "required": true,
+        "description": "语言对（源语言|目标语言）",
+        "example": "en|zh-CN|zh|en|en|ja"
+      },
+      {
+        "name": "de",
+        "type": "string",
+        "required": false,
+        "description": "邮箱地址（提升配额）",
+        "example": "your@email.com"
+      }
+    ],
+    "responseExample": {
+      "responseData": {
+        "translatedText": "你好世界",
+        "match": 1,
+        "quality": 80,
+        "matchCount": 1
+      },
+      "quotaFinished": false,
+      "responseStatus": 200
+    },
+    "docUrl": "https://mymemory.translated.net/spec.html",
+    "status": "active",
+    "tags": [
+      "翻译",
+      "机器翻译",
+      "多语言",
+      "免费",
+      "API"
+    ]
+  },
+  {
+    "id": "libretranslate",
+    "name": "LibreTranslate (自建)",
+    "description": "开源机器翻译引擎，需自行部署",
+    "fullDescription": "完全开源的机器翻译解决方案，基于ArgosTranslate模型。支持自建部署，数据隐私可控，无第三方依赖。支持多种语言对，翻译质量持续优化。适合企业内部使用或有特殊合规要求的场景。提供Docker镜像，部署相对简单。如果不想自建，可以使用官方提供的公共实例（可能有速率限制）。",
+    "category": "translate",
+    "method": "POST",
+    "url": "https://libretranslate.de/translate",
+    "baseUrl": "https://libretranslate.de",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": true,
+        "description": "要翻译的文本",
+        "example": "Hello World"
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "required": true,
+        "description": "源语言代码",
+        "example": "en|zh|auto"
+      },
+      {
+        "name": "target",
+        "type": "string",
+        "required": true,
+        "description": "目标语言代码",
+        "example": "zh|en|ja"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "文本格式",
+        "example": "text|html"
+      }
+    ],
+    "responseExample": {
+      "translatedText": "你好世界"
+    },
+    "docUrl": "https://libretranslate.com/",
+    "status": "active",
+    "tags": [
+      "翻译",
+      "开源",
+      "自建",
+      "隐私",
+      "Docker"
+    ],
+    "note": "公共实例可能不稳定或有限制，生产环境建议自行部署"
+  },
+  {
+    "id": "github-public-api",
+    "name": "GitHub Public API",
+    "description": "GitHub公开资源访问API",
+    "fullDescription": "GitHub官方提供的公开API，可访问公开仓库、用户信息、Issue、README等内容。无需认证即可读取公开数据，但未认证请求有较严格的速率限制（每小时60次）。支持RESTful风格，返回结构化JSON数据。是获取开源项目信息的标准途径。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.github.com/repos/public-apis/public-apis",
+    "baseUrl": "https://api.github.com",
+    "params": [
+      {
+        "name": "owner",
+        "type": "string",
+        "required": true,
+        "description": "仓库所有者（URL路径部分）",
+        "example": "public-apis|facebook|vuejs"
+      },
+      {
+        "name": "repo",
+        "type": "string",
+        "required": true,
+        "description": "仓库名称（URL路径部分）",
+        "example": "public-apis|react|vue"
+      },
+      {
+        "name": "per_page",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "30"
+      },
+      {
+        "name": "sort",
+        "type": "string",
+        "required": false,
+        "description": "排序方式",
+        "example": "stars|updated|forks"
+      }
+    ],
+    "responseExample": {
+      "id": 123456789,
+      "name": "public-apis",
+      "full_name": "public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stargazers_count": 250000,
+      "forks_count": 28000,
+      "open_issues_count": 50,
+      "language": "Markdown",
+      "license": {
+        "spdx_id": "MIT",
+        "name": "MIT License"
+      }
+    },
+    "docUrl": "https://docs.github.com/en/rest",
+    "status": "active",
+    "tags": [
+      "GitHub",
+      "开源",
+      "仓库",
+      "Issue",
+      "API"
+    ],
+    "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时"
+  },
+  {
+    "id": "httpbin",
+    "name": "HTTPBin",
+    "description": "HTTP请求测试和调试工具",
+    "fullDescription": "RequestBin团队开发的HTTP测试服务，提供get/post/put/delete/patch等各种HTTP方法的测试端点。可以查看完整的请求头、请求体、响应头等信息。还提供状态码测试、延迟模拟、IP检测、UUID生成、Base64编解码等实用工具端点。是前端和后端开发者调试HTTP请求的神器。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://httpbin.org/get?param1=value1&param2=value2",
+    "baseUrl": "https://httpbin.org",
+    "params": [
+      {
+        "name": "endpoint",
+        "type": "string",
+        "required": true,
+        "description": "端点类型（URL路径部分）",
+        "example": "get|post|put|delete|patch|headers|ip|uuid"
+      },
+      {
+        "name": "custom_params",
+        "type": "string",
+        "required": false,
+        "description": "自定义查询参数",
+        "example": "key1=value1&key2=value2"
+      }
+    ],
+    "responseExample": {
+      "args": {
+        "param1": "value1",
+        "param2": "value2"
+      },
+      "headers": {
+        "Accept": "*/*",
+        "Host": "httpbin.org",
+        "User-Agent": "curl/7.88.1",
+        "X-Forwarded-For": "1.2.3.4"
+      },
+      "origin": "1.2.3.4",
+      "url": "https://httpbin.org/get?param1=value1&param2=value2"
+    },
+    "docUrl": "https://httpbin.org/",
+    "status": "active",
+    "tags": [
+      "HTTP测试",
+      "调试",
+      "请求分析",
+      "headers",
+      "工具"
+    ]
+  },
+  {
+    "id": "postman-echo",
+    "name": "Postman Echo",
+    "description": "Postman请求回显服务，用于测试和调试",
+    "fullDescription": "Postman官方提供的请求回显服务，可以将你发送的请求原样返回，方便检查请求是否正确构造。支持各种HTTP方法、Cookie处理、认证测试、延迟模拟等功能。与HTTPBin类似但由Postman维护，稳定性好。特别适合学习和调试RESTful API交互。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+    "baseUrl": "https://postman-echo.com",
+    "params": [
+      {
+        "name": "endpoint",
+        "type": "string",
+        "required": true,
+        "description": "端点类型（URL路径部分）",
+        "example": "get|post|put|delete|patch|headers|cookies|auth/basic"
+      },
+      {
+        "name": "custom_params",
+        "type": "string",
+        "required": false,
+        "description": "自定义查询参数",
+        "example": "key1=value1"
+      }
+    ],
+    "responseExample": {
+      "args": {
+        "foo1": "bar1",
+        "foo2": "bar2"
+      },
+      "headers": {
+        "x-forwarded-proto": "https",
+        "host": "postman-echo.com",
+        "accept": "*/*",
+        "user-agent": "curl/7.88.1"
+      },
+      "url": "https://postman-echo.com/get?foo1=bar1&foo2=bar2"
+    },
+    "docUrl": "https://learning.postman.com/docs/sending-requests/intro-to-collection/",
+    "status": "active",
+    "tags": [
+      "Postman",
+      "回显",
+      "测试",
+      "调试",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "agify-io",
+    "name": "Agify.io",
+    "description": "根据名字预测年龄的趣味API",
+    "fullDescription": "根据给定的名字预测年龄的机器学习API服务。基于大量真实姓名-年龄数据训练，对不同国家和地区的名字有不同的预测模型。支持批量查询，可同时预测多个名字。虽然是预测性质，但在很多场景下能给出合理的结果，适合个性化推荐、用户画像等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.agify.io/?name=michael&country_id=US",
+    "baseUrl": "https://api.agify.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要预测的名字",
+        "example": "michael|emma|liwei"
+      },
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": false,
+        "description": "国家代码（提高准确性）",
+        "example": "US|CN|GB|JP"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "name": "michael",
+      "age": 42,
+      "count": 123456,
+      "country_id": "US"
+    },
+    "docUrl": "https://agify.io/",
+    "status": "active",
+    "tags": [
+      "年龄预测",
+      "名字",
+      "机器学习",
+      "用户画像",
+      "趣味"
+    ]
+  },
+  {
+    "id": "genderize-io",
+    "name": "Genderize.io",
+    "description": "根据名字推测性别的API",
+    "fullDescription": "根据人名推测性别的统计API服务。基于海量真实姓名-性别数据分析，返回概率值而非绝对结论。支持不同国家的数据差异，因为同一名字在不同文化背景下可能倾向不同性别。可与Agify.io配合使用完善用户基本信息。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.genderize.io/?name=james&country_id=US",
+    "baseUrl": "https://api.genderize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要分析的名字",
+        "example": "james|mary|xiaoming"
+      },
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": false,
+        "description": "国家代码",
+        "example": "US|CN|GB"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "name": "james",
+      "gender": "male",
+      "probability": 0.99,
+      "count": 987654,
+      "country_id": "US"
+    },
+    "docUrl": "https://genderize.io/",
+    "status": "active",
+    "tags": [
+      "性别推测",
+      "名字",
+      "统计分析",
+      "概率",
+      "用户画像"
+    ]
+  },
+  {
+    "id": "nationalize-io",
+    "name": "Nationalize.io",
+    "description": "根据名字预测国籍的API",
+    "fullDescription": "根据人名预测其最可能的国籍归属。基于姓氏和名字的分布统计数据，返回概率排名前几的国家及其概率值。可以帮助了解一个名字在不同国家的常见程度，适用于国际化应用的本地化推荐、用户研究等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.nationalize.io/?name=zhang&count=5",
+    "baseUrl": "https://api.nationalize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要分析的名字",
+        "example": "zhang|smith|tanaka"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回国家数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "name": "zhang",
+      "country": [
+        {
+          "country_id": "CN",
+          "probability": 0.92
+        },
+        {
+          "country_id": "SG",
+          "probability": 0.03
+        },
+        {
+          "country_id": "MY",
+          "probability": 0.02
+        }
+      ]
+    },
+    "docUrl": "https://nationalize.io/",
+    "status": "active",
+    "tags": [
+      "国籍预测",
+      "名字",
+      "国际化",
+      "统计",
+      "分布"
+    ]
+  },
+  {
+    "id": "emoji-api",
+    "name": "Emoji API",
+    "description": "Emoji表情符号查询和搜索API",
+    "fullDescription": "全面的Emoji表情符号数据库API，支持按名称、类别、关键词搜索Emoji。返回每个Emoji的Unicode码点、名称、分类、子分组、Skin Tone变体等详细信息。数据保持更新，跟随最新Unicode Emoji标准。适合构建Emoji选择器、表情搜索、社交应用等功能。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://emoji-api.com/emojis?search=heart&access_key=demo",
+    "baseUrl": "https://emoji-api.com/emojis",
+    "params": [
+      {
+        "name": "search",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "heart|smile|animal|food"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "Emoji分类",
+        "example": "smileys-people|animals-nature|food-drink"
+      },
+      {
+        "name": "access_key",
+        "type": "string",
+        "required": false,
+        "description": "API Key（demo可用）",
+        "example": "demo"
+      }
+    ],
+    "responseExample": {
+      "results": [
+        {
+          "name": "red heart",
+          "unicode": "2764",
+          "hexCode": "❤️",
+          "group": "smileys-emotion",
+          "subgroup": "heart"
+        }
+      ],
+      "count": 10
+    },
+    "docUrl": "https://emoji-api.com/",
+    "status": "active",
+    "tags": [
+      "Emoji",
+      "表情",
+      "Unicode",
+      "搜索",
+      "图标"
+    ]
+  },
+  {
+    "id": "universities-list",
+    "name": "Universities List",
+    "description": "全球大学信息查询",
+    "fullDescription": "免费的全球大学信息查询接口，可按国家搜索大学列表，返回学校名称、域名、官网等信息",
+    "category": "data",
+    "method": "GET",
+    "url": "http://universities.hipolabs.com/search?country=China",
+    "baseUrl": "http://universities.hipolabs.com",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家名（英文）",
+        "example": "China"
+      }
+    ],
+    "responseExample": [
+      {
+        "name": "Peking University",
+        "domains": [
+          "pku.edu.cn"
+        ],
+        "web_pages": [
+          "http://www.pku.edu.cn/"
+        ],
+        "country": "China",
+        "alpha_two_code": "CN"
+      }
+    ],
+    "docUrl": "https://github.com/Hipo/university-domains-list",
+    "status": "active",
+    "tags": [
+      "大学",
+      "教育",
+      "数据查询"
+    ],
+    "note": ""
+  },
+  {
+    "id": "coindesk-bpi",
+    "name": "CoinDesk Bitcoin Price",
+    "description": "比特币实时价格指数",
+    "fullDescription": "CoinDesk提供的比特币价格指数API，实时返回美元、欧元、英镑的比特币价格，数据可靠更新频繁",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
+    "baseUrl": "https://api.coindesk.com/v1/bpi",
+    "params": [],
+    "responseExample": {
+      "time": {
+        "updated": "Jun 11, 2026 00:00:00 UTC"
+      },
+      "bpi": {
+        "USD": {
+          "rate": "45,000.00"
+        },
+        "EUR": {
+          "rate": "40,000.00"
+        }
+      }
+    },
+    "docUrl": "https://www.coindesk.com/coindesk-api",
+    "status": "active",
+    "tags": [
+      "比特币",
+      "加密货币",
+      "价格",
+      "金融"
+    ],
+    "note": ""
+  },
+  {
+    "id": "exchangerate-api",
+    "name": "ExchangeRate-API",
+    "description": "实时汇率数据",
+    "fullDescription": "免费开放的汇率查询API，无需API Key，支持160+货币汇率查询，数据每日更新",
+    "category": "data",
+    "method": "GET",
+    "url": "https://open.er-api.com/v6/latest/USD",
+    "baseUrl": "https://open.er-api.com/v6",
+    "params": [
+      {
+        "name": "baseCurrency",
+        "type": "string",
+        "required": false,
+        "description": "基准货币代码",
+        "example": "USD"
+      }
+    ],
+    "responseExample": {
+      "result": "success",
+      "base_code": "USD",
+      "rates": {
+        "CNY": 7.25,
+        "EUR": 0.92
+      }
+    },
+    "docUrl": "https://www.exchangerate-api.com/docs/free",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "货币",
+      "金融",
+      "数据"
+    ],
+    "note": "免费版更新频率约24小时"
+  },
+  {
+    "id": "openbrewerydb",
+    "name": "Open Brewery DB",
+    "description": "精酿啤酒厂数据",
+    "fullDescription": "开放的全球精酿啤酒厂数据库API，可按城市、州、类型等筛选查询啤酒厂信息",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.openbrewerydb.org/v1/breweries?by_city=portland&per_page=5",
+    "baseUrl": "https://api.openbrewerydb.org/v1",
+    "params": [
+      {
+        "name": "by_city",
+        "type": "string",
+        "required": false,
+        "description": "按城市筛选",
+        "example": "portland"
+      },
+      {
+        "name": "per_page",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      {
+        "id": "b54b16e1",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "city": "Portland"
+      }
+    ],
+    "docUrl": "https://www.openbrewerydb.org/documentation",
+    "status": "active",
+    "tags": [
+      "啤酒",
+      "数据",
+      "地图"
+    ],
+    "note": ""
+  },
+  {
+    "id": "cocktail-db",
+    "name": "TheCocktailDB",
+    "description": "鸡尾酒配方查询",
+    "fullDescription": "免费的鸡尾酒数据库API，包含数百种鸡尾酒配方、配料、制作方法和图片，可按名字搜索",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+    "baseUrl": "https://www.thecocktaildb.com/api/json/v1/1",
+    "params": [
+      {
+        "name": "s",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "margarita"
+      }
+    ],
+    "responseExample": {
+      "drinks": [
+        {
+          "strDrink": "Margarita",
+          "strCategory": "Cocktail",
+          "strInstructions": "Rub the rim..."
+        }
+      ]
+    },
+    "docUrl": "https://www.thecocktaildb.com/api.php",
+    "status": "active",
+    "tags": [
+      "鸡尾酒",
+      "食谱",
+      "饮品"
+    ],
+    "note": "免费开发版有调用频率限制"
+  },
+  {
+    "id": "free-dictionary",
+    "name": "Free Dictionary API",
+    "description": "免费英语词典查询",
+    "fullDescription": "免费的英语词典API，返回单词音标、发音音频、词性、定义、例句等完整词典信息",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.dictionaryapi.dev/api/v2/entries/en/hello",
+    "baseUrl": "https://api.dictionaryapi.dev/api/v2/entries/en",
+    "params": [
+      {
+        "name": "word",
+        "type": "string",
+        "required": true,
+        "description": "查询的英文单词",
+        "example": "hello"
+      }
+    ],
+    "responseExample": [
+      {
+        "word": "hello",
+        "phonetic": "həˈləʊ",
+        "meanings": [
+          {
+            "partOfSpeech": "exclamation",
+            "definitions": [
+              {
+                "definition": "used as a greeting",
+                "example": "Hello there!"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "docUrl": "https://dictionaryapi.dev/",
+    "status": "active",
+    "tags": [
+      "词典",
+      "英语",
+      "学习",
+      "单词"
+    ],
+    "note": ""
+  },
+  {
+    "id": "advice-slip",
+    "name": "Advice Slip",
+    "description": "随机人生建议",
+    "fullDescription": "随机生成一条生活建议/名言警句的API，轻松有趣的API，适合在应用中加入一点幽默元素",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.adviceslip.com/advice",
+    "baseUrl": "https://api.adviceslip.com",
+    "params": [],
+    "responseExample": {
+      "slip": {
+        "id": 123,
+        "advice": "Always wear clean underwear."
+      }
+    },
+    "docUrl": "https://api.adviceslip.com/",
+    "status": "active",
+    "tags": [
+      "建议",
+      "名言",
+      "趣味"
+    ],
+    "note": ""
+  },
+  {
+    "id": "yesno-api",
+    "name": "YesNo API",
+    "description": "随机Yes/No决策",
+    "fullDescription": "随机返回Yes或No的趣味API，每次调用附带一张对应的GIF动图，适合做简单的决策辅助",
+    "category": "other",
+    "method": "GET",
+    "url": "https://yesno.wtf/api",
+    "baseUrl": "https://yesno.wtf",
+    "params": [],
+    "responseExample": {
+      "answer": "yes",
+      "forced": false,
+      "image": "https://yesno.wtf/assets/yes/1.gif"
+    },
+    "docUrl": "https://yesno.wtf/",
+    "status": "active",
+    "tags": [
+      "趣味",
+      "随机",
+      "决策"
+    ],
+    "note": ""
+  },
+  {
+    "id": "deck-of-cards",
+    "name": "Deck of Cards API",
+    "description": "在线扑克牌模拟",
+    "fullDescription": "模拟一副标准扑克牌的API，支持洗牌、抽牌、发牌等操作，适合开发卡牌类小游戏",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+    "baseUrl": "https://deckofcardsapi.com/api/deck",
+    "params": [
+      {
+        "name": "deck_count",
+        "type": "number",
+        "required": false,
+        "description": "牌组数量",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "success": true,
+      "deck_id": "3p40paa87x90",
+      "remaining": 52,
+      "shuffled": true
+    },
+    "docUrl": "https://deckofcardsapi.com/",
+    "status": "active",
+    "tags": [
+      "扑克牌",
+      "游戏",
+      "卡牌"
+    ],
+    "note": ""
+  },
+  {
+    "id": "open-trivia",
+    "name": "Open Trivia Database",
+    "description": "开放式问答题库",
+    "fullDescription": "用户提供的开放式问答题目数据库API，支持多类别、难度分级，题目格式含选择和判断",
+    "category": "data",
+    "method": "GET",
+    "url": "https://opentdb.com/api.php?amount=10&type=multiple",
+    "baseUrl": "https://opentdb.com/api.php",
+    "params": [
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "题目数量",
+        "example": "10"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "题目类型",
+        "example": "multiple"
+      }
+    ],
+    "responseExample": {
+      "response_code": 0,
+      "results": [
+        {
+          "category": "Science",
+          "type": "multiple",
+          "difficulty": "medium",
+          "question": "What is...",
+          "correct_answer": "A",
+          "incorrect_answers": [
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://opentdb.com/api_config.php",
+    "status": "active",
+    "tags": [
+      "问答",
+      "题目",
+      "游戏",
+      "教育"
+    ],
+    "note": "免费使用，session token可减少重复题目"
+  },
+  {
+    "id": "numbers-api",
+    "name": "Numbers API",
+    "description": "数字趣味知识",
+    "fullDescription": "提供关于数字的趣味事实和百科知识API，支持数学、日期、年份等类型，非常适合教育应用",
+    "category": "data",
+    "method": "GET",
+    "url": "http://numbersapi.com/42/math",
+    "baseUrl": "http://numbersapi.com",
+    "params": [],
+    "responseExample": "42 is the number of roads a person must travel down before you can call them a person.",
+    "docUrl": "http://numbersapi.com/",
+    "status": "active",
+    "tags": [
+      "数字",
+      "数学",
+      "趣味",
+      "教育"
+    ],
+    "note": "纯文本响应，非JSON"
+  },
+  {
+    "id": "nasa-apod",
+    "name": "NASA 每日天文图片",
+    "description": "NASA每日天文照片",
+    "fullDescription": "NASA提供的每日天文图片API（APOD），使用DEMO_KEY即可免费访问，包含高清天文图片和说明",
+    "category": "image",
+    "method": "GET",
+    "url": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+    "baseUrl": "https://api.nasa.gov/planetary",
+    "params": [
+      {
+        "name": "api_key",
+        "type": "string",
+        "required": true,
+        "description": "使用DEMO_KEY即可",
+        "example": "DEMO_KEY"
+      }
+    ],
+    "responseExample": {
+      "title": "Moon and Venus",
+      "url": "https://apod.nasa.gov/apod/image/...",
+      "explanation": "..."
+    },
+    "docUrl": "https://api.nasa.gov/",
+    "status": "active",
+    "tags": [
+      "NASA",
+      "天文",
+      "图片",
+      "太空",
+      "科学"
+    ],
+    "note": "DEMO_KEY限速每小时30次，生产环境需申请免费API Key"
+  },
+  {
+    "id": "open-notify-iss",
+    "name": "Open Notify ISS",
+    "description": "国际空间站实时位置",
+    "fullDescription": "查询国际空间站(ISS)当前位置和太空中宇航员人数的开放API，数据实时更新",
+    "category": "data",
+    "method": "GET",
+    "url": "http://api.open-notify.org/iss-now.json",
+    "baseUrl": "http://api.open-notify.org",
+    "params": [],
+    "responseExample": {
+      "timestamp": 1620000000,
+      "iss_position": {
+        "latitude": "-25.1853",
+        "longitude": "85.4796"
+      },
+      "message": "success"
+    },
+    "docUrl": "http://open-notify.org/Open-Notify-API/",
+    "status": "active",
+    "tags": [
+      "太空",
+      "ISS",
+      "位置",
+      "科学",
+      "教育"
+    ],
+    "note": "免费公开，无需认证"
+  },
+  {
+    "id": "chuck-norris-jokes",
+    "name": "Chuck Norris Jokes",
+    "description": "Chuck Norris笑话",
+    "fullDescription": "随机生成Chuck Norris笑话的趣味API，笑话均为用户贡献，支持多类别筛选",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.chucknorris.io/jokes/random",
+    "baseUrl": "https://api.chucknorris.io",
+    "params": [],
+    "responseExample": {
+      "id": "abc123",
+      "value": "Chuck Norris can slam a revolving door.",
+      "url": "https://api.chucknorris.io/jokes/abc123"
+    },
+    "docUrl": "https://api.chucknorris.io/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "趣味",
+      "Chuck Norris"
+    ],
+    "note": ""
+  },
+  {
+    "id": "open-library-search",
+    "name": "Open Library 书籍搜索",
+    "description": "开放图书馆搜索",
+    "fullDescription": "互联网档案馆提供的开放图书馆API，可搜索数千万册书籍信息，支持按书名、作者、ISBN等查询",
+    "category": "data",
+    "method": "GET",
+    "url": "https://openlibrary.org/search.json?q=the+lord+of+the+rings",
+    "baseUrl": "https://openlibrary.org",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": true,
+        "description": "搜索关键词",
+        "example": "the lord of the rings"
+      }
+    ],
+    "responseExample": {
+      "numFound": 100,
+      "docs": [
+        {
+          "title": "The Lord of the Rings",
+          "author_name": [
+            "J.R.R. Tolkien"
+          ],
+          "first_publish_year": 1954
+        }
+      ]
+    },
+    "docUrl": "https://openlibrary.org/dev/docs/api/search",
+    "status": "active",
+    "tags": [
+      "书籍",
+      "图书馆",
+      "搜索",
+      "阅读"
+    ],
+    "note": ""
+  },
+  {
+    "id": "bored-api",
+    "name": "Bored API",
+    "description": "随机活动建议",
+    "fullDescription": "当你无聊时帮你找点事做的API，可根据参与者数量、类型、价格等条件筛选随机活动",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.boredapi.com/api/activity",
+    "baseUrl": "https://www.boredapi.com/api",
+    "params": [
+      {
+        "name": "participants",
+        "type": "number",
+        "required": false,
+        "description": "参与人数",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "activity": "Learn a new programming language",
+      "type": "education",
+      "participants": 1,
+      "price": 0.1
+    },
+    "docUrl": "https://www.boredapi.com/documentation",
+    "status": "active",
+    "tags": [
+      "趣味",
+      "活动",
+      "建议"
+    ],
+    "note": ""
+  }
+]
