@@ -1414,39 +1414,6 @@
     "note": ""
   },
   {
-    "id": "coindesk-bpi",
-    "name": "CoinDesk Bitcoin Price",
-    "description": "比特币实时价格指数",
-    "fullDescription": "CoinDesk提供的比特币价格指数API，实时返回美元、欧元、英镑的比特币价格，数据可靠更新频繁",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
-    "baseUrl": "https://api.coindesk.com/v1/bpi",
-    "params": [],
-    "responseExample": {
-      "time": {
-        "updated": "Jun 11, 2026 00:00:00 UTC"
-      },
-      "bpi": {
-        "USD": {
-          "rate": "45,000.00"
-        },
-        "EUR": {
-          "rate": "40,000.00"
-        }
-      }
-    },
-    "docUrl": "https://www.coindesk.com/coindesk-api",
-    "status": "active",
-    "tags": [
-      "比特币",
-      "加密货币",
-      "价格",
-      "金融"
-    ],
-    "note": ""
-  },
-  {
     "id": "exchangerate-api",
     "name": "ExchangeRate-API",
     "description": "实时汇率数据",
@@ -1751,7 +1718,7 @@
     "params": [],
     "responseExample": "42 is the number of roads a person must travel down before you can call them a person.",
     "docUrl": "http://numbersapi.com/",
-    "status": "active",
+    "status": "unstable",
     "tags": [
       "数字",
       "数学",
@@ -1844,79 +1811,6 @@
       "笑话",
       "趣味",
       "Chuck Norris"
-    ],
-    "note": ""
-  },
-  {
-    "id": "open-library-search",
-    "name": "Open Library 书籍搜索",
-    "description": "开放图书馆搜索",
-    "fullDescription": "互联网档案馆提供的开放图书馆API，可搜索数千万册书籍信息，支持按书名、作者、ISBN等查询",
-    "category": "data",
-    "method": "GET",
-    "url": "https://openlibrary.org/search.json?q=the+lord+of+the+rings",
-    "baseUrl": "https://openlibrary.org",
-    "params": [
-      {
-        "name": "q",
-        "type": "string",
-        "required": true,
-        "description": "搜索关键词",
-        "example": "the lord of the rings"
-      }
-    ],
-    "responseExample": {
-      "numFound": 100,
-      "docs": [
-        {
-          "title": "The Lord of the Rings",
-          "author_name": [
-            "J.R.R. Tolkien"
-          ],
-          "first_publish_year": 1954
-        }
-      ]
-    },
-    "docUrl": "https://openlibrary.org/dev/docs/api/search",
-    "status": "active",
-    "tags": [
-      "书籍",
-      "图书馆",
-      "搜索",
-      "阅读"
-    ],
-    "note": ""
-  },
-  {
-    "id": "bored-api",
-    "name": "Bored API",
-    "description": "随机活动建议",
-    "fullDescription": "当你无聊时帮你找点事做的API，可根据参与者数量、类型、价格等条件筛选随机活动",
-    "category": "other",
-    "method": "GET",
-    "url": "https://www.boredapi.com/api/activity",
-    "baseUrl": "https://www.boredapi.com/api",
-    "params": [
-      {
-        "name": "participants",
-        "type": "number",
-        "required": false,
-        "description": "参与人数",
-        "example": "1"
-      }
-    ],
-    "responseExample": {
-      "activity": "Learn a new programming language",
-      "type": "education",
-      "participants": 1,
-      "price": 0.1
-    },
-    "docUrl": "https://www.boredapi.com/documentation",
-    "status": "active",
-    "tags": [
-      "趣味",
-      "活动",
-      "建议"
     ],
     "note": ""
   }
