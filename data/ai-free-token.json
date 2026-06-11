@@ -1215,17 +1215,6 @@
       }
     },
     {
-      "name": "商汤日日新 (SenseNova)",
-      "quota": "【⚠️ 已过期】Token Plan 公测首月免费已于2026年5月到期下线；后续将推出 Lite/Pro 付费档位（具体时间待官方公告）；API已暂停开放",
-      "cycle": "已过期（公测首月免费活动已结束，付费档位待发布）",
-      "url": "https://www.sensenova.cn",
-      "develop": {
-        "document_url": "https://www.sensenova.cn/token-plan",
-        "base_url": "https://token.sensenova.cn/v1",
-        "models": []
-      }
-    },
-    {
       "name": "Scaleway Generative APIs",
       "quota": "100万 tokens免费额度；支持Gemma 4 26B、GPT-OSS-120B、Qwen3.5-397B、Mistral Medium 3.5、Devstral 2等最新模型",
       "cycle": "一次性注册赠送100万tokens（用完为止，不刷新）",
@@ -1448,5 +1437,6 @@
         ]
       }
     }
-  ]
+  ],
+  "lastUpdateTime": "2026-06-11T14:14:06.877Z"
 }

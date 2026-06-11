@@ -2366,5 +2366,1138 @@
       "文化"
     ],
     "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license"
+  },
+  {
+    "id": "boredapi",
+    "name": "Bored API",
+    "description": "随机活动建议，帮你打发无聊时光",
+    "fullDescription": "当你无聊时，Bored API为你推荐各种活动。支持按类型筛选（教育、休闲、社交、DIY、慈善、烹饪、音乐、忙碌等），按参与人数和价格范围过滤。非常适合开发'今天做什么'类型的应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://bored-api.appbrewery.com/random",
+    "baseUrl": "https://bored-api.appbrewery.com",
+    "params": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "活动类型：education, recreational, social, diy, charity, cooking, relaxation, music, busywork",
+        "example": "recreational"
+      },
+      {
+        "name": "participants",
+        "type": "number",
+        "required": false,
+        "description": "参与人数",
+        "example": "2"
+      },
+      {
+        "name": "price",
+        "type": "number",
+        "required": false,
+        "description": "价格范围 0-1",
+        "example": "0"
+      }
+    ],
+    "responseExample": {
+      "activity": "Learn a new programming language",
+      "type": "education",
+      "participants": 1,
+      "price": 0,
+      "link": "",
+      "key": "1",
+      "accessibility": 0.1
+    },
+    "docUrl": "https://www.boredapi.com/",
+    "status": "active",
+    "tags": [
+      "活动",
+      "无聊",
+      "建议",
+      "休闲",
+      "随机"
+    ]
+  },
+  {
+    "id": "ipinfo-io",
+    "name": "IPinfo.io",
+    "description": "IP地址归属地和运营商信息查询",
+    "fullDescription": "查询任意IP地址的地理位置（国家、城市、区域）、运营商ASN、时区、邮编等信息。无需API Key即可查询，每月免费50,000次请求。返回结构清晰的JSON数据，非常适合IP定位应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://ipinfo.io/8.8.8.8/json",
+    "baseUrl": "https://ipinfo.io",
+    "params": [
+      {
+        "name": "ip",
+        "type": "string",
+        "required": false,
+        "description": "要查询的IP地址，不传则查当前IP",
+        "example": "8.8.8.8"
+      }
+    ],
+    "responseExample": {
+      "ip": "8.8.8.8",
+      "hostname": "dns.google",
+      "city": "Mountain View",
+      "region": "California",
+      "country": "US",
+      "loc": "37.4056,-122.0775",
+      "org": "AS15169 Google LLC",
+      "postal": "94043",
+      "timezone": "America/Los_Angeles"
+    },
+    "docUrl": "https://ipinfo.io/developers",
+    "status": "active",
+    "tags": [
+      "IP",
+      "归属地",
+      "地理定位",
+      "ASN",
+      "运营商"
+    ]
+  },
+  {
+    "id": "colormind",
+    "name": "Colormind",
+    "description": "AI驱动的配色方案生成器",
+    "fullDescription": "使用深度学习算法生成和谐的配色方案。支持多种配色模型（默认、电影、复古等），每次返回5种颜色的配色组合。非常适合设计工具、UI配色灵感生成等应用。POST请求需发送JSON body指定模型。",
+    "category": "tool",
+    "method": "POST",
+    "url": "http://colormind.io/api/",
+    "baseUrl": "http://colormind.io",
+    "params": [
+      {
+        "name": "model",
+        "type": "string",
+        "required": false,
+        "description": "配色模型：default, ui, vivid, muted, pastel, etc.",
+        "example": "default"
+      }
+    ],
+    "responseExample": {
+      "result": [
+        [
+          44,
+          43,
+          43
+        ],
+        [
+          120,
+          85,
+          88
+        ],
+        [
+          217,
+          164,
+          125
+        ],
+        [
+          244,
+          221,
+          182
+        ],
+        [
+          247,
+          233,
+          213
+        ]
+      ]
+    },
+    "docUrl": "http://colormind.io/api/",
+    "status": "active",
+    "tags": [
+      "配色",
+      "设计",
+      "AI",
+      "颜色",
+      "UI"
+    ]
+  },
+  {
+    "id": "lipsum",
+    "name": "Lorem Ipsum Generator",
+    "description": "生成占位文本(Lorem Ipsum)的经典API",
+    "fullDescription": "生成Lorem Ipsum占位文本，支持按段落数、字数、列表数量生成。返回的JSON包含生成的文本及统计信息（段落数、字数、字符数）。非常适合前端开发中填充文本占位内容。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://lipsum.com/feed/json?amount=3&what=paras",
+    "baseUrl": "https://lipsum.com",
+    "params": [
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "生成数量",
+        "example": "3"
+      },
+      {
+        "name": "what",
+        "type": "string",
+        "required": false,
+        "description": "生成类型：paras(段落), words(字), bytes(字节), lists(列表)",
+        "example": "paras"
+      }
+    ],
+    "responseExample": {
+      "feed": {
+        "lipsum": "Lorem ipsum dolor sit amet...",
+        "generated": "3 paragraphs",
+        "donatelink": "",
+        "creditlink": "",
+        "subtitle": ""
+      }
+    },
+    "docUrl": "https://lipsum.com/",
+    "status": "active",
+    "tags": [
+      "占位文本",
+      "Lorem Ipsum",
+      "生成器",
+      "测试数据"
+    ]
+  },
+  {
+    "id": "xkcd",
+    "name": "xkcd Comics",
+    "description": "获取xkcd漫画的信息和元数据",
+    "fullDescription": "获取xkcd科技漫画的标题、图片URL、ALT文字等信息。支持获取最新一集、指定编号的漫画。xkcd是著名的极客/科技向网络漫画，其API简单直接，非常适合开发漫画阅读器或随机漫画展示。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://xkcd.com/1/info.0.json",
+    "baseUrl": "https://xkcd.com",
+    "params": [
+      {
+        "name": "comic_id",
+        "type": "number",
+        "required": false,
+        "description": "漫画编号（URL路径中），不传则返回最新",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "month": "1",
+      "num": 1,
+      "link": "",
+      "year": "2006",
+      "news": "",
+      "safe_title": "Barrel - Part 1",
+      "transcript": "[[A boy sits in a barrel which is floating in an ocean.]]",
+      "alt": "Don't we all.",
+      "img": "https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg",
+      "title": "Barrel - Part 1",
+      "day": "1"
+    },
+    "docUrl": "https://xkcd.com/json.html",
+    "status": "active",
+    "tags": [
+      "漫画",
+      "xkcd",
+      "科技",
+      "幽默",
+      "极客"
+    ]
+  },
+  {
+    "id": "ice-and-fire",
+    "name": "An API of Ice And Fire",
+    "description": "冰与火之歌(权力的游戏)数据API",
+    "fullDescription": "提供《冰与火之歌》系列小说的完整数据，包括书籍、角色、家族信息。支持按名称、文化、性别等筛选角色，按书名查找书籍等。非常适合开发奇幻文学或电视剧相关应用。数据来源于开源社区维护。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.anapioficeandfire.com/api/books/1",
+    "baseUrl": "https://www.anapioficeandfire.com/api",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "按名称筛选",
+        "example": "A Game of Thrones"
+      },
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "分页页码",
+        "example": "1"
+      },
+      {
+        "name": "pageSize",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "10"
+      }
+    ],
+    "responseExample": {
+      "url": "https://www.anapioficeandfire.com/api/books/1",
+      "name": "A Game of Thrones",
+      "isbn": "978-0553103540",
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "numberOfPages": 694,
+      "publisher": "Bantam Books",
+      "country": "United States",
+      "released": "1996-08-01T00:00:00"
+    },
+    "docUrl": "https://anapioficeandfire.com/Documentation",
+    "status": "active",
+    "tags": [
+      "冰与火之歌",
+      "权力的游戏",
+      "小说",
+      "角色",
+      "家族"
+    ]
+  },
+  {
+    "id": "rick-and-morty",
+    "name": "Rick and Morty API",
+    "description": "瑞克和莫蒂动画角色和剧情数据",
+    "fullDescription": "提供《瑞克和莫蒂》动画的完整数据，包括角色、地点、剧集信息。支持丰富的筛选条件（角色按状态/物种/性别，地点按类型/维度，剧集按名称/剧集号）。GraphQL和REST两种接口均可使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://rickandmortyapi.com/api/character/1",
+    "baseUrl": "https://rickandmortyapi.com/api",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "按名称筛选",
+        "example": "rick"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "角色状态：alive, dead, unknown",
+        "example": "alive"
+      },
+      {
+        "name": "species",
+        "type": "string",
+        "required": false,
+        "description": "物种",
+        "example": "Human"
+      }
+    ],
+    "responseExample": {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "type": "",
+      "gender": "Male",
+      "origin": {
+        "name": "Earth (C-137)",
+        "url": "https://rickandmortyapi.com/api/location/1"
+      },
+      "location": {
+        "name": "Citadel of Ricks",
+        "url": "https://rickandmortyapi.com/api/location/3"
+      },
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    },
+    "docUrl": "https://rickandmortyapi.com/documentation",
+    "status": "active",
+    "tags": [
+      "瑞克和莫蒂",
+      "动画",
+      "角色",
+      "剧集",
+      "GraphQL"
+    ]
+  },
+  {
+    "id": "zenquotes",
+    "name": "ZenQuotes",
+    "description": "随机励志名言和哲学语录",
+    "fullDescription": "提供随机励志名言，支持获取随机语录、今日语录、作者语录等。返回名言文本和作者信息。非常适合开发名言展示、每日灵感、启动页等应用。免费版无需API Key。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://zenquotes.io/api/random",
+    "baseUrl": "https://zenquotes.io/api",
+    "params": [
+      {
+        "name": "mode",
+        "type": "string",
+        "required": false,
+        "description": "路径：random(随机), today(今日), quotes(全部)",
+        "example": "random"
+      }
+    ],
+    "responseExample": [
+      {
+        "q": "The only way to do great work is to love what you do.",
+        "a": "Steve Jobs",
+        "h": "<blockquote>...</blockquote>"
+      }
+    ],
+    "docUrl": "https://zenquotes.io/",
+    "status": "active",
+    "tags": [
+      "名言",
+      "励志",
+      "哲学",
+      "语录",
+      "灵感"
+    ]
+  },
+  {
+    "id": "cataas",
+    "name": "Cat as a Service",
+    "description": "猫咪图片即服务，支持GIF和滤镜",
+    "fullDescription": "提供随机猫咪图片，支持JSON格式返回图片URL，支持GIF动图、各种滤镜（模糊、反转、灰度、像素化、旋转等）、自定义文字叠加。比其他猫咪图片API更灵活，可直接获取图片或通过JSON获取元数据。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://cataas.com/cat?json=true",
+    "baseUrl": "https://cataas.com",
+    "params": [
+      {
+        "name": "json",
+        "type": "boolean",
+        "required": false,
+        "description": "返回JSON而非图片",
+        "example": "true"
+      },
+      {
+        "name": "gif",
+        "type": "boolean",
+        "required": false,
+        "description": "返回GIF动图",
+        "example": "true"
+      },
+      {
+        "name": "filter",
+        "type": "string",
+        "required": false,
+        "description": "滤镜：blur, invert, grayscale, pixel, sepia, paint, custom",
+        "example": "grayscale"
+      }
+    ],
+    "responseExample": {
+      "_id": "595f4e8dce1af7000ew4f2e1",
+      "tags": [
+        "cute",
+        "kitten"
+      ],
+      "createdAt": "2021-04-09T14:28:24.073Z",
+      "url": "/cat/595f4e8dce1af7000ew4f2e1"
+    },
+    "docUrl": "https://cataas.com/",
+    "status": "active",
+    "tags": [
+      "猫咪",
+      "图片",
+      "GIF",
+      "滤镜",
+      "动物"
+    ]
+  },
+  {
+    "id": "sunrise-sunset",
+    "name": "Sunrise Sunset",
+    "description": "查询任意地点的日出日落时间",
+    "fullDescription": "根据经纬度计算日出、日落、黄昏、黎明等时间信息。支持日期指定，返回UTC和本地时间。数据由美国海军天文台算法计算，精确可靠。非常适合开发日出日落日历、摄影黄金时间计算器等应用。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://api.sunrise-sunset.org/json?lat=39.9&lng=116.4",
+    "baseUrl": "https://api.sunrise-sunset.org",
+    "params": [
+      {
+        "name": "lat",
+        "type": "number",
+        "required": true,
+        "description": "纬度",
+        "example": "39.9"
+      },
+      {
+        "name": "lng",
+        "type": "number",
+        "required": true,
+        "description": "经度",
+        "example": "116.4"
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "required": false,
+        "description": "日期(YYYY-MM-DD)，默认今天",
+        "example": "2026-01-01"
+      },
+      {
+        "name": "formatted",
+        "type": "number",
+        "required": false,
+        "description": "0=ISO 8601, 1=可读格式",
+        "example": "0"
+      }
+    ],
+    "responseExample": {
+      "results": {
+        "sunrise": "11:36:14 PM",
+        "sunset": "1:23:10 PM",
+        "solar_noon": "6:29:42 AM",
+        "day_length": "14:26:56",
+        "civil_twilight_begin": "11:06:58 PM",
+        "civil_twilight_end": "1:52:26 PM"
+      },
+      "status": "OK"
+    },
+    "docUrl": "https://sunrise-sunset.org/api",
+    "status": "active",
+    "tags": [
+      "日出",
+      "日落",
+      "天文",
+      "时间",
+      "摄影"
+    ]
+  },
+  {
+    "id": "usaspending",
+    "name": "USAspending.gov",
+    "description": "美国政府财政支出开放数据",
+    "fullDescription": "美国联邦政府官方支出数据API，提供预算、拨款、合同、拨款等详细财务数据。可按机构、时间、地点等维度查询。数据来源权威，适合开发政府透明度、财政分析等应用。注意数据量较大，建议使用分页。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.usaspending.gov/api/v2/references/def_codes/",
+    "baseUrl": "https://api.usaspending.gov/api/v2",
+    "params": [
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "分页页码",
+        "example": "1"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "10"
+      }
+    ],
+    "responseExample": {
+      "results": [
+        {
+          "code": "L",
+          "public_law": "Public Law 117-2",
+          "title": "American Rescue Plan Act",
+          "urls": []
+        }
+      ]
+    },
+    "docUrl": "https://api.usaspending.gov/",
+    "status": "active",
+    "tags": [
+      "美国",
+      "政府支出",
+      "财政",
+      "开放数据",
+      "预算"
+    ]
+  },
+  {
+    "id": "nobel-prize",
+    "name": "Nobel Prize API",
+    "description": "诺贝尔奖获奖者与奖项数据",
+    "fullDescription": "官方诺贝尔奖开放数据API，提供1901年至今所有诺贝尔奖信息，包括获奖者姓名、获奖年份、奖项类别、获奖理由、关联的大学和组织等。支持按年份范围、类别筛选。非常适合开发知识科普、历史查询类应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.nobelprize.org/2.1/nobelPrizes?limit=3",
+    "baseUrl": "https://api.nobelprize.org/2.1",
+    "params": [
+      {
+        "name": "nobelPrizeYear",
+        "type": "number",
+        "required": false,
+        "description": "获奖年份",
+        "example": "2024"
+      },
+      {
+        "name": "nobelPrizeCategory",
+        "type": "string",
+        "required": false,
+        "description": "奖项类别：che, eco, lit, peace, phys, med",
+        "example": "phys"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "nobelPrizes": [
+        {
+          "awardYear": "2024",
+          "category": {
+            "en": "Physics"
+          },
+          "laureates": [
+            {
+              "knownName": {
+                "en": "John Hopfield"
+              },
+              "motivation": {
+                "en": "for foundational discoveries..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://www.nobelprize.org/about/developer-zone-2/",
+    "status": "active",
+    "tags": [
+      "诺贝尔奖",
+      "科学",
+      "获奖者",
+      "历史",
+      "知识"
+    ]
+  },
+  {
+    "id": "flag-cdn",
+    "name": "Flag CDN",
+    "description": "全球国旗图片和代码查询服务",
+    "fullDescription": "提供全球各国国旗的SVG/PNG图片CDN服务，以及国家代码查询。支持多种尺寸和格式，按ISO 3166-1国家代码检索。非常适合开发国家选择器、多语言界面国旗展示等应用。响应快速，CDN加速全球访问。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://flagcdn.com/en/codes.json",
+    "baseUrl": "https://flagcdn.com",
+    "params": [
+      {
+        "name": "country_code",
+        "type": "string",
+        "required": false,
+        "description": "ISO国家代码（URL路径中）",
+        "example": "cn"
+      },
+      {
+        "name": "width",
+        "type": "number",
+        "required": false,
+        "description": "图片宽度: 20, 40, 80, 160, 320, 640",
+        "example": "160"
+      }
+    ],
+    "responseExample": {
+      "cn": "China",
+      "us": "United States",
+      "jp": "Japan",
+      "kr": "South Korea",
+      "gb": "United Kingdom"
+    },
+    "docUrl": "https://flagcdn.com/",
+    "status": "active",
+    "tags": [
+      "国旗",
+      "CDN",
+      "图片",
+      "国家代码",
+      "SVG"
+    ]
+  },
+  {
+    "id": "disease-sh",
+    "name": "Disease.sh",
+    "description": "COVID-19全球疫情数据API",
+    "fullDescription": "开放源码的COVID-19数据API，聚合WHO、JHU CSSE等多个数据源。提供全球/国家/省份数据，包括累计/新增确诊、死亡、康复、疫苗接种等。支持历史数据查询。数据由社区维护，更新频繁。适合疫情数据可视化。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://disease.sh/v3/covid-19/all",
+    "baseUrl": "https://disease.sh/v3",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家名或ISO代码（路径参数）",
+        "example": "CN"
+      },
+      {
+        "name": "yesterday",
+        "type": "boolean",
+        "required": false,
+        "description": "使用昨日数据",
+        "example": "true"
+      },
+      {
+        "name": "strict",
+        "type": "boolean",
+        "required": false,
+        "description": "严格模式，仅JHU数据",
+        "example": "true"
+      }
+    ],
+    "responseExample": {
+      "updated": 1703232000000,
+      "cases": 700000000,
+      "todayCases": 100000,
+      "deaths": 7000000,
+      "todayDeaths": 500,
+      "recovered": 670000000,
+      "active": 23000000,
+      "affectedCountries": 230
+    },
+    "docUrl": "https://disease.sh/",
+    "status": "active",
+    "tags": [
+      "COVID-19",
+      "疫情",
+      "数据",
+      "疫苗",
+      "全球"
+    ]
+  },
+  {
+    "id": "met-museum",
+    "name": "Met Museum Open Access",
+    "description": "纽约大都会艺术博物馆开放数据API",
+    "fullDescription": "大都会博物馆官方开放API，提供超过47万件藏品的元数据和图片。支持按关键词搜索、按部门浏览、获取藏品详情（标题、艺术家、年代、图片URL、博物馆链接等）。所有开放数据均为公共领域，可自由使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/1",
+    "baseUrl": "https://collectionapi.metmuseum.org/public/collection/v1",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词（/search端点）",
+        "example": "sunflower"
+      },
+      {
+        "name": "departmentId",
+        "type": "number",
+        "required": false,
+        "description": "部门ID",
+        "example": "11"
+      },
+      {
+        "name": "hasImages",
+        "type": "boolean",
+        "required": false,
+        "description": "仅返回有图片的",
+        "example": "true"
+      }
+    ],
+    "responseExample": {
+      "objectID": 1,
+      "isPublicDomain": true,
+      "title": "Portrait of a Man",
+      "primaryImage": "https://images.metmuseum.org/...",
+      "artistDisplayName": "Rembrandt",
+      "objectDate": "1654",
+      "department": "European Paintings"
+    },
+    "docUrl": "https://metmuseum.github.io/",
+    "status": "active",
+    "tags": [
+      "博物馆",
+      "艺术",
+      "藏品",
+      "图片",
+      "文化"
+    ]
+  },
+  {
+    "id": "nager-date",
+    "name": "Nager.Date",
+    "description": "全球公共假期和节假日查询API",
+    "fullDescription": "查询全球100+个国家的公共假期信息，支持按国家代码和年份查询，返回假期日期、名称（本地语言和英文）、类型等。还提供支持的国家的长周末信息。非常适合开发日历、排班、HR等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://date.nager.at/api/v3/PublicHolidays/2026/CN",
+    "baseUrl": "https://date.nager.at/api/v3",
+    "params": [
+      {
+        "name": "year",
+        "type": "number",
+        "required": true,
+        "description": "年份（URL路径参数）",
+        "example": "2026"
+      },
+      {
+        "name": "countryCode",
+        "type": "string",
+        "required": true,
+        "description": "ISO国家代码（URL路径参数）",
+        "example": "CN"
+      }
+    ],
+    "responseExample": [
+      {
+        "date": "2026-01-01",
+        "localName": "元旦",
+        "name": "New Year's Day",
+        "countryCode": "CN",
+        "fixed": true,
+        "global": true,
+        "types": [
+          "Public"
+        ]
+      }
+    ],
+    "docUrl": "https://date.nager.at/Api",
+    "status": "active",
+    "tags": [
+      "假期",
+      "节假日",
+      "日历",
+      "全球",
+      "公共假期"
+    ]
+  },
+  {
+    "id": "randomfox",
+    "name": "RandomFox",
+    "description": "随机狐狸图片API",
+    "fullDescription": "简单直接的随机狐狸图片API，每次请求返回一张随机狐狸图片的URL。接口极简，无需参数，响应快速。非常适合开发动物图片展示、随机壁纸等趣味应用。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://randomfox.ca/floof/",
+    "baseUrl": "https://randomfox.ca",
+    "params": [],
+    "responseExample": {
+      "image": "https://randomfox.ca/images/42.jpg",
+      "link": "https://randomfox.ca/?i=42"
+    },
+    "docUrl": "https://randomfox.ca/",
+    "status": "active",
+    "tags": [
+      "狐狸",
+      "动物",
+      "随机图片",
+      "萌宠"
+    ]
+  },
+  {
+    "id": "hackernews",
+    "name": "Hacker News API",
+    "description": "Hacker News社区新闻与讨论数据",
+    "fullDescription": "Firebase驱动的Hacker News官方API，提供帖子（story）、评论（comment）、用户（user）等完整数据。支持获取热门帖子ID列表、帖子详情、评论树、用户信息等。数据实时更新，非常适合开发HN阅读器、科技资讯聚合。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=5",
+    "baseUrl": "https://hacker-news.firebaseio.com/v0",
+    "params": [
+      {
+        "name": "story_id",
+        "type": "number",
+        "required": false,
+        "description": "帖子ID（路径参数）",
+        "example": "8863"
+      },
+      {
+        "name": "limitToFirst",
+        "type": "number",
+        "required": false,
+        "description": "限制返回数量",
+        "example": "10"
+      }
+    ],
+    "responseExample": [
+      8863,
+      8980,
+      9012,
+      9067,
+      9105
+    ],
+    "docUrl": "https://github.com/HackerNews/API",
+    "status": "active",
+    "tags": [
+      "Hacker News",
+      "科技",
+      "新闻",
+      "社区",
+      "Firebase"
+    ]
+  },
+  {
+    "id": "robohash",
+    "name": "RoboHash",
+    "description": "根据文本生成独特的机器人头像",
+    "fullDescription": "根据任意文本字符串生成独特的机器人头像图片。相同文本总是生成相同的机器人，不同文本生成不同机器人。支持多种头像风格（robot、monster、robotHead、kitten等），可自定义尺寸和背景。非常适合用户头像生成、匿名头像等场景。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://robohash.org/test?size=200x200",
+    "baseUrl": "https://robohash.org",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true,
+        "description": "生成头像的文本（URL路径参数）",
+        "example": "hello"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "图片尺寸",
+        "example": "200x200"
+      },
+      {
+        "name": "set",
+        "type": "string",
+        "required": false,
+        "description": "头像风格：set1(robot), set2(monster), set3(robotHead), set4(kitten), set5(head)",
+        "example": "set1"
+      }
+    ],
+    "responseExample": "(返回PNG图片)",
+    "docUrl": "https://robohash.org/",
+    "status": "active",
+    "tags": [
+      "头像",
+      "机器人",
+      "生成器",
+      "唯一",
+      "匿名"
+    ]
+  },
+  {
+    "id": "fake-store",
+    "name": "Fake Store API",
+    "description": "模拟电商产品数据API",
+    "fullDescription": "提供模拟电商产品数据，包含产品名称、价格、描述、分类、评分、图片等。支持获取全部/单个产品，以及购物车、用户、认证等端点。数据结构接近真实电商，适合开发电商原型、产品展示页面。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://fakestoreapi.com/products/1",
+    "baseUrl": "https://fakestoreapi.com",
+    "params": [
+      {
+        "name": "id",
+        "type": "number",
+        "required": false,
+        "description": "产品ID（路径参数）",
+        "example": "1"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量（/products端点）",
+        "example": "5"
+      },
+      {
+        "name": "sort",
+        "type": "string",
+        "required": false,
+        "description": "排序方式：asc/desc",
+        "example": "desc"
+      }
+    ],
+    "responseExample": {
+      "id": 1,
+      "title": "Fjallraven Bag",
+      "price": 109.95,
+      "description": "Your perfect pack...",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    "docUrl": "https://fakestoreapi.com/docs",
+    "status": "active",
+    "tags": [
+      "电商",
+      "产品",
+      "模拟数据",
+      "购物",
+      "评分"
+    ]
+  },
+  {
+    "id": "emoji-hub",
+    "name": "Emoji Hub",
+    "description": "随机Emoji表情和分类查询",
+    "fullDescription": "提供随机Emoji表情和按分类/分组查询Emoji的功能。返回Emoji的Unicode字符、名称、分类、分组等信息。支持按类别（smileys、animals、food等）和分组筛选。非常适合开发Emoji选择器、随机表情展示等应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://emojihub.yurace.pro/api/random",
+    "baseUrl": "https://emojihub.yurace.pro/api",
+    "params": [
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "分类：smileys and people, animals and nature, food and drink等",
+        "example": "smileys and people"
+      },
+      {
+        "name": "group",
+        "type": "string",
+        "required": false,
+        "description": "分组",
+        "example": "cat-face"
+      }
+    ],
+    "responseExample": {
+      "name": "grinning cat with smiling eyes",
+      "category": "smileys and people",
+      "group": "cat-face",
+      "htmlCode": [
+        "&#128041;",
+        "&#128057;"
+      ],
+      "unicode": [
+        "U+1F63A"
+      ]
+    },
+    "docUrl": "https://github.com/cheatsheet1999/EmojiHub-API",
+    "status": "active",
+    "tags": [
+      "Emoji",
+      "表情",
+      "随机",
+      "Unicode",
+      "分类"
+    ]
+  },
+  {
+    "id": "theaudiodb",
+    "name": "TheAudioDB",
+    "description": "音乐艺人和专辑数据API",
+    "fullDescription": "提供音乐艺人、专辑、曲目的详细信息，包括艺人简介、专辑封面、曲目列表、音乐视频链接等。使用免费API Key（2）即可访问。数据覆盖主流国际艺人，适合开发音乐百科、艺人档案等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.theaudiodb.com/api/v1/json/2/search.php?s=coldplay",
+    "baseUrl": "https://www.theaudiodb.com/api/v1/json/2",
+    "params": [
+      {
+        "name": "s",
+        "type": "string",
+        "required": false,
+        "description": "艺人名称（搜索）",
+        "example": "coldplay"
+      },
+      {
+        "name": "i",
+        "type": "string",
+        "required": false,
+        "description": "艺人ID（详情）",
+        "example": "112024"
+      }
+    ],
+    "responseExample": {
+      "artists": [
+        {
+          "idArtist": "112024",
+          "strArtist": "Coldplay",
+          "strGenre": "Rock",
+          "strBiographyEN": "Coldplay are a British rock band...",
+          "strArtistThumb": "https://www.theaudiodb.com/images/media/artist-thumb/..."
+        }
+      ]
+    },
+    "docUrl": "https://www.theaudiodb.com/api",
+    "status": "active",
+    "tags": [
+      "音乐",
+      "艺人",
+      "专辑",
+      "封面",
+      "歌词"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID Generator",
+    "description": "在线UUID/GUID生成器API",
+    "fullDescription": "生成UUID v4（随机UUID），一次可生成1-50个UUID。返回JSON数组格式。非常适合开发需要唯一标识符的应用、数据库种子数据、测试数据生成等。简单直接，无需任何参数。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://www.uuidtools.com/api/generate/v4",
+    "baseUrl": "https://www.uuidtools.com/api/generate",
+    "params": [
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "生成数量（1-50，路径追加）",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      "550e8400-e29b-41d4-a716-446655440000"
+    ],
+    "docUrl": "https://www.uuidtools.com/",
+    "status": "active",
+    "tags": [
+      "UUID",
+      "GUID",
+      "生成器",
+      "唯一标识",
+      "ID"
+    ]
+  },
+  {
+    "id": "dog-facts",
+    "name": "Dog Facts",
+    "description": "随机狗狗趣味知识API",
+    "fullDescription": "提供关于狗的随机趣味知识，每次返回1-5条狗的有趣事实。数据来自社区收集整理。非常适合开发宠物知识科普、趣味问答等应用。接口简单，响应快速。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://dog-api.kinduff.com/api/facts",
+    "baseUrl": "https://dog-api.kinduff.com/api",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      }
+    ],
+    "responseExample": {
+      "facts": [
+        "Dogs can understand up to 250 words and gestures."
+      ],
+      "success": true
+    },
+    "docUrl": "https://dog-api.kinduff.com/",
+    "status": "active",
+    "tags": [
+      "狗",
+      "趣事",
+      "宠物",
+      "知识",
+      "动物"
+    ]
+  },
+  {
+    "id": "kanye-rest",
+    "name": "Kanye Rest",
+    "description": "Kanye West随机语录API",
+    "fullDescription": "提供Kanye West的随机语录，每次返回一条。数据来自社区整理的Kanye名言集。极简API，无参数，开箱即用。适合开发名人语录展示、趣味应用等。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.kanye.rest/",
+    "baseUrl": "https://api.kanye.rest",
+    "params": [],
+    "responseExample": {
+      "quote": "I love you like Kanye loves Kanye"
+    },
+    "docUrl": "https://kanye.rest/",
+    "status": "active",
+    "tags": [
+      "Kanye",
+      "语录",
+      "名人",
+      "随机",
+      "名言"
+    ]
   }
 ]

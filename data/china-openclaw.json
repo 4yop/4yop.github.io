@@ -2149,5 +2149,113 @@
     "deployment": "企业级AI原生工作台，支持私有化部署",
     "features": "专为企业打造的AI原生工作台；内置超级智能体引擎，可跨组织、跨系统、跨时间调度Agent Teams；零代码+多智能体协同模式；一句话指令调度整支AI团队；支持本地算力中心模型私有化部署；内置300+开箱即用智能体，覆盖企业经营全链条；从设计之初搭建专属安全沙箱，筑牢数据安全防线；创新构建企业级记忆，持续沉淀业务逻辑与知识经验",
     "website": "https://www.iflytek.com"
+  },
+  {
+    "id": 297,
+    "name": "IMA（腾讯AI工作台）",
+    "developer": "腾讯",
+    "releaseTime": "2026.04.29",
+    "deployment": "云端SaaS，支持Mac/Windows/iOS/安卓/鸿蒙多端",
+    "features": "以知识库为基础的AI工作台，提供搜-读-写一站式体验；2026年4月29日正式解锁Agent形态（copilot），支持创建专属Agent；内置记忆系统（copilot设定、用户档案、长期记忆、经验技巧四大模块）；支持全场景浮窗感知，自动识别浏览内容；技能生态上线，支持知识库操作、生成报告等官方Skills；知识库文件总量已突破2亿；支持标注原文位置减少AI幻觉；基于腾讯混元大模型，已接入Hy3 preview、GLM-5及GLM-5.1等前沿模型",
+    "website": "https://ima.qq.com"
+  },
+  {
+    "id": 298,
+    "name": "WindClaw",
+    "developer": "万得（Wind）",
+    "releaseTime": "2026.03",
+    "deployment": "一键本地化部署，无需编写代码，像安装普通软件一样操作",
+    "features": "深度耦合Wind专业金融数据库的投研AI Agent；多Agent投研矩阵（基本面分析、盘面跟踪、机会发现）；预置高频投研场景技能广场；7×24小时不间断投研团队协作；自主进化学习用户投资习惯与分析偏好；支持个股研究、盘面监控、行业比较、量化策略辅助、投研日报自动生成",
+    "website": "https://claw.wind.com.cn"
+  },
+  {
+    "id": 299,
+    "name": "SenseClaw",
+    "developer": "商汤科技（SenseTime）",
+    "releaseTime": "2026.04",
+    "deployment": "基于OpenClaw框架，灰度测试中",
+    "features": "专为视觉理解场景打造的AI助手；基于日日新大模型+书生大模型；支持图像理解（物体检测、场景理解、情绪识别、OCR）；视频分析（智能帧采样、动作识别、关键时刻提取）；文档识别（中/英/日/韩文OCR、版面分析、公式识别）；多模态对话（图像+文字融合）；适配电商、医疗、制造、教育、安防等场景",
+    "website": "https://www.sensetime.com/cn"
+  },
+  {
+    "id": 300,
+    "name": "RoboNeo",
+    "developer": "美图公司（Meitu）",
+    "releaseTime": "2026.04.29",
+    "deployment": "云端SaaS，美图AI产品矩阵",
+    "features": "业界首个图像创作Agent团队（Agent Teams）；多Agent协作完成复杂创作任务；覆盖AI短片创作、自媒体内容、电商内容创作全链条；自适应品牌风格调整，降低参数编辑流程；从创意灵感到素材制作、格式对齐、品牌资产积累深度整合；目标用户为自媒体创作者、内容小团队、一人公司",
+    "website": "https://www.meitu.com"
+  },
+  {
+    "id": 301,
+    "name": "KClaw",
+    "developer": "快手（Kuaishou）",
+    "releaseTime": "2026.04",
+    "deployment": "快手创作者中心灰度上线，平台内置无需独立部署",
+    "features": "专为短视频创作者打造的AI助手；基于OpenClaw框架融合快手AI能力；脚本生成（热门选题、爆款脚本、开头钩子优化）；自动视频剪辑（转场推荐、滤镜推荐、音乐匹配、字幕生成）；字幕AI配音；播放数据分析与优化建议；实时热点追踪与趋势预测；目标提升创作效率10倍",
+    "website": "https://www.kclaw.xin"
+  },
+  {
+    "id": 302,
+    "name": "腾讯乐享Agentic版",
+    "developer": "腾讯",
+    "releaseTime": "2026.03",
+    "deployment": "云端SaaS，支持OpenClaw部署能力",
+    "features": "基于DeepSeek大模型的企业AI知识库；支持PDF、图片、视频等多模态文档解析；提供AI问答与Agent智能体应用；引入分级权限管理与全链路日志监控；AI Agent自主执行知识检索与任务处理；可快速构建企业客服知识库系统；腾讯旗下新一代智能知识管理平台",
+    "website": "https://lexiang.tencent.com"
+  },
+  {
+    "id": 303,
+    "name": "百应Claw",
+    "developer": "联想百应",
+    "releaseTime": "2026.05.27",
+    "deployment": "端边云协同部署，深度适配联想百应AI主机",
+    "features": "企业级AI智能体引擎，三层技术架构（Skills场景技能库+Brain多模型调度+Token全链路算力层）；Token Plan企业级算力订阅服务（最低35元/月享3000万Token）；Token Key词元宝实体安全介质（指纹加密、即插即用、团队共享）；Token Hub词元中枢（多源算力聚合、边云混合调度）；支持环境适配、效果评测、OPC场景蒸馏；破解企业养得起AI用不起Token的痛点",
+    "website": "https://www.lenovo.com.cn/baiying"
+  },
+  {
+    "id": 304,
+    "name": "BoClaw",
+    "developer": "博云科技（Bocloud）",
+    "releaseTime": "2026.03.09",
+    "deployment": "多端本地部署（macOS/Windows 10+/Linux/浏览器Web沙箱），支持私有云和离线环境",
+    "features": "AI原生智能体平台，对标OpenClaw的极简安装版；10分钟内非技术人员可独立完成安装配置；36项内置核心技能+14000+社区技能兼容；覆盖文件处理、信息检索、代码辅助、创意设计、流程自动化六大类任务；可接入钉钉、飞书等IM工具实现远程调用；三层安全机制（沙箱隔离+逐条审批+私有审核）；数据存储在本地设备或私有云，数据不出域",
+    "website": "https://boclaw.ai"
+  },
+  {
+    "id": 305,
+    "name": "MiMo Code",
+    "developer": "小米MiMo技术团队",
+    "releaseTime": "2026.06.11",
+    "deployment": "终端运行，MIT协议开源（GitHub获取）",
+    "features": "小米首次进入Coding Agent领域的探索性AI编程助手；基于OpenCode二次开发；内置限时免费多模态模型MiMo-V2.5（性能对标Claude Sonnet 4.6）；支持接入DeepSeek、Kimi、GLM等主流模型及第三方Token服务；持久记忆系统+无限上下文；独创Compose模式实现模型Agent协同优化；界面全汉化，个人与企业均可自由使用、修改与分发",
+    "website": "https://github.com/MiMo-Code/MiMo-Code"
+  },
+  {
+    "id": 306,
+    "name": "LanSphere蓝域智能体平台",
+    "developer": "蓝信（中电蓝信）",
+    "releaseTime": "2026.06.02",
+    "deployment": "高并发集群部署，100%信创合规，支持私有化部署",
+    "features": "国内首个面向政企场景的精细化权限管控智能体开发平台；原生接入蓝信组织架构体系与MCP服务；默认数据隔离满足政企安全合规要求；实现业务智能体开发周期从2周缩短至4小时；大幅降低政企智能化升级成本；深度融合中国电子信创产业生态",
+    "website": "https://www.lanxin.cn"
+  },
+  {
+    "id": 307,
+    "name": "KnowAct知行AI超级助理",
+    "developer": "蓝信（中电蓝信）",
+    "releaseTime": "2026.06.02",
+    "deployment": "移动端+桌面端双端协同，桌面端在本地安全虚拟机中运行",
+    "features": "采用数字双子星架构的AI超级助理；移动端为信息分诊引擎，优先推送紧急事项；桌面端具备Computer-Use与Browser-Use能力，可自主操作系统；处理效率达人工30倍；支持远程唤醒和长期记忆功能；可在本地安全虚拟机中自主操作业务系统",
+    "website": "https://www.lanxin.cn"
+  },
+  {
+    "id": 308,
+    "name": "智果AgentArts",
+    "developer": "华为云",
+    "releaseTime": "2026.06.05",
+    "deployment": "华为云企业级智能体平台，支持混合云部署",
+    "features": "华为云企业级智能体平台，践行Harness工程；四大核心能力：生产级长程任务、企业级安全、行业知识深度、全链路可观测；开源版openJiuwen内核同源度超90%；聚合全栈Agentic云服务+丰富智能体+百模千态大模型一体化能力；能力全面Skill化、CLI化；全流程智能体化；已公测开放",
+    "website": "https://www.huaweicloud.com"
   }
 ]
