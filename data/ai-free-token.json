@@ -256,7 +256,7 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；DeepSeek-V3-Lite：永久免费不限量（200万上下文，支持思维链可视化，QPS限制20，编程能力最强免费API）；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash",
+      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；DeepSeek-V3-Lite：永久免费不限量（200万上下文，支持思维链可视化，QPS限制20，编程能力最强免费API）；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请尽快迁移至deepseek-v4-pro/deepseek-v4-flash",
       "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费；V3-Lite永久免费",
       "url": "https://platform.deepseek.com",
       "develop": {
@@ -819,7 +819,7 @@
     },
     {
       "name": "xAI (Grok)",
-      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）；⚠️ 2026年5月8日 xAI 已正式并入 SpaceX（改名为 SpaceXAI），API免费政策未来可能发生变化，建议密切关注",
+      "quota": "新用户注册赠送 $25 API 积分；另有数据共享计划：每月额外赠送 $150 免费额度（需先消费至少 $5 后方可在 Billing > Credits 中开启，开启后不可撤销；EU/UK 地区不适用）；⚠️ 2026年5月8日 xAI 已正式并入 SpaceX（改名为 SpaceXAI），API免费政策未来可能发生变化，建议密切关注；⚠️ 警告：2026年5月8日 xAI已并入SpaceX（改名SpaceXAI），API政策可能随时变动，建议关注官方公告",
       "cycle": "注册$25一次性；数据共享$150每月重置（永久，需满足$5消费门槛后激活）",
       "url": "https://console.x.ai",
       "develop": {
@@ -1216,17 +1216,13 @@
     },
     {
       "name": "商汤日日新 (SenseNova)",
-      "quota": "Token Plan 限时免费公测：SenseNova 6.7 Flash-Lite 每5小时1500次调用（原生多模态架构，可直接理解网页/文档/图表，信息搜索场景Token消耗较纯文本智能体降60%）；SenseNova U1 Fast 每5小时1500次调用（信息图/Infographics生成）；DeepSeek V4 Flash 每5小时500次调用（256K超长上下文，工具调用）；SenseNova-Skills已在GitHub开源（21个技能组件，MIT协议）；支持 OpenClaw、Hermes Agent 等框架；API 兼容 OpenAI 格式；最多可创建20个API Key分别管理不同项目；⚠️ 公测首月免费，后续将推出 Lite/Pro 付费档位",
-      "cycle": "限时免费公测（首月免费，每5小时额度自动刷新；后续将推出 Lite/Pro 付费档位）",
+      "quota": "【⚠️ 已过期】Token Plan 公测首月免费已于2026年5月到期下线；后续将推出 Lite/Pro 付费档位（具体时间待官方公告）；API已暂停开放",
+      "cycle": "已过期（公测首月免费活动已结束，付费档位待发布）",
       "url": "https://www.sensenova.cn",
       "develop": {
         "document_url": "https://www.sensenova.cn/token-plan",
         "base_url": "https://token.sensenova.cn/v1",
-        "models": [
-          "sensenova-6.7-flash-lite",
-          "sensenova-u1-fast",
-          "deepseek-v4-flash"
-        ]
+        "models": []
       }
     },
     {
@@ -1275,7 +1271,7 @@
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日；⚠️ HY 2.0 Think/Instruct 将于2026-06-22正式下线",
       "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
@@ -1288,8 +1284,6 @@
           "glm-5",
           "glm-5.1",
           "minimax-m2.7",
-          "hunyuan-2.0-thinking-20251109",
-          "hunyuan-2.0-instruct-20251111",
           "kimi-k2.6",
           "deepseek-v3.2",
           "deepseek-r1-0528",
@@ -1380,7 +1374,7 @@
     },
     {
       "name": "昆仑万维天工 (SkyWork)",
-      "quota": "SkyClaw-v1.0及SkyClaw-v1.0-lite Agent模型限时免费试用（2026年5月26日发布）；SkyClaw-v1.0输入0.5元/百万Token、输出4元/百万Token；SkyClaw-v1.0-lite输入0.3元/百万Token、输出2元/百万Token；需通过APIFree平台（www.apifree.ai）注册获取密钥；百万token超长上下文；原生Agent训练（非通用大模型+工具壳）；深度适配OpenClaw、Hermes、Claude Code等主流Agent框架；OpenAI兼容API格式；免费期结束后将逐步开源各模型版本",
+      "quota": "SkyClaw-v1.0及SkyClaw-v1.0-lite Agent模型限时免费试用（2026年5月26日发布）；SkyClaw-v1.0输入0.5元/百万Token、输出4元/百万Token；SkyClaw-v1.0-lite输入0.3元/百万Token、输出2元/百万Token；需通过APIFree平台（www.apifree.ai）注册获取密钥；百万token超长上下文；原生Agent训练（非通用大模型+工具壳）；深度适配OpenClaw、Hermes、Claude Code等主流Agent框架；OpenAI兼容API格式；免费期结束后将逐步开源各模型版本；⚠️ 限时免费期进行中，建议关注官方公告确认截止时间",
       "cycle": "限时免费试用中（2026年5月底起）；免费期结束后按量付费+逐步开源",
       "url": "https://skywork.ai",
       "develop": {
@@ -1451,137 +1445,6 @@
           "fal-ai/kling-v1.6/pro",
           "fal-ai/wan/v2.2",
           "fal-ai/sora-v2"
-        ]
-      }
-    },
-    {
-      "name": "智谱AI (GLM)",
-      "quota": "2000万Token",
-      "cycle": "永久有效",
-      "url": "https://open.bigmodel.cn",
-      "develop": {
-        "document_url": "https://open.bigmodel.cn/dev/api",
-        "base_url": "https://open.bigmodel.cn/api/paas/v4",
-        "models": [
-          "GLM-4-Flash",
-          "GLM-4.7-Flash",
-          "GLM-5",
-          "GLM-4V-Plus"
-        ]
-      }
-    },
-    {
-      "name": "硅基流动 (SiliconFlow)",
-      "quota": "2000万Token",
-      "cycle": "永久有效(9B以下模型)",
-      "url": "https://siliconflow.cn",
-      "develop": {
-        "document_url": "https://docs.siliconflow.cn",
-        "base_url": "https://api.siliconflow.cn/v1",
-        "models": [
-          "Qwen2.5-7B-Instruct",
-          "GLM-4-Flash",
-          "DeepSeek-V2.5",
-          "DeepSeek-V4",
-          "Qwen3-32B"
-        ]
-      }
-    },
-    {
-      "name": "火山引擎 (豆包/Doubao)",
-      "quota": "每日200万Token(协作奖励)",
-      "cycle": "每日重置",
-      "url": "https://console.volcengine.com/ark",
-      "develop": {
-        "document_url": "https://www.volcengine.com/docs/82379",
-        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
-        "models": [
-          "Doubao-lite-32k",
-          "Doubao-pro-32k",
-          "DeepSeek-R1",
-          "DeepSeek-V4"
-        ]
-      }
-    },
-    {
-      "name": "魔搭社区 (ModelScope)",
-      "quota": "每日2000次调用",
-      "cycle": "每日重置",
-      "url": "https://modelscope.cn",
-      "develop": {
-        "document_url": "https://modelscope.cn/docs",
-        "base_url": "https://api.modelscope.cn/v1",
-        "models": [
-          "Qwen系列",
-          "DeepSeek系列",
-          "GLM系列",
-          "LLaMA系列"
-        ]
-      }
-    },
-    {
-      "name": "百度智能云千帆 (ERNIE)",
-      "quota": "100万Token(每模型)",
-      "cycle": "3个月",
-      "url": "https://console.bce.baidu.com/qianfan",
-      "develop": {
-        "document_url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
-        "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop",
-        "models": [
-          "ERNIE-Speed-8K",
-          "ERNIE-4.5-Turbo",
-          "ERNIE-4.5",
-          "ERNIE-Lite"
-        ]
-      }
-    },
-    {
-      "name": "阿里云百炼 (DashScope)",
-      "quota": "100万Token(每模型)",
-      "cycle": "3个月",
-      "url": "https://bailian.console.aliyun.com",
-      "develop": {
-        "document_url": "https://help.aliyun.com/document_detail/dashscope.html",
-        "base_url": "https://dashscope.aliyuncs.com/api/v1",
-        "models": [
-          "qwen-turbo",
-          "qwen-plus",
-          "qwen-max",
-          "deepseek-r1",
-          "deepseek-v4",
-          "kimi-k2.5",
-          "moonshot-v1",
-          "glm-4-flash"
-        ]
-      }
-    },
-    {
-      "name": "Google Gemini",
-      "quota": "Gemini 2.5 Flash: 500 RPM",
-      "cycle": "永久有效(免费层)",
-      "url": "https://aistudio.google.com",
-      "develop": {
-        "document_url": "https://ai.google.dev/gemini-api/docs",
-        "base_url": "https://generativelanguage.googleapis.com/v1beta",
-        "models": [
-          "Gemini 2.5 Flash",
-          "Gemini 2.5 Flash-Lite",
-          "Gemini 2.5 Pro"
-        ]
-      }
-    },
-    {
-      "name": "OpenAI",
-      "quota": "$5试用额度",
-      "cycle": "用完即止",
-      "url": "https://platform.openai.com",
-      "develop": {
-        "document_url": "https://platform.openai.com/docs",
-        "base_url": "https://api.openai.com/v1",
-        "models": [
-          "GPT-4o",
-          "GPT-4o-mini",
-          "GPT-4.5"
         ]
       }
     }
