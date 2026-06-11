@@ -882,15 +882,6 @@
     "id": 151
   },
   {
-    "id": 151,
-    "name": "腾讯Marvis马维斯",
-    "releaseTime": "2026.05.20",
-    "developer": "腾讯",
-    "features": "国内首款操作系统层级AI助手；六大智能体分工协作自动拆解复杂多步骤任务；端云协同效率模式+本地离线隐私模式双模式自由切换；支持系统级操作（清理垃圾、关闭广告、修改开机设置、硬件检测）；手机跨端远程操控实时查看电脑画面；语义化文件搜索靠内容精准查找文件图片；微信/QQ一键登录5分钟上手",
-    "website": "https://marvis.qq.com/",
-    "deployment": "桌面客户端一键安装，支持Windows/macOS，免费全平台可用"
-  },
-  {
     "name": "灵境云 EdgeAIStation",
     "developer": "云工场科技",
     "releaseTime": "2026.04",
@@ -898,15 +889,6 @@
     "features": "企业级OpenClaw云端部署方案，2026年企业级OpenClaw云服务商排名TOP1；预置优化OpenClaw镜像与环境，分钟级上线开箱即用；支持GPU资源与高性能算力支撑；兼容主流开源模型（Qwen/DeepSeek等）；帮助用户以更低成本更高效率使用算力资源；连续四年入选中国边缘计算企业20强",
     "website": "https://docs.ljyun.cn/",
     "id": 152
-  },
-  {
-    "id": 152,
-    "name": "UI-TARS-desktop",
-    "releaseTime": "2026.05.12",
-    "developer": "字节跳动",
-    "features": "纯视觉驱动桌面AI智能体，不靠插件不靠API像人一样看懂屏幕操作电脑；专属GUI视觉模型界面元素识别精度远超通用AI；感知-规划-执行三层闭环自主完成键鼠操作、页面跳转、数据录入；零配置远程操控无需内网穿透端口映射；全平台兼容支持命令行Python API二次开发",
-    "website": "https://github.com/bytedance/UI-TARS-desktop",
-    "deployment": "开源桌面应用（Apache 2.0），Mac终端一键安装/Windows安装包，GitHub 33.7k+ Stars"
   },
   {
     "id": 153,
@@ -1863,15 +1845,6 @@
     "website": "https://github.com/agentscope-ai/QwenPaw"
   },
   {
-    "id": 261,
-    "name": "LobsterAI（有道龙虾）",
-    "developer": "网易有道",
-    "releaseTime": "2026.02",
-    "deployment": "源码编译/Docker，MIT开源协议",
-    "features": "国内首款MIT开源本土化OpenClaw智能体；全本地存储无云端外溢；安全沙箱机制隔离高风险操作；双引擎驱动（交互引擎+安全引擎）；深度适配中文指令支持口语化表达；远程操控电脑适合居家办公/远程运维；支持DeepSeek/MiniMax等8+国产大模型；内存占用约40MB",
-    "website": "https://github.com/netease-youdao/LobsterAI"
-  },
-  {
     "id": 262,
     "name": "星狐Claw",
     "developer": "星狐Claw团队",
@@ -1933,15 +1906,6 @@
     "deployment": "企业级SaaS平台 + 私有化部署选项",
     "features": "面向企业的AI Agent自动化平台；比OpenClaw更强的安全控制、更好支持、更低风险；15种开源和企业级OpenClaw替代方案之一；提供Nanobot、ZeroClaw、PicoClaw、Moltis等多种Agent运行时选择；企业级合规治理与专门支持；适合需要生产级稳定性和安全性的组织；解决OpenClaw在企业场景的安全、稳定和支持痛点",
     "website": "https://www.adopt.ai"
-  },
-  {
-    "id": 269,
-    "name": "Webwright",
-    "developer": "微软研究院（Microsoft Research）",
-    "releaseTime": "2026.05",
-    "deployment": "开源框架（MIT协议），GitHub开源，约1000行代码",
-    "features": "终端原生网页智能体框架；让AI模型直接在终端编写Playwright脚本并执行bash命令完成网页任务；Runner+Model Endpoint+Terminal Environment三模块架构；门控式自验证机制解决过早宣告完成问题；动态历史压缩（每20步）缓解上下文膨胀；Online-Mind2Web基准86.67%准确率；Odysseys长链路任务60.1%得分（较基线提升81.5%）；代码驱动范式优于传统截图点击式Agent；微软研究院出品质量保证",
-    "website": "https://github.com/microsoft/Webwright"
   },
   {
     "id": 270,
@@ -2158,5 +2122,32 @@
     "deployment": "开源GitHub，YAML配置定义Agent，支持多模型API",
     "features": "WebWalkerQA准确率71.47%；GAIA文本Pass@1率72.8%；自动生成Agent功能；深度集成腾讯云ADP/TI平台/元器",
     "website": "https://github.com/TencentCloudADP/Youtu-agent"
+  },
+  {
+    "id": 294,
+    "name": "agent-browser",
+    "developer": "Vercel Labs",
+    "releaseTime": "2026.01",
+    "deployment": "开源CLI工具，npm一键安装",
+    "features": "专为AI Agent设计的浏览器自动化CLI工具；基于Playwright封装，支持无头模式；相比原生Playwright减少93%上下文消耗；支持网页点击、表单填写、截图、PDF导出；适合AI Agent网页操作任务",
+    "website": "https://github.com/vercel-labs/agent-browser"
+  },
+  {
+    "id": 295,
+    "name": "Superpowers",
+    "developer": "obra (Jesse Vincent)",
+    "releaseTime": "2026.03",
+    "deployment": "开源框架，GitHub获取",
+    "features": "AI Agent技能框架和软件开发方法论；提供完整的agent技能系统，让AI能够像人类一样进行软件开发；支持测试驱动开发、系统化调试、子Agent协同；GitHub 10.2万+ Stars",
+    "website": "https://github.com/obra/superpowers"
+  },
+  {
+    "id": 296,
+    "name": "玲珑Agent OS",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.04.29",
+    "deployment": "企业级AI原生工作台，支持私有化部署",
+    "features": "专为企业打造的AI原生工作台；内置超级智能体引擎，可跨组织、跨系统、跨时间调度Agent Teams；零代码+多智能体协同模式；一句话指令调度整支AI团队；支持本地算力中心模型私有化部署；内置300+开箱即用智能体，覆盖企业经营全链条；从设计之初搭建专属安全沙箱，筑牢数据安全防线；创新构建企业级记忆，持续沉淀业务逻辑与知识经验",
+    "website": "https://www.iflytek.com"
   }
 ]

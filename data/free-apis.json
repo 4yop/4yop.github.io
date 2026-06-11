@@ -778,54 +778,6 @@
     ]
   },
   {
-    "id": "mockerapi-status",
-    "name": "MockerAPI Status",
-    "description": "HTTP状态码测试工具API",
-    "fullDescription": "专业的HTTP状态码测试服务，可以模拟返回任意HTTP状态码（200、201、301、404、500等）。对于前端开发者测试错误处理逻辑、loading状态、重定向行为等非常有用。支持自定义响应延迟时间，可模拟慢网络环境。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://free.mockerapi.com/200?delay=1000",
-    "baseUrl": "https://free.mockerapi.com",
-    "params": [
-      {
-        "name": "statusCode",
-        "type": "number",
-        "required": true,
-        "description": "HTTP状态码（URL路径部分）",
-        "example": "200|201|301|404|500"
-      },
-      {
-        "name": "delay",
-        "type": "number",
-        "required": false,
-        "description": "响应延迟毫秒数",
-        "example": "1000|2000|5000"
-      },
-      {
-        "name": "message",
-        "type": "string",
-        "required": false,
-        "description": "自定义响应消息",
-        "example": "Custom message"
-      }
-    ],
-    "responseExample": {
-      "code": 200,
-      "message": "OK",
-      "timestamp": "2024-01-15T10:30:00Z",
-      "delay": 1000
-    },
-    "docUrl": "https://mockerapi.com/",
-    "status": "active",
-    "tags": [
-      "HTTP状态码",
-      "测试",
-      "错误处理",
-      "延迟模拟",
-      "调试"
-    ]
-  },
-  {
     "id": "qr-server",
     "name": "QR Server",
     "description": "在线二维码生成API，支持多种格式和样式",
@@ -1268,60 +1220,6 @@
       "国际化",
       "统计",
       "分布"
-    ]
-  },
-  {
-    "id": "emoji-api",
-    "name": "Emoji API",
-    "description": "Emoji表情符号查询和搜索API",
-    "fullDescription": "全面的Emoji表情符号数据库API，支持按名称、类别、关键词搜索Emoji。返回每个Emoji的Unicode码点、名称、分类、子分组、Skin Tone变体等详细信息。数据保持更新，跟随最新Unicode Emoji标准。适合构建Emoji选择器、表情搜索、社交应用等功能。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://emoji-api.com/emojis?search=heart&access_key=demo",
-    "baseUrl": "https://emoji-api.com/emojis",
-    "params": [
-      {
-        "name": "search",
-        "type": "string",
-        "required": false,
-        "description": "搜索关键词",
-        "example": "heart|smile|animal|food"
-      },
-      {
-        "name": "category",
-        "type": "string",
-        "required": false,
-        "description": "Emoji分类",
-        "example": "smileys-people|animals-nature|food-drink"
-      },
-      {
-        "name": "access_key",
-        "type": "string",
-        "required": false,
-        "description": "API Key（demo可用）",
-        "example": "demo"
-      }
-    ],
-    "responseExample": {
-      "results": [
-        {
-          "name": "red heart",
-          "unicode": "2764",
-          "hexCode": "❤️",
-          "group": "smileys-emotion",
-          "subgroup": "heart"
-        }
-      ],
-      "count": 10
-    },
-    "docUrl": "https://emoji-api.com/",
-    "status": "active",
-    "tags": [
-      "Emoji",
-      "表情",
-      "Unicode",
-      "搜索",
-      "图标"
     ]
   },
   {
@@ -1807,40 +1705,6 @@
       "游戏",
       "图鉴",
       "数据"
-    ]
-  },
-  {
-    "id": "hackernews",
-    "name": "Hacker News",
-    "description": "HN热门故事和评论数据API",
-    "fullDescription": "Hacker News官方Firebase API，提供热门/新/最佳故事列表及每条故事的详细内容和评论。完全免费无限量调用，无需任何认证。Y Combinator运营的知名技术社区数据源，适合做技术新闻聚合、趋势分析等应用。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=10&orderBy=\"$key\"",
-    "baseUrl": "https://hacker-news.firebaseio.com/v0",
-    "params": [
-      {
-        "name": "limitToFirst",
-        "type": "number",
-        "required": false,
-        "description": "返回条数",
-        "example": "10"
-      }
-    ],
-    "responseExample": [
-      123456,
-      123457,
-      123458,
-      123459
-    ],
-    "docUrl": "https://github.com/HackerNews/API",
-    "status": "active",
-    "tags": [
-      "新闻",
-      "技术",
-      "Hacker News",
-      "YC",
-      "社区"
     ]
   },
   {
@@ -2332,5 +2196,175 @@
       "headers",
       "回显"
     ]
+  },
+  {
+    "id": "jikan-anime",
+    "name": "Jikan (MyAnimeList非官方)",
+    "description": "非官方MyAnimeList API，查询动漫信息",
+    "fullDescription": "Jikan是免费的非官方MyAnimeList API，提供动漫、漫画、角色等信息的完整查询功能。支持按关键词搜索、排行榜、季节新番、人物搜索等丰富功能。数据来自MyAnimeList社区，是动漫爱好者获取信息的首选免费方案。无需注册，CORS全开，响应速度较快。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.jikan.moe/v4/top/anime?limit=5",
+    "baseUrl": "https://api.jikan.moe/v4",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "naruto"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量(最大25)",
+        "example": "5"
+      },
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": "1"
+      },
+      {
+        "name": "order_by",
+        "type": "string",
+        "required": false,
+        "description": "排序字段",
+        "example": "score|rank|popularity|start_date"
+      },
+      {
+        "name": "sort",
+        "type": "string",
+        "required": false,
+        "description": "升序/降序",
+        "example": "desc|asc"
+      }
+    ],
+    "responseExample": {
+      "pagination": {
+        "last_visible_page": 6126,
+        "has_next_page": true
+      },
+      "data": [
+        {
+          "mal_id": 52991,
+          "title": "Under Ninja",
+          "score": 8.28
+        }
+      ]
+    },
+    "docUrl": "https://jikan.moe/",
+    "status": "active",
+    "tags": [
+      "动漫",
+      "MyAnimeList",
+      "anime",
+      "Jikan",
+      "番剧",
+      "角色"
+    ],
+    "note": "非官方API，请勿用于商业高负载场景"
+  },
+  {
+    "id": "random-dog-api",
+    "name": "RandomDog",
+    "description": "随机狗狗图片API，支持多种图片格式",
+    "fullDescription": "提供随机可爱狗狗图片的API，支持返回JSON格式的图片URL。图片来自互联网真实狗狗照片，种类丰富。不同于Dog CEO API，RandomDog返回的是直接可用的图片URL，可直接用于img标签或作为背景图。适合宠物类应用或娱乐功能开发。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://random.dog/woof.json",
+    "baseUrl": "https://random.dog",
+    "params": [],
+    "responseExample": {
+      "fileSizeBytes": 59715,
+      "url": "https://random.dog/368b65b4-e6ce-4d33-9b6b-b444c8620e1a.jpg"
+    },
+    "docUrl": "https://random.dog/",
+    "status": "active",
+    "tags": [
+      "狗狗",
+      "宠物",
+      "随机图片",
+      "图片URL",
+      "可爱"
+    ]
+  },
+  {
+    "id": "artic-chicago",
+    "name": "Art Institute of Chicago",
+    "description": "芝加哥艺术博物馆开放数据API",
+    "fullDescription": "芝加哥艺术博物馆（Art Institute of Chicago）官方开放数据API，提供超过13万件艺术作品的元数据，包括绘画、雕塑、摄影、服装、装饰艺术等。返回作品名称、艺术家、创作年份、媒介、风格、收藏位置等详细信息，支持图片链接。是艺术教育、博物馆应用和文化数据可视化的优质数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.artic.edu/api/v1/artworks?page=1&limit=3&fields=id,title,artist_display,image_id,date_display,medium_display",
+    "baseUrl": "https://api.artic.edu/api/v1",
+    "params": [
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": "1"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "每页数量(最大100)",
+        "example": "3"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段(逗号分隔)",
+        "example": "id,title,artist_display,image_id"
+      },
+      {
+        "name": "q",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "van gogh"
+      },
+      {
+        "name": "query[term]",
+        "type": "string",
+        "required": false,
+        "description": "精确搜索(field:value)",
+        "example": "artist_title:Vincent van Gogh"
+      }
+    ],
+    "responseExample": {
+      "pagination": {
+        "total": 132130,
+        "limit": 3,
+        "total_pages": 44044
+      },
+      "data": [
+        {
+          "id": 1116,
+          "title": "Water Lilies",
+          "artist_display": "Claude Monet (French, 1840–1926)",
+          "date_display": "1906",
+          "image_id": "05ba5447-e562-4cdc-b7c2-9ee07a0db67d"
+        }
+      ]
+    },
+    "docUrl": "https://api.artic.edu/docs",
+    "status": "active",
+    "tags": [
+      "艺术",
+      "博物馆",
+      "芝加哥",
+      "绘画",
+      "雕塑",
+      "开放数据",
+      "文化"
+    ],
+    "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license"
   }
 ]
