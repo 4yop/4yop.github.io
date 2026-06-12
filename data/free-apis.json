@@ -574,70 +574,6 @@
     ]
   },
   {
-    "id": "rest-countries",
-    "name": "REST Countries",
-    "description": "世界各国信息API，含国旗、语言、货币等",
-    "fullDescription": "全面的国家地理信息API，覆盖全球250+国家和地区。提供国家名称、首都、人口、面积、语言、货币、时区、地区、子区域、国旗图片（SVG/PNG）、顶级域名、Calling codes等丰富信息。支持按名称、代码、货币、语言、首都等多维度搜索和筛选。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,flags,currencies,languages",
-    "baseUrl": "https://restcountries.com/v3.1",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": false,
-        "description": "国家名称（URL路径部分）",
-        "example": "china|usa|japan"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "返回字段过滤",
-        "example": "name,capital,population,flags"
-      },
-      {
-        "name": "code",
-        "type": "string",
-        "required": false,
-        "description": "ISO国家代码",
-        "example": "cn|us|jp"
-      }
-    ],
-    "responseExample": [
-      {
-        "name": {
-          "common": "中国",
-          "official": "中华人民共和国",
-          "nativeName": {
-            "zho": {
-              "official": "中华人民共和国",
-              "common": "中国"
-            }
-          }
-        },
-        "capital": [
-          "北京"
-        ],
-        "population": 1439323776,
-        "flags": {
-          "png": "https://flagcdn.com/w320/cn.png",
-          "svg": "https://flagcdn.com/cn.svg"
-        }
-      }
-    ],
-    "docUrl": "https://restcountries.com/",
-    "status": "active",
-    "tags": [
-      "国家",
-      "地理",
-      "国旗",
-      "货币",
-      "语言"
-    ]
-  },
-  {
     "id": "ip-api-com",
     "name": "IP-API.com",
     "description": "IP地址归属地查询API",
@@ -959,7 +895,7 @@
       "隐私",
       "Docker"
     ],
-    "note": "公共实例可能不稳定或有限制，生产环境建议自行部署"
+    "note": ""
   },
   {
     "id": "github-public-api",
@@ -1471,39 +1407,6 @@
     "note": ""
   },
   {
-    "id": "deck-of-cards",
-    "name": "Deck of Cards API",
-    "description": "在线扑克牌模拟",
-    "fullDescription": "模拟一副标准扑克牌的API，支持洗牌、抽牌、发牌等操作，适合开发卡牌类小游戏",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
-    "baseUrl": "https://deckofcardsapi.com/api/deck",
-    "params": [
-      {
-        "name": "deck_count",
-        "type": "number",
-        "required": false,
-        "description": "牌组数量",
-        "example": "1"
-      }
-    ],
-    "responseExample": {
-      "success": true,
-      "deck_id": "3p40paa87x90",
-      "remaining": 52,
-      "shuffled": true
-    },
-    "docUrl": "https://deckofcardsapi.com/",
-    "status": "active",
-    "tags": [
-      "扑克牌",
-      "游戏",
-      "卡牌"
-    ],
-    "note": ""
-  },
-  {
     "id": "open-trivia",
     "name": "Open Trivia Database",
     "description": "开放式问答题库",
@@ -1607,61 +1510,6 @@
       "Chuck Norris"
     ],
     "note": ""
-  },
-  {
-    "id": "fakerapi",
-    "name": "FakerAPI",
-    "description": "假数据生成器，支持自定义字段和数量",
-    "fullDescription": "强大的假数据生成API，可生成用户、商品、地址、公司等多种类型的模拟数据。支持自定义字段、指定数据数量、本地化（多语言），非常适合前端开发和原型设计使用。返回格式规范的JSON数据。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://fakerapi.it/api/v1/users?_quantity=3&_locale=zh_CN",
-    "baseUrl": "https://fakerapi.it",
-    "params": [
-      {
-        "name": "_quantity",
-        "type": "number",
-        "required": false,
-        "description": "生成数据条数",
-        "example": "5"
-      },
-      {
-        "name": "_locale",
-        "type": "string",
-        "required": false,
-        "description": "本地化语言",
-        "example": "zh_CN"
-      },
-      {
-        "name": "_seed",
-        "type": "number",
-        "required": false,
-        "description": "随机种子（固定种子返回固定数据）",
-        "example": "123"
-      }
-    ],
-    "responseExample": {
-      "status": "OK",
-      "code": 200,
-      "total": 3,
-      "data": [
-        {
-          "id": 1,
-          "firstname": "明",
-          "lastname": "华",
-          "email": "minghua@example.com"
-        }
-      ]
-    },
-    "docUrl": "https://fakerapi.it/",
-    "status": "active",
-    "tags": [
-      "假数据",
-      "模拟数据",
-      "用户生成",
-      "前端测试",
-      "本地化"
-    ]
   },
   {
     "id": "pokeapi",
@@ -2416,7 +2264,8 @@
       "建议",
       "休闲",
       "随机"
-    ]
+    ],
+    "note": ""
   },
   {
     "id": "ipinfo-io",
@@ -2709,7 +2558,8 @@
       "角色",
       "剧集",
       "GraphQL"
-    ]
+    ],
+    "note": ""
   },
   {
     "id": "zenquotes",
@@ -2855,7 +2705,8 @@
       "天文",
       "时间",
       "摄影"
-    ]
+    ],
+    "note": ""
   },
   {
     "id": "usaspending",
@@ -3007,58 +2858,6 @@
     ]
   },
   {
-    "id": "disease-sh",
-    "name": "Disease.sh",
-    "description": "COVID-19全球疫情数据API",
-    "fullDescription": "开放源码的COVID-19数据API，聚合WHO、JHU CSSE等多个数据源。提供全球/国家/省份数据，包括累计/新增确诊、死亡、康复、疫苗接种等。支持历史数据查询。数据由社区维护，更新频繁。适合疫情数据可视化。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://disease.sh/v3/covid-19/all",
-    "baseUrl": "https://disease.sh/v3",
-    "params": [
-      {
-        "name": "country",
-        "type": "string",
-        "required": false,
-        "description": "国家名或ISO代码（路径参数）",
-        "example": "CN"
-      },
-      {
-        "name": "yesterday",
-        "type": "boolean",
-        "required": false,
-        "description": "使用昨日数据",
-        "example": "true"
-      },
-      {
-        "name": "strict",
-        "type": "boolean",
-        "required": false,
-        "description": "严格模式，仅JHU数据",
-        "example": "true"
-      }
-    ],
-    "responseExample": {
-      "updated": 1703232000000,
-      "cases": 700000000,
-      "todayCases": 100000,
-      "deaths": 7000000,
-      "todayDeaths": 500,
-      "recovered": 670000000,
-      "active": 23000000,
-      "affectedCountries": 230
-    },
-    "docUrl": "https://disease.sh/",
-    "status": "active",
-    "tags": [
-      "COVID-19",
-      "疫情",
-      "数据",
-      "疫苗",
-      "全球"
-    ]
-  },
-  {
     "id": "met-museum",
     "name": "Met Museum Open Access",
     "description": "纽约大都会艺术博物馆开放数据API",
@@ -3178,48 +2977,6 @@
       "动物",
       "随机图片",
       "萌宠"
-    ]
-  },
-  {
-    "id": "hackernews",
-    "name": "Hacker News API",
-    "description": "Hacker News社区新闻与讨论数据",
-    "fullDescription": "Firebase驱动的Hacker News官方API，提供帖子（story）、评论（comment）、用户（user）等完整数据。支持获取热门帖子ID列表、帖子详情、评论树、用户信息等。数据实时更新，非常适合开发HN阅读器、科技资讯聚合。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=5",
-    "baseUrl": "https://hacker-news.firebaseio.com/v0",
-    "params": [
-      {
-        "name": "story_id",
-        "type": "number",
-        "required": false,
-        "description": "帖子ID（路径参数）",
-        "example": "8863"
-      },
-      {
-        "name": "limitToFirst",
-        "type": "number",
-        "required": false,
-        "description": "限制返回数量",
-        "example": "10"
-      }
-    ],
-    "responseExample": [
-      8863,
-      8980,
-      9012,
-      9067,
-      9105
-    ],
-    "docUrl": "https://github.com/HackerNews/API",
-    "status": "active",
-    "tags": [
-      "Hacker News",
-      "科技",
-      "新闻",
-      "社区",
-      "Firebase"
     ]
   },
   {
@@ -3413,37 +3170,6 @@
     ]
   },
   {
-    "id": "uuid-generator",
-    "name": "UUID Generator",
-    "description": "在线UUID/GUID生成器API",
-    "fullDescription": "生成UUID v4（随机UUID），一次可生成1-50个UUID。返回JSON数组格式。非常适合开发需要唯一标识符的应用、数据库种子数据、测试数据生成等。简单直接，无需任何参数。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://www.uuidtools.com/api/generate/v4",
-    "baseUrl": "https://www.uuidtools.com/api/generate",
-    "params": [
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "生成数量（1-50，路径追加）",
-        "example": "5"
-      }
-    ],
-    "responseExample": [
-      "550e8400-e29b-41d4-a716-446655440000"
-    ],
-    "docUrl": "https://www.uuidtools.com/",
-    "status": "active",
-    "tags": [
-      "UUID",
-      "GUID",
-      "生成器",
-      "唯一标识",
-      "ID"
-    ]
-  },
-  {
     "id": "dog-facts",
     "name": "Dog Facts",
     "description": "随机狗狗趣味知识API",
@@ -3498,6 +3224,678 @@
       "名人",
       "随机",
       "名言"
+    ]
+  },
+  {
+    "id": "affirmations",
+    "name": "Affirmations.dev",
+    "description": "生成积极肯定语句，治愈系API",
+    "fullDescription": "一个简单温暖的API，随机返回积极肯定语句（affirmation）。无需认证，纯文本JSON格式，适合用于每日一句、冥想应用、正念提醒等场景。响应极快，中国大陆访问稳定。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.affirmations.dev/",
+    "baseUrl": "https://www.affirmations.dev",
+    "params": [],
+    "responseExample": {
+      "affirmation": "You are enough just as you are"
+    },
+    "docUrl": "https://www.affirmations.dev/",
+    "status": "active",
+    "tags": [
+      "肯定语句",
+      "正能量",
+      "每日一句",
+      "冥想",
+      "治愈"
+    ],
+    "note": "每次请求随机返回一条肯定语句"
+  },
+  {
+    "id": "itunes-search",
+    "name": "iTunes Search API",
+    "description": "搜索Apple Music/App Store内容",
+    "fullDescription": "Apple官方提供的iTunes/App Store搜索API，可搜索音乐、电影、播客、电子书、App等内容。支持按关键词、艺术家、专辑等多维度搜索，返回结构化JSON数据。无需认证，响应快速。适合音乐搜索、媒体元数据获取等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://itunes.apple.com/search?term=radiohead&limit=5",
+    "baseUrl": "https://itunes.apple.com",
+    "params": [
+      {
+        "name": "term",
+        "type": "string",
+        "required": true,
+        "description": "搜索关键词",
+        "example": "radiohead"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量（默认50）",
+        "example": "5"
+      },
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家代码（默认US）",
+        "example": "CN"
+      },
+      {
+        "name": "media",
+        "type": "string",
+        "required": false,
+        "description": "媒体类型",
+        "example": "music"
+      }
+    ],
+    "responseExample": {
+      "resultCount": 5,
+      "results": [
+        {
+          "wrapperType": "track",
+          "artistName": "Radiohead"
+        }
+      ]
+    },
+    "docUrl": "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/",
+    "status": "active",
+    "tags": [
+      "音乐搜索",
+      "iTunes",
+      "Apple",
+      "媒体",
+      "App Store"
+    ],
+    "note": "默认20次/分钟速率限制"
+  },
+  {
+    "id": "dicebear",
+    "name": "DiceBear Avatars",
+    "description": "基于文本生成风格化SVG头像",
+    "fullDescription": "DiceBear是一个开源的头像生成库，通过API传入种子文本即可生成独特的SVG风格头像。支持多种风格（pixel-art、bottts、identicon等），URL即头像，无需存储。适合用户默认头像、评论占位图等场景。完全免费开源。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://api.dicebear.com/9.x/pixel-art/svg?seed=John",
+    "baseUrl": "https://api.dicebear.com",
+    "params": [
+      {
+        "name": "seed",
+        "type": "string",
+        "required": true,
+        "description": "种子文本（相同种子生成相同头像）",
+        "example": "John"
+      }
+    ],
+    "responseExample": "(返回SVG图片)",
+    "docUrl": "https://www.dicebear.com/how-to-use/http-api",
+    "status": "active",
+    "tags": [
+      "头像生成",
+      "SVG",
+      "风格化",
+      "占位图",
+      "开源"
+    ],
+    "note": "基于v9 API，支持pixel-art/bottts/identicon等多种风格"
+  },
+  {
+    "id": "purgomalum",
+    "name": "PurgoMalum",
+    "description": "脏话/敏感词过滤检测API",
+    "fullDescription": "一个简单的脏话过滤和检测API，支持英文脏话检测、替换和过滤。可检测文本是否包含不当内容，或自动过滤替换敏感词为*号。免费无认证，适合评论审核、内容安全检测等场景。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://www.purgomalum.com/service/json?text=hello%20world",
+    "baseUrl": "https://www.purgomalum.com",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true,
+        "description": "待检测文本",
+        "example": "hello world"
+      }
+    ],
+    "responseExample": {
+      "result": "hello world"
+    },
+    "docUrl": "https://www.purgomalum.com/",
+    "status": "active",
+    "tags": [
+      "脏话过滤",
+      "内容审核",
+      "敏感词",
+      "文本检测",
+      "安全"
+    ],
+    "note": "仅支持英文脏话检测"
+  },
+  {
+    "id": "httpcat",
+    "name": "HTTP Cats",
+    "description": "HTTP状态码对应的猫咪图片",
+    "fullDescription": "HTTP Cats为每个HTTP状态码提供一张对应的可爱猫咪图片。URL格式简洁，直接拼接状态码即可获得图片。支持所有标准HTTP状态码（1xx-5xx），适合在API文档、错误页面或调试工具中展示状态码的可视化说明。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://http.cat/200",
+    "baseUrl": "https://http.cat",
+    "params": [],
+    "responseExample": "(返回JPG图片)",
+    "docUrl": "https://http.cat/",
+    "status": "active",
+    "tags": [
+      "HTTP状态码",
+      "猫咪",
+      "图片",
+      "API文档",
+      "调试"
+    ],
+    "note": "URL格式：https://http.cat/{状态码}"
+  },
+  {
+    "id": "useless-facts",
+    "name": "Useless Facts",
+    "description": "随机无用冷知识API，支持多语言",
+    "fullDescription": "提供有趣的冷知识和无用小常识的随机API。每次调用返回一条随机冷知识，支持多种语言（英文默认），也可按日获取每日冷知识。非常适合开发每日知识推送、冷知识卡片、趣味问答等功能。数据由社区维护，内容丰富多样。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en",
+    "baseUrl": "https://uselessfacts.jsph.pl/api/v2",
+    "params": [
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "语言代码(en/de/fr等)",
+        "example": "en"
+      }
+    ],
+    "responseExample": {
+      "id": "123abc",
+      "text": "A group of flamingos is called a 'flamboyance'.",
+      "source": "random",
+      "source_url": "https://example.com",
+      "language": "en",
+      "permalink": "https://uselessfacts.jsph.pl/api/v2/facts/123abc"
+    },
+    "docUrl": "https://uselessfacts.jsph.pl/",
+    "status": "active",
+    "tags": [
+      "冷知识",
+      "趣味",
+      "随机",
+      "百科",
+      "多语言"
+    ]
+  },
+  {
+    "id": "freetogame",
+    "name": "FreeToGame",
+    "description": "免费游戏数据库API，浏览免费PC/在线游戏",
+    "fullDescription": "提供大量免费游戏的数据库API，包括免费PC游戏和免费在线游戏。返回游戏标题、缩略图、简短描述、URL、发行商、发布日期等完整信息。支持按平台、类别、排序方式筛选。无需API Key，非常适合开发游戏推荐、游戏发现等应用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.freetogame.com/api/games?platform=pc",
+    "baseUrl": "https://www.freetogame.com/api",
+    "params": [
+      {
+        "name": "platform",
+        "type": "string",
+        "required": false,
+        "description": "游戏平台：pc/browser/all",
+        "example": "pc"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "游戏分类",
+        "example": "mmorpg/shooter/strategy"
+      },
+      {
+        "name": "sort-by",
+        "type": "string",
+        "required": false,
+        "description": "排序方式",
+        "example": "release-date/popularity/alphabetical"
+      }
+    ],
+    "responseExample": [
+      {
+        "id": 1,
+        "title": "Dauntless",
+        "thumbnail": "https://www.freetogame.com/g/1/thumbnail.jpg",
+        "short_description": "Dauntless is a free-to-play action RPG...",
+        "game_url": "https://www.freetogame.com/open/dauntless",
+        "genre": "Action RPG",
+        "platform": "PC (Windows)"
+      }
+    ],
+    "docUrl": "https://www.freetogame.com/api-doc",
+    "status": "active",
+    "tags": [
+      "游戏",
+      "免费",
+      "PC",
+      "数据库",
+      "游戏推荐"
+    ]
+  },
+  {
+    "id": "radio-browser",
+    "name": "Radio Browser",
+    "description": "全球网络电台列表API，超过7万个电台",
+    "fullDescription": "开源免费的全球网络电台目录API，包含超过7万个电台的完整信息（名称、流派、国家、语言、比特率、播放地址）。支持搜索、按标签/国家/语言/代码筛选、获取热门电台、电台分类统计等功能。数据来自社区贡献，持续更新。非常适合开发网络电台播放器或电台发现应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://de1.api.radio-browser.info/json/stations/topclick/10",
+    "baseUrl": "https://de1.api.radio-browser.info/json",
+    "params": [
+      {
+        "name": "endpoint",
+        "type": "string",
+        "required": false,
+        "description": "端点：stations/topclick, stations/topvote, stations/search",
+        "example": "stations/topclick/10"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词(search端点)",
+        "example": "jazz"
+      },
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家代码",
+        "example": "CN/US/GB"
+      }
+    ],
+    "responseExample": [
+      {
+        "name": "BBC World Service",
+        "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+        "country": "United Kingdom",
+        "language": "English",
+        "tags": "news, talk",
+        "codec": "MP3",
+        "bitrate": 128
+      }
+    ],
+    "docUrl": "https://api.radio-browser.info/",
+    "status": "active",
+    "tags": [
+      "电台",
+      "广播",
+      "音乐",
+      "全球",
+      "音频",
+      "流媒体"
+    ]
+  },
+  {
+    "id": "bacon-ipsum",
+    "name": "Bacon Ipsum",
+    "description": "生成带肉类词汇的Lorem Ipsum占位文本",
+    "fullDescription": "专为美食和肉类主题网站设计的Lorem Ipsum占位文本生成器。可生成带有各种肉类相关词汇的假文本，支持普通模式、只有肉类词汇、传统Lorem Ipsum多种模式。可控制段落数、句子数和起始语。非常适合餐饮类网站的前端开发原型设计。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://baconipsum.com/api/?type=meat-and-filler&paras=2",
+    "baseUrl": "https://baconipsum.com/api",
+    "params": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "文本类型：meat-and-filler, all-meat, lorem",
+        "example": "meat-and-filler"
+      },
+      {
+        "name": "paras",
+        "type": "number",
+        "required": false,
+        "description": "段落数",
+        "example": "3"
+      },
+      {
+        "name": "sentences",
+        "type": "number",
+        "required": false,
+        "description": "每段句子数",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      "Bacon ipsum dolor amet chuck pork belly drumstick, landjaeger meatloaf hamburger turkey swine. Kielbasa strip steak ham hock, venison ball tip shoulder porchetta. Sirloin boudin pork shankle short loin."
+    ],
+    "docUrl": "https://baconipsum.com/",
+    "status": "active",
+    "tags": [
+      "占位文本",
+      "Lorem",
+      "生成器",
+      "假数据",
+      "趣味",
+      "美食"
+    ]
+  },
+  {
+    "id": "potterdb",
+    "name": "Potter DB",
+    "description": "哈利波特宇宙数据库API，咒语/角色/书籍",
+    "fullDescription": "完整的哈利波特宇宙开放数据API，使用JSON:API格式。提供书籍、章节、角色、咒语、魔药、电影等完整信息。支持搜索、筛选、分页，数据包括名称、描述、属性、关联关系等。非常适合哈利波特粉丝应用、同人创作工具或魔法知识问答。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.potterdb.com/v1/spells?page[size]=5",
+    "baseUrl": "https://api.potterdb.com/v1",
+    "params": [
+      {
+        "name": "resource",
+        "type": "string",
+        "required": true,
+        "description": "资源类型(spells/characters/books/movies/chapters/potions)",
+        "example": "spells"
+      },
+      {
+        "name": "page[size]",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "5"
+      },
+      {
+        "name": "filter[name]",
+        "type": "string",
+        "required": false,
+        "description": "按名称筛选",
+        "example": "Patronus"
+      }
+    ],
+    "responseExample": {
+      "data": [
+        {
+          "id": "123",
+          "type": "spell",
+          "attributes": {
+            "name": "Expecto Patronum",
+            "category": "Charm",
+            "incantation": "Expecto Patronum",
+            "effect": "Conjures a Patronus, a guardian of pure positive energy",
+            "light": "Silver"
+          }
+        }
+      ],
+      "meta": {
+        "records": 150
+      }
+    },
+    "docUrl": "https://potterdb.com/",
+    "status": "active",
+    "tags": [
+      "哈利波特",
+      "魔法",
+      "咒语",
+      "角色",
+      "影视",
+      "书籍"
+    ]
+  },
+  {
+    "id": "rest-countries",
+    "name": "REST Countries",
+    "description": "世界各国信息API，含国旗、语言、货币等",
+    "fullDescription": "全面的国家地理信息API，覆盖全球250+国家和地区。提供国家名称、首都、人口、面积、语言、货币、时区、地区、子区域、国旗图片（SVG/PNG）、顶级域名等丰富信息。支持按名称、代码、货币、语言、首都等多维度搜索和筛选。CORS全开，无需API Key。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,flags,currencies,languages",
+    "baseUrl": "https://restcountries.com/v3.1",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "国家名称（URL路径部分）",
+        "example": "china|usa|japan"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段过滤",
+        "example": "name,capital,population,flags"
+      }
+    ],
+    "responseExample": [
+      {
+        "name": {
+          "common": "中国",
+          "official": "中华人民共和国"
+        },
+        "capital": [
+          "北京"
+        ],
+        "population": 1439323776
+      }
+    ],
+    "docUrl": "https://restcountries.com/",
+    "status": "active",
+    "tags": [
+      "国家",
+      "地理",
+      "国旗",
+      "货币",
+      "语言"
+    ]
+  },
+  {
+    "id": "deck-of-cards",
+    "name": "Deck of Cards API",
+    "description": "在线扑克牌模拟API",
+    "fullDescription": "模拟一副标准扑克牌的API，支持洗牌、抽牌、发牌等操作。每次创建新的牌堆，可洗牌、抽指定数量牌、返回剩余牌数等。非常适合开发卡牌类小游戏或扑克牌教学应用。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+    "baseUrl": "https://deckofcardsapi.com/api/deck",
+    "params": [
+      {
+        "name": "deck_count",
+        "type": "number",
+        "required": false,
+        "description": "牌组数量",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "success": true,
+      "deck_id": "3p40paa87x90",
+      "remaining": 52,
+      "shuffled": true
+    },
+    "docUrl": "https://deckofcardsapi.com/",
+    "status": "active",
+    "tags": [
+      "扑克牌",
+      "游戏",
+      "卡牌"
+    ]
+  },
+  {
+    "id": "fakerapi",
+    "name": "FakerAPI",
+    "description": "假数据生成器，支持自定义字段和数量",
+    "fullDescription": "强大的假数据生成API，可生成用户、商品、地址、公司等多种类型的模拟数据。支持自定义字段、指定数据数量、本地化（多语言），非常适合前端开发和原型设计使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://fakerapi.it/api/v1/users?_quantity=3&_locale=zh_CN",
+    "baseUrl": "https://fakerapi.it",
+    "params": [
+      {
+        "name": "_quantity",
+        "type": "number",
+        "required": false,
+        "description": "生成数据条数",
+        "example": "5"
+      },
+      {
+        "name": "_locale",
+        "type": "string",
+        "required": false,
+        "description": "本地化语言",
+        "example": "zh_CN"
+      }
+    ],
+    "responseExample": {
+      "status": "OK",
+      "code": 200,
+      "total": 3,
+      "data": [
+        {
+          "id": 1,
+          "firstname": "明",
+          "lastname": "华",
+          "email": "minghua@example.com"
+        }
+      ]
+    },
+    "docUrl": "https://fakerapi.it/",
+    "status": "active",
+    "tags": [
+      "假数据",
+      "模拟数据",
+      "用户生成",
+      "前端测试",
+      "本地化"
+    ],
+    "note": ""
+  },
+  {
+    "id": "disease-sh",
+    "name": "Disease.sh",
+    "description": "全球COVID-19等疫情数据API",
+    "fullDescription": "开放源码的疾病数据API，聚合WHO、JHU CSSE等多个数据源。提供全球/国家疫情数据，包括累计/新增确诊、死亡、康复、疫苗接种等。支持历史数据查询。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://disease.sh/v3/covid-19/all",
+    "baseUrl": "https://disease.sh/v3",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "国家名或ISO代码（路径参数）",
+        "example": "CN"
+      },
+      {
+        "name": "yesterday",
+        "type": "boolean",
+        "required": false,
+        "description": "使用昨日数据",
+        "example": "true"
+      }
+    ],
+    "responseExample": {
+      "updated": 1703232000000,
+      "cases": 700000000,
+      "todayCases": 100000,
+      "deaths": 7000000,
+      "recovered": 670000000,
+      "active": 23000000,
+      "affectedCountries": 230
+    },
+    "docUrl": "https://disease.sh/",
+    "status": "active",
+    "tags": [
+      "COVID-19",
+      "疫情",
+      "数据",
+      "疫苗",
+      "全球"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID Generator",
+    "description": "在线UUID/GUID生成器API",
+    "fullDescription": "生成UUID v4（随机UUID），一次可生成1-50个UUID。返回JSON数组格式。非常适合开发需要唯一标识符的应用、数据库种子数据、测试数据生成等。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://www.uuidtools.com/api/generate/v4",
+    "baseUrl": "https://www.uuidtools.com/api/generate",
+    "params": [
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "生成数量（1-50）",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      "550e8400-e29b-41d4-a716-446655440000"
+    ],
+    "docUrl": "https://www.uuidtools.com/",
+    "status": "active",
+    "tags": [
+      "UUID",
+      "GUID",
+      "生成器",
+      "唯一标识",
+      "ID"
+    ]
+  },
+  {
+    "id": "hn-algolia",
+    "name": "Hacker News Algolia",
+    "description": "Hacker News搜索API，支持全文检索",
+    "fullDescription": "基于Algolia的Hacker News搜索API，提供比官方Firebase API更强大的搜索功能。支持全文搜索、按时间/热度排序、按标签过滤（story/comment/poll等）。无需认证，CORS全开，响应速度快。非常适合开发HN阅读器、科技资讯聚合工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://hn.algolia.com/api/v1/search?query=javascript&tags=story&hitsPerPage=5",
+    "baseUrl": "https://hn.algolia.com/api/v1",
+    "params": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "javascript"
+      },
+      {
+        "name": "tags",
+        "type": "string",
+        "required": false,
+        "description": "标签过滤",
+        "example": "story|comment|show_hn|ask_hn"
+      },
+      {
+        "name": "hitsPerPage",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "hits": [
+        {
+          "title": "JavaScript News",
+          "url": "https://...",
+          "points": 100
+        }
+      ],
+      "nbHits": 1000
+    },
+    "docUrl": "https://hn.algolia.com/api",
+    "status": "active",
+    "tags": [
+      "Hacker News",
+      "搜索",
+      "科技",
+      "新闻",
+      "Algolia"
     ]
   }
 ]

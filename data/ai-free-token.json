@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11",
+  "updatedAt": "2026-06-12",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -922,26 +922,6 @@
       }
     },
     {
-      "name": "联通云 AI Coding Plan",
-      "quota": "新一期开发者激励活动进行中：支持 GLM-5、MiniMax M2.5/M2.7、Qwen3.5-397B、Qwen3-235B、DeepSeek-V3.1/V4、Kimi-K2.5 等主流模型；适配 OpenCode、Claude Code、Cursor、OpenClaw、Cline 等工具；OpenAI 兼容协议；此前限时免费1个月活动（2026-03-15截止）已替换为新激励活动；曾推出限量5000台免费送1个月4核8G服务器（预装OpenClaw）活动",
-      "cycle": "新一期激励活动持续中（具体额度和有效期以联通云官方最新公告为准）",
-      "url": "https://www.cucloud.cn/activity/kickoffseason.html",
-      "develop": {
-        "document_url": "https://support.cucloud.cn/document/127/591/2357.html",
-        "base_url": "https://aigw-gzgy2.cucloud.cn:8443/v1",
-        "models": [
-          "glm-5",
-          "MiniMax-M2.5",
-          "MiniMax-M2.7",
-          "kimi-k2.5",
-          "Qwen3.5-397B-A17B",
-          "Qwen3-235B-A22B",
-          "DeepSeek-V3.1",
-          "DeepSeek-V4-Flash"
-        ]
-      }
-    },
-    {
       "name": "移动云（中国移动）一站式模型托管平台",
       "quota": "全新 MoMA（移动模型服务平台）已于2026年5月8日在移动云大会正式发布；新用户注册即送9000万Tokens体验包（涵盖Ernie 4.5T系列、X1T系列、DeepSeek系列等9款主流模型，各模型独立额度）；接入超过300款国内主流AI大模型（九天、豆包、通义千问等），为目前国内最大；首创Token集约化运营模式与「模型联邦+智能路由」技术，可按成本/效果优先自动匹配最优模型，降低约30%单位成本；定位为「国内首个开放普惠的AI模型超级入口」；原新用户2500万tokens免费体验活动（2025年12月31日截止）已被MoMA平台取代",
       "cycle": "MoMA平台全新上线（2026-05-08发布，具体免费政策以官方公告为准）",
@@ -1377,7 +1357,7 @@
     },
     {
       "name": "OpenRouter",
-      "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；50+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill、Mistral Small 3.1、MiniMax M2.5、Nemotron 3、GPT-OSS 120B、Cogito v1 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",
+      "quota": "免费层：20 RPM / 50 RPD（终身充值$10后提升至1000 RPD）；60+ 模型标注:free可免费调用（含 Llama 3.3 70B、Gemma 3/4 全系列、Qwen3 全系列、DeepSeek-R1-Distill/V4-Flash、Mistral Small 3.1/3.2、MiniMax M2.5/M2.7、Nemotron 3 Nano/Nano Omni、GPT-OSS 120B、Cogito v1、Poolside Laguna M.1/XS.2、Google Lyria 3 Pro/Clip、Kimi K2.6、Owl Alpha 等）；单API Key访问300+模型；OpenAI兼容格式；模型路由与自动故障转移",
       "cycle": "每日重置（永久免费层；充值$10后速率限制永久提升）",
       "url": "https://openrouter.ai",
       "develop": {
@@ -1390,17 +1370,25 @@
           "google/gemma-3-4b-it:free",
           "google/gemma-4-26b-a4b-it:free",
           "google/gemma-4-31b-it:free",
+          "google/lyria-3-pro-preview:free",
+          "google/lyria-3-clip-preview:free",
           "qwen/qwen3-235b-a22b:free",
           "qwen/qwen3-32b:free",
           "qwen/qwen3-14b:free",
           "qwen/qwen3-8b:free",
           "qwen/qwen3-4b:free",
           "deepseek/deepseek-r1-distill-llama-70b:free",
+          "deepseek/deepseek-v4-flash:free",
           "mistralai/mistral-small-3.1-24b-instruct:free",
           "minimax/minimax-m2.5:free",
           "nvidia/nemotron-3-nano-30b-a3b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "openai/gpt-oss-120b:free",
-          "cognitive-cogito/cogito-v1-preview-llama-70b:free"
+          "moonshotai/kimi-k2.6:free",
+          "poolside/laguna-m.1:free",
+          "poolside/laguna-xs.2:free",
+          "cognitive-cogito/cogito-v1-preview-llama-70b:free",
+          "openrouter-owl/owl-alpha:free"
         ]
       }
     },
@@ -1436,7 +1424,92 @@
           "fal-ai/sora-v2"
         ]
       }
+    },
+    {
+      "name": "天翼云息壤智算",
+      "quota": "各模型2500万Tokens免费领取（两周有效）；DeepSeek-V4-Pro、DeepSeek-V4-Flash各50万Tokens专属额度；其他模型各100万Tokens体验额度；覆盖GLM-5、GLM-5.1、Qwen3.5-397B-A17B、DeepSeek-V3.2（旗舰版）、DeepSeek-R1、Doubao-Seed-2.0-pro、星辰语义大模型等18+主流大模型；新老用户均可领取（需实名认证）；「国模+国芯+国云」全产业链闭环，支持国产芯片适配",
+      "cycle": "首次使用模型起两周有效；专属模型额度14天有效",
+      "url": "https://www.ctyun.cn/products/maas",
+      "develop": {
+        "document_url": "https://www.ctyun.cn/document/api",
+        "base_url": "https://api.ctyun.cn/v1",
+        "models": [
+          "glm-5",
+          "glm-5.1",
+          "qwen3.5-397b-a17b",
+          "deepseek-v3.2",
+          "deepseek-v4-pro",
+          "deepseek-v4-flash",
+          "doubao-seed-2.0-pro",
+          "deepseek-r1"
+        ]
+      }
+    },
+    {
+      "name": "派欧云（PPIO）",
+      "quota": "新用户注册赠送500万Tokens（支持DeepSeek-R1/V3、Qwen3-235B、Kimi-K2.5、ERNIE-4.5等主流模型）；部分轻量级模型提供永久免费调用额度；提供LLM、图像生成、视频生成等多模态API；中国大陆直连，低延迟；中国领先的独立分布式云计算服务商",
+      "cycle": "注册赠送额度用完为止；部分模型永久免费",
+      "url": "https://ppio.com/model-api",
+      "develop": {
+        "document_url": "https://ppio.com/docs/models/reference-authentication",
+        "base_url": "https://api.ppio.com/openai/v1",
+        "models": [
+          "deepseek/deepseek-r1",
+          "deepseek/deepseek-v3",
+          "qwen/qwen3-235b-a22b",
+          "moonshotai/kimi-k2.5",
+          "baidu/ernie-4.5"
+        ]
+      }
+    },
+    {
+      "name": "云知声Token Hub（Unisound）",
+      "quota": "新客首月1.9元=1.8亿Credits（5款模型一Key通吃）；U-Model TokenPlan Lite入门级1.8亿Credits敞开用，文本/视觉/语音共享一个额度池；Unsiound U2（266B MoE原生智能体大模型，SWE-Bench 75分，Claw-Eval 76.9分，GPQA Diamond 87.9分）、U1-OCR（智能文档识别）、U2-ASR（方言+多语语音转写，覆盖100+方言）、U2-TTS（语音合成）、U2-TTS-Clone（音色复刻）；兼容Claude Code/Cursor/OpenClaw全主流工具；快慢思考融合架构，自主完成百步工作流",
+      "cycle": "TokenPlan按月订阅（首月1.9元特惠，后续Lite/Standard/Pro/Max四档）",
+      "url": "https://maas.unisound.com",
+      "develop": {
+        "document_url": "https://maas.unisound.com/docs",
+        "base_url": "https://maas.unisound.com/v1",
+        "models": [
+          "unisound-u2",
+          "unisound-u1-ocr",
+          "unisound-u2-asr",
+          "unisound-u2-tts",
+          "unisound-u2-tts-clone"
+        ]
+      }
+    },
+    {
+      "name": "Poolside（Laguna）",
+      "quota": "Laguna M.1（225B/23B激活）和Laguna XS.2（33B/3B激活）限时免费（通过官方API和OpenRouter均可调用）；专注Agentic Coding场景；Laguna M.1：SWE-bench Verified 72.5%、SWE-bench Pro 46.9%、Terminal-Bench 2.0领先；Laguna XS.2：Apache 2.0开源，单GPU可运行，33B参数对标更大模型；256K上下文；支持Function Calling/工具调用；Laguna XS.2开源权重可在HuggingFace下载自行部署",
+      "cycle": "限时免费（M.1限时，XS.2无宣布结束日期；OpenRouter上标注:free）",
+      "url": "https://platform.poolside.ai",
+      "develop": {
+        "document_url": "https://platform.poolside.ai/docs",
+        "base_url": "https://api.poolside.ai/v1",
+        "models": [
+          "poolside/laguna-m.1",
+          "poolside/laguna-xs.2"
+        ]
+      }
+    },
+    {
+      "name": "DMXAPI（大模型API聚合平台）",
+      "quota": "22+款免费模型API不限量不限并发调用（含Qwen3-8B、GLM-4.7-Flash、doubao-seed-2.0-pro-free、kat-coder-pro-v1-free、bge-reranker-v2-m3-free等）；聚合350+模型（GPT系列、Claude、LLaMA、通义千问、文心一言等）；OpenAI兼容接口，单Key调用全平台；国内直连低延迟（约180ms）；99.99%可用性；人民币结算；不保留用户请求内容；新用户注册可获测试额度",
+      "cycle": "免费模型永久免费不限量；付费模型按量计费",
+      "url": "https://www.dmxapi.cn",
+      "develop": {
+        "document_url": "https://www.dmxapi.cn/docs",
+        "base_url": "https://www.dmxapi.cn/v1",
+        "models": [
+          "qwen3-8b-free",
+          "glm-4.7-flash-free",
+          "doubao-seed-2.0-pro-free",
+          "kat-coder-pro-v1-free",
+          "bge-reranker-v2-m3-free"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-11T14:14:06.877Z"
+  "lastUpdateTime": "2026-06-12T10:00:00.000Z"
 }

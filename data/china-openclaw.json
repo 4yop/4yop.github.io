@@ -2257,5 +2257,41 @@
     "deployment": "华为云企业级智能体平台，支持混合云部署",
     "features": "华为云企业级智能体平台，践行Harness工程；四大核心能力：生产级长程任务、企业级安全、行业知识深度、全链路可观测；开源版openJiuwen内核同源度超90%；聚合全栈Agentic云服务+丰富智能体+百模千态大模型一体化能力；能力全面Skill化、CLI化；全流程智能体化；已公测开放",
     "website": "https://www.huaweicloud.com"
+  },
+  {
+    "id": 309,
+    "name": "Agents-Flex",
+    "developer": "Agents-Flex社区",
+    "releaseTime": "2025.06",
+    "deployment": "开源框架（Apache 2.0），Maven/Gradle依赖引入，支持本地部署",
+    "features": "Java编写的轻量高性能AI智能体开发框架；对标LangChain4j但更轻量简洁；支持OpenAI、Qwen、DeepSeek、Spark等国内外主流大模型；内置Prompt模板、Function Calling、RAG检索增强生成、向量存储；支持Agent链式调用与多Agent协作；提供声网Agora集成实现语音对话Agent；极低学习成本，Java开发者可快速上手；GitHub 1.5K+ Stars",
+    "website": "https://agentsflex.com"
+  },
+  {
+    "id": 310,
+    "name": "Qwen Code",
+    "developer": "阿里通义实验室（QwenLM）",
+    "releaseTime": "2026.05",
+    "deployment": "CLI终端工具，npm安装（npm install -g @anthropic-ai/qwen-code），开源Apache 2.0",
+    "features": "阿里通义实验室开源AI编程CLI工具，对标Claude Code；基于Qwen3-Coder模型驱动；支持代码生成、重构、调试、测试全流程；内置项目级上下文理解与代码导航；支持MCP协议扩展工具能力；每天2000次免费请求额度；GitHub 18K+ Stars；中文编程场景深度优化",
+    "website": "https://github.com/QwenLM/qwen-code"
+  },
+  {
+    "id": 311,
+    "name": "Trae",
+    "developer": "字节跳动",
+    "releaseTime": "2025.01",
+    "deployment": "桌面端IDE（macOS/Windows），基于VS Code架构",
+    "features": "字节跳动推出的AI原生IDE，对标Cursor与Claude Code；SOLO模式实现Agent自主编程能力，可自动完成多文件编辑与终端操作；内置Claude 3.5 Sonnet与GPT-4o等顶级模型；Builder模式从自然语言描述直接生成完整项目；中文适配行业顶尖，注释与变量命名全中文友好；基础版永久免费，Pro版$10/月；支持MCP协议与自定义工具扩展",
+    "website": "https://trae.ai/zh"
+  },
+  {
+    "id": 312,
+    "name": "DeerFlow 2.0",
+    "developer": "字节跳动",
+    "releaseTime": "2026.02.28",
+    "deployment": "开源框架（MIT协议），GitHub获取，支持Docker部署",
+    "features": "字节跳动开源的SuperAgent Harness框架2.0版本，基于LangGraph 1.0彻底重写；GitHub 57K+ Stars；支持子代理并行调度与层级编排；内置Docker沙箱安全执行环境；长期记忆系统支持跨会话知识积累；原生MCP协议支持，可接入外部工具；多模型支持（Qwen/DeepSeek/GLM/OpenAI等）；支持人类反馈中断与恢复机制；RAG增强检索与多轮对话规划",
+    "website": "https://github.com/bytedance/deer-flow"
   }
 ]
