@@ -1,48 +1,5 @@
 [
   {
-    "id": "jsonplaceholder",
-    "name": "JSONPlaceholder",
-    "description": "假数据REST API，用于前端开发和测试",
-    "fullDescription": "提供posts、comments、albums、photos、todos、users等资源的完整REST API接口，支持CRUD操作，非常适合前端开发原型设计和测试。返回结构化的JSON数据，无需注册即可使用。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://jsonplaceholder.typicode.com/posts?_limit=5",
-    "baseUrl": "https://jsonplaceholder.typicode.com",
-    "params": [
-      {
-        "name": "_limit",
-        "type": "number",
-        "required": false,
-        "description": "返回数量限制",
-        "example": "5"
-      },
-      {
-        "name": "_page",
-        "type": "number",
-        "required": false,
-        "description": "页码",
-        "example": "1"
-      }
-    ],
-    "responseExample": [
-      {
-        "userId": 1,
-        "id": 1,
-        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-      }
-    ],
-    "docUrl": "https://jsonplaceholder.typicode.com/",
-    "status": "active",
-    "tags": [
-      "假数据",
-      "REST API",
-      "前端测试",
-      "mock数据",
-      "posts"
-    ]
-  },
-  {
     "id": "httpbingo",
     "name": "HttpBingo",
     "description": "HTTP请求测试工具，回显请求数据",
@@ -273,48 +230,6 @@
       "Unsplash",
       "高清",
       "灰度"
-    ]
-  },
-  {
-    "id": "dog-ceo",
-    "name": "Dog CEO",
-    "description": "随机狗狗图片API，支持按品种筛选",
-    "fullDescription": "专门提供狗狗图片的趣味API服务。支持随机获取狗狗图片、按品种分类浏览（如柴犬、金毛、哈士奇等）、获取所有品种列表、多个随机图片等功能。所有图片都是真实的可爱狗狗照片，适合宠物类应用或娱乐功能。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://dog.ceo/api/breeds/image/random/3",
-    "baseUrl": "https://dog.ceo/api",
-    "params": [
-      {
-        "name": "breed",
-        "type": "string",
-        "required": false,
-        "description": "犬种名称",
-        "example": "shiba|retriever|husky"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回图片数量",
-        "example": "3"
-      }
-    ],
-    "responseExample": {
-      "message": [
-        "https://images.dog.ceo/breeds/shiba/shiba-1.jpg",
-        "https://images.dog.ceo/breeds/retriever/golden-1.jpg"
-      ],
-      "status": "success"
-    },
-    "docUrl": "https://dog.ceo/dog-api/documentation/",
-    "status": "active",
-    "tags": [
-      "狗狗",
-      "宠物",
-      "随机图片",
-      "品种",
-      "可爱"
     ]
   },
   {
@@ -684,36 +599,6 @@
     ]
   },
   {
-    "id": "typefit-quotes",
-    "name": "Type.fit Quotes",
-    "description": "经典名言API，中英文双语支持",
-    "fullDescription": "托管在GitHub Gist上的名言API，收录了大量中英文经典名言警句。每条名言包含原文内容和作者信息。数据质量较高，来源可靠。由于托管在Gist上，稳定性较好，适合需要展示名人名言的学习类、励志类应用。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://type.fit/api/quotes",
-    "baseUrl": "https://type.fit/api",
-    "params": [],
-    "responseExample": [
-      {
-        "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
-        "author": "Thomas Edison"
-      },
-      {
-        "text": "生活不是等待暴风雨过去，而是学会在雨中跳舞。",
-        "author": "未知"
-      }
-    ],
-    "docUrl": "https://github.com/lukePeavey/quotable",
-    "status": "active",
-    "tags": [
-      "名言",
-      "语录",
-      "中英双语",
-      "经典",
-      "作者"
-    ]
-  },
-  {
     "id": "qr-server",
     "name": "QR Server",
     "description": "在线二维码生成API，支持多种格式和样式",
@@ -845,59 +730,6 @@
     ]
   },
   {
-    "id": "libretranslate",
-    "name": "LibreTranslate (自建)",
-    "description": "开源机器翻译引擎，需自行部署",
-    "fullDescription": "完全开源的机器翻译解决方案，基于ArgosTranslate模型。支持自建部署，数据隐私可控，无第三方依赖。支持多种语言对，翻译质量持续优化。适合企业内部使用或有特殊合规要求的场景。提供Docker镜像，部署相对简单。如果不想自建，可以使用官方提供的公共实例（可能有速率限制）。",
-    "category": "translate",
-    "method": "POST",
-    "url": "https://libretranslate.de/translate",
-    "baseUrl": "https://libretranslate.de",
-    "params": [
-      {
-        "name": "q",
-        "type": "string",
-        "required": true,
-        "description": "要翻译的文本",
-        "example": "Hello World"
-      },
-      {
-        "name": "source",
-        "type": "string",
-        "required": true,
-        "description": "源语言代码",
-        "example": "en|zh|auto"
-      },
-      {
-        "name": "target",
-        "type": "string",
-        "required": true,
-        "description": "目标语言代码",
-        "example": "zh|en|ja"
-      },
-      {
-        "name": "format",
-        "type": "string",
-        "required": false,
-        "description": "文本格式",
-        "example": "text|html"
-      }
-    ],
-    "responseExample": {
-      "translatedText": "你好世界"
-    },
-    "docUrl": "https://libretranslate.com/",
-    "status": "active",
-    "tags": [
-      "翻译",
-      "开源",
-      "自建",
-      "隐私",
-      "Docker"
-    ],
-    "note": ""
-  },
-  {
     "id": "github-public-api",
     "name": "GitHub Public API",
     "description": "GitHub公开资源访问API",
@@ -960,54 +792,6 @@
       "API"
     ],
     "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时"
-  },
-  {
-    "id": "postman-echo",
-    "name": "Postman Echo",
-    "description": "Postman请求回显服务，用于测试和调试",
-    "fullDescription": "Postman官方提供的请求回显服务，可以将你发送的请求原样返回，方便检查请求是否正确构造。支持各种HTTP方法、Cookie处理、认证测试、延迟模拟等功能。与HTTPBin类似但由Postman维护，稳定性好。特别适合学习和调试RESTful API交互。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
-    "baseUrl": "https://postman-echo.com",
-    "params": [
-      {
-        "name": "endpoint",
-        "type": "string",
-        "required": true,
-        "description": "端点类型（URL路径部分）",
-        "example": "get|post|put|delete|patch|headers|cookies|auth/basic"
-      },
-      {
-        "name": "custom_params",
-        "type": "string",
-        "required": false,
-        "description": "自定义查询参数",
-        "example": "key1=value1"
-      }
-    ],
-    "responseExample": {
-      "args": {
-        "foo1": "bar1",
-        "foo2": "bar2"
-      },
-      "headers": {
-        "x-forwarded-proto": "https",
-        "host": "postman-echo.com",
-        "accept": "*/*",
-        "user-agent": "curl/7.88.1"
-      },
-      "url": "https://postman-echo.com/get?foo1=bar1&foo2=bar2"
-    },
-    "docUrl": "https://learning.postman.com/docs/sending-requests/intro-to-collection/",
-    "status": "active",
-    "tags": [
-      "Postman",
-      "回显",
-      "测试",
-      "调试",
-      "HTTP"
-    ]
   },
   {
     "id": "agify-io",
@@ -1875,45 +1659,6 @@
     ]
   },
   {
-    "id": "evil-insult",
-    "name": "Evil Insult Generator",
-    "description": "多语言\"毒舌\"语句生成器（纯娱乐）",
-    "fullDescription": "支持40+语言的随机趣味语句生成器，纯娱乐用途。返回JSON格式的创意语句，可指定语言。适合做恶搞功能、每日一笑或语言学习中的趣味素材。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://evilinsult.com/generate_insult.php?lang=en&type=json",
-    "baseUrl": "https://evilinsult.com",
-    "params": [
-      {
-        "name": "lang",
-        "type": "string",
-        "required": false,
-        "description": "语言代码(en/de/fr/es...)",
-        "example": "en"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "返回格式(json/text)",
-        "example": "json"
-      }
-    ],
-    "responseExample": {
-      "number": "42",
-      "insult": "You are as sharp as a marble.",
-      "created": "2024-01-01"
-    },
-    "docUrl": "https://evilinsult.com/api",
-    "status": "active",
-    "tags": [
-      "趣味",
-      "多语言",
-      "娱乐",
-      "毒舌"
-    ]
-  },
-  {
     "id": "cat-facts",
     "name": "Cat Facts",
     "description": "随机猫咪冷知识API",
@@ -2216,58 +1961,6 @@
     "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license"
   },
   {
-    "id": "boredapi",
-    "name": "Bored API",
-    "description": "随机活动建议，帮你打发无聊时光",
-    "fullDescription": "当你无聊时，Bored API为你推荐各种活动。支持按类型筛选（教育、休闲、社交、DIY、慈善、烹饪、音乐、忙碌等），按参与人数和价格范围过滤。非常适合开发'今天做什么'类型的应用。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://bored-api.appbrewery.com/random",
-    "baseUrl": "https://bored-api.appbrewery.com",
-    "params": [
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "活动类型：education, recreational, social, diy, charity, cooking, relaxation, music, busywork",
-        "example": "recreational"
-      },
-      {
-        "name": "participants",
-        "type": "number",
-        "required": false,
-        "description": "参与人数",
-        "example": "2"
-      },
-      {
-        "name": "price",
-        "type": "number",
-        "required": false,
-        "description": "价格范围 0-1",
-        "example": "0"
-      }
-    ],
-    "responseExample": {
-      "activity": "Learn a new programming language",
-      "type": "education",
-      "participants": 1,
-      "price": 0,
-      "link": "",
-      "key": "1",
-      "accessibility": 0.1
-    },
-    "docUrl": "https://www.boredapi.com/",
-    "status": "active",
-    "tags": [
-      "活动",
-      "无聊",
-      "建议",
-      "休闲",
-      "随机"
-    ],
-    "note": ""
-  },
-  {
     "id": "ipinfo-io",
     "name": "IPinfo.io",
     "description": "IP地址归属地和运营商信息查询",
@@ -2304,147 +1997,6 @@
       "地理定位",
       "ASN",
       "运营商"
-    ]
-  },
-  {
-    "id": "colormind",
-    "name": "Colormind",
-    "description": "AI驱动的配色方案生成器",
-    "fullDescription": "使用深度学习算法生成和谐的配色方案。支持多种配色模型（默认、电影、复古等），每次返回5种颜色的配色组合。非常适合设计工具、UI配色灵感生成等应用。POST请求需发送JSON body指定模型。",
-    "category": "tool",
-    "method": "POST",
-    "url": "http://colormind.io/api/",
-    "baseUrl": "http://colormind.io",
-    "params": [
-      {
-        "name": "model",
-        "type": "string",
-        "required": false,
-        "description": "配色模型：default, ui, vivid, muted, pastel, etc.",
-        "example": "default"
-      }
-    ],
-    "responseExample": {
-      "result": [
-        [
-          44,
-          43,
-          43
-        ],
-        [
-          120,
-          85,
-          88
-        ],
-        [
-          217,
-          164,
-          125
-        ],
-        [
-          244,
-          221,
-          182
-        ],
-        [
-          247,
-          233,
-          213
-        ]
-      ]
-    },
-    "docUrl": "http://colormind.io/api/",
-    "status": "active",
-    "tags": [
-      "配色",
-      "设计",
-      "AI",
-      "颜色",
-      "UI"
-    ]
-  },
-  {
-    "id": "lipsum",
-    "name": "Lorem Ipsum Generator",
-    "description": "生成占位文本(Lorem Ipsum)的经典API",
-    "fullDescription": "生成Lorem Ipsum占位文本，支持按段落数、字数、列表数量生成。返回的JSON包含生成的文本及统计信息（段落数、字数、字符数）。非常适合前端开发中填充文本占位内容。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://lipsum.com/feed/json?amount=3&what=paras",
-    "baseUrl": "https://lipsum.com",
-    "params": [
-      {
-        "name": "amount",
-        "type": "number",
-        "required": false,
-        "description": "生成数量",
-        "example": "3"
-      },
-      {
-        "name": "what",
-        "type": "string",
-        "required": false,
-        "description": "生成类型：paras(段落), words(字), bytes(字节), lists(列表)",
-        "example": "paras"
-      }
-    ],
-    "responseExample": {
-      "feed": {
-        "lipsum": "Lorem ipsum dolor sit amet...",
-        "generated": "3 paragraphs",
-        "donatelink": "",
-        "creditlink": "",
-        "subtitle": ""
-      }
-    },
-    "docUrl": "https://lipsum.com/",
-    "status": "active",
-    "tags": [
-      "占位文本",
-      "Lorem Ipsum",
-      "生成器",
-      "测试数据"
-    ]
-  },
-  {
-    "id": "xkcd",
-    "name": "xkcd Comics",
-    "description": "获取xkcd漫画的信息和元数据",
-    "fullDescription": "获取xkcd科技漫画的标题、图片URL、ALT文字等信息。支持获取最新一集、指定编号的漫画。xkcd是著名的极客/科技向网络漫画，其API简单直接，非常适合开发漫画阅读器或随机漫画展示。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://xkcd.com/1/info.0.json",
-    "baseUrl": "https://xkcd.com",
-    "params": [
-      {
-        "name": "comic_id",
-        "type": "number",
-        "required": false,
-        "description": "漫画编号（URL路径中），不传则返回最新",
-        "example": "1"
-      }
-    ],
-    "responseExample": {
-      "month": "1",
-      "num": 1,
-      "link": "",
-      "year": "2006",
-      "news": "",
-      "safe_title": "Barrel - Part 1",
-      "transcript": "[[A boy sits in a barrel which is floating in an ocean.]]",
-      "alt": "Don't we all.",
-      "img": "https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg",
-      "title": "Barrel - Part 1",
-      "day": "1"
-    },
-    "docUrl": "https://xkcd.com/json.html",
-    "status": "active",
-    "tags": [
-      "漫画",
-      "xkcd",
-      "科技",
-      "幽默",
-      "极客"
     ]
   },
   {
@@ -2560,41 +2112,6 @@
       "GraphQL"
     ],
     "note": ""
-  },
-  {
-    "id": "zenquotes",
-    "name": "ZenQuotes",
-    "description": "随机励志名言和哲学语录",
-    "fullDescription": "提供随机励志名言，支持获取随机语录、今日语录、作者语录等。返回名言文本和作者信息。非常适合开发名言展示、每日灵感、启动页等应用。免费版无需API Key。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://zenquotes.io/api/random",
-    "baseUrl": "https://zenquotes.io/api",
-    "params": [
-      {
-        "name": "mode",
-        "type": "string",
-        "required": false,
-        "description": "路径：random(随机), today(今日), quotes(全部)",
-        "example": "random"
-      }
-    ],
-    "responseExample": [
-      {
-        "q": "The only way to do great work is to love what you do.",
-        "a": "Steve Jobs",
-        "h": "<blockquote>...</blockquote>"
-      }
-    ],
-    "docUrl": "https://zenquotes.io/",
-    "status": "active",
-    "tags": [
-      "名言",
-      "励志",
-      "哲学",
-      "语录",
-      "灵感"
-    ]
   },
   {
     "id": "cataas",
@@ -3227,30 +2744,6 @@
     ]
   },
   {
-    "id": "affirmations",
-    "name": "Affirmations.dev",
-    "description": "生成积极肯定语句，治愈系API",
-    "fullDescription": "一个简单温暖的API，随机返回积极肯定语句（affirmation）。无需认证，纯文本JSON格式，适合用于每日一句、冥想应用、正念提醒等场景。响应极快，中国大陆访问稳定。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://www.affirmations.dev/",
-    "baseUrl": "https://www.affirmations.dev",
-    "params": [],
-    "responseExample": {
-      "affirmation": "You are enough just as you are"
-    },
-    "docUrl": "https://www.affirmations.dev/",
-    "status": "active",
-    "tags": [
-      "肯定语句",
-      "正能量",
-      "每日一句",
-      "冥想",
-      "治愈"
-    ],
-    "note": "每次请求随机返回一条肯定语句"
-  },
-  {
     "id": "itunes-search",
     "name": "iTunes Search API",
     "description": "搜索Apple Music/App Store内容",
@@ -3370,28 +2863,6 @@
       "安全"
     ],
     "note": "仅支持英文脏话检测"
-  },
-  {
-    "id": "httpcat",
-    "name": "HTTP Cats",
-    "description": "HTTP状态码对应的猫咪图片",
-    "fullDescription": "HTTP Cats为每个HTTP状态码提供一张对应的可爱猫咪图片。URL格式简洁，直接拼接状态码即可获得图片。支持所有标准HTTP状态码（1xx-5xx），适合在API文档、错误页面或调试工具中展示状态码的可视化说明。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://http.cat/200",
-    "baseUrl": "https://http.cat",
-    "params": [],
-    "responseExample": "(返回JPG图片)",
-    "docUrl": "https://http.cat/",
-    "status": "active",
-    "tags": [
-      "HTTP状态码",
-      "猫咪",
-      "图片",
-      "API文档",
-      "调试"
-    ],
-    "note": "URL格式：https://http.cat/{状态码}"
   },
   {
     "id": "useless-facts",
@@ -3641,53 +3112,6 @@
       "角色",
       "影视",
       "书籍"
-    ]
-  },
-  {
-    "id": "rest-countries",
-    "name": "REST Countries",
-    "description": "世界各国信息API，含国旗、语言、货币等",
-    "fullDescription": "全面的国家地理信息API，覆盖全球250+国家和地区。提供国家名称、首都、人口、面积、语言、货币、时区、地区、子区域、国旗图片（SVG/PNG）、顶级域名等丰富信息。支持按名称、代码、货币、语言、首都等多维度搜索和筛选。CORS全开，无需API Key。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,flags,currencies,languages",
-    "baseUrl": "https://restcountries.com/v3.1",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": false,
-        "description": "国家名称（URL路径部分）",
-        "example": "china|usa|japan"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "返回字段过滤",
-        "example": "name,capital,population,flags"
-      }
-    ],
-    "responseExample": [
-      {
-        "name": {
-          "common": "中国",
-          "official": "中华人民共和国"
-        },
-        "capital": [
-          "北京"
-        ],
-        "population": 1439323776
-      }
-    ],
-    "docUrl": "https://restcountries.com/",
-    "status": "active",
-    "tags": [
-      "国家",
-      "地理",
-      "国旗",
-      "货币",
-      "语言"
     ]
   },
   {
