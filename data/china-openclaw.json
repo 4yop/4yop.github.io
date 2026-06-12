@@ -2403,33 +2403,6 @@
     "website": "https://wukong.aliyun.com"
   },
   {
-    "id": 325,
-    "name": "Xiaomi miclaw",
-    "developer": "小米（MiMo Studio）",
-    "releaseTime": "2026.03.06",
-    "deployment": "手机端Agent应用，Web端管理后台，小米/Redmi手机优先",
-    "features": "国内首个手机端类OpenClaw Agent应用；基于小米自研MiMo大模型；手机充当智能中枢自主操作App完成任务；深度联动小米生态智能家居设备；支持语音指令操控家电与场景联动；端侧AI推理保障用户隐私安全；打通米家IoT生态数百款设备；小范围邀请封测中",
-    "website": "https://miclaw.xiaomi.com"
-  },
-  {
-    "id": 326,
-    "name": "360安全龙虾",
-    "developer": "360集团",
-    "releaseTime": "2026.03.14",
-    "deployment": "桌面客户端+硬件Box一体机，Windows/macOS，10分钟安装",
-    "features": "360集团发布的AI智能体安全解决方案；内置16家顶级大模型和13000+预置技能；解决OpenClaw安装难、不好养、容易死、不安全四大痛点；10分钟一键安装部署；硬件Box提供物理级安全隔离与可信执行环境；Agent对抗Agent的创新安全范式；内置安全巡检与威胁情报分析能力",
-    "website": "https://360claw.360.cn"
-  },
-  {
-    "id": 327,
-    "name": "YOYO Claw",
-    "developer": "荣耀（Honor）",
-    "releaseTime": "2026.04.13",
-    "deployment": "终端侧AI智能体，首发搭载荣耀MagicBook系列轻薄本",
-    "features": "荣耀自研终端侧AI智能体；端侧数据处理确保隐私不离开设备；支持多模态交互与应用操控能力；自然流畅的对话式任务执行；深度集成PC系统功能；适用于办公自动化场景；开创养虾本新品类；2026年6月推出PC/平板系统大更新",
-    "website": "https://www.honor.com"
-  },
-  {
     "id": 328,
     "name": "Molili（莫哩哩）",
     "developer": "当贝科技",
