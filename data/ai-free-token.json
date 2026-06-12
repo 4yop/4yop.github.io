@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12",
+  "updatedAt": "2026-06-13",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -83,7 +83,7 @@
     },
     {
       "name": "腾讯混元",
-      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束；混元3.0将于2026年5月发布",
+      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束；⚠️ 原腾讯混元大模型平台将于2026年9月30日全面停服，建议迁移至TokenHub平台使用hy3-preview替代",
       "cycle": "通用包1年有效；Lite版永久免费；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
@@ -1240,7 +1240,7 @@
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1和Deepseek-v3-0324已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日；⚠️ HY 2.0 Think/Instruct 将于2026-06-22正式下线",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Qwen3.5-Flash 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1、Deepseek-v3-0324、Deepseek-r1-0528已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
       "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
@@ -1255,10 +1255,12 @@
           "minimax-m2.7",
           "kimi-k2.6",
           "deepseek-v3.2",
-          "deepseek-r1-0528",
           "glm-5-turbo",
           "kimi-k2.5",
-          "minimax-m2.5"
+          "minimax-m2.5",
+          "qwen3.5-flash",
+          "qwen3.5-plus",
+          "glm-5v-turbo"
         ]
       }
     },
@@ -1544,7 +1546,22 @@
           "deepseek-ai/DeepSeek-V4-Flash"
         ]
       }
+    },
+    {
+      "name": "Cline.bot",
+      "quota": "3款模型永久免费调用（不扣额度、不限期、无需绑卡）：minimax/minimax-m3（MiniMax旗舰模型，100万token上下文）、xiaomi/mimo-v2.5（小米推理模型）、deepseek/deepseek-v4-flash（DeepSeek快速模型）；新用户注册自动赠送$0.5初始额度（免费模型不扣此额度，留作付费模型体验）；1M超长上下文（市面免费API中最大）；OpenAI兼容API格式；Cline原为VS Code AI编程助手插件（61.8k GitHub Stars），后开设官方API平台",
+      "cycle": "永久免费（3款免费模型不扣额度不限期；$0.5注册额度用完为止）",
+      "url": "https://cline.bot",
+      "develop": {
+        "document_url": "https://cline.bot",
+        "base_url": "https://api.cline.bot/api/v1",
+        "models": [
+          "minimax/minimax-m3",
+          "xiaomi/mimo-v2.5",
+          "deepseek/deepseek-v4-flash"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-12T11:30:00.000Z"
+  "lastUpdateTime": "2026-06-13T04:00:00.000Z"
 }

@@ -2437,5 +2437,14 @@
     "deployment": "桌面端IDE（Windows/macOS），VS Code和JetBrains插件，CLI工具",
     "features": "阿里新一代AI Agent智能体编程平台；1.0版（2026.05）升级为Agents自主开发工作台；支持Claude/GPT/Gemini等多模型；NEXT智能上下文引擎与RepoWiki代码知识库；Agentic Chat + Quest模式实现对话式编程；Agents团队自主完成编码→验证→交付全流程；支持中文编程场景深度优化；个人版免费使用",
     "website": "https://qoder.com/zh"
+  },
+  {
+    "id": 332,
+    "name": "SoulAgent",
+    "developer": "北京智源人工智能研究院（BAAI）",
+    "releaseTime": "2026.06.12",
+    "deployment": "开源项目，支持本地部署和云端运行",
+    "features": "智源研究院推出的面向个人用户的专属智能体；采用全新自研架构，Token成本节省30%，资源占用降低80%；基于用户画像和Skill的自进化机制，可持续成长；2026年6月12日在第八届北京智源大会发布；与智源悟界系列大模型深度集成",
+    "website": "https://www.baai.ac.cn/"
   }
 ]
