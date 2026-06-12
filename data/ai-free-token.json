@@ -1394,7 +1394,7 @@
     },
     {
       "name": "Agnes AI",
-      "quota": "全球Top 10 AI Lab，2026年6月1日起三大核心模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列）、图像模型Agnes-Image-2.0-Flash（Artificial Analysis图像编辑榜单前三、一句话改图/换背景/加物体）、视频模型Agnes-Video-V2.0（音画同步生成、Artificial Analysis视频榜上榜）；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
+      "quota": "全球Top 10 AI Lab，2026年6月1日起全模态模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列、支持thinking模式）、Agnes-1.5-Flash（多模态、即问即答、图片解析）；图像模型Agnes-Image-2.1-Flash（纯文生图，中文prompt完全支持）+Agnes-Image-2.0-Flash（图生图/图片编辑/多图合成，Artificial Analysis图像编辑榜单前三）；视频模型Agnes-Video-V2.0（音画同步生成）；免费后首周调用量超1万亿Token；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
       "cycle": "无限期免费（2026年6月1日起永久免费）",
       "url": "https://platform.agnes-ai.com",
       "develop": {
@@ -1402,6 +1402,8 @@
         "base_url": "https://apihub.agnes-ai.com/v1",
         "models": [
           "agnes-2.0-flash",
+          "agnes-1.5-flash",
+          "agnes-image-2.1-flash",
           "agnes-image-2.0-flash",
           "agnes-video-v2.0"
         ]
@@ -1494,22 +1496,55 @@
       }
     },
     {
-      "name": "DMXAPI（大模型API聚合平台）",
-      "quota": "22+款免费模型API不限量不限并发调用（含Qwen3-8B、GLM-4.7-Flash、doubao-seed-2.0-pro-free、kat-coder-pro-v1-free、bge-reranker-v2-m3-free等）；聚合350+模型（GPT系列、Claude、LLaMA、通义千问、文心一言等）；OpenAI兼容接口，单Key调用全平台；国内直连低延迟（约180ms）；99.99%可用性；人民币结算；不保留用户请求内容；新用户注册可获测试额度",
-      "cycle": "免费模型永久免费不限量；付费模型按量计费",
-      "url": "https://www.dmxapi.cn",
+      "name": "商汤日日新 (SenseNova)",
+      "quota": "Token Plan免费公测中：deepseek-v4-flash 每5小时150次调用；SenseNova-U1 每5小时1500次调用（原生统一多模态模型，基于NEO-Unify架构，支持理解与生成）；SenseNova-U1-Fast 每5小时1500次调用（U1快速版本，低延迟高并发）；SenseNova 6.7 Flash-Lite 每5小时1500次调用（轻量多模态智能体模型，原生多模态架构、Token效率优化）；公测期间完全免费，无需绑卡，注册即领API Key；完全兼容OpenAI接口格式；2026年4月推出Token Plan，2026年5月新增DeepSeek V4 Flash支持；可接入OpenClaw、ChatBox、Cherry Studio、Cline等主流AI工具",
+      "cycle": "每5小时重置（公测免费阶段，政策以官方公告为准）",
+      "url": "https://platform.sensenova.cn",
       "develop": {
-        "document_url": "https://www.dmxapi.cn/docs",
-        "base_url": "https://www.dmxapi.cn/v1",
+        "document_url": "https://platform.sensenova.cn/docs.html",
+        "base_url": "https://token.sensenova.cn/v1",
         "models": [
-          "qwen3-8b-free",
-          "glm-4.7-flash-free",
-          "doubao-seed-2.0-pro-free",
-          "kat-coder-pro-v1-free",
-          "bge-reranker-v2-m3-free"
+          "deepseek-v4-flash",
+          "sensenova-u1",
+          "sensenova-u1-fast",
+          "sensenova-6.7-flash-lite"
+        ]
+      }
+    },
+    {
+      "name": "DeepInfra",
+      "quota": "新用户注册赠送 $5 免费积分（支持 40+ 开源模型推理，含 Llama 3.3 70B、Qwen 2.5 72B、DeepSeek-R1、Mixtral 8x7B、Whisper 等；60 RPM速率限制；2026年5月完成$1.07亿B轮融资）；OpenAI兼容API格式；按量计费，积分用完为止",
+      "cycle": "一次性注册积分（$5，用完为止）",
+      "url": "https://deepinfra.com",
+      "develop": {
+        "document_url": "https://deepinfra.com/docs",
+        "base_url": "https://api.deepinfra.com/v1/openai",
+        "models": [
+          "meta-llama/Llama-3.3-70B-Instruct",
+          "meta-llama/Llama-3.1-8B-Instruct",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "deepseek-ai/DeepSeek-R1",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "openai/whisper-large"
+        ]
+      }
+    },
+    {
+      "name": "Chutes.ai",
+      "quota": "社区驱动的免费开源模型推理平台（基于去中心化算力）；支持 DeepSeek-R1、Llama 3.1 70B、Qwen 2.5 72B 等主流开源模型；无需信用卡；可自行添加模型；Serverless推理按可用性分配资源；部分模型永久在线（Featured模型）",
+      "cycle": "永久免费层（社区驱动，可用性取决于算力供给）",
+      "url": "https://chutes.ai",
+      "develop": {
+        "document_url": "https://chutes.ai/docs",
+        "base_url": "https://chutes.ai/app/api/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-R1",
+          "meta-llama/Llama-3.1-70B-Instruct",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "deepseek-ai/DeepSeek-V4-Flash"
         ]
       }
     }
   ],
-  "lastUpdateTime": "2026-06-12T10:00:00.000Z"
+  "lastUpdateTime": "2026-06-12T11:30:00.000Z"
 }

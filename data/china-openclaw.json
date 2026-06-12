@@ -2293,5 +2293,176 @@
     "deployment": "开源框架（MIT协议），GitHub获取，支持Docker部署",
     "features": "字节跳动开源的SuperAgent Harness框架2.0版本，基于LangGraph 1.0彻底重写；GitHub 57K+ Stars；支持子代理并行调度与层级编排；内置Docker沙箱安全执行环境；长期记忆系统支持跨会话知识积累；原生MCP协议支持，可接入外部工具；多模型支持（Qwen/DeepSeek/GLM/OpenAI等）；支持人类反馈中断与恢复机制；RAG增强检索与多轮对话规划",
     "website": "https://github.com/bytedance/deer-flow"
+  },
+  {
+    "id": 313,
+    "name": "见智龙虾",
+    "developer": "中企智算数据科技（《中国企业报》集团）",
+    "releaseTime": "2026.06.15",
+    "deployment": "企业级私有化部署",
+    "features": "企业级AI数字员工，融合前沿AI技术的全栈智能体，实现一句指令全流程交付，为企业提供7×24小时在线的AI数字员工，重塑企业运营效率",
+    "website": "https://www.zqcn.com.cn"
+  },
+  {
+    "id": 314,
+    "name": "有赞龙虾",
+    "developer": "有赞",
+    "releaseTime": "2026.06.10",
+    "deployment": "微信AI生态内接入，通过有赞小程序便捷使用",
+    "features": "首批接入微信ClawBot的商家龙虾；商家通过微信对话即可搞定80%生意经营场景；覆盖电商、零售、本地生活等多类商家；帮助商家在微信生态内实现智能化经营",
+    "website": "https://www.youzan.com"
+  },
+  {
+    "id": 315,
+    "name": "MemPalace",
+    "developer": "MemPalace开源社区",
+    "releaseTime": "2026.05",
+    "deployment": "开源项目，本地优先部署，支持MCP协议集成Claude Code等工具",
+    "features": "本地优先的开源AI记忆系统，GitHub 54K+ Stars；wing/room/drawer三层结构存储对话原文；29个MCP工具深度集成Claude Code；无需API Key实现96.6% R@5召回率；解决AI Agent长期记忆与上下文断层痛点",
+    "website": "https://github.com/MemPalace/mempalace"
+  },
+  {
+    "id": 316,
+    "name": "微信ClawBot",
+    "developer": "腾讯微信团队",
+    "releaseTime": "2026.03.22",
+    "deployment": "微信内置插件，iOS 8.0.70+版本支持，无需独立部署",
+    "features": "微信官方OpenClaw接入插件；用户无需切换APP即可在微信聊天界面直接调用AI进行高效互动；实现24小时智能助理随叫随到；支持接入OpenClaw框架的各类Skills；2026年6月全面上线并开放更多商家接入",
+    "website": "https://weixin.qq.com"
+  },
+  {
+    "id": 317,
+    "name": "LobsterAI",
+    "developer": "网易有道（NetEase Youdao）",
+    "releaseTime": "2026.02.19",
+    "deployment": "开源框架，支持Docker部署，Windows/macOS桌面端",
+    "features": "网易有道开源的7x24小时桌面级AI Agent；全场景个人智能助理；支持自然语言操控电脑执行文件管理、网页操作等任务；资讯获取、日程管理、数据分析、教育辅导等多场景覆盖；开源社区驱动，支持自定义工具与Skill扩展；百度百科收录",
+    "website": "https://github.com/net-ease/LobsterAI"
+  },
+  {
+    "id": 318,
+    "name": "MetaGPT",
+    "developer": "DeepWisdom（吴承霖/Foundation Agents）",
+    "releaseTime": "2023.06",
+    "deployment": "开源框架（MIT协议），pip安装，支持本地和云端部署",
+    "features": "多智能体协作框架，模拟软件公司组织架构协同工作；将产品经理、架构师、工程师、QA等角色用LLM Agent实现；自然语言需求自动转化为完整软件产出；SOP标准化流程驱动任务协作；GitHub 67K+ Stars；学术影响力高，论文ICLR接收；支持自定义角色与工作流",
+    "website": "https://github.com/geekan/MetaGPT"
+  },
+  {
+    "id": 319,
+    "name": "AgentScope",
+    "developer": "阿里通义实验室（前达摩院）",
+    "releaseTime": "2024.04",
+    "deployment": "开源框架（Apache 2.0），pip安装，支持单机和分布式部署",
+    "features": "生产级多智能体开发框架；SDK+Runtime+Studio三位一体架构；原生支持MCP+A2A双协议；Agent Team模式支持Leader-Worker多Agent协作；内置Pipeline任务规划与执行追踪；AgentScope Studio可视化拖拽构建Agent；内置评测系统OpenJudge；GitHub 22K+ Stars",
+    "website": "https://github.com/agentscope-ai/agentscope"
+  },
+  {
+    "id": 320,
+    "name": "Dify",
+    "developer": "LangGenius（苏州语灵人工智能）",
+    "releaseTime": "2023.03",
+    "deployment": "开源平台（Apache 2.0），Docker部署，支持私有化和SaaS云服务",
+    "features": "全球领先的开源LLM应用开发平台；可视化编排AI工作流与Agent构建；内置高性能RAG管道与知识库管理；支持100+大模型接入；丰富的插件市场与工具生态；企业级RBAC权限管理与审计；提供Cloud SaaS版和自托管社区版；GitHub 80K+ Stars；已成为国内最流行的AI应用搭建平台之一",
+    "website": "https://dify.ai/zh"
+  },
+  {
+    "id": 321,
+    "name": "Coze（扣子）",
+    "developer": "字节跳动",
+    "releaseTime": "2024.02",
+    "deployment": "云端全平台（Web/iOS/Android/Windows/Mac），零代码操作",
+    "features": "字节跳动零代码AI Agent搭建平台；可视化Bot构建、插件市场、工作流编排；3.0版本（2026.06）新增多人多Agent协作与项目空间；支持Claude Code、OpenClaw等工具一键接入；一键发布到抖音、飞书、微信等多渠道；丰富行业技能包开箱即用；适合非开发者快速构建AI应用",
+    "website": "https://www.coze.cn"
+  },
+  {
+    "id": 322,
+    "name": "RAGFlow",
+    "developer": "infiniflow（英飞流）",
+    "releaseTime": "2024.04",
+    "deployment": "开源RAG引擎（Apache 2.0），Docker部署，支持集群扩展",
+    "features": "领先的开源RAG检索增强生成引擎；深度融合RAG与Agent能力；多模态文档深度解析（PDF/图片/表格/音频/扫描件）；拖拽式可视化工作流设计；支持20+国内外主流大模型；检索准确率高达92.3%；强大的知识库管理与向量存储；GitHub 40K+ Stars；获开源创新菁英奖与开源先锋奖",
+    "website": "https://github.com/infiniflow/ragflow"
+  },
+  {
+    "id": 323,
+    "name": "ChatDev",
+    "developer": "清华大学NLP实验室/OpenBMB/面壁智能",
+    "releaseTime": "2023.09",
+    "deployment": "开源框架（Apache 2.0），Python运行，支持本地和云端部署",
+    "features": "多智能体协作软件开发框架；模拟虚拟软件公司含CEO/CTO/程序员/测试员等角色；2.0版本升级为零代码多智能体编排平台；可视化拖拽+配置快速构建多Agent系统；Chat Chain对话链机制实现Agent间智能通信；支持自定义Agent角色与任务流程；GitHub 28K+ Stars",
+    "website": "https://github.com/OpenBMB/ChatDev"
+  },
+  {
+    "id": 324,
+    "name": "悟空",
+    "developer": "阿里巴巴（ATH事业群/钉钉团队）",
+    "releaseTime": "2026.03.17",
+    "deployment": "企业级AI原生工作平台，Windows/macOS客户端+Web端",
+    "features": "阿里巴巴首款企业级AI原生工作平台；钉钉团队打造的首款独立AI应用；10大行业解决方案（跨境电商、内容创作、法律财税、金融等）；AI Agent自动继承企业权限规则；所有操作在安全沙箱中运行；Token消耗与成本可视化管控；以Skills形式聚合阿里生态全栈能力；支持自定义Agent团队",
+    "website": "https://wukong.aliyun.com"
+  },
+  {
+    "id": 325,
+    "name": "Xiaomi miclaw",
+    "developer": "小米（MiMo Studio）",
+    "releaseTime": "2026.03.06",
+    "deployment": "手机端Agent应用，Web端管理后台，小米/Redmi手机优先",
+    "features": "国内首个手机端类OpenClaw Agent应用；基于小米自研MiMo大模型；手机充当智能中枢自主操作App完成任务；深度联动小米生态智能家居设备；支持语音指令操控家电与场景联动；端侧AI推理保障用户隐私安全；打通米家IoT生态数百款设备；小范围邀请封测中",
+    "website": "https://miclaw.xiaomi.com"
+  },
+  {
+    "id": 326,
+    "name": "360安全龙虾",
+    "developer": "360集团",
+    "releaseTime": "2026.03.14",
+    "deployment": "桌面客户端+硬件Box一体机，Windows/macOS，10分钟安装",
+    "features": "360集团发布的AI智能体安全解决方案；内置16家顶级大模型和13000+预置技能；解决OpenClaw安装难、不好养、容易死、不安全四大痛点；10分钟一键安装部署；硬件Box提供物理级安全隔离与可信执行环境；Agent对抗Agent的创新安全范式；内置安全巡检与威胁情报分析能力",
+    "website": "https://360claw.360.cn"
+  },
+  {
+    "id": 327,
+    "name": "YOYO Claw",
+    "developer": "荣耀（Honor）",
+    "releaseTime": "2026.04.13",
+    "deployment": "终端侧AI智能体，首发搭载荣耀MagicBook系列轻薄本",
+    "features": "荣耀自研终端侧AI智能体；端侧数据处理确保隐私不离开设备；支持多模态交互与应用操控能力；自然流畅的对话式任务执行；深度集成PC系统功能；适用于办公自动化场景；开创养虾本新品类；2026年6月推出PC/平板系统大更新",
+    "website": "https://www.honor.com"
+  },
+  {
+    "id": 328,
+    "name": "Molili（莫哩哩）",
+    "developer": "当贝科技",
+    "releaseTime": "2026.01",
+    "deployment": "桌面客户端，一键安装，Windows平台支持",
+    "features": "国内首个满血中文版OpenClaw产品；基于OpenClaw核心VLA模型实现屏幕理解与软件操控；支持微信指令远程控制电脑；内置中文本地化技能库；3分钟快速部署；深度适配中文用户交互习惯；适合C端个人用户零门槛上手AI智能体",
+    "website": "https://molili.dangbei.com"
+  },
+  {
+    "id": 329,
+    "name": "XAgent",
+    "developer": "清华大学NLP实验室/面壁智能（OpenBMB）",
+    "releaseTime": "2023.10",
+    "deployment": "开源智能体（Apache 2.0），Python运行，支持Docker部署",
+    "features": "面向生产环境的AI自主智能体平台；动态规划+执行+工具编排三位一体系统；独创双循环机制（外层规划大循环+内层执行小循环）；人机协作交互范式支持用户中途干预；强大的Function Calling工具调用能力；全面超越AutoGPT的自主任务解决水平；支持自定义工具注册与扩展；GitHub 8K+ Stars",
+    "website": "https://github.com/OpenBMB/XAgent"
+  },
+  {
+    "id": 330,
+    "name": "FastGPT",
+    "developer": "Labring（环界云计算）",
+    "releaseTime": "2023.07",
+    "deployment": "开源平台（Apache 2.0），Docker一键部署，支持私有化部署",
+    "features": "企业级AI知识库与智能体构建平台；拖拽式可视化工作流编排；高性能RAG知识库引擎支持精准问答；50万+企业及个人用户信赖；支持国内外大模型灵活接入；丰富应用模板市场开箱即用；OpenAPI开放接口支持系统集成；GitHub 27K+ Stars；适合企业知识管理与智能客服场景",
+    "website": "https://github.com/labring/FastGPT"
+  },
+  {
+    "id": 331,
+    "name": "Qoder",
+    "developer": "阿里巴巴",
+    "releaseTime": "2025.08",
+    "deployment": "桌面端IDE（Windows/macOS），VS Code和JetBrains插件，CLI工具",
+    "features": "阿里新一代AI Agent智能体编程平台；1.0版（2026.05）升级为Agents自主开发工作台；支持Claude/GPT/Gemini等多模型；NEXT智能上下文引擎与RepoWiki代码知识库；Agentic Chat + Quest模式实现对话式编程；Agents团队自主完成编码→验证→交付全流程；支持中文编程场景深度优化；个人版免费使用",
+    "website": "https://qoder.com/zh"
   }
 ]

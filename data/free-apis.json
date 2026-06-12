@@ -943,46 +943,6 @@
     ]
   },
   {
-    "id": "universities-list",
-    "name": "Universities List",
-    "description": "全球大学信息查询",
-    "fullDescription": "免费的全球大学信息查询接口，可按国家搜索大学列表，返回学校名称、域名、官网等信息",
-    "category": "data",
-    "method": "GET",
-    "url": "http://universities.hipolabs.com/search?country=China",
-    "baseUrl": "http://universities.hipolabs.com",
-    "params": [
-      {
-        "name": "country",
-        "type": "string",
-        "required": false,
-        "description": "国家名（英文）",
-        "example": "China"
-      }
-    ],
-    "responseExample": [
-      {
-        "name": "Peking University",
-        "domains": [
-          "pku.edu.cn"
-        ],
-        "web_pages": [
-          "http://www.pku.edu.cn/"
-        ],
-        "country": "China",
-        "alpha_two_code": "CN"
-      }
-    ],
-    "docUrl": "https://github.com/Hipo/university-domains-list",
-    "status": "active",
-    "tags": [
-      "大学",
-      "教育",
-      "数据查询"
-    ],
-    "note": ""
-  },
-  {
     "id": "exchangerate-api",
     "name": "ExchangeRate-API",
     "description": "实时汇率数据",
@@ -1337,68 +1297,6 @@
       "游戏",
       "图鉴",
       "数据"
-    ]
-  },
-  {
-    "id": "opentdb",
-    "name": "Open Trivia DB",
-    "description": "免费问答题目API，50+分类",
-    "fullDescription": "提供海量免费问答题目的API，涵盖科学、历史、地理、娱乐、体育、动漫等50+分类。支持多种难度级别、多种题型（多选/判断/填空），可指定题目数量和分类。适合开发知识问答小游戏、学习工具或团队建设活动应用。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple",
-    "baseUrl": "https://opentdb.com/api.php",
-    "params": [
-      {
-        "name": "amount",
-        "type": "number",
-        "required": false,
-        "description": "题目数量(1-50)",
-        "example": "10"
-      },
-      {
-        "name": "category",
-        "type": "number",
-        "required": false,
-        "description": "分类ID",
-        "example": "18"
-      },
-      {
-        "name": "difficulty",
-        "type": "string",
-        "required": false,
-        "description": "难度(easy/medium/hard)",
-        "example": "easy"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "题型(multiple/boolean)",
-        "example": "multiple"
-      }
-    ],
-    "responseExample": {
-      "response_code": 0,
-      "results": [
-        {
-          "question": "HTML是什么意思？",
-          "correct_answer": "超文本标记语言",
-          "incorrect_answers": [
-            "高级文本多语言",
-            "Home Tool Markup Language"
-          ]
-        }
-      ]
-    },
-    "docUrl": "https://opentdb.com/api_config.php",
-    "status": "active",
-    "tags": [
-      "问答",
-      "知识",
-      " trivia",
-      "游戏",
-      "教育"
     ]
   },
   {
@@ -3320,6 +3218,364 @@
       "科技",
       "新闻",
       "Algolia"
+    ]
+  },
+  {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "description": "免费假数据REST API，前端开发测试必备",
+    "fullDescription": "提供完整的模拟REST API服务，包含帖子、评论、用户、相册、待办事项、照片等6种资源。支持GET/POST/PUT/PATCH/DELETE全部HTTP方法，非常适合前端开发和测试。CORS全开放，稳定可靠。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts?_limit=3",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "params": [
+      {
+        "name": "_limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      },
+      {
+        "name": "_start",
+        "type": "number",
+        "required": false,
+        "description": "偏移量",
+        "example": "0"
+      }
+    ],
+    "responseExample": [
+      {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere",
+        "body": "quia et suscipit"
+      }
+    ],
+    "docUrl": "https://jsonplaceholder.typicode.com/",
+    "status": "active",
+    "tags": [
+      "假数据",
+      "测试",
+      "REST",
+      "前端",
+      "CRUD"
+    ]
+  },
+  {
+    "id": "open-alex",
+    "name": "OpenAlex",
+    "description": "开放学术文献数据API",
+    "fullDescription": "免费开放的学术研究元数据API，包含超过2.5亿篇论文、作者、机构等数据。无需API Key即可使用基础端点。支持搜索、过滤、分页等功能。是替代Microsoft Academic的开放方案。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.openalex.org/works?filter=is_oa:true&per_page=3&select=id,title,display_name,publication_year",
+    "baseUrl": "https://api.openalex.org",
+    "params": [
+      {
+        "name": "filter",
+        "type": "string",
+        "required": false,
+        "description": "过滤条件",
+        "example": "is_oa:true"
+      },
+      {
+        "name": "per_page",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "3"
+      },
+      {
+        "name": "select",
+        "type": "string",
+        "required": false,
+        "description": "返回字段",
+        "example": "id,title"
+      }
+    ],
+    "responseExample": {
+      "meta": {
+        "count": 100
+      },
+      "results": [
+        {
+          "id": "W123",
+          "title": "Research paper title"
+        }
+      ]
+    },
+    "docUrl": "https://docs.openalex.org/",
+    "status": "active",
+    "tags": [
+      "学术",
+      "论文",
+      "开放获取",
+      "研究",
+      "文献"
+    ]
+  },
+  {
+    "id": "spaceflight-news",
+    "name": "Spaceflight News API",
+    "description": "太空飞行新闻数据API",
+    "fullDescription": "提供最新的太空相关新闻、文章、博客和报告的API。支持按标题搜索、按日期过滤、分页等功能。数据来源权威，涵盖SpaceX、NASA等机构动态。无需API Key。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.spaceflightnewsapi.net/v4/articles/?limit=3",
+    "baseUrl": "https://api.spaceflightnewsapi.net/v4",
+    "params": [
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      },
+      {
+        "name": "search",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "SpaceX"
+      }
+    ],
+    "responseExample": {
+      "count": 1000,
+      "next": "...",
+      "results": [
+        {
+          "id": 1,
+          "title": "SpaceX Launch..."
+        }
+      ]
+    },
+    "docUrl": "https://api.spaceflightnewsapi.net/",
+    "status": "active",
+    "tags": [
+      "太空",
+      "新闻",
+      "SpaceX",
+      "NASA",
+      "航天"
+    ]
+  },
+  {
+    "id": "mapty-geocode",
+    "name": "Open-Meteo Geocoding",
+    "description": "免费地理编码API，城市名转经纬度",
+    "fullDescription": "Open-Meteo提供的免费地理编码服务，输入城市名即可获取经纬度坐标。支持模糊搜索、多语言。与Open-Meteo天气API完美配合，用于天气查询前的位置定位。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://geocoding-api.open-meteo.com/v1/search?name=Beijing&count=3&language=zh",
+    "baseUrl": "https://geocoding-api.open-meteo.com/v1",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "城市名",
+        "example": "Beijing"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "语言",
+        "example": "zh|en"
+      }
+    ],
+    "responseExample": {
+      "results": [
+        {
+          "id": "1816670",
+          "name": "北京市",
+          "latitude": 39.9,
+          "longitude": 116.4,
+          "country": "中国"
+        }
+      ]
+    },
+    "docUrl": "https://open-meteo.com/en/docs/geocoding-api",
+    "status": "active",
+    "tags": [
+      "地理编码",
+      "经纬度",
+      "城市搜索",
+      "位置"
+    ]
+  },
+  {
+    "id": "xkcd-api",
+    "name": "xkcd",
+    "description": "XKCD漫画数据API",
+    "fullDescription": "获取XKCD网络漫画的元数据，包括标题、图片URL、Alt文本等。可获取最新一期或指定编号的漫画。无需认证，CORS全开。适合开发漫画阅读器、每日一笑功能。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://xkcd.com/info.0.json",
+    "baseUrl": "https://xkcd.com",
+    "params": [
+      {
+        "name": "num",
+        "type": "number",
+        "required": false,
+        "description": "漫画编号(路径参数)",
+        "example": "614"
+      }
+    ],
+    "responseExample": {
+      "num": 614,
+      "title": "Woodpecker",
+      "img": "https://imgs.xkcd.com/comics/woodpecker.png",
+      "alt": "..."
+    },
+    "docUrl": "https://xkcd.com/json.html",
+    "status": "active",
+    "tags": [
+      "漫画",
+      "xkcd",
+      "幽默",
+      "科技"
+    ]
+  },
+  {
+    "id": "rest-countries",
+    "name": "REST Countries",
+    "description": "国家信息查询API，覆盖全球250+国家",
+    "fullDescription": "查询全球250+个国家的详细信息，包括国旗、人口、面积、首都、货币、语言、时区、边界等。支持按名称、代码、地区、语言等筛选。无需认证，CORS全开，非常适合开发国家百科、世界地图等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,region,flags",
+    "baseUrl": "https://restcountries.com/v3.1",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "国家名(路径参数)",
+        "example": "china"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段",
+        "example": "name,capital,population"
+      }
+    ],
+    "responseExample": [
+      {
+        "name": {
+          "common": "China"
+        },
+        "capital": [
+          "Beijing"
+        ],
+        "population": 1402112000,
+        "region": "Asia"
+      }
+    ],
+    "docUrl": "https://restcountries.com/",
+    "status": "active",
+    "tags": [
+      "国家",
+      "地理",
+      "人口",
+      "货币",
+      "国旗"
+    ]
+  },
+  {
+    "id": "dog-ceo",
+    "name": "Dog CEO",
+    "description": "随机狗狗图片API，支持按品种筛选",
+    "fullDescription": "提供随机狗狗图片的免费API，支持按品种获取随机图片、获取所有品种列表、按子品种筛选等功能。数据来源于斯坦福犬类数据集和社区贡献。无需认证，CORS全开，响应速度快。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://dog.ceo/api/breeds/image/random/3",
+    "baseUrl": "https://dog.ceo/api",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "required": false,
+        "description": "返回数量(路径参数)",
+        "example": "3"
+      },
+      {
+        "name": "breed",
+        "type": "string",
+        "required": false,
+        "description": "品种(路径参数)",
+        "example": "hound"
+      }
+    ],
+    "responseExample": {
+      "message": [
+        "https://images.dog.ceo/breeds/hound/n02089973.jpg"
+      ],
+      "status": "success"
+    },
+    "docUrl": "https://dog.ceo/dog-api/",
+    "status": "active",
+    "tags": [
+      "狗狗",
+      "随机图片",
+      "品种",
+      "宠物"
+    ]
+  },
+  {
+    "id": "api-zipcode",
+    "name": "Zippopotam.us",
+    "description": "全球邮编查询API",
+    "fullDescription": "根据国家代码和邮政编码查询地理位置信息的API。返回对应邮编的城市、州/省、经纬度坐标和时区信息。支持全球多国查询，无需认证。适合开发地址自动补全、邮编查询等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.zippopotam.us/us/90210",
+    "baseUrl": "https://api.zippopotam.us",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": true,
+        "description": "国家代码(路径参数)",
+        "example": "us"
+      },
+      {
+        "name": "postcode",
+        "type": "string",
+        "required": true,
+        "description": "邮编(路径参数)",
+        "example": "90210"
+      }
+    ],
+    "responseExample": {
+      "post code": "90210",
+      "country": "United States",
+      "places": [
+        {
+          "place name": "Beverly Hills",
+          "latitude": "34.0901",
+          "longitude": "-118.4065"
+        }
+      ]
+    },
+    "docUrl": "https://www.zippopotam.us/",
+    "status": "active",
+    "tags": [
+      "邮编",
+      "地址",
+      "地理位置",
+      "查询"
     ]
   }
 ]
