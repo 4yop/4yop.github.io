@@ -40,67 +40,6 @@
     ]
   },
   {
-    "id": "dummyjson",
-    "name": "DummyJSON",
-    "description": "丰富的假数据API，包含产品、用户、购物车等",
-    "fullDescription": "提供产品、用户、购物车、帖子、评论、TODO、认证等多种资源的模拟数据API。数据结构接近真实电商系统，支持搜索、过滤、分页、分类浏览等功能。适合全栈项目开发测试。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://dummyjson.com/products?limit=5&select=title,price,brand",
-    "baseUrl": "https://dummyjson.com",
-    "params": [
-      {
-        "name": "limit",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "5"
-      },
-      {
-        "name": "select",
-        "type": "string",
-        "required": false,
-        "description": "选择返回字段",
-        "example": "title,price,brand"
-      },
-      {
-        "name": "skip",
-        "type": "number",
-        "required": false,
-        "description": "跳过数量（分页用）",
-        "example": "0"
-      }
-    ],
-    "responseExample": {
-      "products": [
-        {
-          "id": 1,
-          "title": "iPhone 9",
-          "price": 549,
-          "brand": "Apple"
-        },
-        {
-          "id": 2,
-          "title": "iPhone X",
-          "price": 899,
-          "brand": "Apple"
-        }
-      ],
-      "total": 194,
-      "skip": 0,
-      "limit": 5
-    },
-    "docUrl": "https://dummyjson.com/",
-    "status": "active",
-    "tags": [
-      "产品数据",
-      "电商",
-      "购物车",
-      "假数据",
-      "搜索"
-    ]
-  },
-  {
     "id": "randomuser",
     "name": "Random User Generator",
     "description": "生成随机用户数据的API，含头像、地址等详细信息",
@@ -284,52 +223,249 @@
     ]
   },
   {
-    "id": "dummyimage",
-    "name": "DummyImage",
-    "description": "自定义占位图生成服务，支持文字和颜色",
-    "fullDescription": "轻量级占位图生成服务，支持自定义尺寸、背景色、文字颜色、字体大小和显示文字。比PlaceKitten更稳定可控，适合网页原型设计和开发阶段使用。直接在URL中指定参数即可生成图片，无需注册。",
-    "category": "image",
+    "id": "dummyjson",
+    "name": "DummyJSON",
+    "description": "丰富的假数据API，包含产品、用户、购物车等",
+    "fullDescription": "提供产品、用户、购物车、帖子、评论、TODO、认证等多种资源的模拟数据API。数据结构接近真实电商系统，支持搜索、过滤、分页、分类浏览等功能。适合全栈项目开发测试。",
+    "category": "data",
     "method": "GET",
-    "url": "https://dummyimage.com/400x300/2862b4/ffffff.png&text=Tools321",
-    "baseUrl": "https://dummyimage.com",
+    "url": "https://dummyjson.com/products?limit=5&select=title,price,brand",
+    "baseUrl": "https://dummyjson.com",
     "params": [
       {
-        "name": "尺寸",
-        "type": "string",
-        "required": true,
-        "description": "宽x高，如400x300",
-        "example": "400x300"
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
       },
       {
-        "name": "背景色",
+        "name": "select",
         "type": "string",
         "required": false,
-        "description": "十六进制颜色",
-        "example": "2862b4"
+        "description": "选择返回字段",
+        "example": "title,price,brand"
       },
       {
-        "name": "文字色",
-        "type": "string",
+        "name": "skip",
+        "type": "number",
         "required": false,
-        "description": "十六进制颜色",
-        "example": "ffffff"
-      },
-      {
-        "name": "text",
-        "type": "string",
-        "required": false,
-        "description": "图片上显示的文字",
-        "example": "Hello"
+        "description": "跳过数量（分页用）",
+        "example": "0"
       }
     ],
-    "responseExample": "(返回PNG图片)",
-    "docUrl": "https://dummyimage.com/",
+    "responseExample": {
+      "products": [
+        {
+          "id": 1,
+          "title": "iPhone 9",
+          "price": 549,
+          "brand": "Apple"
+        },
+        {
+          "id": 2,
+          "title": "iPhone X",
+          "price": 899,
+          "brand": "Apple"
+        }
+      ],
+      "total": 194,
+      "skip": 0,
+      "limit": 5
+    },
+    "docUrl": "https://dummyjson.com/",
     "status": "active",
     "tags": [
-      "占位图",
-      "图片生成",
-      "原型设计",
-      "自定义"
+      "产品数据",
+      "电商",
+      "购物车",
+      "假数据",
+      "搜索"
+    ]
+  },
+  {
+    "id": "ip-api-com",
+    "name": "IP-API.com",
+    "description": "IP地址归属地查询API",
+    "fullDescription": "IP地理位置查询服务，输入IP地址即可获取详细的归属地信息。返回数据包括：国家、省份/州、城市、邮政编码、ISP运营商、AS号、经纬度坐标、时区等。免费版支持每分钟45次请求，足够一般应用使用。数据准确度较高，覆盖全球范围。",
+    "category": "data",
+    "method": "GET",
+    "url": "http://ip-api.com/json/8.8.8.8?lang=zh-CN&fields=status,message,country,regionName,city,isp,lat,lon,query",
+    "baseUrl": "http://ip-api.com/json",
+    "params": [
+      {
+        "name": "ip",
+        "type": "string",
+        "required": true,
+        "description": "要查询的IP地址（URL路径部分）",
+        "example": "8.8.8.8|1.1.1.1"
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "返回语言",
+        "example": "zh-CN|en|de"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "返回字段选择",
+        "example": "status,country,city,isp"
+      }
+    ],
+    "responseExample": {
+      "status": "success",
+      "country": "美国",
+      "regionName": "弗吉尼亚州",
+      "city": "Ashburn",
+      "isp": "Google LLC",
+      "lat": 39.03,
+      "lon": -77.5,
+      "query": "8.8.8.8"
+    },
+    "docUrl": "http://ip-api.com/docs",
+    "status": "active",
+    "tags": [
+      "IP查询",
+      "归属地",
+      "地理位置",
+      "ISP",
+      "经纬度"
+    ]
+  },
+  {
+    "id": "wttr-in",
+    "name": "wttr.in",
+    "description": "简洁的天气服务，支持多种输出格式",
+    "fullDescription": "极简风格的天气查询服务，支持城市名直接查询。提供JSON、XML、纯文本等多种输出格式，还可在终端中以ASCII图形化方式展示天气。无需注册，使用非常方便。注意：CORS支持情况可能不稳定，建议在实际项目中先测试验证。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://wttr.in/Beijing?format=j1",
+    "baseUrl": "https://wttr.in",
+    "params": [
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "城市名或位置（URL路径部分）",
+        "example": "Beijing|Shanghai|Tokyo"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "输出格式",
+        "example": "j1(JSON)|j2(简化JSON)|xml|html|text"
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "语言",
+        "example": "zh|en|ja"
+      }
+    ],
+    "responseExample": {
+      "current_condition": [
+        {
+          "temp_C": "5",
+          "FeelsLikeC": "2",
+          "humidity": "45",
+          "weatherDesc": [
+            {
+              "value": "Partly cloudy"
+            }
+          ],
+          "windspeedKmph": "12"
+        }
+      ],
+      "weather": [
+        {
+          "date": "2024-01-15",
+          "maxtempC": "8",
+          "mintempC": "-2",
+          "hourly": [
+            {
+              "time": "0600",
+              "tempC": "0",
+              "weatherDesc": [
+                {
+                  "value": "Clear"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://wttr.in/:help",
+    "status": "active",
+    "tags": [
+      "天气",
+      "简洁",
+      "终端",
+      "多格式",
+      "ASCII艺术"
+    ]
+  },
+  {
+    "id": "jokeapi",
+    "name": "JokeAPI",
+    "description": "多功能笑话API，支持多语言和多分类",
+    "fullDescription": "强大的笑话API服务，支持编程、暗黑、双关语、圣诞等多个分类。提供单条、多条随机笑话，以及按ID精确查找功能。支持黑名单设置（nsfw、religious、political等），可过滤不适宜内容。支持多种语言，适合娱乐应用开发。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://v2.jokeapi.dev/joke/Programming?safe-mode&type=single&amount=3",
+    "baseUrl": "https://v2.jokeapi.dev/joke",
+    "params": [
+      {
+        "name": "category",
+        "type": "string",
+        "required": true,
+        "description": "笑话分类（URL路径部分）",
+        "example": "Programming|Misc|Dark|Pun|Christmas"
+      },
+      {
+        "name": "safe-mode",
+        "type": "string",
+        "required": false,
+        "description": "安全模式",
+        "example": "safe-mode"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "返回类型",
+        "example": "single|twopart"
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      }
+    ],
+    "responseExample": {
+      "error": false,
+      "category": "Programming",
+      "type": "single",
+      "joke": "There are only 10 types of people in the world: those who understand binary and those who don't.",
+      "id": 1,
+      "safe": true,
+      "lang": "en"
+    },
+    "docUrl": "https://sv443.net/jokeapi/v2/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "编程",
+      "娱乐",
+      "多分类",
+      "安全模式"
     ]
   },
   {
@@ -414,245 +550,52 @@
     ]
   },
   {
-    "id": "wttr-in",
-    "name": "wttr.in",
-    "description": "简洁的天气服务，支持多种输出格式",
-    "fullDescription": "极简风格的天气查询服务，支持城市名直接查询。提供JSON、XML、纯文本等多种输出格式，还可在终端中以ASCII图形化方式展示天气。无需注册，使用非常方便。注意：CORS支持情况可能不稳定，建议在实际项目中先测试验证。",
-    "category": "weather",
+    "id": "dummyimage",
+    "name": "DummyImage",
+    "description": "自定义占位图生成服务，支持文字和颜色",
+    "fullDescription": "轻量级占位图生成服务，支持自定义尺寸、背景色、文字颜色、字体大小和显示文字。比PlaceKitten更稳定可控，适合网页原型设计和开发阶段使用。直接在URL中指定参数即可生成图片，无需注册。",
+    "category": "image",
     "method": "GET",
-    "url": "https://wttr.in/Beijing?format=j1",
-    "baseUrl": "https://wttr.in",
+    "url": "https://dummyimage.com/400x300/2862b4/ffffff.png&text=Tools321",
+    "baseUrl": "https://dummyimage.com",
     "params": [
       {
-        "name": "location",
+        "name": "尺寸",
         "type": "string",
         "required": true,
-        "description": "城市名或位置（URL路径部分）",
-        "example": "Beijing|Shanghai|Tokyo"
+        "description": "宽x高，如400x300",
+        "example": "400x300"
       },
       {
-        "name": "format",
+        "name": "背景色",
         "type": "string",
         "required": false,
-        "description": "输出格式",
-        "example": "j1(JSON)|j2(简化JSON)|xml|html|text"
+        "description": "十六进制颜色",
+        "example": "2862b4"
       },
       {
-        "name": "lang",
+        "name": "文字色",
         "type": "string",
         "required": false,
-        "description": "语言",
-        "example": "zh|en|ja"
+        "description": "十六进制颜色",
+        "example": "ffffff"
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "description": "图片上显示的文字",
+        "example": "Hello"
       }
     ],
-    "responseExample": {
-      "current_condition": [
-        {
-          "temp_C": "5",
-          "FeelsLikeC": "2",
-          "humidity": "45",
-          "weatherDesc": [
-            {
-              "value": "Partly cloudy"
-            }
-          ],
-          "windspeedKmph": "12"
-        }
-      ],
-      "weather": [
-        {
-          "date": "2024-01-15",
-          "maxtempC": "8",
-          "mintempC": "-2",
-          "hourly": [
-            {
-              "time": "0600",
-              "tempC": "0",
-              "weatherDesc": [
-                {
-                  "value": "Clear"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "docUrl": "https://wttr.in/:help",
+    "responseExample": "(返回PNG图片)",
+    "docUrl": "https://dummyimage.com/",
     "status": "active",
     "tags": [
-      "天气",
-      "简洁",
-      "终端",
-      "多格式",
-      "ASCII艺术"
-    ]
-  },
-  {
-    "id": "ip-api-com",
-    "name": "IP-API.com",
-    "description": "IP地址归属地查询API",
-    "fullDescription": "IP地理位置查询服务，输入IP地址即可获取详细的归属地信息。返回数据包括：国家、省份/州、城市、邮政编码、ISP运营商、AS号、经纬度坐标、时区等。免费版支持每分钟45次请求，足够一般应用使用。数据准确度较高，覆盖全球范围。",
-    "category": "data",
-    "method": "GET",
-    "url": "http://ip-api.com/json/8.8.8.8?lang=zh-CN&fields=status,message,country,regionName,city,isp,lat,lon,query",
-    "baseUrl": "http://ip-api.com/json",
-    "params": [
-      {
-        "name": "ip",
-        "type": "string",
-        "required": true,
-        "description": "要查询的IP地址（URL路径部分）",
-        "example": "8.8.8.8|1.1.1.1"
-      },
-      {
-        "name": "lang",
-        "type": "string",
-        "required": false,
-        "description": "返回语言",
-        "example": "zh-CN|en|de"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "返回字段选择",
-        "example": "status,country,city,isp"
-      }
-    ],
-    "responseExample": {
-      "status": "success",
-      "country": "美国",
-      "regionName": "弗吉尼亚州",
-      "city": "Ashburn",
-      "isp": "Google LLC",
-      "lat": 39.03,
-      "lon": -77.5,
-      "query": "8.8.8.8"
-    },
-    "docUrl": "http://ip-api.com/docs",
-    "status": "active",
-    "tags": [
-      "IP查询",
-      "归属地",
-      "地理位置",
-      "ISP",
-      "经纬度"
-    ]
-  },
-  {
-    "id": "jokeapi",
-    "name": "JokeAPI",
-    "description": "多功能笑话API，支持多语言和多分类",
-    "fullDescription": "强大的笑话API服务，支持编程、暗黑、双关语、圣诞等多个分类。提供单条、多条随机笑话，以及按ID精确查找功能。支持黑名单设置（nsfw、religious、political等），可过滤不适宜内容。支持多种语言，适合娱乐应用开发。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://v2.jokeapi.dev/joke/Programming?safe-mode&type=single&amount=3",
-    "baseUrl": "https://v2.jokeapi.dev/joke",
-    "params": [
-      {
-        "name": "category",
-        "type": "string",
-        "required": true,
-        "description": "笑话分类（URL路径部分）",
-        "example": "Programming|Misc|Dark|Pun|Christmas"
-      },
-      {
-        "name": "safe-mode",
-        "type": "string",
-        "required": false,
-        "description": "安全模式",
-        "example": "safe-mode"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "返回类型",
-        "example": "single|twopart"
-      },
-      {
-        "name": "amount",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "3"
-      }
-    ],
-    "responseExample": {
-      "error": false,
-      "category": "Programming",
-      "type": "single",
-      "joke": "There are only 10 types of people in the world: those who understand binary and those who don't.",
-      "id": 1,
-      "safe": true,
-      "lang": "en"
-    },
-    "docUrl": "https://sv443.net/jokeapi/v2/",
-    "status": "active",
-    "tags": [
-      "笑话",
-      "编程",
-      "娱乐",
-      "多分类",
-      "安全模式"
-    ]
-  },
-  {
-    "id": "qr-server",
-    "name": "QR Server",
-    "description": "在线二维码生成API，支持多种格式和样式",
-    "fullDescription": "功能强大的二维码在线生成服务，支持自定义尺寸、颜色、纠错级别、Logo嵌入等参数。可以直接在浏览器中显示二维码图片，也可以下载保存。支持PNG、SVG、EPS等多种输出格式。无需任何注册或API Key，即用即得，非常适合集成到各类应用中。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com&color=000000&bgcolor=ffffff",
-    "baseUrl": "https://api.qrserver.com/v1/create-qr-code",
-    "params": [
-      {
-        "name": "size",
-        "type": "string",
-        "required": false,
-        "description": "二维码尺寸（宽x高）",
-        "example": "200x200|300x300"
-      },
-      {
-        "name": "data",
-        "type": "string",
-        "required": true,
-        "description": "二维码内容（URL或文本）",
-        "example": "https://example.com|Hello World"
-      },
-      {
-        "name": "color",
-        "type": "string",
-        "required": false,
-        "description": "前景色（十六进制）",
-        "example": "000000|ff0000"
-      },
-      {
-        "name": "bgcolor",
-        "type": "string",
-        "required": false,
-        "description": "背景色（十六进制）",
-        "example": "ffffff|ffff00"
-      },
-      {
-        "name": "ecc",
-        "type": "string",
-        "required": false,
-        "description": "纠错级别",
-        "example": "L|M|Q|H"
-      }
-    ],
-    "responseExample": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=test (直接返回二维码图片)",
-    "docUrl": "https://goqr.me/api/doc/create-qr-code/",
-    "status": "active",
-    "tags": [
-      "二维码",
-      "生成器",
-      "QR Code",
-      "自定义样式",
-      "即时生成"
+      "占位图",
+      "图片生成",
+      "原型设计",
+      "自定义"
     ]
   },
   {
@@ -675,58 +618,6 @@
       "随机",
       "灵感",
       "编程"
-    ]
-  },
-  {
-    "id": "mymemory-translate",
-    "name": "MyMemory Translation API",
-    "description": "免费机器翻译API，支持多语言互译",
-    "fullDescription": "MyMemory提供的免费机器翻译服务，支持190+语言对之间的互译。翻译质量由社区贡献不断改进，常用语言对效果较好。无需注册即可使用，但有每日翻译量限制（每天约1000词）。返回结果包含翻译文本、匹配度、翻译方向等信息。",
-    "category": "translate",
-    "method": "GET",
-    "url": "https://api.mymemory.translated.net/get?q=Hello%20World&langpair=en|zh-CN",
-    "baseUrl": "https://api.mymemory.translated.net/get",
-    "params": [
-      {
-        "name": "q",
-        "type": "string",
-        "required": true,
-        "description": "要翻译的文本",
-        "example": "Hello World|你好世界"
-      },
-      {
-        "name": "langpair",
-        "type": "string",
-        "required": true,
-        "description": "语言对（源语言|目标语言）",
-        "example": "en|zh-CN|zh|en|en|ja"
-      },
-      {
-        "name": "de",
-        "type": "string",
-        "required": false,
-        "description": "邮箱地址（提升配额）",
-        "example": "your@email.com"
-      }
-    ],
-    "responseExample": {
-      "responseData": {
-        "translatedText": "你好世界",
-        "match": 1,
-        "quality": 80,
-        "matchCount": 1
-      },
-      "quotaFinished": false,
-      "responseStatus": 200
-    },
-    "docUrl": "https://mymemory.translated.net/spec.html",
-    "status": "active",
-    "tags": [
-      "翻译",
-      "机器翻译",
-      "多语言",
-      "免费",
-      "API"
     ]
   },
   {
@@ -794,6 +685,115 @@
     "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时"
   },
   {
+    "id": "qr-server",
+    "name": "QR Server",
+    "description": "在线二维码生成API，支持多种格式和样式",
+    "fullDescription": "功能强大的二维码在线生成服务，支持自定义尺寸、颜色、纠错级别、Logo嵌入等参数。可以直接在浏览器中显示二维码图片，也可以下载保存。支持PNG、SVG、EPS等多种输出格式。无需任何注册或API Key，即用即得，非常适合集成到各类应用中。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com&color=000000&bgcolor=ffffff",
+    "baseUrl": "https://api.qrserver.com/v1/create-qr-code",
+    "params": [
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "二维码尺寸（宽x高）",
+        "example": "200x200|300x300"
+      },
+      {
+        "name": "data",
+        "type": "string",
+        "required": true,
+        "description": "二维码内容（URL或文本）",
+        "example": "https://example.com|Hello World"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "required": false,
+        "description": "前景色（十六进制）",
+        "example": "000000|ff0000"
+      },
+      {
+        "name": "bgcolor",
+        "type": "string",
+        "required": false,
+        "description": "背景色（十六进制）",
+        "example": "ffffff|ffff00"
+      },
+      {
+        "name": "ecc",
+        "type": "string",
+        "required": false,
+        "description": "纠错级别",
+        "example": "L|M|Q|H"
+      }
+    ],
+    "responseExample": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=test (直接返回二维码图片)",
+    "docUrl": "https://goqr.me/api/doc/create-qr-code/",
+    "status": "active",
+    "tags": [
+      "二维码",
+      "生成器",
+      "QR Code",
+      "自定义样式",
+      "即时生成"
+    ]
+  },
+  {
+    "id": "mymemory-translate",
+    "name": "MyMemory Translation API",
+    "description": "免费机器翻译API，支持多语言互译",
+    "fullDescription": "MyMemory提供的免费机器翻译服务，支持190+语言对之间的互译。翻译质量由社区贡献不断改进，常用语言对效果较好。无需注册即可使用，但有每日翻译量限制（每天约1000词）。返回结果包含翻译文本、匹配度、翻译方向等信息。",
+    "category": "translate",
+    "method": "GET",
+    "url": "https://api.mymemory.translated.net/get?q=Hello%20World&langpair=en|zh-CN",
+    "baseUrl": "https://api.mymemory.translated.net/get",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": true,
+        "description": "要翻译的文本",
+        "example": "Hello World|你好世界"
+      },
+      {
+        "name": "langpair",
+        "type": "string",
+        "required": true,
+        "description": "语言对（源语言|目标语言）",
+        "example": "en|zh-CN|zh|en|en|ja"
+      },
+      {
+        "name": "de",
+        "type": "string",
+        "required": false,
+        "description": "邮箱地址（提升配额）",
+        "example": "your@email.com"
+      }
+    ],
+    "responseExample": {
+      "responseData": {
+        "translatedText": "你好世界",
+        "match": 1,
+        "quality": 80,
+        "matchCount": 1
+      },
+      "quotaFinished": false,
+      "responseStatus": 200
+    },
+    "docUrl": "https://mymemory.translated.net/spec.html",
+    "status": "active",
+    "tags": [
+      "翻译",
+      "机器翻译",
+      "多语言",
+      "免费",
+      "API"
+    ]
+  },
+  {
     "id": "agify-io",
     "name": "Agify.io",
     "description": "根据名字预测年龄的趣味API",
@@ -839,107 +839,6 @@
       "机器学习",
       "用户画像",
       "趣味"
-    ]
-  },
-  {
-    "id": "genderize-io",
-    "name": "Genderize.io",
-    "description": "根据名字推测性别的API",
-    "fullDescription": "根据人名推测性别的统计API服务。基于海量真实姓名-性别数据分析，返回概率值而非绝对结论。支持不同国家的数据差异，因为同一名字在不同文化背景下可能倾向不同性别。可与Agify.io配合使用完善用户基本信息。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.genderize.io/?name=james&country_id=US",
-    "baseUrl": "https://api.genderize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "要分析的名字",
-        "example": "james|mary|xiaoming"
-      },
-      {
-        "name": "country_id",
-        "type": "string",
-        "required": false,
-        "description": "国家代码",
-        "example": "US|CN|GB"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "name": "james",
-      "gender": "male",
-      "probability": 0.99,
-      "count": 987654,
-      "country_id": "US"
-    },
-    "docUrl": "https://genderize.io/",
-    "status": "active",
-    "tags": [
-      "性别推测",
-      "名字",
-      "统计分析",
-      "概率",
-      "用户画像"
-    ]
-  },
-  {
-    "id": "nationalize-io",
-    "name": "Nationalize.io",
-    "description": "根据名字预测国籍的API",
-    "fullDescription": "根据人名预测其最可能的国籍归属。基于姓氏和名字的分布统计数据，返回概率排名前几的国家及其概率值。可以帮助了解一个名字在不同国家的常见程度，适用于国际化应用的本地化推荐、用户研究等场景。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.nationalize.io/?name=zhang&count=5",
-    "baseUrl": "https://api.nationalize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "要分析的名字",
-        "example": "zhang|smith|tanaka"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回国家数量",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "name": "zhang",
-      "country": [
-        {
-          "country_id": "CN",
-          "probability": 0.92
-        },
-        {
-          "country_id": "SG",
-          "probability": 0.03
-        },
-        {
-          "country_id": "MY",
-          "probability": 0.02
-        }
-      ]
-    },
-    "docUrl": "https://nationalize.io/",
-    "status": "active",
-    "tags": [
-      "国籍预测",
-      "名字",
-      "国际化",
-      "统计",
-      "分布"
     ]
   },
   {
@@ -1057,6 +956,138 @@
     "note": "免费开发版有调用频率限制"
   },
   {
+    "id": "nationalize-io",
+    "name": "Nationalize.io",
+    "description": "根据名字预测国籍的API",
+    "fullDescription": "根据人名预测其最可能的国籍归属。基于姓氏和名字的分布统计数据，返回概率排名前几的国家及其概率值。可以帮助了解一个名字在不同国家的常见程度，适用于国际化应用的本地化推荐、用户研究等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.nationalize.io/?name=zhang&count=5",
+    "baseUrl": "https://api.nationalize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要分析的名字",
+        "example": "zhang|smith|tanaka"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回国家数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "name": "zhang",
+      "country": [
+        {
+          "country_id": "CN",
+          "probability": 0.92
+        },
+        {
+          "country_id": "SG",
+          "probability": 0.03
+        },
+        {
+          "country_id": "MY",
+          "probability": 0.02
+        }
+      ]
+    },
+    "docUrl": "https://nationalize.io/",
+    "status": "unstable",
+    "tags": [
+      "国籍预测",
+      "名字",
+      "国际化",
+      "统计",
+      "分布"
+    ],
+    "_testNote": "HTTP 429 (retry also 429)"
+  },
+  {
+    "id": "genderize-io",
+    "name": "Genderize.io",
+    "description": "根据名字推测性别的API",
+    "fullDescription": "根据人名推测性别的统计API服务。基于海量真实姓名-性别数据分析，返回概率值而非绝对结论。支持不同国家的数据差异，因为同一名字在不同文化背景下可能倾向不同性别。可与Agify.io配合使用完善用户基本信息。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.genderize.io/?name=james&country_id=US",
+    "baseUrl": "https://api.genderize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要分析的名字",
+        "example": "james|mary|xiaoming"
+      },
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": false,
+        "description": "国家代码",
+        "example": "US|CN|GB"
+      },
+      {
+        "name": "count",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "5"
+      }
+    ],
+    "responseExample": {
+      "name": "james",
+      "gender": "male",
+      "probability": 0.99,
+      "count": 987654,
+      "country_id": "US"
+    },
+    "docUrl": "https://genderize.io/",
+    "status": "unstable",
+    "tags": [
+      "性别推测",
+      "名字",
+      "统计分析",
+      "概率",
+      "用户画像"
+    ],
+    "_testNote": "Request timed out"
+  },
+  {
+    "id": "open-notify-iss",
+    "name": "Open Notify ISS",
+    "description": "国际空间站实时位置",
+    "fullDescription": "查询国际空间站(ISS)当前位置和太空中宇航员人数的开放API，数据实时更新",
+    "category": "data",
+    "method": "GET",
+    "url": "http://api.open-notify.org/iss-now.json",
+    "baseUrl": "http://api.open-notify.org",
+    "params": [],
+    "responseExample": {
+      "timestamp": 1620000000,
+      "iss_position": {
+        "latitude": "-25.1853",
+        "longitude": "85.4796"
+      },
+      "message": "success"
+    },
+    "docUrl": "http://open-notify.org/Open-Notify-API/",
+    "status": "active",
+    "tags": [
+      "太空",
+      "ISS",
+      "位置",
+      "科学",
+      "教育"
+    ],
+    "note": "免费公开，无需认证"
+  },
+  {
     "id": "free-dictionary",
     "name": "Free Dictionary API",
     "description": "免费英语词典查询",
@@ -1098,55 +1129,6 @@
       "英语",
       "学习",
       "单词"
-    ],
-    "note": ""
-  },
-  {
-    "id": "advice-slip",
-    "name": "Advice Slip",
-    "description": "随机人生建议",
-    "fullDescription": "随机生成一条生活建议/名言警句的API，轻松有趣的API，适合在应用中加入一点幽默元素",
-    "category": "other",
-    "method": "GET",
-    "url": "https://api.adviceslip.com/advice",
-    "baseUrl": "https://api.adviceslip.com",
-    "params": [],
-    "responseExample": {
-      "slip": {
-        "id": 123,
-        "advice": "Always wear clean underwear."
-      }
-    },
-    "docUrl": "https://api.adviceslip.com/",
-    "status": "active",
-    "tags": [
-      "建议",
-      "名言",
-      "趣味"
-    ],
-    "note": ""
-  },
-  {
-    "id": "yesno-api",
-    "name": "YesNo API",
-    "description": "随机Yes/No决策",
-    "fullDescription": "随机返回Yes或No的趣味API，每次调用附带一张对应的GIF动图，适合做简单的决策辅助",
-    "category": "other",
-    "method": "GET",
-    "url": "https://yesno.wtf/api",
-    "baseUrl": "https://yesno.wtf",
-    "params": [],
-    "responseExample": {
-      "answer": "yes",
-      "forced": false,
-      "image": "https://yesno.wtf/assets/yes/1.gif"
-    },
-    "docUrl": "https://yesno.wtf/",
-    "status": "active",
-    "tags": [
-      "趣味",
-      "随机",
-      "决策"
     ],
     "note": ""
   },
@@ -1203,101 +1185,53 @@
     "note": "免费使用，session token可减少重复题目"
   },
   {
-    "id": "open-notify-iss",
-    "name": "Open Notify ISS",
-    "description": "国际空间站实时位置",
-    "fullDescription": "查询国际空间站(ISS)当前位置和太空中宇航员人数的开放API，数据实时更新",
-    "category": "data",
-    "method": "GET",
-    "url": "http://api.open-notify.org/iss-now.json",
-    "baseUrl": "http://api.open-notify.org",
-    "params": [],
-    "responseExample": {
-      "timestamp": 1620000000,
-      "iss_position": {
-        "latitude": "-25.1853",
-        "longitude": "85.4796"
-      },
-      "message": "success"
-    },
-    "docUrl": "http://open-notify.org/Open-Notify-API/",
-    "status": "active",
-    "tags": [
-      "太空",
-      "ISS",
-      "位置",
-      "科学",
-      "教育"
-    ],
-    "note": "免费公开，无需认证"
-  },
-  {
-    "id": "chuck-norris-jokes",
-    "name": "Chuck Norris Jokes",
-    "description": "Chuck Norris笑话",
-    "fullDescription": "随机生成Chuck Norris笑话的趣味API，笑话均为用户贡献，支持多类别筛选",
+    "id": "yesno-api",
+    "name": "YesNo API",
+    "description": "随机Yes/No决策",
+    "fullDescription": "随机返回Yes或No的趣味API，每次调用附带一张对应的GIF动图，适合做简单的决策辅助",
     "category": "other",
     "method": "GET",
-    "url": "https://api.chucknorris.io/jokes/random",
-    "baseUrl": "https://api.chucknorris.io",
+    "url": "https://yesno.wtf/api",
+    "baseUrl": "https://yesno.wtf",
     "params": [],
     "responseExample": {
-      "id": "abc123",
-      "value": "Chuck Norris can slam a revolving door.",
-      "url": "https://api.chucknorris.io/jokes/abc123"
+      "answer": "yes",
+      "forced": false,
+      "image": "https://yesno.wtf/assets/yes/1.gif"
     },
-    "docUrl": "https://api.chucknorris.io/",
+    "docUrl": "https://yesno.wtf/",
     "status": "active",
     "tags": [
-      "笑话",
       "趣味",
-      "Chuck Norris"
+      "随机",
+      "决策"
     ],
     "note": ""
   },
   {
-    "id": "pokeapi",
-    "name": "PokeAPI",
-    "description": "宝可梦图鉴数据API，获取精灵详细信息",
-    "fullDescription": "最全面的宝可梦(Pokémon)数据API，提供所有世代的精灵、招式、属性、进化链、技能等详细数据。无需认证，无速率限制，数据持续更新至最新游戏版本。适合制作宝可梦图鉴查询工具、对战计算器或粉丝网站。",
+    "id": "advice-slip",
+    "name": "Advice Slip",
+    "description": "随机人生建议",
+    "fullDescription": "随机生成一条生活建议/名言警句的API，轻松有趣的API，适合在应用中加入一点幽默元素",
     "category": "other",
     "method": "GET",
-    "url": "https://pokeapi.co/api/v2/pokemon/pikachu",
-    "baseUrl": "https://pokeapi.co/api/v2",
-    "params": [
-      {
-        "name": "name_or_id",
-        "type": "string",
-        "required": true,
-        "description": "宝可梦名称(英文)或ID数字",
-        "example": "pikachu / 25"
-      }
-    ],
+    "url": "https://api.adviceslip.com/advice",
+    "baseUrl": "https://api.adviceslip.com",
+    "params": [],
     "responseExample": {
-      "id": 25,
-      "name": "pikachu",
-      "height": 4,
-      "weight": 60,
-      "types": [
-        {
-          "type": {
-            "name": "electric"
-          }
-        }
-      ],
-      "sprites": {
-        "front_default": "https://..."
+      "slip": {
+        "id": 123,
+        "advice": "Always wear clean underwear."
       }
     },
-    "docUrl": "https://pokeapi.co/docs/v2",
+    "docUrl": "https://api.adviceslip.com/",
     "status": "active",
     "tags": [
-      "宝可梦",
-      "Pokemon",
-      "游戏",
-      "图鉴",
-      "数据"
-    ]
+      "建议",
+      "名言",
+      "趣味"
+    ],
+    "note": ""
   },
   {
     "id": "itunes-rss",
@@ -1354,6 +1288,99 @@
       "应用",
       "iOS"
     ]
+  },
+  {
+    "id": "pokeapi",
+    "name": "PokeAPI",
+    "description": "宝可梦图鉴数据API，获取精灵详细信息",
+    "fullDescription": "最全面的宝可梦(Pokémon)数据API，提供所有世代的精灵、招式、属性、进化链、技能等详细数据。无需认证，无速率限制，数据持续更新至最新游戏版本。适合制作宝可梦图鉴查询工具、对战计算器或粉丝网站。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://pokeapi.co/api/v2/pokemon/pikachu",
+    "baseUrl": "https://pokeapi.co/api/v2",
+    "params": [
+      {
+        "name": "name_or_id",
+        "type": "string",
+        "required": true,
+        "description": "宝可梦名称(英文)或ID数字",
+        "example": "pikachu / 25"
+      }
+    ],
+    "responseExample": {
+      "id": 25,
+      "name": "pikachu",
+      "height": 4,
+      "weight": 60,
+      "types": [
+        {
+          "type": {
+            "name": "electric"
+          }
+        }
+      ],
+      "sprites": {
+        "front_default": "https://..."
+      }
+    },
+    "docUrl": "https://pokeapi.co/docs/v2",
+    "status": "active",
+    "tags": [
+      "宝可梦",
+      "Pokemon",
+      "游戏",
+      "图鉴",
+      "数据"
+    ]
+  },
+  {
+    "id": "icanhazdadjoke",
+    "name": "icanhazdadjoke",
+    "description": "程序员专属笑话API，支持多格式",
+    "fullDescription": "专为程序员设计的笑话API，所有笑话都与编程、技术相关。支持纯文本、JSON、PNG图片等多种输出格式，可直接生成分享图片。无需认证，CORS全开，适合做每日一笑功能或技术社区娱乐模块。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://icanhazdadjoke.com/",
+    "baseUrl": "https://icanhazdadjoke.com",
+    "params": [],
+    "responseExample": {
+      "id": "R7UfaahVfFd",
+      "joke": "For a programmer, a keyboard is an input device for entering errors.",
+      "status": 200
+    },
+    "docUrl": "https://icanhazdadjoke.com/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "程序员",
+      "幽默",
+      "技术",
+      "娱乐"
+    ]
+  },
+  {
+    "id": "chuck-norris-jokes",
+    "name": "Chuck Norris Jokes",
+    "description": "Chuck Norris笑话",
+    "fullDescription": "随机生成Chuck Norris笑话的趣味API，笑话均为用户贡献，支持多类别筛选",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.chucknorris.io/jokes/random",
+    "baseUrl": "https://api.chucknorris.io",
+    "params": [],
+    "responseExample": {
+      "id": "abc123",
+      "value": "Chuck Norris can slam a revolving door.",
+      "url": "https://api.chucknorris.io/jokes/abc123"
+    },
+    "docUrl": "https://api.chucknorris.io/",
+    "status": "active",
+    "tags": [
+      "笑话",
+      "趣味",
+      "Chuck Norris"
+    ],
+    "note": ""
   },
   {
     "id": "usgs-earthquake",
@@ -1414,31 +1441,6 @@
       "政府数据",
       "GeoJSON",
       "科学"
-    ]
-  },
-  {
-    "id": "icanhazdadjoke",
-    "name": "icanhazdadjoke",
-    "description": "程序员专属笑话API，支持多格式",
-    "fullDescription": "专为程序员设计的笑话API，所有笑话都与编程、技术相关。支持纯文本、JSON、PNG图片等多种输出格式，可直接生成分享图片。无需认证，CORS全开，适合做每日一笑功能或技术社区娱乐模块。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://icanhazdadjoke.com/",
-    "baseUrl": "https://icanhazdadjoke.com",
-    "params": [],
-    "responseExample": {
-      "id": "R7UfaahVfFd",
-      "joke": "For a programmer, a keyboard is an input device for entering errors.",
-      "status": 200
-    },
-    "docUrl": "https://icanhazdadjoke.com/",
-    "status": "active",
-    "tags": [
-      "笑话",
-      "程序员",
-      "幽默",
-      "技术",
-      "娱乐"
     ]
   },
   {
@@ -1760,30 +1762,6 @@
     "note": "非官方API，请勿用于商业高负载场景"
   },
   {
-    "id": "random-dog-api",
-    "name": "RandomDog",
-    "description": "随机狗狗图片API，支持多种图片格式",
-    "fullDescription": "提供随机可爱狗狗图片的API，支持返回JSON格式的图片URL。图片来自互联网真实狗狗照片，种类丰富。不同于Dog CEO API，RandomDog返回的是直接可用的图片URL，可直接用于img标签或作为背景图。适合宠物类应用或娱乐功能开发。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://random.dog/woof.json",
-    "baseUrl": "https://random.dog",
-    "params": [],
-    "responseExample": {
-      "fileSizeBytes": 59715,
-      "url": "https://random.dog/368b65b4-e6ce-4d33-9b6b-b444c8620e1a.jpg"
-    },
-    "docUrl": "https://random.dog/",
-    "status": "active",
-    "tags": [
-      "狗狗",
-      "宠物",
-      "随机图片",
-      "图片URL",
-      "可爱"
-    ]
-  },
-  {
     "id": "artic-chicago",
     "name": "Art Institute of Chicago",
     "description": "芝加哥艺术博物馆开放数据API",
@@ -1898,6 +1876,30 @@
     ]
   },
   {
+    "id": "random-dog-api",
+    "name": "RandomDog",
+    "description": "随机狗狗图片API，支持多种图片格式",
+    "fullDescription": "提供随机可爱狗狗图片的API，支持返回JSON格式的图片URL。图片来自互联网真实狗狗照片，种类丰富。不同于Dog CEO API，RandomDog返回的是直接可用的图片URL，可直接用于img标签或作为背景图。适合宠物类应用或娱乐功能开发。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://random.dog/woof.json",
+    "baseUrl": "https://random.dog",
+    "params": [],
+    "responseExample": {
+      "fileSizeBytes": 59715,
+      "url": "https://random.dog/368b65b4-e6ce-4d33-9b6b-b444c8620e1a.jpg"
+    },
+    "docUrl": "https://random.dog/",
+    "status": "active",
+    "tags": [
+      "狗狗",
+      "宠物",
+      "随机图片",
+      "图片URL",
+      "可爱"
+    ]
+  },
+  {
     "id": "ice-and-fire",
     "name": "An API of Ice And Fire",
     "description": "冰与火之歌(权力的游戏)数据API",
@@ -1950,66 +1952,6 @@
       "角色",
       "家族"
     ]
-  },
-  {
-    "id": "rick-and-morty",
-    "name": "Rick and Morty API",
-    "description": "瑞克和莫蒂动画角色和剧情数据",
-    "fullDescription": "提供《瑞克和莫蒂》动画的完整数据，包括角色、地点、剧集信息。支持丰富的筛选条件（角色按状态/物种/性别，地点按类型/维度，剧集按名称/剧集号）。GraphQL和REST两种接口均可使用。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://rickandmortyapi.com/api/character/1",
-    "baseUrl": "https://rickandmortyapi.com/api",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": false,
-        "description": "按名称筛选",
-        "example": "rick"
-      },
-      {
-        "name": "status",
-        "type": "string",
-        "required": false,
-        "description": "角色状态：alive, dead, unknown",
-        "example": "alive"
-      },
-      {
-        "name": "species",
-        "type": "string",
-        "required": false,
-        "description": "物种",
-        "example": "Human"
-      }
-    ],
-    "responseExample": {
-      "id": 1,
-      "name": "Rick Sanchez",
-      "status": "Alive",
-      "species": "Human",
-      "type": "",
-      "gender": "Male",
-      "origin": {
-        "name": "Earth (C-137)",
-        "url": "https://rickandmortyapi.com/api/location/1"
-      },
-      "location": {
-        "name": "Citadel of Ricks",
-        "url": "https://rickandmortyapi.com/api/location/3"
-      },
-      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-    },
-    "docUrl": "https://rickandmortyapi.com/documentation",
-    "status": "active",
-    "tags": [
-      "瑞克和莫蒂",
-      "动画",
-      "角色",
-      "剧集",
-      "GraphQL"
-    ],
-    "note": ""
   },
   {
     "id": "cataas",
@@ -2231,6 +2173,66 @@
     ]
   },
   {
+    "id": "rick-and-morty",
+    "name": "Rick and Morty API",
+    "description": "瑞克和莫蒂动画角色和剧情数据",
+    "fullDescription": "提供《瑞克和莫蒂》动画的完整数据，包括角色、地点、剧集信息。支持丰富的筛选条件（角色按状态/物种/性别，地点按类型/维度，剧集按名称/剧集号）。GraphQL和REST两种接口均可使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://rickandmortyapi.com/api/character/1",
+    "baseUrl": "https://rickandmortyapi.com/api",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "按名称筛选",
+        "example": "rick"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "角色状态：alive, dead, unknown",
+        "example": "alive"
+      },
+      {
+        "name": "species",
+        "type": "string",
+        "required": false,
+        "description": "物种",
+        "example": "Human"
+      }
+    ],
+    "responseExample": {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "type": "",
+      "gender": "Male",
+      "origin": {
+        "name": "Earth (C-137)",
+        "url": "https://rickandmortyapi.com/api/location/1"
+      },
+      "location": {
+        "name": "Citadel of Ricks",
+        "url": "https://rickandmortyapi.com/api/location/3"
+      },
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    },
+    "docUrl": "https://rickandmortyapi.com/documentation",
+    "status": "active",
+    "tags": [
+      "瑞克和莫蒂",
+      "动画",
+      "角色",
+      "剧集",
+      "GraphQL"
+    ],
+    "note": ""
+  },
+  {
     "id": "flag-cdn",
     "name": "Flag CDN",
     "description": "全球国旗图片和代码查询服务",
@@ -2324,6 +2326,72 @@
     ]
   },
   {
+    "id": "robohash",
+    "name": "RoboHash",
+    "description": "根据文本生成独特的机器人头像",
+    "fullDescription": "根据任意文本字符串生成独特的机器人头像图片。相同文本总是生成相同的机器人，不同文本生成不同机器人。支持多种头像风格（robot、monster、robotHead、kitten等），可自定义尺寸和背景。非常适合用户头像生成、匿名头像等场景。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://robohash.org/test?size=200x200",
+    "baseUrl": "https://robohash.org",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true,
+        "description": "生成头像的文本（URL路径参数）",
+        "example": "hello"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "图片尺寸",
+        "example": "200x200"
+      },
+      {
+        "name": "set",
+        "type": "string",
+        "required": false,
+        "description": "头像风格：set1(robot), set2(monster), set3(robotHead), set4(kitten), set5(head)",
+        "example": "set1"
+      }
+    ],
+    "responseExample": "(返回PNG图片)",
+    "docUrl": "https://robohash.org/",
+    "status": "active",
+    "tags": [
+      "头像",
+      "机器人",
+      "生成器",
+      "唯一",
+      "匿名"
+    ]
+  },
+  {
+    "id": "randomfox",
+    "name": "RandomFox",
+    "description": "随机狐狸图片API",
+    "fullDescription": "简单直接的随机狐狸图片API，每次请求返回一张随机狐狸图片的URL。接口极简，无需参数，响应快速。非常适合开发动物图片展示、随机壁纸等趣味应用。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://randomfox.ca/floof/",
+    "baseUrl": "https://randomfox.ca",
+    "params": [],
+    "responseExample": {
+      "image": "https://randomfox.ca/images/42.jpg",
+      "link": "https://randomfox.ca/?i=42"
+    },
+    "docUrl": "https://randomfox.ca/",
+    "status": "active",
+    "tags": [
+      "狐狸",
+      "动物",
+      "随机图片",
+      "萌宠"
+    ]
+  },
+  {
     "id": "nager-date",
     "name": "Nager.Date",
     "description": "全球公共假期和节假日查询API",
@@ -2369,126 +2437,6 @@
       "日历",
       "全球",
       "公共假期"
-    ]
-  },
-  {
-    "id": "randomfox",
-    "name": "RandomFox",
-    "description": "随机狐狸图片API",
-    "fullDescription": "简单直接的随机狐狸图片API，每次请求返回一张随机狐狸图片的URL。接口极简，无需参数，响应快速。非常适合开发动物图片展示、随机壁纸等趣味应用。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://randomfox.ca/floof/",
-    "baseUrl": "https://randomfox.ca",
-    "params": [],
-    "responseExample": {
-      "image": "https://randomfox.ca/images/42.jpg",
-      "link": "https://randomfox.ca/?i=42"
-    },
-    "docUrl": "https://randomfox.ca/",
-    "status": "active",
-    "tags": [
-      "狐狸",
-      "动物",
-      "随机图片",
-      "萌宠"
-    ]
-  },
-  {
-    "id": "robohash",
-    "name": "RoboHash",
-    "description": "根据文本生成独特的机器人头像",
-    "fullDescription": "根据任意文本字符串生成独特的机器人头像图片。相同文本总是生成相同的机器人，不同文本生成不同机器人。支持多种头像风格（robot、monster、robotHead、kitten等），可自定义尺寸和背景。非常适合用户头像生成、匿名头像等场景。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://robohash.org/test?size=200x200",
-    "baseUrl": "https://robohash.org",
-    "params": [
-      {
-        "name": "text",
-        "type": "string",
-        "required": true,
-        "description": "生成头像的文本（URL路径参数）",
-        "example": "hello"
-      },
-      {
-        "name": "size",
-        "type": "string",
-        "required": false,
-        "description": "图片尺寸",
-        "example": "200x200"
-      },
-      {
-        "name": "set",
-        "type": "string",
-        "required": false,
-        "description": "头像风格：set1(robot), set2(monster), set3(robotHead), set4(kitten), set5(head)",
-        "example": "set1"
-      }
-    ],
-    "responseExample": "(返回PNG图片)",
-    "docUrl": "https://robohash.org/",
-    "status": "active",
-    "tags": [
-      "头像",
-      "机器人",
-      "生成器",
-      "唯一",
-      "匿名"
-    ]
-  },
-  {
-    "id": "fake-store",
-    "name": "Fake Store API",
-    "description": "模拟电商产品数据API",
-    "fullDescription": "提供模拟电商产品数据，包含产品名称、价格、描述、分类、评分、图片等。支持获取全部/单个产品，以及购物车、用户、认证等端点。数据结构接近真实电商，适合开发电商原型、产品展示页面。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://fakestoreapi.com/products/1",
-    "baseUrl": "https://fakestoreapi.com",
-    "params": [
-      {
-        "name": "id",
-        "type": "number",
-        "required": false,
-        "description": "产品ID（路径参数）",
-        "example": "1"
-      },
-      {
-        "name": "limit",
-        "type": "number",
-        "required": false,
-        "description": "返回数量（/products端点）",
-        "example": "5"
-      },
-      {
-        "name": "sort",
-        "type": "string",
-        "required": false,
-        "description": "排序方式：asc/desc",
-        "example": "desc"
-      }
-    ],
-    "responseExample": {
-      "id": 1,
-      "title": "Fjallraven Bag",
-      "price": 109.95,
-      "description": "Your perfect pack...",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
-    },
-    "docUrl": "https://fakestoreapi.com/docs",
-    "status": "active",
-    "tags": [
-      "电商",
-      "产品",
-      "模拟数据",
-      "购物",
-      "评分"
     ]
   },
   {
@@ -2585,6 +2533,83 @@
     ]
   },
   {
+    "id": "kanye-rest",
+    "name": "Kanye Rest",
+    "description": "Kanye West随机语录API",
+    "fullDescription": "提供Kanye West的随机语录，每次返回一条。数据来自社区整理的Kanye名言集。极简API，无参数，开箱即用。适合开发名人语录展示、趣味应用等。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.kanye.rest/",
+    "baseUrl": "https://api.kanye.rest",
+    "params": [],
+    "responseExample": {
+      "quote": "I love you like Kanye loves Kanye"
+    },
+    "docUrl": "https://kanye.rest/",
+    "status": "active",
+    "tags": [
+      "Kanye",
+      "语录",
+      "名人",
+      "随机",
+      "名言"
+    ]
+  },
+  {
+    "id": "fake-store",
+    "name": "Fake Store API",
+    "description": "模拟电商产品数据API",
+    "fullDescription": "提供模拟电商产品数据，包含产品名称、价格、描述、分类、评分、图片等。支持获取全部/单个产品，以及购物车、用户、认证等端点。数据结构接近真实电商，适合开发电商原型、产品展示页面。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://fakestoreapi.com/products/1",
+    "baseUrl": "https://fakestoreapi.com",
+    "params": [
+      {
+        "name": "id",
+        "type": "number",
+        "required": false,
+        "description": "产品ID（路径参数）",
+        "example": "1"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量（/products端点）",
+        "example": "5"
+      },
+      {
+        "name": "sort",
+        "type": "string",
+        "required": false,
+        "description": "排序方式：asc/desc",
+        "example": "desc"
+      }
+    ],
+    "responseExample": {
+      "id": 1,
+      "title": "Fjallraven Bag",
+      "price": 109.95,
+      "description": "Your perfect pack...",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    "docUrl": "https://fakestoreapi.com/docs",
+    "status": "active",
+    "tags": [
+      "电商",
+      "产品",
+      "模拟数据",
+      "购物",
+      "评分"
+    ]
+  },
+  {
     "id": "dog-facts",
     "name": "Dog Facts",
     "description": "随机狗狗趣味知识API",
@@ -2609,37 +2634,15 @@
       "success": true
     },
     "docUrl": "https://dog-api.kinduff.com/",
-    "status": "active",
+    "status": "unstable",
     "tags": [
       "狗",
       "趣事",
       "宠物",
       "知识",
       "动物"
-    ]
-  },
-  {
-    "id": "kanye-rest",
-    "name": "Kanye Rest",
-    "description": "Kanye West随机语录API",
-    "fullDescription": "提供Kanye West的随机语录，每次返回一条。数据来自社区整理的Kanye名言集。极简API，无参数，开箱即用。适合开发名人语录展示、趣味应用等。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://api.kanye.rest/",
-    "baseUrl": "https://api.kanye.rest",
-    "params": [],
-    "responseExample": {
-      "quote": "I love you like Kanye loves Kanye"
-    },
-    "docUrl": "https://kanye.rest/",
-    "status": "active",
-    "tags": [
-      "Kanye",
-      "语录",
-      "名人",
-      "随机",
-      "名言"
-    ]
+    ],
+    "_testNote": "Request timed out"
   },
   {
     "id": "itunes-search",
@@ -2699,68 +2702,6 @@
       "App Store"
     ],
     "note": "默认20次/分钟速率限制"
-  },
-  {
-    "id": "dicebear",
-    "name": "DiceBear Avatars",
-    "description": "基于文本生成风格化SVG头像",
-    "fullDescription": "DiceBear是一个开源的头像生成库，通过API传入种子文本即可生成独特的SVG风格头像。支持多种风格（pixel-art、bottts、identicon等），URL即头像，无需存储。适合用户默认头像、评论占位图等场景。完全免费开源。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://api.dicebear.com/9.x/pixel-art/svg?seed=John",
-    "baseUrl": "https://api.dicebear.com",
-    "params": [
-      {
-        "name": "seed",
-        "type": "string",
-        "required": true,
-        "description": "种子文本（相同种子生成相同头像）",
-        "example": "John"
-      }
-    ],
-    "responseExample": "(返回SVG图片)",
-    "docUrl": "https://www.dicebear.com/how-to-use/http-api",
-    "status": "active",
-    "tags": [
-      "头像生成",
-      "SVG",
-      "风格化",
-      "占位图",
-      "开源"
-    ],
-    "note": "基于v9 API，支持pixel-art/bottts/identicon等多种风格"
-  },
-  {
-    "id": "purgomalum",
-    "name": "PurgoMalum",
-    "description": "脏话/敏感词过滤检测API",
-    "fullDescription": "一个简单的脏话过滤和检测API，支持英文脏话检测、替换和过滤。可检测文本是否包含不当内容，或自动过滤替换敏感词为*号。免费无认证，适合评论审核、内容安全检测等场景。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://www.purgomalum.com/service/json?text=hello%20world",
-    "baseUrl": "https://www.purgomalum.com",
-    "params": [
-      {
-        "name": "text",
-        "type": "string",
-        "required": true,
-        "description": "待检测文本",
-        "example": "hello world"
-      }
-    ],
-    "responseExample": {
-      "result": "hello world"
-    },
-    "docUrl": "https://www.purgomalum.com/",
-    "status": "active",
-    "tags": [
-      "脏话过滤",
-      "内容审核",
-      "敏感词",
-      "文本检测",
-      "安全"
-    ],
-    "note": "仅支持英文脏话检测"
   },
   {
     "id": "useless-facts",
@@ -2852,6 +2793,68 @@
     ]
   },
   {
+    "id": "dicebear",
+    "name": "DiceBear Avatars",
+    "description": "基于文本生成风格化SVG头像",
+    "fullDescription": "DiceBear是一个开源的头像生成库，通过API传入种子文本即可生成独特的SVG风格头像。支持多种风格（pixel-art、bottts、identicon等），URL即头像，无需存储。适合用户默认头像、评论占位图等场景。完全免费开源。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://api.dicebear.com/9.x/pixel-art/svg?seed=John",
+    "baseUrl": "https://api.dicebear.com",
+    "params": [
+      {
+        "name": "seed",
+        "type": "string",
+        "required": true,
+        "description": "种子文本（相同种子生成相同头像）",
+        "example": "John"
+      }
+    ],
+    "responseExample": "(返回SVG图片)",
+    "docUrl": "https://www.dicebear.com/how-to-use/http-api",
+    "status": "active",
+    "tags": [
+      "头像生成",
+      "SVG",
+      "风格化",
+      "占位图",
+      "开源"
+    ],
+    "note": "基于v9 API，支持pixel-art/bottts/identicon等多种风格"
+  },
+  {
+    "id": "purgomalum",
+    "name": "PurgoMalum",
+    "description": "脏话/敏感词过滤检测API",
+    "fullDescription": "一个简单的脏话过滤和检测API，支持英文脏话检测、替换和过滤。可检测文本是否包含不当内容，或自动过滤替换敏感词为*号。免费无认证，适合评论审核、内容安全检测等场景。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://www.purgomalum.com/service/json?text=hello%20world",
+    "baseUrl": "https://www.purgomalum.com",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true,
+        "description": "待检测文本",
+        "example": "hello world"
+      }
+    ],
+    "responseExample": {
+      "result": "hello world"
+    },
+    "docUrl": "https://www.purgomalum.com/",
+    "status": "active",
+    "tags": [
+      "脏话过滤",
+      "内容审核",
+      "敏感词",
+      "文本检测",
+      "安全"
+    ],
+    "note": "仅支持英文脏话检测"
+  },
+  {
     "id": "radio-browser",
     "name": "Radio Browser",
     "description": "全球网络电台列表API，超过7万个电台",
@@ -2903,52 +2906,6 @@
       "全球",
       "音频",
       "流媒体"
-    ]
-  },
-  {
-    "id": "bacon-ipsum",
-    "name": "Bacon Ipsum",
-    "description": "生成带肉类词汇的Lorem Ipsum占位文本",
-    "fullDescription": "专为美食和肉类主题网站设计的Lorem Ipsum占位文本生成器。可生成带有各种肉类相关词汇的假文本，支持普通模式、只有肉类词汇、传统Lorem Ipsum多种模式。可控制段落数、句子数和起始语。非常适合餐饮类网站的前端开发原型设计。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://baconipsum.com/api/?type=meat-and-filler&paras=2",
-    "baseUrl": "https://baconipsum.com/api",
-    "params": [
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "文本类型：meat-and-filler, all-meat, lorem",
-        "example": "meat-and-filler"
-      },
-      {
-        "name": "paras",
-        "type": "number",
-        "required": false,
-        "description": "段落数",
-        "example": "3"
-      },
-      {
-        "name": "sentences",
-        "type": "number",
-        "required": false,
-        "description": "每段句子数",
-        "example": "5"
-      }
-    ],
-    "responseExample": [
-      "Bacon ipsum dolor amet chuck pork belly drumstick, landjaeger meatloaf hamburger turkey swine. Kielbasa strip steak ham hock, venison ball tip shoulder porchetta. Sirloin boudin pork shankle short loin."
-    ],
-    "docUrl": "https://baconipsum.com/",
-    "status": "active",
-    "tags": [
-      "占位文本",
-      "Lorem",
-      "生成器",
-      "假数据",
-      "趣味",
-      "美食"
     ]
   },
   {
@@ -3013,38 +2970,6 @@
     ]
   },
   {
-    "id": "deck-of-cards",
-    "name": "Deck of Cards API",
-    "description": "在线扑克牌模拟API",
-    "fullDescription": "模拟一副标准扑克牌的API，支持洗牌、抽牌、发牌等操作。每次创建新的牌堆，可洗牌、抽指定数量牌、返回剩余牌数等。非常适合开发卡牌类小游戏或扑克牌教学应用。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
-    "baseUrl": "https://deckofcardsapi.com/api/deck",
-    "params": [
-      {
-        "name": "deck_count",
-        "type": "number",
-        "required": false,
-        "description": "牌组数量",
-        "example": "1"
-      }
-    ],
-    "responseExample": {
-      "success": true,
-      "deck_id": "3p40paa87x90",
-      "remaining": 52,
-      "shuffled": true
-    },
-    "docUrl": "https://deckofcardsapi.com/",
-    "status": "active",
-    "tags": [
-      "扑克牌",
-      "游戏",
-      "卡牌"
-    ]
-  },
-  {
     "id": "fakerapi",
     "name": "FakerAPI",
     "description": "假数据生成器，支持自定义字段和数量",
@@ -3094,6 +3019,84 @@
     "note": ""
   },
   {
+    "id": "deck-of-cards",
+    "name": "Deck of Cards API",
+    "description": "在线扑克牌模拟API",
+    "fullDescription": "模拟一副标准扑克牌的API，支持洗牌、抽牌、发牌等操作。每次创建新的牌堆，可洗牌、抽指定数量牌、返回剩余牌数等。非常适合开发卡牌类小游戏或扑克牌教学应用。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+    "baseUrl": "https://deckofcardsapi.com/api/deck",
+    "params": [
+      {
+        "name": "deck_count",
+        "type": "number",
+        "required": false,
+        "description": "牌组数量",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "success": true,
+      "deck_id": "3p40paa87x90",
+      "remaining": 52,
+      "shuffled": true
+    },
+    "docUrl": "https://deckofcardsapi.com/",
+    "status": "active",
+    "tags": [
+      "扑克牌",
+      "游戏",
+      "卡牌"
+    ]
+  },
+  {
+    "id": "bacon-ipsum",
+    "name": "Bacon Ipsum",
+    "description": "生成带肉类词汇的Lorem Ipsum占位文本",
+    "fullDescription": "专为美食和肉类主题网站设计的Lorem Ipsum占位文本生成器。可生成带有各种肉类相关词汇的假文本，支持普通模式、只有肉类词汇、传统Lorem Ipsum多种模式。可控制段落数、句子数和起始语。非常适合餐饮类网站的前端开发原型设计。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://baconipsum.com/api/?type=meat-and-filler&paras=2",
+    "baseUrl": "https://baconipsum.com/api",
+    "params": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "文本类型：meat-and-filler, all-meat, lorem",
+        "example": "meat-and-filler"
+      },
+      {
+        "name": "paras",
+        "type": "number",
+        "required": false,
+        "description": "段落数",
+        "example": "3"
+      },
+      {
+        "name": "sentences",
+        "type": "number",
+        "required": false,
+        "description": "每段句子数",
+        "example": "5"
+      }
+    ],
+    "responseExample": [
+      "Bacon ipsum dolor amet chuck pork belly drumstick, landjaeger meatloaf hamburger turkey swine. Kielbasa strip steak ham hock, venison ball tip shoulder porchetta. Sirloin boudin pork shankle short loin."
+    ],
+    "docUrl": "https://baconipsum.com/",
+    "status": "active",
+    "tags": [
+      "占位文本",
+      "Lorem",
+      "生成器",
+      "假数据",
+      "趣味",
+      "美食"
+    ]
+  },
+  {
     "id": "disease-sh",
     "name": "Disease.sh",
     "description": "全球COVID-19等疫情数据API",
@@ -3135,37 +3138,6 @@
       "数据",
       "疫苗",
       "全球"
-    ]
-  },
-  {
-    "id": "uuid-generator",
-    "name": "UUID Generator",
-    "description": "在线UUID/GUID生成器API",
-    "fullDescription": "生成UUID v4（随机UUID），一次可生成1-50个UUID。返回JSON数组格式。非常适合开发需要唯一标识符的应用、数据库种子数据、测试数据生成等。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://www.uuidtools.com/api/generate/v4",
-    "baseUrl": "https://www.uuidtools.com/api/generate",
-    "params": [
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "生成数量（1-50）",
-        "example": "5"
-      }
-    ],
-    "responseExample": [
-      "550e8400-e29b-41d4-a716-446655440000"
-    ],
-    "docUrl": "https://www.uuidtools.com/",
-    "status": "active",
-    "tags": [
-      "UUID",
-      "GUID",
-      "生成器",
-      "唯一标识",
-      "ID"
     ]
   },
   {
@@ -3218,49 +3190,6 @@
       "科技",
       "新闻",
       "Algolia"
-    ]
-  },
-  {
-    "id": "jsonplaceholder",
-    "name": "JSONPlaceholder",
-    "description": "免费假数据REST API，前端开发测试必备",
-    "fullDescription": "提供完整的模拟REST API服务，包含帖子、评论、用户、相册、待办事项、照片等6种资源。支持GET/POST/PUT/PATCH/DELETE全部HTTP方法，非常适合前端开发和测试。CORS全开放，稳定可靠。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://jsonplaceholder.typicode.com/posts?_limit=3",
-    "baseUrl": "https://jsonplaceholder.typicode.com",
-    "params": [
-      {
-        "name": "_limit",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "3"
-      },
-      {
-        "name": "_start",
-        "type": "number",
-        "required": false,
-        "description": "偏移量",
-        "example": "0"
-      }
-    ],
-    "responseExample": [
-      {
-        "userId": 1,
-        "id": 1,
-        "title": "sunt aut facere",
-        "body": "quia et suscipit"
-      }
-    ],
-    "docUrl": "https://jsonplaceholder.typicode.com/",
-    "status": "active",
-    "tags": [
-      "假数据",
-      "测试",
-      "REST",
-      "前端",
-      "CRUD"
     ]
   },
   {
@@ -3362,6 +3291,127 @@
     ]
   },
   {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "description": "免费假数据REST API，前端开发测试必备",
+    "fullDescription": "提供完整的模拟REST API服务，包含帖子、评论、用户、相册、待办事项、照片等6种资源。支持GET/POST/PUT/PATCH/DELETE全部HTTP方法，非常适合前端开发和测试。CORS全开放，稳定可靠。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts?_limit=3",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "params": [
+      {
+        "name": "_limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "3"
+      },
+      {
+        "name": "_start",
+        "type": "number",
+        "required": false,
+        "description": "偏移量",
+        "example": "0"
+      }
+    ],
+    "responseExample": [
+      {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere",
+        "body": "quia et suscipit"
+      }
+    ],
+    "docUrl": "https://jsonplaceholder.typicode.com/",
+    "status": "active",
+    "tags": [
+      "假数据",
+      "测试",
+      "REST",
+      "前端",
+      "CRUD"
+    ]
+  },
+  {
+    "id": "api-zipcode",
+    "name": "Zippopotam.us",
+    "description": "全球邮编查询API",
+    "fullDescription": "根据国家代码和邮政编码查询地理位置信息的API。返回对应邮编的城市、州/省、经纬度坐标和时区信息。支持全球多国查询，无需认证。适合开发地址自动补全、邮编查询等应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.zippopotam.us/us/90210",
+    "baseUrl": "https://api.zippopotam.us",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": true,
+        "description": "国家代码(路径参数)",
+        "example": "us"
+      },
+      {
+        "name": "postcode",
+        "type": "string",
+        "required": true,
+        "description": "邮编(路径参数)",
+        "example": "90210"
+      }
+    ],
+    "responseExample": {
+      "post code": "90210",
+      "country": "United States",
+      "places": [
+        {
+          "place name": "Beverly Hills",
+          "latitude": "34.0901",
+          "longitude": "-118.4065"
+        }
+      ]
+    },
+    "docUrl": "https://www.zippopotam.us/",
+    "status": "active",
+    "tags": [
+      "邮编",
+      "地址",
+      "地理位置",
+      "查询"
+    ]
+  },
+  {
+    "id": "xkcd-api",
+    "name": "xkcd",
+    "description": "XKCD漫画数据API",
+    "fullDescription": "获取XKCD网络漫画的元数据，包括标题、图片URL、Alt文本等。可获取最新一期或指定编号的漫画。无需认证，CORS全开。适合开发漫画阅读器、每日一笑功能。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://xkcd.com/info.0.json",
+    "baseUrl": "https://xkcd.com",
+    "params": [
+      {
+        "name": "num",
+        "type": "number",
+        "required": false,
+        "description": "漫画编号(路径参数)",
+        "example": "614"
+      }
+    ],
+    "responseExample": {
+      "num": 614,
+      "title": "Woodpecker",
+      "img": "https://imgs.xkcd.com/comics/woodpecker.png",
+      "alt": "..."
+    },
+    "docUrl": "https://xkcd.com/json.html",
+    "status": "active",
+    "tags": [
+      "漫画",
+      "xkcd",
+      "幽默",
+      "科技"
+    ]
+  },
+  {
     "id": "mapty-geocode",
     "name": "Open-Meteo Geocoding",
     "description": "免费地理编码API，城市名转经纬度",
@@ -3411,39 +3461,6 @@
       "经纬度",
       "城市搜索",
       "位置"
-    ]
-  },
-  {
-    "id": "xkcd-api",
-    "name": "xkcd",
-    "description": "XKCD漫画数据API",
-    "fullDescription": "获取XKCD网络漫画的元数据，包括标题、图片URL、Alt文本等。可获取最新一期或指定编号的漫画。无需认证，CORS全开。适合开发漫画阅读器、每日一笑功能。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://xkcd.com/info.0.json",
-    "baseUrl": "https://xkcd.com",
-    "params": [
-      {
-        "name": "num",
-        "type": "number",
-        "required": false,
-        "description": "漫画编号(路径参数)",
-        "example": "614"
-      }
-    ],
-    "responseExample": {
-      "num": 614,
-      "title": "Woodpecker",
-      "img": "https://imgs.xkcd.com/comics/woodpecker.png",
-      "alt": "..."
-    },
-    "docUrl": "https://xkcd.com/json.html",
-    "status": "active",
-    "tags": [
-      "漫画",
-      "xkcd",
-      "幽默",
-      "科技"
     ]
   },
   {
@@ -3534,48 +3551,220 @@
     ]
   },
   {
-    "id": "api-zipcode",
-    "name": "Zippopotam.us",
-    "description": "全球邮编查询API",
-    "fullDescription": "根据国家代码和邮政编码查询地理位置信息的API。返回对应邮编的城市、州/省、经纬度坐标和时区信息。支持全球多国查询，无需认证。适合开发地址自动补全、邮编查询等应用。",
-    "category": "data",
+    "id": "bored-api",
+    "name": "Bored API",
+    "description": "随机活动推荐，打败无聊",
+    "fullDescription": "免费随机活动推荐API，返回各种可以做的活动，包括活动类型、参与人数、价格、可及性等信息。支持按类型、参与人数等筛选。适合做随机活动推荐、决策辅助等小工具。",
+    "category": "tool",
     "method": "GET",
-    "url": "https://api.zippopotam.us/us/90210",
-    "baseUrl": "https://api.zippopotam.us",
+    "url": "https://bored-api.appbrewery.com/random",
+    "baseUrl": "https://bored-api.appbrewery.com",
+    "params": [],
+    "responseExample": {
+      "activity": "Learn a new programming language",
+      "type": "education",
+      "participants": 1,
+      "price": 0
+    },
+    "docUrl": "https://bored-api.appbrewery.com/",
+    "status": "active",
+    "tags": [
+      "随机",
+      "活动",
+      "推荐",
+      "无聊"
+    ],
+    "note": "完全免费无需认证"
+  },
+  {
+    "id": "whodat-whois",
+    "name": "WhoDat WHOIS",
+    "description": "域名WHOIS查询，支持CORS",
+    "fullDescription": "免费开源的WHOIS/RDAP查询API，支持CORS跨域访问，无需认证。可查询域名的注册信息、注册商、注册时间、到期时间等。基于Go语言构建，可自行部署。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://who-dat.as93.net/example.com",
+    "baseUrl": "https://who-dat.as93.net",
     "params": [
       {
-        "name": "country",
+        "name": "domain",
         "type": "string",
         "required": true,
-        "description": "国家代码(路径参数)",
-        "example": "us"
-      },
+        "description": "要查询的域名",
+        "example": "example.com"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://github.com/mybot102/who-dat",
+    "status": "active",
+    "tags": [
+      "WHOIS",
+      "域名",
+      "查询",
+      "RDAP"
+    ],
+    "note": "开源可自部署"
+  },
+  {
+    "id": "dog-api-kinduff",
+    "name": "Dog API (kinduff)",
+    "description": "随机狗狗知识和图片",
+    "fullDescription": "免费狗狗API，提供随机狗狗事实知识和图片。无需认证，支持CORS。适合做宠物类小工具、随机狗狗图片展示。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://dog-api.kinduff.com/api/facts",
+    "baseUrl": "https://dog-api.kinduff.com/api",
+    "params": [
       {
-        "name": "postcode",
-        "type": "string",
-        "required": true,
-        "description": "邮编(路径参数)",
-        "example": "90210"
+        "name": "number",
+        "type": "number",
+        "required": false,
+        "description": "返回的事实条数",
+        "example": "3"
       }
     ],
     "responseExample": {
-      "post code": "90210",
-      "country": "United States",
-      "places": [
-        {
-          "place name": "Beverly Hills",
-          "latitude": "34.0901",
-          "longitude": "-118.4065"
-        }
-      ]
+      "facts": [
+        "Dogs can understand up to 250 words and gestures."
+      ],
+      "success": true
     },
-    "docUrl": "https://www.zippopotam.us/",
+    "docUrl": "https://github.com/kinduff/dog-api",
     "status": "active",
     "tags": [
-      "邮编",
-      "地址",
-      "地理位置",
-      "查询"
+      "狗",
+      "知识",
+      "随机",
+      "宠物"
+    ],
+    "note": ""
+  },
+  {
+    "id": "shields-io",
+    "name": "Shields.io",
+    "description": "SVG徽章生成API，适用于README和文档",
+    "fullDescription": "生成SVG格式徽章的在线API，广泛用于GitHub README、文档和网站中。支持自定义文字、颜色、样式、logo等参数。可生成版本号、构建状态、下载量等各种类型的徽章。无需认证，URL即徽章。非常适合开源项目、技术文档等场景。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://img.shields.io/badge/test-passing-brightgreen",
+    "baseUrl": "https://img.shields.io",
+    "params": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": false,
+        "description": "左侧文字",
+        "example": "build"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "右侧文字",
+        "example": "passing"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "required": false,
+        "description": "颜色",
+        "example": "brightgreen|green|yellow|orange|red"
+      }
+    ],
+    "responseExample": "(返回SVG图片)",
+    "docUrl": "https://shields.io/",
+    "status": "active",
+    "tags": [
+      "徽章",
+      "SVG",
+      "GitHub",
+      "README",
+      "开源"
+    ]
+  },
+  {
+    "id": "http-cat",
+    "name": "HTTP Cat",
+    "description": "HTTP状态码猫咪图，每个状态码对应一只猫",
+    "fullDescription": "为每个HTTP状态码提供一张对应的猫咪图片。输入状态码(如200、404、500)，返回一张与该状态码相关的猫咪图片。非常适合开发HTTP错误页面、API状态展示等应用。无需认证，CORS全开。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://http.cat/200",
+    "baseUrl": "https://http.cat",
+    "params": [
+      {
+        "name": "status_code",
+        "type": "number",
+        "required": true,
+        "description": "HTTP状态码(路径参数)",
+        "example": "200|404|500|418"
+      }
+    ],
+    "responseExample": "(返回猫咪图片)",
+    "docUrl": "https://http.cat/",
+    "status": "active",
+    "tags": [
+      "HTTP",
+      "猫咪",
+      "状态码",
+      "错误页面"
+    ]
+  },
+  {
+    "id": "colormind",
+    "name": "Colormind",
+    "description": "AI配色方案生成API",
+    "fullDescription": "基于深度学习的配色方案生成API，可以生成和谐的颜色搭配方案。支持从空白生成、基于某个颜色生成、或从图片提取配色。无需认证，返回JSON格式的颜色数组。非常适合设计工具、UI开发辅助等应用。POST请求体为JSON格式。",
+    "category": "tool",
+    "method": "POST",
+    "url": "https://colormind.io/api/",
+    "baseUrl": "https://colormind.io/api",
+    "params": [
+      {
+        "name": "model",
+        "type": "string",
+        "required": false,
+        "description": "配色模型",
+        "example": "default|ui|vivid"
+      }
+    ],
+    "responseExample": {
+      "result": [
+        [
+          44,
+          62,
+          80
+        ],
+        [
+          52,
+          152,
+          219
+        ],
+        [
+          155,
+          89,
+          182
+        ],
+        [
+          236,
+          240,
+          241
+        ],
+        [
+          241,
+          196,
+          15
+        ]
+      ]
+    },
+    "docUrl": "http://colormind.io/api-access/",
+    "status": "active",
+    "tags": [
+      "配色",
+      "设计",
+      "AI",
+      "颜色",
+      "UI"
     ]
   }
 ]
