@@ -733,54 +733,6 @@
     ]
   },
   {
-    "id": "agify-io",
-    "name": "Agify.io",
-    "description": "根据名字预测年龄的趣味API",
-    "fullDescription": "根据给定的名字预测年龄的机器学习API服务。基于大量真实姓名-年龄数据训练，对不同国家和地区的名字有不同的预测模型。支持批量查询，可同时预测多个名字。虽然是预测性质，但在很多场景下能给出合理的结果，适合个性化推荐、用户画像等应用。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.agify.io/?name=michael&country_id=US",
-    "baseUrl": "https://api.agify.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "要预测的名字",
-        "example": "michael|emma|liwei"
-      },
-      {
-        "name": "country_id",
-        "type": "string",
-        "required": false,
-        "description": "国家代码（提高准确性）",
-        "example": "US|CN|GB|JP"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "name": "michael",
-      "age": 42,
-      "count": 123456,
-      "country_id": "US"
-    },
-    "docUrl": "https://agify.io/",
-    "status": "unstable",
-    "tags": [
-      "年龄预测",
-      "名字",
-      "机器学习",
-      "用户画像",
-      "趣味"
-    ]
-  },
-  {
     "id": "exchangerate-api",
     "name": "ExchangeRate-API",
     "description": "实时汇率数据",
@@ -893,107 +845,6 @@
       "饮品"
     ],
     "note": "免费开发版有调用频率限制"
-  },
-  {
-    "id": "nationalize-io",
-    "name": "Nationalize.io",
-    "description": "根据名字预测国籍的API",
-    "fullDescription": "根据人名预测其最可能的国籍归属。基于姓氏和名字的分布统计数据，返回概率排名前几的国家及其概率值。可以帮助了解一个名字在不同国家的常见程度，适用于国际化应用的本地化推荐、用户研究等场景。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.nationalize.io/?name=zhang&count=5",
-    "baseUrl": "https://api.nationalize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "要分析的名字",
-        "example": "zhang|smith|tanaka"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回国家数量",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "name": "zhang",
-      "country": [
-        {
-          "country_id": "CN",
-          "probability": 0.92
-        },
-        {
-          "country_id": "SG",
-          "probability": 0.03
-        },
-        {
-          "country_id": "MY",
-          "probability": 0.02
-        }
-      ]
-    },
-    "docUrl": "https://nationalize.io/",
-    "status": "unstable",
-    "tags": [
-      "国籍预测",
-      "名字",
-      "国际化",
-      "统计",
-      "分布"
-    ]
-  },
-  {
-    "id": "genderize-io",
-    "name": "Genderize.io",
-    "description": "根据名字推测性别的API",
-    "fullDescription": "根据人名推测性别的统计API服务。基于海量真实姓名-性别数据分析，返回概率值而非绝对结论。支持不同国家的数据差异，因为同一名字在不同文化背景下可能倾向不同性别。可与Agify.io配合使用完善用户基本信息。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.genderize.io/?name=james&country_id=US",
-    "baseUrl": "https://api.genderize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "要分析的名字",
-        "example": "james|mary|xiaoming"
-      },
-      {
-        "name": "country_id",
-        "type": "string",
-        "required": false,
-        "description": "国家代码",
-        "example": "US|CN|GB"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "返回数量",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "name": "james",
-      "gender": "male",
-      "probability": 0.99,
-      "count": 987654,
-      "country_id": "US"
-    },
-    "docUrl": "https://genderize.io/",
-    "status": "unstable",
-    "tags": [
-      "性别推测",
-      "名字",
-      "统计分析",
-      "概率",
-      "用户画像"
-    ]
   },
   {
     "id": "free-dictionary",
@@ -3004,39 +2855,6 @@
     ]
   },
   {
-    "id": "xkcd-api",
-    "name": "xkcd",
-    "description": "XKCD漫画数据API",
-    "fullDescription": "获取XKCD网络漫画的元数据，包括标题、图片URL、Alt文本等。可获取最新一期或指定编号的漫画。无需认证，CORS全开。适合开发漫画阅读器、每日一笑功能。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://xkcd.com/info.0.json",
-    "baseUrl": "https://xkcd.com",
-    "params": [
-      {
-        "name": "num",
-        "type": "number",
-        "required": false,
-        "description": "漫画编号(路径参数)",
-        "example": "614"
-      }
-    ],
-    "responseExample": {
-      "num": 614,
-      "title": "Woodpecker",
-      "img": "https://imgs.xkcd.com/comics/woodpecker.png",
-      "alt": "..."
-    },
-    "docUrl": "https://xkcd.com/json.html",
-    "status": "active",
-    "tags": [
-      "漫画",
-      "xkcd",
-      "幽默",
-      "科技"
-    ]
-  },
-  {
     "id": "mapty-geocode",
     "name": "Open-Meteo Geocoding",
     "description": "免费地理编码API，城市名转经纬度",
@@ -3087,79 +2905,6 @@
       "城市搜索",
       "位置"
     ]
-  },
-  {
-    "id": "rest-countries",
-    "name": "REST Countries",
-    "description": "国家信息查询API，覆盖全球250+国家",
-    "fullDescription": "查询全球250+个国家的详细信息，包括国旗、人口、面积、首都、货币、语言、时区、边界等。支持按名称、代码、地区、语言等筛选。无需认证，CORS全开，非常适合开发国家百科、世界地图等应用。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://restcountries.com/v3.1/name/china?fields=name,capital,population,region,flags",
-    "baseUrl": "https://restcountries.com/v3.1",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "国家名(路径参数)",
-        "example": "china"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "返回字段",
-        "example": "name,capital,population"
-      }
-    ],
-    "responseExample": [
-      {
-        "name": {
-          "common": "China"
-        },
-        "capital": [
-          "Beijing"
-        ],
-        "population": 1402112000,
-        "region": "Asia"
-      }
-    ],
-    "docUrl": "https://restcountries.com/",
-    "status": "active",
-    "tags": [
-      "国家",
-      "地理",
-      "人口",
-      "货币",
-      "国旗"
-    ]
-  },
-  {
-    "id": "bored-api",
-    "name": "Bored API",
-    "description": "随机活动推荐，打败无聊",
-    "fullDescription": "免费随机活动推荐API，返回各种可以做的活动，包括活动类型、参与人数、价格、可及性等信息。支持按类型、参与人数等筛选。适合做随机活动推荐、决策辅助等小工具。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://bored-api.appbrewery.com/random",
-    "baseUrl": "https://bored-api.appbrewery.com",
-    "params": [],
-    "responseExample": {
-      "activity": "Learn a new programming language",
-      "type": "education",
-      "participants": 1,
-      "price": 0
-    },
-    "docUrl": "https://bored-api.appbrewery.com/",
-    "status": "active",
-    "tags": [
-      "随机",
-      "活动",
-      "推荐",
-      "无聊"
-    ],
-    "note": "完全免费无需认证"
   },
   {
     "id": "whodat-whois",
@@ -3231,91 +2976,6 @@
       "GitHub",
       "README",
       "开源"
-    ]
-  },
-  {
-    "id": "http-cat",
-    "name": "HTTP Cat",
-    "description": "HTTP状态码猫咪图，每个状态码对应一只猫",
-    "fullDescription": "为每个HTTP状态码提供一张对应的猫咪图片。输入状态码(如200、404、500)，返回一张与该状态码相关的猫咪图片。非常适合开发HTTP错误页面、API状态展示等应用。无需认证，CORS全开。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://http.cat/200",
-    "baseUrl": "https://http.cat",
-    "params": [
-      {
-        "name": "status_code",
-        "type": "number",
-        "required": true,
-        "description": "HTTP状态码(路径参数)",
-        "example": "200|404|500|418"
-      }
-    ],
-    "responseExample": "(返回猫咪图片)",
-    "docUrl": "https://http.cat/",
-    "status": "active",
-    "tags": [
-      "HTTP",
-      "猫咪",
-      "状态码",
-      "错误页面"
-    ]
-  },
-  {
-    "id": "colormind",
-    "name": "Colormind",
-    "description": "AI配色方案生成API",
-    "fullDescription": "基于深度学习的配色方案生成API，可以生成和谐的颜色搭配方案。支持从空白生成、基于某个颜色生成、或从图片提取配色。无需认证，返回JSON格式的颜色数组。非常适合设计工具、UI开发辅助等应用。POST请求体为JSON格式。",
-    "category": "tool",
-    "method": "POST",
-    "url": "https://colormind.io/api/",
-    "baseUrl": "https://colormind.io/api",
-    "params": [
-      {
-        "name": "model",
-        "type": "string",
-        "required": false,
-        "description": "配色模型",
-        "example": "default|ui|vivid"
-      }
-    ],
-    "responseExample": {
-      "result": [
-        [
-          44,
-          62,
-          80
-        ],
-        [
-          52,
-          152,
-          219
-        ],
-        [
-          155,
-          89,
-          182
-        ],
-        [
-          236,
-          240,
-          241
-        ],
-        [
-          241,
-          196,
-          15
-        ]
-      ]
-    },
-    "docUrl": "http://colormind.io/api-access/",
-    "status": "active",
-    "tags": [
-      "配色",
-      "设计",
-      "AI",
-      "颜色",
-      "UI"
     ]
   },
   {
@@ -3397,29 +3057,6 @@
     ]
   },
   {
-    "id": "affirmations-dev",
-    "name": "Affirmations.dev",
-    "description": "随机正向肯定语句生成API",
-    "fullDescription": "提供随机的正向肯定语句（affirmations），每次请求返回一条鼓励性的英文肯定语句。极简API，无参数，返回纯文本。非常适合开发每日鼓励、正能量卡片、个人成长应用等。CORS全开，免费使用。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://www.affirmations.dev/",
-    "baseUrl": "https://www.affirmations.dev",
-    "params": [],
-    "responseExample": {
-      "affirmation": "You have the power to create change."
-    },
-    "docUrl": "https://www.affirmations.dev/",
-    "status": "active",
-    "tags": [
-      "正能量",
-      "鼓励",
-      "心理学",
-      "每日一句",
-      "励志"
-    ]
-  },
-  {
     "id": "hp-characters",
     "name": "HP API",
     "description": "哈利波特角色数据API",
@@ -3447,49 +3084,6 @@
       "魔法",
       "影视",
       "学院"
-    ]
-  },
-  {
-    "id": "evil-insult",
-    "name": "Evil Insult",
-    "description": "随机生成（幽默）侮辱语句API",
-    "fullDescription": "提供随机生成的幽默侮辱语句（evil insults），纯娱乐用途。支持多语言（英文、中文等），可按语言筛选。返回JSON格式，包含侮辱语句和语言信息。非常适合开发娱乐应用、聊天机器人互动等。CORS全开。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://evilinsult.com/generate_insult.php?lang=en&type=json",
-    "baseUrl": "https://evilinsult.com",
-    "params": [
-      {
-        "name": "lang",
-        "type": "string",
-        "required": false,
-        "description": "语言：en, zh, es, fr, de等",
-        "example": "en"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "required": true,
-        "description": "返回格式：json或text",
-        "example": "json"
-      }
-    ],
-    "responseExample": {
-      "number": "123",
-      "language": "en",
-      "insult": "You're the reason the gene pool needs a lifeguard.",
-      "created": "2020-01-01",
-      "shown": 1000,
-      "createdby": "Someone"
-    },
-    "docUrl": "https://evilinsult.com/",
-    "status": "active",
-    "tags": [
-      "幽默",
-      "娱乐",
-      "笑话",
-      "聊天",
-      "多语言"
     ]
   },
   {
@@ -3603,88 +3197,6 @@
       "网络",
       "查询",
       "工具"
-    ]
-  },
-  {
-    "id": "zenquotes",
-    "name": "ZenQuotes",
-    "description": "随机获取励志名言和哲学语录API",
-    "fullDescription": "提供大量精选的励志名言、哲学语录和智慧格言，支持随机获取、按作者搜索、按标签浏览等功能。每条语录包含原文、作者和HTML格式化版本。数据质量高，适合用于每日一言、灵感展示、名言展示类应用。无需注册即可使用，中国大陆访问稳定。",
-    "category": "other",
-    "method": "GET",
-    "url": "https://zenquotes.io/api/quotes/random",
-    "baseUrl": "https://zenquotes.io/api",
-    "params": [
-      {
-        "name": "page",
-        "type": "number",
-        "required": false,
-        "description": "分页页码（用于非随机模式）",
-        "example": "1"
-      }
-    ],
-    "responseExample": [
-      {
-        "q": "Those who are possessed by nothing possess everything.",
-        "a": "Morihei Ueshiba",
-        "c": 54
-      }
-    ],
-    "docUrl": "https://zenquotes.io/",
-    "status": "active",
-    "tags": [
-      "名言",
-      "语录",
-      "励志",
-      "哲学",
-      "随机"
-    ]
-  },
-  {
-    "id": "lipsum",
-    "name": "Lorem Ipsum Generator",
-    "description": "生成占位文本（Lorem Ipsum）的API",
-    "fullDescription": "经典的Lorem Ipsum占位文本生成器，可自定义生成段落数量、句子数量、单词数量等参数。支持JSON格式输出，方便前端直接解析使用。非常适合页面原型设计、排版测试、表单填充等场景。历史悠久的服务，稳定可靠，无需任何认证。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://lipsum.com/feed/json?amount=2&what=paras&start=0",
-    "baseUrl": "https://lipsum.com",
-    "params": [
-      {
-        "name": "amount",
-        "type": "number",
-        "required": false,
-        "description": "生成数量",
-        "example": "3"
-      },
-      {
-        "name": "what",
-        "type": "string",
-        "required": false,
-        "description": "生成类型：paras(段落)/sentences(句子)/words(单词)",
-        "example": "paras"
-      },
-      {
-        "name": "start",
-        "type": "number",
-        "required": false,
-        "description": "起始位置（0表示从头开始）",
-        "example": "0"
-      }
-    ],
-    "responseExample": {
-      "feed": {
-        "lipsum": "Morbi sapien purus..."
-      },
-      "generated": "Generated 2 paragraphs, 150 words"
-    },
-    "docUrl": "https://lipsum.com/",
-    "status": "active",
-    "tags": [
-      "占位文本",
-      "Lorem Ipsum",
-      "文本生成",
-      "原型设计"
     ]
   },
   {
@@ -3839,97 +3351,6 @@
     ]
   },
   {
-    "id": "official-joke-api",
-    "name": "Official Joke API",
-    "description": "随机获取各类笑话的经典API",
-    "fullDescription": "经典的开源笑话API，提供编程、普通、 knock-knock 等多种类型的笑话。每条笑话包含类型标识（setup/punchline格式或单行格式）、唯一ID等结构化数据。数据量丰富，分类清晰，特别以编程笑话著称，在开发者社区广受欢迎。部署在Google App Engine上，稳定性高，无需任何形式的认证。",
-    "category": "entertainment",
-    "method": "GET",
-    "url": "https://official-joke-api.appspot.com/random_joke",
-    "baseUrl": "https://official-joke-api.appspot.com",
-    "params": [
-      {
-        "name": "endpoint",
-        "type": "string",
-        "required": false,
-        "description": "端点：random_joke/jokes/ten(随机10条)/jokes/random_ten(随机10条)/types(类型列表)",
-        "example": "random_joke"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "required": false,
-        "description": "笑话类型：general/programming/knock-knock等",
-        "example": "programming"
-      }
-    ],
-    "responseExample": {
-      "type": "general",
-      "setup": "What is the difference between ignorance and apathy?",
-      "punchline": "I don't know and I don't care.",
-      "id": 249
-    },
-    "docUrl": "https://official-joke-api.appspot.com/",
-    "status": "active",
-    "tags": [
-      "笑话",
-      "幽默",
-      "编程笑话",
-      "随机",
-      "娱乐"
-    ]
-  },
-  {
-    "id": "spacex-api",
-    "name": "SpaceX API",
-    "description": "SpaceX火箭发射、火箭、飞船、发射场等全量数据API",
-    "fullDescription": "官方非正式的SpaceX数据API，提供完整的火箭发射历史、火箭详情、飞船信息、发射场数据、核心回收记录等。数据来自SpaceX公开信息，包含每次发射的详细信息（时间地点、载荷、成败、视频链接、船员名单等）。支持分页查询、按状态筛选。无需任何认证，数据更新及时，是航天爱好者和数据分析项目的理想免费数据源。",
-    "category": "science",
-    "method": "GET",
-    "url": "https://api.spacexdata.com/v4/launches/latest",
-    "baseUrl": "https://api.spacexdata.com/v4",
-    "params": [
-      {
-        "name": "limit",
-        "type": "number",
-        "required": false,
-        "description": "返回数量限制",
-        "example": "10"
-      },
-      {
-        "name": "offset",
-        "type": "number",
-        "required": false,
-        "description": "分页偏移量",
-        "example": "0"
-      },
-      {
-        "name": "upcoming",
-        "type": "boolean",
-        "required": false,
-        "description": "是否只返回即将发射的任务",
-        "example": "true"
-      }
-    ],
-    "responseExample": {
-      "fairings": null,
-      "name": "Crew-5",
-      "date_utc": "2022-10-05T16:00:00.000Z",
-      "success": true,
-      "flight_number": 187,
-      "rocket": "5e9d0d95eda69973a809d1ec"
-    },
-    "docUrl": "https://docs.spacexdata.com/",
-    "status": "active",
-    "tags": [
-      "SpaceX",
-      "航天",
-      "火箭",
-      "发射",
-      "数据"
-    ]
-  },
-  {
     "id": "nasa-apod",
     "name": "NASA Astronomy Picture of the Day",
     "description": "NASA每日天文图片(APOD)API，附带科普说明",
@@ -3986,5 +3407,40 @@
       "宇宙",
       "科普"
     ]
+  },
+  {
+    "id": "jsonplaceholder",
+    "name": "JSONPlaceholder",
+    "description": "免费假REST API，用于测试和原型开发",
+    "fullDescription": "经典的免费假REST API，提供Posts、Comments、Albums、Photos、Todos、Users等资源，支持完整的CRUD操作（GET/POST/PUT/DELETE）。无需认证，无速率限制，CORS全开，非常适合前端开发者学习API调用、测试框架集成、原型设计等场景。数据固定但真实感强，是开发者社区最常用的测试API之一。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts/1",
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "params": [
+      {
+        "name": "id",
+        "type": "number",
+        "required": false,
+        "description": "资源ID",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "userId": 1,
+      "id": 1,
+      "title": "sunt aut facere repellat provident",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    "docUrl": "https://jsonplaceholder.typicode.com/",
+    "status": "active",
+    "tags": [
+      "测试",
+      "REST",
+      "CRUD",
+      "原型",
+      "假数据"
+    ],
+    "note": "无速率限制，支持GET/POST/PUT/DELETE"
   }
 ]
