@@ -3200,46 +3200,6 @@
     ]
   },
   {
-    "id": "hackernews-firebase",
-    "name": "Hacker News Firebase API",
-    "description": "Hacker News热门科技新闻数据接口",
-    "fullDescription": "基于Firebase实时数据库的Hacker News官方数据API，提供热门故事、最新故事、最佳故事、用户资料等完整数据。返回故事ID列表后可通过ID获取详情（标题、URL、分数、评论数等）。Y Combinator官方维护，数据更新及时，是获取硅谷科技圈动态的最佳免费数据源。无需API Key，支持CORS跨域访问。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
-    "baseUrl": "https://hacker-news.firebaseio.com/v0",
-    "params": [
-      {
-        "name": "endpoint",
-        "type": "string",
-        "required": false,
-        "description": "数据端点：topstories/newstories/beststories/askstories/showstories/jobstories",
-        "example": "topstories"
-      },
-      {
-        "name": "id",
-        "type": "string",
-        "required": false,
-        "description": "故事ID（获取详情时使用）",
-        "example": "12345678"
-      }
-    ],
-    "responseExample": [
-      48458890,
-      48457830,
-      48459294
-    ],
-    "docUrl": "https://github.com/HackerNews/API",
-    "status": "active",
-    "tags": [
-      "Hacker News",
-      "科技新闻",
-      "Y Combinator",
-      "Firebase",
-      "热门"
-    ]
-  },
-  {
     "id": "thedogapi",
     "name": "The Dog API",
     "description": "狗狗图片和品种信息的免费API",
@@ -3351,64 +3311,6 @@
     ]
   },
   {
-    "id": "nasa-apod",
-    "name": "NASA Astronomy Picture of the Day",
-    "description": "NASA每日天文图片(APOD)API，附带科普说明",
-    "fullDescription": "NASA提供的每日天文特色图片服务，每天更新一张令人叹为观止的宇宙图片或摄影作品，配有专业天文科普文字说明。内容涵盖星云、星系、行星、太空任务、天文现象等。返回高清图片URL、标题、详细解释文字、版权信息等。使用DEMO_KEY即可免费调用（无需注册），是天文爱好者、科普应用、每日壁纸类项目的绝佳数据源。",
-    "category": "science",
-    "method": "GET",
-    "url": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
-    "baseUrl": "https://api.nasa.gov",
-    "params": [
-      {
-        "name": "api_key",
-        "type": "string",
-        "required": false,
-        "description": "API Key（使用DEMO_KEY即可免费调用）",
-        "example": "DEMO_KEY"
-      },
-      {
-        "name": "date",
-        "type": "string",
-        "required": false,
-        "description": "指定日期YYYY-MM-DD（不填则返回今日）",
-        "example": "2024-06-12"
-      },
-      {
-        "name": "hdurl",
-        "type": "boolean",
-        "required": false,
-        "description": "是否返回高清图片URL",
-        "example": "true"
-      },
-      {
-        "name": "count",
-        "type": "number",
-        "required": false,
-        "description": "随机返回指定数量的历史图片",
-        "example": "5"
-      }
-    ],
-    "responseExample": {
-      "date": "2025-06-22",
-      "title": "A Berry Bowl of Martian Spherules",
-      "explanation": "How were these unusual Martian spherules created?...",
-      "url": "https://apod.nasa.gov/apod/image/...",
-      "media_type": "image",
-      "hdurl": "https://apod.nasa.gov/apod/image/..."
-    },
-    "docUrl": "https://api.nasa.gov/#apod",
-    "status": "active",
-    "tags": [
-      "NASA",
-      "天文",
-      "每日图片",
-      "APOD",
-      "宇宙",
-      "科普"
-    ]
-  },
-  {
     "id": "jsonplaceholder",
     "name": "JSONPlaceholder",
     "description": "免费假REST API，用于测试和原型开发",
@@ -3442,5 +3344,145 @@
       "假数据"
     ],
     "note": "无速率限制，支持GET/POST/PUT/DELETE"
+  },
+  {
+    "id": "agify",
+    "name": "Agify API",
+    "description": "根据姓名预测年龄，无需API Key",
+    "fullDescription": "Agify是一个根据人名预测年龄的趣味API。输入英文名字，返回统计该名字的全球平均年龄、样本数量和预测年龄。数据基于公开社会数据统计，无需认证，CORS全开，非常适合作为前端交互Demo的演示数据源。结合Genderize和Nationalize可做人口统计趣味分析。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.agify.io?name=John",
+    "baseUrl": "https://api.agify.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "英文名字",
+        "example": "John"
+      }
+    ],
+    "responseExample": {
+      "name": "John",
+      "age": 38,
+      "count": 452510
+    },
+    "docUrl": "https://agify.io/",
+    "status": "active",
+    "tags": [
+      "年龄预测",
+      "人名",
+      "统计",
+      "趣味",
+      "人口"
+    ],
+    "note": ""
+  },
+  {
+    "id": "genderize",
+    "name": "Genderize API",
+    "description": "根据姓名预测性别，支持多语言",
+    "fullDescription": "Genderize是一个根据人名预测性别的数据API。输入英文名字，返回统计该名字被认定为男性或女性的概率百分比。数据基于全球社交网络数据统计，样本量大，准确率高。无需认证，CORS全开，响应速度快。适合应用在用户资料自动填充、数据分析、趣味统计等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.genderize.io?name=John",
+    "baseUrl": "https://api.genderize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "英文名字",
+        "example": "John"
+      }
+    ],
+    "responseExample": {
+      "name": "John",
+      "gender": "male",
+      "probability": 0.99,
+      "count": 1016630
+    },
+    "docUrl": "https://genderize.io/",
+    "status": "active",
+    "tags": [
+      "性别预测",
+      "人名",
+      "统计",
+      "概率",
+      "趣味"
+    ],
+    "note": ""
+  },
+  {
+    "id": "nationalize",
+    "name": "Nationalize API",
+    "description": "根据姓名预测国籍来源",
+    "fullDescription": "Nationalize是一个根据人名预测国籍的API。输入英文名字，返回该名字最可能归属的国家及概率百分比。数据基于全球社交网络数据统计。无需认证，CORS全开。与Agify、Genderize出自同一开发者，三个API配合使用可做完整的人名统计趣味分析。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.nationalize.io?name=John",
+    "baseUrl": "https://api.nationalize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "英文名字",
+        "example": "John"
+      }
+    ],
+    "responseExample": {
+      "name": "John",
+      "country": [
+        {
+          "country_id": "US",
+          "probability": 0.083
+        }
+      ]
+    },
+    "docUrl": "https://nationalize.io/",
+    "status": "active",
+    "tags": [
+      "国籍预测",
+      "人名",
+      "统计",
+      "概率",
+      "趣味"
+    ],
+    "note": ""
+  },
+  {
+    "id": "dog-ceo",
+    "name": "Dog CEO API",
+    "description": "随机狗狗图片，按品种分类浏览",
+    "fullDescription": "经典的狗狗图片API，返回随机或指定品种的狗狗图片URL。支持按品种浏览（拉布拉多、哈士奇、柯基等数十种）、子品种查询、随机多头图片等功能。响应结构简单，是初学者学习fetch的首选API之一。无需认证，CORS全开，稳定性好。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://dog.ceo/api/breeds/image/random",
+    "baseUrl": "https://dog.ceo/api",
+    "params": [
+      {
+        "name": "breed",
+        "type": "string",
+        "required": false,
+        "description": "品种名（路径参数）",
+        "example": "hound"
+      }
+    ],
+    "responseExample": {
+      "message": "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg",
+      "status": "success"
+    },
+    "docUrl": "https://dog.ceo/dog-api/",
+    "status": "active",
+    "tags": [
+      "狗狗",
+      "图片",
+      "品种",
+      "宠物",
+      "随机"
+    ],
+    "note": ""
   }
 ]

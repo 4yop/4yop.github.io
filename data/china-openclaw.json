@@ -2446,5 +2446,149 @@
     "deployment": "开源项目，支持本地部署和云端运行",
     "features": "智源研究院推出的面向个人用户的专属智能体；采用全新自研架构，Token成本节省30%，资源占用降低80%；基于用户画像和Skill的自进化机制，可持续成长；2026年6月12日在第八届北京智源大会发布；与智源悟界系列大模型深度集成",
     "website": "https://www.baai.ac.cn/"
+  },
+  {
+    "name": "oh-my-coder",
+    "developer": "VOBC（开源社区）",
+    "releaseTime": "2026.04.04",
+    "deployment": "开源项目（MIT协议），Python环境，本地运行",
+    "features": "国产首个多Agent编程框架，支持DeepSeek/GLM/MiMo等12+国产大模型；31个专业Agent，开箱即用；自进化系统从实践中自动优化；零成本完全免费开源；本地处理数据不上传；支持GLM-4.7-Flash完全免费模型",
+    "website": "https://github.com/VOBC/oh-my-coder",
+    "id": 333
+  },
+  {
+    "name": "OpenPollen",
+    "developer": "tom-byte-sy（开源社区）",
+    "releaseTime": "2026.02.26",
+    "deployment": "开源项目（Apache 2.0），自托管部署，支持Docker",
+    "features": "基于Claude Agent SDK的多渠道AI Agent框架；原生接入钉钉/企业微信/飞书/QQ等国内主流IM平台；支持Claude/Kimi/GLM/Qwen/MiniMax/DeepSeek/OpenAI等模型；完全自托管数据不出服务器；持久记忆系统支持双后端；SKILL.md无代码技能扩展",
+    "website": "https://github.com/tom-byte-sy/OpenPollen",
+    "id": 334
+  },
+  {
+    "name": "CCode",
+    "developer": "1207575273（开源社区）",
+    "releaseTime": "2026.03.07",
+    "deployment": "开源项目，支持CLI终端和Web Dashboard双模式，Docker部署",
+    "features": "开源多模型AI编程CLI助手；支持GLM/Claude/DeepSeek/GPT/Gemini等模型一键切换；17个内置工具含子Agent派发；Skills系统兼容Claude Code Skill生态；Web Dashboard可视化AI Agent工作过程；上下文管理与Token计量；对话持久化与分支恢复",
+    "website": "https://github.com/1207575273/CCode",
+    "id": 335
+  },
+  {
+    "name": "AIBO",
+    "developer": "xiaoshuangLi（开源社区）",
+    "releaseTime": "2026.02.11",
+    "deployment": "开源项目，支持终端CLI和飞书机器人两种交互方式",
+    "features": "高级多智能体自主编程AI助手；内置15个专业Agent（协调者/架构师/编码者/测试者等）；45+内置技能；MCP工具集成与ACP协议支持；支持DeepSeek/Qwen/Claude/Gemini等模型；飞书企业集成与语音输入；CLI工具自动检测调用",
+    "website": "https://github.com/xiaoshuangLi/aibo",
+    "id": 336
+  },
+  {
+    "name": "NeoCode",
+    "developer": "1024XEngineer（开源社区）",
+    "releaseTime": "2026.03.16",
+    "deployment": "Go语言实现，MIT开源，支持CLI TUI/Web/飞书多入口",
+    "features": "本地优先的AI Coding Agent；Go语言高性能实现，内存占用低；支持OpenAI/Gemini/ModelScope等多模型Provider；会话持久化与记忆能力；Skills系统与MCP扩展；Gateway模式统一接口；飞书Adapter支持Webhook与SDK长连接；Local Runner无需开放入站端口",
+    "website": "https://github.com/1024XEngineer/neo-code",
+    "id": 337
+  },
+  {
+    "name": "Xcoder",
+    "developer": "YuanyuanMa03（开源社区）",
+    "releaseTime": "2026.06.04",
+    "deployment": "开源CLI工具，支持Docker Remote Control自托管",
+    "features": "多模型AI编程CLI工具，7家模型供应商支持；6种内置人格模式+自定义；语音输入与控制功能；内置Chrome Use浏览器自动化；Poor Mode省钱模式一键切换；代码问责强制diff审查；Docker Remote Control手机远程操控；基于CCB核心引擎二次开发",
+    "website": "https://github.com/YuanyuanMa03/xcoder",
+    "id": 338
+  },
+  {
+    "name": "SayaCode",
+    "developer": "saya-ch（开源社区）",
+    "releaseTime": "2026.04.30",
+    "deployment": "开源CLI工具，pip安装，基于LangChain/LangGraph生态",
+    "features": "面向真实仓库的终端AI编程助手；31个内置工具覆盖文件/Shell/Git/项目分析等；3种工作模式（build/plan/review）；9种人格风格（标准/简洁/傲娇/元气/猫娘等）；会话持久化与项目记忆；MCP扩展与Hook事件系统；三层权限策略与审计日志；多Agent协作与双语CLI",
+    "website": "https://github.com/saya-ch/sayacode",
+    "id": 339
+  },
+  {
+    "name": "CodeCraft",
+    "developer": "zb614433612（开源社区）",
+    "releaseTime": "2026.05.22",
+    "deployment": "Electron桌面应用（Windows/macOS/Linux），内置JRE+Node.js+H2数据库，下载即用",
+    "features": "DeepSeek驱动的AI编程Agent；自然语言驱动的终端编码助手；7大类19个工具覆盖文件/命令/网络/Git/Agent协作等；复杂任务智能拆解与多Agent并行执行（最多20个并发）；Electron桌面应用零配置；MIT开源协议",
+    "website": "https://github.com/zb614433612/CodeCraft",
+    "id": 340
+  },
+  {
+    "name": "KWCode",
+    "developer": "val1813/TI0IT（开源社区）",
+    "releaseTime": "2026.04.27",
+    "deployment": "pip安装，本地运行，支持Windows cmd/PowerShell原生",
+    "features": "中国开发者本地Coding Agent；专门为本地部署模型优化的编码窗口；数据不出网原生支持Windows；SearXNG自部署搜索增强；小模型专家流水线与运行时调试独有功能；AST调用图定位与多任务串并行；/plan风险评估与Checkpoint回滚；全中文交互",
+    "website": "https://github.com/val1813/kwcode",
+    "id": 341
+  },
+  {
+    "name": "ZhikunCode",
+    "developer": "zhikunqingtao（开源社区）",
+    "releaseTime": "2026.04.06",
+    "deployment": "Java实现，Docker一键部署，支持Web UI全流程操控",
+    "features": "Claude Code开源替代方案，多Agent AI编程助手；CLI与Web UI双入口，部署一次浏览器全流程操控；Team/Swarm/SubAgent三种多Agent协作模式；8层Bash沙箱深度安全架构；国产大模型直连（千问/DeepSeek/Moonshot）；90+命令与技能插件系统；持久记忆系统",
+    "website": "https://github.com/zhikunqingtao/zhikuncode",
+    "id": 342
+  },
+  {
+    "name": "OpenTaiji",
+    "developer": "xiejianjun000（开源社区）",
+    "releaseTime": "2026.04.17",
+    "deployment": "Python实现，开源项目，支持PYPI安装",
+    "features": "分布式多智能体协作引擎，基于Actor模型和太极哲学；融合Hermes Agent+harness+Taiji Verify；WFGY防幻觉系统独有技术；6个国产模型开箱即用（Qwen/GLM/Kimi/豆包等）；消息网关支持TG/Discord/企微/钉钉/飞书；Skills Hub技能市场与自我学习闭环；6种多智能体协同模式；MCP双向协议集成",
+    "website": "https://github.com/xiejianjun000/taiji-agent",
+    "id": 343
+  },
+  {
+    "name": "AgentGal",
+    "developer": "huccihuang（开源社区）",
+    "releaseTime": "2026.02.09",
+    "deployment": "开源项目，Python实现，支持本地模型部署",
+    "features": "LLM驱动的开放世界多Agent角色扮演/叙事游戏系统；自主生成角色赋予姓名/身份/性格/日常行动；开放世界式推进适合长期游玩；记忆与关系变化带来细微角色差异；支持DeepSeek等模型",
+    "website": "https://github.com/huccihuang/AgentGal",
+    "id": 344
+  },
+  {
+    "name": "Cody",
+    "developer": "CodyCodeAgent（开源社区）",
+    "releaseTime": "2026.01.27",
+    "deployment": "开源项目（MIT协议），pip安装，支持SDK/CLI/TUI/Web四种模式",
+    "features": "开源AI Coding Agent框架，30个工具（28 core+2 MCP）；Agent Skills开放标准兼容26+平台；MCP/LSP集成与子Agent编排；熔断器防止Token成本失控；跨任务记忆累加项目经验；支持Claude/GPT/Gemini/DeepSeek/GLM/Qwen等模型；死循环检测自动终止失控Agent",
+    "website": "https://github.com/CodyCodeAgent/cody",
+    "id": 345
+  },
+  {
+    "name": "Code Agent",
+    "developer": "myh-1302（开源社区）",
+    "releaseTime": "2026.04.23",
+    "deployment": "Python+Node.js部署，支持Flask+SocketIO后端和React前端",
+    "features": "Claude Code风格智能体工作台；多轮对话流式响应支持中途终止；工具调用卡片形式展示输入输出；文件树浏览与在线编辑自动备份；任务看板三列展示Agent状态；多Agent状态实时显示；安全快照手动创建和恢复；基于Anthropic Claude API",
+    "website": "https://github.com/myh-1302/code_agent",
+    "id": 346
+  },
+  {
+    "name": "DeepSeek-TUI",
+    "developer": "开源社区（Hmbown）",
+    "releaseTime": "2026.05.14",
+    "deployment": "开源项目（基于Codex CLI二次开发），Rust编写",
+    "features": "基于Codex CLI二次开发的终端AI编程Agent；后端调用DeepSeek V4 Flash/Pro双模型；能读代码库改文件跑命令自动调试管理Git；Sub-agents子代理与MCP/Skills支持；Seatbelt+Landlock+Windows Job Objects沙箱；中文UI与国内API直连；MIT开源协议",
+    "website": "https://github.com/Hmbown/DeepSeek-TUI",
+    "id": 347
+  },
+  {
+    "name": "Kimi CLI",
+    "developer": "月之暗面（Moonshot AI）",
+    "releaseTime": "2026.03",
+    "deployment": "pip安装，开源项目，支持本地运行",
+    "features": "月之暗面推出的终端AI编码助手，基于Kimi K2模型；Shell模式与Zsh深度集成；支持自然语言驱动代码生成、修改与调试；终端原生交互体验；GitHub 8.4K+ Stars",
+    "website": "https://github.com/MoonshotAI/kimi-cli",
+    "id": 348
   }
 ]

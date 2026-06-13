@@ -1561,6 +1561,20 @@
           "deepseek/deepseek-v4-flash"
         ]
       }
+    },
+    {
+      "name": "Inception AI（Inception Labs）",
+      "quota": "新用户注册赠送 1000万 tokens（无需信用卡）；支持 Mercury 2（128K上下文，最快推理LLM，支持工具调用和结构化输出）、Mercury Edit 2（代码编辑FIM/NextEdit）；输入$0.25/百万Tokens，输出$0.75/百万Tokens（缓存命中$0.025/百万Tokens）",
+      "cycle": "一次性注册赠送1000万tokens（用完为止）",
+      "url": "https://platform.inceptionlabs.ai",
+      "develop": {
+        "document_url": "https://docs.inceptionlabs.ai/get-started/models",
+        "base_url": "https://api.inceptionlabs.ai/v1",
+        "models": [
+          "mercury-2",
+          "mercury-edit-2"
+        ]
+      }
     }
   ],
   "lastUpdateTime": "2026-06-13T04:00:00.000Z"
