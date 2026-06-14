@@ -2590,5 +2590,77 @@
     "features": "月之暗面推出的终端AI编码助手，基于Kimi K2模型；Shell模式与Zsh深度集成；支持自然语言驱动代码生成、修改与调试；终端原生交互体验；GitHub 8.4K+ Stars",
     "website": "https://github.com/MoonshotAI/kimi-cli",
     "id": 348
+  },
+  {
+    "name": "酷开Happy Work AIOS",
+    "developer": "深圳市酷开网络科技股份有限公司",
+    "releaseTime": "2026.05.16",
+    "deployment": "企业私有化部署，AIOS Lite MVP版本",
+    "features": "全球首款原生AI企业操作系统；四大核心模块：企业智能体、岗位智能体、个人智能体、任务智能体协同运作；从操作系统底层重构企业运行逻辑；支持目标拆解、可追踪、可反馈的企业数字化运行体系；AI原生架构替代传统工具叠加",
+    "website": "https://www.coocaa.com/",
+    "id": 349
+  },
+  {
+    "name": "GraphoraX AI Agent",
+    "developer": "创邻科技",
+    "releaseTime": "2026.06",
+    "deployment": "企业私有化部署，基于Galaxybase图数据库",
+    "features": "图智能驱动的企业级AI中枢；将企业数据、流程、应用和知识建模为可调度网络；自然语言接口连接内部系统；自主拆解复杂任务、调度多Agent协作；优化业务流程形成企业级AI闭环；适配金融、海关等复杂政企业务",
+    "website": "http://www.galaxybase.com/",
+    "id": 350
+  },
+  {
+    "name": "花瓣地图Agent",
+    "developer": "华为终端",
+    "releaseTime": "2026.06.12",
+    "deployment": "HarmonyOS 7内置，华为设备预装",
+    "features": "华为HDC2026发布的AI地图Agent；智能语音交互'问问地图'功能；基于时空知识图谱整合空间、时间、场景三大维度信息；支持个性化行程规划与差异化游览路线；可充当景区随身讲解员；一句话搞定旅行规划",
+    "website": "https://consumer.huawei.com/cn/petalmaps/",
+    "id": 351
+  },
+  {
+    "name": "牛马AI",
+    "developer": "NewMax团队",
+    "releaseTime": "2026.06",
+    "deployment": "本地私有化部署，资料不上传云端",
+    "features": "AI人机协同基站；资料可成为AI知识来源构建私人智库；自动化任务编排，自动拆解步骤并调用本地工具执行；多模型自由切换（GPT、Gemini、Kimi、Minimax、Qwen、DeepSeek、智谱等）；Skill素材生成一键联通本地应用（剪映、PS、Figma）",
+    "website": "https://newmax.cc/",
+    "id": 352
+  },
+  {
+    "name": "Hermes Desktop",
+    "developer": "Nous Research",
+    "releaseTime": "2026.06.03",
+    "deployment": "桌面客户端一键安装（Windows/macOS/Linux），共享Hermes Agent配置",
+    "features": "Hermes Agent官方桌面客户端；零依赖安装，图形化Setup向导；内置Hermes WebUI聊天界面；支持多模型和多Provider；桌面端和命令行共享同一套环境；托盘运行、自动更新、文件拖拽等桌面增强；Free/Plus/Super/Ultra四档订阅",
+    "website": "https://hermes-agent.nousresearch.com/desktop",
+    "id": 353
+  },
+  {
+    "name": "ToDesk AI",
+    "developer": "海南有趣科技有限公司（ToDesk）",
+    "releaseTime": "2026.05",
+    "deployment": "云端托管，下载登录即用，无需本地部署和API Key配置",
+    "features": "原ToClaw AI更名升级版；基于OpenClaw深度优化集成远程控制技术；零门槛开箱即用，每日签到免费积分；AI过程可视化，跨设备协同；已接入微信生态，手机端下达指令电脑端执行；云端沙箱运行，支持远程任务闭环",
+    "website": "https://www.todesk.com/",
+    "id": 354
+  },
+  {
+    "name": "听蓝AI录音卡 (LanEcho)",
+    "developer": "中电蓝信",
+    "releaseTime": "2026.06.02",
+    "deployment": "硬件产品（2.88mm超薄骨传导录音卡），配合听蓝智能服务一体机（与曙光云联合）",
+    "features": "专为政企打造的AI录音硬件；骨传导通话录音，离线存储及智能纪要生成；数据全链路加密且不出域；配合听蓝智能服务一体机实现开箱即用软硬一体方案；2.88mm超薄设计",
+    "website": "https://www.lanxin.cn/",
+    "id": 355
+  },
+  {
+    "name": "为你做牛马",
+    "developer": "为你做牛马团队",
+    "releaseTime": "2026.06",
+    "deployment": "云端SaaS平台，Web端使用",
+    "features": "职业人专属AI助手平台；机器人市场、工作流、AI对话三合一；Playwright自动化替用户搬砖；钥匙串管理多平台API；面向职场白领的省心干活、高效摸鱼定位",
+    "website": "http://www.byyoo.cn:8084/",
+    "id": 356
   }
 ]
