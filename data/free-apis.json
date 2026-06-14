@@ -2658,59 +2658,6 @@
     ]
   },
   {
-    "id": "open-alex",
-    "name": "OpenAlex",
-    "description": "开放学术文献数据API",
-    "fullDescription": "免费开放的学术研究元数据API，包含超过2.5亿篇论文、作者、机构等数据。无需API Key即可使用基础端点。支持搜索、过滤、分页等功能。是替代Microsoft Academic的开放方案。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.openalex.org/works?filter=is_oa:true&per_page=3&select=id,title,display_name,publication_year",
-    "baseUrl": "https://api.openalex.org",
-    "params": [
-      {
-        "name": "filter",
-        "type": "string",
-        "required": false,
-        "description": "过滤条件",
-        "example": "is_oa:true"
-      },
-      {
-        "name": "per_page",
-        "type": "number",
-        "required": false,
-        "description": "每页数量",
-        "example": "3"
-      },
-      {
-        "name": "select",
-        "type": "string",
-        "required": false,
-        "description": "返回字段",
-        "example": "id,title"
-      }
-    ],
-    "responseExample": {
-      "meta": {
-        "count": 100
-      },
-      "results": [
-        {
-          "id": "W123",
-          "title": "Research paper title"
-        }
-      ]
-    },
-    "docUrl": "https://docs.openalex.org/",
-    "status": "active",
-    "tags": [
-      "学术",
-      "论文",
-      "开放获取",
-      "研究",
-      "文献"
-    ]
-  },
-  {
     "id": "spaceflight-news",
     "name": "Spaceflight News API",
     "description": "太空飞行新闻数据API",
@@ -3432,38 +3379,415 @@
     "note": ""
   },
   {
-    "id": "http-cats",
-    "name": "HTTP Cats",
-    "url": "https://http.cat/200",
-    "category": "图片",
-    "description": "HTTP状态码对应的猫咪图片"
-  },
-  {
     "id": "open-food-facts",
     "name": "Open Food Facts",
     "url": "https://world.openfoodfacts.org/api/v0/product/737628064502.json",
     "category": "数据",
-    "description": "全球食品产品数据查询"
-  },
-  {
-    "id": "open-topo-data",
-    "name": "Open Topo Data",
-    "url": "https://api.opentopodata.org/v1/srtm90m?locations=39.9,116.4",
-    "category": "数据",
-    "description": "根据经纬度查询海拔高度"
+    "method": "GET",
+    "description": "全球食品产品数据查询",
+    "status": "active"
   },
   {
     "id": "tvmaze",
     "name": "TVMaze",
     "url": "https://api.tvmaze.com/search/shows?q=house",
     "category": "娱乐",
-    "description": "电视剧信息查询"
+    "method": "GET",
+    "description": "电视剧信息查询",
+    "status": "active"
   },
   {
     "id": "gamerpower",
     "name": "Gamerpower",
     "url": "https://www.gamerpower.com/api/giveaways?platform=steam&type=loot&sort-by=popularity",
     "category": "娱乐",
-    "description": "免费游戏和Steam福利信息"
+    "method": "GET",
+    "description": "免费游戏和Steam福利信息",
+    "status": "active"
+  },
+  {
+    "id": "open-notify",
+    "name": "Open Notify 国际空间站",
+    "description": "实时获取国际空间站位置和宇航员信息",
+    "fullDescription": "Open Notify 提供的太空API，可查询国际空间站实时经纬度位置、当前在站宇航员名单。数据来自NASA实时追踪，适合天文爱好者。",
+    "category": "data",
+    "method": "GET",
+    "url": "http://api.open-notify.org/iss-now.json",
+    "baseUrl": "http://api.open-notify.org",
+    "params": [],
+    "responseExample": {
+      "iss_position": {
+        "latitude": "40.0",
+        "longitude": "-74.0"
+      },
+      "timestamp": 1680000000
+    },
+    "docUrl": "http://open-notify.org/",
+    "status": "active",
+    "tags": [
+      "太空",
+      "ISS",
+      "宇航员",
+      "科学"
+    ]
+  },
+  {
+    "id": "archive-org",
+    "name": "Internet Archive",
+    "description": "查询网页历史存档和数字图书馆资源",
+    "fullDescription": "Internet Archive 的 Wayback Machine API，可查询任意URL的历史存档记录。同时提供数字图书馆元数据查询，涵盖书籍、音视频、软件等海量资源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://archive.org/wayback/available?url=google.com",
+    "baseUrl": "https://archive.org/wayback",
+    "params": [],
+    "responseExample": {
+      "archived_snapshots": {
+        "closest": {
+          "url": "https://web.archive.org/web/.../google.com"
+        }
+      }
+    },
+    "docUrl": "https://archive.org/help/wayback_api.php",
+    "status": "active",
+    "tags": [
+      "存档",
+      "历史",
+      "图书馆"
+    ]
+  },
+  {
+    "id": "amiiboapi",
+    "name": "AmiiboAPI",
+    "description": "任天堂Amiibo数据库，含角色和系列信息",
+    "fullDescription": "AmiiboAPI 提供任天堂Amiibo手办的完整数据库，包含所有已发布Amiibo的名称、角色、系列、发布日期、图片等信息。支持按名称、系列等方式搜索。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.amiiboapi.com/api/amiibo/?name=mario",
+    "baseUrl": "https://www.amiiboapi.com/api",
+    "params": [],
+    "responseExample": {
+      "amiibo": [
+        {
+          "name": "Mario",
+          "character": "Mario",
+          "amiiboSeries": "Super Smash Bros."
+        }
+      ]
+    },
+    "docUrl": "https://amiiboapi.com/docs/",
+    "status": "active",
+    "tags": [
+      "任天堂",
+      "游戏",
+      "Amiibo"
+    ]
+  },
+  {
+    "id": "scryfall-mtg",
+    "name": "Scryfall MTG卡牌",
+    "description": "万智牌卡牌数据库，支持高级搜索",
+    "fullDescription": "Scryfall 是万智牌的权威卡牌搜索引擎，提供全部MTG卡牌的详细数据，包括卡图、规则文本、价格、系列信息等。支持复杂搜索语法。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.scryfall.com/cards/search?q=t:legendary+t:creature",
+    "baseUrl": "https://api.scryfall.com",
+    "params": [],
+    "responseExample": {
+      "data": [
+        {
+          "name": "Black Lotus",
+          "set_name": "Limited Edition Alpha"
+        }
+      ]
+    },
+    "docUrl": "https://scryfall.com/docs/api",
+    "status": "active",
+    "tags": [
+      "万智牌",
+      "卡牌",
+      "TCG"
+    ]
+  },
+  {
+    "id": "openlibrary",
+    "name": "Open Library 图书",
+    "description": "查询图书信息、作者、封面等数据",
+    "fullDescription": "Open Library 是 Internet Archive 旗下的开放图书数据库。提供图书搜索、ISBN查询、作者信息、封面图片等数据，非营利运营，数据全面。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://openlibrary.org/search.json?q=the+lord+of+the+rings&limit=3",
+    "baseUrl": "https://openlibrary.org",
+    "params": [],
+    "responseExample": {
+      "numFound": 100,
+      "docs": [
+        {
+          "title": "The Lord of the Rings",
+          "author_name": [
+            "J.R.R. Tolkien"
+          ]
+        }
+      ]
+    },
+    "docUrl": "https://openlibrary.org/dev/docs/api/search",
+    "status": "active",
+    "tags": [
+      "图书",
+      "阅读",
+      "图书馆"
+    ]
+  },
+  {
+    "id": "cheapshark",
+    "name": "CheapShark 游戏比价",
+    "description": "查询数字游戏在各平台的价格和折扣",
+    "fullDescription": "CheapShark 是一个数字游戏比价平台，API返回Steam、Epic、GOG等平台游戏的价格和折扣。支持按价格筛选、搜索游戏、查看历史最低价。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.cheapshark.com/api/1.0/deals?upperPrice=15&pageSize=5",
+    "baseUrl": "https://www.cheapshark.com/api/1.0",
+    "params": [],
+    "responseExample": [
+      {
+        "title": "Some Game",
+        "salePrice": "9.99",
+        "normalPrice": "59.99"
+      }
+    ],
+    "docUrl": "https://www.cheapshark.com/api",
+    "status": "active",
+    "tags": [
+      "游戏",
+      "折扣",
+      "比价"
+    ]
+  },
+  {
+    "id": "affirmations",
+    "name": "Affirmations 肯定语",
+    "description": "随机生成积极正面的肯定语句",
+    "fullDescription": "Affirmations.dev 是一个极简的肯定语API，每次请求返回一条随机积极语句。适合冥想应用、每日提醒、心理健康产品。纯JSON格式，响应速度极快。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.affirmations.dev/",
+    "baseUrl": "https://www.affirmations.dev",
+    "params": [],
+    "responseExample": {
+      "affirmation": "You are capable of amazing things."
+    },
+    "docUrl": "https://www.affirmations.dev/",
+    "status": "active",
+    "tags": [
+      "心理健康",
+      "励志",
+      "冥想"
+    ]
+  },
+  {
+    "id": "coinpaprika",
+    "name": "CoinPaprika",
+    "description": "加密货币市场数据和交易所信息",
+    "fullDescription": "CoinPaprika 提供全面的加密货币市场数据，包括所有主流币种的实时价格、市值、交易量、排名。数据覆盖数千种加密货币。基础端点无需API密钥。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.coinpaprika.com/v1/tickers",
+    "baseUrl": "https://api.coinpaprika.com/v1",
+    "params": [],
+    "responseExample": [
+      {
+        "id": "btc-bitcoin",
+        "name": "Bitcoin",
+        "symbol": "BTC"
+      }
+    ],
+    "docUrl": "https://api.coinpaprika.com/",
+    "status": "active",
+    "tags": [
+      "加密货币",
+      "比特币",
+      "金融"
+    ]
+  },
+  {
+    "id": "spacex-api",
+    "name": "SpaceX API",
+    "description": "SpaceX发射历史、火箭和飞船数据",
+    "fullDescription": "非官方SpaceX API，提供所有SpaceX发射记录、火箭型号、龙飞船、星链卫星等详细数据。RESTful设计，JSON格式，数据齐全，天文爱好者首选。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.spacexdata.com/v5/launches/latest",
+    "baseUrl": "https://api.spacexdata.com/v5",
+    "params": [],
+    "responseExample": {
+      "name": "Starlink 6-1",
+      "date_utc": "2024-02-01T00:00:00Z",
+      "success": true
+    },
+    "docUrl": "https://github.com/r-spacex/SpaceX-API",
+    "status": "active",
+    "tags": [
+      "SpaceX",
+      "火箭",
+      "太空",
+      "科技"
+    ]
+  },
+  {
+    "id": "dnd-5e",
+    "name": "D&D 5e API",
+    "description": "龙与地下城第五版规则数据",
+    "fullDescription": "D&D 5e API 提供龙与地下城第五版的完整规则数据，包括职业、种族、法术、怪物、装备等。RESTful设计，JSON格式。适合角色扮演游戏爱好者和工具开发者。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.dnd5eapi.co/api/features",
+    "baseUrl": "https://www.dnd5eapi.co/api",
+    "params": [],
+    "responseExample": {
+      "count": 100,
+      "results": [
+        {
+          "name": "Action Surge",
+          "url": "/api/features/action-surge"
+        }
+      ]
+    },
+    "docUrl": "https://www.dnd5eapi.co/",
+    "status": "active",
+    "tags": [
+      "龙与地下城",
+      "D&D",
+      "RPG",
+      "游戏"
+    ]
+  },
+  {
+    "id": "datadragon-lol",
+    "name": "Data Dragon 英雄联盟",
+    "description": "英雄联盟游戏数据，含英雄、装备、符文",
+    "fullDescription": "Data Dragon 是 Riot Games 官方提供的英雄联盟静态数据 API。包含所有英雄的详细属性、技能图标、皮肤、装备、符文等。无需 API Key，直接访问CDN。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://ddragon.leagueoflegends.com/cdn/14.3.1/data/en_US/champion.json",
+    "baseUrl": "https://ddragon.leagueoflegends.com/cdn",
+    "params": [],
+    "responseExample": {
+      "type": "champion",
+      "data": {
+        "Aatrox": {
+          "name": "Aatrox",
+          "title": "暗裔剑魔"
+        }
+      }
+    },
+    "docUrl": "https://developer.riotgames.com/docs/lol",
+    "status": "active",
+    "tags": [
+      "英雄联盟",
+      "游戏",
+      "LOL",
+      "Riot"
+    ]
+  },
+  {
+    "id": "binance-api",
+    "name": "Binance 公开行情",
+    "description": "加密货币24小时行情和交易数据",
+    "fullDescription": "Binance 提供的公开行情 API，无需API Key即可获取所有交易对的24小时价格、成交量、涨跌幅等数据。支持数千种加密货币，数据实时更新，广泛应用于行情类应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api4.binance.com/api/v3/ticker/24hr",
+    "baseUrl": "https://api4.binance.com/api/v3",
+    "params": [],
+    "responseExample": [
+      {
+        "symbol": "BTCUSDT",
+        "priceChange": "1000.00",
+        "lastPrice": "67000.00"
+      }
+    ],
+    "docUrl": "https://binance-docs.github.io/apidocs/spot/en/#24hr-ticker-price-change-statistics",
+    "status": "active",
+    "tags": [
+      "加密货币",
+      "币安",
+      "行情"
+    ]
+  },
+  {
+    "id": "coingecko",
+    "name": "CoinGecko 加密货币",
+    "description": "加密货币市场数据，免费额度充足",
+    "fullDescription": "CoinGecko 是全球最大的独立加密货币数据聚合器。免费API提供实时价格、市值、交易量、历史数据。免费版无需API Key（30次/分钟），注册后更高额度。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10",
+    "baseUrl": "https://api.coingecko.com/api/v3",
+    "params": [],
+    "responseExample": [
+      {
+        "id": "bitcoin",
+        "symbol": "btc",
+        "current_price": 67000
+      }
+    ],
+    "docUrl": "https://www.coingecko.com/en/api",
+    "status": "active",
+    "tags": [
+      "加密货币",
+      "市场",
+      "金融"
+    ]
+  },
+  {
+    "id": "country-is",
+    "name": "Country.is",
+    "description": "通过IP地址查询所属国家",
+    "fullDescription": "Country.is 是一个极简的IP归属地查询服务，通过IP地址返回对应的国家代码和名称。API极其简单，无认证、无限制，响应速度极快。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.country.is/9.9.9.9",
+    "baseUrl": "https://api.country.is",
+    "params": [],
+    "responseExample": {
+      "ip": "9.9.9.9",
+      "country": "US"
+    },
+    "docUrl": "https://country.is/",
+    "status": "active",
+    "tags": [
+      "IP",
+      "国家",
+      "地理"
+    ]
+  },
+  {
+    "id": "reqres",
+    "name": "Reqres 测试API",
+    "description": "真实的REST API测试服务",
+    "fullDescription": "Reqres 是一个托管的 REST API，专门用于测试前端应用。提供用户列表、创建、更新、删除等标准CRUD接口，响应格式规范。是学习和测试 HTTP 请求的理想选择。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://reqres.in/api/users?page=1",
+    "baseUrl": "https://reqres.in/api",
+    "params": [],
+    "responseExample": {
+      "page": 1,
+      "per_page": 6,
+      "total": 12,
+      "data": [
+        {
+          "id": 1,
+          "email": "george.bluth@reqres.in"
+        }
+      ]
+    },
+    "docUrl": "https://reqres.in/",
+    "status": "active",
+    "tags": [
+      "API测试",
+      "REST",
+      "CRUD"
+    ]
   }
 ]
