@@ -1536,60 +1536,6 @@
     ]
   },
   {
-    "id": "ice-and-fire",
-    "name": "An API of Ice And Fire",
-    "description": "冰与火之歌(权力的游戏)数据API",
-    "fullDescription": "提供《冰与火之歌》系列小说的完整数据，包括书籍、角色、家族信息。支持按名称、文化、性别等筛选角色，按书名查找书籍等。非常适合开发奇幻文学或电视剧相关应用。数据来源于开源社区维护。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://www.anapioficeandfire.com/api/books/1",
-    "baseUrl": "https://www.anapioficeandfire.com/api",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": false,
-        "description": "按名称筛选",
-        "example": "A Game of Thrones"
-      },
-      {
-        "name": "page",
-        "type": "number",
-        "required": false,
-        "description": "分页页码",
-        "example": "1"
-      },
-      {
-        "name": "pageSize",
-        "type": "number",
-        "required": false,
-        "description": "每页数量",
-        "example": "10"
-      }
-    ],
-    "responseExample": {
-      "url": "https://www.anapioficeandfire.com/api/books/1",
-      "name": "A Game of Thrones",
-      "isbn": "978-0553103540",
-      "authors": [
-        "George R. R. Martin"
-      ],
-      "numberOfPages": 694,
-      "publisher": "Bantam Books",
-      "country": "United States",
-      "released": "1996-08-01T00:00:00"
-    },
-    "docUrl": "https://anapioficeandfire.com/Documentation",
-    "status": "active",
-    "tags": [
-      "冰与火之歌",
-      "权力的游戏",
-      "小说",
-      "角色",
-      "家族"
-    ]
-  },
-  {
     "id": "cataas",
     "name": "Cat as a Service",
     "description": "猫咪图片即服务，支持GIF和滤镜",
@@ -3486,32 +3432,11 @@
     "note": ""
   },
   {
-    "id": "colourlovers",
-    "name": "COLOURlovers",
-    "url": "https://www.colourlovers.com/api/colors/new?format=json",
-    "category": "图片",
-    "description": "获取最新颜色趋势数据"
-  },
-  {
     "id": "http-cats",
     "name": "HTTP Cats",
     "url": "https://http.cat/200",
     "category": "图片",
     "description": "HTTP状态码对应的猫咪图片"
-  },
-  {
-    "id": "open-library",
-    "name": "Open Library",
-    "url": "https://openlibrary.org/search.json?q=the+lord+of+the+rings",
-    "category": "数据",
-    "description": "查询2000万+图书数据"
-  },
-  {
-    "id": "coindesk",
-    "name": "CoinDesk Bitcoin",
-    "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
-    "category": "数据",
-    "description": "比特币实时价格指数"
   },
   {
     "id": "open-food-facts",
@@ -3521,25 +3446,11 @@
     "description": "全球食品产品数据查询"
   },
   {
-    "id": "ipify",
-    "name": "IPify",
-    "url": "https://api.ipify.org?format=json",
-    "category": "工具",
-    "description": "获取当前公网IP地址"
-  },
-  {
     "id": "open-topo-data",
     "name": "Open Topo Data",
     "url": "https://api.opentopodata.org/v1/srtm90m?locations=39.9,116.4",
     "category": "数据",
     "description": "根据经纬度查询海拔高度"
-  },
-  {
-    "id": "quotable",
-    "name": "Quotable Quotes",
-    "url": "https://api.quotable.io/quotes/random",
-    "category": "娱乐",
-    "description": "随机名人名言"
   },
   {
     "id": "tvmaze",
