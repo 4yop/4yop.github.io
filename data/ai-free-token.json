@@ -1626,6 +1626,36 @@
           "big-pickle-stealth"
         ]
       }
+    },
+    {
+      "name": "Aion Labs",
+      "quota": "免费层每日Token额度（永久免费，无需信用卡）；支持Aion-2.0（131K上下文，旗舰模型）、Aion-1.0、Aion-1.0-Mini（轻量快速）；aion-2.5（付费模型）；OpenAI兼容API格式",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://aionlabs.ai",
+      "develop": {
+        "document_url": "https://www.aionlabs.ai/docs/api-reference/",
+        "base_url": "https://api.aionlabs.ai/v1",
+        "models": [
+          "aion-2.0",
+          "aion-1.0",
+          "aion-1.0-mini"
+        ]
+      }
+    },
+    {
+      "name": "Nscale",
+      "quota": "免费提供3款开源大模型推理（永久免费，无需信用卡）；Llama-3.3-70B-Instruct（128K上下文）、Qwen3-Coder-30B-A3B-Instruct（256K上下文，代码专用MoE模型）、DeepSeek-R1-Distill-Llama-70B（推理模型）；fair-use速率限制（无硬性RPM/RPD上限）；OpenAI兼容API格式；EU托管",
+      "cycle": "每日重置（永久免费层，fair-use限流；高峰期可能降速）",
+      "url": "https://www.nscale.com",
+      "develop": {
+        "document_url": "https://www.nscale.com/docs",
+        "base_url": "https://inference.api.nscale.com/v1",
+        "models": [
+          "llama-3.3-70b-instruct",
+          "qwen3-coder-30b-a3b-instruct",
+          "deepseek-r1-distill-llama-70b"
+        ]
+      }
     }
   ],
   "lastUpdateTime": "2026-06-14T18:49:06.226Z"
