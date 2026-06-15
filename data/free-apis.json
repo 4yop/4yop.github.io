@@ -3565,5 +3565,25 @@
       "工具"
     ],
     "note": "URL格式：/icon/{domain}，支持多级降级"
+  },
+  {
+    "id": "lyrics-ovh",
+    "name": "Lyrics.ovh",
+    "description": "免费歌词查询API",
+    "fullDescription": "通过歌手名和歌曲名查询歌词文本，完全免费无需认证。支持中英文等多种语言的歌曲。适合音乐应用、K歌项目等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.lyrics.ovh/v1/Coldplay/Yellow",
+    "baseUrl": "https://api.lyrics.ovh/v1",
+    "params": [],
+    "responseExample": {},
+    "docUrl": "https://lyricsovh.docs.apiary.io/",
+    "status": "active",
+    "tags": [
+      "歌词",
+      "音乐",
+      "文本"
+    ],
+    "note": "非官方API，可用性取决于上游服务"
   }
 ]

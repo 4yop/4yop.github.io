@@ -1595,24 +1595,6 @@
       }
     },
     {
-      "name": "TOKEN自由 (dxnt.com)",
-      "quota": "免费层：dxnt/free模型每天100次免费调用（系统自动优选最优免费模型，每30分钟评估质量/延迟/成功率排序）；兼容OpenAI API格式，只需将model改为dxnt/free即可；平台聚合数百个国内外AI模型Token资源（GPT、Claude、Gemini、DeepSeek、Qwen等），支持模型路由、智能轮循、故障转移；API Key每5-7天自动轮换；⚠️ 免费层有每日调用次数限制，付费套餐另购",
-      "cycle": "每日重置（免费层100次/天；API Key 5-7天自动轮换）",
-      "url": "https://www.dxnt.com",
-      "develop": {
-        "document_url": "https://www.dxnt.com/docs",
-        "base_url": "https://www.dxnt.com/api/v1",
-        "models": [
-          "dxnt/free",
-          "gpt-5",
-          "claude-sonnet-4",
-          "gemini-2.5-pro",
-          "deepseek-v4-flash",
-          "qwen-plus"
-        ]
-      }
-    },
-    {
       "name": "OpenCode Zen",
       "quota": "提供经过严格测试与优化的免费编码模型（Big Pickle Stealth、Nemotron 3 Super Free、DeepSeek V4 Flash Free 等）；通过 OpenCode 终端/桌面/IDE 工具连接即可使用，无需自备 API Key；免费模型可能使用数据用于模型改进；OpenCode 本身为 MIT 开源项目（GitHub 超109k Stars），支持75+ LLM提供商接入；推荐搭配本地模型实现完全离线使用",
       "cycle": "永久免费层（免费模型长期可用，政策以官方公告为准）",
@@ -1658,5 +1640,5 @@
       }
     }
   ],
-  "lastUpdateTime": "2026-06-14T18:49:06.226Z"
+  "lastUpdateTime": "2026-06-15T10:00:00.000Z"
 }

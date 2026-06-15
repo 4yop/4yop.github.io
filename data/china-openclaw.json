@@ -2662,5 +2662,23 @@
     "features": "职业人专属AI助手平台；机器人市场、工作流、AI对话三合一；Playwright自动化替用户搬砖；钥匙串管理多平台API；面向职场白领的省心干活、高效摸鱼定位",
     "website": "http://www.byyoo.cn:8084/",
     "id": 356
+  },
+  {
+    "id": 357,
+    "name": "Cclawd",
+    "developer": "领信数科（SecLead）",
+    "releaseTime": "2026.03.13",
+    "deployment": "企业级部署，基于OpenClaw内核深度定制，已开源",
+    "features": "国内首个基于权威身份认证的企业级安全智能体；网关风控与生物识别确权机制，高危操作触发人脸认证；风控审计确权，操作可追溯可控；流量清洗与审计能力；计划打造经审计的插件应用商店；接入璇玑安全运营中心；破解AI智能体权限不可控操作不可追溯的行业难题",
+    "website": "https://www.seclead.cn"
+  },
+  {
+    "id": 358,
+    "name": "Aeloon（伊龙）",
+    "developer": "上海以太之心科技（Aether Heart Tech）",
+    "releaseTime": "2026.03.14",
+    "deployment": "全栈自研国产智能体，支持本地部署和在线使用，已开源（GitHub/Gitee）",
+    "features": "全栈自研国产智能体对标并超越OpenClaw；原生安全可回滚可审计可升级全维度安全合规体系；企业级全本地化部署数据不出域满足等保与数据安全法要求；独创算法优化超低Token消耗大幅降低使用成本；零成本本地调用打破SaaS计费模式壁垒；支持微信和飞书扫码直连开箱即用；适配国产算力与国产硬件；荣获上海证券报等权威媒体报道",
+    "website": "https://github.com/AetherHeartAI/Aeloon"
   }
 ]
