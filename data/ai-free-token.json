@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15",
+  "updatedAt": "2026-06-16",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -944,7 +944,7 @@
     },
     {
       "name": "讯飞星辰MaaS",
-      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
+      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；Qwen3.6-35B-A3B 和 Qwen3.5-35B-A3B 限时免费（2026年6月底前有效，新老用户均可领）；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
       "cycle": "Qwen3-Coder-Next/Qwen3-1.7B永久免费（不限量）；新客礼包一次性赠送；政策以官方公告为准",
       "url": "https://maas.xfyun.cn",
       "develop": {
@@ -1289,7 +1289,7 @@
     },
     {
       "name": "Z.ai（智谱AI国际版）",
-      "quota": "GLM-4.7-Flash：完全免费（无限制基础对话，1并发，200K上下文，编程能力SOTA SWE-Bench 59.2%）；GLM-4.5-Flash：完全免费（128K上下文）；GLM-4.6V-Flash：免费视觉模型；Coding Lite计划$3/月（120次/5小时，GLM-5/5.1访问）；Coding Pro计划$15/月（不限次，更高速率）；全系GLM模型MIT开源可商用；与国内智谱AI（open.bigmodel.cn）账户体系独立，面向国际用户",
+      "quota": "GLM-4.7-Flash：完全免费（无限制基础对话，1并发，200K上下文，编程能力SOTA SWE-Bench 59.2%）；GLM-4.5-Flash：完全免费（128K上下文）；GLM-4.6V-Flash：免费视觉模型；GLM-5.2：新用户5天免费体验每天500万Token（GLM-5.2占300万+GLM-5-Turbo占200万，1M上下文，非高峰期1倍抵扣至2026-09-30）；Coding Lite计划$3/月；全系GLM模型MIT开源可商用；与国内智谱AI（open.bigmodel.cn）账户体系独立",
       "cycle": "GLM-4.7-Flash/4.5-Flash/4.6V-Flash永久免费（1并发限制）；Coding Plan按月订阅",
       "url": "https://z.ai/model-api",
       "develop": {
@@ -1638,7 +1638,58 @@
           "deepseek-r1-distill-llama-70b"
         ]
       }
+    },
+    {
+      "name": "Lepton AI (NVIDIA DGX Cloud Lepton)",
+      "quota": "Basic（免费）计划：$0/月，最多同时运行 48 CPU + 2 GPU；Serverless 端点 10 RPM 速率限制；1GB 免费存储 + 10GB/月免费网络出站；支持热门开源模型的 Serverless 推理端点（OpenAI 兼容 API）；由阿里巴巴前副总裁贾扬清创立，现已加入 NVIDIA DGX Cloud 生态；适合原型开发、小规模端点部署、GPU 实验",
+      "cycle": "永久免费 Basic 计划（$0/月，资源受限）；超出免费额度后按量付费",
+      "url": "https://www.lepton.ai",
+      "develop": {
+        "document_url": "https://www.lepton.ai/docs",
+        "base_url": "https://api.leptonai.com/v1",
+        "models": [
+          "llama-3-70b-instruct",
+          "llama-3-8b-instruct",
+          "mistral-7b-v0.1",
+          "gemma-2-27b-it",
+          "dolphin-2.6-mixtral-8x7b"
+        ]
+      }
+    },
+    {
+      "name": "LLM7.io",
+      "quota": "5款模型永久免费（无需信用卡）：gpt-4o-mini（131K上下文，免费层罕见OpenAI模型）、deepseek-r1-0528（131K）、deepseek-v3-0324（131K）、mistral-small-3.1-24b（32K）、qwen2.5-coder-32b（131K）；30 RPM 速率限制（注册token后提升至120 RPM）；独立API聚合平台，非中转站",
+      "cycle": "永久免费（30 RPM速率限制；注册token可提升至120 RPM）",
+      "url": "https://token.llm7.io",
+      "develop": {
+        "document_url": "https://freellm.net/providers/llm7-io/",
+        "base_url": "https://api.llm7.io/v1",
+        "models": [
+          "gpt-4o-mini",
+          "deepseek-r1-0528",
+          "deepseek-v3-0324",
+          "mistral-small-3.1-24b",
+          "qwen2.5-coder-32b"
+        ]
+      }
+    },
+    {
+      "name": "Kilo Gateway (Kilo Code)",
+      "quota": "Free/Trial 层：$0 永久免费 + 新用户赠送 $5 初始额度；5款免费编码模型（MiniMax M2.5:free、NVIDIA Nemotron 3 Super 120B:free、Arcee Trinity Large Thinking:free、xAI Grok Code Fast 1:free、ByteDance Seed 2.0 Pro:free）；~200 请求/小时免费速率；支持 BYOK（自带Key）模式接入350+付费模型；OpenAI 兼容 API；面向 AI 编程场景优化路由",
+      "cycle": "永久免费层（$0/月 + $5初始额度；免费模型~200 req/hr；BYOK模式按供应商计费）",
+      "url": "https://kilo.ai",
+      "develop": {
+        "document_url": "https://kilo.ai/docs/gateway",
+        "base_url": "https://api.kilo.ai/api/gateway",
+        "models": [
+          "minimax/minimax-m2.5:free",
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "arcee-ai/trinity-large-thinking:free",
+          "x-ai/grok-code-fast-1:free",
+          "bytedance-seed/dola-seed-2.0-pro:free"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-15T10:00:00.000Z"
+  "lastUpdateTime": "2026-06-16T12:00:00.000Z"
 }

@@ -2680,5 +2680,14 @@
     "deployment": "全栈自研国产智能体，支持本地部署和在线使用，已开源（GitHub/Gitee）",
     "features": "全栈自研国产智能体对标并超越OpenClaw；原生安全可回滚可审计可升级全维度安全合规体系；企业级全本地化部署数据不出域满足等保与数据安全法要求；独创算法优化超低Token消耗大幅降低使用成本；零成本本地调用打破SaaS计费模式壁垒；支持微信和飞书扫码直连开箱即用；适配国产算力与国产硬件；荣获上海证券报等权威媒体报道",
     "website": "https://github.com/AetherHeartAI/Aeloon"
+  },
+  {
+    "id": 359,
+    "name": "AionClaw",
+    "developer": "杭州趣猿人工智能有限公司",
+    "releaseTime": "2026.03",
+    "deployment": "Windows/macOS桌面客户端，一键部署，支持Intel与M系列芯片",
+    "features": "基于OpenClaw打造的商业升级版全能型私人智能伙伴；搭载Hermes Agent智能进化体系，双引擎协同架构（调度决策+任务执行）；内置100+官方预设技能，社区可拓展3000-5000款技能；7×24小时自主运转，支持自主学习与长期记忆；多角色团队协作（指挥官/写手/运营/军师等）；兼容八大国产主流模型及GPT/Gemini等海外模型；AES-256加密+操作日志追溯保障安全；原生适配微信/飞书/钉钉/企微/QQ；CPU待机占用<8%，内存<500MB",
+    "website": "https://www.aionclaw.com"
   }
 ]
