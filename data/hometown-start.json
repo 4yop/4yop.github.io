@@ -14451,5 +14451,121 @@
       "足球运动员"
     ],
     "source": "百度百科"
+  },
+  {
+    "name": "卢卡库",
+    "hometowns": [
+      [
+        "比利时",
+        "安特卫普省",
+        "安特卫普"
+      ]
+    ],
+    "birthday": "1993-05-13",
+    "tags": [
+      "足球运动员"
+    ],
+    "source": "百度百科",
+    "avatar": "卢卡库.webp"
+  },
+  {
+    "name": "穆勒",
+    "hometowns": [
+      [
+        "德国",
+        "巴伐利亚州",
+        "魏尔海姆"
+      ]
+    ],
+    "birthday": "1989-09-13",
+    "tags": [
+      "足球运动员"
+    ],
+    "source": "百度百科",
+    "avatar": "穆勒.webp"
+  },
+  {
+    "name": "莫德里奇",
+    "hometowns": [
+      [
+        "克罗地亚",
+        "扎达尔县",
+        "扎达尔"
+      ]
+    ],
+    "birthday": "1985-09-09",
+    "tags": [
+      "足球运动员"
+    ],
+    "source": "百度百科",
+    "avatar": "莫德里奇.webp"
+  },
+  {
+    "name": "TheShy",
+    "avatar": "TheShy.webp",
+    "hometowns": [
+      [
+        "韩国",
+        "忠清南道",
+        "牙山市"
+      ]
+    ],
+    "birthday": "1999-11-11",
+    "tags": [
+      "电竞选手",
+      "英雄联盟"
+    ],
+    "source": "新闻报道"
+  },
+  {
+    "name": "Knight",
+    "avatar": "Knight.webp",
+    "hometowns": [
+      [
+        "江西省",
+        "萍乡市",
+        ""
+      ]
+    ],
+    "birthday": "2000-05-22",
+    "tags": [
+      "电竞选手",
+      "英雄联盟"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "Bin",
+    "avatar": "Bin.webp",
+    "hometowns": [
+      [
+        "湖北省",
+        "黄冈市",
+        ""
+      ]
+    ],
+    "birthday": "2003-09-28",
+    "tags": [
+      "电竞选手",
+      "英雄联盟"
+    ],
+    "source": "百度百科"
+  },
+  {
+    "name": "Leave",
+    "avatar": "Leave.webp",
+    "hometowns": [
+      [
+        "中国",
+        "",
+        ""
+      ]
+    ],
+    "birthday": "2002-09-29",
+    "tags": [
+      "电竞选手",
+      "英雄联盟"
+    ],
+    "source": "电竞资料"
   }
 ]

@@ -3585,5 +3585,43 @@
       "文本"
     ],
     "note": "非官方API，可用性取决于上游服务"
+  },
+  {
+    "id": "restcountries",
+    "name": "REST Countries",
+    "description": "世界各国数据查询API",
+    "fullDescription": "提供全球国家详细信息，包括国旗、首都、语言、人口、货币、地区等数据。支持按名称、代码、货币等多种方式查询，返回格式为JSON。完全免费无需API Key，支持CORS跨域请求，适合前端直接调用进行国家相关数据展示。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://restcountries.com/v3.1/all",
+    "baseUrl": "https://restcountries.com/v3.1",
+    "params": [
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "指定返回字段，逗号分隔",
+        "example": "name,capital,flags,population"
+      }
+    ],
+    "responseExample": {
+      "name": {
+        "common": "China",
+        "official": "People's Republic of China"
+      },
+      "region": "Asia",
+      "capital": [
+        "Beijing"
+      ],
+      "population": 1439323776
+    },
+    "docUrl": "https://restcountries.com/",
+    "status": "active",
+    "tags": [
+      "国家",
+      "地理",
+      "数据"
+    ],
+    "note": "支持按名称/代码/货币/语言等多维度查询"
   }
 ]
