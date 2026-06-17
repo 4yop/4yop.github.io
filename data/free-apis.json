@@ -2249,7 +2249,7 @@
       }
     ],
     "docUrl": "https://api.radio-browser.info/",
-    "status": "active",
+    "status": "unstable",
     "tags": [
       "电台",
       "广播",
@@ -2257,7 +2257,8 @@
       "全球",
       "音频",
       "流媒体"
-    ]
+    ],
+    "note": " [HTTP 503 Service Unavailable]"
   },
   {
     "id": "potterdb",
@@ -3500,5 +3501,120 @@
       "吉卜力"
     ],
     "note": "精美的动漫数据源，适合展示用途"
+  },
+  {
+    "id": "randomuser-me",
+    "name": "Random User 随机用户生成器",
+    "description": "生成逼真的随机用户假数据(姓名/邮箱/头像/地址等)",
+    "fullDescription": "Random User Generator 是一个免费的随机用户数据生成API，返回逼真的虚假用户资料：姓名、性别、邮箱、用户名密码、头像照片、完整地址(含坐标)、电话号码、生日年龄、国籍等。支持按国籍(gender)、性别过滤，可用seed参数生成可重复的确定性结果。被誉为'人物版的Lorem Ipsum'，非常适合UI原型设计、测试数据库填充、表单演示等场景。完全免费无需认证，CORS支持良好。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://randomuser.me/api/?results=5&nat=us&inc=name,email,picture,location,dob",
+    "baseUrl": "https://randomuser.me/api",
+    "params": [
+      {
+        "name": "results",
+        "type": "number",
+        "required": false,
+        "description": "返回用户数量",
+        "example": 5
+      },
+      {
+        "name": "nat",
+        "type": "string",
+        "required": false,
+        "description": "国籍(us/gb/fr/de/cn等)",
+        "example": "us"
+      },
+      {
+        "name": "inc",
+        "type": "string",
+        "required": false,
+        "description": "包含字段(逗号分隔)",
+        "example": "name,email,picture"
+      },
+      {
+        "name": "seed",
+        "type": "string",
+        "required": false,
+        "description": "种子值(相同种子返回相同结果)",
+        "example": "abc123"
+      }
+    ],
+    "responseExample": {
+      "results": [
+        {
+          "gender": "female",
+          "name": {
+            "first": "Emma",
+            "last": "Chen"
+          },
+          "email": "emma.chen@example.com",
+          "picture": {
+            "large": "https://randomuser.me/api/portraits/women/1.jpg"
+          }
+        }
+      ]
+    },
+    "docUrl": "https://randomuser.me/documentation",
+    "status": "active",
+    "tags": [
+      "测试",
+      "假数据",
+      "用户生成"
+    ],
+    "note": "前端开发必备测试数据源"
+  },
+  {
+    "id": "nationalize-io",
+    "name": "Nationalize 国籍预测API",
+    "description": "根据姓名推测可能的国籍/国家分布概率",
+    "fullDescription": "Nationalize.io 是一个有趣的 demographic API，可以根据输入的名字推测此人最可能来自哪个国家。基于约10亿条真实姓名数据的统计分析，返回最多5个国家预测及概率分数(ISO 3166-1 alpha-2国家代码)。支持批量查询(一次最多10个名字)，姓氏预测准确率最高。完全免费无需API Key，支持CORS。适合做用户画像分析、人口统计研究、趣味性个人资料补充等功能。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.nationalize.io?name=michael&name=sarah&name=yamamoto",
+    "baseUrl": "https://api.nationalize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "名字(支持批量name[]=格式)",
+        "example": "michael"
+      },
+      {
+        "name": "name[]",
+        "type": "array",
+        "required": false,
+        "description": "批量名字查询(最多10个)",
+        "example": [
+          "michael",
+          "sarah"
+        ]
+      }
+    ],
+    "responseExample": [
+      {
+        "name": "michael",
+        "country": [
+          {
+            "country_id": "US",
+            "probability": 0.089
+          },
+          {
+            "country_id": "AU",
+            "probability": 0.058
+          }
+        ]
+      }
+    ],
+    "docUrl": "https://nationalize.io/",
+    "status": "active",
+    "tags": [
+      "人口统计",
+      "趣味",
+      "数据分析"
+    ],
+    "note": "10亿+数据支撑，姓氏预测最准"
   }
 ]
