@@ -2689,5 +2689,75 @@
     "deployment": "Windows/macOS桌面客户端，一键部署，支持Intel与M系列芯片",
     "features": "基于OpenClaw打造的商业升级版全能型私人智能伙伴；搭载Hermes Agent智能进化体系，双引擎协同架构（调度决策+任务执行）；内置100+官方预设技能，社区可拓展3000-5000款技能；7×24小时自主运转，支持自主学习与长期记忆；多角色团队协作（指挥官/写手/运营/军师等）；兼容八大国产主流模型及GPT/Gemini等海外模型；AES-256加密+操作日志追溯保障安全；原生适配微信/飞书/钉钉/企微/QQ；CPU待机占用<8%，内存<500MB",
     "website": "https://www.aionclaw.com"
+  },
+  {
+    "id": 360,
+    "name": "MyClaw",
+    "developer": "开源社区",
+    "releaseTime": "2026.03",
+    "deployment": "跨平台单文件部署，无运行时依赖，支持Windows/macOS/Linux",
+    "features": "Go语言编写的极简OpenClaw替代方案，仅2000行代码替代原版43万行TS；内存占用<100MB，长期稳定运行；支持定时任务（Cron表达式）、服务器托管、低干预运维；适合运维/后端/轻量化部署场景",
+    "website": "https://myclaw.app",
+    "source": "掘金《OpenClaw 平替大全｜2026 最稳 5 款替代方案 + 一键部署 + 避坑指南》"
+  },
+  {
+    "id": 361,
+    "name": "OpenClaw-CN",
+    "developer": "中文开源社区",
+    "releaseTime": "2026.02",
+    "deployment": "开源项目，支持私有化部署，提供稳定版与每日更新版两大分支",
+    "features": "基于原生OpenClaw优化的全中文版本；全链路中文适配（CLI界面/管理后台/系统提示）；内置国内CDN加速节点，依赖下载速度提升8倍；原生对接国内办公工具；配套中文技能市场收录数千项本土化技能",
+    "website": "https://github.com/openclaw-cn/openclaw-cn",
+    "source": "头条《2026国内OpenClaw官网推荐 五款衍生工具实测覆盖全场景办公选型》"
+  },
+  {
+    "id": 362,
+    "name": "星启Claw",
+    "developer": "星兴万物",
+    "releaseTime": "2026.03",
+    "deployment": "本地优先架构，支持桌面端安装，数据不出设备",
+    "features": "开源本地型AI智能体产品；主打隐私优先、自主可控；全量代码透明可审计；适合对数据安全要求高的个人用户和中小企业；本土化适配表现成熟",
+    "website": "https://www.xingxingwanwu.com/",
+    "source": "CSDN《国产AI智能体龙虾全景报告》"
+  },
+  {
+    "id": 363,
+    "name": "Xiaomi Miclaw",
+    "developer": "小米",
+    "releaseTime": "2026.03",
+    "deployment": "小米生态深度集成，支持手机/平板/智能家居等多终端",
+    "features": "垂直场景型AI智能体，专注小米生态场景深度优化；整合米家智能家居控制、小爱同学语音交互；支持跨设备协同任务执行；面向小米用户的个人助理解决方案",
+    "website": "https://www.mi.com/",
+    "source": "CSDN《国产AI智能体龙虾全景报告》"
+  },
+  {
+    "id": 364,
+    "name": "当贝Molili",
+    "developer": "当贝",
+    "releaseTime": "2026.03",
+    "deployment": "一体化客户端安装包，采用本地沙箱运行机制",
+    "features": "采用'三省六部'创新架构（决策-审核-执行三权分立）；动态上下文窗口技术，Token使用效率提升50%；多层权限管控体系+手机二次确认机制；普通用户友好，一键安装即可使用；适合家庭娱乐和轻办公场景",
+    "website": "https://www.dangbei.com/",
+    "source": "腾讯云开发者社区《从openclaw到国产龙虾，AI智能体工具技术架构全景分析》"
+  },
+  {
+    "id": 365,
+    "name": "三省六部制(edict)",
+    "developer": "cft0808（开源社区）",
+    "releaseTime": "2026.01",
+    "deployment": "Python开源项目，pip安装，GitHub 9.7k Stars",
+    "features": "多Agent编排框架，支持复杂多步骤任务的拆解与协作；支持全Provider自配模型（DeepSeek/Qwen/Claude等）；MIT开源协议，代码完全透明；适合需要多Agent协同工作的复杂业务场景",
+    "website": "https://github.com/cft0808/edict",
+    "source": "SegmentFault《2026全网最全国产OpenClaw盘点：10款主流产品横向测评》"
+  },
+  {
+    "id": 367,
+    "name": "华为小艺OpenClaw模式",
+    "developer": "华为",
+    "releaseTime": "2026.03",
+    "deployment": "华为鸿蒙生态深度集成，支持手机/平板/智慧屏等设备",
+    "features": "垂直场景型AI智能体，将OpenClaw能力引入华为鸿蒙生态；深度整合小艺语音助手能力；支持智能家居控制、移动办公、日程管理等场景；面向华为设备用户的智能化升级方案",
+    "website": "https://www.huawei.com/",
+    "source": "CSDN《国产AI智能体龙虾全景报告》"
   }
 ]

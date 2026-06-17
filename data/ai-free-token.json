@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16",
+  "updatedAt": "2026-06-18",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -83,7 +83,7 @@
     },
     {
       "name": "腾讯混元",
-      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束；⚠️ 原腾讯混元大模型平台将于2026年9月30日全面停服，建议迁移至TokenHub平台使用hy3-preview替代",
+      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 【紧急】HY 2.0等46个旧模型将于2026年6月22日00:00正式下线！⚠️ 原腾讯混元大模型平台将于2026年9月30日全面停服，建议立即迁移至TokenHub平台使用hy3-preview替代；混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束",
       "cycle": "通用包1年有效；Lite版永久免费；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
@@ -1185,7 +1185,7 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；MiMo-V2-Pro与MiMo-V2-Omni即将下线，引导迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
+      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ 【注意】MiMo-V2-Pro与MiMo-V2-Omni将于2026年6月30日正式下线，请提前迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
       "cycle": "V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {

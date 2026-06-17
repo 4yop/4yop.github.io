@@ -2258,36 +2258,6 @@
     ]
   },
   {
-    "id": "dicebear",
-    "name": "DiceBear Avatars",
-    "description": "基于文本生成风格化SVG头像",
-    "fullDescription": "DiceBear是一个开源的头像生成库，通过API传入种子文本即可生成独特的SVG风格头像。支持多种风格（pixel-art、bottts、identicon等），URL即头像，无需存储。适合用户默认头像、评论占位图等场景。完全免费开源。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://api.dicebear.com/9.x/pixel-art/svg?seed=John",
-    "baseUrl": "https://api.dicebear.com",
-    "params": [
-      {
-        "name": "seed",
-        "type": "string",
-        "required": true,
-        "description": "种子文本（相同种子生成相同头像）",
-        "example": "John"
-      }
-    ],
-    "responseExample": "(返回SVG图片)",
-    "docUrl": "https://www.dicebear.com/how-to-use/http-api",
-    "status": "active",
-    "tags": [
-      "头像生成",
-      "SVG",
-      "风格化",
-      "占位图",
-      "开源"
-    ],
-    "note": "基于v9 API，支持pixel-art/bottts/identicon等多种风格"
-  },
-  {
     "id": "purgomalum",
     "name": "PurgoMalum",
     "description": "脏话/敏感词过滤检测API",
@@ -3623,5 +3593,197 @@
       "数据"
     ],
     "note": "支持按名称/代码/货币/语言等多维度查询"
+  },
+  {
+    "id": "http-cat",
+    "name": "HTTP Cat",
+    "description": "HTTP状态码对应的猫咪图片",
+    "fullDescription": "HTTP Cat 提供各种 HTTP 状态码对应的猫咪图片，非常适合用于网站错误页面展示或开发调试时使用。每个状态码都有一张独特的猫咪图片，既可爱又实用。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://http.cat/404",
+    "baseUrl": "https://http.cat",
+    "params": [
+      {
+        "name": "statusCode",
+        "type": "number",
+        "required": false,
+        "description": "HTTP状态码（如 404、500、200 等）",
+        "example": "404"
+      }
+    ],
+    "responseExample": {
+      "url": "https://http.cat/404"
+    },
+    "docUrl": "https://http.cat/",
+    "status": "active",
+    "tags": [
+      "HTTP",
+      "图片",
+      "猫咪",
+      "状态码"
+    ],
+    "note": "直接返回图片，支持常见 HTTP 状态码"
+  },
+  {
+    "id": "randomduck",
+    "name": "RandomDuck",
+    "description": "随机鸭子图片API",
+    "fullDescription": "RandomDuck 提供随机鸭子图片 API，返回高质量的可爱鸭子照片。无需认证，支持 CORS 跨域请求，可直接在前端应用中使用，适用于动物类应用或作为随机图片源。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://random-d.uk/api/random",
+    "baseUrl": "https://random-d.uk/api",
+    "params": [
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "返回格式（json、txt、src）",
+        "example": "json"
+      }
+    ],
+    "responseExample": {
+      "url": "https://random-d.uk/api/random",
+      "message": "https://random-d.uk/api/random/img/duck/001.jpg"
+    },
+    "docUrl": "https://random-d.uk/api",
+    "status": "active",
+    "tags": [
+      "随机",
+      "图片",
+      "鸭子",
+      "动物"
+    ],
+    "note": "支持多种返回格式"
+  },
+  {
+    "id": "dragonball-api",
+    "name": "Dragon Ball API",
+    "description": "龙珠系列角色、生物信息",
+    "fullDescription": "Dragon Ball API 提供龙珠系列的所有角色、生物、地点等信息。包括角色基本信息、能力值、种族、首次登场等详细数据，是龙珠粉丝和应用开发的理想数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://web.dragonball-api.com/characters?page=1&limit=10",
+    "baseUrl": "https://web.dragonball-api.com",
+    "params": [
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": "1"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "每页数量",
+        "example": "10"
+      }
+    ],
+    "responseExample": {
+      "documentation": "https://web.dragonball-api.com/docs",
+      "items": [],
+      "meta": {
+        "currentPage": 1,
+        "firstPage": 1,
+        "lastPage": 1,
+        "totalItems": 0
+      },
+      "status": "success"
+    },
+    "docUrl": "https://web.dragonball-api.com/docs",
+    "status": "active",
+    "tags": [
+      "龙珠",
+      "动漫",
+      "角色",
+      "游戏"
+    ],
+    "note": "完整的龙珠数据库，支持分页查询"
+  },
+  {
+    "id": "placebear",
+    "name": "PlaceBear",
+    "description": "占位符熊图片服务",
+    "fullDescription": "PlaceBear 提供可自定义尺寸的熊图片占位符服务，类似于 Placehold.co 但使用可爱的熊图片。可以指定宽度、高度来生成对应尺寸的占位图，非常适合开发阶段的 UI 原型设计。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://placebear.com/200/300",
+    "baseUrl": "https://placebear.com",
+    "params": [
+      {
+        "name": "width",
+        "type": "number",
+        "required": false,
+        "description": "图片宽度（像素）",
+        "example": "200"
+      },
+      {
+        "name": "height",
+        "type": "number",
+        "required": false,
+        "description": "图片高度（像素）",
+        "example": "300"
+      }
+    ],
+    "responseExample": {
+      "url": "https://placebear.com/200/300"
+    },
+    "docUrl": "https://placebear.com/",
+    "status": "active",
+    "tags": [
+      "占位符",
+      "图片",
+      "熊",
+      "开发工具"
+    ],
+    "note": "可自定义尺寸的熊占位图"
+  },
+  {
+    "id": "placedog",
+    "name": "PlaceDog",
+    "description": "占位符狗图片服务",
+    "fullDescription": "PlaceDog 提供可自定义尺寸的狗图片占位符服务。支持指定宽度和高度生成对应尺寸的狗图片，还支持选择不同的狗品种。是开发阶段 UI 占位的有趣选择。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://place.dog/200/300",
+    "baseUrl": "https://place.dog",
+    "params": [
+      {
+        "name": "width",
+        "type": "number",
+        "required": false,
+        "description": "图片宽度（像素）",
+        "example": "200"
+      },
+      {
+        "name": "height",
+        "type": "number",
+        "required": false,
+        "description": "图片高度（像素）",
+        "example": "300"
+      },
+      {
+        "name": "breed",
+        "type": "string",
+        "required": false,
+        "description": "狗品种",
+        "example": "labrador"
+      }
+    ],
+    "responseExample": {
+      "url": "https://place.dog/200/300"
+    },
+    "docUrl": "https://place.dog/",
+    "status": "active",
+    "tags": [
+      "占位符",
+      "图片",
+      "狗",
+      "开发工具"
+    ],
+    "note": "可自定义尺寸和品种的狗占位图"
   }
 ]
