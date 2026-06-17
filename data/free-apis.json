@@ -223,58 +223,6 @@
     ]
   },
   {
-    "id": "ip-api-com",
-    "name": "IP-API.com",
-    "description": "IP地址归属地查询API",
-    "fullDescription": "IP地理位置查询服务，输入IP地址即可获取详细的归属地信息。返回数据包括：国家、省份/州、城市、邮政编码、ISP运营商、AS号、经纬度坐标、时区等。免费版支持每分钟45次请求，足够一般应用使用。数据准确度较高，覆盖全球范围。",
-    "category": "data",
-    "method": "GET",
-    "url": "http://ip-api.com/json/8.8.8.8?lang=zh-CN&fields=status,message,country,regionName,city,isp,lat,lon,query",
-    "baseUrl": "http://ip-api.com/json",
-    "params": [
-      {
-        "name": "ip",
-        "type": "string",
-        "required": true,
-        "description": "要查询的IP地址（URL路径部分）",
-        "example": "8.8.8.8|1.1.1.1"
-      },
-      {
-        "name": "lang",
-        "type": "string",
-        "required": false,
-        "description": "返回语言",
-        "example": "zh-CN|en|de"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "返回字段选择",
-        "example": "status,country,city,isp"
-      }
-    ],
-    "responseExample": {
-      "status": "success",
-      "country": "美国",
-      "regionName": "弗吉尼亚州",
-      "city": "Ashburn",
-      "isp": "Google LLC",
-      "lat": 39.03,
-      "lon": -77.5,
-      "query": "8.8.8.8"
-    },
-    "docUrl": "http://ip-api.com/docs",
-    "status": "active",
-    "tags": [
-      "IP查询",
-      "归属地",
-      "地理位置",
-      "ISP",
-      "经纬度"
-    ]
-  },
-  {
     "id": "wttr-in",
     "name": "wttr.in",
     "description": "简洁的天气服务，支持多种输出格式",
@@ -2258,38 +2206,6 @@
     ]
   },
   {
-    "id": "purgomalum",
-    "name": "PurgoMalum",
-    "description": "脏话/敏感词过滤检测API",
-    "fullDescription": "一个简单的脏话过滤和检测API，支持英文脏话检测、替换和过滤。可检测文本是否包含不当内容，或自动过滤替换敏感词为*号。免费无认证，适合评论审核、内容安全检测等场景。",
-    "category": "tool",
-    "method": "GET",
-    "url": "https://www.purgomalum.com/service/json?text=hello%20world",
-    "baseUrl": "https://www.purgomalum.com",
-    "params": [
-      {
-        "name": "text",
-        "type": "string",
-        "required": true,
-        "description": "待检测文本",
-        "example": "hello world"
-      }
-    ],
-    "responseExample": {
-      "result": "hello world"
-    },
-    "docUrl": "https://www.purgomalum.com/",
-    "status": "active",
-    "tags": [
-      "脏话过滤",
-      "内容审核",
-      "敏感词",
-      "文本检测",
-      "安全"
-    ],
-    "note": "仅支持英文脏话检测"
-  },
-  {
     "id": "radio-browser",
     "name": "Radio Browser",
     "description": "全球网络电台列表API，超过7万个电台",
@@ -3537,253 +3453,52 @@
     "note": "URL格式：/icon/{domain}，支持多级降级"
   },
   {
-    "id": "lyrics-ovh",
-    "name": "Lyrics.ovh",
-    "description": "免费歌词查询API",
-    "fullDescription": "通过歌手名和歌曲名查询歌词文本，完全免费无需认证。支持中英文等多种语言的歌曲。适合音乐应用、K歌项目等场景。",
+    "id": "studio-ghibli",
+    "name": "Studio Ghibli API",
+    "description": "吉卜力工作室电影/角色/地点数据",
+    "fullDescription": "Studio Ghibli API 提供吉卜力工作室所有电影的详细信息，包括电影名称、导演、上映时间、评分、角色、地点等。数据来源于官方资料，适合做影迷应用、电影数据库展示、动漫文化介绍等功能。完全免费，无需认证，支持CORS。",
     "category": "data",
     "method": "GET",
-    "url": "https://api.lyrics.ovh/v1/Coldplay/Yellow",
-    "baseUrl": "https://api.lyrics.ovh/v1",
-    "params": [],
-    "responseExample": {},
-    "docUrl": "https://lyricsovh.docs.apiary.io/",
-    "status": "active",
-    "tags": [
-      "歌词",
-      "音乐",
-      "文本"
-    ],
-    "note": "非官方API，可用性取决于上游服务"
-  },
-  {
-    "id": "restcountries",
-    "name": "REST Countries",
-    "description": "世界各国数据查询API",
-    "fullDescription": "提供全球国家详细信息，包括国旗、首都、语言、人口、货币、地区等数据。支持按名称、代码、货币等多种方式查询，返回格式为JSON。完全免费无需API Key，支持CORS跨域请求，适合前端直接调用进行国家相关数据展示。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://restcountries.com/v3.1/all",
-    "baseUrl": "https://restcountries.com/v3.1",
+    "url": "https://ghibliapi.dev/films",
+    "baseUrl": "https://ghibliapi.dev",
     "params": [
       {
-        "name": "fields",
+        "name": "films",
         "type": "string",
         "required": false,
-        "description": "指定返回字段，逗号分隔",
-        "example": "name,capital,flags,population"
-      }
-    ],
-    "responseExample": {
-      "name": {
-        "common": "China",
-        "official": "People's Republic of China"
+        "description": "电影资源",
+        "example": "films"
       },
-      "region": "Asia",
-      "capital": [
-        "Beijing"
-      ],
-      "population": 1439323776
-    },
-    "docUrl": "https://restcountries.com/",
-    "status": "active",
-    "tags": [
-      "国家",
-      "地理",
-      "数据"
-    ],
-    "note": "支持按名称/代码/货币/语言等多维度查询"
-  },
-  {
-    "id": "http-cat",
-    "name": "HTTP Cat",
-    "description": "HTTP状态码对应的猫咪图片",
-    "fullDescription": "HTTP Cat 提供各种 HTTP 状态码对应的猫咪图片，非常适合用于网站错误页面展示或开发调试时使用。每个状态码都有一张独特的猫咪图片，既可爱又实用。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://http.cat/404",
-    "baseUrl": "https://http.cat",
-    "params": [
       {
-        "name": "statusCode",
-        "type": "number",
-        "required": false,
-        "description": "HTTP状态码（如 404、500、200 等）",
-        "example": "404"
-      }
-    ],
-    "responseExample": {
-      "url": "https://http.cat/404"
-    },
-    "docUrl": "https://http.cat/",
-    "status": "active",
-    "tags": [
-      "HTTP",
-      "图片",
-      "猫咪",
-      "状态码"
-    ],
-    "note": "直接返回图片，支持常见 HTTP 状态码"
-  },
-  {
-    "id": "randomduck",
-    "name": "RandomDuck",
-    "description": "随机鸭子图片API",
-    "fullDescription": "RandomDuck 提供随机鸭子图片 API，返回高质量的可爱鸭子照片。无需认证，支持 CORS 跨域请求，可直接在前端应用中使用，适用于动物类应用或作为随机图片源。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://random-d.uk/api/random",
-    "baseUrl": "https://random-d.uk/api",
-    "params": [
-      {
-        "name": "format",
+        "name": "people",
         "type": "string",
         "required": false,
-        "description": "返回格式（json、txt、src）",
-        "example": "json"
-      }
-    ],
-    "responseExample": {
-      "url": "https://random-d.uk/api/random",
-      "message": "https://random-d.uk/api/random/img/duck/001.jpg"
-    },
-    "docUrl": "https://random-d.uk/api",
-    "status": "active",
-    "tags": [
-      "随机",
-      "图片",
-      "鸭子",
-      "动物"
-    ],
-    "note": "支持多种返回格式"
-  },
-  {
-    "id": "dragonball-api",
-    "name": "Dragon Ball API",
-    "description": "龙珠系列角色、生物信息",
-    "fullDescription": "Dragon Ball API 提供龙珠系列的所有角色、生物、地点等信息。包括角色基本信息、能力值、种族、首次登场等详细数据，是龙珠粉丝和应用开发的理想数据源。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://web.dragonball-api.com/characters?page=1&limit=10",
-    "baseUrl": "https://web.dragonball-api.com",
-    "params": [
-      {
-        "name": "page",
-        "type": "number",
-        "required": false,
-        "description": "页码",
-        "example": "1"
+        "description": "角色资源",
+        "example": "people"
       },
       {
-        "name": "limit",
-        "type": "number",
+        "name": "locations",
+        "type": "string",
         "required": false,
-        "description": "每页数量",
-        "example": "10"
+        "description": "地点资源",
+        "example": "locations"
       }
     ],
-    "responseExample": {
-      "documentation": "https://web.dragonball-api.com/docs",
-      "items": [],
-      "meta": {
-        "currentPage": 1,
-        "firstPage": 1,
-        "lastPage": 1,
-        "totalItems": 0
-      },
-      "status": "success"
-    },
-    "docUrl": "https://web.dragonball-api.com/docs",
+    "responseExample": [
+      {
+        "id": "2baf70d1-42dd-44e7-8e23-fa8b4b6f0ffc",
+        "title": "Castle in the Sky",
+        "original_title": "天空の城ラピュタ",
+        "director": "Hayao Miyazaki"
+      }
+    ],
+    "docUrl": "https://ghibliapi.dev/",
     "status": "active",
     "tags": [
-      "龙珠",
       "动漫",
-      "角色",
-      "游戏"
+      "电影",
+      "吉卜力"
     ],
-    "note": "完整的龙珠数据库，支持分页查询"
-  },
-  {
-    "id": "placebear",
-    "name": "PlaceBear",
-    "description": "占位符熊图片服务",
-    "fullDescription": "PlaceBear 提供可自定义尺寸的熊图片占位符服务，类似于 Placehold.co 但使用可爱的熊图片。可以指定宽度、高度来生成对应尺寸的占位图，非常适合开发阶段的 UI 原型设计。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://placebear.com/200/300",
-    "baseUrl": "https://placebear.com",
-    "params": [
-      {
-        "name": "width",
-        "type": "number",
-        "required": false,
-        "description": "图片宽度（像素）",
-        "example": "200"
-      },
-      {
-        "name": "height",
-        "type": "number",
-        "required": false,
-        "description": "图片高度（像素）",
-        "example": "300"
-      }
-    ],
-    "responseExample": {
-      "url": "https://placebear.com/200/300"
-    },
-    "docUrl": "https://placebear.com/",
-    "status": "active",
-    "tags": [
-      "占位符",
-      "图片",
-      "熊",
-      "开发工具"
-    ],
-    "note": "可自定义尺寸的熊占位图"
-  },
-  {
-    "id": "placedog",
-    "name": "PlaceDog",
-    "description": "占位符狗图片服务",
-    "fullDescription": "PlaceDog 提供可自定义尺寸的狗图片占位符服务。支持指定宽度和高度生成对应尺寸的狗图片，还支持选择不同的狗品种。是开发阶段 UI 占位的有趣选择。",
-    "category": "image",
-    "method": "GET",
-    "url": "https://place.dog/200/300",
-    "baseUrl": "https://place.dog",
-    "params": [
-      {
-        "name": "width",
-        "type": "number",
-        "required": false,
-        "description": "图片宽度（像素）",
-        "example": "200"
-      },
-      {
-        "name": "height",
-        "type": "number",
-        "required": false,
-        "description": "图片高度（像素）",
-        "example": "300"
-      },
-      {
-        "name": "breed",
-        "type": "string",
-        "required": false,
-        "description": "狗品种",
-        "example": "labrador"
-      }
-    ],
-    "responseExample": {
-      "url": "https://place.dog/200/300"
-    },
-    "docUrl": "https://place.dog/",
-    "status": "active",
-    "tags": [
-      "占位符",
-      "图片",
-      "狗",
-      "开发工具"
-    ],
-    "note": "可自定义尺寸和品种的狗占位图"
+    "note": "精美的动漫数据源，适合展示用途"
   }
 ]
