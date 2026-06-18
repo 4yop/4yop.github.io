@@ -37,7 +37,8 @@
       "CORS",
       "回显",
       "headers"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "randomuser",
@@ -110,7 +111,8 @@
       "个人信息",
       "mock数据",
       "多国籍"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "picsum-photos",
@@ -169,7 +171,8 @@
       "Unsplash",
       "高清",
       "灰度"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cat-api",
@@ -220,7 +223,8 @@
       "品种信息",
       "随机图片",
       "可爱"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "wttr-in",
@@ -295,7 +299,8 @@
       "终端",
       "多格式",
       "ASCII艺术"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "jokeapi",
@@ -353,7 +358,8 @@
       "娱乐",
       "多分类",
       "安全模式"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "open-meteo",
@@ -434,7 +440,8 @@
       "免费",
       "全球",
       "空气质量"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "dummyimage",
@@ -483,7 +490,8 @@
       "图片生成",
       "原型设计",
       "自定义"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "github-zen",
@@ -505,7 +513,8 @@
       "随机",
       "灵感",
       "编程"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "github-public-api",
@@ -569,7 +578,8 @@
       "Issue",
       "API"
     ],
-    "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时"
+    "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "qr-server",
@@ -626,7 +636,8 @@
       "QR Code",
       "自定义样式",
       "即时生成"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "mymemory-translate",
@@ -678,7 +689,8 @@
       "多语言",
       "免费",
       "API"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "exchangerate-api",
@@ -714,7 +726,8 @@
       "金融",
       "数据"
     ],
-    "note": "免费版更新频率约24小时"
+    "note": "免费版更新频率约24小时",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "openbrewerydb",
@@ -756,7 +769,8 @@
       "数据",
       "地图"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cocktail-db",
@@ -792,7 +806,8 @@
       "食谱",
       "饮品"
     ],
-    "note": "免费开发版有调用频率限制"
+    "note": "免费开发版有调用频率限制",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "free-dictionary",
@@ -837,7 +852,8 @@
       "学习",
       "单词"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "open-trivia",
@@ -889,7 +905,8 @@
       "游戏",
       "教育"
     ],
-    "note": "免费使用，session token可减少重复题目"
+    "note": "免费使用，session token可减少重复题目",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "yesno-api",
@@ -913,7 +930,8 @@
       "随机",
       "决策"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "itunes-rss",
@@ -969,7 +987,8 @@
       "Apple",
       "应用",
       "iOS"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "pokeapi",
@@ -1013,7 +1032,8 @@
       "游戏",
       "图鉴",
       "数据"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "icanhazdadjoke",
@@ -1038,7 +1058,8 @@
       "幽默",
       "技术",
       "娱乐"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "chuck-norris-jokes",
@@ -1062,7 +1083,8 @@
       "趣味",
       "Chuck Norris"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "usgs-earthquake",
@@ -1123,7 +1145,8 @@
       "政府数据",
       "GeoJSON",
       "科学"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "world-bank",
@@ -1180,7 +1203,8 @@
       "经济",
       "数据",
       "政府"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cat-facts",
@@ -1211,7 +1235,8 @@
       "冷知识",
       "动物",
       "宠物"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "exchangerate-host",
@@ -1272,7 +1297,8 @@
       "金融",
       "换算",
       "ECB"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "jikan-anime",
@@ -1343,7 +1369,8 @@
       "番剧",
       "角色"
     ],
-    "note": "非官方API，请勿用于商业高负载场景"
+    "note": "非官方API，请勿用于商业高负载场景",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "artic-chicago",
@@ -1418,7 +1445,8 @@
       "开放数据",
       "文化"
     ],
-    "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license"
+    "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "ipinfo-io",
@@ -1457,7 +1485,8 @@
       "地理定位",
       "ASN",
       "运营商"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "random-dog-api",
@@ -1481,7 +1510,8 @@
       "随机图片",
       "图片URL",
       "可爱"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cataas",
@@ -1532,7 +1562,8 @@
       "GIF",
       "滤镜",
       "动物"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "sunrise-sunset",
@@ -1593,7 +1624,8 @@
       "时间",
       "摄影"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "usaspending",
@@ -1638,7 +1670,8 @@
       "财政",
       "开放数据",
       "预算"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "rick-and-morty",
@@ -1698,7 +1731,8 @@
       "剧集",
       "GraphQL"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "flag-cdn",
@@ -1740,7 +1774,8 @@
       "图片",
       "国家代码",
       "SVG"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "met-museum",
@@ -1791,7 +1826,8 @@
       "藏品",
       "图片",
       "文化"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "robohash",
@@ -1834,7 +1870,8 @@
       "生成器",
       "唯一",
       "匿名"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "randomfox",
@@ -1857,7 +1894,8 @@
       "动物",
       "随机图片",
       "萌宠"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "nager-date",
@@ -1905,7 +1943,8 @@
       "日历",
       "全球",
       "公共假期"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "emoji-hub",
@@ -1952,7 +1991,8 @@
       "随机",
       "Unicode",
       "分类"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "theaudiodb",
@@ -1998,7 +2038,8 @@
       "专辑",
       "封面",
       "歌词"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "kanye-rest",
@@ -2021,7 +2062,8 @@
       "名人",
       "随机",
       "名言"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "dog-facts",
@@ -2055,7 +2097,8 @@
       "宠物",
       "知识",
       "动物"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "itunes-search",
@@ -2114,7 +2157,8 @@
       "媒体",
       "App Store"
     ],
-    "note": "默认20次/分钟速率限制"
+    "note": "默认20次/分钟速率限制",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "useless-facts",
@@ -2150,7 +2194,8 @@
       "随机",
       "百科",
       "多语言"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "freetogame",
@@ -2203,7 +2248,8 @@
       "PC",
       "数据库",
       "游戏推荐"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "radio-browser",
@@ -2258,7 +2304,8 @@
       "音频",
       "流媒体"
     ],
-    "note": " [HTTP 503 Service Unavailable]"
+    "note": " [HTTP 503 Service Unavailable]",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "potterdb",
@@ -2319,7 +2366,8 @@
       "角色",
       "影视",
       "书籍"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "fakerapi",
@@ -2368,7 +2416,8 @@
       "前端测试",
       "本地化"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "deck-of-cards",
@@ -2400,7 +2449,8 @@
       "扑克牌",
       "游戏",
       "卡牌"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "bacon-ipsum",
@@ -2446,7 +2496,8 @@
       "假数据",
       "趣味",
       "美食"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "disease-sh",
@@ -2490,7 +2541,8 @@
       "数据",
       "疫苗",
       "全球"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "hn-algolia",
@@ -2542,7 +2594,8 @@
       "科技",
       "新闻",
       "Algolia"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "spaceflight-news",
@@ -2587,7 +2640,8 @@
       "SpaceX",
       "NASA",
       "航天"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "api-zipcode",
@@ -2632,7 +2686,8 @@
       "地址",
       "地理位置",
       "查询"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "mapty-geocode",
@@ -2684,7 +2739,8 @@
       "经纬度",
       "城市搜索",
       "位置"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "whodat-whois",
@@ -2713,7 +2769,8 @@
       "查询",
       "RDAP"
     ],
-    "note": "开源可自部署"
+    "note": "开源可自部署",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "shields-io",
@@ -2756,7 +2813,8 @@
       "GitHub",
       "README",
       "开源"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "uuid-generator",
@@ -2787,7 +2845,8 @@
       "生成器",
       "唯一标识",
       "ID"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "universities-list",
@@ -2834,7 +2893,8 @@
       "学校",
       "全球",
       "查询"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "hp-characters",
@@ -2864,7 +2924,8 @@
       "魔法",
       "影视",
       "学院"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "met-weather",
@@ -2912,7 +2973,8 @@
       "全球",
       "挪威"
     ],
-    "note": "需要设置User-Agent标识"
+    "note": "需要设置User-Agent标识",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "coinlore-crypto",
@@ -2951,7 +3013,8 @@
       "行情",
       "价格",
       "区块链"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "arul-ip-api",
@@ -2977,7 +3040,8 @@
       "网络",
       "查询",
       "工具"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "thedogapi",
@@ -3027,7 +3091,8 @@
       "宠物",
       "品种",
       "动物"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cloudflare-trace",
@@ -3055,7 +3120,8 @@
       "Cloudflare",
       "Trace",
       "诊断"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "adviceslip",
@@ -3088,7 +3154,8 @@
       "生活小贴士",
       "随机",
       "励志"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "jsonplaceholder",
@@ -3123,114 +3190,8 @@
       "原型",
       "假数据"
     ],
-    "note": "无速率限制，支持GET/POST/PUT/DELETE"
-  },
-  {
-    "id": "agify",
-    "name": "Agify API",
-    "description": "根据姓名预测年龄，无需API Key",
-    "fullDescription": "Agify是一个根据人名预测年龄的趣味API。输入英文名字，返回统计该名字的全球平均年龄、样本数量和预测年龄。数据基于公开社会数据统计，无需认证，CORS全开，非常适合作为前端交互Demo的演示数据源。结合Genderize和Nationalize可做人口统计趣味分析。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.agify.io?name=John",
-    "baseUrl": "https://api.agify.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "英文名字",
-        "example": "John"
-      }
-    ],
-    "responseExample": {
-      "name": "John",
-      "age": 38,
-      "count": 452510
-    },
-    "docUrl": "https://agify.io/",
-    "status": "active",
-    "tags": [
-      "年龄预测",
-      "人名",
-      "统计",
-      "趣味",
-      "人口"
-    ],
-    "note": ""
-  },
-  {
-    "id": "genderize",
-    "name": "Genderize API",
-    "description": "根据姓名预测性别，支持多语言",
-    "fullDescription": "Genderize是一个根据人名预测性别的数据API。输入英文名字，返回统计该名字被认定为男性或女性的概率百分比。数据基于全球社交网络数据统计，样本量大，准确率高。无需认证，CORS全开，响应速度快。适合应用在用户资料自动填充、数据分析、趣味统计等场景。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.genderize.io?name=John",
-    "baseUrl": "https://api.genderize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "英文名字",
-        "example": "John"
-      }
-    ],
-    "responseExample": {
-      "name": "John",
-      "gender": "male",
-      "probability": 0.99,
-      "count": 1016630
-    },
-    "docUrl": "https://genderize.io/",
-    "status": "active",
-    "tags": [
-      "性别预测",
-      "人名",
-      "统计",
-      "概率",
-      "趣味"
-    ],
-    "note": ""
-  },
-  {
-    "id": "nationalize",
-    "name": "Nationalize API",
-    "description": "根据姓名预测国籍来源",
-    "fullDescription": "Nationalize是一个根据人名预测国籍的API。输入英文名字，返回该名字最可能归属的国家及概率百分比。数据基于全球社交网络数据统计。无需认证，CORS全开。与Agify、Genderize出自同一开发者，三个API配合使用可做完整的人名统计趣味分析。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://api.nationalize.io?name=John",
-    "baseUrl": "https://api.nationalize.io",
-    "params": [
-      {
-        "name": "name",
-        "type": "string",
-        "required": true,
-        "description": "英文名字",
-        "example": "John"
-      }
-    ],
-    "responseExample": {
-      "name": "John",
-      "country": [
-        {
-          "country_id": "US",
-          "probability": 0.083
-        }
-      ]
-    },
-    "docUrl": "https://nationalize.io/",
-    "status": "active",
-    "tags": [
-      "国籍预测",
-      "人名",
-      "统计",
-      "概率",
-      "趣味"
-    ],
-    "note": ""
+    "note": "无速率限制，支持GET/POST/PUT/DELETE",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "dog-ceo",
@@ -3263,7 +3224,8 @@
       "宠物",
       "随机"
     ],
-    "note": ""
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "open-food-facts",
@@ -3272,7 +3234,8 @@
     "category": "数据",
     "method": "GET",
     "description": "全球食品产品数据查询",
-    "status": "active"
+    "status": "active",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "tvmaze",
@@ -3281,7 +3244,8 @@
     "category": "娱乐",
     "method": "GET",
     "description": "电视剧信息查询",
-    "status": "active"
+    "status": "active",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "gamerpower",
@@ -3290,7 +3254,8 @@
     "category": "娱乐",
     "method": "GET",
     "description": "免费游戏和Steam福利信息",
-    "status": "active"
+    "status": "active",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "open-notify",
@@ -3316,7 +3281,8 @@
       "ISS",
       "宇航员",
       "科学"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "cheapshark",
@@ -3341,7 +3307,8 @@
       "游戏",
       "折扣",
       "比价"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "dnd-5e",
@@ -3369,7 +3336,8 @@
       "D&D",
       "RPG",
       "游戏"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "datadragon-lol",
@@ -3397,7 +3365,8 @@
       "游戏",
       "LOL",
       "Riot"
-    ]
+    ],
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "animefacts",
@@ -3419,7 +3388,8 @@
       "冷知识",
       "趣味"
     ],
-    "note": "数据托管在GitHub Pages，访问稳定"
+    "note": "数据托管在GitHub Pages，访问稳定",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "iconhorse",
@@ -3451,7 +3421,8 @@
       "网站",
       "工具"
     ],
-    "note": "URL格式：/icon/{domain}，支持多级降级"
+    "note": "URL格式：/icon/{domain}，支持多级降级",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "studio-ghibli",
@@ -3500,7 +3471,8 @@
       "电影",
       "吉卜力"
     ],
-    "note": "精美的动漫数据源，适合展示用途"
+    "note": "精美的动漫数据源，适合展示用途",
+    "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
     "id": "randomuser-me",
@@ -3563,58 +3535,367 @@
       "假数据",
       "用户生成"
     ],
-    "note": "前端开发必备测试数据源"
+    "note": "前端开发必备测试数据源",
+    "lastTested": "2026-06-18T01:39:00.816Z"
+  },
+  {
+    "id": "catfact-ninja",
+    "name": "Cat Facts Ninja",
+    "description": "随机获取猫咪趣闻知识，支持自定义长度",
+    "fullDescription": "Cat Facts Ninja 是一个轻量级的猫咪趣闻 API，提供大量关于猫咪的有趣事实和知识。支持随机获取单条趣闻、指定最大字符长度等参数。返回 JSON 格式数据，无需任何认证或 API Key 即可调用，完全免费且支持 CORS 跨域访问。适合宠物类应用、随机内容展示等场景使用。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://catfact.ninja/fact",
+    "baseUrl": "https://catfact.ninja",
+    "params": [
+      {
+        "name": "max_length",
+        "type": "number",
+        "required": false,
+        "description": "返回文本的最大字符数",
+        "example": 140
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回的趣闻数量(批量模式)",
+        "example": 3
+      }
+    ],
+    "responseExample": {
+      "fact": "Cats have over 20 vocalizations, including the purr that is unique to felines.",
+      "length": 78
+    },
+    "docUrl": "https://catfact.ninja/",
+    "status": "active",
+    "tags": [
+      "猫咪",
+      "趣闻",
+      "动物",
+      "随机"
+    ],
+    "note": "",
+    "lastTested": "2026-06-18T01:39:00.816Z"
+  },
+  {
+    "id": "httpbin-org",
+    "name": "HTTPBin.org",
+    "description": "HTTP请求测试与调试工具API",
+    "fullDescription": "HTTPBin 是一个广泛使用的 HTTP 请求测试服务，提供多种端点用于测试和调试 HTTP 客户端。支持获取客户端 IP、生成 UUID、查看请求头、响应不同状态码、返回 IP 信息等功能。所有端点均免费开放，无需认证，支持 CORS 跨域访问。是前端开发者测试 fetch/axios 请求的理想工具。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://httpbin.org/ip",
+    "baseUrl": "https://httpbin.org",
+    "params": [
+      {
+        "name": "endpoint",
+        "type": "string",
+        "required": true,
+        "description": "端点路径: ip/uuid/get/post/headers/status/:code/delay/:sec 等",
+        "example": "ip"
+      }
+    ],
+    "responseExample": {
+      "origin": "112.96.109.202"
+    },
+    "docUrl": "https://httpbin.org/",
+    "status": "active",
+    "tags": [
+      "HTTP",
+      "测试",
+      "调试",
+      "工具"
+    ],
+    "note": "提供多种端点，主要用于请求测试和调试",
+    "lastTested": "2026-06-18T01:39:00.816Z"
+  },
+  {
+    "id": "lotr-api",
+    "name": "Lord of the Rings API",
+    "description": "魔戒系列书籍、角色、电影和名言数据",
+    "fullDescription": "The Lord of the Rings API（又称 The One API）提供 J.R.R. 托尔金魔戒世界的完整数据，包括书籍章节、电影信息、角色详情、名言引用等。书籍端点(/v2/book)无需 API Key 即可免费访问，返回 JSON 格式的详细数据。其他端点（电影/角色/名言等）需要注册获取 API Key。是文学爱好者和数据展示类应用的理想数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://the-one-api.dev/v2/book",
+    "baseUrl": "https://the-one-api.dev/v2",
+    "params": [
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量限制",
+        "example": 10
+      },
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": 0
+      },
+      {
+        "name": "offset",
+        "type": "number",
+        "required": false,
+        "description": "偏移量",
+        "example": 0
+      }
+    ],
+    "responseExample": {
+      "docs": [
+        {
+          "_id": "5cf5805fb53e9028e2c9f77d",
+          "name": "The Fellowship Of The Ring"
+        }
+      ],
+      "total": 3,
+      "limit": 10,
+      "offset": 0,
+      "page": 0,
+      "pages": 1
+    },
+    "docUrl": "https://the-one-api.dev/",
+    "status": "active",
+    "tags": [
+      "魔戒",
+      "文学",
+      "书籍",
+      "数据"
+    ],
+    "note": "仅/book端点免认证，其他端点需要API Key",
+    "lastTested": "2026-06-18T01:39:00.816Z"
+  },
+  {
+    "id": "ipapi-co",
+    "name": "IPAPI.co 地理位置",
+    "description": "通过IP地址获取详细的地理位置信息",
+    "fullDescription": "IPAPI.co 是一个免费的 IP 地理位置查询服务，可通过 IP 地址获取国家、地区、城市、经纬度、时区、货币、运营商等丰富信息。支持自动检测当前客户端 IP，也支持指定 IP 查询。无需任何认证或 API Key，返回结构化 JSON 数据，支持 CORS 跨域访问。比同类服务提供更详细的位置数据，适合用户画像、安全审计等场景。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://ipapi.co/json/",
+    "baseUrl": "https://ipapi.co",
+    "params": [
+      {
+        "name": "ip",
+        "type": "string",
+        "required": false,
+        "description": "要查询的IP地址（不填则自动检测当前IP）",
+        "example": "8.8.8.8"
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "指定返回字段，逗号分隔",
+        "example": "city,region,country,lat,lng"
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "返回数据的语言",
+        "example": "zh"
+      }
+    ],
+    "responseExample": {
+      "ip": "112.96.109.202",
+      "city": "Beijing",
+      "region": "Beijing",
+      "country_name": "China",
+      "country_code": "CN",
+      "latitude": 39.9042,
+      "longitude": 116.4074,
+      "timezone": "Asia/Shanghai"
+    },
+    "docUrl": "https://ipapi.co/",
+    "status": "active",
+    "tags": [
+      "IP",
+      "地理位置",
+      "定位",
+      "网络"
+    ],
+    "note": "",
+    "lastTested": "2026-06-18T01:55:00.180Z"
+  },
+  {
+    "id": "agify-io",
+    "name": "Agify.io",
+    "description": "根据名字预测年龄API",
+    "fullDescription": "Agify.io 根据给定的名字预测年龄。基于大数据分析，返回预测的年龄、计数和置信度。可以同时批量查询多个名字，还支持按国家代码过滤以获得更精准的预测结果。适合用于展示AI预测能力的演示项目。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.agify.io?name=michael",
+    "baseUrl": "https://api.agify.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要预测的名字",
+        "example": "michael"
+      },
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": false,
+        "description": "国家代码（ISO 3166-1 alpha-2）用于区域化预测",
+        "example": "US"
+      }
+    ],
+    "responseExample": {
+      "count": 123456,
+      "name": "michael",
+      "age": 42,
+      "country_id": null
+    },
+    "docUrl": "https://agify.io/",
+    "status": "active",
+    "tags": [
+      "预测",
+      "年龄",
+      "AI"
+    ],
+    "note": "免费有限制（每月1000次），支持CORS",
+    "lastTested": "2026-06-18T02:01:52.317Z"
+  },
+  {
+    "id": "genderize-io",
+    "name": "Genderize.io",
+    "description": "根据名字预测性别API",
+    "fullDescription": "Genderize.io 根据给定名字预测性别及概率。基于大数据分析，返回预测的性别（male/female）、概率值、计数和置信度。支持批量查询和国家代码过滤。与Agify.io同属同一系列API，常配合使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.genderize.io?name=michael",
+    "baseUrl": "https://api.genderize.io",
+    "params": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "要预测的名字",
+        "example": "michael"
+      },
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": false,
+        "description": "国家代码（ISO 3166-1 alpha-2）用于区域化预测",
+        "example": "US"
+      }
+    ],
+    "responseExample": {
+      "count": 98765,
+      "name": "michael",
+      "gender": "male",
+      "probability": 0.99
+    },
+    "docUrl": "https://genderize.io/",
+    "status": "active",
+    "tags": [
+      "预测",
+      "性别",
+      "AI"
+    ],
+    "note": "免费有限制（每月1000次），支持CORS",
+    "lastTested": "2026-06-18T02:01:52.317Z"
   },
   {
     "id": "nationalize-io",
-    "name": "Nationalize 国籍预测API",
-    "description": "根据姓名推测可能的国籍/国家分布概率",
-    "fullDescription": "Nationalize.io 是一个有趣的 demographic API，可以根据输入的名字推测此人最可能来自哪个国家。基于约10亿条真实姓名数据的统计分析，返回最多5个国家预测及概率分数(ISO 3166-1 alpha-2国家代码)。支持批量查询(一次最多10个名字)，姓氏预测准确率最高。完全免费无需API Key，支持CORS。适合做用户画像分析、人口统计研究、趣味性个人资料补充等功能。",
-    "category": "tool",
+    "name": "Nationalize.io",
+    "description": "根据名字预测国籍API",
+    "fullDescription": "Nationalize.io 根据给定名字预测最可能所属的国家及其概率。返回排名前几的国家代码、名称和概率百分比。支持批量查询，可与Agify.io和Genderize.io配合使用形成完整的个人信息预测工具集。",
+    "category": "data",
     "method": "GET",
-    "url": "https://api.nationalize.io?name=michael&name=sarah&name=yamamoto",
+    "url": "https://api.nationalize.io?name=michael",
     "baseUrl": "https://api.nationalize.io",
     "params": [
       {
         "name": "name",
         "type": "string",
         "required": true,
-        "description": "名字(支持批量name[]=格式)",
+        "description": "要预测的名字",
         "example": "michael"
-      },
-      {
-        "name": "name[]",
-        "type": "array",
-        "required": false,
-        "description": "批量名字查询(最多10个)",
-        "example": [
-          "michael",
-          "sarah"
-        ]
       }
     ],
-    "responseExample": [
-      {
-        "name": "michael",
-        "country": [
-          {
-            "country_id": "US",
-            "probability": 0.089
-          },
-          {
-            "country_id": "AU",
-            "probability": 0.058
-          }
-        ]
-      }
-    ],
+    "responseExample": {
+      "count": 123456,
+      "name": "michael",
+      "country": [
+        {
+          "country_id": "US",
+          "probability": 0.45
+        },
+        {
+          "country_id": "GB",
+          "probability": 0.12
+        }
+      ]
+    },
     "docUrl": "https://nationalize.io/",
     "status": "active",
     "tags": [
-      "人口统计",
-      "趣味",
-      "数据分析"
+      "预测",
+      "国籍",
+      "AI"
     ],
-    "note": "10亿+数据支撑，姓氏预测最准"
+    "note": "免费有限制（每月1000次），支持CORS",
+    "lastTested": "2026-06-18T02:01:52.317Z"
+  },
+  {
+    "id": "themealdb",
+    "name": "TheMealDB",
+    "description": "全球食谱数据库API",
+    "fullDescription": "TheMealDB 提供全球各地的美食食谱数据，包含近300种食谱。支持按菜名、食材、分类（主餐/甜点/饮料等）、区域（意式/中式/日式等）搜索。返回食谱名称、食材清单、制作步骤说明、图片和YouTube视频链接。非常适合美食类应用开发。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata",
+    "baseUrl": "https://www.themealdb.com",
+    "params": [
+      {
+        "name": "s",
+        "type": "string",
+        "required": false,
+        "description": "搜索菜名关键词",
+        "example": "Arrabiata"
+      },
+      {
+        "name": "f",
+        "type": "string",
+        "required": false,
+        "description": "按首字母筛选",
+        "example": "a"
+      },
+      {
+        "name": "i",
+        "type": "string",
+        "required": false,
+        "description": "按食材ID查找",
+        "example": "52772"
+      }
+    ],
+    "responseExample": {
+      "meals": [
+        {
+          "idMeal": "52850",
+          "strMeal": "Apam Balik",
+          "strCategory": "Dessert",
+          "strArea": "Malaysian",
+          "strInstructions": "Cook the pasta in salted water...",
+          "strMealThumb": "https://themealdb.com/images/media/meals/adxbbq1483385.jpg",
+          "strIngredients": []
+        }
+      ]
+    },
+    "docUrl": "https://www.themealdb.com/api.php",
+    "status": "active",
+    "tags": [
+      "食谱",
+      "美食",
+      "数据"
+    ],
+    "note": "免费无限制，支持CORS",
+    "lastTested": "2026-06-18T02:01:52.317Z"
   }
 ]

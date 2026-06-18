@@ -2759,5 +2759,35 @@
     "features": "垂直场景型AI智能体，将OpenClaw能力引入华为鸿蒙生态；深度整合小艺语音助手能力；支持智能家居控制、移动办公、日程管理等场景；面向华为设备用户的智能化升级方案",
     "website": "https://www.huawei.com/",
     "source": "CSDN《国产AI智能体龙虾全景报告》"
+  },
+  {
+    "id": 368,
+    "name": "Xiaomi MiMo Claw",
+    "developer": "小米",
+    "releaseTime": "2026.06.16",
+    "deployment": "全云端托管模式，无需本地部署，7×24小时在线",
+    "features": "依托小米MiMo-V2.5-Pro大模型打造，原生兼容MCP工具调用协议；一键部署OpenClaw智能体；与金山办公达成合作，打通Word/Excel/PPT/PDF等95%以上主流文档格式；百万级超长上下文架构，支撑单会话千次以上连续工具调用；MTP三层解码架构，任务推理效率提升约3倍；ClawEval测试达标率63.8%，Token消耗降低40%-60%；免费用户每日4小时时长，首月订阅14.9元；支持后台任务续跑、自主纠错、多任务并行",
+    "website": "https://www.mi.com/mimoclaw",
+    "source": "新浪科技/快科技 2026.06.16"
+  },
+  {
+    "id": 369,
+    "name": "AIS Agent+",
+    "developer": "长亮科技",
+    "releaseTime": "2026.06.16",
+    "deployment": "企业级私有化部署，支持云端和本地混合模式",
+    "features": "长亮科技重磅首发的金融智能体产品体系；Workspace-as-a-Service架构创新设计；通用大脑+规则塑化模式构建专属数字沙箱工作区；四层架构（接入层+编排与资产层+运行引擎层+基础设施层）；Plan-based规划引擎与SOP标准化执行体系；物理沙箱一会话一隔离机制；精细化权限管控与全链路数据加密；已落地责任利润归因、杜邦分析、营销洞察、智能报销等多个金融业务场景；亮相2026中国国际金融展",
+    "website": "https://www.sunlight.cn/",
+    "source": "今日头条 2026.06.16"
+  },
+  {
+    "id": 370,
+    "name": "NoteClaw龙虾助手「天天」",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.06",
+    "deployment": "讯飞办公本X5系列内置系统功能",
+    "features": "科大讯飞推出的办公本内置龙虾助手；搭载个人知识引擎能力；支持X5及X5 Pro型号；系统级深度集成，无需额外安装；面向办公场景的知识管理与智能助手；实现AI能力与硬件的深度融合",
+    "website": "https://www.xfyun.cn/",
+    "source": "新浪财经 2026.06"
   }
 ]
