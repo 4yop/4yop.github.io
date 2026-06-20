@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18",
+  "updatedAt": "2026-06-21",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1691,5 +1691,5 @@
       }
     }
   ],
-  "lastUpdateTime": "2026-06-16T12:00:00.000Z"
+  "lastUpdateTime": "2026-06-21T01:12:14.000Z"
 }
