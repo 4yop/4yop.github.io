@@ -2789,5 +2789,45 @@
     "features": "科大讯飞推出的办公本内置龙虾助手；搭载个人知识引擎能力；支持X5及X5 Pro型号；系统级深度集成，无需额外安装；面向办公场景的知识管理与智能助手；实现AI能力与硬件的深度融合",
     "website": "https://www.xfyun.cn/",
     "source": "新浪财经 2026.06"
+  },
+  {
+    "id": 371,
+    "name": "龙盒 Claw AI",
+    "developer": "诚迈科技",
+    "releaseTime": "2026.03.22",
+    "deployment": "硬件一体机（1000T算力/128G内存），支持本地大模型运行",
+    "features": "120B本地大模型预装+10个龙虾应用；数据不出域，满足企业合规需求；法律版支持合同审查/案情分析/文书生成；龙宫Claw平台支持龙虾领养/培育/交易",
+    "website": "https://www.deepcomputing.io/",
+    "source": "掘金《国产化适配的Claw产品大盘点》2026.06"
+  },
+  {
+    "id": 372,
+    "name": "aoniclaw",
+    "developer": "奥尼电子",
+    "releaseTime": "2026.03",
+    "deployment": "硬件工作站+云端Token工厂",
+    "features": "个人AI工作站算力50-2070TOPS逐级提升；首创平衡/领先/堡垒三大安全模式；预装2000+技能包及飞书/钉钉/微信等多平台适配插件；旗舰款A2000采用英伟达高端芯片架构，支持120B+参数大模型本地运行",
+    "website": "https://www.aoni.cc/",
+    "source": "掘金《国产化适配的Claw产品大盘点》2026.06"
+  },
+  {
+    "id": 373,
+    "name": "奥尼AI Agent OS",
+    "developer": "奥尼电子",
+    "releaseTime": "2026.06.09",
+    "deployment": "端侧Agent操作系统（基于NVIDIA JetsonThor），面向政务/企业私有化场景",
+    "features": "专为本地化而生的端侧Agent OS；统一调度智能体/连接业务系统/沉淀知识资产；支持多智能体高效协同；完成40余款开源模型在JetsonThor上的适配",
+    "website": "https://www.aoni.cc/",
+    "source": "千龙网/奥尼官方发布 2026.06.11"
+  },
+  {
+    "id": 374,
+    "name": "iPollo Claw",
+    "developer": "Nano Labs（毫微科技）",
+    "releaseTime": "2026.03",
+    "deployment": "边缘算力设备，深圳茂业天地设有全球首个OpenClaw硬件展厅",
+    "features": "支持本地零Token持续运行；兼容AMD本地算力演示；5-10分钟完成硬件镜像烧录与智能体初始化；支持智能眼镜/桌面机器人等具身智能集成",
+    "website": "https://www.nanolabs.com/",
+    "source": "AICost/Blog《全球首个OpenClaw硬件展厅震撼落地深圳》2026.03"
   }
 ]

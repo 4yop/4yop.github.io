@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21",
+  "updatedAt": "2026-06-22",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1733,7 +1733,22 @@
           "Llama3-Chinese-8B-Instruct"
         ]
       }
+    },
+    {
+      "name": "Glhf.chat",
+      "quota": "免费开源模型推理API（Beta公测期完全免费）；30 RPM 速率限制；支持 Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct；基于 vLLM + 自动扩缩GPU调度器，可运行几乎任何HuggingFace开源模型；最大支持8个NVIDIA A100 80GB GPU；OpenAI兼容API格式；无需信用卡",
+      "cycle": "永久免费层（Beta公测阶段，30 RPM 限制；公测结束后价格低于主流云GPU提供商）",
+      "url": "https://glhf.chat",
+      "develop": {
+        "document_url": "https://glhf.chat",
+        "base_url": "https://glhf.chat/api/openai/v1",
+        "models": [
+          "hf:meta-llama/Llama-3.1-70B-Instruct",
+          "hf:mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "hf:microsoft/Phi-3-mini-4k-instruct"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-21T15:30:55.000Z"
+  "lastUpdateTime": "2026-06-22T09:00:00.000Z"
 }
