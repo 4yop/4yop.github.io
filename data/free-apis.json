@@ -2295,7 +2295,7 @@
       }
     ],
     "docUrl": "https://api.radio-browser.info/",
-    "status": "unstable",
+    "status": "active",
     "tags": [
       "电台",
       "广播",
@@ -2496,51 +2496,6 @@
       "假数据",
       "趣味",
       "美食"
-    ],
-    "lastTested": "2026-06-18T01:39:00.816Z"
-  },
-  {
-    "id": "disease-sh",
-    "name": "Disease.sh",
-    "description": "全球COVID-19等疫情数据API",
-    "fullDescription": "开放源码的疾病数据API，聚合WHO、JHU CSSE等多个数据源。提供全球/国家疫情数据，包括累计/新增确诊、死亡、康复、疫苗接种等。支持历史数据查询。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://disease.sh/v3/covid-19/all",
-    "baseUrl": "https://disease.sh/v3",
-    "params": [
-      {
-        "name": "country",
-        "type": "string",
-        "required": false,
-        "description": "国家名或ISO代码（路径参数）",
-        "example": "CN"
-      },
-      {
-        "name": "yesterday",
-        "type": "boolean",
-        "required": false,
-        "description": "使用昨日数据",
-        "example": "true"
-      }
-    ],
-    "responseExample": {
-      "updated": 1703232000000,
-      "cases": 700000000,
-      "todayCases": 100000,
-      "deaths": 7000000,
-      "recovered": 670000000,
-      "active": 23000000,
-      "affectedCountries": 230
-    },
-    "docUrl": "https://disease.sh/",
-    "status": "active",
-    "tags": [
-      "COVID-19",
-      "疫情",
-      "数据",
-      "疫苗",
-      "全球"
     ],
     "lastTested": "2026-06-18T01:39:00.816Z"
   },
@@ -3255,33 +3210,6 @@
     "method": "GET",
     "description": "免费游戏和Steam福利信息",
     "status": "active",
-    "lastTested": "2026-06-18T01:39:00.816Z"
-  },
-  {
-    "id": "open-notify",
-    "name": "Open Notify 国际空间站",
-    "description": "实时获取国际空间站位置和宇航员信息",
-    "fullDescription": "Open Notify 提供的太空API，可查询国际空间站实时经纬度位置、当前在站宇航员名单。数据来自NASA实时追踪，适合天文爱好者。",
-    "category": "data",
-    "method": "GET",
-    "url": "http://api.open-notify.org/iss-now.json",
-    "baseUrl": "http://api.open-notify.org",
-    "params": [],
-    "responseExample": {
-      "iss_position": {
-        "latitude": "40.0",
-        "longitude": "-74.0"
-      },
-      "timestamp": 1680000000
-    },
-    "docUrl": "http://open-notify.org/",
-    "status": "active",
-    "tags": [
-      "太空",
-      "ISS",
-      "宇航员",
-      "科学"
-    ],
     "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
