@@ -1689,7 +1689,51 @@
           "bytedance-seed/dola-seed-2.0-pro:free"
         ]
       }
+    },
+    {
+      "name": "Venice AI",
+      "quota": "隐私优先的AI推理平台，去中心化GPU节点运行开源模型；免费层10 RPM速率限制；支持Llama 3.1 405B（128K上下文）、Dolphin Mixtral（32K上下文）、Stable Diffusion 3（图像生成）；100%隐私保证，无数据日志；无需KYC即可注册获取API Key；支持OpenAI兼容API格式",
+      "cycle": "永久免费层（每日重置，10 RPM限制）",
+      "url": "https://venice.ai",
+      "develop": {
+        "document_url": "https://docs.venice.ai",
+        "base_url": "https://api.venice.ai/api/v1",
+        "models": [
+          "llama-3.1-405b",
+          "dolphin-mixtral",
+          "stable-diffusion-3"
+        ]
+      }
+    },
+    {
+      "name": "Free-QWQ（分布式AI算力）",
+      "quota": "完全免费、无使用限制的 QwQ-32B 大语言模型 API（阿里开源Qwen系列）；基于全国各地50台家用电脑的3090/4080/4090显卡分布式算力；无需注册即可获取API Key；高峰时段可能需要短暂排队；支持OpenAI兼容API格式；专用线路需注册后使用（更稳定、低延迟）",
+      "cycle": "永久免费（无使用次数限制；高峰时段需排队）",
+      "url": "https://qwq.aigpu.cn",
+      "develop": {
+        "document_url": "https://qwq.aigpu.cn/",
+        "base_url": "https://api.suanli.cn/v1",
+        "models": [
+          "qwq-32b"
+        ]
+      }
+    },
+    {
+      "name": "Llama Family（AtomEcho）",
+      "quota": "免费API调用Atom系列中文大模型：Atom-13B-Chat（130亿参数）、Atom-7B-Chat（70亿参数）、Atom-1B-Chat、Llama3-Chinese-8B-Instruct；每日8:00-22:00限速20 RPM，22:00-次日8:00限速50 RPM；多语言语料训练，中文能力优秀；支持OpenAI兼容API格式；模型在GitHub（14K Stars）、HuggingFace、ModelScope均可下载",
+      "cycle": "永久免费（分时段速率限制：高峰20 RPM，低谷50 RPM）",
+      "url": "https://llama.family",
+      "develop": {
+        "document_url": "https://llama.family/docs/chat-completion-v1",
+        "base_url": "https://api.atomecho.cn/v1",
+        "models": [
+          "Atom-13B-Chat",
+          "Atom-7B-Chat",
+          "Atom-1B-Chat",
+          "Llama3-Chinese-8B-Instruct"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-21T01:12:14.000Z"
+  "lastUpdateTime": "2026-06-21T15:30:55.000Z"
 }

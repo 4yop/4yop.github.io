@@ -3897,5 +3897,149 @@
     ],
     "note": "免费无限制，支持CORS",
     "lastTested": "2026-06-18T02:01:52.317Z"
+  },
+  {
+    "id": "ice-and-fire",
+    "name": "冰与火之歌 API",
+    "description": "《冰与火之歌》书籍角色数据",
+    "fullDescription": "An API of Ice and Fire 提供《冰与火之歌/权力的游戏》系列的角色、书籍和房屋数据。无需认证即可访问所有内容，支持分页和过滤。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://anapioficeandfire.com/api/characters/583",
+    "baseUrl": "https://anapioficeandfire.com/api",
+    "docUrl": "https://anapioficeandfire.com",
+    "status": "active",
+    "tags": [
+      "影视",
+      "书籍",
+      "奇幻"
+    ],
+    "note": ""
+  },
+  {
+    "id": "breaking-bad-quotes",
+    "name": "Breaking Bad 名言",
+    "description": "《绝命毒师》经典台词随机生成",
+    "fullDescription": "Breaking Bad Quotes API 随机返回《绝命毒师》剧集中的经典台词，每次请求返回一条随机名言及角色名。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://api.breakingbadquotes.xyz/v1/quotes",
+    "baseUrl": "https://api.breakingbadquotes.xyz/v1",
+    "docUrl": "https://github.com/shevabam/breaking-bad-quotes",
+    "status": "active",
+    "tags": [
+      "影视",
+      "名言",
+      "娱乐"
+    ],
+    "note": ""
+  },
+  {
+    "id": "iseven-api",
+    "name": "isEven 奇偶判断",
+    "description": "判断数字是奇数还是偶数",
+    "fullDescription": "isEven API 是一个简单有趣的工具 API，传入任意整数即可判断它是奇数还是偶数。返回结果包括数字本身和是否偶数的布尔值。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.isevenapi.xyz/api/iseven/12/",
+    "baseUrl": "https://api.isevenapi.xyz/api",
+    "docUrl": "https://isevenapi.xyz",
+    "status": "active",
+    "tags": [
+      "工具",
+      "数学",
+      "趣味"
+    ],
+    "note": ""
+  },
+  {
+    "id": "quickchart",
+    "name": "QuickChart 图表生成",
+    "description": "通过URL参数生成图表图片",
+    "fullDescription": "QuickChart 是一个开源的图表生成服务，通过URL参数即可生成各种统计图表（柱状图、折线图、饼图等）为图片，无需后端渲染。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://quickchart.io/chart?c={type:'bar',data:{labels:['A','B'],datasets:[{label:'V',data:[1,2]}]}}",
+    "baseUrl": "https://quickchart.io",
+    "docUrl": "https://quickchart.io",
+    "status": "active",
+    "tags": [
+      "图表",
+      "图片",
+      "工具"
+    ],
+    "note": ""
+  },
+  {
+    "id": "citybikes",
+    "name": "CityBikes 全球共享单车",
+    "description": "全球共享单车网络数据",
+    "fullDescription": "CityBikes API 提供全球各大城市共享单车系统的网络数据，包括站点位置、可用车辆数和停车位等信息。无需认证即可免费使用。",
+    "category": "data",
+    "method": "GET",
+    "url": "http://api.citybik.es/v2/networks",
+    "baseUrl": "http://api.citybik.es/v2",
+    "docUrl": "http://api.citybik.es",
+    "status": "active",
+    "tags": [
+      "交通",
+      "地理",
+      "城市"
+    ],
+    "note": ""
+  },
+  {
+    "id": "mcu-countdown",
+    "name": "MCU 电影倒计时",
+    "description": "下一部漫威电影上映倒计时",
+    "fullDescription": "MCU Countdown API 返回下一部漫威电影宇宙（MCU）电影的名称、上映日期和倒计时天数。极简接口，适合粉丝站点。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://www.whenisthenextmcufilm.com/api",
+    "baseUrl": "https://www.whenisthenextmcufilm.com",
+    "docUrl": "https://www.whenisthenextmcufilm.com",
+    "status": "active",
+    "tags": [
+      "影视",
+      "漫威",
+      "娱乐"
+    ],
+    "note": ""
+  },
+  {
+    "id": "finalspace",
+    "name": "Final Space API",
+    "description": "《太空终界》动画角色数据",
+    "fullDescription": "Final Space API 提供动画片《太空终界》的角色、剧集和地点数据，支持随机查询和按ID查询。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://finalspaceapi.com/api/v0/episode/",
+    "baseUrl": "https://finalspaceapi.com/api/v0",
+    "docUrl": "https://finalspaceapi.com/docs",
+    "status": "active",
+    "tags": [
+      "动漫",
+      "影视",
+      "娱乐"
+    ],
+    "note": ""
+  },
+  {
+    "id": "stapi",
+    "name": "STAPI 星际迷航",
+    "description": "《星际迷航》全系列数据查询",
+    "fullDescription": "STAPI 提供《星际迷航》全系列的角色、飞船、星球、剧集等数据，适合粉丝或星际迷航主题项目。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://stapi.co/api/v2/rest/spacecraft/search",
+    "baseUrl": "https://stapi.co/api/v2/rest",
+    "docUrl": "https://stapi.co",
+    "status": "active",
+    "tags": [
+      "影视",
+      "科幻",
+      "娱乐"
+    ],
+    "note": ""
   }
 ]
