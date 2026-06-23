@@ -2829,5 +2829,65 @@
     "features": "支持本地零Token持续运行；兼容AMD本地算力演示；5-10分钟完成硬件镜像烧录与智能体初始化；支持智能眼镜/桌面机器人等具身智能集成",
     "website": "https://www.nanolabs.com/",
     "source": "AICost/Blog《全球首个OpenClaw硬件展厅震撼落地深圳》2026.03"
+  },
+  {
+    "name": "360龙虾卫士",
+    "developer": "三六零（360）",
+    "releaseTime": "2026.03.14",
+    "deployment": "本地客户端安装，支持Win10及以上64位系统，采用WSL虚拟化沙箱隔离",
+    "features": [
+      "双引擎协同防护：360安全大脑+360智脑联动识别Skill风险与逻辑异常",
+      "九大防护能力：敏感文件保护、破坏性操作拦截、提示注入防护、漏洞扫描等",
+      "四级信任机制：官方认证/第三方/自定义/未知来源分级权限管控",
+      "以模治模：AI安全引擎主动识别未知威胁，打破传统方案局限"
+    ],
+    "website": "https://clawsafe.360.cn/",
+    "source": "WebSearch-2026-06-23",
+    "id": 375
+  },
+  {
+    "name": "奇安信龙虾安全伴侣",
+    "developer": "奇安信集团",
+    "releaseTime": "2026.03.16",
+    "deployment": "SaaS托管订阅或企业私有化部署，端-网-云三层架构",
+    "features": [
+      "端-网-云三层联动防护体系：终端探针+安全网关+云端分析",
+      "三大核心价值：看得清（全景可视）、管得住（权限管控）、用得好（性能优化）",
+      "通过中国信通院OpenClaw类智能体安全防护产品能力评测（首批）",
+      "配套SAFESKILL平台：开放式Skill安全性鉴定与供应链安检"
+    ],
+    "website": "https://clawsec.qianxin.com/",
+    "source": "WebSearch-2026-06-23",
+    "id": 376
+  },
+  {
+    "name": "小龙虾（Openclaw-cn）",
+    "developer": "开源社区维护",
+    "releaseTime": "2026.02",
+    "deployment": "本地部署 + 国内一键脚本安装",
+    "features": [
+      "OpenClaw社区汉化分支，降低国内用户上手门槛",
+      "适配中文办公链路：微信/钉钉/飞书等国内IM原生接入",
+      "默认配置DeepSeek等国内可直连模型，无需海外API Key",
+      "社区维护更新及时，修复原版在国内环境的兼容性问题"
+    ],
+    "website": "https://github.com/openclaw-cn/openclaw-cn",
+    "source": "WebSearch-2026-06-23",
+    "id": 377
+  },
+  {
+    "name": "阶跃AI桌面版（StepClaw）",
+    "developer": "阶跃星辰",
+    "releaseTime": "2026.03.12",
+    "deployment": "云端 + 本地桌面端双模式（Electron），Win/Mac支持",
+    "features": [
+      "双层架构：Electron壳+内嵌OC框架，云端step-alpha推理+本地执行",
+      "全局记忆：屏幕捕获+OCR喂给云端做上下文感知，自动生成日报",
+      "水产市场：5000+可组合技能模块（Skill/插件/触发器/频道/经验包）",
+      "三种模式切换：快速问答→任务执行→StepClaw多智能体模式"
+    ],
+    "website": "https://www.stepfun.com/",
+    "source": "WebSearch-2026-06-23",
+    "id": 378
   }
 ]

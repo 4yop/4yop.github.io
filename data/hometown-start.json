@@ -15033,5 +15033,38 @@
     ],
     "source": "百度百科",
     "avatar": "玄彬.webp"
+  },
+  {
+    "name": "包洪瑜",
+    "hometowns": [
+      [
+        "四川省",
+        "成都市",
+        ""
+      ]
+    ],
+    "birthday": "2004-05-07",
+    "tags": [
+      "演员"
+    ],
+    "source": "WebSearch",
+    "avatar": "包洪瑜.webp"
+  },
+  {
+    "name": "兰西雅",
+    "hometowns": [
+      [
+        "湖北省",
+        "恩施市",
+        ""
+      ]
+    ],
+    "birthday": "1998-12-22",
+    "tags": [
+      "演员",
+      "歌手"
+    ],
+    "source": "WebSearch",
+    "avatar": "兰西雅.webp"
   }
 ]
