@@ -3595,59 +3595,6 @@
     "lastTested": "2026-06-18T01:39:00.816Z"
   },
   {
-    "id": "ipapi-co",
-    "name": "IPAPI.co 地理位置",
-    "description": "通过IP地址获取详细的地理位置信息",
-    "fullDescription": "IPAPI.co 是一个免费的 IP 地理位置查询服务，可通过 IP 地址获取国家、地区、城市、经纬度、时区、货币、运营商等丰富信息。支持自动检测当前客户端 IP，也支持指定 IP 查询。无需任何认证或 API Key，返回结构化 JSON 数据，支持 CORS 跨域访问。比同类服务提供更详细的位置数据，适合用户画像、安全审计等场景。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://ipapi.co/json/",
-    "baseUrl": "https://ipapi.co",
-    "params": [
-      {
-        "name": "ip",
-        "type": "string",
-        "required": false,
-        "description": "要查询的IP地址（不填则自动检测当前IP）",
-        "example": "8.8.8.8"
-      },
-      {
-        "name": "fields",
-        "type": "string",
-        "required": false,
-        "description": "指定返回字段，逗号分隔",
-        "example": "city,region,country,lat,lng"
-      },
-      {
-        "name": "lang",
-        "type": "string",
-        "required": false,
-        "description": "返回数据的语言",
-        "example": "zh"
-      }
-    ],
-    "responseExample": {
-      "ip": "112.96.109.202",
-      "city": "Beijing",
-      "region": "Beijing",
-      "country_name": "China",
-      "country_code": "CN",
-      "latitude": 39.9042,
-      "longitude": 116.4074,
-      "timezone": "Asia/Shanghai"
-    },
-    "docUrl": "https://ipapi.co/",
-    "status": "active",
-    "tags": [
-      "IP",
-      "地理位置",
-      "定位",
-      "网络"
-    ],
-    "note": "",
-    "lastTested": "2026-06-18T01:55:00.180Z"
-  },
-  {
     "id": "agify-io",
     "name": "Agify.io",
     "description": "根据名字预测年龄API",
@@ -3841,24 +3788,6 @@
       "影视",
       "书籍",
       "奇幻"
-    ],
-    "note": ""
-  },
-  {
-    "id": "breaking-bad-quotes",
-    "name": "Breaking Bad 名言",
-    "description": "《绝命毒师》经典台词随机生成",
-    "fullDescription": "Breaking Bad Quotes API 随机返回《绝命毒师》剧集中的经典台词，每次请求返回一条随机名言及角色名。",
-    "category": "entertainment",
-    "method": "GET",
-    "url": "https://api.breakingbadquotes.xyz/v1/quotes",
-    "baseUrl": "https://api.breakingbadquotes.xyz/v1",
-    "docUrl": "https://github.com/shevabam/breaking-bad-quotes",
-    "status": "active",
-    "tags": [
-      "影视",
-      "名言",
-      "娱乐"
     ],
     "note": ""
   },
