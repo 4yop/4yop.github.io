@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23",
+  "updatedAt": "2026-06-24",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -953,6 +953,7 @@
         "models": [
           "Qwen3-Coder-Next",
           "Qwen3-1.7B",
+          "Qwen3.6-35B-A3B",
           "Qwen3.5-35B-A3B",
           "GLM-5",
           "MiniMax-M2.5",

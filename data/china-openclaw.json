@@ -2889,5 +2889,33 @@
     "website": "https://www.stepfun.com/",
     "source": "WebSearch-2026-06-23",
     "id": 378
+  },
+  {
+    "id": 379,
+    "name": "大圆",
+    "developer": "腾讯（企业微信团队）",
+    "releaseTime": "2026.06.23",
+    "deployment": "企业微信内置，左侧轻滑即可唤起，无需独立安装",
+    "features": [
+      "基于企业微信内群聊/文档/会议/邮件/日程等工作数据自动理解用户诉求",
+      "左侧轻滑即可唤起，智能识别当前界面辅助解决问题",
+      "未来将切入客户经营场景，连接微信生态"
+    ],
+    "website": "https://work.weixin.qq.com/",
+    "source": "腾讯网 2026.06.23"
+  },
+  {
+    "id": 380,
+    "name": "QQ邮箱Agently Mail",
+    "developer": "腾讯（QQ邮箱团队）",
+    "releaseTime": "2026.06.23",
+    "deployment": "QQ邮箱内置AI Agent邮箱，OAuth授权，内测阶段",
+    "features": [
+      "为智能Agent量身打造的AI邮箱，依托AI能力深度融入日常办公与生活场景",
+      "完整的收发件能力（内测期间限制每日发件50封）",
+      "采用更安全的OAuth授权机制"
+    ],
+    "website": "https://mail.qq.com/",
+    "source": "太平洋科技 2026.06.23"
   }
 ]
