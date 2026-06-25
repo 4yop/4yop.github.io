@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24",
+  "updatedAt": "2026-06-25",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1073,8 +1073,8 @@
     },
     {
       "name": "NVIDIA NIM (build.nvidia.com)",
-      "quota": "新用户获得 1,000 credits（可再申请 4,000，合计 5,000 credits；1 credit≈1K tokens；有效期可选Never Expire永久有效）；免费API端点支持225+模型；40 RPM速率限制（可通过NVIDIA开发者论坛申请提升至200 RPM）；需手机号验证（中国大陆+86可收验证码）；支持 MiniMax M2.7、Kimi K2系列、Qwen3 Coder 480B、Devstral 123B、DeepSeek V4/R1等主流模型；完全兼容OpenAI ChatCompletion格式",
-      "cycle": "每日重置（永久免费层）",
+      "quota": "永久免费（纯速率限制模式，无Token额度/无Credits限制）；193+模型（DeepSeek-V4/V3/R1、Kimi-K2.5/K2.6、GLM-5.1/4.7、Qwen3.5/3-Coder、MiniMax-M2.5/M2.7、Llama-4/3.3/3.1、Nemotron-3-Super/Nano、Mistral、Gemma、Phi等）；大模型约40 RPM、小模型约60 RPM；单次max_tokens约4096；上下文窗口128K-1M；完全免费、无需绑卡；支持中国大陆直连+手机号验证（+86）；完全兼容OpenAI格式",
+      "cycle": "每日重置（永久免费层，纯速率限制模式）",
       "url": "https://build.nvidia.com",
       "develop": {
         "document_url": "https://build.nvidia.com/docs",
@@ -1658,23 +1658,6 @@
       }
     },
     {
-      "name": "LLM7.io",
-      "quota": "5款模型永久免费（无需信用卡）：gpt-4o-mini（131K上下文，免费层罕见OpenAI模型）、deepseek-r1-0528（131K）、deepseek-v3-0324（131K）、mistral-small-3.1-24b（32K）、qwen2.5-coder-32b（131K）；30 RPM 速率限制（注册token后提升至120 RPM）；独立API聚合平台，非中转站",
-      "cycle": "永久免费（30 RPM速率限制；注册token可提升至120 RPM）",
-      "url": "https://token.llm7.io",
-      "develop": {
-        "document_url": "https://freellm.net/providers/llm7-io/",
-        "base_url": "https://api.llm7.io/v1",
-        "models": [
-          "gpt-4o-mini",
-          "deepseek-r1-0528",
-          "deepseek-v3-0324",
-          "mistral-small-3.1-24b",
-          "qwen2.5-coder-32b"
-        ]
-      }
-    },
-    {
       "name": "Kilo Gateway (Kilo Code)",
       "quota": "Free/Trial 层：$0 永久免费 + 新用户赠送 $5 初始额度；5款免费编码模型（MiniMax M2.5:free、NVIDIA Nemotron 3 Super 120B:free、Arcee Trinity Large Thinking:free、xAI Grok Code Fast 1:free、ByteDance Seed 2.0 Pro:free）；~200 请求/小时免费速率；支持 BYOK（自带Key）模式接入350+付费模型；OpenAI 兼容 API；面向 AI 编程场景优化路由",
       "cycle": "永久免费层（$0/月 + $5初始额度；免费模型~200 req/hr；BYOK模式按供应商计费）",
@@ -1749,7 +1732,83 @@
           "hf:microsoft/Phi-3-mini-4k-instruct"
         ]
       }
+    },
+    {
+      "name": "DMXAPI（大模型聚合）",
+      "quota": "免费专区：Qwen3-8B、GLM-4.7-Flash、豆包Seedance视频模型永久免费调用；聚合300+多模态大模型（文生文/文生图/文生视频/文生音频）；LangChain中文网络出品；企业级API集中采购平台",
+      "cycle": "免费专区永久免费；付费模型按量计费",
+      "url": "https://dmxapi.cn/",
+      "develop": {
+        "document_url": "https://dmxapi.cn/docs",
+        "base_url": "https://api.dmxapi.com/v1",
+        "models": [
+          "qwen3-8b",
+          "glm-4.7-flash",
+          "seedance-video",
+          "gpt-image-2",
+          "suno-music",
+          "deepseek-chat",
+          "claude-sonnet",
+          "gpt-4o"
+        ]
+      }
+    },
+    {
+      "name": "起零数据（iStero）",
+      "quota": "面向企业与个人提供免费API接口，已全面接入DeepSeek-R1满血版、通义Qwen3.7-plus/Qwen-Max/QwQ-32B、豆包AI pro-256k/1.5-pro-32k等AI模型；另提供生活服务/趣味娱乐/信息资讯/工具应用等数百个免费API",
+      "cycle": "注册即免费用；部分接口有调用次数限制",
+      "url": "https://api.istero.com/",
+      "develop": {
+        "document_url": "https://api.istero.com/help",
+        "base_url": "https://api.istero.com/v1",
+        "models": [
+          "deepseek-r1",
+          "qwen3.7-plus",
+          "qwen-max",
+          "qwq-32b",
+          "doubao-pro-256k",
+          "doubao-1.5-pro-32k",
+          "tongyi-vl-plus"
+        ]
+      }
+    },
+    {
+      "name": "TOKEN自由（DXNT）",
+      "quota": "dxnt/free模型：每天100次免费调用，系统每30分钟自动评估所有免费模型并按质量/延迟/成功率排序，始终调用最优免费模型；完全兼容OpenAI API格式（model改为dxnt/free即可）；智能路由：主力供应商故障自动切换备用；数百个国内外AI模型Token特价/免费供应",
+      "cycle": "每天100次免费调用（dxnt/free）；付费模型按量计费",
+      "url": "https://dxnt.com/",
+      "develop": {
+        "document_url": "https://dxnt.com/articles.html",
+        "base_url": "https://api.dxnt.com/v1",
+        "models": [
+          "dxnt/free",
+          "claude",
+          "gpt-4o",
+          "deepseek",
+          "gemini",
+          "qwen",
+          "groq"
+        ]
+      }
+    },
+    {
+      "name": "OpenRelay（本地Token聚合）",
+      "quota": "开源本地工具，自动发现电脑已安装的AI工具（Cloud桌面版Codex、OpenCode、Gemini CLI等）配额，一键聚合转发；支持Claude、Groq、DeepSeek、Gemini等主流免费模型；同时支持Anthropic协议和OpenAI协议；本地运行，无需注册外部服务",
+      "cycle": "永久免费（开源工具）；免费额度来自本地已安装AI工具的配额",
+      "url": "https://github.com/romgX/openrelay",
+      "develop": {
+        "document_url": "https://github.com/romgX/openrelay#readme",
+        "base_url": "http://127.0.0.1:18765/v1",
+        "models": [
+          "claude",
+          "groq",
+          "deepseek",
+          "gemini",
+          "codex",
+          "gpt"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-22T09:00:00.000Z"
+  "lastUpdateTime": "2026-06-25T12:22:11.000Z"
 }
