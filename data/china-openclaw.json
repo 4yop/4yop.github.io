@@ -3088,5 +3088,56 @@
     ],
     "officialWebsite": "https://github.com/compass-skills/compass-skills",
     "source": "toutiao GitHub周报"
+  },
+  {
+    "id": 392,
+    "name": "MasterAgent",
+    "developer": "深圳深元人工智能科技有限公司",
+    "releaseTime": "2025.05.18",
+    "deployment": "云端SaaS平台，开放公测",
+    "features": [
+      "全球首个L4级智能体母体系统",
+      "自主学习与泛化能力，接近人类认知能力",
+      "MasterBuilder和AgentGroup双引擎架构",
+      "自然语言零成本生成多智能体集群",
+      "多智能体自治协作，数百个智能体并行解决复杂任务",
+      "全链路国产化，自主可控"
+    ],
+    "officialWebsite": "https://www.shenyuantech.com/",
+    "source": "深圳特区报/世界人工智能大会WAIC2025"
+  },
+  {
+    "id": 393,
+    "name": "Parlant",
+    "developer": "Emcie团队",
+    "releaseTime": "2026",
+    "deployment": "开源项目（Python），支持Docker部署",
+    "features": [
+      "开源大模型AI Agent开发框架",
+      "指南驱动架构解决指令遵循问题",
+      "动态规则注入确保行为可控可预测",
+      "防幻觉机制与Guardrails保护",
+      "专为金融、医疗等高合规要求场景设计",
+      "GitHub 6.2k+ Stars"
+    ],
+    "officialWebsite": "https://parlant.dev/",
+    "source": "掘金/开源中国"
+  },
+  {
+    "id": 394,
+    "name": "Open-AutoGLM",
+    "developer": "智谱AI",
+    "releaseTime": "2025",
+    "deployment": "开源项目（Apache 2.0），支持本地/云手机部署",
+    "features": [
+      "智谱开源的手机端AI Agent框架",
+      "基于AutoGLM技术实现",
+      "自然语言指令自动操作手机应用",
+      "支持50+主流中文应用自动化（外卖/社交/客服等）",
+      "云手机技术保障隐私安全",
+      "完整工具链和详细文档"
+    ],
+    "officialWebsite": "https://github.com/zai-org/Open-AutoGLM",
+    "source": "智谱AI GitHub"
   }
 ]
