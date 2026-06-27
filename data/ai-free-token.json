@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25",
+  "updatedAt": "2026-06-27",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1690,19 +1690,6 @@
       }
     },
     {
-      "name": "Free-QWQ（分布式AI算力）",
-      "quota": "完全免费、无使用限制的 QwQ-32B 大语言模型 API（阿里开源Qwen系列）；基于全国各地50台家用电脑的3090/4080/4090显卡分布式算力；无需注册即可获取API Key；高峰时段可能需要短暂排队；支持OpenAI兼容API格式；专用线路需注册后使用（更稳定、低延迟）",
-      "cycle": "永久免费（无使用次数限制；高峰时段需排队）",
-      "url": "https://qwq.aigpu.cn",
-      "develop": {
-        "document_url": "https://qwq.aigpu.cn/",
-        "base_url": "https://api.suanli.cn/v1",
-        "models": [
-          "qwq-32b"
-        ]
-      }
-    },
-    {
       "name": "Llama Family（AtomEcho）",
       "quota": "免费API调用Atom系列中文大模型：Atom-13B-Chat（130亿参数）、Atom-7B-Chat（70亿参数）、Atom-1B-Chat、Llama3-Chinese-8B-Instruct；每日8:00-22:00限速20 RPM，22:00-次日8:00限速50 RPM；多语言语料训练，中文能力优秀；支持OpenAI兼容API格式；模型在GitHub（14K Stars）、HuggingFace、ModelScope均可下载",
       "cycle": "永久免费（分时段速率限制：高峰20 RPM，低谷50 RPM）",
@@ -1720,95 +1707,40 @@
     },
     {
       "name": "Glhf.chat",
-      "quota": "免费开源模型推理API（Beta公测期完全免费）；30 RPM 速率限制；支持 Llama 3.1 70B Instruct（128K上下文）、Mixtral 8x7B Instruct（32K上下文）、Phi-3 Mini 4K Instruct；基于 vLLM + 自动扩缩GPU调度器，可运行几乎任何HuggingFace开源模型；最大支持8个NVIDIA A100 80GB GPU；OpenAI兼容API格式；无需信用卡",
-      "cycle": "永久免费层（Beta公测阶段，30 RPM 限制；公测结束后价格低于主流云GPU提供商）",
+      "quota": "注册即送每月 $25 免费额度（无需信用卡，支持中国大陆手机号+86验证）；支持 Llama 3.1 70B（128K上下文）、Llama 3.3 70B、Qwen2.5 72B、DeepSeek R1/V4-Flash 等主流开源模型；基于 vLLM + 自动扩缩 GPU 调度器，可运行几乎任何 HuggingFace 开源模型；最大支持8个NVIDIA A100 80GB；OpenAI 兼容 API 格式",
+      "cycle": "每月重置（永久免费层，$25/月额度自动刷新）",
       "url": "https://glhf.chat",
       "develop": {
         "document_url": "https://glhf.chat",
         "base_url": "https://glhf.chat/api/openai/v1",
         "models": [
           "hf:meta-llama/Llama-3.1-70B-Instruct",
+          "hf:meta-llama/Llama-3.3-70B-Instruct",
+          "hf:Qwen/Qwen2.5-72B-Instruct",
+          "hf:deepseek-ai/DeepSeek-R1",
+          "hf:deepseek-ai/DeepSeek-V4-Flash",
           "hf:mistralai/Mixtral-8x7B-Instruct-v0.1",
           "hf:microsoft/Phi-3-mini-4k-instruct"
         ]
       }
     },
     {
-      "name": "DMXAPI（大模型聚合）",
-      "quota": "免费专区：Qwen3-8B、GLM-4.7-Flash、豆包Seedance视频模型永久免费调用；聚合300+多模态大模型（文生文/文生图/文生视频/文生音频）；LangChain中文网络出品；企业级API集中采购平台",
-      "cycle": "免费专区永久免费；付费模型按量计费",
-      "url": "https://dmxapi.cn/",
+      "name": "Perplexity Sonar API",
+      "quota": "新用户注册赠送 $5 免费 API 积分（用于 Sonar/Sonar Pro 搜索模型，无需信用卡）；Pro 订阅者每月额外赠送 $5 Sonar API 积分；sonar：$5/百万输入 + $6/百万输出；sonar-pro：$8/百万输入 + $12/百万输出；实时联网搜索+AI生成回答，基于 Llama 3.3 70B 深度训练；OpenAI兼容API格式",
+      "cycle": "一次性注册积分（$5，用完为止）；Pro订阅者每月$5积分",
+      "url": "https://www.perplexity.ai/settings/developer",
       "develop": {
-        "document_url": "https://dmxapi.cn/docs",
-        "base_url": "https://api.dmxapi.com/v1",
+        "document_url": "https://docs.perplexity.ai/",
+        "base_url": "https://api.perplexity.ai",
         "models": [
-          "qwen3-8b",
-          "glm-4.7-flash",
-          "seedance-video",
-          "gpt-image-2",
-          "suno-music",
-          "deepseek-chat",
-          "claude-sonnet",
-          "gpt-4o"
-        ]
-      }
-    },
-    {
-      "name": "起零数据（iStero）",
-      "quota": "面向企业与个人提供免费API接口，已全面接入DeepSeek-R1满血版、通义Qwen3.7-plus/Qwen-Max/QwQ-32B、豆包AI pro-256k/1.5-pro-32k等AI模型；另提供生活服务/趣味娱乐/信息资讯/工具应用等数百个免费API",
-      "cycle": "注册即免费用；部分接口有调用次数限制",
-      "url": "https://api.istero.com/",
-      "develop": {
-        "document_url": "https://api.istero.com/help",
-        "base_url": "https://api.istero.com/v1",
-        "models": [
-          "deepseek-r1",
-          "qwen3.7-plus",
-          "qwen-max",
-          "qwq-32b",
-          "doubao-pro-256k",
-          "doubao-1.5-pro-32k",
-          "tongyi-vl-plus"
-        ]
-      }
-    },
-    {
-      "name": "TOKEN自由（DXNT）",
-      "quota": "dxnt/free模型：每天100次免费调用，系统每30分钟自动评估所有免费模型并按质量/延迟/成功率排序，始终调用最优免费模型；完全兼容OpenAI API格式（model改为dxnt/free即可）；智能路由：主力供应商故障自动切换备用；数百个国内外AI模型Token特价/免费供应",
-      "cycle": "每天100次免费调用（dxnt/free）；付费模型按量计费",
-      "url": "https://dxnt.com/",
-      "develop": {
-        "document_url": "https://dxnt.com/articles.html",
-        "base_url": "https://api.dxnt.com/v1",
-        "models": [
-          "dxnt/free",
-          "claude",
-          "gpt-4o",
-          "deepseek",
-          "gemini",
-          "qwen",
-          "groq"
-        ]
-      }
-    },
-    {
-      "name": "OpenRelay（本地Token聚合）",
-      "quota": "开源本地工具，自动发现电脑已安装的AI工具（Cloud桌面版Codex、OpenCode、Gemini CLI等）配额，一键聚合转发；支持Claude、Groq、DeepSeek、Gemini等主流免费模型；同时支持Anthropic协议和OpenAI协议；本地运行，无需注册外部服务",
-      "cycle": "永久免费（开源工具）；免费额度来自本地已安装AI工具的配额",
-      "url": "https://github.com/romgX/openrelay",
-      "develop": {
-        "document_url": "https://github.com/romgX/openrelay#readme",
-        "base_url": "http://127.0.0.1:18765/v1",
-        "models": [
-          "claude",
-          "groq",
-          "deepseek",
-          "gemini",
-          "codex",
-          "gpt"
+          "sonar",
+          "sonar-pro",
+          "sonar-reasoning",
+          "sonar-reasoning-pro",
+          "sonar-deep-research"
         ]
       }
     }
   ],
-  "lastUpdateTime": "2026-06-25T12:22:11.000Z"
+  "lastUpdateTime": "2026-06-27T01:07:38.705Z"
 }
