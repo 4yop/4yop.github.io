@@ -3014,5 +3014,79 @@
     ],
     "officialWebsite": "https://www.transwarp.cn",
     "source": "星环科技官网 / aizxs.com 2026.06"
+  },
+  {
+    "id": 387,
+    "name": "讯灵AI Claw 3.0",
+    "developer": "深圳市南方网通网络技术开发有限公司",
+    "releaseTime": "2026.05",
+    "deploy": "云端SaaS平台，讯灵AI-GEO+Agent双引擎智能生态系统",
+    "features": [
+      "GEO搜索优化+AI智能体双驱创新形态，实现对DeepSeek/豆包/元宝/通义/文心一言/纳米等11大AI平台全域渗透",
+      "AI帮企业推品牌、跑业务、做销售、做客服、做管理，构建从数据沉淀到智能应用的AI数字资产",
+      "Flink AI双引擎差异化设计解决传统营销效率问题",
+      "五大AI智能体应用算法通过国家网信办算法备案",
+      "深耕互联网营销19年，12万+企业客户选择"
+    ],
+    "officialWebsite": "https://www.nfwt.net/",
+    "source": "WebSearch-2026-06-27"
+  },
+  {
+    "id": 388,
+    "name": "科大讯飞企业服务Claw平台",
+    "developer": "科大讯飞",
+    "releaseTime": "2026.06.24",
+    "deploy": "云端SaaS平台，多Agent协同机制",
+    "features": [
+      "国内首个面向企业服务的智能协同Claw平台，含需求理解Agent+方案助手Agent+报价助手Agent+潜商推荐Agent四Agent协同体系",
+      "企业只需一句话描述AI业务需求，即可自动完成需求理解、方案生成、价格测算、服务商匹配全流程",
+      "将原本繁琐的项目启动周期压缩至分钟级",
+      "打破场景/数据/知识/经验/组织五大孤岛，实现AI落地的完整闭环",
+      "依托讯飞AI服务市场生态，覆盖能源电力/制造/金融/教育/数字零售等100+产业场景，1800余家AI服务商入驻"
+    ],
+    "officialWebsite": "https://www.xfyun.cn/",
+    "source": "钛媒体/腾讯网 2026.06.24"
+  },
+  {
+    "id": 389,
+    "name": "星航Claw",
+    "developer": "星航Claw开源社区",
+    "releaseTime": "2026.06",
+    "deployment": "开源自托管，支持多模型切换",
+    "features": [
+      "完全兼容OpenClaw开源组件，支持用户自行扩展功能与二次开发",
+      "拥有活跃的开发者社区，提供开源插件市场和第三方工具资源",
+      "提供免费版本和付费订阅，适合技术爱好者进行功能探索"
+    ],
+    "officialWebsite": "https://xinghangclaw.ai/",
+    "source": "IT168评测文章"
+  },
+  {
+    "id": 390,
+    "name": "企服虾助手",
+    "developer": "企服虾助手团队",
+    "releaseTime": "2026.06",
+    "deployment": "云端SaaS平台，支持企业级私有化部署",
+    "features": [
+      "针对金融、政务、教育等行业推出专属技能包（投研分析、公文生成、课件制作等）",
+      "支持与行业专属系统对接，实现数据互通与流程自动化",
+      "提供一对一专属客户经理服务和定制化解决方案"
+    ],
+    "officialWebsite": "https://qifuxia.com/",
+    "source": "IT168评测文章"
+  },
+  {
+    "id": 391,
+    "name": "compass-skills",
+    "developer": "compass-skills开源社区",
+    "releaseTime": "2026.06",
+    "deployment": "开源项目，GitHub 386 stars",
+    "features": [
+      "Python国产开源司南系统，个性化AI任务总控Skills框架",
+      "Skills即插即用架构，解决国内AI Agent生态碎片化问题",
+      "引领SKILL.md格式成为行业标准"
+    ],
+    "officialWebsite": "https://github.com/compass-skills/compass-skills",
+    "source": "toutiao GitHub周报"
   }
 ]
