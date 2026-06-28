@@ -3254,5 +3254,36 @@
     ],
     "officialWebsite": "https://www.doubao.com",
     "source": "36氪/网易/每日经济新闻"
+  },
+  {
+    "name": "Laiye Worker",
+    "developer": "来也科技（Laiye）",
+    "releaseTime": "2026.06.15",
+    "deployment": "桌面端Agent，企业级部署，覆盖财务/人力/营销/客服等核心业务场景",
+    "features": [
+      "来也科技在Laiye Lead 2026发布会上正式推出的桌面端Agent产品",
+      "配套'AI员工全家桶'，覆盖财务、人力、营销、客服等核心业务场景",
+      "通过三晚真实直播演示AI员工上岗干活，标志AI Agent从技术验证走向企业岗位",
+      "基于来也科技在RPA和智能文档处理领域的技术积累"
+    ],
+    "officialWebsite": "https://www.laiye.com",
+    "source": "腾讯网/CSDN 2026.06.24",
+    "id": 401
+  },
+  {
+    "name": "百度Comate AI IDE",
+    "developer": "百度",
+    "releaseTime": "2026.06.07",
+    "deployment": "独立AI原生IDE（桌面端安装），内置Zulu编程智能体",
+    "features": [
+      "百度文心快码推出的独立AI原生开发环境",
+      "首创Figma设计稿一键转代码(F2C)能力，节省80%重复劳动",
+      "内置编程智能体Zulu，自主拆解任务、实时展示思考过程",
+      "首创多智能体协同系统，支持开发者自定义智能体或下达复合任务",
+      "百度每日新增代码中文心快码生成占比超43%"
+    ],
+    "officialWebsite": "https://comate.baidu.com",
+    "source": "CSDN 2026.06.24",
+    "id": 402
   }
 ]
