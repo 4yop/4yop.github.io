@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27",
+  "updatedAt": "2026-06-28",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -279,12 +279,7 @@
       "develop": {
         "document_url": "https://platform.lingyiwanwu.com/docs",
         "base_url": "https://api.lingyiwanwu.com/v1",
-        "models": [
-          "yi-34b-chat-free",
-          "yi-34b-chat",
-          "yi-34b-chat-200k",
-          "yi-vl-plus"
-        ]
+        "models": ["yi-34b-chat-free", "yi-34b-chat", "yi-34b-chat-200k", "yi-vl-plus"]
       }
     },
     {
@@ -329,12 +324,7 @@
       "develop": {
         "document_url": "https://developer.qiniu.com/aitokenapi",
         "base_url": "https://ai.qiniuapi.com/v1",
-        "models": [
-          "deepseek-r1",
-          "qwen-plus",
-          "kimi-k2.5",
-          "deepseek-v4-flash"
-        ]
+        "models": ["deepseek-r1", "qwen-plus", "kimi-k2.5", "deepseek-v4-flash"]
       }
     },
     {
@@ -345,13 +335,7 @@
       "develop": {
         "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
         "base_url": "https://spark-api.xf-yun.com",
-        "models": [
-          "spark-lite",
-          "spark-ultra",
-          "spark-pro",
-          "spark-pro-128k",
-          "spark-x1"
-        ]
+        "models": ["spark-lite", "spark-ultra", "spark-pro", "spark-pro-128k", "spark-x1"]
       }
     },
     {
@@ -362,11 +346,7 @@
       "develop": {
         "document_url": "https://docs.ai21.com",
         "base_url": "https://api.ai21.com/v1",
-        "models": [
-          "jamba-mini",
-          "jamba-large",
-          "jamba-1.5-large"
-        ]
+        "models": ["jamba-mini", "jamba-large", "jamba-1.5-large"]
       }
     },
     {
@@ -377,11 +357,7 @@
       "develop": {
         "document_url": "https://ai.atomgit.com/dashboard/api-key",
         "base_url": "https://api-ai.gitcode.com/v1",
-        "models": [
-          "zai-org/GLM-5",
-          "Qwen/Qwen3.5-397B-A17B",
-          "Qwen/Qwen3.5-122B-A10B"
-        ]
+        "models": ["zai-org/GLM-5", "Qwen/Qwen3.5-397B-A17B", "Qwen/Qwen3.5-122B-A10B"]
       }
     },
     {
@@ -565,11 +541,7 @@
       "develop": {
         "document_url": "https://jina.ai/reader/",
         "base_url": "https://api.jina.ai/v1",
-        "models": [
-          "jina-embeddings-v3",
-          "jina-reranker-v2",
-          "jina-reader"
-        ]
+        "models": ["jina-embeddings-v3", "jina-reranker-v2", "jina-reader"]
       }
     },
     {
@@ -580,13 +552,7 @@
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
         "base_url": "https://api.moonshot.cn/v1",
-        "models": [
-          "kimi-k2.5",
-          "kimi-k2.5-flash",
-          "kimi-k2",
-          "kimi-k2-fc",
-          "kimi-k2-thinking"
-        ]
+        "models": ["kimi-k2.5", "kimi-k2.5-flash", "kimi-k2", "kimi-k2-fc", "kimi-k2-thinking"]
       }
     },
     {
@@ -597,12 +563,7 @@
       "develop": {
         "document_url": "https://ling.tbox.cn/doc",
         "base_url": "https://openapi.aliyuncs.com/api/v3",
-        "models": [
-          "ling-2.6-1t",
-          "ling-1t",
-          "ring-1t",
-          "ming-m2"
-        ]
+        "models": ["ling-2.6-1t", "ling-1t", "ring-1t", "ming-m2"]
       }
     },
     {
@@ -658,10 +619,7 @@
       "develop": {
         "document_url": "https://docs.nlpcloud.com",
         "base_url": "https://api.nlpcloud.io/v1",
-        "models": [
-          "finetuned-llama-3-1-70b",
-          "finetuned-llama-3-1-8b"
-        ]
+        "models": ["finetuned-llama-3-1-70b", "finetuned-llama-3-1-8b"]
       }
     },
     {
@@ -791,12 +749,7 @@
       "develop": {
         "document_url": "https://docs.upstage.ai",
         "base_url": "https://api.upstage.ai/v1",
-        "models": [
-          "solar-pro-3",
-          "solar-pro-2",
-          "solar-mini",
-          "upstage-embed"
-        ]
+        "models": ["solar-pro-3", "solar-pro-2", "solar-mini", "upstage-embed"]
       }
     },
     {
@@ -829,14 +782,7 @@
       "develop": {
         "document_url": "https://docs.x.ai/docs/data-sharing",
         "base_url": "https://api.x.ai/v1",
-        "models": [
-          "grok-4",
-          "grok-4-mini",
-          "grok-3",
-          "grok-3-mini",
-          "grok-2",
-          "grok-2-vision-1212"
-        ]
+        "models": ["grok-4", "grok-4-mini", "grok-3", "grok-3-mini", "grok-2", "grok-2-vision-1212"]
       }
     },
     {
@@ -933,13 +879,7 @@
       "develop": {
         "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
         "base_url": "https://ecloud.10086.cn/api",
-        "models": [
-          "deepseek-v3",
-          "deepseek-r1",
-          "glm-5",
-          "MiniMax-M2.5",
-          "kimi-k2.5"
-        ]
+        "models": ["deepseek-v3", "deepseek-r1", "glm-5", "MiniMax-M2.5", "kimi-k2.5"]
       }
     },
     {
@@ -985,12 +925,7 @@
       "develop": {
         "document_url": "https://www.coze.cn/open/docs/guides",
         "base_url": "https://api.coze.cn/v1",
-        "models": [
-          "gpt-5",
-          "claude-sonnet-4",
-          "gemini-2.5-pro",
-          "deepseek-v4-flash"
-        ]
+        "models": ["gpt-5", "claude-sonnet-4", "gemini-2.5-pro", "deepseek-v4-flash"]
       }
     },
     {
@@ -1042,10 +977,7 @@
       "develop": {
         "document_url": "https://internlm.intern-ai.org.cn/api/document?lang=zh",
         "base_url": "https://chat.intern-ai.org.cn/api/v1",
-        "models": [
-          "intern-s1",
-          "intern-s1-pro"
-        ]
+        "models": ["intern-s1", "intern-s1-pro"]
       }
     },
     {
@@ -1157,13 +1089,7 @@
       "develop": {
         "document_url": "https://support.huaweicloud.com/modelarts/index.html",
         "base_url": "https://api.modelarts-maas.com/v2/chat/completions",
-        "models": [
-          "pangu-large",
-          "deepseek-v3.2",
-          "glm-5",
-          "kimi-k2",
-          "qwen3-235b-a22b"
-        ]
+        "models": ["pangu-large", "deepseek-v3.2", "glm-5", "kimi-k2", "qwen3-235b-a22b"]
       }
     },
     {
@@ -1192,11 +1118,7 @@
       "develop": {
         "document_url": "https://platform.xiaomimimo.com/docs",
         "base_url": "https://api.xiaomimimo.com/v1",
-        "models": [
-          "mimo-v2.5-pro",
-          "mimo-v2-flash",
-          "mimo-v2-pro"
-        ]
+        "models": ["mimo-v2.5-pro", "mimo-v2-flash", "mimo-v2-pro"]
       }
     },
     {
@@ -1236,11 +1158,7 @@
       "develop": {
         "document_url": "https://www.streamlake.com/product/kat-coder",
         "base_url": "https://api.streamlake.com/v1",
-        "models": [
-          "kat-coder-pro-v2",
-          "kat-coder-pro-v1",
-          "kat-coder-air-v1"
-        ]
+        "models": ["kat-coder-pro-v2", "kat-coder-pro-v1", "kat-coder-air-v1"]
       }
     },
     {
@@ -1356,10 +1274,7 @@
       "develop": {
         "document_url": "https://skywork.ai",
         "base_url": "https://api.skywork.ai/v1",
-        "models": [
-          "skyclaw-v1.0",
-          "skyclaw-v1.0-lite"
-        ]
+        "models": ["skyclaw-v1.0", "skyclaw-v1.0-lite"]
       }
     },
     {
@@ -1509,10 +1424,7 @@
       "develop": {
         "document_url": "https://platform.poolside.ai/docs",
         "base_url": "https://api.poolside.ai/v1",
-        "models": [
-          "poolside/laguna-m.1",
-          "poolside/laguna-xs.2"
-        ]
+        "models": ["poolside/laguna-m.1", "poolside/laguna-xs.2"]
       }
     },
     {
@@ -1589,10 +1501,7 @@
       "develop": {
         "document_url": "https://docs.inceptionlabs.ai/get-started/models",
         "base_url": "https://api.inceptionlabs.ai/v1",
-        "models": [
-          "mercury-2",
-          "mercury-edit-2"
-        ]
+        "models": ["mercury-2", "mercury-edit-2"]
       }
     },
     {
@@ -1603,11 +1512,7 @@
       "develop": {
         "document_url": "https://opencode.ai/docs/zen/",
         "base_url": "https://api.opencode.ai/v1",
-        "models": [
-          "deepseek-v4-flash-free",
-          "nemotron-3-super-free",
-          "big-pickle-stealth"
-        ]
+        "models": ["deepseek-v4-flash-free", "nemotron-3-super-free", "big-pickle-stealth"]
       }
     },
     {
@@ -1618,11 +1523,7 @@
       "develop": {
         "document_url": "https://www.aionlabs.ai/docs/api-reference/",
         "base_url": "https://api.aionlabs.ai/v1",
-        "models": [
-          "aion-2.0",
-          "aion-1.0",
-          "aion-1.0-mini"
-        ]
+        "models": ["aion-2.0", "aion-1.0", "aion-1.0-mini"]
       }
     },
     {
@@ -1682,11 +1583,7 @@
       "develop": {
         "document_url": "https://docs.venice.ai",
         "base_url": "https://api.venice.ai/api/v1",
-        "models": [
-          "llama-3.1-405b",
-          "dolphin-mixtral",
-          "stable-diffusion-3"
-        ]
+        "models": ["llama-3.1-405b", "dolphin-mixtral", "stable-diffusion-3"]
       }
     },
     {
@@ -1697,12 +1594,7 @@
       "develop": {
         "document_url": "https://llama.family/docs/chat-completion-v1",
         "base_url": "https://api.atomecho.cn/v1",
-        "models": [
-          "Atom-13B-Chat",
-          "Atom-7B-Chat",
-          "Atom-1B-Chat",
-          "Llama3-Chinese-8B-Instruct"
-        ]
+        "models": ["Atom-13B-Chat", "Atom-7B-Chat", "Atom-1B-Chat", "Llama3-Chinese-8B-Instruct"]
       }
     },
     {
@@ -1740,7 +1632,81 @@
           "sonar-deep-research"
         ]
       }
+    },
+    {
+      "name": "Forge by LANA",
+      "quota": "每月 200,000 tokens 免费（永久免费层，无需信用卡）；支持 22+ 模型包括 GPT-4o、Claude、DeepSeek、Grok、Gemini、Perplexity 等；自动模型路由（model: auto）；OpenAI/SDK兼容；付费计划 $49/月起（500万tokens）",
+      "cycle": "每月重置（永久免费层，200K tokens/月，无需信用卡）",
+      "url": "https://forge.lanaai.io/free",
+      "develop": {
+        "document_url": "https://forge.lanaai.io/free",
+        "base_url": "https://forge-api.lanaai.io/v1",
+        "models": [
+          "auto",
+          "gpt-4o",
+          "claude-sonnet-4",
+          "deepseek-v4-flash",
+          "grok-4",
+          "gemini-2.5-flash",
+          "perplexity-sonar"
+        ]
+      }
+    },
+    {
+      "name": "LLM7.io",
+      "quota": "免费匿名使用（30 RPM，无需token）；注册免费token后 40 RPM/100 RPH/500万TPD；6款免费模型（deepseek-r1-0528、deepseek-v3-0324、gemini-2.5-flash-lite、mistral-small-3.1-24b、qwen2.5-coder-32b、gpt-4o-mini）；注册token后提升至120 RPM；完全OpenAI兼容；Pro计划 $12/月（1500 RPM）",
+      "cycle": "每日重置（永久免费层；匿名30 RPM，注册后40-120 RPM）",
+      "url": "https://llm7.io",
+      "develop": {
+        "document_url": "https://docs.llm7.io",
+        "base_url": "https://api.llm7.io/v1",
+        "models": [
+          "deepseek-r1-0528",
+          "deepseek-v3-0324",
+          "gemini-2.5-flash-lite",
+          "mistral-small-3.1-24b",
+          "qwen2.5-coder-32b",
+          "gpt-4o-mini"
+        ]
+      }
+    },
+    {
+      "name": "AwanLLM",
+      "quota": "Lite免费层：200次请求/天（无限token，仅限请求次数）；支持 Meta Llama 3.1 8B/70B、Llama 3 8B/70B 等开源模型；完全 OpenAI 兼容；支持 HuggingFace ChatUI/SillyTavern 集成；自有数据中心和GPU，无限token生成无计数限制",
+      "cycle": "每日重置（Lite免费层，200次请求/天，无token限制）",
+      "url": "https://www.awanllm.com",
+      "develop": {
+        "document_url": "https://www.awanllm.com/quick-start",
+        "base_url": "https://api.awanllm.com/v1",
+        "models": [
+          "Meta-Llama-3.1-8B-Instruct",
+          "Meta-Llama-3.1-70B-Instruct",
+          "Meta-Llama-3-8B-Instruct",
+          "Meta-Llama-3-70B-Instruct",
+          "Awanllm-Llama-3-8B-Dolfin",
+          "Awanllm-Llama-3-8B-Cumulus"
+        ]
+      }
+    },
+    {
+      "name": "Kluster AI",
+      "quota": "新用户注册赠送 $5 免费积分（无信用卡要求，邮箱验证即可）；支持 DeepSeek-R1、Llama 3.1 405B/70B/8B、Llama 4 Maverick、Qwen3 235B、Gemma 3 等开源模型；Adaptive Inference 自适应推理引擎支持实时/异步/批量三种模式；OpenAI兼容API；极限批量推理72小时窗口",
+      "cycle": "一次性注册积分（$5，用完为止）",
+      "url": "https://kluster.ai",
+      "develop": {
+        "document_url": "https://kluster.ai/early-access/",
+        "base_url": "https://api.kluster.ai/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-R1",
+          "klusterai/Meta-Llama-3.1-405B-Instruct-Turbo",
+          "klusterai/Meta-Llama-3.3-70B-Instruct-Turbo",
+          "klusterai/Meta-Llama-3.1-8B-Instruct-Turbo",
+          "meta-llama/Llama-4-Maverick",
+          "Qwen/Qwen3-235B-A22B",
+          "google/Gemma-3"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-27T01:07:38.705Z"
+  "lastUpdateTime": "2026-06-28T10:00:00.000Z"
 }

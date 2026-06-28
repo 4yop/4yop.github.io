@@ -3139,5 +3139,120 @@
     ],
     "officialWebsite": "https://github.com/zai-org/Open-AutoGLM",
     "source": "智谱AI GitHub"
+  },
+  {
+    "id": 395,
+    "name": "Kimi Work",
+    "developer": "月之暗面（Moonshot AI）",
+    "releaseTime": "2026.06.03",
+    "deployment": "桌面端安装（macOS Apple Silicon/Windows），公测阶段免费下载",
+    "features": [
+      "面向知识工作者的通用型本地桌面Agent",
+      "WebBridge浏览器自主操控，复用本地登录态",
+      "300个子Agent并行协作，支持4000+次自主工具调用",
+      "内置Cron定时任务引擎，支持LLM Agent/Python/Shell任务",
+      "本地文件系统读写与Python后台执行",
+      "底层Kimi K2.6模型（约1万亿参数MoE，激活320亿）",
+      "支持13小时不间断编码",
+      "操作前询问安全保障机制",
+      "92%代码由AI自主生成"
+    ],
+    "officialWebsite": "https://www.kimi.com",
+    "source": "36氪/腾讯新闻/Decrypt/AIEII"
+  },
+  {
+    "id": 396,
+    "name": "Jenius Claw",
+    "developer": "天聚地合（聚合数据）",
+    "releaseTime": "2026.06.15",
+    "deployment": "本地桌面端安装",
+    "features": [
+      "RPA+多模态视觉桌面Agent",
+      "Browser Use自动打开浏览器、输入网址、翻页、提取数据",
+      "Computer Use调起本地表格工具，规整非结构化数据",
+      "流程固化后零Token成本运行，不消耗API",
+      "数据全部本地处理，不上传云端",
+      "自然语言配置复杂RPA规则和流程",
+      "Jenius家族三位一体（Agent云端通用+Claw本地执行+AI智能注入）"
+    ],
+    "officialWebsite": "https://www.jenius.cn",
+    "source": "聚合数据官网"
+  },
+  {
+    "id": 397,
+    "name": "ClawHouse X1",
+    "developer": "聊趣智能（Chatoys）",
+    "releaseTime": "2026.06",
+    "deployment": "硬件设备（全息交互AI个人算力中心），京东预约（Air版¥12999/Pro版¥27999）",
+    "features": [
+      "全息舱+语音交互，3D数字人形象自定义",
+      "搭载后摩智能M50存算一体芯片（160-200 TOPS）",
+      "预装OpenClaw与Hermes开源智能体框架",
+      "端云协同架构，本地数据安全+云端算力补充",
+      "支持算力雇佣市场，设备闲置可接受外部任务赚取收益",
+      "600+种微表情与肢体动作，沉浸式交互",
+      "Pro版支持多Agent并行协作与私有模型部署",
+      "与运营商+新联纬讯三方生态合作"
+    ],
+    "officialWebsite": "https://www.chatoys.com",
+    "source": "上观新闻/电子发烧友/ITBear"
+  },
+  {
+    "id": 398,
+    "name": "开天Claw",
+    "developer": "联想开天",
+    "releaseTime": "2026.03.10",
+    "deployment": "信创AI一体机（个人/团队/企业三级硬件方案）",
+    "features": [
+      "业内首个全场景信创AI一体机方案",
+      "基于银河麒麟等主流国产操作系统",
+      "深度适配DeepSeek、千问、智谱等国产大模型",
+      "开箱即用，出厂预配置完成",
+      "三重安全架构（行为机制/数据访问/底层算力）",
+      "团队版旗舰P9工作站支撑122B模型本地运行",
+      "企业版信创服务器支撑671B满血模型",
+      "独家KV Cache优化，国产化算力底座"
+    ],
+    "officialWebsite": "https://www.lenovo.com.cn",
+    "source": "36氪/中关村在线/IT之家/新浪财经"
+  },
+  {
+    "id": 399,
+    "name": "在鸿Claw BOT",
+    "developer": "拓维信息/开鸿智谷",
+    "releaseTime": "2026.03.18",
+    "deployment": "智能主机设备（AI BOX），本地部署",
+    "features": [
+      "开源鸿蒙（OpenHarmony）+OpenClaw融合智能主机",
+      "搭载自研在鸿OS，预集成OpenClaw零配置开箱即用",
+      "支持200+协议生态设备互联互通",
+      "AI OS推理-执行引擎，自主规划设备联动逻辑",
+      "自动进化能力：记忆、创建子智能体、动态配置服务",
+      "聚焦园区、楼宇、公寓等智慧空间场景",
+      "端侧低功耗（TDP低至12W），全天候待命",
+      "国产化智能中控解决方案"
+    ],
+    "officialWebsite": "https://www.talkweb.com.cn",
+    "source": "拓维信息官网/IT之家/东方财富"
+  },
+  {
+    "id": 400,
+    "name": "豆包专业版",
+    "developer": "字节跳动",
+    "releaseTime": "2026.06.24",
+    "deployment": "云端+本地客户端，三级订阅（标准¥68/加强¥200/高级¥500每月）",
+    "features": [
+      "首个Agent驱动的办公任务模式",
+      "搭载豆包2.1 Pro（付费）/ 2.1 Turbo（免费）模型",
+      "自主拆解任务，操作本地电脑、使用浏览器",
+      "调用Skills技能和定时任务自动化",
+      "内置Office办公套件与飞书集成",
+      "支持专业图片设计、视频设计",
+      "支持网站/应用生成与部署（含后端数据库）",
+      "日活超2亿的国民级AI应用Agent化升级",
+      "即将上线手机远程操作电脑、GUI操作等功能"
+    ],
+    "officialWebsite": "https://www.doubao.com",
+    "source": "36氪/网易/每日经济新闻"
   }
 ]
