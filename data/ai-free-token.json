@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29",
+  "updatedAt": "2026-06-30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -83,7 +83,7 @@
     },
     {
       "name": "腾讯混元",
-      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 【紧急】HY 2.0等46个旧模型将于2026年6月22日00:00正式下线！⚠️ 原腾讯混元大模型平台将于2026年9月30日全面停服，建议立即迁移至TokenHub平台使用hy3-preview替代；混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束",
+      "quota": "首次开通赠送 100万 token（通用包，1年有效）+ 100万 Embedding token；Hunyuan-lite 永久免费不限量；Hunyuan-T1（超大规模推理）、Hunyuan-TurboS（快思考）、Hunyuan-A13B（混合推理）均在通用包内；【额外】微信「AI小程序成长计划」：开发者可在小程序后台申领1亿混元文生文token + 1万张文生图额度（2026全年有效，至2026年12月31日）；⚠️ 【已完成】HY 2.0 Think/Instruct等9个旧模型已于2026年6月26日正式下线停止调用！⚠️ 原腾讯混元大模型平台将于2026年9月30日全面停服，建议立即迁移至TokenHub平台使用hy3-preview替代；混元HY2.0模型输入价格已涨463%（从0.0008元/千Token涨至0.004505元/千Token），第三方模型免费公测已结束",
       "cycle": "通用包1年有效；Lite版永久免费；小程序成长计划2026年12月31日前有效",
       "url": "https://cloud.tencent.com/product/hunyuan",
       "develop": {
@@ -279,7 +279,12 @@
       "develop": {
         "document_url": "https://platform.lingyiwanwu.com/docs",
         "base_url": "https://api.lingyiwanwu.com/v1",
-        "models": ["yi-34b-chat-free", "yi-34b-chat", "yi-34b-chat-200k", "yi-vl-plus"]
+        "models": [
+          "yi-34b-chat-free",
+          "yi-34b-chat",
+          "yi-34b-chat-200k",
+          "yi-vl-plus"
+        ]
       }
     },
     {
@@ -324,7 +329,12 @@
       "develop": {
         "document_url": "https://developer.qiniu.com/aitokenapi",
         "base_url": "https://ai.qiniuapi.com/v1",
-        "models": ["deepseek-r1", "qwen-plus", "kimi-k2.5", "deepseek-v4-flash"]
+        "models": [
+          "deepseek-r1",
+          "qwen-plus",
+          "kimi-k2.5",
+          "deepseek-v4-flash"
+        ]
       }
     },
     {
@@ -335,7 +345,13 @@
       "develop": {
         "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
         "base_url": "https://spark-api.xf-yun.com",
-        "models": ["spark-lite", "spark-ultra", "spark-pro", "spark-pro-128k", "spark-x1"]
+        "models": [
+          "spark-lite",
+          "spark-ultra",
+          "spark-pro",
+          "spark-pro-128k",
+          "spark-x1"
+        ]
       }
     },
     {
@@ -346,7 +362,11 @@
       "develop": {
         "document_url": "https://docs.ai21.com",
         "base_url": "https://api.ai21.com/v1",
-        "models": ["jamba-mini", "jamba-large", "jamba-1.5-large"]
+        "models": [
+          "jamba-mini",
+          "jamba-large",
+          "jamba-1.5-large"
+        ]
       }
     },
     {
@@ -357,7 +377,11 @@
       "develop": {
         "document_url": "https://ai.atomgit.com/dashboard/api-key",
         "base_url": "https://api-ai.gitcode.com/v1",
-        "models": ["zai-org/GLM-5", "Qwen/Qwen3.5-397B-A17B", "Qwen/Qwen3.5-122B-A10B"]
+        "models": [
+          "zai-org/GLM-5",
+          "Qwen/Qwen3.5-397B-A17B",
+          "Qwen/Qwen3.5-122B-A10B"
+        ]
       }
     },
     {
@@ -541,7 +565,11 @@
       "develop": {
         "document_url": "https://jina.ai/reader/",
         "base_url": "https://api.jina.ai/v1",
-        "models": ["jina-embeddings-v3", "jina-reranker-v2", "jina-reader"]
+        "models": [
+          "jina-embeddings-v3",
+          "jina-reranker-v2",
+          "jina-reader"
+        ]
       }
     },
     {
@@ -552,7 +580,13 @@
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
         "base_url": "https://api.moonshot.cn/v1",
-        "models": ["kimi-k2.5", "kimi-k2.5-flash", "kimi-k2", "kimi-k2-fc", "kimi-k2-thinking"]
+        "models": [
+          "kimi-k2.5",
+          "kimi-k2.5-flash",
+          "kimi-k2",
+          "kimi-k2-fc",
+          "kimi-k2-thinking"
+        ]
       }
     },
     {
@@ -563,7 +597,12 @@
       "develop": {
         "document_url": "https://ling.tbox.cn/doc",
         "base_url": "https://openapi.aliyuncs.com/api/v3",
-        "models": ["ling-2.6-1t", "ling-1t", "ring-1t", "ming-m2"]
+        "models": [
+          "ling-2.6-1t",
+          "ling-1t",
+          "ring-1t",
+          "ming-m2"
+        ]
       }
     },
     {
@@ -619,7 +658,10 @@
       "develop": {
         "document_url": "https://docs.nlpcloud.com",
         "base_url": "https://api.nlpcloud.io/v1",
-        "models": ["finetuned-llama-3-1-70b", "finetuned-llama-3-1-8b"]
+        "models": [
+          "finetuned-llama-3-1-70b",
+          "finetuned-llama-3-1-8b"
+        ]
       }
     },
     {
@@ -749,7 +791,12 @@
       "develop": {
         "document_url": "https://docs.upstage.ai",
         "base_url": "https://api.upstage.ai/v1",
-        "models": ["solar-pro-3", "solar-pro-2", "solar-mini", "upstage-embed"]
+        "models": [
+          "solar-pro-3",
+          "solar-pro-2",
+          "solar-mini",
+          "upstage-embed"
+        ]
       }
     },
     {
@@ -782,7 +829,14 @@
       "develop": {
         "document_url": "https://docs.x.ai/docs/data-sharing",
         "base_url": "https://api.x.ai/v1",
-        "models": ["grok-4", "grok-4-mini", "grok-3", "grok-3-mini", "grok-2", "grok-2-vision-1212"]
+        "models": [
+          "grok-4",
+          "grok-4-mini",
+          "grok-3",
+          "grok-3-mini",
+          "grok-2",
+          "grok-2-vision-1212"
+        ]
       }
     },
     {
@@ -879,12 +933,18 @@
       "develop": {
         "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
         "base_url": "https://ecloud.10086.cn/api",
-        "models": ["deepseek-v3", "deepseek-r1", "glm-5", "MiniMax-M2.5", "kimi-k2.5"]
+        "models": [
+          "deepseek-v3",
+          "deepseek-r1",
+          "glm-5",
+          "MiniMax-M2.5",
+          "kimi-k2.5"
+        ]
       }
     },
     {
       "name": "讯飞星辰MaaS",
-      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；Qwen3.6-35B-A3B 和 Qwen3.5-35B-A3B 限时免费（2026年6月底前有效，新老用户均可领）；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
+      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；Qwen3.6-35B-A3B 和 Qwen3.5-35B-A3B 限时免费（⚠️ 已临近过期，2026年6月底前有效，建议尽快领取）；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
       "cycle": "Qwen3-Coder-Next/Qwen3-1.7B永久免费（不限量）；新客礼包一次性赠送；政策以官方公告为准",
       "url": "https://maas.xfyun.cn",
       "develop": {
@@ -925,7 +985,12 @@
       "develop": {
         "document_url": "https://www.coze.cn/open/docs/guides",
         "base_url": "https://api.coze.cn/v1",
-        "models": ["gpt-5", "claude-sonnet-4", "gemini-2.5-pro", "deepseek-v4-flash"]
+        "models": [
+          "gpt-5",
+          "claude-sonnet-4",
+          "gemini-2.5-pro",
+          "deepseek-v4-flash"
+        ]
       }
     },
     {
@@ -977,7 +1042,10 @@
       "develop": {
         "document_url": "https://internlm.intern-ai.org.cn/api/document?lang=zh",
         "base_url": "https://chat.intern-ai.org.cn/api/v1",
-        "models": ["intern-s1", "intern-s1-pro"]
+        "models": [
+          "intern-s1",
+          "intern-s1-pro"
+        ]
       }
     },
     {
@@ -1089,7 +1157,13 @@
       "develop": {
         "document_url": "https://support.huaweicloud.com/modelarts/index.html",
         "base_url": "https://api.modelarts-maas.com/v2/chat/completions",
-        "models": ["pangu-large", "deepseek-v3.2", "glm-5", "kimi-k2", "qwen3-235b-a22b"]
+        "models": [
+          "pangu-large",
+          "deepseek-v3.2",
+          "glm-5",
+          "kimi-k2",
+          "qwen3-235b-a22b"
+        ]
       }
     },
     {
@@ -1112,13 +1186,16 @@
     },
     {
       "name": "小米 MiMo",
-      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ 【注意】MiMo-V2-Pro与MiMo-V2-Omni将于2026年6月30日正式下线，请提前迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
+      "quota": "MiMo-V2.5系列永久降价生效：V2.5输入缓存命中0.02元/百万Tokens（降幅98%），V2.5-Pro输入缓存命中0.025元/百万Tokens（降幅99%）；Token Plan计费体系优化，同等价格下用量提升5-8倍（Lite 41亿/Standard 110亿/Pro 380亿/Max 820亿 Credits）；MiMo-V2.5-TTS保持限时免费；⚠️ 【已下线】MiMo-V2-Pro与MiMo-V2-Omni已于2026年6月30日正式下线，请迁移至V2.5系列；MiMo-V2.5-Pro为旗舰模型（1048576上下文，131072最大输出）；OpenAI + Anthropic兼容协议；Token Plan提供cn域名端点；可直接对接Claude Code、Cursor、OpenClaw等编程工具",
       "cycle": "V2.5系列永久降价生效；MiMo-V2.5-TTS限时免费；Token Plan按月订阅",
       "url": "https://platform.xiaomimimo.com",
       "develop": {
         "document_url": "https://platform.xiaomimimo.com/docs",
         "base_url": "https://api.xiaomimimo.com/v1",
-        "models": ["mimo-v2.5-pro", "mimo-v2-flash", "mimo-v2-pro"]
+        "models": [
+          "mimo-v2.5-pro",
+          "mimo-v2-flash"
+        ]
       }
     },
     {
@@ -1158,12 +1235,16 @@
       "develop": {
         "document_url": "https://www.streamlake.com/product/kat-coder",
         "base_url": "https://api.streamlake.com/v1",
-        "models": ["kat-coder-pro-v2", "kat-coder-pro-v1", "kat-coder-air-v1"]
+        "models": [
+          "kat-coder-pro-v2",
+          "kat-coder-pro-v1",
+          "kat-coder-air-v1"
+        ]
       }
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Qwen3.5-Flash 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1、Deepseek-v3-0324、Deepseek-r1-0528已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct将于2026-06-22下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Qwen3.5-Flash 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1、Deepseek-v3-0324、Deepseek-r1-0528已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct已于2026-06-26下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
       "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
@@ -1274,7 +1355,10 @@
       "develop": {
         "document_url": "https://skywork.ai",
         "base_url": "https://api.skywork.ai/v1",
-        "models": ["skyclaw-v1.0", "skyclaw-v1.0-lite"]
+        "models": [
+          "skyclaw-v1.0",
+          "skyclaw-v1.0-lite"
+        ]
       }
     },
     {
@@ -1424,7 +1508,10 @@
       "develop": {
         "document_url": "https://platform.poolside.ai/docs",
         "base_url": "https://api.poolside.ai/v1",
-        "models": ["poolside/laguna-m.1", "poolside/laguna-xs.2"]
+        "models": [
+          "poolside/laguna-m.1",
+          "poolside/laguna-xs.2"
+        ]
       }
     },
     {
@@ -1501,7 +1588,10 @@
       "develop": {
         "document_url": "https://docs.inceptionlabs.ai/get-started/models",
         "base_url": "https://api.inceptionlabs.ai/v1",
-        "models": ["mercury-2", "mercury-edit-2"]
+        "models": [
+          "mercury-2",
+          "mercury-edit-2"
+        ]
       }
     },
     {
@@ -1512,7 +1602,11 @@
       "develop": {
         "document_url": "https://opencode.ai/docs/zen/",
         "base_url": "https://api.opencode.ai/v1",
-        "models": ["deepseek-v4-flash-free", "nemotron-3-super-free", "big-pickle-stealth"]
+        "models": [
+          "deepseek-v4-flash-free",
+          "nemotron-3-super-free",
+          "big-pickle-stealth"
+        ]
       }
     },
     {
@@ -1523,7 +1617,11 @@
       "develop": {
         "document_url": "https://www.aionlabs.ai/docs/api-reference/",
         "base_url": "https://api.aionlabs.ai/v1",
-        "models": ["aion-2.0", "aion-1.0", "aion-1.0-mini"]
+        "models": [
+          "aion-2.0",
+          "aion-1.0",
+          "aion-1.0-mini"
+        ]
       }
     },
     {
@@ -1583,7 +1681,11 @@
       "develop": {
         "document_url": "https://docs.venice.ai",
         "base_url": "https://api.venice.ai/api/v1",
-        "models": ["llama-3.1-405b", "dolphin-mixtral", "stable-diffusion-3"]
+        "models": [
+          "llama-3.1-405b",
+          "dolphin-mixtral",
+          "stable-diffusion-3"
+        ]
       }
     },
     {
@@ -1594,7 +1696,12 @@
       "develop": {
         "document_url": "https://llama.family/docs/chat-completion-v1",
         "base_url": "https://api.atomecho.cn/v1",
-        "models": ["Atom-13B-Chat", "Atom-7B-Chat", "Atom-1B-Chat", "Llama3-Chinese-8B-Instruct"]
+        "models": [
+          "Atom-13B-Chat",
+          "Atom-7B-Chat",
+          "Atom-1B-Chat",
+          "Llama3-Chinese-8B-Instruct"
+        ]
       }
     },
     {
