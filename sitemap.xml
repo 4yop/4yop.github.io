@@ -542,7 +542,7 @@
   </url>
   <url>
     <loc>https://tools321.com/time/beijing-time-countdown/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/time/exam-countdown/</loc>
@@ -554,7 +554,7 @@
   </url>
   <url>
     <loc>https://tools321.com/time/second-countdown/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/time/clock/</loc>
@@ -654,7 +654,7 @@
   </url>
   <url>
     <loc>https://tools321.com/random/ssq-random/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/dlt-random/</loc>
@@ -662,11 +662,11 @@
   </url>
   <url>
     <loc>https://tools321.com/random/kl8-random/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/rock-paper-scissors/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/decision-maker/</loc>
@@ -674,11 +674,11 @@
   </url>
   <url>
     <loc>https://tools321.com/random/random-pair/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/qxc-random/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/call-name/</loc>
@@ -710,7 +710,7 @@
   </url>
   <url>
     <loc>https://tools321.com/random/wheel/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/random/card-flip-lottery/</loc>
@@ -718,7 +718,7 @@
   </url>
   <url>
     <loc>https://tools321.com/random/flip-coin/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/video/</loc>
@@ -733,6 +733,10 @@
     <lastmod>2026-06-23</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/video/video-compress/</loc>
+    <lastmod>2026-06-29</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/video/video-clipper/</loc>
     <lastmod>2026-06-23</lastmod>
   </url>
@@ -743,6 +747,10 @@
   <url>
     <loc>https://tools321.com/video/camera-recorder/</loc>
     <lastmod>2026-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/video/phone-cam/</loc>
+    <lastmod>2026-06-28</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/video/text-to-speech/</loc>
@@ -757,12 +765,20 @@
     <lastmod>2026-06-16</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/video/video-to-ascii/</loc>
+    <lastmod>2026-06-29</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/video/alipay-receipt/</loc>
     <lastmod>2026-06-23</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/video/speaker-cleaner/</loc>
     <lastmod>2026-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/video/subtitle-convert/</loc>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/health/</loc>
@@ -1007,6 +1023,10 @@
   <url>
     <loc>https://tools321.com/tools/image-size-calculator/</loc>
     <lastmod>2026-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://tools321.com/tools/cn-mirrors/</loc>
+    <lastmod>2026-06-29</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/game/</loc>

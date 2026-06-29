@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28",
+  "updatedAt": "2026-06-29",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1706,7 +1706,39 @@
           "google/Gemma-3"
         ]
       }
+    },
+    {
+      "name": "京东 JoyAgent Hub（京东云）",
+      "quota": "京东集团官方AI模型聚合平台，京东云支持，OpenAI完全兼容API；积分制：每日登录JoyClaw赠送10,000积分（当日24:00清零）；平台派发积分（有效期1个月）；新人专享10,000积分=¥0.01（限购1个）；限时特惠10,000积分=¥1（限购3个）；1积分≈¥0.0001；支持30+主流模型含京东自研JoyAI-LLM-Flash及可灵视频/图片生成；一KEY通所有模型；支持Chat Completions（标准/流式）、Vision（URL/本地图片）、OCR、Function Calling、Embeddings、Reranker",
+      "cycle": "每日赠送10,000积分（当日24:00清零）；平台派发积分有效期1个月；购买积分包有效期1月~1年",
+      "url": "https://joyagent.jd.com",
+      "develop": {
+        "document_url": "https://docs.jdcloud.com/cn/agents/openaichat",
+        "base_url": "https://agentrs.jd.com/api/saas/openai-u/v1",
+        "models": [
+          "DeepSeek-V4-pro",
+          "DeepSeek-V4-Flash",
+          "GLM-5.1",
+          "GLM-5.2",
+          "GLM-5",
+          "GLM-4.7",
+          "JoyAI-LLM-Flash",
+          "Kimi-K2.6",
+          "Kimi-K2.5",
+          "MiniMax-M2.7",
+          "MiniMax-M2.5",
+          "DeepSeek-V3.2",
+          "qwen3.6-27b",
+          "qwen3.6-35b-a3b",
+          "kling-video-o1",
+          "kling-v2-master",
+          "kling-v2-1-master",
+          "kling-v2-1",
+          "kling-image-o1",
+          "kling-v1-5"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-06-28T10:00:00.000Z"
+  "lastUpdateTime": "2026-06-29T14:39:00.000Z"
 }
