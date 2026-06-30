@@ -279,12 +279,7 @@
       "develop": {
         "document_url": "https://platform.lingyiwanwu.com/docs",
         "base_url": "https://api.lingyiwanwu.com/v1",
-        "models": [
-          "yi-34b-chat-free",
-          "yi-34b-chat",
-          "yi-34b-chat-200k",
-          "yi-vl-plus"
-        ]
+        "models": ["yi-34b-chat-free", "yi-34b-chat", "yi-34b-chat-200k", "yi-vl-plus"]
       }
     },
     {
@@ -329,12 +324,7 @@
       "develop": {
         "document_url": "https://developer.qiniu.com/aitokenapi",
         "base_url": "https://ai.qiniuapi.com/v1",
-        "models": [
-          "deepseek-r1",
-          "qwen-plus",
-          "kimi-k2.5",
-          "deepseek-v4-flash"
-        ]
+        "models": ["deepseek-r1", "qwen-plus", "kimi-k2.5", "deepseek-v4-flash"]
       }
     },
     {
@@ -345,13 +335,7 @@
       "develop": {
         "document_url": "https://www.xfyun.cn/doc/spark/Web.html",
         "base_url": "https://spark-api.xf-yun.com",
-        "models": [
-          "spark-lite",
-          "spark-ultra",
-          "spark-pro",
-          "spark-pro-128k",
-          "spark-x1"
-        ]
+        "models": ["spark-lite", "spark-ultra", "spark-pro", "spark-pro-128k", "spark-x1"]
       }
     },
     {
@@ -362,11 +346,7 @@
       "develop": {
         "document_url": "https://docs.ai21.com",
         "base_url": "https://api.ai21.com/v1",
-        "models": [
-          "jamba-mini",
-          "jamba-large",
-          "jamba-1.5-large"
-        ]
+        "models": ["jamba-mini", "jamba-large", "jamba-1.5-large"]
       }
     },
     {
@@ -377,11 +357,7 @@
       "develop": {
         "document_url": "https://ai.atomgit.com/dashboard/api-key",
         "base_url": "https://api-ai.gitcode.com/v1",
-        "models": [
-          "zai-org/GLM-5",
-          "Qwen/Qwen3.5-397B-A17B",
-          "Qwen/Qwen3.5-122B-A10B"
-        ]
+        "models": ["zai-org/GLM-5", "Qwen/Qwen3.5-397B-A17B", "Qwen/Qwen3.5-122B-A10B"]
       }
     },
     {
@@ -565,11 +541,7 @@
       "develop": {
         "document_url": "https://jina.ai/reader/",
         "base_url": "https://api.jina.ai/v1",
-        "models": [
-          "jina-embeddings-v3",
-          "jina-reranker-v2",
-          "jina-reader"
-        ]
+        "models": ["jina-embeddings-v3", "jina-reranker-v2", "jina-reader"]
       }
     },
     {
@@ -580,13 +552,7 @@
       "develop": {
         "document_url": "https://platform.moonshot.cn/docs/guide/start-using-kimi-api",
         "base_url": "https://api.moonshot.cn/v1",
-        "models": [
-          "kimi-k2.5",
-          "kimi-k2.5-flash",
-          "kimi-k2",
-          "kimi-k2-fc",
-          "kimi-k2-thinking"
-        ]
+        "models": ["kimi-k2.5", "kimi-k2.5-flash", "kimi-k2", "kimi-k2-fc", "kimi-k2-thinking"]
       }
     },
     {
@@ -597,27 +563,22 @@
       "develop": {
         "document_url": "https://ling.tbox.cn/doc",
         "base_url": "https://openapi.aliyuncs.com/api/v3",
-        "models": [
-          "ling-2.6-1t",
-          "ling-1t",
-          "ring-1t",
-          "ming-m2"
-        ]
+        "models": ["ling-2.6-1t", "ling-1t", "ring-1t", "ming-m2"]
       }
     },
     {
       "name": "MiniMax 开放平台",
-      "quota": "新用户注册赠送 500万 Tokens（语音、文本模型均可用，此前额度已提升）；2026年5月推出 TokenPlan（全球首个支持全模态模型的统一订阅计划）；2026年6月1日发布 MiniMax M3（196B参数/11B激活，自研MSA稀疏注意力架构，1M上下文，原生多模态，Apache-2.0开源，SWE-Bench Pro超GPT-5.5）；MiniMax M2.5/M3 在 OpenRouter 上可免费调用；支持语音合成等多模态",
-      "cycle": "一次性注册赠送（约30天有效）",
+      "quota": "新用户注册赠送 500万 Tokens（语音、文本模型均可用，此前额度已提升）；2026年5月推出 TokenPlan（全球首个支持全模态模型的统一订阅计划）；2026年6月1日发布 MiniMax M3（196B参数/11B激活，自研MSA稀疏注意力架构，1M上下文，原生多模态，Apache-2.0开源，SWE-Bench Pro超GPT-5.5）；2026年6月再次推出 MiniMax M2（Agent与代码专用模型，仅Sonnet 8%价格，速度2倍）；M3 和 M2 免费试用期延长至 2026年11月7日；MiniMax M2.5/M3/M2 在 OpenRouter 上可免费调用；支持语音合成等多模态",
+      "cycle": "M3/M2免费试用延长至2026年11月7日；一次性注册赠送500万Tokens（约30天有效）",
       "url": "https://platform.minimaxi.com",
       "develop": {
         "document_url": "https://platform.minimaxi.com",
         "base_url": "https://api.minimax.chat/v1",
         "models": [
           "MiniMax-M3",
+          "MiniMax-M2",
           "MiniMax-M2.7",
           "MiniMax-M2.5",
-          "MiniMax-M2",
           "abab6.5s-chat",
           "abab6.5g-chat"
         ]
@@ -658,10 +619,7 @@
       "develop": {
         "document_url": "https://docs.nlpcloud.com",
         "base_url": "https://api.nlpcloud.io/v1",
-        "models": [
-          "finetuned-llama-3-1-70b",
-          "finetuned-llama-3-1-8b"
-        ]
+        "models": ["finetuned-llama-3-1-70b", "finetuned-llama-3-1-8b"]
       }
     },
     {
@@ -791,12 +749,7 @@
       "develop": {
         "document_url": "https://docs.upstage.ai",
         "base_url": "https://api.upstage.ai/v1",
-        "models": [
-          "solar-pro-3",
-          "solar-pro-2",
-          "solar-mini",
-          "upstage-embed"
-        ]
+        "models": ["solar-pro-3", "solar-pro-2", "solar-mini", "upstage-embed"]
       }
     },
     {
@@ -829,14 +782,7 @@
       "develop": {
         "document_url": "https://docs.x.ai/docs/data-sharing",
         "base_url": "https://api.x.ai/v1",
-        "models": [
-          "grok-4",
-          "grok-4-mini",
-          "grok-3",
-          "grok-3-mini",
-          "grok-2",
-          "grok-2-vision-1212"
-        ]
+        "models": ["grok-4", "grok-4-mini", "grok-3", "grok-3-mini", "grok-2", "grok-2-vision-1212"]
       }
     },
     {
@@ -933,13 +879,7 @@
       "develop": {
         "document_url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
         "base_url": "https://ecloud.10086.cn/api",
-        "models": [
-          "deepseek-v3",
-          "deepseek-r1",
-          "glm-5",
-          "MiniMax-M2.5",
-          "kimi-k2.5"
-        ]
+        "models": ["deepseek-v3", "deepseek-r1", "glm-5", "MiniMax-M2.5", "kimi-k2.5"]
       }
     },
     {
@@ -985,12 +925,7 @@
       "develop": {
         "document_url": "https://www.coze.cn/open/docs/guides",
         "base_url": "https://api.coze.cn/v1",
-        "models": [
-          "gpt-5",
-          "claude-sonnet-4",
-          "gemini-2.5-pro",
-          "deepseek-v4-flash"
-        ]
+        "models": ["gpt-5", "claude-sonnet-4", "gemini-2.5-pro", "deepseek-v4-flash"]
       }
     },
     {
@@ -1042,10 +977,7 @@
       "develop": {
         "document_url": "https://internlm.intern-ai.org.cn/api/document?lang=zh",
         "base_url": "https://chat.intern-ai.org.cn/api/v1",
-        "models": [
-          "intern-s1",
-          "intern-s1-pro"
-        ]
+        "models": ["intern-s1", "intern-s1-pro"]
       }
     },
     {
@@ -1157,13 +1089,7 @@
       "develop": {
         "document_url": "https://support.huaweicloud.com/modelarts/index.html",
         "base_url": "https://api.modelarts-maas.com/v2/chat/completions",
-        "models": [
-          "pangu-large",
-          "deepseek-v3.2",
-          "glm-5",
-          "kimi-k2",
-          "qwen3-235b-a22b"
-        ]
+        "models": ["pangu-large", "deepseek-v3.2", "glm-5", "kimi-k2", "qwen3-235b-a22b"]
       }
     },
     {
@@ -1192,10 +1118,7 @@
       "develop": {
         "document_url": "https://platform.xiaomimimo.com/docs",
         "base_url": "https://api.xiaomimimo.com/v1",
-        "models": [
-          "mimo-v2.5-pro",
-          "mimo-v2-flash"
-        ]
+        "models": ["mimo-v2.5-pro", "mimo-v2-flash"]
       }
     },
     {
@@ -1235,11 +1158,7 @@
       "develop": {
         "document_url": "https://www.streamlake.com/product/kat-coder",
         "base_url": "https://api.streamlake.com/v1",
-        "models": [
-          "kat-coder-pro-v2",
-          "kat-coder-pro-v1",
-          "kat-coder-air-v1"
-        ]
+        "models": ["kat-coder-pro-v2", "kat-coder-pro-v1", "kat-coder-air-v1"]
       }
     },
     {
@@ -1355,10 +1274,7 @@
       "develop": {
         "document_url": "https://skywork.ai",
         "base_url": "https://api.skywork.ai/v1",
-        "models": [
-          "skyclaw-v1.0",
-          "skyclaw-v1.0-lite"
-        ]
+        "models": ["skyclaw-v1.0", "skyclaw-v1.0-lite"]
       }
     },
     {
@@ -1508,10 +1424,7 @@
       "develop": {
         "document_url": "https://platform.poolside.ai/docs",
         "base_url": "https://api.poolside.ai/v1",
-        "models": [
-          "poolside/laguna-m.1",
-          "poolside/laguna-xs.2"
-        ]
+        "models": ["poolside/laguna-m.1", "poolside/laguna-xs.2"]
       }
     },
     {
@@ -1588,10 +1501,7 @@
       "develop": {
         "document_url": "https://docs.inceptionlabs.ai/get-started/models",
         "base_url": "https://api.inceptionlabs.ai/v1",
-        "models": [
-          "mercury-2",
-          "mercury-edit-2"
-        ]
+        "models": ["mercury-2", "mercury-edit-2"]
       }
     },
     {
@@ -1602,11 +1512,7 @@
       "develop": {
         "document_url": "https://opencode.ai/docs/zen/",
         "base_url": "https://api.opencode.ai/v1",
-        "models": [
-          "deepseek-v4-flash-free",
-          "nemotron-3-super-free",
-          "big-pickle-stealth"
-        ]
+        "models": ["deepseek-v4-flash-free", "nemotron-3-super-free", "big-pickle-stealth"]
       }
     },
     {
@@ -1617,11 +1523,7 @@
       "develop": {
         "document_url": "https://www.aionlabs.ai/docs/api-reference/",
         "base_url": "https://api.aionlabs.ai/v1",
-        "models": [
-          "aion-2.0",
-          "aion-1.0",
-          "aion-1.0-mini"
-        ]
+        "models": ["aion-2.0", "aion-1.0", "aion-1.0-mini"]
       }
     },
     {
@@ -1681,11 +1583,7 @@
       "develop": {
         "document_url": "https://docs.venice.ai",
         "base_url": "https://api.venice.ai/api/v1",
-        "models": [
-          "llama-3.1-405b",
-          "dolphin-mixtral",
-          "stable-diffusion-3"
-        ]
+        "models": ["llama-3.1-405b", "dolphin-mixtral", "stable-diffusion-3"]
       }
     },
     {
@@ -1696,12 +1594,7 @@
       "develop": {
         "document_url": "https://llama.family/docs/chat-completion-v1",
         "base_url": "https://api.atomecho.cn/v1",
-        "models": [
-          "Atom-13B-Chat",
-          "Atom-7B-Chat",
-          "Atom-1B-Chat",
-          "Llama3-Chinese-8B-Instruct"
-        ]
+        "models": ["Atom-13B-Chat", "Atom-7B-Chat", "Atom-1B-Chat", "Llama3-Chinese-8B-Instruct"]
       }
     },
     {
@@ -1847,5 +1740,5 @@
       }
     }
   ],
-  "lastUpdateTime": "2026-06-29T14:39:00.000Z"
+  "lastUpdateTime": "2026-06-30T12:00:00.000Z"
 }
