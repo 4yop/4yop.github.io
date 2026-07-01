@@ -1,0 +1,134 @@
+[
+  {
+    "id": "alidns",
+    "name": "阿里 AliDNS",
+    "description": "国内 anycast 部署,速度稳定,家用首选",
+    "category": "domestic",
+    "ipv4": ["223.5.5.5", "223.6.6.6"],
+    "ipv6": ["2400:3200::1", "2400:3200:baba::1"],
+    "doh": "https://dns.alidns.com/dns-query",
+    "dot": "dns.alidns.com",
+    "tags": ["纯净（不拦截）", "Anycast", "ECS"],
+    "links": [
+      { "label": "官网", "url": "https://alidns.com/" }
+    ]
+  },
+  {
+    "id": "dnspod",
+    "name": "DNSPod 公共 DNS+",
+    "description": "腾讯运营,国内覆盖广,DoH/DoT 域名简短易记",
+    "category": "domestic",
+    "ipv4": ["119.29.29.29", "119.28.28.28"],
+    "ipv6": ["2402:4e00::", "2402:4e00:1::"],
+    "doh": "https://doh.pub/dns-query",
+    "dot": "dot.pub",
+    "tags": ["纯净（不拦截）", "Anycast", "ECS"],
+    "links": [
+      { "label": "官网", "url": "https://www.dnspod.cn/products/publicdns" },
+      { "label": "文档", "url": "https://docs.dnspod.cn/dns/dot-doh/" }
+    ]
+  },
+  {
+    "id": "114dns",
+    "name": "114 DNS",
+    "description": "老牌国产 DNS,仅 IPv4,不支持 DoH/DoT",
+    "category": "domestic",
+    "ipv4": ["114.114.114.114", "114.114.115.115"],
+    "ipv6": [],
+    "doh": null,
+    "dot": null,
+    "tags": ["纯净（不拦截）", "Anycast", "仅 IPv4"],
+    "links": [
+      { "label": "官网", "url": "https://www.114dns.com/" }
+    ]
+  },
+  {
+    "id": "baidu",
+    "name": "百度公共 DNS",
+    "description": "百度旗下,单地址主备一体,DoH/DoT 未公开",
+    "category": "domestic",
+    "ipv4": ["180.76.76.76"],
+    "ipv6": ["2400:da00::6666"],
+    "doh": null,
+    "dot": null,
+    "tags": ["纯净（不拦截）", "Anycast", "ECS", "单地址"],
+    "links": [
+      { "label": "官网", "url": "https://dudns.baidu.com/" }
+    ]
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare 1.1.1.1",
+    "description": "全球 anycast,隐私承诺最严格;国内访问波动较大",
+    "category": "international",
+    "ipv4": ["1.1.1.1", "1.0.0.1"],
+    "ipv6": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+    "doh": "https://cloudflare-dns.com/dns-query",
+    "dot": "one.one.one.one",
+    "tags": ["纯净（不拦截）", "Anycast", "隐私优先"],
+    "links": [
+      { "label": "官网", "url": "https://1.1.1.1/" },
+      { "label": "文档", "url": "https://developers.cloudflare.com/1.1.1.1/" }
+    ]
+  },
+  {
+    "id": "google",
+    "name": "Google Public DNS",
+    "description": "Google 运营,国际兜底;国内访问需注意可达性",
+    "category": "international",
+    "ipv4": ["8.8.8.8", "8.8.4.4"],
+    "ipv6": ["2001:4860:4860::8888", "2001:4860:4860::8844"],
+    "doh": "https://dns.google/dns-query",
+    "dot": "dns.google",
+    "tags": ["纯净（不拦截）", "Anycast", "ECS"],
+    "links": [
+      { "label": "官网", "url": "https://developers.google.com/speed/public-dns" },
+      { "label": "文档", "url": "https://developers.google.com/speed/public-dns/docs/using" }
+    ]
+  },
+  {
+    "id": "quad9",
+    "name": "Quad9",
+    "description": "瑞士非营利运营,默认开启恶意域名过滤;不开过滤可用 9.9.9.10",
+    "category": "international",
+    "ipv4": ["9.9.9.9", "149.112.112.112"],
+    "ipv6": ["2620:fe::fe", "2620:fe::9"],
+    "doh": "https://dns.quad9.net/dns-query",
+    "dot": "dns.quad9.net",
+    "tags": ["默认拦截恶意域名", "Anycast", "安全防护"],
+    "links": [
+      { "label": "官网", "url": "https://quad9.net/" },
+      { "label": "文档", "url": "https://quad9.net/service/service-addresses-and-features" }
+    ]
+  },
+  {
+    "id": "opendns",
+    "name": "OpenDNS（Cisco）",
+    "description": "可加 FamilyShield（208.67.222.123/220.123）默认拦成人内容",
+    "category": "international",
+    "ipv4": ["208.67.222.222", "208.67.220.220"],
+    "ipv6": ["2620:119:35::35", "2620:119:53::53"],
+    "doh": "https://doh.opendns.com/dns-query",
+    "dot": null,
+    "tags": ["可登录开启钓鱼/家长控制", "Anycast"],
+    "links": [
+      { "label": "官网", "url": "https://www.opendns.com/" },
+      { "label": "文档", "url": "https://www.opendns.com/setupguide/" }
+    ]
+  },
+  {
+    "id": "adguard",
+    "name": "AdGuard DNS",
+    "description": "DNS 层广告/追踪过滤;如需更严格家庭模式用 family.adguard-dns.com",
+    "category": "international",
+    "ipv4": ["94.140.14.14", "94.140.15.15"],
+    "ipv6": ["2a10:50c0::ad1:ff", "2a10:50c0::ad2:ff"],
+    "doh": "https://dns.adguard-dns.com/dns-query",
+    "dot": "dns.adguard-dns.com",
+    "tags": ["默认拦截广告 + 跟踪器域名", "Anycast"],
+    "links": [
+      { "label": "官网", "url": "https://adguard-dns.io/" },
+      { "label": "文档", "url": "https://adguard-dns.io/kb/" }
+    ]
+  }
+]
