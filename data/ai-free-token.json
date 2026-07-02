@@ -1846,7 +1846,32 @@
           "kling-v1-5"
         ]
       }
+    },
+    {
+      "name": "AIHubMix",
+      "quota": "新用户注册即送27+个免费模型各10次免费调用(由平台补贴);包括GPT-5.5-free、GPT-Image-2-free、GPT-4o-free、Gemini-3-flash-preview-free、GLM-5.1-free、Kimi-free、MiniMax-free、MiMo-free等;储值后解锁更多额度;付费用户额外获得10次调用与百万token储值;无需信用卡、无试用期;200+主流AI模型统一API接口;OpenAI兼容格式;由美国AIHubMix LLC运营,获微软Azure/AWS/GCP/阿里云/百度云官方授权",
+      "cycle": "注册免费额度(各模型10次调用);储值后解锁更多(永久有效)",
+      "url": "https://aihubmix.com",
+      "develop": {
+        "document_url": "https://docs.aihubmix.com/cn/quick-start",
+        "base_url": "https://aihubmix.com/v1",
+        "models": [
+          "gpt-5.5-free",
+          "gpt-image-2-free",
+          "gpt-4o-free",
+          "gpt-4.1-free",
+          "gemini-3-flash-preview-free",
+          "gemini-2.5-flash-free",
+          "glm-5.1-free",
+          "glm-5-turbo-free",
+          "kimi-free",
+          "minimax-free",
+          "mimo-v2.5-free",
+          "deepseek-v4-flash-free",
+          "qwen3-coder-free"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-01T12:00:00.000Z"
+  "lastUpdateTime": "2026-07-02T12:00:00.000Z"
 }
