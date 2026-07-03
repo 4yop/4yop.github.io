@@ -3328,5 +3328,38 @@
     ],
     "officialWebsite": "https://github.com/Mininglamp-OSS",
     "source": "界面新闻/新浪财经 2026.06.30"
+  },
+  {
+    "name": "异算方舟",
+    "developer": "中国科学院计算机网络信息中心、中国科学技术大学、中国科学院力学研究所",
+    "releaseTime": "2026.06.29",
+    "deployment": "全栈平台,支持国产GPU算力设施",
+    "features": [
+      "国产计算系统软件生态全栈平台;九衍枢算法库汇聚16款高性能求解器;无界BoundX代码转换大模型助力代码迁移国产算力平台;Agent-HiReFlow自动化仿真智能体聚焦流体仿真应用"
+    ],
+    "website": "https://www.cnic.cn",
+    "id": 407
+  },
+  {
+    "name": "Agent-HiReFlow",
+    "developer": "中国科学院计算机网络信息中心",
+    "releaseTime": "2026.06.29",
+    "deployment": "基于多智能体架构,立足真实工程应用场景",
+    "features": [
+      "自动化仿真智能体,聚焦流体仿真的智能化应用;基于多智能体架构设计;支持AI for Science场景落地;深度协同九衍枢和无界BoundX形成技术闭环"
+    ],
+    "website": "https://www.cnic.cn",
+    "id": 408
+  },
+  {
+    "name": "BossClaw(老板龙虾)",
+    "developer": "BossClaw团队",
+    "releaseTime": "2026.03",
+    "deployment": "云端SaaS,企业管理后台一键开通",
+    "features": [
+      "面向中小企业主的智能助理,自动化财务/人事/运营流程;支持多账号团队协作;提供可视化任务监控仪表盘;零配置部署"
+    ],
+    "website": "https://bossclaw.com",
+    "id": 409
   }
 ]
