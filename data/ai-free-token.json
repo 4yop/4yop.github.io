@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01",
+  "updatedAt": "2026-07-05",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -256,8 +256,8 @@
     },
     {
       "name": "DeepSeek 开放平台",
-      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；DeepSeek-V3-Lite：永久免费不限量（200万上下文，支持思维链可视化，QPS限制20，编程能力最强免费API）；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请尽快迁移至deepseek-v4-pro/deepseek-v4-flash",
-      "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费；V3-Lite永久免费",
+      "quota": "新用户注册赠送500万Tokens（30天有效，无需信用卡）；超出后纯按量付费；网页端chat.deepseek.com免费无次数限制；V4-Flash：输入1元/百万（缓存命中0.02元），输出2元/百万；V4-Pro：2026年5月22日宣布永久降价至原价1/4（2.5折优惠永久化），输入缓存命中0.025元/百万，输入未命中3元/百万，输出6元/百万；⚠️ V4正式版将于2026年7月中旬上线，引入峰谷定价机制（高峰时段价格翻倍）；V4全系开源免费可商用；兼容OpenAI和Anthropic API格式；DeepSeek-V3-Lite：永久免费不限量（200万上下文，支持思维链可视化，QPS限制20，编程能力最强免费API）；⚠️ deepseek-chat/deepseek-reasoner将于2026-07-24停用，请迁移至deepseek-v4-pro/deepseek-v4-flash",
+      "cycle": "注册赠送500万Tokens（30天有效）；网页端永久免费；V3-Lite永久免费；V4正式版7月中旬上线引入峰谷定价",
       "url": "https://platform.deepseek.com",
       "develop": {
         "document_url": "https://api-docs.deepseek.com/zh-cn/",
@@ -944,7 +944,7 @@
     },
     {
       "name": "讯飞星辰MaaS",
-      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；Qwen3.6-35B-A3B 和 Qwen3.5-35B-A3B 限时免费（⚠️ 已临近过期，2026年6月底前有效，建议尽快领取）；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
+      "quota": "Qwen3-Coder-Next 模型永久免费无门槛不限量调用（支持代码生成、代码补全、代码解释、Bug修复等场景）；Qwen3-1.7B 免费无限量；⚠️ Qwen3.6-35B-A3B 和 Qwen3.5-35B-A3B 限时免费已于2026年6月30日过期，现已恢复按量计费；新客专属礼包赠送千万免费Tokens；DeepSeek-V3.2无门槛5折优惠；平台为科大讯飞面向开发者打造，与讯飞星火为独立平台",
       "cycle": "Qwen3-Coder-Next/Qwen3-1.7B永久免费（不限量）；新客礼包一次性赠送；政策以官方公告为准",
       "url": "https://maas.xfyun.cn",
       "develop": {
@@ -1244,21 +1244,21 @@
     },
     {
       "name": "腾讯云TokenHub",
-      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：Hy3 preview 100万Tokens、DeepSeek-V4-Flash 100万Tokens、DeepSeek-V4-Pro 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Qwen3.5-Flash 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Deepseek-v3.1、Deepseek-v3-0324、Deepseek-r1-0528已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct已于2026-06-26下线；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台，另有Token Plan/Coding Plan付费订阅；活动时间截至2026年12月31日",
-      "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型即将下线",
+      "quota": "新用户注册赠送多模型免费体验包（各模型独立额度，每个主账号限领一次）：DeepSeek-V4-Flash 100万Tokens、GLM-5 100万Tokens、GLM-5.1 50万Tokens、MiniMax-M2.7 100万Tokens、MiniMax-M2.5 100万Tokens、Qwen3.5-Plus 100万Tokens、Qwen3.5-Flash 100万Tokens、Kimi-K2.5 50万Tokens、Kimi-K2.6 50万Tokens、GLM-5V-Turbo 50万Tokens、YT-VITA 100万Tokens等；⚠️ Hy3 preview和DeepSeek-V4-Pro已于2026-05-27结束限免公测转为正式商用；⚠️ DeepSeek-V3.2将于2026年7月16日正式下线，建议迁移至DeepSeek-V4系列；⚠️ Deepseek-v3.1、Deepseek-v3-0324、Deepseek-r1-0528已于2026-05-25下线；HY 2.0 Think和HY 2.0 Instruct已于2026-06-26下线；⚠️ DeepSeek-V4正式版将于2026年7月中旬上线，引入峰谷定价机制；视觉模型：HY-Image-V3.0 50次图像生成、生视频50积分、混元生3D 100积分；兼容OpenAI/Anthropic协议；腾讯云旗下大模型服务平台；活动时间截至2026年12月31日",
+      "cycle": "语言模型额度90天有效；视觉/视频/3D额度365天有效；部分模型已下线/即将下线",
       "url": "https://cloud.tencent.com/product/tokenhub",
       "develop": {
         "document_url": "https://cloud.tencent.com/document/product/1823",
         "base_url": "https://tokenhub.tencentmaas.com/v1",
         "models": [
-          "hy3-preview",
+          "hy3-preview-commercial",
           "deepseek-v4-flash",
           "deepseek-v4-pro",
           "glm-5",
           "glm-5.1",
           "minimax-m2.7",
           "kimi-k2.6",
-          "deepseek-v3.2",
+          "deepseek-v4-official",
           "glm-5-turbo",
           "kimi-k2.5",
           "minimax-m2.5",
@@ -1873,5 +1873,5 @@
       }
     }
   ],
-  "lastUpdateTime": "2026-07-02T12:00:00.000Z"
+  "lastUpdateTime": "2026-07-05T06:44:00.000Z"
 }
