@@ -3361,5 +3361,57 @@
     ],
     "website": "https://bossclaw.com",
     "id": 409
+  },
+  {
+    "id": 410,
+    "name": "MiniMax Code",
+    "developer": "稀宇科技（MiniMax）",
+    "releaseTime": "2026.06.01",
+    "deployment": "桌面客户端（macOS/Windows），基于 OpenCode 与 Pi Agent 构建，支持手机远程",
+    "features": [
+      "专属 AI 搭档，记住用户偏好并自主组建多智能体小队（Agent Team）拆解并执行任务",
+      "支持手机远程操控电脑、本地文件操作、多智能体编排与协作任务"
+    ],
+    "website": "https://agent.minimaxi.com/download",
+    "source": "稀宇科技推出 MiniMax Code 桌面客户端 (note.f5.pm, 2026-06-01)"
+  },
+  {
+    "id": 411,
+    "name": "ColaOS",
+    "developer": "MarsWave",
+    "releaseTime": "2026.04.02",
+    "deployment": "桌面端 AI Agent 操作系统（Windows/macOS），本地安装运行",
+    "features": [
+      "首个「有灵魂的」AI Agent 操作系统，主动理解用户意图并随用户成长进化出新技能",
+      "直接读取本地文件与浏览记录获取上下文，预装 110+ 技能，支持长期记忆与主动协作"
+    ],
+    "website": "https://colaos.ai/zh/",
+    "source": "ColaOS 官网 / 少数派评测 (2026-04)"
+  },
+  {
+    "id": 412,
+    "name": "Alice",
+    "developer": "独立开发者（开源社区）",
+    "releaseTime": "2026",
+    "deployment": "桌面客户端（Windows/macOS），本地运行，需自行配置 AI 模型",
+    "features": [
+      "人格化陪伴型桌面 Agent，拥有具体立绘形象与详细人设设定",
+      "除文件管理、定时任务外，内置狼人杀、掼蛋等休闲游戏，免费使用（自备模型）"
+    ],
+    "website": "https://www.heyalice.app/",
+    "source": "百度百科 Alice 词条 / CSDN 桌面 Agent 盘点 (2026-06)"
+  },
+  {
+    "id": 413,
+    "name": "DeepSeek GUI",
+    "developer": "开源社区（GitHub: suanx/DeepSeek-GUI）",
+    "releaseTime": "2026.05",
+    "deployment": "开源桌面应用（Electron + TypeScript，MIT 协议），支持 Windows/macOS/Linux，本地运行",
+    "features": [
+      "将 DeepSeek 模型封装为本地桌面 Agent 工作台，直接读写本地项目文件、执行命令",
+      "三大模式：Code（代码）/ Write（写作）/ Claw（手机远程控制电脑），数据本地存储隐私可控"
+    ],
+    "website": "https://github.com/suanx/DeepSeek-GUI",
+    "source": "Jam's Blog / 小羿实测 / SourceForge (2026-06)"
   }
 ]
