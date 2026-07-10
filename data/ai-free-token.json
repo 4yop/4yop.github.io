@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08",
+  "updatedAt": "2026-07-11",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1871,7 +1871,27 @@
           "qwen3-coder-free"
         ]
       }
+    },
+    {
+      "name": "北京超算（BLSC - MaaS平台）",
+      "quota": "DeepSeek-7B 永久免费不限量调用；其他模型（DeepSeek-V4/V3/R1、GLM-Z1、MiniMax-M3、Qwen等）赠送千万Tokens；基于国家超算中心算力底座，OpenAI兼容API格式；北京市政府主导的国家级超级云计算平台",
+      "cycle": "DeepSeek-7B永久免费；其他模型赠送额度用完为止",
+      "url": "https://www.blsc.cn",
+      "develop": {
+        "document_url": "https://www.blsc.cn/dynamics/155.html",
+        "base_url": "https://ai.blsc.cn/v1",
+        "models": [
+          "deepseek-v4",
+          "deepseek-v4-flash",
+          "deepseek-v4-pro",
+          "deepseek-v3",
+          "deepseek-r1",
+          "glm-z1",
+          "minimax-m3",
+          "qwen3-235b-a22b"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-08"
+  "lastUpdateTime": "2026-07-11"
 }
