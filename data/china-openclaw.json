@@ -3413,5 +3413,33 @@
     ],
     "website": "https://github.com/suanx/DeepSeek-GUI",
     "source": "Jam's Blog / 小羿实测 / SourceForge (2026-06)"
+  },
+  {
+    "id": 414,
+    "name": "OpenCowork",
+    "developer": "AIDotNet 开源社区（xuzeyu91 / LeonGaoHaining 等）",
+    "releaseTime": "2026.02",
+    "deployment": "开源桌面多智能体 AI 协作平台（Electron + React + TypeScript），本地运行（local-first），支持 Windows/macOS/Linux",
+    "features": [
+      "本地代理能力：在用户许可下直接读写文件、执行 Shell 命令、搜索代码、开 SSH，打破聊天窗口与 IDE 的环境孤岛",
+      "5 种会话模式（chat/clarify/cowork/code/acp）+ 子 Agent 团队协作（Lead Agent 并行启动多个 Teammate Agent 通过 MessageQueue 通信）",
+      "多平台消息插件（飞书/钉钉/微信/Telegram/Discord/企业微信等）+ 内置 10+ 工具 + 技能系统（Skills，Markdown+Python）+ 定时任务（node-cron）+ MCP 协议支持 + 多 AI Provider 接入"
+    ],
+    "website": "https://opencowork.me",
+    "source": "gitcode.com/AIDotNet/OpenCowork README / 掘金架构解析 (2026)"
+  },
+  {
+    "id": 415,
+    "name": "OpenSquilla",
+    "developer": "基元律动（TokenRhythm，原华为诺亚方舟实验室主任王云鹤创立）",
+    "releaseTime": "2026.07.03",
+    "deployment": "开源微内核 AI Agent 框架，支持 CLI / Web UI / 聊天渠道；已签名 macOS/Windows 桌面客户端（v0.4.0 起）；本地运行、Bubblewrap 系统调用级沙箱隔离，无需 Docker",
+    "features": [
+      "智能路由 SquillaRouter：多模型 agentic routing / Model Ensemble Routing，混用 DeepSeek/GLM/Kimi/Qwen 等国产模型，同等预算下节省 60-80% Token 成本",
+      "四层持久记忆系统（工作/情景/语义/原始）+ 安全沙箱 + 10+ 渠道即插即用（飞书/钉钉/企业微信/QQ/Telegram/Discord/Slack/Matrix 等）",
+      "MetaSkills 技能层 + 从 OpenClaw / Hermes Agent 一键迁移工具；DRACO 深度研究榜单双组第一（2026-07-06）"
+    ],
+    "website": "https://opensquilla.ai/zh/",
+    "source": "腾讯新闻 / 证券时报e公司 / 澎湃新闻 (2026-07)"
   }
 ]

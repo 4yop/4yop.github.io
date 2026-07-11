@@ -173,14 +173,6 @@
     <lastmod>2026-06-23</lastmod>
   </url>
   <url>
-    <loc>https://tools321.com/img/msg-avatar/</loc>
-    <lastmod>2026-06-16</lastmod>
-  </url>
-  <url>
-    <loc>https://tools321.com/img/yeshu-generator/</loc>
-    <lastmod>2026-06-16</lastmod>
-  </url>
-  <url>
     <loc>https://tools321.com/img/glitch-image/</loc>
     <lastmod>2026-06-23</lastmod>
   </url>
@@ -318,10 +310,6 @@
   </url>
   <url>
     <loc>https://tools321.com/text/parse-address/</loc>
-    <lastmod>2026-07-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tools321.com/text/rainbow-fart/</loc>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -1089,6 +1077,10 @@
     <lastmod>2026-07-07</lastmod>
   </url>
   <url>
+    <loc>https://tools321.com/tools/rss-reader/</loc>
+    <lastmod>2026-07-10</lastmod>
+  </url>
+  <url>
     <loc>https://tools321.com/game/</loc>
     <lastmod>2026-07-09</lastmod>
   </url>
@@ -1183,10 +1175,6 @@
   <url>
     <loc>https://tools321.com/dev/</loc>
     <lastmod>2026-07-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tools321.com/dev/hacker-terminal/</loc>
-    <lastmod>2026-07-07</lastmod>
   </url>
   <url>
     <loc>https://tools321.com/dev/browser-detection/</loc>
