@@ -3441,5 +3441,46 @@
     ],
     "website": "https://opensquilla.ai/zh/",
     "source": "腾讯新闻 / 证券时报e公司 / 澎湃新闻 (2026-07)"
+  },
+  {
+    "id": 416,
+    "name": "OpenWork",
+    "developer": "different-ai 团队（深度整合阿里云百炼 / Qwen Code）",
+    "releaseTime": "2026.01",
+    "deployment": "开源本地优先 AI 智能体桌面应用（Claude Cowork 平替）；基于 OpenCode 引擎，TypeScript / Tauri / Rust 技术栈；提供桌面 GUI / Web UI / CLI 三套入口，支持 macOS / Linux / Windows；主机模式（本机运行 OpenCode，数据全本地闭环）与客户端模式（连接远程 OpenCode 服务器）自由切换；MIT 协议",
+    "features": [
+      "可视化执行时间轴：将 AI 黑盒操作变为透明流程，文件修改、命令执行步步可溯源，敏感操作弹窗分级审批（仅此一次 / 永久允许 / 拒绝），优于 Claude Cowork 的信任后自动执行",
+      "插件化技能拓展与工作流复用：通过 OpenPackage(opkg) 或本地文件夹安装技能插件，无需改核心代码即可扩展能力；工作流可保存为模板在团队内一键共享分发",
+      "多模型兼容 + 实时审计：支持 OpenAI / Anthropic 等云端 API 与 Ollama 本地模型，每轮运行生成可导出完整审计日志（提示词 / 工具调用 / 权限决策），内置 Node.js 运行环境"
+    ],
+    "website": "https://openworklabs.com/",
+    "source": "今日头条 / CSDN / 掘金 (2026-07)"
+  },
+  {
+    "id": 417,
+    "name": "DeepChat",
+    "developer": "ThinkInAIXYZ 开源社区",
+    "releaseTime": "2026（GitHub 近期持续活跃，最近提交 2026-06）",
+    "deployment": "开源本地优先（Local First）AI Agent 桌面客户端；Apache-2.0 协议；基于 Electron 构建，支持 Windows / macOS / Linux；数据本地存储、端到端加密，可接云端 API（OpenAI / Gemini / Anthropic 等）或本地 Ollama 模型",
+    "features": [
+      "多模型统一管理 + 本地模型无缝集成：一个应用支持 DeepSeek / OpenAI / Kimi / Grok / Gemini / Anthropic 等主流 LLM，内置 Ollama 无需命令行即可管理下载部署本地模型",
+      "Agentic 协议生态：内置 MCP 工具调用（代码执行 / 网络访问）、Skills 沉淀可复用任务经验、ACP（Agent Client Protocol）将外部 ACP 兼容 Agent 以一等「模型」形态接入并提供原生 Workspace UI",
+      "远程控制 + 隐私保护：支持 Telegram / 飞书(Lark) / QQBot / Discord / 微信 iLink 远程操控会话；本地数据存储、网络代理降低信息泄露风险"
+    ],
+    "website": "https://github.com/ThinkInAIXYZ/deepchat",
+    "source": "腾讯云开发者社区 / 博客园 专访 (2026-07)"
+  },
+  {
+    "id": 418,
+    "name": "Page Agent",
+    "developer": "阿里巴巴（Alibaba，主要维护者 Simon / gaomeng1900）",
+    "releaseTime": "2025.09.23（首版）；v1.11.0 于 2026.07.03 发布",
+    "deployment": "开源纯客户端 JavaScript GUI Agent；MIT 协议；TypeScript 实现，npm 包 page-agent（周下载量约 25,516）；无需安装浏览器扩展 / Python 环境 / 无头浏览器，网页中引入一行标签即可用自然语言控制界面",
+    "features": [
+      "自然语言驱动网页操作：AI 自动理解网页结构并执行点击、填表、滚动等操作，在网页右下角提供交互面板，无需离开页面即可完成自动化",
+      "零环境依赖 + 开源可定制：纯前端 JS 方案，开发者可基于公开代码二次开发与定制；官网提供在线 Demo（alibaba.github.io/page-agent/），当前 Stars 23,100+"
+    ],
+    "website": "https://github.com/alibaba/page-agent",
+    "source": "博客园 今日开源第28期 (2026-07-06)"
   }
 ]

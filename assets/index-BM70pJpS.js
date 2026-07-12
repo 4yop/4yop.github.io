@@ -1,1 +1,0 @@
-import{I as o,U as n,v as u,o as r,L as a}from"./index-D6_W4gED.js";import c from"./SunriseSunsetTool-h_U8B_Qw.js";const _=o({__name:"index",setup(p){const t=a(),s=u(()=>{const e=t.path.match(/\/geography\/sunrise-sunset-([a-z]+)\/?$/);return e?e[1]:""});return(e,l)=>(r(),n(c,{"city-slug":s.value},null,8,["city-slug"]))}});export{_ as default};
