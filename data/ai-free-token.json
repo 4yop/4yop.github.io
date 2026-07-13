@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12",
+  "updatedAt": "2026-07-13",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1906,7 +1906,27 @@
           "任意 HuggingFace 开源模型（自定义部署）"
         ]
       }
+    },
+    {
+      "name": "Featherless AI",
+      "quota": "全量开源模型免费调用（无 token 计费，按并发容量计费）；注册即送 API Key，Roo Code 联名活动送 100 万免费 tokens；46,400+ 开源模型即时部署，OpenAI 兼容 API",
+      "cycle": "免费层长期有效（当前所有模型免费，无需信用卡）",
+      "url": "https://featherless.ai",
+      "develop": {
+        "document_url": "https://featherless.ai/docs/quickstart-guide",
+        "base_url": "https://api.featherless.ai/v1",
+        "models": [
+          "deepseek-ai/DeepSeek-V3",
+          "deepseek-ai/DeepSeek-R1",
+          "Qwen/Qwen3-Coder-480B",
+          "moonshotai/Kimi-K2-Instruct",
+          "zai-org/GLM-5",
+          "openai/gpt-oss-120b",
+          "Qwen/Qwen3-32B",
+          "Llama / Mistral / Gemma 等 46,400+ 开源模型"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-12"
+  "lastUpdateTime": "2026-07-13T10:54:13.486Z"
 }

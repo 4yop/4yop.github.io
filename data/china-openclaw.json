@@ -3482,5 +3482,19 @@
     ],
     "website": "https://github.com/alibaba/page-agent",
     "source": "博客园 今日开源第28期 (2026-07-06)"
+  },
+  {
+    "id": 419,
+    "name": "ZCode",
+    "developer": "Z.ai（北京人工智能实验室，前身为智谱AI）",
+    "releaseTime": "2026.07.02",
+    "deployment": "桌面应用程序（智能体开发环境 Agentic Dev Environment）；支持 macOS（Apple Silicon / Intel）、Windows（x64 / ARM64）、Linux（Beta 内测）；为 GLM-5.2 大模型官方开发环境，支持第三方模型 BYOK（自带密钥）接入，GLM 编程计划订阅者享 1.5 倍使用额度；以项目为导向（非提示驱动），围绕 ZCode 智能体组织开发体验",
+    "features": [
+      "以智能体为中心的开发环境：用户描述目标，智能体即规划工作、编辑文件、运行检查、审查进度，并在多次迭代中持续推进直至达成目标；跨设备连续跟进（桌面 / 移动远程 / 飞书 / 微信机器人保持同一工作区任务运行）",
+      "深度集成 GLM-5.2：模型、工具与执行工作流协同调优，使智能体适配连续多步骤现实开发任务；支持 BYOK 接入第三方模型，GLM 编程计划订阅者额外获 1.5 倍额度",
+      "免费桌面应用，直接对标 Cursor / Claude Code / GitHub Copilot / Google Antigravity，官方称「GLM-5.2 的官方开发环境」"
+    ],
+    "website": "https://zcode.z.ai/",
+    "source": "今日头条 / 智谱 ZCode 官网 (2026-07)"
   }
 ]
