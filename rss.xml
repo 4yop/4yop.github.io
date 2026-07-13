@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools321 在线工具箱</title>
+    <link>https://tools321.com</link>
+    <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 13 Jul 2026 15:22:54 GMT</lastBuildDate>
+    <generator>Tools321 RSS Generator</generator>
+    <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSS阅读器</title>
+      <link>https://tools321.com/tools/rss-reader/</link>
+      <description>RSS阅读器在线工具支持添加和管理各类RSS订阅源实时获取网站最新文章更新内容，提供简洁高效的阅读界面与分类管理功能，纯前端本地运行无需注册免安装即开即用，支持导入导出OPML订阅列表方便备份迁移数据，自带CORS代理转发兼容各类RSS和Atom订阅源格式，让你集中订阅博客新闻播客等信息渠道高效便捷。</description>
+      <pubDate>Fri, 10 Jul 2026 10:15:55 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/rss-reader/</guid>
+    </item>
+    <item>
+      <title>分贝测试</title>
+      <link>https://tools321.com/tools/decibel-meter/</link>
+      <description>免费在线分贝测试工具，使用麦克风实时测量环境噪音声压级，提供环形仪表盘、频谱分析条和时序波形图三种可视化展示，支持手动校准和快速校准，显示峰值平均值最低值统计，适用于邻里噪音取证、办公环境评估、设备异响诊断等场景，所有音频本地处理不上传，保护隐私安全无需注册，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Thu, 09 Jul 2026 10:40:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/decibel-meter/</guid>
+    </item>
+    <item>
+      <title>TXT转EPUB</title>
+      <link>https://tools321.com/text/txt-to-epub/</link>
+      <description>TXT转EPUB在线工具，把纯文本小说与文档一键转换成Kindle、掌阅、Boox、Apple Books原生支持的电子书。自动识别中文章节生成可跳转目录，智能探测UTF-8、GBK、GB18030、Big5编码避免乱码，支持简繁互转、多本打包ZIP与自动生成渐变封面，全部在浏览器本地处理，文件不上传服务器更安全。</description>
+      <pubDate>Thu, 09 Jul 2026 04:31:02 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/text/txt-to-epub/</guid>
+    </item>
+    <item>
+      <title>LLM Token计数器</title>
+      <link>https://tools321.com/dev/llm-token/</link>
+      <description>免费在线LLM Token计数器，支持GPT-4o/GPT-4/Claude/Gemini/DeepSeek/Llama3等模型的分词计数，实时显示token数量、上下文窗口占比、分词可视化和调用费用估算，纯浏览器本地运行无需上传，开发者必备工具，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Tue, 07 Jul 2026 06:35:09 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/llm-token/</guid>
+    </item>
+    <item>
+      <title>资产热力图</title>
+      <link>https://tools321.com/math/asset-heatmap/</link>
+      <description>免费在线资产分布热力图工具，输入名称/数量/当前价/币种即可生成 treemap 可视化图表。支持人民币/美元/港币/日元等多币种自动汇率折算，按币种或自定义标签着色，市值面积分布一目了然。数据仅存浏览器本地，支持隐私打码、导出 PNG、粘贴导入。适用于股票、基金、ETF、债券等资产的配置结构分析。</description>
+      <pubDate>Tue, 07 Jul 2026 04:05:25 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/math/asset-heatmap/</guid>
+    </item>
+    <item>
+      <title>手机号归属地</title>
+      <link>https://tools321.com/tools/phone-location/</link>
+      <description>手机号归属地在线查询工具，输入手机号即时查询号段归属地、运营商、省份城市、长途区号、邮政编码。支持批量查询和CSV导出，纯本地离线运算不上传服务器，50万+号段数据覆盖全国31省市，号码不上传保护隐私安全，支持拖拽文件导入、运营商号段速查、号段结构说明与携号转网提示说明，在线工具无需下载安装即可使用</description>
+      <pubDate>Tue, 07 Jul 2026 04:05:25 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/phone-location/</guid>
+    </item>
+    <item>
+      <title>音频变速</title>
+      <link>https://tools321.com/video/audio-tempo/</link>
+      <description>在线音频变速工具免费使用，0.25x~4x 速度任意调节、音调保持不变（atempo 时间拉伸）。课程1.5x加速、慢速0.5x学外语、播客2x通勤。Web Audio 实时预览速度变化，支持 MP3/WAV/AAC/M4A/FLAC 输出，ffmpeg.wasm 浏览器本地处理不上传。拖拽上传即可在线处理下载，无需注册。</description>
+      <pubDate>Sun, 05 Jul 2026 09:27:35 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-tempo/</guid>
+    </item>
+    <item>
+      <title>SVG编辑预览</title>
+      <link>https://tools321.com/dev/svg-edit/</link>
+      <description>SVG在线编辑预览工具，支持代码编辑、实时可视化渲染、点击节点编辑fill/stroke/transform属性，内置SVGO一键压缩优化，可导出PNG高清图片、JSX和Vue组件模板，复制data URL和base64编码，全程浏览器本地处理不上传文件，免费在线SVG编辑器，在线工具无需安装即刻使用</description>
+      <pubDate>Sat, 04 Jul 2026 16:42:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/svg-edit/</guid>
+    </item>
+    <item>
+      <title>身份证打印排版</title>
+      <link>https://tools321.com/office/id-card-print/</link>
+      <description>免费在线身份证打印排版工具，上传身份证正反面照片后，系统自动按国家标准尺寸（85.6×54mm）将正反面居中排版到A4纸，支持旋转、缩放、平移微调、裁切线和文字水印，一键打印或导出高清PNG图片。所有图片处理均在浏览器本地完成，不会上传到任何服务器，有效保护您的个人隐私安全，无需安装软件即可快速完成身份证复印排版。</description>
+      <pubDate>Thu, 02 Jul 2026 06:11:30 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/id-card-print/</guid>
+    </item>
+    <item>
+      <title>宠物年龄换算</title>
+      <link>https://tools321.com/dev/pet-age/</link>
+      <description>在线宠物年龄换算工具，科学计算猫狗年龄对应人类岁数，狗体型分档（小型/中型/大型/巨型）采用兽医学非线性公式而非×7规则，提供生命阶段判断（幼年/青年/壮年/老年）、可视化进度条、年龄对照表及阶段护理建议，支持猫狗年龄双向换算与状态持久化保存，一键获取宠物等效人类年龄，适配移动端响应式布局，免费使用。</description>
+      <pubDate>Thu, 02 Jul 2026 02:20:31 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/pet-age/</guid>
+    </item>
+    <item>
+      <title>公共DNS速查</title>
+      <link>https://tools321.com/dev/cn-dns/</link>
+      <description>国内外公共DNS完整速查工具：收录阿里、DNSPod、114DNS、百度、Cloudflare、Google、Quad9、OpenDNS、AdGuard等9大服务商的IPv4/IPv6/DoH/DoT地址，支持一键复制，并提供macOS、Windows、Linux、Docker等9大平台的配置命令生成器。</description>
+      <pubDate>Wed, 01 Jul 2026 16:40:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/cn-dns/</guid>
+    </item>
+    <item>
+      <title>音频合并</title>
+      <link>https://tools321.com/video/audio-merge/</link>
+      <description>音频合并在线工具，支持MP3、WAV、M4A、AAC、FLAC、OGG等多段音频拼接为一段，可自定义段间静音间隔，输出MP3/WAV/AAC/M4A/FLAC。基于ffmpeg.wasm浏览器本地处理，不上传服务器，拖拽上传即可在线预览下载，免费使用无需注册，保护隐私安全，在线工具无需下载安装即可使用</description>
+      <pubDate>Wed, 01 Jul 2026 10:05:52 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-merge/</guid>
+    </item>
+    <item>
+      <title>音量调整</title>
+      <link>https://tools321.com/video/audio-volume/</link>
+      <description>在线调整音频音量：手动增益（±20dB）、按LUFS自动响度标准化（播客/流媒体/广播预设）、防爆音限幅。支持MP3/WAV/AAC/M4A/FLAC输出，Web Audio实时预览，全程浏览器本地处理不上传。适用于播客制作、视频配音与语音素材统一，免费打开即用，是音频后期响度校准的实用网页工具。，免费打开即用。</description>
+      <pubDate>Wed, 01 Jul 2026 09:06:49 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-volume/</guid>
+    </item>
+    <item>
+      <title>音频分割</title>
+      <link>https://tools321.com/video/audio-split/</link>
+      <description>在线音频分割工具免费使用，支持按时长等分（每N分钟一段）和按时间点切两种模式，输入MP3/WAV/M4A/AAC/FLAC/OGG/OPUS，输出MP3/WAV/AAC/M4A/FLAC五种格式。多段可一键打包ZIP下载。基于ffmpeg.wasm浏览器本地处理不上传，适合分割长录音、整张专辑分曲、课程按章分段、播客切通勤段。拖拽上传即可使用，无需注册。</description>
+      <pubDate>Wed, 01 Jul 2026 08:48:16 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-split/</guid>
+    </item>
+    <item>
+      <title>音频剪辑</title>
+      <link>https://tools321.com/video/audio-trim/</link>
+      <description>在线音频剪辑工具免费使用，支持MP3/WAV/M4A/AAC/FLAC/OGG等格式输入，输出MP3/WAV/AAC。边播边标记起止时间或手动输入精确到0.1秒，搭配微调按钮精细调整。基于ffmpeg.wasm浏览器本地处理不上传，适合制作手机铃声、裁剪播客片段、剪掉录音首尾静音、截取音乐副歌BGM。拖拽上传即可在线预览下载，无需注册。</description>
+      <pubDate>Tue, 30 Jun 2026 15:01:34 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-trim/</guid>
+    </item>
+    <item>
+      <title>视频提取音频</title>
+      <link>https://tools321.com/video/video-to-audio/</link>
+      <description>视频提取音频在线工具，支持MP4、MOV、WebM、MKV等视频转MP3、WAV、AAC，可自定义起止时间截取片段，MP3/AAC可选128k/192k/320k码率。基于ffmpeg.wasm浏览器本地处理，不上传服务器，拖拽上传即可在线预览下载，免费使用无需注册，保护隐私安全，操作简单三步完成。</description>
+      <pubDate>Tue, 30 Jun 2026 13:22:21 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/video-to-audio/</guid>
+    </item>
+    <item>
+      <title>寻宠启事生成器</title>
+      <link>https://tools321.com/tools/pet-missing-poster/</link>
+      <description>免费在线寻宠启事生成器，快速制作宠物走失海报。支持上传宠物照片、填写走失信息、添加联系方式和二维码，多种海报配色可选，一键下载高清PNG海报打印张贴。支持电话脱敏保护隐私，数据本地处理不上传服务器，完全免费无需注册即开即用，适合狗狗猫咪走失紧急寻回场景，A4打印效果清晰，海报无水印，操作简单便捷实用。</description>
+      <pubDate>Mon, 29 Jun 2026 17:26:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/pet-missing-poster/</guid>
+    </item>
+    <item>
+      <title>双色球随机生成</title>
+      <link>https://tools321.com/random/ssq-random/</link>
+      <description>双色球随机选号生成器，一键机选1至10注6红1蓝号码，红蓝分色显示直观清晰。支持单注复制与批量导出，纯浏览器本地运算不上传任何数据，保护隐私安全。适合彩民快速生成机选号码、研究号码走势参考，随机摇号过程直观有趣。打开即用免安装，电脑手机均能流畅使用，免费在线工具，仅作娱乐参考，请理性购彩，操作简单便捷。</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/ssq-random/</guid>
+    </item>
+    <item>
+      <title>石头剪刀布</title>
+      <link>https://tools321.com/random/rock-paper-scissors/</link>
+      <description>石头剪刀布模拟器在线版，支持三局两胜猜拳对战。可手动出拳或自动批量模拟，实时统计胜负平局与胜率数据，分析出招偏好和猜拳风格以提升胜率。，完全免费且注重隐私安全，所有数据在浏览器本地处理不上传服务器，打开网页即可直接使用。，全程浏览器本地运行不上传服务器，完全免费且打开即用，注重您的隐私安全，适配手机与电脑浏览器。</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/rock-paper-scissors/</guid>
+    </item>
+    <item>
+      <title>随机配对</title>
+      <link>https://tools321.com/random/random-pair/</link>
+      <description>随机配对工具免费在线将名单成员随机两两配对分组，支持A-B组交叉配对和单组内部配对两种模式。适用于团队活动搭档分配、比赛抽签分组、教学课堂组队等场景，可设置避免配对规则确保特定人员不分到一组，结果支持CSV导出分享。完全免费无需注册，数据本地处理保护隐私，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/random-pair/</guid>
+    </item>
+    <item>
+      <title>七星彩随机选号</title>
+      <link>https://tools321.com/random/qxc-random/</link>
+      <description>七星彩机选工具，免费在线随机选号生成器，一键摇号机选一注七星彩号码。支持1-10注批量机选，前区7位数字+后区1位随机独立生成，一键复制号码方便保存。纯浏览器本地运算保护隐私，打开即用无需注册。仅供娱乐参考请理性购彩，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/qxc-random/</guid>
+    </item>
+    <item>
+      <title>快乐8随机选号</title>
+      <link>https://tools321.com/random/kl8-random/</link>
+      <description>快乐8随机选号器免费在线使用，一键摇号从1-80随机选取10个号码并自动排序。支持1-10注批量生成、单注复制与全部导出。纯浏览器本地运算保护隐私，无需注册下载打开即用，适合快乐8机选号码参考和选号辅助场景，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/kl8-random/</guid>
+    </item>
+    <item>
+      <title>抛硬币</title>
+      <link>https://tools321.com/random/flip-coin/</link>
+      <description>在线抛硬币模拟器提供真实3D物理翻转动画效果，点击硬币或按空格键即可随机生成正反面结果，每次抛掷过程独立且公平，正面背面概率各50%。支持连续多次投掷并自动统计正反面出现次数与比例，适用于日常二选一决策、游戏先后手决定和概率大数定律教学验证。免费在线工具，无需下载注册，打开即用，数据本地处理不上传保护隐私安全。</description>
+      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/random/flip-coin/</guid>
+    </item>
+    <item>
+      <title>字幕格式转换</title>
+      <link>https://tools321.com/video/subtitle-convert/</link>
+      <description>免费在线字幕格式转换工具，支持SRT、WebVTT、LRC、ASS四种字幕格式互相转换，自动识别GBK/Big5/UTF-8编码修复乱码，支持整体时间偏移调整和样式标签清理，浏览器本地处理不上传服务器，适用于视频双语字幕与压制，打开即用，是字幕组与视频创作者的高效小工具。，处理过程不依赖网络，断网也能稳定使用。</description>
+      <pubDate>Mon, 29 Jun 2026 03:40:06 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/subtitle-convert/</guid>
+    </item>
+    <item>
+      <title>视频压缩</title>
+      <link>https://tools321.com/video/video-compress/</link>
+      <description>免费在线视频压缩工具，支持调整码率、缩小分辨率、降低帧率，浏览器本地ffmpeg.wasm处理不上传服务器。适用于微信传输、邮件附件、网页嵌入、网盘减容等场景，一键压缩视频保持高清画质，节省存储空间，免费打开即用无需安装，是日常视频瘦身与分享的实用利器。，无需安装插件或客户端，复制结果即可直接使用。</description>
+      <pubDate>Mon, 29 Jun 2026 03:08:51 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/video-compress/</guid>
+    </item>
+    <item>
+      <title>视频转ASCII字符视频</title>
+      <link>https://tools321.com/video/video-to-ascii/</link>
+      <description>免费在线视频转 ASCII 字符视频工具，将视频每一帧渲染为 ASCII 字符画后重新编码输出 MP4，支持彩色/黑白、自定义字符集、字符密度调节，完全本地处理隐私安全。支持 MP4、WebM、OGG 格式上传，可调节字符密度、帧率和字符集，适用于复古风格视频制作、终端动画和创意短片。</description>
+      <pubDate>Mon, 29 Jun 2026 03:08:50 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/video-to-ascii/</guid>
+    </item>
+    <item>
+      <title>跨设备摄像头串流</title>
+      <link>https://tools321.com/video/phone-cam/</link>
+      <description>免费在线跨设备摄像头串流工具，手机扫码即用 WebRTC P2P 直传画面到电脑浏览器。无需安装 App，支持手机↔PC、PC↔PC、手机↔手机任意组合，480p/720p/1080p/4K 画质可选，画面不经服务器保护隐私。适合临时文档展示台、直播二机位、远程监控等场景。</description>
+      <pubDate>Sun, 28 Jun 2026 17:29:27 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/phone-cam/</guid>
+    </item>
+    <item>
+      <title>国内镜像源导航</title>
+      <link>https://tools321.com/tools/cn-mirrors/</link>
+      <description>国内开源镜像源完整导航：17 个常用工具 — pip、conda、npm、yarn、Maven、Gradle、Cargo、Go、Composer、RubyGems、Homebrew、Ubuntu、Debian、CentOS、Alpine、Arch、Docker — 一键复制清华 TUNA、阿里云、华为云、腾讯云、中科大、北外、网易、南大 8 大镜像源的配置命令。覆盖 Python、Node.js、Java、Rust、Go、PHP、Ruby、macOS 开发环境及 Ubuntu/Debian/CentOS 操作系统和 Docker 容器镜像加速。完全免费，打开即用。</description>
+      <pubDate>Sun, 28 Jun 2026 17:25:37 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/cn-mirrors/</guid>
+    </item>
+    <item>
+      <title>北京时间倒计时</title>
+      <link>https://tools321.com/time/beijing-time-countdown/</link>
+      <description>免费在线北京时间倒计时器，精确到毫秒，基于原子钟API自动校准UTC+8中国标准时间。支持1/3/5/10/15/30分钟快速预设与自定义年月日时分秒目标倒计时，全屏大字显示，声音提醒与浏览器桌面通知双重提醒，历史记录自动保存。所有计算在浏览器本地完成，数据不上传服务器，无需注册即开即用，适合会议控时、考试与演讲计时</description>
+      <pubDate>Thu, 25 Jun 2026 06:42:48 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/time/beijing-time-countdown/</guid>
+    </item>
+    <item>
+      <title>docker run↔compose</title>
+      <link>https://tools321.com/dev/docker-run-compose/</link>
+      <description>docker run 命令与 docker-compose.yml 双向互转工具，支持端口、数据卷、环境变量、网络、重启策略、健康检查等参数转换，无法对应的参数会明确提示，纯浏览器本地运行不上传数据，帮助开发者快速在命令行和编排文件之间切换，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Wed, 24 Jun 2026 06:01:26 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/docker-run-compose/</guid>
+    </item>
+    <item>
+      <title>思维导图</title>
+      <link>https://tools321.com/dev/markmap/</link>
+      <description>markmap在线思维导图工具，用Markdown标题和列表实时生成思维导图，支持缩放平移折叠展开、SVG和PNG导出、分享链接，浏览器本地渲染不上传，写作即出图，适合读书笔记、产品规划、学习路线、会议纪要、OKR拆解等场景，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Wed, 24 Jun 2026 05:59:47 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/markmap/</guid>
+    </item>
+    <item>
+      <title>镜像加速站</title>
+      <link>https://tools321.com/dev/mirror-acceleration/</link>
+      <description>开发者镜像加速地址查询工具，收录Composer、npm、pip、yarn、gem、apt、Docker、Homebrew等常用开发工具的国内镜像源地址，一键复制即可加速安装。解决官方源访问慢、超时中断等痛点，显著提升依赖安装与构建效率，免费在线使用无需注册，是日常开发提效的实用小工具。，无需安装即用。</description>
+      <pubDate>Wed, 24 Jun 2026 05:59:46 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/mirror-acceleration/</guid>
+    </item>
+    <item>
+      <title>UTM生成器</title>
+      <link>https://tools321.com/webmaster/utm-generator/</link>
+      <description>免费在线UTM追踪参数网址构建生成器工具为营销推广活动链接自动添加utm_source来源utm_medium媒介utm_campaign活动名称utm_content内容标识utm_term关键词五个标准UTM标记参数便于Google Analytics百度统计等数据分析平台精确追踪流量渠道来源媒介效果转化率和RO。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/webmaster/utm-generator/</guid>
+    </item>
+    <item>
+      <title>网址批量生成</title>
+      <link>https://tools321.com/webmaster/url-batch-generator/</link>
+      <description>免费在线URL网址批量生成构造工具根据前缀模板数字范围规则后缀分隔符变量替换等配置一键批量生成大量URL链接列表支持数字递增字母循环多种生成模式适用于站点地图Sitemap制作爬虫种子URL准备SEO链接构建批量接口测试数据采集地址生成等场景使用结果可一键复制或导出为TXT CSV格式文件完全免费无需注册在线完成批量。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/webmaster/url-batch-generator/</guid>
+    </item>
+    <item>
+      <title>域名屏蔽检测</title>
+      <link>https://tools321.com/webmaster/domain-check/</link>
+      <description>一键检测域名在微信、QQ、抖音、360、谷歌等14个主流平台的屏蔽状态与拦截情况。免费在线查询工具，输入域名即可快速获取是否被墙或被拦截的检测结果，实时返回准确可靠数据，支持一键跳转各平台官方申诉页面快速解封处理，打开即用无需注册登录，全面保障域名访问安全与业务连续性，是站长必备的域名屏蔽检测助手。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/webmaster/domain-check/</guid>
+    </item>
+    <item>
+      <title>DNS解析查询</title>
+      <link>https://tools321.com/webmaster/dns-query/</link>
+      <description>免费在线DNS解析查询工具，支持查询A、AAAA、CNAME、MX、NS、TXT、SOA、CAA等8种常见DNS记录类型。输入域名即可快速获取完整的DNS解析信息，包括IPv4地址、IPv6地址、邮件服务器、名称服务器、SPF记录等关键数据，帮助站长和开发者快速诊断DNS配置问题，实时返回准确可靠数据</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/webmaster/dns-query/</guid>
+    </item>
+    <item>
+      <title>视频剪辑</title>
+      <link>https://tools321.com/video/video-clipper/</link>
+      <description>在线截取视频片段工具，支持视频片段选取、视频时间段裁剪与批量截取，精准设置起止时间截取MP4、AVI、MOV等常见格式。适用于精彩片段提取、短视频制作和视频剪辑等场景，浏览器本地处理不上传服务器保护隐私，无需安装软件完全免费，轻松制作专属短片，是视频创作者的高效剪辑小助手。，完全免费且注重隐私，手机电脑浏览器均可访问。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/video-clipper/</guid>
+    </item>
+    <item>
+      <title>文字转语音</title>
+      <link>https://tools321.com/video/text-to-speech/</link>
+      <description>文字转语音TTS在线工具，将文本内容智能朗读为自然流畅的语音音频。支持中英文等多语言和多种音色选择，可自由调节语速、音量、音调等参数，支持一键下载生成的MP3音频文件，适用于有声读物制作、无障碍阅读、视频配音、课件旁白等场景。浏览器本地处理数据绝不上传服务器，保护隐私安全，完全免费无需注册即开即用。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/text-to-speech/</guid>
+    </item>
+    <item>
+      <title>扬声器清灰</title>
+      <link>https://tools321.com/video/speaker-cleaner/</link>
+      <description>免费在线扬声器清灰工具，通过播放特定频率的测试音效和声波信号帮助清理笔记本电脑或手机扬声器内部积聚的灰尘颗粒和污垢，恢复音频设备音质清晰度和正常音量表现水平，无需下载安装任何软件，打开浏览器即可使用，安全无损伤，是音箱保养与异响排查的居家小妙招。，所有计算在本地完成不收集文件，界面简洁无广告，是轻量实用的在线小工具。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/speaker-cleaner/</guid>
+    </item>
+    <item>
+      <title>视频哈希修改</title>
+      <link>https://tools321.com/video/hash/</link>
+      <description>免费在线视频MD5修改器，一键改变视频哈希值和指纹标识，解决视频平台重复检测和去重限制。支持MP4/AVI/MOV等格式，三种修改方式可选，不损画质。浏览器本地处理无需上传，适用于多账号发布与素材去重，打开即用保护隐私，无需安装软件，是短视频运营与素材管理的便捷助手。，所有计算在本地完成，不收集您的文件，放心使用。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/hash/</guid>
+    </item>
+    <item>
+      <title>摄像头录制</title>
+      <link>https://tools321.com/video/camera-recorder/</link>
+      <description>免费在线摄像头录制工具调用设备摄像头进行高清视频录制和拍照截图功能强大易用支持前置后置摄像头自由切换画质分辨率调节和本地视频文件保存下载适用于在线面试视频通话录制网课记录和证件照自拍场景浏览器本地处理数据保护隐私安全无需注册打开即用免费在线使用体验好效果良好操作简单方便快捷高效实用可靠数据安全可靠。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/camera-recorder/</guid>
+    </item>
+    <item>
+      <title>浏览器录屏</title>
+      <link>https://tools321.com/video/browser-screen/</link>
+      <description>浏览器屏幕共享与录制工具，将浏览器标签页或整个屏幕画面实时投射到大屏幕，支持自定义分辨率、帧率和录制格式，可同时录制屏幕画面与系统声音输出，适用于会议演示、教学投屏和远程协作等多种场景，无需安装任何软件即可使用，所有数据浏览器本地处理无需上传服务器，完全免费在线即开即用，无需注册登录即可直接地使用。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/browser-screen/</guid>
+    </item>
+    <item>
+      <title>录音</title>
+      <link>https://tools321.com/video/audio-recorder/</link>
+      <description>在线录音机工具，通过浏览器麦克风录制高品质音频文件。支持MP3和WAV格式输出与实时波形预览，提供录音历史管理和音频回放功能，满足会议记录、语音备忘和内容创作等多种录音需求。支持暂停继续录制和采样率自定义设置，录音完成后可直接下载保存音频文件。浏览器本地处理，无需安装软件，数据不上传服务器，保护隐私安全。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/audio-recorder/</guid>
+    </item>
+    <item>
+      <title>支付宝到账音效</title>
+      <link>https://tools321.com/video/alipay-receipt/</link>
+      <description>支付宝到账语音生成器是免费的在线合成逼真收款提示音效工具软件程序，支持自定义金额从0.01元至1亿元一键生成语音功能操作。适用于短视频配音、闹钟铃声设置和创意营销等场景使用体验，可试听并下载MP3格式音频文件输出结果，浏览器本地运行数据保护隐私安全完全免费无需注册即可使用体验便捷高效实用快速完成操作获取结果数据安全。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/video/alipay-receipt/</guid>
+    </item>
+    <item>
+      <title>网速测试</title>
+      <link>https://tools321.com/tools/speed-test/</link>
+      <description>免费在线网速测试工具，一键检测宽带下载速度、上传速度与Ping延迟。多阶段精准测速，实时仪表盘展示网速波动趋势，准确评估网络带宽性能。支持WiFi无线网络、光纤宽带、移动数据流量等环境，数据浏览器本地处理绝不泄露，测网速就上Tools321！，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/speed-test/</guid>
+    </item>
+    <item>
+      <title>网站巡检器</title>
+      <link>https://tools321.com/tools/site-inspector/</link>
+      <description>免费在线网站巡检器登录保活助手，批量打开常用网站检查各站点登录状态是否正常，支持自定义网站列表间隔时间一键启停控制，本地保存配置数据不上传服务器保护隐私安全，无需注册打开即用，适用于运维监控与多账号保活，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验，是值守排查的省心小工具。，手机电脑都能用。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/site-inspector/</guid>
+    </item>
+    <item>
+      <title>屏幕检测</title>
+      <link>https://tools321.com/tools/screen-check/</link>
+      <description>免费在线屏幕检测工具，一键全屏检测屏幕坏点、漏光与偏色问题。自动读取分辨率、DPR、色深等屏幕参数，提供19种纯色与图案测试，支持笔记本、手机及外接显示器验机。含黑白渐变、彩虹渐变、灰阶条、RGB色条、棋盘格等多种模式，键盘快捷切换。浏览器打开即用，帮助快速判断屏幕质量，无需下载安装。适合新机验货与二手验收。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/screen-check/</guid>
+    </item>
+    <item>
+      <title>网站延时检测</title>
+      <link>https://tools321.com/tools/ping-check/</link>
+      <description>网站延迟测试工具免费在线Ping延时检测，一键检测百度淘宝微博京东等70+常用网站与国内主流云服务平台及海外站点的响应速度和网络连通性，支持自定义添加任意网址进行串行延迟检测，前端本地执行保护隐私免注册，提供最快最慢平均延迟及超时数量统计结果方便直观对比分析各网站访问速度质量。无需下载安装即开即用。</description>
+      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/ping-check/</guid>
+    </item>
+  </channel>
+</rss>

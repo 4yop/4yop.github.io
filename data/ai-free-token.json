@@ -1926,6 +1926,19 @@
           "Llama / Mistral / Gemma 等 46,400+ 开源模型"
         ]
       }
+    },
+    {
+      "name": "Meta Model API (Muse Spark)",
+      "quota": "每个新账户赠送 $20 免费额度（公开预览期，美国开发者专享，需加入 waitlist 分批开放）；额度用完后按量付费：输入 $1.25/百万 tokens、输出 $4.25/百万 tokens、缓存读取 $1.00/百万 tokens、内置联网搜索 $0.00825/次；Muse Spark 1.1 为闭源多模态推理模型，上下文 1M tokens、最大输出 131,072 tokens，支持文本/图像/视频/PDF 输入、工具调用、结构化输出与联网搜索接地；⚠️ 2026-07-09 发布，仅限美国地区开发者，未上架 OpenRouter 等第三方平台；该服务取代已于 2026-07-06 退役的 Meta Llama API（api.llama.com）",
+      "cycle": "公开预览期（新账户一次性 $20 免费额度，长期有效直至官方调整）",
+      "url": "https://developer.meta.com/docs/model-api",
+      "develop": {
+        "document_url": "https://developer.meta.com/ai/resources/blog/build-with-muse-spark",
+        "base_url": "https://api.meta.ai/v1",
+        "models": [
+          "muse-spark-1.1"
+        ]
+      }
     }
   ],
   "lastUpdateTime": "2026-07-13T10:54:13.486Z"
