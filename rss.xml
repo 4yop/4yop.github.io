@@ -5,13 +5,13 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 13 Jul 2026 15:22:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 16:12:35 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RSS阅读器</title>
       <link>https://tools321.com/tools/rss-reader/</link>
-      <description>RSS阅读器在线工具支持添加和管理各类RSS订阅源实时获取网站最新文章更新内容，提供简洁高效的阅读界面与分类管理功能，纯前端本地运行无需注册免安装即开即用，支持导入导出OPML订阅列表方便备份迁移数据，自带CORS代理转发兼容各类RSS和Atom订阅源格式，让你集中订阅博客新闻播客等信息渠道高效便捷。</description>
+      <description>RSS阅读器在线工具支持添加和管理各类RSS订阅源实时获取网站最新文章更新内容，提供简洁高效的阅读界面与分类管理功能，纯前端本地运行无需注册免费免安装即开即用，支持导入导出OPML订阅列表方便备份迁移数据，自带CORS代理转发兼容各类RSS和Atom订阅源格式，让你集中订阅博客新闻播客等信息渠道高效便捷。</description>
       <pubDate>Fri, 10 Jul 2026 10:15:55 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/tools/rss-reader/</guid>
     </item>
