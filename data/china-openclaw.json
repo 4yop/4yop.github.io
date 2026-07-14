@@ -3496,5 +3496,61 @@
     ],
     "website": "https://zcode.z.ai/",
     "source": "今日头条 / 智谱 ZCode 官网 (2026-07)"
+  },
+  {
+    "id": 420,
+    "name": "ClawX",
+    "developer": "ValueCell-ai 开源社区",
+    "releaseTime": "2026.07",
+    "deployment": "开源桌面客户端（基于 OpenClaw 深度打造的图形化壳）；跨平台支持 macOS / Windows / Linux；提供 CLI + GUI 双模式，采用 Electron + React 双进程架构；本地优先运行，数据不出设备",
+    "features": [
+      "基于 OpenClaw 开源生态打造的全图形化桌面客户端，将本地 AI 智能体从命令行带入普通用户日常，双击安装、3 分钟上手，无需编程基础，内置 OpenClaw 核心运行时",
+      "完整兼容 OpenClaw 生态，预置 55+ 技能开箱即用（效率办公 / 开发者工具 / 多媒体创作 / 智能家居等），支持 ClawHub 技能市场一键安装与 MCP 协议接入任意工具服务",
+      "本地优先 7×24 运行，独立浏览器实例跨源抓取数据，通过微信 / 飞书 / Discord / Telegram / Slack / iMessage 等 20+ 通道推送结果，1Password 集成保障凭证安全"
+    ],
+    "website": "https://claw-x.com/",
+    "source": "脚本之家软件站 / SiliconFlow 用户案例 (2026-07)"
+  },
+  {
+    "id": 421,
+    "name": "QeeClaw",
+    "developer": "企数星图",
+    "releaseTime": "2026",
+    "deployment": "企业级 OpenClaw 私有化部署客户端 / 一体机（企数 QEECLAW 一体机）；基于 OpenClaw 深度二次开发；100% 私有化部署，数据不出门；已获国家大模型备案认证（2025）；目前支持 macOS（Intel & Apple Silicon）",
+    "features": [
+      "基于全球知名开源智能体引擎 OpenClaw 深度二次开发的企业级 AI 数字员工平台，开箱即用、在线管理，面向金融 / 医疗 / 政务等高合规行业构建安全可控的私有化 AI 能力体系",
+      "企业私有知识库引擎：基于企数大模型对企业文档 / SOP / 业务日志深度向量化，构建可记忆、可传承的本地知识中枢，数据绝不上云",
+      "7×24 全员即时响应，主动追踪行业动态 / 竞品情报 / 政策变化并推送；多渠道无缝接入微信、企业微信、飞书、钉钉等主流 IM；一体机形态免配置、无需 Token 计费、全员无限使用"
+    ],
+    "website": "https://www.qeeclaw.com/",
+    "source": "QeeClaw 官网 / QEECLAW 产品白皮书 2026"
+  },
+  {
+    "id": 422,
+    "name": "JiuwenSwarm",
+    "developer": "openJiuwen 团队",
+    "releaseTime": "2026.07",
+    "deployment": "开源免费的多智能体蜂群桌面客户端；提供 Windows 和 macOS 软件安装包；本地运行，需接入用户自有大模型 API（如 Claude / GPT / GLM 等）",
+    "features": [
+      "原生多智能体协作的蜂群系统，内置智能体独立工作区与团队功能，无需独立配置即可组建 Agent 团队处理复杂任务",
+      "核心能力涵盖任务规划、自演进、上下文瘦身、记忆随行、浏览器操控自动化与多社交频道接入；支持智能体自主创建其它智能体",
+      "本地优先运行，数据留存本机；配置使用相对简单，适合想组建 Agent 蜂群去处理复杂任务的用户与开发者"
+    ],
+    "website": "https://openjiuwen.com/jiuwenswarm",
+    "source": "今日头条《开源免费的多智能体蜂群Agent》(2026-07-07)"
+  },
+  {
+    "id": 423,
+    "name": "灵犀（lingxi）",
+    "developer": "开源社区（GitHub: MT-xjr2）",
+    "releaseTime": "2026.07",
+    "deployment": "本地优先的桌面 AI Agent 操作系统（开源）；支持 Windows / macOS / Linux；数据全在本地，无缝接入企业微信 / 钉钉 / 飞书",
+    "features": [
+      "本地优先的桌面 AI Agent 操作系统，Coding View 编程利器由 Claude Agent SDK 驱动，含 Agent Tree 监控、工具可视化、权限审批、Diff Review、集成终端与手机操控",
+      "支持所有 LLM 接入；智能体工厂 + 人格蒸馏 + 自我进化 + RAG 知识库 + MCP 工具；Screen Agent 操控桌面，A2A Nexus 跨设备 Agent 互联，可建群开启微信风群聊",
+      "14+ 模型支持，主动式智能体，深度搜索；不止 coding，也覆盖办公自动化等多场景，数据全本地、隐私可控"
+    ],
+    "website": "https://github.com/MT-xjr2/lingxi",
+    "source": "GitHub MT-xjr2/lingxi (2026-07)"
   }
 ]

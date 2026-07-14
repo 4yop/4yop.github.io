@@ -5,9 +5,37 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 13 Jul 2026 16:12:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 16:38:32 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF裁剪</title>
+      <link>https://tools321.com/office/pdf-crop/</link>
+      <description>免费在线PDF裁剪工具，支持按上右下左四边页边距裁剪PDF页面，快速去除多余白边或无关内容，聚焦核心区域。浏览器本地运行数据不上传服务器保护用户隐私安全，所有功能免费使用无需注册打开即用，适用于办公学习日常文档整理等多种使用场景，打开浏览器即可开始处理，无需安装任何软件，全程本地运行保护文档私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 10:11:42 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-crop/</guid>
+    </item>
+    <item>
+      <title>PDF添加页码</title>
+      <link>https://tools321.com/office/pdf-pagenum/</link>
+      <description>免费在线PDF添加页码工具，支持为PDF每一页自动标注页码，可设置起始页码、字号、位置和前缀，快速生成带页码的文档。浏览器本地运行数据不上传服务器保护用户隐私安全，所有功能免费使用无需注册打开即用，适用于办公学习日常文档整理等多种使用场景，打开浏览器即可开始处理，无需安装任何软件，全程本地运行保护文档私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 10:08:54 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-pagenum/</guid>
+    </item>
+    <item>
+      <title>PDF排列</title>
+      <link>https://tools321.com/office/pdf-organize/</link>
+      <description>免费在线PDF排列工具，支持将多个PDF的页面按任意顺序重新排列、删除多余页面、从其他文档插入页面，快速整理文档结构。浏览器本地运行数据不上传服务器保护用户隐私安全，所有功能免费使用无需注册打开即用，适用于办公学习日常文档整理等多种使用场景，打开浏览器即可开始处理，无需安装任何软件，保护文档私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 10:00:54 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-organize/</guid>
+    </item>
+    <item>
+      <title>PDF旋转</title>
+      <link>https://tools321.com/office/pdf-rotate/</link>
+      <description>免费在线PDF旋转工具，支持将PDF文档按顺时针90°、180°、270°整体旋转页面，快速修正扫描歪斜或方向错误、倒置的文档。浏览器本地运行数据不上传服务器保护用户隐私安全，所有功能免费使用无需注册打开即用，适用于办公学习日常文档整理等多种使用场景，打开浏览器即可开始处理，无需安装任何软件，保护文档私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 09:12:03 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-rotate/</guid>
+    </item>
     <item>
       <title>RSS阅读器</title>
       <link>https://tools321.com/tools/rss-reader/</link>
@@ -315,34 +343,6 @@
       <description>支付宝到账语音生成器是免费的在线合成逼真收款提示音效工具软件程序，支持自定义金额从0.01元至1亿元一键生成语音功能操作。适用于短视频配音、闹钟铃声设置和创意营销等场景使用体验，可试听并下载MP3格式音频文件输出结果，浏览器本地运行数据保护隐私安全完全免费无需注册即可使用体验便捷高效实用快速完成操作获取结果数据安全。</description>
       <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/video/alipay-receipt/</guid>
-    </item>
-    <item>
-      <title>网速测试</title>
-      <link>https://tools321.com/tools/speed-test/</link>
-      <description>免费在线网速测试工具，一键检测宽带下载速度、上传速度与Ping延迟。多阶段精准测速，实时仪表盘展示网速波动趋势，准确评估网络带宽性能。支持WiFi无线网络、光纤宽带、移动数据流量等环境，数据浏览器本地处理绝不泄露，测网速就上Tools321！，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/tools/speed-test/</guid>
-    </item>
-    <item>
-      <title>网站巡检器</title>
-      <link>https://tools321.com/tools/site-inspector/</link>
-      <description>免费在线网站巡检器登录保活助手，批量打开常用网站检查各站点登录状态是否正常，支持自定义网站列表间隔时间一键启停控制，本地保存配置数据不上传服务器保护隐私安全，无需注册打开即用，适用于运维监控与多账号保活，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验，是值守排查的省心小工具。，手机电脑都能用。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/tools/site-inspector/</guid>
-    </item>
-    <item>
-      <title>屏幕检测</title>
-      <link>https://tools321.com/tools/screen-check/</link>
-      <description>免费在线屏幕检测工具，一键全屏检测屏幕坏点、漏光与偏色问题。自动读取分辨率、DPR、色深等屏幕参数，提供19种纯色与图案测试，支持笔记本、手机及外接显示器验机。含黑白渐变、彩虹渐变、灰阶条、RGB色条、棋盘格等多种模式，键盘快捷切换。浏览器打开即用，帮助快速判断屏幕质量，无需下载安装。适合新机验货与二手验收。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/tools/screen-check/</guid>
-    </item>
-    <item>
-      <title>网站延时检测</title>
-      <link>https://tools321.com/tools/ping-check/</link>
-      <description>网站延迟测试工具免费在线Ping延时检测，一键检测百度淘宝微博京东等70+常用网站与国内主流云服务平台及海外站点的响应速度和网络连通性，支持自定义添加任意网址进行串行延迟检测，前端本地执行保护隐私免注册，提供最快最慢平均延迟及超时数量统计结果方便直观对比分析各网站访问速度质量。无需下载安装即开即用。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/tools/ping-check/</guid>
     </item>
   </channel>
 </rss>
