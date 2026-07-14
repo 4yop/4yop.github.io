@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13",
+  "updatedAt": "2026-07-15",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1939,7 +1939,23 @@
           "muse-spark-1.1"
         ]
       }
+    },
+    {
+      "name": "360智脑 (360GPT)",
+      "quota": "新用户注册赠送免费试用额度（具体额度以官网为准），国内直连无需代理，手机号注册、无需信用卡；提供文本生成、向量/Embedding、图像生成等多模态能力，兼容 OpenAI 接口格式（base_url=https://api.360.cn/v1），可一行代码从 OpenAI 迁移",
+      "cycle": "新用户免费试用额度（非永久免费层；平台同时提供按量计费与标准版/专业版订阅）",
+      "url": "https://ai.360.com/open",
+      "develop": {
+        "document_url": "https://ai.360.com/docs",
+        "base_url": "https://api.360.cn/v1",
+        "models": [
+          "360gpt2-pro",
+          "360gpt-turbo",
+          "360gpt-flash",
+          "360zhinao-embedding"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-13T10:54:13.486Z"
+  "lastUpdateTime": "2026-07-14T16:48:15.801Z"
 }
