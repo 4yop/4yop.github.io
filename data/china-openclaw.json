@@ -3552,5 +3552,19 @@
     ],
     "website": "https://github.com/MT-xjr2/lingxi",
     "source": "GitHub MT-xjr2/lingxi (2026-07)"
+  },
+  {
+    "id": 424,
+    "name": "nexu",
+    "developer": "nexu-io 开源社区（中国）",
+    "releaseTime": "2026.07",
+    "deployment": "开源桌面客户端（MIT 协议）；基于 OpenClaw 运行时，本地优先，对话记录与业务数据 100% 留在本机、不托管、可审计；支持 macOS 12+（Apple Silicon / Intel）与 Windows 10+，安装包约 500MB；微信 / 飞书 / Slack / Discord 一键接入，7×24 手机端远程指挥",
+    "features": [
+      "基于 OpenClaw 协议的开源图形化桌面客户端（MIT），双击安装 1 分钟即用、彻底告别命令行；本地优先，数据全在本机、源码可审计、无厂商锁定",
+      "一键桥接微信 / 飞书 / Slack / Discord，手机端 @ 触发、远程调用桌面算力执行任务；多模型动态调度中心（Claude / GPT / Gemini / Kimi / GLM / DeepSeek 等），支持 OAuth 或 BYOK 自由切换",
+      "深度集成 OpenClaw 生态与飞书 Skills，预置代码调试、文档润色、多语言生成、结构化数据分析；兼容 Claude Code / Codex 等任意 LLM，首个落地 Seedance 2.0 的开源客户端"
+    ],
+    "website": "https://nexu.io/",
+    "source": "GitHub nexu-io/nexu + nexu.io 官网 (2026-07)"
   }
 ]

@@ -1955,7 +1955,23 @@
           "360zhinao-embedding"
         ]
       }
+    },
+    {
+      "name": "Shisa AI",
+      "quota": "日本 AI 实验室官方平台，提供免费套餐（无需信用卡，可在 talk.shisa.ai 申请免费 API Key 试用 Shisa V2.1 系列日英双语模型）；翻译/TTS/ASR 类 API 另有免费额度（如翻译 API 免费余额 1000 tokens），具体以官方控制台为准",
+      "cycle": "免费套餐长期有效（以官方公告为准；旗舰 Shisa V2 405B 仅限预审白名单用户）",
+      "url": "https://platform.shisa.ai",
+      "develop": {
+        "document_url": "https://platform.shisa.ai/en/solutions/llm",
+        "base_url": "https://api.shisa.ai/openai/v1",
+        "models": [
+          "shisa-ai/shisa-v2.1-llama3.3-70b",
+          "shisa-ai/shisa-v2.1-unphi4-14b",
+          "shisa-ai/shisa-v2.1-llama3.3-8b",
+          "shisa-ai/shisa-v2-405b"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-14T16:48:15.801Z"
+  "lastUpdateTime": "2026-07-15T04:05:50.143Z"
 }
