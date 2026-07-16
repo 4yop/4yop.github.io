@@ -5,15 +5,15 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 16 Jul 2026 15:55:27 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 16:36:41 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图片坐标拾取</title>
-      <link>https://tools321.com/image/coordinate-picker/</link>
+      <link>https://tools321.com/img/coordinate-picker/</link>
       <description>免费在线图片坐标拾取工具，上传图片后点击任意位置获取像素坐标，支持鼠标滚轮缩放和按钮缩放，批量拾取多个坐标点，支持坐标复制和JSON格式下载导出，浏览器本地处理保护隐私安全，适用于UI设计、图像标注、数据分析、游戏开发等场景，完全免费无需注册打开即用，适配电脑与手机浏览器，全程本地运行不上传服务器。</description>
       <pubDate>Thu, 16 Jul 2026 10:40:14 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/image/coordinate-picker/</guid>
+      <guid isPermaLink="true">https://tools321.com/img/coordinate-picker/</guid>
     </item>
     <item>
       <title>PDF 转 Markdown</title>
