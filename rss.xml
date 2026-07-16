@@ -5,13 +5,27 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:36:41 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 18:50:07 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>躺平存款速查</title>
+      <link>https://tools321.com/math/lying-flat-calculator/</link>
+      <description>免费躺平存款速查工具，输入本金、年消费、年化收益与通胀率，按年末消费模型逐年模拟余额，算出理论上可支撑多少年不上班，并生成本金×年消费热力速查表，颜色越红越快耗尽、绿色代表被动收益永续，也帮你量化不同理财目标的资金缺口，也帮你估算提前退休所需的本金规模，电脑手机打开即用免安装，结果仅供参考不构成投资建议</description>
+      <pubDate>Thu, 16 Jul 2026 17:32:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/math/lying-flat-calculator/</guid>
+    </item>
+    <item>
+      <title>漫画打包</title>
+      <link>https://tools321.com/img/comic-pack/</link>
+      <description>免费在线漫画打包工具，把多张图片按序合成 CBZ 漫画压缩包，兼容 Tachiyomi、Komga、Kavita 等主流阅读器。支持整文件夹拖入、按文件名自然排序、补零重命名避免页序错乱并写入 ComicInfo.xml 元数据，可选日漫从右往左方向，也方便同人图稿整理，打开即用免安装，图片不上传本地处理保护隐私安全</description>
+      <pubDate>Thu, 16 Jul 2026 17:29:42 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/img/comic-pack/</guid>
+    </item>
+    <item>
       <title>图片坐标拾取</title>
       <link>https://tools321.com/img/coordinate-picker/</link>
-      <description>免费在线图片坐标拾取工具，上传图片后点击任意位置获取像素坐标，支持鼠标滚轮缩放和按钮缩放，批量拾取多个坐标点，支持坐标复制和JSON格式下载导出，浏览器本地处理保护隐私安全，适用于UI设计、图像标注、数据分析、游戏开发等场景，完全免费无需注册打开即用，适配电脑与手机浏览器，全程本地运行不上传服务器。</description>
+      <description>免费在线图片坐标拾取工具，上传图片后点击任意位置即可获取像素坐标，支持鼠标滚轮与按钮缩放、批量拾取多个坐标点，可复制或导出 JSON，适用于 UI 设计、图像标注、数据分析与游戏开发等场景，也适合地图标注与截图定位，也适合做图集索引与素材定位，电脑手机浏览器打开即用免安装，全程本地处理保护隐私安全，无需注册登录</description>
       <pubDate>Thu, 16 Jul 2026 10:40:14 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/img/coordinate-picker/</guid>
     </item>
@@ -317,6 +331,13 @@
       <guid isPermaLink="true">https://tools321.com/time/beijing-time-countdown/</guid>
     </item>
     <item>
+      <title>端口对照表</title>
+      <link>https://tools321.com/dev/port-reference/</link>
+      <description>TCP/UDP 端口完整速查表，按 Web、邮件、远程、文件、数据库、缓存、消息队列、流媒体、DNS、认证、监控、DevOps 等 12 大类整理 130+ 常用端口。每条给出端口号、TCP/UDP 协议、中文名、释义、RFC 链接与公网暴露风险标记，支持端口号/服务名/中文搜索与协议分类筛选，浏览器本地运行数据不上传服务器。</description>
+      <pubDate>Wed, 24 Jun 2026 06:01:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/port-reference/</guid>
+    </item>
+    <item>
       <title>docker run↔compose</title>
       <link>https://tools321.com/dev/docker-run-compose/</link>
       <description>docker run 命令与 docker-compose.yml 双向互转工具，支持端口、数据卷、环境变量、网络、重启策略、健康检查等参数转换，无法对应的参数会明确提示，纯浏览器本地运行不上传数据，帮助开发者快速在命令行和编排文件之间切换，在线工具支持电脑和手机浏览器使用无需下载安装即刻体验</description>
@@ -336,27 +357,6 @@
       <description>开发者镜像加速地址查询工具，收录Composer、npm、pip、yarn、gem、apt、Docker、Homebrew等常用开发工具的国内镜像源地址，一键复制即可加速安装。解决官方源访问慢、超时中断等痛点，显著提升依赖安装与构建效率，免费在线使用无需注册，是日常开发提效的实用小工具。，无需安装即用。</description>
       <pubDate>Wed, 24 Jun 2026 05:59:46 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/dev/mirror-acceleration/</guid>
-    </item>
-    <item>
-      <title>UTM生成器</title>
-      <link>https://tools321.com/webmaster/utm-generator/</link>
-      <description>免费在线UTM追踪参数网址构建生成器工具为营销推广活动链接自动添加utm_source来源utm_medium媒介utm_campaign活动名称utm_content内容标识utm_term关键词五个标准UTM标记参数便于Google Analytics百度统计等数据分析平台精确追踪流量渠道来源媒介效果转化率和RO。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/webmaster/utm-generator/</guid>
-    </item>
-    <item>
-      <title>网址批量生成</title>
-      <link>https://tools321.com/webmaster/url-batch-generator/</link>
-      <description>免费在线URL网址批量生成构造工具根据前缀模板数字范围规则后缀分隔符变量替换等配置一键批量生成大量URL链接列表支持数字递增字母循环多种生成模式适用于站点地图Sitemap制作爬虫种子URL准备SEO链接构建批量接口测试数据采集地址生成等场景使用结果可一键复制或导出为TXT CSV格式文件完全免费无需注册在线完成批量。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/webmaster/url-batch-generator/</guid>
-    </item>
-    <item>
-      <title>域名屏蔽检测</title>
-      <link>https://tools321.com/webmaster/domain-check/</link>
-      <description>一键检测域名在微信、QQ、抖音、360、谷歌等14个主流平台的屏蔽状态与拦截情况。免费在线查询工具，输入域名即可快速获取是否被墙或被拦截的检测结果，实时返回准确可靠数据，支持一键跳转各平台官方申诉页面快速解封处理，打开即用无需注册登录，全面保障域名访问安全与业务连续性，是站长必备的域名屏蔽检测助手。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/webmaster/domain-check/</guid>
     </item>
   </channel>
 </rss>

@@ -3566,5 +3566,33 @@
     ],
     "website": "https://nexu.io/",
     "source": "GitHub nexu-io/nexu + nexu.io 官网 (2026-07)"
+  },
+  {
+    "id": 425,
+    "name": "codelf（码灵）",
+    "developer": "Liuchun-oss 开源社区",
+    "releaseTime": "2026.06（GitHub 仓库创建于 2026-06-21，2026.07 持续活跃）",
+    "deployment": "开源桌面 AI Agent 应用；基于 Electron 构建，支持 macOS / Windows / Linux；纯本地运行，代码与文件不经任何第三方托管，知识库向量数据库完全本地化；原生支持 DeepSeek 等国内可直连模型，兼容任意 OpenAI 兼容接口，无需科学上网即可运行",
+    "features": [
+      "自然语言驱动的全能桌面助手：用大白话描述目标，Agent 自主拆解步骤、调用工具、动手完成——开发项目、整理资料、操作电脑（vibecoding）；同时也是功能完整的编辑器，写代码、跑终端、连浏览器、控制本地程序一应俱全",
+      "操控浏览器与桌面应用：自主打开网页、点按钮、填表单、抓内容，也能启动本地桌面程序、读取界面、点击操作、截图查看，像真正的电脑管家替你跑腿；数据全在本地，敏感资料零泄露",
+      "双轨长期记忆 + 多模型自由切换：受海马体启发的双轨记忆系统记住偏好与项目约定；DeepSeek / Claude / ChatGPT / Azure OpenAI 内置，填 API Key 即用，高上下文缓存命中率省钱，不绑订阅"
+    ],
+    "website": "https://github.com/Liuchun-oss/codelf-agent",
+    "source": "GitHub Liuchun-oss/codelf-agent + 今日头条开源介绍 (2026-07)"
+  },
+  {
+    "id": 426,
+    "name": "UI-TARS Desktop",
+    "developer": "字节跳动（ByteDance）",
+    "releaseTime": "2025.04（桌面版 v0.1.0 首发）；2026.07 字节跳动持续更新、中文社区深度测评走热",
+    "deployment": "开源桌面 GUI Agent 应用；Apache-2.0 协议；由字节跳动出品，GitHub bytedance/UI-TARS-desktop；支持 Windows / macOS / 浏览器（Browser Operator）；基于 UI-TARS 与 Seed-1.5-VL/1.6 视觉语言模型，纯视觉驱动理解屏幕并像人一样点击、打字；提供 Local Operator（控制整台电脑）与 Remote Operator（远程控制）两种模式，数据本地处理",
+    "features": [
+      "纯视觉驱动的 GUI Agent：不看 DOM、不依赖应用 API，直接截屏理解界面元素、预测点击/键盘位置，无视应用封闭性、抗界面变更、跨平台统一（Windows/macOS/Linux 同逻辑）",
+      "自然语言控制整台电脑：用大白话下达任务（如「把 Excel 数据整理成柱状图发邮件」），自动打开软件、选中数据、插入图表、填收件人、点击发送，完成多步骤复杂任务",
+      "开源多模型 + MCP 集成：Apache-2.0 开源，模型可选 UI-TARS-1.5 / 豆包 1.5-UI-TARS 等；内核基于 MCP 并可挂载 MCP Server 接入真实世界工具，完全本地处理、隐私安全"
+    ],
+    "website": "https://github.com/bytedance/UI-TARS-desktop",
+    "source": "SegmentFault 实测 / GitHub bytedance/UI-TARS-desktop / 今日头条《字节 TARS 开源》(2026-07)"
   }
 ]
