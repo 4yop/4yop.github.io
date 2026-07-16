@@ -5,9 +5,86 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2026 16:38:32 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 15:55:27 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片坐标拾取</title>
+      <link>https://tools321.com/image/coordinate-picker/</link>
+      <description>免费在线图片坐标拾取工具，上传图片后点击任意位置获取像素坐标，支持鼠标滚轮缩放和按钮缩放，批量拾取多个坐标点，支持坐标复制和JSON格式下载导出，浏览器本地处理保护隐私安全，适用于UI设计、图像标注、数据分析、游戏开发等场景，完全免费无需注册打开即用，适配电脑与手机浏览器，全程本地运行不上传服务器。</description>
+      <pubDate>Thu, 16 Jul 2026 10:40:14 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/image/coordinate-picker/</guid>
+    </item>
+    <item>
+      <title>PDF 转 Markdown</title>
+      <link>https://tools321.com/office/pdf-markdown/</link>
+      <description>PDF 转 Markdown - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 17:20:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-markdown/</guid>
+    </item>
+    <item>
+      <title>PDF 压缩</title>
+      <link>https://tools321.com/office/pdf-compress/</link>
+      <description>PDF 压缩 - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 17:11:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-compress/</guid>
+    </item>
+    <item>
+      <title>PDF 修复</title>
+      <link>https://tools321.com/office/pdf-repair/</link>
+      <description>PDF 修复 - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 17:00:35 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-repair/</guid>
+    </item>
+    <item>
+      <title>PDF OCR</title>
+      <link>https://tools321.com/office/pdf-ocr/</link>
+      <description>PDF OCR - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 04:23:20 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-ocr/</guid>
+    </item>
+    <item>
+      <title>图片转PDF</title>
+      <link>https://tools321.com/office/pdf-scan/</link>
+      <description>图片转PDF - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 04:15:10 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-scan/</guid>
+    </item>
+    <item>
+      <title>PDF比较</title>
+      <link>https://tools321.com/office/pdf-compare/</link>
+      <description>PDF比较 - Tools321 在线工具箱</description>
+      <pubDate>Wed, 15 Jul 2026 04:04:18 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-compare/</guid>
+    </item>
+    <item>
+      <title>PDF表单填写</title>
+      <link>https://tools321.com/office/pdf-form/</link>
+      <description>免费在线PDF表单填写工具，上传带AcroForm表单域的PDF，逐个填写姓名邮箱备注等文本域后一键扁平化，锁定为不可编辑的静态内容。文件全程在浏览器本地处理不上传服务器，保护隐私安全。适合合同申请表报名表等文档快速填表与归档，无需安装软件打开即用，所有渲染与填写均在本地完成。</description>
+      <pubDate>Wed, 15 Jul 2026 03:58:08 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-form/</guid>
+    </item>
+    <item>
+      <title>PDF标记密文</title>
+      <link>https://tools321.com/office/pdf-redact/</link>
+      <description>免费在线PDF标记密文工具，支持在浏览器中拖动框选页面任意区域并涂黑遮盖，隐藏合同金额姓名身份证号等敏感信息。全程本地处理文件不上传服务器保护隐私安全，免费无需注册打开即用，适合合同协议报表等文档脱敏打码，无需安装软件即可在浏览器直接遮盖，原文档视觉内容被覆盖保护私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 17:14:55 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-redact/</guid>
+    </item>
+    <item>
+      <title>PDF签名</title>
+      <link>https://tools321.com/office/pdf-sign/</link>
+      <description>免费在线PDF签名工具，支持在浏览器手写签名并直接嵌入PDF指定页面，不改动原有文字内容。全程本地处理文件不上传服务器保护隐私安全，免费无需注册打开即用，适合合同协议等文档的电子签名与盖章等多种场景，无需安装任何软件即可在浏览器中直接签名，全程本地运行保护文档私密性。</description>
+      <pubDate>Tue, 14 Jul 2026 16:59:23 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-sign/</guid>
+    </item>
+    <item>
+      <title>PDF编辑</title>
+      <link>https://tools321.com/office/pdf-edit/</link>
+      <description>免费在线PDF编辑工具，支持在PDF页面上叠加文本、图片和矩形图形，不改动原文内容，快速为合同资料报表批注补充信息。浏览器本地运行数据不上传服务器保护隐私安全，免费无需注册打开即用，适合办公学习日常文档标注与合同整理等多种使用场景，无需安装任何软件即可在浏览器中直接编辑，全程本地运行保护文档私密性，让批注更高效。</description>
+      <pubDate>Tue, 14 Jul 2026 16:44:52 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/pdf-edit/</guid>
+    </item>
     <item>
       <title>PDF裁剪</title>
       <link>https://tools321.com/office/pdf-crop/</link>
@@ -280,69 +357,6 @@
       <description>一键检测域名在微信、QQ、抖音、360、谷歌等14个主流平台的屏蔽状态与拦截情况。免费在线查询工具，输入域名即可快速获取是否被墙或被拦截的检测结果，实时返回准确可靠数据，支持一键跳转各平台官方申诉页面快速解封处理，打开即用无需注册登录，全面保障域名访问安全与业务连续性，是站长必备的域名屏蔽检测助手。</description>
       <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/webmaster/domain-check/</guid>
-    </item>
-    <item>
-      <title>DNS解析查询</title>
-      <link>https://tools321.com/webmaster/dns-query/</link>
-      <description>免费在线DNS解析查询工具，支持查询A、AAAA、CNAME、MX、NS、TXT、SOA、CAA等8种常见DNS记录类型。输入域名即可快速获取完整的DNS解析信息，包括IPv4地址、IPv6地址、邮件服务器、名称服务器、SPF记录等关键数据，帮助站长和开发者快速诊断DNS配置问题，实时返回准确可靠数据</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/webmaster/dns-query/</guid>
-    </item>
-    <item>
-      <title>视频剪辑</title>
-      <link>https://tools321.com/video/video-clipper/</link>
-      <description>在线截取视频片段工具，支持视频片段选取、视频时间段裁剪与批量截取，精准设置起止时间截取MP4、AVI、MOV等常见格式。适用于精彩片段提取、短视频制作和视频剪辑等场景，浏览器本地处理不上传服务器保护隐私，无需安装软件完全免费，轻松制作专属短片，是视频创作者的高效剪辑小助手。，完全免费且注重隐私，手机电脑浏览器均可访问。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/video-clipper/</guid>
-    </item>
-    <item>
-      <title>文字转语音</title>
-      <link>https://tools321.com/video/text-to-speech/</link>
-      <description>文字转语音TTS在线工具，将文本内容智能朗读为自然流畅的语音音频。支持中英文等多语言和多种音色选择，可自由调节语速、音量、音调等参数，支持一键下载生成的MP3音频文件，适用于有声读物制作、无障碍阅读、视频配音、课件旁白等场景。浏览器本地处理数据绝不上传服务器，保护隐私安全，完全免费无需注册即开即用。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/text-to-speech/</guid>
-    </item>
-    <item>
-      <title>扬声器清灰</title>
-      <link>https://tools321.com/video/speaker-cleaner/</link>
-      <description>免费在线扬声器清灰工具，通过播放特定频率的测试音效和声波信号帮助清理笔记本电脑或手机扬声器内部积聚的灰尘颗粒和污垢，恢复音频设备音质清晰度和正常音量表现水平，无需下载安装任何软件，打开浏览器即可使用，安全无损伤，是音箱保养与异响排查的居家小妙招。，所有计算在本地完成不收集文件，界面简洁无广告，是轻量实用的在线小工具。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/speaker-cleaner/</guid>
-    </item>
-    <item>
-      <title>视频哈希修改</title>
-      <link>https://tools321.com/video/hash/</link>
-      <description>免费在线视频MD5修改器，一键改变视频哈希值和指纹标识，解决视频平台重复检测和去重限制。支持MP4/AVI/MOV等格式，三种修改方式可选，不损画质。浏览器本地处理无需上传，适用于多账号发布与素材去重，打开即用保护隐私，无需安装软件，是短视频运营与素材管理的便捷助手。，所有计算在本地完成，不收集您的文件，放心使用。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/hash/</guid>
-    </item>
-    <item>
-      <title>摄像头录制</title>
-      <link>https://tools321.com/video/camera-recorder/</link>
-      <description>免费在线摄像头录制工具调用设备摄像头进行高清视频录制和拍照截图功能强大易用支持前置后置摄像头自由切换画质分辨率调节和本地视频文件保存下载适用于在线面试视频通话录制网课记录和证件照自拍场景浏览器本地处理数据保护隐私安全无需注册打开即用免费在线使用体验好效果良好操作简单方便快捷高效实用可靠数据安全可靠。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/camera-recorder/</guid>
-    </item>
-    <item>
-      <title>浏览器录屏</title>
-      <link>https://tools321.com/video/browser-screen/</link>
-      <description>浏览器屏幕共享与录制工具，将浏览器标签页或整个屏幕画面实时投射到大屏幕，支持自定义分辨率、帧率和录制格式，可同时录制屏幕画面与系统声音输出，适用于会议演示、教学投屏和远程协作等多种场景，无需安装任何软件即可使用，所有数据浏览器本地处理无需上传服务器，完全免费在线即开即用，无需注册登录即可直接地使用。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/browser-screen/</guid>
-    </item>
-    <item>
-      <title>录音</title>
-      <link>https://tools321.com/video/audio-recorder/</link>
-      <description>在线录音机工具，通过浏览器麦克风录制高品质音频文件。支持MP3和WAV格式输出与实时波形预览，提供录音历史管理和音频回放功能，满足会议记录、语音备忘和内容创作等多种录音需求。支持暂停继续录制和采样率自定义设置，录音完成后可直接下载保存音频文件。浏览器本地处理，无需安装软件，数据不上传服务器，保护隐私安全。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/audio-recorder/</guid>
-    </item>
-    <item>
-      <title>支付宝到账音效</title>
-      <link>https://tools321.com/video/alipay-receipt/</link>
-      <description>支付宝到账语音生成器是免费的在线合成逼真收款提示音效工具软件程序，支持自定义金额从0.01元至1亿元一键生成语音功能操作。适用于短视频配音、闹钟铃声设置和创意营销等场景使用体验，可试听并下载MP3格式音频文件输出结果，浏览器本地运行数据保护隐私安全完全免费无需注册即可使用体验便捷高效实用快速完成操作获取结果数据安全。</description>
-      <pubDate>Tue, 23 Jun 2026 00:45:10 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/alipay-receipt/</guid>
     </item>
   </channel>
 </rss>
