@@ -3594,5 +3594,31 @@
     ],
     "website": "https://github.com/bytedance/UI-TARS-desktop",
     "source": "SegmentFault 实测 / GitHub bytedance/UI-TARS-desktop / 今日头条《字节 TARS 开源》(2026-07)"
+  },
+  {
+    "id": 427,
+    "name": "Nexus（FanyinLiu）",
+    "developer": "FanyinLiu 开源社区（GitHub）",
+    "releaseTime": "2026.04（首版 v1.0）；2026.07.03 发布 v0.4.1",
+    "deployment": "开源桌面 AI 伙伴；Electron + React + TypeScript 跨平台客户端（Windows / macOS / Linux）；本地优先，支持 Ollama 本地模型与 DeepSeek API，数据留本地",
+    "features": [
+      "陪伴式桌面 AI 伙伴：以 Live2D 桌宠形象常驻电脑，支持唤醒词（wake word）持续语音对话与长期记忆（dreaming long-term memory），在用户明确授权下提供整理信息、提醒事项等轻量辅助，过程可确认、可停止、可审计",
+      "内置工具与自主行为：集成网页搜索、天气、提醒等工具，支持 autonomous behavior 自主行为；模型默认走 DeepSeek / Ollama / OpenAI-compatible / 自定义接口，本地优先、隐私可控"
+    ],
+    "website": "https://github.com/FanyinLiu/Nexus",
+    "source": "GitHub FanyinLiu/Nexus（README，v0.4.1，2026-07-03）"
+  },
+  {
+    "id": 428,
+    "name": "PivotClaw",
+    "developer": "联想应用商店（Lenovo）上架 · 独立开发者/团队（未单独署名）",
+    "releaseTime": "2026.06.12（v0.2.54）",
+    "deployment": "基于 OpenClaw 深度定制的桌面 AI 助手；Electron 开发的 Windows 桌面应用，系统托盘常驻、快捷键唤醒；本地优先，对话/配置/记忆全部本地存储",
+    "features": [
+      "本地优先 + 自研安全引擎：AI 对话记录、配置与记忆数据全部存本地、不经第三方服务器；内置防护模块实时拦截恶意脚本、敏感文件访问与权限滥用，操作前经安全扫描",
+      "完整工具箱与生态：内置 Python 运行时（uv）、浏览器自动化、网页抓取、文件读写、定时任务、图表绘制；支持接入飞书/钉钉/企业微信/QQ，具备长期记忆，越用越懂用户"
+    ],
+    "website": "https://lestore.lenovo.com/detail/L122116",
+    "source": "联想应用商店 Lenovo PivotClaw 详情页（v0.2.54，2026-06-12）"
   }
 ]
