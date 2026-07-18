@@ -3620,5 +3620,33 @@
     ],
     "website": "https://lestore.lenovo.com/detail/L122116",
     "source": "联想应用商店 Lenovo PivotClaw 详情页（v0.2.54，2026-06-12）"
+  },
+  {
+    "id": 429,
+    "name": "Maka",
+    "developer": "M4n5ter 开源社区（GitHub: M4n5ter）",
+    "releaseTime": "2026.07（GitHub 活跃提交至 2026-07-16，处于源码运行/贡献者阶段，未发固定版本号）",
+    "deployment": "开源本地优先 AI 桌面助手 / Agent 工作区；Electron + React + Node.js 22 + TypeScript 跨平台客户端，桌面端 / TUI / CLI / Headless 共享同一 Runtime；支持 macOS / Windows / Linux；本地优先，密钥经 Electron safeStorage 本地加密存储",
+    "features": [
+      "本地优先的 Agent 工作区：在同一 Electron 应用内整合模型连接、会话、工具权限、文件读写、终端执行、搜索与机器人入口，桌面端 / TUI / CLI / Headless 共用一套 Runtime，模型消息、工具调用与持久任务进度都保存为可恢复的执行记录",
+      "自配模型 + 本地工具权限：用户用自己的密钥接入云端 API / 本地模型 / 兼容网关（Claude、Codex、Cursor 等），内置 Read/Write/Edit/Bash/Glob/Grep 本地工具，文件读写与命令执行走权限策略，密钥经 Electron safeStorage 本地加密",
+      "可观察可恢复：首跑引导配置真实模型连接，桌面会话支持创建 / 切换 / 归档 / 搜索 / 分支，模型运行时记录 usage、错误分类并支持启动恢复"
+    ],
+    "website": "https://github.com/M4n5ter/maka-agent",
+    "source": "GitHub M4n5ter/maka-agent（README / ARCHITECTURE.md，活跃提交 2026-07-16）"
+  },
+  {
+    "id": 430,
+    "name": "Atrium",
+    "developer": "lhz960904 开源社区（GitHub: lhz960904）",
+    "releaseTime": "2026.05（仓库脚手架提交 2026-05-27）；v0.14.3 于 2026-07-13 发布",
+    "deployment": "开源本地优先桌面 AI Agent 助手；Electron 39 + Vite 7 + React 19 + TypeScript 5 跨平台客户端（macOS / Windows / Linux 安装包）；MIT 协议；本地优先，密钥本地加密，数据用 better-sqlite3 + drizzle-orm 本地存储",
+    "features": [
+      "本地优先桌面 AI Agent 客户端：用你自己的密钥连接任意模型提供商（Anthropic / Gemini / 任意 OpenAI 兼容端点 / Ollama 本地模型 / Claude Code / Codex / Gemini CLI 等外部 CLI agent），密钥本地加密、数据本地存储",
+      "MCP / Skills / 定时任务 / 浏览器接管：可连接 Model Context Protocol 服务器（stdio / HTTP / SSE）在对话里直接调用第三方工具，支持 SKILL.md 技能包与子代理、跨会话记忆、定时任务与浏览器控制（macOS 支持 Computer Use 原生辅助）",
+      "跨平台安装包与工程化架构：提供 macOS / Windows / Linux 安装包，electron-trpc 通信、TanStack Router 路由、Zustand 状态管理，支持跨会话记忆与任务恢复"
+    ],
+    "website": "https://github.com/lhz960904/atrium",
+    "source": "GitHub lhz960904/atrium（README，v0.14.3 于 2026-07-13 发布，MIT 协议）+ V2EX 分享帖（2026-07-08）"
   }
 ]
