@@ -5,9 +5,16 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 18:10:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 05:11:24 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>土豪花钱模拟器</title>
+      <link>https://tools321.com/game/tycoon-simulator/</link>
+      <description>土豪花钱模拟器 - Tools321 在线工具箱</description>
+      <pubDate>Sun, 19 Jul 2026 04:30:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/game/tycoon-simulator/</guid>
+    </item>
     <item>
       <title>鼠鼠梗图生成器</title>
       <link>https://tools321.com/img/opossum-meme/</link>
@@ -350,13 +357,6 @@
       <description>docker run↔compose - Tools321 在线工具箱</description>
       <pubDate>Wed, 24 Jun 2026 06:01:26 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/dev/docker-run-compose/</guid>
-    </item>
-    <item>
-      <title>思维导图</title>
-      <link>https://tools321.com/dev/markmap/</link>
-      <description>思维导图 - Tools321 在线工具箱</description>
-      <pubDate>Wed, 24 Jun 2026 05:59:47 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/dev/markmap/</guid>
     </item>
   </channel>
 </rss>
