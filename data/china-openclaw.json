@@ -3662,5 +3662,19 @@
     ],
     "website": "https://openhanako.com",
     "source": "GitHub liliMozi/openhanako（README 中文版，Apache-2.0，v0.117.2 有 Gitee 镜像）+ 官网 openhanako.com + Lobehub / 中文 Skill 导航平台收录"
+  },
+  {
+    "id": 432,
+    "name": "璇玑（Xuanji）",
+    "developer": "史比特科技（shibit / sibit 开源社区；GitHub: shibit-net；Gitee: shibit）",
+    "releaseTime": "2026（持续迭代，每周发布新版本；2026-07 活跃）",
+    "deployment": "本地优先桌面客户端（Electron + React + TailwindCSS + shadcn/ui）：跨平台桌面应用，所有对话 / 记忆 / 配置本地存储，LLM API Key 本地加密，双层安全架构（LLM 主动审计 + 硬编码安全守卫），默认无遥测；Node.js ≥ 20 + npm ≥ 9 一键安装，支持 MCP 生态（天工坊市场一键装技能）与 computer-use 桌面自动化",
+    "features": [
+      "多智能体协作桌面 Agentic OS：一句话启动一支 Agent 团队，五种协作策略（并行 / 串行 / 流水线 / 层级 / 辩论）分配任务，找不到合适 Agent 时自动创建临时 Agent；React Flow 实时可视化协作流程、Cytoscape 知识图谱展示记忆与关系",
+      "共生式记忆与本地优先：拓扑记忆系统用知识图谱记住实体与关系链（家人喜好 / 项目进展 / 决策偏好），越用越懂你；动态 Prompt 三层解耦（角色 × 场景 × 能力按需加载），跨会话记忆管家",
+      "全场景自动化与多端接入：自动化工作流一句话拆成多 Agent 流水线完整交付；浏览器自动登录 / 撰写 / 配图发布社交内容；飞书 Bot 加入群聊协作；computer-use MCP 操控任何无 API 的桌面软件；多媒体创作（剧本 → 定妆照 → 短剧视频）"
+    ],
+    "website": "https://www.shibit.net/",
+    "source": "GitHub shibit-net/xuanji + Gitee shibit/xuanji（README，Electron 桌面端，本地优先多智能体 Agentic OS，开源）+ 官网 shibit.net + 今日头条《璇玑 XuanJi》专栏（2026-07-05）"
   }
 ]
