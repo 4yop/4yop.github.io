@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15",
+  "updatedAt": "2026-07-19",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1971,7 +1971,28 @@
           "shisa-ai/shisa-v2-405b"
         ]
       }
+    },
+    {
+      "name": "Lambda Labs（Lambda Cloud 推理 API）",
+      "quota": "新用户赠送 $10 免费推理额度（无需信用卡，额度内可调用全部推理模型）",
+      "cycle": "一次性赠送，用尽后按量付费（约 $0.12–0.80 / 1M tokens）",
+      "url": "https://lambdalabs.com/inference",
+      "develop": {
+        "document_url": "https://lambdalabs.com/inference",
+        "base_url": "https://api.lambdalabs.com/v1",
+        "models": [
+          "Llama-3.3-70B-Instruct",
+          "Llama-3.1-70B-Instruct",
+          "Llama-3.1-8B-Instruct",
+          "Hermes-3-Llama-3.1-70B",
+          "DeepSeek-R1-0528",
+          "DeepSeek-V3-0324",
+          "Qwen3-32B",
+          "Llama-4-Maverick-17B-128E-Instruct",
+          "Llama-4-Scout-17B-16E-Instruct"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-15T04:05:50.143Z"
+  "lastUpdateTime": "2026-07-19T01:57:10.192Z"
 }

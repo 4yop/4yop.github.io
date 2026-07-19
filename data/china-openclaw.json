@@ -3648,5 +3648,19 @@
     ],
     "website": "https://github.com/lhz960904/atrium",
     "source": "GitHub lhz960904/atrium（README，v0.14.3 于 2026-07-13 发布，MIT 协议）+ V2EX 分享帖（2026-07-08）"
+  },
+  {
+    "id": 431,
+    "name": "OpenHanako",
+    "developer": "liliMozi 开源社区（GitHub: liliMozi）",
+    "releaseTime": "2026.03（开源首发 v0.36.0；持续更新至 v0.117，2026.05+）",
+    "deployment": "本地优先桌面客户端（Electron 38 + React 19 + Vite 7）：macOS 已签名公证、Windows Beta、Linux 计划中；Hono + better-sqlite3 本地服务端（Electron spawn 或独立启动）；数据本地存储，双层沙盒隔离（应用层 PathGuard 四级访问控制 + macOS Seatbelt / Linux Bubblewrap / Windows restricted token）",
+    "features": [
+      "有记忆、有性格、会主动行动的私人 AI 助理：本地记忆系统（近期记忆牢固）+ 人格模板/自定义人格文件；多 Agent 各自独立记忆/人格/定时任务，Agent 间通过频道群聊协作、互相委派任务",
+      "完整图形桌面 + 多平台远程接入：图形 Control UI、书桌异步协作空间（文件/写笺/文件树监听）、全屏媒体查看器；同一 Agent 可接入 Telegram / 飞书 / QQ / 微信机器人远程操控电脑；移动端 PWA 与 LAN 前端",
+      "工具链与可扩展插件系统：读写文件、执行终端命令、浏览网页、联网搜索、截图；兼容庞大 SKILLS 社区生态（Agent 可自行安装/编写技能）；约定优先插件架构（工具/技能/命令/Agent 模板/HTTP 路由/事件钩子/LLM Provider），Apache-2.0 开源"
+    ],
+    "website": "https://openhanako.com",
+    "source": "GitHub liliMozi/openhanako（README 中文版，Apache-2.0，v0.117.2 有 Gitee 镜像）+ 官网 openhanako.com + Lobehub / 中文 Skill 导航平台收录"
   }
 ]
