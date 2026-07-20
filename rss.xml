@@ -5,9 +5,23 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 05:26:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 03:52:26 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>批量邮件模板</title>
+      <link>https://tools321.com/office/email-bulk-sender/</link>
+      <description>批量邮件模板 - Tools321 在线工具箱</description>
+      <pubDate>Sun, 19 Jul 2026 13:20:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/office/email-bulk-sender/</guid>
+    </item>
+    <item>
+      <title>开店回本计算器</title>
+      <link>https://tools321.com/math/shop-payback/</link>
+      <description>开店回本计算器 - Tools321 在线工具箱</description>
+      <pubDate>Sun, 19 Jul 2026 05:42:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/math/shop-payback/</guid>
+    </item>
     <item>
       <title>土豪花钱模拟器</title>
       <link>https://tools321.com/game/tycoon-simulator/</link>
@@ -140,6 +154,13 @@
       <description>PDF旋转 - Tools321 在线工具箱</description>
       <pubDate>Tue, 14 Jul 2026 09:12:03 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/office/pdf-rotate/</guid>
+    </item>
+    <item>
+      <title>假装系统升级模拟器</title>
+      <link>https://tools321.com/tools/system-upgrade/</link>
+      <description>假装系统升级模拟器 - Tools321 在线工具箱</description>
+      <pubDate>Tue, 14 Jul 2026 03:33:20 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/tools/system-upgrade/</guid>
     </item>
     <item>
       <title>RSS阅读器</title>
@@ -336,27 +357,6 @@
       <description>国内镜像源导航 - Tools321 在线工具箱</description>
       <pubDate>Sun, 28 Jun 2026 17:25:37 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/tools/cn-mirrors/</guid>
-    </item>
-    <item>
-      <title>北京时间倒计时</title>
-      <link>https://tools321.com/time/beijing-time-countdown/</link>
-      <description>北京时间倒计时 - Tools321 在线工具箱</description>
-      <pubDate>Thu, 25 Jun 2026 06:42:48 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/time/beijing-time-countdown/</guid>
-    </item>
-    <item>
-      <title>端口对照表</title>
-      <link>https://tools321.com/dev/port-reference/</link>
-      <description>端口对照表 - Tools321 在线工具箱</description>
-      <pubDate>Wed, 24 Jun 2026 06:01:40 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/dev/port-reference/</guid>
-    </item>
-    <item>
-      <title>docker run↔compose</title>
-      <link>https://tools321.com/dev/docker-run-compose/</link>
-      <description>docker run↔compose - Tools321 在线工具箱</description>
-      <pubDate>Wed, 24 Jun 2026 06:01:26 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/dev/docker-run-compose/</guid>
     </item>
   </channel>
 </rss>
