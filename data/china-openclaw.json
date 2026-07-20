@@ -3676,5 +3676,31 @@
     ],
     "website": "https://www.shibit.net/",
     "source": "GitHub shibit-net/xuanji + Gitee shibit/xuanji（README，Electron 桌面端，本地优先多智能体 Agentic OS，开源）+ 官网 shibit.net + 今日头条《璇玑 XuanJi》专栏（2026-07-05）"
+  },
+  {
+    "id": 433,
+    "name": "OpenBot",
+    "developer": "next-open-ai 开源社区（GitHub: next-open-ai；npm: @next-open-ai/openbot）",
+    "releaseTime": "2026（npm 首发 @next-open-ai/openbot v0.6.66 约 2026-04；OpenClawX 基于本仓库重构增强；持续迭代）",
+    "deployment": "本地优先桌面客户端（Electron 桌面端 + CLI + WebSocket Gateway；支持 npm / Docker / Desktop 安装包）。同一套 Agent 核心多端复用，数据可本地化，MIT 协议。原生支持 MCP 与 Agent Skills 扩展；代理模式可接 Coze / OpenBot / OpenCode / Claude Code 实现本机 0 Token 推理",
+    "features": [
+      "多通道多端 Agent 平台：CLI / Web / Electron 桌面端 / WebSocket Gateway 统一入口；飞书、钉钉、Telegram、微信等 IM 通道接入，同一会话内自由切换本机 / Coze / OpenClawX / OpenCode / Claude Code 等智能体与模型，按任务控制 Token 费用",
+      "完整 Agent 能力：内置 pi-coding-agent 编码智能体（多轮工具调用 + 代码执行）、agent-browser 浏览器自动化（导航 / 填表 / 截图 / 抓取）、长期记忆（Vectra 向量 + 本地嵌入 + 会话压缩 compaction），并支持 MCP、Skills 与插件扩展（openbot extension）及影刀 RPA 接入"
+    ],
+    "website": "https://github.com/next-open-ai/openbot",
+    "source": "GitHub next-open-ai/openbot（README，Electron 桌面端 + CLI + Gateway 的本地优先多端 AI Agent 平台，MIT，中文文档，支持飞书/钉钉/Telegram/微信通道与 Coze/OpenCode/Claude Code 代理）+ npm @next-open-ai/openbot（v0.6.66，约 2026-04 发布）+ 掘金/今日头条相关介绍"
+  },
+  {
+    "id": 434,
+    "name": "WeSight",
+    "developer": "freestylefly 开源社区（GitHub: freestylefly）",
+    "releaseTime": "2026.06（公开版 2026.6.1-preview.1；首个提交 2026-05-07）",
+    "deployment": "本地优先桌面 AI Agent 工作台（Electron + React + Redux Toolkit + TailwindCSS + SQLite 本地持久化）：macOS Apple Silicon / Intel 桌面安装包（Windows / Linux 规划中）。MIT 协议。统一托管本机 CLI Agent 运行时（OpenClaw / Hermes Agent 由 WeSight 准备维护），高权限操作经 preload bridge + Main Process IPC 隔离执行",
+    "features": [
+      "统一本机 Agent 驾驶舱：一键安装 / 检测复用 Claude Code、Codex、OpenClaw、Hermes Agent、OpenCode、Qwen Code、DeepSeek-TUI 与内置 runtime；统一模型供应商（OpenAI / Claude / Gemini / DeepSeek / Qwen / Moonshot / Ollama / OpenRouter / Copilot 及自定义 OpenAI-compatible）集中配置",
+      "可视化执行与可观测性：图形化 Chat 展示命令 / 文件 diff / 权限事件 / Slash 指令 / 工具输出；AI Runtime Dashboard 统计引擎、模型、Token、TTFT、TPS、工具耗时、步数与总成本；IM Agent Hub 把飞书接入各引擎 Agent，并支持 SkillHub 技能市场、定时任务、记忆系统与桌面宠物"
+    ],
+    "website": "https://wesight.ai/",
+    "source": "GitHub freestylefly/wesight（README_zh，开源桌面 AI Agent 工作台，Electron + React，MIT，macOS 桌面安装包，统一托管 Claude Code/Codex/OpenClaw/Hermes 等本机 Agent runtime）+ 官网 wesight.ai + 掘金《WeSight-把本机 AI Agent 装进一个桌面工作台》(2026-07) + agentskill.work 索引（约 650 Stars）"
   }
 ]
