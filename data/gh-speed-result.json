@@ -1,10 +1,10 @@
 {
-  "updateTime": "2026/7/20 12:46:04",
+  "updateTime": "2026/7/22 02:17:35",
   "data": [
     {
       "domain": "github.com",
       "ip": "20.205.243.166",
-      "avg_delay": 359
+      "avg_delay": 347
     },
     {
       "domain": "alive.github.com",
