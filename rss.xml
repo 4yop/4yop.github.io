@@ -5,15 +5,43 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 Jul 2026 17:12:43 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 17:55:43 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS模拟器</title>
+      <link>https://tools321.com/game/macos-simulator/</link>
+      <description>macOS模拟器 - Tools321 在线工具箱</description>
+      <pubDate>Wed, 22 Jul 2026 03:13:20 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/game/macos-simulator/</guid>
+    </item>
+    <item>
+      <title>和我约会吧</title>
+      <link>https://tools321.com/img/dating-with-me/</link>
+      <description>和我约会吧 - Tools321 在线工具箱</description>
+      <pubDate>Mon, 20 Jul 2026 17:49:56 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/img/dating-with-me/</guid>
+    </item>
+    <item>
+      <title>GARGANTUA黑洞模拟器</title>
+      <link>https://tools321.com/game/black-hole-raytracer/</link>
+      <description>GARGANTUA黑洞模拟器 - Tools321 在线工具箱</description>
+      <pubDate>Mon, 20 Jul 2026 15:06:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/game/black-hole-raytracer/</guid>
+    </item>
     <item>
       <title>批量邮件模板</title>
       <link>https://tools321.com/office/email-bulk-sender/</link>
       <description>批量邮件模板 - Tools321 在线工具箱</description>
       <pubDate>Sun, 19 Jul 2026 13:20:00 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/office/email-bulk-sender/</guid>
+    </item>
+    <item>
+      <title>Open Sea海洋</title>
+      <link>https://tools321.com/game/open-sea/</link>
+      <description>Open Sea海洋 - Tools321 在线工具箱</description>
+      <pubDate>Sun, 19 Jul 2026 07:41:40 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/game/open-sea/</guid>
     </item>
     <item>
       <title>开店回本计算器</title>
@@ -56,6 +84,13 @@
       <description>图片坐标拾取 - Tools321 在线工具箱</description>
       <pubDate>Thu, 16 Jul 2026 10:40:14 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/img/coordinate-picker/</guid>
+    </item>
+    <item>
+      <title>卫星实时追踪</title>
+      <link>https://tools321.com/geography/orbit-live/</link>
+      <description>卫星实时追踪 - Tools321 在线工具箱</description>
+      <pubDate>Thu, 16 Jul 2026 02:40:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/geography/orbit-live/</guid>
     </item>
     <item>
       <title>PDF 转 Markdown</title>
@@ -322,41 +357,6 @@
       <description>抛硬币 - Tools321 在线工具箱</description>
       <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/random/flip-coin/</guid>
-    </item>
-    <item>
-      <title>字幕格式转换</title>
-      <link>https://tools321.com/video/subtitle-convert/</link>
-      <description>字幕格式转换 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 03:40:06 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/subtitle-convert/</guid>
-    </item>
-    <item>
-      <title>视频压缩</title>
-      <link>https://tools321.com/video/video-compress/</link>
-      <description>视频压缩 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 03:08:51 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/video-compress/</guid>
-    </item>
-    <item>
-      <title>视频转ASCII字符视频</title>
-      <link>https://tools321.com/video/video-to-ascii/</link>
-      <description>视频转ASCII字符视频 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 03:08:50 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/video-to-ascii/</guid>
-    </item>
-    <item>
-      <title>跨设备摄像头串流</title>
-      <link>https://tools321.com/video/phone-cam/</link>
-      <description>跨设备摄像头串流 - Tools321 在线工具箱</description>
-      <pubDate>Sun, 28 Jun 2026 17:29:27 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/video/phone-cam/</guid>
-    </item>
-    <item>
-      <title>国内镜像源导航</title>
-      <link>https://tools321.com/tools/cn-mirrors/</link>
-      <description>国内镜像源导航 - Tools321 在线工具箱</description>
-      <pubDate>Sun, 28 Jun 2026 17:25:37 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/tools/cn-mirrors/</guid>
     </item>
   </channel>
 </rss>

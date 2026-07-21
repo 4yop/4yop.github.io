@@ -3702,5 +3702,44 @@
     ],
     "website": "https://wesight.ai/",
     "source": "GitHub freestylefly/wesight（README_zh，开源桌面 AI Agent 工作台，Electron + React，MIT，macOS 桌面安装包，统一托管 Claude Code/Codex/OpenClaw/Hermes 等本机 Agent runtime）+ 官网 wesight.ai + 掘金《WeSight-把本机 AI Agent 装进一个桌面工作台》(2026-07) + agentskill.work 索引（约 650 Stars）"
+  },
+  {
+    "id": 435,
+    "name": "MyAgents",
+    "developer": "hAcKlyc 开源社区（GitHub: hAcKlyc）",
+    "releaseTime": "2026（持续迭代，2026-06/07 活跃发布 Windows 安装脚本、版本回滚与 Windows 桌面兼容修复）",
+    "deployment": "本地优先开源桌面 AI Agent 工作台（Tauri/Electron 混合 + React + Vite + Node.js Sidecar/Bridge 运行时；Chrome 风格多标签页、工作区文件树、内嵌终端、内嵌浏览器、本地全文搜索；macOS/Windows/Linux 桌面安装包）。支持多模型供应商（Anthropic/Claude、DeepSeek、智谱、MiniMax、Google Gemini、火山方舟、硅基流动、ZenMux、OpenRouter、小米 MiMo、阿里云百炼）、MCP、Skills、自定义 Agent、IM Bot（微信/企业微信/钉钉/飞书）",
+    "features": [
+      "一站式 Agent 工作台：多标签页各自运行独立 Agent，工作区文件树/文件预览/Git 分支、内嵌终端与浏览器边执行边验证，@ 引用文件 / 调用技能 / MCP 工具调用 / 定时任务入口同窗口打通",
+      "任务中心与长期记忆：想法速记沉淀为一次性/周期/Cron 任务并状态机追踪执行日志与异常恢复；Chat、AI 工具、IM Bot、后台任务共享调度；多模型供应商 + 本地全文搜索 + 长期记忆贯穿工作流"
+    ],
+    "website": "https://github.com/hAcKlyc/MyAgents",
+    "source": "GitHub hAcKlyc/MyAgents（README 中文，开源桌面端个人 Agent 工作台/任务中心，本地优先、多标签页+工作区+内嵌终端浏览器、MCP/Skills/IM Bot、支持智谱/MiniMax/小米 MiMo/阿里云百炼等，2026-06/07 活跃发布）"
+  },
+  {
+    "id": 436,
+    "name": "N.E.K.O.（猫娘计划）",
+    "developer": "Project-N-E-K-O 开源社区（GitHub: Project-N-E-K-O）",
+    "releaseTime": "2026（Steam 上架，已获特别好评；近一年开发）",
+    "deployment": "本地优先桌面 AI Agent 伙伴（猫娘/桌宠形态），开源；支持 Steam 免费下载（已获特别好评）。事件驱动主动决策 + 系统级上下文感知（Context-Aware）+ Long-term Memory；主动感知系统状态、挂机/开机时主动搭话、深夜关怀；可接入大模型与本地记忆",
+    "features": [
+      "主动感知与 OS 自动化：基于事件驱动主动找你聊天/陪你摸鱼/帮你干活，系统级上下文感知在你专注时收敛存在感；具备 OS 自动化能力，可跨应用执行任务而非仅对话框应答",
+      "长期记忆与情感连接：Long-term Memory 记住你、理解你、演化为专属虚拟伴侣；中文开源、Steam 分发、桌面常驻，区别于纯 FSM 桌宠与纯工具型 Agent"
+    ],
+    "website": "https://github.com/Project-N-E-K-O/N.E.K.O",
+    "source": "掘金《N.E.K.O.——会主动找你玩的桌面AI猫娘》开源自荐（GitHub Project-N-E-K-O/N.E.K.O，开源桌面 AI Agent 伙伴，事件驱动主动感知+OS 自动化+Long-term Memory，Steam 免费下载已获特别好评）+ GitHub README"
+  },
+  {
+    "id": 437,
+    "name": "Sakura（桌宠 Agent 框架）",
+    "developer": "Rvosy 开源社区（GitHub: Rvosy）",
+    "releaseTime": "2026.07（v0.9.9-dev；稳定包 v0.9.8；Windows 更新器 2026-06-22）",
+    "deployment": "通用桌宠 Agent 框架（开源），可导入自定义角色包；角色感知屏幕内容与系统事件，根据用户当前场景主动做出自然反应。支持 Windows/macOS（原生毛玻璃 pyobjc），捆绑运行时 Python；本地优先、桌面常驻",
+    "features": [
+      "主动感知与情境反应：角色实时感知屏幕内容与系统事件（如打游戏连败、看其他角色图），主动凑近搭话、查攻略、吃醋等自然反应，而非被动 Request-Response 模式",
+      "OS 自动化能力：可打开浏览器搜索、把重点贴进备忘录等真实操作；通用框架支持自定义角色包导入，开发者可扩展角色行为与插件（插件开发文档/技术文档齐备）"
+    ],
+    "website": "https://github.com/Rvosy/sakura",
+    "source": "GitHub Rvosy/sakura（README 中文，通用桌宠 Agent 框架，感知屏幕内容与系统事件、主动情境反应、OS 自动化，2026-07 活跃 v0.9.9-dev，Windows 更新器 2026-06-22）+ 角色包/插件生态"
   }
 ]

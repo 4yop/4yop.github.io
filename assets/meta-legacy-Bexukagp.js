@@ -1,0 +1,1 @@
+System.register([],function(e,t){"use strict";return{execute:function(){e("default",{title:"图片在线预览",description:"免费在线图片预览工具通过URL地址直接预览远程服务器上的图片文件支持JPG PNG GIF WebP SVG BMP等多种常见图片格式无需下载到本地即可查看大图和原图尺寸。适用于快速检查远程图片内容验证图片链接有效性查看图片EXIF信息等场景浏览器本地处理保护隐私安全无需注册打开即用免费在线预览图片文件。",keywords:["图片预览","在线查看","图片URL"]})}}});
