@@ -3741,5 +3741,19 @@
     ],
     "website": "https://github.com/Rvosy/sakura",
     "source": "GitHub Rvosy/sakura（README 中文，通用桌宠 Agent 框架，感知屏幕内容与系统事件、主动情境反应、OS 自动化，2026-07 活跃 v0.9.9-dev，Windows 更新器 2026-06-22）+ 角色包/插件生态"
+  },
+  {
+    "id": 438,
+    "name": "TeleClaw（星辰超级智能体）",
+    "developer": "中国电信（天翼AI，央企出品）",
+    "releaseTime": "2026.04.30（桌面版发布）",
+    "deployment": "本地优先桌面客户端（macOS / Windows，天翼AI开放平台下载，一键安装开箱即用）；数据全程本地处理，核心推理与任务执行模块本机运行，不上传云端",
+    "features": [
+      "本地安全运行：数据不出本机，三重防护——文件读写需明确授权、技能来源扫描查毒、独立沙盒隔离（即使被诱导执行错误指令也仅限沙盒内，不波及本机其他文件）",
+      "自主任务执行与多工具协同：自然语言指令自动拆解复杂任务，自主完成文档/PPT/Excel/代码/行业调研；支持定时任务与长期记忆，越用越懂你",
+      "开放扩展与全面操控：支持 MCP 协议扩展、多模型切换（自研星辰大模型等），并具 OS 级键鼠模拟能力，覆盖无 API 的办公场景"
+    ],
+    "website": "https://www.teleai.com.cn/product/super-agent",
+    "source": "CSDN 深度体验文《星辰超级智能体TeleClaw桌面版深度体验》（中国电信 2026-04-30 推出本地AI生产力助手，macOS+Windows 桌面客户端，天翼AI开放平台下载）+ 天翼AI云电脑 TeleAgent 镜像文档（teleai.com.cn/product/teleagent）"
   }
 ]

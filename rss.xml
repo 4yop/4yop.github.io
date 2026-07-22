@@ -5,9 +5,23 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 21 Jul 2026 17:55:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 14:19:03 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>万花筒对称图片生成</title>
+      <link>https://tools321.com/img/kaleidoscope/</link>
+      <description>万花筒对称图片生成 - Tools321 在线工具箱</description>
+      <pubDate>Thu, 23 Jul 2026 03:20:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/img/kaleidoscope/</guid>
+    </item>
+    <item>
+      <title>颜色对比度检查</title>
+      <link>https://tools321.com/dev/color-contrast/</link>
+      <description>颜色对比度检查 - Tools321 在线工具箱</description>
+      <pubDate>Wed, 22 Jul 2026 09:55:06 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/dev/color-contrast/</guid>
+    </item>
     <item>
       <title>macOS模拟器</title>
       <link>https://tools321.com/game/macos-simulator/</link>
@@ -343,20 +357,6 @@
       <description>七星彩随机选号 - Tools321 在线工具箱</description>
       <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/random/qxc-random/</guid>
-    </item>
-    <item>
-      <title>快乐8随机选号</title>
-      <link>https://tools321.com/random/kl8-random/</link>
-      <description>快乐8随机选号 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/random/kl8-random/</guid>
-    </item>
-    <item>
-      <title>抛硬币</title>
-      <link>https://tools321.com/random/flip-coin/</link>
-      <description>抛硬币 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/random/flip-coin/</guid>
     </item>
   </channel>
 </rss>

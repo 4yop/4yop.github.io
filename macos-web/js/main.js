@@ -188,8 +188,33 @@ document.addEventListener('keydown', e => {
     Sys.renderDock();
     Bus.emit('apps:ready');
     SettingsApp.definePanes(); // 供聚焦搜索与菜单使用
-    Sys.boot();
-    console.log('%c macOS 网页版 %c 启动完成 ', 'background:#0a84ff;color:#fff;border-radius:4px 0 0 4px;padding:2px 6px', 'background:#32d74b;color:#fff;border-radius:0 4px 4px 0;padding:2px 6px');
+
+    // 预渲染模式：跳过开机动画和锁屏，直接进桌面并打开"关于本模拟器.txt"
+    var params = new URLSearchParams(location.search);
+    if (params.get('prerender') === '1') {
+      // 直接解锁进桌面（不走 boot 动画 / lock 界面）
+      Sys.unlocked = true;
+      $('#bootscreen').classList.add('hidden');
+      $('#lockscreen').classList.add('hidden');
+      $('#desktop').classList.remove('hidden');
+      $('#menubar').classList.remove('hidden');
+      $('#dock').classList.remove('hidden');
+      Sys.layoutDock();
+      Sys.renderDesktopIcons();
+      Sys.setActiveApp('finder');
+      Sys.resetIdle();
+      // 自动打开桌面上的"关于本模拟器.txt"
+      var articlePath = FS.HOME + '/Desktop/关于本模拟器.txt';
+      if (FS.node(articlePath)) {
+        setTimeout(function () {
+          Apps.open('textedit', { path: articlePath });
+        }, 200);
+      }
+      console.log('%c macOS 网页版 %c 预渲染模式 ', 'background:#0a84ff;color:#fff;border-radius:4px 0 0 4px;padding:2px 6px', 'background:#ff9f0a;color:#fff;border-radius:0 4px 4px 0;padding:2px 6px');
+    } else {
+      Sys.boot();
+      console.log('%c macOS 网页版 %c 启动完成 ', 'background:#0a84ff;color:#fff;border-radius:4px 0 0 4px;padding:2px 6px', 'background:#32d74b;color:#fff;border-radius:0 4px 4px 0;padding:2px 6px');
+    }
   } catch (e) {
     console.error('[boot] 启动失败:', e);
     document.body.innerHTML = '<div style="color:#fff;font-family:sans-serif;padding:40px">启动失败，请刷新重试。<br><small>' + esc(e.message) + '</small></div>';
