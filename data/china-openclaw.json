@@ -3755,5 +3755,35 @@
     ],
     "website": "https://www.teleai.com.cn/product/super-agent",
     "source": "CSDN 深度体验文《星辰超级智能体TeleClaw桌面版深度体验》（中国电信 2026-04-30 推出本地AI生产力助手，macOS+Windows 桌面客户端，天翼AI开放平台下载）+ 天翼AI云电脑 TeleAgent 镜像文档（teleai.com.cn/product/teleagent）"
+  },
+  {
+    "id": 439,
+    "name": "Aiko（桌面宠物 Agent）",
+    "developer": "tiancheng92 开源社区（GitHub: tiancheng92）",
+    "releaseTime": "2026.06（GitHub 仓库公开；macOS 原生桌面客户端）",
+    "deployment": "本地优先桌面客户端（macOS 11.0+，Wails v2 构建；Windows / Linux 暂不规划）；全部聊天记录与向量记忆存于本地 ~/.aiko，不上云",
+    "features": [
+      "兽耳娘桌面宠物形态：Live2D / VRM 角色常驻桌面，点击穿透不遮挡操作；主动感知屏幕内容与系统事件，按当前场景主动凑过来搭话",
+      "执行型 Agent 能力：50+ 内置工具（文件系统读写、Shell / Python / Node / Ruby 代码执行、截图、应用控制、浏览器感知、剪贴板、系统监控），支持 MCP 协议（stdio / SSE / HTTP 热重载）与 Cron 定时任务",
+      "长期记忆与知识库：chromem-go 向量数据库语义检索 + 时间衰减，RAG 导入 PDF / TXT / EPUB / MD；技能系统可自动沉淀复用 YAML 技能、forked 子 Agent 执行",
+      "飞书集成与多模态：通过 lark-cli 操作飞书消息 / 日历 / 文档；支持语音输入（macOS SFSpeechRecognizer）、Kokoro 本地离线 TTS、多模态图片理解，自动检查 GitHub Releases 更新"
+    ],
+    "website": "https://github.com/tiancheng92/Aiko",
+    "source": "GitHub README（tiancheng92/Aiko，Wails 桌面宠物 AI Agent，MIT 开源；仓库 2026-06-04 已公开）+ 星标用户页时间戳佐证"
+  },
+  {
+    "id": 440,
+    "name": "AgentRouter（多 Agent 协同桌面平台）",
+    "developer": "kuaizhongqiang 开源社区（GitHub: kuaizhongqiang）",
+    "releaseTime": "2026.07（v0.1.0-alpha.1，约 2026-07-10；Electron 桌面端持续迭代）",
+    "deployment": "本地优先桌面客户端（Electron + Vue 3，提供 Windows .exe 安装包与 npm 全局包 @kuaizhongqiang/agent-router）；调度本机已安装的 CLI 编程 Agent，Agent 在本机并行执行",
+    "features": [
+      "多 Agent 统一调度：将 CodeWhale、Reasonix、Cline、Continue、Deep Code、OpenCode 六款开源 CLI 编程助手整合进一个桌面界面，支持并行执行、任务拆解（PM 模式）与执行结果汇聚",
+      "审批与管控：支持 YOLO 自动审批 / 逐步确认 / 审批流等多种执行模式，每步可用户确认；内置项目管理与任务（task list / approve）、诊断（doctor / diag / status）命令",
+      "MCP 与多模型：兼容 Model Context Protocol，各 Agent 接入 15+~35+ 模型提供商（OpenAI / Claude / Google / 本地 Ollama 等），Credential 管理与 Git 集成",
+      "本地化工程体验：模拟“人”调用 CLI 子进程维护消息 / 任务 / 日志，支持对话、PM 拆解分派、预览计划等多种模式，Apache-2.0 开源"
+    ],
+    "website": "https://github.com/kuaizhongqiang/AgentRouter",
+    "source": "GitHub README（kuaizhongqiang/AgentRouter，Electron+Vue3 多 Agent 协同桌面平台）+ GitCode 镜像 Release 页（v0.1.0-alpha.1，2026-07-10 前后）"
   }
 ]
