@@ -5,9 +5,16 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 Jul 2026 14:19:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 14:29:44 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>字幕截图拼接</title>
+      <link>https://tools321.com/img/subtitle-splicer/</link>
+      <description>字幕截图拼接 - Tools321 在线工具箱</description>
+      <pubDate>Sat, 25 Jul 2026 13:20:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/img/subtitle-splicer/</guid>
+    </item>
     <item>
       <title>万花筒对称图片生成</title>
       <link>https://tools321.com/img/kaleidoscope/</link>
@@ -350,13 +357,6 @@
       <description>随机配对 - Tools321 在线工具箱</description>
       <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/random/random-pair/</guid>
-    </item>
-    <item>
-      <title>七星彩随机选号</title>
-      <link>https://tools321.com/random/qxc-random/</link>
-      <description>七星彩随机选号 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/random/qxc-random/</guid>
     </item>
   </channel>
 </rss>

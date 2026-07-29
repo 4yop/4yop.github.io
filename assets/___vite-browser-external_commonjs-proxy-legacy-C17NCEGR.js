@@ -1,1 +1,0 @@
-System.register(["./__vite-browser-external-legacy-S8t1LITk.js","./index-legacy-C_nr1GkG.js"],function(e,t){"use strict";var n,r;return{setters:[function(e){n=e._},function(e){r=e.p}],execute:function(){e("r",r(n))}}});

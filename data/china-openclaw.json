@@ -3785,5 +3785,132 @@
     ],
     "website": "https://github.com/kuaizhongqiang/AgentRouter",
     "source": "GitHub README（kuaizhongqiang/AgentRouter，Electron+Vue3 多 Agent 协同桌面平台）+ GitCode 镜像 Release 页（v0.1.0-alpha.1，2026-07-10 前后）"
+  },
+  {
+    "id": 441,
+    "name": "ToCodex（云算动力）",
+    "developer": "深圳云算动力科技有限公司（云算动力 / ToCodex）",
+    "releaseTime": "2026（持续迭代；桌面版 v3.3.0 起含终端远程控制/浏览器任务/定时任务；v3.3.6 自进化 Agent 实测于 2026-07-23）",
+    "deployment": "本地优先桌面客户端（ToCodex Desktop，Windows 10/11 + macOS Apple Silicon/Intel 独立 .exe/.dmg 安装包，开箱即用三栏布局）；另有 VS Code 插件、CLI（npm -g @tocodex/cli）、移动端；支持飞书/Telegram 远程指挥，数据存于本机 ~/.tocodex，不强制上云",
+    "features": [
+      "原生桌面客户端 + 多形态：ToCodex Desktop 独立桌面 App（Windows/macOS）开箱即用、内置全量 AI 编程能力，同时提供 VS Code 插件、CLI、移动端，覆盖本地与远程多场景",
+      "执行型 Agent 能力：16 种 Agent 模式（架构/编码/调试/浏览器自动化/定时任务/PR 修复/Issue 修复等），支持终端远程控制、浏览器任务模式、MCP 协议、Skills 技能封装，以及文件读写与多步自动化",
+      "远程协作与多模型：飞书/Telegram 双向 IM 远程（消息/图片/文件/审批），内置 26 家模型厂商协议（OpenAI/Claude/Gemini/DeepSeek 等）开箱即用，支持 API 聚合与全局/项目级长期记忆"
+    ],
+    "website": "https://tocodex.com/",
+    "source": "ToCodex 官网下载页（tocodex.com/download.html，ToCodex Desktop 独立桌面客户端 Windows/macOS）+ 官方文档（tocodex.com/docs，v3.3.0 桌面版含终端远程控制/浏览器任务/定时任务）+ 36氪 PitchHub 项目页（深圳云算动力科技有限公司）+ 腾讯云开发者社区 2026-07-23 AI 编程工具动态（ToCodex v3.3.6 自进化 Agent 实测）"
+  },
+  {
+    "id": 442,
+    "name": "JimoClaw（小墨）",
+    "developer": "杭州小火堆数字科技有限公司（积墨 AI / JimoClaw 团队）",
+    "releaseTime": "2026（桌面版公测；官网 jimoclaw.jimo.studio 提供 macOS Apple Silicon / Intel 与 Windows 10+ 桌面客户端下载，2026-07 活跃）",
+    "deployment": "本地优先桌面工作台（macOS Apple Silicon / Intel + Windows 10+ 独立桌面客户端下载；以桌面工作台形态运行，AI 处理本地资料、操控浏览器，把复杂任务推进到可直接使用的文档/表格/PPT 交付物）；支持微信/企业微信/钉钉/飞书 IM 远程下发指令、桌面端自动接收并执行、结果回传；审批/边界/回溯由用户定义",
+    "features": [
+      "交付导向的执行：给出目标，JimoClaw 处理本地资料、生成内容，最终输出可直接使用的文档/表格/报告（而非一段回答）；覆盖资料整理与研究摘要、邮件/报告/汇报写作、浏览器操作与网页自动化（自动浏览/填表/抓数/截图存档）、数据处理与周期任务",
+      "移动端下指令、桌面端自动交付：在微信、企业微信、钉钉、飞书等常用 IM 中发指令，JimoClaw 桌面端自动接收、执行并将结果回传，无需守在电脑前",
+      "安全与控制：以桌面工作台方式运行，效率交给 Agent，边界/审批/回溯依然由用户定义；把执行能力交给 AI 的同时把控制权留给用户，面向专业办公场景"
+    ],
+    "website": "https://jimoclaw.jimo.studio/",
+    "source": "JimoClaw 官网（jimoclaw.jimo.studio，桌面 AI Agent 工作台，提供 Mac/Windows 桌面版下载 + 产品场景/演示/更新日志）+ jimo.studio 博客《2026,AI Agent元年》《从聊天到行动：2026年AI Agent如何重塑人机协作》《小龙虾很好,可是如何在企业场景中落地?》（积墨 AI / 杭州小火堆数字科技有限公司，© 2026 杭州小火堆数字科技有限公司）"
+  },
+  {
+    "id": 443,
+    "name": "Hope Agent",
+    "developer": "shiwenwen（个人开源开发者，GitHub: shiwenwen）",
+    "releaseTime": "2026（v0.1.0 于 2026-05 开源发布；2026-07 持续活跃迭代至 v0.21.0）",
+    "deployment": "本地优先跨端桌面客户端（Tauri + Rust，提供 macOS arm64/x64 DMG、Windows setup.exe/msi、Linux deb/rpm/AppImage 原生安装包；亦支持无头 server 模式常驻 NAS/云端）；1.2k+ Stars，2026-07 持续迭代至 v0.21.0",
+    "features": [
+      "记忆与自主目标推进：持久记忆随用随长，用户设定长短期目标后自动拆解为任务序列、后台跟踪进度并主动寻求协助；支持跨端交接，越用越懂你的使用习惯与偏好",
+      "多 Agent 动态编排：面对复杂任务时动态创建、调度多个专业 Agent 协作（代码编写、文档整理、测试验证等），通过编排层确保高效协同",
+      "跨端桌面 + 远程可达：基于 Tauri + Rust 的本地优先桌面客户端（macOS/Windows/Linux 原生安装包），支持手机远程连接，可接入微信/飞书/钉钉等 IM 平台实现无缝聊天与远程指挥；亦支持无头服务化常驻 NAS/云端",
+      "多模型与隐私自托管：支持 Claude / OpenAI / Gemini / 本地 AI 等多种大模型，数据本地优先，注重隐私，可完全自托管"
+    ],
+    "website": "https://github.com/shiwenwen/hope-agent",
+    "source": "github.com/shiwenwen/hope-agent（Tauri + Rust 跨端桌面 AI Agent，中文文档，1.2k+ Stars）+ agentskill.work 技能页（shiwenwen/hope-agent）+ 项目 README（会记忆、能持续推进目标、会动态编排多 Agent 的跨端桌面 AI 助手，亦可服务化常驻 NAS/云端）"
+  },
+  {
+    "id": 444,
+    "name": "MiniMax Hub",
+    "developer": "稀宇科技（MiniMax）",
+    "releaseTime": "2026（本地桌面端上线；联想应用商店 L122277 上架版本 v1.1.2 更新于 2026-07-16；海螺国内版/国际版均可下载安装，与海螺 AI 共用账户与积分）",
+    "deployment": "本地桌面 AI Agent 创作平台（Desktop Agent，运行于本地桌面，安装包支持 Windows / macOS；将文本调研、脚本、分镜、图片/视频/音频/音乐生成到成片导出的全链路内容生产整合于同一无限画布工作台；Agent 自动编排任务、调度多模型、协同执行，产物直接落本地文件夹；与海螺 AI 网页版共用账户、积分规则一致）",
+    "features": [
+      "全链路内容生产：覆盖文本调研与多模态生成，从搜索/调研、脚本、分镜、图片与视频生产到最终交付，支持并行项目同步运行；子 Agent（图片编辑/生成、视频生成/剪辑、音频/音乐生成等）按任务灵活调用，左侧画布随时修改",
+      "Agent 智能编排 + Skill/记忆：给出灵感后 Hub 的 Agent 自动规划、调度最适合的模型（图片 Banana/Image/Seedream/Midjourney/Kling，视频 Seedance/Hailuo/Veo/可灵/Wan，音频 MiniMax Speech/Music 等），无需手动连工作流；100+ Skill 能力广场与精选插件，Memory 记忆偏好/风格/历史选择",
+      "打通本地工作流：可直接读取本地 PDF/Word 文档照计划执行、整理电脑素材文件夹、一键导出至剪映/DaVinci/Adobe；产物生成在本地文件夹免下载；支持上传参考文件/网页链接、多会话并行"
+    ],
+    "website": "https://hub.minimaxi.com",
+    "source": "联想应用商店 MiniMax Hub 详情页（L122277，v1.1.2 更新 2026-07-16）+ 搜狐实测《MiniMax Hub实测:用Agent+Skills出片真的太爽了》（入口 hub.minimaxi.com，海螺账户共用，新用户 500 免费积分）+ 腾讯新闻《做漫剧,有救了!》（hub.minimaxi.com 本地安装，生成图片直接在本地文件夹）+ MiniMax Hub 官方站 hub.minimaxi.com"
+  },
+  {
+    "id": 445,
+    "name": "uniTerm",
+    "developer": "ys-ll 开源社区（GitHub: ys-ll；Gitee: ys-l）",
+    "releaseTime": "2026（v1.0 正式版开源发布，历经 40+ Alpha 版本迭代打磨；v1.5.2 于 2026-07-22，2026-07 持续活跃）",
+    "deployment": "本地优先跨平台桌面终端（基于 Wails v2 + Go + Vue 3 构建原生 Windows/macOS/Linux 桌面客户端；将远程终端、文件传输、远程桌面、数据库客户端、服务器监控与 AI 助理整合于单一安装包，体积不到 10MB；内置自主 AI Agent 在终端中规划并执行多轮 Shell 命令，本地运行、数据留本机，Apache-2.0 开源）",
+    "features": [
+      "内置自主 AI Agent：在终端标签页中独立规划→执行→观察输出→迭代修正多轮 Shell 命令，无需人工逐行干预；灵活执行模式（免确认/仅高危确认/写操作确认/全部确认）由用户掌控自主度，终端深度集成、对话按会话持久化、重启保留",
+      "全协议远程访问一体化：覆盖 SSH/Telnet/Mosh、SFTP/FTP/SMB/WebDAV/S3/Zmodem、RDP/VNC/SPICE 远程桌面、MySQL/PostgreSQL/Oracle/SQL Server/Redis/MongoDB 等 7 类数据库、串口与服务器实时监控，一个软件解决运维/开发全场景",
+      "AI 多终端协同与智能化：v1.5 起 AI 可同时关联多个终端窗口（#标签指定），支持执行+观测分离、多节点对比、集群批量巡检；AI 自然语言生成 SQL/MongoDB 查询、SSH 终端智能命令补全；多模型兼容 Anthropic/OpenAI 协议（Claude/GPT 等）"
+    ],
+    "website": "https://uniterm.net",
+    "source": "开源中国 uniTerm v1.0 正式发布报道（GitHub: ys-ll/uniterm，Gitee: ys-l/uniterm，官网 uniterm.net）+ openwin.cn《uniTerm v1.3/v1.4 发布》(Wails v2 + Go + Vue 3，内置自主 AI Agent，Apache 2.0) + CSDN《uniTerm v1.5.0 发布:AI 多终端协同》(v1.5.2 于 2026-07-22) + GitHub README（20+ 协议、自主多轮 Shell 执行、Anthropic/OpenAI 兼容）"
+  },
+  {
+    "id": 446,
+    "name": "Cindy",
+    "developer": "心动公司（TapTap / XD，CEO 黄一孟）",
+    "releaseTime": "2026.07.26（2026 TapTap 开发者沙龙 TDW 2026 发布；cindy.cn 提供桌面客户端下载 + GitHub makecindy 开源）",
+    "deployment": "本地优先桌面 AI Agent 客户端（Cindy，心动公司/TapTap 出品，2026-07-26 于 TDW 2026 发布；100% 免费开源、无需登录即可使用，可前往 cindy.cn 下载桌面客户端，或在 GitHub makecindy 仓库获取开源项目；开箱即用的工作环境，统一接入大语言/图片/视频/音频等多模型与工具能力，用户无需自行配置即可说出需求开始工作；可接入自有 API Key 或 Coding Plan，官方提供免费语音输入与远程接管，支持手机操作家中电脑或服务器上的 Cindy；企业版支持限额/成本优化/团队模型与额度管理/团队级 Skill 分享与治理）",
+    "features": [
+      "开箱即用的创作工作环境：统一接入大语言、图片、视频、音频等多模型与工具能力，无需复杂配置，说出需求与目标即可开始工作；内置 TapTap 制造（TapTapMaker）游戏创作工具，既能做游戏，也能处理日常办公，成为每个人尝试、使用、贡献代码或打造个人 AI Agent 的起点",
+      "并行协作的新团队协作范式：探索围绕结果并行推进的工作方式——美术成果直接提 PR、程序优化同步发布，各环节解耦并行（心动内部试用三周已验证效果）；Cindy 与 TapTap 制造、TapTap 平台三者高度协同也可完全解耦",
+      "免费开源 + 远程可达 + 企业可治理：100% 免费开源、无需登录，可接自有 API Key / Coding Plan；官方提供免费语音输入与远程接管（手机操控家中电脑/服务器上的 Cindy）；企业版支持限额管理、成本优化、不同团队模型与额度管理以及团队级 Skill 分享与治理，企业可自行搭建或复用心动内部基础设施"
+    ],
+    "website": "https://cindy.cn",
+    "source": "cindy.cn 官网（Cindy 客户端下载）+ GitHub makecindy 仓库 + 2026 TapTap 开发者沙龙(TDW 2026) 黄一孟发布报道（GameLook 2026-07-27《黄一孟:TapTap新游戏暴增近10倍,发布\"游戏开发AI神器\"Cindy!》+ 腾讯新闻 2026-07-27《游戏供给暴增近10倍,TapTap全面开源重构创作生态》+ 腾讯新闻 2026-07-27《黄一孟重新给出了\"AI时代心动与TapTap的答案\"》）"
+  },
+  {
+    "id": 447,
+    "name": "Saki AI Agent",
+    "developer": "abdu6666 开源社区（GitHub: abdu6666；另见 fork EthanChan050430/Saki-AI）",
+    "releaseTime": "2026（项目 README 与多家技术博客引用，2026 上半年已存在并活跃；中文母语桌面 AI 助手）",
+    "deployment": "本地优先桌面级 AI 助手 / OpenClaw 替代（Saki AI Agent，面向中文用户的本地 AI Agent 工作台与 Windows AI 助手，强调低门槛、低成本、高安全默认值；应用本体 2 hCPU / 200 MB 即可部署，8B-12B 小模型（首推 glm-4.7-flash）即可获得较好效果；Windows 双击 start.bat / configure.bat 即可运行，无需 WSL2；数据默认存于本地 data/ 目录，不上云；沙盒运行、敏感操作审批、文件版本回溯，主打比 OpenClaw 更低的上手/Token/桌面体验/安全配置摩擦）",
+    "features": [
+      "轻量本地部署与低成本：应用服务本体仅需 2 hCPU / 200 MB 即可跑起来，优先为本地小模型（8B-12B，首推 glm-4.7-flash）优化体验，长期本地常驻少烧 Token；Windows 双击启动脚本即可运行，无需 WSL2 / Docker / 复杂命令行",
+      "默认安全护栏：默认权限模式下终端与文件工具限制在沙盒目录内，覆盖/编辑/删除等敏感操作暂停等待用户确认，AI 创建或修改的文件保留版本快照可回滚，本地数据优先存于本机 data/ 目录",
+      "桌面工作台能力：本地 AI 工作台接入网页搜索、本地文档读取（PDF/Word/Excel）、本地图像生成、语音与外部渠道，支持 PPT 生成、深度研究、记忆管理与第三方聊天整合，把前沿 AI 能力封装为温暖易用、成本可控、安全默认更高的桌面应用"
+    ],
+    "website": "https://github.com/abdu6666/Saki-AI-Agent",
+    "source": "GitHub abdu6666/Saki-AI-Agent（README: Local AI Agent Framework / Desktop-level AI Assistant / An Alternative to OpenClaw，中文母语，glm-4.7-flash，沙盒/审批/文件回溯）+ skillavatars.com/agents/saki-ai（github-seeds:agent-hot 发现，2026-07-24 同步）+ CSDN《Saki AI Agent:轻量级本地AI助手部署与核心功能解析》(weixin_27031001, 2026-04-28) + GitHub EthanChan050430/Saki-AI（同项目 fork/变体，含 LightMem/MCP/PPT 生成/localhost:5482）"
+  },
+  {
+    "id": 448,
+    "name": "RedCode",
+    "developer": "JiaHuiRed 开源社区（GitHub: JiaHuiRed）",
+    "releaseTime": "2026（基于 opencode sst.dev 深度二次开发；v0.7.x 活跃，README 于 2026-07-27 更新）",
+    "deployment": "中文母语 AI 编程助手（RedCode，更适合中国宝宝的 code agent），两个入口同一引擎：TUI 终端命令行（packages/opencode）与桌面 GUI 窗口程序（Electron 或 Tauri，packages/desktop）；说中文、插你喜欢的模型（DeepSeek/OpenAI/Anthropic/Ollama，国产优先），基于 opencode(sst.dev) 深度二次开发，侧重前缀缓存优化、多模型适配、中文体验与稳定性",
+    "features": [
+      "双入口同引擎（TUI + 桌面 GUI）：既可在终端用 TUI 命令行界面工作，也可启动 Electron/Tauri 桌面窗口程序作为图形化客户端；读代码、写代码、改 bug、跑命令，中文母语交互",
+      "代码理解与执行能力：代码理解（jCodeMunch / TypeGraph）、多模型适配（DeepSeek/OpenAI/Anthropic/Ollama，国产优先）、文件读写编辑、终端执行、Web 搜索、视觉分析、会话管理",
+      "工程化护栏与自动化：权限门控与防护环（guardrail/doom_loop 检测）、上下文压缩、自动化记忆系统、目标管理、Skill 技能系统、防重复循环检测、自定义 AI 人格，面向稳定可靠的长期编码协作"
+    ],
+    "website": "https://github.com/JiaHuiRed/RedCode",
+    "source": "GitHub JiaHuiRed/RedCode（README: 中文母语的 AI 编程助手，终端(TUI)或桌面(GUI)，说中文插你喜欢的模型——DeepSeek/OpenAI/Anthropic/Ollama 国产优先，基于 opencode sst.dev 深度二次开发；README 于 2026-07-27 更新）+ 腾讯云开发者社区《OpenWorker 开源》同栏 2026-07-27 报道联动（注：OpenWorker 为 Andrew Ng 海外项目，非国产，未收录）"
+  },
+  {
+    "id": 449,
+    "name": "千问办公（QwenWork）",
+    "developer": "阿里巴巴（Alibaba，钉钉科技有限公司开发；由钉钉新任CEO陈宇森牵头整合）",
+    "releaseTime": "2026.07.27（官网 qwenwork.cn 正式上线，Windows/macOS Beta 桌面客户端开放下载；鸿蒙电脑 Beta 版上架 AppGallery 应用尝鲜）",
+    "deployment": "阿里一站式 AI Agent 办公平台 / 桌面客户端：整合原 QoderWork、悟空、MuleRun 三款智能体产品，形成「前台(QoderWork桌面交互)+中台(MuleRun流程复用)+后台(悟空/钉钉企业数据)」分层架构；提供桌面端（Windows 10+/macOS 14+ Beta）、网页端（BETA）与钉钉内置版三种入口；基于千问系列大模型，深度接入钉钉生态（文档/日程/审批等上千项能力），企业级安全沙箱运行、多层级权限管控",
+    "features": [
+      "智能任务执行与全链路交付：一句话拆解多步骤复杂任务，直接交付 PPT/Word/Excel/网页/代码等可用产物，生成即所得，支持多轮迭代优化与多智能体并行协作模式",
+      "全模态内容创作与网页全栈生成：覆盖 AI 生图、视频剪辑、信息搜索、文件处理、数据分析；支持制作可交互网页并连接数据库、自动分配域名与托管，无需复杂部署",
+      "本地桌面能力与自动化：桌面客户端额外支持浏览器自动化（点击/输入/采集）、本地文件操作、电脑操控、应用快照、语音输入、Hooks；云端定时任务按设定时间自动运行并推送至钉钉等渠道；可安装专家套件/技能/连接器将高频流程固化为可复用工作流"
+    ],
+    "website": "https://qwenwork.cn/",
+    "source": "站长之家 ChinaZ 2026-07-27《千问办公官网正式上线,Windows 与 macOS 版率先开放》（官网 https://qwenwork.cn/ 上线）；南方都市报 2026-07-27《阿里\"拳头产品\"千问办公上线桌面版》；腾讯新闻 2026-07-28《阿里推出千问办公,三款产品合并》(整合 QoderWork/悟空/MuleRun，钉钉新任CEO陈宇森牵头)；ai-bot.cn / aihub.cn 产品页"
   }
 ]
