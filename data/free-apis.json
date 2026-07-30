@@ -7243,5 +7243,437 @@
     ],
     "note": "",
     "lastTested": "2026-07-29T11:51:13.407Z"
+  },
+  {
+    "id": "cve-report",
+    "name": "CVE.report 漏洞库",
+    "description": "CVE漏洞数据查询，含NVD/KEV/EPSS增强",
+    "fullDescription": "CVE.report 免费API可查询任意CVE编号的漏洞详情，包含CVE Program记录、NVD评分、CISA KEV已知漏洞和EPSS利用预测评分，无需任何API Key。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://cve.report/api/cve/CVE-2025-12345.json",
+    "baseUrl": "https://cve.report/api/cve",
+    "params": [
+      {
+        "name": "cve_id",
+        "type": "string",
+        "required": true,
+        "description": "CVE编号，格式 CVE-YYYY-NNNNN",
+        "example": "CVE-2025-12345"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://cve.report/api",
+    "tags": [
+      "安全",
+      "漏洞",
+      "CVE",
+      "NVD"
+    ],
+    "note": "支持CORS，无需认证"
+  },
+  {
+    "id": "eightball-api",
+    "name": "Eightball 占卜API",
+    "description": "魔法8球随机占卜预测",
+    "fullDescription": "Magic 8-Ball API 提供随机占卜回答，支持多种语言、情感偏向和分类查询。可返回正/负/中性三类回答，适合聊天机器人、游戏和趣味应用。",
+    "category": "fun",
+    "method": "GET",
+    "url": "https://eightballapi.com/api",
+    "baseUrl": "https://eightballapi.com/api",
+    "params": [
+      {
+        "name": "locale",
+        "type": "string",
+        "required": false,
+        "description": "语言代码(如 fr, de, es)",
+        "example": "en"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://eightballapi.com/docs",
+    "tags": [
+      "占卜",
+      "随机",
+      "趣味"
+    ],
+    "note": "支持CORS，无需认证，有POST /api/biased 分析情感"
+  },
+  {
+    "id": "chinadata-live",
+    "name": "China Data Portal",
+    "description": "中国经济/人口/贸易官方统计",
+    "fullDescription": "China Data Portal 提供中国官方统计数据免费API，涵盖GDP、人口、CPI、能源、贸易等数百个数据集。无需API Key，支持JSON和CSV格式，CORS跨域。数据来源可靠（国家统计局/海关总署等）。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://chinadata.live/api/v2/data/china-gdp",
+    "baseUrl": "https://chinadata.live/api/v2",
+    "params": [
+      {
+        "name": "dataset_id",
+        "type": "string",
+        "required": true,
+        "description": "数据集ID，如 china-gdp, china-total-population",
+        "example": "china-gdp"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "输出格式 csv 或 json",
+        "example": "csv"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://chinadata.live/api/docs",
+    "tags": [
+      "中国",
+      "经济",
+      "人口",
+      "贸易",
+      "统计"
+    ],
+    "note": "国内数据源，CORS支持，免费100次/天"
+  },
+  {
+    "id": "is-safe-travel",
+    "name": "IsItSafeToTravel",
+    "description": "248国旅行安全评分数据",
+    "fullDescription": "IsItSafeToTravel 从40+公开数据源每日计算248个国家的旅行安全评分，涵盖冲突、犯罪、健康、治理和环境五大维度。返回JSON格式，支持CORS跨域，完全免费无需注册。",
+    "category": "other",
+    "method": "GET",
+    "url": "https://isitsafetotravel.org/scores.json",
+    "baseUrl": "https://isitsafetotravel.org",
+    "params": [
+      {
+        "name": "country",
+        "type": "string",
+        "required": false,
+        "description": "ISO3国家代码，如 ITA/CHN/USA",
+        "example": "ITA"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://isitsafetotravel.org/en/api/",
+    "tags": [
+      "旅行",
+      "安全",
+      "风险",
+      "国家"
+    ],
+    "note": "每日更新，CORS支持，无需认证"
+  },
+  {
+    "id": "agent-deals",
+    "name": "AgentDeals 开发者优惠",
+    "description": "开发者工具免费套餐/优惠聚合",
+    "fullDescription": "AgentDeals API 聚合开发者工具的免费套餐、折扣和创业扶持计划，覆盖托管/数据库/AI/认证等类别。支持搜索/对比/审计/风险分析，所有端点无需API Key。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://agentdeals.dev/api/offers?limit=1",
+    "baseUrl": "https://agentdeals.dev/api",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "hosting"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "分类筛选",
+        "example": "cloud-hosting"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回条数",
+        "example": 20
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://agentdeals.dev/api/openapi.json",
+    "tags": [
+      "开发者",
+      "优惠",
+      "免费套餐",
+      "工具"
+    ],
+    "note": "无需认证，CORS支持"
+  },
+  {
+    "id": "vadivelu-codes",
+    "name": "Vadivelu HTTP 状态码",
+    "description": "印度演员表情的HTTP状态码图片",
+    "fullDescription": "Vadivelu Status Codes 将HTTP状态码映射到印度演员Vadivelu的表情图片，类似HTTP Status Cats。通过URL路径指定状态码，返回GIF图片，非常适合API错误展示和趣味开发。",
+    "category": "fun",
+    "method": "GET",
+    "url": "https://vadivelu.anoram.com/200",
+    "baseUrl": "https://vadivelu.anoram.com",
+    "params": [
+      {
+        "name": "code",
+        "type": "number",
+        "required": true,
+        "description": "HTTP状态码",
+        "example": 200
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://vadivelu.anoram.com/",
+    "tags": [
+      "HTTP",
+      "状态码",
+      "趣味",
+      "图片"
+    ],
+    "note": "返回GIF图片，无认证，CORS可能为opaque"
+  },
+  {
+    "id": "freeforex-api",
+    "name": "Free Forex API",
+    "description": "实时外汇汇率，无需Key",
+    "fullDescription": "Free Forex API 提供主要货币对的实时汇率，延迟<1秒。支持EUR/USD, GBP/USD等主流货币对，完全免费无需API Key，适合外汇行情展示和金融应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.freeforexapi.com/api/live?pairs=EURUSD",
+    "baseUrl": "https://www.freeforexapi.com/api/live",
+    "params": [
+      {
+        "name": "pairs",
+        "type": "string",
+        "required": true,
+        "description": "货币对，逗号分隔",
+        "example": "EURUSD,GBPUSD,USDJPY"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://www.freeforexapi.com/",
+    "tags": [
+      "外汇",
+      "汇率",
+      "金融"
+    ],
+    "note": "无需Key，实时数据"
+  },
+  {
+    "id": "chronicling-america",
+    "name": "Chronicling America",
+    "description": "美国历史报纸全文数据库",
+    "fullDescription": "Chronicling America 由美国国会图书馆提供，收录1836-1963年美国历史报纸的元数据和全文搜索。API返回报纸名称、出版地、日期等信息，完全公开无需认证。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://chroniclingamerica.loc.gov/newspapers.json",
+    "baseUrl": "https://chroniclingamerica.loc.gov",
+    "params": [
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "输出格式 json 或 html",
+        "example": "json"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://chroniclingamerica.loc.gov/about/api/",
+    "tags": [
+      "报纸",
+      "历史",
+      "美国",
+      "图书馆"
+    ],
+    "note": "LOC.gov 域名，通常支持CORS"
+  },
+  {
+    "id": "crossref-works-search",
+    "name": "Crossref 学术搜索",
+    "description": "学术论文元数据搜索",
+    "fullDescription": "Crossref 提供学术论文、期刊、会议论文的元数据搜索API。支持按标题、作者、DOI、ISSN等检索，返回结构化学术信息，是开放学术研究的重要数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.crossref.org/works?query=artificial+intelligence&rows=1",
+    "baseUrl": "https://api.crossref.org",
+    "params": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": false,
+        "description": "搜索关键词",
+        "example": "artificial intelligence"
+      },
+      {
+        "name": "rows",
+        "type": "number",
+        "required": false,
+        "description": "返回条数",
+        "example": 5
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://api.crossref.org/swagger-ui/index.html",
+    "tags": [
+      "学术",
+      "论文",
+      "研究",
+      "DOI"
+    ],
+    "note": "Crossref Works API 公开可用"
+  },
+  {
+    "id": "openlibrary-search-api",
+    "name": "Open Library 搜索API",
+    "description": "海量图书搜索（2000万+记录）",
+    "fullDescription": "Open Library 搜索API可查询2000万+图书记录，支持按标题/作者/ISBN/主题搜索，返回封面、出版信息、作者详情等。完全免费无限制，CORS支持。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://openlibrary.org/search.json?q=the+lord+of+the+rings&limit=1",
+    "baseUrl": "https://openlibrary.org/search.json",
+    "params": [
+      {
+        "name": "q",
+        "type": "string",
+        "required": true,
+        "description": "搜索关键词",
+        "example": "the lord of the rings"
+      },
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回条数",
+        "example": 10
+      },
+      {
+        "name": "page",
+        "type": "number",
+        "required": false,
+        "description": "页码",
+        "example": 1
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://openlibrary.org/developers/api",
+    "tags": [
+      "图书",
+      "搜索",
+      "文学",
+      "阅读"
+    ],
+    "note": "Internet Archive项目，完全免费"
+  },
+  {
+    "id": "freeapi-products-user",
+    "name": "Free-API 用户数据集",
+    "description": "HitarthPathak 免费JSON用户数据",
+    "fullDescription": "HitarthPathak Free-API 提供完全免费无需认证的JSON数据集，包括E-Commerce产品(36件)、笑话(50条)、电影(100部)和用户(100人)，GitHub Pages托管，CORS支持。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://hitarthpathak.github.io/Free-API/Users.json",
+    "baseUrl": "https://hitarthpathak.github.io/Free-API",
+    "params": [],
+    "responseExample": {},
+    "docUrl": "https://github.com/hitarthpathak/Free-API",
+    "tags": [
+      "测试数据",
+      "模拟数据",
+      "JSON"
+    ],
+    "note": "GitHub Pages，CORS支持"
+  },
+  {
+    "id": "freeapi-products-ecommerce",
+    "name": "Free-API 电商产品",
+    "description": "免费电子商务产品JSON数据集",
+    "fullDescription": "HitarthPathak Free-API 中的电商产品数据集，包含36件分类齐全的产品(男装/女装/童装)，适合电商原型开发和前端演示。GitHub Pages托管，CORS支持，无需认证。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://hitarthpathak.github.io/Free-API/E-Commerce-Products.json",
+    "baseUrl": "https://hitarthpathak.github.io/Free-API",
+    "params": [],
+    "responseExample": {},
+    "docUrl": "https://github.com/hitarthpathak/Free-API",
+    "tags": [
+      "电商",
+      "产品",
+      "测试数据"
+    ],
+    "note": "GitHub Pages，CORS支持"
+  },
+  {
+    "id": "freeapi-products-movies",
+    "name": "Free-API 电影数据集",
+    "description": "免费电影数据JSON（100部）",
+    "fullDescription": "HitarthPathak Free-API 中的电影数据集，包含100部涵盖恐怖/悬疑/喜剧/动作/科幻/冒险/浪漫/超自然9个分类的电影。GitHub Pages托管，CORS支持，无需认证。",
+    "category": "entertainment",
+    "method": "GET",
+    "url": "https://hitarthpathak.github.io/Free-API/Movies-Collection.json",
+    "baseUrl": "https://hitarthpathak.github.io/Free-API",
+    "params": [],
+    "responseExample": {},
+    "docUrl": "https://github.com/hitarthpathak/Free-API",
+    "tags": [
+      "电影",
+      "娱乐",
+      "测试数据"
+    ],
+    "note": "GitHub Pages，CORS支持"
+  },
+  {
+    "id": "freeapi-products-jokes-updated",
+    "name": "Free-API 笑话集",
+    "description": "免费JSON笑话数据（50条）",
+    "fullDescription": "HitarthPathak Free-API 中的笑话数据集，包含50条各类笑话。GitHub Pages托管，CORS支持，无需认证。适合趣味应用、聊天机器人和原型开发。",
+    "category": "fun",
+    "method": "GET",
+    "url": "https://hitarthpathak.github.io/Free-API/Jokes.json",
+    "baseUrl": "https://hitarthpathak.github.io/Free-API",
+    "params": [],
+    "responseExample": {},
+    "docUrl": "https://github.com/hitarthpathak/Free-API",
+    "tags": [
+      "笑话",
+      "趣味",
+      "测试数据"
+    ],
+    "note": "GitHub Pages，CORS支持"
+  },
+  {
+    "id": "nasa-tle-satellite",
+    "name": "NASA TLE 卫星数据",
+    "description": "免费TLE卫星轨道数据查询",
+    "fullDescription": "Celestrak 提供免费TLE（Two-Line Element）卫星轨道数据，涵盖ISS、GPS、Iridium等卫星群。无认证要求，每分钟30次请求限制，适合卫星追踪应用开发。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
+    "baseUrl": "https://celestrak.org/NORAD/elements",
+    "params": [
+      {
+        "name": "GROUP",
+        "type": "string",
+        "required": true,
+        "description": "卫星组名(stations/visual/gps等)",
+        "example": "stations"
+      },
+      {
+        "name": "FORMAT",
+        "type": "string",
+        "required": false,
+        "description": "输出格式(tle/json等)",
+        "example": "json"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://celestrak.org/NORAD/documentation/gp-data-formats.php",
+    "tags": [
+      "卫星",
+      "轨道",
+      "太空",
+      "TLE"
+    ],
+    "note": "Celestrak免费API，无需认证"
   }
 ]

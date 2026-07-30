@@ -1557,16 +1557,20 @@
     },
     {
       "name": "OpenCode Zen",
-      "quota": "提供经过严格测试与优化的免费编码模型（Big Pickle Stealth、Nemotron 3 Super Free、DeepSeek V4 Flash Free 等）；通过 OpenCode 终端/桌面/IDE 工具连接即可使用，无需自备 API Key；免费模型可能使用数据用于模型改进；OpenCode 本身为 MIT 开源项目（GitHub 超109k Stars），支持75+ LLM提供商接入；推荐搭配本地模型实现完全离线使用",
+      "quota": "提供7个经过官方精选的免费模型（Big Pickle、DeepSeek V4 Flash Free、MiMo-V2.5 Free、Laguna S 2.1 Free、Ling-3.0-flash Free、North Mini Code Free、Nemotron 3 Ultra Free），输入输出全部完全免费（$0/1M tokens），目前作为限时免费Beta；通过 OpenCode 终端/桌面/IDE 连接或标准 OpenAI 兼容 API 即可使用，需注册账号并添加账单信息（免费模型不扣费）；免费模型可能使用数据用于模型改进；OpenCode 本身为 MIT 开源（GitHub 109k+ Stars）",
       "cycle": "永久免费层（免费模型长期可用，政策以官方公告为准）",
       "url": "https://opencode.ai",
       "develop": {
         "document_url": "https://opencode.ai/docs/zen/",
-        "base_url": "https://api.opencode.ai/v1",
+        "base_url": "https://opencode.ai/zen/v1",
         "models": [
           "deepseek-v4-flash-free",
-          "nemotron-3-super-free",
-          "big-pickle-stealth"
+          "mimo-v2.5-free",
+          "laguna-s-2.1-free",
+          "ling-3.0-flash-free",
+          "north-mini-code-free",
+          "nemotron-3-ultra-free",
+          "big-pickle"
         ]
       }
     },
