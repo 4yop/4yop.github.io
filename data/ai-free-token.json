@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-30",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -468,44 +468,6 @@
           "accounts/fireworks/models/qwen3-72b-instruct",
           "accounts/fireworks/models/gemma-3-27b-it",
           "deepseek-ai/DeepSeek-V4-Flash"
-        ]
-      }
-    },
-    {
-      "name": "GitHub Models",
-      "quota": "50~150 次请求/天（GPT-4o、GPT-4.1、GPT-5/5.5系列、Grok-3、o3/o4系列、Llama 4、DeepSeek-R1-0528、Claude系列、Phi-4 等多模型；限速根据模型类型浮动；依赖Copilot订阅等级）（重要：GitHub 官方于 2026-07-01 宣布 GitHub Models 将于 2026-07-30 完全退役，含 inference API 与 BYOK 端点，7-16/7-23 有 brownout 演练；建议提前迁移至 Azure AI Foundry）",
-      "cycle": "每日重置（永久免费层；不同模型每日请求次数不同，50-150次/天）",
-      "url": "https://github.com/marketplace/models",
-      "develop": {
-        "document_url": "https://docs.github.com/en/github-models",
-        "base_url": "https://models.github.com/inference",
-        "models": [
-          "claude-sonnet-4",
-          "claude-opus-4-5",
-          "gpt-5",
-          "gpt-5-mini",
-          "gpt-5-nano",
-          "gpt-4o",
-          "gpt-4o-mini",
-          "gpt-4.1",
-          "grok-3",
-          "grok-3-mini",
-          "llama-4-scout",
-          "llama-4-maverick",
-          "llama-3.3-70b-instruct",
-          "deepseek-r1-0528",
-          "o3",
-          "o4-mini",
-          "phi-4",
-          "phi-4-mini-instruct",
-          "phi-4-mini-reasoning",
-          "phi-4-multimodal-instruct",
-          "phi-4-reasoning",
-          "meta-llama-3.1-405b-instruct",
-          "ministral-3b",
-          "mistral-medium-3",
-          "mai-ds-r1",
-          "openai/gpt-5-chat"
         ]
       }
     },
