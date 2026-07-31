@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-07-31",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1269,25 +1269,6 @@
       }
     },
     {
-      "name": "阶跃星辰 (StepFun)",
-      "quota": "Step 3.5 Flash模型完全免费（无累计用量限制，196B MoE总参数/11B激活，256K上下文，专为Agent场景设计，支持function calling/工具调用）；注册即赠送免费额度可用于Step系列全系模型（Step 3.5 Flash、Step 3、Step 2、Step 1、Step 1o系列视觉模型、StepAudio语音模型等）；V0免费层：5 RPM/10 QPM/500万TPM；OpenRouter上Step 3.5 Flash也标注为:free可免费调用；2026年2月发布Step 3.5 Flash开源模型，CNCF项目成员，支持昇腾/沐曦/壁仞/燧原等国产芯片适配",
-      "cycle": "Step 3.5 Flash永久免费；新用户注册赠送免费额度一次性；V0免费层级长期有效",
-      "url": "https://platform.stepfun.com",
-      "develop": {
-        "document_url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
-        "base_url": "https://api.stepfun.com/v1",
-        "models": [
-          "step-3.5-flash",
-          "step-3",
-          "step-2",
-          "step-1",
-          "step-1o-turbo-vision",
-          "step-r1-v-mini",
-          "stepaudio-2.5-realtime"
-        ]
-      }
-    },
-    {
       "name": "阿里云百炼国际版 (Alibaba Cloud Model Studio)",
       "quota": "新用户首次开通即赠每模型 100万 tokens 免费额度（新加坡区域International Edition）；覆盖 Qwen 全系列文本/代码/视觉/推理模型（qwen-plus、qwen-flash、qwen3-vl-plus、qvq-max、qwen3-coder-plus等）；另赠 100张AI生图 + 50秒视频生成 + TTS字符额度；无需信用卡；OpenAI兼容API（DashScope API Key）；⚠️ 必须在新加坡区域激活才享免费额度，北京/弗吉尼亚区域无免费额度",
       "cycle": "激活后90天有效（免费额度从激活时起算，非首次调用）",
@@ -1373,7 +1354,7 @@
     },
     {
       "name": "Agnes AI",
-      "quota": "全球Top 10 AI Lab，2026年6月1日起全模态模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列、支持thinking模式）、Agnes-1.5-Flash（多模态、即问即答、图片解析）；图像模型Agnes-Image-2.1-Flash（纯文生图，中文prompt完全支持）+Agnes-Image-2.0-Flash（图生图/图片编辑/多图合成，Artificial Analysis图像编辑榜单前三）；视频模型Agnes-Video-V2.0（音画同步生成）；免费后首周调用量超1万亿Token；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右",
+      "quota": "全球Top 10 AI Lab，2026年6月1日起全模态模型API无限期免费开放（无需绑卡、无试用期）；文本模型Agnes-2.0-Flash（1M超长上下文、原生Function Calling、Claw-Eval国际榜单前列、支持thinking模式）、Agnes-1.5-Flash（多模态、即问即答、图片解析）；图像模型Agnes-Image-2.1-Flash（纯文生图，中文prompt完全支持）+Agnes-Image-2.0-Flash（图生图/图片编辑/多图合成，Artificial Analysis图像编辑榜单前三）；视频模型Agnes-Video-V2.0（音画同步生成）；免费后首周调用量超1万亿Token；OpenAI兼容协议，改一行base_url即可接入；单实例TPS 200+，高并发800左右；⚠️ 2026-07-29 国内官网 agnes-ai.cn 与国内 API 节点（apihub.agnes-ai.cn/v1）上线，原国际站账户与 API Key 无需更换、仅替换 Endpoint 即可无缝切换；Agnes 2.5 Pro Alpha 在 Artificial Analysis 综合智能榜排名第 9（39分/153模型），2.5 Flash 继续不限期免费",
       "cycle": "无限期免费（2026年6月1日起永久免费）",
       "url": "https://platform.agnes-ai.com",
       "develop": {
@@ -1958,5 +1939,5 @@
       }
     }
   ],
-  "lastUpdateTime": "2026-07-24T01:57:52.353Z"
+  "lastUpdateTime": "2026-07-31T09:28:28.000Z"
 }
