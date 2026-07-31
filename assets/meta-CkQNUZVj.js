@@ -1,0 +1,1 @@
+const t={title:"性成瘾筛查测试(SAST) - 免费在线心理自评量表 | Tools321",meta:[{name:"description",content:"免费在线性成瘾筛查量表SAST专业心理测评工具，基于标准化量表设计用于科学评估个体是否存在性成瘾行为倾向及严重程度等级分类，包含性行为频率自我控制能力等多维度检测题目，帮助了解自身性心理健康状况识别潜在风险因素，完全免费无需注册在线测评，可作为自我觉察的参考。，适配手机与电脑浏览器，操作流畅体验一致。"}],icon:"",category:"health",sort:0,link:[{rel:"canonical",href:"https://tools321.com/health/sast/"}]};export{t as default};

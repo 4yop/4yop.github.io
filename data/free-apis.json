@@ -71,7 +71,7 @@
       "mock数据",
       "多国籍"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "picsum-photos",
@@ -131,7 +131,7 @@
       "高清",
       "灰度"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "jokeapi",
@@ -190,7 +190,7 @@
       "多分类",
       "安全模式"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-meteo",
@@ -272,7 +272,7 @@
       "全球",
       "空气质量"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "github-zen",
@@ -295,7 +295,7 @@
       "灵感",
       "编程"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "github-public-api",
@@ -360,7 +360,7 @@
       "API"
     ],
     "rateLimit": "未认证: 60次/小时 | 认证: 5000次/小时",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "mymemory-translate",
@@ -413,7 +413,7 @@
       "免费",
       "API"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "exchangerate-api",
@@ -450,7 +450,7 @@
       "数据"
     ],
     "note": "免费版更新频率约24小时",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "itunes-rss",
@@ -507,7 +507,7 @@
       "应用",
       "iOS"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "pokeapi",
@@ -552,7 +552,7 @@
       "图鉴",
       "数据"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "chuck-norris-jokes",
@@ -577,7 +577,7 @@
       "Chuck Norris"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "usgs-earthquake",
@@ -639,7 +639,7 @@
       "GeoJSON",
       "科学"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cat-facts",
@@ -671,7 +671,7 @@
       "动物",
       "宠物"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "artic-chicago",
@@ -747,7 +747,7 @@
       "文化"
     ],
     "note": "图片需配合IIIF Image API使用: https://www.artic.edu/image-license",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "ipinfo-io",
@@ -787,7 +787,7 @@
       "ASN",
       "运营商"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "random-dog-api",
@@ -812,7 +812,7 @@
       "图片URL",
       "可爱"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cataas",
@@ -864,7 +864,7 @@
       "滤镜",
       "动物"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "sunrise-sunset",
@@ -926,7 +926,7 @@
       "摄影"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "rick-and-morty",
@@ -987,7 +987,7 @@
       "GraphQL"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "met-museum",
@@ -1039,7 +1039,7 @@
       "图片",
       "文化"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "robohash",
@@ -1083,7 +1083,7 @@
       "唯一",
       "匿名"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "randomfox",
@@ -1107,7 +1107,7 @@
       "随机图片",
       "萌宠"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nager-date",
@@ -1156,7 +1156,7 @@
       "全球",
       "公共假期"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "theaudiodb",
@@ -1203,7 +1203,7 @@
       "封面",
       "歌词"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dog-facts",
@@ -1238,7 +1238,7 @@
       "知识",
       "动物"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "itunes-search",
@@ -1298,7 +1298,7 @@
       "App Store"
     ],
     "note": "默认20次/分钟速率限制",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "api-zipcode",
@@ -1344,7 +1344,7 @@
       "地理位置",
       "查询"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "whodat-whois",
@@ -1374,7 +1374,7 @@
       "RDAP"
     ],
     "note": "开源可自部署",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "uuid-generator",
@@ -1406,7 +1406,7 @@
       "唯一标识",
       "ID"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "hp-characters",
@@ -1437,7 +1437,7 @@
       "影视",
       "学院"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "met-weather",
@@ -1486,7 +1486,7 @@
       "挪威"
     ],
     "note": "需要设置User-Agent标识",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "arul-ip-api",
@@ -1513,7 +1513,7 @@
       "查询",
       "工具"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "thedogapi",
@@ -1564,7 +1564,7 @@
       "品种",
       "动物"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "adviceslip",
@@ -1598,7 +1598,7 @@
       "随机",
       "励志"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "jsonplaceholder",
@@ -1634,7 +1634,7 @@
       "假数据"
     ],
     "note": "无速率限制，支持GET/POST/PUT/DELETE",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-food-facts",
@@ -1644,7 +1644,7 @@
     "method": "GET",
     "description": "全球食品产品数据查询",
     "status": "active",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "tvmaze",
@@ -1654,7 +1654,7 @@
     "method": "GET",
     "description": "电视剧信息查询",
     "status": "active",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cheapshark",
@@ -1680,7 +1680,7 @@
       "折扣",
       "比价"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dnd-5e",
@@ -1709,7 +1709,7 @@
       "RPG",
       "游戏"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "datadragon-lol",
@@ -1738,7 +1738,7 @@
       "LOL",
       "Riot"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "animefacts",
@@ -1761,7 +1761,7 @@
       "趣味"
     ],
     "note": "数据托管在GitHub Pages，访问稳定",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "iconhorse",
@@ -1794,7 +1794,7 @@
       "工具"
     ],
     "note": "URL格式：/icon/{domain}，支持多级降级",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "studio-ghibli",
@@ -1844,7 +1844,7 @@
       "吉卜力"
     ],
     "note": "精美的动漫数据源，适合展示用途",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "catfact-ninja",
@@ -1884,7 +1884,7 @@
       "随机"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "agify-io",
@@ -1925,7 +1925,7 @@
       "AI"
     ],
     "note": "免费有限制（每月1000次），支持CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "genderize-io",
@@ -1966,7 +1966,7 @@
       "AI"
     ],
     "note": "免费有限制（每月1000次），支持CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nationalize-io",
@@ -2008,7 +2008,7 @@
       "AI"
     ],
     "note": "免费有限制（每月1000次），支持CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "themealdb",
@@ -2063,7 +2063,7 @@
       "数据"
     ],
     "note": "免费无限制，支持CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "ice-and-fire",
@@ -2082,7 +2082,7 @@
       "奇幻"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "iseven-api",
@@ -2101,7 +2101,7 @@
       "趣味"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "quickchart",
@@ -2120,7 +2120,7 @@
       "工具"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "citybikes",
@@ -2139,7 +2139,7 @@
       "城市"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "mcu-countdown",
@@ -2158,7 +2158,7 @@
       "娱乐"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "mathjs",
@@ -2187,7 +2187,7 @@
       "tool"
     ],
     "note": "返回纯文本结果",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-notify-iss",
@@ -2216,7 +2216,7 @@
       "天文"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "jobicy",
@@ -2246,7 +2246,7 @@
       "远程工作"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "microlink",
@@ -2282,7 +2282,7 @@
       "链接预览"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "datamuse",
@@ -2328,7 +2328,7 @@
       "词典"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "restful-api-dev",
@@ -2359,7 +2359,7 @@
       "RESTful"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "stapi",
@@ -2381,7 +2381,7 @@
       "spaceship"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nbp-gold",
@@ -2416,7 +2416,7 @@
       "黄金"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "digitalocean-status",
@@ -2445,7 +2445,7 @@
       "uptime"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "the-trivia-api",
@@ -2475,7 +2475,7 @@
       "问答"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "geek-jokes",
@@ -2507,7 +2507,7 @@
       "笑话"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "meme-api",
@@ -2534,7 +2534,7 @@
       "迷因"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "corporate-bs",
@@ -2558,7 +2558,7 @@
       "黑话"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "blockchain-ticker",
@@ -2588,7 +2588,7 @@
       "比特币"
     ],
     "note": "Node.js fetch 测试通过",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "xcolors",
@@ -2610,7 +2610,7 @@
       "tool"
     ],
     "note": "支持 random/all/hex2rgb 等端点",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "bible-api",
@@ -2640,7 +2640,7 @@
       "reference"
     ],
     "note": "支持多译本，直接URL路径查询",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "uapis-weather",
@@ -2676,7 +2676,7 @@
       "城市",
       "预报"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dolar-api",
@@ -2714,7 +2714,7 @@
       "金融",
       "比索"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-app",
@@ -2748,7 +2748,7 @@
       "原型"
     ],
     "note": "无需Key，无限调用。浏览器CORS测试通过 ✅",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "geocoded-me",
@@ -2804,7 +2804,7 @@
       "数据"
     ],
     "note": "无需Key，Cloudflare边缘缓存。浏览器CORS测试通过 ✅",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "terminalfeed",
@@ -2826,7 +2826,7 @@
       "行情",
       "快照"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "aipricing-guru",
@@ -2864,7 +2864,7 @@
       "模型",
       "价格"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "shields-io",
@@ -2922,7 +2922,7 @@
       "SVG"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "isdayoff",
@@ -2973,7 +2973,7 @@
       "排程"
     ],
     "note": "返回值为数字: 0=工作日, 1=休息日, 2=缩短工作日, 4=可能工作日",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-holidays",
@@ -3024,7 +3024,7 @@
       "学校假期"
     ],
     "note": "支持多个国家，中国(CN)数据有限",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "phpnoise",
@@ -3068,7 +3068,7 @@
       "生成"
     ],
     "note": "随机噪点背景图",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "wttr-in",
@@ -3115,7 +3115,7 @@
       "气象",
       "城市"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nhtsa-vehicles",
@@ -3153,7 +3153,7 @@
       "安全",
       "数据"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "crossref-works",
@@ -3206,7 +3206,7 @@
       "DOI",
       "文献"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "hackernews-item",
@@ -3240,7 +3240,7 @@
       "新闻",
       "详情"
     ],
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "flagcdn",
@@ -3265,7 +3265,7 @@
       "图片"
     ],
     "note": "返回国家代码与名称映射",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "kanye-rest",
@@ -3288,7 +3288,7 @@
       "随机"
     ],
     "note": "返回单条 quote 字段",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "placehold-co",
@@ -3319,7 +3319,7 @@
       "开发"
     ],
     "note": "返回PNG图片(非JSON)",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "opentdb",
@@ -3370,7 +3370,7 @@
       "娱乐"
     ],
     "note": "返回题目数组",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dummyjson",
@@ -3410,7 +3410,7 @@
       "JSON"
     ],
     "note": "丰富模拟数据集",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "ui-avatars",
@@ -3448,7 +3448,7 @@
       "生成"
     ],
     "note": "返回JSON含图片URL",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "timeapi-io",
@@ -3485,7 +3485,7 @@
       "工具"
     ],
     "note": "时区时间查询",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "npm-registry",
@@ -3518,7 +3518,7 @@
       "开发"
     ],
     "note": "返回包最新版元数据",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "currency-api-fawaz",
@@ -3539,7 +3539,7 @@
       "CDN"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "brasilapi",
@@ -3568,7 +3568,7 @@
       "公共数据"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "openalex",
@@ -3604,7 +3604,7 @@
       "研究"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "country-is",
@@ -3633,7 +3633,7 @@
       "地理"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "geojs",
@@ -3662,7 +3662,7 @@
       "定位"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "bigdatacloud",
@@ -3705,7 +3705,7 @@
       "定位"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "bng2latlong",
@@ -3741,7 +3741,7 @@
       "BNG"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "viacep",
@@ -3770,7 +3770,7 @@
       "地址"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "color-api",
@@ -3806,7 +3806,7 @@
       "设计"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "pypi-registry",
@@ -3835,7 +3835,7 @@
       "包管理"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cocktaildb",
@@ -3864,7 +3864,7 @@
       "饮品"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "gbif",
@@ -3900,7 +3900,7 @@
       "物种"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "softwium",
@@ -3921,7 +3921,7 @@
       "书籍"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freetogame",
@@ -3957,7 +3957,7 @@
       "列表"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "gamerpower",
@@ -3993,7 +3993,7 @@
       "免费"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "scryfall",
@@ -4029,7 +4029,7 @@
       "MTG"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "mtg",
@@ -4058,7 +4058,7 @@
       "MTG"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nobel-prize",
@@ -4094,7 +4094,7 @@
       "数据"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "genrenator",
@@ -4115,7 +4115,7 @@
       "趣味"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "loremflickr",
@@ -4153,7 +4153,7 @@
       "摄影"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "disease-sh",
@@ -4187,7 +4187,7 @@
       "数据"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "coinlore",
@@ -4224,7 +4224,7 @@
       "金融"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "blockchain-info",
@@ -4250,7 +4250,7 @@
       "行情"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "unshorten",
@@ -4282,7 +4282,7 @@
       "URL"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dog-ceo",
@@ -4303,7 +4303,7 @@
       "随机"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "zippopotam",
@@ -4324,7 +4324,7 @@
       "数据"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nvd",
@@ -4345,7 +4345,7 @@
       "CVE"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "uk-police",
@@ -4366,7 +4366,7 @@
       "英国"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "launch-library",
@@ -4387,7 +4387,7 @@
       "太空"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "usgs-water",
@@ -4408,7 +4408,7 @@
       "监测"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "quotesondesign",
@@ -4429,7 +4429,7 @@
       "灵感"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "weather-gov",
@@ -4450,7 +4450,7 @@
       "官方"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "apis-guru",
@@ -4477,7 +4477,7 @@
       "directory"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "uk-bank-holidays",
@@ -4507,7 +4507,7 @@
       "calendar"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "mbta",
@@ -4538,7 +4538,7 @@
       "transport"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "ergast-f1",
@@ -4573,7 +4573,7 @@
       "sports"
     ],
     "note": "Ergast 原站已迁移至 jolpi.ca",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "wordpress-posts",
@@ -4610,7 +4610,7 @@
       "posts"
     ],
     "note": "示例站点 techcrunch.com，可替换为任意公开 WP 站点",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "irail",
@@ -4649,7 +4649,7 @@
       "transit"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "api-xhus-sentence",
@@ -4681,7 +4681,7 @@
       "sentence"
     ],
     "note": "国内接口",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "uapis-saying",
@@ -4704,7 +4704,7 @@
       "hitokoto"
     ],
     "note": "国内接口，访客积分制",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-er-api",
@@ -4739,7 +4739,7 @@
       "免费"
     ],
     "note": "免Key实时汇率，官方开放端点",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "chess-com",
@@ -4772,7 +4772,7 @@
       "数据"
     ],
     "note": "免费国际象棋数据",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "postcodes-io",
@@ -4809,7 +4809,7 @@
       "英国"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "disney-api",
@@ -4838,7 +4838,7 @@
       "动画"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dummyimage",
@@ -4869,7 +4869,7 @@
       "开发"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "vatcomply",
@@ -4896,7 +4896,7 @@
       "金融"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "nasa-apod",
@@ -4929,7 +4929,7 @@
       "图片"
     ],
     "note": "候选待浏览器验证（使用内置DEMO_KEY）",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "audius",
@@ -4966,7 +4966,7 @@
       "娱乐"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "exchangerate-host",
@@ -5001,7 +5001,7 @@
       "金融"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-meteo-airquality",
@@ -5042,7 +5042,7 @@
       "预报"
     ],
     "note": "候选待浏览器验证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "random-dog-woof",
@@ -5065,7 +5065,7 @@
       "趣味"
     ],
     "note": "2026-07-19 候选收录",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "github-status",
@@ -5091,7 +5091,7 @@
       "监控"
     ],
     "note": "2026-07-19 候选收录",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "vbb-transport",
@@ -5132,7 +5132,7 @@
       "地理"
     ],
     "note": "候选收录",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cdnjs",
@@ -5166,33 +5166,7 @@
       "版本"
     ],
     "note": "候选收录",
-    "lastTested": "2026-07-30T09:38:57.412Z"
-  },
-  {
-    "id": "mempool-space",
-    "name": "Mempool.space",
-    "description": "比特币内存池与链上数据",
-    "fullDescription": "Mempool.space 提供比特币实时内存池、区块、交易与手续费估算等链上数据，无需认证，支持 CORS，适合区块链浏览器类应用。",
-    "category": "data",
-    "method": "GET",
-    "url": "https://mempool.space/api/mempool",
-    "baseUrl": "https://mempool.space/api",
-    "params": [],
-    "responseExample": {
-      "count": 10000,
-      "vsize": 5000000,
-      "total_fee": 0.5
-    },
-    "docUrl": "https://mempool.space/api",
-    "status": "active",
-    "tags": [
-      "比特币",
-      "区块链",
-      "链上数据",
-      "内存池"
-    ],
-    "note": "候选收录",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "openfda",
@@ -5220,7 +5194,7 @@
       "公开数据"
     ],
     "note": "无需认证，中国大陆可访问",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "clinicaltrials",
@@ -5245,7 +5219,7 @@
       "临床试验"
     ],
     "note": "无需认证，中国大陆可访问",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "barter-vg",
@@ -5270,7 +5244,7 @@
       "数字藏品"
     ],
     "note": "无需认证；中国大陆可访问性待测",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "yugioh",
@@ -5297,7 +5271,7 @@
       "动漫"
     ],
     "note": "支持 CORS，无需认证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "sampleapis",
@@ -5323,7 +5297,7 @@
       "测试"
     ],
     "note": "支持 CORS，无需认证",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "dogapi-facts",
@@ -5349,33 +5323,7 @@
       "冷知识"
     ],
     "note": "无需认证；CORS 待测",
-    "lastTested": "2026-07-30T09:38:57.412Z"
-  },
-  {
-    "id": "finalspace",
-    "name": "Final Space API",
-    "description": "Final Space 剧集数据",
-    "fullDescription": "Final Space 动画剧集的免费数据接口，提供角色、剧集、引用等信息，无需认证，适合动漫粉丝类应用。",
-    "category": "entertainment",
-    "method": "GET",
-    "url": "https://finalspaceapi.com/api/v0/episode/",
-    "baseUrl": "https://finalspaceapi.com/api/v0/",
-    "params": [],
-    "responseExample": [
-      {
-        "id": 1,
-        "name": "..."
-      }
-    ],
-    "docUrl": "https://finalspaceapi.com/",
-    "status": "active",
-    "tags": [
-      "动漫",
-      "剧集",
-      "娱乐"
-    ],
-    "note": "无需认证；CORS 待测",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "geocode-xyz",
@@ -5399,7 +5347,7 @@
       "地图"
     ],
     "note": "无需认证；CORS 待测",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "thecatapi",
@@ -5425,7 +5373,7 @@
       "动物"
     ],
     "note": "免费层无需 Key，支持 CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "razorpay-ifsc",
@@ -5460,7 +5408,7 @@
       "IFSC"
     ],
     "note": "免费无需 Key，支持 CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "postalpincode",
@@ -5499,7 +5447,7 @@
       "PIN码"
     ],
     "note": "免费无需 Key，支持 CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "lrclib",
@@ -5533,7 +5481,7 @@
       "元数据"
     ],
     "note": "免费无需 Key，支持 CORS",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "photon-geocode",
@@ -5572,7 +5520,7 @@
       "location"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "pollinations-image",
@@ -5601,7 +5549,7 @@
       "generation"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "pollinations-text",
@@ -5630,7 +5578,7 @@
       "generation"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-meteo-marine",
@@ -5678,7 +5626,7 @@
       "ocean"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "open-meteo-elevation",
@@ -5718,7 +5666,7 @@
       "terrain"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "defillama-protocols",
@@ -5745,7 +5693,7 @@
       "tvl"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "defillama-chains",
@@ -5772,7 +5720,7 @@
       "tvl"
     ],
     "note": "免Key、CORS开放",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "waqi-air-quality",
@@ -5806,7 +5754,7 @@
       "environment"
     ],
     "note": "demo token 可试用，生产需免费注册token",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "rdap",
@@ -5827,7 +5775,7 @@
       "查询"
     ],
     "note": "候选题",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "geo-gouv-fr",
@@ -5856,7 +5804,7 @@
       "开放数据"
     ],
     "note": "候选题",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "xivapi",
@@ -5877,7 +5825,7 @@
       "数据"
     ],
     "note": "候选题",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "opendota",
@@ -5898,7 +5846,7 @@
       "数据"
     ],
     "note": "候选题",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "jsdelivr-api",
@@ -5933,7 +5881,7 @@
       "cdn"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "rubygems-api",
@@ -5966,7 +5914,7 @@
       "package"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "badgen",
@@ -6004,7 +5952,7 @@
       "shield"
     ],
     "note": "返回 image/svg+xml",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "crates-api",
@@ -6039,7 +5987,7 @@
       "package"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "godbolt-api",
@@ -6065,7 +6013,7 @@
       "dev"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "fakestore-api",
@@ -6093,7 +6041,7 @@
       "product"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "anilist",
@@ -6130,7 +6078,7 @@
       "graphql"
     ],
     "note": "POST application/json",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "lyrics-ovh",
@@ -6168,7 +6116,7 @@
       "song"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "thesportsdb",
@@ -6205,7 +6153,7 @@
       "赛事"
     ],
     "note": "免费测试层 v1/json/3 无需 Key",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "overpass",
@@ -6245,7 +6193,7 @@
       "查询"
     ],
     "note": "OpenStreetMap 查询",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T09:53:07.254Z"
   },
   {
     "id": "osrm",
@@ -6282,7 +6230,7 @@
       "导航"
     ],
     "note": "OSRM 演示服务器",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "obis",
@@ -6320,7 +6268,7 @@
       "观测"
     ],
     "note": "IOC-UNESCO 海洋数据",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-products",
@@ -6347,7 +6295,7 @@
       "JSON"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "isitdown",
@@ -6379,7 +6327,7 @@
       "工具"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-ecommerce",
@@ -6400,7 +6348,7 @@
       "JSON"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-jokes",
@@ -6421,7 +6369,7 @@
       "JSON"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-movies",
@@ -6442,7 +6390,7 @@
       "JSON"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "freeapi-users",
@@ -6463,7 +6411,7 @@
       "JSON"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "hitokoto-welyfun",
@@ -6492,7 +6440,7 @@
       "文学"
     ],
     "note": "Cloudflare Pages 部署，国内可访问，CORS 支持",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "jinrishici-poem",
@@ -6522,7 +6470,7 @@
       "文学"
     ],
     "note": "国内服务，适合中文场景",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "unpkg-cdn",
@@ -6561,7 +6509,7 @@
       "包管理"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "rhymebrain",
@@ -6603,7 +6551,7 @@
       "工具"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "blockchair-stats",
@@ -6629,7 +6577,7 @@
       "数据"
     ],
     "note": "",
-    "lastTested": "2026-07-30T09:38:57.412Z"
+    "lastTested": "2026-07-31T10:13:40.571Z"
   },
   {
     "id": "cve-report",
@@ -6658,7 +6606,7 @@
       "NVD"
     ],
     "note": "支持CORS，无需认证",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6688,7 +6636,7 @@
       "国家"
     ],
     "note": "每日更新，CORS支持，无需认证",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6732,7 +6680,7 @@
       "工具"
     ],
     "note": "无需认证，CORS支持",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6769,7 +6717,7 @@
       "DOI"
     ],
     "note": "Crossref Works API 公开可用",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6790,7 +6738,7 @@
       "JSON"
     ],
     "note": "GitHub Pages，CORS支持",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6811,7 +6759,7 @@
       "测试数据"
     ],
     "note": "GitHub Pages，CORS支持",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6832,7 +6780,7 @@
       "测试数据"
     ],
     "note": "GitHub Pages，CORS支持",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6853,7 +6801,7 @@
       "测试数据"
     ],
     "note": "GitHub Pages，CORS支持",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
   },
   {
@@ -6890,7 +6838,470 @@
       "TLE"
     ],
     "note": "Celestrak免费API，无需认证",
-    "lastTested": "2026-07-30T09:38:57.412Z",
+    "lastTested": "2026-07-31T10:13:40.571Z",
     "status": "active"
+  },
+  {
+    "id": "sg-weather",
+    "name": "新加坡实时天气",
+    "description": "新加坡官方天气与环境数据",
+    "fullDescription": "新加坡政府开放数据 API，提供实时气温、湿度、降雨量、紫外线指数等环境监测数据，数据来自新加坡气象局官方站点，权威可靠。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://api.data.gov.sg/v1/environment/air-temperature",
+    "baseUrl": "https://api.data.gov.sg/v1",
+    "params": [
+      {
+        "name": "date_time",
+        "type": "string",
+        "required": false,
+        "description": "指定时间",
+        "example": "2026-07-31T09:00:00"
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "required": false,
+        "description": "指定日期",
+        "example": "2026-07-31"
+      }
+    ],
+    "responseExample": {
+      "metadata": {
+        "stations": []
+      },
+      "items": [
+        {
+          "readings": []
+        }
+      ]
+    },
+    "docUrl": "https://data.gov.sg/dataset/realtime-weather-readings",
+    "status": "active",
+    "tags": [
+      "天气",
+      "新加坡",
+      "气温",
+      "环境"
+    ],
+    "note": "新加坡政府开放数据，免费无需Key",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "opensensemap",
+    "name": "OpenSenseMap 气象站",
+    "description": "全球众包环境传感器数据",
+    "fullDescription": "OpenSenseMap 聚合了全球 DIY 环境传感器（senseBox）上传的实时数据，包括温度、湿度、气压、空气质量等，可查询指定传感器箱的详细测量值。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://api.opensensemap.org/boxes/57000b8745fd40c8196ad04c?format=json",
+    "baseUrl": "https://api.opensensemap.org",
+    "params": [
+      {
+        "name": "boxId",
+        "type": "string",
+        "required": false,
+        "description": "传感器箱ID",
+        "example": "57000b8745fd40c8196ad04c"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": false,
+        "description": "返回格式",
+        "example": "json"
+      }
+    ],
+    "responseExample": {
+      "name": "SenseBox #1",
+      "sensors": []
+    },
+    "docUrl": "https://docs.opensensemap.org/",
+    "status": "active",
+    "tags": [
+      "气象",
+      "传感器",
+      "众包",
+      "环境"
+    ],
+    "note": "免费无需Key",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "dawum",
+    "name": "Dawum 德国民调",
+    "description": "德国选举民意调查数据",
+    "fullDescription": "Dawum 聚合德国主要民意调查机构（Forsa、INSA等）的选举民调数据，提供各政党支持率趋势、调查历史等，是德国政治观察的重要数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.dawum.de/",
+    "baseUrl": "https://api.dawum.de",
+    "params": [],
+    "responseExample": {
+      "Survey": {}
+    },
+    "docUrl": "https://api.dawum.de/",
+    "status": "active",
+    "tags": [
+      "德国",
+      "民调",
+      "选举",
+      "政治"
+    ],
+    "note": "免费无需Key",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "image-charts",
+    "name": "Image-Charts 图表",
+    "description": "URL参数动态生成图表图片",
+    "fullDescription": "Image-Charts 通过 URL 参数即可生成饼图、柱状图、折线图等各类图表图片，无需编写代码，适合在 Markdown、邮件、报告等场景直接嵌入图表。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40",
+    "baseUrl": "https://image-charts.com/chart",
+    "params": [
+      {
+        "name": "cht",
+        "type": "string",
+        "required": true,
+        "description": "图表类型",
+        "example": "p3|bvg|lc"
+      },
+      {
+        "name": "chs",
+        "type": "string",
+        "required": true,
+        "description": "图表尺寸",
+        "example": "700x100"
+      },
+      {
+        "name": "chd",
+        "type": "string",
+        "required": true,
+        "description": "图表数据",
+        "example": "t:60,40"
+      }
+    ],
+    "responseExample": {},
+    "docUrl": "https://image-charts.com/",
+    "status": "active",
+    "tags": [
+      "图表",
+      "生成",
+      "图片"
+    ],
+    "note": "免费版有水印",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "currency-exchangetool",
+    "name": "Currency Exchange Tool",
+    "description": "实时汇率转换API，支持100+种货币",
+    "fullDescription": "免费无Key的实时汇率转换接口，支持100多种货币，每日更新汇率。浏览器直接 fetch 即可调用，无需注册、无请求次数硬限制（100次/分钟）。返回包含转换金额、汇率、24小时涨跌幅，适合做汇率换算小工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.currencyexchangetool.com/api/v1/convert?amount=100&from=USD&to=EUR",
+    "baseUrl": "https://www.currencyexchangetool.com/api/v1",
+    "params": [
+      {
+        "name": "amount",
+        "type": "number",
+        "required": true,
+        "description": "转换金额",
+        "example": "100"
+      },
+      {
+        "name": "from",
+        "type": "string",
+        "required": true,
+        "description": "源货币代码",
+        "example": "USD"
+      },
+      {
+        "name": "to",
+        "type": "string",
+        "required": true,
+        "description": "目标货币代码",
+        "example": "EUR"
+      }
+    ],
+    "responseExample": {
+      "amount": 100,
+      "from": "USD",
+      "to": "EUR",
+      "rate": 0.92,
+      "result": 92,
+      "updatedAt": "2026-07-31T00:00:00Z"
+    },
+    "docUrl": "https://www.currencyexchangetool.com/api-docs",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "货币转换",
+      "外汇",
+      "无Key"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "mlb-stats",
+    "name": "MLB Stats API",
+    "description": "美国职棒大联盟官方数据接口",
+    "fullDescription": "MLB 官方开放数据接口，提供球队、球员、赛程、比分、技术统计等完整棒球数据。完全免费、无需注册和 Key，浏览器 fetch 直接可用。覆盖 30 支大联盟球队及下属小联盟，是体育类应用的高质量数据源。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://statsapi.mlb.com/api/v1/teams?sportId=1",
+    "baseUrl": "https://statsapi.mlb.com/api/v1",
+    "params": [
+      {
+        "name": "sportId",
+        "type": "number",
+        "required": false,
+        "description": "联赛ID，1为大联盟",
+        "example": "1"
+      }
+    ],
+    "responseExample": {
+      "teams": [
+        {
+          "id": 108,
+          "name": "Los Angeles Angels",
+          "abbreviation": "LAA",
+          "league": {
+            "id": 103,
+            "name": "American League"
+          }
+        }
+      ]
+    },
+    "docUrl": "https://statsapi.mlb.com/docs/",
+    "status": "active",
+    "tags": [
+      "体育",
+      "棒球",
+      "MLB",
+      "赛事数据"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "openf1",
+    "name": "OpenF1 API",
+    "description": "F1赛车实时与历史数据接口",
+    "fullDescription": "OpenF1 提供免费无Key的 F1 一级方程式赛车数据，包括车手、车队、赛道、比赛圈速、位置、遥测等历史与实时信息。支持按 session 过滤，浏览器直接 fetch 即可调用，是赛车运动数据的最佳免费来源之一。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.openf1.org/v1/car_data?driver_number=1&session_key=latest",
+    "baseUrl": "https://api.openf1.org/v1",
+    "params": [
+      {
+        "name": "driver_number",
+        "type": "number",
+        "required": false,
+        "description": "车手号码",
+        "example": "1"
+      },
+      {
+        "name": "session_key",
+        "type": "string",
+        "required": false,
+        "description": "比赛场次，latest为最新",
+        "example": "latest"
+      }
+    ],
+    "responseExample": [
+      {
+        "driver_number": 1,
+        "session_key": 9565,
+        "date": "2026-03-07T12:00:00Z",
+        "speed": 312,
+        "rpm": 11800
+      }
+    ],
+    "docUrl": "https://openf1.org/",
+    "status": "active",
+    "tags": [
+      "F1",
+      "赛车",
+      "体育",
+      "实时数据"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "blockstream-esplora",
+    "name": "Blockstream Esplora",
+    "description": "比特币区块链区块与交易查询",
+    "fullDescription": "Blockstream 的 Esplora 开源比特币区块链浏览器 API，提供最新区块高度、区块详情、交易信息、地址余额等查询。完全免费、无 Key 限制、支持 CORS，浏览器前端可直接调用，适合做比特币区块数据展示工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://blockstream.info/api/blocks/tip/height",
+    "baseUrl": "https://blockstream.info/api",
+    "params": [
+      {
+        "name": "高度查询",
+        "type": "string",
+        "required": false,
+        "description": "如 /block-height/800000",
+        "example": "800000"
+      }
+    ],
+    "responseExample": {
+      "height": 850000
+    },
+    "docUrl": "https://github.com/Blockstream/esplora",
+    "status": "active",
+    "tags": [
+      "比特币",
+      "区块链",
+      "区块浏览器",
+      "加密"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "open-meteo-flood",
+    "name": "Open-Meteo 洪水预报",
+    "description": "全球洪水预报API，提供河流水位预测",
+    "fullDescription": "Open-Meteo 官方洪水预报接口，基于全球水文模型，提供河流流量、水位与洪水风险预测，支持任意经纬度查询。免费无Key、完全支持 CORS、无使用限制，数据来自 GloFAS 模型，适合洪水预警与水文展示类应用。",
+    "category": "weather",
+    "method": "GET",
+    "url": "https://flood-api.open-meteo.com/v1/flood?latitude=52.52&longitude=13.41&daily=river_discharge",
+    "baseUrl": "https://flood-api.open-meteo.com/v1",
+    "params": [
+      {
+        "name": "latitude",
+        "type": "number",
+        "required": true,
+        "description": "纬度",
+        "example": "52.52"
+      },
+      {
+        "name": "longitude",
+        "type": "number",
+        "required": true,
+        "description": "经度",
+        "example": "13.41"
+      },
+      {
+        "name": "daily",
+        "type": "string",
+        "required": false,
+        "description": "返回字段，如 river_discharge",
+        "example": "river_discharge"
+      }
+    ],
+    "responseExample": {
+      "latitude": 52.52,
+      "longitude": 13.41,
+      "daily": {
+        "time": [
+          "2026-07-31",
+          "2026-08-01"
+        ],
+        "river_discharge": [
+          120.5,
+          118.2
+        ]
+      }
+    },
+    "docUrl": "https://open-meteo.com/en/docs/flood-api",
+    "status": "active",
+    "tags": [
+      "洪水",
+      "水文",
+      "气象",
+      "灾害预警"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "bank-of-canada",
+    "name": "加拿大央行汇率",
+    "description": "加拿大央行官方汇率与金融数据",
+    "fullDescription": "加拿大央行 Valet 开放数据接口，提供官方每日汇率、利率、黄金价格等金融数据，支持查询历史序列。完全免费、无需注册和 Key、支持 CORS，是政府级权威金融数据源，适合汇率与利率展示类工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json",
+    "baseUrl": "https://www.bankofcanada.ca/valet",
+    "params": [
+      {
+        "name": "series",
+        "type": "string",
+        "required": true,
+        "description": "数据序列，如 FXUSDCAD",
+        "example": "FXUSDCAD"
+      }
+    ],
+    "responseExample": {
+      "seriesDetail": {
+        "FXUSDCAD": {
+          "label": "USD/CAD"
+        }
+      },
+      "observations": [
+        {
+          "d": "2026-07-30",
+          "FXUSDCAD": {
+            "v": "1.3602"
+          }
+        }
+      ]
+    },
+    "docUrl": "https://www.bankofcanada.ca/valet/docs",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "金融",
+      "央行",
+      "官方数据"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
+  },
+  {
+    "id": "brazil-camara",
+    "name": "巴西众议院开放数据",
+    "description": "巴西众议院议员与立法数据接口",
+    "fullDescription": "巴西众议院官方开放数据 API，提供议员信息、法案、投票记录、会议议程等立法数据。完全免费、无需 Key、支持 CORS。是政府开放数据的优秀范例，适合政治数据与议员信息类应用。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?itens=2",
+    "baseUrl": "https://dadosabertos.camara.leg.br/api/v2",
+    "params": [
+      {
+        "name": "itens",
+        "type": "number",
+        "required": false,
+        "description": "每页条数",
+        "example": "2"
+      }
+    ],
+    "responseExample": {
+      "dados": [
+        {
+          "id": 204554,
+          "nome": "Fulano de Tal",
+          "siglaPartido": "PT",
+          "siglaUf": "SP"
+        }
+      ]
+    },
+    "docUrl": "https://dadosabertos.camara.leg.br/swagger/api.html",
+    "status": "active",
+    "tags": [
+      "政府",
+      "开放数据",
+      "议员",
+      "立法"
+    ],
+    "note": "2026-07-31 WebSearch 候选",
+    "lastTested": "2026-07-31T10:13:40.571Z"
   }
 ]

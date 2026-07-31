@@ -3927,5 +3927,20 @@
     ],
     "website": "https://catpaw.meituan.com/",
     "source": "美团技术博客 tech.meituan.com 2026-07-28《美团正式发布 CatPaw:全场景 AI Agent,从个人提效到企业智能化》+ aihub.cn 产品页 + IT之家 2026-07-27《美团全场景 AI Agent 平台 CatPaw 发布,已在内部大规模落地》+ 华尔街见闻/南方都市报/腾讯新闻等多家媒体报道"
+  },
+  {
+    "id": 451,
+    "name": "LakeMind",
+    "developer": "tsingwin 开源社区（GitHub: tsingliuwin；中国独立开发者）",
+    "releaseTime": "2026（v0.5.5 于 2026-07-12 发布；420 次提交、14 个 Release，2026-07 持续活跃迭代）",
+    "deployment": "开源（AGPL-3.0），Tauri 2.0 + Rust 原生桌面壳（Windows/macOS/Linux，安装包数十 MB），本地优先运行，数据不出本机",
+    "features": [
+      "本地优先零 ETL：DuckDB 进程内 OLAP 引擎联邦执行，桌面文件就地计算、远程大表源端下推、跨源 JOIN 瞬间完成，大模型仅外发 Schema 与少量样本，原始数据绝不上网；SQLite 统一索引工作区/任务/源表/配置",
+      "自然语言驱动 Agent 自主分析：Rig SDK 流式 ReAct 循环 + 14 类数据工具，自动表结构探查与多表关联优化，自主编写并安全执行 DuckDB SQL，毫秒级本地『试错-纠偏』自愈环，轻量模型（如 deepseek-v4-flash）即可胜任",
+      "业务记忆与可演化准则：借鉴谷歌 Open Knowledge Format（OKF）把 Schema、主外键 JOIN 关系网与指标定义打包随数据流转，分享即继承业务记忆；首创『宪法总则-阶段分则-行业分则』层级分析准则库随运行动态检索注入并自主演化",
+      "智能可视化与成果落盘：数据敏感的呈现决策脑自动选择纯表格或 ECharts 智能图表；Agent 自主物化落盘 t_/v_ 资产表；基于 TanStack 的百万行虚拟化表格 60fps 渲染，支持 Excel/CSV/Parquet 与关系库多源混查"
+    ],
+    "website": "https://lakemind.xi-n.com",
+    "source": "CSDN tsingwin《为什么我做了一个反直觉的 Data Agent——Lakemind 的设计哲学与技术架构》（2026-07）+ GitHub tsingliuwin/lakemind + 官网 lakemind.xi-n.com 核验（Bilibili 演示视频）"
   }
 ]
