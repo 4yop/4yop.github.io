@@ -5,9 +5,16 @@
     <link>https://tools321.com</link>
     <description>Tools321 在线工具箱，持续新增免费实用的计时器、3D地球仪、图片处理、开发工具等，全部浏览器本地处理，无需注册。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Jul 2026 17:04:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 23:29:58 GMT</lastBuildDate>
     <generator>Tools321 RSS Generator</generator>
     <atom:link href="https://tools321.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>离线二维码传输</title>
+      <link>https://tools321.com/img/qr-transfer/</link>
+      <description>离线二维码传输 - Tools321 在线工具箱</description>
+      <pubDate>Tue, 04 Aug 2026 22:39:16 GMT</pubDate>
+      <guid isPermaLink="true">https://tools321.com/img/qr-transfer/</guid>
+    </item>
     <item>
       <title>字幕截图拼接</title>
       <link>https://tools321.com/img/subtitle-splicer/</link>
@@ -350,13 +357,6 @@
       <description>石头剪刀布 - Tools321 在线工具箱</description>
       <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
       <guid isPermaLink="true">https://tools321.com/random/rock-paper-scissors/</guid>
-    </item>
-    <item>
-      <title>随机配对</title>
-      <link>https://tools321.com/random/random-pair/</link>
-      <description>随机配对 - Tools321 在线工具箱</description>
-      <pubDate>Mon, 29 Jun 2026 04:00:51 GMT</pubDate>
-      <guid isPermaLink="true">https://tools321.com/random/random-pair/</guid>
     </item>
   </channel>
 </rss>

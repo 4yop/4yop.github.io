@@ -3942,5 +3942,91 @@
     ],
     "website": "https://lakemind.xi-n.com",
     "source": "CSDN tsingwin《为什么我做了一个反直觉的 Data Agent——Lakemind 的设计哲学与技术架构》（2026-07）+ GitHub tsingliuwin/lakemind + 官网 lakemind.xi-n.com 核验（Bilibili 演示视频）"
+  },
+  {
+    "id": 452,
+    "name": "WorkAny",
+    "developer": "idoubi（艾逗笔，中国广州独立开发者，前腾讯后台开发工程师，GitHub: idoubi）",
+    "releaseTime": "2026.01.23（X 上开源发布）；0.1.16 正式版于 2026-07-21 更新",
+    "deployment": "开源（GitHub: workany-ai/workany，1.5k+ Stars）/ 本地优先桌面 Agent：Tauri 跨平台原生应用（Windows/macOS/Linux 三端安装包，亦支持源码编译），以 Claude Code 为 Agent 运行时、Codex CLI 驱动隔离沙箱执行，数据与任务全部在本机处理（SQLite 持久化）",
+    "features": [
+      "自然语言驱动办公任务：一句话完成智能整理文件夹、生成网站（React+Tailwind 实时预览）、撰写文档、制作含公式 Excel 表格与演示文稿，边生成边预览、一键导出 .pptx/.xlsx/.html 等标准格式",
+      "沙箱安全执行与 MCP 集成：所有生成代码在 Codex CLI 驱动的隔离沙箱中运行（自动限制网络/文件系统/进程权限），通过 Model Context Protocol 连接外部工具与服务，支持自定义/导入/共享 Agent 技能构建自动化流水线",
+      "多模型服务商热切换：兼容 OpenRouter、Anthropic、OpenAI、火山引擎、Kimi、智谱等主流与国产模型后端，可复用本地 Claude Code 订阅避免重复付费，支持多任务并行处理；另有 $24.9/月的云端 Bot 托管版（Telegram/飞书渠道）"
+    ],
+    "website": "https://workany.ai",
+    "source": "搜索结果核验：mydown.yesky.com WorkAny 0.1.16 官方正式版收录页（2026-07-21）+ idoubi.ai/about 个人站 + GitHub workany-ai/workany"
+  },
+  {
+    "id": 453,
+    "name": "Proma",
+    "developer": "ErlichLiu（Erlich Liu）开源社区（GitHub: proma-ai/Proma + ErlichLiu/Proma，官网 proma.cool）",
+    "releaseTime": "2026.01.26（init 开源首发）；2026.07.31 发布 v0.16.3，2026-08-01 持续活跃（1592 次提交）",
+    "deployment": "开源（AGPL-3.0 + 商业双授权），Electron 39 跨平台桌面应用（macOS Apple Silicon/Intel + Windows 安装包），本地优先（会话/工作区/配置/Skills 存 ~/.proma/ JSON/JSONL，API Key 经 safeStorage 加密）",
+    "features": [
+      "Chat + Agent 双模式：多模型对话/附件解析/Markdown/Mermaid/KaTeX 渲染，内置 Claude Agent SDK 与 Pi Agent SDK 两套可切换运行时，支持工作区隔离/权限模式/文件操作/长任务流式输出/计划确认与用户追问",
+      "Skills 与 MCP：每个项目独立配置 Skills 与 MCP Server（stdio/HTTP），复杂任务可拆分为协作子 Agent/Task 并在消息流中展示调用过程与结果，沉淀可复用工作流",
+      "远程机器人：飞书/Lark 机器人桥接 + 钉钉/微信桥接入口，手机或群聊触发本机 Agent 工作流；共享记忆 + 联网搜索 + 豆包流式语音输入（Ctrl+` 全局触发）",
+      "多模型渠道热切换：Anthropic/OpenAI/Google/DeepSeek/Kimi（Coding Plan 官方白名单）/智谱/MiniMax/小米 MiMo/通义千问/豆包等国内外供应商，支持 ChatGPT 订阅 OAuth 复用"
+    ],
+    "website": "https://proma.cool/",
+    "source": "WebSearch 2026-08-02 + GitHub proma-ai/Proma 核验（中文 README/中文提交/微信商务/飞书钉钉微信桥接/豆包语音等确认中国开发者主导）"
+  },
+  {
+    "id": 454,
+    "name": "灵犀专业版（金山办公）",
+    "developer": "金山办公（Kingsoft Office，WPS 母公司）",
+    "releaseTime": "2026.07.15（独立 AI 原生办公 Agent 发布；2026-07-24 量子位实测，2026-07-31 ChinaJoy 首次亮相）",
+    "deployment": "闭源（独立 PC 端应用 + 网页版，官网 lingxi.cn 提供下载，内测邀请码制；另有 WPS 内置版『灵犀』限免）",
+    "features": [
+      "四层记忆架构（个人记忆/专家记忆/团队记忆/自进化），越用越懂用户偏好与项目上下文；文档空间直连 WPS 云文档，免去反复上传下载",
+      "基于 WPS 三十年文档技术沉淀，原生级深度处理格式排版/表格公式/PPT 动效，围绕项目目标端到端交付可继续编辑的 Word/Excel/PPT 成果",
+      "内置同花顺/国家统计局/arXiv 等权威数据源，金融/法律/学术领域结论有据可依；支持将重复工作流封装为自定义技能持续扩展能力",
+      "左侧项目栏按项目组织对话/参考资料/生成文件，区分已确认要求与临时尝试；支持定时任务/频道等入口，与 WPS Comate 互补覆盖个人与组织办公"
+    ],
+    "website": "https://lingxi.cn/",
+    "source": "WebSearch 2026-08-02（科技日报 2026-08-01 ChinaJoy 报道 + WPS 官方论坛 2026-07-15 发布帖 + 量子位 2026-07-24 实测 + lingxi.wps.cn/lingxi.cn 官网）；注意与已收录 id 423「灵犀（lingxi）」MT-xjr2 开源项目为不同产品"
+  },
+  {
+    "id": 455,
+    "name": "Kila",
+    "developer": "LHXHL 开源社区（GitHub: LHXHL，与已收录 MyAgents/hAcKlyc 开发者社区关联）",
+    "releaseTime": "2026（Kila-Public 仓库公开；2026-07-28 最新提交，17 commits，持续迭代）",
+    "deployment": "开源（Electron + React + Pi runtime 桌面工作台，Bun 工具链），本地优先（会话/配置/项目数据存 ~/.kila/ JSON/JSONL，无数据库）",
+    "features": [
+      "本地优先统一工作区：Session 绑定项目目录，对话/文件浏览/编辑/预览在同一界面完成，长期 Session 保留项目上下文持续推进复杂任务",
+      "Pi Agent Runtime（0.82.1 canonical）：流式输出/工具调用/上下文压缩/任务中止与恢复，多模型渠道支持 Anthropic/OpenAI/Google/Ollama 及兼容端点",
+      "按项目配置独立的 MCP/Skills/权限，适用于软件开发/内容创作/资料整理/数据处理/日常自动化；桌面端 + CLI bridge + 飞书桥接多入口协作"
+    ],
+    "website": "https://github.com/LHXHL/Kila-Public",
+    "source": "WebSearch 2026-08-02 + GitHub LHXHL/Kila-Public 核验（中文 README + 飞书桥接 + 与 MyAgents hAcKlyc 开发者社区关联确认国产）"
+  },
+  {
+    "id": 456,
+    "name": "Kun",
+    "developer": "XingYu-Zhong（钟星宇，中国独立开发者；GitHub: KunAgent/Kun，前 DeepSeek GUI 作者）",
+    "releaseTime": "2026.06（作为独立多模型 AI Agent 工作台产品线发布；v0.2.34 于 2026-08-03，2026-08-02 GitHub 热点登顶，5.6k+ Stars）",
+    "deployment": "开源（Electron 桌面 GUI + 终端 TUI 共享同一 kun serve 本地运行时，TypeScript），本地优先（会话/日志/偏好/运行时配置默认存本机）",
+    "features": [
+      "需求先行工作流：需求澄清 → Design 设计稿/交互原型 → /plan 计划 → Agent 编码 → 变更审查与验收，Code/Design/Write 三大桌面模式 + 终端 TUI 双入口共享线程与后台任务",
+      "模型控制台：订阅登录（ChatGPT/Codex/Claude/Gemini/Cursor/Grok）+ API（DeepSeek/MiMo/MiniMax/Kimi/GLM/Qwen 国产模型优先）统一管理，Agent Profile 按角色路由模型，Agent Graph 任务图编排（Lead 派发/监督/验收）",
+      "远程与自动化：飞书/Lark/微信/Telegram 接入 + webhook/relay + 定时任务，MCP/Skills 扩展，缓存优先高 Token ROI 本地运行时（渐进式工具发现/上下文压缩）"
+    ],
+    "website": "https://www.kun-agent.com/",
+    "source": "GitHub AI 日报热点（2026-08-02）/ gittrend.io / kun-agent.com 官网（2026-08-03）"
+  },
+  {
+    "id": 457,
+    "name": "PiDeck",
+    "developer": "ayuayue 开源社区（GitHub: ayuayue/PiDeck，中文开发者，LinuxDO 友链）",
+    "releaseTime": "2026.05（2026-05-31 初始提交；v0.6.7 于 2026-07-29，2026-08-02 持续活跃，941 commits）",
+    "deployment": "开源（Electron + TypeScript + React 桌面工作台，MIT 协议），本地优先（多项目工作区本地管理 pi Agent 会话）",
+    "features": [
+      "多项目工作区统一管理多个 pi 编码 Agent 会话（一个 Agent Tab = 一个 pi --mode rpc 进程，项目级 cwd 隔离），支持导入 Codex/Claude 本地会话统一浏览与恢复",
+      "可视化配置管理（models.json/auth.json/settings.json 图形化编辑）、Git 集成（分支切换/状态标识）、内嵌 pty 终端、浏览器预览、Plan 模式、会话 Fork/导出 HTML",
+      "Prompt/Skill 商店与内置 XuePrompt 中文提示词库（4000+ 条）、模型配置热刷新、WSL 环境隔离支持、中英双语文档"
+    ],
+    "website": "https://github.com/ayuayue/PiDeck",
+    "source": "GitHub 搜索（2026-08-03）/ 仓库 README.zh-CN（2026-08-02 最新提交）"
   }
 ]

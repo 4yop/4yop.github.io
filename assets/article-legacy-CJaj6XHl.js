@@ -1,1 +1,0 @@
-System.register(["./index-legacy-Bqiz6fhA.js"],function(e,t){"use strict";var n,r,c;return{setters:[function(e){n=e._,r=e.o,c=e.c}],execute:function(){var t={class:"bomb-countdown-article"};e("default",n({},[["render",function(e,n){return r(),c("div",t)}]]))}}});

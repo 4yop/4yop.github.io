@@ -1,0 +1,1 @@
+System.register(["./SunriseSunsetTool-legacy-CpONVtcS.js","./index-legacy-1UXL1lXu.js"],function(e,n){"use strict";var t,u,r,i;return{setters:[function(e){t=e.default},function(e){u=e.G,r=e.V,i=e.o}],execute:function(){e("default",u({__name:"index",setup:function(e){return function(e,n){return i(),r(t)}}}))}}});
