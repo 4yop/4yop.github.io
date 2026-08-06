@@ -4028,5 +4028,20 @@
     ],
     "website": "https://github.com/ayuayue/PiDeck",
     "source": "GitHub 搜索（2026-08-03）/ 仓库 README.zh-CN（2026-08-02 最新提交）"
+  },
+  {
+    "id": 458,
+    "name": "知远智能体（RongxinAI）",
+    "developer": "北京融信智远（Beijing Rongxin Zhiyuan；GitHub: rongxinzy/RongxinAI，活跃维护者 z189yis）",
+    "releaseTime": "2026.02.18（初始开源发布）；2026.08.05 发布 build.8（Windows x64 / macOS Apple Silicon / Ubuntu Linux x64 三端）",
+    "deployment": "开源（AGPL-3.0，Electron 40 + React 19 桌面应用，完全自研技术栈，3683+ commits），本地优先（本地 SQLite 存储会话/配置/任务数据，支持云端模型 API 与本地 GGUF 推理双模式）",
+    "features": [
+      "多步骤 Agent 任务执行（文件读写/Shell 命令/浏览器自动化/文档处理），敏感操作逐项审批，工具调用状态与进度实时流式展示",
+      "自研 GGUF 本地推理引擎（llama.cpp 运行时），模型市场一键从 ModelScope 搜索安装本地模型，支持上下文长度/GPU offload/线程/批大小等硬件调优",
+      "40+ 内置技能 + MCP 官方连接市场（百度网盘/飞书/Notion/金数据等 OAuth/Token 连接），支持把个人经验封装为可复用技能",
+      "自然语言或 GUI 创建定时任务，任务结果经微信/企业微信/钉钉/飞书/QQ/邮件多渠道自动送达"
+    ],
+    "website": "https://www.rongxzyai.com/",
+    "source": "官网（rongxzyai.com）+ GitHub 仓库核验（2026-08-06）"
   }
 ]

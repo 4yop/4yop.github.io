@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31",
+  "updatedAt": "2026-08-06",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1937,7 +1937,25 @@
           "Llama-4-Scout-17B-16E-Instruct"
         ]
       }
+    },
+    {
+      "name": "阶跃星辰 StepFun",
+      "quota": "Step Plan 免费试用最高 120 天（限免截止 2026-08-24，当前未过期）；OpenAI / Anthropic 双兼容 API；step-3.7-flash 等模型免费调用，无需信用卡",
+      "cycle": "限免活动，截止 2026-08-24",
+      "url": "https://platform.stepfun.com/",
+      "develop": {
+        "document_url": "https://platform.stepfun.com/docs/zh/stepplan/quick-start",
+        "base_url": "https://api.stepfun.com/v1",
+        "models": [
+          "step-3.7-flash",
+          "step-3.5-flash",
+          "step-3",
+          "step-2",
+          "step-2-mini",
+          "step-1o-turbo"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-07-31T09:28:28.000Z"
+  "lastUpdateTime": "2026-08-06T21:45:00.000Z"
 }
