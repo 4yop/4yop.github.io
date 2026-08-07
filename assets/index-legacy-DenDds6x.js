@@ -1,0 +1,1 @@
+System.register(["./SunriseSunsetTool-legacy-79YE924L.js","./index-legacy-Bx48t3jQ.js"],function(e,n){"use strict";var t,u,r,i;return{setters:[function(e){t=e.default},function(e){u=e.G,r=e.V,i=e.o}],execute:function(){e("default",u({__name:"index",setup:function(e){return function(e,n){return i(),r(t)}}}))}}});
