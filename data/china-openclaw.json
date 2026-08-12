@@ -4059,5 +4059,106 @@
     ],
     "website": "https://newton.1688.com",
     "source": "媒体报道（证券之星/网易/新品略财经 2026-08-04~08-07）+ 阿里牛顿用户服务协议（terms.alicdn.com，2026-05-08）"
+  },
+  {
+    "id": 460,
+    "name": "Microi.OpenClaw 吾码小龙虾",
+    "developer": "itdos（Microi 吾码；Gitee: microi-net；GitHub: itdos）",
+    "releaseTime": "2026（基于 Electron + Vue 3 构建；Gitee/GitHub 开源，2026 年持续活跃，支持 Windows / macOS / Linux 全平台）",
+    "deployment": "开源桌面 AI 智能体管理平台（基于 Electron + Vue 3 构建，支持 Windows / macOS / Linux 全平台）；OpenClaw 一站式本地桌面管理平台，内置国内加速镜像、一键部署 Node.js + OpenClaw + Git 全套环境，完全本地运行，对话数据不经任何第三方服务器",
+    "features": [
+      "一键部署：全自动安装 Node.js 22 便携版 + OpenClaw CLI + MinGit，全程国内加速镜像，3 分钟完成全套部署，零门槛搭建属于自己的私有 AI 智能助手",
+      "可视化桌面工作台：AI 对话（流式 SSE）、多模型一键模板（DeepSeek-V3 / 通义千问 / MiniMax / Ollama / GPT-4o / Claude 等）、服务启停与资源监控、AI 模型配置、可视化插件市场、定时任务、技能管理、飞书消息平台一体化 GUI",
+      "浏览器自动化与远程管控：headless/headed 模式自主浏览网页（CSDN 发文、签到等）；可接入 Microi 吾码低代码平台实现云端统一管理多节点",
+      "本地优先与可审计：完全本地运行，对话数据不经第三方服务器；插件市场支持微信机器人 / 语音通话等一键安装（npm + CDN 双源）"
+    ],
+    "website": "https://github.com/itdos/microi.openclaw",
+    "source": "GitHub itdos/microi.openclaw + Gitee microi-net/microi.openclaw（2026-08-08 检索）"
+  },
+  {
+    "id": 461,
+    "name": "AtomCode",
+    "developer": "AtomGit 开源社区（AtomGit；研发负责人 李超）",
+    "releaseTime": "2026（纯 Rust 自研，历时 29 天 / 1096 次提交 / 3.7 万行 Rust 代码；WAIC 2026 正式开源；同步推出桌面轻量版 AtomCode Air）",
+    "deployment": "开源 AI 编码智能体；终端专业版（纯 Rust 构建二进制包，适配 Linux / macOS / Windows / 鸿蒙 PC）+ 桌面轻量版 AtomCode Air（可视化 GUI 工具，零代码门槛）；MIT 协议完全开源，深度对接 AtomGit 生态并内置免费 Token",
+    "features": [
+      "全自主编码闭环：自然语言需求 → 自主规划 → 读取仓库代码 → 多文件编辑 → 执行命令自测 → 迭代修复，内置 21 个专业代码工具 + 17 条斜杠指令、安全回滚、插件扩展",
+      "国产大模型深度优化：原生支持 DeepSeek / Qwen / GLM 系列，兼容 OpenAI / Claude / Ollama 本地私有模型；通过 AtomGit 账号 OAuth 一键登录领取免费 Token 额度（每日滚动刷新），解决海外工具网络不稳定与调用成本痛点",
+      "AtomCode Air 桌面轻量版：面向产品 / 学生 / 无代码从业者，自然语言描述需求即可对话式生成 APP / 小游戏 / 小工具，复用核心推理引擎，支持实时预览、多端打包一键分享，3 分钟产出可用程序原型",
+      "IDE 深度集成与三端互通：VS Code 插件 + 终端 TUI + 独立客户端三端互通；Monaco 编辑器、LSP 智能感知、集成终端、Git、全局搜索、命令面板一应俱全，可随时接管"
+    ],
+    "website": "https://atomgit.com/atomgit_atomcode",
+    "source": "AtomGit 官方介绍 + CSDN/xxmr.cn 实测（2026-08-08 检索）；WAIC 2026 发布"
+  },
+  {
+    "id": 462,
+    "name": "easiest-claw",
+    "developer": "csxb77 开源社区（GitHub: csxb77）",
+    "releaseTime": "2026（基于 Electron 构建的 OpenClaw 桌面端 GUI，持续迭代中；2026-08 检索时最新提交 c0a8704）",
+    "deployment": "开源桌面 AI 智能体客户端（基于 Electron 构建，为 OpenClaw AI 智能体网关提供图形化操作界面）；内置完整 OpenClaw 运行时，安装即用，无需预装 Node.js 或在终端执行命令，支持 Windows（.exe）/ macOS（.dmg）",
+    "features": [
+      "开箱即用零依赖：内置 Node.js 运行时与 OpenClaw 网关，首次启动自动解压，无需系统预装 Node.js；任何人都可通过 .exe 或 .dmg 启动属于自己的 AI 虚拟团队",
+      "AI 虚拟团队与多智能体：创建和管理 AI 智能体舰队，支持单独私聊（DM）或创建多智能体协作的群组会话（团队模式开发中）",
+      "定时任务与多模型：类 Cron 周期性任务调度自动触发智能体执行；界面直接配置 OpenAI / Anthropic / DeepSeek 及任意兼容 OpenAI 的模型供应商；拖拽图片 / 文件发送至对话，流式逐 token 响应",
+      "应用内更新与外部网关：应用内检查并升级 OpenClaw 网关无需重装；可连接到本地或远程运行的 OpenClaw 实例"
+    ],
+    "website": "https://github.com/csxb77/easiest-claw",
+    "source": "GitHub csxb77/easiest-claw（2026-08-08 检索）"
+  },
+  {
+    "id": 463,
+    "name": "Tasi Harness",
+    "developer": "TasiTech 开源社区（GitHub: TasiTech；中文主导开发，README 含 zh-CN，内置百度/微信/千问(百炼)/MiniMax/Kimi 等国产生态）",
+    "releaseTime": "2026（基于 Electron + TypeScript + React + Vite 构建；v1.1.0 于 2026-04-25 发布，2026-08 检索时持续活跃，提供 Windows .exe / macOS .dmg / Ubuntu .deb 安装包）",
+    "deployment": "开源本地优先桌面 AI Agent（基于 Electron + TypeScript + React + Vite 构建，聊天/技能/记忆/文档知识库全部本地运行，数据默认保存在本地 workspace 目录，不依赖外部云服务或向量数据库）；OpenAI 兼容工具调用运行时 + 多模态附件，支持 Windows / macOS / Linux 三端，MIT 完全开源",
+    "features": [
+      "浏览器自动化双模式：内置 browser_open / browser_click / browser_type / browser_extract 等工具，支持 embedded 应用内预览与 external 外部浏览器桥接（CDP），可将百度/Google/Bing 等深度搜索结果转化为带编号引用的答案",
+      "技能系统 + 个人知识库：基于可编辑 SKILL.md 的技能（内置技能 / 市场来源 / 录制 Browser Coach），个人知识库将 Office/PDF/OFD/Markdown 等本地转 Markdown 按段落分块检索，无需 embedding 或外部向量库",
+      "持久记忆 + 定时任务 + 微信通道：本地 JSON 记忆条目注入提示词，可视化定时任务可选邮件/微信通知，微信通道支持文本/文档媒体上传并回传生成文件；终端与网络工具默认开启、高危命令需审批"
+    ],
+    "website": "https://github.com/TasiTech/tasi-harness",
+    "source": "GitHub TasiTech/tasi-harness + CSDN 实测（2026-08-09 检索）；v1.1.0 发布于 2026-04-25"
+  },
+  {
+    "id": 464,
+    "name": "ResceneAgent",
+    "developer": "Rescenix 开源社区（GitHub: Rescenix；中文开发者，CSDN 博客 qq_46145277；官网 rescene.shanca.me）",
+    "releaseTime": "2026（本地优先多 Agent 工作台；首个公开版本 2026-07-29，v0.1.2-alpha.1 于 2026-07-31；2026-08 检索时持续更新，提供 Windows 安装包）",
+    "deployment": "开源本地优先多 Agent 工作台（基于 Wails 构建桌面端，约 20MB 轻量安装包、不内置浏览器；聚合全网免费模型为统一 OpenAI 兼容 API，本地优先、可选云端账号同步，MIT 协议完全开源）",
+    "features": [
+      "真实浏览器自动化闭环：复用系统 Edge 与 CDP 真实渲染/点击/输入/滚动/DOM 读取/截图，生成前端页面后可直接点按验收；AgentFS 隔离写入 + 快照 + Diff 审阅回退，写-跑-验闭环交付",
+      "24H 自迭代 Agent 马拉松：一行命令启动，自动抓取 Hacker News / GitHub 热点 → 模型自主选题立项 → 需求→计划→自检迭代，免费模型智能路由（7 家免费提供方、30 分钟探活、熔断自愈），永不缺模型",
+      "本地记忆 + 二次元陪伴：每天 Firecrawl 联网自学写进 memory.md / journal.md，主动问候并记住用户；内置 54 个真实设计系统参考（Linear / Vercel / Stripe / Notion 等）按任务类型自动匹配风格"
+    ],
+    "website": "https://github.com/Rescenix/ResceneAgent",
+    "source": "GitHub Rescenix/ResceneAgent + CSDN 博客 qq_46145277 + 官网 rescene.shanca.me（2026-08-09 检索）；MIT 开源"
+  },
+  {
+    "id": 465,
+    "name": "Qwen Audio Agent（千问语音智能体）",
+    "developer": "阿里 QwenAudio 团队（GitHub: QwenAudio；通义千问生态）",
+    "releaseTime": "2026（实时语音 Agent 运行时；v0.9.0 于 2026-07-28 正式开源，v1.0.0 于 2026-07-30 发布内置 Gateway 的 macOS 桌面版，v1.7.0 于 2026-08-07；2026-08-10 检索时持续活跃）",
+    "deployment": "开源实时语音 Agent 运行时（基于 ACP 架构，前台语音交互与后台 Agent 解耦）；提供 WebUI、终端 TUI 与桌面悬浮球（macOS / Windows / Linux 三端），支持本地/私有化部署，GitHub 开源",
+    "features": [
+      "全双工实时语音交互：支持自然打断与持续多轮对话，Agent 调用工具/检索资料时对话不中断，用户可随时追问进度或修改指令、取消任务",
+      "前台+后台任务并行：一键选择办事 Agent（OpenCode/OpenClaw/Qoder/Hermes/CodeBuddy/Codex 等），复杂任务委派后台异步执行并持续追踪状态，结果自动回归当前语音会话",
+      "多端覆盖与本地记忆：WebUI / TUI / 桌面悬浮球三形态，本地用户档案与跨会话个人记忆；基于 ACP stdio 协议可扩展接入任意兼容 Agent 后端，适合开发者本地协作与企业私有部署"
+    ],
+    "website": "https://github.com/QwenAudio/qwen-audio-agent",
+    "source": "GitHub QwenAudio/qwen-audio-agent + InfoQ/SegmentFault/新浪 报道（2026-08-10 检索）；阿里 QwenAudio 团队开源"
+  },
+  {
+    "id": 466,
+    "name": "星月智能（Lunar Astral Agents）",
+    "developer": "钛宇-星光阁（TayunStarry；Gitee: TayunStarry/Lunar-Astral-Agents）",
+    "releaseTime": "2026（自研启动）；v2026.08.10 于 2026-08-10 发布（Gitee 发行版）",
+    "deployment": "纯本地化 Windows 桌面 AI 智能体平台（Go 后端 + TypeScript 智能体 goja 运行时 + WebView2 前端；仅 Windows 10/11 x64）；零 Python 依赖、可离线运行，所有推理基于本地 GGUF 模型（llama.cpp），数据不出本机；以非商业许可证（Lunar Astral Agents Non-Commercial License v1.1, 2026-05）开放源码供个人学习研究使用",
+    "features": [
+      "双人格智能体架构：月华（AI 桌面智能体核心，多模态对话 + Live2D 虚拟形象 + Qwen3-ASR 语音识别 + Qwen3-TTS 语音合成 + stable-diffusion.cpp 本地文生图）与琉璃（工具集扩展，文件管理 / SQLite 数据库可视化 CRUD / 多显示器截图标注 / AI 代理转发 OpenAI 兼容 API），二者协同构成完整桌面 AI 体验",
+      "纯本地离线推理：底层依赖 llama.cpp 运行 Qwen 蒸馏量化 GGUF 模型，无需联网、无需注册、零云端依赖，所有模型权重与用户数据始终本地留存，隐私完全可控",
+      "本地化桌面生产力工具集：内置 Markdown / Mermaid / ECharts / KaTeX 富文本渲染、QQ 群聊适配器、lunar_chromedp 智能网络检索（可离线）、毛玻璃风格前端 UI，面向中文用户的一站式离线 AI 桌面工作平台"
+    ],
+    "website": "https://gitee.com/TayunStarry/Lunar-Astral-Agents",
+    "source": "Gitee TayunStarry/Lunar-Astral-Agents（发行版 v2026.08.10，2026-08-10）+ 项目 README / 许可证核验；钛宇-星光阁国产团队，适用中华人民共和国法律"
   }
 ]

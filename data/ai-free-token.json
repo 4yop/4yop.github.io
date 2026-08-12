@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06",
+  "updatedAt": "2026-08-12",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1955,7 +1955,21 @@
           "step-1o-turbo"
         ]
       }
+    },
+    {
+      "name": "AI Horde",
+      "quota": "完全免费（Kudos 积分优先级调度，匿名可用 0000000000 或注册获取 API Key，无需信用卡）；文本生成由全球志愿者算力集群提供，Kudos 永不失效、不可出售",
+      "cycle": "永久免费",
+      "url": "https://aihorde.net",
+      "develop": {
+        "document_url": "https://aihorde.net/apidocs/",
+        "base_url": "https://aihorde.net/api/v2",
+        "models": [
+          "Kobold 文本生成（Pygmalion、Nous-Hermes、LLaMA 等开源 LLM）",
+          "Stable Diffusion（图像生成）"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-08-06T21:45:00.000Z"
+  "lastUpdateTime": "2026-08-12T09:50:00.000Z"
 }
