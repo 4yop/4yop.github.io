@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1967,6 +1967,29 @@
         "models": [
           "Kobold 文本生成（Pygmalion、Nous-Hermes、LLaMA 等开源 LLM）",
           "Stable Diffusion（图像生成）"
+        ]
+      }
+    },
+    {
+      "name": "GitHub Models",
+      "quota": "免费层（GitHub 账号 PAT 即密钥，无需信用卡）：低阶模型 15 RPM / 150 RPD / 5 并发；高阶模型（GPT-4o、Llama-3.3-70B 等）10 RPM / 50 RPD / 2 并发；每请求 8K 输入 / 4K 输出上限；额度随 Copilot 订阅档位提升（Pro 30 RPM/1000 RPD、Business/Enterprise 更高）",
+      "cycle": "永久免费（按 GitHub 账号档位限流）",
+      "url": "https://github.com/marketplace/models",
+      "develop": {
+        "document_url": "https://docs.github.com/en/github-models",
+        "base_url": "https://models.github.ai/inference",
+        "models": [
+          "gpt-4.1",
+          "gpt-4o",
+          "o4-mini",
+          "o3",
+          "Llama-4-Scout / Maverick",
+          "DeepSeek-R1",
+          "Mistral-Small-3.1",
+          "Phi-4",
+          "Cohere Command R+",
+          "AI21 Jamba 1.5",
+          "Ministral"
         ]
       }
     }

@@ -4160,5 +4160,33 @@
     ],
     "website": "https://gitee.com/TayunStarry/Lunar-Astral-Agents",
     "source": "Gitee TayunStarry/Lunar-Astral-Agents（发行版 v2026.08.10，2026-08-10）+ 项目 README / 许可证核验；钛宇-星光阁国产团队，适用中华人民共和国法律"
+  },
+  {
+    "id": 467,
+    "name": "ximo-Agent（XMO-AgentBox）",
+    "developer": "杭州曦谋决策（XMO-AgentBox 团队；创始人辛焱，前西门子/清华大学/阿里达摩院）",
+    "releaseTime": "2026（v1.0.7 于 2026-08-03 发布）",
+    "deployment": "本地优先桌面客户端（Electron 33 + React 18 + TypeScript；Windows x64 预构建安装包，GitHub + Gitee 双源更新）",
+    "features": [
+      "DeepSeek-V4 驱动的办公/编程/设计三模式桌面工作台，内置 254 位 AI 专家库，按需激活",
+      "Playwright 浏览器自动化 + pi-computer-use 桌面操控 + OfficeCLI 文档读写，支持技能录制回放（rrweb）与 MCP 协议扩展",
+      "本地文件/数据库/办公软件 API 操作，沙箱隔离 + allow/ask/deny 三级权限审批引擎，数据不出本地"
+    ],
+    "website": "https://github.com/ximo888ok-netizen/ximo-Agent",
+    "source": "GitHub 仓库 ximo888ok-netizen/ximo-Agent + 同花顺/今日头条报道 XMO-AgentBox（杭州曦谋决策）"
+  },
+  {
+    "id": 468,
+    "name": "Kian",
+    "developer": "SandAI（雷孙 Lei Sun，sunlei@sand.ai）",
+    "releaseTime": "2026（2026-03 开源；v0.1.13 于 2026-03-30，2026-08-06 持续更新）",
+    "deployment": "本地优先开源桌面客户端（Electron 37 + React 19 + Ant Design；跨平台 macOS/Windows/Linux，AGPL-3.0）",
+    "features": [
+      "多智能体协作：主 Agent 按角色/模型配置委派子 Agent，统一文件型工作区并行执行复杂任务",
+      "内置文档管理与知识库、cron 定时任务、后台长程任务、应用开发（小程序/小游戏）与 MCP 工具接入",
+      "支持 Telegram/Discord/飞书/微信/企业微信等 IM 渠道镜像对话，内置 OpenAI 兼容 API 服务，本地数据不出设备"
+    ],
+    "website": "https://heykian.com",
+    "source": "GitHub SandAI-org/kian + 官网 heykian.com + V2EX/社区讨论"
   }
 ]
