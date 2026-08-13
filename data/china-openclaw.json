@@ -4188,5 +4188,33 @@
     ],
     "website": "https://heykian.com",
     "source": "GitHub SandAI-org/kian + 官网 heykian.com + V2EX/社区讨论"
+  },
+  {
+    "id": 469,
+    "name": "GuaDa（瓜大）",
+    "developer": "donggua-zen（GitHub）/ zhendongdong（Gitee，公众号「冬瓜编程实验室」）",
+    "releaseTime": "2026（v0.5.2 于 2026-08-06；项目始于 2025 年底）",
+    "deployment": "本地优先开源桌面 AI 工作站（Electron 桌面端 + Web 端 + Docker；跨平台 Windows/macOS/Linux，MIT 开源）",
+    "features": [
+      "本地优先 Agent 工作站：基于 ReAct Agent + 子 Agent 分层架构，读写文件、执行命令（独立沙箱进程隔离）、操控内嵌 Chromium 浏览器，任务从规划到执行自动闭环",
+      "RAG 知识库（语义+关键词混合检索，支持 40+ 文件格式含 OCR）+ 长期记忆（两级压缩、可编辑可回退、有历史）+ 文件即技能热更新",
+      "Bot 网关统一接入 QQ/企业微信/飞书/Discord/微信，内置定时任务（Cron）、原生 MCP 集成、17 家厂商多模型适配（含 DeepSeek/通义/文心/智谱/Kimi 等国产模型）"
+    ],
+    "website": "https://github.com/donggua-zen/guada",
+    "source": "GitHub donggua-zen/guada + Gitee zhendongdong/guada_ai + 社区文章（逛逛GitHub 2026-08-07）"
+  },
+  {
+    "id": 470,
+    "name": "MonkeyWork",
+    "developer": "长亭科技（Chaitin；GitHub: chaitin/MonkeyCode）",
+    "releaseTime": "2026（桌面端于 2026-07-30 发布并开源）",
+    "deployment": "本地优先桌面 AI 办公助手（MonkeyCode 家族；支持 Windows/macOS/Linux 桌面客户端，AGPL-3.0 开源）",
+    "features": [
+      "直接处理本地文件：授权文件夹后读取/理解目录上下文、创建修改并保存文档/表格/图片/代码，本地任务结果留在本机，无需反复上传下载",
+      "连接联网搜索、内容解析、图像能力与浏览器操作，把文件处理/搜索/图像/浏览器串成同一条任务闭环，覆盖开发/运营/市场/研究等办公场景",
+      "提供本地任务、云端任务、独立对话三种模式，接入长亭百智云大模型及 MCP 服务，定位企业级 AI 办公助手"
+    ],
+    "website": "https://monkeycode-ai.com/#desktop-client",
+    "source": "GitHub chaitin/MonkeyCode + 长亭科技发布文（今日头条 2026-07-30）+ monkeycode-ai.com"
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "updateTime": "2026/8/12 10:00:06",
+  "updateTime": "2026/8/13 10:12:17",
   "data": [
     {
       "domain": "github.com",
-      "ip": "140.82.121.4",
-      "avg_delay": 1545
+      "ip": "20.205.243.166",
+      "avg_delay": 607
     },
     {
       "domain": "alive.github.com",
@@ -14,7 +14,7 @@
     {
       "domain": "api.github.com",
       "ip": "20.205.243.168",
-      "avg_delay": 1314
+      "avg_delay": 413
     },
     {
       "domain": "api.individual.githubcopilot.com",

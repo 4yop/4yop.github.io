@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
   "platforms": [
     {
       "name": "Google AI Studio (Gemini)",
@@ -1992,7 +1992,23 @@
           "Ministral"
         ]
       }
+    },
+    {
+      "name": "Reka AI",
+      "quota": "100% 免费 API Key：注册 Reka Platform 即领，无需信用卡；每月循环信用额度（auto-refreshed，约 $10/月）免费使用；OpenAI 兼容端点；reka-flash / reka-edge 常驻公开可用",
+      "cycle": "永久免费（注册即领免费 Key；每月循环信用额度，无需信用卡）",
+      "url": "https://reka.ai",
+      "develop": {
+        "document_url": "https://docs.reka.ai/quickstart",
+        "base_url": "https://api.reka.ai/v1",
+        "models": [
+          "reka-flash（文本推理，OpenAI 兼容）",
+          "reka-edge / reka-edge-2603（原生多模态，支持图像/视频/音频/文本输入）",
+          "reka-flash-3",
+          "Reka Research（reka-flash-research，联网研究代理）"
+        ]
+      }
     }
   ],
-  "lastUpdateTime": "2026-08-12T09:50:00.000Z"
+  "lastUpdateTime": "2026-08-13T23:20:55.756Z"
 }
