@@ -2008,6 +2008,38 @@
           "Reka Research（reka-flash-research，联网研究代理）"
         ]
       }
+    },
+    {
+      "name": "腾讯元器 (Yuanqi)",
+      "quota": "个人/小微账号 10万次/月免费 API 调用（无需绑卡，需手机号验证）；开发阶段赠送 1亿 token 额度；底层由腾讯混元大模型驱动",
+      "cycle": "每月重置（永久免费层，个人/小微账号）",
+      "url": "https://yuanqi.tencent.com",
+      "develop": {
+        "document_url": "https://yuanqi.tencent.com/guide/publish-agent-api-documentation",
+        "base_url": "https://yuanqi.tencent.com/openapi/v1/agent/chat/completions",
+        "models": [
+          "Hunyuan (混元大模型)",
+          "自定义智能体 (Agent API)",
+          "多模态输入(文本/图片/文件)"
+        ]
+      }
+    },
+    {
+      "name": "Recraft AI",
+      "quota": "Free 计划每日 30 credits（每24小时重置，raster 1 credit/张≈900张/月、vector 2 credits/张）；注册即领，无需信用卡；⚠️ 免费层生成内容公开、无商业授权（需商用请升级付费）",
+      "cycle": "每日重置（永久免费层）",
+      "url": "https://www.recraft.ai",
+      "develop": {
+        "document_url": "https://www.recraft.ai/docs/api-reference/endpoints",
+        "base_url": "https://external.api.recraft.ai/v1",
+        "models": [
+          "recraftv4",
+          "recraftv4_pro",
+          "recraftv3",
+          "recraftv2",
+          "Vector model (原生SVG矢量生成)"
+        ]
+      }
     }
   ],
   "lastUpdateTime": "2026-08-13T23:20:55.756Z"

@@ -4216,5 +4216,84 @@
     ],
     "website": "https://monkeycode-ai.com/#desktop-client",
     "source": "GitHub chaitin/MonkeyCode + 长亭科技发布文（今日头条 2026-07-30）+ monkeycode-ai.com"
+  },
+  {
+    "id": 471,
+    "name": "DeepSeek Harness",
+    "developer": "深度求索（DeepSeek）",
+    "releaseTime": "2026.08.13",
+    "deployment": "MIT 协议开源（v0.1 开发者预览版）；安装 Node.js 后运行 npx @deepseek-ai/dshweb 启动本地 WebUI；不绑定自家模型，原生兼容 OpenAI/Kimi/Google 等近 40 家主流大模型",
+    "features": [
+      "提出 Model + Harness = Agent 公式，Harness 承担工具调用、任务规划、执行调度等工程化工作，补齐国产模型在 Agent 执行层的空白，对标 OpenAI Codex 与 Anthropic Claude Code（代码智能体赛道）",
+      "一切皆插件的全插件化开放架构：模型/工具/技能/会话/沙箱/存储/调度/UI 均由插件组合，可自由替换与重组；内置标准/PTC/极简/创造四种运行模式与多 Agent 编排、断点续传、联网检索"
+    ],
+    "website": "https://github.com/deepseek-ai/deepseek-harness",
+    "source": "DeepSeek 官方微博 / 新浪科技 2026-08-13~14；GitHub deepseek-ai/deepseek-harness"
+  },
+  {
+    "id": 472,
+    "name": "AgentTARS",
+    "developer": "字节跳动（ByteDance）",
+    "releaseTime": "2026.08.13",
+    "deployment": "Apache 2.0 开源；提供 CLI、WebUI 与原生桌面应用（UI-TARS Desktop）三种形态，可挂载任意多模态 LLM（Claude/GPT/豆包等），原生支持 MCP；提供 2B/7B/72B 三档模型",
+    "features": [
+      "多模态 GUI Agent 技术栈，仅靠屏幕截图即可理解并操作整台电脑（移动鼠标、敲击键盘），OSWorld 基准 24.6 分超过 Claude 22.0、AndroidWorld 46.6 分超过 GPT-4o 34.5",
+      "事件流协议记录每一步截图/指令/思考/工具调用，支持操作回放与可追溯；内置沙箱隔离执行环境，权限精细到每一步，支持断点续传与回滚；远程操作器免费，可免费远程控制另一台电脑或浏览器"
+    ],
+    "website": "https://github.com/bytedance/ui-tars-desktop",
+    "source": "字节跳动开源 UI-TARS Desktop 公告 2026-08-13；GitHub bytedance/ui-tars-desktop"
+  },
+  {
+    "id": 473,
+    "name": "AREX",
+    "developer": "北京智源人工智能研究院（BAAI）",
+    "releaseTime": "2026.08.11",
+    "deployment": "模型权重已开源（HuggingFace BAAI/arex），科研体验版线上系统同步开放（arex-research.com）；提供资讯追踪、论文筛选、播客提取三类入口，由 AREX 智能体驱动",
+    "features": [
+      "自主研究智能体，首创「研究→验证→再研究」双循环递归框架，让 AI 在长程任务中持续自我修正、逐步逼近正确答案",
+      "抓住「发现—验证不对称性」突破口：候选解形成后通过逐项约束验证快速定位不足、指导后续探索；10B 激活参数在 BrowseComp/GAIA/HLE-with-tools 等多项基准达或超越部分闭源旗舰",
+      "支持 AI 自主读论文、追热点、做综述；未来延伸至方案设计、工程实现与性能调优，交付可验证结果"
+    ],
+    "website": "https://arex-research.com",
+    "source": "智源社区 hub.baai.ac.cn 2026-08-12；央广网 / 北京日报 2026-08-11~12"
+  },
+  {
+    "id": 474,
+    "name": "MTClaw",
+    "developer": "摩尔线程（Moore Threads）",
+    "releaseTime": "2026.06.01（2026.05.18 首次公开）",
+    "deployment": "MIT 协议开源；代码/评测数据/训练脚本全量开放，无遥测、不依赖强制云端，支持自由本地部署；已兼容 OpenClaw 生态并上架官方插件市场 ClawHub",
+    "features": [
+      "面向桌面控制场景的 AI 智能体加速框架，前端引入「前台助理」+ 轻量模型 + 路由机制（Function Router），高频轻量操作即时处理、复杂场景自动流转至后端大模型",
+      "实测 50 个真实桌面任务：极速模式单次 5.54s（约 7 倍提速），稳健模式成功率 100%、7.61s（约 5 倍提速）；严格对话隔离机制避免跨会话干扰"
+    ],
+    "website": "https://github.com/MooreThreads/MTClaw",
+    "source": "摩尔线程开源公告 2026-06-01；GitHub MooreThreads/MTClaw；百度百科 MTClaw"
+  },
+  {
+    "id": 475,
+    "name": "Syll",
+    "developer": "清华大学智能视觉实验室（鲁继文团队）与极佳视界",
+    "releaseTime": "2026.05.31",
+    "deployment": "开源（早期 public alpha）；本地模块化架构，记忆/技能/规则/偏好均以可编辑文件存于本地；前端面板即可完成模型配置、技能管理、定时任务与日常对话",
+    "features": [
+      "多模态全交互智能体框架，统一 GUI/CLI/MCP-API 三种操作方式于同一执行回路，按任务场景自动选路（视觉软件走 GUI、批处理走 CLI、外部服务走 MCP）",
+      "「示教即技能」：用户手动操作一遍即可被录制、提取关键步骤并沉淀为可复用技能；执行全程留可审计轨迹，支持回放与人工复核，人类始终保有最终决策权"
+    ],
+    "website": "https://github.com/THU-SAGE/syll",
+    "source": "清华开源 Syll 公告 2026-05-31；GitHub THU-SAGE/syll；Toolin AI 解读"
+  },
+  {
+    "id": 476,
+    "name": "MMSkills",
+    "developer": "上海交通大学、小红书、东南大学联合团队",
+    "releaseTime": "2026",
+    "deployment": "Apache 2.0 开源；仓库托管 GitHub，配套 515 个跨领域标准化技能库（HuggingFace 数据集按需拉取）；原生适配 Codex/OpenClaw/Claude Code 三大主流 AI 代码助手，提供一键安装脚本",
+    "features": [
+      "通用视觉智能体多模态技能框架，将零散交互轨迹转化为标准化多模态技能包（文字流程+运行状态卡片+界面关键帧），提升视觉 Agent 在桌面 GUI/游戏操控中的任务成功率",
+      "分支加载轻量化推理：主 Agent 仅保留极简技能名提示，判定需技能辅助时开辟独立隔离分支按需调取视觉素材，推理结束即销毁图像，兼顾视觉校验精度与 Token 成本；OSWorld 下多模型接入后成功率显著提升（如 Qwen3-VL-235B +17.83）"
+    ],
+    "website": "https://github.com/zkangning/MMSkills_for_Visual_Agents",
+    "source": "论文 MMSkills (arXiv:2605.13527) 与开源仓库 2026；aipuzi.cn 报道"
   }
 ]
