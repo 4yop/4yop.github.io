@@ -9360,5 +9360,500 @@
     ],
     "note": "",
     "lastTested": "2026-08-13T07:33:27.569Z"
+  },
+  {
+    "id": "qrserver",
+    "name": "QR Server 二维码生成",
+    "description": "免费生成二维码图片",
+    "fullDescription": "QR Server 提供免费的二维码生成服务，支持自定义尺寸、颜色、容错级别等参数，无需 API Key，支持 CORS 跨域，可用于前端直接生成二维码图片。",
+    "category": "image",
+    "method": "GET",
+    "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tools321.com",
+    "baseUrl": "https://api.qrserver.com/v1/create-qr-code/",
+    "params": [
+      {
+        "name": "data",
+        "type": "string",
+        "required": true,
+        "description": "要编码的内容（URL或文本）",
+        "example": "https://tools321.com"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "description": "图片尺寸 宽x高",
+        "example": "150x150"
+      }
+    ],
+    "responseExample": {
+      "status": "success"
+    },
+    "docUrl": "https://goqr.me/api/",
+    "status": "active",
+    "tags": [
+      "二维码",
+      "图片",
+      "工具"
+    ],
+    "note": "返回 PNG 图片，curl 预筛 ACAO:* 200"
+  },
+  {
+    "id": "exchangeratesapi-io",
+    "name": "ExchangeRatesAPI 汇率",
+    "description": "实时外汇汇率查询",
+    "fullDescription": "ExchangeRatesAPI 提供基于欧洲央行等来源的外汇汇率数据，支持指定基准货币与目标货币，无需认证，可用于前端汇率查询。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.exchangeratesapi.io/latest?base=USD&symbols=CNY,EUR",
+    "baseUrl": "https://api.exchangeratesapi.io/latest",
+    "params": [
+      {
+        "name": "base",
+        "type": "string",
+        "required": false,
+        "description": "基准货币",
+        "example": "USD"
+      },
+      {
+        "name": "symbols",
+        "type": "string",
+        "required": false,
+        "description": "目标货币，逗号分隔",
+        "example": "CNY,EUR"
+      }
+    ],
+    "responseExample": {
+      "base": "USD",
+      "rates": {
+        "CNY": 7.2,
+        "EUR": 0.92
+      }
+    },
+    "docUrl": "https://exchangeratesapi.io/",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "金融",
+      "数据"
+    ],
+    "note": "curl 预筛 ACAO:* 200；高级功能可能需 Key，基础 latest 端点免认证"
+  },
+  {
+    "id": "coinranking",
+    "name": "CoinRanking 加密货币排行",
+    "description": "加密货币市值排行",
+    "fullDescription": "CoinRanking 提供加密货币实时市值、价格、涨跌幅排行数据，无需 API Key 即可获取公开榜单，支持 CORS，适合前端展示行情。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.coinranking.com/v2/coins?limit=10",
+    "baseUrl": "https://api.coinranking.com/v2/coins",
+    "params": [
+      {
+        "name": "limit",
+        "type": "number",
+        "required": false,
+        "description": "返回数量",
+        "example": "10"
+      }
+    ],
+    "responseExample": {
+      "status": "success",
+      "data": {
+        "coins": []
+      }
+    },
+    "docUrl": "https://developers.coinranking.com/",
+    "status": "active",
+    "tags": [
+      "加密货币",
+      "行情",
+      "数据"
+    ],
+    "note": "公开榜单免 Key"
+  },
+  {
+    "id": "jsonvat",
+    "name": "JSONvat 增值税率",
+    "description": "欧盟各国 VAT 税率",
+    "fullDescription": "JSONvat 提供欧盟各国当前与历史增值税（VAT）税率数据，返回标准/减免税率，无需认证，支持 CORS，适合前端税率查询工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.jsonvat.com/",
+    "baseUrl": "https://api.jsonvat.com/",
+    "params": [],
+    "responseExample": {
+      "name": "JSON VAT",
+      "rates": []
+    },
+    "docUrl": "https://jsonvat.com/",
+    "status": "active",
+    "tags": [
+      "税率",
+      "欧盟",
+      "数据"
+    ],
+    "note": "返回 JSON 税率数据"
+  },
+  {
+    "id": "uinames",
+    "name": "UINames 随机人名",
+    "description": "生成随机姓名资料",
+    "fullDescription": "UINames 生成随机的姓名、性别、生日、地址、邮箱等 mock 用户资料，支持按地区筛选，无需认证，适合前端原型与测试数据。",
+    "category": "fun",
+    "method": "GET",
+    "url": "https://uinames.com/api/?ext&region=china",
+    "baseUrl": "https://uinames.com/api/",
+    "params": [
+      {
+        "name": "region",
+        "type": "string",
+        "required": false,
+        "description": "地区筛选",
+        "example": "china"
+      },
+      {
+        "name": "ext",
+        "type": "boolean",
+        "required": false,
+        "description": "返回扩展字段",
+        "example": "true"
+      }
+    ],
+    "responseExample": {
+      "name": "张伟",
+      "gender": "male",
+      "region": "China"
+    },
+    "docUrl": "https://uinames.com/api/",
+    "status": "active",
+    "tags": [
+      "随机",
+      "mock",
+      "测试数据"
+    ],
+    "note": "返回 JSON 随机用户"
+  },
+  {
+    "id": "verse",
+    "name": "Verse 开源版本查询",
+    "description": "查询开源项目最新版本",
+    "fullDescription": "Verse 提供开源项目最新发布版本查询，支持 GitHub/NPM 等源，无需认证，适合前端展示依赖版本信息。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://verse.pawelad.xyz/api/verse/",
+    "baseUrl": "https://verse.pawelad.xyz/api/verse/",
+    "params": [],
+    "responseExample": {
+      "name": "verse",
+      "version": "1.0.0"
+    },
+    "docUrl": "https://github.com/pawelad/verse",
+    "status": "active",
+    "tags": [
+      "版本",
+      "开源",
+      "工具"
+    ],
+    "note": "返回 JSON 版本信息"
+  },
+  {
+    "id": "booknomads",
+    "name": "BookNomads 图书信息",
+    "description": "按 ISBN 查询图书",
+    "fullDescription": "BookNomads 提供按 ISBN 查询图书封面、标题、作者、出版信息，覆盖荷兰与弗拉芒地区约 250 万册图书，无需认证。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.booknomads.com/v1/book/9780140328721",
+    "baseUrl": "https://api.booknomads.com/v1/book",
+    "params": [
+      {
+        "name": "isbn",
+        "type": "string",
+        "required": true,
+        "description": "ISBN 编号",
+        "example": "9780140328721"
+      }
+    ],
+    "responseExample": {
+      "title": "Book",
+      "authors": []
+    },
+    "docUrl": "https://api.booknomads.com/",
+    "status": "active",
+    "tags": [
+      "图书",
+      "ISBN",
+      "数据"
+    ],
+    "note": "返回 JSON 图书信息"
+  },
+  {
+    "id": "changelogs",
+    "name": "Changelogs.md 更新日志",
+    "description": "开源项目更新日志",
+    "fullDescription": "Changelogs.md 提供结构化开源项目更新日志元数据，支持 GitHub/NPM 等仓库，无需认证，适合前端展示版本变更。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://changelogs.md/api/v1/repo/github/vercel/next.js",
+    "baseUrl": "https://changelogs.md/api/v1/repo",
+    "params": [
+      {
+        "name": "repo",
+        "type": "string",
+        "required": true,
+        "description": "仓库路径 owner/name",
+        "example": "github/vercel/next.js"
+      }
+    ],
+    "responseExample": {
+      "name": "next.js",
+      "versions": []
+    },
+    "docUrl": "https://changelogs.md/",
+    "status": "active",
+    "tags": [
+      "更新日志",
+      "开源",
+      "工具"
+    ],
+    "note": "返回 JSON 变更信息"
+  },
+  {
+    "id": "domaindb",
+    "name": "DomainDB 域名信息",
+    "description": "查询域名注册信息",
+    "fullDescription": "DomainDB 提供域名 WHOIS 风格信息，包括注册商、创建日期、NS 记录等，无需认证，适合前端域名查询工具。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.domaindb.net/v1/example.com",
+    "baseUrl": "https://api.domaindb.net/v1",
+    "params": [
+      {
+        "name": "domain",
+        "type": "string",
+        "required": true,
+        "description": "域名",
+        "example": "example.com"
+      }
+    ],
+    "responseExample": {
+      "domain": "example.com",
+      "registered": true
+    },
+    "docUrl": "https://api.domaindb.net/",
+    "status": "active",
+    "tags": [
+      "域名",
+      "WHOIS",
+      "工具"
+    ],
+    "note": "返回 JSON 域名信息"
+  },
+  {
+    "id": "http2-pro",
+    "name": "HTTP2.Pro 协议检测",
+    "description": "检测 HTTP/2 支持",
+    "fullDescription": "HTTP2.Pro 提供客户端与服务器 HTTP/2 协议支持检测端点，无需认证，适合前端网络协议检测工具。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://http2.pro/api/v1",
+    "baseUrl": "https://http2.pro/api/v1",
+    "params": [],
+    "responseExample": {
+      "http2": true
+    },
+    "docUrl": "https://http2.pro/doc/api",
+    "status": "active",
+    "tags": [
+      "HTTP2",
+      "网络",
+      "工具"
+    ],
+    "note": "返回 JSON 协议支持信息"
+  },
+  {
+    "id": "numvalidate",
+    "name": "NumValidate 电话号码校验",
+    "description": "校验国际电话号码",
+    "fullDescription": "NumValidate 提供开源的电话号码格式与有效性校验，无需认证，支持国际号码，适合前端表单校验。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://numvalidate.com/api/validate?number=%2B14155552671",
+    "baseUrl": "https://numvalidate.com/api/validate",
+    "params": [
+      {
+        "name": "number",
+        "type": "string",
+        "required": true,
+        "description": "E.164 格式电话号码",
+        "example": "+14155552671"
+      }
+    ],
+    "responseExample": {
+      "valid": true,
+      "number": "+14155552671"
+    },
+    "docUrl": "https://numvalidate.com/",
+    "status": "active",
+    "tags": [
+      "电话",
+      "校验",
+      "工具"
+    ],
+    "note": "返回 JSON 校验结果"
+  },
+  {
+    "id": "apility",
+    "name": "Apility IP 反滥用查询",
+    "description": "IP/域名滥用黑名单",
+    "fullDescription": "Apility 提供 IP、域名、邮箱反滥用黑名单查询，公开端点无需认证，适合前端安全检测工具。",
+    "category": "tool",
+    "method": "GET",
+    "url": "https://api.apility.io/v1/ip/8.8.8.8",
+    "baseUrl": "https://api.apility.io/v1/ip",
+    "params": [
+      {
+        "name": "ip",
+        "type": "string",
+        "required": true,
+        "description": "待查询 IP",
+        "example": "8.8.8.8"
+      }
+    ],
+    "responseExample": {
+      "ip": "8.8.8.8",
+      "blacklisted": false
+    },
+    "docUrl": "https://apility.io/",
+    "status": "active",
+    "tags": [
+      "IP",
+      "安全",
+      "工具"
+    ],
+    "note": "返回 JSON 黑名单信息"
+  },
+  {
+    "id": "random-word-api",
+    "name": "Random Word 随机单词",
+    "description": "生成随机英文单词",
+    "fullDescription": "Random Word API 生成随机英文单词，支持批量获取，无需认证，适合前端原型与词汇类小工具。",
+    "category": "fun",
+    "method": "GET",
+    "url": "https://random-word-api.herokuapp.com/word?number=3",
+    "baseUrl": "https://random-word-api.herokuapp.com/word",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "required": false,
+        "description": "返回单词数量",
+        "example": "3"
+      }
+    ],
+    "responseExample": [
+      "apple",
+      "banana",
+      "cherry"
+    ],
+    "docUrl": "https://github.com/AnimatedBAT/RANDOM-WORD-API",
+    "status": "active",
+    "tags": [
+      "随机",
+      "单词",
+      "趣味"
+    ],
+    "note": "返回 JSON 单词数组（heroku 托管，可能不稳定）"
+  },
+  {
+    "id": "ratesapi",
+    "name": "RatesAPI 汇率",
+    "description": "历史与当前汇率",
+    "fullDescription": "RatesAPI 提供基于欧洲央行的外汇汇率与历史时间序列数据，无需认证，适合前端汇率与走势查询。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://api.ratesapi.io/api/latest?base=USD&symbols=CNY",
+    "baseUrl": "https://api.ratesapi.io/api/latest",
+    "params": [
+      {
+        "name": "base",
+        "type": "string",
+        "required": false,
+        "description": "基准货币",
+        "example": "USD"
+      },
+      {
+        "name": "symbols",
+        "type": "string",
+        "required": false,
+        "description": "目标货币",
+        "example": "CNY"
+      }
+    ],
+    "responseExample": {
+      "base": "USD",
+      "rates": {
+        "CNY": 7.2
+      }
+    },
+    "docUrl": "https://ratesapi.io/",
+    "status": "active",
+    "tags": [
+      "汇率",
+      "金融",
+      "数据"
+    ],
+    "note": "返回 JSON 汇率数据"
+  },
+  {
+    "id": "mediawiki-random",
+    "name": "MediaWiki 随机词条",
+    "description": "维基百科随机条目",
+    "fullDescription": "通过 MediaWiki API 获取维基百科随机条目标题与摘要，无需认证，支持 CORS，适合前端知识类小工具。",
+    "category": "data",
+    "method": "GET",
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&format=json&origin=*",
+    "baseUrl": "https://en.wikipedia.org/w/api.php",
+    "params": [
+      {
+        "name": "action",
+        "type": "string",
+        "required": true,
+        "description": "API 动作",
+        "example": "query"
+      },
+      {
+        "name": "list",
+        "type": "string",
+        "required": true,
+        "description": "列表类型",
+        "example": "random"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": true,
+        "description": "返回格式",
+        "example": "json"
+      }
+    ],
+    "responseExample": {
+      "query": {
+        "random": [
+          {
+            "title": "Example"
+          }
+        ]
+      }
+    },
+    "docUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+    "status": "active",
+    "tags": [
+      "维基百科",
+      "随机",
+      "数据"
+    ],
+    "note": "附加 origin=* 以启用 CORS"
   }
 ]
