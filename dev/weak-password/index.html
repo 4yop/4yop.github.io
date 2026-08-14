@@ -11,7 +11,7 @@
 
     <!-- 预连接优化 -->
     <link rel="preconnect" href="https://tools321.com">
-    <link rel="dns-prefetch" href="https://hm.baidu.com">
+    <!-- <link rel="dns-prefetch" href="https://hm.baidu.com"> -->
     <!-- 部分工具页用到 Google Fonts，预连接以缩短首字绘制 (LCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -35,9 +35,29 @@
     <meta name="twitter:title" content="弱密码检测器 - 密码强度与安全检测工具 | Tools321">
     <meta name="twitter:description" content="免费在线弱密码检测工具，输入密码即可实时评估安全强度与暴力破解难度。基于常见弱密码字典库和多维复杂度算法分析，检测连续字符、重复模式等风险，提供具体安全改进建议。适用于网站注册、社交媒体、银行支付等多场景账户安全检查，数据在浏览器本地处理，不上传服务器，保护隐私安全，免费打开即用，在线工具无需安装即刻使用">
 
-    <!-- 百度统计：生产环境生效，Prerender 模式下跳过 -->
-
-    <script type="module" crossorigin="" src="/assets/index-ABH5lOzE.js"></script>
+    <!-- 百度统计：已停用。hm.baidu.com 的 hm.js 未返回 Access-Control-Allow-Origin，
+         脚本上的 crossOrigin='anonymous' 触发 CORS 拦截（from origin 'https://tools321.com'
+         has been blocked by CORS policy），导致生产环境控制台持续报错。暂注释以消错。 -->
+    <!--
+    <script type="module">
+      if (import.meta.env.PROD) {
+        if (!window.location.search.includes('prerender')) {
+          const baiduId = import.meta.env.VITE_BAIDU_ANALYTICS_ID;
+          if (baiduId) {
+            (function(){
+              var hm = document.createElement('script');
+              hm.crossOrigin = 'anonymous';
+              hm.src = 'https://hm.baidu.com/hm.js?' + baiduId;
+              hm.async = true;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          }
+        }
+      }
+    </script>
+    -->
+    <script type="module" crossorigin="" src="/assets/index-DJPIzXdp.js"></script>
     <link rel="stylesheet" crossorigin="" href="/assets/index-BM7w_O8x.css">
     <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
     <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
@@ -47,7 +67,7 @@
 
     <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
     <script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="/assets/polyfills-legacy-Bv9wd_MD.js"></script>
-    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy-DBWBlVEN.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy-BFMCUriw.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   
 
 </body></html>

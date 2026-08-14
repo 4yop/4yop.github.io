@@ -9437,7 +9437,8 @@
       "金融",
       "数据"
     ],
-    "note": "curl 预筛 ACAO:* 200；高级功能可能需 Key，基础 latest 端点免认证"
+    "note": "curl 预筛 ACAO:* 200；高级功能可能需 Key，基础 latest 端点免认证",
+    "lastTested": "2026-08-14T07:23:23.333Z"
   },
   {
     "id": "coinranking",

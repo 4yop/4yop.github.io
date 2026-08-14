@@ -11,7 +11,7 @@
 
     <!-- 预连接优化 -->
     <link rel="preconnect" href="https://tools321.com">
-    <link rel="dns-prefetch" href="https://hm.baidu.com">
+    <!-- <link rel="dns-prefetch" href="https://hm.baidu.com"> -->
     <!-- 部分工具页用到 Google Fonts，预连接以缩短首字绘制 (LCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -35,13 +35,33 @@
     <meta name="twitter:title" content="M3U8视频在线提取工具下载 - 手机电脑加密视频解密提取 | Tools321">
     <meta name="twitter:description" content="M3U8视频在线提取工具下载，支持加密m3u8视频解密提取、手机电脑网页端在线使用。无需安装软件，浏览器直接下载MP4。支持AES-128加密解密、无差别提取各类HLS流。">
 
-    <!-- 百度统计：生产环境生效，Prerender 模式下跳过 -->
-
-    <script type="module" crossorigin="" src="/assets/index-ABH5lOzE.js"></script>
+    <!-- 百度统计：已停用。hm.baidu.com 的 hm.js 未返回 Access-Control-Allow-Origin，
+         脚本上的 crossOrigin='anonymous' 触发 CORS 拦截（from origin 'https://tools321.com'
+         has been blocked by CORS policy），导致生产环境控制台持续报错。暂注释以消错。 -->
+    <!--
+    <script type="module">
+      if (import.meta.env.PROD) {
+        if (!window.location.search.includes('prerender')) {
+          const baiduId = import.meta.env.VITE_BAIDU_ANALYTICS_ID;
+          if (baiduId) {
+            (function(){
+              var hm = document.createElement('script');
+              hm.crossOrigin = 'anonymous';
+              hm.src = 'https://hm.baidu.com/hm.js?' + baiduId;
+              hm.async = true;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          }
+        }
+      }
+    </script>
+    -->
+    <script type="module" crossorigin="" src="/assets/index-DJPIzXdp.js"></script>
     <link rel="stylesheet" crossorigin="" href="/assets/index-BM7w_O8x.css">
     <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
     <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
-  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-CrJEWanH.js"><link rel="stylesheet" crossorigin="" href="/assets/index-KnjQ72Cm.css"><meta name="description" content="M3U8视频在线提取工具下载，支持加密m3u8视频解密提取、手机电脑网页端在线使用。无需安装软件，浏览器直接下载MP4。支持AES-128加密解密、无差别提取各类HLS流、TS碎片并行下载、批量任务队列自动合并。一站式完成m3u8在线提取转mp4下载，包含手机m3u8视频提取、加密视频解密、直播回放下载等场景，自动重试失败分片确保完整。"><meta property="og:description" content="M3U8视频在线提取工具下载，支持加密m3u8视频解密提取、手机电脑网页端在线使用。无需安装软件，浏览器直接下载MP4。支持AES-128加密解密、无差别提取各类HLS流、TS碎片并行下载、批量任务队列自动合并。"><link rel="modulepreload" as="script" crossorigin="" href="/assets/article-Dp1IiWRi.js"><link rel="stylesheet" crossorigin="" href="/assets/article-CVcTW8oA.css"><link rel="canonical" href="https://tools321.com/video/m3u8-downloader/"><link rel="icon" type="image/webp" href="https://tools321.com/upload/icon/video/m3u8-downloader.webp"><link rel="apple-touch-icon" href="https://tools321.com/upload/icon/video/m3u8-downloader.webp"></head>
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-D9k0_ZzJ.js"><link rel="stylesheet" crossorigin="" href="/assets/index-KnjQ72Cm.css"><link rel="modulepreload" as="script" crossorigin="" href="/assets/article-CCIoTCrf.js"><link rel="stylesheet" crossorigin="" href="/assets/article-CVcTW8oA.css"><meta name="description" content="M3U8视频在线提取工具下载，支持加密m3u8视频解密提取、手机电脑网页端在线使用。无需安装软件，浏览器直接下载MP4。支持AES-128加密解密、无差别提取各类HLS流、TS碎片并行下载、批量任务队列自动合并。一站式完成m3u8在线提取转mp4下载，包含手机m3u8视频提取、加密视频解密、直播回放下载等场景，自动重试失败分片确保完整。"><meta property="og:description" content="M3U8视频在线提取工具下载，支持加密m3u8视频解密提取、手机电脑网页端在线使用。无需安装软件，浏览器直接下载MP4。支持AES-128加密解密、无差别提取各类HLS流、TS碎片并行下载、批量任务队列自动合并。"><link rel="canonical" href="https://tools321.com/video/m3u8-downloader/"><link rel="icon" type="image/webp" href="https://tools321.com/upload/icon/video/m3u8-downloader.webp"><link rel="apple-touch-icon" href="https://tools321.com/upload/icon/video/m3u8-downloader.webp"></head>
   <body>
     <div id="app" data-v-app=""><div data-v-039107a6="" id="app" class=""><button data-v-039107a6="" class="mobile-menu-btn fixed top-0 left-0 z-1001 flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:bg-gray-50 hover:shadow-md" aria-label="打开导航"><svg data-v-039107a6="" class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path data-v-039107a6="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><!----><!----><div data-v-039107a6="" class="main-content"><div data-v-039107a6="" class="breadcrumb-container border-b border-gray-100 bg-white px-4 py-3"><nav data-v-039107a6="" class="breadcrumb mx-auto flex max-w-6xl items-center" aria-label="Breadcrumb"><ol data-v-039107a6="" class="breadcrumb-list flex flex-1 flex-wrap items-center gap-2 overflow-hidden" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li data-v-039107a6="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a data-v-039107a6="" href="/" class="text-gray-600 transition-colors hover:text-blue-600" itemprop="item"><span data-v-039107a6="" itemprop="name">首页</span></a><meta data-v-039107a6="" itemprop="position" content="1"></li><li data-v-039107a6="" class="text-gray-400" aria-hidden="true">/</li><li data-v-039107a6="" class="breadcrumb-item min-w-0" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a data-v-039107a6="" href="/video/" class="text-gray-600 transition-colors hover:text-blue-600" itemprop="item"><span data-v-039107a6="" itemprop="name">音视频处理</span></a><meta data-v-039107a6="" itemprop="position" content="2"></li><li data-v-039107a6="" class="text-gray-400" aria-hidden="true">/</li><li data-v-039107a6="" class="breadcrumb-item min-w-0" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span data-v-039107a6="" class="font-medium text-gray-900 truncate" itemprop="name">M3U8下载</span><meta data-v-039107a6="" itemprop="position" content="3"></li></ol><!----></nav></div><div class="min-h-screen bg-gray-50 p-4 md:p-8 flex flex-col items-center"><header class="mb-8 w-full max-w-6xl"><h1 class="text-3xl font-bold text-center text-gray-800">M3U8视频在线提取工具下载</h1><p class="text-sm text-gray-500 text-center mt-2"> M3U8视频在线提取工具下载，支持加密m3u8视频解密、手机电脑网页端在线使用，无需安装软件 </p></header><div class="mb-6 text-gray-500 text-sm italic"> 需安装并开启扩展: <a target="_blank" class="text-blue-500 hover:underline" href="https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">chrome</a><span class="mx-1">|</span><a target="_blank" class="text-blue-500 hover:underline" href="https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag">edge</a></div><div class="w-full max-w-6xl bg-white rounded-lg shadow-md p-6 mb-8"><div class="flex flex-col min-h-[300px] max-h-[800px]"><h2 class="text-xl font-semibold mb-4 text-gray-700">任务管理</h2><div class="space-y-4 mb-6 bg-gray-50 p-4 rounded-lg"><div><input type="text" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none" placeholder="M3U8 链接"></div><div><input type="text" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none" placeholder="任务名称"></div><button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors flex items-center justify-center"><span class="mr-1">➕</span> 添加任务 </button></div><div class="flex-1 overflow-y-auto space-y-2 pr-2 custom-scrollbar"><!----><div class="text-center text-gray-400 py-8 text-sm"> 暂无任务，请添加 </div></div></div></div><!----></div><div class="max-w-4xl py-6 article-container relative mx-auto px-4"><div class="article-clip--collapsed article-clip-wrap relative overflow-hidden transition-all duration-300"><article id="main-article"><article data-v-c74ad925="" class="cm-art-article" itemscope="" itemtype="https://schema.org/Article"><h2 data-v-c74ad925="" class="cm-art-title" itemprop="headline">M3U8 视频下载器：HLS 流媒体离线获取完整指南</h2><div data-v-c74ad925="" class="cm-art-content" itemprop="articleBody"><section data-v-c74ad925=""><h3 data-v-c74ad925="">M3U8 与 HLS 协议基础</h3><p data-v-c74ad925="">HLS（HTTP Live Streaming）是由苹果公司在 2009 年提出的一种自适应比特率流媒体传输协议，现已成为互联网视频分发的事实标准之一。YouTube、B站、爱奇艺、Netflix 等主流平台均采用 HLS 或其变体来分发视频内容。而 M3U8 则是 HLS 协议使用的<strong data-v-c74ad925="">播放列表文件格式</strong>，本质上是一个 UTF-8 编码的文本文件，扩展名源自 M3U（MP3 URL）加上数字 8 表示 UTF-8 编码。</p><p data-v-c74ad925="">一个典型的 M3U8 文件长这样：</p><pre data-v-c74ad925="">#EXTM3U
 #EXT-X-TARGETDURATION:10
@@ -54,7 +74,7 @@ segment_002.ts
 
     <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
     <script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="/assets/polyfills-legacy-Bv9wd_MD.js"></script>
-    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy-DBWBlVEN.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy-BFMCUriw.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   
 
 </body></html>
